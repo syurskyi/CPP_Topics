@@ -24,11 +24,11 @@ tcOperation::~tcOperation() {
 	mcTokens.clear();
 }
 
-double tcOperation::Execute( void ) {
+d.. tcOperation::Execute( void ) {
 
-	double lrA _ atof( mcTokens[0].c_str() );
-	double lrB _ atof( mcTokens[2].c_str() );
-	double lrC _ 0;
+	d.. lrA _ atof( mcTokens[0].c_str() );
+	d.. lrB _ atof( mcTokens[2].c_str() );
+	d.. lrC _ 0;
 
 	__ ( mcTokens[1] __ "+" )
 	{

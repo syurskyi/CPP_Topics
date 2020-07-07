@@ -11,7 +11,7 @@ main ()
 
 void division()
 {
-    double firstNumber, secondNumber, result;
+    d.. firstNumber, secondNumber, result;
 
     c__ __  "Input the first number: ";
     c__ __ firstNumber;

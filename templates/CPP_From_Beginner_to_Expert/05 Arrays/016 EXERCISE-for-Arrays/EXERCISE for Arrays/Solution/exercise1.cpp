@@ -4,7 +4,7 @@ u.. s..
 
 main ()
 {
-    double val[4], sum _ 0;
+    d.. val[4], sum _ 0;
     c__ __  "Input first number: ";
     c__ __ val[0];
     c__ __  "Input second number: ";

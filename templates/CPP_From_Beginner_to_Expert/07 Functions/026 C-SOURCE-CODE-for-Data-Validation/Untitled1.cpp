@@ -6,10 +6,10 @@ u.. s..
 */
 void initMenu();
 void menuDecision(in.);
-double areaCircle(double);
-double areaSquare(double);
-double areaRectangle(double, double);
-double areaTriangle(double, double);
+d.. areaCircle(d..);
+d.. areaSquare(d..);
+d.. areaRectangle(d.., d..);
+d.. areaTriangle(d.., d..);
 bo.. isValid(s..);
 bo.. isValid();
 in. main()
@@ -58,7 +58,7 @@ void initMenu()
 }
 void menuDecision(in. choice)
 {
-    double r, a, b, h;
+    d.. r, a, b, h;
     switch(choice)
     {
         case 1:
@@ -86,33 +86,33 @@ void menuDecision(in. choice)
 
     }
 }
-double areaCircle(double r)
+d.. areaCircle(d.. r)
 {
-    double result _ PI * r * r;
+    d.. result _ PI * r * r;
 
     c__ __  "The area of a circle that radius is " __  r __  " = " __  result __  e..
 
     r_ result;
 }
-double areaSquare(double a)
+d.. areaSquare(d.. a)
 {
-    double result _ a * a;
+    d.. result _ a * a;
 
     c__ __  "The area of a square that side is " __  a __  " = " __  result __  e..
 
     r_ result;
 }
-double areaRectangle(double a, double b)
+d.. areaRectangle(d.. a, d.. b)
 {
-    double result _ a * b;
+    d.. result _ a * b;
 
     c__ __  "The area of a rectangle that first side is " __  a __  " the second side is " __  b __  " = " __  result __  e..
 
     r_ result;
 }
-double areaTriangle(double a, double h)
+d.. areaTriangle(d.. a, d.. h)
 {
-    double result _ (1/2.0) * a * h;
+    d.. result _ (1/2.0) * a * h;
 
     c__ __  "The area of a rectangle that first side is " __  a __  " the second side is " __  h __  " = " __  result __  e..
 

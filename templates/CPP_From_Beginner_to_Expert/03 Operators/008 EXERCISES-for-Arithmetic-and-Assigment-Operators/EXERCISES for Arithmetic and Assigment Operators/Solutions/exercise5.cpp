@@ -5,7 +5,7 @@ u.. s..
 
 main()
 {
-    double firstElement, secondElement, multiplicationResult;
+    d.. firstElement, secondElement, multiplicationResult;
 
     c__ __  "This is a simple multiplication program." __  e..
     c__ __  "Input first number: ";

@@ -4,7 +4,7 @@
 u.. s..
 
 // Константный указатель на константные данные,т.е. ничто не может быть изменено
-void CalcArea(const double* const pPi, const double* const pRadius, double* const pArea) 
+void CalcArea(const d..* const pPi, const d..* const pRadius, d..* const pArea)
 {
 	// проверить указатели перед использованием!
 	__ (pPi && pRadius && pArea)
@@ -13,13 +13,13 @@ void CalcArea(const double* const pPi, const double* const pRadius, double* cons
 
 in. main()
 {
-	const double pi _ 3.1416;
+	const d.. pi _ 3.1416;
 	c__ __  "Enter radius of circle: ";
 
-	double radius _ 0;
+	d.. radius _ 0;
 	c__ __ radius;
 
-	double area _ 0;
+	d.. area _ 0;
 
 	CalcArea(&pi, &radius, &area);
 

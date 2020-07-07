@@ -7,7 +7,7 @@ in. main()
 {
 
 	in. age _ 18;
-	double Pi _ 3.14;
+	d.. Pi _ 3.14;
 
 	c__ __  "Address of variable age is: 0x" __  &age __  e..
 

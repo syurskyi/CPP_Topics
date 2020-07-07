@@ -6,7 +6,7 @@ main ()
 {
 
     in. number;
-    long double factorialResult _ 1;
+    long d.. factorialResult _ 1;
 
     c__ __  "Input the number: ";
     c__ __ number;

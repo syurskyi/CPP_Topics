@@ -13,7 +13,7 @@ in. main()
 	c__ __  "Int: " __  sizeof(in.) __  e..
 	c__ __  "Long long: " __  sizeof(long long) __  e..
 	c__ __  "Float: " __  sizeof(float) __  e..
-	c__ __  "Double: " __  sizeof(double) __  e..
+	c__ __  "Double: " __  sizeof(d..) __  e..
 
 	in. a _ 4;
 

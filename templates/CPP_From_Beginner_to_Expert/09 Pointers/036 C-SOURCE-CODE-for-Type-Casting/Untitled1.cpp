@@ -5,11 +5,11 @@ u.. s..
 
 in. main()
 {
-    double var _ 5.6;
+    d.. var _ 5.6;
 
     in. a _ 5;
     in. b _ 7;
-    c__ __  (double)a / b __  e..
+    c__ __  (d..)a / b __  e..
 
     c__ __  (in.) var __  e.. //explict way C
 

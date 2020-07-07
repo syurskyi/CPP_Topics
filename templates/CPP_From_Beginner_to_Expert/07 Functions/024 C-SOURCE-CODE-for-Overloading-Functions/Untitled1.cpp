@@ -4,7 +4,7 @@ u.. s..
 
 /* overloading functions */
 in. power(in., in.);
-double power(double, in.);
+d.. power(d.., in.);
 in. main()
 {
 
@@ -34,9 +34,9 @@ in. power(in. b, in. e) // b = 8, e = 1
 
     r_ b;
 }
-double power(double b, in. e)
+d.. power(d.. b, in. e)
 {
-    double tmp _ b; //tmp = 2
+    d.. tmp _ b; //tmp = 2
     while(e-- > 1)
         b *_ tmp; //b = b * tmp;
 

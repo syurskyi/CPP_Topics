@@ -29,7 +29,7 @@ void func_map() {
 // POD structure example
 struct POD {
     in. i;
-    double d;
+    d.. d;
     std::s.. s;
 };
 

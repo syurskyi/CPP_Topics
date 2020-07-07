@@ -7,11 +7,11 @@
 ? <vector>
 
 class Tariff {
-    const std::vector<double> amount;
+    const std::vector<d..> amount;
     const std::vector<in.> discount;
 
 public:
-    Tariff(std::vector<double> amount, std::vector<in.> discount)
+    Tariff(std::vector<d..> amount, std::vector<in.> discount)
             :amount(std::move(amount)), discount(std::move(discount))
     {
         assert(amount.size()__discount.size());
@@ -24,17 +24,17 @@ public:
 };
 
 class TariffBuilder {
-    std::map<double, in.> tariff;
+    std::map<d.., in.> tariff;
 
 public:
-    void add_discount(double subtotal_, in. discount_)
+    void add_discount(d.. subtotal_, in. discount_)
     {
         tariff[subtotal_] _ discount_;
     }
 
     Tariff build()
     {
-        std::vector<double> amount;
+        std::vector<d..> amount;
         std::vector<in.> discount;
         for (const auto& t : tariff) {
             amount.push_back(t.first);

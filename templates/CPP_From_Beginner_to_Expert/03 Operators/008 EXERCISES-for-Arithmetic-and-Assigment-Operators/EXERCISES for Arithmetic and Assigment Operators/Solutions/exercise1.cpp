@@ -4,7 +4,7 @@ u.. s..
 
 main()
 {
-    double lengthInches, lengthCentimeters;
+    d.. lengthInches, lengthCentimeters;
 
     c__ __  "Length in inches: ";
     c__ __ lengthInches;

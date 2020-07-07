@@ -3,17 +3,17 @@
 
 u.. s..
 
-void addition(double, double);
-void addition(double, double, double);
-void addition(double, double, double, double);
-void addition(double, double, double, double, double);
+void addition(d.., d..);
+void addition(d.., d.., d..);
+void addition(d.., d.., d.., d..);
+void addition(d.., d.., d.., d.., d..);
 
 
 
 in. main ()
 {
     in. howManyValues;
-    double values[5];
+    d.. values[5];
 
     do
     {
@@ -49,22 +49,22 @@ in. main ()
     r_ 0;
 }
 
-void addition(double n1, double n2)
+void addition(d.. n1, d.. n2)
 {
     c__ __  n1 __  " + " __  n2 __  " = " __  n1 + n2;
 }
 
-void addition(double n1, double n2, double n3)
+void addition(d.. n1, d.. n2, d.. n3)
 {
     c__ __  n1 __  " + " __  n2 __  " + " __  n3 __  " = " __  n1 + n2 + n3;
 }
 
-void addition(double n1, double n2, double n3, double n4)
+void addition(d.. n1, d.. n2, d.. n3, d.. n4)
 {
     c__ __  n1 __  " + " __  n2 __  " + " __  n3 __  " + " __  n4 __  " = " __  n1 + n2 + n3 + n4;
 }
 
-void addition(double n1, double n2, double n3, double n4, double n5)
+void addition(d.. n1, d.. n2, d.. n3, d.. n4, d.. n5)
 {
     c__ __  n1 __  " + " __  n2 __  " + " __  n3 __  " + " __  n4 __  " + " __  n5 __  " = " __  n1 + n2 + n3 + n4 + n5;
 }

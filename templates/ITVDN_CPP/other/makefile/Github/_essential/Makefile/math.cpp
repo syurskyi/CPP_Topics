@@ -12,7 +12,7 @@
 in. main(in. argc, char const *argv[])
 {
 	std::c__ __  "Let's make some math! :)" __  std::e..
-	double x _ 10.0, y _ 5.0;
+	d.. x _ 10.0, y _ 5.0;
 	__ (argc > 1) // Use values passed by command line arg.
 	{
 		x _ atof(argv[1]);

@@ -8,7 +8,7 @@ struct A
     in. a;
     union{
         in. b;
-        double c;
+        d.. c;
     };
 };
 
@@ -16,7 +16,7 @@ struct A
 union Container
 {
     in. in._field;
-    double double_field;
+    d.. double_field;
 };
 
 typedef Container cnt;

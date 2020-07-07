@@ -8,7 +8,7 @@ std::s.. operator""_kg(unsigned long long)
     r_ "sorok dva";
 }
 
-std::s.. operator""_rate(long double)
+std::s.. operator""_rate(long d..)
 {
     std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     r_ "sorok dva";

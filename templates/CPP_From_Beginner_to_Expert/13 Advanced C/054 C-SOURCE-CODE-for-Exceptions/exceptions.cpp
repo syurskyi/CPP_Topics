@@ -9,7 +9,7 @@ class DivisionByZeroException
         void getErrorMessage() { c__ __  "Error: Do not divide by zero"; }
 };
 
-double division(double a, double b) throw(DivisionByZeroException)
+d.. division(d.. a, d.. b) throw(DivisionByZeroException)
 {
     __ (b __ 0)
         throw DivisionByZeroException();
@@ -17,7 +17,7 @@ double division(double a, double b) throw(DivisionByZeroException)
 }
 in. main()
 {
-    double result;
+    d.. result;
 
     try
     {

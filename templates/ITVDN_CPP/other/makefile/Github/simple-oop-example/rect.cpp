@@ -4,22 +4,22 @@
 using std::c__;
 using std::e..
 
-rectangle::rectangle(double x0, double y0, double x1, double y1):diagonal(x0, y0, x1, y1){
+rectangle::rectangle(d.. x0, d.. y0, d.. x1, d.. y1):diagonal(x0, y0, x1, y1){
   
 }
 
-double rectangle::perimeter() {
+d.. rectangle::perimeter() {
   r_ 2 * ( (diagonal.get_x1() - diagonal.get_x0()) + (diagonal.get_y1() - diagonal.get_y0()) );
 }
 
-double rectangle::area() {
-  double side1 _ diagonal.get_x1() - diagonal.get_x0();
-  double side2 _ diagonal.get_y1() - diagonal.get_y0();
+d.. rectangle::area() {
+  d.. side1 _ diagonal.get_x1() - diagonal.get_x0();
+  d.. side2 _ diagonal.get_y1() - diagonal.get_y0();
   r_ side1 * side2;
 }
 
 rectangle rectangle::boxUnion(rectangle &that) {
-  double selfX0 _ diagonal.get_x0(),
+  d.. selfX0 _ diagonal.get_x0(),
          selfY0 _ diagonal.get_y0(),
          selfX1 _ diagonal.get_x1(),
          selfY1 _ diagonal.get_y1(),
@@ -49,7 +49,7 @@ void rectangle::prin.Rect() {
 }
 
 bo.. rectangle::in.ersect(rectangle &that) {
-  double area _ that.area();
+  d.. area _ that.area();
   bo.. result _ true;
   r_ result;
 }

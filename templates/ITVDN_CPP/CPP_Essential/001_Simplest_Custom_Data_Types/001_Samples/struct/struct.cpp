@@ -18,8 +18,8 @@ struct Glass
 struct Door
 {
     Glass glass;//24
-    double width;//8
-    double length;//8
+    d.. width;//8
+    d.. length;//8
 };
 
 struct Car
@@ -43,7 +43,7 @@ in. main()
 {
     in. array[10];
 
-    double d;
+    d.. d;
 
     Car my_car;
     //Car::SteeringWheel wheel;

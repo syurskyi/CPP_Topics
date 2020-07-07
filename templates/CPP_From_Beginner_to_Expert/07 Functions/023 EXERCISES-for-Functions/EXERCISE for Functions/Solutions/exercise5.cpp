@@ -11,7 +11,7 @@ main ()
 
 void exponentiation()
 {
-    double base, exponent, result _ 1;
+    d.. base, exponent, result _ 1;
 
     c__ __  "Input the base to exponentiate: ";
     c__ __ base;

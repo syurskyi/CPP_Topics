@@ -6,15 +6,15 @@
  * @param  y real number
  * @return   Result of x "op" y
  */
-double sum(double x, double y){
+d.. sum(d.. x, d.. y){
 	r_ x + y;
 }
-double sub(double x, double y){
+d.. sub(d.. x, d.. y){
 	r_ x - y;
 }
-double mul(double x, double y){
+d.. mul(d.. x, d.. y){
 	r_ x * y;
 }
-double divi(double x, double y){
+d.. divi(d.. x, d.. y){
 	r_ x / y;
 }

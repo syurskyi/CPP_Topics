@@ -4,7 +4,7 @@
 u.. s..
 
 in. AddNumbers(in. a, in. b);
-double AddNumbers(double a, double b);
+d.. AddNumbers(d.. a, d.. b);
 
 in. main()
 {
@@ -12,7 +12,7 @@ in. main()
 
 	//double value3 = 12.3;
 
-	double sum _ AddNumbers(value1, value2);
+	d.. sum _ AddNumbers(value1, value2);
 
 	//double dsum = AddNumbers(12.2, 15.3);
 
@@ -27,7 +27,7 @@ in. AddNumbers(in. a, in. b)
 	c__ __  "Function(int a, int b) is called!" __  e..
 	r_ a + b;
 }
-double AddNumbers(double a, double b)
+d.. AddNumbers(d.. a, d.. b)
 {
 	c__ __  "Function(double a, double b) is called!" __  e..
 	r_ a + b;

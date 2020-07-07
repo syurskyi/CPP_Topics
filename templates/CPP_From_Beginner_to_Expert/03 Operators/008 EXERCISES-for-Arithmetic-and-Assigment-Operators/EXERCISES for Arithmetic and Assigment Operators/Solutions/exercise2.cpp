@@ -4,7 +4,7 @@ u.. s..
 
 main()
 {
-    double temperatureCelsius, temperatureFahrenheit, temperatureKelvin;
+    d.. temperatureCelsius, temperatureFahrenheit, temperatureKelvin;
 
     c__ __  "Please input the temperature in Celsius: ";
     c__ __ temperatureCelsius;

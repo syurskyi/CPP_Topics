@@ -6,7 +6,7 @@ u.. s..
 void welcome(); //declaration of function, procedure
 bo.. isNumber(s..);
 void enterName();
-double add(double a, double b) {r_ a + b;}
+d.. add(d.. a, d.. b) {r_ a + b;}
 void changeValueTo10(in. a)
 {
   a _ 10;

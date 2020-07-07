@@ -8,7 +8,7 @@ u.. s..
 void Function();
 void Function(s.. s);
 void Function(in. i);
-void Function(double d);
+void Function(d.. d);
 void Function(s.. s, in. i);
 void Function(in. i, s.. s);
 
@@ -42,7 +42,7 @@ void Function(in. i)
 	c__ __  i __  e..
 }
 
-void Function(double d)
+void Function(d.. d)
 {
 	c__ __  d __  e..
 }

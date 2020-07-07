@@ -11,7 +11,7 @@ main ()
 
 void subtraction()
 {
-    double firstNumber, secondNumber, result;
+    d.. firstNumber, secondNumber, result;
 
     c__ __  "Input the number to subtract from: ";
     c__ __ firstNumber;

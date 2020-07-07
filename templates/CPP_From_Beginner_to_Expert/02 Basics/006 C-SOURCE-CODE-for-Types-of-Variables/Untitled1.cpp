@@ -18,7 +18,7 @@ main()
     c__ __  t1 __  e..
 
     float t2 _ 5.12; //4 BYTES nr that are up to 38 zeros
-    double t3 _ 5.12; //8 BYTES nr that are up to 308 zeros 5.61235123512351
+    d.. t3 _ 5.12; //8 BYTES nr that are up to 308 zeros 5.61235123512351
 
     c__ __  t2 __  e..
     c__ __  t3 __  e..

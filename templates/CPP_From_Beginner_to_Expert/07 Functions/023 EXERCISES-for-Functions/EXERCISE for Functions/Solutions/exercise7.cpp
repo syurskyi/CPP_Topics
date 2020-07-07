@@ -3,13 +3,13 @@
 
 u.. s..
 
-double minValue(double tab[]);
-double maxValue(double tab[]);
+d.. minValue(d.. tab[]);
+d.. maxValue(d.. tab[]);
 
 
 in. main ()
 {
-    double tab[5];
+    d.. tab[5];
 
     for (in. i _ 0; i < 5; i++)
     {
@@ -23,9 +23,9 @@ in. main ()
     r_ 0;
 }
 
-double minValue(double tab[])
+d.. minValue(d.. tab[])
 {
-    double minValue _ tab[0];
+    d.. minValue _ tab[0];
 
     for (in. i _ 1; i < 5; i++)
     {
@@ -36,9 +36,9 @@ double minValue(double tab[])
 
     r_ minValue;
 }
-double maxValue(double tab[])
+d.. maxValue(d.. tab[])
 {
-    double maxValue _ tab[0];
+    d.. maxValue _ tab[0];
 
     for (in. i _ 1; i < 5; i++)
     {

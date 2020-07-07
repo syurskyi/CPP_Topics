@@ -11,7 +11,7 @@ in. main()
 {
 	in. a _ 5;
 	char b _ 'B';
-	double c;
+	d.. c;
 
 	c__ __  b;
 

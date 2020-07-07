@@ -3,7 +3,7 @@ u.. s..
 
 main()
 {
-    double var1, var2;
+    d.. var1, var2;
 
     beginning:
     system("cls");

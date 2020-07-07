@@ -48,7 +48,7 @@ struct cons
 {
     typedef T Tail;
     typedef H Head;
-    typedef cons< in., cons< std::s.., cons< double, cons< float > > > > TypeList;
+    typedef cons< in., cons< std::s.., cons< d.., cons< float > > > > TypeList;
 };
 
 // template < class... Args >

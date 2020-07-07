@@ -51,7 +51,7 @@ void chooseOperation(char choice)
 
 void addition()
 {
-    double firstNumber, secondNumber, result;
+    d.. firstNumber, secondNumber, result;
 
     c__ __  "Input the first number to add: ";
     c__ __ firstNumber;
@@ -65,7 +65,7 @@ void addition()
 
 void subtraction()
 {
-    double firstNumber, secondNumber, result;
+    d.. firstNumber, secondNumber, result;
 
     c__ __  "Input the number to subtract from: ";
     c__ __ firstNumber;
@@ -79,7 +79,7 @@ void subtraction()
 
 void multiplication()
 {
-    double firstNumber, secondNumber, result;
+    d.. firstNumber, secondNumber, result;
 
     c__ __  "Input the first number: ";
     c__ __ firstNumber;
@@ -93,7 +93,7 @@ void multiplication()
 
 void division()
 {
-    double firstNumber, secondNumber, result;
+    d.. firstNumber, secondNumber, result;
 
     c__ __  "Input the first number: ";
     c__ __ firstNumber;
@@ -107,7 +107,7 @@ void division()
 
 void exponentiation()
 {
-    double base, exponent, result _ 1;
+    d.. base, exponent, result _ 1;
 
     c__ __  "Input the base to exponentiate: ";
     c__ __ base;

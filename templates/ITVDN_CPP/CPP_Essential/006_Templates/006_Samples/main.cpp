@@ -9,7 +9,7 @@ T sum(T a, T b)
     r_ a + b;
 }
 
-template <typename T1, typename T2 _ double>
+template <typename T1, typename T2 _ d..>
 auto sum(T1 a, T2 b) -> decltype(a + b)
 {
     r_ a + b;
@@ -77,14 +77,14 @@ in. main()
     A|s.. str;
     str.process();
 
-    B<s.., double> b;
+    B<s.., d..> b;
     b.a _ "str";
     b.process();
 
-    double member _ 15.5;
-    A<double*> ptr;
+    d.. member _ 15.5;
+    A<d..*> ptr;
     ptr.a _ &member;
-    ptr.process<double>();
+    ptr.process<d..>();
 
     r_ 0;
 }

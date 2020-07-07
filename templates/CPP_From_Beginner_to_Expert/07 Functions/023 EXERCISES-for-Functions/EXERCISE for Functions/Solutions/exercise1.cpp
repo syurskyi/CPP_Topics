@@ -11,7 +11,7 @@ main ()
 
 void addition()
 {
-    double firstNumber, secondNumber, result;
+    d.. firstNumber, secondNumber, result;
 
     c__ __  "Input the first number to add: ";
     c__ __ firstNumber;

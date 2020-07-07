@@ -5,7 +5,7 @@ u.. s..
 
 main()
 {
-    double firstElement, secondElement, additionResult;
+    d.. firstElement, secondElement, additionResult;
 
     c__ __  "This is a simple addition program." __  e..
     c__ __  "Input first number: ";

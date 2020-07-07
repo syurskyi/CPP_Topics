@@ -5,8 +5,8 @@ u.. s..
 main ()
 {
 
-    double number;
-    double poweredNumber _ 1;
+    d.. number;
+    d.. poweredNumber _ 1;
     in. nPower;
 
     c__ __  "Input the number: ";
