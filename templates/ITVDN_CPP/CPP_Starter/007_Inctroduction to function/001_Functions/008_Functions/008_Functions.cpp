@@ -3,21 +3,20 @@
 
 u.. s..
 
-bo.. Or(bo.. a, bo.. b);
+bo.. Or bo.. a, bo.. b
 
-in. main()
-{
-	bo.. result _ false, v1 _ true, v2 _ false;
+in. main
 
-	result _ Or(v1, v2);
+	bo.. result _ f.. v1 _ t.. v2 _ f..
 
-	c__ __  "a || b = " __  result __  e..
+	result _ ? v1, v2
+
+	c__ __  "a || b = " __  ? __  e..
 
 	sy.. pause
-	r_ 0;
-}
+	r_ _
 
-bo.. Or(bo.. a, bo.. b)
-{
-	r_ a || b;
-}
+
+bo.. Or bo.. a, bo.. b
+
+	r_ a ## b
