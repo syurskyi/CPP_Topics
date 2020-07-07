@@ -10,7 +10,7 @@ in. main()
     std::map<in., in.> x;
 
     auto f = x.find(0);
-    if (f == x.end())
+    __ (f == x.end())
     {
         x[0] = 1;
     }

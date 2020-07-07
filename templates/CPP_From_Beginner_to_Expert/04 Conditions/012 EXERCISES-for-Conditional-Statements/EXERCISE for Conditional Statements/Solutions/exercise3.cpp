@@ -16,17 +16,17 @@ main ()
 
     c__ >> productChoice;
 
-    if (productChoice == 1)
+    __ (productChoice == 1)
         c__ __  "You have chosen a Coca-Cola" __  e..
-    else if (productChoice == 2)
+    else __ (productChoice == 2)
         c__ __  "You have chosen a Water" __  e..
-    else if (productChoice == 3)
+    else __ (productChoice == 3)
         c__ __  "You have chosen a Chocolate Bar" __  e..
-    else if (productChoice == 4)
+    else __ (productChoice == 4)
         c__ __  "You have chosen a Snickers Bar" __  e..
-    else if (productChoice == 5)
+    else __ (productChoice == 5)
         c__ __  "You have chosen a Mars Bar" __  e..
-    else if (productChoice == 6)
+    else __ (productChoice == 6)
         c__ __  "You have chosen a Bud Light" __  e..
     else
         c__ __  "Error. Invalid choice" __  e..

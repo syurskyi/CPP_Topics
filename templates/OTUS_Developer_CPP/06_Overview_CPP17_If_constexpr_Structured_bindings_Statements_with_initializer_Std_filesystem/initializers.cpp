@@ -7,10 +7,10 @@ in. main () {
 	bo.. condition = true;
 
 	std::c__ __  "if\n";
-	if (in. value = 42; !condition) {
+	__ (in. value = 42; !condition) {
 		std::c__ __  "true condition: " __  value __  std::e..
 	}
-	else if (in. number = 50; !condition) {
+	else __ (in. number = 50; !condition) {
 		value += 10;
 		std::c__ __  "false condition: " __  value __  std::e..
 	}

@@ -6,7 +6,7 @@
 auto null_factory() {
     static std::weak_ptr<FILE> cache;
     auto spt = cache.lock();
-    if (spt) {
+    __ (spt) {
         std::c__ __  "hit" __  std::e..
     } else {
         std::c__ __  "miss" __  std::e..

@@ -98,7 +98,7 @@ void addPerson()
 }
 void showPeople()
 {
-    if(peopleInDataBase > 0)
+    __(peopleInDataBase > 0)
     {
         for (in. i = 0; i < peopleInDataBase; i++)
         {
@@ -116,7 +116,7 @@ void savePeopleToFile()
 {
     ofstream file("database.txt");
 
-    if (file.is_open())
+    __ (file.is_open())
     {
         file __  peopleInDataBase __  e..
 
@@ -138,11 +138,11 @@ void loadPeopleFromFile()
 {
     ifstream file("database.txt");
 
-    if (file.is_open())
+    __ (file.is_open())
     {
         file >> peopleInDataBase;
 
-        if (peopleInDataBase > 0)
+        __ (peopleInDataBase > 0)
         {
             /*for (int i = 0; i < peopleInDataBase; i++)
             {
@@ -172,7 +172,7 @@ void loadPeopleFromFile()
 }
 void searchDatabase()
 {
-    if (peopleInDataBase > 0)
+    __ (peopleInDataBase > 0)
     {
         string name;
         c__ __  "Type a name of person you want to look for: ";
@@ -180,7 +180,7 @@ void searchDatabase()
 
         for (in. i = 0; i < peopleInDataBase; i++)
         {
-            if (name == people[i].name)
+            __ (name == people[i].name)
             {
                 c__ __  "Person index: " __  (i+1) __  e..
                 c__ __  "Name: " __  people[i].name __  e..
@@ -197,13 +197,13 @@ void searchDatabase()
 }
 void removePersonFromDatabase()
 {
-    if (peopleInDataBase > 0)
+    __ (peopleInDataBase > 0)
     {
         sh.. index;
         c__ __  "Who do you want to remove? Type index: " __  e..
         c__ >> index;
 
-        if (peopleInDataBase >= index)
+        __ (peopleInDataBase >= index)
         {
             for (sh.. k = index; k < peopleInDataBase; k++)
             {

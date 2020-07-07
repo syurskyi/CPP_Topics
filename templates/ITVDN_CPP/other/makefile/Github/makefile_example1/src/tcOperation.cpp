@@ -30,19 +30,19 @@ double tcOperation::Execute( void ) {
 	double lrB = atof( mcTokens[2].c_str() );
 	double lrC = 0;
 
-	if ( mcTokens[1] == "+" )
+	__ ( mcTokens[1] == "+" )
 	{
 		lrC = lrA + lrB;
 	}
-	else if ( mcTokens[1] == "-" )
+	else __ ( mcTokens[1] == "-" )
 	{
 		lrC = lrA - lrB;
 	}
-	else if ( mcTokens[1] == "x" )
+	else __ ( mcTokens[1] == "x" )
 	{
 		lrC = lrA * lrB;
 	}
-	else if ( mcTokens[1] == "/" )
+	else __ ( mcTokens[1] == "/" )
 	{
 		lrC = lrA / lrB;
 	}

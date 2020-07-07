@@ -27,7 +27,7 @@ in. main()
     */
 
 
-    if (file.is_open())
+    __ (file.is_open())
     {
         file __  "sample text\n";
         file __  "sample text\n";

@@ -48,7 +48,7 @@ void worker(std::queue<args>& q)
         console_m.unlock();
         cv.wait(lk, [&q]() { r_ !q.empty() || quit; });
 
-        if (!q.empty()) {
+        __ (!q.empty()) {
             auto[a, b] = std::move(q.front());
             q.pop();
             auto s = q.size();

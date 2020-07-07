@@ -49,7 +49,7 @@ public:
 
     ~smart_ptr() {
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
-        if (--counter == 0) {
+        __ (--counter == 0) {
             delete ptr;
         }
     }

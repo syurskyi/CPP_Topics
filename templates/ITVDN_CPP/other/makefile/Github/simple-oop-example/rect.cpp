@@ -28,7 +28,7 @@ rectangle rectangle::boxUnion(rectangle &that) {
          thatX1 = that.diagonal.get_x1(),
          thatY1 = that.diagonal.get_y1(),
          resX0, resX1, resY0, resY1;
-  if(selfX0 < thatX0) {
+  __(selfX0 < thatX0) {
     resX0 = selfX0;
   }
   else {

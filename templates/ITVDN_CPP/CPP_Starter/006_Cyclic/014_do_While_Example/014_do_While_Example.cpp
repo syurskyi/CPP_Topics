@@ -17,7 +17,7 @@ in. main()
 
 	do
 	{
-		if (number == 0)
+		__ (number == 0)
 		{
 			factorial = 1;
 			break;

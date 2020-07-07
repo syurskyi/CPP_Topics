@@ -68,7 +68,7 @@ in. main()
 
     out_right.open( "lesson_files", ofstream::app );
 
-    if ( out_right.is_open() )
+    __ ( out_right.is_open() )
     {
         out_right __  "\n ___ test text from lesson";
     }
@@ -85,7 +85,7 @@ in. main()
 
     c__ __  "start" __  e..
 
-    if ( in_stream.is_open() )
+    __ ( in_stream.is_open() )
     {
         while ( std::getline( in_stream, result ) )
         {

@@ -18,7 +18,7 @@ in. main()
 	c__ __  "Enter the password: ";
 	c__ >> userPassword;
 
-	if (userLogin == login && userPassword == password) {
+	__ (userLogin == login && userPassword == password) {
 		c__ __  "Hello, Admin!" __  e..
 	}
 	else

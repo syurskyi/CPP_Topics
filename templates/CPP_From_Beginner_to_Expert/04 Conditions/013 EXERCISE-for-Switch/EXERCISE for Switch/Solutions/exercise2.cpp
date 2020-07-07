@@ -47,7 +47,7 @@ main ()
 
             bo.. isLeapYear = (((year%4 == 0) && (year%100 != 0)) || (year%400 == 0));
 
-            if (isLeapYear)
+            __ (isLeapYear)
                 c__ __  "The month february has 29 days in year " __  year __  e..
             else
                 c__ __  "The month february has 28 days in year " __  year __  e..

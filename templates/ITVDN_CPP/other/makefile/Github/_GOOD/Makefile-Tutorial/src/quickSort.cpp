@@ -9,7 +9,7 @@ void quickSort(in.iter l, in.iter r) {
   auto size = std::distance(l, r);
 
   // Base case
-  if (size < 2)
+  __ (size < 2)
     r_;
 
   // Partition with center pivot

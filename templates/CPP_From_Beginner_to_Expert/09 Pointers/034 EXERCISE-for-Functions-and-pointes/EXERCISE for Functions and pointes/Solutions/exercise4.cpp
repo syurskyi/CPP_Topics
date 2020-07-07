@@ -59,11 +59,11 @@ void bubbleSort(in. arrayToSort[], in. sizeOfArray, in. orderOfSequence)
     {
         for (in. j = 0; j < sizeOfArray-1; j++)
         {
-            if (orderOfSequence == 1 && arrayToSort[j] > arrayToSort[j+1])
+            __ (orderOfSequence == 1 && arrayToSort[j] > arrayToSort[j+1])
             {
                     swapTwoValues(arrayToSort+j, arrayToSort+j+1);
             }
-            else if (orderOfSequence == 2 && arrayToSort[j] < arrayToSort[j+1])
+            else __ (orderOfSequence == 2 && arrayToSort[j] < arrayToSort[j+1])
             {
                     swapTwoValues(arrayToSort+j, arrayToSort+j+1);
             }

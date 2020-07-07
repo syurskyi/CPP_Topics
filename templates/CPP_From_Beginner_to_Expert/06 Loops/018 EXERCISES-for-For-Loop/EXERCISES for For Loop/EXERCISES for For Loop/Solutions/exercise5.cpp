@@ -12,7 +12,7 @@ main ()
     for (in. i = 1; i <= numberOfAsterisks; i++)
     {
         c__ __  "*";
-        if (i % 5 == 0)
+        __ (i % 5 == 0)
         {
             c__ __   e..
         }

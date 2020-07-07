@@ -49,7 +49,7 @@ void data_processing_thread()
         data_queue.pop();
         lk.unlock();
         process(data);
-        if(is_last_chunk(data))
+        __(is_last_chunk(data))
             break;
     }
 }

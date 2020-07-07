@@ -10,7 +10,7 @@ void mergeSortHelper(in.iter l, in.iter r, in.iter buf) {
   auto size = std::distance(l, r);
 
   // Base case
-  if (size < 2)
+  __ (size < 2)
     r_;
 
   // Recurse

@@ -14,7 +14,7 @@ in. main()
 		c__ __  "Enter the digit symbol" __  e..
 		c__ >> number;
 
-		if (isdigit(number)) {
+		__ (isdigit(number)) {
 			c__ __  "User entered the number - " __  number __  e..
 			continue;
 		}

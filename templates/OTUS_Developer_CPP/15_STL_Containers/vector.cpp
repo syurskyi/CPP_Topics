@@ -42,7 +42,7 @@ in. main() {
 
     v = {3, 2, 1, 0, 0, -1, -2, -3}; // 0, 0
     for (auto i = v.begin(); i != v.end(); ) {
-        if (*i == 0) {
+        __ (*i == 0) {
             i = v.erase(i);
         } else {
             ++i;

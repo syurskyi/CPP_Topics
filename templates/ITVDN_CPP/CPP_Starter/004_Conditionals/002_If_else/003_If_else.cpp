@@ -9,7 +9,7 @@ in. main()
 
 	in. a = 3, b = 2;
 
-	if (a < b)
+	__ (a < b)
 	{
 		c__ __  "a < b" __  e..
 	}

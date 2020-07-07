@@ -7,7 +7,7 @@ u.. s..
 void CalcArea(const double* const pPi, const double* const pRadius, double* const pArea) 
 {
 	// проверить указатели перед использованием!
-	if (pPi && pRadius && pArea)
+	__ (pPi && pRadius && pArea)
 		*pArea = (*pPi) * (*pRadius) * (*pRadius);
  }
 

@@ -11,7 +11,7 @@ auto foo() {
 
 // constexpr
 auto fibonacci_naive(long long n) {
-    if (n <= 1)
+    __ (n <= 1)
         r_ n;
     else
         r_ fibonacci_naive(n - 1) + fibonacci_naive(n - 2);
@@ -19,7 +19,7 @@ auto fibonacci_naive(long long n) {
 
 // constexpr
 auto factorial_naive(long long n) {
-    if (n <= 1)
+    __ (n <= 1)
         r_ n;
     else
         r_ n * factorial_naive(n - 1);

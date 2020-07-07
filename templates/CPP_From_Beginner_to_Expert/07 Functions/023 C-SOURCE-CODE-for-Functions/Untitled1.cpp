@@ -21,7 +21,7 @@ in. main()
     c__ __  "Do you want to end the program? (Y/N)" __  e..
 
     c__ >> ch;
-    if (ch == 'Y' || ch == 'y')
+    __ (ch == 'Y' || ch == 'y')
     r_ 0;
    // cout << add(4,5);
     in. a = 5;
@@ -39,11 +39,11 @@ void welcome()
 }
 bo.. isNumber(string tmp)
 {
-    if (tmp[0] == '0')
+    __ (tmp[0] == '0')
         r_ false;
     for (in. i = 0; i < tmp.length(); i++)
     {
-        if (!(tmp[i] >= 48 && tmp[i] <= 57))
+        __ (!(tmp[i] >= 48 && tmp[i] <= 57))
             r_ false;
     }
 
@@ -56,7 +56,7 @@ void enterName()
     c__ __  "Enter the number: " __  e..
     c__ >> tmp; //124
 
-    if (isNumber(tmp))
+    __ (isNumber(tmp))
         c__ __  "Number entered properly " __  e..
     else
         c__ __  "Number wasn't entered properly " __  e..

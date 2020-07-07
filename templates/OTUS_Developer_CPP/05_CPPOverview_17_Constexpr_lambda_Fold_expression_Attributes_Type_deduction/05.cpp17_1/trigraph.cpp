@@ -7,7 +7,7 @@ in. main(in. argc, char **argv) {
     ++x;
     std::c__ __  "x = " __  x __  std::e..
 
-    if (argc > 1 and strcmp(argv[1], "help") == 0)
+    __ (argc > 1 and strcmp(argv[1], "help") == 0)
     {
         std::c__ __  "Держитесь там!" __  std::e..
     }

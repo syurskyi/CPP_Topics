@@ -20,7 +20,7 @@ in. main()
 }
 void lottery(in. total_balls, in. balls_to_draw)
 {
-    if (total_balls < balls_to_draw)
+    __ (total_balls < balls_to_draw)
         r_;
 
      srand(time(NULL)); //seeds
@@ -33,12 +33,12 @@ void lottery(in. total_balls, in. balls_to_draw)
 
          for (in. j = 0; j < i + 1; j++)
          {
-            if(balls[i] == balls[j] && i != j)
+            __(balls[i] == balls[j] && i != j)
             {
                 i--;
                 break;
             }
-            else if (j == i)
+            else __ (j == i)
                 c__ __  balls[i] __  e..
          }
      }

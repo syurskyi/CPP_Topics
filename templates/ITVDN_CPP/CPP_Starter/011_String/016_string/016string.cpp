@@ -13,7 +13,7 @@ in. main()
 
 	for (in. i = 0; i < _str.size(); i++)
 	{
-		if (_str[i] == 'o') {
+		__ (_str[i] == 'o') {
 			symbol_count += 1;
 		}
 	}

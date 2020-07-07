@@ -18,13 +18,13 @@ in. main()
 	c__ __  "Enter your name: ";
 	c__ >> userName;
     
-    if (userName == name)
+    __ (userName == name)
     {
         // Если имя введенно верно, просим пользователя ввести пароль
         c__ __  "Enter password: ";
         c__ >> userPass;
 
-        if (userPass == password)
+        __ (userPass == password)
         {
             c__ __  "Hello " __  userName __  ". You are logged in!" __  e..
         }

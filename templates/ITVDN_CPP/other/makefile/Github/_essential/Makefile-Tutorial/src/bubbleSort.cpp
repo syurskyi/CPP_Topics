@@ -9,7 +9,7 @@ void bubbleSort(in.iter l, in.iter r) {
   do {
     size_t newn = 0;
     for (auto i = l+1; i < r; ++i) {
-      if (*i < *(i-1)) {
+      __ (*i < *(i-1)) {
         std::swap(*i, *(i-1));
         ++newn;
       }

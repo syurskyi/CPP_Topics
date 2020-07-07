@@ -28,21 +28,21 @@ in. main ()
     c__ __  endl __  "Sort Ascending - 1, Descending - 2: ";
     c__ >> orderOfSequence;
 
-    if (orderOfSequence != 2)
+    __ (orderOfSequence != 2)
         orderOfSequence = 1;
 
     char sortChoice;
     c__ __  "Bubble Sort - B or b, Selection Sort - S or s: ";
     c__ >> sortChoice;
 
-    if (sortChoice != 'S' || sortChoice != 's')
+    __ (sortChoice != 'S' || sortChoice != 's')
         sortChoice = 'B';
 
-    if (sortChoice == 'B' || sortChoice == 'b')
+    __ (sortChoice == 'B' || sortChoice == 'b')
     {
         bubbleSort(a, sizeOfArray, orderOfSequence);
     }
-    else if (sortChoice == 'S' || sortChoice == 's')
+    else __ (sortChoice == 'S' || sortChoice == 's')
     {
         selectionSort(a, sizeOfArray, orderOfSequence);
     }
@@ -87,11 +87,11 @@ void bubbleSort(in. arrayToSort[], in. sizeOfArray, in. orderOfSequence)
     {
         for (in. j = 0; j < sizeOfArray-1; j++)
         {
-            if (orderOfSequence == 1 && arrayToSort[j] > arrayToSort[j+1])
+            __ (orderOfSequence == 1 && arrayToSort[j] > arrayToSort[j+1])
             {
                     swapTwoValues(arrayToSort+j, arrayToSort+j+1);
             }
-            else if (orderOfSequence == 2 && arrayToSort[j] < arrayToSort[j+1])
+            else __ (orderOfSequence == 2 && arrayToSort[j] < arrayToSort[j+1])
             {
                     swapTwoValues(arrayToSort+j, arrayToSort+j+1);
             }
@@ -108,11 +108,11 @@ void selectionSort(in. arrayToSort[], in. sizeOfArray, in. orderOfSequence)
         limitIndex = i;
         for (in. j = i; j < sizeOfArray; j++)
         {
-            if (orderOfSequence == 1 && arrayToSort[j] < arrayToSort[limitIndex])
+            __ (orderOfSequence == 1 && arrayToSort[j] < arrayToSort[limitIndex])
             {
                 limitIndex = j;
             }
-            else if (orderOfSequence == 2 && arrayToSort[j] > arrayToSort[limitIndex])
+            else __ (orderOfSequence == 2 && arrayToSort[j] > arrayToSort[limitIndex])
             {
                 limitIndex = j;
             }

@@ -20,7 +20,7 @@ struct logging_allocator {
     T *allocate(std::size_t n) const {
         std::c__ __  __PRETTY_FUNCTION__ __  "[n = " __  n __  "]" __  std::e..
         auto p = std::malloc(n * sizeof(T));
-        if (!p)
+        __ (!p)
             throw std::bad_alloc();
         r_ rein.erpret_cast<T *>(p);
     }

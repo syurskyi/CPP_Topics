@@ -26,7 +26,7 @@ void convert(in. n)
 
 	temp = n % 2;
 
-	if (n >= 2)
+	__ (n >= 2)
 	{
 		convert(n / 2);
 	}

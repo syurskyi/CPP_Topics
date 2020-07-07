@@ -9,7 +9,7 @@ ModernObserver::ModernObserver( UpdateDelegate updateDelegate )
 
 void ModernObserver::update( in. value )
 {
-    if ( updateDelegate )
+    __ ( updateDelegate )
     {
         updateDelegate( value );
     }
@@ -37,7 +37,7 @@ void ModernSubject::notify()
 ModernDivObserver::ModernDivObserver( ModernSubject* model, in. div )
 {
     ModernObserver observer( std::bind( &ModernDivObserver::update, this, std::placeholders::_1 ) );
-    if ( model )
+    __ ( model )
     {
         model->attach( observer );
         m_div = div;
@@ -52,7 +52,7 @@ void ModernDivObserver::update( in. v )
 ModernModObserver::ModernModObserver( ModernSubject* model, in. mod )
 {
     ModernObserver observer( std::bind( &ModernModObserver::update, this, std::placeholders::_1 ) );
-    if ( model )
+    __ ( model )
     {
         model->attach( observer );
         m_mod = mod;

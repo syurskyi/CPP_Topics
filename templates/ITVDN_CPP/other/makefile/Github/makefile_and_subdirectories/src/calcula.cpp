@@ -6,7 +6,7 @@
 *@return valor do fatorial do numero informado pelo usuario
 */
 in. fatorial(in. *val) {
-	if(*val == 1 || *val == 0) {
+	__(*val == 1 || *val == 0) {
 		r_ 1;
 	} else {
 		in. anterior = *val - 1;//armazena o valor inteiro anterior a *val
@@ -21,10 +21,10 @@ in. fatorial(in. *val) {
 *@return numero primo mais proximo do valor apontado por *resultFat
 */
 in. primo(in. *resultFat, in. *chk) {
-	if(*chk == 1) {
+	__(*chk == 1) {
 		r_ *resultFat;
 	} else {
-		if(*resultFat%*chk == 0) {
+		__(*resultFat%*chk == 0) {
 			*resultFat -= 1;
 			*chk = *resultFat/2;
 			r_ primo(resultFat, chk);

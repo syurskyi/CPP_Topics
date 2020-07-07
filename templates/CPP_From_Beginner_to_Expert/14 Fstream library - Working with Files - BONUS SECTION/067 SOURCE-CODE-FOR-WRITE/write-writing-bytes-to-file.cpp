@@ -13,7 +13,7 @@ in. main()
 
     file.open("sample.txt", i.. out | i.. binary);
 
-    if (file.is_open())
+    __ (file.is_open())
     {
         char sample[] = "sample text";
 

@@ -6,7 +6,7 @@ Number::Number(in. data) : data(data)
 
 Number& Number::operator=(const Number& other)
 {
-    if(this != &other)
+    __(this != &other)
     {
         data = other.data;
     }

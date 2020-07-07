@@ -23,7 +23,7 @@ main ()
 
      } while ((checkPin != pin) && (counter > 0));
 
-     if (checkPin == pin)
+     __ (checkPin == pin)
      {
         c__ __  "Correct pin, welcome !";
      }

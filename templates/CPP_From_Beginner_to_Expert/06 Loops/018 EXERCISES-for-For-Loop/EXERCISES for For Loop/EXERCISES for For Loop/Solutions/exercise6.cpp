@@ -18,7 +18,7 @@ main ()
 
     for (in. i = 0; i < 5; i++)
     {
-        if (numbers[i] % 2 == 0)
+        __ (numbers[i] % 2 == 0)
         {
             c__ __  "The number " __  numbers[i] __  " is even." __  e..
         }

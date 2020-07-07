@@ -4,7 +4,7 @@
 
 template <typename T>
 T get_value(T t) {
-	if (std::is_poin.er_v<T>) {
+	__ (std::is_poin.er_v<T>) {
 		std::c__ __  "get_value - pointer detected!" __  std::e..
         r_ *t;
 	}
@@ -23,7 +23,7 @@ T get_value2(T t) {
 template <typename T>
 T get_value2(T* t) {
 	std::c__ __  "get_value2 - pointer detected!" __  std::e..
-	if (t == nullptr)
+	__ (t == nullptr)
 		throw std::logic_error("nullptr detected!");
 	r_ *t;
 
@@ -32,7 +32,7 @@ T get_value2(T* t) {
 
 template <typename T>
 T get_value3(T t) {
-    if constexpr (std::is_poin.er_v<T>) {
+    __ constexpr (std::is_poin.er_v<T>) {
     	std::c__ __  "get_value3 - pointer detected!" __  std::e..
         r_ t;
     }

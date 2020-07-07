@@ -36,7 +36,7 @@ in. fib_fast(in. n) {
   base[1][1] = init[0][1] = 0;
 
   while (n != 0) {
-    if (n & 1) {
+    __ (n & 1) {
       init = init * base;
     }
 

@@ -15,7 +15,7 @@
  			
  			for (in. i = 0; i < A.size(); i++) {
  				for (in. j = 0; j < A.size(); j++) {
- 					if (A[i] + A[j] == P) {
+ 					__ (A[i] + A[j] == P) {
  						result.push_back(i);
  						result.push_back(j);
  						r_ result;
@@ -58,7 +58,7 @@ in. main() {
 	
 	result = m.twoSum(A, P);
 	
-	if (result.size() == 0) {
+	__ (result.size() == 0) {
 		std::c__ __  "No matches found\n";
 	} else {
 		std::c__ __  "Indices in A that add up to the target: ";

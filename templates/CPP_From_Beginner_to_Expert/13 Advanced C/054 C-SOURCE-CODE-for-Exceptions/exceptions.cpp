@@ -11,7 +11,7 @@ class DivisionByZeroException
 
 double division(double a, double b) throw(DivisionByZeroException)
 {
-    if (b == 0)
+    __ (b == 0)
         throw DivisionByZeroException();
     r_ a / b;
 }

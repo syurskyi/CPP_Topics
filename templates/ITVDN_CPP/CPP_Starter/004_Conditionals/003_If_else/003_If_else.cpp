@@ -9,11 +9,11 @@ in. main()
 
 	in. a = 2, b = 2;
 
-	if (a < b)
+	__ (a < b)
 	{
 		c__ __  "a < b" __  e..
 	}
-	else if (a > b)
+	else __ (a > b)
 	{
 		c__ __  "a > b" __  e..
 	}

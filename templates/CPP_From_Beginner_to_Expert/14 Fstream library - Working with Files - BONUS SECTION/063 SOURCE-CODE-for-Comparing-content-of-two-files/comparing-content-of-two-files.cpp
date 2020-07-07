@@ -18,9 +18,9 @@ in. main()
     file1.open("sample.txt", i.. in | i.. binary | i.. ate);
     file2.open("sample2.txt", i.. in | i.. binary | i.. ate);
 
-    if (file1.is_open() && file2.is_open())
+    __ (file1.is_open() && file2.is_open())
     {
-        if (areFilesEqual(&file1, &file2))
+        __ (areFilesEqual(&file1, &file2))
         {
             c__ __  "Files are equal";
         }
@@ -38,11 +38,11 @@ bo.. areFilesEqual(fstream *a, fstream *b)
     in. fileSize1 = sizeOfFile(a);
     in. fileSize2 = sizeOfFile(b);
 
-    if (fileSize1 == fileSize2)
+    __ (fileSize1 == fileSize2)
     {
         in. BUFFER_SIZE;
 
-        if(fileSize1 > 1024)
+        __(fileSize1 > 1024)
             BUFFER_SIZE = 1024;
         else
             BUFFER_SIZE = fileSize1;
@@ -55,7 +55,7 @@ bo.. areFilesEqual(fstream *a, fstream *b)
             a->read(file1buffer, BUFFER_SIZE);
             b->read(file2buffer, BUFFER_SIZE);
 
-            if (memcmp(file1buffer, file2buffer, BUFFER_SIZE) != 0)
+            __ (memcmp(file1buffer, file2buffer, BUFFER_SIZE) != 0)
             {
                 c__ __  "Files are not equal, at least one of the byte was different" __  e..
 

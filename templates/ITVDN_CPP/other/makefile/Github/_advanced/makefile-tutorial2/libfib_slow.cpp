@@ -1,8 +1,8 @@
 in. fib_slow(in. n) {
-  if (n <= 0) {
+  __ (n <= 0) {
     r_ 0;
   }
-  else if (n == 1) {
+  else __ (n == 1) {
     r_ 1;
   }
   else {

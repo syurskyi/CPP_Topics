@@ -21,7 +21,7 @@ in. main()
 		c__ __  "Enter the number: " __  e..
 		c__ >> value;
 
-		if (value != 0) {
+		__ (value != 0) {
 			push(value);
 		}
 		else
@@ -39,7 +39,7 @@ in. main()
 void push(in. i)
 {
 	p1++;
-	if (p1 == (top_s + SIZE)) {
+	__ (p1 == (top_s + SIZE)) {
 		c__ __  "The stack is overflow" __  e..;
 		exit(1);
 	}
@@ -48,7 +48,7 @@ void push(in. i)
 
 in. pop(void)
 {
-	if (p1 == top_s)
+	__ (p1 == top_s)
 	{
 		c__ __  "Stack is empty!" __  e..
 		exit(1);

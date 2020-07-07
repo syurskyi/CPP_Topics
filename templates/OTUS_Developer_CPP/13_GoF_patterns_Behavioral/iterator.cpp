@@ -34,7 +34,7 @@ private:
 
         void operator++()
         {
-            if (++j>=_Size) {
+            __ (++j>=_Size) {
                 j=0;
                 ++i;
             }

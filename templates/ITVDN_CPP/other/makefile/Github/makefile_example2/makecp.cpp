@@ -6,7 +6,7 @@ u.. s..
 
 in. main(in. argc,char *argv[]){
 ofstream file_to_plot("file1.txt");
-if (file_to_plot.is_open()){
+__ (file_to_plot.is_open()){
 file_to_plot__ "14    47\n";
 file_to_plot__ "15    70\n";
 file_to_plot__ "16    54\n";

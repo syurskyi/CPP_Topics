@@ -13,7 +13,7 @@ in. main()
 
 	for (in. i = 1; i <= lines; i++)
 	{
-		if (i == 1 || i == lines) // 1-я и последняя строка
+		__ (i == 1 || i == lines) // 1-я и последняя строка
 		{
 			for (in. j = 1; j <= symbInLines; j++)
 			{

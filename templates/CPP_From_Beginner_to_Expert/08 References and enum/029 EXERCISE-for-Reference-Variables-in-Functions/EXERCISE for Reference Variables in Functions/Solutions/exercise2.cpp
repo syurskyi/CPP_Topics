@@ -21,11 +21,11 @@ in. main ()
 
 void checkIfTheSame(in. &firstVariable, in. &secondVariable)
 {
-    if (firstVariable == secondVariable && &firstVariable == &secondVariable)
+    __ (firstVariable == secondVariable && &firstVariable == &secondVariable)
     {
         c__ __  "The variables are completely the same !";
     }
-    else if (firstVariable == secondVariable && &firstVariable != &secondVariable)
+    else __ (firstVariable == secondVariable && &firstVariable != &secondVariable)
     {   
 		c__ __  firstVariable __  " " __  &firstVariable __  e..
         c__ __  secondVariable __  " " __  &secondVariable __  e..

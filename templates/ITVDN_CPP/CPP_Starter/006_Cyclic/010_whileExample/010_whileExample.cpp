@@ -21,11 +21,11 @@ in. main()
 		string value = "";
 		c__ >> value;
 
-		if (value == "") 
+		__ (value == "")
 		{
 			break;
 		}
-		if (value != color)
+		__ (value != color)
 		{
 			str = "You did not guess";
 			continue;

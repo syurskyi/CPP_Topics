@@ -17,7 +17,7 @@ in. main()
 
     file.open("sample.txt", i.. in | i.. binary);
 
-    if (file.is_open())
+    __ (file.is_open())
     {
         char first, second;
         char buffer[50];

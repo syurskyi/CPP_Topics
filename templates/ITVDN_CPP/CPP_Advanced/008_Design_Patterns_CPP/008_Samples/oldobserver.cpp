@@ -24,7 +24,7 @@ void Subject::notify()
 
 DivObserver::DivObserver( Subject* model, in. div )
 {
-    if ( model )
+    __ ( model )
     {
         model->attach( this );
         m_div = div;
@@ -38,7 +38,7 @@ void DivObserver::update( in. v )
 
 ModObserver::ModObserver( Subject* model, in. mod )
 {
-    if ( model )
+    __ ( model )
     {
         model->attach( this );
         m_mod = mod;

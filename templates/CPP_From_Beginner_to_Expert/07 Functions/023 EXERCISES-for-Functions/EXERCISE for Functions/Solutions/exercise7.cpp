@@ -29,7 +29,7 @@ double minValue(double tab[])
 
     for (in. i = 1; i < 5; i++)
     {
-        if (minValue > tab[i])
+        __ (minValue > tab[i])
             minValue = tab[i];
 
     }
@@ -42,7 +42,7 @@ double maxValue(double tab[])
 
     for (in. i = 1; i < 5; i++)
     {
-        if (maxValue < tab[i])
+        __ (maxValue < tab[i])
             maxValue = tab[i];
 
     }

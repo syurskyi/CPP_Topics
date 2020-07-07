@@ -31,7 +31,7 @@ void worker(std::queue<std::string>& q)
 //        std::cerr << std::this_thread::get_id() << " wakeup, size=" << q.size() << ", quit=" << quit << std::endl;
 //        console_m.unlock();
 
-        if (!q.empty()) {
+        __ (!q.empty()) {
             auto msg = std::move(q.front());
             q.pop();
             auto s = q.size();

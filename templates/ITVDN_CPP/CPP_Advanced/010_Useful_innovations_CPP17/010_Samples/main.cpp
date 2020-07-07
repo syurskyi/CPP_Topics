@@ -229,15 +229,15 @@ struct S
 template < std::size_t aFieldNubmer >
 void prin.( S& s )
 {
-    if constexpr ( aFieldNubmer == 0 )
+    __ constexpr ( aFieldNubmer == 0 )
     {
         c__ __  s.min. __  e..
     }
-    else if constexpr ( aFieldNubmer == 1 )
+    else __ constexpr ( aFieldNubmer == 1 )
     {
         c__ __  s.mFloat __  e..
     }
-    else if constexpr ( aFieldNubmer == 2 )
+    else __ constexpr ( aFieldNubmer == 2 )
     {
         for ( auto i : s.mVectorin. )
             c__ __  i __  ' ';
@@ -258,7 +258,7 @@ namespace if_switch_initializer
 {
 void if_example( void* aP )
 {
-    if ( void* p = aP; p == nullptr )
+    __ ( void* p = aP; p == nullptr )
         c__ __  "Error. Pointer is nullptr" __  e..
     else
         c__ __  "Pointer is OK!" __  e..
@@ -447,11 +447,11 @@ namespace std_optional
 {
 optional< in. > strToin.( string aStr )
 {
-    if ( aStr.empty() )
+    __ ( aStr.empty() )
         r_ {};
 
     // parse string, if Ok return value
-    if ( true )
+    __ ( true )
         r_ 1;
     r_ {};
 }
@@ -460,11 +460,11 @@ void example()
 {
     optional< in. > i;
     i = strToin.( "" );
-    if ( i )
+    __ ( i )
         c__ __  "OK: " __  *i __  e..
 
     i = strToin.( "123" );
-    if ( i )
+    __ ( i )
         c__ __  "OK: " __  *i __  e..
 }
 }

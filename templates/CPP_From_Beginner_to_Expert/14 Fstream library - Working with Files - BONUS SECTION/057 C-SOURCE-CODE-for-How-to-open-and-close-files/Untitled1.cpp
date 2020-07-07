@@ -9,7 +9,7 @@ in. main()
 
     myFileHandler.open("test.txt");
 
-    if (myFileHandler.is_open())
+    __ (myFileHandler.is_open())
     {
         c__ __  "The file has been opened properly";
 

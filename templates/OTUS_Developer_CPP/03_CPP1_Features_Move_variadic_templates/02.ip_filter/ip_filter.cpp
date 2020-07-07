@@ -47,7 +47,7 @@ in. main(in. argc, char const *argv[])
         {
             for(std::vector<std::string>::const_iterator ip_part = ip->cbegin(); ip_part != ip->cend(); ++ip_part)
             {
-                if (ip_part != ip->cbegin())
+                __ (ip_part != ip->cbegin())
                 {
                     std::c__ __  ".";
 

@@ -13,7 +13,7 @@ Label:
 	counter++;
 	c__ __  "Counter = " __  counter __  e..
 
-	if (counter < 3)
+	__ (counter < 3)
 	{
 		goto Label;
 	}

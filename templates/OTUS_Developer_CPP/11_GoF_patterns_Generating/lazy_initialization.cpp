@@ -35,7 +35,7 @@ public:
     }
     File* operator->()
     {
-        if (!file) {
+        __ (!file) {
             file = new File(name);
         }
         r_ file;

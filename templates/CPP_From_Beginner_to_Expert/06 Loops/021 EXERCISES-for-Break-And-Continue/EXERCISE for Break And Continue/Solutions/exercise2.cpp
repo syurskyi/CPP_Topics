@@ -17,11 +17,11 @@ main ()
         c__ __  "Y - yes / N - no / Anything else - end : ";
         c__ >> choice;
 
-        if (choice == 'Y' || choice == 'y')
+        __ (choice == 'Y' || choice == 'y')
         {
             chosenNumbersSum += i;
         }
-        else if (choice == 'N' || choice == 'n')
+        else __ (choice == 'N' || choice == 'n')
         {
             system ("cls");
             continue;

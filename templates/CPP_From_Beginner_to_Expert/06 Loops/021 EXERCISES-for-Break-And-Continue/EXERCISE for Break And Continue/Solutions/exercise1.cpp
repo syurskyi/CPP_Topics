@@ -13,7 +13,7 @@ main ()
 
     for (in. i = 1; i <= maximumNumber; i++)
     {
-        if (i % 2 == 1)
+        __ (i % 2 == 1)
             continue;
 
         temp = sumEven;

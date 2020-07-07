@@ -26,7 +26,7 @@ public:
     bo.. enable_for(const std::string& op, Role role)
     {
         auto i = ops.find(op);
-        if (i!=std::end(ops)) {
+        __ (i!=std::end(ops)) {
             r_ i->second==role;
         }
         r_ false;

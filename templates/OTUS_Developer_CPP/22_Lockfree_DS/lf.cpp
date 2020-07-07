@@ -22,7 +22,7 @@ struct List {
 
 bo.. casin.(in.& p, in. nvalue, in. compare)
 {
-    if (p==compare) {
+    __ (p==compare) {
         p = nvalue;
         r_ true;
     }
@@ -32,7 +32,7 @@ bo.. casin.(in.& p, in. nvalue, in. compare)
 
 bo.. cas(Node** p, Node* nvalue, Node* compare)
 {
-    if (*p==compare) {
+    __ (*p==compare) {
         *p = nvalue;
         r_ true;
     }
@@ -49,7 +49,7 @@ struct ListLF {
             Node* old_head = head;
             p->next = head;
 
-            if (cas(&head, p, old_head))
+            __ (cas(&head, p, old_head))
                 r_;
         }
     }

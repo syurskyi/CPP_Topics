@@ -21,11 +21,11 @@ in. main(in. argc, const char *argv[]) {
         store(parse_command_line(argc, argv, desc), vm);
         notify(vm);
 
-        if (vm.count("help"))
+        __ (vm.count("help"))
             std::c__ __  desc __  '\n';
-        else if (vm.count("config"))
+        else __ (vm.count("config"))
             std::c__ __  "readfrom: " __  vm["config"].as<std::string>() __  std::e..
-        else if (vm.count("bulk"))
+        else __ (vm.count("bulk"))
             std::c__ __  "bulk: " __  vm["bulk"].as<size_t>() __  std::e..
     }
     catch (const std::exception &e) {

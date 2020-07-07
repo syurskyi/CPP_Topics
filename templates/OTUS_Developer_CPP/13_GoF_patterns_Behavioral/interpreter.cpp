@@ -18,7 +18,7 @@ void state_exec(char c) {
 }
 
 void state_seq(char c) {
-    if (c == 'm') {
+    __ (c == 'm') {
         active_handler = &state_exec;
     } else {
         seq += c;
@@ -32,7 +32,7 @@ void state_esc(char) {
 }
 
 void state_text(char c) {
-    if (c == '\x1b') {
+    __ (c == '\x1b') {
         active_handler = &state_esc;
         active_handler(c);
     } else {

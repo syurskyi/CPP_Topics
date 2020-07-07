@@ -19,7 +19,7 @@ void recursion(in. counter)
 
 	c__ __  "First part of recursion function " __  counter __  e..
 
-	if (counter != 0)
+	__ (counter != 0)
 	{
 		recursion(counter);
 	}

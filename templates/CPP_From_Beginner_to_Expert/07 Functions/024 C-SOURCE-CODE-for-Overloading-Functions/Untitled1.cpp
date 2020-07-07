@@ -28,7 +28,7 @@ in. power(in. b, in. e) // b = 8, e = 1
     while(i++ < e)
     {
         c__ __  tmp __  " ^ " __  i __  " = " __  b __  e..
-        if (i != e)
+        __ (i != e)
             b *= tmp; //b = b * tmp;
     }
 

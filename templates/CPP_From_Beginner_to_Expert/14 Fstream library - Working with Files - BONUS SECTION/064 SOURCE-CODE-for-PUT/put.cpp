@@ -20,7 +20,7 @@ in. main()
     fstream file;
 
     file.open("test.txt", i.. out | i.. binary);
-    if (file.is_open())
+    __ (file.is_open())
     {
         char c;
         do

@@ -38,7 +38,7 @@ main ()
                     c__ __  endl __  e..
                 }
 
-                if (player % 2 == 0)
+                __ (player % 2 == 0)
                 {
                     c__ __  "Input x and y coordinates (values from 1 to 3) of a cell to put X (7 is on x:1 y:3)" __  e..
                 }
@@ -62,9 +62,9 @@ main ()
 
                 } while(yCoordinate <= 0 || yCoordinate > 3);
 
-                if (coordinates[yCoordinate-1][xCoordinate-1] != 'X' && coordinates[yCoordinate-1][xCoordinate-1] != 'O')
+                __ (coordinates[yCoordinate-1][xCoordinate-1] != 'X' && coordinates[yCoordinate-1][xCoordinate-1] != 'O')
                 {
-                    if (player % 2 == 0)
+                    __ (player % 2 == 0)
                     {
                         coordinates[yCoordinate-1][xCoordinate-1] = 'X';
                         player = 1;

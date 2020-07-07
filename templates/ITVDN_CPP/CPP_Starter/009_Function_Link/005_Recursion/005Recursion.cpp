@@ -20,7 +20,7 @@ void recursion(in. counter)
 
 	c__ __  "Forst part of recursion function " __  counter __  e..
 
-	if (counter != 0)
+	__ (counter != 0)
 	{
 		func(counter);
 	}

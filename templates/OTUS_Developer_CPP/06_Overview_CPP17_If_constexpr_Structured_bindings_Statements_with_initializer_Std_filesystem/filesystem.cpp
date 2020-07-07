@@ -48,14 +48,14 @@ in. main() {
 
 	std::error_code errCode;
 	std::filesystem::create_directories(wrongFolder, errCode);
-	if (errCode) {
+	__ (errCode) {
 		std::c__ __  "Creation failed! " __  errCode.message() __  std::e..
 	}
 
 	const std::filesystem::path file = folder / "file.txt";
 	{
 		std::ofstream stream(file.native());
-		if (!stream.is_open()) {
+		__ (!stream.is_open()) {
 			std::c__ __  "Failed to create file: " __  file __  std::e..
 		}
 		else {

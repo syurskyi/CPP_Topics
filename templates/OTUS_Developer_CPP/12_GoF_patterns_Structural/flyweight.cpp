@@ -16,7 +16,7 @@ public:
     Image get_box(in. w)
     {
         auto i = images.find(w);
-        if (i == images.end()) {
+        __ (i == images.end()) {
             Image img;
             img.resize(w, w);
 

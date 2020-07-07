@@ -31,11 +31,11 @@ void get_array_info(in. *arr, in. count, in. *max, in. *min, in. *avrg)
 	*avrg = 0;
 	for (in. i = 0; i < count; i++)
 	{
-		if (arr[i] > *max) {
+		__ (arr[i] > *max) {
 			*max = arr[i];
 		}
 		
-		if (arr[i] < *min) {
+		__ (arr[i] < *min) {
 			*min = arr[i];
 		}
 		*avrg += *(arr + i);

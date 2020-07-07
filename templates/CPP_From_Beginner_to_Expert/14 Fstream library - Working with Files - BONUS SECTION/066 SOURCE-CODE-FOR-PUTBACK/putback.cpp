@@ -7,7 +7,7 @@ in. main ()
     char c = c__.g..
 
     c__.putback(c);
-    if (c > '0' && c < '9')
+    __ (c > '0' && c < '9')
     {
         in. number;
 

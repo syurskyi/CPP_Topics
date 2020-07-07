@@ -33,7 +33,7 @@ main ()
 
         in. xCoordinate, yCoordinate;
 
-        if (player % 2 == 0)
+        __ (player % 2 == 0)
         {
             c__ __  "Input x and y coordinates of a cell to put X (7 is on x:1 y:3)" __  e..
 

@@ -9,7 +9,7 @@ in. main(in. argc, char *argv[])
 
    for (in. i = 0; i < argc; i++)
    {
-    if ((strcmp(argv[i], "-h") == 0) && i == 1)
+    __ ((strcmp(argv[i], "-h") == 0) && i == 1)
      showHelp();
    }
 

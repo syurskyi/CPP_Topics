@@ -19,7 +19,7 @@ public:
     PgConnection* get()
     {
         for (auto& object : pool) {
-            if (!object.busy) {
+            __ (!object.busy) {
                 object.busy = true;
                 r_ object.connection;
             }
@@ -34,7 +34,7 @@ public:
     void put(PgConnection* connection)
     {
         for (auto& object : pool) {
-            if (object.connection==connection) {
+            __ (object.connection==connection) {
                 object.busy = false;
                 break;
             }

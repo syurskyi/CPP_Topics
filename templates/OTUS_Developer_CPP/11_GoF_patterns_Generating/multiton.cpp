@@ -14,7 +14,7 @@ public:
     {
         static std::map<Tag, Logger> instance;
         auto i = instance.find(t);
-        if (i==instance.end()) {
+        __ (i==instance.end()) {
             bo.. b;
             std::tie(i, b) = instance.emplace(std::make_pair(t, Logger(t)));
         }

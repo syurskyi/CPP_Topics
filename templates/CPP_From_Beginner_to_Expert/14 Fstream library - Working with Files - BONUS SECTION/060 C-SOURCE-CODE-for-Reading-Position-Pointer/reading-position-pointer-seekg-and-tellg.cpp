@@ -22,7 +22,7 @@ in. main()
 
     file.open("sample.txt", i.. in | i.. binary);
 
-    if (file.is_open())
+    __ (file.is_open())
     {
         string buffer;
 
@@ -40,7 +40,7 @@ in. main()
             c__ __  buffer __  e..
         }while (!file.eof());
 
-        if ((file.rdstate() ^ ifstream::eofbit) == 0)
+        __ ((file.rdstate() ^ ifstream::eofbit) == 0)
         {
             file.clear();
             c__ __  file.tellg() __  e..

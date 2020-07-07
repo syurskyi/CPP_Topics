@@ -10,7 +10,7 @@ std::string hw;
 
 void bar()
 {
-    if (!hw_guard) {
+    __ (!hw_guard) {
         hw = "Hello, World!";
         hw_guard = true;
     }

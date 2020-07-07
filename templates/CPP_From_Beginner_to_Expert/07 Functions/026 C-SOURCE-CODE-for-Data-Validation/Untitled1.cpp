@@ -120,7 +120,7 @@ double areaTriangle(double a, double h)
 }
 bo.. isValid(string error_msg)
 {
-    if (c__.rdstate()) //state is wrong when it is not equal to 0
+    __ (c__.rdstate()) //state is wrong when it is not equal to 0
     {
         c__.clear();
         c__.ignore(numeric_limits<streamsize>::max(), '\n');
@@ -134,7 +134,7 @@ bo.. isValid(string error_msg)
 }
 bo.. isValid()
 {
-    if (c__.rdstate()) //state is wrong when it is not equal to 0
+    __ (c__.rdstate()) //state is wrong when it is not equal to 0
     {
         c__.clear();
         c__.ignore(numeric_limits<streamsize>::max(), '\n');

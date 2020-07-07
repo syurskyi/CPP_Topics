@@ -13,12 +13,12 @@ main()
     cin >> b;
 */
 
-    if (a > b)
+    __ (a > b)
         c__ __  a __  " > " __  b __  e..
-    else if (a < b)
+    else __ (a < b)
     {
         c__ __  a __  " < " __  b __  e..
-        if (a < 10)
+        __ (a < 10)
             c__ __  "a is smaller than 10";
     }
     else

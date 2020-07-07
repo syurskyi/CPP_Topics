@@ -31,6 +31,6 @@ main()
 
     c__ __  "array [0] = " __  array[0] __  ", address: " __  array __  e..
 
-    if (&array[0] == array)
+    __ (&array[0] == array)
         c__ __  "thats true";
 }

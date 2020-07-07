@@ -23,11 +23,11 @@ string Compare(in. val1, in. val2)
 {
 	string result = "";
 
-	if (val1 < val2)
+	__ (val1 < val2)
 	{
 		result = "Comparison Less Then";
 	}
-	else if (val1 > val2)
+	else __ (val1 > val2)
 	{
 		result = "Comparison Greater Then";
 	}

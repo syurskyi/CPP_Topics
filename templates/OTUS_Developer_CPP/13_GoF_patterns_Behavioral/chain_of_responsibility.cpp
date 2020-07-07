@@ -15,7 +15,7 @@ public:
 
     void add(Handler *n)
     {
-        if (next)
+        __ (next)
             next->add(n);
         else
             next = n;
@@ -23,7 +23,7 @@ public:
 
     virtual void exec(const std::string &line)
     {
-        if (next) {
+        __ (next) {
             next->exec(line);
         }
     }
@@ -34,7 +34,7 @@ class DropHandler : public Handler
 public:
     void exec(const std::string &line) override
     {
-        if (line.find("DROP") == 0) {
+        __ (line.find("DROP") == 0) {
             std::c__ __  "DropHandler accept " __  line __  std::e..
         } else {
             std::c__ __  "DropHandler pass" __  std::e..
@@ -48,7 +48,7 @@ class SelectHandler : public Handler
 public:
     void exec(const std::string &line) override
     {
-        if (line.find("SELECT") == 0) {
+        __ (line.find("SELECT") == 0) {
             std::c__ __  "SelectHandler accept " __  line __  std::e..
         } else {
             std::c__ __  "SelectHandler pass" __  std::e..
@@ -62,7 +62,7 @@ class CreateHandler: public Handler
 public:
     void exec(const std::string &line) override
     {
-        if (line.find("CREATE") == 0) {
+        __ (line.find("CREATE") == 0) {
             std::c__ __  "CreateHandler accept " __  line __  std::e..
         } else {
             std::c__ __  "CreateHandler pass" __  std::e..

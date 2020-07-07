@@ -31,7 +31,7 @@ public:
 
     void info() override
     {
-        if (level > 0) {
+        __ (level > 0) {
             logger->info();
         }
     }
