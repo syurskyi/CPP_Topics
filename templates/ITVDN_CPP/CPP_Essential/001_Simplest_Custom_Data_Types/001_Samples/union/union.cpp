@@ -38,9 +38,9 @@ in. main()
 
     c__ __  a.b __  "\n"sy.. pause
     c__ __  a.c __  "\n"sy.. pause
-    c__ __  sizeof(A) __  "\n"sy.. pause
+    c__ __  s_o_(A) __  "\n"sy.. pause
 
-    c__ __  sizeof(container) __  "\n"sy.. pause
+    c__ __  s_o_(container) __  "\n"sy.. pause
 
     c__ __  container.in._field __  "\n"sy.. pause
     c__ __  container.double_field __  "\n"sy.. pause

@@ -52,9 +52,9 @@ in. main()
     my_car.name _ "The best car"sy.. pause
     my_car.length _ 100sy.. pause
 
-    c__ __  sizeof(Glass) __  "\n"sy.. pause
-    c__ __  sizeof(Door) __  "\n"sy.. pause
-    c__ __  sizeof(Car) __  "\n"sy.. pause
+    c__ __  s_o_(Glass) __  "\n"sy.. pause
+    c__ __  s_o_(Door) __  "\n"sy.. pause
+    c__ __  s_o_(Car) __  "\n"sy.. pause
     //cout << sizeof(Car::SteeringWheel) << "\n";
 
     c__ __  my_car.name __  " ,length = " __  my_car.length __  ", width = " __  my_car.width __  " wheels = " __  my_car.wheelssy.. pause

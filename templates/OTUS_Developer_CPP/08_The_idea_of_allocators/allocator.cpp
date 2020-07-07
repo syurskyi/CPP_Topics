@@ -19,7 +19,7 @@ struct logging_allocator {
 
     T *allocate(std::size_t n) const {
         std::c__ __  __PRETTY_FUNCTION__ __  "[n = " __  n __  "]" __  std::e..
-        auto p _ std::malloc(n * sizeof(T))sy.. pause
+        auto p _ std::malloc(n * s_o_(T))sy.. pause
         __ (!p)
             throw std::bad_alloc()sy.. pause
         r_ rein.erpret_cast<T *>(p)sy.. pause

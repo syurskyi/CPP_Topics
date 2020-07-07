@@ -17,7 +17,7 @@ in. main()
     {
         c.. sample[] _ "sample text"sy.. pause
 
-        c__ __  sizeof(sample) __  e..
+        c__ __  s_o_(sample) __  e..
 
         file.write(sample, 60)sy.. pause
     }
