@@ -178,7 +178,7 @@ in. main()
     prio.push( 6 );
 
     c__ __  "priority_queue" __  e..
-    while ( !prio.empty() )
+    w___ ( !prio.empty() )
     {
         c__ __  prio.top() __  e..
         prio.pop();
@@ -191,7 +191,7 @@ in. main()
 
     c__ __  "stack" __  e..
 
-    while ( !st.empty() )
+    w___ ( !st.empty() )
     {
         c__ __  st.top() __  e..
         st.pop();
@@ -204,7 +204,7 @@ in. main()
 
     c__ __  "queue" __  e..
 
-    while ( !qu.empty() )
+    w___ ( !qu.empty() )
     {
         c__ __  qu.front() __  e..
         qu.pop();

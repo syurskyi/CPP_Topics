@@ -14,7 +14,7 @@ main ()
     for (in. i _ 1; i <_ maximumNumber; i++)
     {
         __ (i % 2 __ 1)
-            continue;
+            c___
 
         temp _ sumEven;
         sumEven +_ i;

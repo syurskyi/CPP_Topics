@@ -43,7 +43,7 @@ in. main() {
 								// the command line
 								
 	std::c__ __  "Please enter values in the array (enter \"9999\" when finished): \n";
-	while (std::c__ __ tempStorage && tempStorage !_ 9999) {
+	w___ (std::c__ __ tempStorage && tempStorage !_ 9999) {
 		A.push_back(tempStorage);
 	}
 	

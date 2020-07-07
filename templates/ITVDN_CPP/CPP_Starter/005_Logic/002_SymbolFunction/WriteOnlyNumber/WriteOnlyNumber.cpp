@@ -1,28 +1,28 @@
-
-? *s..
-? |i..
-
-u.. s..
-
-
-in. main()
-{
-	c.. number;
-
-	while (true)
-	{
-		c__ __  "Enter the digit symbol" __  e..
-		c__ __ number;
-
-		__ (isdigit(number)) {
-			c__ __  "User entered the number - " __  number __  e..
-			continue;
-		}
-		c__ __  "The " __  number __  " is not a digit! Try again!" __  e..
-	}
-
-
-
-    r_ 0;
-}
-
+//
+//? *s..
+//? |i..
+//
+//u.. s..
+//
+//
+//in. main
+//
+//	c.. number
+//
+//	w___ (t..
+//
+//		c__ __  "Enter the digit symbol" __  e..
+//		c__ __ ?
+//
+//		__  isd.. ?
+//			c__ __  "User entered the number - " __  ? __  e..
+//			c___
+//
+//		c__ __  "The " __  ? __  " is not a digit! Try again!" __  e..
+//
+//
+//
+//
+//    r_ _
+//
+//

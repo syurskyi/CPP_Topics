@@ -28,7 +28,7 @@ in. main()
             c _ c__.g..
 
             file.put(c);
-        }while(c!_'.');
+        }w___(c!_'.');
     }
     ____
         c__ __  "Nie udalo sie poprawnie otworzyc pliku" __  e..

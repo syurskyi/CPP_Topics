@@ -21,7 +21,7 @@ in. main ()
         c__ __ howManyValues;
         system("cls");
 
-    } while(howManyValues < 2 || howManyValues > 5);
+    } w___(howManyValues < 2 || howManyValues > 5);
 
 
     for (in. i _ 0; i < howManyValues; i++)

@@ -21,7 +21,7 @@ in. main()
         system("cls"); //clear screen = cls
         initMenu();
 
-        while(!(c__ __ choice))
+        w___(!(c__ __ choice))
         {
             //cout << "state before: " << cin.rdstate() << endl;
             c__.clear();
@@ -41,10 +41,10 @@ in. main()
             c__ __ cont; //asdfg
             c__.ignore(numeric_limits<streamsize>::max(), '\n');
 
-        } while(cont !_ 'y' && cont !_ 'Y' && cont !_ 'N' && cont !_ 'n');
+        } w___(cont !_ 'y' && cont !_ 'Y' && cont !_ 'N' && cont !_ 'n');
 
 
-    } while(cont __ 'y' || cont __ 'Y');
+    } w___(cont __ 'y' || cont __ 'Y');
 
     r_ 0;
 }
@@ -63,22 +63,22 @@ void menuDecision(in. choice)
     {
         c__:
 
-            do { c__ __  "Enter the radius: " __  e.. c__ __ r; } while(!isValid());
+            do { c__ __  "Enter the radius: " __  e.. c__ __ r; } w___(!isValid());
             areaCircle(r);
             b..
         c..
             c__ __  "Enter the side of a square: " __  e..
-            do { c__ __ a; } while(!isValid("The data is wrong, please type it again:"));
+            do { c__ __ a; } w___(!isValid("The data is wrong, please type it again:"));
             areaSquare(a);
             b..
         c.. 3:
             c__ __  "Enter the width and height of a rectangle: " __  e..
-            do { c__ __ a __ b; } while(!isValid("The data is wrong, please type it again:"));
+            do { c__ __ a __ b; } w___(!isValid("The data is wrong, please type it again:"));
             areaRectangle(a, b);
             b..
         c.. 4:
             c__ __  "Enter the base and height of a triangle: " __  e..
-            do { c__ __ a __ h; } while(!isValid("The data is wrong, please type it again:"));
+            do { c__ __ a __ h; } w___(!isValid("The data is wrong, please type it again:"));
             areaTriangle(a, h);
             b..
         default:

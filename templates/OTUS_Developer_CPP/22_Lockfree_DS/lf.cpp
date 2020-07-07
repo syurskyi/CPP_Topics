@@ -45,7 +45,7 @@ struct ListLF {
 
     void push(Node* p)
     {
-        while (true) {
+        w___ (true) {
             Node* old_head _ head;
             p->next _ head;
 

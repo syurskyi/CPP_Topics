@@ -25,10 +25,10 @@ in. main()
         {
             c__ __  "Do you want to continue the program? (Y/N)" __  e..
             c__ __ cont;
-        } while(cont !_ 'y' && cont !_ 'Y' && cont !_ 'N' && cont !_ 'n');
+        } w___(cont !_ 'y' && cont !_ 'Y' && cont !_ 'N' && cont !_ 'n');
 
 
-    } while(cont __ 'y' || cont __ 'Y');
+    } w___(cont __ 'y' || cont __ 'Y');
 
     r_ 0;
 }

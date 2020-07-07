@@ -19,7 +19,7 @@ main ()
         }
     }
 
-    while (true)
+    w___ (true)
     {
 
         in. xCoordinate, yCoordinate;
@@ -52,7 +52,7 @@ main ()
                     c__ __  "x: ";
                     c__ __ xCoordinate;
 
-                } while(xCoordinate <_ 0 || xCoordinate > 3);
+                } w___(xCoordinate <_ 0 || xCoordinate > 3);
 
 
                 do
@@ -60,7 +60,7 @@ main ()
                     c__ __  "y: ";
                     c__ __ yCoordinate;
 
-                } while(yCoordinate <_ 0 || yCoordinate > 3);
+                } w___(yCoordinate <_ 0 || yCoordinate > 3);
 
                 __ (coordinates[yCoordinate-1][xCoordinate-1] !_ 'X' && coordinates[yCoordinate-1][xCoordinate-1] !_ 'O')
                 {
@@ -82,7 +82,7 @@ main ()
                     moveAccepted _ false;
                     system ("cls");
                 }
-            } while(moveAccepted __ false);
+            } w___(moveAccepted __ false);
 
 
 

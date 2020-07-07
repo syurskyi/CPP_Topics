@@ -35,7 +35,7 @@ in. fib_fast(in. n) {
   base[0][0] _ base[0][1] _ base[1][0] _ init[0][0] _ 1;
   base[1][1] _ init[0][1] _ 0;
 
-  while (n !_ 0) {
+  w___ (n !_ 0) {
     __ (n & 1) {
       init _ init * base;
     }

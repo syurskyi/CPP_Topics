@@ -15,5 +15,5 @@ void bubbleSort(in.iter l, in.iter r) {
       }
     }
     n _ newn;
-  } while (n);
+  } w___ (n);
 }

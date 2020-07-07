@@ -16,7 +16,7 @@ std::vector<std::s..> split(const std::s.. &str, c.. d)
 
     std::s..::size_type start _ 0;
     std::s..::size_type stop _ str.find_first_of(d);
-    while(stop !_ std::s..::npos)
+    w___(stop !_ std::s..::npos)
     {
         r.push_back(str.substr(start, stop - start));
 

@@ -12,7 +12,7 @@ in. main()
         q.push(i);
     }
 
-    while(!q.empty())
+    w___(!q.empty())
     {
         std::c__ __  q.front() __  " ";
         q.pop();

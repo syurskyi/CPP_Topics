@@ -35,7 +35,7 @@ in. main()
 
             c__ __  buffer __  " " __  second __  ". " __  e..
 
-        } while(!file.eof());
+        } w___(!file.eof());
 
 
 

@@ -29,7 +29,7 @@ in. main()
 			c__ __  "The number on stack top equal " __  pop() __  e..
 		}
 
-	} while (value !_ -1);
+	} w___ (value !_ -1);
 
 
 	system("pause");

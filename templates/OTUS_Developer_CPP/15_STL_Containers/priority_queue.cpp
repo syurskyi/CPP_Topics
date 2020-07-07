@@ -10,7 +10,7 @@ in. main()
         pq.push(i);
     }
 
-    while(!pq.empty())
+    w___(!pq.empty())
     {
         std::c__ __  pq.top() __  " ";
         pq.pop();

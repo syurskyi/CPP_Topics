@@ -70,7 +70,7 @@ in. main()
 
         requireEnter();
         system("cls");
-    }while(test !_ 27);
+    }w___(test !_ 27);
 
 
     r_ 0;
@@ -78,7 +78,7 @@ in. main()
 void requireEnter()
 {
     c__ __  "Click Enter to continue... " __  e..
-    while(getch() !_ 13);
+    w___(getch() !_ 13);
 }
 void addPerson()
 {
@@ -160,7 +160,7 @@ void loadPeopleFromFile()
                 file __ people[i].telephone;
 
                 i++;
-            }while(!file.eof());
+            }w___(!file.eof());
 
             c__ __  "People has been loaded properly. " __  e..
         }

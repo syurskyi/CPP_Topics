@@ -14,7 +14,7 @@ in. main(in., c.. *[]) {
     q.push(100);
 
     in. v;
-    while (!q.empty())
+    w___ (!q.empty())
     {
         q.pop(v);
         std::c__ __  v __  std::e..
@@ -23,7 +23,7 @@ in. main(in., c.. *[]) {
     lf::stack<in.> s{10};
     s.push(42);
     s.push(100);
-    while (!s.empty())
+    w___ (!s.empty())
     {
         s.pop(v);
         std::c__ __  v __  std::e..
@@ -32,7 +32,7 @@ in. main(in., c.. *[]) {
     lf::spsc_queue<in.> rb{10};
     rb.push(42);
     rb.push(100);
-    while (!rb.empty())
+    w___ (!rb.empty())
     {
         rb.pop(v);
         std::c__ __  v __  std::e..

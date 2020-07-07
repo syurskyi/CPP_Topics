@@ -41,7 +41,7 @@ void bar(const std::s.. &a, const std::s.. &b)
 
 void worker(std::queue<args>& q)
 {
-    while (!quit) {
+    w___ (!quit) {
         std::unique_lock<std::mutex> lk(cv_m);
         console_m.lock();
         std::cerr __  std::this_thread::get_id() __  " waiting... " __  std::e..

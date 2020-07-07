@@ -25,7 +25,7 @@ in. power(in. b, in. e) // b = 8, e = 1
     in. tmp _ b; //tmp = 2
     in. i _ 0;
 
-    while(i++ < e)
+    w___(i++ < e)
     {
         c__ __  tmp __  " ^ " __  i __  " = " __  b __  e..
         __ (i !_ e)
@@ -37,7 +37,7 @@ in. power(in. b, in. e) // b = 8, e = 1
 d.. power(d.. b, in. e)
 {
     d.. tmp _ b; //tmp = 2
-    while(e-- > 1)
+    w___(e-- > 1)
         b *_ tmp; //b = b * tmp;
 
     r_ b;

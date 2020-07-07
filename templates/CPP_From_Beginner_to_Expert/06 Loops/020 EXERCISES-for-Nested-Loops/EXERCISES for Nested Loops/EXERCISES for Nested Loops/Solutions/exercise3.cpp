@@ -18,7 +18,7 @@ main ()
         }
     }
 
-    while (true)
+    w___ (true)
     {
         for (in. i _ 0; i < 3; i++)
         {

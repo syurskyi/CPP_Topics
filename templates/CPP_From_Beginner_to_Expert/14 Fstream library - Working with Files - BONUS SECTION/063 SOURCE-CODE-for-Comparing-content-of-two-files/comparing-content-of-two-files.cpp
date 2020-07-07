@@ -63,7 +63,7 @@ bo.. areFilesEqual(fstream *a, fstream *b)
                 delete [] file2buffer;
                 r_ false;
             }
-        }while(a->good() && b->good());
+        }w___(a->good() && b->good());
 
         delete [] file1buffer;
         delete [] file2buffer;

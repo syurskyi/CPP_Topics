@@ -15,7 +15,7 @@ in. main()
 		b..	// Эта инструкция прерывает работу цикла
 
 		c__ __  "This line is never executed";	// Эта строка не выполнится никогда
-	} while (count > 0);
+	} w___ (count > 0);
 
 	c__ __  "This line is always executed" __  e..
 

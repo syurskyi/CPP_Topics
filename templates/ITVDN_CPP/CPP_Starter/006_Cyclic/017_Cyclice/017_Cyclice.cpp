@@ -12,7 +12,7 @@ in. main()
 	}
 
 	// 2.
-	while (true)
+	w___ (true)
 	{
 		// Тело цикла
 	}
@@ -21,7 +21,7 @@ in. main()
 	do
 	{
 		// Тело цикла
-	} while (true);
+	} w___ (true);
 
 
     r_ 0;

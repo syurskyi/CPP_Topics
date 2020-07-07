@@ -14,7 +14,7 @@ main()
         cout << array[i++] << endl;
     }
     */
-    while (i)
+    w___ (i)
       c__ __ "lalala";
 /*
     do

@@ -25,7 +25,7 @@ in. main()
 		factorial _ factorial * number;
 		number--;
 
-	} while (number > 0);
+	} w___ (number > 0);
 	
 	c__ __  factorial __  e..
 	

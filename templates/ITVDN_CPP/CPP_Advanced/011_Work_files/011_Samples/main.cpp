@@ -53,7 +53,7 @@ s.. readFile5( const s..& fileName )
     std::ifstream input( fileName );
     std::stringstream sstr;
 
-    while ( input __ sstr.rdbuf() )
+    w___ ( input __ sstr.rdbuf() )
         ;
 
     r_ sstr.str();
@@ -87,7 +87,7 @@ in. main()
 
     __ ( in_stream.is_open() )
     {
-        while ( std::getline( in_stream, result ) )
+        w___ ( std::getline( in_stream, result ) )
         {
             // in_stream >> result;
             c__ __  result;

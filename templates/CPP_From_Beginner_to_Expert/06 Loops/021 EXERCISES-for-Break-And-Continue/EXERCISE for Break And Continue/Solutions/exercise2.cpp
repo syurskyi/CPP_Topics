@@ -24,7 +24,7 @@ main ()
         ____ __ (choice __ 'N' || choice __ 'n')
         {
             system ("cls");
-            continue;
+            c___
         }
         ____
         {

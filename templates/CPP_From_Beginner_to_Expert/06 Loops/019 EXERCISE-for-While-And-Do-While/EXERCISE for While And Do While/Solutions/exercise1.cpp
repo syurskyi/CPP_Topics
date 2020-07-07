@@ -19,7 +19,7 @@ main ()
 
          system("cls");
 
-     } while (checkPin !_ pin);
+     } w___ (checkPin !_ pin);
 
      c__ __  "Correct pin, welcome !";
 

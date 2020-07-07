@@ -13,7 +13,7 @@ void exponentiation();
 
 in. main ()
 {
-    while (true)
+    w___ (true)
     {
         c.. choice;
 

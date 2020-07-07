@@ -145,7 +145,7 @@ in. main()
 
     std::vector< in. > vec{ 1, 2, 3 };
 
-    while ( std::next_permutation( vec.begin(), vec.end() ) )
+    w___ ( std::next_permutation( vec.begin(), vec.end() ) )
     {
         std::copy( vec.begin(), vec.end(), std::ostream_iterator< in. >{ std::c__, ", " } );
         std::c__ __  std::e..

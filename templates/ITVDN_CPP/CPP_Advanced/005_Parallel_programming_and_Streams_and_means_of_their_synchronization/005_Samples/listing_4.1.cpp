@@ -30,7 +30,7 @@ std::condition_variable data_cond;
 
 void data_preparation_thread()
 {
-    while(more_data_to_prepare())
+    w___(more_data_to_prepare())
     {
         data_chunk const data_prepare_data();
         std::lock_guard<std::mutex> lk(mut);
@@ -41,7 +41,7 @@ void data_preparation_thread()
 
 void data_processing_thread()
 {
-    while(true)
+    w___(true)
     {
         std::unique_lock<std::mutex> lk(mut);
         data_cond.wait(lk,[]{r_ !data_queue.empty();});

@@ -21,7 +21,7 @@ main ()
          system("cls");
          counter--;
 
-     } while ((checkPin !_ pin) && (counter > 0));
+     } w___ ((checkPin !_ pin) && (counter > 0));
 
      __ (checkPin __ pin)
      {

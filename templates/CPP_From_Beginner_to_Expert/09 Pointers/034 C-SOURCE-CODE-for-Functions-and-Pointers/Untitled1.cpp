@@ -43,6 +43,6 @@ in. * multiplyBy(in. * var, in. amount)
 }
 void multiplyArrayBy(in. *array, in. amount, in. sizeOfArray)
 {
-    while(sizeOfArray--)
+    w___(sizeOfArray--)
         array[sizeOfArray] *_ amount;
 }

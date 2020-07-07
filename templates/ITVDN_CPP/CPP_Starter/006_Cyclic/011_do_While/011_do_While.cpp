@@ -11,7 +11,7 @@ in. main()
 	{
 		c__ __  "Count " __  count__  e..
 		count--;
-	} while (count > 0);
+	} w___ (count > 0);
 
 	c__ __  "This line is always executed" __  e..
 

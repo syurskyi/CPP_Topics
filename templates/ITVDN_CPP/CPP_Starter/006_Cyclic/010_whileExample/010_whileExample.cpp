@@ -15,7 +15,7 @@ in. main()
 	in. attempt _ 0;		// Номер текущей попытки
 	s.. color _ "red";	// Задуманый цвет
 
-	while (attempt < maxAttempt) {
+	w___ (attempt < maxAttempt) {
 		attempt++;
 		c__ __  str __  " Attempt " __  attempt __  e..
 		s.. value _ "";
@@ -28,7 +28,7 @@ in. main()
 		__ (value !_ color)
 		{
 			str _ "You did not guess";
-			continue;
+			c___
 		}
 
 		c__ __  "Congratulations, you guessed right with " __  attempt __  " attempts!" __  e..

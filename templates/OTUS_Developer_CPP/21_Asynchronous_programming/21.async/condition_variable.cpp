@@ -18,7 +18,7 @@ void worker(std::queue<std::s..>& q)
 //    std::cerr << std::this_thread::get_id() << " starting... " << std::endl;
 //    console_m.unlock();
 
-    while (!quit) {
+    w___ (!quit) {
         std::unique_lock<std::mutex> lk(cv_m);
 
         console_m.lock();

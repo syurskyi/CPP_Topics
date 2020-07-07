@@ -21,7 +21,7 @@ in. main()
             file.getline(buffer, 250);
 
             c__ __  buffer __  " " __  file.gcount() __  e..
-        }while(!file.eof());
+        }w___(!file.eof());
     }
     ____
         c__ __  "The file couldn't be opened properly" __  e..

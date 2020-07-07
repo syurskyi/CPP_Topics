@@ -8,7 +8,7 @@ in. main()
 	in. count _ 5;
 
 
-	while (count > 0)
+	w___ (count > 0)
 	{
 		c__ __  "Count = " __  count __  e..
 		count--;

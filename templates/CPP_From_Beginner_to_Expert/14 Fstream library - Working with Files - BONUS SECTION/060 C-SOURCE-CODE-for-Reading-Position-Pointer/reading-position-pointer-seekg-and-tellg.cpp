@@ -38,7 +38,7 @@ in. main()
             file __ buffer;
 
             c__ __  buffer __  e..
-        }while (!file.eof());
+        }w___ (!file.eof());
 
         __ ((file.rdstate() ^ ifstream::eofbit) __ 0)
         {
