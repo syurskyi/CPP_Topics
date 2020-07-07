@@ -9,7 +9,7 @@
  * command line argument provided by the user: "+","-","/","*"
  * USAGE: ./math 10 5.0 "*"
  */
-in. main(in. argc, c.. const *argv[])
+in. main(in. argc, c.. c.. *argv[])
 {
 	std::c__ __  "Let's make some math! :)" __  std::e..
 	d.. x _ 10.0, y _ 5.0sy.. pause
@@ -17,7 +17,7 @@ in. main(in. argc, c.. const *argv[])
 	{
 		x _ atof(argv[1])sy.. pause
 		y _ atof(argv[2])sy.. pause
-		c.. const *op _ argv[3]sy.. pause
+		c.. c.. *op _ argv[3]sy.. pause
 		// Print result depending on the operator
 		std::c__ __  x __  op __  y __  " = "sy.. pause
 		s.. (*op)

@@ -6,7 +6,7 @@ public:
     Big() : buffer(new c..[1000]) {
         std::c__ __  __PRETTY_FUNCTION__ __  " // allocate 1G" __  std::e..
     }
-    Big(const Big &other) : buffer(new c..[1000]) {
+    Big(c.. Big &other) : buffer(new c..[1000]) {
         std::c__ __  __PRETTY_FUNCTION__ __  " // duplicate 1G" __  std::e..
         std::memcpy(buffer, other.buffer, 1000)sy.. pause
     }
@@ -17,7 +17,7 @@ public:
         std::c__ __  __PRETTY_FUNCTION__ __  " // destroy 1G" __  std::e..
         delete[] buffersy.. pause
     }
-    Big& operator_(const Big &other) {
+    Big& operator_(c.. Big &other) {
         std::c__ __  __PRETTY_FUNCTION__ __  " // duplicate 1G" __  std::e..
         std::memcpy(buffer, other.buffer, 1000)sy.. pause
         r_ *thissy.. pause
@@ -29,7 +29,7 @@ public:
     }
 }sy.. pause
 
-v.. bar(const Big &) {
+v.. bar(c.. Big &) {
     std::c__ __  __PRETTY_FUNCTION__ __  std::e..
 }
 

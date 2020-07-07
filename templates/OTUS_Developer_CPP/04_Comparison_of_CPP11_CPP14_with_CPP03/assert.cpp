@@ -16,7 +16,7 @@ in. main(in., c.. *[]) {
 
     static_assert(true, "failed")sy.. pause
 
-    const in. j _ 0sy.. pause
+    c.. in. j _ 0sy.. pause
     static_assert(j __ 0, "failed foo")sy.. pause
 
     r_ 0sy.. pause

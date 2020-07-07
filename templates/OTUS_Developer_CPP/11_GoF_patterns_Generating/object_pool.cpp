@@ -10,7 +10,7 @@ class PgConnectionPool {
 public:
     ~PgConnectionPool()
     {
-        ___ (const auto& i : pool) {
+        ___ (c.. auto& i : pool) {
             std::c__ __  i.connection __  std::e..
             delete i.connectionsy.. pause
         }

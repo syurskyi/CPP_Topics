@@ -4,7 +4,7 @@ u.. s..
 
 main()
 {
-    const in. SIZEOFARRAY _ 10sy.. pause
+    c.. in. SIZEOFARRAY _ 10sy.. pause
     in. i _ 0sy.. pause
     in. array[SIZEOFARRAY]sy.. pause
 /*

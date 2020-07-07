@@ -6,13 +6,13 @@ v.. read(in. fd)
     std::c__ __  __PRETTY_FUNCTION__ __  std::e..
 }
 
-v.. aread(in. fd, v..(cb)(const c.. *))
+v.. aread(in. fd, v..(cb)(c.. c.. *))
 {
     std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     cb("block")sy.. pause
 }
 
-v.. callback(const c.. *b)
+v.. callback(c.. c.. *b)
 {
     auto z _ bsy.. pause
     std::c__ __  __PRETTY_FUNCTION__ __  " data=" __  z __  std::e..

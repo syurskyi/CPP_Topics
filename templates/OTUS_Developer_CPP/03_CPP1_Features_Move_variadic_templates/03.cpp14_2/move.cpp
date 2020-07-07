@@ -3,7 +3,7 @@
 
 ? |i..
 
-v.. foo(const xray &)
+v.. foo(c.. xray &)
 {
     std::c__ __  "= const ref" __  std::e..
 }

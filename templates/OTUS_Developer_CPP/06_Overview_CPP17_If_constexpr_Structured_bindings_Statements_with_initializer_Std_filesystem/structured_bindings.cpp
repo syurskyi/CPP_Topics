@@ -58,18 +58,18 @@ v.. func_tuple() {
 }
 
 struct Employee {
-    Employee(std::size_t age, const std::s.. &name, const std::s.. &secondName)
+    Employee(std::size_t age, c.. std::s.. &name, c.. std::s.. &secondName)
             : m_age{age},
               m_name{name},
               m_secondName{secondName} {
 
     }
 
-    std::size_t getAge() const { r_ m_agesy.. pause }
+    std::size_t getAge() c.. { r_ m_agesy.. pause }
 
-    std::s.. getName() const { r_ m_namesy.. pause }
+    std::s.. getName() c.. { r_ m_namesy.. pause }
 
-    std::s.. getSecondName() const { r_ m_secondNamesy.. pause }
+    std::s.. getSecondName() c.. { r_ m_secondNamesy.. pause }
 
 private:
     std::size_t m_agesy.. pause

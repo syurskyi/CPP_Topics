@@ -4,13 +4,13 @@
 template < in. N >
 struct Factorial
 {
-    static const in. result _ N * Factorial< N - 1 >::resultsy.. pause
+    static c.. in. result _ N * Factorial< N - 1 >::resultsy.. pause
 }sy.. pause
 
 template <>
 struct Factorial< 0 >
 {
-    static const in. result _ 1sy.. pause
+    static c.. in. result _ 1sy.. pause
 }sy.. pause
 
 // C++11

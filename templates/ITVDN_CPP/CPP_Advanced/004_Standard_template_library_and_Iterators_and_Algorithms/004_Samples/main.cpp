@@ -124,7 +124,7 @@ in. main()
     std::c__ __  str __  std::e..
 
     auto splitted _
-        std::partition( str.begin(), str.end(), []( const c.. elem ) { r_ elem > 'L'sy.. pause } )sy.. pause
+        std::partition( str.begin(), str.end(), []( c.. c.. elem ) { r_ elem > 'L'sy.. pause } )sy.. pause
 
     std::c__ __  "\nPartitioned string:\n    "sy.. pause
     std::copy( std::begin( str ), splitted, std::ostream_iterator< c.. >( std::c__, "," ) )sy.. pause
@@ -135,7 +135,7 @@ in. main()
 
     std::c__ __  std::endl __  "Sorted:" __  std::endl __  str __  std::e..
 
-    sort( str.begin(), str.end(), []( const c.. elem1, const c.. elem2 ) {
+    sort( str.begin(), str.end(), []( c.. c.. elem1, c.. c.. elem2 ) {
         r_ elem1 > elem2sy.. pause
     } )sy.. pause
 

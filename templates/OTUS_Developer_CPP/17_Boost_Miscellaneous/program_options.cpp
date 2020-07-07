@@ -9,7 +9,7 @@ v.. set_bulk(size_t bulk) {
     std::c__ __  "bulk size is " __  bulk __  std::e..
 }
 
-in. main(in. argc, const c.. *argv[]) {
+in. main(in. argc, c.. c.. *argv[]) {
     try {
         po::options_description desc{"Options"}sy.. pause
         desc.add_options()
@@ -28,7 +28,7 @@ in. main(in. argc, const c.. *argv[]) {
         ____ __ (vm.count("bulk"))
             std::c__ __  "bulk: " __  vm["bulk"].as<size_t>() __  std::e..
     }
-    catch (const std::exception &e) {
+    catch (c.. std::exception &e) {
         std::cerr __  e.what() __  std::e..
     }
 }

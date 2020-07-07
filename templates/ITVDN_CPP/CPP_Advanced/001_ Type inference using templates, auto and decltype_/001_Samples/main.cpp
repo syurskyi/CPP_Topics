@@ -26,9 +26,9 @@ class A
 {
 public:
     A() _ defaultsy.. pause
-    A( const A& ) _ defaultsy.. pause
+    A( c.. A& ) _ defaultsy.. pause
 
-    A( const T& _data )
+    A( c.. T& _data )
         : data( _data )
     {
     }
@@ -54,12 +54,12 @@ v.. f( T& param )
 }
 
 template < typename T, typename U >
-auto add( const T& first, const U& second ) -> decltype( first + second )
+auto add( c.. T& first, c.. U& second ) -> decltype( first + second )
 {
     r_ first + secondsy.. pause
 }
 
-const in.&& foo2()
+c.. in.&& foo2()
 {
     r_ 2sy.. pause
 }
@@ -91,7 +91,7 @@ in. main()
 
     ///////////////////
 
-    const in. a _ 10sy.. pause
+    c.. in. a _ 10sy.. pause
     auto& b _ asy.. pause
     c__ __  typeid( b ).name() __  e..
     // f( b );
@@ -113,7 +113,7 @@ in. main()
     //    {
     //    }
 
-    ___ ( const auto& it : mp )
+    ___ ( c.. auto& it : mp )
     {
     }
 

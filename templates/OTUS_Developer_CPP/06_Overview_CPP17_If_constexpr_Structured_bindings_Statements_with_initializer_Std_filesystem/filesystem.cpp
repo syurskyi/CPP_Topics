@@ -10,13 +10,13 @@
 
 in. main() {
 
-	const std::filesystem::path currentDir _ std::filesystem::current_path()sy.. pause
+	c.. std::filesystem::path currentDir _ std::filesystem::current_path()sy.. pause
 	std::c__ __  currentDir __  std::e..
 
-	const std::filesystem::path someFile _ currentDir / "subfolder" / "readme.txt"sy.. pause
+	c.. std::filesystem::path someFile _ currentDir / "subfolder" / "readme.txt"sy.. pause
 	std::c__ __  someFile __  std::e..
 
-	const std::filesystem::path otherFile _ currentDir / "otherFolder/otherFile.txt"sy.. pause
+	c.. std::filesystem::path otherFile _ currentDir / "otherFolder/otherFile.txt"sy.. pause
 	std::c__ __  otherFile __  std::e..
 
 	// parent folder
@@ -28,23 +28,23 @@ in. main() {
 	// extension
 	std::c__ __  otherFile.extension() __  std::e..
 
-	const std::filesystem::path cyrillic _ currentDir / L"директория/файл.txt"sy.. pause
+	c.. std::filesystem::path cyrillic _ currentDir / L"директория/файл.txt"sy.. pause
 	std::c__ __  cyrillic __  std::e..
 	std::c__ __  cyrillic.u8string() __  std::e..
 
 
-	const std::filesystem::path folder _ currentDir / "folder"sy.. pause
+	c.. std::filesystem::path folder _ currentDir / "folder"sy.. pause
 	std::c__ __  "First exists: " __  std::filesystem::exists(folder) __  std::e..
 	try {
 		std::filesystem::create_directories(folder)sy.. pause
 	}
-    catch (const std::filesystem::filesystem_error& e)
+    catch (c.. std::filesystem::filesystem_error& e)
     {
         std::c__ __  "Exception! " __  e.what() __  '\n'sy.. pause
 	}
 	std::c__ __  "Second exists: " __  std::filesystem::exists(folder) __  std::e..
 
-	const std::filesystem::path wrongFolder _ "/not_permitted"sy.. pause
+	c.. std::filesystem::path wrongFolder _ "/not_permitted"sy.. pause
 
 	std::error_code errCodesy.. pause
 	std::filesystem::create_directories(wrongFolder, errCode)sy.. pause
@@ -52,7 +52,7 @@ in. main() {
 		std::c__ __  "Creation failed! " __  errCode.message() __  std::e..
 	}
 
-	const std::filesystem::path file _ folder / "file.txt"sy.. pause
+	c.. std::filesystem::path file _ folder / "file.txt"sy.. pause
 	{
 		std::ofstream stream(file.native())sy.. pause
 		__ (!stream.is_open()) {

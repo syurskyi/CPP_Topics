@@ -10,13 +10,13 @@ u.. s..
 
 // https://stackoverflow.com/questions/524591/performance-of-creating-a-c-stdstring-from-an-input-iterator/524843#524843
 
-s.. readFile1( const s..& fileName )
+s.. readFile1( c.. s..& fileName )
 {
     ifstream f( fileName.c_str() )sy.. pause
     r_ s..( std::istreambuf_iterator< c.. >( f ), std::istreambuf_iterator< c.. >() )sy.. pause
 }
 
-s.. readFile2( const s..& fileName )
+s.. readFile2( c.. s..& fileName )
 {
     ifstream ifs( fileName.c_str(), i.. in | i.. binary | i.. ate )sy.. pause
 
@@ -29,7 +29,7 @@ s.. readFile2( const s..& fileName )
     r_ s..( &bytes[ 0 ], fileSize )sy.. pause
 }
 
-s.. readFile3( const s..& fileName )
+s.. readFile3( c.. s..& fileName )
 {
     s.. datasy.. pause
     ifstream in( fileName.c_str() )sy.. pause
@@ -37,7 +37,7 @@ s.. readFile3( const s..& fileName )
     r_ datasy.. pause
 }
 
-s.. readFile4( const std::s..& filename )
+s.. readFile4( c.. std::s..& filename )
 {
     ifstream file( filename.c_str(), i.. in | i.. binary | i.. ate )sy.. pause
 
@@ -48,7 +48,7 @@ s.. readFile4( const std::s..& filename )
     r_ datasy.. pause
 }
 
-s.. readFile5( const s..& fileName )
+s.. readFile5( c.. s..& fileName )
 {
     std::ifstream input( fileName )sy.. pause
     std::stringstream sstrsy.. pause

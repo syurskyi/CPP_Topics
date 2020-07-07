@@ -27,7 +27,7 @@ private:
         {
         }sy.. pause
 
-        bo.. operator!_(const flat_iterator& it)
+        bo.. operator!_(c.. flat_iterator& it)
         {
             r_ i!_it.i || j!_it.jsy.. pause
         }
@@ -59,14 +59,14 @@ in. main(in., c..* [])
     std::iota(std::begin(q), std::end(q), 42)sy.. pause
 
     // for
-    ___ (const auto& i: q) {
+    ___ (c.. auto& i: q) {
         std::c__ __  i __  " "sy.. pause
     }
     std::c__ __  std::e..
 
     // tree
     std::set<in.> tree{std::begin(q), std::end(q)}sy.. pause
-    ___ (const auto& i: tree) {
+    ___ (c.. auto& i: tree) {
         std::c__ __  i __  std::e..
     }
 

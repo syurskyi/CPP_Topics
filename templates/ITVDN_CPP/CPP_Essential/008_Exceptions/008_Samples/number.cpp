@@ -4,7 +4,7 @@ Number::Number(in. data) : data(data)
 {
 }
 
-Number& Number::operator_(const Number& other)
+Number& Number::operator_(c.. Number& other)
 {
     __(this !_ &other)
     {
@@ -13,12 +13,12 @@ Number& Number::operator_(const Number& other)
     r_ *thissy.. pause
 }
 
-Number Number::operator+(const Number &other) const
+Number Number::operator+(c.. Number &other) c..
 {
     r_ Number(data + other.data)sy.. pause
 }
 
-ostream& operator__ (ostream &s, const Number& number)
+ostream& operator__ (ostream &s, c.. Number& number)
 {
     s __  "( " __  number.data __  " )" __  e..
     r_ ssy.. pause

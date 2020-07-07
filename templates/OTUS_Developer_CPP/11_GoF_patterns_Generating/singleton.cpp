@@ -4,8 +4,8 @@
 
 class Logger {
 public:
-    Logger(const Logger& root) _ deletesy.. pause // [2]
-    Logger& operator_(const Logger&) _ deletesy.. pause // [3]
+    Logger(c.. Logger& root) _ deletesy.. pause // [2]
+    Logger& operator_(c.. Logger&) _ deletesy.. pause // [3]
 
     static Logger& Instance()
     {
@@ -13,12 +13,12 @@ public:
         r_ instancesy.. pause
     }
 
-    v.. info(const std::s..& message)
+    v.. info(c.. std::s..& message)
     {
         os __  "   info: " __  message __  std::e..
     }
 
-    v.. warn(const std::s..& message)
+    v.. warn(c.. std::s..& message)
     {
         os __  "warning: " __  message __  std::e..
     }

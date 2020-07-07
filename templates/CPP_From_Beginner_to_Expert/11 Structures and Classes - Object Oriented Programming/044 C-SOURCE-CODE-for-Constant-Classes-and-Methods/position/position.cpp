@@ -13,7 +13,7 @@ Position::~Position()
 
 }
 
-v.. Position::getPosition() const
+v.. Position::getPosition() c..
 {
     c__ __  "x : " __  x __  e..
     c__ __  "y : " __  y __  e..

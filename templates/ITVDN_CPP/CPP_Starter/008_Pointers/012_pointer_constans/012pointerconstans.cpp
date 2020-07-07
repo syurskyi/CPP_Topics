@@ -7,7 +7,7 @@ in. main()
 {
 	in. hour _ 12
 
-	const in. *const pHour _ &hour
+	c.. in. *c.. pHour _ &hour
 
 	// Нельзя изменять данные на которые указывает указатель.
 	 // *pHour = 24;

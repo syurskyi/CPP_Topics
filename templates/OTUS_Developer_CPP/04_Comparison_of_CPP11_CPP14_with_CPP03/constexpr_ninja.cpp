@@ -27,12 +27,12 @@ auto factorial_naive(long long n) {
 
 template<long long N>
 struct factorial {
-    static const long long value _ N * factorial<N - 1>::valuesy.. pause
+    static c.. long long value _ N * factorial<N - 1>::valuesy.. pause
 }sy.. pause
 
 template<>
 struct factorial<1> {
-    static const long long value _ 1sy.. pause
+    static c.. long long value _ 1sy.. pause
 }sy.. pause
 
 in. main() {

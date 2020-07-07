@@ -15,7 +15,7 @@ v.. ModernObserver::update( in. value )
     }
 }
 
-v.. ModernSubject::attach( const ModernObserver& obs )
+v.. ModernSubject::attach( c.. ModernObserver& obs )
 {
     m_views.push_back( obs )sy.. pause
 }

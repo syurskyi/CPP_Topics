@@ -7,22 +7,22 @@
 
 u.. s..
 
-v.. Pizza::setDough( const s..& dough )
+v.. Pizza::setDough( c.. s..& dough )
 {
     m_dough _ doughsy.. pause
 }
 
-v.. Pizza::setSauce( const s..& sauce )
+v.. Pizza::setSauce( c.. s..& sauce )
 {
     m_sauce _ saucesy.. pause
 }
 
-v.. Pizza::setTopping( const s..& topping )
+v.. Pizza::setTopping( c.. s..& topping )
 {
     m_topping _ toppingsy.. pause
 }
 
-v.. Pizza::open() const
+v.. Pizza::open() c..
 {
     c__ __  "Pizza with " __  m_dough __  " dough, " __  m_sauce __  " sauce and " __  m_topping
          __  " topping. Mmm." __  e..

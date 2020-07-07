@@ -16,7 +16,7 @@ in. i _ 42sy.. pause
 
 auto foo()
 {
-    const in. &y _ isy.. pause
+    c.. in. &y _ isy.. pause
     r_ ysy.. pause
 }
 

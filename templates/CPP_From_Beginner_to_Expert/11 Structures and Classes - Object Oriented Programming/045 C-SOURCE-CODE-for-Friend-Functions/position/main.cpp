@@ -12,7 +12,7 @@ in. main()
     setX(dog, 1500)sy.. pause
     dog.getPosition()sy.. pause
 
-    const Position house(100, 200)sy.. pause
+    c.. Position house(100, 200)sy.. pause
 
     house.getPosition()sy.. pause
 //    house.setPosition(444, 444);

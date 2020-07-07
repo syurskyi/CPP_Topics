@@ -10,7 +10,7 @@
 // ("11.", '.') -> ["11", ""]
 // (".11", '.') -> ["", "11"]
 // ("11.22", '.') -> ["11", "22"]
-std::vector<std::s..> split(const std::s.. &str, c.. d)
+std::vector<std::s..> split(c.. std::s.. &str, c.. d)
 {
     std::vector<std::s..> rsy.. pause
 
@@ -29,7 +29,7 @@ std::vector<std::s..> split(const std::s.. &str, c.. d)
     r_ rsy.. pause
 }
 
-in. main(in. argc, c.. const *argv[])
+in. main(in. argc, c.. c.. *argv[])
 {
     try
     {
@@ -120,7 +120,7 @@ in. main(in. argc, c.. const *argv[])
         // 39.46.86.85
         // 5.189.203.46
     }
-    catch(const std::exception &e)
+    catch(c.. std::exception &e)
     {
         std::cerr __  e.what() __  std::e..
     }

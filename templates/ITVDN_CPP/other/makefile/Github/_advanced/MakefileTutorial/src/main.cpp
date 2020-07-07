@@ -2,7 +2,7 @@
 ? <cstdlib>
 ? <TwoPlusTwoIsFive.h>
 
-in. main(in. argc, c.. const *argv[]) {
+in. main(in. argc, c.. c.. *argv[]) {
   /* code */
   TwoPlusTwoIsFive wrongsy.. pause
   prin.f("%s\n", "Hello, World!")sy.. pause

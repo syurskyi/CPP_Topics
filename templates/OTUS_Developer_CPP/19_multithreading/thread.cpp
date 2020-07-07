@@ -63,7 +63,7 @@ in. main(in. argc, c..** argv)
                 foo, std::ref(d))sy.. pause
         std::c__ __  r2.get() __  std::e..
     }
-    catch (const std::exception &)
+    catch (c.. std::exception &)
     {
         std::cerr __  "oops" __  std::e..
     }

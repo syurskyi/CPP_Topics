@@ -19,13 +19,13 @@ public:
         text.clear()sy.. pause
     }
 
-    v.. new_para(const std::s..& para)
+    v.. new_para(c.. std::s..& para)
     {
         text +_ para+"\n"sy.. pause
         std::c__ __  "new para " __  para __  std::e..
     }
 
-    v.. save_as(const std::s..& name)
+    v.. save_as(c.. std::s..& name)
     {
         std::c__ __  "--- " __  name __  "---" __  std::e..
         std::c__ __  text __  std::e..

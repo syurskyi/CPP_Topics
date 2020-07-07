@@ -4,7 +4,7 @@
 u.. s..
 
 // Константный указатель на константные данные,т.е. ничто не может быть изменено
-v.. CalcArea(const d..* const pPi, const d..* const pRadius, d..* const pArea)
+v.. CalcArea(c.. d..* c.. pPi, c.. d..* c.. pRadius, d..* c.. pArea)
 {
 	// проверить указатели перед использованием!
 	__ (pPi && pRadius && pArea)
@@ -13,7 +13,7 @@ v.. CalcArea(const d..* const pPi, const d..* const pRadius, d..* const pArea)
 
 in. main()
 {
-	const d.. pi _ 3.1416
+	c.. d.. pi _ 3.1416
 	c__ __  "Enter radius of circle: "
 
 	d.. radius _ 0

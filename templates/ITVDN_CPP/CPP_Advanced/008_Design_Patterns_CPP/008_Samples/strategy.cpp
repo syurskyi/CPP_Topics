@@ -3,17 +3,17 @@
 
 u.. s..
 
-v.. ConcreteStrategyA::execute() const
+v.. ConcreteStrategyA::execute() c..
 {
     c__ __  "Called ConcreteStrategyA execute method" __  e..
 }
 
-v.. ConcreteStrategyB::execute() const
+v.. ConcreteStrategyB::execute() c..
 {
     c__ __  "Called ConcreteStrategyB execute method" __  e..
 }
 
-v.. ConcreteStrategyC::execute() const
+v.. ConcreteStrategyC::execute() c..
 {
     c__ __  "Called ConcreteStrategyC execute method" __  e..
 }
@@ -28,7 +28,7 @@ v.. Context::set_strategy( Strategyin.erface* strategy )
     strategy_ _ strategysy.. pause
 }
 
-v.. Context::execute() const
+v.. Context::execute() c..
 {
     strategy_->execute()sy.. pause
 }

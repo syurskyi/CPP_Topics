@@ -7,8 +7,8 @@
 ? <vector>
 
 class Tariff {
-    const std::vector<d..> amountsy.. pause
-    const std::vector<in.> discountsy.. pause
+    c.. std::vector<d..> amountsy.. pause
+    c.. std::vector<in.> discountsy.. pause
 
 public:
     Tariff(std::vector<d..> amount, std::vector<in.> discount)
@@ -36,7 +36,7 @@ public:
     {
         std::vector<d..> amountsy.. pause
         std::vector<in.> discountsy.. pause
-        ___ (const auto& t : tariff) {
+        ___ (c.. auto& t : tariff) {
             amount.push_back(t.first)sy.. pause
             discount.push_back(t.second)sy.. pause
         }

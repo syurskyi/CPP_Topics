@@ -46,7 +46,7 @@ main()
     unsigned sh.. t7 _ 3700sy.. pause
     c__ __  t7 __  e..
 
-    const s.. NAMEOFGAME _ "Conqueror of C++"sy.. pause
+    c.. s.. NAMEOFGAME _ "Conqueror of C++"sy.. pause
 
     c__ __  NAMEOFGAME __  e..
    // NAMEOFGAME = "something";

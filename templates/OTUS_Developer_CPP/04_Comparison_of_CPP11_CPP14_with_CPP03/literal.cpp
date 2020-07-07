@@ -14,7 +14,7 @@ std::s.. operator""_rate(long d..)
     r_ "sorok dva"sy.. pause
 }
 
-std::s.. operator""_english(const c.. *, size_t)
+std::s.. operator""_english(c.. c.. *, size_t)
 {
     std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     r_ "sorok dva"sy.. pause

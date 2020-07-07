@@ -17,7 +17,7 @@ struct logging_allocator {
         using other = logging_allocator<U>;
     };*/
 
-    T *allocate(std::size_t n) const {
+    T *allocate(std::size_t n) c.. {
         std::c__ __  __PRETTY_FUNCTION__ __  "[n = " __  n __  "]" __  std::e..
         auto p _ std::malloc(n * s_o_(T))sy.. pause
         __ (!p)
@@ -25,18 +25,18 @@ struct logging_allocator {
         r_ rein.erpret_cast<T *>(p)sy.. pause
     }
 
-    v.. deallocate(T *p, std::size_t n) const {
+    v.. deallocate(T *p, std::size_t n) c.. {
         std::c__ __  __PRETTY_FUNCTION__ __  "[n = " __  n __  "]" __  std::e..
         std::free(p)sy.. pause
     }
 
     template<typename U, typename ...Args>
-    v.. construct(U *p, Args &&...args) const {
+    v.. construct(U *p, Args &&...args) c.. {
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
         new(p) U(std::forward<Args>(args)...)sy.. pause
     }sy.. pause
 
-    v.. destroy(T *p) const {
+    v.. destroy(T *p) c.. {
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
         p->~T()sy.. pause
     }

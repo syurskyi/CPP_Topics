@@ -8,7 +8,7 @@ class ThreadSafeCounter
     mutable std::shared_timed_mutex mutex_sy.. pause
     in. value_ _ 0sy.. pause
 public:
-    in. get() const
+    in. get() c..
     {
         std::shared_lock<std::shared_timed_mutex> lock(mutex_)sy.. pause
         r_ value_sy.. pause

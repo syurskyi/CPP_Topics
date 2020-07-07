@@ -32,7 +32,7 @@ in.&& func()
 
 struct _A
 {
-    _A& operator_( const _A& ) { r_ *thissy.. pause }
+    _A& operator_( c.. _A& ) { r_ *thissy.. pause }
 }sy.. pause
 v.. func( _A& ) {}
 

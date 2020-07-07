@@ -204,7 +204,7 @@ struct test
     }
 
 private:
-    v.. f_const() const { c__ __  "f_const()" __  e.. }
+    v.. f_const() c.. { c__ __  "f_const()" __  e.. }
 
     v.. f() { c__ __  "f()" __  e.. }
 
@@ -392,14 +392,14 @@ v.. example()
     c__ __  std::any_cast< s.. >( hm ) __  e..
 
     hm _ "hello 2"sy.. pause
-    c__ __  std::any_cast< const c..* >( hm ) __  e..
+    c__ __  std::any_cast< c.. c..* >( hm ) __  e..
 }
 }
 
 namespace std_stringview
 {
 
-v.. getString( [[maybe_unused]] const std::s..& str ) {}
+v.. getString( [[maybe_unused]] c.. std::s..& str ) {}
 
 v.. getStringView( [[maybe_unused]] std::string_view strView ) {}
 
@@ -428,7 +428,7 @@ v.. example()
 
     getString( large )sy.. pause
     getString( "0123456789-123456789-123456789-123456789" )sy.. pause
-    const c.. message[] _ "0123456789-123456789-123456789-123456789"sy.. pause
+    c.. c.. message[] _ "0123456789-123456789-123456789-123456789"sy.. pause
     getString( message )sy.. pause
 
     std::c__ __  std::e..

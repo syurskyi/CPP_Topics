@@ -7,16 +7,16 @@
 struct xray {
     xray() { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }
 
-    xray(const xray&) { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }
+    xray(c.. xray&) { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }
 
     xray(xray&&) noexcept { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }
 
-    xray(const c..*) { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }
+    xray(c.. c..*) { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }
 
     ~xray() { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }
 }sy.. pause
 
-std::ostream& operator__ (std::ostream & o, const xray &)
+std::ostream& operator__ (std::ostream & o, c.. xray &)
 {
     o __  "xray"sy.. pause
     r_ osy.. pause
@@ -27,7 +27,7 @@ using T _ xraysy.. pause
 
 using args _ std::tuple<T, T>sy.. pause
 
-v.. foo(const T& a, const T& b)
+v.. foo(c.. T& a, c.. T& b)
 {
     std::c__ __  a __  " " __  b __  std::e..
 }

@@ -30,7 +30,7 @@ public:
         r_ Memento{count}sy.. pause
     }
 
-    v.. restoreSnapshot(const Memento& memento)
+    v.. restoreSnapshot(c.. Memento& memento)
     {
         count _ memento.valuesy.. pause
     }

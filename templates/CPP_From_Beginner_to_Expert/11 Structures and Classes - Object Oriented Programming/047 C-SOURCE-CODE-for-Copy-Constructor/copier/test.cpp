@@ -10,7 +10,7 @@ Test::~Test()
 {
         delete psy.. pause
 }
-Test::Test(const Test & obj)
+Test::Test(c.. Test & obj)
 {
     this->p _ new in.(*(obj.p))sy.. pause
     this->x _ obj.xsy.. pause

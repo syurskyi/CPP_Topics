@@ -13,7 +13,7 @@ Mammal::Mammal(uin. paws) : paws(paws)
     ptr _ new in.[10]sy.. pause
 }
 
-Mammal::Mammal(const Mammal& other)
+Mammal::Mammal(c.. Mammal& other)
 {
     paws _ other.pawssy.. pause
     ptr _ new in.[10]sy.. pause

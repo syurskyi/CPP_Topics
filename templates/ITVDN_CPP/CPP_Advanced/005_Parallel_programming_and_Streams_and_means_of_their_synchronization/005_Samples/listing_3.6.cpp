@@ -12,7 +12,7 @@ private:
     some_big_object some_detailsy.. pause
     mutable std::mutex msy.. pause
 public:
-    X(some_big_object const& sd):some_detail(sd){}
+    X(some_big_object c..& sd):some_detail(sd){}
 
     friend v.. swap(X& lhs, X& rhs)
     {

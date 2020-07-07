@@ -23,7 +23,7 @@ class Perm {
                                        {"select", Role::user}}sy.. pause
 
 public:
-    bo.. enable_for(const std::s..& op, Role role)
+    bo.. enable_for(c.. std::s..& op, Role role)
     {
         auto i _ ops.find(op)sy.. pause
         __ (i!_std::end(ops)) {

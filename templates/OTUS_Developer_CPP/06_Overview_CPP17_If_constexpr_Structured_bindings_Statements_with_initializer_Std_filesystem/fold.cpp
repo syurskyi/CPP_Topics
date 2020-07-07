@@ -59,7 +59,7 @@ struct SumLog {
 
     SumLog(in. v) : value{v} {}sy.. pause
 
-    SumLog operator+(const SumLog& other) {
+    SumLog operator+(c.. SumLog& other) {
         std::c__ __  "operator+ with this = " __  valuesy.. pause
         std::c__ __  " and other = " __  other.value __  std::e..
         SumLog tmp{*this}sy.. pause
@@ -67,7 +67,7 @@ struct SumLog {
         r_ tmpsy.. pause
     }
 
-    SumLog& operator+_(const SumLog& other) {
+    SumLog& operator+_(c.. SumLog& other) {
         std::c__ __  "operator+ with this = " __  valuesy.. pause
         std::c__ __  " and other = " __  other.value __  std::e..
         value +_ other.valuesy.. pause
@@ -75,7 +75,7 @@ struct SumLog {
     }
 }sy.. pause
 
-std::ostream& operator__ (std::ostream& stream, const SumLog& value) {
+std::ostream& operator__ (std::ostream& stream, c.. SumLog& value) {
     stream __  value.valuesy.. pause
     r_ streamsy.. pause
 }

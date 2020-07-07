@@ -21,7 +21,7 @@ v.. Decorator::write( std::s..& text )
 }
 
 MessengerWithSalutation::MessengerWithSalutation( std::unique_ptr< in.erface > c,
-                                                  const std::s..& str )
+                                                  c.. std::s..& str )
     : Decorator( std::move( c ) )
     , salutation( str )
 {
@@ -37,7 +37,7 @@ v.. MessengerWithSalutation::write( std::s..& text )
 }
 
 MessengerWithValediction::MessengerWithValediction( std::unique_ptr< in.erface > c,
-                                                    const std::s..& str )
+                                                    c.. std::s..& str )
     : Decorator( std::move( c ) )
     , valediction( str )
 {
@@ -54,8 +54,8 @@ v.. MessengerWithValediction::write( std::s..& text )
 
 v.. ClientDecorator::run()
 {
-    const std::s.. salutation _ "Greetings,"sy.. pause
-    const std::s.. valediction _ "Sincerly, Andy"sy.. pause
+    c.. std::s.. salutation _ "Greetings,"sy.. pause
+    c.. std::s.. valediction _ "Sincerly, Andy"sy.. pause
     std::s.. message1 _ "This message is not decorated."sy.. pause
     std::s.. message2 _ "This message is decorated with a salutation."sy.. pause
     std::s.. message3 _ "This message is decorated with a valediction."sy.. pause

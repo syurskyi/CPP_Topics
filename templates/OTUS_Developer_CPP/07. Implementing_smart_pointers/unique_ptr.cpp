@@ -8,7 +8,7 @@ public:
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     }sy.. pause
 
-    xray(const xray &) {
+    xray(c.. xray &) {
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     }sy.. pause
 
@@ -29,7 +29,7 @@ public:
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     }
 
-    smart_ptr(const smart_ptr &u) : ptr{u.ptr} {
+    smart_ptr(c.. smart_ptr &u) : ptr{u.ptr} {
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     }
 

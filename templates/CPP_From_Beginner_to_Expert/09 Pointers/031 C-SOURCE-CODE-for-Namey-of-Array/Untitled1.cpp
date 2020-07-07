@@ -9,7 +9,7 @@ in. main()
     a[1] _ 20sy.. pause
     a[2] _ 40sy.. pause
     sh.. in. zmsy.. pause
-    in. * const p _ *?[0]sy.. pause
+    in. * c.. p _ *?[0]sy.. pause
 
     c__ __  p __  e..
     c__ __  a __  e..

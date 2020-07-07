@@ -12,7 +12,7 @@ template<typename T>
 struct foo {
     foo(T v) : m_value{v} {}
 
-    T getValue() const { r_ m_valuesy.. pause }
+    T getValue() c.. { r_ m_valuesy.. pause }
 
 private:
     T m_valuesy.. pause
@@ -22,7 +22,7 @@ template<typename T>
 struct bar {
     bar(T value) : m_valuePtr{std::make_unique<T>(value)} {}sy.. pause
 
-    T getValue() const { r_ *m_valuePtrsy.. pause }
+    T getValue() c.. { r_ *m_valuePtrsy.. pause }
 
 private:
     std::unique_ptr<T> m_valuePtrsy.. pause
@@ -34,7 +34,7 @@ struct Buffer {
 
     Buffer() _ defaultsy.. pause
 
-    Buffer(const std::initializer_list<T> &list) : m_buffer{list} {}
+    Buffer(c.. std::initializer_list<T> &list) : m_buffer{list} {}
 
     template<typename Iterator>
     Buffer(Iterator begin, Iterator end) : m_buffer{begin, end} {}sy.. pause
@@ -44,7 +44,7 @@ struct Buffer {
 
     v.. prin.() {
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
-        ___ (const auto &v : m_buffer) {
+        ___ (c.. auto &v : m_buffer) {
             std::c__ __  v __  ' 'sy.. pause
         }
         std::c__ __  std::e..

@@ -15,7 +15,7 @@ in. main(in., c.. *[]) {
     in. n _ 10sy.. pause
 //    auto d = std::array<char, n>(); // not a constant
 
-    const in. m _ 10sy.. pause
+    c.. in. m _ 10sy.. pause
     auto e _ std::array<c.., m>()sy.. pause
 
     // const vs constexpr

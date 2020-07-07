@@ -5,7 +5,7 @@ u.. s..
 
 in. main()
 {
-	const in. size _ 10sy.. pause
+	c.. in. size _ 10sy.. pause
 	in. arr[size]sy.. pause
 
 	// Заполнение массива

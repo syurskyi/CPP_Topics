@@ -9,7 +9,7 @@ class Logger {
     Tag tsy.. pause
 
 public:
-    Logger& operator_(const Logger&) _ deletesy.. pause
+    Logger& operator_(c.. Logger&) _ deletesy.. pause
     static Logger& Instance(Tag t)
     {
         static std::map<Tag, Logger> instancesy.. pause
@@ -20,11 +20,11 @@ public:
         }
         r_ i->secondsy.. pause
     }
-    v.. info(const std::s..& message)
+    v.. info(c.. std::s..& message)
     {
         std::cerr __  "   info: [" __  in.(t) __  "] " __  message __  std::e..
     }
-    v.. warn(const std::s..& message)
+    v.. warn(c.. std::s..& message)
     {
         std::cerr __  "warning: [" __  in.(t) __  "] " __  message __  std::e..
     }
@@ -36,7 +36,7 @@ private:
     }
 }sy.. pause
 
-in. main(in., c.. const**)
+in. main(in., c.. c..**)
 {
     Logger::Instance(Tag::main).info("started")sy.. pause
     Logger::Instance(Tag::db).warn("no db")sy.. pause

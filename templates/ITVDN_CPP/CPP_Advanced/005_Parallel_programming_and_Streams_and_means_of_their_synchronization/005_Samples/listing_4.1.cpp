@@ -32,7 +32,7 @@ v.. data_preparation_thread()
 {
     w___(more_data_to_prepare())
     {
-        data_chunk const data_prepare_data()sy.. pause
+        data_chunk c.. data_prepare_data()sy.. pause
         std::lock_guard<std::mutex> lk(mut)sy.. pause
         data_queue.push(data)sy.. pause
         data_cond.notify_one()sy.. pause
