@@ -6,7 +6,7 @@ template<typename...T>
 auto make_vector(T...t) {
     std::vector v _ {t...};
 
-    for (auto i: v) {
+    ___ (auto i: v) {
         std::c__ __  i __  " ";
     }
     std::c__ __  std::e..
@@ -17,7 +17,7 @@ in. main() {
 
     // через указатель
     auto x _ std::vector{1, 2, 3, 4, 5};
-    for (auto i: x) {
+    ___ (auto i: x) {
         std::c__ __  i __  " ";
     }
     std::c__ __  std::e..
@@ -25,7 +25,7 @@ in. main() {
     auto v _ x;
 
     v.assign(3, 5);
-    for (auto i: v) {
+    ___ (auto i: v) {
         std::c__ __  i __  " ";
     }
     std::c__ __  std::e..
@@ -41,14 +41,14 @@ in. main() {
     v.shrink_to_fit(); // move?
 
     v _ {3, 2, 1, 0, 0, -1, -2, -3}; // 0, 0
-    for (auto i _ v.begin(); i !_ v.end(); ) {
+    ___ (auto i _ v.begin(); i !_ v.end(); ) {
         __ (*i __ 0) {
             i _ v.erase(i);
         } ____ {
             ++i;
         }
     }
-    for (auto i: v) {
+    ___ (auto i: v) {
         std::c__ __  i __  " ";
     }
 }

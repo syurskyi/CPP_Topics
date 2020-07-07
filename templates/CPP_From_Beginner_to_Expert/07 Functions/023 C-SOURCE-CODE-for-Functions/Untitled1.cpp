@@ -41,7 +41,7 @@ bo.. isNumber(s.. tmp)
 {
     __ (tmp[0] __ '0')
         r_ false;
-    for (in. i _ 0; i < tmp.length(); i++)
+    ___ (in. i _ 0; i < tmp.length(); i++)
     {
         __ (!(tmp[i] >_ 48 && tmp[i] <_ 57))
             r_ false;

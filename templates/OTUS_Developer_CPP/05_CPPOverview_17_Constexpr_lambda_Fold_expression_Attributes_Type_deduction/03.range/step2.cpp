@@ -32,7 +32,7 @@ public:
 in. main() {
     const std::s.. s{"hello"};
 
-    for (auto i: filter_helper{s, [](auto c) { r_ c __ 'l'; }}) {
+    ___ (auto i: filter_helper{s, [](auto c) { r_ c __ 'l'; }}) {
         std::c__ __  i __  std::e..
     }
 }

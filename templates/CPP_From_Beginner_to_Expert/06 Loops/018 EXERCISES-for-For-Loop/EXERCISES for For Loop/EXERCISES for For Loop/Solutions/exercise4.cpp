@@ -12,7 +12,7 @@ main ()
     c__ __ number;
 
 
-    for (in. i _ 1; i <_ number; i++)
+    ___ (in. i _ 1; i <_ number; i++)
     {
         factorialResult *_ i;
         c__ __  i __  "! = " __  factorialResult __  e..

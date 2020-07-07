@@ -9,7 +9,7 @@ in. test _ 0;
 
 in. main()
 {
-	for (in. i _ 0; i < 5; i++)
+	___ (in. i _ 0; i < 5; i++)
 	{
 		CallFunction();
 	}

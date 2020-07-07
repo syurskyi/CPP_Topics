@@ -25,7 +25,7 @@ in. main()
 //    auto result = std::find_if(std::begin(v), std::end(v), comp);
 //    auto result = std::find_if(std::begin(v), std::end(v), std::bind(comp, std::placeholders::_1, 2));
 
-    for (; result !_ std::end(v); ++result)
+    ___ (; result !_ std::end(v); ++result)
     {
         std::c__ __  *result __  " ";
     }

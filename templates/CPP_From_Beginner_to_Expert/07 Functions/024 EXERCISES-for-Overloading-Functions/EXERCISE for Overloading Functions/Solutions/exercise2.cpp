@@ -24,7 +24,7 @@ in. main ()
     } w___(howManyValues < 2 || howManyValues > 5);
 
 
-    for (in. i _ 0; i < howManyValues; i++)
+    ___ (in. i _ 0; i < howManyValues; i++)
     {
         c__ __  "Input " __  i+1 __  " value: ";
         c__ __ values[i];

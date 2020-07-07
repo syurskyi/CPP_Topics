@@ -27,7 +27,7 @@ public:
     }
 
     void notify() {
-        for (auto s : subs) {
+        ___ (auto s : subs) {
             s->update(lang);
         }
     }

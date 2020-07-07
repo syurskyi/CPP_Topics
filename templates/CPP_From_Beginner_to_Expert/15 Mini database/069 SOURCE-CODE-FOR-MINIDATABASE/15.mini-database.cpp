@@ -100,7 +100,7 @@ void showPeople()
 {
     __(peopleInDataBase > 0)
     {
-        for (in. i _ 0; i < peopleInDataBase; i++)
+        ___ (in. i _ 0; i < peopleInDataBase; i++)
         {
             c__ __  "Person index: " __  (i+1) __  e..
             c__ __  "Name: " __  people[i].name __  e..
@@ -120,7 +120,7 @@ void savePeopleToFile()
     {
         file __  peopleInDataBase __  e..
 
-        for (in. i _ 0; i < peopleInDataBase; i++)
+        ___ (in. i _ 0; i < peopleInDataBase; i++)
         {
             file __  people[i].name __  e..
             file __  people[i].surname __  e..
@@ -178,7 +178,7 @@ void searchDatabase()
         c__ __  "Type a name of person you want to look for: ";
         c__ __ name;
 
-        for (in. i _ 0; i < peopleInDataBase; i++)
+        ___ (in. i _ 0; i < peopleInDataBase; i++)
         {
             __ (name __ people[i].name)
             {
@@ -205,7 +205,7 @@ void removePersonFromDatabase()
 
         __ (peopleInDataBase >_ index)
         {
-            for (sh.. k _ index; k < peopleInDataBase; k++)
+            ___ (sh.. k _ index; k < peopleInDataBase; k++)
             {
                 people[k-1].name _ people[k].name;
                 people[k-1].surname _ people[k].surname;

@@ -9,13 +9,13 @@ in. main()
 	in. arr[size];
 
 	// Заполнение массива
-	for (in. i _ 0; i < size; i++)
+	___ (in. i _ 0; i < size; i++)
 	{
 		arr[i] _ i * 2;
 	}
 
 	// Вывод на экран значений массива
-	for (in. i _ 0; i < size; i++)
+	___ (in. i _ 0; i < size; i++)
 	{
 		c__ __  arr[i] __  e..
 	}

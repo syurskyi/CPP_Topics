@@ -26,7 +26,7 @@ in. main()
     ThreadSafeCounter counter;
 
     auto increment_and_prin. _ [&counter]() {
-        for (in. i _ 0; i < 3; i++) {
+        ___ (in. i _ 0; i < 3; i++) {
             counter.increment();
             std::c__ __  counter.get() __  std::e..
 

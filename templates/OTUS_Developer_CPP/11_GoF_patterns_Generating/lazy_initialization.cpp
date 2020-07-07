@@ -47,7 +47,7 @@ in. main(in., c..* [])
     File/*OnDemand*/ file("test.txt");
 
     size_t n _ 0/*2*/;
-    for (size_t i _ 0; i<n; ++i) {
+    ___ (size_t i _ 0; i<n; ++i) {
         file.write(std::to_string(i));
     }
 

@@ -11,7 +11,7 @@ main ()
     c__ __  "Input maximum number you want to check: ";
     c__ __ maximumNumber;
 
-    for (in. i _ 1; i <_ maximumNumber; i++)
+    ___ (in. i _ 1; i <_ maximumNumber; i++)
     {
         __ (i % 2 __ 1)
             c___

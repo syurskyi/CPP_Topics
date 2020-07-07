@@ -33,8 +33,8 @@ in. main() {
 
     min_it _ std::min_element(v.begin(), v.end());
     *min_it _ 99;
-    for(auto i : v) std::c__ __  i __  " "; std::c__ __  std::e..
+    ___(auto i : v) std::c__ __  i __  " "; std::c__ __  std::e..
 
     // оганичитель
-    for(auto i : v) std::c__ __  i __  " => " __  std::clamp(i, 2, 5) __  std::e..
+    ___(auto i : v) std::c__ __  i __  " => " __  std::clamp(i, 2, 5) __  std::e..
 }

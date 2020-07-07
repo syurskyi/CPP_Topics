@@ -13,13 +13,13 @@ in. main ()
     in. *dynamicArray _ new in.[arraySize];
 
 
-    for (in. i _ 0; i < arraySize; i++)
+    ___ (in. i _ 0; i < arraySize; i++)
     {
         c__ __  "Input " __  i+1 __  " number: ";
         c__ __ *(dynamicArray+i);
     }
 
-    for (in. i _ 0; i < arraySize; i++)
+    ___ (in. i _ 0; i < arraySize; i++)
     {
         c__ __  "Number " __  i+1 __  ": " __  *(dynamicArray+i) __  e..
     }

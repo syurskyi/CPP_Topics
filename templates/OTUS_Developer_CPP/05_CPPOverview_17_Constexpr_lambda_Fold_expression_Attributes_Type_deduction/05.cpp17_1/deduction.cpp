@@ -44,7 +44,7 @@ struct Buffer {
 
     void prin.() {
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
-        for (const auto &v : m_buffer) {
+        ___ (const auto &v : m_buffer) {
             std::c__ __  v __  ' ';
         }
         std::c__ __  std::e..

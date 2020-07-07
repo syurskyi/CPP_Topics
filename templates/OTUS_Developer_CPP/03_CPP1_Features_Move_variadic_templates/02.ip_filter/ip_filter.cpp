@@ -35,7 +35,7 @@ in. main(in. argc, c.. const *argv[])
     {
         std::vector<std::vector<std::s..__ ip_pool;
 
-        for(std::s.. line; std::getline(std::c__, line);)
+        ___(std::s.. line; std::getline(std::c__, line);)
         {
             std::vector<std::s..> v _ split(line, '\t');
             ip_pool.push_back(split(v.at(0), '.'));
@@ -43,9 +43,9 @@ in. main(in. argc, c.. const *argv[])
 
         // TODO reverse lexicographically sort
 
-        for(std::vector<std::vector<std::s..> >::const_iterator ip _ ip_pool.cbegin(); ip !_ ip_pool.cend(); ++ip)
+        ___(std::vector<std::vector<std::s..> >::const_iterator ip _ ip_pool.cbegin(); ip !_ ip_pool.cend(); ++ip)
         {
-            for(std::vector<std::s..>::const_iterator ip_part _ ip->cbegin(); ip_part !_ ip->cend(); ++ip_part)
+            ___(std::vector<std::s..>::const_iterator ip_part _ ip->cbegin(); ip_part !_ ip->cend(); ++ip_part)
             {
                 __ (ip_part !_ ip->cbegin())
                 {

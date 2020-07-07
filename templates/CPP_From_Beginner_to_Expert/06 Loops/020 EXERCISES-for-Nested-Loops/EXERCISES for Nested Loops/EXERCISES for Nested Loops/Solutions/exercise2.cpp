@@ -8,9 +8,9 @@ main ()
     c.. coordinates[3][3];
     c.. startingValue _ '1';
 
-    for (in. i _ 0; i < 3; i++)
+    ___ (in. i _ 0; i < 3; i++)
     {
-        for (in. j _ 0; j < 3; j++)
+        ___ (in. j _ 0; j < 3; j++)
         {
             coordinates[i][j] _ startingValue;
             startingValue++;
@@ -19,10 +19,10 @@ main ()
 
     w___ (true)
     {
-        for (in. i _ 0; i < 3; i++)
+        ___ (in. i _ 0; i < 3; i++)
         {
             c__ __  endl __  e..
-            for (in. j _ 0; j < 3; j++)
+            ___ (in. j _ 0; j < 3; j++)
             {
                 c__.width(5);
                 c__ __  coordinates[i][j]; //for debbuging purpose add this line:  cout <<  " i = " << i << " j = " << j;

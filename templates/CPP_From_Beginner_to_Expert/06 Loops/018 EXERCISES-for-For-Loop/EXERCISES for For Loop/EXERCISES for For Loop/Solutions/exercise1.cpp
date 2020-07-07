@@ -10,7 +10,7 @@ main ()
     c__ __  "Input the number you would like to start with: ";
     c__ __ startingNumber;
 
-    for (in. i _ 0; i < 100; i++)
+    ___ (in. i _ 0; i < 100; i++)
     {
         c__ __  ++startingNumber __  e..
     }

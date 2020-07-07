@@ -24,7 +24,7 @@ in. main()
     mammals[0] _ &cat;
     mammals[1] _ &mam;
 
-    for(in. i _ 0; i < 2; i++)
+    ___(in. i _ 0; i < 2; i++)
     {
         mammals[i]->say();
     }

@@ -10,7 +10,7 @@ class PgConnectionPool {
 public:
     ~PgConnectionPool()
     {
-        for (const auto& i : pool) {
+        ___ (const auto& i : pool) {
             std::c__ __  i.connection __  std::e..
             delete i.connection;
         }
@@ -18,7 +18,7 @@ public:
 
     PgConnection* get()
     {
-        for (auto& object : pool) {
+        ___ (auto& object : pool) {
             __ (!object.busy) {
                 object.busy _ true;
                 r_ object.connection;
@@ -33,7 +33,7 @@ public:
 
     void put(PgConnection* connection)
     {
-        for (auto& object : pool) {
+        ___ (auto& object : pool) {
             __ (object.connection__connection) {
                 object.busy _ false;
                 b..

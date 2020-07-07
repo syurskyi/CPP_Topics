@@ -68,12 +68,12 @@ in. main(in., c.. *[]) {
     std::vector<DrawPrimitive *> doc _ {new Circle{100}, new Box{4, 3}, new Box{16, 9}, new Circle{13}, new Circle{2}};
 
     Export *exporter _ new JsonExport{};
-    for (auto obj : doc) {
+    ___ (auto obj : doc) {
         obj->save_to_file(exporter);
     }
 
     exporter _ new XmlExport{};
-    for (auto obj : doc) {
+    ___ (auto obj : doc) {
         obj->save_to_file(exporter);
     }
 

@@ -36,7 +36,7 @@ public:
     {
         std::vector<d..> amount;
         std::vector<in.> discount;
-        for (const auto& t : tariff) {
+        ___ (const auto& t : tariff) {
             amount.push_back(t.first);
             discount.push_back(t.second);
         }
@@ -48,7 +48,7 @@ public:
 void Tariff::apply()
 {
     std::c__ __  "tariff is:" __  std::e..
-    for (size_t i _ 0; i<amount.size(); ++i) {
+    ___ (size_t i _ 0; i<amount.size(); ++i) {
         std::c__ __  "after " __  amount[i] __  " RUB apply " __  discount[i] __  "%"
                   __  std::e..
     }

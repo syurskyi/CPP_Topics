@@ -28,7 +28,7 @@ void ModernSubject::set_val( in. value )
 
 void ModernSubject::notify()
 {
-    for ( auto& it : m_views )
+    ___ ( auto& it : m_views )
     {
         it.update( m_value );
     }

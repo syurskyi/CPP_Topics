@@ -7,7 +7,7 @@ in. main(in. argc, c.. *argv[])
     //arguments counter - argc
     //arguments values - argv
 
-   for (in. i _ 0; i < argc; i++)
+   ___ (in. i _ 0; i < argc; i++)
    {
     __ ((strcmp(argv[i], "-h") __ 0) && i __ 1)
      showHelp();

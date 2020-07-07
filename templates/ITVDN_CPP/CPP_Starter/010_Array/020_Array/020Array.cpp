@@ -9,7 +9,7 @@ in. main()
 {
 	in. * p_arr _ new in.[100];
 
-	for (in. i _ 0; i < 100; i++)
+	___ (in. i _ 0; i < 100; i++)
 	{
 		*(p_arr + i) _ rand();
 	}
@@ -29,7 +29,7 @@ void get_array_info(in. *arr, in. count, in. *max, in. *min, in. *avrg)
 	*max _ arr[0];
 	*min _ arr[0];
 	*avrg _ 0;
-	for (in. i _ 0; i < count; i++)
+	___ (in. i _ 0; i < count; i++)
 	{
 		__ (arr[i] > *max) {
 			*max _ arr[i];

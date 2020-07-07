@@ -66,7 +66,7 @@ in. main(in., c..* [])
     l.push(new Node{42}); // memory leak
     l.push(new Node{100}); // memory leak
 
-    for (Node* i _ l.head; i; i _ i->next) {
+    ___ (Node* i _ l.head; i; i _ i->next) {
         std::c__ __  i->value __  std::e..
     }
 

@@ -39,7 +39,7 @@ in. main()
 
     sort( a.begin(), a.end(), []( in. a, in. b ) -> bo.. { r_ a > b; } );
 
-    for ( auto it : a )
+    ___ ( auto it : a )
         c__ __  it __  e..
 
     std::function< MyFunc > func_sum;

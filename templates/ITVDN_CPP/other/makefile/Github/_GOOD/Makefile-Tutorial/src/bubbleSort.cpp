@@ -8,7 +8,7 @@ void bubbleSort(in.iter l, in.iter r) {
   size_t n _ std::distance(l, r);
   do {
     size_t newn _ 0;
-    for (auto i _ l+1; i < r; ++i) {
+    ___ (auto i _ l+1; i < r; ++i) {
       __ (*i < *(i-1)) {
         std::swap(*i, *(i-1));
         ++newn;

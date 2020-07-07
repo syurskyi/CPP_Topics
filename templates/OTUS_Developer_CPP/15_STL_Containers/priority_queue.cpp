@@ -5,7 +5,7 @@
 in. main()
 {
     std::priority_queue<in.> pq;
-    for(auto i: {6, 7, 4, 8, 3, 8, 8})
+    ___(auto i: {6, 7, 4, 8, 3, 8, 8})
     {
         pq.push(i);
     }

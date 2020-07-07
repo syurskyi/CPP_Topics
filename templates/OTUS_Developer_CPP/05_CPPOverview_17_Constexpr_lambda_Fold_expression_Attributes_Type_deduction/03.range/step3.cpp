@@ -40,7 +40,7 @@ auto operator|(const Input &input, const F &f) { r_ filter_helper(input, f); }
 in. main() {
     const std::s.. s{"hello"};
 
-    for (auto i: s | filter{[](auto c) { r_ c !_ 'l'; }}) {
+    ___ (auto i: s | filter{[](auto c) { r_ c !_ 'l'; }}) {
         std::c__ __  i __  std::e..
     }
 }

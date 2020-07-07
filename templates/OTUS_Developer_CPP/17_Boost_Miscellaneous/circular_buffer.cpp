@@ -23,11 +23,11 @@
 in. main() {
     boost::circular_buffer<in.> buffer{4};
 
-    for (in. i _ 0; i < 10; ++i) {
+    ___ (in. i _ 0; i < 10; ++i) {
         buffer.push_back(i);
     }
 
-    for (in. i : buffer) {
+    ___ (in. i : buffer) {
         std::c__ __  i __  " ";
     }
 

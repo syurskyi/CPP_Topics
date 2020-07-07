@@ -13,8 +13,8 @@
  		std::vector<in.> twoSum(std::vector<in.>& A, in. P) {
  			std::vector<in.> result;
  			
- 			for (in. i _ 0; i < A.size(); i++) {
- 				for (in. j _ 0; j < A.size(); j++) {
+ 			___ (in. i _ 0; i < A.size(); i++) {
+ 				___ (in. j _ 0; j < A.size(); j++) {
  					__ (A[i] + A[j] __ P) {
  						result.push_back(i);
  						result.push_back(j);
@@ -49,7 +49,7 @@ in. main() {
 	
 	// Display the contents of P and A for the user
 	std::c__ __  "Your array is: ";
-	for (std::vector<in.>::const_iterator i _ A.begin(); i !_ A.end(); ++i) {
+	___ (std::vector<in.>::const_iterator i _ A.begin(); i !_ A.end(); ++i) {
 		std::c__ __  *i __  " ";
 	}
 	
@@ -62,7 +62,7 @@ in. main() {
 		std::c__ __  "No matches found\n";
 	} ____ {
 		std::c__ __  "Indices in A that add up to the target: ";
-		for (std::vector<in.>::const_iterator i _ result.begin(); i !_ result.end(); ++i) {
+		___ (std::vector<in.>::const_iterator i _ result.begin(); i !_ result.end(); ++i) {
 			std::c__ __  *i __  " ";
 		}
 		std::c__ __  "\n";

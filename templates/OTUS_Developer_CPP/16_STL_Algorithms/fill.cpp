@@ -20,29 +20,29 @@ in. main() {
     // *_n количество, вместо диапазона
     // заполнение значением
     std::fill_n(v.begin(), 5, 0);
-    for (auto i : v) {
+    ___ (auto i : v) {
         std::c__ __  i __  " ";
     }
     std::c__ __  std::e..
 
     std::fill(v.begin(), v.end(), 1);
-    for (auto i : v) {
+    ___ (auto i : v) {
         std::c__ __  i __  " ";
     }
     std::c__ __  std::e..
 
     // заполнение последовательностью
     std::iota(v.begin(), v.end(), -1);
-    for (auto i : v) std::c__ __  i __  " ";
+    ___ (auto i : v) std::c__ __  i __  " ";
     std::c__ __  std::e..
 
     // заполнение произвольным значением
     std::generate_n(v.begin(), 5, fibonacci{});
-    for (auto i : v) std::c__ __  i __  " ";
+    ___ (auto i : v) std::c__ __  i __  " ";
     std::c__ __  std::e..
 
     std::generate(v.begin(), v.end(), fibonacci{});
-    for (auto i : v) {
+    ___ (auto i : v) {
         std::c__ __  i __  " ";
     }
     std::c__ __  std::e..

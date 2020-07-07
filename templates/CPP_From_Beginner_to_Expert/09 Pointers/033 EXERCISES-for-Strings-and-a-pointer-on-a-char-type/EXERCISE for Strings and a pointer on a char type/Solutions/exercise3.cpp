@@ -11,7 +11,7 @@ in. main ()
 
     c.. * characters _ new c..[charactersNumber];
 
-    for (in. i _ 0; i < charactersNumber; i++)
+    ___ (in. i _ 0; i < charactersNumber; i++)
     {
         c__ __  i+1 __  " character: ";
         c__ __ characters[i];
@@ -19,7 +19,7 @@ in. main ()
 
     c__ __  "The inputted string of characters was: ";
 
-    for (in. i _ 0; i < charactersNumber; i++)
+    ___ (in. i _ 0; i < charactersNumber; i++)
     {
         c__ __  *(characters+i);
     }

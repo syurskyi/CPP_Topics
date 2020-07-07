@@ -7,7 +7,7 @@ in. main()
 {
 	in. count _ 5;
 
-	for (in. i _ 0; i < count; i++)
+	___ (in. i _ 0; i < count; i++)
 	{
 		c__ __  "Iteration " __  i __  e..
 

@@ -27,11 +27,11 @@ void lottery(in. total_balls, in. balls_to_draw)
 
      in. *balls _ new in.[balls_to_draw];
 
-     for (in. i _ 0; i < balls_to_draw; i++)
+     ___ (in. i _ 0; i < balls_to_draw; i++)
      {
          balls[i] _ rand() % total_balls + 1;
 
-         for (in. j _ 0; j < i + 1; j++)
+         ___ (in. j _ 0; j < i + 1; j++)
          {
             __(balls[i] __ balls[j] && i !_ j)
             {

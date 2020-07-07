@@ -8,7 +8,7 @@ main ()
     in. chosenNumbersSum _ 0;
     c.. choice;
 
-    for (in. i _ 1; ; i++)
+    ___ (in. i _ 1; ; i++)
     {
 
         c__ __  "The current sum is: " __  chosenNumbersSum __  endl __  e..

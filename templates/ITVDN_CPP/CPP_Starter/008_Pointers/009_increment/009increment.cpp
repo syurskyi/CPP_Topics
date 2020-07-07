@@ -14,14 +14,14 @@ in. main()
 
 	c__ __  "Fill the block: " __  e..
 
-	for (in. i _ 0; i < count; i++)
+	___ (in. i _ 0; i < count; i++)
 	{
 		c__ __  "Enter number: ";
 		c__ __ *(block + i);
 	}
 
 	c__ __  "Display all numbers in block: " __  e..
-	for (in. i _ 0; i < count; i++)
+	___ (in. i _ 0; i < count; i++)
 	{
 		c__ __  *(pBlock++) __  " ";
 	}

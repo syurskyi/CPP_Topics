@@ -10,7 +10,7 @@ in. main()
 	in. size _ 50;
 	in. *arr _ new in.[size];
 
-	for (in. i _ 0; i < 50; i++)
+	___ (in. i _ 0; i < 50; i++)
 	{
 		*(arr + i) _ rand();
 	}
@@ -26,7 +26,7 @@ in. main()
 in. GetSum(in. *arr, in. count)
 {
 	in. total _ 0;
-	for (in. i _ 0; i < count; i++)
+	___ (in. i _ 0; i < count; i++)
 	{
 		total +_ *(arr + i);
 	}

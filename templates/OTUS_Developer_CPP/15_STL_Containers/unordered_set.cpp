@@ -14,7 +14,7 @@ in. main()
         "prod", // 3987873476345 3
         "test"}; // 3987873476345 1
 //    std::unordered_set<std::string> x {"test", "debug", "test"};
-    for(auto i: x)
+    ___(auto i: x)
     {
         std::c__ __  i __  std::e..
     }

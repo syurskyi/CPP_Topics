@@ -116,7 +116,7 @@ void example()
     vector< in. > v;
     push_back_vec( v, 6, 2, 45, 12 );
     push_back_vec( v, 1, 2, 9 );
-    for ( in. i : v )
+    ___ ( in. i : v )
         c__ __  i __  ' ';
     c__ __  e..
 
@@ -239,7 +239,7 @@ void prin.( S& s )
     }
     ____ __ constexpr ( aFieldNubmer __ 2 )
     {
-        for ( auto i : s.mVectorin. )
+        ___ ( auto i : s.mVectorin. )
             c__ __  i __  ' ';
         c__ __  e..
     }

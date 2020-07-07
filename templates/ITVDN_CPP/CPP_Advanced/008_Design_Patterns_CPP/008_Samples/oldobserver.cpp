@@ -16,7 +16,7 @@ void Subject::set_val( in. value )
 
 void Subject::notify()
 {
-    for ( in. i _ 0; i < m_views.size(); ++i )
+    ___ ( in. i _ 0; i < m_views.size(); ++i )
     {
         m_views[ i ]->update( m_value );
     }

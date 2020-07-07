@@ -6,7 +6,7 @@
 
 in. main() {
     std::unordered_multiset<xray::object, std::hash<xray::object>, std::equal_to<>, xray::allocator<xray::object__ ums;
-    for (const auto &i: {1, 2, 3, 1}) {
+    ___ (const auto &i: {1, 2, 3, 1}) {
         ums.emplace(i);
         std::c__ __  "---" __  std::e..
     }

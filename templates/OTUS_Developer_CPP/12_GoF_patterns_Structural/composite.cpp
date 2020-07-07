@@ -25,7 +25,7 @@ public:
     in. size() override
     {
         in. total _ 0;
-        for(auto fo : c) {
+        ___(auto fo : c) {
             total +_ fo->size();
         }
         r_ total;

@@ -114,7 +114,7 @@ void exponentiation()
     c__ __  "Input the exponent value: ";
     c__ __ exponent;
 
-    for (in. i _ 0; i < exponent; i++)
+    ___ (in. i _ 0; i < exponent; i++)
     {
         result *_ base;
     }

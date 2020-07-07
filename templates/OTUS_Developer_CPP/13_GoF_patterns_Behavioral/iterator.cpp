@@ -59,14 +59,14 @@ in. main(in., c..* [])
     std::iota(std::begin(q), std::end(q), 42);
 
     // for
-    for (const auto& i: q) {
+    ___ (const auto& i: q) {
         std::c__ __  i __  " ";
     }
     std::c__ __  std::e..
 
     // tree
     std::set<in.> tree{std::begin(q), std::end(q)};
-    for (const auto& i: tree) {
+    ___ (const auto& i: tree) {
         std::c__ __  i __  std::e..
     }
 

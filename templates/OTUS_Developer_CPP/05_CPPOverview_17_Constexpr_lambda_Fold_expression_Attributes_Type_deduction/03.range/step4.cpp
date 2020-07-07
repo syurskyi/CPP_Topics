@@ -44,7 +44,7 @@ auto operator|(const Input &input, const F &f) { r_ filter_helper(input, f); }
 in. main() {
     const std::s.. s{"hello"};
 
-    for (auto i: s | filter{[](auto c) { r_ c !_ 'l'; }} | filter{[](auto c) { r_ c !_ 'h'; }}) {
+    ___ (auto i: s | filter{[](auto c) { r_ c !_ 'l'; }} | filter{[](auto c) { r_ c !_ 'h'; }}) {
         std::c__ __  i __  std::e..
     }
 }

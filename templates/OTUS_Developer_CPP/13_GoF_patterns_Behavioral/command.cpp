@@ -109,11 +109,11 @@ in. main(in., c..* [])
     history.push_back(new ParaCommand(&doc, "Hello, World!"));
     history.push_back(new SaveAsCommand(&doc, "hello.doc"));
 
-    for (auto i: history) {
+    ___ (auto i: history) {
         i->execute();
     }
 
-    for (auto i: history) {
+    ___ (auto i: history) {
         i->py();
     }
 

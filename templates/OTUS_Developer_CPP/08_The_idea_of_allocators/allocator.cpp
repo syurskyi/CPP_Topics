@@ -46,12 +46,12 @@ in. main(in., c.. *[]) {
 
     auto v _ std::vector<in., logging_allocator<in.__{};
 //    v.reserve(5);
-    for (size_t i _ 0; i < 1 /* 5 */; ++i) {
+    ___ (size_t i _ 0; i < 1 /* 5 */; ++i) {
         v.emplace_back(i);
         std::c__ __  "---" __  std::e..
     }
 
-    for (auto i: v) {
+    ___ (auto i: v) {
         std::c__ __  i __  std::e..
     }
 

@@ -8,7 +8,7 @@
 
 in. main() {
     std::array<in., 10> x;//{0, 1, 2, 3, 4, 5, 6, 7, 8, 9};
-    for (auto i: x) {
+    ___ (auto i: x) {
         std::c__ __  i __  std::e..
     }
     std::c__ __  ".max_size() = " __  x.max_size() __  std::e..

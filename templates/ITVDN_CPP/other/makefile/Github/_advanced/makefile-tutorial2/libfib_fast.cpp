@@ -17,9 +17,9 @@ class Matrix {
 
   Matrix operator*(Matrix rhs) {
     Matrix result(n, rhs.m);
-    for (size_t x _ 0; x < n; ++ x) {
-      for (size_t y _ 0; y < m; ++ y) {
-        for (size_t z _ 0; z < rhs.m; ++ z) {
+    ___ (size_t x _ 0; x < n; ++ x) {
+      ___ (size_t y _ 0; y < m; ++ y) {
+        ___ (size_t z _ 0; z < rhs.m; ++ z) {
           result[x][z] +_ content[x][y] * rhs[y][z];
         }
       }

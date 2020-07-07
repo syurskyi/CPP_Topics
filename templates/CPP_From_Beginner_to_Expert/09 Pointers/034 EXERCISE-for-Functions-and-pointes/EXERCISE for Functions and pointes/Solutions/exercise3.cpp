@@ -34,7 +34,7 @@ void swapTwoValues(in.* firstValue, in.* secondValue)
 
 void fillArrayWithValues(in. arrayToFill[], in. sizeOfArray)
 {
-    for (in. i _ 0; i < sizeOfArray; i++)
+    ___ (in. i _ 0; i < sizeOfArray; i++)
     {
         c__ __  "Enter " __  i+1 __  " element: ";
         c__ __ arrayToFill[i];
@@ -44,7 +44,7 @@ void fillArrayWithValues(in. arrayToFill[], in. sizeOfArray)
 
 void prin.ArrayValues(in. arrayToPrin.[], in. sizeOfArray)
 {
-    for (in. i _ 0; i < sizeOfArray; i++)
+    ___ (in. i _ 0; i < sizeOfArray; i++)
     {
         c__ __  "Array[" __  i __  "] = " __  arrayToPrin.[i] __  e..
     }

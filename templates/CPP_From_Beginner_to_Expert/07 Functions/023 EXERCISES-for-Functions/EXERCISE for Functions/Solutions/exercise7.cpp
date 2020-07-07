@@ -11,7 +11,7 @@ in. main ()
 {
     d.. tab[5];
 
-    for (in. i _ 0; i < 5; i++)
+    ___ (in. i _ 0; i < 5; i++)
     {
         c__ __  "Input " __  i+1 __  " number: ";
         c__ __ tab[i];
@@ -27,7 +27,7 @@ d.. minValue(d.. tab[])
 {
     d.. minValue _ tab[0];
 
-    for (in. i _ 1; i < 5; i++)
+    ___ (in. i _ 1; i < 5; i++)
     {
         __ (minValue > tab[i])
             minValue _ tab[i];
@@ -40,7 +40,7 @@ d.. maxValue(d.. tab[])
 {
     d.. maxValue _ tab[0];
 
-    for (in. i _ 1; i < 5; i++)
+    ___ (in. i _ 1; i < 5; i++)
     {
         __ (maxValue < tab[i])
             maxValue _ tab[i];

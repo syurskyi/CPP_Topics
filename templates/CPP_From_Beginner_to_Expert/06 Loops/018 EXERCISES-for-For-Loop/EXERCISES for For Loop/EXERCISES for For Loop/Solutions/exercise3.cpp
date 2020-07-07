@@ -15,7 +15,7 @@ main ()
     c__ __  "Raise to what power: ";
     c__ __ nPower;
 
-    for (in. i _ 0; i < nPower; i++)
+    ___ (in. i _ 0; i < nPower; i++)
     {
         poweredNumber *_ number;
     }

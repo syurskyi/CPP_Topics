@@ -44,7 +44,7 @@ in. main(in., c.. *[]) {
     std::s.. hw _ "\x1b[41mHello,\x1b[40;3;31m World\x1b[m!";
     std::c__ __  hw __  std::e..
 
-    for (auto c: hw) {
+    ___ (auto c: hw) {
         active_handler(c);
     }
 

@@ -24,7 +24,7 @@ in. main()
     x[1] _ 5;
     auto z _ x[99];
 
-    for(auto [i, j]: x)
+    ___(auto [i, j]: x)
     {
         std::c__ __  i __  ", " __  j __  std::e..
     }

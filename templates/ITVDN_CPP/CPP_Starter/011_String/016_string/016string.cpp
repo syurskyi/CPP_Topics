@@ -11,7 +11,7 @@ in. main()
 
 	in. symbol_count _ 0;
 
-	for (in. i _ 0; i < _str.size(); i++)
+	___ (in. i _ 0; i < _str.size(); i++)
 	{
 		__ (_str[i] __ 'o') {
 			symbol_count +_ 1;

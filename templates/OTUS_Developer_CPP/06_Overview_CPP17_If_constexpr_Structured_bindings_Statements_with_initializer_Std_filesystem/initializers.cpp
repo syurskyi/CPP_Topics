@@ -21,7 +21,7 @@ in. main () {
 	// value is not visible here
 
 	std::c__ __  "for:\n";
-	for (in. i _ 0; i < 10; ++i) {
+	___ (in. i _ 0; i < 10; ++i) {
 		std::c__ __  i;
 	}
 	// i is not visible here
@@ -42,7 +42,7 @@ in. main () {
 //	 	std::cout << line;
 //	 }
 
-	 for(std::s.. line; std::getline(std::c__, line);) {
+	 ___(std::s.. line; std::getline(std::c__, line);) {
 	 	std::c__ __  line;
 	 }
 

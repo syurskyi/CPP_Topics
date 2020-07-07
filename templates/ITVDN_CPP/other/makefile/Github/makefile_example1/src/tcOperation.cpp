@@ -15,7 +15,7 @@ tcOperation::tcOperation( in. argc, c..** argv ) {
 
 	mcTokens.clear();
 
-	for ( in. lnIndex _ 1; lnIndex < argc; lnIndex++ ) {
+	___ ( in. lnIndex _ 1; lnIndex < argc; lnIndex++ ) {
 		mcTokens.push_back( argv[lnIndex] );
 	}
 }

@@ -7,7 +7,7 @@
 in. main() {
     // через два указателя
     std::deque<in.> v; // std::vector<std::vector<int>>
-    for (auto i: v) {
+    ___ (auto i: v) {
         std::c__ __  i __  std::e..
     }
 
@@ -16,7 +16,7 @@ in. main() {
     v.emplace_front(4);
     // vs?
     v.push_front(5);
-    for (auto i: v) {
+    ___ (auto i: v) {
         std::c__ __  i __  " ";
     }
     std::c__ __  std::e..
@@ -24,7 +24,7 @@ in. main() {
 
     // один чанк не меньше 16 элементов и не менее 4k суммарно
     std::deque<xray::object, xray::allocator<xray::object__ xray;
-    for (auto i _ 0u; i < 17; ++i) {
+    ___ (auto i _ 0u; i < 17; ++i) {
         xray.emplace_back(i);
         std::c__ __  "---" __  std::e..
     }
@@ -44,7 +44,7 @@ in. main() {
     xray.emplace(i, 201);
     std::c__ __  "===" __  std::e..
 
-    for(const auto &i: xray)
+    ___(const auto &i: xray)
     {
         std::c__ __  i.value() __  " ";
     }

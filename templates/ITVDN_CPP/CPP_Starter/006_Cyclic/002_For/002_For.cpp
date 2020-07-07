@@ -7,7 +7,7 @@ in. main()
 {
 	in. count _ 0;
 
-	for (in. i _ 5; i > count; i--)
+	___ (in. i _ 5; i > count; i--)
 	{
 		c__ __  "Count " __  i __  e..
 	}
