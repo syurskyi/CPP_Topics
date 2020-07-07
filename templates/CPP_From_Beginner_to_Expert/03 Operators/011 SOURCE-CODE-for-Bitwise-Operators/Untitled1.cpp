@@ -1,6 +1,6 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
 main()
 {
@@ -28,7 +28,7 @@ main()
         Bitwise right shift >>
     */
 
-    cout << (10 & 2) << endl;
+    c__ __  (10 & 2) __  e..
 
     /*
         1 0 1 0
@@ -36,7 +36,7 @@ main()
         -------
         0 0 1 0
     */
-    cout << (10 | 2) << endl;
+    c__ __  (10 | 2) __  e..
 
     /*
         1 0 1 0
@@ -44,7 +44,7 @@ main()
         -------
         1 0 1 0
     */
-    cout << (10 ^ 2) << endl;
+    c__ __  (10 ^ 2) __  e..
 
     /*
         1 0 1 0
@@ -53,21 +53,21 @@ main()
         1 0 0 0
     */
 
-    cout << (~10) << endl;
+    c__ __  (~10) __  e..
 
     /*
          000000000000000000000000000000000000 1 0 1 0
          111111111111111111111111111111111111 0 1 0 1
     */
 
-    cout << (10 << 3) << endl; //this thing means that we are multiplying 10 by 2 raised to the power of 3
+    c__ __  (10 __  3) __  e.. //this thing means that we are multiplying 10 by 2 raised to the power of 3
     /*
         000000000000000000000000000000000001 0 1 0 0
         20 - decimal notation
         40
     */
 
-    cout << (10 >> 1) << endl; //this thing means that we are dividing 10 by 2 raised to the power of 3
+    c__ __  (10 >> 1) __  e.. //this thing means that we are dividing 10 by 2 raised to the power of 3
     /*
         00000000000000000000000000000000000 0 1 0 1
         5

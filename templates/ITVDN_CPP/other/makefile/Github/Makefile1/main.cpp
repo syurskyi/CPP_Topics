@@ -16,15 +16,15 @@
  *  Include local header file 
  */
 
-#include "header.h"
+? "header.h"
 
 /**
  *  Main method 
  */
 
-int main(void)
+in. main(void)
 {
-    cout << "\n Hello..!! \n" << endl;
+    c__ __  "\n Hello..!! \n" __  e..
 
-    return 0;
+    r_ 0;
 }

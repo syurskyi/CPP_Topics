@@ -1,12 +1,12 @@
 // unordered_multimap
-#include <iostream>
-#include <unordered_map>
+? |i..
+? <unordered_map>
 
-int main() {
+in. main() {
     std::unordered_multimap<std::string, std::string> umm{{"one", "один"},
                                                          {"one", "раз"},
                                                          {"two", "два"}};
     for (const auto &[en, ru]: umm) {
-        std::cout << en << " <=> " << ru << std::endl;
+        std::c__ __  en __  " <=> " __  ru __  std::e..
     }
 }

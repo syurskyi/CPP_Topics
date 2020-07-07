@@ -1,23 +1,23 @@
-#include "stdafx.h"
-#include <iostream>
+? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-bool Or(bool a, bool b);
+bo.. Or(bo.. a, bo.. b);
 
-int main()
+in. main()
 {
-	bool result = false, v1 = true, v2 = false;
+	bo.. result = false, v1 = true, v2 = false;
 
 	result = Or(v1, v2);
 
-	cout << "a || b = " << result << endl;
+	c__ __  "a || b = " __  result __  e..
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 
-bool Or(bool a, bool b)
+bo.. Or(bo.. a, bo.. b)
 {
-	return a || b;
+	r_ a || b;
 }

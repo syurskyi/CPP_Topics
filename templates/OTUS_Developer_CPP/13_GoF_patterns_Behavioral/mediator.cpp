@@ -3,10 +3,10 @@
 // role & danger
 // tags private public
 
-#include <iostream>
-#include <map>
-#include <set>
-#include <string>
+? |i..
+? <map>
+? <set>
+? <string>
 
 enum class Role {
     user, admin
@@ -23,25 +23,25 @@ class Perm {
                                        {"select", Role::user}};
 
 public:
-    bool enable_for(const std::string& op, Role role)
+    bo.. enable_for(const std::string& op, Role role)
     {
         auto i = ops.find(op);
         if (i!=std::end(ops)) {
-            return i->second==role;
+            r_ i->second==role;
         }
-        return false;
+        r_ false;
     }
 };
 
-int main(int, char* [])
+in. main(in., char* [])
 {
     Perm perm;
 
     auto v = User{"вася", Role::user};
     auto p = User{"петя", Role::admin};
 
-    std::cout << perm.enable_for("drop", v.role) << std::endl;
-    std::cout << perm.enable_for("drop", p.role) << std::endl;
+    std::c__ __  perm.enable_for("drop", v.role) __  std::e..
+    std::c__ __  perm.enable_for("drop", p.role) __  std::e..
 
-    return 0;
+    r_ 0;
 }

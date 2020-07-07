@@ -1,6 +1,6 @@
 // Стратегия (Strategy)
 
-#include <iostream>
+? |i..
 
 class Generator {
 public:
@@ -10,16 +10,16 @@ public:
 class HardwareGenerator : public Generator {
 public:
     size_t seed(size_t) override {
-        std::cout << "generate using mac address" << std::endl;
-        return 42;
+        std::c__ __  "generate using mac address" __  std::e..
+        r_ 42;
     }
 };
 
 class SoftwareGenerator : public Generator {
 public:
     size_t seed(size_t) override {
-        std::cout << "generate using software emulator" << std::endl;
-        return 0;
+        std::c__ __  "generate using software emulator" __  std::e..
+        r_ 0;
     }
 };
 
@@ -28,17 +28,17 @@ public:
     explicit Shuffle(Generator *gen_) : gen(gen_) {}
 
     size_t seed(size_t seed_) {
-        return gen->seed(seed_);
+        r_ gen->seed(seed_);
     }
 
 private:
     Generator *gen;
 };
 
-int main(int, char *[]) {
+in. main(in., char *[]) {
     auto p = new Shuffle(new HardwareGenerator);
 
     p->seed(0);
 
-    return 0;
+    r_ 0;
 }

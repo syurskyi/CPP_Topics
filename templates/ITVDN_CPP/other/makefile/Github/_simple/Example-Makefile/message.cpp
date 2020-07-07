@@ -1,9 +1,9 @@
-#include <iostream>
-#include "message.h"
-using namespace std;
+? |i..
+? "message.h"
+u.. s..
 
 
-void message::printMessage(){
-	cout << "My username in google code-in is scandw \n";
+void message::prin.Message(){
+	c__ __  "My username in google code-in is scandw \n";
 
 }

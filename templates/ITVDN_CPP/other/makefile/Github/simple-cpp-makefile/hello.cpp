@@ -1,8 +1,8 @@
-#include <iostream>
-#include "functions.h"
+? |i..
+? "functions.h"
 
-using namespace std;
+u.. s..
 
-void print_hello(){
-   cout << "Hello World!";
+void prin._hello(){
+   c__ __  "Hello World!";
 }

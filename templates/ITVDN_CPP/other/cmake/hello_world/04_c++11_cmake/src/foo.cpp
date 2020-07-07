@@ -1,6 +1,6 @@
-#include <iostream>
+? |i..
  
 void foo(void)
 {
-    std::cout << "This is from foo!\n";
+    std::c__ __  "This is from foo!\n";
 }

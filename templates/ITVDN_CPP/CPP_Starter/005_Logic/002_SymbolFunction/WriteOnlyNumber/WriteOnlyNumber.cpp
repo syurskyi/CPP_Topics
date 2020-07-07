@@ -1,28 +1,28 @@
 
-#include "stdafx.h"
-#include <iostream>
+? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
 
-int main()
+in. main()
 {
 	char number;
 
 	while (true)
 	{
-		cout << "Enter the digit symbol" << endl;
-		cin >> number;
+		c__ __  "Enter the digit symbol" __  e..
+		c__ >> number;
 
 		if (isdigit(number)) {
-			cout << "User entered the number - " << number << endl;
+			c__ __  "User entered the number - " __  number __  e..
 			continue;
 		}
-		cout << "The " << number << " is not a digit! Try again!" << endl;
+		c__ __  "The " __  number __  " is not a digit! Try again!" __  e..
 	}
 
 
 
-    return 0;
+    r_ 0;
 }
 

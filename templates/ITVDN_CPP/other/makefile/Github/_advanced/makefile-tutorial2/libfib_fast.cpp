@@ -1,18 +1,18 @@
-#include <cstdlib>
-#include <vector>
+? <cstdlib>
+? <vector>
 
 class Matrix {
   size_t n, m;
-  std::vector<std::vector<int> > content;
+  std::vector<std::vector<in.> > content;
  public:
   Matrix(size_t n, size_t m) {
     this->n = n;
     this->m = m;
-    content.resize(n, std::vector<int>(m, 0));
+    content.resize(n, std::vector<in.>(m, 0));
   }
 
-  std::vector<int> &operator[](size_t x) {
-    return content[x];
+  std::vector<in.> &operator[](size_t x) {
+    r_ content[x];
   }
 
   Matrix operator*(Matrix rhs) {
@@ -25,12 +25,12 @@ class Matrix {
       }
     }
 
-    return result;
+    r_ result;
   }
 };
 
 
-int fib_fast(int n) {
+in. fib_fast(in. n) {
   Matrix base(2, 2), init(1, 2);
   base[0][0] = base[0][1] = base[1][0] = init[0][0] = 1;
   base[1][1] = init[0][1] = 0;
@@ -44,5 +44,5 @@ int fib_fast(int n) {
     n >>= 1;
   }
 
-  return init[0][1];
+  r_ init[0][1];
 }

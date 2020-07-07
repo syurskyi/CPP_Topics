@@ -2,16 +2,16 @@
 // PUT IN from a keyboard - source (entrance)
 // PUT OUT to the file - destination (exit)
 
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
-    int a;
+    in. a;
 
-    cin >> a;
+    c__ >> a;
 
-    cout << a;
-    return 0;
+    c__ __  a;
+    r_ 0;
 }

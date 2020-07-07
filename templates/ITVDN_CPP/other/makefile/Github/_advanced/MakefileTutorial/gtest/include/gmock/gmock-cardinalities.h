@@ -38,10 +38,10 @@
 #ifndef GMOCK_INCLUDE_GMOCK_GMOCK_CARDINALITIES_H_
 #define GMOCK_INCLUDE_GMOCK_GMOCK_CARDINALITIES_H_
 
-#include <limits.h>
-#include <ostream>  // NOLINT
-#include "gmock/internal/gmock-port.h"
-#include "gtest/gtest.h"
+? <limits.h>
+? <ostream>  // NOLINT
+? "gmock/internal/gmock-port.h"
+? "gtest/gtest.h"
 
 namespace testing {
 

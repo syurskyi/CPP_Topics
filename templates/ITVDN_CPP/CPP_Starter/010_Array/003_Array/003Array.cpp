@@ -1,32 +1,32 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
 	// Создаем массив arr типа int размерностью в 4 элемента, и в блоке инициализатора, инициализируем элементы массива, соответствующими значениями
-	int arr[4] = { 10, 20, 30, 40 };
+	in. arr[4] = { 10, 20, 30, 40 };
 	
 	// получаем количество байт занимаемое массивом в памяти
-	cout << "The size of array arr = " << sizeof(arr) << endl;
+	c__ __  "The size of array arr = " __  sizeof(arr) __  e..
 	// проверяем сколько байт занисает один элемент массива
-	cout << "The size of first element of array = " << sizeof(arr[0]) << endl;
+	c__ __  "The size of first element of array = " __  sizeof(arr[0]) __  e..
 	// расчитываем количество элементов массива
-	cout << "Array length = " << sizeof(arr) / sizeof(arr[0]) << " element(s)." << endl;
+	c__ __  "Array length = " __  sizeof(arr) / sizeof(arr[0]) __  " element(s)." __  e..
 
-	cout << "-------------------------------------------------------------------------------------" << endl;
+	c__ __  "-------------------------------------------------------------------------------------" __  e..
 
-	const int size = 10;
+	const in. size = 10;
 
-	int arr1[size];
+	in. arr1[size];
 	
-	cout << "The size of array arr1 = " << sizeof(arr1) << endl;
-	cout << "The size of first element of array = " << sizeof(arr1[0]) << endl;
+	c__ __  "The size of array arr1 = " __  sizeof(arr1) __  e..
+	c__ __  "The size of first element of array = " __  sizeof(arr1[0]) __  e..
 
-	cout << "Array length = " << sizeof(arr1) / sizeof(arr1[0]) << " element(s)." << endl;
+	c__ __  "Array length = " __  sizeof(arr1) / sizeof(arr1[0]) __  " element(s)." __  e..
 	 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 

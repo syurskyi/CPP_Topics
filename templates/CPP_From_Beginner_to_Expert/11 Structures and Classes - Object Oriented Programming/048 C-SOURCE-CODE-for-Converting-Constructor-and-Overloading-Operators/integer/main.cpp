@@ -1,13 +1,13 @@
-#include <iostream>
-#include "integer.h"
+? |i..
+? "integer.h"
 
-using namespace std;
+u.. s..
 /* CONVERT constructor - overloading operators */
-int main()
+in. main()
 {
-    Integer a(50);
+    in.eger a(50);
 
-    int b = a;
+    in. b = a;
     a = 100;
    // cout << a.getNr() << endl;
     //cout << b << endl;
@@ -16,7 +16,7 @@ int main()
 
     b += a; // a = a + b;
 
-    cout << a << endl;
+    c__ __  a __  e..
 
-    return 0;
+    r_ 0;
 }

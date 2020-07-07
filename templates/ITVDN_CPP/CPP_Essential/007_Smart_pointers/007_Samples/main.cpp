@@ -1,12 +1,12 @@
-#include <iostream>
-#include <string>
-#include "scopedptr.h"
-#include "scopedptr.cpp"
-#include "cat.h"
+? |i..
+? <string>
+? "scopedptr.h"
+? "scopedptr.cpp"
+? "cat.h"
 
-#include <memory>
+? <memory>
 
-using namespace std;
+u.. s..
 
 struct Resource {
     weak_ptr<Resource> other;
@@ -39,7 +39,7 @@ void foo() {
 
 }
 
-int main()
+in. main()
 {
       foo();
 
@@ -96,5 +96,5 @@ int main()
 //    *b = 5;
 //    cout << "b = " << *b << endl;
 
-    return 0;
+    r_ 0;
 }

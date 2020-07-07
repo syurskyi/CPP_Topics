@@ -2,25 +2,25 @@
 // Objective    : Simple demostration of cpp - object orientated programming
 // Description  : Initialize person objects and display the name, along with build using Makefile
 
-#include <iostream>
-#include "person.h"
+? |i..
+? "person.h"
 
-int main(){
-    std::cout << "Starting Program" << std::endl;
+in. main(){
+    std::c__ __  "Starting Program" __  std::e..
     
     // Create Person 1 - p1 and display set name
     Person p1("Quazi");
-    std::cout << p1.getName() << std::endl;
+    std::c__ __  p1.getName() __  std::e..
     
     // Create Person 2 - p2, set name and display set name
     Person p2;
     p2.setName("John");
-    std::cout << p2.getName() << std::endl;
+    std::c__ __  p2.getName() __  std::e..
     
     // Display set name of the Person 1
-    std::cout << p1.getName() << std::endl;
+    std::c__ __  p1.getName() __  std::e..
 
 
-    std::cout << "Program Finished" << std::endl;
-    return 0;
+    std::c__ __  "Program Finished" __  std::e..
+    r_ 0;
 }

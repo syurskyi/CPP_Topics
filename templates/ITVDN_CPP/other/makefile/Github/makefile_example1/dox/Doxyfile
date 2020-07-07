@@ -1590,7 +1590,7 @@ MACRO_EXPANSION        = NO
 EXPAND_ONLY_PREDEF     = NO
 
 # If the SEARCH_INCLUDES tag is set to YES (the default) the includes files
-# pointed to by INCLUDE_PATH will be searched when a #include is found.
+# pointed to by INCLUDE_PATH will be searched when a ? is found.
 
 SEARCH_INCLUDES        = YES
 
@@ -1817,7 +1817,7 @@ GRAPHICAL_HIERARCHY    = YES
 
 # If the DIRECTORY_GRAPH and HAVE_DOT tags are set to YES
 # then doxygen will show the dependencies a directory has on other directories
-# in a graphical way. The dependency relations are determined by the #include
+# in a graphical way. The dependency relations are determined by the ?
 # relations between the files in the directories.
 
 DIRECTORY_GRAPH        = YES

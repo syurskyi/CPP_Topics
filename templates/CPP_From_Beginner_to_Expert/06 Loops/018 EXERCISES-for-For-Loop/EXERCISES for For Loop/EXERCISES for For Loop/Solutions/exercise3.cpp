@@ -1,26 +1,26 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
 main ()
 {
 
     double number;
     double poweredNumber = 1;
-    int nPower;
+    in. nPower;
 
-    cout << "Input the number: ";
-    cin >> number;
+    c__ __  "Input the number: ";
+    c__ >> number;
 
-    cout << "Raise to what power: ";
-    cin >> nPower;
+    c__ __  "Raise to what power: ";
+    c__ >> nPower;
 
-    for (int i = 0; i < nPower; i++)
+    for (in. i = 0; i < nPower; i++)
     {
         poweredNumber *= number;
     }
 
-    cout << "The number " << number << " to the power of " << nPower << " is equal to " << poweredNumber << ".";
+    c__ __  "The number " __  number __  " to the power of " __  nPower __  " is equal to " __  poweredNumber __  ".";
 
 
 }

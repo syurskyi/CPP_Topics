@@ -1,5 +1,5 @@
-#include <iostream>
-using namespace std;
+? |i..
+u.. s..
 
 main()
 {
@@ -7,50 +7,50 @@ main()
 
     beginning:
     system("cls");
-    cout << "Enter first number: " << endl;
-    cin >> var1;
+    c__ __  "Enter first number: " __  e..
+    c__ >> var1;
 
-    cout << "Enter second number: " << endl;
-    cin >> var2;
+    c__ __  "Enter second number: " __  e..
+    c__ >> var2;
 
-    cout << "What do you want to do with that numbers?" << endl;
-    cout << "+ - add" << endl;
-    cout << "- - substract" << endl;
-    cout << "* - multiply" << endl;
-    cout << "/ - divide" << endl;
+    c__ __  "What do you want to do with that numbers?" __  e..
+    c__ __  "+ - add" __  e..
+    c__ __  "- - substract" __  e..
+    c__ __  "* - multiply" __  e..
+    c__ __  "/ - divide" __  e..
 
     char decision;
 
-    cin >> decision;
+    c__ >> decision;
 
     system("cls");
 
     switch(decision)
     {
         case '+':
-            cout << var1 << " + " << var2 << " = " << (var1 + var2) << endl;
+            c__ __  var1 __  " + " __  var2 __  " = " __  (var1 + var2) __  e..
             break;
         case '-':
-            cout << var1 << " - " << var2 << " = " << (var1 - var2) << endl;
+            c__ __  var1 __  " - " __  var2 __  " = " __  (var1 - var2) __  e..
             break;
         case '*':
-            cout << var1 << " * " << var2 << " = " << (var1 * var2) << endl;
+            c__ __  var1 __  " * " __  var2 __  " = " __  (var1 * var2) __  e..
             break;
         case '/':
             if (var2) //var2 != 0
-                cout << var1 << " / " << var2 << " = " << (var1 / var2) << endl;
+                c__ __  var1 __  " / " __  var2 __  " = " __  (var1 / var2) __  e..
             else
-                cout << "You can't divide by 0" << endl;
+                c__ __  "You can't divide by 0" __  e..
             break;
         default:
-            cout << "You typed wrong character";
+            c__ __  "You typed wrong character";
 
     }
 
     char decision2;
 
-    cout << "Do you want to continue that program? (Y/N)" << endl;
-    cin >> decision2;
+    c__ __  "Do you want to continue that program? (Y/N)" __  e..
+    c__ >> decision2;
 
     if (decision2 == 'y' || decision2 == 'Y')
         goto beginning;

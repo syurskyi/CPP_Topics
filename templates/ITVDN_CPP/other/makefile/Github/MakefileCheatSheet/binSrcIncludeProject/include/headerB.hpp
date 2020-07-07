@@ -1,9 +1,9 @@
 #ifndef HEADER_B
 #define HEADER_B
 
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
 class classB{
     public:

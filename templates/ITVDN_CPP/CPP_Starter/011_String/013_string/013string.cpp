@@ -1,16 +1,16 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 // Эта библиотека нужна для работы с типом string
-#include <string>
+? <string>
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
 	string first_str = "Hello world!";
 
-	cout << first_str << endl;
+	c__ __  first_str __  e..
 	system("pause");
-	return 0;
+	r_ 0;
 }
 

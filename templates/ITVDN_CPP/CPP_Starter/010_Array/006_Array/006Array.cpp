@@ -1,12 +1,12 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
 	// На 9-й строке создаем двумерный массив с именем  arr типа int размерностью 3 на 3 элемента.
-	int arr[3][3];
+	in. arr[3][3];
 
 
 	// Заполняем массив.
@@ -23,19 +23,19 @@ int main()
 	arr[2][2] = 9;
 
 	// Выводим значения массива в консоль.
-	cout << arr[0][0] << " ";
-	cout << arr[0][1] << " ";
-	cout << arr[0][2] << endl;
+	c__ __  arr[0][0] __  " ";
+	c__ __  arr[0][1] __  " ";
+	c__ __  arr[0][2] __  e..
 
-	cout << arr[1][0] << " ";
-	cout << arr[1][1] << " ";
-	cout << arr[1][2] << endl;
+	c__ __  arr[1][0] __  " ";
+	c__ __  arr[1][1] __  " ";
+	c__ __  arr[1][2] __  e..
 
-	cout << arr[2][0] << " ";
-	cout << arr[2][1] << " ";
-	cout << arr[2][2] << endl;
+	c__ __  arr[2][0] __  " ";
+	c__ __  arr[2][1] __  " ";
+	c__ __  arr[2][2] __  e..
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 

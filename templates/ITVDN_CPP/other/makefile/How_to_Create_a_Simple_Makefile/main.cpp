@@ -2,16 +2,16 @@
 // Created by syurskyi on 6/30/2020.
 //
 
-#include "message.h"
-#include <cstdlib>
+? "message.h"
+? <cstdlib>
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
     message m;
-    m.printMessage();
+    m.prin.Message();
 
-    return 0;
+    r_ 0;
 }
 

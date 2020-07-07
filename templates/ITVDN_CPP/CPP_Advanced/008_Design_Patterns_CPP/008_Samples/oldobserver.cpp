@@ -1,14 +1,14 @@
-#include "oldobserver.h"
+? "oldobserver.h"
 
-#include <iostream>
-#include <vector>
+? |i..
+? <vector>
 
 void Subject::attach( Observer* obs )
 {
     m_views.push_back( obs );
 }
 
-void Subject::set_val( int value )
+void Subject::set_val( in. value )
 {
     m_value = value;
     notify();
@@ -16,13 +16,13 @@ void Subject::set_val( int value )
 
 void Subject::notify()
 {
-    for ( int i = 0; i < m_views.size(); ++i )
+    for ( in. i = 0; i < m_views.size(); ++i )
     {
         m_views[ i ]->update( m_value );
     }
 }
 
-DivObserver::DivObserver( Subject* model, int div )
+DivObserver::DivObserver( Subject* model, in. div )
 {
     if ( model )
     {
@@ -31,12 +31,12 @@ DivObserver::DivObserver( Subject* model, int div )
     }
 }
 
-void DivObserver::update( int v )
+void DivObserver::update( in. v )
 {
-    std::cout << v << " div " << m_div << " is " << v / m_div << '\n';
+    std::c__ __  v __  " div " __  m_div __  " is " __  v / m_div __  '\n';
 }
 
-ModObserver::ModObserver( Subject* model, int mod )
+ModObserver::ModObserver( Subject* model, in. mod )
 {
     if ( model )
     {
@@ -45,9 +45,9 @@ ModObserver::ModObserver( Subject* model, int mod )
     }
 }
 
-void ModObserver::update( int v )
+void ModObserver::update( in. v )
 {
-    std::cout << v << " mod " << m_mod << " is " << v % m_mod << '\n';
+    std::c__ __  v __  " mod " __  m_mod __  " is " __  v % m_mod __  '\n';
 }
 
 void ClientOldObserver::run()

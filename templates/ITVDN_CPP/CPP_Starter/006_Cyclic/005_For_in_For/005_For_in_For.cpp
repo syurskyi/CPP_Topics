@@ -1,21 +1,21 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
-	for (int i = 0; i < 5; i++)
+	for (in. i = 0; i < 5; i++)
 	{
 		// Выводим одну строчку из 5 звездочек
-		for (int j = 0; j < 5; j++)
+		for (in. j = 0; j < 5; j++)
 		{
-			cout << "* ";
+			c__ __  "* ";
 		}
 		// Переход на новую строку
-		cout << endl;
+		c__ __  e..
 	}
 	
-	cin.get();
-	return 0;
+	c__.g..
+	r_ 0;
 }

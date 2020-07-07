@@ -1,20 +1,20 @@
-#include "inlinevariables.h"
-#include <any>
-#include <cassert>
-#include <experimental/algorithm>
-#include <experimental/filesystem>
+? "inlinevariables.h"
+? <any>
+? <cassert>
+? <experimental/algorithm>
+? <experimental/filesystem>
 //#include <filesystem>
-#include <iostream>
-#include <memory>
-#include <optional>
+? |i..
+? <memory>
+? <optional>
 //#include <parallel/algorithm>
-#include <string>
-#include <string_view>
-#include <utility>
-#include <variant>
-#include <vector>
+? <string>
+? <string_view>
+? <utility>
+? <variant>
+? <vector>
 
-using namespace std;
+u.. s..
 
 // void* operator new( std::size_t count )
 //{
@@ -28,7 +28,7 @@ namespace n1::n2
 {
 void f()
 {
-    cout << "f()" << endl;
+    c__ __  "f()" __  e..
 }
 }
 
@@ -45,7 +45,7 @@ void example()
     // aggregate
     struct base1
     {
-        int b1, b2 = 42;
+        in. b1, b2 = 42;
     };
 
     // non-aggregate
@@ -55,7 +55,7 @@ void example()
             : b3( 42 )
         {
         }
-        int b3;
+        in. b3;
     };
 
     // Extension to aggregate initialization
@@ -63,7 +63,7 @@ void example()
         : base1
         , base2
     {
-        int d;
+        in. d;
     };
 
     // aggregate
@@ -85,9 +85,9 @@ void example()
 namespace fold_expression
 {
 template < typename... Args >
-void printer( Args&&... args )
+void prin.er( Args&&... args )
 {
-    ( cout << ... << args ) << '\n';
+    ( c__ __  ... __  args ) __  '\n';
 }
 
 template < typename T, typename... Args >
@@ -97,32 +97,32 @@ void push_back_vec( vector< T >& v, Args&&... args )
 }
 
 template < typename... Args >
-int summa( Args&&... args )
+in. summa( Args&&... args )
 {
-    return ( args + ... );
+    r_ ( args + ... );
 }
 
 template < typename... Args >
-bool compare( Args... args )
+bo.. compare( Args... args )
 {
-    return ( args && ... );
+    r_ ( args && ... );
 }
 
 void example()
 {
-    printer( 1, 2, 3, "abc" );
-    printer( 1, ", ", 2, ", ", 3, ", ", "abc" );
+    prin.er( 1, 2, 3, "abc" );
+    prin.er( 1, ", ", 2, ", ", 3, ", ", "abc" );
 
-    vector< int > v;
+    vector< in. > v;
     push_back_vec( v, 6, 2, 45, 12 );
     push_back_vec( v, 1, 2, 9 );
-    for ( int i : v )
-        cout << i << ' ';
-    cout << endl;
+    for ( in. i : v )
+        c__ __  i __  ' ';
+    c__ __  e..
 
-    cout << summa( 1, 2, 3, 4, 5 ) << endl;
+    c__ __  summa( 1, 2, 3, 4, 5 ) __  e..
 
-    cout << compare( true, true, true, false ) << endl;
+    c__ __  compare( true, true, true, false ) __  e..
 }
 }
 namespace auto_tmpl_param
@@ -131,19 +131,19 @@ namespace auto_tmpl_param
 template < typename T, T val >
 void early()
 {
-    cout << val << endl;
+    c__ __  val __  e..
 }
 
 // since c++17
 template < auto val >
 void now()
 {
-    cout << val << endl;
+    c__ __  val __  e..
 }
 
 void example()
 {
-    early< int, 10 >();
+    early< in., 10 >();
     early< char, 'H' >();
     early< long, 100l >();
 
@@ -156,31 +156,31 @@ namespace tmpl_arg_deduction
 {
 void example()
 {
-    pair< int, string > p_a( 1, "12" );
+    pair< in., string > p_a( 1, "12" );
 
     // c++17
     pair p_b( 1, "12" );
     pair p_c = { 1, "12" };
     vector vi = { 1, 2, 3, 4 };
     vector vs = { "str1", "str2", "str1" };
-    int m = max( 12, 23 );
+    in. m = max( 12, 23 );
 }
 }
 
 namespace constexpr_lambda
 {
-constexpr int f_calc( int aValue )
+constexpr in. f_calc( in. aValue )
 {
-    auto lambda = [aValue]() { return aValue * 14; };
-    return aValue + lambda();
+    auto lambda = [aValue]() { r_ aValue * 14; };
+    r_ aValue + lambda();
 }
 
 void example()
 {
-    constexpr auto lambda = []( int aValue ) { return aValue * aValue; };
+    constexpr auto lambda = []( in. aValue ) { r_ aValue * aValue; };
 
-    cout << f_calc( 12 ) << endl;
-    cout << lambda( 12 ) << endl;
+    c__ __  f_calc( 12 ) __  e..
+    c__ __  lambda( 12 ) __  e..
 }
 }
 namespace this_lambda
@@ -191,12 +191,12 @@ struct test
     {
         auto lambda_const = [*this]() {
             f_const();
-            return mA * mA;
+            r_ mA * mA;
         };
 
         auto lambda = [*this]() mutable {
             f();
-            return mA * mA;
+            r_ mA * mA;
         };
 
         lambda_const();
@@ -204,11 +204,11 @@ struct test
     }
 
 private:
-    void f_const() const { cout << "f_const()" << endl; }
+    void f_const() const { c__ __  "f_const()" __  e.. }
 
-    void f() { cout << "f()" << endl; }
+    void f() { c__ __  "f()" __  e.. }
 
-    int mA{ 100 };
+    in. mA{ 100 };
 };
 void example()
 {
@@ -221,27 +221,27 @@ namespace constexpr_if
 {
 struct S
 {
-    int mInt{ 0 };
+    in. min.{ 0 };
     float mFloat{ 0.f };
-    vector< int > mVectorInt;
+    vector< in. > mVectorin.;
 };
 
 template < std::size_t aFieldNubmer >
-void print( S& s )
+void prin.( S& s )
 {
     if constexpr ( aFieldNubmer == 0 )
     {
-        cout << s.mInt << endl;
+        c__ __  s.min. __  e..
     }
     else if constexpr ( aFieldNubmer == 1 )
     {
-        cout << s.mFloat << endl;
+        c__ __  s.mFloat __  e..
     }
     else if constexpr ( aFieldNubmer == 2 )
     {
-        for ( auto i : s.mVectorInt )
-            cout << i << ' ';
-        cout << endl;
+        for ( auto i : s.mVectorin. )
+            c__ __  i __  ' ';
+        c__ __  e..
     }
 }
 
@@ -249,9 +249,9 @@ void example()
 {
     S obj = { 10, 11.f, { 1, 2, 3, 4 } };
 
-    print< 0 >( obj );
-    print< 1 >( obj );
-    print< 2 >( obj );
+    prin.< 0 >( obj );
+    prin.< 1 >( obj );
+    prin.< 2 >( obj );
 }
 }
 namespace if_switch_initializer
@@ -259,23 +259,23 @@ namespace if_switch_initializer
 void if_example( void* aP )
 {
     if ( void* p = aP; p == nullptr )
-        cout << "Error. Pointer is nullptr" << endl;
+        c__ __  "Error. Pointer is nullptr" __  e..
     else
-        cout << "Pointer is OK!" << endl;
+        c__ __  "Pointer is OK!" __  e..
 }
 
-void switch_example( int error )
+void switch_example( in. error )
 {
-    switch ( int code = error; code )
+    switch ( in. code = error; code )
     {
         case 0:
         {
-            cout << "Ok!" << endl;
+            c__ __  "Ok!" __  e..
             break;
         }
         default:
         {
-            cout << "Error!" << endl;
+            c__ __  "Error!" __  e..
             break;
         }
     }
@@ -298,28 +298,28 @@ void f_pair()
 
     auto [ x, y ] = p;
 
-    cout << x << endl;
-    cout << y << endl;
+    c__ __  x __  e..
+    c__ __  y __  e..
 }
 
 void f_array()
 {
-    int coord[ 4 ] = { 1, 2, 3 };
+    in. coord[ 4 ] = { 1, 2, 3 };
 
     auto [ x, y, z, a ] = coord;
 
-    cout << a << endl;
-    cout << y << endl;
-    cout << z << endl;
+    c__ __  a __  e..
+    c__ __  y __  e..
+    c__ __  z __  e..
 }
 
 void f_a()
 {
     struct Config_a
     {
-        int id;
+        in. id;
         string name;
-        vector< int > data;
+        vector< in. > data;
     };
     Config_a ca;
 
@@ -335,7 +335,7 @@ void example()
     f_array();
     f_a();
 
-    int pos[ 2 ] = { 10, 20 };
+    in. pos[ 2 ] = { 10, 20 };
     auto& [ x, y ] = pos;
     x = 100;
     y = 200;
@@ -346,30 +346,30 @@ namespace new_attributes
 {
 void f_fallthrough()
 {
-    int i = rand() % 10;
+    in. i = rand() % 10;
     switch ( i )
     {
         case 0:
-            cout << "0" << endl;
+            c__ __  "0" __  e..
             break;
         case 1:
-            cout << "1" << endl;
+            c__ __  "1" __  e..
             break;
         case 2:
-            cout << "2" << endl;
+            c__ __  "2" __  e..
             break;
         case 3:
-            cout << "some doing" << endl;
-            cout << "3" << endl;
+            c__ __  "some doing" __  e..
+            c__ __  "3" __  e..
             [[fallthrough]]; // no warning
         case 4:
-            cout << "4" << endl;
+            c__ __  "4" __  e..
     }
 }
 
-[[nodiscard]] int f_nodiscard()
+[[nodiscard]] in. f_nodiscard()
 {
-    return 0;
+    r_ 0;
 }
 
 void example()
@@ -377,7 +377,7 @@ void example()
     f_fallthrough();
     f_nodiscard();
 
-    [[maybe_unused]] int i = 0;
+    [[maybe_unused]] in. i = 0;
 }
 }
 
@@ -386,13 +386,13 @@ namespace std_any
 void example()
 {
     std::any hm = 10;
-    cout << std::any_cast< int >( hm ) << endl;
+    c__ __  std::any_cast< in. >( hm ) __  e..
 
     hm = string( "hello" );
-    cout << std::any_cast< string >( hm ) << endl;
+    c__ __  std::any_cast< string >( hm ) __  e..
 
     hm = "hello 2";
-    cout << std::any_cast< const char* >( hm ) << endl;
+    c__ __  std::any_cast< const char* >( hm ) __  e..
 }
 }
 
@@ -406,66 +406,66 @@ void getStringView( [[maybe_unused]] std::string_view strView ) {}
 void example()
 {
 
-    std::cout << std::endl;
+    std::c__ __  std::e..
 
-    std::cout << "std::string" << std::endl;
+    std::c__ __  "std::string" __  std::e..
 
     std::string large = "0123456789-123456789-123456789-123456789";
     std::string substr = large.substr( 10 );
 
-    std::cout << std::endl;
+    std::c__ __  std::e..
 
-    std::cout << "std::string_view" << std::endl;
+    std::c__ __  "std::string_view" __  std::e..
 
     std::string_view largeStringView{ large.c_str(), large.size() };
     largeStringView.remove_prefix( 10 );
 
     assert( substr == largeStringView );
 
-    std::cout << std::endl;
+    std::c__ __  std::e..
 
-    std::cout << "getString" << std::endl;
+    std::c__ __  "getString" __  std::e..
 
     getString( large );
     getString( "0123456789-123456789-123456789-123456789" );
     const char message[] = "0123456789-123456789-123456789-123456789";
     getString( message );
 
-    std::cout << std::endl;
+    std::c__ __  std::e..
 
-    std::cout << "getStringView" << std::endl;
+    std::c__ __  "getStringView" __  std::e..
 
     getStringView( large );
     getStringView( "0123456789-123456789-123456789-123456789" );
     getStringView( message );
 
-    std::cout << std::endl;
+    std::c__ __  std::e..
 }
 }
 
 namespace std_optional
 {
-optional< int > strToInt( string aStr )
+optional< in. > strToin.( string aStr )
 {
     if ( aStr.empty() )
-        return {};
+        r_ {};
 
     // parse string, if Ok return value
     if ( true )
-        return 1;
-    return {};
+        r_ 1;
+    r_ {};
 }
 
 void example()
 {
-    optional< int > i;
-    i = strToInt( "" );
+    optional< in. > i;
+    i = strToin.( "" );
     if ( i )
-        cout << "OK: " << *i << endl;
+        c__ __  "OK: " __  *i __  e..
 
-    i = strToInt( "123" );
+    i = strToin.( "123" );
     if ( i )
-        cout << "OK: " << *i << endl;
+        c__ __  "OK: " __  *i __  e..
 }
 }
 
@@ -473,13 +473,13 @@ namespace std_variant
 {
 void example()
 {
-    variant< int, char, string > v;
+    variant< in., char, string > v;
 
     v = 42;
-    cout << get< int >( v ) << " " << v.index() << endl;
+    c__ __  get< in. >( v ) __  " " __  v.index() __  e..
 
     v = "Hello!";
-    cout << get< string >( v ) << " " << v.index() << endl;
+    c__ __  get< string >( v ) __  " " __  v.index() __  e..
 }
 }
 
@@ -490,8 +490,8 @@ namespace fs = experimental::filesystem;
 void example()
 {
     auto cur_p = fs::current_path();
-    cout << "current path - " << cur_p << endl;
-    cout << endl;
+    c__ __  "current path - " __  cur_p __  e..
+    c__ __  e..
 
     auto root_p = fs::path( "/" );
     auto space = fs::space( root_p );
@@ -499,14 +499,14 @@ void example()
        free      - free space on the filesystem, in bytes
        available - free space available to a non-privileged process
                    (may be equal or less than free) */
-    cout << "Total     : " << space.capacity / 1024 / 1024 / 1024 << "GB" << endl;
-    cout << "Free      : " << space.free / 1024 / 1024 / 1024 << "GB" << endl;
-    cout << "Available : " << space.available / 1024 / 1024 / 1024 << "GB" << endl;
-    cout << endl;
+    c__ __  "Total     : " __  space.capacity / 1024 / 1024 / 1024 __  "GB" __  e..
+    c__ __  "Free      : " __  space.free / 1024 / 1024 / 1024 __  "GB" __  e..
+    c__ __  "Available : " __  space.available / 1024 / 1024 / 1024 __  "GB" __  e..
+    c__ __  e..
 }
 }
 
-int main()
+in. main()
 {
     // namespaces::example();
     // ext_aggregate::example();
@@ -532,5 +532,5 @@ int main()
     // Explicitly force a call to parallel sort.
     //__gnu_parallel::sort( v.begin(), v.end() );
 
-    return 0;
+    r_ 0;
 }

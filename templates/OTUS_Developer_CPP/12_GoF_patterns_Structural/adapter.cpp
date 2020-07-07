@@ -1,30 +1,30 @@
 // Адаптер (Adapter)
 
-#include <iostream>
+? |i..
 
 struct mysql_client_native {
     void mysql_connect()
     {
-        std::cout << "mysql connect" << std::endl;
+        std::c__ __  "mysql connect" __  std::e..
     }
     void mysql_execute()
     {
-        std::cout << "mysql execute" << std::endl;
+        std::c__ __  "mysql execute" __  std::e..
     }
     void mysql_close()
     {
-        std::cout << "mysql close" << std::endl;
+        std::c__ __  "mysql close" __  std::e..
     }
 };
 
 struct postgres_client_native {
     void postgres_open()
     {
-        std::cout << "postgres open" << std::endl;
+        std::c__ __  "postgres open" __  std::e..
     }
     void postgres_query()
     {
-        std::cout << "postgres query" << std::endl;
+        std::c__ __  "postgres query" __  std::e..
     }
 };
 
@@ -71,7 +71,7 @@ class PostgresDatabase : public IDatabase
     }
 };
 
-int main(int, char *[])
+in. main(in., char *[])
 {
     IDatabase *db = new PostgresDatabase{};
 

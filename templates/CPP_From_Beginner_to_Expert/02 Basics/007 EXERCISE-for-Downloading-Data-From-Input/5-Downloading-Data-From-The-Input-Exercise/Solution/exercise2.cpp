@@ -1,20 +1,20 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
 main () {
 
-    int firstNumber, secondNumber, temporaryContainer;
+    in. firstNumber, secondNumber, temporaryContainer;
 
-    cout << "Input first number: ";
-    cin >> firstNumber;
-    cout << "Input second number: ";
-    cin >> secondNumber;
+    c__ __  "Input first number: ";
+    c__ >> firstNumber;
+    c__ __  "Input second number: ";
+    c__ >> secondNumber;
 
     temporaryContainer = firstNumber;
     firstNumber = secondNumber;
     secondNumber = temporaryContainer;
 
-    cout << "After exchange, the first number is: " << firstNumber << endl;
-    cout << "The second number is: " << secondNumber << endl;
+    c__ __  "After exchange, the first number is: " __  firstNumber __  e..
+    c__ __  "The second number is: " __  secondNumber __  e..
 }

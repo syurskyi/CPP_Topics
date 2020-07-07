@@ -1,7 +1,7 @@
-#include "../header/hello.h"
+? "../header/hello.h"
 
 void Hello::kevin()
 {
-  cout << "Hello Serhii" << endl;
+  c__ __  "Hello Serhii" __  e..
 }
 

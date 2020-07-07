@@ -1,10 +1,10 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 //conditional statements / instructions
 main()
 {
-    int a = 4, b = 20;
+    in. a = 4, b = 20;
 /*
     cout << "Enter a: " << endl;
     cin >> a;
@@ -14,15 +14,15 @@ main()
 */
 
     if (a > b)
-        cout << a << " > " << b << endl;
+        c__ __  a __  " > " __  b __  e..
     else if (a < b)
     {
-        cout << a << " < " << b << endl;
+        c__ __  a __  " < " __  b __  e..
         if (a < 10)
-            cout << "a is smaller than 10";
+            c__ __  "a is smaller than 10";
     }
     else
-        cout << "that instruction will be executed ONLY if all of the conditions weren't met" << endl;
+        c__ __  "that instruction will be executed ONLY if all of the conditions weren't met" __  e..
 
 
 /*

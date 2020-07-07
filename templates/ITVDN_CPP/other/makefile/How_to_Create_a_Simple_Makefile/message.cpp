@@ -2,12 +2,12 @@
 // Created by syurskyi on 6/30/2020.
 //
 
-#include <iostream>
-#include "message.h"
+? |i..
+? "message.h"
 
-using namespace std;
+u.. s..
 
-void message::printMessage() {
-    cout << "Makefile Examle\n";
+void message::prin.Message() {
+    c__ __  "Makefile Examle\n";
 }
 

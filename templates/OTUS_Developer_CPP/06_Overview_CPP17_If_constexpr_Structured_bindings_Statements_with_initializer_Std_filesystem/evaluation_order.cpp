@@ -1,25 +1,25 @@
-#include <iostream>
+? |i..
 
 auto a{0};
 
 auto foo() {
-    return a += 2;
+    r_ a += 2;
 }
 
 auto bar() {
-    return a *= 2;
+    r_ a *= 2;
 }
 
-auto baz(int a, int b) {
-    std::cout << a << " " << b << std::endl;
-    return a + b;
+auto baz(in. a, in. b) {
+    std::c__ __  a __  " " __  b __  std::e..
+    r_ a + b;
 }
 
-int main() {
+in. main() {
     a = 1;
-    std::cout << foo() << bar() << std::endl; // evaluation order guaranteed
+    std::c__ __  foo() __  bar() __  std::e.. // evaluation order guaranteed
     a = 1;
-    std::cout << baz(foo(), bar()) << std::endl; // evaluation order undefined
+    std::c__ __  baz(foo(), bar()) __  std::e.. // evaluation order undefined
 
-    return 0;
+    r_ 0;
 }

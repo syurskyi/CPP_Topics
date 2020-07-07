@@ -1,13 +1,13 @@
-#include <iostream>
-#include <fstream>
+? |i..
+? <fstream>
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
     fstream file;
 
-    file.open("sample.txt", ios::out | ios::app);
+    file.open("sample.txt", i.. out | i.. app);
 
     /*
         ios::in - INPUT - READING
@@ -29,13 +29,13 @@ int main()
 
     if (file.is_open())
     {
-        file << "sample text\n";
-        file << "sample text\n";
+        file __  "sample text\n";
+        file __  "sample text\n";
 
     }
     else
-        cout << "The file hasn't been opened properly";
+        c__ __  "The file hasn't been opened properly";
 
 
-    return 0;
+    r_ 0;
 }

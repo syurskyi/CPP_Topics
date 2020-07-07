@@ -1,21 +1,21 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 // Эта библиотека нужна для работы с типом string
-#include <string>
+? <string>
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
 	string _str = "Some text";
 
 	// Methods
 	_str.append(" one more text");
-	cout << _str.size() << endl;
+	c__ __  _str.size() __  e..
 
-	cout << _str << endl;
+	c__ __  _str __  e..
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 

@@ -1,25 +1,25 @@
-#include <chrono>
-#include <condition_variable>
-#include <iostream>
-#include <queue>
-#include <thread>
+? <chrono>
+? <condition_variable>
+? |i..
+? <queue>
+? <thread>
 
 struct xray {
-    xray() { std::cout << __PRETTY_FUNCTION__ << std::endl; }
+    xray() { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }
 
-    xray(const xray&) { std::cout << __PRETTY_FUNCTION__ << std::endl; }
+    xray(const xray&) { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }
 
-    xray(xray&&) noexcept { std::cout << __PRETTY_FUNCTION__ << std::endl; }
+    xray(xray&&) noexcept { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }
 
-    xray(const char*) { std::cout << __PRETTY_FUNCTION__ << std::endl; }
+    xray(const char*) { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }
 
-    ~xray() { std::cout << __PRETTY_FUNCTION__ << std::endl; }
+    ~xray() { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }
 };
 
-std::ostream& operator<<(std::ostream & o, const xray &)
+std::ostream& operator__ (std::ostream & o, const xray &)
 {
-    o << "xray";
-    return o;
+    o __  "xray";
+    r_ o;
 }
 
 //using T = std::string;
@@ -29,10 +29,10 @@ using args = std::tuple<T, T>;
 
 void foo(const T& a, const T& b)
 {
-    std::cout << a << " " << b << std::endl;
+    std::c__ __  a __  " " __  b __  std::e..
 }
 
-int main()
+in. main()
 {
     std::queue<args> msgs;
     msgs.emplace("hello", "en");
@@ -47,5 +47,5 @@ int main()
 
 //    std::apply(foo, msgs.front());
 
-    return 0;
+    r_ 0;
 }

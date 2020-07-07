@@ -1,16 +1,16 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
-	cout << "I am developer!";
-	cout << endl;
-	cout << 2 + 2;
+	c__ __  "I am developer!";
+	c__ __  e..
+	c__ __  2 + 2;
 
 	// Задержка
-	cin.get();
-    return 0;
+	c__.g..
+    r_ 0;
 }
 

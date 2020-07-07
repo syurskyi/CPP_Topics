@@ -1,45 +1,45 @@
-#include "stdafx.h"
-#include <iostream>
+? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
     setlocale(LC_ALL, "rus");
 
-    cout << "Select one of the menu items: " << endl;
-    cout << "1. Create file" << endl;
-    cout << "2. Save file" << endl;
-    cout << "3. End the program" << endl;
+    c__ __  "Select one of the menu items: " __  e..
+    c__ __  "1. Create file" __  e..
+    c__ __  "2. Save file" __  e..
+    c__ __  "3. End the program" __  e..
 
     char action;
-    cin >> action;
+    c__ >> action;
 
     switch (action)
     {
         case '1':
         {
-            cout << "A new file has been created.." << endl;
+            c__ __  "A new file has been created.." __  e..
             break;
         }
         case '2':
         {
-            cout << "File saved." << endl;
+            c__ __  "File saved." __  e..
             break;
         }
         case '3':
         {
-            cout << "Good bye" << endl;
+            c__ __  "Good bye" __  e..
             break;
         }
         default:
         {
-            cout << "Wrong choice, try again!";
+            c__ __  "Wrong choice, try again!";
             break;
         }
     }
 
-    cin.get();
-    return 0;
+    c__.g..
+    r_ 0;
 }
 

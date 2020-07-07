@@ -1,18 +1,18 @@
 ﻿// “ернарна¤ условна¤ операци¤
-#include "stdafx.h"
-#include <iostream>
+? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
-    int a = 8, b = 7, c = 1, max = -1;
+    in. a = 8, b = 7, c = 1, max = -1;
 
     max = (a < b) ? c = b : c = a;  //сачала с = b, а только потом max = с
 
-    cout << max << endl;
+    c__ __  max __  e..
 
-    cin.get();
-    return 0;
+    c__.g..
+    r_ 0;
 }
 

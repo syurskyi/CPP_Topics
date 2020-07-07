@@ -1,18 +1,18 @@
-#include "Person.h"
-#include <iostream>
-#include <string>
-using namespace std;
+? "Person.h"
+? |i..
+? <string>
+u.. s..
 
-int main() {
+in. main() {
     string name;
-    int age;
+    in. age;
     
-    cout << "Hello, Please Enter Your Name:" << endl;
-    cin >> name;
-    cout << "Please Enter Your Age:" << endl;
-    cin >> age;
+    c__ __  "Hello, Please Enter Your Name:" __  e..
+    c__ >> name;
+    c__ __  "Please Enter Your Age:" __  e..
+    c__ >> age;
 
     Person person(name, age);
-    cout << "Welcome " << name << endl;
+    c__ __  "Welcome " __  name __  e..
 
 }

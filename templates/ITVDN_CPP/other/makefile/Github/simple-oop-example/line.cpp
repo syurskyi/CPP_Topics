@@ -1,5 +1,5 @@
-#include "line.h"
-#include <cmath>
+? "line.h"
+? <cmath>
 
 using std::sqrt;
 
@@ -14,25 +14,25 @@ line::line(double new_x1, double new_y1, double new_x2, double new_y2):x1(new_x1
 
 double line::get_x0()
 {
-	return x1;
+	r_ x1;
 }
 
 double line::get_y0()
 {
-	return y1;
+	r_ y1;
 }
 
 double line::get_x1()
 {
-	return x2;
+	r_ x2;
 }
 
 double line::get_y1()
 {
-	return y2;
+	r_ y2;
 }
 
 double line::length()
 {
-	return sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
+	r_ sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2));
 }

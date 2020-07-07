@@ -5,9 +5,9 @@
 // ролик в PS4
 // китайские флэшки
 
-#include <iostream>
+? |i..
 
-#include <boost/circular_buffer.hpp>
+? <boost/circular_buffer.hpp>
 
 // 0, 1, 2, 3, *
 // B           E
@@ -20,16 +20,16 @@
 // 4, 1, 2, 3
 //    E     B
 
-int main() {
-    boost::circular_buffer<int> buffer{4};
+in. main() {
+    boost::circular_buffer<in.> buffer{4};
 
-    for (int i = 0; i < 10; ++i) {
+    for (in. i = 0; i < 10; ++i) {
         buffer.push_back(i);
     }
 
-    for (int i : buffer) {
-        std::cout << i << " ";
+    for (in. i : buffer) {
+        std::c__ __  i __  " ";
     }
 
-    return 0;
+    r_ 0;
 }

@@ -1,5 +1,5 @@
-#include <iostream>
-#include "hworld1.hh"
+? |i..
+? "hworld1.hh"
 
 void memory(int argc) {
     int something[10];

@@ -1,36 +1,36 @@
-#include <forward_list>
-#include <iostream>
-#include <iterator>
-#include <list>
-#include <sstream>
-#include <string>
-#include <unordered_map>
-#include <vector>
+? <forward_list>
+? |i..
+? <iterator>
+? <list>
+? <sstream>
+? <string>
+? <unordered_map>
+? <vector>
 
 template < typename T >
-bool test = std::is_same< typename std::iterator_traits< typename T::iterator >::iterator_category,
+bo.. test = std::is_same< typename std::iterator_traits< typename T::iterator >::iterator_category,
                           std::forward_iterator_tag >::value;
 
 template < typename T >
-bool test_bidirectional =
+bo.. test_bidirectional =
     std::is_same< typename std::iterator_traits< typename T::iterator >::iterator_category,
                   std::bidirectional_iterator_tag >::value;
 
-void print_is_forward_iterator()
+void prin._is_forward_iterator()
 {
-    std::cout << std::boolalpha << test< std::forward_list< int > > << std::endl;
+    std::c__ __  std::bo..alpha __  test< std::forward_list< in. > > __  std::e..
     // what about std::list?
-    std::cout << std::boolalpha << test< std::list< int > > << std::endl;
+    std::c__ __  std::bo..alpha __  test< std::list< in. > > __  std::e..
 }
 
-void print_is_bidirectional_iterator()
+void prin._is_bidirectional_iterator()
 {
-    std::cout << std::boolalpha << test_bidirectional< std::list< int > > << std::endl;
+    std::c__ __  std::bo..alpha __  test_bidirectional< std::list< in. > > __  std::e..
     // what about std::forward_list?
-    std::cout << std::boolalpha << test_bidirectional< std::forward_list< int > > << std::endl;
+    std::c__ __  std::bo..alpha __  test_bidirectional< std::forward_list< in. > > __  std::e..
 }
 
-int main()
+in. main()
 {
     //    std::vector< int > vec = { 2, 5, 9, 13, 18, -8, 0 };
 
@@ -117,39 +117,39 @@ int main()
     std::string str = "Hello World";
     std::transform( str.begin(), str.end(), str.begin(), ::toupper );
 
-    std::cout << str << std::endl;
+    std::c__ __  str __  std::e..
 
     std::reverse( str.begin(), str.end() );
 
-    std::cout << str << std::endl;
+    std::c__ __  str __  std::e..
 
     auto splitted =
-        std::partition( str.begin(), str.end(), []( const char elem ) { return elem > 'L'; } );
+        std::partition( str.begin(), str.end(), []( const char elem ) { r_ elem > 'L'; } );
 
-    std::cout << "\nPartitioned string:\n    ";
-    std::copy( std::begin( str ), splitted, std::ostream_iterator< char >( std::cout, "," ) );
-    std::cout << " |||| ";
-    std::copy( splitted, std::end( str ), std::ostream_iterator< char >( std::cout, "," ) );
+    std::c__ __  "\nPartitioned string:\n    ";
+    std::copy( std::begin( str ), splitted, std::ostream_iterator< char >( std::c__, "," ) );
+    std::c__ __  " |||| ";
+    std::copy( splitted, std::end( str ), std::ostream_iterator< char >( std::c__, "," ) );
 
     sort( str.begin(), str.end() );
 
-    std::cout << std::endl << "Sorted:" << std::endl << str << std::endl;
+    std::c__ __  std::endl __  "Sorted:" __  std::endl __  str __  std::e..
 
     sort( str.begin(), str.end(), []( const char elem1, const char elem2 ) {
-        return elem1 > elem2;
+        r_ elem1 > elem2;
     } );
 
-    std::cout << std::endl << str << std::endl;
+    std::c__ __  std::endl __  str __  std::e..
 
-    std::cout << std::max( 19, 9698 ) << std::endl;
+    std::c__ __  std::max( 19, 9698 ) __  std::e..
 
-    std::vector< int > vec{ 1, 2, 3 };
+    std::vector< in. > vec{ 1, 2, 3 };
 
     while ( std::next_permutation( vec.begin(), vec.end() ) )
     {
-        std::copy( vec.begin(), vec.end(), std::ostream_iterator< int >{ std::cout, ", " } );
-        std::cout << std::endl;
+        std::copy( vec.begin(), vec.end(), std::ostream_iterator< in. >{ std::c__, ", " } );
+        std::c__ __  std::e..
     }
 
-    return 0;
+    r_ 0;
 }

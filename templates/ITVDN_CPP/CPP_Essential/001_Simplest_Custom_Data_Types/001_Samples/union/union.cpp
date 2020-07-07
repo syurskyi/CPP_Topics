@@ -1,13 +1,13 @@
-#include <iostream>
-#include <string>
+? |i..
+? <string>
 
-using namespace std;
+u.. s..
 
 struct A
 {
-    int a;
+    in. a;
     union{
-        int b;
+        in. b;
         double c;
     };
 };
@@ -15,13 +15,13 @@ struct A
 
 union Container
 {
-    int int_field;
+    in. in._field;
     double double_field;
 };
 
 typedef Container cnt;
 
-int main()
+in. main()
 {
     Container container;
     container.double_field = 0.5;
@@ -33,20 +33,20 @@ int main()
     Container* cnt_ptr;
 
     a_ptr->b;
-    cout << a_ptr.a;
+    c__ __  a_ptr.a;
 
 
-    cout << a.b << "\n";
-    cout << a.c << "\n";
-    cout << sizeof(A) << "\n";
+    c__ __  a.b __  "\n";
+    c__ __  a.c __  "\n";
+    c__ __  sizeof(A) __  "\n";
 
-    cout << sizeof(container) << "\n";
+    c__ __  sizeof(container) __  "\n";
 
-    cout << container.int_field << "\n";
-    cout << container.double_field << "\n";
+    c__ __  container.in._field __  "\n";
+    c__ __  container.double_field __  "\n";
     container = {4};
 
-    cout << container.int_field << "\n";
-    cout << container.double_field << "\n";
-    return 0;
+    c__ __  container.in._field __  "\n";
+    c__ __  container.double_field __  "\n";
+    r_ 0;
 }

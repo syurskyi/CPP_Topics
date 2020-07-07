@@ -1,6 +1,6 @@
 #pragma once
 
-#include <iostream>
+? |i..
 
 struct xray {
     std::string x;

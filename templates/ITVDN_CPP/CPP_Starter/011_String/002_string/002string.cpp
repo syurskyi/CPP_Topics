@@ -1,20 +1,20 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
-int main()
+u.. s..
+in. main()
 {
 	// Компилятор разбивает строку на массив символов
 	char str1[16] = "I write in C++!";
 
-	cout << str1 << endl;
+	c__ __  str1 __  e..
 
 	// Компилятор сам подсчитывает количество символов в строке и инициализирует массив
 	char str2[] = "And I like it!";
 
-	cout << str2 << endl;
+	c__ __  str2 __  e..
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 

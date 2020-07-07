@@ -1,10 +1,10 @@
 #ifndef MODERNOBSERVER_H
 #define MODERNOBSERVER_H
 
-#include "meta_strategy.h"
-#include <functional>
-#include <iostream>
-#include <vector>
+? "meta_strategy.h"
+? <functional>
+? |i..
+? <vector>
 
 class ModernObserver
 {

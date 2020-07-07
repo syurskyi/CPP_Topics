@@ -40,8 +40,8 @@
 #ifndef GMOCK_INCLUDE_GMOCK_GMOCK_GENERATED_ACTIONS_H_
 #define GMOCK_INCLUDE_GMOCK_GMOCK_GENERATED_ACTIONS_H_
 
-#include "gmock/gmock-actions.h"
-#include "gmock/internal/gmock-port.h"
+? "gmock/gmock-actions.h"
+? "gmock/internal/gmock-port.h"
 
 namespace testing {
 namespace internal {
@@ -2566,6 +2566,6 @@ ACTION_TEMPLATE(ReturnNew,
 // Include any custom callback actions added by the local installation.
 // We must include this header at the end to make sure it can use the
 // declarations from this file.
-#include "gmock/internal/custom/gmock-generated-actions.h"
+? "gmock/internal/custom/gmock-generated-actions.h"
 
 #endif  // GMOCK_INCLUDE_GMOCK_GMOCK_GENERATED_ACTIONS_H_

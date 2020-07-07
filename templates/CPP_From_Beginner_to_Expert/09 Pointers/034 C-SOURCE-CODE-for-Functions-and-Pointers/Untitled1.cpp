@@ -1,12 +1,12 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
 //void multiplyBy(int &, int);
-int * multiplyBy(int *, int);
-void multiplyArrayBy(int *, int, int);
+in. * multiplyBy(in. *, in.);
+void multiplyArrayBy(in. *, in., in.);
 
-int main()
+in. main()
 {
     /*
     int a = 10;
@@ -18,30 +18,30 @@ int main()
     cout << *b << endl;
     */
 
-    int array[10];
+    in. array[10];
     //cout << sizeof(array)/sizeof(array[0]) << endl;
 
-    for (int i = 0; i < sizeof(array)/sizeof(array[0]); i++)
+    for (in. i = 0; i < sizeof(array)/sizeof(array[0]); i++)
     {
         array[i] = i;
      //   cout << "array [" << i << "] = " << array[i] << endl;
     }
     multiplyArrayBy(&array[0], 5, sizeof(array)/sizeof(array[0])); // &array[0] == array
-    for (int i = 0; i < sizeof(array)/sizeof(array[0]); i++)
+    for (in. i = 0; i < sizeof(array)/sizeof(array[0]); i++)
     {
-       cout << "array [" << i << "] = " << array[i] << endl;
+       c__ __  "array [" __  i __  "] = " __  array[i] __  e..
     }
 
-    return 0;
+    r_ 0;
 }
-int * multiplyBy(int * var, int amount)
+in. * multiplyBy(in. * var, in. amount)
 {
     //int * var = &a;
     *var =  *var * amount;
 
-    return var;
+    r_ var;
 }
-void multiplyArrayBy(int *array, int amount, int sizeOfArray)
+void multiplyArrayBy(in. *array, in. amount, in. sizeOfArray)
 {
     while(sizeOfArray--)
         array[sizeOfArray] *= amount;

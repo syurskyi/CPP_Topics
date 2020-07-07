@@ -1,7 +1,7 @@
-#include<iostream>
+?|i..
 #ifndef HELLO_H
 #define HELLO_H
-using namespace std;
+u.. s..
 
 class Hello
 {

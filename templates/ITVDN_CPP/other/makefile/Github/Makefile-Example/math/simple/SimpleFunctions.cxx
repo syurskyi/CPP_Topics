@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include "SimpleFunctions.h"
+? <stdio.h>
+? "SimpleFunctions.h"
 
 double mysum(double x, double y)
 {

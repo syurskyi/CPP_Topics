@@ -1,8 +1,8 @@
-#include "lib.h"
+? "lib.h"
 
-#include "version.h"
+? "version.h"
 
-int version()
+in. version()
 {
-    return PROJECT_VERSION_PATCH;
+    r_ PROJECT_VERSION_PATCH;
 }

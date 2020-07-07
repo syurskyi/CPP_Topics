@@ -1,22 +1,22 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
-int main()
+u.. s..
+in. main()
 {
 	// Фунция getline() считывает полностью строку до момента ввода символа новой строки (нажатие на клавишу Enter) отбрасывая нулевой символ
 	char name[20];
-	int age = 0;
+	in. age = 0;
 
-	cout << "Enter you name: ";
-	cin.getline(name, 20);
+	c__ __  "Enter you name: ";
+	c__.getline(name, 20);
 
-	cout << "Enter your age: ";
-	cin >> age;
+	c__ __  "Enter your age: ";
+	c__ >> age;
 
-	cout << "Your name is " << name << ", and you are " << age << " years old" << endl;
+	c__ __  "Your name is " __  name __  ", and you are " __  age __  " years old" __  e..
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 

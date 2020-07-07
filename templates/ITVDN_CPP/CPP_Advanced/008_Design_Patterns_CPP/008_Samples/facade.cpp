@@ -1,36 +1,36 @@
-#include "facade.h"
-#include <iostream>
+? "facade.h"
+? |i..
 
-using namespace std;
+u.. s..
 
 void Alarm::alarmOn()
 {
-    cout << "Alarm is on and house is secured" << endl;
+    c__ __  "Alarm is on and house is secured" __  e..
 }
 
 void Alarm::alarmOff()
 {
-    cout << "Alarm is off and you can go into the house" << endl;
+    c__ __  "Alarm is off and you can go into the house" __  e..
 }
 
 void Ac::acOn()
 {
-    cout << "Ac is on" << endl;
+    c__ __  "Ac is on" __  e..
 }
 
 void Ac::acOff()
 {
-    cout << "AC is off" << endl;
+    c__ __  "AC is off" __  e..
 }
 
 void Tv::tvOn()
 {
-    cout << "Tv is on" << endl;
+    c__ __  "Tv is on" __  e..
 }
 
 void Tv::tvOff()
 {
-    cout << "TV is off" << endl;
+    c__ __  "TV is off" __  e..
 }
 
 HouseFacade::HouseFacade() {}

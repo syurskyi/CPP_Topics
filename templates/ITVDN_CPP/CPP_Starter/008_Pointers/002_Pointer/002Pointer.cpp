@@ -1,17 +1,17 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
-	int age = 25;
+	in. age = 25;
 
-	int *p_age = &age;
+	in. *p_age = &age;
 
-	cout << "p_age is at: 0x" << p_age << endl;
+	c__ __  "p_age is at: 0x" __  p_age __  e..
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 

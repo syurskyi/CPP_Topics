@@ -1,22 +1,22 @@
-#include "cat.h"
-#include <iostream>
+? "cat.h"
+? |i..
 
 Cat::Cat()
 {
-    std::cout << __PRETTY_FUNCTION__ << "\n";
+    std::c__ __  __PRETTY_FUNCTION__ __  "\n";
 }
 
-Cat::Cat(uint paws)
+Cat::Cat(uin. paws)
 {
     paws = paws;
 }
 
 Cat::~Cat()
 {
-    std::cout << __PRETTY_FUNCTION__ << "\n";
+    std::c__ __  __PRETTY_FUNCTION__ __  "\n";
 }
 
 void Cat::say()
 {
-    std::cout << "meow\n";
+    std::c__ __  "meow\n";
 }

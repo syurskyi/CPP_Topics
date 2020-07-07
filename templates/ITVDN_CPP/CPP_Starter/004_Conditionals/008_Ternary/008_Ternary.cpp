@@ -1,25 +1,25 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
     setlocale(LC_ALL, "en_US.UTF-8");
 
-    int     quantity    = 8;   // количесво единиц товара
-    int     price       = 75;   // цена за единицу товара
+    in.     quantity    = 8;   // количесво единиц товара
+    in.     price       = 75;   // цена за единицу товара
     double  discount    = 0.75; // скидка на общую стоимость 25%
-    int     cost;               // общая стоимость товара
+    in.     cost;               // общая стоимость товара
 
     //ЕСЛИ: количество тавара 10, или больше. ТО: получить скидку 25%. ИНАЧЕ: скидку не давать.
 
     cost = (quantity >= 10) ? quantity * price * discount : quantity * price;
 
-    cout << "Total cost of goods: " << cost << endl;
+    c__ __  "Total cost of goods: " __  cost __  e..
 
 
-    cin.get();
-    return 0;
+    c__.g..
+    r_ 0;
 }
 

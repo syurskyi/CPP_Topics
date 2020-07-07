@@ -261,11 +261,11 @@
 //   Int32FromGTestEnv()  - parses an Int32 environment variable.
 //   StringFromGTestEnv() - parses a string environment variable.
 
-#include <ctype.h>   // for isspace, etc
-#include <stddef.h>  // for ptrdiff_t
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
+? <ctype.h>   // for isspace, etc
+? <stddef.h>  // for ptrdiff_t
+? <stdlib.h>
+? <stdio.h>
+? <string.h>
 #ifndef _WIN32_WCE
 # include <sys/types.h>
 # include <sys/stat.h>
@@ -278,15 +278,15 @@
 
 // Brings in the definition of HAS_GLOBAL_STRING.  This must be done
 // BEFORE we test HAS_GLOBAL_STRING.
-#include <string>  // NOLINT
-#include <algorithm>  // NOLINT
-#include <iostream>  // NOLINT
-#include <sstream>  // NOLINT
-#include <utility>
-#include <vector>  // NOLINT
+? <string>  // NOLINT
+? <algorithm>  // NOLINT
+? |i..  // NOLINT
+? <sstream>  // NOLINT
+? <utility>
+? <vector>  // NOLINT
 
-#include "gtest/internal/gtest-port-arch.h"
-#include "gtest/internal/custom/gtest-port.h"
+? "gtest/internal/gtest-port-arch.h"
+? "gtest/internal/custom/gtest-port.h"
 
 #if !defined(GTEST_DEV_EMAIL_)
 # define GTEST_DEV_EMAIL_ "googletestframework@@googlegroups.com"
@@ -748,7 +748,7 @@ typedef struct _RTL_CRITICAL_SECTION GTEST_CRITICAL_SECTION;
 // <tr1/functional> from being included.
 #   define _TR1_FUNCTIONAL 1
 #   include <tr1/tuple>
-#   undef _TR1_FUNCTIONAL  // Allows the user to #include
+#   undef _TR1_FUNCTIONAL  // Allows the user to ?
                         // <tr1/functional> if they choose to.
 #  else
 #   include <tr1/tuple>  // NOLINT

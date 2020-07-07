@@ -1,19 +1,19 @@
 // empty base optimization
-#include <iostream>
+? |i..
 
 struct deleter {
 //    double x;
     void operator()() {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     }
 };
 
 struct ptr {
-    int *x;
+    in. *x;
 };
 
 struct ptra {
-    int *x;
+    in. *x;
     deleter y;
 
     void deleter() {
@@ -22,14 +22,14 @@ struct ptra {
 };
 
 struct ptrd : deleter {
-    int *x;
+    in. *x;
 
     void deleter() {
         (*this)();
     }
 };
 
-int main() {
+in. main() {
 //    std::cout << sizeof(deleter) << std::endl;
 
 //    ptr p;

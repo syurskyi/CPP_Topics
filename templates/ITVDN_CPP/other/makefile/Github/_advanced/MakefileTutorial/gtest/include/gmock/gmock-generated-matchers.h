@@ -38,11 +38,11 @@
 #ifndef GMOCK_INCLUDE_GMOCK_GMOCK_GENERATED_MATCHERS_H_
 #define GMOCK_INCLUDE_GMOCK_GMOCK_GENERATED_MATCHERS_H_
 
-#include <iterator>
-#include <sstream>
-#include <string>
-#include <vector>
-#include "gmock/gmock-matchers.h"
+? <iterator>
+? <sstream>
+? <string>
+? <vector>
+? "gmock/gmock-matchers.h"
 
 namespace testing {
 namespace internal {

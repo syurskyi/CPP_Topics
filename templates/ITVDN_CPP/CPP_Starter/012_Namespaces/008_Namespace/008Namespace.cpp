@@ -1,5 +1,5 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
 namespace NamespaceA {
 	namespace NamespaceB {
@@ -18,13 +18,13 @@ namespace NamespaceA {
 	};
 }
 
-int main()
+in. main()
 {
 	using A = NamespaceA::MyStructA;
 	using B = NamespaceA::NamespaceB::MyStructB;
 	using C = NamespaceA::NamespaceB::NamespaceC::MyStructC;
 
-	return 0;
+	r_ 0;
 }
 
 

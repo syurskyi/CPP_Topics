@@ -1,6 +1,6 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 //Variables
 //INITIALIZATION
 //address
@@ -9,22 +9,22 @@ using namespace std;
 
 main()
 {
-    int A = 4;
+    in. A = 4;
     //A = 4;
     //& (ampersand)
     //&name_of_variable;
-    int prime_nr;
-    int primeNr;
-    int iPrimeNr;
+    in. prime_nr;
+    in. primeNr;
+    in. iPrimeNr;
 
 
-    cout << A << endl;
-    cout << &A << endl;
+    c__ __  A __  e..
+    c__ __  &A __  e..
 
     A = 10;
 
-    cout << A << endl;
-    cout << &A;
+    c__ __  A __  e..
+    c__ __  &A;
     /*
         1. Variables can't have the same name.
         2. Variables can't start from the number

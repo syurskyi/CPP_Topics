@@ -1,22 +1,22 @@
-#include "stdafx.h"
-#include <iostream>
+? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-void TestFunc(int a = 5, int b = 10);
+void TestFunc(in. a = 5, in. b = 10);
 
-int main()
+in. main()
 {
-	int operator1 = 2, operator2 = 3;
+	in. operator1 = 2, operator2 = 3;
 
 	TestFunc(operator1, operator2);
 	TestFunc(operator1);
 	TestFunc();
 
-    return 0;
+    r_ 0;
 }
 
-void TestFunc(int a, int b)
+void TestFunc(in. a, in. b)
 {
-	cout << "a = " << a << "; b = " << b << endl;
+	c__ __  "a = " __  a __  "; b = " __  b __  e..
 }

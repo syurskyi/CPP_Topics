@@ -3,14 +3,14 @@
 *                                              *
 * The most basic hello world sample code in C. *
 ***********************************************/
-#include <iostream>
-#include "mylib.hpp"
+? |i..
+? "mylib.hpp"
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
-    cout << "Hello in main.. " << endl;
+    c__ __  "Hello in main.. " __  e..
     foo();
-    return 0;
+    r_ 0;
 }

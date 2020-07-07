@@ -1,5 +1,5 @@
-#include "headerB.hpp"
+? "headerB.hpp"
 
 void classB::run(){
-cout << "[class B] run" << endl;
+c__ __  "[class B] run" __  e..
 }

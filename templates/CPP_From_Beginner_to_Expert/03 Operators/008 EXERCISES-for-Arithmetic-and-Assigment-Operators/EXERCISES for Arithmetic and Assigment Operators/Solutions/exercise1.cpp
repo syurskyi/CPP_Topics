@@ -1,17 +1,17 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
 main()
 {
     double lengthInches, lengthCentimeters;
 
-    cout << "Length in inches: ";
-    cin >> lengthInches;
+    c__ __  "Length in inches: ";
+    c__ >> lengthInches;
 
     lengthCentimeters = lengthInches * 2.54;
 
-    cout << lengthInches << " inches is equal to " << lengthCentimeters << " centimeters.";
+    c__ __  lengthInches __  " inches is equal to " __  lengthCentimeters __  " centimeters.";
 
 }
 

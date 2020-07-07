@@ -1,11 +1,11 @@
-#include "Point.h"
-#include "Rectangle.h"
+? "Point.h"
+? "Rectangle.h"
 
-#include <iostream>
+? |i..
 
-int main()
+in. main()
 {
-	Point p1;
-	Point p2;
+	Poin. p1;
+	Poin. p2;
 	Rectangle r1(p1, p2);
 }

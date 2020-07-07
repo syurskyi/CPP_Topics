@@ -1,34 +1,34 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
 main ()
 {
-    int productChoice;
+    in. productChoice;
 
-    cout << "1.Coca-Cola" << endl;
-    cout << "2.Water" << endl;
-    cout << "3.Chocolate Bar" << endl;
-    cout << "4.Snickers Bar" << endl;
-    cout << "5.Mars Bar" << endl;
-    cout << "6.Bud Light" << endl << endl;
-    cout << "Enter your choice: ";
+    c__ __  "1.Coca-Cola" __  e..
+    c__ __  "2.Water" __  e..
+    c__ __  "3.Chocolate Bar" __  e..
+    c__ __  "4.Snickers Bar" __  e..
+    c__ __  "5.Mars Bar" __  e..
+    c__ __  "6.Bud Light" __  endl __  e..
+    c__ __  "Enter your choice: ";
 
-    cin >> productChoice;
+    c__ >> productChoice;
 
     if (productChoice == 1)
-        cout << "You have chosen a Coca-Cola" << endl;
+        c__ __  "You have chosen a Coca-Cola" __  e..
     else if (productChoice == 2)
-        cout << "You have chosen a Water" << endl;
+        c__ __  "You have chosen a Water" __  e..
     else if (productChoice == 3)
-        cout << "You have chosen a Chocolate Bar" << endl;
+        c__ __  "You have chosen a Chocolate Bar" __  e..
     else if (productChoice == 4)
-        cout << "You have chosen a Snickers Bar" << endl;
+        c__ __  "You have chosen a Snickers Bar" __  e..
     else if (productChoice == 5)
-        cout << "You have chosen a Mars Bar" << endl;
+        c__ __  "You have chosen a Mars Bar" __  e..
     else if (productChoice == 6)
-        cout << "You have chosen a Bud Light" << endl;
+        c__ __  "You have chosen a Bud Light" __  e..
     else
-        cout << "Error. Invalid choice" << endl;
+        c__ __  "Error. Invalid choice" __  e..
 
 }

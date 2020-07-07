@@ -1,6 +1,6 @@
-#include "user.h"
+? "user.h"
 
-int User::counter = 0;
+in. User::counter = 0;
 
 User::User()
 {

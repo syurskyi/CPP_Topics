@@ -1,19 +1,19 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
-	int width = 10, height = 5;
+	in. width = 10, height = 5;
 
 	// Динамическая инициализация переменной
-	int perimetr = width * height;
+	in. perimetr = width * height;
 
-    cout << perimetr << endl;
+    c__ __  perimetr __  e..
 
 	// Задержка 
-	cin.get();
-    return 0;
+	c__.g..
+    r_ 0;
 }
 

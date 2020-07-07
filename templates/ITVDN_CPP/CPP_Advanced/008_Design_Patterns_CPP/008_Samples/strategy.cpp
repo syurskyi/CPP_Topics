@@ -1,29 +1,29 @@
-#include "strategy.h"
-#include <iostream>
+? "strategy.h"
+? |i..
 
-using namespace std;
+u.. s..
 
 void ConcreteStrategyA::execute() const
 {
-    cout << "Called ConcreteStrategyA execute method" << endl;
+    c__ __  "Called ConcreteStrategyA execute method" __  e..
 }
 
 void ConcreteStrategyB::execute() const
 {
-    cout << "Called ConcreteStrategyB execute method" << endl;
+    c__ __  "Called ConcreteStrategyB execute method" __  e..
 }
 
 void ConcreteStrategyC::execute() const
 {
-    cout << "Called ConcreteStrategyC execute method" << endl;
+    c__ __  "Called ConcreteStrategyC execute method" __  e..
 }
 
-Context::Context( StrategyInterface* strategy )
+Context::Context( Strategyin.erface* strategy )
     : strategy_( strategy )
 {
 }
 
-void Context::set_strategy( StrategyInterface* strategy )
+void Context::set_strategy( Strategyin.erface* strategy )
 {
     strategy_ = strategy;
 }

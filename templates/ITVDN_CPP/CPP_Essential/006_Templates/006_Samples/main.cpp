@@ -1,27 +1,27 @@
-#include <iostream>
-#include <string>
+? |i..
+? <string>
 
-using namespace std;
+u.. s..
 
 template <typename T>
 T sum(T a, T b)
 {
-    return a + b;
+    r_ a + b;
 }
 
 template <typename T1, typename T2 = double>
 auto sum(T1 a, T2 b) -> decltype(a + b)
 {
-    return a + b;
+    r_ a + b;
 }
 
-template <typename T = int>
+template <typename T = in.>
 class A
 {
 public:
     void process()
     {
-        cout << a * 100 << endl;
+        c__ __  a * 100 __  e..
     }
 
     T a;
@@ -33,7 +33,7 @@ class A<string>
 public:
     void process()
     {
-        cout << a + a << endl;
+        c__ __  a + a __  e..
     }
 
     string a = "aba";
@@ -53,7 +53,7 @@ template <typename T>
 template <typename V>
 void A<T*>::process()
 {
-    cout << static_cast<V>(*a) << endl;
+    c__ __  static_cast<V>(*a) __  e..
 }
 
 
@@ -64,11 +64,11 @@ public:
     U b;
 };
 
-int main()
+in. main()
 {
-    cout << sum(4, 5) << endl;
-    cout << sum(4.5, 6) << endl;
-    cout << sum(4, "abcde") << endl;
+    c__ __  sum(4, 5) __  e..
+    c__ __  sum(4.5, 6) __  e..
+    c__ __  sum(4, "abcde") __  e..
 
     A<> object;
     object.a = 2.5;
@@ -86,5 +86,5 @@ int main()
     ptr.a = &member;
     ptr.process<double>();
 
-    return 0;
+    r_ 0;
 }

@@ -1,7 +1,7 @@
-#include "stdafx.h"
-#include <iostream>
+? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
 // При выполнениии арифметических операций компилятор руководствуется следующими правилами:
 // 1. Если тип целочисленный, то выполняется операция над целочисленными числами
@@ -13,30 +13,30 @@ using namespace std;
 // 7. Если один из операндов имеет тип double, то другой операнд преобразуется в double.
 // 8. Если один из операндов имеет тип long double, то другой операнд преобразуется в long double.
 
-int main()
+in. main()
 {
-    int operand1 = 3, operand2 = 2; // Множественное обьявление
-    int result;
+    in. operand1 = 3, operand2 = 2; // Множественное обьявление
+    in. result;
 
     // Сложение (+)
     result = operand1 + operand2;
-    cout << result << endl;
+    c__ __  result __  e..
 
     // Вычитание (-)
     result = operand1 - operand2;
-    cout << result << endl;
+    c__ __  result __  e..
 
     // Умножение (*)
     result = operand1 * operand2;
-    cout << result << endl;
+    c__ __  result __  e..
 
     // Деление (/)
     result = operand1 / operand2;
-    cout << result << endl;
+    c__ __  result __  e..
 
     // Получение остатка от деления
     result = operand1 % operand2;
-    cout << result << endl;
+    c__ __  result __  e..
 
     // Оператор % находит остаток от деления первого операнда на второй.
     // Оба операнда должны быть целочисленными, использование операции % над числами с плавающей точкой приведет к ошибке времени компиляции.
@@ -44,9 +44,9 @@ int main()
     // double err = 3.5 % 1.2;		// Ошибка
 
     result = 3 * 2 * 2;
-    cout << result << endl;
+    c__ __  result __  e..
 
     // Задержка
-    cin.get();
-    return 0;
+    c__.g..
+    r_ 0;
 }

@@ -1,59 +1,59 @@
-#include "stdafx.h"
-#include <iostream>
+? *s..
+? |i..
 
 #define SIZE 10
 
-void push(int i);
-int pop(void);
+void push(in. i);
+in. pop(void);
 
-int *top_s, *p1, stack[SIZE];
+in. *top_s, *p1, stack[SIZE];
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
-	int value;
+	in. value;
 
 	top_s = stack;
 	p1 = stack;
 
 	do {
-		cout << "Enter the number: " << endl;
-		cin >> value;
+		c__ __  "Enter the number: " __  e..
+		c__ >> value;
 
 		if (value != 0) {
 			push(value);
 		}
 		else
 		{
-			cout << "The number on stack top equal " << pop() << endl;
+			c__ __  "The number on stack top equal " __  pop() __  e..
 		}
 
 	} while (value != -1);
 
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 
-void push(int i) 
+void push(in. i)
 {
 	p1++;
 	if (p1 == (top_s + SIZE)) {
-		cout << "The stack is overflow" << endl;;
+		c__ __  "The stack is overflow" __  e..;
 		exit(1);
 	}
 	*p1 = i;
 }
 
-int pop(void)
+in. pop(void)
 {
 	if (p1 == top_s)
 	{
-		cout << "Stack is empty!" << endl;
+		c__ __  "Stack is empty!" __  e..
 		exit(1);
 	}
 	p1--;
-	return *(p1 + 1);
+	r_ *(p1 + 1);
 }
 

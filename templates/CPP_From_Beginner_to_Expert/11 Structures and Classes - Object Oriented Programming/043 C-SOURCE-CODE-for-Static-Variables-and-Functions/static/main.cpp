@@ -1,14 +1,14 @@
-#include <iostream>
-#include "user.h"
+? |i..
+? "user.h"
 
-using namespace std;
+u.. s..
 /*static properties and static methods */
 
-int main()
+in. main()
 {
 
 
-    cout << User::getCounter() << endl;
+    c__ __  User::getCounter() __  e..
 
-    return 0;
+    r_ 0;
 }

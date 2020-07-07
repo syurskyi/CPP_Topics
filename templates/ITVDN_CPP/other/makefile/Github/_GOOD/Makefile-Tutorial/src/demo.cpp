@@ -1,13 +1,13 @@
-#include "demo.hpp"
+? "demo.hpp"
 
-using std::cout;
-using std::endl;
+using std::c__;
+using std::e..
 using std::vector;
 
-int main(int argc, char *argv[])
+in. main(in. argc, char *argv[])
 {
-  cout << "Hello, time to test some sorts!" << endl;
-  vector<int> demoSort = generateRandomList(100);
+  c__ __  "Hello, time to test some sorts!" __  e..
+  vector<in.> demoSort = generateRandomList(100);
   bubbleSort(demoSort.begin(), demoSort.end());
 
   demoSort = generateRandomList(100);
@@ -19,6 +19,6 @@ int main(int argc, char *argv[])
   demoSort = generateRandomList(100);
   quickSort(demoSort.begin(), demoSort.end());
 
-  cout << "We're done!" << endl;
-  return 0;
+  c__ __  "We're done!" __  e..
+  r_ 0;
 }

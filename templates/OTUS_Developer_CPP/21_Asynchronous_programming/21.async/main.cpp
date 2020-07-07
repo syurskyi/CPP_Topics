@@ -1,12 +1,12 @@
-#include "handler.h"
-#include "loop.h"
+? "handler.h"
+? "loop.h"
 
-#include <iostream>
+? |i..
 
 
 class App : public Handler {
     void start() {
-        std::cout << "create file" << std::endl;
+        std::c__ __  "create file" __  std::e..
     }
 
     void event(Event &ev) override {
@@ -22,7 +22,7 @@ class App : public Handler {
 };
 
 
-int main(int, char *[]) {
+in. main(in., char *[]) {
     EventLoop loop;
 
     App app;
@@ -31,5 +31,5 @@ int main(int, char *[]) {
     loop.send(EventCode::start);
     loop.send(EventCode::quit);
 
-    return loop.exec();
+    r_ loop.exec();
 }

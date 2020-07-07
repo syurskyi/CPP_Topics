@@ -1,9 +1,9 @@
-#include <iostream>
-#include <string>
+? |i..
+? <string>
 
-using namespace std;
+u.. s..
 
-typedef unsigned int uint;
+typedef unsigned in. uin.;
 enum class Color : long long;
 
 void foo(Color a);
@@ -24,13 +24,13 @@ struct Door
 
 struct Car
 {
-    int wheels : 16;//4
-    int length : 16;//4
-    int width : 16;//4
-    uint seats : 16;//4
-    int for_bool : 31;
-    bool a : 1;
-    int q;
+    in. wheels : 16;//4
+    in. length : 16;//4
+    in. width : 16;//4
+    uin. seats : 16;//4
+    in. for_bo.. : 31;
+    bo.. a : 1;
+    in. q;
     string name;//24
     Door door;//40
 //    struct SteeringWheel
@@ -39,9 +39,9 @@ struct Car
 //    };
 } other_car;
 
-int main()
+in. main()
 {
-    int array[10];
+    in. array[10];
 
     double d;
 
@@ -52,12 +52,12 @@ int main()
     my_car.name = "The best car";
     my_car.length = 100;
 
-    cout << sizeof(Glass) << "\n";
-    cout << sizeof(Door) << "\n";
-    cout << sizeof(Car) << "\n";
+    c__ __  sizeof(Glass) __  "\n";
+    c__ __  sizeof(Door) __  "\n";
+    c__ __  sizeof(Car) __  "\n";
     //cout << sizeof(Car::SteeringWheel) << "\n";
 
-    cout << my_car.name << " ,length = " << my_car.length << ", width = " << my_car.width << " wheels = " << my_car.wheels;
+    c__ __  my_car.name __  " ,length = " __  my_car.length __  ", width = " __  my_car.width __  " wheels = " __  my_car.wheels;
 
-    return 0;
+    r_ 0;
 }

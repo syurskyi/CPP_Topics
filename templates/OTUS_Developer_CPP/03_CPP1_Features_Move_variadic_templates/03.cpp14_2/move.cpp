@@ -1,32 +1,32 @@
 // #define MOVE
-#include "xray.h"
+? "xray.h"
 
-#include <iostream>
+? |i..
 
 void foo(const xray &)
 {
-    std::cout << "= const ref" << std::endl;
+    std::c__ __  "= const ref" __  std::e..
 }
 
 void foo(xray &&)
 {
-    std::cout << "= temporary" << std::endl;
+    std::c__ __  "= temporary" __  std::e..
 }
 
 template<class T>
 void baz(T &&t)
 {
-    std::cout << __PRETTY_FUNCTION__ << std::endl;
+    std::c__ __  __PRETTY_FUNCTION__ __  std::e..
 }
 
 template<class T>
 void bar(T &&t)
 {
-    std::cout << __PRETTY_FUNCTION__ << std::endl;
+    std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     baz(std::forward<T>(t));
 }
 
-int main(int, char *[]) {
+in. main(in., char *[]) {
     xray x("x");
 
     // xray x("x");
@@ -61,7 +61,7 @@ int main(int, char *[]) {
     // bar(x);
     // bar(xray("tmp"));
 
-    std::cout << "---" << std::endl;
+    std::c__ __  "---" __  std::e..
 
-    return 0;
+    r_ 0;
 }

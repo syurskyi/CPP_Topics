@@ -1,7 +1,7 @@
 // Внедрение зависимости (Dependency Injection)
 
-#include <array>
-#include <iostream>
+? <array>
+? |i..
 
 struct IStorage {
     virtual ~IStorage() = default;
@@ -16,28 +16,28 @@ public:
     explicit Report(IStorage* storage_)
             :storage(storage_) { }
 
-    void print()
+    void prin.()
     {
         storage->execute_query();
-        std::cout << "done" << std::endl;
+        std::c__ __  "done" __  std::e..
     }
 };
 
 class TestStorage : public IStorage {
     void execute_query() override
     {
-        std::cout << "... fetching data" << std::endl;
+        std::c__ __  "... fetching data" __  std::e..
     }
 };
 
-int main(int, char* [])
+in. main(in., char* [])
 {
     IStorage* s = new TestStorage;
 
     Report report(s);
-    report.print();
+    report.prin.();
 
     delete s;
 
-    return 0;
+    r_ 0;
 }

@@ -1,9 +1,9 @@
-#include <iostream>
-#include <string>
-#include "cat.h"
-#include <typeinfo>
+? |i..
+? <string>
+? "cat.h"
+? <typeinfo>
 
-using namespace std;
+u.. s..
 
 class A
 {};
@@ -11,7 +11,7 @@ class A
 class B : public A
 {};
 
-int main()
+in. main()
 {
     Animal* animal = new Cat();
 
@@ -22,15 +22,15 @@ int main()
 
     if(dynamic_cast<void*>(animal) == dynamic_cast<void*>(ptr_ped))
     {
-        cout << "yes";
+        c__ __  "yes";
     }
 
     auto ped = dynamic_cast<Pedigreed*>(animal);
     auto cat = dynamic_cast<Cat*>(ped);
     if ( auto dom = dynamic_cast<Domestic*>(cat) )
     {
-        cout << "Domestic";
-        cout << dom->get_name();
+        c__ __  "Domestic";
+        c__ __  dom->get_name();
     }
-    return 0;
+    r_ 0;
 }

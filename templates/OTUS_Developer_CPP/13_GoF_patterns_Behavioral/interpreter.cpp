@@ -3,7 +3,7 @@
 // config
 // serialize
 
-#include <iostream>
+? |i..
 
 std::string seq;
 
@@ -12,7 +12,7 @@ void state_text(char);
 auto active_handler = &state_text;
 
 void state_exec(char c) {
-    std::cout << "обработана последовательность " << seq << std::endl;
+    std::c__ __  "обработана последовательность " __  seq __  std::e..
     active_handler = &state_text;
     active_handler(c);
 }
@@ -26,7 +26,7 @@ void state_seq(char c) {
 }
 
 void state_esc(char) {
-    std::cout << "обнаружен ESC" << std::endl;
+    std::c__ __  "обнаружен ESC" __  std::e..
     seq.clear();
     active_handler = &state_seq;
 }
@@ -36,17 +36,17 @@ void state_text(char c) {
         active_handler = &state_esc;
         active_handler(c);
     } else {
-        std::cout << c << std::endl;
+        std::c__ __  c __  std::e..
     }
 }
 
-int main(int, char *[]) {
+in. main(in., char *[]) {
     std::string hw = "\x1b[41mHello,\x1b[40;3;31m World\x1b[m!";
-    std::cout << hw << std::endl;
+    std::c__ __  hw __  std::e..
 
     for (auto c: hw) {
         active_handler(c);
     }
 
-    return 0;
+    r_ 0;
 }

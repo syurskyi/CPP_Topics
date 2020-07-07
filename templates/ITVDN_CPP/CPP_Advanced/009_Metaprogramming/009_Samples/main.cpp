@@ -1,29 +1,29 @@
-#include <iostream>
+? |i..
 
 // C++98
-template < int N >
+template < in. N >
 struct Factorial
 {
-    static const int result = N * Factorial< N - 1 >::result;
+    static const in. result = N * Factorial< N - 1 >::result;
 };
 
 template <>
 struct Factorial< 0 >
 {
-    static const int result = 1;
+    static const in. result = 1;
 };
 
 // C++11
 constexpr unsigned fact( unsigned N )
 {
-    return ( N == 0 ) ? 1 : N * fact( N - 1 );
+    r_ ( N == 0 ) ? 1 : N * fact( N - 1 );
 }
 
 // C++11
 // value-based metaprogramming
 constexpr unsigned fib( unsigned N )
 {
-    return ( N < 2 ) ? 1 : fib( N - 2 ) + fib( N - 1 );
+    r_ ( N < 2 ) ? 1 : fib( N - 2 ) + fib( N - 1 );
 }
 
 // C++11 but with templates specialization
@@ -48,7 +48,7 @@ struct cons
 {
     typedef T Tail;
     typedef H Head;
-    typedef cons< int, cons< std::string, cons< double, cons< float > > > > TypeList;
+    typedef cons< in., cons< std::string, cons< double, cons< float > > > > TypeList;
 };
 
 // template < class... Args >
@@ -63,24 +63,24 @@ struct cons
 // typedef List< int, std::string, double, float > TypeList;
 
 template < class TL >
-void print()
+void prin.()
 {
-    std::cout << typeid( typename TL::Head ).name() << std::endl;
-    print< typename TL::Tail >();
+    std::c__ __  typeid( typename TL::Head ).name() __  std::e..
+    prin.< typename TL::Tail >();
 }
 
 template <>
-void print< nil >()
+void prin.< nil >()
 {
 }
 
-int main()
+in. main()
 {
-    std::cout << Factorial< 5 >::result << std::endl;
-    std::cout << fact( 10 ) << std::endl;
+    std::c__ __  Factorial< 5 >::result __  std::e..
+    std::c__ __  fact( 10 ) __  std::e..
 
-    std::cout << fib( 10 ) << std::endl;
-    std::cout << fib2< 10 > << std::endl;
+    std::c__ __  fib( 10 ) __  std::e..
+    std::c__ __  fib2< 10 > __  std::e..
 
-    return 0;
+    r_ 0;
 }

@@ -1,23 +1,23 @@
-#include "stdafx.h"
-#include <iostream>
+? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
-	int age = 25;
-	int *pAge = &age;
+	in. age = 25;
+	in. *pAge = &age;
 
-	cout << "Age equals " << age << endl;
-	cout << "Address of variable age: 0x" << pAge << endl;
+	c__ __  "Age equals " __  age __  e..
+	c__ __  "Address of variable age: 0x" __  pAge __  e..
 
-	cout << "Enter an age: ";
-	cin >> *pAge;
+	c__ __  "Enter an age: ";
+	c__ >> *pAge;
 
-	cout << "New age equals " << age << endl;
-	cout << "New value has 0x" << pAge << " address" << endl;
+	c__ __  "New age equals " __  age __  e..
+	c__ __  "New value has 0x" __  pAge __  " address" __  e..
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 

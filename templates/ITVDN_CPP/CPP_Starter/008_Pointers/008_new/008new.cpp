@@ -1,19 +1,19 @@
-#include "stdafx.h"
-#include <iostream>
+? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
-	int *pAge = new int[10];
+	in. *pAge = new in.[10];
 
 	pAge[0] = 10;
 	pAge[1] = 20;
 
-	cout << "First element - " << pAge[0] << ", second element - " << pAge[1] << endl;
+	c__ __  "First element - " __  pAge[0] __  ", second element - " __  pAge[1] __  e..
 
 	delete pAge;
 
 	system("pause");
-	return 0;
+	r_ 0;
 }

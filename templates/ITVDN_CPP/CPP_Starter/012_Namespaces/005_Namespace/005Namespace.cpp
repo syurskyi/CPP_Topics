@@ -1,28 +1,28 @@
-#include "stdafx.h"
-#include <iostream>
+? *s..
+? |i..
 
 namespace NamespaceA {
 	namespace NamespaceB {
 		namespace NamespaceC {
-			int add(int a, int b) {
-				return a + b;
+			in. add(in. a, in. b) {
+				r_ a + b;
 			}
 		}
 	}
 }
 
-int main()
+in. main()
 {
-	using namespace NamespaceA::NamespaceB::NamespaceC;
+	u.. NamespaceA::NamespaceB::NamespaceC;
 
-	int x = 6;
-	int y = 19;
+	in. x = 6;
+	in. y = 19;
 
-	int sum = add(x, y);
+	in. sum = add(x, y);
 
-	std::cout << sum << std::endl;
+	std::c__ __  sum __  std::e..
 
-	return 0;
+	r_ 0;
 }
 
 

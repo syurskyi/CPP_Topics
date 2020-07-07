@@ -1,8 +1,8 @@
 #ifndef POINT_H_INCLUDED
 #define POINT_H_INCLUDED
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
 template<typename T>
 class Point //base, parent, superclass

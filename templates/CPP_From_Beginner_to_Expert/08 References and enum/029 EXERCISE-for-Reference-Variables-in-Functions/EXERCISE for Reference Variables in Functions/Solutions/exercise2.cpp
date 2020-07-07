@@ -1,41 +1,41 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
-void checkIfTheSame(int&, int&);
+void checkIfTheSame(in.&, in.&);
 
-int main ()
+in. main ()
 {
 
-    int a = 4;
-    int b = 3;
-    int c = a;
-    int &d = a;
+    in. a = 4;
+    in. b = 3;
+    in. c = a;
+    in. &d = a;
 
     checkIfTheSame(a, b);
     checkIfTheSame(a, c);
     checkIfTheSame(a, d);
 
-    return 0;
+    r_ 0;
 }
 
-void checkIfTheSame(int &firstVariable, int &secondVariable)
+void checkIfTheSame(in. &firstVariable, in. &secondVariable)
 {
     if (firstVariable == secondVariable && &firstVariable == &secondVariable)
     {
-        cout << "The variables are completely the same !";
+        c__ __  "The variables are completely the same !";
     }
     else if (firstVariable == secondVariable && &firstVariable != &secondVariable)
     {   
-		cout << firstVariable << " " << &firstVariable << endl;    
-        cout << secondVariable << " " << &secondVariable << endl;
-        cout << "The variables have got same values but they are different variables !" << endl;
+		c__ __  firstVariable __  " " __  &firstVariable __  e..
+        c__ __  secondVariable __  " " __  &secondVariable __  e..
+        c__ __  "The variables have got same values but they are different variables !" __  e..
     }
     else
     {
-        cout << firstVariable << " " << &firstVariable << endl;
-        cout << secondVariable << " " << &secondVariable << endl;
-        cout << "The variables are different !" << endl;
+        c__ __  firstVariable __  " " __  &firstVariable __  e..
+        c__ __  secondVariable __  " " __  &secondVariable __  e..
+        c__ __  "The variables are different !" __  e..
     }
 }
 

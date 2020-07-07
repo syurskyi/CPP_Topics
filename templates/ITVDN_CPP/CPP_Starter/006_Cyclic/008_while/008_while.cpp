@@ -1,25 +1,25 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
-	int count = 5;
+	in. count = 5;
 
 
 	while (count > 0)
 	{
-		cout << "Count = " << count << endl;
+		c__ __  "Count = " __  count __  e..
 		count--;
 
 		break;	// Эта  инстукция остановит работу цикла, и предаст управление инструкцие находящейся после операторных скобок цикла
 	
-		cout << "This line is never executed";
+		c__ __  "This line is never executed";
 	}
 
-	cout << "This line is always executed";
+	c__ __  "This line is always executed";
 
-	cin.get();
-	return 0;
+	c__.g..
+	r_ 0;
 }

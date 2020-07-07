@@ -1,12 +1,12 @@
-#include <iostream>
+? |i..
 
 struct closure {
 //    int x;
 //    int y;
 //    closure(int x_, int y_) : x(x_), y(y_) {};
-    auto foo(int a, int b) const
+    auto foo(in. a, in. b) const
     {
-        return /*x + y++*/ + a + b;
+        r_ /*x + y++*/ + a + b;
     }
 };
 
@@ -28,14 +28,14 @@ struct closure {
 //};
 
 
-int main(int, char *[])
+in. main(in., char *[])
 {
-    int x = 1000;
+    in. x = 1000;
 //    std::cout << closure(100.1, x)(10.5, 1) << std::endl;
     closure l;
-    std::cout << l.foo(10, 1) << std::endl;
+    std::c__ __  l.foo(10, 1) __  std::e..
 
-    std::cout << [y=100.1, x/*=*/](int a, int b) /*mutable*/ -> int { return x + y + a + b; }(10, 1) << std::endl;
+    std::c__ __  [y=100.1, x/*=*/](in. a, in. b) /*mutable*/ -> in. { r_ x + y + a + b; }(10, 1) __  std::e..
 
 //    auto f = [y=100, x](int a, int b) mutable { return x + y++ + a + b; };
 //    std::cout << f(10, 1) << std::endl;
@@ -55,5 +55,5 @@ int main(int, char *[])
 //
 //    std::cout << fl() << std::endl;
 
-    return 0;
+    r_ 0;
 }

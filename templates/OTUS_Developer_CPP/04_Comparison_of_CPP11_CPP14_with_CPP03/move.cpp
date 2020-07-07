@@ -1,64 +1,64 @@
-#include <iostream>
+? |i..
 
 class Big {
     char* buffer;
 public:
     Big() : buffer(new char[1000]) {
-        std::cout << __PRETTY_FUNCTION__ << " // allocate 1G" << std::endl;
+        std::c__ __  __PRETTY_FUNCTION__ __  " // allocate 1G" __  std::e..
     }
     Big(const Big &other) : buffer(new char[1000]) {
-        std::cout << __PRETTY_FUNCTION__ << " // duplicate 1G" << std::endl;
+        std::c__ __  __PRETTY_FUNCTION__ __  " // duplicate 1G" __  std::e..
         std::memcpy(buffer, other.buffer, 1000);
     }
     Big(Big &&other) : buffer(other.buffer) {
-        std::cout << __PRETTY_FUNCTION__ << " // steal 1G" << std::endl;
+        std::c__ __  __PRETTY_FUNCTION__ __  " // steal 1G" __  std::e..
     }
     ~Big() {
-        std::cout << __PRETTY_FUNCTION__ << " // destroy 1G" << std::endl;
+        std::c__ __  __PRETTY_FUNCTION__ __  " // destroy 1G" __  std::e..
         delete[] buffer;
     }
     Big& operator=(const Big &other) {
-        std::cout << __PRETTY_FUNCTION__ << " // duplicate 1G" << std::endl;
+        std::c__ __  __PRETTY_FUNCTION__ __  " // duplicate 1G" __  std::e..
         std::memcpy(buffer, other.buffer, 1000);
-        return *this;
+        r_ *this;
     }
     Big& operator=(Big &&other) {
-        std::cout << __PRETTY_FUNCTION__ << " // steal 1G" << std::endl;
+        std::c__ __  __PRETTY_FUNCTION__ __  " // steal 1G" __  std::e..
         buffer = other.buffer;
-        return *this;
+        r_ *this;
     }
 };
 
 void bar(const Big &) {
-    std::cout << __PRETTY_FUNCTION__ << std::endl;
+    std::c__ __  __PRETTY_FUNCTION__ __  std::e..
 }
 
 void bar(Big &&) {
-    std::cout << __PRETTY_FUNCTION__ << std::endl;
+    std::c__ __  __PRETTY_FUNCTION__ __  std::e..
 }
 
 template<typename T>
 void foo(T &&t) {
-    std::cout << __PRETTY_FUNCTION__ << std::endl;
+    std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     bar(std::forward<T>(t));
 }
 
-int main(int, char *[]) {
+in. main(in., char *[]) {
     Big big, big2;
 
-    std::cout << std::endl;
+    std::c__ __  std::e..
     big = big2;
 
-    std::cout << std::endl;
+    std::c__ __  std::e..
     big = Big();
 
-    std::cout << std::endl;
+    std::c__ __  std::e..
     big = std::move(big2);
 
-    std::cout << "}" << std::endl;
+    std::c__ __  "}" __  std::e..
 
 //    foo(big);
 //    foo(Big());
 
-    return 0;
+    r_ 0;
 }

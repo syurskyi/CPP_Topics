@@ -1,7 +1,7 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
 // Константный указатель на константные данные,т.е. ничто не может быть изменено
 void CalcArea(const double* const pPi, const double* const pRadius, double* const pArea) 
@@ -11,20 +11,20 @@ void CalcArea(const double* const pPi, const double* const pRadius, double* cons
 		*pArea = (*pPi) * (*pRadius) * (*pRadius);
  }
 
-int main()
+in. main()
 {
 	const double pi = 3.1416;
-	cout << "Enter radius of circle: ";
+	c__ __  "Enter radius of circle: ";
 
 	double radius = 0;
-	cin >> radius;
+	c__ >> radius;
 
 	double area = 0;
 
 	CalcArea(&pi, &radius, &area);
 
-	cout << "Area is = " << area << endl;
+	c__ __  "Area is = " __  area __  e..
 
 	system("pause");
-	return 0;
+	r_ 0;
 }

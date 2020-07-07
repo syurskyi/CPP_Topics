@@ -1,15 +1,15 @@
-#include <iostream>
-#include <cstdlib>
+? |i..
+? <cstdlib>
 
-using namespace std;
+u.. s..
 
-void variableType(int);
+void variableType(in.);
 void variableType(double);
 void variableType(string);
 
-int main ()
+in. main ()
 {
-    int var1 = 2;
+    in. var1 = 2;
     double var2 = 0.123;
     string var3 = "What a beautiful day !";
 
@@ -17,18 +17,18 @@ int main ()
     variableType(var2);
     variableType(var3);
 
-    return 0;
+    r_ 0;
 }
 
-void variableType(int var)
+void variableType(in. var)
 {
-    cout << var << " - this variable was an integer !" << endl;
+    c__ __  var __  " - this variable was an integer !" __  e..
 }
 void variableType(double var)
 {
-    cout << var << " - this variable was a double !" << endl;
+    c__ __  var __  " - this variable was a double !" __  e..
 }
 void variableType(string var)
 {
-    cout << var << " - this variable was a string !" << endl;
+    c__ __  var __  " - this variable was a string !" __  e..
 }

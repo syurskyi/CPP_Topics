@@ -1,14 +1,14 @@
-#include "stdafx.h"
-#include <iostream>
+? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int AddNumbers(int a, int b);
+in. AddNumbers(in. a, in. b);
 double AddNumbers(double a, double b);
 
-int main()
+in. main()
 {
-	int  value1 = 2, value2 = 3;
+	in.  value1 = 2, value2 = 3;
 
 	//double value3 = 12.3;
 
@@ -16,19 +16,19 @@ int main()
 
 	//double dsum = AddNumbers(12.2, 15.3);
 
-	cout << "value1 + value2 = " << sum << endl;
+	c__ __  "value1 + value2 = " __  sum __  e..
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 
-int AddNumbers(int a, int b)
+in. AddNumbers(in. a, in. b)
 {
-	cout << "Function(int a, int b) is called!" << endl;
-	return a + b;
+	c__ __  "Function(int a, int b) is called!" __  e..
+	r_ a + b;
 }
 double AddNumbers(double a, double b)
 {
-	cout << "Function(double a, double b) is called!" << endl;
-	return a + b;
+	c__ __  "Function(double a, double b) is called!" __  e..
+	r_ a + b;
 }

@@ -1,28 +1,28 @@
-#include <iostream>
+? |i..
 
 //putback
-using namespace std;
-int main ()
+u.. s..
+in. main ()
 {
-    char c = cin.get();
+    char c = c__.g..
 
-    cin.putback(c);
+    c__.putback(c);
     if (c > '0' && c < '9')
     {
-        int number;
+        in. number;
 
-        cin >> number;
+        c__ >> number;
 
-        cout << "Number is: " << number << endl;
+        c__ __  "Number is: " __  number __  e..
     }
     else
     {
         string txt;
 
-        cin >> txt;
+        c__ >> txt;
 
-        cout << "Text is: " << txt << endl;
+        c__ __  "Text is: " __  txt __  e..
     }
 
-    return 0;
+    r_ 0;
 }

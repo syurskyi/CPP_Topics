@@ -1,12 +1,12 @@
 // queue
-#include <iostream>
-#include <queue>
+? |i..
+? <queue>
 
-int main()
+in. main()
 {
     // первый добавленный и извлекается первым
     // FIFO
-    std::queue<int> q;
+    std::queue<in.> q;
     for(auto i: {6, 7, 4, 8, 3, 8, 8})
     {
         q.push(i);
@@ -14,8 +14,8 @@ int main()
 
     while(!q.empty())
     {
-        std::cout << q.front() << " ";
+        std::c__ __  q.front() __  " ";
         q.pop();
     }
-    std::cout << std::endl;
+    std::c__ __  std::e..
 }

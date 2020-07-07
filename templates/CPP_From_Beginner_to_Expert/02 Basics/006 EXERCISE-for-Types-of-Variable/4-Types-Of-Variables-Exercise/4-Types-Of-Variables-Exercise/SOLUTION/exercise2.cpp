@@ -1,23 +1,23 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
 main() {
 
     char a = 100;
-    int b = 5212;
-    short c = 6123;
+    in. b = 5212;
+    sh.. c = 6123;
     float d = 0.12345;
     double f = 0.1234567890;
 
-    cout << a << endl;
-    cout << &a << endl;
-    cout << b << endl;
-    cout << &b << endl;
-    cout << c << endl;
-    cout << &c << endl;
-    cout << d << endl;
-    cout << &d << endl;
-    cout << f << endl;
-    cout << &f << endl;
+    c__ __  a __  e..
+    c__ __  &a __  e..
+    c__ __  b __  e..
+    c__ __  &b __  e..
+    c__ __  c __  e..
+    c__ __  &c __  e..
+    c__ __  d __  e..
+    c__ __  &d __  e..
+    c__ __  f __  e..
+    c__ __  &f __  e..
 }

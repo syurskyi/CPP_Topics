@@ -1,6 +1,6 @@
 // Заместитель (Proxy)
 
-#include <iostream>
+? |i..
 
 class ILogger
 {
@@ -13,21 +13,21 @@ class Logger : public ILogger
 {
     void info() override
     {
-        std::cout << "info" << std::endl;
+        std::c__ __  "info" __  std::e..
     }
     void error() override
     {
-        std::cout << "error" << std::endl;
+        std::c__ __  "error" __  std::e..
     }
 };
 
 class LevelLogger : public ILogger
 {
-    int level;
+    in. level;
     ILogger *logger;
 
 public:
-    LevelLogger(int level_, ILogger *logger_) : level(level_), logger(logger_) {};
+    LevelLogger(in. level_, ILogger *logger_) : level(level_), logger(logger_) {};
 
     void info() override
     {
@@ -41,7 +41,7 @@ public:
     }
 };
 
-int main(int, char *[])
+in. main(in., char *[])
 {
     ILogger *l = new LevelLogger(0, new Logger);
 

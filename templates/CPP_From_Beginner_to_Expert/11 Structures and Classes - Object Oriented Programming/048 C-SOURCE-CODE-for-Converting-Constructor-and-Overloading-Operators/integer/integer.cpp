@@ -1,17 +1,17 @@
-#include "integer.h"
-#include <iostream>
+? "integer.h"
+? |i..
 
-using namespace std;
-Integer::Integer(int nr)
+u.. s..
+in.eger::in.eger(in. nr)
 {
     this->nr = nr;
 }
-Integer::operator int()
+in.eger::operator in.()
 {
-    return this->nr;
+    r_ this->nr;
 }
-int Integer::operator+=(Integer o)
+in. in.eger::operator+=(in.eger o)
 {
     this->nr = o.getNr() + this->nr;
-    return this->nr;
+    r_ this->nr;
 }

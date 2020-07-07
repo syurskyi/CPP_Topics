@@ -1,20 +1,20 @@
-#include "stdafx.h"
-#include <iostream>
-#include "example.h"
+? *s..
+? |i..
+? "example.h"
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
-	int someValue = GetValue();
+	in. someValue = GetValue();
 
-	cout << someValue << endl;
+	c__ __  someValue __  e..
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 
-int GetValue()
+in. GetValue()
 {
-	return 10;
+	r_ 10;
 }

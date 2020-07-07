@@ -1,21 +1,21 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 // Библиотека обработки строк в стиле СИ
-#include <cstring>
+? <cstring>
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
 	char str1[] = "Hello world!";
 
 	char *p = strchr(str1, 'w');
 
-	cout << *p << endl;
+	c__ __  *p __  e..
 
-	cout << boolalpha << (str1[6] == *p) << endl;
+	c__ __  bo..alpha __  (str1[6] == *p) __  e..
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 

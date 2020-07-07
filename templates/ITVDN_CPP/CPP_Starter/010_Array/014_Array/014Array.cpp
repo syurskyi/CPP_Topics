@@ -1,29 +1,29 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
 	// Создаем массив с именем arr типа int размерностью 3 элемента
-	int arr[3];
+	in. arr[3];
 
 	arr[0] = 10;
 	arr[1] = 20;
 	arr[2] = 30;
 
-	int *pArr = arr;
+	in. *pArr = arr;
 
 	// Первый способ получить значение элементов массива заключается в индексировании указателя
-	cout << "First value = " << pArr[0] << *pArr << endl;
-	cout << "Second value = " << pArr[1] << *(pArr + 1) << endl;
-	cout << "Third value = "  << pArr[2] << *(pArr + 2) << endl;
+	c__ __  "First value = " __  pArr[0] __  *pArr __  e..
+	c__ __  "Second value = " __  pArr[1] __  *(pArr + 1) __  e..
+	c__ __  "Third value = "  __  pArr[2] __  *(pArr + 2) __  e..
 
 	// Обращение к элементам массива с помощью указателей используется довольно широко, 
 	// поскольку операции адресной арифметики выполняются быстрее, чем индексация. 
 	// По этому при работе с массивами отдавайте предпочтения указателям.
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 

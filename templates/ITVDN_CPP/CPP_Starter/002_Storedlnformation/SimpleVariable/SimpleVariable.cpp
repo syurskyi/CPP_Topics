@@ -1,18 +1,18 @@
-#include "stdafx.h"
-#include <iostream>
+? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
-	short a = 256;
+	sh.. a = 256;
 
-	cout << a;
-	cout << endl;
+	c__ __  a;
+	c__ __  e..
 
-	cin.get();
+	c__.g..
 
-	return 0;
+	r_ 0;
 }
 
 

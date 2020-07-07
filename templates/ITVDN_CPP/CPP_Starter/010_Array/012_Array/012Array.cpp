@@ -1,24 +1,24 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
 	// Создаем массив с именем arr типа int размерностью 3 элемента
-	int arr[3];
+	in. arr[3];
 
 	arr[0] = 10;
 	arr[1] = 20;
 	arr[2] = 30;
 
 	// Выводим значение хранящееся в переменной arr
-	cout << "Variable arr contains - " << arr << endl;
+	c__ __  "Variable arr contains - " __  arr __  e..
 
 	// Получаем адресс переменной arr и выводим его в консоль
-	cout << "Address of variable arr - " << &arr << endl;
+	c__ __  "Address of variable arr - " __  &arr __  e..
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 

@@ -1,9 +1,9 @@
-#include <iostream>
-#include "position.h"
+? |i..
+? "position.h"
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
     Position dog(10, 50);
 
@@ -17,5 +17,5 @@ int main()
 //    house.setPosition(444, 444);
     //house.getPosition();
 
-    return 0;
+    r_ 0;
 }

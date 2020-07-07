@@ -1,6 +1,6 @@
-#include "peanut.h"
+? "peanut.h"
 
-#include <iostream>
+? |i..
 
 Peanut::Peanut() {
     std::cout << "Picked some peanuts." << std::endl;

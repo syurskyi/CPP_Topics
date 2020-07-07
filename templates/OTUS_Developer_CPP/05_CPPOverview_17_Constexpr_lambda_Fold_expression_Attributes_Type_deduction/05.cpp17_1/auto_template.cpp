@@ -1,36 +1,36 @@
-#include <iostream>
+? |i..
 
 template<std::size_t value>
-void printValue() {
-    std::cout << __PRETTY_FUNCTION__ << std::endl;
-    std::cout << "size_t " << value << std::endl;
+void prin.Value() {
+    std::c__ __  __PRETTY_FUNCTION__ __  std::e..
+    std::c__ __  "size_t " __  value __  std::e..
 }
 
 template<const char *value>
-void printValue() {
-    std::cout << __PRETTY_FUNCTION__ << std::endl;
-    std::cout << "Pointer = " << value << "\t value = " << *value << std::endl;
+void prin.Value() {
+    std::c__ __  __PRETTY_FUNCTION__ __  std::e..
+    std::c__ __  "Pointer = " __  value __  "\t value = " __  *value __  std::e..
 }
 
 // non-type template parameters
 template<auto value>
-void printMe() {
-    std::cout << __PRETTY_FUNCTION__ << std::endl;
-    std::cout << value << std::endl;
+void prin.Me() {
+    std::c__ __  __PRETTY_FUNCTION__ __  std::e..
+    std::c__ __  value __  std::e..
 }
 
-int main() {
+in. main() {
     static const char c = 'c';
 
-    printValue<10>();
-    printValue<&c>();
+    prin.Value<10>();
+    prin.Value<&c>();
 
-    static const int a = 42;
+    static const in. a = 42;
 
-    printMe<10>();
-    printMe<'a'>();
-    printMe<a>();
-    printMe<&a>();
+    prin.Me<10>();
+    prin.Me<'a'>();
+    prin.Me<a>();
+    prin.Me<&a>();
 
-    return 0;
+    r_ 0;
 }

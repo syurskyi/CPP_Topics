@@ -1,36 +1,36 @@
-#include "stdafx.h"
-#include <iostream>
+? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-void print_square(char arr[][50], int size);
+void prin._square(char arr[][50], in. size);
 
-int main()
+in. main()
 {
 	char arr[10][50];
 	
-	for (int i = 0; i < 10; i++)
+	for (in. i = 0; i < 10; i++)
 	{
-		for (int j = 0; j < 50; j++)
+		for (in. j = 0; j < 50; j++)
 		{
 			arr[i][j] = '*';
 		}		
 	}
 
-	print_square(arr, 10);
+	prin._square(arr, 10);
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 
-void print_square(char arr[][50], int size)
+void prin._square(char arr[][50], in. size)
 {
-	for (int i = 0; i < size; i++)
+	for (in. i = 0; i < size; i++)
 	{
-		for (int j = 0; j < 50; j++)
+		for (in. j = 0; j < 50; j++)
 		{
-			cout << arr[i][j];
+			c__ __  arr[i][j];
 		}
-		cout << endl;
+		c__ __  e..
 	}
 }

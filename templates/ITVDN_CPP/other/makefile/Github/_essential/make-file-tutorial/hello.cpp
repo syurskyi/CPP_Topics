@@ -1,5 +1,5 @@
-#include <iostream>
+? |i..
 
-void print_hello() {
-    std::cout << "Hello" << std::endl;
+void prin._hello() {
+    std::c__ __  "Hello" __  std::e..
 }

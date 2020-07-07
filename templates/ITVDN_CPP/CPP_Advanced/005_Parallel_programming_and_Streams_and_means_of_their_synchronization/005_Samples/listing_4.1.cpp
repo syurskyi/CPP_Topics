@@ -1,11 +1,11 @@
-#include <mutex>
-#include <condition_variable>
-#include <thread>
-#include <queue>
+? <mutex>
+? <condition_variable>
+? <thread>
+? <queue>
 
-bool more_data_to_prepare()
+bo.. more_data_to_prepare()
 {
-    return false;
+    r_ false;
 }
 
 struct data_chunk
@@ -13,15 +13,15 @@ struct data_chunk
 
 data_chunk prepare_data()
 {
-    return data_chunk();
+    r_ data_chunk();
 }
 
 void process(data_chunk&)
 {}
 
-bool is_last_chunk(data_chunk&)
+bo.. is_last_chunk(data_chunk&)
 {
-    return true;
+    r_ true;
 }
 
 std::mutex mut;
@@ -44,7 +44,7 @@ void data_processing_thread()
     while(true)
     {
         std::unique_lock<std::mutex> lk(mut);
-        data_cond.wait(lk,[]{return !data_queue.empty();});
+        data_cond.wait(lk,[]{r_ !data_queue.empty();});
         data_chunk data=data_queue.front();
         data_queue.pop();
         lk.unlock();
@@ -54,7 +54,7 @@ void data_processing_thread()
     }
 }
 
-int main()
+in. main()
 {
     std::thread t1(data_preparation_thread);
     std::thread t2(data_processing_thread);

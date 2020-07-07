@@ -1,72 +1,72 @@
-#include <iostream>
+? |i..
 #define PI 3.14
-using namespace std;
+u.. s..
 
 void initMenu();
-void menuDecision(int);
+void menuDecision(in.);
 double areaCircle(double);
 double areaSquare(double);
 double areaRectangle(double, double);
 double areaTriangle(double, double);
-int main()
+in. main()
 {
-    int choice;
+    in. choice;
     char cont;
     do
     {
         system("cls"); //clear screen = cls
         initMenu();
 
-        cin >> choice;
+        c__ >> choice;
 
         menuDecision(choice);
 
         do
         {
-            cout << "Do you want to continue the program? (Y/N)" << endl;
-            cin >> cont;
+            c__ __  "Do you want to continue the program? (Y/N)" __  e..
+            c__ >> cont;
         } while(cont != 'y' && cont != 'Y' && cont != 'N' && cont != 'n');
 
 
     } while(cont == 'y' || cont == 'Y');
 
-    return 0;
+    r_ 0;
 }
 void initMenu()
 {
-    cout << "Enter option:" << endl;
-    cout << "1. Circle" << endl;
-    cout << "2. Square" << endl;
-    cout << "3. Rectangle" << endl;
-    cout << "4. Triangle" << endl;
+    c__ __  "Enter option:" __  e..
+    c__ __  "1. Circle" __  e..
+    c__ __  "2. Square" __  e..
+    c__ __  "3. Rectangle" __  e..
+    c__ __  "4. Triangle" __  e..
 }
-void menuDecision(int choice)
+void menuDecision(in. choice)
 {
     double r, a, b, h;
     switch(choice)
     {
         case 1:
-            cout << "Enter the radius: " << endl;
-            cin >> r;
+            c__ __  "Enter the radius: " __  e..
+            c__ >> r;
             areaCircle(r);
             break;
         case 2:
-            cout << "Enter the side of a square: " << endl;
-            cin >> a;
+            c__ __  "Enter the side of a square: " __  e..
+            c__ >> a;
             areaSquare(a);
             break;
         case 3:
-            cout << "Enter the width and height of a rectangle: " << endl;
-            cin >> a >> b;
+            c__ __  "Enter the width and height of a rectangle: " __  e..
+            c__ >> a >> b;
             areaRectangle(a, b);
             break;
         case 4:
-            cout << "Enter the base and height of a triangle: " << endl;
-            cin >> a >> h;
+            c__ __  "Enter the base and height of a triangle: " __  e..
+            c__ >> a >> h;
             areaTriangle(a, h);
             break;
         default:
-            cout << "You didn't choose any of the option from above" << endl;
+            c__ __  "You didn't choose any of the option from above" __  e..
 
     }
 }
@@ -74,31 +74,31 @@ double areaCircle(double r)
 {
     double result = PI * r * r;
 
-    cout << "The area of a circle that radius is " << r << " = " << result << endl;
+    c__ __  "The area of a circle that radius is " __  r __  " = " __  result __  e..
 
-    return result;
+    r_ result;
 }
 double areaSquare(double a)
 {
     double result = a * a;
 
-    cout << "The area of a square that side is " << a << " = " << result << endl;
+    c__ __  "The area of a square that side is " __  a __  " = " __  result __  e..
 
-    return result;
+    r_ result;
 }
 double areaRectangle(double a, double b)
 {
     double result = a * b;
 
-    cout << "The area of a rectangle that first side is " << a << " the second side is " << b << " = " << result << endl;
+    c__ __  "The area of a rectangle that first side is " __  a __  " the second side is " __  b __  " = " __  result __  e..
 
-    return result;
+    r_ result;
 }
 double areaTriangle(double a, double h)
 {
     double result = (1/2.0) * a * h;
 
-    cout << "The area of a rectangle that first side is " << a << " the second side is " << h << " = " << result << endl;
+    c__ __  "The area of a rectangle that first side is " __  a __  " the second side is " __  h __  " = " __  result __  e..
 
-    return result;
+    r_ result;
 }

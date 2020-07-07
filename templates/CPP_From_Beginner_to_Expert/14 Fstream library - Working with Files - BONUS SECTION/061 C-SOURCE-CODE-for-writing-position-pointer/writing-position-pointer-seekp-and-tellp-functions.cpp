@@ -1,9 +1,9 @@
-#include <iostream>
-#include <fstream>
+? |i..
+? <fstream>
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
     /*
         tellp - tell put - tells where is the putting pointer
@@ -20,22 +20,22 @@ int main()
 
     fstream file;
 
-    file.open("sample.txt", ios::out | ios::binary);
+    file.open("sample.txt", i.. out | i.. binary);
 
     if (file.is_open())
     {
         string tmp = "this is text about nothing";
 
-        file << tmp;
+        file __  tmp;
 
-        cout << file.tellp() << endl;
+        c__ __  file.tellp() __  e..
 
-        file.seekp(0, ios::beg);
+        file.seekp(0, i.. beg);
 
-        file << "T";
+        file __  "T";
     }
     else
-        cout << "The file couldn't be opened properly" << endl;
+        c__ __  "The file couldn't be opened properly" __  e..
 
-    return 0;
+    r_ 0;
 }

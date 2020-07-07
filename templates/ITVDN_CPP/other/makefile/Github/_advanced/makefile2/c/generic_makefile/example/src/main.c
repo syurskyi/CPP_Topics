@@ -1,6 +1,6 @@
 
 
-#include <stdio.h>
+? <stdio.h>
 
 int main() {
 	printf("Hello, World!\n");

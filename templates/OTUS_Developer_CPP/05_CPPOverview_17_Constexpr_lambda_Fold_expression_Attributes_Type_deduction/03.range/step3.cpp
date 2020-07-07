@@ -1,4 +1,4 @@
-#include <iostream>
+? |i..
 
 template<typename Input, typename UnaryPredicate>
 class filter_helper {
@@ -14,19 +14,19 @@ class filter_helper {
                                                                               std::cend(owner.input),
                                                                               owner.p)) {};
 
-        auto operator!=(typename Input::const_iterator rhs) const { return current != rhs; };
+        auto operator!=(typename Input::const_iterator rhs) const { r_ current != rhs; };
 
-        auto operator++() { return current = std::find_if(++current, std::cend(owner.input), owner.p); };
+        auto operator++() { r_ current = std::find_if(++current, std::cend(owner.input), owner.p); };
 
-        auto operator*() const { return *current; };
+        auto operator*() const { r_ *current; };
     };
 
 public:
     explicit filter_helper(const Input &input_, const UnaryPredicate &p) : input(input_), p(p) {}
 
-    auto begin() const { return iterator{*this}; }
+    auto begin() const { r_ iterator{*this}; }
 
-    auto end() const { return std::cend(input); }
+    auto end() const { r_ std::cend(input); }
 };
 
 template<typename UnaryPredicate>
@@ -35,12 +35,12 @@ struct filter : UnaryPredicate {
 };
 
 template<typename Input, typename F>
-auto operator|(const Input &input, const F &f) { return filter_helper(input, f); }
+auto operator|(const Input &input, const F &f) { r_ filter_helper(input, f); }
 
-int main() {
+in. main() {
     const std::string s{"hello"};
 
-    for (auto i: s | filter{[](auto c) { return c != 'l'; }}) {
-        std::cout << i << std::endl;
+    for (auto i: s | filter{[](auto c) { r_ c != 'l'; }}) {
+        std::c__ __  i __  std::e..
     }
 }

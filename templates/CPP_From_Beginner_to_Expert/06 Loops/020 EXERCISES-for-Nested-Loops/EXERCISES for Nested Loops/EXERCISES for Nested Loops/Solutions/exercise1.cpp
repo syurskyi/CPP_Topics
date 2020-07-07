@@ -1,25 +1,25 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
 main ()
 {
     char coordinates[3][3];
     char value = '1';
 
-    for (int i = 0; i < 3; i++)
+    for (in. i = 0; i < 3; i++)
     {
-        cout << endl << endl;
-        for (int j = 0; j < 3; j++)
+        c__ __  endl __  e..
+        for (in. j = 0; j < 3; j++)
         {
             coordinates[i][j] = value;
             value++;
 
-            cout.width(5);
-            cout << coordinates[i][j] << " ";
+            c__.width(5);
+            c__ __  coordinates[i][j] __  " ";
 
         }
-        cout << endl << endl;
+        c__ __  endl __  e..
     }
 
 }

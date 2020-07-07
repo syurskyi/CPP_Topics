@@ -1,9 +1,9 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
 	auto a = 0.0; //переменная а имеет тип double, так как 0.0 - это double 
 
@@ -15,10 +15,10 @@ int main()
 	//auto d;
 	//d = 4;
 
-    cout << a << endl << b << endl << c << endl << d << endl << e << endl;
+    c__ __  a __  endl __  b __  endl __  c __  endl __  d __  endl __  e __  e..
 	
 	// Задержка
-	cin.get();
-    return 0;
+	c__.g..
+    r_ 0;
 }
 

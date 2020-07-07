@@ -1,6 +1,6 @@
-#include "number.h"
+? "number.h"
 
-Number::Number(int data) : data(data)
+Number::Number(in. data) : data(data)
 {
 }
 
@@ -10,16 +10,16 @@ Number& Number::operator=(const Number& other)
     {
         data = other.data;
     }
-    return *this;
+    r_ *this;
 }
 
 Number Number::operator+(const Number &other) const
 {
-    return Number(data + other.data);
+    r_ Number(data + other.data);
 }
 
-ostream& operator<<(ostream &s, const Number& number)
+ostream& operator__ (ostream &s, const Number& number)
 {
-    s << "( " << number.data << " )" << endl;
-    return s;
+    s __  "( " __  number.data __  " )" __  e..
+    r_ s;
 }

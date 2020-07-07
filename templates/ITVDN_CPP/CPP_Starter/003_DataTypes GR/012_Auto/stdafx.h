@@ -5,10 +5,10 @@
 
 #pragma once
 
-#include "targetver.h"
+? "targetver.h"
 
-#include <stdio.h>
-#include <tchar.h>
+? <stdio.h>
+? <tchar.h>
 
 
 

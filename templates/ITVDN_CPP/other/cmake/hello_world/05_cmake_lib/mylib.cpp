@@ -1,8 +1,8 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
-int foo() { 
-    cout << "Hello foo\n";
-    return 0;
+in. foo() {
+    c__ __  "Hello foo\n";
+    r_ 0;
 }

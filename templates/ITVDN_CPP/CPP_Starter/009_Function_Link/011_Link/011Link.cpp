@@ -1,30 +1,30 @@
-#include "stdafx.h"
-#include <iostream>
+? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-void add(int, int, int &);
+void add(in., in., in. &);
 
-int main()
+in. main()
 {
-	int a = 0;
-	cout << "Enter first number: " << endl;
-	cin >> a;
+	in. a = 0;
+	c__ __  "Enter first number: " __  e..
+	c__ >> a;
 
-	int b = 0;
-	cout << "Enter second number: " << endl;
-	cin >> b;
+	in. b = 0;
+	c__ __  "Enter second number: " __  e..
+	c__ >> b;
 
-	int sum = 0;
+	in. sum = 0;
 	add(a, b, sum);
 
-	cout << a << " + " << b << " = " << sum << endl;
+	c__ __  a __  " + " __  b __  " = " __  sum __  e..
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 
-void add(int x, int y, int &sum)
+void add(in. x, in. y, in. &sum)
 {
 	sum = x + y;
 }

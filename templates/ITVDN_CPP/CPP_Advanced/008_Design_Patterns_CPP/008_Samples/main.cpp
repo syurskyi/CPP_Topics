@@ -1,9 +1,9 @@
-#include "meta_strategy.h"
-#include "patterns.h"
-#include <iostream>
-#include <map>
+? "meta_strategy.h"
+? "patterns.h"
+? |i..
+? <map>
 
-int main()
+in. main()
 {
     std::map< std::string, std::unique_ptr< MetaStrategy > > patterns;
 
@@ -16,5 +16,5 @@ int main()
 
     patterns[ "modern observer" ]->run();
 
-    return 0;
+    r_ 0;
 }

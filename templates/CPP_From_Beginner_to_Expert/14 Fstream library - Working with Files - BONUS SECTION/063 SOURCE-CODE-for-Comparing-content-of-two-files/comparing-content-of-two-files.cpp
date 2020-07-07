@@ -1,12 +1,12 @@
-#include <iostream>
-#include <fstream>
-#include "string.h"
+? |i..
+? <fstream>
+? "string.h"
 
-using namespace std;
+u.. s..
 
-bool areFilesEqual(fstream *, fstream *);
-int sizeOfFile(fstream *);
-int main()
+bo.. areFilesEqual(fstream *, fstream *);
+in. sizeOfFile(fstream *);
+in. main()
 {
     /*
         read(where to read, how many bytes to read);
@@ -15,32 +15,32 @@ int main()
 
     fstream file1, file2;
 
-    file1.open("sample.txt", ios::in | ios::binary | ios::ate);
-    file2.open("sample2.txt", ios::in | ios::binary | ios::ate);
+    file1.open("sample.txt", i.. in | i.. binary | i.. ate);
+    file2.open("sample2.txt", i.. in | i.. binary | i.. ate);
 
     if (file1.is_open() && file2.is_open())
     {
         if (areFilesEqual(&file1, &file2))
         {
-            cout << "Files are equal";
+            c__ __  "Files are equal";
         }
         else
-            cout << "Files are not the same" << endl;
+            c__ __  "Files are not the same" __  e..
 
     }
     else
-        cout << "The file couldn't be opened properly" << endl;
+        c__ __  "The file couldn't be opened properly" __  e..
 
-    return 0;
+    r_ 0;
 }
-bool areFilesEqual(fstream *a, fstream *b)
+bo.. areFilesEqual(fstream *a, fstream *b)
 {
-    int fileSize1 = sizeOfFile(a);
-    int fileSize2 = sizeOfFile(b);
+    in. fileSize1 = sizeOfFile(a);
+    in. fileSize2 = sizeOfFile(b);
 
     if (fileSize1 == fileSize2)
     {
-        int BUFFER_SIZE;
+        in. BUFFER_SIZE;
 
         if(fileSize1 > 1024)
             BUFFER_SIZE = 1024;
@@ -57,28 +57,28 @@ bool areFilesEqual(fstream *a, fstream *b)
 
             if (memcmp(file1buffer, file2buffer, BUFFER_SIZE) != 0)
             {
-                cout << "Files are not equal, at least one of the byte was different" << endl;
+                c__ __  "Files are not equal, at least one of the byte was different" __  e..
 
                 delete [] file1buffer;
                 delete [] file2buffer;
-                return false;
+                r_ false;
             }
         }while(a->good() && b->good());
 
         delete [] file1buffer;
         delete [] file2buffer;
-        return true;
+        r_ true;
     }
     else
     {
-        cout << "Size of Files are not equal" << endl;
-        return false;
+        c__ __  "Size of Files are not equal" __  e..
+        r_ false;
     }
 }
-int sizeOfFile(fstream * file)
+in. sizeOfFile(fstream * file)
 {
-    file->seekg(0, ios::end);
-    int sizeOfFile = file->tellg();
-    file->seekg(0, ios::beg);
-    return sizeOfFile;
+    file->seekg(0, i.. end);
+    in. sizeOfFile = file->tellg();
+    file->seekg(0, i.. beg);
+    r_ sizeOfFile;
 }

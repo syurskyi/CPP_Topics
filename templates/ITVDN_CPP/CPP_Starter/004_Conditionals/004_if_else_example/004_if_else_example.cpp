@@ -1,10 +1,10 @@
-﻿#include "stdafx.h"
-#include <iostream>
-#include <string>   // модуль <string> предназначен для работы со строками
+﻿? *s..
+? |i..
+? <string>   // модуль <string> предназначен для работы со строками
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
     setlocale(LC_ALL, "rus");
 
@@ -15,30 +15,30 @@ int main()
     string userPass;
 
     // вводим имя пользователя
-	cout << "Enter your name: ";
-	cin >> userName;            
+	c__ __  "Enter your name: ";
+	c__ >> userName;
     
     if (userName == name)
     {
         // Если имя введенно верно, просим пользователя ввести пароль
-        cout << "Enter password: ";
-        cin >> userPass;
+        c__ __  "Enter password: ";
+        c__ >> userPass;
 
         if (userPass == password)
         {
-            cout << "Hello " << userName << ". You are logged in!" << endl;
+            c__ __  "Hello " __  userName __  ". You are logged in!" __  e..
         }
         else
         {
-            cout << "Wrong password!" << endl;
+            c__ __  "Wrong password!" __  e..
         }
     }
     else
     {
-        cout << "Wrong user name!: " << endl;
+        c__ __  "Wrong user name!: " __  e..
     }
 
-	cin.get();
-    return 0;
+	c__.g..
+    r_ 0;
 }
 

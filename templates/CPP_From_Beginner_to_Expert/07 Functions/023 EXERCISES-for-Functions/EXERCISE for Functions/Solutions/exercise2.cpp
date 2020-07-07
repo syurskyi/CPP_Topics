@@ -1,6 +1,6 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
 void subtraction();
 
@@ -13,12 +13,12 @@ void subtraction()
 {
     double firstNumber, secondNumber, result;
 
-    cout << "Input the number to subtract from: ";
-    cin >> firstNumber;
-    cout << "Input the number to subtract with: ";
-    cin >> secondNumber;
+    c__ __  "Input the number to subtract from: ";
+    c__ >> firstNumber;
+    c__ __  "Input the number to subtract with: ";
+    c__ >> secondNumber;
 
     result = firstNumber - secondNumber;
-    cout << firstNumber << " - " << secondNumber << " = " << result;
+    c__ __  firstNumber __  " - " __  secondNumber __  " = " __  result;
 
 }

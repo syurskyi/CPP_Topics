@@ -1,5 +1,5 @@
-#include <iostream>
-#include "hworld2.hh"
+? |i..
+? "hworld2.hh"
 
 void print_hworld() {
     std::cout << "Hello world" << std::endl;

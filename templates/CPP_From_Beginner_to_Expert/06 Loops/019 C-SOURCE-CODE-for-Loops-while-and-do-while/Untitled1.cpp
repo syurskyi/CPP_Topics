@@ -1,12 +1,12 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
 main()
 {
-    const int SIZEOFARRAY = 10;
-    int i = 0;
-    int array[SIZEOFARRAY];
+    const in. SIZEOFARRAY = 10;
+    in. i = 0;
+    in. array[SIZEOFARRAY];
 /*
     while(i < SIZEOFARRAY) //i = 0
     {
@@ -15,7 +15,7 @@ main()
     }
     */
     while (i)
-      cout <<"lalala";
+      c__ __ "lalala";
 /*
     do
     {

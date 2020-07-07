@@ -1,7 +1,7 @@
 // Прототип (Prototype)
 
-#include <iostream>
-#include <map>
+? |i..
+? <map>
 
 struct IConnector {
     virtual ~IConnector() = default;
@@ -13,43 +13,43 @@ struct IConnector {
 class TcpConnector : public IConnector {
     void connection() override
     {
-        std::cout << "tcp connection" << std::endl;
+        std::c__ __  "tcp connection" __  std::e..
     }
 
     IConnector* clone() override
     {
-        return new TcpConnector{};
+        r_ new TcpConnector{};
     }
 };
 
 class UdpConnector : public IConnector {
     void connection() override
     {
-        std::cout << "udp connection" << std::endl;
+        std::c__ __  "udp connection" __  std::e..
     }
 
     IConnector* clone() override
     {
-        return new UdpConnector{};
+        r_ new UdpConnector{};
     }
 };
 
-int main(int, char* [])
+in. main(in., char* [])
 {
     IConnector* primary = new TcpConnector{};
 
     //
 
-    std::cout << "primary" << std::endl;
+    std::c__ __  "primary" __  std::e..
     primary->connection();
 
     IConnector* mirror = primary->clone();
-    std::cout << "mirror" << std::endl;
+    std::c__ __  "mirror" __  std::e..
     mirror->connection();
 
     delete mirror;
 
     delete primary;
 
-    return 0;
+    r_ 0;
 }

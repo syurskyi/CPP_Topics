@@ -1,16 +1,16 @@
-#include "stdafx.h"
-#include <iostream>
+? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
 
-	cout << "Contain the number of current string: " << __LINE__ << endl;
+	c__ __  "Contain the number of current string: " __  __LINE__ __  e..
 
-	cout << "Contain current filename: " << __FILE__ << endl;
+	c__ __  "Contain current filename: " __  __FILE__ __  e..
 
 	system("pause");
-    return 0;
+    r_ 0;
 }
 

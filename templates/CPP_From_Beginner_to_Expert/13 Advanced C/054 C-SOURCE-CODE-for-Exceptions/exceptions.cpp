@@ -1,21 +1,21 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
 /* Exceptions - handling exceptions */
 class DivisionByZeroException
 {
     public:
-        void getErrorMessage() { cout << "Error: Do not divide by zero"; }
+        void getErrorMessage() { c__ __  "Error: Do not divide by zero"; }
 };
 
 double division(double a, double b) throw(DivisionByZeroException)
 {
     if (b == 0)
         throw DivisionByZeroException();
-    return a / b;
+    r_ a / b;
 }
-int main()
+in. main()
 {
     double result;
 
@@ -23,7 +23,7 @@ int main()
     {
         result = division(5, 0);
 
-        cout << "the result is " << result << endl;
+        c__ __  "the result is " __  result __  e..
     }
     catch(DivisionByZeroException e)
     {
@@ -31,9 +31,9 @@ int main()
     }
     catch(...)
     {
-        cout << "This is a message that will be shown, when other catch instructions wont be invoked " << endl;
+        c__ __  "This is a message that will be shown, when other catch instructions wont be invoked " __  e..
     }
 //    cout << "lalal" << endl;
 
-    return 0;
+    r_ 0;
 }

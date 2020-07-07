@@ -1,35 +1,35 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
 	// на 9-й строке создаем массив указателей размерностью в 3 элемента
-	int *arr_pointers[3];
+	in. *arr_poin.ers[3];
 
-	int x = 100, y = 200, z = 300;
+	in. x = 100, y = 200, z = 300;
 
-	*arr_pointers = &x;
-	*(arr_pointers + 1) = &y;
-	*(arr_pointers + 2) = &z;
-	cout << &x << endl;
+	*arr_poin.ers = &x;
+	*(arr_poin.ers + 1) = &y;
+	*(arr_poin.ers + 2) = &z;
+	c__ __  &x __  e..
 	// Выводим значения массива
-	for (int i = 0; i < 3; i++)
+	for (in. i = 0; i < 3; i++)
 	{
-		cout << i + 1 << " value in array = " << *(arr_pointers + i) << endl;
+		c__ __  i + 1 __  " value in array = " __  *(arr_poin.ers + i) __  e..
 	}
 
-	cout << "--------------------------------------------------" << endl;
+	c__ __  "--------------------------------------------------" __  e..
 
 	// Выводим значения хранящиеся по адресам находящимся в массиве
-	for (int i = 0; i < 3; i++)
+	for (in. i = 0; i < 3; i++)
 	{
-		cout << i + 1 << " value = " << *(*(arr_pointers + i)) << endl;
+		c__ __  i + 1 __  " value = " __  *(*(arr_poin.ers + i)) __  e..
 	}
 
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 

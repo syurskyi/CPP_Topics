@@ -1,16 +1,16 @@
-#include "stdafx.h"
-#include <iostream>
-#include "nmsp.h"
+? *s..
+? |i..
+? "nmsp.h"
 
 namespace NamespaceA {
-	void mul(int a, int b) {
-		std::cout << (a * b) << std::endl;
+	void mul(in. a, in. b) {
+		std::c__ __  (a * b) __  std::e..
 	};
 }
 
-int main() {
+in. main() {
 
 	NamespaceA::mul(15, 42);
 
-	return 0;
+	r_ 0;
 }

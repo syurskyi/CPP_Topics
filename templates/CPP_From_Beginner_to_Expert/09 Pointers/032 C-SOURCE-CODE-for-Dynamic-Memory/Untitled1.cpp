@@ -1,9 +1,9 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 /* dynamic allocation of memory */
 
-int main()
+in. main()
 {
    // int var = 41240;
    /*
@@ -33,15 +33,15 @@ int main()
 
 
     {
-        int *p = new int;
+        in. *p = new in.;
 
-        cout << p << endl;
+        c__ __  p __  e..
 
         delete p;
 
-        p = new int;
+        p = new in.;
 
-        cout << p << endl;
+        c__ __  p __  e..
 
         delete p;
     }
@@ -51,5 +51,5 @@ int main()
 
 
     //delete []p;
-    return 0;
+    r_ 0;
 }

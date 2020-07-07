@@ -1,40 +1,40 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-void ChangeValue(int a, int b);
-void ChangeValueWithPointers(int *a, int *b);
+void ChangeValue(in. a, in. b);
+void ChangeValueWithPoin.ers(in. *a, in. *b);
 
-int main()
+in. main()
 {
-	int a = 10, b = 15;
+	in. a = 10, b = 15;
 
-	cout << "Before call functions: a = " << a << ", b = " << b << endl;
+	c__ __  "Before call functions: a = " __  a __  ", b = " __  b __  e..
 
 	ChangeValue(a, b);
 
-	cout << "After call ChangeValue: a = " << a << ", b = " << b << endl;
+	c__ __  "After call ChangeValue: a = " __  a __  ", b = " __  b __  e..
 
-	ChangeValueWithPointers(&a, &b);
+	ChangeValueWithPoin.ers(&a, &b);
 
-	cout << "After call ChangeValueWithPointers: a = " << a << ", b = " << b << endl;
+	c__ __  "After call ChangeValueWithPointers: a = " __  a __  ", b = " __  b __  e..
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 
-void ChangeValue(int a, int b)
+void ChangeValue(in. a, in. b)
 {
-	int tmp = a;
+	in. tmp = a;
 
 	a = b;
 	b = tmp;
 }
 
-void ChangeValueWithPointers(int *a, int *b)
+void ChangeValueWithPoin.ers(in. *a, in. *b)
 {
-	int tmp = *a;
+	in. tmp = *a;
 
 	*a = *b;
 	*b = tmp;

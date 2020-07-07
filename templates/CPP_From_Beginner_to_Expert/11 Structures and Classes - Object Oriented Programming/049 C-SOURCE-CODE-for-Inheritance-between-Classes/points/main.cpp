@@ -1,23 +1,23 @@
-#include <iostream>
-#include "point.h"
+? |i..
+? "point.h"
 
-using namespace std;
+u.. s..
 /* inheritance between classes */
 
-void operationOnPoints();
+void operationOnPoin.s();
 
-int main()
+in. main()
 {
-    operationOnPoints();
+    operationOnPoin.s();
 
-    return 0;
+    r_ 0;
 }
-void operationOnPoints()
+void operationOnPoin.s()
 {
-    Point2D p2(10, 67);
+    Poin.2D p2(10, 67);
 
-    p2.Point::setX(5);
+    p2.Poin.::setX(5);
 
-    cout << p2.getX() << endl;
-    cout << p2.getY() << endl;
+    c__ __  p2.getX() __  e..
+    c__ __  p2.getY() __  e..
 }

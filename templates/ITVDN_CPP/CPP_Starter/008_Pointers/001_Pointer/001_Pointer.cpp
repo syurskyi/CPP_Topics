@@ -1,19 +1,19 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
 
-	int age = 18;
+	in. age = 18;
 	double Pi = 3.14;
 
-	cout << "Address of variable age is: 0x" << &age << endl;
+	c__ __  "Address of variable age is: 0x" __  &age __  e..
 
-	cout << "Address of variable Pi is: 0x" << &Pi << endl;
+	c__ __  "Address of variable Pi is: 0x" __  &Pi __  e..
 
 	system("pause");
-    return 0;
+    r_ 0;
 }
 

@@ -6,13 +6,13 @@
  * @author Dad
  */
 
-#include "tcOperation.h"
+? "tcOperation.h"
 
-#include <iostream>
+? |i..
 
-extern "C" int main( int argc, char** argv )
+extern "C" in. main( in. argc, char** argv )
 {
 	tcOperation lcOperation( argc, argv );
 
-	std::cout << lcOperation.Execute() << std::endl;
+	std::c__ __  lcOperation.Execute() __  std::e..
 }

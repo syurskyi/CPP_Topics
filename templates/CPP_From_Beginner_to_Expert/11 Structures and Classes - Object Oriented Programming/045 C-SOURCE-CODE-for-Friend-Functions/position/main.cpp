@@ -1,10 +1,10 @@
-#include <iostream>
-#include "position.h"
+? |i..
+? "position.h"
 
-using namespace std;
+u.. s..
 
-void setX(Position &, int);
-int main()
+void setX(Position &, in.);
+in. main()
 {
     Position dog(10, 50);
 
@@ -18,9 +18,9 @@ int main()
 //    house.setPosition(444, 444);
     //house.getPosition();
 
-    return 0;
+    r_ 0;
 }
-void setX(Position & obj, int value)
+void setX(Position & obj, in. value)
 {
     //Position &obj = dog;
     obj.x = value;

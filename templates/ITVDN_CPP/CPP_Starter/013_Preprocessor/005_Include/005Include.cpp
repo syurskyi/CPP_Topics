@@ -1,23 +1,23 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 // Директива #include все содержимое файла add.h вставит вместо 4-й строки.
-#include "add.h"
+? "add.h"
 
-using namespace std;
-int main()
+u.. s..
+in. main()
 {
-	cout << "5 + 2 = " << add(5, 2) << "; 5 - 2 = " << subtract(5, 2) << endl;
+	c__ __  "5 + 2 = " __  add(5, 2) __  "; 5 - 2 = " __  subtract(5, 2) __  e..
 	
 	system("pause");
-	return 0;
+	r_ 0;
 }
 
-int add(int a, int b)
+in. add(in. a, in. b)
 {
-	return a + b;
+	r_ a + b;
 }
 
-int subtract(int a, int b)
+in. subtract(in. a, in. b)
 {
-	return a - b;
+	r_ a - b;
 }

@@ -1,5 +1,5 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
 namespace NamespaceA {
 	struct MyStructA {
@@ -17,14 +17,14 @@ namespace NamespaceA {
 	};
 };
 
-int main()
+in. main()
 {
-	using namespace NamespaceA;
+	u.. NamespaceA;
 
 	MyStructA variable1;
 	MyStructB variable2;
 
-	return 0;
+	r_ 0;
 }
 
 

@@ -3,8 +3,8 @@
 *                                              *
 ***********************************************/
 
-#include <stdio.h>
-#include "foo.h"
+? <stdio.h>
+? "foo.h"
  
 int main(int argc, char *argv[])
 {

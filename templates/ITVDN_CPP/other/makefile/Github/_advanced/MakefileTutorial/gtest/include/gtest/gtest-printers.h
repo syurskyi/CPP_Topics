@@ -99,22 +99,22 @@
 #ifndef GTEST_INCLUDE_GTEST_GTEST_PRINTERS_H_
 #define GTEST_INCLUDE_GTEST_GTEST_PRINTERS_H_
 
-#include <ostream>  // NOLINT
-#include <sstream>
-#include <string>
-#include <utility>
-#include <vector>
-#include "gtest/internal/gtest-port.h"
-#include "gtest/internal/gtest-internal.h"
+? <ostream>  // NOLINT
+? <sstream>
+? <string>
+? <utility>
+? <vector>
+? "gtest/internal/gtest-port.h"
+? "gtest/internal/gtest-internal.h"
 
 #if GTEST_HAS_STD_TUPLE_
 # include <tuple>
 #endif
 
 #if GTEST_HAS_ABSL
-#include "absl/strings/string_view.h"
-#include "absl/types/optional.h"
-#include "absl/types/variant.h"
+? "absl/strings/string_view.h"
+? "absl/types/optional.h"
+? "absl/types/variant.h"
 #endif  // GTEST_HAS_ABSL
 
 namespace testing {
@@ -268,7 +268,7 @@ void DefaultPrintNonContainerTo(const T& value, ::std::ostream* os) {
   //
   // We cannot write 'using ::testing::internal2::operator<<;', which
   // gcc 3.3 fails to compile due to a compiler bug.
-  using namespace ::testing::internal2;  // NOLINT
+  u.. ::testing::internal2;  // NOLINT
 
   // Assuming T is defined in namespace foo, in the next statement,
   // the compiler will consider all of:
@@ -1100,6 +1100,6 @@ template <typename T>
 // Include any custom printer added by the local installation.
 // We must include this header at the end to make sure it can use the
 // declarations from this file.
-#include "gtest/internal/custom/gtest-printers.h"
+? "gtest/internal/custom/gtest-printers.h"
 
 #endif  // GTEST_INCLUDE_GTEST_GTEST_PRINTERS_H_

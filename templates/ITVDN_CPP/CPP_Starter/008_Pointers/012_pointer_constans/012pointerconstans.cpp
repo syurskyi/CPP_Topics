@@ -1,21 +1,21 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
-	int hour = 12;
+	in. hour = 12;
 
-	const int *const pHour = &hour;
+	const in. *const pHour = &hour;
 
 	// Нельзя изменять данные на которые указывает указатель.
 	 // *pHour = 24;
 	
-	int days = 30;
+	in. days = 30;
 	// Нельзя именять адрес на который указывает указатель.
 	// pHour = &days;
 
 	system("pause");
-	return 0;
+	r_ 0;
 }

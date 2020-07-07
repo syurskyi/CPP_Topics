@@ -1,22 +1,22 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
 main ()
 {
-    int minValue, maxValue, elementToCheck;
+    in. minValue, maxValue, elementToCheck;
 
-    cout << "Please input the minimum value: ";
-    cin >> minValue;
-    cout << "Please input the maximum value: ";
-    cin >> maxValue;
-    cout << "Please input the number to check: ";
-    cin >> elementToCheck;
+    c__ __  "Please input the minimum value: ";
+    c__ >> minValue;
+    c__ __  "Please input the maximum value: ";
+    c__ >> maxValue;
+    c__ __  "Please input the number to check: ";
+    c__ >> elementToCheck;
 
-    bool isContained = (minValue <= elementToCheck) && (elementToCheck <= maxValue);
+    bo.. isContained = (minValue <= elementToCheck) && (elementToCheck <= maxValue);
 
     if (isContained)
-        cout << "The number " << elementToCheck << " belongs to the interval from " << minValue << " to " << maxValue << " !" << endl;
+        c__ __  "The number " __  elementToCheck __  " belongs to the interval from " __  minValue __  " to " __  maxValue __  " !" __  e..
     else
-        cout << "The number " << elementToCheck << " doesn't belong to the interval from " << minValue << " to " << maxValue << " !" << endl;
+        c__ __  "The number " __  elementToCheck __  " doesn't belong to the interval from " __  minValue __  " to " __  maxValue __  " !" __  e..
 }

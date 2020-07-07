@@ -1,6 +1,6 @@
 // Фасад (Facade)
 
-#include <iostream>
+? |i..
 
 class VideoControl
 {
@@ -16,10 +16,10 @@ public:
     void update() {};
 };
 
-class Printer
+class Prin.er
 {
 public:
-    void print() {};
+    void prin.() {};
 };
 
 class Fiscal
@@ -32,7 +32,7 @@ class Register
 {
     VideoControl vc;
     Database db;
-    Printer printer;
+    Prin.er prin.er;
     Fiscal f;
 
 public:
@@ -40,7 +40,7 @@ public:
     {
         db.create();
         vc.info();
-        printer.print();
+        prin.er.prin.();
         f.report();
     };
 
@@ -48,12 +48,12 @@ public:
     {
         db.update();
         vc.alert();
-        printer.print();
+        prin.er.prin.();
         f.report();
     };
 };
 
-int main(int, char *[])
+in. main(in., char *[])
 {
     Register r;
 

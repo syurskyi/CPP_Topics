@@ -1,27 +1,27 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
-int * createArray(int);
+in. * createArray(in.);
 
-void swapTwoValues(int*, int*);
+void swapTwoValues(in.*, in.*);
 
-int main ()
+in. main ()
 {
 
-    return 0;
+    r_ 0;
 }
 
-int * createArray(int sizeOfArray)
+in. * createArray(in. sizeOfArray)
 {
-    int* newArray = new int[sizeOfArray];
+    in.* newArray = new in.[sizeOfArray];
 
-    return newArray;
+    r_ newArray;
 }
 
-void swapTwoValues(int* firstValue, int* secondValue)
+void swapTwoValues(in.* firstValue, in.* secondValue)
 {
-    int temporaryVariable;
+    in. temporaryVariable;
 
     temporaryVariable = *firstValue;
     *firstValue = *secondValue;

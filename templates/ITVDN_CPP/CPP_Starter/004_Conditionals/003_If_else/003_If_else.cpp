@@ -1,30 +1,30 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
     setlocale(LC_ALL, "rus");
 
-	int a = 2, b = 2;
+	in. a = 2, b = 2;
 
 	if (a < b)
 	{
-		cout << "a < b" << endl;
+		c__ __  "a < b" __  e..
 	}
 	else if (a > b)
 	{
-		cout << "a > b" << endl;
+		c__ __  "a > b" __  e..
 	}
 	else
 	{
-		cout << "a = b" << endl;
+		c__ __  "a = b" __  e..
 	}
 
-	cout << "This line is always executed!" << endl;
+	c__ __  "This line is always executed!" __  e..
 
-	cin.get();
-    return 0;
+	c__.g..
+    r_ 0;
 }
 

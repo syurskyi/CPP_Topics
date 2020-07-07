@@ -1,7 +1,7 @@
-#include <iostream>
-#include <vector>
-#include <map>
-#include <tuple>
+? |i..
+? <vector>
+? <map>
+? <tuple>
 
 
 template<typename T>
@@ -18,41 +18,41 @@ struct logging_allocator {
     };*/
 
     T *allocate(std::size_t n) const {
-        std::cout << __PRETTY_FUNCTION__ << "[n = " << n << "]" << std::endl;
+        std::c__ __  __PRETTY_FUNCTION__ __  "[n = " __  n __  "]" __  std::e..
         auto p = std::malloc(n * sizeof(T));
         if (!p)
             throw std::bad_alloc();
-        return reinterpret_cast<T *>(p);
+        r_ rein.erpret_cast<T *>(p);
     }
 
     void deallocate(T *p, std::size_t n) const {
-        std::cout << __PRETTY_FUNCTION__ << "[n = " << n << "]" << std::endl;
+        std::c__ __  __PRETTY_FUNCTION__ __  "[n = " __  n __  "]" __  std::e..
         std::free(p);
     }
 
     template<typename U, typename ...Args>
     void construct(U *p, Args &&...args) const {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::c__ __  __PRETTY_FUNCTION__ __  std::e..
         new(p) U(std::forward<Args>(args)...);
     };
 
     void destroy(T *p) const {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::c__ __  __PRETTY_FUNCTION__ __  std::e..
         p->~T();
     }
 };
 
-int main(int, char *[]) {
+in. main(in., char *[]) {
 
-    auto v = std::vector<int, logging_allocator<int>>{};
+    auto v = std::vector<in., logging_allocator<in.>>{};
 //    v.reserve(5);
     for (size_t i = 0; i < 1 /* 5 */; ++i) {
         v.emplace_back(i);
-        std::cout << "---" << std::endl;
+        std::c__ __  "---" __  std::e..
     }
 
     for (auto i: v) {
-        std::cout << i << std::endl;
+        std::c__ __  i __  std::e..
     }
 
 //    auto m = std::map<int, int, std::less<int>, logging_allocator<std::pair<const int, int>>>{};
@@ -67,7 +67,7 @@ int main(int, char *[]) {
 //        std::cout << std::endl;
 //    }
 
-    return 0;
+    r_ 0;
 }
 
 /*

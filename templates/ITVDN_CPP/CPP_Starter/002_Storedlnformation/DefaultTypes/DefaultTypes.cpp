@@ -2,19 +2,19 @@
 // DefaultTypes.cpp : Defines the entry point for the console application.
 //
 
-#include "stdafx.h"
-#include <iostream>
+? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
-	int a = 5;
+	in. a = 5;
 	char b = 'B';
 	double c;
 
-	cout << b;
+	c__ __  b;
 
-    return 0;
+    r_ 0;
 }
 

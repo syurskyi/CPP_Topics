@@ -1,7 +1,7 @@
-#include "test.h"
+? "test.h"
 
 
-void A::setSecretValue(B & obj, int value)
+void A::setSecretValue(B & obj, in. value)
 {
     obj.secretValue = value;
 }

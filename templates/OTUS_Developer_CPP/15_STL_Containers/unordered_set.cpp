@@ -1,8 +1,8 @@
  // unordered_set
-#include <iostream>
-#include <unordered_set>
+? |i..
+? <unordered_set>
 
-int main()
+in. main()
 {
     // [0] = ["debug"]
     // [1] = ["test"]
@@ -16,8 +16,8 @@ int main()
 //    std::unordered_set<std::string> x {"test", "debug", "test"};
     for(auto i: x)
     {
-        std::cout << i << std::endl;
+        std::c__ __  i __  std::e..
     }
-    std::cout << x.count("test") << std::endl;
-    std::cout << x.count(std::string("test").data()) << std::endl;
+    std::c__ __  x.count("test") __  std::e..
+    std::c__ __  x.count(std::string("test").data()) __  std::e..
 }

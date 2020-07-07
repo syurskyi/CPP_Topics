@@ -1,8 +1,8 @@
-#include <cassert>
-#include <cstdlib>
-#include <iostream>
-#include <string>
-#include <vector>
+? <cassert>
+? <cstdlib>
+? |i..
+? <string>
+? <vector>
 
 // ("",  '.') -> [""]
 // ("11", '.') -> ["11"]
@@ -26,16 +26,16 @@ std::vector<std::string> split(const std::string &str, char d)
 
     r.push_back(str.substr(start));
 
-    return r;
+    r_ r;
 }
 
-int main(int argc, char const *argv[])
+in. main(in. argc, char const *argv[])
 {
     try
     {
         std::vector<std::vector<std::string>> ip_pool;
 
-        for(std::string line; std::getline(std::cin, line);)
+        for(std::string line; std::getline(std::c__, line);)
         {
             std::vector<std::string> v = split(line, '\t');
             ip_pool.push_back(split(v.at(0), '.'));
@@ -49,12 +49,12 @@ int main(int argc, char const *argv[])
             {
                 if (ip_part != ip->cbegin())
                 {
-                    std::cout << ".";
+                    std::c__ __  ".";
 
                 }
-                std::cout << *ip_part;
+                std::c__ __  *ip_part;
             }
-            std::cout << std::endl;
+            std::c__ __  std::e..
         }
 
         // 222.173.235.246
@@ -122,8 +122,8 @@ int main(int argc, char const *argv[])
     }
     catch(const std::exception &e)
     {
-        std::cerr << e.what() << std::endl;
+        std::cerr __  e.what() __  std::e..
     }
 
-    return 0;
+    r_ 0;
 }

@@ -1,39 +1,39 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
 	setlocale(LC_ALL, "rus");
 
-	int lines = 15;			// Количество строк
-	int symbInLines = 30;	// Количество символов в строке
+	in. lines = 15;			// Количество строк
+	in. symbInLines = 30;	// Количество символов в строке
 	char symbol = '*';		// Символ 
 
-	for (int i = 1; i <= lines; i++)
+	for (in. i = 1; i <= lines; i++)
 	{
 		if (i == 1 || i == lines) // 1-я и последняя строка
 		{
-			for (int j = 1; j <= symbInLines; j++)
+			for (in. j = 1; j <= symbInLines; j++)
 			{
-				cout << symbol; // сплошная из символов
+				c__ __  symbol; // сплошная из символов
 			}
 		}
 		else // все строки между первой и заключительной
 		{
-			cout << symbol; // показать один символ
-			for (int j = 1; j <= symbInLines - 2; j++)
+			c__ __  symbol; // показать один символ
+			for (in. j = 1; j <= symbInLines - 2; j++)
 			{
-				cout << ' '; // пробелы в строке (symbInLines - 2) раз
+				c__ __  ' '; // пробелы в строке (symbInLines - 2) раз
 			}
-			cout << symbol; // показать ещё один символ
+			c__ __  symbol; // показать ещё один символ
 		}
-		cout << endl; // новая строка
+		c__ __  e.. // новая строка
 	}
 
-	cout << endl;
+	c__ __  e..
 
 	system("pause");
-	return 0;
+	r_ 0;
 }

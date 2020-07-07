@@ -1,6 +1,6 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
 main()
 {
@@ -12,15 +12,15 @@ main()
     switch (x)
     {
         case 'd':
-            cout << "this is a place for the instructions that will be executed when switched value is equal to 0" << endl;
+            c__ __  "this is a place for the instructions that will be executed when switched value is equal to 0" __  e..
             break;
         case 25:
-            cout << "this is a place for the instructions that will be executed when switched value is equal to 25" << endl;
+            c__ __  "this is a place for the instructions that will be executed when switched value is equal to 25" __  e..
             break;
         case 50:
-            cout << "this is a place for the instructions that will be executed when switched value is equal to 50" << endl;
+            c__ __  "this is a place for the instructions that will be executed when switched value is equal to 50" __  e..
             break;
         default:
-            cout << "this is a place for the instructions that will be executed when value of switched variable is not equal to any case" << endl;
+            c__ __  "this is a place for the instructions that will be executed when value of switched variable is not equal to any case" __  e..
     }
 }

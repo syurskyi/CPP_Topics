@@ -1,22 +1,22 @@
-#include <iostream>
+? |i..
 
 
-using namespace std;
+u.. s..
 
 main()
 {
-    int firstElement, secondElement, divisionRemainder;
+    in. firstElement, secondElement, divisionRemainder;
 
-    cout << "This is a simple program that calculates the remainder of division of two numbers." << endl;
-    cout << "Input first number: ";
-    cin >> firstElement;
-    cout << "Input second number: ";
-    cin >> secondElement;
+    c__ __  "This is a simple program that calculates the remainder of division of two numbers." __  e..
+    c__ __  "Input first number: ";
+    c__ >> firstElement;
+    c__ __  "Input second number: ";
+    c__ >> secondElement;
 
     divisionRemainder = firstElement % secondElement;
-    cout << "First number: " << firstElement << endl;
-    cout << "Second number: " << secondElement << endl;
-    cout << "Remainder: " << divisionRemainder << endl;
+    c__ __  "First number: " __  firstElement __  e..
+    c__ __  "Second number: " __  secondElement __  e..
+    c__ __  "Remainder: " __  divisionRemainder __  e..
 
 }
 

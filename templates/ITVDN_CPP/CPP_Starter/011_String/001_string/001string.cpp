@@ -1,8 +1,8 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
-int main()
+u.. s..
+in. main()
 {
 	// Это не строка
 	char first_string[12] = { 'h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd', '.' };
@@ -11,11 +11,11 @@ int main()
 	char second_string[12] = { 'h', 'e', 'l', 'l', 'o', ' ', 'w', 'o', 'r', 'l', 'd', '\0' };
 
 //	cout << "Second_string length = " << strlen(second_string) << endl;
-	cout << second_string << endl;
+	c__ __  second_string __  e..
 
-	 cout << first_string << endl; // Раскомментировать!
+	 c__ __  first_string __  e.. // Раскомментировать!
 
 	system("pause");
-    return 0;
+    r_ 0;
 }
 

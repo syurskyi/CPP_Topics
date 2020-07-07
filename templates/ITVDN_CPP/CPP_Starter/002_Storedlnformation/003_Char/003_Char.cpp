@@ -1,17 +1,17 @@
 // 003_Char.cpp : Defines the entry point for the console application.
 //
 
-#include "stdafx.h"
-#include <iostream>
+? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
 	char a = 'A';
 	char b = '\x0041';
 	char c = '\u0906';
 
-    return 0;
+    r_ 0;
 }
 

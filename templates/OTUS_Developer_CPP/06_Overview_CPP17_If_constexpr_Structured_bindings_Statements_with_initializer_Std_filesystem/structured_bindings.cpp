@@ -1,26 +1,26 @@
-#include <iostream>
-#include <map>
-#include <string>
-#include <tuple>
+? |i..
+? <map>
+? <string>
+? <tuple>
 
-using namespace std::string_literals;
+u.. std::string_literals;
 
 
 // std::map motivation
 void func_map() {
-    std::map<int, std::string> map;
+    std::map<in., std::string> map;
 
-    std::cout << "\nfunc_map()\n";
+    std::c__ __  "\nfunc_map()\n";
     {
         auto[iter, inserted] = map.emplace(0, "Petia");
-        std::cout << "Key = " << iter->first << " Value = " << iter->second << std::endl;
-        std::cout << "Inserted = " << inserted << std::endl;
+        std::c__ __  "Key = " __  iter->first __  " Value = " __  iter->second __  std::e..
+        std::c__ __  "Inserted = " __  inserted __  std::e..
     }
     {
         auto[iter, inserted] = map.emplace(0, "Petia");
         auto[key, value] = *iter;
-        std::cout << "Key = " << key << " Value = " << value << std::endl;
-        std::cout << "Inserted = " << inserted << std::endl;
+        std::c__ __  "Key = " __  key __  " Value = " __  value __  std::e..
+        std::c__ __  "Inserted = " __  inserted __  std::e..
 //        key = 2;
 //        value = "Vasia";
     }
@@ -28,33 +28,33 @@ void func_map() {
 
 // POD structure example
 struct POD {
-    int i;
+    in. i;
     double d;
     std::string s;
 };
 
 void func_pod() {
-    std::cout << "\nfunc_pod()\n";
+    std::c__ __  "\nfunc_pod()\n";
     POD pod{41, 2.0, "Vasia"};
     auto &[i, d, s] = pod;
-    std::cout << "i = " << i << " d = " << d << " s = " << s << std::endl;
+    std::c__ __  "i = " __  i __  " d = " __  d __  " s = " __  s __  std::e..
     i = 42;
     d = 2.5;
     s = "Petia";
-    std::cout << "i = " << pod.i << " d = " << pod.d << " s = " << pod.s << std::endl;
+    std::c__ __  "i = " __  pod.i __  " d = " __  pod.d __  " s = " __  pod.s __  std::e..
 }
 
 auto getTuple() {
-    return std::tuple{41, 2.0, "Vasia"s};
+    r_ std::tuple{41, 2.0, "Vasia"s};
 }
 
 void func_tuple() {
-    std::cout << "\nfunc_tuple\n";
+    std::c__ __  "\nfunc_tuple\n";
     std::string name;
     std::tie(std::ignore, std::ignore, name) = getTuple();
 
     auto[a, b, n] = getTuple();
-    std::cout << "name = " << name << std::endl;
+    std::c__ __  "name = " __  name __  std::e..
 }
 
 struct Employee {
@@ -65,11 +65,11 @@ struct Employee {
 
     }
 
-    std::size_t getAge() const { return m_age; }
+    std::size_t getAge() const { r_ m_age; }
 
-    std::string getName() const { return m_name; }
+    std::string getName() const { r_ m_name; }
 
-    std::string getSecondName() const { return m_secondName; }
+    std::string getSecondName() const { r_ m_secondName; }
 
 private:
     std::size_t m_age;
@@ -105,19 +105,19 @@ auto get(Employee&) = delete;
 template <>
 auto get<0>(Employee& employee)
 {
-    return employee.getAge();
+    r_ employee.getAge();
 }
 
 template <>
 auto get<1>(Employee& employee)
 {
-    return employee.getName();
+    r_ employee.getName();
 }
  
 template <>
 auto get<2>(Employee& employee)
 {
-    return employee.getSecondName();
+    r_ employee.getSecondName();
 }
 
 /*
@@ -133,16 +133,16 @@ auto get(const Employee &employee) {
 };
 */
 void func_employee() {
-    std::cout << "\nfunc_employee\n";
+    std::c__ __  "\nfunc_employee\n";
     Employee employee{42, "Petia", "Ivanofff"};
     auto&[age, name, secondName] = employee;
-    std::cout << "age = " << age << " name = " << name << " secondName = " << secondName << std::endl;
+    std::c__ __  "age = " __  age __  " name = " __  name __  " secondName = " __  secondName __  std::e..
     age = 43;
-    std::cout << "age = " << employee.getAge() << " name = " << employee.getName() << " secondName = " << employee.getSecondName() << std::endl;
+    std::c__ __  "age = " __  employee.getAge() __  " name = " __  employee.getName() __  " secondName = " __  employee.getSecondName() __  std::e..
 }
 
 
-int main() {
+in. main() {
 //    func_map();
 
 //    func_pod();
@@ -151,5 +151,5 @@ int main() {
 
     func_employee();
 
-    return 0;
+    r_ 0;
 }

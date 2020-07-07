@@ -1,21 +1,21 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 //multidimensional arrays
 main()
 {
-    int biArray[3][4] = {0};
-    int biArray[2][3][2];
+    in. biArray[3][4] = {0};
+    in. biArray[2][3][2];
 
 
-    cout << &biArray[0] << endl;
-    cout << &biArray[0][0] << endl;
-    cout << &biArray[0][1] << endl;
-    cout << &biArray[0][2] << endl;
-    cout << &biArray[0][3] << endl;
-    cout << &biArray[1] << endl;
-    cout << &biArray[1][0] << endl;
-    cout << &biArray[1][1] << endl;
+    c__ __  &biArray[0] __  e..
+    c__ __  &biArray[0][0] __  e..
+    c__ __  &biArray[0][1] __  e..
+    c__ __  &biArray[0][2] __  e..
+    c__ __  &biArray[0][3] __  e..
+    c__ __  &biArray[1] __  e..
+    c__ __  &biArray[1][0] __  e..
+    c__ __  &biArray[1][1] __  e..
 
 }
 

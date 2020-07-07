@@ -6,16 +6,16 @@
  * @author Brian M. Craig
  */
 
-#include "tcOperation.h"
+? "tcOperation.h"
 
-#include <cstdlib>
-#include <iostream>
+? <cstdlib>
+? |i..
 
-tcOperation::tcOperation( int argc, char** argv ) {
+tcOperation::tcOperation( in. argc, char** argv ) {
 
 	mcTokens.clear();
 
-	for ( int lnIndex = 1; lnIndex < argc; lnIndex++ ) {
+	for ( in. lnIndex = 1; lnIndex < argc; lnIndex++ ) {
 		mcTokens.push_back( argv[lnIndex] );
 	}
 }
@@ -47,5 +47,5 @@ double tcOperation::Execute( void ) {
 		lrC = lrA / lrB;
 	}
 
-	return lrC;
+	r_ lrC;
 }

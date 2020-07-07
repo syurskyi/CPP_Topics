@@ -1,12 +1,12 @@
 // Bimap
 
-#include <iostream>
-#include <string>
+? |i..
+? <string>
 
-#include <boost/bimap.hpp>
-#include <boost/bimap/multiset_of.hpp>
+? <boost/bimap.hpp>
+? <boost/bimap/multiset_of.hpp>
 
-int main() {
+in. main() {
     boost::bimap<
             std::string,
             boost::bimaps::multiset_of<std::string>
@@ -17,17 +17,17 @@ int main() {
     alias.insert({"Нижний", "Нижний Новгород"});
 
     for (auto i: alias) {
-        std::cout << i.right << " известен как " << i.left << std::endl;
+        std::c__ __  i.right __  " известен как " __  i.left __  std::e..
     }
-    std::cout << std::endl;
+    std::c__ __  std::e..
 
     auto i = alias.left.find("Нижний");
-    std::cout << i->first << " => " << i->second << std::endl;
+    std::c__ __  i->first __  " => " __  i->second __  std::e..
 
     auto j = alias.right.equal_range("Санкт-Петербург");
     for (auto k = j.first; k != j.second; ++k) {
-        std::cout << k->first << " => " << k->second << std::endl;
+        std::c__ __  k->first __  " => " __  k->second __  std::e..
     }
 
-    return 0;
+    r_ 0;
 }

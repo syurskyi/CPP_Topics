@@ -1,11 +1,11 @@
-#include "stdafx.h"
-#include <iostream>
+? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
 
-int main()
+in. main()
 {
-    return 0;
+    r_ 0;
 }
 

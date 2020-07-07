@@ -1,20 +1,20 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
 main ()
 {
-    int numberOfAsterisks;
+    in. numberOfAsterisks;
 
-    cout << "How many asterisks would you like to draw: ";
-    cin >> numberOfAsterisks;
+    c__ __  "How many asterisks would you like to draw: ";
+    c__ >> numberOfAsterisks;
 
-    for (int i = 1; i <= numberOfAsterisks; i++)
+    for (in. i = 1; i <= numberOfAsterisks; i++)
     {
-        cout << "*";
+        c__ __  "*";
         if (i % 5 == 0)
         {
-            cout <<  endl;
+            c__ __   e..
         }
     }
 ;

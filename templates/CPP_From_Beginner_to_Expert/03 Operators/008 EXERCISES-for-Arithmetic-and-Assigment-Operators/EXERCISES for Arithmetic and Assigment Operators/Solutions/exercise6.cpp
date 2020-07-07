@@ -1,22 +1,22 @@
-#include <iostream>
+? |i..
 
 
-using namespace std;
+u.. s..
 
 main()
 {
     double firstElement, secondElement, divisionResult;
 
-    cout << "This is a simple division program." << endl;
-    cout << "Input first number: ";
-    cin >> firstElement;
-    cout << "Input second number: ";
-    cin >> secondElement;
+    c__ __  "This is a simple division program." __  e..
+    c__ __  "Input first number: ";
+    c__ >> firstElement;
+    c__ __  "Input second number: ";
+    c__ >> secondElement;
 
     divisionResult = firstElement / secondElement;
-    cout << "First number: " << firstElement << endl;
-    cout << "Second number: " << secondElement << endl;
-    cout << "Division result: " << divisionResult << endl;
+    c__ __  "First number: " __  firstElement __  e..
+    c__ __  "Second number: " __  secondElement __  e..
+    c__ __  "Division result: " __  divisionResult __  e..
 
 }
 

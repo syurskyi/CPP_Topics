@@ -1,17 +1,17 @@
 # depslib dependency file v1.0
 1309166152 source:d:\video kursy en\c++\40. constant classes and methods\position\position.cpp
 	"position.h"
-	<iostream>
+	|i..
 
 1309166147 d:\video kursy en\c++\40. constant classes and methods\position\position.h
 
 1309166152 source:d:\video kursy en\c++\41. friend functions\position\position.cpp
 	"position.h"
-	<iostream>
+	|i..
 
 1309252276 d:\video kursy en\c++\41. friend functions\position\position.h
 
 1309252094 source:d:\video kursy en\c++\41. friend functions\position\main.cpp
-	<iostream>
+	|i..
 	"position.h"
 

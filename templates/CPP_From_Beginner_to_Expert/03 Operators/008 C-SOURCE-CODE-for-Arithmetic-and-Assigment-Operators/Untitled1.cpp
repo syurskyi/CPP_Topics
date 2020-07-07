@@ -1,5 +1,5 @@
-#include <iostream>
-using namespace std;
+? |i..
+u.. s..
 //operators
 main()
 {
@@ -30,11 +30,11 @@ main()
         /=, -=, %=, *=
     */
 
-    int d = 1;
+    in. d = 1;
 
-    cout << d-- << endl; //++ here is increment operator
+    c__ __  d-- __  e.. //++ here is increment operator
 
-    cout << d << endl;
+    c__ __  d __  e..
 
     //POSTincrementation
     //PREincrementation

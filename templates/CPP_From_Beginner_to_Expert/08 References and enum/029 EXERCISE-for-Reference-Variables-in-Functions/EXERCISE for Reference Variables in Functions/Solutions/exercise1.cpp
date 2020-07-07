@@ -1,23 +1,23 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
-void setValue(int&);
+void setValue(in.&);
 
-int main ()
+in. main ()
 {
-    int a;
+    in. a;
 
     setValue(a);
 
-    cout << "Variable a is equal to: " << a;
+    c__ __  "Variable a is equal to: " __  a;
 
-    return 0;
+    r_ 0;
 }
 
-void setValue(int &variableToSet)
+void setValue(in. &variableToSet)
 {
-    cout << "Input the value: ";
-    cin >> variableToSet;
+    c__ __  "Input the value: ";
+    c__ >> variableToSet;
 }
 

@@ -1,4 +1,4 @@
-#include "scopedptr.h"
+? "scopedptr.h"
 
 template< typename T >
 ScopedPtr< T >::ScopedPtr(T* ptr) : ptr(ptr)
@@ -14,11 +14,11 @@ ScopedPtr< T >::~ScopedPtr()
 template< typename T >
 T& ScopedPtr< T >::operator*()
 {
-    return *ptr;
+    r_ *ptr;
 }
 
 template< typename T >
 T* ScopedPtr< T >::operator->()
 {
-    return ptr;
+    r_ ptr;
 }

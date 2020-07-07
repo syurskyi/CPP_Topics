@@ -1,16 +1,16 @@
-#include "Person.h"
-#include <string>
-using namespace std;
+? "Person.h"
+? <string>
+u.. s..
 
-Person::Person(string name, int age) {
+Person::Person(string name, in. age) {
     this -> name = name;
     this -> age = age;
 }
 
-int Person::getAge() {
-    return this -> age;
+in. Person::getAge() {
+    r_ this -> age;
 }
 
 string Person::getName() {
-    return this -> name;
+    r_ this -> name;
 }

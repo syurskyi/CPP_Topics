@@ -1,12 +1,12 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
 main() {
 
-    int roomNumber;
-    short floorLevel;
+    in. roomNumber;
+    sh.. floorLevel;
     string renterName, renterLastName;
-    bool mealsIncluded;
+    bo.. mealsIncluded;
 
 }

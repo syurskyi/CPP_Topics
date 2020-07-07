@@ -1,5 +1,5 @@
-#include "inlinevariables.h"
+? "inlinevariables.h"
 
 InlineVariables::InlineVariables() {}
 
-int InlineVariables::var = 10;
+in. InlineVariables::var = 10;

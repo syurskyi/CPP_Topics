@@ -1,10 +1,10 @@
-#include <iostream>
-#include <string>
-#include "mammal.h"
+? |i..
+? <string>
+? "mammal.h"
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
     Mammal mammal(6);
     Mammal new_mammal = mammal;
@@ -16,9 +16,9 @@ int main()
         Mammal m;
     }
 
-    cout << "\n" << new_mammal.get_paws() << "\n";
+    c__ __  "\n" __  new_mammal.get_paws() __  "\n";
 
     delete new_m;
 
-    return 0;
+    r_ 0;
 }

@@ -1,27 +1,27 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
-	int a = 4;
+	in. a = 4;
 
-	cout << "1. " << a << endl;
+	c__ __  "1. " __  a __  e..
 
 	{ 
-		int a = 5;
-		cout << "2. " << a << endl;
+		in. a = 5;
+		c__ __  "2. " __  a __  e..
 	}
 
 	{
-		int a = 6;
-		cout << "3. " <<  a << endl;
+		in. a = 6;
+		c__ __  "3. " __   a __  e..
 	}
 
 	// int a = 7;	// недопустимо создавать переменну с уже существующим именем
 	
-	cin.get();
-    return 0;
+	c__.g..
+    r_ 0;
 }
 

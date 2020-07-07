@@ -1,21 +1,21 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
 main() {
 
-    int minValue, maxValue, elementToCheck;
-    bool isContained;
+    in. minValue, maxValue, elementToCheck;
+    bo.. isContained;
 
-    cout << "Please input the minimum value: ";
-    cin >> minValue;
-    cout << "Please input the maximum value: ";
-    cin >> maxValue;
-    cout << "Please input the number to check: ";
-    cin >> elementToCheck;
+    c__ __  "Please input the minimum value: ";
+    c__ >> minValue;
+    c__ __  "Please input the maximum value: ";
+    c__ >> maxValue;
+    c__ __  "Please input the number to check: ";
+    c__ >> elementToCheck;
 
     isContained = (minValue <= elementToCheck) && (elementToCheck <= maxValue);
-    cout << "Is the number " << elementToCheck << " contained in the interval from " << minValue << " to " << maxValue << " ? " << isContained;
+    c__ __  "Is the number " __  elementToCheck __  " contained in the interval from " __  minValue __  " to " __  maxValue __  " ? " __  isContained;
 
 }
 

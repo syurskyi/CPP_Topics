@@ -1,23 +1,23 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
     // функция setlocale задает локаль, которая будет использоваться текущей программой
     // setlocale(LC_ALL, "rus");       // LC_ALL - вся локаль, второй параметр - строка, содержащая имя локали.
 
-	int a = 3, b = 2;
+	in. a = 3, b = 2;
 
 	if (a < b)
 	{
-		cout << "a < b" << endl;
+		c__ __  "a < b" __  e..
 	}
 
-	cout << "This line is always executed!";
+	c__ __  "This line is always executed!";
 
-	cin.get();
-    return 0;
+	c__.g..
+    r_ 0;
 }
 

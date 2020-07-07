@@ -1,17 +1,17 @@
 // Мост (Bridge)
 
-#include <iostream>
+? |i..
 
 struct ClockSignal {
     virtual ~ClockSignal() = default;
     virtual void now() = 0;
 };
 
-class InternetClockSignal : public ClockSignal
+class in.ernetClockSignal : public ClockSignal
 {
     void now() override
     {
-        std::cout << "internet clock" << std::endl;
+        std::c__ __  "internet clock" __  std::e..
     }
 };
 
@@ -19,7 +19,7 @@ class LocalClockSignal : public ClockSignal
 {
     void now() override
     {
-        std::cout << "local clock" << std::endl;
+        std::c__ __  "local clock" __  std::e..
     }
 };
 
@@ -40,7 +40,7 @@ class DigitalClock : public Clock
 {
     void display()
     {
-        std::cout << "digital" << std::endl;
+        std::c__ __  "digital" __  std::e..
     }
 };
 
@@ -48,14 +48,14 @@ class AnalogClock : public Clock
 {
     void display()
     {
-        std::cout << "analog" << std::endl;
+        std::c__ __  "analog" __  std::e..
     }
 };
 
-int main(int, char *[])
+in. main(in., char *[])
 {
     Clock *c = new DigitalClock;
-    c->s = new InternetClockSignal;
+    c->s = new in.ernetClockSignal;
 
     c->refresh();
 

@@ -1,28 +1,28 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-void add_two(int &);
+void add_two(in. &);
 
-int main()
+in. main()
 {
-	int a = 0;
-	cout << "Enter the value: " << endl;
-	cin >> a;
+	in. a = 0;
+	c__ __  "Enter the value: " __  e..
+	c__ >> a;
 
-	cout << "Value of variable a = " << a << endl;
+	c__ __  "Value of variable a = " __  a __  e..
 
 	add_two(a);
 
-	cout << "Value of variable a = " << a << endl;
+	c__ __  "Value of variable a = " __  a __  e..
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 
-void add_two(int &a)
+void add_two(in. &a)
 {
 	a = a + 2;
-	cout << "Value int a = " << a << endl;
+	c__ __  "Value int a = " __  a __  e..
 }

@@ -1,16 +1,16 @@
-#include <iostream>
-#include "test.h"
+? |i..
+? "test.h"
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
     B objB;
     A objA;
 
     objA.setSecretValue(objB, 600);
 
-    cout << objB.getSecretValue() << endl;
+    c__ __  objB.getSecretValue() __  e..
 
-    return 0;
+    r_ 0;
 }

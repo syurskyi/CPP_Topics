@@ -1,16 +1,16 @@
 // Fusion
 // Hana, MPL
 
-#include <iostream>
+? |i..
 
-#include <boost/fusion/tuple.hpp>
-#include <boost/fusion/algorithm.hpp>
-#include <string>
-#include <iostream>
+? <boost/fusion/tuple.hpp>
+? <boost/fusion/algorithm.hpp>
+? <string>
+? |i..
 
-int main() {
-    boost::fusion::tuple<int, float, std::string, long> ip{127, 0.0, "0", 1};
-    boost::fusion::for_each(ip, [](auto i) { std::cout << i << std::endl; });
+in. main() {
+    boost::fusion::tuple<in., float, std::string, long> ip{127, 0.0, "0", 1};
+    boost::fusion::for_each(ip, [](auto i) { std::c__ __  i __  std::e.. });
 
-    return 0;
+    r_ 0;
 }

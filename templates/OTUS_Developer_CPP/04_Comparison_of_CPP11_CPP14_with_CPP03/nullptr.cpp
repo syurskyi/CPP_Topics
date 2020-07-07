@@ -1,12 +1,12 @@
-#include <iostream>
+? |i..
 
 
-int main(int, char *[]) {
-    int i = NULL; // warning
+in. main(in., char *[]) {
+    in. i = NULL; // warning
     char *p = NULL;
 
 //    int is = nullptr; // error
     char *ps = nullptr;
 
-    return 0;
+    r_ 0;
 }

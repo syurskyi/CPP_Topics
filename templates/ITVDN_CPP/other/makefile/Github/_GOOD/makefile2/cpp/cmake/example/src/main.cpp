@@ -1,8 +1,8 @@
 
 
-#include <iostream>
+? |i..
 
-int main() {
-	std::cout << "Hello, World!\n";
-	return 0;
+in. main() {
+	std::c__ __  "Hello, World!\n";
+	r_ 0;
 }

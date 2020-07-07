@@ -1,33 +1,33 @@
 // Приспособленец (Flyweight)
 
-#include <iostream>
-#include <map>
+? |i..
+? <map>
 
 class Image
 {
 public:
-    void resize(int, int) {};
+    void resize(in., in.) {};
 };
 
 class ImageResizer
 {
-    std::map<int, Image> images;
+    std::map<in., Image> images;
 public:
-    Image get_box(int w)
+    Image get_box(in. w)
     {
         auto i = images.find(w);
         if (i == images.end()) {
             Image img;
             img.resize(w, w);
 
-            bool b;
+            bo.. b;
             std::tie(i, b) = images.emplace(w, img);
         }
-        return i->second;
+        r_ i->second;
     }
 };
 
-int main(int, char *[])
+in. main(in., char *[])
 {
     ImageResizer rs;
 

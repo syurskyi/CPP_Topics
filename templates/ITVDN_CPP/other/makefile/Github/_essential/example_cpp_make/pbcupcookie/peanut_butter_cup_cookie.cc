@@ -1,5 +1,5 @@
-#include "peanut_butter_cup_cookie.h"
-#include <iostream>
+? "peanut_butter_cup_cookie.h"
+? |i..
 
 PeanutButterCupCookie::PeanutButterCupCookie
   (PeanutButterCup& pbc, Cookie& c) : pbc_(pbc), c_(c) {

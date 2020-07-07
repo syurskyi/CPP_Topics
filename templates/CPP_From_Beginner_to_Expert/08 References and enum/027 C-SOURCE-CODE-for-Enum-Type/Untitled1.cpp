@@ -1,12 +1,12 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 /* enum - enumeration - 0 1 2 3 4 */
 
 enum dayOfWeek {M = 1, TU, W, TH, F, SA, SN};
 
 string getDay(dayOfWeek);
-int main()
+in. main()
 {
     dayOfWeek d = M;
 
@@ -14,33 +14,33 @@ int main()
 
     cout << dayOfWeek(W) << endl;
 */
-    int i;
-    cout << "Enter the day of a week " << endl;
+    in. i;
+    c__ __  "Enter the day of a week " __  e..
     //....
-    cin >> i;
-    cout << getDay(dayOfWeek(i)) << endl;
+    c__ >> i;
+    c__ __  getDay(dayOfWeek(i)) __  e..
 
-    return 0;
+    r_ 0;
 }
 string getDay(dayOfWeek d)
 {
     switch(d)
     {
         case M:
-            return "Monday";
+            r_ "Monday";
         case TU:
-            return "Tuesday";
+            r_ "Tuesday";
         case W:
-            return "Wednesday";
+            r_ "Wednesday";
         case TH:
-            return "Thursday";
+            r_ "Thursday";
         case F:
-            return "Friday";
+            r_ "Friday";
         case SA:
-            return "Saturday";
+            r_ "Saturday";
         case SN:
-            return "Sunday";
+            r_ "Sunday";
         default:
-            return "You typed something wrong!";
+            r_ "You typed something wrong!";
     }
 }

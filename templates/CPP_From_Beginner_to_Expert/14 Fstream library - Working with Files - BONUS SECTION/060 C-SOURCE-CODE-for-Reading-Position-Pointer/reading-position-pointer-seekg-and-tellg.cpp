@@ -1,9 +1,9 @@
-#include <iostream>
-#include <fstream>
+? |i..
+? <fstream>
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
     /*
         tellg - tell get - tell where is the reading pointer
@@ -20,40 +20,40 @@ int main()
 
     fstream file;
 
-    file.open("sample.txt", ios::in | ios::binary);
+    file.open("sample.txt", i.. in | i.. binary);
 
     if (file.is_open())
     {
         string buffer;
 
-        file.seekg(0, ios::end);
+        file.seekg(0, i.. end);
 
         streampos sizeOfFile = file.tellg();
 
         file.seekg(0);
 
-        cout << "The size of the file is " << sizeOfFile << " bytes" << endl;
+        c__ __  "The size of the file is " __  sizeOfFile __  " bytes" __  e..
         do
         {
             file >> buffer;
 
-            cout << buffer << endl;
+            c__ __  buffer __  e..
         }while (!file.eof());
 
         if ((file.rdstate() ^ ifstream::eofbit) == 0)
         {
             file.clear();
-            cout << file.tellg() << endl;
+            c__ __  file.tellg() __  e..
             file >> buffer;
 
-            cout << buffer << endl;
+            c__ __  buffer __  e..
             //set indicator of place in file to some other place
             // some other operations on file
         }
 
     }
     else
-        cout << "The file couldn't be opened properly" << endl;
+        c__ __  "The file couldn't be opened properly" __  e..
 
-    return 0;
+    r_ 0;
 }

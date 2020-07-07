@@ -1,10 +1,10 @@
-#include <iostream>
-#include "test.h"
+? |i..
+? "test.h"
 
-using namespace std;
+u.. s..
 /* COPY CONSTRUCTOR */
 
-int main()
+in. main()
 {
     /*
     int a = 10;
@@ -21,14 +21,14 @@ int main()
     obj2.x = 200;
     *(obj1.p) = 700;
 
-    cout << "obj1.x " << obj1.x << endl;
-    cout << "*(obj1.p) " << *(obj1.p) << endl;
-    cout << "obj1.y " << obj1.y << endl << endl;
+    c__ __  "obj1.x " __  obj1.x __  e..
+    c__ __  "*(obj1.p) " __  *(obj1.p) __  e..
+    c__ __  "obj1.y " __  obj1.y __  endl __  e..
 
-    cout << "obj2.x " << obj2.x << endl;
-    cout << "*(obj2.p)" << *(obj2.p) << endl;
-    cout << "obj2.y " << obj2.y << endl;
+    c__ __  "obj2.x " __  obj2.x __  e..
+    c__ __  "*(obj2.p)" __  *(obj2.p) __  e..
+    c__ __  "obj2.y " __  obj2.y __  e..
 
 
-    return 0;
+    r_ 0;
 }

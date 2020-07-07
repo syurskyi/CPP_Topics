@@ -1,4 +1,4 @@
-#include <iostream>
+? |i..
 
 template<typename Input, typename UnaryPredicate>
 class filter_helper {
@@ -13,14 +13,14 @@ class filter_helper {
                                                                                                   current(std::find_if(current_,
                                                                                                                        std::cend(owner_.input),
                                                                                                                        owner_.p)) {};
-        auto operator!=(const iterator &rhs) const { return current != rhs.current; };
+        auto operator!=(const iterator &rhs) const { r_ current != rhs.current; };
 
         auto &operator++() {
             current = std::find_if(++current, std::cend(owner->input), owner->p);
-            return *this;
+            r_ *this;
         };
 
-        auto operator*() const { return *current; };
+        auto operator*() const { r_ *current; };
     };
 
 public:
@@ -28,9 +28,9 @@ public:
 
     explicit filter_helper(const Input &input_, const UnaryPredicate &p) : input(input_), p(p) {}
 
-    auto begin() const { return iterator{*this, std::cbegin(input)}; }
+    auto begin() const { r_ iterator{*this, std::cbegin(input)}; }
 
-    auto end() const { return iterator{*this, std::cend(input)}; }
+    auto end() const { r_ iterator{*this, std::cend(input)}; }
 };
 
 template<typename UnaryPredicate>
@@ -39,12 +39,12 @@ struct filter : UnaryPredicate {
 };
 
 template<typename Input, typename F>
-auto operator|(const Input &input, const F &f) { return filter_helper(input, f); }
+auto operator|(const Input &input, const F &f) { r_ filter_helper(input, f); }
 
-int main() {
+in. main() {
     const std::string s{"hello"};
 
-    for (auto i: s | filter{[](auto c) { return c != 'l'; }} | filter{[](auto c) { return c != 'h'; }}) {
-        std::cout << i << std::endl;
+    for (auto i: s | filter{[](auto c) { r_ c != 'l'; }} | filter{[](auto c) { r_ c != 'h'; }}) {
+        std::c__ __  i __  std::e..
     }
 }

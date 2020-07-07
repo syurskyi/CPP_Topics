@@ -1,11 +1,11 @@
-#include <iostream>
-#include "farm.h"
+? |i..
+? "farm.h"
 
-using namespace std;
+u.. s..
 /* virtual destructor */
 void voiceOfAnimal(Animal *);
 void voiceOfAnimal(Animal &);
-int main()
+in. main()
 {
 /*
     Dog dog;
@@ -23,13 +23,13 @@ int main()
     Animal *dog = new Dog;
 
     delete dog;
-    return 0;
+    r_ 0;
 }
 void voiceOfAnimal(Animal *p)
 {
-    cout << p->getVoice() << endl;
+    c__ __  p->getVoice() __  e..
 }
 void voiceOfAnimal(Animal &p)
 {
-    cout << p.getVoice() << endl;
+    c__ __  p.getVoice() __  e..
 }

@@ -1,24 +1,24 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
 main() {
 
-    int minValue, maxValue, elementToCheck;
-    bool isGreaterThanMinValue, isLowerThanMaxValue;
+    in. minValue, maxValue, elementToCheck;
+    bo.. isGreaterThanMinValue, isLowerThanMaxValue;
 
-    cout << "Please input the minimum value: ";
-    cin >> minValue;
-    cout << "Please input the maximum value: ";
-    cin >> maxValue;
-    cout << "Please input the number to check: ";
-    cin >> elementToCheck;
+    c__ __  "Please input the minimum value: ";
+    c__ >> minValue;
+    c__ __  "Please input the maximum value: ";
+    c__ >> maxValue;
+    c__ __  "Please input the number to check: ";
+    c__ >> elementToCheck;
 
     isGreaterThanMinValue = (minValue <= elementToCheck);
     isLowerThanMaxValue = (elementToCheck <= maxValue);
 
-    cout << "Is the value " << elementToCheck << " greater or equal to " << minValue << " ? " << isGreaterThanMinValue << endl;
-    cout << "Is the value " << elementToCheck << " lower or equal to " << maxValue << " ? " << isLowerThanMaxValue << endl;
+    c__ __  "Is the value " __  elementToCheck __  " greater or equal to " __  minValue __  " ? " __  isGreaterThanMinValue __  e..
+    c__ __  "Is the value " __  elementToCheck __  " lower or equal to " __  maxValue __  " ? " __  isLowerThanMaxValue __  e..
 
 
 

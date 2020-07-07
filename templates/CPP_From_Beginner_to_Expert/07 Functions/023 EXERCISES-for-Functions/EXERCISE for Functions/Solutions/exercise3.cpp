@@ -1,6 +1,6 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
 void multiplication();
 
@@ -13,12 +13,12 @@ void multiplication()
 {
     double firstNumber, secondNumber, result;
 
-    cout << "Input the first number: ";
-    cin >> firstNumber;
-    cout << "Input the number to multiply by: ";
-    cin >> secondNumber;
+    c__ __  "Input the first number: ";
+    c__ >> firstNumber;
+    c__ __  "Input the number to multiply by: ";
+    c__ >> secondNumber;
 
     result = firstNumber * secondNumber;
-    cout << firstNumber << " * " << secondNumber << " = " << result;
+    c__ __  firstNumber __  " * " __  secondNumber __  " = " __  result;
 
 }

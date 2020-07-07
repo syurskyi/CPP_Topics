@@ -1,5 +1,5 @@
-#include <string>
-#include <iostream>
+? <string>
+? |i..
 
 typedef unsigned int uint;
 

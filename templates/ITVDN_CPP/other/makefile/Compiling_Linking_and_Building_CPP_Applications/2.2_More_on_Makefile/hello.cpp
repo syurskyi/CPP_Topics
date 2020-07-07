@@ -3,10 +3,10 @@
 //
 
 // hello.cpp
-#include <iostream>
-using namespace std;
+? |i..
+u.. s..
 
-int main() {
-    cout << "Hello, world!" << endl;
-    return 0;
+in. main() {
+    c__ __  "Hello, world!" __  e..
+    r_ 0;
 }

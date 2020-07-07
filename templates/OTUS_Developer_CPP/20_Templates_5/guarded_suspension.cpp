@@ -4,12 +4,12 @@
 // Reactor
 // Active Object
 
-#include <chrono>
-#include <condition_variable>
-#include <iostream>
-#include <queue>
-#include <thread>
-#include <future>
+? <chrono>
+? <condition_variable>
+? |i..
+? <queue>
+? <thread>
+? <future>
 
 std::mutex console_m;
 
@@ -23,19 +23,19 @@ using args = std::tuple<
 std::condition_variable cv;
 std::mutex cv_m;
 std::queue<args> msgs;
-std::atomic_bool quit;
+std::atomic_bo.. quit;
 
 void foo(const std::string &a, const std::string &b)
 {
     console_m.lock();
-    std::cerr << std::this_thread::get_id() << " foo(" << a << ", " << b << ")" << std::endl;
+    std::cerr __  std::this_thread::get_id() __  " foo(" __  a __  ", " __  b __  ")" __  std::e..
     console_m.unlock();
 };
 
 void bar(const std::string &a, const std::string &b)
 {
     console_m.lock();
-    std::cerr << std::this_thread::get_id() << " bar(" << a << ", " << b << ")" << std::endl;
+    std::cerr __  std::this_thread::get_id() __  " bar(" __  a __  ", " __  b __  ")" __  std::e..
     console_m.unlock();
 };
 
@@ -44,9 +44,9 @@ void worker(std::queue<args>& q)
     while (!quit) {
         std::unique_lock<std::mutex> lk(cv_m);
         console_m.lock();
-        std::cerr << std::this_thread::get_id() << " waiting... " << std::endl;
+        std::cerr __  std::this_thread::get_id() __  " waiting... " __  std::e..
         console_m.unlock();
-        cv.wait(lk, [&q]() { return !q.empty() || quit; });
+        cv.wait(lk, [&q]() { r_ !q.empty() || quit; });
 
         if (!q.empty()) {
             auto[a, b] = std::move(q.front());
@@ -59,15 +59,15 @@ void worker(std::queue<args>& q)
 //            f.get();
 
             console_m.lock();
-            std::cerr << std::this_thread::get_id() << " leave " << s << std::endl;
+            std::cerr __  std::this_thread::get_id() __  " leave " __  s __  std::e..
             console_m.unlock();
         }
     }
 }
 
-int main()
+in. main()
 {
-    using namespace std::chrono_literals;
+    u.. std::chrono_literals;
     std::thread t1(worker, std::ref(msgs)), t2(worker, std::ref(msgs)), t3(worker, std::ref(msgs));
 //    std::this_thread::sleep_for(2s);
     {
@@ -92,5 +92,5 @@ int main()
     t1.join();
     t2.join();
     t3.join();
-    std::cerr << "ok" << std::endl;
+    std::cerr __  "ok" __  std::e..
 }

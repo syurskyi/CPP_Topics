@@ -1,21 +1,21 @@
-#include <iostream>
+? |i..
 
-#include <cstdlib>
+? <cstdlib>
 using std::atoi;
 
-#include "calcula.h"
-#include "mostra.h"
+? "calcula.h"
+? "mostra.h"
 /**
 *@brief Funcao principal
 */
-int main(int argc, char *argv[]) {
+in. main(in. argc, char *argv[]) {
 
-	int valor = atoi(argv[1]);//armazena valor inteiro passado pelo usuario em linha de comando
-	int valorInicial = valor; //armazena valor para salvar seu valor original
-	int resultadoFatorial = fatorial(&valor);
-	int check = resultadoFatorial/2;
-	int resultadoPrimo = primo(&resultadoFatorial, &check);
+	in. valor = atoi(argv[1]);//armazena valor inteiro passado pelo usuario em linha de comando
+	in. valorInicial = valor; //armazena valor para salvar seu valor original
+	in. resultadoFatorial = fatorial(&valor);
+	in. check = resultadoFatorial/2;
+	in. resultadoPrimo = primo(&resultadoFatorial, &check);
 	mostra(&valorInicial, &resultadoPrimo);
 
-	return 0;
+	r_ 0;
 }

@@ -1,40 +1,40 @@
  // forward_list
-#include <iostream>
-#include <forward_list>
+? |i..
+? <forward_list>
 
-int main()
+in. main()
 {
-    std::forward_list<int> x{2, 1, 4, 3, 5};
+    std::forward_list<in.> x{2, 1, 4, 3, 5};
     x.sort();
     for(auto i: x)
     {
-        std::cout << i << " ";
+        std::c__ __  i __  " ";
     }
-    std::cout << std::endl;
+    std::c__ __  std::e..
 
-    std::forward_list<int> y{2, 1, 4, 3, 5};
+    std::forward_list<in.> y{2, 1, 4, 3, 5};
 //    y.sort();
 
     x.merge(y);
     for(auto i: x)
     {
-        std::cout << i << " ";
+        std::c__ __  i __  " ";
     }
-    std::cout << std::endl;
+    std::c__ __  std::e..
     x.unique();
     for(auto i: x)
     {
-        std::cout << i << " ";
+        std::c__ __  i __  " ";
     }
-    std::cout << std::endl;
+    std::c__ __  std::e..
 
     x.remove(5);
     x.reverse();
     for(auto i: x)
     {
-        std::cout << i << " ";
+        std::c__ __  i __  " ";
     }
-    std::cout << std::endl;
+    std::c__ __  std::e..
 
     x = {2, 1, 4, 3, 5};
     y = {2, 1, 4, 3, 5};
@@ -45,7 +45,7 @@ int main()
     x.splice_after(x.before_begin(), y);
     for(auto i: y)
     {
-        std::cout << i << " ";
+        std::c__ __  i __  " ";
     }
-    std::cout << std::endl;
+    std::c__ __  std::e..
 }

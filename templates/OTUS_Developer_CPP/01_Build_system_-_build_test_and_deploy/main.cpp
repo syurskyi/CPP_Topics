@@ -1,11 +1,11 @@
-#include "lib.h"
+? "lib.h"
 
-#include <spdlog/spdlog.h>
+? <spdlog/spdlog.h>
 
-int main()
+in. main()
 {
     auto logger = spdlog::stdout_logger_mt("console");
     logger->info("version {} was started", version());
 
-    return 0;
+    r_ 0;
 }

@@ -1,7 +1,7 @@
 // Пул одиночек (Multiton)
 
-#include <iostream>
-#include <map>
+? |i..
+? <map>
 
 enum class Tag { main, db };
 
@@ -15,18 +15,18 @@ public:
         static std::map<Tag, Logger> instance;
         auto i = instance.find(t);
         if (i==instance.end()) {
-            bool b;
+            bo.. b;
             std::tie(i, b) = instance.emplace(std::make_pair(t, Logger(t)));
         }
-        return i->second;
+        r_ i->second;
     }
     void info(const std::string& message)
     {
-        std::cerr << "   info: [" << int(t) << "] " << message << std::endl;
+        std::cerr __  "   info: [" __  in.(t) __  "] " __  message __  std::e..
     }
     void warn(const std::string& message)
     {
-        std::cerr << "warning: [" << int(t) << "] " << message << std::endl;
+        std::cerr __  "warning: [" __  in.(t) __  "] " __  message __  std::e..
     }
 
 private:
@@ -36,11 +36,11 @@ private:
     }
 };
 
-int main(int, char const**)
+in. main(in., char const**)
 {
     Logger::Instance(Tag::main).info("started");
     Logger::Instance(Tag::db).warn("no db");
     Logger::Instance(Tag::main).info("finished");
 
-    return 0;
+    r_ 0;
 }

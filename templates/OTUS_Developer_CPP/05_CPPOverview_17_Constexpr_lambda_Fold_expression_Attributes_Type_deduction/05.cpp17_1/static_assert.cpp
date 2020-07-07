@@ -1,4 +1,4 @@
-#include <iostream>
+? |i..
 
-static_assert(sizeof(int) == 4, "platform is ok");
-static_assert(sizeof(int) == 3);
+static_assert(sizeof(in.) == 4, "platform is ok");
+static_assert(sizeof(in.) == 3);

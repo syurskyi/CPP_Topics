@@ -51,19 +51,19 @@
 #ifndef GTEST_INCLUDE_GTEST_GTEST_H_
 #define GTEST_INCLUDE_GTEST_GTEST_H_
 
-#include <limits>
-#include <ostream>
-#include <vector>
+? <limits>
+? <ostream>
+? <vector>
 
-#include "gtest/internal/gtest-internal.h"
-#include "gtest/internal/gtest-string.h"
-#include "gtest/gtest-death-test.h"
-#include "gtest/gtest-message.h"
-#include "gtest/gtest-param-test.h"
-#include "gtest/gtest-printers.h"
-#include "gtest/gtest_prod.h"
-#include "gtest/gtest-test-part.h"
-#include "gtest/gtest-typed-test.h"
+? "gtest/internal/gtest-internal.h"
+? "gtest/internal/gtest-string.h"
+? "gtest/gtest-death-test.h"
+? "gtest/gtest-message.h"
+? "gtest/gtest-param-test.h"
+? "gtest/gtest-printers.h"
+? "gtest/gtest_prod.h"
+? "gtest/gtest-test-part.h"
+? "gtest/gtest-typed-test.h"
 
 // Depending on the platform, different string classes are available.
 // On Linux, in addition to ::std::string, Google also makes use of
@@ -367,7 +367,7 @@ GTEST_API_ AssertionResult AssertionFailure(const Message& msg);
 // Includes the auto-generated header that implements a family of generic
 // predicate assertion macros. This include comes late because it relies on
 // APIs declared above.
-#include "gtest/gtest_pred_impl.h"
+? "gtest/gtest_pred_impl.h"
 
 namespace testing {
 

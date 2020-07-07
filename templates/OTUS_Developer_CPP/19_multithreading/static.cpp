@@ -1,11 +1,11 @@
-#include <string>
+? <string>
 
 void foo()
 {
     static std::string hw{"Hello, World!"};
 };
 
-bool hw_guard; // = 0, = false
+bo.. hw_guard; // = 0, = false
 std::string hw;
 
 void bar()
@@ -16,9 +16,9 @@ void bar()
     }
 };
 
-int main(int, char* [])
+in. main(in., char* [])
 {
     foo();
     bar();
-    return 0;
+    r_ 0;
 }

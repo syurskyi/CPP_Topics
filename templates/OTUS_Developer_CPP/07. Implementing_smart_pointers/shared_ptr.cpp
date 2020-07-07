@@ -1,61 +1,61 @@
-#include <iostream>
-#include <utility>
-#include <stdio.h>
+? |i..
+? <utility>
+? <stdio.h>
 
 class xray {
 public:
     xray() {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     };
 
     xray(const xray &) {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     };
 
-    xray(int, int) {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+    xray(in., in.) {
+        std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     }
 
     ~xray() {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     };
 };
 
 template<typename T>
 class smart_ptr {
     T *ptr;
-    int counter;
+    in. counter;
 public:
     smart_ptr(T *p) : ptr{p}, counter{1} {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     }
 
     smart_ptr(const smart_ptr &u) : ptr{u.ptr}, counter{u.counter} {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::c__ __  __PRETTY_FUNCTION__ __  std::e..
         ++counter;
     }
 
     smart_ptr(smart_ptr &&u) : ptr{u.ptr}, counter{u.counter} {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     }
 
     auto get() {
-        return ptr;
+        r_ ptr;
     }
 
     auto use_count() {
-        return counter;
+        r_ counter;
     }
 
     ~smart_ptr() {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::c__ __  __PRETTY_FUNCTION__ __  std::e..
         if (--counter == 0) {
             delete ptr;
         }
     }
 };
 
-int main() {
+in. main() {
 //    auto p1 = smart_ptr<xray>{new xray{1, 2}};
 //    std::cout << p1.use_count() << std::endl;
 //    auto p2 = p1;

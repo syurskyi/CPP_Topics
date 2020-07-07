@@ -1,23 +1,23 @@
-#include <iostream>
-#include <utility>
-#include <stdio.h>
+? |i..
+? <utility>
+? <stdio.h>
 
 class xray {
 public:
     xray() {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     };
 
     xray(const xray &) {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     };
 
-    xray(int, int) {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+    xray(in., in.) {
+        std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     }
 
     ~xray() {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     };
 };
 
@@ -26,29 +26,29 @@ class smart_ptr {
     T *ptr;
 public:
     smart_ptr(T *p) : ptr{p} {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     }
 
     smart_ptr(const smart_ptr &u) : ptr{u.ptr} {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     }
 
     T *get() {
-        return ptr;
+        r_ ptr;
     }
 
     ~smart_ptr() {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::c__ __  __PRETTY_FUNCTION__ __  std::e..
         delete ptr;
     }
 };
 
 template<typename T, typename... Args>
 smart_ptr<T> make_smart_ptr(Args &&... args) {
-    return smart_ptr<T>(new T(std::forward<Args>(args)...));
+    r_ smart_ptr<T>(new T(std::forward<Args>(args)...));
 }
 
-int main() {
+in. main() {
 //    auto p1 = smart_ptr<xray>{new xray{1, 2}};
 //    auto p2 = p1;
 //    auto p3 = make_smart_ptr<xray>(1, 2);

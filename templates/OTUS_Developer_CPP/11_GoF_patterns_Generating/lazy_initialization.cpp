@@ -1,7 +1,7 @@
 // Ленивая инициализация (Lazy initialization)
 
-#include <iostream>
-#include <utility>
+? |i..
+? <utility>
 
 class File {
     std::string name;
@@ -10,15 +10,15 @@ public:
     explicit File(std::string name)
             :name(std::move(name))
     {
-        std::cout << "create " << name << std::endl;
+        std::c__ __  "create " __  name __  std::e..
     }
     ~File()
     {
-        std::cout << "close " << name << std::endl;
+        std::c__ __  "close " __  name __  std::e..
     }
     void write(const std::string& line_)
     {
-        std::cout << "write " << line_ << " into " << name << std::endl;
+        std::c__ __  "write " __  line_ __  " into " __  name __  std::e..
     }
 };
 
@@ -38,11 +38,11 @@ public:
         if (!file) {
             file = new File(name);
         }
-        return file;
+        r_ file;
     }
 };
 
-int main(int, char* [])
+in. main(in., char* [])
 {
     File/*OnDemand*/ file("test.txt");
 
@@ -51,5 +51,5 @@ int main(int, char* [])
         file.write(std::to_string(i));
     }
 
-    return 0;
+    r_ 0;
 }

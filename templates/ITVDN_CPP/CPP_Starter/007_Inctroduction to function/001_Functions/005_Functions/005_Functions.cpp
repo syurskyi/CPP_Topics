@@ -1,24 +1,24 @@
-#include "stdafx.h"
-#include <iostream>
-#include <string>
+? *s..
+? |i..
+? <string>
 
-using namespace std;
+u.. s..
 
 string Function();
 
-int main()
+in. main()
 {
 	string value = Function();
 
-	cout << "Hello, " << value << endl;
+	c__ __  "Hello, " __  value __  e..
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 
 string Function()
 {
 	string value = "Admin!";
 
-	return value;
+	r_ value;
 }

@@ -1,5 +1,5 @@
 Singleton* Singleton::m_instance;
-bool Singleton::m_instance_guard; // false
+bo.. Singleton::m_instance_guard; // false
 std::mutex Singleton::m_mutex;
 
 Singleton* Singleton::getInstance()
@@ -13,11 +13,11 @@ Singleton* Singleton::getInstance()
             m_instance = new Singleton;
         }
     }
-    return m_instance;
+    r_ m_instance;
 }
 
 Singleton* Singleton::getInstance()
 {
     static Singleton m_instance;
-    return &m_instance;
+    r_ &m_instance;
 }

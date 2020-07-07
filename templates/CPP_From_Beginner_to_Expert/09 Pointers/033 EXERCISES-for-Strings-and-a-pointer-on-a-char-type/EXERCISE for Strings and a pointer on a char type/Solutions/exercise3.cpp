@@ -1,33 +1,33 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
-int main ()
+in. main ()
 {
-    int charactersNumber;
+    in. charactersNumber;
 
-    cout << "How many characters would you like to input: ";
-    cin >> charactersNumber;
+    c__ __  "How many characters would you like to input: ";
+    c__ >> charactersNumber;
 
     char * characters = new char[charactersNumber];
 
-    for (int i = 0; i < charactersNumber; i++)
+    for (in. i = 0; i < charactersNumber; i++)
     {
-        cout << i+1 << " character: ";
-        cin >> characters[i];
+        c__ __  i+1 __  " character: ";
+        c__ >> characters[i];
     }
 
-    cout << "The inputted string of characters was: ";
+    c__ __  "The inputted string of characters was: ";
 
-    for (int i = 0; i < charactersNumber; i++)
+    for (in. i = 0; i < charactersNumber; i++)
     {
-        cout << *(characters+i);
+        c__ __  *(characters+i);
     }
 
 
     delete [] characters;
 
 
-    return 0;
+    r_ 0;
 }
 

@@ -1,7 +1,7 @@
-#include <iostream>
-using std::cout;
-using std::endl;
+? |i..
+using std::c__;
+using std::e..
 
-void print_hello_world() {
-	cout << "Hello world!" << endl;
+void prin._hello_world() {
+	c__ __  "Hello world!" __  e..
 }

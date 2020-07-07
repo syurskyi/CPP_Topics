@@ -1,16 +1,16 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 //ARRAYS
 main()
 {
-    int a;
+    in. a;
 
     //int a,b,c,d,e,f,g,h,i,j;
 
     //int var1,var2,var3,var4,var5...
-    int x[100];
-    int array[4]; //TYPE NAME[SIZE_NR_OF_ELEMENTS];
+    in. x[100];
+    in. array[4]; //TYPE NAME[SIZE_NR_OF_ELEMENTS];
 
     array[0] = 10;
     array[1] = 50;
@@ -24,13 +24,13 @@ main()
         1 2 a = 1 * 16 ^ 2 + 2 * 16 ^ 1 + a * 16 ^ 0 = 256 + 32 + 10 = 298
     */
 
-    cout << "array [0] = " << array[0] << ", address: " << &array[0] << endl;
-    cout << "array [1] = " << array[1] << ", address: " << &array[1] <<  endl;
-    cout << "array [2] = " << array[2] << ", address: " << &array[2] <<  endl;
-    cout << "array [3] = " << array[3] << ", address: " << &array[3] <<  endl;
+    c__ __  "array [0] = " __  array[0] __  ", address: " __  &array[0] __  e..
+    c__ __  "array [1] = " __  array[1] __  ", address: " __  &array[1] __   e..
+    c__ __  "array [2] = " __  array[2] __  ", address: " __  &array[2] __   e..
+    c__ __  "array [3] = " __  array[3] __  ", address: " __  &array[3] __   e..
 
-    cout << "array [0] = " << array[0] << ", address: " << array << endl;
+    c__ __  "array [0] = " __  array[0] __  ", address: " __  array __  e..
 
     if (&array[0] == array)
-        cout << "thats true";
+        c__ __  "thats true";
 }

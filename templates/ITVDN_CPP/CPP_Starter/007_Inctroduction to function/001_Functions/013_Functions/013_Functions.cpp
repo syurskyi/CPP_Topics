@@ -1,23 +1,23 @@
-#include "stdafx.h"
-#include <iostream>
+? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
 void CallFunction();
 
-int test = 0;
+in. test = 0;
 
-int main()
+in. main()
 {
-	for (int i = 0; i < 5; i++)
+	for (in. i = 0; i < 5; i++)
 	{
 		CallFunction();
 	}
 
-	cout << "Function called CallFunction invoked " << test << " times!";
+	c__ __  "Function called CallFunction invoked " __  test __  " times!";
 
-	cin.get();
-	return 0;
+	c__.g..
+	r_ 0;
 }
 
 void CallFunction()

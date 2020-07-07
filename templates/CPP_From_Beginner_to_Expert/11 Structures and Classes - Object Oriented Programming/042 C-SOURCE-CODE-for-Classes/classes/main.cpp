@@ -1,26 +1,26 @@
-#include <iostream>
-#include "people.h"
-using namespace std;
+? |i..
+? "people.h"
+u.. s..
 /* classes */
 
 void test()
 {
-    PersonalData *pointer = new PersonalData[5];
+    PersonalData *poin.er = new PersonalData[5];
 
-    delete []pointer;
+    delete []poin.er;
 }
 
-int main()
+in. main()
 {
 
     PersonalData person(20);
     PersonalData person2(50);
 
-    cout << person.getAge()<< endl;
-    cout << person2.getAge() << endl;
+    c__ __  person.getAge()__  e..
+    c__ __  person2.getAge() __  e..
 
 
    // test();
-    return 0;
+    r_ 0;
 }
 

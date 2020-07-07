@@ -1,18 +1,18 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
 main ()
 {
 
-    int startingNumber;
+    in. startingNumber;
 
-    cout << "Input the number you would like to start with: ";
-    cin >> startingNumber;
+    c__ __  "Input the number you would like to start with: ";
+    c__ >> startingNumber;
 
-    for (int i = 0; i < 100; i++)
+    for (in. i = 0; i < 100; i++)
     {
-        cout << ++startingNumber << endl;
+        c__ __  ++startingNumber __  e..
     }
 
 

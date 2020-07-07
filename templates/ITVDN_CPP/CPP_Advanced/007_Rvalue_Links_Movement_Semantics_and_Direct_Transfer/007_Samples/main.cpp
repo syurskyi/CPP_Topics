@@ -1,6 +1,6 @@
-#include <future>
-#include <iostream>
-using namespace std;
+? <future>
+? |i..
+u.. s..
 
 template < typename T >
 class TD; // TD == Type Displayer
@@ -14,29 +14,29 @@ void deduct( T&& param )
 
 struct sample
 {
-    int v;
+    in. v;
 };
 
 sample foo()
 {
-    return { 333 };
+    r_ { 333 };
 }
 
 // принимает только rvalue reference
 void baz( sample&& ) {}
 
-int&& func()
+in.&& func()
 {
-    return 42;
+    r_ 42;
 }
 
 struct _A
 {
-    _A& operator=( const _A& ) { return *this; }
+    _A& operator=( const _A& ) { r_ *this; }
 };
 void func( _A& ) {}
 
-int main()
+in. main()
 {
     sample&& reference = foo(); //<--- rvalue или lvalue?
 
@@ -50,9 +50,9 @@ int main()
 
     // результат 'std::move(reference)' - безымянная ссылка на временный объект.
 
-    int&& var = func();
+    in.&& var = func();
 
-    int res = var + 3;
+    in. res = var + 3;
     var = 10;
 
     // пример, когда в присвоении rvalue находится слева
@@ -128,7 +128,7 @@ int main()
         void setName( std::string st ) { str = std::move( st ); }
 
     private:
-        int* ptr;
+        in.* ptr;
         std::string str;
     };
 

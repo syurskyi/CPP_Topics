@@ -1,5 +1,5 @@
-#include <iostream>
-#include "person.h"
+? |i..
+? "person.h"
 
 // Constructor - Person with Name
 Person::Person(std::string name){
@@ -13,7 +13,7 @@ Person::Person(){
 
 // Destructor
 Person::~Person(){
-    std::cout << this->getName() <<" - Person Object Destroyed" << std::endl;
+    std::c__ __  this->getName() __ " - Person Object Destroyed" __  std::e..
 }
 
 void Person::setName(std::string name){
@@ -21,5 +21,5 @@ void Person::setName(std::string name){
 }
 
 std::string Person::getName(){
-    return name;
+    r_ name;
 }

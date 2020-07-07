@@ -1,20 +1,20 @@
-﻿#include "stdafx.h"
-#include <iostream>
-#include <string>
+﻿? *s..
+? |i..
+? <string>
 
-using namespace std;
+u.. s..
 
 // Перегруженные функции могут отличаться типом и количеством аргументов
 void Function();
 void Function(string s);
-void Function(int i);
+void Function(in. i);
 void Function(double d);
-void Function(string s, int i);
-void Function(int i, string s);
+void Function(string s, in. i);
+void Function(in. i, string s);
 
 // void Function(string); // Так делать нельзя
 
-int main()
+in. main()
 {
 	Function();                  // 1-я перегрузка.
 	Function("A");               // 2-я перегрузка.
@@ -24,35 +24,35 @@ int main()
 	Function(3, " C");           // 6-я перегрузка.
 
 	system("pause");
-    return 0;
+    r_ 0;
 }
 
 void Function()
 {
-	cout << "Hello" << endl;
+	c__ __  "Hello" __  e..
 }
 
 void Function(string s)
 {
-	cout << s << endl;
+	c__ __  s __  e..
 }
 
-void Function(int i)
+void Function(in. i)
 {
-	cout << i << endl;
+	c__ __  i __  e..
 }
 
 void Function(double d)
 {
-	cout << d << endl;
+	c__ __  d __  e..
 }
 
-void Function(string s, int i)
+void Function(string s, in. i)
 {
-	cout << "s = " << s << ", i = " << i << endl;
+	c__ __  "s = " __  s __  ", i = " __  i __  e..
 }
 
-void Function(int i, string s)
+void Function(in. i, string s)
 {
-	cout << "i = " << i << ", s = " << s << endl;
+	c__ __  "i = " __  i __  ", s = " __  s __  e..
 }

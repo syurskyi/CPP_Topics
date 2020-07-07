@@ -1,22 +1,22 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 // Эта библиотека нужна для работы с типом string
-#include <string>
+? <string>
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
 	string usa_city = "";
 
-	cout << "Enter USA city : ";
+	c__ __  "Enter USA city : ";
 
 	 // cin >> usa_city;
-	getline(cin, usa_city);
+	getline(c__, usa_city);
 	
-	cout << usa_city << endl;
+	c__ __  usa_city __  e..
 	
 	system("pause");
-	return 0;
+	r_ 0;
 }
 

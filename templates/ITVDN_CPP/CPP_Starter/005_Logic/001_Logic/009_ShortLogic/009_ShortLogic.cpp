@@ -2,16 +2,16 @@
 // 009_ShortLogic.cpp: определ¤ет точку входа дл¤ консольного приложени¤.
 //
 
-#include "stdafx.h"
-#include <iostream>
+? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
-	int minValue = 1;
-	int denominator = 0;
-	int item = 2;
+	in. minValue = 1;
+	in. denominator = 0;
+	in. item = 2;
 
 
 	// ”словие, которое работает с использованием техники  ќ–ќ“ ќ«јћ Ќ”“ќ√ќ ¬џ„»—Ћ≈Ќ»я.
@@ -20,13 +20,13 @@ int main()
 
 	if ((denominator != 0) && (item / denominator) > minValue) // ќставьте один оператор &
 	{
-		cout << "Block IF" << endl;
+		c__ __  "Block IF" __  e..
 	}
 	else
 	{
-		cout << "Block ELSE" << endl;
+		c__ __  "Block ELSE" __  e..
 	}
 
-    return 0;
+    r_ 0;
 }
 

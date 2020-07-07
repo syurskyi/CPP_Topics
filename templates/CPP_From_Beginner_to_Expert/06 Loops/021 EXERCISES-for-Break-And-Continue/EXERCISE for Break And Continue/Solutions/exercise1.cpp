@@ -1,24 +1,24 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
 main ()
 {
-    int maximumNumber;
-    int sumEven = 0;
-    int temp;
+    in. maximumNumber;
+    in. sumEven = 0;
+    in. temp;
 
-    cout << "Input maximum number you want to check: ";
-    cin >> maximumNumber;
+    c__ __  "Input maximum number you want to check: ";
+    c__ >> maximumNumber;
 
-    for (int i = 1; i <= maximumNumber; i++)
+    for (in. i = 1; i <= maximumNumber; i++)
     {
         if (i % 2 == 1)
             continue;
 
         temp = sumEven;
         sumEven += i;
-        cout << temp << " + " << i << " = " << sumEven << endl;
+        c__ __  temp __  " + " __  i __  " = " __  sumEven __  e..
 
     }
 

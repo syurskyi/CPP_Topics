@@ -1,22 +1,22 @@
-#include <iostream>
+? |i..
 
 
-using namespace std;
+u.. s..
 
 main()
 {
     double firstElement, secondElement, multiplicationResult;
 
-    cout << "This is a simple multiplication program." << endl;
-    cout << "Input first number: ";
-    cin >> firstElement;
-    cout << "Input second number: ";
-    cin >> secondElement;
+    c__ __  "This is a simple multiplication program." __  e..
+    c__ __  "Input first number: ";
+    c__ >> firstElement;
+    c__ __  "Input second number: ";
+    c__ >> secondElement;
 
     multiplicationResult = firstElement * secondElement;
-    cout << "First number: " << firstElement << endl;
-    cout << "Second number: " << secondElement << endl;
-    cout << "Multiplication result: " << multiplicationResult << endl;
+    c__ __  "First number: " __  firstElement __  e..
+    c__ __  "Second number: " __  secondElement __  e..
+    c__ __  "Multiplication result: " __  multiplicationResult __  e..
 
 }
 

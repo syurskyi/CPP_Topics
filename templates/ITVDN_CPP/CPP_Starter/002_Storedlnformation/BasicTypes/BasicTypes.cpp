@@ -1,12 +1,12 @@
 ﻿// BasicTypes.cpp : Defines the entry point for the console application.
 //
 
-#include "stdafx.h"
-#include <iostream>
+? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
 	#pragma region 
     
@@ -14,54 +14,54 @@ int main()
 	// “ипу short соответствуют типы short int, signed short, signed short int 
 	// ÷елое со знаком
 	
-	short		a = -32768;
-	short int	b = +32767;
+	sh..		a = -32768;
+	sh.. in.	b = +32767;
 
-    std::cout << "Short Int" << std::endl;
-    cout << a << endl << b << endl;
+    std::c__ __  "Short Int" __  std::e..
+    c__ __  a __  endl __  b __  e..
 	
 	// ÷елое без знака
 	
-	unsigned short		c = 0;
-	unsigned short int	d = 65535;
+	unsigned sh..		c = 0;
+	unsigned sh.. in.	d = 65535;
 
-    std::cout << "Unsigned Short Int" << std::endl;
-    cout << c << endl << d << endl;
+    std::c__ __  "Unsigned Short Int" __  std::e..
+    c__ __  c __  endl __  d __  e..
 
 	//----------------- 32 bit -----------------
 	// “ипу int соответствуют типы signed, signed int
 	// ÷елое со знаком
 
-	int		e = -2147483648;
-	int		f = +2147483647;
+	in.		e = -2147483648;
+	in.		f = +2147483647;
 
-    std::cout << "Int" << std::endl;
-    cout << e << endl << f << endl;
+    std::c__ __  "Int" __  std::e..
+    c__ __  e __  endl __  f __  e..
 
 	// “ипу unsigned соответствуют типы unsigned int, unsigned, unsigned int
 	// ÷елое без знака
 
 	unsigned		g = 0;
-	unsigned int	h = 4294967295;
+	unsigned in.	h = 4294967295;
 
-    std::cout << "Unsigned Int" << std::endl;
-    cout << g << endl << h << endl;
+    std::c__ __  "Unsigned Int" __  std::e..
+    c__ __  g __  endl __  h __  e..
 
 	//----------------- 64 bit -----------------
 	// “ипу long long соответствуют типы long int, signed long, signed long int 
 	// ÷елое со знаком
 
 	long		i = -9223372036854775808;
-	long int	j = +9223372036854775807;
-    std::cout << "Long Int" << std::endl;
-    cout << i << endl << j << endl;
+	long in.	j = +9223372036854775807;
+    std::c__ __  "Long Int" __  std::e..
+    c__ __  i __  endl __  j __  e..
 
 	// ÷елое без знака
 	
 	unsigned long		k = 0;
-	unsigned long int	l = 18446744073709551615;
-    std::cout << "Unsigned Long Int" << std::endl;
-    cout << k << endl << l << endl;
+	unsigned long in.	l = 18446744073709551615;
+    std::c__ __  "Unsigned Long Int" __  std::e..
+    c__ __  k __  endl __  l __  e..
 
 	#pragma endregion
 	#pragma region
@@ -70,15 +70,15 @@ int main()
 
 	float m = 1.8E-38f;
 	float n = 3.4E+38f;
-    std::cout << "Float" << std::endl;
-    cout << m << endl << n << endl;
+    std::c__ __  "Float" __  std::e..
+    c__ __  m __  endl __  n __  e..
 
 	//----------------- 64 bit -----------------
 
 	double o = 2.2E-308;
 	double p = 1.8E+307;
-    std::cout << "Double" << std::endl;
-    cout << o << endl << p << endl;
+    std::c__ __  "Double" __  std::e..
+    c__ __  o __  endl __  p __  e..
 	
 	#pragma endregion
 
@@ -87,11 +87,11 @@ int main()
 
 	// Ћогическа¤ величина »стина\Ћожь
 
-	bool s = true;   // 0000 0001
-	bool t = false;  // 0000 0000
+	bo.. s = true;   // 0000 0001
+	bo.. t = false;  // 0000 0000
 
-    std::cout << "Bool" << std::endl;
-    cout << s << endl << t << endl;
+    std::c__ __  "Bool" __  std::e..
+    c__ __  s __  endl __  t __  e..
 	
 	#pragma endregion
 	#pragma region
@@ -99,8 +99,8 @@ int main()
 	
 	char u = 'A';
 
-    std::cout << "Char" << std::endl;
-    cout << u << endl;
+    std::c__ __  "Char" __  std::e..
+    c__ __  u __  e..
 
 	#pragma endregion
 	#pragma region
@@ -108,12 +108,12 @@ int main()
 	// —трока в формате UNICODE
 
 	string w = "Hello world!";
-    std::cout << "String" << std::endl;
-    cout << w << endl;
+    std::c__ __  "String" __  std::e..
+    c__ __  w __  e..
 
 	#pragma endregion
 
 
-    return 0;
+    r_ 0;
 }
 

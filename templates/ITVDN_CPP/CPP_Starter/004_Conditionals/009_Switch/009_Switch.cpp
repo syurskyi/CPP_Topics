@@ -1,15 +1,15 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
     setlocale(LC_ALL, "rus");
 
-    int number;
-    cout << "Enter the number 1 or 2: " << endl;
-    cin >> number;
+    in. number;
+    c__ __  "Enter the number 1 or 2: " __  e..
+    c__ >> number;
 
     // ­  На 16-й строке создаем оператор многозначного выбора, и в качестве выражения селектора передаем переменную - number
     
@@ -17,17 +17,17 @@ int main()
     {
         case 1:         // 1-е Постоянное выражение
         {
-            cout << "One" << endl;     // Ветвь 1
+            c__ __  "One" __  e..     // Ветвь 1
             break;
         }
         case 2:         // 2-е Постоянное выражение
         {
-            cout << "Two" << endl;      // Ветвь 2
+            c__ __  "Two" __  e..      // Ветвь 2
             break;
         }
     }
     
-    cin.get();
-    return 0;
+    c__.g..
+    r_ 0;
 }
 

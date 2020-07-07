@@ -1,8 +1,8 @@
-#include "Point.h"
+? "Point.h"
 
-#include <iostream>
+? |i..
 
-Point::Point()
+Poin.::Poin.()
 {
-	std::cout << "A Point has been created" << std::endl;
+	std::c__ __  "A Point has been created" __  std::e..
 }

@@ -1,6 +1,6 @@
 // Абстрактная фабрика (Abstract factory)
 
-#include <iostream>
+? |i..
 
 enum class Env {
     cloud, local
@@ -17,13 +17,13 @@ struct IConfig {
 class ConsulConfig : public IConfig {
     void read() override
     {
-        std::cout << "connect to consul" << std::endl;
+        std::c__ __  "connect to consul" __  std::e..
     }
 };
 class LocalConfig : public IConfig {
     void read() override
     {
-        std::cout << "open local file" << std::endl;
+        std::c__ __  "open local file" __  std::e..
     }
 };
 
@@ -38,14 +38,14 @@ struct IMetric {
 struct PrometheusMetric : public IMetric {
     void send() override
     {
-        std::cout << "push to prometheus" << std::endl;
+        std::c__ __  "push to prometheus" __  std::e..
     }
 };
 
 struct LocalMetric : public IMetric {
     void send() override
     {
-        std::cout << "write to log" << std::endl;
+        std::c__ __  "write to log" __  std::e..
     }
 };
 
@@ -61,28 +61,28 @@ struct EnvironmentFactory {
 class CloudFactory : public EnvironmentFactory {
     IConfig* CreateConfig() override
     {
-        return new ConsulConfig();
+        r_ new ConsulConfig();
     }
 
     IMetric* CreateMetric() override
     {
-        return new PrometheusMetric();
+        r_ new PrometheusMetric();
     }
 };
 
 class LocalFactory : public EnvironmentFactory {
     IConfig* CreateConfig() override
     {
-        return new LocalConfig();
+        r_ new LocalConfig();
     }
 
     IMetric* CreateMetric() override
     {
-        return new LocalMetric();
+        r_ new LocalMetric();
     }
 };
 
-int main(int argc, char* [])
+in. main(in. argc, char* [])
 {
     auto environment = argc ? Env::cloud : Env::local;
 
@@ -108,5 +108,5 @@ int main(int argc, char* [])
 
     delete factory;
 
-    return 0;
+    r_ 0;
 }

@@ -1,22 +1,22 @@
-#include <iostream>
-#include <cstdlib>
+? |i..
+? <cstdlib>
 
-using namespace std;
+u.. s..
 
 main ()
 {
-     int pin, checkPin;
-     int counter = 5;
+     in. pin, checkPin;
+     in. counter = 5;
 
-     cout << "Input your pin number for the first time: ";
-     cin >> pin;
+     c__ __  "Input your pin number for the first time: ";
+     c__ >> pin;
 
      system("cls");
 
      do
      {
-         cout << "Input your pin(" << counter << " tries left): ";
-         cin >> checkPin;
+         c__ __  "Input your pin(" __  counter __  " tries left): ";
+         c__ >> checkPin;
 
          system("cls");
          counter--;
@@ -25,9 +25,9 @@ main ()
 
      if (checkPin == pin)
      {
-        cout << "Correct pin, welcome !";
+        c__ __  "Correct pin, welcome !";
      }
      else
-        cout << "You have entered a wrong PIN code for 5 times !";
+        c__ __  "You have entered a wrong PIN code for 5 times !";
 
 }

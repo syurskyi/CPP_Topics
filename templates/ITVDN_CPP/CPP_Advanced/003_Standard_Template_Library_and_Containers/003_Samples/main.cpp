@@ -1,20 +1,20 @@
-#include <array>
-#include <deque>
-#include <forward_list>
-#include <iostream>
-#include <list>
-#include <map>
-#include <queue>
-#include <set>
-#include <stack>
-#include <string>
-#include <unordered_map>
-#include <unordered_set>
-#include <vector>
+? <array>
+? <deque>
+? <forward_list>
+? |i..
+? <list>
+? <map>
+? <queue>
+? <set>
+? <stack>
+? <string>
+? <unordered_map>
+? <unordered_set>
+? <vector>
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
     // array
     //    array< int, 10 > my_array;
@@ -168,19 +168,19 @@ int main()
 
     //    cout << un_m[ "2" ] << " " << un_m[ "4" ] << endl;
 
-    stack< int > st; // based on deque
-    queue< int > qu; // based on deque
+    stack< in. > st; // based on deque
+    queue< in. > qu; // based on deque
 
-    priority_queue< int, deque< int > > prio; // based on vector
+    priority_queue< in., deque< in. > > prio; // based on vector
 
     prio.push( 4 );
     prio.push( 3 );
     prio.push( 6 );
 
-    cout << "priority_queue" << endl;
+    c__ __  "priority_queue" __  e..
     while ( !prio.empty() )
     {
-        cout << prio.top() << endl;
+        c__ __  prio.top() __  e..
         prio.pop();
     }
 
@@ -189,11 +189,11 @@ int main()
     st.push( 3 );
     st.push( 6 );
 
-    cout << "stack" << endl;
+    c__ __  "stack" __  e..
 
     while ( !st.empty() )
     {
-        cout << st.top() << endl;
+        c__ __  st.top() __  e..
         st.pop();
     }
 
@@ -202,13 +202,13 @@ int main()
     qu.push( 3 );
     qu.push( 6 );
 
-    cout << "queue" << endl;
+    c__ __  "queue" __  e..
 
     while ( !qu.empty() )
     {
-        cout << qu.front() << endl;
+        c__ __  qu.front() __  e..
         qu.pop();
     }
 
-    return 0;
+    r_ 0;
 }

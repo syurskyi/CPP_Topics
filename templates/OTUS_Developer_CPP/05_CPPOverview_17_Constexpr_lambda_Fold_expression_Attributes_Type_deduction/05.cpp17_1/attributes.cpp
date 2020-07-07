@@ -1,4 +1,4 @@
-#include <iostream>
+? |i..
 
 // https://en.cppreference.com/w/cpp/language/attributes
 
@@ -8,11 +8,11 @@ void stub2() {
 }
 
 [[deprecated ("use 'stub2' instead")]]
-int stub() {
-    return 42;
+in. stub() {
+    r_ 42;
 }
 
-int delta2secs(int d, char m) {
+in. delta2secs(in. d, char m) {
     switch (m) {
         case 'w':
             d *= 7.0;
@@ -28,24 +28,24 @@ int delta2secs(int d, char m) {
         default:
             d = -1;
     }
-    return d;
+    r_ d;
 }
 
 [[nodiscard]]
-int last_error_code() {
-    return 2;
+in. last_error_code() {
+    r_ 2;
 }
 
-int main([[maybe_unused]] int argc, char **) {
+in. main([[maybe_unused]] in. argc, char **) {
     stub();
 //    stub2();
 
-    std::cout << delta2secs(1, 'w') << std::endl;
+    std::c__ __  delta2secs(1, 'w') __  std::e..
 
     last_error_code();
 
 //    [[maybe_unused]]
-    int value = 77;
+    in. value = 77;
 
-    return 0;
+    r_ 0;
 }

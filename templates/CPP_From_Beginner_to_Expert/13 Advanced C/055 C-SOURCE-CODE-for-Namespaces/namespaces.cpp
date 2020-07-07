@@ -1,4 +1,4 @@
-#include <iostream>
+? |i..
 
 
 /*namespaces */
@@ -12,22 +12,22 @@ namespace mySpace
             MyNewLine(std::string text = "\n\n\n") { this->text = text;}
             std::string toString()
             {
-                return text;
+                r_ text;
             }
     };
 
-    std::ostream & operator<<(std::ostream & out, MyNewLine & o)
+    std::ostream & operator__ (std::ostream & out, MyNewLine & o)
     {
-        return out << o.toString();
+        r_ out __  o.toString();
     }
     MyNewLine endl("\n\n\n\n\n\n");
 }
-using namespace mySpace;
-int main()
+u.. mySpace;
+in. main()
 {
-    int a = 50;
+    in. a = 50;
 
 
-    std::cout << "this is text: " << endl;
-    return 0;
+    std::c__ __  "this is text: " __  e..
+    r_ 0;
 }

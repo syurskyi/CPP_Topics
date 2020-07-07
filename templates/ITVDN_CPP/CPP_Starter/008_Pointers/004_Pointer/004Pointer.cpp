@@ -1,26 +1,26 @@
-#include "stdafx.h"
-#include <iostream>
+? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
-	int a = 10;
-	int b = 15;
+	in. a = 10;
+	in. b = 15;
 
-	cout << "Value of variable a: " << a << endl;
-	cout << "Value of variable b: " << b << endl;
+	c__ __  "Value of variable a: " __  a __  e..
+	c__ __  "Value of variable b: " __  b __  e..
 
-	int *pointer = &a;
+	in. *poin.er = &a;
 
-	cout << "Pointer = 0x" << pointer << endl;
-	cout << "*Pointer = " << *pointer << endl;
+	c__ __  "Pointer = 0x" __  poin.er __  e..
+	c__ __  "*Pointer = " __  *poin.er __  e..
 
-	pointer = &b;
+	poin.er = &b;
 
-	cout << "Pointer of b = 0x" << pointer << endl;
-	cout << "*Pointer of b = " << *pointer << endl;
+	c__ __  "Pointer of b = 0x" __  poin.er __  e..
+	c__ __  "*Pointer of b = " __  *poin.er __  e..
 
 	system("pause");
-	return 0;
+	r_ 0;
 }

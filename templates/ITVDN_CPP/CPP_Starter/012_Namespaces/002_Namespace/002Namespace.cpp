@@ -1,18 +1,18 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
 // Директива using - импортирует пространство имен, избавляя от необхожимости использования оператор разрешения контекста
 //using namespace std;
 
 
 // Объявление using - импортирует только указанные составляющие пространства имен
-using std::cout;
-using std::endl;
+using std::c__;
+using std::e..
 
-int main()
+in. main()
 {
-	cout << "Hello world" << endl;
+	c__ __  "Hello world" __  e..
 
-	return 0;
+	r_ 0;
 }
 

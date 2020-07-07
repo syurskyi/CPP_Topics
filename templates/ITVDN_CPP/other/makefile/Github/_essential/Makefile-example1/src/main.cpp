@@ -1,19 +1,19 @@
-#include <iostream>
-#include "Funs.h"
+? |i..
+? "Funs.h"
 
-int main()
+in. main()
 {   
-    int base   = 10;
-    int altura = 15;
+    in. base   = 10;
+    in. altura = 15;
 
     Rectangle R(base, altura);
 
-    int area  = R.Area();
-    int perim = R.Perim();
+    in. area  = R.Area();
+    in. perim = R.Perim();
 
-    std::cout << "Area = "      << area  << std::endl;
-    std::cout << "Perimetro = " << perim << std::endl;
+    std::c__ __  "Area = "      __  area  __  std::e..
+    std::c__ __  "Perimetro = " __  perim __  std::e..
 
-    return 0;
+    r_ 0;
 }
 

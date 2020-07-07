@@ -1,23 +1,23 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 // Если аргументом функции является массив, его можно обьявить тремя способами
 
-void func1(int *p_arr)	// Указатель
+void func1(in. *p_arr)	// Указатель
 { 
 }
 
-void func2(int arr[10])	// Массив фиксированного размера
+void func2(in. arr[10])	// Массив фиксированного размера
 { 
 }
 
-void func3(int arr[])	// Массив не определенного размера
+void func3(in. arr[])	// Массив не определенного размера
 {
 }
 
-int main()
+in. main()
 {
 	system("pause");
-	return 0;
+	r_ 0;
 }

@@ -1,10 +1,10 @@
 // priority_queue
-#include <iostream>
-#include <queue>
+? |i..
+? <queue>
 
-int main()
+in. main()
 {
-    std::priority_queue<int> pq;
+    std::priority_queue<in.> pq;
     for(auto i: {6, 7, 4, 8, 3, 8, 8})
     {
         pq.push(i);
@@ -12,8 +12,8 @@ int main()
 
     while(!pq.empty())
     {
-        std::cout << pq.top() << " ";
+        std::c__ __  pq.top() __  " ";
         pq.pop();
     }
-    std::cout << std::endl;
+    std::c__ __  std::e..
 }

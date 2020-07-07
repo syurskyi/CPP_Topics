@@ -1,7 +1,7 @@
-#include <iostream>
-#include "message.h"
-using namespace std;
+? |i..
+? "message.h"
+u.. s..
 
-void message::printMessage(){
-    cout << "Modified Message!\n";
+void message::prin.Message(){
+    c__ __  "Modified Message!\n";
 }

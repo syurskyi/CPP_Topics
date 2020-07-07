@@ -1,16 +1,16 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
 /* overloading functions */
-int power(int, int);
-double power(double, int);
-int main()
+in. power(in., in.);
+double power(double, in.);
+in. main()
 {
 
-    cout << power(2, 6) << endl;
+    c__ __  power(2, 6) __  e..
 
-    return 0;
+    r_ 0;
 }
 
 /*
@@ -20,25 +20,25 @@ int main()
     2 ^ 2 = 4
     2 ^ 3 = 8
 */
-int power(int b, int e) // b = 8, e = 1
+in. power(in. b, in. e) // b = 8, e = 1
 {
-    int tmp = b; //tmp = 2
-    int i = 0;
+    in. tmp = b; //tmp = 2
+    in. i = 0;
 
     while(i++ < e)
     {
-        cout << tmp << " ^ " << i << " = " << b << endl;
+        c__ __  tmp __  " ^ " __  i __  " = " __  b __  e..
         if (i != e)
             b *= tmp; //b = b * tmp;
     }
 
-    return b;
+    r_ b;
 }
-double power(double b, int e)
+double power(double b, in. e)
 {
     double tmp = b; //tmp = 2
     while(e-- > 1)
         b *= tmp; //b = b * tmp;
 
-    return b;
+    r_ b;
 }

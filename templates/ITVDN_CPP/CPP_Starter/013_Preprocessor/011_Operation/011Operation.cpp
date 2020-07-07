@@ -1,21 +1,21 @@
-#include "stdafx.h"
-#include <iostream>
+? *s..
+? |i..
 
 #define createSTR(value)	#value
 #define concat(a, b)		a##b
 
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
-	cout << createSTR(I write on C++) << endl;
+	c__ __  createSTR(I write on C++) __  e..
 
-	int xy = 10;
+	in. xy = 10;
 
-	cout << concat(x, y) << endl;
+	c__ __  concat(x, y) __  e..
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 

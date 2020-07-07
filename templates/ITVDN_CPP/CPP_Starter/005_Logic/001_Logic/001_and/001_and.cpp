@@ -1,7 +1,7 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 /*
 	Конъюнкция – это логическая операция, ставящая в соответствие каждым двум простым высказываниям составное высказывание, 
 	являющееся истинным только тогда, когда оба исходных высказывания истинны. Операция конъюнкции по своему применению
@@ -20,16 +20,16 @@ using namespace std;
 					-------------------------
 */
 
-int main()
+in. main()
 {
-	bool a = true;		// 1
-	bool b = true;		// 0
+	bo.. a = true;		// 1
+	bo.. b = true;		// 0
 
-	bool result = a && b;
+	bo.. result = a && b;
 
-	cout << boolalpha << result << endl;
+	c__ __  bo..alpha __  result __  e..
 
-    return 0;
+    r_ 0;
 }
 
 //#include "stdafx.h"

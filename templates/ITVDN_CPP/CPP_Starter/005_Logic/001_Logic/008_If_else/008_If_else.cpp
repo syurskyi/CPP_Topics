@@ -1,10 +1,10 @@
-#include "stdafx.h"
-#include <iostream>
-#include <string>
+? *s..
+? |i..
+? <string>
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
 	string login = "Admin";
 	string password = "12345";
@@ -12,20 +12,20 @@ int main()
 	string userLogin = "";
 	string userPassword = "";
 
-	cout << "Enter your login: ";	
-	cin >> userLogin;
+	c__ __  "Enter your login: ";
+	c__ >> userLogin;
 
-	cout << "Enter the password: ";
-	cin >> userPassword;
+	c__ __  "Enter the password: ";
+	c__ >> userPassword;
 
 	if (userLogin == login && userPassword == password) {
-		cout << "Hello, Admin!" << endl;
+		c__ __  "Hello, Admin!" __  e..
 	}
 	else
 	{
-		cout << "Hello, User!" << endl;
+		c__ __  "Hello, User!" __  e..
 	}
 
 	system("pause");
-	return 0;
+	r_ 0;
 }

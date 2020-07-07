@@ -1,22 +1,22 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
 	// ****** Саst *****
 	
-	int a = 256;			// 0000 0000  0000 0000  0000 0001  0000 0000
+	in. a = 256;			// 0000 0000  0000 0000  0000 0001  0000 0000
 
 	char b = (char)a;		//									0000 0000
 
-	short c = short(a);		//						 0000 0001  0000 0000
+	sh.. c = sh..(a);		//						 0000 0001  0000 0000
 
-	cout << b << endl << c << endl;
+	c__ __  b __  endl __  c __  e..
 
 	// Задержка
-	cin.get();
-	return 0;
+	c__.g..
+	r_ 0;
 }
 

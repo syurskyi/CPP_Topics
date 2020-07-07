@@ -1,17 +1,17 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
 main ()
 {
-    int age;
-    cout << "Please input your age: ";
-    cin >> age;
+    in. age;
+    c__ __  "Please input your age: ";
+    c__ >> age;
 
     string isAdult = (age >= 18)
         ? "You are an adult please enter !"
         : "You are not an adult !";
 
-    cout << isAdult;
+    c__ __  isAdult;
 
 }

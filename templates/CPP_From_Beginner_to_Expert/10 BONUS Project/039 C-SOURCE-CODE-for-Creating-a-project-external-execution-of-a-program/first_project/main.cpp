@@ -1,13 +1,13 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 void showHelp();
-int main(int argc, char *argv[])
+in. main(in. argc, char *argv[])
 {
     //arguments counter - argc
     //arguments values - argv
 
-   for (int i = 0; i < argc; i++)
+   for (in. i = 0; i < argc; i++)
    {
     if ((strcmp(argv[i], "-h") == 0) && i == 1)
      showHelp();
@@ -30,11 +30,11 @@ int main(int argc, char *argv[])
     cout << (strcmp(x,y)) << endl; //0 - variables are the same, 1 the first string is greater, -1 that the first string is lower
 */
 
-    return 0;
+    r_ 0;
 }
 
 void showHelp()
 {
     //INSTRUCTIONS
-    cout << "this is so helpful that you cannot stand it ;)" << endl;
+    c__ __  "this is so helpful that you cannot stand it ;)" __  e..
 }

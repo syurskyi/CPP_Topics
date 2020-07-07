@@ -1,30 +1,30 @@
-#include <iostream>
-#include <cstdlib>
+? |i..
+? <cstdlib>
 
-using namespace std;
+u.. s..
 
 main ()
 {
 
-    int numbers[5];
+    in. numbers[5];
 
-    for (int i = 0; i < 5; i++)
+    for (in. i = 0; i < 5; i++)
     {
-        cout << "Input " << i+1 << ". number: ";
-        cin >> numbers[i];
+        c__ __  "Input " __  i+1 __  ". number: ";
+        c__ >> numbers[i];
     }
 
     system("cls");
 
-    for (int i = 0; i < 5; i++)
+    for (in. i = 0; i < 5; i++)
     {
         if (numbers[i] % 2 == 0)
         {
-            cout << "The number " << numbers[i] << " is even." << endl;
+            c__ __  "The number " __  numbers[i] __  " is even." __  e..
         }
         else
         {
-            cout << "The number " << numbers[i] << " is odd." << endl;
+            c__ __  "The number " __  numbers[i] __  " is odd." __  e..
         }
     }
 

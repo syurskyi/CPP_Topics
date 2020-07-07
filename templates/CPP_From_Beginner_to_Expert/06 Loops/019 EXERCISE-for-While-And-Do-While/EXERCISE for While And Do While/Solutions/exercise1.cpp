@@ -1,26 +1,26 @@
-#include <iostream>
-#include <cstdlib>
+? |i..
+? <cstdlib>
 
-using namespace std;
+u.. s..
 
 main ()
 {
-     int pin, checkPin;
+     in. pin, checkPin;
 
-     cout << "Input your pin number for the first time: ";
-     cin >> pin;
+     c__ __  "Input your pin number for the first time: ";
+     c__ >> pin;
 
      system("cls");
 
      do
      {
-         cout << "Input your pin: ";
-         cin >> checkPin;
+         c__ __  "Input your pin: ";
+         c__ >> checkPin;
 
          system("cls");
 
      } while (checkPin != pin);
 
-     cout << "Correct pin, welcome !";
+     c__ __  "Correct pin, welcome !";
 
 }

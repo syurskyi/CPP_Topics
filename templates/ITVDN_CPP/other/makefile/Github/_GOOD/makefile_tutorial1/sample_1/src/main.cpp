@@ -1,10 +1,10 @@
-#include <iostream>
-#include "functions.h"
-using namespace std;
+? |i..
+? "functions.h"
+u.. s..
 
-int main(){
-    print_hello();
-    cout << endl;
-    cout << "The factorial of 5 is " << factorial(5) << endl;
-    return 0;
+in. main(){
+    prin._hello();
+    c__ __  e..
+    c__ __  "The factorial of 5 is " __  factorial(5) __  e..
+    r_ 0;
 }

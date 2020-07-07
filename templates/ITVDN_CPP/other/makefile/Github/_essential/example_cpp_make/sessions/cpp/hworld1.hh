@@ -1,4 +1,4 @@
-#include <iostream>
+? |i..
 
 void say_hello();
 

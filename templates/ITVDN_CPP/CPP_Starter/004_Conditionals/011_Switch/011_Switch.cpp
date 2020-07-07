@@ -1,16 +1,16 @@
-#include "stdafx.h"
-#include <iostream>
+? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
     setlocale(LC_ALL, "rus");
 
-    cout << "Enter the day number of the week: " << endl;
+    c__ __  "Enter the day number of the week: " __  e..
 
-    int dayNumber;
-    cin >> dayNumber;
+    in. dayNumber;
+    c__ >> dayNumber;
 
     switch (dayNumber)
     {
@@ -20,21 +20,21 @@ int main()
         case 4:
         case 5:
         {
-            cout << "Working day." << endl;
+            c__ __  "Working day." __  e..
             break;
         }
         case 6:
         case 7:
         {
-            cout << "Day off" << endl;
+            c__ __  "Day off" __  e..
             break;
         }
         default:
         {
-            cout << "There is no such day of the week." << endl;
+            c__ __  "There is no such day of the week." __  e..
             break;
         }            
     }
-    return 0;
+    r_ 0;
 }
 

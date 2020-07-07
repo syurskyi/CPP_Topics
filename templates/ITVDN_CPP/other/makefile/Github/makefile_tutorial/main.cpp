@@ -1,12 +1,12 @@
-#include "message.h"
-#include <cstdlib>
+? "message.h"
+? <cstdlib>
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
     message m;
-    m.printMessage();
+    m.prin.Message();
     
-    return 0;
+    r_ 0;
 }

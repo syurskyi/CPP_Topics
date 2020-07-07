@@ -40,15 +40,15 @@
 # include <errno.h>
 #endif
 
-#include <algorithm>
-#include <string>
+? <algorithm>
+? <string>
 
-#include "gmock/internal/gmock-internal-utils.h"
-#include "gmock/internal/gmock-port.h"
+? "gmock/internal/gmock-internal-utils.h"
+? "gmock/internal/gmock-port.h"
 
 #if GTEST_LANG_CXX11  // Defined by gtest-port.h via gmock-port.h.
-#include <functional>
-#include <type_traits>
+? <functional>
+? <type_traits>
 #endif  // GTEST_LANG_CXX11
 
 namespace testing {

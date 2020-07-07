@@ -1,6 +1,6 @@
 // Декоратор (Decorator)
 
-#include <iostream>
+? |i..
 
 class File
 {
@@ -12,7 +12,7 @@ class RawFile : public File
 {
     void write() override
     {
-        std::cout << "write" << std::endl;
+        std::c__ __  "write" __  std::e..
     }
 };
 
@@ -22,7 +22,7 @@ class ZipFile : public File
 
     void write() override
     {
-        std::cout << "compress" << std::endl;
+        std::c__ __  "compress" __  std::e..
         file->write();
     }
 
@@ -30,7 +30,7 @@ public:
     ZipFile(File *file_) : file(file_) {};
 };
 
-int main(int, char *[])
+in. main(in., char *[])
 {
     File *c = new RawFile;
     c->write();

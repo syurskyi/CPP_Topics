@@ -9,7 +9,7 @@ CXX = g++
 # We want to have the generated executable be debuggable, hence -g
 # If we want to include another directory, say because our .h files are separated out 
 # 	from our source files (a common project organization technique), we can tell the
-# 	compiler that the files called in the #include statements might also be in the 
+# 	compiler that the files called in the ? statements might also be in the
 # 	directory specified by -I
 # -fsanitize=address is to enable the address sanitizer, which will help you catch 
 #  	memory bugs early, so long as you test your code frequently

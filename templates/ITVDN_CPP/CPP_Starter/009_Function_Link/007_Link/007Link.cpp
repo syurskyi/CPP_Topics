@@ -1,28 +1,28 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 // Ссылки представляют собой "псевдонимы" для переменных и позволяют работать с данными через ссылку не по копии а по значению.
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
-	int a = 10;
+	in. a = 10;
 
-	cout << "Variable a = " << a << endl;
+	c__ __  "Variable a = " __  a __  e..
 
 	// Создаем ссылку на переменную типа int
-	int &b = a;
+	in. &b = a;
 
-	cout << "Variable a = " << b << endl;
-	cout << "Change variable b" << endl;
+	c__ __  "Variable a = " __  b __  e..
+	c__ __  "Change variable b" __  e..
 
 	b = 15;
 
-	cout << "Variable a = " << a << endl;
-	cout << "Variable a = " << b << endl;
+	c__ __  "Variable a = " __  a __  e..
+	c__ __  "Variable a = " __  b __  e..
 
 	// int &c; // Не допустимо! При объявлении ссылочную переменную необходимо инициализировать.
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 

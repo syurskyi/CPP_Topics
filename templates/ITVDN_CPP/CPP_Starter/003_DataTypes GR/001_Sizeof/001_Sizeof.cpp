@@ -1,26 +1,26 @@
 ﻿// oператор sizeof('тип [переменнаja]') в качестве параметра принимает тип, и возвращает количество байт памjaти занимаемое типом
 
-#include "stdafx.h"
-#include <iostream>
+? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
-	cout << "Bool: " << sizeof(bool) << endl;
-	cout << "Char: " << sizeof(char) << endl;
-	cout << "Short: " << sizeof(short) << endl;
-	cout << "Int: " << sizeof(int) << endl;
-	cout << "Long long: " << sizeof(long long) << endl;
-	cout << "Float: " << sizeof(float) << endl;
-	cout << "Double: " << sizeof(double) << endl;
+	c__ __  "Bool: " __  sizeof(bo..) __  e..
+	c__ __  "Char: " __  sizeof(char) __  e..
+	c__ __  "Short: " __  sizeof(sh..) __  e..
+	c__ __  "Int: " __  sizeof(in.) __  e..
+	c__ __  "Long long: " __  sizeof(long long) __  e..
+	c__ __  "Float: " __  sizeof(float) __  e..
+	c__ __  "Double: " __  sizeof(double) __  e..
 
-	int a = 4;
+	in. a = 4;
 
-	cout << sizeof a << endl;
+	c__ __  sizeof a __  e..
 
 	// zадержка
-	cin.get();
-    return 0;
+	c__.g..
+    r_ 0;
 }
 

@@ -1,23 +1,23 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
-	int a = 10;
-	int *p_a = &a;
-	int &l_a = a;
+	in. a = 10;
+	in. *p_a = &a;
+	in. &l_a = a;
 
-	cout << "Value of variable: a = " << a << "; p_a = " << *p_a << " (" << p_a << "); l_a = " << l_a << endl;
+	c__ __  "Value of variable: a = " __  a __  "; p_a = " __  *p_a __  " (" __  p_a __  "); l_a = " __  l_a __  e..
 
 	*p_a = 13;
-	cout << "Value of variable: a = " << a << "; p_a = " << *p_a << " (" << p_a << "); l_a = " << l_a << endl;
+	c__ __  "Value of variable: a = " __  a __  "; p_a = " __  *p_a __  " (" __  p_a __  "); l_a = " __  l_a __  e..
 
 	l_a = 15;
-	cout << "Value of variable: a = " << a << "; p_a = " << *p_a << " (" << p_a << "); l_a = " << l_a << endl;
+	c__ __  "Value of variable: a = " __  a __  "; p_a = " __  *p_a __  " (" __  p_a __  "); l_a = " __  l_a __  e..
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 

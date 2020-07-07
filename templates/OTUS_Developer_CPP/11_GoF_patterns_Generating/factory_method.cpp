@@ -1,6 +1,6 @@
 // Фабричный метод (Factory method)
 
-#include <iostream>
+? |i..
 
 enum class Storage { mysql, postgres };
 
@@ -15,38 +15,38 @@ struct IStorage {
 class MysqlStorage : public IStorage {
     void open() override
     {
-        std::cout << "connect to mysql" << std::endl;
+        std::c__ __  "connect to mysql" __  std::e..
     }
 
     void execute_query() override
     {
-        std::cout << "fetch mysql result" << std::endl;
+        std::c__ __  "fetch mysql result" __  std::e..
     }
 
     void close() override
     {
-        std::cout << "disconnect from mysql" << std::endl;
+        std::c__ __  "disconnect from mysql" __  std::e..
     }
 };
 
 class PostgresStorage : public IStorage {
     void open() override
     {
-        std::cout << "connect to pg" << std::endl;
+        std::c__ __  "connect to pg" __  std::e..
     }
 
     void execute_query() override
     {
-        std::cout << "fetch pg result" << std::endl;
+        std::c__ __  "fetch pg result" __  std::e..
     }
 
     void close() override
     {
-        std::cout << "disconnect from pg" << std::endl;
+        std::c__ __  "disconnect from pg" __  std::e..
     }
 };
 
-int main(int argc, char* [])
+in. main(in. argc, char* [])
 {
     auto environment = argc ? Storage::postgres : Storage::mysql;
 
@@ -67,5 +67,5 @@ int main(int argc, char* [])
 
     delete storage;
 
-    return 0;
+    r_ 0;
 }

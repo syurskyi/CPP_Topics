@@ -33,10 +33,10 @@
 #ifndef GTEST_INCLUDE_GTEST_GTEST_TEST_PART_H_
 #define GTEST_INCLUDE_GTEST_GTEST_TEST_PART_H_
 
-#include <iosfwd>
-#include <vector>
-#include "gtest/internal/gtest-internal.h"
-#include "gtest/internal/gtest-string.h"
+? <iosfwd>
+? <vector>
+? "gtest/internal/gtest-internal.h"
+? "gtest/internal/gtest-string.h"
 
 namespace testing {
 

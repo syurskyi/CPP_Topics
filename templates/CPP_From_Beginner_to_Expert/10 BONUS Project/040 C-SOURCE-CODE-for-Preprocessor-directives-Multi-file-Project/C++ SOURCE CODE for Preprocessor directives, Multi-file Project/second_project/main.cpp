@@ -1,13 +1,13 @@
-#include <iostream>
-#include "ourfirstlibrary.h"
-using namespace std;
+? |i..
+? "ourfirstlibrary.h"
+u.. s..
 /* preprocessor directives and multi-file project */
 
 #define PI 3.14
 
-int main()
+in. main()
 {
     showHelp();
-    cout << a << endl;
-    return 0;
+    c__ __  a __  e..
+    r_ 0;
 }

@@ -1,28 +1,28 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
 
-	cout.setf(ios::boolalpha);						// ¬ключить вывод логических величин в текстовом виде
+	c__.s_f(i.. bo..alpha);						// ¬ключить вывод логических величин в текстовом виде
 
-	bool a = true;
-	bool b = false;
+	bo.. a = true;
+	bo.. b = false;
 
-	cout << "a = " << a << "; b = " << b << endl;
+	c__ __  "a = " __  a __  "; b = " __  b __  e..
 
-	cout.unsetf(ios::boolalpha /* noboolalpha */);	// ќтключить вывод логических величин в текстовом виде
+	c__.uns_f(i.. bo..alpha /* noboolalpha */);	// ќтключить вывод логических величин в текстовом виде
 	
 	
-	cout.unsetf(ios::dec);
-	cout.setf(ios::showbase /* noshowbase */ | ios::showpos /* noshowpos */);
+	c__.uns_f(i.. dec);
+	c__.s_f(i.. showbase /* noshowbase */ | i.. showpos /* noshowpos */);
 
-	int number = 16;
+	in. number = 16;
 
-	cout << "number = " << number << endl;
+	c__ __  "number = " __  number __  e..
 
-    return 0;
+    r_ 0;
 }
 

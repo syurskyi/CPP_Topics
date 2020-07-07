@@ -1,31 +1,31 @@
-#include <iostream>
+? |i..
 
 class foo {
 public:
     void over() {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     }
     void over() const {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     }
     void dang() {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     }
 //    void dang() noexcept {
     void safe() noexcept(true) {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     }
 };
 
 void dang() {
-    std::cout << __PRETTY_FUNCTION__ << std::endl;
+    std::c__ __  __PRETTY_FUNCTION__ __  std::e..
 }
 
 void safe() noexcept {
-    std::cout << __PRETTY_FUNCTION__ << std::endl;
+    std::c__ __  __PRETTY_FUNCTION__ __  std::e..
 }
 
-int main() {
+in. main() {
 //    const
     foo f;
     f.over();

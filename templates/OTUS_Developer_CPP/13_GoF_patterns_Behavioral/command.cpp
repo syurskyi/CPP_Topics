@@ -6,8 +6,8 @@
 // kafka
 // binlog (random?)
 
-#include <iostream>
-#include <vector>
+? |i..
+? <vector>
 
 class Document {
     std::string text;
@@ -15,20 +15,20 @@ class Document {
 public:
     void create()
     {
-        std::cout << "new document" << std::endl;
+        std::c__ __  "new document" __  std::e..
         text.clear();
     }
 
     void new_para(const std::string& para)
     {
         text += para+"\n";
-        std::cout << "new para " << para << std::endl;
+        std::c__ __  "new para " __  para __  std::e..
     }
 
     void save_as(const std::string& name)
     {
-        std::cout << "--- " << name << "---" << std::endl;
-        std::cout << text << std::endl;
+        std::c__ __  "--- " __  name __  "---" __  std::e..
+        std::c__ __  text __  std::e..
     }
 };
 
@@ -59,7 +59,7 @@ public:
 
     void py() override
     {
-        std::cout << "text = []" << std::endl;
+        std::c__ __  "text = []" __  std::e..
     }
 };
 
@@ -76,7 +76,7 @@ public:
 
     void py() override
     {
-        std::cout << "text.append(\"" << text << "\")" << std::endl;
+        std::c__ __  "text.append(\"" __  text __  "\")" __  std::e..
     }
 };
 
@@ -93,12 +93,12 @@ public:
 
     void py() override
     {
-        std::cout << "with open(\"" << fname << """\", \"w\") as f:" << std::endl;
-        std::cout << "  f.write(\"\\n\".join(text))" << std::endl;
+        std::c__ __  "with open(\"" __  fname __  """\", \"w\") as f:" __  std::e..
+        std::c__ __  "  f.write(\"\\n\".join(text))" __  std::e..
     }
 };
 
-int main(int, char* [])
+in. main(in., char* [])
 {
     Document doc;
 
@@ -117,5 +117,5 @@ int main(int, char* [])
         i->py();
     }
 
-    return 0;
+    r_ 0;
 }

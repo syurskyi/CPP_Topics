@@ -1,14 +1,14 @@
-#include <iostream>
+? |i..
 
-#include"headerA.hpp"
-#include"headerB.hpp"
+?"headerA.hpp"
+?"headerB.hpp"
 
-using namespace std;
+u.. s..
 
-int main(){
+in. main(){
 
 
-    cout << "Ola mundo do Makefile!" << endl;
+    c__ __  "Ola mundo do Makefile!" __  e..
 
     classA a;
     classB b;
@@ -16,7 +16,7 @@ int main(){
     a.run();
     b.run();
 
-    return 0;
+    r_ 0;
 
 }
 

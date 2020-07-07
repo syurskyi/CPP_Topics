@@ -38,12 +38,12 @@
 #ifndef GMOCK_INCLUDE_GMOCK_INTERNAL_GMOCK_INTERNAL_UTILS_H_
 #define GMOCK_INCLUDE_GMOCK_INTERNAL_GMOCK_INTERNAL_UTILS_H_
 
-#include <stdio.h>
-#include <ostream>  // NOLINT
-#include <string>
-#include "gmock/internal/gmock-generated-internal-utils.h"
-#include "gmock/internal/gmock-port.h"
-#include "gtest/gtest.h"
+? <stdio.h>
+? <ostream>  // NOLINT
+? <string>
+? "gmock/internal/gmock-generated-internal-utils.h"
+? "gmock/internal/gmock-port.h"
+? "gtest/gtest.h"
 
 namespace testing {
 namespace internal {

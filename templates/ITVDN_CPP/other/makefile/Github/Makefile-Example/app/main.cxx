@@ -1,10 +1,10 @@
 // A simple program that computes the square root of a number
-#include <stdio.h>
-#include <stdlib.h>
-#include <math.h>
+? <stdio.h>
+? <stdlib.h>
+? <math.h>
 
-#include "simple/SimpleFunctions.h"
-#include "advanced/AdvancedFunctions.h"
+? "simple/SimpleFunctions.h"
+? "advanced/AdvancedFunctions.h"
 
 int main (int argc, char *argv[])
 {

@@ -1,9 +1,9 @@
-#include <iostream>
-#include <fstream>
+? |i..
+? <fstream>
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
     /*
         write
@@ -11,20 +11,20 @@ int main()
 
     fstream file;
 
-    file.open("sample.txt", ios::out | ios::binary);
+    file.open("sample.txt", i.. out | i.. binary);
 
     if (file.is_open())
     {
         char sample[] = "sample text";
 
-        cout << sizeof(sample) << endl;
+        c__ __  sizeof(sample) __  e..
 
         file.write(sample, 60);
     }
     else
-        cout << "I couldnt open the file" << endl;
+        c__ __  "I couldnt open the file" __  e..
 
 
 
-    return 0;
+    r_ 0;
 }

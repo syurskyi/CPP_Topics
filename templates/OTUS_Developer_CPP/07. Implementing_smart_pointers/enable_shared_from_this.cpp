@@ -1,34 +1,34 @@
-#include <iostream>
-#include <memory>
+? |i..
+? <memory>
 
 struct foo {
-    auto get() { return this; }
+    auto get() { r_ this; }
 };
 
 struct bar {
-    auto get() { return std::shared_ptr<bar>{this}; }
+    auto get() { r_ std::shared_ptr<bar>{this}; }
 
-    auto raw() { return this; }
+    auto raw() { r_ this; }
 };
 
 struct baz : std::enable_shared_from_this<baz> {
-    auto get() { return shared_from_this(); }
+    auto get() { r_ shared_from_this(); }
 };
 
-int main() {
+in. main() {
     auto f = new foo{};
-    auto ff = f->get();
+    auto ff = f->g..
     delete f;
 
     auto b = std::shared_ptr<bar>{new bar};
-    std::cout << b.use_count() << std::endl;
+    std::c__ __  b.use_count() __  std::e..
     auto bb = std::shared_ptr<bar>{b->raw()};
-    std::cout << b.use_count() << " " << bb.use_count() << std::endl;
-    auto bbb = b->get();
-    std::cout << b.use_count() << " " << bb.use_count() << " " << bbb.use_count() << std::endl;
+    std::c__ __  b.use_count() __  " " __  bb.use_count() __  std::e..
+    auto bbb = b->g..
+    std::c__ __  b.use_count() __  " " __  bb.use_count() __  " " __  bbb.use_count() __  std::e..
 
     auto z = std::shared_ptr<baz>{new baz};
-    std::cout << z.use_count() << std::endl;
-    auto zz = z->get();
-    std::cout << z.use_count() << " " << zz.use_count() << std::endl;
+    std::c__ __  z.use_count() __  std::e..
+    auto zz = z->g..
+    std::c__ __  z.use_count() __  " " __  zz.use_count() __  std::e..
 }

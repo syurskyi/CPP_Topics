@@ -1,17 +1,17 @@
 // Строитель (Builder)
 
-#include <cassert>
-#include <iostream>
-#include <map>
-#include <utility>
-#include <vector>
+? <cassert>
+? |i..
+? <map>
+? <utility>
+? <vector>
 
 class Tariff {
     const std::vector<double> amount;
-    const std::vector<int> discount;
+    const std::vector<in.> discount;
 
 public:
-    Tariff(std::vector<double> amount, std::vector<int> discount)
+    Tariff(std::vector<double> amount, std::vector<in.> discount)
             :amount(std::move(amount)), discount(std::move(discount))
     {
         assert(amount.size()==discount.size());
@@ -24,10 +24,10 @@ public:
 };
 
 class TariffBuilder {
-    std::map<double, int> tariff;
+    std::map<double, in.> tariff;
 
 public:
-    void add_discount(double subtotal_, int discount_)
+    void add_discount(double subtotal_, in. discount_)
     {
         tariff[subtotal_] = discount_;
     }
@@ -35,26 +35,26 @@ public:
     Tariff build()
     {
         std::vector<double> amount;
-        std::vector<int> discount;
+        std::vector<in.> discount;
         for (const auto& t : tariff) {
             amount.push_back(t.first);
             discount.push_back(t.second);
         }
 
-        return Tariff(amount, discount);
+        r_ Tariff(amount, discount);
     }
 };
 
 void Tariff::apply()
 {
-    std::cout << "tariff is:" << std::endl;
+    std::c__ __  "tariff is:" __  std::e..
     for (size_t i = 0; i<amount.size(); ++i) {
-        std::cout << "after " << amount[i] << " RUB apply " << discount[i] << "%"
-                  << std::endl;
+        std::c__ __  "after " __  amount[i] __  " RUB apply " __  discount[i] __  "%"
+                  __  std::e..
     }
 }
 
-int main(int, char* [])
+in. main(in., char* [])
 {
     auto builder = TariffBuilder();
     builder.add_discount(1000, 10);
@@ -64,5 +64,5 @@ int main(int, char* [])
 
     t.apply();
 
-    return 0;
+    r_ 0;
 }

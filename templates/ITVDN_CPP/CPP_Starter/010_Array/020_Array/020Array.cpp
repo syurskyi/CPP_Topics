@@ -1,35 +1,35 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-void get_array_info(int *arr, int count, int *max, int *min, int *avrg);
+void get_array_info(in. *arr, in. count, in. *max, in. *min, in. *avrg);
 
-int main()
+in. main()
 {
-	int * p_arr = new int[100];
+	in. * p_arr = new in.[100];
 
-	for (int i = 0; i < 100; i++)
+	for (in. i = 0; i < 100; i++)
 	{
 		*(p_arr + i) = rand();
 	}
 	
-	int max = 0, min = 0, avrg = 0;
+	in. max = 0, min = 0, avrg = 0;
 
 	get_array_info(p_arr, 100, &max, &min, &avrg);
 
-	cout << "Max element in array : " << max << ", min element = " << min << ", average value = " << avrg << endl;
+	c__ __  "Max element in array : " __  max __  ", min element = " __  min __  ", average value = " __  avrg __  e..
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 
-void get_array_info(int *arr, int count, int *max, int *min, int *avrg)
+void get_array_info(in. *arr, in. count, in. *max, in. *min, in. *avrg)
 {
 	*max = arr[0];
 	*min = arr[0];
 	*avrg = 0;
-	for (int i = 0; i < count; i++)
+	for (in. i = 0; i < count; i++)
 	{
 		if (arr[i] > *max) {
 			*max = arr[i];

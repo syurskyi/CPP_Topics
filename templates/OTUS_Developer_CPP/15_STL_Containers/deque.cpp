@@ -1,14 +1,14 @@
 // deque
-#include <iostream>
-#include <deque>
+? |i..
+? <deque>
 
-#include "xray.h"
+? "xray.h"
 
-int main() {
+in. main() {
     // через два указателя
-    std::deque<int> v; // std::vector<std::vector<int>>
+    std::deque<in.> v; // std::vector<std::vector<int>>
     for (auto i: v) {
-        std::cout << i << std::endl;
+        std::c__ __  i __  std::e..
     }
 
     v = {3, 2, 1, 0, -1, -2, -3};
@@ -17,36 +17,36 @@ int main() {
     // vs?
     v.push_front(5);
     for (auto i: v) {
-        std::cout << i << " ";
+        std::c__ __  i __  " ";
     }
-    std::cout << std::endl;
+    std::c__ __  std::e..
 
 
     // один чанк не меньше 16 элементов и не менее 4k суммарно
     std::deque<xray::object, xray::allocator<xray::object>> xray;
     for (auto i = 0u; i < 17; ++i) {
         xray.emplace_back(i);
-        std::cout << "---" << std::endl;
+        std::c__ __  "---" __  std::e..
     }
 
-    std::cout << "===" << std::endl;
+    std::c__ __  "===" __  std::e..
 
     xray.emplace_front(100);
-    std::cout << "---" << std::endl;
+    std::c__ __  "---" __  std::e..
 
     xray.emplace_front(101);
-    std::cout << "===" << std::endl;
+    std::c__ __  "===" __  std::e..
 
     auto i = xray.begin();
     std::advance(i, 10);
     xray.emplace(i, 200);
-    std::cout << "---" << std::endl;
+    std::c__ __  "---" __  std::e..
     xray.emplace(i, 201);
-    std::cout << "===" << std::endl;
+    std::c__ __  "===" __  std::e..
 
     for(const auto &i: xray)
     {
-        std::cout << i.value() << " ";
+        std::c__ __  i.value() __  " ";
     }
-    std::cout << std::endl;
+    std::c__ __  std::e..
 }

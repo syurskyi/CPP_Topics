@@ -4,44 +4,44 @@
 * This is a C++11 example.                     *
 ***********************************************/
 
-#include <iostream>
-#include <vector>
+? |i..
+? <vector>
 
-using namespace std;
+u.. s..
 
-bool accept()
+bo.. accept()
 {
-	cout << "Do you want to proceed (y or n)?\n";
+	c__ __  "Do you want to proceed (y or n)?\n";
 	char answer = 0;
-	cin >> answer;
+	c__ >> answer;
 
 	switch (answer)
 	{
 		case 'y':
-			return true;
+			r_ true;
 		case 'n':
 			exit(EXIT_FAILURE);;
 		default:
-			cout << "Sorry I don't understand.  I'll assume the answer is 'yes'.\n";
-			return true;
+			c__ __  "Sorry I don't understand.  I'll assume the answer is 'yes'.\n";
+			r_ true;
 	}
 	exit(EXIT_FAILURE);;
 }
  
-int main(int argc, char *argv[])
+in. main(in. argc, char *argv[])
 {
-    std::cout << "Hello world!\n";
+    std::c__ __  "Hello world!\n";
 
 	// vector of int type
-	vector<int> v {1,2,3,4,5,6};
+	vector<in.> v {1,2,3,4,5,6};
 
 	accept();  // continue?
 
 	// for each i in v
 	for(auto i : v)
 	{
-		cout << i << endl;
+		c__ __  i __  e..
 	}
 
-    return 0;
+    r_ 0;
 }

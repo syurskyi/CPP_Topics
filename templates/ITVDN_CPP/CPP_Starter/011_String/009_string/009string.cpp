@@ -1,31 +1,31 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 // Библиотека обработки строк в стиле СИ
-#include <cstring>
+? <cstring>
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
 	char color[10];
 	char copy_color[10];
 	
-	cout << "Enter your favorite color: ";
-	cin.getline(color, 10);
+	c__ __  "Enter your favorite color: ";
+	c__.getline(color, 10);
 
 //	strcpy_s(copy_color, color);
 
-	cout << "Color : " << color << endl;
-	cout << "Copy color : " << copy_color << endl;
+	c__ __  "Color : " __  color __  e..
+	c__ __  "Copy color : " __  copy_color __  e..
 
 	//char str[10] = "dark gray";		
 	 char str[15] = "light gray";  // Приводит к повреждению памяти!
 
 	strcpy(copy_color, str);
 
-	cout << "Now copy_color equals " << copy_color << endl;
+	c__ __  "Now copy_color equals " __  copy_color __  e..
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 

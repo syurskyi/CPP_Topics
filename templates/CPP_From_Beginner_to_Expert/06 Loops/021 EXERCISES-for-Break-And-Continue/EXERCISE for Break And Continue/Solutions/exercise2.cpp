@@ -1,21 +1,21 @@
-#include <iostream>
-#include <cstdlib>
+? |i..
+? <cstdlib>
 
-using namespace std;
+u.. s..
 
 main ()
 {
-    int chosenNumbersSum = 0;
+    in. chosenNumbersSum = 0;
     char choice;
 
-    for (int i = 1; ; i++)
+    for (in. i = 1; ; i++)
     {
 
-        cout << "The current sum is: " << chosenNumbersSum << endl << endl;
-        cout << "Do you want to add " << i << " ?" << endl;
+        c__ __  "The current sum is: " __  chosenNumbersSum __  endl __  e..
+        c__ __  "Do you want to add " __  i __  " ?" __  e..
 
-        cout << "Y - yes / N - no / Anything else - end : ";
-        cin >> choice;
+        c__ __  "Y - yes / N - no / Anything else - end : ";
+        c__ >> choice;
 
         if (choice == 'Y' || choice == 'y')
         {
@@ -34,6 +34,6 @@ main ()
         system ("cls");
     }
 
-    cout << "Good bye !";
+    c__ __  "Good bye !";
 
 }

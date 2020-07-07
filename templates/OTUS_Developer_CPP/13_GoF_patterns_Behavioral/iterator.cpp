@@ -1,9 +1,9 @@
 // Итератор (Iterator)
 
-#include <iostream>
-#include <set>
-#include <numeric>
-#include <array>
+? |i..
+? <set>
+? <numeric>
+? <array>
 
 template<class _Tp, size_t _Size>
 class quad
@@ -11,11 +11,11 @@ class quad
 public:
     auto begin()
     {
-        return flat_iterator{*this, 0};
+        r_ flat_iterator{*this, 0};
     }
     auto end()
     {
-        return flat_iterator{*this, _Size};
+        r_ flat_iterator{*this, _Size};
     }
 private:
     std::array<std::array<_Tp, _Size>, _Size> m;
@@ -27,9 +27,9 @@ private:
         {
         };
 
-        bool operator!=(const flat_iterator& it)
+        bo.. operator!=(const flat_iterator& it)
         {
-            return i!=it.i || j!=it.j;
+            r_ i!=it.i || j!=it.j;
         }
 
         void operator++()
@@ -42,7 +42,7 @@ private:
 
         _Tp& operator*()
         {
-            return o.m[i][j];
+            r_ o.m[i][j];
         }
 
     private:
@@ -52,27 +52,27 @@ private:
     };
 };
 
-int main(int, char* [])
+in. main(in., char* [])
 {
     // std algorithm
-    quad<int, 3> q{};
+    quad<in., 3> q{};
     std::iota(std::begin(q), std::end(q), 42);
 
     // for
     for (const auto& i: q) {
-        std::cout << i << " ";
+        std::c__ __  i __  " ";
     }
-    std::cout << std::endl;
+    std::c__ __  std::e..
 
     // tree
-    std::set<int> tree{std::begin(q), std::end(q)};
+    std::set<in.> tree{std::begin(q), std::end(q)};
     for (const auto& i: tree) {
-        std::cout << i << std::endl;
+        std::c__ __  i __  std::e..
     }
 
     // filesystem
     // sql
     // ...
 
-    return 0;
+    r_ 0;
 }

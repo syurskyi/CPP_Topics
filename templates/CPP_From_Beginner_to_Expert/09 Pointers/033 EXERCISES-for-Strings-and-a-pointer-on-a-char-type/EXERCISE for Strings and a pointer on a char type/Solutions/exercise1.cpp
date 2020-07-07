@@ -1,15 +1,15 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
-int main ()
+in. main ()
 {
 
     char alphabet[27] = "abcdefghijklmnopqrstuvwxyz";
 
-    for (int i = 0; i < 26; i++)
-        cout << alphabet[i];
+    for (in. i = 0; i < 26; i++)
+        c__ __  alphabet[i];
 
-    return 0;
+    r_ 0;
 }
 

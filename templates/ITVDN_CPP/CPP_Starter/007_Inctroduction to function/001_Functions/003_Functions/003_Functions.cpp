@@ -1,22 +1,22 @@
-#include "stdafx.h"
-#include <iostream>
+? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
 // прототип функции GetValue
-int GetValue();
+in. GetValue();
 
-int main()
+in. main()
 {
-    int value = GetValue();
+    in. value = GetValue();
 
-    cout << value << endl;
+    c__ __  value __  e..
 
     system("pause");
-    return 0;
+    r_ 0;
 }
 
-int GetValue()
+in. GetValue()
 {
-    return 10;
+    r_ 10;
 }

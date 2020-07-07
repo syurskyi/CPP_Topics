@@ -4,7 +4,7 @@
 // обработчики ошибки
 // почтовые фильтры
 
-#include <iostream>
+? |i..
 
 class Handler
 {
@@ -35,9 +35,9 @@ public:
     void exec(const std::string &line) override
     {
         if (line.find("DROP") == 0) {
-            std::cout << "DropHandler accept " << line << std::endl;
+            std::c__ __  "DropHandler accept " __  line __  std::e..
         } else {
-            std::cout << "DropHandler pass" << std::endl;
+            std::c__ __  "DropHandler pass" __  std::e..
             Handler::exec(line);
         }
     }
@@ -49,9 +49,9 @@ public:
     void exec(const std::string &line) override
     {
         if (line.find("SELECT") == 0) {
-            std::cout << "SelectHandler accept " << line << std::endl;
+            std::c__ __  "SelectHandler accept " __  line __  std::e..
         } else {
-            std::cout << "SelectHandler pass" << std::endl;
+            std::c__ __  "SelectHandler pass" __  std::e..
             Handler::exec(line);
         }
     }
@@ -63,15 +63,15 @@ public:
     void exec(const std::string &line) override
     {
         if (line.find("CREATE") == 0) {
-            std::cout << "CreateHandler accept " << line << std::endl;
+            std::c__ __  "CreateHandler accept " __  line __  std::e..
         } else {
-            std::cout << "CreateHandler pass" << std::endl;
+            std::c__ __  "CreateHandler pass" __  std::e..
             Handler::exec(line);
         }
     }
 };
 
-int main(int, char *[])
+in. main(in., char *[])
 {
     DropHandler handler;
 
@@ -84,5 +84,5 @@ int main(int, char *[])
     handler.exec("SELECT * FROM table");
     handler.exec("DROP table");
 
-    return 0;
+    r_ 0;
 }

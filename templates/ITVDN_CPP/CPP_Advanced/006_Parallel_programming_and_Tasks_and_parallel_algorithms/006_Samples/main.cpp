@@ -1,17 +1,17 @@
-#include <algorithm>
-#include <chrono>
-#include <exception>
-#include <future>
-#include <iostream>
-#include <numeric>
-#include <thread>
-#include <vector>
+? <algorithm>
+? <chrono>
+? <exception>
+? <future>
+? |i..
+? <numeric>
+? <thread>
+? <vector>
 
-void accumulate( std::vector< int >::iterator first,
-                 std::vector< int >::iterator last,
-                 std::promise< int > accumulate_promise )
+void accumulate( std::vector< in. >::iterator first,
+                 std::vector< in. >::iterator last,
+                 std::promise< in. > accumulate_promise )
 {
-    int sum = std::accumulate( first, last, 0 );
+    in. sum = std::accumulate( first, last, 0 );
     accumulate_promise.set_value( sum ); // Notify future
 }
 
@@ -21,23 +21,23 @@ void do_work( std::promise< void > barrier )
     barrier.set_value();
 }
 
-int add( std::shared_future< int >& a )
+in. add( std::shared_future< in. >& a )
 {
-    static int sum = 10;
-    sum += a.get();
-    return sum;
+    static in. sum = 10;
+    sum += a.g..
+    r_ sum;
 }
 
-int main()
+in. main()
 {
     // Demonstrate using promise<int> to transmit a result between threads.
-    std::vector< int > numbers = { 1, 2, 3, 4, 5, 6 };
-    std::promise< int > accumulate_promise;
-    std::future< int > accumulate_future = accumulate_promise.get_future();
+    std::vector< in. > numbers = { 1, 2, 3, 4, 5, 6 };
+    std::promise< in. > accumulate_promise;
+    std::future< in. > accumulate_future = accumulate_promise.get_future();
     std::thread work_thread(
         accumulate, numbers.begin(), numbers.end(), std::move( accumulate_promise ) );
     accumulate_future.wait(); // wait for result
-    std::cout << "result=" << accumulate_future.get() << '\n';
+    std::c__ __  "result=" __  accumulate_future.get() __  '\n';
     work_thread.join(); // wait for thread completion
 
     // Demonstrate using promise<void> to signal state between threads.
@@ -66,15 +66,15 @@ int main()
 
     auto a = std::async( [] {
         std::this_thread::sleep_for( std::chrono::seconds( 10 ) );
-        std::cout << "first" << std::endl;
+        std::c__ __  "first" __  std::e..
     } );
 
     auto b = std::async( [] {
         std::this_thread::sleep_for( std::chrono::seconds( 5 ) );
-        std::cout << "second" << std::endl;
+        std::c__ __  "second" __  std::e..
     } );
 
-    std::cout << "main" << std::endl;
+    std::c__ __  "main" __  std::e..
 
-    std::packaged_task< int() > t;
+    std::packaged_task< in.() > t;
 }

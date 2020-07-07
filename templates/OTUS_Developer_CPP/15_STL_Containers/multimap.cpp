@@ -1,12 +1,12 @@
  // multimap
-#include <iostream>
-#include <map>
+? |i..
+? <map>
 
-int main()
+in. main()
 {
-    std::multimap<int, int> x{{1, 1}, {1, 2}, {2, 1}};
+    std::multimap<in., in.> x{{1, 1}, {1, 2}, {2, 1}};
     for(auto [i, j]: x)
     {
-        std::cout << i << j << std::endl;
+        std::c__ __  i __  j __  std::e..
     }
 }

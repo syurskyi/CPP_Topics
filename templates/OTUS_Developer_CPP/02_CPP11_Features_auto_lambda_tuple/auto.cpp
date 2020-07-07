@@ -1,36 +1,36 @@
-#include <string>
-#include <vector>
+? <string>
+? <vector>
 
-auto foo(int a, float b)
+auto foo(in. a, float b)
 {
 //    if (a < b)
 //        return a;
-    return b;
+    r_ b;
 //    return (a < b) ? a : b;
 }
 
-auto bar(int a, int b);
+auto bar(in. a, in. b);
 
-auto baz(int a, int b) -> int;
+auto baz(in. a, in. b) -> in.;
 
-auto boo(int a, int b) -> decltype(a);
+auto boo(in. a, in. b) -> decltype(a);
 
-int main()
+in. main()
 {
-    int i = 0;
+    in. i = 0;
     auto ai = 0; // идентично
 
     float f = 1 + 2;
     auto af = 1 + 2; // идентично
 
-    int j = 0, k = 0.0;
+    in. j = 0, k = 0.0;
     auto aj = 0, ak = 0.0; // идентично
 
     std::string s = "hello";
     auto as = "hello"; // идентично
 
-    std::vector<bool> v;
-    std::vector<bool>::iterator vi = v.begin(); // мгого букв
+    std::vector<bo..> v;
+    std::vector<bo..>::iterator vi = v.begin(); // мгого букв
     auto avi = v.begin(); // мало букв
 
     auto a;
@@ -40,5 +40,5 @@ int main()
     auto z3 = baz(1, 2); // идентично
     auto z4 = boo(1, 2); // идентично
 
-    return 0;
+    r_ 0;
 }

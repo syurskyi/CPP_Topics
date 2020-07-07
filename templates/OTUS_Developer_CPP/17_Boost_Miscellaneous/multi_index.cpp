@@ -1,27 +1,27 @@
 // Multi Index
 
-#include <boost/multi_index_container.hpp>
-#include <boost/multi_index/hashed_index.hpp>
-#include <boost/multi_index/member.hpp>
-#include <string>
-#include <iostream>
+? <boost/multi_index_container.hpp>
+? <boost/multi_index/hashed_index.hpp>
+? <boost/multi_index/member.hpp>
+? <string>
+? |i..
 
 
 struct User
 {
-    int id;
+    in. id;
     std::string name;
-    int age;
+    in. age;
 };
 
-int main()
+in. main()
 {
     boost::multi_index::multi_index_container<
             User,
             boost::multi_index::indexed_by<
                     boost::multi_index::hashed_unique<
                             boost::multi_index::member<
-                                    User, int, &User::id
+                                    User, in., &User::id
                             >
                     >,
                     boost::multi_index::hashed_non_unique<
@@ -31,26 +31,26 @@ int main()
                     >,
                     boost::multi_index::hashed_non_unique<
                             boost::multi_index::member<
-                                User, int, &User::age
+                                User, in., &User::age
                             >
                     >
             >
     > staff;
 
     auto x = staff.insert({0, "root", 32});
-    std::cout << x.first->name << ", " << x.second << std::endl;
+    std::c__ __  x.first->name __  ", " __  x.second __  std::e..
     x = staff.insert({0, "sergey", 32});
-    std::cout << x.first->name << ", " << x.second << std::endl;
+    std::c__ __  x.first->name __  ", " __  x.second __  std::e..
     staff.insert({1, "oleg", 23});
     staff.insert({2, "andrew", 19});
 
     auto &index_by_id = staff.get<0>();
-    std::cout << "count(id=0)=" << index_by_id.count(0) << std::endl;
+    std::c__ __  "count(id=0)=" __  index_by_id.count(0) __  std::e..
 
     auto &index_by_name = staff.get<1>();
     auto oleg = index_by_name.find("oleg");
-    std::cout << "id=" << oleg->id << ", name=" << oleg->name << ", age=" << oleg->age << std::endl;
+    std::c__ __  "id=" __  oleg->id __  ", name=" __  oleg->name __  ", age=" __  oleg->age __  std::e..
 
     auto &index_by_age = staff.get<2>();
-    std::cout << "count(age=32)=" << index_by_age.count(32) << std::endl;
+    std::c__ __  "count(age=32)=" __  index_by_age.count(32) __  std::e..
 }

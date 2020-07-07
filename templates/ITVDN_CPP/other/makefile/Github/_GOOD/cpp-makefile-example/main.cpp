@@ -1,13 +1,13 @@
-#include <iostream>
-#include "hello.h"
-#include "name.h"
+? |i..
+? "hello.h"
+? "name.h"
 
-using namespace std;
+u.. s..
 
 
-int main()
+in. main()
 {
-    cout << "program start " << endl;
+    c__ __  "program start " __  e..
 
     Hello hello;
     hello.kevin();
@@ -15,5 +15,5 @@ int main()
     Name name;
     name.mynameis();
    
-    return 0;
+    r_ 0;
 }

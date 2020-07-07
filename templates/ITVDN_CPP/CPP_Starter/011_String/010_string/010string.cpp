@@ -1,20 +1,20 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 // Библиотека обработки строк в стиле СИ
-#include <cstring>
+? <cstring>
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
 	char str1[20] = "Hello";
 	char str2[] = " world!";
 	// функция производит конкатенацию строк, записывая второй параметр в первый.
 	strcat(str1, str2);
 
-	cout << str1 << endl;
+	c__ __  str1 __  e..
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 

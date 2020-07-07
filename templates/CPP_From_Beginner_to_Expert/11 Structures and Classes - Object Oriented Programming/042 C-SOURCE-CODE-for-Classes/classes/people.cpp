@@ -1,8 +1,8 @@
-#include "people.h"
-#include <iostream>
+? "people.h"
+? |i..
 
-using namespace std;
-void PersonalData::setAge(int age)
+u.. s..
+void PersonalData::setAge(in. age)
 {
     if (age < 0)
         this->age = 0;
@@ -11,21 +11,21 @@ void PersonalData::setAge(int age)
 }
 PersonalData::PersonalData()
 {
-    static int i = 0;
-    cout << "Constructor has been just invoked " << ++i << endl;
+    static in. i = 0;
+    c__ __  "Constructor has been just invoked " __  ++i __  e..
     age = 10;
 
-    p = new int[5];
+    p = new in.[5];
 }
-PersonalData::PersonalData(short age)
+PersonalData::PersonalData(sh.. age)
 {
-    cout <<"this is diff cons" << endl;
+    c__ __ "this is diff cons" __  e..
     this->age = age;
 }
 PersonalData::~PersonalData()
 {
-    static int j = 0;
-    cout << "Destructor has been just invoked " << ++j << endl;
+    static in. j = 0;
+    c__ __  "Destructor has been just invoked " __  ++j __  e..
 
     delete [] p;
 }

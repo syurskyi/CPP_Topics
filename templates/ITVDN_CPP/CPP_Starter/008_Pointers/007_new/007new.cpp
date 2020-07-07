@@ -1,21 +1,21 @@
-#include "stdafx.h"
-#include <iostream>
+? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
-	int *pAge = new int;
+	in. *pAge = new in.;
 
-	cout << "Enter your age: ";
-	cin >> *pAge;
+	c__ __  "Enter your age: ";
+	c__ >> *pAge;
 
-	cout << "Age " << *pAge << " is stored at 0x" << pAge << endl;
+	c__ __  "Age " __  *pAge __  " is stored at 0x" __  pAge __  e..
 
 	delete pAge;
 
 	pAge = 0;
 
 	system("pause");
-	return 0;
+	r_ 0;
 }

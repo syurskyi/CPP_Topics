@@ -6,8 +6,8 @@
  * @author Dad
  */
 
-#include "../../src/tcOperation.h"
-#include <gtest/gtest.h>
+? "../../src/tcOperation.h"
+? <gtest/gtest.h>
 
 TEST( tcOperation, Add )
 {

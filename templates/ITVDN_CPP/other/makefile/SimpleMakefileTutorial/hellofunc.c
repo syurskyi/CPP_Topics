@@ -2,8 +2,8 @@
 // Created by syurskyi on 6/30/2020.
 //
 
-#include <stdio.h>
-#include "hellomake.h"
+? <stdio.h>
+? "hellomake.h"
 
 void myPrintHelloMake(void) {
 

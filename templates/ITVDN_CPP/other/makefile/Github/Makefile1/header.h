@@ -12,6 +12,6 @@
  *                   https://github.com/GreatDevelopers
  */
 
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..

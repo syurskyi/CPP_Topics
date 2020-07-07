@@ -1,4 +1,4 @@
-#include <mutex>
+? <mutex>
 
 class some_big_object
 {};
@@ -17,7 +17,7 @@ public:
     friend void swap(X& lhs, X& rhs)
     {
         if(&lhs==&rhs)
-            return;
+            r_;
         std::lock(lhs.m,rhs.m);
         std::lock_guard<std::mutex> lock_a(lhs.m,std::adopt_lock);
         std::lock_guard<std::mutex> lock_b(rhs.m,std::adopt_lock);
@@ -25,5 +25,5 @@ public:
     }
 };
 
-int main()
+in. main()
 {}

@@ -1,11 +1,11 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
 main ()
 {
-    int arr[3][3];
-    int xCoordinate, yCoordinate;
+    in. arr[3][3];
+    in. xCoordinate, yCoordinate;
 
     arr[0][0] = 5;
     arr[0][1] = 3;
@@ -17,12 +17,12 @@ main ()
     arr[2][1] = 12;
     arr[2][2] = 42;
 
-    cout << "Input x coordinate: ";
-    cin >> xCoordinate;
+    c__ __  "Input x coordinate: ";
+    c__ >> xCoordinate;
 
-    cout << "Input y coordinate: ";
-    cin >> yCoordinate;
+    c__ __  "Input y coordinate: ";
+    c__ >> yCoordinate;
 
-    cout << arr[xCoordinate-1][yCoordinate-1];
+    c__ __  arr[xCoordinate-1][yCoordinate-1];
 
 }

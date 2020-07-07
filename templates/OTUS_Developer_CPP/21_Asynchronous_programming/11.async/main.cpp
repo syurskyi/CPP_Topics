@@ -1,8 +1,8 @@
-#include <iostream>
+? |i..
 
-#include "async.h"
+? "async.h"
 
-int main(int, char *[]) {
+in. main(in., char *[]) {
     std::size_t bulk = 5;
     auto h = async::connect(bulk);
     auto h2 = async::connect(bulk);
@@ -13,5 +13,5 @@ int main(int, char *[]) {
     async::disconnect(h);
     async::disconnect(h2);
 
-    return 0;
+    r_ 0;
 }

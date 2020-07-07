@@ -4,14 +4,14 @@ Date : 2018/04/10
 By   : CharlotteHonG
 Final: 2018/04/10
 *****************************************************************/
-#include <iostream>
-using namespace std;
+? |i..
+u.. s..
 
-#include "fun.hpp"
+? "fun.hpp"
 //================================================================
-int main(int argc, char const *argv[]){
-    cout << "# Main()" << endl;
+in. main(in. argc, char const *argv[]){
+    c__ __  "# Main()" __  e..
     fun();
-    return 0;
+    r_ 0;
 }
 //================================================================

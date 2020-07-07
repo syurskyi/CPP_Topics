@@ -1,37 +1,37 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-void recursion(int counter);
-void func(int counter);
+void recursion(in. counter);
+void func(in. counter);
 
-int main()
+in. main()
 {
 	func(3);
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 
-void recursion(int counter)
+void recursion(in. counter)
 {
 	counter--;
 
-	cout << "Forst part of recursion function " << counter << endl;
+	c__ __  "Forst part of recursion function " __  counter __  e..
 
 	if (counter != 0)
 	{
 		func(counter);
 	}
-	cout << "Second part of recursion function " << counter << endl;
+	c__ __  "Second part of recursion function " __  counter __  e..
 }
 
-void func(int counter)
+void func(in. counter)
 {
-	cout << "First part of func function " << counter << endl;
+	c__ __  "First part of func function " __  counter __  e..
 
 	recursion(counter);
 
-	cout << "Second part of func function " << counter << endl;
+	c__ __  "Second part of func function " __  counter __  e..
 }

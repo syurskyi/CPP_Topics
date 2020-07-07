@@ -1,6 +1,6 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
 void division();
 
@@ -13,12 +13,12 @@ void division()
 {
     double firstNumber, secondNumber, result;
 
-    cout << "Input the first number: ";
-    cin >> firstNumber;
-    cout << "Input the number to divide by: ";
-    cin >> secondNumber;
+    c__ __  "Input the first number: ";
+    c__ >> firstNumber;
+    c__ __  "Input the number to divide by: ";
+    c__ >> secondNumber;
 
     result = firstNumber / secondNumber;
-    cout << firstNumber << " / " << secondNumber << " = " << result;
+    c__ __  firstNumber __  " / " __  secondNumber __  " = " __  result;
 
 }

@@ -1,14 +1,14 @@
-int fib_wrong(int n) {
+in. fib_wrong(in. n) {
   if (n > 30) {
-    return 0;
+    r_ 0;
   }
   if (n <= 0) {
-    return 0;
+    r_ 0;
   }
   else if (n == 1) {
-    return 1;
+    r_ 1;
   }
   else {
-    return fib_wrong(n - 1) + fib_wrong(n - 2);
+    r_ fib_wrong(n - 1) + fib_wrong(n - 2);
   }
 }

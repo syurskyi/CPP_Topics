@@ -1,36 +1,36 @@
-#include "stdafx.h"
-#include <iostream>
-#include <string>
+? *s..
+? |i..
+? <string>
 
-using namespace std;
+u.. s..
 
 void SampleFunction();
 void Global();
 
 string value = "Global variable!";
 
-int main()
+in. main()
 {
 	string value = "Local variable in Main!";
 
-	cout << value << endl;
+	c__ __  value __  e..
 
 	SampleFunction();
 
 	Global();
 
-	cin.get();
-    return 0;
+	c__.g..
+    r_ 0;
 }
 
 void SampleFunction()
 {
 	string value = "Local variable in SampleFunction!";
 
-	cout << value << endl;
+	c__ __  value __  e..
 }
 
 void Global()
 {
-	cout << value << endl;
+	c__ __  value __  e..
 }

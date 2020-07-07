@@ -1,9 +1,9 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
 	// В стандарте С++11 появилось новое средство позволяющее компилятору определять тип переменной
 
@@ -13,10 +13,10 @@ int main()
 
 	auto c = 'A'; // переменная c типа char
 
-    cout << a << endl << b << endl << c << endl;
+    c__ __  a __  endl __  b __  endl __  c __  e..
 
 	// Задержка
-	cin.get(); 
-    return 0;
+	c__.g..
+    r_ 0;
 }
 

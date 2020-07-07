@@ -1,23 +1,23 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
-int main ()
+in. main ()
 {
 
-    int a = 5;
-    int *p = &a;
-    int **pp = &p;
+    in. a = 5;
+    in. *p = &a;
+    in. **pp = &p;
 
-    cout << "Value of the variable a is equal to: " << a << endl;
-    cout << "The address of the variable a is equal to: " << &a << endl;
-    cout << "The value stored in the pointer p is equal to: " << p << endl;
-    cout << "To get the value of the variable a using pointer p one has to point to the address in the pointer p, *p = " << *p << endl << endl;
-    cout << "Pointer p has its own address which is: " << &p << endl;
-    cout << "The value stored in the pointer pp is equal to: " << pp << endl;
-    cout << "To get the value of the pointer p using pointer pp one has to point to the address in the pointer pp, *pp = " << *pp << endl;
-    cout << "To get the value of he variable a using pointer pp one has to point to the address in the pointer pp and p, **pp = " << **pp << endl;
+    c__ __  "Value of the variable a is equal to: " __  a __  e..
+    c__ __  "The address of the variable a is equal to: " __  &a __  e..
+    c__ __  "The value stored in the pointer p is equal to: " __  p __  e..
+    c__ __  "To get the value of the variable a using pointer p one has to point to the address in the pointer p, *p = " __  *p __  endl __  e..
+    c__ __  "Pointer p has its own address which is: " __  &p __  e..
+    c__ __  "The value stored in the pointer pp is equal to: " __  pp __  e..
+    c__ __  "To get the value of the pointer p using pointer pp one has to point to the address in the pointer pp, *pp = " __  *pp __  e..
+    c__ __  "To get the value of he variable a using pointer pp one has to point to the address in the pointer pp and p, **pp = " __  **pp __  e..
 
-    return 0;
+    r_ 0;
 }
 

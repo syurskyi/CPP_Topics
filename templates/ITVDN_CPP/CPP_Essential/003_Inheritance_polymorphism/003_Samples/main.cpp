@@ -1,15 +1,15 @@
-#include <iostream>
-#include <string>
-#include "cat.h"
+? |i..
+? <string>
+? "cat.h"
 
-using namespace std;
+u.. s..
 
 void foo(Mammal * m)
 {
     m->say();
 }
 
-int main()
+in. main()
 {
     Cat cat;
     cat.say();
@@ -24,7 +24,7 @@ int main()
     mammals[0] = &cat;
     mammals[1] = &mam;
 
-    for(int i = 0; i < 2; i++)
+    for(in. i = 0; i < 2; i++)
     {
         mammals[i]->say();
     }
@@ -33,5 +33,5 @@ int main()
 
     foo(&cat);
 
-    return 0;
+    r_ 0;
 }

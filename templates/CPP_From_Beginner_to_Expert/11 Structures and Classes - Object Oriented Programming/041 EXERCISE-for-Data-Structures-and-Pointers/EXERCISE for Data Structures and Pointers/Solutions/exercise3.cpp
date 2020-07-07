@@ -1,18 +1,18 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
 struct book
 {
     string author;
     string title;
-    int publicationYear;
+    in. publicationYear;
 };
 
 void setBook(book&);
 void showBook(book);
 
-int main()
+in. main()
 {
     book book1, book2, book3;
 
@@ -24,20 +24,20 @@ int main()
     showBook(book1);
     showBook(book2);
     showBook(book3);
-    return 0;
+    r_ 0;
 }
 
 void setBook(book &bookToSet)
 {
-    cout << "Who is the author of the book: ";
-    getline(cin, bookToSet.author);
-    cout << "What is the title of the book: ";
-    getline(cin, bookToSet.title);
-    cout << "In what year was the book published: ";
-    cin >> bookToSet.publicationYear;
-    cin.ignore();
+    c__ __  "Who is the author of the book: ";
+    getline(c__, bookToSet.author);
+    c__ __  "What is the title of the book: ";
+    getline(c__, bookToSet.title);
+    c__ __  "In what year was the book published: ";
+    c__ >> bookToSet.publicationYear;
+    c__.ignore();
 }
 void showBook(book bookToShow)
 {
-    cout << endl << bookToShow.author <<  " " << bookToShow.title <<  " " << bookToShow.publicationYear << endl;
+    c__ __  endl __  bookToShow.author __   " " __  bookToShow.title __   " " __  bookToShow.publicationYear __  e..
 }

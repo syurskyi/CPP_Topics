@@ -1,21 +1,21 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
 main ()
 {
 
-    int number;
+    in. number;
     long double factorialResult = 1;
 
-    cout << "Input the number: ";
-    cin >> number;
+    c__ __  "Input the number: ";
+    c__ >> number;
 
 
-    for (int i = 1; i <= number; i++)
+    for (in. i = 1; i <= number; i++)
     {
         factorialResult *= i;
-        cout << i << "! = " << factorialResult << endl;
+        c__ __  i __  "! = " __  factorialResult __  e..
     }
 
 

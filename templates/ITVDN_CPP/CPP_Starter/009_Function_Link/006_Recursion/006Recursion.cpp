@@ -1,28 +1,28 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-void convert(int n);
+void convert(in. n);
 
-int main()
+in. main()
 {
-	int number = 0;
+	in. number = 0;
 
-	cout << "Enter the number: ";
-	cin >> number;
+	c__ __  "Enter the number: ";
+	c__ >> number;
 
 	convert(number);
 	
-	cout << endl;
+	c__ __  e..
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 
-void convert(int n)
+void convert(in. n)
 {
-	int temp;
+	in. temp;
 
 	temp = n % 2;
 
@@ -31,6 +31,6 @@ void convert(int n)
 		convert(n / 2);
 	}
 
-	cout << temp;
+	c__ __  temp;
 }
 

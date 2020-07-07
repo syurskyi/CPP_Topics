@@ -1,15 +1,15 @@
 // Program Options
 
-#include <boost/program_options.hpp>
-#include <iostream>
+? <boost/program_options.hpp>
+? |i..
 
 namespace po = boost::program_options;
 
 void set_bulk(size_t bulk) {
-    std::cout << "bulk size is " << bulk << std::endl;
+    std::c__ __  "bulk size is " __  bulk __  std::e..
 }
 
-int main(int argc, const char *argv[]) {
+in. main(in. argc, const char *argv[]) {
     try {
         po::options_description desc{"Options"};
         desc.add_options()
@@ -22,13 +22,13 @@ int main(int argc, const char *argv[]) {
         notify(vm);
 
         if (vm.count("help"))
-            std::cout << desc << '\n';
+            std::c__ __  desc __  '\n';
         else if (vm.count("config"))
-            std::cout << "readfrom: " << vm["config"].as<std::string>() << std::endl;
+            std::c__ __  "readfrom: " __  vm["config"].as<std::string>() __  std::e..
         else if (vm.count("bulk"))
-            std::cout << "bulk: " << vm["bulk"].as<size_t>() << std::endl;
+            std::c__ __  "bulk: " __  vm["bulk"].as<size_t>() __  std::e..
     }
     catch (const std::exception &e) {
-        std::cerr << e.what() << std::endl;
+        std::cerr __  e.what() __  std::e..
     }
 }

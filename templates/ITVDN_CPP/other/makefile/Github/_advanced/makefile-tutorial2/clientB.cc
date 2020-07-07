@@ -1,5 +1,5 @@
-#include "libfib.h"
-#include <iostream>
+? "libfib.h"
+? |i..
 
 int main() {
   printf("%d\n", fib_slow(10));

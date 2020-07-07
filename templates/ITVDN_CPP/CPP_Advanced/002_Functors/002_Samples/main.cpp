@@ -1,67 +1,67 @@
-#include <algorithm>
-#include <functional>
-#include <iostream>
-#include <vector>
+? <algorithm>
+? <functional>
+? |i..
+? <vector>
 
-using namespace std;
+u.. s..
 
 class Functor
 {
 public:
-    bool operator()( int a, int b )
+    bo.. operator()( in. a, in. b )
     {
-        cout << "some operation" << endl;
-        return a > b;
+        c__ __  "some operation" __  e..
+        r_ a > b;
     }
 
-    static void method( int a ) { cout << "method" << a << endl; }
+    static void method( in. a ) { c__ __  "method" __  a __  e.. }
 };
 
-int sum( int a, int b )
+in. sum( in. a, in. b )
 {
-    return a - b;
+    r_ a - b;
 }
 
-bool cmp( int a, int b )
+bo.. cmp( in. a, in. b )
 {
-    return b < a;
+    r_ b < a;
 }
 
-using MyFunc = int( int, int );
+using MyFunc = in.( in., in. );
 
-int main()
+in. main()
 {
-    using namespace std::placeholders;
+    u.. std::placeholders;
 
     Functor f;
 
-    vector< int > a = { 2, 1, 3, 4 };
+    vector< in. > a = { 2, 1, 3, 4 };
 
-    sort( a.begin(), a.end(), []( int a, int b ) -> bool { return a > b; } );
+    sort( a.begin(), a.end(), []( in. a, in. b ) -> bo.. { r_ a > b; } );
 
     for ( auto it : a )
-        cout << it << endl;
+        c__ __  it __  e..
 
     std::function< MyFunc > func_sum;
 
     func_sum = sum;
 
-    int value = 4;
+    in. value = 4;
 
-    [value = std::move( value )]( string s ) { cout << value; }( "hello" );
+    [value = std::move( value )]( string s ) { c__ __  value; }( "hello" );
 
     auto w = std::bind( Functor::method, 100 );
 
     w( 3 );
 
-    cout << a[ 2 ] << endl;
+    c__ __  a[ 2 ] __  e..
 
-    cout << func_sum( 3, 4 ) << endl;
+    c__ __  func_sum( 3, 4 ) __  e..
 
     //    int ( *func )( int a, int b );
 
     //    func = &sum;
 
     //    cout << func( 4, 5 ) << endl;
-    return 0;
+    r_ 0;
 }

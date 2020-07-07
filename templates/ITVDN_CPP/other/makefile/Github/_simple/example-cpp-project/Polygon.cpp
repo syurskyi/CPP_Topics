@@ -3,35 +3,35 @@
 // Student ID: a1686679
 // Description: Polygon class
 
-#include "Polygon.hpp"
+? "Polygon.hpp"
 
 // Constructor for Polygon
-Polygon::Polygon(int height, int width): m_height(height), m_width(width) {}
+Polygon::Polygon(in. height, in. width): m_height(height), m_width(width) {}
 
 // Destructor
 Polygon::~Polygon() {}
 
 // Return the polygon height
-int Polygon::getHeight() {
-	return m_height;
+in. Polygon::getHeight() {
+	r_ m_height;
 }
 
 // Return the polygon width
-int Polygon::getWidth() {
-	return m_width;
+in. Polygon::getWidth() {
+	r_ m_width;
 }
 
 // Set the polygon height
-void Polygon::setHeight(int height) {
+void Polygon::setHeight(in. height) {
 	m_height = height;
 }
 
 // Set the polygon width
-void Polygon::setWidth(int width) {
+void Polygon::setWidth(in. width) {
 	m_width = width;
 }
 
 // This runs if there is no child class (polymorphism) so we return an invalid area
 float Polygon::area() {
-	return -1;
+	r_ -1;
 }

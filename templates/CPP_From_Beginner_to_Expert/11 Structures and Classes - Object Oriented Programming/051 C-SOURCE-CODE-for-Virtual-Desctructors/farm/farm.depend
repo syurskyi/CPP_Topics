@@ -1,20 +1,20 @@
 # depslib dependency file v1.0
 1309778274 source:d:\video kursy en\c++\46. polymorphism, virtual functions, abstract classes\farm\main.cpp
-	<iostream>
+	|i..
 	"farm.h"
 
 1309778693 d:\video kursy en\c++\46. polymorphism, virtual functions, abstract classes\farm\farm.h
-	<iostream>
+	|i..
 
 1309777890 source:d:\video kursy en\c++\46. polymorphism, virtual functions, abstract classes\farm\farm.cpp
 	"farm.h"
 
 1309788351 source:d:\video kursy en\c++\47. virtual destructor\farm\main.cpp
-	<iostream>
+	|i..
 	"farm.h"
 
 1309788478 d:\video kursy en\c++\47. virtual destructor\farm\farm.h
-	<iostream>
+	|i..
 
 1309788295 source:d:\video kursy en\c++\47. virtual destructor\farm\farm.cpp
 	"farm.h"

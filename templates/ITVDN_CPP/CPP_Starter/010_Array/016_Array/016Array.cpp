@@ -1,27 +1,27 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
 	// Динамически выделяем массив для 50-ти элементов типа int
-	int *arr = new int[50];
+	in. *arr = new in.[50];
 
 	// Заполняем массив.
-	for (int i = 0; i < 50; i++)
+	for (in. i = 0; i < 50; i++)
 	{
 		*(arr + i) = (i + 1) * 2;
 	}
 	
 	// Выводим значения элементов массива.
-	for (int i = 0; i < 50; i++)
+	for (in. i = 0; i < 50; i++)
 	{
-		cout << *(arr + i) << endl;
+		c__ __  *(arr + i) __  e..
 	}
 
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 

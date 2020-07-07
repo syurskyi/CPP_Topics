@@ -1,9 +1,9 @@
-#include <iostream>
-#include <fstream>
+? |i..
+? <fstream>
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
     /*
         getline(where to store the extracted characters, how many characters should be taken unlles, seperator(delimiter)) - extracts seperators and delete it
@@ -15,25 +15,25 @@ int main()
 
     fstream file;
 
-    file.open("sample.txt", ios::in | ios::binary);
+    file.open("sample.txt", i.. in | i.. binary);
 
     if (file.is_open())
     {
         char first, second;
         char buffer[50];
 
-        cin >> buffer;
+        c__ >> buffer;
 
-        cout << buffer << endl;
+        c__ __  buffer __  e..
         do
         {
             file.getline(buffer, 50, ' ');
 
-            second = file.get();
+            second = file.g..
 
             file.ignore(40, '\n');
 
-            cout << buffer << " " << second << ". " << endl;
+            c__ __  buffer __  " " __  second __  ". " __  e..
 
         } while(!file.eof());
 
@@ -41,7 +41,7 @@ int main()
 
     }
     else
-        cout << "The file couldn't be opened properly" << endl;
+        c__ __  "The file couldn't be opened properly" __  e..
 
-    return 0;
+    r_ 0;
 }

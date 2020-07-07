@@ -1,11 +1,11 @@
-#include "builder.h"
+? "builder.h"
 
-#include "meta_strategy.h"
-#include <iostream>
-#include <memory>
-#include <string>
+? "meta_strategy.h"
+? |i..
+? <memory>
+? <string>
 
-using namespace std;
+u.. s..
 
 void Pizza::setDough( const string& dough )
 {
@@ -24,13 +24,13 @@ void Pizza::setTopping( const string& topping )
 
 void Pizza::open() const
 {
-    cout << "Pizza with " << m_dough << " dough, " << m_sauce << " sauce and " << m_topping
-         << " topping. Mmm." << endl;
+    c__ __  "Pizza with " __  m_dough __  " dough, " __  m_sauce __  " sauce and " __  m_topping
+         __  " topping. Mmm." __  e..
 }
 
 Pizza* PizzaBuilder::getPizza()
 {
-    return m_pizza.release();
+    r_ m_pizza.release();
 }
 
 void PizzaBuilder::createNewPizzaProduct()

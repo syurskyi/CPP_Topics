@@ -1,21 +1,21 @@
-#include <array>
-#include <iostream>
+? <array>
+? |i..
 
-int foo(int i) {
-    return i + i;
+in. foo(in. i) {
+    r_ i + i;
 }
 
-constexpr int bar(int i) {
-    return i + i;
+constexpr in. bar(in. i) {
+    r_ i + i;
 }
 
-int main(int, char *[]) {
+in. main(in., char *[]) {
     auto c = std::array<char, 10>();
 
-    int n = 10;
+    in. n = 10;
 //    auto d = std::array<char, n>(); // not a constant
 
-    const int m = 10;
+    const in. m = 10;
     auto e = std::array<char, m>();
 
     // const vs constexpr
@@ -28,7 +28,7 @@ int main(int, char *[]) {
    // auto g = std::array<char, bar(n)>(); // is not a constant
     auto h = std::array<char, bar(m)>();
 
-    int z = bar(10);
+    in. z = bar(10);
 
-    return 0;
+    r_ 0;
 }

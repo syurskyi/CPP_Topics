@@ -1,5 +1,5 @@
-#include "eggs.h"
-#include <iostream>
+? "eggs.h"
+? |i..
 
 Eggs::Eggs(){
     std::cout << "Chicken laid some eggs" << std::endl;

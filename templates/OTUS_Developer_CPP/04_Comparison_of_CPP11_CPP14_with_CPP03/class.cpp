@@ -1,5 +1,5 @@
-#include <iostream>
-#include <vector>
+? |i..
+? <vector>
 
 struct foo
 {
@@ -21,6 +21,6 @@ class bar final : foo
 // {
 // }
 
-int main(int, char *[]) {
-    return 0;
+in. main(in., char *[]) {
+    r_ 0;
 }

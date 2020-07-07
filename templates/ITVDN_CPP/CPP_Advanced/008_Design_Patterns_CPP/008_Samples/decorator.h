@@ -1,10 +1,10 @@
 #ifndef DECORATOR_H
 #define DECORATOR_H
 
-#include "meta_strategy.h"
-#include <iostream>
-#include <memory>
-#include <string>
+? "meta_strategy.h"
+? |i..
+? <memory>
+? <string>
 
 class Interface
 {

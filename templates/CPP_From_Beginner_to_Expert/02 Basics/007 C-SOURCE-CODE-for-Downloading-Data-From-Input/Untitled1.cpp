@@ -1,17 +1,17 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
 main()
 {
     string name, surname;
 
-    cout << "Enter your name: ";
-    cin >> name;
+    c__ __  "Enter your name: ";
+    c__ >> name;
 
-    cout << "Enter your surname: ";
-    cin >> surname;
+    c__ __  "Enter your surname: ";
+    c__ >> surname;
 
-    cout << "Welcome " << name << " " << surname;
+    c__ __  "Welcome " __  name __  " " __  surname;
 
 }

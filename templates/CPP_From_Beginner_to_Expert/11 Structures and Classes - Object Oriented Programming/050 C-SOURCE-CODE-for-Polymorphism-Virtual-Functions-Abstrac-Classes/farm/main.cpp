@@ -1,11 +1,11 @@
-#include <iostream>
-#include "farm.h"
+? |i..
+? "farm.h"
 
-using namespace std;
+u.. s..
 /* polymorphism, virtual functions, abstract class */
 void voiceOfAnimal(Animal *);
 void voiceOfAnimal(Animal &);
-int main()
+in. main()
 {
 
     Dog dog;
@@ -21,13 +21,13 @@ int main()
 
 
 
-    return 0;
+    r_ 0;
 }
 void voiceOfAnimal(Animal *p)
 {
-    cout << p->getVoice() << endl;
+    c__ __  p->getVoice() __  e..
 }
 void voiceOfAnimal(Animal &p)
 {
-    cout << p.getVoice() << endl;
+    c__ __  p.getVoice() __  e..
 }

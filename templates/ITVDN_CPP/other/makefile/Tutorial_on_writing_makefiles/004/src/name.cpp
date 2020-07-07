@@ -1,6 +1,6 @@
-#include "../header/name.h"
+? "../header/name.h"
 
 void Name::mynameis()
 {
-  cout << "My name is Serhii Yurskyi" << endl;
+  c__ __  "My name is Serhii Yurskyi" __  e..
 }

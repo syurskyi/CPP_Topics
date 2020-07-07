@@ -1,31 +1,31 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 /* TYPE CASTING */
 
-int main()
+in. main()
 {
     double var = 5.6;
 
-    int a = 5;
-    int b = 7;
-    cout << (double)a / b << endl;
+    in. a = 5;
+    in. b = 7;
+    c__ __  (double)a / b __  e..
 
-    cout << (int) var << endl; //explict way C
+    c__ __  (in.) var __  e.. //explict way C
 
-    int x = 444;
-    short y = x; //implicit way of casting
+    in. x = 444;
+    sh.. y = x; //implicit way of casting
 
-    cout << y << endl;
+    c__ __  y __  e..
 
-    cout <<  int(var) << endl; //explict way C
-    cout <<  static_cast<int>(var) << endl; //explict way in C++
+    c__ __   in.(var) __  e.. //explict way C
+    c__ __   static_cast<in.>(var) __  e.. //explict way in C++
 
 
     char ch;
 
-    cin >> ch;
+    c__ >> ch;
 
-    cout << (int)ch << endl;
-    return 0;
+    c__ __  (in.)ch __  e..
+    r_ 0;
 }

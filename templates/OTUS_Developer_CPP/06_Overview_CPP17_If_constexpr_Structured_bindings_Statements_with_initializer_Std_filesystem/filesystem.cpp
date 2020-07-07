@@ -1,6 +1,6 @@
-#include <filesystem>
-#include <fstream>
-#include <iostream>
+? <filesystem>
+? <fstream>
+? |i..
 
 /**
 	Note: 
@@ -8,67 +8,67 @@
 	-lstdc++fs
 **/
 
-int main() {
+in. main() {
 
 	const std::filesystem::path currentDir = std::filesystem::current_path();
-	std::cout << currentDir << std::endl;
+	std::c__ __  currentDir __  std::e..
 
 	const std::filesystem::path someFile = currentDir / "subfolder" / "readme.txt";
-	std::cout << someFile << std::endl;
+	std::c__ __  someFile __  std::e..
 
 	const std::filesystem::path otherFile = currentDir / "otherFolder/otherFile.txt";
-	std::cout << otherFile << std::endl;
+	std::c__ __  otherFile __  std::e..
 
 	// parent folder
-	std::cout << otherFile.parent_path() << std::endl;
+	std::c__ __  otherFile.parent_path() __  std::e..
 	// filename with extenstion
-	std::cout << otherFile.filename() << std::endl;
+	std::c__ __  otherFile.filename() __  std::e..
 	// filename only
-	std::cout << otherFile.stem() << std::endl;
+	std::c__ __  otherFile.stem() __  std::e..
 	// extension
-	std::cout << otherFile.extension() << std::endl;
+	std::c__ __  otherFile.extension() __  std::e..
 
 	const std::filesystem::path cyrillic = currentDir / L"директория/файл.txt";
-	std::cout << cyrillic << std::endl;
-	std::cout << cyrillic.u8string() << std::endl;
+	std::c__ __  cyrillic __  std::e..
+	std::c__ __  cyrillic.u8string() __  std::e..
 
 
 	const std::filesystem::path folder = currentDir / "folder";
-	std::cout << "First exists: " << std::filesystem::exists(folder) << std::endl;
+	std::c__ __  "First exists: " __  std::filesystem::exists(folder) __  std::e..
 	try {
 		std::filesystem::create_directories(folder);
 	}
     catch (const std::filesystem::filesystem_error& e)
     {
-        std::cout << "Exception! " << e.what() << '\n';
+        std::c__ __  "Exception! " __  e.what() __  '\n';
 	}
-	std::cout << "Second exists: " << std::filesystem::exists(folder) << std::endl;
+	std::c__ __  "Second exists: " __  std::filesystem::exists(folder) __  std::e..
 
 	const std::filesystem::path wrongFolder = "/not_permitted";
 
 	std::error_code errCode;
 	std::filesystem::create_directories(wrongFolder, errCode);
 	if (errCode) {
-		std::cout << "Creation failed! " << errCode.message() << std::endl;
+		std::c__ __  "Creation failed! " __  errCode.message() __  std::e..
 	}
 
 	const std::filesystem::path file = folder / "file.txt";
 	{
 		std::ofstream stream(file.native());
 		if (!stream.is_open()) {
-			std::cout << "Failed to create file: " << file << std::endl;
+			std::c__ __  "Failed to create file: " __  file __  std::e..
 		}
 		else {
-			stream << "Hello, World!" << std::endl;
+			stream __  "Hello, World!" __  std::e..
 		}
 	}
-	std::cout << "File exists: " << std::filesystem::exists(file) << std::endl;
-	std::cout << "IsRegular: " << std::filesystem::is_regular_file(file) << std::endl;
-	std::cout << "FileSize = " << std::filesystem::file_size(file) << std::endl;
+	std::c__ __  "File exists: " __  std::filesystem::exists(file) __  std::e..
+	std::c__ __  "IsRegular: " __  std::filesystem::is_regular_file(file) __  std::e..
+	std::c__ __  "FileSize = " __  std::filesystem::file_size(file) __  std::e..
 
 	std::filesystem::remove(file);
 
-	std::cout << "File exists after remove: " << std::filesystem::exists(file) << std::endl;
+	std::c__ __  "File exists after remove: " __  std::filesystem::exists(file) __  std::e..
 
-	return 0;
+	r_ 0;
 }

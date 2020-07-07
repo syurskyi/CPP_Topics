@@ -1,10 +1,10 @@
-int main(int, char* [])
+in. main(in., char* [])
 {
 //    volatile
-    int a;
+    in. a;
 
     a = 100;
     a = 42;
 
-    return a;
+    r_ a;
 }

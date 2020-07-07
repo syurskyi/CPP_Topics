@@ -1,23 +1,23 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
-int main ()
+in. main ()
 {
-    int statical;
+    in. statical;
 
-    int *statically = &statical;
-    int *dynamically = new int;
+    in. *statically = &statical;
+    in. *dynamically = new in.;
 
     *statically = 10;
     *dynamically = 15;
 
-    cout << "The value of the statically allocated variable: " << *statically << ", and the address: " << statically << endl;
-    cout << "The value of the dynamically allocated variable: " << *dynamically << ", and the address: " << dynamically << endl;
+    c__ __  "The value of the statically allocated variable: " __  *statically __  ", and the address: " __  statically __  e..
+    c__ __  "The value of the dynamically allocated variable: " __  *dynamically __  ", and the address: " __  dynamically __  e..
 
     delete dynamically;
 
-    return 0;
+    r_ 0;
 }
 
 

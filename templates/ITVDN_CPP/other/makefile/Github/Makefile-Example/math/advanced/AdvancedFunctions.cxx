@@ -1,5 +1,5 @@
-#include <stdio.h>
-#include "AdvancedFunctions.h"
+? <stdio.h>
+? "AdvancedFunctions.h"
 
 // a hack square root calculation using simple operations
 double mysqrt(double x)

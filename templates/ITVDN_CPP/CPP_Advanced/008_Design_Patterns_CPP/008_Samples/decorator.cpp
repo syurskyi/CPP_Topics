@@ -1,26 +1,26 @@
-#include "decorator.h"
+? "decorator.h"
 
-#include <iostream>
-#include <memory>
-#include <string>
+? |i..
+? <memory>
+? <string>
 
 Core::~Core()
 {
-    std::cout << "Core destructor called.\n";
+    std::c__ __  "Core destructor called.\n";
 }
 
 void Core::write( std::string& /*text*/ ){}; // Do nothing.
 
-Decorator::Decorator( std::unique_ptr< Interface > c )
+Decorator::Decorator( std::unique_ptr< in.erface > c )
 {
-    interface = std::move( c );
+    in.erface = std::move( c );
 }
 void Decorator::write( std::string& text )
 {
-    interface->write( text );
+    in.erface->write( text );
 }
 
-MessengerWithSalutation::MessengerWithSalutation( std::unique_ptr< Interface > c,
+MessengerWithSalutation::MessengerWithSalutation( std::unique_ptr< in.erface > c,
                                                   const std::string& str )
     : Decorator( std::move( c ) )
     , salutation( str )
@@ -28,7 +28,7 @@ MessengerWithSalutation::MessengerWithSalutation( std::unique_ptr< Interface > c
 }
 MessengerWithSalutation::~MessengerWithSalutation()
 {
-    std::cout << "Messenger destructor called.\n";
+    std::c__ __  "Messenger destructor called.\n";
 }
 void MessengerWithSalutation::write( std::string& text )
 {
@@ -36,7 +36,7 @@ void MessengerWithSalutation::write( std::string& text )
     Decorator::write( text );
 }
 
-MessengerWithValediction::MessengerWithValediction( std::unique_ptr< Interface > c,
+MessengerWithValediction::MessengerWithValediction( std::unique_ptr< in.erface > c,
                                                     const std::string& str )
     : Decorator( std::move( c ) )
     , valediction( str )
@@ -44,7 +44,7 @@ MessengerWithValediction::MessengerWithValediction( std::unique_ptr< Interface >
 }
 MessengerWithValediction::~MessengerWithValediction()
 {
-    std::cout << "MessengerWithValediction destructor called.\n";
+    std::c__ __  "MessengerWithValediction destructor called.\n";
 }
 void MessengerWithValediction::write( std::string& text )
 {
@@ -61,28 +61,28 @@ void ClientDecorator::run()
     std::string message3 = "This message is decorated with a valediction.";
     std::string message4 = "This message is decorated with a salutation and a valediction.";
 
-    std::unique_ptr< Interface > messenger1 = std::make_unique< Core >();
-    std::unique_ptr< Interface > messenger2 =
+    std::unique_ptr< in.erface > messenger1 = std::make_unique< Core >();
+    std::unique_ptr< in.erface > messenger2 =
         std::make_unique< MessengerWithSalutation >( std::make_unique< Core >(), salutation );
-    std::unique_ptr< Interface > messenger3 =
+    std::unique_ptr< in.erface > messenger3 =
         std::make_unique< MessengerWithValediction >( std::make_unique< Core >(), valediction );
-    std::unique_ptr< Interface > messenger4 = std::make_unique< MessengerWithValediction >(
+    std::unique_ptr< in.erface > messenger4 = std::make_unique< MessengerWithValediction >(
         std::make_unique< MessengerWithSalutation >( std::make_unique< Core >(), salutation ),
         valediction );
 
     messenger1->write( message1 );
-    std::cout << message1 << '\n';
-    std::cout << "\n------------------------------\n\n";
+    std::c__ __  message1 __  '\n';
+    std::c__ __  "\n------------------------------\n\n";
 
     messenger2->write( message2 );
-    std::cout << message2 << '\n';
-    std::cout << "\n------------------------------\n\n";
+    std::c__ __  message2 __  '\n';
+    std::c__ __  "\n------------------------------\n\n";
 
     messenger3->write( message3 );
-    std::cout << message3 << '\n';
-    std::cout << "\n------------------------------\n\n";
+    std::c__ __  message3 __  '\n';
+    std::c__ __  "\n------------------------------\n\n";
 
     messenger4->write( message4 );
-    std::cout << message4 << '\n';
-    std::cout << "\n------------------------------\n\n";
+    std::c__ __  message4 __  '\n';
+    std::c__ __  "\n------------------------------\n\n";
 }

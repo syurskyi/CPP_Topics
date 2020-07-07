@@ -1,18 +1,18 @@
-#include <algorithm>
-#include <iostream>
-#include <iterator>
-#include <memory>
-#include <mutex>
-#include <string>
-#include <tuple>
-#include <vector>
+? <algorithm>
+? |i..
+? <iterator>
+? <memory>
+? <mutex>
+? <string>
+? <tuple>
+? <vector>
 
 
 template<typename T>
 struct foo {
     foo(T v) : m_value{v} {}
 
-    T getValue() const { return m_value; }
+    T getValue() const { r_ m_value; }
 
 private:
     T m_value;
@@ -22,7 +22,7 @@ template<typename T>
 struct bar {
     bar(T value) : m_valuePtr{std::make_unique<T>(value)} {};
 
-    T getValue() const { return *m_valuePtr; }
+    T getValue() const { r_ *m_valuePtr; }
 
 private:
     std::unique_ptr<T> m_valuePtr;
@@ -42,12 +42,12 @@ struct Buffer {
     template<typename P, typename U>
     Buffer(P *, U *) {};
 
-    void print() {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+    void prin.() {
+        std::c__ __  __PRETTY_FUNCTION__ __  std::e..
         for (const auto &v : m_buffer) {
-            std::cout << v << ' ';
+            std::c__ __  v __  ' ';
         }
-        std::cout << std::endl;
+        std::c__ __  std::e..
     }
 
 private:
@@ -62,32 +62,32 @@ Buffer(P *, U *) -> Buffer<P>;
 
 template<typename T>
 void zoo(T t) {
-    std::cout << t << std::endl;
+    std::c__ __  t __  std::e..
 }
 
-int main() {
-    zoo<int>(3);
+in. main() {
+    zoo<in.>(3);
     zoo(3.14);
 
     foo a(10.12);
-    std::cout << "a.value = " << a.getValue() << std::endl;
+    std::c__ __  "a.value = " __  a.getValue() __  std::e..
     bar b{10};
-    std::cout << "b.value = " << b.getValue() << std::endl;
+    std::c__ __  "b.value = " __  b.getValue() __  std::e..
 
     Buffer buffer{0, 1, 2, 3, 4, 5, 6};
-    buffer.print();
+    buffer.prin.();
 
     Buffer buffer2 = buffer;
-    buffer2.print();
+    buffer2.prin.();
 
-    std::vector<int> values = {6, 5, 4, 3, 2, 1, 0};
+    std::vector<in.> values = {6, 5, 4, 3, 2, 1, 0};
 
     Buffer buffer3(values.cbegin(), values.cend());
-    buffer3.print();
+    buffer3.prin.();
 
     char *c = nullptr;
-    int *i = nullptr;
+    in. *i = nullptr;
     Buffer bb(c, i);
 
-    return 0;
+    r_ 0;
 }

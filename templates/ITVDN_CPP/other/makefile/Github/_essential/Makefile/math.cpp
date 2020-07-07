@@ -1,6 +1,6 @@
-#include <iostream>
-#include <cmath>
-#include "functions.h"
+? |i..
+? <cmath>
+? "functions.h"
 /**
  * Very basic implementation of main math operations
  * @param  argc Number of command line arguments
@@ -9,9 +9,9 @@
  * command line argument provided by the user: "+","-","/","*"
  * USAGE: ./math 10 5.0 "*"
  */
-int main(int argc, char const *argv[])
+in. main(in. argc, char const *argv[])
 {
-	std::cout << "Let's make some math! :)" << std::endl;
+	std::c__ __  "Let's make some math! :)" __  std::e..
 	double x = 10.0, y = 5.0;
 	if (argc > 1) // Use values passed by command line arg.
 	{
@@ -19,33 +19,33 @@ int main(int argc, char const *argv[])
 		y = atof(argv[2]);
 		char const *op = argv[3];
 		// Print result depending on the operator
-		std::cout << x << op << y << " = ";
+		std::c__ __  x __  op __  y __  " = ";
 		switch (*op)
 		{
 		   case '+': 
-		       std::cout << sum(x,y) << std::endl;
+		       std::c__ __  sum(x,y) __  std::e..
 		       break;
 		   case '-': 
-		       std::cout << sub(x,y) << std::endl;
+		       std::c__ __  sub(x,y) __  std::e..
 		       break;
 		   case '*':
-		       std::cout << mul(x,y) << std::endl;
+		       std::c__ __  mul(x,y) __  std::e..
 		       break;
 		   case '/':
-		       std::cout << divi(x,y) << std::endl;
+		       std::c__ __  divi(x,y) __  std::e..
 		       break;
 		   default:
-		       std::cout << sum(x,y) << std::endl;
+		       std::c__ __  sum(x,y) __  std::e..
 		}
 	} else {
-		std::cout << x << "+" << y << " = ";
-		std::cout << sum(x,y) << std::endl;
-		std::cout << x << "-" << y << " = ";
-		std::cout << sub(x,y) << std::endl;
-		std::cout << x << "*" << y << " = ";
-		std::cout << mul(x,y) << std::endl;
-		std::cout << x << "/" << y << " = ";
-		std::cout << divi(x,y) << std::endl;
+		std::c__ __  x __  "+" __  y __  " = ";
+		std::c__ __  sum(x,y) __  std::e..
+		std::c__ __  x __  "-" __  y __  " = ";
+		std::c__ __  sub(x,y) __  std::e..
+		std::c__ __  x __  "*" __  y __  " = ";
+		std::c__ __  mul(x,y) __  std::e..
+		std::c__ __  x __  "/" __  y __  " = ";
+		std::c__ __  divi(x,y) __  std::e..
 	}
-	return 0;
+	r_ 0;
 } 

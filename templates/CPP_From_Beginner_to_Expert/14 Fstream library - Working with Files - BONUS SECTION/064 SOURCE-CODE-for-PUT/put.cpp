@@ -1,9 +1,9 @@
-#include <iostream>
-#include <fstream>
+? |i..
+? <fstream>
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
     /*
         put(character to put on stream)
@@ -19,20 +19,20 @@ int main()
 */
     fstream file;
 
-    file.open("test.txt", ios::out | ios::binary);
+    file.open("test.txt", i.. out | i.. binary);
     if (file.is_open())
     {
         char c;
         do
         {
-            c = cin.get();
+            c = c__.g..
 
             file.put(c);
         }while(c!='.');
     }
     else
-        cout << "Nie udalo sie poprawnie otworzyc pliku" << endl;
+        c__ __  "Nie udalo sie poprawnie otworzyc pliku" __  e..
 
 
-    return 0;
+    r_ 0;
 }

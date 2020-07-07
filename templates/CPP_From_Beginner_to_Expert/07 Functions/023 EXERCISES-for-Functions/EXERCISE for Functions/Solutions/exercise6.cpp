@@ -1,7 +1,7 @@
-#include <iostream>
-#include <cstdlib>
+? |i..
+? <cstdlib>
 
-using namespace std;
+u.. s..
 
 void chooseOperation(char);
 void addition();
@@ -11,20 +11,20 @@ void division();
 void exponentiation();
 
 
-int main ()
+in. main ()
 {
     while (true)
     {
         char choice;
 
-        cout << "What mathematical operation you want to use ?" << endl;
-        cout << "Type: '+' - addition, '-' - subtraction, '*' - multiplication, '/' - division, '^' - exponentiation: ";
-        cin >> choice;
+        c__ __  "What mathematical operation you want to use ?" __  e..
+        c__ __  "Type: '+' - addition, '-' - subtraction, '*' - multiplication, '/' - division, '^' - exponentiation: ";
+        c__ >> choice;
 
         system("cls");
         chooseOperation(choice);
     }
-    return 0;
+    r_ 0;
 }
 
 void chooseOperation(char choice)
@@ -53,13 +53,13 @@ void addition()
 {
     double firstNumber, secondNumber, result;
 
-    cout << "Input the first number to add: ";
-    cin >> firstNumber;
-    cout << "Input the second number to add: ";
-    cin >> secondNumber;
+    c__ __  "Input the first number to add: ";
+    c__ >> firstNumber;
+    c__ __  "Input the second number to add: ";
+    c__ >> secondNumber;
 
     result = firstNumber + secondNumber;
-    cout << firstNumber << " + " << secondNumber << " = " << result << endl;
+    c__ __  firstNumber __  " + " __  secondNumber __  " = " __  result __  e..
 
 }
 
@@ -67,13 +67,13 @@ void subtraction()
 {
     double firstNumber, secondNumber, result;
 
-    cout << "Input the number to subtract from: ";
-    cin >> firstNumber;
-    cout << "Input the number to subtract with: ";
-    cin >> secondNumber;
+    c__ __  "Input the number to subtract from: ";
+    c__ >> firstNumber;
+    c__ __  "Input the number to subtract with: ";
+    c__ >> secondNumber;
 
     result = firstNumber - secondNumber;
-    cout << firstNumber << " - " << secondNumber << " = " << result << endl;
+    c__ __  firstNumber __  " - " __  secondNumber __  " = " __  result __  e..
 
 }
 
@@ -81,13 +81,13 @@ void multiplication()
 {
     double firstNumber, secondNumber, result;
 
-    cout << "Input the first number: ";
-    cin >> firstNumber;
-    cout << "Input the number to multiply by: ";
-    cin >> secondNumber;
+    c__ __  "Input the first number: ";
+    c__ >> firstNumber;
+    c__ __  "Input the number to multiply by: ";
+    c__ >> secondNumber;
 
     result = firstNumber * secondNumber;
-    cout << firstNumber << " * " << secondNumber << " = " << result << endl;
+    c__ __  firstNumber __  " * " __  secondNumber __  " = " __  result __  e..
 
 }
 
@@ -95,13 +95,13 @@ void division()
 {
     double firstNumber, secondNumber, result;
 
-    cout << "Input the first number: ";
-    cin >> firstNumber;
-    cout << "Input the number to divide by: ";
-    cin >> secondNumber;
+    c__ __  "Input the first number: ";
+    c__ >> firstNumber;
+    c__ __  "Input the number to divide by: ";
+    c__ >> secondNumber;
 
     result = firstNumber / secondNumber;
-    cout << firstNumber << " / " << secondNumber << " = " << result << endl;
+    c__ __  firstNumber __  " / " __  secondNumber __  " = " __  result __  e..
 
 }
 
@@ -109,16 +109,16 @@ void exponentiation()
 {
     double base, exponent, result = 1;
 
-    cout << "Input the base to exponentiate: ";
-    cin >> base;
-    cout << "Input the exponent value: ";
-    cin >> exponent;
+    c__ __  "Input the base to exponentiate: ";
+    c__ >> base;
+    c__ __  "Input the exponent value: ";
+    c__ >> exponent;
 
-    for (int i = 0; i < exponent; i++)
+    for (in. i = 0; i < exponent; i++)
     {
         result *= base;
     }
 
-    cout << "The number " << base << " to the power of " << exponent << " is equal to " << result << "." << endl;
+    c__ __  "The number " __  base __  " to the power of " __  exponent __  " is equal to " __  result __  "." __  e..
 
 }

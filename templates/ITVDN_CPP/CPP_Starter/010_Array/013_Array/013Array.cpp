@@ -1,36 +1,36 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
 	// Создаем массив с именем arr типа int размерностью 3 элемента
-	int arr[3];
+	in. arr[3];
 
 	arr[0] = 10;
 	arr[1] = 20;
 	arr[2] = 30;
 
 	// Выводим значение хранящееся в переменной arr
-	cout << "Variable arr contains - " << arr << endl;
+	c__ __  "Variable arr contains - " __  arr __  e..
 
 	// Получаем адресс переменной arr и выводим его в консоль
-	cout << "Address of variable arr - " << &arr << endl;
+	c__ __  "Address of variable arr - " __  &arr __  e..
 
-	cout << "Address of first element of array = " << &arr[0] << endl;
+	c__ __  "Address of first element of array = " __  &arr[0] __  e..
 
-	int *pArr = arr; // Адрес из переменной arr присваиваем переменной указателю pArr
+	in. *pArr = arr; // Адрес из переменной arr присваиваем переменной указателю pArr
 
-	cout << "Value of variable pArr = " << pArr << endl;
+	c__ __  "Value of variable pArr = " __  pArr __  e..
 
 	// Первый способ получить значение элементов массива через указатель
-	cout << "First value = " << *pArr << ". Address = " << pArr << endl;
-	cout << "Second value = " << *(pArr + 1) << ". Address = " << pArr + 1 << endl;
-	cout << "Third value = " << *(pArr + 2) << ". Address = " << pArr + 2 << endl;
+	c__ __  "First value = " __  *pArr __  ". Address = " __  pArr __  e..
+	c__ __  "Second value = " __  *(pArr + 1) __  ". Address = " __  pArr + 1 __  e..
+	c__ __  "Third value = " __  *(pArr + 2) __  ". Address = " __  pArr + 2 __  e..
 
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 

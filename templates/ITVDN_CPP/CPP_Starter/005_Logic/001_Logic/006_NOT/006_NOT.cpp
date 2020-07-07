@@ -1,23 +1,23 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
-	bool a = false;		// 1
+	bo.. a = false;		// 1
 
-	bool result = !a;
+	bo.. result = !a;
 
-	cout << boolalpha << result << endl;
+	c__ __  bo..alpha __  result __  e..
 	
 	/* **************************************** */
 
-	int b = 1;			// 0000 ... 0000 0001
+	in. b = 1;			// 0000 ... 0000 0001
 
-	int c = ~b;			// 1111 ... 1111 1110 = -2
+	in. c = ~b;			// 1111 ... 1111 1110 = -2
 
-	cout << c << endl;
+	c__ __  c __  e..
 
 	/* Изменение знака числа */
 	// Что бы изменить знак числа, необходимо инвертировать каждый бит числа и прибавить единицу 
@@ -27,7 +27,7 @@ int main()
 	c = ~b;
 	c = c + 1;
 
-	cout << c << endl;
+	c__ __  c __  e..
 
-	return 0;
+	r_ 0;
 }

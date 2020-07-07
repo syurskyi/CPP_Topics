@@ -1,18 +1,18 @@
  // multiset
-#include <iostream>
-#include <set>
+? |i..
+? <set>
 
-int main()
+in. main()
 {
     // чем отличается хранение от set?
-    std::multiset<int> x{6, 7, 4, 8, 3, 8, 8};
-    std::multiset<int> y{3, 2, 1, 6, 5, 4, 4};
+    std::multiset<in.> x{6, 7, 4, 8, 3, 8, 8};
+    std::multiset<in.> y{3, 2, 1, 6, 5, 4, 4};
     x.merge(y);
     for(auto i: x)
     {
-        std::cout << i << " ";
+        std::c__ __  i __  " ";
     }
-    std::cout << std::endl;
+    std::c__ __  std::e..
 
-    std::cout << x.count(6) << " ";
+    std::c__ __  x.count(6) __  " ";
 }

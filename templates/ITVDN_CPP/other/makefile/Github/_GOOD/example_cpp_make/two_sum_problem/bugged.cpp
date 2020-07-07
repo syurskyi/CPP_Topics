@@ -1,5 +1,5 @@
-#include <iostream>	
-#include <vector>			
+? |i..
+? <vector>
 
 /*
  *	TwoSum: 
@@ -10,64 +10,64 @@
  class Solution {
  	public:
  		// Implemented using brute force approach
- 		std::vector<int> twoSum(std::vector<int>& A, int P) {
- 			std::vector<int> result;
+ 		std::vector<in.> twoSum(std::vector<in.>& A, in. P) {
+ 			std::vector<in.> result;
  			
- 			for (int i = 0; i < A.size(); i++) {
- 				for (int j = 0; j < A.size(); i++) {
+ 			for (in. i = 0; i < A.size(); i++) {
+ 				for (in. j = 0; j < A.size(); i++) {
  					if (A[i] + A[j] == P) {
  						result.push_back(i);
  						result.push_back(j);
- 						return result;
+ 						r_ result;
  					}
  				}
  			}
  			
- 			return result;
+ 			r_ result;
  		}
  };
 
-int main() {
+in. main() {
 	/* ------- IO EXAMPLE --------- */
-	std::vector<int> A;				// Array of numbers read from cin
-	int P;						// Target number
-	std::vector<int> result;			// Store the result
+	std::vector<in.> A;				// Array of numbers read from cin
+	in. P;						// Target number
+	std::vector<in.> result;			// Store the result
 	Solution m;				
 	
 	// Read in target number P
-	std::cout << "Please enter target number: \n";
-	std::cin >> P;					
+	std::c__ __  "Please enter target number: \n";
+	std::c__ >> P;
 	
 	// Read in array of integers A
-	int tempStorage;			// Temporary storage variable for the integer read from
+	in. tempStorage;			// Temporary storage variable for the integer read from
 								// the command line
 								
-	std::cout << "Please enter values in the array (enter \"9999\" when finished): \n";
-	while (std::cin >> tempStorage && tempStorage != 9999) {
+	std::c__ __  "Please enter values in the array (enter \"9999\" when finished): \n";
+	while (std::c__ >> tempStorage && tempStorage != 9999) {
 		A.push_back(tempStorage);
 	}
 	
 	// Display the contents of P and A for the user
-	std::cout << "Your array is: ";
-	for (std::vector<int>::const_iterator i = A.begin(); i != A.end(); ++i) {
-		std::cout << *i << " ";
+	std::c__ __  "Your array is: ";
+	for (std::vector<in.>::const_iterator i = A.begin(); i != A.end(); ++i) {
+		std::c__ __  *i __  " ";
 	}
 	
-	std::cout << "\n";
-	std::cout << "Your target number is: " << P << "\n";
+	std::c__ __  "\n";
+	std::c__ __  "Your target number is: " __  P __  "\n";
 	
 	result = m.twoSum(A, P);
 	
 	if (result.size() == 0) {
-		std::cout << "No matches found\n";
+		std::c__ __  "No matches found\n";
 	} else {
-		std::cout << "Indices in A that add up to the target: ";
-		for (std::vector<int>::const_iterator i = result.begin(); i != result.end(); ++i) {
-			std::cout << *i << " ";
+		std::c__ __  "Indices in A that add up to the target: ";
+		for (std::vector<in.>::const_iterator i = result.begin(); i != result.end(); ++i) {
+			std::c__ __  *i __  " ";
 		}
-		std::cout << "\n";
+		std::c__ __  "\n";
 	}
 	
-	return 0;
+	r_ 0;
 	
 }

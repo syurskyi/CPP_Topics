@@ -1,9 +1,9 @@
-#include <iostream>
-#include "functions.h"
+? |i..
+? "functions.h"
 
-int main(){
-	print_hello();
-	std::cout << std::endl;
-	std::cout << "The factorial of 10 is " << factorial(10) << std::endl;
-	return 0;
+in. main(){
+	prin._hello();
+	std::c__ __  std::e..
+	std::c__ __  "The factorial of 10 is " __  factorial(10) __  std::e..
+	r_ 0;
 }

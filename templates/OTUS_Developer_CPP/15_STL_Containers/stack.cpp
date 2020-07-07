@@ -1,12 +1,12 @@
 // stack
-#include <iostream>
-#include <stack>
+? |i..
+? <stack>
 
-int main()
+in. main()
 {
     // последний добавленный извлекается первым
     // LIFO
-    std::stack<int> s;
+    std::stack<in.> s;
     for(auto i: {6, 7, 4, 8, 3, 8, 8})
     {
         s.push(i);
@@ -14,8 +14,8 @@ int main()
 
     while(!s.empty())
     {
-        std::cout << s.top() << " ";
+        std::c__ __  s.top() __  " ";
         s.pop();
     }
-    std::cout << std::endl;
+    std::c__ __  std::e..
 }

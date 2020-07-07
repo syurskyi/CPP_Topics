@@ -1,7 +1,7 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 /*
 		»сключающее »Ћ» Ц это логическа¤ операци¤, став¤ща¤ в соответствие каждым двум простым высказывани¤м составное 
 		высказывание, ¤вл¤ющеес¤ истинными тогда, когда оба операнда различаютс¤.
@@ -20,14 +20,14 @@ using namespace std;
 					-------------------------
 */
 
-int main()
+in. main()
 {
-	bool a = true;		// 1
-	bool b = false;		// 0
+	bo.. a = true;		// 1
+	bo.. b = false;		// 0
 
-	bool result = (a || b) && !(a && b);	// 1 - true	
+	bo.. result = (a || b) && !(a && b);	// 1 - true
 
-	cout << boolalpha << result << endl;
+	c__ __  bo..alpha __  result __  e..
 
-	return 0;
+	r_ 0;
 }

@@ -1,13 +1,13 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-int main()
+in. main()
 {
 	// Выводим в консоль строку
-	printf("Hello world");
+	prin.f("Hello world");
 
 	// Задержка
 	getchar();
-    return 0;
+    r_ 0;
 }
 

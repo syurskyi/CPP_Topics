@@ -1,16 +1,16 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
-int main()
+u.. s..
+in. main()
 {
 	char _char = 'Q'; // Обычный символ, компилятор присвоит переменной _char числовой код этого символа
 
-	cout << _char << " " << (int)_char << endl;
+	c__ __  _char __  " " __  (in.)_char __  e..
 
 	// char str = "Q"; // Не допустимо!
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 

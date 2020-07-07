@@ -1,12 +1,12 @@
 // http://en.cppreference.com/w/cpp/atomic/atomic_compare_exchange
 
-#include <iostream>
-#include <map>
+? |i..
+? <map>
 
 struct Node {
-    Node(int value_)
+    Node(in. value_)
             :value(value_) { };
-    int value;
+    in. value;
     Node* next{nullptr};
 };
 
@@ -20,24 +20,24 @@ struct List {
     }
 };
 
-bool casint(int& p, int nvalue, int compare)
+bo.. casin.(in.& p, in. nvalue, in. compare)
 {
     if (p==compare) {
         p = nvalue;
-        return true;
+        r_ true;
     }
     else
-        return false;
+        r_ false;
 }
 
-bool cas(Node** p, Node* nvalue, Node* compare)
+bo.. cas(Node** p, Node* nvalue, Node* compare)
 {
     if (*p==compare) {
         *p = nvalue;
-        return true;
+        r_ true;
     }
     else
-        return false;
+        r_ false;
 }
 
 struct ListLF {
@@ -50,14 +50,14 @@ struct ListLF {
             p->next = head;
 
             if (cas(&head, p, old_head))
-                return;
+                r_;
         }
     }
 };
 
-int main(int, char* [])
+in. main(in., char* [])
 {
-    auto m = std::map<int, int>();
+    auto m = std::map<in., in.>();
 
     m[1] = 2;
 
@@ -67,8 +67,8 @@ int main(int, char* [])
     l.push(new Node{100}); // memory leak
 
     for (Node* i = l.head; i; i = i->next) {
-        std::cout << i->value << std::endl;
+        std::c__ __  i->value __  std::e..
     }
 
-    return 0;
+    r_ 0;
 }

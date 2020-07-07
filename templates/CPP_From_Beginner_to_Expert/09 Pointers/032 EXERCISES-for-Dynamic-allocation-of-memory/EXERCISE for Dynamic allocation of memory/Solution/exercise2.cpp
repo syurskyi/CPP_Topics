@@ -1,27 +1,27 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
-int main ()
+in. main ()
 {
 
-    int arraySize;
+    in. arraySize;
 
-    cout << "Input the size of the dynamic array you want to create: ";
-    cin >> arraySize;
+    c__ __  "Input the size of the dynamic array you want to create: ";
+    c__ >> arraySize;
 
-    int *dynamicArray = new int[arraySize];
+    in. *dynamicArray = new in.[arraySize];
 
 
-    for (int i = 0; i < arraySize; i++)
+    for (in. i = 0; i < arraySize; i++)
     {
-        cout << "Input " << i+1 << " number: ";
-        cin >> *(dynamicArray+i);
+        c__ __  "Input " __  i+1 __  " number: ";
+        c__ >> *(dynamicArray+i);
     }
 
-    for (int i = 0; i < arraySize; i++)
+    for (in. i = 0; i < arraySize; i++)
     {
-        cout << "Number " << i+1 << ": " << *(dynamicArray+i) << endl;
+        c__ __  "Number " __  i+1 __  ": " __  *(dynamicArray+i) __  e..
     }
 
     delete []dynamicArray;

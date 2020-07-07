@@ -1,6 +1,6 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
 void addition();
 
@@ -13,12 +13,12 @@ void addition()
 {
     double firstNumber, secondNumber, result;
 
-    cout << "Input the first number to add: ";
-    cin >> firstNumber;
-    cout << "Input the second number to add: ";
-    cin >> secondNumber;
+    c__ __  "Input the first number to add: ";
+    c__ >> firstNumber;
+    c__ __  "Input the second number to add: ";
+    c__ >> secondNumber;
 
     result = firstNumber + secondNumber;
-    cout << firstNumber << " + " << secondNumber << " = " << result;
+    c__ __  firstNumber __  " + " __  secondNumber __  " = " __  result;
 
 }

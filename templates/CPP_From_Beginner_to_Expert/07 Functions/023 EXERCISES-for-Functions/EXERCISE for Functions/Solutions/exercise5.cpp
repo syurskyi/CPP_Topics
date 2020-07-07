@@ -1,6 +1,6 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
 void exponentiation();
 
@@ -13,16 +13,16 @@ void exponentiation()
 {
     double base, exponent, result = 1;
 
-    cout << "Input the base to exponentiate: ";
-    cin >> base;
-    cout << "Input the exponent value: ";
-    cin >> exponent;
+    c__ __  "Input the base to exponentiate: ";
+    c__ >> base;
+    c__ __  "Input the exponent value: ";
+    c__ >> exponent;
 
-    for (int i = 0; i < exponent; i++)
+    for (in. i = 0; i < exponent; i++)
     {
         result *= base;
     }
 
-    cout << "The number " << base << " to the power of " << exponent << " is equal to " << result << ".";
+    c__ __  "The number " __  base __  " to the power of " __  exponent __  " is equal to " __  result __  ".";
 
 }

@@ -1,31 +1,31 @@
-#include "mammal.h"
-#include <iostream>
+? "mammal.h"
+? |i..
 
 Mammal::Mammal()
 {
-    std::cout << "Ctor was called";
-    ptr = new int[10];
+    std::c__ __  "Ctor was called";
+    ptr = new in.[10];
 }
 
-Mammal::Mammal(uint paws) : paws(paws)
+Mammal::Mammal(uin. paws) : paws(paws)
 {
-    std::cout << "User Ctor was called";
-    ptr = new int[10];
+    std::c__ __  "User Ctor was called";
+    ptr = new in.[10];
 }
 
 Mammal::Mammal(const Mammal& other)
 {
     paws = other.paws;
-    ptr = new int[10];
+    ptr = new in.[10];
 }
 
 void Mammal::feed_milk()
 {
-    std::cout << "done!" << "\n";
+    std::c__ __  "done!" __  "\n";
 }
 
 Mammal::~Mammal()
 {
     delete[] ptr;
-    std::cout << "Dtor done!" << "\n";
+    std::c__ __  "Dtor done!" __  "\n";
 }

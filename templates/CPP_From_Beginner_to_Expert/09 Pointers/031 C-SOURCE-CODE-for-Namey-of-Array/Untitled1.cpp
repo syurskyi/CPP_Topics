@@ -1,52 +1,52 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
-    int a[3];
+    in. a[3];
     a[0] = 0;
     a[1] = 20;
     a[2] = 40;
-    short int zm;
-    int * const p = &a[0];
+    sh.. in. zm;
+    in. * const p = &a[0];
 
-    cout << p << endl;
-    cout << a << endl;
+    c__ __  p __  e..
+    c__ __  a __  e..
 
-    cout << endl << endl << endl;
+    c__ __  endl __  endl __  e..
 
-    cout << &a[0] << endl;
-    cout << &a[1] << endl;
-    cout << &a[2] << endl;
+    c__ __  &a[0] __  e..
+    c__ __  &a[1] __  e..
+    c__ __  &a[2] __  e..
 
-    cout << endl << endl << endl;
+    c__ __  endl __  endl __  e..
 
-    cout << a << endl;
-    cout << a + 1 << endl;
-    cout << a + 2 << endl;
+    c__ __  a __  e..
+    c__ __  a + 1 __  e..
+    c__ __  a + 2 __  e..
 
-    cout << endl << endl << endl;
+    c__ __  endl __  endl __  e..
 
-    cout << *a << endl;
-    cout << *(a + 1) << endl;
-    cout << *(a + 2) << endl;
+    c__ __  *a __  e..
+    c__ __  *(a + 1) __  e..
+    c__ __  *(a + 2) __  e..
 
-    cout << endl << endl << endl;
+    c__ __  endl __  endl __  e..
 
-    cout << a[0] << endl;
-    cout << a[1] << endl;
-    cout << a[2] << endl;
+    c__ __  a[0] __  e..
+    c__ __  a[1] __  e..
+    c__ __  a[2] __  e..
 
    // cout << a++ << endl; // a++  a = a + 1
 
-    int * p2 = &a[0];
+    in. * p2 = &a[0];
 
-    cout << *p2 << endl;  // 0
-    cout << ++*p2 << endl; //1
-    cout << *++p2 << endl; //20
-    cout << *p2++ << endl; //20
-    cout << *p2 << endl; //40
-    return 0;
+    c__ __  *p2 __  e..  // 0
+    c__ __  ++*p2 __  e.. //1
+    c__ __  *++p2 __  e.. //20
+    c__ __  *p2++ __  e.. //20
+    c__ __  *p2 __  e.. //40
+    r_ 0;
 }
 

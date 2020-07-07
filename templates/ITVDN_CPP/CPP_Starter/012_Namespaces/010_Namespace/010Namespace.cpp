@@ -1,7 +1,7 @@
-﻿#include <stdio.h>
-#include <iostream>
+﻿? <stdio.h>
+? |i..
 
-using namespace std;
+u.. s..
 
 namespace NamespaceA{
 	struct MyStruct
@@ -21,7 +21,7 @@ namespace NamespaceA{
 	}
 }
 
-int main()
+in. main()
 {
-	return 0;
+	r_ 0;
 }

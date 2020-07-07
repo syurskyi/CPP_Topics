@@ -1,19 +1,19 @@
-#include "rect.h"
-#include <iostream>
+? "rect.h"
+? |i..
 
-using std::cout;
-using std::endl;
+using std::c__;
+using std::e..
 
 
-int main()
+in. main()
 {
 	rectangle box(1.0, 3.0, 6.0, 7.0), boxUnionTest(3.0, 1.0, 9.0, 5.0);
   rectangle unifiedBox = box.boxUnion(boxUnionTest);
 
-  cout << box.perimeter() << endl
-       << box.area() << endl
-       << box.intersect(boxUnionTest) << endl;
+  c__ __  box.perimeter() __  endl
+       __  box.area() __  endl
+       __  box.in.ersect(boxUnionTest) __  e..
 
-  unifiedBox.printRect();
-  return 0;
+  unifiedBox.prin.Rect();
+  r_ 0;
 }

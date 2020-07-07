@@ -1,18 +1,18 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 /*scope / range of varables */
 
-int globalVariable;
+in. globalVariable;
 
 main()
 {
-    int localVariable;
+    in. localVariable;
 /*
     cout << "value of globalVariable: " << globalVariable << endl;
     cout << "value of localVariable: " << localVariable << endl;
 */
-    int a = 10;
+    in. a = 10;
 /*
     if (a == 10)
     {
@@ -23,15 +23,15 @@ main()
 
     cout << result << endl;*/
 
-    int nr, result = 0;
-    int i = 0;
+    in. nr, result = 0;
+    in. i = 0;
     for (; i < 3; i++) // 3,2,3 - will the result be 8??? NOOOOOOOOO, we have to assign 0 to the result!
     {
-        cout << "Enter " << (i + 1) << " number" << endl;
-        cin >> nr;
+        c__ __  "Enter " __  (i + 1) __  " number" __  e..
+        c__ >> nr;
         result += nr; //result = result + nr;
     }
 
-    cout << result << endl;
-    cout << "we added " << i << " numbers" << endl;
+    c__ __  result __  e..
+    c__ __  "we added " __  i __  " numbers" __  e..
 }

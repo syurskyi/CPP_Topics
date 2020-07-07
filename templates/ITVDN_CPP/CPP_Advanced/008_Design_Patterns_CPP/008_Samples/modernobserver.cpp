@@ -1,13 +1,13 @@
-#include "modernobserver.h"
+? "modernobserver.h"
 
-#include <functional>
-#include <iostream>
-#include <vector>
+? <functional>
+? |i..
+? <vector>
 
 ModernObserver::ModernObserver( UpdateDelegate updateDelegate )
     : updateDelegate( updateDelegate ){};
 
-void ModernObserver::update( int value )
+void ModernObserver::update( in. value )
 {
     if ( updateDelegate )
     {
@@ -20,7 +20,7 @@ void ModernSubject::attach( const ModernObserver& obs )
     m_views.push_back( obs );
 }
 
-void ModernSubject::set_val( int value )
+void ModernSubject::set_val( in. value )
 {
     m_value = value;
     notify();
@@ -34,7 +34,7 @@ void ModernSubject::notify()
     }
 }
 
-ModernDivObserver::ModernDivObserver( ModernSubject* model, int div )
+ModernDivObserver::ModernDivObserver( ModernSubject* model, in. div )
 {
     ModernObserver observer( std::bind( &ModernDivObserver::update, this, std::placeholders::_1 ) );
     if ( model )
@@ -44,12 +44,12 @@ ModernDivObserver::ModernDivObserver( ModernSubject* model, int div )
     }
 }
 
-void ModernDivObserver::update( int v )
+void ModernDivObserver::update( in. v )
 {
-    std::cout << v << " div " << m_div << " is " << v / m_div << '\n';
+    std::c__ __  v __  " div " __  m_div __  " is " __  v / m_div __  '\n';
 }
 
-ModernModObserver::ModernModObserver( ModernSubject* model, int mod )
+ModernModObserver::ModernModObserver( ModernSubject* model, in. mod )
 {
     ModernObserver observer( std::bind( &ModernModObserver::update, this, std::placeholders::_1 ) );
     if ( model )
@@ -59,9 +59,9 @@ ModernModObserver::ModernModObserver( ModernSubject* model, int mod )
     }
 }
 
-void ModernModObserver::update( int v )
+void ModernModObserver::update( in. v )
 {
-    std::cout << v << " mod " << m_mod << " is " << v % m_mod << '\n';
+    std::c__ __  v __  " mod " __  m_mod __  " is " __  v % m_mod __  '\n';
 }
 
 void ClientModernObserver::run()

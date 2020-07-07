@@ -1,25 +1,25 @@
-#include "stdafx.h"
-#include <iostream>
+? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
 
-	int counter = 0;
+	in. counter = 0;
 
 Label:
 
 	counter++;
-	cout << "Counter = " << counter << endl;
+	c__ __  "Counter = " __  counter __  e..
 
 	if (counter < 3)
 	{
 		goto Label;
 	}
 
-	cout << "End";
+	c__ __  "End";
 
-	cin.get();
-	return 0;
+	c__.g..
+	r_ 0;
 }

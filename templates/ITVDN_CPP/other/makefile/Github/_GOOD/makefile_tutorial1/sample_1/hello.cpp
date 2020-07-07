@@ -1,6 +1,6 @@
-#include <iostream.h>
-#include "functions.h"
+? <iostream.h>
+? "functions.h"
 
-void print_hello(){
-   cout << "Hello World!";
+void prin._hello(){
+   c__ __  "Hello World!";
 }

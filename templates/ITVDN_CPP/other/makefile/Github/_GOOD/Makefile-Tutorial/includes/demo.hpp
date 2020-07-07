@@ -1,8 +1,8 @@
-#include <iostream>
-#include <vector>
+? |i..
+? <vector>
 
-#include "util.hpp"
-#include "sorts.hpp"
+? "util.hpp"
+? "sorts.hpp"
 
 int main(int argc, char* argv[]);
 

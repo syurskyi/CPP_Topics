@@ -1,31 +1,31 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
-int & swap(int &, int &);
+in. & swap(in. &, in. &);
 
-int main()
+in. main()
 {
-    int a = 10;
-    int b = 20;
+    in. a = 10;
+    in. b = 20;
 
-    int &c = swap(a, b);
+    in. &c = swap(a, b);
 
     c = 100;
 
-    cout << "a: " << a << endl;
-    cout << "b: " << b << endl;
-    cout << "c: " << c << endl;
+    c__ __  "a: " __  a __  e..
+    c__ __  "b: " __  b __  e..
+    c__ __  "c: " __  c __  e..
 
-    return 0;
+    r_ 0;
 }
-int & swap(int &x, int &y)
+in. & swap(in. &x, in. &y)
 {
-    int t;
+    in. t;
     t = x;
     x = y;
     y = t;
     //x at the end is 20
-    return x;
+    r_ x;
 }
 

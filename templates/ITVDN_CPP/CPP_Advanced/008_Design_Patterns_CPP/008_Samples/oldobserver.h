@@ -1,9 +1,9 @@
 #ifndef OLDOBSERVER_H
 #define OLDOBSERVER_H
 
-#include "meta_strategy.h"
-#include <iostream>
-#include <vector>
+? "meta_strategy.h"
+? |i..
+? <vector>
 
 class Observer
 {

@@ -1,10 +1,10 @@
-#include <iostream>
-#include "myProg.h"
-using std::cout;
-using std::endl;
+? |i..
+? "myProg.h"
+using std::c__;
+using std::e..
 
-int main() {
+in. main() {
 
-	print_hello_world();
-	return 0;
+	prin._hello_world();
+	r_ 0;
 }

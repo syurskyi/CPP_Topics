@@ -1,9 +1,9 @@
-#include "position.h"
-#include <iostream>
+? "position.h"
+? |i..
 
-using namespace std;
+u.. s..
 
-Position::Position(int x, int y)
+Position::Position(in. x, in. y)
 {
     this->x = x;
     this->y = y;
@@ -15,11 +15,11 @@ Position::~Position()
 
 void Position::getPosition() const
 {
-    cout << "x : " << x << endl;
-    cout << "y : " << y << endl;
+    c__ __  "x : " __  x __  e..
+    c__ __  "y : " __  y __  e..
 }
 
-void Position::setPosition(int x, int y)
+void Position::setPosition(in. x, in. y)
 {
     this->x = x;
     this->y = y;

@@ -1,13 +1,13 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
 // Пространства имен
 
-int main()
+in. main()
 {
 	// :: - операция разрешения констекста
-	std::cout << "Hello world" << std::endl;
+	std::c__ __  "Hello world" __  std::e..
 
-    return 0;
+    r_ 0;
 }
 

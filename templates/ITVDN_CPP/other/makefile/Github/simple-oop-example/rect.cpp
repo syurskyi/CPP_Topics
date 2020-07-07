@@ -1,21 +1,21 @@
-#include "rect.h"
-#include <iostream>
+? "rect.h"
+? |i..
 
-using std::cout;
-using std::endl;
+using std::c__;
+using std::e..
 
 rectangle::rectangle(double x0, double y0, double x1, double y1):diagonal(x0, y0, x1, y1){
   
 }
 
 double rectangle::perimeter() {
-  return 2 * ( (diagonal.get_x1() - diagonal.get_x0()) + (diagonal.get_y1() - diagonal.get_y0()) );
+  r_ 2 * ( (diagonal.get_x1() - diagonal.get_x0()) + (diagonal.get_y1() - diagonal.get_y0()) );
 }
 
 double rectangle::area() {
   double side1 = diagonal.get_x1() - diagonal.get_x0();
   double side2 = diagonal.get_y1() - diagonal.get_y0();
-  return side1 * side2;
+  r_ side1 * side2;
 }
 
 rectangle rectangle::boxUnion(rectangle &that) {
@@ -38,18 +38,18 @@ rectangle rectangle::boxUnion(rectangle &that) {
   resY0 = (selfY0 > thatY0) ? selfY0 : thatY0;
   resY1 = (selfY1 > thatY1) ? selfY1 : thatY1;
 
-  return rectangle(resX0, resY0, resX1, resY1);
+  r_ rectangle(resX0, resY0, resX1, resY1);
 }
 
-void rectangle::printRect() {
-  cout << diagonal.get_x0() << ", "
-        << diagonal.get_y0() << ", "
-        << diagonal.get_x1() << ", "
-        << diagonal.get_y1() << endl;
+void rectangle::prin.Rect() {
+  c__ __  diagonal.get_x0() __  ", "
+        __  diagonal.get_y0() __  ", "
+        __  diagonal.get_x1() __  ", "
+        __  diagonal.get_y1() __  e..
 }
 
-bool rectangle::intersect(rectangle &that) {
+bo.. rectangle::in.ersect(rectangle &that) {
   double area = that.area();
-  bool result = true;
-  return result;
+  bo.. result = true;
+  r_ result;
 }

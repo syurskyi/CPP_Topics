@@ -1,49 +1,49 @@
-#include <cstddef>
-#include <iostream>
-#include <stdexcept>
+? <cstddef>
+? |i..
+? <stdexcept>
 
 template <typename T>
 T get_value(T t) {
-	if (std::is_pointer_v<T>) {
-		std::cout << "get_value - pointer detected!" << std::endl;
-        return *t;
+	if (std::is_poin.er_v<T>) {
+		std::c__ __  "get_value - pointer detected!" __  std::e..
+        r_ *t;
 	}
 	else {
-		std::cout << "get_value - value detected!" << std::endl;
-        return t;
+		std::c__ __  "get_value - value detected!" __  std::e..
+        r_ t;
 	}
 }
 
 template <typename T>
 T get_value2(T t) {
-	std::cout << "get_value2 - value detected!" << std::endl;
-	return t;
+	std::c__ __  "get_value2 - value detected!" __  std::e..
+	r_ t;
 }
 
 template <typename T>
 T get_value2(T* t) {
-	std::cout << "get_value2 - pointer detected!" << std::endl;
+	std::c__ __  "get_value2 - pointer detected!" __  std::e..
 	if (t == nullptr)
 		throw std::logic_error("nullptr detected!");
-	return *t;
+	r_ *t;
 
 }
 
 
 template <typename T>
 T get_value3(T t) {
-    if constexpr (std::is_pointer_v<T>) {
-    	std::cout << "get_value3 - pointer detected!" << std::endl;
-        return t;
+    if constexpr (std::is_poin.er_v<T>) {
+    	std::c__ __  "get_value3 - pointer detected!" __  std::e..
+        r_ t;
     }
     else {
-    	std::cout << "get_value3 - value detected!" << std::endl;
-        return t;
+    	std::c__ __  "get_value3 - value detected!" __  std::e..
+        r_ t;
     }
 }
 
-int main() {
-	int value = 42;
+in. main() {
+	in. value = 42;
 
 //	 get_value(value);
 //	 get_value(&value);
@@ -54,5 +54,5 @@ int main() {
 	get_value3(value);
 	get_value3(&value);
 
-	return 0;
+	r_ 0;
 }

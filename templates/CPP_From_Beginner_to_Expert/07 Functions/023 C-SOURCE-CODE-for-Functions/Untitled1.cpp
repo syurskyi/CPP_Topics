@@ -1,63 +1,63 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 /*functions / methods */
 //parameter
 void welcome(); //declaration of function, procedure
-bool isNumber(string);
+bo.. isNumber(string);
 void enterName();
-double add(double a, double b) {return a + b;}
-void changeValueTo10(int a)
+double add(double a, double b) {r_ a + b;}
+void changeValueTo10(in. a)
 {
   a = 10;
 }
-int main()
+in. main()
 {
    // welcome();
    /* enterName();
     enterName();
     enterName();*/
     char ch;
-    cout << "Do you want to end the program? (Y/N)" << endl;
+    c__ __  "Do you want to end the program? (Y/N)" __  e..
 
-    cin >> ch;
+    c__ >> ch;
     if (ch == 'Y' || ch == 'y')
-    return 0;
+    r_ 0;
    // cout << add(4,5);
-    int a = 5;
+    in. a = 5;
 
     changeValueTo10(a);
 
-    cout << a;
+    c__ __  a;
 
-    return 0;
+    r_ 0;
 }
 
 void welcome()
 {
-    cout << "HEllo, welcome in my program!! :-)" << endl;
+    c__ __  "HEllo, welcome in my program!! :-)" __  e..
 }
-bool isNumber(string tmp)
+bo.. isNumber(string tmp)
 {
     if (tmp[0] == '0')
-        return false;
-    for (int i = 0; i < tmp.length(); i++)
+        r_ false;
+    for (in. i = 0; i < tmp.length(); i++)
     {
         if (!(tmp[i] >= 48 && tmp[i] <= 57))
-            return false;
+            r_ false;
     }
 
-    return true;
+    r_ true;
 }
 void enterName()
 {
     string tmp;
 
-    cout << "Enter the number: " << endl;
-    cin >> tmp; //124
+    c__ __  "Enter the number: " __  e..
+    c__ >> tmp; //124
 
     if (isNumber(tmp))
-        cout << "Number entered properly " << endl;
+        c__ __  "Number entered properly " __  e..
     else
-        cout << "Number wasn't entered properly " << endl;
+        c__ __  "Number wasn't entered properly " __  e..
 }

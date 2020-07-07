@@ -1,5 +1,5 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
 #define ONE 1
 #define TWO 2
@@ -9,21 +9,21 @@
 // Можно определять сообщения, которые будут вывоится пользователю.
 #define STR "Error!"
 
-using namespace std;
-int main()
+u.. s..
+in. main()
 {
-	cout << THREE << endl;
+	c__ __  THREE __  e..
 
-	int a = 10;
+	in. a = 10;
 
 	if (a == 10) {
-		cout << STR << endl;
+		c__ __  STR __  e..
 	}
 
 	// Если идентификатор является частью строки, заключенной в кавычки, макроподстановка не производится.
-	cout << "STR" << endl;
+	c__ __  "STR" __  e..
 
 	system("pause");
-    return 0;
+    r_ 0;
 }
 

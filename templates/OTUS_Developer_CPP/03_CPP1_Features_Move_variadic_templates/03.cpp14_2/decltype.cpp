@@ -1,5 +1,5 @@
-#include <iostream>
-#include <vector>
+? |i..
+? <vector>
 
 // typeid(type | expr), sizeof(type | expr), noexcept(expr), and decltype(expr)
 
@@ -7,33 +7,33 @@ auto fa = 1 + 3.14 + 65;
 decltype(1 + 3.14) f = 1 + 3.14;
 
 // decltype(x * x) bar(int x)
-auto bar(int x) -> decltype(x * x)
+auto bar(in. x) -> decltype(x * x)
 {
-    return x * x;
+    r_ x * x;
 }
 
-int i = 42;
+in. i = 42;
 
 auto foo()
 {
-    const int &y = i;
-    return y;
+    const in. &y = i;
+    r_ y;
 }
 
-int main(int, char *[])
+in. main(in., char *[])
 {
 	auto j = foo();
 	j = 1;
 
-    std::cout << i << std::endl;
-    std::cout << j << std::endl;
-    std::cout << typeid(j).name() << std::endl;
+    std::c__ __  i __  std::e..
+    std::c__ __  j __  std::e..
+    std::c__ __  typeid(j).name() __  std::e..
 
-	return 0;
+	r_ 0;
 }
 
 struct car {
-    int engine;
+    in. engine;
 private:
     car() = delete;
 };
@@ -42,11 +42,11 @@ decltype(car::engine) c1; // car()
 auto ex()
 {
     throw std::runtime_error("fatal");
-    return 42;
+    r_ 42;
 }
 decltype(ex()) c2;
 
-int arr[10];
+in. arr[10];
 
 decltype(arr[1000]) c3 = i;
 

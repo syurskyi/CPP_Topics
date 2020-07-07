@@ -1,12 +1,12 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
-int main()
+u.. s..
+in. main()
 {
 	// На этапе компиляции происходит ошибка сгенерированная пользователям.
 #error Произошла ошибка во время компиляции программы
 
 	system("pause");
-	return 0;
+	r_ 0;
 }

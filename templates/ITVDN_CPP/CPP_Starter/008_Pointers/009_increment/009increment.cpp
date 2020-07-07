@@ -1,34 +1,34 @@
-#include "stdafx.h"
-#include <iostream>
+? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
-	cout << "Enter the integer number: ";
-	int count = 0;
-	cin >> count;
+	c__ __  "Enter the integer number: ";
+	in. count = 0;
+	c__ >> count;
 
-	int *block = new int[count];
-	int *pBlock = block;
+	in. *block = new in.[count];
+	in. *pBlock = block;
 
-	cout << "Fill the block: " << endl;
+	c__ __  "Fill the block: " __  e..
 
-	for (int i = 0; i < count; i++)
+	for (in. i = 0; i < count; i++)
 	{
-		cout << "Enter number: ";
-		cin >> *(block + i);
+		c__ __  "Enter number: ";
+		c__ >> *(block + i);
 	}
 
-	cout << "Display all numbers in block: " << endl;
-	for (int i = 0; i < count; i++)
+	c__ __  "Display all numbers in block: " __  e..
+	for (in. i = 0; i < count; i++)
 	{
-		cout << *(pBlock++) << " ";
+		c__ __  *(pBlock++) __  " ";
 	}
-	cout << endl;
+	c__ __  e..
 
 	delete[] block;
 
 	system("pause");
-	return 0;
+	r_ 0;
 }

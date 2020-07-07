@@ -1,32 +1,32 @@
-#include <fstream>
-#include <iostream>
-#include <sstream>
-#include <streambuf>
-#include <string>
-#include <strstream>
-#include <vector>
+? <fstream>
+? |i..
+? <sstream>
+? <streambuf>
+? <string>
+? <strstream>
+? <vector>
 
-using namespace std;
+u.. s..
 
 // https://stackoverflow.com/questions/524591/performance-of-creating-a-c-stdstring-from-an-input-iterator/524843#524843
 
 string readFile1( const string& fileName )
 {
     ifstream f( fileName.c_str() );
-    return string( std::istreambuf_iterator< char >( f ), std::istreambuf_iterator< char >() );
+    r_ string( std::istreambuf_iterator< char >( f ), std::istreambuf_iterator< char >() );
 }
 
 string readFile2( const string& fileName )
 {
-    ifstream ifs( fileName.c_str(), ios::in | ios::binary | ios::ate );
+    ifstream ifs( fileName.c_str(), i.. in | i.. binary | i.. ate );
 
     ifstream::pos_type fileSize = ifs.tellg();
-    ifs.seekg( 0, ios::beg );
+    ifs.seekg( 0, i.. beg );
 
     vector< char > bytes( fileSize );
     ifs.read( &bytes[ 0 ], fileSize );
 
-    return string( &bytes[ 0 ], fileSize );
+    r_ string( &bytes[ 0 ], fileSize );
 }
 
 string readFile3( const string& fileName )
@@ -34,18 +34,18 @@ string readFile3( const string& fileName )
     string data;
     ifstream in( fileName.c_str() );
     getline( in, data, string::traits_type::to_char_type( string::traits_type::eof() ) );
-    return data;
+    r_ data;
 }
 
 string readFile4( const std::string& filename )
 {
-    ifstream file( filename.c_str(), ios::in | ios::binary | ios::ate );
+    ifstream file( filename.c_str(), i.. in | i.. binary | i.. ate );
 
     string data;
     data.reserve( file.tellg() );
-    file.seekg( 0, ios::beg );
+    file.seekg( 0, i.. beg );
     data.append( istreambuf_iterator< char >( file.rdbuf() ), istreambuf_iterator< char >() );
-    return data;
+    r_ data;
 }
 
 string readFile5( const string& fileName )
@@ -56,13 +56,13 @@ string readFile5( const string& fileName )
     while ( input >> sstr.rdbuf() )
         ;
 
-    return sstr.str();
+    r_ sstr.str();
 }
 
-int main()
+in. main()
 {
     // ofstream out( "lesson_files" );
-    cout << "Start" << endl;
+    c__ __  "Start" __  e..
 
     ofstream out_right;
 
@@ -70,7 +70,7 @@ int main()
 
     if ( out_right.is_open() )
     {
-        out_right << "\n ___ test text from lesson";
+        out_right __  "\n ___ test text from lesson";
     }
 
     out_right.close();
@@ -83,35 +83,35 @@ int main()
     char char_result;
     char res[ 16 ];
 
-    cout << "start" << endl;
+    c__ __  "start" __  e..
 
     if ( in_stream.is_open() )
     {
         while ( std::getline( in_stream, result ) )
         {
             // in_stream >> result;
-            cout << result;
+            c__ __  result;
         }
     }
 
     in_stream.close();
 
-    cout << "\nend" << endl;
+    c__ __  "\nend" __  e..
 
     std::streambuf *psbuf, *backup;
     std::ofstream filestr;
     filestr.open( "test.txt" );
 
-    backup = std::cout.rdbuf(); // back up cout's streambuf
+    backup = std::c__.rdbuf(); // back up cout's streambuf
 
     psbuf = filestr.rdbuf();  // get file's streambuf
-    std::cout.rdbuf( psbuf ); // assign streambuf to cout
+    std::c__.rdbuf( psbuf ); // assign streambuf to cout
 
-    std::cout << "This is written to the file";
+    std::c__ __  "This is written to the file";
 
-    std::cout.rdbuf( backup ); // restore cout's original streambuf
+    std::c__.rdbuf( backup ); // restore cout's original streambuf
 
     filestr.close();
 
-    return 0;
+    r_ 0;
 }

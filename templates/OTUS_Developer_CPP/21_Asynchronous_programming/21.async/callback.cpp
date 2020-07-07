@@ -1,27 +1,27 @@
-#include <iostream>
-#include <map>
+? |i..
+? <map>
 
-void read(int fd)
+void read(in. fd)
 {
-    std::cout << __PRETTY_FUNCTION__ << std::endl;
+    std::c__ __  __PRETTY_FUNCTION__ __  std::e..
 }
 
-void aread(int fd, void(cb)(const char *))
+void aread(in. fd, void(cb)(const char *))
 {
-    std::cout << __PRETTY_FUNCTION__ << std::endl;
+    std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     cb("block");
 }
 
 void callback(const char *b)
 {
     auto z = b;
-    std::cout << __PRETTY_FUNCTION__ << " data=" << z << std::endl;
+    std::c__ __  __PRETTY_FUNCTION__ __  " data=" __  z __  std::e..
 }
 
-int main()
+in. main()
 {
-    int swapfile = 42;
-    int inifile = 24;
+    in. swapfile = 42;
+    in. inifile = 24;
 
     read(swapfile);
 

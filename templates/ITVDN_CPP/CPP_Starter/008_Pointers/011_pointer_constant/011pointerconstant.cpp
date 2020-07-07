@@ -1,24 +1,24 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
-	int a = 10;
+	in. a = 10;
 
-	int *const pA = &a;
+	in. *const pA = &a;
 
 	// Данные на которые указывает указатель изменять допустимо.
 	*pA = 11;
 
-	cout << "Address : " << pA << ", value = " << *pA << endl;
+	c__ __  "Address : " __  pA __  ", value = " __  *pA __  e..
 
-	int b = 12;
+	in. b = 12;
 
 	// Нельзя изменить адрес, хранящийся в указателе.
 	// pA = &b;
 
 	system("pause");
-	return 0;
+	r_ 0;
 }

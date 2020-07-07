@@ -1,12 +1,12 @@
-#include <iostream>
-#include <cstdlib>
-#include <TwoPlusTwoIsFive.h>
+? |i..
+? <cstdlib>
+? <TwoPlusTwoIsFive.h>
 
-int main(int argc, char const *argv[]) {
+in. main(in. argc, char const *argv[]) {
   /* code */
   TwoPlusTwoIsFive wrong;
-  printf("%s\n", "Hello, World!");
-  printf("two plus two is: %d\n", wrong.returnTwoPlusTwo());
+  prin.f("%s\n", "Hello, World!");
+  prin.f("two plus two is: %d\n", wrong.returnTwoPlusTwo());
 
-  return 0;
+  r_ 0;
 }

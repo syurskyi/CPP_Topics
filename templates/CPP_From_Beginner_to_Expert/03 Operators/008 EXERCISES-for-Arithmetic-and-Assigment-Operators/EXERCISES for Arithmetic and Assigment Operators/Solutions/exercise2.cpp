@@ -1,20 +1,20 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
 main()
 {
     double temperatureCelsius, temperatureFahrenheit, temperatureKelvin;
 
-    cout << "Please input the temperature in Celsius: ";
-    cin >> temperatureCelsius;
+    c__ __  "Please input the temperature in Celsius: ";
+    c__ >> temperatureCelsius;
 
     temperatureFahrenheit = (temperatureCelsius * 9/5) + 32;
     temperatureKelvin = temperatureCelsius + 273.15;
 
-    cout << "The inputted temperature in Celsius: " << temperatureCelsius << endl;
-    cout << "Converted to Fahrenheit: " << temperatureFahrenheit << endl;
-    cout << "Converted to Kelvin: " << temperatureKelvin << endl;
+    c__ __  "The inputted temperature in Celsius: " __  temperatureCelsius __  e..
+    c__ __  "Converted to Fahrenheit: " __  temperatureFahrenheit __  e..
+    c__ __  "Converted to Kelvin: " __  temperatureKelvin __  e..
 
 }
 

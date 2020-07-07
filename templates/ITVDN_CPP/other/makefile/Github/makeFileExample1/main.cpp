@@ -1,16 +1,16 @@
-#include "Message.h"
-#include <iostream>
+? "Message.h"
+? |i..
 
-int main(){
+in. main(){
   
   //Create out message object, then tell it to do a function.
 	
   Message m;
 
-  std::cout << "\nThe message is: ";
+  std::c__ __  "\nThe message is: ";
   m.communicate();  
 	
-  return 0;  
+  r_ 0;
 
 }
 

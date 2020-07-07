@@ -1,11 +1,11 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 // Библиотека обработки строк в стиле СИ
-#include <cstring>
+? <cstring>
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
 	char str1[] = "Hello";
 	char str2[] = " world!";
@@ -13,22 +13,22 @@ int main()
 
 	// функция производит сравнение строк.
 	// Возвращает 0, если строки совпадают, отрицательное значение, если первая меньше второй, и положительное значение, если первая больше второй.
-	int res = strcmp(str1, str2);
+	in. res = strcmp(str1, str2);
 
 	switch (res)
 	{
 	case 0:
-		cout << "The string is equal!" << endl;
+		c__ __  "The string is equal!" __  e..
 		break;
 	case -1:
-		cout << "First string is less than second!" << endl;
+		c__ __  "First string is less than second!" __  e..
 		break;
 	case 1:
-		cout << "First string is more than second!" << endl;
+		c__ __  "First string is more than second!" __  e..
 		break;	
 	}
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 

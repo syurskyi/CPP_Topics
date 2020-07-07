@@ -1,41 +1,41 @@
 // vector
-#include <iostream>
-#include <vector>
+? |i..
+? <vector>
 
 template<typename...T>
 auto make_vector(T...t) {
     std::vector v = {t...};
 
     for (auto i: v) {
-        std::cout << i << " ";
+        std::c__ __  i __  " ";
     }
-    std::cout << std::endl;
+    std::c__ __  std::e..
 };
 
-int main() {
+in. main() {
     make_vector(1, 2, 3);
 
     // через указатель
     auto x = std::vector{1, 2, 3, 4, 5};
     for (auto i: x) {
-        std::cout << i << " ";
+        std::c__ __  i __  " ";
     }
-    std::cout << std::endl;
+    std::c__ __  std::e..
 
     auto v = x;
 
     v.assign(3, 5);
     for (auto i: v) {
-        std::cout << i << " ";
+        std::c__ __  i __  " ";
     }
-    std::cout << std::endl;
+    std::c__ __  std::e..
 
     v.reserve(100);
     v.resize(50);
     v.clear();
-    std::cout << v.capacity() << std::endl;
-    std::cout << v.size() << std::endl;
-    std::cout << v.max_size() << std::endl;
+    std::c__ __  v.capacity() __  std::e..
+    std::c__ __  v.size() __  std::e..
+    std::c__ __  v.max_size() __  std::e..
     auto e = v.empty(); // v.size() == 0
 
     v.shrink_to_fit(); // move?
@@ -49,6 +49,6 @@ int main() {
         }
     }
     for (auto i: v) {
-        std::cout << i << " ";
+        std::c__ __  i __  " ";
     }
 }

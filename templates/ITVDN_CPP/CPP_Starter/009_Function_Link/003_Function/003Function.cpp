@@ -1,12 +1,12 @@
-﻿#include "stdafx.h"
-#include <iostream>
-#include <string>
+﻿? *s..
+? |i..
+? <string>
 
-using namespace std;
+u.. s..
 
-void Operation(string val1 = "val", int val2 = 10, double val3 = 12.2);
+void Operation(string val1 = "val", in. val2 = 10, double val3 = 12.2);
 
-int main()
+in. main()
 {
 	Operation();                  // 1-я перегрузка.
 	Operation("val");             // 2-я перегрузка.
@@ -15,9 +15,9 @@ int main()
 
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
-void Operation(string val1, int val2, double val3)
+void Operation(string val1, in. val2, double val3)
 {
-	cout << val1 << " " << val2 << " " << val3 << endl;
+	c__ __  val1 __  " " __  val2 __  " " __  val3 __  e..
 }

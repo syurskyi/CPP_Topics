@@ -1,31 +1,31 @@
 # depslib dependency file v1.0
 1309449281 source:d:\video kursy en\c++\45. inheritance between classes\points\main.cpp
-	<iostream>
+	|i..
 	"point.h"
 
 1309449372 d:\video kursy en\c++\45. inheritance between classes\points\point.h
 
 1309449415 source:d:\video kursy en\c++\45. inheritance between classes\points\point.cpp
-	<iostream>
+	|i..
 	"point.h"
 
 1309449415 source:d:\video kursy en\c++\48. function templates\points\point.cpp
-	<iostream>
+	|i..
 	"point.h"
 
 1309861001 d:\video kursy en\c++\48. function templates\points\point.h
 
 1309861078 source:d:\video kursy en\c++\48. function templates\points\main.cpp
-	<iostream>
+	|i..
 	"point.h"
 
 1309876713 source:d:\video kursy en\c++\49. class templates\points\point.cpp
 	"point.h"
 
 1309876568 d:\video kursy en\c++\49. class templates\points\point.h
-	<iostream>
+	|i..
 
 1309876672 source:d:\video kursy en\c++\49. class templates\points\main.cpp
-	<iostream>
+	|i..
 	"point.h"
 

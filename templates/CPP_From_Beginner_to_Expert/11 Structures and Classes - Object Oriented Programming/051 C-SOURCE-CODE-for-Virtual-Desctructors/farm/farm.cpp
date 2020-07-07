@@ -1,4 +1,4 @@
-#include "farm.h"
+? "farm.h"
 
 Animal::Animal()
 {
@@ -6,7 +6,7 @@ Animal::Animal()
 }
 Animal::~Animal()
 {
-    cout << "im from the base class " << endl;
+    c__ __  "im from the base class " __  e..
 }
 Dog::Dog()
 {
@@ -15,7 +15,7 @@ Dog::Dog()
 }
 Dog::~Dog()
 {
-    cout << "im from the sub-class " << endl;
+    c__ __  "im from the sub-class " __  e..
 }
 Cat::Cat()
 {
@@ -24,7 +24,7 @@ Cat::Cat()
 }
 Cat::~Cat()
 {
-    cout << "im from the sub-class " << endl;
+    c__ __  "im from the sub-class " __  e..
 }
 Cow::Cow()
 {
@@ -33,5 +33,5 @@ Cow::Cow()
 }
 Cow::~Cow()
 {
-    cout << "im from the sub-class " << endl;
+    c__ __  "im from the sub-class " __  e..
 }

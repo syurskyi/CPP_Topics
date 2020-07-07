@@ -1,40 +1,40 @@
-#include <iostream>
-#include <vector>
+? |i..
+? <vector>
 
-int main() {
+in. main() {
     auto a = 1;
     auto b = 2;
     auto c = 3;
 
     // минимальное значение
     decltype(auto) n = std::min(a, b);
-    std::cout << n << std::endl;
+    std::c__ __  n __  std::e..
     a = -1;
-    std::cout << n << std::endl;
+    std::c__ __  n __  std::e..
     a = 1;
 
     // максимальное значение
     auto m = std::max({&a, &b, &c});
-    std::cout << *m << std::endl;
+    std::c__ __  *m __  std::e..
     *m = -1;
-    std::cout << "a=" << a << " b=" << b << " c=" << c << std::endl;
+    std::c__ __  "a=" __  a __  " b=" __  b __  " c=" __  c __  std::e..
 
     // пограничные значения
     auto op = [](auto a, auto b) {
-        return a < b; // только для добрых дел
+        r_ a < b; // только для добрых дел
     };
     auto [in, ax] = std::minmax({1, 2, 3}, op);
-    std::cout << "min=" << in << " max=" << ax << std::endl;
+    std::c__ __  "min=" __  in __  " max=" __  ax __  std::e..
 
     // тоже самое в контейнерах
-    std::vector<int> v{3, 2, 1, 4, 5, 6};
+    std::vector<in.> v{3, 2, 1, 4, 5, 6};
     auto [min_it, max_it] = std::minmax_element(v.begin(), v.end());
-    std::cout << "min=" << *min_it << " max=" << *max_it << std::endl;
+    std::c__ __  "min=" __  *min_it __  " max=" __  *max_it __  std::e..
 
     min_it = std::min_element(v.begin(), v.end());
     *min_it = 99;
-    for(auto i : v) std::cout << i << " "; std::cout << std::endl;
+    for(auto i : v) std::c__ __  i __  " "; std::c__ __  std::e..
 
     // оганичитель
-    for(auto i : v) std::cout << i << " => " << std::clamp(i, 2, 5) << std::endl;
+    for(auto i : v) std::c__ __  i __  " => " __  std::clamp(i, 2, 5) __  std::e..
 }

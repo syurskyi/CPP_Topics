@@ -38,18 +38,18 @@
 #ifndef GMOCK_INCLUDE_GMOCK_GMOCK_MATCHERS_H_
 #define GMOCK_INCLUDE_GMOCK_GMOCK_MATCHERS_H_
 
-#include <math.h>
-#include <algorithm>
-#include <iterator>
-#include <limits>
-#include <ostream>  // NOLINT
-#include <sstream>
-#include <string>
-#include <utility>
-#include <vector>
-#include "gtest/gtest.h"
-#include "gmock/internal/gmock-internal-utils.h"
-#include "gmock/internal/gmock-port.h"
+? <math.h>
+? <algorithm>
+? <iterator>
+? <limits>
+? <ostream>  // NOLINT
+? <sstream>
+? <string>
+? <utility>
+? <vector>
+? "gtest/gtest.h"
+? "gmock/internal/gmock-internal-utils.h"
+? "gmock/internal/gmock-port.h"
 
 #if GTEST_HAS_STD_INITIALIZER_LIST_
 # include <initializer_list>  // NOLINT -- must be after gtest.h
@@ -5250,6 +5250,6 @@ PolymorphicMatcher<internal::variant_matcher::VariantMatcher<T> > VariantWith(
 // Include any custom callback matchers added by the local installation.
 // We must include this header at the end to make sure it can use the
 // declarations from this file.
-#include "gmock/internal/custom/gmock-matchers.h"
+? "gmock/internal/custom/gmock-matchers.h"
 
 #endif  // GMOCK_INCLUDE_GMOCK_GMOCK_MATCHERS_H_

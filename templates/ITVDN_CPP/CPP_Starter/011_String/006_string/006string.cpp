@@ -1,22 +1,22 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
-int main()
+u.. s..
+in. main()
 {
 	// Проблема чтения текста с консоли
 	char name[20];
-	int age = 0;
+	in. age = 0;
 
-	cout << "Enter you name: ";
-	cin >> name;
+	c__ __  "Enter you name: ";
+	c__ >> name;
 
-	cout << "Enter your age: ";
-	cin >> age;
+	c__ __  "Enter your age: ";
+	c__ >> age;
 
-	cout << "Your name is " << name << ", and you are " << age << " years old"<< endl;
+	c__ __  "Your name is " __  name __  ", and you are " __  age __  " years old"__  e..
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 

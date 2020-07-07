@@ -1,23 +1,23 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
-	int count = 5;
+	in. count = 5;
 
-	for (int i = 0; i < count; i++)
+	for (in. i = 0; i < count; i++)
 	{
-		cout << "Iteration " << i << endl;
+		c__ __  "Iteration " __  i __  e..
 		
 		continue;	// Эта  инстукция прекратит выполнение текущей итерации, и передаст управление секции изменения счетчика
 
-		cout << "This line is never executed";
+		c__ __  "This line is never executed";
 	}
 
-	cout << "This line is always executed";
+	c__ __  "This line is always executed";
 
-	cin.get();
-	return 0;
+	c__.g..
+	r_ 0;
 }

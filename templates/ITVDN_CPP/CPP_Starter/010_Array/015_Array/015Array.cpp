@@ -1,31 +1,31 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
 	// Динамическое выделение памяти. С помощью оператора new можно выделять необходимое количество памяти.
 
-	int *pointer = new int[3];
+	in. *poin.er = new in.[3];
 
 	// Способы заполнить динамический массив
 	// 1-й
-	pointer[0] = 1;
-	pointer[1] = 2;
-	pointer[2] = 3;
+	poin.er[0] = 1;
+	poin.er[1] = 2;
+	poin.er[2] = 3;
 
 	//2-й
-	*pointer = 1;
-	*(pointer + 1) = 2;
-	*(pointer + 2) = 3;
+	*poin.er = 1;
+	*(poin.er + 1) = 2;
+	*(poin.er + 2) = 3;
 
-	cout << "Value : " << *pointer			<< "; Adress : " << pointer << endl;
-	cout << "Value : " << *(pointer + 1)	<< "; Adress : " << pointer + 1 << endl;
-	cout << "Value : " << *(pointer + 2)	<< "; Adress : " << pointer + 2 << endl;
+	c__ __  "Value : " __  *poin.er			__  "; Adress : " __  poin.er __  e..
+	c__ __  "Value : " __  *(poin.er + 1)	__  "; Adress : " __  poin.er + 1 __  e..
+	c__ __  "Value : " __  *(poin.er + 2)	__  "; Adress : " __  poin.er + 2 __  e..
 
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 

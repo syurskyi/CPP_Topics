@@ -1,8 +1,8 @@
-#include "functions.h"
+? "functions.h"
 
-int factorial(int n) {
+in. factorial(in. n) {
     if (n <= 1) {
-        return 1;
+        r_ 1;
     }
-    return n * factorial(n - 1);
+    r_ n * factorial(n - 1);
 };

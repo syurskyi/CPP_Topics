@@ -1,26 +1,26 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
 main ()
 {
-    int choice;
+    in. choice;
 
-    cout << "1. January" << endl;
-    cout << "2. February" << endl;
-    cout << "3. March" << endl;
-    cout << "4. April" << endl;
-    cout << "5. May" << endl;
-    cout << "6. June" << endl;
-    cout << "7. July" << endl;
-    cout << "8. August" << endl;
-    cout << "9. September" << endl;
-    cout << "10. October" << endl;
-    cout << "11. November" << endl;
-    cout << "12. December" << endl;
-    cout << "Choose the month: ";
+    c__ __  "1. January" __  e..
+    c__ __  "2. February" __  e..
+    c__ __  "3. March" __  e..
+    c__ __  "4. April" __  e..
+    c__ __  "5. May" __  e..
+    c__ __  "6. June" __  e..
+    c__ __  "7. July" __  e..
+    c__ __  "8. August" __  e..
+    c__ __  "9. September" __  e..
+    c__ __  "10. October" __  e..
+    c__ __  "11. November" __  e..
+    c__ __  "12. December" __  e..
+    c__ __  "Choose the month: ";
 
-    cin >> choice;
+    c__ >> choice;
 
     switch (choice)
     {
@@ -31,30 +31,30 @@ main ()
         case 8:
         case 10:
         case 12:
-            cout << "This month has 31 days" << endl;
+            c__ __  "This month has 31 days" __  e..
             break;
         case 4:
         case 6:
         case 9:
         case 11:
-            cout << "This month has 30 days" << endl;
+            c__ __  "This month has 30 days" __  e..
             break;
         case 2:
         {
-            int year;
-            cout << "Input the year: ";
-            cin >> year;
+            in. year;
+            c__ __  "Input the year: ";
+            c__ >> year;
 
-            bool isLeapYear = (((year%4 == 0) && (year%100 != 0)) || (year%400 == 0));
+            bo.. isLeapYear = (((year%4 == 0) && (year%100 != 0)) || (year%400 == 0));
 
             if (isLeapYear)
-                cout << "The month february has 29 days in year " << year << endl;
+                c__ __  "The month february has 29 days in year " __  year __  e..
             else
-                cout << "The month february has 28 days in year " << year << endl;
+                c__ __  "The month february has 28 days in year " __  year __  e..
 
         }
         default:
-            cout << "ERROR. Invalid choice.";
+            c__ __  "ERROR. Invalid choice.";
 
     }
 

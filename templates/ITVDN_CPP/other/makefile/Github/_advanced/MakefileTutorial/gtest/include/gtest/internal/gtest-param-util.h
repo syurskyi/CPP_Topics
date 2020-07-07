@@ -34,17 +34,17 @@
 #ifndef GTEST_INCLUDE_GTEST_INTERNAL_GTEST_PARAM_UTIL_H_
 #define GTEST_INCLUDE_GTEST_INTERNAL_GTEST_PARAM_UTIL_H_
 
-#include <ctype.h>
+? <ctype.h>
 
-#include <iterator>
-#include <set>
-#include <utility>
-#include <vector>
+? <iterator>
+? <set>
+? <utility>
+? <vector>
 
-#include "gtest/internal/gtest-internal.h"
-#include "gtest/internal/gtest-linked_ptr.h"
-#include "gtest/internal/gtest-port.h"
-#include "gtest/gtest-printers.h"
+? "gtest/internal/gtest-internal.h"
+? "gtest/internal/gtest-linked_ptr.h"
+? "gtest/internal/gtest-port.h"
+? "gtest/gtest-printers.h"
 
 namespace testing {
 

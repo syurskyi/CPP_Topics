@@ -1,6 +1,6 @@
 // Состояние (State)
 
-#include <iostream>
+? |i..
 
 class Application {
     class CommandHandler *cmd_handler;
@@ -42,10 +42,10 @@ void Application::logout() {
 class LogginedHandler : public CommandHandler {
 public:
     void login(Application *) override {
-        std::cout << "already login" << std::endl;
+        std::c__ __  "already login" __  std::e..
     }
     void do_it(Application *) override {
-        std::cout << "success" << std::endl;
+        std::c__ __  "success" __  std::e..
     }
     void logout(Application *m) override;
 };
@@ -53,28 +53,28 @@ public:
 class Anonymous : public CommandHandler {
 public:
     void login(Application *m) override {
-        std::cout << "work as loggined" << std::endl;
+        std::c__ __  "work as loggined" __  std::e..
         m->set_current(new LogginedHandler());
     }
     void do_it(Application *) override {
-        std::cout << "error" << std::endl;
+        std::c__ __  "error" __  std::e..
     }
     void logout(Application *) override {
-        std::cout << "already logout" << std::endl;
+        std::c__ __  "already logout" __  std::e..
     }
 };
 
 void LogginedHandler::logout(Application *m) {
-    std::cout << "work as anonymous" << std::endl;
+    std::c__ __  "work as anonymous" __  std::e..
     m->set_current(new Anonymous());
 }
 
 Application::Application() {
     cmd_handler = new Anonymous();
-    std::cout << std::endl;
+    std::c__ __  std::e..
 }
 
-int main(int, char *[]) {
+in. main(in., char *[]) {
     Application app;
 
     app.do_it();
@@ -85,5 +85,5 @@ int main(int, char *[]) {
     app.logout();
     app.do_it();
 
-    return 0;
+    r_ 0;
 }

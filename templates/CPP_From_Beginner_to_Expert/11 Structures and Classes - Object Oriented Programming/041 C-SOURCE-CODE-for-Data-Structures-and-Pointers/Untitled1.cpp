@@ -1,6 +1,6 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 /* DATA STRUCTURES */
 
 struct personalData
@@ -8,10 +8,10 @@ struct personalData
     string name;
     string surname;
     string telephoneNumber;
-    short age;
+    sh.. age;
 }a,b;
 void test(personalData *);
-int main()
+in. main()
 {
     personalData person[5];
     a.age =50;
@@ -35,12 +35,12 @@ int main()
 */
     personalData *p = person;
 
-    cout << p->name << endl;
+    c__ __  p->name __  e..
 
     test(p); // test(person);
 
-    cout << p->name << endl;
-    return 0;
+    c__ __  p->name __  e..
+    r_ 0;
 }
 void test(personalData *person)
 {

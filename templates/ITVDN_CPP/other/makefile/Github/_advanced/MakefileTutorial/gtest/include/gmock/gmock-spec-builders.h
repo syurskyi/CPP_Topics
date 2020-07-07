@@ -60,17 +60,17 @@
 #ifndef GMOCK_INCLUDE_GMOCK_GMOCK_SPEC_BUILDERS_H_
 #define GMOCK_INCLUDE_GMOCK_GMOCK_SPEC_BUILDERS_H_
 
-#include <map>
-#include <set>
-#include <sstream>
-#include <string>
-#include <vector>
-#include "gmock/gmock-actions.h"
-#include "gmock/gmock-cardinalities.h"
-#include "gmock/gmock-matchers.h"
-#include "gmock/internal/gmock-internal-utils.h"
-#include "gmock/internal/gmock-port.h"
-#include "gtest/gtest.h"
+? <map>
+? <set>
+? <sstream>
+? <string>
+? <vector>
+? "gmock/gmock-actions.h"
+? "gmock/gmock-cardinalities.h"
+? "gmock/gmock-matchers.h"
+? "gmock/internal/gmock-internal-utils.h"
+? "gmock/internal/gmock-port.h"
+? "gtest/gtest.h"
 
 #if GTEST_HAS_EXCEPTIONS
 # include <stdexcept>  // NOLINT

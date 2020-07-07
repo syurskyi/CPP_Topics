@@ -1,25 +1,25 @@
-#include <iostream>
-#include <mutex>
-#include <string>
-#include <thread>
+? |i..
+? <mutex>
+? <string>
+? <thread>
 
-using namespace std;
+u.. s..
 
 mutex m;
 
 void foo()
 {
     lock_guard< mutex > guard( m );
-    cout << "Hello World!" << endl;
+    c__ __  "Hello World!" __  e..
 }
 
 void foo2()
 {
     lock_guard< mutex > guard( m );
-    cout << "Hello2 World!2" << endl;
+    c__ __  "Hello2 World!2" __  e..
 }
 
-int main()
+in. main()
 {
     thread t1( foo );
     thread t2( foo2 );
@@ -27,5 +27,5 @@ int main()
     t1.join();
     t2.join();
 
-    return 0;
+    r_ 0;
 }

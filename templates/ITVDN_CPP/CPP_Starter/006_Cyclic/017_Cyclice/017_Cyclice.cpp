@@ -1,9 +1,9 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
 	// 1.
 	for (; ;)
@@ -24,6 +24,6 @@ int main()
 	} while (true);
 
 
-    return 0;
+    r_ 0;
 }
 

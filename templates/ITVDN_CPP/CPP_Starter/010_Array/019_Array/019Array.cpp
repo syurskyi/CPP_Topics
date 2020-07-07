@@ -1,36 +1,36 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int GetSum(int *arr, int count);
+in. GetSum(in. *arr, in. count);
 
-int main()
+in. main()
 {
-	int size = 50;
-	int *arr = new int[size];
+	in. size = 50;
+	in. *arr = new in.[size];
 
-	for (int i = 0; i < 50; i++)
+	for (in. i = 0; i < 50; i++)
 	{
 		*(arr + i) = rand();
 	}
 
-	int sum = GetSum(arr, size);
+	in. sum = GetSum(arr, size);
 
-	cout << "Total sum of the array equals = " << sum << endl;
+	c__ __  "Total sum of the array equals = " __  sum __  e..
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 
-int GetSum(int *arr, int count) 
+in. GetSum(in. *arr, in. count)
 {
-	int total = 0;
-	for (int i = 0; i < count; i++)
+	in. total = 0;
+	for (in. i = 0; i < count; i++)
 	{
 		total += *(arr + i);
 	}
 
-	return total;
+	r_ total;
 }
 

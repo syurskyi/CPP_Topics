@@ -1,18 +1,18 @@
-#include "stdafx.h"
-#include <iostream>
+? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
-	int count = 0;
+	in. count = 0;
 
-	for (int i = 5; i > count; i--)
+	for (in. i = 5; i > count; i--)
 	{
-		cout << "Count " << i << endl;
+		c__ __  "Count " __  i __  e..
 	}
-	cout << "This line is always executed";
+	c__ __  "This line is always executed";
 
-	cin.get();
-	return 0;
+	c__.g..
+	r_ 0;
 }

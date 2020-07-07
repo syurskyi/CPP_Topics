@@ -1,45 +1,45 @@
-#include <iostream>
-#include "point.h"
+? |i..
+? "point.h"
 
 
-using namespace std;
+u.. s..
 
-Point::Point(int x)
+Poin.::Poin.(in. x)
 {
     this->x = x;
-    cout << "The constructor from the Point class has just been invoked" << endl;
+    c__ __  "The constructor from the Point class has just been invoked" __  e..
 }
-Point::~Point()
+Poin.::~Poin.()
 {
-    cout << "The destructor from the Point class has just been invoked" << endl;
+    c__ __  "The destructor from the Point class has just been invoked" __  e..
 }
-void Point::setX(int x)
+void Poin.::setX(in. x)
 {
     this->x = x;
-    cout << "Im from Point" << endl;
+    c__ __  "Im from Point" __  e..
 }
 
-Point2D::Point2D(int x, int y) : Point(x)
+Poin.2D::Poin.2D(in. x, in. y) : Poin.(x)
 {
     this->y = y;
-    cout << "The constructor from the Point2D class has just been invoked" << endl;
+    c__ __  "The constructor from the Point2D class has just been invoked" __  e..
 }
-Point2D::~Point2D()
+Poin.2D::~Poin.2D()
 {
-    cout << "The destructor from the Point2D class has just been invoked" << endl;
+    c__ __  "The destructor from the Point2D class has just been invoked" __  e..
 }
 
-void Point2D::setY(int y)
+void Poin.2D::setY(in. y)
 {
     this->y = y;
 }
-void Point2D::setXY(int x, int y)
+void Poin.2D::setXY(in. x, in. y)
 {
     setX(x);
     setY(y);
 }
-void Point2D::setX(int x)
+void Poin.2D::setX(in. x)
 {
     this->x = x;
-    cout << "Im from Point2D" << endl;
+    c__ __  "Im from Point2D" __  e..
 }

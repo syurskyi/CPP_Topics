@@ -1,24 +1,24 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
-	int a = 10;
-	int b = 15;
+	in. a = 10;
+	in. b = 15;
 
-	int *pointer = &a;
+	in. *poin.er = &a;
 
-	cout << "*pointer = " << *pointer << endl;
+	c__ __  "*pointer = " __  *poin.er __  e..
 
-	pointer = &b;
+	poin.er = &b;
 
-	cout << "*pointer = " << *pointer << endl;
+	c__ __  "*pointer = " __  *poin.er __  e..
 
 	// Всегда инициализируйте указатели. Непроинициализированные указатели являются источниками ошибок и аварийного завершения программы.
-	int *p_void = NULL; // нулевой указатель
+	in. *p_void = NULL; // нулевой указатель
 
 	system("pause");
-	return 0;
+	r_ 0;
 }

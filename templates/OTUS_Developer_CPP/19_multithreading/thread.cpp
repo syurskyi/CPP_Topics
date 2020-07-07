@@ -1,44 +1,44 @@
-#include <iostream>
-#include <string>
-#include <thread>
-#include <map>
-#include <mutex>
-#include <future>
+? |i..
+? <string>
+? <thread>
+? <map>
+? <mutex>
+? <future>
 
-std::mutex cout_mutex;
+std::mutex c___mutex;
 std::mutex cerr_mutex;
 
 using dict_t = std::map<std::string, std::string>;
 
-thread_local int thread_local_static_int = 0;
-int static_int = 0;
+thread_local in. thread_local_static_in. = 0;
+in. static_in. = 0;
 
 std::string foo(dict_t& d)
 {
 //    throw std::exception();
-    thread_local_static_int = 0;
-    static_int = 0;
+    thread_local_static_in. = 0;
+    static_in. = 0;
 
-    cout_mutex.lock();
+    c___mutex.lock();
     d["asas"] = "zxzxzx";
-    cout_mutex.unlock();
+    c___mutex.unlock();
 
     std::thread::id this_id = std::this_thread::get_id();
 
-    cout_mutex.lock();
-    std::cout << "foo " << this_id << std::endl;
-    cout_mutex.unlock();
+    c___mutex.lock();
+    std::c__ __  "foo " __  this_id __  std::e..
+    c___mutex.unlock();
 
-    cout_mutex.lock();
-    std::cerr << "foo " << this_id << std::endl;
-    cout_mutex.unlock();
+    c___mutex.lock();
+    std::cerr __  "foo " __  this_id __  std::e..
+    c___mutex.unlock();
 
     std::this_thread::sleep_for(std::chrono::seconds(1));
 
-    return std::string{"ok"};
+    r_ std::string{"ok"};
 }
 
-int main(int argc, char** argv)
+in. main(in. argc, char** argv)
 {
     try {
         dict_t d, d2;
@@ -57,14 +57,14 @@ int main(int argc, char** argv)
 
         auto r1 = std::async(std::launch::async,
                 foo, std::ref(d));
-        std::cout << r1.get() << std::endl;
+        std::c__ __  r1.get() __  std::e..
 
         auto r2 = std::async(std::launch::deferred,
                 foo, std::ref(d));
-        std::cout << r2.get() << std::endl;
+        std::c__ __  r2.get() __  std::e..
     }
     catch (const std::exception &)
     {
-        std::cerr << "oops" << std::endl;
+        std::cerr __  "oops" __  std::e..
     }
 }

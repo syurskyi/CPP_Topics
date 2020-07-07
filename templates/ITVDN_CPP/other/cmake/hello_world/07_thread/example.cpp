@@ -1,6 +1,6 @@
-#include <iostream>
-#include <thread>
-#include <boost/thread/thread.hpp>
+? |i..
+? <thread>
+? <boost/thread/thread.hpp>
 
 namespace ns_foo
 {
@@ -9,7 +9,7 @@ namespace ns_foo
         public:
         void display()
         {
-            std::cout << "Hello from ns_foo::person::display()" << std::endl;
+            std::c__ __  "Hello from ns_foo::person::display()" __  std::e..
         }
     };
     class Superhero : public Person
@@ -17,30 +17,30 @@ namespace ns_foo
         public:
         void yell()
         {
-            std::cout << "I am Iron Man." << std::endl;
+            std::c__ __  "I am Iron Man." __  std::e..
         }
-        void count(int x)
+        void count(in. x)
         {
-            for(int i=0; i<x; i++)
+            for(in. i=0; i<x; i++)
             {
-                std::cout << "Count: " << i << std::endl;
+                std::c__ __  "Count: " __  i __  std::e..
                 boost::this_thread::sleep( boost::posix_time::seconds(1) );
             }
         }
     };
 }
 
-void foo(int x)
+void foo(in. x)
 {
-    for(int i=0; i<x; i++)
+    for(in. i=0; i<x; i++)
     {
-        std::cout << "Count: " << i << std::endl;
+        std::c__ __  "Count: " __  i __  std::e..
         boost::this_thread::sleep( boost::posix_time::seconds(1) );
     }
 }
 
 
-int main(int argc, char *argv[])
+in. main(in. argc, char *argv[])
 {
     ns_foo::Superhero iron_man;
     std::thread t1(&iron_man::count, 5);
@@ -52,7 +52,7 @@ int main(int argc, char *argv[])
     //std::thread iron_man.count(5);
     //first.join();                // pauses until first finishes
 
-    std::cout << "foo and bar completed.\n";
+    std::c__ __  "foo and bar completed.\n";
 
-    return 0;
+    r_ 0;
 }

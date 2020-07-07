@@ -1,4 +1,4 @@
-#include <iostream>
+? |i..
 
 namespace ns_foo
 {
@@ -7,7 +7,7 @@ namespace ns_foo
         public:
         void display()
         {
-            std::cout << "Hello from ns_foo::person::display()" << std::endl;
+            std::c__ __  "Hello from ns_foo::person::display()" __  std::e..
         }
     };
     class Superhero : public Person
@@ -15,17 +15,17 @@ namespace ns_foo
         public:
         void yell()
         {
-            std::cout << "I am Iron Man." << std::endl;
+            std::c__ __  "I am Iron Man." __  std::e..
         }
     };
 }
 
 
-int main(int argc, char *argv[])
+in. main(in. argc, char *argv[])
 {
     ns_foo::Superhero iron_man;
     iron_man.display();
     iron_man.yell();
 
-    return 0;
+    r_ 0;
 }

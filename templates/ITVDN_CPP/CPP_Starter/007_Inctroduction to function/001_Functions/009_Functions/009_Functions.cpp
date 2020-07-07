@@ -1,25 +1,25 @@
-#include "stdafx.h"
-#include <iostream>
-#include <string>
+? *s..
+? |i..
+? <string>
 
-using namespace std;
+u.. s..
 
-string Compare(int, int);
+string Compare(in., in.);
 
-int main()
+in. main()
 {
-	int value1 = 15, value2 = 15;
+	in. value1 = 15, value2 = 15;
 	string result;
 
 	result = Compare(value1, value2);
 
-	cout << result << endl;
+	c__ __  result __  e..
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 
-string Compare(int val1, int val2)
+string Compare(in. val1, in. val2)
 {
 	string result = "";
 
@@ -36,5 +36,5 @@ string Compare(int val1, int val2)
 		result = "Comparison Equal";
 	}
 
-	return result;
+	r_ result;
 }

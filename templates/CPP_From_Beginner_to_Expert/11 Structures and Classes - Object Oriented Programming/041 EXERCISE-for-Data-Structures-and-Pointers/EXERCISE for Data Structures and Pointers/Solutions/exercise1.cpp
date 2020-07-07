@@ -1,17 +1,17 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
 struct book
 {
     string title;
     string author;
-    int publicationYear;
+    in. publicationYear;
 };
 
-int main()
+in. main()
 {
     book book1, book2, book3;
 
-    return 0;
+    r_ 0;
 }

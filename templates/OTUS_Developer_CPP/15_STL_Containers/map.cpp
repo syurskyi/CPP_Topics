@@ -1,13 +1,13 @@
  // map
-#include <iostream>
-#include <map>
+? |i..
+? <map>
 
-int main()
+in. main()
 {
     // если не set
     // - operator <
     // - новый объект
-    std::map<int, int> x;
+    std::map<in., in.> x;
 
     auto f = x.find(0);
     if (f == x.end())
@@ -26,8 +26,8 @@ int main()
 
     for(auto [i, j]: x)
     {
-        std::cout << i << ", " << j << std::endl;
+        std::c__ __  i __  ", " __  j __  std::e..
     }
 
-    std::cout << x.at(2) << std::endl;
+    std::c__ __  x.at(2) __  std::e..
 }

@@ -1,17 +1,17 @@
-#include <iostream>
+? |i..
 
 struct foo {
-    foo() { std::cout << __PRETTY_FUNCTION__ << std::endl; };
+    foo() { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. };
 
-    foo(int) : foo{} { std::cout << __PRETTY_FUNCTION__ << std::endl; };
+    foo(in.) : foo{} { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. };
 
-    foo(const char *) : foo{0} { std::cout << __PRETTY_FUNCTION__ << std::endl; };
+    foo(const char *) : foo{0} { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. };
 };
 
-int main(int, char *[]) {
+in. main(in., char *[]) {
     foo f{42};
 
     foo g{"42"};
 
-    return 0;
+    r_ 0;
 }

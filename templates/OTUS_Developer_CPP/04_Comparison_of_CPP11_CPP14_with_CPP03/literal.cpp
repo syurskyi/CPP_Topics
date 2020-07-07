@@ -1,38 +1,38 @@
-#include <iostream>
+? |i..
 
-using namespace std::string_literals;
+u.. std::string_literals;
 
 std::string operator""_kg(unsigned long long)
 {
-    std::cout << __PRETTY_FUNCTION__ << std::endl;
-    return "sorok dva";
+    std::c__ __  __PRETTY_FUNCTION__ __  std::e..
+    r_ "sorok dva";
 }
 
 std::string operator""_rate(long double)
 {
-    std::cout << __PRETTY_FUNCTION__ << std::endl;
-    return "sorok dva";
+    std::c__ __  __PRETTY_FUNCTION__ __  std::e..
+    r_ "sorok dva";
 }
 
 std::string operator""_english(const char *, size_t)
 {
-    std::cout << __PRETTY_FUNCTION__ << std::endl;
-    return "sorok dva";
+    std::c__ __  __PRETTY_FUNCTION__ __  std::e..
+    r_ "sorok dva";
 }
 
-int main(int, char *[]) {
+in. main(in., char *[]) {
     auto a = 42_kg;
-    std::cout << a << std::endl;
+    std::c__ __  a __  std::e..
 
     auto b = 42.0_rate;
-    std::cout << b << std::endl;
+    std::c__ __  b __  std::e..
 
     auto c = "42"_english;
-    std::cout << c << std::endl;
+    std::c__ __  c __  std::e..
 
     auto d = "hello world"; // s
-    std::cout << d << std::endl;
-    std::cout << typeid(d).name() << std::endl;
+    std::c__ __  d __  std::e..
+    std::c__ __  typeid(d).name() __  std::e..
 
-    return 0;
+    r_ 0;
 }

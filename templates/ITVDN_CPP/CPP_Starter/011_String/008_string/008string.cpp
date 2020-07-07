@@ -1,24 +1,24 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
-int main()
+u.. s..
+in. main()
 {
 	// Фунция get() считывает полностью строку до момента ввода символа новой строки, но в отличие от метода getline, данный мтод не отбрасывает символ конца строки
 	char name[20];
 	char address[15];
 
-	cout << "Enter you name: ";
+	c__ __  "Enter you name: ";
 	//cin.get(name, 20);	// Символ конца строки остается во входной очереди.
 
-	cin.get(name, 20).get();  // Раскомментировать
+	c__.get(name, 20).g..  // Раскомментировать
 
-	cout << "Enter your address: ";
-	cin.get(address, 15);
+	c__ __  "Enter your address: ";
+	c__.get(address, 15);
 
-	cout << "Your name is " << name << ". Your address : " << address << endl;
+	c__ __  "Your name is " __  name __  ". Your address : " __  address __  e..
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 

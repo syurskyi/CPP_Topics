@@ -1,20 +1,20 @@
-#include "stdafx.h"
-#include <iostream>
+? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
 
-	cout << "Start program!" << endl;
+	c__ __  "Start program!" __  e..
 
 	goto label;
 	
-	cout << "Some instruction..." << endl;
+	c__ __  "Some instruction..." __  e..
 
 label: 
-	cout << "End program!" << endl;
+	c__ __  "End program!" __  e..
 
-	cin.get();
-	return 0;
+	c__.g..
+	r_ 0;
 }

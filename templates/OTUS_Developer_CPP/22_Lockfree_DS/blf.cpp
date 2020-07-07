@@ -1,42 +1,42 @@
 // http://www.boost.org/doc/libs/1_66_0/doc/html/lockfree.html
 
-#include <boost/lockfree/queue.hpp>
-#include <boost/lockfree/spsc_queue.hpp>
-#include <boost/lockfree/stack.hpp>
+? <boost/lockfree/queue.hpp>
+? <boost/lockfree/spsc_queue.hpp>
+? <boost/lockfree/stack.hpp>
 
-#include <iostream>
+? |i..
 
 namespace lf = boost::lockfree;
 
-int main(int, char *[]) {
-    lf::queue<int> q{10};
+in. main(in., char *[]) {
+    lf::queue<in.> q{10};
     q.push(42);
     q.push(100);
 
-    int v;
+    in. v;
     while (!q.empty())
     {
         q.pop(v);
-        std::cout << v << std::endl;
+        std::c__ __  v __  std::e..
     }
 
-    lf::stack<int> s{10};
+    lf::stack<in.> s{10};
     s.push(42);
     s.push(100);
     while (!s.empty())
     {
         s.pop(v);
-        std::cout << v << std::endl;
+        std::c__ __  v __  std::e..
     }
 
-    lf::spsc_queue<int> rb{10};
+    lf::spsc_queue<in.> rb{10};
     rb.push(42);
     rb.push(100);
     while (!rb.empty())
     {
         rb.pop(v);
-        std::cout << v << std::endl;
+        std::c__ __  v __  std::e..
     }
 
-    return 0;
+    r_ 0;
 }

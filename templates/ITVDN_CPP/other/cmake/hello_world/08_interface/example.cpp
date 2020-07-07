@@ -9,36 +9,36 @@
  * ref: https://www.tutorialspoint.com/cplusplus/cpp_interfaces.htm
  */
 
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
 // Base class
 class Shape {
 public:
   // pure virtual function providing interface framework.
-  virtual int getArea() = 0;
-  void setWidth(int w) { width = w; }
+  virtual in. getArea() = 0;
+  void setWidth(in. w) { width = w; }
 
-  void setHeight(int h) { height = h; }
+  void setHeight(in. h) { height = h; }
 
 protected:
-  int width;
-  int height;
+  in. width;
+  in. height;
 };
 
 // Derived classes
 class Rectangle : public Shape {
 public:
-  int getArea() { return (width * height); }
+  in. getArea() { r_ (width * height); }
 };
 
 class Triangle : public Shape {
 public:
-  int getArea() { return (width * height) / 2; }
+  in. getArea() { r_ (width * height) / 2; }
 };
 
-int main(void) {
+in. main(void) {
   Rectangle Rect;
   Triangle Tri;
 
@@ -46,13 +46,13 @@ int main(void) {
   Rect.setHeight(7);
 
   // Print the area of the object.
-  cout << "Total Rectangle area: " << Rect.getArea() << endl;
+  c__ __  "Total Rectangle area: " __  Rect.getArea() __  e..
 
   Tri.setWidth(5);
   Tri.setHeight(7);
 
   // Print the area of the object.
-  cout << "Total Triangle area: " << Tri.getArea() << endl;
+  c__ __  "Total Triangle area: " __  Tri.getArea() __  e..
 
-  return 0;
+  r_ 0;
 }

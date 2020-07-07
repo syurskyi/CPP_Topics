@@ -1,6 +1,6 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 /* loops - break and continue */
 
 main()
@@ -35,16 +35,16 @@ main()
 */
 
 
-    for (int i = 1, j = 1; i <= 10; i++)
+    for (in. i = 1, j = 1; i <= 10; i++)
     {
-        cout.width(4);
-        cout << i * j;
+        c__.width(4);
+        c__ __  i * j;
 
         if (i == 10)
         {
             j++;
             i = 0;
-            cout << endl;
+            c__ __  e..
         }
 
         if (j == 10 + 1)

@@ -1,19 +1,19 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
-int * createArray(int);
+in. * createArray(in.);
 
-int main ()
+in. main ()
 {
 
-    return 0;
+    r_ 0;
 }
 
-int * createArray(int sizeOfArray)
+in. * createArray(in. sizeOfArray)
 {
-    int* newArray = new int[sizeOfArray];
+    in.* newArray = new in.[sizeOfArray];
 
-    return newArray;
+    r_ newArray;
 }
 

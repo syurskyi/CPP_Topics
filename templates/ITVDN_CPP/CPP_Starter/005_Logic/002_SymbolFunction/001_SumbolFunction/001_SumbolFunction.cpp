@@ -1,45 +1,45 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
 	char ch = 'A';
 
-	bool result = isalpha(ch);				// функция проверяет, является ли параметр буквой
+	bo.. result = isalpha(ch);				// функция проверяет, является ли параметр буквой
 
-	cout << boolalpha << result << endl;
+	c__ __  bo..alpha __  result __  e..
 
 	ch = '\r';
 	result = iscntrl(ch);					// функция проверяет, является ли символ управляющей последовательностью
-	cout << boolalpha << result << endl;
+	c__ __  bo..alpha __  result __  e..
 
 	ch = '1';
 	result = isdigit(ch);					// функция проверяет, является ли символ числом
-	cout << boolalpha << result << endl;
+	c__ __  bo..alpha __  result __  e..
 
 	ch = 'q';
 	result = islower(ch);					//  функция проверяет, находится ли символ в нижнем регистре
-	cout << boolalpha << result << endl;
+	c__ __  bo..alpha __  result __  e..
 
 	result = isupper(ch);					// функция проверяет, находится ли символ в верхнем регистре
-	cout << boolalpha << result << endl;
+	c__ __  bo..alpha __  result __  e..
 
 	ch = ',';
 	result = ispunct(ch);					// функция проверяет, является ли символ, символом пунктуации
-	cout << boolalpha << result << endl;
+	c__ __  bo..alpha __  result __  e..
 
 	ch = '\t';
 	result = isspace(ch);					//функция проверяет, является ли символ пробельным
-	cout << boolalpha << result << endl;
+	c__ __  bo..alpha __  result __  e..
 
 	ch = tolower('A');						// функция преобразовывает символ в верхнем регистре в символ в нижнем регистре
-	cout << ch << endl;
+	c__ __  ch __  e..
 
 	ch = toupper(ch);						// функция преобразовывает символ в нижнем регистре  в символ в верхнем регистре
-	cout << ch << endl;
+	c__ __  ch __  e..
 
-	return 0;
+	r_ 0;
 }
 

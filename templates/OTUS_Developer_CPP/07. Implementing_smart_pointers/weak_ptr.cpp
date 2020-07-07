@@ -1,26 +1,26 @@
-#include <iostream>
-#include <memory>
-#include <stdio.h>
+? |i..
+? <memory>
+? <stdio.h>
 
 
 auto null_factory() {
     static std::weak_ptr<FILE> cache;
     auto spt = cache.lock();
     if (spt) {
-        std::cout << "hit" << std::endl;
+        std::c__ __  "hit" __  std::e..
     } else {
-        std::cout << "miss" << std::endl;
+        std::c__ __  "miss" __  std::e..
         spt = std::shared_ptr<FILE>{fopen("/dev/null", "w"), &fclose};
         cache = spt;
     }
-    return spt;
+    r_ spt;
 }
 
-int main() {
+in. main() {
     {
         auto n1 = null_factory();
         auto n2 = null_factory();
-        std::cout << n1.use_count();
+        std::c__ __  n1.use_count();
     }
 
     {

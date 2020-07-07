@@ -36,7 +36,7 @@
 #ifndef GTEST_INCLUDE_GTEST_INTERNAL_GTEST_INTERNAL_H_
 #define GTEST_INCLUDE_GTEST_INTERNAL_GTEST_INTERNAL_H_
 
-#include "gtest/internal/gtest-port.h"
+? "gtest/internal/gtest-port.h"
 
 #if GTEST_OS_LINUX
 # include <stdlib.h>
@@ -49,20 +49,20 @@
 # include <stdexcept>
 #endif
 
-#include <ctype.h>
-#include <float.h>
-#include <string.h>
-#include <iomanip>
-#include <limits>
-#include <map>
-#include <set>
-#include <string>
-#include <vector>
+? <ctype.h>
+? <float.h>
+? <string.h>
+? <iomanip>
+? <limits>
+? <map>
+? <set>
+? <string>
+? <vector>
 
-#include "gtest/gtest-message.h"
-#include "gtest/internal/gtest-filepath.h"
-#include "gtest/internal/gtest-string.h"
-#include "gtest/internal/gtest-type-util.h"
+? "gtest/gtest-message.h"
+? "gtest/internal/gtest-filepath.h"
+? "gtest/internal/gtest-string.h"
+? "gtest/internal/gtest-type-util.h"
 
 // Due to C++ preprocessor weirdness, we need double indirection to
 // concatenate two tokens when one of them is __LINE__.  Writing

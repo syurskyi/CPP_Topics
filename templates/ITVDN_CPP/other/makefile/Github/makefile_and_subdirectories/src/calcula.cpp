@@ -1,16 +1,16 @@
-#include "calcula.h"
+? "calcula.h"
 
 /**
 *@brief Funcao recursiva que calcula o fatorial de um numero
 *@param *val ponteiro que aponta para o valor passado pelo usuario
 *@return valor do fatorial do numero informado pelo usuario
 */
-int fatorial(int *val) {
+in. fatorial(in. *val) {
 	if(*val == 1 || *val == 0) {
-		return 1;
+		r_ 1;
 	} else {
-		int anterior = *val - 1;//armazena o valor inteiro anterior a *val
-		return *val * fatorial(&anterior);
+		in. anterior = *val - 1;//armazena o valor inteiro anterior a *val
+		r_ *val * fatorial(&anterior);
 	}
 }
 
@@ -20,17 +20,17 @@ int fatorial(int *val) {
 *@param *chk paramatro de avaliacao para determinar se um numero é primo
 *@return numero primo mais proximo do valor apontado por *resultFat
 */
-int primo(int *resultFat, int *chk) {
+in. primo(in. *resultFat, in. *chk) {
 	if(*chk == 1) {
-		return *resultFat;
+		r_ *resultFat;
 	} else {
 		if(*resultFat%*chk == 0) {
 			*resultFat -= 1;
 			*chk = *resultFat/2;
-			return primo(resultFat, chk);
+			r_ primo(resultFat, chk);
 		} else {
 			*chk -= 1;
-			return primo(resultFat, chk);
+			r_ primo(resultFat, chk);
 		}
 	}
 }

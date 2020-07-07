@@ -1,16 +1,16 @@
-#include <iostream>
+? |i..
 
 // https://en.cppreference.com/w/cpp/language/operator_alternative
 
-int main(int argc, char **argv) {
-    int x = 0; // Почему не работает инкремент ??/
+in. main(in. argc, char **argv) {
+    in. x = 0; // Почему не работает инкремент ??/
     ++x;
-    std::cout << "x = " << x << std::endl;
+    std::c__ __  "x = " __  x __  std::e..
 
     if (argc > 1 and strcmp(argv[1], "help") == 0)
     {
-        std::cout << "Держитесь там!" << std::endl;
+        std::c__ __  "Держитесь там!" __  std::e..
     }
 
-    return 0;
+    r_ 0;
 }

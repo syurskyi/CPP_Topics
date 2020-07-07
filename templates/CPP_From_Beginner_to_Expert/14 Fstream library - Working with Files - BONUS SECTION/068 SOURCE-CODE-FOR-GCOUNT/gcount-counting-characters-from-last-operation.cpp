@@ -1,9 +1,9 @@
-#include <iostream>
-#include <fstream>
+? |i..
+? <fstream>
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
     /*
         gcount - Getcharacter Count - get count of extracted characters from last extraction operation
@@ -11,7 +11,7 @@ int main()
 
     fstream file;
 
-    file.open("sample.txt", ios::in | ios::binary);
+    file.open("sample.txt", i.. in | i.. binary);
 
     if (file.is_open())
     {
@@ -20,11 +20,11 @@ int main()
         {
             file.getline(buffer, 250);
 
-            cout << buffer << " " << file.gcount() << endl;
+            c__ __  buffer __  " " __  file.gcount() __  e..
         }while(!file.eof());
     }
     else
-        cout << "The file couldn't be opened properly" << endl;
+        c__ __  "The file couldn't be opened properly" __  e..
 
-    return 0;
+    r_ 0;
 }

@@ -1,8 +1,8 @@
 #ifndef FARM_H_INCLUDED
 #define FARM_H_INCLUDED
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
 class Animal
 {

@@ -1,7 +1,7 @@
 // Посетитель (Visitor)
 
-#include <iostream>
-#include <vector>
+? |i..
+? <vector>
 
 class DrawPrimitive {
 public:
@@ -10,19 +10,19 @@ public:
 
 class Circle : public DrawPrimitive {
 public:
-    int radius;
+    in. radius;
 
-    Circle(int radius_) : radius(radius_) {};
+    Circle(in. radius_) : radius(radius_) {};
 
     void save_to_file(class Export *) override;
 };
 
 class Box : public DrawPrimitive {
 public:
-    int w;
-    int h;
+    in. w;
+    in. h;
 
-    Box(int w_, int h_) : w(w_), h(h_) {};
+    Box(in. w_, in. h_) : w(w_), h(h_) {};
 
     void save_to_file(class Export *) override;
 };
@@ -37,22 +37,22 @@ public:
 class JsonExport : public Export {
 public:
     void save_to(Circle *c) override {
-        std::cout << "{type:circle,radius:" << c->radius << "}" << std::endl;
+        std::c__ __  "{type:circle,radius:" __  c->radius __  "}" __  std::e..
     }
 
     void save_to(Box *b) override {
-        std::cout << "{type:box,width:" << b->w << ",height:" << b->h << "}" << std::endl;
+        std::c__ __  "{type:box,width:" __  b->w __  ",height:" __  b->h __  "}" __  std::e..
     }
 };
 
 class XmlExport : public Export {
 public:
     void save_to(Circle *c) override {
-        std::cout << "<circle radius=>" << c->radius << "</circle>" << std::endl;
+        std::c__ __  "<circle radius=>" __  c->radius __  "</circle>" __  std::e..
     }
 
     void save_to(Box *b) override {
-        std::cout << "<box w=" << b->w << " height=" << b->h << "></box>" << std::endl;
+        std::c__ __  "<box w=" __  b->w __  " height=" __  b->h __  "></box>" __  std::e..
     }
 };
 
@@ -64,7 +64,7 @@ void Box::save_to_file(Export *v) {
     v->save_to(this);
 }
 
-int main(int, char *[]) {
+in. main(in., char *[]) {
     std::vector<DrawPrimitive *> doc = {new Circle{100}, new Box{4, 3}, new Box{16, 9}, new Circle{13}, new Circle{2}};
 
     Export *exporter = new JsonExport{};
@@ -77,5 +77,5 @@ int main(int, char *[]) {
         obj->save_to_file(exporter);
     }
 
-    return 0;
+    r_ 0;
 }

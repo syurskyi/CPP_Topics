@@ -1,26 +1,26 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
-	const int size = 10;
-	int arr[size];
+	const in. size = 10;
+	in. arr[size];
 
 	// Заполнение массива
-	for (int i = 0; i < size; i++)
+	for (in. i = 0; i < size; i++)
 	{
 		arr[i] = i * 2;
 	}
 
 	// Вывод на экран значений массива
-	for (int i = 0; i < size; i++)
+	for (in. i = 0; i < size; i++)
 	{
-		cout << arr[i] << endl;
+		c__ __  arr[i] __  e..
 	}
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 

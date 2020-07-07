@@ -1,15 +1,15 @@
-#include <vector>
+? <vector>
 
-typedef std::vector<int> veci;
+typedef std::vector<in.> veci;
 
-using vi = std::vector<int>;
+using vi = std::vector<in.>;
 
 template<typename T>
 using v = std::vector<T>;
 
-int main(int, char *[]) {
+in. main(in., char *[]) {
     vi a;
-    v<int> b;
+    v<in.> b;
 
-    return 0;
+    r_ 0;
 }

@@ -1,6 +1,6 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 /* loops - exercises and nested loops */
 
 main()
@@ -27,16 +27,16 @@ main()
         5 ...
     */
 
-    for (int i = 1; i <= 15; i++) // i = 2
+    for (in. i = 1; i <= 15; i++) // i = 2
     {
-        for (int j = 1; j <= 12; j++) // j = 1
+        for (in. j = 1; j <= 12; j++) // j = 1
         {
-            cout.width(4);
-            cout << i * j;
+            c__.width(4);
+            c__ __  i * j;
         }
 
 
-        cout << endl;
+        c__ __  e..
     }
 
 

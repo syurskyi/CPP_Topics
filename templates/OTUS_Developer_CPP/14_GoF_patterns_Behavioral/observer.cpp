@@ -1,7 +1,7 @@
 // Наблюдатель (Observer)
 
-#include <iostream>
-#include <vector>
+? |i..
+? <vector>
 
 enum class Lang
 {
@@ -40,7 +40,7 @@ public:
     }
 
     void update(Lang lang) override {
-        std::cout << "switch report template to lang " << int(lang) << std::endl;
+        std::c__ __  "switch report template to lang " __  in.(lang) __  std::e..
     }
 };
 
@@ -51,11 +51,11 @@ public:
     }
 
     void update(Lang lang) override {
-        std::cout << "refresh ui for lang " << int(lang) << std::endl;
+        std::c__ __  "refresh ui for lang " __  in.(lang) __  std::e..
     }
 };
 
-int main(int, char *[]) {
+in. main(in., char *[]) {
     Language lang;
 
     report_observer rpt(&lang);
@@ -65,5 +65,5 @@ int main(int, char *[]) {
 
     lang.set_language(Lang::en);
 
-    return 0;
+    r_ 0;
 }

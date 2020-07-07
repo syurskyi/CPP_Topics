@@ -1,41 +1,41 @@
-#include <iostream>
-#include <cstdlib>
+? |i..
+? <cstdlib>
 
-using namespace std;
+u.. s..
 
-int * createArray(int);
+in. * createArray(in.);
 
-void swapTwoValues(int*, int*);
+void swapTwoValues(in.*, in.*);
 
-void fillArrayWithValues(int[], int);
-void printArrayValues(int[], int);
+void fillArrayWithValues(in.[], in.);
+void prin.ArrayValues(in.[], in.);
 
-void bubbleSort(int[], int, int = 1);
-void selectionSort(int[], int, int = 1);
+void bubbleSort(in.[], in., in. = 1);
+void selectionSort(in.[], in., in. = 1);
 
 
-int main ()
+in. main ()
 {
 
-    int sizeOfArray;
-    cout << "Input the size of the array to sort: ";
-    cin >> sizeOfArray;
+    in. sizeOfArray;
+    c__ __  "Input the size of the array to sort: ";
+    c__ >> sizeOfArray;
 
-    int* a = createArray(sizeOfArray);
+    in.* a = createArray(sizeOfArray);
 
     fillArrayWithValues(a, sizeOfArray);
-    printArrayValues(a, sizeOfArray);
+    prin.ArrayValues(a, sizeOfArray);
 
-    int orderOfSequence;
-    cout << endl << "Sort Ascending - 1, Descending - 2: ";
-    cin >> orderOfSequence;
+    in. orderOfSequence;
+    c__ __  endl __  "Sort Ascending - 1, Descending - 2: ";
+    c__ >> orderOfSequence;
 
     if (orderOfSequence != 2)
         orderOfSequence = 1;
 
     char sortChoice;
-    cout << "Bubble Sort - B or b, Selection Sort - S or s: ";
-    cin >> sortChoice;
+    c__ __  "Bubble Sort - B or b, Selection Sort - S or s: ";
+    c__ >> sortChoice;
 
     if (sortChoice != 'S' && sortChoice != 's')
         sortChoice = 'B';
@@ -50,49 +50,49 @@ int main ()
     }
 
     delete[] a;
-    return 0;
+    r_ 0;
 }
 
-int * createArray(int sizeOfArray)
+in. * createArray(in. sizeOfArray)
 {
-    int* newArray = new int[sizeOfArray];
+    in.* newArray = new in.[sizeOfArray];
 
-    return newArray;
+    r_ newArray;
 }
 
-void swapTwoValues(int* firstValue, int* secondValue)
+void swapTwoValues(in.* firstValue, in.* secondValue)
 {
-    int temporaryVariable;
+    in. temporaryVariable;
 
     temporaryVariable = *firstValue;
     *firstValue = *secondValue;
     *secondValue = temporaryVariable;
 }
 
-void fillArrayWithValues(int arrayToFill[], int sizeOfArray)
+void fillArrayWithValues(in. arrayToFill[], in. sizeOfArray)
 {
-    for (int i = 0; i < sizeOfArray; i++)
+    for (in. i = 0; i < sizeOfArray; i++)
     {
-        cout << "Enter " << i+1 << " element: ";
-        cin >> arrayToFill[i];
+        c__ __  "Enter " __  i+1 __  " element: ";
+        c__ >> arrayToFill[i];
     }
     system("cls");
 }
 
-void printArrayValues(int arrayToPrint[], int sizeOfArray)
+void prin.ArrayValues(in. arrayToPrin.[], in. sizeOfArray)
 {
-    for (int i = 0; i < sizeOfArray; i++)
+    for (in. i = 0; i < sizeOfArray; i++)
     {
-        cout << "Array[" << i << "] = " << arrayToPrint[i] << endl;
+        c__ __  "Array[" __  i __  "] = " __  arrayToPrin.[i] __  e..
     }
-    cout << endl;
+    c__ __  e..
 }
 
-void bubbleSort(int arrayToSort[], int sizeOfArray, int orderOfSequence)
+void bubbleSort(in. arrayToSort[], in. sizeOfArray, in. orderOfSequence)
 {
-    for (int i = 0; i < sizeOfArray-1; i++)
+    for (in. i = 0; i < sizeOfArray-1; i++)
     {
-        for (int j = 0; j < sizeOfArray-1; j++)
+        for (in. j = 0; j < sizeOfArray-1; j++)
         {
             if (orderOfSequence == 1 && arrayToSort[j] > arrayToSort[j+1])
             {
@@ -104,16 +104,16 @@ void bubbleSort(int arrayToSort[], int sizeOfArray, int orderOfSequence)
             }
         }
     }
-    printArrayValues(arrayToSort, sizeOfArray);
+    prin.ArrayValues(arrayToSort, sizeOfArray);
 }
 
-void selectionSort(int arrayToSort[], int sizeOfArray, int orderOfSequence)
+void selectionSort(in. arrayToSort[], in. sizeOfArray, in. orderOfSequence)
 {
-    int limitIndex;
-    for (int i = 0; i < sizeOfArray - 1; i++)
+    in. limitIndex;
+    for (in. i = 0; i < sizeOfArray - 1; i++)
     {
         limitIndex = i;
-        for (int j = i; j < sizeOfArray; j++)
+        for (in. j = i; j < sizeOfArray; j++)
         {
             if (orderOfSequence == 1 && arrayToSort[j] < arrayToSort[limitIndex])
             {
@@ -126,6 +126,6 @@ void selectionSort(int arrayToSort[], int sizeOfArray, int orderOfSequence)
         }
         swapTwoValues(arrayToSort+i, arrayToSort+limitIndex);
     }
-    printArrayValues(arrayToSort, sizeOfArray);
+    prin.ArrayValues(arrayToSort, sizeOfArray);
 }
 

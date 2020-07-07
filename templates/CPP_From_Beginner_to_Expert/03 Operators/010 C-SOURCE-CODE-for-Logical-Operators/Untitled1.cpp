@@ -1,6 +1,6 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
 main()
 {
@@ -31,7 +31,7 @@ main()
         ! (1) the result will be 0
     */
 
-    cout << !(5 > 7 || 5 != 10) << endl;
+    c__ __  !(5 > 7 || 5 != 10) __  e..
 
 
 }

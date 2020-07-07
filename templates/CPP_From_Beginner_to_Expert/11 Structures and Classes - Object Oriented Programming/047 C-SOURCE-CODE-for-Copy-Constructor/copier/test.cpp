@@ -1,10 +1,10 @@
-#include "test.h"
+? "test.h"
 
-Test::Test(int x, int y, int value)
+Test::Test(in. x, in. y, in. value)
 {
         this->x = x;
         this->y = y;
-        this->p = new int(value);
+        this->p = new in.(value);
 }
 Test::~Test()
 {
@@ -12,7 +12,7 @@ Test::~Test()
 }
 Test::Test(const Test & obj)
 {
-    this->p = new int(*(obj.p));
+    this->p = new in.(*(obj.p));
     this->x = obj.x;
     this->y = obj.y;
 }

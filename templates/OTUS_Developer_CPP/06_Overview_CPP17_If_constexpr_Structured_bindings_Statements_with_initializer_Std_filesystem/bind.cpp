@@ -1,25 +1,25 @@
-#include <iostream>
-#include <algorithm>
-#include <vector>
-#include <iterator>
+? |i..
+? <algorithm>
+? <vector>
+? <iterator>
 
-bool cmp(int i) {
-    return i > 2;
+bo.. cmp(in. i) {
+    r_ i > 2;
 }
 
-bool comp(int i, int p) {
-    return i > p;
+bo.. comp(in. i, in. p) {
+    r_ i > p;
 }
 
-bool comp_helper(int i) {
-    return comp(i, 2);
+bo.. comp_helper(in. i) {
+    r_ comp(i, 2);
 }
 
-int main()
+in. main()
 {
-    std::vector<int> v{0, 1, 2, 3, 4};
+    std::vector<in.> v{0, 1, 2, 3, 4};
 
-    auto result = std::find_if(std::begin(v), std::end(v), [](auto i){ return i > 2; });
+    auto result = std::find_if(std::begin(v), std::end(v), [](auto i){ r_ i > 2; });
 //    auto result = std::find_if(std::begin(v), std::end(v), [p = 2](auto i){ return i > p; });
 //    auto result = std::find_if(std::begin(v), std::end(v), cmp);
 //    auto result = std::find_if(std::begin(v), std::end(v), comp);
@@ -27,7 +27,7 @@ int main()
 
     for (; result != std::end(v); ++result)
     {
-        std::cout << *result << " ";
+        std::c__ __  *result __  " ";
     }
-    std::cout << std::endl;
+    std::c__ __  std::e..
 }

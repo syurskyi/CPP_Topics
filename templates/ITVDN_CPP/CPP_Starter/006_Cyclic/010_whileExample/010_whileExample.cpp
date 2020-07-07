@@ -1,25 +1,25 @@
-﻿#include "stdafx.h"
-#include <iostream>
-#include <string>
+﻿? *s..
+? |i..
+? <string>
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
 	
 	setlocale(LC_CTYPE, "rus");
 
 	string str = "Guess the desired color from 5 attempts.";
 
-	int maxAttempt = 5;		// Допустимое количество попыток
-	int attempt = 0;		// Номер текущей попытки
+	in. maxAttempt = 5;		// Допустимое количество попыток
+	in. attempt = 0;		// Номер текущей попытки
 	string color = "red";	// Задуманый цвет
 
 	while (attempt < maxAttempt) {
 		attempt++;
-		cout << str << " Attempt " << attempt << endl;
+		c__ __  str __  " Attempt " __  attempt __  e..
 		string value = "";
-		cin >> value;
+		c__ >> value;
 
 		if (value == "") 
 		{
@@ -31,10 +31,10 @@ int main()
 			continue;
 		}
 
-		cout << "Congratulations, you guessed right with " << attempt << " attempts!" << endl;
+		c__ __  "Congratulations, you guessed right with " __  attempt __  " attempts!" __  e..
 		break;
 	}
 	
 	system("pause");
-	return 0;
+	r_ 0;
 }

@@ -1,11 +1,11 @@
 #ifndef PATTERNS_H
 #define PATTERNS_H
 
-#include "builder.h"
-#include "decorator.h"
-#include "facade.h"
-#include "modernobserver.h"
-#include "oldobserver.h"
-#include "strategy.h"
+? "builder.h"
+? "decorator.h"
+? "facade.h"
+? "modernobserver.h"
+? "oldobserver.h"
+? "strategy.h"
 
 #endif // PATTERNS_H

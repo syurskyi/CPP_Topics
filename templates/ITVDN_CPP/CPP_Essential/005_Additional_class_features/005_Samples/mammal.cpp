@@ -1,12 +1,12 @@
-#include "mammal.h"
-#include <iostream>
+? "mammal.h"
+? |i..
 
 Mammal::Mammal()
 {
-    std::cout << __PRETTY_FUNCTION__ << "\n";
+    std::c__ __  __PRETTY_FUNCTION__ __  "\n";
 }
 
-Mammal::Mammal(uint paws) : paws(paws)
+Mammal::Mammal(uin. paws) : paws(paws)
 {
 }
 
@@ -21,10 +21,10 @@ void Mammal::feed_milk()
 
 void Mammal::say()
 {
-    std::cout << "say something\n";
+    std::c__ __  "say something\n";
 }
 
 Mammal::~Mammal()
 {
-    std::cout << __PRETTY_FUNCTION__ << "\n";
+    std::c__ __  __PRETTY_FUNCTION__ __  "\n";
 }

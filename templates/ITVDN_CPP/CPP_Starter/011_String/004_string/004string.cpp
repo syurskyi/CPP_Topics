@@ -1,25 +1,25 @@
-#include "stdafx.h"
-#include <iostream>
-#include <cstring>
+? *s..
+? |i..
+? <cstring>
 
-using namespace std;
-int main()
+u.. s..
+in. main()
 {
 	char name[15];
-	cout << "What's your name?" << endl;
+	c__ __  "What's your name?" __  e..
 	
-	cin >> name;
+	c__ >> name;
 
-	cout << "Your name is " << name << endl;
+	c__ __  "Your name is " __  name __  e..
 
-	cout << "Your name has " << strlen(name) << " symbols" << endl;
-	cout << "And take " << strlen(name) * sizeof(char) << " bytes" << endl;
+	c__ __  "Your name has " __  strlen(name) __  " symbols" __  e..
+	c__ __  "And take " __  strlen(name) * sizeof(char) __  " bytes" __  e..
 
-	cout << "--------------------------------------" << endl;
+	c__ __  "--------------------------------------" __  e..
 
-	cout << "Array has length " << sizeof(name) << " elements" << endl;
+	c__ __  "Array has length " __  sizeof(name) __  " elements" __  e..
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 

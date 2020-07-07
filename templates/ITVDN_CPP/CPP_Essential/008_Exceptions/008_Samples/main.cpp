@@ -1,23 +1,23 @@
-#include <iostream>
-#include <string>
-#include "scopedptr.h"
-#include "scopedptr.cpp"
-#include "cat.h"
-#include <memory>
-#include <exception>
+? |i..
+? <string>
+? "scopedptr.h"
+? "scopedptr.cpp"
+? "cat.h"
+? <memory>
+? <exception>
 
-using namespace std;
+u.. s..
 
 struct A
 {
     A()
     {
-        cout << __PRETTY_FUNCTION__ << endl;
+        c__ __  __PRETTY_FUNCTION__ __  e..
     }
 
     ~A()
     {
-        cout << __PRETTY_FUNCTION__ << endl;
+        c__ __  __PRETTY_FUNCTION__ __  e..
     }
 };
 
@@ -25,22 +25,22 @@ struct B
 {
     B()
     {
-        cout << __PRETTY_FUNCTION__ << endl;
+        c__ __  __PRETTY_FUNCTION__ __  e..
     }
 
     ~B()
     {
-        cout << __PRETTY_FUNCTION__ << endl;
+        c__ __  __PRETTY_FUNCTION__ __  e..
     }
 };
 
 struct C
 {
-    C(int _data) try : data(_data)
+    C(in. _data) try : data(_data)
     {
         //...
         throw 1;
-        cout << __PRETTY_FUNCTION__ << endl;
+        c__ __  __PRETTY_FUNCTION__ __  e..
     }
     catch(...)
     {
@@ -49,30 +49,30 @@ struct C
 
     ~C()
     {
-        cout << __PRETTY_FUNCTION__ << endl;
+        c__ __  __PRETTY_FUNCTION__ __  e..
     }
 
-    int data;
+    in. data;
 };
 
 struct D : exception
 {
     D()
     {
-        cout << __PRETTY_FUNCTION__ << endl;
+        c__ __  __PRETTY_FUNCTION__ __  e..
     }
 
     ~D()
     {
-        cout << __PRETTY_FUNCTION__ << endl;
+        c__ __  __PRETTY_FUNCTION__ __  e..
     }
 };
 
-int main()
+in. main()
 {
     A a;
     try{
-        int a;
+        in. a;
         a = 10;
         B b;
         try
@@ -85,7 +85,7 @@ int main()
         catch(...)
         {
             A a;
-            cerr << "smth went wrong";
+            cerr __  "smth went wrong";
            // throw;
             B b;
         }
@@ -93,7 +93,7 @@ int main()
     catch(logic_error& ex)
     {
         //C c;
-        cerr << ex.what() << endl;
+        cerr __  ex.what() __  e..
         D d;
     }
     catch(...)
@@ -103,8 +103,8 @@ int main()
 
     A a2;
 
-    cout << "other options";
+    c__ __  "other options";
 
 
-    return 0;
+    r_ 0;
 }

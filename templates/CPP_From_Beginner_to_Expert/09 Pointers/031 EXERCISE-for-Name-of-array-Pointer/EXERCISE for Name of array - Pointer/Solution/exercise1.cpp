@@ -1,22 +1,22 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
-int main ()
+in. main ()
 {
-    int arr[5];
-    int *pArr = arr;
+    in. arr[5];
+    in. *pArr = arr;
 
-    for (int i = 0; i < 5; i++)
+    for (in. i = 0; i < 5; i++)
     {
-        cout << "Input " << i+1 << " number: ";
-        cin >> *(pArr++);
+        c__ __  "Input " __  i+1 __  " number: ";
+        c__ >> *(pArr++);
     }
 
-    for (int i = 0; i < 5; i++)
+    for (in. i = 0; i < 5; i++)
     {
-        cout << "Number " << i+1 << ": " << arr[i] << endl;
+        c__ __  "Number " __  i+1 __  ": " __  arr[i] __  e..
     }
 
-    return 0;
+    r_ 0;
 }

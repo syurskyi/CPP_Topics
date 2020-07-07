@@ -1,28 +1,28 @@
 #define PRODUCTION 10		// DEVELOMENT
-#include "stdafx.h"
-#include <iostream>
+? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
 
-int main()
+in. main()
 {
 
 #ifdef PRODUCTION
-	int a = 1;
-	cout << "Product version." << endl;
+	in. a = 1;
+	c__ __  "Product version." __  e..
 #elif DEVELOMENT
-	cout << "Dev version." << endl;
+	c__ __  "Dev version." __  e..
 #endif 
 
 #ifndef DEVELOMENT
-	int a = 1;
-	cout << "Dev version." << endl;
+	in. a = 1;
+	c__ __  "Dev version." __  e..
 #elif PRODUCTION
-	cout << "Product version." << endl;
+	c__ __  "Product version." __  e..
 #endif 
 
 	system("pause");
-    return 0;
+    r_ 0;
 }
 

@@ -1,54 +1,54 @@
-#include <iostream>
-#include <cstdlib>
+? |i..
+? <cstdlib>
 
-using namespace std;
+u.. s..
 
-int * createArray(int);
+in. * createArray(in.);
 
-void swapTwoValues(int*, int*);
+void swapTwoValues(in.*, in.*);
 
-void fillArrayWithValues(int[], int);
-void printArrayValues(int[], int);
+void fillArrayWithValues(in.[], in.);
+void prin.ArrayValues(in.[], in.);
 
-int main ()
+in. main ()
 {
 
-    return 0;
+    r_ 0;
 }
 
-int * createArray(int sizeOfArray)
+in. * createArray(in. sizeOfArray)
 {
-    int* SnewArray = new int[sizeOfArray];
+    in.* SnewArray = new in.[sizeOfArray];
 
-    return newArray;
+    r_ newArray;
 }
 
-void swapTwoValues(int* firstValue, int* secondValue)
+void swapTwoValues(in.* firstValue, in.* secondValue)
 {
-    int temporaryVariable;
+    in. temporaryVariable;
 
     temporaryVariable = *firstValue;
     *firstValue = *secondValue;
     *secondValue = temporaryVariable;
 }
 
-void fillArrayWithValues(int arrayToFill[], int sizeOfArray)
+void fillArrayWithValues(in. arrayToFill[], in. sizeOfArray)
 {
-    for (int i = 0; i < sizeOfArray; i++)
+    for (in. i = 0; i < sizeOfArray; i++)
     {
-        cout << "Enter " << i+1 << " element: ";
-        cin >> arrayToFill[i];
+        c__ __  "Enter " __  i+1 __  " element: ";
+        c__ >> arrayToFill[i];
     }
     system("cls");
 }
 
-void printArrayValues(int arrayToPrint[], int sizeOfArray)
+void prin.ArrayValues(in. arrayToPrin.[], in. sizeOfArray)
 {
-    for (int i = 0; i < sizeOfArray; i++)
+    for (in. i = 0; i < sizeOfArray; i++)
     {
-        cout << "Array[" << i << "] = " << arrayToPrint[i] << endl;
+        c__ __  "Array[" __  i __  "] = " __  arrayToPrin.[i] __  e..
     }
-    cout << endl;
+    c__ __  e..
 }
 
 

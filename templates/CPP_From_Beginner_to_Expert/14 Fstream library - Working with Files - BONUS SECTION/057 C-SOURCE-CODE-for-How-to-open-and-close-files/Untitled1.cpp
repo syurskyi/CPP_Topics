@@ -1,9 +1,9 @@
-#include <iostream>
-#include <fstream>
+? |i..
+? <fstream>
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
     fstream myFileHandler;
 
@@ -11,12 +11,12 @@ int main()
 
     if (myFileHandler.is_open())
     {
-        cout << "The file has been opened properly";
+        c__ __  "The file has been opened properly";
 
-        myFileHandler << "this is a sample text";
+        myFileHandler __  "this is a sample text";
 
         myFileHandler.close();
     }
 
-    return 0;
+    r_ 0;
 }

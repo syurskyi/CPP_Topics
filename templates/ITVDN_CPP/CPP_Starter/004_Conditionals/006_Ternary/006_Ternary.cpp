@@ -1,16 +1,16 @@
 ﻿// Задача тернарного оператора - вернуть значение
-#include "stdafx.h"
-#include <iostream>
+? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
-    int a = 2, b = 3, c;
+    in. a = 2, b = 3, c;
 
     c = (a > b) ? a : b;        // ЕСЛИ: a > b ТО: вернуть а ИНАЧЕ вернуть b
 
-    cout << c << endl;
+    c__ __  c __  e..
 
     /*
     if(a > b)
@@ -23,7 +23,7 @@ int main()
     }
     */
 
-    cin.get();
-    return 0;
+    c__.g..
+    r_ 0;
 }
 

@@ -1,21 +1,21 @@
-#include "stdafx.h"
-#include <iostream>
+? *s..
+? |i..
 
-using namespace std;
-int main()
+u.. s..
+in. main()
 {
 	char name[20];
 	char color[10];
 
-	cout << "Enter you name: ";
-	cin >> name;
+	c__ __  "Enter you name: ";
+	c__ >> name;
 
-	cout << "Enter your favorite color: ";
-	cin >> color;
+	c__ __  "Enter your favorite color: ";
+	c__ >> color;
 
-	cout << "Your name is " << name << ", and you favorit color is " << color << endl;
+	c__ __  "Your name is " __  name __  ", and you favorit color is " __  color __  e..
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 

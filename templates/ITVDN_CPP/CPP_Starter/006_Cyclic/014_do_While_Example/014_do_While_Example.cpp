@@ -1,19 +1,19 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
 	setlocale(LC_CTYPE, "rus");
 
-	int number = 0;		// исло, факториал которого необходимо получить
-	int factorial = 1;	// акториал
+	in. number = 0;		// исло, факториал которого необходимо получить
+	in. factorial = 1;	// акториал
 
-	cout << "Enter number: ";
-	cin >> number;
+	c__ __  "Enter number: ";
+	c__ >> number;
 
-	cout << "factorial of a number: " << number << "! = ";
+	c__ __  "factorial of a number: " __  number __  "! = ";
 
 	do
 	{
@@ -27,8 +27,8 @@ int main()
 
 	} while (number > 0);
 	
-	cout << factorial << endl;
+	c__ __  factorial __  e..
 	
 	system("pause");
-	return 0;
+	r_ 0;
 }

@@ -1,24 +1,24 @@
 // Шаблонный метод (Template method)
 
-#include <iostream>
+? |i..
 
 class Report {
     void prepare() {
-        std::cout << "===" << std::endl;
-        std::cout << "prepare" << std::endl;
+        std::c__ __  "===" __  std::e..
+        std::c__ __  "prepare" __  std::e..
     }
 
     virtual void secure() = 0;
 
     void aggregate() {
-        std::cout << "aggregate" << std::endl;
+        std::c__ __  "aggregate" __  std::e..
     }
 
     virtual void format() = 0;
 
     void publish() {
-        std::cout << "publish" << std::endl;
-        std::cout << std::endl;
+        std::c__ __  "publish" __  std::e..
+        std::c__ __  std::e..
     }
 
 public:
@@ -33,30 +33,30 @@ public:
 
 class PublicReport : public Report {
     void secure() override {
-        std::cout << "encrypt *" << std::endl;
+        std::c__ __  "encrypt *" __  std::e..
     }
 
     void format() override {
-        std::cout << "strip *" << std::endl;
+        std::c__ __  "strip *" __  std::e..
     }
 };
 
-class InternalReport : public Report {
+class in.ernalReport : public Report {
     void secure() override {
-        std::cout << "plane *" << std::endl;
+        std::c__ __  "plane *" __  std::e..
     }
 
     void format() override {
-        std::cout << "human readable *" << std::endl;
+        std::c__ __  "human readable *" __  std::e..
     }
 };
 
-int main(int, char *[]) {
+in. main(in., char *[]) {
     PublicReport public_report{};
     public_report.report();
 
-    InternalReport internal_report{};
-    internal_report.report();
+    in.ernalReport in.ernal_report{};
+    in.ernal_report.report();
 
-    return 0;
+    r_ 0;
 }

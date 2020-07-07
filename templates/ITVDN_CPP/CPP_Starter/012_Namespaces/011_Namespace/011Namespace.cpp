@@ -1,15 +1,15 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
 // Анонимное (безымянное) пространство имен
 namespace {
-	int a = 10;
+	in. a = 10;
 }
 
-int main()
+in. main()
 {
-	cout << "Variable a from namespace withput name = " << a << endl;
-	return 0;
+	c__ __  "Variable a from namespace withput name = " __  a __  e..
+	r_ 0;
 }

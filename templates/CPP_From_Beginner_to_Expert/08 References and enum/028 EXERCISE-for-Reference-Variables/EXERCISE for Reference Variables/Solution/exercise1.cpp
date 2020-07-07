@@ -1,8 +1,8 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
-int main ()
+in. main ()
 {
 
     string name = "Cassandra";
@@ -10,14 +10,14 @@ int main ()
     string &cassey = name;
     string &sandra = name;
 
-    cout << name << " " << &name << endl;
-    cout << cassie << " " << &cassie << endl;
-    cout << cassey << " " << &cassey << endl;
-    cout << sandra << " " << &sandra << endl;
+    c__ __  name __  " " __  &name __  e..
+    c__ __  cassie __  " " __  &cassie __  e..
+    c__ __  cassey __  " " __  &cassey __  e..
+    c__ __  sandra __  " " __  &sandra __  e..
 
 
 
 
-    return 0;
+    r_ 0;
 }
 

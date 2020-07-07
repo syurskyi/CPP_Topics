@@ -1,17 +1,17 @@
-#include <iostream>
-#include <cstdlib>
+? |i..
+? <cstdlib>
 
-using namespace std;
+u.. s..
 
 main ()
 {
     char coordinates[3][3];
-    int startingValue = '1';
-    int player = 2;
+    in. startingValue = '1';
+    in. player = 2;
 
-    for (int i = 0; i < 3; i++)
+    for (in. i = 0; i < 3; i++)
     {
-        for (int j = 0; j < 3; j++)
+        for (in. j = 0; j < 3; j++)
         {
             coordinates[i][j] = startingValue;
             startingValue++;
@@ -20,28 +20,28 @@ main ()
 
     while (true)
     {
-        for (int i = 0; i < 3; i++)
+        for (in. i = 0; i < 3; i++)
         {
-            cout << endl << endl;
-            for (int j = 0; j < 3; j++)
+            c__ __  endl __  e..
+            for (in. j = 0; j < 3; j++)
             {
-                cout.width(5);
-                cout << coordinates[i][j] << " ";
+                c__.width(5);
+                c__ __  coordinates[i][j] __  " ";
             }
-            cout << endl << endl;
+            c__ __  endl __  e..
         }
 
-        int xCoordinate, yCoordinate;
+        in. xCoordinate, yCoordinate;
 
         if (player % 2 == 0)
         {
-            cout << "Input x and y coordinates of a cell to put X (7 is on x:1 y:3)" << endl;
+            c__ __  "Input x and y coordinates of a cell to put X (7 is on x:1 y:3)" __  e..
 
-            cout << "x: ";
-            cin >> xCoordinate;
+            c__ __  "x: ";
+            c__ >> xCoordinate;
 
-            cout << "y: ";
-            cin >> yCoordinate;
+            c__ __  "y: ";
+            c__ >> yCoordinate;
 
             coordinates[yCoordinate-1][xCoordinate-1] = 'X';
             player = 1;
@@ -50,13 +50,13 @@ main ()
         else
         {
 
-            cout << "Input x and y coordinates of a cell to put O (7 is on x:1 y:3)" << endl;
+            c__ __  "Input x and y coordinates of a cell to put O (7 is on x:1 y:3)" __  e..
 
-            cout << "x: ";
-            cin >> xCoordinate;
+            c__ __  "x: ";
+            c__ >> xCoordinate;
 
-            cout << "y: ";
-            cin >> yCoordinate;
+            c__ __  "y: ";
+            c__ >> yCoordinate;
 
             coordinates[yCoordinate-1][xCoordinate-1] = 'O';
             player = 2;

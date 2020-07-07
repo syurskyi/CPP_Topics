@@ -1,39 +1,39 @@
-#include <iostream>
-#include <string>
+? |i..
+? <string>
 
 
-int main () {
+in. main () {
 
-	bool condition = true;
+	bo.. condition = true;
 
-	std::cout << "if\n";
-	if (int value = 42; !condition) {
-		std::cout << "true condition: " << value << std::endl;
+	std::c__ __  "if\n";
+	if (in. value = 42; !condition) {
+		std::c__ __  "true condition: " __  value __  std::e..
 	}
-	else if (int number = 50; !condition) {
+	else if (in. number = 50; !condition) {
 		value += 10;
-		std::cout << "false condition: " << value << std::endl;
+		std::c__ __  "false condition: " __  value __  std::e..
 	}
 	else
     {
-        std::cout << "false condition: " << value << number << std::endl;
+        std::c__ __  "false condition: " __  value __  number __  std::e..
     }
 	// value is not visible here
 
-	std::cout << "for:\n";
-	for (int i = 0; i < 10; ++i) {
-		std::cout << i;
+	std::c__ __  "for:\n";
+	for (in. i = 0; i < 10; ++i) {
+		std::c__ __  i;
 	}
 	// i is not visible here
-	std::cout << std::endl;
+	std::c__ __  std::e..
 
-	std::cout << "switch:\n";
-	switch(int other = 37; condition) {
+	std::c__ __  "switch:\n";
+	switch(in. other = 37; condition) {
 		case true:
-			std::cout << "true condition: " << other << std::endl;
+			std::c__ __  "true condition: " __  other __  std::e..
 			break;
 		case false:
-			std::cout << "false condition: " << other << std::endl;
+			std::c__ __  "false condition: " __  other __  std::e..
 	}
 	// other is not visible here
 
@@ -42,9 +42,9 @@ int main () {
 //	 	std::cout << line;
 //	 }
 
-	 for(std::string line; std::getline(std::cin, line);) {
-	 	std::cout << line;
+	 for(std::string line; std::getline(std::c__, line);) {
+	 	std::c__ __  line;
 	 }
 
-	return 0;
+	r_ 0;
 }

@@ -1,8 +1,8 @@
-#include <iostream>
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
     string text = "this a test"; // t r a l a \0
 
@@ -34,37 +34,37 @@ int main()
 */
     const char * text2 = text.c_str();
 
-    cout << text2 << endl;
+    c__ __  text2 __  e..
 
     char array[] = "here is a text";
 
     string test = array;
 
-    cout << test << endl;
+    c__ __  test __  e..
 
 
     const char * a = "this is a test 12512412";
 
-    cout << a[0] << endl;
+    c__ __  a[0] __  e..
 
     char b[] = "this a test 124124";
 
     b[0] ='g';
-    cout << b << endl;
+    c__ __  b __  e..
 
     char * const dynamic_array = new char[50];
     dynamic_array[0] = 'k';
     dynamic_array[1] = '\0';
     //dynamic_array = "lalala";
 
-    cout << dynamic_array << endl;
+    c__ __  dynamic_array __  e..
 
     delete [] dynamic_array;
 
     string array_of_string[5] = "this i a text that will be in all of the elements of strings";
     array_of_string[0] = "afsdf";
-    cout << array_of_string[0] << endl;
-    cout << array_of_string[1] << endl;
-    cout << array_of_string[2] << endl;
-    return 0;
+    c__ __  array_of_string[0] __  e..
+    c__ __  array_of_string[1] __  e..
+    c__ __  array_of_string[2] __  e..
+    r_ 0;
 }

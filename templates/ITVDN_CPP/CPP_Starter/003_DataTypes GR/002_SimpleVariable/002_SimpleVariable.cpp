@@ -1,22 +1,22 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
 	// На 12-й строке мы создаем переменную типа int и присваиваем ей значение 2
-	int a;		// 0000 0000  0000 0000  0000 0000  0000 0010 
+	in. a;		// 0000 0000  0000 0000  0000 0000  0000 0010
 
 	char month = 12;
-    cout << "month: " << month << endl;
+    c__ __  "month: " __  month __  e..
 
 
 	month = 13;
-	cout << "month: " << month << endl;
+	c__ __  "month: " __  month __  e..
 
 	// Задержка
-	cin.get();
-    return 0;
+	c__.g..
+    r_ 0;
 }
 

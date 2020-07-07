@@ -1,20 +1,20 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
-	int vector[1];
+	in. vector[1];
 	vector[0] = 10;
-	cout << vector[0] << endl;
+	c__ __  vector[0] __  e..
 
-	int matrix[1][1];
+	in. matrix[1][1];
 	matrix[0][0] = 100;
-	cout << matrix[0][0] << endl;
+	c__ __  matrix[0][0] __  e..
 
 	system("pause");
-	return 0;
+	r_ 0;
 }
 
 

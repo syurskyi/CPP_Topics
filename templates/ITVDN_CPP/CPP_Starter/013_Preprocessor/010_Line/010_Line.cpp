@@ -1,16 +1,16 @@
-#include "stdafx.h"
-#include <iostream>
+? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
 
 #line 80 "test.cpp"
 
-	cout << "LINE = " << __LINE__ << "; FILE = " << __FILE__ << endl;
+	c__ __  "LINE = " __  __LINE__ __  "; FILE = " __  __FILE__ __  e..
 
 	system("pause");
-    return 0;
+    r_ 0;
 }
 

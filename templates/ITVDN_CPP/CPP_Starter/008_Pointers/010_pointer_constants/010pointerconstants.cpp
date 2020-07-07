@@ -1,23 +1,23 @@
-﻿#include "stdafx.h"
-#include <iostream>
+﻿? *s..
+? |i..
 
-using namespace std;
+u.. s..
 
-int main()
+in. main()
 {
-	int a = 20;
+	in. a = 20;
 
 	// Данные в указателе изменять нельзя.
-	const int *pA = &a;
+	const in. *pA = &a;
 
-	cout << pA << endl;
+	c__ __  pA __  e..
 
-	int b = 30;
+	in. b = 30;
 
 	// Можно изменить адрес памяти на который указывает указатель.
 	pA = &b;
 
-	cout << pA << endl;
+	c__ __  pA __  e..
 
 	// Ошибка компиляции, нельзя изменять данные.
 	//*pA = 40;
@@ -26,5 +26,5 @@ int main()
 	//int *pointer = pA;
 
 	system("pause");
-	return 0;
+	r_ 0;
 }

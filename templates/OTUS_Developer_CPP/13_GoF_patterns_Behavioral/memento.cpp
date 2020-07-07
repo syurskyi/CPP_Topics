@@ -1,18 +1,18 @@
 // Хранитель (Memento)
 
-#include <iostream>
+? |i..
 
 class Memento {
     friend class Ops;
 
-    int value;
+    in. value;
 public:
-    Memento(int value_)
+    Memento(in. value_)
             :value(value_) { };
 };
 
 class Ops {
-    int count = 0;
+    in. count = 0;
 
 public:
     void do_it()
@@ -22,12 +22,12 @@ public:
 
     void dump()
     {
-        std::cout << count << std::endl;
+        std::c__ __  count __  std::e..
     };
 
     Memento createSnapshot()
     {
-        return Memento{count};
+        r_ Memento{count};
     }
 
     void restoreSnapshot(const Memento& memento)
@@ -36,7 +36,7 @@ public:
     }
 };
 
-int main(int, char* [])
+in. main(in., char* [])
 {
     Ops n;
     n.do_it();
@@ -50,5 +50,5 @@ int main(int, char* [])
     n.restoreSnapshot(snap);
     n.dump();
 
-    return 0;
+    r_ 0;
 }

@@ -1,7 +1,7 @@
-#include <iostream>
-#include <map>
-#include <string>
-#include <typeinfo>
+? |i..
+? <map>
+? <string>
+? <typeinfo>
 //#include <cxxabi.h>  // needed for abi::__cxa_demangle
 
 // std::shared_ptr<char> cppDemangle(const char *abiName)
@@ -17,9 +17,9 @@
 
 //#define CLASS_NAME(somePointer) ((const char *) cppDemangle(typeid(*somePointer).name()).get() )
 
-using namespace std;
+u.. s..
 
-#include <vector>
+? <vector>
 
 template < typename T >
 class A
@@ -38,9 +38,9 @@ public:
 // C++17
 // A( const char* )->A< string >;
 
-int foo()
+in. foo()
 {
-    return 42;
+    r_ 42;
 }
 
 template < typename T >
@@ -56,22 +56,22 @@ void f( T& param )
 template < typename T, typename U >
 auto add( const T& first, const U& second ) -> decltype( first + second )
 {
-    return first + second;
+    r_ first + second;
 }
 
-const int&& foo2()
+const in.&& foo2()
 {
-    return 2;
+    r_ 2;
 }
 
 // dangerous!
 decltype( auto ) fff()
 {
-    int x = 10;
-    return ( x );
+    in. x = 10;
+    r_ ( x );
 }
 
-int main()
+in. main()
 {
 
     // int a = 5;
@@ -91,9 +91,9 @@ int main()
 
     ///////////////////
 
-    const int a = 10;
+    const in. a = 10;
     auto& b = a;
-    cout << typeid( b ).name() << endl;
+    c__ __  typeid( b ).name() __  e..
     // f( b );
 
     // auto res = foo();
@@ -107,7 +107,7 @@ int main()
     // cout << add( 1, 2.5 ) << endl;
     // f( b );
 
-    map< string, int > mp;
+    map< string, in. > mp;
 
     //    for ( pair< string, int >& it : mp )
     //    {
@@ -122,5 +122,5 @@ int main()
 
     // f( fff );
 
-    return 0;
+    r_ 0;
 }
