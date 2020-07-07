@@ -11,7 +11,7 @@
 //	c__ __  "Value of variable a: " __  a __  e..
 //	c__ __  "Value of variable b: " __  b __  e..
 //
-//	in. &? _ *?
+//	in. #? _ *?
 //
 //	c__ __  "Pointer = 0x" __  ? __  e..
 //	c__ __  "*Pointer = " __  &? __  e..

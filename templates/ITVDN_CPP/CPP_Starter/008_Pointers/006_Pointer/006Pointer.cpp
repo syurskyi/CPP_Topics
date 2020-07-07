@@ -9,9 +9,9 @@
 //	d.. Pi _ 3.14
 //	c.. ch _ 'Y'
 //
-//	in. &? _ *?
-//	d.. &D.. _ *?
-//	c.. &C.. _ *?
+//	in. #? _ *?
+//	d.. #D.. _ *?
+//	c.. #C.. _ *?
 //
 //	c__ __  "Sizeof fundamentals types - " __  e..
 //	c__ __  "sizeof(int) = " __  s_o_ in. __  e..

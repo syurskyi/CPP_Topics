@@ -5,12 +5,12 @@
 //
 //in. main
 //
-//	in. &A.. _ ne. in.
+//	in. #A.. _ ne. in.
 //
 //	c__ __  "Enter your age: "
-//	c__ __ &?
+//	c__ __ #?
 //
-//	c__ __  "Age " __  &? __  " is stored at 0x" __  ? __  e..
+//	c__ __  "Age " __  #? __  " is stored at 0x" __  ? __  e..
 //
 //	d.. ?
 //
