@@ -4,37 +4,36 @@
 
 u.. s..
 
-s.. Compare(in., in.);
+s.. Compare in., in.
 
-in. main()
-{
+in. main
+
 	in. value1 _ 15, value2 _ 15;
-	s.. result;
+	s.. result
 
-	result _ Compare(value1, value2);
+	result _ ? ? ?
 
-	c__ __  result __  e..
+	c__ __  ? __  e..
 
 	sy.. pause
-	r_ 0;
-}
+	r_ _
 
-s.. Compare(in. val1, in. val2)
-{
-	s.. result _ "";
 
-	__ (val1 < val2)
-	{
-		result _ "Comparison Less Then";
-	}
-	____ __ (val1 > val2)
-	{
-		result _ "Comparison Greater Then";
-	}
+s.. Compare in. val1, in. val2
+
+	s.. result _ ""
+
+	__ ? < ?
+
+		r.. _ "Comparison Less Then"
+
+	____ __ ? > ?
+
+		r.. _ "Comparison Greater Then"
+
 	____
-	{
-		result _ "Comparison Equal";
-	}
 
-	r_ result;
-}
+		r.. _ "Comparison Equal"
+
+
+	r_ ?
