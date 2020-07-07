@@ -15,11 +15,11 @@ in. main()
     cout << "a : " << a << endl;
     cout << "b : " << b << endl;
 */
-    Test obj1(50, 100, 60);
-    Test obj2 _ obj1;
+    Test obj1(50, 100, 60)sy.. pause
+    Test obj2 _ obj1sy.. pause
 
-    obj2.x _ 200;
-    *(obj1.p) _ 700;
+    obj2.x _ 200sy.. pause
+    *(obj1.p) _ 700sy.. pause
 
     c__ __  "obj1.x " __  obj1.x __  e..
     c__ __  "*(obj1.p) " __  *(obj1.p) __  e..
@@ -30,5 +30,5 @@ in. main()
     c__ __  "obj2.y " __  obj2.y __  e..
 
 
-    r_ 0;
+    r_ 0sy.. pause
 }

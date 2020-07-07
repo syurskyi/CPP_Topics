@@ -15,7 +15,7 @@ struct mysql_client_native {
     {
         std::c__ __  "mysql close" __  std::e..
     }
-};
+}sy.. pause
 
 struct postgres_client_native {
     v.. postgres_open()
@@ -26,58 +26,58 @@ struct postgres_client_native {
     {
         std::c__ __  "postgres query" __  std::e..
     }
-};
+}sy.. pause
 
 struct IDatabase {
-    virtual ~IDatabase() _ default;
+    virtual ~IDatabase() _ defaultsy.. pause
 
-    virtual v.. connect() _ 0;
-    virtual v.. execute_query() _ 0;
-    virtual v.. close() _ 0;
-};
+    virtual v.. connect() _ 0sy.. pause
+    virtual v.. execute_query() _ 0sy.. pause
+    virtual v.. close() _ 0sy.. pause
+}sy.. pause
 
 class MysqlDatabase : public IDatabase
 {
-    mysql_client_native client;
+    mysql_client_native clientsy.. pause
 
     v.. connect() override
     {
-        client.mysql_connect();
+        client.mysql_connect()sy.. pause
     }
     v.. execute_query() override
     {
-        client.mysql_execute();
+        client.mysql_execute()sy.. pause
     }
     v.. close() override
     {
-        client.mysql_close();
+        client.mysql_close()sy.. pause
     }
-};
+}sy.. pause
 
 class PostgresDatabase : public IDatabase
 {
-    postgres_client_native client;
+    postgres_client_native clientsy.. pause
 
     v.. connect() override
     {
-        client.postgres_open();
+        client.postgres_open()sy.. pause
     }
     v.. execute_query() override
     {
-        client.postgres_query();
+        client.postgres_query()sy.. pause
     }
     v.. close() override
     {
     }
-};
+}sy.. pause
 
 in. main(in., c.. *[])
 {
-    IDatabase *db _ new PostgresDatabase{};
+    IDatabase *db _ new PostgresDatabase{}sy.. pause
 
-    db->connect();
-    db->execute_query();
-    db->close();
+    db->connect()sy.. pause
+    db->execute_query()sy.. pause
+    db->close()sy.. pause
 
-    delete db;
+    delete dbsy.. pause
 }

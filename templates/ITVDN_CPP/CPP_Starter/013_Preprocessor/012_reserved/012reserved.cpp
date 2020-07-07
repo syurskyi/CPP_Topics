@@ -10,6 +10,6 @@ in. main()
 	c__ __  "Time of compilation: " __  __TIME__ __  e..
 
 	sy.. pause
-    r_ 0;
+    r_ 0sy.. pause
 }
 

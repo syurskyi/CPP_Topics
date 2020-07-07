@@ -6,37 +6,37 @@
 
 ? |i..
 
-namespace lf _ boost::lockfree;
+namespace lf _ boost::lockfreesy.. pause
 
 in. main(in., c.. *[]) {
-    lf::queue<in.> q{10};
-    q.push(42);
-    q.push(100);
+    lf::queue<in.> q{10}sy.. pause
+    q.push(42)sy.. pause
+    q.push(100)sy.. pause
 
-    in. v;
+    in. vsy.. pause
     w___ (!q.empty())
     {
-        q.pop(v);
+        q.pop(v)sy.. pause
         std::c__ __  v __  std::e..
     }
 
-    lf::stack<in.> s{10};
-    s.push(42);
-    s.push(100);
+    lf::stack<in.> s{10}sy.. pause
+    s.push(42)sy.. pause
+    s.push(100)sy.. pause
     w___ (!s.empty())
     {
-        s.pop(v);
+        s.pop(v)sy.. pause
         std::c__ __  v __  std::e..
     }
 
-    lf::spsc_queue<in.> rb{10};
-    rb.push(42);
-    rb.push(100);
+    lf::spsc_queue<in.> rb{10}sy.. pause
+    rb.push(42)sy.. pause
+    rb.push(100)sy.. pause
     w___ (!rb.empty())
     {
-        rb.pop(v);
+        rb.pop(v)sy.. pause
         std::c__ __  v __  std::e..
     }
 
-    r_ 0;
+    r_ 0sy.. pause
 }

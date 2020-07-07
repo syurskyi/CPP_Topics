@@ -6,35 +6,35 @@
 
 u.. s..
 
-uin. Cat::vibr _ 20;
+uin. Cat::vibr _ 20sy.. pause
 
-class SomeClass;
+class SomeClasssy.. pause
 
 class A
 {
 public:
-    virtual v.. foo() _ 0;
-};
+    virtual v.. foo() _ 0sy.. pause
+}sy.. pause
 
 v.. A::foo()
 {
-    c__ __  "A::foo";
+    c__ __  "A::foo"sy.. pause
 }
 
 class B : public A
 {
 public:
-    v.. foo() override;
+    v.. foo() overridesy.. pause
 
-    v.. new_method(SomeClass& some);
+    v.. new_method(SomeClass& some)sy.. pause
 
-    in. get_data(SomeClass& some);
+    in. get_data(SomeClass& some)sy.. pause
 
 private:
-    s.. string_data;
+    s.. string_datasy.. pause
 
-    friend SomeClass;
-};
+    friend SomeClasssy.. pause
+}sy.. pause
 
 
 
@@ -43,55 +43,55 @@ class SomeClass
 public:
     v.. get_string(B& b)
     {
-        c__ __  b.string_data;
+        c__ __  b.string_datasy.. pause
     }
 private:
     in. share_data()
     {
-       r_ data;
+       r_ datasy.. pause
     }
 private:
-    in. data _ 20;
+    in. data _ 20sy.. pause
 
-    friend B;
-    friend v.. B::new_method(SomeClass& some);
-    friend v.. some_func(SomeClass& some);
-};
+    friend Bsy.. pause
+    friend v.. B::new_method(SomeClass& some)sy.. pause
+    friend v.. some_func(SomeClass& some)sy.. pause
+}sy.. pause
 
 v.. some_func(SomeClass& some)
 {
     c__ __  __PRETTY_FUNCTION__ __  e..
-    c__ __  some.data;
+    c__ __  some.datasy.. pause
 }
 
 v.. B::foo()
 {
-    A::foo();
-    c__ __  "B::foo";
+    A::foo()sy.. pause
+    c__ __  "B::foo"sy.. pause
 }
 
 in. B::get_data(SomeClass& some)
 {
-    c__ __  some.share_data();
-    r_ some.data;
+    c__ __  some.share_data()sy.. pause
+    r_ some.datasy.. pause
 }
 
 v.. B::new_method(SomeClass& some)
 {
-    c__ __  some.share_data();
+    c__ __  some.share_data()sy.. pause
 }
 
 in. main()
 {
-    Number a(4), b(10);
+    Number a(4), b(10)sy.. pause
 
-    b _ a;
+    b _ asy.. pause
 
-    c__ __  a + b;
+    c__ __  a + bsy.. pause
 
 
 //    B b;
 //    SomeClass sm;
 //    b.get_data(sm);
-    r_ 0;
+    r_ 0sy.. pause
 }

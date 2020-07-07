@@ -4,18 +4,18 @@
 
 u.. s..
 
-v.. Operation(s.. val1 _ "val", in. val2 _ 10, d.. val3 _ 12.2);
+v.. Operation(s.. val1 _ "val", in. val2 _ 10, d.. val3 _ 12.2)sy.. pause
 
 in. main()
 {
-	Operation();                  // 1-я перегрузка.
-	Operation("val");             // 2-я перегрузка.
-	Operation("val", 10);         // 3-я перегрузка. 
-	Operation("val", 10, 12.2);   // 4-я перегрузка.
+	Operation()sy.. pause                  // 1-я перегрузка.
+	Operation("val")sy.. pause             // 2-я перегрузка.
+	Operation("val", 10)sy.. pause         // 3-я перегрузка.
+	Operation("val", 10, 12.2)sy.. pause   // 4-я перегрузка.
 
 
 	sy.. pause
-	r_ 0;
+	r_ 0sy.. pause
 }
 v.. Operation(s.. val1, in. val2, d.. val3)
 {

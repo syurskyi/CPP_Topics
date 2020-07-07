@@ -5,9 +5,9 @@
 class ILogger
 {
 public:
-    virtual v.. info() _ 0;
-    virtual v.. error() _ 0;
-};
+    virtual v.. info() _ 0sy.. pause
+    virtual v.. error() _ 0sy.. pause
+}sy.. pause
 
 class Logger : public ILogger
 {
@@ -19,32 +19,32 @@ class Logger : public ILogger
     {
         std::c__ __  "error" __  std::e..
     }
-};
+}sy.. pause
 
 class LevelLogger : public ILogger
 {
-    in. level;
-    ILogger *logger;
+    in. levelsy.. pause
+    ILogger *loggersy.. pause
 
 public:
-    LevelLogger(in. level_, ILogger *logger_) : level(level_), logger(logger_) {};
+    LevelLogger(in. level_, ILogger *logger_) : level(level_), logger(logger_) {}sy.. pause
 
     v.. info() override
     {
         __ (level > 0) {
-            logger->info();
+            logger->info()sy.. pause
         }
     }
     v.. error() override
     {
-        logger->error();
+        logger->error()sy.. pause
     }
-};
+}sy.. pause
 
 in. main(in., c.. *[])
 {
-    ILogger *l _ new LevelLogger(0, new Logger);
+    ILogger *l _ new LevelLogger(0, new Logger)sy.. pause
 
-    l->info();
-    l->error();
+    l->info()sy.. pause
+    l->error()sy.. pause
 }

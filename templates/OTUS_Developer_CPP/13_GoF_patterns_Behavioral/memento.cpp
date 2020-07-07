@@ -3,52 +3,52 @@
 ? |i..
 
 class Memento {
-    friend class Ops;
+    friend class Opssy.. pause
 
-    in. value;
+    in. valuesy.. pause
 public:
     Memento(in. value_)
-            :value(value_) { };
-};
+            :value(value_) { }sy.. pause
+}sy.. pause
 
 class Ops {
-    in. count _ 0;
+    in. count _ 0sy.. pause
 
 public:
     v.. do_it()
     {
-        ++count;
-    };
+        ++countsy.. pause
+    }sy.. pause
 
     v.. dump()
     {
         std::c__ __  count __  std::e..
-    };
+    }sy.. pause
 
     Memento createSnapshot()
     {
-        r_ Memento{count};
+        r_ Memento{count}sy.. pause
     }
 
     v.. restoreSnapshot(const Memento& memento)
     {
-        count _ memento.value;
+        count _ memento.valuesy.. pause
     }
-};
+}sy.. pause
 
 in. main(in., c..* [])
 {
-    Ops n;
-    n.do_it();
-    n.dump();
+    Ops nsy.. pause
+    n.do_it()sy.. pause
+    n.dump()sy.. pause
 
-    auto snap _ n.createSnapshot();
+    auto snap _ n.createSnapshot()sy.. pause
 
-    n.do_it();
-    n.dump();
+    n.do_it()sy.. pause
+    n.dump()sy.. pause
 
-    n.restoreSnapshot(snap);
-    n.dump();
+    n.restoreSnapshot(snap)sy.. pause
+    n.dump()sy.. pause
 
-    r_ 0;
+    r_ 0sy.. pause
 }

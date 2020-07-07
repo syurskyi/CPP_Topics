@@ -4,12 +4,12 @@ u.. s..
 /* POINTERS ARE ordinary variables that can store addresses of variables */
 in. main()
 {
-    in. var _ 5;
-    in. a _ 20;
+    in. var _ 5sy.. pause
+    in. a _ 20sy.. pause
 
     c__ __  *&var __  e..
 
-    in. * const p _ &var; //that asterisk here is just used to INFORM about that this variable is a POINTER so it is a variable that can point to address of another variable
+    in. * const p _ &varsy.. pause //that asterisk here is just used to INFORM about that this variable is a POINTER so it is a variable that can point to address of another variable
 
    // p = &var;
 
@@ -17,22 +17,22 @@ in. main()
 
     //*p = 20;
 //    var = 60;
-    *p _ 60;
+    *p _ 60sy.. pause
     c__ __  "var: " __  var __  e..
     c__ __  "*p: "__  *p __  e..
     c__ __  "a: "__  a __  e..
 
-    in. * const p_const _ &a; //this is a pointer that has to be initialized when defined, because it cannot change after defining the thing that it is pointing to (address)
+    in. * const p_const _ &asy.. pause //this is a pointer that has to be initialized when defined, because it cannot change after defining the thing that it is pointing to (address)
 
-    const in. * p_2 _ &a; //this is a pointer that cannot change the value that is under address its pointing to.
+    const in. * p_2 _ &asy.. pause //this is a pointer that cannot change the value that is under address its pointing to.
 
-    const in. * const p_3 _ &a; //this is a pointer that cannot change the value that is under address its pointing to and also it cant change the address
+    const in. * const p_3 _ &asy.. pause //this is a pointer that cannot change the value that is under address its pointing to and also it cant change the address
 
     c__ __  endl __  endl __  e..
 
-    in. ordinary_var _ 10;
+    in. ordinary_var _ 10sy.. pause
 
-    in. *ordinary_p _ &ordinary_var;
+    in. *ordinary_p _ &ordinary_varsy.. pause
 
     c__ __  "ordinary_var: " __  ordinary_var __  e.. //integer value
     c__ __  "&ordinary_var: " __  &ordinary_var __  e.. //integer value
@@ -40,9 +40,9 @@ in. main()
     c__ __  "*ordinary_p: " __  *ordinary_p __  e.. //integer value from pointed place (ordinary_var)
     c__ __  "&ordinary_p: " __  &ordinary_p __  e.. //address of pointer itself
 
-    in. ** p_poin.ing_to_address_of_poin.er _ &ordinary_p;
+    in. ** p_poin.ing_to_address_of_poin.er _ &ordinary_psy.. pause
 
     c__ __  "p_pointing_to_address_of_pointer: " __  p_poin.ing_to_address_of_poin.er __  e..
 
-    r_ 0;
+    r_ 0sy.. pause
 }

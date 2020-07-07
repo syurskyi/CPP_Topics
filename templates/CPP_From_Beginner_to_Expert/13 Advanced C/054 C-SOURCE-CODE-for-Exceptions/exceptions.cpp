@@ -6,28 +6,28 @@ u.. s..
 class DivisionByZeroException
 {
     public:
-        v.. getErrorMessage() { c__ __  "Error: Do not divide by zero"; }
-};
+        v.. getErrorMessage() { c__ __  "Error: Do not divide by zero"sy.. pause }
+}sy.. pause
 
 d.. division(d.. a, d.. b) throw(DivisionByZeroException)
 {
     __ (b __ 0)
-        throw DivisionByZeroException();
-    r_ a / b;
+        throw DivisionByZeroException()sy.. pause
+    r_ a / bsy.. pause
 }
 in. main()
 {
-    d.. result;
+    d.. resultsy.. pause
 
     try
     {
-        result _ division(5, 0);
+        result _ division(5, 0)sy.. pause
 
         c__ __  "the result is " __  result __  e..
     }
     catch(DivisionByZeroException e)
     {
-        e.getErrorMessage();
+        e.getErrorMessage()sy.. pause
     }
     catch(...)
     {
@@ -35,5 +35,5 @@ in. main()
     }
 //    cout << "lalal" << endl;
 
-    r_ 0;
+    r_ 0sy.. pause
 }

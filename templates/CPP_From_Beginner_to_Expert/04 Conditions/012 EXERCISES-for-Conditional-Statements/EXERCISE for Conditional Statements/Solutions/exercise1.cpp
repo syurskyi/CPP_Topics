@@ -4,16 +4,16 @@ u.. s..
 
 main ()
 {
-    in. minValue, maxValue, elementToCheck;
+    in. minValue, maxValue, elementToChecksy.. pause
 
-    c__ __  "Please input the minimum value: ";
-    c__ __ minValue;
-    c__ __  "Please input the maximum value: ";
-    c__ __ maxValue;
-    c__ __  "Please input the number to check: ";
-    c__ __ elementToCheck;
+    c__ __  "Please input the minimum value: "sy.. pause
+    c__ __ minValuesy.. pause
+    c__ __  "Please input the maximum value: "sy.. pause
+    c__ __ maxValuesy.. pause
+    c__ __  "Please input the number to check: "sy.. pause
+    c__ __ elementToChecksy.. pause
 
-    bo.. isContained _ (minValue <_ elementToCheck) && (elementToCheck <_ maxValue);
+    bo.. isContained _ (minValue <_ elementToCheck) && (elementToCheck <_ maxValue)sy.. pause
 
     __ (isContained)
         c__ __  "The number " __  elementToCheck __  " belongs to the interval from " __  minValue __  " to " __  maxValue __  " !" __  e..

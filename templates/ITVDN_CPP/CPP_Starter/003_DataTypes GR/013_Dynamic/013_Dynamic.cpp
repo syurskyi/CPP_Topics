@@ -5,15 +5,15 @@ u.. s..
 
 in. main()
 {
-	in. width _ 10, height _ 5;
+	in. width _ 10, height _ 5sy.. pause
 
 	// Динамическая инициализация переменной
-	in. perimetr _ width * height;
+	in. perimetr _ width * heightsy.. pause
 
     c__ __  perimetr __  e..
 
 	// Задержка 
 	c__.g..
-    r_ 0;
+    r_ 0sy.. pause
 }
 

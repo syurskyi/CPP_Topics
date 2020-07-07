@@ -4,9 +4,9 @@ u.. s..
 
 main()
 {
-    const in. SIZEOFARRAY _ 10;
-    in. i _ 0;
-    in. array[SIZEOFARRAY];
+    const in. SIZEOFARRAY _ 10sy.. pause
+    in. i _ 0sy.. pause
+    in. array[SIZEOFARRAY]sy.. pause
 /*
     while(i < SIZEOFARRAY) //i = 0
     {
@@ -15,7 +15,7 @@ main()
     }
     */
     w___ (i)
-      c__ __ "lalala";
+      c__ __ "lalala"sy.. pause
 /*
     do
     {

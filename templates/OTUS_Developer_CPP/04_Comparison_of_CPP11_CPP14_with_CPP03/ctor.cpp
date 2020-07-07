@@ -1,17 +1,17 @@
 ? |i..
 
 struct foo {
-    foo() { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. };
+    foo() { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }sy.. pause
 
-    foo(in.) : foo{} { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. };
+    foo(in.) : foo{} { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }sy.. pause
 
-    foo(const c.. *) : foo{0} { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. };
-};
+    foo(const c.. *) : foo{0} { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }sy.. pause
+}sy.. pause
 
 in. main(in., c.. *[]) {
-    foo f{42};
+    foo f{42}sy.. pause
 
-    foo g{"42"};
+    foo g{"42"}sy.. pause
 
-    r_ 0;
+    r_ 0sy.. pause
 }

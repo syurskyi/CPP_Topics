@@ -5,12 +5,12 @@ u.. s..
 
 in. main()
 {
-    B objB;
-    A objA;
+    B objBsy.. pause
+    A objAsy.. pause
 
-    objA.setSecretValue(objB, 600);
+    objA.setSecretValue(objB, 600)sy.. pause
 
     c__ __  objB.getSecretValue() __  e..
 
-    r_ 0;
+    r_ 0sy.. pause
 }

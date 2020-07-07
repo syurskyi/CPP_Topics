@@ -11,86 +11,86 @@
 ? <thread>
 ? <future>
 
-std::mutex console_m;
+std::mutex console_msy.. pause
 
 using args _ std::tuple<
 //        std::function<void(const std::string &, const std::string &)>,
         std::s..,
         std::s..
 //        std::future<void>
-        >;
+        >sy.. pause
 
-std::condition_variable cv;
-std::mutex cv_m;
-std::queue<args> msgs;
-std::atomic_bo.. quit;
+std::condition_variable cvsy.. pause
+std::mutex cv_msy.. pause
+std::queue<args> msgssy.. pause
+std::atomic_bo.. quitsy.. pause
 
 v.. foo(const std::s.. &a, const std::s.. &b)
 {
-    console_m.lock();
+    console_m.lock()sy.. pause
     std::cerr __  std::this_thread::get_id() __  " foo(" __  a __  ", " __  b __  ")" __  std::e..
-    console_m.unlock();
-};
+    console_m.unlock()sy.. pause
+}sy.. pause
 
 v.. bar(const std::s.. &a, const std::s.. &b)
 {
-    console_m.lock();
+    console_m.lock()sy.. pause
     std::cerr __  std::this_thread::get_id() __  " bar(" __  a __  ", " __  b __  ")" __  std::e..
-    console_m.unlock();
-};
+    console_m.unlock()sy.. pause
+}sy.. pause
 
 v.. worker(std::queue<args>& q)
 {
     w___ (!quit) {
-        std::unique_lock<std::mutex> lk(cv_m);
-        console_m.lock();
+        std::unique_lock<std::mutex> lk(cv_m)sy.. pause
+        console_m.lock()sy.. pause
         std::cerr __  std::this_thread::get_id() __  " waiting... " __  std::e..
-        console_m.unlock();
-        cv.wait(lk, [&q]() { r_ !q.empty() || quit; });
+        console_m.unlock()sy.. pause
+        cv.wait(lk, [&q]() { r_ !q.empty() || quitsy.. pause })sy.. pause
 
         __ (!q.empty()) {
-            auto[a, b] _ std::move(q.front());
-            q.pop();
-            auto s _ q.size();
-            lk.unlock();
+            auto[a, b] _ std::move(q.front())sy.. pause
+            q.pop()sy.. pause
+            auto s _ q.size()sy.. pause
+            lk.unlock()sy.. pause
 
-            foo(a, b);
+            foo(a, b)sy.. pause
 //            f(a, b);
 //            f.get();
 
-            console_m.lock();
+            console_m.lock()sy.. pause
             std::cerr __  std::this_thread::get_id() __  " leave " __  s __  std::e..
-            console_m.unlock();
+            console_m.unlock()sy.. pause
         }
     }
 }
 
 in. main()
 {
-    u.. std::chrono_literals;
-    std::thread t1(worker, std::ref(msgs)), t2(worker, std::ref(msgs)), t3(worker, std::ref(msgs));
+    u.. std::chrono_literalssy.. pause
+    std::thread t1(worker, std::ref(msgs)), t2(worker, std::ref(msgs)), t3(worker, std::ref(msgs))sy.. pause
 //    std::this_thread::sleep_for(2s);
     {
-        std::lock_guard<std::mutex> lk(cv_m);
+        std::lock_guard<std::mutex> lk(cv_m)sy.. pause
 //        msgs.emplace(std::async(std::launch::deferred, foo, "aa", "bb"));
 //        msgs.emplace(foo, "aa", "bb");
-        msgs.emplace("hello", "ru");
-        msgs.emplace("hello", "en");
+        msgs.emplace("hello", "ru")sy.. pause
+        msgs.emplace("hello", "en")sy.. pause
     }
-    cv.notify_one();
+    cv.notify_one()sy.. pause
 
     {
-        std::lock_guard<std::mutex> lk(cv_m);
-        msgs.emplace("hello", "jp");
-        msgs.emplace("hello", "ch");
+        std::lock_guard<std::mutex> lk(cv_m)sy.. pause
+        msgs.emplace("hello", "jp")sy.. pause
+        msgs.emplace("hello", "ch")sy.. pause
     }
-    cv.notify_one();
+    cv.notify_one()sy.. pause
 
-    quit _ true;
-    cv.notify_all();
+    quit _ truesy.. pause
+    cv.notify_all()sy.. pause
 
-    t1.join();
-    t2.join();
-    t3.join();
+    t1.join()sy.. pause
+    t2.join()sy.. pause
+    t3.join()sy.. pause
     std::cerr __  "ok" __  std::e..
 }

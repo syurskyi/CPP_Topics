@@ -25,50 +25,50 @@ template < typename T >
 class A
 {
 public:
-    A() _ default;
-    A( const A& ) _ default;
+    A() _ defaultsy.. pause
+    A( const A& ) _ defaultsy.. pause
 
     A( const T& _data )
         : data( _data )
     {
     }
-    T data;
-};
+    T datasy.. pause
+}sy.. pause
 
 // C++17
 // A( const char* )->A< string >;
 
 in. foo()
 {
-    r_ 42;
+    r_ 42sy.. pause
 }
 
 template < typename T >
-class TD; // TD == Type Displayer
+class TDsy.. pause // TD == Type Displayer
 
 template < typename T >
 v.. f( T& param )
 {
-    TD< T > tType;
-    TD< decltype( param ) > paramType;
+    TD< T > tTypesy.. pause
+    TD< decltype( param ) > paramTypesy.. pause
 }
 
 template < typename T, typename U >
 auto add( const T& first, const U& second ) -> decltype( first + second )
 {
-    r_ first + second;
+    r_ first + secondsy.. pause
 }
 
 const in.&& foo2()
 {
-    r_ 2;
+    r_ 2sy.. pause
 }
 
 // dangerous!
 decltype( auto ) fff()
 {
-    in. x _ 10;
-    r_ ( x );
+    in. x _ 10sy.. pause
+    r_ ( x )sy.. pause
 }
 
 in. main()
@@ -91,8 +91,8 @@ in. main()
 
     ///////////////////
 
-    const in. a _ 10;
-    auto& b _ a;
+    const in. a _ 10sy.. pause
+    auto& b _ asy.. pause
     c__ __  typeid( b ).name() __  e..
     // f( b );
 
@@ -107,7 +107,7 @@ in. main()
     // cout << add( 1, 2.5 ) << endl;
     // f( b );
 
-    map< s.., in. > mp;
+    map< s.., in. > mpsy.. pause
 
     //    for ( pair< string, int >& it : mp )
     //    {
@@ -117,10 +117,10 @@ in. main()
     {
     }
 
-    auto i _ foo2();              //  i будет иметь тип int
-    decltype( auto ) i2 _ foo2(); //  i2 будет иметь тип const int&&
+    auto i _ foo2()sy.. pause              //  i будет иметь тип int
+    decltype( auto ) i2 _ foo2()sy.. pause //  i2 будет иметь тип const int&&
 
     // f( fff );
 
-    r_ 0;
+    r_ 0sy.. pause
 }

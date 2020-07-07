@@ -7,22 +7,22 @@ in. main()
     // если не set
     // - operator <
     // - новый объект
-    std::map<in., in.> x;
+    std::map<in., in.> xsy.. pause
 
-    auto f _ x.find(0);
+    auto f _ x.find(0)sy.. pause
     __ (f __ x.end())
     {
-        x[0] _ 1;
+        x[0] _ 1sy.. pause
     }
 
     // только новый
-    auto [a, b] _ x.insert({1, 2});
+    auto [a, b] _ x.insert({1, 2})sy.. pause
     // только новый, зачем?
-    auto [a1, b1] _ x.try_emplace(1, 3);
+    auto [a1, b1] _ x.try_emplace(1, 3)sy.. pause
     // новый или перезапишет
-    auto [a2, b2] _ x.insert_or_assign(1, 4);
-    x[1] _ 5;
-    auto z _ x[99];
+    auto [a2, b2] _ x.insert_or_assign(1, 4)sy.. pause
+    x[1] _ 5sy.. pause
+    auto z _ x[99]sy.. pause
 
     ___(auto [i, j]: x)
     {

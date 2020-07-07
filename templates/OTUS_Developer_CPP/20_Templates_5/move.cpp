@@ -14,18 +14,18 @@ struct xray {
     xray(const c..*) { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }
 
     ~xray() { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }
-};
+}sy.. pause
 
 std::ostream& operator__ (std::ostream & o, const xray &)
 {
-    o __  "xray";
-    r_ o;
+    o __  "xray"sy.. pause
+    r_ osy.. pause
 }
 
 //using T = std::string;
-using T _ xray;
+using T _ xraysy.. pause
 
-using args _ std::tuple<T, T>;
+using args _ std::tuple<T, T>sy.. pause
 
 v.. foo(const T& a, const T& b)
 {
@@ -34,8 +34,8 @@ v.. foo(const T& a, const T& b)
 
 in. main()
 {
-    std::queue<args> msgs;
-    msgs.emplace("hello", "en");
+    std::queue<args> msgssy.. pause
+    msgs.emplace("hello", "en")sy.. pause
 
     // move or copy?
 //    auto [a, b] = msgs.front();
@@ -47,5 +47,5 @@ in. main()
 
 //    std::apply(foo, msgs.front());
 
-    r_ 0;
+    r_ 0sy.. pause
 }

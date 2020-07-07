@@ -5,35 +5,35 @@ u.. s..
 
 main ()
 {
-    in. chosenNumbersSum _ 0;
-    c.. choice;
+    in. chosenNumbersSum _ 0sy.. pause
+    c.. choicesy.. pause
 
-    ___ (in. i _ 1; ; i++)
+    ___ (in. i _ 1sy.. pause sy.. pause i++)
     {
 
         c__ __  "The current sum is: " __  chosenNumbersSum __  endl __  e..
         c__ __  "Do you want to add " __  i __  " ?" __  e..
 
-        c__ __  "Y - yes / N - no / Anything else - end : ";
-        c__ __ choice;
+        c__ __  "Y - yes / N - no / Anything else - end : "sy.. pause
+        c__ __ choicesy.. pause
 
         __ (choice __ 'Y' || choice __ 'y')
         {
-            chosenNumbersSum +_ i;
+            chosenNumbersSum +_ isy.. pause
         }
         ____ __ (choice __ 'N' || choice __ 'n')
         {
-            system ("cls");
+            system ("cls")sy.. pause
             c___
         }
         ____
         {
-            system ("cls");
+            system ("cls")sy.. pause
             b..
         }
-        system ("cls");
+        system ("cls")sy.. pause
     }
 
-    c__ __  "Good bye !";
+    c__ __  "Good bye !"sy.. pause
 
 }

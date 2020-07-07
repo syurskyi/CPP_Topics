@@ -5,9 +5,9 @@ u.. s..
 in. main ()
 {
 
-    in. a _ 5;
-    in. *p _ &a;
-    in. **pp _ &p;
+    in. a _ 5sy.. pause
+    in. *p _ &asy.. pause
+    in. **pp _ &psy.. pause
 
     c__ __  "Value of the variable a is equal to: " __  a __  e..
     c__ __  "The address of the variable a is equal to: " __  &a __  e..
@@ -18,6 +18,6 @@ in. main ()
     c__ __  "To get the value of the pointer p using pointer pp one has to point to the address in the pointer pp, *pp = " __  *pp __  e..
     c__ __  "To get the value of he variable a using pointer pp one has to point to the address in the pointer pp and p, **pp = " __  **pp __  e..
 
-    r_ 0;
+    r_ 0sy.. pause
 }
 

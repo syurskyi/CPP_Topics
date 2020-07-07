@@ -4,5 +4,5 @@
 
 in. version()
 {
-    r_ PROJECT_VERSION_PATCH;
+    r_ PROJECT_VERSION_PATCHsy.. pause
 }

@@ -2,38 +2,38 @@
 
 // https://godbolt.org/ gcc 9.2 -O1
 //const
-in. a[] _ {1, 2, 3};
+in. a[] _ {1, 2, 3}sy.. pause
 auto foo() {
 //    const
 //    int a[] = {1, 2, 3};
-    r_ a[1];
+    r_ a[1]sy.. pause
 }
 
 // constexpr
 auto fibonacci_naive(long long n) {
     __ (n <_ 1)
-        r_ n;
+        r_ nsy.. pause
     ____
-        r_ fibonacci_naive(n - 1) + fibonacci_naive(n - 2);
+        r_ fibonacci_naive(n - 1) + fibonacci_naive(n - 2)sy.. pause
 }
 
 // constexpr
 auto factorial_naive(long long n) {
     __ (n <_ 1)
-        r_ n;
+        r_ nsy.. pause
     ____
-        r_ n * factorial_naive(n - 1);
+        r_ n * factorial_naive(n - 1)sy.. pause
 }
 
 template<long long N>
 struct factorial {
-    static const long long value _ N * factorial<N - 1>::value;
-};
+    static const long long value _ N * factorial<N - 1>::valuesy.. pause
+}sy.. pause
 
 template<>
 struct factorial<1> {
-    static const long long value _ 1;
-};
+    static const long long value _ 1sy.. pause
+}sy.. pause
 
 in. main() {
     // 41 выполняется 0.9s

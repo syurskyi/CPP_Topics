@@ -5,29 +5,29 @@ u.. s..
 
 main ()
 {
-     in. pin, checkPin;
-     in. counter _ 5;
+     in. pin, checkPinsy.. pause
+     in. counter _ 5sy.. pause
 
-     c__ __  "Input your pin number for the first time: ";
-     c__ __ pin;
+     c__ __  "Input your pin number for the first time: "sy.. pause
+     c__ __ pinsy.. pause
 
-     system("cls");
+     system("cls")sy.. pause
 
      do
      {
-         c__ __  "Input your pin(" __  counter __  " tries left): ";
-         c__ __ checkPin;
+         c__ __  "Input your pin(" __  counter __  " tries left): "sy.. pause
+         c__ __ checkPinsy.. pause
 
-         system("cls");
-         counter--;
+         system("cls")sy.. pause
+         counter--sy.. pause
 
-     } w___ ((checkPin !_ pin) && (counter > 0));
+     } w___ ((checkPin !_ pin) && (counter > 0))sy.. pause
 
      __ (checkPin __ pin)
      {
-        c__ __  "Correct pin, welcome !";
+        c__ __  "Correct pin, welcome !"sy.. pause
      }
      ____
-        c__ __  "You have entered a wrong PIN code for 5 times !";
+        c__ __  "You have entered a wrong PIN code for 5 times !"sy.. pause
 
 }

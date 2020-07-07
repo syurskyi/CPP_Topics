@@ -4,8 +4,8 @@ u.. s..
 //relational operator.
 main()
 {
-    in. a _ 10;
-    in. b _ 5;
+    in. a _ 10sy.. pause
+    in. b _ 5sy.. pause
 
 
     c__ __  (a __ b) __  e.. //true (1) when both variables have the same value

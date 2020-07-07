@@ -5,12 +5,12 @@ in. main(){
   
   //Create out message object, then tell it to do a function.
 	
-  Message m;
+  Message msy.. pause
 
-  std::c__ __  "\nThe message is: ";
-  m.communicate();  
+  std::c__ __  "\nThe message is: "sy.. pause
+  m.communicate()sy.. pause
 	
-  r_ 0;
+  r_ 0sy.. pause
 
 }
 

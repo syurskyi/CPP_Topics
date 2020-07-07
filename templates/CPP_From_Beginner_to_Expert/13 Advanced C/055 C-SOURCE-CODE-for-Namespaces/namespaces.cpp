@@ -7,27 +7,27 @@ namespace mySpace
 {
     class MyNewLine
     {
-            std::s.. text;
+            std::s.. textsy.. pause
         public:
-            MyNewLine(std::s.. text _ "\n\n\n") { this->text _ text;}
+            MyNewLine(std::s.. text _ "\n\n\n") { this->text _ textsy.. pause}
             std::s.. toString()
             {
-                r_ text;
+                r_ textsy.. pause
             }
-    };
+    }sy.. pause
 
     std::ostream & operator__ (std::ostream & out, MyNewLine & o)
     {
-        r_ out __  o.toString();
+        r_ out __  o.toString()sy.. pause
     }
-    MyNewLine endl("\n\n\n\n\n\n");
+    MyNewLine endl("\n\n\n\n\n\n")sy.. pause
 }
-u.. mySpace;
+u.. mySpacesy.. pause
 in. main()
 {
-    in. a _ 50;
+    in. a _ 50sy.. pause
 
 
     std::c__ __  "this is text: " __  e..
-    r_ 0;
+    r_ 0sy.. pause
 }

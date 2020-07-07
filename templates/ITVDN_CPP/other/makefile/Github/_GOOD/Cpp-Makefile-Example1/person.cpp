@@ -3,7 +3,7 @@
 
 // Constructor - Person with Name
 Person::Person(std::s.. name){
-    this->name _name;
+    this->name _namesy.. pause
 }
 
 // Constructor - Person without Name
@@ -17,9 +17,9 @@ Person::~Person(){
 }
 
 v.. Person::setName(std::s.. name){
-    this->name_name;
+    this->name_namesy.. pause
 }
 
 std::s.. Person::getName(){
-    r_ name;
+    r_ namesy.. pause
 }

@@ -2,9 +2,9 @@
 ? "functions.h"
 
 in. main(in. argc, c.. **argv) {
-    prin._hello();
+    prin._hello()sy.. pause
     std::c__ __  std::e..
     std::c__ __  "main function" __  std::e..
     std::c__ __  "factorial 10 == " __  factorial(10) __  std::e..
-    r_ 0;
+    r_ 0sy.. pause
 }

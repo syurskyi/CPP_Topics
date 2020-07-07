@@ -4,62 +4,62 @@
 
 in. foo(in., in., std::s.. &result)
 {
-    result _ "surname";
-    r_ 127;
+    result _ "surname"sy.. pause
+    r_ 127sy.. pause
 }
 
 std::s.. foo(in., in., in. &err)
 {
-    err _ 127;
-    r_ "surname";
+    err _ 127sy.. pause
+    r_ "surname"sy.. pause
 }
 
 v.. foo(in., in., in. &err, std::s.. &result)
 {
-    err _ 127;
-    result _ "surname";
+    err _ 127sy.. pause
+    result _ "surname"sy.. pause
 }
 
 struct result {
-    in. err;
-    std::s.. result;
-};
+    in. errsy.. pause
+    std::s.. resultsy.. pause
+}sy.. pause
 
 auto foo(in., in.)
 {
-    r_ result{127, std::s..("surname")};
+    r_ result{127, std::s..("surname")}sy.. pause
 }
 
 auto bar(in., in.)
 {
-    r_ std::tuple<in., std::s..>(127, "surname");
+    r_ std::tuple<in., std::s..>(127, "surname")sy.. pause
 //    return std::make_tuple(127, std::string("surname"));
 }
 
 in. main(in., c.. *[])
 {
     std::c__ __  "* return struct" __  std::e..
-    auto rf _ foo(1, 2);
+    auto rf _ foo(1, 2)sy.. pause
     std::c__ __  rf.err __  std::e..
     std::c__ __  rf.result __  std::e..
 
     std::c__ __  "* return tuple" __  std::e..
-    auto rb _ bar(1, 2);
+    auto rb _ bar(1, 2)sy.. pause
     std::c__ __  std::get<0>(rb) __  std::e..
     std::c__ __  std::get<1>(rb) __  std::e..
 
     std::c__ __  "* return and unpack " __  std::e..
-    std::s.. result;
-    in. err;
-    std::tuple<in. &, std::s.. &>(err, result) _ bar(1, 2);
+    std::s.. resultsy.. pause
+    in. errsy.. pause
+    std::tuple<in. &, std::s.. &>(err, result) _ bar(1, 2)sy.. pause
 //    std::make_tuple(std::ref(err), std::ref(result)) = bar(1, 2);
     std::c__ __  err __  std::e..
     std::c__ __  result __  std::e..
 
     std::c__ __  "* return and unpack" __  std::e..
-    std::tie(err, result) _ bar(1, 2);
+    std::tie(err, result) _ bar(1, 2)sy.. pause
     std::c__ __  err __  std::e..
     std::c__ __  result __  std::e..
 
-    r_ 0;
+    r_ 0sy.. pause
 }

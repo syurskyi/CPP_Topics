@@ -3,52 +3,52 @@
 
 u.. s..
 
-in. * createArray(in.);
+in. * createArray(in.)sy.. pause
 
-v.. swapTwoValues(in.*, in.*);
+v.. swapTwoValues(in.*, in.*)sy.. pause
 
-v.. fillArrayWithValues(in.[], in.);
-v.. prin.ArrayValues(in.[], in.);
+v.. fillArrayWithValues(in.[], in.)sy.. pause
+v.. prin.ArrayValues(in.[], in.)sy.. pause
 
-v.. bubbleSort(in.[], in., in. _ 1);
-v.. selectionSort(in.[], in., in. _ 1);
+v.. bubbleSort(in.[], in., in. _ 1)sy.. pause
+v.. selectionSort(in.[], in., in. _ 1)sy.. pause
 
 
 in. main ()
 {
 
-    r_ 0;
+    r_ 0sy.. pause
 }
 
 in. * createArray(in. sizeOfArray)
 {
-    in.* newArray _ new in.[sizeOfArray];
+    in.* newArray _ new in.[sizeOfArray]sy.. pause
 
-    r_ newArray;
+    r_ newArraysy.. pause
 }
 
 v.. swapTwoValues(in.* firstValue, in.* secondValue)
 {
-    in. temporaryVariable;
+    in. temporaryVariablesy.. pause
 
-    temporaryVariable _ *firstValue;
-    *firstValue _ *secondValue;
-    *secondValue _ temporaryVariable;
+    temporaryVariable _ *firstValuesy.. pause
+    *firstValue _ *secondValuesy.. pause
+    *secondValue _ temporaryVariablesy.. pause
 }
 
 v.. fillArrayWithValues(in. arrayToFill[], in. sizeOfArray)
 {
-    ___ (in. i _ 0; i < sizeOfArray; i++)
+    ___ (in. i _ 0sy.. pause i < sizeOfArraysy.. pause i++)
     {
-        c__ __  "Enter " __  i+1 __  " element: ";
-        c__ __ arrayToFill[i];
+        c__ __  "Enter " __  i+1 __  " element: "sy.. pause
+        c__ __ arrayToFill[i]sy.. pause
     }
-    system("cls");
+    system("cls")sy.. pause
 }
 
 v.. prin.ArrayValues(in. arrayToPrin.[], in. sizeOfArray)
 {
-    ___ (in. i _ 0; i < sizeOfArray; i++)
+    ___ (in. i _ 0sy.. pause i < sizeOfArraysy.. pause i++)
     {
         c__ __  "Array[" __  i __  "] = " __  arrayToPrin.[i] __  e..
     }
@@ -57,42 +57,42 @@ v.. prin.ArrayValues(in. arrayToPrin.[], in. sizeOfArray)
 
 v.. bubbleSort(in. arrayToSort[], in. sizeOfArray, in. orderOfSequence)
 {
-    ___ (in. i _ 0; i < sizeOfArray-1; i++)
+    ___ (in. i _ 0sy.. pause i < sizeOfArray-1sy.. pause i++)
     {
-        ___ (in. j _ 0; j < sizeOfArray-1; j++)
+        ___ (in. j _ 0sy.. pause j < sizeOfArray-1sy.. pause j++)
         {
             __ (orderOfSequence __ 1 && arrayToSort[j] > arrayToSort[j+1])
             {
-                    swapTwoValues(arrayToSort+j, arrayToSort+j+1);
+                    swapTwoValues(arrayToSort+j, arrayToSort+j+1)sy.. pause
             }
             ____ __ (orderOfSequence __ 2 && arrayToSort[j] < arrayToSort[j+1])
             {
-                    swapTwoValues(arrayToSort+j, arrayToSort+j+1);
+                    swapTwoValues(arrayToSort+j, arrayToSort+j+1)sy.. pause
             }
         }
     }
-    prin.ArrayValues(arrayToSort, sizeOfArray);
+    prin.ArrayValues(arrayToSort, sizeOfArray)sy.. pause
 }
 
 v.. selectionSort(in. arrayToSort[], in. sizeOfArray, in. orderOfSequence)
 {
-    in. limitIndex;
-    ___ (in. i _ 0; i < sizeOfArray; i++)
+    in. limitIndexsy.. pause
+    ___ (in. i _ 0sy.. pause i < sizeOfArraysy.. pause i++)
     {
-        limitIndex _ i;
-        ___ (in. j _ i; j < sizeOfArray; j++)
+        limitIndex _ isy.. pause
+        ___ (in. j _ isy.. pause j < sizeOfArraysy.. pause j++)
         {
             __ (orderOfSequence __ 1 && arrayToSort[j] < arrayToSort[limitIndex])
             {
-                limitIndex _ j;
+                limitIndex _ jsy.. pause
             }
             ____ __ (orderOfSequence __ 2 && arrayToSort[j] > arrayToSort[limitIndex])
             {
-                limitIndex _ j;
+                limitIndex _ jsy.. pause
             }
         }
-        swapTwoValues(arrayToSort+i, arrayToSort+limitIndex);
+        swapTwoValues(arrayToSort+i, arrayToSort+limitIndex)sy.. pause
     }
-    prin.ArrayValues(arrayToSort, sizeOfArray);
+    prin.ArrayValues(arrayToSort, sizeOfArray)sy.. pause
 }
 

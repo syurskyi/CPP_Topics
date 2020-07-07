@@ -3,28 +3,28 @@
 
 u.. s..
 
-v.. chooseOperation(c..);
-v.. addition();
-v.. subtraction();
-v.. multiplication();
-v.. division();
-v.. exponentiation();
+v.. chooseOperation(c..)sy.. pause
+v.. addition()sy.. pause
+v.. subtraction()sy.. pause
+v.. multiplication()sy.. pause
+v.. division()sy.. pause
+v.. exponentiation()sy.. pause
 
 
 in. main ()
 {
     w___ (true)
     {
-        c.. choice;
+        c.. choicesy.. pause
 
         c__ __  "What mathematical operation you want to use ?" __  e..
-        c__ __  "Type: '+' - addition, '-' - subtraction, '*' - multiplication, '/' - division, '^' - exponentiation: ";
-        c__ __ choice;
+        c__ __  "Type: '+' - addition, '-' - subtraction, '*' - multiplication, '/' - division, '^' - exponentiation: "sy.. pause
+        c__ __ choicesy.. pause
 
-        system("cls");
-        chooseOperation(choice);
+        system("cls")sy.. pause
+        chooseOperation(choice)sy.. pause
     }
-    r_ 0;
+    r_ 0sy.. pause
 }
 
 v.. chooseOperation(c.. choice)
@@ -32,91 +32,91 @@ v.. chooseOperation(c.. choice)
     s..(choice)
     {
         c.. '+':
-            addition();
+            addition()sy.. pause
             b..
         c.. '-':
-            subtraction();
+            subtraction()sy.. pause
             b..
         c.. '*':
-            multiplication();
+            multiplication()sy.. pause
             b..
         c.. '/':
-            division();
+            division()sy.. pause
             b..
         c.. '^':
-            exponentiation();
+            exponentiation()sy.. pause
             b..
     }
 }
 
 v.. addition()
 {
-    d.. firstNumber, secondNumber, result;
+    d.. firstNumber, secondNumber, resultsy.. pause
 
-    c__ __  "Input the first number to add: ";
-    c__ __ firstNumber;
-    c__ __  "Input the second number to add: ";
-    c__ __ secondNumber;
+    c__ __  "Input the first number to add: "sy.. pause
+    c__ __ firstNumbersy.. pause
+    c__ __  "Input the second number to add: "sy.. pause
+    c__ __ secondNumbersy.. pause
 
-    result _ firstNumber + secondNumber;
+    result _ firstNumber + secondNumbersy.. pause
     c__ __  firstNumber __  " + " __  secondNumber __  " = " __  result __  e..
 
 }
 
 v.. subtraction()
 {
-    d.. firstNumber, secondNumber, result;
+    d.. firstNumber, secondNumber, resultsy.. pause
 
-    c__ __  "Input the number to subtract from: ";
-    c__ __ firstNumber;
-    c__ __  "Input the number to subtract with: ";
-    c__ __ secondNumber;
+    c__ __  "Input the number to subtract from: "sy.. pause
+    c__ __ firstNumbersy.. pause
+    c__ __  "Input the number to subtract with: "sy.. pause
+    c__ __ secondNumbersy.. pause
 
-    result _ firstNumber - secondNumber;
+    result _ firstNumber - secondNumbersy.. pause
     c__ __  firstNumber __  " - " __  secondNumber __  " = " __  result __  e..
 
 }
 
 v.. multiplication()
 {
-    d.. firstNumber, secondNumber, result;
+    d.. firstNumber, secondNumber, resultsy.. pause
 
-    c__ __  "Input the first number: ";
-    c__ __ firstNumber;
-    c__ __  "Input the number to multiply by: ";
-    c__ __ secondNumber;
+    c__ __  "Input the first number: "sy.. pause
+    c__ __ firstNumbersy.. pause
+    c__ __  "Input the number to multiply by: "sy.. pause
+    c__ __ secondNumbersy.. pause
 
-    result _ firstNumber * secondNumber;
+    result _ firstNumber * secondNumbersy.. pause
     c__ __  firstNumber __  " * " __  secondNumber __  " = " __  result __  e..
 
 }
 
 v.. division()
 {
-    d.. firstNumber, secondNumber, result;
+    d.. firstNumber, secondNumber, resultsy.. pause
 
-    c__ __  "Input the first number: ";
-    c__ __ firstNumber;
-    c__ __  "Input the number to divide by: ";
-    c__ __ secondNumber;
+    c__ __  "Input the first number: "sy.. pause
+    c__ __ firstNumbersy.. pause
+    c__ __  "Input the number to divide by: "sy.. pause
+    c__ __ secondNumbersy.. pause
 
-    result _ firstNumber / secondNumber;
+    result _ firstNumber / secondNumbersy.. pause
     c__ __  firstNumber __  " / " __  secondNumber __  " = " __  result __  e..
 
 }
 
 v.. exponentiation()
 {
-    d.. base, exponent, result _ 1;
+    d.. base, exponent, result _ 1sy.. pause
 
-    c__ __  "Input the base to exponentiate: ";
-    c__ __ base;
-    c__ __  "Input the exponent value: ";
-    c__ __ exponent;
+    c__ __  "Input the base to exponentiate: "sy.. pause
+    c__ __ basesy.. pause
+    c__ __  "Input the exponent value: "sy.. pause
+    c__ __ exponentsy.. pause
 
-    ___ (in. i _ 0; i < exponent; i++)
+    ___ (in. i _ 0sy.. pause i < exponentsy.. pause i++)
     {
-        result *_ base;
+        result *_ basesy.. pause
     }
 
     c__ __  "The number " __  base __  " to the power of " __  exponent __  " is equal to " __  result __  "." __  e..

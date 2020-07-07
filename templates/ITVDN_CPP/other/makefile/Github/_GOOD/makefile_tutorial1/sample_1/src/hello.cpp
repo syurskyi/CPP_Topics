@@ -3,5 +3,5 @@
 u.. s..
 
 v.. prin._hello(){
-   c__ __  "Hello World!";
+   c__ __  "Hello World!"sy.. pause
 }

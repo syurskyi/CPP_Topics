@@ -9,22 +9,22 @@ u.. s..
 
 main()
 {
-    in. A _ 4;
+    in. A _ 4sy.. pause
     //A = 4;
     //& (ampersand)
     //&name_of_variable;
-    in. prime_nr;
-    in. primeNr;
-    in. iPrimeNr;
+    in. prime_nrsy.. pause
+    in. primeNrsy.. pause
+    in. iPrimeNrsy.. pause
 
 
     c__ __  A __  e..
     c__ __  &A __  e..
 
-    A _ 10;
+    A _ 10sy.. pause
 
     c__ __  A __  e..
-    c__ __  &A;
+    c__ __  &Asy.. pause
     /*
         1. Variables can't have the same name.
         2. Variables can't start from the number

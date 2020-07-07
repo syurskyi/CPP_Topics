@@ -5,15 +5,15 @@ u.. s..
 
 main()
 {
-    d.. firstElement, secondElement, additionResult;
+    d.. firstElement, secondElement, additionResultsy.. pause
 
     c__ __  "This is a simple addition program." __  e..
-    c__ __  "Input first number: ";
-    c__ __ firstElement;
-    c__ __  "Input second number: ";
-    c__ __ secondElement;
+    c__ __  "Input first number: "sy.. pause
+    c__ __ firstElementsy.. pause
+    c__ __  "Input second number: "sy.. pause
+    c__ __ secondElementsy.. pause
 
-    additionResult _ firstElement + secondElement;
+    additionResult _ firstElement + secondElementsy.. pause
     c__ __  "First number: " __  firstElement __  e..
     c__ __  "Second number: " __  secondElement __  e..
     c__ __  "Addition result: " __  additionResult __  e..

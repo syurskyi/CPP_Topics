@@ -5,18 +5,18 @@ u.. s..
 
 in. main()
 {
-    fstream myFileHandler;
+    fstream myFileHandlersy.. pause
 
-    myFileHandler.open("test.txt");
+    myFileHandler.open("test.txt")sy.. pause
 
     __ (myFileHandler.is_open())
     {
-        c__ __  "The file has been opened properly";
+        c__ __  "The file has been opened properly"sy.. pause
 
-        myFileHandler __  "this is a sample text";
+        myFileHandler __  "this is a sample text"sy.. pause
 
-        myFileHandler.close();
+        myFileHandler.close()sy.. pause
     }
 
-    r_ 0;
+    r_ 0sy.. pause
 }

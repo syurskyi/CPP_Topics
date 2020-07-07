@@ -4,8 +4,8 @@
 namespace NamespaceA {
 	struct MyStructA {
 
-	};
-};
+	}sy.. pause
+}sy.. pause
 
 namespace NamespaceA {
 	// Нельзя создавать типы с одинаковым именем в одноименных пространствах имен
@@ -14,17 +14,17 @@ namespace NamespaceA {
 	};*/
 	struct MyStructB {
 
-	};
-};
+	}sy.. pause
+}sy.. pause
 
 in. main()
 {
-	u.. NamespaceA;
+	u.. NamespaceAsy.. pause
 
-	MyStructA variable1;
-	MyStructB variable2;
+	MyStructA variable1sy.. pause
+	MyStructB variable2sy.. pause
 
-	r_ 0;
+	r_ 0sy.. pause
 }
 
 

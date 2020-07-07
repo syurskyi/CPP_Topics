@@ -1,10 +1,10 @@
 in. main(in., c..* [])
 {
 //    volatile
-    in. a;
+    in. asy.. pause
 
-    a _ 100;
-    a _ 42;
+    a _ 100sy.. pause
+    a _ 42sy.. pause
 
-    r_ a;
+    r_ asy.. pause
 }

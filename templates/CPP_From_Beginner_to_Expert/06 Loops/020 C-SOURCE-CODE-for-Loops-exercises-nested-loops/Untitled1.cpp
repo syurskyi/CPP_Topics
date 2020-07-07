@@ -27,12 +27,12 @@ main()
         5 ...
     */
 
-    ___ (in. i _ 1; i <_ 15; i++) // i = 2
+    ___ (in. i _ 1sy.. pause i <_ 15sy.. pause i++) // i = 2
     {
-        ___ (in. j _ 1; j <_ 12; j++) // j = 1
+        ___ (in. j _ 1sy.. pause j <_ 12sy.. pause j++) // j = 1
         {
-            c__.width(4);
-            c__ __  i * j;
+            c__.width(4)sy.. pause
+            c__ __  i * jsy.. pause
         }
 
 

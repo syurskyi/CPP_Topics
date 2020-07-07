@@ -6,7 +6,7 @@
 
 template<typename T>
 struct logging_allocator {
-    using value_type _ T;
+    using value_type _ Tsy.. pause
 /*    using pointer = T*;
     using const_pointer = const T*;
     using reference = T&;
@@ -19,35 +19,35 @@ struct logging_allocator {
 
     T *allocate(std::size_t n) const {
         std::c__ __  __PRETTY_FUNCTION__ __  "[n = " __  n __  "]" __  std::e..
-        auto p _ std::malloc(n * sizeof(T));
+        auto p _ std::malloc(n * sizeof(T))sy.. pause
         __ (!p)
-            throw std::bad_alloc();
-        r_ rein.erpret_cast<T *>(p);
+            throw std::bad_alloc()sy.. pause
+        r_ rein.erpret_cast<T *>(p)sy.. pause
     }
 
     v.. deallocate(T *p, std::size_t n) const {
         std::c__ __  __PRETTY_FUNCTION__ __  "[n = " __  n __  "]" __  std::e..
-        std::free(p);
+        std::free(p)sy.. pause
     }
 
     template<typename U, typename ...Args>
     v.. construct(U *p, Args &&...args) const {
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
-        new(p) U(std::forward<Args>(args)...);
-    };
+        new(p) U(std::forward<Args>(args)...)sy.. pause
+    }sy.. pause
 
     v.. destroy(T *p) const {
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
-        p->~T();
+        p->~T()sy.. pause
     }
-};
+}sy.. pause
 
 in. main(in., c.. *[]) {
 
-    auto v _ std::vector<in., logging_allocator<in.__{};
+    auto v _ std::vector<in., logging_allocator<in.__{}sy.. pause
 //    v.reserve(5);
-    ___ (size_t i _ 0; i < 1 /* 5 */; ++i) {
-        v.emplace_back(i);
+    ___ (size_t i _ 0sy.. pause i < 1 /* 5 */sy.. pause ++i) {
+        v.emplace_back(i)sy.. pause
         std::c__ __  "---" __  std::e..
     }
 
@@ -67,7 +67,7 @@ in. main(in., c.. *[]) {
 //        std::cout << std::endl;
 //    }
 
-    r_ 0;
+    r_ 0sy.. pause
 }
 
 /*

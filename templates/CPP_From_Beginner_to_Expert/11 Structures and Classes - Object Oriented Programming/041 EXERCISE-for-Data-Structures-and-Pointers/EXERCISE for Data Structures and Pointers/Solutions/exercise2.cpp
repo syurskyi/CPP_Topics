@@ -4,31 +4,31 @@ u.. s..
 
 struct book
 {
-    s.. author;
-    s.. title;
-    in. publicationYear;
-};
+    s.. authorsy.. pause
+    s.. titlesy.. pause
+    in. publicationYearsy.. pause
+}sy.. pause
 
-v.. setBook(book&);
+v.. setBook(book&)sy.. pause
 
 in. main()
 {
-    book book1, book2, book3;
+    book book1, book2, book3sy.. pause
 
-    setBook(book1);
-    setBook(book2);
-    setBook(book3);
+    setBook(book1)sy.. pause
+    setBook(book2)sy.. pause
+    setBook(book3)sy.. pause
 
-    r_ 0;
+    r_ 0sy.. pause
 }
 
 v.. setBook(book &bookToSet)
 {
-    c__ __  "Who is the author of the book: ";
-    c__ __ bookToSet.author;
-    c__ __  "What is the title of the book: ";
-    c__ __ bookToSet.title;
-    c__ __  "In what year was the book published: ";
-    c__ __ bookToSet.publicationYear;
+    c__ __  "Who is the author of the book: "sy.. pause
+    c__ __ bookToSet.authorsy.. pause
+    c__ __  "What is the title of the book: "sy.. pause
+    c__ __ bookToSet.titlesy.. pause
+    c__ __  "In what year was the book published: "sy.. pause
+    c__ __ bookToSet.publicationYearsy.. pause
 }
 

@@ -6,17 +6,17 @@
 namespace NamespaceA {
 	namespace NamespaceB {
 		namespace NamespaceC {
-			struct MyStruct { };
+			struct MyStruct { }sy.. pause
 		}
 	}
 }
 
-u.. NamespaceA;
+u.. NamespaceAsy.. pause
 
 in. main()
 {
-	u.. NamespaceA;
-	using Add _ NamespaceA::NamespaceB::NamespaceC::MyStruct;
-	r_ 0;
+	u.. NamespaceAsy.. pause
+	using Add _ NamespaceA::NamespaceB::NamespaceC::MyStructsy.. pause
+	r_ 0sy.. pause
 }
 

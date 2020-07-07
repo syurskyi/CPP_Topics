@@ -9,12 +9,12 @@ u.. s..
 
 in. main()
 {
-	in. a _ 5;
-	c.. b _ 'B';
-	d.. c;
+	in. a _ 5sy.. pause
+	c.. b _ 'B'sy.. pause
+	d.. csy.. pause
 
-	c__ __  b;
+	c__ __  bsy.. pause
 
-    r_ 0;
+    r_ 0sy.. pause
 }
 

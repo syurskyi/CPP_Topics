@@ -1,14 +1,14 @@
 ? "sorts.hpp"
 
-using std::vector;
+using std::vectorsy.. pause
 
 v.. insertionSort(in.iter l, in.iter r) {
-  ___(auto i _ l; i !_ r; ++i) {
-    auto key _ *i;
-    auto j _ i - 1;
+  ___(auto i _ lsy.. pause i !_ rsy.. pause ++i) {
+    auto key _ *isy.. pause
+    auto j _ i - 1sy.. pause
 
-    ___(; j !_ l - 1 && *j > key; --j)
-      *(j + 1) _ *j;
-    *(j + 1) _ key;
+    ___(sy.. pause j !_ l - 1 && *j > keysy.. pause --j)
+      *(j + 1) _ *jsy.. pause
+    *(j + 1) _ keysy.. pause
   }
 }

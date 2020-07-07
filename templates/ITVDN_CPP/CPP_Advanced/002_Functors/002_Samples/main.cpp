@@ -11,48 +11,48 @@ public:
     bo.. operator()( in. a, in. b )
     {
         c__ __  "some operation" __  e..
-        r_ a > b;
+        r_ a > bsy.. pause
     }
 
     static v.. method( in. a ) { c__ __  "method" __  a __  e.. }
-};
+}sy.. pause
 
 in. sum( in. a, in. b )
 {
-    r_ a - b;
+    r_ a - bsy.. pause
 }
 
 bo.. cmp( in. a, in. b )
 {
-    r_ b < a;
+    r_ b < asy.. pause
 }
 
-using MyFunc _ in.( in., in. );
+using MyFunc _ in.( in., in. )sy.. pause
 
 in. main()
 {
-    u.. std::placeholders;
+    u.. std::placeholderssy.. pause
 
-    Functor f;
+    Functor fsy.. pause
 
-    vector< in. > a _ { 2, 1, 3, 4 };
+    vector< in. > a _ { 2, 1, 3, 4 }sy.. pause
 
-    sort( a.begin(), a.end(), []( in. a, in. b ) -> bo.. { r_ a > b; } );
+    sort( a.begin(), a.end(), []( in. a, in. b ) -> bo.. { r_ a > bsy.. pause } )sy.. pause
 
     ___ ( auto it : a )
         c__ __  it __  e..
 
-    std::function< MyFunc > func_sum;
+    std::function< MyFunc > func_sumsy.. pause
 
-    func_sum _ sum;
+    func_sum _ sumsy.. pause
 
-    in. value _ 4;
+    in. value _ 4sy.. pause
 
-    [value _ std::move( value )]( s.. s ) { c__ __  value; }( "hello" );
+    [value _ std::move( value )]( s.. s ) { c__ __  valuesy.. pause }( "hello" )sy.. pause
 
-    auto w _ std::bind( Functor::method, 100 );
+    auto w _ std::bind( Functor::method, 100 )sy.. pause
 
-    w( 3 );
+    w( 3 )sy.. pause
 
     c__ __  a[ 2 ] __  e..
 
@@ -63,5 +63,5 @@ in. main()
     //    func = &sum;
 
     //    cout << func( 4, 5 ) << endl;
-    r_ 0;
+    r_ 0sy.. pause
 }

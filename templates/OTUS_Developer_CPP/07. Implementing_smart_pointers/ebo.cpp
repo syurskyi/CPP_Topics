@@ -6,28 +6,28 @@ struct deleter {
     v.. operator()() {
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     }
-};
+}sy.. pause
 
 struct ptr {
-    in. *x;
-};
+    in. *xsy.. pause
+}sy.. pause
 
 struct ptra {
-    in. *x;
-    deleter y;
+    in. *xsy.. pause
+    deleter ysy.. pause
 
     v.. deleter() {
-        y();
+        y()sy.. pause
     }
-};
+}sy.. pause
 
 struct ptrd : deleter {
-    in. *x;
+    in. *xsy.. pause
 
     v.. deleter() {
-        (*this)();
+        (*this)()sy.. pause
     }
-};
+}sy.. pause
 
 in. main() {
 //    std::cout << sizeof(deleter) << std::endl;

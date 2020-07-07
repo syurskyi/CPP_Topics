@@ -12,47 +12,47 @@
 // ("11.22", '.') -> ["11", "22"]
 std::vector<std::s..> split(const std::s.. &str, c.. d)
 {
-    std::vector<std::s..> r;
+    std::vector<std::s..> rsy.. pause
 
-    std::s..::size_type start _ 0;
-    std::s..::size_type stop _ str.find_first_of(d);
+    std::s..::size_type start _ 0sy.. pause
+    std::s..::size_type stop _ str.find_first_of(d)sy.. pause
     w___(stop !_ std::s..::npos)
     {
-        r.push_back(str.substr(start, stop - start));
+        r.push_back(str.substr(start, stop - start))sy.. pause
 
-        start _ stop + 1;
-        stop _ str.find_first_of(d, start);
+        start _ stop + 1sy.. pause
+        stop _ str.find_first_of(d, start)sy.. pause
     }
 
-    r.push_back(str.substr(start));
+    r.push_back(str.substr(start))sy.. pause
 
-    r_ r;
+    r_ rsy.. pause
 }
 
 in. main(in. argc, c.. const *argv[])
 {
     try
     {
-        std::vector<std::vector<std::s..__ ip_pool;
+        std::vector<std::vector<std::s..__ ip_poolsy.. pause
 
-        ___(std::s.. line; std::getline(std::c__, line);)
+        ___(std::s.. linesy.. pause std::getline(std::c__, line)sy.. pause)
         {
-            std::vector<std::s..> v _ split(line, '\t');
-            ip_pool.push_back(split(v.at(0), '.'));
+            std::vector<std::s..> v _ split(line, '\t')sy.. pause
+            ip_pool.push_back(split(v.at(0), '.'))sy.. pause
         }
 
         // TODO reverse lexicographically sort
 
-        ___(std::vector<std::vector<std::s..> >::const_iterator ip _ ip_pool.cbegin(); ip !_ ip_pool.cend(); ++ip)
+        ___(std::vector<std::vector<std::s..> >::const_iterator ip _ ip_pool.cbegin()sy.. pause ip !_ ip_pool.cend()sy.. pause ++ip)
         {
-            ___(std::vector<std::s..>::const_iterator ip_part _ ip->cbegin(); ip_part !_ ip->cend(); ++ip_part)
+            ___(std::vector<std::s..>::const_iterator ip_part _ ip->cbegin()sy.. pause ip_part !_ ip->cend()sy.. pause ++ip_part)
             {
                 __ (ip_part !_ ip->cbegin())
                 {
-                    std::c__ __  ".";
+                    std::c__ __  "."sy.. pause
 
                 }
-                std::c__ __  *ip_part;
+                std::c__ __  *ip_partsy.. pause
             }
             std::c__ __  std::e..
         }
@@ -125,5 +125,5 @@ in. main(in. argc, c.. const *argv[])
         std::cerr __  e.what() __  std::e..
     }
 
-    r_ 0;
+    r_ 0sy.. pause
 }

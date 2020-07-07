@@ -11,41 +11,41 @@ v.. accumulate( std::vector< in. >::iterator first,
                  std::vector< in. >::iterator last,
                  std::promise< in. > accumulate_promise )
 {
-    in. sum _ std::accumulate( first, last, 0 );
-    accumulate_promise.set_value( sum ); // Notify future
+    in. sum _ std::accumulate( first, last, 0 )sy.. pause
+    accumulate_promise.set_value( sum )sy.. pause // Notify future
 }
 
 v.. do_work( std::promise< v.. > barrier )
 {
-    std::this_thread::sleep_for( std::chrono::seconds( 1 ) );
-    barrier.set_value();
+    std::this_thread::sleep_for( std::chrono::seconds( 1 ) )sy.. pause
+    barrier.set_value()sy.. pause
 }
 
 in. add( std::shared_future< in. >& a )
 {
-    static in. sum _ 10;
+    static in. sum _ 10sy.. pause
     sum +_ a.g..
-    r_ sum;
+    r_ sumsy.. pause
 }
 
 in. main()
 {
     // Demonstrate using promise<int> to transmit a result between threads.
-    std::vector< in. > numbers _ { 1, 2, 3, 4, 5, 6 };
-    std::promise< in. > accumulate_promise;
-    std::future< in. > accumulate_future _ accumulate_promise.get_future();
+    std::vector< in. > numbers _ { 1, 2, 3, 4, 5, 6 }sy.. pause
+    std::promise< in. > accumulate_promisesy.. pause
+    std::future< in. > accumulate_future _ accumulate_promise.get_future()sy.. pause
     std::thread work_thread(
-        accumulate, numbers.begin(), numbers.end(), std::move( accumulate_promise ) );
-    accumulate_future.wait(); // wait for result
-    std::c__ __  "result=" __  accumulate_future.get() __  '\n';
-    work_thread.join(); // wait for thread completion
+        accumulate, numbers.begin(), numbers.end(), std::move( accumulate_promise ) )sy.. pause
+    accumulate_future.wait()sy.. pause // wait for result
+    std::c__ __  "result=" __  accumulate_future.get() __  '\n'sy.. pause
+    work_thread.join()sy.. pause // wait for thread completion
 
     // Demonstrate using promise<void> to signal state between threads.
-    std::promise< v.. > barrier;
-    std::future< v.. > barrier_future _ barrier.get_future();
-    std::thread new_work_thread( do_work, std::move( barrier ) );
-    barrier_future.wait();
-    new_work_thread.join();
+    std::promise< v.. > barriersy.. pause
+    std::future< v.. > barrier_future _ barrier.get_future()sy.. pause
+    std::thread new_work_thread( do_work, std::move( barrier ) )sy.. pause
+    barrier_future.wait()sy.. pause
+    new_work_thread.join()sy.. pause
 
     // another example
     //    std::promise< int > pr;
@@ -65,16 +65,16 @@ in. main()
     // std::cout << future_result.get() << std::endl;
 
     auto a _ std::async( [] {
-        std::this_thread::sleep_for( std::chrono::seconds( 10 ) );
+        std::this_thread::sleep_for( std::chrono::seconds( 10 ) )sy.. pause
         std::c__ __  "first" __  std::e..
-    } );
+    } )sy.. pause
 
     auto b _ std::async( [] {
-        std::this_thread::sleep_for( std::chrono::seconds( 5 ) );
+        std::this_thread::sleep_for( std::chrono::seconds( 5 ) )sy.. pause
         std::c__ __  "second" __  std::e..
-    } );
+    } )sy.. pause
 
     std::c__ __  "main" __  std::e..
 
-    std::packaged_task< in.() > t;
+    std::packaged_task< in.() > tsy.. pause
 }

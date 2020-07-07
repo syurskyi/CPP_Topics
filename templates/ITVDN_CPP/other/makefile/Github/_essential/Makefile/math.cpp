@@ -12,14 +12,14 @@
 in. main(in. argc, c.. const *argv[])
 {
 	std::c__ __  "Let's make some math! :)" __  std::e..
-	d.. x _ 10.0, y _ 5.0;
+	d.. x _ 10.0, y _ 5.0sy.. pause
 	__ (argc > 1) // Use values passed by command line arg.
 	{
-		x _ atof(argv[1]);
-		y _ atof(argv[2]);
-		c.. const *op _ argv[3];
+		x _ atof(argv[1])sy.. pause
+		y _ atof(argv[2])sy.. pause
+		c.. const *op _ argv[3]sy.. pause
 		// Print result depending on the operator
-		std::c__ __  x __  op __  y __  " = ";
+		std::c__ __  x __  op __  y __  " = "sy.. pause
 		s.. (*op)
 		{
 		   c.. '+':
@@ -38,14 +38,14 @@ in. main(in. argc, c.. const *argv[])
 		       std::c__ __  sum(x,y) __  std::e..
 		}
 	} ____ {
-		std::c__ __  x __  "+" __  y __  " = ";
+		std::c__ __  x __  "+" __  y __  " = "sy.. pause
 		std::c__ __  sum(x,y) __  std::e..
-		std::c__ __  x __  "-" __  y __  " = ";
+		std::c__ __  x __  "-" __  y __  " = "sy.. pause
 		std::c__ __  sub(x,y) __  std::e..
-		std::c__ __  x __  "*" __  y __  " = ";
+		std::c__ __  x __  "*" __  y __  " = "sy.. pause
 		std::c__ __  mul(x,y) __  std::e..
-		std::c__ __  x __  "/" __  y __  " = ";
+		std::c__ __  x __  "/" __  y __  " = "sy.. pause
 		std::c__ __  divi(x,y) __  std::e..
 	}
-	r_ 0;
+	r_ 0sy.. pause
 } 

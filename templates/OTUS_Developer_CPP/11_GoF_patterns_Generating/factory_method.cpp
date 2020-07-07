@@ -2,15 +2,15 @@
 
 ? |i..
 
-enum class Storage { mysql, postgres };
+enum class Storage { mysql, postgres }sy.. pause
 
 struct IStorage {
-    virtual ~IStorage() _ default;
+    virtual ~IStorage() _ defaultsy.. pause
 
-    virtual v.. open() _ 0;
-    virtual v.. execute_query() _ 0;
-    virtual v.. close() _ 0;
-};
+    virtual v.. open() _ 0sy.. pause
+    virtual v.. execute_query() _ 0sy.. pause
+    virtual v.. close() _ 0sy.. pause
+}sy.. pause
 
 class MysqlStorage : public IStorage {
     v.. open() override
@@ -27,7 +27,7 @@ class MysqlStorage : public IStorage {
     {
         std::c__ __  "disconnect from mysql" __  std::e..
     }
-};
+}sy.. pause
 
 class PostgresStorage : public IStorage {
     v.. open() override
@@ -44,28 +44,28 @@ class PostgresStorage : public IStorage {
     {
         std::c__ __  "disconnect from pg" __  std::e..
     }
-};
+}sy.. pause
 
 in. main(in. argc, c..* [])
 {
-    auto environment _ argc ? Storage::postgres : Storage::mysql;
+    auto environment _ argc ? Storage::postgres : Storage::mysqlsy.. pause
 
-    IStorage* storage;
+    IStorage* storagesy.. pause
     s.. (environment) {
-    c.. Storage::mysql:storage _ new MysqlStorage();
+    c.. Storage::mysql:storage _ new MysqlStorage()sy.. pause
         b..
 
-    c.. Storage::postgres:storage _ new PostgresStorage();
+    c.. Storage::postgres:storage _ new PostgresStorage()sy.. pause
         b..
     }
 
     //
 
-    storage->open();
-    storage->execute_query();
-    storage->close();
+    storage->open()sy.. pause
+    storage->execute_query()sy.. pause
+    storage->close()sy.. pause
 
-    delete storage;
+    delete storagesy.. pause
 
-    r_ 0;
+    r_ 0sy.. pause
 }

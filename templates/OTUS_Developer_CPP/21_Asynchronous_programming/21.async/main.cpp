@@ -12,24 +12,24 @@ class App : public Handler {
     v.. event(Event &ev) override {
         s.. (ev.code) {
             c.. EventCode::start:
-                start();
+                start()sy.. pause
                 b..
 
             default:
                 b..
         }
     }
-};
+}sy.. pause
 
 
 in. main(in., c.. *[]) {
-    EventLoop loop;
+    EventLoop loopsy.. pause
 
-    App app;
-    loop.add(&app);
+    App appsy.. pause
+    loop.add(&app)sy.. pause
 
-    loop.send(EventCode::start);
-    loop.send(EventCode::quit);
+    loop.send(EventCode::start)sy.. pause
+    loop.send(EventCode::quit)sy.. pause
 
-    r_ loop.exec();
+    r_ loop.exec()sy.. pause
 }

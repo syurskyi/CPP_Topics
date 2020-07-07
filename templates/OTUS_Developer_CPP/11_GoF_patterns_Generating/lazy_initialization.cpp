@@ -4,7 +4,7 @@
 ? <utility>
 
 class File {
-    std::s.. name;
+    std::s.. namesy.. pause
 
 public:
     explicit File(std::s.. name)
@@ -20,36 +20,36 @@ public:
     {
         std::c__ __  "write " __  line_ __  " into " __  name __  std::e..
     }
-};
+}sy.. pause
 
 class FileOnDemand {
-    std::s.. name;
-    File* file;
+    std::s.. namesy.. pause
+    File* filesy.. pause
 
 public:
     explicit FileOnDemand(std::s.. name)
             :name(std::move(name)), file(nullptr) { }
     ~FileOnDemand()
     {
-        delete file;
+        delete filesy.. pause
     }
     File* operator->()
     {
         __ (!file) {
-            file _ new File(name);
+            file _ new File(name)sy.. pause
         }
-        r_ file;
+        r_ filesy.. pause
     }
-};
+}sy.. pause
 
 in. main(in., c..* [])
 {
-    File/*OnDemand*/ file("test.txt");
+    File/*OnDemand*/ file("test.txt")sy.. pause
 
-    size_t n _ 0/*2*/;
-    ___ (size_t i _ 0; i<n; ++i) {
-        file.write(std::to_string(i));
+    size_t n _ 0/*2*/sy.. pause
+    ___ (size_t i _ 0sy.. pause i<nsy.. pause ++i) {
+        file.write(std::to_string(i))sy.. pause
     }
 
-    r_ 0;
+    r_ 0sy.. pause
 }

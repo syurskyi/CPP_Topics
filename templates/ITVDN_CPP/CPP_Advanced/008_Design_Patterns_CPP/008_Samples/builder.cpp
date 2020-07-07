@@ -9,17 +9,17 @@ u.. s..
 
 v.. Pizza::setDough( const s..& dough )
 {
-    m_dough _ dough;
+    m_dough _ doughsy.. pause
 }
 
 v.. Pizza::setSauce( const s..& sauce )
 {
-    m_sauce _ sauce;
+    m_sauce _ saucesy.. pause
 }
 
 v.. Pizza::setTopping( const s..& topping )
 {
-    m_topping _ topping;
+    m_topping _ toppingsy.. pause
 }
 
 v.. Pizza::open() const
@@ -30,63 +30,63 @@ v.. Pizza::open() const
 
 Pizza* PizzaBuilder::getPizza()
 {
-    r_ m_pizza.release();
+    r_ m_pizza.release()sy.. pause
 }
 
 v.. PizzaBuilder::createNewPizzaProduct()
 {
-    m_pizza _ make_unique< Pizza >();
+    m_pizza _ make_unique< Pizza >()sy.. pause
 }
 
 v.. HawaiianPizzaBuilder::buildDough()
 {
-    m_pizza->setDough( "cross" );
+    m_pizza->setDough( "cross" )sy.. pause
 }
 v.. HawaiianPizzaBuilder::buildSauce()
 {
-    m_pizza->setSauce( "mild" );
+    m_pizza->setSauce( "mild" )sy.. pause
 }
 v.. HawaiianPizzaBuilder::buildTopping()
 {
-    m_pizza->setTopping( "ham+pineapple" );
+    m_pizza->setTopping( "ham+pineapple" )sy.. pause
 }
 
 v.. SpicyPizzaBuilder::buildDough()
 {
-    m_pizza->setDough( "pan baked" );
+    m_pizza->setDough( "pan baked" )sy.. pause
 }
 v.. SpicyPizzaBuilder::buildSauce()
 {
-    m_pizza->setSauce( "hot" );
+    m_pizza->setSauce( "hot" )sy.. pause
 }
 v.. SpicyPizzaBuilder::buildTopping()
 {
-    m_pizza->setTopping( "pepperoni+salami" );
+    m_pizza->setTopping( "pepperoni+salami" )sy.. pause
 }
 
 v.. Cook::openPizza()
 {
-    m_pizzaBuilder->getPizza()->open();
+    m_pizzaBuilder->getPizza()->open()sy.. pause
 }
 
 v.. Cook::makePizza( PizzaBuilder* pb )
 {
-    m_pizzaBuilder _ pb;
-    m_pizzaBuilder->createNewPizzaProduct();
-    m_pizzaBuilder->buildDough();
-    m_pizzaBuilder->buildSauce();
-    m_pizzaBuilder->buildTopping();
+    m_pizzaBuilder _ pbsy.. pause
+    m_pizzaBuilder->createNewPizzaProduct()sy.. pause
+    m_pizzaBuilder->buildDough()sy.. pause
+    m_pizzaBuilder->buildSauce()sy.. pause
+    m_pizzaBuilder->buildTopping()sy.. pause
 }
 
 v.. ClientBuilder::run()
 {
-    Cook cook;
-    HawaiianPizzaBuilder hawaiianPizzaBuilder;
-    SpicyPizzaBuilder spicyPizzaBuilder;
+    Cook cooksy.. pause
+    HawaiianPizzaBuilder hawaiianPizzaBuildersy.. pause
+    SpicyPizzaBuilder spicyPizzaBuildersy.. pause
 
-    cook.makePizza( &hawaiianPizzaBuilder );
-    cook.openPizza();
+    cook.makePizza( &hawaiianPizzaBuilder )sy.. pause
+    cook.openPizza()sy.. pause
 
-    cook.makePizza( &spicyPizzaBuilder );
-    cook.openPizza();
+    cook.makePizza( &spicyPizzaBuilder )sy.. pause
+    cook.openPizza()sy.. pause
 }

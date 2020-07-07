@@ -3,34 +3,34 @@
 
 u.. s..
 
-in. GetSum(in. *arr, in. count);
+in. GetSum(in. *arr, in. count)sy.. pause
 
 in. main()
 {
-	in. size _ 50;
-	in. *arr _ new in.[size];
+	in. size _ 50sy.. pause
+	in. *arr _ new in.[size]sy.. pause
 
-	___ (in. i _ 0; i < 50; i++)
+	___ (in. i _ 0sy.. pause i < 50sy.. pause i++)
 	{
-		*(arr + i) _ rand();
+		*(arr + i) _ rand()sy.. pause
 	}
 
-	in. sum _ GetSum(arr, size);
+	in. sum _ GetSum(arr, size)sy.. pause
 
 	c__ __  "Total sum of the array equals = " __  sum __  e..
 
 	sy.. pause
-	r_ 0;
+	r_ 0sy.. pause
 }
 
 in. GetSum(in. *arr, in. count)
 {
-	in. total _ 0;
-	___ (in. i _ 0; i < count; i++)
+	in. total _ 0sy.. pause
+	___ (in. i _ 0sy.. pause i < countsy.. pause i++)
 	{
-		total +_ *(arr + i);
+		total +_ *(arr + i)sy.. pause
 	}
 
-	r_ total;
+	r_ totalsy.. pause
 }
 

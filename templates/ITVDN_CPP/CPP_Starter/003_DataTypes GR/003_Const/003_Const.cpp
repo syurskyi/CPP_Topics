@@ -9,7 +9,7 @@ u.. s..
 in. main()
 {	
 	//  V 11-й строке мы создаем константу типа int с именем Month и присваиваем ей значение 12
-	const in. MONTH _ 12;
+	const in. MONTH _ 12sy.. pause
 
 	// «начение константы измен¤ть запрещенно
 	// MONTH = 15;
@@ -17,12 +17,12 @@ in. main()
 	// const int a;
 	// a = 10;
 
-	in. c _ in._MAX;
+	in. c _ in._MAXsy.. pause
 
 	c__ __  "INT_MAX = " __  c __  e..
 
 	// zадержка
 	c__.g..
-    r_ 0;
+    r_ 0sy.. pause
 }
 

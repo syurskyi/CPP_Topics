@@ -4,7 +4,7 @@ u.. s..
 
 in. main()
 {
-    s.. text _ "this a test"; // t r a l a \0
+    s.. text _ "this a test"sy.. pause // t r a l a \0
 
 /*
     for (int i = 0; i < text.length(); i++)
@@ -32,39 +32,39 @@ in. main()
     cout << p[1] << endl;
     cout << *(p+1) << endl;
 */
-    const c.. * text2 _ text.c_str();
+    const c.. * text2 _ text.c_str()sy.. pause
 
     c__ __  text2 __  e..
 
-    c.. array[] _ "here is a text";
+    c.. array[] _ "here is a text"sy.. pause
 
-    s.. test _ array;
+    s.. test _ arraysy.. pause
 
     c__ __  test __  e..
 
 
-    const c.. * a _ "this is a test 12512412";
+    const c.. * a _ "this is a test 12512412"sy.. pause
 
     c__ __  a[0] __  e..
 
-    c.. b[] _ "this a test 124124";
+    c.. b[] _ "this a test 124124"sy.. pause
 
-    b[0] _'g';
+    b[0] _'g'sy.. pause
     c__ __  b __  e..
 
-    c.. * const dynamic_array _ new c..[50];
-    dynamic_array[0] _ 'k';
-    dynamic_array[1] _ '\0';
+    c.. * const dynamic_array _ new c..[50]sy.. pause
+    dynamic_array[0] _ 'k'sy.. pause
+    dynamic_array[1] _ '\0'sy.. pause
     //dynamic_array = "lalala";
 
     c__ __  dynamic_array __  e..
 
-    delete [] dynamic_array;
+    delete [] dynamic_arraysy.. pause
 
-    s.. array_of_string[5] _ "this i a text that will be in all of the elements of strings";
-    array_of_string[0] _ "afsdf";
+    s.. array_of_string[5] _ "this i a text that will be in all of the elements of strings"sy.. pause
+    array_of_string[0] _ "afsdf"sy.. pause
     c__ __  array_of_string[0] __  e..
     c__ __  array_of_string[1] __  e..
     c__ __  array_of_string[2] __  e..
-    r_ 0;
+    r_ 0sy.. pause
 }

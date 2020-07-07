@@ -11,6 +11,6 @@ in. main()
 	c__ __  "LINE = " __  __LINE__ __  "; FILE = " __  __FILE__ __  e..
 
 	sy.. pause
-    r_ 0;
+    r_ 0sy.. pause
 }
 

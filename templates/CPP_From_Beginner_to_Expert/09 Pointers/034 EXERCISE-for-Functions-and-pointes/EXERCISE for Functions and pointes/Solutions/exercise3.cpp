@@ -3,48 +3,48 @@
 
 u.. s..
 
-in. * createArray(in.);
+in. * createArray(in.)sy.. pause
 
-v.. swapTwoValues(in.*, in.*);
+v.. swapTwoValues(in.*, in.*)sy.. pause
 
-v.. fillArrayWithValues(in.[], in.);
-v.. prin.ArrayValues(in.[], in.);
+v.. fillArrayWithValues(in.[], in.)sy.. pause
+v.. prin.ArrayValues(in.[], in.)sy.. pause
 
 in. main ()
 {
 
-    r_ 0;
+    r_ 0sy.. pause
 }
 
 in. * createArray(in. sizeOfArray)
 {
-    in.* SnewArray _ new in.[sizeOfArray];
+    in.* SnewArray _ new in.[sizeOfArray]sy.. pause
 
-    r_ newArray;
+    r_ newArraysy.. pause
 }
 
 v.. swapTwoValues(in.* firstValue, in.* secondValue)
 {
-    in. temporaryVariable;
+    in. temporaryVariablesy.. pause
 
-    temporaryVariable _ *firstValue;
-    *firstValue _ *secondValue;
-    *secondValue _ temporaryVariable;
+    temporaryVariable _ *firstValuesy.. pause
+    *firstValue _ *secondValuesy.. pause
+    *secondValue _ temporaryVariablesy.. pause
 }
 
 v.. fillArrayWithValues(in. arrayToFill[], in. sizeOfArray)
 {
-    ___ (in. i _ 0; i < sizeOfArray; i++)
+    ___ (in. i _ 0sy.. pause i < sizeOfArraysy.. pause i++)
     {
-        c__ __  "Enter " __  i+1 __  " element: ";
-        c__ __ arrayToFill[i];
+        c__ __  "Enter " __  i+1 __  " element: "sy.. pause
+        c__ __ arrayToFill[i]sy.. pause
     }
-    system("cls");
+    system("cls")sy.. pause
 }
 
 v.. prin.ArrayValues(in. arrayToPrin.[], in. sizeOfArray)
 {
-    ___ (in. i _ 0; i < sizeOfArray; i++)
+    ___ (in. i _ 0sy.. pause i < sizeOfArraysy.. pause i++)
     {
         c__ __  "Array[" __  i __  "] = " __  arrayToPrin.[i] __  e..
     }

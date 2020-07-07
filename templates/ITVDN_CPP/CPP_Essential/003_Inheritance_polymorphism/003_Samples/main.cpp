@@ -6,32 +6,32 @@ u.. s..
 
 v.. foo(Mammal * m)
 {
-    m->say();
+    m->say()sy.. pause
 }
 
 in. main()
 {
-    Cat cat;
-    cat.say();
+    Cat catsy.. pause
+    cat.say()sy.. pause
 
-    Mammal *mammal _ new Cat();
-    mammal->say();
+    Mammal *mammal _ new Cat()sy.. pause
+    mammal->say()sy.. pause
 
-    Mammal mam;
+    Mammal mamsy.. pause
 
-    Mammal* mammals[2];
+    Mammal* mammals[2]sy.. pause
 
-    mammals[0] _ &cat;
-    mammals[1] _ &mam;
+    mammals[0] _ &catsy.. pause
+    mammals[1] _ &mamsy.. pause
 
-    ___(in. i _ 0; i < 2; i++)
+    ___(in. i _ 0sy.. pause i < 2sy.. pause i++)
     {
-        mammals[i]->say();
+        mammals[i]->say()sy.. pause
     }
 
-    foo(mammal);
+    foo(mammal)sy.. pause
 
-    foo(&cat);
+    foo(&cat)sy.. pause
 
-    r_ 0;
+    r_ 0sy.. pause
 }

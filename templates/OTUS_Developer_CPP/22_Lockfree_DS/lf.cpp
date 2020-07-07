@@ -5,70 +5,70 @@
 
 struct Node {
     Node(in. value_)
-            :value(value_) { };
-    in. value;
-    Node* next{nullptr};
-};
+            :value(value_) { }sy.. pause
+    in. valuesy.. pause
+    Node* next{nullptr}sy.. pause
+}sy.. pause
 
 struct List {
-    Node* head{nullptr};
+    Node* head{nullptr}sy.. pause
 
     v.. push(Node* p)
     {
-        p->next _ head;
-        head _ p;
+        p->next _ headsy.. pause
+        head _ psy.. pause
     }
-};
+}sy.. pause
 
 bo.. casin.(in.& p, in. nvalue, in. compare)
 {
     __ (p__compare) {
-        p _ nvalue;
-        r_ true;
+        p _ nvaluesy.. pause
+        r_ truesy.. pause
     }
     ____
-        r_ false;
+        r_ falsesy.. pause
 }
 
 bo.. cas(Node** p, Node* nvalue, Node* compare)
 {
     __ (*p__compare) {
-        *p _ nvalue;
-        r_ true;
+        *p _ nvaluesy.. pause
+        r_ truesy.. pause
     }
     ____
-        r_ false;
+        r_ falsesy.. pause
 }
 
 struct ListLF {
-    Node* head{nullptr};
+    Node* head{nullptr}sy.. pause
 
     v.. push(Node* p)
     {
         w___ (true) {
-            Node* old_head _ head;
-            p->next _ head;
+            Node* old_head _ headsy.. pause
+            p->next _ headsy.. pause
 
             __ (cas(&head, p, old_head))
-                r_;
+                r_sy.. pause
         }
     }
-};
+}sy.. pause
 
 in. main(in., c..* [])
 {
-    auto m _ std::map<in., in.>();
+    auto m _ std::map<in., in.>()sy.. pause
 
-    m[1] _ 2;
+    m[1] _ 2sy.. pause
 
-    List l;
+    List lsy.. pause
 
-    l.push(new Node{42}); // memory leak
-    l.push(new Node{100}); // memory leak
+    l.push(new Node{42})sy.. pause // memory leak
+    l.push(new Node{100})sy.. pause // memory leak
 
-    ___ (Node* i _ l.head; i; i _ i->next) {
+    ___ (Node* i _ l.headsy.. pause isy.. pause i _ i->next) {
         std::c__ __  i->value __  std::e..
     }
 
-    r_ 0;
+    r_ 0sy.. pause
 }

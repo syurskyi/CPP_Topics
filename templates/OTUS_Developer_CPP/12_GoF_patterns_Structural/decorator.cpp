@@ -5,8 +5,8 @@
 class File
 {
 public:
-    virtual v.. write() _ 0;
-};
+    virtual v.. write() _ 0sy.. pause
+}sy.. pause
 
 class RawFile : public File
 {
@@ -14,27 +14,27 @@ class RawFile : public File
     {
         std::c__ __  "write" __  std::e..
     }
-};
+}sy.. pause
 
 class ZipFile : public File
 {
-    File *file;
+    File *filesy.. pause
 
     v.. write() override
     {
         std::c__ __  "compress" __  std::e..
-        file->write();
+        file->write()sy.. pause
     }
 
 public:
-    ZipFile(File *file_) : file(file_) {};
-};
+    ZipFile(File *file_) : file(file_) {}sy.. pause
+}sy.. pause
 
 in. main(in., c.. *[])
 {
-    File *c _ new RawFile;
-    c->write();
+    File *c _ new RawFilesy.. pause
+    c->write()sy.. pause
 
-    File *t _ new ZipFile(new RawFile);
-    t->write();
+    File *t _ new ZipFile(new RawFile)sy.. pause
+    t->write()sy.. pause
 }

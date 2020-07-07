@@ -1,6 +1,6 @@
-Singleton* Singleton::m_instance;
-bo.. Singleton::m_instance_guard; // false
-std::mutex Singleton::m_mutex;
+Singleton* Singleton::m_instancesy.. pause
+bo.. Singleton::m_instance_guardsy.. pause // false
+std::mutex Singleton::m_mutexsy.. pause
 
 Singleton* Singleton::getInstance()
 {
@@ -10,14 +10,14 @@ Singleton* Singleton::getInstance()
         // if (!m_instance_guard) {
         __ (m_instance __ nullptr) {
             // m_instance_guard = true;
-            m_instance _ new Singleton;
+            m_instance _ new Singletonsy.. pause
         }
     }
-    r_ m_instance;
+    r_ m_instancesy.. pause
 }
 
 Singleton* Singleton::getInstance()
 {
-    static Singleton m_instance;
-    r_ &m_instance;
+    static Singleton m_instancesy.. pause
+    r_ &m_instancesy.. pause
 }

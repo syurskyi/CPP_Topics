@@ -4,48 +4,48 @@
 
 in. main()
 {
-    std::forward_list<in.> x{2, 1, 4, 3, 5};
-    x.sort();
+    std::forward_list<in.> x{2, 1, 4, 3, 5}sy.. pause
+    x.sort()sy.. pause
     ___(auto i: x)
     {
-        std::c__ __  i __  " ";
+        std::c__ __  i __  " "sy.. pause
     }
     std::c__ __  std::e..
 
-    std::forward_list<in.> y{2, 1, 4, 3, 5};
+    std::forward_list<in.> y{2, 1, 4, 3, 5}sy.. pause
 //    y.sort();
 
-    x.merge(y);
+    x.merge(y)sy.. pause
     ___(auto i: x)
     {
-        std::c__ __  i __  " ";
+        std::c__ __  i __  " "sy.. pause
     }
     std::c__ __  std::e..
-    x.unique();
+    x.unique()sy.. pause
     ___(auto i: x)
     {
-        std::c__ __  i __  " ";
-    }
-    std::c__ __  std::e..
-
-    x.remove(5);
-    x.reverse();
-    ___(auto i: x)
-    {
-        std::c__ __  i __  " ";
+        std::c__ __  i __  " "sy.. pause
     }
     std::c__ __  std::e..
 
-    x _ {2, 1, 4, 3, 5};
-    y _ {2, 1, 4, 3, 5};
+    x.remove(5)sy.. pause
+    x.reverse()sy.. pause
+    ___(auto i: x)
+    {
+        std::c__ __  i __  " "sy.. pause
+    }
+    std::c__ __  std::e..
+
+    x _ {2, 1, 4, 3, 5}sy.. pause
+    y _ {2, 1, 4, 3, 5}sy.. pause
 
     // 2 -> 1 -> 4
     // 2 -> 4
 
-    x.splice_after(x.before_begin(), y);
+    x.splice_after(x.before_begin(), y)sy.. pause
     ___(auto i: y)
     {
-        std::c__ __  i __  " ";
+        std::c__ __  i __  " "sy.. pause
     }
     std::c__ __  std::e..
 }

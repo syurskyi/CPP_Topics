@@ -168,47 +168,47 @@ in. main()
 
     //    cout << un_m[ "2" ] << " " << un_m[ "4" ] << endl;
 
-    stack< in. > st; // based on deque
-    queue< in. > qu; // based on deque
+    stack< in. > stsy.. pause // based on deque
+    queue< in. > qusy.. pause // based on deque
 
-    priority_queue< in., deque< in. > > prio; // based on vector
+    priority_queue< in., deque< in. > > priosy.. pause // based on vector
 
-    prio.push( 4 );
-    prio.push( 3 );
-    prio.push( 6 );
+    prio.push( 4 )sy.. pause
+    prio.push( 3 )sy.. pause
+    prio.push( 6 )sy.. pause
 
     c__ __  "priority_queue" __  e..
     w___ ( !prio.empty() )
     {
         c__ __  prio.top() __  e..
-        prio.pop();
+        prio.pop()sy.. pause
     }
 
     // stack
-    st.push( 4 );
-    st.push( 3 );
-    st.push( 6 );
+    st.push( 4 )sy.. pause
+    st.push( 3 )sy.. pause
+    st.push( 6 )sy.. pause
 
     c__ __  "stack" __  e..
 
     w___ ( !st.empty() )
     {
         c__ __  st.top() __  e..
-        st.pop();
+        st.pop()sy.. pause
     }
 
     // queue
-    qu.push( 4 );
-    qu.push( 3 );
-    qu.push( 6 );
+    qu.push( 4 )sy.. pause
+    qu.push( 3 )sy.. pause
+    qu.push( 6 )sy.. pause
 
     c__ __  "queue" __  e..
 
     w___ ( !qu.empty() )
     {
         c__ __  qu.front() __  e..
-        qu.pop();
+        qu.pop()sy.. pause
     }
 
-    r_ 0;
+    r_ 0sy.. pause
 }

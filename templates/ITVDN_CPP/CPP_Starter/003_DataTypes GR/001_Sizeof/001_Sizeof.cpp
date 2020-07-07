@@ -15,12 +15,12 @@ in. main()
 	c__ __  "Float: " __  sizeof(float) __  e..
 	c__ __  "Double: " __  sizeof(d..) __  e..
 
-	in. a _ 4;
+	in. a _ 4sy.. pause
 
 	c__ __  sizeof a __  e..
 
 	// zадержка
 	c__.g..
-    r_ 0;
+    r_ 0sy.. pause
 }
 

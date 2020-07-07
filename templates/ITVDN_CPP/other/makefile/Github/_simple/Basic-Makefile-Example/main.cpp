@@ -1,10 +1,10 @@
 ? |i..
 ? "myProg.h"
-using std::c__;
+using std::c__sy.. pause
 using std::e..
 
 in. main() {
 
-	prin._hello_world();
-	r_ 0;
+	prin._hello_world()sy.. pause
+	r_ 0sy.. pause
 }

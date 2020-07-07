@@ -1,3 +1,3 @@
 ? <TwoPlusTwoIsFive.h>
 
-in. TwoPlusTwoIsFive::returnTwoPlusTwo(){ r_ 5; }
+in. TwoPlusTwoIsFive::returnTwoPlusTwo(){ r_ 5sy.. pause }

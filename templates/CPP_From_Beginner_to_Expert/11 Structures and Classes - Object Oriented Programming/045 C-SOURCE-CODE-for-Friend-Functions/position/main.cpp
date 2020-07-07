@@ -3,25 +3,25 @@
 
 u.. s..
 
-v.. setX(Position &, in.);
+v.. setX(Position &, in.)sy.. pause
 in. main()
 {
-    Position dog(10, 50);
+    Position dog(10, 50)sy.. pause
 
-    dog.getPosition();
-    setX(dog, 1500);
-    dog.getPosition();
+    dog.getPosition()sy.. pause
+    setX(dog, 1500)sy.. pause
+    dog.getPosition()sy.. pause
 
-    const Position house(100, 200);
+    const Position house(100, 200)sy.. pause
 
-    house.getPosition();
+    house.getPosition()sy.. pause
 //    house.setPosition(444, 444);
     //house.getPosition();
 
-    r_ 0;
+    r_ 0sy.. pause
 }
 v.. setX(Position & obj, in. value)
 {
     //Position &obj = dog;
-    obj.x _ value;
+    obj.x _ valuesy.. pause
 }

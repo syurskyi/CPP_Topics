@@ -4,30 +4,30 @@ u.. s..
 
 in. main ()
 {
-    in. charactersNumber;
+    in. charactersNumbersy.. pause
 
-    c__ __  "How many characters would you like to input: ";
-    c__ __ charactersNumber;
+    c__ __  "How many characters would you like to input: "sy.. pause
+    c__ __ charactersNumbersy.. pause
 
-    c.. * characters _ new c..[charactersNumber];
+    c.. * characters _ new c..[charactersNumber]sy.. pause
 
-    ___ (in. i _ 0; i < charactersNumber; i++)
+    ___ (in. i _ 0sy.. pause i < charactersNumbersy.. pause i++)
     {
-        c__ __  i+1 __  " character: ";
-        c__ __ characters[i];
+        c__ __  i+1 __  " character: "sy.. pause
+        c__ __ characters[i]sy.. pause
     }
 
-    c__ __  "The inputted string of characters was: ";
+    c__ __  "The inputted string of characters was: "sy.. pause
 
-    ___ (in. i _ 0; i < charactersNumber; i++)
+    ___ (in. i _ 0sy.. pause i < charactersNumbersy.. pause i++)
     {
-        c__ __  *(characters+i);
+        c__ __  *(characters+i)sy.. pause
     }
 
 
-    delete [] characters;
+    delete [] characterssy.. pause
 
 
-    r_ 0;
+    r_ 0sy.. pause
 }
 

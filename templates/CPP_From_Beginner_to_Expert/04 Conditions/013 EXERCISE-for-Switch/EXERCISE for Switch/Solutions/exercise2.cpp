@@ -4,7 +4,7 @@ u.. s..
 
 main ()
 {
-    in. choice;
+    in. choicesy.. pause
 
     c__ __  "1. January" __  e..
     c__ __  "2. February" __  e..
@@ -18,9 +18,9 @@ main ()
     c__ __  "10. October" __  e..
     c__ __  "11. November" __  e..
     c__ __  "12. December" __  e..
-    c__ __  "Choose the month: ";
+    c__ __  "Choose the month: "sy.. pause
 
-    c__ __ choice;
+    c__ __ choicesy.. pause
 
     s.. (choice)
     {
@@ -41,11 +41,11 @@ main ()
             b..
         c..
         {
-            in. year;
-            c__ __  "Input the year: ";
-            c__ __ year;
+            in. yearsy.. pause
+            c__ __  "Input the year: "sy.. pause
+            c__ __ yearsy.. pause
 
-            bo.. isLeapYear _ (((year%4 __ 0) && (year%100 !_ 0)) || (year%400 __ 0));
+            bo.. isLeapYear _ (((year%4 __ 0) && (year%100 !_ 0)) || (year%400 __ 0))sy.. pause
 
             __ (isLeapYear)
                 c__ __  "The month february has 29 days in year " __  year __  e..
@@ -54,7 +54,7 @@ main ()
 
         }
         default:
-            c__ __  "ERROR. Invalid choice.";
+            c__ __  "ERROR. Invalid choice."sy.. pause
 
     }
 

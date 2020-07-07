@@ -8,6 +8,6 @@ in. main()
 	// :: - операция разрешения констекста
 	std::c__ __  "Hello world" __  std::e..
 
-    r_ 0;
+    r_ 0sy.. pause
 }
 

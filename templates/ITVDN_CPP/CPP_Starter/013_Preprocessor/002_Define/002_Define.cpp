@@ -14,7 +14,7 @@ in. main()
 {
 	c__ __  THREE __  e..
 
-	in. a _ 10;
+	in. a _ 10sy.. pause
 
 	__ (a __ 10) {
 		c__ __  STR __  e..
@@ -24,6 +24,6 @@ in. main()
 	c__ __  "STR" __  e..
 
 	sy.. pause
-    r_ 0;
+    r_ 0sy.. pause
 }
 

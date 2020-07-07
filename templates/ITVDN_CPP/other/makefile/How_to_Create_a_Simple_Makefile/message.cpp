@@ -8,6 +8,6 @@
 u.. s..
 
 v.. message::prin.Message() {
-    c__ __  "Makefile Examle\n";
+    c__ __  "Makefile Examle\n"sy.. pause
 }
 

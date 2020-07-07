@@ -12,40 +12,40 @@
 // Prints out some details on a Polygon.
 // Note that it's not passing through a particular Polygon (like Triangle or Rectangle), rather it's the parent.
 v.. prin.Details(Polygon* shape) {
-	std::c__ __  "Height: " __  shape->getHeight();
-	std::c__ __  ", Width: " __  shape->getWidth();
+	std::c__ __  "Height: " __  shape->getHeight()sy.. pause
+	std::c__ __  ", Width: " __  shape->getWidth()sy.. pause
 
 	// Pay particular attention to the results of area(). Even though it's a Polygon, the children produce different results for the function call.
-	std::c__ __  ", Area: " __  shape->area();
+	std::c__ __  ", Area: " __  shape->area()sy.. pause
 	std::c__ __  std::e..
 }
 
 in. main() {
 	// Create a rectangle on the heap with a height of 5 and a width of 6
-	Polygon* rectangle _ new Rectangle(5, 6);
+	Polygon* rectangle _ new Rectangle(5, 6)sy.. pause
 	// Print information using getters and method
-	prin.Details(rectangle);
+	prin.Details(rectangle)sy.. pause
 	// Set the height to 10 with a setter
-	rectangle->setHeight(10);
+	rectangle->setHeight(10)sy.. pause
 	// Set the width to 10 with a setter
-	rectangle->setWidth(10);
+	rectangle->setWidth(10)sy.. pause
 	// Print information using getters and method
-	prin.Details(rectangle);
+	prin.Details(rectangle)sy.. pause
 	// Cleanup the memory in the heap
-	delete rectangle;
+	delete rectanglesy.. pause
 
 	// Create a triangle on the heap with a height of 7 and a width of 9
-	Polygon* triangle _ new Triangle(7, 9);
+	Polygon* triangle _ new Triangle(7, 9)sy.. pause
 	// Print information using getters and method
-	prin.Details(triangle);
+	prin.Details(triangle)sy.. pause
 	// Set the height to 3 with a setter
-	triangle->setHeight(3);
+	triangle->setHeight(3)sy.. pause
 	// Set the width to 4 with a setter
-	triangle->setWidth(4);
+	triangle->setWidth(4)sy.. pause
 	// Print information using getters and method
-	prin.Details(triangle);
+	prin.Details(triangle)sy.. pause
 	// Cleanup the memory in the heap
-	delete triangle;
+	delete trianglesy.. pause
 
-	r_ 0;
+	r_ 0sy.. pause
 }

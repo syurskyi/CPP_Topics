@@ -15,7 +15,7 @@ public:
     v.. safe() noexcept(true) {
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     }
-};
+}sy.. pause
 
 v.. dang() {
     std::c__ __  __PRETTY_FUNCTION__ __  std::e..
@@ -27,13 +27,13 @@ v.. safe() noexcept {
 
 in. main() {
 //    const
-    foo f;
-    f.over();
+    foo fsy.. pause
+    f.over()sy.. pause
 
-    f.dang();
-    f.safe();
+    f.dang()sy.. pause
+    f.safe()sy.. pause
 
-    v.. (*fp)() noexcept;
+    v.. (*fp)() noexceptsy.. pause
 //    fp = dang;
-    fp _ safe;
+    fp _ safesy.. pause
 }

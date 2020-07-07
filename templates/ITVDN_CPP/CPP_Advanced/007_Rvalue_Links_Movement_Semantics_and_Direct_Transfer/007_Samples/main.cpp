@@ -3,23 +3,23 @@
 u.. s..
 
 template < typename T >
-class TD; // TD == Type Displayer
+class TDsy.. pause // TD == Type Displayer
 
 template < typename T >
 v.. deduct( T&& param )
 {
-    TD< T > tType;
-    TD< decltype( param ) > paramType;
+    TD< T > tTypesy.. pause
+    TD< decltype( param ) > paramTypesy.. pause
 }
 
 struct sample
 {
-    in. v;
-};
+    in. vsy.. pause
+}sy.. pause
 
 sample foo()
 {
-    r_ { 333 };
+    r_ { 333 }sy.. pause
 }
 
 // принимает только rvalue reference
@@ -27,18 +27,18 @@ v.. baz( sample&& ) {}
 
 in.&& func()
 {
-    r_ 42;
+    r_ 42sy.. pause
 }
 
 struct _A
 {
-    _A& operator_( const _A& ) { r_ *this; }
-};
+    _A& operator_( const _A& ) { r_ *thissy.. pause }
+}sy.. pause
 v.. func( _A& ) {}
 
 in. main()
 {
-    sample&& reference _ foo(); //<--- rvalue или lvalue?
+    sample&& reference _ foo()sy.. pause //<--- rvalue или lvalue?
 
     // reference  - lvalue, невзирая на тип данных.
     // уже просто потому, что представляет собой именованный объект
@@ -50,13 +50,13 @@ in. main()
 
     // результат 'std::move(reference)' - безымянная ссылка на временный объект.
 
-    in.&& var _ func();
+    in.&& var _ func()sy.. pause
 
-    in. res _ var + 3;
-    var _ 10;
+    in. res _ var + 3sy.. pause
+    var _ 10sy.. pause
 
     // пример, когда в присвоении rvalue находится слева
-    sample() _ sample();
+    sample() _ sample()sy.. pause
 
     // deduct( var );
 
@@ -78,7 +78,7 @@ in. main()
     // that can be hard to find, mostly because of the implicit conversions. That ought not to be
     // the case here, since it is not easy to make such a mistake by accident.
 
-    func( _A() _ _A() ); // fine, operator= yields an lvalue
+    func( _A() _ _A() )sy.. pause // fine, operator= yields an lvalue
 
     // Class prvalue can be cv-qualified, but non-class prvalue
     // cannot be cv-qualified.
@@ -111,10 +111,10 @@ in. main()
     public:
         Moveable( Moveable&& other )
         {
-            this->ptr _ other.ptr;
-            other.ptr _ nullptr;
+            this->ptr _ other.ptrsy.. pause
+            other.ptr _ nullptrsy.. pause
         }                                        // move constructor
-        Moveable& operator_( Moveable&& other ); // move assignment operator
+        Moveable& operator_( Moveable&& other )sy.. pause // move assignment operator
 
         //        void setName( std::string&& st ) { str = st; }
         //        void setName( const std::string& st ) { str = st; }
@@ -125,12 +125,12 @@ in. main()
         //            str = st;
         //        }
 
-        v.. setName( std::s.. st ) { str _ std::move( st ); }
+        v.. setName( std::s.. st ) { str _ std::move( st )sy.. pause }
 
     private:
-        in.* ptr;
-        std::s.. str;
-    };
+        in.* ptrsy.. pause
+        std::s.. strsy.. pause
+    }sy.. pause
 
     // Declare either none or all of the “Big five”. If you have to declare them, consider to define
     // them as `default` where appropiate.
@@ -141,6 +141,6 @@ in. main()
     //    bool is_lvalue = std::is_lvalue_reference<T>::value;
     //    bool is_rvalue = std::is_rvalue_reference<T>::value;
 
-    std::future< v.. > f, f2;
-    f _ std::move( f2 );
+    std::future< v.. > f, f2sy.. pause
+    f _ std::move( f2 )sy.. pause
 }

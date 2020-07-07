@@ -9,11 +9,11 @@ in. main()
 {
     c__ __  "program start " __  e..
 
-    Hello hello;
-    hello.kevin();
+    Hello hellosy.. pause
+    hello.kevin()sy.. pause
 
-    Name name;
-    name.mynameis();
+    Name namesy.. pause
+    name.mynameis()sy.. pause
    
-    r_ 0;
+    r_ 0sy.. pause
 }

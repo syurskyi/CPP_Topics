@@ -6,13 +6,13 @@ u.. s..
 template <typename T>
 T sum(T a, T b)
 {
-    r_ a + b;
+    r_ a + bsy.. pause
 }
 
 template <typename T1, typename T2 _ d..>
 auto sum(T1 a, T2 b) -> decltype(a + b)
 {
-    r_ a + b;
+    r_ a + bsy.. pause
 }
 
 template <typename T _ in.>
@@ -24,8 +24,8 @@ public:
         c__ __  a * 100 __  e..
     }
 
-    T a;
-};
+    T asy.. pause
+}sy.. pause
 
 template <>
 class A|s..
@@ -36,18 +36,18 @@ public:
         c__ __  a + a __  e..
     }
 
-    s.. a _ "aba";
-};
+    s.. a _ "aba"sy.. pause
+}sy.. pause
 
 template <typename T>
 class A<T*>
 {
 public:
     template<typename V>
-    v.. process();
+    v.. process()sy.. pause
 
-    T* a;
-};
+    T* asy.. pause
+}sy.. pause
 
 template <typename T>
 template <typename V>
@@ -61,8 +61,8 @@ template <typename T, typename U>
 class B : public A<T>
 {
 public:
-    U b;
-};
+    U bsy.. pause
+}sy.. pause
 
 in. main()
 {
@@ -70,21 +70,21 @@ in. main()
     c__ __  sum(4.5, 6) __  e..
     c__ __  sum(4, "abcde") __  e..
 
-    A<> object;
-    object.a _ 2.5;
-    object.process();
+    A<> objectsy.. pause
+    object.a _ 2.5sy.. pause
+    object.process()sy.. pause
 
-    A|s.. str;
-    str.process();
+    A|s.. strsy.. pause
+    str.process()sy.. pause
 
-    B<s.., d..> b;
-    b.a _ "str";
-    b.process();
+    B<s.., d..> bsy.. pause
+    b.a _ "str"sy.. pause
+    b.process()sy.. pause
 
-    d.. member _ 15.5;
-    A<d..*> ptr;
-    ptr.a _ &member;
-    ptr.process<d..>();
+    d.. member _ 15.5sy.. pause
+    A<d..*> ptrsy.. pause
+    ptr.a _ &membersy.. pause
+    ptr.process<d..>()sy.. pause
 
-    r_ 0;
+    r_ 0sy.. pause
 }

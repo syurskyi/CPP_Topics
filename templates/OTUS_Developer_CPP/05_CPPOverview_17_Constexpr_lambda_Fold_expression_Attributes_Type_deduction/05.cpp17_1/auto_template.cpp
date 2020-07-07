@@ -20,17 +20,17 @@ v.. prin.Me() {
 }
 
 in. main() {
-    static const c.. c _ 'c';
+    static const c.. c _ 'c'sy.. pause
 
-    prin.Value<10>();
-    prin.Value<&c>();
+    prin.Value<10>()sy.. pause
+    prin.Value<&c>()sy.. pause
 
-    static const in. a _ 42;
+    static const in. a _ 42sy.. pause
 
-    prin.Me<10>();
-    prin.Me<'a'>();
-    prin.Me<a>();
-    prin.Me<&a>();
+    prin.Me<10>()sy.. pause
+    prin.Me<'a'>()sy.. pause
+    prin.Me<a>()sy.. pause
+    prin.Me<&a>()sy.. pause
 
-    r_ 0;
+    r_ 0sy.. pause
 }

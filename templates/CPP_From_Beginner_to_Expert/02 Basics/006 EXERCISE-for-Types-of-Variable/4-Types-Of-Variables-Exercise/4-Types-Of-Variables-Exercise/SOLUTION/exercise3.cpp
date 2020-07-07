@@ -4,9 +4,9 @@ u.. s..
 
 main() {
 
-    in. roomNumber;
-    sh.. floorLevel;
-    s.. renterName, renterLastName;
-    bo.. mealsIncluded;
+    in. roomNumbersy.. pause
+    sh.. floorLevelsy.. pause
+    s.. renterName, renterLastNamesy.. pause
+    bo.. mealsIncludedsy.. pause
 
 }

@@ -1,5 +1,5 @@
 ? |i..
-using std::c__;
+using std::c__sy.. pause
 using std::e..
 
 v.. prin._hello_world() {

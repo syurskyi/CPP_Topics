@@ -5,58 +5,58 @@
 class VideoControl
 {
 public:
-    v.. info() {};
-    v.. alert() {};
-};
+    v.. info() {}sy.. pause
+    v.. alert() {}sy.. pause
+}sy.. pause
 
 class Database
 {
 public:
-    v.. create() {};
-    v.. update() {};
-};
+    v.. create() {}sy.. pause
+    v.. update() {}sy.. pause
+}sy.. pause
 
 class Prin.er
 {
 public:
-    v.. prin.() {};
-};
+    v.. prin.() {}sy.. pause
+}sy.. pause
 
 class Fiscal
 {
 public:
-    v.. report() {};
-};
+    v.. report() {}sy.. pause
+}sy.. pause
 
 class Register
 {
-    VideoControl vc;
-    Database db;
-    Prin.er prin.er;
-    Fiscal f;
+    VideoControl vcsy.. pause
+    Database dbsy.. pause
+    Prin.er prin.ersy.. pause
+    Fiscal fsy.. pause
 
 public:
     v.. sale_doc()
     {
-        db.create();
-        vc.info();
-        prin.er.prin.();
-        f.report();
-    };
+        db.create()sy.. pause
+        vc.info()sy.. pause
+        prin.er.prin.()sy.. pause
+        f.report()sy.. pause
+    }sy.. pause
 
     v.. ret_doc()
     {
-        db.update();
-        vc.alert();
-        prin.er.prin.();
-        f.report();
-    };
-};
+        db.update()sy.. pause
+        vc.alert()sy.. pause
+        prin.er.prin.()sy.. pause
+        f.report()sy.. pause
+    }sy.. pause
+}sy.. pause
 
 in. main(in., c.. *[])
 {
-    Register r;
+    Register rsy.. pause
 
-    r.sale_doc();
-    r.ret_doc();
+    r.sale_doc()sy.. pause
+    r.ret_doc()sy.. pause
 }

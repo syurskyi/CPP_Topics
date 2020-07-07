@@ -5,8 +5,8 @@ u.. s..
 in. main ()
 {
 
-    in. a _ 5;
-    in. *p _ &a;
+    in. a _ 5sy.. pause
+    in. *p _ &asy.. pause
 
     c__ __  "Value of the variable a is equal to: " __  a __  e..
     c__ __  "The address of the variable a is equal to: " __  &a __  e..
@@ -14,6 +14,6 @@ in. main ()
     c__ __  "To get the value of the variable a using pointer p one has to point to the address in the pointer p, *p = " __  *p __  e..
 
 
-    r_ 0;
+    r_ 0sy.. pause
 }
 

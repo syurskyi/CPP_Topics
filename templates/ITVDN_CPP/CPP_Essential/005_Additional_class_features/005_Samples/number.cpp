@@ -8,18 +8,18 @@ Number& Number::operator_(const Number& other)
 {
     __(this !_ &other)
     {
-        data _ other.data;
+        data _ other.datasy.. pause
     }
-    r_ *this;
+    r_ *thissy.. pause
 }
 
 Number Number::operator+(const Number &other) const
 {
-    r_ Number(data + other.data);
+    r_ Number(data + other.data)sy.. pause
 }
 
 ostream& operator__ (ostream &s, const Number& number)
 {
     s __  "( " __  number.data __  " )" __  e..
-    r_ s;
+    r_ ssy.. pause
 }

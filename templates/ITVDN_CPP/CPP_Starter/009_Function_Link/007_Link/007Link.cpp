@@ -5,17 +5,17 @@ u.. s..
 
 in. main()
 {
-	in. a _ 10;
+	in. a _ 10sy.. pause
 
 	c__ __  "Variable a = " __  a __  e..
 
 	// Создаем ссылку на переменную типа int
-	in. &b _ a;
+	in. &b _ asy.. pause
 
 	c__ __  "Variable a = " __  b __  e..
 	c__ __  "Change variable b" __  e..
 
-	b _ 15;
+	b _ 15sy.. pause
 
 	c__ __  "Variable a = " __  a __  e..
 	c__ __  "Variable a = " __  b __  e..
@@ -23,6 +23,6 @@ in. main()
 	// int &c; // Не допустимо! При объявлении ссылочную переменную необходимо инициализировать.
 
 	sy.. pause
-	r_ 0;
+	r_ 0sy.. pause
 }
 

@@ -4,9 +4,9 @@
 
 in. main(in. argc, c.. const *argv[]) {
   /* code */
-  TwoPlusTwoIsFive wrong;
-  prin.f("%s\n", "Hello, World!");
-  prin.f("two plus two is: %d\n", wrong.returnTwoPlusTwo());
+  TwoPlusTwoIsFive wrongsy.. pause
+  prin.f("%s\n", "Hello, World!")sy.. pause
+  prin.f("two plus two is: %d\n", wrong.returnTwoPlusTwo())sy.. pause
 
-  r_ 0;
+  r_ 0sy.. pause
 }

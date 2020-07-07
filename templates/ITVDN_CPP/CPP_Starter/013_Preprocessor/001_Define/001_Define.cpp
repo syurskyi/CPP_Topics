@@ -14,6 +14,6 @@ in. main()
 	c__ __  E __  " " __  PI __  e..
 
 	sy.. pause
-    r_ 0;
+    r_ 0sy.. pause
 }
 

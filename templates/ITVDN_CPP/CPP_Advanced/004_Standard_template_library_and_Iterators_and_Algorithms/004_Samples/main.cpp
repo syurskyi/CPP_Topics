@@ -9,12 +9,12 @@
 
 template < typename T >
 bo.. test _ std::is_same< typename std::iterator_traits< typename T::iterator >::iterator_category,
-                          std::forward_iterator_tag >::value;
+                          std::forward_iterator_tag >::valuesy.. pause
 
 template < typename T >
 bo.. test_bidirectional _
     std::is_same< typename std::iterator_traits< typename T::iterator >::iterator_category,
-                  std::bidirectional_iterator_tag >::value;
+                  std::bidirectional_iterator_tag >::valuesy.. pause
 
 v.. prin._is_forward_iterator()
 {
@@ -114,42 +114,42 @@ in. main()
     //        std::cout << "element is not found" << std::endl;
     //    }
 
-    std::s.. str _ "Hello World";
-    std::transform( str.begin(), str.end(), str.begin(), ::toupper );
+    std::s.. str _ "Hello World"sy.. pause
+    std::transform( str.begin(), str.end(), str.begin(), ::toupper )sy.. pause
 
     std::c__ __  str __  std::e..
 
-    std::reverse( str.begin(), str.end() );
+    std::reverse( str.begin(), str.end() )sy.. pause
 
     std::c__ __  str __  std::e..
 
     auto splitted _
-        std::partition( str.begin(), str.end(), []( const c.. elem ) { r_ elem > 'L'; } );
+        std::partition( str.begin(), str.end(), []( const c.. elem ) { r_ elem > 'L'sy.. pause } )sy.. pause
 
-    std::c__ __  "\nPartitioned string:\n    ";
-    std::copy( std::begin( str ), splitted, std::ostream_iterator< c.. >( std::c__, "," ) );
-    std::c__ __  " |||| ";
-    std::copy( splitted, std::end( str ), std::ostream_iterator< c.. >( std::c__, "," ) );
+    std::c__ __  "\nPartitioned string:\n    "sy.. pause
+    std::copy( std::begin( str ), splitted, std::ostream_iterator< c.. >( std::c__, "," ) )sy.. pause
+    std::c__ __  " |||| "sy.. pause
+    std::copy( splitted, std::end( str ), std::ostream_iterator< c.. >( std::c__, "," ) )sy.. pause
 
-    sort( str.begin(), str.end() );
+    sort( str.begin(), str.end() )sy.. pause
 
     std::c__ __  std::endl __  "Sorted:" __  std::endl __  str __  std::e..
 
     sort( str.begin(), str.end(), []( const c.. elem1, const c.. elem2 ) {
-        r_ elem1 > elem2;
-    } );
+        r_ elem1 > elem2sy.. pause
+    } )sy.. pause
 
     std::c__ __  std::endl __  str __  std::e..
 
     std::c__ __  std::max( 19, 9698 ) __  std::e..
 
-    std::vector< in. > vec{ 1, 2, 3 };
+    std::vector< in. > vec{ 1, 2, 3 }sy.. pause
 
     w___ ( std::next_permutation( vec.begin(), vec.end() ) )
     {
-        std::copy( vec.begin(), vec.end(), std::ostream_iterator< in. >{ std::c__, ", " } );
+        std::copy( vec.begin(), vec.end(), std::ostream_iterator< in. >{ std::c__, ", " } )sy.. pause
         std::c__ __  std::e..
     }
 
-    r_ 0;
+    r_ 0sy.. pause
 }

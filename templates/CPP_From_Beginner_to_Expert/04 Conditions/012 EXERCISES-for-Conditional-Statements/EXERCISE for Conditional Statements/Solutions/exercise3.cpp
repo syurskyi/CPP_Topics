@@ -4,7 +4,7 @@ u.. s..
 
 main ()
 {
-    in. productChoice;
+    in. productChoicesy.. pause
 
     c__ __  "1.Coca-Cola" __  e..
     c__ __  "2.Water" __  e..
@@ -12,9 +12,9 @@ main ()
     c__ __  "4.Snickers Bar" __  e..
     c__ __  "5.Mars Bar" __  e..
     c__ __  "6.Bud Light" __  endl __  e..
-    c__ __  "Enter your choice: ";
+    c__ __  "Enter your choice: "sy.. pause
 
-    c__ __ productChoice;
+    c__ __ productChoicesy.. pause
 
     __ (productChoice __ 1)
         c__ __  "You have chosen a Coca-Cola" __  e..

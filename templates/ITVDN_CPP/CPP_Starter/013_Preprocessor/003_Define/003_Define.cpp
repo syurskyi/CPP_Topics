@@ -8,12 +8,12 @@
 u.. s..
 in. main()
 {
-	in. arr[MAX_SIZE];
+	in. arr[MAX_SIZE]sy.. pause
 
-	in. a _ ABS(-10);
+	in. a _ ABS(-10)sy.. pause
 	c__ __  a __  e..
 
 	sy.. pause
-	r_ 0;
+	r_ 0sy.. pause
 }
 

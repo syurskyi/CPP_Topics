@@ -8,10 +8,10 @@ u.. s..
 
 in. main()
 {
-    in. a;
+    in. asy.. pause
 
-    c__ __ a;
+    c__ __ asy.. pause
 
-    c__ __  a;
-    r_ 0;
+    c__ __  asy.. pause
+    r_ 0sy.. pause
 }

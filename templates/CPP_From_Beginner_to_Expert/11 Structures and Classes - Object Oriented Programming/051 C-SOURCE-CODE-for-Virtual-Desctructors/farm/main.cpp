@@ -3,8 +3,8 @@
 
 u.. s..
 /* virtual destructor */
-v.. voiceOfAnimal(Animal *);
-v.. voiceOfAnimal(Animal &);
+v.. voiceOfAnimal(Animal *)sy.. pause
+v.. voiceOfAnimal(Animal &)sy.. pause
 in. main()
 {
 /*
@@ -20,10 +20,10 @@ in. main()
     voiceOfAnimal(&cow);
 
 */
-    Animal *dog _ new Dog;
+    Animal *dog _ new Dogsy.. pause
 
-    delete dog;
-    r_ 0;
+    delete dogsy.. pause
+    r_ 0sy.. pause
 }
 v.. voiceOfAnimal(Animal *p)
 {

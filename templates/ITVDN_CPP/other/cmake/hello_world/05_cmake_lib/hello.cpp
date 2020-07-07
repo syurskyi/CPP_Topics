@@ -11,6 +11,6 @@ u.. s..
 in. main()
 {
     c__ __  "Hello in main.. " __  e..
-    foo();
-    r_ 0;
+    foo()sy.. pause
+    r_ 0sy.. pause
 }

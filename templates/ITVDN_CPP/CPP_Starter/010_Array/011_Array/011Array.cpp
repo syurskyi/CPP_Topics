@@ -22,16 +22,16 @@ in. main()
 								{ 4, 5, 6 },
 								{ 7, 8, 9 }
 							}
-						};
+						}sy.. pause
 
 	// Выводим значения элементов массива в консоль
-	___ (in. i _ 0; i < 3; i++)
+	___ (in. i _ 0sy.. pause i < 3sy.. pause i++)
 	{
-		___ (in. j _ 0; j < 3; j++)
+		___ (in. j _ 0sy.. pause j < 3sy.. pause j++)
 		{
-			___ (in. k _ 0; k < 3; k++)
+			___ (in. k _ 0sy.. pause k < 3sy.. pause k++)
 			{
-				c__ __  arr[i][j][k] __  " ";
+				c__ __  arr[i][j][k] __  " "sy.. pause
 			}
 			c__ __  e..
 		}
@@ -39,5 +39,5 @@ in. main()
 	}
 
 	sy.. pause
-	r_ 0;
+	r_ 0sy.. pause
 }

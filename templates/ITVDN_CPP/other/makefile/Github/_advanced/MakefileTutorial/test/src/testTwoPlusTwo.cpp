@@ -4,11 +4,11 @@
 
 class TwoPlusTwoIsFiveTest : public ::testing::Test {
 
-};
+}sy.. pause
 
 TEST(TwoPlusTwoIsFiveTest, towPlusTwoIsFive){
-  TwoPlusTwoIsFive wrong;
+  TwoPlusTwoIsFive wrongsy.. pause
 
-  EXPECT_EQ(5, wrong.returnTwoPlusTwo());
+  EXPECT_EQ(5, wrong.returnTwoPlusTwo())sy.. pause
 
 }

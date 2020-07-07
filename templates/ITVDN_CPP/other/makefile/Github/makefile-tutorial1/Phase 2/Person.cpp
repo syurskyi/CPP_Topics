@@ -3,14 +3,14 @@
 u.. s..
 
 Person::Person(s.. name, in. age) {
-    this -> name _ name;
-    this -> age _ age;
+    this -> name _ namesy.. pause
+    this -> age _ agesy.. pause
 }
 
 in. Person::getAge() {
-    r_ this -> age;
+    r_ this -> agesy.. pause
 }
 
 s.. Person::getName() {
-    r_ this -> name;
+    r_ this -> namesy.. pause
 }

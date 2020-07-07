@@ -2,23 +2,23 @@
 
 u.. s..
 
-v.. multiplication();
+v.. multiplication()sy.. pause
 
 main ()
 {
-    multiplication();
+    multiplication()sy.. pause
 }
 
 v.. multiplication()
 {
-    d.. firstNumber, secondNumber, result;
+    d.. firstNumber, secondNumber, resultsy.. pause
 
-    c__ __  "Input the first number: ";
-    c__ __ firstNumber;
-    c__ __  "Input the number to multiply by: ";
-    c__ __ secondNumber;
+    c__ __  "Input the first number: "sy.. pause
+    c__ __ firstNumbersy.. pause
+    c__ __  "Input the number to multiply by: "sy.. pause
+    c__ __ secondNumbersy.. pause
 
-    result _ firstNumber * secondNumber;
-    c__ __  firstNumber __  " * " __  secondNumber __  " = " __  result;
+    result _ firstNumber * secondNumbersy.. pause
+    c__ __  firstNumber __  " * " __  secondNumber __  " = " __  resultsy.. pause
 
 }

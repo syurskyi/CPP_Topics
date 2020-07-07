@@ -5,11 +5,11 @@ u.. s..
 in. main ()
 {
 
-    c.. alphabet[27] _ "abcdefghijklmnopqrstuvwxyz";
+    c.. alphabet[27] _ "abcdefghijklmnopqrstuvwxyz"sy.. pause
 
-    ___ (in. i _ 0; i < 26; i++)
-        c__ __  alphabet[i];
+    ___ (in. i _ 0sy.. pause i < 26sy.. pause i++)
+        c__ __  alphabet[i]sy.. pause
 
-    r_ 0;
+    r_ 0sy.. pause
 }
 

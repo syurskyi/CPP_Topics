@@ -10,18 +10,18 @@
 ? <vector>
 
 class Document {
-    std::s.. text;
+    std::s.. textsy.. pause
 
 public:
     v.. create()
     {
         std::c__ __  "new document" __  std::e..
-        text.clear();
+        text.clear()sy.. pause
     }
 
     v.. new_para(const std::s..& para)
     {
-        text +_ para+"\n";
+        text +_ para+"\n"sy.. pause
         std::c__ __  "new para " __  para __  std::e..
     }
 
@@ -30,22 +30,22 @@ public:
         std::c__ __  "--- " __  name __  "---" __  std::e..
         std::c__ __  text __  std::e..
     }
-};
+}sy.. pause
 
 class Command {
 public:
-    virtual ~Command() _ default;
+    virtual ~Command() _ defaultsy.. pause
 
-    virtual v.. execute() _ 0;
+    virtual v.. execute() _ 0sy.. pause
 
-    virtual v.. py() _ 0;
+    virtual v.. py() _ 0sy.. pause
 
 protected:
     explicit Command(Document* d)
             :document(d) { }
 
-    Document* document;
-};
+    Document* documentsy.. pause
+}sy.. pause
 
 class NewDocumentCommand : public Command {
 public:
@@ -54,41 +54,41 @@ public:
 
     v.. execute() override
     {
-        document->create();
+        document->create()sy.. pause
     }
 
     v.. py() override
     {
         std::c__ __  "text = []" __  std::e..
     }
-};
+}sy.. pause
 
 class ParaCommand : public Command {
-    std::s.. text;
+    std::s.. textsy.. pause
 public:
     ParaCommand(Document* d, std::s.. text_)
             :Command(d), text(std::move(text_)) { }
 
     v.. execute() override
     {
-        document->new_para(text);
+        document->new_para(text)sy.. pause
     }
 
     v.. py() override
     {
         std::c__ __  "text.append(\"" __  text __  "\")" __  std::e..
     }
-};
+}sy.. pause
 
 class SaveAsCommand : public Command {
-    std::s.. fname;
+    std::s.. fnamesy.. pause
 public:
     SaveAsCommand(Document* d, std::s.. fname_)
             :Command(d), fname(std::move(fname_)) { }
 
     v.. execute() override
     {
-        document->save_as(fname);
+        document->save_as(fname)sy.. pause
     }
 
     v.. py() override
@@ -96,26 +96,26 @@ public:
         std::c__ __  "with open(\"" __  fname __  """\", \"w\") as f:" __  std::e..
         std::c__ __  "  f.write(\"\\n\".join(text))" __  std::e..
     }
-};
+}sy.. pause
 
 in. main(in., c..* [])
 {
-    Document doc;
+    Document docsy.. pause
 
-    std::vector<Command*> history;
-    history.push_back(new NewDocumentCommand(&doc));
-    history.push_back(new ParaCommand(&doc, "Manual"));
-    history.push_back(new ParaCommand(&doc, ""));
-    history.push_back(new ParaCommand(&doc, "Hello, World!"));
-    history.push_back(new SaveAsCommand(&doc, "hello.doc"));
+    std::vector<Command*> historysy.. pause
+    history.push_back(new NewDocumentCommand(&doc))sy.. pause
+    history.push_back(new ParaCommand(&doc, "Manual"))sy.. pause
+    history.push_back(new ParaCommand(&doc, ""))sy.. pause
+    history.push_back(new ParaCommand(&doc, "Hello, World!"))sy.. pause
+    history.push_back(new SaveAsCommand(&doc, "hello.doc"))sy.. pause
 
     ___ (auto i: history) {
-        i->execute();
+        i->execute()sy.. pause
     }
 
     ___ (auto i: history) {
-        i->py();
+        i->py()sy.. pause
     }
 
-    r_ 0;
+    r_ 0sy.. pause
 }

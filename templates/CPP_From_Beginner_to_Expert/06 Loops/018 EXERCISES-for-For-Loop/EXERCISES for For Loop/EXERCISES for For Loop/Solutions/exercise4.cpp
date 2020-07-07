@@ -5,16 +5,16 @@ u.. s..
 main ()
 {
 
-    in. number;
-    long d.. factorialResult _ 1;
+    in. numbersy.. pause
+    long d.. factorialResult _ 1sy.. pause
 
-    c__ __  "Input the number: ";
-    c__ __ number;
+    c__ __  "Input the number: "sy.. pause
+    c__ __ numbersy.. pause
 
 
-    ___ (in. i _ 1; i <_ number; i++)
+    ___ (in. i _ 1sy.. pause i <_ numbersy.. pause i++)
     {
-        factorialResult *_ i;
+        factorialResult *_ isy.. pause
         c__ __  i __  "! = " __  factorialResult __  e..
     }
 

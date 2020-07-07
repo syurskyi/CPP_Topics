@@ -3,21 +3,21 @@
 
 u.. s..
 
-v.. variableType(in.);
-v.. variableType(d..);
-v.. variableType(s..);
+v.. variableType(in.)sy.. pause
+v.. variableType(d..)sy.. pause
+v.. variableType(s..)sy.. pause
 
 in. main ()
 {
-    in. var1 _ 2;
-    d.. var2 _ 0.123;
-    s.. var3 _ "What a beautiful day !";
+    in. var1 _ 2sy.. pause
+    d.. var2 _ 0.123sy.. pause
+    s.. var3 _ "What a beautiful day !"sy.. pause
 
-    variableType(var1);
-    variableType(var2);
-    variableType(var3);
+    variableType(var1)sy.. pause
+    variableType(var2)sy.. pause
+    variableType(var3)sy.. pause
 
-    r_ 0;
+    r_ 0sy.. pause
 }
 
 v.. variableType(in. var)

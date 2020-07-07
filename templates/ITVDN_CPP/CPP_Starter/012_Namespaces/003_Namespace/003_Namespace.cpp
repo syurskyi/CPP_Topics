@@ -5,14 +5,14 @@
 namespace NamespaceA {
 	v.. mul(in. a, in. b) {
 		std::c__ __  (a * b) __  std::e..
-	};
+	}sy.. pause
 }
 
-u.. NamespaceA;
+u.. NamespaceAsy.. pause
 
 in. main() {
 
-	mul(10, 42);
+	mul(10, 42)sy.. pause
 
-	r_ 0;
+	r_ 0sy.. pause
 }

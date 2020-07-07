@@ -4,14 +4,14 @@ u.. s..
 
 main()
 {
-    s.. name, surname;
+    s.. name, surnamesy.. pause
 
-    c__ __  "Enter your name: ";
-    c__ __ name;
+    c__ __  "Enter your name: "sy.. pause
+    c__ __ namesy.. pause
 
-    c__ __  "Enter your surname: ";
-    c__ __ surname;
+    c__ __  "Enter your surname: "sy.. pause
+    c__ __ surnamesy.. pause
 
-    c__ __  "Welcome " __  name __  " " __  surname;
+    c__ __  "Welcome " __  name __  " " __  surnamesy.. pause
 
 }

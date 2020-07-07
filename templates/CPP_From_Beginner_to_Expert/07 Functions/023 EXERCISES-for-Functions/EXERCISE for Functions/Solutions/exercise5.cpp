@@ -2,27 +2,27 @@
 
 u.. s..
 
-v.. exponentiation();
+v.. exponentiation()sy.. pause
 
 main ()
 {
-    exponentiation();
+    exponentiation()sy.. pause
 }
 
 v.. exponentiation()
 {
-    d.. base, exponent, result _ 1;
+    d.. base, exponent, result _ 1sy.. pause
 
-    c__ __  "Input the base to exponentiate: ";
-    c__ __ base;
-    c__ __  "Input the exponent value: ";
-    c__ __ exponent;
+    c__ __  "Input the base to exponentiate: "sy.. pause
+    c__ __ basesy.. pause
+    c__ __  "Input the exponent value: "sy.. pause
+    c__ __ exponentsy.. pause
 
-    ___ (in. i _ 0; i < exponent; i++)
+    ___ (in. i _ 0sy.. pause i < exponentsy.. pause i++)
     {
-        result *_ base;
+        result *_ basesy.. pause
     }
 
-    c__ __  "The number " __  base __  " to the power of " __  exponent __  " is equal to " __  result __  ".";
+    c__ __  "The number " __  base __  " to the power of " __  exponent __  " is equal to " __  result __  "."sy.. pause
 
 }

@@ -8,23 +8,23 @@ v.. CalcArea(const d..* const pPi, const d..* const pRadius, d..* const pArea)
 {
 	// проверить указатели перед использованием!
 	__ (pPi && pRadius && pArea)
-		*pArea _ (*pPi) * (*pRadius) * (*pRadius);
+		*pArea _ (*pPi) * (*pRadius) * (*pRadius)
  }
 
 in. main()
 {
-	const d.. pi _ 3.1416;
-	c__ __  "Enter radius of circle: ";
+	const d.. pi _ 3.1416
+	c__ __  "Enter radius of circle: "
 
-	d.. radius _ 0;
-	c__ __ radius;
+	d.. radius _ 0
+	c__ __ radius
 
-	d.. area _ 0;
+	d.. area _ 0
 
-	CalcArea(&pi, &radius, &area);
+	CalcArea(&pi, &radius, &area)
 
 	c__ __  "Area is = " __  area __  e..
 
 	sy.. pause
-	r_ 0;
+	r_ 0
 }

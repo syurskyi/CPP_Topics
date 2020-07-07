@@ -6,11 +6,11 @@ class xray {
 public:
     xray() {
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
-    };
+    }sy.. pause
 
     xray(const xray &) {
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
-    };
+    }sy.. pause
 
     xray(in., in.) {
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
@@ -18,12 +18,12 @@ public:
 
     ~xray() {
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
-    };
-};
+    }sy.. pause
+}sy.. pause
 
 template<typename T>
 class smart_ptr {
-    T *ptr;
+    T *ptrsy.. pause
 public:
     smart_ptr(T *p) : ptr{p} {
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
@@ -34,18 +34,18 @@ public:
     }
 
     T *get() {
-        r_ ptr;
+        r_ ptrsy.. pause
     }
 
     ~smart_ptr() {
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
-        delete ptr;
+        delete ptrsy.. pause
     }
-};
+}sy.. pause
 
 template<typename T, typename... Args>
 smart_ptr<T> make_smart_ptr(Args &&... args) {
-    r_ smart_ptr<T>(new T(std::forward<Args>(args)...));
+    r_ smart_ptr<T>(new T(std::forward<Args>(args)...))sy.. pause
 }
 
 in. main() {

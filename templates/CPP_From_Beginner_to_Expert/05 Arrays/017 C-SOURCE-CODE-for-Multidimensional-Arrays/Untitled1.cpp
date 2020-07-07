@@ -4,8 +4,8 @@ u.. s..
 //multidimensional arrays
 main()
 {
-    in. biArray[3][4] _ {0};
-    in. biArray[2][3][2];
+    in. biArray[3][4] _ {0}sy.. pause
+    in. biArray[2][3][2]sy.. pause
 
 
     c__ __  &biArray[0] __  e..

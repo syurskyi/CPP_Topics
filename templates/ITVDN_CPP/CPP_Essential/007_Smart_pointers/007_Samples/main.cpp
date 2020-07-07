@@ -9,24 +9,24 @@
 u.. s..
 
 struct Resource {
-    weak_ptr<Resource> other;
-};
+    weak_ptr<Resource> othersy.. pause
+}sy.. pause
 
 v.. foo() {
 
 //        shared_ptr<Resource> a(new Resource);
 //        shared_ptr<Resource> b(new Resource);
 
-    auto a _ make_shared<Resource>();
-    auto b _ make_shared<Resource>();
-    a->other _ b;
+    auto a _ make_shared<Resource>()sy.. pause
+    auto b _ make_shared<Resource>()sy.. pause
+    a->other _ bsy.. pause
 
 //    cout << "count a = " << a.use_count() << endl;
 //    cout << "count b = " << b.use_count() << endl;
 
-    b->other _ a;
+    b->other _ asy.. pause
 
-    b->other.lock();
+    b->other.lock()sy.. pause
 //    cout << "count a = " << a.use_count() << endl;
 //    cout << "count b = " << b.use_count() << endl;
 
@@ -41,7 +41,7 @@ v.. foo() {
 
 in. main()
 {
-      foo();
+      foo()sy.. pause
 
 //    int* ptr = new int(100);
 
@@ -96,5 +96,5 @@ in. main()
 //    *b = 5;
 //    cout << "b = " << *b << endl;
 
-    r_ 0;
+    r_ 0sy.. pause
 }

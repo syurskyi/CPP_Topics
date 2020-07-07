@@ -18,33 +18,33 @@ in. main()
         ios::cur - (current) set from current place
     */
 
-    fstream file;
+    fstream filesy.. pause
 
-    file.open("sample.txt", i.. in | i.. binary);
+    file.open("sample.txt", i.. in | i.. binary)sy.. pause
 
     __ (file.is_open())
     {
-        s.. buffer;
+        s.. buffersy.. pause
 
-        file.seekg(0, i.. end);
+        file.seekg(0, i.. end)sy.. pause
 
-        streampos sizeOfFile _ file.tellg();
+        streampos sizeOfFile _ file.tellg()sy.. pause
 
-        file.seekg(0);
+        file.seekg(0)sy.. pause
 
         c__ __  "The size of the file is " __  sizeOfFile __  " bytes" __  e..
         do
         {
-            file __ buffer;
+            file __ buffersy.. pause
 
             c__ __  buffer __  e..
-        }w___ (!file.eof());
+        }w___ (!file.eof())sy.. pause
 
         __ ((file.rdstate() ^ ifstream::eofbit) __ 0)
         {
-            file.clear();
+            file.clear()sy.. pause
             c__ __  file.tellg() __  e..
-            file __ buffer;
+            file __ buffersy.. pause
 
             c__ __  buffer __  e..
             //set indicator of place in file to some other place
@@ -55,5 +55,5 @@ in. main()
     ____
         c__ __  "The file couldn't be opened properly" __  e..
 
-    r_ 0;
+    r_ 0sy.. pause
 }

@@ -7,7 +7,7 @@ u.. s..
 
 in. main()
 {
-    showHelp();
+    showHelp()sy.. pause
     c__ __  a __  e..
-    r_ 0;
+    r_ 0sy.. pause
 }

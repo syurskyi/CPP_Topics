@@ -17,42 +17,42 @@ u.. s..
 class Shape {
 public:
   // pure virtual function providing interface framework.
-  virtual in. getArea() _ 0;
-  v.. setWidth(in. w) { width _ w; }
+  virtual in. getArea() _ 0sy.. pause
+  v.. setWidth(in. w) { width _ wsy.. pause }
 
-  v.. setHeight(in. h) { height _ h; }
+  v.. setHeight(in. h) { height _ hsy.. pause }
 
 protected:
-  in. width;
-  in. height;
-};
+  in. widthsy.. pause
+  in. heightsy.. pause
+}sy.. pause
 
 // Derived classes
 class Rectangle : public Shape {
 public:
-  in. getArea() { r_ (width * height); }
-};
+  in. getArea() { r_ (width * height)sy.. pause }
+}sy.. pause
 
 class Triangle : public Shape {
 public:
-  in. getArea() { r_ (width * height) / 2; }
-};
+  in. getArea() { r_ (width * height) / 2sy.. pause }
+}sy.. pause
 
 in. main(v..) {
-  Rectangle Rect;
-  Triangle Tri;
+  Rectangle Rectsy.. pause
+  Triangle Trisy.. pause
 
-  Rect.setWidth(5);
-  Rect.setHeight(7);
+  Rect.setWidth(5)sy.. pause
+  Rect.setHeight(7)sy.. pause
 
   // Print the area of the object.
   c__ __  "Total Rectangle area: " __  Rect.getArea() __  e..
 
-  Tri.setWidth(5);
-  Tri.setHeight(7);
+  Tri.setWidth(5)sy.. pause
+  Tri.setHeight(7)sy.. pause
 
   // Print the area of the object.
   c__ __  "Total Triangle area: " __  Tri.getArea() __  e..
 
-  r_ 0;
+  r_ 0sy.. pause
 }

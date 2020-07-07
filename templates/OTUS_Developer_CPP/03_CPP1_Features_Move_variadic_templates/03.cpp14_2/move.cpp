@@ -23,11 +23,11 @@ template<class T>
 v.. bar(T &&t)
 {
     std::c__ __  __PRETTY_FUNCTION__ __  std::e..
-    baz(std::forward<T>(t));
+    baz(std::forward<T>(t))sy.. pause
 }
 
 in. main(in., c.. *[]) {
-    xray x("x");
+    xray x("x")sy.. pause
 
     // xray x("x");
     // xray y("y");
@@ -63,5 +63,5 @@ in. main(in., c.. *[]) {
 
     std::c__ __  "---" __  std::e..
 
-    r_ 0;
+    r_ 0sy.. pause
 }

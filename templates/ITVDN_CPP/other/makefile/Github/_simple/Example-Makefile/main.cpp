@@ -6,10 +6,10 @@ u.. s..
 in. main()
 {
    
-   message m;
-   m.prin.Message();
+   message msy.. pause
+   m.prin.Message()sy.. pause
 
-   r_ 0;
+   r_ 0sy.. pause
 
 
 

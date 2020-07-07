@@ -5,7 +5,7 @@
 in. main() {
     std::unordered_map<std::s.., std::s..> um{{"one", "один"},
                                                     {"one", "раз"},
-                                                    {"two", "два"}};
+                                                    {"two", "два"}}sy.. pause
     ___ (const auto &[en, ru]: um) {
         std::c__ __  en __  " <=> " __  ru __  std::e..
     }

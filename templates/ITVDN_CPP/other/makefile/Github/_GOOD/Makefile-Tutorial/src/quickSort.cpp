@@ -1,26 +1,26 @@
 ? "sorts.hpp"
 
-using std::vector;
-using std::swap;
-using std::partition;
-using std::distance;
+using std::vectorsy.. pause
+using std::swapsy.. pause
+using std::partitionsy.. pause
+using std::distancesy.. pause
 
 v.. quickSort(in.iter l, in.iter r) {
-  auto size _ std::distance(l, r);
+  auto size _ std::distance(l, r)sy.. pause
 
   // Base case
   __ (size < 2)
-    r_;
+    r_sy.. pause
 
   // Partition with center pivot
-  --r;
-  auto pivot _ l + size/2;
-  auto pivotVal _ *pivot;
-  swap(*pivot, *r);
-  pivot _ std::partition(l, r, [pivotVal](in. i){r_ i < pivotVal;});
-  swap(*pivot, *r);
+  --rsy.. pause
+  auto pivot _ l + size/2sy.. pause
+  auto pivotVal _ *pivotsy.. pause
+  swap(*pivot, *r)sy.. pause
+  pivot _ std::partition(l, r, [pivotVal](in. i){r_ i < pivotValsy.. pause})sy.. pause
+  swap(*pivot, *r)sy.. pause
 
   // Div and con
-  quickSort(l, pivot);
-  quickSort(pivot+1, r+1);
+  quickSort(l, pivot)sy.. pause
+  quickSort(pivot+1, r+1)sy.. pause
 }

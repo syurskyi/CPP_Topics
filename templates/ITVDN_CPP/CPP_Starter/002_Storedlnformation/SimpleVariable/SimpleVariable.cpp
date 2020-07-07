@@ -5,14 +5,14 @@ u.. s..
 
 in. main()
 {
-	sh.. a _ 256;
+	sh.. a _ 256sy.. pause
 
-	c__ __  a;
+	c__ __  asy.. pause
 	c__ __  e..
 
 	c__.g..
 
-	r_ 0;
+	r_ 0sy.. pause
 }
 
 

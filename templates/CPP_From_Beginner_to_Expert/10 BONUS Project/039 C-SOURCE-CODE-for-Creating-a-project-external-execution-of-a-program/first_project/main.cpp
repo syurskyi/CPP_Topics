@@ -1,16 +1,16 @@
 ? |i..
 
 u.. s..
-v.. showHelp();
+v.. showHelp()sy.. pause
 in. main(in. argc, c.. *argv[])
 {
     //arguments counter - argc
     //arguments values - argv
 
-   ___ (in. i _ 0; i < argc; i++)
+   ___ (in. i _ 0sy.. pause i < argcsy.. pause i++)
    {
     __ ((strcmp(argv[i], "-h") __ 0) && i __ 1)
-     showHelp();
+     showHelp()sy.. pause
    }
 
 
@@ -30,7 +30,7 @@ in. main(in. argc, c.. *argv[])
     cout << (strcmp(x,y)) << endl; //0 - variables are the same, 1 the first string is greater, -1 that the first string is lower
 */
 
-    r_ 0;
+    r_ 0sy.. pause
 }
 
 v.. showHelp()

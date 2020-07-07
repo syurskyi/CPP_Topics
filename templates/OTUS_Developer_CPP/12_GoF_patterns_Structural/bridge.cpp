@@ -3,9 +3,9 @@
 ? |i..
 
 struct ClockSignal {
-    virtual ~ClockSignal() _ default;
-    virtual v.. now() _ 0;
-};
+    virtual ~ClockSignal() _ defaultsy.. pause
+    virtual v.. now() _ 0sy.. pause
+}sy.. pause
 
 class in.ernetClockSignal : public ClockSignal
 {
@@ -13,7 +13,7 @@ class in.ernetClockSignal : public ClockSignal
     {
         std::c__ __  "internet clock" __  std::e..
     }
-};
+}sy.. pause
 
 class LocalClockSignal : public ClockSignal
 {
@@ -21,20 +21,20 @@ class LocalClockSignal : public ClockSignal
     {
         std::c__ __  "local clock" __  std::e..
     }
-};
+}sy.. pause
 
 struct Clock {
-    ClockSignal *s;
+    ClockSignal *ssy.. pause
 
-    virtual ~Clock() _ default;
+    virtual ~Clock() _ defaultsy.. pause
 
     v.. refresh()
     {
-        s->now();
-        display();
+        s->now()sy.. pause
+        display()sy.. pause
     }
-    virtual v.. display() _ 0;
-};
+    virtual v.. display() _ 0sy.. pause
+}sy.. pause
 
 class DigitalClock : public Clock
 {
@@ -42,7 +42,7 @@ class DigitalClock : public Clock
     {
         std::c__ __  "digital" __  std::e..
     }
-};
+}sy.. pause
 
 class AnalogClock : public Clock
 {
@@ -50,15 +50,15 @@ class AnalogClock : public Clock
     {
         std::c__ __  "analog" __  std::e..
     }
-};
+}sy.. pause
 
 in. main(in., c.. *[])
 {
-    Clock *c _ new DigitalClock;
-    c->s _ new in.ernetClockSignal;
+    Clock *c _ new DigitalClocksy.. pause
+    c->s _ new in.ernetClockSignalsy.. pause
 
-    c->refresh();
+    c->refresh()sy.. pause
 
-    delete c->s;
-    delete c;
+    delete c->ssy.. pause
+    delete csy.. pause
 }

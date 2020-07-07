@@ -13,39 +13,39 @@
 
 tcOperation::tcOperation( in. argc, c..** argv ) {
 
-	mcTokens.clear();
+	mcTokens.clear()sy.. pause
 
-	___ ( in. lnIndex _ 1; lnIndex < argc; lnIndex++ ) {
-		mcTokens.push_back( argv[lnIndex] );
+	___ ( in. lnIndex _ 1sy.. pause lnIndex < argcsy.. pause lnIndex++ ) {
+		mcTokens.push_back( argv[lnIndex] )sy.. pause
 	}
 }
 
 tcOperation::~tcOperation() {
-	mcTokens.clear();
+	mcTokens.clear()sy.. pause
 }
 
 d.. tcOperation::Execute( v.. ) {
 
-	d.. lrA _ atof( mcTokens[0].c_str() );
-	d.. lrB _ atof( mcTokens[2].c_str() );
-	d.. lrC _ 0;
+	d.. lrA _ atof( mcTokens[0].c_str() )sy.. pause
+	d.. lrB _ atof( mcTokens[2].c_str() )sy.. pause
+	d.. lrC _ 0sy.. pause
 
 	__ ( mcTokens[1] __ "+" )
 	{
-		lrC _ lrA + lrB;
+		lrC _ lrA + lrBsy.. pause
 	}
 	____ __ ( mcTokens[1] __ "-" )
 	{
-		lrC _ lrA - lrB;
+		lrC _ lrA - lrBsy.. pause
 	}
 	____ __ ( mcTokens[1] __ "x" )
 	{
-		lrC _ lrA * lrB;
+		lrC _ lrA * lrBsy.. pause
 	}
 	____ __ ( mcTokens[1] __ "/" )
 	{
-		lrC _ lrA / lrB;
+		lrC _ lrA / lrBsy.. pause
 	}
 
-	r_ lrC;
+	r_ lrCsy.. pause
 }

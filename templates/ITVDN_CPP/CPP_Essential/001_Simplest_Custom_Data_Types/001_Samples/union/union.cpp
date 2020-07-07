@@ -5,48 +5,48 @@ u.. s..
 
 struct A
 {
-    in. a;
+    in. asy.. pause
     union{
-        in. b;
-        d.. c;
-    };
-};
+        in. bsy.. pause
+        d.. csy.. pause
+    }sy.. pause
+}sy.. pause
 
 
 union Container
 {
-    in. in._field;
-    d.. double_field;
-};
+    in. in._fieldsy.. pause
+    d.. double_fieldsy.. pause
+}sy.. pause
 
-typedef Container cnt;
+typedef Container cntsy.. pause
 
 in. main()
 {
-    Container container;
-    container.double_field _ 0.5;
+    Container containersy.. pause
+    container.double_field _ 0.5sy.. pause
 
-    A a;
-    a.b _ 2;
+    A asy.. pause
+    a.b _ 2sy.. pause
 
-    A* a_ptr;
-    Container* cnt_ptr;
+    A* a_ptrsy.. pause
+    Container* cnt_ptrsy.. pause
 
-    a_ptr->b;
-    c__ __  a_ptr.a;
+    a_ptr->bsy.. pause
+    c__ __  a_ptr.asy.. pause
 
 
-    c__ __  a.b __  "\n";
-    c__ __  a.c __  "\n";
-    c__ __  sizeof(A) __  "\n";
+    c__ __  a.b __  "\n"sy.. pause
+    c__ __  a.c __  "\n"sy.. pause
+    c__ __  sizeof(A) __  "\n"sy.. pause
 
-    c__ __  sizeof(container) __  "\n";
+    c__ __  sizeof(container) __  "\n"sy.. pause
 
-    c__ __  container.in._field __  "\n";
-    c__ __  container.double_field __  "\n";
-    container _ {4};
+    c__ __  container.in._field __  "\n"sy.. pause
+    c__ __  container.double_field __  "\n"sy.. pause
+    container _ {4}sy.. pause
 
-    c__ __  container.in._field __  "\n";
-    c__ __  container.double_field __  "\n";
-    r_ 0;
+    c__ __  container.in._field __  "\n"sy.. pause
+    c__ __  container.double_field __  "\n"sy.. pause
+    r_ 0sy.. pause
 }

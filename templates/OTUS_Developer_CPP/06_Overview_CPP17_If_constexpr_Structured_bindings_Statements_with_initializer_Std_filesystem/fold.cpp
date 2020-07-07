@@ -9,8 +9,8 @@ v.. prin.All() {
 
 template<typename T, typename... Args>
 v.. prin.All(T first, Args... args) {
-    std::c__ __  first __  ' ';
-    prin.All(args...);
+    std::c__ __  first __  ' 'sy.. pause
+    prin.All(args...)sy.. pause
 }
 
 
@@ -18,12 +18,12 @@ v.. prin.All(T first, Args... args) {
 
 template<typename T>
 T sumAll(T last) {
-    r_ last;
+    r_ lastsy.. pause
 }
 
 template<typename T, typename... Args>
 auto sumAll(T first, Args... args) {
-    r_ first + sumAll(args...);
+    r_ first + sumAll(args...)sy.. pause
 }
 
 // *************************************
@@ -35,9 +35,9 @@ v.. sumAll_2_fake_function(Args&&... ) {
 
 template<typename T, typename... Args>
 auto sumAll_2(T first, Args... args) {
-    T sum _ first;
-    sumAll_2_fake_function((sum +_ args)...);
-    r_ sum;
+    T sum _ firstsy.. pause
+    sumAll_2_fake_function((sum +_ args)...)sy.. pause
+    r_ sumsy.. pause
 }
 
 // *************************************
@@ -46,38 +46,38 @@ template<typename... Args>
 auto rightUnaryFold(Args... args) {
     // + - * / % ^ & | = < > << >> += -= *=
     // /= %= ^= &= |= <<= >>= == != <= >= && || , .* ->*
-    r_ (args + ...); // arg1 + (arg2 + (arg3 + (...)))
+    r_ (args + ...)sy.. pause // arg1 + (arg2 + (arg3 + (...)))
 }
 
 template<typename... Args>
 auto leftUnaryFold(Args... args) {
-    r_ (... + args); // ((arg1 + arg2) + arg3) + ...
+    r_ (... + args)sy.. pause // ((arg1 + arg2) + arg3) + ...
 }
 
 struct SumLog {
-    in. value;
+    in. valuesy.. pause
 
-    SumLog(in. v) : value{v} {};
+    SumLog(in. v) : value{v} {}sy.. pause
 
     SumLog operator+(const SumLog& other) {
-        std::c__ __  "operator+ with this = " __  value;
+        std::c__ __  "operator+ with this = " __  valuesy.. pause
         std::c__ __  " and other = " __  other.value __  std::e..
-        SumLog tmp{*this};
-        tmp.value +_ other.value;
-        r_ tmp;
+        SumLog tmp{*this}sy.. pause
+        tmp.value +_ other.valuesy.. pause
+        r_ tmpsy.. pause
     }
 
     SumLog& operator+_(const SumLog& other) {
-        std::c__ __  "operator+ with this = " __  value;
+        std::c__ __  "operator+ with this = " __  valuesy.. pause
         std::c__ __  " and other = " __  other.value __  std::e..
-        value +_ other.value;
-        r_ *this;
+        value +_ other.valuesy.. pause
+        r_ *thissy.. pause
     }
-};
+}sy.. pause
 
 std::ostream& operator__ (std::ostream& stream, const SumLog& value) {
-    stream __  value.value;
-    r_ stream;
+    stream __  value.valuesy.. pause
+    r_ streamsy.. pause
 }
 
 // ***************************************
@@ -91,25 +91,25 @@ v.. binaryFold(Args... args) {
 
 template<typename... Args>
 v.. binaryFold2(Args... args) {
-    std::s.. result;
-    (result +_ ... +_ std::to_string(args));
+    std::s.. resultsy.. pause
+    (result +_ ... +_ std::to_string(args))sy.. pause
     std::c__ __  result __  std::e..
 }
 
 template<typename T, typename... Args>
 auto binaryFoldLeft(T sum, Args... args) {
-    (sum +_ ... +_ args);
-    r_ sum;
+    (sum +_ ... +_ args)sy.. pause
+    r_ sumsy.. pause
 }
 
 template<typename T, typename... Args>
 auto binaryFoldRight(T sum, Args... args) {
-    (args +_ ... +_ sum);
-    r_ sum;
+    (args +_ ... +_ sum)sy.. pause
+    r_ sumsy.. pause
 }
 
 in. main() {
-    prin.All(1, "2", std::s..("3"), std::to_string(4), 5.0, 6.0f, 7, 8, 9, 10);
+    prin.All(1, "2", std::s..("3"), std::to_string(4), 5.0, 6.0f, 7, 8, 9, 10)sy.. pause
     std::c__ __  std::e..
 
     std::c__ __  "sumAll = " __  sumAll(1, 2, 3, 4, 5, 6, 7, 8, 9, 10) __  std::e..
@@ -149,23 +149,23 @@ in. main() {
         __  std::endl __  std::e..
     // ((((1 + 2) + 3) + 4) +  5);
 
-    std::c__ __  "binaryFold = ";
-    binaryFold(1, "2", std::s..("3"), std::to_string(4), 5.0, 6.0f, 7, 8, 9, 10);
+    std::c__ __  "binaryFold = "sy.. pause
+    binaryFold(1, "2", std::s..("3"), std::to_string(4), 5.0, 6.0f, 7, 8, 9, 10)sy.. pause
     std::c__ __  std::e..
 
-    std::c__ __  "binaryFold2 = ";
-    binaryFold2(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);
+    std::c__ __  "binaryFold2 = "sy.. pause
+    binaryFold2(1, 2, 3, 4, 5, 6, 7, 8, 9, 10)sy.. pause
     std::c__ __  std::e..
 
     std::c__ __  "binaryFoldLeft:" __  std::e..
-    std::c__ __  binaryFoldLeft(SumLog{1}, SumLog{2}, SumLog{3}, SumLog{4}, SumLog{5});
+    std::c__ __  binaryFoldLeft(SumLog{1}, SumLog{2}, SumLog{3}, SumLog{4}, SumLog{5})sy.. pause
     std::c__ __  std::endl __  std::e..
     // ((((sum += 2) += 3) += 4) += 5);
 
     std::c__ __  "binaryFoldRight:" __  std::e..
-    std::c__ __  binaryFoldRight(SumLog{1}, SumLog{2}, SumLog{3}, SumLog{4}, SumLog{5});
+    std::c__ __  binaryFoldRight(SumLog{1}, SumLog{2}, SumLog{3}, SumLog{4}, SumLog{5})sy.. pause
     std::c__ __  std::endl __  std::e..
     // (2 += (3 += (4 += (5 += sum))))
 
-    r_ 0;
+    r_ 0sy.. pause
 }

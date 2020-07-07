@@ -4,8 +4,8 @@
 
 in. main()
 {
-    auto logger _ spdlog::stdout_logger_mt("console");
-    logger->info("version {} was started", version());
+    auto logger _ spdlog::stdout_logger_mt("console")sy.. pause
+    logger->info("version {} was started", version())sy.. pause
 
-    r_ 0;
+    r_ 0sy.. pause
 }

@@ -35,15 +35,15 @@ main()
 */
 
 
-    ___ (in. i _ 1, j _ 1; i <_ 10; i++)
+    ___ (in. i _ 1, j _ 1sy.. pause i <_ 10sy.. pause i++)
     {
-        c__.width(4);
-        c__ __  i * j;
+        c__.width(4)sy.. pause
+        c__ __  i * jsy.. pause
 
         __ (i __ 10)
         {
-            j++;
-            i _ 0;
+            j++sy.. pause
+            i _ 0sy.. pause
             c__ __  e..
         }
 

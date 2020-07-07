@@ -3,22 +3,22 @@
 ? |i..
 ? <map>
 
-enum class Tag { main, db };
+enum class Tag { main, db }sy.. pause
 
 class Logger {
-    Tag t;
+    Tag tsy.. pause
 
 public:
-    Logger& operator_(const Logger&) _ delete;
+    Logger& operator_(const Logger&) _ deletesy.. pause
     static Logger& Instance(Tag t)
     {
-        static std::map<Tag, Logger> instance;
-        auto i _ instance.find(t);
+        static std::map<Tag, Logger> instancesy.. pause
+        auto i _ instance.find(t)sy.. pause
         __ (i__instance.end()) {
-            bo.. b;
-            std::tie(i, b) _ instance.emplace(std::make_pair(t, Logger(t)));
+            bo.. bsy.. pause
+            std::tie(i, b) _ instance.emplace(std::make_pair(t, Logger(t)))sy.. pause
         }
-        r_ i->second;
+        r_ i->secondsy.. pause
     }
     v.. info(const std::s..& message)
     {
@@ -34,13 +34,13 @@ private:
             :t(t_)
     {
     }
-};
+}sy.. pause
 
 in. main(in., c.. const**)
 {
-    Logger::Instance(Tag::main).info("started");
-    Logger::Instance(Tag::db).warn("no db");
-    Logger::Instance(Tag::main).info("finished");
+    Logger::Instance(Tag::main).info("started")sy.. pause
+    Logger::Instance(Tag::db).warn("no db")sy.. pause
+    Logger::Instance(Tag::main).info("finished")sy.. pause
 
-    r_ 0;
+    r_ 0sy.. pause
 }

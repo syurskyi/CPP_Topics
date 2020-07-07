@@ -3,25 +3,25 @@
 
 u.. s..
 /* polymorphism, virtual functions, abstract class */
-v.. voiceOfAnimal(Animal *);
-v.. voiceOfAnimal(Animal &);
+v.. voiceOfAnimal(Animal *)sy.. pause
+v.. voiceOfAnimal(Animal &)sy.. pause
 in. main()
 {
 
-    Dog dog;
-    Cat cat;
-    Cow cow;
+    Dog dogsy.. pause
+    Cat catsy.. pause
+    Cow cowsy.. pause
 /*
     cout << animal.getVoice() << endl;
     cout << dog.getVoice() << endl;
     cout << cat.getVoice() << endl;
     cout << cow.getVoice() << endl;
     */
-    voiceOfAnimal(&cow);
+    voiceOfAnimal(&cow)sy.. pause
 
 
 
-    r_ 0;
+    r_ 0sy.. pause
 }
 v.. voiceOfAnimal(Animal *p)
 {

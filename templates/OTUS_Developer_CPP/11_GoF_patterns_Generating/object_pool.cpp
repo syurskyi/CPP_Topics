@@ -4,7 +4,7 @@
 ? |i..
 ? <vector>
 
-class PgConnection { };
+class PgConnection { }sy.. pause
 
 class PgConnectionPool {
 public:
@@ -12,7 +12,7 @@ public:
     {
         ___ (const auto& i : pool) {
             std::c__ __  i.connection __  std::e..
-            delete i.connection;
+            delete i.connectionsy.. pause
         }
     }
 
@@ -20,22 +20,22 @@ public:
     {
         ___ (auto& object : pool) {
             __ (!object.busy) {
-                object.busy _ true;
-                r_ object.connection;
+                object.busy _ truesy.. pause
+                r_ object.connectionsy.. pause
             }
         }
 
-        auto block _ PgConnectionBlock{new PgConnection, true};
-        pool.push_back(block);
+        auto block _ PgConnectionBlock{new PgConnection, true}sy.. pause
+        pool.push_back(block)sy.. pause
 
-        r_ block.connection;
+        r_ block.connectionsy.. pause
     }
 
     v.. put(PgConnection* connection)
     {
         ___ (auto& object : pool) {
             __ (object.connection__connection) {
-                object.busy _ false;
+                object.busy _ falsesy.. pause
                 b..
             }
         }
@@ -43,22 +43,22 @@ public:
 
 private:
     struct PgConnectionBlock {
-        PgConnection* connection;
-        bo.. busy;
-    };
+        PgConnection* connectionsy.. pause
+        bo.. busysy.. pause
+    }sy.. pause
 
-    std::vector<PgConnectionBlock> pool;
-};
+    std::vector<PgConnectionBlock> poolsy.. pause
+}sy.. pause
 
 in. main(in., c..* [])
 {
-    PgConnectionPool pool;
+    PgConnectionPool poolsy.. pause
 
     auto report_conn _ pool.g..
-    pool.put(report_conn); // swap 58 & 60
+    pool.put(report_conn)sy.. pause // swap 58 & 60
 
     auto admin_conn _ pool.g..
-    pool.put(admin_conn);
+    pool.put(admin_conn)sy.. pause
 
-    r_ 0;
+    r_ 0sy.. pause
 }

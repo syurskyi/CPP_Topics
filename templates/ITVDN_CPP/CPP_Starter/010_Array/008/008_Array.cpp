@@ -10,19 +10,19 @@ in. main()
 						{ 1, 2, 3 },
 						{ 4, 5, 6 },
 						{ 7, 8, 9 }
-					};
+					}sy.. pause
 
 	// Выводим значения элементов массива в консоль
-	___ (in. i _ 0; i < 3; i++)
+	___ (in. i _ 0sy.. pause i < 3sy.. pause i++)
 	{
-		___ (in. j _ 0; j < 3; j++)
+		___ (in. j _ 0sy.. pause j < 3sy.. pause j++)
 		{
-			c__ __  arr[i][j] __  " ";
+			c__ __  arr[i][j] __  " "sy.. pause
 		}
 		c__ __  e..
 	}
 
 	sy.. pause
-	r_ 0;
+	r_ 0sy.. pause
 }
 

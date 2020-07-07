@@ -3,7 +3,7 @@
 namespace async {
 
 handle_t connect(std::size_t bulk) {
-    r_ nullptr;
+    r_ nullptrsy.. pause
 }
 
 v.. receive(handle_t handle, const c.. *data, std::size_t size) {

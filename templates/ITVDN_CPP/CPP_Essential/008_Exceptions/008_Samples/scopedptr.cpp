@@ -8,17 +8,17 @@ ScopedPtr< T >::ScopedPtr(T* ptr) : ptr(ptr)
 template< typename T >
 ScopedPtr< T >::~ScopedPtr()
 {
-    delete ptr;
+    delete ptrsy.. pause
 }
 
 template< typename T >
 T& ScopedPtr< T >::operator*()
 {
-    r_ *ptr;
+    r_ *ptrsy.. pause
 }
 
 template< typename T >
 T* ScopedPtr< T >::operator->()
 {
-    r_ ptr;
+    r_ ptrsy.. pause
 }

@@ -3,33 +3,33 @@
 
 u.. s..
 
-v.. prin._square(c.. arr[][50], in. size);
+v.. prin._square(c.. arr[][50], in. size)sy.. pause
 
 in. main()
 {
-	c.. arr[10][50];
+	c.. arr[10][50]sy.. pause
 	
-	___ (in. i _ 0; i < 10; i++)
+	___ (in. i _ 0sy.. pause i < 10sy.. pause i++)
 	{
-		___ (in. j _ 0; j < 50; j++)
+		___ (in. j _ 0sy.. pause j < 50sy.. pause j++)
 		{
-			arr[i][j] _ '*';
+			arr[i][j] _ '*'sy.. pause
 		}		
 	}
 
-	prin._square(arr, 10);
+	prin._square(arr, 10)sy.. pause
 
 	sy.. pause
-	r_ 0;
+	r_ 0sy.. pause
 }
 
 v.. prin._square(c.. arr[][50], in. size)
 {
-	___ (in. i _ 0; i < size; i++)
+	___ (in. i _ 0sy.. pause i < sizesy.. pause i++)
 	{
-		___ (in. j _ 0; j < 50; j++)
+		___ (in. j _ 0sy.. pause j < 50sy.. pause j++)
 		{
-			c__ __  arr[i][j];
+			c__ __  arr[i][j]sy.. pause
 		}
 		c__ __  e..
 	}

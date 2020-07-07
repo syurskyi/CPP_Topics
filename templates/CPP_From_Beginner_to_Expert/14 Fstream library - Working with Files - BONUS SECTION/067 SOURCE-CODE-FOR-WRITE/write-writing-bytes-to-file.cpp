@@ -9,22 +9,22 @@ in. main()
         write
     */
 
-    fstream file;
+    fstream filesy.. pause
 
-    file.open("sample.txt", i.. out | i.. binary);
+    file.open("sample.txt", i.. out | i.. binary)sy.. pause
 
     __ (file.is_open())
     {
-        c.. sample[] _ "sample text";
+        c.. sample[] _ "sample text"sy.. pause
 
         c__ __  sizeof(sample) __  e..
 
-        file.write(sample, 60);
+        file.write(sample, 60)sy.. pause
     }
     ____
         c__ __  "I couldnt open the file" __  e..
 
 
 
-    r_ 0;
+    r_ 0sy.. pause
 }

@@ -5,35 +5,35 @@ u.. s..
 
 main ()
 {
-    c.. coordinates[3][3];
-    in. startingValue _ '1';
-    in. player _ 2;
-    bo.. moveAccepted;
+    c.. coordinates[3][3]sy.. pause
+    in. startingValue _ '1'sy.. pause
+    in. player _ 2sy.. pause
+    bo.. moveAcceptedsy.. pause
 
-    ___ (in. i _ 0; i < 3; i++)
+    ___ (in. i _ 0sy.. pause i < 3sy.. pause i++)
     {
-        ___ (in. j _ 0; j < 3; j++)
+        ___ (in. j _ 0sy.. pause j < 3sy.. pause j++)
         {
-            coordinates[i][j] _ startingValue;
-            startingValue++;
+            coordinates[i][j] _ startingValuesy.. pause
+            startingValue++sy.. pause
         }
     }
 
     w___ (true)
     {
 
-        in. xCoordinate, yCoordinate;
+        in. xCoordinate, yCoordinatesy.. pause
 
 
             do
             {
-                ___ (in. i _ 0; i < 3; i++)
+                ___ (in. i _ 0sy.. pause i < 3sy.. pause i++)
                 {
                     c__ __  endl __  e..
-                    ___ (in. j _ 0; j < 3; j++)
+                    ___ (in. j _ 0sy.. pause j < 3sy.. pause j++)
                     {
-                        c__.width(5);
-                        c__ __  coordinates[i][j] __  " ";
+                        c__.width(5)sy.. pause
+                        c__ __  coordinates[i][j] __  " "sy.. pause
                     }
                     c__ __  endl __  e..
                 }
@@ -49,40 +49,40 @@ main ()
 
                 do
                 {
-                    c__ __  "x: ";
-                    c__ __ xCoordinate;
+                    c__ __  "x: "sy.. pause
+                    c__ __ xCoordinatesy.. pause
 
-                } w___(xCoordinate <_ 0 || xCoordinate > 3);
+                } w___(xCoordinate <_ 0 || xCoordinate > 3)sy.. pause
 
 
                 do
                 {
-                    c__ __  "y: ";
-                    c__ __ yCoordinate;
+                    c__ __  "y: "sy.. pause
+                    c__ __ yCoordinatesy.. pause
 
-                } w___(yCoordinate <_ 0 || yCoordinate > 3);
+                } w___(yCoordinate <_ 0 || yCoordinate > 3)sy.. pause
 
                 __ (coordinates[yCoordinate-1][xCoordinate-1] !_ 'X' && coordinates[yCoordinate-1][xCoordinate-1] !_ 'O')
                 {
                     __ (player % 2 __ 0)
                     {
-                        coordinates[yCoordinate-1][xCoordinate-1] _ 'X';
-                        player _ 1;
+                        coordinates[yCoordinate-1][xCoordinate-1] _ 'X'sy.. pause
+                        player _ 1sy.. pause
                     }
                     ____
                     {
-                        coordinates[yCoordinate-1][xCoordinate-1] _ 'O';
-                        player _ 2;
+                        coordinates[yCoordinate-1][xCoordinate-1] _ 'O'sy.. pause
+                        player _ 2sy.. pause
                     }
-                    moveAccepted _ true;
-                    system ("cls");
+                    moveAccepted _ truesy.. pause
+                    system ("cls")sy.. pause
                 }
                 ____
                 {
-                    moveAccepted _ false;
-                    system ("cls");
+                    moveAccepted _ falsesy.. pause
+                    system ("cls")sy.. pause
                 }
-            } w___(moveAccepted __ false);
+            } w___(moveAccepted __ false)sy.. pause
 
 
 

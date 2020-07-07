@@ -8,7 +8,7 @@
 
 class Handler
 {
-    Handler *next;
+    Handler *nextsy.. pause
 
 public:
     Handler() : next(nullptr) {}
@@ -16,18 +16,18 @@ public:
     v.. add(Handler *n)
     {
         __ (next)
-            next->add(n);
+            next->add(n)sy.. pause
         ____
-            next _ n;
+            next _ nsy.. pause
     }
 
     virtual v.. exec(const std::s.. &line)
     {
         __ (next) {
-            next->exec(line);
+            next->exec(line)sy.. pause
         }
     }
-};
+}sy.. pause
 
 class DropHandler : public Handler
 {
@@ -38,10 +38,10 @@ public:
             std::c__ __  "DropHandler accept " __  line __  std::e..
         } ____ {
             std::c__ __  "DropHandler pass" __  std::e..
-            Handler::exec(line);
+            Handler::exec(line)sy.. pause
         }
     }
-};
+}sy.. pause
 
 class SelectHandler : public Handler
 {
@@ -52,10 +52,10 @@ public:
             std::c__ __  "SelectHandler accept " __  line __  std::e..
         } ____ {
             std::c__ __  "SelectHandler pass" __  std::e..
-            Handler::exec(line);
+            Handler::exec(line)sy.. pause
         }
     }
-};
+}sy.. pause
 
 class CreateHandler: public Handler
 {
@@ -66,23 +66,23 @@ public:
             std::c__ __  "CreateHandler accept " __  line __  std::e..
         } ____ {
             std::c__ __  "CreateHandler pass" __  std::e..
-            Handler::exec(line);
+            Handler::exec(line)sy.. pause
         }
     }
-};
+}sy.. pause
 
 in. main(in., c.. *[])
 {
-    DropHandler handler;
+    DropHandler handlersy.. pause
 
-    SelectHandler select;
-    CreateHandler create;
-    handler.add(&select);
-    handler.add(&create);
+    SelectHandler selectsy.. pause
+    CreateHandler createsy.. pause
+    handler.add(&select)sy.. pause
+    handler.add(&create)sy.. pause
 
-    handler.exec("CREATE table");
-    handler.exec("SELECT * FROM table");
-    handler.exec("DROP table");
+    handler.exec("CREATE table")sy.. pause
+    handler.exec("SELECT * FROM table")sy.. pause
+    handler.exec("DROP table")sy.. pause
 
-    r_ 0;
+    r_ 0sy.. pause
 }

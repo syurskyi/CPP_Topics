@@ -7,10 +7,10 @@ u.. s..
 
 in. main()
 {
-	s.. first_str _ "Hello world!";
+	s.. first_str _ "Hello world!"sy.. pause
 
 	c__ __  first_str __  e..
 	sy.. pause
-	r_ 0;
+	r_ 0sy.. pause
 }
 

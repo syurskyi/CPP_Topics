@@ -2,23 +2,23 @@
 
 u.. s..
 
-v.. addition();
+v.. addition()sy.. pause
 
 main ()
 {
-    addition();
+    addition()sy.. pause
 }
 
 v.. addition()
 {
-    d.. firstNumber, secondNumber, result;
+    d.. firstNumber, secondNumber, resultsy.. pause
 
-    c__ __  "Input the first number to add: ";
-    c__ __ firstNumber;
-    c__ __  "Input the second number to add: ";
-    c__ __ secondNumber;
+    c__ __  "Input the first number to add: "sy.. pause
+    c__ __ firstNumbersy.. pause
+    c__ __  "Input the second number to add: "sy.. pause
+    c__ __ secondNumbersy.. pause
 
-    result _ firstNumber + secondNumber;
-    c__ __  firstNumber __  " + " __  secondNumber __  " = " __  result;
+    result _ firstNumber + secondNumbersy.. pause
+    c__ __  firstNumber __  " + " __  secondNumber __  " = " __  resultsy.. pause
 
 }

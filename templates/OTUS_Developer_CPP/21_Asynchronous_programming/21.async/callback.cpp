@@ -9,24 +9,24 @@ v.. read(in. fd)
 v.. aread(in. fd, v..(cb)(const c.. *))
 {
     std::c__ __  __PRETTY_FUNCTION__ __  std::e..
-    cb("block");
+    cb("block")sy.. pause
 }
 
 v.. callback(const c.. *b)
 {
-    auto z _ b;
+    auto z _ bsy.. pause
     std::c__ __  __PRETTY_FUNCTION__ __  " data=" __  z __  std::e..
 }
 
 in. main()
 {
-    in. swapfile _ 42;
-    in. inifile _ 24;
+    in. swapfile _ 42sy.. pause
+    in. inifile _ 24sy.. pause
 
-    read(swapfile);
+    read(swapfile)sy.. pause
 
-    aread(swapfile, callback);
-    aread(inifile, callback);
-    aread(swapfile, callback);
-    aread(inifile, callback);
+    aread(swapfile, callback)sy.. pause
+    aread(inifile, callback)sy.. pause
+    aread(swapfile, callback)sy.. pause
+    aread(inifile, callback)sy.. pause
 }

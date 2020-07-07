@@ -7,8 +7,8 @@ Animal::~Animal()
 }
 Dog::Dog()
 {
-    sign _ "D";
-    voice _ "hau";
+    sign _ "D"sy.. pause
+    voice _ "hau"sy.. pause
 }
 Dog::~Dog()
 {
@@ -16,8 +16,8 @@ Dog::~Dog()
 }
 Cat::Cat()
 {
-    sign _ "C";
-    voice _ "meow";
+    sign _ "C"sy.. pause
+    voice _ "meow"sy.. pause
 }
 Cat::~Cat()
 {
@@ -25,8 +25,8 @@ Cat::~Cat()
 }
 Cow::Cow()
 {
-    sign _ "CO";
-    voice _ "moooo";
+    sign _ "CO"sy.. pause
+    voice _ "moooo"sy.. pause
 }
 Cow::~Cow()
 {

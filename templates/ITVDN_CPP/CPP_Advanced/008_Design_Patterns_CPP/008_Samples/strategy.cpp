@@ -25,30 +25,30 @@ Context::Context( Strategyin.erface* strategy )
 
 v.. Context::set_strategy( Strategyin.erface* strategy )
 {
-    strategy_ _ strategy;
+    strategy_ _ strategysy.. pause
 }
 
 v.. Context::execute() const
 {
-    strategy_->execute();
+    strategy_->execute()sy.. pause
 }
 
 v.. ClientStrategy::run()
 {
-    ConcreteStrategyA concreteStrategyA;
-    ConcreteStrategyB concreteStrategyB;
-    ConcreteStrategyC concreteStrategyC;
+    ConcreteStrategyA concreteStrategyAsy.. pause
+    ConcreteStrategyB concreteStrategyBsy.. pause
+    ConcreteStrategyC concreteStrategyCsy.. pause
 
-    Context contextA( &concreteStrategyA );
-    Context contextB( &concreteStrategyB );
-    Context contextC( &concreteStrategyC );
+    Context contextA( &concreteStrategyA )sy.. pause
+    Context contextB( &concreteStrategyB )sy.. pause
+    Context contextC( &concreteStrategyC )sy.. pause
 
-    contextA.execute(); // output: "Called ConcreteStrategyA execute method"
-    contextB.execute(); // output: "Called ConcreteStrategyB execute method"
-    contextC.execute(); // output: "Called ConcreteStrategyC execute method"
+    contextA.execute()sy.. pause // output: "Called ConcreteStrategyA execute method"
+    contextB.execute()sy.. pause // output: "Called ConcreteStrategyB execute method"
+    contextC.execute()sy.. pause // output: "Called ConcreteStrategyC execute method"
 
-    contextA.set_strategy( &concreteStrategyB );
-    contextA.execute(); // output: "Called ConcreteStrategyB execute method"
-    contextA.set_strategy( &concreteStrategyC );
-    contextA.execute(); // output: "Called ConcreteStrategyC execute method"
+    contextA.set_strategy( &concreteStrategyB )sy.. pause
+    contextA.execute()sy.. pause // output: "Called ConcreteStrategyB execute method"
+    contextA.set_strategy( &concreteStrategyC )sy.. pause
+    contextA.execute()sy.. pause // output: "Called ConcreteStrategyC execute method"
 }

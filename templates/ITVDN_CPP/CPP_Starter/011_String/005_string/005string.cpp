@@ -4,18 +4,18 @@
 u.. s..
 in. main()
 {
-	c.. name[20];
-	c.. color[10];
+	c.. name[20]sy.. pause
+	c.. color[10]sy.. pause
 
-	c__ __  "Enter you name: ";
-	c__ __ name;
+	c__ __  "Enter you name: "sy.. pause
+	c__ __ namesy.. pause
 
-	c__ __  "Enter your favorite color: ";
-	c__ __ color;
+	c__ __  "Enter your favorite color: "sy.. pause
+	c__ __ colorsy.. pause
 
 	c__ __  "Your name is " __  name __  ", and you favorit color is " __  color __  e..
 
 	sy.. pause
-	r_ 0;
+	r_ 0sy.. pause
 }
 

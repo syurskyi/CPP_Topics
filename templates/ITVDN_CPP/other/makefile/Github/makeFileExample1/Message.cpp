@@ -2,13 +2,13 @@
 ? |i..
 
 Message::Message(){
- std::c__ __  "The Message object has been created.";
+ std::c__ __  "The Message object has been created."sy.. pause
 }
 
 
 Message::~Message(){
   std::c__ __  "The default deconstructor has started, but I will do nothing"
-	  __  "\nWell done. Bye.\n\n";
+	  __  "\nWell done. Bye.\n\n"sy.. pause
 }
 
 

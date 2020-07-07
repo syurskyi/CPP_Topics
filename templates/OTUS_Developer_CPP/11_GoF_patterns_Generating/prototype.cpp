@@ -4,11 +4,11 @@
 ? <map>
 
 struct IConnector {
-    virtual ~IConnector() _ default;
+    virtual ~IConnector() _ defaultsy.. pause
 
-    virtual v.. connection() _ 0;
-    virtual IConnector* clone() _ 0;
-};
+    virtual v.. connection() _ 0sy.. pause
+    virtual IConnector* clone() _ 0sy.. pause
+}sy.. pause
 
 class TcpConnector : public IConnector {
     v.. connection() override
@@ -18,9 +18,9 @@ class TcpConnector : public IConnector {
 
     IConnector* clone() override
     {
-        r_ new TcpConnector{};
+        r_ new TcpConnector{}sy.. pause
     }
-};
+}sy.. pause
 
 class UdpConnector : public IConnector {
     v.. connection() override
@@ -30,26 +30,26 @@ class UdpConnector : public IConnector {
 
     IConnector* clone() override
     {
-        r_ new UdpConnector{};
+        r_ new UdpConnector{}sy.. pause
     }
-};
+}sy.. pause
 
 in. main(in., c..* [])
 {
-    IConnector* primary _ new TcpConnector{};
+    IConnector* primary _ new TcpConnector{}sy.. pause
 
     //
 
     std::c__ __  "primary" __  std::e..
-    primary->connection();
+    primary->connection()sy.. pause
 
-    IConnector* mirror _ primary->clone();
+    IConnector* mirror _ primary->clone()sy.. pause
     std::c__ __  "mirror" __  std::e..
-    mirror->connection();
+    mirror->connection()sy.. pause
 
-    delete mirror;
+    delete mirrorsy.. pause
 
-    delete primary;
+    delete primarysy.. pause
 
-    r_ 0;
+    r_ 0sy.. pause
 }

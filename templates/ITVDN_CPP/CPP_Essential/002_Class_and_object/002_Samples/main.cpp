@@ -6,19 +6,19 @@ u.. s..
 
 in. main()
 {
-    Mammal mammal(6);
-    Mammal new_mammal _ mammal;
+    Mammal mammal(6)sy.. pause
+    Mammal new_mammal _ mammalsy.. pause
 
-    Mammal *new_m _ new Mammal();
+    Mammal *new_m _ new Mammal()sy.. pause
 
 
     {
-        Mammal m;
+        Mammal msy.. pause
     }
 
-    c__ __  "\n" __  new_mammal.get_paws() __  "\n";
+    c__ __  "\n" __  new_mammal.get_paws() __  "\n"sy.. pause
 
-    delete new_m;
+    delete new_msy.. pause
 
-    r_ 0;
+    r_ 0sy.. pause
 }
