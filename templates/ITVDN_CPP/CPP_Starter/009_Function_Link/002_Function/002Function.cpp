@@ -4,10 +4,10 @@
 
 u.. s..
 
-void Operation();									// 1-я перегрузка.
-void Operation(s.. value);						// 2-я перегрузка.
-void Operation(s.. value1, in. value2);			// 3-я перегрузка
-void Operation(s.. val1, in. val2, d.. val3);	// 4-я перегрузка.
+v.. Operation();									// 1-я перегрузка.
+v.. Operation(s.. value);						// 2-я перегрузка.
+v.. Operation(s.. value1, in. value2);			// 3-я перегрузка
+v.. Operation(s.. val1, in. val2, d.. val3);	// 4-я перегрузка.
 
 in. main()
 {
@@ -20,19 +20,19 @@ in. main()
 	r_ 0;
 }
 
-void Operation()
+v.. Operation()
 {
 	Operation("val", 10, 12.2);
 }
-void Operation(s.. value1)
+v.. Operation(s.. value1)
 {
 	Operation(value1, 10, 12.2);
 }
-void Operation(s.. value1, in. value2)
+v.. Operation(s.. value1, in. value2)
 {
 	Operation(value1, value2, 12.2);
 }
-void Operation(s.. val1, in. val2, d.. val3)
+v.. Operation(s.. val1, in. val2, d.. val3)
 {
 	c__ __  val1 __  " " __  val2 __  " " __  val3 __  e..
 }

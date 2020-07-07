@@ -3,8 +3,8 @@
 
 u.. s..
 /* virtual destructor */
-void voiceOfAnimal(Animal *);
-void voiceOfAnimal(Animal &);
+v.. voiceOfAnimal(Animal *);
+v.. voiceOfAnimal(Animal &);
 in. main()
 {
 /*
@@ -25,11 +25,11 @@ in. main()
     delete dog;
     r_ 0;
 }
-void voiceOfAnimal(Animal *p)
+v.. voiceOfAnimal(Animal *p)
 {
     c__ __  p->getVoice() __  e..
 }
-void voiceOfAnimal(Animal &p)
+v.. voiceOfAnimal(Animal &p)
 {
     c__ __  p.getVoice() __  e..
 }

@@ -6,15 +6,15 @@ struct foo
     foo() _ delete;
     virtual ~foo() _ default;
 
-    virtual void m() final {};
-    virtual void n() {};
+    virtual v.. m() final {};
+    virtual v.. n() {};
 };
 
 class bar final : foo
 {
    // void m() override {}; // overrides a 'final'
-    void n() override {};
-   void o() override {}; // only virtual member functions can be marked 'override'
+    v.. n() override {};
+   v.. o() override {}; // only virtual member functions can be marked 'override'
 };
 
 // class baz : bar

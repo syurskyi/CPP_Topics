@@ -3,10 +3,10 @@
 
 u.. s..
 
-void addition(d.., d..);
-void addition(d.., d.., d..);
-void addition(d.., d.., d.., d..);
-void addition(d.., d.., d.., d.., d..);
+v.. addition(d.., d..);
+v.. addition(d.., d.., d..);
+v.. addition(d.., d.., d.., d..);
+v.. addition(d.., d.., d.., d.., d..);
 
 
 
@@ -49,22 +49,22 @@ in. main ()
     r_ 0;
 }
 
-void addition(d.. n1, d.. n2)
+v.. addition(d.. n1, d.. n2)
 {
     c__ __  n1 __  " + " __  n2 __  " = " __  n1 + n2;
 }
 
-void addition(d.. n1, d.. n2, d.. n3)
+v.. addition(d.. n1, d.. n2, d.. n3)
 {
     c__ __  n1 __  " + " __  n2 __  " + " __  n3 __  " = " __  n1 + n2 + n3;
 }
 
-void addition(d.. n1, d.. n2, d.. n3, d.. n4)
+v.. addition(d.. n1, d.. n2, d.. n3, d.. n4)
 {
     c__ __  n1 __  " + " __  n2 __  " + " __  n3 __  " + " __  n4 __  " = " __  n1 + n2 + n3 + n4;
 }
 
-void addition(d.. n1, d.. n2, d.. n3, d.. n4, d.. n5)
+v.. addition(d.. n1, d.. n2, d.. n3, d.. n4, d.. n5)
 {
     c__ __  n1 __  " + " __  n2 __  " + " __  n3 __  " + " __  n4 __  " + " __  n5 __  " = " __  n1 + n2 + n3 + n4 + n5;
 }

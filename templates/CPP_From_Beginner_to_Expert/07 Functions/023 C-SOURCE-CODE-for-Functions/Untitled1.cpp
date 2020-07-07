@@ -3,11 +3,11 @@
 u.. s..
 /*functions / methods */
 //parameter
-void welcome(); //declaration of function, procedure
+v.. welcome(); //declaration of function, procedure
 bo.. isNumber(s..);
-void enterName();
+v.. enterName();
 d.. add(d.. a, d.. b) {r_ a + b;}
-void changeValueTo10(in. a)
+v.. changeValueTo10(in. a)
 {
   a _ 10;
 }
@@ -33,7 +33,7 @@ in. main()
     r_ 0;
 }
 
-void welcome()
+v.. welcome()
 {
     c__ __  "HEllo, welcome in my program!! :-)" __  e..
 }
@@ -49,7 +49,7 @@ bo.. isNumber(s.. tmp)
 
     r_ true;
 }
-void enterName()
+v.. enterName()
 {
     s.. tmp;
 

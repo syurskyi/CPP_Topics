@@ -4,7 +4,7 @@ u.. s..
 
 //void multiplyBy(int &, int);
 in. * multiplyBy(in. *, in.);
-void multiplyArrayBy(in. *, in., in.);
+v.. multiplyArrayBy(in. *, in., in.);
 
 in. main()
 {
@@ -41,7 +41,7 @@ in. * multiplyBy(in. * var, in. amount)
 
     r_ var;
 }
-void multiplyArrayBy(in. *array, in. amount, in. sizeOfArray)
+v.. multiplyArrayBy(in. *array, in. amount, in. sizeOfArray)
 {
     w___(sizeOfArray--)
         array[sizeOfArray] *_ amount;

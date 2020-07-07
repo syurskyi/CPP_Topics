@@ -2,14 +2,14 @@
 
 u.. s..
 
-void addition();
+v.. addition();
 
 main ()
 {
     addition();
 }
 
-void addition()
+v.. addition()
 {
     d.. firstNumber, secondNumber, result;
 

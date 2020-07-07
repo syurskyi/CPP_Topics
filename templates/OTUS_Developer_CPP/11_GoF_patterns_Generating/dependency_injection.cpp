@@ -6,7 +6,7 @@
 struct IStorage {
     virtual ~IStorage() _ default;
 
-    virtual void execute_query() _ 0;
+    virtual v.. execute_query() _ 0;
 };
 
 class Report {
@@ -16,7 +16,7 @@ public:
     explicit Report(IStorage* storage_)
             :storage(storage_) { }
 
-    void prin.()
+    v.. prin.()
     {
         storage->execute_query();
         std::c__ __  "done" __  std::e..
@@ -24,7 +24,7 @@ public:
 };
 
 class TestStorage : public IStorage {
-    void execute_query() override
+    v.. execute_query() override
     {
         std::c__ __  "... fetching data" __  std::e..
     }

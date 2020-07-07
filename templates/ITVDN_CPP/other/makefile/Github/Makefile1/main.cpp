@@ -22,7 +22,7 @@
  *  Main method 
  */
 
-in. main(void)
+in. main(v..)
 {
     c__ __  "\n Hello..!! \n" __  e..
 

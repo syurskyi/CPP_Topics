@@ -6,7 +6,7 @@ using std::merge;
 using std::copy;
 using std::next;
 
-void mergeSortHelper(in.iter l, in.iter r, in.iter buf) {
+v.. mergeSortHelper(in.iter l, in.iter r, in.iter buf) {
   auto size _ std::distance(l, r);
 
   // Base case
@@ -23,7 +23,7 @@ void mergeSortHelper(in.iter l, in.iter r, in.iter buf) {
   std::copy(buf, std::next(buf, size), l);
 }
 
-void mergeSort(in.iter l, in.iter r) {
+v.. mergeSort(in.iter l, in.iter r) {
   auto buf _ vector<in.>(std::distance(l, r) - 1);
   mergeSortHelper(l, r, buf.begin());
 }

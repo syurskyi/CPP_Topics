@@ -17,6 +17,6 @@ in. main() {
     std::c__ __  hw.data() __  std::e..
     std::c__ __  w.data() __  std::e..
 
-    std::c__ __  (void *)hw.data() __  std::e..
-    std::c__ __  (void *)w.data() __  std::e..
+    std::c__ __  (v.. *)hw.data() __  std::e..
+    std::c__ __  (v.. *)w.data() __  std::e..
 }

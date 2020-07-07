@@ -3,26 +3,26 @@
 ? |i..
 
 class Report {
-    void prepare() {
+    v.. prepare() {
         std::c__ __  "===" __  std::e..
         std::c__ __  "prepare" __  std::e..
     }
 
-    virtual void secure() _ 0;
+    virtual v.. secure() _ 0;
 
-    void aggregate() {
+    v.. aggregate() {
         std::c__ __  "aggregate" __  std::e..
     }
 
-    virtual void format() _ 0;
+    virtual v.. format() _ 0;
 
-    void publish() {
+    v.. publish() {
         std::c__ __  "publish" __  std::e..
         std::c__ __  std::e..
     }
 
 public:
-    void report() {
+    v.. report() {
         prepare();
         secure();
         aggregate();
@@ -32,21 +32,21 @@ public:
 };
 
 class PublicReport : public Report {
-    void secure() override {
+    v.. secure() override {
         std::c__ __  "encrypt *" __  std::e..
     }
 
-    void format() override {
+    v.. format() override {
         std::c__ __  "strip *" __  std::e..
     }
 };
 
 class in.ernalReport : public Report {
-    void secure() override {
+    v.. secure() override {
         std::c__ __  "plane *" __  std::e..
     }
 
-    void format() override {
+    v.. format() override {
         std::c__ __  "human readable *" __  std::e..
     }
 };

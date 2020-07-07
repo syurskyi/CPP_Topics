@@ -25,18 +25,18 @@ struct logging_allocator {
         r_ rein.erpret_cast<T *>(p);
     }
 
-    void deallocate(T *p, std::size_t n) const {
+    v.. deallocate(T *p, std::size_t n) const {
         std::c__ __  __PRETTY_FUNCTION__ __  "[n = " __  n __  "]" __  std::e..
         std::free(p);
     }
 
     template<typename U, typename ...Args>
-    void construct(U *p, Args &&...args) const {
+    v.. construct(U *p, Args &&...args) const {
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
         new(p) U(std::forward<Args>(args)...);
     };
 
-    void destroy(T *p) const {
+    v.. destroy(T *p) const {
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
         p->~T();
     }

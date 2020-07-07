@@ -3,7 +3,7 @@
 
 u.. s..
 
-void get_array_info(in. *arr, in. count, in. *max, in. *min, in. *avrg);
+v.. get_array_info(in. *arr, in. count, in. *max, in. *min, in. *avrg);
 
 in. main()
 {
@@ -24,7 +24,7 @@ in. main()
 	r_ 0;
 }
 
-void get_array_info(in. *arr, in. count, in. *max, in. *min, in. *avrg)
+v.. get_array_info(in. *arr, in. count, in. *max, in. *min, in. *avrg)
 {
 	*max _ arr[0];
 	*min _ arr[0];

@@ -7,22 +7,22 @@
 
 u.. s..
 
-void Pizza::setDough( const s..& dough )
+v.. Pizza::setDough( const s..& dough )
 {
     m_dough _ dough;
 }
 
-void Pizza::setSauce( const s..& sauce )
+v.. Pizza::setSauce( const s..& sauce )
 {
     m_sauce _ sauce;
 }
 
-void Pizza::setTopping( const s..& topping )
+v.. Pizza::setTopping( const s..& topping )
 {
     m_topping _ topping;
 }
 
-void Pizza::open() const
+v.. Pizza::open() const
 {
     c__ __  "Pizza with " __  m_dough __  " dough, " __  m_sauce __  " sauce and " __  m_topping
          __  " topping. Mmm." __  e..
@@ -33,43 +33,43 @@ Pizza* PizzaBuilder::getPizza()
     r_ m_pizza.release();
 }
 
-void PizzaBuilder::createNewPizzaProduct()
+v.. PizzaBuilder::createNewPizzaProduct()
 {
     m_pizza _ make_unique< Pizza >();
 }
 
-void HawaiianPizzaBuilder::buildDough()
+v.. HawaiianPizzaBuilder::buildDough()
 {
     m_pizza->setDough( "cross" );
 }
-void HawaiianPizzaBuilder::buildSauce()
+v.. HawaiianPizzaBuilder::buildSauce()
 {
     m_pizza->setSauce( "mild" );
 }
-void HawaiianPizzaBuilder::buildTopping()
+v.. HawaiianPizzaBuilder::buildTopping()
 {
     m_pizza->setTopping( "ham+pineapple" );
 }
 
-void SpicyPizzaBuilder::buildDough()
+v.. SpicyPizzaBuilder::buildDough()
 {
     m_pizza->setDough( "pan baked" );
 }
-void SpicyPizzaBuilder::buildSauce()
+v.. SpicyPizzaBuilder::buildSauce()
 {
     m_pizza->setSauce( "hot" );
 }
-void SpicyPizzaBuilder::buildTopping()
+v.. SpicyPizzaBuilder::buildTopping()
 {
     m_pizza->setTopping( "pepperoni+salami" );
 }
 
-void Cook::openPizza()
+v.. Cook::openPizza()
 {
     m_pizzaBuilder->getPizza()->open();
 }
 
-void Cook::makePizza( PizzaBuilder* pb )
+v.. Cook::makePizza( PizzaBuilder* pb )
 {
     m_pizzaBuilder _ pb;
     m_pizzaBuilder->createNewPizzaProduct();
@@ -78,7 +78,7 @@ void Cook::makePizza( PizzaBuilder* pb )
     m_pizzaBuilder->buildTopping();
 }
 
-void ClientBuilder::run()
+v.. ClientBuilder::run()
 {
     Cook cook;
     HawaiianPizzaBuilder hawaiianPizzaBuilder;

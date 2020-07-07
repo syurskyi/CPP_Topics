@@ -63,14 +63,14 @@ struct cons
 // typedef List< int, std::string, double, float > TypeList;
 
 template < class TL >
-void prin.()
+v.. prin.()
 {
     std::c__ __  typeid( typename TL::Head ).name() __  std::e..
     prin.< typename TL::Tail >();
 }
 
 template <>
-void prin.< nil >()
+v.. prin.< nil >()
 {
 }
 

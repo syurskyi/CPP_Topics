@@ -3,7 +3,7 @@
 // https://en.cppreference.com/w/cpp/language/attributes
 
 [[noreturn]]
-void stub2() {
+v.. stub2() {
     throw std::logic_error("not implemented yet");
 }
 

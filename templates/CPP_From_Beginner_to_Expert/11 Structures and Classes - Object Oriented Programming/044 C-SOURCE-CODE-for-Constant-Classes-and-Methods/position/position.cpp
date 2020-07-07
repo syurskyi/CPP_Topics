@@ -13,13 +13,13 @@ Position::~Position()
 
 }
 
-void Position::getPosition() const
+v.. Position::getPosition() const
 {
     c__ __  "x : " __  x __  e..
     c__ __  "y : " __  y __  e..
 }
 
-void Position::setPosition(in. x, in. y)
+v.. Position::setPosition(in. x, in. y)
 {
     this->x _ x;
     this->y _ y;

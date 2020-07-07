@@ -1,6 +1,6 @@
 ? "name.h"
 
-void Name::mynameis()
+v.. Name::mynameis()
 {
   c__ __  "My name is Serhii Yurskyi" __  e..
 }

@@ -14,7 +14,7 @@ std::s.. foo(in., in., in. &err)
     r_ "surname";
 }
 
-void foo(in., in., in. &err, std::s.. &result)
+v.. foo(in., in., in. &err, std::s.. &result)
 {
     err _ 127;
     result _ "surname";

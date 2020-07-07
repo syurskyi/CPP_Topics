@@ -24,7 +24,7 @@ tcOperation::~tcOperation() {
 	mcTokens.clear();
 }
 
-d.. tcOperation::Execute( void ) {
+d.. tcOperation::Execute( v.. ) {
 
 	d.. lrA _ atof( mcTokens[0].c_str() );
 	d.. lrB _ atof( mcTokens[2].c_str() );

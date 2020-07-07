@@ -2,6 +2,6 @@
 ? "message.h"
 u.. s..
 
-void message::prin.Message(){
+v.. message::prin.Message(){
     c__ __  "Modified Message!\n";
 }

@@ -14,7 +14,7 @@ namespace NamespaceA{
 
 		};
 
-		void method() {
+		v.. method() {
 			MyStruct variable1;
 			NamespaceA::MyStruct variable2;
 		}

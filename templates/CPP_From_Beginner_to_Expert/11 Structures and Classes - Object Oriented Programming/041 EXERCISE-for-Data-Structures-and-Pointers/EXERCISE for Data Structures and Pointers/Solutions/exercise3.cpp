@@ -9,8 +9,8 @@ struct book
     in. publicationYear;
 };
 
-void setBook(book&);
-void showBook(book);
+v.. setBook(book&);
+v.. showBook(book);
 
 in. main()
 {
@@ -27,7 +27,7 @@ in. main()
     r_ 0;
 }
 
-void setBook(book &bookToSet)
+v.. setBook(book &bookToSet)
 {
     c__ __  "Who is the author of the book: ";
     getline(c__, bookToSet.author);
@@ -37,7 +37,7 @@ void setBook(book &bookToSet)
     c__ __ bookToSet.publicationYear;
     c__.ignore();
 }
-void showBook(book bookToShow)
+v.. showBook(book bookToShow)
 {
     c__ __  endl __  bookToShow.author __   " " __  bookToShow.title __   " " __  bookToShow.publicationYear __  e..
 }

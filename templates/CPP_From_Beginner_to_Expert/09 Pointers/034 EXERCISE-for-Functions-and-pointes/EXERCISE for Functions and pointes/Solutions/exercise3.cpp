@@ -5,10 +5,10 @@ u.. s..
 
 in. * createArray(in.);
 
-void swapTwoValues(in.*, in.*);
+v.. swapTwoValues(in.*, in.*);
 
-void fillArrayWithValues(in.[], in.);
-void prin.ArrayValues(in.[], in.);
+v.. fillArrayWithValues(in.[], in.);
+v.. prin.ArrayValues(in.[], in.);
 
 in. main ()
 {
@@ -23,7 +23,7 @@ in. * createArray(in. sizeOfArray)
     r_ newArray;
 }
 
-void swapTwoValues(in.* firstValue, in.* secondValue)
+v.. swapTwoValues(in.* firstValue, in.* secondValue)
 {
     in. temporaryVariable;
 
@@ -32,7 +32,7 @@ void swapTwoValues(in.* firstValue, in.* secondValue)
     *secondValue _ temporaryVariable;
 }
 
-void fillArrayWithValues(in. arrayToFill[], in. sizeOfArray)
+v.. fillArrayWithValues(in. arrayToFill[], in. sizeOfArray)
 {
     ___ (in. i _ 0; i < sizeOfArray; i++)
     {
@@ -42,7 +42,7 @@ void fillArrayWithValues(in. arrayToFill[], in. sizeOfArray)
     system("cls");
 }
 
-void prin.ArrayValues(in. arrayToPrin.[], in. sizeOfArray)
+v.. prin.ArrayValues(in. arrayToPrin.[], in. sizeOfArray)
 {
     ___ (in. i _ 0; i < sizeOfArray; i++)
     {

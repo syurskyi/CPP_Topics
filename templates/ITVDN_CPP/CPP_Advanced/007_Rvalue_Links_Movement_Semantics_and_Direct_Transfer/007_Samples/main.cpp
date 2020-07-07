@@ -6,7 +6,7 @@ template < typename T >
 class TD; // TD == Type Displayer
 
 template < typename T >
-void deduct( T&& param )
+v.. deduct( T&& param )
 {
     TD< T > tType;
     TD< decltype( param ) > paramType;
@@ -23,7 +23,7 @@ sample foo()
 }
 
 // принимает только rvalue reference
-void baz( sample&& ) {}
+v.. baz( sample&& ) {}
 
 in.&& func()
 {
@@ -34,7 +34,7 @@ struct _A
 {
     _A& operator_( const _A& ) { r_ *this; }
 };
-void func( _A& ) {}
+v.. func( _A& ) {}
 
 in. main()
 {
@@ -125,7 +125,7 @@ in. main()
         //            str = st;
         //        }
 
-        void setName( std::s.. st ) { str _ std::move( st ); }
+        v.. setName( std::s.. st ) { str _ std::move( st ); }
 
     private:
         in.* ptr;
@@ -141,6 +141,6 @@ in. main()
     //    bool is_lvalue = std::is_lvalue_reference<T>::value;
     //    bool is_rvalue = std::is_rvalue_reference<T>::value;
 
-    std::future< void > f, f2;
+    std::future< v.. > f, f2;
     f _ std::move( f2 );
 }

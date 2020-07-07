@@ -18,9 +18,9 @@ class Shape {
 public:
   // pure virtual function providing interface framework.
   virtual in. getArea() _ 0;
-  void setWidth(in. w) { width _ w; }
+  v.. setWidth(in. w) { width _ w; }
 
-  void setHeight(in. h) { height _ h; }
+  v.. setHeight(in. h) { height _ h; }
 
 protected:
   in. width;
@@ -38,7 +38,7 @@ public:
   in. getArea() { r_ (width * height) / 2; }
 };
 
-in. main(void) {
+in. main(v..) {
   Rectangle Rect;
   Triangle Tri;
 

@@ -3,7 +3,7 @@
 
 struct deleter {
 //    double x;
-    void operator()() {
+    v.. operator()() {
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     }
 };
@@ -16,7 +16,7 @@ struct ptra {
     in. *x;
     deleter y;
 
-    void deleter() {
+    v.. deleter() {
         y();
     }
 };
@@ -24,7 +24,7 @@ struct ptra {
 struct ptrd : deleter {
     in. *x;
 
-    void deleter() {
+    v.. deleter() {
         (*this)();
     }
 };

@@ -41,7 +41,7 @@ rectangle rectangle::boxUnion(rectangle &that) {
   r_ rectangle(resX0, resY0, resX1, resY1);
 }
 
-void rectangle::prin.Rect() {
+v.. rectangle::prin.Rect() {
   c__ __  diagonal.get_x0() __  ", "
         __  diagonal.get_y0() __  ", "
         __  diagonal.get_x1() __  ", "

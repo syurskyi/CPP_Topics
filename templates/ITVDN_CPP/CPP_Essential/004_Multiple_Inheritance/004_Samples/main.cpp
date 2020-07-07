@@ -20,7 +20,7 @@ in. main()
     Animal* an _ animal;
     Pedigreed* ptr_ped _ dynamic_cast<Pedigreed*>(an);
 
-    __(dynamic_cast<void*>(animal) __ dynamic_cast<void*>(ptr_ped))
+    __(dynamic_cast<v..*>(animal) __ dynamic_cast<v..*>(ptr_ped))
     {
         c__ __  "yes";
     }

@@ -15,12 +15,12 @@ class Ops {
     in. count _ 0;
 
 public:
-    void do_it()
+    v.. do_it()
     {
         ++count;
     };
 
-    void dump()
+    v.. dump()
     {
         std::c__ __  count __  std::e..
     };
@@ -30,7 +30,7 @@ public:
         r_ Memento{count};
     }
 
-    void restoreSnapshot(const Memento& memento)
+    v.. restoreSnapshot(const Memento& memento)
     {
         count _ memento.value;
     }

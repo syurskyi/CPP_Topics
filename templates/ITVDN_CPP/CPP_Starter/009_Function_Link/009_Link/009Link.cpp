@@ -3,7 +3,7 @@
 
 u.. s..
 
-void add_two(in.);
+v.. add_two(in.);
 
 in. main()
 {
@@ -21,7 +21,7 @@ in. main()
 	r_ 0;
 }
 
-void add_two(in. a)
+v.. add_two(in. a)
 {
 	a _ a + 2;
 	c__ __  "Value int a = " __  a __  e..

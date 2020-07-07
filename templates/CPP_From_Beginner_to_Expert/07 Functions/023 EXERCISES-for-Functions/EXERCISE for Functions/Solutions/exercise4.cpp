@@ -2,14 +2,14 @@
 
 u.. s..
 
-void division();
+v.. division();
 
 main ()
 {
     division();
 }
 
-void division()
+v.. division()
 {
     d.. firstNumber, secondNumber, result;
 

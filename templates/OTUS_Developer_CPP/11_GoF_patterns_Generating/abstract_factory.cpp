@@ -11,17 +11,17 @@ enum class Env {
 struct IConfig {
     virtual ~IConfig() _ default;
 
-    virtual void read() _ 0;
+    virtual v.. read() _ 0;
 };
 
 class ConsulConfig : public IConfig {
-    void read() override
+    v.. read() override
     {
         std::c__ __  "connect to consul" __  std::e..
     }
 };
 class LocalConfig : public IConfig {
-    void read() override
+    v.. read() override
     {
         std::c__ __  "open local file" __  std::e..
     }
@@ -32,18 +32,18 @@ class LocalConfig : public IConfig {
 struct IMetric {
     virtual ~IMetric() _ default;
 
-    virtual void send() _ 0;
+    virtual v.. send() _ 0;
 };
 
 struct PrometheusMetric : public IMetric {
-    void send() override
+    v.. send() override
     {
         std::c__ __  "push to prometheus" __  std::e..
     }
 };
 
 struct LocalMetric : public IMetric {
-    void send() override
+    v.. send() override
     {
         std::c__ __  "write to log" __  std::e..
     }

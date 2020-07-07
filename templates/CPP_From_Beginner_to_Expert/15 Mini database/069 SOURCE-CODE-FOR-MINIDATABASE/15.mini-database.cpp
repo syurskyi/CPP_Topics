@@ -15,14 +15,14 @@ struct Person
 sh.. peopleInDataBase;
 Person people[20];
 
-void requireEnter();
+v.. requireEnter();
 
-void addPerson();
-void showPeople();
-void savePeopleToFile();
-void loadPeopleFromFile();
-void searchDatabase();
-void removePersonFromDatabase();
+v.. addPerson();
+v.. showPeople();
+v.. savePeopleToFile();
+v.. loadPeopleFromFile();
+v.. searchDatabase();
+v.. removePersonFromDatabase();
 
 in. main()
 {
@@ -75,12 +75,12 @@ in. main()
 
     r_ 0;
 }
-void requireEnter()
+v.. requireEnter()
 {
     c__ __  "Click Enter to continue... " __  e..
     w___(getch() !_ 13);
 }
-void addPerson()
+v.. addPerson()
 {
     c__ __  "Type name: ";
     c__ __ people[peopleInDataBase].name;
@@ -96,7 +96,7 @@ void addPerson()
 
     peopleInDataBase++;
 }
-void showPeople()
+v.. showPeople()
 {
     __(peopleInDataBase > 0)
     {
@@ -112,7 +112,7 @@ void showPeople()
     ____
         c__ __  "There is nobody in database."  __  e..
 }
-void savePeopleToFile()
+v.. savePeopleToFile()
 {
     ofstream file("database.txt");
 
@@ -134,7 +134,7 @@ void savePeopleToFile()
         c__ __  "I couldnt save to database" __  e..
 
 }
-void loadPeopleFromFile()
+v.. loadPeopleFromFile()
 {
     ifstream file("database.txt");
 
@@ -170,7 +170,7 @@ void loadPeopleFromFile()
     ____
         c__ __  "The file database.txt doesnt exist" __  e..
 }
-void searchDatabase()
+v.. searchDatabase()
 {
     __ (peopleInDataBase > 0)
     {
@@ -195,7 +195,7 @@ void searchDatabase()
 
 
 }
-void removePersonFromDatabase()
+v.. removePersonFromDatabase()
 {
     __ (peopleInDataBase > 0)
     {

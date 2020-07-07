@@ -8,7 +8,7 @@ struct FileSystemObject
     virtual ~FileSystemObject() _ default;
 
     virtual in. size() _ 0;
-    virtual void add_object(FileSystemObject *) {};
+    virtual v.. add_object(FileSystemObject *) {};
 };
 
 class File : public FileSystemObject
@@ -31,7 +31,7 @@ public:
         r_ total;
     }
 
-    void add_object(FileSystemObject *fso) override
+    v.. add_object(FileSystemObject *fso) override
     {
         c.push_back(fso);
     }

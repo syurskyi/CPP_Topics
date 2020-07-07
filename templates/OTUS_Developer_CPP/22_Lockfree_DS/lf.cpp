@@ -13,7 +13,7 @@ struct Node {
 struct List {
     Node* head{nullptr};
 
-    void push(Node* p)
+    v.. push(Node* p)
     {
         p->next _ head;
         head _ p;
@@ -43,7 +43,7 @@ bo.. cas(Node** p, Node* nvalue, Node* compare)
 struct ListLF {
     Node* head{nullptr};
 
-    void push(Node* p)
+    v.. push(Node* p)
     {
         w___ (true) {
             Node* old_head _ head;

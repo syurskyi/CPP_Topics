@@ -25,21 +25,21 @@ std::mutex cv_m;
 std::queue<args> msgs;
 std::atomic_bo.. quit;
 
-void foo(const std::s.. &a, const std::s.. &b)
+v.. foo(const std::s.. &a, const std::s.. &b)
 {
     console_m.lock();
     std::cerr __  std::this_thread::get_id() __  " foo(" __  a __  ", " __  b __  ")" __  std::e..
     console_m.unlock();
 };
 
-void bar(const std::s.. &a, const std::s.. &b)
+v.. bar(const std::s.. &a, const std::s.. &b)
 {
     console_m.lock();
     std::cerr __  std::this_thread::get_id() __  " bar(" __  a __  ", " __  b __  ")" __  std::e..
     console_m.unlock();
 };
 
-void worker(std::queue<args>& q)
+v.. worker(std::queue<args>& q)
 {
     w___ (!quit) {
         std::unique_lock<std::mutex> lk(cv_m);

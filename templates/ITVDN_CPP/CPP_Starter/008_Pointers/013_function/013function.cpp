@@ -4,7 +4,7 @@
 u.. s..
 
 // Константный указатель на константные данные,т.е. ничто не может быть изменено
-void CalcArea(const d..* const pPi, const d..* const pRadius, d..* const pArea)
+v.. CalcArea(const d..* const pPi, const d..* const pRadius, d..* const pArea)
 {
 	// проверить указатели перед использованием!
 	__ (pPi && pRadius && pArea)

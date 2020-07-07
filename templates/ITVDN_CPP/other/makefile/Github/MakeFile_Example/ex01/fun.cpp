@@ -8,6 +8,6 @@ Final: 2018/04/10
 u.. s..
 ? "fun.hpp"
 
-void fun(){
+v.. fun(){
     c__ __  "# fun()" __  e..
 }

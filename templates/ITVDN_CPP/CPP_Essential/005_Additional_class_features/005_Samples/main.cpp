@@ -13,10 +13,10 @@ class SomeClass;
 class A
 {
 public:
-    virtual void foo() _ 0;
+    virtual v.. foo() _ 0;
 };
 
-void A::foo()
+v.. A::foo()
 {
     c__ __  "A::foo";
 }
@@ -24,9 +24,9 @@ void A::foo()
 class B : public A
 {
 public:
-    void foo() override;
+    v.. foo() override;
 
-    void new_method(SomeClass& some);
+    v.. new_method(SomeClass& some);
 
     in. get_data(SomeClass& some);
 
@@ -41,7 +41,7 @@ private:
 class SomeClass
 {
 public:
-    void get_string(B& b)
+    v.. get_string(B& b)
     {
         c__ __  b.string_data;
     }
@@ -54,17 +54,17 @@ private:
     in. data _ 20;
 
     friend B;
-    friend void B::new_method(SomeClass& some);
-    friend void some_func(SomeClass& some);
+    friend v.. B::new_method(SomeClass& some);
+    friend v.. some_func(SomeClass& some);
 };
 
-void some_func(SomeClass& some)
+v.. some_func(SomeClass& some)
 {
     c__ __  __PRETTY_FUNCTION__ __  e..
     c__ __  some.data;
 }
 
-void B::foo()
+v.. B::foo()
 {
     A::foo();
     c__ __  "B::foo";
@@ -76,7 +76,7 @@ in. B::get_data(SomeClass& some)
     r_ some.data;
 }
 
-void B::new_method(SomeClass& some)
+v.. B::new_method(SomeClass& some)
 {
     c__ __  some.share_data();
 }

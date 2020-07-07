@@ -2,7 +2,7 @@
 ? |i..
 
 u.. s..
-void PersonalData::setAge(in. age)
+v.. PersonalData::setAge(in. age)
 {
     __ (age < 0)
         this->age _ 0;

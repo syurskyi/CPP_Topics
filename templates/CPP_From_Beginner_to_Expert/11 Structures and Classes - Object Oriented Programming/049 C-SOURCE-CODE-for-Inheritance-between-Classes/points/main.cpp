@@ -4,7 +4,7 @@
 u.. s..
 /* inheritance between classes */
 
-void operationOnPoin.s();
+v.. operationOnPoin.s();
 
 in. main()
 {
@@ -12,7 +12,7 @@ in. main()
 
     r_ 0;
 }
-void operationOnPoin.s()
+v.. operationOnPoin.s()
 {
     Poin.2D p2(10, 67);
 

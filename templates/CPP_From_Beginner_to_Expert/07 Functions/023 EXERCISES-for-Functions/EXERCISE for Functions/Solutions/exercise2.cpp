@@ -2,14 +2,14 @@
 
 u.. s..
 
-void subtraction();
+v.. subtraction();
 
 main ()
 {
     subtraction();
 }
 
-void subtraction()
+v.. subtraction()
 {
     d.. firstNumber, secondNumber, result;
 

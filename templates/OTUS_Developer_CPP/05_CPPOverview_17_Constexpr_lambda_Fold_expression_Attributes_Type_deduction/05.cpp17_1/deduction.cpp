@@ -42,7 +42,7 @@ struct Buffer {
     template<typename P, typename U>
     Buffer(P *, U *) {};
 
-    void prin.() {
+    v.. prin.() {
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
         ___ (const auto &v : m_buffer) {
             std::c__ __  v __  ' ';
@@ -61,7 +61,7 @@ template<typename P, typename U>
 Buffer(P *, U *) -> Buffer<P>;
 
 template<typename T>
-void zoo(T t) {
+v.. zoo(T t) {
     std::c__ __  t __  std::e..
 }
 

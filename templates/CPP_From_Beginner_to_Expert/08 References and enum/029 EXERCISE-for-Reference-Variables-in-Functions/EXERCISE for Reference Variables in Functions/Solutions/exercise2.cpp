@@ -2,7 +2,7 @@
 
 u.. s..
 
-void checkIfTheSame(in.&, in.&);
+v.. checkIfTheSame(in.&, in.&);
 
 in. main ()
 {
@@ -19,7 +19,7 @@ in. main ()
     r_ 0;
 }
 
-void checkIfTheSame(in. &firstVariable, in. &secondVariable)
+v.. checkIfTheSame(in. &firstVariable, in. &secondVariable)
 {
     __ (firstVariable __ secondVariable && &firstVariable __ &secondVariable)
     {

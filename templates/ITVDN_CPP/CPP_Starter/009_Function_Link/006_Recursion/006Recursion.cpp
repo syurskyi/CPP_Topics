@@ -3,7 +3,7 @@
 
 u.. s..
 
-void convert(in. n);
+v.. convert(in. n);
 
 in. main()
 {
@@ -20,7 +20,7 @@ in. main()
 	r_ 0;
 }
 
-void convert(in. n)
+v.. convert(in. n)
 {
 	in. temp;
 

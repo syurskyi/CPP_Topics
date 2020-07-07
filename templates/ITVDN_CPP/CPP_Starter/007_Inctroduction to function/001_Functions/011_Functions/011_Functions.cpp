@@ -3,7 +3,7 @@
 
 u.. s..
 
-void TestFunc(in. a _ 5, in. b _ 10);
+v.. TestFunc(in. a _ 5, in. b _ 10);
 
 in. main()
 {
@@ -16,7 +16,7 @@ in. main()
     r_ 0;
 }
 
-void TestFunc(in. a, in. b)
+v.. TestFunc(in. a, in. b)
 {
 	c__ __  "a = " __  a __  "; b = " __  b __  e..
 }

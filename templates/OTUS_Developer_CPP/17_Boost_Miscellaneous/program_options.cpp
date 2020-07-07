@@ -5,7 +5,7 @@
 
 namespace po _ boost::program_options;
 
-void set_bulk(size_t bulk) {
+v.. set_bulk(size_t bulk) {
     std::c__ __  "bulk size is " __  bulk __  std::e..
 }
 

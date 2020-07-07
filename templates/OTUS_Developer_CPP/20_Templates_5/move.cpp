@@ -27,7 +27,7 @@ using T _ xray;
 
 using args _ std::tuple<T, T>;
 
-void foo(const T& a, const T& b)
+v.. foo(const T& a, const T& b)
 {
     std::c__ __  a __  " " __  b __  std::e..
 }

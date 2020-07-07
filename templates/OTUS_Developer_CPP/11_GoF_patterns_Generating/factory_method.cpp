@@ -7,40 +7,40 @@ enum class Storage { mysql, postgres };
 struct IStorage {
     virtual ~IStorage() _ default;
 
-    virtual void open() _ 0;
-    virtual void execute_query() _ 0;
-    virtual void close() _ 0;
+    virtual v.. open() _ 0;
+    virtual v.. execute_query() _ 0;
+    virtual v.. close() _ 0;
 };
 
 class MysqlStorage : public IStorage {
-    void open() override
+    v.. open() override
     {
         std::c__ __  "connect to mysql" __  std::e..
     }
 
-    void execute_query() override
+    v.. execute_query() override
     {
         std::c__ __  "fetch mysql result" __  std::e..
     }
 
-    void close() override
+    v.. close() override
     {
         std::c__ __  "disconnect from mysql" __  std::e..
     }
 };
 
 class PostgresStorage : public IStorage {
-    void open() override
+    v.. open() override
     {
         std::c__ __  "connect to pg" __  std::e..
     }
 
-    void execute_query() override
+    v.. execute_query() override
     {
         std::c__ __  "fetch pg result" __  std::e..
     }
 
-    void close() override
+    v.. close() override
     {
         std::c__ __  "disconnect from pg" __  std::e..
     }

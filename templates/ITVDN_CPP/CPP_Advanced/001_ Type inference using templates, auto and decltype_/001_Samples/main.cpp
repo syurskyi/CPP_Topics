@@ -47,7 +47,7 @@ template < typename T >
 class TD; // TD == Type Displayer
 
 template < typename T >
-void f( T& param )
+v.. f( T& param )
 {
     TD< T > tType;
     TD< decltype( param ) > paramType;

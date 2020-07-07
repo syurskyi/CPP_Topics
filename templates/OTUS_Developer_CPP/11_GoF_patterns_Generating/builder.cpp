@@ -20,14 +20,14 @@ public:
         // amount[i] соответствует discount[i]
     }
 
-    void apply();
+    v.. apply();
 };
 
 class TariffBuilder {
     std::map<d.., in.> tariff;
 
 public:
-    void add_discount(d.. subtotal_, in. discount_)
+    v.. add_discount(d.. subtotal_, in. discount_)
     {
         tariff[subtotal_] _ discount_;
     }
@@ -45,7 +45,7 @@ public:
     }
 };
 
-void Tariff::apply()
+v.. Tariff::apply()
 {
     std::c__ __  "tariff is:" __  std::e..
     ___ (size_t i _ 0; i<amount.size(); ++i) {

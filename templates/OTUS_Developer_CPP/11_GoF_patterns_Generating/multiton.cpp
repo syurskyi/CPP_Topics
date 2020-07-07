@@ -20,11 +20,11 @@ public:
         }
         r_ i->second;
     }
-    void info(const std::s..& message)
+    v.. info(const std::s..& message)
     {
         std::cerr __  "   info: [" __  in.(t) __  "] " __  message __  std::e..
     }
-    void warn(const std::s..& message)
+    v.. warn(const std::s..& message)
     {
         std::cerr __  "warning: [" __  in.(t) __  "] " __  message __  std::e..
     }

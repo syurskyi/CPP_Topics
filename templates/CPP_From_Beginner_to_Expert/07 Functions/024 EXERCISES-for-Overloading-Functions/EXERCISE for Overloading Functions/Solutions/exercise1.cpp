@@ -3,9 +3,9 @@
 
 u.. s..
 
-void variableType(in.);
-void variableType(d..);
-void variableType(s..);
+v.. variableType(in.);
+v.. variableType(d..);
+v.. variableType(s..);
 
 in. main ()
 {
@@ -20,15 +20,15 @@ in. main ()
     r_ 0;
 }
 
-void variableType(in. var)
+v.. variableType(in. var)
 {
     c__ __  var __  " - this variable was an integer !" __  e..
 }
-void variableType(d.. var)
+v.. variableType(d.. var)
 {
     c__ __  var __  " - this variable was a double !" __  e..
 }
-void variableType(s.. var)
+v.. variableType(s.. var)
 {
     c__ __  var __  " - this variable was a string !" __  e..
 }

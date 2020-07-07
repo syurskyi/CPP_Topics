@@ -2,7 +2,7 @@
 
 u.. s..
 /* LOTTERY - pseudo-random numbers generator - drawing numbers */
-void lottery(in., in.);
+v.. lottery(in., in.);
 
 in. main()
 {
@@ -18,7 +18,7 @@ in. main()
 
     r_ 0;
 }
-void lottery(in. total_balls, in. balls_to_draw)
+v.. lottery(in. total_balls, in. balls_to_draw)
 {
     __ (total_balls < balls_to_draw)
         r_;

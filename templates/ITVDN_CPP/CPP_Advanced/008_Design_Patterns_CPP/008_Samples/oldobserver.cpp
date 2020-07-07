@@ -3,18 +3,18 @@
 ? |i..
 ? <vector>
 
-void Subject::attach( Observer* obs )
+v.. Subject::attach( Observer* obs )
 {
     m_views.push_back( obs );
 }
 
-void Subject::set_val( in. value )
+v.. Subject::set_val( in. value )
 {
     m_value _ value;
     notify();
 }
 
-void Subject::notify()
+v.. Subject::notify()
 {
     ___ ( in. i _ 0; i < m_views.size(); ++i )
     {
@@ -31,7 +31,7 @@ DivObserver::DivObserver( Subject* model, in. div )
     }
 }
 
-void DivObserver::update( in. v )
+v.. DivObserver::update( in. v )
 {
     std::c__ __  v __  " div " __  m_div __  " is " __  v / m_div __  '\n';
 }
@@ -45,12 +45,12 @@ ModObserver::ModObserver( Subject* model, in. mod )
     }
 }
 
-void ModObserver::update( in. v )
+v.. ModObserver::update( in. v )
 {
     std::c__ __  v __  " mod " __  m_mod __  " is " __  v % m_mod __  '\n';
 }
 
-void ClientOldObserver::run()
+v.. ClientOldObserver::run()
 {
     Subject subj;
     DivObserver divObs1( &subj, 4 );

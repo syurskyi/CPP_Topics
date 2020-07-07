@@ -16,7 +16,7 @@ data_chunk prepare_data()
     r_ data_chunk();
 }
 
-void process(data_chunk&)
+v.. process(data_chunk&)
 {}
 
 bo.. is_last_chunk(data_chunk&)
@@ -28,7 +28,7 @@ std::mutex mut;
 std::queue<data_chunk> data_queue;
 std::condition_variable data_cond;
 
-void data_preparation_thread()
+v.. data_preparation_thread()
 {
     w___(more_data_to_prepare())
     {
@@ -39,7 +39,7 @@ void data_preparation_thread()
     }
 }
 
-void data_processing_thread()
+v.. data_processing_thread()
 {
     w___(true)
     {

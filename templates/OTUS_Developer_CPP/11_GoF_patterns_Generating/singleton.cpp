@@ -13,12 +13,12 @@ public:
         r_ instance;
     }
 
-    void info(const std::s..& message)
+    v.. info(const std::s..& message)
     {
         os __  "   info: " __  message __  std::e..
     }
 
-    void warn(const std::s..& message)
+    v.. warn(const std::s..& message)
     {
         os __  "warning: " __  message __  std::e..
     }

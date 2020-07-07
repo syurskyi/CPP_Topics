@@ -3,53 +3,53 @@
 
 u.. s..
 
-void Alarm::alarmOn()
+v.. Alarm::alarmOn()
 {
     c__ __  "Alarm is on and house is secured" __  e..
 }
 
-void Alarm::alarmOff()
+v.. Alarm::alarmOff()
 {
     c__ __  "Alarm is off and you can go into the house" __  e..
 }
 
-void Ac::acOn()
+v.. Ac::acOn()
 {
     c__ __  "Ac is on" __  e..
 }
 
-void Ac::acOff()
+v.. Ac::acOff()
 {
     c__ __  "AC is off" __  e..
 }
 
-void Tv::tvOn()
+v.. Tv::tvOn()
 {
     c__ __  "Tv is on" __  e..
 }
 
-void Tv::tvOff()
+v.. Tv::tvOff()
 {
     c__ __  "TV is off" __  e..
 }
 
 HouseFacade::HouseFacade() {}
 
-void HouseFacade::goToWork()
+v.. HouseFacade::goToWork()
 {
     ac.acOff();
     tv.tvOff();
     alarm.alarmOn();
 }
 
-void HouseFacade::comeHome()
+v.. HouseFacade::comeHome()
 {
     alarm.alarmOff();
     ac.acOn();
     tv.tvOn();
 }
 
-void ClientFacade::run()
+v.. ClientFacade::run()
 {
     HouseFacade hf;
 

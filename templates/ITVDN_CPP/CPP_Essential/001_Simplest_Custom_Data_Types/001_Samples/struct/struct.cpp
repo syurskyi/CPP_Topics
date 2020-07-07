@@ -6,7 +6,7 @@ u.. s..
 typedef unsigned in. uin.;
 enum class Color : long long;
 
-void foo(Color a);
+v.. foo(Color a);
 
 enum class Color : long long {red _ -300000000000000, yellow _ -3, green _ 0, blue};
 

@@ -9,13 +9,13 @@ Core::~Core()
     std::c__ __  "Core destructor called.\n";
 }
 
-void Core::write( std::s..& /*text*/ ){}; // Do nothing.
+v.. Core::write( std::s..& /*text*/ ){}; // Do nothing.
 
 Decorator::Decorator( std::unique_ptr< in.erface > c )
 {
     in.erface _ std::move( c );
 }
-void Decorator::write( std::s..& text )
+v.. Decorator::write( std::s..& text )
 {
     in.erface->write( text );
 }
@@ -30,7 +30,7 @@ MessengerWithSalutation::~MessengerWithSalutation()
 {
     std::c__ __  "Messenger destructor called.\n";
 }
-void MessengerWithSalutation::write( std::s..& text )
+v.. MessengerWithSalutation::write( std::s..& text )
 {
     text _ salutation + "\n\n" + text;
     Decorator::write( text );
@@ -46,13 +46,13 @@ MessengerWithValediction::~MessengerWithValediction()
 {
     std::c__ __  "MessengerWithValediction destructor called.\n";
 }
-void MessengerWithValediction::write( std::s..& text )
+v.. MessengerWithValediction::write( std::s..& text )
 {
     Decorator::write( text );
     text +_ "\n\n" + valediction;
 }
 
-void ClientDecorator::run()
+v.. ClientDecorator::run()
 {
     const std::s.. salutation _ "Greetings,";
     const std::s.. valediction _ "Sincerly, Andy";

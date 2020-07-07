@@ -6,7 +6,7 @@
 class Image
 {
 public:
-    void resize(in., in.) {};
+    v.. resize(in., in.) {};
 };
 
 class ImageResizer

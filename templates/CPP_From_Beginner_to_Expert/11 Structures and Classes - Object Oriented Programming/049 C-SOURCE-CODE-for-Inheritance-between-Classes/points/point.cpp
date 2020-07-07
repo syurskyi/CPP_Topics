@@ -13,7 +13,7 @@ Poin.::~Poin.()
 {
     c__ __  "The destructor from the Point class has just been invoked" __  e..
 }
-void Poin.::setX(in. x)
+v.. Poin.::setX(in. x)
 {
     this->x _ x;
     c__ __  "Im from Point" __  e..
@@ -29,16 +29,16 @@ Poin.2D::~Poin.2D()
     c__ __  "The destructor from the Point2D class has just been invoked" __  e..
 }
 
-void Poin.2D::setY(in. y)
+v.. Poin.2D::setY(in. y)
 {
     this->y _ y;
 }
-void Poin.2D::setXY(in. x, in. y)
+v.. Poin.2D::setXY(in. x, in. y)
 {
     setX(x);
     setY(y);
 }
-void Poin.2D::setX(in. x)
+v.. Poin.2D::setX(in. x)
 {
     this->x _ x;
     c__ __  "Im from Point2D" __  e..

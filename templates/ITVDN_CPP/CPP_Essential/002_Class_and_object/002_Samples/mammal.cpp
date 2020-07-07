@@ -19,7 +19,7 @@ Mammal::Mammal(const Mammal& other)
     ptr _ new in.[10];
 }
 
-void Mammal::feed_milk()
+v.. Mammal::feed_milk()
 {
     std::c__ __  "done!" __  "\n";
 }

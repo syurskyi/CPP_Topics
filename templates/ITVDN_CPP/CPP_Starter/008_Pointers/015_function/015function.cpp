@@ -3,8 +3,8 @@
 
 #define SIZE 10
 
-void push(in. i);
-in. pop(void);
+v.. push(in. i);
+in. pop(v..);
 
 in. *top_s, *p1, stack[SIZE];
 
@@ -36,7 +36,7 @@ in. main()
 	r_ 0;
 }
 
-void push(in. i)
+v.. push(in. i)
 {
 	p1++;
 	__ (p1 __ (top_s + SIZE)) {
@@ -46,7 +46,7 @@ void push(in. i)
 	*p1 _ i;
 }
 
-in. pop(void)
+in. pop(v..)
 {
 	__ (p1 __ top_s)
 	{

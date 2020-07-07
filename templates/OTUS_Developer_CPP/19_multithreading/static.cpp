@@ -1,6 +1,6 @@
 ? |s..
 
-void foo()
+v.. foo()
 {
     static std::s.. hw{"Hello, World!"};
 };
@@ -8,7 +8,7 @@ void foo()
 bo.. hw_guard; // = 0, = false
 std::s.. hw;
 
-void bar()
+v.. bar()
 {
     __ (!hw_guard) {
         hw _ "Hello, World!";

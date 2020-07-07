@@ -29,16 +29,16 @@ public:
     }
 };
 
-void bar(const Big &) {
+v.. bar(const Big &) {
     std::c__ __  __PRETTY_FUNCTION__ __  std::e..
 }
 
-void bar(Big &&) {
+v.. bar(Big &&) {
     std::c__ __  __PRETTY_FUNCTION__ __  std::e..
 }
 
 template<typename T>
-void foo(T &&t) {
+v.. foo(T &&t) {
     std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     bar(std::forward<T>(t));
 }

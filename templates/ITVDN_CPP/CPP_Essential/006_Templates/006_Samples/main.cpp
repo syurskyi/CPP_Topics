@@ -19,7 +19,7 @@ template <typename T _ in.>
 class A
 {
 public:
-    void process()
+    v.. process()
     {
         c__ __  a * 100 __  e..
     }
@@ -31,7 +31,7 @@ template <>
 class A|s..
 {
 public:
-    void process()
+    v.. process()
     {
         c__ __  a + a __  e..
     }
@@ -44,14 +44,14 @@ class A<T*>
 {
 public:
     template<typename V>
-    void process();
+    v.. process();
 
     T* a;
 };
 
 template <typename T>
 template <typename V>
-void A<T*>::process()
+v.. A<T*>::process()
 {
     c__ __  static_cast<V>(*a) __  e..
 }

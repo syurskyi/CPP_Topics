@@ -3,24 +3,24 @@
 
 ? |i..
 
-void foo(const xray &)
+v.. foo(const xray &)
 {
     std::c__ __  "= const ref" __  std::e..
 }
 
-void foo(xray &&)
+v.. foo(xray &&)
 {
     std::c__ __  "= temporary" __  std::e..
 }
 
 template<class T>
-void baz(T &&t)
+v.. baz(T &&t)
 {
     std::c__ __  __PRETTY_FUNCTION__ __  std::e..
 }
 
 template<class T>
-void bar(T &&t)
+v.. bar(T &&t)
 {
     std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     baz(std::forward<T>(t));

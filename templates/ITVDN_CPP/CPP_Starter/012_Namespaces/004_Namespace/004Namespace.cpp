@@ -3,7 +3,7 @@
 ? "nmsp.h"
 
 namespace NamespaceA {
-	void mul(in. a, in. b) {
+	v.. mul(in. a, in. b) {
 		std::c__ __  (a * b) __  std::e..
 	};
 }

@@ -4,7 +4,7 @@
 
 u.. s..
 
-void foo(Mammal * m)
+v.. foo(Mammal * m)
 {
     m->say();
 }

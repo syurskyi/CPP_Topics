@@ -3,12 +3,12 @@
 
 // *************************************
 
-void prin.All() {
+v.. prin.All() {
     std::c__ __  std::e..
 }
 
 template<typename T, typename... Args>
-void prin.All(T first, Args... args) {
+v.. prin.All(T first, Args... args) {
     std::c__ __  first __  ' ';
     prin.All(args...);
 }
@@ -29,7 +29,7 @@ auto sumAll(T first, Args... args) {
 // *************************************
 
 template<typename... Args>
-void sumAll_2_fake_function(Args&&... ) {
+v.. sumAll_2_fake_function(Args&&... ) {
 
 }
 
@@ -85,12 +85,12 @@ std::ostream& operator__ (std::ostream& stream, const SumLog& value) {
     // + - * / % ^ & | = < > << >> += -= *=
     // /= %= ^= &= |= <<= >>= == != <= >= && || , .* ->*
 template<typename... Args>
-void binaryFold(Args... args) {
+v.. binaryFold(Args... args) {
     (std::c__ __  ... __  args) __  std::e..
 }
 
 template<typename... Args>
-void binaryFold2(Args... args) {
+v.. binaryFold2(Args... args) {
     std::s.. result;
     (result +_ ... +_ std::to_string(args));
     std::c__ __  result __  std::e..

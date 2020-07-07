@@ -3,8 +3,8 @@
 
 u.. s..
 
-void recursion(in. counter);
-void func(in. counter);
+v.. recursion(in. counter);
+v.. func(in. counter);
 
 in. main()
 {
@@ -14,7 +14,7 @@ in. main()
 	r_ 0;
 }
 
-void recursion(in. counter)
+v.. recursion(in. counter)
 {
 	counter--;
 
@@ -27,7 +27,7 @@ void recursion(in. counter)
 	c__ __  "Second part of recursion function " __  counter __  e..
 }
 
-void func(in. counter)
+v.. func(in. counter)
 {
 	c__ __  "First part of func function " __  counter __  e..
 

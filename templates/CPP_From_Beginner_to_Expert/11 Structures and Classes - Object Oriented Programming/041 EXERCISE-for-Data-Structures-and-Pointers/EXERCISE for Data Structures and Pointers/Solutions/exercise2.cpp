@@ -9,7 +9,7 @@ struct book
     in. publicationYear;
 };
 
-void setBook(book&);
+v.. setBook(book&);
 
 in. main()
 {
@@ -22,7 +22,7 @@ in. main()
     r_ 0;
 }
 
-void setBook(book &bookToSet)
+v.. setBook(book &bookToSet)
 {
     c__ __  "Who is the author of the book: ";
     c__ __ bookToSet.author;

@@ -4,12 +4,12 @@
 
 struct ClockSignal {
     virtual ~ClockSignal() _ default;
-    virtual void now() _ 0;
+    virtual v.. now() _ 0;
 };
 
 class in.ernetClockSignal : public ClockSignal
 {
-    void now() override
+    v.. now() override
     {
         std::c__ __  "internet clock" __  std::e..
     }
@@ -17,7 +17,7 @@ class in.ernetClockSignal : public ClockSignal
 
 class LocalClockSignal : public ClockSignal
 {
-    void now() override
+    v.. now() override
     {
         std::c__ __  "local clock" __  std::e..
     }
@@ -28,17 +28,17 @@ struct Clock {
 
     virtual ~Clock() _ default;
 
-    void refresh()
+    v.. refresh()
     {
         s->now();
         display();
     }
-    virtual void display() _ 0;
+    virtual v.. display() _ 0;
 };
 
 class DigitalClock : public Clock
 {
-    void display()
+    v.. display()
     {
         std::c__ __  "digital" __  std::e..
     }
@@ -46,7 +46,7 @@ class DigitalClock : public Clock
 
 class AnalogClock : public Clock
 {
-    void display()
+    v.. display()
     {
         std::c__ __  "analog" __  std::e..
     }

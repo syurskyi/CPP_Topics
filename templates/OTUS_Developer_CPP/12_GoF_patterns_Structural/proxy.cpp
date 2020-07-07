@@ -5,17 +5,17 @@
 class ILogger
 {
 public:
-    virtual void info() _ 0;
-    virtual void error() _ 0;
+    virtual v.. info() _ 0;
+    virtual v.. error() _ 0;
 };
 
 class Logger : public ILogger
 {
-    void info() override
+    v.. info() override
     {
         std::c__ __  "info" __  std::e..
     }
-    void error() override
+    v.. error() override
     {
         std::c__ __  "error" __  std::e..
     }
@@ -29,13 +29,13 @@ class LevelLogger : public ILogger
 public:
     LevelLogger(in. level_, ILogger *logger_) : level(level_), logger(logger_) {};
 
-    void info() override
+    v.. info() override
     {
         __ (level > 0) {
             logger->info();
         }
     }
-    void error() override
+    v.. error() override
     {
         logger->error();
     }

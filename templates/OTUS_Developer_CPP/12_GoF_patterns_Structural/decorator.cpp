@@ -5,12 +5,12 @@
 class File
 {
 public:
-    virtual void write() _ 0;
+    virtual v.. write() _ 0;
 };
 
 class RawFile : public File
 {
-    void write() override
+    v.. write() override
     {
         std::c__ __  "write" __  std::e..
     }
@@ -20,7 +20,7 @@ class ZipFile : public File
 {
     File *file;
 
-    void write() override
+    v.. write() override
     {
         std::c__ __  "compress" __  std::e..
         file->write();

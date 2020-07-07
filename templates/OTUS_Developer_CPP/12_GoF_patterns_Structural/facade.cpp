@@ -5,27 +5,27 @@
 class VideoControl
 {
 public:
-    void info() {};
-    void alert() {};
+    v.. info() {};
+    v.. alert() {};
 };
 
 class Database
 {
 public:
-    void create() {};
-    void update() {};
+    v.. create() {};
+    v.. update() {};
 };
 
 class Prin.er
 {
 public:
-    void prin.() {};
+    v.. prin.() {};
 };
 
 class Fiscal
 {
 public:
-    void report() {};
+    v.. report() {};
 };
 
 class Register
@@ -36,7 +36,7 @@ class Register
     Fiscal f;
 
 public:
-    void sale_doc()
+    v.. sale_doc()
     {
         db.create();
         vc.info();
@@ -44,7 +44,7 @@ public:
         f.report();
     };
 
-    void ret_doc()
+    v.. ret_doc()
     {
         db.update();
         vc.alert();

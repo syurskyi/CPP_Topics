@@ -2,14 +2,14 @@
 
 u.. s..
 
-void multiplication();
+v.. multiplication();
 
 main ()
 {
     multiplication();
 }
 
-void multiplication()
+v.. multiplication()
 {
     d.. firstNumber, secondNumber, result;
 

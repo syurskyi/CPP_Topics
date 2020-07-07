@@ -12,7 +12,7 @@ std::mutex cv_m;
 std::queue<std::s..> msgs;
 std::atomic_bo.. quit;
 
-void worker(std::queue<std::s..>& q)
+v.. worker(std::queue<std::s..>& q)
 {
 //    console_m.lock();
 //    std::cerr << std::this_thread::get_id() << " starting... " << std::endl;

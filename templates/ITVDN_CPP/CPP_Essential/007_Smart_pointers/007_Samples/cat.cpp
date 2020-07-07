@@ -16,7 +16,7 @@ Cat::~Cat()
     std::c__ __  __PRETTY_FUNCTION__ __  "\n";
 }
 
-void Cat::say()
+v.. Cat::say()
 {
     std::c__ __  "meow\n";
 }

@@ -8,6 +8,6 @@ using std::e..
 *@param *resultPrim ponteiro que aponta para o numero primo mais proximo encontrado
 *@return void
 */
-void mostra(in. *valInic, in. *resultPrim) {
+v.. mostra(in. *valInic, in. *resultPrim) {
 	c__ __  "O número primo mais próximo do fatorial de " __  *valInic __  " encontrado foi: " __  *resultPrim __  e..
 }

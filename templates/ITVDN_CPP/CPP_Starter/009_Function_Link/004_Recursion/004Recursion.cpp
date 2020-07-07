@@ -3,7 +3,7 @@
 
 u.. s..
 
-void recursion(in. counter);
+v.. recursion(in. counter);
 
 in. main()
 {
@@ -13,7 +13,7 @@ in. main()
 	r_ 0;
 }
 
-void recursion(in. counter)
+v.. recursion(in. counter)
 {
 	counter--;
 

@@ -15,11 +15,11 @@ Mammal::Mammal(const Mammal& other)
     paws _ other.paws;
 }
 
-void Mammal::feed_milk()
+v.. Mammal::feed_milk()
 {
 }
 
-void Mammal::say()
+v.. Mammal::say()
 {
     std::c__ __  "say something\n";
 }

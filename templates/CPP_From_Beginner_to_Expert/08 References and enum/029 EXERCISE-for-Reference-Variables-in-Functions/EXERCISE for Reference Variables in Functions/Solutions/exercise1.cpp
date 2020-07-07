@@ -2,7 +2,7 @@
 
 u.. s..
 
-void setValue(in.&);
+v.. setValue(in.&);
 
 in. main ()
 {
@@ -15,7 +15,7 @@ in. main ()
     r_ 0;
 }
 
-void setValue(in. &variableToSet)
+v.. setValue(in. &variableToSet)
 {
     c__ __  "Input the value: ";
     c__ __ variableToSet;

@@ -8,63 +8,63 @@ class Application {
 public:
     Application();
 
-    void set_current(CommandHandler *h) {
+    v.. set_current(CommandHandler *h) {
         cmd_handler _ h;
     }
 
-    void login();
+    v.. login();
 
-    void do_it();
+    v.. do_it();
 
-    void logout();
+    v.. logout();
 };
 
 class CommandHandler {
 public:
-    virtual void login(Application *) _ 0;
-    virtual void do_it(Application *) _ 0;
-    virtual void logout(Application *) _ 0;
+    virtual v.. login(Application *) _ 0;
+    virtual v.. do_it(Application *) _ 0;
+    virtual v.. logout(Application *) _ 0;
 };
 
-void Application::login() {
+v.. Application::login() {
     cmd_handler->login(this);
 }
 
-void Application::do_it() {
+v.. Application::do_it() {
     cmd_handler->do_it(this);
 }
 
-void Application::logout() {
+v.. Application::logout() {
     cmd_handler->logout(this);
 }
 
 
 class LogginedHandler : public CommandHandler {
 public:
-    void login(Application *) override {
+    v.. login(Application *) override {
         std::c__ __  "already login" __  std::e..
     }
-    void do_it(Application *) override {
+    v.. do_it(Application *) override {
         std::c__ __  "success" __  std::e..
     }
-    void logout(Application *m) override;
+    v.. logout(Application *m) override;
 };
 
 class Anonymous : public CommandHandler {
 public:
-    void login(Application *m) override {
+    v.. login(Application *m) override {
         std::c__ __  "work as loggined" __  std::e..
         m->set_current(new LogginedHandler());
     }
-    void do_it(Application *) override {
+    v.. do_it(Application *) override {
         std::c__ __  "error" __  std::e..
     }
-    void logout(Application *) override {
+    v.. logout(Application *) override {
         std::c__ __  "already logout" __  std::e..
     }
 };
 
-void LogginedHandler::logout(Application *m) {
+v.. LogginedHandler::logout(Application *m) {
     std::c__ __  "work as anonymous" __  std::e..
     m->set_current(new Anonymous());
 }

@@ -3,7 +3,7 @@
 
 u.. s..
 
-void add(in., in., in. &);
+v.. add(in., in., in. &);
 
 in. main()
 {
@@ -24,7 +24,7 @@ in. main()
 	r_ 0;
 }
 
-void add(in. x, in. y, in. &sum)
+v.. add(in. x, in. y, in. &sum)
 {
 	sum _ x + y;
 }

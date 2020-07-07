@@ -4,7 +4,7 @@
 u.. s..
 /* function templates generalization*/
 
-void operationOnPoin.s();
+v.. operationOnPoin.s();
 
 template<typename T, typename T2>
 T add(T var1, T2 var2)
@@ -35,7 +35,7 @@ in. main()
 
     r_ 0;
 }
-void operationOnPoin.s()
+v.. operationOnPoin.s()
 {
  //   PointInt a(5);
     Poin.<in.*> b(49);

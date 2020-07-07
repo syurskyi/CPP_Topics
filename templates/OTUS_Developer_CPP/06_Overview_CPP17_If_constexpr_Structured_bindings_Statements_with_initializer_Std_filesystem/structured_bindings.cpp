@@ -7,7 +7,7 @@ u.. std::string_literals;
 
 
 // std::map motivation
-void func_map() {
+v.. func_map() {
     std::map<in., std::s..> map;
 
     std::c__ __  "\nfunc_map()\n";
@@ -33,7 +33,7 @@ struct POD {
     std::s.. s;
 };
 
-void func_pod() {
+v.. func_pod() {
     std::c__ __  "\nfunc_pod()\n";
     POD pod{41, 2.0, "Vasia"};
     auto &[i, d, s] _ pod;
@@ -48,7 +48,7 @@ auto getTuple() {
     r_ std::tuple{41, 2.0, "Vasia"s};
 }
 
-void func_tuple() {
+v.. func_tuple() {
     std::c__ __  "\nfunc_tuple\n";
     std::s.. name;
     std::tie(std::ignore, std::ignore, name) _ getTuple();
@@ -132,7 +132,7 @@ auto get(const Employee &employee) {
     static_assert(Index >= 0 && Index <= 2, "Something wrong!");
 };
 */
-void func_employee() {
+v.. func_employee() {
     std::c__ __  "\nfunc_employee\n";
     Employee employee{42, "Petia", "Ivanofff"};
     auto&[age, name, secondName] _ employee;

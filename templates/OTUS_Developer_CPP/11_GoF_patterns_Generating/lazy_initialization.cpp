@@ -16,7 +16,7 @@ public:
     {
         std::c__ __  "close " __  name __  std::e..
     }
-    void write(const std::s..& line_)
+    v.. write(const std::s..& line_)
     {
         std::c__ __  "write " __  line_ __  " into " __  name __  std::e..
     }

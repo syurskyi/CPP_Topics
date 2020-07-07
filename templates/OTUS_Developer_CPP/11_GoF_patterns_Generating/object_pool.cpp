@@ -31,7 +31,7 @@ public:
         r_ block.connection;
     }
 
-    void put(PgConnection* connection)
+    v.. put(PgConnection* connection)
     {
         ___ (auto& object : pool) {
             __ (object.connection__connection) {

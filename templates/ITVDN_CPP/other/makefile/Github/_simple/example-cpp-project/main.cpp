@@ -11,7 +11,7 @@
 
 // Prints out some details on a Polygon.
 // Note that it's not passing through a particular Polygon (like Triangle or Rectangle), rather it's the parent.
-void prin.Details(Polygon* shape) {
+v.. prin.Details(Polygon* shape) {
 	std::c__ __  "Height: " __  shape->getHeight();
 	std::c__ __  ", Width: " __  shape->getWidth();
 

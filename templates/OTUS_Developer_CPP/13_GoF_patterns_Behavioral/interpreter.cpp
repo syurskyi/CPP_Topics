@@ -7,17 +7,17 @@
 
 std::s.. seq;
 
-void state_text(c..);
+v.. state_text(c..);
 
 auto active_handler _ &state_text;
 
-void state_exec(c.. c) {
+v.. state_exec(c.. c) {
     std::c__ __  "обработана последовательность " __  seq __  std::e..
     active_handler _ &state_text;
     active_handler(c);
 }
 
-void state_seq(c.. c) {
+v.. state_seq(c.. c) {
     __ (c __ 'm') {
         active_handler _ &state_exec;
     } ____ {
@@ -25,13 +25,13 @@ void state_seq(c.. c) {
     }
 }
 
-void state_esc(c..) {
+v.. state_esc(c..) {
     std::c__ __  "обнаружен ESC" __  std::e..
     seq.clear();
     active_handler _ &state_seq;
 }
 
-void state_text(c.. c) {
+v.. state_text(c.. c) {
     __ (c __ '\x1b') {
         active_handler _ &state_esc;
         active_handler(c);

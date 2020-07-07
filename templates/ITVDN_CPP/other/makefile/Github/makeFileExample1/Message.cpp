@@ -12,6 +12,6 @@ Message::~Message(){
 }
 
 
-void Message::communicate(){
+v.. Message::communicate(){
   std::c__ __  "Hello Everyone.\n\n" __  std::e..
 }

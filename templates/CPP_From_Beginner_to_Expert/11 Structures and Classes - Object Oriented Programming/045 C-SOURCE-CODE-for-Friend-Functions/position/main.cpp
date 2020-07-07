@@ -3,7 +3,7 @@
 
 u.. s..
 
-void setX(Position &, in.);
+v.. setX(Position &, in.);
 in. main()
 {
     Position dog(10, 50);
@@ -20,7 +20,7 @@ in. main()
 
     r_ 0;
 }
-void setX(Position & obj, in. value)
+v.. setX(Position & obj, in. value)
 {
     //Position &obj = dog;
     obj.x _ value;

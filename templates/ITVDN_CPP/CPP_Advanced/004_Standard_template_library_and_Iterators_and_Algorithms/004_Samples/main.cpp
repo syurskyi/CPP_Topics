@@ -16,14 +16,14 @@ bo.. test_bidirectional _
     std::is_same< typename std::iterator_traits< typename T::iterator >::iterator_category,
                   std::bidirectional_iterator_tag >::value;
 
-void prin._is_forward_iterator()
+v.. prin._is_forward_iterator()
 {
     std::c__ __  std::bo..alpha __  test< std::forward_list< in. > > __  std::e..
     // what about std::list?
     std::c__ __  std::bo..alpha __  test< std::list< in. > > __  std::e..
 }
 
-void prin._is_bidirectional_iterator()
+v.. prin._is_bidirectional_iterator()
 {
     std::c__ __  std::bo..alpha __  test_bidirectional< std::list< in. > > __  std::e..
     // what about std::forward_list?

@@ -10,7 +10,7 @@ struct personalData
     s.. telephoneNumber;
     sh.. age;
 }a,b;
-void test(personalData *);
+v.. test(personalData *);
 in. main()
 {
     personalData person[5];
@@ -42,7 +42,7 @@ in. main()
     c__ __  p->name __  e..
     r_ 0;
 }
-void test(personalData *person)
+v.. test(personalData *person)
 {
     person->name _ "Agnes";
 }

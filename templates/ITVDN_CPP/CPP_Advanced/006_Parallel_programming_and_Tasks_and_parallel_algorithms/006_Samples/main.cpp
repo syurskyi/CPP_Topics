@@ -7,7 +7,7 @@
 ? <thread>
 ? <vector>
 
-void accumulate( std::vector< in. >::iterator first,
+v.. accumulate( std::vector< in. >::iterator first,
                  std::vector< in. >::iterator last,
                  std::promise< in. > accumulate_promise )
 {
@@ -15,7 +15,7 @@ void accumulate( std::vector< in. >::iterator first,
     accumulate_promise.set_value( sum ); // Notify future
 }
 
-void do_work( std::promise< void > barrier )
+v.. do_work( std::promise< v.. > barrier )
 {
     std::this_thread::sleep_for( std::chrono::seconds( 1 ) );
     barrier.set_value();
@@ -41,8 +41,8 @@ in. main()
     work_thread.join(); // wait for thread completion
 
     // Demonstrate using promise<void> to signal state between threads.
-    std::promise< void > barrier;
-    std::future< void > barrier_future _ barrier.get_future();
+    std::promise< v.. > barrier;
+    std::future< v.. > barrier_future _ barrier.get_future();
     std::thread new_work_thread( do_work, std::move( barrier ) );
     barrier_future.wait();
     new_work_thread.join();

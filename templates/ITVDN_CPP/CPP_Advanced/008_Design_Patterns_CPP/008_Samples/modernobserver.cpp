@@ -7,7 +7,7 @@
 ModernObserver::ModernObserver( UpdateDelegate updateDelegate )
     : updateDelegate( updateDelegate ){};
 
-void ModernObserver::update( in. value )
+v.. ModernObserver::update( in. value )
 {
     __ ( updateDelegate )
     {
@@ -15,18 +15,18 @@ void ModernObserver::update( in. value )
     }
 }
 
-void ModernSubject::attach( const ModernObserver& obs )
+v.. ModernSubject::attach( const ModernObserver& obs )
 {
     m_views.push_back( obs );
 }
 
-void ModernSubject::set_val( in. value )
+v.. ModernSubject::set_val( in. value )
 {
     m_value _ value;
     notify();
 }
 
-void ModernSubject::notify()
+v.. ModernSubject::notify()
 {
     ___ ( auto& it : m_views )
     {
@@ -44,7 +44,7 @@ ModernDivObserver::ModernDivObserver( ModernSubject* model, in. div )
     }
 }
 
-void ModernDivObserver::update( in. v )
+v.. ModernDivObserver::update( in. v )
 {
     std::c__ __  v __  " div " __  m_div __  " is " __  v / m_div __  '\n';
 }
@@ -59,12 +59,12 @@ ModernModObserver::ModernModObserver( ModernSubject* model, in. mod )
     }
 }
 
-void ModernModObserver::update( in. v )
+v.. ModernModObserver::update( in. v )
 {
     std::c__ __  v __  " mod " __  m_mod __  " is " __  v % m_mod __  '\n';
 }
 
-void ClientModernObserver::run()
+v.. ClientModernObserver::run()
 {
     ModernSubject subj;
     ModernDivObserver divObs1( &subj, 4 );

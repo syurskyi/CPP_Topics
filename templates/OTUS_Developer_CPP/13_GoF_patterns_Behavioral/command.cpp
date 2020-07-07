@@ -13,19 +13,19 @@ class Document {
     std::s.. text;
 
 public:
-    void create()
+    v.. create()
     {
         std::c__ __  "new document" __  std::e..
         text.clear();
     }
 
-    void new_para(const std::s..& para)
+    v.. new_para(const std::s..& para)
     {
         text +_ para+"\n";
         std::c__ __  "new para " __  para __  std::e..
     }
 
-    void save_as(const std::s..& name)
+    v.. save_as(const std::s..& name)
     {
         std::c__ __  "--- " __  name __  "---" __  std::e..
         std::c__ __  text __  std::e..
@@ -36,9 +36,9 @@ class Command {
 public:
     virtual ~Command() _ default;
 
-    virtual void execute() _ 0;
+    virtual v.. execute() _ 0;
 
-    virtual void py() _ 0;
+    virtual v.. py() _ 0;
 
 protected:
     explicit Command(Document* d)
@@ -52,12 +52,12 @@ public:
     explicit NewDocumentCommand(Document* d)
             :Command(d) { }
 
-    void execute() override
+    v.. execute() override
     {
         document->create();
     }
 
-    void py() override
+    v.. py() override
     {
         std::c__ __  "text = []" __  std::e..
     }
@@ -69,12 +69,12 @@ public:
     ParaCommand(Document* d, std::s.. text_)
             :Command(d), text(std::move(text_)) { }
 
-    void execute() override
+    v.. execute() override
     {
         document->new_para(text);
     }
 
-    void py() override
+    v.. py() override
     {
         std::c__ __  "text.append(\"" __  text __  "\")" __  std::e..
     }
@@ -86,12 +86,12 @@ public:
     SaveAsCommand(Document* d, std::s.. fname_)
             :Command(d), fname(std::move(fname_)) { }
 
-    void execute() override
+    v.. execute() override
     {
         document->save_as(fname);
     }
 
-    void py() override
+    v.. py() override
     {
         std::c__ __  "with open(\"" __  fname __  """\", \"w\") as f:" __  std::e..
         std::c__ __  "  f.write(\"\\n\".join(text))" __  std::e..

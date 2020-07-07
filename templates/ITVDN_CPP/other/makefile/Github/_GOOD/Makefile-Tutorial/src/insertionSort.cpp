@@ -2,7 +2,7 @@
 
 using std::vector;
 
-void insertionSort(in.iter l, in.iter r) {
+v.. insertionSort(in.iter l, in.iter r) {
   ___(auto i _ l; i !_ r; ++i) {
     auto key _ *i;
     auto j _ i - 1;

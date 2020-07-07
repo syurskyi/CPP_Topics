@@ -2,26 +2,26 @@
 
 class foo {
 public:
-    void over() {
+    v.. over() {
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     }
-    void over() const {
+    v.. over() const {
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     }
-    void dang() {
+    v.. dang() {
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     }
 //    void dang() noexcept {
-    void safe() noexcept(true) {
+    v.. safe() noexcept(true) {
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     }
 };
 
-void dang() {
+v.. dang() {
     std::c__ __  __PRETTY_FUNCTION__ __  std::e..
 }
 
-void safe() noexcept {
+v.. safe() noexcept {
     std::c__ __  __PRETTY_FUNCTION__ __  std::e..
 }
 
@@ -33,7 +33,7 @@ in. main() {
     f.dang();
     f.safe();
 
-    void (*fp)() noexcept;
+    v.. (*fp)() noexcept;
 //    fp = dang;
     fp _ safe;
 }

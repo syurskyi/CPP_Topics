@@ -3,8 +3,8 @@
 
 u.. s..
 
-void ChangeValue(in. a, in. b);
-void ChangeValueWithPoin.ers(in. *a, in. *b);
+v.. ChangeValue(in. a, in. b);
+v.. ChangeValueWithPoin.ers(in. *a, in. *b);
 
 in. main()
 {
@@ -24,7 +24,7 @@ in. main()
 	r_ 0;
 }
 
-void ChangeValue(in. a, in. b)
+v.. ChangeValue(in. a, in. b)
 {
 	in. tmp _ a;
 
@@ -32,7 +32,7 @@ void ChangeValue(in. a, in. b)
 	b _ tmp;
 }
 
-void ChangeValueWithPoin.ers(in. *a, in. *b)
+v.. ChangeValueWithPoin.ers(in. *a, in. *b)
 {
 	in. tmp _ *a;
 

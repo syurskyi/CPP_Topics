@@ -26,13 +26,13 @@ namespace namespaces
 {
 namespace n1::n2
 {
-void f()
+v.. f()
 {
     c__ __  "f()" __  e..
 }
 }
 
-void example()
+v.. example()
 {
     n1::n2::f();
 }
@@ -40,7 +40,7 @@ void example()
 
 namespace ext_aggregate
 {
-void example()
+v.. example()
 {
     // aggregate
     struct base1
@@ -85,13 +85,13 @@ void example()
 namespace fold_expression
 {
 template < typename... Args >
-void prin.er( Args&&... args )
+v.. prin.er( Args&&... args )
 {
     ( c__ __  ... __  args ) __  '\n';
 }
 
 template < typename T, typename... Args >
-void push_back_vec( vector< T >& v, Args&&... args )
+v.. push_back_vec( vector< T >& v, Args&&... args )
 {
     ( v.push_back( args ), ... );
 }
@@ -108,7 +108,7 @@ bo.. compare( Args... args )
     r_ ( args && ... );
 }
 
-void example()
+v.. example()
 {
     prin.er( 1, 2, 3, "abc" );
     prin.er( 1, ", ", 2, ", ", 3, ", ", "abc" );
@@ -129,19 +129,19 @@ namespace auto_tmpl_param
 {
 // before c++17
 template < typename T, T val >
-void early()
+v.. early()
 {
     c__ __  val __  e..
 }
 
 // since c++17
 template < auto val >
-void now()
+v.. now()
 {
     c__ __  val __  e..
 }
 
-void example()
+v.. example()
 {
     early< in., 10 >();
     early< c.., 'H' >();
@@ -154,7 +154,7 @@ void example()
 }
 namespace tmpl_arg_deduction
 {
-void example()
+v.. example()
 {
     pair< in., s.. > p_a( 1, "12" );
 
@@ -175,7 +175,7 @@ constexpr in. f_calc( in. aValue )
     r_ aValue + lambda();
 }
 
-void example()
+v.. example()
 {
     constexpr auto lambda _ []( in. aValue ) { r_ aValue * aValue; };
 
@@ -187,7 +187,7 @@ namespace this_lambda
 {
 struct test
 {
-    void f_test()
+    v.. f_test()
     {
         auto lambda_const _ [*this]() {
             f_const();
@@ -204,13 +204,13 @@ struct test
     }
 
 private:
-    void f_const() const { c__ __  "f_const()" __  e.. }
+    v.. f_const() const { c__ __  "f_const()" __  e.. }
 
-    void f() { c__ __  "f()" __  e.. }
+    v.. f() { c__ __  "f()" __  e.. }
 
     in. mA{ 100 };
 };
-void example()
+v.. example()
 {
     test t;
     t.f_test();
@@ -227,7 +227,7 @@ struct S
 };
 
 template < std::size_t aFieldNubmer >
-void prin.( S& s )
+v.. prin.( S& s )
 {
     __ constexpr ( aFieldNubmer __ 0 )
     {
@@ -245,7 +245,7 @@ void prin.( S& s )
     }
 }
 
-void example()
+v.. example()
 {
     S obj _ { 10, 11.f, { 1, 2, 3, 4 } };
 
@@ -256,15 +256,15 @@ void example()
 }
 namespace if_switch_initializer
 {
-void if_example( void* aP )
+v.. if_example( v..* aP )
 {
-    __ ( void* p _ aP; p __ nullptr )
+    __ ( v..* p _ aP; p __ nullptr )
         c__ __  "Error. Pointer is nullptr" __  e..
     ____
         c__ __  "Pointer is OK!" __  e..
 }
 
-void switch_example( in. error )
+v.. switch_example( in. error )
 {
     s.. ( in. code _ error; code )
     {
@@ -281,10 +281,10 @@ void switch_example( in. error )
     }
 }
 
-void example()
+v.. example()
 {
     if_example( nullptr );
-    if_example( ( void* ) 100 );
+    if_example( ( v..* ) 100 );
 
     switch_example( 0 );
     switch_example( 10 );
@@ -292,7 +292,7 @@ void example()
 }
 namespace struct_binding
 {
-void f_pair()
+v.. f_pair()
 {
     pair p _ { 1, "Hello" };
 
@@ -302,7 +302,7 @@ void f_pair()
     c__ __  y __  e..
 }
 
-void f_array()
+v.. f_array()
 {
     in. coord[ 4 ] _ { 1, 2, 3 };
 
@@ -313,7 +313,7 @@ void f_array()
     c__ __  z __  e..
 }
 
-void f_a()
+v.. f_a()
 {
     struct Config_a
     {
@@ -329,7 +329,7 @@ void f_a()
     d.push_back( 1 );
 }
 
-void example()
+v.. example()
 {
     f_pair();
     f_array();
@@ -344,7 +344,7 @@ void example()
 
 namespace new_attributes
 {
-void f_fallthrough()
+v.. f_fallthrough()
 {
     in. i _ rand() % 10;
     s.. ( i )
@@ -372,7 +372,7 @@ void f_fallthrough()
     r_ 0;
 }
 
-void example()
+v.. example()
 {
     f_fallthrough();
     f_nodiscard();
@@ -383,7 +383,7 @@ void example()
 
 namespace std_any
 {
-void example()
+v.. example()
 {
     std::any hm _ 10;
     c__ __  std::any_cast< in. >( hm ) __  e..
@@ -399,11 +399,11 @@ void example()
 namespace std_stringview
 {
 
-void getString( [[maybe_unused]] const std::s..& str ) {}
+v.. getString( [[maybe_unused]] const std::s..& str ) {}
 
-void getStringView( [[maybe_unused]] std::string_view strView ) {}
+v.. getStringView( [[maybe_unused]] std::string_view strView ) {}
 
-void example()
+v.. example()
 {
 
     std::c__ __  std::e..
@@ -456,7 +456,7 @@ optional< in. > strToin.( s.. aStr )
     r_ {};
 }
 
-void example()
+v.. example()
 {
     optional< in. > i;
     i _ strToin.( "" );
@@ -471,7 +471,7 @@ void example()
 
 namespace std_variant
 {
-void example()
+v.. example()
 {
     variant< in., c.., s.. > v;
 
@@ -487,7 +487,7 @@ namespace std_filesystem
 {
 namespace fs _ experimental::filesystem;
 
-void example()
+v.. example()
 {
     auto cur_p _ fs::current_path();
     c__ __  "current path - " __  cur_p __  e..

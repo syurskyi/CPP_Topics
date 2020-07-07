@@ -22,12 +22,12 @@ in. Polygon::getWidth() {
 }
 
 // Set the polygon height
-void Polygon::setHeight(in. height) {
+v.. Polygon::setHeight(in. height) {
 	m_height _ height;
 }
 
 // Set the polygon width
-void Polygon::setWidth(in. width) {
+v.. Polygon::setWidth(in. width) {
 	m_width _ width;
 }
 

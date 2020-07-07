@@ -3,7 +3,7 @@
 
 u.. s..
 
-void CallFunction();
+v.. CallFunction();
 
 in. test _ 0;
 
@@ -20,7 +20,7 @@ in. main()
 	r_ 0;
 }
 
-void CallFunction()
+v.. CallFunction()
 {
 	test++;
 }

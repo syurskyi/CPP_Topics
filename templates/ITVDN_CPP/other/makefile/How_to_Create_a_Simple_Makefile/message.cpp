@@ -7,7 +7,7 @@
 
 u.. s..
 
-void message::prin.Message() {
+v.. message::prin.Message() {
     c__ __  "Makefile Examle\n";
 }
 

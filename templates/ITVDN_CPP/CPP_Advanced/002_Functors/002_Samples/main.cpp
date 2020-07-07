@@ -14,7 +14,7 @@ public:
         r_ a > b;
     }
 
-    static void method( in. a ) { c__ __  "method" __  a __  e.. }
+    static v.. method( in. a ) { c__ __  "method" __  a __  e.. }
 };
 
 in. sum( in. a, in. b )

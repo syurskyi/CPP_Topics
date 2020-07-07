@@ -4,8 +4,8 @@
 
 u.. s..
 
-void SampleFunction();
-void Global();
+v.. SampleFunction();
+v.. Global();
 
 s.. value _ "Global variable!";
 
@@ -23,14 +23,14 @@ in. main()
     r_ 0;
 }
 
-void SampleFunction()
+v.. SampleFunction()
 {
 	s.. value _ "Local variable in SampleFunction!";
 
 	c__ __  value __  e..
 }
 
-void Global()
+v.. Global()
 {
 	c__ __  value __  e..
 }

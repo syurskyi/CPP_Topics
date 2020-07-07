@@ -8,13 +8,13 @@ enum class Digit : in. {
     one, two, three
 };
 
-void accept_in.(in.) {
+v.. accept_in.(in.) {
 }
 
-void accept_class_enum(Digit) {
+v.. accept_class_enum(Digit) {
 }
 
-void accept_enum(Alphabet) {
+v.. accept_enum(Alphabet) {
 }
 
 in. main(in., c.. *[]) {

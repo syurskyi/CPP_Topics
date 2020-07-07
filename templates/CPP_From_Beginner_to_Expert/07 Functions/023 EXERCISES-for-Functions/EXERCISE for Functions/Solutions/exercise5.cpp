@@ -2,14 +2,14 @@
 
 u.. s..
 
-void exponentiation();
+v.. exponentiation();
 
 main ()
 {
     exponentiation();
 }
 
-void exponentiation()
+v.. exponentiation()
 {
     d.. base, exponent, result _ 1;
 

@@ -6,12 +6,12 @@
 struct IConnector {
     virtual ~IConnector() _ default;
 
-    virtual void connection() _ 0;
+    virtual v.. connection() _ 0;
     virtual IConnector* clone() _ 0;
 };
 
 class TcpConnector : public IConnector {
-    void connection() override
+    v.. connection() override
     {
         std::c__ __  "tcp connection" __  std::e..
     }
@@ -23,7 +23,7 @@ class TcpConnector : public IConnector {
 };
 
 class UdpConnector : public IConnector {
-    void connection() override
+    v.. connection() override
     {
         std::c__ __  "udp connection" __  std::e..
     }

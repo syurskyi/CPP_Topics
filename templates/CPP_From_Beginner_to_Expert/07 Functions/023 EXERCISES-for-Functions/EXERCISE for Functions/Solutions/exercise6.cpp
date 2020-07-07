@@ -3,12 +3,12 @@
 
 u.. s..
 
-void chooseOperation(c..);
-void addition();
-void subtraction();
-void multiplication();
-void division();
-void exponentiation();
+v.. chooseOperation(c..);
+v.. addition();
+v.. subtraction();
+v.. multiplication();
+v.. division();
+v.. exponentiation();
 
 
 in. main ()
@@ -27,7 +27,7 @@ in. main ()
     r_ 0;
 }
 
-void chooseOperation(c.. choice)
+v.. chooseOperation(c.. choice)
 {
     s..(choice)
     {
@@ -49,7 +49,7 @@ void chooseOperation(c.. choice)
     }
 }
 
-void addition()
+v.. addition()
 {
     d.. firstNumber, secondNumber, result;
 
@@ -63,7 +63,7 @@ void addition()
 
 }
 
-void subtraction()
+v.. subtraction()
 {
     d.. firstNumber, secondNumber, result;
 
@@ -77,7 +77,7 @@ void subtraction()
 
 }
 
-void multiplication()
+v.. multiplication()
 {
     d.. firstNumber, secondNumber, result;
 
@@ -91,7 +91,7 @@ void multiplication()
 
 }
 
-void division()
+v.. division()
 {
     d.. firstNumber, secondNumber, result;
 
@@ -105,7 +105,7 @@ void division()
 
 }
 
-void exponentiation()
+v.. exponentiation()
 {
     d.. base, exponent, result _ 1;
 

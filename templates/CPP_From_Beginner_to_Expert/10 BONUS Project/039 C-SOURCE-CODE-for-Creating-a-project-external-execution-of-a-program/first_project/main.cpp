@@ -1,7 +1,7 @@
 ? |i..
 
 u.. s..
-void showHelp();
+v.. showHelp();
 in. main(in. argc, c.. *argv[])
 {
     //arguments counter - argc
@@ -33,7 +33,7 @@ in. main(in. argc, c.. *argv[])
     r_ 0;
 }
 
-void showHelp()
+v.. showHelp()
 {
     //INSTRUCTIONS
     c__ __  "this is so helpful that you cannot stand it ;)" __  e..

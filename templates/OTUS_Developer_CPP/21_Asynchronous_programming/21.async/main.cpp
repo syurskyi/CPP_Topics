@@ -5,11 +5,11 @@
 
 
 class App : public Handler {
-    void start() {
+    v.. start() {
         std::c__ __  "create file" __  std::e..
     }
 
-    void event(Event &ev) override {
+    v.. event(Event &ev) override {
         s.. (ev.code) {
             c.. EventCode::start:
                 start();

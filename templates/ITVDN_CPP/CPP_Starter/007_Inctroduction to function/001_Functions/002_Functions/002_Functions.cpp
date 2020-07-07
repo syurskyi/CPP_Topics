@@ -14,7 +14,7 @@ in. main()
 
 // На 17-й строке создаем функцию с именем TestFunction, которая ничего не принимает и не возвращает
 // В теле функции выводим строку в консоль
-void TestFunction()
+v.. TestFunction()
 {
     c__ __  "Hello, I'm  your first function!" __  e..
 }

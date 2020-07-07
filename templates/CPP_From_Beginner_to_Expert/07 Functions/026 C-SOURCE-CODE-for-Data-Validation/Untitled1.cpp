@@ -4,8 +4,8 @@ u.. s..
 /*validating data
     buffer - temporary array
 */
-void initMenu();
-void menuDecision(in.);
+v.. initMenu();
+v.. menuDecision(in.);
 d.. areaCircle(d..);
 d.. areaSquare(d..);
 d.. areaRectangle(d.., d..);
@@ -48,7 +48,7 @@ in. main()
 
     r_ 0;
 }
-void initMenu()
+v.. initMenu()
 {
     c__ __  "Enter option:" __  e..
     c__ __  "1. Circle" __  e..
@@ -56,7 +56,7 @@ void initMenu()
     c__ __  "3. Rectangle" __  e..
     c__ __  "4. Triangle" __  e..
 }
-void menuDecision(in. choice)
+v.. menuDecision(in. choice)
 {
     d.. r, a, b, h;
     s..(choice)

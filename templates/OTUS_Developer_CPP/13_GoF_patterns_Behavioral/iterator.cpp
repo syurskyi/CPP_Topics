@@ -32,7 +32,7 @@ private:
             r_ i!_it.i || j!_it.j;
         }
 
-        void operator++()
+        v.. operator++()
         {
             __ (++j>__Size) {
                 j_0;

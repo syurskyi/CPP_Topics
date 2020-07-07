@@ -7,13 +7,13 @@ u.. s..
 
 mutex m;
 
-void foo()
+v.. foo()
 {
     lock_guard< mutex > guard( m );
     c__ __  "Hello World!" __  e..
 }
 
-void foo2()
+v.. foo2()
 {
     lock_guard< mutex > guard( m );
     c__ __  "Hello2 World!2" __  e..

@@ -6,7 +6,7 @@ u.. s..
 class DivisionByZeroException
 {
     public:
-        void getErrorMessage() { c__ __  "Error: Do not divide by zero"; }
+        v.. getErrorMessage() { c__ __  "Error: Do not divide by zero"; }
 };
 
 d.. division(d.. a, d.. b) throw(DivisionByZeroException)

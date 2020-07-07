@@ -3,6 +3,6 @@
 
 u.. s..
 
-void prin._hello(){
+v.. prin._hello(){
    c__ __  "Hello World!";
 }

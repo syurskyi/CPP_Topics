@@ -1,6 +1,6 @@
 ? "hello.h"
 
-void Hello::kevin()
+v.. Hello::kevin()
 {
   c__ __  "Hello Serhii" __  e..
 }

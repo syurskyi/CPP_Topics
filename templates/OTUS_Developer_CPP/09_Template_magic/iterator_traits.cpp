@@ -6,17 +6,17 @@
 ? <iterator>
 
 template<class BDIter>
-void alg(BDIter, BDIter, std::bidirectional_iterator_tag) {
+v.. alg(BDIter, BDIter, std::bidirectional_iterator_tag) {
     std::c__ __  "alg() called for bidirectional iterator\n";
 }
 
 template<class RAIter>
-void alg(RAIter, RAIter, std::random_access_iterator_tag) {
+v.. alg(RAIter, RAIter, std::random_access_iterator_tag) {
     std::c__ __  "alg() called for random-access iterator\n";
 }
 
 template<class Iter>
-void alg(Iter first, Iter last) {
+v.. alg(Iter first, Iter last) {
     alg(first, last, typename std::iterator_traits<Iter>::iterator_category());
 //    alg(first, last, typename Iter::iterator_category());
 }

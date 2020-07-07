@@ -3,7 +3,7 @@
 
 u.. s..
 
-void prin._square(c.. arr[][50], in. size);
+v.. prin._square(c.. arr[][50], in. size);
 
 in. main()
 {
@@ -23,7 +23,7 @@ in. main()
 	r_ 0;
 }
 
-void prin._square(c.. arr[][50], in. size)
+v.. prin._square(c.. arr[][50], in. size)
 {
 	___ (in. i _ 0; i < size; i++)
 	{

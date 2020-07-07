@@ -4,7 +4,7 @@
 
 u.. s..
 
-void Operation(s.. val1 _ "val", in. val2 _ 10, d.. val3 _ 12.2);
+v.. Operation(s.. val1 _ "val", in. val2 _ 10, d.. val3 _ 12.2);
 
 in. main()
 {
@@ -17,7 +17,7 @@ in. main()
 	system("pause");
 	r_ 0;
 }
-void Operation(s.. val1, in. val2, d.. val3)
+v.. Operation(s.. val1, in. val2, d.. val3)
 {
 	c__ __  val1 __  " " __  val2 __  " " __  val3 __  e..
 }

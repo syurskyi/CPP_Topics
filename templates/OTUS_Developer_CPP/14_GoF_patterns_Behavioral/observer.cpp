@@ -10,23 +10,23 @@ enum class Lang
 
 class Observer {
 public:
-    virtual void update(Lang lang) _ 0;
+    virtual v.. update(Lang lang) _ 0;
 };
 
 class Language {
     Lang lang{Lang::ru};
     std::vector<Observer *> subs;
 public:
-    void subscribe(Observer *obs) {
+    v.. subscribe(Observer *obs) {
         subs.push_back(obs);
     }
 
-    void set_language(Lang lang_) {
+    v.. set_language(Lang lang_) {
         lang _ lang_;
         notify();
     }
 
-    void notify() {
+    v.. notify() {
         ___ (auto s : subs) {
             s->update(lang);
         }
@@ -39,7 +39,7 @@ public:
         lang->subscribe(this);
     }
 
-    void update(Lang lang) override {
+    v.. update(Lang lang) override {
         std::c__ __  "switch report template to lang " __  in.(lang) __  std::e..
     }
 };
@@ -50,7 +50,7 @@ public:
         lang->subscribe(this);
     }
 
-    void update(Lang lang) override {
+    v.. update(Lang lang) override {
         std::c__ __  "refresh ui for lang " __  in.(lang) __  std::e..
     }
 };

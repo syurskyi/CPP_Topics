@@ -3,7 +3,7 @@
 u.. s..
 /* classes */
 
-void test()
+v.. test()
 {
     PersonalData *poin.er _ new PersonalData[5];
 
