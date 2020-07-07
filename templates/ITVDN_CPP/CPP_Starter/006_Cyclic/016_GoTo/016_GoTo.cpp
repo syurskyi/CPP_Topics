@@ -1,25 +1,25 @@
-? *s..
-? |i..
-
-u.. s..
-
-in. main()
-{
-
-	in. counter _ 0;
-
-Label:
-
-	counter++;
-	c__ __  "Counter = " __  counter __  e..
-
-	__ (counter < 3)
-	{
-		goto Label;
-	}
-
-	c__ __  "End";
-
-	c__.g..
-	r_ 0;
-}
+//? *s..
+//? |i..
+//
+//u.. s..
+//
+//in. main
+//
+//
+//	in. counter _ 0
+//
+//Label
+//
+//	?##
+//	c__ __  "Counter = " __  ? __  e..
+//
+//	__ ? < 3
+//
+//		____ L..
+//
+//
+//	c__ __  "End"
+//
+//	c__.g..
+//	r_ _
+//
