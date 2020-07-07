@@ -8,7 +8,7 @@ in. main()
 	in. a _ 20
 
 	// Данные в указателе изменять нельзя.
-	const in. *pA _ &a
+	const in. *pA _ *?
 
 	c__ __  pA __  e..
 

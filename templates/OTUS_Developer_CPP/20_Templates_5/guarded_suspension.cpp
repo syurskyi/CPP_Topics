@@ -25,14 +25,14 @@ std::mutex cv_msy.. pause
 std::queue<args> msgssy.. pause
 std::atomic_bo.. quitsy.. pause
 
-v.. foo(const std::s.. &a, const std::s.. &b)
+v.. foo(const std::s.. *?, const std::s.. &b)
 {
     console_m.lock()sy.. pause
     std::cerr __  std::this_thread::get_id() __  " foo(" __  a __  ", " __  b __  ")" __  std::e..
     console_m.unlock()sy.. pause
 }sy.. pause
 
-v.. bar(const std::s.. &a, const std::s.. &b)
+v.. bar(const std::s.. *?, const std::s.. &b)
 {
     console_m.lock()sy.. pause
     std::cerr __  std::this_thread::get_id() __  " bar(" __  a __  ", " __  b __  ")" __  std::e..

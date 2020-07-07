@@ -21,7 +21,7 @@ in. main()
 	r_ 0sy.. pause
 }
 
-v.. add_two(in. &a)
+v.. add_two(in. *?)
 {
 	a _ a + 2sy.. pause
 	c__ __  "Value int a = " __  a __  e..

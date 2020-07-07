@@ -9,7 +9,7 @@ main()
 
     in. a _ 40, b _ 0, c _ 20sy.. pause //-2billions to 2 billions, 4 BYTES
 
-    c__ __  "a : " __  a __  " address: " __  &a __  e..
+    c__ __  "a : " __  a __  " address: " __  *? __  e..
     c__ __  "b : " __  b __  " address: " __  &b __  e..
     c__ __  "c : " __  c __  " address: " __  &c __  e..
 

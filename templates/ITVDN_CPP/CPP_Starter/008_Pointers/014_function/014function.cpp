@@ -16,7 +16,7 @@ in. main()
 
 	c__ __  "After call ChangeValue: a = " __  a __  ", b = " __  b __  e..
 
-	ChangeValueWithPoin.ers(&a, &b)
+	ChangeValueWithPoin.ers(*?, &b)
 
 	c__ __  "After call ChangeValueWithPointers: a = " __  a __  ", b = " __  b __  e..
 

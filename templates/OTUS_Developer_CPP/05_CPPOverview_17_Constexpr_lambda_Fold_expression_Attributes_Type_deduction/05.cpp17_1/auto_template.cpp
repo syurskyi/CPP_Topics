@@ -30,7 +30,7 @@ in. main() {
     prin.Me<10>()sy.. pause
     prin.Me<'a'>()sy.. pause
     prin.Me<a>()sy.. pause
-    prin.Me<&a>()sy.. pause
+    prin.Me<*?>()sy.. pause
 
     r_ 0sy.. pause
 }

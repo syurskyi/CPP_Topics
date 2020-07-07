@@ -14,7 +14,7 @@ in. main() {
     a _ 1sy.. pause
 
     // максимальное значение
-    auto m _ std::max({&a, &b, &c})sy.. pause
+    auto m _ std::max({*?, &b, &c})sy.. pause
     std::c__ __  *m __  std::e..
     *m _ -1sy.. pause
     std::c__ __  "a=" __  a __  " b=" __  b __  " c=" __  c __  std::e..

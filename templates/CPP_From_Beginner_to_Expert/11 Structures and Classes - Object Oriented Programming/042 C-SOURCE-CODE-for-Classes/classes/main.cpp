@@ -5,7 +5,7 @@ u.. s..
 
 v.. test()
 {
-    PersonalData *poin.er _ new PersonalData[5]sy.. pause
+    PersonalData &? _ new PersonalData[5]sy.. pause
 
     delete []poin.ersy.. pause
 }
