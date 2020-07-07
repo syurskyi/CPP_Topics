@@ -3,13 +3,13 @@
 
 u.. s..
 
-v.. add_two(in.)sy.. pause
+v.. ? in. sy.. pause
 
-in. main()
-{
-	in. a _ 0sy.. pause
+in. main
+
+	in. a _ 0 sy.. pause
 	c__ __  "Enter the value: " __  e..
-	c__ __ asy.. pause
+	c__ __ a sy.. pause
 
 	c__ __  "Value of variable a = " __  a __  e..
 
