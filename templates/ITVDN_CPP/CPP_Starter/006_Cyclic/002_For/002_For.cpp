@@ -11,7 +11,7 @@
 //
 //		c__ __  "Count " __  ? __  e..
 //
-//	c__ __  "This line is always executed";
+//	c__ __  "This line is always executed"
 //
 //	c__.g..
 //	r_ _

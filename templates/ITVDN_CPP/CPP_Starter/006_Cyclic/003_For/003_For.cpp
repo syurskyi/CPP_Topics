@@ -13,10 +13,10 @@
 //
 //		b..	// Эта  инстукция остановит работу цикла, и предаст управление инструкцие находящейся после операторных скобок цикла
 //
-//		c__ __  "This line is never executed";
+//		c__ __  "This line is never executed"
 //
 //
-//	c__ __  "This line is always executed";
+//	c__ __  "This line is always executed"
 //
 //	c__.g..
 //	r_ _
