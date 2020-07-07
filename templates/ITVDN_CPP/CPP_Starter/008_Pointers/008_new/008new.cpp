@@ -3,17 +3,17 @@
 
 u.. s..
 
-in. main()
-{
-	in. *pAge _ new in.[10]
+in. main
 
-	pAge[0] _ 10
-	pAge[1] _ 20
+	in. &? _ ne. in. 10
 
-	c__ __  "First element - " __  pAge[0] __  ", second element - " __  pAge[1] __  e..
+	? 0 _ 10
+	? 1 _ 20
 
-	delete pAge
+	c__ __  "First element - " __  ? 0 __  ", second element - " __  ? 1 __  e..
+
+	d... ?
 
 	sy.. pause
 	r_ 0
-}
+

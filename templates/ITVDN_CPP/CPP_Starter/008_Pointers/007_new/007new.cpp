@@ -8,11 +8,11 @@
 //	in. &A.. _ ne. in.
 //
 //	c__ __  "Enter your age: "
-//	c__ __ &A..
+//	c__ __ &?
 //
-//	c__ __  "Age " __  &A.. __  " is stored at 0x" __  ? __  e..
+//	c__ __  "Age " __  &? __  " is stored at 0x" __  ? __  e..
 //
-//	del.. ?
+//	d.. ?
 //
 //	pAge _ 0
 //
