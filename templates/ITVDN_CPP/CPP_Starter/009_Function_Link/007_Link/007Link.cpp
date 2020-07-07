@@ -10,7 +10,7 @@
 ////	c__ __  "Variable a = " __   __  e..
 //
 //	// Создаем ссылку на переменную типа int
-//	in. *b _ a sy.. pause
+//	in. #b _ a sy.. pause
 //
 //	c__ __  "Variable a = " __  ? __  e..
 //	c__ __  "Change variable b" __  e..

@@ -7,7 +7,7 @@
 //
 //	in. a _ 10 sy.. pause
 //	in. &p_a _ &a sy.. pause
-//	in. *l_a _ a sy.. pause
+//	in. #l_a _ a sy.. pause
 //
 //	c__ __  "Value of variable: a = " __  ? __  "; p_a = " __  &? __  " (" __  ? __  "); l_a = " __  ? __  e..
 //
