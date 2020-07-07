@@ -15,27 +15,27 @@ in. main()
     char action;
     c__ __ action;
 
-    switch (action)
+    s.. (action)
     {
         case '1':
         {
             c__ __  "A new file has been created.." __  e..
-            break;
+            b..
         }
         case '2':
         {
             c__ __  "File saved." __  e..
-            break;
+            b..
         }
         case '3':
         {
             c__ __  "Good bye" __  e..
-            break;
+            b..
         }
         default:
         {
             c__ __  "Wrong choice, try again!";
-            break;
+            b..
         }
     }
 

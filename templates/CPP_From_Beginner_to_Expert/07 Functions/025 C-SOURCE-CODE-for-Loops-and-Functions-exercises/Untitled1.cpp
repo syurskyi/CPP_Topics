@@ -43,28 +43,28 @@ void initMenu()
 void menuDecision(in. choice)
 {
     d.. r, a, b, h;
-    switch(choice)
+    s..(choice)
     {
-        case 1:
+        c__:
             c__ __  "Enter the radius: " __  e..
             c__ __ r;
             areaCircle(r);
-            break;
-        case 2:
+            b..
+        c..
             c__ __  "Enter the side of a square: " __  e..
             c__ __ a;
             areaSquare(a);
-            break;
+            b..
         case 3:
             c__ __  "Enter the width and height of a rectangle: " __  e..
             c__ __ a __ b;
             areaRectangle(a, b);
-            break;
+            b..
         case 4:
             c__ __  "Enter the base and height of a triangle: " __  e..
             c__ __ a __ h;
             areaTriangle(a, h);
-            break;
+            b..
         default:
             c__ __  "You didn't choose any of the option from above" __  e..
 

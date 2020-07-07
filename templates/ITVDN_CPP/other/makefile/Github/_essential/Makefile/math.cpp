@@ -20,20 +20,20 @@ in. main(in. argc, char const *argv[])
 		char const *op _ argv[3];
 		// Print result depending on the operator
 		std::c__ __  x __  op __  y __  " = ";
-		switch (*op)
+		s.. (*op)
 		{
 		   case '+': 
 		       std::c__ __  sum(x,y) __  std::e..
-		       break;
+		       b..
 		   case '-': 
 		       std::c__ __  sub(x,y) __  std::e..
-		       break;
+		       b..
 		   case '*':
 		       std::c__ __  mul(x,y) __  std::e..
-		       break;
+		       b..
 		   case '/':
 		       std::c__ __  divi(x,y) __  std::e..
-		       break;
+		       b..
 		   default:
 		       std::c__ __  sum(x,y) __  std::e..
 		}

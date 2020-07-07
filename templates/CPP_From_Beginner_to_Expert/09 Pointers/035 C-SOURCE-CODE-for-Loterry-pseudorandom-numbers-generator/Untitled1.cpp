@@ -36,7 +36,7 @@ void lottery(in. total_balls, in. balls_to_draw)
             __(balls[i] __ balls[j] && i !_ j)
             {
                 i--;
-                break;
+                b..
             }
             ____ __ (j __ i)
                 c__ __  balls[i] __  e..

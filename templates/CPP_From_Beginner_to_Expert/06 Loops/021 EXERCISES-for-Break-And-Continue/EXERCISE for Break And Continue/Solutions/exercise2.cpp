@@ -29,7 +29,7 @@ main ()
         ____
         {
             system ("cls");
-            break;
+            b..
         }
         system ("cls");
     }

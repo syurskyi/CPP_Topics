@@ -24,7 +24,7 @@ in. main()
 }
 s.. getDay(dayOfWeek d)
 {
-    switch(d)
+    s..(d)
     {
         case M:
             r_ "Monday";

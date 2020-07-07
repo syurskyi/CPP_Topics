@@ -12,27 +12,27 @@ in. main()
     in. dayNumber;
     c__ __ dayNumber;
 
-    switch (dayNumber)
+    s.. (dayNumber)
     {
-        case 1:
-        case 2:
+        c__:
+        c..
         case 3:
         case 4:
         case 5:
         {
             c__ __  "Working day." __  e..
-            break;
+            b..
         }
         case 6:
         case 7:
         {
             c__ __  "Day off" __  e..
-            break;
+            b..
         }
         default:
         {
             c__ __  "There is no such day of the week." __  e..
-            break;
+            b..
         }            
     }
     r_ 0;

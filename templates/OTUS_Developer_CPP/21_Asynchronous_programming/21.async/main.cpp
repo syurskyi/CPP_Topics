@@ -10,13 +10,13 @@ class App : public Handler {
     }
 
     void event(Event &ev) override {
-        switch (ev.code) {
+        s.. (ev.code) {
             case EventCode::start:
                 start();
-                break;
+                b..
 
             default:
-                break;
+                b..
         }
     }
 };

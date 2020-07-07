@@ -29,23 +29,23 @@ in. main ()
 
 void chooseOperation(char choice)
 {
-    switch(choice)
+    s..(choice)
     {
         case '+':
             addition();
-            break;
+            b..
         case '-':
             subtraction();
-            break;
+            b..
         case '*':
             multiplication();
-            break;
+            b..
         case '/':
             division();
-            break;
+            b..
         case '^':
             exponentiation();
-            break;
+            b..
     }
 }
 

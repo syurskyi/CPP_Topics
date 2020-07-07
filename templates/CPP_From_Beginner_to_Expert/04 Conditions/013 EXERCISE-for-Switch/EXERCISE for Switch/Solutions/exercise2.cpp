@@ -22,9 +22,9 @@ main ()
 
     c__ __ choice;
 
-    switch (choice)
+    s.. (choice)
     {
-        case 1:
+        c__:
         case 3:
         case 5:
         case 7:
@@ -32,14 +32,14 @@ main ()
         case 10:
         case 12:
             c__ __  "This month has 31 days" __  e..
-            break;
+            b..
         case 4:
         case 6:
         case 9:
         case 11:
             c__ __  "This month has 30 days" __  e..
-            break;
-        case 2:
+            b..
+        c..
         {
             in. year;
             c__ __  "Input the year: ";

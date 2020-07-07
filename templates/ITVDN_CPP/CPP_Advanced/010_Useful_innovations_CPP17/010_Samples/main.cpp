@@ -266,17 +266,17 @@ void if_example( void* aP )
 
 void switch_example( in. error )
 {
-    switch ( in. code _ error; code )
+    s.. ( in. code _ error; code )
     {
         case 0:
         {
             c__ __  "Ok!" __  e..
-            break;
+            b..
         }
         default:
         {
             c__ __  "Error!" __  e..
-            break;
+            b..
         }
     }
 }
@@ -347,17 +347,17 @@ namespace new_attributes
 void f_fallthrough()
 {
     in. i _ rand() % 10;
-    switch ( i )
+    s.. ( i )
     {
         case 0:
             c__ __  "0" __  e..
-            break;
-        case 1:
+            b..
+        c__:
             c__ __  "1" __  e..
-            break;
-        case 2:
+            b..
+        c..
             c__ __  "2" __  e..
-            break;
+            b..
         case 3:
             c__ __  "some doing" __  e..
             c__ __  "3" __  e..

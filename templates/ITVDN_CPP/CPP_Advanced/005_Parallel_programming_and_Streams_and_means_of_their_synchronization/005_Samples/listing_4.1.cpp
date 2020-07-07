@@ -50,7 +50,7 @@ void data_processing_thread()
         lk.unlock();
         process(data);
         __(is_last_chunk(data))
-            break;
+            b..
     }
 }
 

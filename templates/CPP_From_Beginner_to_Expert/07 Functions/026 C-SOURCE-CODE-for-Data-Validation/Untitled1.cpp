@@ -59,28 +59,28 @@ void initMenu()
 void menuDecision(in. choice)
 {
     d.. r, a, b, h;
-    switch(choice)
+    s..(choice)
     {
-        case 1:
+        c__:
 
             do { c__ __  "Enter the radius: " __  e.. c__ __ r; } while(!isValid());
             areaCircle(r);
-            break;
-        case 2:
+            b..
+        c..
             c__ __  "Enter the side of a square: " __  e..
             do { c__ __ a; } while(!isValid("The data is wrong, please type it again:"));
             areaSquare(a);
-            break;
+            b..
         case 3:
             c__ __  "Enter the width and height of a rectangle: " __  e..
             do { c__ __ a __ b; } while(!isValid("The data is wrong, please type it again:"));
             areaRectangle(a, b);
-            break;
+            b..
         case 4:
             c__ __  "Enter the base and height of a triangle: " __  e..
             do { c__ __ a __ h; } while(!isValid("The data is wrong, please type it again:"));
             areaTriangle(a, h);
-            break;
+            b..
         default:
             c__ __  "You didn't choose any of the option from above" __  e..
 

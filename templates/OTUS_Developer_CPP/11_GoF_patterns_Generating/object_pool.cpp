@@ -36,7 +36,7 @@ public:
         for (auto& object : pool) {
             __ (object.connection__connection) {
                 object.busy _ false;
-                break;
+                b..
             }
         }
     }

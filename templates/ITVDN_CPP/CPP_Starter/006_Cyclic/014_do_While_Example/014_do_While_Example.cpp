@@ -20,7 +20,7 @@ in. main()
 		__ (number __ 0)
 		{
 			factorial _ 1;
-			break;
+			b..
 		}
 		factorial _ factorial * number;
 		number--;

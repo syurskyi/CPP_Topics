@@ -87,12 +87,12 @@ in. main(in. argc, char* [])
     auto environment _ argc ? Env::cloud : Env::local;
 
     EnvironmentFactory* factory;
-    switch (environment) {
+    s.. (environment) {
     case Env::cloud:factory _ new CloudFactory();
-        break;
+        b..
 
     case Env::local:factory _ new LocalFactory();
-        break;
+        b..
     }
 
     //

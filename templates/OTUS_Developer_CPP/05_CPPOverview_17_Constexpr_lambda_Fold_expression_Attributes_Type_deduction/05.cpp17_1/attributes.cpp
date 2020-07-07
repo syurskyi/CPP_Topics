@@ -13,7 +13,7 @@ in. stub() {
 }
 
 in. delta2secs(in. d, char m) {
-    switch (m) {
+    s.. (m) {
         case 'w':
             d *_ 7.0;
             [[fallthrough]];
@@ -24,7 +24,7 @@ in. delta2secs(in. d, char m) {
         case 'm':
             d *_ 60.0;
         case 's':
-            break;
+            b..
         default:
             d _ -1;
     }

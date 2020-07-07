@@ -30,20 +30,20 @@ in. main ()
         c__ __ values[i];
     }
 
-    switch (howManyValues)
+    s.. (howManyValues)
     {
-        case 2:
+        c..
             addition(values[0], values[1]);
-            break;
+            b..
         case 3:
             addition(values[0], values[1], values[2]);
-            break;
+            b..
         case 4:
             addition(values[0], values[1], values[2], values[3]);
-            break;
+            b..
         case 5:
             addition(values[0], values[1], values[2], values[3], values[4]);
-            break;
+            b..
     }
 
     r_ 0;

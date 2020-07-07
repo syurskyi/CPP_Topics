@@ -45,26 +45,26 @@ in. main()
 
         test _ getch();
 
-        switch(test)
+        s..(test)
         {
             case '1':
                 addPerson();
-                break;
+                b..
             case '2':
                 showPeople();
-                break;
+                b..
             case '3':
                 savePeopleToFile();
-                break;
+                b..
             case '4':
                 loadPeopleFromFile();
-                break;
+                b..
             case '5':
                 searchDatabase();
-                break;
+                b..
             case '6':
                 removePersonFromDatabase();
-                break;
+                b..
         }
 
 

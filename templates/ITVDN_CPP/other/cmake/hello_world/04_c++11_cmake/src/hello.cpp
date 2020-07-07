@@ -15,7 +15,7 @@ bo.. accept()
 	char answer _ 0;
 	c__ __ answer;
 
-	switch (answer)
+	s.. (answer)
 	{
 		case 'y':
 			r_ true;

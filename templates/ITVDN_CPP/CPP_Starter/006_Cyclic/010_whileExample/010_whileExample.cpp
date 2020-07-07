@@ -23,7 +23,7 @@ in. main()
 
 		__ (value __ "")
 		{
-			break;
+			b..
 		}
 		__ (value !_ color)
 		{
@@ -32,7 +32,7 @@ in. main()
 		}
 
 		c__ __  "Congratulations, you guessed right with " __  attempt __  " attempts!" __  e..
-		break;
+		b..
 	}
 	
 	system("pause");

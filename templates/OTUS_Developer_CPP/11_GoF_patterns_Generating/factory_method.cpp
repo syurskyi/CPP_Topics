@@ -51,12 +51,12 @@ in. main(in. argc, char* [])
     auto environment _ argc ? Storage::postgres : Storage::mysql;
 
     IStorage* storage;
-    switch (environment) {
+    s.. (environment) {
     case Storage::mysql:storage _ new MysqlStorage();
-        break;
+        b..
 
     case Storage::postgres:storage _ new PostgresStorage();
-        break;
+        b..
     }
 
     //
