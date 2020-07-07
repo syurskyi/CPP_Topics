@@ -23,7 +23,7 @@ in. main()
 	Function("B ", 2);           // 5-я перегрузка.
 	Function(3, " C");           // 6-я перегрузка.
 
-	system("pause");
+	sy.. pause
     r_ 0;
 }
 

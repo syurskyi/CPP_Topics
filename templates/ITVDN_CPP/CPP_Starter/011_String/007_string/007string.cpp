@@ -16,7 +16,7 @@ in. main()
 
 	c__ __  "Your name is " __  name __  ", and you are " __  age __  " years old" __  e..
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 

@@ -21,6 +21,6 @@ in. main()
 	c__ __  "Pointer of b = 0x" __  poin.er __  e..
 	c__ __  "*Pointer of b = " __  *poin.er __  e..
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }

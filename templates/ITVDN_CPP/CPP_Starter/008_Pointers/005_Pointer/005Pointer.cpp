@@ -17,7 +17,7 @@ in. main()
 	c__ __  "New age equals " __  age __  e..
 	c__ __  "New value has 0x" __  pAge __  " address" __  e..
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 

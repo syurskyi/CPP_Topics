@@ -17,7 +17,7 @@ in. main()
 
 	c__ __  "Value of variable a = " __  a __  e..
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 

@@ -30,7 +30,7 @@ in. main()
 
 	// cout << &arr[3] << endl;
 
-	system("pause");
+	sy.. pause
     r_ 0;
 }
 

@@ -15,7 +15,7 @@ in. main()
 
 	 c__ __  first_string __  e.. // Раскомментировать!
 
-	system("pause");
+	sy.. pause
     r_ 0;
 }
 

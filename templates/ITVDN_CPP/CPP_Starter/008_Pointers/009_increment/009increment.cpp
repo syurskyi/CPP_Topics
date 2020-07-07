@@ -29,6 +29,6 @@ in. main()
 
 	delete[] block;
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }

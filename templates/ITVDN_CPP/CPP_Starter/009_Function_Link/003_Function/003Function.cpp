@@ -14,7 +14,7 @@ in. main()
 	Operation("val", 10, 12.2);   // 4-я перегрузка.
 
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 v.. Operation(s.. val1, in. val2, d.. val3)

@@ -9,7 +9,7 @@ in. main()
 {
 	recursion(3);
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 

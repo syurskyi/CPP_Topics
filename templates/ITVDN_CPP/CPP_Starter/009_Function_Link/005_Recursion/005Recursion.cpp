@@ -10,7 +10,7 @@ in. main()
 {
 	func(3);
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 

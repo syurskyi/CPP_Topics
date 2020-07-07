@@ -26,7 +26,7 @@ in. main()
 
 	c__ __  "Array length = " __  sizeof(arr1) / sizeof(arr1[0]) __  " element(s)." __  e..
 	 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 

@@ -13,7 +13,7 @@ in. main()
 	in. a _ ABS(-10);
 	c__ __  a __  e..
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 

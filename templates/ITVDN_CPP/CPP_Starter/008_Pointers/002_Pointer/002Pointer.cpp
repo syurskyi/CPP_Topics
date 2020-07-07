@@ -11,7 +11,7 @@ in. main()
 
 	c__ __  "p_age is at: 0x" __  p_age __  e..
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 

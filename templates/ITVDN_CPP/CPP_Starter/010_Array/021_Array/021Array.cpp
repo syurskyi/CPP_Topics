@@ -19,7 +19,7 @@ in. main()
 
 	prin._square(arr, 10);
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 

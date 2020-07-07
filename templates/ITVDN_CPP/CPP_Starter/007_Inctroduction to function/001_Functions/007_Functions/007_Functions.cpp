@@ -18,7 +18,7 @@ in. main()
 
 	c__ __  "value1 + value2 = " __  sum __  e..
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 

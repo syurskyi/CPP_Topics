@@ -10,7 +10,7 @@ in. main()
 
 	c__ __  "Contain current filename: " __  __FILE__ __  e..
 
-	system("pause");
+	sy.. pause
     r_ 0;
 }
 

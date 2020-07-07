@@ -17,7 +17,7 @@ in. main()
 
 	c__ __  val1 __  " * " __  val2 __  " = " __  result __  e..
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 

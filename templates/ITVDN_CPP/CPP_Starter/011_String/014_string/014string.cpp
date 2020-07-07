@@ -16,7 +16,7 @@ in. main()
 	
 	c__ __  usa_city __  e..
 	
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 

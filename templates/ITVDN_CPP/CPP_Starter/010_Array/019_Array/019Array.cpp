@@ -19,7 +19,7 @@ in. main()
 
 	c__ __  "Total sum of the array equals = " __  sum __  e..
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 

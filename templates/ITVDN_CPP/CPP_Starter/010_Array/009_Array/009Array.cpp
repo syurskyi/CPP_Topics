@@ -13,7 +13,7 @@ in. main()
 	matrix[0][0] _ 100;
 	c__ __  matrix[0][0] __  e..
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 

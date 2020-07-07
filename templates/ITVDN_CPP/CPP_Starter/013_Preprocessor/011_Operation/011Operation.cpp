@@ -15,7 +15,7 @@ in. main()
 
 	c__ __  concat(x, y) __  e..
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 

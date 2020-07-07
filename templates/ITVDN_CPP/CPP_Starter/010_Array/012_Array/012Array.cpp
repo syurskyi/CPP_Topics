@@ -18,7 +18,7 @@ in. main()
 	// Получаем адресс переменной arr и выводим его в консоль
 	c__ __  "Address of variable arr - " __  &arr __  e..
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 

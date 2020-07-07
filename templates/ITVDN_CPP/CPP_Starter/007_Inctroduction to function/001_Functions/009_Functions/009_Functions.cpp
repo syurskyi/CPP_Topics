@@ -15,7 +15,7 @@ in. main()
 
 	c__ __  result __  e..
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 

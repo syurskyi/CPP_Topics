@@ -20,7 +20,7 @@ in. main()
 	
 	c__ __  "The string has " __  symbol_count __  " symbols 'O'." __  e..
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 

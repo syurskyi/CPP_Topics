@@ -23,6 +23,6 @@ in. main()
 	c__ __  "sizeof(pDouble) = " __  sizeof(pDouble) __  e..
 	c__ __  "sizeof(pCarh) = " __  sizeof(pCarh) __  e..
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }

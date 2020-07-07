@@ -20,7 +20,7 @@ in. main()
 
 	c__ __  "Max element in array : " __  max __  ", min element = " __  min __  ", average value = " __  avrg __  e..
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 

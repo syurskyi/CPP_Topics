@@ -18,7 +18,7 @@ in. main()
 
 	c__ __  "Your name is " __  name __  ". Your address : " __  address __  e..
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 

@@ -10,7 +10,7 @@ in. main()
 
 	c__ __  "LINE = " __  __LINE__ __  "; FILE = " __  __FILE__ __  e..
 
-	system("pause");
+	sy.. pause
     r_ 0;
 }
 

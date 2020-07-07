@@ -13,7 +13,7 @@ in. main()
 
 	c__ __  "Address of variable Pi is: 0x" __  &Pi __  e..
 
-	system("pause");
+	sy.. pause
     r_ 0;
 }
 

@@ -25,6 +25,6 @@ in. main()
 
 	c__ __  "Area is = " __  area __  e..
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }

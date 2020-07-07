@@ -25,7 +25,7 @@ in. main()
 
 	c__ __  "Now copy_color equals " __  copy_color __  e..
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 

@@ -22,7 +22,7 @@ in. main()
 	c__ __  "Product version." __  e..
 #endif 
 
-	system("pause");
+	sy.. pause
     r_ 0;
 }
 

@@ -10,7 +10,7 @@ in. main()
 
 	// char str = "Q"; // Не допустимо!
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 

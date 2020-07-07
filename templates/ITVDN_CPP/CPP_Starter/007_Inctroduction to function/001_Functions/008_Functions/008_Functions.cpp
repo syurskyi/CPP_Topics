@@ -13,7 +13,7 @@ in. main()
 
 	c__ __  "a || b = " __  result __  e..
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 

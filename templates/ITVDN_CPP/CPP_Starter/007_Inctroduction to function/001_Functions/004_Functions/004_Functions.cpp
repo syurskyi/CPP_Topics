@@ -10,7 +10,7 @@ in. main()
 
 	c__ __  someValue __  e..
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 

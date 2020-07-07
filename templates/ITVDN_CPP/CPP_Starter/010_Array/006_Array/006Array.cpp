@@ -35,7 +35,7 @@ in. main()
 	c__ __  arr[2][1] __  " ";
 	c__ __  arr[2][2] __  e..
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 

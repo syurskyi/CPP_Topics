@@ -28,7 +28,7 @@ in. main()
 		b..
 	}
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 

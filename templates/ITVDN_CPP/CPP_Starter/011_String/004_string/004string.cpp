@@ -19,7 +19,7 @@ in. main()
 
 	c__ __  "Array has length " __  sizeof(name) __  " elements" __  e..
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 

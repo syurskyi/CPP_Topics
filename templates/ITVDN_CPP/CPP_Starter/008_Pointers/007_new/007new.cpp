@@ -16,6 +16,6 @@ in. main()
 
 	pAge _ 0;
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }

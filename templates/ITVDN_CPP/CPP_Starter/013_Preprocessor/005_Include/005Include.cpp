@@ -8,7 +8,7 @@ in. main()
 {
 	c__ __  "5 + 2 = " __  add(5, 2) __  "; 5 - 2 = " __  subtract(5, 2) __  e..
 	
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 

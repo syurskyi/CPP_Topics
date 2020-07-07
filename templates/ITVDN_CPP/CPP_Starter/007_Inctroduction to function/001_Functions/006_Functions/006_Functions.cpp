@@ -12,7 +12,7 @@ in. main()
 
 	c__ __  sentence __  e..
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 

@@ -13,7 +13,7 @@ in. main()
 		c__ __  arr[i] __  e..
 	}
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 

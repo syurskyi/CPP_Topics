@@ -15,7 +15,7 @@ in. main()
 
 	c__ __  bo..alpha __  (str1[6] __ *p) __  e..
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 

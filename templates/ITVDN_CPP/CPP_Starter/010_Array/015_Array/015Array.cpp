@@ -25,7 +25,7 @@ in. main()
 	c__ __  "Value : " __  *(poin.er + 2)	__  "; Adress : " __  poin.er + 2 __  e..
 
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 

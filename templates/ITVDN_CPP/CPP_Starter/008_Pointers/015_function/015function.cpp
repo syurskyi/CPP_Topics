@@ -32,7 +32,7 @@ in. main()
 	} w___ (value !_ -1);
 
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 

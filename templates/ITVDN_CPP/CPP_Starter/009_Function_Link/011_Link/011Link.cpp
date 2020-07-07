@@ -20,7 +20,7 @@ in. main()
 
 	c__ __  a __  " + " __  b __  " = " __  sum __  e..
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 

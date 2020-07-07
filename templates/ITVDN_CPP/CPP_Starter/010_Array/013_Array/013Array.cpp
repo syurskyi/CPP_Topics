@@ -30,7 +30,7 @@ in. main()
 	c__ __  "Third value = " __  *(pArr + 2) __  ". Address = " __  pArr + 2 __  e..
 
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 

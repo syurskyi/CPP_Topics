@@ -9,7 +9,7 @@ in. main()
 
 	c__ __  "Time of compilation: " __  __TIME__ __  e..
 
-	system("pause");
+	sy.. pause
     r_ 0;
 }
 

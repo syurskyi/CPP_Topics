@@ -14,7 +14,7 @@ in. main()
 
 	// int arr4[3] = { 50, "Hello", 3.24 };
 
-	system("pause");
+	sy.. pause
     r_ 0;
 }
 

@@ -16,7 +16,7 @@ in. main()
 	Operation("val", 10);         // 3-я перегрузка. 
 	Operation("val", 10, 12.2);   // 4-я перегрузка.
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 

@@ -29,7 +29,7 @@ in. main()
 	}
 
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 

@@ -27,7 +27,7 @@ in. main()
 
 	// cout << &arr[4] << endl;
 
-	system("pause");
+	sy.. pause
 	r_ 0;
 }
 
