@@ -4,8 +4,8 @@ u.. s..
 
 main()
 {
-    const in. SIZEOFARRAY = 10;
-    in. i = 0;
+    const in. SIZEOFARRAY _ 10;
+    in. i _ 0;
     in. array[SIZEOFARRAY];
 /*
     while(i < SIZEOFARRAY) //i = 0

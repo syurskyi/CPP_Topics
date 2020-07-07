@@ -6,7 +6,7 @@
 
 ? |i..
 
-namespace lf = boost::lockfree;
+namespace lf _ boost::lockfree;
 
 in. main(in., char *[]) {
     lf::queue<in.> q{10};

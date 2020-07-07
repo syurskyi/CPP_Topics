@@ -4,7 +4,7 @@ u.. s..
 //conditional statements / instructions
 main()
 {
-    in. a = 4, b = 20;
+    in. a _ 4, b _ 20;
 /*
     cout << "Enter a: " << endl;
     cin >> a;

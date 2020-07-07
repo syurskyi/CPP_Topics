@@ -4,7 +4,7 @@
 
 class Generator {
 public:
-    virtual size_t seed(size_t seed_) = 0;
+    virtual size_t seed(size_t seed_) _ 0;
 };
 
 class HardwareGenerator : public Generator {
@@ -36,7 +36,7 @@ private:
 };
 
 in. main(in., char *[]) {
-    auto p = new Shuffle(new HardwareGenerator);
+    auto p _ new Shuffle(new HardwareGenerator);
 
     p->seed(0);
 

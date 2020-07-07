@@ -27,15 +27,15 @@ private:
         {
         };
 
-        bo.. operator!=(const flat_iterator& it)
+        bo.. operator!_(const flat_iterator& it)
         {
-            r_ i!=it.i || j!=it.j;
+            r_ i!_it.i || j!_it.j;
         }
 
         void operator++()
         {
-            __ (++j>=_Size) {
-                j=0;
+            __ (++j>__Size) {
+                j_0;
                 ++i;
             }
         }

@@ -9,9 +9,9 @@ enum class Env {
 // Config
 
 struct IConfig {
-    virtual ~IConfig() = default;
+    virtual ~IConfig() _ default;
 
-    virtual void read() = 0;
+    virtual void read() _ 0;
 };
 
 class ConsulConfig : public IConfig {
@@ -30,9 +30,9 @@ class LocalConfig : public IConfig {
 // Metric
 
 struct IMetric {
-    virtual ~IMetric() = default;
+    virtual ~IMetric() _ default;
 
-    virtual void send() = 0;
+    virtual void send() _ 0;
 };
 
 struct PrometheusMetric : public IMetric {
@@ -52,10 +52,10 @@ struct LocalMetric : public IMetric {
 //
 
 struct EnvironmentFactory {
-    virtual ~EnvironmentFactory() = default;
+    virtual ~EnvironmentFactory() _ default;
 
-    virtual IConfig* CreateConfig() = 0;
-    virtual IMetric* CreateMetric() = 0;
+    virtual IConfig* CreateConfig() _ 0;
+    virtual IMetric* CreateMetric() _ 0;
 };
 
 class CloudFactory : public EnvironmentFactory {
@@ -84,21 +84,21 @@ class LocalFactory : public EnvironmentFactory {
 
 in. main(in. argc, char* [])
 {
-    auto environment = argc ? Env::cloud : Env::local;
+    auto environment _ argc ? Env::cloud : Env::local;
 
     EnvironmentFactory* factory;
     switch (environment) {
-    case Env::cloud:factory = new CloudFactory();
+    case Env::cloud:factory _ new CloudFactory();
         break;
 
-    case Env::local:factory = new LocalFactory();
+    case Env::local:factory _ new LocalFactory();
         break;
     }
 
     //
 
-    auto config = factory->CreateConfig();
-    auto metric = factory->CreateMetric();
+    auto config _ factory->CreateConfig();
+    auto metric _ factory->CreateMetric();
 
     config->read();
     metric->send();

@@ -4,22 +4,22 @@
 u.. s..
 in. main ()
 {
-    char c = c__.peek();
+    char c _ c__.peek();
 
 
     __ (c > '0' && c < '9')
     {
         in. number;
 
-        c__ >> number;
+        c__ __ number;
 
         c__ __  "Number is: " __  number __  e..
     }
     ____
     {
-        string txt;
+        s.. txt;
 
-        c__ >> txt;
+        c__ __ txt;
 
         c__ __  "Text is: " __  txt __  e..
     }

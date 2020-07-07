@@ -18,10 +18,10 @@ public:
         __ (next)
             next->add(n);
         ____
-            next = n;
+            next _ n;
     }
 
-    virtual void exec(const std::string &line)
+    virtual void exec(const std::s.. &line)
     {
         __ (next) {
             next->exec(line);
@@ -32,9 +32,9 @@ public:
 class DropHandler : public Handler
 {
 public:
-    void exec(const std::string &line) override
+    void exec(const std::s.. &line) override
     {
-        __ (line.find("DROP") == 0) {
+        __ (line.find("DROP") __ 0) {
             std::c__ __  "DropHandler accept " __  line __  std::e..
         } ____ {
             std::c__ __  "DropHandler pass" __  std::e..
@@ -46,9 +46,9 @@ public:
 class SelectHandler : public Handler
 {
 public:
-    void exec(const std::string &line) override
+    void exec(const std::s.. &line) override
     {
-        __ (line.find("SELECT") == 0) {
+        __ (line.find("SELECT") __ 0) {
             std::c__ __  "SelectHandler accept " __  line __  std::e..
         } ____ {
             std::c__ __  "SelectHandler pass" __  std::e..
@@ -60,9 +60,9 @@ public:
 class CreateHandler: public Handler
 {
 public:
-    void exec(const std::string &line) override
+    void exec(const std::s.. &line) override
     {
-        __ (line.find("CREATE") == 0) {
+        __ (line.find("CREATE") __ 0) {
             std::c__ __  "CreateHandler accept " __  line __  std::e..
         } ____ {
             std::c__ __  "CreateHandler pass" __  std::e..

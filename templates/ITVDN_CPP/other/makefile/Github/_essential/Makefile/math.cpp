@@ -12,12 +12,12 @@
 in. main(in. argc, char const *argv[])
 {
 	std::c__ __  "Let's make some math! :)" __  std::e..
-	double x = 10.0, y = 5.0;
+	double x _ 10.0, y _ 5.0;
 	__ (argc > 1) // Use values passed by command line arg.
 	{
-		x = atof(argv[1]);
-		y = atof(argv[2]);
-		char const *op = argv[3];
+		x _ atof(argv[1]);
+		y _ atof(argv[2]);
+		char const *op _ argv[3];
 		// Print result depending on the operator
 		std::c__ __  x __  op __  y __  " = ";
 		switch (*op)

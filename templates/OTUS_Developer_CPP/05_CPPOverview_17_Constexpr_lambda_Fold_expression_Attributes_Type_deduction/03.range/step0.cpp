@@ -1,5 +1,5 @@
 ? |i..
-? <string>
+? |s..
 
 template<typename Input>
 class filter_helper {
@@ -10,7 +10,7 @@ class filter_helper {
     public:
         explicit iterator(typename Input::const_iterator current_) : current(current_) {};
 
-        auto operator!=(typename Input::const_iterator rhs) const { r_ current != rhs; };
+        auto operator!_(typename Input::const_iterator rhs) const { r_ current !_ rhs; };
 
         auto operator++() { r_ ++current; };
 
@@ -27,7 +27,7 @@ public:
 };
 
 in. main() {
-    const std::string s{"hello"};
+    const std::s.. s{"hello"};
 
     for (auto i: filter_helper{s}) {
         std::c__ __  i __  std::e..

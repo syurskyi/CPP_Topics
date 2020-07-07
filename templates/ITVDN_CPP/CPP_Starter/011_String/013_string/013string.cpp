@@ -1,13 +1,13 @@
 ﻿? *s..
 ? |i..
 // Эта библиотека нужна для работы с типом string
-? <string>
+? |s..
 
 u.. s..
 
 in. main()
 {
-	string first_str = "Hello world!";
+	s.. first_str _ "Hello world!";
 
 	c__ __  first_str __  e..
 	system("pause");

@@ -12,7 +12,7 @@ public:
 };
 
 class Ops {
-    in. count = 0;
+    in. count _ 0;
 
 public:
     void do_it()
@@ -32,7 +32,7 @@ public:
 
     void restoreSnapshot(const Memento& memento)
     {
-        count = memento.value;
+        count _ memento.value;
     }
 };
 
@@ -42,7 +42,7 @@ in. main(in., char* [])
     n.do_it();
     n.dump();
 
-    auto snap = n.createSnapshot();
+    auto snap _ n.createSnapshot();
 
     n.do_it();
     n.dump();

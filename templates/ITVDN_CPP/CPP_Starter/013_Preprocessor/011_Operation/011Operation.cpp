@@ -11,7 +11,7 @@ in. main()
 {
 	c__ __  createSTR(I write on C++) __  e..
 
-	in. xy = 10;
+	in. xy _ 10;
 
 	c__ __  concat(x, y) __  e..
 

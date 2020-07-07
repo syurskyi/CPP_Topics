@@ -23,12 +23,12 @@ in. Polygon::getWidth() {
 
 // Set the polygon height
 void Polygon::setHeight(in. height) {
-	m_height = height;
+	m_height _ height;
 }
 
 // Set the polygon width
 void Polygon::setWidth(in. width) {
-	m_width = width;
+	m_width _ width;
 }
 
 // This runs if there is no child class (polymorphism) so we return an invalid area

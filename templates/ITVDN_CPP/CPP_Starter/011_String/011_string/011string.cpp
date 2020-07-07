@@ -7,13 +7,13 @@ u.. s..
 
 in. main()
 {
-	char str1[] = "Hello";
-	char str2[] = " world!";
-	char str3[] = "Hello";
+	char str1[] _ "Hello";
+	char str2[] _ " world!";
+	char str3[] _ "Hello";
 
 	// функция производит сравнение строк.
 	// Возвращает 0, если строки совпадают, отрицательное значение, если первая меньше второй, и положительное значение, если первая больше второй.
-	in. res = strcmp(str1, str2);
+	in. res _ strcmp(str1, str2);
 
 	switch (res)
 	{

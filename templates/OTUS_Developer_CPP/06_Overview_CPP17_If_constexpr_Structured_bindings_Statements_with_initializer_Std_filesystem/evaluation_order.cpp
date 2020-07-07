@@ -3,11 +3,11 @@
 auto a{0};
 
 auto foo() {
-    r_ a += 2;
+    r_ a +_ 2;
 }
 
 auto bar() {
-    r_ a *= 2;
+    r_ a *_ 2;
 }
 
 auto baz(in. a, in. b) {
@@ -16,9 +16,9 @@ auto baz(in. a, in. b) {
 }
 
 in. main() {
-    a = 1;
+    a _ 1;
     std::c__ __  foo() __  bar() __  std::e.. // evaluation order guaranteed
-    a = 1;
+    a _ 1;
     std::c__ __  baz(foo(), bar()) __  std::e.. // evaluation order undefined
 
     r_ 0;

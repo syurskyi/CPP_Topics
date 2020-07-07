@@ -8,7 +8,7 @@ Cat::Cat()
 
 Cat::Cat(uin. paws)
 {
-    paws = paws;
+    paws _ paws;
 }
 
 Cat::~Cat()

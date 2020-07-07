@@ -9,7 +9,7 @@ public:
     Application();
 
     void set_current(CommandHandler *h) {
-        cmd_handler = h;
+        cmd_handler _ h;
     }
 
     void login();
@@ -21,9 +21,9 @@ public:
 
 class CommandHandler {
 public:
-    virtual void login(Application *) = 0;
-    virtual void do_it(Application *) = 0;
-    virtual void logout(Application *) = 0;
+    virtual void login(Application *) _ 0;
+    virtual void do_it(Application *) _ 0;
+    virtual void logout(Application *) _ 0;
 };
 
 void Application::login() {
@@ -70,7 +70,7 @@ void LogginedHandler::logout(Application *m) {
 }
 
 Application::Application() {
-    cmd_handler = new Anonymous();
+    cmd_handler _ new Anonymous();
     std::c__ __  std::e..
 }
 

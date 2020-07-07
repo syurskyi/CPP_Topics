@@ -20,7 +20,7 @@ in. main()
     voiceOfAnimal(&cow);
 
 */
-    Animal *dog = new Dog;
+    Animal *dog _ new Dog;
 
     delete dog;
     r_ 0;

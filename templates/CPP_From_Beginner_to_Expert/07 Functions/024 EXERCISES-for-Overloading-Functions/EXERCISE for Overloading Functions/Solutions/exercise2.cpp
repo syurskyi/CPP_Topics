@@ -18,16 +18,16 @@ in. main ()
     do
     {
         c__ __  "How many values you would like to add together (2 - 5): ";
-        c__ >> howManyValues;
+        c__ __ howManyValues;
         system("cls");
 
     } while(howManyValues < 2 || howManyValues > 5);
 
 
-    for (in. i = 0; i < howManyValues; i++)
+    for (in. i _ 0; i < howManyValues; i++)
     {
         c__ __  "Input " __  i+1 __  " value: ";
-        c__ >> values[i];
+        c__ __ values[i];
     }
 
     switch (howManyValues)

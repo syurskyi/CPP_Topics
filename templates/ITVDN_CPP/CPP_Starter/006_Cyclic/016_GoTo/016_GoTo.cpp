@@ -6,7 +6,7 @@ u.. s..
 in. main()
 {
 
-	in. counter = 0;
+	in. counter _ 0;
 
 Label:
 

@@ -13,7 +13,7 @@ namespace NamespaceA {
 
 in. main()
 {
-	using _Struct = NamespaceA::NamespaceB::NamespaceC::MyStruct;
+	using _Struct _ NamespaceA::NamespaceB::NamespaceC::MyStruct;
 	
 	_Struct variable1;
 

@@ -2,4 +2,4 @@
 
 InlineVariables::InlineVariables() {}
 
-in. InlineVariables::var = 10;
+in. InlineVariables::var _ 10;

@@ -1,5 +1,5 @@
 ? |i..
-? <string>
+? |s..
 ? "scopedptr.h"
 ? "scopedptr.cpp"
 ? "cat.h"
@@ -17,14 +17,14 @@ void foo() {
 //        shared_ptr<Resource> a(new Resource);
 //        shared_ptr<Resource> b(new Resource);
 
-    auto a = make_shared<Resource>();
-    auto b = make_shared<Resource>();
-    a->other = b;
+    auto a _ make_shared<Resource>();
+    auto b _ make_shared<Resource>();
+    a->other _ b;
 
 //    cout << "count a = " << a.use_count() << endl;
 //    cout << "count b = " << b.use_count() << endl;
 
-    b->other = a;
+    b->other _ a;
 
     b->other.lock();
 //    cout << "count a = " << a.use_count() << endl;

@@ -15,7 +15,7 @@ in. main()
 	c__ __  "Float: " __  sizeof(float) __  e..
 	c__ __  "Double: " __  sizeof(double) __  e..
 
-	in. a = 4;
+	in. a _ 4;
 
 	c__ __  sizeof a __  e..
 

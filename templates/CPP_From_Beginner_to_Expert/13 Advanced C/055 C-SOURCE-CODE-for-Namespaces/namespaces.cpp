@@ -7,10 +7,10 @@ namespace mySpace
 {
     class MyNewLine
     {
-            std::string text;
+            std::s.. text;
         public:
-            MyNewLine(std::string text = "\n\n\n") { this->text = text;}
-            std::string toString()
+            MyNewLine(std::s.. text _ "\n\n\n") { this->text _ text;}
+            std::s.. toString()
             {
                 r_ text;
             }
@@ -25,7 +25,7 @@ namespace mySpace
 u.. mySpace;
 in. main()
 {
-    in. a = 50;
+    in. a _ 50;
 
 
     std::c__ __  "this is text: " __  e..

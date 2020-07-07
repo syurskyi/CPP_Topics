@@ -1,8 +1,8 @@
 ? "Funs.h"
 
 Rectangle::Rectangle(in. Base, in. Height) {
-    _area  = Base * Height;
-    _perim = 2*( Base + Height );
+    _area  _ Base * Height;
+    _perim _ 2*( Base + Height );
 }
 
 in. Rectangle::Area() {

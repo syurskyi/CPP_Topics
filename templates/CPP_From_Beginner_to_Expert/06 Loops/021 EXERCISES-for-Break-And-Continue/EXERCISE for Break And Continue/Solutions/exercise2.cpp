@@ -5,23 +5,23 @@ u.. s..
 
 main ()
 {
-    in. chosenNumbersSum = 0;
+    in. chosenNumbersSum _ 0;
     char choice;
 
-    for (in. i = 1; ; i++)
+    for (in. i _ 1; ; i++)
     {
 
         c__ __  "The current sum is: " __  chosenNumbersSum __  endl __  e..
         c__ __  "Do you want to add " __  i __  " ?" __  e..
 
         c__ __  "Y - yes / N - no / Anything else - end : ";
-        c__ >> choice;
+        c__ __ choice;
 
-        __ (choice == 'Y' || choice == 'y')
+        __ (choice __ 'Y' || choice __ 'y')
         {
-            chosenNumbersSum += i;
+            chosenNumbersSum +_ i;
         }
-        ____ __ (choice == 'N' || choice == 'n')
+        ____ __ (choice __ 'N' || choice __ 'n')
         {
             system ("cls");
             continue;

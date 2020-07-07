@@ -67,7 +67,7 @@ main()
         40
     */
 
-    c__ __  (10 >> 1) __  e.. //this thing means that we are dividing 10 by 2 raised to the power of 3
+    c__ __  (10 __ 1) __  e.. //this thing means that we are dividing 10 by 2 raised to the power of 3
     /*
         00000000000000000000000000000000000 0 1 0 1
         5

@@ -6,24 +6,24 @@ u.. s..
 main ()
 {
      in. pin, checkPin;
-     in. counter = 5;
+     in. counter _ 5;
 
      c__ __  "Input your pin number for the first time: ";
-     c__ >> pin;
+     c__ __ pin;
 
      system("cls");
 
      do
      {
          c__ __  "Input your pin(" __  counter __  " tries left): ";
-         c__ >> checkPin;
+         c__ __ checkPin;
 
          system("cls");
          counter--;
 
-     } while ((checkPin != pin) && (counter > 0));
+     } while ((checkPin !_ pin) && (counter > 0));
 
-     __ (checkPin == pin)
+     __ (checkPin __ pin)
      {
         c__ __  "Correct pin, welcome !";
      }

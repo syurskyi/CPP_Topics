@@ -8,15 +8,15 @@ u.. s..
 
 in. main()
 {
-	in. minValue = 1;
-	in. denominator = 0;
-	in. item = 2;
+	in. minValue _ 1;
+	in. denominator _ 0;
+	in. item _ 2;
 
 	// ”словие, которое работает с использованием техники ------------------.
 	// ≈сли бы это выражение вычисл¤лось полностью, то операци¤ делени¤ во втором операнде, 
 	// генерировала бы ошибку делени¤ на 0.
 
-	__ ((item / denominator) > minValue && (denominator != 0)) // ќставьте один оператор &
+	__ ((item / denominator) > minValue && (denominator !_ 0)) // ќставьте один оператор &
 	{
 		c__ __  "Block IF" __  e..
 	}

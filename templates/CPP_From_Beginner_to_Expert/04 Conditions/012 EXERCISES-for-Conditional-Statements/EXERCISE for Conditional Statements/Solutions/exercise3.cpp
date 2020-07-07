@@ -14,19 +14,19 @@ main ()
     c__ __  "6.Bud Light" __  endl __  e..
     c__ __  "Enter your choice: ";
 
-    c__ >> productChoice;
+    c__ __ productChoice;
 
-    __ (productChoice == 1)
+    __ (productChoice __ 1)
         c__ __  "You have chosen a Coca-Cola" __  e..
-    ____ __ (productChoice == 2)
+    ____ __ (productChoice __ 2)
         c__ __  "You have chosen a Water" __  e..
-    ____ __ (productChoice == 3)
+    ____ __ (productChoice __ 3)
         c__ __  "You have chosen a Chocolate Bar" __  e..
-    ____ __ (productChoice == 4)
+    ____ __ (productChoice __ 4)
         c__ __  "You have chosen a Snickers Bar" __  e..
-    ____ __ (productChoice == 5)
+    ____ __ (productChoice __ 5)
         c__ __  "You have chosen a Mars Bar" __  e..
-    ____ __ (productChoice == 6)
+    ____ __ (productChoice __ 6)
         c__ __  "You have chosen a Bud Light" __  e..
     ____
         c__ __  "Error. Invalid choice" __  e..

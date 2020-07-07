@@ -7,10 +7,10 @@ u.. s..
 
 struct Person
 {
-    string name;
-    string surname;
+    s.. name;
+    s.. surname;
     sh.. age;
-    string telephone;
+    s.. telephone;
 };
 sh.. peopleInDataBase;
 Person people[20];
@@ -43,7 +43,7 @@ in. main()
 
         c__ __  e..
 
-        test = getch();
+        test _ getch();
 
         switch(test)
         {
@@ -70,7 +70,7 @@ in. main()
 
         requireEnter();
         system("cls");
-    }while(test != 27);
+    }while(test !_ 27);
 
 
     r_ 0;
@@ -78,21 +78,21 @@ in. main()
 void requireEnter()
 {
     c__ __  "Click Enter to continue... " __  e..
-    while(getch() != 13);
+    while(getch() !_ 13);
 }
 void addPerson()
 {
     c__ __  "Type name: ";
-    c__ >> people[peopleInDataBase].name;
+    c__ __ people[peopleInDataBase].name;
 
     c__ __  "Type surname: ";
-    c__ >> people[peopleInDataBase].surname;
+    c__ __ people[peopleInDataBase].surname;
 
     c__ __  "Type age: ";
-    c__ >> people[peopleInDataBase].age;
+    c__ __ people[peopleInDataBase].age;
 
     c__ __  "Type telephone: ";
-    c__ >> people[peopleInDataBase].telephone;
+    c__ __ people[peopleInDataBase].telephone;
 
     peopleInDataBase++;
 }
@@ -100,7 +100,7 @@ void showPeople()
 {
     __(peopleInDataBase > 0)
     {
-        for (in. i = 0; i < peopleInDataBase; i++)
+        for (in. i _ 0; i < peopleInDataBase; i++)
         {
             c__ __  "Person index: " __  (i+1) __  e..
             c__ __  "Name: " __  people[i].name __  e..
@@ -120,7 +120,7 @@ void savePeopleToFile()
     {
         file __  peopleInDataBase __  e..
 
-        for (in. i = 0; i < peopleInDataBase; i++)
+        for (in. i _ 0; i < peopleInDataBase; i++)
         {
             file __  people[i].name __  e..
             file __  people[i].surname __  e..
@@ -140,7 +140,7 @@ void loadPeopleFromFile()
 
     __ (file.is_open())
     {
-        file >> peopleInDataBase;
+        file __ peopleInDataBase;
 
         __ (peopleInDataBase > 0)
         {
@@ -151,13 +151,13 @@ void loadPeopleFromFile()
                 file >> people[i].age;
                 file >> people[i].telephone;
             }*/
-            in. i = 0;
+            in. i _ 0;
             do
             {
-                file >> people[i].name;
-                file >> people[i].surname;
-                file >> people[i].age;
-                file >> people[i].telephone;
+                file __ people[i].name;
+                file __ people[i].surname;
+                file __ people[i].age;
+                file __ people[i].telephone;
 
                 i++;
             }while(!file.eof());
@@ -174,13 +174,13 @@ void searchDatabase()
 {
     __ (peopleInDataBase > 0)
     {
-        string name;
+        s.. name;
         c__ __  "Type a name of person you want to look for: ";
-        c__ >> name;
+        c__ __ name;
 
-        for (in. i = 0; i < peopleInDataBase; i++)
+        for (in. i _ 0; i < peopleInDataBase; i++)
         {
-            __ (name == people[i].name)
+            __ (name __ people[i].name)
             {
                 c__ __  "Person index: " __  (i+1) __  e..
                 c__ __  "Name: " __  people[i].name __  e..
@@ -201,16 +201,16 @@ void removePersonFromDatabase()
     {
         sh.. index;
         c__ __  "Who do you want to remove? Type index: " __  e..
-        c__ >> index;
+        c__ __ index;
 
-        __ (peopleInDataBase >= index)
+        __ (peopleInDataBase >_ index)
         {
-            for (sh.. k = index; k < peopleInDataBase; k++)
+            for (sh.. k _ index; k < peopleInDataBase; k++)
             {
-                people[k-1].name = people[k].name;
-                people[k-1].surname = people[k].surname;
-                people[k-1].age = people[k].age;
-                people[k-1].telephone = people[k].telephone;
+                people[k-1].name _ people[k].name;
+                people[k-1].surname _ people[k].surname;
+                people[k-1].age _ people[k].age;
+                people[k-1].telephone _ people[k].telephone;
             }
 
             peopleInDataBase--;

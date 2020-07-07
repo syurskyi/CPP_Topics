@@ -2,26 +2,26 @@
 
 ? |i..
 ? <memory>
-? <string>
+? |s..
 
 Core::~Core()
 {
     std::c__ __  "Core destructor called.\n";
 }
 
-void Core::write( std::string& /*text*/ ){}; // Do nothing.
+void Core::write( std::s..& /*text*/ ){}; // Do nothing.
 
 Decorator::Decorator( std::unique_ptr< in.erface > c )
 {
-    in.erface = std::move( c );
+    in.erface _ std::move( c );
 }
-void Decorator::write( std::string& text )
+void Decorator::write( std::s..& text )
 {
     in.erface->write( text );
 }
 
 MessengerWithSalutation::MessengerWithSalutation( std::unique_ptr< in.erface > c,
-                                                  const std::string& str )
+                                                  const std::s..& str )
     : Decorator( std::move( c ) )
     , salutation( str )
 {
@@ -30,14 +30,14 @@ MessengerWithSalutation::~MessengerWithSalutation()
 {
     std::c__ __  "Messenger destructor called.\n";
 }
-void MessengerWithSalutation::write( std::string& text )
+void MessengerWithSalutation::write( std::s..& text )
 {
-    text = salutation + "\n\n" + text;
+    text _ salutation + "\n\n" + text;
     Decorator::write( text );
 }
 
 MessengerWithValediction::MessengerWithValediction( std::unique_ptr< in.erface > c,
-                                                    const std::string& str )
+                                                    const std::s..& str )
     : Decorator( std::move( c ) )
     , valediction( str )
 {
@@ -46,27 +46,27 @@ MessengerWithValediction::~MessengerWithValediction()
 {
     std::c__ __  "MessengerWithValediction destructor called.\n";
 }
-void MessengerWithValediction::write( std::string& text )
+void MessengerWithValediction::write( std::s..& text )
 {
     Decorator::write( text );
-    text += "\n\n" + valediction;
+    text +_ "\n\n" + valediction;
 }
 
 void ClientDecorator::run()
 {
-    const std::string salutation = "Greetings,";
-    const std::string valediction = "Sincerly, Andy";
-    std::string message1 = "This message is not decorated.";
-    std::string message2 = "This message is decorated with a salutation.";
-    std::string message3 = "This message is decorated with a valediction.";
-    std::string message4 = "This message is decorated with a salutation and a valediction.";
+    const std::s.. salutation _ "Greetings,";
+    const std::s.. valediction _ "Sincerly, Andy";
+    std::s.. message1 _ "This message is not decorated.";
+    std::s.. message2 _ "This message is decorated with a salutation.";
+    std::s.. message3 _ "This message is decorated with a valediction.";
+    std::s.. message4 _ "This message is decorated with a salutation and a valediction.";
 
-    std::unique_ptr< in.erface > messenger1 = std::make_unique< Core >();
-    std::unique_ptr< in.erface > messenger2 =
+    std::unique_ptr< in.erface > messenger1 _ std::make_unique< Core >();
+    std::unique_ptr< in.erface > messenger2 _
         std::make_unique< MessengerWithSalutation >( std::make_unique< Core >(), salutation );
-    std::unique_ptr< in.erface > messenger3 =
+    std::unique_ptr< in.erface > messenger3 _
         std::make_unique< MessengerWithValediction >( std::make_unique< Core >(), valediction );
-    std::unique_ptr< in.erface > messenger4 = std::make_unique< MessengerWithValediction >(
+    std::unique_ptr< in.erface > messenger4 _ std::make_unique< MessengerWithValediction >(
         std::make_unique< MessengerWithSalutation >( std::make_unique< Core >(), salutation ),
         valediction );
 

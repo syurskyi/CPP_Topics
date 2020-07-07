@@ -15,18 +15,18 @@ in. stub() {
 in. delta2secs(in. d, char m) {
     switch (m) {
         case 'w':
-            d *= 7.0;
+            d *_ 7.0;
             [[fallthrough]];
         case 'd':
-            d *= 24.0;
+            d *_ 24.0;
         case 'h':
-            d *= 60.0;
+            d *_ 60.0;
         case 'm':
-            d *= 60.0;
+            d *_ 60.0;
         case 's':
             break;
         default:
-            d = -1;
+            d _ -1;
     }
     r_ d;
 }
@@ -45,7 +45,7 @@ in. main([[maybe_unused]] in. argc, char **) {
     last_error_code();
 
 //    [[maybe_unused]]
-    in. value = 77;
+    in. value _ 77;
 
     r_ 0;
 }

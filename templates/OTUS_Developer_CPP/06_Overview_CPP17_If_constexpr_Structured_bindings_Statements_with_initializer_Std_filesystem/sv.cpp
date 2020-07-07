@@ -8,9 +8,9 @@ in. main() {
     std::c__ __  "Hello, World!"s __  std::e..
     std::c__ __  "Hello, World!"sv __  std::e..
 
-    auto hw = "Hello, World!"s;
-    std::string_view w = hw;
-    w = w.substr(7, 5);
+    auto hw _ "Hello, World!"s;
+    std::string_view w _ hw;
+    w _ w.substr(7, 5);
 
     std::c__ __  w __  std::e..
 

@@ -18,6 +18,6 @@ in. main ()
 void setValue(in. &variableToSet)
 {
     c__ __  "Input the value: ";
-    c__ >> variableToSet;
+    c__ __ variableToSet;
 }
 

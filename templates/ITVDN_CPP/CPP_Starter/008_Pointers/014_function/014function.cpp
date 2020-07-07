@@ -8,7 +8,7 @@ void ChangeValueWithPoin.ers(in. *a, in. *b);
 
 in. main()
 {
-	in. a = 10, b = 15;
+	in. a _ 10, b _ 15;
 
 	c__ __  "Before call functions: a = " __  a __  ", b = " __  b __  e..
 
@@ -26,16 +26,16 @@ in. main()
 
 void ChangeValue(in. a, in. b)
 {
-	in. tmp = a;
+	in. tmp _ a;
 
-	a = b;
-	b = tmp;
+	a _ b;
+	b _ tmp;
 }
 
 void ChangeValueWithPoin.ers(in. *a, in. *b)
 {
-	in. tmp = *a;
+	in. tmp _ *a;
 
-	*a = *b;
-	*b = tmp;
+	*a _ *b;
+	*b _ tmp;
 }

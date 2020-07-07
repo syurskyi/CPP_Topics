@@ -18,7 +18,7 @@ in. main ()
 
 in. * createArray(in. sizeOfArray)
 {
-    in.* SnewArray = new in.[sizeOfArray];
+    in.* SnewArray _ new in.[sizeOfArray];
 
     r_ newArray;
 }
@@ -27,24 +27,24 @@ void swapTwoValues(in.* firstValue, in.* secondValue)
 {
     in. temporaryVariable;
 
-    temporaryVariable = *firstValue;
-    *firstValue = *secondValue;
-    *secondValue = temporaryVariable;
+    temporaryVariable _ *firstValue;
+    *firstValue _ *secondValue;
+    *secondValue _ temporaryVariable;
 }
 
 void fillArrayWithValues(in. arrayToFill[], in. sizeOfArray)
 {
-    for (in. i = 0; i < sizeOfArray; i++)
+    for (in. i _ 0; i < sizeOfArray; i++)
     {
         c__ __  "Enter " __  i+1 __  " element: ";
-        c__ >> arrayToFill[i];
+        c__ __ arrayToFill[i];
     }
     system("cls");
 }
 
 void prin.ArrayValues(in. arrayToPrin.[], in. sizeOfArray)
 {
-    for (in. i = 0; i < sizeOfArray; i++)
+    for (in. i _ 0; i < sizeOfArray; i++)
     {
         c__ __  "Array[" __  i __  "] = " __  arrayToPrin.[i] __  e..
     }

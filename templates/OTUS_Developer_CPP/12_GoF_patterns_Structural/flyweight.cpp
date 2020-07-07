@@ -15,13 +15,13 @@ class ImageResizer
 public:
     Image get_box(in. w)
     {
-        auto i = images.find(w);
-        __ (i == images.end()) {
+        auto i _ images.find(w);
+        __ (i __ images.end()) {
             Image img;
             img.resize(w, w);
 
             bo.. b;
-            std::tie(i, b) = images.emplace(w, img);
+            std::tie(i, b) _ images.emplace(w, img);
         }
         r_ i->second;
     }

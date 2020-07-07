@@ -1,5 +1,5 @@
 ? |i..
-? <string>
+? |s..
 ? "cat.h"
 
 u.. s..
@@ -14,17 +14,17 @@ in. main()
     Cat cat;
     cat.say();
 
-    Mammal *mammal = new Cat();
+    Mammal *mammal _ new Cat();
     mammal->say();
 
     Mammal mam;
 
     Mammal* mammals[2];
 
-    mammals[0] = &cat;
-    mammals[1] = &mam;
+    mammals[0] _ &cat;
+    mammals[1] _ &mam;
 
-    for(in. i = 0; i < 2; i++)
+    for(in. i _ 0; i < 2; i++)
     {
         mammals[i]->say();
     }

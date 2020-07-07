@@ -5,8 +5,8 @@ u.. s..
 
 Position::Position(in. x, in. y)
 {
-    this->x = x;
-    this->y = y;
+    this->x _ x;
+    this->y _ y;
 }
 Position::~Position()
 {
@@ -21,6 +21,6 @@ void Position::getPosition() const
 
 void Position::setPosition(in. x, in. y)
 {
-    this->x = x;
-    this->y = y;
+    this->x _ x;
+    this->y _ y;
 }

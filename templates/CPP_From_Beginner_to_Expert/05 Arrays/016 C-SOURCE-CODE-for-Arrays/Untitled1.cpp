@@ -12,10 +12,10 @@ main()
     in. x[100];
     in. array[4]; //TYPE NAME[SIZE_NR_OF_ELEMENTS];
 
-    array[0] = 10;
-    array[1] = 50;
-    array[2] = 256;
-    array[3] = 512;
+    array[0] _ 10;
+    array[1] _ 50;
+    array[2] _ 256;
+    array[3] _ 512;
     //array[4] = 125125; we can't do it
 
     /*
@@ -31,6 +31,6 @@ main()
 
     c__ __  "array [0] = " __  array[0] __  ", address: " __  array __  e..
 
-    __ (&array[0] == array)
+    __ (&array[0] __ array)
         c__ __  "thats true";
 }

@@ -5,9 +5,9 @@
 
 struct FileSystemObject
 {
-    virtual ~FileSystemObject() = default;
+    virtual ~FileSystemObject() _ default;
 
-    virtual in. size() = 0;
+    virtual in. size() _ 0;
     virtual void add_object(FileSystemObject *) {};
 };
 
@@ -24,9 +24,9 @@ class Directory : public FileSystemObject
 public:
     in. size() override
     {
-        in. total = 0;
+        in. total _ 0;
         for(auto fo : c) {
-            total += fo->size();
+            total +_ fo->size();
         }
         r_ total;
     }
@@ -42,7 +42,7 @@ private:
 
 Directory* subdir()
 {
-    Directory *d = new Directory;
+    Directory *d _ new Directory;
     d->add_object(new File);
     d->add_object(new File);
     r_ d;
@@ -50,7 +50,7 @@ Directory* subdir()
 
 in. main(in., char *[])
 {
-    Directory* root = new Directory;
+    Directory* root _ new Directory;
     root->add_object(subdir());
 
     std::c__ __  root->size() __  std::e..

@@ -5,11 +5,11 @@ u.. s..
 
 void CallFunction();
 
-in. test = 0;
+in. test _ 0;
 
 in. main()
 {
-	for (in. i = 0; i < 5; i++)
+	for (in. i _ 0; i < 5; i++)
 	{
 		CallFunction();
 	}

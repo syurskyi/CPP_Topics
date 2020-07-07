@@ -14,9 +14,9 @@ class filter_helper {
                                                                               std::cend(owner.input),
                                                                               owner.p)) {};
 
-        auto operator!=(typename Input::const_iterator rhs) const { r_ current != rhs; };
+        auto operator!_(typename Input::const_iterator rhs) const { r_ current !_ rhs; };
 
-        auto operator++() { r_ current = std::find_if(++current, std::cend(owner.input), owner.p); };
+        auto operator++() { r_ current _ std::find_if(++current, std::cend(owner.input), owner.p); };
 
         auto operator*() const { r_ *current; };
     };
@@ -38,9 +38,9 @@ template<typename Input, typename F>
 auto operator|(const Input &input, const F &f) { r_ filter_helper(input, f); }
 
 in. main() {
-    const std::string s{"hello"};
+    const std::s.. s{"hello"};
 
-    for (auto i: s | filter{[](auto c) { r_ c != 'l'; }}) {
+    for (auto i: s | filter{[](auto c) { r_ c !_ 'l'; }}) {
         std::c__ __  i __  std::e..
     }
 }

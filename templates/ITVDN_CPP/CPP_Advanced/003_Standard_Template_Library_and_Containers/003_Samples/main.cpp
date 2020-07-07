@@ -7,7 +7,7 @@
 ? <queue>
 ? <set>
 ? <stack>
-? <string>
+? |s..
 ? <unordered_map>
 ? <unordered_set>
 ? <vector>

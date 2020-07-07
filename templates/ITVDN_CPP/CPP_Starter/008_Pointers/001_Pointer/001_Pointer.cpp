@@ -6,8 +6,8 @@ u.. s..
 in. main()
 {
 
-	in. age = 18;
-	double Pi = 3.14;
+	in. age _ 18;
+	double Pi _ 3.14;
 
 	c__ __  "Address of variable age is: 0x" __  &age __  e..
 

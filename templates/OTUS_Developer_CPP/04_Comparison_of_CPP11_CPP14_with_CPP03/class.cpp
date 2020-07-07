@@ -3,8 +3,8 @@
 
 struct foo
 {
-    foo() = delete;
-    virtual ~foo() = default;
+    foo() _ delete;
+    virtual ~foo() _ default;
 
     virtual void m() final {};
     virtual void n() {};

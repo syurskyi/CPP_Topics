@@ -10,13 +10,13 @@ constexpr in. bar(in. i) {
 }
 
 in. main(in., char *[]) {
-    auto c = std::array<char, 10>();
+    auto c _ std::array<char, 10>();
 
-    in. n = 10;
+    in. n _ 10;
 //    auto d = std::array<char, n>(); // not a constant
 
-    const in. m = 10;
-    auto e = std::array<char, m>();
+    const in. m _ 10;
+    auto e _ std::array<char, m>();
 
     // const vs constexpr
 
@@ -24,11 +24,11 @@ in. main(in., char *[]) {
    // auto g = std::array<char, foo(n)>(); // is not a constant
    // auto h = std::array<char, foo(m)>();
 
-    auto f = std::array<char, bar(10)>();
+    auto f _ std::array<char, bar(10)>();
    // auto g = std::array<char, bar(n)>(); // is not a constant
-    auto h = std::array<char, bar(m)>();
+    auto h _ std::array<char, bar(m)>();
 
-    in. z = bar(10);
+    in. z _ bar(10);
 
     r_ 0;
 }

@@ -8,17 +8,17 @@ main ()
 
     in. numbers[5];
 
-    for (in. i = 0; i < 5; i++)
+    for (in. i _ 0; i < 5; i++)
     {
         c__ __  "Input " __  i+1 __  ". number: ";
-        c__ >> numbers[i];
+        c__ __ numbers[i];
     }
 
     system("cls");
 
-    for (in. i = 0; i < 5; i++)
+    for (in. i _ 0; i < 5; i++)
     {
-        __ (numbers[i] % 2 == 0)
+        __ (numbers[i] % 2 __ 0)
         {
             c__ __  "The number " __  numbers[i] __  " is even." __  e..
         }

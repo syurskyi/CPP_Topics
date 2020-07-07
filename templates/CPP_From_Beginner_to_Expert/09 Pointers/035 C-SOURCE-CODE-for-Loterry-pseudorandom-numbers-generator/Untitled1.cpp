@@ -25,20 +25,20 @@ void lottery(in. total_balls, in. balls_to_draw)
 
      srand(time(NULL)); //seeds
 
-     in. *balls = new in.[balls_to_draw];
+     in. *balls _ new in.[balls_to_draw];
 
-     for (in. i = 0; i < balls_to_draw; i++)
+     for (in. i _ 0; i < balls_to_draw; i++)
      {
-         balls[i] = rand() % total_balls + 1;
+         balls[i] _ rand() % total_balls + 1;
 
-         for (in. j = 0; j < i + 1; j++)
+         for (in. j _ 0; j < i + 1; j++)
          {
-            __(balls[i] == balls[j] && i != j)
+            __(balls[i] __ balls[j] && i !_ j)
             {
                 i--;
                 break;
             }
-            ____ __ (j == i)
+            ____ __ (j __ i)
                 c__ __  balls[i] __  e..
          }
      }

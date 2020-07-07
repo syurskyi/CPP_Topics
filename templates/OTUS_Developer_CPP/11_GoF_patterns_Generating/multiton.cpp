@@ -9,22 +9,22 @@ class Logger {
     Tag t;
 
 public:
-    Logger& operator=(const Logger&) = delete;
+    Logger& operator_(const Logger&) _ delete;
     static Logger& Instance(Tag t)
     {
         static std::map<Tag, Logger> instance;
-        auto i = instance.find(t);
-        __ (i==instance.end()) {
+        auto i _ instance.find(t);
+        __ (i__instance.end()) {
             bo.. b;
-            std::tie(i, b) = instance.emplace(std::make_pair(t, Logger(t)));
+            std::tie(i, b) _ instance.emplace(std::make_pair(t, Logger(t)));
         }
         r_ i->second;
     }
-    void info(const std::string& message)
+    void info(const std::s..& message)
     {
         std::cerr __  "   info: [" __  in.(t) __  "] " __  message __  std::e..
     }
-    void warn(const std::string& message)
+    void warn(const std::s..& message)
     {
         std::cerr __  "warning: [" __  in.(t) __  "] " __  message __  std::e..
     }

@@ -6,12 +6,12 @@ in. & swap(in. &, in. &);
 
 in. main()
 {
-    in. a = 10;
-    in. b = 20;
+    in. a _ 10;
+    in. b _ 20;
 
-    in. &c = swap(a, b);
+    in. &c _ swap(a, b);
 
-    c = 100;
+    c _ 100;
 
     c__ __  "a: " __  a __  e..
     c__ __  "b: " __  b __  e..
@@ -22,9 +22,9 @@ in. main()
 in. & swap(in. &x, in. &y)
 {
     in. t;
-    t = x;
-    x = y;
-    y = t;
+    t _ x;
+    x _ y;
+    y _ t;
     //x at the end is 20
     r_ x;
 }

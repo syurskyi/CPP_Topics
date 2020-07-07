@@ -5,8 +5,8 @@
 class ILogger
 {
 public:
-    virtual void info() = 0;
-    virtual void error() = 0;
+    virtual void info() _ 0;
+    virtual void error() _ 0;
 };
 
 class Logger : public ILogger
@@ -43,7 +43,7 @@ public:
 
 in. main(in., char *[])
 {
-    ILogger *l = new LevelLogger(0, new Logger);
+    ILogger *l _ new LevelLogger(0, new Logger);
 
     l->info();
     l->error();

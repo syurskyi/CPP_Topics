@@ -1,14 +1,14 @@
 ? *s..
 ? |i..
-? <string>
+? |s..
 
 u.. s..
 
-string Function(string);
+s.. Function(s..);
 
 in. main()
 {
-	string sentence = Function("Vladimir");
+	s.. sentence _ Function("Vladimir");
 
 	c__ __  sentence __  e..
 
@@ -16,9 +16,9 @@ in. main()
 	r_ 0;
 }
 
-string Function(string name) 
+s.. Function(s.. name)
 {
-	string hi = "Hello, " + name + "!";
+	s.. hi _ "Hello, " + name + "!";
 
 	r_ hi;
 }

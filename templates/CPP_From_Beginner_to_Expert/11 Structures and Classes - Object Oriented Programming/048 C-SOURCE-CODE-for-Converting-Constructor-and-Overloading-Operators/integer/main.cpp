@@ -7,14 +7,14 @@ in. main()
 {
     in.eger a(50);
 
-    in. b = a;
-    a = 100;
+    in. b _ a;
+    a _ 100;
    // cout << a.getNr() << endl;
     //cout << b << endl;
 
    // cout << a + b << endl;
 
-    b += a; // a = a + b;
+    b +_ a; // a = a + b;
 
     c__ __  a __  e..
 

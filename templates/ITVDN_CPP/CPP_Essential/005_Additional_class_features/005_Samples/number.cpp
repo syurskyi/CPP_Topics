@@ -4,11 +4,11 @@ Number::Number(in. data) : data(data)
 {
 }
 
-Number& Number::operator=(const Number& other)
+Number& Number::operator_(const Number& other)
 {
-    __(this != &other)
+    __(this !_ &other)
     {
-        data = other.data;
+        data _ other.data;
     }
     r_ *this;
 }

@@ -1,6 +1,6 @@
 ? |i..
 ? <map>
-? <string>
+? |s..
 ? <typeinfo>
 //#include <cxxabi.h>  // needed for abi::__cxa_demangle
 
@@ -25,8 +25,8 @@ template < typename T >
 class A
 {
 public:
-    A() = default;
-    A( const A& ) = default;
+    A() _ default;
+    A( const A& ) _ default;
 
     A( const T& _data )
         : data( _data )
@@ -67,7 +67,7 @@ const in.&& foo2()
 // dangerous!
 decltype( auto ) fff()
 {
-    in. x = 10;
+    in. x _ 10;
     r_ ( x );
 }
 
@@ -91,8 +91,8 @@ in. main()
 
     ///////////////////
 
-    const in. a = 10;
-    auto& b = a;
+    const in. a _ 10;
+    auto& b _ a;
     c__ __  typeid( b ).name() __  e..
     // f( b );
 
@@ -107,7 +107,7 @@ in. main()
     // cout << add( 1, 2.5 ) << endl;
     // f( b );
 
-    map< string, in. > mp;
+    map< s.., in. > mp;
 
     //    for ( pair< string, int >& it : mp )
     //    {
@@ -117,8 +117,8 @@ in. main()
     {
     }
 
-    auto i = foo2();              //  i будет иметь тип int
-    decltype( auto ) i2 = foo2(); //  i2 будет иметь тип const int&&
+    auto i _ foo2();              //  i будет иметь тип int
+    decltype( auto ) i2 _ foo2(); //  i2 будет иметь тип const int&&
 
     // f( fff );
 

@@ -1,5 +1,5 @@
 ? |i..
-? <string>
+? |s..
 
 u.. s..
 
@@ -9,13 +9,13 @@ T sum(T a, T b)
     r_ a + b;
 }
 
-template <typename T1, typename T2 = double>
+template <typename T1, typename T2 _ double>
 auto sum(T1 a, T2 b) -> decltype(a + b)
 {
     r_ a + b;
 }
 
-template <typename T = in.>
+template <typename T _ in.>
 class A
 {
 public:
@@ -28,7 +28,7 @@ public:
 };
 
 template <>
-class A<string>
+class A|s..
 {
 public:
     void process()
@@ -36,7 +36,7 @@ public:
         c__ __  a + a __  e..
     }
 
-    string a = "aba";
+    s.. a _ "aba";
 };
 
 template <typename T>
@@ -71,19 +71,19 @@ in. main()
     c__ __  sum(4, "abcde") __  e..
 
     A<> object;
-    object.a = 2.5;
+    object.a _ 2.5;
     object.process();
 
-    A<string> str;
+    A|s.. str;
     str.process();
 
-    B<string, double> b;
-    b.a = "str";
+    B<s.., double> b;
+    b.a _ "str";
     b.process();
 
-    double member = 15.5;
+    double member _ 15.5;
     A<double*> ptr;
-    ptr.a = &member;
+    ptr.a _ &member;
     ptr.process<double>();
 
     r_ 0;

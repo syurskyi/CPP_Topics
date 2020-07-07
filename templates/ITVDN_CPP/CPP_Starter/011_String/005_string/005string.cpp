@@ -8,10 +8,10 @@ in. main()
 	char color[10];
 
 	c__ __  "Enter you name: ";
-	c__ >> name;
+	c__ __ name;
 
 	c__ __  "Enter your favorite color: ";
-	c__ >> color;
+	c__ __ color;
 
 	c__ __  "Your name is " __  name __  ", and you favorit color is " __  color __  e..
 

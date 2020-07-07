@@ -1,16 +1,16 @@
 ? "Person.h"
-? <string>
+? |s..
 u.. s..
 
-Person::Person(string name, in. age) {
-    this -> name = name;
-    this -> age = age;
+Person::Person(s.. name, in. age) {
+    this -> name _ name;
+    this -> age _ age;
 }
 
 in. Person::getAge() {
     r_ this -> age;
 }
 
-string Person::getName() {
+s.. Person::getName() {
     r_ this -> name;
 }

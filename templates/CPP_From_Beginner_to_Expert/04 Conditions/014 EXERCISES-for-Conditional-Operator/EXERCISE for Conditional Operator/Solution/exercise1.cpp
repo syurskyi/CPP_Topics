@@ -6,9 +6,9 @@ main ()
 {
     in. age;
     c__ __  "Please input your age: ";
-    c__ >> age;
+    c__ __ age;
 
-    string isAdult = (age >= 18)
+    s.. isAdult _ (age >_ 18)
         ? "You are an adult please enter !"
         : "You are not an adult !";
 

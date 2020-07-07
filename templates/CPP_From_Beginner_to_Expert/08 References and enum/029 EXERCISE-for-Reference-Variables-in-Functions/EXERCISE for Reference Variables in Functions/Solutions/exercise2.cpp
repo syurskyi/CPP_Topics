@@ -7,10 +7,10 @@ void checkIfTheSame(in.&, in.&);
 in. main ()
 {
 
-    in. a = 4;
-    in. b = 3;
-    in. c = a;
-    in. &d = a;
+    in. a _ 4;
+    in. b _ 3;
+    in. c _ a;
+    in. &d _ a;
 
     checkIfTheSame(a, b);
     checkIfTheSame(a, c);
@@ -21,11 +21,11 @@ in. main ()
 
 void checkIfTheSame(in. &firstVariable, in. &secondVariable)
 {
-    __ (firstVariable == secondVariable && &firstVariable == &secondVariable)
+    __ (firstVariable __ secondVariable && &firstVariable __ &secondVariable)
     {
         c__ __  "The variables are completely the same !";
     }
-    ____ __ (firstVariable == secondVariable && &firstVariable != &secondVariable)
+    ____ __ (firstVariable __ secondVariable && &firstVariable !_ &secondVariable)
     {   
 		c__ __  firstVariable __  " " __  &firstVariable __  e..
         c__ __  secondVariable __  " " __  &secondVariable __  e..

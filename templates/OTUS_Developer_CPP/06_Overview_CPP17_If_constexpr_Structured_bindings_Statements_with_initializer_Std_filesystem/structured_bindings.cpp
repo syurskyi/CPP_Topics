@@ -1,6 +1,6 @@
 ? |i..
 ? <map>
-? <string>
+? |s..
 ? <tuple>
 
 u.. std::string_literals;
@@ -8,17 +8,17 @@ u.. std::string_literals;
 
 // std::map motivation
 void func_map() {
-    std::map<in., std::string> map;
+    std::map<in., std::s..> map;
 
     std::c__ __  "\nfunc_map()\n";
     {
-        auto[iter, inserted] = map.emplace(0, "Petia");
+        auto[iter, inserted] _ map.emplace(0, "Petia");
         std::c__ __  "Key = " __  iter->first __  " Value = " __  iter->second __  std::e..
         std::c__ __  "Inserted = " __  inserted __  std::e..
     }
     {
-        auto[iter, inserted] = map.emplace(0, "Petia");
-        auto[key, value] = *iter;
+        auto[iter, inserted] _ map.emplace(0, "Petia");
+        auto[key, value] _ *iter;
         std::c__ __  "Key = " __  key __  " Value = " __  value __  std::e..
         std::c__ __  "Inserted = " __  inserted __  std::e..
 //        key = 2;
@@ -30,17 +30,17 @@ void func_map() {
 struct POD {
     in. i;
     double d;
-    std::string s;
+    std::s.. s;
 };
 
 void func_pod() {
     std::c__ __  "\nfunc_pod()\n";
     POD pod{41, 2.0, "Vasia"};
-    auto &[i, d, s] = pod;
+    auto &[i, d, s] _ pod;
     std::c__ __  "i = " __  i __  " d = " __  d __  " s = " __  s __  std::e..
-    i = 42;
-    d = 2.5;
-    s = "Petia";
+    i _ 42;
+    d _ 2.5;
+    s _ "Petia";
     std::c__ __  "i = " __  pod.i __  " d = " __  pod.d __  " s = " __  pod.s __  std::e..
 }
 
@@ -50,15 +50,15 @@ auto getTuple() {
 
 void func_tuple() {
     std::c__ __  "\nfunc_tuple\n";
-    std::string name;
-    std::tie(std::ignore, std::ignore, name) = getTuple();
+    std::s.. name;
+    std::tie(std::ignore, std::ignore, name) _ getTuple();
 
-    auto[a, b, n] = getTuple();
+    auto[a, b, n] _ getTuple();
     std::c__ __  "name = " __  name __  std::e..
 }
 
 struct Employee {
-    Employee(std::size_t age, const std::string &name, const std::string &secondName)
+    Employee(std::size_t age, const std::s.. &name, const std::s.. &secondName)
             : m_age{age},
               m_name{name},
               m_secondName{secondName} {
@@ -67,40 +67,40 @@ struct Employee {
 
     std::size_t getAge() const { r_ m_age; }
 
-    std::string getName() const { r_ m_name; }
+    std::s.. getName() const { r_ m_name; }
 
-    std::string getSecondName() const { r_ m_secondName; }
+    std::s.. getSecondName() const { r_ m_secondName; }
 
 private:
     std::size_t m_age;
-    std::string m_name;
-    std::string m_secondName;
+    std::s.. m_name;
+    std::s.. m_secondName;
 };
 
 namespace std {
     template<>
     struct tuple_size<Employee> {
-        static constexpr size_t value = 3;
+        static constexpr size_t value _ 3;
     };
     template<>
     struct tuple_element<0, Employee> {
-        using type = size_t;
+        using type _ size_t;
     };
 
     template<>
     struct tuple_element<1, Employee> {
-        using type = std::string;
+        using type _ std::s..;
     };
 
     template<>
     struct tuple_element<2, Employee> {
-        using type = std::string;
+        using type _ std::s..;
     };
 }
 
 
 template <size_t Position>
-auto get(Employee&) = delete;
+auto get(Employee&) _ delete;
 
 template <>
 auto get<0>(Employee& employee)
@@ -135,9 +135,9 @@ auto get(const Employee &employee) {
 void func_employee() {
     std::c__ __  "\nfunc_employee\n";
     Employee employee{42, "Petia", "Ivanofff"};
-    auto&[age, name, secondName] = employee;
+    auto&[age, name, secondName] _ employee;
     std::c__ __  "age = " __  age __  " name = " __  name __  " secondName = " __  secondName __  std::e..
-    age = 43;
+    age _ 43;
     std::c__ __  "age = " __  employee.getAge() __  " name = " __  employee.getName() __  " secondName = " __  employee.getSecondName() __  std::e..
 }
 

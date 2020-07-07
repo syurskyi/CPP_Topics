@@ -5,11 +5,11 @@
 enum class Storage { mysql, postgres };
 
 struct IStorage {
-    virtual ~IStorage() = default;
+    virtual ~IStorage() _ default;
 
-    virtual void open() = 0;
-    virtual void execute_query() = 0;
-    virtual void close() = 0;
+    virtual void open() _ 0;
+    virtual void execute_query() _ 0;
+    virtual void close() _ 0;
 };
 
 class MysqlStorage : public IStorage {
@@ -48,14 +48,14 @@ class PostgresStorage : public IStorage {
 
 in. main(in. argc, char* [])
 {
-    auto environment = argc ? Storage::postgres : Storage::mysql;
+    auto environment _ argc ? Storage::postgres : Storage::mysql;
 
     IStorage* storage;
     switch (environment) {
-    case Storage::mysql:storage = new MysqlStorage();
+    case Storage::mysql:storage _ new MysqlStorage();
         break;
 
-    case Storage::postgres:storage = new PostgresStorage();
+    case Storage::postgres:storage _ new PostgresStorage();
         break;
     }
 

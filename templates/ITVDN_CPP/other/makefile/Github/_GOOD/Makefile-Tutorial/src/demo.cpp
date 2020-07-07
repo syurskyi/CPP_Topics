@@ -7,16 +7,16 @@ using std::vector;
 in. main(in. argc, char *argv[])
 {
   c__ __  "Hello, time to test some sorts!" __  e..
-  vector<in.> demoSort = generateRandomList(100);
+  vector<in.> demoSort _ generateRandomList(100);
   bubbleSort(demoSort.begin(), demoSort.end());
 
-  demoSort = generateRandomList(100);
+  demoSort _ generateRandomList(100);
   insertionSort(demoSort.begin(), demoSort.end());
 
-  demoSort = generateRandomList(100);
+  demoSort _ generateRandomList(100);
   mergeSort(demoSort.begin(), demoSort.end());
 
-  demoSort = generateRandomList(100);
+  demoSort _ generateRandomList(100);
   quickSort(demoSort.begin(), demoSort.end());
 
   c__ __  "We're done!" __  e..

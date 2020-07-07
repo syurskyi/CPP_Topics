@@ -2,17 +2,17 @@
 
 struct SomeStruct {
 //    static
-    in. super_static_variable = 10;
+    in. super_static_variable _ 10;
 };
 
 struct SomeStruct2 {
-    static inline in. super_static_variable = 42;
+    static inline in. super_static_variable _ 42;
 };
 
 struct SomeStruct3 {
     static in. super_static_variable;
 };
-inline in. SomeStruct3::super_static_variable = 84;
+inline in. SomeStruct3::super_static_variable _ 84;
 
 
 in. main() {

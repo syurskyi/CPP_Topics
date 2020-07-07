@@ -7,15 +7,15 @@ void add(in., in., in. &);
 
 in. main()
 {
-	in. a = 0;
+	in. a _ 0;
 	c__ __  "Enter first number: " __  e..
-	c__ >> a;
+	c__ __ a;
 
-	in. b = 0;
+	in. b _ 0;
 	c__ __  "Enter second number: " __  e..
-	c__ >> b;
+	c__ __ b;
 
-	in. sum = 0;
+	in. sum _ 0;
 	add(a, b, sum);
 
 	c__ __  a __  " + " __  b __  " = " __  sum __  e..
@@ -26,5 +26,5 @@ in. main()
 
 void add(in. x, in. y, in. &sum)
 {
-	sum = x + y;
+	sum _ x + y;
 }

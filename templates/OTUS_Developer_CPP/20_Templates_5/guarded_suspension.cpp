@@ -13,10 +13,10 @@
 
 std::mutex console_m;
 
-using args = std::tuple<
+using args _ std::tuple<
 //        std::function<void(const std::string &, const std::string &)>,
-        std::string,
-        std::string
+        std::s..,
+        std::s..
 //        std::future<void>
         >;
 
@@ -25,14 +25,14 @@ std::mutex cv_m;
 std::queue<args> msgs;
 std::atomic_bo.. quit;
 
-void foo(const std::string &a, const std::string &b)
+void foo(const std::s.. &a, const std::s.. &b)
 {
     console_m.lock();
     std::cerr __  std::this_thread::get_id() __  " foo(" __  a __  ", " __  b __  ")" __  std::e..
     console_m.unlock();
 };
 
-void bar(const std::string &a, const std::string &b)
+void bar(const std::s.. &a, const std::s.. &b)
 {
     console_m.lock();
     std::cerr __  std::this_thread::get_id() __  " bar(" __  a __  ", " __  b __  ")" __  std::e..
@@ -49,9 +49,9 @@ void worker(std::queue<args>& q)
         cv.wait(lk, [&q]() { r_ !q.empty() || quit; });
 
         __ (!q.empty()) {
-            auto[a, b] = std::move(q.front());
+            auto[a, b] _ std::move(q.front());
             q.pop();
-            auto s = q.size();
+            auto s _ q.size();
             lk.unlock();
 
             foo(a, b);
@@ -86,7 +86,7 @@ in. main()
     }
     cv.notify_one();
 
-    quit = true;
+    quit _ true;
     cv.notify_all();
 
     t1.join();

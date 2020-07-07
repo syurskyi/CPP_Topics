@@ -1,5 +1,5 @@
 ? |i..
-? <string>
+? |s..
 ? "cat.h"
 ? <typeinfo>
 
@@ -13,21 +13,21 @@ class B : public A
 
 in. main()
 {
-    Animal* animal = new Cat();
+    Animal* animal _ new Cat();
 
-    A* a = static_cast<A*>(new B());
+    A* a _ static_cast<A*>(new B());
 
-    Animal* an = animal;
-    Pedigreed* ptr_ped = dynamic_cast<Pedigreed*>(an);
+    Animal* an _ animal;
+    Pedigreed* ptr_ped _ dynamic_cast<Pedigreed*>(an);
 
-    __(dynamic_cast<void*>(animal) == dynamic_cast<void*>(ptr_ped))
+    __(dynamic_cast<void*>(animal) __ dynamic_cast<void*>(ptr_ped))
     {
         c__ __  "yes";
     }
 
-    auto ped = dynamic_cast<Pedigreed*>(animal);
-    auto cat = dynamic_cast<Cat*>(ped);
-    __ ( auto dom = dynamic_cast<Domestic*>(cat) )
+    auto ped _ dynamic_cast<Pedigreed*>(animal);
+    auto cat _ dynamic_cast<Cat*>(ped);
+    __ ( auto dom _ dynamic_cast<Domestic*>(cat) )
     {
         c__ __  "Domestic";
         c__ __  dom->get_name();

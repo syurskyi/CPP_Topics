@@ -4,12 +4,12 @@ u.. s..
 /*functions / methods */
 //parameter
 void welcome(); //declaration of function, procedure
-bo.. isNumber(string);
+bo.. isNumber(s..);
 void enterName();
 double add(double a, double b) {r_ a + b;}
 void changeValueTo10(in. a)
 {
-  a = 10;
+  a _ 10;
 }
 in. main()
 {
@@ -20,11 +20,11 @@ in. main()
     char ch;
     c__ __  "Do you want to end the program? (Y/N)" __  e..
 
-    c__ >> ch;
-    __ (ch == 'Y' || ch == 'y')
+    c__ __ ch;
+    __ (ch __ 'Y' || ch __ 'y')
     r_ 0;
    // cout << add(4,5);
-    in. a = 5;
+    in. a _ 5;
 
     changeValueTo10(a);
 
@@ -37,13 +37,13 @@ void welcome()
 {
     c__ __  "HEllo, welcome in my program!! :-)" __  e..
 }
-bo.. isNumber(string tmp)
+bo.. isNumber(s.. tmp)
 {
-    __ (tmp[0] == '0')
+    __ (tmp[0] __ '0')
         r_ false;
-    for (in. i = 0; i < tmp.length(); i++)
+    for (in. i _ 0; i < tmp.length(); i++)
     {
-        __ (!(tmp[i] >= 48 && tmp[i] <= 57))
+        __ (!(tmp[i] >_ 48 && tmp[i] <_ 57))
             r_ false;
     }
 
@@ -51,10 +51,10 @@ bo.. isNumber(string tmp)
 }
 void enterName()
 {
-    string tmp;
+    s.. tmp;
 
     c__ __  "Enter the number: " __  e..
-    c__ >> tmp; //124
+    c__ __ tmp; //124
 
     __ (isNumber(tmp))
         c__ __  "Number entered properly " __  e..

@@ -4,8 +4,8 @@
 
 class Logger {
 public:
-    Logger(const Logger& root) = delete; // [2]
-    Logger& operator=(const Logger&) = delete; // [3]
+    Logger(const Logger& root) _ delete; // [2]
+    Logger& operator_(const Logger&) _ delete; // [3]
 
     static Logger& Instance()
     {
@@ -13,12 +13,12 @@ public:
         r_ instance;
     }
 
-    void info(const std::string& message)
+    void info(const std::s..& message)
     {
         os __  "   info: " __  message __  std::e..
     }
 
-    void warn(const std::string& message)
+    void warn(const std::s..& message)
     {
         os __  "warning: " __  message __  std::e..
     }

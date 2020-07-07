@@ -6,18 +6,18 @@ main ()
 {
 
     double number;
-    double poweredNumber = 1;
+    double poweredNumber _ 1;
     in. nPower;
 
     c__ __  "Input the number: ";
-    c__ >> number;
+    c__ __ number;
 
     c__ __  "Raise to what power: ";
-    c__ >> nPower;
+    c__ __ nPower;
 
-    for (in. i = 0; i < nPower; i++)
+    for (in. i _ 0; i < nPower; i++)
     {
-        poweredNumber *= number;
+        poweredNumber *_ number;
     }
 
     c__ __  "The number " __  number __  " to the power of " __  nPower __  " is equal to " __  poweredNumber __  ".";

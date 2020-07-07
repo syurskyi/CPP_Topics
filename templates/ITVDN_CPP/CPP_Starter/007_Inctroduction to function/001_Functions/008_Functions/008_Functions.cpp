@@ -7,9 +7,9 @@ bo.. Or(bo.. a, bo.. b);
 
 in. main()
 {
-	bo.. result = false, v1 = true, v2 = false;
+	bo.. result _ false, v1 _ true, v2 _ false;
 
-	result = Or(v1, v2);
+	result _ Or(v1, v2);
 
 	c__ __  "a || b = " __  result __  e..
 

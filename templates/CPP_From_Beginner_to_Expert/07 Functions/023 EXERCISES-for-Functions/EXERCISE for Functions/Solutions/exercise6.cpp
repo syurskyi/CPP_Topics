@@ -19,7 +19,7 @@ in. main ()
 
         c__ __  "What mathematical operation you want to use ?" __  e..
         c__ __  "Type: '+' - addition, '-' - subtraction, '*' - multiplication, '/' - division, '^' - exponentiation: ";
-        c__ >> choice;
+        c__ __ choice;
 
         system("cls");
         chooseOperation(choice);
@@ -54,11 +54,11 @@ void addition()
     double firstNumber, secondNumber, result;
 
     c__ __  "Input the first number to add: ";
-    c__ >> firstNumber;
+    c__ __ firstNumber;
     c__ __  "Input the second number to add: ";
-    c__ >> secondNumber;
+    c__ __ secondNumber;
 
-    result = firstNumber + secondNumber;
+    result _ firstNumber + secondNumber;
     c__ __  firstNumber __  " + " __  secondNumber __  " = " __  result __  e..
 
 }
@@ -68,11 +68,11 @@ void subtraction()
     double firstNumber, secondNumber, result;
 
     c__ __  "Input the number to subtract from: ";
-    c__ >> firstNumber;
+    c__ __ firstNumber;
     c__ __  "Input the number to subtract with: ";
-    c__ >> secondNumber;
+    c__ __ secondNumber;
 
-    result = firstNumber - secondNumber;
+    result _ firstNumber - secondNumber;
     c__ __  firstNumber __  " - " __  secondNumber __  " = " __  result __  e..
 
 }
@@ -82,11 +82,11 @@ void multiplication()
     double firstNumber, secondNumber, result;
 
     c__ __  "Input the first number: ";
-    c__ >> firstNumber;
+    c__ __ firstNumber;
     c__ __  "Input the number to multiply by: ";
-    c__ >> secondNumber;
+    c__ __ secondNumber;
 
-    result = firstNumber * secondNumber;
+    result _ firstNumber * secondNumber;
     c__ __  firstNumber __  " * " __  secondNumber __  " = " __  result __  e..
 
 }
@@ -96,27 +96,27 @@ void division()
     double firstNumber, secondNumber, result;
 
     c__ __  "Input the first number: ";
-    c__ >> firstNumber;
+    c__ __ firstNumber;
     c__ __  "Input the number to divide by: ";
-    c__ >> secondNumber;
+    c__ __ secondNumber;
 
-    result = firstNumber / secondNumber;
+    result _ firstNumber / secondNumber;
     c__ __  firstNumber __  " / " __  secondNumber __  " = " __  result __  e..
 
 }
 
 void exponentiation()
 {
-    double base, exponent, result = 1;
+    double base, exponent, result _ 1;
 
     c__ __  "Input the base to exponentiate: ";
-    c__ >> base;
+    c__ __ base;
     c__ __  "Input the exponent value: ";
-    c__ >> exponent;
+    c__ __ exponent;
 
-    for (in. i = 0; i < exponent; i++)
+    for (in. i _ 0; i < exponent; i++)
     {
-        result *= base;
+        result *_ base;
     }
 
     c__ __  "The number " __  base __  " to the power of " __  exponent __  " is equal to " __  result __  "." __  e..

@@ -6,7 +6,7 @@ u.. s..
 
 in. main()
 {
-	in. count = 5;
+	in. count _ 5;
 
 
 	while (count > 0)

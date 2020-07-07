@@ -5,7 +5,7 @@
 
 class DrawPrimitive {
 public:
-    virtual void save_to_file(class Export *) = 0;
+    virtual void save_to_file(class Export *) _ 0;
 };
 
 class Circle : public DrawPrimitive {
@@ -29,9 +29,9 @@ public:
 
 class Export {
 public:
-    virtual void save_to(Circle *) = 0;
+    virtual void save_to(Circle *) _ 0;
 
-    virtual void save_to(Box *) = 0;
+    virtual void save_to(Box *) _ 0;
 };
 
 class JsonExport : public Export {
@@ -65,14 +65,14 @@ void Box::save_to_file(Export *v) {
 }
 
 in. main(in., char *[]) {
-    std::vector<DrawPrimitive *> doc = {new Circle{100}, new Box{4, 3}, new Box{16, 9}, new Circle{13}, new Circle{2}};
+    std::vector<DrawPrimitive *> doc _ {new Circle{100}, new Box{4, 3}, new Box{16, 9}, new Circle{13}, new Circle{2}};
 
-    Export *exporter = new JsonExport{};
+    Export *exporter _ new JsonExport{};
     for (auto obj : doc) {
         obj->save_to_file(exporter);
     }
 
-    exporter = new XmlExport{};
+    exporter _ new XmlExport{};
     for (auto obj : doc) {
         obj->save_to_file(exporter);
     }

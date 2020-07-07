@@ -13,22 +13,22 @@ in. main(in., char *[]) {
 
     std::vector<in.> v;
     {
-        auto begin = v.begin();
-        auto end = v.end();
-        for(; begin != end; ++begin)
+        auto begin _ v.begin();
+        auto end _ v.end();
+        for(; begin !_ end; ++begin)
         {
-            in. i = *begin;
+            in. i _ *begin;
             std::c__ __  i __  std::e..
         }
     }
 
-    std::string s{"hello"};
+    std::s.. s{"hello"};
     for(auto c: s)
     {
         std::c__ __  c __  std::e..
     }
 
-    std::map<in., std::string> m{{1, "1"}};
+    std::map<in., std::s..> m{{1, "1"}};
     for(auto c: m)
     {
 //        std::cout << c << std::endl;

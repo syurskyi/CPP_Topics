@@ -10,7 +10,7 @@ double areaCircle(double);
 double areaSquare(double);
 double areaRectangle(double, double);
 double areaTriangle(double, double);
-bo.. isValid(string);
+bo.. isValid(s..);
 bo.. isValid();
 in. main()
 {
@@ -21,7 +21,7 @@ in. main()
         system("cls"); //clear screen = cls
         initMenu();
 
-        while(!(c__ >> choice))
+        while(!(c__ __ choice))
         {
             //cout << "state before: " << cin.rdstate() << endl;
             c__.clear();
@@ -38,13 +38,13 @@ in. main()
         do
         {
             c__ __  "Do you want to continue the program? (Y/N)" __  e..
-            c__ >> cont; //asdfg
+            c__ __ cont; //asdfg
             c__.ignore(numeric_limits<streamsize>::max(), '\n');
 
-        } while(cont != 'y' && cont != 'Y' && cont != 'N' && cont != 'n');
+        } while(cont !_ 'y' && cont !_ 'Y' && cont !_ 'N' && cont !_ 'n');
 
 
-    } while(cont == 'y' || cont == 'Y');
+    } while(cont __ 'y' || cont __ 'Y');
 
     r_ 0;
 }
@@ -63,22 +63,22 @@ void menuDecision(in. choice)
     {
         case 1:
 
-            do { c__ __  "Enter the radius: " __  e.. c__ >> r; } while(!isValid());
+            do { c__ __  "Enter the radius: " __  e.. c__ __ r; } while(!isValid());
             areaCircle(r);
             break;
         case 2:
             c__ __  "Enter the side of a square: " __  e..
-            do { c__ >> a; } while(!isValid("The data is wrong, please type it again:"));
+            do { c__ __ a; } while(!isValid("The data is wrong, please type it again:"));
             areaSquare(a);
             break;
         case 3:
             c__ __  "Enter the width and height of a rectangle: " __  e..
-            do { c__ >> a >> b; } while(!isValid("The data is wrong, please type it again:"));
+            do { c__ __ a __ b; } while(!isValid("The data is wrong, please type it again:"));
             areaRectangle(a, b);
             break;
         case 4:
             c__ __  "Enter the base and height of a triangle: " __  e..
-            do { c__ >> a >> h; } while(!isValid("The data is wrong, please type it again:"));
+            do { c__ __ a __ h; } while(!isValid("The data is wrong, please type it again:"));
             areaTriangle(a, h);
             break;
         default:
@@ -88,7 +88,7 @@ void menuDecision(in. choice)
 }
 double areaCircle(double r)
 {
-    double result = PI * r * r;
+    double result _ PI * r * r;
 
     c__ __  "The area of a circle that radius is " __  r __  " = " __  result __  e..
 
@@ -96,7 +96,7 @@ double areaCircle(double r)
 }
 double areaSquare(double a)
 {
-    double result = a * a;
+    double result _ a * a;
 
     c__ __  "The area of a square that side is " __  a __  " = " __  result __  e..
 
@@ -104,7 +104,7 @@ double areaSquare(double a)
 }
 double areaRectangle(double a, double b)
 {
-    double result = a * b;
+    double result _ a * b;
 
     c__ __  "The area of a rectangle that first side is " __  a __  " the second side is " __  b __  " = " __  result __  e..
 
@@ -112,13 +112,13 @@ double areaRectangle(double a, double b)
 }
 double areaTriangle(double a, double h)
 {
-    double result = (1/2.0) * a * h;
+    double result _ (1/2.0) * a * h;
 
     c__ __  "The area of a rectangle that first side is " __  a __  " the second side is " __  h __  " = " __  result __  e..
 
     r_ result;
 }
-bo.. isValid(string error_msg)
+bo.. isValid(s.. error_msg)
 {
     __ (c__.rdstate()) //state is wrong when it is not equal to 0
     {

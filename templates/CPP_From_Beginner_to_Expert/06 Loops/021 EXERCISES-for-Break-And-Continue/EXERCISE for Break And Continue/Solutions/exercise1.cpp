@@ -5,19 +5,19 @@ u.. s..
 main ()
 {
     in. maximumNumber;
-    in. sumEven = 0;
+    in. sumEven _ 0;
     in. temp;
 
     c__ __  "Input maximum number you want to check: ";
-    c__ >> maximumNumber;
+    c__ __ maximumNumber;
 
-    for (in. i = 1; i <= maximumNumber; i++)
+    for (in. i _ 1; i <_ maximumNumber; i++)
     {
-        __ (i % 2 == 1)
+        __ (i % 2 __ 1)
             continue;
 
-        temp = sumEven;
-        sumEven += i;
+        temp _ sumEven;
+        sumEven +_ i;
         c__ __  temp __  " + " __  i __  " = " __  sumEven __  e..
 
     }

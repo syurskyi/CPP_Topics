@@ -9,7 +9,7 @@ u.. s..
 
 main()
 {
-    in. A = 4;
+    in. A _ 4;
     //A = 4;
     //& (ampersand)
     //&name_of_variable;
@@ -21,7 +21,7 @@ main()
     c__ __  A __  e..
     c__ __  &A __  e..
 
-    A = 10;
+    A _ 10;
 
     c__ __  A __  e..
     c__ __  &A;

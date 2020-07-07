@@ -10,7 +10,7 @@ in. main()
     c__ __  "Enter the day number of the week: " __  e..
 
     in. dayNumber;
-    c__ >> dayNumber;
+    c__ __ dayNumber;
 
     switch (dayNumber)
     {

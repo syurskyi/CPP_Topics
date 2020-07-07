@@ -6,15 +6,15 @@ main ()
 {
 
     in. number;
-    long double factorialResult = 1;
+    long double factorialResult _ 1;
 
     c__ __  "Input the number: ";
-    c__ >> number;
+    c__ __ number;
 
 
-    for (in. i = 1; i <= number; i++)
+    for (in. i _ 1; i <_ number; i++)
     {
-        factorialResult *= i;
+        factorialResult *_ i;
         c__ __  i __  "! = " __  factorialResult __  e..
     }
 

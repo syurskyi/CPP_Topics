@@ -5,9 +5,9 @@ u.. s..
 in. main ()
 {
 
-    string alphabet = "abcdefghijklmnopqrstuvwxyz";
+    s.. alphabet _ "abcdefghijklmnopqrstuvwxyz";
 
-    for (in. i = 0; i < 26; i++)
+    for (in. i _ 0; i < 26; i++)
         c__ __  alphabet[i];
 
     r_ 0;

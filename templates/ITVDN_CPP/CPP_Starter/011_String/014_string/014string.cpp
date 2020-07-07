@@ -1,13 +1,13 @@
 ﻿? *s..
 ? |i..
 // Эта библиотека нужна для работы с типом string
-? <string>
+? |s..
 
 u.. s..
 
 in. main()
 {
-	string usa_city = "";
+	s.. usa_city _ "";
 
 	c__ __  "Enter USA city : ";
 

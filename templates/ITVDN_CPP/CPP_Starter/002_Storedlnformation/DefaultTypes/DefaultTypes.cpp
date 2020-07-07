@@ -9,8 +9,8 @@ u.. s..
 
 in. main()
 {
-	in. a = 5;
-	char b = 'B';
+	in. a _ 5;
+	char b _ 'B';
 	double c;
 
 	c__ __  b;

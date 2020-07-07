@@ -12,7 +12,7 @@ in. main()
 	while (true)
 	{
 		c__ __  "Enter the digit symbol" __  e..
-		c__ >> number;
+		c__ __ number;
 
 		__ (isdigit(number)) {
 			c__ __  "User entered the number - " __  number __  e..

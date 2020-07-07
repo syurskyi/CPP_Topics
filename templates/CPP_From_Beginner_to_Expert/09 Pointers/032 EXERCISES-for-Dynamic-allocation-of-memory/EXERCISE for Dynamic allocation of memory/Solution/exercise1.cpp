@@ -6,11 +6,11 @@ in. main ()
 {
     in. statical;
 
-    in. *statically = &statical;
-    in. *dynamically = new in.;
+    in. *statically _ &statical;
+    in. *dynamically _ new in.;
 
-    *statically = 10;
-    *dynamically = 15;
+    *statically _ 10;
+    *dynamically _ 15;
 
     c__ __  "The value of the statically allocated variable: " __  *statically __  ", and the address: " __  statically __  e..
     c__ __  "The value of the dynamically allocated variable: " __  *dynamically __  ", and the address: " __  dynamically __  e..

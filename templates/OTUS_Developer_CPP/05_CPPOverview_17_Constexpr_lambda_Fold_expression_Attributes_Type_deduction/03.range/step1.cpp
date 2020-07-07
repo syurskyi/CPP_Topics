@@ -1,5 +1,5 @@
 ? |i..
-? <string>
+? |s..
 
 template<typename Input, typename UnaryPredicate> // 2. UnaryPredicate
 class filter_helper { // 3. wrapper => filter
@@ -12,7 +12,7 @@ class filter_helper { // 3. wrapper => filter
     public:
         explicit iterator(const filter_helper &owner_) : owner(owner_), current(std::cbegin(owner_.input)) {};
 
-        auto operator!=(typename Input::const_iterator rhs) const { r_ current != rhs; };
+        auto operator!_(typename Input::const_iterator rhs) const { r_ current !_ rhs; };
 
         auto operator++() { r_ ++current; };
 
@@ -29,9 +29,9 @@ public:
 };
 
 in. main() {
-    const std::string s{"hello"};
+    const std::s.. s{"hello"};
 
-    for (auto i: filter_helper{s, [](auto c) { r_ c == 'l'; }}) { // 1. predicate
+    for (auto i: filter_helper{s, [](auto c) { r_ c __ 'l'; }}) { // 1. predicate
         std::c__ __  i __  std::e..
     }
 }

@@ -14,7 +14,7 @@ main ()
     c__ __  "6.Bud Light" __  endl __  e..
     c__ __  "Enter your choice: ";
 
-    c__ >> productChoice;
+    c__ __ productChoice;
 
     switch (productChoice)
     {

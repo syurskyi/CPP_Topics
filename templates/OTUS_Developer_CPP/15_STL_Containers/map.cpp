@@ -9,20 +9,20 @@ in. main()
     // - новый объект
     std::map<in., in.> x;
 
-    auto f = x.find(0);
-    __ (f == x.end())
+    auto f _ x.find(0);
+    __ (f __ x.end())
     {
-        x[0] = 1;
+        x[0] _ 1;
     }
 
     // только новый
-    auto [a, b] = x.insert({1, 2});
+    auto [a, b] _ x.insert({1, 2});
     // только новый, зачем?
-    auto [a1, b1] = x.try_emplace(1, 3);
+    auto [a1, b1] _ x.try_emplace(1, 3);
     // новый или перезапишет
-    auto [a2, b2] = x.insert_or_assign(1, 4);
-    x[1] = 5;
-    auto z = x[99];
+    auto [a2, b2] _ x.insert_or_assign(1, 4);
+    x[1] _ 5;
+    auto z _ x[99];
 
     for(auto [i, j]: x)
     {

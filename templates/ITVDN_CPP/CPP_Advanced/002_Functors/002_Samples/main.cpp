@@ -27,7 +27,7 @@ bo.. cmp( in. a, in. b )
     r_ b < a;
 }
 
-using MyFunc = in.( in., in. );
+using MyFunc _ in.( in., in. );
 
 in. main()
 {
@@ -35,7 +35,7 @@ in. main()
 
     Functor f;
 
-    vector< in. > a = { 2, 1, 3, 4 };
+    vector< in. > a _ { 2, 1, 3, 4 };
 
     sort( a.begin(), a.end(), []( in. a, in. b ) -> bo.. { r_ a > b; } );
 
@@ -44,13 +44,13 @@ in. main()
 
     std::function< MyFunc > func_sum;
 
-    func_sum = sum;
+    func_sum _ sum;
 
-    in. value = 4;
+    in. value _ 4;
 
-    [value = std::move( value )]( string s ) { c__ __  value; }( "hello" );
+    [value _ std::move( value )]( s.. s ) { c__ __  value; }( "hello" );
 
-    auto w = std::bind( Functor::method, 100 );
+    auto w _ std::bind( Functor::method, 100 );
 
     w( 3 );
 

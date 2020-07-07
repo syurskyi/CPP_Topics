@@ -29,11 +29,11 @@ struct postgres_client_native {
 };
 
 struct IDatabase {
-    virtual ~IDatabase() = default;
+    virtual ~IDatabase() _ default;
 
-    virtual void connect() = 0;
-    virtual void execute_query() = 0;
-    virtual void close() = 0;
+    virtual void connect() _ 0;
+    virtual void execute_query() _ 0;
+    virtual void close() _ 0;
 };
 
 class MysqlDatabase : public IDatabase
@@ -73,7 +73,7 @@ class PostgresDatabase : public IDatabase
 
 in. main(in., char *[])
 {
-    IDatabase *db = new PostgresDatabase{};
+    IDatabase *db _ new PostgresDatabase{};
 
     db->connect();
     db->execute_query();

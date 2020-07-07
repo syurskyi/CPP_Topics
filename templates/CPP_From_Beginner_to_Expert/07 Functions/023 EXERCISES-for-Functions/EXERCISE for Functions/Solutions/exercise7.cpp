@@ -11,10 +11,10 @@ in. main ()
 {
     double tab[5];
 
-    for (in. i = 0; i < 5; i++)
+    for (in. i _ 0; i < 5; i++)
     {
         c__ __  "Input " __  i+1 __  " number: ";
-        c__ >> tab[i];
+        c__ __ tab[i];
     }
 
     c__ __  "The minimum value was: " __  minValue(tab) __  e..
@@ -25,12 +25,12 @@ in. main ()
 
 double minValue(double tab[])
 {
-    double minValue = tab[0];
+    double minValue _ tab[0];
 
-    for (in. i = 1; i < 5; i++)
+    for (in. i _ 1; i < 5; i++)
     {
         __ (minValue > tab[i])
-            minValue = tab[i];
+            minValue _ tab[i];
 
     }
 
@@ -38,12 +38,12 @@ double minValue(double tab[])
 }
 double maxValue(double tab[])
 {
-    double maxValue = tab[0];
+    double maxValue _ tab[0];
 
-    for (in. i = 1; i < 5; i++)
+    for (in. i _ 1; i < 5; i++)
     {
         __ (maxValue < tab[i])
-            maxValue = tab[i];
+            maxValue _ tab[i];
 
     }
 

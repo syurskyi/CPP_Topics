@@ -8,18 +8,18 @@ void CalcArea(const double* const pPi, const double* const pRadius, double* cons
 {
 	// проверить указатели перед использованием!
 	__ (pPi && pRadius && pArea)
-		*pArea = (*pPi) * (*pRadius) * (*pRadius);
+		*pArea _ (*pPi) * (*pRadius) * (*pRadius);
  }
 
 in. main()
 {
-	const double pi = 3.1416;
+	const double pi _ 3.1416;
 	c__ __  "Enter radius of circle: ";
 
-	double radius = 0;
-	c__ >> radius;
+	double radius _ 0;
+	c__ __ radius;
 
-	double area = 0;
+	double area _ 0;
 
 	CalcArea(&pi, &radius, &area);
 

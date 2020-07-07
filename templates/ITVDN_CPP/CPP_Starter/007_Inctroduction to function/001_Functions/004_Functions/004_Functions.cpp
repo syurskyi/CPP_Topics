@@ -6,7 +6,7 @@ u.. s..
 
 in. main()
 {
-	in. someValue = GetValue();
+	in. someValue _ GetValue();
 
 	c__ __  someValue __  e..
 

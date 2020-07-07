@@ -3,8 +3,8 @@
 ? |i..
 
 struct ClockSignal {
-    virtual ~ClockSignal() = default;
-    virtual void now() = 0;
+    virtual ~ClockSignal() _ default;
+    virtual void now() _ 0;
 };
 
 class in.ernetClockSignal : public ClockSignal
@@ -26,14 +26,14 @@ class LocalClockSignal : public ClockSignal
 struct Clock {
     ClockSignal *s;
 
-    virtual ~Clock() = default;
+    virtual ~Clock() _ default;
 
     void refresh()
     {
         s->now();
         display();
     }
-    virtual void display() = 0;
+    virtual void display() _ 0;
 };
 
 class DigitalClock : public Clock
@@ -54,8 +54,8 @@ class AnalogClock : public Clock
 
 in. main(in., char *[])
 {
-    Clock *c = new DigitalClock;
-    c->s = new in.ernetClockSignal;
+    Clock *c _ new DigitalClock;
+    c->s _ new in.ernetClockSignal;
 
     c->refresh();
 

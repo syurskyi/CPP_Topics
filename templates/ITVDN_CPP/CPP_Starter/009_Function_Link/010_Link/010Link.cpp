@@ -7,9 +7,9 @@ void add_two(in. &);
 
 in. main()
 {
-	in. a = 0;
+	in. a _ 0;
 	c__ __  "Enter the value: " __  e..
-	c__ >> a;
+	c__ __ a;
 
 	c__ __  "Value of variable a = " __  a __  e..
 
@@ -23,6 +23,6 @@ in. main()
 
 void add_two(in. &a)
 {
-	a = a + 2;
+	a _ a + 2;
 	c__ __  "Value int a = " __  a __  e..
 }

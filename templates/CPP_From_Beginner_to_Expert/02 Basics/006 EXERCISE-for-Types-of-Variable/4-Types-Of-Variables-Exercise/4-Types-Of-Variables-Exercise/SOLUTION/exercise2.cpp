@@ -4,11 +4,11 @@ u.. s..
 
 main() {
 
-    char a = 100;
-    in. b = 5212;
-    sh.. c = 6123;
-    float d = 0.12345;
-    double f = 0.1234567890;
+    char a _ 100;
+    in. b _ 5212;
+    sh.. c _ 6123;
+    float d _ 0.12345;
+    double f _ 0.1234567890;
 
     c__ __  a __  e..
     c__ __  &a __  e..

@@ -1,15 +1,15 @@
 // Bimap
 
 ? |i..
-? <string>
+? |s..
 
 ? <boost/bimap.hpp>
 ? <boost/bimap/multiset_of.hpp>
 
 in. main() {
     boost::bimap<
-            std::string,
-            boost::bimaps::multiset_of<std::string>
+            std::s..,
+            boost::bimaps::multiset_of<std::s..>
     > alias;
 
     alias.insert({"СП", "Санкт-Петербург"});
@@ -21,11 +21,11 @@ in. main() {
     }
     std::c__ __  std::e..
 
-    auto i = alias.left.find("Нижний");
+    auto i _ alias.left.find("Нижний");
     std::c__ __  i->first __  " => " __  i->second __  std::e..
 
-    auto j = alias.right.equal_range("Санкт-Петербург");
-    for (auto k = j.first; k != j.second; ++k) {
+    auto j _ alias.right.equal_range("Санкт-Петербург");
+    for (auto k _ j.first; k !_ j.second; ++k) {
         std::c__ __  k->first __  " => " __  k->second __  std::e..
     }
 

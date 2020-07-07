@@ -10,8 +10,8 @@ void swapTwoValues(in.*, in.*);
 void fillArrayWithValues(in.[], in.);
 void prin.ArrayValues(in.[], in.);
 
-void bubbleSort(in.[], in., in. = 1);
-void selectionSort(in.[], in., in. = 1);
+void bubbleSort(in.[], in., in. _ 1);
+void selectionSort(in.[], in., in. _ 1);
 
 
 in. main ()
@@ -22,7 +22,7 @@ in. main ()
 
 in. * createArray(in. sizeOfArray)
 {
-    in.* newArray = new in.[sizeOfArray];
+    in.* newArray _ new in.[sizeOfArray];
 
     r_ newArray;
 }
@@ -31,24 +31,24 @@ void swapTwoValues(in.* firstValue, in.* secondValue)
 {
     in. temporaryVariable;
 
-    temporaryVariable = *firstValue;
-    *firstValue = *secondValue;
-    *secondValue = temporaryVariable;
+    temporaryVariable _ *firstValue;
+    *firstValue _ *secondValue;
+    *secondValue _ temporaryVariable;
 }
 
 void fillArrayWithValues(in. arrayToFill[], in. sizeOfArray)
 {
-    for (in. i = 0; i < sizeOfArray; i++)
+    for (in. i _ 0; i < sizeOfArray; i++)
     {
         c__ __  "Enter " __  i+1 __  " element: ";
-        c__ >> arrayToFill[i];
+        c__ __ arrayToFill[i];
     }
     system("cls");
 }
 
 void prin.ArrayValues(in. arrayToPrin.[], in. sizeOfArray)
 {
-    for (in. i = 0; i < sizeOfArray; i++)
+    for (in. i _ 0; i < sizeOfArray; i++)
     {
         c__ __  "Array[" __  i __  "] = " __  arrayToPrin.[i] __  e..
     }
@@ -57,15 +57,15 @@ void prin.ArrayValues(in. arrayToPrin.[], in. sizeOfArray)
 
 void bubbleSort(in. arrayToSort[], in. sizeOfArray, in. orderOfSequence)
 {
-    for (in. i = 0; i < sizeOfArray-1; i++)
+    for (in. i _ 0; i < sizeOfArray-1; i++)
     {
-        for (in. j = 0; j < sizeOfArray-1; j++)
+        for (in. j _ 0; j < sizeOfArray-1; j++)
         {
-            __ (orderOfSequence == 1 && arrayToSort[j] > arrayToSort[j+1])
+            __ (orderOfSequence __ 1 && arrayToSort[j] > arrayToSort[j+1])
             {
                     swapTwoValues(arrayToSort+j, arrayToSort+j+1);
             }
-            ____ __ (orderOfSequence == 2 && arrayToSort[j] < arrayToSort[j+1])
+            ____ __ (orderOfSequence __ 2 && arrayToSort[j] < arrayToSort[j+1])
             {
                     swapTwoValues(arrayToSort+j, arrayToSort+j+1);
             }
@@ -77,18 +77,18 @@ void bubbleSort(in. arrayToSort[], in. sizeOfArray, in. orderOfSequence)
 void selectionSort(in. arrayToSort[], in. sizeOfArray, in. orderOfSequence)
 {
     in. limitIndex;
-    for (in. i = 0; i < sizeOfArray; i++)
+    for (in. i _ 0; i < sizeOfArray; i++)
     {
-        limitIndex = i;
-        for (in. j = i; j < sizeOfArray; j++)
+        limitIndex _ i;
+        for (in. j _ i; j < sizeOfArray; j++)
         {
-            __ (orderOfSequence == 1 && arrayToSort[j] < arrayToSort[limitIndex])
+            __ (orderOfSequence __ 1 && arrayToSort[j] < arrayToSort[limitIndex])
             {
-                limitIndex = j;
+                limitIndex _ j;
             }
-            ____ __ (orderOfSequence == 2 && arrayToSort[j] > arrayToSort[limitIndex])
+            ____ __ (orderOfSequence __ 2 && arrayToSort[j] > arrayToSort[limitIndex])
             {
-                limitIndex = j;
+                limitIndex _ j;
             }
         }
         swapTwoValues(arrayToSort+i, arrayToSort+limitIndex);

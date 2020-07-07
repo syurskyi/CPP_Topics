@@ -11,7 +11,7 @@ in. main() {
         std::c__ __  i __  std::e..
     }
 
-    v = {3, 2, 1, 0, -1, -2, -3};
+    v _ {3, 2, 1, 0, -1, -2, -3};
     v.pop_front();
     v.emplace_front(4);
     // vs?
@@ -23,8 +23,8 @@ in. main() {
 
 
     // один чанк не меньше 16 элементов и не менее 4k суммарно
-    std::deque<xray::object, xray::allocator<xray::object>> xray;
-    for (auto i = 0u; i < 17; ++i) {
+    std::deque<xray::object, xray::allocator<xray::object__ xray;
+    for (auto i _ 0u; i < 17; ++i) {
         xray.emplace_back(i);
         std::c__ __  "---" __  std::e..
     }
@@ -37,7 +37,7 @@ in. main() {
     xray.emplace_front(101);
     std::c__ __  "===" __  std::e..
 
-    auto i = xray.begin();
+    auto i _ xray.begin();
     std::advance(i, 10);
     xray.emplace(i, 200);
     std::c__ __  "---" __  std::e..

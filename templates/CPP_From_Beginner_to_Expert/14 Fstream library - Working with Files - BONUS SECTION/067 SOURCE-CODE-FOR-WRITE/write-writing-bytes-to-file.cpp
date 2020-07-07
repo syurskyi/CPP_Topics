@@ -15,7 +15,7 @@ in. main()
 
     __ (file.is_open())
     {
-        char sample[] = "sample text";
+        char sample[] _ "sample text";
 
         c__ __  sizeof(sample) __  e..
 

@@ -20,12 +20,12 @@ void prin.Me() {
 }
 
 in. main() {
-    static const char c = 'c';
+    static const char c _ 'c';
 
     prin.Value<10>();
     prin.Value<&c>();
 
-    static const in. a = 42;
+    static const in. a _ 42;
 
     prin.Me<10>();
     prin.Me<'a'>();

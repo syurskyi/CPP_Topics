@@ -12,7 +12,7 @@ in. main ()
 
 in. * createArray(in. sizeOfArray)
 {
-    in.* newArray = new in.[sizeOfArray];
+    in.* newArray _ new in.[sizeOfArray];
 
     r_ newArray;
 }

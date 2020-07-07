@@ -3,8 +3,8 @@
 
 // typeid(type | expr), sizeof(type | expr), noexcept(expr), and decltype(expr)
 
-auto fa = 1 + 3.14 + 65;
-decltype(1 + 3.14) f = 1 + 3.14;
+auto fa _ 1 + 3.14 + 65;
+decltype(1 + 3.14) f _ 1 + 3.14;
 
 // decltype(x * x) bar(int x)
 auto bar(in. x) -> decltype(x * x)
@@ -12,18 +12,18 @@ auto bar(in. x) -> decltype(x * x)
     r_ x * x;
 }
 
-in. i = 42;
+in. i _ 42;
 
 auto foo()
 {
-    const in. &y = i;
+    const in. &y _ i;
     r_ y;
 }
 
 in. main(in., char *[])
 {
-	auto j = foo();
-	j = 1;
+	auto j _ foo();
+	j _ 1;
 
     std::c__ __  i __  std::e..
     std::c__ __  j __  std::e..
@@ -35,7 +35,7 @@ in. main(in., char *[])
 struct car {
     in. engine;
 private:
-    car() = delete;
+    car() _ delete;
 };
 decltype(car::engine) c1; // car()
 
@@ -48,6 +48,6 @@ decltype(ex()) c2;
 
 in. arr[10];
 
-decltype(arr[1000]) c3 = i;
+decltype(arr[1000]) c3 _ i;
 
-auto f1 = decltype(1 + 3.14)(1);
+auto f1 _ decltype(1 + 3.14)(1);

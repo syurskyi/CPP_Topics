@@ -1,13 +1,13 @@
 ? |i..
 
 struct foo {
-    in. a = -1;
+    in. a _ -1;
     in. b{-2};
     in. c{-3};
 };
 
 struct bar {
-    bar() = default;
+    bar() _ default;
     bar(in. a_, in. b_) : a(a_ * 10), b(b_ * 10), c(30) {};
 //    bar(std::initializer_list<int> il) : a(il.size()), b(0), c(0) {};
     in. a{-1};
@@ -16,8 +16,8 @@ struct bar {
 };
 
 in. main(in., char *[]) {
-    in. i[4] = {1, 2, 3, 4};
-    in. j[] = {1, 2, 3, 4};
+    in. i[4] _ {1, 2, 3, 4};
+    in. j[] _ {1, 2, 3, 4};
 
     foo f{1, 2};
 

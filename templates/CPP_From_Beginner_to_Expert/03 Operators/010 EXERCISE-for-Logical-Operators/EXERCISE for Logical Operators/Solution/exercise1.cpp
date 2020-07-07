@@ -8,13 +8,13 @@ main() {
     bo.. isContained;
 
     c__ __  "Please input the minimum value: ";
-    c__ >> minValue;
+    c__ __ minValue;
     c__ __  "Please input the maximum value: ";
-    c__ >> maxValue;
+    c__ __ maxValue;
     c__ __  "Please input the number to check: ";
-    c__ >> elementToCheck;
+    c__ __ elementToCheck;
 
-    isContained = (minValue <= elementToCheck) && (elementToCheck <= maxValue);
+    isContained _ (minValue <_ elementToCheck) && (elementToCheck <_ maxValue);
     c__ __  "Is the number " __  elementToCheck __  " contained in the interval from " __  minValue __  " to " __  maxValue __  " ? " __  isContained;
 
 }

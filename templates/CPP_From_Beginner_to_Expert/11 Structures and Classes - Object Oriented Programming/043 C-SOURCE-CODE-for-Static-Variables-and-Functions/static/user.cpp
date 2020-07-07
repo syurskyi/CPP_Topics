@@ -1,11 +1,11 @@
 ? "user.h"
 
-in. User::counter = 0;
+in. User::counter _ 0;
 
 User::User()
 {
     counter++;
-    ID = counter;
+    ID _ counter;
 }
 User::~User()
 {

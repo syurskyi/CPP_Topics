@@ -8,13 +8,13 @@ class Report {
         std::c__ __  "prepare" __  std::e..
     }
 
-    virtual void secure() = 0;
+    virtual void secure() _ 0;
 
     void aggregate() {
         std::c__ __  "aggregate" __  std::e..
     }
 
-    virtual void format() = 0;
+    virtual void format() _ 0;
 
     void publish() {
         std::c__ __  "publish" __  std::e..

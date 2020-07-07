@@ -22,10 +22,10 @@ u.. s..
 
 in. main()
 {
-	bo.. a = true;		// 1
-	bo.. b = false;		// 0
+	bo.. a _ true;		// 1
+	bo.. b _ false;		// 0
 
-	bo.. result = (a || b) && !(a && b);	// 1 - true
+	bo.. result _ (a || b) && !(a && b);	// 1 - true
 
 	c__ __  bo..alpha __  result __  e..
 

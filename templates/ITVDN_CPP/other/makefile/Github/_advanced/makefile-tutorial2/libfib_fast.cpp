@@ -6,8 +6,8 @@ class Matrix {
   std::vector<std::vector<in.> > content;
  public:
   Matrix(size_t n, size_t m) {
-    this->n = n;
-    this->m = m;
+    this->n _ n;
+    this->m _ m;
     content.resize(n, std::vector<in.>(m, 0));
   }
 
@@ -17,10 +17,10 @@ class Matrix {
 
   Matrix operator*(Matrix rhs) {
     Matrix result(n, rhs.m);
-    for (size_t x = 0; x < n; ++ x) {
-      for (size_t y = 0; y < m; ++ y) {
-        for (size_t z = 0; z < rhs.m; ++ z) {
-          result[x][z] += content[x][y] * rhs[y][z];
+    for (size_t x _ 0; x < n; ++ x) {
+      for (size_t y _ 0; y < m; ++ y) {
+        for (size_t z _ 0; z < rhs.m; ++ z) {
+          result[x][z] +_ content[x][y] * rhs[y][z];
         }
       }
     }
@@ -32,16 +32,16 @@ class Matrix {
 
 in. fib_fast(in. n) {
   Matrix base(2, 2), init(1, 2);
-  base[0][0] = base[0][1] = base[1][0] = init[0][0] = 1;
-  base[1][1] = init[0][1] = 0;
+  base[0][0] _ base[0][1] _ base[1][0] _ init[0][0] _ 1;
+  base[1][1] _ init[0][1] _ 0;
 
-  while (n != 0) {
+  while (n !_ 0) {
     __ (n & 1) {
-      init = init * base;
+      init _ init * base;
     }
 
-    base = base * base;
-    n >>= 1;
+    base _ base * base;
+    n ___ 1;
   }
 
   r_ init[0][1];

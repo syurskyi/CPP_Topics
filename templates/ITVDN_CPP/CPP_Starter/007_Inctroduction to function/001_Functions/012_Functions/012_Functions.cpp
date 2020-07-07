@@ -1,17 +1,17 @@
 ? *s..
 ? |i..
-? <string>
+? |s..
 
 u.. s..
 
 void SampleFunction();
 void Global();
 
-string value = "Global variable!";
+s.. value _ "Global variable!";
 
 in. main()
 {
-	string value = "Local variable in Main!";
+	s.. value _ "Local variable in Main!";
 
 	c__ __  value __  e..
 
@@ -25,7 +25,7 @@ in. main()
 
 void SampleFunction()
 {
-	string value = "Local variable in SampleFunction!";
+	s.. value _ "Local variable in SampleFunction!";
 
 	c__ __  value __  e..
 }

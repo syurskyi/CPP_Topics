@@ -25,7 +25,7 @@ Context::Context( Strategyin.erface* strategy )
 
 void Context::set_strategy( Strategyin.erface* strategy )
 {
-    strategy_ = strategy;
+    strategy_ _ strategy;
 }
 
 void Context::execute() const

@@ -7,14 +7,14 @@ void get_array_info(in. *arr, in. count, in. *max, in. *min, in. *avrg);
 
 in. main()
 {
-	in. * p_arr = new in.[100];
+	in. * p_arr _ new in.[100];
 
-	for (in. i = 0; i < 100; i++)
+	for (in. i _ 0; i < 100; i++)
 	{
-		*(p_arr + i) = rand();
+		*(p_arr + i) _ rand();
 	}
 	
-	in. max = 0, min = 0, avrg = 0;
+	in. max _ 0, min _ 0, avrg _ 0;
 
 	get_array_info(p_arr, 100, &max, &min, &avrg);
 
@@ -26,20 +26,20 @@ in. main()
 
 void get_array_info(in. *arr, in. count, in. *max, in. *min, in. *avrg)
 {
-	*max = arr[0];
-	*min = arr[0];
-	*avrg = 0;
-	for (in. i = 0; i < count; i++)
+	*max _ arr[0];
+	*min _ arr[0];
+	*avrg _ 0;
+	for (in. i _ 0; i < count; i++)
 	{
 		__ (arr[i] > *max) {
-			*max = arr[i];
+			*max _ arr[i];
 		}
 		
 		__ (arr[i] < *min) {
-			*min = arr[i];
+			*min _ arr[i];
 		}
-		*avrg += *(arr + i);
+		*avrg +_ *(arr + i);
 	}
 
-	*avrg = *avrg / count;
+	*avrg _ *avrg / count;
 }

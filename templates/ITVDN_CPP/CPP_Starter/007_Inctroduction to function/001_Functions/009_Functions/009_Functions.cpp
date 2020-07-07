@@ -1,17 +1,17 @@
 ? *s..
 ? |i..
-? <string>
+? |s..
 
 u.. s..
 
-string Compare(in., in.);
+s.. Compare(in., in.);
 
 in. main()
 {
-	in. value1 = 15, value2 = 15;
-	string result;
+	in. value1 _ 15, value2 _ 15;
+	s.. result;
 
-	result = Compare(value1, value2);
+	result _ Compare(value1, value2);
 
 	c__ __  result __  e..
 
@@ -19,21 +19,21 @@ in. main()
 	r_ 0;
 }
 
-string Compare(in. val1, in. val2)
+s.. Compare(in. val1, in. val2)
 {
-	string result = "";
+	s.. result _ "";
 
 	__ (val1 < val2)
 	{
-		result = "Comparison Less Then";
+		result _ "Comparison Less Then";
 	}
 	____ __ (val1 > val2)
 	{
-		result = "Comparison Greater Then";
+		result _ "Comparison Greater Then";
 	}
 	____
 	{
-		result = "Comparison Equal";
+		result _ "Comparison Equal";
 	}
 
 	r_ result;

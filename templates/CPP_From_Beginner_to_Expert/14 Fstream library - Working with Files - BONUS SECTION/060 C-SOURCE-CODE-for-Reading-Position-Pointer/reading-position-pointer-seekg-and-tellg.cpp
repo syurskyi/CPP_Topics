@@ -24,27 +24,27 @@ in. main()
 
     __ (file.is_open())
     {
-        string buffer;
+        s.. buffer;
 
         file.seekg(0, i.. end);
 
-        streampos sizeOfFile = file.tellg();
+        streampos sizeOfFile _ file.tellg();
 
         file.seekg(0);
 
         c__ __  "The size of the file is " __  sizeOfFile __  " bytes" __  e..
         do
         {
-            file >> buffer;
+            file __ buffer;
 
             c__ __  buffer __  e..
         }while (!file.eof());
 
-        __ ((file.rdstate() ^ ifstream::eofbit) == 0)
+        __ ((file.rdstate() ^ ifstream::eofbit) __ 0)
         {
             file.clear();
             c__ __  file.tellg() __  e..
-            file >> buffer;
+            file __ buffer;
 
             c__ __  buffer __  e..
             //set indicator of place in file to some other place

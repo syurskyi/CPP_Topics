@@ -24,7 +24,7 @@ in. main()
 
     __ (file.is_open())
     {
-        string tmp = "this is text about nothing";
+        s.. tmp _ "this is text about nothing";
 
         file __  tmp;
 

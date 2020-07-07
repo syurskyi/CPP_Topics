@@ -39,7 +39,7 @@ void operationOnPoin.s()
     Poin.2D p1(10, 67);
     Poin.2D p2(50, 3); // 60,70
 
-    Poin.2D sum = add(p1,p2);
+    Poin.2D sum _ add(p1,p2);
 
     c__ __  sum.getX() __  e..
     c__ __  sum.getY() __  e..

@@ -16,7 +16,7 @@ public:
 
     friend void swap(X& lhs, X& rhs)
     {
-        __(&lhs==&rhs)
+        __(&lhs__&rhs)
             r_;
         std::lock(lhs.m,rhs.m);
         std::lock_guard<std::mutex> lock_a(lhs.m,std::adopt_lock);

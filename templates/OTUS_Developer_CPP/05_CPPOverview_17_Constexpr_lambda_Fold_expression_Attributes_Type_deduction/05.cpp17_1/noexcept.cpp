@@ -35,5 +35,5 @@ in. main() {
 
     void (*fp)() noexcept;
 //    fp = dang;
-    fp = safe;
+    fp _ safe;
 }

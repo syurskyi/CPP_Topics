@@ -4,7 +4,7 @@
 
 in. main()
 {
-    auto logger = spdlog::stdout_logger_mt("console");
+    auto logger _ spdlog::stdout_logger_mt("console");
     logger->info("version {} was started", version());
 
     r_ 0;

@@ -5,16 +5,16 @@ u.. s..
 
 in. main()
 {
-    double var = 5.6;
+    double var _ 5.6;
 
-    in. a = 5;
-    in. b = 7;
+    in. a _ 5;
+    in. b _ 7;
     c__ __  (double)a / b __  e..
 
     c__ __  (in.) var __  e.. //explict way C
 
-    in. x = 444;
-    sh.. y = x; //implicit way of casting
+    in. x _ 444;
+    sh.. y _ x; //implicit way of casting
 
     c__ __  y __  e..
 
@@ -24,7 +24,7 @@ in. main()
 
     char ch;
 
-    c__ >> ch;
+    c__ __ ch;
 
     c__ __  (in.)ch __  e..
     r_ 0;

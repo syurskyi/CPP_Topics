@@ -2,7 +2,7 @@
 
 // https://godbolt.org/ gcc 9.2 -O1
 //const
-in. a[] = {1, 2, 3};
+in. a[] _ {1, 2, 3};
 auto foo() {
 //    const
 //    int a[] = {1, 2, 3};
@@ -11,7 +11,7 @@ auto foo() {
 
 // constexpr
 auto fibonacci_naive(long long n) {
-    __ (n <= 1)
+    __ (n <_ 1)
         r_ n;
     ____
         r_ fibonacci_naive(n - 1) + fibonacci_naive(n - 2);
@@ -19,7 +19,7 @@ auto fibonacci_naive(long long n) {
 
 // constexpr
 auto factorial_naive(long long n) {
-    __ (n <= 1)
+    __ (n <_ 1)
         r_ n;
     ____
         r_ n * factorial_naive(n - 1);
@@ -27,12 +27,12 @@ auto factorial_naive(long long n) {
 
 template<long long N>
 struct factorial {
-    static const long long value = N * factorial<N - 1>::value;
+    static const long long value _ N * factorial<N - 1>::value;
 };
 
 template<>
 struct factorial<1> {
-    static const long long value = 1;
+    static const long long value _ 1;
 };
 
 in. main() {

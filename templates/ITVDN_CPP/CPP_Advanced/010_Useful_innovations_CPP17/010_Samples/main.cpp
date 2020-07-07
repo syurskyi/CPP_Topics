@@ -8,7 +8,7 @@
 ? <memory>
 ? <optional>
 //#include <parallel/algorithm>
-? <string>
+? |s..
 ? <string_view>
 ? <utility>
 ? <variant>
@@ -45,7 +45,7 @@ void example()
     // aggregate
     struct base1
     {
-        in. b1, b2 = 42;
+        in. b1, b2 _ 42;
     };
 
     // non-aggregate
@@ -156,14 +156,14 @@ namespace tmpl_arg_deduction
 {
 void example()
 {
-    pair< in., string > p_a( 1, "12" );
+    pair< in., s.. > p_a( 1, "12" );
 
     // c++17
     pair p_b( 1, "12" );
-    pair p_c = { 1, "12" };
-    vector vi = { 1, 2, 3, 4 };
-    vector vs = { "str1", "str2", "str1" };
-    in. m = max( 12, 23 );
+    pair p_c _ { 1, "12" };
+    vector vi _ { 1, 2, 3, 4 };
+    vector vs _ { "str1", "str2", "str1" };
+    in. m _ max( 12, 23 );
 }
 }
 
@@ -171,13 +171,13 @@ namespace constexpr_lambda
 {
 constexpr in. f_calc( in. aValue )
 {
-    auto lambda = [aValue]() { r_ aValue * 14; };
+    auto lambda _ [aValue]() { r_ aValue * 14; };
     r_ aValue + lambda();
 }
 
 void example()
 {
-    constexpr auto lambda = []( in. aValue ) { r_ aValue * aValue; };
+    constexpr auto lambda _ []( in. aValue ) { r_ aValue * aValue; };
 
     c__ __  f_calc( 12 ) __  e..
     c__ __  lambda( 12 ) __  e..
@@ -189,12 +189,12 @@ struct test
 {
     void f_test()
     {
-        auto lambda_const = [*this]() {
+        auto lambda_const _ [*this]() {
             f_const();
             r_ mA * mA;
         };
 
-        auto lambda = [*this]() mutable {
+        auto lambda _ [*this]() mutable {
             f();
             r_ mA * mA;
         };
@@ -229,15 +229,15 @@ struct S
 template < std::size_t aFieldNubmer >
 void prin.( S& s )
 {
-    __ constexpr ( aFieldNubmer == 0 )
+    __ constexpr ( aFieldNubmer __ 0 )
     {
         c__ __  s.min. __  e..
     }
-    ____ __ constexpr ( aFieldNubmer == 1 )
+    ____ __ constexpr ( aFieldNubmer __ 1 )
     {
         c__ __  s.mFloat __  e..
     }
-    ____ __ constexpr ( aFieldNubmer == 2 )
+    ____ __ constexpr ( aFieldNubmer __ 2 )
     {
         for ( auto i : s.mVectorin. )
             c__ __  i __  ' ';
@@ -247,7 +247,7 @@ void prin.( S& s )
 
 void example()
 {
-    S obj = { 10, 11.f, { 1, 2, 3, 4 } };
+    S obj _ { 10, 11.f, { 1, 2, 3, 4 } };
 
     prin.< 0 >( obj );
     prin.< 1 >( obj );
@@ -258,7 +258,7 @@ namespace if_switch_initializer
 {
 void if_example( void* aP )
 {
-    __ ( void* p = aP; p == nullptr )
+    __ ( void* p _ aP; p __ nullptr )
         c__ __  "Error. Pointer is nullptr" __  e..
     ____
         c__ __  "Pointer is OK!" __  e..
@@ -266,7 +266,7 @@ void if_example( void* aP )
 
 void switch_example( in. error )
 {
-    switch ( in. code = error; code )
+    switch ( in. code _ error; code )
     {
         case 0:
         {
@@ -294,9 +294,9 @@ namespace struct_binding
 {
 void f_pair()
 {
-    pair p = { 1, "Hello" };
+    pair p _ { 1, "Hello" };
 
-    auto [ x, y ] = p;
+    auto [ x, y ] _ p;
 
     c__ __  x __  e..
     c__ __  y __  e..
@@ -304,9 +304,9 @@ void f_pair()
 
 void f_array()
 {
-    in. coord[ 4 ] = { 1, 2, 3 };
+    in. coord[ 4 ] _ { 1, 2, 3 };
 
-    auto [ x, y, z, a ] = coord;
+    auto [ x, y, z, a ] _ coord;
 
     c__ __  a __  e..
     c__ __  y __  e..
@@ -318,14 +318,14 @@ void f_a()
     struct Config_a
     {
         in. id;
-        string name;
+        s.. name;
         vector< in. > data;
     };
     Config_a ca;
 
-    auto& [ id, n, d ] = ca;
-    id = 1;
-    n = "Name";
+    auto& [ id, n, d ] _ ca;
+    id _ 1;
+    n _ "Name";
     d.push_back( 1 );
 }
 
@@ -335,10 +335,10 @@ void example()
     f_array();
     f_a();
 
-    in. pos[ 2 ] = { 10, 20 };
-    auto& [ x, y ] = pos;
-    x = 100;
-    y = 200;
+    in. pos[ 2 ] _ { 10, 20 };
+    auto& [ x, y ] _ pos;
+    x _ 100;
+    y _ 200;
 }
 }
 
@@ -346,7 +346,7 @@ namespace new_attributes
 {
 void f_fallthrough()
 {
-    in. i = rand() % 10;
+    in. i _ rand() % 10;
     switch ( i )
     {
         case 0:
@@ -377,7 +377,7 @@ void example()
     f_fallthrough();
     f_nodiscard();
 
-    [[maybe_unused]] in. i = 0;
+    [[maybe_unused]] in. i _ 0;
 }
 }
 
@@ -385,13 +385,13 @@ namespace std_any
 {
 void example()
 {
-    std::any hm = 10;
+    std::any hm _ 10;
     c__ __  std::any_cast< in. >( hm ) __  e..
 
-    hm = string( "hello" );
-    c__ __  std::any_cast< string >( hm ) __  e..
+    hm _ s..( "hello" );
+    c__ __  std::any_cast< s.. >( hm ) __  e..
 
-    hm = "hello 2";
+    hm _ "hello 2";
     c__ __  std::any_cast< const char* >( hm ) __  e..
 }
 }
@@ -399,7 +399,7 @@ void example()
 namespace std_stringview
 {
 
-void getString( [[maybe_unused]] const std::string& str ) {}
+void getString( [[maybe_unused]] const std::s..& str ) {}
 
 void getStringView( [[maybe_unused]] std::string_view strView ) {}
 
@@ -410,8 +410,8 @@ void example()
 
     std::c__ __  "std::string" __  std::e..
 
-    std::string large = "0123456789-123456789-123456789-123456789";
-    std::string substr = large.substr( 10 );
+    std::s.. large _ "0123456789-123456789-123456789-123456789";
+    std::s.. substr _ large.substr( 10 );
 
     std::c__ __  std::e..
 
@@ -420,7 +420,7 @@ void example()
     std::string_view largeStringView{ large.c_str(), large.size() };
     largeStringView.remove_prefix( 10 );
 
-    assert( substr == largeStringView );
+    assert( substr __ largeStringView );
 
     std::c__ __  std::e..
 
@@ -428,7 +428,7 @@ void example()
 
     getString( large );
     getString( "0123456789-123456789-123456789-123456789" );
-    const char message[] = "0123456789-123456789-123456789-123456789";
+    const char message[] _ "0123456789-123456789-123456789-123456789";
     getString( message );
 
     std::c__ __  std::e..
@@ -445,7 +445,7 @@ void example()
 
 namespace std_optional
 {
-optional< in. > strToin.( string aStr )
+optional< in. > strToin.( s.. aStr )
 {
     __ ( aStr.empty() )
         r_ {};
@@ -459,11 +459,11 @@ optional< in. > strToin.( string aStr )
 void example()
 {
     optional< in. > i;
-    i = strToin.( "" );
+    i _ strToin.( "" );
     __ ( i )
         c__ __  "OK: " __  *i __  e..
 
-    i = strToin.( "123" );
+    i _ strToin.( "123" );
     __ ( i )
         c__ __  "OK: " __  *i __  e..
 }
@@ -473,28 +473,28 @@ namespace std_variant
 {
 void example()
 {
-    variant< in., char, string > v;
+    variant< in., char, s.. > v;
 
-    v = 42;
+    v _ 42;
     c__ __  get< in. >( v ) __  " " __  v.index() __  e..
 
-    v = "Hello!";
-    c__ __  get< string >( v ) __  " " __  v.index() __  e..
+    v _ "Hello!";
+    c__ __  get< s.. >( v ) __  " " __  v.index() __  e..
 }
 }
 
 namespace std_filesystem
 {
-namespace fs = experimental::filesystem;
+namespace fs _ experimental::filesystem;
 
 void example()
 {
-    auto cur_p = fs::current_path();
+    auto cur_p _ fs::current_path();
     c__ __  "current path - " __  cur_p __  e..
     c__ __  e..
 
-    auto root_p = fs::path( "/" );
-    auto space = fs::space( root_p );
+    auto root_p _ fs::path( "/" );
+    auto space _ fs::space( root_p );
     /* capacity  - total size of the filesystem, in bytes
        free      - free space on the filesystem, in bytes
        available - free space available to a non-privileged process

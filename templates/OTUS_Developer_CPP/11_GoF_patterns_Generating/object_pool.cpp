@@ -20,12 +20,12 @@ public:
     {
         for (auto& object : pool) {
             __ (!object.busy) {
-                object.busy = true;
+                object.busy _ true;
                 r_ object.connection;
             }
         }
 
-        auto block = PgConnectionBlock{new PgConnection, true};
+        auto block _ PgConnectionBlock{new PgConnection, true};
         pool.push_back(block);
 
         r_ block.connection;
@@ -34,8 +34,8 @@ public:
     void put(PgConnection* connection)
     {
         for (auto& object : pool) {
-            __ (object.connection==connection) {
-                object.busy = false;
+            __ (object.connection__connection) {
+                object.busy _ false;
                 break;
             }
         }
@@ -54,10 +54,10 @@ in. main(in., char* [])
 {
     PgConnectionPool pool;
 
-    auto report_conn = pool.g..
+    auto report_conn _ pool.g..
     pool.put(report_conn); // swap 58 & 60
 
-    auto admin_conn = pool.g..
+    auto admin_conn _ pool.g..
     pool.put(admin_conn);
 
     r_ 0;

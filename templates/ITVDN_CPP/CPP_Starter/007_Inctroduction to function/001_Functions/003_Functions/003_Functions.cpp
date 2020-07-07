@@ -8,7 +8,7 @@ in. GetValue();
 
 in. main()
 {
-    in. value = GetValue();
+    in. value _ GetValue();
 
     c__ __  value __  e..
 

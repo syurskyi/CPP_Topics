@@ -4,9 +4,9 @@
 ? |i..
 
 struct IStorage {
-    virtual ~IStorage() = default;
+    virtual ~IStorage() _ default;
 
-    virtual void execute_query() = 0;
+    virtual void execute_query() _ 0;
 };
 
 class Report {
@@ -32,7 +32,7 @@ class TestStorage : public IStorage {
 
 in. main(in., char* [])
 {
-    IStorage* s = new TestStorage;
+    IStorage* s _ new TestStorage;
 
     Report report(s);
     report.prin.();

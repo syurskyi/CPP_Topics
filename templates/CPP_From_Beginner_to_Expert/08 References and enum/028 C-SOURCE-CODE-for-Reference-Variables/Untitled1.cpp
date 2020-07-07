@@ -4,19 +4,19 @@ u.. s..
 /*reference variables */
 in. main()
 {
-    string name_2 = "lala";
-    string name = "Agnes";
+    s.. name_2 _ "lala";
+    s.. name _ "Agnes";
 
     c__ __  "Value of Variable: " __  name __  " addres of Variable is: " __  &name __  e..
 
-    const string & nr_6 = name;
+    const s.. & nr_6 _ name;
 
 
     c__ __  "Value of Variable: " __  nr_6 __  " addres of Variable is: " __  &nr_6 __  e..
 
     //nr_6 = name_2;
     //nr_6 = "Scott";
-    name = "Scott";
+    name _ "Scott";
 
 
     c__ __  "Value of Variable: " __  name __  " addres of Variable is: " __  &name __  e..

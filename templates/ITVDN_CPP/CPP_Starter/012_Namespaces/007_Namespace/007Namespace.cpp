@@ -16,7 +16,7 @@ u.. NamespaceA;
 in. main()
 {
 	u.. NamespaceA;
-	using Add = NamespaceA::NamespaceB::NamespaceC::MyStruct;
+	using Add _ NamespaceA::NamespaceB::NamespaceC::MyStruct;
 	r_ 0;
 }
 

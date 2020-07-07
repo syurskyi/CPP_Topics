@@ -35,27 +35,27 @@ in. main()
 }
 bo.. areFilesEqual(fstream *a, fstream *b)
 {
-    in. fileSize1 = sizeOfFile(a);
-    in. fileSize2 = sizeOfFile(b);
+    in. fileSize1 _ sizeOfFile(a);
+    in. fileSize2 _ sizeOfFile(b);
 
-    __ (fileSize1 == fileSize2)
+    __ (fileSize1 __ fileSize2)
     {
         in. BUFFER_SIZE;
 
         __(fileSize1 > 1024)
-            BUFFER_SIZE = 1024;
+            BUFFER_SIZE _ 1024;
         ____
-            BUFFER_SIZE = fileSize1;
+            BUFFER_SIZE _ fileSize1;
 
-        char *file1buffer = new char[BUFFER_SIZE];
-        char *file2buffer = new char[BUFFER_SIZE];
+        char *file1buffer _ new char[BUFFER_SIZE];
+        char *file2buffer _ new char[BUFFER_SIZE];
 
         do
         {
             a->read(file1buffer, BUFFER_SIZE);
             b->read(file2buffer, BUFFER_SIZE);
 
-            __ (memcmp(file1buffer, file2buffer, BUFFER_SIZE) != 0)
+            __ (memcmp(file1buffer, file2buffer, BUFFER_SIZE) !_ 0)
             {
                 c__ __  "Files are not equal, at least one of the byte was different" __  e..
 
@@ -78,7 +78,7 @@ bo.. areFilesEqual(fstream *a, fstream *b)
 in. sizeOfFile(fstream * file)
 {
     file->seekg(0, i.. end);
-    in. sizeOfFile = file->tellg();
+    in. sizeOfFile _ file->tellg();
     file->seekg(0, i.. beg);
     r_ sizeOfFile;
 }

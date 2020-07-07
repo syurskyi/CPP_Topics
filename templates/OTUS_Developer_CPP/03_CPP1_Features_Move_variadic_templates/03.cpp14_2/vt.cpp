@@ -19,7 +19,7 @@ void iterate2(T t, Args... args) {
 template<typename... Args>
 void iterate3(Args... args) {
     // int a[3] = {(std::cout << 1, 0), (std::cout << 2.0, 0), (std::cout << "tri", 0)};
-    in. a[sizeof...(args)] = {(std::c__ __  "???" __  args __  ", ", 0)...};
+    in. a[sizeof...(args)] _ {(std::c__ __  "???" __  args __  ", ", 0)...};
 
     std::c__ __  std::e..
 }

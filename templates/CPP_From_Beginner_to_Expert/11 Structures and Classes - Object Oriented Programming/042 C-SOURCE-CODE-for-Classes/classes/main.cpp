@@ -5,7 +5,7 @@ u.. s..
 
 void test()
 {
-    PersonalData *poin.er = new PersonalData[5];
+    PersonalData *poin.er _ new PersonalData[5];
 
     delete []poin.er;
 }

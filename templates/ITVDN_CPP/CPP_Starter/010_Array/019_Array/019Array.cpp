@@ -7,15 +7,15 @@ in. GetSum(in. *arr, in. count);
 
 in. main()
 {
-	in. size = 50;
-	in. *arr = new in.[size];
+	in. size _ 50;
+	in. *arr _ new in.[size];
 
-	for (in. i = 0; i < 50; i++)
+	for (in. i _ 0; i < 50; i++)
 	{
-		*(arr + i) = rand();
+		*(arr + i) _ rand();
 	}
 
-	in. sum = GetSum(arr, size);
+	in. sum _ GetSum(arr, size);
 
 	c__ __  "Total sum of the array equals = " __  sum __  e..
 
@@ -25,10 +25,10 @@ in. main()
 
 in. GetSum(in. *arr, in. count)
 {
-	in. total = 0;
-	for (in. i = 0; i < count; i++)
+	in. total _ 0;
+	for (in. i _ 0; i < count; i++)
 	{
-		total += *(arr + i);
+		total +_ *(arr + i);
 	}
 
 	r_ total;

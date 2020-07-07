@@ -3,7 +3,7 @@
 ? <unordered_map>
 
 in. main() {
-    std::unordered_map<std::string, std::string> um{{"one", "один"},
+    std::unordered_map<std::s.., std::s..> um{{"one", "один"},
                                                     {"one", "раз"},
                                                     {"two", "два"}};
     for (const auto &[en, ru]: um) {

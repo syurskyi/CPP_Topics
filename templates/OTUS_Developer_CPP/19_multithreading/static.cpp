@@ -1,18 +1,18 @@
-? <string>
+? |s..
 
 void foo()
 {
-    static std::string hw{"Hello, World!"};
+    static std::s.. hw{"Hello, World!"};
 };
 
 bo.. hw_guard; // = 0, = false
-std::string hw;
+std::s.. hw;
 
 void bar()
 {
     __ (!hw_guard) {
-        hw = "Hello, World!";
-        hw_guard = true;
+        hw _ "Hello, World!";
+        hw_guard _ true;
     }
 };
 

@@ -14,7 +14,7 @@ in. main ()
 
 in. * createArray(in. sizeOfArray)
 {
-    in.* newArray = new in.[sizeOfArray];
+    in.* newArray _ new in.[sizeOfArray];
 
     r_ newArray;
 }
@@ -23,9 +23,9 @@ void swapTwoValues(in.* firstValue, in.* secondValue)
 {
     in. temporaryVariable;
 
-    temporaryVariable = *firstValue;
-    *firstValue = *secondValue;
-    *secondValue = temporaryVariable;
+    temporaryVariable _ *firstValue;
+    *firstValue _ *secondValue;
+    *secondValue _ temporaryVariable;
 }
 
 

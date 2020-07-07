@@ -9,7 +9,7 @@ in. main()
         put(character to put on stream)
     */
 
-    string txt = "thistextisconnected";
+    s.. txt _ "thistextisconnected";
 
 
  /*   for (int i = 0; i < txt.length(); i++)
@@ -25,10 +25,10 @@ in. main()
         char c;
         do
         {
-            c = c__.g..
+            c _ c__.g..
 
             file.put(c);
-        }while(c!='.');
+        }while(c!_'.');
     }
     ____
         c__ __  "Nie udalo sie poprawnie otworzyc pliku" __  e..

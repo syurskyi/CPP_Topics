@@ -17,10 +17,10 @@ u.. s..
 class Shape {
 public:
   // pure virtual function providing interface framework.
-  virtual in. getArea() = 0;
-  void setWidth(in. w) { width = w; }
+  virtual in. getArea() _ 0;
+  void setWidth(in. w) { width _ w; }
 
-  void setHeight(in. h) { height = h; }
+  void setHeight(in. h) { height _ h; }
 
 protected:
   in. width;

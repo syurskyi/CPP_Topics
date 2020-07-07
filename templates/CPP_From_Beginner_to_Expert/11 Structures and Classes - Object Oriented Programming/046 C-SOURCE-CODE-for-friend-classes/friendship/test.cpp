@@ -3,5 +3,5 @@
 
 void A::setSecretValue(B & obj, in. value)
 {
-    obj.secretValue = value;
+    obj.secretValue _ value;
 }

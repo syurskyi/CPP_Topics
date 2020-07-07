@@ -2,62 +2,62 @@
 ? <tuple>
 ? <functional>
 
-in. foo(in., in., std::string &result)
+in. foo(in., in., std::s.. &result)
 {
-    result = "surname";
+    result _ "surname";
     r_ 127;
 }
 
-std::string foo(in., in., in. &err)
+std::s.. foo(in., in., in. &err)
 {
-    err = 127;
+    err _ 127;
     r_ "surname";
 }
 
-void foo(in., in., in. &err, std::string &result)
+void foo(in., in., in. &err, std::s.. &result)
 {
-    err = 127;
-    result = "surname";
+    err _ 127;
+    result _ "surname";
 }
 
 struct result {
     in. err;
-    std::string result;
+    std::s.. result;
 };
 
 auto foo(in., in.)
 {
-    r_ result{127, std::string("surname")};
+    r_ result{127, std::s..("surname")};
 }
 
 auto bar(in., in.)
 {
-    r_ std::tuple<in., std::string>(127, "surname");
+    r_ std::tuple<in., std::s..>(127, "surname");
 //    return std::make_tuple(127, std::string("surname"));
 }
 
 in. main(in., char *[])
 {
     std::c__ __  "* return struct" __  std::e..
-    auto rf = foo(1, 2);
+    auto rf _ foo(1, 2);
     std::c__ __  rf.err __  std::e..
     std::c__ __  rf.result __  std::e..
 
     std::c__ __  "* return tuple" __  std::e..
-    auto rb = bar(1, 2);
+    auto rb _ bar(1, 2);
     std::c__ __  std::get<0>(rb) __  std::e..
     std::c__ __  std::get<1>(rb) __  std::e..
 
     std::c__ __  "* return and unpack " __  std::e..
-    std::string result;
+    std::s.. result;
     in. err;
-    std::tuple<in. &, std::string &>(err, result) = bar(1, 2);
+    std::tuple<in. &, std::s.. &>(err, result) _ bar(1, 2);
 //    std::make_tuple(std::ref(err), std::ref(result)) = bar(1, 2);
     std::c__ __  err __  std::e..
     std::c__ __  result __  std::e..
 
     std::c__ __  "* return and unpack" __  std::e..
-    std::tie(err, result) = bar(1, 2);
+    std::tie(err, result) _ bar(1, 2);
     std::c__ __  err __  std::e..
     std::c__ __  result __  std::e..
 

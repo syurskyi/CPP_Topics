@@ -15,10 +15,10 @@ in. main()
 {
 	u.. NamespaceA::NamespaceB::NamespaceC;
 
-	in. x = 6;
-	in. y = 19;
+	in. x _ 6;
+	in. y _ 19;
 
-	in. sum = add(x, y);
+	in. sum _ add(x, y);
 
 	std::c__ __  sum __  std::e..
 

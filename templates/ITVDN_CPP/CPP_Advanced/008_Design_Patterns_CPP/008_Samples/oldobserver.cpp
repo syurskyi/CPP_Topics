@@ -10,13 +10,13 @@ void Subject::attach( Observer* obs )
 
 void Subject::set_val( in. value )
 {
-    m_value = value;
+    m_value _ value;
     notify();
 }
 
 void Subject::notify()
 {
-    for ( in. i = 0; i < m_views.size(); ++i )
+    for ( in. i _ 0; i < m_views.size(); ++i )
     {
         m_views[ i ]->update( m_value );
     }
@@ -27,7 +27,7 @@ DivObserver::DivObserver( Subject* model, in. div )
     __ ( model )
     {
         model->attach( this );
-        m_div = div;
+        m_div _ div;
     }
 }
 
@@ -41,7 +41,7 @@ ModObserver::ModObserver( Subject* model, in. mod )
     __ ( model )
     {
         model->attach( this );
-        m_mod = mod;
+        m_mod _ mod;
     }
 }
 

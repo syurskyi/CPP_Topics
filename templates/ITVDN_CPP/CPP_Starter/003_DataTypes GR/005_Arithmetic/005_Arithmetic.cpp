@@ -15,27 +15,27 @@ u.. s..
 
 in. main()
 {
-    in. operand1 = 3, operand2 = 2; // Множественное обьявление
+    in. operand1 _ 3, operand2 _ 2; // Множественное обьявление
     in. result;
 
     // Сложение (+)
-    result = operand1 + operand2;
+    result _ operand1 + operand2;
     c__ __  result __  e..
 
     // Вычитание (-)
-    result = operand1 - operand2;
+    result _ operand1 - operand2;
     c__ __  result __  e..
 
     // Умножение (*)
-    result = operand1 * operand2;
+    result _ operand1 * operand2;
     c__ __  result __  e..
 
     // Деление (/)
-    result = operand1 / operand2;
+    result _ operand1 / operand2;
     c__ __  result __  e..
 
     // Получение остатка от деления
-    result = operand1 % operand2;
+    result _ operand1 % operand2;
     c__ __  result __  e..
 
     // Оператор % находит остаток от деления первого операнда на второй.
@@ -43,7 +43,7 @@ in. main()
 
     // double err = 3.5 % 1.2;		// Ошибка
 
-    result = 3 * 2 * 2;
+    result _ 3 * 2 * 2;
     c__ __  result __  e..
 
     // Задержка

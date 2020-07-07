@@ -7,9 +7,9 @@ main()
     double lengthInches, lengthCentimeters;
 
     c__ __  "Length in inches: ";
-    c__ >> lengthInches;
+    c__ __ lengthInches;
 
-    lengthCentimeters = lengthInches * 2.54;
+    lengthCentimeters _ lengthInches * 2.54;
 
     c__ __  lengthInches __  " inches is equal to " __  lengthCentimeters __  " centimeters.";
 

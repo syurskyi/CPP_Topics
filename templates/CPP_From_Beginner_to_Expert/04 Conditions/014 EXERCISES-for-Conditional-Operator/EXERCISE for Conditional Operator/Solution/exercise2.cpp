@@ -7,11 +7,11 @@ main ()
     in. numberOfPoin.s;
 
     c__ __  "Enter the number of points you have achieved: ";
-    c__ >> numberOfPoin.s;
+    c__ __ numberOfPoin.s;
 
-    __ ((numberOfPoin.s >= 0) && (numberOfPoin.s <= 100))
+    __ ((numberOfPoin.s >_ 0) && (numberOfPoin.s <_ 100))
     {
-        string outputMessage = (numberOfPoin.s > 50)
+        s.. outputMessage _ (numberOfPoin.s > 50)
             ? "You have passed the exam. Congratulations."
             : "You didn't pass the exam.";
 

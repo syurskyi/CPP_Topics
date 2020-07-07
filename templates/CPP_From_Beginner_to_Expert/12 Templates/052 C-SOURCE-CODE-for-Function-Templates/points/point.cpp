@@ -6,7 +6,7 @@ u.. s..
 
 Poin.::Poin.(in. x)
 {
-    this->x = x;
+    this->x _ x;
     c__ __  "The constructor from the Point class has just been invoked" __  e..
 }
 Poin.::~Poin.()
@@ -15,13 +15,13 @@ Poin.::~Poin.()
 }
 void Poin.::setX(in. x)
 {
-    this->x = x;
+    this->x _ x;
     c__ __  "Im from Point" __  e..
 }
 
 Poin.2D::Poin.2D(in. x, in. y) : Poin.(x)
 {
-    this->y = y;
+    this->y _ y;
     c__ __  "The constructor from the Point2D class has just been invoked" __  e..
 }
 Poin.2D::~Poin.2D()
@@ -31,7 +31,7 @@ Poin.2D::~Poin.2D()
 
 void Poin.2D::setY(in. y)
 {
-    this->y = y;
+    this->y _ y;
 }
 void Poin.2D::setXY(in. x, in. y)
 {
@@ -40,7 +40,7 @@ void Poin.2D::setXY(in. x, in. y)
 }
 void Poin.2D::setX(in. x)
 {
-    this->x = x;
+    this->x _ x;
     c__ __  "Im from Point2D" __  e..
 }
 Poin.2D Poin.2D::operator+(Poin.2D o)

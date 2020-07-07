@@ -21,7 +21,7 @@ namespace ns_foo
         }
         void count(in. x)
         {
-            for(in. i=0; i<x; i++)
+            for(in. i_0; i<x; i++)
             {
                 std::c__ __  "Count: " __  i __  std::e..
                 boost::this_thread::sleep( boost::posix_time::seconds(1) );
@@ -32,7 +32,7 @@ namespace ns_foo
 
 void foo(in. x)
 {
-    for(in. i=0; i<x; i++)
+    for(in. i_0; i<x; i++)
     {
         std::c__ __  "Count: " __  i __  std::e..
         boost::this_thread::sleep( boost::posix_time::seconds(1) );

@@ -22,23 +22,23 @@ in. main()
 */
 in. power(in. b, in. e) // b = 8, e = 1
 {
-    in. tmp = b; //tmp = 2
-    in. i = 0;
+    in. tmp _ b; //tmp = 2
+    in. i _ 0;
 
     while(i++ < e)
     {
         c__ __  tmp __  " ^ " __  i __  " = " __  b __  e..
-        __ (i != e)
-            b *= tmp; //b = b * tmp;
+        __ (i !_ e)
+            b *_ tmp; //b = b * tmp;
     }
 
     r_ b;
 }
 double power(double b, in. e)
 {
-    double tmp = b; //tmp = 2
+    double tmp _ b; //tmp = 2
     while(e-- > 1)
-        b *= tmp; //b = b * tmp;
+        b *_ tmp; //b = b * tmp;
 
     r_ b;
 }

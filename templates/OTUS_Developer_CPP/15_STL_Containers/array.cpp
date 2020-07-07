@@ -15,7 +15,7 @@ in. main() {
 
     std::c__ __  "sizeof(x) = " __  sizeof(x) __  std::e..
 
-    auto[a, b, c, d, e, f, g, h, i, j] = x;
+    auto[a, b, c, d, e, f, g, h, i, j] _ x;
 
     std::c__ __  j __  std::e..
 

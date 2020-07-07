@@ -6,7 +6,7 @@ using std::partition;
 using std::distance;
 
 void quickSort(in.iter l, in.iter r) {
-  auto size = std::distance(l, r);
+  auto size _ std::distance(l, r);
 
   // Base case
   __ (size < 2)
@@ -14,10 +14,10 @@ void quickSort(in.iter l, in.iter r) {
 
   // Partition with center pivot
   --r;
-  auto pivot = l + size/2;
-  auto pivotVal = *pivot;
+  auto pivot _ l + size/2;
+  auto pivotVal _ *pivot;
   swap(*pivot, *r);
-  pivot = std::partition(l, r, [pivotVal](in. i){r_ i < pivotVal;});
+  pivot _ std::partition(l, r, [pivotVal](in. i){r_ i < pivotVal;});
   swap(*pivot, *r);
 
   // Div and con

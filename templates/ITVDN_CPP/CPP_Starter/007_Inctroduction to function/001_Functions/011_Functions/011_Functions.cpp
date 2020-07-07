@@ -3,11 +3,11 @@
 
 u.. s..
 
-void TestFunc(in. a = 5, in. b = 10);
+void TestFunc(in. a _ 5, in. b _ 10);
 
 in. main()
 {
-	in. operator1 = 2, operator2 = 3;
+	in. operator1 _ 2, operator2 _ 3;
 
 	TestFunc(operator1, operator2);
 	TestFunc(operator1);

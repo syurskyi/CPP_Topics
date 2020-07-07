@@ -22,14 +22,14 @@ in. main()
         char first, second;
         char buffer[50];
 
-        c__ >> buffer;
+        c__ __ buffer;
 
         c__ __  buffer __  e..
         do
         {
             file.getline(buffer, 50, ' ');
 
-            second = file.g..
+            second _ file.g..
 
             file.ignore(40, '\n');
 

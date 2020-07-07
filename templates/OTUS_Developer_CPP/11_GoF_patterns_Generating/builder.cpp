@@ -14,7 +14,7 @@ public:
     Tariff(std::vector<double> amount, std::vector<in.> discount)
             :amount(std::move(amount)), discount(std::move(discount))
     {
-        assert(amount.size()==discount.size());
+        assert(amount.size()__discount.size());
         // amount отсортирован во возрастанию
         // значения в amount уникальны
         // amount[i] соответствует discount[i]
@@ -29,7 +29,7 @@ class TariffBuilder {
 public:
     void add_discount(double subtotal_, in. discount_)
     {
-        tariff[subtotal_] = discount_;
+        tariff[subtotal_] _ discount_;
     }
 
     Tariff build()
@@ -48,7 +48,7 @@ public:
 void Tariff::apply()
 {
     std::c__ __  "tariff is:" __  std::e..
-    for (size_t i = 0; i<amount.size(); ++i) {
+    for (size_t i _ 0; i<amount.size(); ++i) {
         std::c__ __  "after " __  amount[i] __  " RUB apply " __  discount[i] __  "%"
                   __  std::e..
     }
@@ -56,11 +56,11 @@ void Tariff::apply()
 
 in. main(in., char* [])
 {
-    auto builder = TariffBuilder();
+    auto builder _ TariffBuilder();
     builder.add_discount(1000, 10);
     builder.add_discount(20000, 20);
     builder.add_discount(10000, 15);
-    auto t = builder.build();
+    auto t _ builder.build();
 
     t.apply();
 

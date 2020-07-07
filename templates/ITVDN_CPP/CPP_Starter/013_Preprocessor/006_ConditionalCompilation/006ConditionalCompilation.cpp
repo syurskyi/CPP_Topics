@@ -8,11 +8,11 @@ u.. s..
 in. main()
 {
 	// сравниваем значение макроса с литералом.
-#if MAX_SIZE <= 100
+#if MAX_SIZE <_ 100
 	c__ __  "The size of the array is normal!" __  e..
 #elif MAXSIZE > 100
 	c__ __  "Please enter a different size. The size is too big!" __  e..
-#elif MAX_SIZE <= 0
+#elif MAX_SIZE <_ 0
 	c__ __  "The size of the array can not be less than 0!";
 #endif
 

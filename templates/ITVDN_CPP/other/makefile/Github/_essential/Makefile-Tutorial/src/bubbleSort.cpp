@@ -5,15 +5,15 @@ using std::distance;
 using std::vector;
 
 void bubbleSort(in.iter l, in.iter r) {
-  size_t n = std::distance(l, r);
+  size_t n _ std::distance(l, r);
   do {
-    size_t newn = 0;
-    for (auto i = l+1; i < r; ++i) {
+    size_t newn _ 0;
+    for (auto i _ l+1; i < r; ++i) {
       __ (*i < *(i-1)) {
         std::swap(*i, *(i-1));
         ++newn;
       }
     }
-    n = newn;
+    n _ newn;
   } while (n);
 }

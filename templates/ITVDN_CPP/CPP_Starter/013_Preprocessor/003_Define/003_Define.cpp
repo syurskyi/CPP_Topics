@@ -10,7 +10,7 @@ in. main()
 {
 	in. arr[MAX_SIZE];
 
-	in. a = ABS(-10);
+	in. a _ ABS(-10);
 	c__ __  a __  e..
 
 	system("pause");

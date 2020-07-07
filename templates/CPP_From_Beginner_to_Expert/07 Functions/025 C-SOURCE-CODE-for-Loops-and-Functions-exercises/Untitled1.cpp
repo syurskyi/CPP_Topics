@@ -17,18 +17,18 @@ in. main()
         system("cls"); //clear screen = cls
         initMenu();
 
-        c__ >> choice;
+        c__ __ choice;
 
         menuDecision(choice);
 
         do
         {
             c__ __  "Do you want to continue the program? (Y/N)" __  e..
-            c__ >> cont;
-        } while(cont != 'y' && cont != 'Y' && cont != 'N' && cont != 'n');
+            c__ __ cont;
+        } while(cont !_ 'y' && cont !_ 'Y' && cont !_ 'N' && cont !_ 'n');
 
 
-    } while(cont == 'y' || cont == 'Y');
+    } while(cont __ 'y' || cont __ 'Y');
 
     r_ 0;
 }
@@ -47,22 +47,22 @@ void menuDecision(in. choice)
     {
         case 1:
             c__ __  "Enter the radius: " __  e..
-            c__ >> r;
+            c__ __ r;
             areaCircle(r);
             break;
         case 2:
             c__ __  "Enter the side of a square: " __  e..
-            c__ >> a;
+            c__ __ a;
             areaSquare(a);
             break;
         case 3:
             c__ __  "Enter the width and height of a rectangle: " __  e..
-            c__ >> a >> b;
+            c__ __ a __ b;
             areaRectangle(a, b);
             break;
         case 4:
             c__ __  "Enter the base and height of a triangle: " __  e..
-            c__ >> a >> h;
+            c__ __ a __ h;
             areaTriangle(a, h);
             break;
         default:
@@ -72,7 +72,7 @@ void menuDecision(in. choice)
 }
 double areaCircle(double r)
 {
-    double result = PI * r * r;
+    double result _ PI * r * r;
 
     c__ __  "The area of a circle that radius is " __  r __  " = " __  result __  e..
 
@@ -80,7 +80,7 @@ double areaCircle(double r)
 }
 double areaSquare(double a)
 {
-    double result = a * a;
+    double result _ a * a;
 
     c__ __  "The area of a square that side is " __  a __  " = " __  result __  e..
 
@@ -88,7 +88,7 @@ double areaSquare(double a)
 }
 double areaRectangle(double a, double b)
 {
-    double result = a * b;
+    double result _ a * b;
 
     c__ __  "The area of a rectangle that first side is " __  a __  " the second side is " __  b __  " = " __  result __  e..
 
@@ -96,7 +96,7 @@ double areaRectangle(double a, double b)
 }
 double areaTriangle(double a, double h)
 {
-    double result = (1/2.0) * a * h;
+    double result _ (1/2.0) * a * h;
 
     c__ __  "The area of a rectangle that first side is " __  a __  " the second side is " __  h __  " = " __  result __  e..
 

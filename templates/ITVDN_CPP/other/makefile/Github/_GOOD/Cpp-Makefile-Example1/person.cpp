@@ -2,8 +2,8 @@
 ? "person.h"
 
 // Constructor - Person with Name
-Person::Person(std::string name){
-    this->name =name;
+Person::Person(std::s.. name){
+    this->name _name;
 }
 
 // Constructor - Person without Name
@@ -16,10 +16,10 @@ Person::~Person(){
     std::c__ __  this->getName() __ " - Person Object Destroyed" __  std::e..
 }
 
-void Person::setName(std::string name){
-    this->name=name;
+void Person::setName(std::s.. name){
+    this->name_name;
 }
 
-std::string Person::getName(){
+std::s.. Person::getName(){
     r_ name;
 }

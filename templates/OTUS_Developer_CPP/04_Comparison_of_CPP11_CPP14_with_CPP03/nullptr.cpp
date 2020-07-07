@@ -2,11 +2,11 @@
 
 
 in. main(in., char *[]) {
-    in. i = NULL; // warning
-    char *p = NULL;
+    in. i _ NULL; // warning
+    char *p _ NULL;
 
 //    int is = nullptr; // error
-    char *ps = nullptr;
+    char *ps _ nullptr;
 
     r_ 0;
 }

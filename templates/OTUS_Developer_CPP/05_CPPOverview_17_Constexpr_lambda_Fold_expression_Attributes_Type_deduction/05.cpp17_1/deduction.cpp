@@ -3,7 +3,7 @@
 ? <iterator>
 ? <memory>
 ? <mutex>
-? <string>
+? |s..
 ? <tuple>
 ? <vector>
 
@@ -32,7 +32,7 @@ private:
 template<typename T>
 struct Buffer {
 
-    Buffer() = default;
+    Buffer() _ default;
 
     Buffer(const std::initializer_list<T> &list) : m_buffer{list} {}
 
@@ -77,16 +77,16 @@ in. main() {
     Buffer buffer{0, 1, 2, 3, 4, 5, 6};
     buffer.prin.();
 
-    Buffer buffer2 = buffer;
+    Buffer buffer2 _ buffer;
     buffer2.prin.();
 
-    std::vector<in.> values = {6, 5, 4, 3, 2, 1, 0};
+    std::vector<in.> values _ {6, 5, 4, 3, 2, 1, 0};
 
     Buffer buffer3(values.cbegin(), values.cend());
     buffer3.prin.();
 
-    char *c = nullptr;
-    in. *i = nullptr;
+    char *c _ nullptr;
+    in. *i _ nullptr;
     Buffer bb(c, i);
 
     r_ 0;

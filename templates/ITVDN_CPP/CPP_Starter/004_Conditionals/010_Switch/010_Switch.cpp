@@ -13,7 +13,7 @@ in. main()
     c__ __  "3. End the program" __  e..
 
     char action;
-    c__ >> action;
+    c__ __ action;
 
     switch (action)
     {

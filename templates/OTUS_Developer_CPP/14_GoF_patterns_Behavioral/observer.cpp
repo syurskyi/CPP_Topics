@@ -10,7 +10,7 @@ enum class Lang
 
 class Observer {
 public:
-    virtual void update(Lang lang) = 0;
+    virtual void update(Lang lang) _ 0;
 };
 
 class Language {
@@ -22,7 +22,7 @@ public:
     }
 
     void set_language(Lang lang_) {
-        lang = lang_;
+        lang _ lang_;
         notify();
     }
 

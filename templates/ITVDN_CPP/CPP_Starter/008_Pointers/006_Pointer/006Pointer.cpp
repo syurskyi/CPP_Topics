@@ -5,13 +5,13 @@ u.. s..
 
 in. main()
 {
-	in. age = 30;
-	double Pi = 3.14;
-	char ch = 'Y';
+	in. age _ 30;
+	double Pi _ 3.14;
+	char ch _ 'Y';
 
-	in. *pin. = &age;
-	double *pDouble = &Pi;
-	char *pCarh = &ch;
+	in. *pin. _ &age;
+	double *pDouble _ &Pi;
+	char *pCarh _ &ch;
 
 	c__ __  "Sizeof fundamentals types - " __  e..
 	c__ __  "sizeof(int) = " __  sizeof(in.) __  e..

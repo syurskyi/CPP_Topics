@@ -1,5 +1,5 @@
 ? |i..
-? <string>
+? |s..
 
 u.. s..
 
@@ -8,11 +8,11 @@ enum class Color : long long;
 
 void foo(Color a);
 
-enum class Color : long long {red = -300000000000000, yellow = -3, green = 0, blue};
+enum class Color : long long {red _ -300000000000000, yellow _ -3, green _ 0, blue};
 
 struct Glass
 {
-    string type;//24
+    s.. type;//24
 };
 
 struct Door
@@ -31,7 +31,7 @@ struct Car
     in. for_bo.. : 31;
     bo.. a : 1;
     in. q;
-    string name;//24
+    s.. name;//24
     Door door;//40
 //    struct SteeringWheel
 //    {
@@ -49,8 +49,8 @@ in. main()
     //Car::SteeringWheel wheel;
 
     my_car.door.glass.type;
-    my_car.name = "The best car";
-    my_car.length = 100;
+    my_car.name _ "The best car";
+    my_car.length _ 100;
 
     c__ __  sizeof(Glass) __  "\n";
     c__ __  sizeof(Door) __  "\n";

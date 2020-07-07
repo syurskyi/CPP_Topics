@@ -1,6 +1,6 @@
 ?|i..
 ?<fstream>
-?<string>
+?|s..
 
 u.. s..
 

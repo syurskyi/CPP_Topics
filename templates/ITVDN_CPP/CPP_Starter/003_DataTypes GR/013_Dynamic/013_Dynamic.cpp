@@ -5,10 +5,10 @@ u.. s..
 
 in. main()
 {
-	in. width = 10, height = 5;
+	in. width _ 10, height _ 5;
 
 	// Динамическая инициализация переменной
-	in. perimetr = width * height;
+	in. perimetr _ width * height;
 
     c__ __  perimetr __  e..
 

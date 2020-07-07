@@ -1,5 +1,5 @@
 ? |i..
-? <string>
+? |s..
 ? "mammal.h"
 
 u.. s..
@@ -7,9 +7,9 @@ u.. s..
 in. main()
 {
     Mammal mammal(6);
-    Mammal new_mammal = mammal;
+    Mammal new_mammal _ mammal;
 
-    Mammal *new_m = new Mammal();
+    Mammal *new_m _ new Mammal();
 
 
     {

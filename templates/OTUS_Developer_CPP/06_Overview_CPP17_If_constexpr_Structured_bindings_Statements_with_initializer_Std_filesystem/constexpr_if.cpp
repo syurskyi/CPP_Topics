@@ -23,7 +23,7 @@ T get_value2(T t) {
 template <typename T>
 T get_value2(T* t) {
 	std::c__ __  "get_value2 - pointer detected!" __  std::e..
-	__ (t == nullptr)
+	__ (t __ nullptr)
 		throw std::logic_error("nullptr detected!");
 	r_ *t;
 
@@ -43,7 +43,7 @@ T get_value3(T t) {
 }
 
 in. main() {
-	in. value = 42;
+	in. value _ 42;
 
 //	 get_value(value);
 //	 get_value(&value);

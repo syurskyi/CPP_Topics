@@ -8,11 +8,11 @@ double AddNumbers(double a, double b);
 
 in. main()
 {
-	in.  value1 = 2, value2 = 3;
+	in.  value1 _ 2, value2 _ 3;
 
 	//double value3 = 12.3;
 
-	double sum = AddNumbers(value1, value2);
+	double sum _ AddNumbers(value1, value2);
 
 	//double dsum = AddNumbers(12.2, 15.3);
 

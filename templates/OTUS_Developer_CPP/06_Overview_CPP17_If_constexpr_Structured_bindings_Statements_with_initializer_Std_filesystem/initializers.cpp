@@ -1,17 +1,17 @@
 ? |i..
-? <string>
+? |s..
 
 
 in. main () {
 
-	bo.. condition = true;
+	bo.. condition _ true;
 
 	std::c__ __  "if\n";
-	__ (in. value = 42; !condition) {
+	__ (in. value _ 42; !condition) {
 		std::c__ __  "true condition: " __  value __  std::e..
 	}
-	____ __ (in. number = 50; !condition) {
-		value += 10;
+	____ __ (in. number _ 50; !condition) {
+		value +_ 10;
 		std::c__ __  "false condition: " __  value __  std::e..
 	}
 	____
@@ -21,14 +21,14 @@ in. main () {
 	// value is not visible here
 
 	std::c__ __  "for:\n";
-	for (in. i = 0; i < 10; ++i) {
+	for (in. i _ 0; i < 10; ++i) {
 		std::c__ __  i;
 	}
 	// i is not visible here
 	std::c__ __  std::e..
 
 	std::c__ __  "switch:\n";
-	switch(in. other = 37; condition) {
+	switch(in. other _ 37; condition) {
 		case true:
 			std::c__ __  "true condition: " __  other __  std::e..
 			break;
@@ -42,7 +42,7 @@ in. main () {
 //	 	std::cout << line;
 //	 }
 
-	 for(std::string line; std::getline(std::c__, line);) {
+	 for(std::s.. line; std::getline(std::c__, line);) {
 	 	std::c__ __  line;
 	 }
 

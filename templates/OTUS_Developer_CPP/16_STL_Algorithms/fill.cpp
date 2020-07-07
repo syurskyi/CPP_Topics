@@ -3,13 +3,13 @@
 ? <vector>
 
 struct fibonacci {
-    in. a = 0;
-    in. b = 1;
+    in. a _ 0;
+    in. b _ 1;
 
     in. operator()() {
-        auto t = a;
-        a = b;
-        b += t;
+        auto t _ a;
+        a _ b;
+        b +_ t;
         r_ t;
     }
 };

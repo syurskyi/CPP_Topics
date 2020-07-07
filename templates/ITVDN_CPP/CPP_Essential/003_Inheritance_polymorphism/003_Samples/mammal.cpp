@@ -12,7 +12,7 @@ Mammal::Mammal(uin. paws) : paws(paws)
 
 Mammal::Mammal(const Mammal& other)
 {
-    paws = other.paws;
+    paws _ other.paws;
 }
 
 void Mammal::feed_milk()

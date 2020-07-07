@@ -2,7 +2,7 @@
 ? |i..
 ? <sstream>
 ? <streambuf>
-? <string>
+? |s..
 ? <strstream>
 ? <vector>
 
@@ -10,50 +10,50 @@ u.. s..
 
 // https://stackoverflow.com/questions/524591/performance-of-creating-a-c-stdstring-from-an-input-iterator/524843#524843
 
-string readFile1( const string& fileName )
+s.. readFile1( const s..& fileName )
 {
     ifstream f( fileName.c_str() );
-    r_ string( std::istreambuf_iterator< char >( f ), std::istreambuf_iterator< char >() );
+    r_ s..( std::istreambuf_iterator< char >( f ), std::istreambuf_iterator< char >() );
 }
 
-string readFile2( const string& fileName )
+s.. readFile2( const s..& fileName )
 {
     ifstream ifs( fileName.c_str(), i.. in | i.. binary | i.. ate );
 
-    ifstream::pos_type fileSize = ifs.tellg();
+    ifstream::pos_type fileSize _ ifs.tellg();
     ifs.seekg( 0, i.. beg );
 
     vector< char > bytes( fileSize );
     ifs.read( &bytes[ 0 ], fileSize );
 
-    r_ string( &bytes[ 0 ], fileSize );
+    r_ s..( &bytes[ 0 ], fileSize );
 }
 
-string readFile3( const string& fileName )
+s.. readFile3( const s..& fileName )
 {
-    string data;
+    s.. data;
     ifstream in( fileName.c_str() );
-    getline( in, data, string::traits_type::to_char_type( string::traits_type::eof() ) );
+    getline( in, data, s..::traits_type::to_char_type( s..::traits_type::eof() ) );
     r_ data;
 }
 
-string readFile4( const std::string& filename )
+s.. readFile4( const std::s..& filename )
 {
     ifstream file( filename.c_str(), i.. in | i.. binary | i.. ate );
 
-    string data;
+    s.. data;
     data.reserve( file.tellg() );
     file.seekg( 0, i.. beg );
     data.append( istreambuf_iterator< char >( file.rdbuf() ), istreambuf_iterator< char >() );
     r_ data;
 }
 
-string readFile5( const string& fileName )
+s.. readFile5( const s..& fileName )
 {
     std::ifstream input( fileName );
     std::stringstream sstr;
 
-    while ( input >> sstr.rdbuf() )
+    while ( input __ sstr.rdbuf() )
         ;
 
     r_ sstr.str();
@@ -79,7 +79,7 @@ in. main()
 
     in_stream.open( "lesson_files" );
 
-    std::string result;
+    std::s.. result;
     char char_result;
     char res[ 16 ];
 
@@ -102,9 +102,9 @@ in. main()
     std::ofstream filestr;
     filestr.open( "test.txt" );
 
-    backup = std::c__.rdbuf(); // back up cout's streambuf
+    backup _ std::c__.rdbuf(); // back up cout's streambuf
 
-    psbuf = filestr.rdbuf();  // get file's streambuf
+    psbuf _ filestr.rdbuf();  // get file's streambuf
     std::c__.rdbuf( psbuf ); // assign streambuf to cout
 
     std::c__ __  "This is written to the file";

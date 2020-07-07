@@ -8,8 +8,8 @@ in. main()
 
 	c__.s_f(i.. bo..alpha);						// ¬ключить вывод логических величин в текстовом виде
 
-	bo.. a = true;
-	bo.. b = false;
+	bo.. a _ true;
+	bo.. b _ false;
 
 	c__ __  "a = " __  a __  "; b = " __  b __  e..
 
@@ -19,7 +19,7 @@ in. main()
 	c__.uns_f(i.. dec);
 	c__.s_f(i.. showbase /* noshowbase */ | i.. showpos /* noshowpos */);
 
-	in. number = 16;
+	in. number _ 16;
 
 	c__ __  "number = " __  number __  e..
 

@@ -1,7 +1,7 @@
 ? <cassert>
 ? <cstdlib>
 ? |i..
-? <string>
+? |s..
 ? <vector>
 
 // ("",  '.') -> [""]
@@ -10,18 +10,18 @@
 // ("11.", '.') -> ["11", ""]
 // (".11", '.') -> ["", "11"]
 // ("11.22", '.') -> ["11", "22"]
-std::vector<std::string> split(const std::string &str, char d)
+std::vector<std::s..> split(const std::s.. &str, char d)
 {
-    std::vector<std::string> r;
+    std::vector<std::s..> r;
 
-    std::string::size_type start = 0;
-    std::string::size_type stop = str.find_first_of(d);
-    while(stop != std::string::npos)
+    std::s..::size_type start _ 0;
+    std::s..::size_type stop _ str.find_first_of(d);
+    while(stop !_ std::s..::npos)
     {
         r.push_back(str.substr(start, stop - start));
 
-        start = stop + 1;
-        stop = str.find_first_of(d, start);
+        start _ stop + 1;
+        stop _ str.find_first_of(d, start);
     }
 
     r.push_back(str.substr(start));
@@ -33,21 +33,21 @@ in. main(in. argc, char const *argv[])
 {
     try
     {
-        std::vector<std::vector<std::string>> ip_pool;
+        std::vector<std::vector<std::s..__ ip_pool;
 
-        for(std::string line; std::getline(std::c__, line);)
+        for(std::s.. line; std::getline(std::c__, line);)
         {
-            std::vector<std::string> v = split(line, '\t');
+            std::vector<std::s..> v _ split(line, '\t');
             ip_pool.push_back(split(v.at(0), '.'));
         }
 
         // TODO reverse lexicographically sort
 
-        for(std::vector<std::vector<std::string> >::const_iterator ip = ip_pool.cbegin(); ip != ip_pool.cend(); ++ip)
+        for(std::vector<std::vector<std::s..> >::const_iterator ip _ ip_pool.cbegin(); ip !_ ip_pool.cend(); ++ip)
         {
-            for(std::vector<std::string>::const_iterator ip_part = ip->cbegin(); ip_part != ip->cend(); ++ip_part)
+            for(std::vector<std::s..>::const_iterator ip_part _ ip->cbegin(); ip_part !_ ip->cend(); ++ip_part)
             {
-                __ (ip_part != ip->cbegin())
+                __ (ip_part !_ ip->cbegin())
                 {
                     std::c__ __  ".";
 

@@ -10,13 +10,13 @@
 
 in. main() {
 
-	const std::filesystem::path currentDir = std::filesystem::current_path();
+	const std::filesystem::path currentDir _ std::filesystem::current_path();
 	std::c__ __  currentDir __  std::e..
 
-	const std::filesystem::path someFile = currentDir / "subfolder" / "readme.txt";
+	const std::filesystem::path someFile _ currentDir / "subfolder" / "readme.txt";
 	std::c__ __  someFile __  std::e..
 
-	const std::filesystem::path otherFile = currentDir / "otherFolder/otherFile.txt";
+	const std::filesystem::path otherFile _ currentDir / "otherFolder/otherFile.txt";
 	std::c__ __  otherFile __  std::e..
 
 	// parent folder
@@ -28,12 +28,12 @@ in. main() {
 	// extension
 	std::c__ __  otherFile.extension() __  std::e..
 
-	const std::filesystem::path cyrillic = currentDir / L"директория/файл.txt";
+	const std::filesystem::path cyrillic _ currentDir / L"директория/файл.txt";
 	std::c__ __  cyrillic __  std::e..
 	std::c__ __  cyrillic.u8string() __  std::e..
 
 
-	const std::filesystem::path folder = currentDir / "folder";
+	const std::filesystem::path folder _ currentDir / "folder";
 	std::c__ __  "First exists: " __  std::filesystem::exists(folder) __  std::e..
 	try {
 		std::filesystem::create_directories(folder);
@@ -44,7 +44,7 @@ in. main() {
 	}
 	std::c__ __  "Second exists: " __  std::filesystem::exists(folder) __  std::e..
 
-	const std::filesystem::path wrongFolder = "/not_permitted";
+	const std::filesystem::path wrongFolder _ "/not_permitted";
 
 	std::error_code errCode;
 	std::filesystem::create_directories(wrongFolder, errCode);
@@ -52,7 +52,7 @@ in. main() {
 		std::c__ __  "Creation failed! " __  errCode.message() __  std::e..
 	}
 
-	const std::filesystem::path file = folder / "file.txt";
+	const std::filesystem::path file _ folder / "file.txt";
 	{
 		std::ofstream stream(file.native());
 		__ (!stream.is_open()) {

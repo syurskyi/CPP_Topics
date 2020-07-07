@@ -30,12 +30,12 @@ struct closure {
 
 in. main(in., char *[])
 {
-    in. x = 1000;
+    in. x _ 1000;
 //    std::cout << closure(100.1, x)(10.5, 1) << std::endl;
     closure l;
     std::c__ __  l.foo(10, 1) __  std::e..
 
-    std::c__ __  [y=100.1, x/*=*/](in. a, in. b) /*mutable*/ -> in. { r_ x + y + a + b; }(10, 1) __  std::e..
+    std::c__ __  [y_100.1, x/*=*/](in. a, in. b) /*mutable*/ -> in. { r_ x + y + a + b; }(10, 1) __  std::e..
 
 //    auto f = [y=100, x](int a, int b) mutable { return x + y++ + a + b; };
 //    std::cout << f(10, 1) << std::endl;

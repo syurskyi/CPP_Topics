@@ -1,19 +1,19 @@
 ? |i..
-? <string>
+? |s..
 ? "cat.h"
 ? <typeinfo>
 ? "number.h"
 
 u.. s..
 
-uin. Cat::vibr = 20;
+uin. Cat::vibr _ 20;
 
 class SomeClass;
 
 class A
 {
 public:
-    virtual void foo() = 0;
+    virtual void foo() _ 0;
 };
 
 void A::foo()
@@ -31,7 +31,7 @@ public:
     in. get_data(SomeClass& some);
 
 private:
-    string string_data;
+    s.. string_data;
 
     friend SomeClass;
 };
@@ -51,7 +51,7 @@ private:
        r_ data;
     }
 private:
-    in. data = 20;
+    in. data _ 20;
 
     friend B;
     friend void B::new_method(SomeClass& some);
@@ -85,7 +85,7 @@ in. main()
 {
     Number a(4), b(10);
 
-    b = a;
+    b _ a;
 
     c__ __  a + b;
 

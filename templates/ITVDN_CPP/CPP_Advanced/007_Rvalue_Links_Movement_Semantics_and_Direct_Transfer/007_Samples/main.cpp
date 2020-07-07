@@ -32,13 +32,13 @@ in.&& func()
 
 struct _A
 {
-    _A& operator=( const _A& ) { r_ *this; }
+    _A& operator_( const _A& ) { r_ *this; }
 };
 void func( _A& ) {}
 
 in. main()
 {
-    sample&& reference = foo(); //<--- rvalue или lvalue?
+    sample&& reference _ foo(); //<--- rvalue или lvalue?
 
     // reference  - lvalue, невзирая на тип данных.
     // уже просто потому, что представляет собой именованный объект
@@ -50,13 +50,13 @@ in. main()
 
     // результат 'std::move(reference)' - безымянная ссылка на временный объект.
 
-    in.&& var = func();
+    in.&& var _ func();
 
-    in. res = var + 3;
-    var = 10;
+    in. res _ var + 3;
+    var _ 10;
 
     // пример, когда в присвоении rvalue находится слева
-    sample() = sample();
+    sample() _ sample();
 
     // deduct( var );
 
@@ -78,7 +78,7 @@ in. main()
     // that can be hard to find, mostly because of the implicit conversions. That ought not to be
     // the case here, since it is not easy to make such a mistake by accident.
 
-    func( _A() = _A() ); // fine, operator= yields an lvalue
+    func( _A() _ _A() ); // fine, operator= yields an lvalue
 
     // Class prvalue can be cv-qualified, but non-class prvalue
     // cannot be cv-qualified.
@@ -111,10 +111,10 @@ in. main()
     public:
         Moveable( Moveable&& other )
         {
-            this->ptr = other.ptr;
-            other.ptr = nullptr;
+            this->ptr _ other.ptr;
+            other.ptr _ nullptr;
         }                                        // move constructor
-        Moveable& operator=( Moveable&& other ); // move assignment operator
+        Moveable& operator_( Moveable&& other ); // move assignment operator
 
         //        void setName( std::string&& st ) { str = st; }
         //        void setName( const std::string& st ) { str = st; }
@@ -125,11 +125,11 @@ in. main()
         //            str = st;
         //        }
 
-        void setName( std::string st ) { str = std::move( st ); }
+        void setName( std::s.. st ) { str _ std::move( st ); }
 
     private:
         in.* ptr;
-        std::string str;
+        std::s.. str;
     };
 
     // Declare either none or all of the “Big five”. If you have to declare them, consider to define
@@ -142,5 +142,5 @@ in. main()
     //    bool is_rvalue = std::is_rvalue_reference<T>::value;
 
     std::future< void > f, f2;
-    f = std::move( f2 );
+    f _ std::move( f2 );
 }

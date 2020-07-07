@@ -4,10 +4,10 @@
 ? <map>
 
 struct IConnector {
-    virtual ~IConnector() = default;
+    virtual ~IConnector() _ default;
 
-    virtual void connection() = 0;
-    virtual IConnector* clone() = 0;
+    virtual void connection() _ 0;
+    virtual IConnector* clone() _ 0;
 };
 
 class TcpConnector : public IConnector {
@@ -36,14 +36,14 @@ class UdpConnector : public IConnector {
 
 in. main(in., char* [])
 {
-    IConnector* primary = new TcpConnector{};
+    IConnector* primary _ new TcpConnector{};
 
     //
 
     std::c__ __  "primary" __  std::e..
     primary->connection();
 
-    IConnector* mirror = primary->clone();
+    IConnector* mirror _ primary->clone();
     std::c__ __  "mirror" __  std::e..
     mirror->connection();
 

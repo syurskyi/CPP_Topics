@@ -15,7 +15,7 @@ tcOperation::tcOperation( in. argc, char** argv ) {
 
 	mcTokens.clear();
 
-	for ( in. lnIndex = 1; lnIndex < argc; lnIndex++ ) {
+	for ( in. lnIndex _ 1; lnIndex < argc; lnIndex++ ) {
 		mcTokens.push_back( argv[lnIndex] );
 	}
 }
@@ -26,25 +26,25 @@ tcOperation::~tcOperation() {
 
 double tcOperation::Execute( void ) {
 
-	double lrA = atof( mcTokens[0].c_str() );
-	double lrB = atof( mcTokens[2].c_str() );
-	double lrC = 0;
+	double lrA _ atof( mcTokens[0].c_str() );
+	double lrB _ atof( mcTokens[2].c_str() );
+	double lrC _ 0;
 
-	__ ( mcTokens[1] == "+" )
+	__ ( mcTokens[1] __ "+" )
 	{
-		lrC = lrA + lrB;
+		lrC _ lrA + lrB;
 	}
-	____ __ ( mcTokens[1] == "-" )
+	____ __ ( mcTokens[1] __ "-" )
 	{
-		lrC = lrA - lrB;
+		lrC _ lrA - lrB;
 	}
-	____ __ ( mcTokens[1] == "x" )
+	____ __ ( mcTokens[1] __ "x" )
 	{
-		lrC = lrA * lrB;
+		lrC _ lrA * lrB;
 	}
-	____ __ ( mcTokens[1] == "/" )
+	____ __ ( mcTokens[1] __ "/" )
 	{
-		lrC = lrA / lrB;
+		lrC _ lrA / lrB;
 	}
 
 	r_ lrC;

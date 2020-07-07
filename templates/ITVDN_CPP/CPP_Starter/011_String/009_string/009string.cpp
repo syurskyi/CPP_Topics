@@ -19,7 +19,7 @@ in. main()
 	c__ __  "Copy color : " __  copy_color __  e..
 
 	//char str[10] = "dark gray";		
-	 char str[15] = "light gray";  // Приводит к повреждению памяти!
+	 char str[15] _ "light gray";  // Приводит к повреждению памяти!
 
 	strcpy(copy_color, str);
 

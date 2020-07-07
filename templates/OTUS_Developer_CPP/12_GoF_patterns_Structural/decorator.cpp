@@ -5,7 +5,7 @@
 class File
 {
 public:
-    virtual void write() = 0;
+    virtual void write() _ 0;
 };
 
 class RawFile : public File
@@ -32,9 +32,9 @@ public:
 
 in. main(in., char *[])
 {
-    File *c = new RawFile;
+    File *c _ new RawFile;
     c->write();
 
-    File *t = new ZipFile(new RawFile);
+    File *t _ new ZipFile(new RawFile);
     t->write();
 }

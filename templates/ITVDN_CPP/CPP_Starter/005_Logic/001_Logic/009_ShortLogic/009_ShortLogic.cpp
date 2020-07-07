@@ -9,16 +9,16 @@ u.. s..
 
 in. main()
 {
-	in. minValue = 1;
-	in. denominator = 0;
-	in. item = 2;
+	in. minValue _ 1;
+	in. denominator _ 0;
+	in. item _ 2;
 
 
 	// ”словие, которое работает с использованием техники  ќ–ќ“ ќ«јћ Ќ”“ќ√ќ ¬џ„»—Ћ≈Ќ»я.
 	// ≈сли бы это выражение вычисл¤лось полностью, то операци¤ делени¤ во втором операнде, 
 	// генерировала бы ошибку делени¤ на 0.
 
-	__ ((denominator != 0) && (item / denominator) > minValue) // ќставьте один оператор &
+	__ ((denominator !_ 0) && (item / denominator) > minValue) // ќставьте один оператор &
 	{
 		c__ __  "Block IF" __  e..
 	}

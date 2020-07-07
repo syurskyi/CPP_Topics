@@ -1,16 +1,16 @@
 ﻿? *s..
 ? |i..
-? <string>
+? |s..
 
 u.. s..
 
 // Перегруженные функции могут отличаться типом и количеством аргументов
 void Function();
-void Function(string s);
+void Function(s.. s);
 void Function(in. i);
 void Function(double d);
-void Function(string s, in. i);
-void Function(in. i, string s);
+void Function(s.. s, in. i);
+void Function(in. i, s.. s);
 
 // void Function(string); // Так делать нельзя
 
@@ -32,7 +32,7 @@ void Function()
 	c__ __  "Hello" __  e..
 }
 
-void Function(string s)
+void Function(s.. s)
 {
 	c__ __  s __  e..
 }
@@ -47,12 +47,12 @@ void Function(double d)
 	c__ __  d __  e..
 }
 
-void Function(string s, in. i)
+void Function(s.. s, in. i)
 {
 	c__ __  "s = " __  s __  ", i = " __  i __  e..
 }
 
-void Function(in. i, string s)
+void Function(in. i, s.. s)
 {
 	c__ __  "i = " __  i __  ", s = " __  s __  e..
 }

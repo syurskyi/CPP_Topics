@@ -10,7 +10,7 @@
 ? <vector>
 
 class Document {
-    std::string text;
+    std::s.. text;
 
 public:
     void create()
@@ -19,13 +19,13 @@ public:
         text.clear();
     }
 
-    void new_para(const std::string& para)
+    void new_para(const std::s..& para)
     {
-        text += para+"\n";
+        text +_ para+"\n";
         std::c__ __  "new para " __  para __  std::e..
     }
 
-    void save_as(const std::string& name)
+    void save_as(const std::s..& name)
     {
         std::c__ __  "--- " __  name __  "---" __  std::e..
         std::c__ __  text __  std::e..
@@ -34,11 +34,11 @@ public:
 
 class Command {
 public:
-    virtual ~Command() = default;
+    virtual ~Command() _ default;
 
-    virtual void execute() = 0;
+    virtual void execute() _ 0;
 
-    virtual void py() = 0;
+    virtual void py() _ 0;
 
 protected:
     explicit Command(Document* d)
@@ -64,9 +64,9 @@ public:
 };
 
 class ParaCommand : public Command {
-    std::string text;
+    std::s.. text;
 public:
-    ParaCommand(Document* d, std::string text_)
+    ParaCommand(Document* d, std::s.. text_)
             :Command(d), text(std::move(text_)) { }
 
     void execute() override
@@ -81,9 +81,9 @@ public:
 };
 
 class SaveAsCommand : public Command {
-    std::string fname;
+    std::s.. fname;
 public:
-    SaveAsCommand(Document* d, std::string fname_)
+    SaveAsCommand(Document* d, std::s.. fname_)
             :Command(d), fname(std::move(fname_)) { }
 
     void execute() override

@@ -7,22 +7,22 @@ in. main()
 {
 	setlocale(LC_CTYPE, "rus");
 
-	in. number = 0;		// исло, факториал которого необходимо получить
-	in. factorial = 1;	// акториал
+	in. number _ 0;		// исло, факториал которого необходимо получить
+	in. factorial _ 1;	// акториал
 
 	c__ __  "Enter number: ";
-	c__ >> number;
+	c__ __ number;
 
 	c__ __  "factorial of a number: " __  number __  "! = ";
 
 	do
 	{
-		__ (number == 0)
+		__ (number __ 0)
 		{
-			factorial = 1;
+			factorial _ 1;
 			break;
 		}
-		factorial = factorial * number;
+		factorial _ factorial * number;
 		number--;
 
 	} while (number > 0);

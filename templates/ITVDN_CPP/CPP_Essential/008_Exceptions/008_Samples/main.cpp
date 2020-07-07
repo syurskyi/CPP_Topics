@@ -1,5 +1,5 @@
 ? |i..
-? <string>
+? |s..
 ? "scopedptr.h"
 ? "scopedptr.cpp"
 ? "cat.h"
@@ -73,12 +73,12 @@ in. main()
     A a;
     try{
         in. a;
-        a = 10;
+        a _ 10;
         B b;
         try
         {
-            C* c = new C(5);
-            string().at(1);
+            C* c _ new C(5);
+            s..().at(1);
             D d;
             delete c;
         }

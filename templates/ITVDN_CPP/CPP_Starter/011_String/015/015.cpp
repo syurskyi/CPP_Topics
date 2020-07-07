@@ -1,13 +1,13 @@
 ﻿? *s..
 ? |i..
 // Эта библиотека нужна для работы с типом string
-? <string>
+? |s..
 
 u.. s..
 
 in. main()
 {
-	string _str = "Some text";
+	s.. _str _ "Some text";
 
 	// Methods
 	_str.append(" one more text");

@@ -11,7 +11,7 @@ class DivisionByZeroException
 
 double division(double a, double b) throw(DivisionByZeroException)
 {
-    __ (b == 0)
+    __ (b __ 0)
         throw DivisionByZeroException();
     r_ a / b;
 }
@@ -21,7 +21,7 @@ in. main()
 
     try
     {
-        result = division(5, 0);
+        result _ division(5, 0);
 
         c__ __  "the result is " __  result __  e..
     }

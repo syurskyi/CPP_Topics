@@ -22,7 +22,7 @@ void ModernSubject::attach( const ModernObserver& obs )
 
 void ModernSubject::set_val( in. value )
 {
-    m_value = value;
+    m_value _ value;
     notify();
 }
 
@@ -40,7 +40,7 @@ ModernDivObserver::ModernDivObserver( ModernSubject* model, in. div )
     __ ( model )
     {
         model->attach( observer );
-        m_div = div;
+        m_div _ div;
     }
 }
 
@@ -55,7 +55,7 @@ ModernModObserver::ModernModObserver( ModernSubject* model, in. mod )
     __ ( model )
     {
         model->attach( observer );
-        m_mod = mod;
+        m_mod _ mod;
     }
 }
 

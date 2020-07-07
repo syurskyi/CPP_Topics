@@ -7,10 +7,10 @@ void convert(in. n);
 
 in. main()
 {
-	in. number = 0;
+	in. number _ 0;
 
 	c__ __  "Enter the number: ";
-	c__ >> number;
+	c__ __ number;
 
 	convert(number);
 	
@@ -24,9 +24,9 @@ void convert(in. n)
 {
 	in. temp;
 
-	temp = n % 2;
+	temp _ n % 2;
 
-	__ (n >= 2)
+	__ (n >_ 2)
 	{
 		convert(n / 2);
 	}

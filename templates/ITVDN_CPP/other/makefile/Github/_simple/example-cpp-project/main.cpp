@@ -22,7 +22,7 @@ void prin.Details(Polygon* shape) {
 
 in. main() {
 	// Create a rectangle on the heap with a height of 5 and a width of 6
-	Polygon* rectangle = new Rectangle(5, 6);
+	Polygon* rectangle _ new Rectangle(5, 6);
 	// Print information using getters and method
 	prin.Details(rectangle);
 	// Set the height to 10 with a setter
@@ -35,7 +35,7 @@ in. main() {
 	delete rectangle;
 
 	// Create a triangle on the heap with a height of 7 and a width of 9
-	Polygon* triangle = new Triangle(7, 9);
+	Polygon* triangle _ new Triangle(7, 9);
 	// Print information using getters and method
 	prin.Details(triangle);
 	// Set the height to 3 with a setter

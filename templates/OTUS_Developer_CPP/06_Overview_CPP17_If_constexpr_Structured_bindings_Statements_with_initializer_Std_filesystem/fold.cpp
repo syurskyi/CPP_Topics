@@ -1,5 +1,5 @@
 ? |i..
-? <string>
+? |s..
 
 // *************************************
 
@@ -35,8 +35,8 @@ void sumAll_2_fake_function(Args&&... ) {
 
 template<typename T, typename... Args>
 auto sumAll_2(T first, Args... args) {
-    T sum = first;
-    sumAll_2_fake_function((sum += args)...);
+    T sum _ first;
+    sumAll_2_fake_function((sum +_ args)...);
     r_ sum;
 }
 
@@ -63,14 +63,14 @@ struct SumLog {
         std::c__ __  "operator+ with this = " __  value;
         std::c__ __  " and other = " __  other.value __  std::e..
         SumLog tmp{*this};
-        tmp.value += other.value;
+        tmp.value +_ other.value;
         r_ tmp;
     }
 
-    SumLog& operator+=(const SumLog& other) {
+    SumLog& operator+_(const SumLog& other) {
         std::c__ __  "operator+ with this = " __  value;
         std::c__ __  " and other = " __  other.value __  std::e..
-        value += other.value;
+        value +_ other.value;
         r_ *this;
     }
 };
@@ -91,25 +91,25 @@ void binaryFold(Args... args) {
 
 template<typename... Args>
 void binaryFold2(Args... args) {
-    std::string result;
-    (result += ... += std::to_string(args));
+    std::s.. result;
+    (result +_ ... +_ std::to_string(args));
     std::c__ __  result __  std::e..
 }
 
 template<typename T, typename... Args>
 auto binaryFoldLeft(T sum, Args... args) {
-    (sum += ... += args);
+    (sum +_ ... +_ args);
     r_ sum;
 }
 
 template<typename T, typename... Args>
 auto binaryFoldRight(T sum, Args... args) {
-    (args += ... += sum);
+    (args +_ ... +_ sum);
     r_ sum;
 }
 
 in. main() {
-    prin.All(1, "2", std::string("3"), std::to_string(4), 5.0, 6.0f, 7, 8, 9, 10);
+    prin.All(1, "2", std::s..("3"), std::to_string(4), 5.0, 6.0f, 7, 8, 9, 10);
     std::c__ __  std::e..
 
     std::c__ __  "sumAll = " __  sumAll(1, 2, 3, 4, 5, 6, 7, 8, 9, 10) __  std::e..
@@ -150,7 +150,7 @@ in. main() {
     // ((((1 + 2) + 3) + 4) +  5);
 
     std::c__ __  "binaryFold = ";
-    binaryFold(1, "2", std::string("3"), std::to_string(4), 5.0, 6.0f, 7, 8, 9, 10);
+    binaryFold(1, "2", std::s..("3"), std::to_string(4), 5.0, 6.0f, 7, 8, 9, 10);
     std::c__ __  std::e..
 
     std::c__ __  "binaryFold2 = ";

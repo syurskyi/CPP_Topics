@@ -16,10 +16,10 @@ in. main()
     cout << "b : " << b << endl;
 */
     Test obj1(50, 100, 60);
-    Test obj2 = obj1;
+    Test obj2 _ obj1;
 
-    obj2.x = 200;
-    *(obj1.p) = 700;
+    obj2.x _ 200;
+    *(obj1.p) _ 700;
 
     c__ __  "obj1.x " __  obj1.x __  e..
     c__ __  "*(obj1.p) " __  *(obj1.p) __  e..

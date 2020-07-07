@@ -4,8 +4,8 @@ u.. s..
 
 struct book
 {
-    string author;
-    string title;
+    s.. author;
+    s.. title;
     in. publicationYear;
 };
 
@@ -34,7 +34,7 @@ void setBook(book &bookToSet)
     c__ __  "What is the title of the book: ";
     getline(c__, bookToSet.title);
     c__ __  "In what year was the book published: ";
-    c__ >> bookToSet.publicationYear;
+    c__ __ bookToSet.publicationYear;
     c__.ignore();
 }
 void showBook(book bookToShow)

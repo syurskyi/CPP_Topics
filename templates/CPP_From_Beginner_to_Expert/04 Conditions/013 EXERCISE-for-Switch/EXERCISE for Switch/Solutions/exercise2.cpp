@@ -20,7 +20,7 @@ main ()
     c__ __  "12. December" __  e..
     c__ __  "Choose the month: ";
 
-    c__ >> choice;
+    c__ __ choice;
 
     switch (choice)
     {
@@ -43,9 +43,9 @@ main ()
         {
             in. year;
             c__ __  "Input the year: ";
-            c__ >> year;
+            c__ __ year;
 
-            bo.. isLeapYear = (((year%4 == 0) && (year%100 != 0)) || (year%400 == 0));
+            bo.. isLeapYear _ (((year%4 __ 0) && (year%100 !_ 0)) || (year%400 __ 0));
 
             __ (isLeapYear)
                 c__ __  "The month february has 29 days in year " __  year __  e..

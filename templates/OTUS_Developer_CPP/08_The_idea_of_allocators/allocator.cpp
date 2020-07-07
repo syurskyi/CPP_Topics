@@ -6,7 +6,7 @@
 
 template<typename T>
 struct logging_allocator {
-    using value_type = T;
+    using value_type _ T;
 /*    using pointer = T*;
     using const_pointer = const T*;
     using reference = T&;
@@ -19,7 +19,7 @@ struct logging_allocator {
 
     T *allocate(std::size_t n) const {
         std::c__ __  __PRETTY_FUNCTION__ __  "[n = " __  n __  "]" __  std::e..
-        auto p = std::malloc(n * sizeof(T));
+        auto p _ std::malloc(n * sizeof(T));
         __ (!p)
             throw std::bad_alloc();
         r_ rein.erpret_cast<T *>(p);
@@ -44,9 +44,9 @@ struct logging_allocator {
 
 in. main(in., char *[]) {
 
-    auto v = std::vector<in., logging_allocator<in.>>{};
+    auto v _ std::vector<in., logging_allocator<in.__{};
 //    v.reserve(5);
-    for (size_t i = 0; i < 1 /* 5 */; ++i) {
+    for (size_t i _ 0; i < 1 /* 5 */; ++i) {
         v.emplace_back(i);
         std::c__ __  "---" __  std::e..
     }

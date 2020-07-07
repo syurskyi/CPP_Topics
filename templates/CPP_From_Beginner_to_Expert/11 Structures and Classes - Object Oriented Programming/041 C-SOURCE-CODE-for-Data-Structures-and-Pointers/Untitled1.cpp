@@ -5,23 +5,23 @@ u.. s..
 
 struct personalData
 {
-    string name;
-    string surname;
-    string telephoneNumber;
+    s.. name;
+    s.. surname;
+    s.. telephoneNumber;
     sh.. age;
 }a,b;
 void test(personalData *);
 in. main()
 {
     personalData person[5];
-    a.age =50;
+    a.age _50;
 
    // cout << a.age << endl;
-    person[0].name = "Arkadiusz";
-    person[1].name = "Wiola";
-    person[0].surname = "Wlodarczyk";
-    person[0].telephoneNumber = "606102340";
-    person[0].age = 22;
+    person[0].name _ "Arkadiusz";
+    person[1].name _ "Wiola";
+    person[0].surname _ "Wlodarczyk";
+    person[0].telephoneNumber _ "606102340";
+    person[0].age _ 22;
 /*
     cout << person[0].name << endl;
     cout << person[0].surname << endl;
@@ -33,7 +33,7 @@ in. main()
     cout << (*&person[0]).name << endl;
     cout << (person+1)->name << endl;
 */
-    personalData *p = person;
+    personalData *p _ person;
 
     c__ __  p->name __  e..
 
@@ -44,5 +44,5 @@ in. main()
 }
 void test(personalData *person)
 {
-    person->name = "Agnes";
+    person->name _ "Agnes";
 }

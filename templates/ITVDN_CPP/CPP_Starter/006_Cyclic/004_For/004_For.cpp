@@ -5,9 +5,9 @@ u.. s..
 
 in. main()
 {
-	in. count = 5;
+	in. count _ 5;
 
-	for (in. i = 0; i < count; i++)
+	for (in. i _ 0; i < count; i++)
 	{
 		c__ __  "Iteration " __  i __  e..
 		

@@ -8,7 +8,7 @@ in. main()
     // [1] = ["test"]
     // [2] = []
     // [3] = ["prod"]
-    std::unordered_set<std::string> x {
+    std::unordered_set<std::s..> x {
         "test", // 3987873476345 1
         "debug", // 8748764876346 0
         "prod", // 3987873476345 3
@@ -19,5 +19,5 @@ in. main()
         std::c__ __  i __  std::e..
     }
     std::c__ __  x.count("test") __  std::e..
-    std::c__ __  x.count(std::string("test").data()) __  std::e..
+    std::c__ __  x.count(std::s..("test").data()) __  std::e..
 }

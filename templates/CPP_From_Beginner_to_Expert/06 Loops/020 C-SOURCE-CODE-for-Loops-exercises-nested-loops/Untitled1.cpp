@@ -27,9 +27,9 @@ main()
         5 ...
     */
 
-    for (in. i = 1; i <= 15; i++) // i = 2
+    for (in. i _ 1; i <_ 15; i++) // i = 2
     {
-        for (in. j = 1; j <= 12; j++) // j = 1
+        for (in. j _ 1; j <_ 12; j++) // j = 1
         {
             c__.width(4);
             c__ __  i * j;

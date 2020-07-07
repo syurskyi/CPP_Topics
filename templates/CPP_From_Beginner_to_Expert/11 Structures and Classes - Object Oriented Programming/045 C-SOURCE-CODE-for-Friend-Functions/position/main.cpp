@@ -23,5 +23,5 @@ in. main()
 void setX(Position & obj, in. value)
 {
     //Position &obj = dog;
-    obj.x = value;
+    obj.x _ value;
 }

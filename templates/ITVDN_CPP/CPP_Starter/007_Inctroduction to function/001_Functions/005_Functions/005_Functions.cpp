@@ -1,14 +1,14 @@
 ? *s..
 ? |i..
-? <string>
+? |s..
 
 u.. s..
 
-string Function();
+s.. Function();
 
 in. main()
 {
-	string value = Function();
+	s.. value _ Function();
 
 	c__ __  "Hello, " __  value __  e..
 
@@ -16,9 +16,9 @@ in. main()
 	r_ 0;
 }
 
-string Function()
+s.. Function()
 {
-	string value = "Admin!";
+	s.. value _ "Admin!";
 
 	r_ value;
 }

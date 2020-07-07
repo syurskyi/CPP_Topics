@@ -3,16 +3,16 @@
 ? <iterator>
 ? <list>
 ? <sstream>
-? <string>
+? |s..
 ? <unordered_map>
 ? <vector>
 
 template < typename T >
-bo.. test = std::is_same< typename std::iterator_traits< typename T::iterator >::iterator_category,
+bo.. test _ std::is_same< typename std::iterator_traits< typename T::iterator >::iterator_category,
                           std::forward_iterator_tag >::value;
 
 template < typename T >
-bo.. test_bidirectional =
+bo.. test_bidirectional _
     std::is_same< typename std::iterator_traits< typename T::iterator >::iterator_category,
                   std::bidirectional_iterator_tag >::value;
 
@@ -114,7 +114,7 @@ in. main()
     //        std::cout << "element is not found" << std::endl;
     //    }
 
-    std::string str = "Hello World";
+    std::s.. str _ "Hello World";
     std::transform( str.begin(), str.end(), str.begin(), ::toupper );
 
     std::c__ __  str __  std::e..
@@ -123,7 +123,7 @@ in. main()
 
     std::c__ __  str __  std::e..
 
-    auto splitted =
+    auto splitted _
         std::partition( str.begin(), str.end(), []( const char elem ) { r_ elem > 'L'; } );
 
     std::c__ __  "\nPartitioned string:\n    ";

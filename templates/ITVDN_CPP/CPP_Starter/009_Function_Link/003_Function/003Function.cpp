@@ -1,10 +1,10 @@
 ﻿? *s..
 ? |i..
-? <string>
+? |s..
 
 u.. s..
 
-void Operation(string val1 = "val", in. val2 = 10, double val3 = 12.2);
+void Operation(s.. val1 _ "val", in. val2 _ 10, double val3 _ 12.2);
 
 in. main()
 {
@@ -17,7 +17,7 @@ in. main()
 	system("pause");
 	r_ 0;
 }
-void Operation(string val1, in. val2, double val3)
+void Operation(s.. val1, in. val2, double val3)
 {
 	c__ __  val1 __  " " __  val2 __  " " __  val3 __  e..
 }

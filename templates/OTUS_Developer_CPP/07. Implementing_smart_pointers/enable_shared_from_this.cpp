@@ -16,19 +16,19 @@ struct baz : std::enable_shared_from_this<baz> {
 };
 
 in. main() {
-    auto f = new foo{};
-    auto ff = f->g..
+    auto f _ new foo{};
+    auto ff _ f->g..
     delete f;
 
-    auto b = std::shared_ptr<bar>{new bar};
+    auto b _ std::shared_ptr<bar>{new bar};
     std::c__ __  b.use_count() __  std::e..
-    auto bb = std::shared_ptr<bar>{b->raw()};
+    auto bb _ std::shared_ptr<bar>{b->raw()};
     std::c__ __  b.use_count() __  " " __  bb.use_count() __  std::e..
-    auto bbb = b->g..
+    auto bbb _ b->g..
     std::c__ __  b.use_count() __  " " __  bb.use_count() __  " " __  bbb.use_count() __  std::e..
 
-    auto z = std::shared_ptr<baz>{new baz};
+    auto z _ std::shared_ptr<baz>{new baz};
     std::c__ __  z.use_count() __  std::e..
-    auto zz = z->g..
+    auto zz _ z->g..
     std::c__ __  z.use_count() __  " " __  zz.use_count() __  std::e..
 }

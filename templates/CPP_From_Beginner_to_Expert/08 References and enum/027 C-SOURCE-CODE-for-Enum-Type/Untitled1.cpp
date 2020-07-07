@@ -3,12 +3,12 @@
 u.. s..
 /* enum - enumeration - 0 1 2 3 4 */
 
-enum dayOfWeek {M = 1, TU, W, TH, F, SA, SN};
+enum dayOfWeek {M _ 1, TU, W, TH, F, SA, SN};
 
-string getDay(dayOfWeek);
+s.. getDay(dayOfWeek);
 in. main()
 {
-    dayOfWeek d = M;
+    dayOfWeek d _ M;
 
     /*cout << d << endl;
 
@@ -17,12 +17,12 @@ in. main()
     in. i;
     c__ __  "Enter the day of a week " __  e..
     //....
-    c__ >> i;
+    c__ __ i;
     c__ __  getDay(dayOfWeek(i)) __  e..
 
     r_ 0;
 }
-string getDay(dayOfWeek d)
+s.. getDay(dayOfWeek d)
 {
     switch(d)
     {

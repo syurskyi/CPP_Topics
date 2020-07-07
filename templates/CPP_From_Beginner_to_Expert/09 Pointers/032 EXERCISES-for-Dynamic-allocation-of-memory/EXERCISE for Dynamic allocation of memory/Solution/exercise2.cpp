@@ -8,18 +8,18 @@ in. main ()
     in. arraySize;
 
     c__ __  "Input the size of the dynamic array you want to create: ";
-    c__ >> arraySize;
+    c__ __ arraySize;
 
-    in. *dynamicArray = new in.[arraySize];
+    in. *dynamicArray _ new in.[arraySize];
 
 
-    for (in. i = 0; i < arraySize; i++)
+    for (in. i _ 0; i < arraySize; i++)
     {
         c__ __  "Input " __  i+1 __  " number: ";
-        c__ >> *(dynamicArray+i);
+        c__ __ *(dynamicArray+i);
     }
 
-    for (in. i = 0; i < arraySize; i++)
+    for (in. i _ 0; i < arraySize; i++)
     {
         c__ __  "Number " __  i+1 __  ": " __  *(dynamicArray+i) __  e..
     }

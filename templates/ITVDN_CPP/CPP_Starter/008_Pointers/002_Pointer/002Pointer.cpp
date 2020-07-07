@@ -5,9 +5,9 @@ u.. s..
 
 in. main()
 {
-	in. age = 25;
+	in. age _ 25;
 
-	in. *p_age = &age;
+	in. *p_age _ &age;
 
 	c__ __  "p_age is at: 0x" __  p_age __  e..
 

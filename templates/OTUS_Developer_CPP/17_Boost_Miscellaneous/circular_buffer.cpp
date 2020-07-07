@@ -23,7 +23,7 @@
 in. main() {
     boost::circular_buffer<in.> buffer{4};
 
-    for (in. i = 0; i < 10; ++i) {
+    for (in. i _ 0; i < 10; ++i) {
         buffer.push_back(i);
     }
 

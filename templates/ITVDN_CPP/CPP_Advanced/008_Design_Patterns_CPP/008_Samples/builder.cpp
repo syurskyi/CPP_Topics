@@ -3,23 +3,23 @@
 ? "meta_strategy.h"
 ? |i..
 ? <memory>
-? <string>
+? |s..
 
 u.. s..
 
-void Pizza::setDough( const string& dough )
+void Pizza::setDough( const s..& dough )
 {
-    m_dough = dough;
+    m_dough _ dough;
 }
 
-void Pizza::setSauce( const string& sauce )
+void Pizza::setSauce( const s..& sauce )
 {
-    m_sauce = sauce;
+    m_sauce _ sauce;
 }
 
-void Pizza::setTopping( const string& topping )
+void Pizza::setTopping( const s..& topping )
 {
-    m_topping = topping;
+    m_topping _ topping;
 }
 
 void Pizza::open() const
@@ -35,7 +35,7 @@ Pizza* PizzaBuilder::getPizza()
 
 void PizzaBuilder::createNewPizzaProduct()
 {
-    m_pizza = make_unique< Pizza >();
+    m_pizza _ make_unique< Pizza >();
 }
 
 void HawaiianPizzaBuilder::buildDough()
@@ -71,7 +71,7 @@ void Cook::openPizza()
 
 void Cook::makePizza( PizzaBuilder* pb )
 {
-    m_pizzaBuilder = pb;
+    m_pizzaBuilder _ pb;
     m_pizzaBuilder->createNewPizzaProduct();
     m_pizzaBuilder->buildDough();
     m_pizzaBuilder->buildSauce();

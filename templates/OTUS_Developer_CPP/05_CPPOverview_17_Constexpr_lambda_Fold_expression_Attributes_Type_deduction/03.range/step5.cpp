@@ -2,9 +2,9 @@
 ? |i..
 
 in. main() {
-    const std::string s{"hello"};
+    const std::s.. s{"hello"};
 
-    ranges::for_each(s | ranges::view::filter([](auto c) { r_ c == 'l'; }),
+    ranges::for_each(s | ranges::view::filter([](auto c) { r_ c __ 'l'; }),
             [](auto i) { std::c__ __  i __  std::e.. });
 }
 

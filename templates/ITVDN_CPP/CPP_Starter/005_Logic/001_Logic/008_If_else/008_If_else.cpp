@@ -1,24 +1,24 @@
 ? *s..
 ? |i..
-? <string>
+? |s..
 
 u.. s..
 
 in. main()
 {
-	string login = "Admin";
-	string password = "12345";
+	s.. login _ "Admin";
+	s.. password _ "12345";
 
-	string userLogin = "";
-	string userPassword = "";
+	s.. userLogin _ "";
+	s.. userPassword _ "";
 
 	c__ __  "Enter your login: ";
-	c__ >> userLogin;
+	c__ __ userLogin;
 
 	c__ __  "Enter the password: ";
-	c__ >> userPassword;
+	c__ __ userPassword;
 
-	__ (userLogin == login && userPassword == password) {
+	__ (userLogin __ login && userPassword __ password) {
 		c__ __  "Hello, Admin!" __  e..
 	}
 	____

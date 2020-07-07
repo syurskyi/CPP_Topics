@@ -4,8 +4,8 @@ u.. s..
 
 struct book
 {
-    string title;
-    string author;
+    s.. title;
+    s.. author;
     in. publicationYear;
 };
 

@@ -4,19 +4,19 @@
 template < in. N >
 struct Factorial
 {
-    static const in. result = N * Factorial< N - 1 >::result;
+    static const in. result _ N * Factorial< N - 1 >::result;
 };
 
 template <>
 struct Factorial< 0 >
 {
-    static const in. result = 1;
+    static const in. result _ 1;
 };
 
 // C++11
 constexpr unsigned fact( unsigned N )
 {
-    r_ ( N == 0 ) ? 1 : N * fact( N - 1 );
+    r_ ( N __ 0 ) ? 1 : N * fact( N - 1 );
 }
 
 // C++11
@@ -29,13 +29,13 @@ constexpr unsigned fib( unsigned N )
 // C++11 but with templates specialization
 // type-based metaprogramming
 template < unsigned N >
-constexpr unsigned fib2 = fib2< N - 2 > + fib2< N - 1 >;
+constexpr unsigned fib2 _ fib2< N - 2 > + fib2< N - 1 >;
 
 template <>
-constexpr unsigned fib2< 0 > = 1;
+constexpr unsigned fib2< 0 > _ 1;
 
 template <>
-constexpr unsigned fib2< 1 > = 1;
+constexpr unsigned fib2< 1 > _ 1;
 
 ////////////////////////////////////////////////////////////
 
@@ -43,12 +43,12 @@ struct nil
 {
 };
 
-template < class H, class T = nil >
+template < class H, class T _ nil >
 struct cons
 {
     typedef T Tail;
     typedef H Head;
-    typedef cons< in., cons< std::string, cons< double, cons< float > > > > TypeList;
+    typedef cons< in., cons< std::s.., cons< double, cons< float > > > > TypeList;
 };
 
 // template < class... Args >

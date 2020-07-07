@@ -12,8 +12,8 @@ u.. s..
 bo.. accept()
 {
 	c__ __  "Do you want to proceed (y or n)?\n";
-	char answer = 0;
-	c__ >> answer;
+	char answer _ 0;
+	c__ __ answer;
 
 	switch (answer)
 	{

@@ -6,7 +6,7 @@ main() {
 
     in. roomNumber;
     sh.. floorLevel;
-    string renterName, renterLastName;
+    s.. renterName, renterLastName;
     bo.. mealsIncluded;
 
 }

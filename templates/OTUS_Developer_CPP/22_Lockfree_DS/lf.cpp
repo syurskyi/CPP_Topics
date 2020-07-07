@@ -15,15 +15,15 @@ struct List {
 
     void push(Node* p)
     {
-        p->next = head;
-        head = p;
+        p->next _ head;
+        head _ p;
     }
 };
 
 bo.. casin.(in.& p, in. nvalue, in. compare)
 {
-    __ (p==compare) {
-        p = nvalue;
+    __ (p__compare) {
+        p _ nvalue;
         r_ true;
     }
     ____
@@ -32,8 +32,8 @@ bo.. casin.(in.& p, in. nvalue, in. compare)
 
 bo.. cas(Node** p, Node* nvalue, Node* compare)
 {
-    __ (*p==compare) {
-        *p = nvalue;
+    __ (*p__compare) {
+        *p _ nvalue;
         r_ true;
     }
     ____
@@ -46,8 +46,8 @@ struct ListLF {
     void push(Node* p)
     {
         while (true) {
-            Node* old_head = head;
-            p->next = head;
+            Node* old_head _ head;
+            p->next _ head;
 
             __ (cas(&head, p, old_head))
                 r_;
@@ -57,16 +57,16 @@ struct ListLF {
 
 in. main(in., char* [])
 {
-    auto m = std::map<in., in.>();
+    auto m _ std::map<in., in.>();
 
-    m[1] = 2;
+    m[1] _ 2;
 
     List l;
 
     l.push(new Node{42}); // memory leak
     l.push(new Node{100}); // memory leak
 
-    for (Node* i = l.head; i; i = i->next) {
+    for (Node* i _ l.head; i; i _ i->next) {
         std::c__ __  i->value __  std::e..
     }
 

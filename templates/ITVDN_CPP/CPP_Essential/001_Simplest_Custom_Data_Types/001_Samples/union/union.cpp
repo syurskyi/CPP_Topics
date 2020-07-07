@@ -1,5 +1,5 @@
 ? |i..
-? <string>
+? |s..
 
 u.. s..
 
@@ -24,10 +24,10 @@ typedef Container cnt;
 in. main()
 {
     Container container;
-    container.double_field = 0.5;
+    container.double_field _ 0.5;
 
     A a;
-    a.b = 2;
+    a.b _ 2;
 
     A* a_ptr;
     Container* cnt_ptr;
@@ -44,7 +44,7 @@ in. main()
 
     c__ __  container.in._field __  "\n";
     c__ __  container.double_field __  "\n";
-    container = {4};
+    container _ {4};
 
     c__ __  container.in._field __  "\n";
     c__ __  container.double_field __  "\n";

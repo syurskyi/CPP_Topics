@@ -6,7 +6,7 @@
 class ThreadSafeCounter
 {
     mutable std::shared_timed_mutex mutex_;
-    in. value_ = 0;
+    in. value_ _ 0;
 public:
     in. get() const
     {
@@ -25,8 +25,8 @@ in. main()
 {
     ThreadSafeCounter counter;
 
-    auto increment_and_prin. = [&counter]() {
-        for (in. i = 0; i < 3; i++) {
+    auto increment_and_prin. _ [&counter]() {
+        for (in. i _ 0; i < 3; i++) {
             counter.increment();
             std::c__ __  counter.get() __  std::e..
 

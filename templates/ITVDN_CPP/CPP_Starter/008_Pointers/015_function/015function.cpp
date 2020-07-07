@@ -14,14 +14,14 @@ in. main()
 {
 	in. value;
 
-	top_s = stack;
-	p1 = stack;
+	top_s _ stack;
+	p1 _ stack;
 
 	do {
 		c__ __  "Enter the number: " __  e..
-		c__ >> value;
+		c__ __ value;
 
-		__ (value != 0) {
+		__ (value !_ 0) {
 			push(value);
 		}
 		____
@@ -29,7 +29,7 @@ in. main()
 			c__ __  "The number on stack top equal " __  pop() __  e..
 		}
 
-	} while (value != -1);
+	} while (value !_ -1);
 
 
 	system("pause");
@@ -39,16 +39,16 @@ in. main()
 void push(in. i)
 {
 	p1++;
-	__ (p1 == (top_s + SIZE)) {
+	__ (p1 __ (top_s + SIZE)) {
 		c__ __  "The stack is overflow" __  e..;
 		exit(1);
 	}
-	*p1 = i;
+	*p1 _ i;
 }
 
 in. pop(void)
 {
-	__ (p1 == top_s)
+	__ (p1 __ top_s)
 	{
 		c__ __  "Stack is empty!" __  e..
 		exit(1);

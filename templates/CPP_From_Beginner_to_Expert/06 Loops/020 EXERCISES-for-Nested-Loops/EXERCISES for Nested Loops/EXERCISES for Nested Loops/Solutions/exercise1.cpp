@@ -5,14 +5,14 @@ u.. s..
 main ()
 {
     char coordinates[3][3];
-    char value = '1';
+    char value _ '1';
 
-    for (in. i = 0; i < 3; i++)
+    for (in. i _ 0; i < 3; i++)
     {
         c__ __  endl __  e..
-        for (in. j = 0; j < 3; j++)
+        for (in. j _ 0; j < 3; j++)
         {
-            coordinates[i][j] = value;
+            coordinates[i][j] _ value;
             value++;
 
             c__.width(5);

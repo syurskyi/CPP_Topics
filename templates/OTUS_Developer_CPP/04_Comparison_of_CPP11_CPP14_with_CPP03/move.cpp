@@ -17,14 +17,14 @@ public:
         std::c__ __  __PRETTY_FUNCTION__ __  " // destroy 1G" __  std::e..
         delete[] buffer;
     }
-    Big& operator=(const Big &other) {
+    Big& operator_(const Big &other) {
         std::c__ __  __PRETTY_FUNCTION__ __  " // duplicate 1G" __  std::e..
         std::memcpy(buffer, other.buffer, 1000);
         r_ *this;
     }
-    Big& operator=(Big &&other) {
+    Big& operator_(Big &&other) {
         std::c__ __  __PRETTY_FUNCTION__ __  " // steal 1G" __  std::e..
-        buffer = other.buffer;
+        buffer _ other.buffer;
         r_ *this;
     }
 };
@@ -47,13 +47,13 @@ in. main(in., char *[]) {
     Big big, big2;
 
     std::c__ __  std::e..
-    big = big2;
+    big _ big2;
 
     std::c__ __  std::e..
-    big = Big();
+    big _ Big();
 
     std::c__ __  std::e..
-    big = std::move(big2);
+    big _ std::move(big2);
 
     std::c__ __  "}" __  std::e..
 

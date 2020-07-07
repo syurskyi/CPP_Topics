@@ -5,7 +5,7 @@
 
 in. main()
 {
-    std::map< std::string, std::unique_ptr< MetaStrategy > > patterns;
+    std::map< std::s.., std::unique_ptr< MetaStrategy > > patterns;
 
     patterns.insert( { "facade", std::make_unique< ClientFacade >() } );
     patterns.insert( { "strategy", std::make_unique< ClientStrategy >() } );

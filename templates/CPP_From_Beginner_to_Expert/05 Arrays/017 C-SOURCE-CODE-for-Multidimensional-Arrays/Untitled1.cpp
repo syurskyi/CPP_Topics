@@ -4,7 +4,7 @@ u.. s..
 //multidimensional arrays
 main()
 {
-    in. biArray[3][4] = {0};
+    in. biArray[3][4] _ {0};
     in. biArray[2][3][2];
 
 

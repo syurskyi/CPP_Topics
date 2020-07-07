@@ -5,17 +5,17 @@ u.. s..
 
 in. main()
 {
-	in. a = 10;
+	in. a _ 10;
 
 	c__ __  "Variable a = " __  a __  e..
 
 	// Создаем ссылку на переменную типа int
-	in. &b = a;
+	in. &b _ a;
 
 	c__ __  "Variable a = " __  b __  e..
 	c__ __  "Change variable b" __  e..
 
-	b = 15;
+	b _ 15;
 
 	c__ __  "Variable a = " __  a __  e..
 	c__ __  "Variable a = " __  b __  e..

@@ -9,10 +9,10 @@ std::mutex console_m;
 
 std::condition_variable cv;
 std::mutex cv_m;
-std::queue<std::string> msgs;
+std::queue<std::s..> msgs;
 std::atomic_bo.. quit;
 
-void worker(std::queue<std::string>& q)
+void worker(std::queue<std::s..>& q)
 {
 //    console_m.lock();
 //    std::cerr << std::this_thread::get_id() << " starting... " << std::endl;
@@ -32,9 +32,9 @@ void worker(std::queue<std::string>& q)
 //        console_m.unlock();
 
         __ (!q.empty()) {
-            auto msg = std::move(q.front());
+            auto msg _ std::move(q.front());
             q.pop();
-            auto s = q.size();
+            auto s _ q.size();
             lk.unlock();
 
             console_m.lock();
@@ -65,7 +65,7 @@ in. main()
 
 //    std::this_thread::sleep_for(2s);
     std::cerr __  "before quit" __  std::e..
-    quit = true;
+    quit _ true;
     cv.notify_all();
 
     t1.join();

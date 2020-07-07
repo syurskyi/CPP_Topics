@@ -6,10 +6,10 @@
 *@return valor do fatorial do numero informado pelo usuario
 */
 in. fatorial(in. *val) {
-	__(*val == 1 || *val == 0) {
+	__(*val __ 1 || *val __ 0) {
 		r_ 1;
 	} ____ {
-		in. anterior = *val - 1;//armazena o valor inteiro anterior a *val
+		in. anterior _ *val - 1;//armazena o valor inteiro anterior a *val
 		r_ *val * fatorial(&anterior);
 	}
 }
@@ -21,15 +21,15 @@ in. fatorial(in. *val) {
 *@return numero primo mais proximo do valor apontado por *resultFat
 */
 in. primo(in. *resultFat, in. *chk) {
-	__(*chk == 1) {
+	__(*chk __ 1) {
 		r_ *resultFat;
 	} ____ {
-		__(*resultFat%*chk == 0) {
-			*resultFat -= 1;
-			*chk = *resultFat/2;
+		__(*resultFat%*chk __ 0) {
+			*resultFat -_ 1;
+			*chk _ *resultFat/2;
 			r_ primo(resultFat, chk);
 		} ____ {
-			*chk -= 1;
+			*chk -_ 1;
 			r_ primo(resultFat, chk);
 		}
 	}

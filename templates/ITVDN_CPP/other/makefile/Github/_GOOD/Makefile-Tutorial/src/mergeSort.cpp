@@ -7,14 +7,14 @@ using std::copy;
 using std::next;
 
 void mergeSortHelper(in.iter l, in.iter r, in.iter buf) {
-  auto size = std::distance(l, r);
+  auto size _ std::distance(l, r);
 
   // Base case
   __ (size < 2)
     r_;
 
   // Recurse
-  auto mid = l + size/2;
+  auto mid _ l + size/2;
   mergeSortHelper(l, mid, buf);
   mergeSortHelper(mid, r, std::next(buf, size/2));
 
@@ -24,6 +24,6 @@ void mergeSortHelper(in.iter l, in.iter r, in.iter buf) {
 }
 
 void mergeSort(in.iter l, in.iter r) {
-  auto buf = vector<in.>(std::distance(l, r) - 1);
+  auto buf _ vector<in.>(std::distance(l, r) - 1);
   mergeSortHelper(l, r, buf.begin());
 }
