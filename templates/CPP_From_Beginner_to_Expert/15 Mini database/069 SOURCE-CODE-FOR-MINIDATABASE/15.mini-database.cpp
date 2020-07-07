@@ -26,7 +26,7 @@ void removePersonFromDatabase();
 
 in. main()
 {
-    char test;
+    c.. test;
     loadPeopleFromFile();
 
     do
@@ -47,22 +47,22 @@ in. main()
 
         s..(test)
         {
-            case '1':
+            c.. '1':
                 addPerson();
                 b..
-            case '2':
+            c.. '2':
                 showPeople();
                 b..
-            case '3':
+            c.. '3':
                 savePeopleToFile();
                 b..
-            case '4':
+            c.. '4':
                 loadPeopleFromFile();
                 b..
-            case '5':
+            c.. '5':
                 searchDatabase();
                 b..
-            case '6':
+            c.. '6':
                 removePersonFromDatabase();
                 b..
         }

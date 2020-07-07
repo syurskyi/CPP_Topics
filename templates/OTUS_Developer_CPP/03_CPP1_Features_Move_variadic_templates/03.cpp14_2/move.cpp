@@ -26,7 +26,7 @@ void bar(T &&t)
     baz(std::forward<T>(t));
 }
 
-in. main(in., char *[]) {
+in. main(in., c.. *[]) {
     xray x("x");
 
     // xray x("x");

@@ -1,4 +1,4 @@
-in. main(in., char* [])
+in. main(in., c..* [])
 {
 //    volatile
     in. a;

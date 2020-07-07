@@ -82,16 +82,16 @@ class LocalFactory : public EnvironmentFactory {
     }
 };
 
-in. main(in. argc, char* [])
+in. main(in. argc, c..* [])
 {
     auto environment _ argc ? Env::cloud : Env::local;
 
     EnvironmentFactory* factory;
     s.. (environment) {
-    case Env::cloud:factory _ new CloudFactory();
+    c.. Env::cloud:factory _ new CloudFactory();
         b..
 
-    case Env::local:factory _ new LocalFactory();
+    c.. Env::local:factory _ new LocalFactory();
         b..
     }
 

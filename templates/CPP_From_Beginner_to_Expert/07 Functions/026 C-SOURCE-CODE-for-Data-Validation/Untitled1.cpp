@@ -15,7 +15,7 @@ bo.. isValid();
 in. main()
 {
     in. choice;
-    char cont;
+    c.. cont;
     do
     {
         system("cls"); //clear screen = cls
@@ -71,12 +71,12 @@ void menuDecision(in. choice)
             do { c__ __ a; } while(!isValid("The data is wrong, please type it again:"));
             areaSquare(a);
             b..
-        case 3:
+        c.. 3:
             c__ __  "Enter the width and height of a rectangle: " __  e..
             do { c__ __ a __ b; } while(!isValid("The data is wrong, please type it again:"));
             areaRectangle(a, b);
             b..
-        case 4:
+        c.. 4:
             c__ __  "Enter the base and height of a triangle: " __  e..
             do { c__ __ a __ h; } while(!isValid("The data is wrong, please type it again:"));
             areaTriangle(a, h);

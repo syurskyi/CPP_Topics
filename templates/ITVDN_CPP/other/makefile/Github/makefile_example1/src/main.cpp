@@ -10,7 +10,7 @@
 
 ? |i..
 
-extern "C" in. main( in. argc, char** argv )
+extern "C" in. main( in. argc, c..** argv )
 {
 	tcOperation lcOperation( argc, argv );
 

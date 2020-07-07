@@ -41,7 +41,7 @@ public:
     }
 };
 
-in. main(in., char *[])
+in. main(in., c.. *[])
 {
     ILogger *l _ new LevelLogger(0, new Logger);
 

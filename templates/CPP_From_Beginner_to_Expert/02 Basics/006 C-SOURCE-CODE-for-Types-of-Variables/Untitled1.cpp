@@ -23,7 +23,7 @@ main()
     c__ __  t2 __  e..
     c__ __  t3 __  e..
 
-    char t4; //character
+    c.. t4; //character
 
     t4 _ 'a';
     c__ __  t4 __  e..

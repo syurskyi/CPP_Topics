@@ -27,7 +27,7 @@ public:
     }
 };
 
-in. main(in., char *[])
+in. main(in., c.. *[])
 {
     ImageResizer rs;
 

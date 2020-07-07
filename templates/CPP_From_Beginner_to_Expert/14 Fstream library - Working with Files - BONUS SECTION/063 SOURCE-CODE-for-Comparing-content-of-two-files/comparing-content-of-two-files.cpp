@@ -47,8 +47,8 @@ bo.. areFilesEqual(fstream *a, fstream *b)
         ____
             BUFFER_SIZE _ fileSize1;
 
-        char *file1buffer _ new char[BUFFER_SIZE];
-        char *file2buffer _ new char[BUFFER_SIZE];
+        c.. *file1buffer _ new c..[BUFFER_SIZE];
+        c.. *file2buffer _ new c..[BUFFER_SIZE];
 
         do
         {

@@ -12,14 +12,14 @@ u.. s..
 bo.. accept()
 {
 	c__ __  "Do you want to proceed (y or n)?\n";
-	char answer _ 0;
+	c.. answer _ 0;
 	c__ __ answer;
 
 	s.. (answer)
 	{
-		case 'y':
+		c.. 'y':
 			r_ true;
-		case 'n':
+		c.. 'n':
 			exit(EXIT_FAILURE);;
 		default:
 			c__ __  "Sorry I don't understand.  I'll assume the answer is 'yes'.\n";
@@ -28,7 +28,7 @@ bo.. accept()
 	exit(EXIT_FAILURE);;
 }
  
-in. main(in. argc, char *argv[])
+in. main(in. argc, c.. *argv[])
 {
     std::c__ __  "Hello world!\n";
 

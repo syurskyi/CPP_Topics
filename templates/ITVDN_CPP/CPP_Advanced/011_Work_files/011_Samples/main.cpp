@@ -13,7 +13,7 @@ u.. s..
 s.. readFile1( const s..& fileName )
 {
     ifstream f( fileName.c_str() );
-    r_ s..( std::istreambuf_iterator< char >( f ), std::istreambuf_iterator< char >() );
+    r_ s..( std::istreambuf_iterator< c.. >( f ), std::istreambuf_iterator< c.. >() );
 }
 
 s.. readFile2( const s..& fileName )
@@ -23,7 +23,7 @@ s.. readFile2( const s..& fileName )
     ifstream::pos_type fileSize _ ifs.tellg();
     ifs.seekg( 0, i.. beg );
 
-    vector< char > bytes( fileSize );
+    vector< c.. > bytes( fileSize );
     ifs.read( &bytes[ 0 ], fileSize );
 
     r_ s..( &bytes[ 0 ], fileSize );
@@ -44,7 +44,7 @@ s.. readFile4( const std::s..& filename )
     s.. data;
     data.reserve( file.tellg() );
     file.seekg( 0, i.. beg );
-    data.append( istreambuf_iterator< char >( file.rdbuf() ), istreambuf_iterator< char >() );
+    data.append( istreambuf_iterator< c.. >( file.rdbuf() ), istreambuf_iterator< c.. >() );
     r_ data;
 }
 
@@ -80,8 +80,8 @@ in. main()
     in_stream.open( "lesson_files" );
 
     std::s.. result;
-    char char_result;
-    char res[ 16 ];
+    c.. char_result;
+    c.. res[ 16 ];
 
     c__ __  "start" __  e..
 

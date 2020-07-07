@@ -54,7 +54,7 @@ void Tariff::apply()
     }
 }
 
-in. main(in., char* [])
+in. main(in., c..* [])
 {
     auto builder _ TariffBuilder();
     builder.add_discount(1000, 10);

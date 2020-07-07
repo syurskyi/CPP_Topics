@@ -3,7 +3,7 @@
 
 u.. s..
 
-void chooseOperation(char);
+void chooseOperation(c..);
 void addition();
 void subtraction();
 void multiplication();
@@ -15,7 +15,7 @@ in. main ()
 {
     while (true)
     {
-        char choice;
+        c.. choice;
 
         c__ __  "What mathematical operation you want to use ?" __  e..
         c__ __  "Type: '+' - addition, '-' - subtraction, '*' - multiplication, '/' - division, '^' - exponentiation: ";
@@ -27,23 +27,23 @@ in. main ()
     r_ 0;
 }
 
-void chooseOperation(char choice)
+void chooseOperation(c.. choice)
 {
     s..(choice)
     {
-        case '+':
+        c.. '+':
             addition();
             b..
-        case '-':
+        c.. '-':
             subtraction();
             b..
-        case '*':
+        c.. '*':
             multiplication();
             b..
-        case '/':
+        c.. '/':
             division();
             b..
-        case '^':
+        c.. '^':
             exponentiation();
             b..
     }

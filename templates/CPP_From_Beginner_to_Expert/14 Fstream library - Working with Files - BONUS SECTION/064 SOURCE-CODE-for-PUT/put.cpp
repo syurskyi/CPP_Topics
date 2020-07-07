@@ -22,7 +22,7 @@ in. main()
     file.open("test.txt", i.. out | i.. binary);
     __ (file.is_open())
     {
-        char c;
+        c.. c;
         do
         {
             c _ c__.g..

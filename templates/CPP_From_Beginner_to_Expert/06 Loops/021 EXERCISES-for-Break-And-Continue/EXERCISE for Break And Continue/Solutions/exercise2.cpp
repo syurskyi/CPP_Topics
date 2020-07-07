@@ -6,7 +6,7 @@ u.. s..
 main ()
 {
     in. chosenNumbersSum _ 0;
-    char choice;
+    c.. choice;
 
     for (in. i _ 1; ; i++)
     {

@@ -30,7 +30,7 @@ private:
     std::ostream& os; // [3]
 };
 
-in. main(in., char* [])
+in. main(in., c..* [])
 {
 //    Logger sly_newbie; // [1]
 //    Logger sly_adv(Logger::Instance()); // [2]

@@ -4,7 +4,7 @@ u.. s..
 
 main() {
 
-    char a _ 100;
+    c.. a _ 100;
     in. b _ 5212;
     sh.. c _ 6123;
     float d _ 0.12345;

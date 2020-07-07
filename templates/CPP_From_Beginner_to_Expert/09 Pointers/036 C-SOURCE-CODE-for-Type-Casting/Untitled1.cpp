@@ -22,7 +22,7 @@ in. main()
     c__ __   static_cast<in.>(var) __  e.. //explict way in C++
 
 
-    char ch;
+    c.. ch;
 
     c__ __ ch;
 

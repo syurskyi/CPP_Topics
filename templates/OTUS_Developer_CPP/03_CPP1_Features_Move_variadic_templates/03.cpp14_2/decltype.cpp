@@ -20,7 +20,7 @@ auto foo()
     r_ y;
 }
 
-in. main(in., char *[])
+in. main(in., c.. *[])
 {
 	auto j _ foo();
 	j _ 1;

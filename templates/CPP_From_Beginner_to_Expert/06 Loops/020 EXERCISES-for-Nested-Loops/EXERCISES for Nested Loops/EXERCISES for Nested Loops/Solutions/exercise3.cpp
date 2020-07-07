@@ -5,7 +5,7 @@ u.. s..
 
 main ()
 {
-    char coordinates[3][3];
+    c.. coordinates[3][3];
     in. startingValue _ '1';
     in. player _ 2;
 

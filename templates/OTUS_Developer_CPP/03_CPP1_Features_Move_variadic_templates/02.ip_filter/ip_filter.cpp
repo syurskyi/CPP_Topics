@@ -10,7 +10,7 @@
 // ("11.", '.') -> ["11", ""]
 // (".11", '.') -> ["", "11"]
 // ("11.22", '.') -> ["11", "22"]
-std::vector<std::s..> split(const std::s.. &str, char d)
+std::vector<std::s..> split(const std::s.. &str, c.. d)
 {
     std::vector<std::s..> r;
 
@@ -29,7 +29,7 @@ std::vector<std::s..> split(const std::s.. &str, char d)
     r_ r;
 }
 
-in. main(in. argc, char const *argv[])
+in. main(in. argc, c.. const *argv[])
 {
     try
     {

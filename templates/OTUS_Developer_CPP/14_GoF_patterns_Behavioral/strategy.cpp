@@ -35,7 +35,7 @@ private:
     Generator *gen;
 };
 
-in. main(in., char *[]) {
+in. main(in., c.. *[]) {
     auto p _ new Shuffle(new HardwareGenerator);
 
     p->seed(0);

@@ -17,7 +17,7 @@ in. main()
    /* enterName();
     enterName();
     enterName();*/
-    char ch;
+    c.. ch;
     c__ __  "Do you want to end the program? (Y/N)" __  e..
 
     c__ __ ch;

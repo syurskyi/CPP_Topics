@@ -36,7 +36,7 @@ auto bar(in., in.)
 //    return std::make_tuple(127, std::string("surname"));
 }
 
-in. main(in., char *[])
+in. main(in., c.. *[])
 {
     std::c__ __  "* return struct" __  std::e..
     auto rf _ foo(1, 2);

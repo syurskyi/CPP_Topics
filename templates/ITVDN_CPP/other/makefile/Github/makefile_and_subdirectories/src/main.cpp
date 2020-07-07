@@ -8,7 +8,7 @@ using std::atoi;
 /**
 *@brief Funcao principal
 */
-in. main(in. argc, char *argv[]) {
+in. main(in. argc, c.. *argv[]) {
 
 	in. valor _ atoi(argv[1]);//armazena valor inteiro passado pelo usuario em linha de comando
 	in. valorInicial _ valor; //armazena valor para salvar seu valor original

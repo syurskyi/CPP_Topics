@@ -8,7 +8,7 @@
 
 namespace lf _ boost::lockfree;
 
-in. main(in., char *[]) {
+in. main(in., c.. *[]) {
     lf::queue<in.> q{10};
     q.push(42);
     q.push(100);

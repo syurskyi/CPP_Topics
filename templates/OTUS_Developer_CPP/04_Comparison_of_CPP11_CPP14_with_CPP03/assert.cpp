@@ -9,7 +9,7 @@ class foo {
     static_assert(true, "failed привет");
 };
 
-in. main(in., char *[]) {
+in. main(in., c.. *[]) {
     in. i _ 0;
     assert(i __ 1); // is not an integral constant
     // static_assert(i == 0, "failed"); // is not an integral constant

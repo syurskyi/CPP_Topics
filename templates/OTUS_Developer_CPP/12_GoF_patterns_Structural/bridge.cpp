@@ -52,7 +52,7 @@ class AnalogClock : public Clock
     }
 };
 
-in. main(in., char *[])
+in. main(in., c.. *[])
 {
     Clock *c _ new DigitalClock;
     c->s _ new in.ernetClockSignal;

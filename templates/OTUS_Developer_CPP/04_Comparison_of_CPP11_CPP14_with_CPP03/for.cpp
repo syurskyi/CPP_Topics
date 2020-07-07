@@ -4,7 +4,7 @@
 ? <vector>
 
 
-in. main(in., char *[]) {
+in. main(in., c.. *[]) {
     in. a[10];
     for(auto i: a)
     {

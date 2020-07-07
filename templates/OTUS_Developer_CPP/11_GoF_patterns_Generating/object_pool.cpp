@@ -50,7 +50,7 @@ private:
     std::vector<PgConnectionBlock> pool;
 };
 
-in. main(in., char* [])
+in. main(in., c..* [])
 {
     PgConnectionPool pool;
 

@@ -11,38 +11,38 @@
 
 TEST( tcOperation, Add )
 {
-	char* args1[] _ { "", "3", "+", "4" };
+	c..* args1[] _ { "", "3", "+", "4" };
 	tcOperation lcOp1( 4, args1 );
 	EXPECT_DOUBLE_EQ( 7, lcOp1.Execute() );
 
-	char* args2[] _ { "", "9", "+", "10" };
+	c..* args2[] _ { "", "9", "+", "10" };
 	tcOperation lcOp2( 4, args2 );
 	EXPECT_DOUBLE_EQ( 19, lcOp2.Execute() );
 
-	char* args3[] _ { "", "9.5", "+", "10.1" };
+	c..* args3[] _ { "", "9.5", "+", "10.1" };
 	tcOperation lcOp3( 4, args3 );
 	EXPECT_DOUBLE_EQ( 19.6, lcOp3.Execute() );
 
-	char* args4[] _ { "", "9.57", "+", "10.12" };
+	c..* args4[] _ { "", "9.57", "+", "10.12" };
 	tcOperation lcOp4( 4, args4 );
 	EXPECT_DOUBLE_EQ( 19.69, lcOp4.Execute() );
 }
 
 TEST( tcOperation, Subtract )
 {
-	char* args1[] _ { "", "3", "-", "4" };
+	c..* args1[] _ { "", "3", "-", "4" };
 	tcOperation lcOp1( 4, args1 );
 	EXPECT_DOUBLE_EQ( -1, lcOp1.Execute() );
 
-	char* args2[] _ { "", "19", "-", "10" };
+	c..* args2[] _ { "", "19", "-", "10" };
 	tcOperation lcOp2( 4, args2 );
 	EXPECT_DOUBLE_EQ( 9, lcOp2.Execute() );
 
-	char* args3[] _ { "", "19.5", "-", "10.1" };
+	c..* args3[] _ { "", "19.5", "-", "10.1" };
 	tcOperation lcOp3( 4, args3 );
 	EXPECT_DOUBLE_EQ( 9.4, lcOp3.Execute() );
 
-	char* args4[] _ { "", "29.57", "-", "10.12" };
+	c..* args4[] _ { "", "29.57", "-", "10.12" };
 	tcOperation lcOp4( 4, args4 );
 	EXPECT_DOUBLE_EQ( 19.45, lcOp4.Execute() );
 }

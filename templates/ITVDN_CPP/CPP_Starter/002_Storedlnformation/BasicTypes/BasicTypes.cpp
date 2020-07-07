@@ -97,7 +97,7 @@ in. main()
 	#pragma region
 	//----------------- 16 bit -----------------
 	
-	char u _ 'A';
+	c.. u _ 'A';
 
     std::c__ __  "Char" __  std::e..
     c__ __  u __  e..

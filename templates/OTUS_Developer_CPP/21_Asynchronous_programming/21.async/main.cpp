@@ -11,7 +11,7 @@ class App : public Handler {
 
     void event(Event &ev) override {
         s.. (ev.code) {
-            case EventCode::start:
+            c.. EventCode::start:
                 start();
                 b..
 
@@ -22,7 +22,7 @@ class App : public Handler {
 };
 
 
-in. main(in., char *[]) {
+in. main(in., c.. *[]) {
     EventLoop loop;
 
     App app;

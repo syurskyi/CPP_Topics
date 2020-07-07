@@ -1,7 +1,7 @@
 ? |i..
 ? "functions.h"
 
-in. main(in. argc, char **argv) {
+in. main(in. argc, c.. **argv) {
     prin._hello();
     std::c__ __  std::e..
     std::c__ __  "main function" __  std::e..

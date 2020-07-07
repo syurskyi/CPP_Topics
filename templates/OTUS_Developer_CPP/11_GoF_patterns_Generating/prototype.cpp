@@ -34,7 +34,7 @@ class UdpConnector : public IConnector {
     }
 };
 
-in. main(in., char* [])
+in. main(in., c..* [])
 {
     IConnector* primary _ new TcpConnector{};
 

@@ -19,8 +19,8 @@ in. main()
 
     __ (file.is_open())
     {
-        char first, second;
-        char buffer[50];
+        c.. first, second;
+        c.. buffer[50];
 
         c__ __ buffer;
 

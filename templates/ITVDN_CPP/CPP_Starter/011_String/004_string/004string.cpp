@@ -5,7 +5,7 @@
 u.. s..
 in. main()
 {
-	char name[15];
+	c.. name[15];
 	c__ __  "What's your name?" __  e..
 	
 	c__ __ name;
@@ -13,7 +13,7 @@ in. main()
 	c__ __  "Your name is " __  name __  e..
 
 	c__ __  "Your name has " __  strlen(name) __  " symbols" __  e..
-	c__ __  "And take " __  strlen(name) * sizeof(char) __  " bytes" __  e..
+	c__ __  "And take " __  strlen(name) * sizeof(c..) __  " bytes" __  e..
 
 	c__ __  "--------------------------------------" __  e..
 

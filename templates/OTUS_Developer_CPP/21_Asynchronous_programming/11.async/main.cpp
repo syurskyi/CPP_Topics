@@ -2,7 +2,7 @@
 
 ? "async.h"
 
-in. main(in., char *[]) {
+in. main(in., c.. *[]) {
     std::size_t bulk _ 5;
     auto h _ async::connect(bulk);
     auto h2 _ async::connect(bulk);

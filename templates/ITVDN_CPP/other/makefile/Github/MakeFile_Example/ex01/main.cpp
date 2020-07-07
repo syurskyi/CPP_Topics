@@ -9,7 +9,7 @@ u.. s..
 
 ? "fun.hpp"
 //================================================================
-in. main(in. argc, char const *argv[]){
+in. main(in. argc, c.. const *argv[]){
     c__ __  "# Main()" __  e..
     fun();
     r_ 0;

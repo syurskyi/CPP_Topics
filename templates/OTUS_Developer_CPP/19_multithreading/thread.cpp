@@ -38,7 +38,7 @@ std::s.. foo(dict_t& d)
     r_ std::s..{"ok"};
 }
 
-in. main(in. argc, char** argv)
+in. main(in. argc, c..** argv)
 {
     try {
         dict_t d, d2;

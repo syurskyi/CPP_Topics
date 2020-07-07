@@ -3,11 +3,11 @@
 
 u.. s..
 
-void prin._square(char arr[][50], in. size);
+void prin._square(c.. arr[][50], in. size);
 
 in. main()
 {
-	char arr[10][50];
+	c.. arr[10][50];
 	
 	for (in. i _ 0; i < 10; i++)
 	{
@@ -23,7 +23,7 @@ in. main()
 	r_ 0;
 }
 
-void prin._square(char arr[][50], in. size)
+void prin._square(c.. arr[][50], in. size)
 {
 	for (in. i _ 0; i < size; i++)
 	{

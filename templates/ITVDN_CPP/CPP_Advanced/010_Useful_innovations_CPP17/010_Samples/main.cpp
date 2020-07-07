@@ -144,7 +144,7 @@ void now()
 void example()
 {
     early< in., 10 >();
-    early< char, 'H' >();
+    early< c.., 'H' >();
     early< long, 100l >();
 
     now< 10 >();
@@ -268,7 +268,7 @@ void switch_example( in. error )
 {
     s.. ( in. code _ error; code )
     {
-        case 0:
+        c.. 0:
         {
             c__ __  "Ok!" __  e..
             b..
@@ -349,7 +349,7 @@ void f_fallthrough()
     in. i _ rand() % 10;
     s.. ( i )
     {
-        case 0:
+        c.. 0:
             c__ __  "0" __  e..
             b..
         c__:
@@ -358,11 +358,11 @@ void f_fallthrough()
         c..
             c__ __  "2" __  e..
             b..
-        case 3:
+        c.. 3:
             c__ __  "some doing" __  e..
             c__ __  "3" __  e..
             [[fallthrough]]; // no warning
-        case 4:
+        c.. 4:
             c__ __  "4" __  e..
     }
 }
@@ -392,7 +392,7 @@ void example()
     c__ __  std::any_cast< s.. >( hm ) __  e..
 
     hm _ "hello 2";
-    c__ __  std::any_cast< const char* >( hm ) __  e..
+    c__ __  std::any_cast< const c..* >( hm ) __  e..
 }
 }
 
@@ -428,7 +428,7 @@ void example()
 
     getString( large );
     getString( "0123456789-123456789-123456789-123456789" );
-    const char message[] _ "0123456789-123456789-123456789-123456789";
+    const c.. message[] _ "0123456789-123456789-123456789-123456789";
     getString( message );
 
     std::c__ __  std::e..
@@ -473,7 +473,7 @@ namespace std_variant
 {
 void example()
 {
-    variant< in., char, s.. > v;
+    variant< in., c.., s.. > v;
 
     v _ 42;
     c__ __  get< in. >( v ) __  " " __  v.index() __  e..

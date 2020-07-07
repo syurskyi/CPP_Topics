@@ -4,7 +4,7 @@
 u.. s..
 in. main ()
 {
-    char c _ c__.peek();
+    c.. c _ c__.peek();
 
 
     __ (c > '0' && c < '9')

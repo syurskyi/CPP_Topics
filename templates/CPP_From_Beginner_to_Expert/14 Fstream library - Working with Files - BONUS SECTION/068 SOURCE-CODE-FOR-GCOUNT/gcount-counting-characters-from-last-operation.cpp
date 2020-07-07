@@ -15,7 +15,7 @@ in. main()
 
     __ (file.is_open())
     {
-        char buffer[250];
+        c.. buffer[250];
         do
         {
             file.getline(buffer, 250);

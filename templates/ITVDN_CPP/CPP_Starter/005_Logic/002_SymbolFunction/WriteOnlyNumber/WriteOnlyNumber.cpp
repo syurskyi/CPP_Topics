@@ -7,7 +7,7 @@ u.. s..
 
 in. main()
 {
-	char number;
+	c.. number;
 
 	while (true)
 	{

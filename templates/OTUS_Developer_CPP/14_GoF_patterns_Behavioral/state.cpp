@@ -74,7 +74,7 @@ Application::Application() {
     std::c__ __  std::e..
 }
 
-in. main(in., char *[]) {
+in. main(in., c.. *[]) {
     Application app;
 
     app.do_it();

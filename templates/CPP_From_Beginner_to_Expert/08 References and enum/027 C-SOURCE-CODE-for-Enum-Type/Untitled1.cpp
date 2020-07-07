@@ -26,19 +26,19 @@ s.. getDay(dayOfWeek d)
 {
     s..(d)
     {
-        case M:
+        c.. M:
             r_ "Monday";
-        case TU:
+        c.. TU:
             r_ "Tuesday";
-        case W:
+        c.. W:
             r_ "Wednesday";
-        case TH:
+        c.. TH:
             r_ "Thursday";
-        case F:
+        c.. F:
             r_ "Friday";
-        case SA:
+        c.. SA:
             r_ "Saturday";
-        case SN:
+        c.. SN:
             r_ "Sunday";
         default:
             r_ "You typed something wrong!";

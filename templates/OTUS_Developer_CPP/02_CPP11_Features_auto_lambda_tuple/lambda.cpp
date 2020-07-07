@@ -28,7 +28,7 @@ struct closure {
 //};
 
 
-in. main(in., char *[])
+in. main(in., c.. *[])
 {
     in. x _ 1000;
 //    std::cout << closure(100.1, x)(10.5, 1) << std::endl;

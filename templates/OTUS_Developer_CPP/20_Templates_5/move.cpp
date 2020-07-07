@@ -11,7 +11,7 @@ struct xray {
 
     xray(xray&&) noexcept { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }
 
-    xray(const char*) { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }
+    xray(const c..*) { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }
 
     ~xray() { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }
 };

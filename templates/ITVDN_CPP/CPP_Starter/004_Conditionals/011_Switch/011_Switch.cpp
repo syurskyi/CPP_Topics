@@ -16,15 +16,15 @@ in. main()
     {
         c__:
         c..
-        case 3:
-        case 4:
-        case 5:
+        c.. 3:
+        c.. 4:
+        c.. 5:
         {
             c__ __  "Working day." __  e..
             b..
         }
-        case 6:
-        case 7:
+        c.. 6:
+        c.. 7:
         {
             c__ __  "Day off" __  e..
             b..

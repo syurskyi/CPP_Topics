@@ -1,12 +1,12 @@
 ? |i..
 
 
-in. main(in., char *[]) {
+in. main(in., c.. *[]) {
     in. i _ NULL; // warning
-    char *p _ NULL;
+    c.. *p _ NULL;
 
 //    int is = nullptr; // error
-    char *ps _ nullptr;
+    c.. *ps _ nullptr;
 
     r_ 0;
 }

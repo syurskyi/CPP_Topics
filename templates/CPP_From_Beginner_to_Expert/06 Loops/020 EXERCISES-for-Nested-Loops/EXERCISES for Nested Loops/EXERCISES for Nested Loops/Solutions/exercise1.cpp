@@ -4,8 +4,8 @@ u.. s..
 
 main ()
 {
-    char coordinates[3][3];
-    char value _ '1';
+    c.. coordinates[3][3];
+    c.. value _ '1';
 
     for (in. i _ 0; i < 3; i++)
     {

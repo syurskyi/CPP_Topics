@@ -7,8 +7,8 @@ u.. s..
 
 in. main()
 {
-	char str1[20] _ "Hello";
-	char str2[] _ " world!";
+	c.. str1[20] _ "Hello";
+	c.. str2[] _ " world!";
 	// функция производит конкатенацию строк, записывая второй параметр в первый.
 	strcat(str1, str2);
 

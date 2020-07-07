@@ -30,7 +30,7 @@ class TestStorage : public IStorage {
     }
 };
 
-in. main(in., char* [])
+in. main(in., c..* [])
 {
     IStorage* s _ new TestStorage;
 

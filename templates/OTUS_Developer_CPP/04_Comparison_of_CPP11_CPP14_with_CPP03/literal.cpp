@@ -14,13 +14,13 @@ std::s.. operator""_rate(long d..)
     r_ "sorok dva";
 }
 
-std::s.. operator""_english(const char *, size_t)
+std::s.. operator""_english(const c.. *, size_t)
 {
     std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     r_ "sorok dva";
 }
 
-in. main(in., char *[]) {
+in. main(in., c.. *[]) {
     auto a _ 42_kg;
     std::c__ __  a __  std::e..
 

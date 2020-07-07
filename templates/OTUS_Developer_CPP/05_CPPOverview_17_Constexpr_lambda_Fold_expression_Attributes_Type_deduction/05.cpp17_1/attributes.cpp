@@ -12,18 +12,18 @@ in. stub() {
     r_ 42;
 }
 
-in. delta2secs(in. d, char m) {
+in. delta2secs(in. d, c.. m) {
     s.. (m) {
-        case 'w':
+        c.. 'w':
             d *_ 7.0;
             [[fallthrough]];
-        case 'd':
+        c.. 'd':
             d *_ 24.0;
-        case 'h':
+        c.. 'h':
             d *_ 60.0;
-        case 'm':
+        c.. 'm':
             d *_ 60.0;
-        case 's':
+        c.. 's':
             b..
         default:
             d _ -1;
@@ -36,7 +36,7 @@ in. last_error_code() {
     r_ 2;
 }
 
-in. main([[maybe_unused]] in. argc, char **) {
+in. main([[maybe_unused]] in. argc, c.. **) {
     stub();
 //    stub2();
 

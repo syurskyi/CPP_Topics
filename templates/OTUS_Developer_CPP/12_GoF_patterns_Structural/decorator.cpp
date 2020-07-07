@@ -30,7 +30,7 @@ public:
     ZipFile(File *file_) : file(file_) {};
 };
 
-in. main(in., char *[])
+in. main(in., c.. *[])
 {
     File *c _ new RawFile;
     c->write();

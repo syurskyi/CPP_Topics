@@ -46,16 +46,16 @@ class PostgresStorage : public IStorage {
     }
 };
 
-in. main(in. argc, char* [])
+in. main(in. argc, c..* [])
 {
     auto environment _ argc ? Storage::postgres : Storage::mysql;
 
     IStorage* storage;
     s.. (environment) {
-    case Storage::mysql:storage _ new MysqlStorage();
+    c.. Storage::mysql:storage _ new MysqlStorage();
         b..
 
-    case Storage::postgres:storage _ new PostgresStorage();
+    c.. Storage::postgres:storage _ new PostgresStorage();
         b..
     }
 

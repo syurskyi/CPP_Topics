@@ -98,7 +98,7 @@ public:
     }
 };
 
-in. main(in., char* [])
+in. main(in., c..* [])
 {
     Document doc;
 

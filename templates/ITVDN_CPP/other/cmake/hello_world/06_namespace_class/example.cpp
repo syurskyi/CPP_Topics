@@ -21,7 +21,7 @@ namespace ns_foo
 }
 
 
-in. main(in. argc, char *argv[])
+in. main(in. argc, c.. *argv[])
 {
     ns_foo::Superhero iron_man;
     iron_man.display();

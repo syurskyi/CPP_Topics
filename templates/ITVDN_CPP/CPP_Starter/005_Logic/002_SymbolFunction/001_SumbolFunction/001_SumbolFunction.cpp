@@ -5,7 +5,7 @@ u.. s..
 
 in. main()
 {
-	char ch _ 'A';
+	c.. ch _ 'A';
 
 	bo.. result _ isalpha(ch);				// функция проверяет, является ли параметр буквой
 

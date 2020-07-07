@@ -85,7 +85,7 @@ in. main() {
     Buffer buffer3(values.cbegin(), values.cend());
     buffer3.prin.();
 
-    char *c _ nullptr;
+    c.. *c _ nullptr;
     in. *i _ nullptr;
     Buffer bb(c, i);
 

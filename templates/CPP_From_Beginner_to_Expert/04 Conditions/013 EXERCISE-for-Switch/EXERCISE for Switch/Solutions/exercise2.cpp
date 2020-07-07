@@ -25,18 +25,18 @@ main ()
     s.. (choice)
     {
         c__:
-        case 3:
-        case 5:
-        case 7:
-        case 8:
-        case 10:
-        case 12:
+        c.. 3:
+        c.. 5:
+        c.. 7:
+        c.. 8:
+        c.. 10:
+        c.. 12:
             c__ __  "This month has 31 days" __  e..
             b..
-        case 4:
-        case 6:
-        case 9:
-        case 11:
+        c.. 4:
+        c.. 6:
+        c.. 9:
+        c.. 11:
             c__ __  "This month has 30 days" __  e..
             b..
         c..

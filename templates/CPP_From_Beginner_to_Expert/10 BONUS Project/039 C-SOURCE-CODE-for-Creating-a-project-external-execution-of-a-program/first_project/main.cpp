@@ -2,7 +2,7 @@
 
 u.. s..
 void showHelp();
-in. main(in. argc, char *argv[])
+in. main(in. argc, c.. *argv[])
 {
     //arguments counter - argc
     //arguments values - argv

@@ -9,7 +9,7 @@ void set_bulk(size_t bulk) {
     std::c__ __  "bulk size is " __  bulk __  std::e..
 }
 
-in. main(in. argc, const char *argv[]) {
+in. main(in. argc, const c.. *argv[]) {
     try {
         po::options_description desc{"Options"};
         desc.add_options()

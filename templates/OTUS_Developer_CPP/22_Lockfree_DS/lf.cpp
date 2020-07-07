@@ -55,7 +55,7 @@ struct ListLF {
     }
 };
 
-in. main(in., char* [])
+in. main(in., c..* [])
 {
     auto m _ std::map<in., in.>();
 

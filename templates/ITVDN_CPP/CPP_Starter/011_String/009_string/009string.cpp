@@ -7,8 +7,8 @@ u.. s..
 
 in. main()
 {
-	char color[10];
-	char copy_color[10];
+	c.. color[10];
+	c.. copy_color[10];
 	
 	c__ __  "Enter your favorite color: ";
 	c__.getline(color, 10);
@@ -19,7 +19,7 @@ in. main()
 	c__ __  "Copy color : " __  copy_color __  e..
 
 	//char str[10] = "dark gray";		
-	 char str[15] _ "light gray";  // Приводит к повреждению памяти!
+	 c.. str[15] _ "light gray";  // Приводит к повреждению памяти!
 
 	strcpy(copy_color, str);
 

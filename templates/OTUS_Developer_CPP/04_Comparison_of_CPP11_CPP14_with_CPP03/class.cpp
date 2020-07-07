@@ -21,6 +21,6 @@ class bar final : foo
 // {
 // }
 
-in. main(in., char *[]) {
+in. main(in., c.. *[]) {
     r_ 0;
 }

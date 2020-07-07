@@ -48,7 +48,7 @@ Directory* subdir()
     r_ d;
 }
 
-in. main(in., char *[])
+in. main(in., c.. *[])
 {
     Directory* root _ new Directory;
     root->add_object(subdir());

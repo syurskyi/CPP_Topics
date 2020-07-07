@@ -19,7 +19,7 @@ main()
     c__ __  "* - multiply" __  e..
     c__ __  "/ - divide" __  e..
 
-    char decision;
+    c.. decision;
 
     c__ __ decision;
 
@@ -27,16 +27,16 @@ main()
 
     s..(decision)
     {
-        case '+':
+        c.. '+':
             c__ __  var1 __  " + " __  var2 __  " = " __  (var1 + var2) __  e..
             b..
-        case '-':
+        c.. '-':
             c__ __  var1 __  " - " __  var2 __  " = " __  (var1 - var2) __  e..
             b..
-        case '*':
+        c.. '*':
             c__ __  var1 __  " * " __  var2 __  " = " __  (var1 * var2) __  e..
             b..
-        case '/':
+        c.. '/':
             __ (var2) //var2 != 0
                 c__ __  var1 __  " / " __  var2 __  " = " __  (var1 / var2) __  e..
             ____
@@ -47,7 +47,7 @@ main()
 
     }
 
-    char decision2;
+    c.. decision2;
 
     c__ __  "Do you want to continue that program? (Y/N)" __  e..
     c__ __ decision2;

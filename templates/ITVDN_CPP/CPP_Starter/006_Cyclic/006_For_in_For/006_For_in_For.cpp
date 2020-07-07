@@ -9,7 +9,7 @@ in. main()
 
 	in. lines _ 15;			// Количество строк
 	in. symbInLines _ 30;	// Количество символов в строке
-	char symbol _ '*';		// Символ
+	c.. symbol _ '*';		// Символ
 
 	for (in. i _ 1; i <_ lines; i++)
 	{

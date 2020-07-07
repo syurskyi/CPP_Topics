@@ -42,7 +42,7 @@ public:
     }
 };
 
-in. main(in., char* [])
+in. main(in., c..* [])
 {
     File/*OnDemand*/ file("test.txt");
 

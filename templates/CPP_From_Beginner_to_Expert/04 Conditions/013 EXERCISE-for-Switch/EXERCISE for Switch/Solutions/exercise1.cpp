@@ -24,16 +24,16 @@ main ()
         c..
             c__ __  "You have chosen a Water" __  e..
             b..
-        case 3:
+        c.. 3:
             c__ __  "You have chosen a Chocolate Bar" __  e..
             b..
-        case 4:
+        c.. 4:
             c__ __  "You have chosen a Snickers Bar" __  e..
             b..
-        case 5:
+        c.. 5:
             c__ __  "You have chosen a Mars Bar" __  e..
             b..
-        case 6:
+        c.. 6:
             c__ __  "You have chosen a Bud Light" __  e..
             b..
         default:

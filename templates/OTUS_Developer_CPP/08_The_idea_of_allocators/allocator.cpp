@@ -42,7 +42,7 @@ struct logging_allocator {
     }
 };
 
-in. main(in., char *[]) {
+in. main(in., c.. *[]) {
 
     auto v _ std::vector<in., logging_allocator<in.__{};
 //    v.reserve(5);

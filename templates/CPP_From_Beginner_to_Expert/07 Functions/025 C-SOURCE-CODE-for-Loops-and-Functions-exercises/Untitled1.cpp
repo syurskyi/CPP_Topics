@@ -11,7 +11,7 @@ d.. areaTriangle(d.., d..);
 in. main()
 {
     in. choice;
-    char cont;
+    c.. cont;
     do
     {
         system("cls"); //clear screen = cls
@@ -55,12 +55,12 @@ void menuDecision(in. choice)
             c__ __ a;
             areaSquare(a);
             b..
-        case 3:
+        c.. 3:
             c__ __  "Enter the width and height of a rectangle: " __  e..
             c__ __ a __ b;
             areaRectangle(a, b);
             b..
-        case 4:
+        c.. 4:
             c__ __  "Enter the base and height of a triangle: " __  e..
             c__ __ a __ h;
             areaTriangle(a, h);

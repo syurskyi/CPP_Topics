@@ -4,8 +4,8 @@
 u.. s..
 in. main()
 {
-	char name[20];
-	char color[10];
+	c.. name[20];
+	c.. color[10];
 
 	c__ __  "Enter you name: ";
 	c__ __ name;

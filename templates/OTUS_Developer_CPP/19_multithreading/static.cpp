@@ -16,7 +16,7 @@ void bar()
     }
 };
 
-in. main(in., char* [])
+in. main(in., c..* [])
 {
     foo();
     bar();

@@ -7,7 +7,7 @@ using vi _ std::vector<in.>;
 template<typename T>
 using v _ std::vector<T>;
 
-in. main(in., char *[]) {
+in. main(in., c.. *[]) {
     vi a;
     v<in.> b;
 

@@ -5,7 +5,7 @@ u.. s..
 in. main()
 {
 	// Проблема чтения текста с консоли
-	char name[20];
+	c.. name[20];
 	in. age _ 0;
 
 	c__ __  "Enter you name: ";

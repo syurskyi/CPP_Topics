@@ -36,7 +36,7 @@ public:
     }
 };
 
-in. main(in., char* [])
+in. main(in., c..* [])
 {
     Ops n;
     n.do_it();

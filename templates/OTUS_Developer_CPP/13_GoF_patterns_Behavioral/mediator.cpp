@@ -33,7 +33,7 @@ public:
     }
 };
 
-in. main(in., char* [])
+in. main(in., c..* [])
 {
     Perm perm;
 

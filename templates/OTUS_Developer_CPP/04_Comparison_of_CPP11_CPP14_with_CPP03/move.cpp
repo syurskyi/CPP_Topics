@@ -1,12 +1,12 @@
 ? |i..
 
 class Big {
-    char* buffer;
+    c..* buffer;
 public:
-    Big() : buffer(new char[1000]) {
+    Big() : buffer(new c..[1000]) {
         std::c__ __  __PRETTY_FUNCTION__ __  " // allocate 1G" __  std::e..
     }
-    Big(const Big &other) : buffer(new char[1000]) {
+    Big(const Big &other) : buffer(new c..[1000]) {
         std::c__ __  __PRETTY_FUNCTION__ __  " // duplicate 1G" __  std::e..
         std::memcpy(buffer, other.buffer, 1000);
     }
@@ -43,7 +43,7 @@ void foo(T &&t) {
     bar(std::forward<T>(t));
 }
 
-in. main(in., char *[]) {
+in. main(in., c.. *[]) {
     Big big, big2;
 
     std::c__ __  std::e..

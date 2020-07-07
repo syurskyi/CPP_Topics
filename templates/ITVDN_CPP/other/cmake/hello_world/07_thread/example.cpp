@@ -40,7 +40,7 @@ void foo(in. x)
 }
 
 
-in. main(in. argc, char *argv[])
+in. main(in. argc, c.. *argv[])
 {
     ns_foo::Superhero iron_man;
     std::thread t1(&iron_man::count, 5);

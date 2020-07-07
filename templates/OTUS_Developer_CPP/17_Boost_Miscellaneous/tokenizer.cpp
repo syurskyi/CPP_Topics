@@ -7,7 +7,7 @@
 in. main() {
     std::s.. ip _ "127.0.0.1:80";
     boost::tokenizer<boost::char_separator<char__
-            tokenizer{ip, boost::char_separator<char>{".:"}};
+            tokenizer{ip, boost::char_separator<c..>{".:"}};
 
     for (auto i: tokenizer) {
         std::c__ __  i __  std::e..

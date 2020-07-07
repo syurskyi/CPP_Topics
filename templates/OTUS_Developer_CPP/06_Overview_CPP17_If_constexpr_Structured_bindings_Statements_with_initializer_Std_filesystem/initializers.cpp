@@ -29,10 +29,10 @@ in. main () {
 
 	std::c__ __  "switch:\n";
 	s..(in. other _ 37; condition) {
-		case true:
+		c.. true:
 			std::c__ __  "true condition: " __  other __  std::e..
 			b..
-		case false:
+		c.. false:
 			std::c__ __  "false condition: " __  other __  std::e..
 	}
 	// other is not visible here

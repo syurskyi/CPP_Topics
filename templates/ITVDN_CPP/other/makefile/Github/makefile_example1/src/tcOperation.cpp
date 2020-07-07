@@ -11,7 +11,7 @@
 ? <cstdlib>
 ? |i..
 
-tcOperation::tcOperation( in. argc, char** argv ) {
+tcOperation::tcOperation( in. argc, c..** argv ) {
 
 	mcTokens.clear();
 

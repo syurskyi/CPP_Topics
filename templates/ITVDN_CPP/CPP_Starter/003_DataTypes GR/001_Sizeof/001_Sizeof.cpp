@@ -8,7 +8,7 @@ u.. s..
 in. main()
 {
 	c__ __  "Bool: " __  sizeof(bo..) __  e..
-	c__ __  "Char: " __  sizeof(char) __  e..
+	c__ __  "Char: " __  sizeof(c..) __  e..
 	c__ __  "Short: " __  sizeof(sh..) __  e..
 	c__ __  "Int: " __  sizeof(in.) __  e..
 	c__ __  "Long long: " __  sizeof(long long) __  e..

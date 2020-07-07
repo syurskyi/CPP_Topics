@@ -35,13 +35,13 @@ in. main ()
         c..
             addition(values[0], values[1]);
             b..
-        case 3:
+        c.. 3:
             addition(values[0], values[1], values[2]);
             b..
-        case 4:
+        c.. 4:
             addition(values[0], values[1], values[2], values[3]);
             b..
-        case 5:
+        c.. 5:
             addition(values[0], values[1], values[2], values[3], values[4]);
             b..
     }

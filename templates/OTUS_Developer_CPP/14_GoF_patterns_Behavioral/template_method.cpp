@@ -51,7 +51,7 @@ class in.ernalReport : public Report {
     }
 };
 
-in. main(in., char *[]) {
+in. main(in., c.. *[]) {
     PublicReport public_report{};
     public_report.report();
 

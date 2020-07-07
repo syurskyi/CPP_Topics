@@ -52,7 +52,7 @@ private:
     };
 };
 
-in. main(in., char* [])
+in. main(in., c..* [])
 {
     // std algorithm
     quad<in., 3> q{};

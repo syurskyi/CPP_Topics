@@ -7,9 +7,9 @@ u.. s..
 
 in. main()
 {
-	char str1[] _ "Hello world!";
+	c.. str1[] _ "Hello world!";
 
-	char *p _ strchr(str1, 'w');
+	c.. *p _ strchr(str1, 'w');
 
 	c__ __  *p __  e..
 

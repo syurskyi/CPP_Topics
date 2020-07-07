@@ -15,7 +15,7 @@ struct bar {
     in. c{-3};
 };
 
-in. main(in., char *[]) {
+in. main(in., c.. *[]) {
     in. i[4] _ {1, 2, 3, 4};
     in. j[] _ {1, 2, 3, 4};
 

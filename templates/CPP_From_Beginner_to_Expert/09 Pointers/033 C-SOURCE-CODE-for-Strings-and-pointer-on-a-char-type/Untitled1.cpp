@@ -32,27 +32,27 @@ in. main()
     cout << p[1] << endl;
     cout << *(p+1) << endl;
 */
-    const char * text2 _ text.c_str();
+    const c.. * text2 _ text.c_str();
 
     c__ __  text2 __  e..
 
-    char array[] _ "here is a text";
+    c.. array[] _ "here is a text";
 
     s.. test _ array;
 
     c__ __  test __  e..
 
 
-    const char * a _ "this is a test 12512412";
+    const c.. * a _ "this is a test 12512412";
 
     c__ __  a[0] __  e..
 
-    char b[] _ "this a test 124124";
+    c.. b[] _ "this a test 124124";
 
     b[0] _'g';
     c__ __  b __  e..
 
-    char * const dynamic_array _ new char[50];
+    c.. * const dynamic_array _ new c..[50];
     dynamic_array[0] _ 'k';
     dynamic_array[1] _ '\0';
     //dynamic_array = "lalala";

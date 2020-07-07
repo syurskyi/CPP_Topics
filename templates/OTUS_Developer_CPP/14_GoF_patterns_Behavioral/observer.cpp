@@ -55,7 +55,7 @@ public:
     }
 };
 
-in. main(in., char *[]) {
+in. main(in., c.. *[]) {
     Language lang;
 
     report_observer rpt(&lang);

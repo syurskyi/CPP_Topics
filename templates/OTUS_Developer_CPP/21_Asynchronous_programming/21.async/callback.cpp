@@ -6,13 +6,13 @@ void read(in. fd)
     std::c__ __  __PRETTY_FUNCTION__ __  std::e..
 }
 
-void aread(in. fd, void(cb)(const char *))
+void aread(in. fd, void(cb)(const c.. *))
 {
     std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     cb("block");
 }
 
-void callback(const char *b)
+void callback(const c.. *b)
 {
     auto z _ b;
     std::c__ __  __PRETTY_FUNCTION__ __  " data=" __  z __  std::e..

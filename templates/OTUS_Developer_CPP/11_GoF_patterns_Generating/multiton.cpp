@@ -36,7 +36,7 @@ private:
     }
 };
 
-in. main(in., char const**)
+in. main(in., c.. const**)
 {
     Logger::Instance(Tag::main).info("started");
     Logger::Instance(Tag::db).warn("no db");

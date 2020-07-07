@@ -3,7 +3,7 @@
 #define LEN 100
 #define WIDTH 100
 
-char array[LEN][WIDTH];
+c.. array[LEN][WIDTH];
 
 #undef LEN
 #undef WIDTH

@@ -9,7 +9,7 @@ in. main ()
     c__ __  "How many characters would you like to input: ";
     c__ __ charactersNumber;
 
-    char * characters _ new char[charactersNumber];
+    c.. * characters _ new c..[charactersNumber];
 
     for (in. i _ 0; i < charactersNumber; i++)
     {

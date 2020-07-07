@@ -10,7 +10,7 @@ u.. s..
 in. main()
 {
 	in. a _ 5;
-	char b _ 'B';
+	c.. b _ 'B';
 	d.. c;
 
 	c__ __  b;

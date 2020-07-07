@@ -24,7 +24,7 @@ void iterate3(Args... args) {
     std::c__ __  std::e..
 }
 
-in. main(in., char *[]) {
+in. main(in., c.. *[]) {
     std::c__ __  "\n\n=====" __  std::e..
 
     // iterate1(1, 2.0, "tri");

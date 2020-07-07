@@ -124,18 +124,18 @@ in. main()
     std::c__ __  str __  std::e..
 
     auto splitted _
-        std::partition( str.begin(), str.end(), []( const char elem ) { r_ elem > 'L'; } );
+        std::partition( str.begin(), str.end(), []( const c.. elem ) { r_ elem > 'L'; } );
 
     std::c__ __  "\nPartitioned string:\n    ";
-    std::copy( std::begin( str ), splitted, std::ostream_iterator< char >( std::c__, "," ) );
+    std::copy( std::begin( str ), splitted, std::ostream_iterator< c.. >( std::c__, "," ) );
     std::c__ __  " |||| ";
-    std::copy( splitted, std::end( str ), std::ostream_iterator< char >( std::c__, "," ) );
+    std::copy( splitted, std::end( str ), std::ostream_iterator< c.. >( std::c__, "," ) );
 
     sort( str.begin(), str.end() );
 
     std::c__ __  std::endl __  "Sorted:" __  std::endl __  str __  std::e..
 
-    sort( str.begin(), str.end(), []( const char elem1, const char elem2 ) {
+    sort( str.begin(), str.end(), []( const c.. elem1, const c.. elem2 ) {
         r_ elem1 > elem2;
     } );
 

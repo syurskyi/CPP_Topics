@@ -4,7 +4,7 @@
 u.. s..
 in. main ()
 {
-    char c _ c__.g..
+    c.. c _ c__.g..
 
     c__.putback(c);
     __ (c > '0' && c < '9')

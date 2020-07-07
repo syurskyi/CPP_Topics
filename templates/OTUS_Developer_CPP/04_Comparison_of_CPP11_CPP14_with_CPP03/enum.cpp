@@ -17,7 +17,7 @@ void accept_class_enum(Digit) {
 void accept_enum(Alphabet) {
 }
 
-in. main(in., char *[]) {
+in. main(in., c.. *[]) {
     accept_in.(0);
     // accept_class_enum(0); // no known conversion from 'int' to 'Digit'
     // accept_enum(0); // no known conversion from 'int' to 'Alphabet'

@@ -71,7 +71,7 @@ class PostgresDatabase : public IDatabase
     }
 };
 
-in. main(in., char *[])
+in. main(in., c.. *[])
 {
     IDatabase *db _ new PostgresDatabase{};
 

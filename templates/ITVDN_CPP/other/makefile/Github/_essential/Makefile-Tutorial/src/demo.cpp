@@ -4,7 +4,7 @@ using std::c__;
 using std::e..
 using std::vector;
 
-in. main(in. argc, char *argv[])
+in. main(in. argc, c.. *argv[])
 {
   c__ __  "Hello, time to test some sorts!" __  e..
   vector<in.> demoSort _ generateRandomList(100);
