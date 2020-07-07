@@ -1,0 +1,45 @@
+\hypertarget{mostra_8cpp}{}\section{src/mostra.cpp File Reference}
+\label{mostra_8cpp}\index{src/mostra.\+cpp@{src/mostra.\+cpp}}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include \char`\"{}mostra.\+h\char`\"{}}\\*
+Include dependency graph for mostra.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=207pt]{mostra_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{mostra_8cpp_a385bafcdbda785303563990b110f86af}{mostra} (int $\ast$val\+Inic, int $\ast$result\+Prim)
+\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{mostra.\+cpp@{mostra.\+cpp}!mostra@{mostra}}
+\index{mostra@{mostra}!mostra.\+cpp@{mostra.\+cpp}}
+\subsubsection[{\texorpdfstring{mostra(int $\ast$val\+Inic, int $\ast$result\+Prim)}{mostra(int *valInic, int *resultPrim)}}]{\setlength{\rightskip}{0pt plus 5cm}void mostra (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{val\+Inic, }
+\item[{int $\ast$}]{result\+Prim}
+\end{DoxyParamCaption}
+)}\hypertarget{mostra_8cpp_a385bafcdbda785303563990b110f86af}{}\label{mostra_8cpp_a385bafcdbda785303563990b110f86af}
+Funcao que mostra na tela o numero primo mais proximo 
+\begin{DoxyParams}{Parameters}
+{\em $\ast$val\+Inic} & ponteiro que aponta para o valor origina passado pelo usuario \\
+\hline
+{\em $\ast$result\+Prim} & ponteiro que aponta para o numero primo mais proximo encontrado \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+void 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+11                                            \{
+12     cout << \textcolor{stringliteral}{"O número primo mais próximo do fatorial de "} << *valInic << \textcolor{stringliteral}{" encontrado foi: "} << *resultPrim
+       << endl;
+13 \}
+\end{DoxyCode}

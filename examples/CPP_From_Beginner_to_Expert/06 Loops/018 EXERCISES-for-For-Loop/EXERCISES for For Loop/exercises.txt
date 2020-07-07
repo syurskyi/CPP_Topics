@@ -1,0 +1,101 @@
+Exercise 1.
+
+Write a program that asks the user to input an integer number. Then starting from that
+number the program prints out in the console next 100 numbers.
+
+eg.
+
+User inputted:
+11
+
+Output:
+12
+13
+14
+15
+...
+...
+111
+
+
+Exercise 2.
+
+Write a program that prints out in the console all upper case and lower case letters from
+the alphabet (A-Z).
+
+eg.
+
+Output:
+A a B b C c D d E e F f G g H h I i J j K k L l M m N n O o P p Q q R r S s T t U u V v W w X x Y y Z z
+
+
+Exercise 3.
+
+Write a program that asks the user to input any number (integer or floating point) and
+the n-th power (integer) the number should be raised to. Then calculate the result of the
+exponentiation of this number to the said power.
+
+eg.
+
+User inputted:
+Number: 2
+N-th power: 5
+
+Output:
+The number 2 to the power of 5 is equal to 32.
+
+
+Exercise 4.
+
+Write a program that asks the user to input any integer number n. Then calculate the result
+of the factorial operation (n! - 1*2*3*...*n). Print in the console result of the n factorial
+as well as the factorial of numbers before n.
+
+eg.
+
+User inputted:
+4
+
+Output:
+1! = 1
+2! = 2
+3! = 6
+4! = 24
+
+Exercise 5.
+
+Write a program that asks the user to input an integer number. Then the program should print out
+in the console the inputted number of asterisks (*). Furthermore, it should break the line (endl)
+every 5 asterisks printed.
+
+eg.
+
+User inputted:
+20
+
+Output:
+*****
+*****
+*****
+*****
+
+Exercise 6.
+
+Write a program that asks the user to input 5 integer numbers (store them in a 5 element array).
+Then it checks if the inputted numbers were odd or even and prints that information out in the console.
+
+eg.
+
+User inputted:
+1
+2
+3
+4
+5
+
+Output:
+The number 1 is odd.
+The number 2 is even.
+The number 3 is odd.
+The number 4 is even.
+The number 5 is odd.

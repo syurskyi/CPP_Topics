@@ -1,0 +1,12 @@
+
+
+
+
+all: demo.out
+
+# BrainDead make
+demo.out:
+	g++ --std=c++11 -g -o demo.out demo.cpp bubbleSort.cpp insertionSort.cpp mergeSort.cpp quickSort.cpp util.cpp -ldl
+
+clean:
+	rm -rf demo.out demo.out.dSYM

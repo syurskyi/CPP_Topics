@@ -1,0 +1,11 @@
+# depslib dependency file v1.0
+1309364857 source:d:\video kursy en\c++\44. convert constructor and overloading operators\integer\integer.cpp
+	"integer.h"
+	<iostream>
+
+1309364861 d:\video kursy en\c++\44. convert constructor and overloading operators\integer\integer.h
+
+1309364743 source:d:\video kursy en\c++\44. convert constructor and overloading operators\integer\main.cpp
+	<iostream>
+	"integer.h"
+

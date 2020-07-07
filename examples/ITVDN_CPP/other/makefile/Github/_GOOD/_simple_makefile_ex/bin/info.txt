@@ -1,0 +1,1 @@
+makefile is hard-coded to place all executables (including *.o objects) in this "bin" folder

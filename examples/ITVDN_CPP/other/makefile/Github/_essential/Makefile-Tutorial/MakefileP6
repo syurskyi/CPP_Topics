@@ -1,0 +1,19 @@
+# Global compiler and linker flags
+CXXFLAGS := --std=c++11 -g
+LDFLAGS := -ldl
+
+DEPS := demo.hpp sorts.hpp util.hpp
+
+all: demo.out
+
+# Faster rebuild deps make
+demo.out: demo.o bubbleSort.o insertionSort.o mergeSort.o quickSort.o util.o
+	$(CXX) $(CXXFLAGS) -o $@ $^ $(LDFLAGS)
+
+# String matching!
+# Rebuild for .hpp files
+%.o: %.cpp $(DEPS)
+	$(CXX) $(CXXFLAGS) -o $@ -c $<
+
+clean:
+	rm -rf demo.out demo.out.dSYM *.o

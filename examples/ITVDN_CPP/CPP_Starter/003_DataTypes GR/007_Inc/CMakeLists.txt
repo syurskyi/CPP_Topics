@@ -1,0 +1,12 @@
+cmake_minimum_required(VERSION 3.5)
+
+project(007_Inc)
+
+set(SOURCES
+        007_Inc.cpp)
+
+add_executable(007_Inc ${SOURCES})
+
+set_target_properties(007_Inc PROPERTIES
+        CXX_STANDARD 14
+        CXX_STANDARD_REQUIRED ON)

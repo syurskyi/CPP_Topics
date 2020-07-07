@@ -1,0 +1,12 @@
+# Global compiler and linker flags
+CXXFLAGS := --std=c++11 -g
+LDFLAGS := -ldl
+
+all: demo.out
+
+# Less BrainDead make
+demo.out:
+	$(CXX) $(CXXFLAGS) -o demo.out demo.cpp bubbleSort.cpp insertionSort.cpp mergeSort.cpp quickSort.cpp util.cpp $(LDFLAGS)
+
+clean:
+	rm -rf demo.out demo.out.dSYM

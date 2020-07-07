@@ -1,0 +1,10 @@
+# depslib dependency file v1.0
+1309265682 source:d:\video kursy en\c++\43. copy constructor\copier\test.cpp
+	"test.h"
+
+1309265531 d:\video kursy en\c++\43. copy constructor\copier\test.h
+
+1309265447 source:d:\video kursy en\c++\43. copy constructor\copier\main.cpp
+	<iostream>
+	"test.h"
+

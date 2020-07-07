@@ -1,0 +1,47 @@
+\hypertarget{main_8cpp}{}\section{src/main.cpp File Reference}
+\label{main_8cpp}\index{src/main.\+cpp@{src/main.\+cpp}}
+{\ttfamily \#include $<$iostream$>$}\\*
+{\ttfamily \#include $<$cstdlib$>$}\\*
+{\ttfamily \#include \char`\"{}calcula.\+h\char`\"{}}\\*
+{\ttfamily \#include \char`\"{}mostra.\+h\char`\"{}}\\*
+Include dependency graph for main.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=345pt]{main_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{main} (int argc, char $\ast$argv\mbox{[}$\,$\mbox{]})
+\begin{DoxyCompactList}\small\item\em Funcao principal. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{main.\+cpp@{main.\+cpp}!main@{main}}
+\index{main@{main}!main.\+cpp@{main.\+cpp}}
+\subsubsection[{\texorpdfstring{main(int argc, char $\ast$argv[])}{main(int argc, char *argv[])}}]{\setlength{\rightskip}{0pt plus 5cm}int main (
+\begin{DoxyParamCaption}
+\item[{int}]{argc, }
+\item[{char $\ast$}]{argv\mbox{[}$\,$\mbox{]}}
+\end{DoxyParamCaption}
+)}\hypertarget{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}{}\label{main_8cpp_a0ddf1224851353fc92bfbff6f499fa97}
+
+
+Funcao principal. 
+
+
+\begin{DoxyCode}
+11                                  \{
+12 
+13     \textcolor{keywordtype}{int} valor = atoi(argv[1]);\textcolor{comment}{//armazena valor inteiro passado pelo usuario em linha de comando}
+14     \textcolor{keywordtype}{int} valorInicial = valor; \textcolor{comment}{//armazena valor para salvar seu valor original}
+15     \textcolor{keywordtype}{int} resultadoFatorial = \hyperlink{calcula_8cpp_a8f4955ac9731a6239fafcfc505c9f404}{fatorial}(&valor);
+16     \textcolor{keywordtype}{int} check = resultadoFatorial/2;
+17     \textcolor{keywordtype}{int} resultadoPrimo = \hyperlink{calcula_8cpp_ae68ebc37bafc99b6e3ef240f1554d2e0}{primo}(&resultadoFatorial, &check);
+18     \hyperlink{mostra_8cpp_a385bafcdbda785303563990b110f86af}{mostra}(&valorInicial, &resultadoPrimo);
+19 
+20     \textcolor{keywordflow}{return} 0;
+21 \}\end{DoxyCode}

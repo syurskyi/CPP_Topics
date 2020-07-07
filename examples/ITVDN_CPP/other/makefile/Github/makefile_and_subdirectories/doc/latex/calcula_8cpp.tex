@@ -1,0 +1,89 @@
+\hypertarget{calcula_8cpp}{}\section{src/calcula.cpp File Reference}
+\label{calcula_8cpp}\index{src/calcula.\+cpp@{src/calcula.\+cpp}}
+{\ttfamily \#include \char`\"{}calcula.\+h\char`\"{}}\\*
+Include dependency graph for calcula.\+cpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=163pt]{calcula_8cpp__incl}
+\end{center}
+\end{figure}
+\subsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{calcula_8cpp_a8f4955ac9731a6239fafcfc505c9f404}{fatorial} (int $\ast$val)
+\begin{DoxyCompactList}\small\item\em Funcao recursiva que calcula o fatorial de um numero. \end{DoxyCompactList}\item 
+int \hyperlink{calcula_8cpp_ae68ebc37bafc99b6e3ef240f1554d2e0}{primo} (int $\ast$result\+Fat, int $\ast$chk)
+\begin{DoxyCompactList}\small\item\em Funcao recursiva que avalia qual o numero anterior ao resultado do fatorial é o primo mais proximo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\subsection{Function Documentation}
+\index{calcula.\+cpp@{calcula.\+cpp}!fatorial@{fatorial}}
+\index{fatorial@{fatorial}!calcula.\+cpp@{calcula.\+cpp}}
+\subsubsection[{\texorpdfstring{fatorial(int $\ast$val)}{fatorial(int *val)}}]{\setlength{\rightskip}{0pt plus 5cm}int fatorial (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{val}
+\end{DoxyParamCaption}
+)}\hypertarget{calcula_8cpp_a8f4955ac9731a6239fafcfc505c9f404}{}\label{calcula_8cpp_a8f4955ac9731a6239fafcfc505c9f404}
+
+
+Funcao recursiva que calcula o fatorial de um numero. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$val} & ponteiro que aponta para o valor passado pelo usuario \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+valor do fatorial do numero informado pelo usuario 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+8                        \{
+9     \textcolor{keywordflow}{if}(*val == 1 || *val == 0) \{
+10         \textcolor{keywordflow}{return} 1;
+11     \} \textcolor{keywordflow}{else} \{
+12         \textcolor{keywordtype}{int} anterior = *val - 1;\textcolor{comment}{//armazena o valor inteiro anterior a *val}
+13         \textcolor{keywordflow}{return} *val * \hyperlink{calcula_8cpp_a8f4955ac9731a6239fafcfc505c9f404}{fatorial}(&anterior);
+14     \}
+15 \}
+\end{DoxyCode}
+\index{calcula.\+cpp@{calcula.\+cpp}!primo@{primo}}
+\index{primo@{primo}!calcula.\+cpp@{calcula.\+cpp}}
+\subsubsection[{\texorpdfstring{primo(int $\ast$result\+Fat, int $\ast$chk)}{primo(int *resultFat, int *chk)}}]{\setlength{\rightskip}{0pt plus 5cm}int primo (
+\begin{DoxyParamCaption}
+\item[{int $\ast$}]{result\+Fat, }
+\item[{int $\ast$}]{chk}
+\end{DoxyParamCaption}
+)}\hypertarget{calcula_8cpp_ae68ebc37bafc99b6e3ef240f1554d2e0}{}\label{calcula_8cpp_ae68ebc37bafc99b6e3ef240f1554d2e0}
+
+
+Funcao recursiva que avalia qual o numero anterior ao resultado do fatorial é o primo mais proximo. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em $\ast$result\+Fat} & ponteiro que aponta para o resultado do calculo do fatorial \\
+\hline
+{\em $\ast$chk} & paramatro de avaliacao para determinar se um numero é primo \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+numero primo mais proximo do valor apontado por $\ast$result\+Fat 
+\end{DoxyReturn}
+
+\begin{DoxyCode}
+23                                     \{
+24     \textcolor{keywordflow}{if}(*chk == 1) \{
+25         \textcolor{keywordflow}{return} *resultFat;
+26     \} \textcolor{keywordflow}{else} \{
+27         \textcolor{keywordflow}{if}(*resultFat%*chk == 0) \{
+28             *resultFat -= 1;
+29             *chk = *resultFat/2;
+30             \textcolor{keywordflow}{return} \hyperlink{calcula_8cpp_ae68ebc37bafc99b6e3ef240f1554d2e0}{primo}(resultFat, chk);
+31         \} \textcolor{keywordflow}{else} \{
+32             *chk -= 1;
+33             \textcolor{keywordflow}{return} \hyperlink{calcula_8cpp_ae68ebc37bafc99b6e3ef240f1554d2e0}{primo}(resultFat, chk);
+34         \}
+35     \}
+36 \}\end{DoxyCode}

@@ -1,0 +1,1 @@
+https://kent.dl.sourceforge.net/project/codeblocks/Binaries/17.12/Windows/codeblocks-17.12mingw-setup.exe

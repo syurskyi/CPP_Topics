@@ -1,0 +1,67 @@
+
+
+	An example of how a Makefile is made
+
+  For this example we will have three files
+  main.cpp     message.cpp     message.h
+
+
+  Note: That in my .h file I will need a File guard:
+  A File guard protects the body from being included more than one time
+
+  To create the File Guard in the .h file use the following template:
+
+
+  #ifndef MESSAGE_H
+  #define MESSAGE_H
+
+  {Body}
+
+  #endif
+
+
+
+Recall that in our .h files we only include the class, variables, and function prototypes
+Recall that in our .cpp files we define our protypes, 
+Make sure to state the class name before the default constructors and deconstructors
+And for functions use the following example:
+
+int Message::takeAction(int a);
+
+
+
+
+
+  Let's create out Makefile
+  1. vim Makefile
+  2. Now use the following template
+    
+target: dependencies
+    	action
+
+
+
+In our example we must do the following. Make sure to add clean, clean will rm the files that you created.
+
+
+
+
+
+
+outputExe: main.o message.o
+	g++ main.o message.o -o outputExe
+
+    
+main.o: main.cpp
+	g++ -c main.cpp        
+
+// g++ -c [fileName] will compile our file, but not physically create the target file
+
+message.o: main.cpp message.h
+	g++ -c main.cpp message.h
+ 
+
+//clean will remove the following files
+	
+clean: 
+	rm *.o outputExe    

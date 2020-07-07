@@ -1,0 +1,12 @@
+# Global compiler and linker flags
+CXXFLAGS := --std=c++11 -g
+LDFLAGS := -ldl
+
+all: demo.out
+
+# Auto rebuild deps make
+demo.out: demo.cpp bubbleSort.cpp insertionSort.cpp mergeSort.cpp quickSort.cpp util.cpp
+	$(CXX) $(CXXFLAGS) -o $@ $^ $(LDFLAGS)
+
+clean:
+	rm -rf demo.out demo.out.dSYM

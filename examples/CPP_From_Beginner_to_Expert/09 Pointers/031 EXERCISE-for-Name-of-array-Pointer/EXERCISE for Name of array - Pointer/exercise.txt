@@ -1,0 +1,5 @@
+Exercise 1.
+
+Declare 5 element array of integers and a pointer to the first element of the array.
+Use the pointer and its incrementation instead of array notation, fill the array with
+any integer numbers. Print all of the elements out in the console.
