@@ -3,7 +3,7 @@
 u.. s..
 /* preprocessor directives and multi-file project */
 
-#define PI 3.14
+?d.. PI 3.14
 
 in. main()
 {

@@ -1,4 +1,4 @@
-#define BOOST_TEST_MODULE test_module
+?d.. BOOST_TEST_MODULE test_module
 
 ? <boost/test/unit_test.hpp>
 

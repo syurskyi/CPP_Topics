@@ -1,4 +1,4 @@
-#define PRODUCTION 10		// DEVELOMENT
+?d.. PRODUCTION 10		// DEVELOMENT
 ? *s..
 ? |i..
 

@@ -1,59 +1,59 @@
-? *s..
-? |i..
-
-#define SIZE 10
-
-v.. push(in. i)
-in. pop(v..)
-
-in. *top_s, *p1, stack[SIZE]
-
-u.. s..
-
-in. main()
-{
-	in. value
-
-	top_s _ stack
-	p1 _ stack
-
-	do {
-		c__ __  "Enter the number: " __  e..
-		c__ __ value
-
-		__ (value !_ 0) {
-			push(value)
-		}
-		____
-		{
-			c__ __  "The number on stack top equal " __  pop() __  e..
-		}
-
-	} w___ (value !_ -1)
-
-
-	sy.. pause
-	r_ 0
-}
-
-v.. push(in. i)
-{
-	p1++
-	__ (p1 __ (top_s + SIZE)) {
-		c__ __  "The stack is overflow" __  e..
-		exit(1)
-	}
-	*p1 _ i
-}
-
-in. pop(v..)
-{
-	__ (p1 __ top_s)
-	{
-		c__ __  "Stack is empty!" __  e..
-		exit(1)
-	}
-	p1--
-	r_ *(p1 + 1)
-}
-
+//? *s..
+//? |i..
+//
+//?d.. SIZE 10
+//
+//v.. pu.. in. i
+//in. po. v..
+//
+//in. &t.. &p. st..|S..
+//
+//u.. s..
+//
+//in. main
+//
+//	in. value
+//
+//	top_s _ st..
+//	p1 _ st..
+//
+//	__
+//		c__ __  "Enter the number: " __  e..
+//		c__ __ v...
+//
+//		__ v.. !_ 0
+//			pu.. v..
+//
+//		____
+//
+//			c__ __  "The number on stack top equal " __  po. __  e..
+//
+//
+//	 w___ v.. !_ -1
+//
+//
+//	sy.. pause
+//	r_ _
+//
+//
+//v.. pu.. in. i
+//
+//	p.##
+//	__ p. __ t.. + S..
+//		c__ __  "The stack is overflow" __  e..
+//		e.. 1
+//
+//	&p. _ ?
+//
+//
+//in. po. v..
+//
+//	__ p. __ t..
+//
+//		c__ __  "Stack is empty!" __  e..
+//		e.. 1
+//
+//	p.##
+//	r_ & p. + 1
+//
+//

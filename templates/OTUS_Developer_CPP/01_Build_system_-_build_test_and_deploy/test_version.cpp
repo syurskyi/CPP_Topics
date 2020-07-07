@@ -1,4 +1,4 @@
-#define BOOST_TEST_MODULE helloworld_test_module
+?d.. BOOST_TEST_MODULE helloworld_test_module
 
 ? "lib.h"
 

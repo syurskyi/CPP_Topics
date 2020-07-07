@@ -1,4 +1,4 @@
-﻿#define MAX_SIZE 100
+﻿?d.. MAX_SIZE 100
 
 ? *s..
 ? |i..

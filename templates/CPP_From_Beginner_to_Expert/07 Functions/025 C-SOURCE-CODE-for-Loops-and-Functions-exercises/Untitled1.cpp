@@ -1,5 +1,5 @@
 ? |i..
-#define PI 3.14
+?d.. PI 3.14
 u.. s..
 
 v.. initMenu()sy.. pause

@@ -1,8 +1,8 @@
 ? *s..
 ? |i..
 
-#define createSTR(value)	#value
-#define concat(a, b)		a##b
+?d.. createSTR(value)	#value
+?d.. concat(a, b)		a##b
 
 
 u.. s..

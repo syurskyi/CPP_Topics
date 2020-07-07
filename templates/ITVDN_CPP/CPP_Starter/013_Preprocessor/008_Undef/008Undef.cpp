@@ -1,7 +1,7 @@
 ? *s..
 
-#define LEN 100
-#define WIDTH 100
+?d.. LEN 100
+?d.. WIDTH 100
 
 c.. array[LEN][WIDTH]sy.. pause
 
