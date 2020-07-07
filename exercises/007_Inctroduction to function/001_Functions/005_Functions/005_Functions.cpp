@@ -13,7 +13,7 @@ int main() {
     cout << "Hello, " << value << endl;
 
     system("pause");
-    return 0;;
+    return 0;
 }
 
 string Function() {
