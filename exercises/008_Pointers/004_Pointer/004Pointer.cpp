@@ -1,26 +1,27 @@
-//? *s..
-//? |i..
-//
-//u.. s..
-//
-//in. main
-//
-//	in. a _ 10
-//	in. b _ 15
-//
-//	c__ __  "Value of variable a: " __  a __  e..
-//	c__ __  "Value of variable b: " __  b __  e..
-//
-//	in. #? _ *?
-//
-//	c__ __  "Pointer = 0x" __  ? __  e..
-//	c__ __  "*Pointer = " __  &? __  e..
-//
-//	? _ *?
-//
-//	c__ __  "Pointer of b = 0x" __  ? __  e..
-//	c__ __  "*Pointer of b = " __  &? __  e..
-//
-//	sy.. pause
-//	r_ _
-//
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+    int a = 10;
+    int b = 15;
+
+    cout << "Value of variable a: " << a << endl;
+    cout << "Value of variable b: " << b << endl;
+
+    int *pointer = &a;
+
+    cout << "Pointer = 0x" << pointer << endl;
+    cout << "*Pointer = " << *pointer << endl;
+
+    pointer = &b;
+
+    cout << "Pointer of b = 0x" << pointer << endl;
+    cout << "*Pointer of b = "<< *pointer << endl;
+
+    system("pause");
+    return 0;
+}
+
