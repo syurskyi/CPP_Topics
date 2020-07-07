@@ -4,7 +4,7 @@
 //u.. s..
 //
 //// прототип функции GetValue
-//in. GetValue
+//in. ?
 //
 //in. main
 //
