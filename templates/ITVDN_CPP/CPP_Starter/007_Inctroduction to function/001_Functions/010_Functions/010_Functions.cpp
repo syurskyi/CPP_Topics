@@ -4,7 +4,7 @@
 //
 //u.. s..
 //
-//in. Mul in. x, in. y
+//in. M.. in. x, in. y
 //
 //in. main
 //

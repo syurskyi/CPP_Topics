@@ -4,7 +4,7 @@
 //
 //u.. s..
 //
-//s.. Function
+//s.. F..
 //
 //in. main
 //

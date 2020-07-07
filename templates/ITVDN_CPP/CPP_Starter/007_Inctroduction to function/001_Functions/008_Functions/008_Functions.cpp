@@ -3,7 +3,7 @@
 //
 //u.. s..
 //
-//bo.. Or bo.. a, bo.. b
+//bo.. O. bo.. a, bo.. b
 //
 //in. main
 //

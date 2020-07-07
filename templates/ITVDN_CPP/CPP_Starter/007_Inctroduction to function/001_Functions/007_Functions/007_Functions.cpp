@@ -3,8 +3,8 @@
 //
 //u.. s..
 //
-//in. AddNumbers in. a, in. b
-//d.. AddNumbers d.. a, d.. b
+//in. A.. in. a, in. b
+//d.. A.. d.. a, d.. b
 //
 //in. main
 //
