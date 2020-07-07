@@ -1,23 +1,26 @@
-//? *s..
-//? |i..
-//? |s..
-//
-//u.. s..
-//
-//s.. F.. s..
-//
-//in. main
-//
-//	s.. sentence _ F.. "Vladimir"
-//
-//	c__ __  ? __  e..
-//
-//	sy.. pause
-//	r_ 0;
-//
-//
-//s.. Function s.. name
-//
-//	s.. hi _ "Hello, " + ? + "!"
-//
-//	r_ ?
+#include "stdafx.h"
+#include <iostream>
+#include "string"
+
+using namespace std;
+
+
+string Function(string);
+
+
+int main() {
+
+    string sentence = Function("Vladimir");
+
+    cout << sentence << endl;
+
+    system("pause");
+    return 0;
+}
+
+string Function(string name) {
+
+    string hi = "Hello, " + name + "!";
+
+    return hi;
+}

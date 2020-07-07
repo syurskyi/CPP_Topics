@@ -1,19 +1,19 @@
-﻿//? *s..
-//? |i..
-//
-//u.. s..
-//
-//in. main
-//
-//
-//	in. age _ 18
-//	d.. Pi _ 3.14
-//
-//	c__ __  "Address of variable age is: 0x" __  *? __  e..
-//
-//	c__ __  "Address of variable Pi is: 0x" __  *? __  e..
-//
-//	sy.. pause
-//    r_ _
-//
-//
+﻿#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+    int age = 18;
+    double Pi = 3.14;
+
+    cout << "Address of variable age is: 0x" << &age << endl;
+
+    cout << "Address of variable Pi is: 0x" << &Pi << endl;
+
+    system("pause");
+    return 0;
+}
+
+
