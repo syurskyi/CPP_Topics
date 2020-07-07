@@ -24,11 +24,11 @@ in. main()
         {
             c__ __  "Files are equal";
         }
-        else
+        ____
             c__ __  "Files are not the same" __  e..
 
     }
-    else
+    ____
         c__ __  "The file couldn't be opened properly" __  e..
 
     r_ 0;
@@ -44,7 +44,7 @@ bo.. areFilesEqual(fstream *a, fstream *b)
 
         __(fileSize1 > 1024)
             BUFFER_SIZE = 1024;
-        else
+        ____
             BUFFER_SIZE = fileSize1;
 
         char *file1buffer = new char[BUFFER_SIZE];
@@ -69,7 +69,7 @@ bo.. areFilesEqual(fstream *a, fstream *b)
         delete [] file2buffer;
         r_ true;
     }
-    else
+    ____
     {
         c__ __  "Size of Files are not equal" __  e..
         r_ false;

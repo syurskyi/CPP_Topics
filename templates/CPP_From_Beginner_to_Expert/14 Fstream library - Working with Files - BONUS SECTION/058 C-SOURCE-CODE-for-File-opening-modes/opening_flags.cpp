@@ -33,7 +33,7 @@ in. main()
         file __  "sample text\n";
 
     }
-    else
+    ____
         c__ __  "The file hasn't been opened properly";
 
 

@@ -24,7 +24,7 @@ in. main()
 		__ (value != 0) {
 			push(value);
 		}
-		else
+		____
 		{
 			c__ __  "The number on stack top equal " __  pop() __  e..
 		}

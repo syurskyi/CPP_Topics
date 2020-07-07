@@ -20,7 +20,7 @@ in. main()
 	{
 		c__ __  "Block IF" __  e..
 	}
-	else
+	____
 	{
 		c__ __  "Block ELSE" __  e..
 	}

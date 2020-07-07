@@ -109,7 +109,7 @@ void showPeople()
             c__ __  "Telephone: " __  people[i].telephone __  endl __  e..
         }
     }
-    else
+    ____
         c__ __  "There is nobody in database."  __  e..
 }
 void savePeopleToFile()
@@ -130,7 +130,7 @@ void savePeopleToFile()
 
         file.close();
     }
-    else
+    ____
         c__ __  "I couldnt save to database" __  e..
 
 }
@@ -164,10 +164,10 @@ void loadPeopleFromFile()
 
             c__ __  "People has been loaded properly. " __  e..
         }
-        else
+        ____
             c__ __  "Databse is Empty" __  e..
     }
-    else
+    ____
         c__ __  "The file database.txt doesnt exist" __  e..
 }
 void searchDatabase()
@@ -190,7 +190,7 @@ void searchDatabase()
             }
         }
     }
-    else
+    ____
         c__ __  "There is nobody in database what do you want to look for??!" __  e..
 
 
@@ -216,9 +216,9 @@ void removePersonFromDatabase()
             peopleInDataBase--;
             savePeopleToFile();
         }
-        else
+        ____
             c__ __  "There is nobody like that" __  e..
     }
-    else
+    ____
         c__ __  "There is nothing to remove" __  e..
 }

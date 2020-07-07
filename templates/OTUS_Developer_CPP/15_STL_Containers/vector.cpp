@@ -44,7 +44,7 @@ in. main() {
     for (auto i = v.begin(); i != v.end(); ) {
         __ (*i == 0) {
             i = v.erase(i);
-        } else {
+        } ____ {
             ++i;
         }
     }

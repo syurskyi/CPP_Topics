@@ -8,7 +8,7 @@
 in. fatorial(in. *val) {
 	__(*val == 1 || *val == 0) {
 		r_ 1;
-	} else {
+	} ____ {
 		in. anterior = *val - 1;//armazena o valor inteiro anterior a *val
 		r_ *val * fatorial(&anterior);
 	}
@@ -23,12 +23,12 @@ in. fatorial(in. *val) {
 in. primo(in. *resultFat, in. *chk) {
 	__(*chk == 1) {
 		r_ *resultFat;
-	} else {
+	} ____ {
 		__(*resultFat%*chk == 0) {
 			*resultFat -= 1;
 			*chk = *resultFat/2;
 			r_ primo(resultFat, chk);
-		} else {
+		} ____ {
 			*chk -= 1;
 			r_ primo(resultFat, chk);
 		}

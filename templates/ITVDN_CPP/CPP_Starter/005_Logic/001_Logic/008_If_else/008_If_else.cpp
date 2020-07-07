@@ -21,7 +21,7 @@ in. main()
 	__ (userLogin == login && userPassword == password) {
 		c__ __  "Hello, Admin!" __  e..
 	}
-	else
+	____
 	{
 		c__ __  "Hello, User!" __  e..
 	}

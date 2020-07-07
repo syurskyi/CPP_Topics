@@ -5,10 +5,10 @@ in. fib_wrong(in. n) {
   __ (n <= 0) {
     r_ 0;
   }
-  else __ (n == 1) {
+  ____ __ (n == 1) {
     r_ 1;
   }
-  else {
+  ____ {
     r_ fib_wrong(n - 1) + fib_wrong(n - 2);
   }
 }

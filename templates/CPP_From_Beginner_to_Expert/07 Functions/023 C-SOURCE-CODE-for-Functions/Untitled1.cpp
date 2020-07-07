@@ -58,6 +58,6 @@ void enterName()
 
     __ (isNumber(tmp))
         c__ __  "Number entered properly " __  e..
-    else
+    ____
         c__ __  "Number wasn't entered properly " __  e..
 }

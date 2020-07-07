@@ -40,7 +40,7 @@ in. main()
 
 
     }
-    else
+    ____
         c__ __  "The file couldn't be opened properly" __  e..
 
     r_ 0;

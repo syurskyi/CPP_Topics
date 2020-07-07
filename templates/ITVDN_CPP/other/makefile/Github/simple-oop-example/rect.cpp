@@ -31,7 +31,7 @@ rectangle rectangle::boxUnion(rectangle &that) {
   __(selfX0 < thatX0) {
     resX0 = selfX0;
   }
-  else {
+  ____ {
     resX0 = thatX0;
   }
   resX1 = (selfX1 > thatX1) ? selfX1 : thatX1;

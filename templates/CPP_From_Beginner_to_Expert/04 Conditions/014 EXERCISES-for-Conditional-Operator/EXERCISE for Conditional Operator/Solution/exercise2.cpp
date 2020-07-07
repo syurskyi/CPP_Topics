@@ -17,7 +17,7 @@ main ()
 
         c__ __  outputMessage;
     }
-    else
+    ____
         c__ __  "ERROR. The number of points is invalid !";
 
 

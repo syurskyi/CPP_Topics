@@ -23,9 +23,9 @@ in. main(in. argc, const char *argv[]) {
 
         __ (vm.count("help"))
             std::c__ __  desc __  '\n';
-        else __ (vm.count("config"))
+        ____ __ (vm.count("config"))
             std::c__ __  "readfrom: " __  vm["config"].as<std::string>() __  std::e..
-        else __ (vm.count("bulk"))
+        ____ __ (vm.count("bulk"))
             std::c__ __  "bulk: " __  vm["bulk"].as<size_t>() __  std::e..
     }
     catch (const std::exception &e) {

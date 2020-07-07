@@ -20,7 +20,7 @@ void state_exec(char c) {
 void state_seq(char c) {
     __ (c == 'm') {
         active_handler = &state_exec;
-    } else {
+    } ____ {
         seq += c;
     }
 }
@@ -35,7 +35,7 @@ void state_text(char c) {
     __ (c == '\x1b') {
         active_handler = &state_esc;
         active_handler(c);
-    } else {
+    } ____ {
         std::c__ __  c __  std::e..
     }
 }

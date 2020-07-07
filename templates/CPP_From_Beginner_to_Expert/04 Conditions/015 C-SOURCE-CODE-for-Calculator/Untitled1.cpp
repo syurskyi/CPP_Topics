@@ -39,7 +39,7 @@ main()
         case '/':
             __ (var2) //var2 != 0
                 c__ __  var1 __  " / " __  var2 __  " = " __  (var1 / var2) __  e..
-            else
+            ____
                 c__ __  "You can't divide by 0" __  e..
             break;
         default:

@@ -58,7 +58,7 @@ in. main() {
 		__ (!stream.is_open()) {
 			std::c__ __  "Failed to create file: " __  file __  std::e..
 		}
-		else {
+		____ {
 			stream __  "Hello, World!" __  std::e..
 		}
 	}

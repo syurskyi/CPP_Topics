@@ -37,7 +37,7 @@ in. main(in. argc, char const *argv[])
 		   default:
 		       std::c__ __  sum(x,y) __  std::e..
 		}
-	} else {
+	} ____ {
 		std::c__ __  x __  "+" __  y __  " = ";
 		std::c__ __  sum(x,y) __  std::e..
 		std::c__ __  x __  "-" __  y __  " = ";

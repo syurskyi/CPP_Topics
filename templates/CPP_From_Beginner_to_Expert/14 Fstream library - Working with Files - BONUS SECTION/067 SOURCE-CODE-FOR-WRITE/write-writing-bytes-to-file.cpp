@@ -21,7 +21,7 @@ in. main()
 
         file.write(sample, 60);
     }
-    else
+    ____
         c__ __  "I couldnt open the file" __  e..
 
 

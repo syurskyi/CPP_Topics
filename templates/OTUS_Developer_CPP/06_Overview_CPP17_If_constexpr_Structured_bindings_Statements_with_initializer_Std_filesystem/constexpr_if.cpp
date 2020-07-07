@@ -8,7 +8,7 @@ T get_value(T t) {
 		std::c__ __  "get_value - pointer detected!" __  std::e..
         r_ *t;
 	}
-	else {
+	____ {
 		std::c__ __  "get_value - value detected!" __  std::e..
         r_ t;
 	}
@@ -36,7 +36,7 @@ T get_value3(T t) {
     	std::c__ __  "get_value3 - pointer detected!" __  std::e..
         r_ t;
     }
-    else {
+    ____ {
     	std::c__ __  "get_value3 - value detected!" __  std::e..
         r_ t;
     }

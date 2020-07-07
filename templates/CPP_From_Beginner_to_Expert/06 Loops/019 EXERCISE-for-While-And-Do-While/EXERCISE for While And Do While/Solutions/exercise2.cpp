@@ -27,7 +27,7 @@ main ()
      {
         c__ __  "Correct pin, welcome !";
      }
-     else
+     ____
         c__ __  "You have entered a wrong PIN code for 5 times !";
 
 }

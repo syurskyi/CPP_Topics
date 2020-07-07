@@ -13,7 +13,7 @@ auto foo() {
 auto fibonacci_naive(long long n) {
     __ (n <= 1)
         r_ n;
-    else
+    ____
         r_ fibonacci_naive(n - 1) + fibonacci_naive(n - 2);
 }
 
@@ -21,7 +21,7 @@ auto fibonacci_naive(long long n) {
 auto factorial_naive(long long n) {
     __ (n <= 1)
         r_ n;
-    else
+    ____
         r_ n * factorial_naive(n - 1);
 }
 

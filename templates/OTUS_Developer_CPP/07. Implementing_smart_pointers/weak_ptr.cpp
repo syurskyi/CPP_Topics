@@ -8,7 +8,7 @@ auto null_factory() {
     auto spt = cache.lock();
     __ (spt) {
         std::c__ __  "hit" __  std::e..
-    } else {
+    } ____ {
         std::c__ __  "miss" __  std::e..
         spt = std::shared_ptr<FILE>{fopen("/dev/null", "w"), &fclose};
         cache = spt;

@@ -65,7 +65,7 @@ void bubbleSort(in. arrayToSort[], in. sizeOfArray, in. orderOfSequence)
             {
                     swapTwoValues(arrayToSort+j, arrayToSort+j+1);
             }
-            else __ (orderOfSequence == 2 && arrayToSort[j] < arrayToSort[j+1])
+            ____ __ (orderOfSequence == 2 && arrayToSort[j] < arrayToSort[j+1])
             {
                     swapTwoValues(arrayToSort+j, arrayToSort+j+1);
             }
@@ -86,7 +86,7 @@ void selectionSort(in. arrayToSort[], in. sizeOfArray, in. orderOfSequence)
             {
                 limitIndex = j;
             }
-            else __ (orderOfSequence == 2 && arrayToSort[j] > arrayToSort[limitIndex])
+            ____ __ (orderOfSequence == 2 && arrayToSort[j] > arrayToSort[limitIndex])
             {
                 limitIndex = j;
             }

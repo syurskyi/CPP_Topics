@@ -34,15 +34,15 @@ double tcOperation::Execute( void ) {
 	{
 		lrC = lrA + lrB;
 	}
-	else __ ( mcTokens[1] == "-" )
+	____ __ ( mcTokens[1] == "-" )
 	{
 		lrC = lrA - lrB;
 	}
-	else __ ( mcTokens[1] == "x" )
+	____ __ ( mcTokens[1] == "x" )
 	{
 		lrC = lrA * lrB;
 	}
-	else __ ( mcTokens[1] == "/" )
+	____ __ ( mcTokens[1] == "/" )
 	{
 		lrC = lrA / lrB;
 	}

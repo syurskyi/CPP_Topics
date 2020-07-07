@@ -42,7 +42,7 @@ main ()
                 {
                     c__ __  "Input x and y coordinates (values from 1 to 3) of a cell to put X (7 is on x:1 y:3)" __  e..
                 }
-                else
+                ____
                 {
                     c__ __  "Input x and y coordinates (values from 1 to 3) of a cell to put O (7 is on x:1 y:3)" __  e..
                 }
@@ -69,7 +69,7 @@ main ()
                         coordinates[yCoordinate-1][xCoordinate-1] = 'X';
                         player = 1;
                     }
-                    else
+                    ____
                     {
                         coordinates[yCoordinate-1][xCoordinate-1] = 'O';
                         player = 2;
@@ -77,7 +77,7 @@ main ()
                     moveAccepted = true;
                     system ("cls");
                 }
-                else
+                ____
                 {
                     moveAccepted = false;
                     system ("cls");

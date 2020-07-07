@@ -6,7 +6,7 @@ void PersonalData::setAge(in. age)
 {
     __ (age < 0)
         this->age = 0;
-    else
+    ____
         this->age = age;
 }
 PersonalData::PersonalData()

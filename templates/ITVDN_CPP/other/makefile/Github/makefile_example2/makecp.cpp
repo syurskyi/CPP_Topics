@@ -14,7 +14,7 @@ file_to_plot__ "17    28\n";
 file_to_plot__ "19    44\n";
 file_to_plot__ "22    80\n";
 c____  "finished\n ";
-}else
+}____
 c____ "unable to open the file";
 r_ 0;
 }

@@ -17,7 +17,7 @@ public:
     {
         __ (next)
             next->add(n);
-        else
+        ____
             next = n;
     }
 
@@ -36,7 +36,7 @@ public:
     {
         __ (line.find("DROP") == 0) {
             std::c__ __  "DropHandler accept " __  line __  std::e..
-        } else {
+        } ____ {
             std::c__ __  "DropHandler pass" __  std::e..
             Handler::exec(line);
         }
@@ -50,7 +50,7 @@ public:
     {
         __ (line.find("SELECT") == 0) {
             std::c__ __  "SelectHandler accept " __  line __  std::e..
-        } else {
+        } ____ {
             std::c__ __  "SelectHandler pass" __  std::e..
             Handler::exec(line);
         }
@@ -64,7 +64,7 @@ public:
     {
         __ (line.find("CREATE") == 0) {
             std::c__ __  "CreateHandler accept " __  line __  std::e..
-        } else {
+        } ____ {
             std::c__ __  "CreateHandler pass" __  std::e..
             Handler::exec(line);
         }

@@ -233,11 +233,11 @@ void prin.( S& s )
     {
         c__ __  s.min. __  e..
     }
-    else __ constexpr ( aFieldNubmer == 1 )
+    ____ __ constexpr ( aFieldNubmer == 1 )
     {
         c__ __  s.mFloat __  e..
     }
-    else __ constexpr ( aFieldNubmer == 2 )
+    ____ __ constexpr ( aFieldNubmer == 2 )
     {
         for ( auto i : s.mVectorin. )
             c__ __  i __  ' ';
@@ -260,7 +260,7 @@ void if_example( void* aP )
 {
     __ ( void* p = aP; p == nullptr )
         c__ __  "Error. Pointer is nullptr" __  e..
-    else
+    ____
         c__ __  "Pointer is OK!" __  e..
 }
 

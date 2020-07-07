@@ -60,7 +60,7 @@ in. main() {
 	
 	__ (result.size() == 0) {
 		std::c__ __  "No matches found\n";
-	} else {
+	} ____ {
 		std::c__ __  "Indices in A that add up to the target: ";
 		for (std::vector<in.>::const_iterator i = result.begin(); i != result.end(); ++i) {
 			std::c__ __  *i __  " ";

@@ -49,7 +49,7 @@ main ()
 
             __ (isLeapYear)
                 c__ __  "The month february has 29 days in year " __  year __  e..
-            else
+            ____
                 c__ __  "The month february has 28 days in year " __  year __  e..
 
         }

@@ -21,12 +21,12 @@ main ()
         {
             chosenNumbersSum += i;
         }
-        else __ (choice == 'N' || choice == 'n')
+        ____ __ (choice == 'N' || choice == 'n')
         {
             system ("cls");
             continue;
         }
-        else
+        ____
         {
             system ("cls");
             break;

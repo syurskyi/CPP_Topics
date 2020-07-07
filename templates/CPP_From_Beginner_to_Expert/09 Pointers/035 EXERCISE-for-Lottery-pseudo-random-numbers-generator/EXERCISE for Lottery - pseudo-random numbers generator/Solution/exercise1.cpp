@@ -42,7 +42,7 @@ in. main ()
     {
         bubbleSort(a, sizeOfArray, orderOfSequence);
     }
-    else __ (sortChoice == 'S' || sortChoice == 's')
+    ____ __ (sortChoice == 'S' || sortChoice == 's')
     {
         selectionSort(a, sizeOfArray, orderOfSequence);
     }
@@ -91,7 +91,7 @@ void bubbleSort(in. arrayToSort[], in. sizeOfArray, in. orderOfSequence)
             {
                     swapTwoValues(arrayToSort+j, arrayToSort+j+1);
             }
-            else __ (orderOfSequence == 2 && arrayToSort[j] < arrayToSort[j+1])
+            ____ __ (orderOfSequence == 2 && arrayToSort[j] < arrayToSort[j+1])
             {
                     swapTwoValues(arrayToSort+j, arrayToSort+j+1);
             }
@@ -112,7 +112,7 @@ void selectionSort(in. arrayToSort[], in. sizeOfArray, in. orderOfSequence)
             {
                 limitIndex = j;
             }
-            else __ (orderOfSequence == 2 && arrayToSort[j] > arrayToSort[limitIndex])
+            ____ __ (orderOfSequence == 2 && arrayToSort[j] > arrayToSort[limitIndex])
             {
                 limitIndex = j;
             }

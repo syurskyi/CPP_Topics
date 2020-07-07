@@ -26,7 +26,7 @@ bo.. casin.(in.& p, in. nvalue, in. compare)
         p = nvalue;
         r_ true;
     }
-    else
+    ____
         r_ false;
 }
 
@@ -36,7 +36,7 @@ bo.. cas(Node** p, Node* nvalue, Node* compare)
         *p = nvalue;
         r_ true;
     }
-    else
+    ____
         r_ false;
 }
 

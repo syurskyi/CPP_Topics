@@ -47,7 +47,7 @@ main ()
             player = 1;
             system("cls");
         }
-        else
+        ____
         {
 
             c__ __  "Input x and y coordinates of a cell to put O (7 is on x:1 y:3)" __  e..

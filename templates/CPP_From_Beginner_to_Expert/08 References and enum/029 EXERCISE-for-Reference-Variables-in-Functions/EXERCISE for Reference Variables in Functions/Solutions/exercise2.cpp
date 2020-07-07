@@ -25,13 +25,13 @@ void checkIfTheSame(in. &firstVariable, in. &secondVariable)
     {
         c__ __  "The variables are completely the same !";
     }
-    else __ (firstVariable == secondVariable && &firstVariable != &secondVariable)
+    ____ __ (firstVariable == secondVariable && &firstVariable != &secondVariable)
     {   
 		c__ __  firstVariable __  " " __  &firstVariable __  e..
         c__ __  secondVariable __  " " __  &secondVariable __  e..
         c__ __  "The variables have got same values but they are different variables !" __  e..
     }
-    else
+    ____
     {
         c__ __  firstVariable __  " " __  &firstVariable __  e..
         c__ __  secondVariable __  " " __  &secondVariable __  e..

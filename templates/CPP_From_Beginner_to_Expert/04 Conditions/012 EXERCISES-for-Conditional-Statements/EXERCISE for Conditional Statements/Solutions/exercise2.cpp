@@ -20,10 +20,10 @@ main ()
 
         __ (isContained)
             c__ __  "The number " __  elementToCheck __  " belongs to the interval from " __  minValue __  " to " __  maxValue __  " !" __  e..
-        else
+        ____
             c__ __  "The number " __  elementToCheck __  " doesn't belong to the interval from " __  minValue __  " to " __  maxValue __  " !" __  e..
     }
-    else
+    ____
         c__ __  "Error. Maximum value cannot be lower than the minimum value.";
 
 }

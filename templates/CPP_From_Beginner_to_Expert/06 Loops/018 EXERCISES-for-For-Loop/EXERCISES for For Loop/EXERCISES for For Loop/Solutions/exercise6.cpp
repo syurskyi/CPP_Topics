@@ -22,7 +22,7 @@ main ()
         {
             c__ __  "The number " __  numbers[i] __  " is even." __  e..
         }
-        else
+        ____
         {
             c__ __  "The number " __  numbers[i] __  " is odd." __  e..
         }

@@ -15,7 +15,7 @@ in. main ()
 
         c__ __  "Number is: " __  number __  e..
     }
-    else
+    ____
     {
         string txt;
 

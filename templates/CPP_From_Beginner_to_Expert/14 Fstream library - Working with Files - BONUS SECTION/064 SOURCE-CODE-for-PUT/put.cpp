@@ -30,7 +30,7 @@ in. main()
             file.put(c);
         }while(c!='.');
     }
-    else
+    ____
         c__ __  "Nie udalo sie poprawnie otworzyc pliku" __  e..
 
 

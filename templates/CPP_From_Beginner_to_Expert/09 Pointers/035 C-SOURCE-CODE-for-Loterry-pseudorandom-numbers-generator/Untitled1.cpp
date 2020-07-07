@@ -38,7 +38,7 @@ void lottery(in. total_balls, in. balls_to_draw)
                 i--;
                 break;
             }
-            else __ (j == i)
+            ____ __ (j == i)
                 c__ __  balls[i] __  e..
          }
      }

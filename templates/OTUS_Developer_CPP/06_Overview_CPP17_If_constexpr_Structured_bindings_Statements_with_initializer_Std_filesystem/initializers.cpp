@@ -10,11 +10,11 @@ in. main () {
 	__ (in. value = 42; !condition) {
 		std::c__ __  "true condition: " __  value __  std::e..
 	}
-	else __ (in. number = 50; !condition) {
+	____ __ (in. number = 50; !condition) {
 		value += 10;
 		std::c__ __  "false condition: " __  value __  std::e..
 	}
-	else
+	____
     {
         std::c__ __  "false condition: " __  value __  number __  std::e..
     }

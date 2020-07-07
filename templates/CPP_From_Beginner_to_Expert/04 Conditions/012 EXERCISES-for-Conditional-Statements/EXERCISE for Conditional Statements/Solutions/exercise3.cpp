@@ -18,17 +18,17 @@ main ()
 
     __ (productChoice == 1)
         c__ __  "You have chosen a Coca-Cola" __  e..
-    else __ (productChoice == 2)
+    ____ __ (productChoice == 2)
         c__ __  "You have chosen a Water" __  e..
-    else __ (productChoice == 3)
+    ____ __ (productChoice == 3)
         c__ __  "You have chosen a Chocolate Bar" __  e..
-    else __ (productChoice == 4)
+    ____ __ (productChoice == 4)
         c__ __  "You have chosen a Snickers Bar" __  e..
-    else __ (productChoice == 5)
+    ____ __ (productChoice == 5)
         c__ __  "You have chosen a Mars Bar" __  e..
-    else __ (productChoice == 6)
+    ____ __ (productChoice == 6)
         c__ __  "You have chosen a Bud Light" __  e..
-    else
+    ____
         c__ __  "Error. Invalid choice" __  e..
 
 }
