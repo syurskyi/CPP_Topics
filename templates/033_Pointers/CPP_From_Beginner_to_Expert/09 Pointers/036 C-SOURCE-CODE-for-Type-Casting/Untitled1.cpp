@@ -14,7 +14,7 @@ in. main()
     c.. __ (in.) var __ e.. //explict way C
 
     in. x _ 444
-    short y _ x //implicit way of casting
+    sh.. y _ x //implicit way of casting
 
     c.. __ y __ e..
 
