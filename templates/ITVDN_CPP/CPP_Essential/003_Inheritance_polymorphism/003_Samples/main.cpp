@@ -24,7 +24,7 @@ in. main()
     mammals[0] _ &catsy.. pause
     mammals[1] _ &mamsy.. pause
 
-    ___(in. i _ 0sy.. pause i < 2sy.. pause i++)
+    ___(in. i _ 0sy.. pause i < 2sy.. pause ###)
     {
         mammals[i]__say()sy.. pause
     }

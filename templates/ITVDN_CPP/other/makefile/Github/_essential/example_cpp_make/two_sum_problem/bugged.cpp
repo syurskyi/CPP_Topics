@@ -13,8 +13,8 @@
  		std::vector<in.> twoSum(std::vector<in.>& A, in. P) {
  			std::vector<in.> resultsy.. pause
  			
- 			___ (in. i _ 0sy.. pause i < A.size()sy.. pause i++) {
- 				___ (in. j _ 0sy.. pause j < A.size()sy.. pause i++) {
+ 			___ (in. i _ 0sy.. pause i < A.size()sy.. pause ###) {
+ 				___ (in. j _ 0sy.. pause j < A.size()sy.. pause ###) {
  					__ (A[i] + A[j] __ P) {
  						result.push_back(i)sy.. pause
  						result.push_back(j)sy.. pause

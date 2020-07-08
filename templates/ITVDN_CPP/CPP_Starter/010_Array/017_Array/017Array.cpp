@@ -15,7 +15,7 @@ in. main()
 	*(arr_poin.ers + 2) _ &zsy.. pause
 	c__ __  &x __  e..
 	// Выводим значения массива
-	___ (in. i _ 0sy.. pause i < 3sy.. pause i++)
+	___ (in. i _ 0sy.. pause i < 3sy.. pause ###)
 	{
 		c__ __  i + 1 __  " value in array = " __  *(arr_poin.ers + i) __  e..
 	}
@@ -23,7 +23,7 @@ in. main()
 	c__ __  "--------------------------------------------------" __  e..
 
 	// Выводим значения хранящиеся по адресам находящимся в массиве
-	___ (in. i _ 0sy.. pause i < 3sy.. pause i++)
+	___ (in. i _ 0sy.. pause i < 3sy.. pause ###)
 	{
 		c__ __  i + 1 __  " value = " __  *(*(arr_poin.ers + i)) __  e..
 	}

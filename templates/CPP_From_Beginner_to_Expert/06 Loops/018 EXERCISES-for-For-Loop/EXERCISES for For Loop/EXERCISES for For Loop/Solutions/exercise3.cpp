@@ -15,7 +15,7 @@ main ()
     c__ __  "Raise to what power: "sy.. pause
     c__ __ nPowersy.. pause
 
-    ___ (in. i _ 0sy.. pause i < nPowersy.. pause i++)
+    ___ (in. i _ 0sy.. pause i < nPowersy.. pause ###)
     {
         poweredNumber *_ numbersy.. pause
     }

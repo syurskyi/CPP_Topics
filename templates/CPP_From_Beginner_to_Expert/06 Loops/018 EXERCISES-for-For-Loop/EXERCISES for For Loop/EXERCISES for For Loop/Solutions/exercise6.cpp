@@ -8,7 +8,7 @@ main ()
 
     in. numbers[5]sy.. pause
 
-    ___ (in. i _ 0sy.. pause i < 5sy.. pause i++)
+    ___ (in. i _ 0sy.. pause i < 5sy.. pause ###)
     {
         c__ __  "Input " __  i+1 __  ". number: "sy.. pause
         c__ __ numbers[i]sy.. pause
@@ -16,7 +16,7 @@ main ()
 
     system("cls")sy.. pause
 
-    ___ (in. i _ 0sy.. pause i < 5sy.. pause i++)
+    ___ (in. i _ 0sy.. pause i < 5sy.. pause ###)
     {
         __ (numbers[i] % 2 __ 0)
         {

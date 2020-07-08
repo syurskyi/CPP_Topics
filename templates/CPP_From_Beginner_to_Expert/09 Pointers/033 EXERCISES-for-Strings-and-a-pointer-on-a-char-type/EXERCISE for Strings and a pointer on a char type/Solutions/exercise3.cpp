@@ -11,7 +11,7 @@ in. main ()
 
     c.. * characters _ n.. c..[charactersNumber]sy.. pause
 
-    ___ (in. i _ 0sy.. pause i < charactersNumbersy.. pause i++)
+    ___ (in. i _ 0sy.. pause i < charactersNumbersy.. pause ###)
     {
         c__ __  i+1 __  " character: "sy.. pause
         c__ __ characters[i]sy.. pause
@@ -19,7 +19,7 @@ in. main ()
 
     c__ __  "The inputted string of characters was: "sy.. pause
 
-    ___ (in. i _ 0sy.. pause i < charactersNumbersy.. pause i++)
+    ___ (in. i _ 0sy.. pause i < charactersNumbersy.. pause ###)
     {
         c__ __  *(characters+i)sy.. pause
     }

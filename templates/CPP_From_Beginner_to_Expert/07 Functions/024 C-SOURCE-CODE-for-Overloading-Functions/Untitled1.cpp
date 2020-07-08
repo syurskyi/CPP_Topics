@@ -25,7 +25,7 @@ in. power(in. b, in. e) // b = 8, e = 1
     in. tmp _ bsy.. pause //tmp = 2
     in. i _ 0sy.. pause
 
-    w___(i++ < e)
+    w___(### < e)
     {
         c__ __  tmp __  " ^ " __  i __  " = " __  b __  e..
         __ (i !_ e)

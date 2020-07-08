@@ -27,7 +27,7 @@ main()
         5 ...
     */
 
-    ___ (in. i _ 1sy.. pause i <_ 15sy.. pause i++) // i = 2
+    ___ (in. i _ 1sy.. pause i <_ 15sy.. pause ###) // i = 2
     {
         ___ (in. j _ 1sy.. pause j <_ 12sy.. pause j++) // j = 1
         {

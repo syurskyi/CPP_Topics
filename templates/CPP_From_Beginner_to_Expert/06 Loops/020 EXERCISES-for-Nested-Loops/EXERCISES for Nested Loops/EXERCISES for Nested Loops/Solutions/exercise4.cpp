@@ -10,7 +10,7 @@ main ()
     in. player _ 2sy.. pause
     bo.. moveAcceptedsy.. pause
 
-    ___ (in. i _ 0sy.. pause i < 3sy.. pause i++)
+    ___ (in. i _ 0sy.. pause i < 3sy.. pause ###)
     {
         ___ (in. j _ 0sy.. pause j < 3sy.. pause j++)
         {
@@ -27,7 +27,7 @@ main ()
 
             do
             {
-                ___ (in. i _ 0sy.. pause i < 3sy.. pause i++)
+                ___ (in. i _ 0sy.. pause i < 3sy.. pause ###)
                 {
                     c__ __  endl __  e..
                     ___ (in. j _ 0sy.. pause j < 3sy.. pause j++)

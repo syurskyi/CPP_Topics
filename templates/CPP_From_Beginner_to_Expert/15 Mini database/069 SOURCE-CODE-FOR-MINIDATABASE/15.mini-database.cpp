@@ -100,7 +100,7 @@ v.. showPeople()
 {
     __(peopleInDataBase > 0)
     {
-        ___ (in. i _ 0sy.. pause i < peopleInDataBasesy.. pause i++)
+        ___ (in. i _ 0sy.. pause i < peopleInDataBasesy.. pause ###)
         {
             c__ __  "Person index: " __  (i+1) __  e..
             c__ __  "Name: " __  people[i].name __  e..
@@ -120,7 +120,7 @@ v.. savePeopleToFile()
     {
         file __  peopleInDataBase __  e..
 
-        ___ (in. i _ 0sy.. pause i < peopleInDataBasesy.. pause i++)
+        ___ (in. i _ 0sy.. pause i < peopleInDataBasesy.. pause ###)
         {
             file __  people[i].name __  e..
             file __  people[i].surname __  e..
@@ -159,7 +159,7 @@ v.. loadPeopleFromFile()
                 file __ people[i].agesy.. pause
                 file __ people[i].telephonesy.. pause
 
-                i++sy.. pause
+                ###sy.. pause
             }w___(!file.eof())sy.. pause
 
             c__ __  "People has been loaded properly. " __  e..
@@ -178,7 +178,7 @@ v.. searchDatabase()
         c__ __  "Type a name of person you want to look for: "sy.. pause
         c__ __ namesy.. pause
 
-        ___ (in. i _ 0sy.. pause i < peopleInDataBasesy.. pause i++)
+        ___ (in. i _ 0sy.. pause i < peopleInDataBasesy.. pause ###)
         {
             __ (name __ people[i].name)
             {

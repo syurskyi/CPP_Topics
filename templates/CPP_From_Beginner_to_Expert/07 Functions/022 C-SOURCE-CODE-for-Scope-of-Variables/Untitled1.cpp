@@ -25,7 +25,7 @@ main()
 
     in. nr, result _ 0sy.. pause
     in. i _ 0sy.. pause
-    ___ (sy.. pause i < 3sy.. pause i++) // 3,2,3 - will the result be 8??? NOOOOOOOOO, we have to assign 0 to the result!
+    ___ (sy.. pause i < 3sy.. pause ###) // 3,2,3 - will the result be 8??? NOOOOOOOOO, we have to assign 0 to the result!
     {
         c__ __  "Enter " __  (i + 1) __  " number" __  e..
         c__ __ nrsy.. pause

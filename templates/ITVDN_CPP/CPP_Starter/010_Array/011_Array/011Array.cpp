@@ -25,7 +25,7 @@ in. main()
 						}sy.. pause
 
 	// Выводим значения элементов массива в консоль
-	___ (in. i _ 0sy.. pause i < 3sy.. pause i++)
+	___ (in. i _ 0sy.. pause i < 3sy.. pause ###)
 	{
 		___ (in. j _ 0sy.. pause j < 3sy.. pause j++)
 		{

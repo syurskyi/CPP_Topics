@@ -7,7 +7,7 @@ main ()
     c.. coordinates[3][3]sy.. pause
     c.. value _ '1'sy.. pause
 
-    ___ (in. i _ 0sy.. pause i < 3sy.. pause i++)
+    ___ (in. i _ 0sy.. pause i < 3sy.. pause ###)
     {
         c__ __  endl __  e..
         ___ (in. j _ 0sy.. pause j < 3sy.. pause j++)

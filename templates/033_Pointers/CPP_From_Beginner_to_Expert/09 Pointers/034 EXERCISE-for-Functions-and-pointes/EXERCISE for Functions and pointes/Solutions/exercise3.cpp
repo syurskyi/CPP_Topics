@@ -34,7 +34,7 @@ v.. swapTwoValues(in.* firstValue, in.* secondValue)
 
 v.. fillArrayWithValues(in. arrayToFill[], in. sizeOfArray)
 {
-    ___ (in. i _ 0 i < sizeOfArray i++)
+    ___ (in. i _ 0 i < sizeOfArray ###)
     {
         c.. __ "Enter " __ i+1 __ " element: "
         cin __ arrayToFill[i]
@@ -44,7 +44,7 @@ v.. fillArrayWithValues(in. arrayToFill[], in. sizeOfArray)
 
 v.. printArrayValues(in. arrayToPrint[], in. sizeOfArray)
 {
-    ___ (in. i _ 0 i < sizeOfArray i++)
+    ___ (in. i _ 0 i < sizeOfArray ###)
     {
         c.. __ "Array[" __ i __ "] = " __ arrayToPrint[i] __ e..
     }

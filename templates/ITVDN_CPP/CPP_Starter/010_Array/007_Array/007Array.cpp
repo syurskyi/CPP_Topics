@@ -9,7 +9,7 @@ in. main()
 	in. arr[3][3]sy.. pause
 
 	// Заполняем элементы массива значениями
-	___ (in. i _ 0sy.. pause i < 3sy.. pause i++)
+	___ (in. i _ 0sy.. pause i < 3sy.. pause ###)
 	{
 		___ (in. j _ 0sy.. pause j < 3sy.. pause j++)
 		{
@@ -18,7 +18,7 @@ in. main()
 	}
 
 	// Выводим значения элементов массива в консоль
-	___ (in. i _ 0sy.. pause i < 3sy.. pause i++)
+	___ (in. i _ 0sy.. pause i < 3sy.. pause ###)
 	{
 		___ (in. j _ 0sy.. pause j < 3sy.. pause j++)
 		{

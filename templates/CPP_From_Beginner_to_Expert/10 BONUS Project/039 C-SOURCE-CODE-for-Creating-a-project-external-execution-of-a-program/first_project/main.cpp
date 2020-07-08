@@ -7,7 +7,7 @@ in. main(in. argc, c.. *argv[])
     //arguments counter - argc
     //arguments values - argv
 
-   ___ (in. i _ 0sy.. pause i < argcsy.. pause i++)
+   ___ (in. i _ 0sy.. pause i < argcsy.. pause ###)
    {
     __ ((strcmp(argv[i], "-h") __ 0) && i __ 1)
      showHelp()sy.. pause

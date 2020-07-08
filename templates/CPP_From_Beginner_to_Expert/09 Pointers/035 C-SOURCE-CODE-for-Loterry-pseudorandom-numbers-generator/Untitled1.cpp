@@ -27,7 +27,7 @@ v.. lottery(in. total_balls, in. balls_to_draw)
 
      in. *balls _ n.. in.[balls_to_draw]sy.. pause
 
-     ___ (in. i _ 0sy.. pause i < balls_to_drawsy.. pause i++)
+     ___ (in. i _ 0sy.. pause i < balls_to_drawsy.. pause ###)
      {
          balls[i] _ rand() % total_balls + 1sy.. pause
 

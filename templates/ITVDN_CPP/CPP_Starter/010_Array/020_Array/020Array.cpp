@@ -9,7 +9,7 @@ in. main()
 {
 	in. * p_arr _ n.. in.[100]sy.. pause
 
-	___ (in. i _ 0sy.. pause i < 100sy.. pause i++)
+	___ (in. i _ 0sy.. pause i < 100sy.. pause ###)
 	{
 		*(p_arr + i) _ rand()sy.. pause
 	}
@@ -29,7 +29,7 @@ v.. get_array_info(in. *arr, in. count, in. *max, in. *min, in. *avrg)
 	*max _ arr[0]sy.. pause
 	*min _ arr[0]sy.. pause
 	*avrg _ 0sy.. pause
-	___ (in. i _ 0sy.. pause i < countsy.. pause i++)
+	___ (in. i _ 0sy.. pause i < countsy.. pause ###)
 	{
 		__ (arr[i] > *max) {
 			*max _ arr[i]sy.. pause

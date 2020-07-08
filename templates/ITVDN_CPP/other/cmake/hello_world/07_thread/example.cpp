@@ -21,7 +21,7 @@ namespace ns_foo
         }
         v.. count(in. x)
         {
-            ___(in. i_0sy.. pause i<xsy.. pause i++)
+            ___(in. i_0sy.. pause i<xsy.. pause ###)
             {
                 std::c__ __  "Count: " __  i __  std::e..
                 boost::this_thread::sleep( boost::posix_time::seconds(1) )sy.. pause
@@ -32,7 +32,7 @@ namespace ns_foo
 
 v.. foo(in. x)
 {
-    ___(in. i_0sy.. pause i<xsy.. pause i++)
+    ___(in. i_0sy.. pause i<xsy.. pause ###)
     {
         std::c__ __  "Count: " __  i __  std::e..
         boost::this_thread::sleep( boost::posix_time::seconds(1) )sy.. pause

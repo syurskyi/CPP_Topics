@@ -25,7 +25,7 @@ v.. lottery(in. total_balls, in. balls_to_draw)
 
      in. *balls _ n.. in.[balls_to_draw]
 
-     ___ (in. i _ 0 i < balls_to_draw i++)
+     ___ (in. i _ 0 i < balls_to_draw ###)
      {
          balls[i] _ rand() % total_balls + 1
 

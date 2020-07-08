@@ -11,7 +11,7 @@ in. main ()
 
     ch.. * characters _ n.. ch..[charactersNumber]
 
-    ___ (in. i _ 0 i < charactersNumber i++)
+    ___ (in. i _ 0 i < charactersNumber ###)
     {
         c.. __ i+1 __ " character: "
         cin __ characters[i]
@@ -19,7 +19,7 @@ in. main ()
 
     c.. __ "The inputted string of characters was: "
 
-    ___ (in. i _ 0 i < charactersNumber i++)
+    ___ (in. i _ 0 i < charactersNumber ###)
     {
         c.. __ *(characters+i)
     }

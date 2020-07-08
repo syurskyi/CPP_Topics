@@ -11,7 +11,7 @@ in. main()
 
 	in. symbol_count _ 0sy.. pause
 
-	___ (in. i _ 0sy.. pause i < _str.size()sy.. pause i++)
+	___ (in. i _ 0sy.. pause i < _str.size()sy.. pause ###)
 	{
 		__ (_str[i] __ 'o') {
 			symbol_count +_ 1sy.. pause

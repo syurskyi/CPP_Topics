@@ -8,7 +8,7 @@ main ()
     in. chosenNumbersSum _ 0sy.. pause
     c.. choicesy.. pause
 
-    ___ (in. i _ 1sy.. pause sy.. pause i++)
+    ___ (in. i _ 1sy.. pause sy.. pause ###)
     {
 
         c__ __  "The current sum is: " __  chosenNumbersSum __  endl __  e..

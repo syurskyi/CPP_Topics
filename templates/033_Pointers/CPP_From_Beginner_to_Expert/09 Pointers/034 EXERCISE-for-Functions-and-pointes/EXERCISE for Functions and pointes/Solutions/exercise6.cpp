@@ -71,7 +71,7 @@ v.. swapTwoValues(in.* firstValue, in.* secondValue)
 
 v.. fillArrayWithValues(in. arrayToFill[], in. sizeOfArray)
 {
-    ___ (in. i _ 0 i < sizeOfArray i++)
+    ___ (in. i _ 0 i < sizeOfArray ###)
     {
         c.. __ "Enter " __ i+1 __ " element: "
         cin __ arrayToFill[i]
@@ -81,7 +81,7 @@ v.. fillArrayWithValues(in. arrayToFill[], in. sizeOfArray)
 
 v.. printArrayValues(in. arrayToPrint[], in. sizeOfArray)
 {
-    ___ (in. i _ 0 i < sizeOfArray i++)
+    ___ (in. i _ 0 i < sizeOfArray ###)
     {
         c.. __ "Array[" __ i __ "] = " __ arrayToPrint[i] __ e..
     }
@@ -90,7 +90,7 @@ v.. printArrayValues(in. arrayToPrint[], in. sizeOfArray)
 
 v.. bubbleSort(in. arrayToSort[], in. sizeOfArray, in. orderOfSequence)
 {
-    ___ (in. i _ 0 i < sizeOfArray-1 i++)
+    ___ (in. i _ 0 i < sizeOfArray-1 ###)
     {
         ___ (in. j _ 0 j < sizeOfArray-1 j++)
         {
@@ -110,7 +110,7 @@ v.. bubbleSort(in. arrayToSort[], in. sizeOfArray, in. orderOfSequence)
 v.. selectionSort(in. arrayToSort[], in. sizeOfArray, in. orderOfSequence)
 {
     in. limitIndex
-    ___ (in. i _ 0 i < sizeOfArray - 1 i++)
+    ___ (in. i _ 0 i < sizeOfArray - 1 ###)
     {
         limitIndex _ i
         ___ (in. j _ i j < sizeOfArray j++)

@@ -11,7 +11,7 @@ main ()
     c__ __  "Input maximum number you want to check: "sy.. pause
     c__ __ maximumNumbersy.. pause
 
-    ___ (in. i _ 1sy.. pause i <_ maximumNumbersy.. pause i++)
+    ___ (in. i _ 1sy.. pause i <_ maximumNumbersy.. pause ###)
     {
         __ (i % 2 __ 1)
             c___

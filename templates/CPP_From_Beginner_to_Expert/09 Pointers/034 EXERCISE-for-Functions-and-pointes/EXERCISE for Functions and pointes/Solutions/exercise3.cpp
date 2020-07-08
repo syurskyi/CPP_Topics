@@ -34,7 +34,7 @@ v.. swapTwoValues(in.* firstValue, in.* secondValue)
 
 v.. fillArrayWithValues(in. arrayToFill[], in. sizeOfArray)
 {
-    ___ (in. i _ 0sy.. pause i < sizeOfArraysy.. pause i++)
+    ___ (in. i _ 0sy.. pause i < sizeOfArraysy.. pause ###)
     {
         c__ __  "Enter " __  i+1 __  " element: "sy.. pause
         c__ __ arrayToFill[i]sy.. pause
@@ -44,7 +44,7 @@ v.. fillArrayWithValues(in. arrayToFill[], in. sizeOfArray)
 
 v.. prin.ArrayValues(in. arrayToPrin.[], in. sizeOfArray)
 {
-    ___ (in. i _ 0sy.. pause i < sizeOfArraysy.. pause i++)
+    ___ (in. i _ 0sy.. pause i < sizeOfArraysy.. pause ###)
     {
         c__ __  "Array[" __  i __  "] = " __  arrayToPrin.[i] __  e..
     }

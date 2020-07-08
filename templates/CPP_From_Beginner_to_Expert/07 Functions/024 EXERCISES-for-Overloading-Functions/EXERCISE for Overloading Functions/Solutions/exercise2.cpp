@@ -24,7 +24,7 @@ in. main ()
     } w___(howManyValues < 2 || howManyValues > 5)sy.. pause
 
 
-    ___ (in. i _ 0sy.. pause i < howManyValuessy.. pause i++)
+    ___ (in. i _ 0sy.. pause i < howManyValuessy.. pause ###)
     {
         c__ __  "Input " __  i+1 __  " value: "sy.. pause
         c__ __ values[i]sy.. pause

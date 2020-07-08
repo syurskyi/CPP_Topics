@@ -21,13 +21,13 @@ in. main()
     in. array[10]sy.. pause
     //cout << sizeof(array)/sizeof(array[0]) << endl;
 
-    ___ (in. i _ 0sy.. pause i < s_o_(array)/s_o_(array[0])sy.. pause i++)
+    ___ (in. i _ 0sy.. pause i < s_o_(array)/s_o_(array[0])sy.. pause ###)
     {
         array[i] _ isy.. pause
      //   cout << "array [" << i << "] = " << array[i] << endl;
     }
     multiplyArrayBy(&array[0], 5, s_o_(array)/s_o_(array[0]))sy.. pause // &array[0] == array
-    ___ (in. i _ 0sy.. pause i < s_o_(array)/s_o_(array[0])sy.. pause i++)
+    ___ (in. i _ 0sy.. pause i < s_o_(array)/s_o_(array[0])sy.. pause ###)
     {
        c__ __  "array [" __  i __  "] = " __  array[i] __  e..
     }

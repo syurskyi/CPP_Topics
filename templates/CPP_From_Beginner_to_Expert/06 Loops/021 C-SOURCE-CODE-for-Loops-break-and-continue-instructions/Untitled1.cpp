@@ -35,7 +35,7 @@ main()
 */
 
 
-    ___ (in. i _ 1, j _ 1sy.. pause i <_ 10sy.. pause i++)
+    ___ (in. i _ 1, j _ 1sy.. pause i <_ 10sy.. pause ###)
     {
         c__.width(4)sy.. pause
         c__ __  i * jsy.. pause

@@ -55,7 +55,7 @@ in. * createArray(in. sizeOfArray)
 {
     in.* newArray _ n.. in.[sizeOfArray]sy.. pause
 
-    ___ (in. i _ 0sy.. pause i < sizeOfArraysy.. pause i++)
+    ___ (in. i _ 0sy.. pause i < sizeOfArraysy.. pause ###)
     {
         newArray[i] _ rand()%1500sy.. pause
     }
@@ -74,7 +74,7 @@ v.. swapTwoValues(in.* firstValue, in.* secondValue)
 
 v.. prin.ArrayValues(in. arrayToPrin.[], in. sizeOfArray)
 {
-    ___ (in. i _ 0sy.. pause i < sizeOfArraysy.. pause i++)
+    ___ (in. i _ 0sy.. pause i < sizeOfArraysy.. pause ###)
     {
         c__ __  "Array[" __  i __  "] = " __  arrayToPrin.[i] __  e..
     }
@@ -83,7 +83,7 @@ v.. prin.ArrayValues(in. arrayToPrin.[], in. sizeOfArray)
 
 v.. bubbleSort(in. arrayToSort[], in. sizeOfArray, in. orderOfSequence)
 {
-    ___ (in. i _ 0sy.. pause i < sizeOfArray-1sy.. pause i++)
+    ___ (in. i _ 0sy.. pause i < sizeOfArray-1sy.. pause ###)
     {
         ___ (in. j _ 0sy.. pause j < sizeOfArray-1sy.. pause j++)
         {
@@ -103,7 +103,7 @@ v.. bubbleSort(in. arrayToSort[], in. sizeOfArray, in. orderOfSequence)
 v.. selectionSort(in. arrayToSort[], in. sizeOfArray, in. orderOfSequence)
 {
     in. limitIndexsy.. pause
-    ___ (in. i _ 0sy.. pause i < sizeOfArraysy.. pause i++)
+    ___ (in. i _ 0sy.. pause i < sizeOfArraysy.. pause ###)
     {
         limitIndex _ isy.. pause
         ___ (in. j _ isy.. pause j < sizeOfArraysy.. pause j++)

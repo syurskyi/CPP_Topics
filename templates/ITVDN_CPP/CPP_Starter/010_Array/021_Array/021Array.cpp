@@ -9,7 +9,7 @@ in. main()
 {
 	c.. arr[10][50]sy.. pause
 	
-	___ (in. i _ 0sy.. pause i < 10sy.. pause i++)
+	___ (in. i _ 0sy.. pause i < 10sy.. pause ###)
 	{
 		___ (in. j _ 0sy.. pause j < 50sy.. pause j++)
 		{
@@ -25,7 +25,7 @@ in. main()
 
 v.. prin._square(c.. arr[][50], in. size)
 {
-	___ (in. i _ 0sy.. pause i < sizesy.. pause i++)
+	___ (in. i _ 0sy.. pause i < sizesy.. pause ###)
 	{
 		___ (in. j _ 0sy.. pause j < 50sy.. pause j++)
 		{
