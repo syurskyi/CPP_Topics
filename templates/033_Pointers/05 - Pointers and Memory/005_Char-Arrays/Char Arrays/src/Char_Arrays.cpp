@@ -8,11 +8,11 @@
 u.. s..
 
 in. main() {
-	char texts[] = "hello";
+	char texts[] _ "hello"
 
 	c.. __ texts __ e..
 
-	for(in. i=0; i<sizeof(texts); i++) {
+	for(in. i_0 i<sizeof(texts) i++) {
 		c.. __ i __ ": " __ (in.)texts[i] __ e..
 	}
 

@@ -9,21 +9,21 @@ u.. s..
 
 in. main() {
 
-	char text[] = "Hello there!";
+	char text[] _ "Hello there!"
 
-	in. nChars = sizeof(text)-1;
+	in. nChars _ sizeof(text)-1
 
-	char *pStart = text;
-	char *pEnd = text + nChars - 1;
+	char *pStart _ text
+	char *pEnd _ text + nChars - 1
 
 	while(pStart < pEnd) {
 
-		char save = *pStart;
-		*pStart = *pEnd;
-		*pEnd = save;
+		char save _ *pStart
+		*pStart _ *pEnd
+		*pEnd _ save
 
-		pStart++;
-		pEnd--;
+		pStart++
+		pEnd--
 	}
 
 	c.. __ text __ e..

@@ -4,11 +4,11 @@ u.. s..
 
 in. main() {
     
-    in. scores[] {100, 95, 89};
+    in. scores[] {100, 95, 89}
     
     c.. __ "Value of scores: " __ scores __ e..
     
-    in. *score_ptr {scores};
+    in. *score_ptr {scores}
     c.. __ "Value of score_ptr: " __ score_ptr __ e..
     
     c.. __ "\nArray subscript notation -------------------------" __ e..

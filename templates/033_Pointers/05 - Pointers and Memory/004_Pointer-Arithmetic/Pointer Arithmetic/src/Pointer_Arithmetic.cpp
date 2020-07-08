@@ -11,39 +11,39 @@ u.. s..
 
 in. main() {
 
-	const in. NSTRINGS = 5;
+	const in. NSTRINGS _ 5
 
-	string texts[NSTRINGS] = {"one", "two", "three", "four", "five"};
+	string texts[NSTRINGS] _ {"one", "two", "three", "four", "five"}
 
-	string *pTexts = texts;
+	string *pTexts _ texts
 
-	pTexts += 3;
-
-	c.. __ *pTexts __ e..
-
-	pTexts -= 2;
+	pTexts +_ 3
 
 	c.. __ *pTexts __ e..
 
-	string *pEnd = &texts[NSTRINGS];
-	pTexts = &texts[0];
+	pTexts -_ 2
 
-	while(pTexts != pEnd) {
+	c.. __ *pTexts __ e..
+
+	string *pEnd _ &texts[NSTRINGS]
+	pTexts _ &texts[0]
+
+	while(pTexts !_ pEnd) {
 		c.. __ *pTexts __ e..
-		pTexts++;
+		pTexts++
 	}
 
 	// Set pTexts back to start.
-	pTexts = &texts[0];
+	pTexts _ &texts[0]
 
-	long elements = (long)(pEnd - pTexts);
+	long elements _ (long)(pEnd - pTexts)
 
 	c.. __ elements __ e..
 
 	// Set pTexts back to start.
-	pTexts = &texts[0];
+	pTexts _ &texts[0]
 
-	pTexts += NSTRINGS/2;
+	pTexts +_ NSTRINGS/2
 	c.. __ *pTexts __ e..
 
 	r_ _

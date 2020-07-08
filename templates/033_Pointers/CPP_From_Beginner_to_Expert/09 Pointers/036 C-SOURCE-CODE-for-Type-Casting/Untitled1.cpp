@@ -5,16 +5,16 @@ u.. s..
 
 in. main()
 {
-    d.. var = 5.6;
+    d.. var _ 5.6
 
-    in. a = 5;
-    in. b = 7;
+    in. a _ 5
+    in. b _ 7
     c.. __ (d..)a / b __ e..
 
     c.. __ (in.) var __ e.. //explict way C
 
-    in. x = 444;
-    short y = x; //implicit way of casting
+    in. x _ 444
+    short y _ x //implicit way of casting
 
     c.. __ y __ e..
 
@@ -22,9 +22,9 @@ in. main()
     c.. __  static_cast<in.>(var) __ e.. //explict way in C++
 
 
-    char ch;
+    char ch
 
-    cin >> ch;
+    cin >> ch
 
     c.. __ (in.)ch __ e..
     r_ _

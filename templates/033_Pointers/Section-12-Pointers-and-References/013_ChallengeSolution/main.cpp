@@ -41,8 +41,8 @@
 u.. s..
 
 // Function prototypes
-in. * apply_all(const in. *const arr1, size_t size1, const in. *const arr2, size_t size2);
-v.. print(const in. *const array, size_t size);
+in. * apply_all(const in. *const arr1, size_t size1, const in. *const arr2, size_t size2)
+v.. print(const in. *const array, size_t size)
 
 
 /*******************************************************************
@@ -57,18 +57,18 @@ This function expects:
     elements of arr1 and each product is stored in the newly created array
 ********************************************************************/
 in. * apply_all(const in. *const arr1, size_t size1, const in. *const arr2, size_t size2) {
-    in. *new_array {};
+    in. *new_array {}
     
-    new_array = new in.[size1 * size2];
+    new_array _ new in.[size1 * size2]
     
-    in. position {0};
-    for (size_t i{0}; i < size2; ++i) {
-        for (size_t j{0}; j< size1; ++j) {
-            new_array[position] = arr1[j] * arr2[i];
-            ++position;
+    in. position {0}
+    for (size_t i{0} i < size2 ++i) {
+        for (size_t j{0} j< size1 ++j) {
+            new_array[position] _ arr1[j] * arr2[i]
+            ++position
         }
     }
-    return new_array;
+    return new_array
 }
 /*******************************************************************
 This function expects:
@@ -79,33 +79,33 @@ This function expects:
     in the array
 ********************************************************************/
 v.. print(const in. *const arr, size_t size) {
-    c.. __ "[ ";
-    for (size_t i{0}; i<size;++i)
-        c.. __ arr[i] __ " ";
-    c.. __  "]";
+    c.. __ "[ "
+    for (size_t i{0} i<size++i)
+        c.. __ arr[i] __ " "
+    c.. __  "]"
     c.. __ e..
 }
 
 in. main() {
-    const size_t array1_size {5};
-    const size_t array2_size {3};
+    const size_t array1_size {5}
+    const size_t array2_size {3}
     
-    in. array1[] {1,2,3,4,5};
-    in. array2[] {10,20,30};
+    in. array1[] {1,2,3,4,5}
+    in. array2[] {10,20,30}
     
-    c.. __ "Array 1: " ;
-    print(array1,array1_size);
+    c.. __ "Array 1: "
+    print(array1,array1_size)
     
-    c.. __ "Array 2: " ;
-    print(array2,array2_size);
+    c.. __ "Array 2: "
+    print(array2,array2_size)
     
-    in. *results = apply_all(array1, array1_size, array2, array2_size);
-    constexpr size_t results_size {array1_size * array2_size};
+    in. *results _ apply_all(array1, array1_size, array2, array2_size)
+    constexpr size_t results_size {array1_size * array2_size}
     
-    c.. __ "Result: " ;
-    print(results,results_size);
+    c.. __ "Result: "
+    print(results,results_size)
     
-    delete [] results;
+    delete [] results
     c.. __ e..
     r_ _
 }

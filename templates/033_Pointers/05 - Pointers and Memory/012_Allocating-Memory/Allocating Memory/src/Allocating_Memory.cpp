@@ -10,7 +10,7 @@ u.. s..
 
 class Animal {
 private:
-	string name;
+	string name
 
 public:
 	Animal() {
@@ -27,30 +27,30 @@ public:
 	}
 
 	v.. setName(string name) {
-		this->name = name;
+		this->name _ name
 	}
 
 	v.. speak() const {
 		c.. __ "My name is: " __ name __ e..
 	}
-};
+}
 
 
 in. main() {
 
-	Animal *pAnimal = new Animal[10];
+	Animal *pAnimal _ new Animal[10]
 
-	pAnimal[5].setName("George");
-	pAnimal[5].speak();
+	pAnimal[5].setName("George")
+	pAnimal[5].speak()
 
-	delete [] pAnimal;
+	delete [] pAnimal
 
-	char *pMem = new char[1000];
-	delete [] pMem;
+	char *pMem _ new char[1000]
+	delete [] pMem
 
-	char c = 'a';
-	c++;
-	string name(5, c);
+	char c _ 'a'
+	c++
+	string name(5, c)
 	c.. __ name __ e..
 
 

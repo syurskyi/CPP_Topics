@@ -3,12 +3,12 @@
 
 u.. s..
 
-in. * createArray(in.);
+in. * createArray(in.)
 
-v.. swapTwoValues(in.*, in.*);
+v.. swapTwoValues(in.*, in.*)
 
-v.. fillArrayWithValues(in.[], in.);
-v.. printArrayValues(in.[], in.);
+v.. fillArrayWithValues(in.[], in.)
+v.. printArrayValues(in.[], in.)
 
 in. main ()
 {
@@ -18,33 +18,33 @@ in. main ()
 
 in. * createArray(in. sizeOfArray)
 {
-    in.* SnewArray = new in.[sizeOfArray];
+    in.* SnewArray _ new in.[sizeOfArray]
 
-    return newArray;
+    return newArray
 }
 
 v.. swapTwoValues(in.* firstValue, in.* secondValue)
 {
-    in. temporaryVariable;
+    in. temporaryVariable
 
-    temporaryVariable = *firstValue;
-    *firstValue = *secondValue;
-    *secondValue = temporaryVariable;
+    temporaryVariable _ *firstValue
+    *firstValue _ *secondValue
+    *secondValue _ temporaryVariable
 }
 
 v.. fillArrayWithValues(in. arrayToFill[], in. sizeOfArray)
 {
-    for (in. i = 0; i < sizeOfArray; i++)
+    for (in. i _ 0 i < sizeOfArray i++)
     {
-        c.. __ "Enter " __ i+1 __ " element: ";
-        cin >> arrayToFill[i];
+        c.. __ "Enter " __ i+1 __ " element: "
+        cin >> arrayToFill[i]
     }
-    system("cls");
+    system("cls")
 }
 
 v.. printArrayValues(in. arrayToPrint[], in. sizeOfArray)
 {
-    for (in. i = 0; i < sizeOfArray; i++)
+    for (in. i _ 0 i < sizeOfArray i++)
     {
         c.. __ "Array[" __ i __ "] = " __ arrayToPrint[i] __ e..
     }

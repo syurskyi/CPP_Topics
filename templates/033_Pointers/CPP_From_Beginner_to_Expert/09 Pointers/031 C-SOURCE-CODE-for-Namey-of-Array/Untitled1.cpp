@@ -4,12 +4,12 @@ u.. s..
 
 in. main()
 {
-    in. a[3];
-    a[0] = 0;
-    a[1] = 20;
-    a[2] = 40;
-    short in. zm;
-    in. * const p = &a[0];
+    in. a[3]
+    a[0] _ 0
+    a[1] _ 20
+    a[2] _ 40
+    short in. zm
+    in. * const p _ &a[0]
 
     c.. __ p __ e..
     c.. __ a __ e..
@@ -40,7 +40,7 @@ in. main()
 
    // cout << a++ << endl; // a++  a = a + 1
 
-    in. * p2 = &a[0];
+    in. * p2 _ &a[0]
 
     c.. __ *p2 __ e..  // 0
     c.. __ ++*p2 __ e.. //1

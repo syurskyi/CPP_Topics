@@ -2,9 +2,9 @@
 
 u.. s..
 
-in. * createArray(in.);
+in. * createArray(in.)
 
-v.. swapTwoValues(in.*, in.*);
+v.. swapTwoValues(in.*, in.*)
 
 in. main ()
 {
@@ -14,18 +14,18 @@ in. main ()
 
 in. * createArray(in. sizeOfArray)
 {
-    in.* newArray = new in.[sizeOfArray];
+    in.* newArray _ new in.[sizeOfArray]
 
-    return newArray;
+    return newArray
 }
 
 v.. swapTwoValues(in.* firstValue, in.* secondValue)
 {
-    in. temporaryVariable;
+    in. temporaryVariable
 
-    temporaryVariable = *firstValue;
-    *firstValue = *secondValue;
-    *secondValue = temporaryVariable;
+    temporaryVariable _ *firstValue
+    *firstValue _ *secondValue
+    *secondValue _ temporaryVariable
 }
 
 

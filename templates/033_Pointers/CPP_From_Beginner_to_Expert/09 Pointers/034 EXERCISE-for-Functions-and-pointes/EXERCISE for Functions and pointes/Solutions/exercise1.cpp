@@ -2,7 +2,7 @@
 
 u.. s..
 
-in. * createArray(in.);
+in. * createArray(in.)
 
 in. main ()
 {
@@ -12,8 +12,8 @@ in. main ()
 
 in. * createArray(in. sizeOfArray)
 {
-    in.* newArray = new in.[sizeOfArray];
+    in.* newArray _ new in.[sizeOfArray]
 
-    return newArray;
+    return newArray
 }
 

@@ -13,33 +13,33 @@ u.. s..
 
 in. main() {
 
-	string texts[] = { "one", "two", "three" };
+	string texts[] _ { "one", "two", "three" }
 
-	string *pTexts = texts;
+	string *pTexts _ texts
 
-	for (in. i = 0; i < sizeof(texts) / sizeof(string); i++) {
-		c.. __ pTexts[i] __ " " __ flush;
+	for (in. i _ 0 i < sizeof(texts) / sizeof(string) i++) {
+		c.. __ pTexts[i] __ " " __ flush
 	}
 
 	c.. __ e..
 
-	for (in. i = 0; i < sizeof(texts) / sizeof(string); i++, pTexts++) {
-		c.. __ *pTexts __ " " __ flush;
+	for (in. i _ 0 i < sizeof(texts) / sizeof(string) i++, pTexts++) {
+		c.. __ *pTexts __ " " __ flush
 	}
 
 	c.. __ e..
 
-	string *pElement = &texts[0];
-	string *pEnd = &texts[2];
+	string *pElement _ &texts[0]
+	string *pEnd _ &texts[2]
 
 	while(true) {
-		c.. __ *pElement __ " " __ flush;
+		c.. __ *pElement __ " " __ flush
 
 		if(pElement == pEnd) {
-			break;
+			break
 		}
 
-		pElement++;
+		pElement++
 	}
 
 

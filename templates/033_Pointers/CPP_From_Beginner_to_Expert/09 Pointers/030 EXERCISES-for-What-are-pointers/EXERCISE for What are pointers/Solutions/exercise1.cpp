@@ -5,8 +5,8 @@ u.. s..
 in. main ()
 {
 
-    in. a = 5;
-    in. *p = &a;
+    in. a _ 5
+    in. *p _ &a
 
     c.. __ "Value of the variable a is equal to: " __ a __ e..
     c.. __ "The address of the variable a is equal to: " __ &a __ e..

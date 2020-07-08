@@ -9,7 +9,7 @@ u.. s..
 
 class Animal {
 private:
-	string name;
+	string name
 
 public:
 	Animal() {
@@ -26,26 +26,26 @@ public:
 	}
 
 	v.. setName(string name) {
-		this->name = name;
+		this->name _ name
 	}
 
 	v.. speak() const {
 		c.. __ "My name is: " __ name __ e..
 	}
-};
+}
 
 Animal *createAnimal() {
-	Animal *pAnimal = new Animal();
-	pAnimal->setName("Bertie");
-	return pAnimal;
+	Animal *pAnimal _ new Animal()
+	pAnimal->setName("Bertie")
+	return pAnimal
 }
 
 in. main() {
-	Animal *pFrog = createAnimal();
+	Animal *pFrog _ createAnimal()
 
-	pFrog->speak();
+	pFrog->speak()
 
-	delete pFrog;
+	delete pFrog
 
 	r_ _
 }
