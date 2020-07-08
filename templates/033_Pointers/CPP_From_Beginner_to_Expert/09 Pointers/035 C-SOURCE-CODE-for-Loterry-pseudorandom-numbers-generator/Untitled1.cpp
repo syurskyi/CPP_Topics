@@ -31,12 +31,12 @@ v.. lottery(in. total_balls, in. balls_to_draw)
 
          ___ (in. j _ 0 j < i + 1 j++)
          {
-            __(balls[i] == balls[j] && i !_ j)
+            __(balls[i] __ balls[j] && i !_ j)
             {
                 i--
                 b..
             }
-            ____ __ (j == i)
+            ____ __ (j __ i)
                 c.. __ balls[i] __ e..
          }
      }

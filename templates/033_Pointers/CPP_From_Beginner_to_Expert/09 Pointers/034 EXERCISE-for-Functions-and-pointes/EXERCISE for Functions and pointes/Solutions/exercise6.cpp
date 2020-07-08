@@ -94,11 +94,11 @@ v.. bubbleSort(in. arrayToSort[], in. sizeOfArray, in. orderOfSequence)
     {
         ___ (in. j _ 0 j < sizeOfArray-1 j++)
         {
-            __ (orderOfSequence == 1 && arrayToSort[j] > arrayToSort[j+1])
+            __ (orderOfSequence __ 1 && arrayToSort[j] > arrayToSort[j+1])
             {
                     swapTwoValues(arrayToSort+j, arrayToSort+j+1)
             }
-            ____ __ (orderOfSequence == 2 && arrayToSort[j] < arrayToSort[j+1])
+            ____ __ (orderOfSequence __ 2 && arrayToSort[j] < arrayToSort[j+1])
             {
                     swapTwoValues(arrayToSort+j, arrayToSort+j+1)
             }
@@ -115,11 +115,11 @@ v.. selectionSort(in. arrayToSort[], in. sizeOfArray, in. orderOfSequence)
         limitIndex _ i
         ___ (in. j _ i j < sizeOfArray j++)
         {
-            __ (orderOfSequence == 1 && arrayToSort[j] < arrayToSort[limitIndex])
+            __ (orderOfSequence __ 1 && arrayToSort[j] < arrayToSort[limitIndex])
             {
                 limitIndex _ j
             }
-            ____ __ (orderOfSequence == 2 && arrayToSort[j] > arrayToSort[limitIndex])
+            ____ __ (orderOfSequence __ 2 && arrayToSort[j] > arrayToSort[limitIndex])
             {
                 limitIndex _ j
             }
