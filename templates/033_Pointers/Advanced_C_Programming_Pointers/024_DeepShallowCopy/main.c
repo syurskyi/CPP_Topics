@@ -1,6 +1,6 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+? |s..
+? <stdlib.h>
+? <string.h>
 
 
 #define MAXBUFLEN 10
@@ -9,7 +9,7 @@
 typedef struct listitem {
 	struct listitem *next;			// pointer to next item
 	struct listitem *prev;			// pointer to previous item
-	char* data;						// a pointer to some data
+	ch..* data;						// a pointer to some data
 } LISTITEM;
 
 // this is the queue 'header'
@@ -45,13 +45,13 @@ LISTITEM* dequeue(LISTHDR *queue) {
 		queue->first = temp->next;		// and set the queue header to point to the 'second' item
 		queue->first->prev = (LISTITEM*)queue;
 	}
-	return temp;
+	r_ temp;
 }
 
 // returns the number of items in a queue
-int queue_length(LISTHDR* queue) {
+in. queue_length(LISTHDR* queue) {
 	LISTITEM *temp;
-	int length;
+	in. length;
 
 	temp = queue->first;			// get the 'first' item
 	length = 0;						// initialize the length
@@ -65,12 +65,12 @@ int queue_length(LISTHDR* queue) {
 		length = length + 1;
 	} while (temp != NULL);
 
-	return length;
+	r_ length;
 }
 
-int main() {
+in. main() {
 	LISTITEM *temp, *temp1;
-	char* pdata;
+	ch..* pdata;
 
 	// first, make empty queues
 	// ... which is a queue where the header points to itself and there are no items in it
@@ -82,18 +82,18 @@ int main() {
 	shallow_copy.last = (LISTITEM*)&shallow_copy;
 
 	// STEP1: populate the 'original' queue
-	for (int i = 0; i < 3; i++) {				// as before, populate the queue
+	for (in. i = 0; i < 3; i++) {				// as before, populate the queue
 		temp = malloc(sizeof(LISTITEM));		// allocate some memory for the new queue item
-		temp->data = (char*)malloc(MAXBUFLEN);	// set the item's data to some memory
+		temp->data = (ch..*)malloc(MAXBUFLEN);	// set the item's data to some memory
 		itoa(i, temp->data, 10);				// and set it to the character string of the index
 		enqueue(&original, temp);				// and put it in the queue
 	}
 
 	// NOTE: this shows how to iterate over a queue explicitly
-	printf("the length of the original queue is %d\n", queue_length(&original));
+	p..("the length of the original queue is %d\n", queue_length(&original));
 	temp = original.first;									// get the first item in the queue
 	do {													
-		printf("data in original queue is '%s' at address %p\n", temp->data, temp->data);
+		p..("data in original queue is '%s' at address %p\n", temp->data, temp->data);
 		temp = temp->next;									// move to next item
 	} while (temp->next != original.first);					// continue until we've been through the entire queue
 
@@ -103,7 +103,7 @@ int main() {
 	do {
 		temp1 = (LISTITEM*)malloc(sizeof(LISTITEM));		// allocate memory for a new queue item
 		memcpy(temp1, temp, sizeof(LISTITEM));				// make a copy
-		pdata = (char*)malloc(MAXBUFLEN);					// allocate memory for new data
+		pdata = (ch..*)malloc(MAXBUFLEN);					// allocate memory for new data
 		memcpy(pdata, temp->data, MAXBUFLEN);				// and copy it from the old data
 		temp1->data = pdata;								// set the item's payload to the new data
 		enqueue(&deep_copy, temp1);							// add to the 'copy' queue
@@ -111,10 +111,10 @@ int main() {
 	} while (temp->next != original.first);					// continue until we've been through the entire queue
 
 	// see what we've got
-	printf("the length of the deep copy queue is %d\n", queue_length(&deep_copy));
+	p..("the length of the deep copy queue is %d\n", queue_length(&deep_copy));
 	temp = deep_copy.first;									// get the first item in the queue
 	do {													
-		printf("data in deep copy queue is '%s' at address %p\n", temp->data, temp->data);
+		p..("data in deep copy queue is '%s' at address %p\n", temp->data, temp->data);
 		temp = temp->next;									// move to next item
 	} while (temp->next != deep_copy.first);				// continue until we've been through the entire queue
 															
@@ -130,10 +130,10 @@ int main() {
 	} while (temp->next != original.first);					// continue until we've been through the entire queue
 
 	// see what we've got														
-	printf("the length of the shallow copy queue is %d\n", queue_length(&shallow_copy));
+	p..("the length of the shallow copy queue is %d\n", queue_length(&shallow_copy));
 	temp = shallow_copy.first;										// get the first item in the queue
 	do {												
-		printf("data in shallow copy queue is '%s' at address %p\n", temp->data, temp->data);
+		p..("data in shallow copy queue is '%s' at address %p\n", temp->data, temp->data);
 		temp = temp->next;									// move to next item
 	} while (temp->next != shallow_copy.first);				// continue until we've been through the entire queue
 	
@@ -152,21 +152,21 @@ int main() {
 
 
 	// STEP5: look at the shallow and deep copies
-	printf("\n\nafter deleting the original queue ...\n");
-	printf("the length of the deep copy queue is %d\n", queue_length(&deep_copy));
+	p..("\n\nafter deleting the original queue ...\n");
+	p..("the length of the deep copy queue is %d\n", queue_length(&deep_copy));
 	temp = deep_copy.first;									// get the first item in the queue
 	do {
-		printf("data in deep copy queue is '%s' at address %p\n", temp->data, temp->data);
+		p..("data in deep copy queue is '%s' at address %p\n", temp->data, temp->data);
 		temp = temp->next;									// move to next item
 	} while (temp->next != deep_copy.first);				// continue until we've been through the entire queue
 
 	// DISASTER!!!! - the shallow queue contains references to 'freed memory - now probably junk
-	printf("the length of the shallow copy queue is %d\n", queue_length(&shallow_copy));
+	p..("the length of the shallow copy queue is %d\n", queue_length(&shallow_copy));
 	temp = shallow_copy.first;								// get the first item in the queue
 	do {
-		printf("data in shallow copy queue is '%s' at address %p\n", temp->data, temp->data);
+		p..("data in shallow copy queue is '%s' at address %p\n", temp->data, temp->data);
 		temp = temp->next;									// move to next item
 	} while (temp->next != shallow_copy.first);				// continue until we've been through the entire queue
 
-	return 0;
+	r_ 0;
 }

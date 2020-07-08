@@ -1,8 +1,8 @@
 
 
-? <stdio.h>
+? |s..
 
-int main() {
-	printf("Hello, World!\n");
-	return 0;
+in. main() {
+	p..("Hello, World!\n");
+	r_ 0;
 }

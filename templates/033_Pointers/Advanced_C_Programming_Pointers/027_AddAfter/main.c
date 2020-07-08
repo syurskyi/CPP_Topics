@@ -1,12 +1,12 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+? |s..
+? <stdlib.h>
+? <string.h>
 
 // this what is going to be in the queue
 typedef struct listitem {
 	struct listitem *next;			// pointer to next item
 	struct listitem *prev;			// pointer to previous item
-	int data;						// some data
+	in. data;						// some data
 } LISTITEM;
 
 // this is the queue 'header'
@@ -40,13 +40,13 @@ LISTITEM* dequeue(LISTHDR *queue) {
 		queue->first = temp->next;		// and set the queue header to point to the 'second' item
 		queue->first->prev = (LISTITEM*)queue;
 	}
-	return temp;
+	r_ temp;
 }
 
 // returns the number of items in a queue
-int queue_length(LISTHDR* queue) {
+in. queue_length(LISTHDR* queue) {
 	LISTITEM *temp;
-	int length;
+	in. length;
 
 	temp = queue->first;			// get the 'first' item
 	length = 0;						// initialize the length
@@ -60,19 +60,19 @@ int queue_length(LISTHDR* queue) {
 		length = length + 1;
 	} while (temp != NULL);
 
-	return length;
+	r_ length;
 }
 
 // this adds an item after 'position' in a queue - returns the item or NULL if the position does not exist
 // NOTE: this uses a similar queue iteration technique to that used in 'queue_length'
-LISTITEM* add_after(LISTHDR *queue, int position, LISTITEM* item) {
+LISTITEM* add_after(LISTHDR *queue, in. position, LISTITEM* item) {
 	LISTITEM *temp;
-	int i;
+	in. i;
 
 	// NOTE: we don't deal with negative positions in this example, but we could use a negative position to
 	// indicate that we want to use the backward pointers as the position
 	if (position < 0) {
-		return NULL;
+		r_ NULL;
 	}
 
 	temp = queue->first;			// get the 'first' item
@@ -96,69 +96,69 @@ LISTITEM* add_after(LISTHDR *queue, int position, LISTITEM* item) {
 		i = i + 1;					// and increment the corresponding index position
 	} while (temp != NULL);
 
-	return temp;
+	r_ temp;
 }
 
 
 
-int main() {
+in. main() {
 	LISTITEM *temp;
-	int requested_index;
-	char input[50];
+	in. requested_index;
+	ch.. input[50];
 
 	// first, make an empty queue
 	// ... which is a queue where the header points to itself and there are no items in it
-	printf("address of head = %p\n", &head);
+	p..("address of head = %p\n", &head);
 	head.first = (LISTITEM*)&head;
 	head.last = (LISTITEM*)&head;
 
-	for (int i = 0; i < 3; i++) {			// as before, populate the queue
+	for (in. i = 0; i < 3; i++) {			// as before, populate the queue
 		temp = malloc(sizeof(LISTITEM));	// allocate some memory for the new queue item
-		printf("address of new item = %p\n", temp);
+		p..("address of new item = %p\n", temp);
 		temp->data = i;						// set the item's data to the loop count so that we can see where it is in the queue
 		enqueue(&head, temp);				// and put it in the queue
 	}
 
-	printf("the length of the queue is %d\n", queue_length(&head));
+	p..("the length of the queue is %d\n", queue_length(&head));
 	// add item at a user entered index
-	printf("enter the index of the queue entry ... ");
+	p..("enter the index of the queue entry ... ");
 	requested_index = atoi(gets(input));
 	temp = malloc(sizeof(LISTITEM));
-	printf("address of new item = %p\n", temp);
+	p..("address of new item = %p\n", temp);
 	temp->data = -requested_index;			// set payload to a -ve number so we can see where it is when we print out the queue
 	if (add_after(&head, requested_index, temp) == NULL) {	// if we can't do it we will get NULL returned
-		printf("cannot add item at %d\n", requested_index);
+		p..("cannot add item at %d\n", requested_index);
 		free(temp);				// call 'free' to tidy up 
 	}
 	else {
-		printf("added item at %d\n", requested_index);
+		p..("added item at %d\n", requested_index);
 	}
 
 	// print out the queue fully forwards
 	temp = head.first;
-	printf("forwards ...\n");
+	p..("forwards ...\n");
 	do {
-		printf("addr=%p; data=%2d; next=%p; prev=%p; addr=%p\n", temp, temp->data, temp->next, temp->prev, temp);
+		p..("addr=%p; data=%2d; next=%p; prev=%p; addr=%p\n", temp, temp->data, temp->next, temp->prev, temp);
 		temp = temp->next;
 	} while (temp != head.first);
 	
 	// print out the queue fully backwards
-	printf("backwards ...\n");
+	p..("backwards ...\n");
 	temp = head.last;
 	do {
-		printf("addr=%p; data=%2d; next=%p; prev=%p; addr=%p\n", temp, temp->data, temp->next, temp->prev, temp);
+		p..("addr=%p; data=%2d; next=%p; prev=%p; addr=%p\n", temp, temp->data, temp->next, temp->prev, temp);
 		temp = temp->prev;
 	} while (temp != head.last);
 
 	// see what we've got 
-	printf("the length of the queue is now %d\n", queue_length(&head));
+	p..("the length of the queue is now %d\n", queue_length(&head));
 	do {							// keep going until the queue is empty
 		temp = dequeue(&head);		// if the queue is empty we will get NULL returned
 		if (temp != NULL) {
-			printf("data in original queue is %d\n", temp->data);
+			p..("data in original queue is %d\n", temp->data);
 			free(temp);				// call 'free' to tidy up 
 		}
 	} while (temp != NULL);
 
-	return 0;
+	r_ 0;
 }

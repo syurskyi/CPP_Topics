@@ -4,10 +4,10 @@
 * The most basic hello world sample code in C. *
 ***********************************************/
 
-? <stdio.h>
+? |s..
 
-int main(void)
+in. main(void)
 {
-    printf("Hello world!\n");
-    return 0;
+    p..("Hello world!\n");
+    r_ 0;
 }

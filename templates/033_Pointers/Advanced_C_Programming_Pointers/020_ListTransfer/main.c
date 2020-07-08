@@ -3,15 +3,15 @@
 // a queue is a 'first-in, first-out' (FIFO) structure
 // NOTE: you can also easily insert and remove items at any point in the queue if you wish, but it is more common to keep to FIFO operations
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+? |s..
+? <stdlib.h>
+? <string.h>
 
 // this what is going to be in the queue
 typedef struct listitem {
 	struct listitem *next;			// pointer to next item
 	struct listitem *prev;			// pointer to previous item
-	int data;						// some data
+	in. data;						// some data
 } LISTITEM;
 
 // this is the queue 'header'
@@ -46,10 +46,10 @@ LISTITEM* dequeue(LISTHDR *queue) {
 		queue->first = temp->next;		// and set the queue header to point to the 'second' item
 		queue->first->prev = (LISTITEM*)queue;
 	}
-	return temp;
+	r_ temp;
 }
 
-int main() {
+in. main() {
 	LISTITEM *temp;
 
 	// first, make empty 'source' and 'destination' queues
@@ -58,7 +58,7 @@ int main() {
 	dst.first = (LISTITEM*)&dst;
 	dst.last = (LISTITEM*)&dst;
 
-	for (int i = 0; i < 3; i++) {	// as before, populate the queue
+	for (in. i = 0; i < 3; i++) {	// as before, populate the queue
 		temp = malloc(sizeof(LISTITEM)); // allocate some memory for the new queue item
 		temp->data = i;				// set the item's data to the loop count so that we can see where it is in the queue
 		enqueue(&src, temp);				// and put it in the queue
@@ -69,30 +69,30 @@ int main() {
 	// methods that I've already developed, the reason being that I know that they work! This is a good example of code reuse rather than 're-invent'.
 	// In general, it is usually better to re-use something which has been tested and works rather than someting new which may have errors.
 
-	printf("building destination queue ...\n");
+	p..("building destination queue ...\n");
 	do {							// keep going until the 'source' queue is empty
 		temp = dequeue(&src);		// if the queue is empty we will get NULL returned
 		if (temp != NULL) {
-			printf("data is %d\n", temp->data);
+			p..("data is %d\n", temp->data);
 			enqueue(&dst, temp);
 		}
 	} while (temp != NULL);
 
 	// see what we've got
-	printf("destination queue ...\n");
+	p..("destination queue ...\n");
 	do {							// keep going until the queue is empty
 		temp = dequeue(&dst);		// if the queue is empty we will get NULL returned
 		if (temp != NULL) {
-			printf("destination data is %d\n", temp->data);
+			p..("destination data is %d\n", temp->data);
 			free(temp);				// call 'free' to tidy up 
 		}
 	} while (temp != NULL);
 
-	printf("source queue ...\n");
+	p..("source queue ...\n");
 	temp = dequeue(&src);		// if the queue is empty we will get NULL returned
 	if (temp == NULL) {
-		printf("source queue is empty\n");
+		p..("source queue is empty\n");
 	}
-	return 0;
+	r_ 0;
 }
 

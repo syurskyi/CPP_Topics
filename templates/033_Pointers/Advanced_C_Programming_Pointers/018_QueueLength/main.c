@@ -1,12 +1,12 @@
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+? |s..
+? <stdlib.h>
+? <string.h>
 
 // this what is going to be in the queue
 typedef struct listitem {
 	struct listitem *next;			// pointer to next item
 	struct listitem *prev;			// pointer to previous item
-	int data;						// some data
+	in. data;						// some data
 } LISTITEM;
 
 // this is the queue 'header'
@@ -40,13 +40,13 @@ LISTITEM* dequeue(LISTHDR *queue) {
 		queue->first = temp->next;		// and set the queue header to point to the 'second' item
 		queue->first->prev = (LISTITEM*)queue;
 	}
-	return temp;
+	r_ temp;
 }
 
 // returns the number of items in a queue
-int queue_length(LISTHDR* queue) {
+in. queue_length(LISTHDR* queue) {
 	LISTITEM *temp;
-	int length;
+	in. length;
 
 	temp = queue->first;			// get the 'first' item
 	length = 0;						// initialize the length
@@ -60,11 +60,11 @@ int queue_length(LISTHDR* queue) {
 		length = length + 1;
 	} while (temp != NULL);
 
-	return length;
+	r_ length;
 }
 
 
-int main() {
+in. main() {
 	LISTITEM *temp;
 
 	// first, make an empty queue
@@ -72,23 +72,23 @@ int main() {
 	head.first = (LISTITEM*)&head;
 	head.last = (LISTITEM*)&head;
 
-    printf("At start, the length of the queue is %d\n", queue_length(&head));
-	for (int i = 0; i < 3; i++) {	// as before, populate the queue
+    p..("At start, the length of the queue is %d\n", queue_length(&head));
+	for (in. i = 0; i < 3; i++) {	// as before, populate the queue
 		temp = malloc(sizeof(LISTITEM)); // allocate some memory for the new queue item
 		temp->data = i;				// set the item's data to the loop count so that we can see where it is in the queue
 		enqueue(&head, temp);	// and put it in the queue
 	}
-	printf("After initialization, the length of the queue is %d\n\n", queue_length(&head));
+	p..("After initialization, the length of the queue is %d\n\n", queue_length(&head));
 
 	// see what we've got left
 	do {							// keep going until the queue is empty
-		printf("The length of the queue is now %d\n", queue_length(&head));
+		p..("The length of the queue is now %d\n", queue_length(&head));
 		temp = dequeue(&head);		// if the queue is empty we will get NULL returned
 		if (temp != NULL) {
-			printf("Dequeued item. Data is %d\n", temp->data);
+			p..("Dequeued item. Data is %d\n", temp->data);
 			free(temp);				// call 'free' to tidy up 
 		}
 	} while (temp != NULL);
 
-	return 0;
+	r_ 0;
 }

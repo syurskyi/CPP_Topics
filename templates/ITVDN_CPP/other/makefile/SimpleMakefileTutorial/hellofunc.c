@@ -2,12 +2,12 @@
 // Created by syurskyi on 6/30/2020.
 //
 
-? <stdio.h>
+? |s..
 ? "hellomake.h"
 
 void myPrintHelloMake(void) {
 
-    printf("Hello makefiles!\n");
+    p..("Hello makefiles!\n");
 
-    return;
+    r_;
 }

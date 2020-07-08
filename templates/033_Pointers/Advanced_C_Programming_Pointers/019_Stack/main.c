@@ -1,12 +1,12 @@
 // a stack is last-in, first-out (LIFO) data structure
 // rather like a stack of dinner plates
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+? |s..
+? <stdlib.h>
+? <string.h>
 
 typedef struct {
-	int a;
+	in. a;
 	double b;
 } DATA;
 
@@ -17,8 +17,8 @@ DATA *top;
 #define STACKSIZE 5
 
 // pushes an item onto the top of the stack - returns 1 if the stack size was not exceeded, otherwise 0
-int push(DATA* data) {
-	int ok;
+in. push(DATA* data) {
+	in. ok;
 
 	if (top == end) {		// any more room?			
 		ok = 0;				// no, so tell the caller
@@ -27,7 +27,7 @@ int push(DATA* data) {
 		top = top + 1;
 		ok = 1;
 	}
-	return ok;
+	r_ ok;
 }
 
 // pop a data item off the top of the stack
@@ -41,10 +41,10 @@ DATA* pop() {
 		top = top - 1;		// get the top item
 		data = top;			// and return it
 	}
-	return data;
+	r_ data;
 }
 
-int main() {
+in. main() {
 	DATA data, *pdata;
 	
 	base = (DATA*)malloc(STACKSIZE * sizeof(DATA));
@@ -52,7 +52,7 @@ int main() {
 	top = base;
 
 	// add data items to the stack until the stack memory is exhausted
-	for (int i = 0; ; i++) {
+	for (in. i = 0; ; i++) {
 		data.a = i;
 		data.b = i * 2;
 		if (!push(&data)) {
@@ -60,20 +60,20 @@ int main() {
 		}
 	}
 
-    printf("first item = %d : %f\n", base->a, base->b );
+    p..("first item = %d : %f\n", base->a, base->b );
     pdata = base + 4; // count 4 items up from the 1st struct (at base)
-    printf("last item = %d : %f\n\n", pdata->a, pdata->b );
+    p..("last item = %d : %f\n\n", pdata->a, pdata->b );
     
 	// now pop the data items off the top of the stack until there are no more
 	do {
 		pdata = pop();
-		if (pdata != NULL) printf("data popped is %d : %f\n", pdata->a, pdata->b);
+		if (pdata != NULL) p..("data popped is %d : %f\n", pdata->a, pdata->b);
 	} while (pdata != NULL);
 
 	// NOTE: I do NOT call free for each item 'popped' from the stack
 	// because I may want to push onto the stack again.
 	// Instead, I call 'free' to release the entire stack when I've finished with it
 	free(base);
-	return 0;
+	r_ 0;
 }
 

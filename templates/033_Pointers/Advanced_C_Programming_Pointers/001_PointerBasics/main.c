@@ -1,13 +1,13 @@
-#include <stdio.h>
-
-int main(int argc, char **argv)
-{
-    int num;
-    int* numPtr;
-    int num2;
-    num = 100;
-    numPtr = &num;
-    num2 = *numPtr;
-	printf("num=%d, numPtr=%d, address of num=%d, num2=%d\n", num, numPtr, &num, num2);
-	return 0;
-}
+//? |s..
+//
+//in. main in. argc, ch.. @@
+//
+//    in. num
+//    in.# numPtr
+//    in. num2
+//    num _ 100
+//    ?P.. _ #?
+//    num2 _ #?P..
+//	p.. "n.._@, ?P.._@, address of n.._@, ?2_@\n", ? ? ? ?
+//	r_ _
+//

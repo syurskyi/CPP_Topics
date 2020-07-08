@@ -4,15 +4,15 @@
 // NOTE: you can also easily insert and remove items at any point in the queue if you wish, 
 // but it is more common to keep to FIFO operations
 
-#include <stdio.h>
-#include <stdlib.h>
-#include <string.h>
+? |s..
+? <stdlib.h>
+? <string.h>
 
 // this what is going to be in the queue
 typedef struct listitem {
 	struct listitem *next;			// pointer to next item
 	struct listitem *prev;			// pointer to previous item
-	int data;						// some data
+	in. data;						// some data
 } LISTITEM;
 
 // this is the queue 'header'
@@ -46,10 +46,10 @@ LISTITEM* dequeue() {
 		head.first = temp->next;		// and set the queue header to point to the 'second' item
 		head.first->prev = (LISTITEM*)&head;
 	}
-	return temp;
+	r_ temp;
 }
 
-int main() {
+in. main() {
 	LISTITEM *temp;
 
 	// first, make an empty queue
@@ -57,23 +57,23 @@ int main() {
 	head.first = (LISTITEM*)&head;
 	head.last = (LISTITEM*)&head;
 									
-	for (int i = 0; i < 3; i++) {	// as before, populate the queue
+	for (in. i = 0; i < 3; i++) {	// as before, populate the queue
 		temp = malloc(sizeof(LISTITEM)); // allocate some memory for the new queue item
 		temp->data = i;				// set the item's data to the loop count so that we can see where it is in the queue
 		enqueue(temp);				// and put it in the queue
 	}
     
-    printf("first item = %d\n", head.first->data );
-    printf("last item = %d\n\n", head.last->data );
+    p..("first item = %d\n", head.first->data );
+    p..("last item = %d\n\n", head.last->data );
 
 	// now let's dequeue from the end of the queue
 	do {							// keep going until the queue is empty
 		temp = dequeue();			// if the queue is empty we will get NULL returned
 		if (temp != NULL) {
-			printf("data is %d\n", temp->data);
+			p..("data is %d\n", temp->data);
 			free(temp);				// call 'free' to tidy up 
 		}
 	} while (temp != NULL);
 
-	return 0;
+	r_ 0;
 }

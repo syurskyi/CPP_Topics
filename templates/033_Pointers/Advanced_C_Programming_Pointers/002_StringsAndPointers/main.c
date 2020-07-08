@@ -1,7 +1,7 @@
-#include <stdio.h>
-
-int main(int argc, char **argv) {
-	char str1[] = "Hello world";	
-	printf("%s %c %d %d %d\n", str1, str1[0], &str1, &str1[0], str1);
-	return 0;
-}
+//? |s..
+//
+//in. main(in. argc, ch.. @@
+//	ch.. str1|| _ "Hello world";
+//	p.."@s @c @d @d @d##" ? ? 0 #? #? 0 ?
+//	r_ _
+//

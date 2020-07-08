@@ -4,9 +4,9 @@
 
 ? "hellomake.h"
 
-int main() {
+in. main() {
     // call a function in another file
     myPrintHelloMake();
 
-    return(0);
+    r_(0);
 }

@@ -3,13 +3,13 @@
 *                                              *
 ***********************************************/
 
-? <stdio.h>
+? |s..
 ? "foo.h"
  
-int main(int argc, char *argv[])
+in. main(in. argc, ch.. *argv[])
 {
-    printf("Hello world!\n");
+    p..("Hello world!\n");
     foo();
 
-    return 0;
+    r_ 0;
 }

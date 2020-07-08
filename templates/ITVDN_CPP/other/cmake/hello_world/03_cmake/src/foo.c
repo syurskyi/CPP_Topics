@@ -1,6 +1,6 @@
-? <stdio.h>
+? |s..
  
 void foo(void)
 {
-    printf("This is from a shared library!\n");
+    p..("This is from a shared library!\n");
 }

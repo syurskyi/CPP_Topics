@@ -1,11 +1,11 @@
-#include <stdio.h>
+? |s..
 
-int main(int argc, char **argv) {
-	char str1[] = "Hello";
-	char *str2 = "Goodbye";
+in. main(in. argc, ch.. @@ {
+	ch.. str1[] = "Hello";
+	ch.. *str2 = "Goodbye";
 	// str2 = &str1;
 	// str2 = str1;
-	printf("%d %d %s\n", &str1, str1, str1);
-	printf("%d %d %s\n", &str2, str2, str2);
-	return 0;
+	p..("%d %d %s\n", &str1, str1, str1);
+	p..("%d %d %s\n", &str2, str2, str2);
+	r_ 0;
 }
