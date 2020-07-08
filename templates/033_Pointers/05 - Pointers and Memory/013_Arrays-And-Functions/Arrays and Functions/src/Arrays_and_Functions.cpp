@@ -36,13 +36,13 @@ v.. show3(st.. (&texts)[3]) {
 	}
 }
 
-char *getMemory() {
-	char *pMem _ new char[100]
+ch.. *getMemory() {
+	ch.. *pMem _ new ch..[100]
 
 	return pMem
 }
 
-v.. freeMemory(char *pMem) {
+v.. freeMemory(ch.. *pMem) {
 	delete [] pMem
 }
 
@@ -54,7 +54,7 @@ in. main() {
 
 	show3(texts)
 
-	char *pMemory _ getMemory()
+	ch.. *pMemory _ getMemory()
 	freeMemory(pMemory)
 
 	r_ _

@@ -45,10 +45,10 @@ in. main() {
 
 	delete [] pAnimal
 
-	char *pMem _ new char[1000]
+	ch.. *pMem _ new ch..[1000]
 	delete [] pMem
 
-	char c _ 'a'
+	ch.. c _ 'a'
 	c++
 	st.. name(5, c)
 	c.. __ name __ e..

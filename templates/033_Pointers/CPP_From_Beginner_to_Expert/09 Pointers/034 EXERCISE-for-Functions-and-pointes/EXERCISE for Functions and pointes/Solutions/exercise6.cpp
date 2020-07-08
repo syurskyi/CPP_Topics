@@ -33,7 +33,7 @@ in. main ()
     __ (orderOfSequence !_ 2)
         orderOfSequence _ 1
 
-    char sortChoice
+    ch.. sortChoice
     c.. __ "Bubble Sort - B or b, Selection Sort - S or s: "
     cin >> sortChoice
 

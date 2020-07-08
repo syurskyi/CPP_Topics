@@ -41,10 +41,10 @@ in. main() {
     
 
     c.. __ "\n-------------------------" __ e..
-    char name[]  {"Frank"}
+    ch.. name[]  {"Frank"}
     
-    char *char_ptr1 {nullptr}
-    char *char_ptr2{nullptr}
+    ch.. *char_ptr1 {nullptr}
+    ch.. *char_ptr2{nullptr}
     
     char_ptr1 _ &name[0]   // F
     char_ptr2 _ &name[3]   // n

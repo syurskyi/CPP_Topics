@@ -9,16 +9,16 @@ u.. s..
 
 in. main() {
 
-	char text[] _ "Hello there!"
+	ch.. text[] _ "Hello there!"
 
 	in. nChars _ s_o_(text)-1
 
-	char *pStart _ text
-	char *pEnd _ text + nChars - 1
+	ch.. *pStart _ text
+	ch.. *pEnd _ text + nChars - 1
 
 	w___(pStart < pEnd) {
 
-		char save _ *pStart
+		ch.. save _ *pStart
 		*pStart _ *pEnd
 		*pEnd _ save
 

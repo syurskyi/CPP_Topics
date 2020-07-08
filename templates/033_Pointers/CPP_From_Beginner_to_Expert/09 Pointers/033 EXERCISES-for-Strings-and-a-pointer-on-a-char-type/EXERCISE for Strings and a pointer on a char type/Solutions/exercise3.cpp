@@ -9,7 +9,7 @@ in. main ()
     c.. __ "How many characters would you like to input: "
     cin >> charactersNumber
 
-    char * characters _ new char[charactersNumber]
+    ch.. * characters _ new ch..[charactersNumber]
 
     ___ (in. i _ 0 i < charactersNumber i++)
     {
