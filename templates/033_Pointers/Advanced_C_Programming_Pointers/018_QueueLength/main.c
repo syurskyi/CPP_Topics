@@ -33,7 +33,7 @@ LISTITEM* dequeue(LISTHDR *queue) {
 	LISTITEM *temp;
 
 	temp = queue->first;				// get the 'first' item
-	if (temp == (LISTITEM*)queue) {		// if the head of the queue points to itself ...
+	__ (temp __ (LISTITEM*)queue) {		// if the head of the queue points to itself ...
 		temp = NULL;					// ... then the queue is empty 			
 	}
 	else {
@@ -52,7 +52,7 @@ in. queue_length(LISTHDR* queue) {
 	length = 0;						// initialize the length
 	do {
 		// check for an empty queue or if we've gone through the whole queue
-		if (temp == (LISTITEM*)queue) {
+		__ (temp __ (LISTITEM*)queue) {
 			temp = NULL;			// this will break out of the do ... while loop
 			break;
 		}
@@ -74,7 +74,7 @@ in. main() {
 
     p..("At start, the length of the queue is %d\n", queue_length(&head));
 	___ (in. i = 0; i < 3; ###) {	// as before, populate the queue
-		temp = malloc(sizeof(LISTITEM)); // allocate some memory for the new queue item
+		temp = malloc(s_o_(LISTITEM)); // allocate some memory for the new queue item
 		temp->data = i;				// set the item's data to the loop count so that we can see where it is in the queue
 		enqueue(&head, temp);	// and put it in the queue
 	}
@@ -84,7 +84,7 @@ in. main() {
 	do {							// keep going until the queue is empty
 		p..("The length of the queue is now %d\n", queue_length(&head));
 		temp = dequeue(&head);		// if the queue is empty we will get NULL returned
-		if (temp != NULL) {
+		__ (temp != NULL) {
 			p..("Dequeued item. Data is %d\n", temp->data);
 			free(temp);				// call 'free' to tidy up 
 		}

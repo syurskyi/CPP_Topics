@@ -22,8 +22,8 @@ in. main()
     long in.* pf;
 
     // first let's look at the sizes of our array types
-    p..("sizes are: int %d; float %d; double %d; long long int %d; short int %d; long int %d\n", sizeof(in.),
-        sizeof(float), sizeof(double), sizeof(long long in.), sizeof(short in.), sizeof(long in.));
+    p..("sizes are: int %d; float %d; double %d; long long int %d; short int %d; long int %d\n", s_o_(in.),
+        s_o_(float), s_o_(double), s_o_(long long in.), s_o_(short in.), s_o_(long in.));
     // NOTE: because of historical reasons a plain 'int' can vary in size between machine architectures. On some
     // microprocessors it is 2 bytes long while on Intel processors it is 4 bytes
     // if we want to be explicit (and more portable), then use 'long int' for a 32 bit integer instead of just 'int'

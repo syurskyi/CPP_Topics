@@ -35,7 +35,7 @@ in. main() {
     p..("[1] identity, [2] square, [3] cube, [4] fourth\n> ");
 	exponent = atoi(gets(input));	
 	// NOTE: the sizeof(PFI) is 4 and the sizeof the 'power' array here is 16 
-	if (exponent <= 0 || exponent > sizeof(power)/sizeof(PFI)) {
+	__ (exponent <= 0 || exponent > s_o_(power)/s_o_(PFI)) {
 		p..("ERROR: out of range!\n");
 	} else {
         p..("Enter the value\n> ");

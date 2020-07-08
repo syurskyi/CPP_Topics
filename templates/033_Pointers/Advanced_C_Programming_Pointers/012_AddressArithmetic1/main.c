@@ -11,7 +11,7 @@ in. main() {
 	in. a[COUNT];
 
 	// first let's look at the size of a basic integer
-	p..("size of an 'int' is %d\n", sizeof(in.));
+	p..("size of an 'int' is %d\n", s_o_(in.));
 
 	// initialize our array
 	___ (in. i = 0; i < COUNT; ###) a[i] = i;

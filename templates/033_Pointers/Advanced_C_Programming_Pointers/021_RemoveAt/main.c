@@ -33,7 +33,7 @@ LISTITEM* dequeue(LISTHDR *queue) {
 	LISTITEM *temp;
 
 	temp = queue->first;				// get the 'first' item
-	if (temp == (LISTITEM*)queue) {		// if the head of the queue points to itself ...
+	__ (temp __ (LISTITEM*)queue) {		// if the head of the queue points to itself ...
 		temp = NULL;					// ... then the queue is empty 			
 	}
 	else {
@@ -52,7 +52,7 @@ in. queue_length(LISTHDR* queue) {
 	length = 0;						// initialize the length
 	do {
 		// check for an empty queue or if we've gone through the whole queue
-		if (temp == (LISTITEM*)queue) {
+		__ (temp __ (LISTITEM*)queue) {
 			temp = NULL;			// this will break out of the do ... while loop
 			break;
 		}
@@ -71,7 +71,7 @@ LISTITEM* remove_at(LISTHDR *queue, in. position) {
 	
 	// NOTE: we don't deal with negative positions in this example, but we could use a negative position to
 	// indicate that we want to use the backward pointers as the position
-	if (position < 0) {	
+	__ (position < 0) {
 		r_ NULL;
 	}
 
@@ -79,11 +79,11 @@ LISTITEM* remove_at(LISTHDR *queue, in. position) {
 	i = 0;
 	do {
 		// here, check for an empty queue or if we've gone through the whole queue
-		if (temp == (LISTITEM*)queue) {	
+		__ (temp __ (LISTITEM*)queue) {
 			temp = NULL;			// this will break out of the do ... while loop
 			break;
 		}
-		if (i == position) {
+		__ (i __ position) {
 			// this is where we disconnect the queue item we've found
 			temp->prev->next = temp->next;
 			temp->next->prev = temp->prev;
@@ -112,7 +112,7 @@ in. main() {
 	head.last = (LISTITEM*)&head;
 
 	___ (in. i = 0; i < 5; ###) {	// as before, populate the queue
-		temp = malloc(sizeof(LISTITEM)); // allocate some memory for the new queue item
+		temp = malloc(s_o_(LISTITEM)); // allocate some memory for the new queue item
 		temp->data = i;				// set the item's data to the loop count so that we can see where it is in the queue
 		enqueue(&head, temp);	// and put it in the queue
 	}
@@ -126,7 +126,7 @@ in. main() {
 	requested_index = atoi(gets(input)); 
 	//do {							// keep going ...
 		temp = remove_at(&head, requested_index);	// if we can't do it we will get NULL returned
-		if (temp != NULL) {
+		__ (temp != NULL) {
 			p..("OK: data removed at %d is %d\n", requested_index, temp->data);
 			free(temp);				// call 'free' to tidy up 
 		}
@@ -139,7 +139,7 @@ in. main() {
 	p..("the length of the queue is %d\n", queue_length(&head));
 	do {							// keep going until the queue is empty
 		temp = dequeue(&head);		// if the queue is empty we will get NULL returned
-		if (temp != NULL) {
+		__ (temp != NULL) {
 			p..("data is %d\n", temp->data);
 			free(temp);				// call 'free' to tidy up 
 		}

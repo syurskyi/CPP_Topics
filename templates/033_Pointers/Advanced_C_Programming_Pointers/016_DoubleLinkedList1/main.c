@@ -26,7 +26,7 @@ in. main() {
 
 	// now populate the list
 	___ (in. i = 0; i < 3; ###) {
-		temp = malloc(sizeof(LISTITEM));			// allocate some memory for the new list item
+		temp = malloc(s_o_(LISTITEM));			// allocate some memory for the new list item
 		temp->data = i;								// set the list item's data to the loop count so that we can see where it is in the list
 		temp->next = head.next;						// this will insert at the FRONT of the list
 		head.next = temp;							// and set the list head to the newly created list item

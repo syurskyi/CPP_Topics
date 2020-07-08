@@ -7,7 +7,7 @@ in. main() {
 	ch..* s;
 	in. i;
 
-	i = sizeof("hello");						// as before first work out how big "hello" is ...
+	i = s_o_("hello");						// as before first work out how big "hello" is ...
 	s = (ch..*)malloc(i);						// malloc will return 0 if it fails, so we should check here, but we wont for brevity
 	strncpy(s, "hello", i);						// now copy the string into the newly allocated memory
     p..("s is %s\n", s);

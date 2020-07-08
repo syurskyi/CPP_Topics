@@ -20,10 +20,10 @@ DATA *top;
 in. push(DATA* data) {
 	in. ok;
 
-	if (top == end) {		// any more room?			
+	__ (top __ end) {		// any more room?
 		ok = 0;				// no, so tell the caller
 	} else {
-		memcpy(top, data, sizeof(DATA));
+		memcpy(top, data, s_o_(DATA));
 		top = top + 1;
 		ok = 1;
 	}
@@ -34,7 +34,7 @@ in. push(DATA* data) {
 DATA* pop() {
 	DATA* data;
 
-	if (top == base) {		// empty stack
+	__ (top __ base) {		// empty stack
 		data = NULL;
 	}
 	else {
@@ -47,7 +47,7 @@ DATA* pop() {
 in. main() {
 	DATA data, *pdata;
 	
-	base = (DATA*)malloc(STACKSIZE * sizeof(DATA));
+	base = (DATA*)malloc(STACKSIZE * s_o_(DATA));
 	end = base + STACKSIZE;
 	top = base;
 
@@ -55,7 +55,7 @@ in. main() {
 	___ (in. i = 0; ; ###) {
 		data.a = i;
 		data.b = i * 2;
-		if (!push(&data)) {
+		__ (!push(&data)) {
 			break;
 		}
 	}
@@ -67,7 +67,7 @@ in. main() {
 	// now pop the data items off the top of the stack until there are no more
 	do {
 		pdata = pop();
-		if (pdata != NULL) p..("data popped is %d : %f\n", pdata->a, pdata->b);
+		__ (pdata != NULL) p..("data popped is %d : %f\n", pdata->a, pdata->b);
 	} w___ (pdata != NULL);
 
 	// NOTE: I do NOT call free for each item 'popped' from the stack

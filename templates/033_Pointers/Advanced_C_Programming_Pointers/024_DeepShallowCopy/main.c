@@ -38,7 +38,7 @@ LISTITEM* dequeue(LISTHDR *queue) {
 	LISTITEM *temp;
 
 	temp = queue->first;				// get the 'first' item
-	if (temp == (LISTITEM*)queue) {		// if the head of the queue points to itself ...
+	__ (temp __ (LISTITEM*)queue) {		// if the head of the queue points to itself ...
 		temp = NULL;					// ... then the queue is empty 			
 	}
 	else {
@@ -57,7 +57,7 @@ in. queue_length(LISTHDR* queue) {
 	length = 0;						// initialize the length
 	do {
 		// check for an empty queue or if we've gone through the whole queue
-		if (temp == (LISTITEM*)queue) {
+		__ (temp __ (LISTITEM*)queue) {
 			temp = NULL;			// this will break out of the do ... while loop
 			break;
 		}
@@ -83,7 +83,7 @@ in. main() {
 
 	// STEP1: populate the 'original' queue
 	___ (in. i = 0; i < 3; ###) {				// as before, populate the queue
-		temp = malloc(sizeof(LISTITEM));		// allocate some memory for the new queue item
+		temp = malloc(s_o_(LISTITEM));		// allocate some memory for the new queue item
 		temp->data = (ch..*)malloc(MAXBUFLEN);	// set the item's data to some memory
 		itoa(i, temp->data, 10);				// and set it to the character string of the index
 		enqueue(&original, temp);				// and put it in the queue
@@ -101,8 +101,8 @@ in. main() {
 	// STEP2: create a deep copy
 	temp = original.first;									// get the first item in the queue
 	do {
-		temp1 = (LISTITEM*)malloc(sizeof(LISTITEM));		// allocate memory for a new queue item
-		memcpy(temp1, temp, sizeof(LISTITEM));				// make a copy
+		temp1 = (LISTITEM*)malloc(s_o_(LISTITEM));		// allocate memory for a new queue item
+		memcpy(temp1, temp, s_o_(LISTITEM));				// make a copy
 		pdata = (ch..*)malloc(MAXBUFLEN);					// allocate memory for new data
 		memcpy(pdata, temp->data, MAXBUFLEN);				// and copy it from the old data
 		temp1->data = pdata;								// set the item's payload to the new data
@@ -123,8 +123,8 @@ in. main() {
 	// so the original and the copy queue items point to the same data
 	temp = original.first;									// get the first item in the queue
 	do {
-		temp1 = (LISTITEM*)malloc(sizeof(LISTITEM));		// allocate memory for a new queue item
-		memcpy(temp1, temp, sizeof(LISTITEM));				// make a copy
+		temp1 = (LISTITEM*)malloc(s_o_(LISTITEM));		// allocate memory for a new queue item
+		memcpy(temp1, temp, s_o_(LISTITEM));				// make a copy
 		enqueue(&shallow_copy, temp1);						// add to the shallow 'copy' queue
 		temp = temp->next;									// move to next item
 	} w___ (temp->next != original.first);					// continue until we've been through the entire queue
@@ -141,7 +141,7 @@ in. main() {
 	// STEP4: free the original
 	do {													// keep going until the queue is empty
 		temp = dequeue(&original);							// if the queue is empty we will get NULL returned
-		if (temp != NULL) {
+		__ (temp != NULL) {
 			// NOTE: freeing 'temp' does NOT free all the allocated data
 			// BOTH the list item and the payload must be freed
 			// also, the free calls MUST be done in the correct order

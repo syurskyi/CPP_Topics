@@ -18,7 +18,7 @@ in. main()
     MYSTRUCT *p, *q;
     void* v;
 
-    p..("size of MYSTRUCT = %d\n", sizeof(MYSTRUCT));
+    p..("size of MYSTRUCT = %d\n", s_o_(MYSTRUCT));
     // IMPORTANT NOTE: the size of MYSTRUCT is NOT always 24 bytes! It will vary according to the processor architecture
     // ...
     // ... because some processor architectures will require a 'double' (say) to be at an address which is multiple of 8
@@ -28,7 +28,7 @@ in. main()
 
     // allocate some memory and clean it out: 'calloc' is quite useful here
     // p = (MYSTRUCT*)calloc(COUNT, 24); // DO NOT DO THIS!
-    p = (MYSTRUCT*)calloc(COUNT, sizeof(MYSTRUCT));
+    p = (MYSTRUCT*)calloc(COUNT, s_o_(MYSTRUCT));
     // initialize it to something interesting using a large floating point value for the double and a large value for
     // the 64-bit integer
     // this is so we can see where the compiler has inserted padding space to get the desired alignment for the 8 byte
@@ -62,7 +62,7 @@ in. main()
     // NOTE: that we are using address arithmetic to move along MYSTRUCT as a set of 8 'int' values of 4 bytes each (32
     // bytes in total)
     p..("Struct at index 3\n");
-    ___(in. i = 0; i < sizeof(MYSTRUCT) / sizeof(in.); ###) {
+    ___(in. i = 0; i < s_o_(MYSTRUCT) / s_o_(in.); ###) {
         p..("v[%d]=%d\n", i, ((in.*)v)[i]);
     }
 
