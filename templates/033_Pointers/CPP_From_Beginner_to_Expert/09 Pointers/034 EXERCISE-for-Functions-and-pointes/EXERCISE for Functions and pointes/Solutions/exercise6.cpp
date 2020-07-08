@@ -3,73 +3,73 @@
 
 u.. s..
 
-in. * createArray(in.)
+in. * createArray in.
 
-v.. swapTwoValues(in.*, in.*)
+v.. swapTwoValues in.#, in.#
 
-v.. fillArrayWithValues(in.[], in.)
-v.. printArrayValues(in.[], in.)
+v.. fillArrayWithValues in.||, in.
+v.. printArrayValues in.||, in.
 
-v.. bubbleSort(in.[], in., in. _ 1)
-v.. selectionSort(in.[], in., in. _ 1)
+v.. bubbleSort(in.||, in., in. _ 1
+v.. selectionSort in.||, in., in. _ 1
 
 
-in. main ()
-{
+in. main 
+
 
     in. sizeOfArray
     c.. __ "Input the size of the array to sort: "
-    cin __ sizeOfArray
+    ci. __ ?
 
-    in.* a _ createArray(sizeOfArray)
+    in.# a _ createArray ?
 
-    fillArrayWithValues(a, sizeOfArray)
-    printArrayValues(a, sizeOfArray)
+    f.. ? s..
+    p.. ? s..
 
     in. orderOfSequence
-    c.. __ endl __ "Sort Ascending - 1, Descending - 2: "
-    cin __ orderOfSequence
+    c.. __ e.. __ "Sort Ascending - 1, Descending - 2: "
+    ci. __ ?
 
-    __ (orderOfSequence !_ 2)
-        orderOfSequence _ 1
+    __ (? !_ 2)
+        ? _ 1
 
     ch.. sortChoice
     c.. __ "Bubble Sort - B or b, Selection Sort - S or s: "
-    cin __ sortChoice
+    cin __ ?
 
-    __ (sortChoice !_ 'S' && sortChoice !_ 's')
-        sortChoice _ 'B'
+    __ ? !_ 'S' ## ? !_ 's'
+        ? _ 'B'
 
-    __ (sortChoice == 'B' || sortChoice == 'b')
-    {
-        bubbleSort(a, sizeOfArray, orderOfSequence)
-    }
-    else __ (sortChoice == 'S' || sortChoice == 's')
-    {
-        selectionSort(a, sizeOfArray, orderOfSequence)
-    }
+    __ ? __ 'B' || ? ? 'b')
 
-    de..[] a
+        b.. ? s.. o..
+
+    ____ __ s.. __ 'S' || s.. __ 's'
+
+        s.. ? s.. o..
+
+
+    de..|| a
     r_ _
-}
 
-in. * createArray(in. sizeOfArray)
-{
-    in.* newArray _ n.. in.[sizeOfArray]
 
-    r_ newArray
-}
+in. # c.. in. sizeOfArray
 
-v.. swapTwoValues(in.* firstValue, in.* secondValue)
-{
+    in.# newArray _ n.. in. ?
+
+    r_ ?
+
+
+v.. swapTwoValues in.# firstValue, in.# secondValue
+
     in. temporaryVariable
 
-    temporaryVariable _ *firstValue
-    *firstValue _ *secondValue
-    *secondValue _ temporaryVariable
+    temporaryVariable _ #f..
+    @f.. _ #?
+    @? _ t..
 }
 
-v.. fillArrayWithValues(in. arrayToFill[], in. sizeOfArray)
+v.. fillArrayWithValues(in. arrayToFill[], in. sizeOfArray
 {
     ___ (in. i _ 0 i < sizeOfArray ###)
     {
@@ -98,7 +98,7 @@ v.. bubbleSort(in. arrayToSort[], in. sizeOfArray, in. orderOfSequence)
             {
                     swapTwoValues(arrayToSort+j, arrayToSort+j+1)
             }
-            else __ (orderOfSequence == 2 && arrayToSort[j] < arrayToSort[j+1])
+            ____ __ (orderOfSequence == 2 && arrayToSort[j] < arrayToSort[j+1])
             {
                     swapTwoValues(arrayToSort+j, arrayToSort+j+1)
             }
@@ -119,7 +119,7 @@ v.. selectionSort(in. arrayToSort[], in. sizeOfArray, in. orderOfSequence)
             {
                 limitIndex _ j
             }
-            else __ (orderOfSequence == 2 && arrayToSort[j] > arrayToSort[limitIndex])
+            ____ __ (orderOfSequence == 2 && arrayToSort[j] > arrayToSort[limitIndex])
             {
                 limitIndex _ j
             }

@@ -36,7 +36,7 @@ v.. lottery(in. total_balls, in. balls_to_draw)
                 i--
                 b..
             }
-            else __ (j == i)
+            ____ __ (j == i)
                 c.. __ balls[i] __ e..
          }
      }
