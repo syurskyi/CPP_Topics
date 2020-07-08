@@ -9,22 +9,22 @@
 ? |st..
 
 // this what is going to be in the queue
-typedef struct listitem {
-	struct listitem *next;			// pointer to next item
-	struct listitem *prev;			// pointer to previous item
+t.. st.. listitem {
+	st.. listitem *next;			// pointer to next item
+	st.. listitem *prev;			// pointer to previous item
 	in. data;						// some data
 } LISTITEM;
 
 // this is the queue 'header'
-typedef struct {
-	struct listitem *first;			// pointer to first item
-	struct listitem *last;			// pointer to last item
+t.. st.. {
+	st.. listitem *first;			// pointer to first item
+	st.. listitem *last;			// pointer to last item
 } LISTHDR;
 
 LISTHDR head;						// declare this statically so that 'enqueue' and 'dequeue' can use it
 
 // this puts an item in at the end of the queue
-void enqueue(LISTITEM *item) {
+v.. enqueue(LISTITEM *item) {
 	LISTITEM *temp;
 
 	temp = head.last;				// get the 'last' item in the queue and keep hold of it

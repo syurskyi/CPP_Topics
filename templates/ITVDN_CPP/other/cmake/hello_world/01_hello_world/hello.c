@@ -6,7 +6,7 @@
 
 ? |s..
 
-in. main(void)
+in. main(v..)
 {
     p..("Hello world!\n");
     r_ 0;

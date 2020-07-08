@@ -2,9 +2,9 @@
 ? <stdlib.h>
 ? |st..
 
-typedef struct listitem {
-	struct listitem *next;		// pointer to next item
-	struct listitem *prev;		// pointer to previous item
+t.. st.. listitem {
+	st.. listitem *next;		// pointer to next item
+	st.. listitem *prev;		// pointer to previous item
 	in. data;					// some data
 } LISTITEM;
 

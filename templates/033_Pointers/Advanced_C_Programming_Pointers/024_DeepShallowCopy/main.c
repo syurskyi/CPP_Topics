@@ -6,16 +6,16 @@
 ? MAXBUFLEN 10
 
 // this what is going to be in the queue
-typedef struct listitem {
-	struct listitem *next;			// pointer to next item
-	struct listitem *prev;			// pointer to previous item
+t.. st.. listitem {
+	st.. listitem *next;			// pointer to next item
+	st.. listitem *prev;			// pointer to previous item
 	ch..* data;						// a pointer to some data
 } LISTITEM;
 
 // this is the queue 'header'
-typedef struct {
-	struct listitem *first;			// pointer to next item
-	struct listitem *last;			// pointer to previous item
+t.. st.. {
+	st.. listitem *first;			// pointer to next item
+	st.. listitem *last;			// pointer to previous item
 } LISTHDR;
 
 LISTHDR original;					// our original queue
@@ -23,7 +23,7 @@ LISTHDR deep_copy;					// deep copy of our queue
 LISTHDR shallow_copy;				// shallow copy of our queue
 
 									// this puts an item in at the end of a queue
-void enqueue(LISTHDR *queue, LISTITEM *item) {
+v.. enqueue(LISTHDR *queue, LISTITEM *item) {
 	LISTITEM *temp;
 
 	temp = queue->last;				// get the 'last' item in the queue and keep hold of it

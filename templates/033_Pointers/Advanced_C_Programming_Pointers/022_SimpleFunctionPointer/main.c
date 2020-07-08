@@ -3,7 +3,7 @@
 ? |st..
 
 // NOTE: I always find this syntax to be a bit 'gnarly' so I typedef the 'Pointer-to-Function-returning-Integer' like this
-typedef in.(*PFI)(in.);
+t.. in.(*PFI)(in.);
 
 // our example function
 in. square(in. a) {

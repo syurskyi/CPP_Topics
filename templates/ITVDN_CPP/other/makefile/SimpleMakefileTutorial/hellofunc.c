@@ -5,7 +5,7 @@
 ? |s..
 ? "hellomake.h"
 
-void myPrintHelloMake(void) {
+v.. myPrintHelloMake(v..) {
 
     p..("Hello makefiles!\n");
 

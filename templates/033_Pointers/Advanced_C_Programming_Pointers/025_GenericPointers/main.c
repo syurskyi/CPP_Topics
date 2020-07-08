@@ -6,7 +6,7 @@ in. data[LENGTH];			// some integers
 ch..* words[LENGTH];		// some strings
 
 in. main(in. argc, ch.. @@ {
-	void *gp;			// a generic pointer    
+	v.. *gp;			// a generic pointer
     
 	p.. ("generic pointer example\n");
 

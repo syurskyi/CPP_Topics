@@ -2,8 +2,8 @@
 ? <stdlib.h>
 ? |st..
 
-typedef struct listitem {
-	struct listitem *next;		// pointer to next item
+t.. st.. listitem {
+	st.. listitem *next;		// pointer to next item
 	in. data;					// some data
 } LISTITEM;
 

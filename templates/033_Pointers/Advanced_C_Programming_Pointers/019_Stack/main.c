@@ -5,7 +5,7 @@
 ? <stdlib.h>
 ? |st..
 
-typedef struct {
+t.. st.. {
 	in. a;
 	do.. b;
 } DATA;

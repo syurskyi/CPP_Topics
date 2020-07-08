@@ -11,7 +11,7 @@
 // freeing already freed memory
 // NOTE: if you are lucky, the C run time will trap this. On the other hand, if it doesn't and you are in a large and complex program
 // you can be in for a very long degugging session indeed!
-void problem1() {
+v.. problem1() {
 	ch.. *b;
 
 	b = (ch..*)ma..(10);
@@ -20,7 +20,7 @@ void problem1() {
 }
 
 // memory leak
-void problem2() {
+v.. problem2() {
 	ch.. *b;
 
 	___ (in. i = 0; i < 10; ###) {
@@ -32,7 +32,7 @@ void problem2() {
 }
 
 // re-use of memory that is freed
-void problem3() {
+v.. problem3() {
 	ch.. *b, *c;
 
 	b = (ch..*)ma..(100);
@@ -60,7 +60,7 @@ ch..* problem4() {
 // this is cause an instant exception on most (if not all) modern operating systems
 // this is good news because its easy to track down. However, on micro-controllers without
 // virtual memory management, this can be quite tricky to debug as it will lead to very unexpected results
-void problem5() {
+v.. problem5() {
 	ch.. *b;
     b = (ch..*)ma..(10);
 	b = NULL;
