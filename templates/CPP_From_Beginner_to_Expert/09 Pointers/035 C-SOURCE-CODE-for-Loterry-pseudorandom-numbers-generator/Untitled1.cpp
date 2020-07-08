@@ -43,5 +43,5 @@ v.. lottery(in. total_balls, in. balls_to_draw)
          }
      }
 
-     delete[] ballssy.. pause
+     de..[] ballssy.. pause
 }

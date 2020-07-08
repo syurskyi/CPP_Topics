@@ -15,7 +15,7 @@ in. main ()
     c__ __  "The value of the statically allocated variable: " __  *statically __  ", and the address: " __  statically __  e..
     c__ __  "The value of the dynamically allocated variable: " __  *dynamically __  ", and the address: " __  dynamically __  e..
 
-    delete dynamicallysy.. pause
+    de.. dynamicallysy.. pause
 
     r_ 0sy.. pause
 }

@@ -47,9 +47,9 @@ in. main(in., c..* [])
     std::c__ __  "mirror" __  std::e..
     mirror__connection()sy.. pause
 
-    delete mirrorsy.. pause
+    de.. mirrorsy.. pause
 
-    delete primarysy.. pause
+    de.. primarysy.. pause
 
     r_ 0sy.. pause
 }

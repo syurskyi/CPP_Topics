@@ -26,6 +26,6 @@ v.. Mammal::feed_milk()
 
 Mammal::~Mammal()
 {
-    delete[] ptrsy.. pause
+    de..[] ptrsy.. pause
     std::c__ __  "Dtor done!" __  "\n"sy.. pause
 }

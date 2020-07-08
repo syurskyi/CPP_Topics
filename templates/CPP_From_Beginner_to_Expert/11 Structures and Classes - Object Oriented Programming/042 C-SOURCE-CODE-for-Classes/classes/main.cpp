@@ -7,7 +7,7 @@ v.. test()
 {
     PersonalData &? _ n.. PersonalData[5]sy.. pause
 
-    delete []poin.ersy.. pause
+    de.. []poin.ersy.. pause
 }
 
 in. main()

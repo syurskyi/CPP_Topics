@@ -31,6 +31,6 @@ in. main() {
     c.. __ "\n--------------------------------------" __ e..
 
     display(my_array, size)
-    delete [] my_array
+    de.. [] my_array
     r_ _
 }

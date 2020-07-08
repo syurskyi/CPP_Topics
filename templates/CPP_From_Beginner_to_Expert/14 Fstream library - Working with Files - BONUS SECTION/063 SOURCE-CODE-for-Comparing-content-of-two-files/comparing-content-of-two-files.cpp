@@ -59,14 +59,14 @@ bo.. areFilesEqual(fstream *a, fstream *b)
             {
                 c__ __  "Files are not equal, at least one of the byte was different" __  e..
 
-                delete [] file1buffersy.. pause
-                delete [] file2buffersy.. pause
+                de.. [] file1buffersy.. pause
+                de.. [] file2buffersy.. pause
                 r_ falsesy.. pause
             }
         }w___(a__good() && b__good())sy.. pause
 
-        delete [] file1buffersy.. pause
-        delete [] file2buffersy.. pause
+        de.. [] file1buffersy.. pause
+        de.. [] file2buffersy.. pause
         r_ truesy.. pause
     }
     ____

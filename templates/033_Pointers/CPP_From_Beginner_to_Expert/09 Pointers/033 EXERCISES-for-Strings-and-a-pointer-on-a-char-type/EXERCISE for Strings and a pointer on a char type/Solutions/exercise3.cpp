@@ -25,7 +25,7 @@ in. main ()
     }
 
 
-    delete [] characters
+    de.. [] characters
 
 
     r_ _

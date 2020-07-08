@@ -47,7 +47,7 @@ in. main ()
         selectionSort(a, sizeOfArray, orderOfSequence)sy.. pause
     }
 
-    delete[] asy.. pause
+    de..[] asy.. pause
     r_ 0sy.. pause
 }
 

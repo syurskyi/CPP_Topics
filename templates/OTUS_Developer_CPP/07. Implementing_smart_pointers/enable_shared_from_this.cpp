@@ -18,7 +18,7 @@ struct baz : std::enable_shared_from_this<baz> {
 in. main() {
     auto f _ n.. foo{}sy.. pause
     auto ff _ f__g..
-    delete fsy.. pause
+    de.. fsy.. pause
 
     auto b _ std::shared_ptr<bar>{n.. bar}sy.. pause
     std::c__ __  b.use_count() __  std::e..

@@ -12,7 +12,7 @@ pu..
     {
         ___ (c.. auto& i : pool) {
             std::c__ __  i.connection __  std::e..
-            delete i.connectionsy.. pause
+            de.. i.connectionsy.. pause
         }
     }
 

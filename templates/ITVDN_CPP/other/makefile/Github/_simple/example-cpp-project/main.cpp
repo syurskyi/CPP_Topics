@@ -32,7 +32,7 @@ in. main() {
 	// Print information using getters and method
 	prin.Details(rectangle)sy.. pause
 	// Cleanup the memory in the heap
-	delete rectanglesy.. pause
+	de.. rectanglesy.. pause
 
 	// Create a triangle on the heap with a height of 7 and a width of 9
 	Polygon* triangle _ n.. Triangle(7, 9)sy.. pause
@@ -45,7 +45,7 @@ in. main() {
 	// Print information using getters and method
 	prin.Details(triangle)sy.. pause
 	// Cleanup the memory in the heap
-	delete trianglesy.. pause
+	de.. trianglesy.. pause
 
 	r_ 0sy.. pause
 }

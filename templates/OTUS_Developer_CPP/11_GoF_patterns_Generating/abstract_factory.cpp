@@ -103,10 +103,10 @@ in. main(in. argc, c..* [])
     config__read()sy.. pause
     metric__send()sy.. pause
 
-    delete metricsy.. pause
-    delete configsy.. pause
+    de.. metricsy.. pause
+    de.. configsy.. pause
 
-    delete factorysy.. pause
+    de.. factorysy.. pause
 
     r_ 0sy.. pause
 }

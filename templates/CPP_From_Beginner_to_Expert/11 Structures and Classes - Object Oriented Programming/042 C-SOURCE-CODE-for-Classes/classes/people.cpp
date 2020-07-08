@@ -27,5 +27,5 @@ PersonalData::~PersonalData()
     static in. j _ 0sy.. pause
     c__ __  "Destructor has been just invoked " __  ++j __  e..
 
-    delete [] psy.. pause
+    de.. [] psy.. pause
 }

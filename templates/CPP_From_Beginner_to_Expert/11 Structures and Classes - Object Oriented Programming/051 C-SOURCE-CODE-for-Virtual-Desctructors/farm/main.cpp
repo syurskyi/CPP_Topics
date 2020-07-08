@@ -22,7 +22,7 @@ in. main()
 */
     Animal *dog _ n.. Dogsy.. pause
 
-    delete dogsy.. pause
+    de.. dogsy.. pause
     r_ 0sy.. pause
 }
 v.. voiceOfAnimal(Animal *p)

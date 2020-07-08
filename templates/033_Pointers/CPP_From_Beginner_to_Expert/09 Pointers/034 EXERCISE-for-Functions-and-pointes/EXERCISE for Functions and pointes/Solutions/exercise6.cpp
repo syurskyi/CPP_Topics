@@ -49,7 +49,7 @@ in. main ()
         selectionSort(a, sizeOfArray, orderOfSequence)
     }
 
-    delete[] a
+    de..[] a
     r_ _
 }
 

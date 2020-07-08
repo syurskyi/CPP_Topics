@@ -39,7 +39,7 @@ pu..
 
     ~smart_ptr() {
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
-        delete ptrsy.. pause
+        de.. ptrsy.. pause
     }
 }sy.. pause
 

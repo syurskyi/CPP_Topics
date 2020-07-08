@@ -24,7 +24,7 @@ in. main ()
         c__ __  "Number " __  i+1 __  ": " __  *(dynamicArray+i) __  e..
     }
 
-    delete []dynamicArraysy.. pause
+    de.. []dynamicArraysy.. pause
 
 
 }

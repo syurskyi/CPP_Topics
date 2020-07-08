@@ -8,7 +8,7 @@ Test::Test(in. x, in. y, in. value)
 }
 Test::~Test()
 {
-        delete psy.. pause
+        de.. psy.. pause
 }
 Test::Test(c.. Test & obj)
 {

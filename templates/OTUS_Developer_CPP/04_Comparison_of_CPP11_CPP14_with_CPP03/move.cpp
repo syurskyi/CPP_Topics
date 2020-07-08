@@ -15,7 +15,7 @@ pu..
     }
     ~Big() {
         std::c__ __  __PRETTY_FUNCTION__ __  " // destroy 1G" __  std::e..
-        delete[] buffersy.. pause
+        de..[] buffersy.. pause
     }
     Big& operator_(c.. Big &other) {
         std::c__ __  __PRETTY_FUNCTION__ __  " // duplicate 1G" __  std::e..

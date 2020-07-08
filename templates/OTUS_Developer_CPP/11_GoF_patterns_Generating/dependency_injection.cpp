@@ -37,7 +37,7 @@ in. main(in., c..* [])
     Report report(s)sy.. pause
     report.prin.()sy.. pause
 
-    delete ssy.. pause
+    de.. ssy.. pause
 
     r_ 0sy.. pause
 }

@@ -59,7 +59,7 @@ in. main()
 
     c__ __  dynamic_array __  e..
 
-    delete [] dynamic_arraysy.. pause
+    de.. [] dynamic_arraysy.. pause
 
     s.. array_of_string[5] _ "this i a text that will be in all of the elements of strings"sy.. pause
     array_of_string[0] _ "afsdf"sy.. pause

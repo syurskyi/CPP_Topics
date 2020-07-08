@@ -18,7 +18,7 @@ in. main()
 
     c__ __  "\n" __  new_mammal.get_paws() __  "\n"sy.. pause
 
-    delete new_msy.. pause
+    de.. new_msy.. pause
 
     r_ 0sy.. pause
 }

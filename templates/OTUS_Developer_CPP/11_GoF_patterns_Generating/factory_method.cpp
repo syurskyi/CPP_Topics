@@ -65,7 +65,7 @@ in. main(in. argc, c..* [])
     storage__execute_query()sy.. pause
     storage__close()sy.. pause
 
-    delete storagesy.. pause
+    de.. storagesy.. pause
 
     r_ 0sy.. pause
 }

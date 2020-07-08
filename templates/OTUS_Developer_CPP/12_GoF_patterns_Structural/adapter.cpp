@@ -79,5 +79,5 @@ in. main(in., c.. *[])
     db__execute_query()sy.. pause
     db__close()sy.. pause
 
-    delete dbsy.. pause
+    de.. dbsy.. pause
 }

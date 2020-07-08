@@ -59,6 +59,6 @@ in. main(in., c.. *[])
 
     c__refresh()sy.. pause
 
-    delete c__ssy.. pause
-    delete csy.. pause
+    de.. c__ssy.. pause
+    de.. csy.. pause
 }

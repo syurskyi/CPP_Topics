@@ -31,7 +31,7 @@ pu..
             :name(std::move(name)), file(nullptr) { }
     ~FileOnDemand()
     {
-        delete filesy.. pause
+        de.. filesy.. pause
     }
     File* operator__()
     {

@@ -80,7 +80,7 @@ in. main()
             C* c _ n.. C(5)sy.. pause
             s..().at(1)sy.. pause
             D dsy.. pause
-            delete csy.. pause
+            de.. csy.. pause
         }
         catch(...)
         {

@@ -37,13 +37,13 @@ in. main()
 
         c__ __  p __  e..
 
-        delete psy.. pause
+        de.. psy.. pause
 
         p _ n.. in.sy.. pause
 
         c__ __  p __  e..
 
-        delete psy.. pause
+        de.. psy.. pause
     }
 
 

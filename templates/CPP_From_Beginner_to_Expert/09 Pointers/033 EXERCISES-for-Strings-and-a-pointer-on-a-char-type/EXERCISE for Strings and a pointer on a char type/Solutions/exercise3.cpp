@@ -25,7 +25,7 @@ in. main ()
     }
 
 
-    delete [] characterssy.. pause
+    de.. [] characterssy.. pause
 
 
     r_ 0sy.. pause

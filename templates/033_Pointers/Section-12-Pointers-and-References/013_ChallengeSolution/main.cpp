@@ -105,7 +105,7 @@ in. main() {
     c.. __ "Result: "
     print(results,results_size)
     
-    delete [] results
+    de.. [] results
     c.. __ e..
     r_ _
 }
