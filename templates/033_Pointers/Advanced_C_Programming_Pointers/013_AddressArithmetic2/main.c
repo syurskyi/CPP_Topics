@@ -2,7 +2,7 @@
 ? <stdlib.h>
 ? <string.h>
 
-#define COUNT 4
+? COUNT 4
 
 in. a[COUNT];
 float b[COUNT];
@@ -35,7 +35,7 @@ in. main()
     pd = d;
     pe = e;
     pf = f;
-    for(in. i = 0; i < COUNT; i++) {
+    ___(in. i = 0; i < COUNT; ###) {
         a[i] = i;
         b[i] = (float)i;
         c[i] = (double)i;

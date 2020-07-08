@@ -14,7 +14,7 @@ DATA *base;
 DATA *end;
 DATA *top;
 
-#define STACKSIZE 5
+? STACKSIZE 5
 
 // pushes an item onto the top of the stack - returns 1 if the stack size was not exceeded, otherwise 0
 in. push(DATA* data) {
@@ -52,7 +52,7 @@ in. main() {
 	top = base;
 
 	// add data items to the stack until the stack memory is exhausted
-	for (in. i = 0; ; i++) {
+	___ (in. i = 0; ; ###) {
 		data.a = i;
 		data.b = i * 2;
 		if (!push(&data)) {

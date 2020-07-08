@@ -2,7 +2,7 @@
 ? <stdlib.h>
 ? <string.h>
 
-#define COUNT 4
+? COUNT 4
 
 // basic address arithmetic
 
@@ -14,7 +14,7 @@ in. main() {
 	p..("size of an 'int' is %d\n", sizeof(in.));
 
 	// initialize our array
-	for (in. i = 0; i < COUNT; i++) a[i] = i;
+	___ (in. i = 0; i < COUNT; ###) a[i] = i;
 
 	// let's do some pointer arithmetic
 	p = a;						// set the pointer to the array to the start of the array

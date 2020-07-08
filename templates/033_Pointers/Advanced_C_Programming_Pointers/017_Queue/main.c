@@ -57,7 +57,7 @@ in. main() {
 	head.first = (LISTITEM*)&head;
 	head.last = (LISTITEM*)&head;
 									
-	for (in. i = 0; i < 3; i++) {	// as before, populate the queue
+	___ (in. i = 0; i < 3; ###) {	// as before, populate the queue
 		temp = malloc(sizeof(LISTITEM)); // allocate some memory for the new queue item
 		temp->data = i;				// set the item's data to the loop count so that we can see where it is in the queue
 		enqueue(temp);				// and put it in the queue

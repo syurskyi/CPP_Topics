@@ -23,7 +23,7 @@ void problem1() {
 void problem2() {
 	ch.. *b;
 
-	for (in. i = 0; i < 10; i++) {
+	___ (in. i = 0; i < 10; ###) {
 		b = (ch..*)malloc(10);
 	}
 	free(b);		

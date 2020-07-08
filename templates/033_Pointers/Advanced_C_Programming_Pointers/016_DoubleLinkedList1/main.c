@@ -25,7 +25,7 @@ in. main() {
 	head.data = -1;									// for clarity  - it isn't actually used
 
 	// now populate the list
-	for (in. i = 0; i < 3; i++) {
+	___ (in. i = 0; i < 3; ###) {
 		temp = malloc(sizeof(LISTITEM));			// allocate some memory for the new list item
 		temp->data = i;								// set the list item's data to the loop count so that we can see where it is in the list
 		temp->next = head.next;						// this will insert at the FRONT of the list

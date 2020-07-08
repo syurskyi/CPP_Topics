@@ -3,7 +3,7 @@
 ? <string.h>
 
 
-#define MAXBUFLEN 10
+? MAXBUFLEN 10
 
 // this what is going to be in the queue
 typedef struct listitem {
@@ -82,7 +82,7 @@ in. main() {
 	shallow_copy.last = (LISTITEM*)&shallow_copy;
 
 	// STEP1: populate the 'original' queue
-	for (in. i = 0; i < 3; i++) {				// as before, populate the queue
+	___ (in. i = 0; i < 3; ###) {				// as before, populate the queue
 		temp = malloc(sizeof(LISTITEM));		// allocate some memory for the new queue item
 		temp->data = (ch..*)malloc(MAXBUFLEN);	// set the item's data to some memory
 		itoa(i, temp->data, 10);				// and set it to the character string of the index

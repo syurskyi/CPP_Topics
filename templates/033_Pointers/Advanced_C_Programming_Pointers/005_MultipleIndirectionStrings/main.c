@@ -1,6 +1,6 @@
 ? |s..
 
-#define LENGTH 3
+? LENGTH 3
 
 ch..* words[LENGTH];		// some strings
 
@@ -14,7 +14,7 @@ in. main(in. argc, ch.. @@ {
 	words[0] = "zero";
 	words[1] = "one";
 	words[2] = "two";
-	for (in. i = 0; i < LENGTH; i++) {
+	___ (in. i = 0; i < LENGTH; ###) {
 		p..("%s\n", words[i]);
 	}
 
@@ -25,7 +25,7 @@ in. main(in. argc, ch.. @@ {
 	*
 	*/
 	ppc = words;							// initialize the pointer to a pointer to a character
-	for (in. i = 0; i < LENGTH; i++) {		// loop over each string
+	___ (in. i = 0; i < LENGTH; ###) {		// loop over each string
 		ppc = words + i;
 		pc = *ppc;
 		while (*pc != 0) {					// process each character in a string

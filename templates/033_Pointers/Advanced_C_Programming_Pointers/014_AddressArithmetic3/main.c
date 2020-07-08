@@ -9,7 +9,7 @@ typedef struct {
     long long in. d; // 8 bytes
 } MYSTRUCT;
 
-#define COUNT 4
+? COUNT 4
 
 // a more complicated example
 
@@ -33,7 +33,7 @@ in. main()
     // the 64-bit integer
     // this is so we can see where the compiler has inserted padding space to get the desired alignment for the 8 byte
     // quantities 'b' and 'd'
-    for(in. i = 0; i < COUNT; i++) {
+    ___(in. i = 0; i < COUNT; ###) {
         p[i].a = i;
         p[i].b = 10000000000.0 + i;
         p[i].c = i * 20;
@@ -62,7 +62,7 @@ in. main()
     // NOTE: that we are using address arithmetic to move along MYSTRUCT as a set of 8 'int' values of 4 bytes each (32
     // bytes in total)
     p..("Struct at index 3\n");
-    for(in. i = 0; i < sizeof(MYSTRUCT) / sizeof(in.); i++) {
+    ___(in. i = 0; i < sizeof(MYSTRUCT) / sizeof(in.); ###) {
         p..("v[%d]=%d\n", i, ((in.*)v)[i]);
     }
 

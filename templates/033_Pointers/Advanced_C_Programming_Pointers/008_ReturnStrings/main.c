@@ -2,7 +2,7 @@
 ? <string.h>
 ? <malloc.h>
 
-#define MAXSTRLEN 100
+? MAXSTRLEN 100
 
 ch.. * string_function(ch.. *astring) {
 	ch..* s;

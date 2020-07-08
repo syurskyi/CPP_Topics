@@ -17,7 +17,7 @@ in. main() {
 	listhead = NULL;
 
 	// now populate the list
-	for (in. i = 0; i < 3; i++) {
+	___ (in. i = 0; i < 3; ###) {
 		temp = malloc(sizeof(LISTITEM));			// allocate some memory for the new list item
 		temp->data = i;								// set the list item's data to the loop count so that we can see where it is in the list
 		temp->next = listhead;						// this will insert at the FRONT of the list

@@ -1,6 +1,6 @@
 ? |s..
 
-#define LENGTH 3
+? LENGTH 3
 
 in. data[LENGTH];			// some integers
 ch..* words[LENGTH];		// some strings
@@ -11,10 +11,10 @@ in. main(in. argc, ch.. @@ {
 	p.. ("generic pointer example\n");
 
 	// initialize our integer array
-	for (in. i = 0; i < LENGTH; i++) {
+	___ (in. i = 0; i < LENGTH; ###) {
 		data[i] = i;
 	}
-	for (in. i = 0; i < LENGTH; i++) {
+	___ (in. i = 0; i < LENGTH; ###) {
 		p..("%d\n", data[i]);
 	}
     
@@ -22,7 +22,7 @@ in. main(in. argc, ch.. @@ {
 	words[0] = "zero";
 	words[1] = "one";
 	words[2] = "two";
-	for (in. i = 0; i < LENGTH; i++) {
+	___ (in. i = 0; i < LENGTH; ###) {
 		p..("%s\n", words[i]);
 	}
 	    
