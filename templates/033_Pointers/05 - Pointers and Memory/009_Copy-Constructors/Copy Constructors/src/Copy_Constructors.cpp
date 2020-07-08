@@ -7,32 +7,32 @@
 ? |i..
 u.. s..
 
-c_ Animal {
+c_ Animal
 pr..
 	st.. name
 
 pu..
-	Animal() { c.. __ "Animal created." __ e.. }
-	Animal(c.. Animal& other): name(other.name) { c.. __ "Animal created by copying." __ e.. }
-	v.. setName(st.. name) { t..__name _ name }
-	v.. speak() c.. { c.. __ "My name is: " __ name __ e.. }
-}
+	? c.. __ "Animal created." __ e..
+	? c.. ?# other name other.name c.. __ "Animal created by copying." __ e..
+	v.. setName st.. name  t..__name _ ?
+	v.. speak c..  c.. __ "My name is: " __ ? __ e..
 
-in. main() {
 
-	Animal animal1
+in. main
 
-	animal1.setName("Freddy")
+	? animal1
 
-	Animal animal2 _ animal1
-	animal2.speak()
-	animal2.setName("Bob")
+	?.sN.. Freddy
 
-	animal1.speak()
-	animal2.speak()
+	? animal2 _ animal1
+	?.sp..
+	?.sN.. Bob
 
-	Animal animal3(animal1)
-	animal3.speak()
+	?.sp..
+	?.sp..
+
+	? animal3 _1
+	?.sp..
 
 	r_ _
-}
+
