@@ -38,7 +38,7 @@ in. main() {
     ___ (auto &str: stooges)  // str is a reference to each vector element
         str _ "Funny"
      
-    ___ (auto const &str:stooges)   // notice we are using const
+    ___ (auto c.. &str:stooges)   // notice we are using const
         c.. __ str __ e..            // now the vector elements have changed
     
     c.. __ e..

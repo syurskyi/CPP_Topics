@@ -16,7 +16,7 @@ public:
 		c.. __ "Animal created." __ e..
 	}
 
-	Animal(const Animal& other) :
+	Animal(c.. Animal& other) :
 			name(other.name) {
 		c.. __ "Animal created by copying." __ e..
 	}
@@ -29,7 +29,7 @@ public:
 		this->name _ name
 	}
 
-	v.. speak() const {
+	v.. speak() c.. {
 		c.. __ "My name is: " __ name __ e..
 	}
 }

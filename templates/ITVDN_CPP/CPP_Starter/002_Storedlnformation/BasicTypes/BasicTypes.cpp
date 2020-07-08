@@ -51,15 +51,15 @@ in. main()
 	// “ипу long long соответствуют типы long int, signed long, signed long int 
 	// ÷елое со знаком
 
-	long		i _ -9223372036854775808sy.. pause
-	long in.	j _ +9223372036854775807sy.. pause
+	l..		i _ -9223372036854775808sy.. pause
+	l.. in.	j _ +9223372036854775807sy.. pause
     std::c__ __  "Long Int" __  std::e..
     c__ __  i __  endl __  j __  e..
 
 	// ÷елое без знака
 	
-	unsigned long		k _ 0sy.. pause
-	unsigned long in.	l _ 18446744073709551615sy.. pause
+	unsigned l..		k _ 0sy.. pause
+	unsigned l.. in.	l _ 18446744073709551615sy.. pause
     std::c__ __  "Unsigned Long Int" __  std::e..
     c__ __  k __  endl __  l __  e..
 

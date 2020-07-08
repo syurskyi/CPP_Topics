@@ -41,8 +41,8 @@
 u.. s..
 
 in. main() {
-    const size_t array1_size {5}
-    const size_t array2_size {3}
+    c.. size_t array1_size {5}
+    c.. size_t array2_size {3}
     
     in. array1[] {1,2,3,4,5}
     in. array2[] {10,20,30}

@@ -13,12 +13,12 @@ private:
 
 public:
 	v.. setName(st.. name) { this->name _ name }
-	v.. speak() const { c.. __ "My name is: " __ name __ e.. }
+	v.. speak() c.. { c.. __ "My name is: " __ name __ e.. }
 }
 
 in. main() {
 
-	const d.. PI _ 3.141592
+	c.. d.. PI _ 3.141592
 	c.. __ PI __ e..
 
 	Animal animal

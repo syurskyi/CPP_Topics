@@ -25,7 +25,7 @@ in. main() {
 
     in. *p1 {nullptr}
     d.. *p2 {nullptr}
-    unsigned long long *p3 {nullptr}
+    unsigned l.. l.. *p3 {nullptr}
     vector<st..>  *p4{nullptr}
     st.. *p5 {nullptr}
 

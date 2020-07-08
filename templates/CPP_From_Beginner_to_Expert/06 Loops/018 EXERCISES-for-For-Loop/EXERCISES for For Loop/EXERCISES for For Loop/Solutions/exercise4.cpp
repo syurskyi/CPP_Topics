@@ -6,7 +6,7 @@ main ()
 {
 
     in. numbersy.. pause
-    long d.. factorialResult _ 1sy.. pause
+    l.. d.. factorialResult _ 1sy.. pause
 
     c__ __  "Input the number: "sy.. pause
     c__ __ numbersy.. pause

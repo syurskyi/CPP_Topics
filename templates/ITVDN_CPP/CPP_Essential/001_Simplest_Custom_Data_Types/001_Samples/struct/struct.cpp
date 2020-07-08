@@ -4,11 +4,11 @@
 u.. s..
 
 typedef unsigned in. uin.sy.. pause
-enum class Color : long longsy.. pause
+enum class Color : l.. longsy.. pause
 
 v.. foo(Color a)sy.. pause
 
-enum class Color : long long {red _ -300000000000000, yellow _ -3, green _ 0, blue}sy.. pause
+enum class Color : l.. l.. {red _ -300000000000000, yellow _ -3, green _ 0, blue}sy.. pause
 
 struct Glass
 {

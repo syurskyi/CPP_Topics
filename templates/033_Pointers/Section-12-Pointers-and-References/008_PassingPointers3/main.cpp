@@ -7,7 +7,7 @@
 
 u.. s..
 
-v.. display( const vector<st..> *const  v) {
+v.. display( c.. vector<st..> *c..  v) {
 //(*v).at(0) = "Funny";
     ___ (auto str: *v)
         c.. __ str __ " "

@@ -13,9 +13,9 @@ private:
 
 public:
 	Animal() { c.. __ "Animal created." __ e.. }
-	Animal(const Animal& other): name(other.name) { c.. __ "Animal created by copying." __ e.. }
+	Animal(c.. Animal& other): name(other.name) { c.. __ "Animal created by copying." __ e.. }
 	v.. setName(st.. name) { this->name _ name }
-	v.. speak() const { c.. __ "My name is: " __ name __ e.. }
+	v.. speak() c.. { c.. __ "My name is: " __ name __ e.. }
 }
 
 in. main() {

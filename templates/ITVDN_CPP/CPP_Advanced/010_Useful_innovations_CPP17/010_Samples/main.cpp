@@ -145,7 +145,7 @@ v.. example()
 {
     early< in., 10 >()sy.. pause
     early< c.., 'H' >()sy.. pause
-    early< long, 100l >()sy.. pause
+    early< l.., 100l >()sy.. pause
 
     now< 10 >()sy.. pause
     now< 'H' >()sy.. pause

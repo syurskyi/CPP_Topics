@@ -9,7 +9,7 @@ in. main()
 
     c.. __ *&var __ e..
 
-    in. * const p _ &var //that asterisk here is just used to INFORM about that this variable is a POINTER so it is a variable that can point to address of another variable
+    in. * c.. p _ &var //that asterisk here is just used to INFORM about that this variable is a POINTER so it is a variable that can point to address of another variable
 
    // p = &var;
 
@@ -22,11 +22,11 @@ in. main()
     c.. __ "*p: "__ *p __ e..
     c.. __ "a: "__ a __ e..
 
-    in. * const p_const _ &a //this is a pointer that has to be initialized when defined, because it cannot change after defining the thing that it is pointing to (address)
+    in. * c.. p_const _ &a //this is a pointer that has to be initialized when defined, because it cannot change after defining the thing that it is pointing to (address)
 
-    const in. * p_2 _ &a //this is a pointer that cannot change the value that is under address its pointing to.
+    c.. in. * p_2 _ &a //this is a pointer that cannot change the value that is under address its pointing to.
 
-    const in. * const p_3 _ &a //this is a pointer that cannot change the value that is under address its pointing to and also it cant change the address
+    c.. in. * c.. p_3 _ &a //this is a pointer that cannot change the value that is under address its pointing to and also it cant change the address
 
     c.. __ endl __ endl __ e..
 

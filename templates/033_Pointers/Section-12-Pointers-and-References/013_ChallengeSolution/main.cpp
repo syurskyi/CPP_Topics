@@ -41,8 +41,8 @@
 u.. s..
 
 // Function prototypes
-in. * apply_all(const in. *const arr1, size_t size1, const in. *const arr2, size_t size2)
-v.. print(const in. *const array, size_t size)
+in. * apply_all(c.. in. *c.. arr1, size_t size1, c.. in. *c.. arr2, size_t size2)
+v.. print(c.. in. *c.. array, size_t size)
 
 
 /*******************************************************************
@@ -56,7 +56,7 @@ This function expects:
     Then it loops through each element of arr2 and multiples it across all the
     elements of arr1 and each product is stored in the newly created array
 ********************************************************************/
-in. * apply_all(const in. *const arr1, size_t size1, const in. *const arr2, size_t size2) {
+in. * apply_all(c.. in. *c.. arr1, size_t size1, c.. in. *c.. arr2, size_t size2) {
     in. *new_array {}
     
     new_array _ new in.[size1 * size2]
@@ -78,7 +78,7 @@ This function expects:
     The function loops through arr and displays all the integers
     in the array
 ********************************************************************/
-v.. print(const in. *const arr, size_t size) {
+v.. print(c.. in. *c.. arr, size_t size) {
     c.. __ "[ "
     ___ (size_t i{0} i<size++i)
         c.. __ arr[i] __ " "
@@ -87,8 +87,8 @@ v.. print(const in. *const arr, size_t size) {
 }
 
 in. main() {
-    const size_t array1_size {5}
-    const size_t array2_size {3}
+    c.. size_t array1_size {5}
+    c.. size_t array2_size {3}
     
     in. array1[] {1,2,3,4,5}
     in. array2[] {10,20,30}

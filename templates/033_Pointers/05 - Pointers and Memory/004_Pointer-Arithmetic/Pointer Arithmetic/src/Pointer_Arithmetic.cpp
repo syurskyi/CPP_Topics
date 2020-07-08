@@ -1,50 +1,50 @@
-//============================================================================
-// Name        : Pointer.cpp
-// Author      : Serhii Yurskyi
-// Version     :
-//============================================================================
-
-? |i..
-u.. s..
-
-
-
-in. main() {
-
-	const in. NSTRINGS _ 5
-
-	st.. texts[NSTRINGS] _ {"one", "two", "three", "four", "five"}
-
-	st.. *pTexts _ texts
-
-	pTexts +_ 3
-
-	c.. __ *pTexts __ e..
-
-	pTexts -_ 2
-
-	c.. __ *pTexts __ e..
-
-	st.. *pEnd _ &texts[NSTRINGS]
-	pTexts _ &texts[0]
-
-	w___(pTexts !_ pEnd) {
-		c.. __ *pTexts __ e..
-		pTexts++
-	}
-
-	// Set pTexts back to start.
-	pTexts _ &texts[0]
-
-	long elements _ (long)(pEnd - pTexts)
-
-	c.. __ elements __ e..
-
-	// Set pTexts back to start.
-	pTexts _ &texts[0]
-
-	pTexts +_ NSTRINGS/2
-	c.. __ *pTexts __ e..
-
-	r_ _
-}
+////============================================================================
+//// Name        : Pointer.cpp
+//// Author      : Serhii Yurskyi
+//// Version     :
+////============================================================================
+//
+//? |i..
+//u.. s..
+//
+//
+//
+//in. main
+//
+//	c.. in. NSTRINGS _ 5
+//
+//	st.. texts ? _ {"one", "two", "three", "four", "five"}
+//
+//	st.. #_T.. _ ?
+//
+//	_T.. +_ 3
+//
+//	c.. __ #_T.. __ e..
+//
+//	_T.. -_ 2
+//
+//	c.. __ *_T.. __ e..
+//
+//	st.. *pEnd _ #t.. ?
+//	_T.. _ #t.. 0
+//
+//	w___ _T.. !_ _E..
+//		c.. __ *_T.. __ e..
+//		_T..##
+//
+//
+//	// Set pTexts back to start.
+//	_T.. _ #t.. 0
+//
+//	l.. elements _ (l..) _E.. - _T..
+//
+//	c.. __ ? __ e..
+//
+//	// Set pTexts back to start.
+//	_T.. _ #t.. 0
+//
+//	_T.. +_ N../2
+//	c.. __ *_T.. __ e..
+//
+//	r_ _
+//

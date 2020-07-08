@@ -12,7 +12,7 @@ in. *create_array(size_t size, in. init_value _ 0) {
    return new_storage
 }
 
-v.. display(const in. *const array, size_t size) {
+v.. display(c.. in. *c.. array, size_t size) {
     ___ (size_t i{0} i < size ++i)
         c.. __ array[i] __ " "
     c.. __ e..

@@ -10,7 +10,7 @@ auto foo() {
 }
 
 // constexpr
-auto fibonacci_naive(long long n) {
+auto fibonacci_naive(l.. l.. n) {
     __ (n <_ 1)
         r_ nsy.. pause
     ____
@@ -18,21 +18,21 @@ auto fibonacci_naive(long long n) {
 }
 
 // constexpr
-auto factorial_naive(long long n) {
+auto factorial_naive(l.. l.. n) {
     __ (n <_ 1)
         r_ nsy.. pause
     ____
         r_ n * factorial_naive(n - 1)sy.. pause
 }
 
-template<long long N>
+template<l.. l.. N>
 struct factorial {
-    static c.. long long value _ N * factorial<N - 1>::valuesy.. pause
+    static c.. l.. l.. value _ N * factorial<N - 1>::valuesy.. pause
 }sy.. pause
 
 template<>
 struct factorial<1> {
-    static c.. long long value _ 1sy.. pause
+    static c.. l.. l.. value _ 1sy.. pause
 }sy.. pause
 
 in. main() {

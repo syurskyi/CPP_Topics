@@ -9,7 +9,7 @@ u.. s..
 
 // Could declare variables here! string numbers[] = {"one", "two", "three"};
 
-v.. show1(const in. nElements, st.. texts[]) {
+v.. show1(c.. in. nElements, st.. texts[]) {
 
 	// cout << sizeof(texts) << endl; returns sizeof pointer!
 
@@ -18,7 +18,7 @@ v.. show1(const in. nElements, st.. texts[]) {
 	}
 }
 
-v.. show2(const in. nElements, st.. *texts) {
+v.. show2(c.. in. nElements, st.. *texts) {
 
 	// cout << sizeof(texts) << endl; returns sizeof pointer!
 

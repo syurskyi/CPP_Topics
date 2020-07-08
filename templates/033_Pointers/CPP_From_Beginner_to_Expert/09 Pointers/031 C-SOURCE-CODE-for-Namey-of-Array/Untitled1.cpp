@@ -9,7 +9,7 @@ in. main()
     a[1] _ 20
     a[2] _ 40
     short in. zm
-    in. * const p _ &a[0]
+    in. * c.. p _ &a[0]
 
     c.. __ p __ e..
     c.. __ a __ e..

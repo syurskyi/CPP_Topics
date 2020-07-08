@@ -11,7 +11,7 @@ in. main()
 	c__ __  "Char: " __  s_o_(c..) __  e..
 	c__ __  "Short: " __  s_o_(sh..) __  e..
 	c__ __  "Int: " __  s_o_(in.) __  e..
-	c__ __  "Long long: " __  s_o_(long long) __  e..
+	c__ __  "Long long: " __  s_o_(l.. l..) __  e..
 	c__ __  "Float: " __  s_o_(float) __  e..
 	c__ __  "Double: " __  s_o_(d..) __  e..
 

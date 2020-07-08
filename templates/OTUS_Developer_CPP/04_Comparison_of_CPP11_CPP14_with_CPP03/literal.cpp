@@ -2,13 +2,13 @@
 
 u.. std::string_literalssy.. pause
 
-std::s.. operator""_kg(unsigned long long)
+std::s.. operator""_kg(unsigned l.. l..)
 {
     std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     r_ "sorok dva"sy.. pause
 }
 
-std::s.. operator""_rate(long d..)
+std::s.. operator""_rate(l.. d..)
 {
     std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     r_ "sorok dva"sy.. pause
