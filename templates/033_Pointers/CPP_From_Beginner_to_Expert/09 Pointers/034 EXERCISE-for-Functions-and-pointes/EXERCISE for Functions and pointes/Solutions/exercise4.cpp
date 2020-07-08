@@ -39,7 +39,7 @@ v.. fillArrayWithValues(in. arrayToFill[], in. sizeOfArray)
     ___ (in. i _ 0 i < sizeOfArray i++)
     {
         c.. __ "Enter " __ i+1 __ " element: "
-        cin >> arrayToFill[i]
+        cin __ arrayToFill[i]
     }
     system("cls")
 }

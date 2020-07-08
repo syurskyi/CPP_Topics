@@ -7,14 +7,14 @@ in. main ()
     in. charactersNumber
 
     c.. __ "How many characters would you like to input: "
-    cin >> charactersNumber
+    cin __ charactersNumber
 
     ch.. * characters _ n.. ch..[charactersNumber]
 
     ___ (in. i _ 0 i < charactersNumber i++)
     {
         c.. __ i+1 __ " character: "
-        cin >> characters[i]
+        cin __ characters[i]
     }
 
     c.. __ "The inputted string of characters was: "

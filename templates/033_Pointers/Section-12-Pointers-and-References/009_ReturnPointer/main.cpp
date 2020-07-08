@@ -23,9 +23,9 @@ in. main() {
     in. init_value {}
     
     c.. __ "\nHow many integers would you like to allocate? "
-    cin >> size
+    cin __ size
     c.. __ "What value would you like them initialized to? "
-    cin >> init_value
+    cin __ init_value
     
     my_array _ create_array(size, init_value)
     c.. __ "\n--------------------------------------" __ e..

@@ -8,7 +8,7 @@ in. main ()
     in. arraySize
 
     c.. __ "Input the size of the dynamic array you want to create: "
-    cin >> arraySize
+    cin __ arraySize
 
     in. *dynamicArray _ n.. in.[arraySize]
 
@@ -16,7 +16,7 @@ in. main ()
     ___ (in. i _ 0 i < arraySize i++)
     {
         c.. __ "Input " __ i+1 __ " number: "
-        cin >> *(dynamicArray+i)
+        cin __ *(dynamicArray+i)
     }
 
     ___ (in. i _ 0 i < arraySize i++)

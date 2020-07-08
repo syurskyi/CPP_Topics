@@ -24,7 +24,7 @@ in. main()
 
     ch.. ch
 
-    cin >> ch
+    cin __ ch
 
     c.. __ (in.)ch __ e..
     r_ _

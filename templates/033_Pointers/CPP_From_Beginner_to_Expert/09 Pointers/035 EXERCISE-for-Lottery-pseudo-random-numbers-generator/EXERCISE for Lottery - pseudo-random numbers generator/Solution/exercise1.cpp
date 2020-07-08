@@ -18,7 +18,7 @@ in. main ()
 
     in. sizeOfArray
     c.. __ "Input the size of the array to sort: "
-    cin >> sizeOfArray
+    cin __ sizeOfArray
 
     in.* a _ createArray(sizeOfArray)
 
@@ -26,14 +26,14 @@ in. main ()
 
     in. orderOfSequence
     c.. __ endl __ "Sort Ascending - 1, Descending - 2: "
-    cin >> orderOfSequence
+    cin __ orderOfSequence
 
     __ (orderOfSequence !_ 2)
         orderOfSequence _ 1
 
     ch.. sortChoice
     c.. __ "Bubble Sort - B or b, Selection Sort - S or s: "
-    cin >> sortChoice
+    cin __ sortChoice
 
     __ (sortChoice !_ 'S' || sortChoice !_ 's')
         sortChoice _ 'B'
