@@ -4,9 +4,9 @@
 
 typedef struct {
     in. a;           // 4 bytes
-    double b;        // 8 bytes    
+    do.. b;        // 8 bytes
     in. c;           // 4 bytes
-    long long in. d; // 8 bytes
+    lo.. lo.. in. d; // 8 bytes
 } MYSTRUCT;
 
 ? COUNT 4

@@ -7,7 +7,7 @@
 
 typedef struct {
 	in. a;
-	double b;
+	do.. b;
 } DATA;
 
 DATA *base;
