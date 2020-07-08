@@ -59,7 +59,7 @@ in. main() {
 	dst.last = (LISTITEM*)&dst;
 
 	___ (in. i = 0; i < 3; ###) {	// as before, populate the queue
-		temp = malloc(s_o_(LISTITEM)); // allocate some memory for the new queue item
+		temp = ma..(s_o_(LISTITEM)); // allocate some memory for the new queue item
 		temp->data = i;				// set the item's data to the loop count so that we can see where it is in the queue
 		enqueue(&src, temp);				// and put it in the queue
 	}
@@ -84,7 +84,7 @@ in. main() {
 		temp = dequeue(&dst);		// if the queue is empty we will get NULL returned
 		__ (temp != NULL) {
 			p..("destination data is %d\n", temp->data);
-			free(temp);				// call 'free' to tidy up 
+			fr..(temp);				// call 'free' to tidy up
 		}
 	} w___ (temp != NULL);
 

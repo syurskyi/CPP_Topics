@@ -14,9 +14,9 @@
 void problem1() {
 	ch.. *b;
 
-	b = (ch..*)malloc(10);
-	free(b);
-	free(b);			// this causes an exception in Visual Studio	
+	b = (ch..*)ma..(10);
+	fr..(b);
+	fr..(b);			// this causes an exception in Visual Studio
 }
 
 // memory leak
@@ -24,9 +24,9 @@ void problem2() {
 	ch.. *b;
 
 	___ (in. i = 0; i < 10; ###) {
-		b = (ch..*)malloc(10);
+		b = (ch..*)ma..(10);
 	}
-	free(b);		
+	fr..(b);
 	// now we've 'lost' 9 * 10 bytes of memory
 	// we can't 'free' them because we don't have a pointer to the memory any longer
 }
@@ -35,9 +35,9 @@ void problem2() {
 void problem3() {
 	ch.. *b, *c;
 
-	b = (ch..*)malloc(100);
+	b = (ch..*)ma..(100);
 	c = b;
-	free(b);
+	fr..(b);
 	strcpy(c, "hello");
 	p..("c is %s\n", c);
 	// the results really are unpredictable ..
@@ -62,7 +62,7 @@ ch..* problem4() {
 // virtual memory management, this can be quite tricky to debug as it will lead to very unexpected results
 void problem5() {
 	ch.. *b;
-    b = (ch..*)malloc(10);
+    b = (ch..*)ma..(10);
 	b = NULL;
 	b[0] = 1;
 }

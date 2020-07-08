@@ -47,7 +47,7 @@ DATA* pop() {
 in. main() {
 	DATA data, *pdata;
 	
-	base = (DATA*)malloc(STACKSIZE * s_o_(DATA));
+	base = (DATA*)ma..(STACKSIZE * s_o_(DATA));
 	end = base + STACKSIZE;
 	top = base;
 
@@ -73,7 +73,7 @@ in. main() {
 	// NOTE: I do NOT call free for each item 'popped' from the stack
 	// because I may want to push onto the stack again.
 	// Instead, I call 'free' to release the entire stack when I've finished with it
-	free(base);
+	fr..(base);
 	r_ 0;
 }
 

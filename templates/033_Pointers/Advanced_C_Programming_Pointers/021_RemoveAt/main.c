@@ -112,7 +112,7 @@ in. main() {
 	head.last = (LISTITEM*)&head;
 
 	___ (in. i = 0; i < 5; ###) {	// as before, populate the queue
-		temp = malloc(s_o_(LISTITEM)); // allocate some memory for the new queue item
+		temp = ma..(s_o_(LISTITEM)); // allocate some memory for the new queue item
 		temp->data = i;				// set the item's data to the loop count so that we can see where it is in the queue
 		enqueue(&head, temp);	// and put it in the queue
 	}
@@ -128,7 +128,7 @@ in. main() {
 		temp = remove_at(&head, requested_index);	// if we can't do it we will get NULL returned
 		__ (temp != NULL) {
 			p..("OK: data removed at %d is %d\n", requested_index, temp->data);
-			free(temp);				// call 'free' to tidy up 
+			fr..(temp);				// call 'free' to tidy up
 		}
 		else {
 			p..("ERROR: cannot remove at %d\n", requested_index);
@@ -141,7 +141,7 @@ in. main() {
 		temp = dequeue(&head);		// if the queue is empty we will get NULL returned
 		__ (temp != NULL) {
 			p..("data is %d\n", temp->data);
-			free(temp);				// call 'free' to tidy up 
+			fr..(temp);				// call 'free' to tidy up
 		}
 	} w___ (temp != NULL);
 

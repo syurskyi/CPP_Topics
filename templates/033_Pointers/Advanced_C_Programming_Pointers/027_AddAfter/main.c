@@ -113,7 +113,7 @@ in. main() {
 	head.last = (LISTITEM*)&head;
 
 	___ (in. i = 0; i < 3; ###) {			// as before, populate the queue
-		temp = malloc(s_o_(LISTITEM));	// allocate some memory for the new queue item
+		temp = ma..(s_o_(LISTITEM));	// allocate some memory for the new queue item
 		p..("address of new item = %p\n", temp);
 		temp->data = i;						// set the item's data to the loop count so that we can see where it is in the queue
 		enqueue(&head, temp);				// and put it in the queue
@@ -123,12 +123,12 @@ in. main() {
 	// add item at a user entered index
 	p..("enter the index of the queue entry ... ");
 	requested_index = atoi(gets(input));
-	temp = malloc(s_o_(LISTITEM));
+	temp = ma..(s_o_(LISTITEM));
 	p..("address of new item = %p\n", temp);
 	temp->data = -requested_index;			// set payload to a -ve number so we can see where it is when we print out the queue
 	__ (add_after(&head, requested_index, temp) __ NULL) {	// if we can't do it we will get NULL returned
 		p..("cannot add item at %d\n", requested_index);
-		free(temp);				// call 'free' to tidy up 
+		fr..(temp);				// call 'free' to tidy up
 	}
 	else {
 		p..("added item at %d\n", requested_index);
@@ -156,7 +156,7 @@ in. main() {
 		temp = dequeue(&head);		// if the queue is empty we will get NULL returned
 		__ (temp != NULL) {
 			p..("data in original queue is %d\n", temp->data);
-			free(temp);				// call 'free' to tidy up 
+			fr..(temp);				// call 'free' to tidy up
 		}
 	} w___ (temp != NULL);
 
