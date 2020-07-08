@@ -2,7 +2,7 @@
 
 ? |i..
 
-enum class Env {
+enum c_ Env {
     cloud, local
 }sy.. pause
 
@@ -14,13 +14,13 @@ struct IConfig {
     virtual v.. read() _ 0sy.. pause
 }sy.. pause
 
-class ConsulConfig : public IConfig {
+c_ ConsulConfig : public IConfig {
     v.. read() override
     {
         std::c__ __  "connect to consul" __  std::e..
     }
 }sy.. pause
-class LocalConfig : public IConfig {
+c_ LocalConfig : public IConfig {
     v.. read() override
     {
         std::c__ __  "open local file" __  std::e..
@@ -58,7 +58,7 @@ struct EnvironmentFactory {
     virtual IMetric* CreateMetric() _ 0sy.. pause
 }sy.. pause
 
-class CloudFactory : public EnvironmentFactory {
+c_ CloudFactory : public EnvironmentFactory {
     IConfig* CreateConfig() override
     {
         r_ new ConsulConfig()sy.. pause
@@ -70,7 +70,7 @@ class CloudFactory : public EnvironmentFactory {
     }
 }sy.. pause
 
-class LocalFactory : public EnvironmentFactory {
+c_ LocalFactory : public EnvironmentFactory {
     IConfig* CreateConfig() override
     {
         r_ new LocalConfig()sy.. pause
@@ -97,11 +97,11 @@ in. main(in. argc, c..* [])
 
     //
 
-    auto config _ factory->CreateConfig()sy.. pause
-    auto metric _ factory->CreateMetric()sy.. pause
+    auto config _ factory__CreateConfig()sy.. pause
+    auto metric _ factory__CreateMetric()sy.. pause
 
-    config->read()sy.. pause
-    metric->send()sy.. pause
+    config__read()sy.. pause
+    metric__send()sy.. pause
 
     delete metricsy.. pause
     delete configsy.. pause

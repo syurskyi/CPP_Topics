@@ -5,10 +5,10 @@
 
 u.. s..
 
-class A
+c_ A
 {}sy.. pause
 
-class B : public A
+c_ B : public A
 {}sy.. pause
 
 in. main()
@@ -30,7 +30,7 @@ in. main()
     __ ( auto dom _ dynamic_cast<Domestic*>(cat) )
     {
         c__ __  "Domestic"sy.. pause
-        c__ __  dom->get_name()sy.. pause
+        c__ __  dom__get_name()sy.. pause
     }
     r_ 0sy.. pause
 }

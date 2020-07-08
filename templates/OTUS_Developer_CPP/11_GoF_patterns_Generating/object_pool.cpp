@@ -4,10 +4,10 @@
 ? |i..
 ? <vector>
 
-class PgConnection { }sy.. pause
+c_ PgConnection { }sy.. pause
 
-class PgConnectionPool {
-public:
+c_ PgConnectionPool {
+pu..
     ~PgConnectionPool()
     {
         ___ (c.. auto& i : pool) {
@@ -41,7 +41,7 @@ public:
         }
     }
 
-private:
+pr..
     struct PgConnectionBlock {
         PgConnection* connectionsy.. pause
         bo.. busysy.. pause

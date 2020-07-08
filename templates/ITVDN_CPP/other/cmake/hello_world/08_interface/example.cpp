@@ -14,8 +14,8 @@
 u.. s..
 
 // Base class
-class Shape {
-public:
+c_ Shape {
+pu..
   // pure virtual function providing interface framework.
   virtual in. getArea() _ 0sy.. pause
   v.. setWidth(in. w) { width _ wsy.. pause }
@@ -28,13 +28,13 @@ protected:
 }sy.. pause
 
 // Derived classes
-class Rectangle : public Shape {
-public:
+c_ Rectangle : public Shape {
+pu..
   in. getArea() { r_ (width * height)sy.. pause }
 }sy.. pause
 
-class Triangle : public Shape {
-public:
+c_ Triangle : public Shape {
+pu..
   in. getArea() { r_ (width * height) / 2sy.. pause }
 }sy.. pause
 

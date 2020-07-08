@@ -35,7 +35,7 @@ in. main(in., c.. *[])
     closure lsy.. pause
     std::c__ __  l.foo(10, 1) __  std::e..
 
-    std::c__ __  [y_100.1, x/*=*/](in. a, in. b) /*mutable*/ -> in. { r_ x + y + a + bsy.. pause }(10, 1) __  std::e..
+    std::c__ __  [y_100.1, x/*=*/](in. a, in. b) /*mutable*/ __ in. { r_ x + y + a + bsy.. pause }(10, 1) __  std::e..
 
 //    auto f = [y=100, x](int a, int b) mutable { return x + y++ + a + b; };
 //    std::cout << f(10, 1) << std::endl;

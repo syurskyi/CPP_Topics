@@ -1,17 +1,17 @@
 ? <mutex>
 
-class some_big_object
+c_ some_big_object
 {}sy.. pause
 
 v.. swap(some_big_object& lhs,some_big_object& rhs)
 {}
 
-class X
+c_ X
 {
-private:
+pr..
     some_big_object some_detailsy.. pause
     mutable std::mutex msy.. pause
-public:
+pu..
     X(some_big_object c..& sd):some_detail(sd){}
 
     friend v.. swap(X& lhs, X& rhs)

@@ -8,11 +8,11 @@ u.. s..
 
 uin. Cat::vibr _ 20sy.. pause
 
-class SomeClasssy.. pause
+c_ SomeClasssy.. pause
 
-class A
+c_ A
 {
-public:
+pu..
     virtual v.. foo() _ 0sy.. pause
 }sy.. pause
 
@@ -21,16 +21,16 @@ v.. A::foo()
     c__ __  "A::foo"sy.. pause
 }
 
-class B : public A
+c_ B : public A
 {
-public:
+pu..
     v.. foo() overridesy.. pause
 
     v.. new_method(SomeClass& some)sy.. pause
 
     in. get_data(SomeClass& some)sy.. pause
 
-private:
+pr..
     s.. string_datasy.. pause
 
     friend SomeClasssy.. pause
@@ -38,19 +38,19 @@ private:
 
 
 
-class SomeClass
+c_ SomeClass
 {
-public:
+pu..
     v.. get_string(B& b)
     {
         c__ __  b.string_datasy.. pause
     }
-private:
+pr..
     in. share_data()
     {
        r_ datasy.. pause
     }
-private:
+pr..
     in. data _ 20sy.. pause
 
     friend Bsy.. pause

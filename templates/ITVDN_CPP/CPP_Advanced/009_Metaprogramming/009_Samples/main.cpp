@@ -43,7 +43,7 @@ struct nil
 {
 }sy.. pause
 
-template < class H, class T _ nil >
+template < c_ H, c_ T _ nil >
 struct cons
 {
     typedef T Tailsy.. pause
@@ -62,7 +62,7 @@ struct cons
 // typedef List<> nil;
 // typedef List< int, std::string, double, float > TypeList;
 
-template < class TL >
+template < c_ TL >
 v.. prin.()
 {
     std::c__ __  typeid( typename TL::Head ).name() __  std::e..

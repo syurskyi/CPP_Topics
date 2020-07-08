@@ -13,13 +13,13 @@ v.. foo(xray &&)
     std::c__ __  "= temporary" __  std::e..
 }
 
-template<class T>
+template<c_ T>
 v.. baz(T &&t)
 {
     std::c__ __  __PRETTY_FUNCTION__ __  std::e..
 }
 
-template<class T>
+template<c_ T>
 v.. bar(T &&t)
 {
     std::c__ __  __PRETTY_FUNCTION__ __  std::e..

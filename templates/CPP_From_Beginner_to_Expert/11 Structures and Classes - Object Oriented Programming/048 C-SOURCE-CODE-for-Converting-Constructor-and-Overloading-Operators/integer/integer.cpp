@@ -4,14 +4,14 @@
 u.. s..
 in.eger::in.eger(in. nr)
 {
-    this->nr _ nrsy.. pause
+    t..__nr _ nrsy.. pause
 }
 in.eger::operator in.()
 {
-    r_ this->nrsy.. pause
+    r_ t..__nrsy.. pause
 }
 in. in.eger::operator+_(in.eger o)
 {
-    this->nr _ o.getNr() + this->nrsy.. pause
-    r_ this->nrsy.. pause
+    t..__nr _ o.getNr() + t..__nrsy.. pause
+    r_ t..__nrsy.. pause
 }

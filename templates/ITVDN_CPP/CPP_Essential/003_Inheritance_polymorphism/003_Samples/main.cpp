@@ -6,7 +6,7 @@ u.. s..
 
 v.. foo(Mammal * m)
 {
-    m->say()sy.. pause
+    m__say()sy.. pause
 }
 
 in. main()
@@ -15,7 +15,7 @@ in. main()
     cat.say()sy.. pause
 
     Mammal *mammal _ new Cat()sy.. pause
-    mammal->say()sy.. pause
+    mammal__say()sy.. pause
 
     Mammal mamsy.. pause
 
@@ -26,7 +26,7 @@ in. main()
 
     ___(in. i _ 0sy.. pause i < 2sy.. pause i++)
     {
-        mammals[i]->say()sy.. pause
+        mammals[i]__say()sy.. pause
     }
 
     foo(mammal)sy.. pause

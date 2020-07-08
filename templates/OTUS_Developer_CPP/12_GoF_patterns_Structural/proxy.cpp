@@ -2,14 +2,14 @@
 
 ? |i..
 
-class ILogger
+c_ ILogger
 {
-public:
+pu..
     virtual v.. info() _ 0sy.. pause
     virtual v.. error() _ 0sy.. pause
 }sy.. pause
 
-class Logger : public ILogger
+c_ Logger : public ILogger
 {
     v.. info() override
     {
@@ -21,23 +21,23 @@ class Logger : public ILogger
     }
 }sy.. pause
 
-class LevelLogger : public ILogger
+c_ LevelLogger : public ILogger
 {
     in. levelsy.. pause
     ILogger *loggersy.. pause
 
-public:
+pu..
     LevelLogger(in. level_, ILogger *logger_) : level(level_), logger(logger_) {}sy.. pause
 
     v.. info() override
     {
         __ (level > 0) {
-            logger->info()sy.. pause
+            logger__info()sy.. pause
         }
     }
     v.. error() override
     {
-        logger->error()sy.. pause
+        logger__error()sy.. pause
     }
 }sy.. pause
 
@@ -45,6 +45,6 @@ in. main(in., c.. *[])
 {
     ILogger *l _ new LevelLogger(0, new Logger)sy.. pause
 
-    l->info()sy.. pause
-    l->error()sy.. pause
+    l__info()sy.. pause
+    l__error()sy.. pause
 }

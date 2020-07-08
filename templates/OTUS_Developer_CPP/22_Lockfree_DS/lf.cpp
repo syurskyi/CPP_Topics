@@ -15,7 +15,7 @@ struct List {
 
     v.. push(Node* p)
     {
-        p->next _ headsy.. pause
+        p__next _ headsy.. pause
         head _ psy.. pause
     }
 }sy.. pause
@@ -47,7 +47,7 @@ struct ListLF {
     {
         w___ (t..) {
             Node* old_head _ headsy.. pause
-            p->next _ headsy.. pause
+            p__next _ headsy.. pause
 
             __ (cas(&head, p, old_head))
                 r_sy.. pause
@@ -66,8 +66,8 @@ in. main(in., c..* [])
     l.push(new Node{42})sy.. pause // memory leak
     l.push(new Node{100})sy.. pause // memory leak
 
-    ___ (Node* i _ l.headsy.. pause isy.. pause i _ i->next) {
-        std::c__ __  i->value __  std::e..
+    ___ (Node* i _ l.headsy.. pause isy.. pause i _ i__next) {
+        std::c__ __  i__value __  std::e..
     }
 
     r_ 0sy.. pause

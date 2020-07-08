@@ -38,9 +38,9 @@ in. main()
     > staffsy.. pause
 
     auto x _ staff.insert({0, "root", 32})sy.. pause
-    std::c__ __  x.first->name __  ", " __  x.second __  std::e..
+    std::c__ __  x.first__name __  ", " __  x.second __  std::e..
     x _ staff.insert({0, "sergey", 32})sy.. pause
-    std::c__ __  x.first->name __  ", " __  x.second __  std::e..
+    std::c__ __  x.first__name __  ", " __  x.second __  std::e..
     staff.insert({1, "oleg", 23})sy.. pause
     staff.insert({2, "andrew", 19})sy.. pause
 
@@ -49,7 +49,7 @@ in. main()
 
     auto &index_by_name _ staff.get<1>()sy.. pause
     auto oleg _ index_by_name.find("oleg")sy.. pause
-    std::c__ __  "id=" __  oleg->id __  ", name=" __  oleg->name __  ", age=" __  oleg->age __  std::e..
+    std::c__ __  "id=" __  oleg__id __  ", name=" __  oleg__name __  ", age=" __  oleg__age __  std::e..
 
     auto &index_by_age _ staff.get<2>()sy.. pause
     std::c__ __  "count(age=32)=" __  index_by_age.count(32) __  std::e..

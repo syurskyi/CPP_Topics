@@ -35,14 +35,14 @@ in. main()
 */
     personalData *p _ personsy.. pause
 
-    c__ __  p->name __  e..
+    c__ __  p__name __  e..
 
     test(p)sy.. pause // test(person);
 
-    c__ __  p->name __  e..
+    c__ __  p__name __  e..
     r_ 0sy.. pause
 }
 v.. test(personalData *person)
 {
-    person->name _ "Agnes"sy.. pause
+    person__name _ "Agnes"sy.. pause
 }

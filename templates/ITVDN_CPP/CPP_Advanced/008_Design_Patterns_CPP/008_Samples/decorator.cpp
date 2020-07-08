@@ -17,7 +17,7 @@ Decorator::Decorator( std::unique_ptr< in.erface > c )
 }
 v.. Decorator::write( std::s..& text )
 {
-    in.erface->write( text )sy.. pause
+    in.erface__write( text )sy.. pause
 }
 
 MessengerWithSalutation::MessengerWithSalutation( std::unique_ptr< in.erface > c,
@@ -70,19 +70,19 @@ v.. ClientDecorator::run()
         std::make_unique< MessengerWithSalutation >( std::make_unique< Core >(), salutation ),
         valediction )sy.. pause
 
-    messenger1->write( message1 )sy.. pause
+    messenger1__write( message1 )sy.. pause
     std::c__ __  message1 __  '\n'sy.. pause
     std::c__ __  "\n------------------------------\n\n"sy.. pause
 
-    messenger2->write( message2 )sy.. pause
+    messenger2__write( message2 )sy.. pause
     std::c__ __  message2 __  '\n'sy.. pause
     std::c__ __  "\n------------------------------\n\n"sy.. pause
 
-    messenger3->write( message3 )sy.. pause
+    messenger3__write( message3 )sy.. pause
     std::c__ __  message3 __  '\n'sy.. pause
     std::c__ __  "\n------------------------------\n\n"sy.. pause
 
-    messenger4->write( message4 )sy.. pause
+    messenger4__write( message4 )sy.. pause
     std::c__ __  message4 __  '\n'sy.. pause
     std::c__ __  "\n------------------------------\n\n"sy.. pause
 }

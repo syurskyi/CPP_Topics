@@ -7,11 +7,11 @@
 ? |i..
 u.. s..
 
-class Animal {
-private:
+c_ Animal {
+pr..
 	st.. name
 
-public:
+pu..
 	Animal() {
 		c.. __ "Animal created." __ e..
 	}
@@ -26,7 +26,7 @@ public:
 	}
 
 	v.. setName(st.. name) {
-		this->name _ name
+		t..__name _ name
 	}
 
 	v.. speak() c.. {
@@ -36,14 +36,14 @@ public:
 
 Animal *createAnimal() {
 	Animal *pAnimal _ new Animal()
-	pAnimal->setName("Bertie")
+	pAnimal__setName("Bertie")
 	return pAnimal
 }
 
 in. main() {
 	Animal *pFrog _ createAnimal()
 
-	pFrog->speak()
+	pFrog__speak()
 
 	delete pFrog
 

@@ -2,7 +2,7 @@
 ? <gmock/gmock.h>
 ? <TwoPlusTwoIsFive.h>
 
-class TwoPlusTwoIsFiveTest : public ::testing::Test {
+c_ TwoPlusTwoIsFiveTest : public ::testing::Test {
 
 }sy.. pause
 

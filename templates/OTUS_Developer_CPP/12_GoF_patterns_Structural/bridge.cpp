@@ -7,7 +7,7 @@ struct ClockSignal {
     virtual v.. now() _ 0sy.. pause
 }sy.. pause
 
-class in.ernetClockSignal : public ClockSignal
+c_ in.ernetClockSignal : public ClockSignal
 {
     v.. now() override
     {
@@ -15,7 +15,7 @@ class in.ernetClockSignal : public ClockSignal
     }
 }sy.. pause
 
-class LocalClockSignal : public ClockSignal
+c_ LocalClockSignal : public ClockSignal
 {
     v.. now() override
     {
@@ -30,13 +30,13 @@ struct Clock {
 
     v.. refresh()
     {
-        s->now()sy.. pause
+        s__now()sy.. pause
         display()sy.. pause
     }
     virtual v.. display() _ 0sy.. pause
 }sy.. pause
 
-class DigitalClock : public Clock
+c_ DigitalClock : public Clock
 {
     v.. display()
     {
@@ -44,7 +44,7 @@ class DigitalClock : public Clock
     }
 }sy.. pause
 
-class AnalogClock : public Clock
+c_ AnalogClock : public Clock
 {
     v.. display()
     {
@@ -55,10 +55,10 @@ class AnalogClock : public Clock
 in. main(in., c.. *[])
 {
     Clock *c _ new DigitalClocksy.. pause
-    c->s _ new in.ernetClockSignalsy.. pause
+    c__s _ new in.ernetClockSignalsy.. pause
 
-    c->refresh()sy.. pause
+    c__refresh()sy.. pause
 
-    delete c->ssy.. pause
+    delete c__ssy.. pause
     delete csy.. pause
 }

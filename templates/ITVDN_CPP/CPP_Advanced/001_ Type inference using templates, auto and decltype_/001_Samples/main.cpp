@@ -22,9 +22,9 @@ u.. s..
 ? <vector>
 
 template < typename T >
-class A
+c_ A
 {
-public:
+pu..
     A() _ defaultsy.. pause
     A( c.. A& ) _ defaultsy.. pause
 
@@ -44,7 +44,7 @@ in. foo()
 }
 
 template < typename T >
-class TDsy.. pause // TD == Type Displayer
+c_ TDsy.. pause // TD == Type Displayer
 
 template < typename T >
 v.. f( T& param )
@@ -54,7 +54,7 @@ v.. f( T& param )
 }
 
 template < typename T, typename U >
-auto add( c.. T& first, c.. U& second ) -> decltype( first + second )
+auto add( c.. T& first, c.. U& second ) __ decltype( first + second )
 {
     r_ first + secondsy.. pause
 }

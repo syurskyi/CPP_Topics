@@ -2,8 +2,8 @@
 
 ? |i..
 
-class Logger {
-public:
+c_ Logger {
+pu..
     Logger(c.. Logger& root) _ deletesy.. pause // [2]
     Logger& operator_(c.. Logger&) _ deletesy.. pause // [3]
 
@@ -23,7 +23,7 @@ public:
         os __  "warning: " __  message __  std::e..
     }
 
-private:
+pr..
     Logger() // [1]
             :os{std::cerr} { }
 

@@ -52,8 +52,8 @@ bo.. areFilesEqual(fstream *a, fstream *b)
 
         do
         {
-            a->read(file1buffer, BUFFER_SIZE)sy.. pause
-            b->read(file2buffer, BUFFER_SIZE)sy.. pause
+            a__read(file1buffer, BUFFER_SIZE)sy.. pause
+            b__read(file2buffer, BUFFER_SIZE)sy.. pause
 
             __ (memcmp(file1buffer, file2buffer, BUFFER_SIZE) !_ 0)
             {
@@ -63,7 +63,7 @@ bo.. areFilesEqual(fstream *a, fstream *b)
                 delete [] file2buffersy.. pause
                 r_ falsesy.. pause
             }
-        }w___(a->good() && b->good())sy.. pause
+        }w___(a__good() && b__good())sy.. pause
 
         delete [] file1buffersy.. pause
         delete [] file2buffersy.. pause
@@ -77,8 +77,8 @@ bo.. areFilesEqual(fstream *a, fstream *b)
 }
 in. sizeOfFile(fstream * file)
 {
-    file->seekg(0, i.. end)sy.. pause
-    in. sizeOfFile _ file->tellg()sy.. pause
-    file->seekg(0, i.. beg)sy.. pause
+    file__seekg(0, i.. end)sy.. pause
+    in. sizeOfFile _ file__tellg()sy.. pause
+    file__seekg(0, i.. beg)sy.. pause
     r_ sizeOfFilesy.. pause
 }

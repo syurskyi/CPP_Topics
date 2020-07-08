@@ -1,8 +1,8 @@
 ? |i..
 
-class Big {
+c_ Big {
     c..* buffersy.. pause
-public:
+pu..
     Big() : buffer(new c..[1000]) {
         std::c__ __  __PRETTY_FUNCTION__ __  " // allocate 1G" __  std::e..
     }

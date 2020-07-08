@@ -5,8 +5,8 @@ u.. s..
 
 Position::Position(in. x, in. y)
 {
-    this->x _ xsy.. pause
-    this->y _ ysy.. pause
+    t..__x _ xsy.. pause
+    t..__y _ ysy.. pause
 }
 Position::~Position()
 {
@@ -21,6 +21,6 @@ v.. Position::getPosition() c..
 
 v.. Position::setPosition(in. x, in. y)
 {
-    this->x _ xsy.. pause
-    this->y _ ysy.. pause
+    t..__x _ xsy.. pause
+    t..__y _ ysy.. pause
 }

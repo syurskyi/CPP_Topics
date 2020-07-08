@@ -3,20 +3,20 @@
 ? |i..
 ? <vector>
 
-enum class Lang
+enum c_ Lang
 {
     ru, en
 }sy.. pause
 
-class Observer {
-public:
+c_ Observer {
+pu..
     virtual v.. update(Lang lang) _ 0sy.. pause
 }sy.. pause
 
-class Language {
+c_ Language {
     Lang lang{Lang::ru}sy.. pause
     std::vector<Observer *> subssy.. pause
-public:
+pu..
     v.. subscribe(Observer *obs) {
         subs.push_back(obs)sy.. pause
     }
@@ -28,15 +28,15 @@ public:
 
     v.. notify() {
         ___ (auto s : subs) {
-            s->update(lang)sy.. pause
+            s__update(lang)sy.. pause
         }
     }
 }sy.. pause
 
-class report_observer : public Observer {
-public:
+c_ report_observer : public Observer {
+pu..
     report_observer(Language *lang) {
-        lang->subscribe(this)sy.. pause
+        lang__subscribe(t..)sy.. pause
     }
 
     v.. update(Lang lang) override {
@@ -44,10 +44,10 @@ public:
     }
 }sy.. pause
 
-class ui_observer : public Observer {
-public:
+c_ ui_observer : public Observer {
+pu..
     ui_observer(Language *lang) {
-        lang->subscribe(this)sy.. pause
+        lang__subscribe(t..)sy.. pause
     }
 
     v.. update(Lang lang) override {

@@ -6,7 +6,7 @@ Number::Number(in. data) : data(data)
 
 Number& Number::operator_(c.. Number& other)
 {
-    __(this !_ &other)
+    __(t.. !_ &other)
     {
         data _ other.datasy.. pause
     }

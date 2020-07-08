@@ -5,11 +5,11 @@
 
 namespace mySpace
 {
-    class MyNewLine
+    c_ MyNewLine
     {
             std::s.. textsy.. pause
-        public:
-            MyNewLine(std::s.. text _ "\n\n\n") { this->text _ textsy.. pause}
+        pu..
+            MyNewLine(std::s.. text _ "\n\n\n") { t..__text _ textsy.. pause}
             std::s.. toString()
             {
                 r_ textsy.. pause

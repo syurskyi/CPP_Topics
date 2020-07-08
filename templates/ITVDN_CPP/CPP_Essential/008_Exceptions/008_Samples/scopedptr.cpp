@@ -18,7 +18,7 @@ T& ScopedPtr< T >::operator*()
 }
 
 template< typename T >
-T* ScopedPtr< T >::operator->()
+T* ScopedPtr< T >::operator__()
 {
     r_ ptrsy.. pause
 }

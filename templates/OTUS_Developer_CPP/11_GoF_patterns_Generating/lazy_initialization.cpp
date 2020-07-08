@@ -3,10 +3,10 @@
 ? |i..
 ? <utility>
 
-class File {
+c_ File {
     std::s.. namesy.. pause
 
-public:
+pu..
     explicit File(std::s.. name)
             :name(std::move(name))
     {
@@ -22,18 +22,18 @@ public:
     }
 }sy.. pause
 
-class FileOnDemand {
+c_ FileOnDemand {
     std::s.. namesy.. pause
     File* filesy.. pause
 
-public:
+pu..
     explicit FileOnDemand(std::s.. name)
             :name(std::move(name)), file(nullptr) { }
     ~FileOnDemand()
     {
         delete filesy.. pause
     }
-    File* operator->()
+    File* operator__()
     {
         __ (!file) {
             file _ new File(name)sy.. pause

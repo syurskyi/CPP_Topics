@@ -3,16 +3,16 @@
 ? |i..
 ? <map>
 
-class Image
+c_ Image
 {
-public:
+pu..
     v.. resize(in., in.) {}sy.. pause
 }sy.. pause
 
-class ImageResizer
+c_ ImageResizer
 {
     std::map<in., Image> imagessy.. pause
-public:
+pu..
     Image get_box(in. w)
     {
         auto i _ images.find(w)sy.. pause
@@ -23,7 +23,7 @@ public:
             bo.. bsy.. pause
             std::tie(i, b) _ images.emplace(w, img)sy.. pause
         }
-        r_ i->secondsy.. pause
+        r_ i__secondsy.. pause
     }
 }sy.. pause
 

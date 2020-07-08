@@ -7,14 +7,14 @@
 ? |i..
 u.. s..
 
-class Animal {
-private:
+c_ Animal {
+pr..
 	st.. name
 
-public:
+pu..
 	Animal() { c.. __ "Animal created." __ e.. }
 	Animal(c.. Animal& other): name(other.name) { c.. __ "Animal created by copying." __ e.. }
-	v.. setName(st.. name) { this->name _ name }
+	v.. setName(st.. name) { t..__name _ name }
 	v.. speak() c.. { c.. __ "My name is: " __ name __ e.. }
 }
 

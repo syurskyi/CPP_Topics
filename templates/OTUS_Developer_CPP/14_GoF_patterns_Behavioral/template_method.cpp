@@ -2,7 +2,7 @@
 
 ? |i..
 
-class Report {
+c_ Report {
     v.. prepare() {
         std::c__ __  "===" __  std::e..
         std::c__ __  "prepare" __  std::e..
@@ -21,7 +21,7 @@ class Report {
         std::c__ __  std::e..
     }
 
-public:
+pu..
     v.. report() {
         prepare()sy.. pause
         secure()sy.. pause
@@ -31,7 +31,7 @@ public:
     }
 }sy.. pause
 
-class PublicReport : public Report {
+c_ PublicReport : public Report {
     v.. secure() override {
         std::c__ __  "encrypt *" __  std::e..
     }
@@ -41,7 +41,7 @@ class PublicReport : public Report {
     }
 }sy.. pause
 
-class in.ernalReport : public Report {
+c_ in.ernalReport : public Report {
     v.. secure() override {
         std::c__ __  "plane *" __  std::e..
     }

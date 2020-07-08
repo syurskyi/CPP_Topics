@@ -22,11 +22,11 @@ in. main() {
     std::c__ __  std::e..
 
     auto i _ alias.left.find("Нижний")sy.. pause
-    std::c__ __  i->first __  " => " __  i->second __  std::e..
+    std::c__ __  i__first __  " => " __  i__second __  std::e..
 
     auto j _ alias.right.equal_range("Санкт-Петербург")sy.. pause
     ___ (auto k _ j.firstsy.. pause k !_ j.secondsy.. pause ++k) {
-        std::c__ __  k->first __  " => " __  k->second __  std::e..
+        std::c__ __  k__first __  " => " __  k__second __  std::e..
     }
 
     r_ 0sy.. pause

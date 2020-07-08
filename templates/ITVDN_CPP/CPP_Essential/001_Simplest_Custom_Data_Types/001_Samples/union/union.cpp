@@ -32,7 +32,7 @@ in. main()
     A* a_ptrsy.. pause
     Container* cnt_ptrsy.. pause
 
-    a_ptr->bsy.. pause
+    a_ptr__bsy.. pause
     c__ __  a_ptr.asy.. pause
 
 

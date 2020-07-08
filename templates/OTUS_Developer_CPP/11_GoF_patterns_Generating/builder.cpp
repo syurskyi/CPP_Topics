@@ -6,11 +6,11 @@
 ? <utility>
 ? <vector>
 
-class Tariff {
+c_ Tariff {
     c.. std::vector<d..> amountsy.. pause
     c.. std::vector<in.> discountsy.. pause
 
-public:
+pu..
     Tariff(std::vector<d..> amount, std::vector<in.> discount)
             :amount(std::move(amount)), discount(std::move(discount))
     {
@@ -23,10 +23,10 @@ public:
     v.. apply()sy.. pause
 }sy.. pause
 
-class TariffBuilder {
+c_ TariffBuilder {
     std::map<d.., in.> tariffsy.. pause
 
-public:
+pu..
     v.. add_discount(d.. subtotal_, in. discount_)
     {
         tariff[subtotal_] _ discount_sy.. pause

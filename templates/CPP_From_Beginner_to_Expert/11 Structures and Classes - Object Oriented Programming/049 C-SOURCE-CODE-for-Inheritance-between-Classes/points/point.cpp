@@ -6,7 +6,7 @@ u.. s..
 
 Poin.::Poin.(in. x)
 {
-    this->x _ xsy.. pause
+    t..__x _ xsy.. pause
     c__ __  "The constructor from the Point class has just been invoked" __  e..
 }
 Poin.::~Poin.()
@@ -15,13 +15,13 @@ Poin.::~Poin.()
 }
 v.. Poin.::setX(in. x)
 {
-    this->x _ xsy.. pause
+    t..__x _ xsy.. pause
     c__ __  "Im from Point" __  e..
 }
 
 Poin.2D::Poin.2D(in. x, in. y) : Poin.(x)
 {
-    this->y _ ysy.. pause
+    t..__y _ ysy.. pause
     c__ __  "The constructor from the Point2D class has just been invoked" __  e..
 }
 Poin.2D::~Poin.2D()
@@ -31,7 +31,7 @@ Poin.2D::~Poin.2D()
 
 v.. Poin.2D::setY(in. y)
 {
-    this->y _ ysy.. pause
+    t..__y _ ysy.. pause
 }
 v.. Poin.2D::setXY(in. x, in. y)
 {
@@ -40,6 +40,6 @@ v.. Poin.2D::setXY(in. x, in. y)
 }
 v.. Poin.2D::setX(in. x)
 {
-    this->x _ xsy.. pause
+    t..__x _ xsy.. pause
     c__ __  "Im from Point2D" __  e..
 }

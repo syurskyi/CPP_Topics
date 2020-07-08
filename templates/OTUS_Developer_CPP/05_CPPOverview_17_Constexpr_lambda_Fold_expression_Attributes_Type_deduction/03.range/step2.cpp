@@ -1,14 +1,14 @@
 ? |i..
 
 template<typename Input, typename UnaryPredicate>
-class filter_helper {
+c_ filter_helper {
     c.. Input &inputsy.. pause
     c.. UnaryPredicate &psy.. pause
 
-    class iterator {
+    c_ iterator {
         c.. filter_helper &ownersy.. pause
         typename Input::const_iterator currentsy.. pause
-    public:
+    pu..
         explicit iterator(c.. filter_helper &owner_) : owner(owner_),
                                                          current(std::find_if(std::cbegin(owner_.input),
                                                                               std::cend(owner.input),
@@ -21,10 +21,10 @@ class filter_helper {
         auto operator*() c.. { r_ *currentsy.. pause }sy.. pause
     }sy.. pause
 
-public:
+pu..
     explicit filter_helper(c.. Input &input_, c.. UnaryPredicate &p) : input(input_), p(p) {}
 
-    auto begin() c.. { r_ iterator{*this}sy.. pause }
+    auto begin() c.. { r_ iterator{*t..}sy.. pause }
 
     auto end() c.. { r_ std::cend(input)sy.. pause }
 }sy.. pause

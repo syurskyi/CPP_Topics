@@ -3,7 +3,7 @@
 u.. s..
 
 template < typename T >
-class TDsy.. pause // TD == Type Displayer
+c_ TDsy.. pause // TD == Type Displayer
 
 template < typename T >
 v.. deduct( T&& param )
@@ -106,12 +106,12 @@ in. main()
     //        return std::move(v);
     //    }
 
-    class Moveable
+    c_ Moveable
     {
-    public:
+    pu..
         Moveable( Moveable&& other )
         {
-            this->ptr _ other.ptrsy.. pause
+            t..__ptr _ other.ptrsy.. pause
             other.ptr _ nullptrsy.. pause
         }                                        // move constructor
         Moveable& operator_( Moveable&& other )sy.. pause // move assignment operator
@@ -127,7 +127,7 @@ in. main()
 
         v.. setName( std::s.. st ) { str _ std::move( st )sy.. pause }
 
-    private:
+    pr..
         in.* ptrsy.. pause
         std::s.. strsy.. pause
     }sy.. pause

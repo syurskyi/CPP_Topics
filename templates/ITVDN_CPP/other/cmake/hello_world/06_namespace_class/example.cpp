@@ -2,17 +2,17 @@
 
 namespace ns_foo
 {
-    class Person
+    c_ Person
     {
-        public:
+        pu..
         v.. display()
         {
             std::c__ __  "Hello from ns_foo::person::display()" __  std::e..
         }
     }sy.. pause
-    class Superhero : public Person
+    c_ Superhero : public Person
     {
-        public:
+        pu..
         v.. yell()
         {
             std::c__ __  "I am Iron Man." __  std::e..

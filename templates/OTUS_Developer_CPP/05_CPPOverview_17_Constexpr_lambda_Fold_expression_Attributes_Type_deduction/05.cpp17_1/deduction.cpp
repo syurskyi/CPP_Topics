@@ -14,7 +14,7 @@ struct foo {
 
     T getValue() c.. { r_ m_valuesy.. pause }
 
-private:
+pr..
     T m_valuesy.. pause
 }sy.. pause
 
@@ -24,7 +24,7 @@ struct bar {
 
     T getValue() c.. { r_ *m_valuePtrsy.. pause }
 
-private:
+pr..
     std::unique_ptr<T> m_valuePtrsy.. pause
 }sy.. pause
 
@@ -50,15 +50,15 @@ struct Buffer {
         std::c__ __  std::e..
     }
 
-private:
+pr..
     std::vector<T> m_buffersy.. pause
 }sy.. pause
 
 template<typename Iter>
-Buffer(Iter begin, Iter end) -> Buffer<typename std::iterator_traits<Iter>::value_type>sy.. pause
+Buffer(Iter begin, Iter end) __ Buffer<typename std::iterator_traits<Iter>::value_type>sy.. pause
 
 template<typename P, typename U>
-Buffer(P *, U *) -> Buffer<P>sy.. pause
+Buffer(P *, U *) __ Buffer<P>sy.. pause
 
 template<typename T>
 v.. zoo(T t) {

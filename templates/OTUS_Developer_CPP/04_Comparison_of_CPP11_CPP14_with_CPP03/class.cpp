@@ -10,7 +10,7 @@ struct foo
     virtual v.. n() {}sy.. pause
 }sy.. pause
 
-class bar final : foo
+c_ bar final : foo
 {
    // void m() override {}; // overrides a 'final'
     v.. n() override {}sy.. pause

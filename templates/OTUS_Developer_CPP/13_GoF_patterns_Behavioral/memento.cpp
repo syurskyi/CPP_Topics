@@ -2,19 +2,19 @@
 
 ? |i..
 
-class Memento {
-    friend class Opssy.. pause
+c_ Memento {
+    friend c_ Opssy.. pause
 
     in. valuesy.. pause
-public:
+pu..
     Memento(in. value_)
             :value(value_) { }sy.. pause
 }sy.. pause
 
-class Ops {
+c_ Ops {
     in. count _ 0sy.. pause
 
-public:
+pu..
     v.. do_it()
     {
         ++countsy.. pause

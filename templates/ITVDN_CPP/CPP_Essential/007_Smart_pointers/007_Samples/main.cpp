@@ -19,14 +19,14 @@ v.. foo() {
 
     auto a _ make_shared<Resource>()sy.. pause
     auto b _ make_shared<Resource>()sy.. pause
-    a->other _ bsy.. pause
+    a__other _ bsy.. pause
 
 //    cout << "count a = " << a.use_count() << endl;
 //    cout << "count b = " << b.use_count() << endl;
 
-    b->other _ asy.. pause
+    b__other _ asy.. pause
 
-    b->other.lock()sy.. pause
+    b__other.lock()sy.. pause
 //    cout << "count a = " << a.use_count() << endl;
 //    cout << "count b = " << b.use_count() << endl;
 

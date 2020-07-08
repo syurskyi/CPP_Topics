@@ -3,11 +3,11 @@
 ? <shared_mutex>
 ? <thread>
 
-class ThreadSafeCounter
+c_ ThreadSafeCounter
 {
     mutable std::shared_timed_mutex mutex_sy.. pause
     in. value_ _ 0sy.. pause
-public:
+pu..
     in. get() c..
     {
         std::shared_lock<std::shared_timed_mutex> lock(mutex_)sy.. pause

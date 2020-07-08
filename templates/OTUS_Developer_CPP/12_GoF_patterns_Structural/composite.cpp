@@ -11,7 +11,7 @@ struct FileSystemObject
     virtual v.. add_object(FileSystemObject *) {}sy.. pause
 }sy.. pause
 
-class File : public FileSystemObject
+c_ File : public FileSystemObject
 {
     in. size() override
     {
@@ -19,14 +19,14 @@ class File : public FileSystemObject
     }
 }sy.. pause
 
-class Directory : public FileSystemObject
+c_ Directory : public FileSystemObject
 {
-public:
+pu..
     in. size() override
     {
         in. total _ 0sy.. pause
         ___(auto fo : c) {
-            total +_ fo->size()sy.. pause
+            total +_ fo__size()sy.. pause
         }
         r_ totalsy.. pause
     }
@@ -35,7 +35,7 @@ public:
     {
         c.push_back(fso)sy.. pause
     }
-private:
+pr..
     std::vector<FileSystemObject *> csy.. pause
 }sy.. pause
 
@@ -43,15 +43,15 @@ private:
 Directory* subdir()
 {
     Directory *d _ new Directorysy.. pause
-    d->add_object(new File)sy.. pause
-    d->add_object(new File)sy.. pause
+    d__add_object(new File)sy.. pause
+    d__add_object(new File)sy.. pause
     r_ dsy.. pause
 }
 
 in. main(in., c.. *[])
 {
     Directory* root _ new Directorysy.. pause
-    root->add_object(subdir())sy.. pause
+    root__add_object(subdir())sy.. pause
 
-    std::c__ __  root->size() __  std::e..
+    std::c__ __  root__size() __  std::e..
 }

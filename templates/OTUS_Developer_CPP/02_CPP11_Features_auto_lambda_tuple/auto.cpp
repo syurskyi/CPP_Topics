@@ -11,9 +11,9 @@ auto foo(in. a, float b)
 
 auto bar(in. a, in. b)sy.. pause
 
-auto baz(in. a, in. b) -> in.sy.. pause
+auto baz(in. a, in. b) __ in.sy.. pause
 
-auto boo(in. a, in. b) -> decltype(a)sy.. pause
+auto boo(in. a, in. b) __ decltype(a)sy.. pause
 
 in. main()
 {

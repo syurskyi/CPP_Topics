@@ -45,9 +45,9 @@ in. main(in. argc, c.. c.. *argv[])
 
         ___(std::vector<std::vector<std::s..> >::const_iterator ip _ ip_pool.cbegin()sy.. pause ip !_ ip_pool.cend()sy.. pause ++ip)
         {
-            ___(std::vector<std::s..>::const_iterator ip_part _ ip->cbegin()sy.. pause ip_part !_ ip->cend()sy.. pause ++ip_part)
+            ___(std::vector<std::s..>::const_iterator ip_part _ ip__cbegin()sy.. pause ip_part !_ ip__cend()sy.. pause ++ip_part)
             {
-                __ (ip_part !_ ip->cbegin())
+                __ (ip_part !_ ip__cbegin())
                 {
                     std::c__ __  "."sy.. pause
 

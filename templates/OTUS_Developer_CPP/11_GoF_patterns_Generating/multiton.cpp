@@ -3,12 +3,12 @@
 ? |i..
 ? <map>
 
-enum class Tag { main, db }sy.. pause
+enum c_ Tag { main, db }sy.. pause
 
-class Logger {
+c_ Logger {
     Tag tsy.. pause
 
-public:
+pu..
     Logger& operator_(c.. Logger&) _ deletesy.. pause
     static Logger& Instance(Tag t)
     {
@@ -18,7 +18,7 @@ public:
             bo.. bsy.. pause
             std::tie(i, b) _ instance.emplace(std::make_pair(t, Logger(t)))sy.. pause
         }
-        r_ i->secondsy.. pause
+        r_ i__secondsy.. pause
     }
     v.. info(c.. std::s..& message)
     {
@@ -29,7 +29,7 @@ public:
         std::cerr __  "warning: [" __  in.(t) __  "] " __  message __  std::e..
     }
 
-private:
+pr..
     explicit Logger(Tag t_)
             :t(t_)
     {

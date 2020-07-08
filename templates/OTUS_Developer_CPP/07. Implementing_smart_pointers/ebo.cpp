@@ -25,7 +25,7 @@ struct ptrd : deleter {
     in. *xsy.. pause
 
     v.. deleter() {
-        (*this)()sy.. pause
+        (*t..)()sy.. pause
     }
 }sy.. pause
 

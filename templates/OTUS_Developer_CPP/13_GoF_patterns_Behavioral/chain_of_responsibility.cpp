@@ -6,17 +6,17 @@
 
 ? |i..
 
-class Handler
+c_ Handler
 {
     Handler *nextsy.. pause
 
-public:
+pu..
     Handler() : next(nullptr) {}
 
     v.. add(Handler *n)
     {
         __ (next)
-            next->add(n)sy.. pause
+            next__add(n)sy.. pause
         ____
             next _ nsy.. pause
     }
@@ -24,14 +24,14 @@ public:
     virtual v.. exec(c.. std::s.. &line)
     {
         __ (next) {
-            next->exec(line)sy.. pause
+            next__exec(line)sy.. pause
         }
     }
 }sy.. pause
 
-class DropHandler : public Handler
+c_ DropHandler : public Handler
 {
-public:
+pu..
     v.. exec(c.. std::s.. &line) override
     {
         __ (line.find("DROP") __ 0) {
@@ -43,9 +43,9 @@ public:
     }
 }sy.. pause
 
-class SelectHandler : public Handler
+c_ SelectHandler : public Handler
 {
-public:
+pu..
     v.. exec(c.. std::s.. &line) override
     {
         __ (line.find("SELECT") __ 0) {
@@ -57,9 +57,9 @@ public:
     }
 }sy.. pause
 
-class CreateHandler: public Handler
+c_ CreateHandler: public Handler
 {
-public:
+pu..
     v.. exec(c.. std::s.. &line) override
     {
         __ (line.find("CREATE") __ 0) {

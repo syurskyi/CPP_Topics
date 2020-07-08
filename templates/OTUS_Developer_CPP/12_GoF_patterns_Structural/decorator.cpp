@@ -2,13 +2,13 @@
 
 ? |i..
 
-class File
+c_ File
 {
-public:
+pu..
     virtual v.. write() _ 0sy.. pause
 }sy.. pause
 
-class RawFile : public File
+c_ RawFile : public File
 {
     v.. write() override
     {
@@ -16,25 +16,25 @@ class RawFile : public File
     }
 }sy.. pause
 
-class ZipFile : public File
+c_ ZipFile : public File
 {
     File *filesy.. pause
 
     v.. write() override
     {
         std::c__ __  "compress" __  std::e..
-        file->write()sy.. pause
+        file__write()sy.. pause
     }
 
-public:
+pu..
     ZipFile(File *file_) : file(file_) {}sy.. pause
 }sy.. pause
 
 in. main(in., c.. *[])
 {
     File *c _ new RawFilesy.. pause
-    c->write()sy.. pause
+    c__write()sy.. pause
 
     File *t _ new ZipFile(new RawFile)sy.. pause
-    t->write()sy.. pause
+    t__write()sy.. pause
 }

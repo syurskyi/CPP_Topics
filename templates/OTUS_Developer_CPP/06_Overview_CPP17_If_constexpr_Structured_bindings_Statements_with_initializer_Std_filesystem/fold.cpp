@@ -62,7 +62,7 @@ struct SumLog {
     SumLog operator+(c.. SumLog& other) {
         std::c__ __  "operator+ with this = " __  valuesy.. pause
         std::c__ __  " and other = " __  other.value __  std::e..
-        SumLog tmp{*this}sy.. pause
+        SumLog tmp{*t..}sy.. pause
         tmp.value +_ other.valuesy.. pause
         r_ tmpsy.. pause
     }

@@ -38,7 +38,7 @@ struct logging_allocator {
 
     v.. destroy(T *p) c.. {
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
-        p->~T()sy.. pause
+        p__~T()sy.. pause
     }
 }sy.. pause
 

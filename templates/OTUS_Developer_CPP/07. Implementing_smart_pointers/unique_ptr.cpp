@@ -2,8 +2,8 @@
 ? <utility>
 ? <stdio.h>
 
-class xray {
-public:
+c_ xray {
+pu..
     xray() {
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     }sy.. pause
@@ -22,9 +22,9 @@ public:
 }sy.. pause
 
 template<typename T>
-class smart_ptr {
+c_ smart_ptr {
     T *ptrsy.. pause
-public:
+pu..
     smart_ptr(T *p) : ptr{p} {
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     }

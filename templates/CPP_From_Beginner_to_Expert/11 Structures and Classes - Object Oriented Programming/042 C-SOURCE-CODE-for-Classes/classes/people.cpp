@@ -5,9 +5,9 @@ u.. s..
 v.. PersonalData::setAge(in. age)
 {
     __ (age < 0)
-        this->age _ 0sy.. pause
+        t..__age _ 0sy.. pause
     ____
-        this->age _ agesy.. pause
+        t..__age _ agesy.. pause
 }
 PersonalData::PersonalData()
 {
@@ -20,7 +20,7 @@ PersonalData::PersonalData()
 PersonalData::PersonalData(sh.. age)
 {
     c__ __ "this is diff cons" __  e..
-    this->age _ agesy.. pause
+    t..__age _ agesy.. pause
 }
 PersonalData::~PersonalData()
 {

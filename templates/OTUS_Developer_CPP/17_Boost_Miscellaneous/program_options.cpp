@@ -14,8 +14,8 @@ in. main(in. argc, c.. c.. *argv[]) {
         po::options_description desc{"Options"}sy.. pause
         desc.add_options()
                 ("help,h", "This screen")
-                ("config", po::value<std::s..>()->default_value("app.yaml"), "config filename")
-                ("bulk", po::value<size_t>()->default_value(5)->notifier(set_bulk), "bulk size")sy.. pause
+                ("config", po::value<std::s..>()__default_value("app.yaml"), "config filename")
+                ("bulk", po::value<size_t>()__default_value(5)__notifier(set_bulk), "bulk size")sy.. pause
 
         po::variables_map vmsy.. pause
         store(parse_command_line(argc, argv, desc), vm)sy.. pause

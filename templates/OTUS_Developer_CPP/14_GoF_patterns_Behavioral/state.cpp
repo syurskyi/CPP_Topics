@@ -2,10 +2,10 @@
 
 ? |i..
 
-class Application {
-    class CommandHandler *cmd_handlersy.. pause
+c_ Application {
+    c_ CommandHandler *cmd_handlersy.. pause
 
-public:
+pu..
     Application()sy.. pause
 
     v.. set_current(CommandHandler *h) {
@@ -19,28 +19,28 @@ public:
     v.. logout()sy.. pause
 }sy.. pause
 
-class CommandHandler {
-public:
+c_ CommandHandler {
+pu..
     virtual v.. login(Application *) _ 0sy.. pause
     virtual v.. do_it(Application *) _ 0sy.. pause
     virtual v.. logout(Application *) _ 0sy.. pause
 }sy.. pause
 
 v.. Application::login() {
-    cmd_handler->login(this)sy.. pause
+    cmd_handler__login(t..)sy.. pause
 }
 
 v.. Application::do_it() {
-    cmd_handler->do_it(this)sy.. pause
+    cmd_handler__do_it(t..)sy.. pause
 }
 
 v.. Application::logout() {
-    cmd_handler->logout(this)sy.. pause
+    cmd_handler__logout(t..)sy.. pause
 }
 
 
-class LogginedHandler : public CommandHandler {
-public:
+c_ LogginedHandler : public CommandHandler {
+pu..
     v.. login(Application *) override {
         std::c__ __  "already login" __  std::e..
     }
@@ -50,11 +50,11 @@ public:
     v.. logout(Application *m) overridesy.. pause
 }sy.. pause
 
-class Anonymous : public CommandHandler {
-public:
+c_ Anonymous : public CommandHandler {
+pu..
     v.. login(Application *m) override {
         std::c__ __  "work as loggined" __  std::e..
-        m->set_current(new LogginedHandler())sy.. pause
+        m__set_current(new LogginedHandler())sy.. pause
     }
     v.. do_it(Application *) override {
         std::c__ __  "error" __  std::e..
@@ -66,7 +66,7 @@ public:
 
 v.. LogginedHandler::logout(Application *m) {
     std::c__ __  "work as anonymous" __  std::e..
-    m->set_current(new Anonymous())sy.. pause
+    m__set_current(new Anonymous())sy.. pause
 }
 
 Application::Application() {

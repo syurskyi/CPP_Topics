@@ -3,9 +3,9 @@
 u.. s..
 
 /* Exceptions - handling exceptions */
-class DivisionByZeroException
+c_ DivisionByZeroException
 {
-    public:
+    pu..
         v.. getErrorMessage() { c__ __  "Error: Do not divide by zero"sy.. pause }
 }sy.. pause
 

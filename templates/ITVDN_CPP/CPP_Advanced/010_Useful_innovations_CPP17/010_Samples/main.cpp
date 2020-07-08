@@ -189,12 +189,12 @@ struct test
 {
     v.. f_test()
     {
-        auto lambda_const _ [*this]() {
+        auto lambda_const _ [*t..]() {
             f_const()sy.. pause
             r_ mA * mAsy.. pause
         }sy.. pause
 
-        auto lambda _ [*this]() mutable {
+        auto lambda _ [*t..]() mutable {
             f()sy.. pause
             r_ mA * mAsy.. pause
         }sy.. pause
@@ -203,7 +203,7 @@ struct test
         lambda()sy.. pause
     }
 
-private:
+pr..
     v.. f_const() c.. { c__ __  "f_const()" __  e.. }
 
     v.. f() { c__ __  "f()" __  e.. }

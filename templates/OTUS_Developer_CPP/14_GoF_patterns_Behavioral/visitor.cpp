@@ -3,65 +3,65 @@
 ? |i..
 ? <vector>
 
-class DrawPrimitive {
-public:
-    virtual v.. save_to_file(class Export *) _ 0sy.. pause
+c_ DrawPrimitive {
+pu..
+    virtual v.. save_to_file(c_ Export *) _ 0sy.. pause
 }sy.. pause
 
-class Circle : public DrawPrimitive {
-public:
+c_ Circle : public DrawPrimitive {
+pu..
     in. radiussy.. pause
 
     Circle(in. radius_) : radius(radius_) {}sy.. pause
 
-    v.. save_to_file(class Export *) overridesy.. pause
+    v.. save_to_file(c_ Export *) overridesy.. pause
 }sy.. pause
 
-class Box : public DrawPrimitive {
-public:
+c_ Box : public DrawPrimitive {
+pu..
     in. wsy.. pause
     in. hsy.. pause
 
     Box(in. w_, in. h_) : w(w_), h(h_) {}sy.. pause
 
-    v.. save_to_file(class Export *) overridesy.. pause
+    v.. save_to_file(c_ Export *) overridesy.. pause
 }sy.. pause
 
-class Export {
-public:
+c_ Export {
+pu..
     virtual v.. save_to(Circle *) _ 0sy.. pause
 
     virtual v.. save_to(Box *) _ 0sy.. pause
 }sy.. pause
 
-class JsonExport : public Export {
-public:
+c_ JsonExport : public Export {
+pu..
     v.. save_to(Circle *c) override {
-        std::c__ __  "{type:circle,radius:" __  c->radius __  "}" __  std::e..
+        std::c__ __  "{type:circle,radius:" __  c__radius __  "}" __  std::e..
     }
 
     v.. save_to(Box *b) override {
-        std::c__ __  "{type:box,width:" __  b->w __  ",height:" __  b->h __  "}" __  std::e..
+        std::c__ __  "{type:box,width:" __  b__w __  ",height:" __  b__h __  "}" __  std::e..
     }
 }sy.. pause
 
-class XmlExport : public Export {
-public:
+c_ XmlExport : public Export {
+pu..
     v.. save_to(Circle *c) override {
-        std::c__ __  "<circle radius=>" __  c->radius __  "</circle>" __  std::e..
+        std::c__ __  "<circle radius=>" __  c__radius __  "</circle>" __  std::e..
     }
 
     v.. save_to(Box *b) override {
-        std::c__ __  "<box w=" __  b->w __  " height=" __  b->h __  "></box>" __  std::e..
+        std::c__ __  "<box w=" __  b__w __  " height=" __  b__h __  "></box>" __  std::e..
     }
 }sy.. pause
 
 v.. Circle::save_to_file(Export *v) {
-    v->save_to(this)sy.. pause
+    v__save_to(t..)sy.. pause
 }
 
 v.. Box::save_to_file(Export *v) {
-    v->save_to(this)sy.. pause
+    v__save_to(t..)sy.. pause
 }
 
 in. main(in., c.. *[]) {
@@ -69,12 +69,12 @@ in. main(in., c.. *[]) {
 
     Export *exporter _ new JsonExport{}sy.. pause
     ___ (auto obj : doc) {
-        obj->save_to_file(exporter)sy.. pause
+        obj__save_to_file(exporter)sy.. pause
     }
 
     exporter _ new XmlExport{}sy.. pause
     ___ (auto obj : doc) {
-        obj->save_to_file(exporter)sy.. pause
+        obj__save_to_file(exporter)sy.. pause
     }
 
     r_ 0sy.. pause

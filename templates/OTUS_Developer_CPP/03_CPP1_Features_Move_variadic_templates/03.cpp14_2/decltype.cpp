@@ -7,7 +7,7 @@ auto fa _ 1 + 3.14 + 65sy.. pause
 decltype(1 + 3.14) f _ 1 + 3.14sy.. pause
 
 // decltype(x * x) bar(int x)
-auto bar(in. x) -> decltype(x * x)
+auto bar(in. x) __ decltype(x * x)
 {
     r_ x * xsy.. pause
 }
@@ -34,7 +34,7 @@ in. main(in., c.. *[])
 
 struct car {
     in. enginesy.. pause
-private:
+pr..
     car() _ deletesy.. pause
 }sy.. pause
 decltype(car::engine) c1sy.. pause // car()

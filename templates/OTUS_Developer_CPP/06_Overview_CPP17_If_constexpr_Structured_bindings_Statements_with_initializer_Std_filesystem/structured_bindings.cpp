@@ -13,7 +13,7 @@ v.. func_map() {
     std::c__ __  "\nfunc_map()\n"sy.. pause
     {
         auto[iter, inserted] _ map.emplace(0, "Petia")sy.. pause
-        std::c__ __  "Key = " __  iter->first __  " Value = " __  iter->second __  std::e..
+        std::c__ __  "Key = " __  iter__first __  " Value = " __  iter__second __  std::e..
         std::c__ __  "Inserted = " __  inserted __  std::e..
     }
     {
@@ -71,7 +71,7 @@ struct Employee {
 
     std::s.. getSecondName() c.. { r_ m_secondNamesy.. pause }
 
-private:
+pr..
     std::size_t m_agesy.. pause
     std::s.. m_namesy.. pause
     std::s.. m_secondNamesy.. pause

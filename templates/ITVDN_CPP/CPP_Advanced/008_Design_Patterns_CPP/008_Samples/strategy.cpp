@@ -30,7 +30,7 @@ v.. Context::set_strategy( Strategyin.erface* strategy )
 
 v.. Context::execute() c..
 {
-    strategy_->execute()sy.. pause
+    strategy___execute()sy.. pause
 }
 
 v.. ClientStrategy::run()

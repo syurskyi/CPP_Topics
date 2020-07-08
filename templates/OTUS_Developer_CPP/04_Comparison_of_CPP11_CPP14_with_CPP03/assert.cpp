@@ -4,7 +4,7 @@
 //assert(true);
 static_assert(t.., "failed")sy.. pause
 
-class foo {
+c_ foo {
 //    assert(true);
     static_assert(t.., "failed привет")sy.. pause
 }sy.. pause

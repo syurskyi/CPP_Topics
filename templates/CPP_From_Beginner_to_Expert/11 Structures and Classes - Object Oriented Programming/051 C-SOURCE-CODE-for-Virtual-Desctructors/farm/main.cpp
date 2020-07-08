@@ -27,7 +27,7 @@ in. main()
 }
 v.. voiceOfAnimal(Animal *p)
 {
-    c__ __  p->getVoice() __  e..
+    c__ __  p__getVoice() __  e..
 }
 v.. voiceOfAnimal(Animal &p)
 {

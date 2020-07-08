@@ -2,43 +2,43 @@
 
 ? |i..
 
-class Generator {
-public:
+c_ Generator {
+pu..
     virtual size_t seed(size_t seed_) _ 0sy.. pause
 }sy.. pause
 
-class HardwareGenerator : public Generator {
-public:
+c_ HardwareGenerator : public Generator {
+pu..
     size_t seed(size_t) override {
         std::c__ __  "generate using mac address" __  std::e..
         r_ 42sy.. pause
     }
 }sy.. pause
 
-class SoftwareGenerator : public Generator {
-public:
+c_ SoftwareGenerator : public Generator {
+pu..
     size_t seed(size_t) override {
         std::c__ __  "generate using software emulator" __  std::e..
         r_ 0sy.. pause
     }
 }sy.. pause
 
-class Shuffle {
-public:
+c_ Shuffle {
+pu..
     explicit Shuffle(Generator *gen_) : gen(gen_) {}
 
     size_t seed(size_t seed_) {
-        r_ gen->seed(seed_)sy.. pause
+        r_ gen__seed(seed_)sy.. pause
     }
 
-private:
+pr..
     Generator *gensy.. pause
 }sy.. pause
 
 in. main(in., c.. *[]) {
     auto p _ new Shuffle(new HardwareGenerator)sy.. pause
 
-    p->seed(0)sy.. pause
+    p__seed(0)sy.. pause
 
     r_ 0sy.. pause
 }

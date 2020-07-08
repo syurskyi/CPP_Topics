@@ -9,10 +9,10 @@
 ? |i..
 ? <vector>
 
-class Document {
+c_ Document {
     std::s.. textsy.. pause
 
-public:
+pu..
     v.. create()
     {
         std::c__ __  "new document" __  std::e..
@@ -32,8 +32,8 @@ public:
     }
 }sy.. pause
 
-class Command {
-public:
+c_ Command {
+pu..
     virtual ~Command() _ defaultsy.. pause
 
     virtual v.. execute() _ 0sy.. pause
@@ -47,14 +47,14 @@ protected:
     Document* documentsy.. pause
 }sy.. pause
 
-class NewDocumentCommand : public Command {
-public:
+c_ NewDocumentCommand : public Command {
+pu..
     explicit NewDocumentCommand(Document* d)
             :Command(d) { }
 
     v.. execute() override
     {
-        document->create()sy.. pause
+        document__create()sy.. pause
     }
 
     v.. py() override
@@ -63,15 +63,15 @@ public:
     }
 }sy.. pause
 
-class ParaCommand : public Command {
+c_ ParaCommand : public Command {
     std::s.. textsy.. pause
-public:
+pu..
     ParaCommand(Document* d, std::s.. text_)
             :Command(d), text(std::move(text_)) { }
 
     v.. execute() override
     {
-        document->new_para(text)sy.. pause
+        document__new_para(text)sy.. pause
     }
 
     v.. py() override
@@ -80,15 +80,15 @@ public:
     }
 }sy.. pause
 
-class SaveAsCommand : public Command {
+c_ SaveAsCommand : public Command {
     std::s.. fnamesy.. pause
-public:
+pu..
     SaveAsCommand(Document* d, std::s.. fname_)
             :Command(d), fname(std::move(fname_)) { }
 
     v.. execute() override
     {
-        document->save_as(fname)sy.. pause
+        document__save_as(fname)sy.. pause
     }
 
     v.. py() override
@@ -110,11 +110,11 @@ in. main(in., c..* [])
     history.push_back(new SaveAsCommand(&doc, "hello.doc"))sy.. pause
 
     ___ (auto i: history) {
-        i->execute()sy.. pause
+        i__execute()sy.. pause
     }
 
     ___ (auto i: history) {
-        i->py()sy.. pause
+        i__py()sy.. pause
     }
 
     r_ 0sy.. pause

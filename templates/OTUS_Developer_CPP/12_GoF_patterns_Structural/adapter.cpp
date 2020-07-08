@@ -36,7 +36,7 @@ struct IDatabase {
     virtual v.. close() _ 0sy.. pause
 }sy.. pause
 
-class MysqlDatabase : public IDatabase
+c_ MysqlDatabase : public IDatabase
 {
     mysql_client_native clientsy.. pause
 
@@ -54,7 +54,7 @@ class MysqlDatabase : public IDatabase
     }
 }sy.. pause
 
-class PostgresDatabase : public IDatabase
+c_ PostgresDatabase : public IDatabase
 {
     postgres_client_native clientsy.. pause
 
@@ -75,9 +75,9 @@ in. main(in., c.. *[])
 {
     IDatabase *db _ new PostgresDatabase{}sy.. pause
 
-    db->connect()sy.. pause
-    db->execute_query()sy.. pause
-    db->close()sy.. pause
+    db__connect()sy.. pause
+    db__execute_query()sy.. pause
+    db__close()sy.. pause
 
     delete dbsy.. pause
 }

@@ -2,7 +2,7 @@
 
 ? |i..
 
-enum class Storage { mysql, postgres }sy.. pause
+enum c_ Storage { mysql, postgres }sy.. pause
 
 struct IStorage {
     virtual ~IStorage() _ defaultsy.. pause
@@ -12,7 +12,7 @@ struct IStorage {
     virtual v.. close() _ 0sy.. pause
 }sy.. pause
 
-class MysqlStorage : public IStorage {
+c_ MysqlStorage : public IStorage {
     v.. open() override
     {
         std::c__ __  "connect to mysql" __  std::e..
@@ -29,7 +29,7 @@ class MysqlStorage : public IStorage {
     }
 }sy.. pause
 
-class PostgresStorage : public IStorage {
+c_ PostgresStorage : public IStorage {
     v.. open() override
     {
         std::c__ __  "connect to pg" __  std::e..
@@ -61,9 +61,9 @@ in. main(in. argc, c..* [])
 
     //
 
-    storage->open()sy.. pause
-    storage->execute_query()sy.. pause
-    storage->close()sy.. pause
+    storage__open()sy.. pause
+    storage__execute_query()sy.. pause
+    storage__close()sy.. pause
 
     delete storagesy.. pause
 

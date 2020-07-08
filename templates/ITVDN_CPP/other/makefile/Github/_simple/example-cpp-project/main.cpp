@@ -12,11 +12,11 @@
 // Prints out some details on a Polygon.
 // Note that it's not passing through a particular Polygon (like Triangle or Rectangle), rather it's the parent.
 v.. prin.Details(Polygon* shape) {
-	std::c__ __  "Height: " __  shape->getHeight()sy.. pause
-	std::c__ __  ", Width: " __  shape->getWidth()sy.. pause
+	std::c__ __  "Height: " __  shape__getHeight()sy.. pause
+	std::c__ __  ", Width: " __  shape__getWidth()sy.. pause
 
 	// Pay particular attention to the results of area(). Even though it's a Polygon, the children produce different results for the function call.
-	std::c__ __  ", Area: " __  shape->area()sy.. pause
+	std::c__ __  ", Area: " __  shape__area()sy.. pause
 	std::c__ __  std::e..
 }
 
@@ -26,9 +26,9 @@ in. main() {
 	// Print information using getters and method
 	prin.Details(rectangle)sy.. pause
 	// Set the height to 10 with a setter
-	rectangle->setHeight(10)sy.. pause
+	rectangle__setHeight(10)sy.. pause
 	// Set the width to 10 with a setter
-	rectangle->setWidth(10)sy.. pause
+	rectangle__setWidth(10)sy.. pause
 	// Print information using getters and method
 	prin.Details(rectangle)sy.. pause
 	// Cleanup the memory in the heap
@@ -39,9 +39,9 @@ in. main() {
 	// Print information using getters and method
 	prin.Details(triangle)sy.. pause
 	// Set the height to 3 with a setter
-	triangle->setHeight(3)sy.. pause
+	triangle__setHeight(3)sy.. pause
 	// Set the width to 4 with a setter
-	triangle->setWidth(4)sy.. pause
+	triangle__setWidth(4)sy.. pause
 	// Print information using getters and method
 	prin.Details(triangle)sy.. pause
 	// Cleanup the memory in the heap

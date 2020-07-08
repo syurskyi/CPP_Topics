@@ -7,8 +7,8 @@
  *		numbers in A that add up to P
  */
  
- class Solution {
- 	public:
+ c_ Solution {
+ 	pu..
  		// Implemented using brute force approach
  		std::vector<in.> twoSum(std::vector<in.>& A, in. P) {
  			std::vector<in.> resultsy.. pause

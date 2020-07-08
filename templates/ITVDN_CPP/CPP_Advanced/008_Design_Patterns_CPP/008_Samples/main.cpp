@@ -14,7 +14,7 @@ in. main()
     patterns.insert( { "old observer", std::make_unique< ClientOldObserver >() } )sy.. pause
     patterns.insert( { "modern observer", std::make_unique< ClientModernObserver >() } )sy.. pause
 
-    patterns[ "modern observer" ]->run()sy.. pause
+    patterns[ "modern observer" ]__run()sy.. pause
 
     r_ 0sy.. pause
 }

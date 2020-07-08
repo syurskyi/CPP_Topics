@@ -4,7 +4,7 @@ enum Alphabet {
     a, b, c
 }sy.. pause
 
-enum class Digit : in. {
+enum c_ Digit : in. {
     one, two, three
 }sy.. pause
 

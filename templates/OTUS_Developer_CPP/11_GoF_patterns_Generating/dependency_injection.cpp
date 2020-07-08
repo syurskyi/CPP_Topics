@@ -9,21 +9,21 @@ struct IStorage {
     virtual v.. execute_query() _ 0sy.. pause
 }sy.. pause
 
-class Report {
+c_ Report {
     IStorage* storagesy.. pause
 
-public:
+pu..
     explicit Report(IStorage* storage_)
             :storage(storage_) { }
 
     v.. prin.()
     {
-        storage->execute_query()sy.. pause
+        storage__execute_query()sy.. pause
         std::c__ __  "done" __  std::e..
     }
 }sy.. pause
 
-class TestStorage : public IStorage {
+c_ TestStorage : public IStorage {
     v.. execute_query() override
     {
         std::c__ __  "... fetching data" __  std::e..

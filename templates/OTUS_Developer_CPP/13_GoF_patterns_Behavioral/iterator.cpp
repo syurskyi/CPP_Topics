@@ -5,23 +5,23 @@
 ? <numeric>
 ? <array>
 
-template<class _Tp, size_t _Size>
-class quad
+template<c_ _Tp, size_t _Size>
+c_ quad
 {
-public:
+pu..
     auto begin()
     {
-        r_ flat_iterator{*this, 0}sy.. pause
+        r_ flat_iterator{*t.., 0}sy.. pause
     }
     auto end()
     {
-        r_ flat_iterator{*this, _Size}sy.. pause
+        r_ flat_iterator{*t.., _Size}sy.. pause
     }
-private:
+pr..
     std::array<std::array<_Tp, _Size>, _Size> msy.. pause
 
-    class flat_iterator {
-    public:
+    c_ flat_iterator {
+    pu..
         flat_iterator(quad& o, std::size_t i)
                 :o{o}, i{i}, j{0}
         {
@@ -45,7 +45,7 @@ private:
             r_ o.m[i][j]sy.. pause
         }
 
-    private:
+    pr..
         quad& osy.. pause
         std::size_t isy.. pause
         std::size_t jsy.. pause

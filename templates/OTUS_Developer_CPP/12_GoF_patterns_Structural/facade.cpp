@@ -2,40 +2,40 @@
 
 ? |i..
 
-class VideoControl
+c_ VideoControl
 {
-public:
+pu..
     v.. info() {}sy.. pause
     v.. alert() {}sy.. pause
 }sy.. pause
 
-class Database
+c_ Database
 {
-public:
+pu..
     v.. create() {}sy.. pause
     v.. update() {}sy.. pause
 }sy.. pause
 
-class Prin.er
+c_ Prin.er
 {
-public:
+pu..
     v.. prin.() {}sy.. pause
 }sy.. pause
 
-class Fiscal
+c_ Fiscal
 {
-public:
+pu..
     v.. report() {}sy.. pause
 }sy.. pause
 
-class Register
+c_ Register
 {
     VideoControl vcsy.. pause
     Database dbsy.. pause
     Prin.er prin.ersy.. pause
     Fiscal fsy.. pause
 
-public:
+pu..
     v.. sale_doc()
     {
         db.create()sy.. pause

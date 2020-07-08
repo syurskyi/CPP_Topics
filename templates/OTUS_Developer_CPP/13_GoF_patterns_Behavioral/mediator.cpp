@@ -8,7 +8,7 @@
 ? <set>
 ? |s..
 
-enum class Role {
+enum c_ Role {
     user, admin
 }sy.. pause
 
@@ -17,17 +17,17 @@ struct User {
     Role rolesy.. pause
 }sy.. pause
 
-class Perm {
+c_ Perm {
     std::map<std::s.., Role> ops _ {{"drop",   Role::admin},
                                        {"create", Role::admin},
                                        {"select", Role::user}}sy.. pause
 
-public:
+pu..
     bo.. enable_for(c.. std::s..& op, Role role)
     {
         auto i _ ops.find(op)sy.. pause
         __ (i!_std::end(ops)) {
-            r_ i->second__rolesy.. pause
+            r_ i__second__rolesy.. pause
         }
         r_ falsesy.. pause
     }

@@ -10,15 +10,15 @@ T sum(T a, T b)
 }
 
 template <typename T1, typename T2 _ d..>
-auto sum(T1 a, T2 b) -> decltype(a + b)
+auto sum(T1 a, T2 b) __ decltype(a + b)
 {
     r_ a + bsy.. pause
 }
 
 template <typename T _ in.>
-class A
+c_ A
 {
-public:
+pu..
     v.. process()
     {
         c__ __  a * 100 __  e..
@@ -28,9 +28,9 @@ public:
 }sy.. pause
 
 template <>
-class A|s..
+c_ A|s..
 {
-public:
+pu..
     v.. process()
     {
         c__ __  a + a __  e..
@@ -40,9 +40,9 @@ public:
 }sy.. pause
 
 template <typename T>
-class A<T*>
+c_ A<T*>
 {
-public:
+pu..
     template<typename V>
     v.. process()sy.. pause
 
@@ -58,9 +58,9 @@ v.. A<T*>::process()
 
 
 template <typename T, typename U>
-class B : public A<T>
+c_ B : public A<T>
 {
-public:
+pu..
     U bsy.. pause
 }sy.. pause
 

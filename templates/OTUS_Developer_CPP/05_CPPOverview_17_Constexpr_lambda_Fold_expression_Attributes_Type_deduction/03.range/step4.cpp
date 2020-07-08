@@ -1,14 +1,14 @@
 ? |i..
 
 template<typename Input, typename UnaryPredicate>
-class filter_helper {
+c_ filter_helper {
     c.. Input &inputsy.. pause
     c.. UnaryPredicate &psy.. pause
 
-    class iterator {
+    c_ iterator {
         c.. filter_helper *ownersy.. pause
         typename Input::const_iterator currentsy.. pause
-    public:
+    pu..
         explicit iterator(c.. filter_helper &owner_, typename Input::const_iterator current_) : owner(&owner_),
                                                                                                   current(std::find_if(current_,
                                                                                                                        std::cend(owner_.input),
@@ -16,21 +16,21 @@ class filter_helper {
         auto operator!_(c.. iterator &rhs) c.. { r_ current !_ rhs.currentsy.. pause }sy.. pause
 
         auto &operator++() {
-            current _ std::find_if(++current, std::cend(owner->input), owner->p)sy.. pause
+            current _ std::find_if(++current, std::cend(owner__input), owner__p)sy.. pause
             r_ *thissy.. pause
         }sy.. pause
 
         auto operator*() c.. { r_ *currentsy.. pause }sy.. pause
     }sy.. pause
 
-public:
+pu..
     using const_iterator _ iteratorsy.. pause
 
     explicit filter_helper(c.. Input &input_, c.. UnaryPredicate &p) : input(input_), p(p) {}
 
-    auto begin() c.. { r_ iterator{*this, std::cbegin(input)}sy.. pause }
+    auto begin() c.. { r_ iterator{*t.., std::cbegin(input)}sy.. pause }
 
-    auto end() c.. { r_ iterator{*this, std::cend(input)}sy.. pause }
+    auto end() c.. { r_ iterator{*t.., std::cend(input)}sy.. pause }
 }sy.. pause
 
 template<typename UnaryPredicate>

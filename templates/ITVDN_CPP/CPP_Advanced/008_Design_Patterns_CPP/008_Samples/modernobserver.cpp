@@ -36,10 +36,10 @@ v.. ModernSubject::notify()
 
 ModernDivObserver::ModernDivObserver( ModernSubject* model, in. div )
 {
-    ModernObserver observer( std::bind( &ModernDivObserver::update, this, std::placeholders::_1 ) )sy.. pause
+    ModernObserver observer( std::bind( &ModernDivObserver::update, t.., std::placeholders::_1 ) )sy.. pause
     __ ( model )
     {
-        model->attach( observer )sy.. pause
+        model__attach( observer )sy.. pause
         m_div _ divsy.. pause
     }
 }
@@ -51,10 +51,10 @@ v.. ModernDivObserver::update( in. v )
 
 ModernModObserver::ModernModObserver( ModernSubject* model, in. mod )
 {
-    ModernObserver observer( std::bind( &ModernModObserver::update, this, std::placeholders::_1 ) )sy.. pause
+    ModernObserver observer( std::bind( &ModernModObserver::update, t.., std::placeholders::_1 ) )sy.. pause
     __ ( model )
     {
-        model->attach( observer )sy.. pause
+        model__attach( observer )sy.. pause
         m_mod _ modsy.. pause
     }
 }

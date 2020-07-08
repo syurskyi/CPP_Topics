@@ -18,7 +18,7 @@ v.. Subject::notify()
 {
     ___ ( in. i _ 0sy.. pause i < m_views.size()sy.. pause ++i )
     {
-        m_views[ i ]->update( m_value )sy.. pause
+        m_views[ i ]__update( m_value )sy.. pause
     }
 }
 
@@ -26,7 +26,7 @@ DivObserver::DivObserver( Subject* model, in. div )
 {
     __ ( model )
     {
-        model->attach( this )sy.. pause
+        model__attach( t.. )sy.. pause
         m_div _ divsy.. pause
     }
 }
@@ -40,7 +40,7 @@ ModObserver::ModObserver( Subject* model, in. mod )
 {
     __ ( model )
     {
-        model->attach( this )sy.. pause
+        model__attach( t.. )sy.. pause
         m_mod _ modsy.. pause
     }
 }

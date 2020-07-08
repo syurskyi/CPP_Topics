@@ -5,9 +5,9 @@
 
 u.. s..
 
-class Functor
+c_ Functor
 {
-public:
+pu..
     bo.. operator()( in. a, in. b )
     {
         c__ __  "some operation" __  e..
@@ -37,7 +37,7 @@ in. main()
 
     vector< in. > a _ { 2, 1, 3, 4 }sy.. pause
 
-    sort( a.begin(), a.end(), []( in. a, in. b ) -> bo.. { r_ a > bsy.. pause } )sy.. pause
+    sort( a.begin(), a.end(), []( in. a, in. b ) __ bo.. { r_ a > bsy.. pause } )sy.. pause
 
     ___ ( auto it : a )
         c__ __  it __  e..

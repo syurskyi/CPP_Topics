@@ -1,7 +1,7 @@
 ? |i..
 
-class foo {
-public:
+c_ foo {
+pu..
     v.. over() {
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     }
