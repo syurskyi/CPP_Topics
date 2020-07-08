@@ -1,6 +1,6 @@
 ? |s..
 ? <stdlib.h>
-? <string.h>
+? |st..
 
 // NOTE: I always find this syntax to be a bit 'gnarly' so I typedef the 'Pointer-to-Function-returning-Integer' like this
 typedef in.(*PFI)(in.);

@@ -1,6 +1,6 @@
 ? |s..
 ? <stdlib.h>
-? <string.h>
+? |st..
 
 // this what is going to be in the queue
 typedef struct listitem {

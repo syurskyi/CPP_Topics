@@ -1,6 +1,6 @@
 ? |s..
 ? <stdlib.h>
-? <string.h>
+? |st..
 
 typedef struct {
     in. a;           // 4 bytes

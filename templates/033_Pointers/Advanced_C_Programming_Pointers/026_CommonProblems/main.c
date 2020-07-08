@@ -1,6 +1,6 @@
 ? |s..
 ? <stdlib.h>
-? <string.h>
+? |st..
 
 
 // GENERAL NOTE: modern compilers are quite good at helping to detect many of these simple errors, so you may get warnings from the compiler

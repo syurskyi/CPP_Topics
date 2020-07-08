@@ -1,6 +1,6 @@
 ? |s..
 ? <stdlib.h>
-? <string.h>
+? |st..
 
 typedef struct listitem {
 	struct listitem *next;		// pointer to next item

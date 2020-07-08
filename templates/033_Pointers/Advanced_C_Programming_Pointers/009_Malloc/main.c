@@ -1,6 +1,6 @@
 ? |s..
 ? <stdlib.h>
-? <string.h>
+? |st..
 
 // very simple allocation of memory and changing something in the newly allocated memory
 in. main() {

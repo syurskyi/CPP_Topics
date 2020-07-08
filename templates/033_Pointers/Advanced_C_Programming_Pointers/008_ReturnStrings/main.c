@@ -1,21 +1,21 @@
-? |s..
-? <string.h>
-? <malloc.h>
-
-? MAXSTRLEN 100
-
-ch.. * string_function(ch.. *astring) {
-	ch..* s;
-	s = (ch..*)malloc(MAXSTRLEN);
-	s[0] = 0;		                // need this to initialize the buffer created by malloc
-	strcat(s, "Hello ");
-	strcat(s, astring);
-	strcat(s, "\n");
-	r_ s;
-}
-
-in. main(in. argc, ch.. @@ {
-	p..(string_function("Fred"));
-    p..(string_function("Gussie Fink-Nottle"));
-	r_ 0;
-}
+//? |s..
+//? |st..
+//? |ma..
+//
+//? MAXSTRLEN 100
+//
+//ch.. # string_function ch.. #astring
+//	ch..# s
+//	s _ ch..# ma.. ?
+//	? 0 _ 0	                // need this to initialize the buffer created by malloc
+//	strcat ? "Hello "
+//	strcat ? astring);
+//	strcat ? "\n");
+//	r_ ?
+//
+//
+//in. main in. argc, ch.. @@
+//	p.. ? "Fred"
+//    p.. ? "Gussie Fink-Nottle"
+//	r_ _
+//
