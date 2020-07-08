@@ -2,7 +2,7 @@
 // Dereferencing
 
 ? |i..
-? <string>
+? <st..>
 ? <vector>
 
 u.. s..
@@ -30,23 +30,23 @@ in. main() {
 
     c.. __ "\n------------------------------" __ e..
 
-    string name {"Frank"}
-    string *string_ptr {&name}
+    st.. name {"Frank"}
+    st.. *string_ptr {&name}
 
     c.. __ *string_ptr __ e..   	// Frank
     name _ "James"
     c.. __ *string_ptr __ e..   	// James
 //
     c.. __ "\n------------------------------" __ e..
-    vector<string> stooges {"Larry", "Moe", "Curly"}
-    vector<string> *vector_ptr {nullptr}
+    vector<st..> stooges {"Larry", "Moe", "Curly"}
+    vector<st..> *vector_ptr {nullptr}
     
     vector_ptr _ &stooges
     
     c.. __ "First stooge: " __ (*vector_ptr).at(0) __ e..    // Larry
     
     c.. __ "Stooges: "
-    for (auto stooge: *vector_ptr)  
+    ___ (auto stooge: *vector_ptr)
         c.. __ stooge __ " "
     c.. __ e..
     

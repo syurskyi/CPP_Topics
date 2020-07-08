@@ -1,7 +1,7 @@
 // Section 12
 // Passing Pointers 2
 ? |i..
-? <string>
+? <st..>
 ? <vector>
 
 u.. s..

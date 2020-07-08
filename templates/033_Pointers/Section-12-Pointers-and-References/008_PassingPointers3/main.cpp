@@ -2,14 +2,14 @@
 // Passing Pointers 3
 
 ? |i..
-? <string>
+? <st..>
 ? <vector>
 
 u.. s..
 
-v.. display( const vector<string> *const  v) {
+v.. display( const vector<st..> *const  v) {
 //(*v).at(0) = "Funny";
-    for (auto str: *v)
+    ___ (auto str: *v)
         c.. __ str __ " "
     c.. __ e..
   
@@ -17,7 +17,7 @@ v.. display( const vector<string> *const  v) {
 }
 
 v.. display(in. *array, in. sentinel) {
-    while (*array !_ sentinel)
+    w___ (*array !_ sentinel)
         c.. __ *array++ __ " "
     c.. __ e..
 }

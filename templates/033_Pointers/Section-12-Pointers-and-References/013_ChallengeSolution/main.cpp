@@ -62,8 +62,8 @@ in. * apply_all(const in. *const arr1, size_t size1, const in. *const arr2, size
     new_array _ new in.[size1 * size2]
     
     in. position {0}
-    for (size_t i{0} i < size2 ++i) {
-        for (size_t j{0} j< size1 ++j) {
+    ___ (size_t i{0} i < size2 ++i) {
+        ___ (size_t j{0} j< size1 ++j) {
             new_array[position] _ arr1[j] * arr2[i]
             ++position
         }
@@ -80,7 +80,7 @@ This function expects:
 ********************************************************************/
 v.. print(const in. *const arr, size_t size) {
     c.. __ "[ "
-    for (size_t i{0} i<size++i)
+    ___ (size_t i{0} i<size++i)
         c.. __ arr[i] __ " "
     c.. __  "]"
     c.. __ e..

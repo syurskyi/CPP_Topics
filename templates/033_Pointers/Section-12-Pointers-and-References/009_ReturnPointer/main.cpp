@@ -7,13 +7,13 @@ u.. s..
 in. *create_array(size_t size, in. init_value _ 0) {
    in. *new_storage {nullptr}
    new_storage _ new in.[size]
-   for (size_t i{0} i < size ++i)
+   ___ (size_t i{0} i < size ++i)
       *(new_storage + i) _ init_value
    return new_storage
 }
 
 v.. display(const in. *const array, size_t size) {
-    for (size_t i{0} i < size ++i)
+    ___ (size_t i{0} i < size ++i)
         c.. __ array[i] __ " "
     c.. __ e..
 }

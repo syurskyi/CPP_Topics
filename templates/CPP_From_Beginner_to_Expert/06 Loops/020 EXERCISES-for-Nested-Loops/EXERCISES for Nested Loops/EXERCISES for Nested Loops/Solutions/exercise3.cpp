@@ -18,7 +18,7 @@ main ()
         }
     }
 
-    w___ (true)
+    w___ (t..)
     {
         ___ (in. i _ 0sy.. pause i < 3sy.. pause i++)
         {

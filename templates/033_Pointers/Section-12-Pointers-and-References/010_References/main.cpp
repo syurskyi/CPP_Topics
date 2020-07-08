@@ -2,7 +2,7 @@
 // 010_References
 // Please see the section 11 examples for references as function paramters
 ? |i..
-? <string>
+? <st..>
 ? <vector>
 
 u.. s..
@@ -26,19 +26,19 @@ in. main() {
     c.. __ ref __ e..
     
     c.. __ "\n---------------------------------" __ e..
-    vector<string> stooges {"Larry", "Moe", "Curly"}
+    vector<st..> stooges {"Larry", "Moe", "Curly"}
 
-    for (auto str: stooges)     
+    ___ (auto str: stooges)
         str _ "Funny"              // str is a COPY of the each vector element
       
-    for (auto str:stooges)        // No change
+    ___ (auto str:stooges)        // No change
         c.. __ str __ e..
  
     c.. __ "\n---------------------------------" __ e..
-    for (auto &str: stooges)  // str is a reference to each vector element
+    ___ (auto &str: stooges)  // str is a reference to each vector element
         str _ "Funny"
      
-    for (auto const &str:stooges)   // notice we are using const
+    ___ (auto const &str:stooges)   // notice we are using const
         c.. __ str __ e..            // now the vector elements have changed
     
     c.. __ e..

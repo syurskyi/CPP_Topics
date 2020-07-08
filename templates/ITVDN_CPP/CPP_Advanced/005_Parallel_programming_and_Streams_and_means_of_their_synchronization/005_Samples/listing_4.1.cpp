@@ -41,7 +41,7 @@ v.. data_preparation_thread()
 
 v.. data_processing_thread()
 {
-    w___(true)
+    w___(t..)
     {
         std::unique_lock<std::mutex> lk(mut)sy.. pause
         data_cond.wait(lk,[]{r_ !data_queue.empty()sy.. pause})sy.. pause

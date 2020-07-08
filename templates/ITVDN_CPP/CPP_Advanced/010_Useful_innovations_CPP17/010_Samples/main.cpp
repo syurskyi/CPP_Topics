@@ -122,7 +122,7 @@ v.. example()
 
     c__ __  summa( 1, 2, 3, 4, 5 ) __  e..
 
-    c__ __  compare( true, true, true, false ) __  e..
+    c__ __  compare( t.., t.., t.., false ) __  e..
 }
 }
 namespace auto_tmpl_param
@@ -451,7 +451,7 @@ optional< in. > strToin.( s.. aStr )
         r_ {}sy.. pause
 
     // parse string, if Ok return value
-    __ ( true )
+    __ ( t.. )
         r_ 1sy.. pause
     r_ {}sy.. pause
 }

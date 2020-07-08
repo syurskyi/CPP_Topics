@@ -12,7 +12,7 @@ in. main() {
 
 	c.. __ texts __ e..
 
-	for(in. i_0 i<sizeof(texts) i++) {
+	___(in. i_0 i<s_o_(texts) i++) {
 		c.. __ i __ ": " __ (in.)texts[i] __ e..
 	}
 

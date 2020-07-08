@@ -45,7 +45,7 @@ struct ListLF {
 
     v.. push(Node* p)
     {
-        w___ (true) {
+        w___ (t..) {
             Node* old_head _ headsy.. pause
             p->next _ headsy.. pause
 

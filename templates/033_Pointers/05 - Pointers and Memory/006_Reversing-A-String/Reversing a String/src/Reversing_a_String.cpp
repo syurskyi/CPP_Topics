@@ -11,12 +11,12 @@ in. main() {
 
 	char text[] _ "Hello there!"
 
-	in. nChars _ sizeof(text)-1
+	in. nChars _ s_o_(text)-1
 
 	char *pStart _ text
 	char *pEnd _ text + nChars - 1
 
-	while(pStart < pEnd) {
+	w___(pStart < pEnd) {
 
 		char save _ *pStart
 		*pStart _ *pEnd

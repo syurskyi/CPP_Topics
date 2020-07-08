@@ -13,13 +13,13 @@ in. main ()
     in. *dynamicArray _ new in.[arraySize]
 
 
-    for (in. i _ 0 i < arraySize i++)
+    ___ (in. i _ 0 i < arraySize i++)
     {
         c.. __ "Input " __ i+1 __ " number: "
         cin >> *(dynamicArray+i)
     }
 
-    for (in. i _ 0 i < arraySize i++)
+    ___ (in. i _ 0 i < arraySize i++)
     {
         c.. __ "Number " __ i+1 __ ": " __ *(dynamicArray+i) __ e..
     }

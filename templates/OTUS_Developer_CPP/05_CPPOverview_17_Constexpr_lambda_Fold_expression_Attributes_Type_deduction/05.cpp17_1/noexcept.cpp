@@ -12,7 +12,7 @@ public:
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     }
 //    void dang() noexcept {
-    v.. safe() noexcept(true) {
+    v.. safe() noexcept(t..) {
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     }
 }sy.. pause

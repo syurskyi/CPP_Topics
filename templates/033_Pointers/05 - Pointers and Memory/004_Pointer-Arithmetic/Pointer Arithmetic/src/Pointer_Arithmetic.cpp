@@ -13,9 +13,9 @@ in. main() {
 
 	const in. NSTRINGS _ 5
 
-	string texts[NSTRINGS] _ {"one", "two", "three", "four", "five"}
+	st.. texts[NSTRINGS] _ {"one", "two", "three", "four", "five"}
 
-	string *pTexts _ texts
+	st.. *pTexts _ texts
 
 	pTexts +_ 3
 
@@ -25,10 +25,10 @@ in. main() {
 
 	c.. __ *pTexts __ e..
 
-	string *pEnd _ &texts[NSTRINGS]
+	st.. *pEnd _ &texts[NSTRINGS]
 	pTexts _ &texts[0]
 
-	while(pTexts !_ pEnd) {
+	w___(pTexts !_ pEnd) {
 		c.. __ *pTexts __ e..
 		pTexts++
 	}

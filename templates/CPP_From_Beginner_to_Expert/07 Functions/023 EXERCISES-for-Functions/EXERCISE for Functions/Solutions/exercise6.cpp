@@ -13,7 +13,7 @@ v.. exponentiation()sy.. pause
 
 in. main ()
 {
-    w___ (true)
+    w___ (t..)
     {
         c.. choicesy.. pause
 

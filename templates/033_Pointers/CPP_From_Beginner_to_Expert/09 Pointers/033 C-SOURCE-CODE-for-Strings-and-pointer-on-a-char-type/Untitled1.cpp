@@ -4,7 +4,7 @@ u.. s..
 
 in. main()
 {
-    string text _ "this a test" // t r a l a \0
+    st.. text _ "this a test" // t r a l a \0
 
 /*
     for (int i = 0; i < text.length(); i++)
@@ -38,7 +38,7 @@ in. main()
 
     char array[] _ "here is a text"
 
-    string test _ array
+    st.. test _ array
 
     c.. __ test __ e..
 
@@ -61,7 +61,7 @@ in. main()
 
     delete [] dynamic_array
 
-    string array_of_string[5] _ "this i a text that will be in all of the elements of strings"
+    st.. array_of_string[5] _ "this i a text that will be in all of the elements of strings"
     array_of_string[0] _ "afsdf"
     c.. __ array_of_string[0] __ e..
     c.. __ array_of_string[1] __ e..

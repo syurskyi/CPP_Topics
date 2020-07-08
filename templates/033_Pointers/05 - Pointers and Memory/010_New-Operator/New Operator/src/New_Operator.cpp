@@ -9,7 +9,7 @@ u.. s..
 
 class Animal {
 private:
-	string name
+	st.. name
 
 public:
 	Animal() {
@@ -25,7 +25,7 @@ public:
 		c.. __ "Destructor called" __ e..
 	}
 
-	v.. setName(string name) {
+	v.. setName(st.. name) {
 		this->name _ name
 	}
 
@@ -41,7 +41,7 @@ in. main() {
 	pCat1->speak()
 	delete pCat1
 
-	c.. __ sizeof(pCat1) __ e..
+	c.. __ s_o_(pCat1) __ e..
 
 	r_ _
 }

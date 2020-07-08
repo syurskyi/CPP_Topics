@@ -29,7 +29,7 @@ in. main () {
 
 	std::c__ __  "switch:\n"sy.. pause
 	s..(in. other _ 37sy.. pause condition) {
-		c.. true:
+		c.. t..:
 			std::c__ __  "true condition: " __  other __  std::e..
 			b..
 		c.. false:

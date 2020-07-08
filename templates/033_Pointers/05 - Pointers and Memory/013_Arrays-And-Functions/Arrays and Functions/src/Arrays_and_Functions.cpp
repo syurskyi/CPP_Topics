@@ -9,29 +9,29 @@ u.. s..
 
 // Could declare variables here! string numbers[] = {"one", "two", "three"};
 
-v.. show1(const in. nElements, string texts[]) {
+v.. show1(const in. nElements, st.. texts[]) {
 
 	// cout << sizeof(texts) << endl; returns sizeof pointer!
 
-	for(in. i_0 i<nElements i++) {
+	___(in. i_0 i<nElements i++) {
 		c.. __ texts[i] __ e..
 	}
 }
 
-v.. show2(const in. nElements, string *texts) {
+v.. show2(const in. nElements, st.. *texts) {
 
 	// cout << sizeof(texts) << endl; returns sizeof pointer!
 
-	for(in. i_0 i<nElements i++) {
+	___(in. i_0 i<nElements i++) {
 		c.. __ texts[i] __ e..
 	}
 }
 
-v.. show3(string (&texts)[3]) {
+v.. show3(st.. (&texts)[3]) {
 
 	// cout << sizeof(texts) << endl; returns sizeof pointer!
 
-	for(in. i_0 i<sizeof(texts)/sizeof(string) i++) {
+	___(in. i_0 i<s_o_(texts)/s_o_(st..) i++) {
 		c.. __ texts[i] __ e..
 	}
 }
@@ -48,9 +48,9 @@ v.. freeMemory(char *pMem) {
 
 in. main() {
 
-	string texts[] _ {"apple", "orange", "banana"}
+	st.. texts[] _ {"apple", "orange", "banana"}
 
-	c.. __ sizeof(texts) __ e..
+	c.. __ s_o_(texts) __ e..
 
 	show3(texts)
 

@@ -11,7 +11,7 @@ in. main ()
 
     char * characters _ new char[charactersNumber]
 
-    for (in. i _ 0 i < charactersNumber i++)
+    ___ (in. i _ 0 i < charactersNumber i++)
     {
         c.. __ i+1 __ " character: "
         cin >> characters[i]
@@ -19,7 +19,7 @@ in. main ()
 
     c.. __ "The inputted string of characters was: "
 
-    for (in. i _ 0 i < charactersNumber i++)
+    ___ (in. i _ 0 i < charactersNumber i++)
     {
         c.. __ *(characters+i)
     }

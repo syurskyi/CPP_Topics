@@ -25,7 +25,7 @@ public:
             }
         }
 
-        auto block _ PgConnectionBlock{new PgConnection, true}sy.. pause
+        auto block _ PgConnectionBlock{new PgConnection, t..}sy.. pause
         pool.push_back(block)sy.. pause
 
         r_ block.connectionsy.. pause

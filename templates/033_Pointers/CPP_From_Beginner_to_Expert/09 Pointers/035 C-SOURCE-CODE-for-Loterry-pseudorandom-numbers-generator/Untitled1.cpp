@@ -18,25 +18,25 @@ in. main()
 }
 v.. lottery(in. total_balls, in. balls_to_draw)
 {
-    if (total_balls < balls_to_draw)
+    __ (total_balls < balls_to_draw)
         return
 
      srand(time(NULL)) //seeds
 
      in. *balls _ new in.[balls_to_draw]
 
-     for (in. i _ 0 i < balls_to_draw i++)
+     ___ (in. i _ 0 i < balls_to_draw i++)
      {
          balls[i] _ rand() % total_balls + 1
 
-         for (in. j _ 0 j < i + 1 j++)
+         ___ (in. j _ 0 j < i + 1 j++)
          {
-            if(balls[i] == balls[j] && i !_ j)
+            __(balls[i] == balls[j] && i !_ j)
             {
                 i--
-                break
+                b..
             }
-            else if (j == i)
+            else __ (j == i)
                 c.. __ balls[i] __ e..
          }
      }

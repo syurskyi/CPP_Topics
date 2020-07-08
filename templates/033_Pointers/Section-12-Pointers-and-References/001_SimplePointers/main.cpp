@@ -3,7 +3,7 @@
 
 ? |i..
 ? <vector>
-? <string>
+? <st..>
 
 u.. s..
 
@@ -11,13 +11,13 @@ in. main() {
     
     in. num{10}
     c.. __ "Value of num is: " __ num __ e..
-    c.. __ "sizeof of num is: " __ sizeof num __ e..
+    c.. __ "sizeof of num is: " __ s_o_ num __ e..
     c.. __ "Address of num is: " __ &num __ e..
 
     in. *p
     c.. __ "\nValue of p is: " __ p __ e..   // garbage
     c.. __ "Address of p is: " __ &p __ e..
-    c.. __ "sizeof of p is: " __ sizeof p__ e..
+    c.. __ "sizeof of p is: " __ s_o_ p__ e..
 
     p _ nullptr
     c.. __ "\nValue of p is: " __ p __ e..
@@ -26,14 +26,14 @@ in. main() {
     in. *p1 {nullptr}
     d.. *p2 {nullptr}
     unsigned long long *p3 {nullptr}
-    vector<string>  *p4{nullptr}
-    string *p5 {nullptr}
+    vector<st..>  *p4{nullptr}
+    st.. *p5 {nullptr}
 
-    c.. __ "\nsizeof p1 is: " __ sizeof p1 __ e..
-    c.. __ "sizeof p2 is: " __ sizeof p2 __ e..
-    c.. __ "sizeof p3 is: " __ sizeof p3 __ e..
-    c.. __ "sizeof p4 is: " __ sizeof p4 __ e..
-    c.. __ "sizeof p5 is: " __ sizeof p5 __ e..
+    c.. __ "\nsizeof p1 is: " __ s_o_ p1 __ e..
+    c.. __ "sizeof p2 is: " __ s_o_ p2 __ e..
+    c.. __ "sizeof p3 is: " __ s_o_ p3 __ e..
+    c.. __ "sizeof p4 is: " __ s_o_ p4 __ e..
+    c.. __ "sizeof p5 is: " __ s_o_ p5 __ e..
 
     in. score{10}
     d.. high_temp{100.7}

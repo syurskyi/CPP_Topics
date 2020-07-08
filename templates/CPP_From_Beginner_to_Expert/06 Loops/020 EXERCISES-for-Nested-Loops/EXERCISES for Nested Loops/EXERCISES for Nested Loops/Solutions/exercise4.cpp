@@ -19,7 +19,7 @@ main ()
         }
     }
 
-    w___ (true)
+    w___ (t..)
     {
 
         in. xCoordinate, yCoordinatesy.. pause

@@ -9,12 +9,12 @@ u.. s..
 
 class Animal {
 private:
-	string name
+	st.. name
 
 public:
 	Animal() { c.. __ "Animal created." __ e.. }
 	Animal(const Animal& other): name(other.name) { c.. __ "Animal created by copying." __ e.. }
-	v.. setName(string name) { this->name _ name }
+	v.. setName(st.. name) { this->name _ name }
 	v.. speak() const { c.. __ "My name is: " __ name __ e.. }
 }
 

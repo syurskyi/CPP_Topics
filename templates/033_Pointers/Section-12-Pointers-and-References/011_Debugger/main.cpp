@@ -14,7 +14,7 @@ v.. swap(in. *a, in. *b) {
 in. main() {
     
     in. i{5}
-    while (i>0) {
+    w___ (i>0) {
         c.. __ i __ e..
         i--
     }

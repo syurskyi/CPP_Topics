@@ -38,7 +38,7 @@ v.. swapTwoValues(in.* firstValue, in.* secondValue)
 
 v.. fillArrayWithValues(in. arrayToFill[], in. sizeOfArray)
 {
-    for (in. i _ 0 i < sizeOfArray i++)
+    ___ (in. i _ 0 i < sizeOfArray i++)
     {
         c.. __ "Enter " __ i+1 __ " element: "
         cin >> arrayToFill[i]
@@ -48,7 +48,7 @@ v.. fillArrayWithValues(in. arrayToFill[], in. sizeOfArray)
 
 v.. printArrayValues(in. arrayToPrint[], in. sizeOfArray)
 {
-    for (in. i _ 0 i < sizeOfArray i++)
+    ___ (in. i _ 0 i < sizeOfArray i++)
     {
         c.. __ "Array[" __ i __ "] = " __ arrayToPrint[i] __ e..
     }
@@ -57,15 +57,15 @@ v.. printArrayValues(in. arrayToPrint[], in. sizeOfArray)
 
 v.. bubbleSort(in. arrayToSort[], in. sizeOfArray, in. orderOfSequence)
 {
-    for (in. i _ 0 i < sizeOfArray-1 i++)
+    ___ (in. i _ 0 i < sizeOfArray-1 i++)
     {
-        for (in. j _ 0 j < sizeOfArray-1 j++)
+        ___ (in. j _ 0 j < sizeOfArray-1 j++)
         {
-            if (orderOfSequence == 1 && arrayToSort[j] > arrayToSort[j+1])
+            __ (orderOfSequence == 1 && arrayToSort[j] > arrayToSort[j+1])
             {
                     swapTwoValues(arrayToSort+j, arrayToSort+j+1)
             }
-            else if (orderOfSequence == 2 && arrayToSort[j] < arrayToSort[j+1])
+            else __ (orderOfSequence == 2 && arrayToSort[j] < arrayToSort[j+1])
             {
                     swapTwoValues(arrayToSort+j, arrayToSort+j+1)
             }
@@ -77,16 +77,16 @@ v.. bubbleSort(in. arrayToSort[], in. sizeOfArray, in. orderOfSequence)
 v.. selectionSort(in. arrayToSort[], in. sizeOfArray, in. orderOfSequence)
 {
     in. limitIndex
-    for (in. i _ 0 i < sizeOfArray i++)
+    ___ (in. i _ 0 i < sizeOfArray i++)
     {
         limitIndex _ i
-        for (in. j _ i j < sizeOfArray j++)
+        ___ (in. j _ i j < sizeOfArray j++)
         {
-            if (orderOfSequence == 1 && arrayToSort[j] < arrayToSort[limitIndex])
+            __ (orderOfSequence == 1 && arrayToSort[j] < arrayToSort[limitIndex])
             {
                 limitIndex _ j
             }
-            else if (orderOfSequence == 2 && arrayToSort[j] > arrayToSort[limitIndex])
+            else __ (orderOfSequence == 2 && arrayToSort[j] > arrayToSort[limitIndex])
             {
                 limitIndex _ j
             }

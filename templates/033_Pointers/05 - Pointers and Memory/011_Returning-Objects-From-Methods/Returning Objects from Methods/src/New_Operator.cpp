@@ -9,7 +9,7 @@ u.. s..
 
 class Animal {
 private:
-	string name
+	st.. name
 
 public:
 	Animal() {
@@ -25,7 +25,7 @@ public:
 		c.. __ "Destructor called" __ e..
 	}
 
-	v.. setName(string name) {
+	v.. setName(st.. name) {
 		this->name _ name
 	}
 

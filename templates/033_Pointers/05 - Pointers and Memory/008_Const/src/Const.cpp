@@ -9,10 +9,10 @@ u.. s..
 
 class Animal {
 private:
-	string name
+	st.. name
 
 public:
-	v.. setName(string name) { this->name _ name }
+	v.. setName(st.. name) { this->name _ name }
 	v.. speak() const { c.. __ "My name is: " __ name __ e.. }
 }
 
