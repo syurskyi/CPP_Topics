@@ -1,33 +1,33 @@
-//============================================================================
-// Name        : Reversing.cpp
-// Author      : Serhii Yurskyi
-// Version     :
-//============================================================================
-
-? |i..
-u.. s..
-
-in. main() {
-
-	ch.. text[] _ "Hello there!"
-
-	in. nChars _ s_o_(text)-1
-
-	ch.. *pStart _ text
-	ch.. *pEnd _ text + nChars - 1
-
-	w___(pStart < pEnd) {
-
-		ch.. save _ *pStart
-		*pStart _ *pEnd
-		*pEnd _ save
-
-		pStart++
-		pEnd--
-	}
-
-	c.. __ text __ e..
-
-
-	r_ _
-}
+////============================================================================
+//// Name        : Reversing.cpp
+//// Author      : Serhii Yurskyi
+//// Version     :
+////============================================================================
+//
+//? |i..
+//u.. s..
+//
+//in. main
+//
+//	ch.. text|| _ "Hello there!"
+//
+//	in. nChars _ s_o_ ? -1
+//
+//	ch.. #_Start _ t..
+//	ch.. #_End _ t.. + _C.. - 1
+//
+//	w___ _S.. < _E..
+//
+//		ch.. save _ #_S..
+//        #_S.. _ #_E..
+//        #_E.. _ ?
+//
+//		_S..##
+//		pEnd--
+//
+//
+//	c.. __ t.. __ e..
+//
+//
+//	r_ _
+//
