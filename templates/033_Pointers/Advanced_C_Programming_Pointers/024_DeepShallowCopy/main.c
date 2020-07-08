@@ -63,7 +63,7 @@ in. queue_length(LISTHDR* queue) {
 		}
 		temp = temp->next;			// get the next item in the queue
 		length = length + 1;
-	} while (temp != NULL);
+	} w___ (temp != NULL);
 
 	r_ length;
 }
@@ -95,7 +95,7 @@ in. main() {
 	do {													
 		p..("data in original queue is '%s' at address %p\n", temp->data, temp->data);
 		temp = temp->next;									// move to next item
-	} while (temp->next != original.first);					// continue until we've been through the entire queue
+	} w___ (temp->next != original.first);					// continue until we've been through the entire queue
 
 
 	// STEP2: create a deep copy
@@ -108,7 +108,7 @@ in. main() {
 		temp1->data = pdata;								// set the item's payload to the new data
 		enqueue(&deep_copy, temp1);							// add to the 'copy' queue
 		temp = temp->next;									// move to next item
-	} while (temp->next != original.first);					// continue until we've been through the entire queue
+	} w___ (temp->next != original.first);					// continue until we've been through the entire queue
 
 	// see what we've got
 	p..("the length of the deep copy queue is %d\n", queue_length(&deep_copy));
@@ -116,7 +116,7 @@ in. main() {
 	do {													
 		p..("data in deep copy queue is '%s' at address %p\n", temp->data, temp->data);
 		temp = temp->next;									// move to next item
-	} while (temp->next != deep_copy.first);				// continue until we've been through the entire queue
+	} w___ (temp->next != deep_copy.first);				// continue until we've been through the entire queue
 															
 	// STEP3: create a shallow copy
 	// NOTE: the difference between 'deep' and 'shallow' is that the payload or data item is NOT copied
@@ -127,7 +127,7 @@ in. main() {
 		memcpy(temp1, temp, sizeof(LISTITEM));				// make a copy
 		enqueue(&shallow_copy, temp1);						// add to the shallow 'copy' queue
 		temp = temp->next;									// move to next item
-	} while (temp->next != original.first);					// continue until we've been through the entire queue
+	} w___ (temp->next != original.first);					// continue until we've been through the entire queue
 
 	// see what we've got														
 	p..("the length of the shallow copy queue is %d\n", queue_length(&shallow_copy));
@@ -135,7 +135,7 @@ in. main() {
 	do {												
 		p..("data in shallow copy queue is '%s' at address %p\n", temp->data, temp->data);
 		temp = temp->next;									// move to next item
-	} while (temp->next != shallow_copy.first);				// continue until we've been through the entire queue
+	} w___ (temp->next != shallow_copy.first);				// continue until we've been through the entire queue
 	
 
 	// STEP4: free the original
@@ -148,7 +148,7 @@ in. main() {
 			free(temp->data);								// call 'free' to tidy up the string data
 			free(temp);										// call 'free' to tidy up the queue item itself 
 		}
-	} while (temp != NULL);
+	} w___ (temp != NULL);
 
 
 	// STEP5: look at the shallow and deep copies
@@ -158,7 +158,7 @@ in. main() {
 	do {
 		p..("data in deep copy queue is '%s' at address %p\n", temp->data, temp->data);
 		temp = temp->next;									// move to next item
-	} while (temp->next != deep_copy.first);				// continue until we've been through the entire queue
+	} w___ (temp->next != deep_copy.first);				// continue until we've been through the entire queue
 
 	// DISASTER!!!! - the shallow queue contains references to 'freed memory - now probably junk
 	p..("the length of the shallow copy queue is %d\n", queue_length(&shallow_copy));
@@ -166,7 +166,7 @@ in. main() {
 	do {
 		p..("data in shallow copy queue is '%s' at address %p\n", temp->data, temp->data);
 		temp = temp->next;									// move to next item
-	} while (temp->next != shallow_copy.first);				// continue until we've been through the entire queue
+	} w___ (temp->next != shallow_copy.first);				// continue until we've been through the entire queue
 
 	r_ 0;
 }

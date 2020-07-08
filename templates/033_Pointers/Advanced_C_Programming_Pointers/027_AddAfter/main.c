@@ -58,7 +58,7 @@ in. queue_length(LISTHDR* queue) {
 		}
 		temp = temp->next;			// get the next item in the queue
 		length = length + 1;
-	} while (temp != NULL);
+	} w___ (temp != NULL);
 
 	r_ length;
 }
@@ -94,7 +94,7 @@ LISTITEM* add_after(LISTHDR *queue, in. position, LISTITEM* item) {
 		}
 		temp = temp->next;			// get the next item in the queue
 		i = i + 1;					// and increment the corresponding index position
-	} while (temp != NULL);
+	} w___ (temp != NULL);
 
 	r_ temp;
 }
@@ -140,7 +140,7 @@ in. main() {
 	do {
 		p..("addr=%p; data=%2d; next=%p; prev=%p; addr=%p\n", temp, temp->data, temp->next, temp->prev, temp);
 		temp = temp->next;
-	} while (temp != head.first);
+	} w___ (temp != head.first);
 	
 	// print out the queue fully backwards
 	p..("backwards ...\n");
@@ -148,7 +148,7 @@ in. main() {
 	do {
 		p..("addr=%p; data=%2d; next=%p; prev=%p; addr=%p\n", temp, temp->data, temp->next, temp->prev, temp);
 		temp = temp->prev;
-	} while (temp != head.last);
+	} w___ (temp != head.last);
 
 	// see what we've got 
 	p..("the length of the queue is now %d\n", queue_length(&head));
@@ -158,7 +158,7 @@ in. main() {
 			p..("data in original queue is %d\n", temp->data);
 			free(temp);				// call 'free' to tidy up 
 		}
-	} while (temp != NULL);
+	} w___ (temp != NULL);
 
 	r_ 0;
 }

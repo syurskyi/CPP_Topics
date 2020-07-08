@@ -76,7 +76,7 @@ in. main() {
 			p..("data is %d\n", temp->data);
 			enqueue(&dst, temp);
 		}
-	} while (temp != NULL);
+	} w___ (temp != NULL);
 
 	// see what we've got
 	p..("destination queue ...\n");
@@ -86,7 +86,7 @@ in. main() {
 			p..("destination data is %d\n", temp->data);
 			free(temp);				// call 'free' to tidy up 
 		}
-	} while (temp != NULL);
+	} w___ (temp != NULL);
 
 	p..("source queue ...\n");
 	temp = dequeue(&src);		// if the queue is empty we will get NULL returned

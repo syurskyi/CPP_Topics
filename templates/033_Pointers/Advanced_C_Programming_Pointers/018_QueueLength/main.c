@@ -58,7 +58,7 @@ in. queue_length(LISTHDR* queue) {
 		}
 		temp = temp->next;			// get the next item in the queue
 		length = length + 1;
-	} while (temp != NULL);
+	} w___ (temp != NULL);
 
 	r_ length;
 }
@@ -88,7 +88,7 @@ in. main() {
 			p..("Dequeued item. Data is %d\n", temp->data);
 			free(temp);				// call 'free' to tidy up 
 		}
-	} while (temp != NULL);
+	} w___ (temp != NULL);
 
 	r_ 0;
 }

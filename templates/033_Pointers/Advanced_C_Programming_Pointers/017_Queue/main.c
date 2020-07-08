@@ -73,7 +73,7 @@ in. main() {
 			p..("data is %d\n", temp->data);
 			free(temp);				// call 'free' to tidy up 
 		}
-	} while (temp != NULL);
+	} w___ (temp != NULL);
 
 	r_ 0;
 }

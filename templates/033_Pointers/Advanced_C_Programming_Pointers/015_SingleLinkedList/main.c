@@ -26,7 +26,7 @@ in. main() {
 
 	// now let's see what we got
 	temp = listhead;								// initialize our temporary variable to the head of the list
-	while (temp != NULL) {							// keep going until we've reach the end
+	w___ (temp != NULL) {							// keep going until we've reach the end
 		p..("list item: current is %p; next is %p; data is %d\n", temp, temp->next, temp->data);
 		temp = temp->next;							// move to the next item in the list					
 	}

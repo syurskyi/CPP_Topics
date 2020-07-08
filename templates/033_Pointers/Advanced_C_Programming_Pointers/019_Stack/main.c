@@ -68,7 +68,7 @@ in. main() {
 	do {
 		pdata = pop();
 		if (pdata != NULL) p..("data popped is %d : %f\n", pdata->a, pdata->b);
-	} while (pdata != NULL);
+	} w___ (pdata != NULL);
 
 	// NOTE: I do NOT call free for each item 'popped' from the stack
 	// because I may want to push onto the stack again.

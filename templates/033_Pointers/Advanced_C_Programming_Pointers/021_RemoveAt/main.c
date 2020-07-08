@@ -58,7 +58,7 @@ in. queue_length(LISTHDR* queue) {
 		}
 		temp = temp->next;			// get the next item in the queue
 		length = length + 1;
-	} while (temp != NULL);
+	} w___ (temp != NULL);
 
 	r_ length;
 }
@@ -96,7 +96,7 @@ LISTITEM* remove_at(LISTHDR *queue, in. position) {
 		}
 		temp = temp->next;			// get the next item in the queue
 		i = i + 1;					// and increment the corresponding index position
-	} while (temp != NULL);
+	} w___ (temp != NULL);
 
 	r_ temp;
 }
@@ -143,7 +143,7 @@ in. main() {
 			p..("data is %d\n", temp->data);
 			free(temp);				// call 'free' to tidy up 
 		}
-	} while (temp != NULL);
+	} w___ (temp != NULL);
 
 	r_ 0;
 }

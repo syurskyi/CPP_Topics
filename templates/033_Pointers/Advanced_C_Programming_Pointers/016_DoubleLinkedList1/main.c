@@ -36,14 +36,14 @@ in. main() {
 
 	// now let's see what we got going forward
 	temp = head.next;								// initialize our temporary variable to the head of the list
-	while (temp != &head) {							// keep going until we've reach the end
+	w___ (temp != &head) {							// keep going until we've reach the end
 		p..("forward list item: current is %p; next is %p; prev is %p; data is %d\n", temp, temp->next, temp->prev, temp->data);
 		temp = temp->next;							// move to the next item in the list					
 	}
 
 	// and going backwards
 	temp = head.prev;								// initialize our temporary variable to the tail of the list
-	while (temp != &head) {							// keep going until we've reach the end
+	w___ (temp != &head) {							// keep going until we've reach the end
 		p..("backward list item: current is %p; next is %p; prev is %p; data is %d\n", temp, temp->next, temp->prev, temp->data);
 		temp = temp->prev;							// move to the previous item in the list					
 	}
