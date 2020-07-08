@@ -52,7 +52,7 @@ in. main()
     b[0] _'g'
     c.. __ b __ e..
 
-    ch.. * c.. dynamic_array _ new ch..[50]
+    ch.. * c.. dynamic_array _ n.. ch..[50]
     dynamic_array[0] _ 'k'
     dynamic_array[1] _ '\0'
     //dynamic_array = "lalala";

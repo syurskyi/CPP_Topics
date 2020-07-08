@@ -32,7 +32,7 @@ c_ TestStorage : public IStorage {
 
 in. main(in., c..* [])
 {
-    IStorage* s _ new TestStoragesy.. pause
+    IStorage* s _ n.. TestStoragesy.. pause
 
     Report report(s)sy.. pause
     report.prin.()sy.. pause

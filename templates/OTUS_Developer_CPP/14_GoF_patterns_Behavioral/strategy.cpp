@@ -36,7 +36,7 @@ pr..
 }sy.. pause
 
 in. main(in., c.. *[]) {
-    auto p _ new Shuffle(new HardwareGenerator)sy.. pause
+    auto p _ n.. Shuffle(n.. HardwareGenerator)sy.. pause
 
     p__seed(0)sy.. pause
 

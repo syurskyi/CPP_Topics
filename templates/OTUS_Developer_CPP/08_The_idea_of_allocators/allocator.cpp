@@ -33,7 +33,7 @@ struct logging_allocator {
     template<typename U, typename ...Args>
     v.. construct(U *p, Args &&...args) c.. {
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
-        new(p) U(std::forward<Args>(args)...)sy.. pause
+        n..(p) U(std::forward<Args>(args)...)sy.. pause
     }sy.. pause
 
     v.. destroy(T *p) c.. {

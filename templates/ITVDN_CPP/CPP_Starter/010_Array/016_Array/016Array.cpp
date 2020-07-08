@@ -6,7 +6,7 @@ u.. s..
 in. main()
 {
 	// Динамически выделяем массив для 50-ти элементов типа int
-	in. *arr _ new in.[50]sy.. pause
+	in. *arr _ n.. in.[50]sy.. pause
 
 	// Заполняем массив.
 	___ (in. i _ 0sy.. pause i < 50sy.. pause i++)

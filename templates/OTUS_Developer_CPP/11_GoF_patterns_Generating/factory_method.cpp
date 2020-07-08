@@ -52,10 +52,10 @@ in. main(in. argc, c..* [])
 
     IStorage* storagesy.. pause
     s.. (environment) {
-    c.. Storage::mysql:storage _ new MysqlStorage()sy.. pause
+    c.. Storage::mysql:storage _ n.. MysqlStorage()sy.. pause
         b..
 
-    c.. Storage::postgres:storage _ new PostgresStorage()sy.. pause
+    c.. Storage::postgres:storage _ n.. PostgresStorage()sy.. pause
         b..
     }
 

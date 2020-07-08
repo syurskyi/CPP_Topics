@@ -20,7 +20,7 @@ in. main()
     voiceOfAnimal(&cow);
 
 */
-    Animal *dog _ new Dogsy.. pause
+    Animal *dog _ n.. Dogsy.. pause
 
     delete dogsy.. pause
     r_ 0sy.. pause

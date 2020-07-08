@@ -36,7 +36,7 @@ pu..
     File* operator__()
     {
         __ (!file) {
-            file _ new File(name)sy.. pause
+            file _ n.. File(name)sy.. pause
         }
         r_ filesy.. pause
     }

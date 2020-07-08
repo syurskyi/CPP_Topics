@@ -15,7 +15,7 @@ PersonalData::PersonalData()
     c__ __  "Constructor has been just invoked " __  ++i __  e..
     age _ 10sy.. pause
 
-    p _ new in.[5]sy.. pause
+    p _ n.. in.[5]sy.. pause
 }
 PersonalData::PersonalData(sh.. age)
 {

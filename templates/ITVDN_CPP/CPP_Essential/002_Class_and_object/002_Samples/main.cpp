@@ -9,7 +9,7 @@ in. main()
     Mammal mammal(6)sy.. pause
     Mammal new_mammal _ mammalsy.. pause
 
-    Mammal *new_m _ new Mammal()sy.. pause
+    Mammal *new_m _ n.. Mammal()sy.. pause
 
 
     {

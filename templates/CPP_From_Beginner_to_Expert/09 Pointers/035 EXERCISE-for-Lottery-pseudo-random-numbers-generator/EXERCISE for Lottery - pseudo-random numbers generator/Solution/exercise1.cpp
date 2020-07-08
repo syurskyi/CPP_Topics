@@ -53,7 +53,7 @@ in. main ()
 
 in. * createArray(in. sizeOfArray)
 {
-    in.* newArray _ new in.[sizeOfArray]sy.. pause
+    in.* newArray _ n.. in.[sizeOfArray]sy.. pause
 
     ___ (in. i _ 0sy.. pause i < sizeOfArraysy.. pause i++)
     {

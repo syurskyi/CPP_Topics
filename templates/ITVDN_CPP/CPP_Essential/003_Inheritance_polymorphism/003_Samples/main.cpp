@@ -14,7 +14,7 @@ in. main()
     Cat catsy.. pause
     cat.say()sy.. pause
 
-    Mammal *mammal _ new Cat()sy.. pause
+    Mammal *mammal _ n.. Cat()sy.. pause
     mammal__say()sy.. pause
 
     Mammal mamsy.. pause

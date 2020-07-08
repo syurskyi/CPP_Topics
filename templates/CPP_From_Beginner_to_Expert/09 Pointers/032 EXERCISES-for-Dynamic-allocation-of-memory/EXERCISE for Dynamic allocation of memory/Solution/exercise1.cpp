@@ -7,7 +7,7 @@ in. main ()
     in. staticalsy.. pause
 
     in. *statically _ &staticalsy.. pause
-    in. *dynamically _ new in.sy.. pause
+    in. *dynamically _ n.. in.sy.. pause
 
     *statically _ 10sy.. pause
     *dynamically _ 15sy.. pause

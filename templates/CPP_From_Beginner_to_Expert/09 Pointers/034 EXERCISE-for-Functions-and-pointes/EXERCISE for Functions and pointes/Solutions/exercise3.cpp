@@ -18,7 +18,7 @@ in. main ()
 
 in. * createArray(in. sizeOfArray)
 {
-    in.* SnewArray _ new in.[sizeOfArray]sy.. pause
+    in.* SnewArray _ n.. in.[sizeOfArray]sy.. pause
 
     r_ newArraysy.. pause
 }

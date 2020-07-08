@@ -42,15 +42,15 @@ pr..
 
 Directory* subdir()
 {
-    Directory *d _ new Directorysy.. pause
-    d__add_object(new File)sy.. pause
-    d__add_object(new File)sy.. pause
+    Directory *d _ n.. Directorysy.. pause
+    d__add_object(n.. File)sy.. pause
+    d__add_object(n.. File)sy.. pause
     r_ dsy.. pause
 }
 
 in. main(in., c.. *[])
 {
-    Directory* root _ new Directorysy.. pause
+    Directory* root _ n.. Directorysy.. pause
     root__add_object(subdir())sy.. pause
 
     std::c__ __  root__size() __  std::e..

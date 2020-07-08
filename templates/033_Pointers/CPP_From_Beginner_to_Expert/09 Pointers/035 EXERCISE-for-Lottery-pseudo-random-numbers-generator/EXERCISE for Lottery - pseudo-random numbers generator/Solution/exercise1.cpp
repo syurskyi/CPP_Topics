@@ -53,14 +53,14 @@ in. main ()
 
 in. * createArray(in. sizeOfArray)
 {
-    in.* newArray _ new in.[sizeOfArray]
+    in.* newArray _ n.. in.[sizeOfArray]
 
     ___ (in. i _ 0 i < sizeOfArray i++)
     {
         newArray[i] _ rand()%1500
     }
 
-    return newArray
+    r_ newArray
 }
 
 v.. swapTwoValues(in.* firstValue, in.* secondValue)

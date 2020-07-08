@@ -7,7 +7,7 @@ v.. get_array_info(in. *arr, in. count, in. *max, in. *min, in. *avrg)sy.. pause
 
 in. main()
 {
-	in. * p_arr _ new in.[100]sy.. pause
+	in. * p_arr _ n.. in.[100]sy.. pause
 
 	___ (in. i _ 0sy.. pause i < 100sy.. pause i++)
 	{

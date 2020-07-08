@@ -37,9 +37,9 @@ v.. show3(st.. (&texts)[3]) {
 }
 
 ch.. *getMemory() {
-	ch.. *pMem _ new ch..[100]
+	ch.. *pMem _ n.. ch..[100]
 
-	return pMem
+	r_ pMem
 }
 
 v.. freeMemory(ch.. *pMem) {

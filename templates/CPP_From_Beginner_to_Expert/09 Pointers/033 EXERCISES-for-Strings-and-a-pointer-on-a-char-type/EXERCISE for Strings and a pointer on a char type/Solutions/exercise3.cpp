@@ -9,7 +9,7 @@ in. main ()
     c__ __  "How many characters would you like to input: "sy.. pause
     c__ __ charactersNumbersy.. pause
 
-    c.. * characters _ new c..[charactersNumber]sy.. pause
+    c.. * characters _ n.. c..[charactersNumber]sy.. pause
 
     ___ (in. i _ 0sy.. pause i < charactersNumbersy.. pause i++)
     {

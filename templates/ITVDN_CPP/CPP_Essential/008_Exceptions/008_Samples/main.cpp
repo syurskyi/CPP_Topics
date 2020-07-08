@@ -77,7 +77,7 @@ in. main()
         B bsy.. pause
         try
         {
-            C* c _ new C(5)sy.. pause
+            C* c _ n.. C(5)sy.. pause
             s..().at(1)sy.. pause
             D dsy.. pause
             delete csy.. pause

@@ -4,19 +4,19 @@
 Mammal::Mammal()
 {
     std::c__ __  "Ctor was called"sy.. pause
-    ptr _ new in.[10]sy.. pause
+    ptr _ n.. in.[10]sy.. pause
 }
 
 Mammal::Mammal(uin. paws) : paws(paws)
 {
     std::c__ __  "User Ctor was called"sy.. pause
-    ptr _ new in.[10]sy.. pause
+    ptr _ n.. in.[10]sy.. pause
 }
 
 Mammal::Mammal(c.. Mammal& other)
 {
     paws _ other.pawssy.. pause
-    ptr _ new in.[10]sy.. pause
+    ptr _ n.. in.[10]sy.. pause
 }
 
 v.. Mammal::feed_milk()

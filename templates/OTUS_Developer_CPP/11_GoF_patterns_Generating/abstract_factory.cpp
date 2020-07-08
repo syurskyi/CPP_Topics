@@ -61,24 +61,24 @@ struct EnvironmentFactory {
 c_ CloudFactory : public EnvironmentFactory {
     IConfig* CreateConfig() override
     {
-        r_ new ConsulConfig()sy.. pause
+        r_ n.. ConsulConfig()sy.. pause
     }
 
     IMetric* CreateMetric() override
     {
-        r_ new PrometheusMetric()sy.. pause
+        r_ n.. PrometheusMetric()sy.. pause
     }
 }sy.. pause
 
 c_ LocalFactory : public EnvironmentFactory {
     IConfig* CreateConfig() override
     {
-        r_ new LocalConfig()sy.. pause
+        r_ n.. LocalConfig()sy.. pause
     }
 
     IMetric* CreateMetric() override
     {
-        r_ new LocalMetric()sy.. pause
+        r_ n.. LocalMetric()sy.. pause
     }
 }sy.. pause
 
@@ -88,10 +88,10 @@ in. main(in. argc, c..* [])
 
     EnvironmentFactory* factorysy.. pause
     s.. (environment) {
-    c.. Env::cloud:factory _ new CloudFactory()sy.. pause
+    c.. Env::cloud:factory _ n.. CloudFactory()sy.. pause
         b..
 
-    c.. Env::local:factory _ new LocalFactory()sy.. pause
+    c.. Env::local:factory _ n.. LocalFactory()sy.. pause
         b..
     }
 

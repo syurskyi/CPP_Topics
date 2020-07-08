@@ -38,14 +38,14 @@ pu..
 
 in. main() {
 
-	Animal *pAnimal _ new Animal[10]
+	Animal *pAnimal _ n.. Animal[10]
 
 	pAnimal[5].setName("George")
 	pAnimal[5].speak()
 
 	delete [] pAnimal
 
-	ch.. *pMem _ new ch..[1000]
+	ch.. *pMem _ n.. ch..[1000]
 	delete [] pMem
 
 	ch.. c _ 'a'

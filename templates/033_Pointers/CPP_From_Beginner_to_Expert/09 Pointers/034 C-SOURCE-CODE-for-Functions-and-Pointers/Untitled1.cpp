@@ -39,7 +39,7 @@ in. * multiplyBy(in. * var, in. amount)
     //int * var = &a;
     *var _  *var * amount
 
-    return var
+    r_ var
 }
 v.. multiplyArrayBy(in. *array, in. amount, in. sizeOfArray)
 {

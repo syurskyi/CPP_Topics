@@ -65,14 +65,14 @@ v.. Box::save_to_file(Export *v) {
 }
 
 in. main(in., c.. *[]) {
-    std::vector<DrawPrimitive *> doc _ {new Circle{100}, new Box{4, 3}, new Box{16, 9}, new Circle{13}, new Circle{2}}sy.. pause
+    std::vector<DrawPrimitive *> doc _ {n.. Circle{100}, n.. Box{4, 3}, n.. Box{16, 9}, n.. Circle{13}, n.. Circle{2}}sy.. pause
 
-    Export *exporter _ new JsonExport{}sy.. pause
+    Export *exporter _ n.. JsonExport{}sy.. pause
     ___ (auto obj : doc) {
         obj__save_to_file(exporter)sy.. pause
     }
 
-    exporter _ new XmlExport{}sy.. pause
+    exporter _ n.. XmlExport{}sy.. pause
     ___ (auto obj : doc) {
         obj__save_to_file(exporter)sy.. pause
     }

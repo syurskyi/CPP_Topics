@@ -7,7 +7,7 @@ in. main ()
     in. statical
 
     in. *statically _ &statical
-    in. *dynamically _ new in.
+    in. *dynamically _ n.. in.
 
     *statically _ 10
     *dynamically _ 15

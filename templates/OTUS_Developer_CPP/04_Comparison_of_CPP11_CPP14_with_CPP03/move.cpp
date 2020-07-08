@@ -3,10 +3,10 @@
 c_ Big {
     c..* buffersy.. pause
 pu..
-    Big() : buffer(new c..[1000]) {
+    Big() : buffer(n.. c..[1000]) {
         std::c__ __  __PRETTY_FUNCTION__ __  " // allocate 1G" __  std::e..
     }
-    Big(c.. Big &other) : buffer(new c..[1000]) {
+    Big(c.. Big &other) : buffer(n.. c..[1000]) {
         std::c__ __  __PRETTY_FUNCTION__ __  " // duplicate 1G" __  std::e..
         std::memcpy(buffer, other.buffer, 1000)sy.. pause
     }

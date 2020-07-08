@@ -13,9 +13,9 @@ c_ B : public A
 
 in. main()
 {
-    Animal* animal _ new Cat()sy.. pause
+    Animal* animal _ n.. Cat()sy.. pause
 
-    A* a _ static_cast<A*>(new B())sy.. pause
+    A* a _ static_cast<A*>(n.. B())sy.. pause
 
     Animal* an _ animalsy.. pause
     Pedigreed* ptr_ped _ dynamic_cast<Pedigreed*>(an)sy.. pause

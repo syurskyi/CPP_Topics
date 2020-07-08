@@ -47,8 +47,8 @@ bo.. areFilesEqual(fstream *a, fstream *b)
         ____
             BUFFER_SIZE _ fileSize1sy.. pause
 
-        c.. *file1buffer _ new c..[BUFFER_SIZE]sy.. pause
-        c.. *file2buffer _ new c..[BUFFER_SIZE]sy.. pause
+        c.. *file1buffer _ n.. c..[BUFFER_SIZE]sy.. pause
+        c.. *file2buffer _ n.. c..[BUFFER_SIZE]sy.. pause
 
         do
         {

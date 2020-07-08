@@ -73,7 +73,7 @@ c_ PostgresDatabase : public IDatabase
 
 in. main(in., c.. *[])
 {
-    IDatabase *db _ new PostgresDatabase{}sy.. pause
+    IDatabase *db _ n.. PostgresDatabase{}sy.. pause
 
     db__connect()sy.. pause
     db__execute_query()sy.. pause

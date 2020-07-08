@@ -22,7 +22,7 @@ v.. prin.Details(Polygon* shape) {
 
 in. main() {
 	// Create a rectangle on the heap with a height of 5 and a width of 6
-	Polygon* rectangle _ new Rectangle(5, 6)sy.. pause
+	Polygon* rectangle _ n.. Rectangle(5, 6)sy.. pause
 	// Print information using getters and method
 	prin.Details(rectangle)sy.. pause
 	// Set the height to 10 with a setter
@@ -35,7 +35,7 @@ in. main() {
 	delete rectanglesy.. pause
 
 	// Create a triangle on the heap with a height of 7 and a width of 9
-	Polygon* triangle _ new Triangle(7, 9)sy.. pause
+	Polygon* triangle _ n.. Triangle(7, 9)sy.. pause
 	// Print information using getters and method
 	prin.Details(triangle)sy.. pause
 	// Set the height to 3 with a setter

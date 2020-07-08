@@ -63,8 +63,8 @@ in. main(in., c..* [])
 
     List lsy.. pause
 
-    l.push(new Node{42})sy.. pause // memory leak
-    l.push(new Node{100})sy.. pause // memory leak
+    l.push(n.. Node{42})sy.. pause // memory leak
+    l.push(n.. Node{100})sy.. pause // memory leak
 
     ___ (Node* i _ l.headsy.. pause isy.. pause i _ i__next) {
         std::c__ __  i__value __  std::e..

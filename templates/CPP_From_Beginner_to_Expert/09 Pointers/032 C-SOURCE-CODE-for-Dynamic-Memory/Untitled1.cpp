@@ -33,13 +33,13 @@ in. main()
 
 
     {
-        in. *p _ new in.sy.. pause
+        in. *p _ n.. in.sy.. pause
 
         c__ __  p __  e..
 
         delete psy.. pause
 
-        p _ new in.sy.. pause
+        p _ n.. in.sy.. pause
 
         c__ __  p __  e..
 

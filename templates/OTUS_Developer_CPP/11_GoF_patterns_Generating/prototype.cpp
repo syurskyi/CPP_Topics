@@ -18,7 +18,7 @@ c_ TcpConnector : public IConnector {
 
     IConnector* clone() override
     {
-        r_ new TcpConnector{}sy.. pause
+        r_ n.. TcpConnector{}sy.. pause
     }
 }sy.. pause
 
@@ -30,13 +30,13 @@ c_ UdpConnector : public IConnector {
 
     IConnector* clone() override
     {
-        r_ new UdpConnector{}sy.. pause
+        r_ n.. UdpConnector{}sy.. pause
     }
 }sy.. pause
 
 in. main(in., c..* [])
 {
-    IConnector* primary _ new TcpConnector{}sy.. pause
+    IConnector* primary _ n.. TcpConnector{}sy.. pause
 
     //
 

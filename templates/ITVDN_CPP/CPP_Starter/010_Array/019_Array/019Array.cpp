@@ -8,7 +8,7 @@ in. GetSum(in. *arr, in. count)sy.. pause
 in. main()
 {
 	in. size _ 50sy.. pause
-	in. *arr _ new in.[size]sy.. pause
+	in. *arr _ n.. in.[size]sy.. pause
 
 	___ (in. i _ 0sy.. pause i < 50sy.. pause i++)
 	{

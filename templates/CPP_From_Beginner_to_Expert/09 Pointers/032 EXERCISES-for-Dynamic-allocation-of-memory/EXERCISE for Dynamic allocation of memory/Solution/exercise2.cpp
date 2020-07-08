@@ -10,7 +10,7 @@ in. main ()
     c__ __  "Input the size of the dynamic array you want to create: "sy.. pause
     c__ __ arraySizesy.. pause
 
-    in. *dynamicArray _ new in.[arraySize]sy.. pause
+    in. *dynamicArray _ n.. in.[arraySize]sy.. pause
 
 
     ___ (in. i _ 0sy.. pause i < arraySizesy.. pause i++)

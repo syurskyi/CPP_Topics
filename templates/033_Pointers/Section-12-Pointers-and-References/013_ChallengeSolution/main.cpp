@@ -59,7 +59,7 @@ This function expects:
 in. * apply_all(c.. in. *c.. arr1, size_t size1, c.. in. *c.. arr2, size_t size2) {
     in. *new_array {}
     
-    new_array _ new in.[size1 * size2]
+    new_array _ n.. in.[size1 * size2]
     
     in. position {0}
     ___ (size_t i{0} i < size2 ++i) {
@@ -68,7 +68,7 @@ in. * apply_all(c.. in. *c.. arr1, size_t size1, c.. in. *c.. arr2, size_t size2
             ++position
         }
     }
-    return new_array
+    r_ new_array
 }
 /*******************************************************************
 This function expects:

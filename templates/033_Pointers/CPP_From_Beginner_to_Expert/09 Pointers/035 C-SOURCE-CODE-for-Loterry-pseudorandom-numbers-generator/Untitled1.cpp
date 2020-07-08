@@ -19,11 +19,11 @@ in. main()
 v.. lottery(in. total_balls, in. balls_to_draw)
 {
     __ (total_balls < balls_to_draw)
-        return
+        r_
 
      srand(time(NULL)) //seeds
 
-     in. *balls _ new in.[balls_to_draw]
+     in. *balls _ n.. in.[balls_to_draw]
 
      ___ (in. i _ 0 i < balls_to_draw i++)
      {

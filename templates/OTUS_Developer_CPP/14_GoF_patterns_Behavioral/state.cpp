@@ -54,7 +54,7 @@ c_ Anonymous : public CommandHandler {
 pu..
     v.. login(Application *m) override {
         std::c__ __  "work as loggined" __  std::e..
-        m__set_current(new LogginedHandler())sy.. pause
+        m__set_current(n.. LogginedHandler())sy.. pause
     }
     v.. do_it(Application *) override {
         std::c__ __  "error" __  std::e..
@@ -66,11 +66,11 @@ pu..
 
 v.. LogginedHandler::logout(Application *m) {
     std::c__ __  "work as anonymous" __  std::e..
-    m__set_current(new Anonymous())sy.. pause
+    m__set_current(n.. Anonymous())sy.. pause
 }
 
 Application::Application() {
-    cmd_handler _ new Anonymous()sy.. pause
+    cmd_handler _ n.. Anonymous()sy.. pause
     std::c__ __  std::e..
 }
 

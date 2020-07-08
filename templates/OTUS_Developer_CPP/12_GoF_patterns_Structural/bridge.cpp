@@ -54,8 +54,8 @@ c_ AnalogClock : public Clock
 
 in. main(in., c.. *[])
 {
-    Clock *c _ new DigitalClocksy.. pause
-    c__s _ new in.ernetClockSignalsy.. pause
+    Clock *c _ n.. DigitalClocksy.. pause
+    c__s _ n.. in.ernetClockSignalsy.. pause
 
     c__refresh()sy.. pause
 

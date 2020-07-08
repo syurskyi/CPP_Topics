@@ -18,9 +18,9 @@ in. main ()
 
 in. * createArray(in. sizeOfArray)
 {
-    in.* SnewArray _ new in.[sizeOfArray]
+    in.* SnewArray _ n.. in.[sizeOfArray]
 
-    return newArray
+    r_ newArray
 }
 
 v.. swapTwoValues(in.* firstValue, in.* secondValue)

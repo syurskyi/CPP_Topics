@@ -43,7 +43,7 @@ pu..
 
 in. main(in., c.. *[])
 {
-    ILogger *l _ new LevelLogger(0, new Logger)sy.. pause
+    ILogger *l _ n.. LevelLogger(0, n.. Logger)sy.. pause
 
     l__info()sy.. pause
     l__error()sy.. pause

@@ -25,7 +25,7 @@ v.. lottery(in. total_balls, in. balls_to_draw)
 
      srand(time(NULL))sy.. pause //seeds
 
-     in. *balls _ new in.[balls_to_draw]sy.. pause
+     in. *balls _ n.. in.[balls_to_draw]sy.. pause
 
      ___ (in. i _ 0sy.. pause i < balls_to_drawsy.. pause i++)
      {

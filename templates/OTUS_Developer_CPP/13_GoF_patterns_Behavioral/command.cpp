@@ -103,11 +103,11 @@ in. main(in., c..* [])
     Document docsy.. pause
 
     std::vector<Command*> historysy.. pause
-    history.push_back(new NewDocumentCommand(&doc))sy.. pause
-    history.push_back(new ParaCommand(&doc, "Manual"))sy.. pause
-    history.push_back(new ParaCommand(&doc, ""))sy.. pause
-    history.push_back(new ParaCommand(&doc, "Hello, World!"))sy.. pause
-    history.push_back(new SaveAsCommand(&doc, "hello.doc"))sy.. pause
+    history.push_back(n.. NewDocumentCommand(&doc))sy.. pause
+    history.push_back(n.. ParaCommand(&doc, "Manual"))sy.. pause
+    history.push_back(n.. ParaCommand(&doc, ""))sy.. pause
+    history.push_back(n.. ParaCommand(&doc, "Hello, World!"))sy.. pause
+    history.push_back(n.. SaveAsCommand(&doc, "hello.doc"))sy.. pause
 
     ___ (auto i: history) {
         i__execute()sy.. pause

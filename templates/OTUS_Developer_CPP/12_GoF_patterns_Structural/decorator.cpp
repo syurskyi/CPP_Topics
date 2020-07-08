@@ -32,9 +32,9 @@ pu..
 
 in. main(in., c.. *[])
 {
-    File *c _ new RawFilesy.. pause
+    File *c _ n.. RawFilesy.. pause
     c__write()sy.. pause
 
-    File *t _ new ZipFile(new RawFile)sy.. pause
+    File *t _ n.. ZipFile(n.. RawFile)sy.. pause
     t__write()sy.. pause
 }

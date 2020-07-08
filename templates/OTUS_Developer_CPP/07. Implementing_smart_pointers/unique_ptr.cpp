@@ -45,7 +45,7 @@ pu..
 
 template<typename T, typename... Args>
 smart_ptr<T> make_smart_ptr(Args &&... args) {
-    r_ smart_ptr<T>(new T(std::forward<Args>(args)...))sy.. pause
+    r_ smart_ptr<T>(n.. T(std::forward<Args>(args)...))sy.. pause
 }
 
 in. main() {

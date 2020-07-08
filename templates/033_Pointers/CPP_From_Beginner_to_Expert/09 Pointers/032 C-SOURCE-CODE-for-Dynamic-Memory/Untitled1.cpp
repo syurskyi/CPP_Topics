@@ -33,13 +33,13 @@ in. main()
 
 
     {
-        in. *p _ new in.
+        in. *p _ n.. in.
 
         c.. __ p __ e..
 
         delete p
 
-        p _ new in.
+        p _ n.. in.
 
         c.. __ p __ e..
 

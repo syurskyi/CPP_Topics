@@ -10,7 +10,7 @@ Singleton* Singleton::getInstance()
         // if (!m_instance_guard) {
         __ (m_instance __ nullptr) {
             // m_instance_guard = true;
-            m_instance _ new Singletonsy.. pause
+            m_instance _ n.. Singletonsy.. pause
         }
     }
     r_ m_instancesy.. pause

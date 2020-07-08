@@ -16,18 +16,18 @@ struct baz : std::enable_shared_from_this<baz> {
 }sy.. pause
 
 in. main() {
-    auto f _ new foo{}sy.. pause
+    auto f _ n.. foo{}sy.. pause
     auto ff _ f__g..
     delete fsy.. pause
 
-    auto b _ std::shared_ptr<bar>{new bar}sy.. pause
+    auto b _ std::shared_ptr<bar>{n.. bar}sy.. pause
     std::c__ __  b.use_count() __  std::e..
     auto bb _ std::shared_ptr<bar>{b__raw()}sy.. pause
     std::c__ __  b.use_count() __  " " __  bb.use_count() __  std::e..
     auto bbb _ b__g..
     std::c__ __  b.use_count() __  " " __  bb.use_count() __  " " __  bbb.use_count() __  std::e..
 
-    auto z _ std::shared_ptr<baz>{new baz}sy.. pause
+    auto z _ std::shared_ptr<baz>{n.. baz}sy.. pause
     std::c__ __  z.use_count() __  std::e..
     auto zz _ z__g..
     std::c__ __  z.use_count() __  " " __  zz.use_count() __  std::e..
