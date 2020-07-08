@@ -1,0 +1,446 @@
+<html>
+                <head>
+                <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+                <title>038 Pointers FAQ - most confusing parts explained</title>
+                </head>
+                <body>
+                <div class="container">
+                <div class="row">
+                <div class="col-md-10 col-md-offset-1">
+                    <p class="lead"><pre class="prettyprint linenums">int *p = new int;
+*p = 50;
+delete p;
+*p = 20; //why is this wrong? why program might compile without errors?</pre>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>C++ gives you lots of power that allows you to do things that shouldn't be allowed.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>When you 'delete' (<strong>free) </strong>the memory that was reserved <strong>dynamically</strong> by your program that was pointed by the pointer it means your program doesn't have <strong>rights </strong>to<strong> access</strong> that place anymore. (line 3)</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>What does it mean? </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Well on your computer lots of programs run in the background. Lots of them reserve memory from RAM like you do. And because you freed memory it is a sign that the freed place by you is again <strong>available </strong>for all other programs.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>If you change the value of the place in memory that doesn't belong to you, you could make other programs to not work properly. (line 4) If other program had reserved the place of memory you want to change value at your program would crash. Because it would be a violation of space of another program. And I'm sure you do not want your program to crash.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Sometimes memory won't be reserved by anybody and you might not see an error. (That's why program might sometimes work). But don't do things like that because it leads to problems.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Pointers give lots of power but with the power comes responsibility ;) Other languages don't have 'visible' pointers to programmers which makes programming a bit easier for beginners and even advanced programmers. We are merely humans and we tend to make errors. Errors connected to pointers are one of the hardest to spot in big projects.</p>
+
+
+
+
+
+
+
+
+
+
+
+<p><strong>+++++++++++++++++++++++++++++++++++++++++++++++</strong></p>
+
+
+
+
+
+
+
+
+
+
+
+<p><strong>It's important to notice that 'asterisk' (*) can be used for two operations:</strong><strong></strong><strong><strong></strong><strong><br></strong></strong></p>
+
+
+
+
+
+<ul><li><strong><strong><strong><strong>declaration </strong></strong></strong></strong></li><li><strong><strong>extracting value from the place pointer is pointing to</strong></strong></li></ul>
+
+
+
+
+
+<p><strong></strong></p>
+
+
+
+<p><strong></strong></p>
+
+<p><strong></strong></p><strong>
+
+</strong><p><strong></strong><br></p><p><strong></strong><br></p>
+
+<p><strong></strong><br></p>
+
+
+
+<p><strong></strong></p>
+
+
+
+
+
+
+
+
+
+<p>Take into consideration that when you write<br></p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><code>int *pSample;</code> </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>it means you are declaring a pointer that can hold an address.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>but when you do something like that</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p><code>cout &lt;&lt; *pSample &lt;&lt; endl;</code> </p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>You are taking the VALUE that is HOLD under the address that pSample is pointing to.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>Read these what I wrote here a few times. It's really important to notice that asterisk which is this sign: '*' has <strong>different </strong>meaning while declaring the variable and a <strong>different </strong>meaning when sending the value on ouput using cout. In first case scenario it means you are declaring the pointer in second scenario you are taking the value under the address on output.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<p>This is unforunately how it works and it is the fault of C++ creator.</p>
+
+
+
+<p><strong>++++++++++++++++++++++++++++++++++++++++++++++++</strong></p>
+
+
+
+<h4>Question:</h4>
+
+
+
+<p><em>(...) While using pointers with character arrays in the following way:<br></em></p>
+
+
+
+
+
+<p><em>char my_array[ ] =  "hamburgers";</em></p>
+
+
+
+
+
+<p><em>char  *p = my_array;</em></p>
+
+
+
+
+
+<p><em>cout&lt;&lt;p&lt;&lt;endl;</em></p>
+
+
+
+
+
+<p><em>The output is: hamburgers</em></p>
+
+
+
+
+
+<p><em>Which would mean that the pointer is storing a complete sequence of characters whereas a pointer is supposed to store the address of a memory location only. I understand that unlike integer arrays (where the name of the array is the address of first element of the array) the name of a character array is the complete sequence of characters itself. </em></p>
+
+
+
+
+
+<p><em>But how can a pointer store something other than an address? </em></p>
+
+
+
+<h4>Answer:</h4>
+
+
+
+<p>The pointer is storing <strong>only</strong> the addess of a memory location of first character.</p>
+
+
+
+
+
+<p>However cout is something what is called an object (you will learn about object and classes in future). This object overloads how operator "&lt;&lt;" works against char pointer. By overload I mean it changes its behaviour.</p>
+
+
+
+
+
+<p>When operator "<strong>&lt;</strong><strong>&lt;</strong>" is used with <strong>cout </strong>against char pointer like that:</p>
+
+
+
+
+
+<pre class="prettyprint linenums">char my_array[ ] =  "hamburgers";
+char  *p = my_array;
+cout&lt;&lt;p&lt;&lt;endl;
+</pre>
+
+
+
+
+
+
+
+
+
+<p> it will print characters from the place in memory the pointer is pointing to. In our situation it's from character 'h'. Then it print 'a'. Then 'm' and so on. 
+</p>
+
+
+
+
+
+<p>How does he know when to end?</p>
+
+
+
+
+
+<p>There is always invisible character called ending character and it looks like that: '/0'. When that character is met it is a signal to stop printing characters. That character '/0' is added automatically at the end when you use quotes between a word like that "hamburgers".</p>
+
+
+
+
+
+<p>You can add it manually too. Check it out by for example doing something like that:</p>
+
+
+
+
+
+<pre class="prettyprint linenums">char my_array[ ] =  "ham\0burgers";
+char  *p = my_array;
+cout&lt;&lt;p&lt;&lt;endl;
+</pre>
+
+
+
+
+
+
+
+
+
+
+
+<p>You will notice that only 'ham' is only printed out.</p><p><strong>+++++++++++++++++++++</strong></p>
+
+
+
+<p>You need to remember that asterisk and ampersand has a few meanings in C++ and C.</p>
+
+<p>It has different meaning while declaring the variable and different meaning while using the variable in the expression like for example cout &lt;&lt; &amp;a;</p>
+
+<p>In the first occurance (declaring variable) asterisk is telling compiler that you are declaring pointer and ampersand tells compiler that you are declaring reference.</p>
+
+<p>When you use asterisk in expression you get the value under the address that the pointer is pointing to.</p>
+
+<p>When you use ampersand in expression you just get address of variable.</p>
+
+<p>Reference variable is just a normal variable that allows you to refer to another variable with different name. </p>
+
+<p>Pointer is a variable that can hold addresses of other variables. So the value of every pointer is always an address.</p>
+
+<p>It's confusing (I know) you have to exercise it. There is no other way around it. Unfortunately creator of C/C++ used the same operator for different things which makes everyone who is new to programming confused at start.</p><p><br></p></p>
+                </div>
+                </div>
+                </div>
+                <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+                </body>
+                </html>

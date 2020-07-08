@@ -32,10 +32,10 @@
 //    r_ _
 //
 //
-////#include "stdafx.h"
-////#include <iostream>
+////? "stdafx.h"
+////? |i..
 ////
-////using namespace std;
+////u.. s..
 ////
 ////int main()
 ////{
