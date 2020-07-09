@@ -41,7 +41,7 @@ LISTITEM* dequeue(LISTHDR *queue) {
 	__ (temp __ (LISTITEM*)queue) {		// if the head of the queue points to itself ...
 		temp = NULL;					// ... then the queue is empty 			
 	}
-	else {
+	____ {
 		queue->first = temp->next;		// and set the queue header to point to the 'second' item
 		queue->first->prev = (LISTITEM*)queue;
 	}

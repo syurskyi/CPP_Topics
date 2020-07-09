@@ -37,7 +37,7 @@ in. main() {
 	// NOTE: the sizeof(PFI) is 4 and the sizeof the 'power' array here is 16 
 	__ (exponent <= 0 || exponent > s_o_(power)/s_o_(PFI)) {
 		p..("ERROR: out of range!\n");
-	} else {
+	} ____ {
         p..("Enter the value\n> ");
         value = atoi(gets(input));
 		// here, I'm indexing into an array of function pointers, selecting the 'power'

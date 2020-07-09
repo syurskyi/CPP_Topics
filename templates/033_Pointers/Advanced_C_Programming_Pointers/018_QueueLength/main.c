@@ -3,92 +3,92 @@
 ? |st..
 
 // this what is going to be in the queue
-t.. st.. listitem {
-	st.. listitem *next;			// pointer to next item
-	st.. listitem *prev;			// pointer to previous item
-	in. data;						// some data
-} LISTITEM;
+t.. st.. listitem 
+	st.. listitem *next			// pointer to next item
+	st.. listitem *prev			// pointer to previous item
+	in. data						// some data
+ LISTITEM
 
 // this is the queue 'header'
-t.. st.. {
-	st.. listitem *first;			// pointer to 1st item
-	st.. listitem *last;			// pointer to last item
-} LISTHDR;
+t.. st.. 
+	st.. listitem *first			// pointer to 1st item
+	st.. listitem *last			// pointer to last item
+ LISTHDR
 
-LISTHDR head;						// our queue
+LISTHDR head						// our queue
 
 									// this puts an item in at the end of a queue
-v.. enqueue(LISTHDR *queue, LISTITEM *item) {
-	LISTITEM *temp;
+v.. enqueue(LISTHDR *queue, LISTITEM *item) 
+	LISTITEM *temp
 
-	temp = queue->last;				// get the 'last' item in the queue and keep hold of it
-	queue->last = item;				// put the item in the queue at the end
-	item->prev = temp;				// link back to old 'last' item
-	item->next = (LISTITEM*)queue;	// set the forward link of the new item
-	temp->next = item;				// and finally set the forward link of the old 'last' item to the new one
-}
+	temp = queue->last				// get the 'last' item in the queue and keep hold of it
+	queue->last = item				// put the item in the queue at the end
+	item->prev = temp				// link back to old 'last' item
+	item->next = (LISTITEM*)queue	// set the forward link of the new item
+	temp->next = item				// and finally set the forward link of the old 'last' item to the new one
+
 
 // this removes an item from the front of a queue - returns the item or NULL if there are no more items
-LISTITEM* dequeue(LISTHDR *queue) {
-	LISTITEM *temp;
+LISTITEM* dequeue(LISTHDR *queue) 
+	LISTITEM *temp
 
-	temp = queue->first;				// get the 'first' item
-	__ (temp __ (LISTITEM*)queue) {		// if the head of the queue points to itself ...
-		temp = NULL;					// ... then the queue is empty 			
-	}
-	else {
-		queue->first = temp->next;		// and set the queue header to point to the 'second' item
-		queue->first->prev = (LISTITEM*)queue;
-	}
-	r_ temp;
-}
+	temp = queue->first				// get the 'first' item
+	__ (temp __ (LISTITEM*)queue) 		// if the head of the queue points to itself ...
+		temp = NULL					// ... then the queue is empty 			
+	
+	____
+		queue->first = temp->next		// and set the queue header to point to the 'second' item
+		queue->first->prev = (LISTITEM*)queue
+	
+	r_ temp
+
 
 // returns the number of items in a queue
-in. queue_length(LISTHDR* queue) {
-	LISTITEM *temp;
-	in. length;
+in. queue_length(LISTHDR* queue) 
+	LISTITEM *temp
+	in. length
 
-	temp = queue->first;			// get the 'first' item
-	length = 0;						// initialize the length
-	do {
+	temp = queue->first			// get the 'first' item
+	length = 0						// initialize the length
+	do 
 		// check for an empty queue or if we've gone through the whole queue
-		__ (temp __ (LISTITEM*)queue) {
-			temp = NULL;			// this will break out of the do ... while loop
-			break;
-		}
-		temp = temp->next;			// get the next item in the queue
-		length = length + 1;
-	} w___ (temp != NULL);
+		__ (temp __ (LISTITEM*)queue) 
+			temp = NULL			// this will break out of the do ... while loop
+			break
+		
+		temp = temp->next			// get the next item in the queue
+		length = length + 1
+	 w___ (temp != NULL)
 
-	r_ length;
-}
+	r_ length
 
 
-in. main() {
-	LISTITEM *temp;
+
+in. main
+	LISTITEM *temp
 
 	// first, make an empty queue
 	// ... which is a queue where the header points to itself and there are no items in it
-	head.first = (LISTITEM*)&head;
-	head.last = (LISTITEM*)&head;
+	head.first = (LISTITEM*)&head
+	head.last = (LISTITEM*)&head
 
-    p..("At start, the length of the queue is %d\n", queue_length(&head));
-	___ (in. i = 0; i < 3; ###) {	// as before, populate the queue
-		temp = ma..(s_o_(LISTITEM)); // allocate some memory for the new queue item
-		temp->data = i;				// set the item's data to the loop count so that we can see where it is in the queue
-		enqueue(&head, temp);	// and put it in the queue
-	}
-	p..("After initialization, the length of the queue is %d\n\n", queue_length(&head));
+    p..("At start, the length of the queue is %d\n", queue_length(&head))
+	___ (in. i = 0 i < 3 ###) 	// as before, populate the queue
+		temp = ma..(s_o_(LISTITEM)) // allocate some memory for the new queue item
+		temp->data = i				// set the item's data to the loop count so that we can see where it is in the queue
+		enqueue(&head, temp)	// and put it in the queue
+	
+	p..("After initialization, the length of the queue is %d\n\n", queue_length(&head))
 
 	// see what we've got left
-	do {							// keep going until the queue is empty
-		p..("The length of the queue is now %d\n", queue_length(&head));
-		temp = dequeue(&head);		// if the queue is empty we will get NULL returned
-		__ (temp != NULL) {
-			p..("Dequeued item. Data is %d\n", temp->data);
-			fr..(temp);				// call 'free' to tidy up
-		}
-	} w___ (temp != NULL);
+	do 							// keep going until the queue is empty
+		p..("The length of the queue is now %d\n", queue_length(&head))
+		temp = dequeue(&head)		// if the queue is empty we will get NULL returned
+		__ (temp != NULL) 
+			p..("Dequeued item. Data is %d\n", temp->data)
+			fr..(temp)				// call 'free' to tidy up
+		
+	 w___ (temp != NULL)
 
-	r_ 0;
-}
+	r_ _
+
