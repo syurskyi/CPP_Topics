@@ -1,54 +1,53 @@
-? |s..
-
-? LENGTH 3
-
-in. data[LENGTH];			// some integers
-ch..* words[LENGTH];		// some strings
-
-in. main(in. argc, ch.. @@ {
-	v.. *gp;			// a generic pointer
-    
-	p.. ("generic pointer example\n");
-
-	// initialize our integer array
-	___ (in. i = 0; i < LENGTH; ###) {
-		data[i] = i;
-	}
-	___ (in. i = 0; i < LENGTH; ###) {
-		p..("%d\n", data[i]);
-	}
-    
-    // initialize our string array
-	words[0] = "zero";
-	words[1] = "one";
-	words[2] = "two";
-	___ (in. i = 0; i < LENGTH; ###) {
-		p..("%s\n", words[i]);
-	}
-	    
-    
-	/* 
-	* C: example of a generic pointer
-	*
-	*/
-	gp = data;								    // set the generic pointer to the start of the integer array
-	p..("\ndata array address is %p\n", gp);		// and print it out - note that a cast is not needed
-	// now print out the first item in the array
-	// - a cast is now needed to let the compiler know what sort of thing is being pointed to by the generic pointer
-	p..("item pointed to by gp is %d\n", *(in.*)gp);
-	// the cast tells the compiler what the address type is and so we can do address arthimetic
-	gp = (in.*)gp + 1;
-	p..("item pointed to by gp is now %d\n", *(in.*)gp);
-    
-    
-    gp = words;								    // set the generic pointer to the start of the string array
-	p..("\nwords array address is %p\n", gp);		// and print it out - note that a cast is not needed
-	// now print out the first item in the array
-	// - a cast is now needed to let the compiler know this is a pointer to a pointer
-	p..("item pointed to by gp is %s\n", *(ch..**)gp);
-	// the cast tells the compiler what the address type is and so we can do address arthimetic
-	gp = (ch..**)gp + 1;
-	p..("item pointed to by gp is now %s\n", *(ch..**)gp);
-    
-	r_ 0;
-}
+//? |s..
+//
+//? LENGTH 3
+//
+//in. data ?			// some integers
+//ch..# words ?		// some strings
+//
+//in. main in. argc, ch.. @@
+//	v.. #gp			// a generic pointer
+//
+//	p.. ("generic pointer example##"
+//
+//	// initialize our integer array
+//	___ in. i _ 0 ? < L.. ###
+//		d.. ? _ ?
+//
+//	___ in. i _ 0 ? < L.. ###
+//		p..("@d##" d.. ?
+//
+//
+//    // initialize our string array
+//	w.. 0 _ "zero"
+//	w.. 1 _ "one"
+//	w.. 2 _ "two"
+//	___ in. i _ 0 ? < L.. ###
+//		p.. "@s##" w.. ?
+//
+//
+//
+//	/*
+//	* C: example of a generic pointer
+//	*
+//	*/
+//	gp _ data								    // set the generic pointer to the start of the integer array
+//	p..("##data array address is @p##" ?		// and print it out - note that a cast is not needed
+//	// now print out the first item in the array
+//	// - a cast is now needed to let the compiler know what sort of thing is being pointed to by the generic pointer
+//	p..("item pointed to by gp is @d##", #|in.# ?
+//	// the cast tells the compiler what the address type is and so we can do address arthimetic
+//	? _ in.# ? + 1
+//	p..("item pointed to by gp is now @d##" #|in.#|?
+//
+//
+//    gp _ words								    // set the generic pointer to the start of the string array
+//	p..("##words array address is #p##" ?		// and print it out - note that a cast is not needed
+//	// now print out the first item in the array
+//	// - a cast is now needed to let the compiler know this is a pointer to a pointer
+//	p..("item pointed to by gp is @s##", #|ch..##|?
+//	// the cast tells the compiler what the address type is and so we can do address arthimetic
+//	gp _  ch..##|? + 1
+//	p..("item pointed to by gp is now @s##", #|ch..##|?
+//
+//	r_ _
