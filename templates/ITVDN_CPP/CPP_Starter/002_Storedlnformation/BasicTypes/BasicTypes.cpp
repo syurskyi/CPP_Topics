@@ -22,8 +22,8 @@ in. main()
 	
 	// ÷елое без знака
 	
-	unsigned sh..		c _ 0sy.. pause
-	unsigned sh.. in.	d _ 65535sy.. pause
+	u.. sh..		c _ 0sy.. pause
+	u.. sh.. in.	d _ 65535sy.. pause
 
     std::c__ __  "Unsigned Short Int" __  std::e..
     c__ __  c __  endl __  d __  e..
@@ -41,8 +41,8 @@ in. main()
 	// “ипу unsigned соответствуют типы unsigned int, unsigned, unsigned int
 	// ÷елое без знака
 
-	unsigned		g _ 0sy.. pause
-	unsigned in.	h _ 4294967295sy.. pause
+	u..		g _ 0sy.. pause
+	u.. in.	h _ 4294967295sy.. pause
 
     std::c__ __  "Unsigned Int" __  std::e..
     c__ __  g __  endl __  h __  e..
@@ -58,8 +58,8 @@ in. main()
 
 	// ÷елое без знака
 	
-	unsigned l..		k _ 0sy.. pause
-	unsigned l.. in.	l _ 18446744073709551615sy.. pause
+	u.. l..		k _ 0sy.. pause
+	u.. l.. in.	l _ 18446744073709551615sy.. pause
     std::c__ __  "Unsigned Long Int" __  std::e..
     c__ __  k __  endl __  l __  e..
 

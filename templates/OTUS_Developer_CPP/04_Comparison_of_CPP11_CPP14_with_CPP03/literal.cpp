@@ -2,7 +2,7 @@
 
 u.. std::string_literalssy.. pause
 
-std::s.. operator""_kg(unsigned l.. l..)
+std::s.. operator""_kg(u.. l.. l..)
 {
     std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     r_ "sorok dva"sy.. pause

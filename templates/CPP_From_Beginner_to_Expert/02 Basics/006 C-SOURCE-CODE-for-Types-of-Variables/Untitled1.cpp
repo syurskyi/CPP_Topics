@@ -43,7 +43,7 @@ main()
     c__ __  t6 __  e..
 
     //for unsigned short int, 0 to 65535
-    unsigned sh.. t7 _ 3700sy.. pause
+    u.. sh.. t7 _ 3700sy.. pause
     c__ __  t7 __  e..
 
     c.. s.. NAMEOFGAME _ "Conqueror of C++"sy.. pause

@@ -3,7 +3,7 @@
 
 u.. s..
 
-typedef unsigned in. uin.sy.. pause
+typedef u.. in. uin.sy.. pause
 en.. c_ Color : l.. longsy.. pause
 
 v.. foo(Color a)sy.. pause

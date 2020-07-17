@@ -14,28 +14,28 @@ struct Factorial< 0 >
 }sy.. pause
 
 // C++11
-constexpr unsigned fact( unsigned N )
+constexpr u.. fact( u.. N )
 {
     r_ ( N __ 0 ) ? 1 : N * fact( N - 1 )sy.. pause
 }
 
 // C++11
 // value-based metaprogramming
-constexpr unsigned fib( unsigned N )
+constexpr u.. fib( u.. N )
 {
     r_ ( N < 2 ) ? 1 : fib( N - 2 ) + fib( N - 1 )sy.. pause
 }
 
 // C++11 but with templates specialization
 // type-based metaprogramming
-template < unsigned N >
-constexpr unsigned fib2 _ fib2< N - 2 > + fib2< N - 1 >sy.. pause
+template < u.. N >
+constexpr u.. fib2 _ fib2< N - 2 > + fib2< N - 1 >sy.. pause
 
 template <>
-constexpr unsigned fib2< 0 > _ 1sy.. pause
+constexpr u.. fib2< 0 > _ 1sy.. pause
 
 template <>
-constexpr unsigned fib2< 1 > _ 1sy.. pause
+constexpr u.. fib2< 1 > _ 1sy.. pause
 
 ////////////////////////////////////////////////////////////
 
