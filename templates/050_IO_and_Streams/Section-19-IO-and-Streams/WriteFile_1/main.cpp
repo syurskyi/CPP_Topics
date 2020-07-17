@@ -2,7 +2,7 @@
 // Write File
 ? ios..
 ? <fstream>
-? <string>
+? st..
 
 in. main()  {
     std::ofstream out_file {"../output.txt", std::ios::app};

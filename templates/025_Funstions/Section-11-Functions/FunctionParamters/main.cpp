@@ -1,15 +1,15 @@
 // Section 11
 // Function Parmameters
 ? ios..
-? <string>
+? st..
 ? ve..
 
 u.. s..
 
 v.. pass_by_value1(in. num);
 v.. pass_by_value2(string s);
-v.. pass_by_value3(vector<string> v);
-v.. print_vector(vector<string> v);
+v.. pass_by_value3(vectorst.. v);
+v.. print_vector(vectorst.. v);
 
 v.. pass_by_value1(in. num) {
     num = 1000;
@@ -19,11 +19,11 @@ v.. pass_by_value2(string s) {
     s = "Changed";
 }
 
-v.. pass_by_value3(vector<string> v) {
+v.. pass_by_value3(vectorst.. v) {
     v.clear();  // delete all vector elements
 }
 
-v.. print_vector(vector<string> v) {
+v.. print_vector(vectorst.. v) {
     ___ (a.. s: v)
         c.. __ s __ " ";
     c.. __ e..
@@ -46,7 +46,7 @@ in. main
     pass_by_value2(name);
     c.. __ "name after calling pass_by_value2: " __ name __ e..
 
-    vector<string> stooges {"Larry", "Moe", "Curly"};
+    vectorst.. stooges {"Larry", "Moe", "Curly"};
     c.. __ "\nstooges before calling pass_by_value3: ";
     print_vector(stooges);
     pass_by_value3(stooges);

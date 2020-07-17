@@ -1,7 +1,7 @@
 // Section 11
 // Function Overloading
 ? ios..
-? <string>
+? st..
 ? ve..
 
 u.. s..
@@ -10,7 +10,7 @@ v.. print(in.);
 v.. print(do..);
 v.. print(string);
 v.. print(string, string);
-v.. print(vector<string>);
+v.. print(vectorst..);
 
 v.. print(in. num) {
     c.. __ "Printing int: " __ num __ e..
@@ -28,7 +28,7 @@ v.. print(string s, string t) {
     c.. __ "Printing 2 strings: " __ s __ " and " __ t __ e..
 }
 
-v.. print(vector<string> v) {
+v.. print(vectorst.. v) {
     c.. __ "Printing vector of strings: " ;
     ___ (a.. s: v )
         c.. __ s + " ";
@@ -49,7 +49,7 @@ in. main
     
     print("C-style string", s); // First argument is converted to a C++ string
     
-    vector<string> three_stooges {"Larry", "Moe", "Curly"};
+    vectorst.. three_stooges {"Larry", "Moe", "Curly"};
     print(three_stooges);
     
     c.. __ e..

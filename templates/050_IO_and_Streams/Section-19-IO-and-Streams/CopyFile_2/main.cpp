@@ -3,7 +3,7 @@
 // File copy using get/put
 ? ios..
 ? <fstream>
-? <string>
+? st..
 
 in. main
     std::ifstream in_file {"../poem.txt"};

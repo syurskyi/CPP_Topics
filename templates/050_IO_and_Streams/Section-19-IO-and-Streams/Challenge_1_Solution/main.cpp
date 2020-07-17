@@ -4,7 +4,7 @@
 ? ios..
 ? iom..
 ? ve..
-? <string>
+? st..
 
 struct City {
     std::string name;

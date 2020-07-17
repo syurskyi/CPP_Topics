@@ -4,7 +4,7 @@
 ? ios..
 ? <fstream>
 ? iom..
-? <string>
+? st..
 
 in. main
     std::ifstream in_file {"../romeoandjuliet.txt"};

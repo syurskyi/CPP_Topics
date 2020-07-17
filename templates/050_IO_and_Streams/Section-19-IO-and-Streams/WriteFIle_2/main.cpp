@@ -3,7 +3,7 @@
 // File copy using getline
 ? ios..
 ? <fstream>
-? <string>
+? st..
 
 in. main
     std::ifstream in_file {"../poem.txt"};

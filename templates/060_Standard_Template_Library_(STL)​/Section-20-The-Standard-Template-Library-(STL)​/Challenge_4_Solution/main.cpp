@@ -7,7 +7,7 @@
 ? <stack>
 ? <queue>
 ? ios..
-? <string>
+? st..
 ? iom..
 
 bool is_palindrome(co.. std::string& s)

@@ -4,7 +4,7 @@
 
 ? ios..
 ? <list>
-? <string>
+? st..
 ? <cctype>
 ? iom..
 ? <limits>

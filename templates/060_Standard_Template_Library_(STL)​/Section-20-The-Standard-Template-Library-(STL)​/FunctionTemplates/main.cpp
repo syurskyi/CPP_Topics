@@ -1,7 +1,7 @@
 // Section 20
 // Function templates
 ? ios..
-? <string>
+? st..
 
 template <typename T>
 T min(T a, T b) {

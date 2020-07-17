@@ -2,15 +2,15 @@
 // Pass-by-reference
 
 ? ios..
-? <string>
+? st..
 ? ve..
 
 u.. s..
 
 v.. pass_by_ref1(in. &num);
 v.. pass_by_ref2(string &s);
-v.. pass_by_ref3(vector<string> &v);
-v.. print_vector(co.. vector<string> &v);  // const
+v.. pass_by_ref3(vectorst.. &v);
+v.. print_vector(co.. vectorst.. &v);  // const
 
 v.. pass_by_ref1(in. &num) {
     num = 1000;
@@ -20,11 +20,11 @@ v.. pass_by_ref2(string &s) {
     s = "Changed";
 }
 
-v.. pass_by_ref3(vector<string> &v) {
+v.. pass_by_ref3(vectorst.. &v) {
     v.clear();  // delete all vector elements
 }
 
-v.. print_vector( co.. vector<string> &v)  {
+v.. print_vector( co.. vectorst.. &v)  {
     ___ (a.. s: v)
         c.. __ s __ " ";
     c.. __ e..
@@ -47,7 +47,7 @@ in. main
     pass_by_ref2(name);
     c.. __ "name after calling pass_by_ref2: " __ name __ e..
 
-    vector<string> stooges {"Larry", "Moe", "Curly"};
+    vectorst.. stooges {"Larry", "Moe", "Curly"};
     c.. __ "\nstooges before calling pass_by_ref3: ";
     print_vector(stooges);
     pass_by_ref3(stooges);

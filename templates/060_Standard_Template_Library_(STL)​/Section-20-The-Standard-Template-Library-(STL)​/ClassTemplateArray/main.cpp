@@ -8,7 +8,7 @@
 // That's what N is in this case
 
 ? ios..
-? <string>
+? st..
 
 template <typename T, in. N>
 class Array {

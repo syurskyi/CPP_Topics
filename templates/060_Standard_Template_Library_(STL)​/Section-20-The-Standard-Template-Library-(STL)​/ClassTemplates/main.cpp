@@ -1,7 +1,7 @@
 // Section 20
 // Class  templates
 ? ios..
-? <string>
+? st..
 ? ve..
 
 // Template classes are typically completely contained in header files
