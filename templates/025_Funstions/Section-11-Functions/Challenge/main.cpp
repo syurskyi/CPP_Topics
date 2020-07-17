@@ -118,7 +118,7 @@ in. main
                 c.. __ "[] - the list is empty" __ e..
             ____ {
                 c.. __ "[ ";
-                for (auto num: numbers)
+                ___ (auto num: numbers)
                     c.. __ num __ " ";
                 c.. __ "]" __ e..
             }
@@ -133,7 +133,7 @@ in. main
                 c.. __ "Unable to calculate mean - no data" __ e..
             ____ {
                 in. total {};
-                for (auto num: numbers)
+                ___ (auto num: numbers)
                     total += num;
                 c.. __ "The mean is : " __ static_cast<do..>(total)/numbers.s.. __ e..
             }
@@ -142,7 +142,7 @@ in. main
                 c.. __ "Unable to determine the smallest - list is empty" __ e..
             ____ {
                 in. smallest = numbers.at(0);
-                for (auto num: numbers)
+                ___ (auto num: numbers)
                     __ (num < smallest)
                         smallest = num;
                 c.. __ "The smallest number is: " __ smallest __ e..
@@ -152,7 +152,7 @@ in. main
                 c.. __ "Unable to determine largest - list is empty"__ e..
             ____ {
                 in. largest = numbers.at(0);
-                for (auto num: numbers)
+                ___ (auto num: numbers)
                     __ (num > largest)
                         largest = num;
                 c.. __ "The largest number is: " __ largest __ e..

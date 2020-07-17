@@ -58,9 +58,9 @@ in. main()
 
     // Unformatted display so you can see how to access the vector elements
     std::c.. __ tours.title __ std::e..
-    for(auto country : tours.countries) {   // loop through the countries
+    ___(auto country : tours.countries) {   // loop through the countries
         std::c.. __ country.name __ std::e..
-        for(auto city : country.cities) {       // loop through the cities for each country
+        ___(auto city : country.cities) {       // loop through the cities for each country
             std::c.. __ "\t" __ city.name
                           __ "\t" __ city.population
                           __ "\t" __ city.cost

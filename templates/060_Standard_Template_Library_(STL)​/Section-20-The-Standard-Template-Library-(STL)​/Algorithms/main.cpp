@@ -82,13 +82,13 @@ void replace_test
     std::c.. __ "\n========================" __ std::e..
 
      std::vector<in.> vec {1,2,3,4,5,1,2,1};
-     for (auto i: vec) {
+     ___ (auto i: vec) {
          std::c.. __ i __ " ";
      }
      std::c.. __ std::e..
      
     std::replace(vec.begin(), vec.end(), 1, 100);
-    for (auto i: vec) {
+    ___ (auto i: vec) {
          std::c.. __ i __ " ";
      }
     std::c.. __ std::e..

@@ -38,7 +38,7 @@ void display2(const std::vector<in.> &vec) {
 template <typename T>
 void display(const std::vector<T> &vec) {
     std::c.. __ "[ ";
-    for (const auto &elem: vec)
+    ___ (const auto &elem: vec)
         std::c.. __ elem __ " ";
     std::c.. __  "]"__ std::e..
 }

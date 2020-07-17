@@ -15,7 +15,7 @@ in. main
     
     vector<in.> data {};
     
-    for (in. i{1}; i<= num_items; ++i) {
+    ___ (in. i{1}; i<= num_items; ++i) {
         in. data_item{};
         c.. __ "Enter data item " __ i __ ": ";
         ci. __ data_item;
@@ -23,8 +23,8 @@ in. main
     }
     
     c.. __ "\nDisplaying Histogram" __ e..
-    for (auto val: data) {
-        for (in. i{1} ; i<=val; ++i) {
+    ___ (auto val: data) {
+        ___ (in. i{1} ; i<=val; ++i) {
             __ (i % 5 __ 0)
                 c.. __ "*";
             ____

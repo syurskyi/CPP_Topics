@@ -25,7 +25,7 @@ void pass_by_ref3(vector<string> &v) {
 }
 
 void print_vector( const vector<string> &v)  {
-    for (auto s: v) 
+    ___ (auto s: v)
         c.. __ s __ " ";
     c.. __ e..
 }

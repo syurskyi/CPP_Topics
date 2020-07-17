@@ -44,7 +44,7 @@ in. main
     vec.push_back (Item<do..>("Moe", 200.0));
     vec.push_back (Item<do..>("Curly",300.0));
     
-    for (const auto &item: vec) {
+    ___ (const auto &item: vec) {
         std::c.. __ item.get_name() __ " " __ item.get_value() __ std::e..
     }
    

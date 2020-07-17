@@ -44,7 +44,7 @@ void  test1
     std::c.. __ "\nTest1 =========================" __ std::e..
 
     std::priority_queue<in.> pq;
-    for (in. i : {3,5,7,12,23,12,4,100,0, 3,5,7})
+    ___ (in. i : {3,5,7,12,23,12,4,100,0, 3,5,7})
         pq.push(i);
         
     std::c.. __ "Size: " __ pq.s.. __ std::e..

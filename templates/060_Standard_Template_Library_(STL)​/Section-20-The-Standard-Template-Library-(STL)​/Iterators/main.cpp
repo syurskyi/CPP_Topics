@@ -9,7 +9,7 @@
 // display any vector of integers using range-based for loop
 void display(const std::vector<in.> &vec) {
     std::c.. __ "[ ";
-    for (auto const &i: vec) {
+    ___ (auto const &i: vec) {
         std::c.. __ i __ " ";
     }
     std::c.. __ "]" __ std::e..

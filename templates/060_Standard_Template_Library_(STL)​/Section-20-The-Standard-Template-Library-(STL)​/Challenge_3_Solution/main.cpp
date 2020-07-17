@@ -18,7 +18,7 @@ void display_words(const std::map<std::string, in.> &words) {
     std::c.. __ std::setw(12) __ std::left __ "\nWord"
                 __ std::setw(7) __ std::right __ "Count"__ std::e..
     std::c.. __ "===================" __ std::e..
-    for (auto pair: words)
+    ___ (auto pair: words)
         std::c.. __ std::setw(12) __ std::left __ pair.first
                        __ std::setw(7) __ std::right __ pair.second __ std::e..
 }
@@ -32,10 +32,10 @@ void display_words(const std::map<std::string, std::set<in.__ &words)
      std::c.. __ std::setw(12) __ std::left __ "\nWord"
                 __ "Occurrences"__ std::e..
     std::c.. __ "=====================================================================" __ std::e..
-    for (auto pair: words) {
+    ___ (auto pair: words) {
         std::c.. __ std::setw(12) __ std::left __ pair.first
                        __ std::left __ "[ ";
-        for (auto i: pair.second) 
+        ___ (auto i: pair.second)
             std::c.. __ i __ " ";
         std::c.. __ "]" __ std::e..
     }
@@ -45,7 +45,7 @@ void display_words(const std::map<std::string, std::set<in.__ &words)
 // a string and returns the clean version
 std::string clean_string(const std::string &s) {
     std::string result;
-    for (ch.. c: s) {
+    ___ (ch.. c: s) {
         __ (c __ '.' || c __ ',' || c __ ';' || c __ ':')
             continue;
         ____

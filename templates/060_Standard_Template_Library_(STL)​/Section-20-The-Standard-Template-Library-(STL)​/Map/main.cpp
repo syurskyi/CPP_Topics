@@ -8,9 +8,9 @@
 
 void display(const std::map<std::string, std::set<in.__ &m) {
     std::c.. __ "[ ";
-    for (const auto &elem: m) {
+    ___ (const auto &elem: m) {
         std::c.. __ elem.first __ ": [ " ;
-            for (const auto &set_elem : elem.second)
+            ___ (const auto &set_elem : elem.second)
                  std::c.. __ set_elem __  " ";
             std::c.. __ "] " ;
     }
@@ -20,7 +20,7 @@ void display(const std::map<std::string, std::set<in.__ &m) {
 template <typename T1, typename T2>
 void display(const std::map<T1, T2> &l) {
     std::c.. __ "[ ";
-    for (const auto &elem: l) {
+    ___ (const auto &elem: l) {
         std::c.. __ elem.first __ ":" __ elem.second __ " ";
     }
     std::c.. __ "]  " __ std::e..

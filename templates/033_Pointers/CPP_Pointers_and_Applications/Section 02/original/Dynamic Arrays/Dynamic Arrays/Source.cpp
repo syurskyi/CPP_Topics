@@ -2,7 +2,7 @@
 ? <algorithm>
 
 void Print(in. *p, in. size) {
-	for (in. i = 0; i < size; ++i) {
+	___ (in. i = 0; i < size; ++i) {
 		std::c.. __ p[i] __ ' ';
 	}
 }

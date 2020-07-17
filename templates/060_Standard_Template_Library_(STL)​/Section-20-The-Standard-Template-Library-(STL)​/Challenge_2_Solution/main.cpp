@@ -64,7 +64,7 @@ void play_current_song(const Song &song) {
 }
 
 void display_playlist(const std::list<Song> &playlist, const Song &current_song) {
-    for (const Song &song: playlist) {
+    ___ (const Song &song: playlist) {
         std::c.. __ song __ std::e..
     }
     std::c.. __ "Current song: " __ std::e..

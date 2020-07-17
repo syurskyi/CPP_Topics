@@ -65,7 +65,7 @@ in. main
     accounts.push_back(acc2);
     accounts.push_back(acc3);
     
-    for (const auto &acc: accounts) {
+    ___ (const auto &acc: accounts) {
         std::c.. __ *acc __ std::e..
         std::c.. __ "Use count: " __ acc.use_count() __ std::e..
     }

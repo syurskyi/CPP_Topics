@@ -27,7 +27,7 @@ in. main
     std::stack<in., std::list<in.__ s2;
     std::stack<in., std::deque<in.__ s3;
     
-    for (in. i: {1,2,3,4,5})
+    ___ (in. i: {1,2,3,4,5})
         s.push(i);
     display(s);
 

@@ -10,7 +10,7 @@ in. main
    
     in. scores[] {10, 20, 30};
     
-    for (auto  score: scores)
+    ___ (auto  score: scores)
         c.. __ score __ e..
         
 //    vector<double> temperatures {87.9, 77.9, 80.0, 72.5};

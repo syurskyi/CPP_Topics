@@ -9,7 +9,7 @@
 template <typename T>
 void display(const std::deque<T> &d) {
     std::c.. __ "[";
-    for (const auto &elem: d)
+    ___ (const auto &elem: d)
         std::c.. __ elem __ " ";
     std::c.. __  "]"__ std::e..
 }
@@ -63,7 +63,7 @@ void test3
     std::vector<in.> vec {1,2,3,4,5,6,7,8,9,10};
     std::deque<in.> d;
     
-    for (const auto &elem: vec) {
+    ___ (const auto &elem: vec) {
         __ (elem % 2 __ 0)
             d.push_back(elem);
         ____
@@ -79,14 +79,14 @@ void test4
     std::vector<in.> vec {1,2,3,4,5,6,7,8,9,10};
     std::deque<in.> d;
     
-    for (const auto &elem: vec) {
+    ___ (const auto &elem: vec) {
         d.push_front(elem);
     }    
     display(d);
     
     d.clear();
     
-     for (const auto &elem: vec) {
+     ___ (const auto &elem: vec) {
         d.push_back(elem);
     }
     display(d);

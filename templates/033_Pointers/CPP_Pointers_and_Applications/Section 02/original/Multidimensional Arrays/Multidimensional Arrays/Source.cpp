@@ -1,8 +1,8 @@
 ? ios..
 
 void Print(in.(*p)[3], in. rows) {
-	for (in. i = 0; i < rows; i++) {
-		for (in. j = 0; j < 3; j++) {
+	___ (in. i = 0; i < rows; i++) {
+		___ (in. j = 0; j < 3; j++) {
 			std::c.. __ p[i][j] __ ' ' ;
 		}
 		std::c.. __ std::e..
@@ -11,8 +11,8 @@ void Print(in.(*p)[3], in. rows) {
 
 template<typename T,in. rows, in. columns>
 void Print(T(&ref)[rows][columns]) {
-	for (in. i = 0; i < rows; i++) {
-		for (in. j = 0; j < columns; j++) {
+	___ (in. i = 0; i < rows; i++) {
+		___ (in. j = 0; j < columns; j++) {
 			std::c.. __ ref[i][j] __ ' ';
 		}
 		std::c.. __ std::e..

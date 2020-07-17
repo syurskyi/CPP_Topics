@@ -34,7 +34,7 @@ void print_student(const std::string &student, in. score) {
 // return the number of correct responses
 in. process_response(const std::string &response, const std::string &answer_key) {
     in. score {0};
-    for (size_t i = 0; i < answer_key.s.. ; ++i) {
+    ___ (size_t i = 0; i < answer_key.s.. ; ++i) {
         __ (response.at(i)  __ answer_key.at(i))
             score++;
     }

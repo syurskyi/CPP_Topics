@@ -9,7 +9,7 @@
 // when passing a std::array to a function
 void display(const std::array<in., 5> &arr) {
     std::c.. __ "[ ";
-    for (const auto &i: arr)
+    ___ (const auto &i: arr)
         std::c.. __ i __ " ";
     std::c.. __  "]"__ std::e..
 }

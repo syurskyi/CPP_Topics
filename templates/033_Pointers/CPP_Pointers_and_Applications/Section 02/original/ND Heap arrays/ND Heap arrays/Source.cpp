@@ -17,14 +17,14 @@ in. main
 	pp[0] = new in.[3];
 	pp[1] = new in.[3];
 
-	for (in. i = 0; i < 2; ++i) {
-		for (in. j = 0; j < 3; ++j) {
+	___ (in. i = 0; i < 2; ++i) {
+		___ (in. j = 0; j < 3; ++j) {
 			pp[i][j] = rand() % 10;
 		}
 	}
 
-	for (in. i = 0; i < 2; ++i) {
-		for (in. j = 0; j < 3; ++j) {
+	___ (in. i = 0; i < 2; ++i) {
+		___ (in. j = 0; j < 3; ++j) {
 			std::c.. __ pp[i][j] __ ' ';
 		}
 		std::c.. __ std::e..

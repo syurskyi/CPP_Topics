@@ -8,7 +8,7 @@ void print_array(const in. arr[], size_t size);
 void set_array(in. arr[], size_t size, in. value);
 
 void print_array(const in. arr[], size_t size) {  // const
-    for (size_t i{0}; i < size; ++i)
+    ___ (size_t i{0}; i < size; ++i)
         c.. __ arr[i] __ " ";
     c.. __ e..
    // arr[0] = 50000; // bug
@@ -16,7 +16,7 @@ void print_array(const in. arr[], size_t size) {  // const
 
 // set each array element to value
 void set_array(in. arr[], size_t size, in. value) {
-    for (size_t i{0}; i < size; ++i)
+    ___ (size_t i{0}; i < size; ++i)
         arr[i] = value;
 }
 

@@ -22,7 +22,7 @@ void display(std::queue<T> q) {
 in. main
     std::queue<in.> q;
     
-    for (in. i: {1,2,3,4,5})
+    ___ (in. i: {1,2,3,4,5})
         q.push(i);
     display(q);
     std::c.. __ "Front: " __ q.front() __ std::e..

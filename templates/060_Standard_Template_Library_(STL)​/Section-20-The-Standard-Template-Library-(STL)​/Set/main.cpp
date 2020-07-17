@@ -27,7 +27,7 @@ std::ostream &operator__(std::ostream &os, const Person &p) {
 template <typename T>
 void display(const std::set<T> &l) {
     std::c.. __ "[ ";
-    for (const auto &elem: l) {
+    ___ (const auto &elem: l) {
         std::c.. __ elem __ " ";
     }
     std::c.. __ "]" __ std::e..

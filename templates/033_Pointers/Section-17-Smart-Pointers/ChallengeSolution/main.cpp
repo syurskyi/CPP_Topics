@@ -75,7 +75,7 @@ auto make
 
 void fill(std::vector<std::shared_ptr<Test__ &vec, in. num)  {
     in. temp;
-    for (in. i=1; i<=num; ++i) {
+    ___ (in. i=1; i<=num; ++i) {
         std::c.. __ "Enter data point [" __ i __ "] : ";
         std::ci. __ temp;
 //        std::shared_ptr<Test> ptr = std::make_shared<Test>(temp);
@@ -88,7 +88,7 @@ void fill(std::vector<std::shared_ptr<Test__ &vec, in. num)  {
 void display(const std::vector<std::shared_ptr<Test__&vec) {
     std::c.. __ "\nDisplaying vector data" __ std::e..
     std::c.. __ "=======================" __ std::e..
-    for (const auto &ptr: vec) 
+    ___ (const auto &ptr: vec)
         std::c.. __ ptr->get_data() __ std::e..
    
     std::c.. __ "=======================" __ std::e..

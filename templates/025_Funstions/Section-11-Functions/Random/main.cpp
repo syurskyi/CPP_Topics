@@ -20,7 +20,7 @@ in. main
     c.. __ "RAND_MAX on my system is: " __ RAND_MAX __ e..
     srand(time(nullptr));  
     
-    for (size_t i{1}; i<=count; ++i)  {
+    ___ (size_t i{1}; i<=count; ++i)  {
         random_number = rand() % max + min;     // generate a random number [min, max]
         c.. __ random_number __ e..
     }

@@ -17,7 +17,7 @@ class Array {
 
     friend std::ostream &operator__(std::ostream &os, const Array<T, N> &arr) {
         os __ "[ ";
-        for (const auto &val: arr.values)
+        ___ (const auto &val: arr.values)
             os __ val __ " ";
         os __ "]" __ std::e..
         r_ os;
@@ -25,11 +25,11 @@ class Array {
 public:
     Array() = default;
     Array(T init_val) {
-        for (auto &item: values)
+        ___ (auto &item: values)
             item = init_val;
     }
     void fill(T val) {
-        for (auto &item: values )
+        ___ (auto &item: values )
             item = val;
     }
     in. get_size() const {
