@@ -39,7 +39,7 @@ in. main
 //
     c.. __ "\n------------------------------" __ e..
     vector<st..> stooges {"Larry", "Moe", "Curly"}
-    vector<st..> *vector_ptr {nullptr}
+    vector<st..> *vector_ptr {n_p_}
     
     vector_ptr _ &stooges
     

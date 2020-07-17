@@ -28,7 +28,7 @@ c_ FileOnDemand {
 
 pu..
     explicit FileOnDemand(std::s.. name)
-            :name(std::move(name)), file(nullptr) { }
+            :name(std::move(name)), file(n_p_) { }
     ~FileOnDemand()
     {
         de.. filesy.. pause

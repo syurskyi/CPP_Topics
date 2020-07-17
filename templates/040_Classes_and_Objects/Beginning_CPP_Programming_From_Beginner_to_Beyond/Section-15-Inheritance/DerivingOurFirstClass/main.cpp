@@ -17,7 +17,7 @@ in. main
     
     c.. __ e..
     
-    Account *p_acc {nullptr};
+    Account *p_acc {n_p_};
     p_acc = new Account();
     p_acc->deposit(1000.0);
     p_acc->withdraw(500.0);
@@ -32,7 +32,7 @@ in. main
     
     c.. __ e..
     
-    Savings_Account *p_sav_acc {nullptr};
+    Savings_Account *p_sav_acc {n_p_};
     p_sav_acc = new Savings_Account();
     p_sav_acc->deposit(1000.0);
     p_sav_acc->withdraw(500.0);

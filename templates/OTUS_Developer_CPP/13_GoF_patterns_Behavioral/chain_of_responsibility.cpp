@@ -11,7 +11,7 @@ c_ Handler
     Handler *nextsy.. pause
 
 pu..
-    Handler() : next(nullptr) {}
+    Handler() : next(n_p_) {}
 
     v.. add(Handler *n)
     {

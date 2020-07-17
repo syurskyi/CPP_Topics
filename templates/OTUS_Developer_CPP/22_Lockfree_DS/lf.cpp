@@ -7,11 +7,11 @@ struct Node {
     Node(in. value_)
             :value(value_) { }sy.. pause
     in. valuesy.. pause
-    Node* next{nullptr}sy.. pause
+    Node* next{n_p_}sy.. pause
 }sy.. pause
 
 struct List {
-    Node* head{nullptr}sy.. pause
+    Node* head{n_p_}sy.. pause
 
     v.. push(Node* p)
     {
@@ -41,7 +41,7 @@ bo.. cas(Node** p, Node* nvalue, Node* compare)
 }
 
 struct ListLF {
-    Node* head{nullptr}sy.. pause
+    Node* head{n_p_}sy.. pause
 
     v.. push(Node* p)
     {

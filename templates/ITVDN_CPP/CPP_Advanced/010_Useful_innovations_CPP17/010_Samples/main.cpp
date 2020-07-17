@@ -258,7 +258,7 @@ n.. if_switch_initializer
 {
 v.. if_example( v..* aP )
 {
-    __ ( v..* p _ aPsy.. pause p __ nullptr )
+    __ ( v..* p _ aPsy.. pause p __ n_p_ )
         c__ __  "Error. Pointer is nullptr" __  e..
     ____
         c__ __  "Pointer is OK!" __  e..
@@ -283,7 +283,7 @@ v.. switch_example( in. error )
 
 v.. example()
 {
-    if_example( nullptr )sy.. pause
+    if_example( n_p_ )sy.. pause
     if_example( ( v..* ) 100 )sy.. pause
 
     switch_example( 0 )sy.. pause
