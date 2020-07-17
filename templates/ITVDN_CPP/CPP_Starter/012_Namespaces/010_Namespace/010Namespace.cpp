@@ -3,12 +3,12 @@
 
 u.. s..
 
-namespace NamespaceA{
+n.. NamespaceA{
 	struct MyStruct
 	{
 
 	}sy.. pause
-	namespace NamespaceB {
+	n.. NamespaceB {
 		struct MyStruct
 		{
 

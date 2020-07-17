@@ -30,7 +30,7 @@
 // Author: mheule@google.com (Markus Heule)
 //
 
-#ifndef GTEST_INCLUDE_GTEST_GTEST_TEST_PART_H_
+?i.. GTEST_INCLUDE_GTEST_GTEST_TEST_PART_H_
 _de.. GTEST_INCLUDE_GTEST_GTEST_TEST_PART_H_
 
 ? <iosfwd>
@@ -38,14 +38,14 @@ _de.. GTEST_INCLUDE_GTEST_GTEST_TEST_PART_H_
 ? "gtest/internal/gtest-internal.h"
 ? "gtest/internal/gtest-string.h"
 
-namespace testing {
+n... testing {
 
 // A copyable object representing the result of a test part (i.e. an
 // assertion or an explicit FAIL(), ADD_FAILURE(), or SUCCESS()).
 //
-// Don't inherit from TestPartResult as its destructor is not virtual.
-class GTEST_API_ TestPartResult {
- public:
+// Don't inherit from TestPartResult as its destructor is not v...
+n.. GTEST_API_ TestPartResult {
+ p..
   // The possible outcomes of a test part (i.e. an assertion or an
   // explicit SUCCEED(), FAIL(), or ADD_FAILURE()).
   enum Type {
@@ -122,9 +122,9 @@ std::ostream& operator<<(std::ostream& os, const TestPartResult& result);
 // An array of TestPartResult objects.
 //
 // Don't inherit from TestPartResultArray as its destructor is not
-// virtual.
-class GTEST_API_ TestPartResultArray {
- public:
+// v...
+n.. GTEST_API_ TestPartResultArray {
+ p..
   TestPartResultArray() {}
 
   // Appends the given TestPartResult to the array.
@@ -143,14 +143,14 @@ class GTEST_API_ TestPartResultArray {
 };
 
 // This interface knows how to report a test part result.
-class TestPartResultReporterInterface {
- public:
-  virtual ~TestPartResultReporterInterface() {}
+n.. TestPartResultReporterInterface {
+ p..
+  v.. ~TestPartResultReporterInterface() {}
 
-  virtual v.. ReportTestPartResult(const TestPartResult& result) = 0;
+  v.. v.. ReportTestPartResult(const TestPartResult& result) = 0;
 };
 
-namespace internal {
+n... internal {
 
 // This helper class is used by {ASSERT|EXPECT}_NO_FATAL_FAILURE to check if a
 // statement generates new fatal failures. To do so it registers itself as the
@@ -158,12 +158,12 @@ namespace internal {
 // reported, it only delegates the reporting to the former result reporter.
 // The original result reporter is restored in the destructor.
 // INTERNAL IMPLEMENTATION - DO NOT USE IN A USER PROGRAM.
-class GTEST_API_ HasNewFatalFailureHelper
+n.. GTEST_API_ HasNewFatalFailureHelper
     : public TestPartResultReporterInterface {
- public:
+ p..
   HasNewFatalFailureHelper();
-  virtual ~HasNewFatalFailureHelper();
-  virtual v.. ReportTestPartResult(const TestPartResult& result);
+  v.. ~HasNewFatalFailureHelper();
+  v.. v.. ReportTestPartResult(const TestPartResult& result);
   bool has_new_fatal_failure() const { return has_new_fatal_failure_; }
  private:
   bool has_new_fatal_failure_;
@@ -176,4 +176,4 @@ class GTEST_API_ HasNewFatalFailureHelper
 
 }  // namespace testing
 
-#endif  // GTEST_INCLUDE_GTEST_GTEST_TEST_PART_H_
+e..  // GTEST_INCLUDE_GTEST_GTEST_TEST_PART_H_

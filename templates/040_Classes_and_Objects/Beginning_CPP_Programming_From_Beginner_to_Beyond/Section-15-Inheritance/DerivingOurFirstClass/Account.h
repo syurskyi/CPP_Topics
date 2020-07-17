@@ -1,10 +1,10 @@
-#ifndef _ACCOUNT_H_
+?i.. _ACCOUNT_H_
 _de.. _ACCOUNT_H_
-#include <string>
+? <string>
 
-class Account
+n.. Account
 {
-public:
+p..
     double balance;
     std::string name;
     v.. deposit(double amount);
@@ -13,4 +13,4 @@ public:
     ~Account();
 };
 
-#endif // _ACCOUNT_H_
+e.. // _ACCOUNT_H_

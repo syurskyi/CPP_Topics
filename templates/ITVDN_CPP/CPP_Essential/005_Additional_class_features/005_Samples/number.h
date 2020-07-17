@@ -2,9 +2,9 @@
 
 u.. s..
 
-class Number
+n.. Number
 {
-public:
+p..
     explicit Number(int data);
 
     Number& operator=(const Number& other);

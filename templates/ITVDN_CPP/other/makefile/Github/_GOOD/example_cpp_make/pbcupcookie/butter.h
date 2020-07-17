@@ -1,5 +1,5 @@
-class Butter {
-public:
+n.. Butter {
+p..
     Butter();
 };
 

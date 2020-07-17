@@ -1,8 +1,8 @@
 ? "chocolate.h"
 ? "peanut.h"
 
-class PeanutButterCup {
-public:
+n.. PeanutButterCup {
+p..
     PeanutButterCup(Chocolate& c, Peanut& p);
 private:
     Chocolate c_;

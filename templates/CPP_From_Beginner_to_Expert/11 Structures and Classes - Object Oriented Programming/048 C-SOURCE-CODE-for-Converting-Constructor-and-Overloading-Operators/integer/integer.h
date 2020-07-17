@@ -1,10 +1,10 @@
-#ifndef INTEGER_H_INCLUDED
+?i.. INTEGER_H_INCLUDED
 _de.. INTEGER_H_INCLUDED
 
-class Integer
+n.. Integer
 {
     int nr;
-    public:
+    p..
         Integer() { };
         Integer(int);
         operator int();
@@ -13,4 +13,4 @@ class Integer
 };
 
 
-#endif // INTEGER_H_INCLUDED
+e.. // INTEGER_H_INCLUDED

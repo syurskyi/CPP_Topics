@@ -1,12 +1,12 @@
-#ifndef INLINEVARIABLES_H
+?i.. INLINEVARIABLES_H
 _de.. INLINEVARIABLES_H
 
-class InlineVariables
+n.. InlineVariables
 {
-public:
+p..
     InlineVariables();
 
     static int var; // could be inline
 };
 
-#endif // INLINEVARIABLES_H
+e.. // INLINEVARIABLES_H

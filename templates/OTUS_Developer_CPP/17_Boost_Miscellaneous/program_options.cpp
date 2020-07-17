@@ -3,7 +3,7 @@
 ? <boost/program_options.hpp>
 ? |i..
 
-namespace po _ boost::program_optionssy.. pause
+n.. po _ boost::program_optionssy.. pause
 
 v.. set_bulk(size_t bulk) {
     std::c__ __  "bulk size is " __  bulk __  std::e..

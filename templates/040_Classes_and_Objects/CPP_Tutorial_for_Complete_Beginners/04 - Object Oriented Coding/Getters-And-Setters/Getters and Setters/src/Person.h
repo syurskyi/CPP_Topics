@@ -5,23 +5,23 @@
  *      Author: johnwpurcell
  */
 
-#ifndef PERSON_H_
+?i.. PERSON_H_
 _de.. PERSON_H_
 
 
-#include <iostream>
+? ios..
 
-using namespace std;
+u... s..
 
-class Person {
+n.. Person {
 private:
 	string name;
 
-public:
+p..
 	Person();
 	string toString();
 	v.. setName(string newName);
 	string getName();
 };
 
-#endif /* PERSON_H_ */
+e.. /* PERSON_H_ */

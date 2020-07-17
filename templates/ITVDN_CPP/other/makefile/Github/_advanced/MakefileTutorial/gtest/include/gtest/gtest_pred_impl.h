@@ -32,12 +32,12 @@
 //
 // Implements a family of generic predicate assertion macros.
 
-#ifndef GTEST_INCLUDE_GTEST_GTEST_PRED_IMPL_H_
+?i.. GTEST_INCLUDE_GTEST_GTEST_PRED_IMPL_H_
 _de.. GTEST_INCLUDE_GTEST_GTEST_PRED_IMPL_H_
 
 ? "gtest/gtest.h"
 
-namespace testing {
+n... testing {
 
 // This header implements a family of generic predicate assertion
 // macros:
@@ -354,4 +354,4 @@ _de.. ASSERT_PRED5(pred, v1, v2, v3, v4, v5) \
 
 }  // namespace testing
 
-#endif  // GTEST_INCLUDE_GTEST_GTEST_PRED_IMPL_H_
+e..  // GTEST_INCLUDE_GTEST_GTEST_PRED_IMPL_H_

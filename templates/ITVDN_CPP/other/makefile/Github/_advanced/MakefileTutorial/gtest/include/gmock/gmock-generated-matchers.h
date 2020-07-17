@@ -35,7 +35,7 @@
 //
 // This file implements some commonly used variadic matchers.
 
-#ifndef GMOCK_INCLUDE_GMOCK_GMOCK_GENERATED_MATCHERS_H_
+?i.. GMOCK_INCLUDE_GMOCK_GMOCK_GENERATED_MATCHERS_H_
 _de.. GMOCK_INCLUDE_GMOCK_GMOCK_GENERATED_MATCHERS_H_
 
 ? <iterator>
@@ -44,8 +44,8 @@ _de.. GMOCK_INCLUDE_GMOCK_GMOCK_GENERATED_MATCHERS_H_
 ? <vector>
 ? "gmock/gmock-matchers.h"
 
-namespace testing {
-namespace internal {
+n... testing {
+n... internal {
 
 // The type of the i-th (0-based) field of Tuple.
 _de.. GMOCK_FIELD_TYPE_(Tuple, i) \
@@ -62,16 +62,16 @@ _de.. GMOCK_FIELD_TYPE_(Tuple, i) \
 //   type is tuple<int, bool>, and
 //   GetSelectedFields(make_tuple(true, 'a', 42)) is (42, true).
 
-template <class Tuple, int k0 = -1, int k1 = -1, int k2 = -1, int k3 = -1,
+template <n.. Tuple, int k0 = -1, int k1 = -1, int k2 = -1, int k3 = -1,
     int k4 = -1, int k5 = -1, int k6 = -1, int k7 = -1, int k8 = -1,
     int k9 = -1>
-class TupleFields;
+n.. TupleFields;
 
 // This generic version is used when there are 10 selectors.
-template <class Tuple, int k0, int k1, int k2, int k3, int k4, int k5, int k6,
+template <n.. Tuple, int k0, int k1, int k2, int k3, int k4, int k5, int k6,
     int k7, int k8, int k9>
-class TupleFields {
- public:
+n.. TupleFields {
+ p..
   typedef ::testing::tuple<GMOCK_FIELD_TYPE_(Tuple, k0),
       GMOCK_FIELD_TYPE_(Tuple, k1), GMOCK_FIELD_TYPE_(Tuple, k2),
       GMOCK_FIELD_TYPE_(Tuple, k3), GMOCK_FIELD_TYPE_(Tuple, k4),
@@ -86,27 +86,27 @@ class TupleFields {
 
 // The following specialization is used for 0 ~ 9 selectors.
 
-template <class Tuple>
-class TupleFields<Tuple, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1> {
- public:
+template <n.. Tuple>
+n.. TupleFields<Tuple, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1> {
+ p..
   typedef ::testing::tuple<> type;
   static type GetSelectedFields(const Tuple& /* t */) {
     return type();
   }
 };
 
-template <class Tuple, int k0>
-class TupleFields<Tuple, k0, -1, -1, -1, -1, -1, -1, -1, -1, -1> {
- public:
+template <n.. Tuple, int k0>
+n.. TupleFields<Tuple, k0, -1, -1, -1, -1, -1, -1, -1, -1, -1> {
+ p..
   typedef ::testing::tuple<GMOCK_FIELD_TYPE_(Tuple, k0)> type;
   static type GetSelectedFields(const Tuple& t) {
     return type(get<k0>(t));
   }
 };
 
-template <class Tuple, int k0, int k1>
-class TupleFields<Tuple, k0, k1, -1, -1, -1, -1, -1, -1, -1, -1> {
- public:
+template <n.. Tuple, int k0, int k1>
+n.. TupleFields<Tuple, k0, k1, -1, -1, -1, -1, -1, -1, -1, -1> {
+ p..
   typedef ::testing::tuple<GMOCK_FIELD_TYPE_(Tuple, k0),
       GMOCK_FIELD_TYPE_(Tuple, k1)> type;
   static type GetSelectedFields(const Tuple& t) {
@@ -114,9 +114,9 @@ class TupleFields<Tuple, k0, k1, -1, -1, -1, -1, -1, -1, -1, -1> {
   }
 };
 
-template <class Tuple, int k0, int k1, int k2>
-class TupleFields<Tuple, k0, k1, k2, -1, -1, -1, -1, -1, -1, -1> {
- public:
+template <n.. Tuple, int k0, int k1, int k2>
+n.. TupleFields<Tuple, k0, k1, k2, -1, -1, -1, -1, -1, -1, -1> {
+ p..
   typedef ::testing::tuple<GMOCK_FIELD_TYPE_(Tuple, k0),
       GMOCK_FIELD_TYPE_(Tuple, k1), GMOCK_FIELD_TYPE_(Tuple, k2)> type;
   static type GetSelectedFields(const Tuple& t) {
@@ -124,9 +124,9 @@ class TupleFields<Tuple, k0, k1, k2, -1, -1, -1, -1, -1, -1, -1> {
   }
 };
 
-template <class Tuple, int k0, int k1, int k2, int k3>
-class TupleFields<Tuple, k0, k1, k2, k3, -1, -1, -1, -1, -1, -1> {
- public:
+template <n.. Tuple, int k0, int k1, int k2, int k3>
+n.. TupleFields<Tuple, k0, k1, k2, k3, -1, -1, -1, -1, -1, -1> {
+ p..
   typedef ::testing::tuple<GMOCK_FIELD_TYPE_(Tuple, k0),
       GMOCK_FIELD_TYPE_(Tuple, k1), GMOCK_FIELD_TYPE_(Tuple, k2),
       GMOCK_FIELD_TYPE_(Tuple, k3)> type;
@@ -135,9 +135,9 @@ class TupleFields<Tuple, k0, k1, k2, k3, -1, -1, -1, -1, -1, -1> {
   }
 };
 
-template <class Tuple, int k0, int k1, int k2, int k3, int k4>
-class TupleFields<Tuple, k0, k1, k2, k3, k4, -1, -1, -1, -1, -1> {
- public:
+template <n.. Tuple, int k0, int k1, int k2, int k3, int k4>
+n.. TupleFields<Tuple, k0, k1, k2, k3, k4, -1, -1, -1, -1, -1> {
+ p..
   typedef ::testing::tuple<GMOCK_FIELD_TYPE_(Tuple, k0),
       GMOCK_FIELD_TYPE_(Tuple, k1), GMOCK_FIELD_TYPE_(Tuple, k2),
       GMOCK_FIELD_TYPE_(Tuple, k3), GMOCK_FIELD_TYPE_(Tuple, k4)> type;
@@ -146,9 +146,9 @@ class TupleFields<Tuple, k0, k1, k2, k3, k4, -1, -1, -1, -1, -1> {
   }
 };
 
-template <class Tuple, int k0, int k1, int k2, int k3, int k4, int k5>
-class TupleFields<Tuple, k0, k1, k2, k3, k4, k5, -1, -1, -1, -1> {
- public:
+template <n.. Tuple, int k0, int k1, int k2, int k3, int k4, int k5>
+n.. TupleFields<Tuple, k0, k1, k2, k3, k4, k5, -1, -1, -1, -1> {
+ p..
   typedef ::testing::tuple<GMOCK_FIELD_TYPE_(Tuple, k0),
       GMOCK_FIELD_TYPE_(Tuple, k1), GMOCK_FIELD_TYPE_(Tuple, k2),
       GMOCK_FIELD_TYPE_(Tuple, k3), GMOCK_FIELD_TYPE_(Tuple, k4),
@@ -159,9 +159,9 @@ class TupleFields<Tuple, k0, k1, k2, k3, k4, k5, -1, -1, -1, -1> {
   }
 };
 
-template <class Tuple, int k0, int k1, int k2, int k3, int k4, int k5, int k6>
-class TupleFields<Tuple, k0, k1, k2, k3, k4, k5, k6, -1, -1, -1> {
- public:
+template <n.. Tuple, int k0, int k1, int k2, int k3, int k4, int k5, int k6>
+n.. TupleFields<Tuple, k0, k1, k2, k3, k4, k5, k6, -1, -1, -1> {
+ p..
   typedef ::testing::tuple<GMOCK_FIELD_TYPE_(Tuple, k0),
       GMOCK_FIELD_TYPE_(Tuple, k1), GMOCK_FIELD_TYPE_(Tuple, k2),
       GMOCK_FIELD_TYPE_(Tuple, k3), GMOCK_FIELD_TYPE_(Tuple, k4),
@@ -172,10 +172,10 @@ class TupleFields<Tuple, k0, k1, k2, k3, k4, k5, k6, -1, -1, -1> {
   }
 };
 
-template <class Tuple, int k0, int k1, int k2, int k3, int k4, int k5, int k6,
+template <n.. Tuple, int k0, int k1, int k2, int k3, int k4, int k5, int k6,
     int k7>
-class TupleFields<Tuple, k0, k1, k2, k3, k4, k5, k6, k7, -1, -1> {
- public:
+n.. TupleFields<Tuple, k0, k1, k2, k3, k4, k5, k6, k7, -1, -1> {
+ p..
   typedef ::testing::tuple<GMOCK_FIELD_TYPE_(Tuple, k0),
       GMOCK_FIELD_TYPE_(Tuple, k1), GMOCK_FIELD_TYPE_(Tuple, k2),
       GMOCK_FIELD_TYPE_(Tuple, k3), GMOCK_FIELD_TYPE_(Tuple, k4),
@@ -187,10 +187,10 @@ class TupleFields<Tuple, k0, k1, k2, k3, k4, k5, k6, k7, -1, -1> {
   }
 };
 
-template <class Tuple, int k0, int k1, int k2, int k3, int k4, int k5, int k6,
+template <n.. Tuple, int k0, int k1, int k2, int k3, int k4, int k5, int k6,
     int k7, int k8>
-class TupleFields<Tuple, k0, k1, k2, k3, k4, k5, k6, k7, k8, -1> {
- public:
+n.. TupleFields<Tuple, k0, k1, k2, k3, k4, k5, k6, k7, k8, -1> {
+ p..
   typedef ::testing::tuple<GMOCK_FIELD_TYPE_(Tuple, k0),
       GMOCK_FIELD_TYPE_(Tuple, k1), GMOCK_FIELD_TYPE_(Tuple, k2),
       GMOCK_FIELD_TYPE_(Tuple, k3), GMOCK_FIELD_TYPE_(Tuple, k4),
@@ -205,11 +205,11 @@ class TupleFields<Tuple, k0, k1, k2, k3, k4, k5, k6, k7, k8, -1> {
 #undef GMOCK_FIELD_TYPE_
 
 // Implements the Args() matcher.
-template <class ArgsTuple, int k0 = -1, int k1 = -1, int k2 = -1, int k3 = -1,
+template <n.. ArgsTuple, int k0 = -1, int k1 = -1, int k2 = -1, int k3 = -1,
     int k4 = -1, int k5 = -1, int k6 = -1, int k7 = -1, int k8 = -1,
     int k9 = -1>
-class ArgsMatcherImpl : public MatcherInterface<ArgsTuple> {
- public:
+n.. ArgsMatcherImpl : public MatcherInterface<ArgsTuple> {
+ p..
   // ArgsTuple may have top-level const or reference modifiers.
   typedef GTEST_REMOVE_REFERENCE_AND_CONST_(ArgsTuple) RawArgsTuple;
   typedef typename internal::TupleFields<RawArgsTuple, k0, k1, k2, k3, k4, k5,
@@ -220,7 +220,7 @@ class ArgsMatcherImpl : public MatcherInterface<ArgsTuple> {
   explicit ArgsMatcherImpl(const InnerMatcher& inner_matcher)
       : inner_matcher_(SafeMatcherCast<const SelectedArgs&>(inner_matcher)) {}
 
-  virtual bool MatchAndExplain(ArgsTuple args,
+  v.. bool MatchAndExplain(ArgsTuple args,
                                MatchResultListener* listener) const {
     const SelectedArgs& selected_args = GetSelectedArgs(args);
     if (!listener->IsInterested())
@@ -236,13 +236,13 @@ class ArgsMatcherImpl : public MatcherInterface<ArgsTuple> {
     return match;
   }
 
-  virtual v.. DescribeTo(::std::ostream* os) const {
+  v.. v.. DescribeTo(::std::ostream* os) const {
     *os << "are a tuple ";
     PrintIndices(os);
     inner_matcher_.DescribeTo(os);
   }
 
-  virtual v.. DescribeNegationTo(::std::ostream* os) const {
+  v.. v.. DescribeNegationTo(::std::ostream* os) const {
     *os << "are a tuple ";
     PrintIndices(os);
     inner_matcher_.DescribeNegationTo(os);
@@ -275,11 +275,11 @@ class ArgsMatcherImpl : public MatcherInterface<ArgsTuple> {
   GTEST_DISALLOW_ASSIGN_(ArgsMatcherImpl);
 };
 
-template <class InnerMatcher, int k0 = -1, int k1 = -1, int k2 = -1,
+template <n.. InnerMatcher, int k0 = -1, int k1 = -1, int k2 = -1,
     int k3 = -1, int k4 = -1, int k5 = -1, int k6 = -1, int k7 = -1,
     int k8 = -1, int k9 = -1>
-class ArgsMatcher {
- public:
+n.. ArgsMatcher {
+ p..
   explicit ArgsMatcher(const InnerMatcher& inner_matcher)
       : inner_matcher_(inner_matcher) {}
 
@@ -1383,21 +1383,21 @@ AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8, M9 m9, M10 m10) {
 // CookBook.md
 
 _de.. MATCHER(name, description)\
-  class name##Matcher {\
-   public:\
+  n.. name##Matcher {\
+   p..\
     template <typename arg_type>\
-    class gmock_Impl : public ::testing::MatcherInterface<\
+    n.. gmock_Impl : public ::testing::MatcherInterface<\
         GTEST_REFERENCE_TO_CONST_(arg_type)> {\
-     public:\
+     p..\
       gmock_Impl()\
            {}\
-      virtual bool MatchAndExplain(\
+      v.. bool MatchAndExplain(\
           GTEST_REFERENCE_TO_CONST_(arg_type) arg,\
           ::testing::MatchResultListener* result_listener) const;\
-      virtual v.. DescribeTo(::std::ostream* gmock_os) const {\
+      v.. v.. DescribeTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(false);\
       }\
-      virtual v.. DescribeNegationTo(::std::ostream* gmock_os) const {\
+      v.. v.. DescribeNegationTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(true);\
       }\
      private:\
@@ -1431,21 +1431,21 @@ _de.. MATCHER(name, description)\
 
 _de.. MATCHER_P(name, p0, description)\
   template <typename p0##_type>\
-  class name##MatcherP {\
-   public:\
+  n.. name##MatcherP {\
+   p..\
     template <typename arg_type>\
-    class gmock_Impl : public ::testing::MatcherInterface<\
+    n.. gmock_Impl : public ::testing::MatcherInterface<\
         GTEST_REFERENCE_TO_CONST_(arg_type)> {\
-     public:\
+     p..\
       explicit gmock_Impl(p0##_type gmock_p0)\
            : p0(::testing::internal::move(gmock_p0)) {}\
-      virtual bool MatchAndExplain(\
+      v.. bool MatchAndExplain(\
           GTEST_REFERENCE_TO_CONST_(arg_type) arg,\
           ::testing::MatchResultListener* result_listener) const;\
-      virtual v.. DescribeTo(::std::ostream* gmock_os) const {\
+      v.. v.. DescribeTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(false);\
       }\
-      virtual v.. DescribeNegationTo(::std::ostream* gmock_os) const {\
+      v.. v.. DescribeNegationTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(true);\
       }\
       p0##_type const p0;\
@@ -1484,22 +1484,22 @@ _de.. MATCHER_P(name, p0, description)\
 
 _de.. MATCHER_P2(name, p0, p1, description)\
   template <typename p0##_type, typename p1##_type>\
-  class name##MatcherP2 {\
-   public:\
+  n.. name##MatcherP2 {\
+   p..\
     template <typename arg_type>\
-    class gmock_Impl : public ::testing::MatcherInterface<\
+    n.. gmock_Impl : public ::testing::MatcherInterface<\
         GTEST_REFERENCE_TO_CONST_(arg_type)> {\
-     public:\
+     p..\
       gmock_Impl(p0##_type gmock_p0, p1##_type gmock_p1)\
            : p0(::testing::internal::move(gmock_p0)), \
                p1(::testing::internal::move(gmock_p1)) {}\
-      virtual bool MatchAndExplain(\
+      v.. bool MatchAndExplain(\
           GTEST_REFERENCE_TO_CONST_(arg_type) arg,\
           ::testing::MatchResultListener* result_listener) const;\
-      virtual v.. DescribeTo(::std::ostream* gmock_os) const {\
+      v.. v.. DescribeTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(false);\
       }\
-      virtual v.. DescribeNegationTo(::std::ostream* gmock_os) const {\
+      v.. v.. DescribeNegationTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(true);\
       }\
       p0##_type const p0;\
@@ -1543,23 +1543,23 @@ _de.. MATCHER_P2(name, p0, p1, description)\
 
 _de.. MATCHER_P3(name, p0, p1, p2, description)\
   template <typename p0##_type, typename p1##_type, typename p2##_type>\
-  class name##MatcherP3 {\
-   public:\
+  n.. name##MatcherP3 {\
+   p..\
     template <typename arg_type>\
-    class gmock_Impl : public ::testing::MatcherInterface<\
+    n.. gmock_Impl : public ::testing::MatcherInterface<\
         GTEST_REFERENCE_TO_CONST_(arg_type)> {\
-     public:\
+     p..\
       gmock_Impl(p0##_type gmock_p0, p1##_type gmock_p1, p2##_type gmock_p2)\
            : p0(::testing::internal::move(gmock_p0)), \
                p1(::testing::internal::move(gmock_p1)), \
                p2(::testing::internal::move(gmock_p2)) {}\
-      virtual bool MatchAndExplain(\
+      v.. bool MatchAndExplain(\
           GTEST_REFERENCE_TO_CONST_(arg_type) arg,\
           ::testing::MatchResultListener* result_listener) const;\
-      virtual v.. DescribeTo(::std::ostream* gmock_os) const {\
+      v.. v.. DescribeTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(false);\
       }\
-      virtual v.. DescribeNegationTo(::std::ostream* gmock_os) const {\
+      v.. v.. DescribeNegationTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(true);\
       }\
       p0##_type const p0;\
@@ -1608,25 +1608,25 @@ _de.. MATCHER_P3(name, p0, p1, p2, description)\
 _de.. MATCHER_P4(name, p0, p1, p2, p3, description)\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
       typename p3##_type>\
-  class name##MatcherP4 {\
-   public:\
+  n.. name##MatcherP4 {\
+   p..\
     template <typename arg_type>\
-    class gmock_Impl : public ::testing::MatcherInterface<\
+    n.. gmock_Impl : public ::testing::MatcherInterface<\
         GTEST_REFERENCE_TO_CONST_(arg_type)> {\
-     public:\
+     p..\
       gmock_Impl(p0##_type gmock_p0, p1##_type gmock_p1, p2##_type gmock_p2, \
           p3##_type gmock_p3)\
            : p0(::testing::internal::move(gmock_p0)), \
                p1(::testing::internal::move(gmock_p1)), \
                p2(::testing::internal::move(gmock_p2)), \
                p3(::testing::internal::move(gmock_p3)) {}\
-      virtual bool MatchAndExplain(\
+      v.. bool MatchAndExplain(\
           GTEST_REFERENCE_TO_CONST_(arg_type) arg,\
           ::testing::MatchResultListener* result_listener) const;\
-      virtual v.. DescribeTo(::std::ostream* gmock_os) const {\
+      v.. v.. DescribeTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(false);\
       }\
-      virtual v.. DescribeNegationTo(::std::ostream* gmock_os) const {\
+      v.. v.. DescribeNegationTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(true);\
       }\
       p0##_type const p0;\
@@ -1683,12 +1683,12 @@ _de.. MATCHER_P4(name, p0, p1, p2, p3, description)\
 _de.. MATCHER_P5(name, p0, p1, p2, p3, p4, description)\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
       typename p3##_type, typename p4##_type>\
-  class name##MatcherP5 {\
-   public:\
+  n.. name##MatcherP5 {\
+   p..\
     template <typename arg_type>\
-    class gmock_Impl : public ::testing::MatcherInterface<\
+    n.. gmock_Impl : public ::testing::MatcherInterface<\
         GTEST_REFERENCE_TO_CONST_(arg_type)> {\
-     public:\
+     p..\
       gmock_Impl(p0##_type gmock_p0, p1##_type gmock_p1, p2##_type gmock_p2, \
           p3##_type gmock_p3, p4##_type gmock_p4)\
            : p0(::testing::internal::move(gmock_p0)), \
@@ -1696,13 +1696,13 @@ _de.. MATCHER_P5(name, p0, p1, p2, p3, p4, description)\
                p2(::testing::internal::move(gmock_p2)), \
                p3(::testing::internal::move(gmock_p3)), \
                p4(::testing::internal::move(gmock_p4)) {}\
-      virtual bool MatchAndExplain(\
+      v.. bool MatchAndExplain(\
           GTEST_REFERENCE_TO_CONST_(arg_type) arg,\
           ::testing::MatchResultListener* result_listener) const;\
-      virtual v.. DescribeTo(::std::ostream* gmock_os) const {\
+      v.. v.. DescribeTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(false);\
       }\
-      virtual v.. DescribeNegationTo(::std::ostream* gmock_os) const {\
+      v.. v.. DescribeNegationTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(true);\
       }\
       p0##_type const p0;\
@@ -1762,12 +1762,12 @@ _de.. MATCHER_P5(name, p0, p1, p2, p3, p4, description)\
 _de.. MATCHER_P6(name, p0, p1, p2, p3, p4, p5, description)\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
       typename p3##_type, typename p4##_type, typename p5##_type>\
-  class name##MatcherP6 {\
-   public:\
+  n.. name##MatcherP6 {\
+   p..\
     template <typename arg_type>\
-    class gmock_Impl : public ::testing::MatcherInterface<\
+    n.. gmock_Impl : public ::testing::MatcherInterface<\
         GTEST_REFERENCE_TO_CONST_(arg_type)> {\
-     public:\
+     p..\
       gmock_Impl(p0##_type gmock_p0, p1##_type gmock_p1, p2##_type gmock_p2, \
           p3##_type gmock_p3, p4##_type gmock_p4, p5##_type gmock_p5)\
            : p0(::testing::internal::move(gmock_p0)), \
@@ -1776,13 +1776,13 @@ _de.. MATCHER_P6(name, p0, p1, p2, p3, p4, p5, description)\
                p3(::testing::internal::move(gmock_p3)), \
                p4(::testing::internal::move(gmock_p4)), \
                p5(::testing::internal::move(gmock_p5)) {}\
-      virtual bool MatchAndExplain(\
+      v.. bool MatchAndExplain(\
           GTEST_REFERENCE_TO_CONST_(arg_type) arg,\
           ::testing::MatchResultListener* result_listener) const;\
-      virtual v.. DescribeTo(::std::ostream* gmock_os) const {\
+      v.. v.. DescribeTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(false);\
       }\
-      virtual v.. DescribeNegationTo(::std::ostream* gmock_os) const {\
+      v.. v.. DescribeNegationTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(true);\
       }\
       p0##_type const p0;\
@@ -1846,12 +1846,12 @@ _de.. MATCHER_P7(name, p0, p1, p2, p3, p4, p5, p6, description)\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
       typename p3##_type, typename p4##_type, typename p5##_type, \
       typename p6##_type>\
-  class name##MatcherP7 {\
-   public:\
+  n.. name##MatcherP7 {\
+   p..\
     template <typename arg_type>\
-    class gmock_Impl : public ::testing::MatcherInterface<\
+    n.. gmock_Impl : public ::testing::MatcherInterface<\
         GTEST_REFERENCE_TO_CONST_(arg_type)> {\
-     public:\
+     p..\
       gmock_Impl(p0##_type gmock_p0, p1##_type gmock_p1, p2##_type gmock_p2, \
           p3##_type gmock_p3, p4##_type gmock_p4, p5##_type gmock_p5, \
           p6##_type gmock_p6)\
@@ -1862,13 +1862,13 @@ _de.. MATCHER_P7(name, p0, p1, p2, p3, p4, p5, p6, description)\
                p4(::testing::internal::move(gmock_p4)), \
                p5(::testing::internal::move(gmock_p5)), \
                p6(::testing::internal::move(gmock_p6)) {}\
-      virtual bool MatchAndExplain(\
+      v.. bool MatchAndExplain(\
           GTEST_REFERENCE_TO_CONST_(arg_type) arg,\
           ::testing::MatchResultListener* result_listener) const;\
-      virtual v.. DescribeTo(::std::ostream* gmock_os) const {\
+      v.. v.. DescribeTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(false);\
       }\
-      virtual v.. DescribeNegationTo(::std::ostream* gmock_os) const {\
+      v.. v.. DescribeNegationTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(true);\
       }\
       p0##_type const p0;\
@@ -1940,12 +1940,12 @@ _de.. MATCHER_P8(name, p0, p1, p2, p3, p4, p5, p6, p7, description)\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
       typename p3##_type, typename p4##_type, typename p5##_type, \
       typename p6##_type, typename p7##_type>\
-  class name##MatcherP8 {\
-   public:\
+  n.. name##MatcherP8 {\
+   p..\
     template <typename arg_type>\
-    class gmock_Impl : public ::testing::MatcherInterface<\
+    n.. gmock_Impl : public ::testing::MatcherInterface<\
         GTEST_REFERENCE_TO_CONST_(arg_type)> {\
-     public:\
+     p..\
       gmock_Impl(p0##_type gmock_p0, p1##_type gmock_p1, p2##_type gmock_p2, \
           p3##_type gmock_p3, p4##_type gmock_p4, p5##_type gmock_p5, \
           p6##_type gmock_p6, p7##_type gmock_p7)\
@@ -1957,13 +1957,13 @@ _de.. MATCHER_P8(name, p0, p1, p2, p3, p4, p5, p6, p7, description)\
                p5(::testing::internal::move(gmock_p5)), \
                p6(::testing::internal::move(gmock_p6)), \
                p7(::testing::internal::move(gmock_p7)) {}\
-      virtual bool MatchAndExplain(\
+      v.. bool MatchAndExplain(\
           GTEST_REFERENCE_TO_CONST_(arg_type) arg,\
           ::testing::MatchResultListener* result_listener) const;\
-      virtual v.. DescribeTo(::std::ostream* gmock_os) const {\
+      v.. v.. DescribeTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(false);\
       }\
-      virtual v.. DescribeNegationTo(::std::ostream* gmock_os) const {\
+      v.. v.. DescribeNegationTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(true);\
       }\
       p0##_type const p0;\
@@ -2040,12 +2040,12 @@ _de.. MATCHER_P9(name, p0, p1, p2, p3, p4, p5, p6, p7, p8, description)\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
       typename p3##_type, typename p4##_type, typename p5##_type, \
       typename p6##_type, typename p7##_type, typename p8##_type>\
-  class name##MatcherP9 {\
-   public:\
+  n.. name##MatcherP9 {\
+   p..\
     template <typename arg_type>\
-    class gmock_Impl : public ::testing::MatcherInterface<\
+    n.. gmock_Impl : public ::testing::MatcherInterface<\
         GTEST_REFERENCE_TO_CONST_(arg_type)> {\
-     public:\
+     p..\
       gmock_Impl(p0##_type gmock_p0, p1##_type gmock_p1, p2##_type gmock_p2, \
           p3##_type gmock_p3, p4##_type gmock_p4, p5##_type gmock_p5, \
           p6##_type gmock_p6, p7##_type gmock_p7, p8##_type gmock_p8)\
@@ -2058,13 +2058,13 @@ _de.. MATCHER_P9(name, p0, p1, p2, p3, p4, p5, p6, p7, p8, description)\
                p6(::testing::internal::move(gmock_p6)), \
                p7(::testing::internal::move(gmock_p7)), \
                p8(::testing::internal::move(gmock_p8)) {}\
-      virtual bool MatchAndExplain(\
+      v.. bool MatchAndExplain(\
           GTEST_REFERENCE_TO_CONST_(arg_type) arg,\
           ::testing::MatchResultListener* result_listener) const;\
-      virtual v.. DescribeTo(::std::ostream* gmock_os) const {\
+      v.. v.. DescribeTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(false);\
       }\
-      virtual v.. DescribeNegationTo(::std::ostream* gmock_os) const {\
+      v.. v.. DescribeNegationTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(true);\
       }\
       p0##_type const p0;\
@@ -2146,12 +2146,12 @@ _de.. MATCHER_P10(name, p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, description)\
       typename p3##_type, typename p4##_type, typename p5##_type, \
       typename p6##_type, typename p7##_type, typename p8##_type, \
       typename p9##_type>\
-  class name##MatcherP10 {\
-   public:\
+  n.. name##MatcherP10 {\
+   p..\
     template <typename arg_type>\
-    class gmock_Impl : public ::testing::MatcherInterface<\
+    n.. gmock_Impl : public ::testing::MatcherInterface<\
         GTEST_REFERENCE_TO_CONST_(arg_type)> {\
-     public:\
+     p..\
       gmock_Impl(p0##_type gmock_p0, p1##_type gmock_p1, p2##_type gmock_p2, \
           p3##_type gmock_p3, p4##_type gmock_p4, p5##_type gmock_p5, \
           p6##_type gmock_p6, p7##_type gmock_p7, p8##_type gmock_p8, \
@@ -2166,13 +2166,13 @@ _de.. MATCHER_P10(name, p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, description)\
                p7(::testing::internal::move(gmock_p7)), \
                p8(::testing::internal::move(gmock_p8)), \
                p9(::testing::internal::move(gmock_p9)) {}\
-      virtual bool MatchAndExplain(\
+      v.. bool MatchAndExplain(\
           GTEST_REFERENCE_TO_CONST_(arg_type) arg,\
           ::testing::MatchResultListener* result_listener) const;\
-      virtual v.. DescribeTo(::std::ostream* gmock_os) const {\
+      v.. v.. DescribeTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(false);\
       }\
-      virtual v.. DescribeNegationTo(::std::ostream* gmock_os) const {\
+      v.. v.. DescribeNegationTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(true);\
       }\
       p0##_type const p0;\
@@ -2255,4 +2255,4 @@ _de.. MATCHER_P10(name, p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, description)\
       ::testing::MatchResultListener* result_listener GTEST_ATTRIBUTE_UNUSED_)\
           const
 
-#endif  // GMOCK_INCLUDE_GMOCK_GMOCK_GENERATED_MATCHERS_H_
+e..  // GMOCK_INCLUDE_GMOCK_GMOCK_GENERATED_MATCHERS_H_

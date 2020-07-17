@@ -6,7 +6,7 @@
 
 ? |i..
 
-namespace lf _ boost::lockfreesy.. pause
+n.. lf _ boost::lockfreesy.. pause
 
 in. main(in., c.. *[]) {
     lf::queue<in.> q{10}sy.. pause

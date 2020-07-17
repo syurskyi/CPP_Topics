@@ -1,14 +1,14 @@
-#ifndef _I_PRINTABLE_H_
+?i.. _I_PRINTABLE_H_
 _de.. _I_PRINTABLE_H_
-#include <iostream>
+? ios..
 
-class I_Printable
+n.. I_Printable
 {
     friend std::ostream &operator<<(std::ostream &os, const I_Printable &obj);
-public:
-    virtual v.. print(std::ostream &os) const = 0;
-    virtual ~I_Printable() = default;
+p..
+    v.. v.. print(std::ostream &os) const = 0;
+    v.. ~I_Printable() = default;
 };
 
 
-#endif // _I_PRINTABLE_H_
+e.. // _I_PRINTABLE_H_

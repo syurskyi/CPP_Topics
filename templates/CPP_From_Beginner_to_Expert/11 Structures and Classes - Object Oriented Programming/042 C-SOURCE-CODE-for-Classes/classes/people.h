@@ -1,12 +1,12 @@
-#ifndef PEOPLE_H_INCLUDED
+?i.. PEOPLE_H_INCLUDED
 _de.. PEOPLE_H_INCLUDED
 
-class PersonalData
+n.. PersonalData
 {
     private:
         short age;
         int *p;
-    public:
+    p..
         PersonalData();
         PersonalData(short);
         ~PersonalData();
@@ -17,4 +17,4 @@ class PersonalData
         short getAge() {return age;}
 };
 
-#endif // PEOPLE_H_INCLUDED
+e.. // PEOPLE_H_INCLUDED

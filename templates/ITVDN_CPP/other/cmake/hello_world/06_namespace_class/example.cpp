@@ -1,6 +1,6 @@
 ? |i..
 
-namespace ns_foo
+n.. ns_foo
 {
     c_ Person
     {

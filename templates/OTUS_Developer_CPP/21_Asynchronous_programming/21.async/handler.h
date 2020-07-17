@@ -2,7 +2,7 @@
 
 ? "event.h"
 
-class Handler {
-public:
-    virtual v.. event(Event &) = 0;
+n.. Handler {
+p..
+    v.. v.. event(Event &) = 0;
 };

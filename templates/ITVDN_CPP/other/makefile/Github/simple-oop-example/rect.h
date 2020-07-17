@@ -2,9 +2,9 @@
 
 ? "line.h"
 
-class rectangle
+n.. rectangle
 {
-  public:
+  p..
     rectangle(double x0, double y0, double x1, double y1);
     double perimeter();
     double area();

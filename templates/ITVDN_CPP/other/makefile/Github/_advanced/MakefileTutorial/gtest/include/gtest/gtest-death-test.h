@@ -35,12 +35,12 @@
 // #included by gtest.h so a user doesn't need to include this
 // directly.
 
-#ifndef GTEST_INCLUDE_GTEST_GTEST_DEATH_TEST_H_
+?i.. GTEST_INCLUDE_GTEST_GTEST_DEATH_TEST_H_
 _de.. GTEST_INCLUDE_GTEST_GTEST_DEATH_TEST_H_
 
 ? "gtest/internal/gtest-death-test-internal.h"
 
-namespace testing {
+n... testing {
 
 // This flag controls the style of death tests.  Valid values are "threadsafe",
 // meaning that the death test child process will re-execute the test binary
@@ -51,7 +51,7 @@ GTEST_DECLARE_string_(death_test_style);
 
 #if GTEST_HAS_DEATH_TEST
 
-namespace internal {
+n... internal {
 
 // Returns a Boolean value indicating whether the caller is currently
 // executing in the context of the death test child process.  Tools such as
@@ -187,8 +187,8 @@ GTEST_API_ bool InDeathTestChild();
 // Two predicate classes that can be used in {ASSERT,EXPECT}_EXIT*:
 
 // Tests that an exit code describes a normal exit with a given exit code.
-class GTEST_API_ ExitedWithCode {
- public:
+n.. GTEST_API_ ExitedWithCode {
+ p..
   explicit ExitedWithCode(int exit_code);
   bool operator()(int exit_status) const;
  private:
@@ -201,8 +201,8 @@ class GTEST_API_ ExitedWithCode {
 # if !GTEST_OS_WINDOWS && !GTEST_OS_FUCHSIA
 // Tests that an exit code describes an exit due to termination by a
 // given signal.
-class GTEST_API_ KilledBySignal {
- public:
+n.. GTEST_API_ KilledBySignal {
+ p..
   explicit KilledBySignal(int signum);
   bool operator()(int exit_status) const;
  private:
@@ -270,7 +270,7 @@ class GTEST_API_ KilledBySignal {
   ASSERT_DEATH(statement, regex)
 
 # endif  // NDEBUG for EXPECT_DEBUG_DEATH
-#endif  // GTEST_HAS_DEATH_TEST
+e..  // GTEST_HAS_DEATH_TEST
 
 // This macro is used for implementing macros such as
 // EXPECT_DEATH_IF_SUPPORTED and ASSERT_DEATH_IF_SUPPORTED on systems where
@@ -335,8 +335,8 @@ class GTEST_API_ KilledBySignal {
     GTEST_UNSUPPORTED_DEATH_TEST(statement, regex, )
 # define ASSERT_DEATH_IF_SUPPORTED(statement, regex) \
     GTEST_UNSUPPORTED_DEATH_TEST(statement, regex, return)
-#endif
+e..
 
 }  // namespace testing
 
-#endif  // GTEST_INCLUDE_GTEST_GTEST_DEATH_TEST_H_
+e..  // GTEST_INCLUDE_GTEST_GTEST_DEATH_TEST_H_

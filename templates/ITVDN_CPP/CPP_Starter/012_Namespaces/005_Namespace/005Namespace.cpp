@@ -1,9 +1,9 @@
 ? *s..
 ? |i..
 
-namespace NamespaceA {
-	namespace NamespaceB {
-		namespace NamespaceC {
+n.. NamespaceA {
+	n.. NamespaceB {
+		n.. NamespaceC {
 			in. add(in. a, in. b) {
 				r_ a + bsy.. pause
 			}

@@ -33,15 +33,15 @@
 // This header file defines internal utilities needed for implementing
 // death tests.  They are subject to change without notice.
 
-#ifndef GTEST_INCLUDE_GTEST_INTERNAL_GTEST_DEATH_TEST_INTERNAL_H_
+?i.. GTEST_INCLUDE_GTEST_INTERNAL_GTEST_DEATH_TEST_INTERNAL_H_
 _de.. GTEST_INCLUDE_GTEST_INTERNAL_GTEST_DEATH_TEST_INTERNAL_H_
 
 ? "gtest/internal/gtest-internal.h"
 
 ? <stdio.h>
 
-namespace testing {
-namespace internal {
+n... testing {
+n... internal {
 
 GTEST_DECLARE_string_(internal_run_death_test);
 
@@ -65,8 +65,8 @@ const char kInternalRunDeathTestFlag[] = "internal_run_death_test";
 //               by wait(2)
 // exit code:    The integer code passed to exit(3), _exit(2), or
 //               returned from main()
-class GTEST_API_ DeathTest {
- public:
+n.. GTEST_API_ DeathTest {
+ p..
   // Create returns false if there was an error determining the
   // appropriate action to take for the current death test; for example,
   // if the gtest_death_test_style flag is set to an invalid value.
@@ -78,11 +78,11 @@ class GTEST_API_ DeathTest {
   static bool Create(const char* statement, const RE* regex,
                      const char* file, int line, DeathTest** test);
   DeathTest();
-  virtual ~DeathTest() { }
+  v.. ~DeathTest() { }
 
   // A helper class that aborts a death test when it's deleted.
-  class ReturnSentinel {
-   public:
+  n.. ReturnSentinel {
+   p..
     explicit ReturnSentinel(DeathTest* test) : test_(test) { }
     ~ReturnSentinel() { test_->Abort(TEST_ENCOUNTERED_RETURN_STATEMENT); }
    private:
@@ -105,10 +105,10 @@ class GTEST_API_ DeathTest {
   };
 
   // Assumes one of the above roles.
-  virtual TestRole AssumeRole() = 0;
+  v.. TestRole AssumeRole() = 0;
 
   // Waits for the death test to finish and returns its status.
-  virtual int Wait() = 0;
+  v.. int Wait() = 0;
 
   // Returns true if the death test passed; that is, the test process
   // exited during the test, its exit status matches a user-supplied
@@ -117,10 +117,10 @@ class GTEST_API_ DeathTest {
   // The user-supplied predicate may be a macro expression rather
   // than a function pointer or functor, or else Wait and Passed could
   // be combined.
-  virtual bool Passed(bool exit_status_ok) = 0;
+  v.. bool Passed(bool exit_status_ok) = 0;
 
   // Signals that the death test did not die as expected.
-  virtual v.. Abort(AbortReason reason) = 0;
+  v.. v.. Abort(AbortReason reason) = 0;
 
   // Returns a human-readable outcome message regarding the outcome of
   // the last death test.
@@ -136,17 +136,17 @@ class GTEST_API_ DeathTest {
 };
 
 // Factory interface for death tests.  May be mocked out for testing.
-class DeathTestFactory {
- public:
-  virtual ~DeathTestFactory() { }
-  virtual bool Create(const char* statement, const RE* regex,
+n.. DeathTestFactory {
+ p..
+  v.. ~DeathTestFactory() { }
+  v.. bool Create(const char* statement, const RE* regex,
                       const char* file, int line, DeathTest** test) = 0;
 };
 
 // A concrete DeathTestFactory implementation for normal use.
-class DefaultDeathTestFactory : public DeathTestFactory {
- public:
-  virtual bool Create(const char* statement, const RE* regex,
+n.. DefaultDeathTestFactory : public DeathTestFactory {
+ p..
+  v.. bool Create(const char* statement, const RE* regex,
                       const char* file, int line, DeathTest** test);
 };
 
@@ -234,8 +234,8 @@ _de.. GTEST_EXECUTE_STATEMENT_(statement, regex)             \
 // A class representing the parsed contents of the
 // --gtest_internal_run_death_test flag, as it existed when
 // RUN_ALL_TESTS was called.
-class InternalRunDeathTestFlag {
- public:
+n.. InternalRunDeathTestFlag {
+ p..
   InternalRunDeathTestFlag(const std::string& a_file,
                            int a_line,
                            int an_index,
@@ -267,9 +267,9 @@ class InternalRunDeathTestFlag {
 // the flag is specified; otherwise returns NULL.
 InternalRunDeathTestFlag* ParseInternalRunDeathTestFlag();
 
-#endif  // GTEST_HAS_DEATH_TEST
+e..  // GTEST_HAS_DEATH_TEST
 
 }  // namespace internal
 }  // namespace testing
 
-#endif  // GTEST_INCLUDE_GTEST_INTERNAL_GTEST_DEATH_TEST_INTERNAL_H_
+e..  // GTEST_INCLUDE_GTEST_INTERNAL_GTEST_DEATH_TEST_INTERNAL_H_

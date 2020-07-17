@@ -1,19 +1,19 @@
-#ifndef TEST_H_INCLUDED
+?i.. TEST_H_INCLUDED
 _de.. TEST_H_INCLUDED
-class B;
+n.. B;
 
-class A
+n.. A
 {
         int secondtmnp;
-    public:
+    p..
         v.. setSecretValue(B &, int);
 };
-class B
+n.. B
 {
-        friend class A;
+        friend n.. A;
         int secretValue;
-    public:
+    p..
         int getSecretValue() { return secretValue; }
 };
 
-#endif // TEST_H_INCLUDED
+e.. // TEST_H_INCLUDED

@@ -33,15 +33,15 @@
 //
 // This file implements some actions that depend on gmock-generated-actions.h.
 
-#ifndef GMOCK_INCLUDE_GMOCK_GMOCK_MORE_ACTIONS_H_
+?i.. GMOCK_INCLUDE_GMOCK_GMOCK_MORE_ACTIONS_H_
 _de.. GMOCK_INCLUDE_GMOCK_GMOCK_MORE_ACTIONS_H_
 
 ? <algorithm>
 
 ? "gmock/gmock-generated-actions.h"
 
-namespace testing {
-namespace internal {
+n... testing {
+n... internal {
 
 // Implements the Invoke(f) action.  The template argument
 // FunctionImpl is the implementation type of f, which can be either a
@@ -49,8 +49,8 @@ namespace internal {
 // Action<F> as long as f's type is compatible with F (i.e. f can be
 // assigned to a tr1::function<F>).
 template <typename FunctionImpl>
-class InvokeAction {
- public:
+n.. InvokeAction {
+ p..
   // The c'tor makes a copy of function_impl (either a function
   // pointer or a functor).
   explicit InvokeAction(FunctionImpl function_impl)
@@ -68,10 +68,10 @@ class InvokeAction {
 };
 
 // Implements the Invoke(object_ptr, &Class::Method) action.
-template <class Class, typename MethodPtr>
-class InvokeMethodAction {
- public:
-  InvokeMethodAction(Class* obj_ptr, MethodPtr method_ptr)
+template <n.. n.., typename MethodPtr>
+n.. InvokeMethodAction {
+ p..
+  InvokeMethodAction(n..* obj_ptr, MethodPtr method_ptr)
       : method_ptr_(method_ptr), obj_ptr_(obj_ptr) {}
 
   template <typename Result, typename ArgumentTuple>
@@ -85,7 +85,7 @@ class InvokeMethodAction {
   // warning C4121 in MSVC (see
   // http://computer-programming-forum.com/7-vc.net/6fbc30265f860ad1.htm ).
   const MethodPtr method_ptr_;
-  Class* const obj_ptr_;
+  n..* const obj_ptr_;
 
   GTEST_DISALLOW_ASSIGN_(InvokeMethodAction);
 };
@@ -119,11 +119,11 @@ PolymorphicAction<internal::InvokeAction<FunctionImpl> > Invoke(
 
 // Creates an action that invokes the given method on the given object
 // with the mock function's arguments.
-template <class Class, typename MethodPtr>
-PolymorphicAction<internal::InvokeMethodAction<Class, MethodPtr> > Invoke(
-    Class* obj_ptr, MethodPtr method_ptr) {
+template <n.. n.., typename MethodPtr>
+PolymorphicAction<internal::InvokeMethodAction<n.., MethodPtr> > Invoke(
+    n..* obj_ptr, MethodPtr method_ptr) {
   return MakePolymorphicAction(
-      internal::InvokeMethodAction<Class, MethodPtr>(obj_ptr, method_ptr));
+      internal::InvokeMethodAction<n.., MethodPtr>(obj_ptr, method_ptr));
 }
 
 // WithoutArgs(inner_action) can be used in a mock function with a
@@ -155,7 +155,7 @@ WithArg(const InnerAction& action) {
 #ifdef _MSC_VER
 # pragma warning(push)
 # pragma warning(disable:4100)
-#endif
+e..
 
 // Action ReturnArg<k>() returns the k-th argument of the mock function.
 ACTION_TEMPLATE(ReturnArg,
@@ -207,7 +207,7 @@ ACTION_TEMPLATE(SetArrayArgument,
   internal::CopyElements(first, last, ::testing::get<k>(args));
 #else
   ::std::copy(first, last, ::testing::get<k>(args));
-#endif
+e..
 }
 
 // Action DeleteArg<k>() deletes the k-th (0-based) argument of the mock
@@ -235,12 +235,12 @@ ACTION_P(Throw, exception) { throw exception; }
 #  pragma warning(pop)           // Restores the warning state.
 # endif
 
-#endif  // GTEST_HAS_EXCEPTIONS
+e..  // GTEST_HAS_EXCEPTIONS
 
 #ifdef _MSC_VER
 # pragma warning(pop)
-#endif
+e..
 
 }  // namespace testing
 
-#endif  // GMOCK_INCLUDE_GMOCK_GMOCK_MORE_ACTIONS_H_
+e..  // GMOCK_INCLUDE_GMOCK_GMOCK_MORE_ACTIONS_H_

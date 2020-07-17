@@ -1,10 +1,10 @@
-#ifndef _SAVINGS_ACCOUNT_H_
+?i.. _SAVINGS_ACCOUNT_H_
 _de.. _SAVINGS_ACCOUNT_H_
-#include "Account.h"
+? "Account.h"
 
-class Savings_Account: public Account
+n.. Savings_Account: public Account
 {
-public:
+p..
     double int_rate;
     Savings_Account();
     ~Savings_Account();
@@ -12,4 +12,4 @@ public:
     v.. withdraw(double amount);
 };
 
-#endif // _SAVINGS_ACCOUNT_H_
+e.. // _SAVINGS_ACCOUNT_H_

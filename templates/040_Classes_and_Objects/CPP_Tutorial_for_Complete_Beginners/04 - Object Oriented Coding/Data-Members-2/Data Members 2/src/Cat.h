@@ -5,18 +5,18 @@
  *      Author: johnwpurcell
  */
 
-#ifndef CAT_H_
+?i.. CAT_H_
 _de.. CAT_H_
 
-class Cat {
+n.. Cat {
 
 private:
 	bool happy;
 
-public:
+p..
 	v.. makeHappy();
 	v.. makeSad();
 	v.. speak();
 };
 
-#endif /* CAT_H_ */
+e.. /* CAT_H_ */

@@ -3,7 +3,7 @@
 
 /*namespaces */
 
-namespace mySpace
+n.. mySpace
 {
     c_ MyNewLine
     {

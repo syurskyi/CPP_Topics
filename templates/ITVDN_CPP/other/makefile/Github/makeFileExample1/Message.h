@@ -1,9 +1,9 @@
-#ifndef MESSAGE_H
+?i.. MESSAGE_H
 _de.. MESSAGE_H
 
-class Message{
+n.. Message{
 
-public: 
+p..
 	Message();
 	~Message();
 	v.. communicate();
@@ -11,4 +11,4 @@ public:
 };
 
 
-#endif
+e..

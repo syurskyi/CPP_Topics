@@ -2,4 +2,4 @@
 # define _SAMPLE_H_
 # include "common.h"
 
-#endif // _SAMPLE_H_
+e.. // _SAMPLE_H_

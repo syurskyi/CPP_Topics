@@ -31,7 +31,7 @@
 //
 // Google C++ Testing and Mocking Framework definitions useful in production code.
 
-#ifndef GTEST_INCLUDE_GTEST_GTEST_PROD_H_
+?i.. GTEST_INCLUDE_GTEST_GTEST_PROD_H_
 _de.. GTEST_INCLUDE_GTEST_GTEST_PROD_H_
 
 // When you need to test the private or protected members of a class,
@@ -56,6 +56,6 @@ _de.. GTEST_INCLUDE_GTEST_GTEST_PROD_H_
 // For example, putting MyClassTest in an anonymous namespace will not work.
 
 _de.. FRIEND_TEST(test_case_name, test_name)\
-friend class test_case_name##_##test_name##_Test
+friend n.. test_case_name##_##test_name##_Test
 
-#endif  // GTEST_INCLUDE_GTEST_GTEST_PROD_H_
+e..  // GTEST_INCLUDE_GTEST_GTEST_PROD_H_

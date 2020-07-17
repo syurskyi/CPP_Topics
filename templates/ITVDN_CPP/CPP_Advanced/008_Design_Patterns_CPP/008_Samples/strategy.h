@@ -1,38 +1,38 @@
-#ifndef STRATEGY_H
+?i.. STRATEGY_H
 _de.. STRATEGY_H
 
 ? "meta_strategy.h"
 
-class StrategyInterface
+n.. StrategyInterface
 {
-public:
-    virtual v.. execute() const = 0;
+p..
+    v.. v.. execute() const = 0;
 };
 
-class ConcreteStrategyA : public StrategyInterface
+n.. ConcreteStrategyA : public StrategyInterface
 {
-public:
+p..
     v.. execute() const override;
 };
 
-class ConcreteStrategyB : public StrategyInterface
+n.. ConcreteStrategyB : public StrategyInterface
 {
-public:
+p..
     v.. execute() const override;
 };
 
-class ConcreteStrategyC : public StrategyInterface
+n.. ConcreteStrategyC : public StrategyInterface
 {
-public:
+p..
     v.. execute() const override;
 };
 
-class Context
+n.. Context
 {
 private:
     StrategyInterface* strategy_;
 
-public:
+p..
     explicit Context( StrategyInterface* strategy );
 
     v.. set_strategy( StrategyInterface* strategy );
@@ -40,11 +40,11 @@ public:
     v.. execute() const;
 };
 
-class ClientStrategy : public MetaStrategy
+n.. ClientStrategy : public MetaStrategy
 {
-public:
+p..
     ClientStrategy() = default;
     v.. run() override;
 };
 
-#endif // STRATEGY_H
+e.. // STRATEGY_H

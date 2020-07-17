@@ -32,12 +32,12 @@
 // Utilities for testing Google Test itself and code that uses Google Test
 // (e.g. frameworks built on top of Google Test).
 
-#ifndef GTEST_INCLUDE_GTEST_GTEST_SPI_H_
+?i.. GTEST_INCLUDE_GTEST_GTEST_SPI_H_
 _de.. GTEST_INCLUDE_GTEST_GTEST_SPI_H_
 
 ? "gtest/gtest.h"
 
-namespace testing {
+n... testing {
 
 // This helper class can be used to mock out Google Test failure reporting
 // so that we can test Google Test or code that builds on Google Test.
@@ -48,9 +48,9 @@ namespace testing {
 // generated in the same thread that created this object or it can intercept
 // all generated failures. The scope of this mock object can be controlled with
 // the second argument to the two arguments constructor.
-class GTEST_API_ ScopedFakeTestPartResultReporter
+n.. GTEST_API_ ScopedFakeTestPartResultReporter
     : public TestPartResultReporterInterface {
- public:
+ p..
   // The two possible mocking modes of this object.
   enum InterceptMode {
     INTERCEPT_ONLY_CURRENT_THREAD,  // Intercepts only thread local failures.
@@ -68,14 +68,14 @@ class GTEST_API_ ScopedFakeTestPartResultReporter
                                    TestPartResultArray* result);
 
   // The d'tor restores the previous test part result reporter.
-  virtual ~ScopedFakeTestPartResultReporter();
+  v.. ~ScopedFakeTestPartResultReporter();
 
   // Appends the TestPartResult object to the TestPartResultArray
   // received in the constructor.
   //
   // This method is from the TestPartResultReporterInterface
   // interface.
-  virtual v.. ReportTestPartResult(const TestPartResult& result);
+  v.. v.. ReportTestPartResult(const TestPartResult& result);
  private:
   v.. Init();
 
@@ -86,15 +86,15 @@ class GTEST_API_ ScopedFakeTestPartResultReporter
   GTEST_DISALLOW_COPY_AND_ASSIGN_(ScopedFakeTestPartResultReporter);
 };
 
-namespace internal {
+n... internal {
 
 // A helper class for implementing EXPECT_FATAL_FAILURE() and
 // EXPECT_NONFATAL_FAILURE().  Its destructor verifies that the given
 // TestPartResultArray contains exactly one failure that has the given
 // type and contains the given substring.  If that's not the case, a
 // non-fatal failure will be generated.
-class GTEST_API_ SingleFailureChecker {
- public:
+n.. GTEST_API_ SingleFailureChecker {
+ p..
   // The constructor remembers the arguments.
   SingleFailureChecker(const TestPartResultArray* results,
                        TestPartResult::Type type, const std::string& substr);
@@ -136,8 +136,8 @@ class GTEST_API_ SingleFailureChecker {
 // gtest_unittest.cc will fail to compile if we do that.
 _de.. EXPECT_FATAL_FAILURE(statement, substr) \
   do { \
-    class GTestExpectFatalFailureHelper {\
-     public:\
+    n.. GTestExpectFatalFailureHelper {\
+     p..\
       static v.. Execute() { statement; }\
     };\
     ::testing::TestPartResultArray gtest_failures;\
@@ -153,8 +153,8 @@ _de.. EXPECT_FATAL_FAILURE(statement, substr) \
 
 _de.. EXPECT_FATAL_FAILURE_ON_ALL_THREADS(statement, substr) \
   do { \
-    class GTestExpectFatalFailureHelper {\
-     public:\
+    n.. GTestExpectFatalFailureHelper {\
+     p..\
       static v.. Execute() { statement; }\
     };\
     ::testing::TestPartResultArray gtest_failures;\
@@ -228,4 +228,4 @@ _de.. EXPECT_NONFATAL_FAILURE_ON_ALL_THREADS(statement, substr) \
     }\
   } while (::testing::internal::AlwaysFalse())
 
-#endif  // GTEST_INCLUDE_GTEST_GTEST_SPI_H_
+e..  // GTEST_INCLUDE_GTEST_GTEST_SPI_H_

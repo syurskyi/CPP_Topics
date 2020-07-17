@@ -1,10 +1,10 @@
-#ifndef MESSAGE_H
+?i.. MESSAGE_H
 _de.. MESSAGE_H
 
-class message{
+n.. message{
 
-public:
+p..
     v.. printMessage();
 };
 
-#endif // MESSAGE_H
+e.. // MESSAGE_H

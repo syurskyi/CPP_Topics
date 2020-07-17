@@ -1,14 +1,14 @@
-#ifndef PERSON_H
+?i.. PERSON_H
 _de.. PERSON_H
 
 ? |i..
 ? <string>
 
-class Person{
+n.. Person{
     private:
         std::string name;
     
-    public:
+    p..
         // Constructor - Person Object
         Person(std::string);
         Person();
@@ -23,4 +23,4 @@ class Person{
         std::string getName();
 };
 
-#endif // PERSON_H
+e.. // PERSON_H

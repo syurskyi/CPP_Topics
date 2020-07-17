@@ -1,10 +1,10 @@
 // Simple Account 
-#ifndef _ACCOUNT_H_
+?i.. _ACCOUNT_H_
 _de.. _ACCOUNT_H_
-#include <iostream>
-#include <string>
+? ios..
+? <string>
 
-class Account {
+n.. Account {
     friend std::ostream &operator<<(std::ostream &os, const Account &account);
 private:   
     static constexpr const char *def_name = "Unnamed Account";
@@ -12,11 +12,11 @@ private:
 protected:
     std::string name;
     double balance;
-public:
+p..
     Account(std::string name = def_name, double balance = def_balance);
     // Account(std::string name = "Unamed Account", double balance = 0.0);
     bool deposit(double amount);
     bool withdraw(double amount);
     double get_balance() const;
 };
-#endif
+e..

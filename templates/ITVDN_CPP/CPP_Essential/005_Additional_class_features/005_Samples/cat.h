@@ -2,39 +2,39 @@
 ? <string>
 
 
-class Animal
+n.. Animal
 {
-public:
-    virtual ~Animal() = default;
+p..
+    v.. ~Animal() = default;
 };
 
-class Domestic: public virtual Animal
+n.. Domestic: public v.. Animal
 {
-public:
+p..
     std::string get_name() {return name;}
 private:
     std::string name = "my_dom";
 };
 
-class Pedigreed : public virtual Animal
+n.. Pedigreed : public v.. Animal
 {
-public:
+p..
     std::string get_history();
 private:
     std::string history;
 };
 
-class Cat : public Domestic
+n.. Cat : public Domestic
           , public Pedigreed
 {
-public:
+p..
     Cat();
     Cat(uint paws);
     uint get_paws();
 
     v.. say();
 
-public:
+p..
     static v.. set_vibr(uint _vibr){ vibr = _vibr; }
 
     inline static uint get_vibr() { return vibr; }

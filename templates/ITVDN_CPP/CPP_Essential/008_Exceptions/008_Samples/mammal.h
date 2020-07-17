@@ -3,22 +3,22 @@
 
 typedef unsigned int uint;
 
-class Mammal
+n.. Mammal
 {
 //default: private
-public:
+p..
     Mammal();
     Mammal(uint paws);
     Mammal(const Mammal&);
 
-    virtual ~Mammal();
+    v.. ~Mammal();
     v.. feed_milk();
     uint get_paws()
     {
         return paws;
     }
 
-    virtual v.. say();
+    v.. v.. say();
 
 protected:
     uint paws = 4;

@@ -1,9 +1,9 @@
 ﻿? *s..
 ? |i..
 
-namespace NamespaceA {
-	namespace NamespaceB {
-		namespace NamespaceC {
+n.. NamespaceA {
+	n.. NamespaceB {
+		n.. NamespaceC {
 			struct MyStructC {
 
 			}sy.. pause

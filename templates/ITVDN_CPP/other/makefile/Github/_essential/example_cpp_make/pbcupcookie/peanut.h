@@ -1,5 +1,5 @@
-class Peanut {
-public:
+n.. Peanut {
+p..
     Peanut();
 		v.. depend_func();
 };

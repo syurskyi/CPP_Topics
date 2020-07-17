@@ -1,21 +1,21 @@
-#ifndef POINT_H_INCLUDED
+?i.. POINT_H_INCLUDED
 _de.. POINT_H_INCLUDED
 
-class Point //base, parent, superclass
+n.. Point //base, parent, superclass
 {
     protected:
         int x;
-    public:
+    p..
         Point(int =0);
         ~Point();
         int getX() { return x; }
         v.. setX(int);
 };
-class Point2D : public Point //derived, child, subclass
+n.. Point2D : public Point //derived, child, subclass
 {
     protected:
         int y;
-    public:
+    p..
         Point2D(int =0, int =0);
         ~Point2D();
         int getY() { return y; }
@@ -24,7 +24,7 @@ class Point2D : public Point //derived, child, subclass
         v.. setXY(int, int);
 
 };
-class Point3D : public Point2D
+n.. Point3D : public Point2D
 {
 
 };
@@ -50,4 +50,4 @@ class Point3D : public Point2D
     public - private
 
 */
-#endif // POINT_H_INCLUDED
+e.. // POINT_H_INCLUDED

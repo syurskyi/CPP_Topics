@@ -2,7 +2,7 @@
 ? <thread>
 ? <boost/thread/thread.hpp>
 
-namespace ns_foo
+n.. ns_foo
 {
     c_ Person
     {

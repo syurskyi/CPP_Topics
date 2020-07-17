@@ -43,7 +43,7 @@
 // to CHANGE WITHOUT NOTICE.  Therefore DO NOT DEPEND ON IT in a user
 // program!
 
-#ifndef GTEST_INCLUDE_GTEST_GTEST_MESSAGE_H_
+?i.. GTEST_INCLUDE_GTEST_GTEST_MESSAGE_H_
 _de.. GTEST_INCLUDE_GTEST_GTEST_MESSAGE_H_
 
 ? <limits>
@@ -54,7 +54,7 @@ _de.. GTEST_INCLUDE_GTEST_GTEST_MESSAGE_H_
 // See Message& operator<<(...) below for why.
 v.. operator<<(const testing::internal::Secret&, int);
 
-namespace testing {
+n... testing {
 
 // The Message class works like an ostream repeater.
 //
@@ -75,20 +75,20 @@ namespace testing {
 // will print "1 != 2".
 //
 // Message is not intended to be inherited from.  In particular, its
-// destructor is not virtual.
+// destructor is not v...
 //
 // Note that stringstream behaves differently in gcc and in MSVC.  You
 // can stream a NULL char pointer to it in the former, but not in the
 // latter (it causes an access violation if you do).  The Message
 // class hides this difference by treating a NULL char pointer as
 // "(null)".
-class GTEST_API_ Message {
+n.. GTEST_API_ Message {
  private:
   // The type of basic IO manipulators (endl, ends, and flush) for
   // narrow streams.
   typedef std::ostream& (*BasicNarrowIoManip)(std::ostream&);
 
- public:
+ p..
   // Constructs an empty Message.
   Message();
 
@@ -154,7 +154,7 @@ class GTEST_API_ Message {
     }
     return *this;
   }
-#endif  // GTEST_OS_SYMBIAN
+e..  // GTEST_OS_SYMBIAN
 
   // Since the basic IO manipulators are overloaded for both narrow
   // and wide streams, we have to provide this specialized definition
@@ -181,13 +181,13 @@ class GTEST_API_ Message {
   // Converts the given wide string to a narrow string using the UTF-8
   // encoding, and streams the result to this Message object.
   Message& operator <<(const ::std::wstring& wstr);
-#endif  // GTEST_HAS_STD_WSTRING
+e..  // GTEST_HAS_STD_WSTRING
 
 #if GTEST_HAS_GLOBAL_WSTRING
   // Converts the given wide string to a narrow string using the UTF-8
   // encoding, and streams the result to this Message object.
   Message& operator <<(const ::wstring& wstr);
-#endif  // GTEST_HAS_GLOBAL_WSTRING
+e..  // GTEST_HAS_GLOBAL_WSTRING
 
   // Gets the text streamed to this object so far as an std::string.
   // Each '\0' character in the buffer is replaced with "\\0".
@@ -217,7 +217,7 @@ class GTEST_API_ Message {
     using ::operator <<;
     *ss_ << value;
   }
-#endif  // GTEST_OS_SYMBIAN
+e..  // GTEST_OS_SYMBIAN
 
   // We'll hold the text streamed to this object here.
   const internal::scoped_ptr< ::std::stringstream> ss_;
@@ -232,7 +232,7 @@ inline std::ostream& operator <<(std::ostream& os, const Message& sb) {
   return os << sb.GetString();
 }
 
-namespace internal {
+n... internal {
 
 // Converts a streamable value to an std::string.  A NULL pointer is
 // converted to "(null)".  When the input value is a ::string,
@@ -246,4 +246,4 @@ std::string StreamableToString(const T& streamable) {
 }  // namespace internal
 }  // namespace testing
 
-#endif  // GTEST_INCLUDE_GTEST_GTEST_MESSAGE_H_
+e..  // GTEST_INCLUDE_GTEST_GTEST_MESSAGE_H_

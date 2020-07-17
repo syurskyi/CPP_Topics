@@ -22,9 +22,9 @@ u.. s..
 //    return malloc( count );
 //}
 
-namespace namespaces
+n.. namespaces
 {
-namespace n1::n2
+n.. n1::n2
 {
 v.. f()
 {
@@ -38,7 +38,7 @@ v.. example()
 }
 }
 
-namespace ext_aggregate
+n.. ext_aggregate
 {
 v.. example()
 {
@@ -82,7 +82,7 @@ v.. example()
 }
 }
 
-namespace fold_expression
+n.. fold_expression
 {
 template < typename... Args >
 v.. prin.er( Args&&... args )
@@ -125,7 +125,7 @@ v.. example()
     c__ __  compare( t.., t.., t.., false ) __  e..
 }
 }
-namespace auto_tmpl_param
+n.. auto_tmpl_param
 {
 // before c++17
 template < typename T, T val >
@@ -152,7 +152,7 @@ v.. example()
     now< 100l >()sy.. pause
 }
 }
-namespace tmpl_arg_deduction
+n.. tmpl_arg_deduction
 {
 v.. example()
 {
@@ -167,7 +167,7 @@ v.. example()
 }
 }
 
-namespace constexpr_lambda
+n.. constexpr_lambda
 {
 constexpr in. f_calc( in. aValue )
 {
@@ -183,7 +183,7 @@ v.. example()
     c__ __  lambda( 12 ) __  e..
 }
 }
-namespace this_lambda
+n.. this_lambda
 {
 struct test
 {
@@ -217,7 +217,7 @@ v.. example()
 }
 }
 
-namespace constexpr_if
+n.. constexpr_if
 {
 struct S
 {
@@ -254,7 +254,7 @@ v.. example()
     prin.< 2 >( obj )sy.. pause
 }
 }
-namespace if_switch_initializer
+n.. if_switch_initializer
 {
 v.. if_example( v..* aP )
 {
@@ -290,7 +290,7 @@ v.. example()
     switch_example( 10 )sy.. pause
 }
 }
-namespace struct_binding
+n.. struct_binding
 {
 v.. f_pair()
 {
@@ -342,7 +342,7 @@ v.. example()
 }
 }
 
-namespace new_attributes
+n.. new_attributes
 {
 v.. f_fallthrough()
 {
@@ -381,7 +381,7 @@ v.. example()
 }
 }
 
-namespace std_any
+n.. std_any
 {
 v.. example()
 {
@@ -396,7 +396,7 @@ v.. example()
 }
 }
 
-namespace std_stringview
+n.. std_stringview
 {
 
 v.. getString( [[maybe_unused]] c.. std::s..& str ) {}
@@ -443,7 +443,7 @@ v.. example()
 }
 }
 
-namespace std_optional
+n.. std_optional
 {
 optional< in. > strToin.( s.. aStr )
 {
@@ -469,7 +469,7 @@ v.. example()
 }
 }
 
-namespace std_variant
+n.. std_variant
 {
 v.. example()
 {
@@ -483,9 +483,9 @@ v.. example()
 }
 }
 
-namespace std_filesystem
+n.. std_filesystem
 {
-namespace fs _ experimental::filesystemsy.. pause
+n.. fs _ experimental::filesystemsy.. pause
 
 v.. example()
 {

@@ -36,12 +36,12 @@
 // Note that tests are implemented in gmock-matchers_test.cc rather than
 // gmock-more-matchers-test.cc.
 
-#ifndef GMOCK_GMOCK_MORE_MATCHERS_H_
+?i.. GMOCK_GMOCK_MORE_MATCHERS_H_
 _de.. GMOCK_GMOCK_MORE_MATCHERS_H_
 
 ? "gmock/gmock-generated-matchers.h"
 
-namespace testing {
+n... testing {
 
 // Silence C4100 (unreferenced formal
 // parameter) for MSVC
@@ -52,8 +52,8 @@ namespace testing {
 // and silence C4800 (C4800: 'int *const ': forcing value
 // to bool 'true' or 'false') for MSVC 14
 # pragma warning(disable:4800)
-  #endif
-#endif
+  e..
+e..
 
 // Defines a matcher that matches an empty container. The container must
 // support both size() and empty(), which all STL-like containers provide.
@@ -83,9 +83,9 @@ MATCHER(IsFalse, negation ? "is true" : "is false") {
 
 #ifdef _MSC_VER
 # pragma warning(pop)
-#endif
+e..
 
 
 }  // namespace testing
 
-#endif  // GMOCK_GMOCK_MORE_MATCHERS_H_
+e..  // GMOCK_GMOCK_MORE_MATCHERS_H_

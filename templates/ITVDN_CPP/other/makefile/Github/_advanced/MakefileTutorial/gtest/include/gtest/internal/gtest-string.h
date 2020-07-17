@@ -38,25 +38,25 @@
 // gtest/internal/gtest-internal.h.
 // It should not be #included by other files.
 
-#ifndef GTEST_INCLUDE_GTEST_INTERNAL_GTEST_STRING_H_
+?i.. GTEST_INCLUDE_GTEST_INTERNAL_GTEST_STRING_H_
 _de.. GTEST_INCLUDE_GTEST_INTERNAL_GTEST_STRING_H_
 
 #ifdef __BORLANDC__
 // string.h is not guaranteed to provide strcpy on C++ Builder.
 # include <mem.h>
-#endif
+e..
 
 ? <string.h>
 ? <string>
 
 ? "gtest/internal/gtest-port.h"
 
-namespace testing {
-namespace internal {
+n... testing {
+n... internal {
 
 // String - an abstract class holding static string utilities.
-class GTEST_API_ String {
- public:
+n.. GTEST_API_ String {
+ p..
   // Static utility methods
 
   // Clones a 0-terminated C string, allocating memory using new.  The
@@ -92,7 +92,7 @@ class GTEST_API_ String {
   // match the behaviour of the ANSI versions of Win32 calls and the
   // C runtime.
   static const char* Utf16ToAnsi(LPCWSTR utf16_str);
-#endif
+e..
 
   // Compares two C strings.  Returns true iff they have the same content.
   //
@@ -164,4 +164,4 @@ GTEST_API_ std::string StringStreamToString(::std::stringstream* stream);
 }  // namespace internal
 }  // namespace testing
 
-#endif  // GTEST_INCLUDE_GTEST_INTERNAL_GTEST_STRING_H_
+e..  // GTEST_INCLUDE_GTEST_INTERNAL_GTEST_STRING_H_

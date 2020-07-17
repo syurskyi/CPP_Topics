@@ -57,7 +57,7 @@
 // where all clauses are optional, and .InSequence()/.After()/
 // .WillOnce() can appear any number of times.
 
-#ifndef GMOCK_INCLUDE_GMOCK_GMOCK_SPEC_BUILDERS_H_
+?i.. GMOCK_INCLUDE_GMOCK_GMOCK_SPEC_BUILDERS_H_
 _de.. GMOCK_INCLUDE_GMOCK_GMOCK_SPEC_BUILDERS_H_
 
 ? <map>
@@ -74,34 +74,34 @@ _de.. GMOCK_INCLUDE_GMOCK_GMOCK_SPEC_BUILDERS_H_
 
 #if GTEST_HAS_EXCEPTIONS
 # include <stdexcept>  // NOLINT
-#endif
+e..
 
-namespace testing {
+n... testing {
 
 // An abstract handle of an expectation.
-class Expectation;
+n.. Expectation;
 
 // A set of expectation handles.
-class ExpectationSet;
+n.. ExpectationSet;
 
 // Anything inside the 'internal' namespace IS INTERNAL IMPLEMENTATION
 // and MUST NOT BE USED IN USER CODE!!!
-namespace internal {
+n... internal {
 
 // Implements a mock function.
-template <typename F> class FunctionMocker;
+template <typename F> n.. FunctionMocker;
 
 // Base class for expectations.
-class ExpectationBase;
+n.. ExpectationBase;
 
 // Implements an expectation.
-template <typename F> class TypedExpectation;
+template <typename F> n.. TypedExpectation;
 
 // Helper class for testing the Expectation class template.
-class ExpectationTester;
+n.. ExpectationTester;
 
 // Base class for function mockers.
-template <typename F> class FunctionMockerBase;
+template <typename F> n.. FunctionMockerBase;
 
 // Protects the mock object registry (in class Mock), all function
 // mockers, and all expectations.
@@ -117,15 +117,15 @@ template <typename F> class FunctionMockerBase;
 GTEST_API_ GTEST_DECLARE_STATIC_MUTEX_(g_gmock_mutex);
 
 // Untyped base class for ActionResultHolder<R>.
-class UntypedActionResultHolderBase;
+n.. UntypedActionResultHolderBase;
 
 // Abstract base class of FunctionMockerBase.  This is the
 // type-agnostic part of the function mocker interface.  Its pure
-// virtual methods are implemented by FunctionMockerBase.
-class GTEST_API_ UntypedFunctionMockerBase {
- public:
+// v.. methods are implemented by FunctionMockerBase.
+n.. GTEST_API_ UntypedFunctionMockerBase {
+ p..
   UntypedFunctionMockerBase();
-  virtual ~UntypedFunctionMockerBase();
+  v.. ~UntypedFunctionMockerBase();
 
   // Verifies that all expectations on this mock function have been
   // satisfied.  Reports one or more Google Test non-fatal failures
@@ -134,7 +134,7 @@ class GTEST_API_ UntypedFunctionMockerBase {
       GTEST_EXCLUSIVE_LOCK_REQUIRED_(g_gmock_mutex);
 
   // Clears the ON_CALL()s set on this mock function.
-  virtual v.. ClearDefaultActionsLocked()
+  v.. v.. ClearDefaultActionsLocked()
       GTEST_EXCLUSIVE_LOCK_REQUIRED_(g_gmock_mutex) = 0;
 
   // In all of the following Untyped* functions, it's the caller's
@@ -146,19 +146,19 @@ class GTEST_API_ UntypedFunctionMockerBase {
   // the error message to describe the call in the case the default
   // action fails.
   // L = *
-  virtual UntypedActionResultHolderBase* UntypedPerformDefaultAction(
+  v.. UntypedActionResultHolderBase* UntypedPerformDefaultAction(
       v..* untyped_args, const std::string& call_description) const = 0;
 
   // Performs the given action with the given arguments and returns
   // the action's result.
   // L = *
-  virtual UntypedActionResultHolderBase* UntypedPerformAction(
+  v.. UntypedActionResultHolderBase* UntypedPerformAction(
       const v..* untyped_action, v..* untyped_args) const = 0;
 
   // Writes a message that the call is uninteresting (i.e. neither
   // explicitly expected nor explicitly unexpected) to the given
   // ostream.
-  virtual v.. UntypedDescribeUninterestingCall(
+  v.. v.. UntypedDescribeUninterestingCall(
       const v..* untyped_args,
       ::std::ostream* os) const
           GTEST_LOCK_EXCLUDED_(g_gmock_mutex) = 0;
@@ -169,14 +169,14 @@ class GTEST_API_ UntypedFunctionMockerBase {
   // performed (or NULL if the action is "do default"), and
   // is_excessive is modified to indicate whether the call exceeds the
   // expected number.
-  virtual const ExpectationBase* UntypedFindMatchingExpectation(
+  v.. const ExpectationBase* UntypedFindMatchingExpectation(
       const v..* untyped_args,
       const v..** untyped_action, bool* is_excessive,
       ::std::ostream* what, ::std::ostream* why)
           GTEST_LOCK_EXCLUDED_(g_gmock_mutex) = 0;
 
   // Prints the given function arguments to the ostream.
-  virtual v.. UntypedPrintArgs(const v..* untyped_args,
+  v.. v.. UntypedPrintArgs(const v..* untyped_args,
                                 ::std::ostream* os) const = 0;
 
   // Sets the mock object this mock method belongs to, and registers
@@ -246,8 +246,8 @@ class GTEST_API_ UntypedFunctionMockerBase {
 };  // class UntypedFunctionMockerBase
 
 // Untyped base class for OnCallSpec<F>.
-class UntypedOnCallSpecBase {
- public:
+n.. UntypedOnCallSpecBase {
+ p..
   // The arguments are the location of the ON_CALL() statement.
   UntypedOnCallSpecBase(const char* a_file, int a_line)
       : file_(a_file), line_(a_line), last_clause_(kNone) {}
@@ -288,8 +288,8 @@ class UntypedOnCallSpecBase {
 
 // This template class implements an ON_CALL spec.
 template <typename F>
-class OnCallSpec : public UntypedOnCallSpecBase {
- public:
+n.. OnCallSpec : public UntypedOnCallSpecBase {
+ p..
   typedef typename Function<F>::ArgumentTuple ArgumentTuple;
   typedef typename Function<F>::ArgumentMatcherTuple ArgumentMatcherTuple;
 
@@ -373,8 +373,8 @@ enum CallReaction {
 }  // namespace internal
 
 // Utilities for manipulating mock objects.
-class GTEST_API_ Mock {
- public:
+n.. GTEST_API_ Mock {
+ p..
   // The following public methods can be called concurrently.
 
   // Tells Google Mock to ignore mock_obj when checking for leaked
@@ -395,21 +395,21 @@ class GTEST_API_ Mock {
       GTEST_LOCK_EXCLUDED_(internal::g_gmock_mutex);
 
  private:
-  friend class internal::UntypedFunctionMockerBase;
+  friend n.. internal::UntypedFunctionMockerBase;
 
   // Needed for a function mocker to register itself (so that we know
   // how to clear a mock object).
   template <typename F>
-  friend class internal::FunctionMockerBase;
+  friend n.. internal::FunctionMockerBase;
 
   template <typename M>
-  friend class NiceMock;
+  friend n.. NiceMock;
 
   template <typename M>
-  friend class NaggyMock;
+  friend n.. NaggyMock;
 
   template <typename M>
-  friend class StrictMock;
+  friend n.. StrictMock;
 
   // Tells Google Mock to allow uninteresting calls on the given mock
   // object.
@@ -489,8 +489,8 @@ class GTEST_API_ Mock {
 //     ExpectationBase available yet, leading to incorrect destruction
 //     in the linked_ptr (or compilation errors if using a checking
 //     linked_ptr).
-class GTEST_API_ Expectation {
- public:
+n.. GTEST_API_ Expectation {
+ p..
   // Constructs a null object that doesn't reference any expectation.
   Expectation();
 
@@ -518,20 +518,20 @@ class GTEST_API_ Expectation {
   bool operator!=(const Expectation& rhs) const { return !(*this == rhs); }
 
  private:
-  friend class ExpectationSet;
-  friend class Sequence;
-  friend class ::testing::internal::ExpectationBase;
-  friend class ::testing::internal::UntypedFunctionMockerBase;
+  friend n.. ExpectationSet;
+  friend n.. Sequence;
+  friend n.. ::testing::internal::ExpectationBase;
+  friend n.. ::testing::internal::UntypedFunctionMockerBase;
 
   template <typename F>
-  friend class ::testing::internal::FunctionMockerBase;
+  friend n.. ::testing::internal::FunctionMockerBase;
 
   template <typename F>
-  friend class ::testing::internal::TypedExpectation;
+  friend n.. ::testing::internal::TypedExpectation;
 
   // This comparator is needed for putting Expectation objects into a set.
-  class Less {
-   public:
+  n.. Less {
+   p..
     bool operator()(const Expectation& lhs, const Expectation& rhs) const {
       return lhs.expectation_base_.get() < rhs.expectation_base_.get();
     }
@@ -565,8 +565,8 @@ class GTEST_API_ Expectation {
 // after the first two have both been satisfied.
 //
 // This class is copyable and has value semantics.
-class ExpectationSet {
- public:
+n.. ExpectationSet {
+ p..
   // A bidirectional iterator that can read a const element in the set.
   typedef Expectation::Set::const_iterator const_iterator;
 
@@ -621,8 +621,8 @@ class ExpectationSet {
 // Sequence objects are used by a user to specify the relative order
 // in which the expectations should match.  They are copyable (we rely
 // on the compiler-defined copy constructor and assignment operator).
-class GTEST_API_ Sequence {
- public:
+n.. GTEST_API_ Sequence {
+ p..
   // Constructs an empty sequence.
   Sequence() : last_expectation_(new Expectation) {}
 
@@ -662,8 +662,8 @@ class GTEST_API_ Sequence {
 // thread.  However, for clarity of your tests we recommend you to set
 // up mocks in the main thread unless you have a good reason not to do
 // so.
-class GTEST_API_ InSequence {
- public:
+n.. GTEST_API_ InSequence {
+ p..
   InSequence();
   ~InSequence();
  private:
@@ -672,7 +672,7 @@ class GTEST_API_ InSequence {
   GTEST_DISALLOW_COPY_AND_ASSIGN_(InSequence);  // NOLINT
 } GTEST_ATTRIBUTE_UNUSED_;
 
-namespace internal {
+n... internal {
 
 // Points to the implicit sequence introduced by a living InSequence
 // object (if any) in the current thread or NULL.
@@ -692,12 +692,12 @@ GTEST_API_ extern ThreadLocal<Sequence*> g_gmock_implicit_sequence;
 //   on the template argument of Expectation to the base class.
 //
 // This class is internal and mustn't be used by user code directly.
-class GTEST_API_ ExpectationBase {
- public:
+n.. GTEST_API_ ExpectationBase {
+ p..
   // source_text is the EXPECT_CALL(...) source that created this Expectation.
   ExpectationBase(const char* file, int line, const std::string& source_text);
 
-  virtual ~ExpectationBase();
+  v.. ~ExpectationBase();
 
   // Where in the source file was the expectation spec defined?
   const char* file() const { return file_; }
@@ -718,11 +718,11 @@ class GTEST_API_ ExpectationBase {
 
   // If this mock method has an extra matcher (i.e. .With(matcher)),
   // describes it to the ostream.
-  virtual v.. MaybeDescribeExtraMatcherTo(::std::ostream* os) = 0;
+  v.. v.. MaybeDescribeExtraMatcherTo(::std::ostream* os) = 0;
 
  protected:
-  friend class ::testing::Expectation;
-  friend class UntypedFunctionMockerBase;
+  friend n.. ::testing::Expectation;
+  friend n.. UntypedFunctionMockerBase;
 
   enum Clause {
     // Don't change the order of the enum members!
@@ -740,7 +740,7 @@ class GTEST_API_ ExpectationBase {
 
   // Returns an Expectation object that references and co-owns this
   // expectation.
-  virtual Expectation GetHandle() = 0;
+  v.. Expectation GetHandle() = 0;
 
   // Asserts that the EXPECT_CALL() statement has the given property.
   v.. AssertSpecProperty(bool property,
@@ -839,11 +839,11 @@ class GTEST_API_ ExpectationBase {
   v.. CheckActionCountIfNotDone() const
       GTEST_LOCK_EXCLUDED_(mutex_);
 
-  friend class ::testing::Sequence;
-  friend class ::testing::internal::ExpectationTester;
+  friend n.. ::testing::Sequence;
+  friend n.. ::testing::internal::ExpectationTester;
 
   template <typename Function>
-  friend class TypedExpectation;
+  friend n.. TypedExpectation;
 
   // Implements the .Times() clause.
   v.. UntypedTimes(const Cardinality& a_cardinality);
@@ -881,8 +881,8 @@ class GTEST_API_ ExpectationBase {
 
 // Impements an expectation for the given function type.
 template <typename F>
-class TypedExpectation : public ExpectationBase {
- public:
+n.. TypedExpectation : public ExpectationBase {
+ p..
   typedef typename Function<F>::ArgumentTuple ArgumentTuple;
   typedef typename Function<F>::ArgumentMatcherTuple ArgumentMatcherTuple;
   typedef typename Function<F>::Result Result;
@@ -900,7 +900,7 @@ class TypedExpectation : public ExpectationBase {
         extra_matcher_(A<const ArgumentTuple&>()),
         repeated_action_(DoDefault()) {}
 
-  virtual ~TypedExpectation() {
+  v.. ~TypedExpectation() {
     // Check the validity of the action count if it hasn't been done
     // yet (for example, if the expectation was never used).
     CheckActionCountIfNotDone();
@@ -1066,7 +1066,7 @@ class TypedExpectation : public ExpectationBase {
 
   // If this mock method has an extra matcher (i.e. .With(matcher)),
   // describes it to the ostream.
-  virtual v.. MaybeDescribeExtraMatcherTo(::std::ostream* os) {
+  v.. v.. MaybeDescribeExtraMatcherTo(::std::ostream* os) {
     if (extra_matcher_specified_) {
       *os << "    Expected args: ";
       extra_matcher_.DescribeTo(os);
@@ -1076,11 +1076,11 @@ class TypedExpectation : public ExpectationBase {
 
  private:
   template <typename Function>
-  friend class FunctionMockerBase;
+  friend n.. FunctionMockerBase;
 
   // Returns an Expectation object that references and co-owns this
   // expectation.
-  virtual Expectation GetHandle() {
+  v.. Expectation GetHandle() {
     return owner_->GetHandleOf(this);
   }
 
@@ -1250,8 +1250,8 @@ GTEST_API_ v.. LogWithLocation(testing::internal::LogSeverity severity,
                                 const std::string& message);
 
 template <typename F>
-class MockSpec {
- public:
+n.. MockSpec {
+ p..
   typedef typename internal::Function<F>::ArgumentTuple ArgumentTuple;
   typedef typename internal::Function<F>::ArgumentMatcherTuple
       ArgumentMatcherTuple;
@@ -1291,7 +1291,7 @@ class MockSpec {
 
  private:
   template <typename Function>
-  friend class internal::FunctionMocker;
+  friend n.. internal::FunctionMocker;
 
   // The function mocker that owns this spec.
   internal::FunctionMockerBase<F>* const function_mocker_;
@@ -1311,8 +1311,8 @@ class MockSpec {
 // comments describe the contract for the whole template (including
 // specializations).
 template <typename T>
-class ReferenceOrValueWrapper {
- public:
+n.. ReferenceOrValueWrapper {
+ p..
   // Constructs a wrapper from the given value/reference.
   explicit ReferenceOrValueWrapper(T value)
       : value_(::testing::internal::move(value)) {
@@ -1338,8 +1338,8 @@ class ReferenceOrValueWrapper {
 // Specialization for lvalue reference types. See primary template
 // for documentation.
 template <typename T>
-class ReferenceOrValueWrapper<T&> {
- public:
+n.. ReferenceOrValueWrapper<T&> {
+ p..
   // Workaround for debatable pass-by-reference lint warning (c-library-team
   // policy precludes NOLINT in this context)
   typedef T& reference;
@@ -1360,7 +1360,7 @@ class ReferenceOrValueWrapper<T&> {
 #ifdef _MSC_VER
 # pragma warning(push)          // Saves the current warning state.
 # pragma warning(disable:4355)  // Temporarily disables warning 4355.
-#endif  // _MSV_VER
+e..  // _MSV_VER
 
 // C++ treats the void type specially.  For example, you cannot define
 // a void-typed variable or pass a void value to a function.
@@ -1371,25 +1371,25 @@ class ReferenceOrValueWrapper<T&> {
 // non-void-returning mock functions.
 
 // Untyped base class for ActionResultHolder<T>.
-class UntypedActionResultHolderBase {
- public:
-  virtual ~UntypedActionResultHolderBase() {}
+n.. UntypedActionResultHolderBase {
+ p..
+  v.. ~UntypedActionResultHolderBase() {}
 
   // Prints the held value as an action's result to os.
-  virtual v.. PrintAsActionResult(::std::ostream* os) const = 0;
+  v.. v.. PrintAsActionResult(::std::ostream* os) const = 0;
 };
 
 // This generic definition is used when T is not void.
 template <typename T>
-class ActionResultHolder : public UntypedActionResultHolderBase {
- public:
+n.. ActionResultHolder : public UntypedActionResultHolderBase {
+ p..
   // Returns the held value. Must not be called more than once.
   T Unwrap() {
     return result_.Unwrap();
   }
 
   // Prints the held value as an action's result to os.
-  virtual v.. PrintAsActionResult(::std::ostream* os) const {
+  v.. v.. PrintAsActionResult(::std::ostream* os) const {
     *os << "\n          Returns: ";
     // T may be a reference type, so we don't use UniversalPrint().
     UniversalPrinter<T>::Print(result_.Peek(), os);
@@ -1430,11 +1430,11 @@ class ActionResultHolder : public UntypedActionResultHolderBase {
 
 // Specialization for T = void.
 template <>
-class ActionResultHolder<v..> : public UntypedActionResultHolderBase {
- public:
+n.. ActionResultHolder<v..> : public UntypedActionResultHolderBase {
+ p..
   v.. Unwrap() { }
 
-  virtual v.. PrintAsActionResult(::std::ostream* /* os */) const {}
+  v.. v.. PrintAsActionResult(::std::ostream* /* os */) const {}
 
   // Performs the given mock function's default action and returns ownership
   // of an empty ActionResultHolder*.
@@ -1466,8 +1466,8 @@ class ActionResultHolder<v..> : public UntypedActionResultHolderBase {
 // We put the methods in this class instead of its child to avoid code
 // bloat.
 template <typename F>
-class FunctionMockerBase : public UntypedFunctionMockerBase {
- public:
+n.. FunctionMockerBase : public UntypedFunctionMockerBase {
+ p..
   typedef typename Function<F>::Result Result;
   typedef typename Function<F>::ArgumentTuple ArgumentTuple;
   typedef typename Function<F>::ArgumentMatcherTuple ArgumentMatcherTuple;
@@ -1477,7 +1477,7 @@ class FunctionMockerBase : public UntypedFunctionMockerBase {
   // The destructor verifies that all expectations on this mock
   // function have been satisfied.  If not, it will report Google Test
   // non-fatal failures for the violations.
-  virtual ~FunctionMockerBase()
+  v.. ~FunctionMockerBase()
         GTEST_LOCK_EXCLUDED_(g_gmock_mutex) {
     MutexLock l(&g_gmock_mutex);
     VerifyAndClearExpectationsLocked();
@@ -1526,7 +1526,7 @@ class FunctionMockerBase : public UntypedFunctionMockerBase {
     }
 #else
     Assert(DefaultValue<Result>::Exists(), "", -1, message);
-#endif
+e..
     return DefaultValue<Result>::Get();
   }
 
@@ -1535,7 +1535,7 @@ class FunctionMockerBase : public UntypedFunctionMockerBase {
   // the error message to describe the call in the case the default
   // action fails.  The caller is responsible for deleting the result.
   // L = *
-  virtual UntypedActionResultHolderBase* UntypedPerformDefaultAction(
+  v.. UntypedActionResultHolderBase* UntypedPerformDefaultAction(
       v..* untyped_args,  // must point to an ArgumentTuple
       const std::string& call_description) const {
     ArgumentTuple* args = static_cast<ArgumentTuple*>(untyped_args);
@@ -1547,7 +1547,7 @@ class FunctionMockerBase : public UntypedFunctionMockerBase {
   // the action's result.  The caller is responsible for deleting the
   // result.
   // L = *
-  virtual UntypedActionResultHolderBase* UntypedPerformAction(
+  v.. UntypedActionResultHolderBase* UntypedPerformAction(
       const v..* untyped_action, v..* untyped_args) const {
     // Make a copy of the action before performing it, in case the
     // action deletes the mock object (and thus deletes itself).
@@ -1558,7 +1558,7 @@ class FunctionMockerBase : public UntypedFunctionMockerBase {
 
   // Implements UntypedFunctionMockerBase::ClearDefaultActionsLocked():
   // clears the ON_CALL()s set on this mock function.
-  virtual v.. ClearDefaultActionsLocked()
+  v.. v.. ClearDefaultActionsLocked()
       GTEST_EXCLUSIVE_LOCK_REQUIRED_(g_gmock_mutex) {
     g_gmock_mutex.AssertHeld();
 
@@ -1586,7 +1586,7 @@ class FunctionMockerBase : public UntypedFunctionMockerBase {
 
  protected:
   template <typename Function>
-  friend class MockSpec;
+  friend n.. MockSpec;
 
   typedef ActionResultHolder<Result> ResultHolder;
 
@@ -1638,7 +1638,7 @@ class FunctionMockerBase : public UntypedFunctionMockerBase {
   }
 
  private:
-  template <typename Func> friend class TypedExpectation;
+  template <typename Func> friend n.. TypedExpectation;
 
   // Some utilities needed for implementing UntypedInvokeWith().
 
@@ -1662,7 +1662,7 @@ class FunctionMockerBase : public UntypedFunctionMockerBase {
   // Writes a message that the call is uninteresting (i.e. neither
   // explicitly expected nor explicitly unexpected) to the given
   // ostream.
-  virtual v.. UntypedDescribeUninterestingCall(
+  v.. v.. UntypedDescribeUninterestingCall(
       const v..* untyped_args,
       ::std::ostream* os) const
           GTEST_LOCK_EXCLUDED_(g_gmock_mutex) {
@@ -1690,7 +1690,7 @@ class FunctionMockerBase : public UntypedFunctionMockerBase {
   // section.  The reason is that we have no control on what the
   // action does (it can invoke an arbitrary user function or even a
   // mock function) and excessive locking could cause a dead lock.
-  virtual const ExpectationBase* UntypedFindMatchingExpectation(
+  v.. const ExpectationBase* UntypedFindMatchingExpectation(
       const v..* untyped_args,
       const v..** untyped_action, bool* is_excessive,
       ::std::ostream* what, ::std::ostream* why)
@@ -1716,7 +1716,7 @@ class FunctionMockerBase : public UntypedFunctionMockerBase {
   }
 
   // Prints the given function arguments to the ostream.
-  virtual v.. UntypedPrintArgs(const v..* untyped_args,
+  v.. v.. UntypedPrintArgs(const v..* untyped_args,
                                 ::std::ostream* os) const {
     const ArgumentTuple& args =
         *static_cast<const ArgumentTuple*>(untyped_args);
@@ -1788,7 +1788,7 @@ class FunctionMockerBase : public UntypedFunctionMockerBase {
   // operation, for example:
   //
   //   class MockFoo : public Foo {
-  //    public:
+  //    p..
   //     // Defines a copy constructor explicitly.
   //     MockFoo(const MockFoo& src) {}
   //     ...
@@ -1798,7 +1798,7 @@ class FunctionMockerBase : public UntypedFunctionMockerBase {
 
 #ifdef _MSC_VER
 # pragma warning(pop)  // Restores the warning state.
-#endif  // _MSV_VER
+e..  // _MSV_VER
 
 // Implements methods of FunctionMockerBase.
 
@@ -1824,7 +1824,7 @@ using internal::MockSpec;
 // const mock method, e.g.
 //
 //   class MockFoo : public FooInterface {
-//    public:
+//    p..
 //     MOCK_METHOD0(Bar, int());
 //     MOCK_CONST_METHOD0(Bar, int&());
 //   };
@@ -1915,4 +1915,4 @@ _de.. ON_CALL(obj, call) \
 _de.. EXPECT_CALL(obj, call) \
   GMOCK_ON_CALL_IMPL_(obj, InternalExpectedAt, call)
 
-#endif  // GMOCK_INCLUDE_GMOCK_GMOCK_SPEC_BUILDERS_H_
+e..  // GMOCK_INCLUDE_GMOCK_GMOCK_SPEC_BUILDERS_H_

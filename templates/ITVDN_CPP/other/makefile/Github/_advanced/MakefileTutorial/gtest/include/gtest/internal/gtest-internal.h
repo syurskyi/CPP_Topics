@@ -33,7 +33,7 @@
 // This header file declares functions and macros used internally by
 // Google Test.  They are subject to change without notice.
 
-#ifndef GTEST_INCLUDE_GTEST_INTERNAL_GTEST_INTERNAL_H_
+?i.. GTEST_INCLUDE_GTEST_INTERNAL_GTEST_INTERNAL_H_
 _de.. GTEST_INCLUDE_GTEST_INTERNAL_GTEST_INTERNAL_H_
 
 ? "gtest/internal/gtest-port.h"
@@ -43,11 +43,11 @@ _de.. GTEST_INCLUDE_GTEST_INTERNAL_GTEST_INTERNAL_H_
 # include <sys/types.h>
 # include <sys/wait.h>
 # include <unistd.h>
-#endif  // GTEST_OS_LINUX
+e..  // GTEST_OS_LINUX
 
 #if GTEST_HAS_EXCEPTIONS
 # include <stdexcept>
-#endif
+e..
 
 ? <ctype.h>
 ? <float.h>
@@ -78,28 +78,28 @@ _de.. GTEST_CONCAT_TOKEN_IMPL_(foo, bar) foo ## bar
 // Stringifies its argument.
 _de.. GTEST_STRINGIFY_(name) #name
 
-class ProtocolMessage;
-namespace proto2 { class Message; }
+n.. ProtocolMessage;
+n... proto2 { n.. Message; }
 
-namespace testing {
+n... testing {
 
 // Forward declarations.
 
-class AssertionResult;                 // Result of an assertion.
-class Message;                         // Represents a failure message.
-class Test;                            // Represents a test.
-class TestInfo;                        // Information about a test.
-class TestPartResult;                  // Result of a test part.
-class UnitTest;                        // A collection of test cases.
+n.. AssertionResult;                 // Result of an assertion.
+n.. Message;                         // Represents a failure message.
+n.. Test;                            // Represents a test.
+n.. TestInfo;                        // Information about a test.
+n.. TestPartResult;                  // Result of a test part.
+n.. UnitTest;                        // A collection of test cases.
 
 template <typename T>
 ::std::string PrintToString(const T& value);
 
-namespace internal {
+n... internal {
 
 struct TraceInfo;                      // Information about a trace point.
-class TestInfoImpl;                    // Opaque implementation of TestInfo
-class UnitTestImpl;                    // Opaque implementation of UnitTest
+n.. TestInfoImpl;                    // Opaque implementation of TestInfo
+n.. UnitTestImpl;                    // Opaque implementation of UnitTest
 
 // The text used in failure messages to indicate the start of the
 // stack trace.
@@ -132,7 +132,7 @@ char (&IsNullLiteralHelper(...))[2];  // NOLINT
 #else
 # define GTEST_IS_NULL_LITERAL_(x) \
     (sizeof(::testing::internal::IsNullLiteralHelper(x)) == 1)
-#endif  // GTEST_ELLIPSIS_NEEDS_POD_
+e..  // GTEST_ELLIPSIS_NEEDS_POD_
 
 // Appends the user-supplied message to the Google-Test-generated message.
 GTEST_API_ std::string AppendUserMessage(
@@ -146,14 +146,14 @@ GTEST_API_ std::string AppendUserMessage(
 // errors presumably detectable only at run time.  Since
 // std::runtime_error inherits from std::exception, many testing
 // frameworks know how to extract and print the message inside it.
-class GTEST_API_ GoogleTestFailureException : public ::std::runtime_error {
- public:
+n.. GTEST_API_ GoogleTestFailureException : public ::std::runtime_error {
+ p..
   explicit GoogleTestFailureException(const TestPartResult& failure);
 };
 
-#endif  // GTEST_HAS_EXCEPTIONS
+e..  // GTEST_HAS_EXCEPTIONS
 
-namespace edit_distance {
+n... edit_distance {
 // Returns the optimal edits to go from 'left' to 'right'.
 // All edits cost the same, with replace having lower priority than
 // add/remove.
@@ -241,8 +241,8 @@ GTEST_API_ std::string GetBoolAssertionFailureMessage(
 //
 //   RawType: the raw floating-point type (either float or double)
 template <typename RawType>
-class FloatingPoint {
- public:
+n.. FloatingPoint {
+ p..
   // Defines the unsigned integer type that has the same size as the
   // floating point number.
   typedef typename TypeWithSize<sizeof(RawType)>::UInt Bits;
@@ -411,8 +411,8 @@ typedef FloatingPoint<double> Double;
 typedef const v..* TypeId;
 
 template <typename T>
-class TypeIdHelper {
- public:
+n.. TypeIdHelper {
+ p..
   // dummy_ must not have a const type.  Otherwise an overly eager
   // compiler (e.g. MSVC 7.1 & 8.0) may try to merge
   // TypeIdHelper<T>::dummy_ for different Ts as an "optimization".
@@ -443,13 +443,13 @@ GTEST_API_ TypeId GetTestTypeId();
 
 // Defines the abstract factory interface that creates instances
 // of a Test object.
-class TestFactoryBase {
- public:
-  virtual ~TestFactoryBase() {}
+n.. TestFactoryBase {
+ p..
+  v.. ~TestFactoryBase() {}
 
   // Creates a test instance to run. The instance is both created and destroyed
   // within TestInfoImpl::Run()
-  virtual Test* CreateTest() = 0;
+  v.. Test* CreateTest() = 0;
 
  protected:
   TestFactoryBase() {}
@@ -460,10 +460,10 @@ class TestFactoryBase {
 
 // This class provides implementation of TeastFactoryBase interface.
 // It is used in TEST and TEST_F macros.
-template <class TestClass>
-class TestFactoryImpl : public TestFactoryBase {
- public:
-  virtual Test* CreateTest() { return new TestClass; }
+template <n.. TestClass>
+n.. TestFactoryImpl : public TestFactoryBase {
+ p..
+  v.. Test* CreateTest() { return new TestClass; }
 };
 
 #if GTEST_OS_WINDOWS
@@ -477,7 +477,7 @@ GTEST_API_ AssertionResult IsHRESULTSuccess(const char* expr,
 GTEST_API_ AssertionResult IsHRESULTFailure(const char* expr,
                                             long hr);  // NOLINT
 
-#endif  // GTEST_OS_WINDOWS
+e..  // GTEST_OS_WINDOWS
 
 // Types of SetUpTestCase() and TearDownTestCase() functions.
 typedef v.. (*SetUpTestCaseFunc)();
@@ -528,8 +528,8 @@ GTEST_API_ bool SkipPrefix(const char* prefix, const char** pstr);
 #if GTEST_HAS_TYPED_TEST || GTEST_HAS_TYPED_TEST_P
 
 // State of the definition of a type-parameterized test case.
-class GTEST_API_ TypedTestCasePState {
- public:
+n.. GTEST_API_ TypedTestCasePState {
+ p..
   TypedTestCasePState() : registered_(false) {}
 
   // Adds the given test name to defined_test_names_ and return true
@@ -602,9 +602,9 @@ v.. SplitString(const ::std::string& str, char delimiter,
 //
 // Implementation note: The GTEST_TEMPLATE_ macro declares a template
 // template parameter.  It's defined in gtest-type-util.h.
-template <GTEST_TEMPLATE_ Fixture, class TestSel, typename Types>
-class TypeParameterizedTest {
- public:
+template <GTEST_TEMPLATE_ Fixture, n.. TestSel, typename Types>
+n.. TypeParameterizedTest {
+ p..
   // 'index' is the index of the test in the type list 'Types'
   // specified in INSTANTIATE_TYPED_TEST_CASE_P(Prefix, TestCase,
   // Types).  Valid values for 'index' are [0, N - 1] where N is the
@@ -638,9 +638,9 @@ class TypeParameterizedTest {
 };
 
 // The base case for the compile time recursion.
-template <GTEST_TEMPLATE_ Fixture, class TestSel>
-class TypeParameterizedTest<Fixture, TestSel, Types0> {
- public:
+template <GTEST_TEMPLATE_ Fixture, n.. TestSel>
+n.. TypeParameterizedTest<Fixture, TestSel, Types0> {
+ p..
   static bool Register(const char* /*prefix*/, const CodeLocation&,
                        const char* /*case_name*/, const char* /*test_names*/,
                        int /*index*/) {
@@ -653,8 +653,8 @@ class TypeParameterizedTest<Fixture, TestSel, Types0> {
 // Test.  The return value is insignificant - we just need to return
 // something such that we can call this function in a namespace scope.
 template <GTEST_TEMPLATE_ Fixture, typename Tests, typename Types>
-class TypeParameterizedTestCase {
- public:
+n.. TypeParameterizedTestCase {
+ p..
   static bool Register(const char* prefix, CodeLocation code_location,
                        const TypedTestCasePState* state,
                        const char* case_name, const char* test_names) {
@@ -685,8 +685,8 @@ class TypeParameterizedTestCase {
 
 // The base case for the compile time recursion.
 template <GTEST_TEMPLATE_ Fixture, typename Types>
-class TypeParameterizedTestCase<Fixture, Templates0, Types> {
- public:
+n.. TypeParameterizedTestCase<Fixture, Templates0, Types> {
+ p..
   static bool Register(const char* /*prefix*/, const CodeLocation&,
                        const TypedTestCasePState* /*state*/,
                        const char* /*case_name*/, const char* /*test_names*/) {
@@ -694,7 +694,7 @@ class TypeParameterizedTestCase<Fixture, Templates0, Types> {
   }
 };
 
-#endif  // GTEST_HAS_TYPED_TEST || GTEST_HAS_TYPED_TEST_P
+e..  // GTEST_HAS_TYPED_TEST || GTEST_HAS_TYPED_TEST_P
 
 // Returns the current OS stack trace as an std::string.
 //
@@ -732,8 +732,8 @@ struct GTEST_API_ ConstCharPtr {
 // doesn't use global state (and therefore can't interfere with user
 // code).  Unlike rand_r(), it's portable.  An LCG isn't very random,
 // but it's good enough for our purposes.
-class GTEST_API_ Random {
- public:
+n.. GTEST_API_ Random {
+ p..
   static const UInt32 kMaxRange = 1u << 31;
 
   explicit Random(UInt32 seed) : state_(seed) {}
@@ -795,7 +795,7 @@ template <typename T, size_t N>
 struct RemoveConst<T[N]> {
   typedef typename RemoveConst<T>::type type[N];
 };
-#endif
+e..
 
 // A handy wrapper around RemoveConst that works when the argument
 // T depends on template parameters.
@@ -810,7 +810,7 @@ _de.. GTEST_REMOVE_REFERENCE_AND_CONST_(T) \
 // constant that's true iff type From can be implicitly converted to
 // type To.
 template <typename From, typename To>
-class ImplicitlyConvertible {
+n.. ImplicitlyConvertible {
  private:
   // We need the following helper functions only for their types.
   // They have no implementations.
@@ -835,7 +835,7 @@ class ImplicitlyConvertible {
 
   // We have to put the 'public' section after the 'private' section,
   // or MSVC refuses to compile the code.
- public:
+ p..
 #if defined(__BORLANDC__)
   // C++Builder cannot use member overload resolution during template
   // instantiation.  The simplest workaround is to use its C++0x type traits
@@ -849,7 +849,7 @@ class ImplicitlyConvertible {
   static const bool value =
       sizeof(Helper(ImplicitlyConvertible::MakeFrom())) == 1;
   GTEST_DISABLE_MSC_WARNINGS_POP_()
-#endif  // __BORLANDC__
+e..  // __BORLANDC__
 };
 template <typename From, typename To>
 const bool ImplicitlyConvertible<From, To>::value;
@@ -890,26 +890,26 @@ struct IsAProtocolMessage
 // IsContainerTest(...) doesn't work with Visual Age C++ and Sun C++.
 typedef int IsContainer;
 #if GTEST_LANG_CXX11
-template <class C,
-          class Iterator = decltype(::std::declval<const C&>().begin()),
-          class = decltype(::std::declval<const C&>().end()),
-          class = decltype(++::std::declval<Iterator&>()),
-          class = decltype(*::std::declval<Iterator>()),
-          class = typename C::const_iterator>
+template <n.. C,
+          n.. Iterator = decltype(::std::declval<const C&>().begin()),
+          n.. = decltype(::std::declval<const C&>().end()),
+          n.. = decltype(++::std::declval<Iterator&>()),
+          n.. = decltype(*::std::declval<Iterator>()),
+          n.. = typename C::const_iterator>
 IsContainer IsContainerTest(int /* dummy */) {
   return 0;
 }
 #else
-template <class C>
+template <n.. C>
 IsContainer IsContainerTest(int /* dummy */,
                             typename C::iterator* /* it */ = NULL,
                             typename C::const_iterator* /* const_it */ = NULL) {
   return 0;
 }
-#endif  // GTEST_LANG_CXX11
+e..  // GTEST_LANG_CXX11
 
 typedef char IsNotContainer;
-template <class C>
+template <n.. C>
 IsNotContainer IsContainerTest(long /* dummy */) { return '\0'; }
 
 // Trait to detect whether a type T is a hash table.
@@ -926,7 +926,7 @@ struct IsHashTable {
   template <typename U>
   static char test(...);
 
- public:
+ p..
   static const bool value = sizeof(test<T>(0, 0)) == sizeof(int);
 };
 
@@ -966,7 +966,7 @@ struct IsRecursiveContainerImpl<C, true, true> {
       value_type;
 #else
   typedef typename IteratorTraits<typename C::iterator>::value_type value_type;
-#endif
+e..
   typedef is_same<value_type, C> type;
 };
 
@@ -1071,8 +1071,8 @@ struct RelationToSourceCopy {};
 // this requirement.  Element can be an array type itself (hence
 // multi-dimensional arrays are supported).
 template <typename Element>
-class NativeArray {
- public:
+n.. NativeArray {
+ p..
   // STL-style container typedefs.
   typedef Element value_type;
   typedef Element* iterator;
@@ -1252,11 +1252,11 @@ _de.. GTEST_TEST_CLASS_NAME_(test_case_name, test_name) \
 
 // Helper macro for defining tests.
 _de.. GTEST_TEST_(test_case_name, test_name, parent_class, parent_id)\
-class GTEST_TEST_CLASS_NAME_(test_case_name, test_name) : public parent_class {\
- public:\
+n.. GTEST_TEST_CLASS_NAME_(test_case_name, test_name) : public parent_class {\
+ p..\
   GTEST_TEST_CLASS_NAME_(test_case_name, test_name)() {}\
  private:\
-  virtual v.. TestBody();\
+  v.. v.. TestBody();\
   static ::testing::TestInfo* const test_info_ GTEST_ATTRIBUTE_UNUSED_;\
   GTEST_DISALLOW_COPY_AND_ASSIGN_(\
       GTEST_TEST_CLASS_NAME_(test_case_name, test_name));\
@@ -1274,4 +1274,4 @@ class GTEST_TEST_CLASS_NAME_(test_case_name, test_name) : public parent_class {\
             GTEST_TEST_CLASS_NAME_(test_case_name, test_name)>);\
 v.. GTEST_TEST_CLASS_NAME_(test_case_name, test_name)::TestBody()
 
-#endif  // GTEST_INCLUDE_GTEST_INTERNAL_GTEST_INTERNAL_H_
+e..  // GTEST_INCLUDE_GTEST_INTERNAL_GTEST_INTERNAL_H_

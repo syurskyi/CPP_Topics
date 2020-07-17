@@ -1,5 +1,5 @@
 //include guard
-#ifndef TWO_PLUS_TWO_IS_FIVE_
+?i.. TWO_PLUS_TWO_IS_FIVE_
 _de.. TWO_PLUS_TWO_IS_FIVE_
 
 /*
@@ -8,9 +8,9 @@ _de.. TWO_PLUS_TWO_IS_FIVE_
 * and annoying math professors
 */
 
-class TwoPlusTwoIsFive {
-public:
+n.. TwoPlusTwoIsFive {
+p..
 	int returnTwoPlusTwo();
 };
 
-#endif
+e..

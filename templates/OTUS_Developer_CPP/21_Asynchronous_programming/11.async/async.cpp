@@ -1,6 +1,6 @@
 ? "async.h"
 
-namespace async {
+n.. async {
 
 handle_t connect(std::size_t bulk) {
     r_ nullptrsy.. pause

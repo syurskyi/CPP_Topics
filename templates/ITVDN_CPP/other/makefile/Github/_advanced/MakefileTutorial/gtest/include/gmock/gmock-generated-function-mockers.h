@@ -37,7 +37,7 @@
 //
 // This file implements function mockers of various arities.
 
-#ifndef GMOCK_INCLUDE_GMOCK_GMOCK_GENERATED_FUNCTION_MOCKERS_H_
+?i.. GMOCK_INCLUDE_GMOCK_GMOCK_GENERATED_FUNCTION_MOCKERS_H_
 _de.. GMOCK_INCLUDE_GMOCK_GMOCK_GENERATED_FUNCTION_MOCKERS_H_
 
 ? "gmock/gmock-spec-builders.h"
@@ -45,13 +45,13 @@ _de.. GMOCK_INCLUDE_GMOCK_GMOCK_GENERATED_FUNCTION_MOCKERS_H_
 
 #if GTEST_HAS_STD_FUNCTION_
 # include <functional>
-#endif
+e..
 
-namespace testing {
-namespace internal {
+n... testing {
+n... internal {
 
 template <typename F>
-class FunctionMockerBase;
+n.. FunctionMockerBase;
 
 // Note: class FunctionMocker really belongs to the ::testing
 // namespace.  However if we define it in ::testing, MSVC will
@@ -59,12 +59,12 @@ class FunctionMockerBase;
 // friend class template.  To workaround this compiler bug, we define
 // FunctionMocker in ::testing::internal and import it into ::testing.
 template <typename F>
-class FunctionMocker;
+n.. FunctionMocker;
 
 template <typename R>
-class FunctionMocker<R()> : public
+n.. FunctionMocker<R()> : public
     internal::FunctionMockerBase<R()> {
- public:
+ p..
   typedef R F();
   typedef typename internal::Function<F>::ArgumentTuple ArgumentTuple;
 
@@ -82,9 +82,9 @@ class FunctionMocker<R()> : public
 };
 
 template <typename R, typename A1>
-class FunctionMocker<R(A1)> : public
+n.. FunctionMocker<R(A1)> : public
     internal::FunctionMockerBase<R(A1)> {
- public:
+ p..
   typedef R F(A1);
   typedef typename internal::Function<F>::ArgumentTuple ArgumentTuple;
 
@@ -102,9 +102,9 @@ class FunctionMocker<R(A1)> : public
 };
 
 template <typename R, typename A1, typename A2>
-class FunctionMocker<R(A1, A2)> : public
+n.. FunctionMocker<R(A1, A2)> : public
     internal::FunctionMockerBase<R(A1, A2)> {
- public:
+ p..
   typedef R F(A1, A2);
   typedef typename internal::Function<F>::ArgumentTuple ArgumentTuple;
 
@@ -123,9 +123,9 @@ class FunctionMocker<R(A1, A2)> : public
 };
 
 template <typename R, typename A1, typename A2, typename A3>
-class FunctionMocker<R(A1, A2, A3)> : public
+n.. FunctionMocker<R(A1, A2, A3)> : public
     internal::FunctionMockerBase<R(A1, A2, A3)> {
- public:
+ p..
   typedef R F(A1, A2, A3);
   typedef typename internal::Function<F>::ArgumentTuple ArgumentTuple;
 
@@ -145,9 +145,9 @@ class FunctionMocker<R(A1, A2, A3)> : public
 };
 
 template <typename R, typename A1, typename A2, typename A3, typename A4>
-class FunctionMocker<R(A1, A2, A3, A4)> : public
+n.. FunctionMocker<R(A1, A2, A3, A4)> : public
     internal::FunctionMockerBase<R(A1, A2, A3, A4)> {
- public:
+ p..
   typedef R F(A1, A2, A3, A4);
   typedef typename internal::Function<F>::ArgumentTuple ArgumentTuple;
 
@@ -169,9 +169,9 @@ class FunctionMocker<R(A1, A2, A3, A4)> : public
 
 template <typename R, typename A1, typename A2, typename A3, typename A4,
     typename A5>
-class FunctionMocker<R(A1, A2, A3, A4, A5)> : public
+n.. FunctionMocker<R(A1, A2, A3, A4, A5)> : public
     internal::FunctionMockerBase<R(A1, A2, A3, A4, A5)> {
- public:
+ p..
   typedef R F(A1, A2, A3, A4, A5);
   typedef typename internal::Function<F>::ArgumentTuple ArgumentTuple;
 
@@ -193,9 +193,9 @@ class FunctionMocker<R(A1, A2, A3, A4, A5)> : public
 
 template <typename R, typename A1, typename A2, typename A3, typename A4,
     typename A5, typename A6>
-class FunctionMocker<R(A1, A2, A3, A4, A5, A6)> : public
+n.. FunctionMocker<R(A1, A2, A3, A4, A5, A6)> : public
     internal::FunctionMockerBase<R(A1, A2, A3, A4, A5, A6)> {
- public:
+ p..
   typedef R F(A1, A2, A3, A4, A5, A6);
   typedef typename internal::Function<F>::ArgumentTuple ArgumentTuple;
 
@@ -219,9 +219,9 @@ class FunctionMocker<R(A1, A2, A3, A4, A5, A6)> : public
 
 template <typename R, typename A1, typename A2, typename A3, typename A4,
     typename A5, typename A6, typename A7>
-class FunctionMocker<R(A1, A2, A3, A4, A5, A6, A7)> : public
+n.. FunctionMocker<R(A1, A2, A3, A4, A5, A6, A7)> : public
     internal::FunctionMockerBase<R(A1, A2, A3, A4, A5, A6, A7)> {
- public:
+ p..
   typedef R F(A1, A2, A3, A4, A5, A6, A7);
   typedef typename internal::Function<F>::ArgumentTuple ArgumentTuple;
 
@@ -245,9 +245,9 @@ class FunctionMocker<R(A1, A2, A3, A4, A5, A6, A7)> : public
 
 template <typename R, typename A1, typename A2, typename A3, typename A4,
     typename A5, typename A6, typename A7, typename A8>
-class FunctionMocker<R(A1, A2, A3, A4, A5, A6, A7, A8)> : public
+n.. FunctionMocker<R(A1, A2, A3, A4, A5, A6, A7, A8)> : public
     internal::FunctionMockerBase<R(A1, A2, A3, A4, A5, A6, A7, A8)> {
- public:
+ p..
   typedef R F(A1, A2, A3, A4, A5, A6, A7, A8);
   typedef typename internal::Function<F>::ArgumentTuple ArgumentTuple;
 
@@ -273,9 +273,9 @@ class FunctionMocker<R(A1, A2, A3, A4, A5, A6, A7, A8)> : public
 
 template <typename R, typename A1, typename A2, typename A3, typename A4,
     typename A5, typename A6, typename A7, typename A8, typename A9>
-class FunctionMocker<R(A1, A2, A3, A4, A5, A6, A7, A8, A9)> : public
+n.. FunctionMocker<R(A1, A2, A3, A4, A5, A6, A7, A8, A9)> : public
     internal::FunctionMockerBase<R(A1, A2, A3, A4, A5, A6, A7, A8, A9)> {
- public:
+ p..
   typedef R F(A1, A2, A3, A4, A5, A6, A7, A8, A9);
   typedef typename internal::Function<F>::ArgumentTuple ArgumentTuple;
 
@@ -303,9 +303,9 @@ class FunctionMocker<R(A1, A2, A3, A4, A5, A6, A7, A8, A9)> : public
 template <typename R, typename A1, typename A2, typename A3, typename A4,
     typename A5, typename A6, typename A7, typename A8, typename A9,
     typename A10>
-class FunctionMocker<R(A1, A2, A3, A4, A5, A6, A7, A8, A9, A10)> : public
+n.. FunctionMocker<R(A1, A2, A3, A4, A5, A6, A7, A8, A9, A10)> : public
     internal::FunctionMockerBase<R(A1, A2, A3, A4, A5, A6, A7, A8, A9, A10)> {
- public:
+ p..
   typedef R F(A1, A2, A3, A4, A5, A6, A7, A8, A9, A10);
   typedef typename internal::Function<F>::ArgumentTuple ArgumentTuple;
 
@@ -1144,11 +1144,11 @@ _de.. MOCK_CONST_METHOD10_T_WITH_CALLTYPE(ct, m, ...) \
 //   Foo(callback.AsStdFunction());
 // }
 template <typename F>
-class MockFunction;
+n.. MockFunction;
 
 template <typename R>
-class MockFunction<R()> {
- public:
+n.. MockFunction<R()> {
+ p..
   MockFunction() {}
 
   MOCK_METHOD0_T(Call, R());
@@ -1159,15 +1159,15 @@ class MockFunction<R()> {
       return this->Call();
     };
   }
-#endif  // GTEST_HAS_STD_FUNCTION_
+e..  // GTEST_HAS_STD_FUNCTION_
 
  private:
   GTEST_DISALLOW_COPY_AND_ASSIGN_(MockFunction);
 };
 
 template <typename R, typename A0>
-class MockFunction<R(A0)> {
- public:
+n.. MockFunction<R(A0)> {
+ p..
   MockFunction() {}
 
   MOCK_METHOD1_T(Call, R(A0));
@@ -1178,15 +1178,15 @@ class MockFunction<R(A0)> {
       return this->Call(::std::move(a0));
     };
   }
-#endif  // GTEST_HAS_STD_FUNCTION_
+e..  // GTEST_HAS_STD_FUNCTION_
 
  private:
   GTEST_DISALLOW_COPY_AND_ASSIGN_(MockFunction);
 };
 
 template <typename R, typename A0, typename A1>
-class MockFunction<R(A0, A1)> {
- public:
+n.. MockFunction<R(A0, A1)> {
+ p..
   MockFunction() {}
 
   MOCK_METHOD2_T(Call, R(A0, A1));
@@ -1197,15 +1197,15 @@ class MockFunction<R(A0, A1)> {
       return this->Call(::std::move(a0), ::std::move(a1));
     };
   }
-#endif  // GTEST_HAS_STD_FUNCTION_
+e..  // GTEST_HAS_STD_FUNCTION_
 
  private:
   GTEST_DISALLOW_COPY_AND_ASSIGN_(MockFunction);
 };
 
 template <typename R, typename A0, typename A1, typename A2>
-class MockFunction<R(A0, A1, A2)> {
- public:
+n.. MockFunction<R(A0, A1, A2)> {
+ p..
   MockFunction() {}
 
   MOCK_METHOD3_T(Call, R(A0, A1, A2));
@@ -1216,15 +1216,15 @@ class MockFunction<R(A0, A1, A2)> {
       return this->Call(::std::move(a0), ::std::move(a1), ::std::move(a2));
     };
   }
-#endif  // GTEST_HAS_STD_FUNCTION_
+e..  // GTEST_HAS_STD_FUNCTION_
 
  private:
   GTEST_DISALLOW_COPY_AND_ASSIGN_(MockFunction);
 };
 
 template <typename R, typename A0, typename A1, typename A2, typename A3>
-class MockFunction<R(A0, A1, A2, A3)> {
- public:
+n.. MockFunction<R(A0, A1, A2, A3)> {
+ p..
   MockFunction() {}
 
   MOCK_METHOD4_T(Call, R(A0, A1, A2, A3));
@@ -1236,7 +1236,7 @@ class MockFunction<R(A0, A1, A2, A3)> {
           ::std::move(a3));
     };
   }
-#endif  // GTEST_HAS_STD_FUNCTION_
+e..  // GTEST_HAS_STD_FUNCTION_
 
  private:
   GTEST_DISALLOW_COPY_AND_ASSIGN_(MockFunction);
@@ -1244,8 +1244,8 @@ class MockFunction<R(A0, A1, A2, A3)> {
 
 template <typename R, typename A0, typename A1, typename A2, typename A3,
     typename A4>
-class MockFunction<R(A0, A1, A2, A3, A4)> {
- public:
+n.. MockFunction<R(A0, A1, A2, A3, A4)> {
+ p..
   MockFunction() {}
 
   MOCK_METHOD5_T(Call, R(A0, A1, A2, A3, A4));
@@ -1257,7 +1257,7 @@ class MockFunction<R(A0, A1, A2, A3, A4)> {
           ::std::move(a3), ::std::move(a4));
     };
   }
-#endif  // GTEST_HAS_STD_FUNCTION_
+e..  // GTEST_HAS_STD_FUNCTION_
 
  private:
   GTEST_DISALLOW_COPY_AND_ASSIGN_(MockFunction);
@@ -1265,8 +1265,8 @@ class MockFunction<R(A0, A1, A2, A3, A4)> {
 
 template <typename R, typename A0, typename A1, typename A2, typename A3,
     typename A4, typename A5>
-class MockFunction<R(A0, A1, A2, A3, A4, A5)> {
- public:
+n.. MockFunction<R(A0, A1, A2, A3, A4, A5)> {
+ p..
   MockFunction() {}
 
   MOCK_METHOD6_T(Call, R(A0, A1, A2, A3, A4, A5));
@@ -1278,7 +1278,7 @@ class MockFunction<R(A0, A1, A2, A3, A4, A5)> {
           ::std::move(a3), ::std::move(a4), ::std::move(a5));
     };
   }
-#endif  // GTEST_HAS_STD_FUNCTION_
+e..  // GTEST_HAS_STD_FUNCTION_
 
  private:
   GTEST_DISALLOW_COPY_AND_ASSIGN_(MockFunction);
@@ -1286,8 +1286,8 @@ class MockFunction<R(A0, A1, A2, A3, A4, A5)> {
 
 template <typename R, typename A0, typename A1, typename A2, typename A3,
     typename A4, typename A5, typename A6>
-class MockFunction<R(A0, A1, A2, A3, A4, A5, A6)> {
- public:
+n.. MockFunction<R(A0, A1, A2, A3, A4, A5, A6)> {
+ p..
   MockFunction() {}
 
   MOCK_METHOD7_T(Call, R(A0, A1, A2, A3, A4, A5, A6));
@@ -1299,7 +1299,7 @@ class MockFunction<R(A0, A1, A2, A3, A4, A5, A6)> {
           ::std::move(a3), ::std::move(a4), ::std::move(a5), ::std::move(a6));
     };
   }
-#endif  // GTEST_HAS_STD_FUNCTION_
+e..  // GTEST_HAS_STD_FUNCTION_
 
  private:
   GTEST_DISALLOW_COPY_AND_ASSIGN_(MockFunction);
@@ -1307,8 +1307,8 @@ class MockFunction<R(A0, A1, A2, A3, A4, A5, A6)> {
 
 template <typename R, typename A0, typename A1, typename A2, typename A3,
     typename A4, typename A5, typename A6, typename A7>
-class MockFunction<R(A0, A1, A2, A3, A4, A5, A6, A7)> {
- public:
+n.. MockFunction<R(A0, A1, A2, A3, A4, A5, A6, A7)> {
+ p..
   MockFunction() {}
 
   MOCK_METHOD8_T(Call, R(A0, A1, A2, A3, A4, A5, A6, A7));
@@ -1321,7 +1321,7 @@ class MockFunction<R(A0, A1, A2, A3, A4, A5, A6, A7)> {
           ::std::move(a7));
     };
   }
-#endif  // GTEST_HAS_STD_FUNCTION_
+e..  // GTEST_HAS_STD_FUNCTION_
 
  private:
   GTEST_DISALLOW_COPY_AND_ASSIGN_(MockFunction);
@@ -1329,8 +1329,8 @@ class MockFunction<R(A0, A1, A2, A3, A4, A5, A6, A7)> {
 
 template <typename R, typename A0, typename A1, typename A2, typename A3,
     typename A4, typename A5, typename A6, typename A7, typename A8>
-class MockFunction<R(A0, A1, A2, A3, A4, A5, A6, A7, A8)> {
- public:
+n.. MockFunction<R(A0, A1, A2, A3, A4, A5, A6, A7, A8)> {
+ p..
   MockFunction() {}
 
   MOCK_METHOD9_T(Call, R(A0, A1, A2, A3, A4, A5, A6, A7, A8));
@@ -1344,7 +1344,7 @@ class MockFunction<R(A0, A1, A2, A3, A4, A5, A6, A7, A8)> {
           ::std::move(a7), ::std::move(a8));
     };
   }
-#endif  // GTEST_HAS_STD_FUNCTION_
+e..  // GTEST_HAS_STD_FUNCTION_
 
  private:
   GTEST_DISALLOW_COPY_AND_ASSIGN_(MockFunction);
@@ -1353,8 +1353,8 @@ class MockFunction<R(A0, A1, A2, A3, A4, A5, A6, A7, A8)> {
 template <typename R, typename A0, typename A1, typename A2, typename A3,
     typename A4, typename A5, typename A6, typename A7, typename A8,
     typename A9>
-class MockFunction<R(A0, A1, A2, A3, A4, A5, A6, A7, A8, A9)> {
- public:
+n.. MockFunction<R(A0, A1, A2, A3, A4, A5, A6, A7, A8, A9)> {
+ p..
   MockFunction() {}
 
   MOCK_METHOD10_T(Call, R(A0, A1, A2, A3, A4, A5, A6, A7, A8, A9));
@@ -1368,7 +1368,7 @@ class MockFunction<R(A0, A1, A2, A3, A4, A5, A6, A7, A8, A9)> {
           ::std::move(a7), ::std::move(a8), ::std::move(a9));
     };
   }
-#endif  // GTEST_HAS_STD_FUNCTION_
+e..  // GTEST_HAS_STD_FUNCTION_
 
  private:
   GTEST_DISALLOW_COPY_AND_ASSIGN_(MockFunction);
@@ -1376,4 +1376,4 @@ class MockFunction<R(A0, A1, A2, A3, A4, A5, A6, A7, A8, A9)> {
 
 }  // namespace testing
 
-#endif  // GMOCK_INCLUDE_GMOCK_GMOCK_GENERATED_FUNCTION_MOCKERS_H_
+e..  // GMOCK_INCLUDE_GMOCK_GMOCK_GENERATED_FUNCTION_MOCKERS_H_

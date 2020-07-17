@@ -1,4 +1,4 @@
-#ifndef DECORATOR_H
+?i.. DECORATOR_H
 _de.. DECORATOR_H
 
 ? "meta_strategy.h"
@@ -6,56 +6,56 @@ _de.. DECORATOR_H
 ? <memory>
 ? <string>
 
-class Interface
+n.. Interface
 {
-public:
-    virtual ~Interface() = default;
-    virtual v.. write( std::string& ) = 0;
+p..
+    v.. ~Interface() = default;
+    v.. v.. write( std::string& ) = 0;
 };
 
-class Core : public Interface
+n.. Core : public Interface
 {
-public:
+p..
     ~Core() override;
     v.. write( std::string& text ) override;
 };
 
-class Decorator : public Interface
+n.. Decorator : public Interface
 {
 private:
     std::unique_ptr< Interface > interface;
 
-public:
+p..
     Decorator( std::unique_ptr< Interface > c );
     v.. write( std::string& text ) override;
 };
 
-class MessengerWithSalutation : public Decorator
+n.. MessengerWithSalutation : public Decorator
 {
 private:
     std::string salutation;
 
-public:
+p..
     MessengerWithSalutation( std::unique_ptr< Interface > c, const std::string& str );
     ~MessengerWithSalutation() override;
     v.. write( std::string& text ) override;
 };
 
-class MessengerWithValediction : public Decorator
+n.. MessengerWithValediction : public Decorator
 {
 private:
     std::string valediction;
 
-public:
+p..
     MessengerWithValediction( std::unique_ptr< Interface > c, const std::string& str );
     ~MessengerWithValediction() override;
     v.. write( std::string& text ) override;
 };
 
-class ClientDecorator : public MetaStrategy
+n.. ClientDecorator : public MetaStrategy
 {
-public:
+p..
     v.. run() override;
 };
 
-#endif // DECORATOR_H
+e.. // DECORATOR_H

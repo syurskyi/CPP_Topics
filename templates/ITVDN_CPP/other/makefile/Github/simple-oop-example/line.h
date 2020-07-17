@@ -1,8 +1,8 @@
 #pragma once
 
-class line
+n.. line
 {
-public:
+p..
 	line(double new_x1, double new_y1, double new_x2, double new_y2);
 
 	double get_x0(); //returns starting x coordinate

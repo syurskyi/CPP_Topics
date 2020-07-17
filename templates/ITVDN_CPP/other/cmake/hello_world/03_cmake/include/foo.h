@@ -1,6 +1,6 @@
-#ifndef foo_h__
+?i.. foo_h__
 _de.. foo_h__
  
 extern v.. foo(v..);
  
-#endif  // foo_h__
+e..  // foo_h__

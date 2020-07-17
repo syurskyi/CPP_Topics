@@ -1,5 +1,5 @@
 
-class Chocolate {
-public:
+n.. Chocolate {
+p..
     Chocolate();
 };

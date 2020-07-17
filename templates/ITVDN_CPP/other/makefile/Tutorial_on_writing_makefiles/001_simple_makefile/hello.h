@@ -1,13 +1,13 @@
 ?|i..
-#ifndef HELLO_H
+?i.. HELLO_H
 _de.. HELLO_H
 u.. s..
 
-class Hello
+n.. Hello
 {
-  public:
+  p..
   Hello() { };
 
   v.. kevin();
 };
-#endif
+e..

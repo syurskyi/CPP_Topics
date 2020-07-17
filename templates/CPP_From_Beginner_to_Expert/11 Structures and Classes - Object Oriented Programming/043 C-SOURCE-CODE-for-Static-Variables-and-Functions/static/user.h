@@ -1,15 +1,15 @@
-#ifndef USER_H_INCLUDED
+?i.. USER_H_INCLUDED
 _de.. USER_H_INCLUDED
 
-class User
+n.. User
 {
         int ID;
         static int counter;
-    public:
+    p..
         User();
         ~User();
         int getID() { return ID; }
         static int getCounter() { return counter; }
 };
 
-#endif // USER_H_INCLUDED
+e.. // USER_H_INCLUDED

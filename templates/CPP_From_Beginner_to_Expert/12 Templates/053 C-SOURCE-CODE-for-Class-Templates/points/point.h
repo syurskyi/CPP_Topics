@@ -1,15 +1,15 @@
-#ifndef POINT_H_INCLUDED
+?i.. POINT_H_INCLUDED
 _de.. POINT_H_INCLUDED
 ? |i..
 
 u.. s..
 
 template<typename T>
-class Point //base, parent, superclass
+n.. Point //base, parent, superclass
 {
     protected:
         T x;
-    public:
+    p..
         Point(T =0);
         ~Point();
         T getX();
@@ -45,18 +45,18 @@ double Point<double>::getX()
 }
 
 template<typename K>
-class Point<K*>
+n.. Point<K*>
 {
-    public:
+    p..
         Point(K a=0) { cout << "you can't use pointers here"; }
 };
 
 template <typename T>
-class Point2D : public Point<T> //derived, child, subclass
+n.. Point2D : public Point<T> //derived, child, subclass
 {
     protected:
         T y;
-    public:
+    p..
         Point2D(T =0, T =0);
         ~Point2D();
         T getY() { return y; }
@@ -112,9 +112,9 @@ class Point3D : public Point2D
 */
 
 template<>
-class Point<char>
+n.. Point<char>
 {
-        public:
+        p..
             Point(char a=0) { cout << "this is from Point<char>";}
 };
 /*
@@ -138,4 +138,4 @@ class Point<char>
     public - private
 
 */
-#endif // POINT_H_INCLUDED
+e.. // POINT_H_INCLUDED

@@ -1,4 +1,4 @@
-#ifndef PATTERNS_H
+?i.. PATTERNS_H
 _de.. PATTERNS_H
 
 ? "builder.h"
@@ -8,4 +8,4 @@ _de.. PATTERNS_H
 ? "oldobserver.h"
 ? "strategy.h"
 
-#endif // PATTERNS_H
+e.. // PATTERNS_H

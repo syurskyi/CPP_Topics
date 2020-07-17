@@ -1,9 +1,9 @@
-#ifndef TEST_H_INCLUDED
+?i.. TEST_H_INCLUDED
 _de.. TEST_H_INCLUDED
 
-class Test
+n.. Test
 {
-    public:
+    p..
         int x;
         int y;
         int *p;
@@ -12,4 +12,4 @@ class Test
         ~Test();
 };
 
-#endif // TEST_H_INCLUDED
+e.. // TEST_H_INCLUDED

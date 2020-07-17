@@ -1,27 +1,27 @@
-/*
- * Animals.h
- *
- *  Created on: 22 Jul 2014
- *      Author: johnwpurcell
- */
-
-#ifndef ANIMALS_H_
-_de.. ANIMALS_H_
-
-#include <iostream>
-using namespace std;
-
-namespace jwp {
-
-const string CATNAME = "Tiddles";
-
-class Cat {
-public:
-	Cat();
-	virtual ~Cat();
-	v.. speak();
-};
-
-} /* namespace jwp */
-
-#endif /* ANIMALS_H_ */
+///*
+// * Animals.h
+// *
+// *  Created on: 22 Jul 2014
+// *      Author: johnwpurcell
+// */
+//
+//?i.. ANIMALS_H_
+//_de.. ANIMALS_H_
+//
+//? ios..
+//u... s..
+//
+//n... jwp
+//
+//co.. st.. CATNAME _ "Tiddles"
+//
+//c.. Cat
+//p..
+//	?
+//	v.. #?
+//	v.. sp..
+//
+//
+// /* namespace jwp */
+//
+//e.. /* ANIMALS_H_ */

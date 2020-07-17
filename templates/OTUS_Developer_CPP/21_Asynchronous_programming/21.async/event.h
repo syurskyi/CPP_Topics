@@ -1,6 +1,6 @@
 #pragma once
 
-enum class EventCode {
+enum n.. EventCode {
     start, new_doc, quit
 };
 

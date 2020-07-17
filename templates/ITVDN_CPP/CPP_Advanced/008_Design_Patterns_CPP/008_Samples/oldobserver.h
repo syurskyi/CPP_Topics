@@ -1,52 +1,52 @@
-#ifndef OLDOBSERVER_H
+?i.. OLDOBSERVER_H
 _de.. OLDOBSERVER_H
 
 ? "meta_strategy.h"
 ? |i..
 ? <vector>
 
-class Observer
+n.. Observer
 {
-public:
+p..
     Observer() = default;
-    virtual ~Observer() = default;
-    virtual v.. update( int value ) = 0;
+    v.. ~Observer() = default;
+    v.. v.. update( int value ) = 0;
 };
 
-class Subject
+n.. Subject
 {
     int m_value;
     std::vector< Observer* > m_views;
 
-public:
+p..
     v.. attach( Observer* obs );
     v.. set_val( int value );
     v.. notify();
 };
 
-class DivObserver : public Observer
+n.. DivObserver : public Observer
 {
     int m_div;
 
-public:
+p..
     DivObserver( Subject* model, int div );
 
     v.. update( int v ) override;
 };
 
-class ModObserver : public Observer
+n.. ModObserver : public Observer
 {
     int m_mod;
 
-public:
+p..
     ModObserver( Subject* model, int mod );
     v.. update( int v ) override;
 };
 
-class ClientOldObserver : public MetaStrategy
+n.. ClientOldObserver : public MetaStrategy
 {
-public:
+p..
     v.. run() override;
 };
 
-#endif // OLDOBSERVER_H
+e.. // OLDOBSERVER_H

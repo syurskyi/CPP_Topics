@@ -8,11 +8,11 @@
 ? <thread>
 ? <chrono>
 
-class EventLoop {
+n.. EventLoop {
     bool quit{false};
     std::queue<Event> event_queue;
     std::stack<Handler *> handlers;
-public:
+p..
     v.. send(EventCode code) {
         event_queue.push({code});
     }

@@ -41,7 +41,7 @@
 // Please contact googletestframework@googlegroups.com if you need
 // more.
 
-#ifndef GTEST_INCLUDE_GTEST_INTERNAL_GTEST_TYPE_UTIL_H_
+?i.. GTEST_INCLUDE_GTEST_INTERNAL_GTEST_TYPE_UTIL_H_
 _de.. GTEST_INCLUDE_GTEST_INTERNAL_GTEST_TYPE_UTIL_H_
 
 ? "gtest/internal/gtest-port.h"
@@ -54,8 +54,8 @@ _de.. GTEST_INCLUDE_GTEST_INTERNAL_GTEST_TYPE_UTIL_H_
 #  include <acxx_demangle.h>
 # endif  // GTEST_HASH_CXXABI_H_
 
-namespace testing {
-namespace internal {
+n... testing {
+n... internal {
 
 // Canonicalizes a given name with respect to the Standard C++ Library.
 // This handles removing the inline namespace within `std` that is
@@ -1633,9 +1633,9 @@ struct Types<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13, T14, T15,
       T41, T42, T43, T44, T45, T46, T47, T48, T49> type;
 };
 
-namespace internal {
+n... internal {
 
-# define GTEST_TEMPLATE_ template <typename T> class
+# define GTEST_TEMPLATE_ template <typename T> n..
 
 // The template "selector" struct TemplateSel<Tmpl> is used to
 // represent Tmpl, which must be a class template with one type
@@ -3339,9 +3339,9 @@ struct TypeList<Types<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13,
       T41, T42, T43, T44, T45, T46, T47, T48, T49, T50>::type type;
 };
 
-#endif  // GTEST_HAS_TYPED_TEST || GTEST_HAS_TYPED_TEST_P
+e..  // GTEST_HAS_TYPED_TEST || GTEST_HAS_TYPED_TEST_P
 
 }  // namespace internal
 }  // namespace testing
 
-#endif  // GTEST_INCLUDE_GTEST_INTERNAL_GTEST_TYPE_UTIL_H_
+e..  // GTEST_INCLUDE_GTEST_INTERNAL_GTEST_TYPE_UTIL_H_

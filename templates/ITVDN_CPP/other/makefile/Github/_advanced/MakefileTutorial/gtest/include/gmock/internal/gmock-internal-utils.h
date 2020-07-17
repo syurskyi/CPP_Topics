@@ -35,7 +35,7 @@
 // Mock.  They are subject to change without notice, so please DO NOT
 // USE THEM IN USER CODE.
 
-#ifndef GMOCK_INCLUDE_GMOCK_INTERNAL_GMOCK_INTERNAL_UTILS_H_
+?i.. GMOCK_INCLUDE_GMOCK_INTERNAL_GMOCK_INTERNAL_UTILS_H_
 _de.. GMOCK_INCLUDE_GMOCK_INTERNAL_GMOCK_INTERNAL_UTILS_H_
 
 ? <stdio.h>
@@ -45,8 +45,8 @@ _de.. GMOCK_INCLUDE_GMOCK_INTERNAL_GMOCK_INTERNAL_UTILS_H_
 ? "gmock/internal/gmock-port.h"
 ? "gtest/gtest.h"
 
-namespace testing {
-namespace internal {
+n... testing {
+n... internal {
 
 // Silence MSVC C4100 (unreferenced formal parameter) and
 // C4805('==': unsafe mix of type 'const int' and type 'const bool')
@@ -54,7 +54,7 @@ namespace internal {
 # pragma warning(push)
 # pragma warning(disable:4100)
 # pragma warning(disable:4805)
-#endif
+e..
 
 // Joins a vector of strings as if they are fields of a tuple; returns
 // the joined string.
@@ -113,7 +113,7 @@ struct LinkedPtrLessThan {
 // wchar_t is a typedef.
 #else
 # define GMOCK_WCHAR_T_IS_NATIVE_ 1
-#endif
+e..
 
 // signed wchar_t and unsigned wchar_t are NOT in the C++ standard.
 // Using them is a bad practice and not portable.  So DON'T use them.
@@ -128,8 +128,8 @@ struct LinkedPtrLessThan {
 #if !defined(__WCHAR_UNSIGNED__)
 // signed/unsigned wchar_t are valid types.
 # define GMOCK_HAS_SIGNED_WCHAR_T_ 1
-#endif
-#endif
+e..
+e..
 
 // In what follows, we use the term "kind" to indicate whether a type
 // is bool, an integer type (excluding bool), a floating-point type,
@@ -164,7 +164,7 @@ GMOCK_DECLARE_KIND_(unsigned long, kInteger);  // NOLINT
 
 #if GMOCK_WCHAR_T_IS_NATIVE_
 GMOCK_DECLARE_KIND_(wchar_t, kInteger);
-#endif
+e..
 
 // Non-standard integer types.
 GMOCK_DECLARE_KIND_(Int64, kInteger);
@@ -269,17 +269,17 @@ struct LosslessArithmeticConvertible
 
 // This interface knows how to report a Google Mock failure (either
 // non-fatal or fatal).
-class FailureReporterInterface {
- public:
+n.. FailureReporterInterface {
+ p..
   // The type of a failure (either non-fatal or fatal).
   enum FailureType {
     kNonfatal, kFatal
   };
 
-  virtual ~FailureReporterInterface() {}
+  v.. ~FailureReporterInterface() {}
 
   // Reports a failure that occurred at the given source file location.
-  virtual v.. ReportFailure(FailureType type, const char* file, int line,
+  v.. v.. ReportFailure(FailureType type, const char* file, int line,
                              const std::string& message) = 0;
 };
 
@@ -350,7 +350,7 @@ GTEST_API_ v.. Log(LogSeverity severity, const std::string& message,
 //
 //    ON_CALL(mock, Method({}, nullptr))…
 //
-class WithoutMatchers {
+n.. WithoutMatchers {
  private:
   WithoutMatchers() {}
   friend GTEST_API_ WithoutMatchers GetWithoutMatchers();
@@ -393,7 +393,7 @@ template <typename T> struct DecayArray<T[]> {
 #ifdef _MSC_VER
 # pragma warning(push)
 # pragma warning(disable:4717)
-#endif
+e..
 
 // Invalid<T>() is usable as an expression of type T, but will terminate
 // the program with an assertion failure if actually run.  This is useful
@@ -411,7 +411,7 @@ inline T Invalid() {
 
 #ifdef _MSC_VER
 # pragma warning(pop)
-#endif
+e..
 
 // Given a raw type (i.e. having no top-level reference or const
 // modifier) RawContainer that's either an STL-style container or a
@@ -429,9 +429,9 @@ inline T Invalid() {
 //
 // This generic version is used when RawContainer itself is already an
 // STL-style container.
-template <class RawContainer>
-class StlContainerView {
- public:
+template <n.. RawContainer>
+n.. StlContainerView {
+ p..
   typedef RawContainer type;
   typedef const type& const_reference;
 
@@ -446,8 +446,8 @@ class StlContainerView {
 
 // This specialization is used when RawContainer is a native array type.
 template <typename Element, size_t N>
-class StlContainerView<Element[N]> {
- public:
+n.. StlContainerView<Element[N]> {
+ p..
   typedef GTEST_REMOVE_CONST_(Element) RawElement;
   typedef internal::NativeArray<RawElement> type;
   // NativeArray<T> can represent a native array either by value or by
@@ -478,22 +478,22 @@ class StlContainerView<Element[N]> {
                 RelationToSourceReference());
 #else
     return type(array, N, RelationToSourceReference());
-#endif  // GTEST_OS_SYMBIAN
+e..  // GTEST_OS_SYMBIAN
   }
   static type Copy(const Element (&array)[N]) {
 #if GTEST_OS_SYMBIAN
     return type(const_cast<Element*>(&array[0]), N, RelationToSourceCopy());
 #else
     return type(array, N, RelationToSourceCopy());
-#endif  // GTEST_OS_SYMBIAN
+e..  // GTEST_OS_SYMBIAN
   }
 };
 
 // This specialization is used when RawContainer is a native array
 // represented as a (pointer, size) tuple.
 template <typename ElementPointer, typename Size>
-class StlContainerView< ::testing::tuple<ElementPointer, Size> > {
- public:
+n.. StlContainerView< ::testing::tuple<ElementPointer, Size> > {
+ p..
   typedef GTEST_REMOVE_CONST_(
       typename internal::PointeeOf<ElementPointer>::type) RawElement;
   typedef internal::NativeArray<RawElement> type;
@@ -510,7 +510,7 @@ class StlContainerView< ::testing::tuple<ElementPointer, Size> > {
 
 // The following specialization prevents the user from instantiating
 // StlContainer with a reference type.
-template <typename T> class StlContainerView<T&>;
+template <typename T> n.. StlContainerView<T&>;
 
 // A type transform to remove constness from the first part of a pair.
 // Pairs like that are used as the value_type of associative containers,
@@ -539,7 +539,7 @@ GTEST_API_ v.. IllegalDoDefault(const char* file, int line);
 // Helper types for Apply() below.
 template <size_t... Is> struct int_pack { typedef int_pack type; };
 
-template <class Pack, size_t I> struct append;
+template <n.. Pack, size_t I> struct append;
 template <size_t... Is, size_t I>
 struct append<int_pack<Is...>, I> : int_pack<Is..., I> {};
 
@@ -561,14 +561,14 @@ auto Apply(F&& f, Tuple&& args)
   return ApplyImpl(std::forward<F>(f), std::forward<Tuple>(args),
                    make_int_pack<std::tuple_size<Tuple>::value>());
 }
-#endif
+e..
 
 
 #ifdef _MSC_VER
 # pragma warning(pop)
-#endif
+e..
 
 }  // namespace internal
 }  // namespace testing
 
-#endif  // GMOCK_INCLUDE_GMOCK_INTERNAL_GMOCK_INTERNAL_UTILS_H_
+e..  // GMOCK_INCLUDE_GMOCK_INTERNAL_GMOCK_INTERNAL_UTILS_H_

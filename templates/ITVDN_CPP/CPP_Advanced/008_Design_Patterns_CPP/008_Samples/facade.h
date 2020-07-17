@@ -1,39 +1,39 @@
-#ifndef FACADE_H
+?i.. FACADE_H
 _de.. FACADE_H
 
 ? "meta_strategy.h"
 
-class Alarm
+n.. Alarm
 {
-public:
+p..
     v.. alarmOn();
 
     v.. alarmOff();
 };
 
-class Ac
+n.. Ac
 {
-public:
+p..
     v.. acOn();
 
     v.. acOff();
 };
 
-class Tv
+n.. Tv
 {
-public:
+p..
     v.. tvOn();
 
     v.. tvOff();
 };
 
-class HouseFacade
+n.. HouseFacade
 {
     Alarm alarm;
     Ac ac;
     Tv tv;
 
-public:
+p..
     HouseFacade();
 
     v.. goToWork();
@@ -41,12 +41,12 @@ public:
     v.. comeHome();
 };
 
-class ClientFacade : public MetaStrategy
+n.. ClientFacade : public MetaStrategy
 {
-public:
+p..
     ClientFacade() = default;
 
     v.. run() override;
 };
 
-#endif
+e..

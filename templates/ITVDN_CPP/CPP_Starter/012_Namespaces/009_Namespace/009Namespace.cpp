@@ -1,13 +1,13 @@
 ﻿? *s..
 ? |i..
 
-namespace NamespaceA {
+n.. NamespaceA {
 	struct MyStructA {
 
 	}sy.. pause
 }sy.. pause
 
-namespace NamespaceA {
+n.. NamespaceA {
 	// Нельзя создавать типы с одинаковым именем в одноименных пространствах имен
 	/*struct MyStructA {
 

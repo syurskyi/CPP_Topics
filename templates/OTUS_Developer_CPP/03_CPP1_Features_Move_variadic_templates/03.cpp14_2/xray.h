@@ -23,7 +23,7 @@ struct xray {
         x.swap(rhs.x);
     }
 
-#endif
+e..
 
     ~xray()
     {
@@ -44,5 +44,5 @@ struct xray {
         return *this;
     }
 
-#endif
+e..
 };

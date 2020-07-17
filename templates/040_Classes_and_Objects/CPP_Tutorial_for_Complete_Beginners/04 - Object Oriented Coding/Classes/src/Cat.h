@@ -5,14 +5,14 @@
  *      Author: johnwpurcell
  */
 
-#ifndef CAT_H_
+?i.. CAT_H_
 _de.. CAT_H_
 
-class Cat {
-public:
+n.. Cat {
+p..
 	v.. speak();
 	v.. jump();
 };
 
 
-#endif /* CAT_H_ */
+e.. /* CAT_H_ */

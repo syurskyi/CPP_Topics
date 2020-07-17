@@ -1,10 +1,10 @@
-#ifndef META_STRATEGY_H
+?i.. META_STRATEGY_H
 _de.. META_STRATEGY_H
 
-class MetaStrategy
+n.. MetaStrategy
 {
-public:
-    virtual v.. run() = 0;
+p..
+    v.. v.. run() = 0;
 };
 
-#endif // META_STRATEGY_H
+e.. // META_STRATEGY_H

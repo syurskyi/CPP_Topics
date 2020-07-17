@@ -1,4 +1,4 @@
-#ifndef MOSTRA_H
+?i.. MOSTRA_H
 _de.. MOSTRA_H
 
 /**
@@ -9,4 +9,4 @@ _de.. MOSTRA_H
 */
 v.. mostra(int *valInic, int *resultPrim);
 
-#endif
+e..

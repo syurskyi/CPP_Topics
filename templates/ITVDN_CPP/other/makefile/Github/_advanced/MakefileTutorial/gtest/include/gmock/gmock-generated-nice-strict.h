@@ -63,17 +63,17 @@
 // In particular, nesting NiceMock, NaggyMock, and StrictMock is NOT
 // supported.
 
-#ifndef GMOCK_INCLUDE_GMOCK_GMOCK_GENERATED_NICE_STRICT_H_
+?i.. GMOCK_INCLUDE_GMOCK_GMOCK_GENERATED_NICE_STRICT_H_
 _de.. GMOCK_INCLUDE_GMOCK_GMOCK_GENERATED_NICE_STRICT_H_
 
 ? "gmock/gmock-spec-builders.h"
 ? "gmock/internal/gmock-port.h"
 
-namespace testing {
+n... testing {
 
-template <class MockClass>
-class NiceMock : public MockClass {
- public:
+template <n.. MockClass>
+n.. NiceMock : public MockClass {
+ p..
   NiceMock() : MockClass() {
     ::testing::Mock::AllowUninterestingCalls(
         internal::ImplicitCast_<MockClass*>(this));
@@ -178,7 +178,7 @@ class NiceMock : public MockClass {
         internal::ImplicitCast_<MockClass*>(this));
   }
 
-#endif  // GTEST_LANG_CXX11
+e..  // GTEST_LANG_CXX11
 
   ~NiceMock() {
     ::testing::Mock::UnregisterCallReaction(
@@ -189,9 +189,9 @@ class NiceMock : public MockClass {
   GTEST_DISALLOW_COPY_AND_ASSIGN_(NiceMock);
 };
 
-template <class MockClass>
-class NaggyMock : public MockClass {
- public:
+template <n.. MockClass>
+n.. NaggyMock : public MockClass {
+ p..
   NaggyMock() : MockClass() {
     ::testing::Mock::WarnUninterestingCalls(
         internal::ImplicitCast_<MockClass*>(this));
@@ -296,7 +296,7 @@ class NaggyMock : public MockClass {
         internal::ImplicitCast_<MockClass*>(this));
   }
 
-#endif  // GTEST_LANG_CXX11
+e..  // GTEST_LANG_CXX11
 
   ~NaggyMock() {
     ::testing::Mock::UnregisterCallReaction(
@@ -307,9 +307,9 @@ class NaggyMock : public MockClass {
   GTEST_DISALLOW_COPY_AND_ASSIGN_(NaggyMock);
 };
 
-template <class MockClass>
-class StrictMock : public MockClass {
- public:
+template <n.. MockClass>
+n.. StrictMock : public MockClass {
+ p..
   StrictMock() : MockClass() {
     ::testing::Mock::FailUninterestingCalls(
         internal::ImplicitCast_<MockClass*>(this));
@@ -414,7 +414,7 @@ class StrictMock : public MockClass {
         internal::ImplicitCast_<MockClass*>(this));
   }
 
-#endif  // GTEST_LANG_CXX11
+e..  // GTEST_LANG_CXX11
 
   ~StrictMock() {
     ::testing::Mock::UnregisterCallReaction(
@@ -433,26 +433,26 @@ class StrictMock : public MockClass {
 // NaggyMock, and StrictMock cannot be nested.
 
 template <typename MockClass>
-class NiceMock<NiceMock<MockClass> >;
+n.. NiceMock<NiceMock<MockClass> >;
 template <typename MockClass>
-class NiceMock<NaggyMock<MockClass> >;
+n.. NiceMock<NaggyMock<MockClass> >;
 template <typename MockClass>
-class NiceMock<StrictMock<MockClass> >;
+n.. NiceMock<StrictMock<MockClass> >;
 
 template <typename MockClass>
-class NaggyMock<NiceMock<MockClass> >;
+n.. NaggyMock<NiceMock<MockClass> >;
 template <typename MockClass>
-class NaggyMock<NaggyMock<MockClass> >;
+n.. NaggyMock<NaggyMock<MockClass> >;
 template <typename MockClass>
-class NaggyMock<StrictMock<MockClass> >;
+n.. NaggyMock<StrictMock<MockClass> >;
 
 template <typename MockClass>
-class StrictMock<NiceMock<MockClass> >;
+n.. StrictMock<NiceMock<MockClass> >;
 template <typename MockClass>
-class StrictMock<NaggyMock<MockClass> >;
+n.. StrictMock<NaggyMock<MockClass> >;
 template <typename MockClass>
-class StrictMock<StrictMock<MockClass> >;
+n.. StrictMock<StrictMock<MockClass> >;
 
 }  // namespace testing
 
-#endif  // GMOCK_INCLUDE_GMOCK_GMOCK_GENERATED_NICE_STRICT_H_
+e..  // GMOCK_INCLUDE_GMOCK_GMOCK_GENERATED_NICE_STRICT_H_

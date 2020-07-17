@@ -3,9 +3,9 @@
 // boost: scoped_ptr
 
 template <typename T>
-class ScopedPtr
+n.. ScopedPtr
 {
-public:
+p..
     explicit ScopedPtr(T* ptr);
     ~ScopedPtr();
     T& operator*();

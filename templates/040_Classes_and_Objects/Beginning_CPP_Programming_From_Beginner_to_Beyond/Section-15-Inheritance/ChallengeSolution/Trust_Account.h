@@ -1,9 +1,9 @@
-#ifndef _TRUST_ACCOUNT_H_
+?i.. _TRUST_ACCOUNT_H_
 _de.. _TRUST_ACCOUNT_H_
 
-#include "Savings_Account.h"
+? "Savings_Account.h"
 
-class Trust_Account : public Savings_Account {
+n.. Trust_Account : public Savings_Account {
     friend std::ostream &operator<<(std::ostream &os, const Trust_Account &account);
 private:
     static constexpr const char *def_name = "Unnamed Trust Account";
@@ -15,7 +15,7 @@ private:
     static constexpr double max_withdraw_percent = 0.2;
 protected:
     int num_withdrawals;
-public:
+p..
     Trust_Account(std::string name = def_name,  double balance = def_balance, double int_rate = def_int_rate);
     
     // Deposits of $5000.00 or more will receive $50 bonus
@@ -25,4 +25,4 @@ public:
     bool withdraw(double amount);
 };
 
-#endif // _TRUST_ACCOUNT_H_
+e.. // _TRUST_ACCOUNT_H_

@@ -1,11 +1,11 @@
-#ifndef RECTANGLE_H
+?i.. RECTANGLE_H
 _de.. RECTANGLE_H
 
 ? "Point.h"
 
-class Rectangle
+n.. Rectangle
 {
-public:
+p..
 	Rectangle();
 	Rectangle(Point bottomLeft, Point topRight);
 
@@ -13,4 +13,4 @@ private:
 	Point m_bottomLeft, m_topRight;
 };
 
-#endif
+e..

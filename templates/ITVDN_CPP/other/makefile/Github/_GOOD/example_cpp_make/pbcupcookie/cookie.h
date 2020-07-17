@@ -2,8 +2,8 @@
 ? "eggs.h"
 ? "butter.h"
 
-class Cookie {
-public:
+n.. Cookie {
+p..
     Cookie(Sugar& s, Eggs& e, Butter& b);
 
 private:

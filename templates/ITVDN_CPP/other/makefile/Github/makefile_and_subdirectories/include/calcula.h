@@ -1,4 +1,4 @@
-#ifndef CALCULA_H
+?i.. CALCULA_H
 _de.. CALCULA_H
 
 /**
@@ -16,4 +16,4 @@ int fatorial(int *val);
 */
 int primo(int *resultFat, int *chk);
 
-#endif
+e..

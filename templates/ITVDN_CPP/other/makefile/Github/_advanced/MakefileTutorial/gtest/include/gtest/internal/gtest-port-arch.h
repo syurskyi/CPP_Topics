@@ -32,7 +32,7 @@
 // This header file defines the GTEST_OS_* macro.
 // It is separate from gtest-port.h so that custom/gtest-port.h can include it.
 
-#ifndef GTEST_INCLUDE_GTEST_INTERNAL_GTEST_PORT_ARCH_H_
+?i.. GTEST_INCLUDE_GTEST_INTERNAL_GTEST_PORT_ARCH_H_
 _de.. GTEST_INCLUDE_GTEST_INTERNAL_GTEST_PORT_ARCH_H_
 
 // Determines the platform on which Google Test is compiled.
@@ -95,6 +95,6 @@ _de.. GTEST_INCLUDE_GTEST_INTERNAL_GTEST_PORT_ARCH_H_
 # define GTEST_OS_OPENBSD 1
 #elif defined __QNX__
 # define GTEST_OS_QNX 1
-#endif  // __CYGWIN__
+e..  // __CYGWIN__
 
-#endif  // GTEST_INCLUDE_GTEST_INTERNAL_GTEST_PORT_ARCH_H_
+e..  // GTEST_INCLUDE_GTEST_INTERNAL_GTEST_PORT_ARCH_H_

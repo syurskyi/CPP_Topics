@@ -1,13 +1,13 @@
 ? |i..
 u.. s..
 
-#ifndef NAME_H
+?i.. NAME_H
 _de.. NAME_H
-class Name
+n.. Name
 {
-  public:
+  p..
     Name() { };
     v.. mynameis();
 };
-#endif
+e..
 

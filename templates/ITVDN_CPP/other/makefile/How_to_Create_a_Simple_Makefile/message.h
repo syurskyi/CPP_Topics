@@ -2,12 +2,12 @@
 // Created by syurskyi on 6/30/2020.
 //
 
-#ifndef MESSAGE_H
+?i.. MESSAGE_H
 _de.. MESSAGE_H
 
-class message{
-public:
+n.. message{
+p..
     v.. printMessage();
 };
 
-#endif // MESSAGE_H
+e.. // MESSAGE_H

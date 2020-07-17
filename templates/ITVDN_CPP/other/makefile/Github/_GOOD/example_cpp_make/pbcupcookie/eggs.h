@@ -1,4 +1,4 @@
-class Eggs {
-public:
+n.. Eggs {
+p..
     Eggs();
 };

@@ -1,9 +1,9 @@
-#ifndef Funs_H
+?i.. Funs_H
 _de.. Funs_H
 
-class Rectangle 
+n.. Rectangle
 {
-    public:
+    p..
         Rectangle(int Base, int Height);
         int Area();
         int Perim();
@@ -14,4 +14,4 @@ class Rectangle
 };
 
 
-#endif
+e..

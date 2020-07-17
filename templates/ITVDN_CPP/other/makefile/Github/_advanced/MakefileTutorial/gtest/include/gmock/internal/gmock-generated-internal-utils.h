@@ -38,22 +38,22 @@
 // This file contains template meta-programming utility classes needed
 // for implementing Google Mock.
 
-#ifndef GMOCK_INCLUDE_GMOCK_INTERNAL_GMOCK_GENERATED_INTERNAL_UTILS_H_
+?i.. GMOCK_INCLUDE_GMOCK_INTERNAL_GMOCK_GENERATED_INTERNAL_UTILS_H_
 _de.. GMOCK_INCLUDE_GMOCK_INTERNAL_GMOCK_GENERATED_INTERNAL_UTILS_H_
 
 ? "gmock/internal/gmock-port.h"
 
-namespace testing {
+n... testing {
 
 template <typename T>
-class Matcher;
+n.. Matcher;
 
-namespace internal {
+n... internal {
 
 // An IgnoredValue object can be implicitly constructed from ANY value.
 // This is used in implementing the IgnoreResult(a) action.
-class IgnoredValue {
- public:
+n.. IgnoredValue {
+ p..
   // This constructor template allows any value to be implicitly
   // converted to IgnoredValue.  The object has no data member and
   // doesn't try to remember anything about the argument.  We
@@ -283,4 +283,4 @@ struct Function<R(A1, A2, A3, A4, A5, A6, A7, A8, A9, A10)>
 
 }  // namespace testing
 
-#endif  // GMOCK_INCLUDE_GMOCK_INTERNAL_GMOCK_GENERATED_INTERNAL_UTILS_H_
+e..  // GMOCK_INCLUDE_GMOCK_INTERNAL_GMOCK_GENERATED_INTERNAL_UTILS_H_

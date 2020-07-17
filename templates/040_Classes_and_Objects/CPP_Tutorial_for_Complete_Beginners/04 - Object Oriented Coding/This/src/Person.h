@@ -5,22 +5,22 @@
  *      Author: johnwpurcell
  */
 
-#ifndef PERSON_H_
+?i.. PERSON_H_
 _de.. PERSON_H_
 
-#include <iostream>
-using namespace std;
+? ios..
+u... s..
 
-class Person {
+n.. Person {
 private:
 	string name;
 	int age;
 
-public:
+p..
 	Person(): name("unnamed"), age(0) {};
 	Person(string name, int age): name(name), age(age) {};
 
 	string toString();
 };
 
-#endif /* PERSON_H_ */
+e.. /* PERSON_H_ */

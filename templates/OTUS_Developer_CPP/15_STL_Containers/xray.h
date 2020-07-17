@@ -2,10 +2,10 @@
 
 ? <array>
 
-namespace xray {
+n... xray {
 
-    class object {
-    public:
+    n.. object {
+    p..
         object() : object(-1) {
         }
 
@@ -53,8 +53,8 @@ namespace xray {
     }
 
     template<typename T>
-    class allocator {
-    public:
+    n.. allocator {
+    p..
         using value_type = T;
 
         T *allocate(std::size_t n) {
@@ -87,8 +87,8 @@ namespace xray {
 }
 
 template<>
-class std::hash<xray::object> {
-public:
+n.. std::hash<xray::object> {
+p..
     size_t operator()(const xray::object &xo) const {
         std::cout << &xo << " hash();" << std::endl;
         return xo.value();

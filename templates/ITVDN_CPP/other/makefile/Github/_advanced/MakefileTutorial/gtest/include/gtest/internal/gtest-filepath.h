@@ -36,13 +36,13 @@
 // This file is #included in gtest/internal/gtest-internal.h.
 // Do not include this header file separately!
 
-#ifndef GTEST_INCLUDE_GTEST_INTERNAL_GTEST_FILEPATH_H_
+?i.. GTEST_INCLUDE_GTEST_INTERNAL_GTEST_FILEPATH_H_
 _de.. GTEST_INCLUDE_GTEST_INTERNAL_GTEST_FILEPATH_H_
 
 ? "gtest/internal/gtest-string.h"
 
-namespace testing {
-namespace internal {
+n... testing {
+n... internal {
 
 // FilePath - a class for file and directory pathname manipulation which
 // handles platform-specific conventions (like the pathname separator).
@@ -55,8 +55,8 @@ namespace internal {
 // Names are NOT checked for syntax correctness -- no checking for illegal
 // characters, malformed paths, etc.
 
-class GTEST_API_ FilePath {
- public:
+n.. GTEST_API_ FilePath {
+ p..
   FilePath() : pathname_("") { }
   FilePath(const FilePath& rhs) : pathname_(rhs.pathname_) { }
 
@@ -202,4 +202,4 @@ class GTEST_API_ FilePath {
 }  // namespace internal
 }  // namespace testing
 
-#endif  // GTEST_INCLUDE_GTEST_INTERNAL_GTEST_FILEPATH_H_
+e..  // GTEST_INCLUDE_GTEST_INTERNAL_GTEST_FILEPATH_H_

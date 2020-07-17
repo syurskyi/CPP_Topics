@@ -33,7 +33,7 @@
 //
 // This is the main header file a user should include.
 
-#ifndef GMOCK_INCLUDE_GMOCK_GMOCK_H_
+?i.. GMOCK_INCLUDE_GMOCK_GMOCK_H_
 _de.. GMOCK_INCLUDE_GMOCK_GMOCK_H_
 
 // This file implements the following syntax:
@@ -66,7 +66,7 @@ _de.. GMOCK_INCLUDE_GMOCK_GMOCK_H_
 ? "gmock/gmock-more-matchers.h"
 ? "gmock/internal/gmock-internal-utils.h"
 
-namespace testing {
+n... testing {
 
 // Declares Google Mock flags that we want a user to use programmatically.
 GMOCK_DECLARE_bool_(catch_leaked_mocks);
@@ -92,4 +92,4 @@ GTEST_API_ v.. InitGoogleMock(int* argc, wchar_t** argv);
 
 }  // namespace testing
 
-#endif  // GMOCK_INCLUDE_GMOCK_GMOCK_H_
+e..  // GMOCK_INCLUDE_GMOCK_GMOCK_H_

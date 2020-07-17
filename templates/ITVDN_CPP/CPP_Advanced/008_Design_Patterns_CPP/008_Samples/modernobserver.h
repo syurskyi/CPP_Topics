@@ -1,4 +1,4 @@
-#ifndef MODERNOBSERVER_H
+?i.. MODERNOBSERVER_H
 _de.. MODERNOBSERVER_H
 
 ? "meta_strategy.h"
@@ -6,9 +6,9 @@ _de.. MODERNOBSERVER_H
 ? |i..
 ? <vector>
 
-class ModernObserver
+n.. ModernObserver
 {
-public:
+p..
     typedef std::function< v..( int ) > UpdateDelegate;
     ModernObserver( UpdateDelegate updateDelegate );
 
@@ -20,40 +20,40 @@ protected:
     UpdateDelegate updateDelegate;
 };
 
-class ModernSubject
+n.. ModernSubject
 {
     int m_value;
     std::vector< ModernObserver > m_views;
 
-public:
+p..
     v.. attach( const ModernObserver& obs );
     v.. set_val( int value );
     v.. notify();
 };
 
-class ModernDivObserver
+n.. ModernDivObserver
 {
     int m_div;
 
-public:
+p..
     ModernDivObserver( ModernSubject* model, int div );
 
     v.. update( int v );
 };
 
-class ModernModObserver
+n.. ModernModObserver
 {
     int m_mod;
 
-public:
+p..
     ModernModObserver( ModernSubject* model, int mod );
     v.. update( int v );
 };
 
-class ClientModernObserver : public MetaStrategy
+n.. ClientModernObserver : public MetaStrategy
 {
-public:
+p..
     v.. run() override;
 };
 
-#endif // MODERNOBSERVER_H
+e.. // MODERNOBSERVER_H

@@ -1,10 +1,10 @@
-#ifndef POINT_H
+?i.. POINT_H
 _de.. POINT_H
 
-class Point
+n.. Point
 {
-public:
+p..
 	Point();
 };
 
-#endif
+e..

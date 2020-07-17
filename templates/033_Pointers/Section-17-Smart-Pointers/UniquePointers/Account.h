@@ -1,22 +1,22 @@
 // Simple Account 
-#ifndef _ACCOUNT_H_
+?i.. _ACCOUNT_H_
 _de.. _ACCOUNT_H_
-#include <iostream>
-#include <string>
-#include "I_Printable.h"
+? ios..
+? <string>
+? "I_Printable.h"
 
-class Account: public I_Printable {
+n.. Account: public I_Printable {
 private:   
     static constexpr const char *def_name = "Unnamed Account";
     static constexpr double def_balance = 0.0;
 protected:
     std::string name;
     double balance;
-public:
+p..
     Account(std::string name = def_name, double balance = def_balance);
-    virtual bool deposit(double amount) = 0;
-    virtual bool withdraw(double amount) = 0;
-    virtual v.. print(std::ostream &os) const override;
-    virtual ~Account() = default;
+    v.. bool deposit(double amount) = 0;
+    v.. bool withdraw(double amount) = 0;
+    v.. v.. print(std::ostream &os) const override;
+    v.. ~Account() = default;
 };
-#endif
+e..

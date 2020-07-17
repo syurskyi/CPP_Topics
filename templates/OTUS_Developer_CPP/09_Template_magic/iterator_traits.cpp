@@ -25,7 +25,7 @@ struct the_iterator {
 //    using iterator_category = std::bidirectional_iterator_tag;
 }sy.. pause
 
-namespace std {
+n.. std {
     template<>
     struct iterator_traits<the_iterator> {
 //        using iterator_category = the_iterator::iterator_category;

@@ -3,10 +3,10 @@
 
 typedef unsigned int uint;
 
-class Mammal
+n.. Mammal
 {
 //default: private
-public:
+p..
     Mammal();
     Mammal(uint paws);
     Mammal(const Mammal&);

@@ -1,8 +1,8 @@
 ? "mammal.h"
 
-class Cat : public Mammal
+n.. Cat : public Mammal
 {
-public:
+p..
     Cat();
     Cat(uint paws);
     uint get_paws();
@@ -10,6 +10,6 @@ public:
     v.. say() override;
     ~Cat();
 
-public:
+p..
     uint vibr;
 };

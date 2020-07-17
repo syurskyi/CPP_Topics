@@ -65,7 +65,7 @@
 // TODO(wan@google.com): rename this to safe_linked_ptr to avoid
 // confusion with normal linked_ptr.
 
-#ifndef GTEST_INCLUDE_GTEST_INTERNAL_GTEST_LINKED_PTR_H_
+?i.. GTEST_INCLUDE_GTEST_INTERNAL_GTEST_LINKED_PTR_H_
 _de.. GTEST_INCLUDE_GTEST_INTERNAL_GTEST_LINKED_PTR_H_
 
 ? <stdlib.h>
@@ -73,8 +73,8 @@ _de.. GTEST_INCLUDE_GTEST_INTERNAL_GTEST_LINKED_PTR_H_
 
 ? "gtest/internal/gtest-port.h"
 
-namespace testing {
-namespace internal {
+n... testing {
+n... internal {
 
 // Protects copying of all linked_ptr objects.
 GTEST_API_ GTEST_DECLARE_STATIC_MUTEX_(g_linked_ptr_mutex);
@@ -86,8 +86,8 @@ GTEST_API_ GTEST_DECLARE_STATIC_MUTEX_(g_linked_ptr_mutex);
 // in the same circular linked list, so we need a single class type here.
 //
 // DO NOT USE THIS CLASS DIRECTLY YOURSELF.  Use linked_ptr<T>.
-class linked_ptr_internal {
- public:
+n.. linked_ptr_internal {
+ p..
   // Create a new circle that includes only this instance.
   v.. join_new() {
     next_ = this;
@@ -143,8 +143,8 @@ class linked_ptr_internal {
 };
 
 template <typename T>
-class linked_ptr {
- public:
+n.. linked_ptr {
+ p..
   typedef T element_type;
 
   // Take over ownership of a raw pointer.  This should happen as soon as
@@ -196,7 +196,7 @@ class linked_ptr {
 
  private:
   template <typename U>
-  friend class linked_ptr;
+  friend n.. linked_ptr;
 
   T* value_;
   linked_ptr_internal link_;
@@ -240,4 +240,4 @@ linked_ptr<T> make_linked_ptr(T* ptr) {
 }  // namespace internal
 }  // namespace testing
 
-#endif  // GTEST_INCLUDE_GTEST_INTERNAL_GTEST_LINKED_PTR_H_
+e..  // GTEST_INCLUDE_GTEST_INTERNAL_GTEST_LINKED_PTR_H_

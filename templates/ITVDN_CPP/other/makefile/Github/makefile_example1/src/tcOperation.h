@@ -6,7 +6,7 @@
  * @author Brian M. Craig
  */
 
-#ifndef TCOPERATION_H_
+?i.. TCOPERATION_H_
 _de.. TCOPERATION_H_
 
 ? <string>
@@ -15,8 +15,8 @@ _de.. TCOPERATION_H_
 /**
  * @brief This class performs mathematical operations
  */
-class tcOperation {
-public:
+n.. tcOperation {
+p..
 
 	/**
 	 * @brief This is the class constructor
@@ -28,7 +28,7 @@ public:
 	/**
 	 * @brief This is the class destructor
 	 */
-	virtual ~tcOperation( v.. );
+	v.. ~tcOperation( v.. );
 
 	/**
 	 * @brief This method executes the mathematical operation
@@ -44,4 +44,4 @@ protected:
 	std::vector<std::string> mcTokens;
 };
 
-#endif /* TCOPERATION_H_ */
+e.. /* TCOPERATION_H_ */

@@ -1,41 +1,41 @@
-#ifndef FARM_H_INCLUDED
+?i.. FARM_H_INCLUDED
 _de.. FARM_H_INCLUDED
 ? |i..
 
 u.. s..
 
-class Animal
+n.. Animal
 {
         protected:
             string voice;
-        public:
+        p..
             Animal();
-            virtual ~Animal();
-            virtual string getVoice() = 0;
+            v.. ~Animal();
+            v.. string getVoice() = 0;
 };
-class Dog : public Animal
+n.. Dog : public Animal
 {
             string sign;
-        public:
+        p..
             Dog();
             ~Dog();
             string getVoice() { return voice + " " + sign; }
 };
-class Cat : public Animal
+n.. Cat : public Animal
 {
             string sign;
-        public:
+        p..
             Cat();
             ~Cat();
             string getVoice() { return voice  + " " +  sign; }
 };
-class Cow : public Animal
+n.. Cow : public Animal
 {
             string sign;
-        public:
+        p..
             Cow();
             ~Cow();
             string getVoice() { return voice  + " " +  sign; }
 };
 
-#endif // FARM_H_INCLUDED
+e.. // FARM_H_INCLUDED

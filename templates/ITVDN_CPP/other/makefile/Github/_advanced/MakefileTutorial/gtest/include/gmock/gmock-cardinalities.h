@@ -35,7 +35,7 @@
 // cardinalities can be defined by the user implementing the
 // CardinalityInterface interface if necessary.
 
-#ifndef GMOCK_INCLUDE_GMOCK_GMOCK_CARDINALITIES_H_
+?i.. GMOCK_INCLUDE_GMOCK_GMOCK_CARDINALITIES_H_
 _de.. GMOCK_INCLUDE_GMOCK_GMOCK_CARDINALITIES_H_
 
 ? <limits.h>
@@ -43,7 +43,7 @@ _de.. GMOCK_INCLUDE_GMOCK_GMOCK_CARDINALITIES_H_
 ? "gmock/internal/gmock-port.h"
 ? "gtest/gtest.h"
 
-namespace testing {
+n... testing {
 
 // To implement a cardinality Foo, define:
 //   1. a class FooCardinality that implements the
@@ -56,23 +56,23 @@ namespace testing {
 // management as Cardinality objects can now be copied like plain values.
 
 // The implementation of a cardinality.
-class CardinalityInterface {
- public:
-  virtual ~CardinalityInterface() {}
+n.. CardinalityInterface {
+ p..
+  v.. ~CardinalityInterface() {}
 
   // Conservative estimate on the lower/upper bound of the number of
   // calls allowed.
-  virtual int ConservativeLowerBound() const { return 0; }
-  virtual int ConservativeUpperBound() const { return INT_MAX; }
+  v.. int ConservativeLowerBound() const { return 0; }
+  v.. int ConservativeUpperBound() const { return INT_MAX; }
 
   // Returns true iff call_count calls will satisfy this cardinality.
-  virtual bool IsSatisfiedByCallCount(int call_count) const = 0;
+  v.. bool IsSatisfiedByCallCount(int call_count) const = 0;
 
   // Returns true iff call_count calls will saturate this cardinality.
-  virtual bool IsSaturatedByCallCount(int call_count) const = 0;
+  v.. bool IsSaturatedByCallCount(int call_count) const = 0;
 
   // Describes self to an ostream.
-  virtual v.. DescribeTo(::std::ostream* os) const = 0;
+  v.. v.. DescribeTo(::std::ostream* os) const = 0;
 };
 
 // A Cardinality is a copyable and IMMUTABLE (except by assignment)
@@ -80,8 +80,8 @@ class CardinalityInterface {
 // be called.  The implementation of Cardinality is just a linked_ptr
 // to const CardinalityInterface, so copying is fairly cheap.
 // Don't inherit from Cardinality!
-class GTEST_API_ Cardinality {
- public:
+n.. GTEST_API_ Cardinality {
+ p..
   // Constructs a null cardinality.  Needed for storing Cardinality
   // objects in STL containers.
   Cardinality() {}
@@ -144,4 +144,4 @@ inline Cardinality MakeCardinality(const CardinalityInterface* c) {
 
 }  // namespace testing
 
-#endif  // GMOCK_INCLUDE_GMOCK_GMOCK_CARDINALITIES_H_
+e..  // GMOCK_INCLUDE_GMOCK_GMOCK_CARDINALITIES_H_

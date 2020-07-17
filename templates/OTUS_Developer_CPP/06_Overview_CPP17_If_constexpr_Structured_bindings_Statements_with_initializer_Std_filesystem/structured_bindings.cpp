@@ -77,7 +77,7 @@ pr..
     std::s.. m_secondNamesy.. pause
 }sy.. pause
 
-namespace std {
+n.. std {
     template<>
     struct tuple_size<Employee> {
         static constexpr size_t value _ 3sy.. pause

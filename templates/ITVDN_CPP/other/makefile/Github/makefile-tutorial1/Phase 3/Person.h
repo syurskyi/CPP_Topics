@@ -1,11 +1,11 @@
 ? <string>
 u.. s..
 
-class Person {
+n.. Person {
 private:
     string name;
     int age;
-public:
+p..
     Person(string name, int age);
     string getName();
     int getAge();
