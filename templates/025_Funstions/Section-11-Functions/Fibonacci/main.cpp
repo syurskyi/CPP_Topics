@@ -9,9 +9,9 @@ u.. s..
 ? ios..
 
 u.. s..
-unsigned long long fibonacci(unsigned long long n);
+u.. l.. l.. fibonacci(u.. l.. l.. n);
 
-unsigned long long fibonacci(unsigned long long n) {
+u.. l.. l.. fibonacci(u.. l.. l.. n) {
     __ (n <= 1)
         r_ n;	             // base cases
     r_ fibonacci(n-1) + fibonacci(n-2); // recursion
