@@ -58,7 +58,7 @@ n... internal {
 // Valgrind heap checkers may need this to modify their behavior in death
 // tests.  IMPORTANT: This is an internal utility.  Using it may break the
 // implementation of death tests.  User code MUST NOT use it.
-GTEST_API_ bool InDeathTestChild();
+GTEST_API_ bo.. InDeathTestChild();
 
 }  // namespace internal
 
@@ -189,13 +189,13 @@ GTEST_API_ bool InDeathTestChild();
 // Tests that an exit code describes a normal exit with a given exit code.
 n.. GTEST_API_ ExitedWithCode {
  p..
-  explicit ExitedWithCode(int exit_code);
-  bool operator()(int exit_status) const;
- private:
+  explicit ExitedWithCode(in. exit_code);
+  bo.. operator()(in. exit_status) co..;
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ExitedWithCode& other);
+  v.. operator=(co.. ExitedWithCode& other);
 
-  const int exit_code_;
+  co.. in. exit_code_;
 };
 
 # if !GTEST_OS_WINDOWS && !GTEST_OS_FUCHSIA
@@ -203,10 +203,10 @@ n.. GTEST_API_ ExitedWithCode {
 // given signal.
 n.. GTEST_API_ KilledBySignal {
  p..
-  explicit KilledBySignal(int signum);
-  bool operator()(int exit_status) const;
- private:
-  const int signum_;
+  explicit KilledBySignal(in. signum);
+  bo.. operator()(in. exit_status) co..;
+ pr..
+  co.. in. signum_;
 };
 # endif  // !GTEST_OS_WINDOWS
 

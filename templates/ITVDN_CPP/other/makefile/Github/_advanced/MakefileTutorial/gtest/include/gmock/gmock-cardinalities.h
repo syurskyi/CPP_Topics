@@ -62,17 +62,17 @@ n.. CardinalityInterface {
 
   // Conservative estimate on the lower/upper bound of the number of
   // calls allowed.
-  v.. int ConservativeLowerBound() const { return 0; }
-  v.. int ConservativeUpperBound() const { return INT_MAX; }
+  v.. in. ConservativeLowerBound() co.. { return 0; }
+  v.. in. ConservativeUpperBound() co.. { return INT_MAX; }
 
   // Returns true iff call_count calls will satisfy this cardinality.
-  v.. bool IsSatisfiedByCallCount(int call_count) const = 0;
+  v.. bo.. IsSatisfiedByCallCount(in. call_count) co.. = 0;
 
   // Returns true iff call_count calls will saturate this cardinality.
-  v.. bool IsSaturatedByCallCount(int call_count) const = 0;
+  v.. bo.. IsSaturatedByCallCount(in. call_count) co.. = 0;
 
   // Describes self to an ostream.
-  v.. v.. DescribeTo(::std::ostream* os) const = 0;
+  v.. v.. DescribeTo(::st. ostream* os) co.. = 0;
 };
 
 // A Cardinality is a copyable and IMMUTABLE (except by assignment)
@@ -87,58 +87,58 @@ n.. GTEST_API_ Cardinality {
   Cardinality() {}
 
   // Constructs a Cardinality from its implementation.
-  explicit Cardinality(const CardinalityInterface* impl) : impl_(impl) {}
+  explicit Cardinality(co.. CardinalityInterface* impl) : impl_(impl) {}
 
   // Conservative estimate on the lower/upper bound of the number of
   // calls allowed.
-  int ConservativeLowerBound() const { return impl_->ConservativeLowerBound(); }
-  int ConservativeUpperBound() const { return impl_->ConservativeUpperBound(); }
+  in. ConservativeLowerBound() co.. { return impl_->ConservativeLowerBound(); }
+  in. ConservativeUpperBound() co.. { return impl_->ConservativeUpperBound(); }
 
   // Returns true iff call_count calls will satisfy this cardinality.
-  bool IsSatisfiedByCallCount(int call_count) const {
+  bo.. IsSatisfiedByCallCount(in. call_count) co.. {
     return impl_->IsSatisfiedByCallCount(call_count);
   }
 
   // Returns true iff call_count calls will saturate this cardinality.
-  bool IsSaturatedByCallCount(int call_count) const {
+  bo.. IsSaturatedByCallCount(in. call_count) co.. {
     return impl_->IsSaturatedByCallCount(call_count);
   }
 
   // Returns true iff call_count calls will over-saturate this
   // cardinality, i.e. exceed the maximum number of allowed calls.
-  bool IsOverSaturatedByCallCount(int call_count) const {
+  bo.. IsOverSaturatedByCallCount(in. call_count) co.. {
     return impl_->IsSaturatedByCallCount(call_count) &&
         !impl_->IsSatisfiedByCallCount(call_count);
   }
 
   // Describes self to an ostream
-  v.. DescribeTo(::std::ostream* os) const { impl_->DescribeTo(os); }
+  v.. DescribeTo(::st. ostream* os) co.. { impl_->DescribeTo(os); }
 
   // Describes the given actual call count to an ostream.
-  static v.. DescribeActualCallCountTo(int actual_call_count,
-                                        ::std::ostream* os);
+  st.. v.. DescribeActualCallCountTo(in. actual_call_count,
+                                        ::st. ostream* os);
 
- private:
-  internal::linked_ptr<const CardinalityInterface> impl_;
+ pr..
+  internal::linked_ptr<co.. CardinalityInterface> impl_;
 };
 
 // Creates a cardinality that allows at least n calls.
-GTEST_API_ Cardinality AtLeast(int n);
+GTEST_API_ Cardinality AtLeast(in. n);
 
 // Creates a cardinality that allows at most n calls.
-GTEST_API_ Cardinality AtMost(int n);
+GTEST_API_ Cardinality AtMost(in. n);
 
 // Creates a cardinality that allows any number of calls.
 GTEST_API_ Cardinality AnyNumber();
 
 // Creates a cardinality that allows between min and max calls.
-GTEST_API_ Cardinality Between(int min, int max);
+GTEST_API_ Cardinality Between(in. min, in. max);
 
 // Creates a cardinality that allows exactly n calls.
-GTEST_API_ Cardinality Exactly(int n);
+GTEST_API_ Cardinality Exactly(in. n);
 
 // Creates a cardinality from its implementation.
-inline Cardinality MakeCardinality(const CardinalityInterface* c) {
+inline Cardinality MakeCardinality(co.. CardinalityInterface* c) {
   return Cardinality(c);
 }
 

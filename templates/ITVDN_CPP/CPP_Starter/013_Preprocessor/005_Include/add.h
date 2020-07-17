@@ -1,4 +1,4 @@
 ﻿// вложенная директива
 ? "subtract.h"
 
-int add(int, int);
+in. add(in., in.);

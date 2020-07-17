@@ -12,12 +12,12 @@ pu..
 	v.. speak c.. __ "Grrrr" __ e.. }
 };
 
-c_ Cat: public Animal {
+c_ Cat: pu.. Animal {
 pu..
 	v.. jump c.. __ "Cat jumping!" __ e.. }
 };
 
-c_ Tiger: public Cat {
+c_ Tiger: pu.. Cat {
 pu..
 	v.. attackAntelope c.. __ "Attacking!" __ e.. }
 };

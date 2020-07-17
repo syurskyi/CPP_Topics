@@ -12,37 +12,37 @@ struct IStorage {
     virtual v.. close() _ 0sy.. pause
 }sy.. pause
 
-c_ MysqlStorage : public IStorage {
+c_ MysqlStorage : pu.. IStorage {
     v.. open() override
     {
-        std::c__ __  "connect to mysql" __  std::e..
+        st. c__ __  "connect to mysql" __  st. e..
     }
 
     v.. execute_query() override
     {
-        std::c__ __  "fetch mysql result" __  std::e..
+        st. c__ __  "fetch mysql result" __  st. e..
     }
 
     v.. close() override
     {
-        std::c__ __  "disconnect from mysql" __  std::e..
+        st. c__ __  "disconnect from mysql" __  st. e..
     }
 }sy.. pause
 
-c_ PostgresStorage : public IStorage {
+c_ PostgresStorage : pu.. IStorage {
     v.. open() override
     {
-        std::c__ __  "connect to pg" __  std::e..
+        st. c__ __  "connect to pg" __  st. e..
     }
 
     v.. execute_query() override
     {
-        std::c__ __  "fetch pg result" __  std::e..
+        st. c__ __  "fetch pg result" __  st. e..
     }
 
     v.. close() override
     {
-        std::c__ __  "disconnect from pg" __  std::e..
+        st. c__ __  "disconnect from pg" __  st. e..
     }
 }sy.. pause
 

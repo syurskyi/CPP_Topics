@@ -3,26 +3,26 @@
 c_ foo {
 pu..
     v.. over
-        std::c__ __  __PRETTY_FUNCTION__ __  std::e..
+        st. c__ __  __PRETTY_FUNCTION__ __  st. e..
     }
     v.. over() c.. {
-        std::c__ __  __PRETTY_FUNCTION__ __  std::e..
+        st. c__ __  __PRETTY_FUNCTION__ __  st. e..
     }
     v.. dang
-        std::c__ __  __PRETTY_FUNCTION__ __  std::e..
+        st. c__ __  __PRETTY_FUNCTION__ __  st. e..
     }
 //    void dang() noexcept {
     v.. safe() noexcept(t..) {
-        std::c__ __  __PRETTY_FUNCTION__ __  std::e..
+        st. c__ __  __PRETTY_FUNCTION__ __  st. e..
     }
 }sy.. pause
 
 v.. dang
-    std::c__ __  __PRETTY_FUNCTION__ __  std::e..
+    st. c__ __  __PRETTY_FUNCTION__ __  st. e..
 }
 
 v.. safe() noexcept {
-    std::c__ __  __PRETTY_FUNCTION__ __  std::e..
+    st. c__ __  __PRETTY_FUNCTION__ __  st. e..
 }
 
 in. main

@@ -6,7 +6,7 @@
 in. main()
 {
 	// :: - операция разрешения констекста
-	std::c__ __  "Hello world" __  std::e..
+	st. c__ __  "Hello world" __  st. e..
 
     r_ 0sy.. pause
 }

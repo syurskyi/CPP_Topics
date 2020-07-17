@@ -41,7 +41,7 @@ in. main
     // 50 уже около минуты
     // больше 92 не влезет в 63 бита (signed)
     // больше 93 не влезет в 64 бита (unsigned)
-    std::c__ __  fibonacci_naive(50) __  std::e..
-    std::c__ __  factorial<18>::value __  std::e.. // больше 20 не влезет в 64 бита
-    std::c__ __  factorial_naive(18) __  std::e.. // больше 20 не влезет в 64 бита
+    st. c__ __  fibonacci_naive(50) __  st. e..
+    st. c__ __  factorial<18>::value __  st. e.. // больше 20 не влезет в 64 бита
+    st. c__ __  factorial_naive(18) __  st. e.. // больше 20 не влезет в 64 бита
 }

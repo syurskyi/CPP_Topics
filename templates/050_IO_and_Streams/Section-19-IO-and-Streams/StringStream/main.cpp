@@ -9,46 +9,46 @@
 in. main
     in. num{};
     do.. total{};
-    std::string name{};
+    st. st..  name{};
     
-    std::string info {"Moe 100 1234.5"};
-    std::istringstream iss {info};
+    st. st..  info {"Moe 100 1234.5"};
+    st. istringstream iss {info};
     
     iss __ name  __ num __  total;
-    std::c.. __ std::setw(10) __ std::left __ name
-                   __ std::setw(5) __ num
-                   __ std::setw(10) __ total __ std::e..
+    st. c.. __ st. setw(10) __ st. left __ name
+                   __ st. setw(5) __ num
+                   __ st. setw(10) __ total __ st. e..
     
-    std::c.. __ "\n---------------------------------------" __ std::e..
+    st. c.. __ "\n---------------------------------------" __ st. e..
     
-    std::ostringstream oss {};
-    oss __ std::setw(10) __ std::left __ name
-          __ std::setw(5) __ num
-          __ std::setw(10) __ total __ std::e..
-    std::c.. __ oss.str() __ std::e..
+    st. ostringstream oss {};
+    oss __ st. setw(10) __ st. left __ name
+          __ st. setw(5) __ num
+          __ st. setw(10) __ total __ st. e..
+    st. c.. __ oss.str() __ st. e..
     
     
-    std::c.. __ "\n--- Data validation ------------------------------------" __ std::e..
+    st. c.. __ "\n--- Data validation ------------------------------------" __ st. e..
     
     in. value{};
-    std::string entry {};
-    bool done = false;
+    st. st..  entry {};
+    b.. done = f..
     do {
-        std::c.. __ "Please enter an integer: ";
-        std::ci. __ entry;
-        std::istringstream validator {entry};
+        st. c.. __ "Please enter an integer: ";
+        st. ci. __ entry;
+        st. istringstream validator {entry};
         __ (validator __ value)
-            done = true;
+            done = t..
         ____
-            std::c.. __ "Sorry, that's not an integer" __ std::e..
+            st. c.. __ "Sorry, that's not an integer" __ st. e..
             
          // discards the input buffer
-        std::ci..ignore(std::numeric_limits<std::streamsize>::max(),'\n');
+        st. ci..ignore(st. numeric_limits<st. streamsize>::max(),'\n');
     } w__ (!done);
     
-    std::c.. __ "You entered the integer: " __ value __ std::e..
+    st. c.. __ "You entered the integer: " __ value __ st. e..
     
-    std::c.. __ std::e..
+    st. c.. __ st. e..
     r_ 0;
 }
 

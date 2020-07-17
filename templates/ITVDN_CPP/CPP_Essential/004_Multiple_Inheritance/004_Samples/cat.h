@@ -1,31 +1,31 @@
 ? "mammal.h"
-? <string>
+? str..
 
 
 n.. Animal
 {
 p..
-    v.. ~Animal() = default;
+    v.. ~Animal() = de..
 };
 
-n.. Domestic: public v.. Animal
+n.. Domestic: pu.. v.. Animal
 {
 p..
-    std::string get_name() {return name;}
-private:
-    std::string name = "my_dom";
+    st. string get_name() {return name;}
+pr..
+    st. string name = "my_dom";
 };
 
-n.. Pedigreed : public v.. Animal
+n.. Pedigreed : pu.. v.. Animal
 {
 p..
-    std::string get_history();
-private:
-    std::string history;
+    st. string get_history();
+pr..
+    st. string history;
 };
 
-n.. Cat : public Domestic
-          , public Pedigreed
+n.. Cat : pu.. Domestic
+          , pu.. Pedigreed
 {
 p..
     Cat();

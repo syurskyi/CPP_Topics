@@ -9,8 +9,8 @@
 ?i.. TCOPERATION_H_
 _de.. TCOPERATION_H_
 
-? <string>
-? <vector>
+? str..
+? ve..
 
 /**
  * @brief This class performs mathematical operations
@@ -23,7 +23,7 @@ p..
 	 * @param argc the number of arguments
 	 * @param argv the argument list
 	 */
-	tcOperation( int argc, char** argv );
+	tcOperation( in. argc, ch..** argv );
 
 	/**
 	 * @brief This is the class destructor
@@ -34,14 +34,14 @@ p..
 	 * @brief This method executes the mathematical operation
 	 * @return the result of the operation
 	 */
-	double Execute( v.. );
+	do.. Execute( v.. );
 
-protected:
+pr..
 
 	/**
 	 * @brief the tokens used in the operation
 	 */
-	std::vector<std::string> mcTokens;
+	st. ve..<st. string> mcTokens;
 };
 
 e.. /* TCOPERATION_H_ */

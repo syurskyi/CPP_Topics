@@ -1,2 +1,2 @@
 
-double mysqrt(double x);
+do.. mysqrt(do.. x);

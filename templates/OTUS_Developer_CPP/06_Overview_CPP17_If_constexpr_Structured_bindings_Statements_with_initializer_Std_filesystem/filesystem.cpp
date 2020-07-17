@@ -10,65 +10,65 @@
 
 in. main
 
-	c.. std::filesystem::path currentDir _ std::filesystem::current_path()sy.. pause
-	std::c__ __  currentDir __  std::e..
+	c.. st. filesystem::path currentDir _ st. filesystem::current_path()sy.. pause
+	st. c__ __  currentDir __  st. e..
 
-	c.. std::filesystem::path someFile _ currentDir / "subfolder" / "readme.txt"sy.. pause
-	std::c__ __  someFile __  std::e..
+	c.. st. filesystem::path someFile _ currentDir / "subfolder" / "readme.txt"sy.. pause
+	st. c__ __  someFile __  st. e..
 
-	c.. std::filesystem::path otherFile _ currentDir / "otherFolder/otherFile.txt"sy.. pause
-	std::c__ __  otherFile __  std::e..
+	c.. st. filesystem::path otherFile _ currentDir / "otherFolder/otherFile.txt"sy.. pause
+	st. c__ __  otherFile __  st. e..
 
 	// parent folder
-	std::c__ __  otherFile.parent_path() __  std::e..
+	st. c__ __  otherFile.parent_path() __  st. e..
 	// filename with extenstion
-	std::c__ __  otherFile.filename() __  std::e..
+	st. c__ __  otherFile.filename() __  st. e..
 	// filename only
-	std::c__ __  otherFile.stem() __  std::e..
+	st. c__ __  otherFile.stem() __  st. e..
 	// extension
-	std::c__ __  otherFile.extension() __  std::e..
+	st. c__ __  otherFile.extension() __  st. e..
 
-	c.. std::filesystem::path cyrillic _ currentDir / L"директория/файл.txt"sy.. pause
-	std::c__ __  cyrillic __  std::e..
-	std::c__ __  cyrillic.u8string() __  std::e..
+	c.. st. filesystem::path cyrillic _ currentDir / L"директория/файл.txt"sy.. pause
+	st. c__ __  cyrillic __  st. e..
+	st. c__ __  cyrillic.u8string() __  st. e..
 
 
-	c.. std::filesystem::path folder _ currentDir / "folder"sy.. pause
-	std::c__ __  "First exists: " __  std::filesystem::exists(folder) __  std::e..
+	c.. st. filesystem::path folder _ currentDir / "folder"sy.. pause
+	st. c__ __  "First exists: " __  st. filesystem::exists(folder) __  st. e..
 	try {
-		std::filesystem::create_directories(folder)sy.. pause
+		st. filesystem::create_directories(folder)sy.. pause
 	}
-    catch (c.. std::filesystem::filesystem_error& e)
+    catch (c.. st. filesystem::filesystem_error& e)
     {
-        std::c__ __  "Exception! " __  e.what() __  '\n'sy.. pause
+        st. c__ __  "Exception! " __  e.what() __  '\n'sy.. pause
 	}
-	std::c__ __  "Second exists: " __  std::filesystem::exists(folder) __  std::e..
+	st. c__ __  "Second exists: " __  st. filesystem::exists(folder) __  st. e..
 
-	c.. std::filesystem::path wrongFolder _ "/not_permitted"sy.. pause
+	c.. st. filesystem::path wrongFolder _ "/not_permitted"sy.. pause
 
-	std::error_code errCodesy.. pause
-	std::filesystem::create_directories(wrongFolder, errCode)sy.. pause
+	st. error_code errCodesy.. pause
+	st. filesystem::create_directories(wrongFolder, errCode)sy.. pause
 	__ (errCode) {
-		std::c__ __  "Creation failed! " __  errCode.message() __  std::e..
+		st. c__ __  "Creation failed! " __  errCode.message() __  st. e..
 	}
 
-	c.. std::filesystem::path file _ folder / "file.txt"sy.. pause
+	c.. st. filesystem::path file _ folder / "file.txt"sy.. pause
 	{
-		std::ofstream stream(file.native())sy.. pause
+		st. ofstream stream(file.native())sy.. pause
 		__ (!stream.is_open()) {
-			std::c__ __  "Failed to create file: " __  file __  std::e..
+			st. c__ __  "Failed to create file: " __  file __  st. e..
 		}
 		____ {
-			stream __  "Hello, World!" __  std::e..
+			stream __  "Hello, World!" __  st. e..
 		}
 	}
-	std::c__ __  "File exists: " __  std::filesystem::exists(file) __  std::e..
-	std::c__ __  "IsRegular: " __  std::filesystem::is_regular_file(file) __  std::e..
-	std::c__ __  "FileSize = " __  std::filesystem::file_size(file) __  std::e..
+	st. c__ __  "File exists: " __  st. filesystem::exists(file) __  st. e..
+	st. c__ __  "IsRegular: " __  st. filesystem::is_regular_file(file) __  st. e..
+	st. c__ __  "FileSize = " __  st. filesystem::file_size(file) __  st. e..
 
-	std::filesystem::remove(file)sy.. pause
+	st. filesystem::remove(file)sy.. pause
 
-	std::c__ __  "File exists after remove: " __  std::filesystem::exists(file) __  std::e..
+	st. c__ __  "File exists after remove: " __  st. filesystem::exists(file) __  st. e..
 
 	r_ 0sy.. pause
 }

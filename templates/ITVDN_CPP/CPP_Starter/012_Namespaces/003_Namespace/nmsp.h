@@ -1,4 +1,4 @@
 n... NamespaceA
 {
-	v.. mul(int a, int b);
+	v.. mul(in. a, in. b);
 }

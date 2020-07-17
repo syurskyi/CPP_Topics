@@ -6,30 +6,30 @@ _de.. STRATEGY_H
 n.. StrategyInterface
 {
 p..
-    v.. v.. execute() const = 0;
+    v.. v.. execute() co.. = 0;
 };
 
-n.. ConcreteStrategyA : public StrategyInterface
+n.. ConcreteStrategyA : pu.. StrategyInterface
 {
 p..
-    v.. execute() const override;
+    v.. execute() co.. ov..
 };
 
-n.. ConcreteStrategyB : public StrategyInterface
+n.. ConcreteStrategyB : pu.. StrategyInterface
 {
 p..
-    v.. execute() const override;
+    v.. execute() co.. ov..
 };
 
-n.. ConcreteStrategyC : public StrategyInterface
+n.. ConcreteStrategyC : pu.. StrategyInterface
 {
 p..
-    v.. execute() const override;
+    v.. execute() co.. ov..
 };
 
 n.. Context
 {
-private:
+pr..
     StrategyInterface* strategy_;
 
 p..
@@ -37,14 +37,14 @@ p..
 
     v.. set_strategy( StrategyInterface* strategy );
 
-    v.. execute() const;
+    v.. execute() co..;
 };
 
-n.. ClientStrategy : public MetaStrategy
+n.. ClientStrategy : pu.. MetaStrategy
 {
 p..
-    ClientStrategy() = default;
-    v.. run() override;
+    ClientStrategy() = de..
+    v.. run() ov..
 };
 
 e.. // STRATEGY_H

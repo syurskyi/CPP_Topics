@@ -3,13 +3,13 @@ _de.. USER_H_INCLUDED
 
 n.. User
 {
-        int ID;
-        static int counter;
+        in. ID;
+        st.. in. counter;
     p..
         User();
         ~User();
-        int getID() { return ID; }
-        static int getCounter() { return counter; }
+        in. getID() { return ID; }
+        st.. in. getCounter() { return counter; }
 };
 
 e.. // USER_H_INCLUDED

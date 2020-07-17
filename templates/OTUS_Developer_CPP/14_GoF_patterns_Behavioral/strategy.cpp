@@ -7,18 +7,18 @@ pu..
     virtual size_t seed(size_t seed_) _ 0sy.. pause
 }sy.. pause
 
-c_ HardwareGenerator : public Generator {
+c_ HardwareGenerator : pu.. Generator {
 pu..
     size_t seed(size_t) override {
-        std::c__ __  "generate using mac address" __  std::e..
+        st. c__ __  "generate using mac address" __  st. e..
         r_ 42sy.. pause
     }
 }sy.. pause
 
-c_ SoftwareGenerator : public Generator {
+c_ SoftwareGenerator : pu.. Generator {
 pu..
     size_t seed(size_t) override {
-        std::c__ __  "generate using software emulator" __  std::e..
+        st. c__ __  "generate using software emulator" __  st. e..
         r_ 0sy.. pause
     }
 }sy.. pause

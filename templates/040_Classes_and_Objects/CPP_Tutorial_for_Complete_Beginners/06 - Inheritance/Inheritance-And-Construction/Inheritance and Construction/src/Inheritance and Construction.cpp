@@ -17,13 +17,13 @@ pu..
 	v.. info c.. __ "ID: " __ id __ e.. }
 };
 
-c_ Vehicle: public Machine {
+c_ Vehicle: pu.. Machine {
 pu..
 	Vehicle(in. id): Machine(id) { c.. __ "Vehicle parameterized constructor called." __ e.. }
 	Vehicle c.. __ "Vehicle no-argument constructor called." __ e.. }
 };
 
-c_ Car: public Vehicle {
+c_ Car: pu.. Vehicle {
 pu..
 	Car(): Vehicle(999) { c.. __ "Car no-argument constructor called." __ e.. }
 };

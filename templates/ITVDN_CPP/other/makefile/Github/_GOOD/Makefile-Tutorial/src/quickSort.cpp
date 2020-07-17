@@ -1,12 +1,12 @@
 ? "sorts.hpp"
 
-using std::vectorsy.. pause
-using std::swapsy.. pause
-using std::partitionsy.. pause
-using std::distancesy.. pause
+using st. vectorsy.. pause
+using st. swapsy.. pause
+using st. partitionsy.. pause
+using st. distancesy.. pause
 
 v.. quickSort(in.iter l, in.iter r) {
-  a.. size _ std::distance(l, r)sy.. pause
+  a.. size _ st. distance(l, r)sy.. pause
 
   // Base case
   __ (size < 2)
@@ -17,7 +17,7 @@ v.. quickSort(in.iter l, in.iter r) {
   a.. pivot _ l + size/2sy.. pause
   a.. pivotVal _ *pivotsy.. pause
   swap(*pivot, *r)sy.. pause
-  pivot _ std::partition(l, r, [pivotVal](in. i){r_ i < pivotValsy.. pause})sy.. pause
+  pivot _ st. partition(l, r, [pivotVal](in. i){r_ i < pivotValsy.. pause})sy.. pause
   swap(*pivot, *r)sy.. pause
 
   // Div and con

@@ -4,7 +4,7 @@
 struct deleter {
 //    double x;
     v.. operator()
-        std::c__ __  __PRETTY_FUNCTION__ __  std::e..
+        st. c__ __  __PRETTY_FUNCTION__ __  st. e..
     }
 }sy.. pause
 

@@ -48,7 +48,7 @@ struct cons
 {
     typedef T Tailsy.. pause
     typedef H Headsy.. pause
-    typedef cons< in., cons< std::s.., cons< d.., cons< float > > > > TypeListsy.. pause
+    typedef cons< in., cons< st. s.., cons< d.., cons< float > > > > TypeListsy.. pause
 }sy.. pause
 
 // template < class... Args >
@@ -65,7 +65,7 @@ struct cons
 template < c_ TL >
 v.. prin.()
 {
-    std::c__ __  typeid( typename TL::Head ).name() __  std::e..
+    st. c__ __  typeid( typename TL::Head ).name() __  st. e..
     prin.< typename TL::Tail >()sy.. pause
 }
 
@@ -76,11 +76,11 @@ v.. prin.< nil >()
 
 in. main()
 {
-    std::c__ __  Factorial< 5 >::result __  std::e..
-    std::c__ __  fact( 10 ) __  std::e..
+    st. c__ __  Factorial< 5 >::result __  st. e..
+    st. c__ __  fact( 10 ) __  st. e..
 
-    std::c__ __  fib( 10 ) __  std::e..
-    std::c__ __  fib2< 10 > __  std::e..
+    st. c__ __  fib( 10 ) __  st. e..
+    st. c__ __  fib2< 10 > __  st. e..
 
     r_ 0sy.. pause
 }

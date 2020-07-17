@@ -5,15 +5,15 @@
 ? st..
 
 in. main()  {
-    std::ofstream out_file {"../output.txt", std::ios::app};
+    st. ofstream out_file {"../output.txt", st. ios::app};
     __ (!out_file) {
-        std::cerr __ "Error creating file" __ std::e..
+        st. cerr __ "Error creating file" __ st. e..
         r_ 1;
     }
-    std::string line;
-    std::c.. __ "Enter something to write to the file: ";
-    std::getline(std::ci., line);
-    out_file __ line __ std::e..
+    st. st..  line;
+    st. c.. __ "Enter something to write to the file: ";
+    st. getline(st. ci., line);
+    out_file __ line __ st. e..
     
     out_file.close();
    

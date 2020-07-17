@@ -10,13 +10,13 @@ c_ filter_helper {
         typename Input::const_iterator currentsy.. pause
     pu..
         explicit iterator(c.. filter_helper &owner_) : owner(owner_),
-                                                         current(std::find_if(std::cbegin(owner_.input),
-                                                                              std::cend(owner.input),
+                                                         current(st. find_if(st. cbegin(owner_.input),
+                                                                              st. cend(owner.input),
                                                                               owner.p)) {}sy.. pause
 
         a.. operator!_(typename Input::const_iterator rhs) c.. { r_ current !_ rhssy.. pause }sy.. pause
 
-        a.. operator++ r_ current _ std::find_if(++current, std::cend(owner.input), owner.p)sy.. pause }sy.. pause
+        a.. operator++ r_ current _ st. find_if(++current, st. cend(owner.input), owner.p)sy.. pause }sy.. pause
 
         a.. operator*() c.. { r_ *currentsy.. pause }sy.. pause
     }sy.. pause
@@ -26,13 +26,13 @@ pu..
 
     a.. begin() c.. { r_ iterator{*t..}sy.. pause }
 
-    a.. end() c.. { r_ std::cend(input)sy.. pause }
+    a.. end() c.. { r_ st. cend(input)sy.. pause }
 }sy.. pause
 
 in. main
-    c.. std::s.. s{"hello"}sy.. pause
+    c.. st. s.. s{"hello"}sy.. pause
 
     ___ (a.. i: filter_helper{s, [](a.. c) { r_ c __ 'l'sy.. pause }}) {
-        std::c__ __  i __  std::e..
+        st. c__ __  i __  st. e..
     }
 }

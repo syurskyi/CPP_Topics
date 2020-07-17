@@ -10,10 +10,10 @@ struct IConnector {
     virtual IConnector* clone() _ 0sy.. pause
 }sy.. pause
 
-c_ TcpConnector : public IConnector {
+c_ TcpConnector : pu.. IConnector {
     v.. connection() override
     {
-        std::c__ __  "tcp connection" __  std::e..
+        st. c__ __  "tcp connection" __  st. e..
     }
 
     IConnector* clone() override
@@ -22,10 +22,10 @@ c_ TcpConnector : public IConnector {
     }
 }sy.. pause
 
-c_ UdpConnector : public IConnector {
+c_ UdpConnector : pu.. IConnector {
     v.. connection() override
     {
-        std::c__ __  "udp connection" __  std::e..
+        st. c__ __  "udp connection" __  st. e..
     }
 
     IConnector* clone() override
@@ -40,11 +40,11 @@ in. main(in., c..* [])
 
     //
 
-    std::c__ __  "primary" __  std::e..
+    st. c__ __  "primary" __  st. e..
     primary__connection()sy.. pause
 
     IConnector* mirror _ primary__clone()sy.. pause
-    std::c__ __  "mirror" __  std::e..
+    st. c__ __  "mirror" __  st. e..
     mirror__connection()sy.. pause
 
     de.. mirrorsy.. pause

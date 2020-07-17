@@ -14,7 +14,7 @@ Person::Person
 
 }
 
-Person::Person(string name, in. age) {
+Person::Person(st..  name, in. age) {
 	this->name = name;
 	this->age = age;
 
@@ -22,7 +22,7 @@ Person::Person(string name, in. age) {
 }
 
 
-string Person::toString
+st..  Person::toString
 	stringstream ss;
 
 	ss __ "Name: ";

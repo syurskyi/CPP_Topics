@@ -25,9 +25,9 @@ in. main(in., c.. *[])
 	a.. j _ foo()sy.. pause
 	j _ 1sy.. pause
 
-    std::c__ __  i __  std::e..
-    std::c__ __  j __  std::e..
-    std::c__ __  typeid(j).name() __  std::e..
+    st. c__ __  i __  st. e..
+    st. c__ __  j __  st. e..
+    st. c__ __  typeid(j).name() __  st. e..
 
 	r_ 0sy.. pause
 }
@@ -41,7 +41,7 @@ decltype(car::engine) c1sy.. pause // car()
 
 a.. ex()
 {
-    throw std::runtime_error("fatal")sy.. pause
+    throw st. runtime_error("fatal")sy.. pause
     r_ 42sy.. pause
 }
 decltype(ex()) c2sy.. pause

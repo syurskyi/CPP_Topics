@@ -58,7 +58,7 @@ _de.. GTEST_INCLUDE_GTEST_GTEST_PARAM_TEST_H_
 // copyable type. If it's a raw pointer, you are responsible for managing the
 // lifespan of the pointed values.
 
-n.. FooTest : public ::testing::TestWithParam<const char*> {
+n.. FooTest : pu.. ::testing::TestWithParam<co.. ch..*> {
   // You can implement all the usual class fixture members here.
 };
 
@@ -124,7 +124,7 @@ INSTANTIATE_TEST_CASE_P(InstantiationName,
 // This statement will instantiate all tests from FooTest again, each
 // with parameter values "cat" and "dog":
 
-const char* pets[] = {"cat", "dog"};
+co.. ch..* pets[] = {"cat", "dog"};
 INSTANTIATE_TEST_CASE_P(AnotherInstantiationName, FooTest, ValuesIn(pets));
 
 // The tests from the instantiation above will have these names:
@@ -160,12 +160,12 @@ INSTANTIATE_TEST_CASE_P(AnotherInstantiationName, FooTest, ValuesIn(pets));
 // complicated hierarchies, however, it is occasionally useful to inherit
 // separately from Test and WithParamInterface. For example:
 
-n.. BaseTest : public ::testing::Test {
+n.. BaseTest : pu.. ::testing::Test {
   // You can inherit all the usual members for a non-parameterized test
   // fixture here.
 };
 
-n.. DerivedTest : public BaseTest, public ::testing::WithParamInterface<int> {
+n.. DerivedTest : pu.. BaseTest, pu.. ::testing::WithParamInterface<in.> {
   // The usual test fixture members go here too.
 };
 
@@ -311,13 +311,13 @@ ValuesIn(ForwardIterator begin, ForwardIterator end) {
 }
 
 template <typename T, size_t N>
-internal::ParamGenerator<T> ValuesIn(const T (&array)[N]) {
+internal::ParamGenerator<T> ValuesIn(co.. T (&array)[N]) {
   return ValuesIn(array, array + N);
 }
 
 template <n.. Container>
 internal::ParamGenerator<typename Container::value_type> ValuesIn(
-    const Container& container) {
+    co.. Container& container) {
   return ValuesIn(container.begin(), container.end());
 }
 
@@ -1213,7 +1213,7 @@ internal::ValueArray50<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10, T11, T12, T13,
 // }
 // INSTANTIATE_TEST_CASE_P(BoolSequence, FlagDependentTest, Bool());
 //
-inline internal::ParamGenerator<bool> Bool() {
+inline internal::ParamGenerator<bo..> bo..() {
   return Values(false, true);
 }
 
@@ -1268,14 +1268,14 @@ inline internal::ParamGenerator<bool> Bool() {
 //
 template <typename Generator1, typename Generator2>
 internal::CartesianProductHolder2<Generator1, Generator2> Combine(
-    const Generator1& g1, const Generator2& g2) {
+    co.. Generator1& g1, co.. Generator2& g2) {
   return internal::CartesianProductHolder2<Generator1, Generator2>(
       g1, g2);
 }
 
 template <typename Generator1, typename Generator2, typename Generator3>
 internal::CartesianProductHolder3<Generator1, Generator2, Generator3> Combine(
-    const Generator1& g1, const Generator2& g2, const Generator3& g3) {
+    co.. Generator1& g1, co.. Generator2& g2, co.. Generator3& g3) {
   return internal::CartesianProductHolder3<Generator1, Generator2, Generator3>(
       g1, g2, g3);
 }
@@ -1284,8 +1284,8 @@ template <typename Generator1, typename Generator2, typename Generator3,
     typename Generator4>
 internal::CartesianProductHolder4<Generator1, Generator2, Generator3,
     Generator4> Combine(
-    const Generator1& g1, const Generator2& g2, const Generator3& g3,
-        const Generator4& g4) {
+    co.. Generator1& g1, co.. Generator2& g2, co.. Generator3& g3,
+        co.. Generator4& g4) {
   return internal::CartesianProductHolder4<Generator1, Generator2, Generator3,
       Generator4>(
       g1, g2, g3, g4);
@@ -1295,8 +1295,8 @@ template <typename Generator1, typename Generator2, typename Generator3,
     typename Generator4, typename Generator5>
 internal::CartesianProductHolder5<Generator1, Generator2, Generator3,
     Generator4, Generator5> Combine(
-    const Generator1& g1, const Generator2& g2, const Generator3& g3,
-        const Generator4& g4, const Generator5& g5) {
+    co.. Generator1& g1, co.. Generator2& g2, co.. Generator3& g3,
+        co.. Generator4& g4, co.. Generator5& g5) {
   return internal::CartesianProductHolder5<Generator1, Generator2, Generator3,
       Generator4, Generator5>(
       g1, g2, g3, g4, g5);
@@ -1306,8 +1306,8 @@ template <typename Generator1, typename Generator2, typename Generator3,
     typename Generator4, typename Generator5, typename Generator6>
 internal::CartesianProductHolder6<Generator1, Generator2, Generator3,
     Generator4, Generator5, Generator6> Combine(
-    const Generator1& g1, const Generator2& g2, const Generator3& g3,
-        const Generator4& g4, const Generator5& g5, const Generator6& g6) {
+    co.. Generator1& g1, co.. Generator2& g2, co.. Generator3& g3,
+        co.. Generator4& g4, co.. Generator5& g5, co.. Generator6& g6) {
   return internal::CartesianProductHolder6<Generator1, Generator2, Generator3,
       Generator4, Generator5, Generator6>(
       g1, g2, g3, g4, g5, g6);
@@ -1318,9 +1318,9 @@ template <typename Generator1, typename Generator2, typename Generator3,
     typename Generator7>
 internal::CartesianProductHolder7<Generator1, Generator2, Generator3,
     Generator4, Generator5, Generator6, Generator7> Combine(
-    const Generator1& g1, const Generator2& g2, const Generator3& g3,
-        const Generator4& g4, const Generator5& g5, const Generator6& g6,
-        const Generator7& g7) {
+    co.. Generator1& g1, co.. Generator2& g2, co.. Generator3& g3,
+        co.. Generator4& g4, co.. Generator5& g5, co.. Generator6& g6,
+        co.. Generator7& g7) {
   return internal::CartesianProductHolder7<Generator1, Generator2, Generator3,
       Generator4, Generator5, Generator6, Generator7>(
       g1, g2, g3, g4, g5, g6, g7);
@@ -1331,9 +1331,9 @@ template <typename Generator1, typename Generator2, typename Generator3,
     typename Generator7, typename Generator8>
 internal::CartesianProductHolder8<Generator1, Generator2, Generator3,
     Generator4, Generator5, Generator6, Generator7, Generator8> Combine(
-    const Generator1& g1, const Generator2& g2, const Generator3& g3,
-        const Generator4& g4, const Generator5& g5, const Generator6& g6,
-        const Generator7& g7, const Generator8& g8) {
+    co.. Generator1& g1, co.. Generator2& g2, co.. Generator3& g3,
+        co.. Generator4& g4, co.. Generator5& g5, co.. Generator6& g6,
+        co.. Generator7& g7, co.. Generator8& g8) {
   return internal::CartesianProductHolder8<Generator1, Generator2, Generator3,
       Generator4, Generator5, Generator6, Generator7, Generator8>(
       g1, g2, g3, g4, g5, g6, g7, g8);
@@ -1345,9 +1345,9 @@ template <typename Generator1, typename Generator2, typename Generator3,
 internal::CartesianProductHolder9<Generator1, Generator2, Generator3,
     Generator4, Generator5, Generator6, Generator7, Generator8,
     Generator9> Combine(
-    const Generator1& g1, const Generator2& g2, const Generator3& g3,
-        const Generator4& g4, const Generator5& g5, const Generator6& g6,
-        const Generator7& g7, const Generator8& g8, const Generator9& g9) {
+    co.. Generator1& g1, co.. Generator2& g2, co.. Generator3& g3,
+        co.. Generator4& g4, co.. Generator5& g5, co.. Generator6& g6,
+        co.. Generator7& g7, co.. Generator8& g8, co.. Generator9& g9) {
   return internal::CartesianProductHolder9<Generator1, Generator2, Generator3,
       Generator4, Generator5, Generator6, Generator7, Generator8, Generator9>(
       g1, g2, g3, g4, g5, g6, g7, g8, g9);
@@ -1360,10 +1360,10 @@ template <typename Generator1, typename Generator2, typename Generator3,
 internal::CartesianProductHolder10<Generator1, Generator2, Generator3,
     Generator4, Generator5, Generator6, Generator7, Generator8, Generator9,
     Generator10> Combine(
-    const Generator1& g1, const Generator2& g2, const Generator3& g3,
-        const Generator4& g4, const Generator5& g5, const Generator6& g6,
-        const Generator7& g7, const Generator8& g8, const Generator9& g9,
-        const Generator10& g10) {
+    co.. Generator1& g1, co.. Generator2& g2, co.. Generator3& g3,
+        co.. Generator4& g4, co.. Generator5& g5, co.. Generator6& g6,
+        co.. Generator7& g7, co.. Generator8& g8, co.. Generator9& g9,
+        co.. Generator10& g10) {
   return internal::CartesianProductHolder10<Generator1, Generator2, Generator3,
       Generator4, Generator5, Generator6, Generator7, Generator8, Generator9,
       Generator10>(
@@ -1373,12 +1373,12 @@ internal::CartesianProductHolder10<Generator1, Generator2, Generator3,
 
 # define TEST_P(test_case_name, test_name) \
   n.. GTEST_TEST_CLASS_NAME_(test_case_name, test_name) \
-      : public test_case_name { \
+      : pu.. test_case_name { \
    p.. \
     GTEST_TEST_CLASS_NAME_(test_case_name, test_name)() {} \
     v.. v.. TestBody(); \
-   private: \
-    static int AddToRegistry() { \
+   pr.. \
+    st.. in. AddToRegistry() { \
       ::testing::UnitTest::GetInstance()->parameterized_test_registry(). \
           GetTestCasePatternHolder<test_case_name>(\
               #test_case_name, \
@@ -1391,11 +1391,11 @@ internal::CartesianProductHolder10<Generator1, Generator2, Generator3,
                               test_case_name, test_name)>()); \
       return 0; \
     } \
-    static int gtest_registering_dummy_ GTEST_ATTRIBUTE_UNUSED_; \
+    st.. in. gtest_registering_dummy_ GTEST_ATTRIBUTE_UNUSED_; \
     GTEST_DISALLOW_COPY_AND_ASSIGN_(\
         GTEST_TEST_CLASS_NAME_(test_case_name, test_name)); \
   }; \
-  int GTEST_TEST_CLASS_NAME_(test_case_name, \
+  in. GTEST_TEST_CLASS_NAME_(test_case_name, \
                              test_name)::gtest_registering_dummy_ = \
       GTEST_TEST_CLASS_NAME_(test_case_name, test_name)::AddToRegistry(); \
   v.. GTEST_TEST_CLASS_NAME_(test_case_name, test_name)::TestBody()
@@ -1413,16 +1413,16 @@ internal::CartesianProductHolder10<Generator1, Generator2, Generator3,
 // to std::string and C strings, it won't work for these types.
 
 _de.. INSTANTIATE_TEST_CASE_P(prefix, test_case_name, generator, ...)        \
-  static ::testing::internal::ParamGenerator<test_case_name::ParamType>        \
+  st.. ::testing::internal::ParamGenerator<test_case_name::ParamType>        \
       gtest_##prefix##test_case_name##_EvalGenerator_() {                      \
     return generator;                                                          \
   }                                                                            \
-  static ::std::string gtest_##prefix##test_case_name##_EvalGenerateName_(     \
-      const ::testing::TestParamInfo<test_case_name::ParamType>& info) {       \
+  st.. ::st. string gtest_##prefix##test_case_name##_EvalGenerateName_(     \
+      co.. ::testing::TestParamInfo<test_case_name::ParamType>& info) {       \
     return ::testing::internal::GetParamNameGen<test_case_name::ParamType>(    \
         __VA_ARGS__)(info);                                                    \
   }                                                                            \
-  static int gtest_##prefix##test_case_name##_dummy_ GTEST_ATTRIBUTE_UNUSED_ = \
+  st.. in. gtest_##prefix##test_case_name##_dummy_ GTEST_ATTRIBUTE_UNUSED_ = \
       ::testing::UnitTest::GetInstance()                                       \
           ->parameterized_test_registry()                                      \
           .GetTestCasePatternHolder<test_case_name>(                           \

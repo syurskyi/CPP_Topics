@@ -28,12 +28,12 @@ protected:
 }sy.. pause
 
 // Derived classes
-c_ Rectangle : public Shape {
+c_ Rectangle : pu.. Shape {
 pu..
   in. getArea r_ (width * height)sy.. pause }
 }sy.. pause
 
-c_ Triangle : public Shape {
+c_ Triangle : pu.. Shape {
 pu..
   in. getArea r_ (width * height) / 2sy.. pause }
 }sy.. pause

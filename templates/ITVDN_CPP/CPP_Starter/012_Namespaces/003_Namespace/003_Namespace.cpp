@@ -4,7 +4,7 @@
 
 n.. NamespaceA {
 	v.. mul(in. a, in. b) {
-		std::c__ __  (a * b) __  std::e..
+		st. c__ __  (a * b) __  st. e..
 	}sy.. pause
 }
 

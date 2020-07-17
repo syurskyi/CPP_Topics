@@ -70,7 +70,7 @@ MATCHER(IsEmpty, negation ? "isn't empty" : "is empty") {
 // bool" operators and so can't be compared for equality with true
 // and false.
 MATCHER(IsTrue, negation ? "is false" : "is true") {
-  return static_cast<bool>(arg);
+  return static_cast<bo..>(arg);
 }
 
 // Define a matcher that matches a value that evaluates in boolean
@@ -78,7 +78,7 @@ MATCHER(IsTrue, negation ? "is false" : "is true") {
 // bool" operators and so can't be compared for equality with true
 // and false.
 MATCHER(IsFalse, negation ? "is true" : "is false") {
-  return !static_cast<bool>(arg);
+  return !static_cast<bo..>(arg);
 }
 
 #ifdef _MSC_VER

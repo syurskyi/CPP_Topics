@@ -12,15 +12,15 @@ Person::Person
 
 }
 
-string Person::toString
+st..  Person::toString
 	r_ "Person's name is: " + name;
 }
 
-v.. Person::setName(string newName) {
+v.. Person::setName(st..  newName) {
 	name = newName;
 }
 
-string Person::getName
+st..  Person::getName
 	r_ name;
 }
 

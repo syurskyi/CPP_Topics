@@ -3,13 +3,13 @@ _de.. POSITION_H_INCLUDED
 
 n.. Position
 {
-    int x, y;
+    in. x, y;
     p..
-        Position(int,int);
+        Position(in.,in.);
         ~Position();
-        v.. getPosition() const;
-        v.. setPosition(int, int);
-        friend v.. setX(Position &, int);
+        v.. getPosition() co..;
+        v.. setPosition(in., in.);
+        friend v.. setX(Position &, in.);
 };
 
 e.. // POSITION_H_INCLUDED

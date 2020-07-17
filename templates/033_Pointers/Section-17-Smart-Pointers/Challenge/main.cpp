@@ -50,30 +50,30 @@ Displaying vector data
 However, feel free to modify these as you wish
 ***********************************************************************************************************/
 ? ios..
-? <memory>
+? me..
 ? ve..
 
 c_ Test {
 pr..
     in. data;
 pu..
-    Test() : data{0} { std::c.. __ "\tTest constructor (" __ data __ ")" __ std::e.. }
-    Test(in. data) : data {data} { std::c.. __ "\tTest constructor (" __ data __ ")" __ std::e.. }
+    Test() : data{0} { st. c.. __ "\tTest constructor (" __ data __ ")" __ st. e.. }
+    Test(in. data) : data {data} { st. c.. __ "\tTest constructor (" __ data __ ")" __ st. e.. }
     in. get_data() co.. {r_ data; }
-    ~Teststd::c.. __ "\tTest destructor (" __ data __ ")" __ std::e.. }
+    ~Teststd::c.. __ "\tTest destructor (" __ data __ ")" __ st. e.. }
 };
 
 // Function prototypes
-std::unique_ptr<std::ve..<std::shared_ptr<Test>>> make();
-v.. fill(std::ve..<std::shared_ptr<Test__ &vec, in. num);
-v.. display(co.. std::ve..<std::shared_ptr<Test__&vec);
+st. unique_ptr<st. ve..<st. shared_ptr<Test>>> make();
+v.. fill(st. ve..<st. shared_ptr<Test__ &vec, in. num);
+v.. display(co.. st. ve..<st. shared_ptr<Test__&vec);
 
 in. main
-    std::unique_ptr<std::ve..<std::shared_ptr<Test>>> vec_ptr;
+    st. unique_ptr<st. ve..<st. shared_ptr<Test>>> vec_ptr;
     vec_ptr = make();
-    std::c.. __ "How many data points do you want to enter: ";
+    st. c.. __ "How many data points do you want to enter: ";
     in. num;
-    std::ci. __ num;
+    st. ci. __ num;
     fill(*vec_ptr, num);
     display(*vec_ptr);
     r_ _

@@ -6,40 +6,40 @@
 ? <set>
 
 
-v.. display(co.. std::map<std::string, std::set<in.__ &m) {
-    std::c.. __ "[ ";
+v.. display(co.. st. map<st. st.. , st. set<in.__ &m) {
+    st. c.. __ "[ ";
     ___ (co.. a.. &elem: m) {
-        std::c.. __ elem.first __ ": [ " ;
+        st. c.. __ elem.first __ ": [ " ;
             ___ (co.. a.. &set_elem : elem.second)
-                 std::c.. __ set_elem __  " ";
-            std::c.. __ "] " ;
+                 st. c.. __ set_elem __  " ";
+            st. c.. __ "] " ;
     }
-    std::c.. __ "]  " __ std::e..
+    st. c.. __ "]  " __ st. e..
 }
 
 template <typename T1, typename T2>
-v.. display(co.. std::map<T1, T2> &l) {
-    std::c.. __ "[ ";
+v.. display(co.. st. map<T1, T2> &l) {
+    st. c.. __ "[ ";
     ___ (co.. a.. &elem: l) {
-        std::c.. __ elem.first __ ":" __ elem.second __ " ";
+        st. c.. __ elem.first __ ":" __ elem.second __ " ";
     }
-    std::c.. __ "]  " __ std::e..
+    st. c.. __ "]  " __ st. e..
 }
 
 v.. test1
     // Maps
-    std::c.. __ "\nTest1 =========================" __ std::e..
-    std::map<std::string, in.> m {
+    st. c.. __ "\nTest1 =========================" __ st. e..
+    st. map<st. st.. , in.> m {
         {"Larry", 3},
         {"Moe", 1},
         {"Curly", 2}
     };
     display(m);      
     
-    m.insert( std::pair<std::string, in.>("Anna", 10));
+    m.insert( st. pair<st. st.. , in.>("Anna", 10));
     display(m);
     
-    m.insert(std::make_pair("Joe", 5));
+    m.insert(st. make_pair("Joe", 5));
     display(m);
     
     m["Frank"] = 18;
@@ -51,12 +51,12 @@ v.. test1
     m.erase("Frank");
     display(m);
     
-    std::c.. __ "Count for Joe: " __ m.count("Joe") __ std::e..
-    std::c.. __ "Count for Frank: " __ m.count("Frank") __ std::e..
+    st. c.. __ "Count for Joe: " __ m.count("Joe") __ st. e..
+    st. c.. __ "Count for Frank: " __ m.count("Frank") __ st. e..
     
     a.. it = m.find("Larry");
     __ (it != m.end())
-        std::c.. __ "Found: " __ it->first __ " : " __ it->second __ std::e..
+        st. c.. __ "Found: " __ it->first __ " : " __ it->second __ st. e..
         
     m.clear();
     
@@ -65,9 +65,9 @@ v.. test1
 }
 
 v.. test2
-    std::c.. __ "\nTest2 =========================" __ std::e..
+    st. c.. __ "\nTest2 =========================" __ st. e..
     
-    std::map<std::string, std::set<in.__ grades  {
+    st. map<st. st.. , st. set<in.__ grades  {
         {"Larry", {100, 90} },
         {"Moe",  {94} },
         {"Curly", {80, 90, 100} }

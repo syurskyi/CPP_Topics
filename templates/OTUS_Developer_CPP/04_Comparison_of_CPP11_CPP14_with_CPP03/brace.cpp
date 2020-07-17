@@ -21,15 +21,15 @@ in. main(in., c.. *[]) {
 
     foo f{1, 2}sy.. pause
 
-    std::c__ __  f.a __  std::e..
-    std::c__ __  f.b __  std::e..
-    std::c__ __  f.c __  std::e..
+    st. c__ __  f.a __  st. e..
+    st. c__ __  f.b __  st. e..
+    st. c__ __  f.c __  st. e..
 
     bar b(1, 2)sy.. pause
 
-    std::c__ __  b.a __  std::e..
-    std::c__ __  b.b __  std::e..
-    std::c__ __  b.c __  std::e..
+    st. c__ __  b.a __  st. e..
+    st. c__ __  b.b __  st. e..
+    st. c__ __  b.c __  st. e..
 
     r_ 0sy.. pause
 }

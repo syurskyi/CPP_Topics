@@ -1,29 +1,29 @@
-?i.. _TRUST_ACCOUNT_H_
-_de.. _TRUST_ACCOUNT_H_
-
-? "Savings_Account.h"
-
-n.. Trust_Account : public Savings_Account {
-private:
-    static constexpr const char *def_name = "Unnamed Trust Account";
-    static constexpr double def_balance = 0.0;
-    static constexpr double def_int_rate = 0.0;
-    static constexpr double bonus_amount = 50.0;
-    static constexpr double bonus_threshold = 5000.0;
-    static constexpr int max_withdrawals = 3;
-    static constexpr double max_withdraw_percent = 0.2;
-protected:
-    int num_withdrawals;
-p..
-    Trust_Account(std::string name = def_name,  double balance = def_balance, double int_rate = def_int_rate);
-    
-    // Deposits of $5000.00 or more will receive $50 bonus
-    v.. bool deposit(double amount) override;
-    
-    // Only allowed maximum of 3 withdrawals, each can be up to a maximum of 20% of the account's value
-    v.. bool withdraw(double amount) override;
-    v.. v.. print(std::ostream &os) const override;
-
-};
-
-e.. // _TRUST_ACCOUNT_H_
+//?i.. _TRUST_ACCOUNT_H_
+//_de.. _TRUST_ACCOUNT_H_
+//
+//? "S..
+//
+//n.. Trust_Account : pu.. S..
+//pr..
+//    st.. c_e_ co.. ch.. #def_name _ "Unnamed Trust Account"
+//    st.. c_e_ do.. def_balance _ 0.0
+//    st.. c_e_ do.. def_int_rate _ 0.0
+//    st.. c_e_ do.. bonus_amount _ 50.0
+//    st.. c_e_ do.. bonus_threshold _ 5000.0
+//    st.. c_e_ in. max_withdrawals _ 3
+//    st.. c_e_ do.. max_withdraw_percent _ 0.2
+//pr..
+//    in. num_withdrawals
+//p..
+//    ? st. string name _ def_name,  do.. balance _ def_balance, do.. int_rate _ def_int_rate
+//
+//    // Deposits of $5000.00 or more will receive $50 bonus
+//    v.. bo.. deposit(do.. amount) ov..
+//
+//    // Only allowed maximum of 3 withdrawals, each can be up to a maximum of 20% of the account's value
+//    v.. bo.. withdraw(do.. amount) ov..
+//    v.. v.. print(st. ostream #os) co.. ov..
+//
+//
+//
+//e.. // _TRUST_ACCOUNT_H_

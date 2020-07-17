@@ -1,6 +1,6 @@
 ? |i..
-using std::c__sy.. pause
-using std::e..
+using st. c__sy.. pause
+using st. e..
 ? "mostra.h"
 /**
 *@brif Funcao que mostra na tela o numero primo mais proximo

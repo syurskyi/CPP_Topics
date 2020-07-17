@@ -20,9 +20,9 @@ v.. Cat::speak
 }
 
 v.. Cat::makeHappy
-	happy = true;
+	happy = t..
 }
 
 v.. Cat::makeSad
-	happy = false;
+	happy = f..
 }

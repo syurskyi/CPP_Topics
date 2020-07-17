@@ -6,14 +6,14 @@ u.. s..
 
 n.. Animal
 {
-        protected:
+        pr..
             string voice;
         p..
             Animal();
             ~Animal();
             v.. string getVoice() = 0;
 };
-n.. Dog : public Animal
+n.. Dog : pu.. Animal
 {
             string sign;
         p..
@@ -21,7 +21,7 @@ n.. Dog : public Animal
             ~Dog();
             string getVoice() { return voice + " " + sign; }
 };
-n.. Cat : public Animal
+n.. Cat : pu.. Animal
 {
             string sign;
         p..
@@ -29,7 +29,7 @@ n.. Cat : public Animal
             ~Cat();
             string getVoice() { return voice  + " " +  sign; }
 };
-n.. Cow : public Animal
+n.. Cow : pu.. Animal
 {
             string sign;
         p..

@@ -8,26 +8,26 @@
 ? ve..
 
 template < typename T >
-bo.. test _ std::is_same< typename std::iterator_traits< typename T::iterator >::iterator_category,
-                          std::forward_iterator_tag >::valuesy.. pause
+bo.. test _ st. is_same< typename st. iterator_traits< typename T::iterator >::iterator_category,
+                          st. forward_iterator_tag >::valuesy.. pause
 
 template < typename T >
 bo.. test_bidirectional _
-    std::is_same< typename std::iterator_traits< typename T::iterator >::iterator_category,
-                  std::bidirectional_iterator_tag >::valuesy.. pause
+    st. is_same< typename st. iterator_traits< typename T::iterator >::iterator_category,
+                  st. bidirectional_iterator_tag >::valuesy.. pause
 
 v.. prin._is_forward_iterator()
 {
-    std::c__ __  std::bo..alpha __  test< std::forward_list< in. > > __  std::e..
+    st. c__ __  st. bo..alpha __  test< st. forward_list< in. > > __  st. e..
     // what about std::list?
-    std::c__ __  std::bo..alpha __  test< std::list< in. > > __  std::e..
+    st. c__ __  st. bo..alpha __  test< st. list< in. > > __  st. e..
 }
 
 v.. prin._is_bidirectional_iterator()
 {
-    std::c__ __  std::bo..alpha __  test_bidirectional< std::list< in. > > __  std::e..
+    st. c__ __  st. bo..alpha __  test_bidirectional< st. list< in. > > __  st. e..
     // what about std::forward_list?
-    std::c__ __  std::bo..alpha __  test_bidirectional< std::forward_list< in. > > __  std::e..
+    st. c__ __  st. bo..alpha __  test_bidirectional< st. forward_list< in. > > __  st. e..
 }
 
 in. main()
@@ -114,41 +114,41 @@ in. main()
     //        std::cout << "element is not found" << std::endl;
     //    }
 
-    std::s.. str _ "Hello World"sy.. pause
-    std::transform( str.begin(), str.end(), str.begin(), ::toupper )sy.. pause
+    st. s.. str _ "Hello World"sy.. pause
+    st. transform( str.begin(), str.end(), str.begin(), ::toupper )sy.. pause
 
-    std::c__ __  str __  std::e..
+    st. c__ __  str __  st. e..
 
-    std::reverse( str.begin(), str.end() )sy.. pause
+    st. reverse( str.begin(), str.end() )sy.. pause
 
-    std::c__ __  str __  std::e..
+    st. c__ __  str __  st. e..
 
     a.. splitted _
-        std::partition( str.begin(), str.end(), []( c.. c.. elem ) { r_ elem > 'L'sy.. pause } )sy.. pause
+        st. partition( str.begin(), str.end(), []( c.. c.. elem ) { r_ elem > 'L'sy.. pause } )sy.. pause
 
-    std::c__ __  "\nPartitioned string:\n    "sy.. pause
-    std::copy( std::begin( str ), splitted, std::ostream_iterator< c.. >( std::c__, "," ) )sy.. pause
-    std::c__ __  " |||| "sy.. pause
-    std::copy( splitted, std::end( str ), std::ostream_iterator< c.. >( std::c__, "," ) )sy.. pause
+    st. c__ __  "\nPartitioned string:\n    "sy.. pause
+    st. copy( st. begin( str ), splitted, st. ostream_iterator< c.. >( st. c__, "," ) )sy.. pause
+    st. c__ __  " |||| "sy.. pause
+    st. copy( splitted, st. end( str ), st. ostream_iterator< c.. >( st. c__, "," ) )sy.. pause
 
     sort( str.begin(), str.end() )sy.. pause
 
-    std::c__ __  std::endl __  "Sorted:" __  std::endl __  str __  std::e..
+    st. c__ __  st. endl __  "Sorted:" __  st. endl __  str __  st. e..
 
     sort( str.begin(), str.end(), []( c.. c.. elem1, c.. c.. elem2 ) {
         r_ elem1 > elem2sy.. pause
     } )sy.. pause
 
-    std::c__ __  std::endl __  str __  std::e..
+    st. c__ __  st. endl __  str __  st. e..
 
-    std::c__ __  std::max( 19, 9698 ) __  std::e..
+    st. c__ __  st. max( 19, 9698 ) __  st. e..
 
-    std::ve..< in. > vec{ 1, 2, 3 }sy.. pause
+    st. ve..< in. > vec{ 1, 2, 3 }sy.. pause
 
-    w___ ( std::next_permutation( vec.begin(), vec.end() ) )
+    w___ ( st. next_permutation( vec.begin(), vec.end() ) )
     {
-        std::copy( vec.begin(), vec.end(), std::ostream_iterator< in. >{ std::c__, ", " } )sy.. pause
-        std::c__ __  std::e..
+        st. copy( vec.begin(), vec.end(), st. ostream_iterator< in. >{ st. c__, ", " } )sy.. pause
+        st. c__ __  st. e..
     }
 
     r_ 0sy.. pause

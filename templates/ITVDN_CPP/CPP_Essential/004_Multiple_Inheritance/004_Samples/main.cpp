@@ -8,7 +8,7 @@ u.. s..
 c_ A
 {}sy.. pause
 
-c_ B : public A
+c_ B : pu.. A
 {}sy.. pause
 
 in. main()

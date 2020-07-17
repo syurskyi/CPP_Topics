@@ -6,74 +6,74 @@
 ? <iterator> // for std::advance
 
 c_ Person {
-    friend std::ostream &operator__(std::ostream &os, co.. Person &p);
-    std::string name;
+    friend st. ostream &operator__(st. ostream &os, co.. Person &p);
+    st. st..  name;
     in. age;
 pu..
     Person() : name{"Unknown"}, age{0} {}
-    Person(std::string name, in. age)
+    Person(st. st..  name, in. age)
         : name{name}, age{age}  {}
-    bool operator<(co.. Person &rhs) co.. {
+    b.. operator<(co.. Person &rhs) co.. {
         r_ this->age < rhs.age;
     }
-    bool operator__(co.. Person &rhs) co.. {
+    b.. operator__(co.. Person &rhs) co.. {
         r_ (this->name __ rhs.name && this->age __ rhs.age);
     }
 };
 
-std::ostream &operator__(std::ostream &os, co.. Person &p) {
+st. ostream &operator__(st. ostream &os, co.. Person &p) {
     os __ p.name __ ":" __ p.age;
     r_ os;
 }
 
 
 template <typename T>
-v.. display(co.. std::list<T> &l) {
-    std::c.. __ "[ ";
+v.. display(co.. st. list<T> &l) {
+    st. c.. __ "[ ";
     ___ (co.. a.. &elem: l) {
-        std::c.. __ elem __ " ";
+        st. c.. __ elem __ " ";
     }
-    std::c.. __ "]" __ std::e..
+    st. c.. __ "]" __ st. e..
 }
 
 v.. test1
-    std::c.. __ "\nTest1 =========================" __ std::e..
+    st. c.. __ "\nTest1 =========================" __ st. e..
 
-    std::list<in.> l1 {1,2,3,4,5};
+    st. list<in.> l1 {1,2,3,4,5};
     display(l1);
     
-    std::list<std::string> l2;
+    st. list<st. st.. > l2;
     l2.push_back("Back");
     l2.push_front("Front");
     display(l2);
     
-    std::list<in.> l3;
+    st. list<in.> l3;
     l3 = {1,2,3,4,5,6,7,8,9,10};
     display(l3);
     
-    std::list<in.> l4 (10, 100);
+    st. list<in.> l4 (10, 100);
     display(l4);
 }
 
 v.. test2
-    std::c.. __ "\nTest2 =========================" __ std::e..
+    st. c.. __ "\nTest2 =========================" __ st. e..
 
-    std::list<in.> l {1,2,3,4,5,6,7,8,9,10};
+    st. list<in.> l {1,2,3,4,5,6,7,8,9,10};
     display(l);
-    std::c.. __ "Size: " __ l.s.. __ std::e..
+    st. c.. __ "Size: " __ l.s.. __ st. e..
     
-    std::c.. __ "Front : " __ l.front() __ std::e..
-    std::c.. __ "Back  : " __ l.back() __ std::e..
+    st. c.. __ "Front : " __ l.front() __ st. e..
+    st. c.. __ "Back  : " __ l.back() __ st. e..
     
     l.clear();
     display(l);
-    std::c.. __ "Size: " __ l.s.. __ std::e..
+    st. c.. __ "Size: " __ l.s.. __ st. e..
 }
 
 v.. test3
-    std::c.. __ "\nTest3 =========================" __ std::e..
+    st. c.. __ "\nTest3 =========================" __ st. e..
 
-    std::list<in.> l {1,2,3,4,5,6,7,8,9,10};
+    st. list<in.> l {1,2,3,4,5,6,7,8,9,10};
     display(l);
     
     l.resize(5);
@@ -82,28 +82,28 @@ v.. test3
     l.resize(10);
     display(l);
     
-    std::list<Person> persons;
+    st. list<Person> persons;
     persons.resize(5);             // uses the Person default constructor
     display(persons);
     
 }
 v.. test4
-    std::c.. __ "\nTest4 =========================" __ std::e..
+    st. c.. __ "\nTest4 =========================" __ st. e..
 
-    std::list<in.> l {1,2,3,4,5,6,7,8,9,10};
+    st. list<in.> l {1,2,3,4,5,6,7,8,9,10};
     display(l);
-    a.. it = std::find(l.begin(), l.end(), 5);
+    a.. it = st. find(l.begin(), l.end(), 5);
     __ (it != l.end()) {
         l.insert(it, 100);
     }
     display(l);
     
-    std::list<in.> l2 {1000,2000,3000};
+    st. list<in.> l2 {1000,2000,3000};
     l.insert(it, l2.begin(), l2.end());
     display(l);
     
-    std::advance(it, -4);       // point to the 100
-    std::c.. __ *it __ std::e..
+    st. advance(it, -4);       // point to the 100
+    st. c.. __ *it __ st. e..
     
     l.erase(it);                    // remove the 100 - iterator becomes invalid
     display(l);
@@ -111,36 +111,36 @@ v.. test4
 }
 
 v.. test5
-    std::c.. __ "\nTest5 =========================" __ std::e..
+    st. c.. __ "\nTest5 =========================" __ st. e..
 
-    std::list<Person>  stooges {
+    st. list<Person>  stooges {
         {"Larry", 18},
         {"Moe", 25},
         {"Curly", 17}
     };
     
     display(stooges);
-    std::string name;
+    st. st..  name;
     in. age{};
-    std::c.. __ "\nEnter the name of the next stooge: ";
-    getline(std::ci., name);
-    std::c.. __ "Enter their age: ";
-    std::ci. __ age;
+    st. c.. __ "\nEnter the name of the next stooge: ";
+    getline(st. ci., name);
+    st. c.. __ "Enter their age: ";
+    st. ci. __ age;
     
     stooges.emplace_back(name, age);
     display(stooges);
     
     // Insert Frank before Moe
-    a.. it = std::find(stooges.begin(), stooges.end(), Person{"Moe", 25});
+    a.. it = st. find(stooges.begin(), stooges.end(), Person{"Moe", 25});
     __ (it != stooges.end())
         stooges.emplace(it, "Frank", 18);
     display(stooges);    
 }
 
 v.. test6
-    std::c.. __ "\nTest6 =========================" __ std::e..
+    st. c.. __ "\nTest6 =========================" __ st. e..
     
-    std::list<Person>  stooges {
+    st. list<Person>  stooges {
         {"Larry", 18},
         {"Moe", 25},
         {"Curly", 17}
@@ -160,7 +160,7 @@ in. main
     test4();
     test5();
     test6();
-    std::c.. __ std::e..
+    st. c.. __ st. e..
     r_ 0;
 }
 

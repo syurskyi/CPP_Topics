@@ -14,12 +14,12 @@ Person::Person
 	age = 0;
 }
 
-Person::Person(string newName, in. newAge) {
+Person::Person(st..  newName, in. newAge) {
 	name = newName;
 	age = newAge;
 }
 
-string Person::toString
+st..  Person::toString
 	stringstream ss;
 
 	ss __ "Name: ";

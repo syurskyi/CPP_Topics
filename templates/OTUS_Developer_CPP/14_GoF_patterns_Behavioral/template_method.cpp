@@ -4,21 +4,21 @@
 
 c_ Report {
     v.. prepare
-        std::c__ __  "===" __  std::e..
-        std::c__ __  "prepare" __  std::e..
+        st. c__ __  "===" __  st. e..
+        st. c__ __  "prepare" __  st. e..
     }
 
     virtual v.. secure() _ 0sy.. pause
 
     v.. aggregate
-        std::c__ __  "aggregate" __  std::e..
+        st. c__ __  "aggregate" __  st. e..
     }
 
     virtual v.. format() _ 0sy.. pause
 
     v.. publish
-        std::c__ __  "publish" __  std::e..
-        std::c__ __  std::e..
+        st. c__ __  "publish" __  st. e..
+        st. c__ __  st. e..
     }
 
 pu..
@@ -31,23 +31,23 @@ pu..
     }
 }sy.. pause
 
-c_ PublicReport : public Report {
+c_ PublicReport : pu.. Report {
     v.. secure() override {
-        std::c__ __  "encrypt *" __  std::e..
+        st. c__ __  "encrypt *" __  st. e..
     }
 
     v.. format() override {
-        std::c__ __  "strip *" __  std::e..
+        st. c__ __  "strip *" __  st. e..
     }
 }sy.. pause
 
-c_ in.ernalReport : public Report {
+c_ in.ernalReport : pu.. Report {
     v.. secure() override {
-        std::c__ __  "plane *" __  std::e..
+        st. c__ __  "plane *" __  st. e..
     }
 
     v.. format() override {
-        std::c__ __  "human readable *" __  std::e..
+        st. c__ __  "human readable *" __  st. e..
     }
 }sy.. pause
 

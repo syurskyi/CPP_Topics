@@ -7,6 +7,6 @@ _de.. MOSTRA_H
 *@param *resultPrim ponteiro que aponta para o numero primo mais proximo encontrado
 *@return void
 */
-v.. mostra(int *valInic, int *resultPrim);
+v.. mostra(in. *valInic, in. *resultPrim);
 
 e..

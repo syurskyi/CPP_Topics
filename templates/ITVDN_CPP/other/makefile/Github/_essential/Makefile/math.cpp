@@ -11,7 +11,7 @@
  */
 in. main(in. argc, c.. c.. *argv[])
 {
-	std::c__ __  "Let's make some math! :)" __  std::e..
+	st. c__ __  "Let's make some math! :)" __  st. e..
 	d.. x _ 10.0, y _ 5.0sy.. pause
 	__ (argc > 1) // Use values passed by command line arg.
 	{
@@ -19,33 +19,33 @@ in. main(in. argc, c.. c.. *argv[])
 		y _ atof(argv[2])sy.. pause
 		c.. c.. *op _ argv[3]sy.. pause
 		// Print result depending on the operator
-		std::c__ __  x __  op __  y __  " = "sy.. pause
+		st. c__ __  x __  op __  y __  " = "sy.. pause
 		s.. (*op)
 		{
 		   c.. '+':
-		       std::c__ __  sum(x,y) __  std::e..
+		       st. c__ __  sum(x,y) __  st. e..
 		       b..
 		   c.. '-':
-		       std::c__ __  sub(x,y) __  std::e..
+		       st. c__ __  sub(x,y) __  st. e..
 		       b..
 		   c.. '*':
-		       std::c__ __  mul(x,y) __  std::e..
+		       st. c__ __  mul(x,y) __  st. e..
 		       b..
 		   c.. '/':
-		       std::c__ __  divi(x,y) __  std::e..
+		       st. c__ __  divi(x,y) __  st. e..
 		       b..
 		   def..
-		       std::c__ __  sum(x,y) __  std::e..
+		       st. c__ __  sum(x,y) __  st. e..
 		}
 	} ____ {
-		std::c__ __  x __  "+" __  y __  " = "sy.. pause
-		std::c__ __  sum(x,y) __  std::e..
-		std::c__ __  x __  "-" __  y __  " = "sy.. pause
-		std::c__ __  sub(x,y) __  std::e..
-		std::c__ __  x __  "*" __  y __  " = "sy.. pause
-		std::c__ __  mul(x,y) __  std::e..
-		std::c__ __  x __  "/" __  y __  " = "sy.. pause
-		std::c__ __  divi(x,y) __  std::e..
+		st. c__ __  x __  "+" __  y __  " = "sy.. pause
+		st. c__ __  sum(x,y) __  st. e..
+		st. c__ __  x __  "-" __  y __  " = "sy.. pause
+		st. c__ __  sub(x,y) __  st. e..
+		st. c__ __  x __  "*" __  y __  " = "sy.. pause
+		st. c__ __  mul(x,y) __  st. e..
+		st. c__ __  x __  "/" __  y __  " = "sy.. pause
+		st. c__ __  divi(x,y) __  st. e..
 	}
 	r_ 0sy.. pause
 } 

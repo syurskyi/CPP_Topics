@@ -1,20 +1,20 @@
 ?i.. _CHECKING_ACCOUNT_H_
 _de.. _CHECKING_ACCOUNT_H_
 ? ios..
-? <string>
+? str..
 ? "Account.h"
 
-c... Checking_Account: public Account {
-private:
-    static constexpr const char *def_name = "Unnamed Checking Account";
-    static constexpr double def_balance = 0.0;
-    static constexpr double per_check_fee = 1.5;
+c... Checking_Account: pu.. Account {
+pr..
+    st.. c_e_ co.. ch.. *def_name = "Unnamed Checking Account";
+    st.. c_e_ do.. def_balance = 0.0;
+    st.. c_e_ do.. per_check_fee = 1.5;
 p..
-    Checking_Account(std::string name = def_name, double balance = def_balance);    
-    v.. bool withdraw(double) override;
-    v.. bool deposit(double) override;
-    v.. v.. print(std::ostream &os) const override;
-    v.. ~Checking_Account() = default;
+    Checking_Account(st. string name = def_name, do.. balance = def_balance);
+    v.. bo.. withdraw(do..) ov..
+    v.. bo.. deposit(do..) ov..
+    v.. v.. print(st. ostream &os) co.. ov..
+    v.. ~Checking_Account() = de..
 };
 
 e.. // _CHECKING_ACCOUNT_H_

@@ -12,7 +12,7 @@ u.. s..
 Cat::Cat
 	c.. __ "Cat created." __ e..
 
-	happy = true;
+	happy = t..
 }
 
 Cat::~Cat

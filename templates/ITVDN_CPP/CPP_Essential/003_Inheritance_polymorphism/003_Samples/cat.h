@@ -1,13 +1,13 @@
 ? "mammal.h"
 
-n.. Cat : public Mammal
+n.. Cat : pu.. Mammal
 {
 p..
     Cat();
     Cat(uint paws);
     uint get_paws();
 
-    v.. say() override;
+    v.. say() ov..
     ~Cat();
 
 p..

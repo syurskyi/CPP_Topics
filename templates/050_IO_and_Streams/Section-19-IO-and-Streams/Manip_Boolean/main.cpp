@@ -7,32 +7,32 @@
 
 in. main
   
-    std::c.. __ "noboolalpha - default  (10 == 10) : " __ (10 __ 10)  __ std::e..
-    std::c.. __ "noboolalpha - default  (10 == 20) : " __ (10 __ 20)  __ std::e..
+    st. c.. __ "noboolalpha - default  (10 == 10) : " __ (10 __ 10)  __ st. e..
+    st. c.. __ "noboolalpha - default  (10 == 20) : " __ (10 __ 20)  __ st. e..
     
     // Set to true/false formatting
-    std::c.. __ std::boolalpha;    // change to true/false
-    std::c.. __ "boolalpha   (10 == 10) : " __ (10 __ 10)  __ std::e..
-    std::c.. __ "boolalpha   (10 == 20) : " __ (10 __ 20)  __ std::e..
+    st. c.. __ st. boolalpha;    // change to true/false
+    st. c.. __ "boolalpha   (10 == 10) : " __ (10 __ 10)  __ st. e..
+    st. c.. __ "boolalpha   (10 == 20) : " __ (10 __ 20)  __ st. e..
     
      // setting still stays for future boolean insertions
-    std::c.. __ "boolalpha   (10 == 10) : " __ (10 __ 10)  __ std::e..
-    std::c.. __ "boolalpha   (10 == 20) : " __ (10 __ 20)  __ std::e..
+    st. c.. __ "boolalpha   (10 == 10) : " __ (10 __ 10)  __ st. e..
+    st. c.. __ "boolalpha   (10 == 20) : " __ (10 __ 20)  __ st. e..
     
     // Toggle to 0/1
-    std::c.. __ std::noboolalpha;
-    std::c.. __ "noboolalpha  (10 == 10) : " __ (10 __ 10)  __ std::e..
-    std::c.. __ "noboolalpha  (10 == 20) : " __ (10 __ 20)  __ std::e..
+    st. c.. __ st. noboolalpha;
+    st. c.. __ "noboolalpha  (10 == 10) : " __ (10 __ 10)  __ st. e..
+    st. c.. __ "noboolalpha  (10 == 20) : " __ (10 __ 20)  __ st. e..
     
     // Set back to true/false using setf method
-    std::c...setf(std::ios::boolalpha);
-    std::c.. __ "boolalpha   (10 == 10) : " __ (10 __ 10)  __ std::e..
-    std::c.. __ "boolalpha   (10 == 20) : " __ (10 __ 20)  __ std::e..
+    st. c...setf(st. ios::boolalpha);
+    st. c.. __ "boolalpha   (10 == 10) : " __ (10 __ 10)  __ st. e..
+    st. c.. __ "boolalpha   (10 == 20) : " __ (10 __ 20)  __ st. e..
     
     // resets to default which is 0/1
-    std::c.. __ std::resetiosflags(std::ios::boolalpha);
-    std::c.. __ "Default  (10 == 10) : " __ (10 __ 10)  __ std::e..
-    std::c.. __ "Default  (10 == 20) : " __ (10 __ 20)  __ std::e..
+    st. c.. __ st. resetiosflags(st. ios::boolalpha);
+    st. c.. __ "Default  (10 == 10) : " __ (10 __ 10)  __ st. e..
+    st. c.. __ "Default  (10 == 20) : " __ (10 __ 20)  __ st. e..
     r_ _
 }
 

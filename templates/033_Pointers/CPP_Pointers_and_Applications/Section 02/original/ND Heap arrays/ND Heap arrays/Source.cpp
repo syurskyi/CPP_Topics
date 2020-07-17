@@ -25,9 +25,9 @@ in. main
 
 	___ (in. i = _ i < 2; ++i) {
 		___ (in. j = _ j < 3; ++j) {
-			std::c.. __ pp[i][j] __ ' ';
+			st. c.. __ pp[i][j] __ ' ';
 		}
-		std::c.. __ std::e..
+		st. c.. __ st. e..
 	}
 	delete[] pp[0];
 	delete[] pp[1];

@@ -3,23 +3,23 @@
 ? |i..
 
 struct xray {
-    std::string x;
+    st. string x;
 
-    xray(const char *x_) : x(x_)
+    xray(co.. ch.. *x_) : x(x_)
     {
-        std::cout << "ctor " << x << std::endl;
+        st. cout << "ctor " << x << st. endl;
     }
 
-    xray(const xray &rhs) : x(rhs.x)
+    xray(co.. xray &rhs) : x(rhs.x)
     {
-        std::cout << "copy ctor from " << rhs.x << " to " << x << std::endl;
+        st. cout << "copy ctor from " << rhs.x << " to " << x << st. endl;
     }
 
 #ifdef MOVE
 
     xray(xray &&rhs) noexcept
     {
-        std::cout << "move ctor from " << rhs.x << " to " << x << std::endl;
+        st. cout << "move ctor from " << rhs.x << " to " << x << st. endl;
         x.swap(rhs.x);
     }
 
@@ -27,11 +27,11 @@ e..
 
     ~xray()
     {
-        std::cout << "dtor " << x << std::endl;
+        st. cout << "dtor " << x << st. endl;
     }
-    xray &operator=(const xray &rhs)
+    xray &operator=(co.. xray &rhs)
     {
-        std::cout << "copy assign from " << rhs.x << " to " << x << std::endl;
+        st. cout << "copy assign from " << rhs.x << " to " << x << st. endl;
         return *this;
     }
 
@@ -40,7 +40,7 @@ e..
     xray &operator=(xray &&rhs) noexcept
 
     {
-        std::cout << "move assign from " << rhs.x << " to " << x << std::endl;
+        st. cout << "move assign from " << rhs.x << " to " << x << st. endl;
         return *this;
     }
 

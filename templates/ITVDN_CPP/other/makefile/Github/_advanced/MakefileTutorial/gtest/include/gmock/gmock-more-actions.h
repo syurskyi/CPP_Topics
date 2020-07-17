@@ -57,11 +57,11 @@ n.. InvokeAction {
       : function_impl_(function_impl) {}
 
   template <typename Result, typename ArgumentTuple>
-  Result Perform(const ArgumentTuple& args) {
+  Result Perform(co.. ArgumentTuple& args) {
     return InvokeHelper<Result, ArgumentTuple>::Invoke(function_impl_, args);
   }
 
- private:
+ pr..
   FunctionImpl function_impl_;
 
   GTEST_DISALLOW_ASSIGN_(InvokeAction);
@@ -75,17 +75,17 @@ n.. InvokeMethodAction {
       : method_ptr_(method_ptr), obj_ptr_(obj_ptr) {}
 
   template <typename Result, typename ArgumentTuple>
-  Result Perform(const ArgumentTuple& args) const {
+  Result Perform(co.. ArgumentTuple& args) co.. {
     return InvokeHelper<Result, ArgumentTuple>::InvokeMethod(
         obj_ptr_, method_ptr_, args);
   }
 
- private:
+ pr..
   // The order of these members matters.  Reversing the order can trigger
   // warning C4121 in MSVC (see
   // http://computer-programming-forum.com/7-vc.net/6fbc30265f860ad1.htm ).
-  const MethodPtr method_ptr_;
-  n..* const obj_ptr_;
+  co.. MethodPtr method_ptr_;
+  n..* co.. obj_ptr_;
 
   GTEST_DISALLOW_ASSIGN_(InvokeMethodAction);
 };
@@ -132,7 +132,7 @@ PolymorphicAction<internal::InvokeMethodAction<n.., MethodPtr> > Invoke(
 // argument to one that accepts (and ignores) arguments.
 template <typename InnerAction>
 inline internal::WithArgsAction<InnerAction>
-WithoutArgs(const InnerAction& action) {
+WithoutArgs(co.. InnerAction& action) {
   return internal::WithArgsAction<InnerAction>(action);
 }
 
@@ -141,9 +141,9 @@ WithoutArgs(const InnerAction& action) {
 // it.  It adapts an action accepting one argument to one that accepts
 // multiple arguments.  For convenience, we also provide
 // WithArgs<k>(an_action) (defined below) as a synonym.
-template <int k, typename InnerAction>
+template <in. k, typename InnerAction>
 inline internal::WithArgsAction<InnerAction, k>
-WithArg(const InnerAction& action) {
+WithArg(co.. InnerAction& action) {
   return internal::WithArgsAction<InnerAction, k>(action);
 }
 
@@ -159,7 +159,7 @@ e..
 
 // Action ReturnArg<k>() returns the k-th argument of the mock function.
 ACTION_TEMPLATE(ReturnArg,
-                HAS_1_TEMPLATE_PARAMS(int, k),
+                HAS_1_TEMPLATE_PARAMS(in., k),
                 AND_0_VALUE_PARAMS()) {
   return ::testing::get<k>(args);
 }
@@ -167,7 +167,7 @@ ACTION_TEMPLATE(ReturnArg,
 // Action SaveArg<k>(pointer) saves the k-th (0-based) argument of the
 // mock function to *pointer.
 ACTION_TEMPLATE(SaveArg,
-                HAS_1_TEMPLATE_PARAMS(int, k),
+                HAS_1_TEMPLATE_PARAMS(in., k),
                 AND_1_VALUE_PARAMS(pointer)) {
   *pointer = ::testing::get<k>(args);
 }
@@ -175,7 +175,7 @@ ACTION_TEMPLATE(SaveArg,
 // Action SaveArgPointee<k>(pointer) saves the value pointed to
 // by the k-th (0-based) argument of the mock function to *pointer.
 ACTION_TEMPLATE(SaveArgPointee,
-                HAS_1_TEMPLATE_PARAMS(int, k),
+                HAS_1_TEMPLATE_PARAMS(in., k),
                 AND_1_VALUE_PARAMS(pointer)) {
   *pointer = *::testing::get<k>(args);
 }
@@ -183,7 +183,7 @@ ACTION_TEMPLATE(SaveArgPointee,
 // Action SetArgReferee<k>(value) assigns 'value' to the variable
 // referenced by the k-th (0-based) argument of the mock function.
 ACTION_TEMPLATE(SetArgReferee,
-                HAS_1_TEMPLATE_PARAMS(int, k),
+                HAS_1_TEMPLATE_PARAMS(in., k),
                 AND_1_VALUE_PARAMS(value)) {
   typedef typename ::testing::tuple_element<k, args_type>::type argk_type;
   // Ensures that argument #k is a reference.  If you get a compiler
@@ -200,20 +200,20 @@ ACTION_TEMPLATE(SetArgReferee,
 // iterator. The action does not take ownership of the elements in the
 // source range.
 ACTION_TEMPLATE(SetArrayArgument,
-                HAS_1_TEMPLATE_PARAMS(int, k),
+                HAS_1_TEMPLATE_PARAMS(in., k),
                 AND_2_VALUE_PARAMS(first, last)) {
   // Visual Studio deprecates ::std::copy, so we use our own copy in that case.
 #ifdef _MSC_VER
   internal::CopyElements(first, last, ::testing::get<k>(args));
 #else
-  ::std::copy(first, last, ::testing::get<k>(args));
+  ::st. copy(first, last, ::testing::get<k>(args));
 e..
 }
 
 // Action DeleteArg<k>() deletes the k-th (0-based) argument of the mock
 // function.
 ACTION_TEMPLATE(DeleteArg,
-                HAS_1_TEMPLATE_PARAMS(int, k),
+                HAS_1_TEMPLATE_PARAMS(in., k),
                 AND_0_VALUE_PARAMS()) {
   delete ::testing::get<k>(args);
 }

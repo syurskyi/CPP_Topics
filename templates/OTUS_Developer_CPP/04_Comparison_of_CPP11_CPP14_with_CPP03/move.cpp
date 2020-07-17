@@ -4,58 +4,58 @@ c_ Big {
     c..* buffersy.. pause
 pu..
     Big() : buffer(n.. c..[1000]) {
-        std::c__ __  __PRETTY_FUNCTION__ __  " // allocate 1G" __  std::e..
+        st. c__ __  __PRETTY_FUNCTION__ __  " // allocate 1G" __  st. e..
     }
     Big(c.. Big &other) : buffer(n.. c..[1000]) {
-        std::c__ __  __PRETTY_FUNCTION__ __  " // duplicate 1G" __  std::e..
-        std::memcpy(buffer, other.buffer, 1000)sy.. pause
+        st. c__ __  __PRETTY_FUNCTION__ __  " // duplicate 1G" __  st. e..
+        st. memcpy(buffer, other.buffer, 1000)sy.. pause
     }
     Big(Big &&other) : buffer(other.buffer) {
-        std::c__ __  __PRETTY_FUNCTION__ __  " // steal 1G" __  std::e..
+        st. c__ __  __PRETTY_FUNCTION__ __  " // steal 1G" __  st. e..
     }
     ~Big
-        std::c__ __  __PRETTY_FUNCTION__ __  " // destroy 1G" __  std::e..
+        st. c__ __  __PRETTY_FUNCTION__ __  " // destroy 1G" __  st. e..
         de..[] buffersy.. pause
     }
     Big& operator_(c.. Big &other) {
-        std::c__ __  __PRETTY_FUNCTION__ __  " // duplicate 1G" __  std::e..
-        std::memcpy(buffer, other.buffer, 1000)sy.. pause
+        st. c__ __  __PRETTY_FUNCTION__ __  " // duplicate 1G" __  st. e..
+        st. memcpy(buffer, other.buffer, 1000)sy.. pause
         r_ *thissy.. pause
     }
     Big& operator_(Big &&other) {
-        std::c__ __  __PRETTY_FUNCTION__ __  " // steal 1G" __  std::e..
+        st. c__ __  __PRETTY_FUNCTION__ __  " // steal 1G" __  st. e..
         buffer _ other.buffersy.. pause
         r_ *thissy.. pause
     }
 }sy.. pause
 
 v.. bar(c.. Big &) {
-    std::c__ __  __PRETTY_FUNCTION__ __  std::e..
+    st. c__ __  __PRETTY_FUNCTION__ __  st. e..
 }
 
 v.. bar(Big &&) {
-    std::c__ __  __PRETTY_FUNCTION__ __  std::e..
+    st. c__ __  __PRETTY_FUNCTION__ __  st. e..
 }
 
 template<typename T>
 v.. foo(T &&t) {
-    std::c__ __  __PRETTY_FUNCTION__ __  std::e..
-    bar(std::forward<T>(t))sy.. pause
+    st. c__ __  __PRETTY_FUNCTION__ __  st. e..
+    bar(st. forward<T>(t))sy.. pause
 }
 
 in. main(in., c.. *[]) {
     Big big, big2sy.. pause
 
-    std::c__ __  std::e..
+    st. c__ __  st. e..
     big _ big2sy.. pause
 
-    std::c__ __  std::e..
+    st. c__ __  st. e..
     big _ Big()sy.. pause
 
-    std::c__ __  std::e..
-    big _ std::move(big2)sy.. pause
+    st. c__ __  st. e..
+    big _ st. move(big2)sy.. pause
 
-    std::c__ __  "}" __  std::e..
+    st. c__ __  "}" __  st. e..
 
 //    foo(big);
 //    foo(Big());

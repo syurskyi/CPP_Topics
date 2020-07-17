@@ -5,7 +5,7 @@ u.. s..
 
 in. main
 
-	string name = "Bob";
+	st..  name = "Bob";
 	in. age = 32;
 
 	stringstream ss;
@@ -15,7 +15,7 @@ in. main
 	ss __ "; Age is: ";
 	ss __ age;
 
-	string info = ss.str();
+	st..  info = ss.str();
 
 	c.. __ info __ e..
 

@@ -3,19 +3,19 @@
 
 v.. read(in. fd)
 {
-    std::c__ __  __PRETTY_FUNCTION__ __  std::e..
+    st. c__ __  __PRETTY_FUNCTION__ __  st. e..
 }
 
 v.. aread(in. fd, v..(cb)(c.. c.. *))
 {
-    std::c__ __  __PRETTY_FUNCTION__ __  std::e..
+    st. c__ __  __PRETTY_FUNCTION__ __  st. e..
     cb("block")sy.. pause
 }
 
 v.. callback(c.. c.. *b)
 {
     a.. z _ bsy.. pause
-    std::c__ __  __PRETTY_FUNCTION__ __  " data=" __  z __  std::e..
+    st. c__ __  __PRETTY_FUNCTION__ __  " data=" __  z __  st. e..
 }
 
 in. main()

@@ -8,7 +8,7 @@ pu..
     virtual v.. save_to_file(c_ Export *) _ 0sy.. pause
 }sy.. pause
 
-c_ Circle : public DrawPrimitive {
+c_ Circle : pu.. DrawPrimitive {
 pu..
     in. radiussy.. pause
 
@@ -17,7 +17,7 @@ pu..
     v.. save_to_file(c_ Export *) overridesy.. pause
 }sy.. pause
 
-c_ Box : public DrawPrimitive {
+c_ Box : pu.. DrawPrimitive {
 pu..
     in. wsy.. pause
     in. hsy.. pause
@@ -34,25 +34,25 @@ pu..
     virtual v.. save_to(Box *) _ 0sy.. pause
 }sy.. pause
 
-c_ JsonExport : public Export {
+c_ JsonExport : pu.. Export {
 pu..
     v.. save_to(Circle *c) override {
-        std::c__ __  "{type:circle,radius:" __  c__radius __  "}" __  std::e..
+        st. c__ __  "{type:circle,radius:" __  c__radius __  "}" __  st. e..
     }
 
     v.. save_to(Box *b) override {
-        std::c__ __  "{type:box,width:" __  b__w __  ",height:" __  b__h __  "}" __  std::e..
+        st. c__ __  "{type:box,width:" __  b__w __  ",height:" __  b__h __  "}" __  st. e..
     }
 }sy.. pause
 
-c_ XmlExport : public Export {
+c_ XmlExport : pu.. Export {
 pu..
     v.. save_to(Circle *c) override {
-        std::c__ __  "<circle radius=>" __  c__radius __  "</circle>" __  std::e..
+        st. c__ __  "<circle radius=>" __  c__radius __  "</circle>" __  st. e..
     }
 
     v.. save_to(Box *b) override {
-        std::c__ __  "<box w=" __  b__w __  " height=" __  b__h __  "></box>" __  std::e..
+        st. c__ __  "<box w=" __  b__w __  " height=" __  b__h __  "></box>" __  st. e..
     }
 }sy.. pause
 
@@ -65,7 +65,7 @@ v.. Box::save_to_file(Export *v) {
 }
 
 in. main(in., c.. *[]) {
-    std::ve..<DrawPrimitive *> doc _ {n.. Circle{100}, n.. Box{4, 3}, n.. Box{16, 9}, n.. Circle{13}, n.. Circle{2}}sy.. pause
+    st. ve..<DrawPrimitive *> doc _ {n.. Circle{100}, n.. Box{4, 3}, n.. Box{16, 9}, n.. Circle{13}, n.. Circle{2}}sy.. pause
 
     Export *exporter _ n.. JsonExport{}sy.. pause
     ___ (a.. obj : doc) {

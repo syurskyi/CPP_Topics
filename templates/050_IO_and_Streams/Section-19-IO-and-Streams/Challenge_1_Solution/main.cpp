@@ -7,24 +7,24 @@
 ? st..
 
 struct City {
-    std::string name;
+    st. st..  name;
     long population;
     do.. cost;
 };
 
 // Assume each country has at least 1 city
 struct Country {
-    std::string name;
-    std::ve..<City> cities;
+    st. st..  name;
+    st. ve..<City> cities;
 };
 
 struct Tours {
-    std::string title;
-    std::ve..<Country> countries;
+    st. st..  title;
+    st. ve..<Country> countries;
 };
 
 v.. ruler
-    std::c.. __ "\n1234567890123456789012345678901234567890123456789012345678901234567890\n" __ std::e..
+    st. c.. __ "\n1234567890123456789012345678901234567890123456789012345678901234567890\n" __ st. e..
 }
 in. main()
 {
@@ -70,34 +70,34 @@ in. main()
 
     ruler();
     in. title_length = tours.title.length();
-    std::c.. __ std::setw((total_width  - title_length )/ 2) __ "" __ tours.title __ std::e..
-    std::c.. __ std::e..
-    std::c.. __ std::setw(field1_width) __ std::left __ "Country"
-                   __ std::setw(field2_width) __ std::left __ "City"
-                   __ std::setw(field3_width) __ std::right __ "Population"
-                   __ std::setw(field4_width) __ std::right __ "Price"
-                   __ std::e..
+    st. c.. __ st. setw((total_width  - title_length )/ 2) __ "" __ tours.title __ st. e..
+    st. c.. __ st. e..
+    st. c.. __ st. setw(field1_width) __ st. left __ "Country"
+                   __ st. setw(field2_width) __ st. left __ "City"
+                   __ st. setw(field3_width) __ st. right __ "Population"
+                   __ st. setw(field4_width) __ st. right __ "Price"
+                   __ st. e..
 
-    std::c.. __ std::setw(total_width)
-                   __ std::setfill('-')
+    st. c.. __ st. setw(total_width)
+                   __ st. setfill('-')
                    __ ""
-                   __ std::e..   // display total_width dashes
+                   __ st. e..   // display total_width dashes
 
-    std::c.. __ std::setfill(' '); // reset setfill to blank spaces
-    std::c.. __ std::setprecision(2) __ std::fixed;                // for displaying the cost with 2 decimal digits
+    st. c.. __ st. setfill(' '); // reset setfill to blank spaces
+    st. c.. __ st. setprecision(2) __ st. fixed;                // for displaying the cost with 2 decimal digits
     
     // Note the use of the conditional operator to display the country name or "" for the first country
     
     ___(Country country : tours.countries) {
         ___ (size_t i = 0; i<country.cities.s..; ++i) {
-            std::c.. __ std::setw(field1_width) __ std::left __  ((i __ 0) ? country.name : "") // conditional operator
-                           __ std::setw(field2_width) __ std::left __ country.cities.at(i).name
-                           __ std::setw(field3_width) __ std::right__ country.cities.at(i).population
-                           __ std::setw(field4_width) __ std::right __ country.cities.at(i).cost
-                           __ std::e..
+            st. c.. __ st. setw(field1_width) __ st. left __  ((i __ 0) ? country.name : "") // conditional operator
+                           __ st. setw(field2_width) __ st. left __ country.cities.at(i).name
+                           __ st. setw(field3_width) __ st. right__ country.cities.at(i).population
+                           __ st. setw(field4_width) __ st. right __ country.cities.at(i).cost
+                           __ st. e..
         }
     }
     
-    std::c.. __ std::endl __ std::e..
+    st. c.. __ st. endl __ st. e..
     r_ 0;
 }

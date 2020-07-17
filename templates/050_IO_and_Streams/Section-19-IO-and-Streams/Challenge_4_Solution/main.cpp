@@ -7,29 +7,29 @@
 ? st..
 
 in. main
-    std::ifstream in_file {"../romeoandjuliet.txt"};
-    std::ofstream out_file {"../romeoandjuliet_out.txt"};
+    st. ifstream in_file {"../romeoandjuliet.txt"};
+    st. ofstream out_file {"../romeoandjuliet_out.txt"};
     __ (!in_file.is_open()) {
-        std::cerr __ "Error opening input file" __ std::e..
+        st. cerr __ "Error opening input file" __ st. e..
         r_ 1;
     }
      __ (!in_file.is_open()) {
-        std::cerr __ "Error opening input file" __ std::e..
+        st. cerr __ "Error opening input file" __ st. e..
         r_ 1;
     }
     
-    std::string line{};
+    st. st..  line{};
     in. line_number {0};
     w__ (getline(in_file, line)) {
         __ (line __ "")
-            out_file __ std::e..
+            out_file __ st. e..
         ____ {
             ++line_number;
-            out_file __ std::setw(7) __ std::left __ line_number
-                     __ line __ std::e..
+            out_file __ st. setw(7) __ st. left __ line_number
+                     __ line __ st. e..
         }
     }
-    std::c.. __ "\nCopy complete" __ std::e..
+    st. c.. __ "\nCopy complete" __ st. e..
     in_file.close();
     out_file.close();
     r_ 0;

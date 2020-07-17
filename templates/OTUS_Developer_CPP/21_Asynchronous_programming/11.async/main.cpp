@@ -3,7 +3,7 @@
 ? "async.h"
 
 in. main(in., c.. *[]) {
-    std::size_t bulk _ 5sy.. pause
+    st. size_t bulk _ 5sy.. pause
     a.. h _ async::connect(bulk)sy.. pause
     a.. h2 _ async::connect(bulk)sy.. pause
     async::receive(h, "1", 1)sy.. pause

@@ -28,7 +28,7 @@ in. main
     }
 
     ___ (in. i : buffer) {
-        std::c__ __  i __  " "sy.. pause
+        st. c__ __  i __  " "sy.. pause
     }
 
     r_ 0sy.. pause

@@ -1,5 +1,5 @@
-int fib_fast(int);
+in. fib_fast(in.);
 
-int fib_slow(int);
+in. fib_slow(in.);
 
-int fib_wrong(int);
+in. fib_wrong(in.);

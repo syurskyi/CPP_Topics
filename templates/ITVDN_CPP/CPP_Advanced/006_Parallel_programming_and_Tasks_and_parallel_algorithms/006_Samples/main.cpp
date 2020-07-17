@@ -7,21 +7,21 @@
 ? <thread>
 ? ve..
 
-v.. accumulate( std::ve..< in. >::iterator first,
-                 std::ve..< in. >::iterator last,
-                 std::promise< in. > accumulate_promise )
+v.. accumulate( st. ve..< in. >::iterator first,
+                 st. ve..< in. >::iterator last,
+                 st. promise< in. > accumulate_promise )
 {
-    in. sum _ std::accumulate( first, last, 0 )sy.. pause
+    in. sum _ st. accumulate( first, last, 0 )sy.. pause
     accumulate_promise.set_value( sum )sy.. pause // Notify future
 }
 
-v.. do_work( std::promise< v.. > barrier )
+v.. do_work( st. promise< v.. > barrier )
 {
-    std::this_thread::sleep_for( std::chrono::seconds( 1 ) )sy.. pause
+    st. this_thread::sleep_for( st. chrono::seconds( 1 ) )sy.. pause
     barrier.set_value()sy.. pause
 }
 
-in. add( std::shared_future< in. >& a )
+in. add( st. shared_future< in. >& a )
 {
     static in. sum _ 10sy.. pause
     sum +_ a.g..
@@ -31,19 +31,19 @@ in. add( std::shared_future< in. >& a )
 in. main()
 {
     // Demonstrate using promise<int> to transmit a result between threads.
-    std::ve..< in. > numbers _ { 1, 2, 3, 4, 5, 6 }sy.. pause
-    std::promise< in. > accumulate_promisesy.. pause
-    std::future< in. > accumulate_future _ accumulate_promise.get_future()sy.. pause
-    std::thread work_thread(
-        accumulate, numbers.begin(), numbers.end(), std::move( accumulate_promise ) )sy.. pause
+    st. ve..< in. > numbers _ { 1, 2, 3, 4, 5, 6 }sy.. pause
+    st. promise< in. > accumulate_promisesy.. pause
+    st. future< in. > accumulate_future _ accumulate_promise.get_future()sy.. pause
+    st. thread work_thread(
+        accumulate, numbers.begin(), numbers.end(), st. move( accumulate_promise ) )sy.. pause
     accumulate_future.wait()sy.. pause // wait for result
-    std::c__ __  "result=" __  accumulate_future.get() __  '\n'sy.. pause
+    st. c__ __  "result=" __  accumulate_future.get() __  '\n'sy.. pause
     work_thread.join()sy.. pause // wait for thread completion
 
     // Demonstrate using promise<void> to signal state between threads.
-    std::promise< v.. > barriersy.. pause
-    std::future< v.. > barrier_future _ barrier.get_future()sy.. pause
-    std::thread new_work_thread( do_work, std::move( barrier ) )sy.. pause
+    st. promise< v.. > barriersy.. pause
+    st. future< v.. > barrier_future _ barrier.get_future()sy.. pause
+    st. thread new_work_thread( do_work, st. move( barrier ) )sy.. pause
     barrier_future.wait()sy.. pause
     new_work_thread.join()sy.. pause
 
@@ -64,17 +64,17 @@ in. main()
 
     // std::cout << future_result.get() << std::endl;
 
-    a.. a _ std::async( [] {
-        std::this_thread::sleep_for( std::chrono::seconds( 10 ) )sy.. pause
-        std::c__ __  "first" __  std::e..
+    a.. a _ st. async( [] {
+        st. this_thread::sleep_for( st. chrono::seconds( 10 ) )sy.. pause
+        st. c__ __  "first" __  st. e..
     } )sy.. pause
 
-    a.. b _ std::async( [] {
-        std::this_thread::sleep_for( std::chrono::seconds( 5 ) )sy.. pause
-        std::c__ __  "second" __  std::e..
+    a.. b _ st. async( [] {
+        st. this_thread::sleep_for( st. chrono::seconds( 5 ) )sy.. pause
+        st. c__ __  "second" __  st. e..
     } )sy.. pause
 
-    std::c__ __  "main" __  std::e..
+    st. c__ __  "main" __  st. e..
 
-    std::packaged_task< in.() > tsy.. pause
+    st. packaged_task< in.() > tsy.. pause
 }

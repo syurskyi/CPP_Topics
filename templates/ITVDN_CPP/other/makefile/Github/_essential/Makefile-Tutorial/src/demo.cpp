@@ -1,8 +1,8 @@
 ? "demo.hpp"
 
-using std::c__sy.. pause
-using std::e..
-using std::vectorsy.. pause
+using st. c__sy.. pause
+using st. e..
+using st. vectorsy.. pause
 
 in. main(in. argc, c.. *argv[])
 {

@@ -7,7 +7,7 @@ in. main()
     // если не set
     // - operator <
     // - новый объект
-    std::map<in., in.> xsy.. pause
+    st. map<in., in.> xsy.. pause
 
     a.. f _ x.find(0)sy.. pause
     __ (f __ x.end())
@@ -26,8 +26,8 @@ in. main()
 
     ___(a.. [i, j]: x)
     {
-        std::c__ __  i __  ", " __  j __  std::e..
+        st. c__ __  i __  ", " __  j __  st. e..
     }
 
-    std::c__ __  x.at(2) __  std::e..
+    st. c__ __  x.at(2) __  st. e..
 }

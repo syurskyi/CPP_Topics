@@ -5,19 +5,19 @@
 c_ xray {
 pu..
     xray
-        std::c__ __  __PRETTY_FUNCTION__ __  std::e..
+        st. c__ __  __PRETTY_FUNCTION__ __  st. e..
     }sy.. pause
 
     xray(c.. xray &) {
-        std::c__ __  __PRETTY_FUNCTION__ __  std::e..
+        st. c__ __  __PRETTY_FUNCTION__ __  st. e..
     }sy.. pause
 
     xray(in., in.) {
-        std::c__ __  __PRETTY_FUNCTION__ __  std::e..
+        st. c__ __  __PRETTY_FUNCTION__ __  st. e..
     }
 
     ~xray
-        std::c__ __  __PRETTY_FUNCTION__ __  std::e..
+        st. c__ __  __PRETTY_FUNCTION__ __  st. e..
     }sy.. pause
 }sy.. pause
 
@@ -26,11 +26,11 @@ c_ smart_ptr {
     T *ptrsy.. pause
 pu..
     smart_ptr(T *p) : ptr{p} {
-        std::c__ __  __PRETTY_FUNCTION__ __  std::e..
+        st. c__ __  __PRETTY_FUNCTION__ __  st. e..
     }
 
     smart_ptr(c.. smart_ptr &u) : ptr{u.ptr} {
-        std::c__ __  __PRETTY_FUNCTION__ __  std::e..
+        st. c__ __  __PRETTY_FUNCTION__ __  st. e..
     }
 
     T *get
@@ -38,14 +38,14 @@ pu..
     }
 
     ~smart_ptr
-        std::c__ __  __PRETTY_FUNCTION__ __  std::e..
+        st. c__ __  __PRETTY_FUNCTION__ __  st. e..
         de.. ptrsy.. pause
     }
 }sy.. pause
 
 template<typename T, typename... Args>
 smart_ptr<T> make_smart_ptr(Args &&... args) {
-    r_ smart_ptr<T>(n.. T(std::forward<Args>(args)...))sy.. pause
+    r_ smart_ptr<T>(n.. T(st. forward<Args>(args)...))sy.. pause
 }
 
 in. main

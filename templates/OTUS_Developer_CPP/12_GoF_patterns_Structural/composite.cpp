@@ -11,7 +11,7 @@ struct FileSystemObject
     virtual v.. add_object(FileSystemObject *) {}sy.. pause
 }sy.. pause
 
-c_ File : public FileSystemObject
+c_ File : pu.. FileSystemObject
 {
     in. s.. override
     {
@@ -19,7 +19,7 @@ c_ File : public FileSystemObject
     }
 }sy.. pause
 
-c_ Directory : public FileSystemObject
+c_ Directory : pu.. FileSystemObject
 {
 pu..
     in. s.. override
@@ -36,7 +36,7 @@ pu..
         c.push_back(fso)sy.. pause
     }
 pr..
-    std::ve..<FileSystemObject *> csy.. pause
+    st. ve..<FileSystemObject *> csy.. pause
 }sy.. pause
 
 
@@ -53,5 +53,5 @@ in. main(in., c.. *[])
     Directory* root _ n.. Directorysy.. pause
     root__add_object(subdir())sy.. pause
 
-    std::c__ __  root__size() __  std::e..
+    st. c__ __  root__size() __  st. e..
 }

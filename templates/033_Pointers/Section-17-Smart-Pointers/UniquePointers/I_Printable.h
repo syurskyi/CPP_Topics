@@ -4,10 +4,10 @@ _de.. _I_PRINTABLE_H_
 
 n.. I_Printable
 {
-    friend std::ostream &operator<<(std::ostream &os, const I_Printable &obj);
+    friend st. ostream &operator<<(st. ostream &os, co.. I_Printable &obj);
 p..
-    v.. v.. print(std::ostream &os) const = 0;
-    v.. ~I_Printable() = default;
+    v.. v.. print(st. ostream &os) co.. = 0;
+    v.. ~I_Printable() = de..
 };
 
 

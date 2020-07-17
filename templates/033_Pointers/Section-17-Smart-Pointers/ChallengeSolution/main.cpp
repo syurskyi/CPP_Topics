@@ -50,56 +50,56 @@ Displaying vector data
 However, feel free to modify these as you wish
 ***********************************************************************************************************/
 ? ios..
-? <memory>
+? me..
 ? ve..
 
 c_ Test {
 pr..
     in. data;
 pu..
-    Test() : data{0} { std::c.. __ "\tTest constructor (" __ data __ ")" __ std::e.. }
-    Test(in. data) : data {data} { std::c.. __ "\tTest constructor (" __ data __ ")" __ std::e.. }
+    Test() : data{0} { st. c.. __ "\tTest constructor (" __ data __ ")" __ st. e.. }
+    Test(in. data) : data {data} { st. c.. __ "\tTest constructor (" __ data __ ")" __ st. e.. }
     in. get_data() co.. {r_ data; }
-    ~Teststd::c.. __ "\tTest destructor (" __ data __ ")" __ std::e.. }
+    ~Teststd::c.. __ "\tTest destructor (" __ data __ ")" __ st. e.. }
 };
 
 // Function prototypes
 a.. make();
-v.. fill(std::ve..<std::shared_ptr<Test__ &vec, in. num);
-v.. display(co.. std::ve..<std::shared_ptr<Test__&vec);
+v.. fill(st. ve..<st. shared_ptr<Test__ &vec, in. num);
+v.. display(co.. st. ve..<st. shared_ptr<Test__&vec);
 
 
 a.. make
-    r_ std::make_unique<std::ve..<std::shared_ptr<Test>>>();
+    r_ st. make_unique<st. ve..<st. shared_ptr<Test>>>();
 }
 
-v.. fill(std::ve..<std::shared_ptr<Test__ &vec, in. num)  {
+v.. fill(st. ve..<st. shared_ptr<Test__ &vec, in. num)  {
     in. temp;
     ___ (in. i=1; i<=num; ++i) {
-        std::c.. __ "Enter data point [" __ i __ "] : ";
-        std::ci. __ temp;
+        st. c.. __ "Enter data point [" __ i __ "] : ";
+        st. ci. __ temp;
 //        std::shared_ptr<Test> ptr = std::make_shared<Test>(temp);
 //        vec.push_back(ptr);
-        vec.push_back(std::make_shared<Test>(temp));
+        vec.push_back(st. make_shared<Test>(temp));
         
     }
 }
 
-v.. display(co.. std::ve..<std::shared_ptr<Test__&vec) {
-    std::c.. __ "\nDisplaying vector data" __ std::e..
-    std::c.. __ "=======================" __ std::e..
+v.. display(co.. st. ve..<st. shared_ptr<Test__&vec) {
+    st. c.. __ "\nDisplaying vector data" __ st. e..
+    st. c.. __ "=======================" __ st. e..
     ___ (co.. a.. &ptr: vec)
-        std::c.. __ ptr->get_data() __ std::e..
+        st. c.. __ ptr->get_data() __ st. e..
    
-    std::c.. __ "=======================" __ std::e..
+    st. c.. __ "=======================" __ st. e..
 }
 
 in. main
-    std::unique_ptr<std::ve..<std::shared_ptr<Test>>> vec_ptr;
+    st. unique_ptr<st. ve..<st. shared_ptr<Test>>> vec_ptr;
     vec_ptr = make();
-    std::c.. __ "How many data points do you want to enter: ";
+    st. c.. __ "How many data points do you want to enter: ";
     in. num;
-    std::ci. __ num;
+    st. ci. __ num;
     fill(*vec_ptr, num);
     display(*vec_ptr);
     r_ _

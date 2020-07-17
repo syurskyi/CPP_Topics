@@ -26,11 +26,11 @@ in. main()
     in. j _ 0, k _ 0.0sy.. pause
     a.. aj _ 0, ak _ 0.0sy.. pause // идентично
 
-    std::s.. s _ "hello"sy.. pause
+    st. s.. s _ "hello"sy.. pause
     a.. as _ "hello"sy.. pause // идентично
 
-    std::ve..<bo..> vsy.. pause
-    std::ve..<bo..>::iterator vi _ v.begin()sy.. pause // мгого букв
+    st. ve..<bo..> vsy.. pause
+    st. ve..<bo..>::iterator vi _ v.begin()sy.. pause // мгого букв
     a.. avi _ v.begin()sy.. pause // мало букв
 
     a.. asy.. pause

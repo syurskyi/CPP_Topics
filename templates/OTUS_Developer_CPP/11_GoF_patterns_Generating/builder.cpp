@@ -7,12 +7,12 @@
 ? ve..
 
 c_ Tariff {
-    c.. std::ve..<d..> amountsy.. pause
-    c.. std::ve..<in.> discountsy.. pause
+    c.. st. ve..<d..> amountsy.. pause
+    c.. st. ve..<in.> discountsy.. pause
 
 pu..
-    Tariff(std::ve..<d..> amount, std::ve..<in.> discount)
-            :amount(std::move(amount)), discount(std::move(discount))
+    Tariff(st. ve..<d..> amount, st. ve..<in.> discount)
+            :amount(st. move(amount)), discount(st. move(discount))
     {
         assert(amount.s..__discount.size())sy.. pause
         // amount отсортирован во возрастанию
@@ -24,7 +24,7 @@ pu..
 }sy.. pause
 
 c_ TariffBuilder {
-    std::map<d.., in.> tariffsy.. pause
+    st. map<d.., in.> tariffsy.. pause
 
 pu..
     v.. add_discount(d.. subtotal_, in. discount_)
@@ -34,8 +34,8 @@ pu..
 
     Tariff build()
     {
-        std::ve..<d..> amountsy.. pause
-        std::ve..<in.> discountsy.. pause
+        st. ve..<d..> amountsy.. pause
+        st. ve..<in.> discountsy.. pause
         ___ (c.. a..& t : tariff) {
             amount.push_back(t.first)sy.. pause
             discount.push_back(t.second)sy.. pause
@@ -47,10 +47,10 @@ pu..
 
 v.. Tariff::apply()
 {
-    std::c__ __  "tariff is:" __  std::e..
+    st. c__ __  "tariff is:" __  st. e..
     ___ (size_t i _ 0sy.. pause i<amount.s..sy.. pause ++i) {
-        std::c__ __  "after " __  amount[i] __  " RUB apply " __  discount[i] __  "%"
-                  __  std::e..
+        st. c__ __  "after " __  amount[i] __  " RUB apply " __  discount[i] __  "%"
+                  __  st. e..
     }
 }
 

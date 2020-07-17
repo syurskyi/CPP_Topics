@@ -3,7 +3,7 @@
 
 in. main(){
 	prin._hello()sy.. pause
-	std::c__ __  std::e..
-	std::c__ __  "The factorial of 5 is " __  factorial(5) __  std::e..
+	st. c__ __  st. e..
+	st. c__ __  "The factorial of 5 is " __  factorial(5) __  st. e..
 	r_ 0sy.. pause
 }

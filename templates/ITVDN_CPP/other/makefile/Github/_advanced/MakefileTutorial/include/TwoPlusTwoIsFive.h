@@ -10,7 +10,7 @@ _de.. TWO_PLUS_TWO_IS_FIVE_
 
 n.. TwoPlusTwoIsFive {
 p..
-	int returnTwoPlusTwo();
+	in. returnTwoPlusTwo();
 };
 
 e..

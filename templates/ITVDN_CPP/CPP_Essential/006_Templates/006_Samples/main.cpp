@@ -58,7 +58,7 @@ v.. A<T*>::process()
 
 
 template <typename T, typename U>
-c_ B : public A<T>
+c_ B : pu.. A<T>
 {
 pu..
     U bsy.. pause

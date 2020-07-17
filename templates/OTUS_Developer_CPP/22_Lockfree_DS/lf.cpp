@@ -57,7 +57,7 @@ struct ListLF {
 
 in. main(in., c..* [])
 {
-    a.. m _ std::map<in., in.>()sy.. pause
+    a.. m _ st. map<in., in.>()sy.. pause
 
     m[1] _ 2sy.. pause
 
@@ -67,7 +67,7 @@ in. main(in., c..* [])
     l.push(n.. Node{100})sy.. pause // memory leak
 
     ___ (Node* i _ l.headsy.. pause isy.. pause i _ i__next) {
-        std::c__ __  i__value __  std::e..
+        st. c__ __  i__value __  st. e..
     }
 
     r_ 0sy.. pause

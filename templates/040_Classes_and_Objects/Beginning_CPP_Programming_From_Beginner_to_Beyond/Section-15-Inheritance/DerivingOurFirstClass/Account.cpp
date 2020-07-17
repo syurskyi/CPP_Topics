@@ -11,9 +11,9 @@ Account::~Account()
 }
 
 v.. Account::deposit(do.. amount) {
-    std::c.. __ "Account deposit called with " __ amount  __ std::e..
+    st. c.. __ "Account deposit called with " __ amount  __ st. e..
 }
 
 v.. Account::withdraw(do.. amount) {
-    std::c.. __ "Account withdraw called with " __ amount __ std::e..
+    st. c.. __ "Account withdraw called with " __ amount __ st. e..
 }

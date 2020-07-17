@@ -4,19 +4,19 @@ _de.. BUILDER_H
 ? "meta_strategy.h"
 ? |i..
 ? <memory>
-? <string>
+? str..
 
 u.. s..
 
 n.. Pizza
 {
 p..
-    v.. setDough( const string& dough );
-    v.. setSauce( const string& sauce );
-    v.. setTopping( const string& topping );
-    v.. open() const;
+    v.. setDough( co.. string& dough );
+    v.. setSauce( co.. string& sauce );
+    v.. setTopping( co.. string& topping );
+    v.. open() co..;
 
-private:
+pr..
     string m_dough;
     string m_sauce;
     string m_topping;
@@ -25,7 +25,7 @@ private:
 n.. PizzaBuilder
 {
 p..
-    v.. ~PizzaBuilder() = default;
+    v.. ~PizzaBuilder() = de..
 
     Pizza* getPizza();
     v.. createNewPizzaProduct();
@@ -33,28 +33,28 @@ p..
     v.. v.. buildSauce() = 0;
     v.. v.. buildTopping() = 0;
 
-protected:
+pr..
     unique_ptr< Pizza > m_pizza;
 };
 
-n.. HawaiianPizzaBuilder : public PizzaBuilder
+n.. HawaiianPizzaBuilder : pu.. PizzaBuilder
 {
 p..
-    ~HawaiianPizzaBuilder() override = default;
+    ~HawaiianPizzaBuilder() override = de..
 
-    v.. buildDough() override;
-    v.. buildSauce() override;
-    v.. buildTopping() override;
+    v.. buildDough() ov..
+    v.. buildSauce() ov..
+    v.. buildTopping() ov..
 };
 
-n.. SpicyPizzaBuilder : public PizzaBuilder
+n.. SpicyPizzaBuilder : pu.. PizzaBuilder
 {
 p..
-    ~SpicyPizzaBuilder() override = default;
+    ~SpicyPizzaBuilder() override = de..
 
-    v.. buildDough() override;
-    v.. buildSauce() override;
-    v.. buildTopping() override;
+    v.. buildDough() ov..
+    v.. buildSauce() ov..
+    v.. buildTopping() ov..
 };
 
 n.. Cook
@@ -63,14 +63,14 @@ p..
     v.. openPizza();
     v.. makePizza( PizzaBuilder* pb );
 
-private:
+pr..
     PizzaBuilder* m_pizzaBuilder;
 };
 
-n.. ClientBuilder : public MetaStrategy
+n.. ClientBuilder : pu.. MetaStrategy
 {
 p..
-    v.. run() override;
+    v.. run() ov..
 };
 
 e.. // BUILDER_H

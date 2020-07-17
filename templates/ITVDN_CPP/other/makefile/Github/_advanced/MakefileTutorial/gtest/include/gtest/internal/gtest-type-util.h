@@ -61,10 +61,10 @@ n... internal {
 // This handles removing the inline namespace within `std` that is
 // used by various standard libraries (e.g., `std::__1`).  Names outside
 // of namespace std are returned unmodified.
-inline std::string CanonicalizeForStdLibVersioning(std::string s) {
-  static const char prefix[] = "std::__";
+inline st. string CanonicalizeForStdLibVersioning(st. string s) {
+  st.. co.. ch.. prefix[] = "std::__";
   if (s.compare(0, strlen(prefix), prefix) == 0) {
-    std::string::size_type end = s.find("::", strlen(prefix));
+    st. string::size_type end = s.find("::", strlen(prefix));
     if (end != s.npos) {
       // Erase everything between the initial `std` and the second `::`.
       s.erase(strlen("std"), end - strlen("std"));
@@ -77,19 +77,19 @@ inline std::string CanonicalizeForStdLibVersioning(std::string s) {
 // NB: This function is also used in Google Mock, so don't move it inside of
 // the typed-test-only section below.
 template <typename T>
-std::string GetTypeName() {
+st. string GetTypeName() {
 # if GTEST_HAS_RTTI
 
-  const char* const name = typeid(T).name();
+  co.. ch..* co.. name = typeid(T).name();
 #  if GTEST_HAS_CXXABI_H_ || defined(__HP_aCC)
-  int status = 0;
+  in. status = 0;
   // gcc's implementation of typeid(T).name() mangles the type name,
   // so we have to demangle it.
 #   if GTEST_HAS_CXXABI_H_
   using abi::__cxa_demangle;
 #   endif  // GTEST_HAS_CXXABI_H_
-  char* const readable_name = __cxa_demangle(name, 0, 0, &status);
-  const std::string name_str(status == 0 ? readable_name : name);
+  ch..* co.. readable_name = __cxa_demangle(name, 0, 0, &status);
+  co.. st. string name_str(status == 0 ? readable_name : name);
   free(readable_name);
   return CanonicalizeForStdLibVersioning(name_str);
 #  else
@@ -114,7 +114,7 @@ struct AssertTypeEq;
 
 template <typename T>
 struct AssertTypeEq<T, T> {
-  typedef bool type;
+  typedef bo.. type;
 };
 
 // A unique type used as the default value for the arguments of class

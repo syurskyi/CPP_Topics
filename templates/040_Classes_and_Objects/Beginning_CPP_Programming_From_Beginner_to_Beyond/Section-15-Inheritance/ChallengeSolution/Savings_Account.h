@@ -2,17 +2,17 @@
 _de.. _SAVINGS_ACCOUNT_H_
 ? "Account.h"
 
-n.. Savings_Account: public Account {
-    friend std::ostream &operator<<(std::ostream &os, const Savings_Account &account);
-private:
-    static constexpr const char *def_name = "Unnamed Savings Account";
-    static constexpr double def_balance = 0.0;
-    static constexpr double def_int_rate = 0.0;
-protected:
-    double int_rate;
+n.. Savings_Account: pu.. Account {
+    friend st. ostream &operator<<(st. ostream &os, co.. Savings_Account &account);
+pr..
+    st.. c_e_ co.. ch.. *def_name = "Unnamed Savings Account";
+    st.. c_e_ do.. def_balance = 0.0;
+    st.. c_e_ do.. def_int_rate = 0.0;
+pr..
+    do.. int_rate;
 p..
-    Savings_Account(std::string name = def_name, double balance =def_balance, double int_rate = def_int_rate);    
-    bool deposit(double amount);
+    Savings_Account(st. string name = def_name, do.. balance =def_balance, do.. int_rate = def_int_rate);
+    bo.. deposit(do.. amount);
     // Inherits the Account::withdraw method
 };
 

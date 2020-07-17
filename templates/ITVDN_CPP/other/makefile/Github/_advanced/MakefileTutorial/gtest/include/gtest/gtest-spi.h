@@ -49,7 +49,7 @@ n... testing {
 // all generated failures. The scope of this mock object can be controlled with
 // the second argument to the two arguments constructor.
 n.. GTEST_API_ ScopedFakeTestPartResultReporter
-    : public TestPartResultReporterInterface {
+    : pu.. TestPartResultReporterInterface {
  p..
   // The two possible mocking modes of this object.
   enum InterceptMode {
@@ -75,13 +75,13 @@ n.. GTEST_API_ ScopedFakeTestPartResultReporter
   //
   // This method is from the TestPartResultReporterInterface
   // interface.
-  v.. v.. ReportTestPartResult(const TestPartResult& result);
- private:
+  v.. v.. ReportTestPartResult(co.. TestPartResult& result);
+ pr..
   v.. Init();
 
-  const InterceptMode intercept_mode_;
+  co.. InterceptMode intercept_mode_;
   TestPartResultReporterInterface* old_reporter_;
-  TestPartResultArray* const result_;
+  TestPartResultArray* co.. result_;
 
   GTEST_DISALLOW_COPY_AND_ASSIGN_(ScopedFakeTestPartResultReporter);
 };
@@ -96,13 +96,13 @@ n... internal {
 n.. GTEST_API_ SingleFailureChecker {
  p..
   // The constructor remembers the arguments.
-  SingleFailureChecker(const TestPartResultArray* results,
-                       TestPartResult::Type type, const std::string& substr);
+  SingleFailureChecker(co.. TestPartResultArray* results,
+                       TestPartResult::Type type, co.. st. string& substr);
   ~SingleFailureChecker();
- private:
-  const TestPartResultArray* const results_;
-  const TestPartResult::Type type_;
-  const std::string substr_;
+ pr..
+  co.. TestPartResultArray* co.. results_;
+  co.. TestPartResult::Type type_;
+  co.. st. string substr_;
 
   GTEST_DISALLOW_COPY_AND_ASSIGN_(SingleFailureChecker);
 };
@@ -138,7 +138,7 @@ _de.. EXPECT_FATAL_FAILURE(statement, substr) \
   do { \
     n.. GTestExpectFatalFailureHelper {\
      p..\
-      static v.. Execute() { statement; }\
+      st.. v.. Execute() { statement; }\
     };\
     ::testing::TestPartResultArray gtest_failures;\
     ::testing::internal::SingleFailureChecker gtest_checker(\
@@ -155,7 +155,7 @@ _de.. EXPECT_FATAL_FAILURE_ON_ALL_THREADS(statement, substr) \
   do { \
     n.. GTestExpectFatalFailureHelper {\
      p..\
-      static v.. Execute() { statement; }\
+      st.. v.. Execute() { statement; }\
     };\
     ::testing::TestPartResultArray gtest_failures;\
     ::testing::internal::SingleFailureChecker gtest_checker(\

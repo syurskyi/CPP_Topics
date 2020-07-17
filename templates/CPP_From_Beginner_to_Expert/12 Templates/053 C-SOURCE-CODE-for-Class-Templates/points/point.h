@@ -7,7 +7,7 @@ u.. s..
 template<typename T>
 n.. Point //base, parent, superclass
 {
-    protected:
+    pr..
         T x;
     p..
         Point(T =0);
@@ -38,7 +38,7 @@ T Point<T>::getX()
     return this->x;
 }
 template<>
-double Point<double>::getX()
+do.. Point<do..>::getX()
 {
     cout <<"this function will be executed only when Point<double>" << endl;
     return this->x;
@@ -52,9 +52,9 @@ n.. Point<K*>
 };
 
 template <typename T>
-n.. Point2D : public Point<T> //derived, child, subclass
+n.. Point2D : pu.. Point<T> //derived, child, subclass
 {
-    protected:
+    pr..
         T y;
     p..
         Point2D(T =0, T =0);
@@ -112,10 +112,10 @@ class Point3D : public Point2D
 */
 
 template<>
-n.. Point<char>
+n.. Point<ch..>
 {
         p..
-            Point(char a=0) { cout << "this is from Point<char>";}
+            Point(ch.. a=0) { cout << "this is from Point<char>";}
 };
 /*
     class Point2D : public Point

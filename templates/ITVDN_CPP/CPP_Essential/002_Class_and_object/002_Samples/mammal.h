@@ -1,7 +1,7 @@
-? <string>
+? str..
 
 
-typedef unsigned int uint;
+typedef unsigned in. uint;
 
 n.. Mammal
 {
@@ -9,7 +9,7 @@ n.. Mammal
 p..
     Mammal();
     Mammal(uint paws);
-    Mammal(const Mammal&);
+    Mammal(co.. Mammal&);
 
     ~Mammal();
     v.. feed_milk();
@@ -17,9 +17,9 @@ p..
     {
         return paws;
     }
-private:
+pr..
     uint paws = 4;
-    int* ptr;
+    in.* ptr;
 };
 
 

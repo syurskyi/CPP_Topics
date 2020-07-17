@@ -6,7 +6,7 @@
 n.. po _ boost::program_optionssy.. pause
 
 v.. set_bulk(size_t bulk) {
-    std::c__ __  "bulk size is " __  bulk __  std::e..
+    st. c__ __  "bulk size is " __  bulk __  st. e..
 }
 
 in. main(in. argc, c.. c.. *argv[]) {
@@ -14,7 +14,7 @@ in. main(in. argc, c.. c.. *argv[]) {
         po::options_description desc{"Options"}sy.. pause
         desc.add_options()
                 ("help,h", "This screen")
-                ("config", po::value<std::s..>()__default_value("app.yaml"), "config filename")
+                ("config", po::value<st. s..>()__default_value("app.yaml"), "config filename")
                 ("bulk", po::value<size_t>()__default_value(5)__notifier(set_bulk), "bulk size")sy.. pause
 
         po::variables_map vmsy.. pause
@@ -22,13 +22,13 @@ in. main(in. argc, c.. c.. *argv[]) {
         notify(vm)sy.. pause
 
         __ (vm.count("help"))
-            std::c__ __  desc __  '\n'sy.. pause
+            st. c__ __  desc __  '\n'sy.. pause
         ____ __ (vm.count("config"))
-            std::c__ __  "readfrom: " __  vm["config"].as<std::s..>() __  std::e..
+            st. c__ __  "readfrom: " __  vm["config"].as<st. s..>() __  st. e..
         ____ __ (vm.count("bulk"))
-            std::c__ __  "bulk: " __  vm["bulk"].as<size_t>() __  std::e..
+            st. c__ __  "bulk: " __  vm["bulk"].as<size_t>() __  st. e..
     }
-    catch (c.. std::exception &e) {
-        std::cerr __  e.what() __  std::e..
+    catch (c.. st. exception &e) {
+        st. cerr __  e.what() __  st. e..
     }
 }

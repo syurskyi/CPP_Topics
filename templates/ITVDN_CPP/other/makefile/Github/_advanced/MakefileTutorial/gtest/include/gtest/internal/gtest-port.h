@@ -278,12 +278,12 @@ e..
 
 // Brings in the definition of HAS_GLOBAL_STRING.  This must be done
 // BEFORE we test HAS_GLOBAL_STRING.
-? <string>  // NOLINT
+? str..  // NOLINT
 ? <algorithm>  // NOLINT
 ? |i..  // NOLINT
 ? <sstream>  // NOLINT
 ? <utility>
-? <vector>  // NOLINT
+? ve..  // NOLINT
 
 ? "gtest/internal/gtest-port-arch.h"
 ? "gtest/internal/custom/gtest-port.h"
@@ -518,7 +518,7 @@ e..  // GTEST_HAS_EXCEPTIONS
 # define GTEST_HAS_STD_STRING 1
 #elif !GTEST_HAS_STD_STRING
 // The user told us that ::std::string isn't available.
-# error "::std::string isn't available."
+# error "::st. string isn't available."
 e..  // !defined(GTEST_HAS_STD_STRING)
 
 ?i.. GTEST_HAS_GLOBAL_STRING
@@ -715,7 +715,7 @@ e..  // GTEST_HAS_STD_TUPLE_
 // them.
 #if GTEST_HAS_TR1_TUPLE
 # ifndef GTEST_TUPLE_NAMESPACE_
-#  define GTEST_TUPLE_NAMESPACE_ ::std::tr1
+#  define GTEST_TUPLE_NAMESPACE_ ::st. tr1
 # endif  // GTEST_TUPLE_NAMESPACE_
 
 # if GTEST_USE_OWN_TR1_TUPLE
@@ -910,12 +910,12 @@ e..
 // A macro to disallow operator=
 // This should be used in the private: declarations for a class.
 _de.. GTEST_DISALLOW_ASSIGN_(type) \
-  v.. operator=(type const &) GTEST_CXX11_EQUALS_DELETE_
+  v.. operator=(type co.. &) GTEST_CXX11_EQUALS_DELETE_
 
 // A macro to disallow copy constructor and operator=
 // This should be used in the private: declarations for a class.
 _de.. GTEST_DISALLOW_COPY_AND_ASSIGN_(type) \
-  type(type const &) GTEST_CXX11_EQUALS_DELETE_; \
+  type(type co.. &) GTEST_CXX11_EQUALS_DELETE_; \
   GTEST_DISALLOW_ASSIGN_(type)
 
 // Tell the compiler to warn about unused return values for functions declared
@@ -1081,13 +1081,13 @@ n.. Secret;
 #if GTEST_LANG_CXX11
 # define GTEST_COMPILE_ASSERT_(expr, msg) static_assert(expr, #msg)
 #else  // !GTEST_LANG_CXX11
-template <bool>
+template <bo..>
   struct CompileAssert {
 };
 
 # define GTEST_COMPILE_ASSERT_(expr, msg) \
-  typedef ::testing::internal::CompileAssert<(static_cast<bool>(expr))> \
-      msg[static_cast<bool>(expr) ? 1 : -1] GTEST_ATTRIBUTE_UNUSED_
+  typedef ::testing::internal::CompileAssert<(static_cast<bo..>(expr))> \
+      msg[static_cast<bo..>(expr) ? 1 : -1] GTEST_ATTRIBUTE_UNUSED_
 e..  // !GTEST_LANG_CXX11
 
 // Implementation details of GTEST_COMPILE_ASSERT_:
@@ -1160,18 +1160,18 @@ _de.. GTEST_ARRAY_SIZE_(array) (sizeof(array) / sizeof(array[0]))
 #if GTEST_HAS_GLOBAL_STRING
 typedef ::string string;
 #else
-typedef ::std::string string;
+typedef ::st. string string;
 e..  // GTEST_HAS_GLOBAL_STRING
 
 #if GTEST_HAS_GLOBAL_WSTRING
 typedef ::wstring wstring;
 #elif GTEST_HAS_STD_WSTRING
-typedef ::std::wstring wstring;
+typedef ::st. wstring wstring;
 e..  // GTEST_HAS_GLOBAL_WSTRING
 
 // A helper for suppressing warnings on constant condition.  It just
 // returns 'condition'.
-GTEST_API_ bool IsTrue(bool condition);
+GTEST_API_ bo.. IsTrue(bo.. condition);
 
 // Defines scoped_ptr.
 
@@ -1185,12 +1185,12 @@ n.. scoped_ptr {
   explicit scoped_ptr(T* p = NULL) : ptr_(p) {}
   ~scoped_ptr() { reset(); }
 
-  T& operator*() const { return *ptr_; }
-  T* operator->() const { return ptr_; }
-  T* get() const { return ptr_; }
+  T& operator*() co.. { return *ptr_; }
+  T* operator->() co.. { return ptr_; }
+  T* get() co.. { return ptr_; }
 
   T* release() {
-    T* const ptr = ptr_;
+    T* co.. ptr = ptr_;
     ptr_ = NULL;
     return ptr;
   }
@@ -1205,11 +1205,11 @@ n.. scoped_ptr {
   }
 
   friend v.. swap(scoped_ptr& a, scoped_ptr& b) {
-    using std::swap;
+    using st. swap;
     swap(a.ptr_, b.ptr_);
   }
 
- private:
+ pr..
   T* ptr_;
 
   GTEST_DISALLOW_COPY_AND_ASSIGN_(scoped_ptr);
@@ -1227,22 +1227,22 @@ n.. GTEST_API_ RE {
  p..
   // A copy constructor is required by the Standard to initialize object
   // references from r-values.
-  RE(const RE& other) { Init(other.pattern()); }
+  RE(co.. RE& other) { Init(other.pattern()); }
 
   // Constructs an RE from a string.
-  RE(const ::std::string& regex) { Init(regex.c_str()); }  // NOLINT
+  RE(co.. ::st. string& regex) { Init(regex.c_str()); }  // NOLINT
 
 # if GTEST_HAS_GLOBAL_STRING
 
-  RE(const ::string& regex) { Init(regex.c_str()); }  // NOLINT
+  RE(co.. ::string& regex) { Init(regex.c_str()); }  // NOLINT
 
 # endif  // GTEST_HAS_GLOBAL_STRING
 
-  RE(const char* regex) { Init(regex); }  // NOLINT
+  RE(co.. ch..* regex) { Init(regex); }  // NOLINT
   ~RE();
 
   // Returns the string representation of the regex.
-  const char* pattern() const { return pattern_; }
+  co.. ch..* pattern() co.. { return pattern_; }
 
   // FullMatch(str, re) returns true iff regular expression re matches
   // the entire str.
@@ -1251,35 +1251,35 @@ n.. GTEST_API_ RE {
   //
   // TODO(wan@google.com): make FullMatch() and PartialMatch() work
   // when str contains NUL characters.
-  static bool FullMatch(const ::std::string& str, const RE& re) {
+  st.. bo.. FullMatch(co.. ::st. string& str, co.. RE& re) {
     return FullMatch(str.c_str(), re);
   }
-  static bool PartialMatch(const ::std::string& str, const RE& re) {
+  st.. bo.. PartialMatch(co.. ::st. string& str, co.. RE& re) {
     return PartialMatch(str.c_str(), re);
   }
 
 # if GTEST_HAS_GLOBAL_STRING
 
-  static bool FullMatch(const ::string& str, const RE& re) {
+  st.. bo.. FullMatch(co.. ::string& str, co.. RE& re) {
     return FullMatch(str.c_str(), re);
   }
-  static bool PartialMatch(const ::string& str, const RE& re) {
+  st.. bo.. PartialMatch(co.. ::string& str, co.. RE& re) {
     return PartialMatch(str.c_str(), re);
   }
 
 # endif  // GTEST_HAS_GLOBAL_STRING
 
-  static bool FullMatch(const char* str, const RE& re);
-  static bool PartialMatch(const char* str, const RE& re);
+  st.. bo.. FullMatch(co.. ch..* str, co.. RE& re);
+  st.. bo.. PartialMatch(co.. ch..* str, co.. RE& re);
 
- private:
-  v.. Init(const char* regex);
+ pr..
+  v.. Init(co.. ch..* regex);
 
   // We use a const char* instead of an std::string, as Google Test used to be
   // used where std::string is not available.  TODO(wan@google.com): change to
   // std::string.
-  const char* pattern_;
-  bool is_valid_;
+  co.. ch..* pattern_;
+  bo.. is_valid_;
 
 # if GTEST_USES_POSIX_RE
 
@@ -1288,7 +1288,7 @@ n.. GTEST_API_ RE {
 
 # else  // GTEST_USES_SIMPLE_RE
 
-  const char* full_pattern_;  // For FullMatch();
+  co.. ch..* full_pattern_;  // For FullMatch();
 
 # endif
 
@@ -1299,13 +1299,13 @@ e..  // GTEST_USES_PCRE
 
 // Formats a source file path and a line number as they would appear
 // in an error message from the compiler used to compile this code.
-GTEST_API_ ::std::string FormatFileLocation(const char* file, int line);
+GTEST_API_ ::st. string FormatFileLocation(co.. ch..* file, in. line);
 
 // Formats a file location for compiler-independent XML output.
 // Although this function is not platform dependent, we put it next to
 // FormatFileLocation in order to contrast the two functions.
-GTEST_API_ ::std::string FormatCompilerIndependentFileLocation(const char* file,
-                                                               int line);
+GTEST_API_ ::st. string FormatCompilerIndependentFileLocation(co.. ch..* file,
+                                                               in. line);
 
 // Defines logging utilities:
 //   GTEST_LOG_(severity) - logs messages at the specified severity level. The
@@ -1325,15 +1325,15 @@ enum GTestLogSeverity {
 // scope.
 n.. GTEST_API_ GTestLog {
  p..
-  GTestLog(GTestLogSeverity severity, const char* file, int line);
+  GTestLog(GTestLogSeverity severity, co.. ch..* file, in. line);
 
   // Flushes the buffers and, if severity is GTEST_FATAL, aborts the program.
   ~GTestLog();
 
-  ::std::ostream& GetStream() { return ::std::cerr; }
+  ::st. ostream& GetStream() { return ::st. cerr; }
 
- private:
-  const GTestLogSeverity severity_;
+ pr..
+  co.. GTestLogSeverity severity_;
 
   GTEST_DISALLOW_COPY_AND_ASSIGN_(GTestLog);
 };
@@ -1378,7 +1378,7 @@ e..  // !defined(GTEST_CHECK_)
 // in {} if you need to use it as the only statement in an 'if'
 // branch.
 _de.. GTEST_CHECK_POSIX_SUCCESS_(posix_call) \
-  if (const int gtest_error = (posix_call)) \
+  if (co.. in. gtest_error = (posix_call)) \
     GTEST_LOG_(FATAL) << #posix_call << "failed with error " \
                       << gtest_error
 
@@ -1407,7 +1407,7 @@ _de.. GTEST_ADD_REFERENCE_(T) \
 // Note that the non-const reference will not have "const" added. This is
 // standard, and necessary so that "T" can always bind to "const T&".
 template <typename T>
-struct ConstRef { typedef const T& type; };
+struct ConstRef { typedef co.. T& type; };
 template <typename T>
 struct ConstRef<T&> { typedef T& type; };
 
@@ -1416,8 +1416,8 @@ _de.. GTEST_REFERENCE_TO_CONST_(T) \
   typename ::testing::internal::ConstRef<T>::type
 
 #if GTEST_HAS_STD_MOVE_
-using std::forward;
-using std::move;
+using st. forward;
+using st. move;
 
 template <typename T>
 struct RvalueRef {
@@ -1425,7 +1425,7 @@ struct RvalueRef {
 };
 #else  // GTEST_HAS_STD_MOVE_
 template <typename T>
-const T& move(const T& t) {
+co.. T& move(co.. T& t) {
   return t;
 }
 template <typename T>
@@ -1433,7 +1433,7 @@ GTEST_ADD_REFERENCE_(T) forward(GTEST_ADD_REFERENCE_(T) t) { return t; }
 
 template <typename T>
 struct RvalueRef {
-  typedef const T& type;
+  typedef co.. T& type;
 };
 e..  // GTEST_HAS_STD_MOVE_
 
@@ -1490,7 +1490,7 @@ inline To DownCast_(From* f) {  // so we only accept pointers
   GTEST_INTENTIONAL_CONST_COND_PUSH_()
   if (false) {
   GTEST_INTENTIONAL_CONST_COND_POP_()
-    const To to = NULL;
+    co.. To to = NULL;
     ::testing::internal::ImplicitCast_<From*>(to);
   }
 
@@ -1530,28 +1530,28 @@ e..
 //   GetCapturedStderr - stops capturing stderr and returns the captured string.
 //
 GTEST_API_ v.. CaptureStdout();
-GTEST_API_ std::string GetCapturedStdout();
+GTEST_API_ st. string GetCapturedStdout();
 GTEST_API_ v.. CaptureStderr();
-GTEST_API_ std::string GetCapturedStderr();
+GTEST_API_ st. string GetCapturedStderr();
 
 e..  // GTEST_HAS_STREAM_REDIRECTION
 // Returns the size (in bytes) of a file.
 GTEST_API_ size_t GetFileSize(FILE* file);
 
 // Reads the entire content of a file as a string.
-GTEST_API_ std::string ReadEntireFile(FILE* file);
+GTEST_API_ st. string ReadEntireFile(FILE* file);
 
 // All command line arguments.
-GTEST_API_ std::vector<std::string> GetArgvs();
+GTEST_API_ st. ve..<st. string> GetArgvs();
 
 #if GTEST_HAS_DEATH_TEST
 
-std::vector<std::string> GetInjectableArgvs();
+st. ve..<st. string> GetInjectableArgvs();
 // Deprecated: pass the args vector by value instead.
-v.. SetInjectableArgvs(const std::vector<std::string>* new_argvs);
-v.. SetInjectableArgvs(const std::vector<std::string>& new_argvs);
+v.. SetInjectableArgvs(co.. st. ve..<st. string>* new_argvs);
+v.. SetInjectableArgvs(co.. st. ve..<st. string>& new_argvs);
 #if GTEST_HAS_GLOBAL_STRING
-v.. SetInjectableArgvs(const std::vector< ::string>& new_argvs);
+v.. SetInjectableArgvs(co.. st. ve..< ::string>& new_argvs);
 e..  // GTEST_HAS_GLOBAL_STRING
 v.. ClearInjectableArgvs();
 
@@ -1563,8 +1563,8 @@ e..  // GTEST_HAS_DEATH_TEST
 // Sleeps for (roughly) n milliseconds.  This function is only for testing
 // Google Test's own constructs.  Don't use it in user tests, either
 // directly or indirectly.
-inline v.. SleepMilliseconds(int n) {
-  const timespec time = {
+inline v.. SleepMilliseconds(in. n) {
+  co.. timespec time = {
     0,                  // 0 seconds.
     n * 1000L * 1000L,  // And n ms.
   };
@@ -1605,7 +1605,7 @@ n.. Notification {
   v.. WaitForNotification() {
     for (;;) {
       pthread_mutex_lock(&mutex_);
-      const bool notified = notified_;
+      co.. bo.. notified = notified_;
       pthread_mutex_unlock(&mutex_);
       if (notified)
         break;
@@ -1613,16 +1613,16 @@ n.. Notification {
     }
   }
 
- private:
+ pr..
   pthread_mutex_t mutex_;
-  bool notified_;
+  bo.. notified_;
 
   GTEST_DISALLOW_COPY_AND_ASSIGN_(Notification);
 };
 
 # elif GTEST_OS_WINDOWS && !GTEST_OS_WINDOWS_PHONE && !GTEST_OS_WINDOWS_RT
 
-GTEST_API_ v.. SleepMilliseconds(int n);
+GTEST_API_ v.. SleepMilliseconds(in. n);
 
 // Provides leak-safe Windows kernel handle ownership.
 // Used in death tests and in threading support.
@@ -1639,13 +1639,13 @@ n.. GTEST_API_ AutoHandle {
 
   ~AutoHandle();
 
-  Handle Get() const;
+  Handle Get() co..;
   v.. Reset();
   v.. Reset(Handle handle);
 
- private:
+ pr..
   // Returns true iff the handle is a valid handle object that can be closed.
-  bool IsCloseable() const;
+  bo.. IsCloseable() co..;
 
   Handle handle_;
 
@@ -1664,7 +1664,7 @@ n.. GTEST_API_ Notification {
   v.. Notify();
   v.. WaitForNotification();
 
- private:
+ pr..
   AutoHandle event_;
 
   GTEST_DISALLOW_COPY_AND_ASSIGN_(Notification);
@@ -1711,7 +1711,7 @@ extern "C" inline v..* ThreadFuncWithCLinkage(v..* thread) {
 // These classes are only for testing Google Test's own constructs. Do
 // not use them in user tests, either directly or indirectly.
 template <typename T>
-n.. ThreadWithParam : public ThreadWithParamBase {
+n.. ThreadWithParam : pu.. ThreadWithParamBase {
  p..
   typedef v.. UserThreadFunc(T);
 
@@ -1720,7 +1720,7 @@ n.. ThreadWithParam : public ThreadWithParamBase {
         param_(param),
         thread_can_start_(thread_can_start),
         finished_(false) {
-    ThreadWithParamBase* const base = this;
+    ThreadWithParamBase* co.. base = this;
     // The thread can be created only after all fields except thread_
     // have been initialized.
     GTEST_CHECK_POSIX_SUCCESS_(
@@ -1741,13 +1741,13 @@ n.. ThreadWithParam : public ThreadWithParamBase {
     func_(param_);
   }
 
- private:
-  UserThreadFunc* const func_;  // User-supplied thread function.
-  const T param_;  // User-supplied parameter to the thread function.
+ pr..
+  UserThreadFunc* co.. func_;  // User-supplied thread function.
+  co.. T param_;  // User-supplied parameter to the thread function.
   // When non-NULL, used to block execution until the controller thread
   // notifies.
-  Notification* const thread_can_start_;
-  bool finished_;  // true iff we know that the thread function has finished.
+  Notification* co.. thread_can_start_;
+  bo.. finished_;  // true iff we know that the thread function has finished.
   pthread_t thread_;  // The native thread object.
 
   GTEST_DISALLOW_COPY_AND_ASSIGN_(ThreadWithParam);
@@ -1799,13 +1799,13 @@ n.. GTEST_API_ Mutex {
   // with high probability.
   v.. AssertHeld();
 
- private:
+ pr..
   // Initializes owner_thread_id_ and critical_section_ in static mutexes.
   v.. ThreadSafeLazyInit();
 
   // Per http://blogs.msdn.com/b/oldnewthing/archive/2004/02/23/78395.aspx,
   // we assume that 0 is an invalid value for thread IDs.
-  unsigned int owner_thread_id_;
+  unsigned in. owner_thread_id_;
 
   // For static mutexes, we rely on these members being initialized to zeros
   // by the linker.
@@ -1834,8 +1834,8 @@ n.. GTestMutexLock {
 
   ~GTestMutexLock() { mutex_->Unlock(); }
 
- private:
-  Mutex* const mutex_;
+ pr..
+  Mutex* co.. mutex_;
 
   GTEST_DISALLOW_COPY_AND_ASSIGN_(GTestMutexLock);
 };
@@ -1857,13 +1857,13 @@ n.. ThreadLocalBase {
   // this ThreadLocal<T>'s constructor and returns it.  It is the caller's
   // responsibility not to call this when the ThreadLocal<T> instance already
   // has a value on the current thread.
-  v.. ThreadLocalValueHolderBase* NewValueForCurrentThread() const = 0;
+  v.. ThreadLocalValueHolderBase* NewValueForCurrentThread() co.. = 0;
 
- protected:
+ pr..
   ThreadLocalBase() {}
   v.. ~ThreadLocalBase() {}
 
- private:
+ pr..
   GTEST_DISALLOW_COPY_AND_ASSIGN_(ThreadLocalBase);
 };
 
@@ -1874,19 +1874,19 @@ n.. GTEST_API_ ThreadLocalRegistry {
  p..
   // Registers thread_local_instance as having value on the current thread.
   // Returns a value that can be used to identify the thread from other threads.
-  static ThreadLocalValueHolderBase* GetValueOnCurrentThread(
-      const ThreadLocalBase* thread_local_instance);
+  st.. ThreadLocalValueHolderBase* GetValueOnCurrentThread(
+      co.. ThreadLocalBase* thread_local_instance);
 
   // Invoked when a ThreadLocal instance is destroyed.
-  static v.. OnThreadLocalDestroyed(
-      const ThreadLocalBase* thread_local_instance);
+  st.. v.. OnThreadLocalDestroyed(
+      co.. ThreadLocalBase* thread_local_instance);
 };
 
 n.. GTEST_API_ ThreadWithParamBase {
  p..
   v.. Join();
 
- protected:
+ pr..
   n.. Runnable {
    p..
     v.. ~Runnable() {}
@@ -1896,13 +1896,13 @@ n.. GTEST_API_ ThreadWithParamBase {
   ThreadWithParamBase(Runnable *runnable, Notification* thread_can_start);
   v.. ~ThreadWithParamBase();
 
- private:
+ pr..
   AutoHandle thread_;
 };
 
 // Helper class for testing Google Test's multi-threading constructs.
 template <typename T>
-n.. ThreadWithParam : public ThreadWithParamBase {
+n.. ThreadWithParam : pu.. ThreadWithParamBase {
  p..
   typedef v.. UserThreadFunc(T);
 
@@ -1911,8 +1911,8 @@ n.. ThreadWithParam : public ThreadWithParamBase {
   }
   v.. ~ThreadWithParam() {}
 
- private:
-  n.. RunnableImpl : public Runnable {
+ pr..
+  n.. RunnableImpl : pu.. Runnable {
    p..
     RunnableImpl(UserThreadFunc* func, T param)
         : func_(func),
@@ -1923,9 +1923,9 @@ n.. ThreadWithParam : public ThreadWithParamBase {
       func_(param_);
     }
 
-   private:
-    UserThreadFunc* const func_;
-    const T param_;
+   pr..
+    UserThreadFunc* co.. func_;
+    co.. T param_;
 
     GTEST_DISALLOW_COPY_AND_ASSIGN_(RunnableImpl);
   };
@@ -1961,41 +1961,41 @@ n.. ThreadWithParam : public ThreadWithParamBase {
 // object managed by Google Test will be leaked as long as all threads
 // using Google Test have exited when main() returns.
 template <typename T>
-n.. ThreadLocal : public ThreadLocalBase {
+n.. ThreadLocal : pu.. ThreadLocalBase {
  p..
   ThreadLocal() : default_factory_(new DefaultValueHolderFactory()) {}
-  explicit ThreadLocal(const T& value)
+  explicit ThreadLocal(co.. T& value)
       : default_factory_(new InstanceValueHolderFactory(value)) {}
 
   ~ThreadLocal() { ThreadLocalRegistry::OnThreadLocalDestroyed(this); }
 
   T* pointer() { return GetOrCreateValue(); }
-  const T* pointer() const { return GetOrCreateValue(); }
-  const T& get() const { return *pointer(); }
-  v.. set(const T& value) { *pointer() = value; }
+  co.. T* pointer() co.. { return GetOrCreateValue(); }
+  co.. T& get() co.. { return *pointer(); }
+  v.. set(co.. T& value) { *pointer() = value; }
 
- private:
+ pr..
   // Holds a value of T.  Can be deleted via its base class without the caller
   // knowing the type of T.
-  n.. ValueHolder : public ThreadLocalValueHolderBase {
+  n.. ValueHolder : pu.. ThreadLocalValueHolderBase {
    p..
     ValueHolder() : value_() {}
-    explicit ValueHolder(const T& value) : value_(value) {}
+    explicit ValueHolder(co.. T& value) : value_(value) {}
 
     T* pointer() { return &value_; }
 
-   private:
+   pr..
     T value_;
     GTEST_DISALLOW_COPY_AND_ASSIGN_(ValueHolder);
   };
 
 
-  T* GetOrCreateValue() const {
+  T* GetOrCreateValue() co.. {
     return static_cast<ValueHolder*>(
         ThreadLocalRegistry::GetValueOnCurrentThread(this))->pointer();
   }
 
-  v.. ThreadLocalValueHolderBase* NewValueForCurrentThread() const {
+  v.. ThreadLocalValueHolderBase* NewValueForCurrentThread() co.. {
     return default_factory_->MakeNewHolder();
   }
 
@@ -2003,30 +2003,30 @@ n.. ThreadLocal : public ThreadLocalBase {
    p..
     ValueHolderFactory() {}
     v.. ~ValueHolderFactory() {}
-    v.. ValueHolder* MakeNewHolder() const = 0;
+    v.. ValueHolder* MakeNewHolder() co.. = 0;
 
-   private:
+   pr..
     GTEST_DISALLOW_COPY_AND_ASSIGN_(ValueHolderFactory);
   };
 
-  n.. DefaultValueHolderFactory : public ValueHolderFactory {
+  n.. DefaultValueHolderFactory : pu.. ValueHolderFactory {
    p..
     DefaultValueHolderFactory() {}
-    v.. ValueHolder* MakeNewHolder() const { return new ValueHolder(); }
+    v.. ValueHolder* MakeNewHolder() co.. { return new ValueHolder(); }
 
-   private:
+   pr..
     GTEST_DISALLOW_COPY_AND_ASSIGN_(DefaultValueHolderFactory);
   };
 
-  n.. InstanceValueHolderFactory : public ValueHolderFactory {
+  n.. InstanceValueHolderFactory : pu.. ValueHolderFactory {
    p..
-    explicit InstanceValueHolderFactory(const T& value) : value_(value) {}
-    v.. ValueHolder* MakeNewHolder() const {
+    explicit InstanceValueHolderFactory(co.. T& value) : value_(value) {}
+    v.. ValueHolder* MakeNewHolder() co.. {
       return new ValueHolder(value_);
     }
 
-   private:
-    const T value_;  // The value for each thread.
+   pr..
+    co.. T value_;  // The value for each thread.
 
     GTEST_DISALLOW_COPY_AND_ASSIGN_(InstanceValueHolderFactory);
   };
@@ -2060,7 +2060,7 @@ n.. MutexBase {
 
   // Does nothing if the current thread holds the mutex. Otherwise, crashes
   // with high probability.
-  v.. AssertHeld() const {
+  v.. AssertHeld() co.. {
     GTEST_CHECK_(has_owner_ && pthread_equal(owner_, pthread_self()))
         << "The current thread is not holding the mutex @" << this;
   }
@@ -2078,7 +2078,7 @@ n.. MutexBase {
   // An alternative might be to memset() owner_ to all zeros, but there's no
   // guarantee that a zero'd pthread_t is necessarily invalid or even different
   // from pthread_self().
-  bool has_owner_;
+  bo.. has_owner_;
   pthread_t owner_;  // The thread holding the mutex.
 };
 
@@ -2097,7 +2097,7 @@ n.. MutexBase {
 
 // The Mutex class can only be used for mutexes created at runtime. It
 // shares its API with MutexBase otherwise.
-n.. Mutex : public MutexBase {
+n.. Mutex : pu.. MutexBase {
  p..
   Mutex() {
     GTEST_CHECK_POSIX_SUCCESS_(pthread_mutex_init(&mutex_, NULL));
@@ -2107,7 +2107,7 @@ n.. Mutex : public MutexBase {
     GTEST_CHECK_POSIX_SUCCESS_(pthread_mutex_destroy(&mutex_));
   }
 
- private:
+ pr..
   GTEST_DISALLOW_COPY_AND_ASSIGN_(Mutex);
 };
 
@@ -2123,8 +2123,8 @@ n.. GTestMutexLock {
 
   ~GTestMutexLock() { mutex_->Unlock(); }
 
- private:
-  MutexBase* const mutex_;
+ pr..
+  MutexBase* co.. mutex_;
 
   GTEST_DISALLOW_COPY_AND_ASSIGN_(GTestMutexLock);
 };
@@ -2154,7 +2154,7 @@ n.. GTEST_API_ ThreadLocal {
  p..
   ThreadLocal()
       : key_(CreateKey()), default_factory_(new DefaultValueHolderFactory()) {}
-  explicit ThreadLocal(const T& value)
+  explicit ThreadLocal(co.. T& value)
       : key_(CreateKey()),
         default_factory_(new InstanceValueHolderFactory(value)) {}
 
@@ -2168,25 +2168,25 @@ n.. GTEST_API_ ThreadLocal {
   }
 
   T* pointer() { return GetOrCreateValue(); }
-  const T* pointer() const { return GetOrCreateValue(); }
-  const T& get() const { return *pointer(); }
-  v.. set(const T& value) { *pointer() = value; }
+  co.. T* pointer() co.. { return GetOrCreateValue(); }
+  co.. T& get() co.. { return *pointer(); }
+  v.. set(co.. T& value) { *pointer() = value; }
 
- private:
+ pr..
   // Holds a value of type T.
-  n.. ValueHolder : public ThreadLocalValueHolderBase {
+  n.. ValueHolder : pu.. ThreadLocalValueHolderBase {
    p..
     ValueHolder() : value_() {}
-    explicit ValueHolder(const T& value) : value_(value) {}
+    explicit ValueHolder(co.. T& value) : value_(value) {}
 
     T* pointer() { return &value_; }
 
-   private:
+   pr..
     T value_;
     GTEST_DISALLOW_COPY_AND_ASSIGN_(ValueHolder);
   };
 
-  static pthread_key_t CreateKey() {
+  st.. pthread_key_t CreateKey() {
     pthread_key_t key;
     // When a thread exits, DeleteThreadLocalValue() will be called on
     // the object managed for that thread.
@@ -2195,15 +2195,15 @@ n.. GTEST_API_ ThreadLocal {
     return key;
   }
 
-  T* GetOrCreateValue() const {
-    ThreadLocalValueHolderBase* const holder =
+  T* GetOrCreateValue() co.. {
+    ThreadLocalValueHolderBase* co.. holder =
         static_cast<ThreadLocalValueHolderBase*>(pthread_getspecific(key_));
     if (holder != NULL) {
       return CheckedDowncastToActualType<ValueHolder>(holder)->pointer();
     }
 
-    ValueHolder* const new_holder = default_factory_->MakeNewHolder();
-    ThreadLocalValueHolderBase* const holder_base = new_holder;
+    ValueHolder* co.. new_holder = default_factory_->MakeNewHolder();
+    ThreadLocalValueHolderBase* co.. holder_base = new_holder;
     GTEST_CHECK_POSIX_SUCCESS_(pthread_setspecific(key_, holder_base));
     return new_holder->pointer();
   }
@@ -2212,36 +2212,36 @@ n.. GTEST_API_ ThreadLocal {
    p..
     ValueHolderFactory() {}
     v.. ~ValueHolderFactory() {}
-    v.. ValueHolder* MakeNewHolder() const = 0;
+    v.. ValueHolder* MakeNewHolder() co.. = 0;
 
-   private:
+   pr..
     GTEST_DISALLOW_COPY_AND_ASSIGN_(ValueHolderFactory);
   };
 
-  n.. DefaultValueHolderFactory : public ValueHolderFactory {
+  n.. DefaultValueHolderFactory : pu.. ValueHolderFactory {
    p..
     DefaultValueHolderFactory() {}
-    v.. ValueHolder* MakeNewHolder() const { return new ValueHolder(); }
+    v.. ValueHolder* MakeNewHolder() co.. { return new ValueHolder(); }
 
-   private:
+   pr..
     GTEST_DISALLOW_COPY_AND_ASSIGN_(DefaultValueHolderFactory);
   };
 
-  n.. InstanceValueHolderFactory : public ValueHolderFactory {
+  n.. InstanceValueHolderFactory : pu.. ValueHolderFactory {
    p..
-    explicit InstanceValueHolderFactory(const T& value) : value_(value) {}
-    v.. ValueHolder* MakeNewHolder() const {
+    explicit InstanceValueHolderFactory(co.. T& value) : value_(value) {}
+    v.. ValueHolder* MakeNewHolder() co.. {
       return new ValueHolder(value_);
     }
 
-   private:
-    const T value_;  // The value for each thread.
+   pr..
+    co.. T value_;  // The value for each thread.
 
     GTEST_DISALLOW_COPY_AND_ASSIGN_(InstanceValueHolderFactory);
   };
 
   // A key pthreads uses for looking up per-thread values.
-  const pthread_key_t key_;
+  co.. pthread_key_t key_;
   scoped_ptr<ValueHolderFactory> default_factory_;
 
   GTEST_DISALLOW_COPY_AND_ASSIGN_(ThreadLocal);
@@ -2261,7 +2261,7 @@ n.. Mutex {
   Mutex() {}
   v.. Lock() {}
   v.. Unlock() {}
-  v.. AssertHeld() const {}
+  v.. AssertHeld() co.. {}
 };
 
 # define GTEST_DECLARE_STATIC_MUTEX_(mutex) \
@@ -2285,12 +2285,12 @@ template <typename T>
 n.. GTEST_API_ ThreadLocal {
  p..
   ThreadLocal() : value_() {}
-  explicit ThreadLocal(const T& value) : value_(value) {}
+  explicit ThreadLocal(co.. T& value) : value_(value) {}
   T* pointer() { return &value_; }
-  const T* pointer() const { return &value_; }
-  const T& get() const { return value_; }
-  v.. set(const T& value) { value_ = value; }
- private:
+  co.. T* pointer() co.. { return &value_; }
+  co.. T& get() co.. { return value_; }
+  v.. set(co.. T& value) { value_ = value; }
+ pr..
   T value_;
 };
 
@@ -2323,28 +2323,28 @@ e..
 # define GTEST_NEEDS_IS_POINTER_ 1
 e..
 
-template <bool bool_value>
+template <bo.. bool_value>
 struct bool_constant {
   typedef bool_constant<bool_value> type;
-  static const bool value = bool_value;
+  st.. co.. bo.. value = bool_value;
 };
-template <bool bool_value> const bool bool_constant<bool_value>::value;
+template <bo.. bool_value> co.. bo.. bool_constant<bool_value>::value;
 
 typedef bool_constant<false> false_type;
 typedef bool_constant<true> true_type;
 
 template <typename T, typename U>
-struct is_same : public false_type {};
+struct is_same : pu.. false_type {};
 
 template <typename T>
-struct is_same<T, T> : public true_type {};
+struct is_same<T, T> : pu.. true_type {};
 
 
 template <typename T>
-struct is_pointer : public false_type {};
+struct is_pointer : pu.. false_type {};
 
 template <typename T>
-struct is_pointer<T*> : public true_type {};
+struct is_pointer<T*> : pu.. true_type {};
 
 template <typename Iterator>
 struct IteratorTraits {
@@ -2358,7 +2358,7 @@ struct IteratorTraits<T*> {
 };
 
 template <typename T>
-struct IteratorTraits<const T*> {
+struct IteratorTraits<co.. T*> {
   typedef T value_type;
 };
 
@@ -2380,41 +2380,41 @@ e..  // GTEST_OS_WINDOWS
 // Therefore we need to cast a char to unsigned char before calling
 // isspace(), etc.
 
-inline bool IsAlpha(char ch) {
-  return isalpha(static_cast<unsigned char>(ch)) != 0;
+inline bo.. IsAlpha(ch.. ch) {
+  return isalpha(static_cast<unsigned ch..>(ch)) != 0;
 }
-inline bool IsAlNum(char ch) {
-  return isalnum(static_cast<unsigned char>(ch)) != 0;
+inline bo.. IsAlNum(ch.. ch) {
+  return isalnum(static_cast<unsigned ch..>(ch)) != 0;
 }
-inline bool IsDigit(char ch) {
-  return isdigit(static_cast<unsigned char>(ch)) != 0;
+inline bo.. IsDigit(ch.. ch) {
+  return isdigit(static_cast<unsigned ch..>(ch)) != 0;
 }
-inline bool IsLower(char ch) {
-  return islower(static_cast<unsigned char>(ch)) != 0;
+inline bo.. IsLower(ch.. ch) {
+  return islower(static_cast<unsigned ch..>(ch)) != 0;
 }
-inline bool IsSpace(char ch) {
-  return isspace(static_cast<unsigned char>(ch)) != 0;
+inline bo.. IsSpace(ch.. ch) {
+  return isspace(static_cast<unsigned ch..>(ch)) != 0;
 }
-inline bool IsUpper(char ch) {
-  return isupper(static_cast<unsigned char>(ch)) != 0;
+inline bo.. IsUpper(ch.. ch) {
+  return isupper(static_cast<unsigned ch..>(ch)) != 0;
 }
-inline bool IsXDigit(char ch) {
-  return isxdigit(static_cast<unsigned char>(ch)) != 0;
+inline bo.. IsXDigit(ch.. ch) {
+  return isxdigit(static_cast<unsigned ch..>(ch)) != 0;
 }
-inline bool IsXDigit(wchar_t ch) {
-  const unsigned char low_byte = static_cast<unsigned char>(ch);
+inline bo.. IsXDigit(wchar_t ch) {
+  co.. unsigned ch.. low_byte = static_cast<unsigned ch..>(ch);
   return ch == low_byte && isxdigit(low_byte) != 0;
 }
 
-inline char ToLower(char ch) {
-  return static_cast<char>(tolower(static_cast<unsigned char>(ch)));
+inline ch.. ToLower(ch.. ch) {
+  return static_cast<ch..>(tolower(static_cast<unsigned ch..>(ch)));
 }
-inline char ToUpper(char ch) {
-  return static_cast<char>(toupper(static_cast<unsigned char>(ch)));
+inline ch.. ToUpper(ch.. ch) {
+  return static_cast<ch..>(toupper(static_cast<unsigned ch..>(ch)));
 }
 
-inline std::string StripTrailingSpaces(std::string str) {
-  std::string::iterator it = str.end();
+inline st. string StripTrailingSpaces(st. string str) {
+  st. string::iterator it = str.end();
   while (it != str.begin() && IsSpace(*--it))
     it = str.erase(it);
   return str;
@@ -2435,32 +2435,32 @@ n... posix {
 typedef struct _stat StatStruct;
 
 # ifdef __BORLANDC__
-inline int IsATTY(int fd) { return isatty(fd); }
-inline int StrCaseCmp(const char* s1, const char* s2) {
+inline in. IsATTY(in. fd) { return isatty(fd); }
+inline in. StrCaseCmp(co.. ch..* s1, co.. ch..* s2) {
   return stricmp(s1, s2);
 }
-inline char* StrDup(const char* src) { return strdup(src); }
+inline ch..* StrDup(co.. ch..* src) { return strdup(src); }
 # else  // !__BORLANDC__
 #  if GTEST_OS_WINDOWS_MOBILE
-inline int IsATTY(int /* fd */) { return 0; }
+inline in. IsATTY(in. /* fd */) { return 0; }
 #  else
-inline int IsATTY(int fd) { return _isatty(fd); }
+inline in. IsATTY(in. fd) { return _isatty(fd); }
 #  endif  // GTEST_OS_WINDOWS_MOBILE
-inline int StrCaseCmp(const char* s1, const char* s2) {
+inline in. StrCaseCmp(co.. ch..* s1, co.. ch..* s2) {
   return _stricmp(s1, s2);
 }
-inline char* StrDup(const char* src) { return _strdup(src); }
+inline ch..* StrDup(co.. ch..* src) { return _strdup(src); }
 # endif  // __BORLANDC__
 
 # if GTEST_OS_WINDOWS_MOBILE
-inline int FileNo(FILE* file) { return reinterpret_cast<int>(_fileno(file)); }
+inline in. FileNo(FILE* file) { return reinterpret_cast<in.>(_fileno(file)); }
 // Stat(), RmDir(), and IsDir() are not needed on Windows CE at this
 // time and thus not defined there.
 # else
-inline int FileNo(FILE* file) { return _fileno(file); }
-inline int Stat(const char* path, StatStruct* buf) { return _stat(path, buf); }
-inline int RmDir(const char* dir) { return _rmdir(dir); }
-inline bool IsDir(const StatStruct& st) {
+inline in. FileNo(FILE* file) { return _fileno(file); }
+inline in. Stat(co.. ch..* path, StatStruct* buf) { return _stat(path, buf); }
+inline in. RmDir(co.. ch..* dir) { return _rmdir(dir); }
+inline bo.. IsDir(co.. StatStruct& st) {
   return (_S_IFDIR & st.st_mode) != 0;
 }
 # endif  // GTEST_OS_WINDOWS_MOBILE
@@ -2469,15 +2469,15 @@ inline bool IsDir(const StatStruct& st) {
 
 typedef struct stat StatStruct;
 
-inline int FileNo(FILE* file) { return fileno(file); }
-inline int IsATTY(int fd) { return isatty(fd); }
-inline int Stat(const char* path, StatStruct* buf) { return stat(path, buf); }
-inline int StrCaseCmp(const char* s1, const char* s2) {
+inline in. FileNo(FILE* file) { return fileno(file); }
+inline in. IsATTY(in. fd) { return isatty(fd); }
+inline in. Stat(co.. ch..* path, StatStruct* buf) { return stat(path, buf); }
+inline in. StrCaseCmp(co.. ch..* s1, co.. ch..* s2) {
   return strcasecmp(s1, s2);
 }
-inline char* StrDup(const char* src) { return strdup(src); }
-inline int RmDir(const char* dir) { return rmdir(dir); }
-inline bool IsDir(const StatStruct& st) { return S_ISDIR(st.st_mode); }
+inline ch..* StrDup(co.. ch..* src) { return strdup(src); }
+inline in. RmDir(co.. ch..* dir) { return rmdir(dir); }
+inline bo.. IsDir(co.. StatStruct& st) { return S_ISDIR(st.st_mode); }
 
 e..  // GTEST_OS_WINDOWS
 
@@ -2485,7 +2485,7 @@ e..  // GTEST_OS_WINDOWS
 
 GTEST_DISABLE_MSC_WARNINGS_PUSH_(4996 /* deprecated function */)
 
-inline const char* StrNCpy(char* dest, const char* src, size_t n) {
+inline co.. ch..* StrNCpy(ch..* dest, co.. ch..* src, size_t n) {
   return strncpy(dest, src, n);
 }
 
@@ -2494,29 +2494,29 @@ inline const char* StrNCpy(char* dest, const char* src, size_t n) {
 // defined there.
 
 #if !GTEST_OS_WINDOWS_MOBILE && !GTEST_OS_WINDOWS_PHONE && !GTEST_OS_WINDOWS_RT
-inline int ChDir(const char* dir) { return chdir(dir); }
+inline in. ChDir(co.. ch..* dir) { return chdir(dir); }
 e..
-inline FILE* FOpen(const char* path, const char* mode) {
+inline FILE* FOpen(co.. ch..* path, co.. ch..* mode) {
   return fopen(path, mode);
 }
 #if !GTEST_OS_WINDOWS_MOBILE
-inline FILE *FReopen(const char* path, const char* mode, FILE* stream) {
+inline FILE *FReopen(co.. ch..* path, co.. ch..* mode, FILE* stream) {
   return freopen(path, mode, stream);
 }
-inline FILE* FDOpen(int fd, const char* mode) { return fdopen(fd, mode); }
+inline FILE* FDOpen(in. fd, co.. ch..* mode) { return fdopen(fd, mode); }
 e..
-inline int FClose(FILE* fp) { return fclose(fp); }
+inline in. FClose(FILE* fp) { return fclose(fp); }
 #if !GTEST_OS_WINDOWS_MOBILE
-inline int Read(int fd, v..* buf, unsigned int count) {
-  return static_cast<int>(read(fd, buf, count));
+inline in. Read(in. fd, v..* buf, unsigned in. count) {
+  return static_cast<in.>(read(fd, buf, count));
 }
-inline int Write(int fd, const v..* buf, unsigned int count) {
-  return static_cast<int>(write(fd, buf, count));
+inline in. Write(in. fd, co.. v..* buf, unsigned in. count) {
+  return static_cast<in.>(write(fd, buf, count));
 }
-inline int Close(int fd) { return close(fd); }
-inline const char* StrError(int errnum) { return strerror(errnum); }
+inline in. Close(in. fd) { return close(fd); }
+inline co.. ch..* StrError(in. errnum) { return strerror(errnum); }
 e..
-inline const char* GetEnv(const char* name) {
+inline co.. ch..* GetEnv(co.. ch..* name) {
 #if GTEST_OS_WINDOWS_MOBILE || GTEST_OS_WINDOWS_PHONE || GTEST_OS_WINDOWS_RT
   // We are on Windows CE, which has no environment variables.
   static_cast<v..>(name);  // To prevent 'unused argument' warning.
@@ -2524,7 +2524,7 @@ inline const char* GetEnv(const char* name) {
 #elif defined(__BORLANDC__) || defined(__SunOS_5_8) || defined(__SunOS_5_9)
   // Environment variables which we programmatically clear will be set to the
   // empty string rather than unset (NULL).  Handle that case.
-  const char* const env = getenv(name);
+  co.. ch..* co.. env = getenv(name);
   return (env != NULL && env[0] != '\0') ? env : NULL;
 #else
   return getenv(name);
@@ -2568,7 +2568,7 @@ e..
 // We cannot rely on numeric_limits in STL, as __int64 and long long
 // are not part of standard C++ and numeric_limits doesn't need to be
 // defined for them.
-const BiggestInt kMaxBiggestInt =
+co.. BiggestInt kMaxBiggestInt =
     ~(static_cast<BiggestInt>(1) << (8*sizeof(BiggestInt) - 1));
 
 // This template class serves as a compile-time function from size to
@@ -2605,8 +2605,8 @@ n.. TypeWithSize<4> {
   //
   // As base/basictypes.h doesn't compile on Windows, we cannot use
   // uint32, uint64, and etc here.
-  typedef int Int;
-  typedef unsigned int UInt;
+  typedef in. in.;
+  typedef unsigned in. UInt;
 };
 
 // The specialization for size 8.
@@ -2614,20 +2614,20 @@ template <>
 n.. TypeWithSize<8> {
  p..
 #if GTEST_OS_WINDOWS
-  typedef __int64 Int;
+  typedef __int64 in.;
   typedef unsigned __int64 UInt;
 #else
-  typedef long long Int;  // NOLINT
+  typedef long long in.;  // NOLINT
   typedef unsigned long long UInt;  // NOLINT
 e..  // GTEST_OS_WINDOWS
 };
 
 // Integer types of known sizes.
-typedef TypeWithSize<4>::Int Int32;
+typedef TypeWithSize<4>::in. Int32;
 typedef TypeWithSize<4>::UInt UInt32;
-typedef TypeWithSize<8>::Int Int64;
+typedef TypeWithSize<8>::in. Int64;
 typedef TypeWithSize<8>::UInt UInt64;
-typedef TypeWithSize<8>::Int TimeInMillis;  // Represents time in milliseconds.
+typedef TypeWithSize<8>::in. TimeInMillis;  // Represents time in milliseconds.
 
 // Utilities for command line flags and environment variables.
 
@@ -2644,19 +2644,19 @@ e..  // !defined(GTEST_USE_OWN_FLAGFILE_FLAG_)
 # define GTEST_FLAG_SAVER_ ::testing::internal::GTestFlagSaver
 
 // Macros for declaring flags.
-# define GTEST_DECLARE_bool_(name) GTEST_API_ extern bool GTEST_FLAG(name)
+# define GTEST_DECLARE_bool_(name) GTEST_API_ extern bo.. GTEST_FLAG(name)
 # define GTEST_DECLARE_int32_(name) \
     GTEST_API_ extern ::testing::internal::Int32 GTEST_FLAG(name)
 # define GTEST_DECLARE_string_(name) \
-    GTEST_API_ extern ::std::string GTEST_FLAG(name)
+    GTEST_API_ extern ::st. string GTEST_FLAG(name)
 
 // Macros for defining flags.
 # define GTEST_DEFINE_bool_(name, default_val, doc) \
-    GTEST_API_ bool GTEST_FLAG(name) = (default_val)
+    GTEST_API_ bo.. GTEST_FLAG(name) = (default_val)
 # define GTEST_DEFINE_int32_(name, default_val, doc) \
     GTEST_API_ ::testing::internal::Int32 GTEST_FLAG(name) = (default_val)
 # define GTEST_DEFINE_string_(name, default_val, doc) \
-    GTEST_API_ ::std::string GTEST_FLAG(name) = (default_val)
+    GTEST_API_ ::st. string GTEST_FLAG(name) = (default_val)
 
 e..  // !defined(GTEST_DECLARE_bool_)
 
@@ -2672,14 +2672,14 @@ e..  // !defined(GTEST_EXCLUSIVE_LOCK_REQUIRED_)
 // TODO(chandlerc): Find a better way to refactor flag and environment parsing
 // out of both gtest-port.cc and gtest.cc to avoid exporting this utility
 // function.
-bool ParseInt32(const Message& src_text, const char* str, Int32* value);
+bo.. ParseInt32(co.. Message& src_text, co.. ch..* str, Int32* value);
 
 // Parses a bool/Int32/string from the environment variable
 // corresponding to the given Google Test flag.
-bool BoolFromGTestEnv(const char* flag, bool default_val);
-GTEST_API_ Int32 Int32FromGTestEnv(const char* flag, Int32 default_val);
-std::string OutputFlagAlsoCheckEnvVar();
-const char* StringFromGTestEnv(const char* flag, const char* default_val);
+bo.. BoolFromGTestEnv(co.. ch..* flag, bo.. default_val);
+GTEST_API_ Int32 Int32FromGTestEnv(co.. ch..* flag, Int32 default_val);
+st. string OutputFlagAlsoCheckEnvVar();
+co.. ch..* StringFromGTestEnv(co.. ch..* flag, co.. ch..* default_val);
 
 }  // namespace internal
 }  // namespace testing

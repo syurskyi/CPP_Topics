@@ -13,21 +13,21 @@ pu..
         r_ instancesy.. pause
     }
 
-    v.. info(c.. std::s..& message)
+    v.. info(c.. st. s..& message)
     {
-        os __  "   info: " __  message __  std::e..
+        os __  "   info: " __  message __  st. e..
     }
 
-    v.. warn(c.. std::s..& message)
+    v.. warn(c.. st. s..& message)
     {
-        os __  "warning: " __  message __  std::e..
+        os __  "warning: " __  message __  st. e..
     }
 
 pr..
     Logger() // [1]
-            :os{std::cerr} { }
+            :os{st. cerr} { }
 
-    std::ostream& ossy.. pause // [3]
+    st. ostream& ossy.. pause // [3]
 }sy.. pause
 
 in. main(in., c..* [])

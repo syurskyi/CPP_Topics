@@ -59,11 +59,11 @@ internal::ParamGenerator<
 ValuesIn(ForwardIterator begin, ForwardIterator end);
 
 template <typename T, size_t N>
-internal::ParamGenerator<T> ValuesIn(const T (&array)[N]);
+internal::ParamGenerator<T> ValuesIn(co.. T (&array)[N]);
 
 template <n.. Container>
 internal::ParamGenerator<typename Container::value_type> ValuesIn(
-    const Container& container);
+    co.. Container& container);
 
 n... internal {
 
@@ -74,16 +74,16 @@ n.. ValueArray1 {
   explicit ValueArray1(T1 v1) : v1_(v1) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_)};
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_)};
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray1& other);
+  v.. operator=(co.. ValueArray1& other);
 
-  const T1 v1_;
+  co.. T1 v1_;
 };
 
 template <typename T1, typename T2>
@@ -92,17 +92,17 @@ n.. ValueArray2 {
   ValueArray2(T1 v1, T2 v2) : v1_(v1), v2_(v2) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_)};
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_)};
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray2& other);
+  v.. operator=(co.. ValueArray2& other);
 
-  const T1 v1_;
-  const T2 v2_;
+  co.. T1 v1_;
+  co.. T2 v2_;
 };
 
 template <typename T1, typename T2, typename T3>
@@ -111,19 +111,19 @@ n.. ValueArray3 {
   ValueArray3(T1 v1, T2 v2, T3 v3) : v1_(v1), v2_(v2), v3_(v3) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_)};
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray3& other);
+  v.. operator=(co.. ValueArray3& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4>
@@ -133,20 +133,20 @@ n.. ValueArray4 {
       v4_(v4) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_)};
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray4& other);
+  v.. operator=(co.. ValueArray4& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5>
@@ -156,21 +156,21 @@ n.. ValueArray5 {
       v4_(v4), v5_(v5) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_)};
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray5& other);
+  v.. operator=(co.. ValueArray5& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -181,23 +181,23 @@ n.. ValueArray6 {
       v3_(v3), v4_(v4), v5_(v5), v6_(v6) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_)};
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray6& other);
+  v.. operator=(co.. ValueArray6& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -208,24 +208,24 @@ n.. ValueArray7 {
       v2_(v2), v3_(v3), v4_(v4), v5_(v5), v6_(v6), v7_(v7) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_)};
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray7& other);
+  v.. operator=(co.. ValueArray7& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -237,25 +237,25 @@ n.. ValueArray8 {
       v8_(v8) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_)};
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray8& other);
+  v.. operator=(co.. ValueArray8& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -267,27 +267,27 @@ n.. ValueArray9 {
       v8_(v8), v9_(v9) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_)};
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray9& other);
+  v.. operator=(co.. ValueArray9& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -299,28 +299,28 @@ n.. ValueArray10 {
       v8_(v8), v9_(v9), v10_(v10) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_)};
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray10& other);
+  v.. operator=(co.. ValueArray10& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -333,29 +333,29 @@ n.. ValueArray11 {
       v7_(v7), v8_(v8), v9_(v9), v10_(v10), v11_(v11) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_)};
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray11& other);
+  v.. operator=(co.. ValueArray11& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -368,8 +368,8 @@ n.. ValueArray12 {
       v6_(v6), v7_(v7), v8_(v8), v9_(v9), v10_(v10), v11_(v11), v12_(v12) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -377,22 +377,22 @@ n.. ValueArray12 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray12& other);
+  v.. operator=(co.. ValueArray12& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -406,8 +406,8 @@ n.. ValueArray13 {
       v12_(v12), v13_(v13) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -415,23 +415,23 @@ n.. ValueArray13 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray13& other);
+  v.. operator=(co.. ValueArray13& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -445,8 +445,8 @@ n.. ValueArray14 {
       v11_(v11), v12_(v12), v13_(v13), v14_(v14) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -454,24 +454,24 @@ n.. ValueArray14 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray14& other);
+  v.. operator=(co.. ValueArray14& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
-  const T14 v14_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
+  co.. T14 v14_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -485,8 +485,8 @@ n.. ValueArray15 {
       v11_(v11), v12_(v12), v13_(v13), v14_(v14), v15_(v15) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -495,25 +495,25 @@ n.. ValueArray15 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray15& other);
+  v.. operator=(co.. ValueArray15& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
-  const T14 v14_;
-  const T15 v15_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
+  co.. T14 v14_;
+  co.. T15 v15_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -529,8 +529,8 @@ n.. ValueArray16 {
       v16_(v16) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -539,26 +539,26 @@ n.. ValueArray16 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray16& other);
+  v.. operator=(co.. ValueArray16& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
-  const T14 v14_;
-  const T15 v15_;
-  const T16 v16_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
+  co.. T14 v14_;
+  co.. T15 v15_;
+  co.. T16 v16_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -574,8 +574,8 @@ n.. ValueArray17 {
       v15_(v15), v16_(v16), v17_(v17) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -584,27 +584,27 @@ n.. ValueArray17 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray17& other);
+  v.. operator=(co.. ValueArray17& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
-  const T14 v14_;
-  const T15 v15_;
-  const T16 v16_;
-  const T17 v17_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
+  co.. T14 v14_;
+  co.. T15 v15_;
+  co.. T16 v16_;
+  co.. T17 v17_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -620,8 +620,8 @@ n.. ValueArray18 {
       v15_(v15), v16_(v16), v17_(v17), v18_(v18) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -631,28 +631,28 @@ n.. ValueArray18 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray18& other);
+  v.. operator=(co.. ValueArray18& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
-  const T14 v14_;
-  const T15 v15_;
-  const T16 v16_;
-  const T17 v17_;
-  const T18 v18_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
+  co.. T14 v14_;
+  co.. T15 v15_;
+  co.. T16 v16_;
+  co.. T17 v17_;
+  co.. T18 v18_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -668,8 +668,8 @@ n.. ValueArray19 {
       v14_(v14), v15_(v15), v16_(v16), v17_(v17), v18_(v18), v19_(v19) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -679,29 +679,29 @@ n.. ValueArray19 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray19& other);
+  v.. operator=(co.. ValueArray19& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
-  const T14 v14_;
-  const T15 v15_;
-  const T16 v16_;
-  const T17 v17_;
-  const T18 v18_;
-  const T19 v19_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
+  co.. T14 v14_;
+  co.. T15 v15_;
+  co.. T16 v16_;
+  co.. T17 v17_;
+  co.. T18 v18_;
+  co.. T19 v19_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -718,8 +718,8 @@ n.. ValueArray20 {
       v19_(v19), v20_(v20) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -729,30 +729,30 @@ n.. ValueArray20 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray20& other);
+  v.. operator=(co.. ValueArray20& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
-  const T14 v14_;
-  const T15 v15_;
-  const T16 v16_;
-  const T17 v17_;
-  const T18 v18_;
-  const T19 v19_;
-  const T20 v20_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
+  co.. T14 v14_;
+  co.. T15 v15_;
+  co.. T16 v16_;
+  co.. T17 v17_;
+  co.. T18 v18_;
+  co.. T19 v19_;
+  co.. T20 v20_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -770,8 +770,8 @@ n.. ValueArray21 {
       v18_(v18), v19_(v19), v20_(v20), v21_(v21) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -782,31 +782,31 @@ n.. ValueArray21 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray21& other);
+  v.. operator=(co.. ValueArray21& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
-  const T14 v14_;
-  const T15 v15_;
-  const T16 v16_;
-  const T17 v17_;
-  const T18 v18_;
-  const T19 v19_;
-  const T20 v20_;
-  const T21 v21_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
+  co.. T14 v14_;
+  co.. T15 v15_;
+  co.. T16 v16_;
+  co.. T17 v17_;
+  co.. T18 v18_;
+  co.. T19 v19_;
+  co.. T20 v20_;
+  co.. T21 v21_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -824,8 +824,8 @@ n.. ValueArray22 {
       v17_(v17), v18_(v18), v19_(v19), v20_(v20), v21_(v21), v22_(v22) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -836,32 +836,32 @@ n.. ValueArray22 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray22& other);
+  v.. operator=(co.. ValueArray22& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
-  const T14 v14_;
-  const T15 v15_;
-  const T16 v16_;
-  const T17 v17_;
-  const T18 v18_;
-  const T19 v19_;
-  const T20 v20_;
-  const T21 v21_;
-  const T22 v22_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
+  co.. T14 v14_;
+  co.. T15 v15_;
+  co.. T16 v16_;
+  co.. T17 v17_;
+  co.. T18 v18_;
+  co.. T19 v19_;
+  co.. T20 v20_;
+  co.. T21 v21_;
+  co.. T22 v22_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -880,8 +880,8 @@ n.. ValueArray23 {
       v23_(v23) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -892,33 +892,33 @@ n.. ValueArray23 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray23& other);
+  v.. operator=(co.. ValueArray23& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
-  const T14 v14_;
-  const T15 v15_;
-  const T16 v16_;
-  const T17 v17_;
-  const T18 v18_;
-  const T19 v19_;
-  const T20 v20_;
-  const T21 v21_;
-  const T22 v22_;
-  const T23 v23_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
+  co.. T14 v14_;
+  co.. T15 v15_;
+  co.. T16 v16_;
+  co.. T17 v17_;
+  co.. T18 v18_;
+  co.. T19 v19_;
+  co.. T20 v20_;
+  co.. T21 v21_;
+  co.. T22 v22_;
+  co.. T23 v23_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -937,8 +937,8 @@ n.. ValueArray24 {
       v22_(v22), v23_(v23), v24_(v24) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -950,34 +950,34 @@ n.. ValueArray24 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray24& other);
+  v.. operator=(co.. ValueArray24& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
-  const T14 v14_;
-  const T15 v15_;
-  const T16 v16_;
-  const T17 v17_;
-  const T18 v18_;
-  const T19 v19_;
-  const T20 v20_;
-  const T21 v21_;
-  const T22 v22_;
-  const T23 v23_;
-  const T24 v24_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
+  co.. T14 v14_;
+  co.. T15 v15_;
+  co.. T16 v16_;
+  co.. T17 v17_;
+  co.. T18 v18_;
+  co.. T19 v19_;
+  co.. T20 v20_;
+  co.. T21 v21_;
+  co.. T22 v22_;
+  co.. T23 v23_;
+  co.. T24 v24_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -996,8 +996,8 @@ n.. ValueArray25 {
       v21_(v21), v22_(v22), v23_(v23), v24_(v24), v25_(v25) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -1009,35 +1009,35 @@ n.. ValueArray25 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray25& other);
+  v.. operator=(co.. ValueArray25& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
-  const T14 v14_;
-  const T15 v15_;
-  const T16 v16_;
-  const T17 v17_;
-  const T18 v18_;
-  const T19 v19_;
-  const T20 v20_;
-  const T21 v21_;
-  const T22 v22_;
-  const T23 v23_;
-  const T24 v24_;
-  const T25 v25_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
+  co.. T14 v14_;
+  co.. T15 v15_;
+  co.. T16 v16_;
+  co.. T17 v17_;
+  co.. T18 v18_;
+  co.. T19 v19_;
+  co.. T20 v20_;
+  co.. T21 v21_;
+  co.. T22 v22_;
+  co.. T23 v23_;
+  co.. T24 v24_;
+  co.. T25 v25_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -1057,8 +1057,8 @@ n.. ValueArray26 {
       v21_(v21), v22_(v22), v23_(v23), v24_(v24), v25_(v25), v26_(v26) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -1070,36 +1070,36 @@ n.. ValueArray26 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray26& other);
+  v.. operator=(co.. ValueArray26& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
-  const T14 v14_;
-  const T15 v15_;
-  const T16 v16_;
-  const T17 v17_;
-  const T18 v18_;
-  const T19 v19_;
-  const T20 v20_;
-  const T21 v21_;
-  const T22 v22_;
-  const T23 v23_;
-  const T24 v24_;
-  const T25 v25_;
-  const T26 v26_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
+  co.. T14 v14_;
+  co.. T15 v15_;
+  co.. T16 v16_;
+  co.. T17 v17_;
+  co.. T18 v18_;
+  co.. T19 v19_;
+  co.. T20 v20_;
+  co.. T21 v21_;
+  co.. T22 v22_;
+  co.. T23 v23_;
+  co.. T24 v24_;
+  co.. T25 v25_;
+  co.. T26 v26_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -1120,8 +1120,8 @@ n.. ValueArray27 {
       v26_(v26), v27_(v27) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -1134,37 +1134,37 @@ n.. ValueArray27 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray27& other);
+  v.. operator=(co.. ValueArray27& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
-  const T14 v14_;
-  const T15 v15_;
-  const T16 v16_;
-  const T17 v17_;
-  const T18 v18_;
-  const T19 v19_;
-  const T20 v20_;
-  const T21 v21_;
-  const T22 v22_;
-  const T23 v23_;
-  const T24 v24_;
-  const T25 v25_;
-  const T26 v26_;
-  const T27 v27_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
+  co.. T14 v14_;
+  co.. T15 v15_;
+  co.. T16 v16_;
+  co.. T17 v17_;
+  co.. T18 v18_;
+  co.. T19 v19_;
+  co.. T20 v20_;
+  co.. T21 v21_;
+  co.. T22 v22_;
+  co.. T23 v23_;
+  co.. T24 v24_;
+  co.. T25 v25_;
+  co.. T26 v26_;
+  co.. T27 v27_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -1185,8 +1185,8 @@ n.. ValueArray28 {
       v25_(v25), v26_(v26), v27_(v27), v28_(v28) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -1199,38 +1199,38 @@ n.. ValueArray28 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray28& other);
+  v.. operator=(co.. ValueArray28& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
-  const T14 v14_;
-  const T15 v15_;
-  const T16 v16_;
-  const T17 v17_;
-  const T18 v18_;
-  const T19 v19_;
-  const T20 v20_;
-  const T21 v21_;
-  const T22 v22_;
-  const T23 v23_;
-  const T24 v24_;
-  const T25 v25_;
-  const T26 v26_;
-  const T27 v27_;
-  const T28 v28_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
+  co.. T14 v14_;
+  co.. T15 v15_;
+  co.. T16 v16_;
+  co.. T17 v17_;
+  co.. T18 v18_;
+  co.. T19 v19_;
+  co.. T20 v20_;
+  co.. T21 v21_;
+  co.. T22 v22_;
+  co.. T23 v23_;
+  co.. T24 v24_;
+  co.. T25 v25_;
+  co.. T26 v26_;
+  co.. T27 v27_;
+  co.. T28 v28_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -1251,8 +1251,8 @@ n.. ValueArray29 {
       v24_(v24), v25_(v25), v26_(v26), v27_(v27), v28_(v28), v29_(v29) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -1265,39 +1265,39 @@ n.. ValueArray29 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray29& other);
+  v.. operator=(co.. ValueArray29& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
-  const T14 v14_;
-  const T15 v15_;
-  const T16 v16_;
-  const T17 v17_;
-  const T18 v18_;
-  const T19 v19_;
-  const T20 v20_;
-  const T21 v21_;
-  const T22 v22_;
-  const T23 v23_;
-  const T24 v24_;
-  const T25 v25_;
-  const T26 v26_;
-  const T27 v27_;
-  const T28 v28_;
-  const T29 v29_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
+  co.. T14 v14_;
+  co.. T15 v15_;
+  co.. T16 v16_;
+  co.. T17 v17_;
+  co.. T18 v18_;
+  co.. T19 v19_;
+  co.. T20 v20_;
+  co.. T21 v21_;
+  co.. T22 v22_;
+  co.. T23 v23_;
+  co.. T24 v24_;
+  co.. T25 v25_;
+  co.. T26 v26_;
+  co.. T27 v27_;
+  co.. T28 v28_;
+  co.. T29 v29_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -1319,8 +1319,8 @@ n.. ValueArray30 {
       v29_(v29), v30_(v30) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -1334,40 +1334,40 @@ n.. ValueArray30 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray30& other);
+  v.. operator=(co.. ValueArray30& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
-  const T14 v14_;
-  const T15 v15_;
-  const T16 v16_;
-  const T17 v17_;
-  const T18 v18_;
-  const T19 v19_;
-  const T20 v20_;
-  const T21 v21_;
-  const T22 v22_;
-  const T23 v23_;
-  const T24 v24_;
-  const T25 v25_;
-  const T26 v26_;
-  const T27 v27_;
-  const T28 v28_;
-  const T29 v29_;
-  const T30 v30_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
+  co.. T14 v14_;
+  co.. T15 v15_;
+  co.. T16 v16_;
+  co.. T17 v17_;
+  co.. T18 v18_;
+  co.. T19 v19_;
+  co.. T20 v20_;
+  co.. T21 v21_;
+  co.. T22 v22_;
+  co.. T23 v23_;
+  co.. T24 v24_;
+  co.. T25 v25_;
+  co.. T26 v26_;
+  co.. T27 v27_;
+  co.. T28 v28_;
+  co.. T29 v29_;
+  co.. T30 v30_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -1390,8 +1390,8 @@ n.. ValueArray31 {
       v29_(v29), v30_(v30), v31_(v31) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -1405,41 +1405,41 @@ n.. ValueArray31 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray31& other);
+  v.. operator=(co.. ValueArray31& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
-  const T14 v14_;
-  const T15 v15_;
-  const T16 v16_;
-  const T17 v17_;
-  const T18 v18_;
-  const T19 v19_;
-  const T20 v20_;
-  const T21 v21_;
-  const T22 v22_;
-  const T23 v23_;
-  const T24 v24_;
-  const T25 v25_;
-  const T26 v26_;
-  const T27 v27_;
-  const T28 v28_;
-  const T29 v29_;
-  const T30 v30_;
-  const T31 v31_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
+  co.. T14 v14_;
+  co.. T15 v15_;
+  co.. T16 v16_;
+  co.. T17 v17_;
+  co.. T18 v18_;
+  co.. T19 v19_;
+  co.. T20 v20_;
+  co.. T21 v21_;
+  co.. T22 v22_;
+  co.. T23 v23_;
+  co.. T24 v24_;
+  co.. T25 v25_;
+  co.. T26 v26_;
+  co.. T27 v27_;
+  co.. T28 v28_;
+  co.. T29 v29_;
+  co.. T30 v30_;
+  co.. T31 v31_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -1462,8 +1462,8 @@ n.. ValueArray32 {
       v28_(v28), v29_(v29), v30_(v30), v31_(v31), v32_(v32) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -1477,42 +1477,42 @@ n.. ValueArray32 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray32& other);
+  v.. operator=(co.. ValueArray32& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
-  const T14 v14_;
-  const T15 v15_;
-  const T16 v16_;
-  const T17 v17_;
-  const T18 v18_;
-  const T19 v19_;
-  const T20 v20_;
-  const T21 v21_;
-  const T22 v22_;
-  const T23 v23_;
-  const T24 v24_;
-  const T25 v25_;
-  const T26 v26_;
-  const T27 v27_;
-  const T28 v28_;
-  const T29 v29_;
-  const T30 v30_;
-  const T31 v31_;
-  const T32 v32_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
+  co.. T14 v14_;
+  co.. T15 v15_;
+  co.. T16 v16_;
+  co.. T17 v17_;
+  co.. T18 v18_;
+  co.. T19 v19_;
+  co.. T20 v20_;
+  co.. T21 v21_;
+  co.. T22 v22_;
+  co.. T23 v23_;
+  co.. T24 v24_;
+  co.. T25 v25_;
+  co.. T26 v26_;
+  co.. T27 v27_;
+  co.. T28 v28_;
+  co.. T29 v29_;
+  co.. T30 v30_;
+  co.. T31 v31_;
+  co.. T32 v32_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -1536,8 +1536,8 @@ n.. ValueArray33 {
       v33_(v33) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -1552,43 +1552,43 @@ n.. ValueArray33 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray33& other);
+  v.. operator=(co.. ValueArray33& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
-  const T14 v14_;
-  const T15 v15_;
-  const T16 v16_;
-  const T17 v17_;
-  const T18 v18_;
-  const T19 v19_;
-  const T20 v20_;
-  const T21 v21_;
-  const T22 v22_;
-  const T23 v23_;
-  const T24 v24_;
-  const T25 v25_;
-  const T26 v26_;
-  const T27 v27_;
-  const T28 v28_;
-  const T29 v29_;
-  const T30 v30_;
-  const T31 v31_;
-  const T32 v32_;
-  const T33 v33_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
+  co.. T14 v14_;
+  co.. T15 v15_;
+  co.. T16 v16_;
+  co.. T17 v17_;
+  co.. T18 v18_;
+  co.. T19 v19_;
+  co.. T20 v20_;
+  co.. T21 v21_;
+  co.. T22 v22_;
+  co.. T23 v23_;
+  co.. T24 v24_;
+  co.. T25 v25_;
+  co.. T26 v26_;
+  co.. T27 v27_;
+  co.. T28 v28_;
+  co.. T29 v29_;
+  co.. T30 v30_;
+  co.. T31 v31_;
+  co.. T32 v32_;
+  co.. T33 v33_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -1612,8 +1612,8 @@ n.. ValueArray34 {
       v33_(v33), v34_(v34) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -1628,44 +1628,44 @@ n.. ValueArray34 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray34& other);
+  v.. operator=(co.. ValueArray34& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
-  const T14 v14_;
-  const T15 v15_;
-  const T16 v16_;
-  const T17 v17_;
-  const T18 v18_;
-  const T19 v19_;
-  const T20 v20_;
-  const T21 v21_;
-  const T22 v22_;
-  const T23 v23_;
-  const T24 v24_;
-  const T25 v25_;
-  const T26 v26_;
-  const T27 v27_;
-  const T28 v28_;
-  const T29 v29_;
-  const T30 v30_;
-  const T31 v31_;
-  const T32 v32_;
-  const T33 v33_;
-  const T34 v34_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
+  co.. T14 v14_;
+  co.. T15 v15_;
+  co.. T16 v16_;
+  co.. T17 v17_;
+  co.. T18 v18_;
+  co.. T19 v19_;
+  co.. T20 v20_;
+  co.. T21 v21_;
+  co.. T22 v22_;
+  co.. T23 v23_;
+  co.. T24 v24_;
+  co.. T25 v25_;
+  co.. T26 v26_;
+  co.. T27 v27_;
+  co.. T28 v28_;
+  co.. T29 v29_;
+  co.. T30 v30_;
+  co.. T31 v31_;
+  co.. T32 v32_;
+  co.. T33 v33_;
+  co.. T34 v34_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -1689,8 +1689,8 @@ n.. ValueArray35 {
       v32_(v32), v33_(v33), v34_(v34), v35_(v35) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -1705,45 +1705,45 @@ n.. ValueArray35 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray35& other);
+  v.. operator=(co.. ValueArray35& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
-  const T14 v14_;
-  const T15 v15_;
-  const T16 v16_;
-  const T17 v17_;
-  const T18 v18_;
-  const T19 v19_;
-  const T20 v20_;
-  const T21 v21_;
-  const T22 v22_;
-  const T23 v23_;
-  const T24 v24_;
-  const T25 v25_;
-  const T26 v26_;
-  const T27 v27_;
-  const T28 v28_;
-  const T29 v29_;
-  const T30 v30_;
-  const T31 v31_;
-  const T32 v32_;
-  const T33 v33_;
-  const T34 v34_;
-  const T35 v35_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
+  co.. T14 v14_;
+  co.. T15 v15_;
+  co.. T16 v16_;
+  co.. T17 v17_;
+  co.. T18 v18_;
+  co.. T19 v19_;
+  co.. T20 v20_;
+  co.. T21 v21_;
+  co.. T22 v22_;
+  co.. T23 v23_;
+  co.. T24 v24_;
+  co.. T25 v25_;
+  co.. T26 v26_;
+  co.. T27 v27_;
+  co.. T28 v28_;
+  co.. T29 v29_;
+  co.. T30 v30_;
+  co.. T31 v31_;
+  co.. T32 v32_;
+  co.. T33 v33_;
+  co.. T34 v34_;
+  co.. T35 v35_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -1768,8 +1768,8 @@ n.. ValueArray36 {
       v31_(v31), v32_(v32), v33_(v33), v34_(v34), v35_(v35), v36_(v36) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -1785,46 +1785,46 @@ n.. ValueArray36 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray36& other);
+  v.. operator=(co.. ValueArray36& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
-  const T14 v14_;
-  const T15 v15_;
-  const T16 v16_;
-  const T17 v17_;
-  const T18 v18_;
-  const T19 v19_;
-  const T20 v20_;
-  const T21 v21_;
-  const T22 v22_;
-  const T23 v23_;
-  const T24 v24_;
-  const T25 v25_;
-  const T26 v26_;
-  const T27 v27_;
-  const T28 v28_;
-  const T29 v29_;
-  const T30 v30_;
-  const T31 v31_;
-  const T32 v32_;
-  const T33 v33_;
-  const T34 v34_;
-  const T35 v35_;
-  const T36 v36_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
+  co.. T14 v14_;
+  co.. T15 v15_;
+  co.. T16 v16_;
+  co.. T17 v17_;
+  co.. T18 v18_;
+  co.. T19 v19_;
+  co.. T20 v20_;
+  co.. T21 v21_;
+  co.. T22 v22_;
+  co.. T23 v23_;
+  co.. T24 v24_;
+  co.. T25 v25_;
+  co.. T26 v26_;
+  co.. T27 v27_;
+  co.. T28 v28_;
+  co.. T29 v29_;
+  co.. T30 v30_;
+  co.. T31 v31_;
+  co.. T32 v32_;
+  co.. T33 v33_;
+  co.. T34 v34_;
+  co.. T35 v35_;
+  co.. T36 v36_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -1850,8 +1850,8 @@ n.. ValueArray37 {
       v36_(v36), v37_(v37) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -1867,47 +1867,47 @@ n.. ValueArray37 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray37& other);
+  v.. operator=(co.. ValueArray37& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
-  const T14 v14_;
-  const T15 v15_;
-  const T16 v16_;
-  const T17 v17_;
-  const T18 v18_;
-  const T19 v19_;
-  const T20 v20_;
-  const T21 v21_;
-  const T22 v22_;
-  const T23 v23_;
-  const T24 v24_;
-  const T25 v25_;
-  const T26 v26_;
-  const T27 v27_;
-  const T28 v28_;
-  const T29 v29_;
-  const T30 v30_;
-  const T31 v31_;
-  const T32 v32_;
-  const T33 v33_;
-  const T34 v34_;
-  const T35 v35_;
-  const T36 v36_;
-  const T37 v37_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
+  co.. T14 v14_;
+  co.. T15 v15_;
+  co.. T16 v16_;
+  co.. T17 v17_;
+  co.. T18 v18_;
+  co.. T19 v19_;
+  co.. T20 v20_;
+  co.. T21 v21_;
+  co.. T22 v22_;
+  co.. T23 v23_;
+  co.. T24 v24_;
+  co.. T25 v25_;
+  co.. T26 v26_;
+  co.. T27 v27_;
+  co.. T28 v28_;
+  co.. T29 v29_;
+  co.. T30 v30_;
+  co.. T31 v31_;
+  co.. T32 v32_;
+  co.. T33 v33_;
+  co.. T34 v34_;
+  co.. T35 v35_;
+  co.. T36 v36_;
+  co.. T37 v37_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -1933,8 +1933,8 @@ n.. ValueArray38 {
       v35_(v35), v36_(v36), v37_(v37), v38_(v38) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -1950,48 +1950,48 @@ n.. ValueArray38 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray38& other);
+  v.. operator=(co.. ValueArray38& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
-  const T14 v14_;
-  const T15 v15_;
-  const T16 v16_;
-  const T17 v17_;
-  const T18 v18_;
-  const T19 v19_;
-  const T20 v20_;
-  const T21 v21_;
-  const T22 v22_;
-  const T23 v23_;
-  const T24 v24_;
-  const T25 v25_;
-  const T26 v26_;
-  const T27 v27_;
-  const T28 v28_;
-  const T29 v29_;
-  const T30 v30_;
-  const T31 v31_;
-  const T32 v32_;
-  const T33 v33_;
-  const T34 v34_;
-  const T35 v35_;
-  const T36 v36_;
-  const T37 v37_;
-  const T38 v38_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
+  co.. T14 v14_;
+  co.. T15 v15_;
+  co.. T16 v16_;
+  co.. T17 v17_;
+  co.. T18 v18_;
+  co.. T19 v19_;
+  co.. T20 v20_;
+  co.. T21 v21_;
+  co.. T22 v22_;
+  co.. T23 v23_;
+  co.. T24 v24_;
+  co.. T25 v25_;
+  co.. T26 v26_;
+  co.. T27 v27_;
+  co.. T28 v28_;
+  co.. T29 v29_;
+  co.. T30 v30_;
+  co.. T31 v31_;
+  co.. T32 v32_;
+  co.. T33 v33_;
+  co.. T34 v34_;
+  co.. T35 v35_;
+  co.. T36 v36_;
+  co.. T37 v37_;
+  co.. T38 v38_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -2017,8 +2017,8 @@ n.. ValueArray39 {
       v35_(v35), v36_(v36), v37_(v37), v38_(v38), v39_(v39) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -2035,49 +2035,49 @@ n.. ValueArray39 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray39& other);
+  v.. operator=(co.. ValueArray39& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
-  const T14 v14_;
-  const T15 v15_;
-  const T16 v16_;
-  const T17 v17_;
-  const T18 v18_;
-  const T19 v19_;
-  const T20 v20_;
-  const T21 v21_;
-  const T22 v22_;
-  const T23 v23_;
-  const T24 v24_;
-  const T25 v25_;
-  const T26 v26_;
-  const T27 v27_;
-  const T28 v28_;
-  const T29 v29_;
-  const T30 v30_;
-  const T31 v31_;
-  const T32 v32_;
-  const T33 v33_;
-  const T34 v34_;
-  const T35 v35_;
-  const T36 v36_;
-  const T37 v37_;
-  const T38 v38_;
-  const T39 v39_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
+  co.. T14 v14_;
+  co.. T15 v15_;
+  co.. T16 v16_;
+  co.. T17 v17_;
+  co.. T18 v18_;
+  co.. T19 v19_;
+  co.. T20 v20_;
+  co.. T21 v21_;
+  co.. T22 v22_;
+  co.. T23 v23_;
+  co.. T24 v24_;
+  co.. T25 v25_;
+  co.. T26 v26_;
+  co.. T27 v27_;
+  co.. T28 v28_;
+  co.. T29 v29_;
+  co.. T30 v30_;
+  co.. T31 v31_;
+  co.. T32 v32_;
+  co.. T33 v33_;
+  co.. T34 v34_;
+  co.. T35 v35_;
+  co.. T36 v36_;
+  co.. T37 v37_;
+  co.. T38 v38_;
+  co.. T39 v39_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -2104,8 +2104,8 @@ n.. ValueArray40 {
       v40_(v40) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -2122,50 +2122,50 @@ n.. ValueArray40 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray40& other);
+  v.. operator=(co.. ValueArray40& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
-  const T14 v14_;
-  const T15 v15_;
-  const T16 v16_;
-  const T17 v17_;
-  const T18 v18_;
-  const T19 v19_;
-  const T20 v20_;
-  const T21 v21_;
-  const T22 v22_;
-  const T23 v23_;
-  const T24 v24_;
-  const T25 v25_;
-  const T26 v26_;
-  const T27 v27_;
-  const T28 v28_;
-  const T29 v29_;
-  const T30 v30_;
-  const T31 v31_;
-  const T32 v32_;
-  const T33 v33_;
-  const T34 v34_;
-  const T35 v35_;
-  const T36 v36_;
-  const T37 v37_;
-  const T38 v38_;
-  const T39 v39_;
-  const T40 v40_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
+  co.. T14 v14_;
+  co.. T15 v15_;
+  co.. T16 v16_;
+  co.. T17 v17_;
+  co.. T18 v18_;
+  co.. T19 v19_;
+  co.. T20 v20_;
+  co.. T21 v21_;
+  co.. T22 v22_;
+  co.. T23 v23_;
+  co.. T24 v24_;
+  co.. T25 v25_;
+  co.. T26 v26_;
+  co.. T27 v27_;
+  co.. T28 v28_;
+  co.. T29 v29_;
+  co.. T30 v30_;
+  co.. T31 v31_;
+  co.. T32 v32_;
+  co.. T33 v33_;
+  co.. T34 v34_;
+  co.. T35 v35_;
+  co.. T36 v36_;
+  co.. T37 v37_;
+  co.. T38 v38_;
+  co.. T39 v39_;
+  co.. T40 v40_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -2193,8 +2193,8 @@ n.. ValueArray41 {
       v39_(v39), v40_(v40), v41_(v41) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -2211,51 +2211,51 @@ n.. ValueArray41 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray41& other);
+  v.. operator=(co.. ValueArray41& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
-  const T14 v14_;
-  const T15 v15_;
-  const T16 v16_;
-  const T17 v17_;
-  const T18 v18_;
-  const T19 v19_;
-  const T20 v20_;
-  const T21 v21_;
-  const T22 v22_;
-  const T23 v23_;
-  const T24 v24_;
-  const T25 v25_;
-  const T26 v26_;
-  const T27 v27_;
-  const T28 v28_;
-  const T29 v29_;
-  const T30 v30_;
-  const T31 v31_;
-  const T32 v32_;
-  const T33 v33_;
-  const T34 v34_;
-  const T35 v35_;
-  const T36 v36_;
-  const T37 v37_;
-  const T38 v38_;
-  const T39 v39_;
-  const T40 v40_;
-  const T41 v41_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
+  co.. T14 v14_;
+  co.. T15 v15_;
+  co.. T16 v16_;
+  co.. T17 v17_;
+  co.. T18 v18_;
+  co.. T19 v19_;
+  co.. T20 v20_;
+  co.. T21 v21_;
+  co.. T22 v22_;
+  co.. T23 v23_;
+  co.. T24 v24_;
+  co.. T25 v25_;
+  co.. T26 v26_;
+  co.. T27 v27_;
+  co.. T28 v28_;
+  co.. T29 v29_;
+  co.. T30 v30_;
+  co.. T31 v31_;
+  co.. T32 v32_;
+  co.. T33 v33_;
+  co.. T34 v34_;
+  co.. T35 v35_;
+  co.. T36 v36_;
+  co.. T37 v37_;
+  co.. T38 v38_;
+  co.. T39 v39_;
+  co.. T40 v40_;
+  co.. T41 v41_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -2283,8 +2283,8 @@ n.. ValueArray42 {
       v39_(v39), v40_(v40), v41_(v41), v42_(v42) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -2302,52 +2302,52 @@ n.. ValueArray42 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray42& other);
+  v.. operator=(co.. ValueArray42& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
-  const T14 v14_;
-  const T15 v15_;
-  const T16 v16_;
-  const T17 v17_;
-  const T18 v18_;
-  const T19 v19_;
-  const T20 v20_;
-  const T21 v21_;
-  const T22 v22_;
-  const T23 v23_;
-  const T24 v24_;
-  const T25 v25_;
-  const T26 v26_;
-  const T27 v27_;
-  const T28 v28_;
-  const T29 v29_;
-  const T30 v30_;
-  const T31 v31_;
-  const T32 v32_;
-  const T33 v33_;
-  const T34 v34_;
-  const T35 v35_;
-  const T36 v36_;
-  const T37 v37_;
-  const T38 v38_;
-  const T39 v39_;
-  const T40 v40_;
-  const T41 v41_;
-  const T42 v42_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
+  co.. T14 v14_;
+  co.. T15 v15_;
+  co.. T16 v16_;
+  co.. T17 v17_;
+  co.. T18 v18_;
+  co.. T19 v19_;
+  co.. T20 v20_;
+  co.. T21 v21_;
+  co.. T22 v22_;
+  co.. T23 v23_;
+  co.. T24 v24_;
+  co.. T25 v25_;
+  co.. T26 v26_;
+  co.. T27 v27_;
+  co.. T28 v28_;
+  co.. T29 v29_;
+  co.. T30 v30_;
+  co.. T31 v31_;
+  co.. T32 v32_;
+  co.. T33 v33_;
+  co.. T34 v34_;
+  co.. T35 v35_;
+  co.. T36 v36_;
+  co.. T37 v37_;
+  co.. T38 v38_;
+  co.. T39 v39_;
+  co.. T40 v40_;
+  co.. T41 v41_;
+  co.. T42 v42_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -2375,8 +2375,8 @@ n.. ValueArray43 {
       v38_(v38), v39_(v39), v40_(v40), v41_(v41), v42_(v42), v43_(v43) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -2394,53 +2394,53 @@ n.. ValueArray43 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray43& other);
+  v.. operator=(co.. ValueArray43& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
-  const T14 v14_;
-  const T15 v15_;
-  const T16 v16_;
-  const T17 v17_;
-  const T18 v18_;
-  const T19 v19_;
-  const T20 v20_;
-  const T21 v21_;
-  const T22 v22_;
-  const T23 v23_;
-  const T24 v24_;
-  const T25 v25_;
-  const T26 v26_;
-  const T27 v27_;
-  const T28 v28_;
-  const T29 v29_;
-  const T30 v30_;
-  const T31 v31_;
-  const T32 v32_;
-  const T33 v33_;
-  const T34 v34_;
-  const T35 v35_;
-  const T36 v36_;
-  const T37 v37_;
-  const T38 v38_;
-  const T39 v39_;
-  const T40 v40_;
-  const T41 v41_;
-  const T42 v42_;
-  const T43 v43_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
+  co.. T14 v14_;
+  co.. T15 v15_;
+  co.. T16 v16_;
+  co.. T17 v17_;
+  co.. T18 v18_;
+  co.. T19 v19_;
+  co.. T20 v20_;
+  co.. T21 v21_;
+  co.. T22 v22_;
+  co.. T23 v23_;
+  co.. T24 v24_;
+  co.. T25 v25_;
+  co.. T26 v26_;
+  co.. T27 v27_;
+  co.. T28 v28_;
+  co.. T29 v29_;
+  co.. T30 v30_;
+  co.. T31 v31_;
+  co.. T32 v32_;
+  co.. T33 v33_;
+  co.. T34 v34_;
+  co.. T35 v35_;
+  co.. T36 v36_;
+  co.. T37 v37_;
+  co.. T38 v38_;
+  co.. T39 v39_;
+  co.. T40 v40_;
+  co.. T41 v41_;
+  co.. T42 v42_;
+  co.. T43 v43_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -2469,8 +2469,8 @@ n.. ValueArray44 {
       v43_(v43), v44_(v44) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -2488,54 +2488,54 @@ n.. ValueArray44 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray44& other);
+  v.. operator=(co.. ValueArray44& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
-  const T14 v14_;
-  const T15 v15_;
-  const T16 v16_;
-  const T17 v17_;
-  const T18 v18_;
-  const T19 v19_;
-  const T20 v20_;
-  const T21 v21_;
-  const T22 v22_;
-  const T23 v23_;
-  const T24 v24_;
-  const T25 v25_;
-  const T26 v26_;
-  const T27 v27_;
-  const T28 v28_;
-  const T29 v29_;
-  const T30 v30_;
-  const T31 v31_;
-  const T32 v32_;
-  const T33 v33_;
-  const T34 v34_;
-  const T35 v35_;
-  const T36 v36_;
-  const T37 v37_;
-  const T38 v38_;
-  const T39 v39_;
-  const T40 v40_;
-  const T41 v41_;
-  const T42 v42_;
-  const T43 v43_;
-  const T44 v44_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
+  co.. T14 v14_;
+  co.. T15 v15_;
+  co.. T16 v16_;
+  co.. T17 v17_;
+  co.. T18 v18_;
+  co.. T19 v19_;
+  co.. T20 v20_;
+  co.. T21 v21_;
+  co.. T22 v22_;
+  co.. T23 v23_;
+  co.. T24 v24_;
+  co.. T25 v25_;
+  co.. T26 v26_;
+  co.. T27 v27_;
+  co.. T28 v28_;
+  co.. T29 v29_;
+  co.. T30 v30_;
+  co.. T31 v31_;
+  co.. T32 v32_;
+  co.. T33 v33_;
+  co.. T34 v34_;
+  co.. T35 v35_;
+  co.. T36 v36_;
+  co.. T37 v37_;
+  co.. T38 v38_;
+  co.. T39 v39_;
+  co.. T40 v40_;
+  co.. T41 v41_;
+  co.. T42 v42_;
+  co.. T43 v43_;
+  co.. T44 v44_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -2564,8 +2564,8 @@ n.. ValueArray45 {
       v42_(v42), v43_(v43), v44_(v44), v45_(v45) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -2584,55 +2584,55 @@ n.. ValueArray45 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray45& other);
+  v.. operator=(co.. ValueArray45& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
-  const T14 v14_;
-  const T15 v15_;
-  const T16 v16_;
-  const T17 v17_;
-  const T18 v18_;
-  const T19 v19_;
-  const T20 v20_;
-  const T21 v21_;
-  const T22 v22_;
-  const T23 v23_;
-  const T24 v24_;
-  const T25 v25_;
-  const T26 v26_;
-  const T27 v27_;
-  const T28 v28_;
-  const T29 v29_;
-  const T30 v30_;
-  const T31 v31_;
-  const T32 v32_;
-  const T33 v33_;
-  const T34 v34_;
-  const T35 v35_;
-  const T36 v36_;
-  const T37 v37_;
-  const T38 v38_;
-  const T39 v39_;
-  const T40 v40_;
-  const T41 v41_;
-  const T42 v42_;
-  const T43 v43_;
-  const T44 v44_;
-  const T45 v45_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
+  co.. T14 v14_;
+  co.. T15 v15_;
+  co.. T16 v16_;
+  co.. T17 v17_;
+  co.. T18 v18_;
+  co.. T19 v19_;
+  co.. T20 v20_;
+  co.. T21 v21_;
+  co.. T22 v22_;
+  co.. T23 v23_;
+  co.. T24 v24_;
+  co.. T25 v25_;
+  co.. T26 v26_;
+  co.. T27 v27_;
+  co.. T28 v28_;
+  co.. T29 v29_;
+  co.. T30 v30_;
+  co.. T31 v31_;
+  co.. T32 v32_;
+  co.. T33 v33_;
+  co.. T34 v34_;
+  co.. T35 v35_;
+  co.. T36 v36_;
+  co.. T37 v37_;
+  co.. T38 v38_;
+  co.. T39 v39_;
+  co.. T40 v40_;
+  co.. T41 v41_;
+  co.. T42 v42_;
+  co.. T43 v43_;
+  co.. T44 v44_;
+  co.. T45 v45_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -2662,8 +2662,8 @@ n.. ValueArray46 {
       v41_(v41), v42_(v42), v43_(v43), v44_(v44), v45_(v45), v46_(v46) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -2682,56 +2682,56 @@ n.. ValueArray46 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray46& other);
+  v.. operator=(co.. ValueArray46& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
-  const T14 v14_;
-  const T15 v15_;
-  const T16 v16_;
-  const T17 v17_;
-  const T18 v18_;
-  const T19 v19_;
-  const T20 v20_;
-  const T21 v21_;
-  const T22 v22_;
-  const T23 v23_;
-  const T24 v24_;
-  const T25 v25_;
-  const T26 v26_;
-  const T27 v27_;
-  const T28 v28_;
-  const T29 v29_;
-  const T30 v30_;
-  const T31 v31_;
-  const T32 v32_;
-  const T33 v33_;
-  const T34 v34_;
-  const T35 v35_;
-  const T36 v36_;
-  const T37 v37_;
-  const T38 v38_;
-  const T39 v39_;
-  const T40 v40_;
-  const T41 v41_;
-  const T42 v42_;
-  const T43 v43_;
-  const T44 v44_;
-  const T45 v45_;
-  const T46 v46_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
+  co.. T14 v14_;
+  co.. T15 v15_;
+  co.. T16 v16_;
+  co.. T17 v17_;
+  co.. T18 v18_;
+  co.. T19 v19_;
+  co.. T20 v20_;
+  co.. T21 v21_;
+  co.. T22 v22_;
+  co.. T23 v23_;
+  co.. T24 v24_;
+  co.. T25 v25_;
+  co.. T26 v26_;
+  co.. T27 v27_;
+  co.. T28 v28_;
+  co.. T29 v29_;
+  co.. T30 v30_;
+  co.. T31 v31_;
+  co.. T32 v32_;
+  co.. T33 v33_;
+  co.. T34 v34_;
+  co.. T35 v35_;
+  co.. T36 v36_;
+  co.. T37 v37_;
+  co.. T38 v38_;
+  co.. T39 v39_;
+  co.. T40 v40_;
+  co.. T41 v41_;
+  co.. T42 v42_;
+  co.. T43 v43_;
+  co.. T44 v44_;
+  co.. T45 v45_;
+  co.. T46 v46_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -2762,8 +2762,8 @@ n.. ValueArray47 {
       v47_(v47) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -2782,57 +2782,57 @@ n.. ValueArray47 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray47& other);
+  v.. operator=(co.. ValueArray47& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
-  const T14 v14_;
-  const T15 v15_;
-  const T16 v16_;
-  const T17 v17_;
-  const T18 v18_;
-  const T19 v19_;
-  const T20 v20_;
-  const T21 v21_;
-  const T22 v22_;
-  const T23 v23_;
-  const T24 v24_;
-  const T25 v25_;
-  const T26 v26_;
-  const T27 v27_;
-  const T28 v28_;
-  const T29 v29_;
-  const T30 v30_;
-  const T31 v31_;
-  const T32 v32_;
-  const T33 v33_;
-  const T34 v34_;
-  const T35 v35_;
-  const T36 v36_;
-  const T37 v37_;
-  const T38 v38_;
-  const T39 v39_;
-  const T40 v40_;
-  const T41 v41_;
-  const T42 v42_;
-  const T43 v43_;
-  const T44 v44_;
-  const T45 v45_;
-  const T46 v46_;
-  const T47 v47_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
+  co.. T14 v14_;
+  co.. T15 v15_;
+  co.. T16 v16_;
+  co.. T17 v17_;
+  co.. T18 v18_;
+  co.. T19 v19_;
+  co.. T20 v20_;
+  co.. T21 v21_;
+  co.. T22 v22_;
+  co.. T23 v23_;
+  co.. T24 v24_;
+  co.. T25 v25_;
+  co.. T26 v26_;
+  co.. T27 v27_;
+  co.. T28 v28_;
+  co.. T29 v29_;
+  co.. T30 v30_;
+  co.. T31 v31_;
+  co.. T32 v32_;
+  co.. T33 v33_;
+  co.. T34 v34_;
+  co.. T35 v35_;
+  co.. T36 v36_;
+  co.. T37 v37_;
+  co.. T38 v38_;
+  co.. T39 v39_;
+  co.. T40 v40_;
+  co.. T41 v41_;
+  co.. T42 v42_;
+  co.. T43 v43_;
+  co.. T44 v44_;
+  co.. T45 v45_;
+  co.. T46 v46_;
+  co.. T47 v47_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -2863,8 +2863,8 @@ n.. ValueArray48 {
       v46_(v46), v47_(v47), v48_(v48) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -2884,58 +2884,58 @@ n.. ValueArray48 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray48& other);
+  v.. operator=(co.. ValueArray48& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
-  const T14 v14_;
-  const T15 v15_;
-  const T16 v16_;
-  const T17 v17_;
-  const T18 v18_;
-  const T19 v19_;
-  const T20 v20_;
-  const T21 v21_;
-  const T22 v22_;
-  const T23 v23_;
-  const T24 v24_;
-  const T25 v25_;
-  const T26 v26_;
-  const T27 v27_;
-  const T28 v28_;
-  const T29 v29_;
-  const T30 v30_;
-  const T31 v31_;
-  const T32 v32_;
-  const T33 v33_;
-  const T34 v34_;
-  const T35 v35_;
-  const T36 v36_;
-  const T37 v37_;
-  const T38 v38_;
-  const T39 v39_;
-  const T40 v40_;
-  const T41 v41_;
-  const T42 v42_;
-  const T43 v43_;
-  const T44 v44_;
-  const T45 v45_;
-  const T46 v46_;
-  const T47 v47_;
-  const T48 v48_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
+  co.. T14 v14_;
+  co.. T15 v15_;
+  co.. T16 v16_;
+  co.. T17 v17_;
+  co.. T18 v18_;
+  co.. T19 v19_;
+  co.. T20 v20_;
+  co.. T21 v21_;
+  co.. T22 v22_;
+  co.. T23 v23_;
+  co.. T24 v24_;
+  co.. T25 v25_;
+  co.. T26 v26_;
+  co.. T27 v27_;
+  co.. T28 v28_;
+  co.. T29 v29_;
+  co.. T30 v30_;
+  co.. T31 v31_;
+  co.. T32 v32_;
+  co.. T33 v33_;
+  co.. T34 v34_;
+  co.. T35 v35_;
+  co.. T36 v36_;
+  co.. T37 v37_;
+  co.. T38 v38_;
+  co.. T39 v39_;
+  co.. T40 v40_;
+  co.. T41 v41_;
+  co.. T42 v42_;
+  co.. T43 v43_;
+  co.. T44 v44_;
+  co.. T45 v45_;
+  co.. T46 v46_;
+  co.. T47 v47_;
+  co.. T48 v48_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -2966,8 +2966,8 @@ n.. ValueArray49 {
       v45_(v45), v46_(v46), v47_(v47), v48_(v48), v49_(v49) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -2987,59 +2987,59 @@ n.. ValueArray49 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray49& other);
+  v.. operator=(co.. ValueArray49& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
-  const T14 v14_;
-  const T15 v15_;
-  const T16 v16_;
-  const T17 v17_;
-  const T18 v18_;
-  const T19 v19_;
-  const T20 v20_;
-  const T21 v21_;
-  const T22 v22_;
-  const T23 v23_;
-  const T24 v24_;
-  const T25 v25_;
-  const T26 v26_;
-  const T27 v27_;
-  const T28 v28_;
-  const T29 v29_;
-  const T30 v30_;
-  const T31 v31_;
-  const T32 v32_;
-  const T33 v33_;
-  const T34 v34_;
-  const T35 v35_;
-  const T36 v36_;
-  const T37 v37_;
-  const T38 v38_;
-  const T39 v39_;
-  const T40 v40_;
-  const T41 v41_;
-  const T42 v42_;
-  const T43 v43_;
-  const T44 v44_;
-  const T45 v45_;
-  const T46 v46_;
-  const T47 v47_;
-  const T48 v48_;
-  const T49 v49_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
+  co.. T14 v14_;
+  co.. T15 v15_;
+  co.. T16 v16_;
+  co.. T17 v17_;
+  co.. T18 v18_;
+  co.. T19 v19_;
+  co.. T20 v20_;
+  co.. T21 v21_;
+  co.. T22 v22_;
+  co.. T23 v23_;
+  co.. T24 v24_;
+  co.. T25 v25_;
+  co.. T26 v26_;
+  co.. T27 v27_;
+  co.. T28 v28_;
+  co.. T29 v29_;
+  co.. T30 v30_;
+  co.. T31 v31_;
+  co.. T32 v32_;
+  co.. T33 v33_;
+  co.. T34 v34_;
+  co.. T35 v35_;
+  co.. T36 v36_;
+  co.. T37 v37_;
+  co.. T38 v38_;
+  co.. T39 v39_;
+  co.. T40 v40_;
+  co.. T41 v41_;
+  co.. T42 v42_;
+  co.. T43 v43_;
+  co.. T44 v44_;
+  co.. T45 v45_;
+  co.. T46 v46_;
+  co.. T47 v47_;
+  co.. T48 v48_;
+  co.. T49 v49_;
 };
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -3070,8 +3070,8 @@ n.. ValueArray50 {
       v45_(v45), v46_(v46), v47_(v47), v48_(v48), v49_(v49), v50_(v50) {}
 
   template <typename T>
-  operator ParamGenerator<T>() const {
-    const T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
+  operator ParamGenerator<T>() co.. {
+    co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
@@ -3091,60 +3091,60 @@ n.. ValueArray50 {
     return ValuesIn(array);
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const ValueArray50& other);
+  v.. operator=(co.. ValueArray50& other);
 
-  const T1 v1_;
-  const T2 v2_;
-  const T3 v3_;
-  const T4 v4_;
-  const T5 v5_;
-  const T6 v6_;
-  const T7 v7_;
-  const T8 v8_;
-  const T9 v9_;
-  const T10 v10_;
-  const T11 v11_;
-  const T12 v12_;
-  const T13 v13_;
-  const T14 v14_;
-  const T15 v15_;
-  const T16 v16_;
-  const T17 v17_;
-  const T18 v18_;
-  const T19 v19_;
-  const T20 v20_;
-  const T21 v21_;
-  const T22 v22_;
-  const T23 v23_;
-  const T24 v24_;
-  const T25 v25_;
-  const T26 v26_;
-  const T27 v27_;
-  const T28 v28_;
-  const T29 v29_;
-  const T30 v30_;
-  const T31 v31_;
-  const T32 v32_;
-  const T33 v33_;
-  const T34 v34_;
-  const T35 v35_;
-  const T36 v36_;
-  const T37 v37_;
-  const T38 v38_;
-  const T39 v39_;
-  const T40 v40_;
-  const T41 v41_;
-  const T42 v42_;
-  const T43 v43_;
-  const T44 v44_;
-  const T45 v45_;
-  const T46 v46_;
-  const T47 v47_;
-  const T48 v48_;
-  const T49 v49_;
-  const T50 v50_;
+  co.. T1 v1_;
+  co.. T2 v2_;
+  co.. T3 v3_;
+  co.. T4 v4_;
+  co.. T5 v5_;
+  co.. T6 v6_;
+  co.. T7 v7_;
+  co.. T8 v8_;
+  co.. T9 v9_;
+  co.. T10 v10_;
+  co.. T11 v11_;
+  co.. T12 v12_;
+  co.. T13 v13_;
+  co.. T14 v14_;
+  co.. T15 v15_;
+  co.. T16 v16_;
+  co.. T17 v17_;
+  co.. T18 v18_;
+  co.. T19 v19_;
+  co.. T20 v20_;
+  co.. T21 v21_;
+  co.. T22 v22_;
+  co.. T23 v23_;
+  co.. T24 v24_;
+  co.. T25 v25_;
+  co.. T26 v26_;
+  co.. T27 v27_;
+  co.. T28 v28_;
+  co.. T29 v29_;
+  co.. T30 v30_;
+  co.. T31 v31_;
+  co.. T32 v32_;
+  co.. T33 v33_;
+  co.. T34 v34_;
+  co.. T35 v35_;
+  co.. T36 v36_;
+  co.. T37 v37_;
+  co.. T38 v38_;
+  co.. T39 v39_;
+  co.. T40 v40_;
+  co.. T41 v41_;
+  co.. T42 v42_;
+  co.. T43 v43_;
+  co.. T44 v44_;
+  co.. T45 v45_;
+  co.. T46 v46_;
+  co.. T47 v47_;
+  co.. T48 v48_;
+  co.. T49 v49_;
+  co.. T50 v50_;
 };
 
 # if GTEST_HAS_COMBINE
@@ -3155,30 +3155,30 @@ n.. ValueArray50 {
 //
 template <typename T1, typename T2>
 n.. CartesianProductGenerator2
-    : public ParamGeneratorInterface< ::testing::tuple<T1, T2> > {
+    : pu.. ParamGeneratorInterface< ::testing::tuple<T1, T2> > {
  p..
   typedef ::testing::tuple<T1, T2> ParamType;
 
-  CartesianProductGenerator2(const ParamGenerator<T1>& g1,
-      const ParamGenerator<T2>& g2)
+  CartesianProductGenerator2(co.. ParamGenerator<T1>& g1,
+      co.. ParamGenerator<T2>& g2)
       : g1_(g1), g2_(g2) {}
   v.. ~CartesianProductGenerator2() {}
 
-  v.. ParamIteratorInterface<ParamType>* Begin() const {
+  v.. ParamIteratorInterface<ParamType>* Begin() co.. {
     return new Iterator(this, g1_, g1_.begin(), g2_, g2_.begin());
   }
-  v.. ParamIteratorInterface<ParamType>* End() const {
+  v.. ParamIteratorInterface<ParamType>* End() co.. {
     return new Iterator(this, g1_, g1_.end(), g2_, g2_.end());
   }
 
- private:
-  n.. Iterator : public ParamIteratorInterface<ParamType> {
+ pr..
+  n.. Iterator : pu.. ParamIteratorInterface<ParamType> {
    p..
-    Iterator(const ParamGeneratorInterface<ParamType>* base,
-      const ParamGenerator<T1>& g1,
-      const typename ParamGenerator<T1>::iterator& current1,
-      const ParamGenerator<T2>& g2,
-      const typename ParamGenerator<T2>::iterator& current2)
+    Iterator(co.. ParamGeneratorInterface<ParamType>* base,
+      co.. ParamGenerator<T1>& g1,
+      co.. typename ParamGenerator<T1>::iterator& current1,
+      co.. ParamGenerator<T2>& g2,
+      co.. typename ParamGenerator<T2>::iterator& current2)
         : base_(base),
           begin1_(g1.begin()), end1_(g1.end()), current1_(current1),
           begin2_(g2.begin()), end2_(g2.end()), current2_(current2)    {
@@ -3186,7 +3186,7 @@ n.. CartesianProductGenerator2
     }
     v.. ~Iterator() {}
 
-    v.. const ParamGeneratorInterface<ParamType>* BaseGenerator() const {
+    v.. co.. ParamGeneratorInterface<ParamType>* BaseGenerator() co.. {
       return base_;
     }
     // Advance should not be called on beyond-of-range iterators
@@ -3200,18 +3200,18 @@ n.. CartesianProductGenerator2
       }
       ComputeCurrentValue();
     }
-    v.. ParamIteratorInterface<ParamType>* Clone() const {
+    v.. ParamIteratorInterface<ParamType>* Clone() co.. {
       return new Iterator(*this);
     }
-    v.. const ParamType* Current() const { return current_value_.get(); }
-    v.. bool Equals(const ParamIteratorInterface<ParamType>& other) const {
+    v.. co.. ParamType* Current() co.. { return current_value_.get(); }
+    v.. bo.. Equals(co.. ParamIteratorInterface<ParamType>& other) co.. {
       // Having the same base generator guarantees that the other
       // iterator is of the same type and we can downcast.
       GTEST_CHECK_(BaseGenerator() == other.BaseGenerator())
           << "The program attempted to compare iterators "
-          << "from different generators." << std::endl;
-      const Iterator* typed_other =
-          CheckedDowncastToActualType<const Iterator>(&other);
+          << "from different generators." << st. endl;
+      co.. Iterator* typed_other =
+          CheckedDowncastToActualType<co.. Iterator>(&other);
       // We must report iterators equal if they both point beyond their
       // respective ranges. That can happen in a variety of fashions,
       // so we have to consult AtEnd().
@@ -3221,8 +3221,8 @@ n.. CartesianProductGenerator2
           current2_ == typed_other->current2_);
     }
 
-   private:
-    Iterator(const Iterator& other)
+   pr..
+    Iterator(co.. Iterator& other)
         : base_(other.base_),
         begin1_(other.begin1_),
         end1_(other.end1_),
@@ -3237,7 +3237,7 @@ n.. CartesianProductGenerator2
       if (!AtEnd())
         current_value_.reset(new ParamType(*current1_, *current2_));
     }
-    bool AtEnd() const {
+    bo.. AtEnd() co.. {
       // We must report iterator past the end of the range when either of the
       // component iterators has reached the end of its range.
       return
@@ -3246,57 +3246,57 @@ n.. CartesianProductGenerator2
     }
 
     // No implementation - assignment is unsupported.
-    v.. operator=(const Iterator& other);
+    v.. operator=(co.. Iterator& other);
 
-    const ParamGeneratorInterface<ParamType>* const base_;
+    co.. ParamGeneratorInterface<ParamType>* co.. base_;
     // begin[i]_ and end[i]_ define the i-th range that Iterator traverses.
     // current[i]_ is the actual traversing iterator.
-    const typename ParamGenerator<T1>::iterator begin1_;
-    const typename ParamGenerator<T1>::iterator end1_;
+    co.. typename ParamGenerator<T1>::iterator begin1_;
+    co.. typename ParamGenerator<T1>::iterator end1_;
     typename ParamGenerator<T1>::iterator current1_;
-    const typename ParamGenerator<T2>::iterator begin2_;
-    const typename ParamGenerator<T2>::iterator end2_;
+    co.. typename ParamGenerator<T2>::iterator begin2_;
+    co.. typename ParamGenerator<T2>::iterator end2_;
     typename ParamGenerator<T2>::iterator current2_;
     linked_ptr<ParamType> current_value_;
   };  // class CartesianProductGenerator2::Iterator
 
   // No implementation - assignment is unsupported.
-  v.. operator=(const CartesianProductGenerator2& other);
+  v.. operator=(co.. CartesianProductGenerator2& other);
 
-  const ParamGenerator<T1> g1_;
-  const ParamGenerator<T2> g2_;
+  co.. ParamGenerator<T1> g1_;
+  co.. ParamGenerator<T2> g2_;
 };  // class CartesianProductGenerator2
 
 
 template <typename T1, typename T2, typename T3>
 n.. CartesianProductGenerator3
-    : public ParamGeneratorInterface< ::testing::tuple<T1, T2, T3> > {
+    : pu.. ParamGeneratorInterface< ::testing::tuple<T1, T2, T3> > {
  p..
   typedef ::testing::tuple<T1, T2, T3> ParamType;
 
-  CartesianProductGenerator3(const ParamGenerator<T1>& g1,
-      const ParamGenerator<T2>& g2, const ParamGenerator<T3>& g3)
+  CartesianProductGenerator3(co.. ParamGenerator<T1>& g1,
+      co.. ParamGenerator<T2>& g2, co.. ParamGenerator<T3>& g3)
       : g1_(g1), g2_(g2), g3_(g3) {}
   v.. ~CartesianProductGenerator3() {}
 
-  v.. ParamIteratorInterface<ParamType>* Begin() const {
+  v.. ParamIteratorInterface<ParamType>* Begin() co.. {
     return new Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
         g3_.begin());
   }
-  v.. ParamIteratorInterface<ParamType>* End() const {
+  v.. ParamIteratorInterface<ParamType>* End() co.. {
     return new Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end());
   }
 
- private:
-  n.. Iterator : public ParamIteratorInterface<ParamType> {
+ pr..
+  n.. Iterator : pu.. ParamIteratorInterface<ParamType> {
    p..
-    Iterator(const ParamGeneratorInterface<ParamType>* base,
-      const ParamGenerator<T1>& g1,
-      const typename ParamGenerator<T1>::iterator& current1,
-      const ParamGenerator<T2>& g2,
-      const typename ParamGenerator<T2>::iterator& current2,
-      const ParamGenerator<T3>& g3,
-      const typename ParamGenerator<T3>::iterator& current3)
+    Iterator(co.. ParamGeneratorInterface<ParamType>* base,
+      co.. ParamGenerator<T1>& g1,
+      co.. typename ParamGenerator<T1>::iterator& current1,
+      co.. ParamGenerator<T2>& g2,
+      co.. typename ParamGenerator<T2>::iterator& current2,
+      co.. ParamGenerator<T3>& g3,
+      co.. typename ParamGenerator<T3>::iterator& current3)
         : base_(base),
           begin1_(g1.begin()), end1_(g1.end()), current1_(current1),
           begin2_(g2.begin()), end2_(g2.end()), current2_(current2),
@@ -3305,7 +3305,7 @@ n.. CartesianProductGenerator3
     }
     v.. ~Iterator() {}
 
-    v.. const ParamGeneratorInterface<ParamType>* BaseGenerator() const {
+    v.. co.. ParamGeneratorInterface<ParamType>* BaseGenerator() co.. {
       return base_;
     }
     // Advance should not be called on beyond-of-range iterators
@@ -3323,18 +3323,18 @@ n.. CartesianProductGenerator3
       }
       ComputeCurrentValue();
     }
-    v.. ParamIteratorInterface<ParamType>* Clone() const {
+    v.. ParamIteratorInterface<ParamType>* Clone() co.. {
       return new Iterator(*this);
     }
-    v.. const ParamType* Current() const { return current_value_.get(); }
-    v.. bool Equals(const ParamIteratorInterface<ParamType>& other) const {
+    v.. co.. ParamType* Current() co.. { return current_value_.get(); }
+    v.. bo.. Equals(co.. ParamIteratorInterface<ParamType>& other) co.. {
       // Having the same base generator guarantees that the other
       // iterator is of the same type and we can downcast.
       GTEST_CHECK_(BaseGenerator() == other.BaseGenerator())
           << "The program attempted to compare iterators "
-          << "from different generators." << std::endl;
-      const Iterator* typed_other =
-          CheckedDowncastToActualType<const Iterator>(&other);
+          << "from different generators." << st. endl;
+      co.. Iterator* typed_other =
+          CheckedDowncastToActualType<co.. Iterator>(&other);
       // We must report iterators equal if they both point beyond their
       // respective ranges. That can happen in a variety of fashions,
       // so we have to consult AtEnd().
@@ -3345,8 +3345,8 @@ n.. CartesianProductGenerator3
           current3_ == typed_other->current3_);
     }
 
-   private:
-    Iterator(const Iterator& other)
+   pr..
+    Iterator(co.. Iterator& other)
         : base_(other.base_),
         begin1_(other.begin1_),
         end1_(other.end1_),
@@ -3364,7 +3364,7 @@ n.. CartesianProductGenerator3
       if (!AtEnd())
         current_value_.reset(new ParamType(*current1_, *current2_, *current3_));
     }
-    bool AtEnd() const {
+    bo.. AtEnd() co.. {
       // We must report iterator past the end of the range when either of the
       // component iterators has reached the end of its range.
       return
@@ -3374,65 +3374,65 @@ n.. CartesianProductGenerator3
     }
 
     // No implementation - assignment is unsupported.
-    v.. operator=(const Iterator& other);
+    v.. operator=(co.. Iterator& other);
 
-    const ParamGeneratorInterface<ParamType>* const base_;
+    co.. ParamGeneratorInterface<ParamType>* co.. base_;
     // begin[i]_ and end[i]_ define the i-th range that Iterator traverses.
     // current[i]_ is the actual traversing iterator.
-    const typename ParamGenerator<T1>::iterator begin1_;
-    const typename ParamGenerator<T1>::iterator end1_;
+    co.. typename ParamGenerator<T1>::iterator begin1_;
+    co.. typename ParamGenerator<T1>::iterator end1_;
     typename ParamGenerator<T1>::iterator current1_;
-    const typename ParamGenerator<T2>::iterator begin2_;
-    const typename ParamGenerator<T2>::iterator end2_;
+    co.. typename ParamGenerator<T2>::iterator begin2_;
+    co.. typename ParamGenerator<T2>::iterator end2_;
     typename ParamGenerator<T2>::iterator current2_;
-    const typename ParamGenerator<T3>::iterator begin3_;
-    const typename ParamGenerator<T3>::iterator end3_;
+    co.. typename ParamGenerator<T3>::iterator begin3_;
+    co.. typename ParamGenerator<T3>::iterator end3_;
     typename ParamGenerator<T3>::iterator current3_;
     linked_ptr<ParamType> current_value_;
   };  // class CartesianProductGenerator3::Iterator
 
   // No implementation - assignment is unsupported.
-  v.. operator=(const CartesianProductGenerator3& other);
+  v.. operator=(co.. CartesianProductGenerator3& other);
 
-  const ParamGenerator<T1> g1_;
-  const ParamGenerator<T2> g2_;
-  const ParamGenerator<T3> g3_;
+  co.. ParamGenerator<T1> g1_;
+  co.. ParamGenerator<T2> g2_;
+  co.. ParamGenerator<T3> g3_;
 };  // class CartesianProductGenerator3
 
 
 template <typename T1, typename T2, typename T3, typename T4>
 n.. CartesianProductGenerator4
-    : public ParamGeneratorInterface< ::testing::tuple<T1, T2, T3, T4> > {
+    : pu.. ParamGeneratorInterface< ::testing::tuple<T1, T2, T3, T4> > {
  p..
   typedef ::testing::tuple<T1, T2, T3, T4> ParamType;
 
-  CartesianProductGenerator4(const ParamGenerator<T1>& g1,
-      const ParamGenerator<T2>& g2, const ParamGenerator<T3>& g3,
-      const ParamGenerator<T4>& g4)
+  CartesianProductGenerator4(co.. ParamGenerator<T1>& g1,
+      co.. ParamGenerator<T2>& g2, co.. ParamGenerator<T3>& g3,
+      co.. ParamGenerator<T4>& g4)
       : g1_(g1), g2_(g2), g3_(g3), g4_(g4) {}
   v.. ~CartesianProductGenerator4() {}
 
-  v.. ParamIteratorInterface<ParamType>* Begin() const {
+  v.. ParamIteratorInterface<ParamType>* Begin() co.. {
     return new Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
         g3_.begin(), g4_, g4_.begin());
   }
-  v.. ParamIteratorInterface<ParamType>* End() const {
+  v.. ParamIteratorInterface<ParamType>* End() co.. {
     return new Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end(),
         g4_, g4_.end());
   }
 
- private:
-  n.. Iterator : public ParamIteratorInterface<ParamType> {
+ pr..
+  n.. Iterator : pu.. ParamIteratorInterface<ParamType> {
    p..
-    Iterator(const ParamGeneratorInterface<ParamType>* base,
-      const ParamGenerator<T1>& g1,
-      const typename ParamGenerator<T1>::iterator& current1,
-      const ParamGenerator<T2>& g2,
-      const typename ParamGenerator<T2>::iterator& current2,
-      const ParamGenerator<T3>& g3,
-      const typename ParamGenerator<T3>::iterator& current3,
-      const ParamGenerator<T4>& g4,
-      const typename ParamGenerator<T4>::iterator& current4)
+    Iterator(co.. ParamGeneratorInterface<ParamType>* base,
+      co.. ParamGenerator<T1>& g1,
+      co.. typename ParamGenerator<T1>::iterator& current1,
+      co.. ParamGenerator<T2>& g2,
+      co.. typename ParamGenerator<T2>::iterator& current2,
+      co.. ParamGenerator<T3>& g3,
+      co.. typename ParamGenerator<T3>::iterator& current3,
+      co.. ParamGenerator<T4>& g4,
+      co.. typename ParamGenerator<T4>::iterator& current4)
         : base_(base),
           begin1_(g1.begin()), end1_(g1.end()), current1_(current1),
           begin2_(g2.begin()), end2_(g2.end()), current2_(current2),
@@ -3442,7 +3442,7 @@ n.. CartesianProductGenerator4
     }
     v.. ~Iterator() {}
 
-    v.. const ParamGeneratorInterface<ParamType>* BaseGenerator() const {
+    v.. co.. ParamGeneratorInterface<ParamType>* BaseGenerator() co.. {
       return base_;
     }
     // Advance should not be called on beyond-of-range iterators
@@ -3464,18 +3464,18 @@ n.. CartesianProductGenerator4
       }
       ComputeCurrentValue();
     }
-    v.. ParamIteratorInterface<ParamType>* Clone() const {
+    v.. ParamIteratorInterface<ParamType>* Clone() co.. {
       return new Iterator(*this);
     }
-    v.. const ParamType* Current() const { return current_value_.get(); }
-    v.. bool Equals(const ParamIteratorInterface<ParamType>& other) const {
+    v.. co.. ParamType* Current() co.. { return current_value_.get(); }
+    v.. bo.. Equals(co.. ParamIteratorInterface<ParamType>& other) co.. {
       // Having the same base generator guarantees that the other
       // iterator is of the same type and we can downcast.
       GTEST_CHECK_(BaseGenerator() == other.BaseGenerator())
           << "The program attempted to compare iterators "
-          << "from different generators." << std::endl;
-      const Iterator* typed_other =
-          CheckedDowncastToActualType<const Iterator>(&other);
+          << "from different generators." << st. endl;
+      co.. Iterator* typed_other =
+          CheckedDowncastToActualType<co.. Iterator>(&other);
       // We must report iterators equal if they both point beyond their
       // respective ranges. That can happen in a variety of fashions,
       // so we have to consult AtEnd().
@@ -3487,8 +3487,8 @@ n.. CartesianProductGenerator4
           current4_ == typed_other->current4_);
     }
 
-   private:
-    Iterator(const Iterator& other)
+   pr..
+    Iterator(co.. Iterator& other)
         : base_(other.base_),
         begin1_(other.begin1_),
         end1_(other.end1_),
@@ -3510,7 +3510,7 @@ n.. CartesianProductGenerator4
         current_value_.reset(new ParamType(*current1_, *current2_, *current3_,
             *current4_));
     }
-    bool AtEnd() const {
+    bo.. AtEnd() co.. {
       // We must report iterator past the end of the range when either of the
       // component iterators has reached the end of its range.
       return
@@ -3521,71 +3521,71 @@ n.. CartesianProductGenerator4
     }
 
     // No implementation - assignment is unsupported.
-    v.. operator=(const Iterator& other);
+    v.. operator=(co.. Iterator& other);
 
-    const ParamGeneratorInterface<ParamType>* const base_;
+    co.. ParamGeneratorInterface<ParamType>* co.. base_;
     // begin[i]_ and end[i]_ define the i-th range that Iterator traverses.
     // current[i]_ is the actual traversing iterator.
-    const typename ParamGenerator<T1>::iterator begin1_;
-    const typename ParamGenerator<T1>::iterator end1_;
+    co.. typename ParamGenerator<T1>::iterator begin1_;
+    co.. typename ParamGenerator<T1>::iterator end1_;
     typename ParamGenerator<T1>::iterator current1_;
-    const typename ParamGenerator<T2>::iterator begin2_;
-    const typename ParamGenerator<T2>::iterator end2_;
+    co.. typename ParamGenerator<T2>::iterator begin2_;
+    co.. typename ParamGenerator<T2>::iterator end2_;
     typename ParamGenerator<T2>::iterator current2_;
-    const typename ParamGenerator<T3>::iterator begin3_;
-    const typename ParamGenerator<T3>::iterator end3_;
+    co.. typename ParamGenerator<T3>::iterator begin3_;
+    co.. typename ParamGenerator<T3>::iterator end3_;
     typename ParamGenerator<T3>::iterator current3_;
-    const typename ParamGenerator<T4>::iterator begin4_;
-    const typename ParamGenerator<T4>::iterator end4_;
+    co.. typename ParamGenerator<T4>::iterator begin4_;
+    co.. typename ParamGenerator<T4>::iterator end4_;
     typename ParamGenerator<T4>::iterator current4_;
     linked_ptr<ParamType> current_value_;
   };  // class CartesianProductGenerator4::Iterator
 
   // No implementation - assignment is unsupported.
-  v.. operator=(const CartesianProductGenerator4& other);
+  v.. operator=(co.. CartesianProductGenerator4& other);
 
-  const ParamGenerator<T1> g1_;
-  const ParamGenerator<T2> g2_;
-  const ParamGenerator<T3> g3_;
-  const ParamGenerator<T4> g4_;
+  co.. ParamGenerator<T1> g1_;
+  co.. ParamGenerator<T2> g2_;
+  co.. ParamGenerator<T3> g3_;
+  co.. ParamGenerator<T4> g4_;
 };  // class CartesianProductGenerator4
 
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5>
 n.. CartesianProductGenerator5
-    : public ParamGeneratorInterface< ::testing::tuple<T1, T2, T3, T4, T5> > {
+    : pu.. ParamGeneratorInterface< ::testing::tuple<T1, T2, T3, T4, T5> > {
  p..
   typedef ::testing::tuple<T1, T2, T3, T4, T5> ParamType;
 
-  CartesianProductGenerator5(const ParamGenerator<T1>& g1,
-      const ParamGenerator<T2>& g2, const ParamGenerator<T3>& g3,
-      const ParamGenerator<T4>& g4, const ParamGenerator<T5>& g5)
+  CartesianProductGenerator5(co.. ParamGenerator<T1>& g1,
+      co.. ParamGenerator<T2>& g2, co.. ParamGenerator<T3>& g3,
+      co.. ParamGenerator<T4>& g4, co.. ParamGenerator<T5>& g5)
       : g1_(g1), g2_(g2), g3_(g3), g4_(g4), g5_(g5) {}
   v.. ~CartesianProductGenerator5() {}
 
-  v.. ParamIteratorInterface<ParamType>* Begin() const {
+  v.. ParamIteratorInterface<ParamType>* Begin() co.. {
     return new Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
         g3_.begin(), g4_, g4_.begin(), g5_, g5_.begin());
   }
-  v.. ParamIteratorInterface<ParamType>* End() const {
+  v.. ParamIteratorInterface<ParamType>* End() co.. {
     return new Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end(),
         g4_, g4_.end(), g5_, g5_.end());
   }
 
- private:
-  n.. Iterator : public ParamIteratorInterface<ParamType> {
+ pr..
+  n.. Iterator : pu.. ParamIteratorInterface<ParamType> {
    p..
-    Iterator(const ParamGeneratorInterface<ParamType>* base,
-      const ParamGenerator<T1>& g1,
-      const typename ParamGenerator<T1>::iterator& current1,
-      const ParamGenerator<T2>& g2,
-      const typename ParamGenerator<T2>::iterator& current2,
-      const ParamGenerator<T3>& g3,
-      const typename ParamGenerator<T3>::iterator& current3,
-      const ParamGenerator<T4>& g4,
-      const typename ParamGenerator<T4>::iterator& current4,
-      const ParamGenerator<T5>& g5,
-      const typename ParamGenerator<T5>::iterator& current5)
+    Iterator(co.. ParamGeneratorInterface<ParamType>* base,
+      co.. ParamGenerator<T1>& g1,
+      co.. typename ParamGenerator<T1>::iterator& current1,
+      co.. ParamGenerator<T2>& g2,
+      co.. typename ParamGenerator<T2>::iterator& current2,
+      co.. ParamGenerator<T3>& g3,
+      co.. typename ParamGenerator<T3>::iterator& current3,
+      co.. ParamGenerator<T4>& g4,
+      co.. typename ParamGenerator<T4>::iterator& current4,
+      co.. ParamGenerator<T5>& g5,
+      co.. typename ParamGenerator<T5>::iterator& current5)
         : base_(base),
           begin1_(g1.begin()), end1_(g1.end()), current1_(current1),
           begin2_(g2.begin()), end2_(g2.end()), current2_(current2),
@@ -3596,7 +3596,7 @@ n.. CartesianProductGenerator5
     }
     v.. ~Iterator() {}
 
-    v.. const ParamGeneratorInterface<ParamType>* BaseGenerator() const {
+    v.. co.. ParamGeneratorInterface<ParamType>* BaseGenerator() co.. {
       return base_;
     }
     // Advance should not be called on beyond-of-range iterators
@@ -3622,18 +3622,18 @@ n.. CartesianProductGenerator5
       }
       ComputeCurrentValue();
     }
-    v.. ParamIteratorInterface<ParamType>* Clone() const {
+    v.. ParamIteratorInterface<ParamType>* Clone() co.. {
       return new Iterator(*this);
     }
-    v.. const ParamType* Current() const { return current_value_.get(); }
-    v.. bool Equals(const ParamIteratorInterface<ParamType>& other) const {
+    v.. co.. ParamType* Current() co.. { return current_value_.get(); }
+    v.. bo.. Equals(co.. ParamIteratorInterface<ParamType>& other) co.. {
       // Having the same base generator guarantees that the other
       // iterator is of the same type and we can downcast.
       GTEST_CHECK_(BaseGenerator() == other.BaseGenerator())
           << "The program attempted to compare iterators "
-          << "from different generators." << std::endl;
-      const Iterator* typed_other =
-          CheckedDowncastToActualType<const Iterator>(&other);
+          << "from different generators." << st. endl;
+      co.. Iterator* typed_other =
+          CheckedDowncastToActualType<co.. Iterator>(&other);
       // We must report iterators equal if they both point beyond their
       // respective ranges. That can happen in a variety of fashions,
       // so we have to consult AtEnd().
@@ -3646,8 +3646,8 @@ n.. CartesianProductGenerator5
           current5_ == typed_other->current5_);
     }
 
-   private:
-    Iterator(const Iterator& other)
+   pr..
+    Iterator(co.. Iterator& other)
         : base_(other.base_),
         begin1_(other.begin1_),
         end1_(other.end1_),
@@ -3672,7 +3672,7 @@ n.. CartesianProductGenerator5
         current_value_.reset(new ParamType(*current1_, *current2_, *current3_,
             *current4_, *current5_));
     }
-    bool AtEnd() const {
+    bo.. AtEnd() co.. {
       // We must report iterator past the end of the range when either of the
       // component iterators has reached the end of its range.
       return
@@ -3684,80 +3684,80 @@ n.. CartesianProductGenerator5
     }
 
     // No implementation - assignment is unsupported.
-    v.. operator=(const Iterator& other);
+    v.. operator=(co.. Iterator& other);
 
-    const ParamGeneratorInterface<ParamType>* const base_;
+    co.. ParamGeneratorInterface<ParamType>* co.. base_;
     // begin[i]_ and end[i]_ define the i-th range that Iterator traverses.
     // current[i]_ is the actual traversing iterator.
-    const typename ParamGenerator<T1>::iterator begin1_;
-    const typename ParamGenerator<T1>::iterator end1_;
+    co.. typename ParamGenerator<T1>::iterator begin1_;
+    co.. typename ParamGenerator<T1>::iterator end1_;
     typename ParamGenerator<T1>::iterator current1_;
-    const typename ParamGenerator<T2>::iterator begin2_;
-    const typename ParamGenerator<T2>::iterator end2_;
+    co.. typename ParamGenerator<T2>::iterator begin2_;
+    co.. typename ParamGenerator<T2>::iterator end2_;
     typename ParamGenerator<T2>::iterator current2_;
-    const typename ParamGenerator<T3>::iterator begin3_;
-    const typename ParamGenerator<T3>::iterator end3_;
+    co.. typename ParamGenerator<T3>::iterator begin3_;
+    co.. typename ParamGenerator<T3>::iterator end3_;
     typename ParamGenerator<T3>::iterator current3_;
-    const typename ParamGenerator<T4>::iterator begin4_;
-    const typename ParamGenerator<T4>::iterator end4_;
+    co.. typename ParamGenerator<T4>::iterator begin4_;
+    co.. typename ParamGenerator<T4>::iterator end4_;
     typename ParamGenerator<T4>::iterator current4_;
-    const typename ParamGenerator<T5>::iterator begin5_;
-    const typename ParamGenerator<T5>::iterator end5_;
+    co.. typename ParamGenerator<T5>::iterator begin5_;
+    co.. typename ParamGenerator<T5>::iterator end5_;
     typename ParamGenerator<T5>::iterator current5_;
     linked_ptr<ParamType> current_value_;
   };  // class CartesianProductGenerator5::Iterator
 
   // No implementation - assignment is unsupported.
-  v.. operator=(const CartesianProductGenerator5& other);
+  v.. operator=(co.. CartesianProductGenerator5& other);
 
-  const ParamGenerator<T1> g1_;
-  const ParamGenerator<T2> g2_;
-  const ParamGenerator<T3> g3_;
-  const ParamGenerator<T4> g4_;
-  const ParamGenerator<T5> g5_;
+  co.. ParamGenerator<T1> g1_;
+  co.. ParamGenerator<T2> g2_;
+  co.. ParamGenerator<T3> g3_;
+  co.. ParamGenerator<T4> g4_;
+  co.. ParamGenerator<T5> g5_;
 };  // class CartesianProductGenerator5
 
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
     typename T6>
 n.. CartesianProductGenerator6
-    : public ParamGeneratorInterface< ::testing::tuple<T1, T2, T3, T4, T5,
+    : pu.. ParamGeneratorInterface< ::testing::tuple<T1, T2, T3, T4, T5,
         T6> > {
  p..
   typedef ::testing::tuple<T1, T2, T3, T4, T5, T6> ParamType;
 
-  CartesianProductGenerator6(const ParamGenerator<T1>& g1,
-      const ParamGenerator<T2>& g2, const ParamGenerator<T3>& g3,
-      const ParamGenerator<T4>& g4, const ParamGenerator<T5>& g5,
-      const ParamGenerator<T6>& g6)
+  CartesianProductGenerator6(co.. ParamGenerator<T1>& g1,
+      co.. ParamGenerator<T2>& g2, co.. ParamGenerator<T3>& g3,
+      co.. ParamGenerator<T4>& g4, co.. ParamGenerator<T5>& g5,
+      co.. ParamGenerator<T6>& g6)
       : g1_(g1), g2_(g2), g3_(g3), g4_(g4), g5_(g5), g6_(g6) {}
   v.. ~CartesianProductGenerator6() {}
 
-  v.. ParamIteratorInterface<ParamType>* Begin() const {
+  v.. ParamIteratorInterface<ParamType>* Begin() co.. {
     return new Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
         g3_.begin(), g4_, g4_.begin(), g5_, g5_.begin(), g6_, g6_.begin());
   }
-  v.. ParamIteratorInterface<ParamType>* End() const {
+  v.. ParamIteratorInterface<ParamType>* End() co.. {
     return new Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end(),
         g4_, g4_.end(), g5_, g5_.end(), g6_, g6_.end());
   }
 
- private:
-  n.. Iterator : public ParamIteratorInterface<ParamType> {
+ pr..
+  n.. Iterator : pu.. ParamIteratorInterface<ParamType> {
    p..
-    Iterator(const ParamGeneratorInterface<ParamType>* base,
-      const ParamGenerator<T1>& g1,
-      const typename ParamGenerator<T1>::iterator& current1,
-      const ParamGenerator<T2>& g2,
-      const typename ParamGenerator<T2>::iterator& current2,
-      const ParamGenerator<T3>& g3,
-      const typename ParamGenerator<T3>::iterator& current3,
-      const ParamGenerator<T4>& g4,
-      const typename ParamGenerator<T4>::iterator& current4,
-      const ParamGenerator<T5>& g5,
-      const typename ParamGenerator<T5>::iterator& current5,
-      const ParamGenerator<T6>& g6,
-      const typename ParamGenerator<T6>::iterator& current6)
+    Iterator(co.. ParamGeneratorInterface<ParamType>* base,
+      co.. ParamGenerator<T1>& g1,
+      co.. typename ParamGenerator<T1>::iterator& current1,
+      co.. ParamGenerator<T2>& g2,
+      co.. typename ParamGenerator<T2>::iterator& current2,
+      co.. ParamGenerator<T3>& g3,
+      co.. typename ParamGenerator<T3>::iterator& current3,
+      co.. ParamGenerator<T4>& g4,
+      co.. typename ParamGenerator<T4>::iterator& current4,
+      co.. ParamGenerator<T5>& g5,
+      co.. typename ParamGenerator<T5>::iterator& current5,
+      co.. ParamGenerator<T6>& g6,
+      co.. typename ParamGenerator<T6>::iterator& current6)
         : base_(base),
           begin1_(g1.begin()), end1_(g1.end()), current1_(current1),
           begin2_(g2.begin()), end2_(g2.end()), current2_(current2),
@@ -3769,7 +3769,7 @@ n.. CartesianProductGenerator6
     }
     v.. ~Iterator() {}
 
-    v.. const ParamGeneratorInterface<ParamType>* BaseGenerator() const {
+    v.. co.. ParamGeneratorInterface<ParamType>* BaseGenerator() co.. {
       return base_;
     }
     // Advance should not be called on beyond-of-range iterators
@@ -3799,18 +3799,18 @@ n.. CartesianProductGenerator6
       }
       ComputeCurrentValue();
     }
-    v.. ParamIteratorInterface<ParamType>* Clone() const {
+    v.. ParamIteratorInterface<ParamType>* Clone() co.. {
       return new Iterator(*this);
     }
-    v.. const ParamType* Current() const { return current_value_.get(); }
-    v.. bool Equals(const ParamIteratorInterface<ParamType>& other) const {
+    v.. co.. ParamType* Current() co.. { return current_value_.get(); }
+    v.. bo.. Equals(co.. ParamIteratorInterface<ParamType>& other) co.. {
       // Having the same base generator guarantees that the other
       // iterator is of the same type and we can downcast.
       GTEST_CHECK_(BaseGenerator() == other.BaseGenerator())
           << "The program attempted to compare iterators "
-          << "from different generators." << std::endl;
-      const Iterator* typed_other =
-          CheckedDowncastToActualType<const Iterator>(&other);
+          << "from different generators." << st. endl;
+      co.. Iterator* typed_other =
+          CheckedDowncastToActualType<co.. Iterator>(&other);
       // We must report iterators equal if they both point beyond their
       // respective ranges. That can happen in a variety of fashions,
       // so we have to consult AtEnd().
@@ -3824,8 +3824,8 @@ n.. CartesianProductGenerator6
           current6_ == typed_other->current6_);
     }
 
-   private:
-    Iterator(const Iterator& other)
+   pr..
+    Iterator(co.. Iterator& other)
         : base_(other.base_),
         begin1_(other.begin1_),
         end1_(other.end1_),
@@ -3853,7 +3853,7 @@ n.. CartesianProductGenerator6
         current_value_.reset(new ParamType(*current1_, *current2_, *current3_,
             *current4_, *current5_, *current6_));
     }
-    bool AtEnd() const {
+    bo.. AtEnd() co.. {
       // We must report iterator past the end of the range when either of the
       // component iterators has reached the end of its range.
       return
@@ -3866,87 +3866,87 @@ n.. CartesianProductGenerator6
     }
 
     // No implementation - assignment is unsupported.
-    v.. operator=(const Iterator& other);
+    v.. operator=(co.. Iterator& other);
 
-    const ParamGeneratorInterface<ParamType>* const base_;
+    co.. ParamGeneratorInterface<ParamType>* co.. base_;
     // begin[i]_ and end[i]_ define the i-th range that Iterator traverses.
     // current[i]_ is the actual traversing iterator.
-    const typename ParamGenerator<T1>::iterator begin1_;
-    const typename ParamGenerator<T1>::iterator end1_;
+    co.. typename ParamGenerator<T1>::iterator begin1_;
+    co.. typename ParamGenerator<T1>::iterator end1_;
     typename ParamGenerator<T1>::iterator current1_;
-    const typename ParamGenerator<T2>::iterator begin2_;
-    const typename ParamGenerator<T2>::iterator end2_;
+    co.. typename ParamGenerator<T2>::iterator begin2_;
+    co.. typename ParamGenerator<T2>::iterator end2_;
     typename ParamGenerator<T2>::iterator current2_;
-    const typename ParamGenerator<T3>::iterator begin3_;
-    const typename ParamGenerator<T3>::iterator end3_;
+    co.. typename ParamGenerator<T3>::iterator begin3_;
+    co.. typename ParamGenerator<T3>::iterator end3_;
     typename ParamGenerator<T3>::iterator current3_;
-    const typename ParamGenerator<T4>::iterator begin4_;
-    const typename ParamGenerator<T4>::iterator end4_;
+    co.. typename ParamGenerator<T4>::iterator begin4_;
+    co.. typename ParamGenerator<T4>::iterator end4_;
     typename ParamGenerator<T4>::iterator current4_;
-    const typename ParamGenerator<T5>::iterator begin5_;
-    const typename ParamGenerator<T5>::iterator end5_;
+    co.. typename ParamGenerator<T5>::iterator begin5_;
+    co.. typename ParamGenerator<T5>::iterator end5_;
     typename ParamGenerator<T5>::iterator current5_;
-    const typename ParamGenerator<T6>::iterator begin6_;
-    const typename ParamGenerator<T6>::iterator end6_;
+    co.. typename ParamGenerator<T6>::iterator begin6_;
+    co.. typename ParamGenerator<T6>::iterator end6_;
     typename ParamGenerator<T6>::iterator current6_;
     linked_ptr<ParamType> current_value_;
   };  // class CartesianProductGenerator6::Iterator
 
   // No implementation - assignment is unsupported.
-  v.. operator=(const CartesianProductGenerator6& other);
+  v.. operator=(co.. CartesianProductGenerator6& other);
 
-  const ParamGenerator<T1> g1_;
-  const ParamGenerator<T2> g2_;
-  const ParamGenerator<T3> g3_;
-  const ParamGenerator<T4> g4_;
-  const ParamGenerator<T5> g5_;
-  const ParamGenerator<T6> g6_;
+  co.. ParamGenerator<T1> g1_;
+  co.. ParamGenerator<T2> g2_;
+  co.. ParamGenerator<T3> g3_;
+  co.. ParamGenerator<T4> g4_;
+  co.. ParamGenerator<T5> g5_;
+  co.. ParamGenerator<T6> g6_;
 };  // class CartesianProductGenerator6
 
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
     typename T6, typename T7>
 n.. CartesianProductGenerator7
-    : public ParamGeneratorInterface< ::testing::tuple<T1, T2, T3, T4, T5, T6,
+    : pu.. ParamGeneratorInterface< ::testing::tuple<T1, T2, T3, T4, T5, T6,
         T7> > {
  p..
   typedef ::testing::tuple<T1, T2, T3, T4, T5, T6, T7> ParamType;
 
-  CartesianProductGenerator7(const ParamGenerator<T1>& g1,
-      const ParamGenerator<T2>& g2, const ParamGenerator<T3>& g3,
-      const ParamGenerator<T4>& g4, const ParamGenerator<T5>& g5,
-      const ParamGenerator<T6>& g6, const ParamGenerator<T7>& g7)
+  CartesianProductGenerator7(co.. ParamGenerator<T1>& g1,
+      co.. ParamGenerator<T2>& g2, co.. ParamGenerator<T3>& g3,
+      co.. ParamGenerator<T4>& g4, co.. ParamGenerator<T5>& g5,
+      co.. ParamGenerator<T6>& g6, co.. ParamGenerator<T7>& g7)
       : g1_(g1), g2_(g2), g3_(g3), g4_(g4), g5_(g5), g6_(g6), g7_(g7) {}
   v.. ~CartesianProductGenerator7() {}
 
-  v.. ParamIteratorInterface<ParamType>* Begin() const {
+  v.. ParamIteratorInterface<ParamType>* Begin() co.. {
     return new Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
         g3_.begin(), g4_, g4_.begin(), g5_, g5_.begin(), g6_, g6_.begin(), g7_,
         g7_.begin());
   }
-  v.. ParamIteratorInterface<ParamType>* End() const {
+  v.. ParamIteratorInterface<ParamType>* End() co.. {
     return new Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end(),
         g4_, g4_.end(), g5_, g5_.end(), g6_, g6_.end(), g7_, g7_.end());
   }
 
- private:
-  n.. Iterator : public ParamIteratorInterface<ParamType> {
+ pr..
+  n.. Iterator : pu.. ParamIteratorInterface<ParamType> {
    p..
-    Iterator(const ParamGeneratorInterface<ParamType>* base,
-      const ParamGenerator<T1>& g1,
-      const typename ParamGenerator<T1>::iterator& current1,
-      const ParamGenerator<T2>& g2,
-      const typename ParamGenerator<T2>::iterator& current2,
-      const ParamGenerator<T3>& g3,
-      const typename ParamGenerator<T3>::iterator& current3,
-      const ParamGenerator<T4>& g4,
-      const typename ParamGenerator<T4>::iterator& current4,
-      const ParamGenerator<T5>& g5,
-      const typename ParamGenerator<T5>::iterator& current5,
-      const ParamGenerator<T6>& g6,
-      const typename ParamGenerator<T6>::iterator& current6,
-      const ParamGenerator<T7>& g7,
-      const typename ParamGenerator<T7>::iterator& current7)
+    Iterator(co.. ParamGeneratorInterface<ParamType>* base,
+      co.. ParamGenerator<T1>& g1,
+      co.. typename ParamGenerator<T1>::iterator& current1,
+      co.. ParamGenerator<T2>& g2,
+      co.. typename ParamGenerator<T2>::iterator& current2,
+      co.. ParamGenerator<T3>& g3,
+      co.. typename ParamGenerator<T3>::iterator& current3,
+      co.. ParamGenerator<T4>& g4,
+      co.. typename ParamGenerator<T4>::iterator& current4,
+      co.. ParamGenerator<T5>& g5,
+      co.. typename ParamGenerator<T5>::iterator& current5,
+      co.. ParamGenerator<T6>& g6,
+      co.. typename ParamGenerator<T6>::iterator& current6,
+      co.. ParamGenerator<T7>& g7,
+      co.. typename ParamGenerator<T7>::iterator& current7)
         : base_(base),
           begin1_(g1.begin()), end1_(g1.end()), current1_(current1),
           begin2_(g2.begin()), end2_(g2.end()), current2_(current2),
@@ -3959,7 +3959,7 @@ n.. CartesianProductGenerator7
     }
     v.. ~Iterator() {}
 
-    v.. const ParamGeneratorInterface<ParamType>* BaseGenerator() const {
+    v.. co.. ParamGeneratorInterface<ParamType>* BaseGenerator() co.. {
       return base_;
     }
     // Advance should not be called on beyond-of-range iterators
@@ -3993,18 +3993,18 @@ n.. CartesianProductGenerator7
       }
       ComputeCurrentValue();
     }
-    v.. ParamIteratorInterface<ParamType>* Clone() const {
+    v.. ParamIteratorInterface<ParamType>* Clone() co.. {
       return new Iterator(*this);
     }
-    v.. const ParamType* Current() const { return current_value_.get(); }
-    v.. bool Equals(const ParamIteratorInterface<ParamType>& other) const {
+    v.. co.. ParamType* Current() co.. { return current_value_.get(); }
+    v.. bo.. Equals(co.. ParamIteratorInterface<ParamType>& other) co.. {
       // Having the same base generator guarantees that the other
       // iterator is of the same type and we can downcast.
       GTEST_CHECK_(BaseGenerator() == other.BaseGenerator())
           << "The program attempted to compare iterators "
-          << "from different generators." << std::endl;
-      const Iterator* typed_other =
-          CheckedDowncastToActualType<const Iterator>(&other);
+          << "from different generators." << st. endl;
+      co.. Iterator* typed_other =
+          CheckedDowncastToActualType<co.. Iterator>(&other);
       // We must report iterators equal if they both point beyond their
       // respective ranges. That can happen in a variety of fashions,
       // so we have to consult AtEnd().
@@ -4019,8 +4019,8 @@ n.. CartesianProductGenerator7
           current7_ == typed_other->current7_);
     }
 
-   private:
-    Iterator(const Iterator& other)
+   pr..
+    Iterator(co.. Iterator& other)
         : base_(other.base_),
         begin1_(other.begin1_),
         end1_(other.end1_),
@@ -4051,7 +4051,7 @@ n.. CartesianProductGenerator7
         current_value_.reset(new ParamType(*current1_, *current2_, *current3_,
             *current4_, *current5_, *current6_, *current7_));
     }
-    bool AtEnd() const {
+    bo.. AtEnd() co.. {
       // We must report iterator past the end of the range when either of the
       // component iterators has reached the end of its range.
       return
@@ -4065,96 +4065,96 @@ n.. CartesianProductGenerator7
     }
 
     // No implementation - assignment is unsupported.
-    v.. operator=(const Iterator& other);
+    v.. operator=(co.. Iterator& other);
 
-    const ParamGeneratorInterface<ParamType>* const base_;
+    co.. ParamGeneratorInterface<ParamType>* co.. base_;
     // begin[i]_ and end[i]_ define the i-th range that Iterator traverses.
     // current[i]_ is the actual traversing iterator.
-    const typename ParamGenerator<T1>::iterator begin1_;
-    const typename ParamGenerator<T1>::iterator end1_;
+    co.. typename ParamGenerator<T1>::iterator begin1_;
+    co.. typename ParamGenerator<T1>::iterator end1_;
     typename ParamGenerator<T1>::iterator current1_;
-    const typename ParamGenerator<T2>::iterator begin2_;
-    const typename ParamGenerator<T2>::iterator end2_;
+    co.. typename ParamGenerator<T2>::iterator begin2_;
+    co.. typename ParamGenerator<T2>::iterator end2_;
     typename ParamGenerator<T2>::iterator current2_;
-    const typename ParamGenerator<T3>::iterator begin3_;
-    const typename ParamGenerator<T3>::iterator end3_;
+    co.. typename ParamGenerator<T3>::iterator begin3_;
+    co.. typename ParamGenerator<T3>::iterator end3_;
     typename ParamGenerator<T3>::iterator current3_;
-    const typename ParamGenerator<T4>::iterator begin4_;
-    const typename ParamGenerator<T4>::iterator end4_;
+    co.. typename ParamGenerator<T4>::iterator begin4_;
+    co.. typename ParamGenerator<T4>::iterator end4_;
     typename ParamGenerator<T4>::iterator current4_;
-    const typename ParamGenerator<T5>::iterator begin5_;
-    const typename ParamGenerator<T5>::iterator end5_;
+    co.. typename ParamGenerator<T5>::iterator begin5_;
+    co.. typename ParamGenerator<T5>::iterator end5_;
     typename ParamGenerator<T5>::iterator current5_;
-    const typename ParamGenerator<T6>::iterator begin6_;
-    const typename ParamGenerator<T6>::iterator end6_;
+    co.. typename ParamGenerator<T6>::iterator begin6_;
+    co.. typename ParamGenerator<T6>::iterator end6_;
     typename ParamGenerator<T6>::iterator current6_;
-    const typename ParamGenerator<T7>::iterator begin7_;
-    const typename ParamGenerator<T7>::iterator end7_;
+    co.. typename ParamGenerator<T7>::iterator begin7_;
+    co.. typename ParamGenerator<T7>::iterator end7_;
     typename ParamGenerator<T7>::iterator current7_;
     linked_ptr<ParamType> current_value_;
   };  // class CartesianProductGenerator7::Iterator
 
   // No implementation - assignment is unsupported.
-  v.. operator=(const CartesianProductGenerator7& other);
+  v.. operator=(co.. CartesianProductGenerator7& other);
 
-  const ParamGenerator<T1> g1_;
-  const ParamGenerator<T2> g2_;
-  const ParamGenerator<T3> g3_;
-  const ParamGenerator<T4> g4_;
-  const ParamGenerator<T5> g5_;
-  const ParamGenerator<T6> g6_;
-  const ParamGenerator<T7> g7_;
+  co.. ParamGenerator<T1> g1_;
+  co.. ParamGenerator<T2> g2_;
+  co.. ParamGenerator<T3> g3_;
+  co.. ParamGenerator<T4> g4_;
+  co.. ParamGenerator<T5> g5_;
+  co.. ParamGenerator<T6> g6_;
+  co.. ParamGenerator<T7> g7_;
 };  // class CartesianProductGenerator7
 
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
     typename T6, typename T7, typename T8>
 n.. CartesianProductGenerator8
-    : public ParamGeneratorInterface< ::testing::tuple<T1, T2, T3, T4, T5, T6,
+    : pu.. ParamGeneratorInterface< ::testing::tuple<T1, T2, T3, T4, T5, T6,
         T7, T8> > {
  p..
   typedef ::testing::tuple<T1, T2, T3, T4, T5, T6, T7, T8> ParamType;
 
-  CartesianProductGenerator8(const ParamGenerator<T1>& g1,
-      const ParamGenerator<T2>& g2, const ParamGenerator<T3>& g3,
-      const ParamGenerator<T4>& g4, const ParamGenerator<T5>& g5,
-      const ParamGenerator<T6>& g6, const ParamGenerator<T7>& g7,
-      const ParamGenerator<T8>& g8)
+  CartesianProductGenerator8(co.. ParamGenerator<T1>& g1,
+      co.. ParamGenerator<T2>& g2, co.. ParamGenerator<T3>& g3,
+      co.. ParamGenerator<T4>& g4, co.. ParamGenerator<T5>& g5,
+      co.. ParamGenerator<T6>& g6, co.. ParamGenerator<T7>& g7,
+      co.. ParamGenerator<T8>& g8)
       : g1_(g1), g2_(g2), g3_(g3), g4_(g4), g5_(g5), g6_(g6), g7_(g7),
           g8_(g8) {}
   v.. ~CartesianProductGenerator8() {}
 
-  v.. ParamIteratorInterface<ParamType>* Begin() const {
+  v.. ParamIteratorInterface<ParamType>* Begin() co.. {
     return new Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
         g3_.begin(), g4_, g4_.begin(), g5_, g5_.begin(), g6_, g6_.begin(), g7_,
         g7_.begin(), g8_, g8_.begin());
   }
-  v.. ParamIteratorInterface<ParamType>* End() const {
+  v.. ParamIteratorInterface<ParamType>* End() co.. {
     return new Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end(),
         g4_, g4_.end(), g5_, g5_.end(), g6_, g6_.end(), g7_, g7_.end(), g8_,
         g8_.end());
   }
 
- private:
-  n.. Iterator : public ParamIteratorInterface<ParamType> {
+ pr..
+  n.. Iterator : pu.. ParamIteratorInterface<ParamType> {
    p..
-    Iterator(const ParamGeneratorInterface<ParamType>* base,
-      const ParamGenerator<T1>& g1,
-      const typename ParamGenerator<T1>::iterator& current1,
-      const ParamGenerator<T2>& g2,
-      const typename ParamGenerator<T2>::iterator& current2,
-      const ParamGenerator<T3>& g3,
-      const typename ParamGenerator<T3>::iterator& current3,
-      const ParamGenerator<T4>& g4,
-      const typename ParamGenerator<T4>::iterator& current4,
-      const ParamGenerator<T5>& g5,
-      const typename ParamGenerator<T5>::iterator& current5,
-      const ParamGenerator<T6>& g6,
-      const typename ParamGenerator<T6>::iterator& current6,
-      const ParamGenerator<T7>& g7,
-      const typename ParamGenerator<T7>::iterator& current7,
-      const ParamGenerator<T8>& g8,
-      const typename ParamGenerator<T8>::iterator& current8)
+    Iterator(co.. ParamGeneratorInterface<ParamType>* base,
+      co.. ParamGenerator<T1>& g1,
+      co.. typename ParamGenerator<T1>::iterator& current1,
+      co.. ParamGenerator<T2>& g2,
+      co.. typename ParamGenerator<T2>::iterator& current2,
+      co.. ParamGenerator<T3>& g3,
+      co.. typename ParamGenerator<T3>::iterator& current3,
+      co.. ParamGenerator<T4>& g4,
+      co.. typename ParamGenerator<T4>::iterator& current4,
+      co.. ParamGenerator<T5>& g5,
+      co.. typename ParamGenerator<T5>::iterator& current5,
+      co.. ParamGenerator<T6>& g6,
+      co.. typename ParamGenerator<T6>::iterator& current6,
+      co.. ParamGenerator<T7>& g7,
+      co.. typename ParamGenerator<T7>::iterator& current7,
+      co.. ParamGenerator<T8>& g8,
+      co.. typename ParamGenerator<T8>::iterator& current8)
         : base_(base),
           begin1_(g1.begin()), end1_(g1.end()), current1_(current1),
           begin2_(g2.begin()), end2_(g2.end()), current2_(current2),
@@ -4168,7 +4168,7 @@ n.. CartesianProductGenerator8
     }
     v.. ~Iterator() {}
 
-    v.. const ParamGeneratorInterface<ParamType>* BaseGenerator() const {
+    v.. co.. ParamGeneratorInterface<ParamType>* BaseGenerator() co.. {
       return base_;
     }
     // Advance should not be called on beyond-of-range iterators
@@ -4206,18 +4206,18 @@ n.. CartesianProductGenerator8
       }
       ComputeCurrentValue();
     }
-    v.. ParamIteratorInterface<ParamType>* Clone() const {
+    v.. ParamIteratorInterface<ParamType>* Clone() co.. {
       return new Iterator(*this);
     }
-    v.. const ParamType* Current() const { return current_value_.get(); }
-    v.. bool Equals(const ParamIteratorInterface<ParamType>& other) const {
+    v.. co.. ParamType* Current() co.. { return current_value_.get(); }
+    v.. bo.. Equals(co.. ParamIteratorInterface<ParamType>& other) co.. {
       // Having the same base generator guarantees that the other
       // iterator is of the same type and we can downcast.
       GTEST_CHECK_(BaseGenerator() == other.BaseGenerator())
           << "The program attempted to compare iterators "
-          << "from different generators." << std::endl;
-      const Iterator* typed_other =
-          CheckedDowncastToActualType<const Iterator>(&other);
+          << "from different generators." << st. endl;
+      co.. Iterator* typed_other =
+          CheckedDowncastToActualType<co.. Iterator>(&other);
       // We must report iterators equal if they both point beyond their
       // respective ranges. That can happen in a variety of fashions,
       // so we have to consult AtEnd().
@@ -4233,8 +4233,8 @@ n.. CartesianProductGenerator8
           current8_ == typed_other->current8_);
     }
 
-   private:
-    Iterator(const Iterator& other)
+   pr..
+    Iterator(co.. Iterator& other)
         : base_(other.base_),
         begin1_(other.begin1_),
         end1_(other.end1_),
@@ -4268,7 +4268,7 @@ n.. CartesianProductGenerator8
         current_value_.reset(new ParamType(*current1_, *current2_, *current3_,
             *current4_, *current5_, *current6_, *current7_, *current8_));
     }
-    bool AtEnd() const {
+    bo.. AtEnd() co.. {
       // We must report iterator past the end of the range when either of the
       // component iterators has reached the end of its range.
       return
@@ -4283,102 +4283,102 @@ n.. CartesianProductGenerator8
     }
 
     // No implementation - assignment is unsupported.
-    v.. operator=(const Iterator& other);
+    v.. operator=(co.. Iterator& other);
 
-    const ParamGeneratorInterface<ParamType>* const base_;
+    co.. ParamGeneratorInterface<ParamType>* co.. base_;
     // begin[i]_ and end[i]_ define the i-th range that Iterator traverses.
     // current[i]_ is the actual traversing iterator.
-    const typename ParamGenerator<T1>::iterator begin1_;
-    const typename ParamGenerator<T1>::iterator end1_;
+    co.. typename ParamGenerator<T1>::iterator begin1_;
+    co.. typename ParamGenerator<T1>::iterator end1_;
     typename ParamGenerator<T1>::iterator current1_;
-    const typename ParamGenerator<T2>::iterator begin2_;
-    const typename ParamGenerator<T2>::iterator end2_;
+    co.. typename ParamGenerator<T2>::iterator begin2_;
+    co.. typename ParamGenerator<T2>::iterator end2_;
     typename ParamGenerator<T2>::iterator current2_;
-    const typename ParamGenerator<T3>::iterator begin3_;
-    const typename ParamGenerator<T3>::iterator end3_;
+    co.. typename ParamGenerator<T3>::iterator begin3_;
+    co.. typename ParamGenerator<T3>::iterator end3_;
     typename ParamGenerator<T3>::iterator current3_;
-    const typename ParamGenerator<T4>::iterator begin4_;
-    const typename ParamGenerator<T4>::iterator end4_;
+    co.. typename ParamGenerator<T4>::iterator begin4_;
+    co.. typename ParamGenerator<T4>::iterator end4_;
     typename ParamGenerator<T4>::iterator current4_;
-    const typename ParamGenerator<T5>::iterator begin5_;
-    const typename ParamGenerator<T5>::iterator end5_;
+    co.. typename ParamGenerator<T5>::iterator begin5_;
+    co.. typename ParamGenerator<T5>::iterator end5_;
     typename ParamGenerator<T5>::iterator current5_;
-    const typename ParamGenerator<T6>::iterator begin6_;
-    const typename ParamGenerator<T6>::iterator end6_;
+    co.. typename ParamGenerator<T6>::iterator begin6_;
+    co.. typename ParamGenerator<T6>::iterator end6_;
     typename ParamGenerator<T6>::iterator current6_;
-    const typename ParamGenerator<T7>::iterator begin7_;
-    const typename ParamGenerator<T7>::iterator end7_;
+    co.. typename ParamGenerator<T7>::iterator begin7_;
+    co.. typename ParamGenerator<T7>::iterator end7_;
     typename ParamGenerator<T7>::iterator current7_;
-    const typename ParamGenerator<T8>::iterator begin8_;
-    const typename ParamGenerator<T8>::iterator end8_;
+    co.. typename ParamGenerator<T8>::iterator begin8_;
+    co.. typename ParamGenerator<T8>::iterator end8_;
     typename ParamGenerator<T8>::iterator current8_;
     linked_ptr<ParamType> current_value_;
   };  // class CartesianProductGenerator8::Iterator
 
   // No implementation - assignment is unsupported.
-  v.. operator=(const CartesianProductGenerator8& other);
+  v.. operator=(co.. CartesianProductGenerator8& other);
 
-  const ParamGenerator<T1> g1_;
-  const ParamGenerator<T2> g2_;
-  const ParamGenerator<T3> g3_;
-  const ParamGenerator<T4> g4_;
-  const ParamGenerator<T5> g5_;
-  const ParamGenerator<T6> g6_;
-  const ParamGenerator<T7> g7_;
-  const ParamGenerator<T8> g8_;
+  co.. ParamGenerator<T1> g1_;
+  co.. ParamGenerator<T2> g2_;
+  co.. ParamGenerator<T3> g3_;
+  co.. ParamGenerator<T4> g4_;
+  co.. ParamGenerator<T5> g5_;
+  co.. ParamGenerator<T6> g6_;
+  co.. ParamGenerator<T7> g7_;
+  co.. ParamGenerator<T8> g8_;
 };  // class CartesianProductGenerator8
 
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
     typename T6, typename T7, typename T8, typename T9>
 n.. CartesianProductGenerator9
-    : public ParamGeneratorInterface< ::testing::tuple<T1, T2, T3, T4, T5, T6,
+    : pu.. ParamGeneratorInterface< ::testing::tuple<T1, T2, T3, T4, T5, T6,
         T7, T8, T9> > {
  p..
   typedef ::testing::tuple<T1, T2, T3, T4, T5, T6, T7, T8, T9> ParamType;
 
-  CartesianProductGenerator9(const ParamGenerator<T1>& g1,
-      const ParamGenerator<T2>& g2, const ParamGenerator<T3>& g3,
-      const ParamGenerator<T4>& g4, const ParamGenerator<T5>& g5,
-      const ParamGenerator<T6>& g6, const ParamGenerator<T7>& g7,
-      const ParamGenerator<T8>& g8, const ParamGenerator<T9>& g9)
+  CartesianProductGenerator9(co.. ParamGenerator<T1>& g1,
+      co.. ParamGenerator<T2>& g2, co.. ParamGenerator<T3>& g3,
+      co.. ParamGenerator<T4>& g4, co.. ParamGenerator<T5>& g5,
+      co.. ParamGenerator<T6>& g6, co.. ParamGenerator<T7>& g7,
+      co.. ParamGenerator<T8>& g8, co.. ParamGenerator<T9>& g9)
       : g1_(g1), g2_(g2), g3_(g3), g4_(g4), g5_(g5), g6_(g6), g7_(g7), g8_(g8),
           g9_(g9) {}
   v.. ~CartesianProductGenerator9() {}
 
-  v.. ParamIteratorInterface<ParamType>* Begin() const {
+  v.. ParamIteratorInterface<ParamType>* Begin() co.. {
     return new Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
         g3_.begin(), g4_, g4_.begin(), g5_, g5_.begin(), g6_, g6_.begin(), g7_,
         g7_.begin(), g8_, g8_.begin(), g9_, g9_.begin());
   }
-  v.. ParamIteratorInterface<ParamType>* End() const {
+  v.. ParamIteratorInterface<ParamType>* End() co.. {
     return new Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end(),
         g4_, g4_.end(), g5_, g5_.end(), g6_, g6_.end(), g7_, g7_.end(), g8_,
         g8_.end(), g9_, g9_.end());
   }
 
- private:
-  n.. Iterator : public ParamIteratorInterface<ParamType> {
+ pr..
+  n.. Iterator : pu.. ParamIteratorInterface<ParamType> {
    p..
-    Iterator(const ParamGeneratorInterface<ParamType>* base,
-      const ParamGenerator<T1>& g1,
-      const typename ParamGenerator<T1>::iterator& current1,
-      const ParamGenerator<T2>& g2,
-      const typename ParamGenerator<T2>::iterator& current2,
-      const ParamGenerator<T3>& g3,
-      const typename ParamGenerator<T3>::iterator& current3,
-      const ParamGenerator<T4>& g4,
-      const typename ParamGenerator<T4>::iterator& current4,
-      const ParamGenerator<T5>& g5,
-      const typename ParamGenerator<T5>::iterator& current5,
-      const ParamGenerator<T6>& g6,
-      const typename ParamGenerator<T6>::iterator& current6,
-      const ParamGenerator<T7>& g7,
-      const typename ParamGenerator<T7>::iterator& current7,
-      const ParamGenerator<T8>& g8,
-      const typename ParamGenerator<T8>::iterator& current8,
-      const ParamGenerator<T9>& g9,
-      const typename ParamGenerator<T9>::iterator& current9)
+    Iterator(co.. ParamGeneratorInterface<ParamType>* base,
+      co.. ParamGenerator<T1>& g1,
+      co.. typename ParamGenerator<T1>::iterator& current1,
+      co.. ParamGenerator<T2>& g2,
+      co.. typename ParamGenerator<T2>::iterator& current2,
+      co.. ParamGenerator<T3>& g3,
+      co.. typename ParamGenerator<T3>::iterator& current3,
+      co.. ParamGenerator<T4>& g4,
+      co.. typename ParamGenerator<T4>::iterator& current4,
+      co.. ParamGenerator<T5>& g5,
+      co.. typename ParamGenerator<T5>::iterator& current5,
+      co.. ParamGenerator<T6>& g6,
+      co.. typename ParamGenerator<T6>::iterator& current6,
+      co.. ParamGenerator<T7>& g7,
+      co.. typename ParamGenerator<T7>::iterator& current7,
+      co.. ParamGenerator<T8>& g8,
+      co.. typename ParamGenerator<T8>::iterator& current8,
+      co.. ParamGenerator<T9>& g9,
+      co.. typename ParamGenerator<T9>::iterator& current9)
         : base_(base),
           begin1_(g1.begin()), end1_(g1.end()), current1_(current1),
           begin2_(g2.begin()), end2_(g2.end()), current2_(current2),
@@ -4393,7 +4393,7 @@ n.. CartesianProductGenerator9
     }
     v.. ~Iterator() {}
 
-    v.. const ParamGeneratorInterface<ParamType>* BaseGenerator() const {
+    v.. co.. ParamGeneratorInterface<ParamType>* BaseGenerator() co.. {
       return base_;
     }
     // Advance should not be called on beyond-of-range iterators
@@ -4435,18 +4435,18 @@ n.. CartesianProductGenerator9
       }
       ComputeCurrentValue();
     }
-    v.. ParamIteratorInterface<ParamType>* Clone() const {
+    v.. ParamIteratorInterface<ParamType>* Clone() co.. {
       return new Iterator(*this);
     }
-    v.. const ParamType* Current() const { return current_value_.get(); }
-    v.. bool Equals(const ParamIteratorInterface<ParamType>& other) const {
+    v.. co.. ParamType* Current() co.. { return current_value_.get(); }
+    v.. bo.. Equals(co.. ParamIteratorInterface<ParamType>& other) co.. {
       // Having the same base generator guarantees that the other
       // iterator is of the same type and we can downcast.
       GTEST_CHECK_(BaseGenerator() == other.BaseGenerator())
           << "The program attempted to compare iterators "
-          << "from different generators." << std::endl;
-      const Iterator* typed_other =
-          CheckedDowncastToActualType<const Iterator>(&other);
+          << "from different generators." << st. endl;
+      co.. Iterator* typed_other =
+          CheckedDowncastToActualType<co.. Iterator>(&other);
       // We must report iterators equal if they both point beyond their
       // respective ranges. That can happen in a variety of fashions,
       // so we have to consult AtEnd().
@@ -4463,8 +4463,8 @@ n.. CartesianProductGenerator9
           current9_ == typed_other->current9_);
     }
 
-   private:
-    Iterator(const Iterator& other)
+   pr..
+    Iterator(co.. Iterator& other)
         : base_(other.base_),
         begin1_(other.begin1_),
         end1_(other.end1_),
@@ -4502,7 +4502,7 @@ n.. CartesianProductGenerator9
             *current4_, *current5_, *current6_, *current7_, *current8_,
             *current9_));
     }
-    bool AtEnd() const {
+    bo.. AtEnd() co.. {
       // We must report iterator past the end of the range when either of the
       // component iterators has reached the end of its range.
       return
@@ -4518,109 +4518,109 @@ n.. CartesianProductGenerator9
     }
 
     // No implementation - assignment is unsupported.
-    v.. operator=(const Iterator& other);
+    v.. operator=(co.. Iterator& other);
 
-    const ParamGeneratorInterface<ParamType>* const base_;
+    co.. ParamGeneratorInterface<ParamType>* co.. base_;
     // begin[i]_ and end[i]_ define the i-th range that Iterator traverses.
     // current[i]_ is the actual traversing iterator.
-    const typename ParamGenerator<T1>::iterator begin1_;
-    const typename ParamGenerator<T1>::iterator end1_;
+    co.. typename ParamGenerator<T1>::iterator begin1_;
+    co.. typename ParamGenerator<T1>::iterator end1_;
     typename ParamGenerator<T1>::iterator current1_;
-    const typename ParamGenerator<T2>::iterator begin2_;
-    const typename ParamGenerator<T2>::iterator end2_;
+    co.. typename ParamGenerator<T2>::iterator begin2_;
+    co.. typename ParamGenerator<T2>::iterator end2_;
     typename ParamGenerator<T2>::iterator current2_;
-    const typename ParamGenerator<T3>::iterator begin3_;
-    const typename ParamGenerator<T3>::iterator end3_;
+    co.. typename ParamGenerator<T3>::iterator begin3_;
+    co.. typename ParamGenerator<T3>::iterator end3_;
     typename ParamGenerator<T3>::iterator current3_;
-    const typename ParamGenerator<T4>::iterator begin4_;
-    const typename ParamGenerator<T4>::iterator end4_;
+    co.. typename ParamGenerator<T4>::iterator begin4_;
+    co.. typename ParamGenerator<T4>::iterator end4_;
     typename ParamGenerator<T4>::iterator current4_;
-    const typename ParamGenerator<T5>::iterator begin5_;
-    const typename ParamGenerator<T5>::iterator end5_;
+    co.. typename ParamGenerator<T5>::iterator begin5_;
+    co.. typename ParamGenerator<T5>::iterator end5_;
     typename ParamGenerator<T5>::iterator current5_;
-    const typename ParamGenerator<T6>::iterator begin6_;
-    const typename ParamGenerator<T6>::iterator end6_;
+    co.. typename ParamGenerator<T6>::iterator begin6_;
+    co.. typename ParamGenerator<T6>::iterator end6_;
     typename ParamGenerator<T6>::iterator current6_;
-    const typename ParamGenerator<T7>::iterator begin7_;
-    const typename ParamGenerator<T7>::iterator end7_;
+    co.. typename ParamGenerator<T7>::iterator begin7_;
+    co.. typename ParamGenerator<T7>::iterator end7_;
     typename ParamGenerator<T7>::iterator current7_;
-    const typename ParamGenerator<T8>::iterator begin8_;
-    const typename ParamGenerator<T8>::iterator end8_;
+    co.. typename ParamGenerator<T8>::iterator begin8_;
+    co.. typename ParamGenerator<T8>::iterator end8_;
     typename ParamGenerator<T8>::iterator current8_;
-    const typename ParamGenerator<T9>::iterator begin9_;
-    const typename ParamGenerator<T9>::iterator end9_;
+    co.. typename ParamGenerator<T9>::iterator begin9_;
+    co.. typename ParamGenerator<T9>::iterator end9_;
     typename ParamGenerator<T9>::iterator current9_;
     linked_ptr<ParamType> current_value_;
   };  // class CartesianProductGenerator9::Iterator
 
   // No implementation - assignment is unsupported.
-  v.. operator=(const CartesianProductGenerator9& other);
+  v.. operator=(co.. CartesianProductGenerator9& other);
 
-  const ParamGenerator<T1> g1_;
-  const ParamGenerator<T2> g2_;
-  const ParamGenerator<T3> g3_;
-  const ParamGenerator<T4> g4_;
-  const ParamGenerator<T5> g5_;
-  const ParamGenerator<T6> g6_;
-  const ParamGenerator<T7> g7_;
-  const ParamGenerator<T8> g8_;
-  const ParamGenerator<T9> g9_;
+  co.. ParamGenerator<T1> g1_;
+  co.. ParamGenerator<T2> g2_;
+  co.. ParamGenerator<T3> g3_;
+  co.. ParamGenerator<T4> g4_;
+  co.. ParamGenerator<T5> g5_;
+  co.. ParamGenerator<T6> g6_;
+  co.. ParamGenerator<T7> g7_;
+  co.. ParamGenerator<T8> g8_;
+  co.. ParamGenerator<T9> g9_;
 };  // class CartesianProductGenerator9
 
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
     typename T6, typename T7, typename T8, typename T9, typename T10>
 n.. CartesianProductGenerator10
-    : public ParamGeneratorInterface< ::testing::tuple<T1, T2, T3, T4, T5, T6,
+    : pu.. ParamGeneratorInterface< ::testing::tuple<T1, T2, T3, T4, T5, T6,
         T7, T8, T9, T10> > {
  p..
   typedef ::testing::tuple<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> ParamType;
 
-  CartesianProductGenerator10(const ParamGenerator<T1>& g1,
-      const ParamGenerator<T2>& g2, const ParamGenerator<T3>& g3,
-      const ParamGenerator<T4>& g4, const ParamGenerator<T5>& g5,
-      const ParamGenerator<T6>& g6, const ParamGenerator<T7>& g7,
-      const ParamGenerator<T8>& g8, const ParamGenerator<T9>& g9,
-      const ParamGenerator<T10>& g10)
+  CartesianProductGenerator10(co.. ParamGenerator<T1>& g1,
+      co.. ParamGenerator<T2>& g2, co.. ParamGenerator<T3>& g3,
+      co.. ParamGenerator<T4>& g4, co.. ParamGenerator<T5>& g5,
+      co.. ParamGenerator<T6>& g6, co.. ParamGenerator<T7>& g7,
+      co.. ParamGenerator<T8>& g8, co.. ParamGenerator<T9>& g9,
+      co.. ParamGenerator<T10>& g10)
       : g1_(g1), g2_(g2), g3_(g3), g4_(g4), g5_(g5), g6_(g6), g7_(g7), g8_(g8),
           g9_(g9), g10_(g10) {}
   v.. ~CartesianProductGenerator10() {}
 
-  v.. ParamIteratorInterface<ParamType>* Begin() const {
+  v.. ParamIteratorInterface<ParamType>* Begin() co.. {
     return new Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
         g3_.begin(), g4_, g4_.begin(), g5_, g5_.begin(), g6_, g6_.begin(), g7_,
         g7_.begin(), g8_, g8_.begin(), g9_, g9_.begin(), g10_, g10_.begin());
   }
-  v.. ParamIteratorInterface<ParamType>* End() const {
+  v.. ParamIteratorInterface<ParamType>* End() co.. {
     return new Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end(),
         g4_, g4_.end(), g5_, g5_.end(), g6_, g6_.end(), g7_, g7_.end(), g8_,
         g8_.end(), g9_, g9_.end(), g10_, g10_.end());
   }
 
- private:
-  n.. Iterator : public ParamIteratorInterface<ParamType> {
+ pr..
+  n.. Iterator : pu.. ParamIteratorInterface<ParamType> {
    p..
-    Iterator(const ParamGeneratorInterface<ParamType>* base,
-      const ParamGenerator<T1>& g1,
-      const typename ParamGenerator<T1>::iterator& current1,
-      const ParamGenerator<T2>& g2,
-      const typename ParamGenerator<T2>::iterator& current2,
-      const ParamGenerator<T3>& g3,
-      const typename ParamGenerator<T3>::iterator& current3,
-      const ParamGenerator<T4>& g4,
-      const typename ParamGenerator<T4>::iterator& current4,
-      const ParamGenerator<T5>& g5,
-      const typename ParamGenerator<T5>::iterator& current5,
-      const ParamGenerator<T6>& g6,
-      const typename ParamGenerator<T6>::iterator& current6,
-      const ParamGenerator<T7>& g7,
-      const typename ParamGenerator<T7>::iterator& current7,
-      const ParamGenerator<T8>& g8,
-      const typename ParamGenerator<T8>::iterator& current8,
-      const ParamGenerator<T9>& g9,
-      const typename ParamGenerator<T9>::iterator& current9,
-      const ParamGenerator<T10>& g10,
-      const typename ParamGenerator<T10>::iterator& current10)
+    Iterator(co.. ParamGeneratorInterface<ParamType>* base,
+      co.. ParamGenerator<T1>& g1,
+      co.. typename ParamGenerator<T1>::iterator& current1,
+      co.. ParamGenerator<T2>& g2,
+      co.. typename ParamGenerator<T2>::iterator& current2,
+      co.. ParamGenerator<T3>& g3,
+      co.. typename ParamGenerator<T3>::iterator& current3,
+      co.. ParamGenerator<T4>& g4,
+      co.. typename ParamGenerator<T4>::iterator& current4,
+      co.. ParamGenerator<T5>& g5,
+      co.. typename ParamGenerator<T5>::iterator& current5,
+      co.. ParamGenerator<T6>& g6,
+      co.. typename ParamGenerator<T6>::iterator& current6,
+      co.. ParamGenerator<T7>& g7,
+      co.. typename ParamGenerator<T7>::iterator& current7,
+      co.. ParamGenerator<T8>& g8,
+      co.. typename ParamGenerator<T8>::iterator& current8,
+      co.. ParamGenerator<T9>& g9,
+      co.. typename ParamGenerator<T9>::iterator& current9,
+      co.. ParamGenerator<T10>& g10,
+      co.. typename ParamGenerator<T10>::iterator& current10)
         : base_(base),
           begin1_(g1.begin()), end1_(g1.end()), current1_(current1),
           begin2_(g2.begin()), end2_(g2.end()), current2_(current2),
@@ -4636,7 +4636,7 @@ n.. CartesianProductGenerator10
     }
     v.. ~Iterator() {}
 
-    v.. const ParamGeneratorInterface<ParamType>* BaseGenerator() const {
+    v.. co.. ParamGeneratorInterface<ParamType>* BaseGenerator() co.. {
       return base_;
     }
     // Advance should not be called on beyond-of-range iterators
@@ -4682,18 +4682,18 @@ n.. CartesianProductGenerator10
       }
       ComputeCurrentValue();
     }
-    v.. ParamIteratorInterface<ParamType>* Clone() const {
+    v.. ParamIteratorInterface<ParamType>* Clone() co.. {
       return new Iterator(*this);
     }
-    v.. const ParamType* Current() const { return current_value_.get(); }
-    v.. bool Equals(const ParamIteratorInterface<ParamType>& other) const {
+    v.. co.. ParamType* Current() co.. { return current_value_.get(); }
+    v.. bo.. Equals(co.. ParamIteratorInterface<ParamType>& other) co.. {
       // Having the same base generator guarantees that the other
       // iterator is of the same type and we can downcast.
       GTEST_CHECK_(BaseGenerator() == other.BaseGenerator())
           << "The program attempted to compare iterators "
-          << "from different generators." << std::endl;
-      const Iterator* typed_other =
-          CheckedDowncastToActualType<const Iterator>(&other);
+          << "from different generators." << st. endl;
+      co.. Iterator* typed_other =
+          CheckedDowncastToActualType<co.. Iterator>(&other);
       // We must report iterators equal if they both point beyond their
       // respective ranges. That can happen in a variety of fashions,
       // so we have to consult AtEnd().
@@ -4711,8 +4711,8 @@ n.. CartesianProductGenerator10
           current10_ == typed_other->current10_);
     }
 
-   private:
-    Iterator(const Iterator& other)
+   pr..
+    Iterator(co.. Iterator& other)
         : base_(other.base_),
         begin1_(other.begin1_),
         end1_(other.end1_),
@@ -4753,7 +4753,7 @@ n.. CartesianProductGenerator10
             *current4_, *current5_, *current6_, *current7_, *current8_,
             *current9_, *current10_));
     }
-    bool AtEnd() const {
+    bo.. AtEnd() co.. {
       // We must report iterator past the end of the range when either of the
       // component iterators has reached the end of its range.
       return
@@ -4770,57 +4770,57 @@ n.. CartesianProductGenerator10
     }
 
     // No implementation - assignment is unsupported.
-    v.. operator=(const Iterator& other);
+    v.. operator=(co.. Iterator& other);
 
-    const ParamGeneratorInterface<ParamType>* const base_;
+    co.. ParamGeneratorInterface<ParamType>* co.. base_;
     // begin[i]_ and end[i]_ define the i-th range that Iterator traverses.
     // current[i]_ is the actual traversing iterator.
-    const typename ParamGenerator<T1>::iterator begin1_;
-    const typename ParamGenerator<T1>::iterator end1_;
+    co.. typename ParamGenerator<T1>::iterator begin1_;
+    co.. typename ParamGenerator<T1>::iterator end1_;
     typename ParamGenerator<T1>::iterator current1_;
-    const typename ParamGenerator<T2>::iterator begin2_;
-    const typename ParamGenerator<T2>::iterator end2_;
+    co.. typename ParamGenerator<T2>::iterator begin2_;
+    co.. typename ParamGenerator<T2>::iterator end2_;
     typename ParamGenerator<T2>::iterator current2_;
-    const typename ParamGenerator<T3>::iterator begin3_;
-    const typename ParamGenerator<T3>::iterator end3_;
+    co.. typename ParamGenerator<T3>::iterator begin3_;
+    co.. typename ParamGenerator<T3>::iterator end3_;
     typename ParamGenerator<T3>::iterator current3_;
-    const typename ParamGenerator<T4>::iterator begin4_;
-    const typename ParamGenerator<T4>::iterator end4_;
+    co.. typename ParamGenerator<T4>::iterator begin4_;
+    co.. typename ParamGenerator<T4>::iterator end4_;
     typename ParamGenerator<T4>::iterator current4_;
-    const typename ParamGenerator<T5>::iterator begin5_;
-    const typename ParamGenerator<T5>::iterator end5_;
+    co.. typename ParamGenerator<T5>::iterator begin5_;
+    co.. typename ParamGenerator<T5>::iterator end5_;
     typename ParamGenerator<T5>::iterator current5_;
-    const typename ParamGenerator<T6>::iterator begin6_;
-    const typename ParamGenerator<T6>::iterator end6_;
+    co.. typename ParamGenerator<T6>::iterator begin6_;
+    co.. typename ParamGenerator<T6>::iterator end6_;
     typename ParamGenerator<T6>::iterator current6_;
-    const typename ParamGenerator<T7>::iterator begin7_;
-    const typename ParamGenerator<T7>::iterator end7_;
+    co.. typename ParamGenerator<T7>::iterator begin7_;
+    co.. typename ParamGenerator<T7>::iterator end7_;
     typename ParamGenerator<T7>::iterator current7_;
-    const typename ParamGenerator<T8>::iterator begin8_;
-    const typename ParamGenerator<T8>::iterator end8_;
+    co.. typename ParamGenerator<T8>::iterator begin8_;
+    co.. typename ParamGenerator<T8>::iterator end8_;
     typename ParamGenerator<T8>::iterator current8_;
-    const typename ParamGenerator<T9>::iterator begin9_;
-    const typename ParamGenerator<T9>::iterator end9_;
+    co.. typename ParamGenerator<T9>::iterator begin9_;
+    co.. typename ParamGenerator<T9>::iterator end9_;
     typename ParamGenerator<T9>::iterator current9_;
-    const typename ParamGenerator<T10>::iterator begin10_;
-    const typename ParamGenerator<T10>::iterator end10_;
+    co.. typename ParamGenerator<T10>::iterator begin10_;
+    co.. typename ParamGenerator<T10>::iterator end10_;
     typename ParamGenerator<T10>::iterator current10_;
     linked_ptr<ParamType> current_value_;
   };  // class CartesianProductGenerator10::Iterator
 
   // No implementation - assignment is unsupported.
-  v.. operator=(const CartesianProductGenerator10& other);
+  v.. operator=(co.. CartesianProductGenerator10& other);
 
-  const ParamGenerator<T1> g1_;
-  const ParamGenerator<T2> g2_;
-  const ParamGenerator<T3> g3_;
-  const ParamGenerator<T4> g4_;
-  const ParamGenerator<T5> g5_;
-  const ParamGenerator<T6> g6_;
-  const ParamGenerator<T7> g7_;
-  const ParamGenerator<T8> g8_;
-  const ParamGenerator<T9> g9_;
-  const ParamGenerator<T10> g10_;
+  co.. ParamGenerator<T1> g1_;
+  co.. ParamGenerator<T2> g2_;
+  co.. ParamGenerator<T3> g3_;
+  co.. ParamGenerator<T4> g4_;
+  co.. ParamGenerator<T5> g5_;
+  co.. ParamGenerator<T6> g6_;
+  co.. ParamGenerator<T7> g7_;
+  co.. ParamGenerator<T8> g8_;
+  co.. ParamGenerator<T9> g9_;
+  co.. ParamGenerator<T10> g10_;
 };  // class CartesianProductGenerator10
 
 
@@ -4833,32 +4833,32 @@ n.. CartesianProductGenerator10
 template <n.. Generator1, n.. Generator2>
 n.. CartesianProductHolder2 {
  p..
-CartesianProductHolder2(const Generator1& g1, const Generator2& g2)
+CartesianProductHolder2(co.. Generator1& g1, co.. Generator2& g2)
       : g1_(g1), g2_(g2) {}
   template <typename T1, typename T2>
-  operator ParamGenerator< ::testing::tuple<T1, T2> >() const {
+  operator ParamGenerator< ::testing::tuple<T1, T2> >() co.. {
     return ParamGenerator< ::testing::tuple<T1, T2> >(
         new CartesianProductGenerator2<T1, T2>(
         static_cast<ParamGenerator<T1> >(g1_),
         static_cast<ParamGenerator<T2> >(g2_)));
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const CartesianProductHolder2& other);
+  v.. operator=(co.. CartesianProductHolder2& other);
 
-  const Generator1 g1_;
-  const Generator2 g2_;
+  co.. Generator1 g1_;
+  co.. Generator2 g2_;
 };  // class CartesianProductHolder2
 
 template <n.. Generator1, n.. Generator2, n.. Generator3>
 n.. CartesianProductHolder3 {
  p..
-CartesianProductHolder3(const Generator1& g1, const Generator2& g2,
-    const Generator3& g3)
+CartesianProductHolder3(co.. Generator1& g1, co.. Generator2& g2,
+    co.. Generator3& g3)
       : g1_(g1), g2_(g2), g3_(g3) {}
   template <typename T1, typename T2, typename T3>
-  operator ParamGenerator< ::testing::tuple<T1, T2, T3> >() const {
+  operator ParamGenerator< ::testing::tuple<T1, T2, T3> >() co.. {
     return ParamGenerator< ::testing::tuple<T1, T2, T3> >(
         new CartesianProductGenerator3<T1, T2, T3>(
         static_cast<ParamGenerator<T1> >(g1_),
@@ -4866,24 +4866,24 @@ CartesianProductHolder3(const Generator1& g1, const Generator2& g2,
         static_cast<ParamGenerator<T3> >(g3_)));
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const CartesianProductHolder3& other);
+  v.. operator=(co.. CartesianProductHolder3& other);
 
-  const Generator1 g1_;
-  const Generator2 g2_;
-  const Generator3 g3_;
+  co.. Generator1 g1_;
+  co.. Generator2 g2_;
+  co.. Generator3 g3_;
 };  // class CartesianProductHolder3
 
 template <n.. Generator1, n.. Generator2, n.. Generator3,
     n.. Generator4>
 n.. CartesianProductHolder4 {
  p..
-CartesianProductHolder4(const Generator1& g1, const Generator2& g2,
-    const Generator3& g3, const Generator4& g4)
+CartesianProductHolder4(co.. Generator1& g1, co.. Generator2& g2,
+    co.. Generator3& g3, co.. Generator4& g4)
       : g1_(g1), g2_(g2), g3_(g3), g4_(g4) {}
   template <typename T1, typename T2, typename T3, typename T4>
-  operator ParamGenerator< ::testing::tuple<T1, T2, T3, T4> >() const {
+  operator ParamGenerator< ::testing::tuple<T1, T2, T3, T4> >() co.. {
     return ParamGenerator< ::testing::tuple<T1, T2, T3, T4> >(
         new CartesianProductGenerator4<T1, T2, T3, T4>(
         static_cast<ParamGenerator<T1> >(g1_),
@@ -4892,25 +4892,25 @@ CartesianProductHolder4(const Generator1& g1, const Generator2& g2,
         static_cast<ParamGenerator<T4> >(g4_)));
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const CartesianProductHolder4& other);
+  v.. operator=(co.. CartesianProductHolder4& other);
 
-  const Generator1 g1_;
-  const Generator2 g2_;
-  const Generator3 g3_;
-  const Generator4 g4_;
+  co.. Generator1 g1_;
+  co.. Generator2 g2_;
+  co.. Generator3 g3_;
+  co.. Generator4 g4_;
 };  // class CartesianProductHolder4
 
 template <n.. Generator1, n.. Generator2, n.. Generator3,
     n.. Generator4, n.. Generator5>
 n.. CartesianProductHolder5 {
  p..
-CartesianProductHolder5(const Generator1& g1, const Generator2& g2,
-    const Generator3& g3, const Generator4& g4, const Generator5& g5)
+CartesianProductHolder5(co.. Generator1& g1, co.. Generator2& g2,
+    co.. Generator3& g3, co.. Generator4& g4, co.. Generator5& g5)
       : g1_(g1), g2_(g2), g3_(g3), g4_(g4), g5_(g5) {}
   template <typename T1, typename T2, typename T3, typename T4, typename T5>
-  operator ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5> >() const {
+  operator ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5> >() co.. {
     return ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5> >(
         new CartesianProductGenerator5<T1, T2, T3, T4, T5>(
         static_cast<ParamGenerator<T1> >(g1_),
@@ -4920,28 +4920,28 @@ CartesianProductHolder5(const Generator1& g1, const Generator2& g2,
         static_cast<ParamGenerator<T5> >(g5_)));
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const CartesianProductHolder5& other);
+  v.. operator=(co.. CartesianProductHolder5& other);
 
-  const Generator1 g1_;
-  const Generator2 g2_;
-  const Generator3 g3_;
-  const Generator4 g4_;
-  const Generator5 g5_;
+  co.. Generator1 g1_;
+  co.. Generator2 g2_;
+  co.. Generator3 g3_;
+  co.. Generator4 g4_;
+  co.. Generator5 g5_;
 };  // class CartesianProductHolder5
 
 template <n.. Generator1, n.. Generator2, n.. Generator3,
     n.. Generator4, n.. Generator5, n.. Generator6>
 n.. CartesianProductHolder6 {
  p..
-CartesianProductHolder6(const Generator1& g1, const Generator2& g2,
-    const Generator3& g3, const Generator4& g4, const Generator5& g5,
-    const Generator6& g6)
+CartesianProductHolder6(co.. Generator1& g1, co.. Generator2& g2,
+    co.. Generator3& g3, co.. Generator4& g4, co.. Generator5& g5,
+    co.. Generator6& g6)
       : g1_(g1), g2_(g2), g3_(g3), g4_(g4), g5_(g5), g6_(g6) {}
   template <typename T1, typename T2, typename T3, typename T4, typename T5,
       typename T6>
-  operator ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5, T6> >() const {
+  operator ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5, T6> >() co.. {
     return ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5, T6> >(
         new CartesianProductGenerator6<T1, T2, T3, T4, T5, T6>(
         static_cast<ParamGenerator<T1> >(g1_),
@@ -4952,30 +4952,30 @@ CartesianProductHolder6(const Generator1& g1, const Generator2& g2,
         static_cast<ParamGenerator<T6> >(g6_)));
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const CartesianProductHolder6& other);
+  v.. operator=(co.. CartesianProductHolder6& other);
 
-  const Generator1 g1_;
-  const Generator2 g2_;
-  const Generator3 g3_;
-  const Generator4 g4_;
-  const Generator5 g5_;
-  const Generator6 g6_;
+  co.. Generator1 g1_;
+  co.. Generator2 g2_;
+  co.. Generator3 g3_;
+  co.. Generator4 g4_;
+  co.. Generator5 g5_;
+  co.. Generator6 g6_;
 };  // class CartesianProductHolder6
 
 template <n.. Generator1, n.. Generator2, n.. Generator3,
     n.. Generator4, n.. Generator5, n.. Generator6, n.. Generator7>
 n.. CartesianProductHolder7 {
  p..
-CartesianProductHolder7(const Generator1& g1, const Generator2& g2,
-    const Generator3& g3, const Generator4& g4, const Generator5& g5,
-    const Generator6& g6, const Generator7& g7)
+CartesianProductHolder7(co.. Generator1& g1, co.. Generator2& g2,
+    co.. Generator3& g3, co.. Generator4& g4, co.. Generator5& g5,
+    co.. Generator6& g6, co.. Generator7& g7)
       : g1_(g1), g2_(g2), g3_(g3), g4_(g4), g5_(g5), g6_(g6), g7_(g7) {}
   template <typename T1, typename T2, typename T3, typename T4, typename T5,
       typename T6, typename T7>
   operator ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5, T6,
-      T7> >() const {
+      T7> >() co.. {
     return ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5, T6, T7> >(
         new CartesianProductGenerator7<T1, T2, T3, T4, T5, T6, T7>(
         static_cast<ParamGenerator<T1> >(g1_),
@@ -4987,17 +4987,17 @@ CartesianProductHolder7(const Generator1& g1, const Generator2& g2,
         static_cast<ParamGenerator<T7> >(g7_)));
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const CartesianProductHolder7& other);
+  v.. operator=(co.. CartesianProductHolder7& other);
 
-  const Generator1 g1_;
-  const Generator2 g2_;
-  const Generator3 g3_;
-  const Generator4 g4_;
-  const Generator5 g5_;
-  const Generator6 g6_;
-  const Generator7 g7_;
+  co.. Generator1 g1_;
+  co.. Generator2 g2_;
+  co.. Generator3 g3_;
+  co.. Generator4 g4_;
+  co.. Generator5 g5_;
+  co.. Generator6 g6_;
+  co.. Generator7 g7_;
 };  // class CartesianProductHolder7
 
 template <n.. Generator1, n.. Generator2, n.. Generator3,
@@ -5005,15 +5005,15 @@ template <n.. Generator1, n.. Generator2, n.. Generator3,
     n.. Generator8>
 n.. CartesianProductHolder8 {
  p..
-CartesianProductHolder8(const Generator1& g1, const Generator2& g2,
-    const Generator3& g3, const Generator4& g4, const Generator5& g5,
-    const Generator6& g6, const Generator7& g7, const Generator8& g8)
+CartesianProductHolder8(co.. Generator1& g1, co.. Generator2& g2,
+    co.. Generator3& g3, co.. Generator4& g4, co.. Generator5& g5,
+    co.. Generator6& g6, co.. Generator7& g7, co.. Generator8& g8)
       : g1_(g1), g2_(g2), g3_(g3), g4_(g4), g5_(g5), g6_(g6), g7_(g7),
           g8_(g8) {}
   template <typename T1, typename T2, typename T3, typename T4, typename T5,
       typename T6, typename T7, typename T8>
   operator ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5, T6, T7,
-      T8> >() const {
+      T8> >() co.. {
     return ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5, T6, T7, T8> >(
         new CartesianProductGenerator8<T1, T2, T3, T4, T5, T6, T7, T8>(
         static_cast<ParamGenerator<T1> >(g1_),
@@ -5026,18 +5026,18 @@ CartesianProductHolder8(const Generator1& g1, const Generator2& g2,
         static_cast<ParamGenerator<T8> >(g8_)));
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const CartesianProductHolder8& other);
+  v.. operator=(co.. CartesianProductHolder8& other);
 
-  const Generator1 g1_;
-  const Generator2 g2_;
-  const Generator3 g3_;
-  const Generator4 g4_;
-  const Generator5 g5_;
-  const Generator6 g6_;
-  const Generator7 g7_;
-  const Generator8 g8_;
+  co.. Generator1 g1_;
+  co.. Generator2 g2_;
+  co.. Generator3 g3_;
+  co.. Generator4 g4_;
+  co.. Generator5 g5_;
+  co.. Generator6 g6_;
+  co.. Generator7 g7_;
+  co.. Generator8 g8_;
 };  // class CartesianProductHolder8
 
 template <n.. Generator1, n.. Generator2, n.. Generator3,
@@ -5045,16 +5045,16 @@ template <n.. Generator1, n.. Generator2, n.. Generator3,
     n.. Generator8, n.. Generator9>
 n.. CartesianProductHolder9 {
  p..
-CartesianProductHolder9(const Generator1& g1, const Generator2& g2,
-    const Generator3& g3, const Generator4& g4, const Generator5& g5,
-    const Generator6& g6, const Generator7& g7, const Generator8& g8,
-    const Generator9& g9)
+CartesianProductHolder9(co.. Generator1& g1, co.. Generator2& g2,
+    co.. Generator3& g3, co.. Generator4& g4, co.. Generator5& g5,
+    co.. Generator6& g6, co.. Generator7& g7, co.. Generator8& g8,
+    co.. Generator9& g9)
       : g1_(g1), g2_(g2), g3_(g3), g4_(g4), g5_(g5), g6_(g6), g7_(g7), g8_(g8),
           g9_(g9) {}
   template <typename T1, typename T2, typename T3, typename T4, typename T5,
       typename T6, typename T7, typename T8, typename T9>
   operator ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5, T6, T7, T8,
-      T9> >() const {
+      T9> >() co.. {
     return ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5, T6, T7, T8,
         T9> >(
         new CartesianProductGenerator9<T1, T2, T3, T4, T5, T6, T7, T8, T9>(
@@ -5069,19 +5069,19 @@ CartesianProductHolder9(const Generator1& g1, const Generator2& g2,
         static_cast<ParamGenerator<T9> >(g9_)));
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const CartesianProductHolder9& other);
+  v.. operator=(co.. CartesianProductHolder9& other);
 
-  const Generator1 g1_;
-  const Generator2 g2_;
-  const Generator3 g3_;
-  const Generator4 g4_;
-  const Generator5 g5_;
-  const Generator6 g6_;
-  const Generator7 g7_;
-  const Generator8 g8_;
-  const Generator9 g9_;
+  co.. Generator1 g1_;
+  co.. Generator2 g2_;
+  co.. Generator3 g3_;
+  co.. Generator4 g4_;
+  co.. Generator5 g5_;
+  co.. Generator6 g6_;
+  co.. Generator7 g7_;
+  co.. Generator8 g8_;
+  co.. Generator9 g9_;
 };  // class CartesianProductHolder9
 
 template <n.. Generator1, n.. Generator2, n.. Generator3,
@@ -5089,16 +5089,16 @@ template <n.. Generator1, n.. Generator2, n.. Generator3,
     n.. Generator8, n.. Generator9, n.. Generator10>
 n.. CartesianProductHolder10 {
  p..
-CartesianProductHolder10(const Generator1& g1, const Generator2& g2,
-    const Generator3& g3, const Generator4& g4, const Generator5& g5,
-    const Generator6& g6, const Generator7& g7, const Generator8& g8,
-    const Generator9& g9, const Generator10& g10)
+CartesianProductHolder10(co.. Generator1& g1, co.. Generator2& g2,
+    co.. Generator3& g3, co.. Generator4& g4, co.. Generator5& g5,
+    co.. Generator6& g6, co.. Generator7& g7, co.. Generator8& g8,
+    co.. Generator9& g9, co.. Generator10& g10)
       : g1_(g1), g2_(g2), g3_(g3), g4_(g4), g5_(g5), g6_(g6), g7_(g7), g8_(g8),
           g9_(g9), g10_(g10) {}
   template <typename T1, typename T2, typename T3, typename T4, typename T5,
       typename T6, typename T7, typename T8, typename T9, typename T10>
   operator ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5, T6, T7, T8, T9,
-      T10> >() const {
+      T10> >() co.. {
     return ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5, T6, T7, T8, T9,
         T10> >(
         new CartesianProductGenerator10<T1, T2, T3, T4, T5, T6, T7, T8, T9,
@@ -5115,20 +5115,20 @@ CartesianProductHolder10(const Generator1& g1, const Generator2& g2,
         static_cast<ParamGenerator<T10> >(g10_)));
   }
 
- private:
+ pr..
   // No implementation - assignment is unsupported.
-  v.. operator=(const CartesianProductHolder10& other);
+  v.. operator=(co.. CartesianProductHolder10& other);
 
-  const Generator1 g1_;
-  const Generator2 g2_;
-  const Generator3 g3_;
-  const Generator4 g4_;
-  const Generator5 g5_;
-  const Generator6 g6_;
-  const Generator7 g7_;
-  const Generator8 g8_;
-  const Generator9 g9_;
-  const Generator10 g10_;
+  co.. Generator1 g1_;
+  co.. Generator2 g2_;
+  co.. Generator3 g3_;
+  co.. Generator4 g4_;
+  co.. Generator5 g5_;
+  co.. Generator6 g6_;
+  co.. Generator7 g7_;
+  co.. Generator8 g8_;
+  co.. Generator9 g9_;
+  co.. Generator10 g10_;
 };  // class CartesianProductHolder10
 
 # endif  // GTEST_HAS_COMBINE

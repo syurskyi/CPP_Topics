@@ -8,21 +8,21 @@ pu..
     virtual v.. write() _ 0sy.. pause
 }sy.. pause
 
-c_ RawFile : public File
+c_ RawFile : pu.. File
 {
     v.. write() override
     {
-        std::c__ __  "write" __  std::e..
+        st. c__ __  "write" __  st. e..
     }
 }sy.. pause
 
-c_ ZipFile : public File
+c_ ZipFile : pu.. File
 {
     File *filesy.. pause
 
     v.. write() override
     {
-        std::c__ __  "compress" __  std::e..
+        st. c__ __  "compress" __  st. e..
         file__write()sy.. pause
     }
 

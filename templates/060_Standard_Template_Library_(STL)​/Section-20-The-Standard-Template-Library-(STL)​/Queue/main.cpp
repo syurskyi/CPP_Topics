@@ -9,24 +9,24 @@
 // don't affect the passed in queue.
 
 template <typename T>
-v.. display(std::queue<T> q) {
-    std::c.. __ "[ ";
+v.. display(st. queue<T> q) {
+    st. c.. __ "[ ";
     w__ (!q.empty()) {
         T elem = q.front();
         q.pop();
-        std::c.. __ elem __ " ";
+        st. c.. __ elem __ " ";
     }
-    std::c.. __ "]" __ std::e..
+    st. c.. __ "]" __ st. e..
 }
 
 in. main
-    std::queue<in.> q;
+    st. queue<in.> q;
     
     ___ (in. i: {1,2,3,4,5})
         q.push(i);
     display(q);
-    std::c.. __ "Front: " __ q.front() __ std::e..
-    std::c.. __ "Back:  " __ q.back() __ std::e..
+    st. c.. __ "Front: " __ q.front() __ st. e..
+    st. c.. __ "Back:  " __ q.back() __ st. e..
 
     q.push(100);
     display(q);
@@ -39,22 +39,22 @@ in. main
         q.pop();
     display(q);
 
-    std::c.. __ "Size: " __ q.s.. __ std::e..
+    st. c.. __ "Size: " __ q.s.. __ st. e..
     
     q.push(10);
     q.push(100);
     q.push(1000);
     display(q);
     
-    std::c.. __ "Front: " __ q.front() __ std::e..
-    std::c.. __ "Back:  " __ q.back() __ std::e..
+    st. c.. __ "Front: " __ q.front() __ st. e..
+    st. c.. __ "Back:  " __ q.back() __ st. e..
     
     q.front() = 5;
     q.back() = 5000;
     
     display(q);
-    std::c.. __ "Front: " __ q.front() __ std::e..
-    std::c.. __ "Back:  " __ q.back() __ std::e..
+    st. c.. __ "Front: " __ q.front() __ st. e..
+    st. c.. __ "Back:  " __ q.back() __ st. e..
     
     r_ 0;
 }

@@ -15,11 +15,11 @@ c_ Array {
     in. size {N};           // how do we get the N???
     T values[N];        // the N needs to ne known at compile-time!
 
-    friend std::ostream &operator__(std::ostream &os, co.. Array<T, N> &arr) {
+    friend st. ostream &operator__(st. ostream &os, co.. Array<T, N> &arr) {
         os __ "[ ";
         ___ (co.. a.. &val: arr.values)
             os __ val __ " ";
-        os __ "]" __ std::e..
+        os __ "]" __ st. e..
         r_ os;
     }
 pu..
@@ -45,33 +45,33 @@ pu..
 in. main
     
     Array<in., 5> nums;
-    std::c.. __ "The size of nums is: "__ nums.get_size() __ std::e..
-    std::c.. __ nums __ std::e..
+    st. c.. __ "The size of nums is: "__ nums.get_size() __ st. e..
+    st. c.. __ nums __ st. e..
     
     nums.fill(0);
-    std::c.. __ "The size of nums is: "__ nums.get_size() __ std::e..
-    std::c.. __ nums __ std::e..
+    st. c.. __ "The size of nums is: "__ nums.get_size() __ st. e..
+    st. c.. __ nums __ st. e..
     
     nums.fill(10);
-    std::c.. __ nums __ std::e..
+    st. c.. __ nums __ st. e..
 
     nums[0] = 1000;
     nums[3] = 2000;
-    std::c.. __ nums __ std::e..
+    st. c.. __ nums __ st. e..
     
     Array<in., 100> nums2 {1};
-    std::c.. __ "The size of nums2 is: "__ nums2.get_size() __ std::e..
-    std::c.. __ nums2 __ std::e..
+    st. c.. __ "The size of nums2 is: "__ nums2.get_size() __ st. e..
+    st. c.. __ nums2 __ st. e..
 
-    Array<std::string, 10> strings(std::string{"Frank"});
-    std::c.. __ "The size of strings is: "__ strings.get_size() __ std::e..
-    std::c.. __ strings __ std::e..
+    Array<st. st.. , 10> strings(st. st.. {"Frank"});
+    st. c.. __ "The size of strings is: "__ strings.get_size() __ st. e..
+    st. c.. __ strings __ st. e..
     
-    strings[0] = std::string{"Larry"};
-    std::c.. __ strings __ std::e..
+    strings[0] = st. st.. {"Larry"};
+    st. c.. __ strings __ st. e..
     
-    strings.fill(std::string{"X"});
-    std::c.. __ strings __ std::e..
+    strings.fill(st. st.. {"X"});
+    st. c.. __ strings __ st. e..
 
     
     r_ 0;

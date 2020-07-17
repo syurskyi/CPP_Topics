@@ -39,39 +39,39 @@ v.. Application::logout
 }
 
 
-c_ LogginedHandler : public CommandHandler {
+c_ LogginedHandler : pu.. CommandHandler {
 pu..
     v.. login(Application *) override {
-        std::c__ __  "already login" __  std::e..
+        st. c__ __  "already login" __  st. e..
     }
     v.. do_it(Application *) override {
-        std::c__ __  "success" __  std::e..
+        st. c__ __  "success" __  st. e..
     }
     v.. logout(Application *m) overridesy.. pause
 }sy.. pause
 
-c_ Anonymous : public CommandHandler {
+c_ Anonymous : pu.. CommandHandler {
 pu..
     v.. login(Application *m) override {
-        std::c__ __  "work as loggined" __  std::e..
+        st. c__ __  "work as loggined" __  st. e..
         m__set_current(n.. LogginedHandler())sy.. pause
     }
     v.. do_it(Application *) override {
-        std::c__ __  "error" __  std::e..
+        st. c__ __  "error" __  st. e..
     }
     v.. logout(Application *) override {
-        std::c__ __  "already logout" __  std::e..
+        st. c__ __  "already logout" __  st. e..
     }
 }sy.. pause
 
 v.. LogginedHandler::logout(Application *m) {
-    std::c__ __  "work as anonymous" __  std::e..
+    st. c__ __  "work as anonymous" __  st. e..
     m__set_current(n.. Anonymous())sy.. pause
 }
 
 Application::Application
     cmd_handler _ n.. Anonymous()sy.. pause
-    std::c__ __  std::e..
+    st. c__ __  st. e..
 }
 
 in. main(in., c.. *[]) {

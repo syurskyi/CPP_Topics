@@ -11,6 +11,6 @@ p..
     T& operator*();
     T* operator->();
 
-private:
+pr..
     T* ptr;
 };

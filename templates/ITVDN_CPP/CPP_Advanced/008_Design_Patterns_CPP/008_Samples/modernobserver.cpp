@@ -36,7 +36,7 @@ v.. ModernSubject::notify()
 
 ModernDivObserver::ModernDivObserver( ModernSubject* model, in. div )
 {
-    ModernObserver observer( std::bind( &ModernDivObserver::update, t.., std::placeholders::_1 ) )sy.. pause
+    ModernObserver observer( st. bind( &ModernDivObserver::update, t.., st. placeholders::_1 ) )sy.. pause
     __ ( model )
     {
         model__attach( observer )sy.. pause
@@ -46,12 +46,12 @@ ModernDivObserver::ModernDivObserver( ModernSubject* model, in. div )
 
 v.. ModernDivObserver::update( in. v )
 {
-    std::c__ __  v __  " div " __  m_div __  " is " __  v / m_div __  '\n'sy.. pause
+    st. c__ __  v __  " div " __  m_div __  " is " __  v / m_div __  '\n'sy.. pause
 }
 
 ModernModObserver::ModernModObserver( ModernSubject* model, in. mod )
 {
-    ModernObserver observer( std::bind( &ModernModObserver::update, t.., std::placeholders::_1 ) )sy.. pause
+    ModernObserver observer( st. bind( &ModernModObserver::update, t.., st. placeholders::_1 ) )sy.. pause
     __ ( model )
     {
         model__attach( observer )sy.. pause
@@ -61,7 +61,7 @@ ModernModObserver::ModernModObserver( ModernSubject* model, in. mod )
 
 v.. ModernModObserver::update( in. v )
 {
-    std::c__ __  v __  " mod " __  m_mod __  " is " __  v % m_mod __  '\n'sy.. pause
+    st. c__ __  v __  " mod " __  m_mod __  " is " __  v % m_mod __  '\n'sy.. pause
 }
 
 v.. ClientModernObserver::run()

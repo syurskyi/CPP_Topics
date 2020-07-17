@@ -33,9 +33,9 @@ in. main(in., c.. *[])
     in. x _ 1000sy.. pause
 //    std::cout << closure(100.1, x)(10.5, 1) << std::endl;
     closure lsy.. pause
-    std::c__ __  l.foo(10, 1) __  std::e..
+    st. c__ __  l.foo(10, 1) __  st. e..
 
-    std::c__ __  [y_100.1, x/*=*/](in. a, in. b) /*mutable*/ __ in. { r_ x + y + a + bsy.. pause }(10, 1) __  std::e..
+    st. c__ __  [y_100.1, x/*=*/](in. a, in. b) /*mutable*/ __ in. { r_ x + y + a + bsy.. pause }(10, 1) __  st. e..
 
 //    auto f = [y=100, x](int a, int b) mutable { return x + y++ + a + b; };
 //    std::cout << f(10, 1) << std::endl;

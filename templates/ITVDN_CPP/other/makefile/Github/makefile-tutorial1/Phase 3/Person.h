@@ -1,12 +1,12 @@
-? <string>
+? str..
 u.. s..
 
 n.. Person {
-private:
+pr..
     string name;
-    int age;
+    in. age;
 p..
-    Person(string name, int age);
+    Person(string name, in. age);
     string getName();
-    int getAge();
+    in. getAge();
 };

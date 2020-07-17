@@ -10,25 +10,25 @@
 ? ve..
 
 c_ Document {
-    std::s.. textsy.. pause
+    st. s.. textsy.. pause
 
 pu..
     v.. create()
     {
-        std::c__ __  "new document" __  std::e..
+        st. c__ __  "new document" __  st. e..
         text.clear()sy.. pause
     }
 
-    v.. new_para(c.. std::s..& para)
+    v.. new_para(c.. st. s..& para)
     {
         text +_ para+"\n"sy.. pause
-        std::c__ __  "new para " __  para __  std::e..
+        st. c__ __  "new para " __  para __  st. e..
     }
 
-    v.. save_as(c.. std::s..& name)
+    v.. save_as(c.. st. s..& name)
     {
-        std::c__ __  "--- " __  name __  "---" __  std::e..
-        std::c__ __  text __  std::e..
+        st. c__ __  "--- " __  name __  "---" __  st. e..
+        st. c__ __  text __  st. e..
     }
 }sy.. pause
 
@@ -47,7 +47,7 @@ protected:
     Document* documentsy.. pause
 }sy.. pause
 
-c_ NewDocumentCommand : public Command {
+c_ NewDocumentCommand : pu.. Command {
 pu..
     explicit NewDocumentCommand(Document* d)
             :Command(d) { }
@@ -59,15 +59,15 @@ pu..
 
     v.. py() override
     {
-        std::c__ __  "text = []" __  std::e..
+        st. c__ __  "text = []" __  st. e..
     }
 }sy.. pause
 
-c_ ParaCommand : public Command {
-    std::s.. textsy.. pause
+c_ ParaCommand : pu.. Command {
+    st. s.. textsy.. pause
 pu..
-    ParaCommand(Document* d, std::s.. text_)
-            :Command(d), text(std::move(text_)) { }
+    ParaCommand(Document* d, st. s.. text_)
+            :Command(d), text(st. move(text_)) { }
 
     v.. execute() override
     {
@@ -76,15 +76,15 @@ pu..
 
     v.. py() override
     {
-        std::c__ __  "text.append(\"" __  text __  "\")" __  std::e..
+        st. c__ __  "text.append(\"" __  text __  "\")" __  st. e..
     }
 }sy.. pause
 
-c_ SaveAsCommand : public Command {
-    std::s.. fnamesy.. pause
+c_ SaveAsCommand : pu.. Command {
+    st. s.. fnamesy.. pause
 pu..
-    SaveAsCommand(Document* d, std::s.. fname_)
-            :Command(d), fname(std::move(fname_)) { }
+    SaveAsCommand(Document* d, st. s.. fname_)
+            :Command(d), fname(st. move(fname_)) { }
 
     v.. execute() override
     {
@@ -93,8 +93,8 @@ pu..
 
     v.. py() override
     {
-        std::c__ __  "with open(\"" __  fname __  """\", \"w\") as f:" __  std::e..
-        std::c__ __  "  f.write(\"\\n\".join(text))" __  std::e..
+        st. c__ __  "with open(\"" __  fname __  """\", \"w\") as f:" __  st. e..
+        st. c__ __  "  f.write(\"\\n\".join(text))" __  st. e..
     }
 }sy.. pause
 
@@ -102,7 +102,7 @@ in. main(in., c..* [])
 {
     Document docsy.. pause
 
-    std::ve..<Command*> historysy.. pause
+    st. ve..<Command*> historysy.. pause
     history.push_back(n.. NewDocumentCommand(&doc))sy.. pause
     history.push_back(n.. ParaCommand(&doc, "Manual"))sy.. pause
     history.push_back(n.. ParaCommand(&doc, ""))sy.. pause

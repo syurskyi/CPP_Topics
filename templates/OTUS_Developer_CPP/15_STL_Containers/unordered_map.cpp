@@ -3,10 +3,10 @@
 ? <unordered_map>
 
 in. main
-    std::unordered_map<std::s.., std::s..> um{{"one", "один"},
+    st. unordered_map<st. s.., st. s..> um{{"one", "один"},
                                                     {"one", "раз"},
                                                     {"two", "два"}}sy.. pause
     ___ (c.. a.. &[en, ru]: um) {
-        std::c__ __  en __  " <=> " __  ru __  std::e..
+        st. c__ __  en __  " <=> " __  ru __  st. e..
     }
 }

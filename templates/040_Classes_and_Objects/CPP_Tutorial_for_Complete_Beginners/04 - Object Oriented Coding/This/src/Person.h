@@ -12,13 +12,13 @@ _de.. PERSON_H_
 u... s..
 
 n.. Person {
-private:
+pr..
 	string name;
-	int age;
+	in. age;
 
 p..
 	Person(): name("unnamed"), age(0) {};
-	Person(string name, int age): name(name), age(age) {};
+	Person(string name, in. age): name(name), age(age) {};
 
 	string toString();
 };

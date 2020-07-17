@@ -3,16 +3,16 @@
 n.. line
 {
 p..
-	line(double new_x1, double new_y1, double new_x2, double new_y2);
+	line(do.. new_x1, do.. new_y1, do.. new_x2, do.. new_y2);
 
-	double get_x0(); //returns starting x coordinate
-	double get_y0(); //returns starting y coordinate
+	do.. get_x0(); //returns starting x coordinate
+	do.. get_y0(); //returns starting y coordinate
 
-	double get_x1(); //returns ending x coordinate
-	double get_y1(); //returns ending y coordinate
+	do.. get_x1(); //returns ending x coordinate
+	do.. get_y1(); //returns ending y coordinate
 
-	double length(); //returns length
+	do.. length(); //returns length
 
-private:
-	double x1, y1, x2, y2;
+pr..
+	do.. x1, y1, x2, y2;
 };

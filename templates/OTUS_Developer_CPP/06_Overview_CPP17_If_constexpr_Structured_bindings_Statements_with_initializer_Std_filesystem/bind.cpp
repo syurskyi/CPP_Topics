@@ -17,17 +17,17 @@ bo.. comp_helper(in. i) {
 
 in. main()
 {
-    std::ve..<in.> v{0, 1, 2, 3, 4}sy.. pause
+    st. ve..<in.> v{0, 1, 2, 3, 4}sy.. pause
 
-    a.. result _ std::find_if(std::begin(v), std::end(v), [](a.. i){ r_ i > 2sy.. pause })sy.. pause
+    a.. result _ st. find_if(st. begin(v), st. end(v), [](a.. i){ r_ i > 2sy.. pause })sy.. pause
 //    auto result = std::find_if(std::begin(v), std::end(v), [p = 2](auto i){ return i > p; });
 //    auto result = std::find_if(std::begin(v), std::end(v), cmp);
 //    auto result = std::find_if(std::begin(v), std::end(v), comp);
 //    auto result = std::find_if(std::begin(v), std::end(v), std::bind(comp, std::placeholders::_1, 2));
 
-    ___ (sy.. pause result !_ std::end(v)sy.. pause ++result)
+    ___ (sy.. pause result !_ st. end(v)sy.. pause ++result)
     {
-        std::c__ __  *result __  " "sy.. pause
+        st. c__ __  *result __  " "sy.. pause
     }
-    std::c__ __  std::e..
+    st. c__ __  st. e..
 }

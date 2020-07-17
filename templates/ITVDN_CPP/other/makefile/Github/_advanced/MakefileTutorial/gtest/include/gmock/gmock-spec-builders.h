@@ -63,8 +63,8 @@ _de.. GMOCK_INCLUDE_GMOCK_GMOCK_SPEC_BUILDERS_H_
 ? <map>
 ? <set>
 ? <sstream>
-? <string>
-? <vector>
+? str..
+? ve..
 ? "gmock/gmock-actions.h"
 ? "gmock/gmock-cardinalities.h"
 ? "gmock/gmock-matchers.h"
@@ -130,7 +130,7 @@ n.. GTEST_API_ UntypedFunctionMockerBase {
   // Verifies that all expectations on this mock function have been
   // satisfied.  Reports one or more Google Test non-fatal failures
   // and returns false if not.
-  bool VerifyAndClearExpectationsLocked()
+  bo.. VerifyAndClearExpectationsLocked()
       GTEST_EXCLUSIVE_LOCK_REQUIRED_(g_gmock_mutex);
 
   // Clears the ON_CALL()s set on this mock function.
@@ -147,20 +147,20 @@ n.. GTEST_API_ UntypedFunctionMockerBase {
   // action fails.
   // L = *
   v.. UntypedActionResultHolderBase* UntypedPerformDefaultAction(
-      v..* untyped_args, const std::string& call_description) const = 0;
+      v..* untyped_args, co.. st. string& call_description) co.. = 0;
 
   // Performs the given action with the given arguments and returns
   // the action's result.
   // L = *
   v.. UntypedActionResultHolderBase* UntypedPerformAction(
-      const v..* untyped_action, v..* untyped_args) const = 0;
+      co.. v..* untyped_action, v..* untyped_args) co.. = 0;
 
   // Writes a message that the call is uninteresting (i.e. neither
   // explicitly expected nor explicitly unexpected) to the given
   // ostream.
   v.. v.. UntypedDescribeUninterestingCall(
-      const v..* untyped_args,
-      ::std::ostream* os) const
+      co.. v..* untyped_args,
+      ::st. ostream* os) co..
           GTEST_LOCK_EXCLUDED_(g_gmock_mutex) = 0;
 
   // Returns the expectation that matches the given function arguments
@@ -169,39 +169,39 @@ n.. GTEST_API_ UntypedFunctionMockerBase {
   // performed (or NULL if the action is "do default"), and
   // is_excessive is modified to indicate whether the call exceeds the
   // expected number.
-  v.. const ExpectationBase* UntypedFindMatchingExpectation(
-      const v..* untyped_args,
-      const v..** untyped_action, bool* is_excessive,
-      ::std::ostream* what, ::std::ostream* why)
+  v.. co.. ExpectationBase* UntypedFindMatchingExpectation(
+      co.. v..* untyped_args,
+      co.. v..** untyped_action, bo..* is_excessive,
+      ::st. ostream* what, ::st. ostream* why)
           GTEST_LOCK_EXCLUDED_(g_gmock_mutex) = 0;
 
   // Prints the given function arguments to the ostream.
-  v.. v.. UntypedPrintArgs(const v..* untyped_args,
-                                ::std::ostream* os) const = 0;
+  v.. v.. UntypedPrintArgs(co.. v..* untyped_args,
+                                ::st. ostream* os) co.. = 0;
 
   // Sets the mock object this mock method belongs to, and registers
   // this information in the global mock registry.  Will be called
   // whenever an EXPECT_CALL() or ON_CALL() is executed on this mock
   // method.
   // TODO(wan@google.com): rename to SetAndRegisterOwner().
-  v.. RegisterOwner(const v..* mock_obj)
+  v.. RegisterOwner(co.. v..* mock_obj)
       GTEST_LOCK_EXCLUDED_(g_gmock_mutex);
 
   // Sets the mock object this mock method belongs to, and sets the
   // name of the mock function.  Will be called upon each invocation
   // of this mock function.
-  v.. SetOwnerAndName(const v..* mock_obj, const char* name)
+  v.. SetOwnerAndName(co.. v..* mock_obj, co.. ch..* name)
       GTEST_LOCK_EXCLUDED_(g_gmock_mutex);
 
   // Returns the mock object this mock method belongs to.  Must be
   // called after RegisterOwner() or SetOwnerAndName() has been
   // called.
-  const v..* MockObject() const
+  co.. v..* MockObject() co..
       GTEST_LOCK_EXCLUDED_(g_gmock_mutex);
 
   // Returns the name of this mock method.  Must be called after
   // SetOwnerAndName() has been called.
-  const char* Name() const
+  co.. ch..* Name() co..
       GTEST_LOCK_EXCLUDED_(g_gmock_mutex);
 
   // Returns the result of invoking this mock function with the given
@@ -211,10 +211,10 @@ n.. GTEST_API_ UntypedFunctionMockerBase {
   UntypedActionResultHolderBase* UntypedInvokeWith(v..* untyped_args)
       GTEST_LOCK_EXCLUDED_(g_gmock_mutex);
 
- protected:
-  typedef std::vector<const v..*> UntypedOnCallSpecs;
+ pr..
+  typedef st. ve..<co.. v..*> UntypedOnCallSpecs;
 
-  typedef std::vector<internal::linked_ptr<ExpectationBase> >
+  typedef st. ve..<internal::linked_ptr<ExpectationBase> >
   UntypedExpectations;
 
   // Returns an Expectation object that references and co-owns exp,
@@ -224,11 +224,11 @@ n.. GTEST_API_ UntypedFunctionMockerBase {
   // Address of the mock object this mock method belongs to.  Only
   // valid after this mock method has been called or
   // ON_CALL/EXPECT_CALL has been invoked on it.
-  const v..* mock_obj_;  // Protected by g_gmock_mutex.
+  co.. v..* mock_obj_;  // Protected by g_gmock_mutex.
 
   // Name of the function being mocked.  Only valid after this mock
   // method has been called.
-  const char* name_;  // Protected by g_gmock_mutex.
+  co.. ch..* name_;  // Protected by g_gmock_mutex.
 
   // All default action specs for this function mocker.
   UntypedOnCallSpecs untyped_on_call_specs_;
@@ -249,14 +249,14 @@ n.. GTEST_API_ UntypedFunctionMockerBase {
 n.. UntypedOnCallSpecBase {
  p..
   // The arguments are the location of the ON_CALL() statement.
-  UntypedOnCallSpecBase(const char* a_file, int a_line)
+  UntypedOnCallSpecBase(co.. ch..* a_file, in. a_line)
       : file_(a_file), line_(a_line), last_clause_(kNone) {}
 
   // Where in the source file was the default action spec defined?
-  const char* file() const { return file_; }
-  int line() const { return line_; }
+  co.. ch..* file() co.. { return file_; }
+  in. line() co.. { return line_; }
 
- protected:
+ pr..
   // Gives each clause in the ON_CALL() statement a name.
   enum Clause {
     // Do not change the order of the enum members!  The run-time
@@ -267,19 +267,19 @@ n.. UntypedOnCallSpecBase {
   };
 
   // Asserts that the ON_CALL() statement has a certain property.
-  v.. AssertSpecProperty(bool property,
-                          const std::string& failure_message) const {
+  v.. AssertSpecProperty(bo.. property,
+                          co.. st. string& failure_message) co.. {
     Assert(property, file_, line_, failure_message);
   }
 
   // Expects that the ON_CALL() statement has a certain property.
-  v.. ExpectSpecProperty(bool property,
-                          const std::string& failure_message) const {
+  v.. ExpectSpecProperty(bo.. property,
+                          co.. st. string& failure_message) co.. {
     Expect(property, file_, line_, failure_message);
   }
 
-  const char* file_;
-  int line_;
+  co.. ch..* file_;
+  in. line_;
 
   // The last clause in the ON_CALL() statement as seen so far.
   // Initially kNone and changes as the statement is parsed.
@@ -288,26 +288,26 @@ n.. UntypedOnCallSpecBase {
 
 // This template class implements an ON_CALL spec.
 template <typename F>
-n.. OnCallSpec : public UntypedOnCallSpecBase {
+n.. OnCallSpec : pu.. UntypedOnCallSpecBase {
  p..
   typedef typename Function<F>::ArgumentTuple ArgumentTuple;
   typedef typename Function<F>::ArgumentMatcherTuple ArgumentMatcherTuple;
 
   // Constructs an OnCallSpec object from the information inside
   // the parenthesis of an ON_CALL() statement.
-  OnCallSpec(const char* a_file, int a_line,
-             const ArgumentMatcherTuple& matchers)
+  OnCallSpec(co.. ch..* a_file, in. a_line,
+             co.. ArgumentMatcherTuple& matchers)
       : UntypedOnCallSpecBase(a_file, a_line),
         matchers_(matchers),
         // By default, extra_matcher_ should match anything.  However,
         // we cannot initialize it with _ as that triggers a compiler
         // bug in Symbian's C++ compiler (cannot decide between two
         // overloaded constructors of Matcher<const ArgumentTuple&>).
-        extra_matcher_(A<const ArgumentTuple&>()) {
+        extra_matcher_(A<co.. ArgumentTuple&>()) {
   }
 
   // Implements the .With() clause.
-  OnCallSpec& With(const Matcher<const ArgumentTuple&>& m) {
+  OnCallSpec& With(co.. Matcher<co.. ArgumentTuple&>& m) {
     // Makes sure this is called at most once.
     ExpectSpecProperty(last_clause_ < kWith,
                        ".With() cannot appear "
@@ -319,7 +319,7 @@ n.. OnCallSpec : public UntypedOnCallSpecBase {
   }
 
   // Implements the .WillByDefault() clause.
-  OnCallSpec& WillByDefault(const Action<F>& action) {
+  OnCallSpec& WillByDefault(co.. Action<F>& action) {
     ExpectSpecProperty(last_clause_ < kWillByDefault,
                        ".WillByDefault() must appear "
                        "exactly once in an ON_CALL().");
@@ -332,19 +332,19 @@ n.. OnCallSpec : public UntypedOnCallSpecBase {
   }
 
   // Returns true iff the given arguments match the matchers.
-  bool Matches(const ArgumentTuple& args) const {
+  bo.. Matches(co.. ArgumentTuple& args) co.. {
     return TupleMatches(matchers_, args) && extra_matcher_.Matches(args);
   }
 
   // Returns the action specified by the user.
-  const Action<F>& GetAction() const {
+  co.. Action<F>& GetAction() co.. {
     AssertSpecProperty(last_clause_ == kWillByDefault,
                        ".WillByDefault() must appear exactly "
                        "once in an ON_CALL().");
     return action_;
   }
 
- private:
+ pr..
   // The information in statement
   //
   //   ON_CALL(mock_object, Method(matchers))
@@ -359,7 +359,7 @@ n.. OnCallSpec : public UntypedOnCallSpecBase {
   //   multi-argument-matcher                  => extra_matcher_
   //   action                                  => action_
   ArgumentMatcherTuple matchers_;
-  Matcher<const ArgumentTuple&> extra_matcher_;
+  Matcher<co.. ArgumentTuple&> extra_matcher_;
   Action<F> action_;
 };  // class OnCallSpec
 
@@ -379,22 +379,22 @@ n.. GTEST_API_ Mock {
 
   // Tells Google Mock to ignore mock_obj when checking for leaked
   // mock objects.
-  static v.. AllowLeak(const v..* mock_obj)
+  st.. v.. AllowLeak(co.. v..* mock_obj)
       GTEST_LOCK_EXCLUDED_(internal::g_gmock_mutex);
 
   // Verifies and clears all expectations on the given mock object.
   // If the expectations aren't satisfied, generates one or more
   // Google Test non-fatal failures and returns false.
-  static bool VerifyAndClearExpectations(v..* mock_obj)
+  st.. bo.. VerifyAndClearExpectations(v..* mock_obj)
       GTEST_LOCK_EXCLUDED_(internal::g_gmock_mutex);
 
   // Verifies all expectations on the given mock object and clears its
   // default actions and expectations.  Returns true iff the
   // verification was successful.
-  static bool VerifyAndClear(v..* mock_obj)
+  st.. bo.. VerifyAndClear(v..* mock_obj)
       GTEST_LOCK_EXCLUDED_(internal::g_gmock_mutex);
 
- private:
+ pr..
   friend n.. internal::UntypedFunctionMockerBase;
 
   // Needed for a function mocker to register itself (so that we know
@@ -413,58 +413,58 @@ n.. GTEST_API_ Mock {
 
   // Tells Google Mock to allow uninteresting calls on the given mock
   // object.
-  static v.. AllowUninterestingCalls(const v..* mock_obj)
+  st.. v.. AllowUninterestingCalls(co.. v..* mock_obj)
       GTEST_LOCK_EXCLUDED_(internal::g_gmock_mutex);
 
   // Tells Google Mock to warn the user about uninteresting calls on
   // the given mock object.
-  static v.. WarnUninterestingCalls(const v..* mock_obj)
+  st.. v.. WarnUninterestingCalls(co.. v..* mock_obj)
       GTEST_LOCK_EXCLUDED_(internal::g_gmock_mutex);
 
   // Tells Google Mock to fail uninteresting calls on the given mock
   // object.
-  static v.. FailUninterestingCalls(const v..* mock_obj)
+  st.. v.. FailUninterestingCalls(co.. v..* mock_obj)
       GTEST_LOCK_EXCLUDED_(internal::g_gmock_mutex);
 
   // Tells Google Mock the given mock object is being destroyed and
   // its entry in the call-reaction table should be removed.
-  static v.. UnregisterCallReaction(const v..* mock_obj)
+  st.. v.. UnregisterCallReaction(co.. v..* mock_obj)
       GTEST_LOCK_EXCLUDED_(internal::g_gmock_mutex);
 
   // Returns the reaction Google Mock will have on uninteresting calls
   // made on the given mock object.
-  static internal::CallReaction GetReactionOnUninterestingCalls(
-      const v..* mock_obj)
+  st.. internal::CallReaction GetReactionOnUninterestingCalls(
+      co.. v..* mock_obj)
           GTEST_LOCK_EXCLUDED_(internal::g_gmock_mutex);
 
   // Verifies that all expectations on the given mock object have been
   // satisfied.  Reports one or more Google Test non-fatal failures
   // and returns false if not.
-  static bool VerifyAndClearExpectationsLocked(v..* mock_obj)
+  st.. bo.. VerifyAndClearExpectationsLocked(v..* mock_obj)
       GTEST_EXCLUSIVE_LOCK_REQUIRED_(internal::g_gmock_mutex);
 
   // Clears all ON_CALL()s set on the given mock object.
-  static v.. ClearDefaultActionsLocked(v..* mock_obj)
+  st.. v.. ClearDefaultActionsLocked(v..* mock_obj)
       GTEST_EXCLUSIVE_LOCK_REQUIRED_(internal::g_gmock_mutex);
 
   // Registers a mock object and a mock method it owns.
-  static v.. Register(
-      const v..* mock_obj,
+  st.. v.. Register(
+      co.. v..* mock_obj,
       internal::UntypedFunctionMockerBase* mocker)
           GTEST_LOCK_EXCLUDED_(internal::g_gmock_mutex);
 
   // Tells Google Mock where in the source code mock_obj is used in an
   // ON_CALL or EXPECT_CALL.  In case mock_obj is leaked, this
   // information helps the user identify which object it is.
-  static v.. RegisterUseByOnCallOrExpectCall(
-      const v..* mock_obj, const char* file, int line)
+  st.. v.. RegisterUseByOnCallOrExpectCall(
+      co.. v..* mock_obj, co.. ch..* file, in. line)
           GTEST_LOCK_EXCLUDED_(internal::g_gmock_mutex);
 
   // Unregisters a mock method; removes the owning mock object from
   // the registry when the last mock method associated with it has
   // been unregistered.  This is called only in the destructor of
   // FunctionMockerBase.
-  static v.. UnregisterLocked(internal::UntypedFunctionMockerBase* mocker)
+  st.. v.. UnregisterLocked(internal::UntypedFunctionMockerBase* mocker)
       GTEST_EXCLUSIVE_LOCK_REQUIRED_(internal::g_gmock_mutex);
 };  // class Mock
 
@@ -511,13 +511,13 @@ n.. GTEST_API_ Expectation {
   // intended, so we don't need to define our own.
 
   // Returns true iff rhs references the same expectation as this object does.
-  bool operator==(const Expectation& rhs) const {
+  bo.. operator==(co.. Expectation& rhs) co.. {
     return expectation_base_ == rhs.expectation_base_;
   }
 
-  bool operator!=(const Expectation& rhs) const { return !(*this == rhs); }
+  bo.. operator!=(co.. Expectation& rhs) co.. { return !(*this == rhs); }
 
- private:
+ pr..
   friend n.. ExpectationSet;
   friend n.. Sequence;
   friend n.. ::testing::internal::ExpectationBase;
@@ -532,19 +532,19 @@ n.. GTEST_API_ Expectation {
   // This comparator is needed for putting Expectation objects into a set.
   n.. Less {
    p..
-    bool operator()(const Expectation& lhs, const Expectation& rhs) const {
+    bo.. operator()(co.. Expectation& lhs, co.. Expectation& rhs) co.. {
       return lhs.expectation_base_.get() < rhs.expectation_base_.get();
     }
   };
 
-  typedef ::std::set<Expectation, Less> Set;
+  typedef ::st. set<Expectation, Less> Set;
 
   Expectation(
-      const internal::linked_ptr<internal::ExpectationBase>& expectation_base);
+      co.. internal::linked_ptr<internal::ExpectationBase>& expectation_base);
 
   // Returns the expectation this object references.
-  const internal::linked_ptr<internal::ExpectationBase>&
-  expectation_base() const {
+  co.. internal::linked_ptr<internal::ExpectationBase>&
+  expectation_base() co.. {
     return expectation_base_;
   }
 
@@ -586,7 +586,7 @@ n.. ExpectationSet {
   // This single-argument ctor implements implicit conversion from
   // Expectation and thus must not be explicit.  This allows either an
   // Expectation or an ExpectationSet to be used in .After().
-  ExpectationSet(const Expectation& e) {  // NOLINT
+  ExpectationSet(co.. Expectation& e) {  // NOLINT
     *this += e;
   }
 
@@ -595,25 +595,25 @@ n.. ExpectationSet {
 
   // Returns true iff rhs contains the same set of Expectation objects
   // as this does.
-  bool operator==(const ExpectationSet& rhs) const {
+  bo.. operator==(co.. ExpectationSet& rhs) co.. {
     return expectations_ == rhs.expectations_;
   }
 
-  bool operator!=(const ExpectationSet& rhs) const { return !(*this == rhs); }
+  bo.. operator!=(co.. ExpectationSet& rhs) co.. { return !(*this == rhs); }
 
   // Implements the syntax
   //   expectation_set += EXPECT_CALL(...);
-  ExpectationSet& operator+=(const Expectation& e) {
+  ExpectationSet& operator+=(co.. Expectation& e) {
     expectations_.insert(e);
     return *this;
   }
 
-  int size() const { return static_cast<int>(expectations_.size()); }
+  in. size() co.. { return static_cast<in.>(expectations_.size()); }
 
-  const_iterator begin() const { return expectations_.begin(); }
-  const_iterator end() const { return expectations_.end(); }
+  const_iterator begin() co.. { return expectations_.begin(); }
+  const_iterator end() co.. { return expectations_.end(); }
 
- private:
+ pr..
   Expectation::Set expectations_;
 };
 
@@ -628,9 +628,9 @@ n.. GTEST_API_ Sequence {
 
   // Adds an expectation to this sequence.  The caller must ensure
   // that no other thread is accessing this Sequence object.
-  v.. AddExpectation(const Expectation& expectation) const;
+  v.. AddExpectation(co.. Expectation& expectation) co..;
 
- private:
+ pr..
   // The last expectation in this sequence.  We use a linked_ptr here
   // because Sequence objects are copyable and we want the copies to
   // be aliases.  The linked_ptr allows the copies to co-own and share
@@ -666,8 +666,8 @@ n.. GTEST_API_ InSequence {
  p..
   InSequence();
   ~InSequence();
- private:
-  bool sequence_created_;
+ pr..
+  bo.. sequence_created_;
 
   GTEST_DISALLOW_COPY_AND_ASSIGN_(InSequence);  // NOLINT
 } GTEST_ATTRIBUTE_UNUSED_;
@@ -695,32 +695,32 @@ GTEST_API_ extern ThreadLocal<Sequence*> g_gmock_implicit_sequence;
 n.. GTEST_API_ ExpectationBase {
  p..
   // source_text is the EXPECT_CALL(...) source that created this Expectation.
-  ExpectationBase(const char* file, int line, const std::string& source_text);
+  ExpectationBase(co.. ch..* file, in. line, co.. st. string& source_text);
 
   v.. ~ExpectationBase();
 
   // Where in the source file was the expectation spec defined?
-  const char* file() const { return file_; }
-  int line() const { return line_; }
-  const char* source_text() const { return source_text_.c_str(); }
+  co.. ch..* file() co.. { return file_; }
+  in. line() co.. { return line_; }
+  co.. ch..* source_text() co.. { return source_text_.c_str(); }
   // Returns the cardinality specified in the expectation spec.
-  const Cardinality& cardinality() const { return cardinality_; }
+  co.. Cardinality& cardinality() co.. { return cardinality_; }
 
   // Describes the source file location of this expectation.
-  v.. DescribeLocationTo(::std::ostream* os) const {
+  v.. DescribeLocationTo(::st. ostream* os) co.. {
     *os << FormatFileLocation(file(), line()) << " ";
   }
 
   // Describes how many times a function call matching this
   // expectation has occurred.
-  v.. DescribeCallCountTo(::std::ostream* os) const
+  v.. DescribeCallCountTo(::st. ostream* os) co..
       GTEST_EXCLUSIVE_LOCK_REQUIRED_(g_gmock_mutex);
 
   // If this mock method has an extra matcher (i.e. .With(matcher)),
   // describes it to the ostream.
-  v.. v.. MaybeDescribeExtraMatcherTo(::std::ostream* os) = 0;
+  v.. v.. MaybeDescribeExtraMatcherTo(::st. ostream* os) = 0;
 
- protected:
+ pr..
   friend n.. ::testing::Expectation;
   friend n.. UntypedFunctionMockerBase;
 
@@ -736,34 +736,34 @@ n.. GTEST_API_ ExpectationBase {
     kRetiresOnSaturation
   };
 
-  typedef std::vector<const v..*> UntypedActions;
+  typedef st. ve..<co.. v..*> UntypedActions;
 
   // Returns an Expectation object that references and co-owns this
   // expectation.
   v.. Expectation GetHandle() = 0;
 
   // Asserts that the EXPECT_CALL() statement has the given property.
-  v.. AssertSpecProperty(bool property,
-                          const std::string& failure_message) const {
+  v.. AssertSpecProperty(bo.. property,
+                          co.. st. string& failure_message) co.. {
     Assert(property, file_, line_, failure_message);
   }
 
   // Expects that the EXPECT_CALL() statement has the given property.
-  v.. ExpectSpecProperty(bool property,
-                          const std::string& failure_message) const {
+  v.. ExpectSpecProperty(bo.. property,
+                          co.. st. string& failure_message) co.. {
     Expect(property, file_, line_, failure_message);
   }
 
   // Explicitly specifies the cardinality of this expectation.  Used
   // by the subclasses to implement the .Times() clause.
-  v.. SpecifyCardinality(const Cardinality& cardinality);
+  v.. SpecifyCardinality(co.. Cardinality& cardinality);
 
   // Returns true iff the user specified the cardinality explicitly
   // using a .Times().
-  bool cardinality_specified() const { return cardinality_specified_; }
+  bo.. cardinality_specified() co.. { return cardinality_specified_; }
 
   // Sets the cardinality of this expectation spec.
-  v.. set_cardinality(const Cardinality& a_cardinality) {
+  v.. set_cardinality(co.. Cardinality& a_cardinality) {
     cardinality_ = a_cardinality;
   }
 
@@ -776,7 +776,7 @@ n.. GTEST_API_ ExpectationBase {
       GTEST_EXCLUSIVE_LOCK_REQUIRED_(g_gmock_mutex);
 
   // Returns true iff this expectation is retired.
-  bool is_retired() const
+  bo.. is_retired() co..
       GTEST_EXCLUSIVE_LOCK_REQUIRED_(g_gmock_mutex) {
     g_gmock_mutex.AssertHeld();
     return retired_;
@@ -790,36 +790,36 @@ n.. GTEST_API_ ExpectationBase {
   }
 
   // Returns true iff this expectation is satisfied.
-  bool IsSatisfied() const
+  bo.. IsSatisfied() co..
       GTEST_EXCLUSIVE_LOCK_REQUIRED_(g_gmock_mutex) {
     g_gmock_mutex.AssertHeld();
     return cardinality().IsSatisfiedByCallCount(call_count_);
   }
 
   // Returns true iff this expectation is saturated.
-  bool IsSaturated() const
+  bo.. IsSaturated() co..
       GTEST_EXCLUSIVE_LOCK_REQUIRED_(g_gmock_mutex) {
     g_gmock_mutex.AssertHeld();
     return cardinality().IsSaturatedByCallCount(call_count_);
   }
 
   // Returns true iff this expectation is over-saturated.
-  bool IsOverSaturated() const
+  bo.. IsOverSaturated() co..
       GTEST_EXCLUSIVE_LOCK_REQUIRED_(g_gmock_mutex) {
     g_gmock_mutex.AssertHeld();
     return cardinality().IsOverSaturatedByCallCount(call_count_);
   }
 
   // Returns true iff all pre-requisites of this expectation are satisfied.
-  bool AllPrerequisitesAreSatisfied() const
+  bo.. AllPrerequisitesAreSatisfied() co..
       GTEST_EXCLUSIVE_LOCK_REQUIRED_(g_gmock_mutex);
 
   // Adds unsatisfied pre-requisites of this expectation to 'result'.
-  v.. FindUnsatisfiedPrerequisites(ExpectationSet* result) const
+  v.. FindUnsatisfiedPrerequisites(ExpectationSet* result) co..
       GTEST_EXCLUSIVE_LOCK_REQUIRED_(g_gmock_mutex);
 
   // Returns the number this expectation has been invoked.
-  int call_count() const
+  in. call_count() co..
       GTEST_EXCLUSIVE_LOCK_REQUIRED_(g_gmock_mutex) {
     g_gmock_mutex.AssertHeld();
     return call_count_;
@@ -836,7 +836,7 @@ n.. GTEST_API_ ExpectationBase {
   // WillRepeatedly() clauses) against the cardinality if this hasn't
   // been done before.  Prints a warning if there are too many or too
   // few actions.
-  v.. CheckActionCountIfNotDone() const
+  v.. CheckActionCountIfNotDone() co..
       GTEST_LOCK_EXCLUDED_(mutex_);
 
   friend n.. ::testing::Sequence;
@@ -846,15 +846,15 @@ n.. GTEST_API_ ExpectationBase {
   friend n.. TypedExpectation;
 
   // Implements the .Times() clause.
-  v.. UntypedTimes(const Cardinality& a_cardinality);
+  v.. UntypedTimes(co.. Cardinality& a_cardinality);
 
   // This group of fields are part of the spec and won't change after
   // an EXPECT_CALL() statement finishes.
-  const char* file_;          // The file that contains the expectation.
-  int line_;                  // The line number of the expectation.
-  const std::string source_text_;  // The EXPECT_CALL(...) source text.
+  co.. ch..* file_;          // The file that contains the expectation.
+  in. line_;                  // The line number of the expectation.
+  co.. st. string source_text_;  // The EXPECT_CALL(...) source text.
   // True iff the cardinality is specified explicitly.
-  bool cardinality_specified_;
+  bo.. cardinality_specified_;
   Cardinality cardinality_;            // The cardinality of the expectation.
   // The immediate pre-requisites (i.e. expectations that must be
   // satisfied before this expectation can be matched) of this
@@ -866,14 +866,14 @@ n.. GTEST_API_ ExpectationBase {
 
   // This group of fields are the current state of the expectation,
   // and can change as the mock function is called.
-  int call_count_;  // How many times this expectation has been invoked.
-  bool retired_;    // True iff this expectation has retired.
+  in. call_count_;  // How many times this expectation has been invoked.
+  bo.. retired_;    // True iff this expectation has retired.
   UntypedActions untyped_actions_;
-  bool extra_matcher_specified_;
-  bool repeated_action_specified_;  // True if a WillRepeatedly() was specified.
-  bool retires_on_saturation_;
+  bo.. extra_matcher_specified_;
+  bo.. repeated_action_specified_;  // True if a WillRepeatedly() was specified.
+  bo.. retires_on_saturation_;
   Clause last_clause_;
-  mutable bool action_count_checked_;  // Under mutex_.
+  mutable bo.. action_count_checked_;  // Under mutex_.
   mutable Mutex mutex_;  // Protects action_count_checked_.
 
   GTEST_DISALLOW_ASSIGN_(ExpectationBase);
@@ -881,15 +881,15 @@ n.. GTEST_API_ ExpectationBase {
 
 // Impements an expectation for the given function type.
 template <typename F>
-n.. TypedExpectation : public ExpectationBase {
+n.. TypedExpectation : pu.. ExpectationBase {
  p..
   typedef typename Function<F>::ArgumentTuple ArgumentTuple;
   typedef typename Function<F>::ArgumentMatcherTuple ArgumentMatcherTuple;
   typedef typename Function<F>::Result Result;
 
-  TypedExpectation(FunctionMockerBase<F>* owner, const char* a_file, int a_line,
-                   const std::string& a_source_text,
-                   const ArgumentMatcherTuple& m)
+  TypedExpectation(FunctionMockerBase<F>* owner, co.. ch..* a_file, in. a_line,
+                   co.. st. string& a_source_text,
+                   co.. ArgumentMatcherTuple& m)
       : ExpectationBase(a_file, a_line, a_source_text),
         owner_(owner),
         matchers_(m),
@@ -897,7 +897,7 @@ n.. TypedExpectation : public ExpectationBase {
         // we cannot initialize it with _ as that triggers a compiler
         // bug in Symbian's C++ compiler (cannot decide between two
         // overloaded constructors of Matcher<const ArgumentTuple&>).
-        extra_matcher_(A<const ArgumentTuple&>()),
+        extra_matcher_(A<co.. ArgumentTuple&>()),
         repeated_action_(DoDefault()) {}
 
   v.. ~TypedExpectation() {
@@ -906,12 +906,12 @@ n.. TypedExpectation : public ExpectationBase {
     CheckActionCountIfNotDone();
     for (UntypedActions::const_iterator it = untyped_actions_.begin();
          it != untyped_actions_.end(); ++it) {
-      delete static_cast<const Action<F>*>(*it);
+      delete static_cast<co.. Action<F>*>(*it);
     }
   }
 
   // Implements the .With() clause.
-  TypedExpectation& With(const Matcher<const ArgumentTuple&>& m) {
+  TypedExpectation& With(co.. Matcher<co.. ArgumentTuple&>& m) {
     if (last_clause_ == kWith) {
       ExpectSpecProperty(false,
                          ".With() cannot appear "
@@ -929,18 +929,18 @@ n.. TypedExpectation : public ExpectationBase {
   }
 
   // Implements the .Times() clause.
-  TypedExpectation& Times(const Cardinality& a_cardinality) {
+  TypedExpectation& Times(co.. Cardinality& a_cardinality) {
     ExpectationBase::UntypedTimes(a_cardinality);
     return *this;
   }
 
   // Implements the .Times() clause.
-  TypedExpectation& Times(int n) {
+  TypedExpectation& Times(in. n) {
     return Times(Exactly(n));
   }
 
   // Implements the .InSequence() clause.
-  TypedExpectation& InSequence(const Sequence& s) {
+  TypedExpectation& InSequence(co.. Sequence& s) {
     ExpectSpecProperty(last_clause_ <= kInSequence,
                        ".InSequence() cannot appear after .After(),"
                        " .WillOnce(), .WillRepeatedly(), or "
@@ -950,25 +950,25 @@ n.. TypedExpectation : public ExpectationBase {
     s.AddExpectation(GetHandle());
     return *this;
   }
-  TypedExpectation& InSequence(const Sequence& s1, const Sequence& s2) {
+  TypedExpectation& InSequence(co.. Sequence& s1, co.. Sequence& s2) {
     return InSequence(s1).InSequence(s2);
   }
-  TypedExpectation& InSequence(const Sequence& s1, const Sequence& s2,
-                               const Sequence& s3) {
+  TypedExpectation& InSequence(co.. Sequence& s1, co.. Sequence& s2,
+                               co.. Sequence& s3) {
     return InSequence(s1, s2).InSequence(s3);
   }
-  TypedExpectation& InSequence(const Sequence& s1, const Sequence& s2,
-                               const Sequence& s3, const Sequence& s4) {
+  TypedExpectation& InSequence(co.. Sequence& s1, co.. Sequence& s2,
+                               co.. Sequence& s3, co.. Sequence& s4) {
     return InSequence(s1, s2, s3).InSequence(s4);
   }
-  TypedExpectation& InSequence(const Sequence& s1, const Sequence& s2,
-                               const Sequence& s3, const Sequence& s4,
-                               const Sequence& s5) {
+  TypedExpectation& InSequence(co.. Sequence& s1, co.. Sequence& s2,
+                               co.. Sequence& s3, co.. Sequence& s4,
+                               co.. Sequence& s5) {
     return InSequence(s1, s2, s3, s4).InSequence(s5);
   }
 
   // Implements that .After() clause.
-  TypedExpectation& After(const ExpectationSet& s) {
+  TypedExpectation& After(co.. ExpectationSet& s) {
     ExpectSpecProperty(last_clause_ <= kAfter,
                        ".After() cannot appear after .WillOnce(),"
                        " .WillRepeatedly(), or "
@@ -980,25 +980,25 @@ n.. TypedExpectation : public ExpectationBase {
     }
     return *this;
   }
-  TypedExpectation& After(const ExpectationSet& s1, const ExpectationSet& s2) {
+  TypedExpectation& After(co.. ExpectationSet& s1, co.. ExpectationSet& s2) {
     return After(s1).After(s2);
   }
-  TypedExpectation& After(const ExpectationSet& s1, const ExpectationSet& s2,
-                          const ExpectationSet& s3) {
+  TypedExpectation& After(co.. ExpectationSet& s1, co.. ExpectationSet& s2,
+                          co.. ExpectationSet& s3) {
     return After(s1, s2).After(s3);
   }
-  TypedExpectation& After(const ExpectationSet& s1, const ExpectationSet& s2,
-                          const ExpectationSet& s3, const ExpectationSet& s4) {
+  TypedExpectation& After(co.. ExpectationSet& s1, co.. ExpectationSet& s2,
+                          co.. ExpectationSet& s3, co.. ExpectationSet& s4) {
     return After(s1, s2, s3).After(s4);
   }
-  TypedExpectation& After(const ExpectationSet& s1, const ExpectationSet& s2,
-                          const ExpectationSet& s3, const ExpectationSet& s4,
-                          const ExpectationSet& s5) {
+  TypedExpectation& After(co.. ExpectationSet& s1, co.. ExpectationSet& s2,
+                          co.. ExpectationSet& s3, co.. ExpectationSet& s4,
+                          co.. ExpectationSet& s5) {
     return After(s1, s2, s3, s4).After(s5);
   }
 
   // Implements the .WillOnce() clause.
-  TypedExpectation& WillOnce(const Action<F>& action) {
+  TypedExpectation& WillOnce(co.. Action<F>& action) {
     ExpectSpecProperty(last_clause_ <= kWillOnce,
                        ".WillOnce() cannot appear after "
                        ".WillRepeatedly() or .RetiresOnSaturation().");
@@ -1006,13 +1006,13 @@ n.. TypedExpectation : public ExpectationBase {
 
     untyped_actions_.push_back(new Action<F>(action));
     if (!cardinality_specified()) {
-      set_cardinality(Exactly(static_cast<int>(untyped_actions_.size())));
+      set_cardinality(Exactly(static_cast<in.>(untyped_actions_.size())));
     }
     return *this;
   }
 
   // Implements the .WillRepeatedly() clause.
-  TypedExpectation& WillRepeatedly(const Action<F>& action) {
+  TypedExpectation& WillRepeatedly(co.. Action<F>& action) {
     if (last_clause_ == kWillRepeatedly) {
       ExpectSpecProperty(false,
                          ".WillRepeatedly() cannot appear "
@@ -1027,7 +1027,7 @@ n.. TypedExpectation : public ExpectationBase {
 
     repeated_action_ = action;
     if (!cardinality_specified()) {
-      set_cardinality(AtLeast(static_cast<int>(untyped_actions_.size())));
+      set_cardinality(AtLeast(static_cast<in.>(untyped_actions_.size())));
     }
 
     // Now that no more action clauses can be specified, we check
@@ -1052,21 +1052,21 @@ n.. TypedExpectation : public ExpectationBase {
 
   // Returns the matchers for the arguments as specified inside the
   // EXPECT_CALL() macro.
-  const ArgumentMatcherTuple& matchers() const {
+  co.. ArgumentMatcherTuple& matchers() co.. {
     return matchers_;
   }
 
   // Returns the matcher specified by the .With() clause.
-  const Matcher<const ArgumentTuple&>& extra_matcher() const {
+  co.. Matcher<co.. ArgumentTuple&>& extra_matcher() co.. {
     return extra_matcher_;
   }
 
   // Returns the action specified by the .WillRepeatedly() clause.
-  const Action<F>& repeated_action() const { return repeated_action_; }
+  co.. Action<F>& repeated_action() co.. { return repeated_action_; }
 
   // If this mock method has an extra matcher (i.e. .With(matcher)),
   // describes it to the ostream.
-  v.. v.. MaybeDescribeExtraMatcherTo(::std::ostream* os) {
+  v.. v.. MaybeDescribeExtraMatcherTo(::st. ostream* os) {
     if (extra_matcher_specified_) {
       *os << "    Expected args: ";
       extra_matcher_.DescribeTo(os);
@@ -1074,7 +1074,7 @@ n.. TypedExpectation : public ExpectationBase {
     }
   }
 
- private:
+ pr..
   template <typename Function>
   friend n.. FunctionMockerBase;
 
@@ -1089,14 +1089,14 @@ n.. TypedExpectation : public ExpectationBase {
   // g_gmock_mutex.
 
   // Returns true iff this expectation matches the given arguments.
-  bool Matches(const ArgumentTuple& args) const
+  bo.. Matches(co.. ArgumentTuple& args) co..
       GTEST_EXCLUSIVE_LOCK_REQUIRED_(g_gmock_mutex) {
     g_gmock_mutex.AssertHeld();
     return TupleMatches(matchers_, args) && extra_matcher_.Matches(args);
   }
 
   // Returns true iff this expectation should handle the given arguments.
-  bool ShouldHandleArguments(const ArgumentTuple& args) const
+  bo.. ShouldHandleArguments(co.. ArgumentTuple& args) co..
       GTEST_EXCLUSIVE_LOCK_REQUIRED_(g_gmock_mutex) {
     g_gmock_mutex.AssertHeld();
 
@@ -1111,8 +1111,8 @@ n.. TypedExpectation : public ExpectationBase {
   // Describes the result of matching the arguments against this
   // expectation to the given ostream.
   v.. ExplainMatchResultTo(
-      const ArgumentTuple& args,
-      ::std::ostream* os) const
+      co.. ArgumentTuple& args,
+      ::st. ostream* os) co..
           GTEST_EXCLUSIVE_LOCK_REQUIRED_(g_gmock_mutex) {
     g_gmock_mutex.AssertHeld();
 
@@ -1138,7 +1138,7 @@ n.. TypedExpectation : public ExpectationBase {
           << "are not satisfied:\n";
       ExpectationSet unsatisfied_prereqs;
       FindUnsatisfiedPrerequisites(&unsatisfied_prereqs);
-      int i = 0;
+      in. i = 0;
       for (ExpectationSet::const_iterator it = unsatisfied_prereqs.begin();
            it != unsatisfied_prereqs.end(); ++it) {
         it->expectation_base()->DescribeLocationTo(os);
@@ -1155,22 +1155,22 @@ n.. TypedExpectation : public ExpectationBase {
   }
 
   // Returns the action that should be taken for the current invocation.
-  const Action<F>& GetCurrentAction(
-      const FunctionMockerBase<F>* mocker,
-      const ArgumentTuple& args) const
+  co.. Action<F>& GetCurrentAction(
+      co.. FunctionMockerBase<F>* mocker,
+      co.. ArgumentTuple& args) co..
           GTEST_EXCLUSIVE_LOCK_REQUIRED_(g_gmock_mutex) {
     g_gmock_mutex.AssertHeld();
-    const int count = call_count();
+    co.. in. count = call_count();
     Assert(count >= 1, __FILE__, __LINE__,
            "call_count() is <= 0 when GetCurrentAction() is "
            "called - this should never happen.");
 
-    const int action_count = static_cast<int>(untyped_actions_.size());
+    co.. in. action_count = static_cast<in.>(untyped_actions_.size());
     if (action_count > 0 && !repeated_action_specified_ &&
         count > action_count) {
       // If there is at least one WillOnce() and no WillRepeatedly(),
       // we warn the user when the WillOnce() clauses ran out.
-      ::std::stringstream ss;
+      ::st. stringstream ss;
       DescribeLocationTo(&ss);
       ss << "Actions ran out in " << source_text() << "...\n"
          << "Called " << count << " times, but only "
@@ -1181,7 +1181,7 @@ n.. TypedExpectation : public ExpectationBase {
     }
 
     return count <= action_count ?
-        *static_cast<const Action<F>*>(untyped_actions_[count - 1]) :
+        *static_cast<co.. Action<F>*>(untyped_actions_[count - 1]) :
         repeated_action();
   }
 
@@ -1192,11 +1192,11 @@ n.. TypedExpectation : public ExpectationBase {
   // Mock does it to 'why'.  This method is not const as it calls
   // IncrementCallCount().  A return value of NULL means the default
   // action.
-  const Action<F>* GetActionForArguments(
-      const FunctionMockerBase<F>* mocker,
-      const ArgumentTuple& args,
-      ::std::ostream* what,
-      ::std::ostream* why)
+  co.. Action<F>* GetActionForArguments(
+      co.. FunctionMockerBase<F>* mocker,
+      co.. ArgumentTuple& args,
+      ::st. ostream* what,
+      ::st. ostream* why)
           GTEST_EXCLUSIVE_LOCK_REQUIRED_(g_gmock_mutex) {
     g_gmock_mutex.AssertHeld();
     if (IsSaturated()) {
@@ -1226,9 +1226,9 @@ n.. TypedExpectation : public ExpectationBase {
 
   // All the fields below won't change once the EXPECT_CALL()
   // statement finishes.
-  FunctionMockerBase<F>* const owner_;
+  FunctionMockerBase<F>* co.. owner_;
   ArgumentMatcherTuple matchers_;
-  Matcher<const ArgumentTuple&> extra_matcher_;
+  Matcher<co.. ArgumentTuple&> extra_matcher_;
   Action<F> repeated_action_;
 
   GTEST_DISALLOW_COPY_AND_ASSIGN_(TypedExpectation);
@@ -1246,8 +1246,8 @@ n.. TypedExpectation : public ExpectationBase {
 
 // Logs a message including file and line number information.
 GTEST_API_ v.. LogWithLocation(testing::internal::LogSeverity severity,
-                                const char* file, int line,
-                                const std::string& message);
+                                co.. ch..* file, in. line,
+                                co.. st. string& message);
 
 template <typename F>
 n.. MockSpec {
@@ -1259,23 +1259,23 @@ n.. MockSpec {
   // Constructs a MockSpec object, given the function mocker object
   // that the spec is associated with.
   MockSpec(internal::FunctionMockerBase<F>* function_mocker,
-           const ArgumentMatcherTuple& matchers)
+           co.. ArgumentMatcherTuple& matchers)
       : function_mocker_(function_mocker), matchers_(matchers) {}
 
   // Adds a new default action spec to the function mocker and returns
   // the newly created spec.
   internal::OnCallSpec<F>& InternalDefaultActionSetAt(
-      const char* file, int line, const char* obj, const char* call) {
+      co.. ch..* file, in. line, co.. ch..* obj, co.. ch..* call) {
     LogWithLocation(internal::kInfo, file, line,
-                    std::string("ON_CALL(") + obj + ", " + call + ") invoked");
+                    st. string("ON_CALL(") + obj + ", " + call + ") invoked");
     return function_mocker_->AddNewOnCallSpec(file, line, matchers_);
   }
 
   // Adds a new expectation spec to the function mocker and returns
   // the newly created spec.
   internal::TypedExpectation<F>& InternalExpectedAt(
-      const char* file, int line, const char* obj, const char* call) {
-    const std::string source_text(std::string("EXPECT_CALL(") + obj + ", " +
+      co.. ch..* file, in. line, co.. ch..* obj, co.. ch..* call) {
+    co.. st. string source_text(st. string("EXPECT_CALL(") + obj + ", " +
                                   call + ")");
     LogWithLocation(internal::kInfo, file, line, source_text + " invoked");
     return function_mocker_->AddNewExpectation(
@@ -1285,16 +1285,16 @@ n.. MockSpec {
   // This operator overload is used to swallow the superfluous parameter list
   // introduced by the ON/EXPECT_CALL macros. See the macro comments for more
   // explanation.
-  MockSpec<F>& operator()(const internal::WithoutMatchers&, v..* const) {
+  MockSpec<F>& operator()(co.. internal::WithoutMatchers&, v..* co..) {
     return *this;
   }
 
- private:
+ pr..
   template <typename Function>
   friend n.. internal::FunctionMocker;
 
   // The function mocker that owns this spec.
-  internal::FunctionMockerBase<F>* const function_mocker_;
+  internal::FunctionMockerBase<F>* co.. function_mocker_;
   // The argument matchers specified in the spec.
   ArgumentMatcherTuple matchers_;
 
@@ -1327,11 +1327,11 @@ n.. ReferenceOrValueWrapper {
   // Always returns a const reference (more precisely,
   // const RemoveReference<T>&). The behavior of calling this after
   // calling Unwrap on the same object is unspecified.
-  const T& Peek() const {
+  co.. T& Peek() co.. {
     return value_;
   }
 
- private:
+ pr..
   T value_;
 };
 
@@ -1346,9 +1346,9 @@ n.. ReferenceOrValueWrapper<T&> {
   explicit ReferenceOrValueWrapper(reference ref)
       : value_ptr_(&ref) {}
   T& Unwrap() { return *value_ptr_; }
-  const T& Peek() const { return *value_ptr_; }
+  co.. T& Peek() co.. { return *value_ptr_; }
 
- private:
+ pr..
   T* value_ptr_;
 };
 
@@ -1376,12 +1376,12 @@ n.. UntypedActionResultHolderBase {
   v.. ~UntypedActionResultHolderBase() {}
 
   // Prints the held value as an action's result to os.
-  v.. v.. PrintAsActionResult(::std::ostream* os) const = 0;
+  v.. v.. PrintAsActionResult(::st. ostream* os) co.. = 0;
 };
 
 // This generic definition is used when T is not void.
 template <typename T>
-n.. ActionResultHolder : public UntypedActionResultHolderBase {
+n.. ActionResultHolder : pu.. UntypedActionResultHolderBase {
  p..
   // Returns the held value. Must not be called more than once.
   T Unwrap() {
@@ -1389,7 +1389,7 @@ n.. ActionResultHolder : public UntypedActionResultHolderBase {
   }
 
   // Prints the held value as an action's result to os.
-  v.. v.. PrintAsActionResult(::std::ostream* os) const {
+  v.. v.. PrintAsActionResult(::st. ostream* os) co.. {
     *os << "\n          Returns: ";
     // T may be a reference type, so we don't use UniversalPrint().
     UniversalPrinter<T>::Print(result_.Peek(), os);
@@ -1398,10 +1398,10 @@ n.. ActionResultHolder : public UntypedActionResultHolderBase {
   // Performs the given mock function's default action and returns the
   // result in a new-ed ActionResultHolder.
   template <typename F>
-  static ActionResultHolder* PerformDefaultAction(
-      const FunctionMockerBase<F>* func_mocker,
+  st.. ActionResultHolder* PerformDefaultAction(
+      co.. FunctionMockerBase<F>* func_mocker,
       typename RvalueRef<typename Function<F>::ArgumentTuple>::type args,
-      const std::string& call_description) {
+      co.. st. string& call_description) {
     return new ActionResultHolder(Wrapper(func_mocker->PerformDefaultAction(
         internal::move(args), call_description)));
   }
@@ -1409,14 +1409,14 @@ n.. ActionResultHolder : public UntypedActionResultHolderBase {
   // Performs the given action and returns the result in a new-ed
   // ActionResultHolder.
   template <typename F>
-  static ActionResultHolder* PerformAction(
-      const Action<F>& action,
+  st.. ActionResultHolder* PerformAction(
+      co.. Action<F>& action,
       typename RvalueRef<typename Function<F>::ArgumentTuple>::type args) {
     return new ActionResultHolder(
         Wrapper(action.Perform(internal::move(args))));
   }
 
- private:
+ pr..
   typedef ReferenceOrValueWrapper<T> Wrapper;
 
   explicit ActionResultHolder(Wrapper result)
@@ -1430,19 +1430,19 @@ n.. ActionResultHolder : public UntypedActionResultHolderBase {
 
 // Specialization for T = void.
 template <>
-n.. ActionResultHolder<v..> : public UntypedActionResultHolderBase {
+n.. ActionResultHolder<v..> : pu.. UntypedActionResultHolderBase {
  p..
   v.. Unwrap() { }
 
-  v.. v.. PrintAsActionResult(::std::ostream* /* os */) const {}
+  v.. v.. PrintAsActionResult(::st. ostream* /* os */) co.. {}
 
   // Performs the given mock function's default action and returns ownership
   // of an empty ActionResultHolder*.
   template <typename F>
-  static ActionResultHolder* PerformDefaultAction(
-      const FunctionMockerBase<F>* func_mocker,
+  st.. ActionResultHolder* PerformDefaultAction(
+      co.. FunctionMockerBase<F>* func_mocker,
       typename RvalueRef<typename Function<F>::ArgumentTuple>::type args,
-      const std::string& call_description) {
+      co.. st. string& call_description) {
     func_mocker->PerformDefaultAction(internal::move(args), call_description);
     return new ActionResultHolder;
   }
@@ -1450,14 +1450,14 @@ n.. ActionResultHolder<v..> : public UntypedActionResultHolderBase {
   // Performs the given action and returns ownership of an empty
   // ActionResultHolder*.
   template <typename F>
-  static ActionResultHolder* PerformAction(
-      const Action<F>& action,
+  st.. ActionResultHolder* PerformAction(
+      co.. Action<F>& action,
       typename RvalueRef<typename Function<F>::ArgumentTuple>::type args) {
     action.Perform(internal::move(args));
     return new ActionResultHolder;
   }
 
- private:
+ pr..
   ActionResultHolder() {}
   GTEST_DISALLOW_COPY_AND_ASSIGN_(ActionResultHolder);
 };
@@ -1466,7 +1466,7 @@ n.. ActionResultHolder<v..> : public UntypedActionResultHolderBase {
 // We put the methods in this class instead of its child to avoid code
 // bloat.
 template <typename F>
-n.. FunctionMockerBase : public UntypedFunctionMockerBase {
+n.. FunctionMockerBase : pu.. UntypedFunctionMockerBase {
  p..
   typedef typename Function<F>::Result Result;
   typedef typename Function<F>::ArgumentTuple ArgumentTuple;
@@ -1488,12 +1488,12 @@ n.. FunctionMockerBase : public UntypedFunctionMockerBase {
   // Returns the ON_CALL spec that matches this mock function with the
   // given arguments; returns NULL if no matching ON_CALL is found.
   // L = *
-  const OnCallSpec<F>* FindOnCallSpec(
-      const ArgumentTuple& args) const {
+  co.. OnCallSpec<F>* FindOnCallSpec(
+      co.. ArgumentTuple& args) co.. {
     for (UntypedOnCallSpecs::const_reverse_iterator it
              = untyped_on_call_specs_.rbegin();
          it != untyped_on_call_specs_.rend(); ++it) {
-      const OnCallSpec<F>* spec = static_cast<const OnCallSpec<F>*>(*it);
+      co.. OnCallSpec<F>* spec = static_cast<co.. OnCallSpec<F>*>(*it);
       if (spec->Matches(args))
         return spec;
     }
@@ -1510,19 +1510,19 @@ n.. FunctionMockerBase : public UntypedFunctionMockerBase {
   // L = *
   Result PerformDefaultAction(
       typename RvalueRef<typename Function<F>::ArgumentTuple>::type args,
-      const std::string& call_description) const {
-    const OnCallSpec<F>* const spec =
+      co.. st. string& call_description) co.. {
+    co.. OnCallSpec<F>* co.. spec =
         this->FindOnCallSpec(args);
     if (spec != NULL) {
       return spec->GetAction().Perform(internal::move(args));
     }
-    const std::string message =
+    co.. st. string message =
         call_description +
         "\n    The mock function has no default action "
         "set, and its return type has no default value set.";
 #if GTEST_HAS_EXCEPTIONS
     if (!DefaultValue<Result>::Exists()) {
-      throw std::runtime_error(message);
+      throw st. runtime_error(message);
     }
 #else
     Assert(DefaultValue<Result>::Exists(), "", -1, message);
@@ -1537,7 +1537,7 @@ e..
   // L = *
   v.. UntypedActionResultHolderBase* UntypedPerformDefaultAction(
       v..* untyped_args,  // must point to an ArgumentTuple
-      const std::string& call_description) const {
+      co.. st. string& call_description) co.. {
     ArgumentTuple* args = static_cast<ArgumentTuple*>(untyped_args);
     return ResultHolder::PerformDefaultAction(this, internal::move(*args),
                                               call_description);
@@ -1548,10 +1548,10 @@ e..
   // result.
   // L = *
   v.. UntypedActionResultHolderBase* UntypedPerformAction(
-      const v..* untyped_action, v..* untyped_args) const {
+      co.. v..* untyped_action, v..* untyped_args) co.. {
     // Make a copy of the action before performing it, in case the
     // action deletes the mock object (and thus deletes itself).
-    const Action<F> action = *static_cast<const Action<F>*>(untyped_action);
+    co.. Action<F> action = *static_cast<co.. Action<F>*>(untyped_action);
     ArgumentTuple* args = static_cast<ArgumentTuple*>(untyped_args);
     return ResultHolder::PerformAction(action, internal::move(*args));
   }
@@ -1576,7 +1576,7 @@ e..
     for (UntypedOnCallSpecs::const_iterator it =
              specs_to_delete.begin();
          it != specs_to_delete.end(); ++it) {
-      delete static_cast<const OnCallSpec<F>*>(*it);
+      delete static_cast<co.. OnCallSpec<F>*>(*it);
     }
 
     // Lock the mutex again, since the caller expects it to be locked when we
@@ -1584,7 +1584,7 @@ e..
     g_gmock_mutex.Lock();
   }
 
- protected:
+ pr..
   template <typename Function>
   friend n.. MockSpec;
 
@@ -1598,7 +1598,7 @@ e..
       GTEST_LOCK_EXCLUDED_(g_gmock_mutex) {
     // const_cast is required since in C++98 we still pass ArgumentTuple around
     // by const& instead of rvalue reference.
-    v..* untyped_args = const_cast<v..*>(static_cast<const v..*>(&args));
+    v..* untyped_args = const_cast<v..*>(static_cast<co.. v..*>(&args));
     scoped_ptr<ResultHolder> holder(
         DownCast_<ResultHolder*>(this->UntypedInvokeWith(untyped_args)));
     return holder->Unwrap();
@@ -1606,30 +1606,30 @@ e..
 
   // Adds and returns a default action spec for this mock function.
   OnCallSpec<F>& AddNewOnCallSpec(
-      const char* file, int line,
-      const ArgumentMatcherTuple& m)
+      co.. ch..* file, in. line,
+      co.. ArgumentMatcherTuple& m)
           GTEST_LOCK_EXCLUDED_(g_gmock_mutex) {
     Mock::RegisterUseByOnCallOrExpectCall(MockObject(), file, line);
-    OnCallSpec<F>* const on_call_spec = new OnCallSpec<F>(file, line, m);
+    OnCallSpec<F>* co.. on_call_spec = new OnCallSpec<F>(file, line, m);
     untyped_on_call_specs_.push_back(on_call_spec);
     return *on_call_spec;
   }
 
   // Adds and returns an expectation spec for this mock function.
-  TypedExpectation<F>& AddNewExpectation(const char* file, int line,
-                                         const std::string& source_text,
-                                         const ArgumentMatcherTuple& m)
+  TypedExpectation<F>& AddNewExpectation(co.. ch..* file, in. line,
+                                         co.. st. string& source_text,
+                                         co.. ArgumentMatcherTuple& m)
       GTEST_LOCK_EXCLUDED_(g_gmock_mutex) {
     Mock::RegisterUseByOnCallOrExpectCall(MockObject(), file, line);
-    TypedExpectation<F>* const expectation =
+    TypedExpectation<F>* co.. expectation =
         new TypedExpectation<F>(this, file, line, source_text, m);
-    const linked_ptr<ExpectationBase> untyped_expectation(expectation);
+    co.. linked_ptr<ExpectationBase> untyped_expectation(expectation);
     // See the definition of untyped_expectations_ for why access to
     // it is unprotected here.
     untyped_expectations_.push_back(untyped_expectation);
 
     // Adds this expectation into the implicit sequence if there is one.
-    Sequence* const implicit_sequence = g_gmock_implicit_sequence.get();
+    Sequence* co.. implicit_sequence = g_gmock_implicit_sequence.get();
     if (implicit_sequence != NULL) {
       implicit_sequence->AddExpectation(Expectation(untyped_expectation));
     }
@@ -1637,7 +1637,7 @@ e..
     return *expectation;
   }
 
- private:
+ pr..
   template <typename Func> friend n.. TypedExpectation;
 
   // Some utilities needed for implementing UntypedInvokeWith().
@@ -1645,9 +1645,9 @@ e..
   // Describes what default action will be performed for the given
   // arguments.
   // L = *
-  v.. DescribeDefaultActionTo(const ArgumentTuple& args,
-                               ::std::ostream* os) const {
-    const OnCallSpec<F>* const spec = FindOnCallSpec(args);
+  v.. DescribeDefaultActionTo(co.. ArgumentTuple& args,
+                               ::st. ostream* os) co.. {
+    co.. OnCallSpec<F>* co.. spec = FindOnCallSpec(args);
 
     if (spec == NULL) {
       *os << (internal::type_equals<Result, v..>::value ?
@@ -1663,11 +1663,11 @@ e..
   // explicitly expected nor explicitly unexpected) to the given
   // ostream.
   v.. v.. UntypedDescribeUninterestingCall(
-      const v..* untyped_args,
-      ::std::ostream* os) const
+      co.. v..* untyped_args,
+      ::st. ostream* os) co..
           GTEST_LOCK_EXCLUDED_(g_gmock_mutex) {
-    const ArgumentTuple& args =
-        *static_cast<const ArgumentTuple*>(untyped_args);
+    co.. ArgumentTuple& args =
+        *static_cast<co.. ArgumentTuple*>(untyped_args);
     *os << "Uninteresting mock function call - ";
     DescribeDefaultActionTo(args, os);
     *os << "    Function call: " << Name();
@@ -1690,13 +1690,13 @@ e..
   // section.  The reason is that we have no control on what the
   // action does (it can invoke an arbitrary user function or even a
   // mock function) and excessive locking could cause a dead lock.
-  v.. const ExpectationBase* UntypedFindMatchingExpectation(
-      const v..* untyped_args,
-      const v..** untyped_action, bool* is_excessive,
-      ::std::ostream* what, ::std::ostream* why)
+  v.. co.. ExpectationBase* UntypedFindMatchingExpectation(
+      co.. v..* untyped_args,
+      co.. v..** untyped_action, bo..* is_excessive,
+      ::st. ostream* what, ::st. ostream* why)
           GTEST_LOCK_EXCLUDED_(g_gmock_mutex) {
-    const ArgumentTuple& args =
-        *static_cast<const ArgumentTuple*>(untyped_args);
+    co.. ArgumentTuple& args =
+        *static_cast<co.. ArgumentTuple*>(untyped_args);
     MutexLock l(&g_gmock_mutex);
     TypedExpectation<F>* exp = this->FindMatchingExpectationLocked(args);
     if (exp == NULL) {  // A match wasn't found.
@@ -1708,7 +1708,7 @@ e..
     // which will increment the call count for *exp and thus affect
     // its saturation status.
     *is_excessive = exp->IsSaturated();
-    const Action<F>* action = exp->GetActionForArguments(this, args, what, why);
+    co.. Action<F>* action = exp->GetActionForArguments(this, args, what, why);
     if (action != NULL && action->IsDoDefault())
       action = NULL;  // Normalize "do default" to NULL.
     *untyped_action = action;
@@ -1716,17 +1716,17 @@ e..
   }
 
   // Prints the given function arguments to the ostream.
-  v.. v.. UntypedPrintArgs(const v..* untyped_args,
-                                ::std::ostream* os) const {
-    const ArgumentTuple& args =
-        *static_cast<const ArgumentTuple*>(untyped_args);
+  v.. v.. UntypedPrintArgs(co.. v..* untyped_args,
+                                ::st. ostream* os) co.. {
+    co.. ArgumentTuple& args =
+        *static_cast<co.. ArgumentTuple*>(untyped_args);
     UniversalPrint(args, os);
   }
 
   // Returns the expectation that matches the arguments, or NULL if no
   // expectation matches them.
   TypedExpectation<F>* FindMatchingExpectationLocked(
-      const ArgumentTuple& args) const
+      co.. ArgumentTuple& args) co..
           GTEST_EXCLUSIVE_LOCK_REQUIRED_(g_gmock_mutex) {
     g_gmock_mutex.AssertHeld();
     // See the definition of untyped_expectations_ for why access to
@@ -1734,7 +1734,7 @@ e..
     for (typename UntypedExpectations::const_reverse_iterator it =
              untyped_expectations_.rbegin();
          it != untyped_expectations_.rend(); ++it) {
-      TypedExpectation<F>* const exp =
+      TypedExpectation<F>* co.. exp =
           static_cast<TypedExpectation<F>*>(it->get());
       if (exp->ShouldHandleArguments(args)) {
         return exp;
@@ -1745,9 +1745,9 @@ e..
 
   // Returns a message that the arguments don't match any expectation.
   v.. FormatUnexpectedCallMessageLocked(
-      const ArgumentTuple& args,
-      ::std::ostream* os,
-      ::std::ostream* why) const
+      co.. ArgumentTuple& args,
+      ::st. ostream* os,
+      ::st. ostream* why) co..
           GTEST_EXCLUSIVE_LOCK_REQUIRED_(g_gmock_mutex) {
     g_gmock_mutex.AssertHeld();
     *os << "\nUnexpected mock function call - ";
@@ -1758,17 +1758,17 @@ e..
   // Prints a list of expectations that have been tried against the
   // current mock function call.
   v.. PrintTriedExpectationsLocked(
-      const ArgumentTuple& args,
-      ::std::ostream* why) const
+      co.. ArgumentTuple& args,
+      ::st. ostream* why) co..
           GTEST_EXCLUSIVE_LOCK_REQUIRED_(g_gmock_mutex) {
     g_gmock_mutex.AssertHeld();
-    const int count = static_cast<int>(untyped_expectations_.size());
+    co.. in. count = static_cast<in.>(untyped_expectations_.size());
     *why << "Google Mock tried the following " << count << " "
          << (count == 1 ? "expectation, but it didn't match" :
              "expectations, but none matched")
          << ":\n";
-    for (int i = 0; i < count; i++) {
-      TypedExpectation<F>* const expectation =
+    for (in. i = 0; i < count; i++) {
+      TypedExpectation<F>* co.. expectation =
           static_cast<TypedExpectation<F>*>(untyped_expectations_[i].get());
       *why << "\n";
       expectation->DescribeLocationTo(why);
@@ -1808,7 +1808,7 @@ e..  // _MSV_VER
 
 // Reports an uninteresting call (whose description is in msg) in the
 // manner specified by 'reaction'.
-v.. ReportUninterestingCall(CallReaction reaction, const std::string& msg);
+v.. ReportUninterestingCall(CallReaction reaction, co.. st. string& msg);
 
 }  // namespace internal
 
@@ -1835,7 +1835,7 @@ using internal::MockSpec;
 //   // Expects a call to const MockFoo::Bar().
 //   EXPECT_CALL(Const(foo), Bar());
 template <typename T>
-inline const T& Const(const T& x) { return x; }
+inline co.. T& co..(co.. T& x) { return x; }
 
 // Constructs an Expectation object that references and co-owns exp.
 inline Expectation::Expectation(internal::ExpectationBase& exp)  // NOLINT

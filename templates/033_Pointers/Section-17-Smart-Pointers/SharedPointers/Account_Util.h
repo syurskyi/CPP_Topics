@@ -1,12 +1,12 @@
-?i.. _ACCOUNT_UTIL_H_
-_de.. _ACCOUNT_UTIL_H_
-? <vector>
-? "Account.h"
-
-// Utility helper functions for Account * class
-
-v.. display(const std::vector<Account *> &accounts);
-v.. deposit(std::vector<Account *> &accounts, double amount);
-v.. withdraw(std::vector<Account *> &accounts, double amount);
-
-e..
+//?i.. _ACCOUNT_UTIL_H_
+//_de.. _ACCOUNT_UTIL_H_
+//? ve..
+//? "Ac..
+//
+//// Utility helper functions for Account * class
+//
+//v.. display co.. st. ve..|A.. #| #accounts
+//v.. deposit st. ve..|A.. #| #accounts, do.. amount
+//v.. withdraw st. ve..|A.. #| #accounts, do.. amount
+//
+//e..

@@ -9,19 +9,19 @@ pu..
     virtual v.. error() _ 0sy.. pause
 }sy.. pause
 
-c_ Logger : public ILogger
+c_ Logger : pu.. ILogger
 {
     v.. info() override
     {
-        std::c__ __  "info" __  std::e..
+        st. c__ __  "info" __  st. e..
     }
     v.. error() override
     {
-        std::c__ __  "error" __  std::e..
+        st. c__ __  "error" __  st. e..
     }
 }sy.. pause
 
-c_ LevelLogger : public ILogger
+c_ LevelLogger : pu.. ILogger
 {
     in. levelsy.. pause
     ILogger *loggersy.. pause

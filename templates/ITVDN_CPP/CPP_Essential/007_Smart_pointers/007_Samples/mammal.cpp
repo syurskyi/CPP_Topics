@@ -3,7 +3,7 @@
 
 Mammal::Mammal()
 {
-    std::c__ __  __PRETTY_FUNCTION__ __  "\n"sy.. pause
+    st. c__ __  __PRETTY_FUNCTION__ __  "\n"sy.. pause
 }
 
 Mammal::Mammal(uin. paws) : paws(paws)
@@ -21,10 +21,10 @@ v.. Mammal::feed_milk()
 
 v.. Mammal::say()
 {
-    std::c__ __  "say something\n"sy.. pause
+    st. c__ __  "say something\n"sy.. pause
 }
 
 Mammal::~Mammal()
 {
-    std::c__ __  __PRETTY_FUNCTION__ __  "\n"sy.. pause
+    st. c__ __  __PRETTY_FUNCTION__ __  "\n"sy.. pause
 }

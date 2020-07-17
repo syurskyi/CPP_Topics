@@ -9,7 +9,7 @@ p..
 	Rectangle();
 	Rectangle(Point bottomLeft, Point topRight);
 
-private:
+pr..
 	Point m_bottomLeft, m_topRight;
 };
 

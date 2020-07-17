@@ -71,7 +71,7 @@ n... testing {
 
 _de.. GTEST_ASSERT_(expression, on_failure) \
   GTEST_AMBIGUOUS_ELSE_BLOCKER_ \
-  if (const ::testing::AssertionResult gtest_ar = (expression)) \
+  if (co.. ::testing::AssertionResult gtest_ar = (expression)) \
     ; \
   else \
     on_failure(gtest_ar.failure_message())
@@ -81,10 +81,10 @@ _de.. GTEST_ASSERT_(expression, on_failure) \
 // this in your code.
 template <typename Pred,
           typename T1>
-AssertionResult AssertPred1Helper(const char* pred_text,
-                                  const char* e1,
+AssertionResult AssertPred1Helper(co.. ch..* pred_text,
+                                  co.. ch..* e1,
                                   Pred pred,
-                                  const T1& v1) {
+                                  co.. T1& v1) {
   if (pred(v1)) return AssertionSuccess();
 
   return AssertionFailure() << pred_text << "("
@@ -123,12 +123,12 @@ _de.. ASSERT_PRED1(pred, v1) \
 template <typename Pred,
           typename T1,
           typename T2>
-AssertionResult AssertPred2Helper(const char* pred_text,
-                                  const char* e1,
-                                  const char* e2,
+AssertionResult AssertPred2Helper(co.. ch..* pred_text,
+                                  co.. ch..* e1,
+                                  co.. ch..* e2,
                                   Pred pred,
-                                  const T1& v1,
-                                  const T2& v2) {
+                                  co.. T1& v1,
+                                  co.. T2& v2) {
   if (pred(v1, v2)) return AssertionSuccess();
 
   return AssertionFailure() << pred_text << "("
@@ -172,14 +172,14 @@ template <typename Pred,
           typename T1,
           typename T2,
           typename T3>
-AssertionResult AssertPred3Helper(const char* pred_text,
-                                  const char* e1,
-                                  const char* e2,
-                                  const char* e3,
+AssertionResult AssertPred3Helper(co.. ch..* pred_text,
+                                  co.. ch..* e1,
+                                  co.. ch..* e2,
+                                  co.. ch..* e3,
                                   Pred pred,
-                                  const T1& v1,
-                                  const T2& v2,
-                                  const T3& v3) {
+                                  co.. T1& v1,
+                                  co.. T2& v2,
+                                  co.. T3& v3) {
   if (pred(v1, v2, v3)) return AssertionSuccess();
 
   return AssertionFailure() << pred_text << "("
@@ -228,16 +228,16 @@ template <typename Pred,
           typename T2,
           typename T3,
           typename T4>
-AssertionResult AssertPred4Helper(const char* pred_text,
-                                  const char* e1,
-                                  const char* e2,
-                                  const char* e3,
-                                  const char* e4,
+AssertionResult AssertPred4Helper(co.. ch..* pred_text,
+                                  co.. ch..* e1,
+                                  co.. ch..* e2,
+                                  co.. ch..* e3,
+                                  co.. ch..* e4,
                                   Pred pred,
-                                  const T1& v1,
-                                  const T2& v2,
-                                  const T3& v3,
-                                  const T4& v4) {
+                                  co.. T1& v1,
+                                  co.. T2& v2,
+                                  co.. T3& v3,
+                                  co.. T4& v4) {
   if (pred(v1, v2, v3, v4)) return AssertionSuccess();
 
   return AssertionFailure() << pred_text << "("
@@ -291,18 +291,18 @@ template <typename Pred,
           typename T3,
           typename T4,
           typename T5>
-AssertionResult AssertPred5Helper(const char* pred_text,
-                                  const char* e1,
-                                  const char* e2,
-                                  const char* e3,
-                                  const char* e4,
-                                  const char* e5,
+AssertionResult AssertPred5Helper(co.. ch..* pred_text,
+                                  co.. ch..* e1,
+                                  co.. ch..* e2,
+                                  co.. ch..* e3,
+                                  co.. ch..* e4,
+                                  co.. ch..* e5,
                                   Pred pred,
-                                  const T1& v1,
-                                  const T2& v2,
-                                  const T3& v3,
-                                  const T4& v4,
-                                  const T5& v5) {
+                                  co.. T1& v1,
+                                  co.. T2& v2,
+                                  co.. T3& v3,
+                                  co.. T4& v4,
+                                  co.. T5& v5) {
   if (pred(v1, v2, v3, v4, v5)) return AssertionSuccess();
 
   return AssertionFailure() << pred_text << "("

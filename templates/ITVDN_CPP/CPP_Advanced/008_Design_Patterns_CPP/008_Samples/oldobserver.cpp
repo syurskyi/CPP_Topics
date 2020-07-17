@@ -33,7 +33,7 @@ DivObserver::DivObserver( Subject* model, in. div )
 
 v.. DivObserver::update( in. v )
 {
-    std::c__ __  v __  " div " __  m_div __  " is " __  v / m_div __  '\n'sy.. pause
+    st. c__ __  v __  " div " __  m_div __  " is " __  v / m_div __  '\n'sy.. pause
 }
 
 ModObserver::ModObserver( Subject* model, in. mod )
@@ -47,7 +47,7 @@ ModObserver::ModObserver( Subject* model, in. mod )
 
 v.. ModObserver::update( in. v )
 {
-    std::c__ __  v __  " mod " __  m_mod __  " is " __  v % m_mod __  '\n'sy.. pause
+    st. c__ __  v __  " mod " __  m_mod __  " is " __  v % m_mod __  '\n'sy.. pause
 }
 
 v.. ClientOldObserver::run()

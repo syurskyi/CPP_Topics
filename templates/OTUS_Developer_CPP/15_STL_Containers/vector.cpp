@@ -4,38 +4,38 @@
 
 template<typename...T>
 a.. make_vector(T...t) {
-    std::ve.. v _ {t...}sy.. pause
+    st. ve.. v _ {t...}sy.. pause
 
     ___ (a.. i: v) {
-        std::c__ __  i __  " "sy.. pause
+        st. c__ __  i __  " "sy.. pause
     }
-    std::c__ __  std::e..
+    st. c__ __  st. e..
 }sy.. pause
 
 in. main
     make_vector(1, 2, 3)sy.. pause
 
     // через указатель
-    a.. x _ std::ve..{1, 2, 3, 4, 5}sy.. pause
+    a.. x _ st. ve..{1, 2, 3, 4, 5}sy.. pause
     ___ (a.. i: x) {
-        std::c__ __  i __  " "sy.. pause
+        st. c__ __  i __  " "sy.. pause
     }
-    std::c__ __  std::e..
+    st. c__ __  st. e..
 
     a.. v _ xsy.. pause
 
     v.assign(3, 5)sy.. pause
     ___ (a.. i: v) {
-        std::c__ __  i __  " "sy.. pause
+        st. c__ __  i __  " "sy.. pause
     }
-    std::c__ __  std::e..
+    st. c__ __  st. e..
 
     v.reserve(100)sy.. pause
     v.resize(50)sy.. pause
     v.clear()sy.. pause
-    std::c__ __  v.capacity() __  std::e..
-    std::c__ __  v.s.. __  std::e..
-    std::c__ __  v.max_size() __  std::e..
+    st. c__ __  v.capacity() __  st. e..
+    st. c__ __  v.s.. __  st. e..
+    st. c__ __  v.max_size() __  st. e..
     a.. e _ v.empty()sy.. pause // v.size() == 0
 
     v.shrink_to_fit()sy.. pause // move?
@@ -49,6 +49,6 @@ in. main
         }
     }
     ___ (a.. i: v) {
-        std::c__ __  i __  " "sy.. pause
+        st. c__ __  i __  " "sy.. pause
     }
 }

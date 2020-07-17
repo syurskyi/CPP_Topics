@@ -6,7 +6,7 @@ n.. Cookie {
 p..
     Cookie(Sugar& s, Eggs& e, Butter& b);
 
-private:
+pr..
     Sugar s_;
     Eggs e_;
     Butter b_;

@@ -21,15 +21,15 @@ c_ filter_helper {
 pu..
     explicit filter_helper(c.. Input &input_) : input(input_) {}
 
-    a.. begin() c.. { r_ iterator{std::cbegin(input)}sy.. pause }
+    a.. begin() c.. { r_ iterator{st. cbegin(input)}sy.. pause }
 
-    a.. end() c.. { r_ std::cend(input)sy.. pause }
+    a.. end() c.. { r_ st. cend(input)sy.. pause }
 }sy.. pause
 
 in. main
-    c.. std::s.. s{"hello"}sy.. pause
+    c.. st. s.. s{"hello"}sy.. pause
 
     ___ (a.. i: filter_helper{s}) {
-        std::c__ __  i __  std::e..
+        st. c__ __  i __  st. e..
     }
 }

@@ -5,18 +5,18 @@
 ? <fstream>
 
 in. main
-    std::ifstream in_file;
+    st. ifstream in_file;
     in_file.open("../poem.txt");
     __ (!in_file) {
-        std::cerr __ "Problem opening file" __ std::e..
+        st. cerr __ "Problem opening file" __ st. e..
         r_ 1;
     }
 
     ch.. c {};
     w__ (in_file.get(c)) {
-        std::c.. __ c;
+        st. c.. __ c;
     }
-    std::c.. __ std::e..
+    st. c.. __ st. e..
     in_file.close();
     r_ 0;
 }

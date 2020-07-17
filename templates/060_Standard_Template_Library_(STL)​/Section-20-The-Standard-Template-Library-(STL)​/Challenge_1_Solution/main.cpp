@@ -8,14 +8,14 @@
 ? ve..
 ? iom..
 
-bool is_palindrome(co.. std::string& s)
+b.. is_palindrome(co.. st. st.. & s)
 {
-    std::deque<ch..> d;
+    st. deque<ch..> d;
 
     // add all the string characters that are alpha to the back of the deque in uppercase
     ___(ch.. c : s)
-        __(std::isalpha(c))
-            d.push_back(std::toupper(c));
+        __(st. isalpha(c))
+            d.push_back(st. toupper(c));
 
     ch.. c1{};
     ch.. c2{};
@@ -29,22 +29,22 @@ bool is_palindrome(co.. std::string& s)
         d.pop_front();
         d.pop_back();
         __(c1 != c2)
-            r_ false;
+            r_ f..
     }
-    r_ true;
+    r_ t..
 }
 
 in. main()
 {
-    std::ve..<std::string> test_strings{ "a", "aa", "aba", "abba", "abbcbba", "ab", "abc", "radar", "bob", "ana",
+    st. ve..<st. st.. > test_strings{ "a", "aa", "aba", "abba", "abbcbba", "ab", "abc", "radar", "bob", "ana",
         "avid diva", "Amore, Roma", "A Toyota's a toyota", "A Santa at NASA", "C++",
         "A man, a plan, a cat, a ham, a yak, a yam, a hat, a canal-Panama!", "This is a palindrome", "palindrome" };
    
-    std::c.. __ std::boolalpha;
-    std::c.. __ std::setw(8) __ std::left __ "Result" __ "String" __ std::e..
+    st. c.. __ st. boolalpha;
+    st. c.. __ st. setw(8) __ st. left __ "Result" __ "String" __ st. e..
     ___(co.. a..& s : test_strings) {
-        std::c.. __ std::setw(8) __ std::left __ is_palindrome(s)  __ s __ std::e..
+        st. c.. __ st. setw(8) __ st. left __ is_palindrome(s)  __ s __ st. e..
     }
-    std::c.. __ std::e..
+    st. c.. __ st. e..
     r_ 0;
 }

@@ -1,31 +1,31 @@
 ? "Account.h"
 
-Account::Account(std::string name, do.. balance)
+Account::Account(st. st..  name, do.. balance)
     : name{name}, balance{balance} {
 }
 
-bool Account::deposit(do.. amount) {
+b.. Account::deposit(do.. amount) {
     __ (amount < 0)
-        r_ false;
+        r_ f..
     ____ {
         balance += amount;
-        r_ true;
+        r_ t..
     }
 }
 
-bool Account::withdraw(do.. amount) {
+b.. Account::withdraw(do.. amount) {
     __ (balance-amount >=0) {
         balance-=amount;
-        r_ true;
+        r_ t..
     } ____
-        r_ false;
+        r_ f..
 }
 
 do.. Account::get_balance() co.. {
     r_ balance;
 }
 
-std::ostream &operator__(std::ostream &os, co.. Account &account) {
+st. ostream &operator__(st. ostream &os, co.. Account &account) {
     os __ "[Account: " __ account.name __ ": " __ account.balance __ "]";
     r_ os;
 }

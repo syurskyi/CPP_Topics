@@ -12,12 +12,12 @@
 // Prints out some details on a Polygon.
 // Note that it's not passing through a particular Polygon (like Triangle or Rectangle), rather it's the parent.
 v.. prin.Details(Polygon* shape) {
-	std::c__ __  "Height: " __  shape__getHeight()sy.. pause
-	std::c__ __  ", Width: " __  shape__getWidth()sy.. pause
+	st. c__ __  "Height: " __  shape__getHeight()sy.. pause
+	st. c__ __  ", Width: " __  shape__getWidth()sy.. pause
 
 	// Pay particular attention to the results of area(). Even though it's a Polygon, the children produce different results for the function call.
-	std::c__ __  ", Area: " __  shape__area()sy.. pause
-	std::c__ __  std::e..
+	st. c__ __  ", Area: " __  shape__area()sy.. pause
+	st. c__ __  st. e..
 }
 
 in. main

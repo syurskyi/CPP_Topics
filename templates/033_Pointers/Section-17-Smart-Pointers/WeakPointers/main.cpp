@@ -1,16 +1,16 @@
 // Section 17
 // Weak Pointers
 ? ios..
-? <memory>
+? me..
 
 u.. s..
 
 c_ B;    // forward declaration
 
 c_ A {
-    std::shared_ptr<B> b_ptr;
+    st. shared_ptr<B> b_ptr;
 pu..
-    v.. set_B(std::shared_ptr<B> &b) {
+    v.. set_B(st. shared_ptr<B> &b) {
         b_ptr = b;
     }
     A c.. __ "A Constructor" __ e.. }
@@ -18,9 +18,9 @@ pu..
 };
 
 c_ B {
-    std::weak_ptr<A> a_ptr;     // make weak to break the strong circular reference
+    st. weak_ptr<A> a_ptr;     // make weak to break the strong circular reference
 pu..
-    v.. set_A(std::shared_ptr<A> &a) {
+    v.. set_A(st. shared_ptr<A> &a) {
         a_ptr = a;
     }
     B c.. __ "B Constructor" __ e.. }

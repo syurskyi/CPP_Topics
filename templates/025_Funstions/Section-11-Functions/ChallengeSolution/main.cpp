@@ -117,7 +117,7 @@ v.. display_list(co.. ve..<in.> &v);
 do.. calculate_mean(co.. ve..<in.> &v);
 in. get_smallest(co.. ve..<in.> &v);
 in. get_largest(co.. ve..<in.> &v);
-bool find(co.. ve..<in.> &v, in. target);
+b.. find(co.. ve..<in.> &v, in. target);
 
 in. main
     
@@ -349,10 +349,10 @@ If the target is not found in the vector false is returned
 Note that the parameter is a const reference parameter
 this function should NOT modify the list of numbers
 ***************************************************************/
-bool find(co.. ve..<in.> &v, in. target) {
+b.. find(co.. ve..<in.> &v, in. target) {
     ___ (a.. num: v)
         __ (num __ target)
-            r_ true;
-    r_ false;
+            r_ t..
+    r_ f..
 }
 

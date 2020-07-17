@@ -10,21 +10,21 @@
 ? <limits>
 
 c_ Song {
-    friend std::ostream &operator__(std::ostream &os, co.. Song &s);
+    friend st. ostream &operator__(st. ostream &os, co.. Song &s);
 
-    std::string name;
-    std::string artist;
+    st. st..  name;
+    st. st..  artist;
     in. rating;
 pu..
     Song() = default;
-    Song(std::string name, std::string artist, in. rating)
+    Song(st. st..  name, st. st..  artist, in. rating)
             : name{name}, artist{artist}, rating{rating} {}
 
-    std::string get_name() co.. {
+    st. st..  get_name() co.. {
         r_ name;
     }
 
-    std::string get_artist() co.. {
+    st. st..  get_artist() co.. {
         r_ artist;
     }
     
@@ -32,48 +32,48 @@ pu..
         r_ rating;
     }
     
-    bool operator<(co.. Song &rhs) co..  {
+    b.. operator<(co.. Song &rhs) co..  {
         r_ this->name < rhs.name;
     }
     
-    bool operator__(co.. Song &rhs) co..  {
+    b.. operator__(co.. Song &rhs) co..  {
         r_ this->name __ rhs.name;
     }
 };
 
-std::ostream &operator__(std::ostream &os, co.. Song &s) {
-    os __ std::setw(20) __ std::left __ s.name
-       __ std::setw(30) __ std::left __ s.artist
-       __ std::setw(2) __ std::left __ s.rating;
+st. ostream &operator__(st. ostream &os, co.. Song &s) {
+    os __ st. setw(20) __ st. left __ s.name
+       __ st. setw(30) __ st. left __ s.artist
+       __ st. setw(2) __ st. left __ s.rating;
        r_ os;
 }
 
 v.. display_menu
-    std::c.. __ "\nF - Play First Song" __ std::e..
-    std::c.. __ "N - Play Next song" __ std::e..
-    std::c.. __ "P - Play Previous song" __ std::e..
-    std::c.. __ "A - Add and play a new Song at current location" __ std::e..
-    std::c.. __ "L - List the current playlist" __ std::e..
-    std::c.. __ "===============================================" __ std::e..
-    std::c.. __ "Enter a selection (Q to quit): ";
+    st. c.. __ "\nF - Play First Song" __ st. e..
+    st. c.. __ "N - Play Next song" __ st. e..
+    st. c.. __ "P - Play Previous song" __ st. e..
+    st. c.. __ "A - Add and play a new Song at current location" __ st. e..
+    st. c.. __ "L - List the current playlist" __ st. e..
+    st. c.. __ "===============================================" __ st. e..
+    st. c.. __ "Enter a selection (Q to quit): ";
 }
 
 v.. play_current_song(co.. Song &song) {
-    std::c.. __ "Playing: " __ std::e..
-    std::c.. __ song __ std::e..
+    st. c.. __ "Playing: " __ st. e..
+    st. c.. __ song __ st. e..
 }
 
-v.. display_playlist(co.. std::list<Song> &playlist, co.. Song &current_song) {
+v.. display_playlist(co.. st. list<Song> &playlist, co.. Song &current_song) {
     ___ (co.. Song &song: playlist) {
-        std::c.. __ song __ std::e..
+        st. c.. __ song __ st. e..
     }
-    std::c.. __ "Current song: " __ std::e..
-    std::c.. __ current_song __ std::e..
+    st. c.. __ "Current song: " __ st. e..
+    st. c.. __ current_song __ st. e..
 }
 
 in. main
 
-    std::list<Song> playlist{
+    st. list<Song> playlist{
             {"God's Plan",        "Drake",                     5},
             {"Never Be The Same", "Camila Cabello",            5},
             {"Pray For Me",       "The Weekend and K. Lamar",  4},
@@ -82,60 +82,60 @@ in. main
             {"Whatever It Takes", "Imagine Dragons",           3}          
     };
 
-    std::list<Song>::iterator current_song = playlist.begin();
+    st. list<Song>::iterator current_song = playlist.begin();
     display_playlist(playlist, *current_song);
     
     ch.. selection{};
     do {
         display_menu();
-        std::ci. __ selection;
-        selection = std::toupper(selection);
+        st. ci. __ selection;
+        selection = st. toupper(selection);
         __ (selection __ 'F') {
-            std::c.. __ "Playing first song" __ std::e..
+            st. c.. __ "Playing first song" __ st. e..
             current_song = playlist.begin();
             play_current_song(*current_song);
         }
         ____ __ (selection __ 'N') {
-            std::c.. __ "Playing next song" __ std::e..
+            st. c.. __ "Playing next song" __ st. e..
             current_song++;
             __ (current_song __ playlist.end()) {
-                std::c.. __ "Wrapping to start of playlist" __ std::e..
+                st. c.. __ "Wrapping to start of playlist" __ st. e..
                 current_song = playlist.begin();
             }
             play_current_song(*current_song);
         }
         ____ __ (selection __ 'P') {
-            std::c.. __ "Playing previous song" __ std::e..
+            st. c.. __ "Playing previous song" __ st. e..
             __ (current_song __ playlist.begin()) {
-                std::c.. __ "Wrapping to end of playlist" __ std::e..
+                st. c.. __ "Wrapping to end of playlist" __ st. e..
                 current_song = playlist.end();
             }
             current_song--;
             play_current_song(*current_song);
         } ____ __ (selection __ 'A') {
-            std::string name, artist;
+            st. st..  name, artist;
             in. rating;
-            std::ci..clear();
-            std::ci..ignore(std::numeric_limits<std::streamsize>::max(),'\n');
-            std::c.. __ "Adding and playing new song" __ std::e..
-            std::c.. __ "Enter song name:";
-            getline(std::ci., name);
-            std::c.. __ "Enter song artist: ";
-            getline(std::ci., artist);
-            std::c.. __ "Enter your rating (1-5): ";
-            std::ci. __ rating;
+            st. ci..clear();
+            st. ci..ignore(st. numeric_limits<st. streamsize>::max(),'\n');
+            st. c.. __ "Adding and playing new song" __ st. e..
+            st. c.. __ "Enter song name:";
+            getline(st. ci., name);
+            st. c.. __ "Enter song artist: ";
+            getline(st. ci., artist);
+            st. c.. __ "Enter your rating (1-5): ";
+            st. ci. __ rating;
             playlist.insert(current_song, Song{name, artist, rating});
             current_song--;
             play_current_song(*current_song);
         } ____ __ (selection __ 'L') {
-            std::c.. __ std::e..
+            st. c.. __ st. e..
             display_playlist(playlist, *current_song);            
         } ____ __ (selection __ 'Q')
-            std::c.. __ "Quitting" __ std::e..
+            st. c.. __ "Quitting" __ st. e..
         ____
-            std::c.. __ "Illegal choice, try again...";
+            st. c.. __ "Illegal choice, try again...";
     } w__ (selection != 'Q');
 
-    std::c.. __ "Thanks for listening!" __ std::e..
+    st. c.. __ "Thanks for listening!" __ st. e..
     r_ 0;
 }

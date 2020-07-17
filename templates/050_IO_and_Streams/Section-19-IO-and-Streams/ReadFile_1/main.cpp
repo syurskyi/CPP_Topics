@@ -5,20 +5,20 @@
 ? <fstream>
 
 in. main
-    std::ifstream in_file;
-    std::string line;
+    st. ifstream in_file;
+    st. st..  line;
     in. num;
     do.. total;
     
     in_file.open("../test.txt");
     __ (!in_file) {
-        std::cerr __ "Problem opening file" __ std::e..
+        st. cerr __ "Problem opening file" __ st. e..
         r_ 1;
     }
     in_file __ line __ num __ total;
-    std::c.. __ line __ std::e..
-    std::c.. __ num __ std::e..
-    std::c.. __ total __ std::e..
+    st. c.. __ line __ st. e..
+    st. c.. __ num __ st. e..
+    st. c.. __ total __ st. e..
     in_file.close();
     r_ 0;
 }

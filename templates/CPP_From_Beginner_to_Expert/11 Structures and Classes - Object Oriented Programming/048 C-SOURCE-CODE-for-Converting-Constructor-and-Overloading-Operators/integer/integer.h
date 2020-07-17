@@ -3,13 +3,13 @@ _de.. INTEGER_H_INCLUDED
 
 n.. Integer
 {
-    int nr;
+    in. nr;
     p..
         Integer() { };
-        Integer(int);
-        operator int();
-        int operator+=(Integer);
-        int getNr() { return nr; };
+        Integer(in.);
+        operator in.();
+        in. operator+=(Integer);
+        in. getNr() { return nr; };
 };
 
 

@@ -19,12 +19,12 @@ _de.. min(a, b)  (((a)<(b)) ? (a) : (b))
 _de.. max(a,b) ((a>b) ? a : b)
 in. main
 
-    std::c.. __ min(2,3) __ std::e..
-    std::c.. __ min('A', 'B') __ std::e..
-    std::c.. __ min(12.5, 9.2) __ std::e..
-    std::c.. __ min(5+2*2, 7+40) __ std::e..
+    st. c.. __ min(2,3) __ st. e..
+    st. c.. __ min('A', 'B') __ st. e..
+    st. c.. __ min(12.5, 9.2) __ st. e..
+    st. c.. __ min(5+2*2, 7+40) __ st. e..
 
-    std::c.. __ max(10,20) __ std::e..
+    st. c.. __ max(10,20) __ st. e..
     r_ 0;
 }
 

@@ -8,57 +8,57 @@ in. main
     in. num {255};
  
     // Displaying using different bases
-    std::c.. __ "\n------------------------------------------------------------" __ std::e..
-    std::c.. __ std::dec __ num __ std::e..
-    std::c.. __ std::hex __ num __ std::e..
-    std::c.. __ std::oct __ num __ std::e..
+    st. c.. __ "\n------------------------------------------------------------" __ st. e..
+    st. c.. __ st. dec __ num __ st. e..
+    st. c.. __ st. hex __ num __ st. e..
+    st. c.. __ st. oct __ num __ st. e..
     
     // Displaying showing the base prefix for hex and oct
-        std::c.. __ "\n------------------------------------------------------------" __ std::e..
-    std::c.. __ std::showbase;
-    std::c.. __ std::dec __ num __ std::e..
-    std::c.. __ std::hex __ num __ std::e..
-    std::c.. __ std::oct __ num __ std::e..
+        st. c.. __ "\n------------------------------------------------------------" __ st. e..
+    st. c.. __ st. showbase;
+    st. c.. __ st. dec __ num __ st. e..
+    st. c.. __ st. hex __ num __ st. e..
+    st. c.. __ st. oct __ num __ st. e..
     
      // Display the hex value in uppercase
-    std::c.. __ "\n------------------------------------------------------------" __ std::e..
-    std::c.. __ std::showbase __ std::uppercase;
-    std::c.. __ std::hex __ num __ std::e..
+    st. c.. __ "\n------------------------------------------------------------" __ st. e..
+    st. c.. __ st. showbase __ st. uppercase;
+    st. c.. __ st. hex __ num __ st. e..
 
     // Display the + sign in front of positive base 10 numbers
-    std::c.. __ "\n------------------------------------------------------------" __ std::e..
-    std::c.. __ std::showpos;
-    std::c.. __ std::dec __ num __ std::e..
-    std::c.. __ std::hex __ num __ std::e..
-    std::c.. __ std::oct __ num __ std::e..
+    st. c.. __ "\n------------------------------------------------------------" __ st. e..
+    st. c.. __ st. showpos;
+    st. c.. __ st. dec __ num __ st. e..
+    st. c.. __ st. hex __ num __ st. e..
+    st. c.. __ st. oct __ num __ st. e..
     
     // setting using the set method
-    std::c...setf(std::ios::showbase);
-    std::c...setf(std::ios::uppercase);
-    std::c...setf(std::ios::showpos);
+    st. c...setf(st. ios::showbase);
+    st. c...setf(st. ios::uppercase);
+    st. c...setf(st. ios::showpos);
 
     // resetting to defaults
-    std::c.. __ std::resetiosflags(std::ios::basefield);
-    std::c.. __ std::resetiosflags(std::ios::showbase);
-    std::c.. __ std::resetiosflags(std::ios::showpos);
-    std::c.. __ std::resetiosflags(std::ios::uppercase);
+    st. c.. __ st. resetiosflags(st. ios::basefield);
+    st. c.. __ st. resetiosflags(st. ios::showbase);
+    st. c.. __ st. resetiosflags(st. ios::showpos);
+    st. c.. __ st. resetiosflags(st. ios::uppercase);
 
-    std::c.. __ "\n------------------------------------------------------------" __ std::e..
-    std::c.. __ "Enter an integer : ";
-    std::ci. __ num;
+    st. c.. __ "\n------------------------------------------------------------" __ st. e..
+    st. c.. __ "Enter an integer : ";
+    st. ci. __ num;
     
-    std::c.. __ "Decimal default  : " __ num __ std::e..
+    st. c.. __ "Decimal default  : " __ num __ st. e..
     
-    std::c.. __ "Hexadecimal      : " __ std::hex __ num __ std::e..
-    std::c.. __ "Hexadecimal      : " __ std::hex __ std::uppercase __ num __ std::e..
-    std::c.. __ "Hexadecimal      : " __ std::hex  __ num __ std::e..
-    std::c.. __ "Hexadecimal      : " __ std::hex __ std::nouppercase __ num __ std::e..
+    st. c.. __ "Hexadecimal      : " __ st. hex __ num __ st. e..
+    st. c.. __ "Hexadecimal      : " __ st. hex __ st. uppercase __ num __ st. e..
+    st. c.. __ "Hexadecimal      : " __ st. hex  __ num __ st. e..
+    st. c.. __ "Hexadecimal      : " __ st. hex __ st. nouppercase __ num __ st. e..
 
-    std::c.. __ "Octal            : " __ std::oct __ num __ std::e..
-    std::c.. __ "Hexadecimal      : " __ std::hex __ std::showbase __ num __ std::e..
-    std::c.. __ "Octal            : " __ std::oct __ num __ std::e..
+    st. c.. __ "Octal            : " __ st. oct __ num __ st. e..
+    st. c.. __ "Hexadecimal      : " __ st. hex __ st. showbase __ num __ st. e..
+    st. c.. __ "Octal            : " __ st. oct __ num __ st. e..
     
-    std::c.. __ std::endl __ std::e..
+    st. c.. __ st. endl __ st. e..
     r_ 0;
 }
 

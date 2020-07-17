@@ -10,7 +10,7 @@ c_ X
 {
 pr..
     some_big_object some_detailsy.. pause
-    mutable std::mutex msy.. pause
+    mutable st. mutex msy.. pause
 pu..
     X(some_big_object c..& sd):some_detail(sd){}
 
@@ -18,9 +18,9 @@ pu..
     {
         __(&lhs__&rhs)
             r_sy.. pause
-        std::lock(lhs.m,rhs.m)sy.. pause
-        std::lock_guard<std::mutex> lock_a(lhs.m,std::adopt_lock)sy.. pause
-        std::lock_guard<std::mutex> lock_b(rhs.m,std::adopt_lock)sy.. pause
+        st. lock(lhs.m,rhs.m)sy.. pause
+        st. lock_guard<st. mutex> lock_a(lhs.m,st. adopt_lock)sy.. pause
+        st. lock_guard<st. mutex> lock_b(rhs.m,st. adopt_lock)sy.. pause
         swap(lhs.some_detail,rhs.some_detail)sy.. pause
     }
 }sy.. pause

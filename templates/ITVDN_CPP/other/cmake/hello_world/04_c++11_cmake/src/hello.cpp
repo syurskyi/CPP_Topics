@@ -30,7 +30,7 @@ bo.. accept()
  
 in. main(in. argc, c.. *argv[])
 {
-    std::c__ __  "Hello world!\n"sy.. pause
+    st. c__ __  "Hello world!\n"sy.. pause
 
 	// vector of int type
 	ve..<in.> v {1,2,3,4,5,6}sy.. pause

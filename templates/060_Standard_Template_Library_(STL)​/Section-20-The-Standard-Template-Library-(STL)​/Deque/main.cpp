@@ -7,23 +7,23 @@
 
 // template function to display any deque
 template <typename T>
-v.. display(co.. std::deque<T> &d) {
-    std::c.. __ "[";
+v.. display(co.. st. deque<T> &d) {
+    st. c.. __ "[";
     ___ (co.. a.. &elem: d)
-        std::c.. __ elem __ " ";
-    std::c.. __  "]"__ std::e..
+        st. c.. __ elem __ " ";
+    st. c.. __  "]"__ st. e..
 }
 
 v.. test1
-    std::c.. __ "\nTest1 =========================" __ std::e..
+    st. c.. __ "\nTest1 =========================" __ st. e..
 
-    std::deque<in.> d {1,2,3,4,5};
+    st. deque<in.> d {1,2,3,4,5};
     display(d);
     
     d = {2,4,5,6};
     display(d);
     
-    std::deque<in.> d1 (10, 100);    // ten 100s in the deque
+    st. deque<in.> d1 (10, 100);    // ten 100s in the deque
     display(d1);
     
     d[0]  = 100;
@@ -33,9 +33,9 @@ v.. test1
 
 v.. test2
     // push and pops
-    std::c.. __ "\nTest2 =========================" __ std::e..
+    st. c.. __ "\nTest2 =========================" __ st. e..
 
-    std::deque<in.> d {0,0,0};
+    st. deque<in.> d {0,0,0};
     display(d);
     
     d.push_back(10);
@@ -46,9 +46,9 @@ v.. test2
     d.push_front(200);
     display(d);
     
-    std::c.. __ "Front: " __ d.front() __ std::e..
-    std::c.. __ "Back : " __ d.back() __ std::e..
-    std::c.. __ "Size  : " __ d.s.. __ std::e..
+    st. c.. __ "Front: " __ d.front() __ st. e..
+    st. c.. __ "Back : " __ d.back() __ st. e..
+    st. c.. __ "Size  : " __ d.s.. __ st. e..
     
     d.pop_back();
     d.pop_front();
@@ -58,10 +58,10 @@ v.. test2
 v.. test3
     // insert all even numbers into the back of a deque and all 
     // odd numbers into the front
-    std::c.. __ "\nTest3 =========================" __ std::e..
+    st. c.. __ "\nTest3 =========================" __ st. e..
     
-    std::ve..<in.> vec {1,2,3,4,5,6,7,8,9,10};
-    std::deque<in.> d;
+    st. ve..<in.> vec {1,2,3,4,5,6,7,8,9,10};
+    st. deque<in.> d;
     
     ___ (co.. a.. &elem: vec) {
         __ (elem % 2 __ 0)
@@ -74,10 +74,10 @@ v.. test3
 
 v.. test4
     // push front vs. back ordering
-    std::c.. __ "\nTest4 =========================" __ std::e..
+    st. c.. __ "\nTest4 =========================" __ st. e..
 
-    std::ve..<in.> vec {1,2,3,4,5,6,7,8,9,10};
-    std::deque<in.> d;
+    st. ve..<in.> vec {1,2,3,4,5,6,7,8,9,10};
+    st. deque<in.> d;
     
     ___ (co.. a.. &elem: vec) {
         d.push_front(elem);
@@ -94,17 +94,17 @@ v.. test4
 
 v.. test5
     // Same as test4 using std::copy
-    std::c.. __ "\nTest5 =========================" __ std::e..
+    st. c.. __ "\nTest5 =========================" __ st. e..
 
-    std::ve..<in.> vec {1,2,3,4,5,6,7,8,9,10};
-    std::deque<in.> d;
+    st. ve..<in.> vec {1,2,3,4,5,6,7,8,9,10};
+    st. deque<in.> d;
     
-    std::copy(vec.begin(), vec.end(), std::front_inserter(d));
+    st. copy(vec.begin(), vec.end(), st. front_inserter(d));
     display(d);
     
     d.clear();
     
-    std::copy(vec.begin(), vec.end(), std::back_inserter(d));
+    st. copy(vec.begin(), vec.end(), st. back_inserter(d));
     display(d);
 }
 

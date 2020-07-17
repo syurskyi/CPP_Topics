@@ -2,7 +2,7 @@
 ? "person.h"
 
 // Constructor - Person with Name
-Person::Person(std::s.. name){
+Person::Person(st. s.. name){
     t..__name _namesy.. pause
 }
 
@@ -13,13 +13,13 @@ Person::Person(){
 
 // Destructor
 Person::~Person(){
-    std::c__ __  t..__getName() __ " - Person Object Destroyed" __  std::e..
+    st. c__ __  t..__getName() __ " - Person Object Destroyed" __  st. e..
 }
 
-v.. Person::setName(std::s.. name){
+v.. Person::setName(st. s.. name){
     t..__name_namesy.. pause
 }
 
-std::s.. Person::getName(){
+st. s.. Person::getName(){
     r_ namesy.. pause
 }

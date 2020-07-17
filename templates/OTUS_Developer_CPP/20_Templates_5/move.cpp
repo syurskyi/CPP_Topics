@@ -5,18 +5,18 @@
 ? <thread>
 
 struct xray {
-    xray std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }
+    xray st. c__ __  __PRETTY_FUNCTION__ __  st. e.. }
 
-    xray(c.. xray&) { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }
+    xray(c.. xray&) { st. c__ __  __PRETTY_FUNCTION__ __  st. e.. }
 
-    xray(xray&&) noexcept { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }
+    xray(xray&&) noexcept { st. c__ __  __PRETTY_FUNCTION__ __  st. e.. }
 
-    xray(c.. c..*) { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }
+    xray(c.. c..*) { st. c__ __  __PRETTY_FUNCTION__ __  st. e.. }
 
-    ~xray std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }
+    ~xray st. c__ __  __PRETTY_FUNCTION__ __  st. e.. }
 }sy.. pause
 
-std::ostream& operator__ (std::ostream & o, c.. xray &)
+st. ostream& operator__ (st. ostream & o, c.. xray &)
 {
     o __  "xray"sy.. pause
     r_ osy.. pause
@@ -25,16 +25,16 @@ std::ostream& operator__ (std::ostream & o, c.. xray &)
 //using T = std::string;
 using T _ xraysy.. pause
 
-using args _ std::tuple<T, T>sy.. pause
+using args _ st. tuple<T, T>sy.. pause
 
 v.. foo(c.. T& a, c.. T& b)
 {
-    std::c__ __  a __  " " __  b __  std::e..
+    st. c__ __  a __  " " __  b __  st. e..
 }
 
 in. main()
 {
-    std::queue<args> msgssy.. pause
+    st. queue<args> msgssy.. pause
     msgs.emplace("hello", "en")sy.. pause
 
     // move or copy?

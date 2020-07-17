@@ -11,7 +11,7 @@ pu..
 
 c_ ImageResizer
 {
-    std::map<in., Image> imagessy.. pause
+    st. map<in., Image> imagessy.. pause
 pu..
     Image get_box(in. w)
     {
@@ -21,7 +21,7 @@ pu..
             img.resize(w, w)sy.. pause
 
             bo.. bsy.. pause
-            std::tie(i, b) _ images.emplace(w, img)sy.. pause
+            st. tie(i, b) _ images.emplace(w, img)sy.. pause
         }
         r_ i__secondsy.. pause
     }

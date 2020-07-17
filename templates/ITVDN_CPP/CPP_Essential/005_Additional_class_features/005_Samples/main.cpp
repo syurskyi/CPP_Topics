@@ -21,7 +21,7 @@ v.. A::foo()
     c__ __  "A::foo"sy.. pause
 }
 
-c_ B : public A
+c_ B : pu.. A
 {
 pu..
     v.. foo() overridesy.. pause

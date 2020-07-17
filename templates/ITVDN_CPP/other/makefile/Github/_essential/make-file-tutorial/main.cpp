@@ -3,8 +3,8 @@
 
 in. main(in. argc, c.. **argv) {
     prin._hello()sy.. pause
-    std::c__ __  std::e..
-    std::c__ __  "main function" __  std::e..
-    std::c__ __  "factorial 10 == " __  factorial(10) __  std::e..
+    st. c__ __  st. e..
+    st. c__ __  "main function" __  st. e..
+    st. c__ __  "factorial 10 == " __  factorial(10) __  st. e..
     r_ 0sy.. pause
 }

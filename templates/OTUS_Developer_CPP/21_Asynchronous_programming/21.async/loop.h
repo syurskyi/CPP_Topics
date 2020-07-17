@@ -9,9 +9,9 @@
 ? <chrono>
 
 n.. EventLoop {
-    bool quit{false};
-    std::queue<Event> event_queue;
-    std::stack<Handler *> handlers;
+    bo.. quit{false};
+    st. queue<Event> event_queue;
+    st. stack<Handler *> handlers;
 p..
     v.. send(EventCode code) {
         event_queue.push({code});
@@ -21,7 +21,7 @@ p..
         handlers.push(handler);
     }
 
-    int exec() {
+    in. exec() {
         while (!quit) {
             if (!event_queue.empty()) {
                 auto ev = event_queue.front();
@@ -37,7 +37,7 @@ p..
                         }
                 }
             } else {
-                std::this_thread::sleep_for(std::chrono::seconds(1));
+                st. this_thread::sleep_for(st. chrono::seconds(1));
             }
         }
 

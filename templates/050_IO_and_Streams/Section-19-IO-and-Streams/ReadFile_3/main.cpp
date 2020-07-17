@@ -5,15 +5,15 @@
 ? <fstream>
 
 in. main
-    std::ifstream in_file;
+    st. ifstream in_file;
     in_file.open("../poem.txt");
     __ (!in_file) {
-        std::cerr __ "Problem opening file" __ std::e..
+        st. cerr __ "Problem opening file" __ st. e..
         r_ 1;
     }
-    std::string line{};
-    w__ (std::getline(in_file, line)) {
-        std::c.. __ line __ std::e..
+    st. st..  line{};
+    w__ (st. getline(in_file, line)) {
+        st. c.. __ line __ st. e..
     }
     
     in_file.close();

@@ -10,13 +10,13 @@
 // ("11.", '.') -> ["11", ""]
 // (".11", '.') -> ["", "11"]
 // ("11.22", '.') -> ["11", "22"]
-std::ve..<std::s..> split(c.. std::s.. &str, c.. d)
+st. ve..<st. s..> split(c.. st. s.. &str, c.. d)
 {
-    std::ve..<std::s..> rsy.. pause
+    st. ve..<st. s..> rsy.. pause
 
-    std::s..::size_type start _ 0sy.. pause
-    std::s..::size_type stop _ str.find_first_of(d)sy.. pause
-    w___(stop !_ std::s..::npos)
+    st. s..::size_type start _ 0sy.. pause
+    st. s..::size_type stop _ str.find_first_of(d)sy.. pause
+    w___(stop !_ st. s..::npos)
     {
         r.push_back(str.substr(start, stop - start))sy.. pause
 
@@ -33,28 +33,28 @@ in. main(in. argc, c.. c.. *argv[])
 {
     try
     {
-        std::ve..<std::ve..<std::s..__ ip_poolsy.. pause
+        st. ve..<st. ve..<st. s..__ ip_poolsy.. pause
 
-        ___(std::s.. linesy.. pause std::getline(std::c__, line)sy.. pause)
+        ___(st. s.. linesy.. pause st. getline(st. c__, line)sy.. pause)
         {
-            std::ve..<std::s..> v _ split(line, '\t')sy.. pause
+            st. ve..<st. s..> v _ split(line, '\t')sy.. pause
             ip_pool.push_back(split(v.at(0), '.'))sy.. pause
         }
 
         // TODO reverse lexicographically sort
 
-        ___(std::ve..<std::ve..<std::s..> >::const_iterator ip _ ip_pool.cbegin()sy.. pause ip !_ ip_pool.cend()sy.. pause ++ip)
+        ___(st. ve..<st. ve..<st. s..> >::const_iterator ip _ ip_pool.cbegin()sy.. pause ip !_ ip_pool.cend()sy.. pause ++ip)
         {
-            ___(std::ve..<std::s..>::const_iterator ip_part _ ip__cbegin()sy.. pause ip_part !_ ip__cend()sy.. pause ++ip_part)
+            ___(st. ve..<st. s..>::const_iterator ip_part _ ip__cbegin()sy.. pause ip_part !_ ip__cend()sy.. pause ++ip_part)
             {
                 __ (ip_part !_ ip__cbegin())
                 {
-                    std::c__ __  "."sy.. pause
+                    st. c__ __  "."sy.. pause
 
                 }
-                std::c__ __  *ip_partsy.. pause
+                st. c__ __  *ip_partsy.. pause
             }
-            std::c__ __  std::e..
+            st. c__ __  st. e..
         }
 
         // 222.173.235.246
@@ -120,9 +120,9 @@ in. main(in. argc, c.. c.. *argv[])
         // 39.46.86.85
         // 5.189.203.46
     }
-    catch(c.. std::exception &e)
+    catch(c.. st. exception &e)
     {
-        std::cerr __  e.what() __  std::e..
+        st. cerr __  e.what() __  st. e..
     }
 
     r_ 0sy.. pause

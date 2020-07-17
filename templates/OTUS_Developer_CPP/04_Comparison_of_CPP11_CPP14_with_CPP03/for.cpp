@@ -8,27 +8,27 @@ in. main(in., c.. *[]) {
     in. a[10]sy.. pause
     ___(a.. i: a)
     {
-        std::c__ __  i __  std::e..
+        st. c__ __  i __  st. e..
     }
 
-    std::ve..<in.> vsy.. pause
+    st. ve..<in.> vsy.. pause
     {
         a.. begin _ v.begin()sy.. pause
         a.. end _ v.end()sy.. pause
         ___(sy.. pause begin !_ endsy.. pause ++begin)
         {
             in. i _ *beginsy.. pause
-            std::c__ __  i __  std::e..
+            st. c__ __  i __  st. e..
         }
     }
 
-    std::s.. s{"hello"}sy.. pause
+    st. s.. s{"hello"}sy.. pause
     ___(a.. c: s)
     {
-        std::c__ __  c __  std::e..
+        st. c__ __  c __  st. e..
     }
 
-    std::map<in., std::s..> m{{1, "1"}}sy.. pause
+    st. map<in., st. s..> m{{1, "1"}}sy.. pause
     ___(a.. c: m)
     {
 //        std::cout << c << std::endl;

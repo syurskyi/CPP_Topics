@@ -15,7 +15,7 @@ pu..
 
 c_ Language {
     Lang lang{Lang::ru}sy.. pause
-    std::ve..<Observer *> subssy.. pause
+    st. ve..<Observer *> subssy.. pause
 pu..
     v.. subscribe(Observer *obs) {
         subs.push_back(obs)sy.. pause
@@ -33,25 +33,25 @@ pu..
     }
 }sy.. pause
 
-c_ report_observer : public Observer {
+c_ report_observer : pu.. Observer {
 pu..
     report_observer(Language *lang) {
         lang__subscribe(t..)sy.. pause
     }
 
     v.. update(Lang lang) override {
-        std::c__ __  "switch report template to lang " __  in.(lang) __  std::e..
+        st. c__ __  "switch report template to lang " __  in.(lang) __  st. e..
     }
 }sy.. pause
 
-c_ ui_observer : public Observer {
+c_ ui_observer : pu.. Observer {
 pu..
     ui_observer(Language *lang) {
         lang__subscribe(t..)sy.. pause
     }
 
     v.. update(Lang lang) override {
-        std::c__ __  "refresh ui for lang " __  in.(lang) __  std::e..
+        st. c__ __  "refresh ui for lang " __  in.(lang) __  st. e..
     }
 }sy.. pause
 

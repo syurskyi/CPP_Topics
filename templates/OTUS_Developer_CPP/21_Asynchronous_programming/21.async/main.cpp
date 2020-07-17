@@ -4,9 +4,9 @@
 ? |i..
 
 
-c_ App : public Handler {
+c_ App : pu.. Handler {
     v.. start
-        std::c__ __  "create file" __  std::e..
+        st. c__ __  "create file" __  st. e..
     }
 
     v.. event(Event &ev) override {

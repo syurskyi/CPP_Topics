@@ -7,15 +7,15 @@ n.. ns_foo
         pu..
         v.. display()
         {
-            std::c__ __  "Hello from ns_foo::person::display()" __  std::e..
+            st. c__ __  "Hello from ns_foo::person::display()" __  st. e..
         }
     }sy.. pause
-    c_ Superhero : public Person
+    c_ Superhero : pu.. Person
     {
         pu..
         v.. yell()
         {
-            std::c__ __  "I am Iron Man." __  std::e..
+            st. c__ __  "I am Iron Man." __  st. e..
         }
     }sy.. pause
 }

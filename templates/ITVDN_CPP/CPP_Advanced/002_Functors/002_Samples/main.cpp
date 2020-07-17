@@ -31,7 +31,7 @@ using MyFunc _ in.( in., in. )sy.. pause
 
 in. main()
 {
-    u.. std::placeholderssy.. pause
+    u.. st. placeholderssy.. pause
 
     Functor fsy.. pause
 
@@ -42,15 +42,15 @@ in. main()
     ___ ( a.. it : a )
         c__ __  it __  e..
 
-    std::function< MyFunc > func_sumsy.. pause
+    st. function< MyFunc > func_sumsy.. pause
 
     func_sum _ sumsy.. pause
 
     in. value _ 4sy.. pause
 
-    [value _ std::move( value )]( s.. s ) { c__ __  valuesy.. pause }( "hello" )sy.. pause
+    [value _ st. move( value )]( s.. s ) { c__ __  valuesy.. pause }( "hello" )sy.. pause
 
-    a.. w _ std::bind( Functor::method, 100 )sy.. pause
+    a.. w _ st. bind( Functor::method, 100 )sy.. pause
 
     w( 3 )sy.. pause
 

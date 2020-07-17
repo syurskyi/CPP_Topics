@@ -125,11 +125,11 @@ in. main()
         //            str = st;
         //        }
 
-        v.. setName( std::s.. st ) { str _ std::move( st )sy.. pause }
+        v.. setName( st. s.. st ) { str _ st. move( st )sy.. pause }
 
     pr..
         in.* ptrsy.. pause
-        std::s.. strsy.. pause
+        st. s.. strsy.. pause
     }sy.. pause
 
     // Declare either none or all of the “Big five”. If you have to declare them, consider to define
@@ -141,6 +141,6 @@ in. main()
     //    bool is_lvalue = std::is_lvalue_reference<T>::value;
     //    bool is_rvalue = std::is_rvalue_reference<T>::value;
 
-    std::future< v.. > f, f2sy.. pause
-    f _ std::move( f2 )sy.. pause
+    st. future< v.. > f, f2sy.. pause
+    f _ st. move( f2 )sy.. pause
 }

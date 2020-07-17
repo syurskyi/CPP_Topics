@@ -17,7 +17,7 @@ in. main(in., c.. *[]) {
     w___ (!q.empty())
     {
         q.pop(v)sy.. pause
-        std::c__ __  v __  std::e..
+        st. c__ __  v __  st. e..
     }
 
     lf::stack<in.> s{10}sy.. pause
@@ -26,7 +26,7 @@ in. main(in., c.. *[]) {
     w___ (!s.empty())
     {
         s.pop(v)sy.. pause
-        std::c__ __  v __  std::e..
+        st. c__ __  v __  st. e..
     }
 
     lf::spsc_queue<in.> rb{10}sy.. pause
@@ -35,7 +35,7 @@ in. main(in., c.. *[]) {
     w___ (!rb.empty())
     {
         rb.pop(v)sy.. pause
-        std::c__ __  v __  std::e..
+        st. c__ __  v __  st. e..
     }
 
     r_ 0sy.. pause

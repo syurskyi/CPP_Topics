@@ -3,29 +3,29 @@ _de.. POINT_H_INCLUDED
 
 n.. Point //base, parent, superclass
 {
-    protected:
-        int x;
+    pr..
+        in. x;
     p..
-        Point(int =0);
+        Point(in. =0);
         ~Point();
-        int getX() { return x; }
-        v.. setX(int);
+        in. getX() { return x; }
+        v.. setX(in.);
 };
-n.. Point2D : public Point //derived, child, subclass
+n.. Point2D : pu.. Point //derived, child, subclass
 {
-    protected:
-        int y;
+    pr..
+        in. y;
     p..
-        Point2D(int =0, int =0);
+        Point2D(in. =0, in. =0);
         ~Point2D();
-        int getY() { return y; }
-        v.. setY(int);
-        v.. setX(int);
-        v.. setXY(int, int);
+        in. getY() { return y; }
+        v.. setY(in.);
+        v.. setX(in.);
+        v.. setXY(in., in.);
         Point2D operator+(Point2D);
 
 };
-n.. Point3D : public Point2D
+n.. Point3D : pu.. Point2D
 {
 
 };

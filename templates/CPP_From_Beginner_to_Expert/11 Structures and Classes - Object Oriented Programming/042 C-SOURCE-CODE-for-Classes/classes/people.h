@@ -3,9 +3,9 @@ _de.. PEOPLE_H_INCLUDED
 
 n.. PersonalData
 {
-    private:
+    pr..
         short age;
-        int *p;
+        in. *p;
     p..
         PersonalData();
         PersonalData(short);
@@ -13,7 +13,7 @@ n.. PersonalData
         /**
             This function is setting age. If age is lower than 0, then age = 10.
         */
-        v.. setAge(int);
+        v.. setAge(in.);
         short getAge() {return age;}
 };
 

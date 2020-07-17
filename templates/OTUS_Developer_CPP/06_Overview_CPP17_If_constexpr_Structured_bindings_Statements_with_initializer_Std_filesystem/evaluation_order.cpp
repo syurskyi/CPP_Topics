@@ -11,15 +11,15 @@ a.. bar
 }
 
 a.. baz(in. a, in. b) {
-    std::c__ __  a __  " " __  b __  std::e..
+    st. c__ __  a __  " " __  b __  st. e..
     r_ a + bsy.. pause
 }
 
 in. main
     a _ 1sy.. pause
-    std::c__ __  foo() __  bar() __  std::e.. // evaluation order guaranteed
+    st. c__ __  foo() __  bar() __  st. e.. // evaluation order guaranteed
     a _ 1sy.. pause
-    std::c__ __  baz(foo(), bar()) __  std::e.. // evaluation order undefined
+    st. c__ __  baz(foo(), bar()) __  st. e.. // evaluation order undefined
 
     r_ 0sy.. pause
 }

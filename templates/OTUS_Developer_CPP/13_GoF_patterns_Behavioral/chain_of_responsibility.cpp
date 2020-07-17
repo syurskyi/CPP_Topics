@@ -21,7 +21,7 @@ pu..
             next _ nsy.. pause
     }
 
-    virtual v.. exec(c.. std::s.. &line)
+    virtual v.. exec(c.. st. s.. &line)
     {
         __ (next) {
             next__exec(line)sy.. pause
@@ -29,43 +29,43 @@ pu..
     }
 }sy.. pause
 
-c_ DropHandler : public Handler
+c_ DropHandler : pu.. Handler
 {
 pu..
-    v.. exec(c.. std::s.. &line) override
+    v.. exec(c.. st. s.. &line) override
     {
         __ (line.find("DROP") __ 0) {
-            std::c__ __  "DropHandler accept " __  line __  std::e..
+            st. c__ __  "DropHandler accept " __  line __  st. e..
         } ____ {
-            std::c__ __  "DropHandler pass" __  std::e..
+            st. c__ __  "DropHandler pass" __  st. e..
             Handler::exec(line)sy.. pause
         }
     }
 }sy.. pause
 
-c_ SelectHandler : public Handler
+c_ SelectHandler : pu.. Handler
 {
 pu..
-    v.. exec(c.. std::s.. &line) override
+    v.. exec(c.. st. s.. &line) override
     {
         __ (line.find("SELECT") __ 0) {
-            std::c__ __  "SelectHandler accept " __  line __  std::e..
+            st. c__ __  "SelectHandler accept " __  line __  st. e..
         } ____ {
-            std::c__ __  "SelectHandler pass" __  std::e..
+            st. c__ __  "SelectHandler pass" __  st. e..
             Handler::exec(line)sy.. pause
         }
     }
 }sy.. pause
 
-c_ CreateHandler: public Handler
+c_ CreateHandler: pu.. Handler
 {
 pu..
-    v.. exec(c.. std::s.. &line) override
+    v.. exec(c.. st. s.. &line) override
     {
         __ (line.find("CREATE") __ 0) {
-            std::c__ __  "CreateHandler accept " __  line __  std::e..
+            st. c__ __  "CreateHandler accept " __  line __  st. e..
         } ____ {
-            std::c__ __  "CreateHandler pass" __  std::e..
+            st. c__ __  "CreateHandler pass" __  st. e..
             Handler::exec(line)sy.. pause
         }
     }

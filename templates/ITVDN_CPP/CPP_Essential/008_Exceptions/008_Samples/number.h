@@ -5,14 +5,14 @@ u.. s..
 n.. Number
 {
 p..
-    explicit Number(int data);
+    explicit Number(in. data);
 
-    Number& operator=(const Number& other);
+    Number& operator=(co.. Number& other);
 
-    Number operator+(const Number& other) const;
+    Number operator+(co.. Number& other) co..;
 
-    friend ostream& operator<<(ostream &s, const Number& number);
+    friend ostream& operator<<(ostream &s, co.. Number& number);
 
-private:
-    int data;
+pr..
+    in. data;
 };

@@ -20,7 +20,7 @@ in. main()
 
 	in. sum _ add(x, y)sy.. pause
 
-	std::c__ __  sum __  std::e..
+	st. c__ __  sum __  st. e..
 
 	r_ 0sy.. pause
 }

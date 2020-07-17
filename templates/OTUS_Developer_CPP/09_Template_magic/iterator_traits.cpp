@@ -6,18 +6,18 @@
 ? <iterator>
 
 template<c_ BDIter>
-v.. alg(BDIter, BDIter, std::bidirectional_iterator_tag) {
-    std::c__ __  "alg() called for bidirectional iterator\n"sy.. pause
+v.. alg(BDIter, BDIter, st. bidirectional_iterator_tag) {
+    st. c__ __  "alg() called for bidirectional iterator\n"sy.. pause
 }
 
 template<c_ RAIter>
-v.. alg(RAIter, RAIter, std::random_access_iterator_tag) {
-    std::c__ __  "alg() called for random-access iterator\n"sy.. pause
+v.. alg(RAIter, RAIter, st. random_access_iterator_tag) {
+    st. c__ __  "alg() called for random-access iterator\n"sy.. pause
 }
 
 template<c_ Iter>
 v.. alg(Iter first, Iter last) {
-    alg(first, last, typename std::iterator_traits<Iter>::iterator_category())sy.. pause
+    alg(first, last, typename st. iterator_traits<Iter>::iterator_category())sy.. pause
 //    alg(first, last, typename Iter::iterator_category());
 }
 
@@ -34,10 +34,10 @@ n.. std {
 }
 
 in. main
-    std::ve..<in.> vsy.. pause
+    st. ve..<in.> vsy.. pause
     alg(v.begin(), v.end())sy.. pause
 
-    std::list<in.> lsy.. pause
+    st. list<in.> lsy.. pause
     alg(l.begin(), l.end())sy.. pause
 
     // std::istreambuf_iterator<char> i1(std::cin), i2;

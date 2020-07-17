@@ -9,46 +9,46 @@ n... xray {
         object() : object(-1) {
         }
 
-        object(int n) {
+        object(in. n) {
             this->n.fill(n);
         }
 
-        object(const object &o) {
-            std::cout << this << " copy(" << &o << ");" << std::endl;
+        object(co.. object &o) {
+            st. cout << this << " copy(" << &o << ");" << st. endl;
             this->n.fill(o.value());
         }
 
         object(object &&o) noexcept {
-            std::cout << this << " move(" << &o << ");" << std::endl;
+            st. cout << this << " move(" << &o << ");" << st. endl;
             this->n.fill(o.value());
         }
 
-        object &operator=(const object &o) {
-            std::cout << this << " copy(" << &o << ");" << std::endl;
+        object &operator=(co.. object &o) {
+            st. cout << this << " copy(" << &o << ");" << st. endl;
             this->n.fill(o.value());
             return *this;
         }
 
         object &operator=(object &&o) noexcept {
-            std::cout << this << " move(" << &o << ");" << std::endl;
+            st. cout << this << " move(" << &o << ");" << st. endl;
             this->n.fill(o.value());
             return *this;
         }
 
-        bool operator==(const object &o) const {
-            std::cout << this << " compare(" << &o << ");" << std::endl;
+        bo.. operator==(co.. object &o) co.. {
+            st. cout << this << " compare(" << &o << ");" << st. endl;
             return value() == o.value();
         }
 
-        [[nodiscard]] int value() const {
+        [[nodiscard]] in. value() co.. {
             return n[0];
         }
 
-    private:
-        std::array<int, 0x40> n;
+    pr..
+        st. array<in., 0x40> n;
     };
 
-    std::ostream &operator<<(std::ostream &o, const xray::object &x) {
+    st. ostream &operator<<(st. ostream &o, co.. xray::object &x) {
         return o << "xray(" << x.value() << ")";
     }
 
@@ -57,40 +57,40 @@ n... xray {
     p..
         using value_type = T;
 
-        T *allocate(std::size_t n) {
-            T *p = reinterpret_cast<T *>(std::malloc(n * sizeof(T)));
-            std::cout << p << " allocate(" << n << "); // " << n << " * " << sizeof(T) << " = " << n * sizeof(T)
-                      << " bytes" << std::endl;
+        T *allocate(st. size_t n) {
+            T *p = reinterpret_cast<T *>(st. malloc(n * sizeof(T)));
+            st. cout << p << " allocate(" << n << "); // " << n << " * " << sizeof(T) << " = " << n * sizeof(T)
+                      << " bytes" << st. endl;
             return p;
         }
 
         template<typename U, typename... Args>
         v.. construct(U *p, Args &&... args) {
-            ((std::cout << p << " construct(p, ") << ... << args) << ");" << std::endl;
-            ::new(p)U(std::forward<Args>(args)...);
+            ((st. cout << p << " construct(p, ") << ... << args) << ");" << st. endl;
+            ::new(p)U(st. forward<Args>(args)...);
         }
 
         template<typename U>
         v.. destroy(U *p) {
-            std::cout << p << " destroy(p);" << std::endl;
+            st. cout << p << " destroy(p);" << st. endl;
             p->~U();
         }
 
-        v.. deallocate(T *p, std::size_t n) {
-            std::cout << p << " deallocate(p, " << n << "); // deallocate " << n << " * " << sizeof(T) << " = "
-                      << n * sizeof(T) << " bytes" << std::endl;
-            std::free(p);
+        v.. deallocate(T *p, st. size_t n) {
+            st. cout << p << " deallocate(p, " << n << "); // deallocate " << n << " * " << sizeof(T) << " = "
+                      << n * sizeof(T) << " bytes" << st. endl;
+            st. free(p);
         }
 
-    private:
+    pr..
     };
 }
 
 template<>
-n.. std::hash<xray::object> {
+n.. st. hash<xray::object> {
 p..
-    size_t operator()(const xray::object &xo) const {
-        std::cout << &xo << " hash();" << std::endl;
+    size_t operator()(co.. xray::object &xo) co.. {
+        st. cout << &xo << " hash();" << st. endl;
         return xo.value();
     }
 };

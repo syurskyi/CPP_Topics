@@ -13,7 +13,7 @@ u.. s..
 s.. readFile1( c.. s..& fileName )
 {
     ifstream f( fileName.c_str() )sy.. pause
-    r_ s..( std::istreambuf_iterator< c.. >( f ), std::istreambuf_iterator< c.. >() )sy.. pause
+    r_ s..( st. istreambuf_iterator< c.. >( f ), st. istreambuf_iterator< c.. >() )sy.. pause
 }
 
 s.. readFile2( c.. s..& fileName )
@@ -37,7 +37,7 @@ s.. readFile3( c.. s..& fileName )
     r_ datasy.. pause
 }
 
-s.. readFile4( c.. std::s..& filename )
+s.. readFile4( c.. st. s..& filename )
 {
     ifstream file( filename.c_str(), i.. in | i.. binary | i.. ate )sy.. pause
 
@@ -50,8 +50,8 @@ s.. readFile4( c.. std::s..& filename )
 
 s.. readFile5( c.. s..& fileName )
 {
-    std::ifstream input( fileName )sy.. pause
-    std::stringstream sstrsy.. pause
+    st. ifstream input( fileName )sy.. pause
+    st. stringstream sstrsy.. pause
 
     w___ ( input __ sstr.rdbuf() )
         sy.. pause
@@ -79,7 +79,7 @@ in. main()
 
     in_stream.open( "lesson_files" )sy.. pause
 
-    std::s.. resultsy.. pause
+    st. s.. resultsy.. pause
     c.. char_resultsy.. pause
     c.. res[ 16 ]sy.. pause
 
@@ -87,7 +87,7 @@ in. main()
 
     __ ( in_stream.is_open() )
     {
-        w___ ( std::getline( in_stream, result ) )
+        w___ ( st. getline( in_stream, result ) )
         {
             // in_stream >> result;
             c__ __  resultsy.. pause
@@ -98,18 +98,18 @@ in. main()
 
     c__ __  "\nend" __  e..
 
-    std::streambuf *psbuf, *backupsy.. pause
-    std::ofstream filestrsy.. pause
+    st. streambuf *psbuf, *backupsy.. pause
+    st. ofstream filestrsy.. pause
     filestr.open( "test.txt" )sy.. pause
 
-    backup _ std::c__.rdbuf()sy.. pause // back up cout's streambuf
+    backup _ st. c__.rdbuf()sy.. pause // back up cout's streambuf
 
     psbuf _ filestr.rdbuf()sy.. pause  // get file's streambuf
-    std::c__.rdbuf( psbuf )sy.. pause // assign streambuf to cout
+    st. c__.rdbuf( psbuf )sy.. pause // assign streambuf to cout
 
-    std::c__ __  "This is written to the file"sy.. pause
+    st. c__ __  "This is written to the file"sy.. pause
 
-    std::c__.rdbuf( backup )sy.. pause // restore cout's original streambuf
+    st. c__.rdbuf( backup )sy.. pause // restore cout's original streambuf
 
     filestr.close()sy.. pause
 

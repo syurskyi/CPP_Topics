@@ -2,25 +2,25 @@
 _de.. PERSON_H
 
 ? |i..
-? <string>
+? str..
 
 n.. Person{
-    private:
-        std::string name;
+    pr..
+        st. string name;
     
     p..
         // Constructor - Person Object
-        Person(std::string);
+        Person(st. string);
         Person();
 
         // Destructor - Person Object
         ~Person();
 
         // Setter for Person Name
-        v.. setName(std::string);
+        v.. setName(st. string);
 
         // Getter for Person Name
-        std::string getName();
+        st. string getName();
 };
 
 e.. // PERSON_H

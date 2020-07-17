@@ -7,42 +7,42 @@
 ? <list>
 
 // display any vector of integers using range-based for loop
-v.. display(co.. std::ve..<in.> &vec) {
-    std::c.. __ "[ ";
+v.. display(co.. st. ve..<in.> &vec) {
+    st. c.. __ "[ ";
     ___ (a.. co.. &i: vec) {
-        std::c.. __ i __ " ";
+        st. c.. __ i __ " ";
     }
-    std::c.. __ "]" __ std::e..
+    st. c.. __ "]" __ st. e..
 }
 
 v.. test1
-    std::c.. __ "\n=============================" __ std::e..
-    std::ve..<in.> nums1 {1, 2, 3, 4, 5};
+    st. c.. __ "\n=============================" __ st. e..
+    st. ve..<in.> nums1 {1, 2, 3, 4, 5};
     a.. it = nums1.begin();            // point to 1
-    std::c.. __ *it __ std::e..
+    st. c.. __ *it __ st. e..
 
     it++;                                           // point to 2
-    std::c.. __ *it __ std::e..
+    st. c.. __ *it __ st. e..
 
     it += 2;                                       // point to 4
-    std::c.. __ *it __ std::e..
+    st. c.. __ *it __ st. e..
 
     it -= 2;                                        // point to 2
-    std::c.. __ *it __ std::e..
+    st. c.. __ *it __ st. e..
 
     it = nums1.end() - 1;                   // point to 5
-    std::c.. __ *it __ std::e..
+    st. c.. __ *it __ st. e..
 }
 
 v.. test2
-    std::c.. __ "\n=============================" __ std::e..
+    st. c.. __ "\n=============================" __ st. e..
     // display all vector elements using an iterator
     
-    std::ve..<in.> nums1 {1, 2, 3, 4, 5};
+    st. ve..<in.> nums1 {1, 2, 3, 4, 5};
 
-    std::ve..<in.>::iterator it = nums1.begin();
+    st. ve..<in.>::iterator it = nums1.begin();
     w__ (it != nums1.end()) {
-        std::c.. __ *it __ std::e..
+        st. c.. __ *it __ st. e..
         it++;
     }
     
@@ -59,14 +59,14 @@ v.. test2
 v.. test3
     
     // using a const_iterator
-    std::c.. __ "\n=============================" __ std::e..
-    std::ve..<in.> nums1 {1, 2, 3, 4, 5};
+    st. c.. __ "\n=============================" __ st. e..
+    st. ve..<in.> nums1 {1, 2, 3, 4, 5};
 
-    std::ve..<in.>::const_iterator it1 = nums1.begin();
+    st. ve..<in.>::const_iterator it1 = nums1.begin();
     // auto it1 = nums1.cbegin();
     
     w__ (it1 != nums1.end()) {
-        std::c.. __ *it1 __ std::e..
+        st. c.. __ *it1 __ st. e..
         it1++;
     }
     
@@ -82,41 +82,41 @@ v.. test3
 v.. test4
     // more iterators
     // using a reverse iterator
-    std::ve..<in.> vec {1,2,3,4};
+    st. ve..<in.> vec {1,2,3,4};
     a.. it1  = vec.rbegin();       // reverse iterator over vector of ints starts at 4
     w__ (it1 != vec.rend()) {
-        std::c.. __ *it1 __ std::e..
+        st. c.. __ *it1 __ st. e..
         it1++;
     }
 
     // const reverse iterator over a list
-    std::list<std::string> name {"Larry", "Moe", "Curly"};
+    st. list<st. st.. > name {"Larry", "Moe", "Curly"};
     a.. it2 =name.crbegin();    // iterator over list of strings  point to Curly
-    std::c.. __ *it2 __ std::e..
+    st. c.. __ *it2 __ st. e..
     it2++;  // point to Moe
-    std::c.. __ *it2 __ std::e..
+    st. c.. __ *it2 __ st. e..
 
     // iterator over a map
-    std::map<std::string, std::string> favorites {
+    st. map<st. st.. , st. st.. > favorites {
         {"Frank", "C++"},
         {"Bill", "Java"},
         {"James", "Haskell"}
     };
     a.. it3 = favorites.begin();   // iterator over map of string, string pairs
     w__ (it3 != favorites.end()) {
-        std::c.. __ it3->first __ " : " __ it3->second __ std::e..
+        st. c.. __ it3->first __ " : " __ it3->second __ st. e..
         it3++;
     }
 }
 
 v.. test5
     // iterate over a subset of a container
-    std::ve..<in.> vec {1,2,3,4,5,6,7,8,9,10};
+    st. ve..<in.> vec {1,2,3,4,5,6,7,8,9,10};
     a.. start = vec.begin() + 2;
     a.. finish = vec.end() - 3;
     
     w__ (start != finish) {
-        std::c.. __ *start __ std::e..
+        st. c.. __ *start __ st. e..
         start++;
     }
     

@@ -19,14 +19,14 @@ pu..
     v.. prin.()
     {
         storage__execute_query()sy.. pause
-        std::c__ __  "done" __  std::e..
+        st. c__ __  "done" __  st. e..
     }
 }sy.. pause
 
-c_ TestStorage : public IStorage {
+c_ TestStorage : pu.. IStorage {
     v.. execute_query() override
     {
-        std::c__ __  "... fetching data" __  std::e..
+        st. c__ __  "... fetching data" __  st. e..
     }
 }sy.. pause
 

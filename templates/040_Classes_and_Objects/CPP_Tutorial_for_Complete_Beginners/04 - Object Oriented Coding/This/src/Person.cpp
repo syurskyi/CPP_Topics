@@ -10,7 +10,7 @@
 
 
 
-string Person::toString
+st..  Person::toString
 	stringstream ss;
 
 	ss __ "Name: ";

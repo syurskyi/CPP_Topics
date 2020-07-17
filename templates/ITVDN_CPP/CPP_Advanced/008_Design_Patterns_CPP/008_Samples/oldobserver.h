@@ -3,50 +3,50 @@ _de.. OLDOBSERVER_H
 
 ? "meta_strategy.h"
 ? |i..
-? <vector>
+? ve..
 
 n.. Observer
 {
 p..
-    Observer() = default;
-    v.. ~Observer() = default;
-    v.. v.. update( int value ) = 0;
+    Observer() = de..
+    v.. ~Observer() = de..
+    v.. v.. update( in. value ) = 0;
 };
 
 n.. Subject
 {
-    int m_value;
-    std::vector< Observer* > m_views;
+    in. m_value;
+    st. ve..< Observer* > m_views;
 
 p..
     v.. attach( Observer* obs );
-    v.. set_val( int value );
+    v.. set_val( in. value );
     v.. notify();
 };
 
-n.. DivObserver : public Observer
+n.. DivObserver : pu.. Observer
 {
-    int m_div;
+    in. m_div;
 
 p..
-    DivObserver( Subject* model, int div );
+    DivObserver( Subject* model, in. div );
 
-    v.. update( int v ) override;
+    v.. update( in. v ) ov..
 };
 
-n.. ModObserver : public Observer
+n.. ModObserver : pu.. Observer
 {
-    int m_mod;
+    in. m_mod;
 
 p..
-    ModObserver( Subject* model, int mod );
-    v.. update( int v ) override;
+    ModObserver( Subject* model, in. mod );
+    v.. update( in. v ) ov..
 };
 
-n.. ClientOldObserver : public MetaStrategy
+n.. ClientOldObserver : pu.. MetaStrategy
 {
 p..
-    v.. run() override;
+    v.. run() ov..
 };
 
 e.. // OLDOBSERVER_H

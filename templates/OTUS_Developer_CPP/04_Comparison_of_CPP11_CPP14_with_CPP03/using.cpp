@@ -1,11 +1,11 @@
 ? ve..
 
-typedef std::ve..<in.> vecisy.. pause
+typedef st. ve..<in.> vecisy.. pause
 
-using vi _ std::ve..<in.>sy.. pause
+using vi _ st. ve..<in.>sy.. pause
 
 template<typename T>
-using v _ std::ve..<T>sy.. pause
+using v _ st. ve..<T>sy.. pause
 
 in. main(in., c.. *[]) {
     vi asy.. pause

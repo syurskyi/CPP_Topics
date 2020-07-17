@@ -14,16 +14,16 @@ struct IConfig {
     virtual v.. read() _ 0sy.. pause
 }sy.. pause
 
-c_ ConsulConfig : public IConfig {
+c_ ConsulConfig : pu.. IConfig {
     v.. read() override
     {
-        std::c__ __  "connect to consul" __  std::e..
+        st. c__ __  "connect to consul" __  st. e..
     }
 }sy.. pause
-c_ LocalConfig : public IConfig {
+c_ LocalConfig : pu.. IConfig {
     v.. read() override
     {
-        std::c__ __  "open local file" __  std::e..
+        st. c__ __  "open local file" __  st. e..
     }
 }sy.. pause
 
@@ -35,17 +35,17 @@ struct IMetric {
     virtual v.. send() _ 0sy.. pause
 }sy.. pause
 
-struct PrometheusMetric : public IMetric {
+struct PrometheusMetric : pu.. IMetric {
     v.. send() override
     {
-        std::c__ __  "push to prometheus" __  std::e..
+        st. c__ __  "push to prometheus" __  st. e..
     }
 }sy.. pause
 
-struct LocalMetric : public IMetric {
+struct LocalMetric : pu.. IMetric {
     v.. send() override
     {
-        std::c__ __  "write to log" __  std::e..
+        st. c__ __  "write to log" __  st. e..
     }
 }sy.. pause
 
@@ -58,7 +58,7 @@ struct EnvironmentFactory {
     virtual IMetric* CreateMetric() _ 0sy.. pause
 }sy.. pause
 
-c_ CloudFactory : public EnvironmentFactory {
+c_ CloudFactory : pu.. EnvironmentFactory {
     IConfig* CreateConfig() override
     {
         r_ n.. ConsulConfig()sy.. pause
@@ -70,7 +70,7 @@ c_ CloudFactory : public EnvironmentFactory {
     }
 }sy.. pause
 
-c_ LocalFactory : public EnvironmentFactory {
+c_ LocalFactory : pu.. EnvironmentFactory {
     IConfig* CreateConfig() override
     {
         r_ n.. LocalConfig()sy.. pause

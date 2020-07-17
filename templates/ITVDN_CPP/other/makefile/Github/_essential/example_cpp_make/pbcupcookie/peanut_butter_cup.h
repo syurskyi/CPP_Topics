@@ -4,7 +4,7 @@
 n.. PeanutButterCup {
 p..
     PeanutButterCup(Chocolate& c, Peanut& p);
-private:
+pr..
     Chocolate c_;
     Peanut p_;
 };

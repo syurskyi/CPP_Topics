@@ -7,114 +7,114 @@
 ? <cctype>
 
 c_ Person {
-    std::string name;
+    st. st..  name;
     in. age;
 pu..
     Person() = default;
-    Person(std::string name, in. age)
+    Person(st. st..  name, in. age)
         : name{name}, age{age}  {}
-    bool operator<(co.. Person &rhs) co.. {
+    b.. operator<(co.. Person &rhs) co.. {
         r_ this->age < rhs.age;
     }
-    bool operator__(co.. Person &rhs) co.. {
+    b.. operator__(co.. Person &rhs) co.. {
         r_ (this->name __ rhs.name && this->age __ rhs.age);
     }
 };
 
 // Find an element in a container
 v.. find_test
-    std::c.. __ "\n========================" __ std::e..
+    st. c.. __ "\n========================" __ st. e..
 
-    std::ve..<in.> vec {1,2,3,4,5};
+    st. ve..<in.> vec {1,2,3,4,5};
     
-    a.. loc = std::find(std::begin(vec), std::end(vec), 1);
+    a.. loc = st. find(st. begin(vec), st. end(vec), 1);
     
-    __ (loc != std::end(vec))
-        std::c.. __ "Found the number: " __ *loc __  std::e..
+    __ (loc != st. end(vec))
+        st. c.. __ "Found the number: " __ *loc __  st. e..
     ____
-        std::c.. __ "Couldn't find the number" __ std::e..
+        st. c.. __ "Couldn't find the number" __ st. e..
         
-    std::list<Person> players {
+    st. list<Person> players {
         {"Larry", 18},
         {"Moe", 20},
         {"Curly", 21}
     };
     
-    a.. loc1 = std::find(players.begin(), players.end(), Person{"Moe", 20});
+    a.. loc1 = st. find(players.begin(), players.end(), Person{"Moe", 20});
     __ (loc1 != players.end())
-        std::c.. __ "Found  Moe" __ std::e..
+        st. c.. __ "Found  Moe" __ st. e..
     ____
-        std::c.. __ "Moe not found" __ std::e..
+        st. c.. __ "Moe not found" __ st. e..
 }
 
 // Count the number of elements in a container
 v.. count_test
-    std::c.. __ "\n========================" __ std::e..
+    st. c.. __ "\n========================" __ st. e..
 
-     std::ve..<in.> vec {1,2,3,4,5,1,2,1};
+     st. ve..<in.> vec {1,2,3,4,5,1,2,1};
      
-     in. num = std::count(vec.begin(), vec.end(), 1);
-     std::c.. __ num __ " occurrences found" __ std::e..
+     in. num = st. count(vec.begin(), vec.end(), 1);
+     st. c.. __ num __ " occurrences found" __ st. e..
 }
 
 // Count the number of occurences of an element in a container
 // based on a predicate using a lambda expression
 
 v.. count_if_test
-    std::c.. __ "\n========================" __ std::e..
+    st. c.. __ "\n========================" __ st. e..
 
     // count only if the element is even
-    std::ve..<in.> vec {1,2,3,4,5,1,2,1,100};
-    in. num = std::count_if(vec.begin(), vec.end(), [](in. x) { r_ x %2 __ 0; });
-    std::c.. __ num __ " even numbers found" __ std::e..
+    st. ve..<in.> vec {1,2,3,4,5,1,2,1,100};
+    in. num = st. count_if(vec.begin(), vec.end(), [](in. x) { r_ x %2 __ 0; });
+    st. c.. __ num __ " even numbers found" __ st. e..
     
-    num = std::count_if(vec.begin(), vec.end(), [](in. x) { r_ x %2 != 0; });
-    std::c.. __ num __ " odd numbers found" __ std::e..
+    num = st. count_if(vec.begin(), vec.end(), [](in. x) { r_ x %2 != 0; });
+    st. c.. __ num __ " odd numbers found" __ st. e..
     
     // how can we determine how many elements in vec are >= 5?
-    num = std::count_if(vec.begin(), vec.end(), [](in. x) { r_ x>=5;   });
-    std::c.. __ num __ "  numbers are >= 5" __ std::e..
+    num = st. count_if(vec.begin(), vec.end(), [](in. x) { r_ x>=5;   });
+    st. c.. __ num __ "  numbers are >= 5" __ st. e..
 
 }
 
 // Replace occurrences of elements in a container
 v.. replace_test
-    std::c.. __ "\n========================" __ std::e..
+    st. c.. __ "\n========================" __ st. e..
 
-     std::ve..<in.> vec {1,2,3,4,5,1,2,1};
+     st. ve..<in.> vec {1,2,3,4,5,1,2,1};
      ___ (a.. i: vec) {
-         std::c.. __ i __ " ";
+         st. c.. __ i __ " ";
      }
-     std::c.. __ std::e..
+     st. c.. __ st. e..
      
-    std::replace(vec.begin(), vec.end(), 1, 100);
+    st. replace(vec.begin(), vec.end(), 1, 100);
     ___ (a.. i: vec) {
-         std::c.. __ i __ " ";
+         st. c.. __ i __ " ";
      }
-    std::c.. __ std::e..
+    st. c.. __ st. e..
 }
 
 v.. all_of_test
-    std::ve..<in.> vec1 {1,3,5,7,9,1,3,13,19,5};
-    __ (std::all_of(vec1.begin(), vec1.end(), [](in. x) { r_ x > 10; }))
-        std::c.. __ "All the elements are > 10" __ std::e..
+    st. ve..<in.> vec1 {1,3,5,7,9,1,3,13,19,5};
+    __ (st. all_of(vec1.begin(), vec1.end(), [](in. x) { r_ x > 10; }))
+        st. c.. __ "All the elements are > 10" __ st. e..
     ____
-        std::c.. __ "Not all the elements are > 10" __ std::e..
+        st. c.. __ "Not all the elements are > 10" __ st. e..
     
-    __ (std::all_of(vec1.begin(), vec1.end(), [](in. x) { r_ x < 20; }))
-        std::c.. __ "All the elements are < 20" __ std::e..
+    __ (st. all_of(vec1.begin(), vec1.end(), [](in. x) { r_ x < 20; }))
+        st. c.. __ "All the elements are < 20" __ st. e..
     ____
-        std::c.. __ "Not all the elements are < 20" __ std::e..
+        st. c.. __ "Not all the elements are < 20" __ st. e..
 }
 
 // Transform elements in a container - string in this example
 v.. string_transform_test
-    std::c.. __ "\n========================" __ std::e..
+    st. c.. __ "\n========================" __ st. e..
 
-    std::string str1 {"This is a test"};
-    std::c.. __ "Before transform: " __ str1 __ std::e..
-    std::transform(str1.begin(), str1.end(), str1.begin(), ::toupper);
-    std::c.. __ "After transform: " __ str1 __ std::e..
+    st. st..  str1 {"This is a test"};
+    st. c.. __ "Before transform: " __ str1 __ st. e..
+    st. transform(str1.begin(), str1.end(), str1.begin(), ::toupper);
+    st. c.. __ "After transform: " __ str1 __ st. e..
 }
 
 in. main

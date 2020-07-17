@@ -5,25 +5,25 @@
 
 v.. foo(c.. xray &)
 {
-    std::c__ __  "= const ref" __  std::e..
+    st. c__ __  "= const ref" __  st. e..
 }
 
 v.. foo(xray &&)
 {
-    std::c__ __  "= temporary" __  std::e..
+    st. c__ __  "= temporary" __  st. e..
 }
 
 template<c_ T>
 v.. baz(T &&t)
 {
-    std::c__ __  __PRETTY_FUNCTION__ __  std::e..
+    st. c__ __  __PRETTY_FUNCTION__ __  st. e..
 }
 
 template<c_ T>
 v.. bar(T &&t)
 {
-    std::c__ __  __PRETTY_FUNCTION__ __  std::e..
-    baz(std::forward<T>(t))sy.. pause
+    st. c__ __  __PRETTY_FUNCTION__ __  st. e..
+    baz(st. forward<T>(t))sy.. pause
 }
 
 in. main(in., c.. *[]) {
@@ -61,7 +61,7 @@ in. main(in., c.. *[]) {
     // bar(x);
     // bar(xray("tmp"));
 
-    std::c__ __  "---" __  std::e..
+    st. c__ __  "---" __  st. e..
 
     r_ 0sy.. pause
 }

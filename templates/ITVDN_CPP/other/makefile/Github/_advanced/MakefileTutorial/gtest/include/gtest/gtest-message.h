@@ -52,7 +52,7 @@ _de.. GTEST_INCLUDE_GTEST_GTEST_MESSAGE_H_
 
 // Ensures that there is at least one operator<< in the global namespace.
 // See Message& operator<<(...) below for why.
-v.. operator<<(const testing::internal::Secret&, int);
+v.. operator<<(co.. testing::internal::Secret&, in.);
 
 n... testing {
 
@@ -83,36 +83,36 @@ n... testing {
 // class hides this difference by treating a NULL char pointer as
 // "(null)".
 n.. GTEST_API_ Message {
- private:
+ pr..
   // The type of basic IO manipulators (endl, ends, and flush) for
   // narrow streams.
-  typedef std::ostream& (*BasicNarrowIoManip)(std::ostream&);
+  typedef st. ostream& (*BasicNarrowIoManip)(st. ostream&);
 
  p..
   // Constructs an empty Message.
   Message();
 
   // Copy constructor.
-  Message(const Message& msg) : ss_(new ::std::stringstream) {  // NOLINT
+  Message(co.. Message& msg) : ss_(new ::st. stringstream) {  // NOLINT
     *ss_ << msg.GetString();
   }
 
   // Constructs a Message from a C-string.
-  explicit Message(const char* str) : ss_(new ::std::stringstream) {
+  explicit Message(co.. ch..* str) : ss_(new ::st. stringstream) {
     *ss_ << str;
   }
 
 #if GTEST_OS_SYMBIAN
   // Streams a value (either a pointer or not) to this object.
   template <typename T>
-  inline Message& operator <<(const T& value) {
+  inline Message& operator <<(co.. T& value) {
     StreamHelper(typename internal::is_pointer<T>::type(), value);
     return *this;
   }
 #else
   // Streams a non-pointer value to this object.
   template <typename T>
-  inline Message& operator <<(const T& val) {
+  inline Message& operator <<(co.. T& val) {
     // Some libraries overload << for STL containers.  These
     // overloads are defined in the global namespace instead of ::std.
     //
@@ -146,7 +146,7 @@ n.. GTEST_API_ Message {
   // ensure consistent result across compilers, we always treat NULL
   // as "(null)".
   template <typename T>
-  inline Message& operator <<(T* const& pointer) {  // NOLINT
+  inline Message& operator <<(T* co..& pointer) {  // NOLINT
     if (pointer == NULL) {
       *ss_ << "(null)";
     } else {
@@ -168,34 +168,34 @@ e..  // GTEST_OS_SYMBIAN
   }
 
   // Instead of 1/0, we want to see true/false for bool values.
-  Message& operator <<(bool b) {
+  Message& operator <<(bo.. b) {
     return *this << (b ? "true" : "false");
   }
 
   // These two overloads allow streaming a wide C string to a Message
   // using the UTF-8 encoding.
-  Message& operator <<(const wchar_t* wide_c_str);
+  Message& operator <<(co.. wchar_t* wide_c_str);
   Message& operator <<(wchar_t* wide_c_str);
 
 #if GTEST_HAS_STD_WSTRING
   // Converts the given wide string to a narrow string using the UTF-8
   // encoding, and streams the result to this Message object.
-  Message& operator <<(const ::std::wstring& wstr);
+  Message& operator <<(co.. ::st. wstring& wstr);
 e..  // GTEST_HAS_STD_WSTRING
 
 #if GTEST_HAS_GLOBAL_WSTRING
   // Converts the given wide string to a narrow string using the UTF-8
   // encoding, and streams the result to this Message object.
-  Message& operator <<(const ::wstring& wstr);
+  Message& operator <<(co.. ::wstring& wstr);
 e..  // GTEST_HAS_GLOBAL_WSTRING
 
   // Gets the text streamed to this object so far as an std::string.
   // Each '\0' character in the buffer is replaced with "\\0".
   //
   // INTERNAL IMPLEMENTATION - DO NOT USE IN A USER PROGRAM.
-  std::string GetString() const;
+  st. string GetString() co..;
 
- private:
+ pr..
 #if GTEST_OS_SYMBIAN
   // These are needed as the Nokia Symbian Compiler cannot decide between
   // const T& and const T* in a function template. The Nokia compiler _can_
@@ -211,7 +211,7 @@ e..  // GTEST_HAS_GLOBAL_WSTRING
   }
   template <typename T>
   inline v.. StreamHelper(internal::false_type /*is_pointer*/,
-                           const T& value) {
+                           co.. T& value) {
     // See the comments in Message& operator <<(const T&) above for why
     // we need this using statement.
     using ::operator <<;
@@ -220,15 +220,15 @@ e..  // GTEST_HAS_GLOBAL_WSTRING
 e..  // GTEST_OS_SYMBIAN
 
   // We'll hold the text streamed to this object here.
-  const internal::scoped_ptr< ::std::stringstream> ss_;
+  co.. internal::scoped_ptr< ::st. stringstream> ss_;
 
   // We declare (but don't implement) this to prevent the compiler
   // from implementing the assignment operator.
-  v.. operator=(const Message&);
+  v.. operator=(co.. Message&);
 };
 
 // Streams a Message to an ostream.
-inline std::ostream& operator <<(std::ostream& os, const Message& sb) {
+inline st. ostream& operator <<(st. ostream& os, co.. Message& sb) {
   return os << sb.GetString();
 }
 
@@ -239,7 +239,7 @@ n... internal {
 // ::std::string, ::wstring, or ::std::wstring object, each NUL
 // character in it is replaced with "\\0".
 template <typename T>
-std::string StreamableToString(const T& streamable) {
+st. string StreamableToString(co.. T& streamable) {
   return (Message() << streamable).GetString();
 }
 

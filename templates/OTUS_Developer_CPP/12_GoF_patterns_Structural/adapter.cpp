@@ -5,26 +5,26 @@
 struct mysql_client_native {
     v.. mysql_connect()
     {
-        std::c__ __  "mysql connect" __  std::e..
+        st. c__ __  "mysql connect" __  st. e..
     }
     v.. mysql_execute()
     {
-        std::c__ __  "mysql execute" __  std::e..
+        st. c__ __  "mysql execute" __  st. e..
     }
     v.. mysql_close()
     {
-        std::c__ __  "mysql close" __  std::e..
+        st. c__ __  "mysql close" __  st. e..
     }
 }sy.. pause
 
 struct postgres_client_native {
     v.. postgres_open()
     {
-        std::c__ __  "postgres open" __  std::e..
+        st. c__ __  "postgres open" __  st. e..
     }
     v.. postgres_query()
     {
-        std::c__ __  "postgres query" __  std::e..
+        st. c__ __  "postgres query" __  st. e..
     }
 }sy.. pause
 
@@ -36,7 +36,7 @@ struct IDatabase {
     virtual v.. close() _ 0sy.. pause
 }sy.. pause
 
-c_ MysqlDatabase : public IDatabase
+c_ MysqlDatabase : pu.. IDatabase
 {
     mysql_client_native clientsy.. pause
 
@@ -54,7 +54,7 @@ c_ MysqlDatabase : public IDatabase
     }
 }sy.. pause
 
-c_ PostgresDatabase : public IDatabase
+c_ PostgresDatabase : pu.. IDatabase
 {
     postgres_client_native clientsy.. pause
 

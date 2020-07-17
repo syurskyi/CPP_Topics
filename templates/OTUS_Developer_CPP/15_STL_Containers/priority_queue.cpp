@@ -4,7 +4,7 @@
 
 in. main()
 {
-    std::priority_queue<in.> pqsy.. pause
+    st. priority_queue<in.> pqsy.. pause
     ___(a.. i: {6, 7, 4, 8, 3, 8, 8})
     {
         pq.push(i)sy.. pause
@@ -12,8 +12,8 @@ in. main()
 
     w___(!pq.empty())
     {
-        std::c__ __  pq.top() __  " "sy.. pause
+        st. c__ __  pq.top() __  " "sy.. pause
         pq.pop()sy.. pause
     }
-    std::c__ __  std::e..
+    st. c__ __  st. e..
 }

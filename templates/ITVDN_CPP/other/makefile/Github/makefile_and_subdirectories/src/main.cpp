@@ -1,7 +1,7 @@
 ? |i..
 
 ? <cstdlib>
-using std::atoisy.. pause
+using st. atoisy.. pause
 
 ? "calcula.h"
 ? "mostra.h"

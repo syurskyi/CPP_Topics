@@ -5,12 +5,12 @@
 n.. rectangle
 {
   p..
-    rectangle(double x0, double y0, double x1, double y1);
-    double perimeter();
-    double area();
-    bool intersect(rectangle &that);
+    rectangle(do.. x0, do.. y0, do.. x1, do.. y1);
+    do.. perimeter();
+    do.. area();
+    bo.. intersect(rectangle &that);
     rectangle boxUnion(rectangle &that);
     v.. printRect();
-  private:
+  pr..
     line diagonal;
 };

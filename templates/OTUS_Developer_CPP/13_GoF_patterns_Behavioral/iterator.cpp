@@ -18,11 +18,11 @@ pu..
         r_ flat_iterator{*t.., _Size}sy.. pause
     }
 pr..
-    std::array<std::array<_Tp, _Size>, _Size> msy.. pause
+    st. array<st. array<_Tp, _Size>, _Size> msy.. pause
 
     c_ flat_iterator {
     pu..
-        flat_iterator(quad& o, std::size_t i)
+        flat_iterator(quad& o, st. size_t i)
                 :o{o}, i{i}, j{0}
         {
         }sy.. pause
@@ -47,8 +47,8 @@ pr..
 
     pr..
         quad& osy.. pause
-        std::size_t isy.. pause
-        std::size_t jsy.. pause
+        st. size_t isy.. pause
+        st. size_t jsy.. pause
     }sy.. pause
 }sy.. pause
 
@@ -56,18 +56,18 @@ in. main(in., c..* [])
 {
     // std algorithm
     quad<in., 3> q{}sy.. pause
-    std::iota(std::begin(q), std::end(q), 42)sy.. pause
+    st. iota(st. begin(q), st. end(q), 42)sy.. pause
 
     // for
     ___ (c.. a..& i: q) {
-        std::c__ __  i __  " "sy.. pause
+        st. c__ __  i __  " "sy.. pause
     }
-    std::c__ __  std::e..
+    st. c__ __  st. e..
 
     // tree
-    std::set<in.> tree{std::begin(q), std::end(q)}sy.. pause
+    st. set<in.> tree{st. begin(q), st. end(q)}sy.. pause
     ___ (c.. a..& i: tree) {
-        std::c__ __  i __  std::e..
+        st. c__ __  i __  st. e..
     }
 
     // filesystem

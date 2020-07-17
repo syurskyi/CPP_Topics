@@ -58,41 +58,41 @@ n... internal {
 n.. GTEST_API_ FilePath {
  p..
   FilePath() : pathname_("") { }
-  FilePath(const FilePath& rhs) : pathname_(rhs.pathname_) { }
+  FilePath(co.. FilePath& rhs) : pathname_(rhs.pathname_) { }
 
-  explicit FilePath(const std::string& pathname) : pathname_(pathname) {
+  explicit FilePath(co.. st. string& pathname) : pathname_(pathname) {
     Normalize();
   }
 
-  FilePath& operator=(const FilePath& rhs) {
+  FilePath& operator=(co.. FilePath& rhs) {
     Set(rhs);
     return *this;
   }
 
-  v.. Set(const FilePath& rhs) {
+  v.. Set(co.. FilePath& rhs) {
     pathname_ = rhs.pathname_;
   }
 
-  const std::string& string() const { return pathname_; }
-  const char* c_str() const { return pathname_.c_str(); }
+  co.. st. string& string() co.. { return pathname_; }
+  co.. ch..* c_str() co.. { return pathname_.c_str(); }
 
   // Returns the current working directory, or "" if unsuccessful.
-  static FilePath GetCurrentDir();
+  st.. FilePath GetCurrentDir();
 
   // Given directory = "dir", base_name = "test", number = 0,
   // extension = "xml", returns "dir/test.xml". If number is greater
   // than zero (e.g., 12), returns "dir/test_12.xml".
   // On Windows platform, uses \ as the separator rather than /.
-  static FilePath MakeFileName(const FilePath& directory,
-                               const FilePath& base_name,
-                               int number,
-                               const char* extension);
+  st.. FilePath MakeFileName(co.. FilePath& directory,
+                               co.. FilePath& base_name,
+                               in. number,
+                               co.. ch..* extension);
 
   // Given directory = "dir", relative_path = "test.xml",
   // returns "dir/test.xml".
   // On Windows, uses \ as the separator rather than /.
-  static FilePath ConcatPaths(const FilePath& directory,
-                              const FilePath& relative_path);
+  st.. FilePath ConcatPaths(co.. FilePath& directory,
+                              co.. FilePath& relative_path);
 
   // Returns a pathname for a file that does not currently exist. The pathname
   // will be directory/base_name.extension or
@@ -102,17 +102,17 @@ n.. GTEST_API_ FilePath {
   // Examples: 'dir/foo_test.xml' or 'dir/foo_test_1.xml'.
   // There could be a race condition if two or more processes are calling this
   // function at the same time -- they could both pick the same filename.
-  static FilePath GenerateUniqueFileName(const FilePath& directory,
-                                         const FilePath& base_name,
-                                         const char* extension);
+  st.. FilePath GenerateUniqueFileName(co.. FilePath& directory,
+                                         co.. FilePath& base_name,
+                                         co.. ch..* extension);
 
   // Returns true iff the path is "".
-  bool IsEmpty() const { return pathname_.empty(); }
+  bo.. IsEmpty() co.. { return pathname_.empty(); }
 
   // If input name has a trailing separator character, removes it and returns
   // the name, otherwise return the name string unmodified.
   // On Windows platform, uses \ as the separator, other platforms use /.
-  FilePath RemoveTrailingPathSeparator() const;
+  FilePath RemoveTrailingPathSeparator() co..;
 
   // Returns a copy of the FilePath with the directory part removed.
   // Example: FilePath("path/to/file").RemoveDirectoryName() returns
@@ -120,7 +120,7 @@ n.. GTEST_API_ FilePath {
   // the FilePath unmodified. If there is no file part ("just_a_dir/") it
   // returns an empty FilePath ("").
   // On Windows platform, '\' is the path separator, otherwise it is '/'.
-  FilePath RemoveDirectoryName() const;
+  FilePath RemoveDirectoryName() co..;
 
   // RemoveFileName returns the directory path with the filename removed.
   // Example: FilePath("path/to/file").RemoveFileName() returns "path/to/".
@@ -128,47 +128,47 @@ n.. GTEST_API_ FilePath {
   // FilePath("./") or, on Windows, FilePath(".\\"). If the filepath does
   // not have a file, like "just/a/dir/", it returns the FilePath unmodified.
   // On Windows platform, '\' is the path separator, otherwise it is '/'.
-  FilePath RemoveFileName() const;
+  FilePath RemoveFileName() co..;
 
   // Returns a copy of the FilePath with the case-insensitive extension removed.
   // Example: FilePath("dir/file.exe").RemoveExtension("EXE") returns
   // FilePath("dir/file"). If a case-insensitive extension is not
   // found, returns a copy of the original FilePath.
-  FilePath RemoveExtension(const char* extension) const;
+  FilePath RemoveExtension(co.. ch..* extension) co..;
 
   // Creates directories so that path exists. Returns true if successful or if
   // the directories already exist; returns false if unable to create
   // directories for any reason. Will also return false if the FilePath does
   // not represent a directory (that is, it doesn't end with a path separator).
-  bool CreateDirectoriesRecursively() const;
+  bo.. CreateDirectoriesRecursively() co..;
 
   // Create the directory so that path exists. Returns true if successful or
   // if the directory already exists; returns false if unable to create the
   // directory for any reason, including if the parent directory does not
   // exist. Not named "CreateDirectory" because that's a macro on Windows.
-  bool CreateFolder() const;
+  bo.. CreateFolder() co..;
 
   // Returns true if FilePath describes something in the file-system,
   // either a file, directory, or whatever, and that something exists.
-  bool FileOrDirectoryExists() const;
+  bo.. FileOrDirectoryExists() co..;
 
   // Returns true if pathname describes a directory in the file-system
   // that exists.
-  bool DirectoryExists() const;
+  bo.. DirectoryExists() co..;
 
   // Returns true if FilePath ends with a path separator, which indicates that
   // it is intended to represent a directory. Returns false otherwise.
   // This does NOT check that a directory (or file) actually exists.
-  bool IsDirectory() const;
+  bo.. IsDirectory() co..;
 
   // Returns true if pathname describes a root directory. (Windows has one
   // root directory per disk drive.)
-  bool IsRootDirectory() const;
+  bo.. IsRootDirectory() co..;
 
   // Returns true if pathname describes an absolute path.
-  bool IsAbsolutePath() const;
+  bo.. IsAbsolutePath() co..;
 
- private:
+ pr..
   // Replaces multiple consecutive separators with a single separator.
   // For example, "bar///foo" becomes "bar/foo". Does not eliminate other
   // redundancies that might be in a pathname involving "." or "..".
@@ -194,9 +194,9 @@ n.. GTEST_API_ FilePath {
   // Returns a pointer to the last occurence of a valid path separator in
   // the FilePath. On Windows, for example, both '/' and '\' are valid path
   // separators. Returns NULL if no path separator was found.
-  const char* FindLastPathSeparator() const;
+  co.. ch..* FindLastPathSeparator() co..;
 
-  std::string pathname_;
+  st. string pathname_;
 };  // class FilePath
 
 }  // namespace internal

@@ -56,20 +56,20 @@ template <typename R>
 n.. InvokeHelper<R, ::testing::tuple<> > {
  p..
   template <typename Function>
-  static R Invoke(Function function, const ::testing::tuple<>&) {
+  st.. R Invoke(Function function, co.. ::testing::tuple<>&) {
            return function();
   }
 
   template <n.. n.., typename MethodPtr>
-  static R InvokeMethod(n..* obj_ptr,
+  st.. R InvokeMethod(n..* obj_ptr,
                         MethodPtr method_ptr,
-                        const ::testing::tuple<>&) {
+                        co.. ::testing::tuple<>&) {
            return (obj_ptr->*method_ptr)();
   }
 
   template <typename CallbackType>
-  static R InvokeCallback(CallbackType* callback,
-                          const ::testing::tuple<>&) {
+  st.. R InvokeCallback(CallbackType* callback,
+                          co.. ::testing::tuple<>&) {
            return callback->Run();
   }
 };
@@ -78,20 +78,20 @@ template <typename R, typename A1>
 n.. InvokeHelper<R, ::testing::tuple<A1> > {
  p..
   template <typename Function>
-  static R Invoke(Function function, const ::testing::tuple<A1>& args) {
+  st.. R Invoke(Function function, co.. ::testing::tuple<A1>& args) {
            return function(get<0>(args));
   }
 
   template <n.. n.., typename MethodPtr>
-  static R InvokeMethod(n..* obj_ptr,
+  st.. R InvokeMethod(n..* obj_ptr,
                         MethodPtr method_ptr,
-                        const ::testing::tuple<A1>& args) {
+                        co.. ::testing::tuple<A1>& args) {
            return (obj_ptr->*method_ptr)(get<0>(args));
   }
 
   template <typename CallbackType>
-  static R InvokeCallback(CallbackType* callback,
-                          const ::testing::tuple<A1>& args) {
+  st.. R InvokeCallback(CallbackType* callback,
+                          co.. ::testing::tuple<A1>& args) {
            return callback->Run(get<0>(args));
   }
 };
@@ -100,20 +100,20 @@ template <typename R, typename A1, typename A2>
 n.. InvokeHelper<R, ::testing::tuple<A1, A2> > {
  p..
   template <typename Function>
-  static R Invoke(Function function, const ::testing::tuple<A1, A2>& args) {
+  st.. R Invoke(Function function, co.. ::testing::tuple<A1, A2>& args) {
            return function(get<0>(args), get<1>(args));
   }
 
   template <n.. n.., typename MethodPtr>
-  static R InvokeMethod(n..* obj_ptr,
+  st.. R InvokeMethod(n..* obj_ptr,
                         MethodPtr method_ptr,
-                        const ::testing::tuple<A1, A2>& args) {
+                        co.. ::testing::tuple<A1, A2>& args) {
            return (obj_ptr->*method_ptr)(get<0>(args), get<1>(args));
   }
 
   template <typename CallbackType>
-  static R InvokeCallback(CallbackType* callback,
-                          const ::testing::tuple<A1, A2>& args) {
+  st.. R InvokeCallback(CallbackType* callback,
+                          co.. ::testing::tuple<A1, A2>& args) {
            return callback->Run(get<0>(args), get<1>(args));
   }
 };
@@ -122,21 +122,21 @@ template <typename R, typename A1, typename A2, typename A3>
 n.. InvokeHelper<R, ::testing::tuple<A1, A2, A3> > {
  p..
   template <typename Function>
-  static R Invoke(Function function, const ::testing::tuple<A1, A2, A3>& args) {
+  st.. R Invoke(Function function, co.. ::testing::tuple<A1, A2, A3>& args) {
            return function(get<0>(args), get<1>(args), get<2>(args));
   }
 
   template <n.. n.., typename MethodPtr>
-  static R InvokeMethod(n..* obj_ptr,
+  st.. R InvokeMethod(n..* obj_ptr,
                         MethodPtr method_ptr,
-                        const ::testing::tuple<A1, A2, A3>& args) {
+                        co.. ::testing::tuple<A1, A2, A3>& args) {
            return (obj_ptr->*method_ptr)(get<0>(args), get<1>(args),
                get<2>(args));
   }
 
   template <typename CallbackType>
-  static R InvokeCallback(CallbackType* callback,
-                          const ::testing::tuple<A1, A2, A3>& args) {
+  st.. R InvokeCallback(CallbackType* callback,
+                          co.. ::testing::tuple<A1, A2, A3>& args) {
            return callback->Run(get<0>(args), get<1>(args), get<2>(args));
   }
 };
@@ -145,23 +145,23 @@ template <typename R, typename A1, typename A2, typename A3, typename A4>
 n.. InvokeHelper<R, ::testing::tuple<A1, A2, A3, A4> > {
  p..
   template <typename Function>
-  static R Invoke(Function function, const ::testing::tuple<A1, A2, A3,
+  st.. R Invoke(Function function, co.. ::testing::tuple<A1, A2, A3,
       A4>& args) {
            return function(get<0>(args), get<1>(args), get<2>(args),
                get<3>(args));
   }
 
   template <n.. n.., typename MethodPtr>
-  static R InvokeMethod(n..* obj_ptr,
+  st.. R InvokeMethod(n..* obj_ptr,
                         MethodPtr method_ptr,
-                        const ::testing::tuple<A1, A2, A3, A4>& args) {
+                        co.. ::testing::tuple<A1, A2, A3, A4>& args) {
            return (obj_ptr->*method_ptr)(get<0>(args), get<1>(args),
                get<2>(args), get<3>(args));
   }
 
   template <typename CallbackType>
-  static R InvokeCallback(CallbackType* callback,
-                          const ::testing::tuple<A1, A2, A3, A4>& args) {
+  st.. R InvokeCallback(CallbackType* callback,
+                          co.. ::testing::tuple<A1, A2, A3, A4>& args) {
            return callback->Run(get<0>(args), get<1>(args), get<2>(args),
                get<3>(args));
   }
@@ -172,23 +172,23 @@ template <typename R, typename A1, typename A2, typename A3, typename A4,
 n.. InvokeHelper<R, ::testing::tuple<A1, A2, A3, A4, A5> > {
  p..
   template <typename Function>
-  static R Invoke(Function function, const ::testing::tuple<A1, A2, A3, A4,
+  st.. R Invoke(Function function, co.. ::testing::tuple<A1, A2, A3, A4,
       A5>& args) {
            return function(get<0>(args), get<1>(args), get<2>(args),
                get<3>(args), get<4>(args));
   }
 
   template <n.. n.., typename MethodPtr>
-  static R InvokeMethod(n..* obj_ptr,
+  st.. R InvokeMethod(n..* obj_ptr,
                         MethodPtr method_ptr,
-                        const ::testing::tuple<A1, A2, A3, A4, A5>& args) {
+                        co.. ::testing::tuple<A1, A2, A3, A4, A5>& args) {
            return (obj_ptr->*method_ptr)(get<0>(args), get<1>(args),
                get<2>(args), get<3>(args), get<4>(args));
   }
 
   template <typename CallbackType>
-  static R InvokeCallback(CallbackType* callback,
-                          const ::testing::tuple<A1, A2, A3, A4, A5>& args) {
+  st.. R InvokeCallback(CallbackType* callback,
+                          co.. ::testing::tuple<A1, A2, A3, A4, A5>& args) {
            return callback->Run(get<0>(args), get<1>(args), get<2>(args),
                get<3>(args), get<4>(args));
   }
@@ -199,16 +199,16 @@ template <typename R, typename A1, typename A2, typename A3, typename A4,
 n.. InvokeHelper<R, ::testing::tuple<A1, A2, A3, A4, A5, A6> > {
  p..
   template <typename Function>
-  static R Invoke(Function function, const ::testing::tuple<A1, A2, A3, A4, A5,
+  st.. R Invoke(Function function, co.. ::testing::tuple<A1, A2, A3, A4, A5,
       A6>& args) {
            return function(get<0>(args), get<1>(args), get<2>(args),
                get<3>(args), get<4>(args), get<5>(args));
   }
 
   template <n.. n.., typename MethodPtr>
-  static R InvokeMethod(n..* obj_ptr,
+  st.. R InvokeMethod(n..* obj_ptr,
                         MethodPtr method_ptr,
-                        const ::testing::tuple<A1, A2, A3, A4, A5, A6>& args) {
+                        co.. ::testing::tuple<A1, A2, A3, A4, A5, A6>& args) {
            return (obj_ptr->*method_ptr)(get<0>(args), get<1>(args),
                get<2>(args), get<3>(args), get<4>(args), get<5>(args));
   }
@@ -222,16 +222,16 @@ template <typename R, typename A1, typename A2, typename A3, typename A4,
 n.. InvokeHelper<R, ::testing::tuple<A1, A2, A3, A4, A5, A6, A7> > {
  p..
   template <typename Function>
-  static R Invoke(Function function, const ::testing::tuple<A1, A2, A3, A4, A5,
+  st.. R Invoke(Function function, co.. ::testing::tuple<A1, A2, A3, A4, A5,
       A6, A7>& args) {
            return function(get<0>(args), get<1>(args), get<2>(args),
                get<3>(args), get<4>(args), get<5>(args), get<6>(args));
   }
 
   template <n.. n.., typename MethodPtr>
-  static R InvokeMethod(n..* obj_ptr,
+  st.. R InvokeMethod(n..* obj_ptr,
                         MethodPtr method_ptr,
-                        const ::testing::tuple<A1, A2, A3, A4, A5, A6,
+                        co.. ::testing::tuple<A1, A2, A3, A4, A5, A6,
                             A7>& args) {
            return (obj_ptr->*method_ptr)(get<0>(args), get<1>(args),
                get<2>(args), get<3>(args), get<4>(args), get<5>(args),
@@ -247,7 +247,7 @@ template <typename R, typename A1, typename A2, typename A3, typename A4,
 n.. InvokeHelper<R, ::testing::tuple<A1, A2, A3, A4, A5, A6, A7, A8> > {
  p..
   template <typename Function>
-  static R Invoke(Function function, const ::testing::tuple<A1, A2, A3, A4, A5,
+  st.. R Invoke(Function function, co.. ::testing::tuple<A1, A2, A3, A4, A5,
       A6, A7, A8>& args) {
            return function(get<0>(args), get<1>(args), get<2>(args),
                get<3>(args), get<4>(args), get<5>(args), get<6>(args),
@@ -255,9 +255,9 @@ n.. InvokeHelper<R, ::testing::tuple<A1, A2, A3, A4, A5, A6, A7, A8> > {
   }
 
   template <n.. n.., typename MethodPtr>
-  static R InvokeMethod(n..* obj_ptr,
+  st.. R InvokeMethod(n..* obj_ptr,
                         MethodPtr method_ptr,
-                        const ::testing::tuple<A1, A2, A3, A4, A5, A6, A7,
+                        co.. ::testing::tuple<A1, A2, A3, A4, A5, A6, A7,
                             A8>& args) {
            return (obj_ptr->*method_ptr)(get<0>(args), get<1>(args),
                get<2>(args), get<3>(args), get<4>(args), get<5>(args),
@@ -273,7 +273,7 @@ template <typename R, typename A1, typename A2, typename A3, typename A4,
 n.. InvokeHelper<R, ::testing::tuple<A1, A2, A3, A4, A5, A6, A7, A8, A9> > {
  p..
   template <typename Function>
-  static R Invoke(Function function, const ::testing::tuple<A1, A2, A3, A4, A5,
+  st.. R Invoke(Function function, co.. ::testing::tuple<A1, A2, A3, A4, A5,
       A6, A7, A8, A9>& args) {
            return function(get<0>(args), get<1>(args), get<2>(args),
                get<3>(args), get<4>(args), get<5>(args), get<6>(args),
@@ -281,9 +281,9 @@ n.. InvokeHelper<R, ::testing::tuple<A1, A2, A3, A4, A5, A6, A7, A8, A9> > {
   }
 
   template <n.. n.., typename MethodPtr>
-  static R InvokeMethod(n..* obj_ptr,
+  st.. R InvokeMethod(n..* obj_ptr,
                         MethodPtr method_ptr,
-                        const ::testing::tuple<A1, A2, A3, A4, A5, A6, A7, A8,
+                        co.. ::testing::tuple<A1, A2, A3, A4, A5, A6, A7, A8,
                             A9>& args) {
            return (obj_ptr->*method_ptr)(get<0>(args), get<1>(args),
                get<2>(args), get<3>(args), get<4>(args), get<5>(args),
@@ -301,7 +301,7 @@ n.. InvokeHelper<R, ::testing::tuple<A1, A2, A3, A4, A5, A6, A7, A8, A9,
     A10> > {
  p..
   template <typename Function>
-  static R Invoke(Function function, const ::testing::tuple<A1, A2, A3, A4, A5,
+  st.. R Invoke(Function function, co.. ::testing::tuple<A1, A2, A3, A4, A5,
       A6, A7, A8, A9, A10>& args) {
            return function(get<0>(args), get<1>(args), get<2>(args),
                get<3>(args), get<4>(args), get<5>(args), get<6>(args),
@@ -309,9 +309,9 @@ n.. InvokeHelper<R, ::testing::tuple<A1, A2, A3, A4, A5, A6, A7, A8, A9,
   }
 
   template <n.. n.., typename MethodPtr>
-  static R InvokeMethod(n..* obj_ptr,
+  st.. R InvokeMethod(n..* obj_ptr,
                         MethodPtr method_ptr,
-                        const ::testing::tuple<A1, A2, A3, A4, A5, A6, A7, A8,
+                        co.. ::testing::tuple<A1, A2, A3, A4, A5, A6, A7, A8,
                             A9, A10>& args) {
            return (obj_ptr->*method_ptr)(get<0>(args), get<1>(args),
                get<2>(args), get<3>(args), get<4>(args), get<5>(args),
@@ -339,12 +339,12 @@ n.. InvokeCallbackAction {
   // callback's result can be implicitly converted to the mock
   // function's result.
   template <typename Result, typename ArgumentTuple>
-  Result Perform(const ArgumentTuple& args) const {
+  Result Perform(co.. ArgumentTuple& args) co.. {
     return InvokeHelper<Result, ArgumentTuple>::InvokeCallback(
         callback_.get(), args);
   }
- private:
-  const linked_ptr<CallbackType> callback_;
+ pr..
+  co.. linked_ptr<CallbackType> callback_;
 };
 
 // An INTERNAL macro for extracting the type of a tuple field.  It's
@@ -370,8 +370,8 @@ _de.. GMOCK_FIELD_(Tuple, N) \
 // in the range [0, 10].  Duplicates are allowed and they don't have
 // to be in an ascending or descending order.
 
-template <typename Result, typename ArgumentTuple, int k1, int k2, int k3,
-    int k4, int k5, int k6, int k7, int k8, int k9, int k10>
+template <typename Result, typename ArgumentTuple, in. k1, in. k2, in. k3,
+    in. k4, in. k5, in. k6, in. k7, in. k8, in. k9, in. k10>
 n.. SelectArgs {
  p..
   typedef Result type(GMOCK_FIELD_(ArgumentTuple, k1),
@@ -381,7 +381,7 @@ n.. SelectArgs {
       GMOCK_FIELD_(ArgumentTuple, k8), GMOCK_FIELD_(ArgumentTuple, k9),
       GMOCK_FIELD_(ArgumentTuple, k10));
   typedef typename Function<type>::ArgumentTuple SelectedArgs;
-  static SelectedArgs Select(const ArgumentTuple& args) {
+  st.. SelectedArgs Select(co.. ArgumentTuple& args) {
     return SelectedArgs(get<k1>(args), get<k2>(args), get<k3>(args),
         get<k4>(args), get<k5>(args), get<k6>(args), get<k7>(args),
         get<k8>(args), get<k9>(args), get<k10>(args));
@@ -394,48 +394,48 @@ n.. SelectArgs<Result, ArgumentTuple,
  p..
   typedef Result type();
   typedef typename Function<type>::ArgumentTuple SelectedArgs;
-  static SelectedArgs Select(const ArgumentTuple& /* args */) {
+  st.. SelectedArgs Select(co.. ArgumentTuple& /* args */) {
     return SelectedArgs();
   }
 };
 
-template <typename Result, typename ArgumentTuple, int k1>
+template <typename Result, typename ArgumentTuple, in. k1>
 n.. SelectArgs<Result, ArgumentTuple,
                  k1, -1, -1, -1, -1, -1, -1, -1, -1, -1> {
  p..
   typedef Result type(GMOCK_FIELD_(ArgumentTuple, k1));
   typedef typename Function<type>::ArgumentTuple SelectedArgs;
-  static SelectedArgs Select(const ArgumentTuple& args) {
+  st.. SelectedArgs Select(co.. ArgumentTuple& args) {
     return SelectedArgs(get<k1>(args));
   }
 };
 
-template <typename Result, typename ArgumentTuple, int k1, int k2>
+template <typename Result, typename ArgumentTuple, in. k1, in. k2>
 n.. SelectArgs<Result, ArgumentTuple,
                  k1, k2, -1, -1, -1, -1, -1, -1, -1, -1> {
  p..
   typedef Result type(GMOCK_FIELD_(ArgumentTuple, k1),
       GMOCK_FIELD_(ArgumentTuple, k2));
   typedef typename Function<type>::ArgumentTuple SelectedArgs;
-  static SelectedArgs Select(const ArgumentTuple& args) {
+  st.. SelectedArgs Select(co.. ArgumentTuple& args) {
     return SelectedArgs(get<k1>(args), get<k2>(args));
   }
 };
 
-template <typename Result, typename ArgumentTuple, int k1, int k2, int k3>
+template <typename Result, typename ArgumentTuple, in. k1, in. k2, in. k3>
 n.. SelectArgs<Result, ArgumentTuple,
                  k1, k2, k3, -1, -1, -1, -1, -1, -1, -1> {
  p..
   typedef Result type(GMOCK_FIELD_(ArgumentTuple, k1),
       GMOCK_FIELD_(ArgumentTuple, k2), GMOCK_FIELD_(ArgumentTuple, k3));
   typedef typename Function<type>::ArgumentTuple SelectedArgs;
-  static SelectedArgs Select(const ArgumentTuple& args) {
+  st.. SelectedArgs Select(co.. ArgumentTuple& args) {
     return SelectedArgs(get<k1>(args), get<k2>(args), get<k3>(args));
   }
 };
 
-template <typename Result, typename ArgumentTuple, int k1, int k2, int k3,
-    int k4>
+template <typename Result, typename ArgumentTuple, in. k1, in. k2, in. k3,
+    in. k4>
 n.. SelectArgs<Result, ArgumentTuple,
                  k1, k2, k3, k4, -1, -1, -1, -1, -1, -1> {
  p..
@@ -443,14 +443,14 @@ n.. SelectArgs<Result, ArgumentTuple,
       GMOCK_FIELD_(ArgumentTuple, k2), GMOCK_FIELD_(ArgumentTuple, k3),
       GMOCK_FIELD_(ArgumentTuple, k4));
   typedef typename Function<type>::ArgumentTuple SelectedArgs;
-  static SelectedArgs Select(const ArgumentTuple& args) {
+  st.. SelectedArgs Select(co.. ArgumentTuple& args) {
     return SelectedArgs(get<k1>(args), get<k2>(args), get<k3>(args),
         get<k4>(args));
   }
 };
 
-template <typename Result, typename ArgumentTuple, int k1, int k2, int k3,
-    int k4, int k5>
+template <typename Result, typename ArgumentTuple, in. k1, in. k2, in. k3,
+    in. k4, in. k5>
 n.. SelectArgs<Result, ArgumentTuple,
                  k1, k2, k3, k4, k5, -1, -1, -1, -1, -1> {
  p..
@@ -458,14 +458,14 @@ n.. SelectArgs<Result, ArgumentTuple,
       GMOCK_FIELD_(ArgumentTuple, k2), GMOCK_FIELD_(ArgumentTuple, k3),
       GMOCK_FIELD_(ArgumentTuple, k4), GMOCK_FIELD_(ArgumentTuple, k5));
   typedef typename Function<type>::ArgumentTuple SelectedArgs;
-  static SelectedArgs Select(const ArgumentTuple& args) {
+  st.. SelectedArgs Select(co.. ArgumentTuple& args) {
     return SelectedArgs(get<k1>(args), get<k2>(args), get<k3>(args),
         get<k4>(args), get<k5>(args));
   }
 };
 
-template <typename Result, typename ArgumentTuple, int k1, int k2, int k3,
-    int k4, int k5, int k6>
+template <typename Result, typename ArgumentTuple, in. k1, in. k2, in. k3,
+    in. k4, in. k5, in. k6>
 n.. SelectArgs<Result, ArgumentTuple,
                  k1, k2, k3, k4, k5, k6, -1, -1, -1, -1> {
  p..
@@ -474,14 +474,14 @@ n.. SelectArgs<Result, ArgumentTuple,
       GMOCK_FIELD_(ArgumentTuple, k4), GMOCK_FIELD_(ArgumentTuple, k5),
       GMOCK_FIELD_(ArgumentTuple, k6));
   typedef typename Function<type>::ArgumentTuple SelectedArgs;
-  static SelectedArgs Select(const ArgumentTuple& args) {
+  st.. SelectedArgs Select(co.. ArgumentTuple& args) {
     return SelectedArgs(get<k1>(args), get<k2>(args), get<k3>(args),
         get<k4>(args), get<k5>(args), get<k6>(args));
   }
 };
 
-template <typename Result, typename ArgumentTuple, int k1, int k2, int k3,
-    int k4, int k5, int k6, int k7>
+template <typename Result, typename ArgumentTuple, in. k1, in. k2, in. k3,
+    in. k4, in. k5, in. k6, in. k7>
 n.. SelectArgs<Result, ArgumentTuple,
                  k1, k2, k3, k4, k5, k6, k7, -1, -1, -1> {
  p..
@@ -490,14 +490,14 @@ n.. SelectArgs<Result, ArgumentTuple,
       GMOCK_FIELD_(ArgumentTuple, k4), GMOCK_FIELD_(ArgumentTuple, k5),
       GMOCK_FIELD_(ArgumentTuple, k6), GMOCK_FIELD_(ArgumentTuple, k7));
   typedef typename Function<type>::ArgumentTuple SelectedArgs;
-  static SelectedArgs Select(const ArgumentTuple& args) {
+  st.. SelectedArgs Select(co.. ArgumentTuple& args) {
     return SelectedArgs(get<k1>(args), get<k2>(args), get<k3>(args),
         get<k4>(args), get<k5>(args), get<k6>(args), get<k7>(args));
   }
 };
 
-template <typename Result, typename ArgumentTuple, int k1, int k2, int k3,
-    int k4, int k5, int k6, int k7, int k8>
+template <typename Result, typename ArgumentTuple, in. k1, in. k2, in. k3,
+    in. k4, in. k5, in. k6, in. k7, in. k8>
 n.. SelectArgs<Result, ArgumentTuple,
                  k1, k2, k3, k4, k5, k6, k7, k8, -1, -1> {
  p..
@@ -507,15 +507,15 @@ n.. SelectArgs<Result, ArgumentTuple,
       GMOCK_FIELD_(ArgumentTuple, k6), GMOCK_FIELD_(ArgumentTuple, k7),
       GMOCK_FIELD_(ArgumentTuple, k8));
   typedef typename Function<type>::ArgumentTuple SelectedArgs;
-  static SelectedArgs Select(const ArgumentTuple& args) {
+  st.. SelectedArgs Select(co.. ArgumentTuple& args) {
     return SelectedArgs(get<k1>(args), get<k2>(args), get<k3>(args),
         get<k4>(args), get<k5>(args), get<k6>(args), get<k7>(args),
         get<k8>(args));
   }
 };
 
-template <typename Result, typename ArgumentTuple, int k1, int k2, int k3,
-    int k4, int k5, int k6, int k7, int k8, int k9>
+template <typename Result, typename ArgumentTuple, in. k1, in. k2, in. k3,
+    in. k4, in. k5, in. k6, in. k7, in. k8, in. k9>
 n.. SelectArgs<Result, ArgumentTuple,
                  k1, k2, k3, k4, k5, k6, k7, k8, k9, -1> {
  p..
@@ -525,7 +525,7 @@ n.. SelectArgs<Result, ArgumentTuple,
       GMOCK_FIELD_(ArgumentTuple, k6), GMOCK_FIELD_(ArgumentTuple, k7),
       GMOCK_FIELD_(ArgumentTuple, k8), GMOCK_FIELD_(ArgumentTuple, k9));
   typedef typename Function<type>::ArgumentTuple SelectedArgs;
-  static SelectedArgs Select(const ArgumentTuple& args) {
+  st.. SelectedArgs Select(co.. ArgumentTuple& args) {
     return SelectedArgs(get<k1>(args), get<k2>(args), get<k3>(args),
         get<k4>(args), get<k5>(args), get<k6>(args), get<k7>(args),
         get<k8>(args), get<k9>(args));
@@ -535,38 +535,38 @@ n.. SelectArgs<Result, ArgumentTuple,
 #undef GMOCK_FIELD_
 
 // Implements the WithArgs action.
-template <typename InnerAction, int k1 = -1, int k2 = -1, int k3 = -1,
-    int k4 = -1, int k5 = -1, int k6 = -1, int k7 = -1, int k8 = -1,
-    int k9 = -1, int k10 = -1>
+template <typename InnerAction, in. k1 = -1, in. k2 = -1, in. k3 = -1,
+    in. k4 = -1, in. k5 = -1, in. k6 = -1, in. k7 = -1, in. k8 = -1,
+    in. k9 = -1, in. k10 = -1>
 n.. WithArgsAction {
  p..
-  explicit WithArgsAction(const InnerAction& action) : action_(action) {}
+  explicit WithArgsAction(co.. InnerAction& action) : action_(action) {}
 
   template <typename F>
-  operator Action<F>() const { return MakeAction(new Impl<F>(action_)); }
+  operator Action<F>() co.. { return MakeAction(new Impl<F>(action_)); }
 
- private:
+ pr..
   template <typename F>
-  n.. Impl : public ActionInterface<F> {
+  n.. Impl : pu.. ActionInterface<F> {
    p..
     typedef typename Function<F>::Result Result;
     typedef typename Function<F>::ArgumentTuple ArgumentTuple;
 
-    explicit Impl(const InnerAction& action) : action_(action) {}
+    explicit Impl(co.. InnerAction& action) : action_(action) {}
 
-    v.. Result Perform(const ArgumentTuple& args) {
+    v.. Result Perform(co.. ArgumentTuple& args) {
       return action_.Perform(SelectArgs<Result, ArgumentTuple, k1, k2, k3, k4,
           k5, k6, k7, k8, k9, k10>::Select(args));
     }
 
-   private:
+   pr..
     typedef typename SelectArgs<Result, ArgumentTuple,
         k1, k2, k3, k4, k5, k6, k7, k8, k9, k10>::type InnerFunctionType;
 
     Action<InnerFunctionType> action_;
   };
 
-  const InnerAction action_;
+  co.. InnerAction action_;
 
   GTEST_DISALLOW_ASSIGN_(WithArgsAction);
 };
@@ -591,7 +591,7 @@ struct ExcessiveArg {};
 template <typename Result, n.. Impl>
 n.. ActionHelper {
  p..
-  static Result Perform(Impl* impl, const ::testing::tuple<>& args) {
+  st.. Result Perform(Impl* impl, co.. ::testing::tuple<>& args) {
     return impl->template gmock_PerformImpl<>(args, ExcessiveArg(),
         ExcessiveArg(), ExcessiveArg(), ExcessiveArg(), ExcessiveArg(),
         ExcessiveArg(), ExcessiveArg(), ExcessiveArg(), ExcessiveArg(),
@@ -599,7 +599,7 @@ n.. ActionHelper {
   }
 
   template <typename A0>
-  static Result Perform(Impl* impl, const ::testing::tuple<A0>& args) {
+  st.. Result Perform(Impl* impl, co.. ::testing::tuple<A0>& args) {
     return impl->template gmock_PerformImpl<A0>(args, get<0>(args),
         ExcessiveArg(), ExcessiveArg(), ExcessiveArg(), ExcessiveArg(),
         ExcessiveArg(), ExcessiveArg(), ExcessiveArg(), ExcessiveArg(),
@@ -607,7 +607,7 @@ n.. ActionHelper {
   }
 
   template <typename A0, typename A1>
-  static Result Perform(Impl* impl, const ::testing::tuple<A0, A1>& args) {
+  st.. Result Perform(Impl* impl, co.. ::testing::tuple<A0, A1>& args) {
     return impl->template gmock_PerformImpl<A0, A1>(args, get<0>(args),
         get<1>(args), ExcessiveArg(), ExcessiveArg(), ExcessiveArg(),
         ExcessiveArg(), ExcessiveArg(), ExcessiveArg(), ExcessiveArg(),
@@ -615,7 +615,7 @@ n.. ActionHelper {
   }
 
   template <typename A0, typename A1, typename A2>
-  static Result Perform(Impl* impl, const ::testing::tuple<A0, A1, A2>& args) {
+  st.. Result Perform(Impl* impl, co.. ::testing::tuple<A0, A1, A2>& args) {
     return impl->template gmock_PerformImpl<A0, A1, A2>(args, get<0>(args),
         get<1>(args), get<2>(args), ExcessiveArg(), ExcessiveArg(),
         ExcessiveArg(), ExcessiveArg(), ExcessiveArg(), ExcessiveArg(),
@@ -623,7 +623,7 @@ n.. ActionHelper {
   }
 
   template <typename A0, typename A1, typename A2, typename A3>
-  static Result Perform(Impl* impl, const ::testing::tuple<A0, A1, A2,
+  st.. Result Perform(Impl* impl, co.. ::testing::tuple<A0, A1, A2,
       A3>& args) {
     return impl->template gmock_PerformImpl<A0, A1, A2, A3>(args, get<0>(args),
         get<1>(args), get<2>(args), get<3>(args), ExcessiveArg(),
@@ -632,7 +632,7 @@ n.. ActionHelper {
   }
 
   template <typename A0, typename A1, typename A2, typename A3, typename A4>
-  static Result Perform(Impl* impl, const ::testing::tuple<A0, A1, A2, A3,
+  st.. Result Perform(Impl* impl, co.. ::testing::tuple<A0, A1, A2, A3,
       A4>& args) {
     return impl->template gmock_PerformImpl<A0, A1, A2, A3, A4>(args,
         get<0>(args), get<1>(args), get<2>(args), get<3>(args), get<4>(args),
@@ -642,7 +642,7 @@ n.. ActionHelper {
 
   template <typename A0, typename A1, typename A2, typename A3, typename A4,
       typename A5>
-  static Result Perform(Impl* impl, const ::testing::tuple<A0, A1, A2, A3, A4,
+  st.. Result Perform(Impl* impl, co.. ::testing::tuple<A0, A1, A2, A3, A4,
       A5>& args) {
     return impl->template gmock_PerformImpl<A0, A1, A2, A3, A4, A5>(args,
         get<0>(args), get<1>(args), get<2>(args), get<3>(args), get<4>(args),
@@ -652,7 +652,7 @@ n.. ActionHelper {
 
   template <typename A0, typename A1, typename A2, typename A3, typename A4,
       typename A5, typename A6>
-  static Result Perform(Impl* impl, const ::testing::tuple<A0, A1, A2, A3, A4,
+  st.. Result Perform(Impl* impl, co.. ::testing::tuple<A0, A1, A2, A3, A4,
       A5, A6>& args) {
     return impl->template gmock_PerformImpl<A0, A1, A2, A3, A4, A5, A6>(args,
         get<0>(args), get<1>(args), get<2>(args), get<3>(args), get<4>(args),
@@ -662,7 +662,7 @@ n.. ActionHelper {
 
   template <typename A0, typename A1, typename A2, typename A3, typename A4,
       typename A5, typename A6, typename A7>
-  static Result Perform(Impl* impl, const ::testing::tuple<A0, A1, A2, A3, A4,
+  st.. Result Perform(Impl* impl, co.. ::testing::tuple<A0, A1, A2, A3, A4,
       A5, A6, A7>& args) {
     return impl->template gmock_PerformImpl<A0, A1, A2, A3, A4, A5, A6,
         A7>(args, get<0>(args), get<1>(args), get<2>(args), get<3>(args),
@@ -672,7 +672,7 @@ n.. ActionHelper {
 
   template <typename A0, typename A1, typename A2, typename A3, typename A4,
       typename A5, typename A6, typename A7, typename A8>
-  static Result Perform(Impl* impl, const ::testing::tuple<A0, A1, A2, A3, A4,
+  st.. Result Perform(Impl* impl, co.. ::testing::tuple<A0, A1, A2, A3, A4,
       A5, A6, A7, A8>& args) {
     return impl->template gmock_PerformImpl<A0, A1, A2, A3, A4, A5, A6, A7,
         A8>(args, get<0>(args), get<1>(args), get<2>(args), get<3>(args),
@@ -682,7 +682,7 @@ n.. ActionHelper {
 
   template <typename A0, typename A1, typename A2, typename A3, typename A4,
       typename A5, typename A6, typename A7, typename A8, typename A9>
-  static Result Perform(Impl* impl, const ::testing::tuple<A0, A1, A2, A3, A4,
+  st.. Result Perform(Impl* impl, co.. ::testing::tuple<A0, A1, A2, A3, A4,
       A5, A6, A7, A8, A9>& args) {
     return impl->template gmock_PerformImpl<A0, A1, A2, A3, A4, A5, A6, A7, A8,
         A9>(args, get<0>(args), get<1>(args), get<2>(args), get<3>(args),
@@ -700,71 +700,71 @@ n.. ActionHelper {
 // performs it.  It serves as an adaptor between actions with
 // different argument lists.  C++ doesn't support default arguments for
 // function templates, so we have to overload it.
-template <int k1, typename InnerAction>
+template <in. k1, typename InnerAction>
 inline internal::WithArgsAction<InnerAction, k1>
-WithArgs(const InnerAction& action) {
+WithArgs(co.. InnerAction& action) {
   return internal::WithArgsAction<InnerAction, k1>(action);
 }
 
-template <int k1, int k2, typename InnerAction>
+template <in. k1, in. k2, typename InnerAction>
 inline internal::WithArgsAction<InnerAction, k1, k2>
-WithArgs(const InnerAction& action) {
+WithArgs(co.. InnerAction& action) {
   return internal::WithArgsAction<InnerAction, k1, k2>(action);
 }
 
-template <int k1, int k2, int k3, typename InnerAction>
+template <in. k1, in. k2, in. k3, typename InnerAction>
 inline internal::WithArgsAction<InnerAction, k1, k2, k3>
-WithArgs(const InnerAction& action) {
+WithArgs(co.. InnerAction& action) {
   return internal::WithArgsAction<InnerAction, k1, k2, k3>(action);
 }
 
-template <int k1, int k2, int k3, int k4, typename InnerAction>
+template <in. k1, in. k2, in. k3, in. k4, typename InnerAction>
 inline internal::WithArgsAction<InnerAction, k1, k2, k3, k4>
-WithArgs(const InnerAction& action) {
+WithArgs(co.. InnerAction& action) {
   return internal::WithArgsAction<InnerAction, k1, k2, k3, k4>(action);
 }
 
-template <int k1, int k2, int k3, int k4, int k5, typename InnerAction>
+template <in. k1, in. k2, in. k3, in. k4, in. k5, typename InnerAction>
 inline internal::WithArgsAction<InnerAction, k1, k2, k3, k4, k5>
-WithArgs(const InnerAction& action) {
+WithArgs(co.. InnerAction& action) {
   return internal::WithArgsAction<InnerAction, k1, k2, k3, k4, k5>(action);
 }
 
-template <int k1, int k2, int k3, int k4, int k5, int k6, typename InnerAction>
+template <in. k1, in. k2, in. k3, in. k4, in. k5, in. k6, typename InnerAction>
 inline internal::WithArgsAction<InnerAction, k1, k2, k3, k4, k5, k6>
-WithArgs(const InnerAction& action) {
+WithArgs(co.. InnerAction& action) {
   return internal::WithArgsAction<InnerAction, k1, k2, k3, k4, k5, k6>(action);
 }
 
-template <int k1, int k2, int k3, int k4, int k5, int k6, int k7,
+template <in. k1, in. k2, in. k3, in. k4, in. k5, in. k6, in. k7,
     typename InnerAction>
 inline internal::WithArgsAction<InnerAction, k1, k2, k3, k4, k5, k6, k7>
-WithArgs(const InnerAction& action) {
+WithArgs(co.. InnerAction& action) {
   return internal::WithArgsAction<InnerAction, k1, k2, k3, k4, k5, k6,
       k7>(action);
 }
 
-template <int k1, int k2, int k3, int k4, int k5, int k6, int k7, int k8,
+template <in. k1, in. k2, in. k3, in. k4, in. k5, in. k6, in. k7, in. k8,
     typename InnerAction>
 inline internal::WithArgsAction<InnerAction, k1, k2, k3, k4, k5, k6, k7, k8>
-WithArgs(const InnerAction& action) {
+WithArgs(co.. InnerAction& action) {
   return internal::WithArgsAction<InnerAction, k1, k2, k3, k4, k5, k6, k7,
       k8>(action);
 }
 
-template <int k1, int k2, int k3, int k4, int k5, int k6, int k7, int k8,
-    int k9, typename InnerAction>
+template <in. k1, in. k2, in. k3, in. k4, in. k5, in. k6, in. k7, in. k8,
+    in. k9, typename InnerAction>
 inline internal::WithArgsAction<InnerAction, k1, k2, k3, k4, k5, k6, k7, k8, k9>
-WithArgs(const InnerAction& action) {
+WithArgs(co.. InnerAction& action) {
   return internal::WithArgsAction<InnerAction, k1, k2, k3, k4, k5, k6, k7, k8,
       k9>(action);
 }
 
-template <int k1, int k2, int k3, int k4, int k5, int k6, int k7, int k8,
-    int k9, int k10, typename InnerAction>
+template <in. k1, in. k2, in. k3, in. k4, in. k5, in. k6, in. k7, in. k8,
+    in. k9, in. k10, typename InnerAction>
 inline internal::WithArgsAction<InnerAction, k1, k2, k3, k4, k5, k6, k7, k8,
     k9, k10>
-WithArgs(const InnerAction& action) {
+WithArgs(co.. InnerAction& action) {
   return internal::WithArgsAction<InnerAction, k1, k2, k3, k4, k5, k6, k7, k8,
       k9, k10>(action);
 }
@@ -959,7 +959,7 @@ DoAll(Action1 a1, Action2 a2, Action3 a3, Action4 a4, Action5 a5, Action6 a6,
 
 // An internal macro needed for implementing ACTION*().
 _de.. GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_\
-    const args_type& args GTEST_ATTRIBUTE_UNUSED_, \
+    co.. args_type& args GTEST_ATTRIBUTE_UNUSED_, \
     arg0_type arg0 GTEST_ATTRIBUTE_UNUSED_, \
     arg1_type arg1 GTEST_ATTRIBUTE_UNUSED_, \
     arg2_type arg2 GTEST_ATTRIBUTE_UNUSED_, \
@@ -1367,14 +1367,14 @@ _de.. ACTION_TEMPLATE(name, template_params, value_params)\
     explicit GMOCK_ACTION_CLASS_(name, value_params)\
         GMOCK_INTERNAL_INIT_##value_params {}\
     template <typename F>\
-    n.. gmock_Impl : public ::testing::ActionInterface<F> {\
+    n.. gmock_Impl : pu.. ::testing::ActionInterface<F> {\
      p..\
       typedef F function_type;\
       typedef typename ::testing::internal::Function<F>::Result return_type;\
       typedef typename ::testing::internal::Function<F>::ArgumentTuple\
           args_type;\
       explicit gmock_Impl GMOCK_INTERNAL_INIT_##value_params {}\
-      v.. return_type Perform(const args_type& args) {\
+      v.. return_type Perform(co.. args_type& args) {\
         return ::testing::internal::ActionHelper<return_type, gmock_Impl>::\
             Perform(this, args);\
       }\
@@ -1382,20 +1382,20 @@ _de.. ACTION_TEMPLATE(name, template_params, value_params)\
           typename arg3_type, typename arg4_type, typename arg5_type, \
           typename arg6_type, typename arg7_type, typename arg8_type, \
           typename arg9_type>\
-      return_type gmock_PerformImpl(const args_type& args, arg0_type arg0, \
+      return_type gmock_PerformImpl(co.. args_type& args, arg0_type arg0, \
           arg1_type arg1, arg2_type arg2, arg3_type arg3, arg4_type arg4, \
           arg5_type arg5, arg6_type arg6, arg7_type arg7, arg8_type arg8, \
-          arg9_type arg9) const;\
+          arg9_type arg9) co..;\
       GMOCK_INTERNAL_DEFN_##value_params\
-     private:\
+     pr..\
       GTEST_DISALLOW_ASSIGN_(gmock_Impl);\
     };\
-    template <typename F> operator ::testing::Action<F>() const {\
+    template <typename F> operator ::testing::Action<F>() co.. {\
       return ::testing::Action<F>(\
           new gmock_Impl<F>(GMOCK_INTERNAL_LIST_##value_params));\
     }\
     GMOCK_INTERNAL_DEFN_##value_params\
-   private:\
+   pr..\
     GTEST_DISALLOW_ASSIGN_(GMOCK_ACTION_CLASS_(name, value_params));\
   };\
   template <GMOCK_INTERNAL_DECL_##template_params\
@@ -1421,21 +1421,21 @@ _de.. ACTION_TEMPLATE(name, template_params, value_params)\
           GMOCK_INTERNAL_LIST_##template_params\
           GMOCK_INTERNAL_LIST_TYPE_##value_params>::gmock_Impl<F>::\
               gmock_PerformImpl(\
-          GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_) const
+          GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_) co..
 
 _de.. ACTION(name)\
   n.. name##Action {\
    p..\
     name##Action() {}\
     template <typename F>\
-    n.. gmock_Impl : public ::testing::ActionInterface<F> {\
+    n.. gmock_Impl : pu.. ::testing::ActionInterface<F> {\
      p..\
       typedef F function_type;\
       typedef typename ::testing::internal::Function<F>::Result return_type;\
       typedef typename ::testing::internal::Function<F>::ArgumentTuple\
           args_type;\
       gmock_Impl() {}\
-      v.. return_type Perform(const args_type& args) {\
+      v.. return_type Perform(co.. args_type& args) {\
         return ::testing::internal::ActionHelper<return_type, gmock_Impl>::\
             Perform(this, args);\
       }\
@@ -1443,17 +1443,17 @@ _de.. ACTION(name)\
           typename arg3_type, typename arg4_type, typename arg5_type, \
           typename arg6_type, typename arg7_type, typename arg8_type, \
           typename arg9_type>\
-      return_type gmock_PerformImpl(const args_type& args, arg0_type arg0, \
+      return_type gmock_PerformImpl(co.. args_type& args, arg0_type arg0, \
           arg1_type arg1, arg2_type arg2, arg3_type arg3, arg4_type arg4, \
           arg5_type arg5, arg6_type arg6, arg7_type arg7, arg8_type arg8, \
-          arg9_type arg9) const;\
-     private:\
+          arg9_type arg9) co..;\
+     pr..\
       GTEST_DISALLOW_ASSIGN_(gmock_Impl);\
     };\
-    template <typename F> operator ::testing::Action<F>() const {\
+    template <typename F> operator ::testing::Action<F>() co.. {\
       return ::testing::Action<F>(new gmock_Impl<F>());\
     }\
-   private:\
+   pr..\
     GTEST_DISALLOW_ASSIGN_(name##Action);\
   };\
   inline name##Action name() {\
@@ -1466,7 +1466,7 @@ _de.. ACTION(name)\
       typename arg9_type>\
   typename ::testing::internal::Function<F>::Result\
       name##Action::gmock_Impl<F>::gmock_PerformImpl(\
-          GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_) const
+          GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_) co..
 
 _de.. ACTION_P(name, p0)\
   template <typename p0##_type>\
@@ -1475,7 +1475,7 @@ _de.. ACTION_P(name, p0)\
     explicit name##ActionP(p0##_type gmock_p0) : \
         p0(::testing::internal::forward<p0##_type>(gmock_p0)) {}\
     template <typename F>\
-    n.. gmock_Impl : public ::testing::ActionInterface<F> {\
+    n.. gmock_Impl : pu.. ::testing::ActionInterface<F> {\
      p..\
       typedef F function_type;\
       typedef typename ::testing::internal::Function<F>::Result return_type;\
@@ -1483,7 +1483,7 @@ _de.. ACTION_P(name, p0)\
           args_type;\
       explicit gmock_Impl(p0##_type gmock_p0) : \
           p0(::testing::internal::forward<p0##_type>(gmock_p0)) {}\
-      v.. return_type Perform(const args_type& args) {\
+      v.. return_type Perform(co.. args_type& args) {\
         return ::testing::internal::ActionHelper<return_type, gmock_Impl>::\
             Perform(this, args);\
       }\
@@ -1491,19 +1491,19 @@ _de.. ACTION_P(name, p0)\
           typename arg3_type, typename arg4_type, typename arg5_type, \
           typename arg6_type, typename arg7_type, typename arg8_type, \
           typename arg9_type>\
-      return_type gmock_PerformImpl(const args_type& args, arg0_type arg0, \
+      return_type gmock_PerformImpl(co.. args_type& args, arg0_type arg0, \
           arg1_type arg1, arg2_type arg2, arg3_type arg3, arg4_type arg4, \
           arg5_type arg5, arg6_type arg6, arg7_type arg7, arg8_type arg8, \
-          arg9_type arg9) const;\
+          arg9_type arg9) co..;\
       p0##_type p0;\
-     private:\
+     pr..\
       GTEST_DISALLOW_ASSIGN_(gmock_Impl);\
     };\
-    template <typename F> operator ::testing::Action<F>() const {\
+    template <typename F> operator ::testing::Action<F>() co.. {\
       return ::testing::Action<F>(new gmock_Impl<F>(p0));\
     }\
     p0##_type p0;\
-   private:\
+   pr..\
     GTEST_DISALLOW_ASSIGN_(name##ActionP);\
   };\
   template <typename p0##_type>\
@@ -1518,7 +1518,7 @@ _de.. ACTION_P(name, p0)\
       typename arg9_type>\
   typename ::testing::internal::Function<F>::Result\
       name##ActionP<p0##_type>::gmock_Impl<F>::gmock_PerformImpl(\
-          GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_) const
+          GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_) co..
 
 _de.. ACTION_P2(name, p0, p1)\
   template <typename p0##_type, typename p1##_type>\
@@ -1528,7 +1528,7 @@ _de.. ACTION_P2(name, p0, p1)\
         p1##_type gmock_p1) : p0(::testing::internal::forward<p0##_type>(gmock_p0)), \
         p1(::testing::internal::forward<p1##_type>(gmock_p1)) {}\
     template <typename F>\
-    n.. gmock_Impl : public ::testing::ActionInterface<F> {\
+    n.. gmock_Impl : pu.. ::testing::ActionInterface<F> {\
      p..\
       typedef F function_type;\
       typedef typename ::testing::internal::Function<F>::Result return_type;\
@@ -1537,7 +1537,7 @@ _de.. ACTION_P2(name, p0, p1)\
       gmock_Impl(p0##_type gmock_p0, \
           p1##_type gmock_p1) : p0(::testing::internal::forward<p0##_type>(gmock_p0)), \
           p1(::testing::internal::forward<p1##_type>(gmock_p1)) {}\
-      v.. return_type Perform(const args_type& args) {\
+      v.. return_type Perform(co.. args_type& args) {\
         return ::testing::internal::ActionHelper<return_type, gmock_Impl>::\
             Perform(this, args);\
       }\
@@ -1545,21 +1545,21 @@ _de.. ACTION_P2(name, p0, p1)\
           typename arg3_type, typename arg4_type, typename arg5_type, \
           typename arg6_type, typename arg7_type, typename arg8_type, \
           typename arg9_type>\
-      return_type gmock_PerformImpl(const args_type& args, arg0_type arg0, \
+      return_type gmock_PerformImpl(co.. args_type& args, arg0_type arg0, \
           arg1_type arg1, arg2_type arg2, arg3_type arg3, arg4_type arg4, \
           arg5_type arg5, arg6_type arg6, arg7_type arg7, arg8_type arg8, \
-          arg9_type arg9) const;\
+          arg9_type arg9) co..;\
       p0##_type p0;\
       p1##_type p1;\
-     private:\
+     pr..\
       GTEST_DISALLOW_ASSIGN_(gmock_Impl);\
     };\
-    template <typename F> operator ::testing::Action<F>() const {\
+    template <typename F> operator ::testing::Action<F>() co.. {\
       return ::testing::Action<F>(new gmock_Impl<F>(p0, p1));\
     }\
     p0##_type p0;\
     p1##_type p1;\
-   private:\
+   pr..\
     GTEST_DISALLOW_ASSIGN_(name##ActionP2);\
   };\
   template <typename p0##_type, typename p1##_type>\
@@ -1575,7 +1575,7 @@ _de.. ACTION_P2(name, p0, p1)\
       typename arg9_type>\
   typename ::testing::internal::Function<F>::Result\
       name##ActionP2<p0##_type, p1##_type>::gmock_Impl<F>::gmock_PerformImpl(\
-          GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_) const
+          GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_) co..
 
 _de.. ACTION_P3(name, p0, p1, p2)\
   template <typename p0##_type, typename p1##_type, typename p2##_type>\
@@ -1586,7 +1586,7 @@ _de.. ACTION_P3(name, p0, p1, p2)\
         p1(::testing::internal::forward<p1##_type>(gmock_p1)), \
         p2(::testing::internal::forward<p2##_type>(gmock_p2)) {}\
     template <typename F>\
-    n.. gmock_Impl : public ::testing::ActionInterface<F> {\
+    n.. gmock_Impl : pu.. ::testing::ActionInterface<F> {\
      p..\
       typedef F function_type;\
       typedef typename ::testing::internal::Function<F>::Result return_type;\
@@ -1596,7 +1596,7 @@ _de.. ACTION_P3(name, p0, p1, p2)\
           p2##_type gmock_p2) : p0(::testing::internal::forward<p0##_type>(gmock_p0)), \
           p1(::testing::internal::forward<p1##_type>(gmock_p1)), \
           p2(::testing::internal::forward<p2##_type>(gmock_p2)) {}\
-      v.. return_type Perform(const args_type& args) {\
+      v.. return_type Perform(co.. args_type& args) {\
         return ::testing::internal::ActionHelper<return_type, gmock_Impl>::\
             Perform(this, args);\
       }\
@@ -1604,23 +1604,23 @@ _de.. ACTION_P3(name, p0, p1, p2)\
           typename arg3_type, typename arg4_type, typename arg5_type, \
           typename arg6_type, typename arg7_type, typename arg8_type, \
           typename arg9_type>\
-      return_type gmock_PerformImpl(const args_type& args, arg0_type arg0, \
+      return_type gmock_PerformImpl(co.. args_type& args, arg0_type arg0, \
           arg1_type arg1, arg2_type arg2, arg3_type arg3, arg4_type arg4, \
           arg5_type arg5, arg6_type arg6, arg7_type arg7, arg8_type arg8, \
-          arg9_type arg9) const;\
+          arg9_type arg9) co..;\
       p0##_type p0;\
       p1##_type p1;\
       p2##_type p2;\
-     private:\
+     pr..\
       GTEST_DISALLOW_ASSIGN_(gmock_Impl);\
     };\
-    template <typename F> operator ::testing::Action<F>() const {\
+    template <typename F> operator ::testing::Action<F>() co.. {\
       return ::testing::Action<F>(new gmock_Impl<F>(p0, p1, p2));\
     }\
     p0##_type p0;\
     p1##_type p1;\
     p2##_type p2;\
-   private:\
+   pr..\
     GTEST_DISALLOW_ASSIGN_(name##ActionP3);\
   };\
   template <typename p0##_type, typename p1##_type, typename p2##_type>\
@@ -1637,7 +1637,7 @@ _de.. ACTION_P3(name, p0, p1, p2)\
   typename ::testing::internal::Function<F>::Result\
       name##ActionP3<p0##_type, p1##_type, \
           p2##_type>::gmock_Impl<F>::gmock_PerformImpl(\
-          GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_) const
+          GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_) co..
 
 _de.. ACTION_P4(name, p0, p1, p2, p3)\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
@@ -1651,7 +1651,7 @@ _de.. ACTION_P4(name, p0, p1, p2, p3)\
         p2(::testing::internal::forward<p2##_type>(gmock_p2)), \
         p3(::testing::internal::forward<p3##_type>(gmock_p3)) {}\
     template <typename F>\
-    n.. gmock_Impl : public ::testing::ActionInterface<F> {\
+    n.. gmock_Impl : pu.. ::testing::ActionInterface<F> {\
      p..\
       typedef F function_type;\
       typedef typename ::testing::internal::Function<F>::Result return_type;\
@@ -1662,7 +1662,7 @@ _de.. ACTION_P4(name, p0, p1, p2, p3)\
           p1(::testing::internal::forward<p1##_type>(gmock_p1)), \
           p2(::testing::internal::forward<p2##_type>(gmock_p2)), \
           p3(::testing::internal::forward<p3##_type>(gmock_p3)) {}\
-      v.. return_type Perform(const args_type& args) {\
+      v.. return_type Perform(co.. args_type& args) {\
         return ::testing::internal::ActionHelper<return_type, gmock_Impl>::\
             Perform(this, args);\
       }\
@@ -1670,25 +1670,25 @@ _de.. ACTION_P4(name, p0, p1, p2, p3)\
           typename arg3_type, typename arg4_type, typename arg5_type, \
           typename arg6_type, typename arg7_type, typename arg8_type, \
           typename arg9_type>\
-      return_type gmock_PerformImpl(const args_type& args, arg0_type arg0, \
+      return_type gmock_PerformImpl(co.. args_type& args, arg0_type arg0, \
           arg1_type arg1, arg2_type arg2, arg3_type arg3, arg4_type arg4, \
           arg5_type arg5, arg6_type arg6, arg7_type arg7, arg8_type arg8, \
-          arg9_type arg9) const;\
+          arg9_type arg9) co..;\
       p0##_type p0;\
       p1##_type p1;\
       p2##_type p2;\
       p3##_type p3;\
-     private:\
+     pr..\
       GTEST_DISALLOW_ASSIGN_(gmock_Impl);\
     };\
-    template <typename F> operator ::testing::Action<F>() const {\
+    template <typename F> operator ::testing::Action<F>() co.. {\
       return ::testing::Action<F>(new gmock_Impl<F>(p0, p1, p2, p3));\
     }\
     p0##_type p0;\
     p1##_type p1;\
     p2##_type p2;\
     p3##_type p3;\
-   private:\
+   pr..\
     GTEST_DISALLOW_ASSIGN_(name##ActionP4);\
   };\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
@@ -1709,7 +1709,7 @@ _de.. ACTION_P4(name, p0, p1, p2, p3)\
   typename ::testing::internal::Function<F>::Result\
       name##ActionP4<p0##_type, p1##_type, p2##_type, \
           p3##_type>::gmock_Impl<F>::gmock_PerformImpl(\
-          GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_) const
+          GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_) co..
 
 _de.. ACTION_P5(name, p0, p1, p2, p3, p4)\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
@@ -1724,7 +1724,7 @@ _de.. ACTION_P5(name, p0, p1, p2, p3, p4)\
         p3(::testing::internal::forward<p3##_type>(gmock_p3)), \
         p4(::testing::internal::forward<p4##_type>(gmock_p4)) {}\
     template <typename F>\
-    n.. gmock_Impl : public ::testing::ActionInterface<F> {\
+    n.. gmock_Impl : pu.. ::testing::ActionInterface<F> {\
      p..\
       typedef F function_type;\
       typedef typename ::testing::internal::Function<F>::Result return_type;\
@@ -1737,7 +1737,7 @@ _de.. ACTION_P5(name, p0, p1, p2, p3, p4)\
           p2(::testing::internal::forward<p2##_type>(gmock_p2)), \
           p3(::testing::internal::forward<p3##_type>(gmock_p3)), \
           p4(::testing::internal::forward<p4##_type>(gmock_p4)) {}\
-      v.. return_type Perform(const args_type& args) {\
+      v.. return_type Perform(co.. args_type& args) {\
         return ::testing::internal::ActionHelper<return_type, gmock_Impl>::\
             Perform(this, args);\
       }\
@@ -1745,19 +1745,19 @@ _de.. ACTION_P5(name, p0, p1, p2, p3, p4)\
           typename arg3_type, typename arg4_type, typename arg5_type, \
           typename arg6_type, typename arg7_type, typename arg8_type, \
           typename arg9_type>\
-      return_type gmock_PerformImpl(const args_type& args, arg0_type arg0, \
+      return_type gmock_PerformImpl(co.. args_type& args, arg0_type arg0, \
           arg1_type arg1, arg2_type arg2, arg3_type arg3, arg4_type arg4, \
           arg5_type arg5, arg6_type arg6, arg7_type arg7, arg8_type arg8, \
-          arg9_type arg9) const;\
+          arg9_type arg9) co..;\
       p0##_type p0;\
       p1##_type p1;\
       p2##_type p2;\
       p3##_type p3;\
       p4##_type p4;\
-     private:\
+     pr..\
       GTEST_DISALLOW_ASSIGN_(gmock_Impl);\
     };\
-    template <typename F> operator ::testing::Action<F>() const {\
+    template <typename F> operator ::testing::Action<F>() co.. {\
       return ::testing::Action<F>(new gmock_Impl<F>(p0, p1, p2, p3, p4));\
     }\
     p0##_type p0;\
@@ -1765,7 +1765,7 @@ _de.. ACTION_P5(name, p0, p1, p2, p3, p4)\
     p2##_type p2;\
     p3##_type p3;\
     p4##_type p4;\
-   private:\
+   pr..\
     GTEST_DISALLOW_ASSIGN_(name##ActionP5);\
   };\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
@@ -1786,7 +1786,7 @@ _de.. ACTION_P5(name, p0, p1, p2, p3, p4)\
   typename ::testing::internal::Function<F>::Result\
       name##ActionP5<p0##_type, p1##_type, p2##_type, p3##_type, \
           p4##_type>::gmock_Impl<F>::gmock_PerformImpl(\
-          GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_) const
+          GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_) co..
 
 _de.. ACTION_P6(name, p0, p1, p2, p3, p4, p5)\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
@@ -1802,7 +1802,7 @@ _de.. ACTION_P6(name, p0, p1, p2, p3, p4, p5)\
         p4(::testing::internal::forward<p4##_type>(gmock_p4)), \
         p5(::testing::internal::forward<p5##_type>(gmock_p5)) {}\
     template <typename F>\
-    n.. gmock_Impl : public ::testing::ActionInterface<F> {\
+    n.. gmock_Impl : pu.. ::testing::ActionInterface<F> {\
      p..\
       typedef F function_type;\
       typedef typename ::testing::internal::Function<F>::Result return_type;\
@@ -1816,7 +1816,7 @@ _de.. ACTION_P6(name, p0, p1, p2, p3, p4, p5)\
           p3(::testing::internal::forward<p3##_type>(gmock_p3)), \
           p4(::testing::internal::forward<p4##_type>(gmock_p4)), \
           p5(::testing::internal::forward<p5##_type>(gmock_p5)) {}\
-      v.. return_type Perform(const args_type& args) {\
+      v.. return_type Perform(co.. args_type& args) {\
         return ::testing::internal::ActionHelper<return_type, gmock_Impl>::\
             Perform(this, args);\
       }\
@@ -1824,20 +1824,20 @@ _de.. ACTION_P6(name, p0, p1, p2, p3, p4, p5)\
           typename arg3_type, typename arg4_type, typename arg5_type, \
           typename arg6_type, typename arg7_type, typename arg8_type, \
           typename arg9_type>\
-      return_type gmock_PerformImpl(const args_type& args, arg0_type arg0, \
+      return_type gmock_PerformImpl(co.. args_type& args, arg0_type arg0, \
           arg1_type arg1, arg2_type arg2, arg3_type arg3, arg4_type arg4, \
           arg5_type arg5, arg6_type arg6, arg7_type arg7, arg8_type arg8, \
-          arg9_type arg9) const;\
+          arg9_type arg9) co..;\
       p0##_type p0;\
       p1##_type p1;\
       p2##_type p2;\
       p3##_type p3;\
       p4##_type p4;\
       p5##_type p5;\
-     private:\
+     pr..\
       GTEST_DISALLOW_ASSIGN_(gmock_Impl);\
     };\
-    template <typename F> operator ::testing::Action<F>() const {\
+    template <typename F> operator ::testing::Action<F>() co.. {\
       return ::testing::Action<F>(new gmock_Impl<F>(p0, p1, p2, p3, p4, p5));\
     }\
     p0##_type p0;\
@@ -1846,7 +1846,7 @@ _de.. ACTION_P6(name, p0, p1, p2, p3, p4, p5)\
     p3##_type p3;\
     p4##_type p4;\
     p5##_type p5;\
-   private:\
+   pr..\
     GTEST_DISALLOW_ASSIGN_(name##ActionP6);\
   };\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
@@ -1867,7 +1867,7 @@ _de.. ACTION_P6(name, p0, p1, p2, p3, p4, p5)\
   typename ::testing::internal::Function<F>::Result\
       name##ActionP6<p0##_type, p1##_type, p2##_type, p3##_type, p4##_type, \
           p5##_type>::gmock_Impl<F>::gmock_PerformImpl(\
-          GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_) const
+          GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_) co..
 
 _de.. ACTION_P7(name, p0, p1, p2, p3, p4, p5, p6)\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
@@ -1886,7 +1886,7 @@ _de.. ACTION_P7(name, p0, p1, p2, p3, p4, p5, p6)\
         p5(::testing::internal::forward<p5##_type>(gmock_p5)), \
         p6(::testing::internal::forward<p6##_type>(gmock_p6)) {}\
     template <typename F>\
-    n.. gmock_Impl : public ::testing::ActionInterface<F> {\
+    n.. gmock_Impl : pu.. ::testing::ActionInterface<F> {\
      p..\
       typedef F function_type;\
       typedef typename ::testing::internal::Function<F>::Result return_type;\
@@ -1901,7 +1901,7 @@ _de.. ACTION_P7(name, p0, p1, p2, p3, p4, p5, p6)\
           p4(::testing::internal::forward<p4##_type>(gmock_p4)), \
           p5(::testing::internal::forward<p5##_type>(gmock_p5)), \
           p6(::testing::internal::forward<p6##_type>(gmock_p6)) {}\
-      v.. return_type Perform(const args_type& args) {\
+      v.. return_type Perform(co.. args_type& args) {\
         return ::testing::internal::ActionHelper<return_type, gmock_Impl>::\
             Perform(this, args);\
       }\
@@ -1909,10 +1909,10 @@ _de.. ACTION_P7(name, p0, p1, p2, p3, p4, p5, p6)\
           typename arg3_type, typename arg4_type, typename arg5_type, \
           typename arg6_type, typename arg7_type, typename arg8_type, \
           typename arg9_type>\
-      return_type gmock_PerformImpl(const args_type& args, arg0_type arg0, \
+      return_type gmock_PerformImpl(co.. args_type& args, arg0_type arg0, \
           arg1_type arg1, arg2_type arg2, arg3_type arg3, arg4_type arg4, \
           arg5_type arg5, arg6_type arg6, arg7_type arg7, arg8_type arg8, \
-          arg9_type arg9) const;\
+          arg9_type arg9) co..;\
       p0##_type p0;\
       p1##_type p1;\
       p2##_type p2;\
@@ -1920,10 +1920,10 @@ _de.. ACTION_P7(name, p0, p1, p2, p3, p4, p5, p6)\
       p4##_type p4;\
       p5##_type p5;\
       p6##_type p6;\
-     private:\
+     pr..\
       GTEST_DISALLOW_ASSIGN_(gmock_Impl);\
     };\
-    template <typename F> operator ::testing::Action<F>() const {\
+    template <typename F> operator ::testing::Action<F>() co.. {\
       return ::testing::Action<F>(new gmock_Impl<F>(p0, p1, p2, p3, p4, p5, \
           p6));\
     }\
@@ -1934,7 +1934,7 @@ _de.. ACTION_P7(name, p0, p1, p2, p3, p4, p5, p6)\
     p4##_type p4;\
     p5##_type p5;\
     p6##_type p6;\
-   private:\
+   pr..\
     GTEST_DISALLOW_ASSIGN_(name##ActionP7);\
   };\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
@@ -1958,7 +1958,7 @@ _de.. ACTION_P7(name, p0, p1, p2, p3, p4, p5, p6)\
   typename ::testing::internal::Function<F>::Result\
       name##ActionP7<p0##_type, p1##_type, p2##_type, p3##_type, p4##_type, \
           p5##_type, p6##_type>::gmock_Impl<F>::gmock_PerformImpl(\
-          GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_) const
+          GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_) co..
 
 _de.. ACTION_P8(name, p0, p1, p2, p3, p4, p5, p6, p7)\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
@@ -1978,7 +1978,7 @@ _de.. ACTION_P8(name, p0, p1, p2, p3, p4, p5, p6, p7)\
         p6(::testing::internal::forward<p6##_type>(gmock_p6)), \
         p7(::testing::internal::forward<p7##_type>(gmock_p7)) {}\
     template <typename F>\
-    n.. gmock_Impl : public ::testing::ActionInterface<F> {\
+    n.. gmock_Impl : pu.. ::testing::ActionInterface<F> {\
      p..\
       typedef F function_type;\
       typedef typename ::testing::internal::Function<F>::Result return_type;\
@@ -1995,7 +1995,7 @@ _de.. ACTION_P8(name, p0, p1, p2, p3, p4, p5, p6, p7)\
           p5(::testing::internal::forward<p5##_type>(gmock_p5)), \
           p6(::testing::internal::forward<p6##_type>(gmock_p6)), \
           p7(::testing::internal::forward<p7##_type>(gmock_p7)) {}\
-      v.. return_type Perform(const args_type& args) {\
+      v.. return_type Perform(co.. args_type& args) {\
         return ::testing::internal::ActionHelper<return_type, gmock_Impl>::\
             Perform(this, args);\
       }\
@@ -2003,10 +2003,10 @@ _de.. ACTION_P8(name, p0, p1, p2, p3, p4, p5, p6, p7)\
           typename arg3_type, typename arg4_type, typename arg5_type, \
           typename arg6_type, typename arg7_type, typename arg8_type, \
           typename arg9_type>\
-      return_type gmock_PerformImpl(const args_type& args, arg0_type arg0, \
+      return_type gmock_PerformImpl(co.. args_type& args, arg0_type arg0, \
           arg1_type arg1, arg2_type arg2, arg3_type arg3, arg4_type arg4, \
           arg5_type arg5, arg6_type arg6, arg7_type arg7, arg8_type arg8, \
-          arg9_type arg9) const;\
+          arg9_type arg9) co..;\
       p0##_type p0;\
       p1##_type p1;\
       p2##_type p2;\
@@ -2015,10 +2015,10 @@ _de.. ACTION_P8(name, p0, p1, p2, p3, p4, p5, p6, p7)\
       p5##_type p5;\
       p6##_type p6;\
       p7##_type p7;\
-     private:\
+     pr..\
       GTEST_DISALLOW_ASSIGN_(gmock_Impl);\
     };\
-    template <typename F> operator ::testing::Action<F>() const {\
+    template <typename F> operator ::testing::Action<F>() co.. {\
       return ::testing::Action<F>(new gmock_Impl<F>(p0, p1, p2, p3, p4, p5, \
           p6, p7));\
     }\
@@ -2030,7 +2030,7 @@ _de.. ACTION_P8(name, p0, p1, p2, p3, p4, p5, p6, p7)\
     p5##_type p5;\
     p6##_type p6;\
     p7##_type p7;\
-   private:\
+   pr..\
     GTEST_DISALLOW_ASSIGN_(name##ActionP8);\
   };\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
@@ -2056,7 +2056,7 @@ _de.. ACTION_P8(name, p0, p1, p2, p3, p4, p5, p6, p7)\
       name##ActionP8<p0##_type, p1##_type, p2##_type, p3##_type, p4##_type, \
           p5##_type, p6##_type, \
           p7##_type>::gmock_Impl<F>::gmock_PerformImpl(\
-          GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_) const
+          GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_) co..
 
 _de.. ACTION_P9(name, p0, p1, p2, p3, p4, p5, p6, p7, p8)\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
@@ -2077,7 +2077,7 @@ _de.. ACTION_P9(name, p0, p1, p2, p3, p4, p5, p6, p7, p8)\
         p7(::testing::internal::forward<p7##_type>(gmock_p7)), \
         p8(::testing::internal::forward<p8##_type>(gmock_p8)) {}\
     template <typename F>\
-    n.. gmock_Impl : public ::testing::ActionInterface<F> {\
+    n.. gmock_Impl : pu.. ::testing::ActionInterface<F> {\
      p..\
       typedef F function_type;\
       typedef typename ::testing::internal::Function<F>::Result return_type;\
@@ -2095,7 +2095,7 @@ _de.. ACTION_P9(name, p0, p1, p2, p3, p4, p5, p6, p7, p8)\
           p6(::testing::internal::forward<p6##_type>(gmock_p6)), \
           p7(::testing::internal::forward<p7##_type>(gmock_p7)), \
           p8(::testing::internal::forward<p8##_type>(gmock_p8)) {}\
-      v.. return_type Perform(const args_type& args) {\
+      v.. return_type Perform(co.. args_type& args) {\
         return ::testing::internal::ActionHelper<return_type, gmock_Impl>::\
             Perform(this, args);\
       }\
@@ -2103,10 +2103,10 @@ _de.. ACTION_P9(name, p0, p1, p2, p3, p4, p5, p6, p7, p8)\
           typename arg3_type, typename arg4_type, typename arg5_type, \
           typename arg6_type, typename arg7_type, typename arg8_type, \
           typename arg9_type>\
-      return_type gmock_PerformImpl(const args_type& args, arg0_type arg0, \
+      return_type gmock_PerformImpl(co.. args_type& args, arg0_type arg0, \
           arg1_type arg1, arg2_type arg2, arg3_type arg3, arg4_type arg4, \
           arg5_type arg5, arg6_type arg6, arg7_type arg7, arg8_type arg8, \
-          arg9_type arg9) const;\
+          arg9_type arg9) co..;\
       p0##_type p0;\
       p1##_type p1;\
       p2##_type p2;\
@@ -2116,10 +2116,10 @@ _de.. ACTION_P9(name, p0, p1, p2, p3, p4, p5, p6, p7, p8)\
       p6##_type p6;\
       p7##_type p7;\
       p8##_type p8;\
-     private:\
+     pr..\
       GTEST_DISALLOW_ASSIGN_(gmock_Impl);\
     };\
-    template <typename F> operator ::testing::Action<F>() const {\
+    template <typename F> operator ::testing::Action<F>() co.. {\
       return ::testing::Action<F>(new gmock_Impl<F>(p0, p1, p2, p3, p4, p5, \
           p6, p7, p8));\
     }\
@@ -2132,7 +2132,7 @@ _de.. ACTION_P9(name, p0, p1, p2, p3, p4, p5, p6, p7, p8)\
     p6##_type p6;\
     p7##_type p7;\
     p8##_type p8;\
-   private:\
+   pr..\
     GTEST_DISALLOW_ASSIGN_(name##ActionP9);\
   };\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
@@ -2159,7 +2159,7 @@ _de.. ACTION_P9(name, p0, p1, p2, p3, p4, p5, p6, p7, p8)\
       name##ActionP9<p0##_type, p1##_type, p2##_type, p3##_type, p4##_type, \
           p5##_type, p6##_type, p7##_type, \
           p8##_type>::gmock_Impl<F>::gmock_PerformImpl(\
-          GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_) const
+          GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_) co..
 
 _de.. ACTION_P10(name, p0, p1, p2, p3, p4, p5, p6, p7, p8, p9)\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
@@ -2183,7 +2183,7 @@ _de.. ACTION_P10(name, p0, p1, p2, p3, p4, p5, p6, p7, p8, p9)\
         p8(::testing::internal::forward<p8##_type>(gmock_p8)), \
         p9(::testing::internal::forward<p9##_type>(gmock_p9)) {}\
     template <typename F>\
-    n.. gmock_Impl : public ::testing::ActionInterface<F> {\
+    n.. gmock_Impl : pu.. ::testing::ActionInterface<F> {\
      p..\
       typedef F function_type;\
       typedef typename ::testing::internal::Function<F>::Result return_type;\
@@ -2202,7 +2202,7 @@ _de.. ACTION_P10(name, p0, p1, p2, p3, p4, p5, p6, p7, p8, p9)\
           p7(::testing::internal::forward<p7##_type>(gmock_p7)), \
           p8(::testing::internal::forward<p8##_type>(gmock_p8)), \
           p9(::testing::internal::forward<p9##_type>(gmock_p9)) {}\
-      v.. return_type Perform(const args_type& args) {\
+      v.. return_type Perform(co.. args_type& args) {\
         return ::testing::internal::ActionHelper<return_type, gmock_Impl>::\
             Perform(this, args);\
       }\
@@ -2210,10 +2210,10 @@ _de.. ACTION_P10(name, p0, p1, p2, p3, p4, p5, p6, p7, p8, p9)\
           typename arg3_type, typename arg4_type, typename arg5_type, \
           typename arg6_type, typename arg7_type, typename arg8_type, \
           typename arg9_type>\
-      return_type gmock_PerformImpl(const args_type& args, arg0_type arg0, \
+      return_type gmock_PerformImpl(co.. args_type& args, arg0_type arg0, \
           arg1_type arg1, arg2_type arg2, arg3_type arg3, arg4_type arg4, \
           arg5_type arg5, arg6_type arg6, arg7_type arg7, arg8_type arg8, \
-          arg9_type arg9) const;\
+          arg9_type arg9) co..;\
       p0##_type p0;\
       p1##_type p1;\
       p2##_type p2;\
@@ -2224,10 +2224,10 @@ _de.. ACTION_P10(name, p0, p1, p2, p3, p4, p5, p6, p7, p8, p9)\
       p7##_type p7;\
       p8##_type p8;\
       p9##_type p9;\
-     private:\
+     pr..\
       GTEST_DISALLOW_ASSIGN_(gmock_Impl);\
     };\
-    template <typename F> operator ::testing::Action<F>() const {\
+    template <typename F> operator ::testing::Action<F>() co.. {\
       return ::testing::Action<F>(new gmock_Impl<F>(p0, p1, p2, p3, p4, p5, \
           p6, p7, p8, p9));\
     }\
@@ -2241,7 +2241,7 @@ _de.. ACTION_P10(name, p0, p1, p2, p3, p4, p5, p6, p7, p8, p9)\
     p7##_type p7;\
     p8##_type p8;\
     p9##_type p9;\
-   private:\
+   pr..\
     GTEST_DISALLOW_ASSIGN_(name##ActionP10);\
   };\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
@@ -2270,7 +2270,7 @@ _de.. ACTION_P10(name, p0, p1, p2, p3, p4, p5, p6, p7, p8, p9)\
       name##ActionP10<p0##_type, p1##_type, p2##_type, p3##_type, p4##_type, \
           p5##_type, p6##_type, p7##_type, p8##_type, \
           p9##_type>::gmock_Impl<F>::gmock_PerformImpl(\
-          GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_) const
+          GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_) co..
 
 n... testing {
 
@@ -2388,7 +2388,7 @@ R InvokeArgumentAdl(AdlTag, F f, A1 a1, A2 a2, A3 a3, A4 a4, A5 a5, A6 a6,
 }  // namespace internal
 
 ACTION_TEMPLATE(InvokeArgument,
-                HAS_1_TEMPLATE_PARAMS(int, k),
+                HAS_1_TEMPLATE_PARAMS(in., k),
                 AND_0_VALUE_PARAMS()) {
   using internal::invoke_argument::InvokeArgumentAdl;
   return InvokeArgumentAdl<return_type>(
@@ -2397,7 +2397,7 @@ ACTION_TEMPLATE(InvokeArgument,
 }
 
 ACTION_TEMPLATE(InvokeArgument,
-                HAS_1_TEMPLATE_PARAMS(int, k),
+                HAS_1_TEMPLATE_PARAMS(in., k),
                 AND_1_VALUE_PARAMS(p0)) {
   using internal::invoke_argument::InvokeArgumentAdl;
   return InvokeArgumentAdl<return_type>(
@@ -2406,7 +2406,7 @@ ACTION_TEMPLATE(InvokeArgument,
 }
 
 ACTION_TEMPLATE(InvokeArgument,
-                HAS_1_TEMPLATE_PARAMS(int, k),
+                HAS_1_TEMPLATE_PARAMS(in., k),
                 AND_2_VALUE_PARAMS(p0, p1)) {
   using internal::invoke_argument::InvokeArgumentAdl;
   return InvokeArgumentAdl<return_type>(
@@ -2415,7 +2415,7 @@ ACTION_TEMPLATE(InvokeArgument,
 }
 
 ACTION_TEMPLATE(InvokeArgument,
-                HAS_1_TEMPLATE_PARAMS(int, k),
+                HAS_1_TEMPLATE_PARAMS(in., k),
                 AND_3_VALUE_PARAMS(p0, p1, p2)) {
   using internal::invoke_argument::InvokeArgumentAdl;
   return InvokeArgumentAdl<return_type>(
@@ -2424,7 +2424,7 @@ ACTION_TEMPLATE(InvokeArgument,
 }
 
 ACTION_TEMPLATE(InvokeArgument,
-                HAS_1_TEMPLATE_PARAMS(int, k),
+                HAS_1_TEMPLATE_PARAMS(in., k),
                 AND_4_VALUE_PARAMS(p0, p1, p2, p3)) {
   using internal::invoke_argument::InvokeArgumentAdl;
   return InvokeArgumentAdl<return_type>(
@@ -2433,7 +2433,7 @@ ACTION_TEMPLATE(InvokeArgument,
 }
 
 ACTION_TEMPLATE(InvokeArgument,
-                HAS_1_TEMPLATE_PARAMS(int, k),
+                HAS_1_TEMPLATE_PARAMS(in., k),
                 AND_5_VALUE_PARAMS(p0, p1, p2, p3, p4)) {
   using internal::invoke_argument::InvokeArgumentAdl;
   return InvokeArgumentAdl<return_type>(
@@ -2442,7 +2442,7 @@ ACTION_TEMPLATE(InvokeArgument,
 }
 
 ACTION_TEMPLATE(InvokeArgument,
-                HAS_1_TEMPLATE_PARAMS(int, k),
+                HAS_1_TEMPLATE_PARAMS(in., k),
                 AND_6_VALUE_PARAMS(p0, p1, p2, p3, p4, p5)) {
   using internal::invoke_argument::InvokeArgumentAdl;
   return InvokeArgumentAdl<return_type>(
@@ -2451,7 +2451,7 @@ ACTION_TEMPLATE(InvokeArgument,
 }
 
 ACTION_TEMPLATE(InvokeArgument,
-                HAS_1_TEMPLATE_PARAMS(int, k),
+                HAS_1_TEMPLATE_PARAMS(in., k),
                 AND_7_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6)) {
   using internal::invoke_argument::InvokeArgumentAdl;
   return InvokeArgumentAdl<return_type>(
@@ -2460,7 +2460,7 @@ ACTION_TEMPLATE(InvokeArgument,
 }
 
 ACTION_TEMPLATE(InvokeArgument,
-                HAS_1_TEMPLATE_PARAMS(int, k),
+                HAS_1_TEMPLATE_PARAMS(in., k),
                 AND_8_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, p7)) {
   using internal::invoke_argument::InvokeArgumentAdl;
   return InvokeArgumentAdl<return_type>(
@@ -2469,7 +2469,7 @@ ACTION_TEMPLATE(InvokeArgument,
 }
 
 ACTION_TEMPLATE(InvokeArgument,
-                HAS_1_TEMPLATE_PARAMS(int, k),
+                HAS_1_TEMPLATE_PARAMS(in., k),
                 AND_9_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, p7, p8)) {
   using internal::invoke_argument::InvokeArgumentAdl;
   return InvokeArgumentAdl<return_type>(
@@ -2478,7 +2478,7 @@ ACTION_TEMPLATE(InvokeArgument,
 }
 
 ACTION_TEMPLATE(InvokeArgument,
-                HAS_1_TEMPLATE_PARAMS(int, k),
+                HAS_1_TEMPLATE_PARAMS(in., k),
                 AND_10_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9)) {
   using internal::invoke_argument::InvokeArgumentAdl;
   return InvokeArgumentAdl<return_type>(

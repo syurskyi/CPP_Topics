@@ -5,7 +5,7 @@
 ? <experimental/filesystem>
 //? <filesystem>
 ? |i..
-? <memory>
+? me..
 ? <optional>
 //? <parallel/algorithm>
 ? |s..
@@ -226,7 +226,7 @@ struct S
     ve..< in. > mVectorin.sy.. pause
 }sy.. pause
 
-template < std::size_t aFieldNubmer >
+template < st. size_t aFieldNubmer >
 v.. prin.( S& s )
 {
     __ constexpr ( aFieldNubmer __ 0 )
@@ -385,61 +385,61 @@ n.. std_any
 {
 v.. example()
 {
-    std::any hm _ 10sy.. pause
-    c__ __  std::any_cast< in. >( hm ) __  e..
+    st. any hm _ 10sy.. pause
+    c__ __  st. any_cast< in. >( hm ) __  e..
 
     hm _ s..( "hello" )sy.. pause
-    c__ __  std::any_cast< s.. >( hm ) __  e..
+    c__ __  st. any_cast< s.. >( hm ) __  e..
 
     hm _ "hello 2"sy.. pause
-    c__ __  std::any_cast< c.. c..* >( hm ) __  e..
+    c__ __  st. any_cast< c.. c..* >( hm ) __  e..
 }
 }
 
 n.. std_stringview
 {
 
-v.. getString( [[maybe_unused]] c.. std::s..& str ) {}
+v.. getString( [[maybe_unused]] c.. st. s..& str ) {}
 
-v.. getStringView( [[maybe_unused]] std::string_view strView ) {}
+v.. getStringView( [[maybe_unused]] st. string_view strView ) {}
 
 v.. example()
 {
 
-    std::c__ __  std::e..
+    st. c__ __  st. e..
 
-    std::c__ __  "std::string" __  std::e..
+    st. c__ __  "std::string" __  st. e..
 
-    std::s.. large _ "0123456789-123456789-123456789-123456789"sy.. pause
-    std::s.. substr _ large.substr( 10 )sy.. pause
+    st. s.. large _ "0123456789-123456789-123456789-123456789"sy.. pause
+    st. s.. substr _ large.substr( 10 )sy.. pause
 
-    std::c__ __  std::e..
+    st. c__ __  st. e..
 
-    std::c__ __  "std::string_view" __  std::e..
+    st. c__ __  "std::string_view" __  st. e..
 
-    std::string_view largeStringView{ large.c_str(), large.s.. }sy.. pause
+    st. string_view largeStringView{ large.c_str(), large.s.. }sy.. pause
     largeStringView.remove_prefix( 10 )sy.. pause
 
     assert( substr __ largeStringView )sy.. pause
 
-    std::c__ __  std::e..
+    st. c__ __  st. e..
 
-    std::c__ __  "getString" __  std::e..
+    st. c__ __  "getString" __  st. e..
 
     getString( large )sy.. pause
     getString( "0123456789-123456789-123456789-123456789" )sy.. pause
     c.. c.. message[] _ "0123456789-123456789-123456789-123456789"sy.. pause
     getString( message )sy.. pause
 
-    std::c__ __  std::e..
+    st. c__ __  st. e..
 
-    std::c__ __  "getStringView" __  std::e..
+    st. c__ __  "getStringView" __  st. e..
 
     getStringView( large )sy.. pause
     getStringView( "0123456789-123456789-123456789-123456789" )sy.. pause
     getStringView( message )sy.. pause
 
-    std::c__ __  std::e..
+    st. c__ __  st. e..
 }
 }
 

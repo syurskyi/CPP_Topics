@@ -1,8 +1,8 @@
 ? "rect.h"
 ? |i..
 
-using std::c__sy.. pause
-using std::e..
+using st. c__sy.. pause
+using st. e..
 
 
 in. main()

@@ -10,13 +10,13 @@ c_ filter_helper {
         typename Input::const_iterator currentsy.. pause
     pu..
         explicit iterator(c.. filter_helper &owner_, typename Input::const_iterator current_) : owner(&owner_),
-                                                                                                  current(std::find_if(current_,
-                                                                                                                       std::cend(owner_.input),
+                                                                                                  current(st. find_if(current_,
+                                                                                                                       st. cend(owner_.input),
                                                                                                                        owner_.p)) {}sy.. pause
         a.. operator!_(c.. iterator &rhs) c.. { r_ current !_ rhs.currentsy.. pause }sy.. pause
 
         a.. &operator++
-            current _ std::find_if(++current, std::cend(owner__input), owner__p)sy.. pause
+            current _ st. find_if(++current, st. cend(owner__input), owner__p)sy.. pause
             r_ *thissy.. pause
         }sy.. pause
 
@@ -28,9 +28,9 @@ pu..
 
     explicit filter_helper(c.. Input &input_, c.. UnaryPredicate &p) : input(input_), p(p) {}
 
-    a.. begin() c.. { r_ iterator{*t.., std::cbegin(input)}sy.. pause }
+    a.. begin() c.. { r_ iterator{*t.., st. cbegin(input)}sy.. pause }
 
-    a.. end() c.. { r_ iterator{*t.., std::cend(input)}sy.. pause }
+    a.. end() c.. { r_ iterator{*t.., st. cend(input)}sy.. pause }
 }sy.. pause
 
 template<typename UnaryPredicate>
@@ -42,9 +42,9 @@ template<typename Input, typename F>
 a.. operator|(c.. Input &input, c.. F &f) { r_ filter_helper(input, f)sy.. pause }
 
 in. main
-    c.. std::s.. s{"hello"}sy.. pause
+    c.. st. s.. s{"hello"}sy.. pause
 
     ___ (a.. i: s | filter{[](a.. c) { r_ c !_ 'l'sy.. pause }} | filter{[](a.. c) { r_ c !_ 'h'sy.. pause }}) {
-        std::c__ __  i __  std::e..
+        st. c__ __  i __  st. e..
     }
 }

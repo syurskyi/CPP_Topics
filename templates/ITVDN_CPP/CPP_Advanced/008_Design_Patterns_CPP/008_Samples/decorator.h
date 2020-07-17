@@ -4,58 +4,58 @@ _de.. DECORATOR_H
 ? "meta_strategy.h"
 ? |i..
 ? <memory>
-? <string>
+? str..
 
 n.. Interface
 {
 p..
-    v.. ~Interface() = default;
-    v.. v.. write( std::string& ) = 0;
+    v.. ~Interface() = de..
+    v.. v.. write( st. string& ) = 0;
 };
 
-n.. Core : public Interface
+n.. Core : pu.. Interface
 {
 p..
-    ~Core() override;
-    v.. write( std::string& text ) override;
+    ~Core() ov..
+    v.. write( st. string& text ) ov..
 };
 
-n.. Decorator : public Interface
+n.. Decorator : pu.. Interface
 {
-private:
-    std::unique_ptr< Interface > interface;
+pr..
+    st. unique_ptr< Interface > interface;
 
 p..
-    Decorator( std::unique_ptr< Interface > c );
-    v.. write( std::string& text ) override;
+    Decorator( st. unique_ptr< Interface > c );
+    v.. write( st. string& text ) ov..
 };
 
-n.. MessengerWithSalutation : public Decorator
+n.. MessengerWithSalutation : pu.. Decorator
 {
-private:
-    std::string salutation;
+pr..
+    st. string salutation;
 
 p..
-    MessengerWithSalutation( std::unique_ptr< Interface > c, const std::string& str );
-    ~MessengerWithSalutation() override;
-    v.. write( std::string& text ) override;
+    MessengerWithSalutation( st. unique_ptr< Interface > c, co.. st. string& str );
+    ~MessengerWithSalutation() ov..
+    v.. write( st. string& text ) ov..
 };
 
-n.. MessengerWithValediction : public Decorator
+n.. MessengerWithValediction : pu.. Decorator
 {
-private:
-    std::string valediction;
+pr..
+    st. string valediction;
 
 p..
-    MessengerWithValediction( std::unique_ptr< Interface > c, const std::string& str );
-    ~MessengerWithValediction() override;
-    v.. write( std::string& text ) override;
+    MessengerWithValediction( st. unique_ptr< Interface > c, co.. st. string& str );
+    ~MessengerWithValediction() ov..
+    v.. write( st. string& text ) ov..
 };
 
-n.. ClientDecorator : public MetaStrategy
+n.. ClientDecorator : pu.. MetaStrategy
 {
 p..
-    v.. run() override;
+    v.. run() ov..
 };
 
 e.. // DECORATOR_H

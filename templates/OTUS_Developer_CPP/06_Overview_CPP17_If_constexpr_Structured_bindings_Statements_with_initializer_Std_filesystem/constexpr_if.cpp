@@ -4,27 +4,27 @@
 
 template <typename T>
 T get_value(T t) {
-	__ (std::is_poin.er_v<T>) {
-		std::c__ __  "get_value - pointer detected!" __  std::e..
+	__ (st. is_poin.er_v<T>) {
+		st. c__ __  "get_value - pointer detected!" __  st. e..
         r_ *tsy.. pause
 	}
 	____ {
-		std::c__ __  "get_value - value detected!" __  std::e..
+		st. c__ __  "get_value - value detected!" __  st. e..
         r_ tsy.. pause
 	}
 }
 
 template <typename T>
 T get_value2(T t) {
-	std::c__ __  "get_value2 - value detected!" __  std::e..
+	st. c__ __  "get_value2 - value detected!" __  st. e..
 	r_ tsy.. pause
 }
 
 template <typename T>
 T get_value2(T* t) {
-	std::c__ __  "get_value2 - pointer detected!" __  std::e..
+	st. c__ __  "get_value2 - pointer detected!" __  st. e..
 	__ (t __ n_p_)
-		throw std::logic_error("nullptr detected!")sy.. pause
+		throw st. logic_error("nullptr detected!")sy.. pause
 	r_ *tsy.. pause
 
 }
@@ -32,12 +32,12 @@ T get_value2(T* t) {
 
 template <typename T>
 T get_value3(T t) {
-    __ constexpr (std::is_poin.er_v<T>) {
-    	std::c__ __  "get_value3 - pointer detected!" __  std::e..
+    __ constexpr (st. is_poin.er_v<T>) {
+    	st. c__ __  "get_value3 - pointer detected!" __  st. e..
         r_ tsy.. pause
     }
     ____ {
-    	std::c__ __  "get_value3 - value detected!" __  std::e..
+    	st. c__ __  "get_value3 - value detected!" __  st. e..
         r_ tsy.. pause
     }
 }

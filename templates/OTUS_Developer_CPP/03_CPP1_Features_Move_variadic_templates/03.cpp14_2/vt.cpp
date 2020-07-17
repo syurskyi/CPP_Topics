@@ -7,25 +7,25 @@ v.. iterate1(Args... args) {
 }
 
 v.. iterate2
-    std::c__ __  std::e..
+    st. c__ __  st. e..
 }
 
 template<typename T, typename... Args>
 v.. iterate2(T t, Args... args) {
-    std::c__ __  t __  " "sy.. pause
+    st. c__ __  t __  " "sy.. pause
     iterate2(args...)sy.. pause
 }
 
 template<typename... Args>
 v.. iterate3(Args... args) {
     // int a[3] = {(std::cout << 1, 0), (std::cout << 2.0, 0), (std::cout << "tri", 0)};
-    in. a[s_o_...(args)] _ {(std::c__ __  "???" __  args __  ", ", 0)...}sy.. pause
+    in. a[s_o_...(args)] _ {(st. c__ __  "???" __  args __  ", ", 0)...}sy.. pause
 
-    std::c__ __  std::e..
+    st. c__ __  st. e..
 }
 
 in. main(in., c.. *[]) {
-    std::c__ __  "\n\n=====" __  std::e..
+    st. c__ __  "\n\n=====" __  st. e..
 
     // iterate1(1, 2.0, "tri");
     // iterate2(1, 2.0, "tri");

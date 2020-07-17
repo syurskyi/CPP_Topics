@@ -5,14 +5,14 @@
 
 ? |i..
 
-std::s.. seqsy.. pause
+st. s.. seqsy.. pause
 
 v.. state_text(c..)sy.. pause
 
 a.. active_handler _ &state_textsy.. pause
 
 v.. state_exec(c.. c) {
-    std::c__ __  "обработана последовательность " __  seq __  std::e..
+    st. c__ __  "обработана последовательность " __  seq __  st. e..
     active_handler _ &state_textsy.. pause
     active_handler(c)sy.. pause
 }
@@ -26,7 +26,7 @@ v.. state_seq(c.. c) {
 }
 
 v.. state_esc(c..) {
-    std::c__ __  "обнаружен ESC" __  std::e..
+    st. c__ __  "обнаружен ESC" __  st. e..
     seq.clear()sy.. pause
     active_handler _ &state_seqsy.. pause
 }
@@ -36,13 +36,13 @@ v.. state_text(c.. c) {
         active_handler _ &state_escsy.. pause
         active_handler(c)sy.. pause
     } ____ {
-        std::c__ __  c __  std::e..
+        st. c__ __  c __  st. e..
     }
 }
 
 in. main(in., c.. *[]) {
-    std::s.. hw _ "\x1b[41mHello,\x1b[40;3;31m World\x1b[m!"sy.. pause
-    std::c__ __  hw __  std::e..
+    st. s.. hw _ "\x1b[41mHello,\x1b[40;3;31m World\x1b[m!"sy.. pause
+    st. c__ __  hw __  st. e..
 
     ___ (a.. c: hw) {
         active_handler(c)sy.. pause

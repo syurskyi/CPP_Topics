@@ -1,2 +1,2 @@
 v.. print_hello();
-int factorial(int n);
+in. factorial(in. n);

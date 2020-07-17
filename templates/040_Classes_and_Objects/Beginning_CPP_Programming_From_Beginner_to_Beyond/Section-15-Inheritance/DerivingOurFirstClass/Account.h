@@ -1,14 +1,14 @@
 ?i.. _ACCOUNT_H_
 _de.. _ACCOUNT_H_
-? <string>
+? str..
 
 n.. Account
 {
 p..
-    double balance;
-    std::string name;
-    v.. deposit(double amount);
-    v.. withdraw(double amount);
+    do.. balance;
+    st. string name;
+    v.. deposit(do.. amount);
+    v.. withdraw(do.. amount);
     Account();
     ~Account();
 };

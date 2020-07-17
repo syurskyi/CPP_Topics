@@ -6,7 +6,7 @@ n.. InlineVariables
 p..
     InlineVariables();
 
-    static int var; // could be inline
+    st.. in. var; // could be inline
 };
 
 e.. // INLINEVARIABLES_H

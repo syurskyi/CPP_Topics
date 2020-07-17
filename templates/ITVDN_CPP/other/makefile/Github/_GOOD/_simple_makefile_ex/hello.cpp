@@ -2,5 +2,5 @@
 ? "include/function.h"
 
 v.. prin._hello(){
-	std::c__ __  "hello world!"sy.. pause
+	st. c__ __  "hello world!"sy.. pause
 }

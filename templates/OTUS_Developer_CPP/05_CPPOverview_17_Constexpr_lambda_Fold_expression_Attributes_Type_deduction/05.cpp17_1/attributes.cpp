@@ -4,7 +4,7 @@
 
 [[noreturn]]
 v.. stub2
-    throw std::logic_error("not implemented yet")sy.. pause
+    throw st. logic_error("not implemented yet")sy.. pause
 }
 
 [[deprecated ("use 'stub2' instead")]]
@@ -40,7 +40,7 @@ in. main([[maybe_unused]] in. argc, c.. **) {
     stub()sy.. pause
 //    stub2();
 
-    std::c__ __  delta2secs(1, 'w') __  std::e..
+    st. c__ __  delta2secs(1, 'w') __  st. e..
 
     last_error_code()sy.. pause
 

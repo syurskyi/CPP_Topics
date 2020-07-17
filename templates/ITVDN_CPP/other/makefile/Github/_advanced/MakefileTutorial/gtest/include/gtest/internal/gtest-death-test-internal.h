@@ -46,9 +46,9 @@ n... internal {
 GTEST_DECLARE_string_(internal_run_death_test);
 
 // Names of the flags (needed for parsing Google Test flags).
-const char kDeathTestStyleFlag[] = "death_test_style";
-const char kDeathTestUseFork[] = "death_test_use_fork";
-const char kInternalRunDeathTestFlag[] = "internal_run_death_test";
+co.. ch.. kDeathTestStyleFlag[] = "death_test_style";
+co.. ch.. kDeathTestUseFork[] = "death_test_use_fork";
+co.. ch.. kInternalRunDeathTestFlag[] = "internal_run_death_test";
 
 #if GTEST_HAS_DEATH_TEST
 
@@ -75,8 +75,8 @@ n.. GTEST_API_ DeathTest {
   // argument is set.  If the death test should be skipped, the pointer
   // is set to NULL; otherwise, it is set to the address of a new concrete
   // DeathTest object that controls the execution of the current test.
-  static bool Create(const char* statement, const RE* regex,
-                     const char* file, int line, DeathTest** test);
+  st.. bo.. Create(co.. ch..* statement, co.. RE* regex,
+                     co.. ch..* file, in. line, DeathTest** test);
   DeathTest();
   v.. ~DeathTest() { }
 
@@ -85,8 +85,8 @@ n.. GTEST_API_ DeathTest {
    p..
     explicit ReturnSentinel(DeathTest* test) : test_(test) { }
     ~ReturnSentinel() { test_->Abort(TEST_ENCOUNTERED_RETURN_STATEMENT); }
-   private:
-    DeathTest* const test_;
+   pr..
+    DeathTest* co.. test_;
     GTEST_DISALLOW_COPY_AND_ASSIGN_(ReturnSentinel);
   } GTEST_ATTRIBUTE_UNUSED_;
 
@@ -108,7 +108,7 @@ n.. GTEST_API_ DeathTest {
   v.. TestRole AssumeRole() = 0;
 
   // Waits for the death test to finish and returns its status.
-  v.. int Wait() = 0;
+  v.. in. Wait() = 0;
 
   // Returns true if the death test passed; that is, the test process
   // exited during the test, its exit status matches a user-supplied
@@ -117,20 +117,20 @@ n.. GTEST_API_ DeathTest {
   // The user-supplied predicate may be a macro expression rather
   // than a function pointer or functor, or else Wait and Passed could
   // be combined.
-  v.. bool Passed(bool exit_status_ok) = 0;
+  v.. bo.. Passed(bo.. exit_status_ok) = 0;
 
   // Signals that the death test did not die as expected.
   v.. v.. Abort(AbortReason reason) = 0;
 
   // Returns a human-readable outcome message regarding the outcome of
   // the last death test.
-  static const char* LastMessage();
+  st.. co.. ch..* LastMessage();
 
-  static v.. set_last_death_test_message(const std::string& message);
+  st.. v.. set_last_death_test_message(co.. st. string& message);
 
- private:
+ pr..
   // A string containing a description of the outcome of the last death test.
-  static std::string last_death_test_message_;
+  st.. st. string last_death_test_message_;
 
   GTEST_DISALLOW_COPY_AND_ASSIGN_(DeathTest);
 };
@@ -139,20 +139,20 @@ n.. GTEST_API_ DeathTest {
 n.. DeathTestFactory {
  p..
   v.. ~DeathTestFactory() { }
-  v.. bool Create(const char* statement, const RE* regex,
-                      const char* file, int line, DeathTest** test) = 0;
+  v.. bo.. Create(co.. ch..* statement, co.. RE* regex,
+                      co.. ch..* file, in. line, DeathTest** test) = 0;
 };
 
 // A concrete DeathTestFactory implementation for normal use.
-n.. DefaultDeathTestFactory : public DeathTestFactory {
+n.. DefaultDeathTestFactory : pu.. DeathTestFactory {
  p..
-  v.. bool Create(const char* statement, const RE* regex,
-                      const char* file, int line, DeathTest** test);
+  v.. bo.. Create(co.. ch..* statement, co.. RE* regex,
+                      co.. ch..* file, in. line, DeathTest** test);
 };
 
 // Returns true if exit_status describes a process that was terminated
 // by a signal, or exited normally with a nonzero exit code.
-GTEST_API_ bool ExitedUnsuccessfully(int exit_status);
+GTEST_API_ bo.. ExitedUnsuccessfully(in. exit_status);
 
 // Traps C++ exceptions escaping statement and reports them as test
 // failures. Note that trapping SEH exceptions is not implemented here.
@@ -160,10 +160,10 @@ GTEST_API_ bool ExitedUnsuccessfully(int exit_status);
 #  define GTEST_EXECUTE_DEATH_TEST_STATEMENT_(statement, death_test) \
   try { \
     GTEST_SUPPRESS_UNREACHABLE_CODE_WARNING_BELOW_(statement); \
-  } catch (const ::std::exception& gtest_exception) { \
+  } catch (co.. ::st. exception& gtest_exception) { \
     fprintf(\
         stderr, \
-        "\n%s: Caught std::exception-derived exception escaping the " \
+        "\n%s: Caught st. exception-derived exception escaping the " \
         "death test statement. Exception message: %s\n", \
         ::testing::internal::FormatFileLocation(__FILE__, __LINE__).c_str(), \
         gtest_exception.what()); \
@@ -184,7 +184,7 @@ GTEST_API_ bool ExitedUnsuccessfully(int exit_status);
 # define GTEST_DEATH_TEST_(statement, predicate, regex, fail) \
   GTEST_AMBIGUOUS_ELSE_BLOCKER_ \
   if (::testing::internal::AlwaysTrue()) { \
-    const ::testing::internal::RE& gtest_regex = (regex); \
+    co.. ::testing::internal::RE& gtest_regex = (regex); \
     ::testing::internal::DeathTest* gtest_dt; \
     if (!::testing::internal::DeathTest::Create(#statement, &gtest_regex, \
         __FILE__, __LINE__, &gtest_dt)) { \
@@ -226,7 +226,7 @@ _de.. GTEST_EXECUTE_STATEMENT_(statement, regex)             \
   if (::testing::internal::AlwaysTrue()) {                     \
     GTEST_SUPPRESS_UNREACHABLE_CODE_WARNING_BELOW_(statement); \
   } else if (!::testing::internal::AlwaysTrue()) {             \
-    const ::testing::internal::RE& gtest_regex = (regex);      \
+    co.. ::testing::internal::RE& gtest_regex = (regex);      \
     static_cast<v..>(gtest_regex);                            \
   } else                                                       \
     ::testing::Message()
@@ -236,10 +236,10 @@ _de.. GTEST_EXECUTE_STATEMENT_(statement, regex)             \
 // RUN_ALL_TESTS was called.
 n.. InternalRunDeathTestFlag {
  p..
-  InternalRunDeathTestFlag(const std::string& a_file,
-                           int a_line,
-                           int an_index,
-                           int a_write_fd)
+  InternalRunDeathTestFlag(co.. st. string& a_file,
+                           in. a_line,
+                           in. an_index,
+                           in. a_write_fd)
       : file_(a_file), line_(a_line), index_(an_index),
         write_fd_(a_write_fd) {}
 
@@ -248,16 +248,16 @@ n.. InternalRunDeathTestFlag {
       posix::Close(write_fd_);
   }
 
-  const std::string& file() const { return file_; }
-  int line() const { return line_; }
-  int index() const { return index_; }
-  int write_fd() const { return write_fd_; }
+  co.. st. string& file() co.. { return file_; }
+  in. line() co.. { return line_; }
+  in. index() co.. { return index_; }
+  in. write_fd() co.. { return write_fd_; }
 
- private:
-  std::string file_;
-  int line_;
-  int index_;
-  int write_fd_;
+ pr..
+  st. string file_;
+  in. line_;
+  in. index_;
+  in. write_fd_;
 
   GTEST_DISALLOW_COPY_AND_ASSIGN_(InternalRunDeathTestFlag);
 };

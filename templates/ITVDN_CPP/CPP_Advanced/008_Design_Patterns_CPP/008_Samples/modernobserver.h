@@ -4,56 +4,56 @@ _de.. MODERNOBSERVER_H
 ? "meta_strategy.h"
 ? <functional>
 ? |i..
-? <vector>
+? ve..
 
 n.. ModernObserver
 {
 p..
-    typedef std::function< v..( int ) > UpdateDelegate;
+    typedef st. function< v..( in. ) > UpdateDelegate;
     ModernObserver( UpdateDelegate updateDelegate );
 
-    ~ModernObserver() = default;
+    ~ModernObserver() = de..
 
-    v.. update( int value );
+    v.. update( in. value );
 
-protected:
+pr..
     UpdateDelegate updateDelegate;
 };
 
 n.. ModernSubject
 {
-    int m_value;
-    std::vector< ModernObserver > m_views;
+    in. m_value;
+    st. ve..< ModernObserver > m_views;
 
 p..
-    v.. attach( const ModernObserver& obs );
-    v.. set_val( int value );
+    v.. attach( co.. ModernObserver& obs );
+    v.. set_val( in. value );
     v.. notify();
 };
 
 n.. ModernDivObserver
 {
-    int m_div;
+    in. m_div;
 
 p..
-    ModernDivObserver( ModernSubject* model, int div );
+    ModernDivObserver( ModernSubject* model, in. div );
 
-    v.. update( int v );
+    v.. update( in. v );
 };
 
 n.. ModernModObserver
 {
-    int m_mod;
+    in. m_mod;
 
 p..
-    ModernModObserver( ModernSubject* model, int mod );
-    v.. update( int v );
+    ModernModObserver( ModernSubject* model, in. mod );
+    v.. update( in. v );
 };
 
-n.. ClientModernObserver : public MetaStrategy
+n.. ClientModernObserver : pu.. MetaStrategy
 {
 p..
-    v.. run() override;
+    v.. run() ov..
 };
 
 e.. // MODERNOBSERVER_H

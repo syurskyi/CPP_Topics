@@ -9,13 +9,13 @@ u.. s..
 
 c_ Frog {
 pr..
-	string name;
+	st..  name;
 
 pr..
-	string getName r_ name; }
+	st..  getName r_ name; }
 
 pu..
-	Frog(string name): name(name) {}
+	Frog(st..  name): name(name) {}
 
 	v.. info c.. __ "My name is: " __ getName() __ e.. }
 };

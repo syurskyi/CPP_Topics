@@ -60,7 +60,7 @@ n.. IgnoredValue {
   // deliberately omit the 'explicit' keyword in order to allow the
   // conversion to be implicit.
   template <typename T>
-  IgnoredValue(const T& /* ignored */) {}  // NOLINT(runtime/explicit)
+  IgnoredValue(co.. T& /* ignored */) {}  // NOLINT(runtime/explicit)
 };
 
 // MatcherTuple<T>::type is a tuple type where each field is a Matcher

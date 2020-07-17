@@ -14,7 +14,7 @@ _de.. PERSON_H_
 u... s..
 
 n.. Person {
-private:
+pr..
 	string name;
 
 p..

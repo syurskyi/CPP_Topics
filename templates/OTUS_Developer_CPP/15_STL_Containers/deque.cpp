@@ -6,9 +6,9 @@
 
 in. main
     // через два указателя
-    std::deque<in.> vsy.. pause // std::vector<std::vector<int>>
+    st. deque<in.> vsy.. pause // std::vector<std::vector<int>>
     ___ (a.. i: v) {
-        std::c__ __  i __  std::e..
+        st. c__ __  i __  st. e..
     }
 
     v _ {3, 2, 1, 0, -1, -2, -3}sy.. pause
@@ -17,36 +17,36 @@ in. main
     // vs?
     v.push_front(5)sy.. pause
     ___ (a.. i: v) {
-        std::c__ __  i __  " "sy.. pause
+        st. c__ __  i __  " "sy.. pause
     }
-    std::c__ __  std::e..
+    st. c__ __  st. e..
 
 
     // один чанк не меньше 16 элементов и не менее 4k суммарно
-    std::deque<xray::object, xray::allocator<xray::object__ xraysy.. pause
+    st. deque<xray::object, xray::allocator<xray::object__ xraysy.. pause
     ___ (a.. i _ 0usy.. pause i < 17sy.. pause ++i) {
         xray.emplace_back(i)sy.. pause
-        std::c__ __  "---" __  std::e..
+        st. c__ __  "---" __  st. e..
     }
 
-    std::c__ __  "===" __  std::e..
+    st. c__ __  "===" __  st. e..
 
     xray.emplace_front(100)sy.. pause
-    std::c__ __  "---" __  std::e..
+    st. c__ __  "---" __  st. e..
 
     xray.emplace_front(101)sy.. pause
-    std::c__ __  "===" __  std::e..
+    st. c__ __  "===" __  st. e..
 
     a.. i _ xray.begin()sy.. pause
-    std::advance(i, 10)sy.. pause
+    st. advance(i, 10)sy.. pause
     xray.emplace(i, 200)sy.. pause
-    std::c__ __  "---" __  std::e..
+    st. c__ __  "---" __  st. e..
     xray.emplace(i, 201)sy.. pause
-    std::c__ __  "===" __  std::e..
+    st. c__ __  "===" __  st. e..
 
     ___(c.. a.. &i: xray)
     {
-        std::c__ __  i.value() __  " "sy.. pause
+        st. c__ __  i.value() __  " "sy.. pause
     }
-    std::c__ __  std::e..
+    st. c__ __  st. e..
 }

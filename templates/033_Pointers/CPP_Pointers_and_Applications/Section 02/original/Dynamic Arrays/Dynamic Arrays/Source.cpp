@@ -3,7 +3,7 @@
 
 v.. Print(in. *p, in. size) {
 	___ (in. i = 0; i < size; ++i) {
-		std::c.. __ p[i] __ ' ';
+		st. c.. __ p[i] __ ' ';
 	}
 }
 
@@ -12,7 +12,7 @@ in. main
 	
 	in. *pTemp = new in.[5 + 5];
 
-	std::copy(p, p + 5, pTemp);
+	st. copy(p, p + 5, pTemp);
 
 	delete[]p;
 	p = pTemp;

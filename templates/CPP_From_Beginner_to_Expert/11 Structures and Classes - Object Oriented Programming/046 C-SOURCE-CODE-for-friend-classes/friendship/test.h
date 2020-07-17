@@ -4,16 +4,16 @@ n.. B;
 
 n.. A
 {
-        int secondtmnp;
+        in. secondtmnp;
     p..
-        v.. setSecretValue(B &, int);
+        v.. setSecretValue(B &, in.);
 };
 n.. B
 {
         friend n.. A;
-        int secretValue;
+        in. secretValue;
     p..
-        int getSecretValue() { return secretValue; }
+        in. getSecretValue() { return secretValue; }
 };
 
 e.. // TEST_H_INCLUDED

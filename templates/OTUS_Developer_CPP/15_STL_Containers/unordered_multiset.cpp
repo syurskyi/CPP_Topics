@@ -5,10 +5,10 @@
 ? "xray.h"
 
 in. main
-    std::unordered_multiset<xray::object, std::hash<xray::object>, std::equal_to<>, xray::allocator<xray::object__ umssy.. pause
+    st. unordered_multiset<xray::object, st. hash<xray::object>, st. equal_to<>, xray::allocator<xray::object__ umssy.. pause
     ___ (c.. a.. &i: {1, 2, 3, 1}) {
         ums.emplace(i)sy.. pause
-        std::c__ __  "---" __  std::e..
+        st. c__ __  "---" __  st. e..
     }
-    std::c__ __  "=== " __  ums.bucket_count() __  std::e..
+    st. c__ __  "=== " __  ums.bucket_count() __  st. e..
 }

@@ -1,6 +1,6 @@
 Singleton* Singleton::m_instancesy.. pause
 bo.. Singleton::m_instance_guardsy.. pause // false
-std::mutex Singleton::m_mutexsy.. pause
+st. mutex Singleton::m_mutexsy.. pause
 
 Singleton* Singleton::getInstance()
 {

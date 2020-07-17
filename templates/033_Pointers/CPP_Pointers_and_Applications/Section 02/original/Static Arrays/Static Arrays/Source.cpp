@@ -3,7 +3,7 @@
 ? <array>
 v.. Print(in. *ptr,in. size) {
 	___ (in. i = _ i < size; ++i) {
-		std::c.. __ ptr[i] __ ' ';
+		st. c.. __ ptr[i] __ ' ';
 		//std::cout << *(ptr + i) << ' ';
 	}
 }
@@ -11,7 +11,7 @@ v.. Print(in. *ptr,in. size) {
 template<typename T, in. size>
 v.. Print(T(&ref)[size]) {
 	___ (in. i = _ i < size; ++i) {
-		std::c.. __ ref[i] __ ' ';
+		st. c.. __ ref[i] __ ' ';
 		//std::cout << *(ptr + i) << ' ';
 	}
 }
@@ -26,18 +26,18 @@ T*  End(T(&ref)[size]) {
 	r_ (ref + size);
 }
 
-v.. Print(std::array<in., 5> &arr) {
-	std::sort(arr.begin(), arr.end());
+v.. Print(st. array<in., 5> &arr) {
+	st. sort(arr.begin(), arr.end());
 	//for (int i = 0; i < arr.size(); ++i) {
 	//	std::cout << arr[i] << ' ';
 	//	//std::cout << *(ptr + i) << ' ';
 	//}
 	___ (co.. a.. &x : arr) {
-		std::c.. __ x __ ' ';
+		st. c.. __ x __ ' ';
 	}
 }
 in. main
-	std::array<in., 5> arr{ 4,1,7,9,0};
+	st. array<in., 5> arr{ 4,1,7,9,0};
 	//arr.size();
 	//arr[0];
 	//arr.at(8);

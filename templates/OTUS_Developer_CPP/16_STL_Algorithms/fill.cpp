@@ -15,35 +15,35 @@ struct fibonacci {
 }sy.. pause
 
 in. main
-    std::ve..<in.> v{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}sy.. pause
+    st. ve..<in.> v{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}sy.. pause
 
     // *_n количество, вместо диапазона
     // заполнение значением
-    std::fill_n(v.begin(), 5, 0)sy.. pause
+    st. fill_n(v.begin(), 5, 0)sy.. pause
     ___ (a.. i : v) {
-        std::c__ __  i __  " "sy.. pause
+        st. c__ __  i __  " "sy.. pause
     }
-    std::c__ __  std::e..
+    st. c__ __  st. e..
 
-    std::fill(v.begin(), v.end(), 1)sy.. pause
+    st. fill(v.begin(), v.end(), 1)sy.. pause
     ___ (a.. i : v) {
-        std::c__ __  i __  " "sy.. pause
+        st. c__ __  i __  " "sy.. pause
     }
-    std::c__ __  std::e..
+    st. c__ __  st. e..
 
     // заполнение последовательностью
-    std::iota(v.begin(), v.end(), -1)sy.. pause
-    ___ (a.. i : v) std::c__ __  i __  " "sy.. pause
-    std::c__ __  std::e..
+    st. iota(v.begin(), v.end(), -1)sy.. pause
+    ___ (a.. i : v) st. c__ __  i __  " "sy.. pause
+    st. c__ __  st. e..
 
     // заполнение произвольным значением
-    std::generate_n(v.begin(), 5, fibonacci{})sy.. pause
-    ___ (a.. i : v) std::c__ __  i __  " "sy.. pause
-    std::c__ __  std::e..
+    st. generate_n(v.begin(), 5, fibonacci{})sy.. pause
+    ___ (a.. i : v) st. c__ __  i __  " "sy.. pause
+    st. c__ __  st. e..
 
-    std::generate(v.begin(), v.end(), fibonacci{})sy.. pause
+    st. generate(v.begin(), v.end(), fibonacci{})sy.. pause
     ___ (a.. i : v) {
-        std::c__ __  i __  " "sy.. pause
+        st. c__ __  i __  " "sy.. pause
     }
-    std::c__ __  std::e..
+    st. c__ __  st. e..
 }

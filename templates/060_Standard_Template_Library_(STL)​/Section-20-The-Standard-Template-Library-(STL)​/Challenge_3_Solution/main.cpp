@@ -14,37 +14,37 @@
 // Display the word and count from the 
 // std::map<std::string, int>
 
-v.. display_words(co.. std::map<std::string, in.> &words) {
-    std::c.. __ std::setw(12) __ std::left __ "\nWord"
-                __ std::setw(7) __ std::right __ "Count"__ std::e..
-    std::c.. __ "===================" __ std::e..
+v.. display_words(co.. st. map<st. st.. , in.> &words) {
+    st. c.. __ st. setw(12) __ st. left __ "\nWord"
+                __ st. setw(7) __ st. right __ "Count"__ st. e..
+    st. c.. __ "===================" __ st. e..
     ___ (a.. pair: words)
-        std::c.. __ std::setw(12) __ std::left __ pair.first
-                       __ std::setw(7) __ std::right __ pair.second __ std::e..
+        st. c.. __ st. setw(12) __ st. left __ pair.first
+                       __ st. setw(7) __ st. right __ pair.second __ st. e..
 }
 
 // Used for Part2
 // Display the word and occurences from the 
 // std::map<std::string, std::set<int>>
 
-v.. display_words(co.. std::map<std::string, std::set<in.__ &words)
+v.. display_words(co.. st. map<st. st.. , st. set<in.__ &words)
 {
-     std::c.. __ std::setw(12) __ std::left __ "\nWord"
-                __ "Occurrences"__ std::e..
-    std::c.. __ "=====================================================================" __ std::e..
+     st. c.. __ st. setw(12) __ st. left __ "\nWord"
+                __ "Occurrences"__ st. e..
+    st. c.. __ "=====================================================================" __ st. e..
     ___ (a.. pair: words) {
-        std::c.. __ std::setw(12) __ std::left __ pair.first
-                       __ std::left __ "[ ";
+        st. c.. __ st. setw(12) __ st. left __ pair.first
+                       __ st. left __ "[ ";
         ___ (a.. i: pair.second)
-            std::c.. __ i __ " ";
-        std::c.. __ "]" __ std::e..
+            st. c.. __ i __ " ";
+        st. c.. __ "]" __ st. e..
     }
 }
 
 // This function removes periods, commas, semicolons and colon in 
 // a string and returns the clean version
-std::string clean_string(co.. std::string &s) {
-    std::string result;
+st. st..  clean_string(co.. st. st..  &s) {
+    st. st..  result;
     ___ (ch.. c: s) {
         __ (c __ '.' || c __ ',' || c __ ';' || c __ ':')
             continue;
@@ -58,14 +58,14 @@ std::string clean_string(co.. std::string &s) {
 // number of times they occur in the file
 
 v.. part1
-    std::map<std::string, in.> words;
-    std::string line;       
-    std::string word;   
-    std::ifstream in_file {"../words.txt"};
+    st. map<st. st.. , in.> words;
+    st. st..  line;
+    st. st..  word;
+    st. ifstream in_file {"../words.txt"};
     __ (in_file) {
-        w__ (std::getline(in_file, line)) {
+        w__ (st. getline(in_file, line)) {
             //std::cout << line;
-            std::stringstream ss(line);
+            st. stringstream ss(line);
             w__ (ss __ word) {
                 word = clean_string(word);
                 words[word]++;      // increment the count for the word in the map
@@ -74,23 +74,23 @@ v.. part1
         in_file.close();
         display_words(words);
     } ____ {
-        std::cerr __ "Error opening input file" __ std::e..
+        st. cerr __ "Error opening input file" __ st. e..
     }
 }
     
 // Part1 process the file and builds a map of words and a 
 // set of line numbers in which the word appears
 v.. part2
-    std::map<std::string, std::set<in.__ words;
-    std::string line;
-    std::string word;
-    std::ifstream in_file {"../words.txt"};
+    st. map<st. st.. , st. set<in.__ words;
+    st. st..  line;
+    st. st..  word;
+    st. ifstream in_file {"../words.txt"};
     __ (in_file) {
         in. line_number = 0;
-        w__ (std::getline(in_file, line)) {
+        w__ (st. getline(in_file, line)) {
             //std::cout << line;
             line_number++;
-            std::stringstream ss(line);
+            st. stringstream ss(line);
             w__ (ss __ word) {
                word = clean_string(word);
                words[word].insert(line_number);
@@ -99,7 +99,7 @@ v.. part2
         in_file.close();
         display_words(words);
     } ____ {
-        std::cerr __ "Error opening input file" __ std::e..
+        st. cerr __ "Error opening input file" __ st. e..
     }
 }
 

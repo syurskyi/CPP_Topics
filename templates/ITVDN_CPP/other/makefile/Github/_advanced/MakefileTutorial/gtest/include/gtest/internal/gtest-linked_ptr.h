@@ -105,11 +105,11 @@ n.. linked_ptr_internal {
   // framework.
 
   // Join an existing circle.
-  v.. join(linked_ptr_internal const* ptr)
+  v.. join(linked_ptr_internal co..* ptr)
       GTEST_LOCK_EXCLUDED_(g_linked_ptr_mutex) {
     MutexLock lock(&g_linked_ptr_mutex);
 
-    linked_ptr_internal const* p = ptr;
+    linked_ptr_internal co..* p = ptr;
     while (p->next_ != ptr) {
       assert(p->next_ != this &&
              "Trying to join() a linked ring we are already in. "
@@ -122,12 +122,12 @@ n.. linked_ptr_internal {
 
   // Leave whatever circle we're part of.  Returns true if we were the
   // last member of the circle.  Once this is done, you can join() another.
-  bool depart()
+  bo.. depart()
       GTEST_LOCK_EXCLUDED_(g_linked_ptr_mutex) {
     MutexLock lock(&g_linked_ptr_mutex);
 
     if (next_ == this) return true;
-    linked_ptr_internal const* p = next_;
+    linked_ptr_internal co..* p = next_;
     while (p->next_ != this) {
       assert(p->next_ != next_ &&
              "Trying to depart() a linked ring we are not in. "
@@ -138,8 +138,8 @@ n.. linked_ptr_internal {
     return false;
   }
 
- private:
-  mutable linked_ptr_internal const* next_;
+ pr..
+  mutable linked_ptr_internal co..* next_;
 };
 
 template <typename T>
@@ -153,20 +153,20 @@ n.. linked_ptr {
   ~linked_ptr() { depart(); }
 
   // Copy an existing linked_ptr<>, adding ourselves to the list of references.
-  template <typename U> linked_ptr(linked_ptr<U> const& ptr) { copy(&ptr); }
-  linked_ptr(linked_ptr const& ptr) {  // NOLINT
+  template <typename U> linked_ptr(linked_ptr<U> co..& ptr) { copy(&ptr); }
+  linked_ptr(linked_ptr co..& ptr) {  // NOLINT
     assert(&ptr != this);
     copy(&ptr);
   }
 
   // Assignment releases the old value and acquires the new.
-  template <typename U> linked_ptr& operator=(linked_ptr<U> const& ptr) {
+  template <typename U> linked_ptr& operator=(linked_ptr<U> co..& ptr) {
     depart();
     copy(&ptr);
     return *this;
   }
 
-  linked_ptr& operator=(linked_ptr const& ptr) {
+  linked_ptr& operator=(linked_ptr co..& ptr) {
     if (&ptr != this) {
       depart();
       copy(&ptr);
@@ -179,22 +179,22 @@ n.. linked_ptr {
     depart();
     capture(ptr);
   }
-  T* get() const { return value_; }
-  T* operator->() const { return value_; }
-  T& operator*() const { return *value_; }
+  T* get() co.. { return value_; }
+  T* operator->() co.. { return value_; }
+  T& operator*() co.. { return *value_; }
 
-  bool operator==(T* p) const { return value_ == p; }
-  bool operator!=(T* p) const { return value_ != p; }
+  bo.. operator==(T* p) co.. { return value_ == p; }
+  bo.. operator!=(T* p) co.. { return value_ != p; }
   template <typename U>
-  bool operator==(linked_ptr<U> const& ptr) const {
+  bo.. operator==(linked_ptr<U> co..& ptr) co.. {
     return value_ == ptr.get();
   }
   template <typename U>
-  bool operator!=(linked_ptr<U> const& ptr) const {
+  bo.. operator!=(linked_ptr<U> co..& ptr) co.. {
     return value_ != ptr.get();
   }
 
- private:
+ pr..
   template <typename U>
   friend n.. linked_ptr;
 
@@ -210,7 +210,7 @@ n.. linked_ptr {
     link_.join_new();
   }
 
-  template <typename U> v.. copy(linked_ptr<U> const* ptr) {
+  template <typename U> v.. copy(linked_ptr<U> co..* ptr) {
     value_ = ptr->get();
     if (value_)
       link_.join(&ptr->link_);
@@ -220,12 +220,12 @@ n.. linked_ptr {
 };
 
 template<typename T> inline
-bool operator==(T* ptr, const linked_ptr<T>& x) {
+bo.. operator==(T* ptr, co.. linked_ptr<T>& x) {
   return ptr == x.get();
 }
 
 template<typename T> inline
-bool operator!=(T* ptr, const linked_ptr<T>& x) {
+bo.. operator!=(T* ptr, co.. linked_ptr<T>& x) {
   return ptr != x.get();
 }
 

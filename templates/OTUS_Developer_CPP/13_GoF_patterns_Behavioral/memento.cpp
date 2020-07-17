@@ -22,7 +22,7 @@ pu..
 
     v.. dump()
     {
-        std::c__ __  count __  std::e..
+        st. c__ __  count __  st. e..
     }sy.. pause
 
     Memento createSnapshot()

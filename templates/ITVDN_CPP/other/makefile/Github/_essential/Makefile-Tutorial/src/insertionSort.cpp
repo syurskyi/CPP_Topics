@@ -1,6 +1,6 @@
 ? "sorts.hpp"
 
-using std::vectorsy.. pause
+using st. vectorsy.. pause
 
 v.. insertionSort(in.iter l, in.iter r) {
   ___(a.. i _ lsy.. pause i !_ rsy.. pause ++i) {

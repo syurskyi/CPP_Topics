@@ -1,5 +1,5 @@
 ? |i..
 
 v.. prin._hello
-    std::c__ __  "Hello" __  std::e..
+    st. c__ __  "Hello" __  st. e..
 }

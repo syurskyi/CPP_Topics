@@ -7,20 +7,20 @@
 ? st..
 
 struct City {
-    std::string name;
+    st. st..  name;
     long population;
     do.. cost;
 };
 
 // Assume each country has at least 1 city
 struct Country {
-    std::string name;
-    std::ve..<City> cities;
+    st. st..  name;
+    st. ve..<City> cities;
 };
 
 struct Tours {
-    std::string title;
-    std::ve..<Country> countries;
+    st. st..  title;
+    st. ve..<Country> countries;
 };
 
 in. main()
@@ -57,17 +57,17 @@ in. main()
     };
 
     // Unformatted display so you can see how to access the vector elements
-    std::c.. __ tours.title __ std::e..
+    st. c.. __ tours.title __ st. e..
     ___(a.. country : tours.countries) {   // loop through the countries
-        std::c.. __ country.name __ std::e..
+        st. c.. __ country.name __ st. e..
         ___(a.. city : country.cities) {       // loop through the cities for each country
-            std::c.. __ "\t" __ city.name
+            st. c.. __ "\t" __ city.name
                           __ "\t" __ city.population
                           __ "\t" __ city.cost
-                          __ std::e..
+                          __ st. e..
         }
     }
 
-    std::c.. __ std::endl __ std::e..
+    st. c.. __ st. endl __ st. e..
     r_ 0;
 }

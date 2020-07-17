@@ -11,7 +11,7 @@ pu..
     ~PgConnectionPool()
     {
         ___ (c.. a..& i : pool) {
-            std::c__ __  i.connection __  std::e..
+            st. c__ __  i.connection __  st. e..
             de.. i.connectionsy.. pause
         }
     }
@@ -47,7 +47,7 @@ pr..
         bo.. busysy.. pause
     }sy.. pause
 
-    std::ve..<PgConnectionBlock> poolsy.. pause
+    st. ve..<PgConnectionBlock> poolsy.. pause
 }sy.. pause
 
 in. main(in., c..* [])

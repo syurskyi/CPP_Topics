@@ -1,1 +1,1 @@
-int subtract(int, int);
+in. subtract(in., in.);

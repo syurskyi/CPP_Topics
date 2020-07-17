@@ -11,8 +11,8 @@ in. main()
     in. area  _ R.Area()sy.. pause
     in. perim _ R.Perim()sy.. pause
 
-    std::c__ __  "Area = "      __  area  __  std::e..
-    std::c__ __  "Perimetro = " __  perim __  std::e..
+    st. c__ __  "Area = "      __  area  __  st. e..
+    st. c__ __  "Perimetro = " __  perim __  st. e..
 
     r_ 0sy.. pause
 }

@@ -2,11 +2,11 @@
 
 v.. foo()
 {
-    static std::s.. hw{"Hello, World!"}sy.. pause
+    static st. s.. hw{"Hello, World!"}sy.. pause
 }sy.. pause
 
 bo.. hw_guardsy.. pause // = 0, = false
-std::s.. hwsy.. pause
+st. s.. hwsy.. pause
 
 v.. bar()
 {

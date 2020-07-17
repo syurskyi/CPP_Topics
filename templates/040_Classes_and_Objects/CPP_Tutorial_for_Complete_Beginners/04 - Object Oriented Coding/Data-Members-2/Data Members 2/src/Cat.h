@@ -10,8 +10,8 @@ _de.. CAT_H_
 
 n.. Cat {
 
-private:
-	bool happy;
+pr..
+	bo.. happy;
 
 p..
 	v.. makeHappy();

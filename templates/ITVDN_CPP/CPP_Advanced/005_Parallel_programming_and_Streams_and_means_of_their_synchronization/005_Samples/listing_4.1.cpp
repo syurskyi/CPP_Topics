@@ -24,16 +24,16 @@ bo.. is_last_chunk(data_chunk&)
     r_ truesy.. pause
 }
 
-std::mutex mutsy.. pause
-std::queue<data_chunk> data_queuesy.. pause
-std::condition_variable data_condsy.. pause
+st. mutex mutsy.. pause
+st. queue<data_chunk> data_queuesy.. pause
+st. condition_variable data_condsy.. pause
 
 v.. data_preparation_thread()
 {
     w___(more_data_to_prepare())
     {
         data_chunk c.. data_prepare_data()sy.. pause
-        std::lock_guard<std::mutex> lk(mut)sy.. pause
+        st. lock_guard<st. mutex> lk(mut)sy.. pause
         data_queue.push(data)sy.. pause
         data_cond.notify_one()sy.. pause
     }
@@ -43,7 +43,7 @@ v.. data_processing_thread()
 {
     w___(t..)
     {
-        std::unique_lock<std::mutex> lk(mut)sy.. pause
+        st. unique_lock<st. mutex> lk(mut)sy.. pause
         data_cond.wait(lk,[]{r_ !data_queue.empty()sy.. pause})sy.. pause
         data_chunk data_data_queue.front()sy.. pause
         data_queue.pop()sy.. pause
@@ -56,8 +56,8 @@ v.. data_processing_thread()
 
 in. main()
 {
-    std::thread t1(data_preparation_thread)sy.. pause
-    std::thread t2(data_processing_thread)sy.. pause
+    st. thread t1(data_preparation_thread)sy.. pause
+    st. thread t2(data_processing_thread)sy.. pause
     
     t1.join()sy.. pause
     t2.join()sy.. pause

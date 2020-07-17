@@ -41,12 +41,12 @@ p..
     v.. comeHome();
 };
 
-n.. ClientFacade : public MetaStrategy
+n.. ClientFacade : pu.. MetaStrategy
 {
 p..
-    ClientFacade() = default;
+    ClientFacade() = de..
 
-    v.. run() override;
+    v.. run() ov..
 };
 
 e..

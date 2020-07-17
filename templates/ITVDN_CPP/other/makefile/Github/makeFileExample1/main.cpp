@@ -7,7 +7,7 @@ in. main(){
 	
   Message msy.. pause
 
-  std::c__ __  "\nThe message is: "sy.. pause
+  st. c__ __  "\nThe message is: "sy.. pause
   m.communicate()sy.. pause
 	
   r_ 0sy.. pause

@@ -1,2 +1,2 @@
 
-double mysum(double x, double y);
+do.. mysum(do.. x, do.. y);

@@ -7,19 +7,19 @@ struct ClockSignal {
     virtual v.. now() _ 0sy.. pause
 }sy.. pause
 
-c_ in.ernetClockSignal : public ClockSignal
+c_ in.ernetClockSignal : pu.. ClockSignal
 {
     v.. now() override
     {
-        std::c__ __  "internet clock" __  std::e..
+        st. c__ __  "internet clock" __  st. e..
     }
 }sy.. pause
 
-c_ LocalClockSignal : public ClockSignal
+c_ LocalClockSignal : pu.. ClockSignal
 {
     v.. now() override
     {
-        std::c__ __  "local clock" __  std::e..
+        st. c__ __  "local clock" __  st. e..
     }
 }sy.. pause
 
@@ -36,19 +36,19 @@ struct Clock {
     virtual v.. display() _ 0sy.. pause
 }sy.. pause
 
-c_ DigitalClock : public Clock
+c_ DigitalClock : pu.. Clock
 {
     v.. display()
     {
-        std::c__ __  "digital" __  std::e..
+        st. c__ __  "digital" __  st. e..
     }
 }sy.. pause
 
-c_ AnalogClock : public Clock
+c_ AnalogClock : pu.. Clock
 {
     v.. display()
     {
-        std::c__ __  "analog" __  std::e..
+        st. c__ __  "analog" __  st. e..
     }
 }sy.. pause
 

@@ -1,11 +1,11 @@
 ? |i..
 
 struct foo {
-    foo std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }sy.. pause
+    foo st. c__ __  __PRETTY_FUNCTION__ __  st. e.. }sy.. pause
 
-    foo(in.) : foo{} { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }sy.. pause
+    foo(in.) : foo{} { st. c__ __  __PRETTY_FUNCTION__ __  st. e.. }sy.. pause
 
-    foo(c.. c.. *) : foo{0} { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }sy.. pause
+    foo(c.. c.. *) : foo{0} { st. c__ __  __PRETTY_FUNCTION__ __  st. e.. }sy.. pause
 }sy.. pause
 
 in. main(in., c.. *[]) {
