@@ -1,6 +1,6 @@
 // Simple Account 
 #ifndef _ACCOUNT_H_
-#define _ACCOUNT_H_
+_de.. _ACCOUNT_H_
 #include <iostream>
 #include <string>
 

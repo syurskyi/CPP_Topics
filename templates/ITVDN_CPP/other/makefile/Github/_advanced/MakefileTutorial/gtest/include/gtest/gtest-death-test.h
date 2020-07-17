@@ -36,7 +36,7 @@
 // directly.
 
 #ifndef GTEST_INCLUDE_GTEST_GTEST_DEATH_TEST_H_
-#define GTEST_INCLUDE_GTEST_GTEST_DEATH_TEST_H_
+_de.. GTEST_INCLUDE_GTEST_GTEST_DEATH_TEST_H_
 
 ? "gtest/internal/gtest-death-test-internal.h"
 
@@ -193,7 +193,7 @@ class GTEST_API_ ExitedWithCode {
   bool operator()(int exit_status) const;
  private:
   // No implementation - assignment is unsupported.
-  void operator=(const ExitedWithCode& other);
+  v.. operator=(const ExitedWithCode& other);
 
   const int exit_code_;
 };

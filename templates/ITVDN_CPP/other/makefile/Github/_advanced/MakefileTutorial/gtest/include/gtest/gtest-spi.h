@@ -33,7 +33,7 @@
 // (e.g. frameworks built on top of Google Test).
 
 #ifndef GTEST_INCLUDE_GTEST_GTEST_SPI_H_
-#define GTEST_INCLUDE_GTEST_GTEST_SPI_H_
+_de.. GTEST_INCLUDE_GTEST_GTEST_SPI_H_
 
 ? "gtest/gtest.h"
 
@@ -75,9 +75,9 @@ class GTEST_API_ ScopedFakeTestPartResultReporter
   //
   // This method is from the TestPartResultReporterInterface
   // interface.
-  virtual void ReportTestPartResult(const TestPartResult& result);
+  virtual v.. ReportTestPartResult(const TestPartResult& result);
  private:
-  void Init();
+  v.. Init();
 
   const InterceptMode intercept_mode_;
   TestPartResultReporterInterface* old_reporter_;
@@ -134,11 +134,11 @@ class GTEST_API_ SingleFailureChecker {
 // helper macro, due to some peculiarity in how the preprocessor
 // works.  The AcceptsMacroThatExpandsToUnprotectedComma test in
 // gtest_unittest.cc will fail to compile if we do that.
-#define EXPECT_FATAL_FAILURE(statement, substr) \
+_de.. EXPECT_FATAL_FAILURE(statement, substr) \
   do { \
     class GTestExpectFatalFailureHelper {\
      public:\
-      static void Execute() { statement; }\
+      static v.. Execute() { statement; }\
     };\
     ::testing::TestPartResultArray gtest_failures;\
     ::testing::internal::SingleFailureChecker gtest_checker(\
@@ -151,11 +151,11 @@ class GTEST_API_ SingleFailureChecker {
     }\
   } while (::testing::internal::AlwaysFalse())
 
-#define EXPECT_FATAL_FAILURE_ON_ALL_THREADS(statement, substr) \
+_de.. EXPECT_FATAL_FAILURE_ON_ALL_THREADS(statement, substr) \
   do { \
     class GTestExpectFatalFailureHelper {\
      public:\
-      static void Execute() { statement; }\
+      static v.. Execute() { statement; }\
     };\
     ::testing::TestPartResultArray gtest_failures;\
     ::testing::internal::SingleFailureChecker gtest_checker(\
@@ -200,7 +200,7 @@ class GTEST_API_ SingleFailureChecker {
 // instead of
 //   GTEST_SUPPRESS_UNREACHABLE_CODE_WARNING_BELOW_(statement)
 // to avoid an MSVC warning on unreachable code.
-#define EXPECT_NONFATAL_FAILURE(statement, substr) \
+_de.. EXPECT_NONFATAL_FAILURE(statement, substr) \
   do {\
     ::testing::TestPartResultArray gtest_failures;\
     ::testing::internal::SingleFailureChecker gtest_checker(\
@@ -214,7 +214,7 @@ class GTEST_API_ SingleFailureChecker {
     }\
   } while (::testing::internal::AlwaysFalse())
 
-#define EXPECT_NONFATAL_FAILURE_ON_ALL_THREADS(statement, substr) \
+_de.. EXPECT_NONFATAL_FAILURE_ON_ALL_THREADS(statement, substr) \
   do {\
     ::testing::TestPartResultArray gtest_failures;\
     ::testing::internal::SingleFailureChecker gtest_checker(\

@@ -1,6 +1,6 @@
 ?|i..
 #ifndef HELLO_H
-#define HELLO_H
+_de.. HELLO_H
 u.. s..
 
 class Hello
@@ -8,6 +8,6 @@ class Hello
   public:
   Hello() { };
 
-  void kevin();
+  v.. kevin();
 };
 #endif

@@ -1,5 +1,5 @@
 #ifndef POINT_H_INCLUDED
-#define POINT_H_INCLUDED
+_de.. POINT_H_INCLUDED
 
 class Point //base, parent, superclass
 {
@@ -9,7 +9,7 @@ class Point //base, parent, superclass
         Point(int =0);
         ~Point();
         int getX() { return x; }
-        void setX(int);
+        v.. setX(int);
 };
 class Point2D : public Point //derived, child, subclass
 {
@@ -19,9 +19,9 @@ class Point2D : public Point //derived, child, subclass
         Point2D(int =0, int =0);
         ~Point2D();
         int getY() { return y; }
-        void setY(int);
-        void setX(int);
-        void setXY(int, int);
+        v.. setY(int);
+        v.. setX(int);
+        v.. setXY(int, int);
 
 };
 class Point3D : public Point2D

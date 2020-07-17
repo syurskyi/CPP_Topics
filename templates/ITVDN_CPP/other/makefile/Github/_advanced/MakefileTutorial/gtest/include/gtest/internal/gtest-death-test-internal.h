@@ -34,7 +34,7 @@
 // death tests.  They are subject to change without notice.
 
 #ifndef GTEST_INCLUDE_GTEST_INTERNAL_GTEST_DEATH_TEST_INTERNAL_H_
-#define GTEST_INCLUDE_GTEST_INTERNAL_GTEST_DEATH_TEST_INTERNAL_H_
+_de.. GTEST_INCLUDE_GTEST_INTERNAL_GTEST_DEATH_TEST_INTERNAL_H_
 
 ? "gtest/internal/gtest-internal.h"
 
@@ -120,13 +120,13 @@ class GTEST_API_ DeathTest {
   virtual bool Passed(bool exit_status_ok) = 0;
 
   // Signals that the death test did not die as expected.
-  virtual void Abort(AbortReason reason) = 0;
+  virtual v.. Abort(AbortReason reason) = 0;
 
   // Returns a human-readable outcome message regarding the outcome of
   // the last death test.
   static const char* LastMessage();
 
-  static void set_last_death_test_message(const std::string& message);
+  static v.. set_last_death_test_message(const std::string& message);
 
  private:
   // A string containing a description of the outcome of the last death test.
@@ -221,13 +221,13 @@ GTEST_API_ bool ExitedUnsuccessfully(int exit_status);
 // must accept a streamed message even though the message is never printed.
 // The regex object is not evaluated, but it is used to prevent "unused"
 // warnings and to avoid an expression that doesn't compile in debug mode.
-#define GTEST_EXECUTE_STATEMENT_(statement, regex)             \
+_de.. GTEST_EXECUTE_STATEMENT_(statement, regex)             \
   GTEST_AMBIGUOUS_ELSE_BLOCKER_                                \
   if (::testing::internal::AlwaysTrue()) {                     \
     GTEST_SUPPRESS_UNREACHABLE_CODE_WARNING_BELOW_(statement); \
   } else if (!::testing::internal::AlwaysTrue()) {             \
     const ::testing::internal::RE& gtest_regex = (regex);      \
-    static_cast<void>(gtest_regex);                            \
+    static_cast<v..>(gtest_regex);                            \
   } else                                                       \
     ::testing::Message()
 

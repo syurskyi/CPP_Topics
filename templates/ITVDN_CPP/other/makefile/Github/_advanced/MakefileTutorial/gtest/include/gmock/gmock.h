@@ -34,7 +34,7 @@
 // This is the main header file a user should include.
 
 #ifndef GMOCK_INCLUDE_GMOCK_GMOCK_H_
-#define GMOCK_INCLUDE_GMOCK_GMOCK_H_
+_de.. GMOCK_INCLUDE_GMOCK_GMOCK_H_
 
 // This file implements the following syntax:
 //
@@ -84,11 +84,11 @@ GMOCK_DECLARE_int32_(default_mock_behavior);
 // Since Google Test is needed for Google Mock to work, this function
 // also initializes Google Test and parses its flags, if that hasn't
 // been done.
-GTEST_API_ void InitGoogleMock(int* argc, char** argv);
+GTEST_API_ v.. InitGoogleMock(int* argc, char** argv);
 
 // This overloaded version can be used in Windows programs compiled in
 // UNICODE mode.
-GTEST_API_ void InitGoogleMock(int* argc, wchar_t** argv);
+GTEST_API_ v.. InitGoogleMock(int* argc, wchar_t** argv);
 
 }  // namespace testing
 

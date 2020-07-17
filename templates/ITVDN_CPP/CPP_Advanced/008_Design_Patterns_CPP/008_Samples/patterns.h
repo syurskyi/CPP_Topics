@@ -1,5 +1,5 @@
 #ifndef PATTERNS_H
-#define PATTERNS_H
+_de.. PATTERNS_H
 
 ? "builder.h"
 ? "decorator.h"

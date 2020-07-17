@@ -6,7 +6,7 @@
  */
 
 #ifndef ANIMALS_H_
-#define ANIMALS_H_
+_de.. ANIMALS_H_
 
 #include <iostream>
 using namespace std;
@@ -19,7 +19,7 @@ class Cat {
 public:
 	Cat();
 	virtual ~Cat();
-	void speak();
+	v.. speak();
 };
 
 } /* namespace jwp */

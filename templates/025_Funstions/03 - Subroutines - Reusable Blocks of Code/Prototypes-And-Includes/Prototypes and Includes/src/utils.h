@@ -1,13 +1,13 @@
-/*
- * utils.h
- *
- *  Created on: 7 Jule 2020
- *      Author: syurskyi
- */
-
-#ifndef UTILS_H_
-#define UTILS_H_
-
-void doSomething();
-
-#endif /* UTILS_H_ */
+///*
+// * utils.h
+// *
+// *  Created on: 7 Jule 2020
+// *      Author: syurskyi
+// */
+//
+//?if__ UTILS_H_
+//_de.. UTILS_H_
+//
+//v.. doSomething
+//
+//#endif /* UTILS_H_ */

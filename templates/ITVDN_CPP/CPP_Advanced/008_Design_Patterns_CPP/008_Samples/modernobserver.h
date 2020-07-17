@@ -1,5 +1,5 @@
 #ifndef MODERNOBSERVER_H
-#define MODERNOBSERVER_H
+_de.. MODERNOBSERVER_H
 
 ? "meta_strategy.h"
 ? <functional>
@@ -9,12 +9,12 @@
 class ModernObserver
 {
 public:
-    typedef std::function< void( int ) > UpdateDelegate;
+    typedef std::function< v..( int ) > UpdateDelegate;
     ModernObserver( UpdateDelegate updateDelegate );
 
     ~ModernObserver() = default;
 
-    void update( int value );
+    v.. update( int value );
 
 protected:
     UpdateDelegate updateDelegate;
@@ -26,9 +26,9 @@ class ModernSubject
     std::vector< ModernObserver > m_views;
 
 public:
-    void attach( const ModernObserver& obs );
-    void set_val( int value );
-    void notify();
+    v.. attach( const ModernObserver& obs );
+    v.. set_val( int value );
+    v.. notify();
 };
 
 class ModernDivObserver
@@ -38,7 +38,7 @@ class ModernDivObserver
 public:
     ModernDivObserver( ModernSubject* model, int div );
 
-    void update( int v );
+    v.. update( int v );
 };
 
 class ModernModObserver
@@ -47,13 +47,13 @@ class ModernModObserver
 
 public:
     ModernModObserver( ModernSubject* model, int mod );
-    void update( int v );
+    v.. update( int v );
 };
 
 class ClientModernObserver : public MetaStrategy
 {
 public:
-    void run() override;
+    v.. run() override;
 };
 
 #endif // MODERNOBSERVER_H

@@ -36,7 +36,7 @@
 // USE THEM IN USER CODE.
 
 #ifndef GMOCK_INCLUDE_GMOCK_INTERNAL_GMOCK_INTERNAL_UTILS_H_
-#define GMOCK_INCLUDE_GMOCK_INTERNAL_GMOCK_INTERNAL_UTILS_H_
+_de.. GMOCK_INCLUDE_GMOCK_INTERNAL_GMOCK_INTERNAL_UTILS_H_
 
 ? <stdio.h>
 ? <ostream>  // NOLINT
@@ -146,7 +146,7 @@ template <typename T> struct KindOf {
 };
 
 // This macro declares that the kind of 'type' is 'kind'.
-#define GMOCK_DECLARE_KIND_(type, kind) \
+_de.. GMOCK_DECLARE_KIND_(type, kind) \
   template <> struct KindOf<type> { enum { value = kind }; }
 
 GMOCK_DECLARE_KIND_(bool, kBool);
@@ -178,12 +178,12 @@ GMOCK_DECLARE_KIND_(long double, kFloatingPoint);
 #undef GMOCK_DECLARE_KIND_
 
 // Evaluates to the kind of 'type'.
-#define GMOCK_KIND_OF_(type) \
+_de.. GMOCK_KIND_OF_(type) \
   static_cast< ::testing::internal::TypeKind>( \
       ::testing::internal::KindOf<type>::value)
 
 // Evaluates to true iff integer type T is signed.
-#define GMOCK_IS_SIGNED_(T) (static_cast<T>(-1) < 0)
+_de.. GMOCK_IS_SIGNED_(T) (static_cast<T>(-1) < 0)
 
 // LosslessArithmeticConvertibleImpl<kFromKind, From, kToKind, To>::value
 // is true iff arithmetic type From can be losslessly converted to
@@ -279,7 +279,7 @@ class FailureReporterInterface {
   virtual ~FailureReporterInterface() {}
 
   // Reports a failure that occurred at the given source file location.
-  virtual void ReportFailure(FailureType type, const char* file, int line,
+  virtual v.. ReportFailure(FailureType type, const char* file, int line,
                              const std::string& message) = 0;
 };
 
@@ -291,27 +291,27 @@ GTEST_API_ FailureReporterInterface* GetFailureReporter();
 // as Google Mock might be used to mock the log sink itself.  We
 // inline this function to prevent it from showing up in the stack
 // trace.
-inline void Assert(bool condition, const char* file, int line,
+inline v.. Assert(bool condition, const char* file, int line,
                    const std::string& msg) {
   if (!condition) {
     GetFailureReporter()->ReportFailure(FailureReporterInterface::kFatal,
                                         file, line, msg);
   }
 }
-inline void Assert(bool condition, const char* file, int line) {
+inline v.. Assert(bool condition, const char* file, int line) {
   Assert(condition, file, line, "Assertion failed.");
 }
 
 // Verifies that condition is true; generates a non-fatal failure if
 // condition is false.
-inline void Expect(bool condition, const char* file, int line,
+inline v.. Expect(bool condition, const char* file, int line,
                    const std::string& msg) {
   if (!condition) {
     GetFailureReporter()->ReportFailure(FailureReporterInterface::kNonfatal,
                                         file, line, msg);
   }
 }
-inline void Expect(bool condition, const char* file, int line) {
+inline v.. Expect(bool condition, const char* file, int line) {
   Expect(condition, file, line, "Expectation failed.");
 }
 
@@ -341,7 +341,7 @@ GTEST_API_ bool LogIsVisible(LogSeverity severity);
 // stack_frames_to_skip is treated as 0, since we don't know which
 // function calls will be inlined by the compiler and need to be
 // conservative.
-GTEST_API_ void Log(LogSeverity severity, const std::string& message,
+GTEST_API_ v.. Log(LogSeverity severity, const std::string& message,
                     int stack_frames_to_skip);
 
 // A marker class that is used to resolve parameterless expectations to the
@@ -533,7 +533,7 @@ struct BooleanConstant {};
 
 // Emit an assertion failure due to incorrect DoDefault() usage. Out-of-lined to
 // reduce code size.
-GTEST_API_ void IllegalDoDefault(const char* file, int line);
+GTEST_API_ v.. IllegalDoDefault(const char* file, int line);
 
 #if GTEST_LANG_CXX11
 // Helper types for Apply() below.

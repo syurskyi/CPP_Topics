@@ -34,7 +34,7 @@
 // This file implements some actions that depend on gmock-generated-actions.h.
 
 #ifndef GMOCK_INCLUDE_GMOCK_GMOCK_MORE_ACTIONS_H_
-#define GMOCK_INCLUDE_GMOCK_GMOCK_MORE_ACTIONS_H_
+_de.. GMOCK_INCLUDE_GMOCK_GMOCK_MORE_ACTIONS_H_
 
 ? <algorithm>
 

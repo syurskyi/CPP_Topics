@@ -34,7 +34,7 @@
 // Google Test.  They are subject to change without notice.
 
 #ifndef GTEST_INCLUDE_GTEST_INTERNAL_GTEST_INTERNAL_H_
-#define GTEST_INCLUDE_GTEST_INTERNAL_GTEST_INTERNAL_H_
+_de.. GTEST_INCLUDE_GTEST_INTERNAL_GTEST_INTERNAL_H_
 
 ? "gtest/internal/gtest-port.h"
 
@@ -72,11 +72,11 @@
 // will result in the token foo__LINE__, instead of foo followed by
 // the current line number.  For more details, see
 // http://www.parashift.com/c++-faq-lite/misc-technical-issues.html#faq-39.6
-#define GTEST_CONCAT_TOKEN_(foo, bar) GTEST_CONCAT_TOKEN_IMPL_(foo, bar)
-#define GTEST_CONCAT_TOKEN_IMPL_(foo, bar) foo ## bar
+_de.. GTEST_CONCAT_TOKEN_(foo, bar) GTEST_CONCAT_TOKEN_IMPL_(foo, bar)
+_de.. GTEST_CONCAT_TOKEN_IMPL_(foo, bar) foo ## bar
 
 // Stringifies its argument.
-#define GTEST_STRINGIFY_(name) #name
+_de.. GTEST_STRINGIFY_(name) #name
 
 class ProtocolMessage;
 namespace proto2 { class Message; }
@@ -408,7 +408,7 @@ typedef FloatingPoint<double> Double;
 // used to hold such IDs.  The user should treat TypeId as an opaque
 // type: the only operation allowed on TypeId values is to compare
 // them for equality using the == operator.
-typedef const void* TypeId;
+typedef const v..* TypeId;
 
 template <typename T>
 class TypeIdHelper {
@@ -480,8 +480,8 @@ GTEST_API_ AssertionResult IsHRESULTFailure(const char* expr,
 #endif  // GTEST_OS_WINDOWS
 
 // Types of SetUpTestCase() and TearDownTestCase() functions.
-typedef void (*SetUpTestCaseFunc)();
-typedef void (*TearDownTestCaseFunc)();
+typedef v.. (*SetUpTestCaseFunc)();
+typedef v.. (*TearDownTestCaseFunc)();
 
 struct CodeLocation {
   CodeLocation(const std::string& a_file, int a_line)
@@ -592,7 +592,7 @@ inline std::string GetPrefixUntilComma(const char* str) {
 
 // Splits a given string on a given delimiter, populating a given
 // vector with the fields.
-void SplitString(const ::std::string& str, char delimiter,
+v.. SplitString(const ::std::string& str, char delimiter,
                  ::std::vector< ::std::string>* dest);
 
 // TypeParameterizedTest<Fixture, TestSel, Types>::Register()
@@ -738,7 +738,7 @@ class GTEST_API_ Random {
 
   explicit Random(UInt32 seed) : state_(seed) {}
 
-  void Reseed(UInt32 seed) { state_ = seed; }
+  v.. Reseed(UInt32 seed) { state_ = seed; }
 
   // Generates a random number from [0, range).  Crashes if 'range' is
   // 0 or greater than kMaxRange.
@@ -768,7 +768,7 @@ struct RemoveReference<T&> { typedef T type; };  // NOLINT
 
 // A handy wrapper around RemoveReference that works when the argument
 // T depends on template parameters.
-#define GTEST_REMOVE_REFERENCE_(T) \
+_de.. GTEST_REMOVE_REFERENCE_(T) \
     typename ::testing::internal::RemoveReference<T>::type
 
 // Removes const from a type if it is a const type, otherwise leaves
@@ -799,11 +799,11 @@ struct RemoveConst<T[N]> {
 
 // A handy wrapper around RemoveConst that works when the argument
 // T depends on template parameters.
-#define GTEST_REMOVE_CONST_(T) \
+_de.. GTEST_REMOVE_CONST_(T) \
     typename ::testing::internal::RemoveConst<T>::type
 
 // Turns const U&, U&, const U, and U all into U.
-#define GTEST_REMOVE_REFERENCE_AND_CONST_(T) \
+_de.. GTEST_REMOVE_REFERENCE_AND_CONST_(T) \
     GTEST_REMOVE_CONST_(GTEST_REMOVE_REFERENCE_(T))
 
 // ImplicitlyConvertible<From, To>::value is a compile-time bool
@@ -935,10 +935,10 @@ const bool IsHashTable<T>::value;
 
 template<typename T>
 struct VoidT {
-    typedef void value_type;
+    typedef v.. value_type;
 };
 
-template <typename T, typename = void>
+template <typename T, typename = v..>
 struct HasValueType : false_type {};
 template <typename T>
 struct HasValueType<T, VoidT<typename T::value_type> > : true_type {
@@ -984,7 +984,7 @@ struct IsRecursiveContainer : public IsRecursiveContainerImpl<C>::type {};
 // overload only apply when a particular expression is true, add
 // "typename EnableIf<expression>::type* = 0" as the last parameter.
 template<bool> struct EnableIf;
-template<> struct EnableIf<true> { typedef void type; };  // NOLINT
+template<> struct EnableIf<true> { typedef v.. type; };  // NOLINT
 
 // Utilities for native arrays.
 
@@ -1033,15 +1033,15 @@ Iter ArrayAwareFind(Iter begin, Iter end, const Element& elem) {
 // CopyArray() degenerates into copying a single value.
 
 template <typename T, typename U>
-void CopyArray(const T* from, size_t size, U* to);
+v.. CopyArray(const T* from, size_t size, U* to);
 
 // This generic version is used when k is 0.
 template <typename T, typename U>
-inline void CopyArray(const T& from, U* to) { *to = from; }
+inline v.. CopyArray(const T& from, U* to) { *to = from; }
 
 // This overload is used when k >= 1.
 template <typename T, typename U, size_t N>
-inline void CopyArray(const T(&from)[N], U(*to)[N]) {
+inline v.. CopyArray(const T(&from)[N], U(*to)[N]) {
   internal::CopyArray(from, N, *to);
 }
 
@@ -1049,7 +1049,7 @@ inline void CopyArray(const T(&from)[N], U(*to)[N]) {
 // the previous CopyArray() function, arrays with different sizes
 // would lead to different copies of the template code.
 template <typename T, typename U>
-void CopyArray(const T* from, size_t size, U* to) {
+v.. CopyArray(const T* from, size_t size, U* to) {
   for (size_t i = 0; i != size; i++) {
     internal::CopyArray(from[i], to + i);
   }
@@ -1114,7 +1114,7 @@ class NativeArray {
   };
 
   // Initializes this object with a copy of the input.
-  void InitCopy(const Element* array, size_t a_size) {
+  v.. InitCopy(const Element* array, size_t a_size) {
     Element* const copy = new Element[a_size];
     CopyArray(array, a_size, copy);
     array_ = copy;
@@ -1123,7 +1123,7 @@ class NativeArray {
   }
 
   // Initializes this object with a reference of the input.
-  void InitRef(const Element* array, size_t a_size) {
+  v.. InitRef(const Element* array, size_t a_size) {
     array_ = array;
     size_ = a_size;
     clone_ = &NativeArray::InitRef;
@@ -1131,7 +1131,7 @@ class NativeArray {
 
   const Element* array_;
   size_t size_;
-  void (NativeArray::*clone_)(const Element*, size_t);
+  v.. (NativeArray::*clone_)(const Element*, size_t);
 
   GTEST_DISALLOW_ASSIGN_(NativeArray);
 };
@@ -1139,29 +1139,29 @@ class NativeArray {
 }  // namespace internal
 }  // namespace testing
 
-#define GTEST_MESSAGE_AT_(file, line, message, result_type) \
+_de.. GTEST_MESSAGE_AT_(file, line, message, result_type) \
   ::testing::internal::AssertHelper(result_type, file, line, message) \
     = ::testing::Message()
 
-#define GTEST_MESSAGE_(message, result_type) \
+_de.. GTEST_MESSAGE_(message, result_type) \
   GTEST_MESSAGE_AT_(__FILE__, __LINE__, message, result_type)
 
-#define GTEST_FATAL_FAILURE_(message) \
+_de.. GTEST_FATAL_FAILURE_(message) \
   return GTEST_MESSAGE_(message, ::testing::TestPartResult::kFatalFailure)
 
-#define GTEST_NONFATAL_FAILURE_(message) \
+_de.. GTEST_NONFATAL_FAILURE_(message) \
   GTEST_MESSAGE_(message, ::testing::TestPartResult::kNonFatalFailure)
 
-#define GTEST_SUCCESS_(message) \
+_de.. GTEST_SUCCESS_(message) \
   GTEST_MESSAGE_(message, ::testing::TestPartResult::kSuccess)
 
 // Suppress MSVC warning 4702 (unreachable code) for the code following
 // statement if it returns or throws (or doesn't return or throw in some
 // situations).
-#define GTEST_SUPPRESS_UNREACHABLE_CODE_WARNING_BELOW_(statement) \
+_de.. GTEST_SUPPRESS_UNREACHABLE_CODE_WARNING_BELOW_(statement) \
   if (::testing::internal::AlwaysTrue()) { statement; }
 
-#define GTEST_TEST_THROW_(statement, expected_exception, fail) \
+_de.. GTEST_TEST_THROW_(statement, expected_exception, fail) \
   GTEST_AMBIGUOUS_ELSE_BLOCKER_ \
   if (::testing::internal::ConstCharPtr gtest_msg = "") { \
     bool gtest_caught_expected = false; \
@@ -1187,7 +1187,7 @@ class NativeArray {
     GTEST_CONCAT_TOKEN_(gtest_label_testthrow_, __LINE__): \
       fail(gtest_msg.value)
 
-#define GTEST_TEST_NO_THROW_(statement, fail) \
+_de.. GTEST_TEST_NO_THROW_(statement, fail) \
   GTEST_AMBIGUOUS_ELSE_BLOCKER_ \
   if (::testing::internal::AlwaysTrue()) { \
     try { \
@@ -1201,7 +1201,7 @@ class NativeArray {
       fail("Expected: " #statement " doesn't throw an exception.\n" \
            "  Actual: it throws.")
 
-#define GTEST_TEST_ANY_THROW_(statement, fail) \
+_de.. GTEST_TEST_ANY_THROW_(statement, fail) \
   GTEST_AMBIGUOUS_ELSE_BLOCKER_ \
   if (::testing::internal::AlwaysTrue()) { \
     bool gtest_caught_any = false; \
@@ -1223,7 +1223,7 @@ class NativeArray {
 // Implements Boolean test assertions such as EXPECT_TRUE. expression can be
 // either a boolean expression or an AssertionResult. text is a textual
 // represenation of expression as it was passed into the EXPECT_TRUE.
-#define GTEST_TEST_BOOLEAN_(expression, text, actual, expected, fail) \
+_de.. GTEST_TEST_BOOLEAN_(expression, text, actual, expected, fail) \
   GTEST_AMBIGUOUS_ELSE_BLOCKER_ \
   if (const ::testing::AssertionResult gtest_ar_ = \
       ::testing::AssertionResult(expression)) \
@@ -1232,7 +1232,7 @@ class NativeArray {
     fail(::testing::internal::GetBoolAssertionFailureMessage(\
         gtest_ar_, text, #actual, #expected).c_str())
 
-#define GTEST_TEST_NO_FATAL_FAILURE_(statement, fail) \
+_de.. GTEST_TEST_NO_FATAL_FAILURE_(statement, fail) \
   GTEST_AMBIGUOUS_ELSE_BLOCKER_ \
   if (::testing::internal::AlwaysTrue()) { \
     ::testing::internal::HasNewFatalFailureHelper gtest_fatal_failure_checker; \
@@ -1247,16 +1247,16 @@ class NativeArray {
            "  Actual: it does.")
 
 // Expands to the name of the class that implements the given test.
-#define GTEST_TEST_CLASS_NAME_(test_case_name, test_name) \
+_de.. GTEST_TEST_CLASS_NAME_(test_case_name, test_name) \
   test_case_name##_##test_name##_Test
 
 // Helper macro for defining tests.
-#define GTEST_TEST_(test_case_name, test_name, parent_class, parent_id)\
+_de.. GTEST_TEST_(test_case_name, test_name, parent_class, parent_id)\
 class GTEST_TEST_CLASS_NAME_(test_case_name, test_name) : public parent_class {\
  public:\
   GTEST_TEST_CLASS_NAME_(test_case_name, test_name)() {}\
  private:\
-  virtual void TestBody();\
+  virtual v.. TestBody();\
   static ::testing::TestInfo* const test_info_ GTEST_ATTRIBUTE_UNUSED_;\
   GTEST_DISALLOW_COPY_AND_ASSIGN_(\
       GTEST_TEST_CLASS_NAME_(test_case_name, test_name));\
@@ -1272,6 +1272,6 @@ class GTEST_TEST_CLASS_NAME_(test_case_name, test_name) : public parent_class {\
         parent_class::TearDownTestCase, \
         new ::testing::internal::TestFactoryImpl<\
             GTEST_TEST_CLASS_NAME_(test_case_name, test_name)>);\
-void GTEST_TEST_CLASS_NAME_(test_case_name, test_name)::TestBody()
+v.. GTEST_TEST_CLASS_NAME_(test_case_name, test_name)::TestBody()
 
 #endif  // GTEST_INCLUDE_GTEST_INTERNAL_GTEST_INTERNAL_H_

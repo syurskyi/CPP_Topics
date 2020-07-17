@@ -15,7 +15,7 @@ in. main()
 	c__ __  "Dev version." __  e..
 #endif 
 
-#ifndef DEVELOMENT
+_if.. DEVELOMENT
 	in. a _ 1sy.. pause
 	c__ __  "Dev version." __  e..
 #elif PRODUCTION

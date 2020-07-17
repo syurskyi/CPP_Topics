@@ -1,5 +1,5 @@
 #ifndef POSITION_H_INCLUDED
-#define POSITION_H_INCLUDED
+_de.. POSITION_H_INCLUDED
 
 class Position
 {
@@ -7,9 +7,9 @@ class Position
     public:
         Position(int,int);
         ~Position();
-        void getPosition() const;
-        void setPosition(int, int);
-        friend void setX(Position &, int);
+        v.. getPosition() const;
+        v.. setPosition(int, int);
+        friend v.. setX(Position &, int);
 };
 
 #endif // POSITION_H_INCLUDED

@@ -7,7 +7,7 @@
  */
 
 #ifndef TCOPERATION_H_
-#define TCOPERATION_H_
+_de.. TCOPERATION_H_
 
 ? <string>
 ? <vector>
@@ -28,13 +28,13 @@ public:
 	/**
 	 * @brief This is the class destructor
 	 */
-	virtual ~tcOperation( void );
+	virtual ~tcOperation( v.. );
 
 	/**
 	 * @brief This method executes the mathematical operation
 	 * @return the result of the operation
 	 */
-	double Execute( void );
+	double Execute( v.. );
 
 protected:
 

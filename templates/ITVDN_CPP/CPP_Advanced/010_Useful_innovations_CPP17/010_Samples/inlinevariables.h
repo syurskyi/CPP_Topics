@@ -1,5 +1,5 @@
 #ifndef INLINEVARIABLES_H
-#define INLINEVARIABLES_H
+_de.. INLINEVARIABLES_H
 
 class InlineVariables
 {

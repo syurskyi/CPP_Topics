@@ -12,13 +12,13 @@ public:
     Mammal(const Mammal&);
 
     virtual ~Mammal();
-    void feed_milk();
+    v.. feed_milk();
     uint get_paws()
     {
         return paws;
     }
 
-    virtual void say();
+    virtual v.. say();
 
 protected:
     uint paws = 4;

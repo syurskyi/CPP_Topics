@@ -37,7 +37,7 @@
 // gmock-more-matchers-test.cc.
 
 #ifndef GMOCK_GMOCK_MORE_MATCHERS_H_
-#define GMOCK_GMOCK_MORE_MATCHERS_H_
+_de.. GMOCK_GMOCK_MORE_MATCHERS_H_
 
 ? "gmock/gmock-generated-matchers.h"
 

@@ -14,9 +14,9 @@
 //    return (a < b) ? a : b;
 //}
 
-#define min(a, b)  (((a)<(b)) ? (a) : (b))
+_de.. min(a, b)  (((a)<(b)) ? (a) : (b))
 
-#define max(a,b) ((a>b) ? a : b)
+_de.. max(a,b) ((a>b) ? a : b)
 in. main
 
     std::c.. __ min(2,3) __ std::e..

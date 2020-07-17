@@ -31,7 +31,7 @@
 //
 
 #ifndef GTEST_INCLUDE_GTEST_GTEST_TEST_PART_H_
-#define GTEST_INCLUDE_GTEST_GTEST_TEST_PART_H_
+_de.. GTEST_INCLUDE_GTEST_GTEST_TEST_PART_H_
 
 ? <iosfwd>
 ? <vector>
@@ -128,7 +128,7 @@ class GTEST_API_ TestPartResultArray {
   TestPartResultArray() {}
 
   // Appends the given TestPartResult to the array.
-  void Append(const TestPartResult& result);
+  v.. Append(const TestPartResult& result);
 
   // Returns the TestPartResult at the given index (0-based).
   const TestPartResult& GetTestPartResult(int index) const;
@@ -147,7 +147,7 @@ class TestPartResultReporterInterface {
  public:
   virtual ~TestPartResultReporterInterface() {}
 
-  virtual void ReportTestPartResult(const TestPartResult& result) = 0;
+  virtual v.. ReportTestPartResult(const TestPartResult& result) = 0;
 };
 
 namespace internal {
@@ -163,7 +163,7 @@ class GTEST_API_ HasNewFatalFailureHelper
  public:
   HasNewFatalFailureHelper();
   virtual ~HasNewFatalFailureHelper();
-  virtual void ReportTestPartResult(const TestPartResult& result);
+  virtual v.. ReportTestPartResult(const TestPartResult& result);
   bool has_new_fatal_failure() const { return has_new_fatal_failure_; }
  private:
   bool has_new_fatal_failure_;

@@ -1,5 +1,5 @@
 #ifndef POINT_H
-#define POINT_H
+_de.. POINT_H
 
 class Point
 {

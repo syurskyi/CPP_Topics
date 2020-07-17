@@ -1,5 +1,5 @@
 #ifndef _ACCOUNT_H_
-#define _ACCOUNT_H_
+_de.. _ACCOUNT_H_
 #include <string>
 
 class Account
@@ -7,8 +7,8 @@ class Account
 public:
     double balance;
     std::string name;
-    void deposit(double amount);
-    void withdraw(double amount);
+    v.. deposit(double amount);
+    v.. withdraw(double amount);
     Account();
     ~Account();
 };

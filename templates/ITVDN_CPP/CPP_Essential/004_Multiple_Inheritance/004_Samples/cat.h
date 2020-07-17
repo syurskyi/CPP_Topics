@@ -32,7 +32,7 @@ public:
     Cat(uint paws);
     uint get_paws();
 
-    void say();
+    v.. say();
 
 public:
     uint vibr;

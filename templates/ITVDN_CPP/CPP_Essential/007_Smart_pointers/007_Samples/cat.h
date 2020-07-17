@@ -33,10 +33,10 @@ public:
     ~Cat();
     uint get_paws();
 
-    void say();
+    v.. say();
 
 public:
-    static void set_vibr(uint _vibr){ vibr = _vibr; }
+    static v.. set_vibr(uint _vibr){ vibr = _vibr; }
 
     inline static uint get_vibr() { return vibr; }
 

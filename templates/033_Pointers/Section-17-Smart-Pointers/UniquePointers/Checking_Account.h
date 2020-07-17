@@ -1,5 +1,5 @@
 #ifndef _CHECKING_ACCOUNT_H_
-#define _CHECKING_ACCOUNT_H_
+_de.. _CHECKING_ACCOUNT_H_
 #include <iostream>
 #include <string>
 #include "Account.h"
@@ -13,7 +13,7 @@ public:
     Checking_Account(std::string name = def_name, double balance = def_balance);    
     virtual bool withdraw(double) override;
     virtual bool deposit(double) override;
-    virtual void print(std::ostream &os) const override;
+    virtual v.. print(std::ostream &os) const override;
     virtual ~Checking_Account() = default;
 };
 

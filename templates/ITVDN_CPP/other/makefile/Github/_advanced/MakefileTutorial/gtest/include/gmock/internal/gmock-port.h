@@ -37,7 +37,7 @@
 // code outside Google Mock.
 
 #ifndef GMOCK_INCLUDE_GMOCK_INTERNAL_GMOCK_PORT_H_
-#define GMOCK_INCLUDE_GMOCK_INTERNAL_GMOCK_PORT_H_
+_de.. GMOCK_INCLUDE_GMOCK_INTERNAL_GMOCK_PORT_H_
 
 ? <assert.h>
 ? <stdlib.h>
@@ -63,7 +63,7 @@
 
 // Macro for referencing flags.  This is public as we want the user to
 // use this syntax to reference Google Mock flags.
-#define GMOCK_FLAG(name) FLAGS_gmock_##name
+_de.. GMOCK_FLAG(name) FLAGS_gmock_##name
 
 #if !defined(GMOCK_DECLARE_bool_)
 

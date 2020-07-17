@@ -44,7 +44,7 @@
 // program!
 
 #ifndef GTEST_INCLUDE_GTEST_GTEST_MESSAGE_H_
-#define GTEST_INCLUDE_GTEST_GTEST_MESSAGE_H_
+_de.. GTEST_INCLUDE_GTEST_GTEST_MESSAGE_H_
 
 ? <limits>
 
@@ -52,7 +52,7 @@
 
 // Ensures that there is at least one operator<< in the global namespace.
 // See Message& operator<<(...) below for why.
-void operator<<(const testing::internal::Secret&, int);
+v.. operator<<(const testing::internal::Secret&, int);
 
 namespace testing {
 
@@ -202,7 +202,7 @@ class GTEST_API_ Message {
   // decide between class template specializations for T and T*, so a
   // tr1::type_traits-like is_pointer works, and we can overload on that.
   template <typename T>
-  inline void StreamHelper(internal::true_type /*is_pointer*/, T* pointer) {
+  inline v.. StreamHelper(internal::true_type /*is_pointer*/, T* pointer) {
     if (pointer == NULL) {
       *ss_ << "(null)";
     } else {
@@ -210,7 +210,7 @@ class GTEST_API_ Message {
     }
   }
   template <typename T>
-  inline void StreamHelper(internal::false_type /*is_pointer*/,
+  inline v.. StreamHelper(internal::false_type /*is_pointer*/,
                            const T& value) {
     // See the comments in Message& operator <<(const T&) above for why
     // we need this using statement.
@@ -224,7 +224,7 @@ class GTEST_API_ Message {
 
   // We declare (but don't implement) this to prevent the compiler
   // from implementing the assignment operator.
-  void operator=(const Message&);
+  v.. operator=(const Message&);
 };
 
 // Streams a Message to an ostream.

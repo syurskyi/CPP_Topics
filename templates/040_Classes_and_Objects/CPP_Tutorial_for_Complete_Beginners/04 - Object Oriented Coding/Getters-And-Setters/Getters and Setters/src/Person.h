@@ -6,7 +6,7 @@
  */
 
 #ifndef PERSON_H_
-#define PERSON_H_
+_de.. PERSON_H_
 
 
 #include <iostream>
@@ -20,7 +20,7 @@ private:
 public:
 	Person();
 	string toString();
-	void setName(string newName);
+	v.. setName(string newName);
 	string getName();
 };
 

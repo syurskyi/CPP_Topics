@@ -40,7 +40,7 @@
 //
 
 #ifndef GTEST_INCLUDE_GTEST_GTEST_PARAM_TEST_H_
-#define GTEST_INCLUDE_GTEST_GTEST_PARAM_TEST_H_
+_de.. GTEST_INCLUDE_GTEST_GTEST_PARAM_TEST_H_
 
 
 // Value-parameterized tests allow you to test your code with different
@@ -1376,7 +1376,7 @@ internal::CartesianProductHolder10<Generator1, Generator2, Generator3,
       : public test_case_name { \
    public: \
     GTEST_TEST_CLASS_NAME_(test_case_name, test_name)() {} \
-    virtual void TestBody(); \
+    virtual v.. TestBody(); \
    private: \
     static int AddToRegistry() { \
       ::testing::UnitTest::GetInstance()->parameterized_test_registry(). \
@@ -1398,7 +1398,7 @@ internal::CartesianProductHolder10<Generator1, Generator2, Generator3,
   int GTEST_TEST_CLASS_NAME_(test_case_name, \
                              test_name)::gtest_registering_dummy_ = \
       GTEST_TEST_CLASS_NAME_(test_case_name, test_name)::AddToRegistry(); \
-  void GTEST_TEST_CLASS_NAME_(test_case_name, test_name)::TestBody()
+  v.. GTEST_TEST_CLASS_NAME_(test_case_name, test_name)::TestBody()
 
 // The optional last argument to INSTANTIATE_TEST_CASE_P allows the user
 // to specify a function or functor that generates custom test name suffixes
@@ -1412,7 +1412,7 @@ internal::CartesianProductHolder10<Generator1, Generator2, Generator3,
 // alphanumeric characters or underscore. Because PrintToString adds quotes
 // to std::string and C strings, it won't work for these types.
 
-#define INSTANTIATE_TEST_CASE_P(prefix, test_case_name, generator, ...)        \
+_de.. INSTANTIATE_TEST_CASE_P(prefix, test_case_name, generator, ...)        \
   static ::testing::internal::ParamGenerator<test_case_name::ParamType>        \
       gtest_##prefix##test_case_name##_EvalGenerator_() {                      \
     return generator;                                                          \

@@ -1,30 +1,30 @@
 #ifndef FACADE_H
-#define FACADE_H
+_de.. FACADE_H
 
 ? "meta_strategy.h"
 
 class Alarm
 {
 public:
-    void alarmOn();
+    v.. alarmOn();
 
-    void alarmOff();
+    v.. alarmOff();
 };
 
 class Ac
 {
 public:
-    void acOn();
+    v.. acOn();
 
-    void acOff();
+    v.. acOff();
 };
 
 class Tv
 {
 public:
-    void tvOn();
+    v.. tvOn();
 
-    void tvOff();
+    v.. tvOff();
 };
 
 class HouseFacade
@@ -36,9 +36,9 @@ class HouseFacade
 public:
     HouseFacade();
 
-    void goToWork();
+    v.. goToWork();
 
-    void comeHome();
+    v.. comeHome();
 };
 
 class ClientFacade : public MetaStrategy
@@ -46,7 +46,7 @@ class ClientFacade : public MetaStrategy
 public:
     ClientFacade() = default;
 
-    void run() override;
+    v.. run() override;
 };
 
 #endif

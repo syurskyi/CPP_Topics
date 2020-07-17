@@ -13,11 +13,11 @@ class EventLoop {
     std::queue<Event> event_queue;
     std::stack<Handler *> handlers;
 public:
-    void send(EventCode code) {
+    v.. send(EventCode code) {
         event_queue.push({code});
     }
 
-    void add(Handler *handler) {
+    v.. add(Handler *handler) {
         handlers.push(handler);
     }
 

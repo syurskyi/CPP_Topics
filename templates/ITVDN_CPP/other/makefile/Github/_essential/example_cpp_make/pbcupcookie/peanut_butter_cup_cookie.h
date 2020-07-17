@@ -1,5 +1,5 @@
 #ifndef PEANUT_BUTTER_CUP_COOKIE_H
-#define PEANUT_BUTTER_CUP_COOKIE_H
+_de.. PEANUT_BUTTER_CUP_COOKIE_H
 
 ? "peanut_butter_cup.h"
 ? "cookie.h"
@@ -7,7 +7,7 @@
 class PeanutButterCupCookie {
 public:
     PeanutButterCupCookie(PeanutButterCup& pb, Cookie& c);
-    void eat();
+    v.. eat();
     PeanutButterCupCookie MakeCookie();
     bool IsEaten();
 private:

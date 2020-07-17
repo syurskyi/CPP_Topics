@@ -2,12 +2,12 @@
 u.. s..
 
 #ifndef NAME_H
-#define NAME_H
+_de.. NAME_H
 class Name
 {
   public:
     Name() { };
-    void mynameis();
+    v.. mynameis();
 };
 #endif
 

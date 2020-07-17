@@ -66,7 +66,7 @@
 // confusion with normal linked_ptr.
 
 #ifndef GTEST_INCLUDE_GTEST_INTERNAL_GTEST_LINKED_PTR_H_
-#define GTEST_INCLUDE_GTEST_INTERNAL_GTEST_LINKED_PTR_H_
+_de.. GTEST_INCLUDE_GTEST_INTERNAL_GTEST_LINKED_PTR_H_
 
 ? <stdlib.h>
 ? <assert.h>
@@ -89,7 +89,7 @@ GTEST_API_ GTEST_DECLARE_STATIC_MUTEX_(g_linked_ptr_mutex);
 class linked_ptr_internal {
  public:
   // Create a new circle that includes only this instance.
-  void join_new() {
+  v.. join_new() {
     next_ = this;
   }
 
@@ -105,7 +105,7 @@ class linked_ptr_internal {
   // framework.
 
   // Join an existing circle.
-  void join(linked_ptr_internal const* ptr)
+  v.. join(linked_ptr_internal const* ptr)
       GTEST_LOCK_EXCLUDED_(g_linked_ptr_mutex) {
     MutexLock lock(&g_linked_ptr_mutex);
 
@@ -175,7 +175,7 @@ class linked_ptr {
   }
 
   // Smart pointer members.
-  void reset(T* ptr = NULL) {
+  v.. reset(T* ptr = NULL) {
     depart();
     capture(ptr);
   }
@@ -201,16 +201,16 @@ class linked_ptr {
   T* value_;
   linked_ptr_internal link_;
 
-  void depart() {
+  v.. depart() {
     if (link_.depart()) delete value_;
   }
 
-  void capture(T* ptr) {
+  v.. capture(T* ptr) {
     value_ = ptr;
     link_.join_new();
   }
 
-  template <typename U> void copy(linked_ptr<U> const* ptr) {
+  template <typename U> v.. copy(linked_ptr<U> const* ptr) {
     value_ = ptr->get();
     if (value_)
       link_.join(&ptr->link_);

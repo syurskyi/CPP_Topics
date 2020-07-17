@@ -65,18 +65,18 @@ namespace xray {
         }
 
         template<typename U, typename... Args>
-        void construct(U *p, Args &&... args) {
+        v.. construct(U *p, Args &&... args) {
             ((std::cout << p << " construct(p, ") << ... << args) << ");" << std::endl;
             ::new(p)U(std::forward<Args>(args)...);
         }
 
         template<typename U>
-        void destroy(U *p) {
+        v.. destroy(U *p) {
             std::cout << p << " destroy(p);" << std::endl;
             p->~U();
         }
 
-        void deallocate(T *p, std::size_t n) {
+        v.. deallocate(T *p, std::size_t n) {
             std::cout << p << " deallocate(p, " << n << "); // deallocate " << n << " * " << sizeof(T) << " = "
                       << n * sizeof(T) << " bytes" << std::endl;
             std::free(p);

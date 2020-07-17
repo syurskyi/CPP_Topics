@@ -36,7 +36,7 @@
 // Implements a subset of TR1 tuple needed by Google Test and Google Mock.
 
 #ifndef GTEST_INCLUDE_GTEST_INTERNAL_GTEST_TUPLE_H_
-#define GTEST_INCLUDE_GTEST_INTERNAL_GTEST_TUPLE_H_
+_de.. GTEST_INCLUDE_GTEST_INTERNAL_GTEST_TUPLE_H_
 
 ? <utility>  // For ::std::pair.
 
@@ -62,47 +62,47 @@ GTEST_USE_OWN_TR1_TUPLE must be set to 0 on those compilers."
 #endif
 
 // GTEST_n_TUPLE_(T) is the type of an n-tuple.
-#define GTEST_0_TUPLE_(T) tuple<>
-#define GTEST_1_TUPLE_(T) tuple<T##0, void, void, void, void, void, void, \
-    void, void, void>
-#define GTEST_2_TUPLE_(T) tuple<T##0, T##1, void, void, void, void, void, \
-    void, void, void>
-#define GTEST_3_TUPLE_(T) tuple<T##0, T##1, T##2, void, void, void, void, \
-    void, void, void>
-#define GTEST_4_TUPLE_(T) tuple<T##0, T##1, T##2, T##3, void, void, void, \
-    void, void, void>
-#define GTEST_5_TUPLE_(T) tuple<T##0, T##1, T##2, T##3, T##4, void, void, \
-    void, void, void>
-#define GTEST_6_TUPLE_(T) tuple<T##0, T##1, T##2, T##3, T##4, T##5, void, \
-    void, void, void>
-#define GTEST_7_TUPLE_(T) tuple<T##0, T##1, T##2, T##3, T##4, T##5, T##6, \
-    void, void, void>
-#define GTEST_8_TUPLE_(T) tuple<T##0, T##1, T##2, T##3, T##4, T##5, T##6, \
-    T##7, void, void>
-#define GTEST_9_TUPLE_(T) tuple<T##0, T##1, T##2, T##3, T##4, T##5, T##6, \
-    T##7, T##8, void>
-#define GTEST_10_TUPLE_(T) tuple<T##0, T##1, T##2, T##3, T##4, T##5, T##6, \
+_de.. GTEST_0_TUPLE_(T) tuple<>
+_de.. GTEST_1_TUPLE_(T) tuple<T##0, v.., v.., v.., v.., v.., v.., \
+    v.., v.., v..>
+_de.. GTEST_2_TUPLE_(T) tuple<T##0, T##1, v.., v.., v.., v.., v.., \
+    v.., v.., v..>
+_de.. GTEST_3_TUPLE_(T) tuple<T##0, T##1, T##2, v.., v.., v.., v.., \
+    v.., v.., v..>
+_de.. GTEST_4_TUPLE_(T) tuple<T##0, T##1, T##2, T##3, v.., v.., v.., \
+    v.., v.., v..>
+_de.. GTEST_5_TUPLE_(T) tuple<T##0, T##1, T##2, T##3, T##4, v.., v.., \
+    v.., v.., v..>
+_de.. GTEST_6_TUPLE_(T) tuple<T##0, T##1, T##2, T##3, T##4, T##5, v.., \
+    v.., v.., v..>
+_de.. GTEST_7_TUPLE_(T) tuple<T##0, T##1, T##2, T##3, T##4, T##5, T##6, \
+    v.., v.., v..>
+_de.. GTEST_8_TUPLE_(T) tuple<T##0, T##1, T##2, T##3, T##4, T##5, T##6, \
+    T##7, v.., v..>
+_de.. GTEST_9_TUPLE_(T) tuple<T##0, T##1, T##2, T##3, T##4, T##5, T##6, \
+    T##7, T##8, v..>
+_de.. GTEST_10_TUPLE_(T) tuple<T##0, T##1, T##2, T##3, T##4, T##5, T##6, \
     T##7, T##8, T##9>
 
 // GTEST_n_TYPENAMES_(T) declares a list of n typenames.
-#define GTEST_0_TYPENAMES_(T)
-#define GTEST_1_TYPENAMES_(T) typename T##0
-#define GTEST_2_TYPENAMES_(T) typename T##0, typename T##1
-#define GTEST_3_TYPENAMES_(T) typename T##0, typename T##1, typename T##2
-#define GTEST_4_TYPENAMES_(T) typename T##0, typename T##1, typename T##2, \
+_de.. GTEST_0_TYPENAMES_(T)
+_de.. GTEST_1_TYPENAMES_(T) typename T##0
+_de.. GTEST_2_TYPENAMES_(T) typename T##0, typename T##1
+_de.. GTEST_3_TYPENAMES_(T) typename T##0, typename T##1, typename T##2
+_de.. GTEST_4_TYPENAMES_(T) typename T##0, typename T##1, typename T##2, \
     typename T##3
-#define GTEST_5_TYPENAMES_(T) typename T##0, typename T##1, typename T##2, \
+_de.. GTEST_5_TYPENAMES_(T) typename T##0, typename T##1, typename T##2, \
     typename T##3, typename T##4
-#define GTEST_6_TYPENAMES_(T) typename T##0, typename T##1, typename T##2, \
+_de.. GTEST_6_TYPENAMES_(T) typename T##0, typename T##1, typename T##2, \
     typename T##3, typename T##4, typename T##5
-#define GTEST_7_TYPENAMES_(T) typename T##0, typename T##1, typename T##2, \
+_de.. GTEST_7_TYPENAMES_(T) typename T##0, typename T##1, typename T##2, \
     typename T##3, typename T##4, typename T##5, typename T##6
-#define GTEST_8_TYPENAMES_(T) typename T##0, typename T##1, typename T##2, \
+_de.. GTEST_8_TYPENAMES_(T) typename T##0, typename T##1, typename T##2, \
     typename T##3, typename T##4, typename T##5, typename T##6, typename T##7
-#define GTEST_9_TYPENAMES_(T) typename T##0, typename T##1, typename T##2, \
+_de.. GTEST_9_TYPENAMES_(T) typename T##0, typename T##1, typename T##2, \
     typename T##3, typename T##4, typename T##5, typename T##6, \
     typename T##7, typename T##8
-#define GTEST_10_TYPENAMES_(T) typename T##0, typename T##1, typename T##2, \
+_de.. GTEST_10_TYPENAMES_(T) typename T##0, typename T##1, typename T##2, \
     typename T##3, typename T##4, typename T##5, typename T##6, \
     typename T##7, typename T##8, typename T##9
 
@@ -112,10 +112,10 @@ GTEST_USE_OWN_TR1_TUPLE must be set to 0 on those compilers."
 namespace std {
 namespace tr1 {
 
-template <typename T0 = void, typename T1 = void, typename T2 = void,
-    typename T3 = void, typename T4 = void, typename T5 = void,
-    typename T6 = void, typename T7 = void, typename T8 = void,
-    typename T9 = void>
+template <typename T0 = v.., typename T1 = v.., typename T2 = v..,
+    typename T3 = v.., typename T4 = v.., typename T5 = v..,
+    typename T6 = v.., typename T7 = v.., typename T8 = v..,
+    typename T9 = v..>
 class tuple;
 
 // Anything in namespace gtest_internal is Google Test's INTERNAL
@@ -129,7 +129,7 @@ template <typename T>
 struct ByRef<T&> { typedef T& type; };  // NOLINT
 
 // A handy wrapper for ByRef.
-#define GTEST_BY_REF_(T) typename ::std::tr1::gtest_internal::ByRef<T>::type
+_de.. GTEST_BY_REF_(T) typename ::std::tr1::gtest_internal::ByRef<T>::type
 
 // AddRef<T>::type is T if T is a reference; otherwise it's T&.  This
 // is the same as tr1::add_reference<T>::type.
@@ -139,7 +139,7 @@ template <typename T>
 struct AddRef<T&> { typedef T& type; };  // NOLINT
 
 // A handy wrapper for AddRef.
-#define GTEST_ADD_REF_(T) typename ::std::tr1::gtest_internal::AddRef<T>::type
+_de.. GTEST_ADD_REF_(T) typename ::std::tr1::gtest_internal::AddRef<T>::type
 
 // A helper for implementing get<k>().
 template <int k> class Get;
@@ -798,7 +798,7 @@ struct tuple_element {
       k < (tuple_size<Tuple>::value), k, Tuple>::type type;
 };
 
-#define GTEST_TUPLE_ELEMENT_(k, Tuple) typename tuple_element<k, Tuple >::type
+_de.. GTEST_TUPLE_ELEMENT_(k, Tuple) typename tuple_element<k, Tuple >::type
 
 // 6.1.3.4 Element access.
 

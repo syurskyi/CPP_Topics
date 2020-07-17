@@ -32,7 +32,7 @@
 // Type and function utilities for implementing parameterized tests.
 
 #ifndef GTEST_INCLUDE_GTEST_INTERNAL_GTEST_PARAM_UTIL_H_
-#define GTEST_INCLUDE_GTEST_INTERNAL_GTEST_PARAM_UTIL_H_
+_de.. GTEST_INCLUDE_GTEST_INTERNAL_GTEST_PARAM_UTIL_H_
 
 ? <ctype.h>
 
@@ -76,7 +76,7 @@ namespace internal {
 // fixture class for the same test case. This may happen when
 // TEST_P macro is used to define two tests with the same name
 // but in different namespaces.
-GTEST_API_ void ReportInvalidTestCaseType(const char* test_case_name,
+GTEST_API_ v.. ReportInvalidTestCaseType(const char* test_case_name,
                                           CodeLocation code_location);
 
 template <typename> class ParamGeneratorInterface;
@@ -96,7 +96,7 @@ class ParamIteratorInterface {
   // provided by the generator. The caller is responsible
   // for not calling Advance() on an iterator equal to
   // BaseGenerator()->End().
-  virtual void Advance() = 0;
+  virtual v.. Advance() = 0;
   // Clones the iterator object. Used for implementing copy semantics
   // of ParamIterator<T>.
   virtual ParamIteratorInterface* Clone() const = 0;
@@ -224,7 +224,7 @@ class RangeGenerator : public ParamGeneratorInterface<T> {
     virtual const ParamGeneratorInterface<T>* BaseGenerator() const {
       return base_;
     }
-    virtual void Advance() {
+    virtual v.. Advance() {
       value_ = static_cast<T>(value_ + step_);
       index_++;
     }
@@ -250,7 +250,7 @@ class RangeGenerator : public ParamGeneratorInterface<T> {
           step_(other.step_) {}
 
     // No implementation - assignment is unsupported.
-    void operator=(const Iterator& other);
+    v.. operator=(const Iterator& other);
 
     const ParamGeneratorInterface<T>* const base_;
     T value_;
@@ -268,7 +268,7 @@ class RangeGenerator : public ParamGeneratorInterface<T> {
   }
 
   // No implementation - assignment is unsupported.
-  void operator=(const RangeGenerator& other);
+  v.. operator=(const RangeGenerator& other);
 
   const T begin_;
   const T end_;
@@ -311,7 +311,7 @@ class ValuesInIteratorRangeGenerator : public ParamGeneratorInterface<T> {
     virtual const ParamGeneratorInterface<T>* BaseGenerator() const {
       return base_;
     }
-    virtual void Advance() {
+    virtual v.. Advance() {
       ++iterator_;
       value_.reset();
     }
@@ -359,7 +359,7 @@ class ValuesInIteratorRangeGenerator : public ParamGeneratorInterface<T> {
   };  // class ValuesInIteratorRangeGenerator::Iterator
 
   // No implementation - assignment is unsupported.
-  void operator=(const ValuesInIteratorRangeGenerator& other);
+  v.. operator=(const ValuesInIteratorRangeGenerator& other);
 
   const ContainerType container_;
 };  // class ValuesInIteratorRangeGenerator
@@ -474,7 +474,7 @@ class ParameterizedTestCaseInfoBase {
   // test case right before running them in RUN_ALL_TESTS macro.
   // This method should not be called more then once on any single
   // instance of a ParameterizedTestCaseInfoBase derived class.
-  virtual void RegisterTests() = 0;
+  virtual v.. RegisterTests() = 0;
 
  protected:
   ParameterizedTestCaseInfoBase() {}
@@ -515,7 +515,7 @@ class ParameterizedTestCaseInfo : public ParameterizedTestCaseInfoBase {
   // prefix). test_base_name is the name of an individual test without
   // parameter index. For the test SequenceA/FooTest.DoBar/1 FooTest is
   // test case base name and DoBar is test base name.
-  void AddTestPattern(const char* test_case_name,
+  v.. AddTestPattern(const char* test_case_name,
                       const char* test_base_name,
                       TestMetaFactoryBase<ParamType>* meta_factory) {
     tests_.push_back(linked_ptr<TestInfo>(new TestInfo(test_case_name,
@@ -537,7 +537,7 @@ class ParameterizedTestCaseInfo : public ParameterizedTestCaseInfoBase {
   // This method should not be called more then once on any single
   // instance of a ParameterizedTestCaseInfoBase derived class.
   // UnitTest has a guard to prevent from calling this method more then once.
-  virtual void RegisterTests() {
+  virtual v.. RegisterTests() {
     for (typename TestInfoContainer::iterator test_it = tests_.begin();
          test_it != tests_.end(); ++test_it) {
       linked_ptr<TestInfo> test_info = *test_it;
@@ -702,7 +702,7 @@ class ParameterizedTestCaseRegistry {
     }
     return typed_test_info;
   }
-  void RegisterTests() {
+  v.. RegisterTests() {
     for (TestCaseInfoContainer::iterator it = test_case_infos_.begin();
          it != test_case_infos_.end(); ++it) {
       (*it)->RegisterTests();

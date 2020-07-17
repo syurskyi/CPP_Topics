@@ -12,7 +12,7 @@ public:
     Mammal(const Mammal&);
 
     ~Mammal();
-    void feed_milk();
+    v.. feed_milk();
     uint get_paws()
     {
         return paws;

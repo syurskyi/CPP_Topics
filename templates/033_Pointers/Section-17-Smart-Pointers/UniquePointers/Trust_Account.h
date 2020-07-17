@@ -1,5 +1,5 @@
 #ifndef _TRUST_ACCOUNT_H_
-#define _TRUST_ACCOUNT_H_
+_de.. _TRUST_ACCOUNT_H_
 
 #include "Savings_Account.h"
 
@@ -22,7 +22,7 @@ public:
     
     // Only allowed maximum of 3 withdrawals, each can be up to a maximum of 20% of the account's value
     virtual bool withdraw(double amount) override;
-    virtual void print(std::ostream &os) const override;
+    virtual v.. print(std::ostream &os) const override;
 
 };
 

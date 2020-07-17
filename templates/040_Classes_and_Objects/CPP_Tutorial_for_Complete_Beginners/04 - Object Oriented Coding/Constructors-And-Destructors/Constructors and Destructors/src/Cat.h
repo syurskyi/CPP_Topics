@@ -6,14 +6,14 @@
  */
 
 #ifndef CAT_H_
-#define CAT_H_
+_de.. CAT_H_
 
 class Cat {
 private:
 	bool happy;
 
 public:
-	void speak();
+	v.. speak();
 	Cat();
 	~Cat();
 

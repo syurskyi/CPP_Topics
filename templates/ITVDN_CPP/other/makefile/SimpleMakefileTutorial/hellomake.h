@@ -6,4 +6,4 @@
 example include file
 */
 
-void myPrintHelloMake(void);
+v.. myPrintHelloMake(v..);

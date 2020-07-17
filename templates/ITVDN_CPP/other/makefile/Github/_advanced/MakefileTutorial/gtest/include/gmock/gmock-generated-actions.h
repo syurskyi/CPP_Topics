@@ -38,7 +38,7 @@
 // This file implements some commonly used variadic actions.
 
 #ifndef GMOCK_INCLUDE_GMOCK_GMOCK_GENERATED_ACTIONS_H_
-#define GMOCK_INCLUDE_GMOCK_GMOCK_GENERATED_ACTIONS_H_
+_de.. GMOCK_INCLUDE_GMOCK_GMOCK_GENERATED_ACTIONS_H_
 
 ? "gmock/gmock-actions.h"
 ? "gmock/internal/gmock-port.h"
@@ -349,7 +349,7 @@ class InvokeCallbackAction {
 
 // An INTERNAL macro for extracting the type of a tuple field.  It's
 // subject to change without notice - DO NOT USE IN USER CODE!
-#define GMOCK_FIELD_(Tuple, N) \
+_de.. GMOCK_FIELD_(Tuple, N) \
     typename ::testing::tuple_element<N, Tuple>::type
 
 // SelectArgs<Result, ArgumentTuple, k1, k2, ..., k_n>::type is the
@@ -958,7 +958,7 @@ DoAll(Action1 a1, Action2 a2, Action3 a3, Action4 a4, Action5 a5, Action6 a6,
 // on https://github.com/google/googletest/blob/master/googlemock/docs/CookBook.md
 
 // An internal macro needed for implementing ACTION*().
-#define GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_\
+_de.. GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_\
     const args_type& args GTEST_ATTRIBUTE_UNUSED_, \
     arg0_type arg0 GTEST_ATTRIBUTE_UNUSED_, \
     arg1_type arg1 GTEST_ATTRIBUTE_UNUSED_, \
@@ -1053,123 +1053,123 @@ DoAll(Action1 a1, Action2 a2, Action3 a3, Action4 a4, Action5 a5, Action6 a6,
 // combinations of m and n.
 
 // Declares the template parameters.
-#define GMOCK_INTERNAL_DECL_HAS_1_TEMPLATE_PARAMS(kind0, name0) kind0 name0
-#define GMOCK_INTERNAL_DECL_HAS_2_TEMPLATE_PARAMS(kind0, name0, kind1, \
+_de.. GMOCK_INTERNAL_DECL_HAS_1_TEMPLATE_PARAMS(kind0, name0) kind0 name0
+_de.. GMOCK_INTERNAL_DECL_HAS_2_TEMPLATE_PARAMS(kind0, name0, kind1, \
     name1) kind0 name0, kind1 name1
-#define GMOCK_INTERNAL_DECL_HAS_3_TEMPLATE_PARAMS(kind0, name0, kind1, name1, \
+_de.. GMOCK_INTERNAL_DECL_HAS_3_TEMPLATE_PARAMS(kind0, name0, kind1, name1, \
     kind2, name2) kind0 name0, kind1 name1, kind2 name2
-#define GMOCK_INTERNAL_DECL_HAS_4_TEMPLATE_PARAMS(kind0, name0, kind1, name1, \
+_de.. GMOCK_INTERNAL_DECL_HAS_4_TEMPLATE_PARAMS(kind0, name0, kind1, name1, \
     kind2, name2, kind3, name3) kind0 name0, kind1 name1, kind2 name2, \
     kind3 name3
-#define GMOCK_INTERNAL_DECL_HAS_5_TEMPLATE_PARAMS(kind0, name0, kind1, name1, \
+_de.. GMOCK_INTERNAL_DECL_HAS_5_TEMPLATE_PARAMS(kind0, name0, kind1, name1, \
     kind2, name2, kind3, name3, kind4, name4) kind0 name0, kind1 name1, \
     kind2 name2, kind3 name3, kind4 name4
-#define GMOCK_INTERNAL_DECL_HAS_6_TEMPLATE_PARAMS(kind0, name0, kind1, name1, \
+_de.. GMOCK_INTERNAL_DECL_HAS_6_TEMPLATE_PARAMS(kind0, name0, kind1, name1, \
     kind2, name2, kind3, name3, kind4, name4, kind5, name5) kind0 name0, \
     kind1 name1, kind2 name2, kind3 name3, kind4 name4, kind5 name5
-#define GMOCK_INTERNAL_DECL_HAS_7_TEMPLATE_PARAMS(kind0, name0, kind1, name1, \
+_de.. GMOCK_INTERNAL_DECL_HAS_7_TEMPLATE_PARAMS(kind0, name0, kind1, name1, \
     kind2, name2, kind3, name3, kind4, name4, kind5, name5, kind6, \
     name6) kind0 name0, kind1 name1, kind2 name2, kind3 name3, kind4 name4, \
     kind5 name5, kind6 name6
-#define GMOCK_INTERNAL_DECL_HAS_8_TEMPLATE_PARAMS(kind0, name0, kind1, name1, \
+_de.. GMOCK_INTERNAL_DECL_HAS_8_TEMPLATE_PARAMS(kind0, name0, kind1, name1, \
     kind2, name2, kind3, name3, kind4, name4, kind5, name5, kind6, name6, \
     kind7, name7) kind0 name0, kind1 name1, kind2 name2, kind3 name3, \
     kind4 name4, kind5 name5, kind6 name6, kind7 name7
-#define GMOCK_INTERNAL_DECL_HAS_9_TEMPLATE_PARAMS(kind0, name0, kind1, name1, \
+_de.. GMOCK_INTERNAL_DECL_HAS_9_TEMPLATE_PARAMS(kind0, name0, kind1, name1, \
     kind2, name2, kind3, name3, kind4, name4, kind5, name5, kind6, name6, \
     kind7, name7, kind8, name8) kind0 name0, kind1 name1, kind2 name2, \
     kind3 name3, kind4 name4, kind5 name5, kind6 name6, kind7 name7, \
     kind8 name8
-#define GMOCK_INTERNAL_DECL_HAS_10_TEMPLATE_PARAMS(kind0, name0, kind1, \
+_de.. GMOCK_INTERNAL_DECL_HAS_10_TEMPLATE_PARAMS(kind0, name0, kind1, \
     name1, kind2, name2, kind3, name3, kind4, name4, kind5, name5, kind6, \
     name6, kind7, name7, kind8, name8, kind9, name9) kind0 name0, \
     kind1 name1, kind2 name2, kind3 name3, kind4 name4, kind5 name5, \
     kind6 name6, kind7 name7, kind8 name8, kind9 name9
 
 // Lists the template parameters.
-#define GMOCK_INTERNAL_LIST_HAS_1_TEMPLATE_PARAMS(kind0, name0) name0
-#define GMOCK_INTERNAL_LIST_HAS_2_TEMPLATE_PARAMS(kind0, name0, kind1, \
+_de.. GMOCK_INTERNAL_LIST_HAS_1_TEMPLATE_PARAMS(kind0, name0) name0
+_de.. GMOCK_INTERNAL_LIST_HAS_2_TEMPLATE_PARAMS(kind0, name0, kind1, \
     name1) name0, name1
-#define GMOCK_INTERNAL_LIST_HAS_3_TEMPLATE_PARAMS(kind0, name0, kind1, name1, \
+_de.. GMOCK_INTERNAL_LIST_HAS_3_TEMPLATE_PARAMS(kind0, name0, kind1, name1, \
     kind2, name2) name0, name1, name2
-#define GMOCK_INTERNAL_LIST_HAS_4_TEMPLATE_PARAMS(kind0, name0, kind1, name1, \
+_de.. GMOCK_INTERNAL_LIST_HAS_4_TEMPLATE_PARAMS(kind0, name0, kind1, name1, \
     kind2, name2, kind3, name3) name0, name1, name2, name3
-#define GMOCK_INTERNAL_LIST_HAS_5_TEMPLATE_PARAMS(kind0, name0, kind1, name1, \
+_de.. GMOCK_INTERNAL_LIST_HAS_5_TEMPLATE_PARAMS(kind0, name0, kind1, name1, \
     kind2, name2, kind3, name3, kind4, name4) name0, name1, name2, name3, \
     name4
-#define GMOCK_INTERNAL_LIST_HAS_6_TEMPLATE_PARAMS(kind0, name0, kind1, name1, \
+_de.. GMOCK_INTERNAL_LIST_HAS_6_TEMPLATE_PARAMS(kind0, name0, kind1, name1, \
     kind2, name2, kind3, name3, kind4, name4, kind5, name5) name0, name1, \
     name2, name3, name4, name5
-#define GMOCK_INTERNAL_LIST_HAS_7_TEMPLATE_PARAMS(kind0, name0, kind1, name1, \
+_de.. GMOCK_INTERNAL_LIST_HAS_7_TEMPLATE_PARAMS(kind0, name0, kind1, name1, \
     kind2, name2, kind3, name3, kind4, name4, kind5, name5, kind6, \
     name6) name0, name1, name2, name3, name4, name5, name6
-#define GMOCK_INTERNAL_LIST_HAS_8_TEMPLATE_PARAMS(kind0, name0, kind1, name1, \
+_de.. GMOCK_INTERNAL_LIST_HAS_8_TEMPLATE_PARAMS(kind0, name0, kind1, name1, \
     kind2, name2, kind3, name3, kind4, name4, kind5, name5, kind6, name6, \
     kind7, name7) name0, name1, name2, name3, name4, name5, name6, name7
-#define GMOCK_INTERNAL_LIST_HAS_9_TEMPLATE_PARAMS(kind0, name0, kind1, name1, \
+_de.. GMOCK_INTERNAL_LIST_HAS_9_TEMPLATE_PARAMS(kind0, name0, kind1, name1, \
     kind2, name2, kind3, name3, kind4, name4, kind5, name5, kind6, name6, \
     kind7, name7, kind8, name8) name0, name1, name2, name3, name4, name5, \
     name6, name7, name8
-#define GMOCK_INTERNAL_LIST_HAS_10_TEMPLATE_PARAMS(kind0, name0, kind1, \
+_de.. GMOCK_INTERNAL_LIST_HAS_10_TEMPLATE_PARAMS(kind0, name0, kind1, \
     name1, kind2, name2, kind3, name3, kind4, name4, kind5, name5, kind6, \
     name6, kind7, name7, kind8, name8, kind9, name9) name0, name1, name2, \
     name3, name4, name5, name6, name7, name8, name9
 
 // Declares the types of value parameters.
-#define GMOCK_INTERNAL_DECL_TYPE_AND_0_VALUE_PARAMS()
-#define GMOCK_INTERNAL_DECL_TYPE_AND_1_VALUE_PARAMS(p0) , typename p0##_type
-#define GMOCK_INTERNAL_DECL_TYPE_AND_2_VALUE_PARAMS(p0, p1) , \
+_de.. GMOCK_INTERNAL_DECL_TYPE_AND_0_VALUE_PARAMS()
+_de.. GMOCK_INTERNAL_DECL_TYPE_AND_1_VALUE_PARAMS(p0) , typename p0##_type
+_de.. GMOCK_INTERNAL_DECL_TYPE_AND_2_VALUE_PARAMS(p0, p1) , \
     typename p0##_type, typename p1##_type
-#define GMOCK_INTERNAL_DECL_TYPE_AND_3_VALUE_PARAMS(p0, p1, p2) , \
+_de.. GMOCK_INTERNAL_DECL_TYPE_AND_3_VALUE_PARAMS(p0, p1, p2) , \
     typename p0##_type, typename p1##_type, typename p2##_type
-#define GMOCK_INTERNAL_DECL_TYPE_AND_4_VALUE_PARAMS(p0, p1, p2, p3) , \
+_de.. GMOCK_INTERNAL_DECL_TYPE_AND_4_VALUE_PARAMS(p0, p1, p2, p3) , \
     typename p0##_type, typename p1##_type, typename p2##_type, \
     typename p3##_type
-#define GMOCK_INTERNAL_DECL_TYPE_AND_5_VALUE_PARAMS(p0, p1, p2, p3, p4) , \
+_de.. GMOCK_INTERNAL_DECL_TYPE_AND_5_VALUE_PARAMS(p0, p1, p2, p3, p4) , \
     typename p0##_type, typename p1##_type, typename p2##_type, \
     typename p3##_type, typename p4##_type
-#define GMOCK_INTERNAL_DECL_TYPE_AND_6_VALUE_PARAMS(p0, p1, p2, p3, p4, p5) , \
+_de.. GMOCK_INTERNAL_DECL_TYPE_AND_6_VALUE_PARAMS(p0, p1, p2, p3, p4, p5) , \
     typename p0##_type, typename p1##_type, typename p2##_type, \
     typename p3##_type, typename p4##_type, typename p5##_type
-#define GMOCK_INTERNAL_DECL_TYPE_AND_7_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, \
+_de.. GMOCK_INTERNAL_DECL_TYPE_AND_7_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, \
     p6) , typename p0##_type, typename p1##_type, typename p2##_type, \
     typename p3##_type, typename p4##_type, typename p5##_type, \
     typename p6##_type
-#define GMOCK_INTERNAL_DECL_TYPE_AND_8_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, \
+_de.. GMOCK_INTERNAL_DECL_TYPE_AND_8_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, \
     p6, p7) , typename p0##_type, typename p1##_type, typename p2##_type, \
     typename p3##_type, typename p4##_type, typename p5##_type, \
     typename p6##_type, typename p7##_type
-#define GMOCK_INTERNAL_DECL_TYPE_AND_9_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, \
+_de.. GMOCK_INTERNAL_DECL_TYPE_AND_9_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, \
     p6, p7, p8) , typename p0##_type, typename p1##_type, typename p2##_type, \
     typename p3##_type, typename p4##_type, typename p5##_type, \
     typename p6##_type, typename p7##_type, typename p8##_type
-#define GMOCK_INTERNAL_DECL_TYPE_AND_10_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, \
+_de.. GMOCK_INTERNAL_DECL_TYPE_AND_10_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, \
     p6, p7, p8, p9) , typename p0##_type, typename p1##_type, \
     typename p2##_type, typename p3##_type, typename p4##_type, \
     typename p5##_type, typename p6##_type, typename p7##_type, \
     typename p8##_type, typename p9##_type
 
 // Initializes the value parameters.
-#define GMOCK_INTERNAL_INIT_AND_0_VALUE_PARAMS()\
+_de.. GMOCK_INTERNAL_INIT_AND_0_VALUE_PARAMS()\
     ()
-#define GMOCK_INTERNAL_INIT_AND_1_VALUE_PARAMS(p0)\
+_de.. GMOCK_INTERNAL_INIT_AND_1_VALUE_PARAMS(p0)\
     (p0##_type gmock_p0) : p0(::testing::internal::move(gmock_p0))
-#define GMOCK_INTERNAL_INIT_AND_2_VALUE_PARAMS(p0, p1)\
+_de.. GMOCK_INTERNAL_INIT_AND_2_VALUE_PARAMS(p0, p1)\
     (p0##_type gmock_p0, \
         p1##_type gmock_p1) : p0(::testing::internal::move(gmock_p0)), \
         p1(::testing::internal::move(gmock_p1))
-#define GMOCK_INTERNAL_INIT_AND_3_VALUE_PARAMS(p0, p1, p2)\
+_de.. GMOCK_INTERNAL_INIT_AND_3_VALUE_PARAMS(p0, p1, p2)\
     (p0##_type gmock_p0, p1##_type gmock_p1, \
         p2##_type gmock_p2) : p0(::testing::internal::move(gmock_p0)), \
         p1(::testing::internal::move(gmock_p1)), \
         p2(::testing::internal::move(gmock_p2))
-#define GMOCK_INTERNAL_INIT_AND_4_VALUE_PARAMS(p0, p1, p2, p3)\
+_de.. GMOCK_INTERNAL_INIT_AND_4_VALUE_PARAMS(p0, p1, p2, p3)\
     (p0##_type gmock_p0, p1##_type gmock_p1, p2##_type gmock_p2, \
         p3##_type gmock_p3) : p0(::testing::internal::move(gmock_p0)), \
         p1(::testing::internal::move(gmock_p1)), \
         p2(::testing::internal::move(gmock_p2)), \
         p3(::testing::internal::move(gmock_p3))
-#define GMOCK_INTERNAL_INIT_AND_5_VALUE_PARAMS(p0, p1, p2, p3, p4)\
+_de.. GMOCK_INTERNAL_INIT_AND_5_VALUE_PARAMS(p0, p1, p2, p3, p4)\
     (p0##_type gmock_p0, p1##_type gmock_p1, p2##_type gmock_p2, \
         p3##_type gmock_p3, \
         p4##_type gmock_p4) : p0(::testing::internal::move(gmock_p0)), \
@@ -1177,7 +1177,7 @@ DoAll(Action1 a1, Action2 a2, Action3 a3, Action4 a4, Action5 a5, Action6 a6,
         p2(::testing::internal::move(gmock_p2)), \
         p3(::testing::internal::move(gmock_p3)), \
         p4(::testing::internal::move(gmock_p4))
-#define GMOCK_INTERNAL_INIT_AND_6_VALUE_PARAMS(p0, p1, p2, p3, p4, p5)\
+_de.. GMOCK_INTERNAL_INIT_AND_6_VALUE_PARAMS(p0, p1, p2, p3, p4, p5)\
     (p0##_type gmock_p0, p1##_type gmock_p1, p2##_type gmock_p2, \
         p3##_type gmock_p3, p4##_type gmock_p4, \
         p5##_type gmock_p5) : p0(::testing::internal::move(gmock_p0)), \
@@ -1186,7 +1186,7 @@ DoAll(Action1 a1, Action2 a2, Action3 a3, Action4 a4, Action5 a5, Action6 a6,
         p3(::testing::internal::move(gmock_p3)), \
         p4(::testing::internal::move(gmock_p4)), \
         p5(::testing::internal::move(gmock_p5))
-#define GMOCK_INTERNAL_INIT_AND_7_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6)\
+_de.. GMOCK_INTERNAL_INIT_AND_7_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6)\
     (p0##_type gmock_p0, p1##_type gmock_p1, p2##_type gmock_p2, \
         p3##_type gmock_p3, p4##_type gmock_p4, p5##_type gmock_p5, \
         p6##_type gmock_p6) : p0(::testing::internal::move(gmock_p0)), \
@@ -1196,7 +1196,7 @@ DoAll(Action1 a1, Action2 a2, Action3 a3, Action4 a4, Action5 a5, Action6 a6,
         p4(::testing::internal::move(gmock_p4)), \
         p5(::testing::internal::move(gmock_p5)), \
         p6(::testing::internal::move(gmock_p6))
-#define GMOCK_INTERNAL_INIT_AND_8_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, p7)\
+_de.. GMOCK_INTERNAL_INIT_AND_8_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, p7)\
     (p0##_type gmock_p0, p1##_type gmock_p1, p2##_type gmock_p2, \
         p3##_type gmock_p3, p4##_type gmock_p4, p5##_type gmock_p5, \
         p6##_type gmock_p6, \
@@ -1208,7 +1208,7 @@ DoAll(Action1 a1, Action2 a2, Action3 a3, Action4 a4, Action5 a5, Action6 a6,
         p5(::testing::internal::move(gmock_p5)), \
         p6(::testing::internal::move(gmock_p6)), \
         p7(::testing::internal::move(gmock_p7))
-#define GMOCK_INTERNAL_INIT_AND_9_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, \
+_de.. GMOCK_INTERNAL_INIT_AND_9_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, \
     p7, p8)\
     (p0##_type gmock_p0, p1##_type gmock_p1, p2##_type gmock_p2, \
         p3##_type gmock_p3, p4##_type gmock_p4, p5##_type gmock_p5, \
@@ -1222,7 +1222,7 @@ DoAll(Action1 a1, Action2 a2, Action3 a3, Action4 a4, Action5 a5, Action6 a6,
         p6(::testing::internal::move(gmock_p6)), \
         p7(::testing::internal::move(gmock_p7)), \
         p8(::testing::internal::move(gmock_p8))
-#define GMOCK_INTERNAL_INIT_AND_10_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, \
+_de.. GMOCK_INTERNAL_INIT_AND_10_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, \
     p7, p8, p9)\
     (p0##_type gmock_p0, p1##_type gmock_p1, p2##_type gmock_p2, \
         p3##_type gmock_p3, p4##_type gmock_p4, p5##_type gmock_p5, \
@@ -1239,127 +1239,127 @@ DoAll(Action1 a1, Action2 a2, Action3 a3, Action4 a4, Action5 a5, Action6 a6,
         p9(::testing::internal::move(gmock_p9))
 
 // Declares the fields for storing the value parameters.
-#define GMOCK_INTERNAL_DEFN_AND_0_VALUE_PARAMS()
-#define GMOCK_INTERNAL_DEFN_AND_1_VALUE_PARAMS(p0) p0##_type p0;
-#define GMOCK_INTERNAL_DEFN_AND_2_VALUE_PARAMS(p0, p1) p0##_type p0; \
+_de.. GMOCK_INTERNAL_DEFN_AND_0_VALUE_PARAMS()
+_de.. GMOCK_INTERNAL_DEFN_AND_1_VALUE_PARAMS(p0) p0##_type p0;
+_de.. GMOCK_INTERNAL_DEFN_AND_2_VALUE_PARAMS(p0, p1) p0##_type p0; \
     p1##_type p1;
-#define GMOCK_INTERNAL_DEFN_AND_3_VALUE_PARAMS(p0, p1, p2) p0##_type p0; \
+_de.. GMOCK_INTERNAL_DEFN_AND_3_VALUE_PARAMS(p0, p1, p2) p0##_type p0; \
     p1##_type p1; p2##_type p2;
-#define GMOCK_INTERNAL_DEFN_AND_4_VALUE_PARAMS(p0, p1, p2, p3) p0##_type p0; \
+_de.. GMOCK_INTERNAL_DEFN_AND_4_VALUE_PARAMS(p0, p1, p2, p3) p0##_type p0; \
     p1##_type p1; p2##_type p2; p3##_type p3;
-#define GMOCK_INTERNAL_DEFN_AND_5_VALUE_PARAMS(p0, p1, p2, p3, \
+_de.. GMOCK_INTERNAL_DEFN_AND_5_VALUE_PARAMS(p0, p1, p2, p3, \
     p4) p0##_type p0; p1##_type p1; p2##_type p2; p3##_type p3; p4##_type p4;
-#define GMOCK_INTERNAL_DEFN_AND_6_VALUE_PARAMS(p0, p1, p2, p3, p4, \
+_de.. GMOCK_INTERNAL_DEFN_AND_6_VALUE_PARAMS(p0, p1, p2, p3, p4, \
     p5) p0##_type p0; p1##_type p1; p2##_type p2; p3##_type p3; p4##_type p4; \
     p5##_type p5;
-#define GMOCK_INTERNAL_DEFN_AND_7_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, \
+_de.. GMOCK_INTERNAL_DEFN_AND_7_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, \
     p6) p0##_type p0; p1##_type p1; p2##_type p2; p3##_type p3; p4##_type p4; \
     p5##_type p5; p6##_type p6;
-#define GMOCK_INTERNAL_DEFN_AND_8_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, \
+_de.. GMOCK_INTERNAL_DEFN_AND_8_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, \
     p7) p0##_type p0; p1##_type p1; p2##_type p2; p3##_type p3; p4##_type p4; \
     p5##_type p5; p6##_type p6; p7##_type p7;
-#define GMOCK_INTERNAL_DEFN_AND_9_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, \
+_de.. GMOCK_INTERNAL_DEFN_AND_9_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, \
     p7, p8) p0##_type p0; p1##_type p1; p2##_type p2; p3##_type p3; \
     p4##_type p4; p5##_type p5; p6##_type p6; p7##_type p7; p8##_type p8;
-#define GMOCK_INTERNAL_DEFN_AND_10_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, \
+_de.. GMOCK_INTERNAL_DEFN_AND_10_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, \
     p7, p8, p9) p0##_type p0; p1##_type p1; p2##_type p2; p3##_type p3; \
     p4##_type p4; p5##_type p5; p6##_type p6; p7##_type p7; p8##_type p8; \
     p9##_type p9;
 
 // Lists the value parameters.
-#define GMOCK_INTERNAL_LIST_AND_0_VALUE_PARAMS()
-#define GMOCK_INTERNAL_LIST_AND_1_VALUE_PARAMS(p0) p0
-#define GMOCK_INTERNAL_LIST_AND_2_VALUE_PARAMS(p0, p1) p0, p1
-#define GMOCK_INTERNAL_LIST_AND_3_VALUE_PARAMS(p0, p1, p2) p0, p1, p2
-#define GMOCK_INTERNAL_LIST_AND_4_VALUE_PARAMS(p0, p1, p2, p3) p0, p1, p2, p3
-#define GMOCK_INTERNAL_LIST_AND_5_VALUE_PARAMS(p0, p1, p2, p3, p4) p0, p1, \
+_de.. GMOCK_INTERNAL_LIST_AND_0_VALUE_PARAMS()
+_de.. GMOCK_INTERNAL_LIST_AND_1_VALUE_PARAMS(p0) p0
+_de.. GMOCK_INTERNAL_LIST_AND_2_VALUE_PARAMS(p0, p1) p0, p1
+_de.. GMOCK_INTERNAL_LIST_AND_3_VALUE_PARAMS(p0, p1, p2) p0, p1, p2
+_de.. GMOCK_INTERNAL_LIST_AND_4_VALUE_PARAMS(p0, p1, p2, p3) p0, p1, p2, p3
+_de.. GMOCK_INTERNAL_LIST_AND_5_VALUE_PARAMS(p0, p1, p2, p3, p4) p0, p1, \
     p2, p3, p4
-#define GMOCK_INTERNAL_LIST_AND_6_VALUE_PARAMS(p0, p1, p2, p3, p4, p5) p0, \
+_de.. GMOCK_INTERNAL_LIST_AND_6_VALUE_PARAMS(p0, p1, p2, p3, p4, p5) p0, \
     p1, p2, p3, p4, p5
-#define GMOCK_INTERNAL_LIST_AND_7_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, \
+_de.. GMOCK_INTERNAL_LIST_AND_7_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, \
     p6) p0, p1, p2, p3, p4, p5, p6
-#define GMOCK_INTERNAL_LIST_AND_8_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, \
+_de.. GMOCK_INTERNAL_LIST_AND_8_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, \
     p7) p0, p1, p2, p3, p4, p5, p6, p7
-#define GMOCK_INTERNAL_LIST_AND_9_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, \
+_de.. GMOCK_INTERNAL_LIST_AND_9_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, \
     p7, p8) p0, p1, p2, p3, p4, p5, p6, p7, p8
-#define GMOCK_INTERNAL_LIST_AND_10_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, \
+_de.. GMOCK_INTERNAL_LIST_AND_10_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, \
     p7, p8, p9) p0, p1, p2, p3, p4, p5, p6, p7, p8, p9
 
 // Lists the value parameter types.
-#define GMOCK_INTERNAL_LIST_TYPE_AND_0_VALUE_PARAMS()
-#define GMOCK_INTERNAL_LIST_TYPE_AND_1_VALUE_PARAMS(p0) , p0##_type
-#define GMOCK_INTERNAL_LIST_TYPE_AND_2_VALUE_PARAMS(p0, p1) , p0##_type, \
+_de.. GMOCK_INTERNAL_LIST_TYPE_AND_0_VALUE_PARAMS()
+_de.. GMOCK_INTERNAL_LIST_TYPE_AND_1_VALUE_PARAMS(p0) , p0##_type
+_de.. GMOCK_INTERNAL_LIST_TYPE_AND_2_VALUE_PARAMS(p0, p1) , p0##_type, \
     p1##_type
-#define GMOCK_INTERNAL_LIST_TYPE_AND_3_VALUE_PARAMS(p0, p1, p2) , p0##_type, \
+_de.. GMOCK_INTERNAL_LIST_TYPE_AND_3_VALUE_PARAMS(p0, p1, p2) , p0##_type, \
     p1##_type, p2##_type
-#define GMOCK_INTERNAL_LIST_TYPE_AND_4_VALUE_PARAMS(p0, p1, p2, p3) , \
+_de.. GMOCK_INTERNAL_LIST_TYPE_AND_4_VALUE_PARAMS(p0, p1, p2, p3) , \
     p0##_type, p1##_type, p2##_type, p3##_type
-#define GMOCK_INTERNAL_LIST_TYPE_AND_5_VALUE_PARAMS(p0, p1, p2, p3, p4) , \
+_de.. GMOCK_INTERNAL_LIST_TYPE_AND_5_VALUE_PARAMS(p0, p1, p2, p3, p4) , \
     p0##_type, p1##_type, p2##_type, p3##_type, p4##_type
-#define GMOCK_INTERNAL_LIST_TYPE_AND_6_VALUE_PARAMS(p0, p1, p2, p3, p4, p5) , \
+_de.. GMOCK_INTERNAL_LIST_TYPE_AND_6_VALUE_PARAMS(p0, p1, p2, p3, p4, p5) , \
     p0##_type, p1##_type, p2##_type, p3##_type, p4##_type, p5##_type
-#define GMOCK_INTERNAL_LIST_TYPE_AND_7_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, \
+_de.. GMOCK_INTERNAL_LIST_TYPE_AND_7_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, \
     p6) , p0##_type, p1##_type, p2##_type, p3##_type, p4##_type, p5##_type, \
     p6##_type
-#define GMOCK_INTERNAL_LIST_TYPE_AND_8_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, \
+_de.. GMOCK_INTERNAL_LIST_TYPE_AND_8_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, \
     p6, p7) , p0##_type, p1##_type, p2##_type, p3##_type, p4##_type, \
     p5##_type, p6##_type, p7##_type
-#define GMOCK_INTERNAL_LIST_TYPE_AND_9_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, \
+_de.. GMOCK_INTERNAL_LIST_TYPE_AND_9_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, \
     p6, p7, p8) , p0##_type, p1##_type, p2##_type, p3##_type, p4##_type, \
     p5##_type, p6##_type, p7##_type, p8##_type
-#define GMOCK_INTERNAL_LIST_TYPE_AND_10_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, \
+_de.. GMOCK_INTERNAL_LIST_TYPE_AND_10_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, \
     p6, p7, p8, p9) , p0##_type, p1##_type, p2##_type, p3##_type, p4##_type, \
     p5##_type, p6##_type, p7##_type, p8##_type, p9##_type
 
 // Declares the value parameters.
-#define GMOCK_INTERNAL_DECL_AND_0_VALUE_PARAMS()
-#define GMOCK_INTERNAL_DECL_AND_1_VALUE_PARAMS(p0) p0##_type p0
-#define GMOCK_INTERNAL_DECL_AND_2_VALUE_PARAMS(p0, p1) p0##_type p0, \
+_de.. GMOCK_INTERNAL_DECL_AND_0_VALUE_PARAMS()
+_de.. GMOCK_INTERNAL_DECL_AND_1_VALUE_PARAMS(p0) p0##_type p0
+_de.. GMOCK_INTERNAL_DECL_AND_2_VALUE_PARAMS(p0, p1) p0##_type p0, \
     p1##_type p1
-#define GMOCK_INTERNAL_DECL_AND_3_VALUE_PARAMS(p0, p1, p2) p0##_type p0, \
+_de.. GMOCK_INTERNAL_DECL_AND_3_VALUE_PARAMS(p0, p1, p2) p0##_type p0, \
     p1##_type p1, p2##_type p2
-#define GMOCK_INTERNAL_DECL_AND_4_VALUE_PARAMS(p0, p1, p2, p3) p0##_type p0, \
+_de.. GMOCK_INTERNAL_DECL_AND_4_VALUE_PARAMS(p0, p1, p2, p3) p0##_type p0, \
     p1##_type p1, p2##_type p2, p3##_type p3
-#define GMOCK_INTERNAL_DECL_AND_5_VALUE_PARAMS(p0, p1, p2, p3, \
+_de.. GMOCK_INTERNAL_DECL_AND_5_VALUE_PARAMS(p0, p1, p2, p3, \
     p4) p0##_type p0, p1##_type p1, p2##_type p2, p3##_type p3, p4##_type p4
-#define GMOCK_INTERNAL_DECL_AND_6_VALUE_PARAMS(p0, p1, p2, p3, p4, \
+_de.. GMOCK_INTERNAL_DECL_AND_6_VALUE_PARAMS(p0, p1, p2, p3, p4, \
     p5) p0##_type p0, p1##_type p1, p2##_type p2, p3##_type p3, p4##_type p4, \
     p5##_type p5
-#define GMOCK_INTERNAL_DECL_AND_7_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, \
+_de.. GMOCK_INTERNAL_DECL_AND_7_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, \
     p6) p0##_type p0, p1##_type p1, p2##_type p2, p3##_type p3, p4##_type p4, \
     p5##_type p5, p6##_type p6
-#define GMOCK_INTERNAL_DECL_AND_8_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, \
+_de.. GMOCK_INTERNAL_DECL_AND_8_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, \
     p7) p0##_type p0, p1##_type p1, p2##_type p2, p3##_type p3, p4##_type p4, \
     p5##_type p5, p6##_type p6, p7##_type p7
-#define GMOCK_INTERNAL_DECL_AND_9_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, \
+_de.. GMOCK_INTERNAL_DECL_AND_9_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, \
     p7, p8) p0##_type p0, p1##_type p1, p2##_type p2, p3##_type p3, \
     p4##_type p4, p5##_type p5, p6##_type p6, p7##_type p7, p8##_type p8
-#define GMOCK_INTERNAL_DECL_AND_10_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, \
+_de.. GMOCK_INTERNAL_DECL_AND_10_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, \
     p7, p8, p9) p0##_type p0, p1##_type p1, p2##_type p2, p3##_type p3, \
     p4##_type p4, p5##_type p5, p6##_type p6, p7##_type p7, p8##_type p8, \
     p9##_type p9
 
 // The suffix of the class template implementing the action template.
-#define GMOCK_INTERNAL_COUNT_AND_0_VALUE_PARAMS()
-#define GMOCK_INTERNAL_COUNT_AND_1_VALUE_PARAMS(p0) P
-#define GMOCK_INTERNAL_COUNT_AND_2_VALUE_PARAMS(p0, p1) P2
-#define GMOCK_INTERNAL_COUNT_AND_3_VALUE_PARAMS(p0, p1, p2) P3
-#define GMOCK_INTERNAL_COUNT_AND_4_VALUE_PARAMS(p0, p1, p2, p3) P4
-#define GMOCK_INTERNAL_COUNT_AND_5_VALUE_PARAMS(p0, p1, p2, p3, p4) P5
-#define GMOCK_INTERNAL_COUNT_AND_6_VALUE_PARAMS(p0, p1, p2, p3, p4, p5) P6
-#define GMOCK_INTERNAL_COUNT_AND_7_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6) P7
-#define GMOCK_INTERNAL_COUNT_AND_8_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, \
+_de.. GMOCK_INTERNAL_COUNT_AND_0_VALUE_PARAMS()
+_de.. GMOCK_INTERNAL_COUNT_AND_1_VALUE_PARAMS(p0) P
+_de.. GMOCK_INTERNAL_COUNT_AND_2_VALUE_PARAMS(p0, p1) P2
+_de.. GMOCK_INTERNAL_COUNT_AND_3_VALUE_PARAMS(p0, p1, p2) P3
+_de.. GMOCK_INTERNAL_COUNT_AND_4_VALUE_PARAMS(p0, p1, p2, p3) P4
+_de.. GMOCK_INTERNAL_COUNT_AND_5_VALUE_PARAMS(p0, p1, p2, p3, p4) P5
+_de.. GMOCK_INTERNAL_COUNT_AND_6_VALUE_PARAMS(p0, p1, p2, p3, p4, p5) P6
+_de.. GMOCK_INTERNAL_COUNT_AND_7_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6) P7
+_de.. GMOCK_INTERNAL_COUNT_AND_8_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, \
     p7) P8
-#define GMOCK_INTERNAL_COUNT_AND_9_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, \
+_de.. GMOCK_INTERNAL_COUNT_AND_9_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, \
     p7, p8) P9
-#define GMOCK_INTERNAL_COUNT_AND_10_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, \
+_de.. GMOCK_INTERNAL_COUNT_AND_10_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, \
     p7, p8, p9) P10
 
 // The name of the class template implementing the action template.
-#define GMOCK_ACTION_CLASS_(name, value_params)\
+_de.. GMOCK_ACTION_CLASS_(name, value_params)\
     GTEST_CONCAT_TOKEN_(name##Action, GMOCK_INTERNAL_COUNT_##value_params)
 
-#define ACTION_TEMPLATE(name, template_params, value_params)\
+_de.. ACTION_TEMPLATE(name, template_params, value_params)\
   template <GMOCK_INTERNAL_DECL_##template_params\
             GMOCK_INTERNAL_DECL_TYPE_##value_params>\
   class GMOCK_ACTION_CLASS_(name, value_params) {\
@@ -1423,7 +1423,7 @@ DoAll(Action1 a1, Action2 a2, Action3 a3, Action4 a4, Action5 a5, Action6 a6,
               gmock_PerformImpl(\
           GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_) const
 
-#define ACTION(name)\
+_de.. ACTION(name)\
   class name##Action {\
    public:\
     name##Action() {}\
@@ -1468,7 +1468,7 @@ DoAll(Action1 a1, Action2 a2, Action3 a3, Action4 a4, Action5 a5, Action6 a6,
       name##Action::gmock_Impl<F>::gmock_PerformImpl(\
           GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_) const
 
-#define ACTION_P(name, p0)\
+_de.. ACTION_P(name, p0)\
   template <typename p0##_type>\
   class name##ActionP {\
    public:\
@@ -1520,7 +1520,7 @@ DoAll(Action1 a1, Action2 a2, Action3 a3, Action4 a4, Action5 a5, Action6 a6,
       name##ActionP<p0##_type>::gmock_Impl<F>::gmock_PerformImpl(\
           GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_) const
 
-#define ACTION_P2(name, p0, p1)\
+_de.. ACTION_P2(name, p0, p1)\
   template <typename p0##_type, typename p1##_type>\
   class name##ActionP2 {\
    public:\
@@ -1577,7 +1577,7 @@ DoAll(Action1 a1, Action2 a2, Action3 a3, Action4 a4, Action5 a5, Action6 a6,
       name##ActionP2<p0##_type, p1##_type>::gmock_Impl<F>::gmock_PerformImpl(\
           GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_) const
 
-#define ACTION_P3(name, p0, p1, p2)\
+_de.. ACTION_P3(name, p0, p1, p2)\
   template <typename p0##_type, typename p1##_type, typename p2##_type>\
   class name##ActionP3 {\
    public:\
@@ -1639,7 +1639,7 @@ DoAll(Action1 a1, Action2 a2, Action3 a3, Action4 a4, Action5 a5, Action6 a6,
           p2##_type>::gmock_Impl<F>::gmock_PerformImpl(\
           GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_) const
 
-#define ACTION_P4(name, p0, p1, p2, p3)\
+_de.. ACTION_P4(name, p0, p1, p2, p3)\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
       typename p3##_type>\
   class name##ActionP4 {\
@@ -1711,7 +1711,7 @@ DoAll(Action1 a1, Action2 a2, Action3 a3, Action4 a4, Action5 a5, Action6 a6,
           p3##_type>::gmock_Impl<F>::gmock_PerformImpl(\
           GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_) const
 
-#define ACTION_P5(name, p0, p1, p2, p3, p4)\
+_de.. ACTION_P5(name, p0, p1, p2, p3, p4)\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
       typename p3##_type, typename p4##_type>\
   class name##ActionP5 {\
@@ -1788,7 +1788,7 @@ DoAll(Action1 a1, Action2 a2, Action3 a3, Action4 a4, Action5 a5, Action6 a6,
           p4##_type>::gmock_Impl<F>::gmock_PerformImpl(\
           GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_) const
 
-#define ACTION_P6(name, p0, p1, p2, p3, p4, p5)\
+_de.. ACTION_P6(name, p0, p1, p2, p3, p4, p5)\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
       typename p3##_type, typename p4##_type, typename p5##_type>\
   class name##ActionP6 {\
@@ -1869,7 +1869,7 @@ DoAll(Action1 a1, Action2 a2, Action3 a3, Action4 a4, Action5 a5, Action6 a6,
           p5##_type>::gmock_Impl<F>::gmock_PerformImpl(\
           GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_) const
 
-#define ACTION_P7(name, p0, p1, p2, p3, p4, p5, p6)\
+_de.. ACTION_P7(name, p0, p1, p2, p3, p4, p5, p6)\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
       typename p3##_type, typename p4##_type, typename p5##_type, \
       typename p6##_type>\
@@ -1960,7 +1960,7 @@ DoAll(Action1 a1, Action2 a2, Action3 a3, Action4 a4, Action5 a5, Action6 a6,
           p5##_type, p6##_type>::gmock_Impl<F>::gmock_PerformImpl(\
           GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_) const
 
-#define ACTION_P8(name, p0, p1, p2, p3, p4, p5, p6, p7)\
+_de.. ACTION_P8(name, p0, p1, p2, p3, p4, p5, p6, p7)\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
       typename p3##_type, typename p4##_type, typename p5##_type, \
       typename p6##_type, typename p7##_type>\
@@ -2058,7 +2058,7 @@ DoAll(Action1 a1, Action2 a2, Action3 a3, Action4 a4, Action5 a5, Action6 a6,
           p7##_type>::gmock_Impl<F>::gmock_PerformImpl(\
           GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_) const
 
-#define ACTION_P9(name, p0, p1, p2, p3, p4, p5, p6, p7, p8)\
+_de.. ACTION_P9(name, p0, p1, p2, p3, p4, p5, p6, p7, p8)\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
       typename p3##_type, typename p4##_type, typename p5##_type, \
       typename p6##_type, typename p7##_type, typename p8##_type>\
@@ -2161,7 +2161,7 @@ DoAll(Action1 a1, Action2 a2, Action3 a3, Action4 a4, Action5 a5, Action6 a6,
           p8##_type>::gmock_Impl<F>::gmock_PerformImpl(\
           GMOCK_ACTION_ARG_TYPES_AND_NAMES_UNUSED_) const
 
-#define ACTION_P10(name, p0, p1, p2, p3, p4, p5, p6, p7, p8, p9)\
+_de.. ACTION_P10(name, p0, p1, p2, p3, p4, p5, p6, p7, p8, p9)\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
       typename p3##_type, typename p4##_type, typename p5##_type, \
       typename p6##_type, typename p7##_type, typename p8##_type, \

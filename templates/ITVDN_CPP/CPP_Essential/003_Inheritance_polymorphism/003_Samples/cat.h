@@ -7,7 +7,7 @@ public:
     Cat(uint paws);
     uint get_paws();
 
-    void say() override;
+    v.. say() override;
     ~Cat();
 
 public:

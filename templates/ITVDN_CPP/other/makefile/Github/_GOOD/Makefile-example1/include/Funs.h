@@ -1,5 +1,5 @@
 #ifndef Funs_H
-#define Funs_H
+_de.. Funs_H
 
 class Rectangle 
 {

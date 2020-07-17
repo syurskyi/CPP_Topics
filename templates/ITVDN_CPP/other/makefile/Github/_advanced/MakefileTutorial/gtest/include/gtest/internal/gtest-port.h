@@ -41,7 +41,7 @@
 // any other Google Test header.
 
 #ifndef GTEST_INCLUDE_GTEST_INTERNAL_GTEST_PORT_H_
-#define GTEST_INCLUDE_GTEST_INTERNAL_GTEST_PORT_H_
+_de.. GTEST_INCLUDE_GTEST_INTERNAL_GTEST_PORT_H_
 
 // Environment-describing macros
 // -----------------------------
@@ -620,7 +620,7 @@ typedef struct _RTL_CRITICAL_SECTION GTEST_CRITICAL_SECTION;
 //
 // To disable threading support in Google Test, add -DGTEST_HAS_PTHREAD=0
 // to your compiler flags.
-#define GTEST_HAS_PTHREAD                                             \
+_de.. GTEST_HAS_PTHREAD                                             \
   (GTEST_OS_LINUX || GTEST_OS_MAC || GTEST_OS_HPUX || GTEST_OS_QNX || \
    GTEST_OS_FREEBSD || GTEST_OS_NACL || GTEST_OS_NETBSD || GTEST_OS_FUCHSIA)
 #endif  // GTEST_HAS_PTHREAD
@@ -837,7 +837,7 @@ typedef struct _RTL_CRITICAL_SECTION GTEST_CRITICAL_SECTION;
 #endif
 
 // Determines whether the system compiler uses UTF-16 for encoding wide strings.
-#define GTEST_WIDE_STRING_USES_UTF16_ \
+_de.. GTEST_WIDE_STRING_USES_UTF16_ \
     (GTEST_OS_WINDOWS || GTEST_OS_CYGWIN || GTEST_OS_SYMBIAN || GTEST_OS_AIX)
 
 // Determines whether test results can be streamed to a socket.
@@ -909,12 +909,12 @@ typedef struct _RTL_CRITICAL_SECTION GTEST_CRITICAL_SECTION;
 
 // A macro to disallow operator=
 // This should be used in the private: declarations for a class.
-#define GTEST_DISALLOW_ASSIGN_(type) \
-  void operator=(type const &) GTEST_CXX11_EQUALS_DELETE_
+_de.. GTEST_DISALLOW_ASSIGN_(type) \
+  v.. operator=(type const &) GTEST_CXX11_EQUALS_DELETE_
 
 // A macro to disallow copy constructor and operator=
 // This should be used in the private: declarations for a class.
-#define GTEST_DISALLOW_COPY_AND_ASSIGN_(type) \
+_de.. GTEST_DISALLOW_COPY_AND_ASSIGN_(type) \
   type(type const &) GTEST_CXX11_EQUALS_DELETE_; \
   GTEST_DISALLOW_ASSIGN_(type)
 
@@ -956,7 +956,7 @@ typedef struct _RTL_CRITICAL_SECTION GTEST_CRITICAL_SECTION;
 #  define GTEST_HAS_SEH 0
 # endif
 
-#define GTEST_IS_THREADSAFE \
+_de.. GTEST_IS_THREADSAFE \
     (GTEST_HAS_MUTEX_AND_THREAD_LOCAL_ \
      || (GTEST_OS_WINDOWS && !GTEST_OS_WINDOWS_PHONE && !GTEST_OS_WINDOWS_RT) \
      || GTEST_HAS_PTHREAD)
@@ -1155,7 +1155,7 @@ struct IsSame<T, T> {
 };
 
 // Evaluates to the number of elements in 'array'.
-#define GTEST_ARRAY_SIZE_(array) (sizeof(array) / sizeof(array[0]))
+_de.. GTEST_ARRAY_SIZE_(array) (sizeof(array) / sizeof(array[0]))
 
 #if GTEST_HAS_GLOBAL_STRING
 typedef ::string string;
@@ -1195,7 +1195,7 @@ class scoped_ptr {
     return ptr;
   }
 
-  void reset(T* p = NULL) {
+  v.. reset(T* p = NULL) {
     if (p != ptr_) {
       if (IsTrue(sizeof(T) > 0)) {  // Makes sure T is a complete type.
         delete ptr_;
@@ -1204,7 +1204,7 @@ class scoped_ptr {
     }
   }
 
-  friend void swap(scoped_ptr& a, scoped_ptr& b) {
+  friend v.. swap(scoped_ptr& a, scoped_ptr& b) {
     using std::swap;
     swap(a.ptr_, b.ptr_);
   }
@@ -1273,7 +1273,7 @@ class GTEST_API_ RE {
   static bool PartialMatch(const char* str, const RE& re);
 
  private:
-  void Init(const char* regex);
+  v.. Init(const char* regex);
 
   // We use a const char* instead of an std::string, as Google Test used to be
   // used where std::string is not available.  TODO(wan@google.com): change to
@@ -1344,8 +1344,8 @@ class GTEST_API_ GTestLog {
     ::testing::internal::GTestLog(::testing::internal::GTEST_##severity, \
                                   __FILE__, __LINE__).GetStream()
 
-inline void LogToStderr() {}
-inline void FlushInfoLog() { fflush(NULL); }
+inline v.. LogToStderr() {}
+inline v.. FlushInfoLog() { fflush(NULL); }
 
 #endif  // !defined(GTEST_LOG_)
 
@@ -1377,7 +1377,7 @@ inline void FlushInfoLog() { fflush(NULL); }
 // doesn't expand to a balanced 'if' statement, so enclose the macro
 // in {} if you need to use it as the only statement in an 'if'
 // branch.
-#define GTEST_CHECK_POSIX_SUCCESS_(posix_call) \
+_de.. GTEST_CHECK_POSIX_SUCCESS_(posix_call) \
   if (const int gtest_error = (posix_call)) \
     GTEST_LOG_(FATAL) << #posix_call << "failed with error " \
                       << gtest_error
@@ -1392,7 +1392,7 @@ struct AddReference<T&> { typedef T& type; };  // NOLINT
 
 // A handy wrapper around AddReference that works when the argument T
 // depends on template parameters.
-#define GTEST_ADD_REFERENCE_(T) \
+_de.. GTEST_ADD_REFERENCE_(T) \
     typename ::testing::internal::AddReference<T>::type
 
 // Transforms "T" into "const T&" according to standard reference collapsing
@@ -1412,7 +1412,7 @@ template <typename T>
 struct ConstRef<T&> { typedef T& type; };
 
 // The argument T must depend on some template parameters.
-#define GTEST_REFERENCE_TO_CONST_(T) \
+_de.. GTEST_REFERENCE_TO_CONST_(T) \
   typename ::testing::internal::ConstRef<T>::type
 
 #if GTEST_HAS_STD_MOVE_
@@ -1529,9 +1529,9 @@ Derived* CheckedDowncastToActualType(Base* base) {
 //   CaptureStderr     - starts capturing stderr.
 //   GetCapturedStderr - stops capturing stderr and returns the captured string.
 //
-GTEST_API_ void CaptureStdout();
+GTEST_API_ v.. CaptureStdout();
 GTEST_API_ std::string GetCapturedStdout();
-GTEST_API_ void CaptureStderr();
+GTEST_API_ v.. CaptureStderr();
 GTEST_API_ std::string GetCapturedStderr();
 
 #endif  // GTEST_HAS_STREAM_REDIRECTION
@@ -1548,12 +1548,12 @@ GTEST_API_ std::vector<std::string> GetArgvs();
 
 std::vector<std::string> GetInjectableArgvs();
 // Deprecated: pass the args vector by value instead.
-void SetInjectableArgvs(const std::vector<std::string>* new_argvs);
-void SetInjectableArgvs(const std::vector<std::string>& new_argvs);
+v.. SetInjectableArgvs(const std::vector<std::string>* new_argvs);
+v.. SetInjectableArgvs(const std::vector<std::string>& new_argvs);
 #if GTEST_HAS_GLOBAL_STRING
-void SetInjectableArgvs(const std::vector< ::string>& new_argvs);
+v.. SetInjectableArgvs(const std::vector< ::string>& new_argvs);
 #endif  // GTEST_HAS_GLOBAL_STRING
-void ClearInjectableArgvs();
+v.. ClearInjectableArgvs();
 
 #endif  // GTEST_HAS_DEATH_TEST
 
@@ -1563,7 +1563,7 @@ void ClearInjectableArgvs();
 // Sleeps for (roughly) n milliseconds.  This function is only for testing
 // Google Test's own constructs.  Don't use it in user tests, either
 // directly or indirectly.
-inline void SleepMilliseconds(int n) {
+inline v.. SleepMilliseconds(int n) {
   const timespec time = {
     0,                  // 0 seconds.
     n * 1000L * 1000L,  // And n ms.
@@ -1594,7 +1594,7 @@ class Notification {
 
   // Notifies all threads created with this notification to start. Must
   // be called from the controller thread.
-  void Notify() {
+  v.. Notify() {
     pthread_mutex_lock(&mutex_);
     notified_ = true;
     pthread_mutex_unlock(&mutex_);
@@ -1602,7 +1602,7 @@ class Notification {
 
   // Blocks until the controller thread notifies. Must be called from a test
   // thread.
-  void WaitForNotification() {
+  v.. WaitForNotification() {
     for (;;) {
       pthread_mutex_lock(&mutex_);
       const bool notified = notified_;
@@ -1622,7 +1622,7 @@ class Notification {
 
 # elif GTEST_OS_WINDOWS && !GTEST_OS_WINDOWS_PHONE && !GTEST_OS_WINDOWS_RT
 
-GTEST_API_ void SleepMilliseconds(int n);
+GTEST_API_ v.. SleepMilliseconds(int n);
 
 // Provides leak-safe Windows kernel handle ownership.
 // Used in death tests and in threading support.
@@ -1633,15 +1633,15 @@ class GTEST_API_ AutoHandle {
   // undesirable because it defines a lot of symbols and macros that tend to
   // conflict with client code. This assumption is verified by
   // WindowsTypesTest.HANDLEIsVoidStar.
-  typedef void* Handle;
+  typedef v..* Handle;
   AutoHandle();
   explicit AutoHandle(Handle handle);
 
   ~AutoHandle();
 
   Handle Get() const;
-  void Reset();
-  void Reset(Handle handle);
+  v.. Reset();
+  v.. Reset(Handle handle);
 
  private:
   // Returns true iff the handle is a valid handle object that can be closed.
@@ -1661,8 +1661,8 @@ class GTEST_API_ AutoHandle {
 class GTEST_API_ Notification {
  public:
   Notification();
-  void Notify();
-  void WaitForNotification();
+  v.. Notify();
+  v.. WaitForNotification();
 
  private:
   AutoHandle event_;
@@ -1684,7 +1684,7 @@ class GTEST_API_ Notification {
 class ThreadWithParamBase {
  public:
   virtual ~ThreadWithParamBase() {}
-  virtual void Run() = 0;
+  virtual v.. Run() = 0;
 };
 
 // pthread_create() accepts a pointer to a function type with the C linkage.
@@ -1693,7 +1693,7 @@ class ThreadWithParamBase {
 // example, SunStudio) treat them as different types.  Since class methods
 // cannot be defined with C-linkage we need to define a free C-function to
 // pass into pthread_create().
-extern "C" inline void* ThreadFuncWithCLinkage(void* thread) {
+extern "C" inline v..* ThreadFuncWithCLinkage(v..* thread) {
   static_cast<ThreadWithParamBase*>(thread)->Run();
   return NULL;
 }
@@ -1713,7 +1713,7 @@ extern "C" inline void* ThreadFuncWithCLinkage(void* thread) {
 template <typename T>
 class ThreadWithParam : public ThreadWithParamBase {
  public:
-  typedef void UserThreadFunc(T);
+  typedef v.. UserThreadFunc(T);
 
   ThreadWithParam(UserThreadFunc* func, T param, Notification* thread_can_start)
       : func_(func),
@@ -1728,14 +1728,14 @@ class ThreadWithParam : public ThreadWithParamBase {
   }
   ~ThreadWithParam() { Join(); }
 
-  void Join() {
+  v.. Join() {
     if (!finished_) {
       GTEST_CHECK_POSIX_SUCCESS_(pthread_join(thread_, 0));
       finished_ = true;
     }
   }
 
-  virtual void Run() {
+  virtual v.. Run() {
     if (thread_can_start_ != NULL)
       thread_can_start_->WaitForNotification();
     func_(param_);
@@ -1791,17 +1791,17 @@ class GTEST_API_ Mutex {
   Mutex();
   ~Mutex();
 
-  void Lock();
+  v.. Lock();
 
-  void Unlock();
+  v.. Unlock();
 
   // Does nothing if the current thread holds the mutex. Otherwise, crashes
   // with high probability.
-  void AssertHeld();
+  v.. AssertHeld();
 
  private:
   // Initializes owner_thread_id_ and critical_section_ in static mutexes.
-  void ThreadSafeLazyInit();
+  v.. ThreadSafeLazyInit();
 
   // Per http://blogs.msdn.com/b/oldnewthing/archive/2004/02/23/78395.aspx,
   // we assume that 0 is an invalid value for thread IDs.
@@ -1878,19 +1878,19 @@ class GTEST_API_ ThreadLocalRegistry {
       const ThreadLocalBase* thread_local_instance);
 
   // Invoked when a ThreadLocal instance is destroyed.
-  static void OnThreadLocalDestroyed(
+  static v.. OnThreadLocalDestroyed(
       const ThreadLocalBase* thread_local_instance);
 };
 
 class GTEST_API_ ThreadWithParamBase {
  public:
-  void Join();
+  v.. Join();
 
  protected:
   class Runnable {
    public:
     virtual ~Runnable() {}
-    virtual void Run() = 0;
+    virtual v.. Run() = 0;
   };
 
   ThreadWithParamBase(Runnable *runnable, Notification* thread_can_start);
@@ -1904,7 +1904,7 @@ class GTEST_API_ ThreadWithParamBase {
 template <typename T>
 class ThreadWithParam : public ThreadWithParamBase {
  public:
-  typedef void UserThreadFunc(T);
+  typedef v.. UserThreadFunc(T);
 
   ThreadWithParam(UserThreadFunc* func, T param, Notification* thread_can_start)
       : ThreadWithParamBase(new RunnableImpl(func, param), thread_can_start) {
@@ -1919,7 +1919,7 @@ class ThreadWithParam : public ThreadWithParamBase {
           param_(param) {
     }
     virtual ~RunnableImpl() {}
-    virtual void Run() {
+    virtual v.. Run() {
       func_(param_);
     }
 
@@ -1972,7 +1972,7 @@ class ThreadLocal : public ThreadLocalBase {
   T* pointer() { return GetOrCreateValue(); }
   const T* pointer() const { return GetOrCreateValue(); }
   const T& get() const { return *pointer(); }
-  void set(const T& value) { *pointer() = value; }
+  v.. set(const T& value) { *pointer() = value; }
 
  private:
   // Holds a value of T.  Can be deleted via its base class without the caller
@@ -2042,14 +2042,14 @@ class ThreadLocal : public ThreadLocalBase {
 class MutexBase {
  public:
   // Acquires this mutex.
-  void Lock() {
+  v.. Lock() {
     GTEST_CHECK_POSIX_SUCCESS_(pthread_mutex_lock(&mutex_));
     owner_ = pthread_self();
     has_owner_ = true;
   }
 
   // Releases this mutex.
-  void Unlock() {
+  v.. Unlock() {
     // Since the lock is being released the owner_ field should no longer be
     // considered valid. We don't protect writing to has_owner_ here, as it's
     // the caller's responsibility to ensure that the current thread holds the
@@ -2060,7 +2060,7 @@ class MutexBase {
 
   // Does nothing if the current thread holds the mutex. Otherwise, crashes
   // with high probability.
-  void AssertHeld() const {
+  v.. AssertHeld() const {
     GTEST_CHECK_(has_owner_ && pthread_equal(owner_, pthread_self()))
         << "The current thread is not holding the mutex @" << this;
   }
@@ -2144,7 +2144,7 @@ class ThreadLocalValueHolderBase {
 
 // Called by pthread to delete thread-local data stored by
 // pthread_setspecific().
-extern "C" inline void DeleteThreadLocalValue(void* value_holder) {
+extern "C" inline v.. DeleteThreadLocalValue(v..* value_holder) {
   delete static_cast<ThreadLocalValueHolderBase*>(value_holder);
 }
 
@@ -2170,7 +2170,7 @@ class GTEST_API_ ThreadLocal {
   T* pointer() { return GetOrCreateValue(); }
   const T* pointer() const { return GetOrCreateValue(); }
   const T& get() const { return *pointer(); }
-  void set(const T& value) { *pointer() = value; }
+  v.. set(const T& value) { *pointer() = value; }
 
  private:
   // Holds a value of type T.
@@ -2259,9 +2259,9 @@ class GTEST_API_ ThreadLocal {
 class Mutex {
  public:
   Mutex() {}
-  void Lock() {}
-  void Unlock() {}
-  void AssertHeld() const {}
+  v.. Lock() {}
+  v.. Unlock() {}
+  v.. AssertHeld() const {}
 };
 
 # define GTEST_DECLARE_STATIC_MUTEX_(mutex) \
@@ -2289,7 +2289,7 @@ class GTEST_API_ ThreadLocal {
   T* pointer() { return &value_; }
   const T* pointer() const { return &value_; }
   const T& get() const { return value_; }
-  void set(const T& value) { value_ = value; }
+  v.. set(const T& value) { value_ = value; }
  private:
   T value_;
 };
@@ -2507,10 +2507,10 @@ inline FILE* FDOpen(int fd, const char* mode) { return fdopen(fd, mode); }
 #endif
 inline int FClose(FILE* fp) { return fclose(fp); }
 #if !GTEST_OS_WINDOWS_MOBILE
-inline int Read(int fd, void* buf, unsigned int count) {
+inline int Read(int fd, v..* buf, unsigned int count) {
   return static_cast<int>(read(fd, buf, count));
 }
-inline int Write(int fd, const void* buf, unsigned int count) {
+inline int Write(int fd, const v..* buf, unsigned int count) {
   return static_cast<int>(write(fd, buf, count));
 }
 inline int Close(int fd) { return close(fd); }
@@ -2519,7 +2519,7 @@ inline const char* StrError(int errnum) { return strerror(errnum); }
 inline const char* GetEnv(const char* name) {
 #if GTEST_OS_WINDOWS_MOBILE || GTEST_OS_WINDOWS_PHONE || GTEST_OS_WINDOWS_RT
   // We are on Windows CE, which has no environment variables.
-  static_cast<void>(name);  // To prevent 'unused argument' warning.
+  static_cast<v..>(name);  // To prevent 'unused argument' warning.
   return NULL;
 #elif defined(__BORLANDC__) || defined(__SunOS_5_8) || defined(__SunOS_5_9)
   // Environment variables which we programmatically clear will be set to the
@@ -2537,9 +2537,9 @@ GTEST_DISABLE_MSC_WARNINGS_POP_()
 // Windows CE has no C library. The abort() function is used in
 // several places in Google Test. This implementation provides a reasonable
 // imitation of standard behaviour.
-void Abort();
+v.. Abort();
 #else
-inline void Abort() { abort(); }
+inline v.. Abort() { abort(); }
 #endif  // GTEST_OS_WINDOWS_MOBILE
 
 }  // namespace posix
@@ -2594,7 +2594,7 @@ class TypeWithSize {
  public:
   // This prevents the user from using TypeWithSize<N> with incorrect
   // values of N.
-  typedef void UInt;
+  typedef v.. UInt;
 };
 
 // The specialization for size 4.

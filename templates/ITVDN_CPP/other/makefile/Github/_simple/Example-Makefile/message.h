@@ -1,9 +1,9 @@
 #ifndef MESSAGE_H
-#define MESSAGE_H
+_de.. MESSAGE_H
 
 class message{
 public:
-	void printMessage();
+	v.. printMessage();
 	
 };
 

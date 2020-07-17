@@ -6,12 +6,12 @@
  */
 
 #ifndef CAT_H_
-#define CAT_H_
+_de.. CAT_H_
 
 class Cat {
 public:
-	void speak();
-	void jump();
+	v.. speak();
+	v.. jump();
 };
 
 

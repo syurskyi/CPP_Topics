@@ -39,7 +39,7 @@
 // for implementing Google Mock.
 
 #ifndef GMOCK_INCLUDE_GMOCK_INTERNAL_GMOCK_GENERATED_INTERNAL_UTILS_H_
-#define GMOCK_INCLUDE_GMOCK_INTERNAL_GMOCK_GENERATED_INTERNAL_UTILS_H_
+_de.. GMOCK_INCLUDE_GMOCK_INTERNAL_GMOCK_GENERATED_INTERNAL_UTILS_H_
 
 ? "gmock/internal/gmock-port.h"
 
@@ -165,7 +165,7 @@ struct Function<R()> {
   typedef R Result;
   typedef ::testing::tuple<> ArgumentTuple;
   typedef typename MatcherTuple<ArgumentTuple>::type ArgumentMatcherTuple;
-  typedef void MakeResultVoid();
+  typedef v.. MakeResultVoid();
   typedef IgnoredValue MakeResultIgnoredValue();
 };
 
@@ -175,7 +175,7 @@ struct Function<R(A1)>
   typedef A1 Argument1;
   typedef ::testing::tuple<A1> ArgumentTuple;
   typedef typename MatcherTuple<ArgumentTuple>::type ArgumentMatcherTuple;
-  typedef void MakeResultVoid(A1);
+  typedef v.. MakeResultVoid(A1);
   typedef IgnoredValue MakeResultIgnoredValue(A1);
 };
 
@@ -185,7 +185,7 @@ struct Function<R(A1, A2)>
   typedef A2 Argument2;
   typedef ::testing::tuple<A1, A2> ArgumentTuple;
   typedef typename MatcherTuple<ArgumentTuple>::type ArgumentMatcherTuple;
-  typedef void MakeResultVoid(A1, A2);
+  typedef v.. MakeResultVoid(A1, A2);
   typedef IgnoredValue MakeResultIgnoredValue(A1, A2);
 };
 
@@ -195,7 +195,7 @@ struct Function<R(A1, A2, A3)>
   typedef A3 Argument3;
   typedef ::testing::tuple<A1, A2, A3> ArgumentTuple;
   typedef typename MatcherTuple<ArgumentTuple>::type ArgumentMatcherTuple;
-  typedef void MakeResultVoid(A1, A2, A3);
+  typedef v.. MakeResultVoid(A1, A2, A3);
   typedef IgnoredValue MakeResultIgnoredValue(A1, A2, A3);
 };
 
@@ -205,7 +205,7 @@ struct Function<R(A1, A2, A3, A4)>
   typedef A4 Argument4;
   typedef ::testing::tuple<A1, A2, A3, A4> ArgumentTuple;
   typedef typename MatcherTuple<ArgumentTuple>::type ArgumentMatcherTuple;
-  typedef void MakeResultVoid(A1, A2, A3, A4);
+  typedef v.. MakeResultVoid(A1, A2, A3, A4);
   typedef IgnoredValue MakeResultIgnoredValue(A1, A2, A3, A4);
 };
 
@@ -216,7 +216,7 @@ struct Function<R(A1, A2, A3, A4, A5)>
   typedef A5 Argument5;
   typedef ::testing::tuple<A1, A2, A3, A4, A5> ArgumentTuple;
   typedef typename MatcherTuple<ArgumentTuple>::type ArgumentMatcherTuple;
-  typedef void MakeResultVoid(A1, A2, A3, A4, A5);
+  typedef v.. MakeResultVoid(A1, A2, A3, A4, A5);
   typedef IgnoredValue MakeResultIgnoredValue(A1, A2, A3, A4, A5);
 };
 
@@ -227,7 +227,7 @@ struct Function<R(A1, A2, A3, A4, A5, A6)>
   typedef A6 Argument6;
   typedef ::testing::tuple<A1, A2, A3, A4, A5, A6> ArgumentTuple;
   typedef typename MatcherTuple<ArgumentTuple>::type ArgumentMatcherTuple;
-  typedef void MakeResultVoid(A1, A2, A3, A4, A5, A6);
+  typedef v.. MakeResultVoid(A1, A2, A3, A4, A5, A6);
   typedef IgnoredValue MakeResultIgnoredValue(A1, A2, A3, A4, A5, A6);
 };
 
@@ -238,7 +238,7 @@ struct Function<R(A1, A2, A3, A4, A5, A6, A7)>
   typedef A7 Argument7;
   typedef ::testing::tuple<A1, A2, A3, A4, A5, A6, A7> ArgumentTuple;
   typedef typename MatcherTuple<ArgumentTuple>::type ArgumentMatcherTuple;
-  typedef void MakeResultVoid(A1, A2, A3, A4, A5, A6, A7);
+  typedef v.. MakeResultVoid(A1, A2, A3, A4, A5, A6, A7);
   typedef IgnoredValue MakeResultIgnoredValue(A1, A2, A3, A4, A5, A6, A7);
 };
 
@@ -249,7 +249,7 @@ struct Function<R(A1, A2, A3, A4, A5, A6, A7, A8)>
   typedef A8 Argument8;
   typedef ::testing::tuple<A1, A2, A3, A4, A5, A6, A7, A8> ArgumentTuple;
   typedef typename MatcherTuple<ArgumentTuple>::type ArgumentMatcherTuple;
-  typedef void MakeResultVoid(A1, A2, A3, A4, A5, A6, A7, A8);
+  typedef v.. MakeResultVoid(A1, A2, A3, A4, A5, A6, A7, A8);
   typedef IgnoredValue MakeResultIgnoredValue(A1, A2, A3, A4, A5, A6, A7, A8);
 };
 
@@ -260,7 +260,7 @@ struct Function<R(A1, A2, A3, A4, A5, A6, A7, A8, A9)>
   typedef A9 Argument9;
   typedef ::testing::tuple<A1, A2, A3, A4, A5, A6, A7, A8, A9> ArgumentTuple;
   typedef typename MatcherTuple<ArgumentTuple>::type ArgumentMatcherTuple;
-  typedef void MakeResultVoid(A1, A2, A3, A4, A5, A6, A7, A8, A9);
+  typedef v.. MakeResultVoid(A1, A2, A3, A4, A5, A6, A7, A8, A9);
   typedef IgnoredValue MakeResultIgnoredValue(A1, A2, A3, A4, A5, A6, A7, A8,
       A9);
 };
@@ -274,7 +274,7 @@ struct Function<R(A1, A2, A3, A4, A5, A6, A7, A8, A9, A10)>
   typedef ::testing::tuple<A1, A2, A3, A4, A5, A6, A7, A8, A9,
       A10> ArgumentTuple;
   typedef typename MatcherTuple<ArgumentTuple>::type ArgumentMatcherTuple;
-  typedef void MakeResultVoid(A1, A2, A3, A4, A5, A6, A7, A8, A9, A10);
+  typedef v.. MakeResultVoid(A1, A2, A3, A4, A5, A6, A7, A8, A9, A10);
   typedef IgnoredValue MakeResultIgnoredValue(A1, A2, A3, A4, A5, A6, A7, A8,
       A9, A10);
 };

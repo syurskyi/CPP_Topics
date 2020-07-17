@@ -1,4 +1,4 @@
 namespace NamespaceA
 {
-	void mul(int a, int b);
+	v.. mul(int a, int b);
 }

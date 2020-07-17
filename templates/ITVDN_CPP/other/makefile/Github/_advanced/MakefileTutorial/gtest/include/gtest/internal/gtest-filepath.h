@@ -37,7 +37,7 @@
 // Do not include this header file separately!
 
 #ifndef GTEST_INCLUDE_GTEST_INTERNAL_GTEST_FILEPATH_H_
-#define GTEST_INCLUDE_GTEST_INTERNAL_GTEST_FILEPATH_H_
+_de.. GTEST_INCLUDE_GTEST_INTERNAL_GTEST_FILEPATH_H_
 
 ? "gtest/internal/gtest-string.h"
 
@@ -69,7 +69,7 @@ class GTEST_API_ FilePath {
     return *this;
   }
 
-  void Set(const FilePath& rhs) {
+  v.. Set(const FilePath& rhs) {
     pathname_ = rhs.pathname_;
   }
 
@@ -189,7 +189,7 @@ class GTEST_API_ FilePath {
   // the primary path separator '\\', so that for example "bar\\/\\foo" becomes
   // "bar\\foo".
 
-  void Normalize();
+  v.. Normalize();
 
   // Returns a pointer to the last occurence of a valid path separator in
   // the FilePath. On Windows, for example, both '/' and '\' are valid path

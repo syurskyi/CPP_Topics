@@ -4,5 +4,5 @@
 
 class Handler {
 public:
-    virtual void event(Event &) = 0;
+    virtual v.. event(Event &) = 0;
 };

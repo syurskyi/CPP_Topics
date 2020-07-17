@@ -1,5 +1,5 @@
 #ifndef PEOPLE_H_INCLUDED
-#define PEOPLE_H_INCLUDED
+_de.. PEOPLE_H_INCLUDED
 
 class PersonalData
 {
@@ -13,7 +13,7 @@ class PersonalData
         /**
             This function is setting age. If age is lower than 0, then age = 10.
         */
-        void setAge(int);
+        v.. setAge(int);
         short getAge() {return age;}
 };
 

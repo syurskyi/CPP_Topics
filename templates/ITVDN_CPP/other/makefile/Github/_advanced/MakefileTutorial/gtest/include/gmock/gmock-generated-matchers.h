@@ -36,7 +36,7 @@
 // This file implements some commonly used variadic matchers.
 
 #ifndef GMOCK_INCLUDE_GMOCK_GMOCK_GENERATED_MATCHERS_H_
-#define GMOCK_INCLUDE_GMOCK_GMOCK_GENERATED_MATCHERS_H_
+_de.. GMOCK_INCLUDE_GMOCK_GMOCK_GENERATED_MATCHERS_H_
 
 ? <iterator>
 ? <sstream>
@@ -48,7 +48,7 @@ namespace testing {
 namespace internal {
 
 // The type of the i-th (0-based) field of Tuple.
-#define GMOCK_FIELD_TYPE_(Tuple, i) \
+_de.. GMOCK_FIELD_TYPE_(Tuple, i) \
     typename ::testing::tuple_element<i, Tuple>::type
 
 // TupleFields<Tuple, k0, ..., kn> is for selecting fields from a
@@ -236,13 +236,13 @@ class ArgsMatcherImpl : public MatcherInterface<ArgsTuple> {
     return match;
   }
 
-  virtual void DescribeTo(::std::ostream* os) const {
+  virtual v.. DescribeTo(::std::ostream* os) const {
     *os << "are a tuple ";
     PrintIndices(os);
     inner_matcher_.DescribeTo(os);
   }
 
-  virtual void DescribeNegationTo(::std::ostream* os) const {
+  virtual v.. DescribeNegationTo(::std::ostream* os) const {
     *os << "are a tuple ";
     PrintIndices(os);
     inner_matcher_.DescribeNegationTo(os);
@@ -255,7 +255,7 @@ class ArgsMatcherImpl : public MatcherInterface<ArgsTuple> {
   }
 
   // Prints the indices of the selected fields.
-  static void PrintIndices(::std::ostream* os) {
+  static v.. PrintIndices(::std::ostream* os) {
     *os << "whose fields (";
     const int indices[10] = { k0, k1, k2, k3, k4, k5, k6, k7, k8, k9 };
     for (int i = 0; i < 10; i++) {
@@ -1382,7 +1382,7 @@ AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8, M9 m9, M10 m10) {
 // on https://github.com/google/googletest/blob/master/googlemock/docs/
 // CookBook.md
 
-#define MATCHER(name, description)\
+_de.. MATCHER(name, description)\
   class name##Matcher {\
    public:\
     template <typename arg_type>\
@@ -1394,10 +1394,10 @@ AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8, M9 m9, M10 m10) {
       virtual bool MatchAndExplain(\
           GTEST_REFERENCE_TO_CONST_(arg_type) arg,\
           ::testing::MatchResultListener* result_listener) const;\
-      virtual void DescribeTo(::std::ostream* gmock_os) const {\
+      virtual v.. DescribeTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(false);\
       }\
-      virtual void DescribeNegationTo(::std::ostream* gmock_os) const {\
+      virtual v.. DescribeNegationTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(true);\
       }\
      private:\
@@ -1429,7 +1429,7 @@ AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8, M9 m9, M10 m10) {
       ::testing::MatchResultListener* result_listener GTEST_ATTRIBUTE_UNUSED_)\
           const
 
-#define MATCHER_P(name, p0, description)\
+_de.. MATCHER_P(name, p0, description)\
   template <typename p0##_type>\
   class name##MatcherP {\
    public:\
@@ -1442,10 +1442,10 @@ AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8, M9 m9, M10 m10) {
       virtual bool MatchAndExplain(\
           GTEST_REFERENCE_TO_CONST_(arg_type) arg,\
           ::testing::MatchResultListener* result_listener) const;\
-      virtual void DescribeTo(::std::ostream* gmock_os) const {\
+      virtual v.. DescribeTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(false);\
       }\
-      virtual void DescribeNegationTo(::std::ostream* gmock_os) const {\
+      virtual v.. DescribeNegationTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(true);\
       }\
       p0##_type const p0;\
@@ -1482,7 +1482,7 @@ AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8, M9 m9, M10 m10) {
       ::testing::MatchResultListener* result_listener GTEST_ATTRIBUTE_UNUSED_)\
           const
 
-#define MATCHER_P2(name, p0, p1, description)\
+_de.. MATCHER_P2(name, p0, p1, description)\
   template <typename p0##_type, typename p1##_type>\
   class name##MatcherP2 {\
    public:\
@@ -1496,10 +1496,10 @@ AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8, M9 m9, M10 m10) {
       virtual bool MatchAndExplain(\
           GTEST_REFERENCE_TO_CONST_(arg_type) arg,\
           ::testing::MatchResultListener* result_listener) const;\
-      virtual void DescribeTo(::std::ostream* gmock_os) const {\
+      virtual v.. DescribeTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(false);\
       }\
-      virtual void DescribeNegationTo(::std::ostream* gmock_os) const {\
+      virtual v.. DescribeNegationTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(true);\
       }\
       p0##_type const p0;\
@@ -1541,7 +1541,7 @@ AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8, M9 m9, M10 m10) {
       ::testing::MatchResultListener* result_listener GTEST_ATTRIBUTE_UNUSED_)\
           const
 
-#define MATCHER_P3(name, p0, p1, p2, description)\
+_de.. MATCHER_P3(name, p0, p1, p2, description)\
   template <typename p0##_type, typename p1##_type, typename p2##_type>\
   class name##MatcherP3 {\
    public:\
@@ -1556,10 +1556,10 @@ AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8, M9 m9, M10 m10) {
       virtual bool MatchAndExplain(\
           GTEST_REFERENCE_TO_CONST_(arg_type) arg,\
           ::testing::MatchResultListener* result_listener) const;\
-      virtual void DescribeTo(::std::ostream* gmock_os) const {\
+      virtual v.. DescribeTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(false);\
       }\
-      virtual void DescribeNegationTo(::std::ostream* gmock_os) const {\
+      virtual v.. DescribeNegationTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(true);\
       }\
       p0##_type const p0;\
@@ -1605,7 +1605,7 @@ AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8, M9 m9, M10 m10) {
       ::testing::MatchResultListener* result_listener GTEST_ATTRIBUTE_UNUSED_)\
           const
 
-#define MATCHER_P4(name, p0, p1, p2, p3, description)\
+_de.. MATCHER_P4(name, p0, p1, p2, p3, description)\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
       typename p3##_type>\
   class name##MatcherP4 {\
@@ -1623,10 +1623,10 @@ AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8, M9 m9, M10 m10) {
       virtual bool MatchAndExplain(\
           GTEST_REFERENCE_TO_CONST_(arg_type) arg,\
           ::testing::MatchResultListener* result_listener) const;\
-      virtual void DescribeTo(::std::ostream* gmock_os) const {\
+      virtual v.. DescribeTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(false);\
       }\
-      virtual void DescribeNegationTo(::std::ostream* gmock_os) const {\
+      virtual v.. DescribeNegationTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(true);\
       }\
       p0##_type const p0;\
@@ -1680,7 +1680,7 @@ AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8, M9 m9, M10 m10) {
       ::testing::MatchResultListener* result_listener GTEST_ATTRIBUTE_UNUSED_)\
           const
 
-#define MATCHER_P5(name, p0, p1, p2, p3, p4, description)\
+_de.. MATCHER_P5(name, p0, p1, p2, p3, p4, description)\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
       typename p3##_type, typename p4##_type>\
   class name##MatcherP5 {\
@@ -1699,10 +1699,10 @@ AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8, M9 m9, M10 m10) {
       virtual bool MatchAndExplain(\
           GTEST_REFERENCE_TO_CONST_(arg_type) arg,\
           ::testing::MatchResultListener* result_listener) const;\
-      virtual void DescribeTo(::std::ostream* gmock_os) const {\
+      virtual v.. DescribeTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(false);\
       }\
-      virtual void DescribeNegationTo(::std::ostream* gmock_os) const {\
+      virtual v.. DescribeNegationTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(true);\
       }\
       p0##_type const p0;\
@@ -1759,7 +1759,7 @@ AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8, M9 m9, M10 m10) {
       ::testing::MatchResultListener* result_listener GTEST_ATTRIBUTE_UNUSED_)\
           const
 
-#define MATCHER_P6(name, p0, p1, p2, p3, p4, p5, description)\
+_de.. MATCHER_P6(name, p0, p1, p2, p3, p4, p5, description)\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
       typename p3##_type, typename p4##_type, typename p5##_type>\
   class name##MatcherP6 {\
@@ -1779,10 +1779,10 @@ AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8, M9 m9, M10 m10) {
       virtual bool MatchAndExplain(\
           GTEST_REFERENCE_TO_CONST_(arg_type) arg,\
           ::testing::MatchResultListener* result_listener) const;\
-      virtual void DescribeTo(::std::ostream* gmock_os) const {\
+      virtual v.. DescribeTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(false);\
       }\
-      virtual void DescribeNegationTo(::std::ostream* gmock_os) const {\
+      virtual v.. DescribeNegationTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(true);\
       }\
       p0##_type const p0;\
@@ -1842,7 +1842,7 @@ AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8, M9 m9, M10 m10) {
       ::testing::MatchResultListener* result_listener GTEST_ATTRIBUTE_UNUSED_)\
           const
 
-#define MATCHER_P7(name, p0, p1, p2, p3, p4, p5, p6, description)\
+_de.. MATCHER_P7(name, p0, p1, p2, p3, p4, p5, p6, description)\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
       typename p3##_type, typename p4##_type, typename p5##_type, \
       typename p6##_type>\
@@ -1865,10 +1865,10 @@ AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8, M9 m9, M10 m10) {
       virtual bool MatchAndExplain(\
           GTEST_REFERENCE_TO_CONST_(arg_type) arg,\
           ::testing::MatchResultListener* result_listener) const;\
-      virtual void DescribeTo(::std::ostream* gmock_os) const {\
+      virtual v.. DescribeTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(false);\
       }\
-      virtual void DescribeNegationTo(::std::ostream* gmock_os) const {\
+      virtual v.. DescribeNegationTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(true);\
       }\
       p0##_type const p0;\
@@ -1936,7 +1936,7 @@ AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8, M9 m9, M10 m10) {
       ::testing::MatchResultListener* result_listener GTEST_ATTRIBUTE_UNUSED_)\
           const
 
-#define MATCHER_P8(name, p0, p1, p2, p3, p4, p5, p6, p7, description)\
+_de.. MATCHER_P8(name, p0, p1, p2, p3, p4, p5, p6, p7, description)\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
       typename p3##_type, typename p4##_type, typename p5##_type, \
       typename p6##_type, typename p7##_type>\
@@ -1960,10 +1960,10 @@ AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8, M9 m9, M10 m10) {
       virtual bool MatchAndExplain(\
           GTEST_REFERENCE_TO_CONST_(arg_type) arg,\
           ::testing::MatchResultListener* result_listener) const;\
-      virtual void DescribeTo(::std::ostream* gmock_os) const {\
+      virtual v.. DescribeTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(false);\
       }\
-      virtual void DescribeNegationTo(::std::ostream* gmock_os) const {\
+      virtual v.. DescribeNegationTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(true);\
       }\
       p0##_type const p0;\
@@ -2036,7 +2036,7 @@ AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8, M9 m9, M10 m10) {
       ::testing::MatchResultListener* result_listener GTEST_ATTRIBUTE_UNUSED_)\
           const
 
-#define MATCHER_P9(name, p0, p1, p2, p3, p4, p5, p6, p7, p8, description)\
+_de.. MATCHER_P9(name, p0, p1, p2, p3, p4, p5, p6, p7, p8, description)\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
       typename p3##_type, typename p4##_type, typename p5##_type, \
       typename p6##_type, typename p7##_type, typename p8##_type>\
@@ -2061,10 +2061,10 @@ AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8, M9 m9, M10 m10) {
       virtual bool MatchAndExplain(\
           GTEST_REFERENCE_TO_CONST_(arg_type) arg,\
           ::testing::MatchResultListener* result_listener) const;\
-      virtual void DescribeTo(::std::ostream* gmock_os) const {\
+      virtual v.. DescribeTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(false);\
       }\
-      virtual void DescribeNegationTo(::std::ostream* gmock_os) const {\
+      virtual v.. DescribeNegationTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(true);\
       }\
       p0##_type const p0;\
@@ -2141,7 +2141,7 @@ AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8, M9 m9, M10 m10) {
       ::testing::MatchResultListener* result_listener GTEST_ATTRIBUTE_UNUSED_)\
           const
 
-#define MATCHER_P10(name, p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, description)\
+_de.. MATCHER_P10(name, p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, description)\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
       typename p3##_type, typename p4##_type, typename p5##_type, \
       typename p6##_type, typename p7##_type, typename p8##_type, \
@@ -2169,10 +2169,10 @@ AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8, M9 m9, M10 m10) {
       virtual bool MatchAndExplain(\
           GTEST_REFERENCE_TO_CONST_(arg_type) arg,\
           ::testing::MatchResultListener* result_listener) const;\
-      virtual void DescribeTo(::std::ostream* gmock_os) const {\
+      virtual v.. DescribeTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(false);\
       }\
-      virtual void DescribeNegationTo(::std::ostream* gmock_os) const {\
+      virtual v.. DescribeNegationTo(::std::ostream* gmock_os) const {\
         *gmock_os << FormatDescription(true);\
       }\
       p0##_type const p0;\

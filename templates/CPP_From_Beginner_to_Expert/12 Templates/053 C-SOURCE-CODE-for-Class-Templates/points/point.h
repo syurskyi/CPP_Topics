@@ -1,5 +1,5 @@
 #ifndef POINT_H_INCLUDED
-#define POINT_H_INCLUDED
+_de.. POINT_H_INCLUDED
 ? |i..
 
 u.. s..
@@ -13,7 +13,7 @@ class Point //base, parent, superclass
         Point(T =0);
         ~Point();
         T getX();
-        void setX(T);
+        v.. setX(T);
 };
 template<typename T>
 Point<T>::Point(T x)
@@ -27,7 +27,7 @@ Point<T>::~Point()
     cout << "The destructor from the Point class has just been invoked" << endl;
 }
 template<typename T>
-void Point<T>::setX(T x)
+v.. Point<T>::setX(T x)
 {
     this->x = x;
     cout << "Im from Point" << endl;
@@ -60,9 +60,9 @@ class Point2D : public Point<T> //derived, child, subclass
         Point2D(T =0, T =0);
         ~Point2D();
         T getY() { return y; }
-        void setY(T);
-        void setX(T);
-        void setXY(T, T);
+        v.. setY(T);
+        v.. setX(T);
+        v.. setXY(T, T);
         Point2D operator+(Point2D);
 
 };
@@ -78,18 +78,18 @@ Point2D<T>::~Point2D()
     cout << "The destructor from the Point2D class has just been invoked" << endl;
 }
 template <typename T>
-void Point2D<T>::setY(T y)
+v.. Point2D<T>::setY(T y)
 {
     this->y = y;
 }
 template <typename T>
-void Point2D<T>::setXY(T x, T y)
+v.. Point2D<T>::setXY(T x, T y)
 {
     setX(x);
     setY(y);
 }
 template <typename T>
-void Point2D<T>::setX(T x)
+v.. Point2D<T>::setX(T x)
 {
     this->x = x;
     cout << "Im from Point2D" << endl;

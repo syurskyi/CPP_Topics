@@ -36,7 +36,7 @@
 // CardinalityInterface interface if necessary.
 
 #ifndef GMOCK_INCLUDE_GMOCK_GMOCK_CARDINALITIES_H_
-#define GMOCK_INCLUDE_GMOCK_GMOCK_CARDINALITIES_H_
+_de.. GMOCK_INCLUDE_GMOCK_GMOCK_CARDINALITIES_H_
 
 ? <limits.h>
 ? <ostream>  // NOLINT
@@ -72,7 +72,7 @@ class CardinalityInterface {
   virtual bool IsSaturatedByCallCount(int call_count) const = 0;
 
   // Describes self to an ostream.
-  virtual void DescribeTo(::std::ostream* os) const = 0;
+  virtual v.. DescribeTo(::std::ostream* os) const = 0;
 };
 
 // A Cardinality is a copyable and IMMUTABLE (except by assignment)
@@ -112,10 +112,10 @@ class GTEST_API_ Cardinality {
   }
 
   // Describes self to an ostream
-  void DescribeTo(::std::ostream* os) const { impl_->DescribeTo(os); }
+  v.. DescribeTo(::std::ostream* os) const { impl_->DescribeTo(os); }
 
   // Describes the given actual call count to an ostream.
-  static void DescribeActualCallCountTo(int actual_call_count,
+  static v.. DescribeActualCallCountTo(int actual_call_count,
                                         ::std::ostream* os);
 
  private:

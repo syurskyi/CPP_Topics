@@ -1,5 +1,5 @@
 #ifndef INTEGER_H_INCLUDED
-#define INTEGER_H_INCLUDED
+_de.. INTEGER_H_INCLUDED
 
 class Integer
 {

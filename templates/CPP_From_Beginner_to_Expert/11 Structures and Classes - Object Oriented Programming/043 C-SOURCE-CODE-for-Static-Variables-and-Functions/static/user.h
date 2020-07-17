@@ -1,5 +1,5 @@
 #ifndef USER_H_INCLUDED
-#define USER_H_INCLUDED
+_de.. USER_H_INCLUDED
 
 class User
 {

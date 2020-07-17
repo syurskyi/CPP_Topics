@@ -36,7 +36,7 @@
 // MatcherInterface<T> interface if necessary.
 
 #ifndef GMOCK_INCLUDE_GMOCK_GMOCK_MATCHERS_H_
-#define GMOCK_INCLUDE_GMOCK_GMOCK_MATCHERS_H_
+_de.. GMOCK_INCLUDE_GMOCK_GMOCK_MATCHERS_H_
 
 ? <math.h>
 ? <algorithm>
@@ -122,7 +122,7 @@ class MatcherDescriberInterface {
   // matcher should have.  The subject of the verb phrase is the value
   // being matched.  For example, the DescribeTo() method of the Gt(7)
   // matcher prints "is greater than 7".
-  virtual void DescribeTo(::std::ostream* os) const = 0;
+  virtual v.. DescribeTo(::std::ostream* os) const = 0;
 
   // Describes the negation of this matcher to an ostream.  For
   // example, if the description of this matcher is "is greater than
@@ -130,7 +130,7 @@ class MatcherDescriberInterface {
   // You are not required to override this when implementing
   // MatcherInterface, but it is highly advised so that your matcher
   // can produce good error messages.
-  virtual void DescribeNegationTo(::std::ostream* os) const {
+  virtual v.. DescribeNegationTo(::std::ostream* os) const {
     *os << "not (";
     DescribeTo(os);
     *os << ")";
@@ -189,9 +189,9 @@ class MatcherInterfaceAdapter : public MatcherInterface<const T&> {
       : impl_(impl) {}
   virtual ~MatcherInterfaceAdapter() { delete impl_; }
 
-  virtual void DescribeTo(::std::ostream* os) const { impl_->DescribeTo(os); }
+  virtual v.. DescribeTo(::std::ostream* os) const { impl_->DescribeTo(os); }
 
-  virtual void DescribeNegationTo(::std::ostream* os) const {
+  virtual v.. DescribeNegationTo(::std::ostream* os) const {
     impl_->DescribeNegationTo(os);
   }
 
@@ -217,7 +217,7 @@ class StringMatchResultListener : public MatchResultListener {
   std::string str() const { return ss_.str(); }
 
   // Clears the explanation accumulated so far.
-  void Clear() { ss_.str(""); }
+  v.. Clear() { ss_.str(""); }
 
  private:
   ::std::stringstream ss_;
@@ -293,15 +293,15 @@ class MatcherBase {
   }
 
   // Describes this matcher to an ostream.
-  void DescribeTo(::std::ostream* os) const { impl_->DescribeTo(os); }
+  v.. DescribeTo(::std::ostream* os) const { impl_->DescribeTo(os); }
 
   // Describes the negation of this matcher to an ostream.
-  void DescribeNegationTo(::std::ostream* os) const {
+  v.. DescribeNegationTo(::std::ostream* os) const {
     impl_->DescribeNegationTo(os);
   }
 
   // Explains why x matches, or doesn't match, the matcher.
-  void ExplainMatchResultTo(GTEST_REFERENCE_TO_CONST_(T) x,
+  v.. ExplainMatchResultTo(GTEST_REFERENCE_TO_CONST_(T) x,
                             ::std::ostream* os) const {
     StreamMatchResultListener listener(os);
     MatchAndExplain(x, &listener);
@@ -581,11 +581,11 @@ class PolymorphicMatcher {
    public:
     explicit MonomorphicImpl(const Impl& impl) : impl_(impl) {}
 
-    virtual void DescribeTo(::std::ostream* os) const {
+    virtual v.. DescribeTo(::std::ostream* os) const {
       impl_.DescribeTo(os);
     }
 
-    virtual void DescribeNegationTo(::std::ostream* os) const {
+    virtual v.. DescribeNegationTo(::std::ostream* os) const {
       impl_.DescribeNegationTo(os);
     }
 
@@ -744,11 +744,11 @@ class MatcherCastImpl<T, Matcher<U> > {
       return source_matcher_.MatchAndExplain(static_cast<U>(x), listener);
     }
 
-    virtual void DescribeTo(::std::ostream* os) const {
+    virtual v.. DescribeTo(::std::ostream* os) const {
       source_matcher_.DescribeTo(os);
     }
 
-    virtual void DescribeNegationTo(::std::ostream* os) const {
+    virtual v.. DescribeNegationTo(::std::ostream* os) const {
       source_matcher_.DescribeNegationTo(os);
     }
 
@@ -842,7 +842,7 @@ Matcher<T> A();
 namespace internal {
 
 // If the explanation is not empty, prints it to the ostream.
-inline void PrintIfNotEmpty(const std::string& explanation,
+inline v.. PrintIfNotEmpty(const std::string& explanation,
                             ::std::ostream* os) {
   if (explanation != "" && os != NULL) {
     *os << ", " << explanation;
@@ -907,7 +907,7 @@ class TuplePrefix {
   // against the first N fields of values.  If there is no failure,
   // nothing will be streamed to os.
   template <typename MatcherTuple, typename ValueTuple>
-  static void ExplainMatchFailuresTo(const MatcherTuple& matchers,
+  static v.. ExplainMatchFailuresTo(const MatcherTuple& matchers,
                                      const ValueTuple& values,
                                      ::std::ostream* os) {
     // First, describes failures in the first N - 1 fields.
@@ -949,7 +949,7 @@ class TuplePrefix<0> {
   }
 
   template <typename MatcherTuple, typename ValueTuple>
-  static void ExplainMatchFailuresTo(const MatcherTuple& /* matchers */,
+  static v.. ExplainMatchFailuresTo(const MatcherTuple& /* matchers */,
                                      const ValueTuple& /* values */,
                                      ::std::ostream* /* os */) {}
 };
@@ -974,7 +974,7 @@ bool TupleMatches(const MatcherTuple& matcher_tuple,
 // Describes failures in matching matchers against values.  If there
 // is no failure, nothing will be streamed to os.
 template <typename MatcherTuple, typename ValueTuple>
-void ExplainMatchFailureTupleTo(const MatcherTuple& matchers,
+v.. ExplainMatchFailureTupleTo(const MatcherTuple& matchers,
                                 const ValueTuple& values,
                                 ::std::ostream* os) {
   TuplePrefix<tuple_size<MatcherTuple>::value>::ExplainMatchFailuresTo(
@@ -1029,8 +1029,8 @@ class AnyMatcherImpl : public MatcherInterface<GTEST_REFERENCE_TO_CONST_(T)> {
                                MatchResultListener* /* listener */) const {
     return true;
   }
-  virtual void DescribeTo(::std::ostream* os) const { *os << "is anything"; }
-  virtual void DescribeNegationTo(::std::ostream* os) const {
+  virtual v.. DescribeTo(::std::ostream* os) const { *os << "is anything"; }
+  virtual v.. DescribeNegationTo(::std::ostream* os) const {
     // This is mostly for completeness' safe, as it's not very useful
     // to write Not(A<bool>()).  However we cannot completely rule out
     // such a possibility, and it doesn't hurt to be prepared.
@@ -1076,11 +1076,11 @@ class ComparisonBase {
         Lhs lhs, MatchResultListener* /* listener */) const {
       return Op()(lhs, rhs_);
     }
-    virtual void DescribeTo(::std::ostream* os) const {
+    virtual v.. DescribeTo(::std::ostream* os) const {
       *os << D::Desc() << " ";
       UniversalPrint(rhs_, os);
     }
-    virtual void DescribeNegationTo(::std::ostream* os) const {
+    virtual v.. DescribeNegationTo(::std::ostream* os) const {
       *os << D::NegatedDesc() <<  " ";
       UniversalPrint(rhs_, os);
     }
@@ -1155,8 +1155,8 @@ class IsNullMatcher {
 #endif  // GTEST_LANG_CXX11
   }
 
-  void DescribeTo(::std::ostream* os) const { *os << "is NULL"; }
-  void DescribeNegationTo(::std::ostream* os) const {
+  v.. DescribeTo(::std::ostream* os) const { *os << "is NULL"; }
+  v.. DescribeNegationTo(::std::ostream* os) const {
     *os << "isn't NULL";
   }
 };
@@ -1175,8 +1175,8 @@ class NotNullMatcher {
 #endif  // GTEST_LANG_CXX11
   }
 
-  void DescribeTo(::std::ostream* os) const { *os << "isn't NULL"; }
-  void DescribeNegationTo(::std::ostream* os) const {
+  v.. DescribeTo(::std::ostream* os) const { *os << "isn't NULL"; }
+  v.. DescribeNegationTo(::std::ostream* os) const {
     *os << "is NULL";
   }
 };
@@ -1230,16 +1230,16 @@ class RefMatcher<T&> {
     // in order to match the interface MatcherInterface<Super&>.
     virtual bool MatchAndExplain(
         Super& x, MatchResultListener* listener) const {
-      *listener << "which is located @" << static_cast<const void*>(&x);
+      *listener << "which is located @" << static_cast<const v..*>(&x);
       return &x == &object_;
     }
 
-    virtual void DescribeTo(::std::ostream* os) const {
+    virtual v.. DescribeTo(::std::ostream* os) const {
       *os << "references the variable ";
       UniversalPrinter<Super&>::Print(object_, os);
     }
 
-    virtual void DescribeNegationTo(::std::ostream* os) const {
+    virtual v.. DescribeNegationTo(::std::ostream* os) const {
       *os << "does not reference the variable ";
       UniversalPrinter<Super&>::Print(object_, os);
     }
@@ -1337,16 +1337,16 @@ class StrEqualityMatcher {
     return expect_eq_ == eq;
   }
 
-  void DescribeTo(::std::ostream* os) const {
+  v.. DescribeTo(::std::ostream* os) const {
     DescribeToHelper(expect_eq_, os);
   }
 
-  void DescribeNegationTo(::std::ostream* os) const {
+  v.. DescribeNegationTo(::std::ostream* os) const {
     DescribeToHelper(!expect_eq_, os);
   }
 
  private:
-  void DescribeToHelper(bool expect_eq, ::std::ostream* os) const {
+  v.. DescribeToHelper(bool expect_eq, ::std::ostream* os) const {
     *os << (expect_eq ? "is " : "isn't ");
     *os << "equal to ";
     if (!case_sensitive_) {
@@ -1406,12 +1406,12 @@ class HasSubstrMatcher {
   }
 
   // Describes what this matcher matches.
-  void DescribeTo(::std::ostream* os) const {
+  v.. DescribeTo(::std::ostream* os) const {
     *os << "has substring ";
     UniversalPrint(substring_, os);
   }
 
-  void DescribeNegationTo(::std::ostream* os) const {
+  v.. DescribeNegationTo(::std::ostream* os) const {
     *os << "has no substring ";
     UniversalPrint(substring_, os);
   }
@@ -1466,12 +1466,12 @@ class StartsWithMatcher {
         s2.substr(0, prefix_.length()) == prefix_;
   }
 
-  void DescribeTo(::std::ostream* os) const {
+  v.. DescribeTo(::std::ostream* os) const {
     *os << "starts with ";
     UniversalPrint(prefix_, os);
   }
 
-  void DescribeNegationTo(::std::ostream* os) const {
+  v.. DescribeNegationTo(::std::ostream* os) const {
     *os << "doesn't start with ";
     UniversalPrint(prefix_, os);
   }
@@ -1525,12 +1525,12 @@ class EndsWithMatcher {
         s2.substr(s2.length() - suffix_.length()) == suffix_;
   }
 
-  void DescribeTo(::std::ostream* os) const {
+  v.. DescribeTo(::std::ostream* os) const {
     *os << "ends with ";
     UniversalPrint(suffix_, os);
   }
 
-  void DescribeNegationTo(::std::ostream* os) const {
+  v.. DescribeNegationTo(::std::ostream* os) const {
     *os << "doesn't end with ";
     UniversalPrint(suffix_, os);
   }
@@ -1578,13 +1578,13 @@ class MatchesRegexMatcher {
         RE::PartialMatch(s2, *regex_);
   }
 
-  void DescribeTo(::std::ostream* os) const {
+  v.. DescribeTo(::std::ostream* os) const {
     *os << (full_match_ ? "matches" : "contains")
         << " regular expression ";
     UniversalPrinter<std::string>::Print(regex_->pattern(), os);
   }
 
-  void DescribeNegationTo(::std::ostream* os) const {
+  v.. DescribeNegationTo(::std::ostream* os) const {
     *os << "doesn't " << (full_match_ ? "match" : "contain")
         << " regular expression ";
     UniversalPrinter<std::string>::Print(regex_->pattern(), os);
@@ -1630,10 +1630,10 @@ class PairMatchBase {
         MatchResultListener* /* listener */) const {
       return Op()(::testing::get<0>(args), ::testing::get<1>(args));
     }
-    virtual void DescribeTo(::std::ostream* os) const {
+    virtual v.. DescribeTo(::std::ostream* os) const {
       *os << "are " << GetDesc;
     }
-    virtual void DescribeNegationTo(::std::ostream* os) const {
+    virtual v.. DescribeNegationTo(::std::ostream* os) const {
       *os << "aren't " << GetDesc;
     }
   };
@@ -1679,11 +1679,11 @@ class NotMatcherImpl : public MatcherInterface<GTEST_REFERENCE_TO_CONST_(T)> {
     return !matcher_.MatchAndExplain(x, listener);
   }
 
-  virtual void DescribeTo(::std::ostream* os) const {
+  virtual v.. DescribeTo(::std::ostream* os) const {
     matcher_.DescribeNegationTo(os);
   }
 
-  virtual void DescribeNegationTo(::std::ostream* os) const {
+  virtual v.. DescribeNegationTo(::std::ostream* os) const {
     matcher_.DescribeTo(os);
   }
 
@@ -1724,7 +1724,7 @@ class AllOfMatcherImpl
   explicit AllOfMatcherImpl(std::vector<Matcher<T> > matchers)
       : matchers_(internal::move(matchers)) {}
 
-  virtual void DescribeTo(::std::ostream* os) const {
+  virtual v.. DescribeTo(::std::ostream* os) const {
     *os << "(";
     for (size_t i = 0; i < matchers_.size(); ++i) {
       if (i != 0) *os << ") and (";
@@ -1733,7 +1733,7 @@ class AllOfMatcherImpl
     *os << ")";
   }
 
-  virtual void DescribeNegationTo(::std::ostream* os) const {
+  virtual v.. DescribeNegationTo(::std::ostream* os) const {
     *os << "(";
     for (size_t i = 0; i < matchers_.size(); ++i) {
       if (i != 0) *os << ") or (";
@@ -1802,14 +1802,14 @@ class VariadicMatcher {
 
  private:
   template <typename T, size_t I>
-  void CreateVariadicMatcher(std::vector<Matcher<T> >* values,
+  v.. CreateVariadicMatcher(std::vector<Matcher<T> >* values,
                              std::integral_constant<size_t, I>) const {
     values->push_back(SafeMatcherCast<T>(std::get<I>(matchers_)));
     CreateVariadicMatcher<T>(values, std::integral_constant<size_t, I + 1>());
   }
 
   template <typename T>
-  void CreateVariadicMatcher(
+  v.. CreateVariadicMatcher(
       std::vector<Matcher<T> >*,
       std::integral_constant<size_t, sizeof...(Args)>) const {}
 
@@ -1860,7 +1860,7 @@ class AnyOfMatcherImpl
   explicit AnyOfMatcherImpl(std::vector<Matcher<T> > matchers)
       : matchers_(internal::move(matchers)) {}
 
-  virtual void DescribeTo(::std::ostream* os) const {
+  virtual v.. DescribeTo(::std::ostream* os) const {
     *os << "(";
     for (size_t i = 0; i < matchers_.size(); ++i) {
       if (i != 0) *os << ") or (";
@@ -1869,7 +1869,7 @@ class AnyOfMatcherImpl
     *os << ")";
   }
 
-  virtual void DescribeNegationTo(::std::ostream* os) const {
+  virtual v.. DescribeNegationTo(::std::ostream* os) const {
     *os << "(";
     for (size_t i = 0; i < matchers_.size(); ++i) {
       if (i != 0) *os << ") and (";
@@ -1972,11 +1972,11 @@ class TrulyMatcher {
     return false;
   }
 
-  void DescribeTo(::std::ostream* os) const {
+  v.. DescribeTo(::std::ostream* os) const {
     *os << "satisfies the given predicate";
   }
 
-  void DescribeNegationTo(::std::ostream* os) const {
+  v.. DescribeNegationTo(::std::ostream* os) const {
     *os << "doesn't satisfy the given predicate";
   }
 
@@ -2149,7 +2149,7 @@ class FloatingEqMatcher {
       }
     }
 
-    virtual void DescribeTo(::std::ostream* os) const {
+    virtual v.. DescribeTo(::std::ostream* os) const {
       // os->precision() returns the previously set precision, which we
       // store to restore the ostream to its original configuration
       // after outputting.
@@ -2170,7 +2170,7 @@ class FloatingEqMatcher {
       os->precision(old_precision);
     }
 
-    virtual void DescribeNegationTo(::std::ostream* os) const {
+    virtual v.. DescribeNegationTo(::std::ostream* os) const {
       // As before, get original precision.
       const ::std::streamsize old_precision = os->precision(
           ::std::numeric_limits<FloatType>::digits10 + 2);
@@ -2289,10 +2289,10 @@ class FloatingEq2Matcher {
             ::testing::get<1>(args), listener);
       }
     }
-    virtual void DescribeTo(::std::ostream* os) const {
+    virtual v.. DescribeTo(::std::ostream* os) const {
       *os << "are " << GetDesc;
     }
-    virtual void DescribeNegationTo(::std::ostream* os) const {
+    virtual v.. DescribeNegationTo(::std::ostream* os) const {
       *os << "aren't " << GetDesc;
     }
 
@@ -2301,7 +2301,7 @@ class FloatingEq2Matcher {
     const bool nan_eq_nan_;
   };
 
-  void Init(FloatType max_abs_error_val, bool nan_eq_nan_val) {
+  v.. Init(FloatType max_abs_error_val, bool nan_eq_nan_val) {
     max_abs_error_ = max_abs_error_val;
     nan_eq_nan_ = nan_eq_nan_val;
   }
@@ -2341,12 +2341,12 @@ class PointeeMatcher {
     explicit Impl(const InnerMatcher& matcher)
         : matcher_(MatcherCast<const Pointee&>(matcher)) {}
 
-    virtual void DescribeTo(::std::ostream* os) const {
+    virtual v.. DescribeTo(::std::ostream* os) const {
       *os << "points to a value that ";
       matcher_.DescribeTo(os);
     }
 
-    virtual void DescribeNegationTo(::std::ostream* os) const {
+    virtual v.. DescribeNegationTo(::std::ostream* os) const {
       *os << "does not point to a value that ";
       matcher_.DescribeTo(os);
     }
@@ -2384,12 +2384,12 @@ class WhenDynamicCastToMatcherBase {
   explicit WhenDynamicCastToMatcherBase(const Matcher<To>& matcher)
       : matcher_(matcher) {}
 
-  void DescribeTo(::std::ostream* os) const {
+  v.. DescribeTo(::std::ostream* os) const {
     GetCastTypeDescription(os);
     matcher_.DescribeTo(os);
   }
 
-  void DescribeNegationTo(::std::ostream* os) const {
+  v.. DescribeNegationTo(::std::ostream* os) const {
     GetCastTypeDescription(os);
     matcher_.DescribeNegationTo(os);
   }
@@ -2402,7 +2402,7 @@ class WhenDynamicCastToMatcherBase {
   }
 
  private:
-  static void GetCastTypeDescription(::std::ostream* os) {
+  static v.. GetCastTypeDescription(::std::ostream* os) {
     *os << "when dynamic_cast to " << GetToName() << ", ";
   }
 
@@ -2461,12 +2461,12 @@ class FieldMatcher {
         matcher_(matcher),
         whose_field_("whose field `" + field_name + "` ") {}
 
-  void DescribeTo(::std::ostream* os) const {
+  v.. DescribeTo(::std::ostream* os) const {
     *os << "is an object " << whose_field_;
     matcher_.DescribeTo(os);
   }
 
-  void DescribeNegationTo(::std::ostream* os) const {
+  v.. DescribeNegationTo(::std::ostream* os) const {
     *os << "is an object " << whose_field_;
     matcher_.DescribeNegationTo(os);
   }
@@ -2536,12 +2536,12 @@ class PropertyMatcher {
         matcher_(matcher),
         whose_property_("whose property `" + property_name + "` ") {}
 
-  void DescribeTo(::std::ostream* os) const {
+  v.. DescribeTo(::std::ostream* os) const {
     *os << "is an object " << whose_property_;
     matcher_.DescribeTo(os);
   }
 
-  void DescribeNegationTo(::std::ostream* os) const {
+  v.. DescribeNegationTo(::std::ostream* os) const {
     *os << "is an object " << whose_property_;
     matcher_.DescribeNegationTo(os);
   }
@@ -2605,7 +2605,7 @@ struct CallableTraits {
   typedef typename Functor::result_type ResultType;
   typedef Functor StorageType;
 
-  static void CheckIsValid(Functor /* functor */) {}
+  static v.. CheckIsValid(Functor /* functor */) {}
   template <typename T>
   static ResultType Invoke(Functor f, T arg) { return f(arg); }
 };
@@ -2616,7 +2616,7 @@ struct CallableTraits<ResType(*)(ArgType)> {
   typedef ResType ResultType;
   typedef ResType(*StorageType)(ArgType);
 
-  static void CheckIsValid(ResType(*f)(ArgType)) {
+  static v.. CheckIsValid(ResType(*f)(ArgType)) {
     GTEST_CHECK_(f != NULL)
         << "NULL function pointer is passed into ResultOf().";
   }
@@ -2652,12 +2652,12 @@ class ResultOfMatcher {
     Impl(CallableStorageType callable, const Matcher<ResultType>& matcher)
         : callable_(callable), matcher_(matcher) {}
 
-    virtual void DescribeTo(::std::ostream* os) const {
+    virtual v.. DescribeTo(::std::ostream* os) const {
       *os << "is mapped by the given callable to a value that ";
       matcher_.DescribeTo(os);
     }
 
-    virtual void DescribeNegationTo(::std::ostream* os) const {
+    virtual v.. DescribeNegationTo(::std::ostream* os) const {
       *os << "is mapped by the given callable to a value that ";
       matcher_.DescribeNegationTo(os);
     }
@@ -2711,11 +2711,11 @@ class SizeIsMatcher {
     explicit Impl(const SizeMatcher& size_matcher)
         : size_matcher_(MatcherCast<SizeType>(size_matcher)) {}
 
-    virtual void DescribeTo(::std::ostream* os) const {
+    virtual v.. DescribeTo(::std::ostream* os) const {
       *os << "size ";
       size_matcher_.DescribeTo(os);
     }
-    virtual void DescribeNegationTo(::std::ostream* os) const {
+    virtual v.. DescribeNegationTo(::std::ostream* os) const {
       *os << "size ";
       size_matcher_.DescribeNegationTo(os);
     }
@@ -2765,11 +2765,11 @@ class BeginEndDistanceIsMatcher {
     explicit Impl(const DistanceMatcher& distance_matcher)
         : distance_matcher_(MatcherCast<DistanceType>(distance_matcher)) {}
 
-    virtual void DescribeTo(::std::ostream* os) const {
+    virtual v.. DescribeTo(::std::ostream* os) const {
       *os << "distance between begin() and end() ";
       distance_matcher_.DescribeTo(os);
     }
-    virtual void DescribeNegationTo(::std::ostream* os) const {
+    virtual v.. DescribeNegationTo(::std::ostream* os) const {
       *os << "distance between begin() and end() ";
       distance_matcher_.DescribeNegationTo(os);
     }
@@ -2825,15 +2825,15 @@ class ContainerEqMatcher {
       : expected_(View::Copy(expected)) {
     // Makes sure the user doesn't instantiate this class template
     // with a const or reference type.
-    (void)testing::StaticAssertTypeEq<Container,
+    (v..)testing::StaticAssertTypeEq<Container,
         GTEST_REMOVE_REFERENCE_AND_CONST_(Container)>();
   }
 
-  void DescribeTo(::std::ostream* os) const {
+  v.. DescribeTo(::std::ostream* os) const {
     *os << "equals ";
     UniversalPrint(expected_, os);
   }
-  void DescribeNegationTo(::std::ostream* os) const {
+  v.. DescribeNegationTo(::std::ostream* os) const {
     *os << "does not equal ";
     UniversalPrint(expected_, os);
   }
@@ -2931,12 +2931,12 @@ class WhenSortedByMatcher {
     Impl(const Comparator& comparator, const ContainerMatcher& matcher)
         : comparator_(comparator), matcher_(matcher) {}
 
-    virtual void DescribeTo(::std::ostream* os) const {
+    virtual v.. DescribeTo(::std::ostream* os) const {
       *os << "(when sorted) ";
       matcher_.DescribeTo(os);
     }
 
-    virtual void DescribeNegationTo(::std::ostream* os) const {
+    virtual v.. DescribeNegationTo(::std::ostream* os) const {
       *os << "(when sorted) ";
       matcher_.DescribeNegationTo(os);
     }
@@ -3001,7 +3001,7 @@ class PointwiseMatcher {
       : tuple_matcher_(tuple_matcher), rhs_(RhsView::Copy(rhs)) {
     // Makes sure the user doesn't instantiate this class template
     // with a const or reference type.
-    (void)testing::StaticAssertTypeEq<RhsContainer,
+    (v..)testing::StaticAssertTypeEq<RhsContainer,
         GTEST_REMOVE_REFERENCE_AND_CONST_(RhsContainer)>();
   }
 
@@ -3033,14 +3033,14 @@ class PointwiseMatcher {
         : mono_tuple_matcher_(SafeMatcherCast<InnerMatcherArg>(tuple_matcher)),
           rhs_(rhs) {}
 
-    virtual void DescribeTo(::std::ostream* os) const {
+    virtual v.. DescribeTo(::std::ostream* os) const {
       *os << "contains " << rhs_.size()
           << " values, where each value and its corresponding value in ";
       UniversalPrinter<RhsStlContainer>::Print(rhs_, os);
       *os << " ";
       mono_tuple_matcher_.DescribeTo(os);
     }
-    virtual void DescribeNegationTo(::std::ostream* os) const {
+    virtual v.. DescribeNegationTo(::std::ostream* os) const {
       *os << "doesn't contain exactly " << rhs_.size()
           << " values, or contains a value x at some index i"
           << " where x and the i-th value of ";
@@ -3157,12 +3157,12 @@ class ContainsMatcherImpl : public QuantifierMatcherImpl<Container> {
       : QuantifierMatcherImpl<Container>(inner_matcher) {}
 
   // Describes what this matcher does.
-  virtual void DescribeTo(::std::ostream* os) const {
+  virtual v.. DescribeTo(::std::ostream* os) const {
     *os << "contains at least one element that ";
     this->inner_matcher_.DescribeTo(os);
   }
 
-  virtual void DescribeNegationTo(::std::ostream* os) const {
+  virtual v.. DescribeNegationTo(::std::ostream* os) const {
     *os << "doesn't contain any element that ";
     this->inner_matcher_.DescribeTo(os);
   }
@@ -3186,12 +3186,12 @@ class EachMatcherImpl : public QuantifierMatcherImpl<Container> {
       : QuantifierMatcherImpl<Container>(inner_matcher) {}
 
   // Describes what this matcher does.
-  virtual void DescribeTo(::std::ostream* os) const {
+  virtual v.. DescribeTo(::std::ostream* os) const {
     *os << "only contains elements that ";
     this->inner_matcher_.DescribeTo(os);
   }
 
-  virtual void DescribeNegationTo(::std::ostream* os) const {
+  virtual v.. DescribeNegationTo(::std::ostream* os) const {
     *os << "contains some element that ";
     this->inner_matcher_.DescribeNegationTo(os);
   }
@@ -3313,13 +3313,13 @@ class KeyMatcherImpl : public MatcherInterface<PairType> {
   }
 
   // Describes what this matcher does.
-  virtual void DescribeTo(::std::ostream* os) const {
+  virtual v.. DescribeTo(::std::ostream* os) const {
     *os << "has a key that ";
     inner_matcher_.DescribeTo(os);
   }
 
   // Describes what the negation of this matcher does.
-  virtual void DescribeNegationTo(::std::ostream* os) const {
+  virtual v.. DescribeNegationTo(::std::ostream* os) const {
     *os << "doesn't have a key that ";
     inner_matcher_.DescribeTo(os);
   }
@@ -3365,7 +3365,7 @@ class PairMatcherImpl : public MatcherInterface<PairType> {
   }
 
   // Describes what this matcher does.
-  virtual void DescribeTo(::std::ostream* os) const {
+  virtual v.. DescribeTo(::std::ostream* os) const {
     *os << "has a first field that ";
     first_matcher_.DescribeTo(os);
     *os << ", and has a second field that ";
@@ -3373,7 +3373,7 @@ class PairMatcherImpl : public MatcherInterface<PairType> {
   }
 
   // Describes what the negation of this matcher does.
-  virtual void DescribeNegationTo(::std::ostream* os) const {
+  virtual v.. DescribeNegationTo(::std::ostream* os) const {
     *os << "has a first field that ";
     first_matcher_.DescribeNegationTo(os);
     *os << ", or has a second field that ";
@@ -3410,7 +3410,7 @@ class PairMatcherImpl : public MatcherInterface<PairType> {
   }
 
  private:
-  void ExplainSuccess(const std::string& first_explanation,
+  v.. ExplainSuccess(const std::string& first_explanation,
                       const std::string& second_explanation,
                       MatchResultListener* listener) const {
     *listener << "whose both fields match";
@@ -3475,7 +3475,7 @@ class ElementsAreMatcherImpl : public MatcherInterface<Container> {
   }
 
   // Describes what this matcher does.
-  virtual void DescribeTo(::std::ostream* os) const {
+  virtual v.. DescribeTo(::std::ostream* os) const {
     if (count() == 0) {
       *os << "is empty";
     } else if (count() == 1) {
@@ -3494,7 +3494,7 @@ class ElementsAreMatcherImpl : public MatcherInterface<Container> {
   }
 
   // Describes what the negation of this matcher does.
-  virtual void DescribeNegationTo(::std::ostream* os) const {
+  virtual v.. DescribeNegationTo(::std::ostream* os) const {
     if (count() == 0) {
       *os << "isn't empty";
       return;
@@ -3619,7 +3619,7 @@ class GTEST_API_ MatchMatrix {
   bool HasEdge(size_t ilhs, size_t irhs) const {
     return matched_[SpaceIndex(ilhs, irhs)] == 1;
   }
-  void SetEdge(size_t ilhs, size_t irhs, bool b) {
+  v.. SetEdge(size_t ilhs, size_t irhs, bool b) {
     matched_[SpaceIndex(ilhs, irhs)] = b ? 1 : 0;
   }
 
@@ -3628,7 +3628,7 @@ class GTEST_API_ MatchMatrix {
   // empty.
   bool NextGraph();
 
-  void Randomize();
+  v.. Randomize();
 
   std::string DebugString() const;
 
@@ -3677,10 +3677,10 @@ class GTEST_API_ UnorderedElementsAreMatcherImplBase {
   typedef ::std::vector<const MatcherDescriberInterface*> MatcherDescriberVec;
 
   // Describes this UnorderedElementsAre matcher.
-  void DescribeToImpl(::std::ostream* os) const;
+  v.. DescribeToImpl(::std::ostream* os) const;
 
   // Describes the negation of this UnorderedElementsAre matcher.
-  void DescribeNegationToImpl(::std::ostream* os) const;
+  v.. DescribeNegationToImpl(::std::ostream* os) const;
 
   bool VerifyMatchMatrix(const ::std::vector<std::string>& element_printouts,
                          const MatchMatrix& matrix,
@@ -3731,12 +3731,12 @@ class UnorderedElementsAreMatcherImpl
   }
 
   // Describes what this matcher does.
-  virtual void DescribeTo(::std::ostream* os) const {
+  virtual v.. DescribeTo(::std::ostream* os) const {
     return UnorderedElementsAreMatcherImplBase::DescribeToImpl(os);
   }
 
   // Describes what the negation of this matcher does.
-  virtual void DescribeNegationTo(::std::ostream* os) const {
+  virtual v.. DescribeNegationTo(::std::ostream* os) const {
     return UnorderedElementsAreMatcherImplBase::DescribeNegationToImpl(os);
   }
 
@@ -3940,7 +3940,7 @@ class BoundSecondMatcher {
   //
   // However, this should never be called, so the implementation just
   // need to assert.
-  void operator=(const BoundSecondMatcher& /*rhs*/) {
+  v.. operator=(const BoundSecondMatcher& /*rhs*/) {
     GTEST_LOG_(FATAL) << "BoundSecondMatcher should never be assigned.";
   }
 
@@ -3954,7 +3954,7 @@ class BoundSecondMatcher {
         : mono_tuple2_matcher_(SafeMatcherCast<const ArgTuple&>(tm)),
           second_value_(second) {}
 
-    virtual void DescribeTo(::std::ostream* os) const {
+    virtual v.. DescribeTo(::std::ostream* os) const {
       *os << "and ";
       UniversalPrint(second_value_, os);
       *os << " ";
@@ -4016,12 +4016,12 @@ class OptionalMatcher {
     explicit Impl(const ValueMatcher& value_matcher)
         : value_matcher_(MatcherCast<ValueType>(value_matcher)) {}
 
-    virtual void DescribeTo(::std::ostream* os) const {
+    virtual v.. DescribeTo(::std::ostream* os) const {
       *os << "value ";
       value_matcher_.DescribeTo(os);
     }
 
-    virtual void DescribeNegationTo(::std::ostream* os) const {
+    virtual v.. DescribeNegationTo(::std::ostream* os) const {
       *os << "value ";
       value_matcher_.DescribeNegationTo(os);
     }
@@ -4054,9 +4054,9 @@ class OptionalMatcher {
 namespace variant_matcher {
 // Overloads to allow VariantMatcher to do proper ADL lookup.
 template <typename T>
-void holds_alternative() {}
+v.. holds_alternative() {}
 template <typename T>
-void get() {}
+v.. get() {}
 
 // Implements a matcher that checks the value of a variant<> type variable.
 template <typename T>
@@ -4086,13 +4086,13 @@ class VariantMatcher {
     return match;
   }
 
-  void DescribeTo(std::ostream* os) const {
+  v.. DescribeTo(std::ostream* os) const {
     *os << "is a variant<> with value of type '" << GetTypeName()
         << "' and the value ";
     matcher_.DescribeTo(os);
   }
 
-  void DescribeNegationTo(std::ostream* os) const {
+  v.. DescribeNegationTo(std::ostream* os) const {
     *os << "is a variant<> with value of type other than '" << GetTypeName()
         << "' or the value ";
     matcher_.DescribeNegationTo(os);
@@ -4116,7 +4116,7 @@ namespace any_cast_matcher {
 
 // Overloads to allow AnyCastMatcher to do proper ADL lookup.
 template <typename T>
-void any_cast() {}
+v.. any_cast() {}
 
 // Implements a matcher that any_casts the value.
 template <typename T>
@@ -4147,13 +4147,13 @@ class AnyCastMatcher {
     return match;
   }
 
-  void DescribeTo(std::ostream* os) const {
+  v.. DescribeTo(std::ostream* os) const {
     *os << "is an 'any' type with value of type '" << GetTypeName()
         << "' and the value ";
     matcher_.DescribeTo(os);
   }
 
-  void DescribeNegationTo(std::ostream* os) const {
+  v.. DescribeNegationTo(std::ostream* os) const {
     *os << "is an 'any' type with value of type other than '" << GetTypeName()
         << "' or the value ";
     matcher_.DescribeNegationTo(os);
@@ -5240,9 +5240,9 @@ PolymorphicMatcher<internal::variant_matcher::VariantMatcher<T> > VariantWith(
 // tests.  ASSERT_THAT(value, matcher) and EXPECT_THAT(value, matcher)
 // succeed iff the value matches the matcher.  If the assertion fails,
 // the value and the description of the matcher will be printed.
-#define ASSERT_THAT(value, matcher) ASSERT_PRED_FORMAT1(\
+_de.. ASSERT_THAT(value, matcher) ASSERT_PRED_FORMAT1(\
     ::testing::internal::MakePredicateFormatterFromMatcher(matcher), value)
-#define EXPECT_THAT(value, matcher) EXPECT_PRED_FORMAT1(\
+_de.. EXPECT_THAT(value, matcher) EXPECT_PRED_FORMAT1(\
     ::testing::internal::MakePredicateFormatterFromMatcher(matcher), value)
 
 }  // namespace testing

@@ -1,6 +1,6 @@
 #ifndef foo_h__
-#define foo_h__
+_de.. foo_h__
  
-extern void foo(void);
+extern v.. foo(v..);
  
 #endif  // foo_h__

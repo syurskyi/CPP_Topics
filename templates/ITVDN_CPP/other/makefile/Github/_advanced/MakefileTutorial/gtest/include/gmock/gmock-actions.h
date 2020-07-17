@@ -34,7 +34,7 @@
 // This file implements some commonly used actions.
 
 #ifndef GMOCK_INCLUDE_GMOCK_GMOCK_ACTIONS_H_
-#define GMOCK_INCLUDE_GMOCK_GMOCK_ACTIONS_H_
+_de.. GMOCK_INCLUDE_GMOCK_GMOCK_ACTIONS_H_
 
 #ifndef _WIN32_WCE
 # include <errno.h>
@@ -141,7 +141,7 @@ class BuiltInDefaultValue<T*> {
 
 // The following specializations define the default values for
 // specific types we care about.
-#define GMOCK_DEFINE_DEFAULT_ACTION_FOR_RETURN_TYPE_(type, value) \
+_de.. GMOCK_DEFINE_DEFAULT_ACTION_FOR_RETURN_TYPE_(type, value) \
   template <> \
   class BuiltInDefaultValue<type> { \
    public: \
@@ -149,7 +149,7 @@ class BuiltInDefaultValue<T*> {
     static type Get() { return value; } \
   }
 
-GMOCK_DEFINE_DEFAULT_ACTION_FOR_RETURN_TYPE_(void, );  // NOLINT
+GMOCK_DEFINE_DEFAULT_ACTION_FOR_RETURN_TYPE_(v.., );  // NOLINT
 #if GTEST_HAS_GLOBAL_STRING
 GMOCK_DEFINE_DEFAULT_ACTION_FOR_RETURN_TYPE_(::string, "");
 #endif  // GTEST_HAS_GLOBAL_STRING
@@ -202,7 +202,7 @@ class DefaultValue {
  public:
   // Sets the default value for type T; requires T to be
   // copy-constructable and have a public destructor.
-  static void Set(T x) {
+  static v.. Set(T x) {
     delete producer_;
     producer_ = new FixedValueProducer(x);
   }
@@ -211,13 +211,13 @@ class DefaultValue {
   // This method can be used even if T is only move-constructible, but it is not
   // limited to that case.
   typedef T (*FactoryFunction)();
-  static void SetFactory(FactoryFunction factory) {
+  static v.. SetFactory(FactoryFunction factory) {
     delete producer_;
     producer_ = new FactoryValueProducer(factory);
   }
 
   // Unsets the default value for type T.
-  static void Clear() {
+  static v.. Clear() {
     delete producer_;
     producer_ = NULL;
   }
@@ -276,12 +276,12 @@ template <typename T>
 class DefaultValue<T&> {
  public:
   // Sets the default value for type T&.
-  static void Set(T& x) {  // NOLINT
+  static v.. Set(T& x) {  // NOLINT
     address_ = &x;
   }
 
   // Unsets the default value for type T&.
-  static void Clear() {
+  static v.. Clear() {
     address_ = NULL;
   }
 
@@ -309,10 +309,10 @@ class DefaultValue<T&> {
 // This specialization allows DefaultValue<void>::Get() to
 // compile.
 template <>
-class DefaultValue<void> {
+class DefaultValue<v..> {
  public:
   static bool Exists() { return true; }
-  static void Get() {}
+  static v.. Get() {}
 };
 
 // Points to the user-set default value for type T.
@@ -671,8 +671,8 @@ class ReturnVoidAction {
  public:
   // Allows Return() to be used in any void-returning function.
   template <typename Result, typename ArgumentTuple>
-  static void Perform(const ArgumentTuple&) {
-    CompileAssertTypesEqual<void, Result>();
+  static v.. Perform(const ArgumentTuple&) {
+    CompileAssertTypesEqual<v.., Result>();
   }
 };
 
@@ -789,7 +789,7 @@ class AssignAction {
   AssignAction(T1* ptr, T2 value) : ptr_(ptr), value_(value) {}
 
   template <typename Result, typename ArgumentTuple>
-  void Perform(const ArgumentTuple& /* args */) const {
+  v.. Perform(const ArgumentTuple& /* args */) const {
     *ptr_ = value_;
   }
 
@@ -837,8 +837,8 @@ class SetArgumentPointeeAction {
   explicit SetArgumentPointeeAction(const A& value) : value_(value) {}
 
   template <typename Result, typename ArgumentTuple>
-  void Perform(const ArgumentTuple& args) const {
-    CompileAssertTypesEqual<void, Result>();
+  v.. Perform(const ArgumentTuple& args) const {
+    CompileAssertTypesEqual<v.., Result>();
     *::testing::get<N>(args) = value_;
   }
 
@@ -860,8 +860,8 @@ class SetArgumentPointeeAction<N, Proto, true> {
   }
 
   template <typename Result, typename ArgumentTuple>
-  void Perform(const ArgumentTuple& args) const {
-    CompileAssertTypesEqual<void, Result>();
+  v.. Perform(const ArgumentTuple& args) const {
+    CompileAssertTypesEqual<v.., Result>();
     ::testing::get<N>(args)->CopyFrom(*proto_);
   }
 
@@ -955,7 +955,7 @@ class IgnoreResultAction {
     typedef typename internal::Function<F>::Result Result;
 
     // Asserts at compile time that F returns void.
-    CompileAssertTypesEqual<void, Result>();
+    CompileAssertTypesEqual<v.., Result>();
 
     return Action<F>(new Impl<F>(action_));
   }
@@ -969,7 +969,7 @@ class IgnoreResultAction {
 
     explicit Impl(const A& action) : action_(action) {}
 
-    virtual void Perform(const ArgumentTuple& args) {
+    virtual v.. Perform(const ArgumentTuple& args) {
       // Performs the action and ignores its result.
       action_.Perform(args);
     }
@@ -1012,7 +1012,7 @@ class ReferenceWrapper {
 
 // Allows the expression ByRef(x) to be printed as a reference to x.
 template <typename T>
-void PrintTo(const ReferenceWrapper<T>& ref, ::std::ostream* os) {
+v.. PrintTo(const ReferenceWrapper<T>& ref, ::std::ostream* os) {
   T& value = ref;
   UniversalPrinter<T&>::Print(value, os);
 }

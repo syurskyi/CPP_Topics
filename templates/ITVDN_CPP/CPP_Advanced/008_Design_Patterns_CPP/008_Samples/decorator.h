@@ -1,5 +1,5 @@
 #ifndef DECORATOR_H
-#define DECORATOR_H
+_de.. DECORATOR_H
 
 ? "meta_strategy.h"
 ? |i..
@@ -10,14 +10,14 @@ class Interface
 {
 public:
     virtual ~Interface() = default;
-    virtual void write( std::string& ) = 0;
+    virtual v.. write( std::string& ) = 0;
 };
 
 class Core : public Interface
 {
 public:
     ~Core() override;
-    void write( std::string& text ) override;
+    v.. write( std::string& text ) override;
 };
 
 class Decorator : public Interface
@@ -27,7 +27,7 @@ private:
 
 public:
     Decorator( std::unique_ptr< Interface > c );
-    void write( std::string& text ) override;
+    v.. write( std::string& text ) override;
 };
 
 class MessengerWithSalutation : public Decorator
@@ -38,7 +38,7 @@ private:
 public:
     MessengerWithSalutation( std::unique_ptr< Interface > c, const std::string& str );
     ~MessengerWithSalutation() override;
-    void write( std::string& text ) override;
+    v.. write( std::string& text ) override;
 };
 
 class MessengerWithValediction : public Decorator
@@ -49,13 +49,13 @@ private:
 public:
     MessengerWithValediction( std::unique_ptr< Interface > c, const std::string& str );
     ~MessengerWithValediction() override;
-    void write( std::string& text ) override;
+    v.. write( std::string& text ) override;
 };
 
 class ClientDecorator : public MetaStrategy
 {
 public:
-    void run() override;
+    v.. run() override;
 };
 
 #endif // DECORATOR_H

@@ -10,7 +10,7 @@ class rectangle
     double area();
     bool intersect(rectangle &that);
     rectangle boxUnion(rectangle &that);
-    void printRect();
+    v.. printRect();
   private:
     line diagonal;
 };

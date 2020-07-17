@@ -1,12 +1,12 @@
 #ifndef MESSAGE_H
-#define MESSAGE_H
+_de.. MESSAGE_H
 
 class Message{
 
 public: 
 	Message();
 	~Message();
-	void communicate();
+	v.. communicate();
 
 };
 

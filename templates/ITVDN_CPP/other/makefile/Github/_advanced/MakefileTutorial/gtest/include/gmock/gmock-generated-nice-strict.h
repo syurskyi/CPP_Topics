@@ -64,7 +64,7 @@
 // supported.
 
 #ifndef GMOCK_INCLUDE_GMOCK_GMOCK_GENERATED_NICE_STRICT_H_
-#define GMOCK_INCLUDE_GMOCK_GMOCK_GENERATED_NICE_STRICT_H_
+_de.. GMOCK_INCLUDE_GMOCK_GMOCK_GENERATED_NICE_STRICT_H_
 
 ? "gmock/gmock-spec-builders.h"
 ? "gmock/internal/gmock-port.h"
