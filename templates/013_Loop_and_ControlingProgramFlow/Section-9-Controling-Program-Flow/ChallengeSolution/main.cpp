@@ -84,8 +84,8 @@ in. main
         ci. __ selection;
 
         
-        __ (selection == 'P' || selection == 'p') {
-            __ (numbers.s.. == 0)
+        __ (selection __ 'P' || selection __ 'p') {
+            __ (numbers.s.. __ 0)
                 c.. __ "[] - the list is empty" __ e..
             ____ {
                 c.. __ "[ ";
@@ -93,14 +93,14 @@ in. main
                     c.. __ num __ " ";
                 c.. __ "]" __ e..
             }
-        } ____ __ (selection == 'A' || selection == 'a') {
+        } ____ __ (selection __ 'A' || selection __ 'a') {
             in. num_to_add {};
             c.. __ "Enter an integer to add to the list: ";
             ci. __ num_to_add;
             numbers.push_back(num_to_add);
             c.. __ num_to_add __ " added" __ e..
-        } ____ __ (selection == 'M' || selection == 'm') {
-            __ (numbers.s.. == 0)
+        } ____ __ (selection __ 'M' || selection __ 'm') {
+            __ (numbers.s.. __ 0)
                 c.. __ "Unable to calculate mean - no data" __ e..
             ____ {
                 in. total {};
@@ -108,8 +108,8 @@ in. main
                     total += num;
                 c.. __ "The mean is : " __ static_cast<do..>(total)/numbers.s.. __ e..
             }
-        } ____ __ (selection == 'S' || selection == 's') {
-            __ (numbers.s.. == 0)
+        } ____ __ (selection __ 'S' || selection __ 's') {
+            __ (numbers.s.. __ 0)
                 c.. __ "Unable to determine the smallest - list is empty" __ e..
             ____ {
                 in. smallest = numbers.at(0);
@@ -118,8 +118,8 @@ in. main
                         smallest = num;
                 c.. __ "The smallest number is: " __ smallest __ e..
             }
-        } ____ __ (selection == 'L' || selection == 'l') {
-            __ (numbers.s.. == 0)
+        } ____ __ (selection __ 'L' || selection __ 'l') {
+            __ (numbers.s.. __ 0)
                 c.. __ "Unable to determine largest - list is empty"__ e..
             ____ {
                 in. largest = numbers.at(0);
@@ -128,12 +128,12 @@ in. main
                         largest = num;
                 c.. __ "The largest number is: " __ largest __ e..
             }
-        } ____ __ (selection == 'Q' || selection == 'q') {
+        } ____ __ (selection __ 'Q' || selection __ 'q') {
             c.. __ "Goodbye" __ e..
         } ____ {
             c.. __ "Unknown selection, please try again" __ e..
         }
-    } while (selection != 'q' && selection != 'Q');
+    } w__ (selection != 'q' && selection != 'Q');
 
     c..  __ e..
     r_ 0;

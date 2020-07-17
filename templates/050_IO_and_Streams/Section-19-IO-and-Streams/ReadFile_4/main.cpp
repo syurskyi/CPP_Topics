@@ -13,7 +13,7 @@ in. main
     }
 
     ch.. c {};
-    while (in_file.get(c)) {
+    w__ (in_file.get(c)) {
         std::c.. __ c;
     }
     std::c.. __ std::e..

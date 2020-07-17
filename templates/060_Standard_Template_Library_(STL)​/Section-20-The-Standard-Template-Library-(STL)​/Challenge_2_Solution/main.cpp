@@ -36,8 +36,8 @@ public:
         r_ this->name < rhs.name;
     }
     
-    bool operator==(const Song &rhs) const  {
-        r_ this->name == rhs.name;
+    bool operator__(const Song &rhs) const  {
+        r_ this->name __ rhs.name;
     }
 };
 
@@ -90,29 +90,29 @@ in. main
         display_menu();
         std::ci. __ selection;
         selection = std::toupper(selection);
-        __ (selection == 'F') {
+        __ (selection __ 'F') {
             std::c.. __ "Playing first song" __ std::e..
             current_song = playlist.begin();
             play_current_song(*current_song);
         }
-        ____ __ (selection == 'N') {
+        ____ __ (selection __ 'N') {
             std::c.. __ "Playing next song" __ std::e..
             current_song++;
-            __ (current_song == playlist.end()) {
+            __ (current_song __ playlist.end()) {
                 std::c.. __ "Wrapping to start of playlist" __ std::e..
                 current_song = playlist.begin();
             }
             play_current_song(*current_song);
         }
-        ____ __ (selection == 'P') {
+        ____ __ (selection __ 'P') {
             std::c.. __ "Playing previous song" __ std::e..
-            __ (current_song == playlist.begin()) {
+            __ (current_song __ playlist.begin()) {
                 std::c.. __ "Wrapping to end of playlist" __ std::e..
                 current_song = playlist.end();
             }
             current_song--;
             play_current_song(*current_song);
-        } ____ __ (selection == 'A') {
+        } ____ __ (selection __ 'A') {
             std::string name, artist;
             in. rating;
             std::ci..clear();
@@ -127,14 +127,14 @@ in. main
             playlist.insert(current_song, Song{name, artist, rating});
             current_song--;
             play_current_song(*current_song);
-        } ____ __ (selection == 'L') {
+        } ____ __ (selection __ 'L') {
             std::c.. __ std::e..
             display_playlist(playlist, *current_song);            
-        } ____ __ (selection == 'Q')
+        } ____ __ (selection __ 'Q')
             std::c.. __ "Quitting" __ std::e..
         ____
             std::c.. __ "Illegal choice, try again...";
-    } while (selection != 'Q');
+    } w__ (selection != 'Q');
 
     std::c.. __ "Thanks for listening!" __ std::e..
     r_ 0;

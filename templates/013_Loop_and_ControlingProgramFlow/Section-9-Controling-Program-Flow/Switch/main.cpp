@@ -40,9 +40,9 @@ in. main
             ch.. confirm {};
             c.. __ "Are you sure (Y/N)? ";
             ci. __ confirm;
-            __ (confirm == 'y' || confirm == 'Y')
+            __ (confirm __ 'y' || confirm __ 'Y')
                 c.. __ "OK, I guess you didn't study..." __ e..
-            ____ __ (confirm == 'n' || confirm == 'N')
+            ____ __ (confirm __ 'n' || confirm __ 'N')
                 c.. __ "Good- go study!" __ e..
             ____
                 c.. __ "Illegal choice" __ e..

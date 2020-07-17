@@ -44,7 +44,7 @@ in. main
             
          // discards the input buffer
         std::ci..ignore(std::numeric_limits<std::streamsize>::max(),'\n');
-    } while (!done);
+    } w__ (!done);
     
     std::c.. __ "You entered the integer: " __ value __ std::e..
     

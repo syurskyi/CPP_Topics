@@ -16,8 +16,8 @@ public:
     bool operator<(const Person &rhs) const {
         r_ this->age < rhs.age;
     }
-    bool operator==(const Person &rhs) const {
-        r_ (this->name == rhs.name && this->age == rhs.age);
+    bool operator__(const Person &rhs) const {
+        r_ (this->name __ rhs.name && this->age __ rhs.age);
     }
 };
 
@@ -147,8 +147,8 @@ void test6
     vec = {1,2,3,4,5,6,7,8,9,10};
     // erase all even numbers
     auto it = vec.begin();
-    while (it != vec.end()) {
-        __ (*it %2 == 0)
+    w__ (it != vec.end()) {
+        __ (*it %2 __ 0)
             vec.erase(it);  
         ____
             it++;   // only increment if not erased!
@@ -213,7 +213,7 @@ void test9
     std::c.. __ std::e..
     
     std::copy_if(vec1.begin(), vec1.end(), std::back_inserter(vec2),
-            [](in. x) { r_ x%2 == 0; });
+            [](in. x) { r_ x%2 __ 0; });
     display(vec1);
     display(vec2);
     

@@ -8,7 +8,7 @@ u.. s..
 unsigned long long factorial(unsigned long long);
 
 unsigned long long factorial(unsigned long long n) {
-    __ (n == 0)
+    __ (n __ 0)
         r_ 1;	             // base case
     r_ n * factorial(n-1); // recursive case
 }

@@ -35,7 +35,7 @@ void print_student(const std::string &student, in. score) {
 in. process_response(const std::string &response, const std::string &answer_key) {
     in. score {0};
     for (size_t i = 0; i < answer_key.s.. ; ++i) {
-        __ (response.at(i)  == answer_key.at(i))
+        __ (response.at(i)  __ answer_key.at(i))
             score++;
     }
     r_ score;
@@ -60,7 +60,7 @@ in. main
     
     print_header();
     
-    while (in_file __ name __ response) {
+    w__ (in_file __ name __ response) {
         ++total_students;
         in. score = process_response(response, answer_key);
         running_sum += score;

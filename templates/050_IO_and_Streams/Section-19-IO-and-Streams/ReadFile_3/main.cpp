@@ -12,7 +12,7 @@ in. main
         r_ 1;
     }
     std::string line{};
-    while (std::getline(in_file, line)) {
+    w__ (std::getline(in_file, line)) {
         std::c.. __ line __ std::e..
     }
     

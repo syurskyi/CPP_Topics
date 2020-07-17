@@ -16,8 +16,8 @@ public:
     bool operator<(const Person &rhs) const {
         r_ this->age < rhs.age;
     }
-    bool operator==(const Person &rhs) const {
-        r_ (this->name == rhs.name && this->age == rhs.age);
+    bool operator__(const Person &rhs) const {
+        r_ (this->name __ rhs.name && this->age __ rhs.age);
     }
 };
 

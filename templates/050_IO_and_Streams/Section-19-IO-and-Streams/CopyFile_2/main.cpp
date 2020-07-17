@@ -18,7 +18,7 @@ in. main
     }
     
     ch.. c;
-    while (in_file.get(c))
+    w__ (in_file.get(c))
         out_file.put(c);
     
     std::c.. __ "File copied" __ std::e..

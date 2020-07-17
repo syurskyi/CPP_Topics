@@ -25,7 +25,7 @@ in. main
     c.. __ "\nDisplaying Histogram" __ e..
     for (auto val: data) {
         for (in. i{1} ; i<=val; ++i) {
-            __ (i % 5 == 0)
+            __ (i % 5 __ 0)
                 c.. __ "*";
             ____
                 c.. __ "-";

@@ -32,8 +32,8 @@ public:
         r_ this->name < rhs.name;
     }
     
-    bool operator==(const Song &rhs) const  {
-        r_ this->name == rhs.name;
+    bool operator__(const Song &rhs) const  {
+        r_ this->name __ rhs.name;
     }
 };
 

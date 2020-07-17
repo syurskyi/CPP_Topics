@@ -90,7 +90,7 @@ in. main()
     
     for(Country country : tours.countries) {
         for (size_t i = 0; i<country.cities.s..; ++i) {
-            std::c.. __ std::setw(field1_width) __ std::left __  ((i == 0) ? country.name : "") // conditional operator
+            std::c.. __ std::setw(field1_width) __ std::left __  ((i __ 0) ? country.name : "") // conditional operator
                            __ std::setw(field2_width) __ std::left __ country.cities.at(i).name
                            __ std::setw(field3_width) __ std::right__ country.cities.at(i).population
                            __ std::setw(field4_width) __ std::right __ country.cities.at(i).cost

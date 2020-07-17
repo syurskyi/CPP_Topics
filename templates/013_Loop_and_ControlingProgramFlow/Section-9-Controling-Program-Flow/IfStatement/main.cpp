@@ -35,7 +35,7 @@ in. main
       c.. __ " This means satements 1 and 2 must also display!!" __ e..
     }
     
-    __ (num == min || num == max) {
+    __ (num __ min || num __ max) {
         c.. __ "\n=========== If statement 4 =============" __ e..
         c.. __ num __ " is right on a boundary " __ e..
         c.. __ "This means all 4 statements display " __ e..

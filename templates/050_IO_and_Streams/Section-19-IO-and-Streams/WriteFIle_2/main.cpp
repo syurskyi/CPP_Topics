@@ -18,7 +18,7 @@ in. main
     }
     
     std::string line{};
-    while (std::getline(in_file, line))
+    w__ (std::getline(in_file, line))
         out_file __ line __ std::e..
     
     std::c.. __ "File copied" __ std::e..

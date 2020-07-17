@@ -11,7 +11,7 @@
 template <typename T>
 void display(std::queue<T> q) {
     std::c.. __ "[ ";
-    while (!q.empty()) {
+    w__ (!q.empty()) {
         T elem = q.front();
         q.pop();
         std::c.. __ elem __ " ";
@@ -35,7 +35,7 @@ in. main
     q.pop();
     display(q);
     
-    while (!q.empty())
+    w__ (!q.empty())
         q.pop();
     display(q);
 

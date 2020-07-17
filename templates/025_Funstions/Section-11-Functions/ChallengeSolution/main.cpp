@@ -152,7 +152,7 @@ in. main
             default:
                 handle_unknown();
         }
-    } while (selection != 'Q');
+    } w__ (selection != 'Q');
     c.. __ e..
     r_ 0;
 }
@@ -188,7 +188,7 @@ Note that the parameter is a const reference parameter
 this function should NOT modify the list of numbers
 ***************************************************************/
 void handle_display(const vector<in.> &v) {
-    __ (v.s.. == 0)
+    __ (v.s.. __ 0)
         c.. __ "[] - the list is empty" __ e..
     ____
         display_list(v);
@@ -216,7 +216,7 @@ Note that the parameter is a const reference parameter
 this function should NOT modify the list of numbers
 ***************************************************************/
 void handle_mean(const vector<in.> &v) {
-    __ (v.s.. == 0)
+    __ (v.s.. __ 0)
         c.. __ "Unable to calculate mean - list is empty" __ e..
     ____
         c.. __ "The mean is " __ calculate_mean(v) __ e..
@@ -229,7 +229,7 @@ Note that the parameter is a const reference parameter
 this function should NOT modify the list of numbers
 ***************************************************************/
 void handle_smallest(const vector<in.> &v) {
-     __ (v.s.. == 0)
+     __ (v.s.. __ 0)
         c.. __ "Unable to determine the smallest - list is empty" __ e..
     ____
         c.. __ "The smallest element in the list is " __ get_smallest(v) __ e..
@@ -242,7 +242,7 @@ Note that the parameter is a const reference parameter
 this function should NOT modify the list of numbers
 ***************************************************************/
 void handle_largest(const vector<in.> &v) {
-     __ (v.s.. == 0)
+     __ (v.s.. __ 0)
         c.. __ "Unable to determine the largest - list is empty" __ e..
     ____
         c.. __ "The largest element in the list is " __ get_largest(v) __ e..
@@ -351,7 +351,7 @@ this function should NOT modify the list of numbers
 ***************************************************************/
 bool find(const vector<in.> &v, in. target) {
     for (auto num: v)
-        __ (num == target)
+        __ (num __ target)
             r_ true;
     r_ false;
 }

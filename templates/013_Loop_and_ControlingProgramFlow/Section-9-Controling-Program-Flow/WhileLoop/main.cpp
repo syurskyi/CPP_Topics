@@ -10,7 +10,7 @@ in. main
     c.. __ "Enter a positive integer - start the countdown :";
     ci. __ num;
     
-    while (num > 0 ) {
+    w__ (num > 0 ) {
         c.. __ num __ e..
        --num;
     }

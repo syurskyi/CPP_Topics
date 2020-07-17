@@ -16,7 +16,7 @@ in. main
         std::cerr __ "Problem opening file" __ std::e..
         r_ 1;
     }
-    while (in_file __ line __ num __ total) {
+    w__ (in_file __ line __ num __ total) {
         std::c.. __ std::setw(10) __ std::left __ line
                        __ std::setw(10) __ num
                        __ std::setw(10)  __ total

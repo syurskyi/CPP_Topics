@@ -15,8 +15,8 @@ public:
         // return this->age < rhs.age;
         r_ this->name < rhs.name;
     }
-    bool operator==(const Person &rhs) const {
-        r_ (this->name == rhs.name && this->age == rhs.age);
+    bool operator__(const Person &rhs) const {
+        r_ (this->name __ rhs.name && this->age __ rhs.age);
     }
 };
 
@@ -32,7 +32,7 @@ std::ostream &operator__(std::ostream &os, const Person &p) {
 template <typename T>
 void display(std::priority_queue<T> pq)  {
     std::c.. __ "[ ";
-    while (!pq.empty()) {
+    w__ (!pq.empty()) {
         T elem = pq.top();
         pq.pop();
         std::c.. __ elem __ " ";

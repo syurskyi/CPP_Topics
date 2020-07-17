@@ -46,7 +46,7 @@ void display_words(const std::map<std::string, std::set<in.__ &words)
 std::string clean_string(const std::string &s) {
     std::string result;
     for (ch.. c: s) {
-        __ (c == '.' || c == ',' || c == ';' || c == ':')
+        __ (c __ '.' || c __ ',' || c __ ';' || c __ ':')
             continue;
         ____
             result += c;

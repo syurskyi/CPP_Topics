@@ -20,8 +20,8 @@ in. main
     
     std::string line{};
     in. line_number {0};
-    while (getline(in_file, line)) {
-        __ (line == "")
+    w__ (getline(in_file, line)) {
+        __ (line __ "")
             out_file __ std::e..
         ____ {
             ++line_number;

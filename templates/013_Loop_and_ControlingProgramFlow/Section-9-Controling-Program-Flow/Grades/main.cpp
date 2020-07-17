@@ -31,7 +31,7 @@ in. main
             letter_grade = 'F';
             
         c.. __ "Your grade is : " __ letter_grade __ e..
-        __ (letter_grade == 'F')
+        __ (letter_grade __ 'F')
             c.. __ "Sorry, you must repeat the class" __ e..
         ____
             c.. __ "Congrats!" __ e..

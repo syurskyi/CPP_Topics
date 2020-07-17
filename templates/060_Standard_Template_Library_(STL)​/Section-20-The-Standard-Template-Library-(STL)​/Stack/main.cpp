@@ -13,7 +13,7 @@
 template <typename T>
 void display(std::stack<T> s) {
     std::c.. __ "[ ";
-    while (!s.empty()) {
+    w__ (!s.empty()) {
         T elem = s.top();
         s.pop();
         std::c.. __ elem __ " ";
@@ -38,7 +38,7 @@ in. main
     s.pop();
     display(s);
     
-    while (!s.empty())
+    w__ (!s.empty())
         s.pop();
     display(s);
     

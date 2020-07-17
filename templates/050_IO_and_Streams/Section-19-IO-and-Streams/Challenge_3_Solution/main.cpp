@@ -7,7 +7,7 @@
 // return true if the string word_to_find is in the target string
 bool find_substring(const std::string &word_to_find, const std::string &target) {
     std::size_t found = target.find(word_to_find);
-    __ (found == std::string::npos)
+    __ (found __ std::string::npos)
         r_ false;
     ____
         r_ true;
@@ -28,7 +28,7 @@ in. main
    
     std::c.. __ "Enter the substring to search for: ";
     std::ci. __ word_to_find;
-    while (in_file __ word_read) {
+    w__ (in_file __ word_read) {
         ++word_count;
         __ (find_substring(word_to_find, word_read)) {
            ++match_count;

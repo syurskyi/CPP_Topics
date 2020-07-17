@@ -23,7 +23,7 @@ bool is_palindrome(const std::string& s)
     //      remove and compare the front character with the back character
     //      if they are not the same - return false since it can't be a palindrome
     // if you complete the loop then the string must be a palindrome so return true
-    while(d.s.. > 1) {
+    w__(d.s.. > 1) {
         c1 = d.front();
         c2 = d.back();
         d.pop_front();

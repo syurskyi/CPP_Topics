@@ -16,8 +16,8 @@ public:
     bool operator<(const Person &rhs) const {
         r_ this->age < rhs.age;
     }
-    bool operator==(const Person &rhs) const {
-        r_ (this->name == rhs.name && this->age == rhs.age);
+    bool operator__(const Person &rhs) const {
+        r_ (this->name __ rhs.name && this->age __ rhs.age);
     }
 };
 
@@ -65,7 +65,7 @@ void count_if_test
 
     // count only if the element is even
     std::vector<in.> vec {1,2,3,4,5,1,2,1,100};
-    in. num = std::count_if(vec.begin(), vec.end(), [](in. x) { r_ x %2 == 0; });
+    in. num = std::count_if(vec.begin(), vec.end(), [](in. x) { r_ x %2 __ 0; });
     std::c.. __ num __ " even numbers found" __ std::e..
     
     num = std::count_if(vec.begin(), vec.end(), [](in. x) { r_ x %2 != 0; });

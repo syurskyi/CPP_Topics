@@ -41,14 +41,14 @@ void test2
     std::vector<in.> nums1 {1, 2, 3, 4, 5};
 
     std::vector<in.>::iterator it = nums1.begin();
-    while (it != nums1.end()) {
+    w__ (it != nums1.end()) {
         std::c.. __ *it __ std::e..
         it++;
     }
     
     // change all vector elements to 0
     it = nums1.begin();
-    while (it != nums1.end()) {
+    w__ (it != nums1.end()) {
         *it = 0;
         it++;
     }
@@ -65,14 +65,14 @@ void test3
     std::vector<in.>::const_iterator it1 = nums1.begin();
     // auto it1 = nums1.cbegin();
     
-    while (it1 != nums1.end()) {
+    w__ (it1 != nums1.end()) {
         std::c.. __ *it1 __ std::e..
         it1++;
     }
     
     // compiler error when we try to change element
     it1 = nums1.begin();
-    while (it1 != nums1.end()) {
+    w__ (it1 != nums1.end()) {
        // *it1 = 0;   // Complier error - read only
         it1++;
     }
@@ -84,7 +84,7 @@ void test4
     // using a reverse iterator
     std::vector<in.> vec {1,2,3,4};
     auto it1  = vec.rbegin();       // reverse iterator over vector of ints starts at 4
-    while (it1 != vec.rend()) {
+    w__ (it1 != vec.rend()) {
         std::c.. __ *it1 __ std::e..
         it1++;
     }
@@ -103,7 +103,7 @@ void test4
         {"James", "Haskell"}
     };
     auto it3 = favorites.begin();   // iterator over map of string, string pairs
-    while (it3 != favorites.end()) {
+    w__ (it3 != favorites.end()) {
         std::c.. __ it3->first __ " : " __ it3->second __ std::e..
         it3++;
     }
@@ -115,7 +115,7 @@ void test5
     auto start = vec.begin() + 2;
     auto finish = vec.end() - 3;
     
-    while (start != finish) {
+    w__ (start != finish) {
         std::c.. __ *start __ std::e..
         start++;
     }
