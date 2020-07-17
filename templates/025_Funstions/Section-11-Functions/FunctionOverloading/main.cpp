@@ -6,34 +6,34 @@
 
 u.. s..
 
-v.. print(in.);
-v.. print(do..);
-v.. print(string);
-v.. print(string, string);
-v.. print(vectorst..);
+v.. print(in.
+v.. print(do..
+v.. print(string
+v.. print(string, string
+v.. print(vectorst..
 
-v.. print(in. num) {
-    c.. __ "Printing int: " __ num __ e..
-}
+v.. print(in. num
+    c.. __ "Printing int: " __ ? __ e..
 
-v.. print(do.. num) {
-    c.. __ "Printing double: " __ num __ e..
-}
 
-v.. print(string s) {
+v.. print(do.. num
+    c.. __ "Printing double: " __ ? __ e..
+
+
+v.. print(string s
     c.. __ "Printing string: " __ s __ e..
-}
 
-v.. print(string s, string t) {
-    c.. __ "Printing 2 strings: " __ s __ " and " __ t __ e..
-}
 
-v.. print(vectorst.. v) {
-    c.. __ "Printing vector of strings: " ;
-    ___ (a.. s: v )
-        c.. __ s + " ";
+v.. print(string s, string t
+    c.. __ "Printing 2 strings: " __ ? __ " and " __ ? __ e..
+
+
+v.. print(vectorst.. v
+    c.. __ "Printing vector of strings: "
+    ___ (a.. s: v
+        c.. __ s + " "
     c.. __ e..
-}
+
 
 in. main
     print(100);    // int
@@ -53,6 +53,6 @@ in. main
     print(three_stooges);
     
     c.. __ e..
-    r_ 0;
+    r_ _
 }
 
