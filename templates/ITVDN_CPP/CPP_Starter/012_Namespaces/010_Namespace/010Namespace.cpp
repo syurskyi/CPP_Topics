@@ -14,7 +14,7 @@ namespace NamespaceA{
 
 		}sy.. pause
 
-		v.. method() {
+		v.. method
 			MyStruct variable1sy.. pause
 			NamespaceA::MyStruct variable2sy.. pause
 		}

@@ -2,7 +2,7 @@
 
 u.. s..
 
-main() {
+main
 
     c.. asy.. pause   //character 1 byte -128 to 127
     in. bsy.. pause    //integer 4 bytes -2147483648 to 2147483647

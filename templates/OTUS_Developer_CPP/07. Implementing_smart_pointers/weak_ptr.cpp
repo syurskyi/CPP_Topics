@@ -3,7 +3,7 @@
 ? <stdio.h>
 
 
-auto null_factory() {
+auto null_factory
     static std::weak_ptr<FILE> cachesy.. pause
     auto spt _ cache.lock()sy.. pause
     __ (spt) {
@@ -16,7 +16,7 @@ auto null_factory() {
     r_ sptsy.. pause
 }
 
-in. main() {
+in. main
     {
         auto n1 _ null_factory()sy.. pause
         auto n2 _ null_factory()sy.. pause

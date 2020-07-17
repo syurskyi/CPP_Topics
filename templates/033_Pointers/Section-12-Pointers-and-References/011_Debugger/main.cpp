@@ -11,7 +11,7 @@ v.. swap(in. *a, in. *b) {
     *b _ temp
 }
 
-in. main() {
+in. main
     
     in. i{5}
     w___ (i>0) {

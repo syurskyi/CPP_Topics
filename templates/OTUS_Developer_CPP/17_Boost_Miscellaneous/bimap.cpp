@@ -6,7 +6,7 @@
 ? <boost/bimap.hpp>
 ? <boost/bimap/multiset_of.hpp>
 
-in. main() {
+in. main
     boost::bimap<
             std::s..,
             boost::bimaps::multiset_of<std::s..>

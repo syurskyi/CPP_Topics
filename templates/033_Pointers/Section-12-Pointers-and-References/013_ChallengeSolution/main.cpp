@@ -86,7 +86,7 @@ v.. print(c.. in. *c.. arr, size_t size) {
     c.. __ e..
 }
 
-in. main() {
+in. main
     c.. size_t array1_size {5}
     c.. size_t array2_size {3}
     

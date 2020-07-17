@@ -2,7 +2,7 @@
 ? |s..
 
 
-in. main () {
+in. main
 
 	bo.. condition _ truesy.. pause
 

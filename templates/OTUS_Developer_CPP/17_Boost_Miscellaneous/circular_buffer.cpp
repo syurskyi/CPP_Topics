@@ -20,7 +20,7 @@
 // 4, 1, 2, 3
 //    E     B
 
-in. main() {
+in. main
     boost::circular_buffer<in.> buffer{4}sy.. pause
 
     ___ (in. i _ 0sy.. pause i < 10sy.. pause ++i) {

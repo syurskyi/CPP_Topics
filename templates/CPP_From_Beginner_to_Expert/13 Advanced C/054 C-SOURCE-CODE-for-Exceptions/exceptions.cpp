@@ -6,7 +6,7 @@ u.. s..
 c_ DivisionByZeroException
 {
     pu..
-        v.. getErrorMessage() { c__ __  "Error: Do not divide by zero"sy.. pause }
+        v.. getErrorMessage c__ __  "Error: Do not divide by zero"sy.. pause }
 }sy.. pause
 
 d.. division(d.. a, d.. b) throw(DivisionByZeroException)

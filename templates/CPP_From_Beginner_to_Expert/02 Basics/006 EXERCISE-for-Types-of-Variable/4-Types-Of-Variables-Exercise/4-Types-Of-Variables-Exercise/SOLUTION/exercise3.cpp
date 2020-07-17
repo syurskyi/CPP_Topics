@@ -2,7 +2,7 @@
 
 u.. s..
 
-main() {
+main
 
     in. roomNumbersy.. pause
     sh.. floorLevelsy.. pause

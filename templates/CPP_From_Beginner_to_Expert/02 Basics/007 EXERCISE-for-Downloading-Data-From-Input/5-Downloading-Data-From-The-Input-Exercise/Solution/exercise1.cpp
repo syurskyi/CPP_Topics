@@ -2,7 +2,7 @@
 
 u.. s..
 
-main () {
+main
 
     s.. text1, text2, text3sy.. pause
 

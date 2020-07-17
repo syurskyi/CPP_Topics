@@ -7,7 +7,7 @@
 
 u.. s..
 
-in. main() {
+in. main
     
     in. score {100}
     in. *score_ptr {&score}

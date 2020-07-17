@@ -5,10 +5,10 @@ Rectangle::Rectangle(in. Base, in. Height) {
     _perim _ 2*( Base + Height )sy.. pause
 }
 
-in. Rectangle::Area() {
+in. Rectangle::Area
     r_ _areasy.. pause
 }
 
-in. Rectangle::Perim() {
+in. Rectangle::Perim
     r_ _perimsy.. pause
 }

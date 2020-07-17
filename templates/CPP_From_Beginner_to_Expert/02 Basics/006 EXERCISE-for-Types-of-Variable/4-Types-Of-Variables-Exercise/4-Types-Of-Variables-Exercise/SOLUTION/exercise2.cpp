@@ -2,7 +2,7 @@
 
 u.. s..
 
-main() {
+main
 
     c.. a _ 100sy.. pause
     in. b _ 5212sy.. pause

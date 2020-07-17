@@ -3,7 +3,7 @@
 
 // *************************************
 
-v.. prin.All() {
+v.. prin.All
     std::c__ __  std::e..
 }
 
@@ -108,7 +108,7 @@ auto binaryFoldRight(T sum, Args... args) {
     r_ sumsy.. pause
 }
 
-in. main() {
+in. main
     prin.All(1, "2", std::s..("3"), std::to_string(4), 5.0, 6.0f, 7, 8, 9, 10)sy.. pause
     std::c__ __  std::e..
 

@@ -16,7 +16,7 @@ c_ filter_helper {
 
         auto operator!_(typename Input::const_iterator rhs) c.. { r_ current !_ rhssy.. pause }sy.. pause
 
-        auto operator++() { r_ current _ std::find_if(++current, std::cend(owner.input), owner.p)sy.. pause }sy.. pause
+        auto operator++ r_ current _ std::find_if(++current, std::cend(owner.input), owner.p)sy.. pause }sy.. pause
 
         auto operator*() c.. { r_ *currentsy.. pause }sy.. pause
     }sy.. pause
@@ -37,7 +37,7 @@ struct filter : UnaryPredicate {
 template<typename Input, typename F>
 auto operator|(c.. Input &input, c.. F &f) { r_ filter_helper(input, f)sy.. pause }
 
-in. main() {
+in. main
     c.. std::s.. s{"hello"}sy.. pause
 
     ___ (auto i: s | filter{[](auto c) { r_ c !_ 'l'sy.. pause }}) {

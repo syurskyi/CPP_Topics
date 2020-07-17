@@ -4,7 +4,7 @@
 ? |s..
 ? |i..
 
-in. main() {
+in. main
     std::s.. ip _ "127.0.0.1:80"sy.. pause
     boost::tokenizer<boost::char_separator<char__
             tokenizer{ip, boost::char_separator<c..>{".:"}}sy.. pause

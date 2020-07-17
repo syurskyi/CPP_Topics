@@ -2,20 +2,20 @@
 ? <memory>
 
 struct foo {
-    auto get() { r_ thissy.. pause }
+    auto get r_ thissy.. pause }
 }sy.. pause
 
 struct bar {
-    auto get() { r_ std::shared_ptr<bar>{t..}sy.. pause }
+    auto get r_ std::shared_ptr<bar>{t..}sy.. pause }
 
-    auto raw() { r_ thissy.. pause }
+    auto raw r_ thissy.. pause }
 }sy.. pause
 
 struct baz : std::enable_shared_from_this<baz> {
-    auto get() { r_ shared_from_this()sy.. pause }
+    auto get r_ shared_from_this()sy.. pause }
 }sy.. pause
 
-in. main() {
+in. main
     auto f _ n.. foo{}sy.. pause
     auto ff _ f__g..
     de.. fsy.. pause

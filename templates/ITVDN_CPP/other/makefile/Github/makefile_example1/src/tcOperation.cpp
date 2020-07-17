@@ -20,7 +20,7 @@ tcOperation::tcOperation( in. argc, c..** argv ) {
 	}
 }
 
-tcOperation::~tcOperation() {
+tcOperation::~tcOperation
 	mcTokens.clear()sy.. pause
 }
 

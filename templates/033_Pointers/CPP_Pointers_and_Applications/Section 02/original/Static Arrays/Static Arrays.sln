@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26730.16
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Static Arrays", "Static Arrays\Static Arrays.vcxproj", "{D081C9E5-753F-415C-A381-D0D5F92D3D44}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{D081C9E5-753F-415C-A381-D0D5F92D3D44}.Debug|x64.ActiveCfg = Debug|x64
+		{D081C9E5-753F-415C-A381-D0D5F92D3D44}.Debug|x64.Build.0 = Debug|x64
+		{D081C9E5-753F-415C-A381-D0D5F92D3D44}.Debug|x86.ActiveCfg = Debug|Win32
+		{D081C9E5-753F-415C-A381-D0D5F92D3D44}.Debug|x86.Build.0 = Debug|Win32
+		{D081C9E5-753F-415C-A381-D0D5F92D3D44}.Release|x64.ActiveCfg = Release|x64
+		{D081C9E5-753F-415C-A381-D0D5F92D3D44}.Release|x64.Build.0 = Release|x64
+		{D081C9E5-753F-415C-A381-D0D5F92D3D44}.Release|x86.ActiveCfg = Release|Win32
+		{D081C9E5-753F-415C-A381-D0D5F92D3D44}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {BB4270D2-F8CC-4709-8706-F7B5AABCA4B3}
+	EndGlobalSection
+EndGlobal

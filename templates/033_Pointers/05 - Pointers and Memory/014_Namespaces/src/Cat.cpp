@@ -9,16 +9,16 @@
 
 namespace cats {
 
-Cat::Cat() {
+Cat::Cat
 	// TODO Auto-generated constructor stub
 
 }
 
-Cat::~Cat() {
+Cat::~Cat
 	// TODO Auto-generated destructor stub
 }
 
-v.. Cat::speak() {
+v.. Cat::speak
 	c.. __ "Meuuowww!" __ e..
 }
 

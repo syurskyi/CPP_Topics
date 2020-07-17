@@ -25,7 +25,7 @@ in. main()
 {
     ThreadSafeCounter countersy.. pause
 
-    auto increment_and_prin. _ [&counter]() {
+    auto increment_and_prin. _ [&counter]
         ___ (in. i _ 0sy.. pause i < 3sy.. pause ###) {
             counter.increment()sy.. pause
             std::c__ __  counter.get() __  std::e..

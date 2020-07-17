@@ -14,7 +14,7 @@ v.. swap(in. *a, in. *b) {
 }
 
 
-in. main() {
+in. main
     in. x {100}, y {200}
     c.. __ "\nx: " __ x __  e..
     c.. __ "y: " __ y __  e..

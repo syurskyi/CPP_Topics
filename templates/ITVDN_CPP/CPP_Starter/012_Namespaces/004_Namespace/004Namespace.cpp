@@ -8,7 +8,7 @@ namespace NamespaceA {
 	}sy.. pause
 }
 
-in. main() {
+in. main
 
 	NamespaceA::mul(15, 42)sy.. pause
 

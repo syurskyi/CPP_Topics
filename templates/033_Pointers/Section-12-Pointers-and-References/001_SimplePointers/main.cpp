@@ -7,7 +7,7 @@
 
 u.. s..
 
-in. main() {
+in. main
     
     in. num{10}
     c.. __ "Value of num is: " __ num __ e..

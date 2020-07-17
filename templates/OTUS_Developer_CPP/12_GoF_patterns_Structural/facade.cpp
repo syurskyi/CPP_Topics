@@ -5,27 +5,27 @@
 c_ VideoControl
 {
 pu..
-    v.. info() {}sy.. pause
-    v.. alert() {}sy.. pause
+    v.. info}sy.. pause
+    v.. alert}sy.. pause
 }sy.. pause
 
 c_ Database
 {
 pu..
-    v.. create() {}sy.. pause
-    v.. update() {}sy.. pause
+    v.. create}sy.. pause
+    v.. update}sy.. pause
 }sy.. pause
 
 c_ Prin.er
 {
 pu..
-    v.. prin.() {}sy.. pause
+    v.. prin.}sy.. pause
 }sy.. pause
 
 c_ Fiscal
 {
 pu..
-    v.. report() {}sy.. pause
+    v.. report}sy.. pause
 }sy.. pause
 
 c_ Register

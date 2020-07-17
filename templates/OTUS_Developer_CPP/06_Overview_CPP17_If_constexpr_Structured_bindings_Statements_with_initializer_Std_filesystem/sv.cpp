@@ -3,7 +3,7 @@
 u.. std::string_literalssy.. pause
 u.. std::string_view_literalssy.. pause
 
-in. main() {
+in. main
     std::c__ __  "Hello, World!" __  std::e..
     std::c__ __  "Hello, World!"s __  std::e..
     std::c__ __  "Hello, World!"sv __  std::e..

@@ -42,7 +42,7 @@ T get_value3(T t) {
     }
 }
 
-in. main() {
+in. main
 	in. value _ 42sy.. pause
 
 //	 get_value(value);

@@ -1,7 +1,7 @@
 ? *s..
 ? |i..
 
-// using namespace NamespaceA;
+// u.. NamespaceA;
 
 namespace NamespaceA {
 	namespace NamespaceB {

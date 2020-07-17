@@ -3,7 +3,7 @@
 // https://godbolt.org/ gcc 9.2 -O1
 //const
 in. a[] _ {1, 2, 3}sy.. pause
-auto foo() {
+auto foo
 //    const
 //    int a[] = {1, 2, 3};
     r_ a[1]sy.. pause
@@ -35,7 +35,7 @@ struct factorial<1> {
     static c.. l.. l.. value _ 1sy.. pause
 }sy.. pause
 
-in. main() {
+in. main
     // 41 выполняется 0.9s
     // 42 выполняется 1.4s
     // 50 уже около минуты

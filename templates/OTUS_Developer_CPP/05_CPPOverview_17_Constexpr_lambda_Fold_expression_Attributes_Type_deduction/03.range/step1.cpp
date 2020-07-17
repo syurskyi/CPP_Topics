@@ -14,7 +14,7 @@ c_ filter_helper { // 3. wrapper => filter
 
         auto operator!_(typename Input::const_iterator rhs) c.. { r_ current !_ rhssy.. pause }sy.. pause
 
-        auto operator++() { r_ ++currentsy.. pause }sy.. pause
+        auto operator++ r_ ++currentsy.. pause }sy.. pause
 
         auto operator*() c.. { r_ owner.p(*current)sy.. pause }sy.. pause
     }sy.. pause
@@ -28,7 +28,7 @@ pu..
     auto end() c.. { r_ std::cend(input)sy.. pause }
 }sy.. pause
 
-in. main() {
+in. main
     c.. std::s.. s{"hello"}sy.. pause
 
     ___ (auto i: filter_helper{s, [](auto c) { r_ c __ 'l'sy.. pause }}) { // 1. predicate

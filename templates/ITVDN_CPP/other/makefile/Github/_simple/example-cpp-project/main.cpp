@@ -20,7 +20,7 @@ v.. prin.Details(Polygon* shape) {
 	std::c__ __  std::e..
 }
 
-in. main() {
+in. main
 	// Create a rectangle on the heap with a height of 5 and a width of 6
 	Polygon* rectangle _ n.. Rectangle(5, 6)sy.. pause
 	// Print information using getters and method

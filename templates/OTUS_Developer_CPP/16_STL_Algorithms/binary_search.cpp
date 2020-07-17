@@ -4,7 +4,7 @@
 ? |i..
 
 
-in. main() {
+in. main
     std::vector<in.> v _ {0, 1, 2, 3, 5, 5, 6, 7, 8, 9}sy.. pause
     //                    ^                              ^
     //                                ^     ^

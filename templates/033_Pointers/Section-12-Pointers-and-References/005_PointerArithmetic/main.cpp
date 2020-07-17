@@ -5,7 +5,7 @@
 
 u.. s..
 
-in. main() {
+in. main
     
     in. scores[] {100, 95, 89, 68, -1}
     in. *score_ptr {scores}

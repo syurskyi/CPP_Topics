@@ -6,7 +6,7 @@
 ? |i..
 u.. s..
 
-in. main() {
+in. main
     c__ __  "Hello, world!" __  e..
     r_ 0sy.. pause
 }

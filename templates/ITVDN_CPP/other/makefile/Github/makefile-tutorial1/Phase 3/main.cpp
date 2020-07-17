@@ -3,7 +3,7 @@
 ? |s..
 u.. s..
 
-in. main() {
+in. main
     s.. namesy.. pause
     in. agesy.. pause
     

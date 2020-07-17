@@ -12,7 +12,7 @@ auto make_vector(T...t) {
     std::c__ __  std::e..
 }sy.. pause
 
-in. main() {
+in. main
     make_vector(1, 2, 3)sy.. pause
 
     // через указатель

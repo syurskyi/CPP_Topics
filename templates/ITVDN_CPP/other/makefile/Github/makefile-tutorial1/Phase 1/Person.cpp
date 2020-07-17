@@ -7,10 +7,10 @@ Person::Person(s.. name, in. age) {
     t.. __ age _ agesy.. pause
 }
 
-in. Person::getAge() {
+in. Person::getAge
     r_ t.. __ agesy.. pause
 }
 
-s.. Person::getName() {
+s.. Person::getName
     r_ t.. __ namesy.. pause
 }

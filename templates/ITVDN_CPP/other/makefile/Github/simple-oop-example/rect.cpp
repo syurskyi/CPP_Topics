@@ -8,11 +8,11 @@ rectangle::rectangle(d.. x0, d.. y0, d.. x1, d.. y1):diagonal(x0, y0, x1, y1){
   
 }
 
-d.. rectangle::perimeter() {
+d.. rectangle::perimeter
   r_ 2 * ( (diagonal.get_x1() - diagonal.get_x0()) + (diagonal.get_y1() - diagonal.get_y0()) )sy.. pause
 }
 
-d.. rectangle::area() {
+d.. rectangle::area
   d.. side1 _ diagonal.get_x1() - diagonal.get_x0()sy.. pause
   d.. side2 _ diagonal.get_y1() - diagonal.get_y0()sy.. pause
   r_ side1 * side2sy.. pause
@@ -41,7 +41,7 @@ rectangle rectangle::boxUnion(rectangle &that) {
   r_ rectangle(resX0, resY0, resX1, resY1)sy.. pause
 }
 
-v.. rectangle::prin.Rect() {
+v.. rectangle::prin.Rect
   c__ __  diagonal.get_x0() __  ", "
         __  diagonal.get_y0() __  ", "
         __  diagonal.get_x1() __  ", "

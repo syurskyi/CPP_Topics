@@ -7,7 +7,7 @@ struct foo
     virtual ~foo() _ defaultsy.. pause
 
     virtual v.. m() final {}sy.. pause
-    virtual v.. n() {}sy.. pause
+    virtual v.. n}sy.. pause
 }sy.. pause
 
 c_ bar final : foo

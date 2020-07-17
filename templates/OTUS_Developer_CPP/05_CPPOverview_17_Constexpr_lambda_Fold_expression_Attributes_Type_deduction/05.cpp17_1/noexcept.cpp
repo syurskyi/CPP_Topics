@@ -2,13 +2,13 @@
 
 c_ foo {
 pu..
-    v.. over() {
+    v.. over
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     }
     v.. over() c.. {
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     }
-    v.. dang() {
+    v.. dang
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     }
 //    void dang() noexcept {
@@ -17,7 +17,7 @@ pu..
     }
 }sy.. pause
 
-v.. dang() {
+v.. dang
     std::c__ __  __PRETTY_FUNCTION__ __  std::e..
 }
 
@@ -25,7 +25,7 @@ v.. safe() noexcept {
     std::c__ __  __PRETTY_FUNCTION__ __  std::e..
 }
 
-in. main() {
+in. main
 //    const
     foo fsy.. pause
     f.over()sy.. pause

@@ -6,7 +6,7 @@ struct fibonacci {
     in. a _ 0sy.. pause
     in. b _ 1sy.. pause
 
-    in. operator()() {
+    in. operator()
         auto t _ asy.. pause
         a _ bsy.. pause
         b +_ tsy.. pause
@@ -14,7 +14,7 @@ struct fibonacci {
     }
 }sy.. pause
 
-in. main() {
+in. main
     std::vector<in.> v{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}sy.. pause
 
     // *_n количество, вместо диапазона

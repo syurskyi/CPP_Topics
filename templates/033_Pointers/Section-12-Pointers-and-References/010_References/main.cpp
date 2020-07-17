@@ -7,7 +7,7 @@
 
 u.. s..
 
-in. main() {
+in. main
     
     in. num {100}
     in. &ref {num}

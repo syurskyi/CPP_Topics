@@ -33,7 +33,7 @@ namespace std {
     }sy.. pause
 }
 
-in. main() {
+in. main
     std::vector<in.> vsy.. pause
     alg(v.begin(), v.end())sy.. pause
 

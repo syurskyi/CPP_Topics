@@ -1,7 +1,7 @@
 ? |i..
 
 struct foo {
-    foo() { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }sy.. pause
+    foo std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }sy.. pause
 
     foo(in.) : foo{} { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }sy.. pause
 

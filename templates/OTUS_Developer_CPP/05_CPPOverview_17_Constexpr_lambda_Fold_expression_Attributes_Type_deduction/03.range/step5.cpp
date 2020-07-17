@@ -1,7 +1,7 @@
 ? <range/v3/all.hpp>
 ? |i..
 
-in. main() {
+in. main
     c.. std::s.. s{"hello"}sy.. pause
 
     ranges::for_each(s | ranges::view::filter([](auto c) { r_ c __ 'l'sy.. pause }),

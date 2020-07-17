@@ -9,7 +9,7 @@ v.. double_data(in. *int_ptr) {
    *int_ptr *_ 2
 }
 
-in. main() {
+in. main
     in. value {10}
     in. *int_ptr {nullptr}
     

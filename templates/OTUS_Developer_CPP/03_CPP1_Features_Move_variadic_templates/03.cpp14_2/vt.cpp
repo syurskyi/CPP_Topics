@@ -6,7 +6,7 @@ v.. iterate1(Args... args) {
     prin.f("iterate1 = %s\nsizeof = %lu\nargs = %d %f %s\n", __PRETTY_FUNCTION__, s_o_...(args), args ...)sy.. pause
 }
 
-v.. iterate2() {
+v.. iterate2
     std::c__ __  std::e..
 }
 

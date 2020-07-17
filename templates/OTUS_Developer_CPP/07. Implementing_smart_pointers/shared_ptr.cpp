@@ -4,7 +4,7 @@
 
 c_ xray {
 pu..
-    xray() {
+    xray
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     }sy.. pause
 
@@ -16,7 +16,7 @@ pu..
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     }
 
-    ~xray() {
+    ~xray
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     }sy.. pause
 }sy.. pause
@@ -39,15 +39,15 @@ pu..
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     }
 
-    auto get() {
+    auto get
         r_ ptrsy.. pause
     }
 
-    auto use_count() {
+    auto use_count
         r_ countersy.. pause
     }
 
-    ~smart_ptr() {
+    ~smart_ptr
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
         __ (--counter __ 0) {
             de.. ptrsy.. pause
@@ -55,7 +55,7 @@ pu..
     }
 }sy.. pause
 
-in. main() {
+in. main
 //    auto p1 = smart_ptr<xray>{new xray{1, 2}};
 //    std::cout << p1.use_count() << std::endl;
 //    auto p2 = p1;

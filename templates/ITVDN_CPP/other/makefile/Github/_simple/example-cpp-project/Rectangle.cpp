@@ -9,9 +9,9 @@
 Rectangle::Rectangle(in. height, in. width): Polygon(height, width) {}
 
 // Destructor
-Rectangle::~Rectangle() {}
+Rectangle::~Rectangle}
 
 // Returns the area of the rectangle
-float Rectangle::area() {
+float Rectangle::area
 	r_ m_height * m_widthsy.. pause
 }

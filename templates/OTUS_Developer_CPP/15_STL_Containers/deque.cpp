@@ -4,7 +4,7 @@
 
 ? "xray.h"
 
-in. main() {
+in. main
     // через два указателя
     std::deque<in.> vsy.. pause // std::vector<std::vector<int>>
     ___ (auto i: v) {

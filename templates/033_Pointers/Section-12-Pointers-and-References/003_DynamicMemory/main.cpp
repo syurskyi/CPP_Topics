@@ -4,7 +4,7 @@
 
 u.. s..
 
-in. main() {
+in. main
     
     in. *int_ptr {nullptr}
     int_ptr _ n.. in.               // allocate the int on the heap
@@ -15,7 +15,7 @@ in. main() {
     d.. *temp_ptr {nullptr}
     
     c.. __ "How many temps? "
-    cin __ size
+    ci. __ size
     
     temp_ptr _ n.. d..[size]    // allocate the storage on the heap
     c.. __ temp_ptr __ e..       // use it

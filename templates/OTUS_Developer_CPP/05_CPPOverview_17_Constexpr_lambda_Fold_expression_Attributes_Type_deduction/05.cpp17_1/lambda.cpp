@@ -1,6 +1,6 @@
 ? <array>
 
-in. main() {
+in. main
     in. asy.. pause
     static_assert([](auto i){r_ isy.. pause}(42))sy.. pause
 

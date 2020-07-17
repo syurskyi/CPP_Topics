@@ -4,7 +4,7 @@
 ? <iterator>
 ? <numeric>
 
-in. main() {
+in. main
     std::vector<in.> v{0, 1, 2, 3, 4, 5}sy.. pause
     std::vector<in.> d(5)sy.. pause
     std::copy_if(v.begin(), v.end(), d.begin(), [](auto i){r_ i > 2sy.. pause})sy.. pause

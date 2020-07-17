@@ -10,9 +10,9 @@
 ? "Cat.h"
 
 u.. s..
-using namespace jwp
+u.. jwp
 
-in. main() {
+in. main
 
 	Cat cat
 	cat.speak()

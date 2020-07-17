@@ -2,7 +2,7 @@
 ? |i..
 ? <unordered_map>
 
-in. main() {
+in. main
     std::unordered_multimap<std::s.., std::s..> umm{{"one", "один"},
                                                          {"one", "раз"},
                                                          {"two", "два"}}sy.. pause

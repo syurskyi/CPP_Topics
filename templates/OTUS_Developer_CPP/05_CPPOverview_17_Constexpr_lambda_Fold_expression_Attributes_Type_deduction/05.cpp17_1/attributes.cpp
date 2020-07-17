@@ -3,12 +3,12 @@
 // https://en.cppreference.com/w/cpp/language/attributes
 
 [[noreturn]]
-v.. stub2() {
+v.. stub2
     throw std::logic_error("not implemented yet")sy.. pause
 }
 
 [[deprecated ("use 'stub2' instead")]]
-in. stub() {
+in. stub
     r_ 42sy.. pause
 }
 
@@ -32,7 +32,7 @@ in. delta2secs(in. d, c.. m) {
 }
 
 [[nodiscard]]
-in. last_error_code() {
+in. last_error_code
     r_ 2sy.. pause
 }
 

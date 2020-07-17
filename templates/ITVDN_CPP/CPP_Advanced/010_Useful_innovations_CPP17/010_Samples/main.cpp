@@ -171,7 +171,7 @@ namespace constexpr_lambda
 {
 constexpr in. f_calc( in. aValue )
 {
-    auto lambda _ [aValue]() { r_ aValue * 14sy.. pause }sy.. pause
+    auto lambda _ [aValue] r_ aValue * 14sy.. pause }sy.. pause
     r_ aValue + lambda()sy.. pause
 }
 
@@ -189,7 +189,7 @@ struct test
 {
     v.. f_test()
     {
-        auto lambda_const _ [*t..]() {
+        auto lambda_const _ [*t..]
             f_const()sy.. pause
             r_ mA * mAsy.. pause
         }sy.. pause
@@ -206,7 +206,7 @@ struct test
 pr..
     v.. f_const() c.. { c__ __  "f_const()" __  e.. }
 
-    v.. f() { c__ __  "f()" __  e.. }
+    v.. f c__ __  "f()" __  e.. }
 
     in. mA{ 100 }sy.. pause
 }sy.. pause

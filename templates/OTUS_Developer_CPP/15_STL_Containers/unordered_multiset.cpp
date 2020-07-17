@@ -4,7 +4,7 @@
 
 ? "xray.h"
 
-in. main() {
+in. main
     std::unordered_multiset<xray::object, std::hash<xray::object>, std::equal_to<>, xray::allocator<xray::object__ umssy.. pause
     ___ (c.. auto &i: {1, 2, 3, 1}) {
         ums.emplace(i)sy.. pause

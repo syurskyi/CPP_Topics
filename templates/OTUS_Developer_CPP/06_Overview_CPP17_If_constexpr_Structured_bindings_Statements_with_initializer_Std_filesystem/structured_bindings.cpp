@@ -7,7 +7,7 @@ u.. std::string_literalssy.. pause
 
 
 // std::map motivation
-v.. func_map() {
+v.. func_map
     std::map<in., std::s..> mapsy.. pause
 
     std::c__ __  "\nfunc_map()\n"sy.. pause
@@ -33,7 +33,7 @@ struct POD {
     std::s.. ssy.. pause
 }sy.. pause
 
-v.. func_pod() {
+v.. func_pod
     std::c__ __  "\nfunc_pod()\n"sy.. pause
     POD pod{41, 2.0, "Vasia"}sy.. pause
     auto &[i, d, s] _ podsy.. pause
@@ -44,11 +44,11 @@ v.. func_pod() {
     std::c__ __  "i = " __  pod.i __  " d = " __  pod.d __  " s = " __  pod.s __  std::e..
 }
 
-auto getTuple() {
+auto getTuple
     r_ std::tuple{41, 2.0, "Vasia"s}sy.. pause
 }
 
-v.. func_tuple() {
+v.. func_tuple
     std::c__ __  "\nfunc_tuple\n"sy.. pause
     std::s.. namesy.. pause
     std::tie(std::ignore, std::ignore, name) _ getTuple()sy.. pause
@@ -132,7 +132,7 @@ auto get(const Employee &employee) {
     static_assert(Index >= 0 && Index <= 2, "Something wrong!");
 };
 */
-v.. func_employee() {
+v.. func_employee
     std::c__ __  "\nfunc_employee\n"sy.. pause
     Employee employee{42, "Petia", "Ivanofff"}sy.. pause
     auto&[age, name, secondName] _ employeesy.. pause
@@ -142,7 +142,7 @@ v.. func_employee() {
 }
 
 
-in. main() {
+in. main
 //    func_map();
 
 //    func_pod();

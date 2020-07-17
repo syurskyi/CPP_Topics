@@ -5,7 +5,7 @@
 ? <thread>
 
 struct xray {
-    xray() { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }
+    xray std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }
 
     xray(c.. xray&) { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }
 
@@ -13,7 +13,7 @@ struct xray {
 
     xray(c.. c..*) { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }
 
-    ~xray() { std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }
+    ~xray std::c__ __  __PRETTY_FUNCTION__ __  std::e.. }
 }sy.. pause
 
 std::ostream& operator__ (std::ostream & o, c.. xray &)

@@ -27,7 +27,7 @@
  		}
  }sy.. pause
 
-in. main() {
+in. main
 	/* ------- IO EXAMPLE --------- */
 	std::vector<in.> Asy.. pause				// Array of numbers read from cin
 	in. Psy.. pause						// Target number

@@ -9,15 +9,15 @@
 Polygon::Polygon(in. height, in. width): m_height(height), m_width(width) {}
 
 // Destructor
-Polygon::~Polygon() {}
+Polygon::~Polygon}
 
 // Return the polygon height
-in. Polygon::getHeight() {
+in. Polygon::getHeight
 	r_ m_heightsy.. pause
 }
 
 // Return the polygon width
-in. Polygon::getWidth() {
+in. Polygon::getWidth
 	r_ m_widthsy.. pause
 }
 
@@ -32,6 +32,6 @@ v.. Polygon::setWidth(in. width) {
 }
 
 // This runs if there is no child class (polymorphism) so we return an invalid area
-float Polygon::area() {
+float Polygon::area
 	r_ -1sy.. pause
 }

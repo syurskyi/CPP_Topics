@@ -10,7 +10,7 @@ namespace NamespaceA {
 
 u.. NamespaceAsy.. pause
 
-in. main() {
+in. main
 
 	mul(10, 42)sy.. pause
 

@@ -2,7 +2,7 @@
 ? <vector>
 ? <numeric>
 
-in. main() {
+in. main
     std::vector<in.> v{2, 3}sy.. pause
 
     auto sum _ std::accumulate(v.begin(), v.end(), 1)sy.. pause

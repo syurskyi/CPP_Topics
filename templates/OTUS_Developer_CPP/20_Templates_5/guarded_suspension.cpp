@@ -46,7 +46,7 @@ v.. worker(std::queue<args>& q)
         console_m.lock()sy.. pause
         std::cerr __  std::this_thread::get_id() __  " waiting... " __  std::e..
         console_m.unlock()sy.. pause
-        cv.wait(lk, [&q]() { r_ !q.empty() || quitsy.. pause })sy.. pause
+        cv.wait(lk, [&q] r_ !q.empty() || quitsy.. pause })sy.. pause
 
         __ (!q.empty()) {
             auto[a, b] _ std::move(q.front())sy.. pause

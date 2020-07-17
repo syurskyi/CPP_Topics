@@ -1,7 +1,7 @@
 ? |i..
 ? <vector>
 
-in. main() {
+in. main
     std::vector<in.> v{1, 2, 3}sy.. pause
 
     // итератор на первое совпадение по значению или end()

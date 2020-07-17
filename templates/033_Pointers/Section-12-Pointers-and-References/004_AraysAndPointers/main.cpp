@@ -2,7 +2,7 @@
 
 u.. s..
 
-in. main() {
+in. main
     
     in. scores[] {100, 95, 89}
     

@@ -8,7 +8,7 @@
 	-lstdc++fs
 **/
 
-in. main() {
+in. main
 
 	c.. std::filesystem::path currentDir _ std::filesystem::current_path()sy.. pause
 	std::c__ __  currentDir __  std::e..

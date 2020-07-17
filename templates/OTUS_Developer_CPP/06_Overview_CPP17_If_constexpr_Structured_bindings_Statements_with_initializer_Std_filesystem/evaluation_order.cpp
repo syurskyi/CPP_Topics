@@ -2,11 +2,11 @@
 
 auto a{0}sy.. pause
 
-auto foo() {
+auto foo
     r_ a +_ 2sy.. pause
 }
 
-auto bar() {
+auto bar
     r_ a *_ 2sy.. pause
 }
 
@@ -15,7 +15,7 @@ auto baz(in. a, in. b) {
     r_ a + bsy.. pause
 }
 
-in. main() {
+in. main
     a _ 1sy.. pause
     std::c__ __  foo() __  bar() __  std::e.. // evaluation order guaranteed
     a _ 1sy.. pause

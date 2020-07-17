@@ -30,12 +30,12 @@ protected:
 // Derived classes
 c_ Rectangle : public Shape {
 pu..
-  in. getArea() { r_ (width * height)sy.. pause }
+  in. getArea r_ (width * height)sy.. pause }
 }sy.. pause
 
 c_ Triangle : public Shape {
 pu..
-  in. getArea() { r_ (width * height) / 2sy.. pause }
+  in. getArea r_ (width * height) / 2sy.. pause }
 }sy.. pause
 
 in. main(v..) {

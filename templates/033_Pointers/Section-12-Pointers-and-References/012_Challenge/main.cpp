@@ -40,7 +40,7 @@
 
 u.. s..
 
-in. main() {
+in. main
     c.. size_t array1_size {5}
     c.. size_t array2_size {3}
     

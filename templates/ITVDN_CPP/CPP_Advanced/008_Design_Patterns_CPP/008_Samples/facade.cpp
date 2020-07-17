@@ -33,7 +33,7 @@ v.. Tv::tvOff()
     c__ __  "TV is off" __  e..
 }
 
-HouseFacade::HouseFacade() {}
+HouseFacade::HouseFacade}
 
 v.. HouseFacade::goToWork()
 {

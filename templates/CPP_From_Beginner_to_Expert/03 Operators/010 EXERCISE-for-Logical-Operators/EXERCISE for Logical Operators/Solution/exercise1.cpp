@@ -2,7 +2,7 @@
 
 u.. s..
 
-main() {
+main
 
     in. minValue, maxValue, elementToChecksy.. pause
     bo.. isContainedsy.. pause

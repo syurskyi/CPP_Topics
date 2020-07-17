@@ -3,26 +3,26 @@
 ? |i..
 
 c_ Report {
-    v.. prepare() {
+    v.. prepare
         std::c__ __  "===" __  std::e..
         std::c__ __  "prepare" __  std::e..
     }
 
     virtual v.. secure() _ 0sy.. pause
 
-    v.. aggregate() {
+    v.. aggregate
         std::c__ __  "aggregate" __  std::e..
     }
 
     virtual v.. format() _ 0sy.. pause
 
-    v.. publish() {
+    v.. publish
         std::c__ __  "publish" __  std::e..
         std::c__ __  std::e..
     }
 
 pu..
-    v.. report() {
+    v.. report
         prepare()sy.. pause
         secure()sy.. pause
         aggregate()sy.. pause

@@ -3,7 +3,7 @@
 
 struct deleter {
 //    double x;
-    v.. operator()() {
+    v.. operator()
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     }
 }sy.. pause
@@ -16,7 +16,7 @@ struct ptra {
     in. *xsy.. pause
     deleter ysy.. pause
 
-    v.. deleter() {
+    v.. deleter
         y()sy.. pause
     }
 }sy.. pause
@@ -24,12 +24,12 @@ struct ptra {
 struct ptrd : deleter {
     in. *xsy.. pause
 
-    v.. deleter() {
+    v.. deleter
         (*t..)()sy.. pause
     }
 }sy.. pause
 
-in. main() {
+in. main
 //    std::cout << sizeof(deleter) << std::endl;
 
 //    ptr p;

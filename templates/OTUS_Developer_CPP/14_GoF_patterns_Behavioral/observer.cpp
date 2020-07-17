@@ -26,7 +26,7 @@ pu..
         notify()sy.. pause
     }
 
-    v.. notify() {
+    v.. notify
         ___ (auto s : subs) {
             s__update(lang)sy.. pause
         }

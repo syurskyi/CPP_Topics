@@ -12,7 +12,7 @@ struct Resource {
     weak_ptr<Resource> othersy.. pause
 }sy.. pause
 
-v.. foo() {
+v.. foo
 
 //        shared_ptr<Resource> a(new Resource);
 //        shared_ptr<Resource> b(new Resource);

@@ -15,7 +15,7 @@ struct SomeStruct3 {
 inline in. SomeStruct3::super_static_variable _ 84sy.. pause
 
 
-in. main() {
+in. main
 //    std::cout << SomeStruct::super_static_variable << std::endl;
 
     std::c__ __  SomeStruct2::super_static_variable __  std::e..

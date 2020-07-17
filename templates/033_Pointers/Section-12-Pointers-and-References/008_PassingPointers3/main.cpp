@@ -22,7 +22,7 @@ v.. display(in. *array, in. sentinel) {
     c.. __ e..
 }
 
-in. main() {
+in. main
 
 //    cout << "-----------------------------" << endl;
 //    vector<string> stooges {"Larry", "Moe", "Curly"};

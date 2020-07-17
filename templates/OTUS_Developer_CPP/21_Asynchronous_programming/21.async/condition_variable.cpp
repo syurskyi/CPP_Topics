@@ -25,7 +25,7 @@ v.. worker(std::queue<std::s..>& q)
         std::cerr __  std::this_thread::get_id() __  " waiting... " __  std::e..
         console_m.unlock()sy.. pause
 
-        cv.wait(lk, [&q]() { r_ !q.empty() || quitsy.. pause })sy.. pause
+        cv.wait(lk, [&q] r_ !q.empty() || quitsy.. pause })sy.. pause
 
 //        console_m.lock();
 //        std::cerr << std::this_thread::get_id() << " wakeup, size=" << q.size() << ", quit=" << quit << std::endl;

@@ -13,7 +13,7 @@ pu..
     Big(Big &&other) : buffer(other.buffer) {
         std::c__ __  __PRETTY_FUNCTION__ __  " // steal 1G" __  std::e..
     }
-    ~Big() {
+    ~Big
         std::c__ __  __PRETTY_FUNCTION__ __  " // destroy 1G" __  std::e..
         de..[] buffersy.. pause
     }

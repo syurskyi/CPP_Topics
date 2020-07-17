@@ -1,7 +1,7 @@
 ? |i..
 ? <vector>
 
-in. main() {
+in. main
     auto a _ 1sy.. pause
     auto b _ 2sy.. pause
     auto c _ 3sy.. pause

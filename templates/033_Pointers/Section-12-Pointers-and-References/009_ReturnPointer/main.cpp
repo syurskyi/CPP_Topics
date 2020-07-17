@@ -17,15 +17,15 @@ v.. display(c.. in. *c.. array, size_t size) {
         c.. __ array[i] __ " "
     c.. __ e..
 }
-in. main() {
+in. main
     in. *my_array {nullptr}
     size_t size
     in. init_value {}
     
     c.. __ "\nHow many integers would you like to allocate? "
-    cin __ size
+    ci. __ size
     c.. __ "What value would you like them initialized to? "
-    cin __ init_value
+    ci. __ init_value
     
     my_array _ create_array(size, init_value)
     c.. __ "\n--------------------------------------" __ e..

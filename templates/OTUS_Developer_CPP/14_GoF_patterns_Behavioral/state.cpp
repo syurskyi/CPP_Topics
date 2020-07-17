@@ -26,15 +26,15 @@ pu..
     virtual v.. logout(Application *) _ 0sy.. pause
 }sy.. pause
 
-v.. Application::login() {
+v.. Application::login
     cmd_handler__login(t..)sy.. pause
 }
 
-v.. Application::do_it() {
+v.. Application::do_it
     cmd_handler__do_it(t..)sy.. pause
 }
 
-v.. Application::logout() {
+v.. Application::logout
     cmd_handler__logout(t..)sy.. pause
 }
 
@@ -69,7 +69,7 @@ v.. LogginedHandler::logout(Application *m) {
     m__set_current(n.. Anonymous())sy.. pause
 }
 
-Application::Application() {
+Application::Application
     cmd_handler _ n.. Anonymous()sy.. pause
     std::c__ __  std::e..
 }

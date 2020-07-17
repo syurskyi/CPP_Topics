@@ -2,7 +2,7 @@
 
 u.. s..
 
-main () {
+main
 
     in. firstNumber, secondNumber, temporaryContainersy.. pause
 

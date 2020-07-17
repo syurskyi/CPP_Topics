@@ -9,9 +9,9 @@
 Triangle::Triangle(in. height, in. width): Polygon(height, width) {}
 
 // Destructor
-Triangle::~Triangle() {}
+Triangle::~Triangle}
 
 // Returns the area of the triangle
-float Triangle::area() {
+float Triangle::area
 	r_ m_height * m_width / 2.000sy.. pause
 }
