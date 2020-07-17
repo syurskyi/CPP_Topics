@@ -7,14 +7,14 @@
 ? ios..
 u.. s..
 
-class Frog {
-private:
+c_ Frog {
+pr..
 	string name;
 
-private:
+pr..
 	string getName r_ name; }
 
-public:
+pu..
 	Frog(string name): name(name) {}
 
 	v.. info c.. __ "My name is: " __ getName() __ e.. }

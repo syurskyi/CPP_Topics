@@ -9,12 +9,12 @@
 ? iom..
 ? <limits>
 
-class Song {
+c_ Song {
     friend std::ostream &operator__(std::ostream &os, co.. Song &s);
     std::string name;
     std::string artist;
     in. rating;
-public:
+pu..
     Song() = default;
     Song(std::string name, std::string artist, in. rating)
             : name{name}, artist{artist}, rating{rating} {}

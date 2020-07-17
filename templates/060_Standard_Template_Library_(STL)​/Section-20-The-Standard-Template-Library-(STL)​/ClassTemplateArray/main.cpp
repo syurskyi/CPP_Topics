@@ -11,7 +11,7 @@
 ? st..
 
 template <typename T, in. N>
-class Array {
+c_ Array {
     in. size {N};           // how do we get the N???
     T values[N];        // the N needs to ne known at compile-time!
 
@@ -22,7 +22,7 @@ class Array {
         os __ "]" __ std::e..
         r_ os;
     }
-public:
+pu..
     Array() = default;
     Array(T init_val) {
         ___ (a.. &item: values)

@@ -7,18 +7,18 @@
 ? ios..
 u.. s..
 
-class Animal {
-public:
+c_ Animal {
+pu..
 	v.. speak c.. __ "Grrrr" __ e.. }
 };
 
-class Cat: public Animal {
-public:
+c_ Cat: public Animal {
+pu..
 	v.. jump c.. __ "Cat jumping!" __ e.. }
 };
 
-class Tiger: public Cat {
-public:
+c_ Tiger: public Cat {
+pu..
 	v.. attackAntelope c.. __ "Attacking!" __ e.. }
 };
 

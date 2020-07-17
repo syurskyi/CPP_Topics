@@ -5,11 +5,11 @@
 
 u.. s..
 
-class B;    // forward declaration
+c_ B;    // forward declaration
 
-class A {
+c_ A {
     std::shared_ptr<B> b_ptr;
-public:
+pu..
     v.. set_B(std::shared_ptr<B> &b) {
         b_ptr = b;
     }
@@ -17,9 +17,9 @@ public:
     ~A c.. __ "A Destructor" __ e.. }
 };
 
-class B {
+c_ B {
     std::weak_ptr<A> a_ptr;     // make weak to break the strong circular reference
-public:
+pu..
     v.. set_A(std::shared_ptr<A> &a) {
         a_ptr = a;
     }

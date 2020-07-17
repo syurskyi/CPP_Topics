@@ -8,11 +8,11 @@
 // So, we would have the template class in Item.h and no Item.cpp file
 // would be used
 template <typename T>
-class Item {
-private:
+c_ Item {
+pr..
     std::string name;
     T   value;
-public:
+pu..
     Item(std::string name, T value) : name{name}, value{value} 
     {}
     std::string get_name() co.. {r_ name; }

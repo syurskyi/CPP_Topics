@@ -1,39 +1,38 @@
-// Section 17
-// Custom deleters
-? ios..
-? <memory>
-
-class Test {
-private:
-    in. data;
-public:
-    Test() : data{0} { std::c.. __ "\tTest constructor (" __ data __ ")" __ std::e.. }
-    Test(in. data) : data {data} { std::c.. __ "\tTest constructor (" __ data __ ")" __ std::e.. }
-    in. get_data() co.. {r_ data; }
-    ~Teststd::c.. __ "\tTest destructor (" __ data __ ")" __ std::e.. }
-};
-
-v.. my_deleter(Test *ptr) {
-    std::c.. __ "\tUsing my custom function deleter" __ std::e..
-    delete ptr;
-}
-
-in. main
-
-    {
-        // Using a function 
-        std::shared_ptr<Test> ptr1 {new Test{100}, my_deleter };
-    }
-
-    std::c.. __ "====================" __ std::e..
-    {
-        // Using a Lambda expression
-        std::shared_ptr<Test> ptr2 (new Test{1000}, 
-            [] (Test *ptr)  {
-                std::c.. __ "\tUsing my custom lamdba deleter" __ std::e..
-                delete ptr;
-            });
-    }
-    
-    r_ 0;
-}
+//// Section 17
+//// Custom deleters
+//? ios..
+//? <memory>
+//
+//c_ Test
+//pr..
+//    in. data
+//pu..
+//    T..  d.. 0  st. c.. __ "\tTest constructor (" __ d.. __ ")" __ st. e..
+//    T.. in. d..)  d.. d..  st. c.. __ "\tTest constructor (" __ d.. __ ")" __ st. e..
+//    in. g_d.. co.. r_ d..
+//    #Teststd c.. __ "\tTest destructor (" __ d.. __ ")" __ st. e..
+//
+//
+//v.. my_deleter T.. #ptr
+//    st. c.. __ "\tUsing my custom function deleter" __ st. e..
+//    de.. p..
+//
+//
+//in. main
+//
+//
+//        // Using a function
+//        st. shared_ptr|T..> ptr1 n.. T.. 100 m_d..
+//
+//
+//    st. c.. __ "====================" __ st. e..
+//
+//        // Using a Lambda expression
+//        st. shared_ptr|T.. ptr2 n.. T.. 1000
+//            || |T.. #p..
+//                st. c.. __ "\tUsing my custom lamdba deleter" __ st. e..
+//                de.. p..
+//
+//
+//
+//    r_ _

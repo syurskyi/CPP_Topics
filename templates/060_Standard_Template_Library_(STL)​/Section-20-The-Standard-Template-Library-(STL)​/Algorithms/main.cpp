@@ -6,10 +6,10 @@
 ? <algorithm>
 ? <cctype>
 
-class Person {
+c_ Person {
     std::string name;
     in. age;
-public:
+pu..
     Person() = default;
     Person(std::string name, in. age)
         : name{name}, age{age}  {}

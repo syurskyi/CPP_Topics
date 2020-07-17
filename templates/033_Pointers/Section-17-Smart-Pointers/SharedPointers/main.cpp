@@ -8,10 +8,10 @@
 ? "Trust_Account.h"
 
 
-class Test {
-private:
+c_ Test {
+pr..
     in. data;
-public:
+pu..
     Test() : data{0} { std::c.. __ "Test constructor (" __ data __ ")" __ std::e.. }
     Test(in. data) : data {data} { std::c.. __ "Test constructor (" __ data __ ")" __ std::e.. }
     in. get_data() co.. {r_ data; }

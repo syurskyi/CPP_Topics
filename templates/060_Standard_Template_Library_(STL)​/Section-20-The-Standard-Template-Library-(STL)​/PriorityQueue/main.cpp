@@ -3,11 +3,11 @@
 ? ios..
 ? <queue>
 
-class Person {
+c_ Person {
     friend std::ostream &operator__(std::ostream &os, co.. Person &p);
     std::string name;
     in. age;
-public:
+pu..
     Person() : name{"Unknown"}, age{0} {}
     Person(std::string name, in. age)
         : name{name}, age{age}  {}

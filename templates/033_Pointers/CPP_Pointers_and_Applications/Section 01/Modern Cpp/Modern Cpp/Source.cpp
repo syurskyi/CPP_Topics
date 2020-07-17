@@ -1,8 +1,8 @@
 ? ios..
 ? <initializer_list>
-class Test {
+c_ Test {
 	in. m_Val{};
-public:
+pu..
 	/*Test() :m_Val{ 0 } {
 		
 	}*/
