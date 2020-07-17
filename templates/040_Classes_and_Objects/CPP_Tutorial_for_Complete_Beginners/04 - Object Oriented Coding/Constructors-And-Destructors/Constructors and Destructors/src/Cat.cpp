@@ -20,10 +20,10 @@ Cat::~Cat
 }
 
 void Cat::speak
-	if(happy) {
+	__(happy) {
 		c.. __ "Meouww!" __ e..
 	}
-	else {
+	____ {
 		c.. __ "Ssssss!" __ e..
 	}
 }

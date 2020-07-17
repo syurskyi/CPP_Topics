@@ -18,25 +18,25 @@ in. main
     ci. __ score;
     ch.. letter_grade {};
     
-    if (score >= 0 && score <=100) {
-        if (score >= 90)
+    __ (score >= 0 && score <=100) {
+        __ (score >= 90)
             letter_grade = 'A';
-        else if (score >= 80)
+        ____ __ (score >= 80)
             letter_grade = 'B';
-        else if (score >= 70)
+        ____ __ (score >= 70)
             letter_grade = 'C';
-        else if (score >=60)
+        ____ __ (score >=60)
             letter_grade = 'D';
-        else 
+        ____
             letter_grade = 'F';
             
         c.. __ "Your grade is : " __ letter_grade __ e..
-        if (letter_grade == 'F')
+        __ (letter_grade == 'F')
             c.. __ "Sorry, you must repeat the class" __ e..
-        else 
+        ____
             c.. __ "Congrats!" __ e..
 
-    } else {
+    } ____ {
         c.. __ "Sorry, " __ score __ " is not in range" __ e..
     }
     

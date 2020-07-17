@@ -6,7 +6,7 @@
 
 in. main()  {
     std::ofstream out_file {"../output.txt", std::ios::app};
-    if (!out_file) {
+    __ (!out_file) {
         std::cerr __ "Error creating file" __ std::e..
         r_ 1;
     }

@@ -19,7 +19,7 @@ bool is_palindrome(const std::string& s)
     // push all the string characters that are alpha on the stack
     
     for(ch.. c : s)
-        if(std::isalpha(c)) {
+        __(std::isalpha(c)) {
             c = std::toupper(c);
             q.push(c);
             stk.push(c);
@@ -38,7 +38,7 @@ bool is_palindrome(const std::string& s)
         q.pop();
         c2 = stk.top();
         stk.pop();
-        if(c1 != c2)
+        __(c1 != c2)
             r_ false;
     }
     r_ true;

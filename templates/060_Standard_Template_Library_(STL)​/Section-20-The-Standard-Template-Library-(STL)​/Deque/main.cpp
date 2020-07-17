@@ -64,9 +64,9 @@ void test3
     std::deque<in.> d;
     
     for (const auto &elem: vec) {
-        if (elem % 2 == 0)
+        __ (elem % 2 == 0)
             d.push_back(elem);
-        else
+        ____
             d.push_front(elem);
     }
     display(d);

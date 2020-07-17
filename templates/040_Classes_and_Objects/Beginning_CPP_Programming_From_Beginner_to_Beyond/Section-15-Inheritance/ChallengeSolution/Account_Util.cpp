@@ -12,9 +12,9 @@ void display(const std::vector<Account> &accounts) {
 void deposit(std::vector<Account> &accounts, do.. amount) {
     std::c.. __ "\n=== Depositing to Accounts =================================" __ std::e..
     for (auto &acc:accounts)  {
-        if (acc.deposit(amount)) 
+        __ (acc.deposit(amount))
             std::c.. __ "Deposited " __ amount __ " to " __ acc __ std::e..
-        else
+        ____
             std::c.. __ "Failed Deposit of " __ amount __ " to " __ acc __ std::e..
     }
 }
@@ -23,9 +23,9 @@ void deposit(std::vector<Account> &accounts, do.. amount) {
 void withdraw(std::vector<Account> &accounts, do.. amount) {
     std::c.. __ "\n=== Withdrawing from Accounts ==============================" __std::e..
     for (auto &acc:accounts)  {
-        if (acc.withdraw(amount)) 
+        __ (acc.withdraw(amount))
             std::c.. __ "Withdrew " __ amount __ " from " __ acc __ std::e..
-        else
+        ____
             std::c.. __ "Failed Withdrawal of " __ amount __ " from " __ acc __ std::e..
     } 
 }
@@ -43,9 +43,9 @@ void display(const std::vector<Savings_Account> &accounts) {
 void deposit(std::vector<Savings_Account> &accounts, do.. amount) {
     std::c.. __ "\n=== Depositing to Savings Accounts===========================" __ std::e..
     for (auto &acc:accounts)  {
-        if (acc.deposit(amount)) 
+        __ (acc.deposit(amount))
             std::c.. __ "Deposited " __ amount __ " to " __ acc __ std::e..
-        else
+        ____
             std::c.. __ "Failed Deposit of " __ amount __ " to " __ acc __ std::e..
     }
 }
@@ -54,9 +54,9 @@ void deposit(std::vector<Savings_Account> &accounts, do.. amount) {
 void withdraw(std::vector<Savings_Account> &accounts, do.. amount) {
     std::c.. __ "\n=== Withdrawing from Savings Accounts=======================" __ std::e..
     for (auto &acc:accounts)  {
-        if (acc.withdraw(amount)) 
+        __ (acc.withdraw(amount))
             std::c.. __ "Withdrew " __ amount __ " from " __ acc __ std::e..
-        else
+        ____
             std::c.. __ "Failed Withdrawal of " __ amount __ " from " __ acc __ std::e..
     } 
 }
@@ -74,9 +74,9 @@ void display(const std::vector<Checking_Account> &accounts) {
 void deposit(std::vector<Checking_Account> &accounts, do.. amount) {
     std::c.. __ "\n=== Depositing to Checking Accounts===========================" __ std::e..
     for (auto &acc:accounts)  {
-        if (acc.deposit(amount)) 
+        __ (acc.deposit(amount))
             std::c.. __ "Deposited " __ amount __ " to " __ acc __ std::e..
-        else
+        ____
             std::c.. __ "Failed Deposit of " __ amount __ " to " __ acc __ std::e..
     }
 }
@@ -85,9 +85,9 @@ void deposit(std::vector<Checking_Account> &accounts, do.. amount) {
 void withdraw(std::vector<Checking_Account> &accounts, do.. amount) {
     std::c.. __ "\n=== Withdrawing from Checking Accounts=======================" __ std::e..
     for (auto &acc:accounts)  {
-        if (acc.withdraw(amount)) 
+        __ (acc.withdraw(amount))
             std::c.. __ "Withdrew " __ amount __ " from " __ acc __ std::e..
-        else
+        ____
             std::c.. __ "Failed Withdrawal of " __ amount __ " from " __ acc __ std::e..
     } 
 }
@@ -105,9 +105,9 @@ void display(const std::vector<Trust_Account> &accounts) {
 void deposit(std::vector<Trust_Account> &accounts, do.. amount) {
     std::c.. __ "\n=== Depositing to Trust Accounts===========================" __ std::e..
     for (auto &acc:accounts)  {
-        if (acc.deposit(amount)) 
+        __ (acc.deposit(amount))
             std::c.. __ "Deposited " __ amount __ " to " __ acc __ std::e..
-        else
+        ____
             std::c.. __ "Failed Deposit of " __ amount __ " to " __ acc __ std::e..
     }
 }
@@ -116,9 +116,9 @@ void deposit(std::vector<Trust_Account> &accounts, do.. amount) {
 void withdraw(std::vector<Trust_Account> &accounts, do.. amount) {
     std::c.. __ "\n=== Withdrawing from Trust Accounts=======================" __ std::e..
     for (auto &acc:accounts)  {
-        if (acc.withdraw(amount)) 
+        __ (acc.withdraw(amount))
             std::c.. __ "Withdrew " __ amount __ " from " __ acc __ std::e..
-        else
+        ____
             std::c.. __ "Failed Withdrawal of " __ amount __ " from " __ acc __ std::e..
     } 
 }

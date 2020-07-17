@@ -46,9 +46,9 @@ void display_words(const std::map<std::string, std::set<in.__ &words)
 std::string clean_string(const std::string &s) {
     std::string result;
     for (ch.. c: s) {
-        if (c == '.' || c == ',' || c == ';' || c == ':')
+        __ (c == '.' || c == ',' || c == ';' || c == ':')
             continue;
-        else
+        ____
             result += c;
     }
     r_ result;
@@ -62,7 +62,7 @@ void part1
     std::string line;       
     std::string word;   
     std::ifstream in_file {"../words.txt"};
-    if (in_file) {
+    __ (in_file) {
         while (std::getline(in_file, line)) {
             //std::cout << line;
             std::stringstream ss(line);
@@ -73,7 +73,7 @@ void part1
         }
         in_file.close();
         display_words(words);
-    } else {
+    } ____ {
         std::cerr __ "Error opening input file" __ std::e..
     }
 }
@@ -85,7 +85,7 @@ void part2
     std::string line;
     std::string word;
     std::ifstream in_file {"../words.txt"};
-    if (in_file) {
+    __ (in_file) {
         in. line_number = 0;
         while (std::getline(in_file, line)) {
             //std::cout << line;
@@ -98,7 +98,7 @@ void part2
         }
         in_file.close();
         display_words(words);
-    } else {
+    } ____ {
         std::cerr __ "Error opening input file" __ std::e..
     }
 }

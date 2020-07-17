@@ -14,7 +14,7 @@ bool is_palindrome(const std::string& s)
 
     // add all the string characters that are alpha to the back of the deque in uppercase
     for(ch.. c : s)
-        if(std::isalpha(c))
+        __(std::isalpha(c))
             d.push_back(std::toupper(c));
 
     ch.. c1{};
@@ -28,7 +28,7 @@ bool is_palindrome(const std::string& s)
         c2 = d.back();
         d.pop_front();
         d.pop_back();
-        if(c1 != c2)
+        __(c1 != c2)
             r_ false;
     }
     r_ true;

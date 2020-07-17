@@ -18,15 +18,15 @@ in. main
         c.. __ "\nEnter your selection: ";
         ci. __ selection;
         
-        if (selection == '1')
+        __ (selection == '1')
             c.. __ "You chose 1 - doing this" __ e..
-        else if (selection == '2') 
+        ____ __ (selection == '2')
              c.. __ "You chose 2 - doing that" __ e..
-        else if (selection == '3')
+        ____ __ (selection == '3')
             c.. __ "You chose 3 - doing something else" __ e..
-        else if (selection == 'Q' || selection == 'q')
+        ____ __ (selection == 'Q' || selection == 'q')
             c.. __ "Goodbye..." __ e..
-        else 
+        ____
             c.. __ "Unknown option -- try again..." __ e..
     
     } while ( selection != 'q' && selection != 'Q');

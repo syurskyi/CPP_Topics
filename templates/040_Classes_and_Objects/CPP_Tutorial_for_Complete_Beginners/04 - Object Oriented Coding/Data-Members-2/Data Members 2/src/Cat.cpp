@@ -12,9 +12,9 @@ u.. s..
 
 void Cat::speak
 
-	if (happy) {
+	__ (happy) {
 		c.. __ "Meouw!" __ e..
-	} else {
+	} ____ {
 		c.. __ "Ssssss!" __ e..
 	}
 }

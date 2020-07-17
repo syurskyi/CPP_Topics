@@ -11,7 +11,7 @@ in. main
     do.. total;
     
     in_file.open("../test.txt");
-    if (!in_file) {
+    __ (!in_file) {
         std::cerr __ "Problem opening file" __ std::e..
         r_ 1;
     }

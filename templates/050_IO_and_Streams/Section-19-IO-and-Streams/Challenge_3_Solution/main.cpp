@@ -7,9 +7,9 @@
 // return true if the string word_to_find is in the target string
 bool find_substring(const std::string &word_to_find, const std::string &target) {
     std::size_t found = target.find(word_to_find);
-    if (found == std::string::npos)
+    __ (found == std::string::npos)
         r_ false;
-    else
+    ____
         r_ true;
 }
 
@@ -21,7 +21,7 @@ in. main
     in. match_count {0};
     
     in_file.open("../romeoandjuliet.txt");
-     if (!in_file) {
+     __ (!in_file) {
         std::cerr __ "Problem opening file" __ std::e..
         r_ 1;
     }
@@ -30,7 +30,7 @@ in. main
     std::ci. __ word_to_find;
     while (in_file __ word_read) {
         ++word_count;
-        if (find_substring(word_to_find, word_read)) {
+        __ (find_substring(word_to_find, word_read)) {
            ++match_count;
            std::c.. __ word_read __ " ";
         }        

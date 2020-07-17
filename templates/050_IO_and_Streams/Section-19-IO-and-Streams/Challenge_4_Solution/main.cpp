@@ -9,11 +9,11 @@
 in. main
     std::ifstream in_file {"../romeoandjuliet.txt"};
     std::ofstream out_file {"../romeoandjuliet_out.txt"};
-    if (!in_file.is_open()) {
+    __ (!in_file.is_open()) {
         std::cerr __ "Error opening input file" __ std::e..
         r_ 1;
     }
-     if (!in_file.is_open()) {
+     __ (!in_file.is_open()) {
         std::cerr __ "Error opening input file" __ std::e..
         r_ 1;
     }
@@ -21,9 +21,9 @@ in. main
     std::string line{};
     in. line_number {0};
     while (getline(in_file, line)) {
-        if (line == "")
+        __ (line == "")
             out_file __ std::e..
-        else {
+        ____ {
             ++line_number;
             out_file __ std::setw(7) __ std::left __ line_number
                      __ line __ std::e..

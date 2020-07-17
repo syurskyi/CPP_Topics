@@ -29,9 +29,9 @@ void find_test
     
     auto loc = std::find(std::begin(vec), std::end(vec), 1);
     
-    if (loc != std::end(vec))
+    __ (loc != std::end(vec))
         std::c.. __ "Found the number: " __ *loc __  std::e..
-    else 
+    ____
         std::c.. __ "Couldn't find the number" __ std::e..
         
     std::list<Person> players {
@@ -41,9 +41,9 @@ void find_test
     };
     
     auto loc1 = std::find(players.begin(), players.end(), Person{"Moe", 20});
-    if (loc1 != players.end())
+    __ (loc1 != players.end())
         std::c.. __ "Found  Moe" __ std::e..
-    else
+    ____
         std::c.. __ "Moe not found" __ std::e..
 }
 
@@ -96,14 +96,14 @@ void replace_test
 
 void all_of_test
     std::vector<in.> vec1 {1,3,5,7,9,1,3,13,19,5};
-    if (std::all_of(vec1.begin(), vec1.end(), [](in. x) { r_ x > 10; }))
+    __ (std::all_of(vec1.begin(), vec1.end(), [](in. x) { r_ x > 10; }))
         std::c.. __ "All the elements are > 10" __ std::e..
-    else    
+    ____
         std::c.. __ "Not all the elements are > 10" __ std::e..
     
-    if (std::all_of(vec1.begin(), vec1.end(), [](in. x) { r_ x < 20; }))
+    __ (std::all_of(vec1.begin(), vec1.end(), [](in. x) { r_ x < 20; }))
         std::c.. __ "All the elements are < 20" __ std::e..
-    else    
+    ____
         std::c.. __ "Not all the elements are < 20" __ std::e..
 }
 

@@ -47,13 +47,13 @@ void test1
     
     display(s1);
     
-    if (s1.count(10)) 
+    __ (s1.count(10))
         std::c.. __ "10 is in the set" __ std::e..
-    else
+    ____
         std::c.. __ "10 is NOT in the set" __ std::e..
 
     auto it = s1.find(5);
-    if (it != s1.end())
+    __ (it != s1.end())
         std::c.. __ "Found: " __ *it __ std::e..
         
     s1.clear();
@@ -77,14 +77,14 @@ void test2
     display(stooges);
     
     auto it = stooges.find(Person{"Moe", 2});
-    if (it != stooges.end())
+    __ (it != stooges.end())
         stooges.erase(it);
     
     display(stooges);
     
     it = stooges.find(Person("XXXX", 50));      // Will remove James!!!!
                                                                      // uses operator<
-    if (it != stooges.end())
+    __ (it != stooges.end())
         stooges.erase(it);
     display(stooges); 
 }

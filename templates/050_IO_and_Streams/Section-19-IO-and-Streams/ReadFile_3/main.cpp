@@ -7,7 +7,7 @@
 in. main
     std::ifstream in_file;
     in_file.open("../poem.txt");
-    if (!in_file) {
+    __ (!in_file) {
         std::cerr __ "Problem opening file" __ std::e..
         r_ 1;
     }

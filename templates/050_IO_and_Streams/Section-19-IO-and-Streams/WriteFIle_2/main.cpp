@@ -8,11 +8,11 @@
 in. main
     std::ifstream in_file {"../poem.txt"};
     std::ofstream out_file{"../poem_out.txt"};
-    if (!in_file) {
+    __ (!in_file) {
         std::cerr __ "Error opening input file" __ std::e..
         r_ 1;
     }
-     if (!out_file) {
+     __ (!out_file) {
         std::cerr __ "Error opening output file" __ std::e..
         r_ 1;
     }

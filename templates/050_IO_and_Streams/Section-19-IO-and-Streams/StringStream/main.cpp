@@ -37,9 +37,9 @@ in. main
         std::c.. __ "Please enter an integer: ";
         std::ci. __ entry;
         std::istringstream validator {entry};
-        if (validator __ value)
+        __ (validator __ value)
             done = true;
-        else 
+        ____
             std::c.. __ "Sorry, that's not an integer" __ std::e..
             
          // discards the input buffer

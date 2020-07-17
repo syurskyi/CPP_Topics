@@ -55,7 +55,7 @@ void test1
     std::c.. __ "Count for Frank: " __ m.count("Frank") __ std::e..
     
     auto it = m.find("Larry");
-    if (it != m.end())
+    __ (it != m.end())
         std::c.. __ "Found: " __ it->first __ " : " __ it->second __ std::e..
         
     m.clear();
@@ -80,7 +80,7 @@ void test2
     display(grades);
     
     auto it = grades.find("Moe");
-    if (it != grades.end())                         // found "Moe"
+    __ (it != grades.end())                         // found "Moe"
     {
             it->second.insert(1000);            // insert 1000 into Moe's set of grades
     }                                                         // it->first is the key, it->second is the value (set)

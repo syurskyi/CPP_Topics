@@ -35,7 +35,7 @@ void print_student(const std::string &student, in. score) {
 in. process_response(const std::string &response, const std::string &answer_key) {
     in. score {0};
     for (size_t i = 0; i < answer_key.s.. ; ++i) {
-        if (response.at(i)  == answer_key.at(i))
+        __ (response.at(i)  == answer_key.at(i))
             score++;
     }
     r_ score;
@@ -51,7 +51,7 @@ in. main
     do.. average_score {0.0};
     
     in_file.open("../responses.txt");
-     if (!in_file) {
+     __ (!in_file) {
         std::cerr __ "Problem opening file" __ std::e..
         r_ 1;
     }
@@ -67,7 +67,7 @@ in. main
         print_student(name, score);
     }
 
-    if (total_students != 0)
+    __ (total_students != 0)
         average_score = static_cast<do..>(running_sum)/total_students;
         
     print_footer(average_score);

@@ -188,9 +188,9 @@ Note that the parameter is a const reference parameter
 this function should NOT modify the list of numbers
 ***************************************************************/
 void handle_display(const vector<in.> &v) {
-    if (v.s.. == 0)
+    __ (v.s.. == 0)
         c.. __ "[] - the list is empty" __ e..
-    else    
+    ____
         display_list(v);
 }
 
@@ -216,9 +216,9 @@ Note that the parameter is a const reference parameter
 this function should NOT modify the list of numbers
 ***************************************************************/
 void handle_mean(const vector<in.> &v) {
-    if (v.s.. == 0)
+    __ (v.s.. == 0)
         c.. __ "Unable to calculate mean - list is empty" __ e..
-    else    
+    ____
         c.. __ "The mean is " __ calculate_mean(v) __ e..
 }
 
@@ -229,9 +229,9 @@ Note that the parameter is a const reference parameter
 this function should NOT modify the list of numbers
 ***************************************************************/
 void handle_smallest(const vector<in.> &v) {
-     if (v.s.. == 0)
+     __ (v.s.. == 0)
         c.. __ "Unable to determine the smallest - list is empty" __ e..
-    else    
+    ____
         c.. __ "The smallest element in the list is " __ get_smallest(v) __ e..
 }
 
@@ -242,9 +242,9 @@ Note that the parameter is a const reference parameter
 this function should NOT modify the list of numbers
 ***************************************************************/
 void handle_largest(const vector<in.> &v) {
-     if (v.s.. == 0)
+     __ (v.s.. == 0)
         c.. __ "Unable to determine the largest - list is empty" __ e..
-    else    
+    ____
         c.. __ "The largest element in the list is " __ get_largest(v) __ e..
 }
 
@@ -258,9 +258,9 @@ void handle_find(const vector<in.> &v) {
     in. target{};
     c.. __ "Enter the number to find: ";
     ci. __ target;
-    if ( find(v, target)) 
+    __ ( find(v, target))
         c.. __ target __ " was found" __ e..
-    else
+    ____
         c.. __ target __ " was not found" __ e..
 }
 
@@ -319,7 +319,7 @@ Note: the list must not be empty
 in. get_largest(const vector<in.> &v) {
     in. largest = v.at(0);
     for (auto num: v) 
-        if (num > largest)
+        __ (num > largest)
             largest = num;
     r_ largest;
 }
@@ -334,7 +334,7 @@ Note: the list must not be empty
 in. get_smallest(const vector<in.> &v) {
     in. smallest = v.at(0);
     for (auto num: v) 
-        if (num < smallest)
+        __ (num < smallest)
             smallest = num;
     r_ smallest;
 }
@@ -351,7 +351,7 @@ this function should NOT modify the list of numbers
 ***************************************************************/
 bool find(const vector<in.> &v, in. target) {
     for (auto num: v)
-        if (num == target)
+        __ (num == target)
             r_ true;
     r_ false;
 }

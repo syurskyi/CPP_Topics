@@ -90,29 +90,29 @@ in. main
         display_menu();
         std::ci. __ selection;
         selection = std::toupper(selection);
-        if (selection == 'F') {
+        __ (selection == 'F') {
             std::c.. __ "Playing first song" __ std::e..
             current_song = playlist.begin();
             play_current_song(*current_song);
         }
-        else if (selection == 'N') {
+        ____ __ (selection == 'N') {
             std::c.. __ "Playing next song" __ std::e..
             current_song++;
-            if (current_song == playlist.end()) {
+            __ (current_song == playlist.end()) {
                 std::c.. __ "Wrapping to start of playlist" __ std::e..
                 current_song = playlist.begin();
             }
             play_current_song(*current_song);
         }
-        else if (selection == 'P') {
+        ____ __ (selection == 'P') {
             std::c.. __ "Playing previous song" __ std::e..
-            if (current_song == playlist.begin()) {
+            __ (current_song == playlist.begin()) {
                 std::c.. __ "Wrapping to end of playlist" __ std::e..
                 current_song = playlist.end();
             }
             current_song--;
             play_current_song(*current_song);
-        } else if (selection == 'A') {
+        } ____ __ (selection == 'A') {
             std::string name, artist;
             in. rating;
             std::ci..clear();
@@ -127,12 +127,12 @@ in. main
             playlist.insert(current_song, Song{name, artist, rating});
             current_song--;
             play_current_song(*current_song);
-        } else if (selection == 'L') {
+        } ____ __ (selection == 'L') {
             std::c.. __ std::e..
             display_playlist(playlist, *current_song);            
-        } else if (selection == 'Q')
+        } ____ __ (selection == 'Q')
             std::c.. __ "Quitting" __ std::e..
-        else
+        ____
             std::c.. __ "Illegal choice, try again...";
     } while (selection != 'Q');
 

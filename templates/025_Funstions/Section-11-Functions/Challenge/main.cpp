@@ -113,53 +113,53 @@ in. main
         ci. __ selection;
 
         
-        if (selection == 'P' || selection == 'p') {
-            if (numbers.s.. == 0)
+        __ (selection == 'P' || selection == 'p') {
+            __ (numbers.s.. == 0)
                 c.. __ "[] - the list is empty" __ e..
-            else {
+            ____ {
                 c.. __ "[ ";
                 for (auto num: numbers)
                     c.. __ num __ " ";
                 c.. __ "]" __ e..
             }
-        } else if (selection == 'A' || selection == 'a') {
+        } ____ __ (selection == 'A' || selection == 'a') {
             in. num_to_add {};
             c.. __ "Enter an integer to add to the list: ";
             ci. __ num_to_add;
             numbers.push_back(num_to_add);
             c.. __ num_to_add __ " added" __ e..
-        } else if (selection == 'M' || selection == 'm') {
-            if (numbers.s.. == 0)
+        } ____ __ (selection == 'M' || selection == 'm') {
+            __ (numbers.s.. == 0)
                 c.. __ "Unable to calculate mean - no data" __ e..
-            else {
+            ____ {
                 in. total {};
                 for (auto num: numbers)
                     total += num;
                 c.. __ "The mean is : " __ static_cast<do..>(total)/numbers.s.. __ e..
             }
-        } else if (selection == 'S' || selection == 's') {
-            if (numbers.s.. == 0)
+        } ____ __ (selection == 'S' || selection == 's') {
+            __ (numbers.s.. == 0)
                 c.. __ "Unable to determine the smallest - list is empty" __ e..
-            else {
+            ____ {
                 in. smallest = numbers.at(0);
                 for (auto num: numbers)
-                    if (num < smallest)
+                    __ (num < smallest)
                         smallest = num;
                 c.. __ "The smallest number is: " __ smallest __ e..
             }
-        } else if (selection == 'L' || selection == 'l') {
-            if (numbers.s.. == 0)
+        } ____ __ (selection == 'L' || selection == 'l') {
+            __ (numbers.s.. == 0)
                 c.. __ "Unable to determine largest - list is empty"__ e..
-            else {
+            ____ {
                 in. largest = numbers.at(0);
                 for (auto num: numbers)
-                    if (num > largest)
+                    __ (num > largest)
                         largest = num;
                 c.. __ "The largest number is: " __ largest __ e..
             }
-        } else if (selection == 'Q' || selection == 'q') {
+        } ____ __ (selection == 'Q' || selection == 'q') {
             c.. __ "Goodbye" __ e..
-        } else {
+        } ____ {
             c.. __ "Unknown selection, please try again" __ e..
         }
     } while (selection != 'q' && selection != 'Q');

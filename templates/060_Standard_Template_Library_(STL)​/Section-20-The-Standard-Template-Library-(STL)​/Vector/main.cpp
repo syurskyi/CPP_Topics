@@ -148,9 +148,9 @@ void test6
     // erase all even numbers
     auto it = vec.begin();
     while (it != vec.end()) {
-        if (*it %2 == 0)
+        __ (*it %2 == 0)
             vec.erase(it);  
-        else
+        ____
             it++;   // only increment if not erased!
     }
     display(vec);
@@ -253,10 +253,10 @@ void test11
 
     
     auto it = std::find(vec1.begin(), vec1.end(), 5);
-    if (it != vec1.end()) {
+    __ (it != vec1.end()) {
         std::c.. __ "inserting..." __ std::e..
         vec1.insert(it, vec2.begin(), vec2.end());
-    } else {
+    } ____ {
         std::c.. __ "Sorry, 5 not found" __ std::e..
     }
     display(vec1);

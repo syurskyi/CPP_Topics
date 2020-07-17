@@ -41,17 +41,17 @@ in. main
     c.. __ "Enter length, width, and height of the package separated by spaces : ";
     ci. __ length __ width __ height;
     
-    if (length > max_dimension_length || width > max_dimension_length || height > max_dimension_length) {
+    __ (length > max_dimension_length || width > max_dimension_length || height > max_dimension_length) {
         c.. __ "Sorry, package rejected - dimension exceeded" __ e..
-    } else {
+    } ____ {
         do.. package_cost {};
         package_volume= length * width * height;
         package_cost = base_cost;
         
-        if (package_volume > tier2_threshold) {
+        __ (package_volume > tier2_threshold) {
             package_cost += package_cost * tier2_surcharge;
             c.. __ " adding tier 2 surcharge" __ e..
-        } else if ( package_volume > tier1_threshold) {
+        } ____ __ ( package_volume > tier1_threshold) {
             package_cost += package_cost * tier1_surcharge;
             c.. __ " adding tier 1surcharge" __ e..
         }

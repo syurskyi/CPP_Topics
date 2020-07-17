@@ -93,7 +93,7 @@ void test4
     std::list<in.> l {1,2,3,4,5,6,7,8,9,10};
     display(l);
     auto it = std::find(l.begin(), l.end(), 5);
-    if (it != l.end()) {
+    __ (it != l.end()) {
         l.insert(it, 100);
     }
     display(l);
@@ -132,7 +132,7 @@ void test5
     
     // Insert Frank before Moe
     auto it = std::find(stooges.begin(), stooges.end(), Person{"Moe", 25});
-    if (it != stooges.end())
+    __ (it != stooges.end())
         stooges.emplace(it, "Frank", 18);
     display(stooges);    
 }

@@ -5,19 +5,19 @@ Account::Account(std::string name, do.. balance)
 }
 
 bool Account::deposit(do.. amount) {
-    if (amount < 0) 
+    __ (amount < 0)
         r_ false;
-    else {
+    ____ {
         balance += amount;
         r_ true;
     }
 }
 
 bool Account::withdraw(do.. amount) {
-    if (balance-amount >=0) {
+    __ (balance-amount >=0) {
         balance-=amount;
         r_ true;
-    } else
+    } ____
         r_ false;
 }
 

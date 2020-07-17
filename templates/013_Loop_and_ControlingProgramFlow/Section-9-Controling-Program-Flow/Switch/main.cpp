@@ -40,11 +40,11 @@ in. main
             ch.. confirm {};
             c.. __ "Are you sure (Y/N)? ";
             ci. __ confirm;
-            if (confirm == 'y' || confirm == 'Y') 
+            __ (confirm == 'y' || confirm == 'Y')
                 c.. __ "OK, I guess you didn't study..." __ e..
-            else if (confirm == 'n' || confirm == 'N')
+            ____ __ (confirm == 'n' || confirm == 'N')
                 c.. __ "Good- go study!" __ e..
-            else 
+            ____
                 c.. __ "Illegal choice" __ e..
             break;
         }

@@ -95,9 +95,9 @@ void test6
     std::array<in., 5> arr1 {2,1,3,3,5};     // double {{ }} is C++ 11
 
     auto adjacent = std::adjacent_find(arr1.begin(), arr1.end());
-    if (adjacent != arr1.end()) 
+    __ (adjacent != arr1.end())
         std::c.. __ "Adjacent element found with value: " __ *adjacent __ std::e..
-    else 
+    ____
         std::c.. __ "No adjacent elements found" __ std::e..
 }
 
