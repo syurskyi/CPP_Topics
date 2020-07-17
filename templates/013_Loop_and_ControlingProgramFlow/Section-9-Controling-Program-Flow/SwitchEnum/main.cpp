@@ -13,14 +13,14 @@ in. main
     
     Direction heading {left};
     
-    switch (heading) {
-        case left:
+    sw.. (heading) {
+        ca.. left:
             c.. __ "Going left" __ e..
-            break;
-        case right:
+            b..
+        ca.. right:
             c.. __ "Going right" __ e.. // I used going left in the video by mistake
-            break;
-        default:
+            b..
+        def..
             c.. __ "OK" __ e..
     }
     

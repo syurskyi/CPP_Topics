@@ -36,7 +36,7 @@ main ()
         c.. 6:
             c__ __  "You have chosen a Bud Light" __  e..
             b..
-        default:
+        def..
             c__ __  "Error. Invalid choice" __  e..
             b..
     }

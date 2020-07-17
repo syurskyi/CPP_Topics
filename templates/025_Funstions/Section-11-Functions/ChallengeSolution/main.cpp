@@ -127,29 +127,29 @@ in. main
     do {
         display_menu();
         selection = get_selection();
-        switch (selection) {
-            case 'P': 
+        sw.. (selection) {
+            ca.. 'P':
                 handle_display(numbers); 
-                break;
-            case 'A': 
+                b..
+            ca.. 'A':
                 handle_add(numbers);
-                break;
-            case 'M':
+                b..
+            ca.. 'M':
                 handle_mean(numbers);
-                break;
-            case 'S':
+                b..
+            ca.. 'S':
                 handle_smallest(numbers);
-                break;
-            case 'L':
+                b..
+            ca.. 'L':
                 handle_largest(numbers);
-                break;
-            case 'F':
+                b..
+            ca.. 'F':
                 handle_find(numbers);
-                break;
-            case 'Q':
+                b..
+            ca.. 'Q':
                 handle_quit();
-                break;
-            default:
+                b..
+            def..
                 handle_unknown();
         }
     } w__ (selection != 'Q');

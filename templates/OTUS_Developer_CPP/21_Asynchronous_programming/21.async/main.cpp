@@ -15,7 +15,7 @@ c_ App : public Handler {
                 start()sy.. pause
                 b..
 
-            default:
+            def..
                 b..
         }
     }

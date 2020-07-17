@@ -273,7 +273,7 @@ v.. switch_example( in. error )
             c__ __  "Ok!" __  e..
             b..
         }
-        default:
+        def..
         {
             c__ __  "Error!" __  e..
             b..

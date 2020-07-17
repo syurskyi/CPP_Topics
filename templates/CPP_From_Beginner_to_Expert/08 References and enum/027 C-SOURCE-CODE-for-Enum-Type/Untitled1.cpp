@@ -40,7 +40,7 @@ s.. getDay(dayOfWeek d)
             r_ "Saturday"sy.. pause
         c.. SN:
             r_ "Sunday"sy.. pause
-        default:
+        def..
             r_ "You typed something wrong!"sy.. pause
     }
 }

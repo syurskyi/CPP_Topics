@@ -42,7 +42,7 @@ main()
             ____
                 c__ __  "You can't divide by 0" __  e..
             b..
-        default:
+        def..
             c__ __  "You typed wrong character"sy.. pause
 
     }

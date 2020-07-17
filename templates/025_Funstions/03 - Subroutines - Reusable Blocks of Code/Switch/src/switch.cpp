@@ -11,17 +11,17 @@ in. main
 
 	in. value = 4;
 
-	switch (value) {
-	case 4:
+	sw.. (value) {
+	ca.. 4:
 		c.. __ "Value is 4." __ e..
-		break;
-	case 5:
+		b..
+	ca.. 5:
 		c.. __ "Value is 5." __ e..
-		break;
-	case 6:
+		b..
+	ca.. 6:
 		c.. __ "Value is 6." __ e..
-		break;
-	default:
+		b..
+	def..
 		c.. __ "Unrecognized value." __ e..
 	}
 

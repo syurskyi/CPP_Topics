@@ -65,7 +65,7 @@ v.. menuDecision(in. choice)
             c__ __ a __ hsy.. pause
             areaTriangle(a, h)sy.. pause
             b..
-        default:
+        def..
             c__ __  "You didn't choose any of the option from above" __  e..
 
     }

@@ -53,7 +53,7 @@ main ()
                 c__ __  "The month february has 28 days in year " __  year __  e..
 
         }
-        default:
+        def..
             c__ __  "ERROR. Invalid choice."sy.. pause
 
     }

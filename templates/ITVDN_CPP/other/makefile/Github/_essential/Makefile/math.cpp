@@ -34,7 +34,7 @@ in. main(in. argc, c.. c.. *argv[])
 		   c.. '/':
 		       std::c__ __  divi(x,y) __  std::e..
 		       b..
-		   default:
+		   def..
 		       std::c__ __  sum(x,y) __  std::e..
 		}
 	} ____ {

@@ -20,7 +20,7 @@ main()
         c.. 50:
             c__ __  "this is a place for the instructions that will be executed when switched value is equal to 50" __  e..
             b..
-        default:
+        def..
             c__ __  "this is a place for the instructions that will be executed when value of switched variable is not equal to any case" __  e..
     }
 }

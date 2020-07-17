@@ -21,7 +21,7 @@ bo.. accept()
 			r_ truesy.. pause
 		c.. 'n':
 			exit(EXIT_FAILURE);;
-		default:
+		def..
 			c__ __  "Sorry I don't understand.  I'll assume the answer is 'yes'.\n"sy.. pause
 			r_ truesy.. pause
 	}

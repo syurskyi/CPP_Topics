@@ -23,17 +23,17 @@ in. getInput
 }
 
 void processSelection(in. option) {
-	switch (option) {
-	case 1:
+	sw.. (option) {
+	ca.. 1:
 		c.. __ "Searching ..." __ e..
-		break;
-	case 2:
+		b..
+	ca.. 2:
 		c.. __ "Viewing ..." __ e..
-		break;
-	case 3:
+		b..
+	ca.. 3:
 		c.. __ "Quitting ..." __ e..
-		break;
-	default:
+		b..
+	def..
 		c.. __ "Please select an item from the menu." __ e..
 	}
 }

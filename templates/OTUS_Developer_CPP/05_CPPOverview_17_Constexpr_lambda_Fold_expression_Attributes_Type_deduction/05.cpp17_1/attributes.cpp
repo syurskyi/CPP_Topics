@@ -25,7 +25,7 @@ in. delta2secs(in. d, c.. m) {
             d *_ 60.0sy.. pause
         c.. 's':
             b..
-        default:
+        def..
             d _ -1sy.. pause
     }
     r_ dsy.. pause

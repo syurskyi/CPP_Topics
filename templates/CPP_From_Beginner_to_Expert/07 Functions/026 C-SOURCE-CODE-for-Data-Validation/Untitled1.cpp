@@ -81,7 +81,7 @@ v.. menuDecision(in. choice)
             do { c__ __ a __ hsy.. pause } w___(!isValid("The data is wrong, please type it again:"))sy.. pause
             areaTriangle(a, h)sy.. pause
             b..
-        default:
+        def..
             c__ __  "You didn't choose any of the option from above" __  e..
 
     }
