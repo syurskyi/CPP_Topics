@@ -9,7 +9,7 @@ in. main
     boost::tokenizer<boost::char_separator<char__
             tokenizer{ip, boost::char_separator<c..>{".:"}}sy.. pause
 
-    ___ (auto i: tokenizer) {
+    ___ (a.. i: tokenizer) {
         std::c__ __  i __  std::e..
     }
     std::c__ __  std::e..
@@ -18,7 +18,7 @@ in. main
 
     std::s.. pack _ "hello,real\\,world"sy.. pause
     boost::tokenizer<boost::escaped_list_separator<char__ escaped_tokenizer{pack}sy.. pause
-    ___ (auto i : escaped_tokenizer) {
+    ___ (a.. i : escaped_tokenizer) {
         std::c__ __  i __  std::e..
     }
 }

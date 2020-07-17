@@ -39,11 +39,11 @@ pu..
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     }
 
-    auto get
+    a.. get
         r_ ptrsy.. pause
     }
 
-    auto use_count
+    a.. use_count
         r_ countersy.. pause
     }
 

@@ -17,8 +17,8 @@ v.. foo
 //        shared_ptr<Resource> a(new Resource);
 //        shared_ptr<Resource> b(new Resource);
 
-    auto a _ make_shared<Resource>()sy.. pause
-    auto b _ make_shared<Resource>()sy.. pause
+    a.. a _ make_shared<Resource>()sy.. pause
+    a.. b _ make_shared<Resource>()sy.. pause
     a__other _ bsy.. pause
 
 //    cout << "count a = " << a.use_count() << endl;

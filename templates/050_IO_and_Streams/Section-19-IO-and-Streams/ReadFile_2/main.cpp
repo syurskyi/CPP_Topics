@@ -2,7 +2,7 @@
 // Read File 2
 // Continuous read of 3 data items in a loop
 ? ios..
-? <iomanip>
+? iom..
 ? <fstream>
 
 in. main

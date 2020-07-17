@@ -30,7 +30,7 @@ std::ostream &operator__(std::ostream &os, co.. Person &p) {
 template <typename T>
 void display(co.. std::list<T> &l) {
     std::c.. __ "[ ";
-    ___ (co.. auto &elem: l) {
+    ___ (co.. a.. &elem: l) {
         std::c.. __ elem __ " ";
     }
     std::c.. __ "]" __ std::e..
@@ -92,7 +92,7 @@ void test4
 
     std::list<in.> l {1,2,3,4,5,6,7,8,9,10};
     display(l);
-    auto it = std::find(l.begin(), l.end(), 5);
+    a.. it = std::find(l.begin(), l.end(), 5);
     __ (it != l.end()) {
         l.insert(it, 100);
     }
@@ -131,7 +131,7 @@ void test5
     display(stooges);
     
     // Insert Frank before Moe
-    auto it = std::find(stooges.begin(), stooges.end(), Person{"Moe", 25});
+    a.. it = std::find(stooges.begin(), stooges.end(), Person{"Moe", 25});
     __ (it != stooges.end())
         stooges.emplace(it, "Frank", 18);
     display(stooges);    

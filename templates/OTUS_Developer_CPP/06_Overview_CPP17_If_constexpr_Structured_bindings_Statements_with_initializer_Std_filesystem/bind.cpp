@@ -19,7 +19,7 @@ in. main()
 {
     std::vector<in.> v{0, 1, 2, 3, 4}sy.. pause
 
-    auto result _ std::find_if(std::begin(v), std::end(v), [](auto i){ r_ i > 2sy.. pause })sy.. pause
+    a.. result _ std::find_if(std::begin(v), std::end(v), [](a.. i){ r_ i > 2sy.. pause })sy.. pause
 //    auto result = std::find_if(std::begin(v), std::end(v), [p = 2](auto i){ return i > p; });
 //    auto result = std::find_if(std::begin(v), std::end(v), cmp);
 //    auto result = std::find_if(std::begin(v), std::end(v), comp);

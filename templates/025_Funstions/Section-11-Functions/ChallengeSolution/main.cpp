@@ -290,7 +290,7 @@ this function should NOT modify the list of numbers
 ***************************************************************/
 void display_list(co.. vector<in.> &v) {
     c.. __ "[ ";
-    ___ (auto num: v)
+    ___ (a.. num: v)
         c.. __ num __ " ";
     c.. __ "]" __ e..
 }
@@ -304,7 +304,7 @@ Note: the list must not be empty
 ***************************************************************/
 do.. calculate_mean(co.. vector<in.> &v) {
     in. total {};
-    ___ (auto num: v)
+    ___ (a.. num: v)
         total += num;
     r_ static_cast<do..>(total)/v.s..;
 }
@@ -318,7 +318,7 @@ Note: the list must not be empty
 ***************************************************************/
 in. get_largest(co.. vector<in.> &v) {
     in. largest = v.at(0);
-    ___ (auto num: v)
+    ___ (a.. num: v)
         __ (num > largest)
             largest = num;
     r_ largest;
@@ -333,7 +333,7 @@ Note: the list must not be empty
 ***************************************************************/
 in. get_smallest(co.. vector<in.> &v) {
     in. smallest = v.at(0);
-    ___ (auto num: v)
+    ___ (a.. num: v)
         __ (num < smallest)
             smallest = num;
     r_ smallest;
@@ -350,7 +350,7 @@ Note that the parameter is a const reference parameter
 this function should NOT modify the list of numbers
 ***************************************************************/
 bool find(co.. vector<in.> &v, in. target) {
-    ___ (auto num: v)
+    ___ (a.. num: v)
         __ (num __ target)
             r_ true;
     r_ false;

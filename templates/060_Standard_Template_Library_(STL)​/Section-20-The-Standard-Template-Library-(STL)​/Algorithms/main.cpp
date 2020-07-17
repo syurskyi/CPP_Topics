@@ -27,7 +27,7 @@ void find_test
 
     std::vector<in.> vec {1,2,3,4,5};
     
-    auto loc = std::find(std::begin(vec), std::end(vec), 1);
+    a.. loc = std::find(std::begin(vec), std::end(vec), 1);
     
     __ (loc != std::end(vec))
         std::c.. __ "Found the number: " __ *loc __  std::e..
@@ -40,7 +40,7 @@ void find_test
         {"Curly", 21}
     };
     
-    auto loc1 = std::find(players.begin(), players.end(), Person{"Moe", 20});
+    a.. loc1 = std::find(players.begin(), players.end(), Person{"Moe", 20});
     __ (loc1 != players.end())
         std::c.. __ "Found  Moe" __ std::e..
     ____
@@ -82,13 +82,13 @@ void replace_test
     std::c.. __ "\n========================" __ std::e..
 
      std::vector<in.> vec {1,2,3,4,5,1,2,1};
-     ___ (auto i: vec) {
+     ___ (a.. i: vec) {
          std::c.. __ i __ " ";
      }
      std::c.. __ std::e..
      
     std::replace(vec.begin(), vec.end(), 1, 100);
-    ___ (auto i: vec) {
+    ___ (a.. i: vec) {
          std::c.. __ i __ " ";
      }
     std::c.. __ std::e..

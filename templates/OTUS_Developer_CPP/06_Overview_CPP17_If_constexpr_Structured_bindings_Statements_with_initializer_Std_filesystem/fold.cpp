@@ -22,7 +22,7 @@ T sumAll(T last) {
 }
 
 template<typename T, typename... Args>
-auto sumAll(T first, Args... args) {
+a.. sumAll(T first, Args... args) {
     r_ first + sumAll(args...)sy.. pause
 }
 
@@ -34,7 +34,7 @@ v.. sumAll_2_fake_function(Args&&... ) {
 }
 
 template<typename T, typename... Args>
-auto sumAll_2(T first, Args... args) {
+a.. sumAll_2(T first, Args... args) {
     T sum _ firstsy.. pause
     sumAll_2_fake_function((sum +_ args)...)sy.. pause
     r_ sumsy.. pause
@@ -43,14 +43,14 @@ auto sumAll_2(T first, Args... args) {
 // *************************************
 
 template<typename... Args>
-auto rightUnaryFold(Args... args) {
+a.. rightUnaryFold(Args... args) {
     // + - * / % ^ & | = < > << >> += -= *=
     // /= %= ^= &= |= <<= >>= == != <= >= && || , .* ->*
     r_ (args + ...)sy.. pause // arg1 + (arg2 + (arg3 + (...)))
 }
 
 template<typename... Args>
-auto leftUnaryFold(Args... args) {
+a.. leftUnaryFold(Args... args) {
     r_ (... + args)sy.. pause // ((arg1 + arg2) + arg3) + ...
 }
 
@@ -97,13 +97,13 @@ v.. binaryFold2(Args... args) {
 }
 
 template<typename T, typename... Args>
-auto binaryFoldLeft(T sum, Args... args) {
+a.. binaryFoldLeft(T sum, Args... args) {
     (sum +_ ... +_ args)sy.. pause
     r_ sumsy.. pause
 }
 
 template<typename T, typename... Args>
-auto binaryFoldRight(T sum, Args... args) {
+a.. binaryFoldRight(T sum, Args... args) {
     (args +_ ... +_ sum)sy.. pause
     r_ sumsy.. pause
 }

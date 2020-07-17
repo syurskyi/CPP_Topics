@@ -6,7 +6,7 @@ in. main()
 {
     std::forward_list<in.> x{2, 1, 4, 3, 5}sy.. pause
     x.sort()sy.. pause
-    ___(auto i: x)
+    ___(a.. i: x)
     {
         std::c__ __  i __  " "sy.. pause
     }
@@ -16,13 +16,13 @@ in. main()
 //    y.sort();
 
     x.merge(y)sy.. pause
-    ___(auto i: x)
+    ___(a.. i: x)
     {
         std::c__ __  i __  " "sy.. pause
     }
     std::c__ __  std::e..
     x.unique()sy.. pause
-    ___(auto i: x)
+    ___(a.. i: x)
     {
         std::c__ __  i __  " "sy.. pause
     }
@@ -30,7 +30,7 @@ in. main()
 
     x.remove(5)sy.. pause
     x.reverse()sy.. pause
-    ___(auto i: x)
+    ___(a.. i: x)
     {
         std::c__ __  i __  " "sy.. pause
     }
@@ -43,7 +43,7 @@ in. main()
     // 2 -> 4
 
     x.splice_after(x.before_begin(), y)sy.. pause
-    ___(auto i: y)
+    ___(a.. i: y)
     {
         std::c__ __  i __  " "sy.. pause
     }

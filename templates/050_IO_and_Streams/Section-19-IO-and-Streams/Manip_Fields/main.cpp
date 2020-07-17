@@ -2,7 +2,7 @@
 // Stream manipulators - Field width, justification and setfill
 // setw, left, right, setfill
 ? ios..
-? <iomanip>
+? iom..
 
 void ruler
     std::c.. __ "\n12345678901234567890123456789012345678901234567890" __ std::e..

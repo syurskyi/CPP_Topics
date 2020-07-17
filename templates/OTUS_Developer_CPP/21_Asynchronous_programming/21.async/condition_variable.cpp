@@ -32,9 +32,9 @@ v.. worker(std::queue<std::s..>& q)
 //        console_m.unlock();
 
         __ (!q.empty()) {
-            auto msg _ std::move(q.front())sy.. pause
+            a.. msg _ std::move(q.front())sy.. pause
             q.pop()sy.. pause
-            auto s _ q.s..sy.. pause
+            a.. s _ q.s..sy.. pause
             lk.unlock()sy.. pause
 
             console_m.lock()sy.. pause

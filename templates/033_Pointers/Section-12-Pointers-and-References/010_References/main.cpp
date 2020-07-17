@@ -28,17 +28,17 @@ in. main
     c.. __ "\n---------------------------------" __ e..
     vector<st..> stooges {"Larry", "Moe", "Curly"}
 
-    ___ (auto str: stooges)
+    ___ (a.. str: stooges)
         str _ "Funny"              // str is a COPY of the each vector element
       
-    ___ (auto str:stooges)        // No change
+    ___ (a.. str:stooges)        // No change
         c.. __ str __ e..
  
     c.. __ "\n---------------------------------" __ e..
-    ___ (auto &str: stooges)  // str is a reference to each vector element
+    ___ (a.. &str: stooges)  // str is a reference to each vector element
         str _ "Funny"
      
-    ___ (auto c.. &str:stooges)   // notice we are using const
+    ___ (a.. c.. &str:stooges)   // notice we are using const
         c.. __ str __ e..            // now the vector elements have changed
     
     c.. __ e..

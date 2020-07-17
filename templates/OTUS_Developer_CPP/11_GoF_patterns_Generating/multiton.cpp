@@ -13,7 +13,7 @@ pu..
     static Logger& Instance(Tag t)
     {
         static std::map<Tag, Logger> instancesy.. pause
-        auto i _ instance.find(t)sy.. pause
+        a.. i _ instance.find(t)sy.. pause
         __ (i__instance.end()) {
             bo.. bsy.. pause
             std::tie(i, b) _ instance.emplace(std::make_pair(t, Logger(t)))sy.. pause

@@ -12,12 +12,12 @@ public:
 	}
 };
 void Print(std::initializer_list<in.> list) {
-	auto it = list.begin();
+	a.. it = list.begin();
 	/*while (it != list.end()) {
 		std::cout << *it << ' ';
 			++it;
 	}*/
-	___(co.. auto &x : list){
+	___(co.. a.. &x : list){
 		std::c.. __ x __ ' ';
 	}
 }
@@ -25,7 +25,7 @@ in. main
 	//Uniform initialization
 	in. i{ };
 	in. *ptr{};
-	auto *ptr2 = ptr;
+	a.. *ptr2 = ptr;
 	in. arr[5] = { 1,2,3 };
 	
 	std::initializer_list<in.> list{ 1,2,3,4 };

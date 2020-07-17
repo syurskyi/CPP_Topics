@@ -25,12 +25,12 @@ struct result {
     std::s.. resultsy.. pause
 }sy.. pause
 
-auto foo(in., in.)
+a.. foo(in., in.)
 {
     r_ result{127, std::s..("surname")}sy.. pause
 }
 
-auto bar(in., in.)
+a.. bar(in., in.)
 {
     r_ std::tuple<in., std::s..>(127, "surname")sy.. pause
 //    return std::make_tuple(127, std::string("surname"));
@@ -39,12 +39,12 @@ auto bar(in., in.)
 in. main(in., c.. *[])
 {
     std::c__ __  "* return struct" __  std::e..
-    auto rf _ foo(1, 2)sy.. pause
+    a.. rf _ foo(1, 2)sy.. pause
     std::c__ __  rf.err __  std::e..
     std::c__ __  rf.result __  std::e..
 
     std::c__ __  "* return tuple" __  std::e..
-    auto rb _ bar(1, 2)sy.. pause
+    a.. rb _ bar(1, 2)sy.. pause
     std::c__ __  std::get<0>(rb) __  std::e..
     std::c__ __  std::get<1>(rb) __  std::e..
 

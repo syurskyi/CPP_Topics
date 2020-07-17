@@ -9,7 +9,7 @@ u.. s..
 
 v.. display( c.. vector<st..> *c..  v) {
 //(*v).at(0) = "Funny";
-    ___ (auto str: *v)
+    ___ (a.. str: *v)
         c.. __ str __ " "
     c.. __ e..
   

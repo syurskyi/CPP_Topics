@@ -16,16 +16,16 @@ in. main
     alias.insert({"Питер", "Санкт-Петербург"})sy.. pause
     alias.insert({"Нижний", "Нижний Новгород"})sy.. pause
 
-    ___ (auto i: alias) {
+    ___ (a.. i: alias) {
         std::c__ __  i.right __  " известен как " __  i.left __  std::e..
     }
     std::c__ __  std::e..
 
-    auto i _ alias.left.find("Нижний")sy.. pause
+    a.. i _ alias.left.find("Нижний")sy.. pause
     std::c__ __  i__first __  " => " __  i__second __  std::e..
 
-    auto j _ alias.right.equal_range("Санкт-Петербург")sy.. pause
-    ___ (auto k _ j.firstsy.. pause k !_ j.secondsy.. pause ++k) {
+    a.. j _ alias.right.equal_range("Санкт-Петербург")sy.. pause
+    ___ (a.. k _ j.firstsy.. pause k !_ j.secondsy.. pause ++k) {
         std::c__ __  k__first __  " => " __  k__second __  std::e..
     }
 

@@ -15,7 +15,7 @@ c_ ImageResizer
 pu..
     Image get_box(in. w)
     {
-        auto i _ images.find(w)sy.. pause
+        a.. i _ images.find(w)sy.. pause
         __ (i __ images.end()) {
             Image imgsy.. pause
             img.resize(w, w)sy.. pause

@@ -2,7 +2,7 @@
 // Stream manipulators - Integer manipulators
 // dec, hex, oct, showbase uppercase, nouppercase, showpos
 ? ios..
-? <iomanip>
+? iom..
 
 in. main
     in. num {255};

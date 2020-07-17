@@ -109,11 +109,11 @@ in. main(in., c..* [])
     history.push_back(n.. ParaCommand(&doc, "Hello, World!"))sy.. pause
     history.push_back(n.. SaveAsCommand(&doc, "hello.doc"))sy.. pause
 
-    ___ (auto i: history) {
+    ___ (a.. i: history) {
         i__execute()sy.. pause
     }
 
-    ___ (auto i: history) {
+    ___ (a.. i: history) {
         i__py()sy.. pause
     }
 

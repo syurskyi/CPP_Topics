@@ -8,7 +8,7 @@
 ? <map>
 ? <set>
 ? <string>
-? <iomanip>
+? iom..
 
 // Used for Part1
 // Display the word and count from the 
@@ -18,7 +18,7 @@ void display_words(co.. std::map<std::string, in.> &words) {
     std::c.. __ std::setw(12) __ std::left __ "\nWord"
                 __ std::setw(7) __ std::right __ "Count"__ std::e..
     std::c.. __ "===================" __ std::e..
-    ___ (auto pair: words)
+    ___ (a.. pair: words)
         std::c.. __ std::setw(12) __ std::left __ pair.first
                        __ std::setw(7) __ std::right __ pair.second __ std::e..
 }
@@ -32,10 +32,10 @@ void display_words(co.. std::map<std::string, std::set<in.__ &words)
      std::c.. __ std::setw(12) __ std::left __ "\nWord"
                 __ "Occurrences"__ std::e..
     std::c.. __ "=====================================================================" __ std::e..
-    ___ (auto pair: words) {
+    ___ (a.. pair: words) {
         std::c.. __ std::setw(12) __ std::left __ pair.first
                        __ std::left __ "[ ";
-        ___ (auto i: pair.second)
+        ___ (a.. i: pair.second)
             std::c.. __ i __ " ";
         std::c.. __ "]" __ std::e..
     }

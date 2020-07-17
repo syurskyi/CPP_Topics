@@ -3,7 +3,7 @@
 // Automated Grader 
 ? ios..
 ? <fstream>
-? <iomanip>
+? iom..
 
 //function prototypes
 void print_header();

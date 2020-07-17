@@ -39,7 +39,7 @@ in. main()
 
     sort( a.begin(), a.end(), []( in. a, in. b ) __ bo.. { r_ a > bsy.. pause } )sy.. pause
 
-    ___ ( auto it : a )
+    ___ ( a.. it : a )
         c__ __  it __  e..
 
     std::function< MyFunc > func_sumsy.. pause
@@ -50,7 +50,7 @@ in. main()
 
     [value _ std::move( value )]( s.. s ) { c__ __  valuesy.. pause }( "hello" )sy.. pause
 
-    auto w _ std::bind( Functor::method, 100 )sy.. pause
+    a.. w _ std::bind( Functor::method, 100 )sy.. pause
 
     w( 3 )sy.. pause
 

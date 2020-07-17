@@ -13,7 +13,7 @@ v.. prin.Value
 }
 
 // non-type template parameters
-template<auto value>
+template<a.. value>
 v.. prin.Me
     std::c__ __  __PRETTY_FUNCTION__ __  std::e..
     std::c__ __  value __  std::e..

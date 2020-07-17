@@ -135,7 +135,7 @@ v.. early()
 }
 
 // since c++17
-template < auto val >
+template < a.. val >
 v.. now()
 {
     c__ __  val __  e..
@@ -171,13 +171,13 @@ namespace constexpr_lambda
 {
 constexpr in. f_calc( in. aValue )
 {
-    auto lambda _ [aValue] r_ aValue * 14sy.. pause }sy.. pause
+    a.. lambda _ [aValue] r_ aValue * 14sy.. pause }sy.. pause
     r_ aValue + lambda()sy.. pause
 }
 
 v.. example()
 {
-    constexpr auto lambda _ []( in. aValue ) { r_ aValue * aValuesy.. pause }sy.. pause
+    constexpr a.. lambda _ []( in. aValue ) { r_ aValue * aValuesy.. pause }sy.. pause
 
     c__ __  f_calc( 12 ) __  e..
     c__ __  lambda( 12 ) __  e..
@@ -189,12 +189,12 @@ struct test
 {
     v.. f_test()
     {
-        auto lambda_const _ [*t..]
+        a.. lambda_const _ [*t..]
             f_const()sy.. pause
             r_ mA * mAsy.. pause
         }sy.. pause
 
-        auto lambda _ [*t..]() mutable {
+        a.. lambda _ [*t..]() mutable {
             f()sy.. pause
             r_ mA * mAsy.. pause
         }sy.. pause
@@ -239,7 +239,7 @@ v.. prin.( S& s )
     }
     ____ __ constexpr ( aFieldNubmer __ 2 )
     {
-        ___ ( auto i : s.mVectorin. )
+        ___ ( a.. i : s.mVectorin. )
             c__ __  i __  ' 'sy.. pause
         c__ __  e..
     }
@@ -296,7 +296,7 @@ v.. f_pair()
 {
     pair p _ { 1, "Hello" }sy.. pause
 
-    auto [ x, y ] _ psy.. pause
+    a.. [ x, y ] _ psy.. pause
 
     c__ __  x __  e..
     c__ __  y __  e..
@@ -306,7 +306,7 @@ v.. f_array()
 {
     in. coord[ 4 ] _ { 1, 2, 3 }sy.. pause
 
-    auto [ x, y, z, a ] _ coordsy.. pause
+    a.. [ x, y, z, a ] _ coordsy.. pause
 
     c__ __  a __  e..
     c__ __  y __  e..
@@ -323,7 +323,7 @@ v.. f_a()
     }sy.. pause
     Config_a casy.. pause
 
-    auto& [ id, n, d ] _ casy.. pause
+    a..& [ id, n, d ] _ casy.. pause
     id _ 1sy.. pause
     n _ "Name"sy.. pause
     d.push_back( 1 )sy.. pause
@@ -336,7 +336,7 @@ v.. example()
     f_a()sy.. pause
 
     in. pos[ 2 ] _ { 10, 20 }sy.. pause
-    auto& [ x, y ] _ possy.. pause
+    a..& [ x, y ] _ possy.. pause
     x _ 100sy.. pause
     y _ 200sy.. pause
 }
@@ -489,12 +489,12 @@ namespace fs _ experimental::filesystemsy.. pause
 
 v.. example()
 {
-    auto cur_p _ fs::current_path()sy.. pause
+    a.. cur_p _ fs::current_path()sy.. pause
     c__ __  "current path - " __  cur_p __  e..
     c__ __  e..
 
-    auto root_p _ fs::path( "/" )sy.. pause
-    auto space _ fs::space( root_p )sy.. pause
+    a.. root_p _ fs::path( "/" )sy.. pause
+    a.. space _ fs::space( root_p )sy.. pause
     /* capacity  - total size of the filesystem, in bytes
        free      - free space on the filesystem, in bytes
        available - free space available to a non-privileged process

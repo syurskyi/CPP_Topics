@@ -24,7 +24,7 @@ void pass_by_value3(vector<string> v) {
 }
 
 void print_vector(vector<string> v) {
-    ___ (auto s: v)
+    ___ (a.. s: v)
         c.. __ s __ " ";
     c.. __ e..
 }

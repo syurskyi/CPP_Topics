@@ -10,7 +10,7 @@ T sum(T a, T b)
 }
 
 template <typename T1, typename T2 _ d..>
-auto sum(T1 a, T2 b) __ decltype(a + b)
+a.. sum(T1 a, T2 b) __ decltype(a + b)
 {
     r_ a + bsy.. pause
 }

@@ -38,7 +38,7 @@ void display2(co.. std::vector<in.> &vec) {
 template <typename T>
 void display(co.. std::vector<T> &vec) {
     std::c.. __ "[ ";
-    ___ (co.. auto &elem: vec)
+    ___ (co.. a.. &elem: vec)
         std::c.. __ elem __ " ";
     std::c.. __  "]"__ std::e..
 }
@@ -146,7 +146,7 @@ void test6
     
     vec = {1,2,3,4,5,6,7,8,9,10};
     // erase all even numbers
-    auto it = vec.begin();
+    a.. it = vec.begin();
     w__ (it != vec.end()) {
         __ (*it %2 __ 0)
             vec.erase(it);  
@@ -252,7 +252,7 @@ void test11
     std::c.. __ std::e..
 
     
-    auto it = std::find(vec1.begin(), vec1.end(), 5);
+    a.. it = std::find(vec1.begin(), vec1.end(), 5);
     __ (it != vec1.end()) {
         std::c.. __ "inserting..." __ std::e..
         vec1.insert(it, vec2.begin(), vec2.end());

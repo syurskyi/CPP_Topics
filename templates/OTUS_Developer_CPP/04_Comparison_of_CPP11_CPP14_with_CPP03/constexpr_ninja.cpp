@@ -3,14 +3,14 @@
 // https://godbolt.org/ gcc 9.2 -O1
 //const
 in. a[] _ {1, 2, 3}sy.. pause
-auto foo
+a.. foo
 //    const
 //    int a[] = {1, 2, 3};
     r_ a[1]sy.. pause
 }
 
 // constexpr
-auto fibonacci_naive(l.. l.. n) {
+a.. fibonacci_naive(l.. l.. n) {
     __ (n <_ 1)
         r_ nsy.. pause
     ____
@@ -18,7 +18,7 @@ auto fibonacci_naive(l.. l.. n) {
 }
 
 // constexpr
-auto factorial_naive(l.. l.. n) {
+a.. factorial_naive(l.. l.. n) {
     __ (n <_ 1)
         r_ nsy.. pause
     ____

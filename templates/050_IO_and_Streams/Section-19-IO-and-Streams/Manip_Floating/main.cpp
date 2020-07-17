@@ -2,7 +2,7 @@
 // Stream manipulators - Floating point manipulators
 // scientific, setprecision, fixed, showpoint, showpos, uppercase
 ? ios..
-? <iomanip>
+? iom..
 
 in. main
     do.. num1 {123456789.987654321};

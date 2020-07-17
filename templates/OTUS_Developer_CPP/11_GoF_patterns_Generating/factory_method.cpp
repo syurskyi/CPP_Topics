@@ -48,7 +48,7 @@ c_ PostgresStorage : public IStorage {
 
 in. main(in. argc, c..* [])
 {
-    auto environment _ argc ? Storage::postgres : Storage::mysqlsy.. pause
+    a.. environment _ argc ? Storage::postgres : Storage::mysqlsy.. pause
 
     IStorage* storagesy.. pause
     s.. (environment) {

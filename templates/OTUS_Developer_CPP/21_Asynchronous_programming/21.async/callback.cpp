@@ -14,7 +14,7 @@ v.. aread(in. fd, v..(cb)(c.. c.. *))
 
 v.. callback(c.. c.. *b)
 {
-    auto z _ bsy.. pause
+    a.. z _ bsy.. pause
     std::c__ __  __PRETTY_FUNCTION__ __  " data=" __  z __  std::e..
 }
 

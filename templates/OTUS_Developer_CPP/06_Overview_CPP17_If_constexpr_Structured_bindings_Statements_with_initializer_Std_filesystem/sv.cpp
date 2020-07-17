@@ -8,7 +8,7 @@ in. main
     std::c__ __  "Hello, World!"s __  std::e..
     std::c__ __  "Hello, World!"sv __  std::e..
 
-    auto hw _ "Hello, World!"ssy.. pause
+    a.. hw _ "Hello, World!"ssy.. pause
     std::string_view w _ hwsy.. pause
     w _ w.substr(7, 5)sy.. pause
 

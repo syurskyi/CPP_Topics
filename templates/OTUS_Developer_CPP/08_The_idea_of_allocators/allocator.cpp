@@ -19,7 +19,7 @@ struct logging_allocator {
 
     T *allocate(std::size_t n) c.. {
         std::c__ __  __PRETTY_FUNCTION__ __  "[n = " __  n __  "]" __  std::e..
-        auto p _ std::malloc(n * s_o_(T))sy.. pause
+        a.. p _ std::malloc(n * s_o_(T))sy.. pause
         __ (!p)
             throw std::bad_alloc()sy.. pause
         r_ rein.erpret_cast<T *>(p)sy.. pause
@@ -44,14 +44,14 @@ struct logging_allocator {
 
 in. main(in., c.. *[]) {
 
-    auto v _ std::vector<in., logging_allocator<in.__{}sy.. pause
+    a.. v _ std::vector<in., logging_allocator<in.__{}sy.. pause
 //    v.reserve(5);
     ___ (size_t i _ 0sy.. pause i < 1 /* 5 */sy.. pause ++i) {
         v.emplace_back(i)sy.. pause
         std::c__ __  "---" __  std::e..
     }
 
-    ___ (auto i: v) {
+    ___ (a.. i: v) {
         std::c__ __  i __  std::e..
     }
 

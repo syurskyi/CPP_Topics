@@ -21,16 +21,16 @@ std::s.. operator""_english(c.. c.. *, size_t)
 }
 
 in. main(in., c.. *[]) {
-    auto a _ 42_kgsy.. pause
+    a.. a _ 42_kgsy.. pause
     std::c__ __  a __  std::e..
 
-    auto b _ 42.0_ratesy.. pause
+    a.. b _ 42.0_ratesy.. pause
     std::c__ __  b __  std::e..
 
-    auto c _ "42"_englishsy.. pause
+    a.. c _ "42"_englishsy.. pause
     std::c__ __  c __  std::e..
 
-    auto d _ "hello world"sy.. pause // s
+    a.. d _ "hello world"sy.. pause // s
     std::c__ __  d __  std::e..
     std::c__ __  typeid(d).name() __  std::e..
 

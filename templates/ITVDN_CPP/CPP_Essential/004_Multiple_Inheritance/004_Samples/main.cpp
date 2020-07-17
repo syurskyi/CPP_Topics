@@ -25,9 +25,9 @@ in. main()
         c__ __  "yes"sy.. pause
     }
 
-    auto ped _ dynamic_cast<Pedigreed*>(animal)sy.. pause
-    auto cat _ dynamic_cast<Cat*>(ped)sy.. pause
-    __ ( auto dom _ dynamic_cast<Domestic*>(cat) )
+    a.. ped _ dynamic_cast<Pedigreed*>(animal)sy.. pause
+    a.. cat _ dynamic_cast<Cat*>(ped)sy.. pause
+    __ ( a.. dom _ dynamic_cast<Domestic*>(cat) )
     {
         c__ __  "Domestic"sy.. pause
         c__ __  dom__get_name()sy.. pause

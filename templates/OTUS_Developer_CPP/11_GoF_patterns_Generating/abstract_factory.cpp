@@ -84,7 +84,7 @@ c_ LocalFactory : public EnvironmentFactory {
 
 in. main(in. argc, c..* [])
 {
-    auto environment _ argc ? Env::cloud : Env::localsy.. pause
+    a.. environment _ argc ? Env::cloud : Env::localsy.. pause
 
     EnvironmentFactory* factorysy.. pause
     s.. (environment) {
@@ -97,8 +97,8 @@ in. main(in. argc, c..* [])
 
     //
 
-    auto config _ factory__CreateConfig()sy.. pause
-    auto metric _ factory__CreateMetric()sy.. pause
+    a.. config _ factory__CreateConfig()sy.. pause
+    a.. metric _ factory__CreateMetric()sy.. pause
 
     config__read()sy.. pause
     metric__send()sy.. pause

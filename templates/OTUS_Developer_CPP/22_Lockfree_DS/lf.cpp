@@ -57,7 +57,7 @@ struct ListLF {
 
 in. main(in., c..* [])
 {
-    auto m _ std::map<in., in.>()sy.. pause
+    a.. m _ std::map<in., in.>()sy.. pause
 
     m[1] _ 2sy.. pause
 

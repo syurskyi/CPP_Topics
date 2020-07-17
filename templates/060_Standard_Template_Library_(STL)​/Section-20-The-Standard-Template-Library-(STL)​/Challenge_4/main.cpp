@@ -6,7 +6,7 @@
 ? <queue>
 ? ios..
 ? <string>
-? <iomanip>
+? iom..
 
 bool is_palindrome(co.. std::string& s)
 {
@@ -23,7 +23,7 @@ in. main()
    
     std::c.. __ std::boolalpha;
     std::c.. __ std::setw(8) __ std::left __ "Result" __ "String" __ std::e..
-    ___(co.. auto& s : test_strings) {
+    ___(co.. a..& s : test_strings) {
         std::c.. __ std::setw(8) __ std::left __ is_palindrome(s)  __ s __ std::e..
     }
     std::c.. __ std::e..

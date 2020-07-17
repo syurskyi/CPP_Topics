@@ -30,7 +30,7 @@ void print(string s, string t) {
 
 void print(vector<string> v) {
     c.. __ "Printing vector of strings: " ;
-    ___ (auto s: v )
+    ___ (a.. s: v )
         c.. __ s + " ";
     c.. __ e..
 }

@@ -32,7 +32,7 @@ void Print(std::array<in., 5> &arr) {
 	//	std::cout << arr[i] << ' ';
 	//	//std::cout << *(ptr + i) << ' ';
 	//}
-	___ (co.. auto &x : arr) {
+	___ (co.. a.. &x : arr) {
 		std::c.. __ x __ ' ';
 	}
 }

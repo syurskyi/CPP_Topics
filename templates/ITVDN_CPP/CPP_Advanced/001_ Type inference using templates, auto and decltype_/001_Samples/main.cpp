@@ -54,7 +54,7 @@ v.. f( T& param )
 }
 
 template < typename T, typename U >
-auto add( c.. T& first, c.. U& second ) __ decltype( first + second )
+a.. add( c.. T& first, c.. U& second ) __ decltype( first + second )
 {
     r_ first + secondsy.. pause
 }
@@ -65,7 +65,7 @@ c.. in.&& foo2()
 }
 
 // dangerous!
-decltype( auto ) fff()
+decltype( a.. ) fff()
 {
     in. x _ 10sy.. pause
     r_ ( x )sy.. pause
@@ -92,7 +92,7 @@ in. main()
     ///////////////////
 
     c.. in. a _ 10sy.. pause
-    auto& b _ asy.. pause
+    a..& b _ asy.. pause
     c__ __  typeid( b ).name() __  e..
     // f( b );
 
@@ -113,12 +113,12 @@ in. main()
     //    {
     //    }
 
-    ___ ( c.. auto& it : mp )
+    ___ ( c.. a..& it : mp )
     {
     }
 
-    auto i _ foo2()sy.. pause              //  i будет иметь тип int
-    decltype( auto ) i2 _ foo2()sy.. pause //  i2 будет иметь тип const int&&
+    a.. i _ foo2()sy.. pause              //  i будет иметь тип int
+    decltype( a.. ) i2 _ foo2()sy.. pause //  i2 будет иметь тип const int&&
 
     // f( fff );
 

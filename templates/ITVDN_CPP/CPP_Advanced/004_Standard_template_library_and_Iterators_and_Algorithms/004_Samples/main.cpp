@@ -123,7 +123,7 @@ in. main()
 
     std::c__ __  str __  std::e..
 
-    auto splitted _
+    a.. splitted _
         std::partition( str.begin(), str.end(), []( c.. c.. elem ) { r_ elem > 'L'sy.. pause } )sy.. pause
 
     std::c__ __  "\nPartitioned string:\n    "sy.. pause

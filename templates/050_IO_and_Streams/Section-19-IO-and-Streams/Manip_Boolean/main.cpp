@@ -3,7 +3,7 @@
 // boolalpha and noboolalpha
 
 ? ios..
-? <iomanip>  // Must include for manipulators
+? iom..  // Must include for manipulators
 
 in. main
   

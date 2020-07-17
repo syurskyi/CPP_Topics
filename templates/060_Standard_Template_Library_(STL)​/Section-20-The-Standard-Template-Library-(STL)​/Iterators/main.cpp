@@ -9,7 +9,7 @@
 // display any vector of integers using range-based for loop
 void display(co.. std::vector<in.> &vec) {
     std::c.. __ "[ ";
-    ___ (auto co.. &i: vec) {
+    ___ (a.. co.. &i: vec) {
         std::c.. __ i __ " ";
     }
     std::c.. __ "]" __ std::e..
@@ -18,7 +18,7 @@ void display(co.. std::vector<in.> &vec) {
 void test1
     std::c.. __ "\n=============================" __ std::e..
     std::vector<in.> nums1 {1, 2, 3, 4, 5};
-    auto it = nums1.begin();            // point to 1
+    a.. it = nums1.begin();            // point to 1
     std::c.. __ *it __ std::e..
 
     it++;                                           // point to 2
@@ -83,7 +83,7 @@ void test4
     // more iterators
     // using a reverse iterator
     std::vector<in.> vec {1,2,3,4};
-    auto it1  = vec.rbegin();       // reverse iterator over vector of ints starts at 4
+    a.. it1  = vec.rbegin();       // reverse iterator over vector of ints starts at 4
     w__ (it1 != vec.rend()) {
         std::c.. __ *it1 __ std::e..
         it1++;
@@ -91,7 +91,7 @@ void test4
 
     // const reverse iterator over a list
     std::list<std::string> name {"Larry", "Moe", "Curly"};
-    auto it2 =name.crbegin();    // iterator over list of strings  point to Curly
+    a.. it2 =name.crbegin();    // iterator over list of strings  point to Curly
     std::c.. __ *it2 __ std::e..
     it2++;  // point to Moe
     std::c.. __ *it2 __ std::e..
@@ -102,7 +102,7 @@ void test4
         {"Bill", "Java"},
         {"James", "Haskell"}
     };
-    auto it3 = favorites.begin();   // iterator over map of string, string pairs
+    a.. it3 = favorites.begin();   // iterator over map of string, string pairs
     w__ (it3 != favorites.end()) {
         std::c.. __ it3->first __ " : " __ it3->second __ std::e..
         it3++;
@@ -112,8 +112,8 @@ void test4
 void test5
     // iterate over a subset of a container
     std::vector<in.> vec {1,2,3,4,5,6,7,8,9,10};
-    auto start = vec.begin() + 2;
-    auto finish = vec.end() - 3;
+    a.. start = vec.begin() + 2;
+    a.. finish = vec.end() - 3;
     
     w__ (start != finish) {
         std::c.. __ *start __ std::e..

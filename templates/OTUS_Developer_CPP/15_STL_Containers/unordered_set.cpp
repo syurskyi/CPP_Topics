@@ -14,7 +14,7 @@ in. main()
         "prod", // 3987873476345 3
         "test"}sy.. pause // 3987873476345 1
 //    std::unordered_set<std::string> x {"test", "debug", "test"};
-    ___(auto i: x)
+    ___(a.. i: x)
     {
         std::c__ __  i __  std::e..
     }

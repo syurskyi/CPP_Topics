@@ -64,12 +64,12 @@ public:
 };
 
 // Function prototypes
-auto make();
+a.. make();
 void fill(std::vector<std::shared_ptr<Test__ &vec, in. num);
 void display(co.. std::vector<std::shared_ptr<Test__&vec);
 
 
-auto make
+a.. make
     r_ std::make_unique<std::vector<std::shared_ptr<Test>>>();
 }
 
@@ -88,7 +88,7 @@ void fill(std::vector<std::shared_ptr<Test__ &vec, in. num)  {
 void display(co.. std::vector<std::shared_ptr<Test__&vec) {
     std::c.. __ "\nDisplaying vector data" __ std::e..
     std::c.. __ "=======================" __ std::e..
-    ___ (co.. auto &ptr: vec)
+    ___ (co.. a.. &ptr: vec)
         std::c.. __ ptr->get_data() __ std::e..
    
     std::c.. __ "=======================" __ std::e..

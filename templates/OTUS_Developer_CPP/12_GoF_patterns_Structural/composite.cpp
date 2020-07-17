@@ -25,7 +25,7 @@ pu..
     in. s.. override
     {
         in. total _ 0sy.. pause
-        ___(auto fo : c) {
+        ___(a.. fo : c) {
             total +_ fo__size()sy.. pause
         }
         r_ totalsy.. pause

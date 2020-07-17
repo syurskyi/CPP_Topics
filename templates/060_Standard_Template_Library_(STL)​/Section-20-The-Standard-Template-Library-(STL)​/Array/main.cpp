@@ -9,7 +9,7 @@
 // when passing a std::array to a function
 void display(co.. std::array<in., 5> &arr) {
     std::c.. __ "[ ";
-    ___ (co.. auto &i: arr)
+    ___ (co.. a.. &i: arr)
         std::c.. __ i __ " ";
     std::c.. __  "]"__ std::e..
 }
@@ -85,7 +85,7 @@ void test5
     std::array<in., 5> arr1 {2,1,4,5,3};     // double {{ }} is C++ 11
 
     std::array<in.,5>::iterator min_num = std::min_element(arr1.begin(), arr1.end());
-    auto max_num = std::max_element(arr1.begin(), arr1.end());
+    a.. max_num = std::max_element(arr1.begin(), arr1.end());
     std::c.. __ "min: " __ *min_num __ " , max: " __ *max_num __ std::e..
 }
 
@@ -94,7 +94,7 @@ void test6
 
     std::array<in., 5> arr1 {2,1,3,3,5};     // double {{ }} is C++ 11
 
-    auto adjacent = std::adjacent_find(arr1.begin(), arr1.end());
+    a.. adjacent = std::adjacent_find(arr1.begin(), arr1.end());
     __ (adjacent != arr1.end())
         std::c.. __ "Adjacent element found with value: " __ *adjacent __ std::e..
     ____

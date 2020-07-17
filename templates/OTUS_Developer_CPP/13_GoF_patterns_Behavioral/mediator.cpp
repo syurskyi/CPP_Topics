@@ -25,7 +25,7 @@ c_ Perm {
 pu..
     bo.. enable_for(c.. std::s..& op, Role role)
     {
-        auto i _ ops.find(op)sy.. pause
+        a.. i _ ops.find(op)sy.. pause
         __ (i!_std::end(ops)) {
             r_ i__second__rolesy.. pause
         }
@@ -37,8 +37,8 @@ in. main(in., c..* [])
 {
     Perm permsy.. pause
 
-    auto v _ User{"вася", Role::user}sy.. pause
-    auto p _ User{"петя", Role::admin}sy.. pause
+    a.. v _ User{"вася", Role::user}sy.. pause
+    a.. p _ User{"петя", Role::admin}sy.. pause
 
     std::c__ __  perm.enable_for("drop", v.role) __  std::e..
     std::c__ __  perm.enable_for("drop", p.role) __  std::e..

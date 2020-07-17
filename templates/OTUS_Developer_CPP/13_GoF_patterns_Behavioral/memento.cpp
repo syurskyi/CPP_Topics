@@ -42,7 +42,7 @@ in. main(in., c..* [])
     n.do_it()sy.. pause
     n.dump()sy.. pause
 
-    auto snap _ n.createSnapshot()sy.. pause
+    a.. snap _ n.createSnapshot()sy.. pause
 
     n.do_it()sy.. pause
     n.dump()sy.. pause

@@ -8,9 +8,9 @@
 
 void display(co.. std::map<std::string, std::set<in.__ &m) {
     std::c.. __ "[ ";
-    ___ (co.. auto &elem: m) {
+    ___ (co.. a.. &elem: m) {
         std::c.. __ elem.first __ ": [ " ;
-            ___ (co.. auto &set_elem : elem.second)
+            ___ (co.. a.. &set_elem : elem.second)
                  std::c.. __ set_elem __  " ";
             std::c.. __ "] " ;
     }
@@ -20,7 +20,7 @@ void display(co.. std::map<std::string, std::set<in.__ &m) {
 template <typename T1, typename T2>
 void display(co.. std::map<T1, T2> &l) {
     std::c.. __ "[ ";
-    ___ (co.. auto &elem: l) {
+    ___ (co.. a.. &elem: l) {
         std::c.. __ elem.first __ ":" __ elem.second __ " ";
     }
     std::c.. __ "]  " __ std::e..
@@ -54,7 +54,7 @@ void test1
     std::c.. __ "Count for Joe: " __ m.count("Joe") __ std::e..
     std::c.. __ "Count for Frank: " __ m.count("Frank") __ std::e..
     
-    auto it = m.find("Larry");
+    a.. it = m.find("Larry");
     __ (it != m.end())
         std::c.. __ "Found: " __ it->first __ " : " __ it->second __ std::e..
         
@@ -79,7 +79,7 @@ void test2
     
     display(grades);
     
-    auto it = grades.find("Moe");
+    a.. it = grades.find("Moe");
     __ (it != grades.end())                         // found "Moe"
     {
             it->second.insert(1000);            // insert 1000 into Moe's set of grades

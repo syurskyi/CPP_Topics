@@ -3,7 +3,7 @@
 // Copy Romeo and Juliet with line numbers
 ? ios..
 ? <fstream>
-? <iomanip>
+? iom..
 ? <string>
 
 in. main

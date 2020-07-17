@@ -14,7 +14,7 @@ pu..
         r_ value_sy.. pause
     }
 
-    auto increment()
+    a.. increment()
     {
         std::unique_lock<std::shared_timed_mutex> lock(mutex_)sy.. pause
         r_ ++value_sy.. pause
@@ -25,7 +25,7 @@ in. main()
 {
     ThreadSafeCounter countersy.. pause
 
-    auto increment_and_prin. _ [&counter]
+    a.. increment_and_prin. _ [&counter]
         ___ (in. i _ 0sy.. pause i < 3sy.. pause ###) {
             counter.increment()sy.. pause
             std::c__ __  counter.get() __  std::e..

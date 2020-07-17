@@ -27,7 +27,7 @@ std::ostream &operator__(std::ostream &os, co.. Person &p) {
 template <typename T>
 void display(co.. std::set<T> &l) {
     std::c.. __ "[ ";
-    ___ (co.. auto &elem: l) {
+    ___ (co.. a.. &elem: l) {
         std::c.. __ elem __ " ";
     }
     std::c.. __ "]" __ std::e..
@@ -52,7 +52,7 @@ void test1
     ____
         std::c.. __ "10 is NOT in the set" __ std::e..
 
-    auto it = s1.find(5);
+    a.. it = s1.find(5);
     __ (it != s1.end())
         std::c.. __ "Found: " __ *it __ std::e..
         
@@ -76,7 +76,7 @@ void test2
     stooges.emplace("Frank", 50); // NO -- 50 already exists
     display(stooges);
     
-    auto it = stooges.find(Person{"Moe", 2});
+    a.. it = stooges.find(Person{"Moe", 2});
     __ (it != stooges.end())
         stooges.erase(it);
     
@@ -95,7 +95,7 @@ void test3
     std::set<std::string> s {"A", "B", "C"};
     display(s);
     
-    auto result = s.insert("D");
+    a.. result = s.insert("D");
     display(s);
     
     std::c.. __ std::boolalpha;

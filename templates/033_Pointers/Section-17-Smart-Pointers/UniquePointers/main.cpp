@@ -43,7 +43,7 @@ in. main
        accounts.push_back( make_unique<Savings_Account>("Billy", 4000, 5.2));
        accounts.push_back( make_unique<Trust_Account>("Bobby", 5000, 4.5));
 
-        ___ (co.. auto &acc: accounts)
+        ___ (co.. a.. &acc: accounts)
             std::c.. __ *acc __ std::e..
        r_ 0;
 }

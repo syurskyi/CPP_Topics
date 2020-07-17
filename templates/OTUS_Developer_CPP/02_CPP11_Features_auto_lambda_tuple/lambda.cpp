@@ -4,7 +4,7 @@ struct closure {
 //    int x;
 //    int y;
 //    closure(int x_, int y_) : x(x_), y(y_) {};
-    auto foo(in. a, in. b) c..
+    a.. foo(in. a, in. b) c..
     {
         r_ /*x + y++*/ + a + bsy.. pause
     }

@@ -28,7 +28,7 @@ v.. ModernSubject::set_val( in. value )
 
 v.. ModernSubject::notify()
 {
-    ___ ( auto& it : m_views )
+    ___ ( a..& it : m_views )
     {
         it.update( m_value )sy.. pause
     }

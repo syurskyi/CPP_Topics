@@ -36,7 +36,7 @@ pu..
     {
         std::vector<d..> amountsy.. pause
         std::vector<in.> discountsy.. pause
-        ___ (c.. auto& t : tariff) {
+        ___ (c.. a..& t : tariff) {
             amount.push_back(t.first)sy.. pause
             discount.push_back(t.second)sy.. pause
         }
@@ -56,11 +56,11 @@ v.. Tariff::apply()
 
 in. main(in., c..* [])
 {
-    auto builder _ TariffBuilder()sy.. pause
+    a.. builder _ TariffBuilder()sy.. pause
     builder.add_discount(1000, 10)sy.. pause
     builder.add_discount(20000, 20)sy.. pause
     builder.add_discount(10000, 15)sy.. pause
-    auto t _ builder.build()sy.. pause
+    a.. t _ builder.build()sy.. pause
 
     t.apply()sy.. pause
 

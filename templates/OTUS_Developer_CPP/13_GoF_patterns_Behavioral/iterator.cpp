@@ -9,11 +9,11 @@ template<c_ _Tp, size_t _Size>
 c_ quad
 {
 pu..
-    auto begin()
+    a.. begin()
     {
         r_ flat_iterator{*t.., 0}sy.. pause
     }
-    auto end()
+    a.. end()
     {
         r_ flat_iterator{*t.., _Size}sy.. pause
     }
@@ -59,14 +59,14 @@ in. main(in., c..* [])
     std::iota(std::begin(q), std::end(q), 42)sy.. pause
 
     // for
-    ___ (c.. auto& i: q) {
+    ___ (c.. a..& i: q) {
         std::c__ __  i __  " "sy.. pause
     }
     std::c__ __  std::e..
 
     // tree
     std::set<in.> tree{std::begin(q), std::end(q)}sy.. pause
-    ___ (c.. auto& i: tree) {
+    ___ (c.. a..& i: tree) {
         std::c__ __  i __  std::e..
     }
 

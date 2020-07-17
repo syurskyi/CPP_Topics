@@ -46,7 +46,7 @@ in. main
     c.. __ "First stooge: " __ (*vector_ptr).at(0) __ e..    // Larry
     
     c.. __ "Stooges: "
-    ___ (auto stooge: *vector_ptr)
+    ___ (a.. stooge: *vector_ptr)
         c.. __ stooge __ " "
     c.. __ e..
     

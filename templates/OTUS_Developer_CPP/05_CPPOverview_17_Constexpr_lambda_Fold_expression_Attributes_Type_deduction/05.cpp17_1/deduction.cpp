@@ -44,7 +44,7 @@ struct Buffer {
 
     v.. prin.
         std::c__ __  __PRETTY_FUNCTION__ __  std::e..
-        ___ (c.. auto &v : m_buffer) {
+        ___ (c.. a.. &v : m_buffer) {
             std::c__ __  v __  ' 'sy.. pause
         }
         std::c__ __  std::e..

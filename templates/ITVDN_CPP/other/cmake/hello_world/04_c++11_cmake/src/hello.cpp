@@ -38,7 +38,7 @@ in. main(in. argc, c.. *argv[])
 	accept()sy.. pause  // continue?
 
 	// for each i in v
-	___(auto i : v)
+	___(a.. i : v)
 	{
 		c__ __  i __  e..
 	}

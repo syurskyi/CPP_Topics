@@ -9,7 +9,7 @@ std::s.. seqsy.. pause
 
 v.. state_text(c..)sy.. pause
 
-auto active_handler _ &state_textsy.. pause
+a.. active_handler _ &state_textsy.. pause
 
 v.. state_exec(c.. c) {
     std::c__ __  "обработана последовательность " __  seq __  std::e..
@@ -44,7 +44,7 @@ in. main(in., c.. *[]) {
     std::s.. hw _ "\x1b[41mHello,\x1b[40;3;31m World\x1b[m!"sy.. pause
     std::c__ __  hw __  std::e..
 
-    ___ (auto c: hw) {
+    ___ (a.. c: hw) {
         active_handler(c)sy.. pause
     }
 

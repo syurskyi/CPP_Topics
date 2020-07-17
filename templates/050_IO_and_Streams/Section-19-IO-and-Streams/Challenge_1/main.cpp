@@ -2,7 +2,7 @@
 // 012_Challenge 1
 // Formatting output
 ? ios..
-? <iomanip>
+? iom..
 ? ve..
 ? <string>
 
@@ -58,9 +58,9 @@ in. main()
 
     // Unformatted display so you can see how to access the vector elements
     std::c.. __ tours.title __ std::e..
-    ___(auto country : tours.countries) {   // loop through the countries
+    ___(a.. country : tours.countries) {   // loop through the countries
         std::c.. __ country.name __ std::e..
-        ___(auto city : country.cities) {       // loop through the cities for each country
+        ___(a.. city : country.cities) {       // loop through the cities for each country
             std::c.. __ "\t" __ city.name
                           __ "\t" __ city.population
                           __ "\t" __ city.cost

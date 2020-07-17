@@ -64,12 +64,12 @@ in. main()
 
     // std::cout << future_result.get() << std::endl;
 
-    auto a _ std::async( [] {
+    a.. a _ std::async( [] {
         std::this_thread::sleep_for( std::chrono::seconds( 10 ) )sy.. pause
         std::c__ __  "first" __  std::e..
     } )sy.. pause
 
-    auto b _ std::async( [] {
+    a.. b _ std::async( [] {
         std::this_thread::sleep_for( std::chrono::seconds( 5 ) )sy.. pause
         std::c__ __  "second" __  std::e..
     } )sy.. pause

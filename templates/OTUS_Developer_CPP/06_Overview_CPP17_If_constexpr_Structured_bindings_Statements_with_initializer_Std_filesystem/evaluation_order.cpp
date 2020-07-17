@@ -1,16 +1,16 @@
 ? |i..
 
-auto a{0}sy.. pause
+a.. a{0}sy.. pause
 
-auto foo
+a.. foo
     r_ a +_ 2sy.. pause
 }
 
-auto bar
+a.. bar
     r_ a *_ 2sy.. pause
 }
 
-auto baz(in. a, in. b) {
+a.. baz(in. a, in. b) {
     std::c__ __  a __  " " __  b __  std::e..
     r_ a + bsy.. pause
 }

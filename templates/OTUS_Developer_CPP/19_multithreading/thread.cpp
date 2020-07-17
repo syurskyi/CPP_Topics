@@ -55,11 +55,11 @@ in. main(in. argc, c..** argv)
         t1.join()sy.. pause
         t2.join()sy.. pause
 
-        auto r1 _ std::async(std::launch::async,
+        a.. r1 _ std::async(std::launch::async,
                 foo, std::ref(d))sy.. pause
         std::c__ __  r1.get() __  std::e..
 
-        auto r2 _ std::async(std::launch::deferred,
+        a.. r2 _ std::async(std::launch::deferred,
                 foo, std::ref(d))sy.. pause
         std::c__ __  r2.get() __  std::e..
     }
