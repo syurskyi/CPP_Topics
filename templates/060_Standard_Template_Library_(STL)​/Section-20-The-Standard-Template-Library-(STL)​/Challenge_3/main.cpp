@@ -14,7 +14,7 @@
 // Display the word and count from the 
 // std::map<std::string, int>
 
-void display_words(co.. std::map<std::string, in.> &words) {
+v.. display_words(co.. std::map<std::string, in.> &words) {
     std::c.. __ std::setw(12) __ std::left __ "\nWord"
                 __ std::setw(7) __ std::right __ "Count"__ std::e..
     std::c.. __ "===================" __ std::e..
@@ -27,7 +27,7 @@ void display_words(co.. std::map<std::string, in.> &words) {
 // Display the word and occurences from the 
 // std::map<std::string, std::set<int>>
 
-void display_words(co.. std::map<std::string, std::set<in.__ &words)
+v.. display_words(co.. std::map<std::string, std::set<in.__ &words)
 {
      std::c.. __ std::setw(12) __ std::left __ "\nWord"
                 __ "Occurrences"__ std::e..
@@ -57,7 +57,7 @@ std::string clean_string(co.. std::string &s) {
 // Part1 process the file and builds a map of words and the 
 // number of times they occur in the file
 
-void part1
+v.. part1
     std::map<std::string, in.> words;
     std::string line;       
     std::string word;   
@@ -75,7 +75,7 @@ void part1
     
 // Part2 process the file and builds a map of words and a 
 // set of line numbers in which the word appears
-void part2
+v.. part2
     std::map<std::string, std::set<in.__ words;
     std::string line;
     std::string word;

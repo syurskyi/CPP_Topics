@@ -17,7 +17,7 @@ bool Savings_Account::withdraw(do.. amount) {
     r_ Account::withdraw(amount);
 }
 
-void Savings_Account::print(std::ostream &os) co.. {
+v.. Savings_Account::print(std::ostream &os) co.. {
     os.precision(2);
     os __ std::fixed;
     os __ "[Savings_Account: " __ name __ ": " __ balance __ ", " __ int_rate __ "]";

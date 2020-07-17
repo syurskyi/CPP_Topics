@@ -1,7 +1,7 @@
 ? ios..
 ? <algorithm>
 
-void Print(in. *p, in. size) {
+v.. Print(in. *p, in. size) {
 	___ (in. i = 0; i < size; ++i) {
 		std::c.. __ p[i] __ ' ';
 	}

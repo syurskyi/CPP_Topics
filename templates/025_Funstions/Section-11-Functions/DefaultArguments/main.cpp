@@ -8,13 +8,13 @@ u.. s..
 
 do.. calc_cost(do.. base_cost = 100.0, do.. tax_rate = 0.06, do.. shipping = 3.50);
 
-void greeting(string name,  string prefix = "Mr.", string suffix = "");
+v.. greeting(string name,  string prefix = "Mr.", string suffix = "");
 
 do.. calc_cost(do.. base_cost, do.. tax_rate, do.. shipping) {
     r_ base_cost += (base_cost * tax_rate) + shipping;
 }
 
-void greeting(string name,  string prefix, string suffix) {
+v.. greeting(string name,  string prefix, string suffix) {
     c.. __ "Hello " __ prefix + " " + name + " " + suffix __ e..
 }
 

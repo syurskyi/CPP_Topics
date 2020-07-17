@@ -5,7 +5,7 @@
 
 u.. s..
 
-void func2(in. &x, in. y, in. z) {
+v.. func2(in. &x, in. y, in. z) {
     x+= y + z;
 }
 

@@ -11,7 +11,7 @@ public:
 
 	}
 };
-void Print(std::initializer_list<in.> list) {
+v.. Print(std::initializer_list<in.> list) {
 	a.. it = list.begin();
 	/*while (it != list.end()) {
 		std::cout << *it << ' ';

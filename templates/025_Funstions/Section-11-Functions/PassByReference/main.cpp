@@ -7,24 +7,24 @@
 
 u.. s..
 
-void pass_by_ref1(in. &num);
-void pass_by_ref2(string &s);
-void pass_by_ref3(vector<string> &v);
-void print_vector(co.. vector<string> &v);  // const
+v.. pass_by_ref1(in. &num);
+v.. pass_by_ref2(string &s);
+v.. pass_by_ref3(vector<string> &v);
+v.. print_vector(co.. vector<string> &v);  // const
 
-void pass_by_ref1(in. &num) {
+v.. pass_by_ref1(in. &num) {
     num = 1000;
 }
 
-void pass_by_ref2(string &s) {
+v.. pass_by_ref2(string &s) {
     s = "Changed";
 }
 
-void pass_by_ref3(vector<string> &v) {
+v.. pass_by_ref3(vector<string> &v) {
     v.clear();  // delete all vector elements
 }
 
-void print_vector( co.. vector<string> &v)  {
+v.. print_vector( co.. vector<string> &v)  {
     ___ (a.. s: v)
         c.. __ s __ " ";
     c.. __ e..

@@ -7,7 +7,7 @@
 ? ios..
 u.. s..
 
-void showMenu
+v.. showMenu
 	c.. __ "1. Search" __ e..
 	c.. __ "2. View Record" __ e..
 	c.. __ "3. Quit" __ e..

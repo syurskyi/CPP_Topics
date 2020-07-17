@@ -10,7 +10,7 @@ class B;    // forward declaration
 class A {
     std::shared_ptr<B> b_ptr;
 public:
-    void set_B(std::shared_ptr<B> &b) {
+    v.. set_B(std::shared_ptr<B> &b) {
         b_ptr = b;
     }
     A c.. __ "A Constructor" __ e.. }
@@ -20,7 +20,7 @@ public:
 class B {
     std::weak_ptr<A> a_ptr;     // make weak to break the strong circular reference
 public:
-    void set_A(std::shared_ptr<A> &a) {
+    v.. set_A(std::shared_ptr<A> &a) {
         a_ptr = a;
     }
     B c.. __ "B Constructor" __ e.. }

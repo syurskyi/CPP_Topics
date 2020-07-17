@@ -4,11 +4,11 @@
 
 u.. s..
 
-void Cat::speak
+v.. Cat::speak
 	c.. __ "Meouwww!!!" __ e..
 }
 
-void Cat::jump
+v.. Cat::jump
 	c.. __ "Jumping to top of bookcase" __ e..
 }
 

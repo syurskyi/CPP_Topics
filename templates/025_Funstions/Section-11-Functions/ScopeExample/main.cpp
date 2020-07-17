@@ -4,19 +4,19 @@
 
 u.. s..
 
-void local_example();
-void global_example();
-void static_local_example();
+v.. local_example();
+v.. global_example();
+v.. static_local_example();
 
 in. num {300};    // Global variable - declared outside any class or function
 
-void global_example
+v.. global_example
     c.. __ "\nGlobal num is: " __ num __ " in global_example - start" __ e..
     num *= 2;
     c.. __ "Global num is: " __ num __ " in global_example - end" __ e..
 }
 
-void local_example(in. x) {
+v.. local_example(in. x) {
     in. num {1000};     // local to local_example
     c.. __ "\nLocal num is: " __ num __ " in local_example - start" __ e..
     num=x;
@@ -24,7 +24,7 @@ void local_example(in. x) {
     // num1 in main is not within scope - so it can't be used here.
 }
 
-void static_local_example
+v.. static_local_example
     static in. num {5000};      // local to static_local_example static - retains it value between calls
     c.. __ "\nLocal static  num is: " __ num __ " in static_local_example - start" __ e..
     num += 1000;

@@ -27,7 +27,7 @@ std::ostream &operator__(std::ostream &os, co.. Person &p) {
 }
 
 // Use for_each and a lambda expression to display vector elements
-void display2(co.. std::vector<in.> &vec) {
+v.. display2(co.. std::vector<in.> &vec) {
     std::c.. __ "[ ";
     std::for_each(vec.begin(), vec.end(),
         [](in. x) { std::c.. __ x __ " ";});
@@ -36,7 +36,7 @@ void display2(co.. std::vector<in.> &vec) {
 
 // template function to display any vector
 template <typename T>
-void display(co.. std::vector<T> &vec) {
+v.. display(co.. std::vector<T> &vec) {
     std::c.. __ "[ ";
     ___ (co.. a.. &elem: vec)
         std::c.. __ elem __ " ";
@@ -44,7 +44,7 @@ void display(co.. std::vector<T> &vec) {
 }
 
 
-void test1
+v.. test1
     std::c.. __ "\nTest1 =========================" __ std::e..
 
     std::vector<in.> vec {1,2,3,4,5};
@@ -57,7 +57,7 @@ void test1
     display(vec1);
 }
 
-void test2
+v.. test2
     std::c.. __ "\nTest2 =========================" __ std::e..
 
     std::vector<in.> vec {1,2,3,4,5};
@@ -85,7 +85,7 @@ void test2
     std::c.. __ "vec capacity: " __ vec.capacity() __ std::e..
     
 }
-void test3
+v.. test3
     std::c.. __ "\nTest3 =========================" __ std::e..
 
     std::vector<in.> vec {1,2,3,4,5};
@@ -97,7 +97,7 @@ void test3
     display(vec);
 }
 
-void test4
+v.. test4
     std::c.. __ "\nTest4 =========================" __ std::e..
     std::vector<Person> stooges;
     
@@ -114,7 +114,7 @@ void test4
     display(stooges);
 }
 
-void test5
+v.. test5
     std::c.. __ "\nTest5 =========================" __ std::e..
 
     std::vector<Person> stooges {
@@ -131,7 +131,7 @@ void test5
     display(stooges);
 }
 
-void test6
+v.. test6
     std::c.. __ "\nTest6 =========================" __ std::e..
     std::vector<in.> vec {1,2,3,4,5};
     display(vec);
@@ -156,7 +156,7 @@ void test6
     display(vec);
 }
 
-void test7
+v.. test7
     std::c.. __ "\nTest7 =========================" __ std::e..
     
     std::vector<in.> vec1 {1,2,3,4,5};
@@ -171,7 +171,7 @@ void test7
     display(vec2);
 }
 
-void test8
+v.. test8
     std::c.. __ "\nTest8  =========================" __ std::e..
 
     std::vector<in.> vec1 {1,21,3,40,12};
@@ -181,7 +181,7 @@ void test8
     display(vec1);
 }
 
-void test9
+v.. test9
     // std::back_inserter contructs a back-insert iterator that inserts new elements 
     // at the end of the container it applied to. It's a special output iterator
     // It's awesome!!!!   and  very efficient
@@ -220,7 +220,7 @@ void test9
     
 }
 
-void test10
+v.. test10
     std::c.. __ "\nTest10  =========================" __ std::e..
     // transform over 2 ranges
     
@@ -242,7 +242,7 @@ void test10
 
 // Insertion from another vector
 // Insert vec2 into vec1 before the 5
-void test11
+v.. test11
     std::c.. __ "\nTest11  =========================" __ std::e..
     std::vector<in.> vec1 {1,2,3,4,5,6,7,8,9,10};
     std::vector<in.> vec2 {100,200,300,400};

@@ -6,29 +6,29 @@
 
 u.. s..
 
-void print(in.);
-void print(do..);
-void print(string);
-void print(string, string);
-void print(vector<string>);
+v.. print(in.);
+v.. print(do..);
+v.. print(string);
+v.. print(string, string);
+v.. print(vector<string>);
 
-void print(in. num) {
+v.. print(in. num) {
     c.. __ "Printing int: " __ num __ e..
 }
 
-void print(do.. num) {
+v.. print(do.. num) {
     c.. __ "Printing double: " __ num __ e..
 }
 
-void print(string s) {
+v.. print(string s) {
     c.. __ "Printing string: " __ s __ e..
 }
 
-void print(string s, string t) {
+v.. print(string s, string t) {
     c.. __ "Printing 2 strings: " __ s __ " and " __ t __ e..
 }
 
-void print(vector<string> v) {
+v.. print(vector<string> v) {
     c.. __ "Printing vector of strings: " ;
     ___ (a.. s: v )
         c.. __ s + " ";

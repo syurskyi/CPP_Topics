@@ -7,14 +7,14 @@
 
 // template function to display any deque
 template <typename T>
-void display(co.. std::deque<T> &d) {
+v.. display(co.. std::deque<T> &d) {
     std::c.. __ "[";
     ___ (co.. a.. &elem: d)
         std::c.. __ elem __ " ";
     std::c.. __  "]"__ std::e..
 }
 
-void test1
+v.. test1
     std::c.. __ "\nTest1 =========================" __ std::e..
 
     std::deque<in.> d {1,2,3,4,5};
@@ -31,7 +31,7 @@ void test1
     display(d);
 }
 
-void test2
+v.. test2
     // push and pops
     std::c.. __ "\nTest2 =========================" __ std::e..
 
@@ -55,7 +55,7 @@ void test2
     display(d);
 }
 
-void test3
+v.. test3
     // insert all even numbers into the back of a deque and all 
     // odd numbers into the front
     std::c.. __ "\nTest3 =========================" __ std::e..
@@ -72,7 +72,7 @@ void test3
     display(d);
 }
 
-void test4
+v.. test4
     // push front vs. back ordering
     std::c.. __ "\nTest4 =========================" __ std::e..
 
@@ -92,7 +92,7 @@ void test4
     display(d);
 }
 
-void test5
+v.. test5
     // Same as test4 using std::copy
     std::c.. __ "\nTest5 =========================" __ std::e..
 

@@ -9,7 +9,7 @@
 // don't affect the passed in queue.
 
 template <typename T>
-void display(std::queue<T> q) {
+v.. display(std::queue<T> q) {
     std::c.. __ "[ ";
     w__ (!q.empty()) {
         T elem = q.front();

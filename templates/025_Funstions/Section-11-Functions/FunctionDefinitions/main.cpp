@@ -16,14 +16,14 @@ do.. calc_volume_cylinder(do.. radius, do.. height) {
     r_ calc_area_circle(radius) * height;
 }
 
-void area_circle
+v.. area_circle
     do.. radius{};
     c.. __ "\nEnter the radius of the circle: ";
     ci. __ radius;
     c.. __ "The area of a circle with radius " __ radius __ " is " __ calc_area_circle(radius) __ e..
 }
 
-void volume_cylinder
+v.. volume_cylinder
     do.. radius {};
     do.. height {};
     c.. __ "\nEnter the radius of the cylinder: ";

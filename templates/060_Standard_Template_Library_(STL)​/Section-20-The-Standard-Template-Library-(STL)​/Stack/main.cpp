@@ -11,7 +11,7 @@
 // don't affect the passed in stack.
 
 template <typename T>
-void display(std::stack<T> s) {
+v.. display(std::stack<T> s) {
     std::c.. __ "[ ";
     w__ (!s.empty()) {
         T elem = s.top();

@@ -16,7 +16,7 @@ string Person::toString
 	r_ "Person's name is: " + name;
 }
 
-void Person::setName(string newName) {
+v.. Person::setName(string newName) {
 	name = newName;
 }
 

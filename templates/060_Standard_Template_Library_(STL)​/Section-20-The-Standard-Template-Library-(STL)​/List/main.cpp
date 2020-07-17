@@ -28,7 +28,7 @@ std::ostream &operator__(std::ostream &os, co.. Person &p) {
 
 
 template <typename T>
-void display(co.. std::list<T> &l) {
+v.. display(co.. std::list<T> &l) {
     std::c.. __ "[ ";
     ___ (co.. a.. &elem: l) {
         std::c.. __ elem __ " ";
@@ -36,7 +36,7 @@ void display(co.. std::list<T> &l) {
     std::c.. __ "]" __ std::e..
 }
 
-void test1
+v.. test1
     std::c.. __ "\nTest1 =========================" __ std::e..
 
     std::list<in.> l1 {1,2,3,4,5};
@@ -55,7 +55,7 @@ void test1
     display(l4);
 }
 
-void test2
+v.. test2
     std::c.. __ "\nTest2 =========================" __ std::e..
 
     std::list<in.> l {1,2,3,4,5,6,7,8,9,10};
@@ -70,7 +70,7 @@ void test2
     std::c.. __ "Size: " __ l.s.. __ std::e..
 }
 
-void test3
+v.. test3
     std::c.. __ "\nTest3 =========================" __ std::e..
 
     std::list<in.> l {1,2,3,4,5,6,7,8,9,10};
@@ -87,7 +87,7 @@ void test3
     display(persons);
     
 }
-void test4
+v.. test4
     std::c.. __ "\nTest4 =========================" __ std::e..
 
     std::list<in.> l {1,2,3,4,5,6,7,8,9,10};
@@ -110,7 +110,7 @@ void test4
     
 }
 
-void test5
+v.. test5
     std::c.. __ "\nTest5 =========================" __ std::e..
 
     std::list<Person>  stooges {
@@ -137,7 +137,7 @@ void test5
     display(stooges);    
 }
 
-void test6
+v.. test6
     std::c.. __ "\nTest6 =========================" __ std::e..
     
     std::list<Person>  stooges {

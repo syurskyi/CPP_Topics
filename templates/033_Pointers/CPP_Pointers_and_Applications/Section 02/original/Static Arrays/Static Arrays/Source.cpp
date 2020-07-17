@@ -1,7 +1,7 @@
 ? ios..
 ? <algorithm>
 ? <array>
-void Print(in. *ptr,in. size) {
+v.. Print(in. *ptr,in. size) {
 	___ (in. i = _ i < size; ++i) {
 		std::c.. __ ptr[i] __ ' ';
 		//std::cout << *(ptr + i) << ' ';
@@ -9,7 +9,7 @@ void Print(in. *ptr,in. size) {
 }
 
 template<typename T, in. size>
-void Print(T(&ref)[size]) {
+v.. Print(T(&ref)[size]) {
 	___ (in. i = _ i < size; ++i) {
 		std::c.. __ ref[i] __ ' ';
 		//std::cout << *(ptr + i) << ' ';
@@ -26,7 +26,7 @@ T*  End(T(&ref)[size]) {
 	r_ (ref + size);
 }
 
-void Print(std::array<in., 5> &arr) {
+v.. Print(std::array<in., 5> &arr) {
 	std::sort(arr.begin(), arr.end());
 	//for (int i = 0; i < arr.size(); ++i) {
 	//	std::cout << arr[i] << ' ';

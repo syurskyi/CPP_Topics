@@ -8,10 +8,10 @@ Savings_Account::Savings_Account()
 Savings_Account::~Savings_Account
 }
 
-void Savings_Account::deposit(do.. amount) {
+v.. Savings_Account::deposit(do.. amount) {
     std::c.. __ "Savings Account deposit called with " __ amount __ std::e..
 }
 
-void Savings_Account::withdraw(do.. amount) {
+v.. Savings_Account::withdraw(do.. amount) {
     std::c.. __ "Savings Account withdraw called with " __ amount __ std::e..
 }

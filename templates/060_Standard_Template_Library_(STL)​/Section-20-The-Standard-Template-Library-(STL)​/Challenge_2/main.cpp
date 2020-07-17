@@ -44,7 +44,7 @@ std::ostream &operator__(std::ostream &os, co.. Song &s) {
        r_ os;
 }
 
-void display_menu
+v.. display_menu
     std::c.. __ "\nF - Play First Song" __ std::e..
     std::c.. __ "N - Play Next song" __ std::e..
     std::c.. __ "P - Play Previous song" __ std::e..
@@ -54,14 +54,14 @@ void display_menu
     std::c.. __ "Enter a selection (Q to quit): ";
 }
 
-void play_current_song(co.. Song &song) {
+v.. play_current_song(co.. Song &song) {
     // This function should display 
     // Playing: followed by the song that is playing
    
     std::c.. __ "You implement this function"__ std::e..
 }
 
-void display_playlist(co.. std::list<Song> &playlist, co.. Song &current_song) {
+v.. display_playlist(co.. std::list<Song> &playlist, co.. Song &current_song) {
     // This function should display the current playlist 
     // and then the current song playing.
     

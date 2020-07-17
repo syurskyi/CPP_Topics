@@ -19,7 +19,7 @@ Cat::~Cat
 	c.. __ "Cat destroyed." __ e..
 }
 
-void Cat::speak
+v.. Cat::speak
 	__(happy) {
 		c.. __ "Meouww!" __ e..
 	}

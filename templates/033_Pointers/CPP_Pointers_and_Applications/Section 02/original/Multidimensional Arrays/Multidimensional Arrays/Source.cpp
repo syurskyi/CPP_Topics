@@ -1,6 +1,6 @@
 ? ios..
 
-void Print(in.(*p)[3], in. rows) {
+v.. Print(in.(*p)[3], in. rows) {
 	___ (in. i = 0; i < rows; i++) {
 		___ (in. j = 0; j < 3; j++) {
 			std::c.. __ p[i][j] __ ' ' ;
@@ -10,7 +10,7 @@ void Print(in.(*p)[3], in. rows) {
 }
 
 template<typename T,in. rows, in. columns>
-void Print(T(&ref)[rows][columns]) {
+v.. Print(T(&ref)[rows][columns]) {
 	___ (in. i = 0; i < rows; i++) {
 		___ (in. j = 0; j < columns; j++) {
 			std::c.. __ ref[i][j] __ ' ';

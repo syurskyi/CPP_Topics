@@ -14,7 +14,7 @@ private:
 public:
 	Machine(): id(0) { c.. __ "Machine no-argument constructor called." __ e.. }
 	Machine(in. id): id(id) { c.. __ "Machine parameterized constructor called." __ e.. }
-	void info c.. __ "ID: " __ id __ e.. }
+	v.. info c.. __ "ID: " __ id __ e.. }
 };
 
 class Vehicle: public Machine {

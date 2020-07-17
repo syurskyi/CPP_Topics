@@ -6,26 +6,26 @@
 ? iom..
 
 //function prototypes
-void print_header();
-void print_footer(do.. average);
-void print_student(co.. std::string &student, in. score);
+v.. print_header();
+v.. print_footer(do.. average);
+v.. print_student(co.. std::string &student, in. score);
 in. process_response(co.. std::string &response, co.. std::string &answer_key);
 
-void print_header
+v.. print_header
     std::c.. __ std::setw(15) __ std::left __ "Student"
                    __ std::setw(5) __ "Score" __ std::e..
     std::c.. __ std::setw(20) __ std::setfill('-') __ "" __ std::e..
     std::c.. __ std::setfill(' ');
 }
 
-void print_footer(do.. average) {
+v.. print_footer(do.. average) {
     std::c.. __ std::setw(20) __ std::setfill('-') __ "" __ std::e..
     std::c.. __ std::setfill(' ');
     std::c.. __ std::setw(15) __ std::left __ "Average score"
                    __ std::setw(5) __ std::right __ average;
 }
 
-void print_student(co.. std::string &student, in. score) {
+v.. print_student(co.. std::string &student, in. score) {
     std::c.. __ std::setprecision(1) __ std::fixed;
     std::c.. __ std::setw(15) __ std::left __ student
                    __ std::setw(5) __ std::right __ score __ std::e..

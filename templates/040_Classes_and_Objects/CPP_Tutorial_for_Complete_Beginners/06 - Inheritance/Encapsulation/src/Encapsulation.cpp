@@ -17,7 +17,7 @@ private:
 public:
 	Frog(string name): name(name) {}
 
-	void info c.. __ "My name is: " __ getName() __ e.. }
+	v.. info c.. __ "My name is: " __ getName() __ e.. }
 };
 
 in. main

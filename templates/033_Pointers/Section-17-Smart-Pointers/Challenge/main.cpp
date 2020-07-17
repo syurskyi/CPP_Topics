@@ -65,8 +65,8 @@ public:
 
 // Function prototypes
 std::unique_ptr<std::vector<std::shared_ptr<Test>>> make();
-void fill(std::vector<std::shared_ptr<Test__ &vec, in. num);
-void display(co.. std::vector<std::shared_ptr<Test__&vec);
+v.. fill(std::vector<std::shared_ptr<Test__ &vec, in. num);
+v.. display(co.. std::vector<std::shared_ptr<Test__&vec);
 
 in. main
     std::unique_ptr<std::vector<std::shared_ptr<Test>>> vec_ptr;

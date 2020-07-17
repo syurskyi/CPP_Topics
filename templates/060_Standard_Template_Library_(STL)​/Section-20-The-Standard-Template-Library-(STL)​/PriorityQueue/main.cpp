@@ -30,7 +30,7 @@ std::ostream &operator__(std::ostream &os, co.. Person &p) {
 // priority queue being passed in
 
 template <typename T>
-void display(std::priority_queue<T> pq)  {
+v.. display(std::priority_queue<T> pq)  {
     std::c.. __ "[ ";
     w__ (!pq.empty()) {
         T elem = pq.top();
@@ -40,7 +40,7 @@ void display(std::priority_queue<T> pq)  {
     std::c.. __  "]" __ std::e..
 }
 
-void  test1
+v..  test1
     std::c.. __ "\nTest1 =========================" __ std::e..
 
     std::priority_queue<in.> pq;
@@ -56,7 +56,7 @@ void  test1
     display(pq);
 }
 
-void test2
+v.. test2
     std::c.. __ "\nTest2 =========================" __ std::e..
 
     std::priority_queue<Person> pq;

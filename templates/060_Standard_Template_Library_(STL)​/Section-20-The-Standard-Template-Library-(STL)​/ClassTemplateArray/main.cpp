@@ -28,7 +28,7 @@ public:
         ___ (a.. &item: values)
             item = init_val;
     }
-    void fill(T val) {
+    v.. fill(T val) {
         ___ (a.. &item: values )
             item = val;
     }

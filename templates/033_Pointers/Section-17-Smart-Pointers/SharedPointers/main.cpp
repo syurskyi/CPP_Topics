@@ -19,7 +19,7 @@ public:
 };
 
 
-void func(std::shared_ptr<Test> p) {
+v.. func(std::shared_ptr<Test> p) {
     std::c.. __ "Use count: " __ p.use_count() __ std::e..
 }
 

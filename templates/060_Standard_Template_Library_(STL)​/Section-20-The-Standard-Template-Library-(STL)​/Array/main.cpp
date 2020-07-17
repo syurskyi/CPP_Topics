@@ -7,14 +7,14 @@
 
 // Display the array -- note the size MUST be included
 // when passing a std::array to a function
-void display(co.. std::array<in., 5> &arr) {
+v.. display(co.. std::array<in., 5> &arr) {
     std::c.. __ "[ ";
     ___ (co.. a.. &i: arr)
         std::c.. __ i __ " ";
     std::c.. __  "]"__ std::e..
 }
 
-void test1
+v.. test1
     std::c.. __ "\nTest1 =========================" __ std::e..
     std::array<in., 5> arr1 {1,2,3,4,5};     // double {{ }} if C++ 11
     std::array<in., 5> arr2;
@@ -38,7 +38,7 @@ void test1
     std::c.. __ "Back of arr2: " __ arr2.back() __ std::e..          // 50
 }
  
-void test2
+v.. test2
     std::c.. __ "\nTest2 =========================" __ std::e..
     std::array<in., 5> arr1 {1,2,3,4,5};     // double {{ }} is C++ 11
     std::array<in., 5> arr2 {10,20,30,40,50};
@@ -57,7 +57,7 @@ void test2
     display(arr2);
 }
 
-void test3
+v.. test3
     std::c.. __ "\nTest3 =========================" __ std::e..
 
     std::array<in., 5> arr1 {1,2,3,4,5};     // double {{ }} is C++ 11
@@ -69,7 +69,7 @@ void test3
     display(arr1);
 }
 
-void test4
+v.. test4
     std::c.. __ "\nTest4 =========================" __ std::e..
 
     std::array<in., 5> arr1 {2,1,4,5,3};     // double {{ }} is C++ 11
@@ -79,7 +79,7 @@ void test4
     display(arr1);
 }
 
-void test5
+v.. test5
     std::c.. __ "\nTest5 =========================" __ std::e..
 
     std::array<in., 5> arr1 {2,1,4,5,3};     // double {{ }} is C++ 11
@@ -89,7 +89,7 @@ void test5
     std::c.. __ "min: " __ *min_num __ " , max: " __ *max_num __ std::e..
 }
 
-void test6
+v.. test6
     std::c.. __ "\nTest6 =========================" __ std::e..
 
     std::array<in., 5> arr1 {2,1,3,3,5};     // double {{ }} is C++ 11
@@ -101,7 +101,7 @@ void test6
         std::c.. __ "No adjacent elements found" __ std::e..
 }
 
-void test7
+v.. test7
     std::c.. __ "\nTest7 =========================" __ std::e..
 
        //accumulate is from ? <numeric>
@@ -111,7 +111,7 @@ void test7
     std::c.. __ "Sum of the elements in arr1 is: " __ sum __ std::e..
 }
 
-void test8
+v.. test8
     std::c.. __ "\nTest8 =========================" __ std::e..
     std::array<in., 10> arr1 {1,2,3,1,2,3,3,3,3,3};
     
@@ -119,7 +119,7 @@ void test8
     std::c.. __ "Found 3 : " __ count __ " times" __ std::e..
 }
 
-void test9
+v.. test9
     std::c.. __ "\nTest9 =========================" __ std::e..
     std::array<in., 10> arr1 {1, 2, 3, 50, 60, 70, 80, 200, 300 ,400};
     // find how many numbers are between 10 and 200 ->  50,60,70,80

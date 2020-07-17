@@ -9,17 +9,17 @@ u.. s..
 
 class Animal {
 public:
-	void speak c.. __ "Grrrr" __ e.. }
+	v.. speak c.. __ "Grrrr" __ e.. }
 };
 
 class Cat: public Animal {
 public:
-	void jump c.. __ "Cat jumping!" __ e.. }
+	v.. jump c.. __ "Cat jumping!" __ e.. }
 };
 
 class Tiger: public Cat {
 public:
-	void attackAntelope c.. __ "Attacking!" __ e.. }
+	v.. attackAntelope c.. __ "Attacking!" __ e.. }
 };
 
 in. main

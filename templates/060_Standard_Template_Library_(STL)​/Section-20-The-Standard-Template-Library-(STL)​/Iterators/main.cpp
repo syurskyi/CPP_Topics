@@ -7,7 +7,7 @@
 ? <list>
 
 // display any vector of integers using range-based for loop
-void display(co.. std::vector<in.> &vec) {
+v.. display(co.. std::vector<in.> &vec) {
     std::c.. __ "[ ";
     ___ (a.. co.. &i: vec) {
         std::c.. __ i __ " ";
@@ -15,7 +15,7 @@ void display(co.. std::vector<in.> &vec) {
     std::c.. __ "]" __ std::e..
 }
 
-void test1
+v.. test1
     std::c.. __ "\n=============================" __ std::e..
     std::vector<in.> nums1 {1, 2, 3, 4, 5};
     a.. it = nums1.begin();            // point to 1
@@ -34,7 +34,7 @@ void test1
     std::c.. __ *it __ std::e..
 }
 
-void test2
+v.. test2
     std::c.. __ "\n=============================" __ std::e..
     // display all vector elements using an iterator
     
@@ -56,7 +56,7 @@ void test2
     display(nums1);
 }
 
-void test3
+v.. test3
     
     // using a const_iterator
     std::c.. __ "\n=============================" __ std::e..
@@ -79,7 +79,7 @@ void test3
 
 }
 
-void test4
+v.. test4
     // more iterators
     // using a reverse iterator
     std::vector<in.> vec {1,2,3,4};
@@ -109,7 +109,7 @@ void test4
     }
 }
 
-void test5
+v.. test5
     // iterate over a subset of a container
     std::vector<in.> vec {1,2,3,4,5,6,7,8,9,10};
     a.. start = vec.begin() + 2;

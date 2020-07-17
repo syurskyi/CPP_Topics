@@ -65,15 +65,15 @@ public:
 
 // Function prototypes
 a.. make();
-void fill(std::vector<std::shared_ptr<Test__ &vec, in. num);
-void display(co.. std::vector<std::shared_ptr<Test__&vec);
+v.. fill(std::vector<std::shared_ptr<Test__ &vec, in. num);
+v.. display(co.. std::vector<std::shared_ptr<Test__&vec);
 
 
 a.. make
     r_ std::make_unique<std::vector<std::shared_ptr<Test>>>();
 }
 
-void fill(std::vector<std::shared_ptr<Test__ &vec, in. num)  {
+v.. fill(std::vector<std::shared_ptr<Test__ &vec, in. num)  {
     in. temp;
     ___ (in. i=1; i<=num; ++i) {
         std::c.. __ "Enter data point [" __ i __ "] : ";
@@ -85,7 +85,7 @@ void fill(std::vector<std::shared_ptr<Test__ &vec, in. num)  {
     }
 }
 
-void display(co.. std::vector<std::shared_ptr<Test__&vec) {
+v.. display(co.. std::vector<std::shared_ptr<Test__&vec) {
     std::c.. __ "\nDisplaying vector data" __ std::e..
     std::c.. __ "=======================" __ std::e..
     ___ (co.. a.. &ptr: vec)

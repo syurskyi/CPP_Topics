@@ -9,7 +9,7 @@ T min(T a, T b) {
 }
 
 template <typename T1, typename T2>
-void func(T1 a, T2 b) {
+v.. func(T1 a, T2 b) {
     std::c.. __ a __ " " __ b __ std::e..
 }
 
@@ -27,7 +27,7 @@ std::ostream &operator__(std::ostream &os, co.. Person &p) {
 }
 
 template <typename T>
-void my_swap(T &a, T &b) {
+v.. my_swap(T &a, T &b) {
     T temp = a;
     a = b;
     b = temp;

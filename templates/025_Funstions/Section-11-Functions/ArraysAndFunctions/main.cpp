@@ -4,10 +4,10 @@
 
 u.. s..
 
-void print_array(co.. in. arr[], size_t size);
-void set_array(in. arr[], size_t size, in. value);
+v.. print_array(co.. in. arr[], size_t size);
+v.. set_array(in. arr[], size_t size, in. value);
 
-void print_array(co.. in. arr[], size_t size) {  // const
+v.. print_array(co.. in. arr[], size_t size) {  // const
     ___ (size_t i{0}; i < size; ++i)
         c.. __ arr[i] __ " ";
     c.. __ e..
@@ -15,7 +15,7 @@ void print_array(co.. in. arr[], size_t size) {  // const
 }
 
 // set each array element to value
-void set_array(in. arr[], size_t size, in. value) {
+v.. set_array(in. arr[], size_t size, in. value) {
     ___ (size_t i{0}; i < size; ++i)
         arr[i] = value;
 }

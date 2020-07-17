@@ -23,7 +23,7 @@ struct Tours {
     std::vector<Country> countries;
 };
 
-void ruler
+v.. ruler
     std::c.. __ "\n1234567890123456789012345678901234567890123456789012345678901234567890\n" __ std::e..
 }
 in. main()

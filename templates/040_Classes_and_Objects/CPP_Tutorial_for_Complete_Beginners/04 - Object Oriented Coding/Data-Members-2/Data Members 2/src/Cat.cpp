@@ -10,7 +10,7 @@
 
 u.. s..
 
-void Cat::speak
+v.. Cat::speak
 
 	__ (happy) {
 		c.. __ "Meouw!" __ e..
@@ -19,10 +19,10 @@ void Cat::speak
 	}
 }
 
-void Cat::makeHappy
+v.. Cat::makeHappy
 	happy = true;
 }
 
-void Cat::makeSad
+v.. Cat::makeSad
 	happy = false;
 }

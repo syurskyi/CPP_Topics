@@ -25,7 +25,7 @@ std::ostream &operator__(std::ostream &os, co.. Person &p) {
 }
 
 template <typename T>
-void display(co.. std::set<T> &l) {
+v.. display(co.. std::set<T> &l) {
     std::c.. __ "[ ";
     ___ (co.. a.. &elem: l) {
         std::c.. __ elem __ " ";
@@ -33,7 +33,7 @@ void display(co.. std::set<T> &l) {
     std::c.. __ "]" __ std::e..
 }
 
-void test1
+v.. test1
     // Sets
     std::c.. __ "\nTest1 =========================" __ std::e..
     std::set<in.> s1 {1, 4, 3, 5, 2};
@@ -61,7 +61,7 @@ void test1
     display(s1);
 }
 
-void test2
+v.. test2
     std::c.. __ "\nTest2 =========================" __ std::e..
     std::set<Person> stooges {
         {"Larry", 1},
@@ -89,7 +89,7 @@ void test2
     display(stooges); 
 }
 
-void test3
+v.. test3
     std::c.. __ "\nTest3 =========================" __ std::e..
     
     std::set<std::string> s {"A", "B", "C"};

@@ -22,7 +22,7 @@ public:
 };
 
 // Find an element in a container
-void find_test
+v.. find_test
     std::c.. __ "\n========================" __ std::e..
 
     std::vector<in.> vec {1,2,3,4,5};
@@ -48,7 +48,7 @@ void find_test
 }
 
 // Count the number of elements in a container
-void count_test
+v.. count_test
     std::c.. __ "\n========================" __ std::e..
 
      std::vector<in.> vec {1,2,3,4,5,1,2,1};
@@ -60,7 +60,7 @@ void count_test
 // Count the number of occurences of an element in a container
 // based on a predicate using a lambda expression
 
-void count_if_test
+v.. count_if_test
     std::c.. __ "\n========================" __ std::e..
 
     // count only if the element is even
@@ -78,7 +78,7 @@ void count_if_test
 }
 
 // Replace occurrences of elements in a container
-void replace_test
+v.. replace_test
     std::c.. __ "\n========================" __ std::e..
 
      std::vector<in.> vec {1,2,3,4,5,1,2,1};
@@ -94,7 +94,7 @@ void replace_test
     std::c.. __ std::e..
 }
 
-void all_of_test
+v.. all_of_test
     std::vector<in.> vec1 {1,3,5,7,9,1,3,13,19,5};
     __ (std::all_of(vec1.begin(), vec1.end(), [](in. x) { r_ x > 10; }))
         std::c.. __ "All the elements are > 10" __ std::e..
@@ -108,7 +108,7 @@ void all_of_test
 }
 
 // Transform elements in a container - string in this example
-void string_transform_test
+v.. string_transform_test
     std::c.. __ "\n========================" __ std::e..
 
     std::string str1 {"This is a test"};

@@ -13,7 +13,7 @@ public:
     ~Teststd::c.. __ "\tTest destructor (" __ data __ ")" __ std::e.. }
 };
 
-void my_deleter(Test *ptr) {
+v.. my_deleter(Test *ptr) {
     std::c.. __ "\tUsing my custom function deleter" __ std::e..
     delete ptr;
 }

@@ -6,7 +6,7 @@
 ? <set>
 
 
-void display(co.. std::map<std::string, std::set<in.__ &m) {
+v.. display(co.. std::map<std::string, std::set<in.__ &m) {
     std::c.. __ "[ ";
     ___ (co.. a.. &elem: m) {
         std::c.. __ elem.first __ ": [ " ;
@@ -18,7 +18,7 @@ void display(co.. std::map<std::string, std::set<in.__ &m) {
 }
 
 template <typename T1, typename T2>
-void display(co.. std::map<T1, T2> &l) {
+v.. display(co.. std::map<T1, T2> &l) {
     std::c.. __ "[ ";
     ___ (co.. a.. &elem: l) {
         std::c.. __ elem.first __ ":" __ elem.second __ " ";
@@ -26,7 +26,7 @@ void display(co.. std::map<T1, T2> &l) {
     std::c.. __ "]  " __ std::e..
 }
 
-void test1
+v.. test1
     // Maps
     std::c.. __ "\nTest1 =========================" __ std::e..
     std::map<std::string, in.> m {
@@ -64,7 +64,7 @@ void test1
 
 }
 
-void test2
+v.. test2
     std::c.. __ "\nTest2 =========================" __ std::e..
     
     std::map<std::string, std::set<in.__ grades  {
