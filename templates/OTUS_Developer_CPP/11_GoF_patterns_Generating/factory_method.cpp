@@ -2,7 +2,7 @@
 
 ? |i..
 
-enum c_ Storage { mysql, postgres }sy.. pause
+en.. c_ Storage { mysql, postgres }sy.. pause
 
 struct IStorage {
     virtual ~IStorage() _ defaultsy.. pause

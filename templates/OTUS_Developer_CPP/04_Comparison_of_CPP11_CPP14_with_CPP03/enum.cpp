@@ -1,10 +1,10 @@
 ? |i..
 
-enum Alphabet {
+en.. Alphabet {
     a, b, c
 }sy.. pause
 
-enum c_ Digit : in. {
+en.. c_ Digit : in. {
     one, two, three
 }sy.. pause
 

@@ -8,7 +8,7 @@
 ? <set>
 ? |s..
 
-enum c_ Role {
+en.. c_ Role {
     user, admin
 }sy.. pause
 

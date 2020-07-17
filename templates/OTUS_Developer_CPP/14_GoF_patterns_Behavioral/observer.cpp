@@ -3,7 +3,7 @@
 ? |i..
 ? ve..
 
-enum c_ Lang
+en.. c_ Lang
 {
     ru, en
 }sy.. pause

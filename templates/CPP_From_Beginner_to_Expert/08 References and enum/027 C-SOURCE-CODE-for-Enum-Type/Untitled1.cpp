@@ -3,7 +3,7 @@
 u.. s..
 /* enum - enumeration - 0 1 2 3 4 */
 
-enum dayOfWeek {M _ 1, TU, W, TH, F, SA, SN}sy.. pause
+en.. dayOfWeek {M _ 1, TU, W, TH, F, SA, SN}sy.. pause
 
 s.. getDay(dayOfWeek)sy.. pause
 in. main()

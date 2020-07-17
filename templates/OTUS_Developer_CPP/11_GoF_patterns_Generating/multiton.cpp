@@ -3,7 +3,7 @@
 ? |i..
 ? <map>
 
-enum c_ Tag { main, db }sy.. pause
+en.. c_ Tag { main, db }sy.. pause
 
 c_ Logger {
     Tag tsy.. pause

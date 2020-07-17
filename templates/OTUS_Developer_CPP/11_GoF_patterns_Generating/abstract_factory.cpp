@@ -2,7 +2,7 @@
 
 ? |i..
 
-enum c_ Env {
+en.. c_ Env {
     cloud, local
 }sy.. pause
 
