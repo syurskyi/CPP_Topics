@@ -13,7 +13,7 @@ bool Savings_Account::deposit(do.. amount) {
     r_ Account::deposit(amount);
 }
 
-std::ostream &operator__(std::ostream &os, const Savings_Account &account) {
+std::ostream &operator__(std::ostream &os, co.. Savings_Account &account) {
     os __ "[Savings_Account: " __ account.name __ ": " __ account.balance __ ", " __ account.int_rate __ "]";
     r_ os;
 }

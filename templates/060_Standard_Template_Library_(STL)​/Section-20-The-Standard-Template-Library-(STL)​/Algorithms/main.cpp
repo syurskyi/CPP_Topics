@@ -13,10 +13,10 @@ public:
     Person() = default;
     Person(std::string name, in. age)
         : name{name}, age{age}  {}
-    bool operator<(const Person &rhs) const {
+    bool operator<(co.. Person &rhs) co.. {
         r_ this->age < rhs.age;
     }
-    bool operator__(const Person &rhs) const {
+    bool operator__(co.. Person &rhs) co.. {
         r_ (this->name __ rhs.name && this->age __ rhs.age);
     }
 };

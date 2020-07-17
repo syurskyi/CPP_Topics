@@ -10,7 +10,7 @@
 ? <limits>
 
 class Song {
-    friend std::ostream &operator__(std::ostream &os, const Song &s);
+    friend std::ostream &operator__(std::ostream &os, co.. Song &s);
     std::string name;
     std::string artist;
     in. rating;
@@ -18,26 +18,26 @@ public:
     Song() = default;
     Song(std::string name, std::string artist, in. rating)
             : name{name}, artist{artist}, rating{rating} {}
-    std::string get_name() const {
+    std::string get_name() co.. {
         r_ name;
     }
-    std::string get_artist() const {
+    std::string get_artist() co.. {
         r_ artist;
     }
-    in. get_rating() const {
+    in. get_rating() co.. {
         r_ rating;
     }
     
-    bool operator<(const Song &rhs) const  {
+    bool operator<(co.. Song &rhs) co..  {
         r_ this->name < rhs.name;
     }
     
-    bool operator__(const Song &rhs) const  {
+    bool operator__(co.. Song &rhs) co..  {
         r_ this->name __ rhs.name;
     }
 };
 
-std::ostream &operator__(std::ostream &os, const Song &s) {
+std::ostream &operator__(std::ostream &os, co.. Song &s) {
     os __ std::setw(20) __ std::left __ s.name
        __ std::setw(30) __ std::left __ s.artist
        __ std::setw(2) __ std::left __ s.rating;
@@ -54,14 +54,14 @@ void display_menu
     std::c.. __ "Enter a selection (Q to quit): ";
 }
 
-void play_current_song(const Song &song) {
+void play_current_song(co.. Song &song) {
     // This function should display 
     // Playing: followed by the song that is playing
    
     std::c.. __ "You implement this function"__ std::e..
 }
 
-void display_playlist(const std::list<Song> &playlist, const Song &current_song) {
+void display_playlist(co.. std::list<Song> &playlist, co.. Song &current_song) {
     // This function should display the current playlist 
     // and then the current song playing.
     

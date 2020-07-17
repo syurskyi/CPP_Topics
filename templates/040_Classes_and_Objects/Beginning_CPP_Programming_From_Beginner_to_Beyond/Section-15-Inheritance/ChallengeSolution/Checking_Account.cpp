@@ -9,7 +9,7 @@ bool Checking_Account::withdraw(do.. amount) {
     r_ Account::withdraw(amount);
 }
 
-std::ostream &operator__(std::ostream &os, const Checking_Account &account) {
+std::ostream &operator__(std::ostream &os, co.. Checking_Account &account) {
     os __ "[Checking_Account: " __ account.name __ ": " __ account.balance  __ "]";
     r_ os;
 }

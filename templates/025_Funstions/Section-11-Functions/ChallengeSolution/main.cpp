@@ -102,22 +102,22 @@ void display_menu();
 ch.. get_selection();
 
 // Menu handling function prototypes
-void handle_display(const vector<in.> &v);
+void handle_display(co.. vector<in.> &v);
 void handle_add(vector<in.> &v);
-void handle_mean(const vector<in.> &v);
-void handle_smallest(const vector<in.> &v);
-void handle_largest(const vector<in.> &v);
-void handle_find(const vector<in.> &v);
+void handle_mean(co.. vector<in.> &v);
+void handle_smallest(co.. vector<in.> &v);
+void handle_largest(co.. vector<in.> &v);
+void handle_find(co.. vector<in.> &v);
 void handle_quit();
 void handle_unknown();
 
 // Prototypes for functions that work with the list
 // to display it, calculate mean, etc.
-void display_list(const vector<in.> &v);
-do.. calculate_mean(const vector<in.> &v);
-in. get_smallest(const vector<in.> &v);
-in. get_largest(const vector<in.> &v);
-bool find(const vector<in.> &v, in. target);
+void display_list(co.. vector<in.> &v);
+do.. calculate_mean(co.. vector<in.> &v);
+in. get_smallest(co.. vector<in.> &v);
+in. get_largest(co.. vector<in.> &v);
+bool find(co.. vector<in.> &v, in. target);
 
 in. main
     
@@ -187,7 +187,7 @@ option from the main menu.
 Note that the parameter is a const reference parameter
 this function should NOT modify the list of numbers
 ***************************************************************/
-void handle_display(const vector<in.> &v) {
+void handle_display(co.. vector<in.> &v) {
     __ (v.s.. __ 0)
         c.. __ "[] - the list is empty" __ e..
     ____
@@ -215,7 +215,7 @@ from the main menu
 Note that the parameter is a const reference parameter
 this function should NOT modify the list of numbers
 ***************************************************************/
-void handle_mean(const vector<in.> &v) {
+void handle_mean(co.. vector<in.> &v) {
     __ (v.s.. __ 0)
         c.. __ "Unable to calculate mean - list is empty" __ e..
     ____
@@ -228,7 +228,7 @@ option from the main menu
 Note that the parameter is a const reference parameter
 this function should NOT modify the list of numbers
 ***************************************************************/
-void handle_smallest(const vector<in.> &v) {
+void handle_smallest(co.. vector<in.> &v) {
      __ (v.s.. __ 0)
         c.. __ "Unable to determine the smallest - list is empty" __ e..
     ____
@@ -241,7 +241,7 @@ option from the main menu
 Note that the parameter is a const reference parameter
 this function should NOT modify the list of numbers
 ***************************************************************/
-void handle_largest(const vector<in.> &v) {
+void handle_largest(co.. vector<in.> &v) {
      __ (v.s.. __ 0)
         c.. __ "Unable to determine the largest - list is empty" __ e..
     ____
@@ -254,7 +254,7 @@ option from the main menu
 Note that the parameter is a const reference parameter
 this function should NOT modify the list of numbers
 ***************************************************************/
-void handle_find(const vector<in.> &v) {
+void handle_find(co.. vector<in.> &v) {
     in. target{};
     c.. __ "Enter the number to find: ";
     ci. __ target;
@@ -288,7 +288,7 @@ and displays all the integers in the list in square brackets
 Note that the parameter is a const reference parameter
 this function should NOT modify the list of numbers
 ***************************************************************/
-void display_list(const vector<in.> &v) {
+void display_list(co.. vector<in.> &v) {
     c.. __ "[ ";
     ___ (auto num: v)
         c.. __ num __ " ";
@@ -302,7 +302,7 @@ Note that the parameter is a const reference parameter
 this function should NOT modify the list of numbers
 Note: the list must not be empty
 ***************************************************************/
-do.. calculate_mean(const vector<in.> &v) {
+do.. calculate_mean(co.. vector<in.> &v) {
     in. total {};
     ___ (auto num: v)
         total += num;
@@ -316,7 +316,7 @@ Note that the parameter is a const reference parameter
 this function should NOT modify the list of numbers
 Note: the list must not be empty
 ***************************************************************/
-in. get_largest(const vector<in.> &v) {
+in. get_largest(co.. vector<in.> &v) {
     in. largest = v.at(0);
     ___ (auto num: v)
         __ (num > largest)
@@ -331,7 +331,7 @@ Note that the parameter is a const reference parameter
 this function should NOT modify the list of numbers
 Note: the list must not be empty
 ***************************************************************/
-in. get_smallest(const vector<in.> &v) {
+in. get_smallest(co.. vector<in.> &v) {
     in. smallest = v.at(0);
     ___ (auto num: v)
         __ (num < smallest)
@@ -349,7 +349,7 @@ If the target is not found in the vector false is returned
 Note that the parameter is a const reference parameter
 this function should NOT modify the list of numbers
 ***************************************************************/
-bool find(const vector<in.> &v, in. target) {
+bool find(co.. vector<in.> &v, in. target) {
     ___ (auto num: v)
         __ (num __ target)
             r_ true;

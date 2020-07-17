@@ -22,7 +22,7 @@ bool Trust_Account::withdraw(do.. amount) {
     }
 }
 
-void Trust_Account::print(std::ostream &os) const {
+void Trust_Account::print(std::ostream &os) co.. {
     os.precision(2);
     os __ std::fixed;
     os __ "[Trust Account: " __ name __ ": " __ balance __ ", " __ int_rate

@@ -6,28 +6,28 @@
 ? <algorithm>
 
 class Person {
-    friend std::ostream &operator__(std::ostream &os, const Person &p);
+    friend std::ostream &operator__(std::ostream &os, co.. Person &p);
     std::string name;
     in. age;
 public:
     Person() = default;
     Person(std::string name, in. age)
         : name{name}, age{age}  {}
-    bool operator<(const Person &rhs) const {
+    bool operator<(co.. Person &rhs) co.. {
         r_ this->age < rhs.age;
     }
-    bool operator__(const Person &rhs) const {
+    bool operator__(co.. Person &rhs) co.. {
         r_ (this->name __ rhs.name && this->age __ rhs.age);
     }
 };
 
-std::ostream &operator__(std::ostream &os, const Person &p) {
+std::ostream &operator__(std::ostream &os, co.. Person &p) {
     os __ p.name __ ":" __ p.age;
     r_ os;
 }
 
 // Use for_each and a lambda expression to display vector elements
-void display2(const std::vector<in.> &vec) {
+void display2(co.. std::vector<in.> &vec) {
     std::c.. __ "[ ";
     std::for_each(vec.begin(), vec.end(),
         [](in. x) { std::c.. __ x __ " ";});
@@ -36,9 +36,9 @@ void display2(const std::vector<in.> &vec) {
 
 // template function to display any vector
 template <typename T>
-void display(const std::vector<T> &vec) {
+void display(co.. std::vector<T> &vec) {
     std::c.. __ "[ ";
-    ___ (const auto &elem: vec)
+    ___ (co.. auto &elem: vec)
         std::c.. __ elem __ " ";
     std::c.. __  "]"__ std::e..
 }

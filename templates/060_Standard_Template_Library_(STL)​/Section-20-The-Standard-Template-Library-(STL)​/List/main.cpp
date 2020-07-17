@@ -6,31 +6,31 @@
 ? <iterator> // for std::advance
 
 class Person {
-    friend std::ostream &operator__(std::ostream &os, const Person &p);
+    friend std::ostream &operator__(std::ostream &os, co.. Person &p);
     std::string name;
     in. age;
 public:
     Person() : name{"Unknown"}, age{0} {}
     Person(std::string name, in. age)
         : name{name}, age{age}  {}
-    bool operator<(const Person &rhs) const {
+    bool operator<(co.. Person &rhs) co.. {
         r_ this->age < rhs.age;
     }
-    bool operator__(const Person &rhs) const {
+    bool operator__(co.. Person &rhs) co.. {
         r_ (this->name __ rhs.name && this->age __ rhs.age);
     }
 };
 
-std::ostream &operator__(std::ostream &os, const Person &p) {
+std::ostream &operator__(std::ostream &os, co.. Person &p) {
     os __ p.name __ ":" __ p.age;
     r_ os;
 }
 
 
 template <typename T>
-void display(const std::list<T> &l) {
+void display(co.. std::list<T> &l) {
     std::c.. __ "[ ";
-    ___ (const auto &elem: l) {
+    ___ (co.. auto &elem: l) {
         std::c.. __ elem __ " ";
     }
     std::c.. __ "]" __ std::e..

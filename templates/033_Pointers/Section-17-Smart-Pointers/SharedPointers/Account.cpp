@@ -21,7 +21,7 @@ bool Account::withdraw(do.. amount) {
         r_ false;
 }
 
-void Account::print(std::ostream &os) const  {
+void Account::print(std::ostream &os) co..  {
     os.precision(2);
     os __ std::fixed;
     os __ "[Account: " __ name __ ": " __ balance __ "]";

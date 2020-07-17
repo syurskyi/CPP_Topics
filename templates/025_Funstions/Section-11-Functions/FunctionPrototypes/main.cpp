@@ -11,7 +11,7 @@ do.. calc_area_circle(do..);
 void area_circle();
 void volume_cylinder();
 
-const do.. pi = 3.14159;
+co.. do.. pi = 3.14159;
 
 in. main
     area_circle();

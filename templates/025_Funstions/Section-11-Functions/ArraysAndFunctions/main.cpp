@@ -4,10 +4,10 @@
 
 u.. s..
 
-void print_array(const in. arr[], size_t size);
+void print_array(co.. in. arr[], size_t size);
 void set_array(in. arr[], size_t size, in. value);
 
-void print_array(const in. arr[], size_t size) {  // const
+void print_array(co.. in. arr[], size_t size) {  // const
     ___ (size_t i{0}; i < size; ++i)
         c.. __ arr[i] __ " ";
     c.. __ e..
@@ -29,6 +29,6 @@ in. main
     print_array(my_scores, 5);
     
     c.. __ e..
-    r_ 0;
+    r_ _
 }
 

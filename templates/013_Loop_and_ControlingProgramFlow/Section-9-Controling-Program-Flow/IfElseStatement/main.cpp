@@ -5,24 +5,24 @@
 u.. s..
 
 in. main
-    in. num{};
-    const in. target {10};
+    in. num
+    co.. in. target 10
 
-    c.. __ "Enter a number  and I'll compare it to " __ target __ ": ";
-    ci. __ num;
+    c.. __ "Enter a number  and I'll compare it to " __ ? __ ": "
+    ci. __ n..
     
-    __ (num >= target) {
+    __ (n.. >_ t..
         c.. __ "\n==================================" __ e..
-        c.. __ num __ " is greater than or equal to " __ target __ e..
-        in. diff { num - target};
-        c.. __ num __ " is " __ diff __ " greater than " __ target __ e..
-    } ____ {
+        c.. __ n.. __ " is greater than or equal to " __ t.. __ e..
+        in. diff  n.. - t..
+        c.. __ n.. __ " is " __ d.. __ " greater than " __ t.. __ e..
+     ____
         c.. __ "\n==================================" __ e..
-        c.. __ num __ " is less than " __ target __ e..
-        in. diff { target - num};
-        c.. __ num __ " is " __ diff __ " less than " __ target __ e..
-    }
+        c.. __ n.. __ " is less than " __ t.. __ e..
+        in. d.. | t.. - n..
+        c.. __ n.. __ " is " __ d.. __ " less than " __ t.. __ e..
+
     c..  __ e..
-    r_ 0;
-}
+    r_ _
+
 

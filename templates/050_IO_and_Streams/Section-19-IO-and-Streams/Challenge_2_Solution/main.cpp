@@ -8,8 +8,8 @@
 //function prototypes
 void print_header();
 void print_footer(do.. average);
-void print_student(const std::string &student, in. score);
-in. process_response(const std::string &response, const std::string &answer_key);
+void print_student(co.. std::string &student, in. score);
+in. process_response(co.. std::string &response, co.. std::string &answer_key);
 
 void print_header
     std::c.. __ std::setw(15) __ std::left __ "Student"
@@ -25,14 +25,14 @@ void print_footer(do.. average) {
                    __ std::setw(5) __ std::right __ average;
 }
 
-void print_student(const std::string &student, in. score) {
+void print_student(co.. std::string &student, in. score) {
     std::c.. __ std::setprecision(1) __ std::fixed;
     std::c.. __ std::setw(15) __ std::left __ student
                    __ std::setw(5) __ std::right __ score __ std::e..
 }
 
 // return the number of correct responses
-in. process_response(const std::string &response, const std::string &answer_key) {
+in. process_response(co.. std::string &response, co.. std::string &answer_key) {
     in. score {0};
     ___ (size_t i = 0; i < answer_key.s.. ; ++i) {
         __ (response.at(i)  __ answer_key.at(i))

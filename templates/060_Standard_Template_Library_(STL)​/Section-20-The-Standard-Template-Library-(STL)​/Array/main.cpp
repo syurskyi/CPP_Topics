@@ -7,9 +7,9 @@
 
 // Display the array -- note the size MUST be included
 // when passing a std::array to a function
-void display(const std::array<in., 5> &arr) {
+void display(co.. std::array<in., 5> &arr) {
     std::c.. __ "[ ";
-    ___ (const auto &i: arr)
+    ___ (co.. auto &i: arr)
         std::c.. __ i __ " ";
     std::c.. __  "]"__ std::e..
 }

@@ -21,11 +21,11 @@ bool Account::withdraw(do.. amount) {
         r_ false;
 }
 
-do.. Account::get_balance() const {
+do.. Account::get_balance() co.. {
     r_ balance;
 }
 
-std::ostream &operator__(std::ostream &os, const Account &account) {
+std::ostream &operator__(std::ostream &os, co.. Account &account) {
     os __ "[Account: " __ account.name __ ": " __ account.balance __ "]";
     r_ os;
 }

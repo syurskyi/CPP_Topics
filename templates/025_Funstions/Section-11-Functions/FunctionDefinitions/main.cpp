@@ -5,7 +5,7 @@
 
 u.. s..
 
-const do.. pi {3.14159};
+co.. do.. pi {3.14159};
 
 do.. calc_area_circle(do.. radius) {
     r_ pi * radius * radius;

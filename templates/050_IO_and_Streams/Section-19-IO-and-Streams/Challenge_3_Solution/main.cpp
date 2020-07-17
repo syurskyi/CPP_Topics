@@ -5,7 +5,7 @@
 ? <fstream>
 
 // return true if the string word_to_find is in the target string
-bool find_substring(const std::string &word_to_find, const std::string &target) {
+bool find_substring(co.. std::string &word_to_find, co.. std::string &target) {
     std::size_t found = target.find(word_to_find);
     __ (found __ std::string::npos)
         r_ false;

@@ -7,9 +7,9 @@
 ? <list>
 
 // display any vector of integers using range-based for loop
-void display(const std::vector<in.> &vec) {
+void display(co.. std::vector<in.> &vec) {
     std::c.. __ "[ ";
-    ___ (auto const &i: vec) {
+    ___ (auto co.. &i: vec) {
         std::c.. __ i __ " ";
     }
     std::c.. __ "]" __ std::e..
@@ -49,7 +49,7 @@ void test2
     // change all vector elements to 0
     it = nums1.begin();
     w__ (it != nums1.end()) {
-        *it = 0;
+        *it = _
         it++;
     }
 
@@ -128,5 +128,5 @@ in. main
 //    test3();
 //    test4();
     test5();
-    r_ 0;
+    r_ _
 }

@@ -15,8 +15,8 @@ private:
 public:
     Item(std::string name, T value) : name{name}, value{value} 
     {}
-    std::string get_name() const {r_ name; }
-    T get_value() const { r_ value; }
+    std::string get_name() co.. {r_ name; }
+    T get_value() co.. { r_ value; }
 };
 
 template <typename T1, typename T2>
@@ -44,7 +44,7 @@ in. main
     vec.push_back (Item<do..>("Moe", 200.0));
     vec.push_back (Item<do..>("Curly",300.0));
     
-    ___ (const auto &item: vec) {
+    ___ (co.. auto &item: vec) {
         std::c.. __ item.get_name() __ " " __ item.get_value() __ std::e..
     }
    

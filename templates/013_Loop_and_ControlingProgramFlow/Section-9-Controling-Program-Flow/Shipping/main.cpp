@@ -25,8 +25,8 @@ in. main
     in. length{}, width{}, height{};
     do.. base_cost{2.50};
     
-    const in. tier1_threshold {100};    // volume
-    const in. tier2_threshold{500};    // volume
+    co.. in. tier1_threshold {100};    // volume
+    co.. in. tier2_threshold{500};    // volume
     
     in. max_dimension_length  {10};  // inches
     

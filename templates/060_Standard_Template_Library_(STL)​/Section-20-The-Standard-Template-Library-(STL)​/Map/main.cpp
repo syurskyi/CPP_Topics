@@ -6,11 +6,11 @@
 ? <set>
 
 
-void display(const std::map<std::string, std::set<in.__ &m) {
+void display(co.. std::map<std::string, std::set<in.__ &m) {
     std::c.. __ "[ ";
-    ___ (const auto &elem: m) {
+    ___ (co.. auto &elem: m) {
         std::c.. __ elem.first __ ": [ " ;
-            ___ (const auto &set_elem : elem.second)
+            ___ (co.. auto &set_elem : elem.second)
                  std::c.. __ set_elem __  " ";
             std::c.. __ "] " ;
     }
@@ -18,9 +18,9 @@ void display(const std::map<std::string, std::set<in.__ &m) {
 }
 
 template <typename T1, typename T2>
-void display(const std::map<T1, T2> &l) {
+void display(co.. std::map<T1, T2> &l) {
     std::c.. __ "[ ";
-    ___ (const auto &elem: l) {
+    ___ (co.. auto &elem: l) {
         std::c.. __ elem.first __ ":" __ elem.second __ " ";
     }
     std::c.. __ "]  " __ std::e..

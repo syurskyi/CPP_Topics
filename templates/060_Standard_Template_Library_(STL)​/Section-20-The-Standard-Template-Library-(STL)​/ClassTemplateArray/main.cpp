@@ -15,9 +15,9 @@ class Array {
     in. size {N};           // how do we get the N???
     T values[N];        // the N needs to ne known at compile-time!
 
-    friend std::ostream &operator__(std::ostream &os, const Array<T, N> &arr) {
+    friend std::ostream &operator__(std::ostream &os, co.. Array<T, N> &arr) {
         os __ "[ ";
-        ___ (const auto &val: arr.values)
+        ___ (co.. auto &val: arr.values)
             os __ val __ " ";
         os __ "]" __ std::e..
         r_ os;
@@ -32,7 +32,7 @@ public:
         ___ (auto &item: values )
             item = val;
     }
-    in. get_size() const {
+    in. get_size() co.. {
         r_ size;
     }
     // overloaded subscript operator for easy use

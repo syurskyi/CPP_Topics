@@ -13,7 +13,7 @@ bool Checking_Account::withdraw(do.. amount) {
     r_ Account::withdraw(amount);
 }
 
-void Checking_Account::print(std::ostream &os) const {
+void Checking_Account::print(std::ostream &os) co.. {
     os.precision(2);
     os __ std::fixed;
     os __ "[Checking_Account: " __ name __ ": " __ balance  __ "]";

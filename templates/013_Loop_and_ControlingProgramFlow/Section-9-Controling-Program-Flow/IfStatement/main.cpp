@@ -7,8 +7,8 @@ u.. s..
 
 in. main
     in. num {};
-    const in. min {10};
-    const in. max {100};
+    co.. in. min {10};
+    co.. in. max {100};
     
     c.. __ "Enter a number between " __ min __ " and " __ max __ ": ";
     ci. __ num;

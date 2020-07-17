@@ -59,14 +59,14 @@ private:
 public:
     Test() : data{0} { std::c.. __ "\tTest constructor (" __ data __ ")" __ std::e.. }
     Test(in. data) : data {data} { std::c.. __ "\tTest constructor (" __ data __ ")" __ std::e.. }
-    in. get_data() const {r_ data; }
+    in. get_data() co.. {r_ data; }
     ~Teststd::c.. __ "\tTest destructor (" __ data __ ")" __ std::e.. }
 };
 
 // Function prototypes
 std::unique_ptr<std::vector<std::shared_ptr<Test>>> make();
 void fill(std::vector<std::shared_ptr<Test__ &vec, in. num);
-void display(const std::vector<std::shared_ptr<Test__&vec);
+void display(co.. std::vector<std::shared_ptr<Test__&vec);
 
 in. main
     std::unique_ptr<std::vector<std::shared_ptr<Test>>> vec_ptr;
@@ -76,5 +76,5 @@ in. main
     std::ci. __ num;
     fill(*vec_ptr, num);
     display(*vec_ptr);
-    r_ 0;
+    r_ _
 }

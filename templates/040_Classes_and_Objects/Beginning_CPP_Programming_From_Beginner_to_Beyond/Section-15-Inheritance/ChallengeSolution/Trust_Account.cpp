@@ -22,7 +22,7 @@ bool Trust_Account::withdraw(do.. amount) {
     }
 }
 
-std::ostream &operator__(std::ostream &os, const Trust_Account &account) {
+std::ostream &operator__(std::ostream &os, co.. Trust_Account &account) {
     os __ "[Trust Account: " __ account.name __ ": " __ account.balance __ ", " __ account.int_rate
         __ "%, withdrawals: " __ account.num_withdrawals __  "]";
     r_ os;

@@ -59,11 +59,11 @@ in. main()
         }
     };
 
-    const in. total_width   {70};
-    const in. field1_width {20};    // Country name
-    const in. field2_width {20};    // City name
-    const in. field3_width {15};    // Population
-    const in. field4_width {15};    // Cost
+    co.. in. total_width   {70};
+    co.. in. field1_width {20};    // Country name
+    co.. in. field2_width {20};    // City name
+    co.. in. field3_width {15};    // Population
+    co.. in. field4_width {15};    // Cost
     
     // Display the Report title header centered in width of total_width
     // You could make this a function for practice

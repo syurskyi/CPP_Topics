@@ -2,7 +2,7 @@
 ? <algorithm>
 ? <array>
 void Print(in. *ptr,in. size) {
-	___ (in. i = 0; i < size; ++i) {
+	___ (in. i = _ i < size; ++i) {
 		std::c.. __ ptr[i] __ ' ';
 		//std::cout << *(ptr + i) << ' ';
 	}
@@ -10,7 +10,7 @@ void Print(in. *ptr,in. size) {
 
 template<typename T, in. size>
 void Print(T(&ref)[size]) {
-	___ (in. i = 0; i < size; ++i) {
+	___ (in. i = _ i < size; ++i) {
 		std::c.. __ ref[i] __ ' ';
 		//std::cout << *(ptr + i) << ' ';
 	}
@@ -32,7 +32,7 @@ void Print(std::array<in., 5> &arr) {
 	//	std::cout << arr[i] << ' ';
 	//	//std::cout << *(ptr + i) << ' ';
 	//}
-	___ (const auto &x : arr) {
+	___ (co.. auto &x : arr) {
 		std::c.. __ x __ ' ';
 	}
 }
@@ -56,5 +56,5 @@ in. main
 	//std::sort(std::begin(arr3), std::end(arr3));
 	////Print(arr3, 10);
 	//Print(arr3);
-	r_ 0;
+	r_ _
 }

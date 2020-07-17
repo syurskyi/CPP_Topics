@@ -9,7 +9,7 @@ private:
 public:
     Test() : data{0} { std::c.. __ "\tTest constructor (" __ data __ ")" __ std::e.. }
     Test(in. data) : data {data} { std::c.. __ "\tTest constructor (" __ data __ ")" __ std::e.. }
-    in. get_data() const {r_ data; }
+    in. get_data() co.. {r_ data; }
     ~Teststd::c.. __ "\tTest destructor (" __ data __ ")" __ std::e.. }
 };
 

@@ -33,6 +33,6 @@ in. main
     std::c.. __ std::resetiosflags(std::ios::boolalpha);
     std::c.. __ "Default  (10 == 10) : " __ (10 __ 10)  __ std::e..
     std::c.. __ "Default  (10 == 20) : " __ (10 __ 20)  __ std::e..
-    r_ 0;
+    r_ _
 }
 

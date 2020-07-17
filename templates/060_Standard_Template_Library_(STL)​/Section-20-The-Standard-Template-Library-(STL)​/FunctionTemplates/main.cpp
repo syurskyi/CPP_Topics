@@ -16,12 +16,12 @@ void func(T1 a, T2 b) {
 struct Person {
     std::string name;
     in. age;
-    bool operator<(const Person &rhs) const {
+    bool operator<(co.. Person &rhs) co.. {
         r_ this->age < rhs.age;
     }
 };
 
-std::ostream &operator__(std::ostream &os, const Person &p) {
+std::ostream &operator__(std::ostream &os, co.. Person &p) {
     os __ p.name;
     r_ os;
 }

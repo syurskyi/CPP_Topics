@@ -14,7 +14,7 @@
 // Display the word and count from the 
 // std::map<std::string, int>
 
-void display_words(const std::map<std::string, in.> &words) {
+void display_words(co.. std::map<std::string, in.> &words) {
     std::c.. __ std::setw(12) __ std::left __ "\nWord"
                 __ std::setw(7) __ std::right __ "Count"__ std::e..
     std::c.. __ "===================" __ std::e..
@@ -27,7 +27,7 @@ void display_words(const std::map<std::string, in.> &words) {
 // Display the word and occurences from the 
 // std::map<std::string, std::set<int>>
 
-void display_words(const std::map<std::string, std::set<in.__ &words)
+void display_words(co.. std::map<std::string, std::set<in.__ &words)
 {
      std::c.. __ std::setw(12) __ std::left __ "\nWord"
                 __ "Occurrences"__ std::e..
@@ -43,7 +43,7 @@ void display_words(const std::map<std::string, std::set<in.__ &words)
 
 // This function removes periods, commas, semicolons and colon in 
 // a string and returns the clean version
-std::string clean_string(const std::string &s) {
+std::string clean_string(co.. std::string &s) {
     std::string result;
     ___ (ch.. c: s) {
         __ (c __ '.' || c __ ',' || c __ ';' || c __ ':')

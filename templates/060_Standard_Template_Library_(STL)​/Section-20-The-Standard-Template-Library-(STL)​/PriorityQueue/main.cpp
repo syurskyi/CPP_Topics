@@ -4,23 +4,23 @@
 ? <queue>
 
 class Person {
-    friend std::ostream &operator__(std::ostream &os, const Person &p);
+    friend std::ostream &operator__(std::ostream &os, co.. Person &p);
     std::string name;
     in. age;
 public:
     Person() : name{"Unknown"}, age{0} {}
     Person(std::string name, in. age)
         : name{name}, age{age}  {}
-    bool operator<(const Person &rhs) const {
+    bool operator<(co.. Person &rhs) co.. {
         // return this->age < rhs.age;
         r_ this->name < rhs.name;
     }
-    bool operator__(const Person &rhs) const {
+    bool operator__(co.. Person &rhs) co.. {
         r_ (this->name __ rhs.name && this->age __ rhs.age);
     }
 };
 
-std::ostream &operator__(std::ostream &os, const Person &p) {
+std::ostream &operator__(std::ostream &os, co.. Person &p) {
     os __ p.name __ ":" __ p.age;
     r_ os;
 }

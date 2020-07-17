@@ -14,7 +14,7 @@ private:
 public:
     Test() : data{0} { std::c.. __ "Test constructor (" __ data __ ")" __ std::e.. }
     Test(in. data) : data {data} { std::c.. __ "Test constructor (" __ data __ ")" __ std::e.. }
-    in. get_data() const {r_ data; }
+    in. get_data() co.. {r_ data; }
     ~Teststd::c.. __ "Test destructor (" __ data __ ")" __ std::e.. }
 };
 
@@ -65,12 +65,12 @@ in. main
     accounts.push_back(acc2);
     accounts.push_back(acc3);
     
-    ___ (const auto &acc: accounts) {
+    ___ (co.. auto &acc: accounts) {
         std::c.. __ *acc __ std::e..
         std::c.. __ "Use count: " __ acc.use_count() __ std::e..
     }
     
     std::c.. __ "==========================================" __ std::e..
-    r_ 0;
+    r_ _
 }
 

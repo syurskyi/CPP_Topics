@@ -17,7 +17,7 @@ void Print(std::initializer_list<in.> list) {
 		std::cout << *it << ' ';
 			++it;
 	}*/
-	___(const auto &x : list){
+	___(co.. auto &x : list){
 		std::c.. __ x __ ' ';
 	}
 }
