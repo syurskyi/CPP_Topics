@@ -23,7 +23,7 @@ v.. display(std::stack<T> s) {
 
 in. main
     std::stack<in.> s;
-    std::stack<in., std::vector<in.__ s1;
+    std::stack<in., std::ve..<in.__ s1;
     std::stack<in., std::list<in.__ s2;
     std::stack<in., std::deque<in.__ s3;
     

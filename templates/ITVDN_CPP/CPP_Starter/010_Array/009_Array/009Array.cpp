@@ -5,9 +5,9 @@ u.. s..
 
 in. main()
 {
-	in. vector[1]sy.. pause
-	vector[0] _ 10sy.. pause
-	c__ __  vector[0] __  e..
+	in. ve..[1]sy.. pause
+	ve..[0] _ 10sy.. pause
+	c__ __  ve..[0] __  e..
 
 	in. matrix[1][1]sy.. pause
 	matrix[0][0] _ 100sy.. pause

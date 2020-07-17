@@ -36,7 +36,7 @@ pu..
         c.push_back(fso)sy.. pause
     }
 pr..
-    std::vector<FileSystemObject *> csy.. pause
+    std::ve..<FileSystemObject *> csy.. pause
 }sy.. pause
 
 

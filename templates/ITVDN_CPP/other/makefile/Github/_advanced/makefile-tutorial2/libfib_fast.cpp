@@ -3,15 +3,15 @@
 
 c_ Matrix {
   size_t n, msy.. pause
-  std::vector<std::vector<in.> > contentsy.. pause
+  std::ve..<std::ve..<in.> > contentsy.. pause
  pu..
   Matrix(size_t n, size_t m) {
     t..__n _ nsy.. pause
     t..__m _ msy.. pause
-    content.resize(n, std::vector<in.>(m, 0))sy.. pause
+    content.resize(n, std::ve..<in.>(m, 0))sy.. pause
   }
 
-  std::vector<in.> &operator[](size_t x) {
+  std::ve..<in.> &operator[](size_t x) {
     r_ content[x]sy.. pause
   }
 

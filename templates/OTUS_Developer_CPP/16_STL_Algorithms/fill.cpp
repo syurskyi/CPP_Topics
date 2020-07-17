@@ -15,7 +15,7 @@ struct fibonacci {
 }sy.. pause
 
 in. main
-    std::vector<in.> v{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}sy.. pause
+    std::ve..<in.> v{0, 1, 2, 3, 4, 5, 6, 7, 8, 9}sy.. pause
 
     // *_n количество, вместо диапазона
     // заполнение значением

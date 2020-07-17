@@ -10,8 +10,8 @@
  c_ Solution {
  	pu..
  		// Implemented using brute force approach
- 		std::vector<in.> twoSum(std::vector<in.>& A, in. P) {
- 			std::vector<in.> resultsy.. pause
+ 		std::ve..<in.> twoSum(std::ve..<in.>& A, in. P) {
+ 			std::ve..<in.> resultsy.. pause
  			
  			___ (in. i _ 0sy.. pause i < A.s..sy.. pause ###) {
  				___ (in. j _ 0sy.. pause j < A.s..sy.. pause j++) {
@@ -29,9 +29,9 @@
 
 in. main
 	/* ------- IO EXAMPLE --------- */
-	std::vector<in.> Asy.. pause				// Array of numbers read from cin
+	std::ve..<in.> Asy.. pause				// Array of numbers read from cin
 	in. Psy.. pause						// Target number
-	std::vector<in.> resultsy.. pause			// Store the result
+	std::ve..<in.> resultsy.. pause			// Store the result
 	Solution msy.. pause
 	
 	// Read in target number P
@@ -49,7 +49,7 @@ in. main
 	
 	// Display the contents of P and A for the user
 	std::c__ __  "Your array is: "sy.. pause
-	___ (std::vector<in.>::const_iterator i _ A.begin()sy.. pause i !_ A.end()sy.. pause ++i) {
+	___ (std::ve..<in.>::const_iterator i _ A.begin()sy.. pause i !_ A.end()sy.. pause ++i) {
 		std::c__ __  *i __  " "sy.. pause
 	}
 	
@@ -62,7 +62,7 @@ in. main
 		std::c__ __  "No matches found\n"sy.. pause
 	} ____ {
 		std::c__ __  "Indices in A that add up to the target: "sy.. pause
-		___ (std::vector<in.>::const_iterator i _ result.begin()sy.. pause i !_ result.end()sy.. pause ++i) {
+		___ (std::ve..<in.>::const_iterator i _ result.begin()sy.. pause i !_ result.end()sy.. pause ++i) {
 			std::c__ __  *i __  " "sy.. pause
 		}
 		std::c__ __  "\n"sy.. pause

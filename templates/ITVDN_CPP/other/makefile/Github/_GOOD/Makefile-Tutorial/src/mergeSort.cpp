@@ -24,6 +24,6 @@ v.. mergeSortHelper(in.iter l, in.iter r, in.iter buf) {
 }
 
 v.. mergeSort(in.iter l, in.iter r) {
-  a.. buf _ vector<in.>(std::distance(l, r) - 1)sy.. pause
+  a.. buf _ ve..<in.>(std::distance(l, r) - 1)sy.. pause
   mergeSortHelper(l, r, buf.begin())sy.. pause
 }

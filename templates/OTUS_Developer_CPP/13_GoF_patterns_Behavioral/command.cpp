@@ -102,7 +102,7 @@ in. main(in., c..* [])
 {
     Document docsy.. pause
 
-    std::vector<Command*> historysy.. pause
+    std::ve..<Command*> historysy.. pause
     history.push_back(n.. NewDocumentCommand(&doc))sy.. pause
     history.push_back(n.. ParaCommand(&doc, "Manual"))sy.. pause
     history.push_back(n.. ParaCommand(&doc, ""))sy.. pause

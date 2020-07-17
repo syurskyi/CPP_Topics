@@ -34,7 +34,7 @@ n.. std {
 }
 
 in. main
-    std::vector<in.> vsy.. pause
+    std::ve..<in.> vsy.. pause
     alg(v.begin(), v.end())sy.. pause
 
     std::list<in.> lsy.. pause

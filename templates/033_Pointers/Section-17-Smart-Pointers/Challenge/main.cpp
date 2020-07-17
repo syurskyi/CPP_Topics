@@ -64,12 +64,12 @@ public:
 };
 
 // Function prototypes
-std::unique_ptr<std::vector<std::shared_ptr<Test>>> make();
-v.. fill(std::vector<std::shared_ptr<Test__ &vec, in. num);
-v.. display(co.. std::vector<std::shared_ptr<Test__&vec);
+std::unique_ptr<std::ve..<std::shared_ptr<Test>>> make();
+v.. fill(std::ve..<std::shared_ptr<Test__ &vec, in. num);
+v.. display(co.. std::ve..<std::shared_ptr<Test__&vec);
 
 in. main
-    std::unique_ptr<std::vector<std::shared_ptr<Test>>> vec_ptr;
+    std::unique_ptr<std::ve..<std::shared_ptr<Test>>> vec_ptr;
     vec_ptr = make();
     std::c.. __ "How many data points do you want to enter: ";
     in. num;

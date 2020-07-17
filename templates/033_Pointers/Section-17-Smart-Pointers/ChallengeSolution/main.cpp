@@ -65,15 +65,15 @@ public:
 
 // Function prototypes
 a.. make();
-v.. fill(std::vector<std::shared_ptr<Test__ &vec, in. num);
-v.. display(co.. std::vector<std::shared_ptr<Test__&vec);
+v.. fill(std::ve..<std::shared_ptr<Test__ &vec, in. num);
+v.. display(co.. std::ve..<std::shared_ptr<Test__&vec);
 
 
 a.. make
-    r_ std::make_unique<std::vector<std::shared_ptr<Test>>>();
+    r_ std::make_unique<std::ve..<std::shared_ptr<Test>>>();
 }
 
-v.. fill(std::vector<std::shared_ptr<Test__ &vec, in. num)  {
+v.. fill(std::ve..<std::shared_ptr<Test__ &vec, in. num)  {
     in. temp;
     ___ (in. i=1; i<=num; ++i) {
         std::c.. __ "Enter data point [" __ i __ "] : ";
@@ -85,7 +85,7 @@ v.. fill(std::vector<std::shared_ptr<Test__ &vec, in. num)  {
     }
 }
 
-v.. display(co.. std::vector<std::shared_ptr<Test__&vec) {
+v.. display(co.. std::ve..<std::shared_ptr<Test__&vec) {
     std::c.. __ "\nDisplaying vector data" __ std::e..
     std::c.. __ "=======================" __ std::e..
     ___ (co.. a.. &ptr: vec)
@@ -95,7 +95,7 @@ v.. display(co.. std::vector<std::shared_ptr<Test__&vec) {
 }
 
 in. main
-    std::unique_ptr<std::vector<std::shared_ptr<Test>>> vec_ptr;
+    std::unique_ptr<std::ve..<std::shared_ptr<Test>>> vec_ptr;
     vec_ptr = make();
     std::c.. __ "How many data points do you want to enter: ";
     in. num;

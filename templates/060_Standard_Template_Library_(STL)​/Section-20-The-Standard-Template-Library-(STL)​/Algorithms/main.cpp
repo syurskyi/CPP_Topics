@@ -25,7 +25,7 @@ public:
 v.. find_test
     std::c.. __ "\n========================" __ std::e..
 
-    std::vector<in.> vec {1,2,3,4,5};
+    std::ve..<in.> vec {1,2,3,4,5};
     
     a.. loc = std::find(std::begin(vec), std::end(vec), 1);
     
@@ -51,7 +51,7 @@ v.. find_test
 v.. count_test
     std::c.. __ "\n========================" __ std::e..
 
-     std::vector<in.> vec {1,2,3,4,5,1,2,1};
+     std::ve..<in.> vec {1,2,3,4,5,1,2,1};
      
      in. num = std::count(vec.begin(), vec.end(), 1);
      std::c.. __ num __ " occurrences found" __ std::e..
@@ -64,7 +64,7 @@ v.. count_if_test
     std::c.. __ "\n========================" __ std::e..
 
     // count only if the element is even
-    std::vector<in.> vec {1,2,3,4,5,1,2,1,100};
+    std::ve..<in.> vec {1,2,3,4,5,1,2,1,100};
     in. num = std::count_if(vec.begin(), vec.end(), [](in. x) { r_ x %2 __ 0; });
     std::c.. __ num __ " even numbers found" __ std::e..
     
@@ -81,7 +81,7 @@ v.. count_if_test
 v.. replace_test
     std::c.. __ "\n========================" __ std::e..
 
-     std::vector<in.> vec {1,2,3,4,5,1,2,1};
+     std::ve..<in.> vec {1,2,3,4,5,1,2,1};
      ___ (a.. i: vec) {
          std::c.. __ i __ " ";
      }
@@ -95,7 +95,7 @@ v.. replace_test
 }
 
 v.. all_of_test
-    std::vector<in.> vec1 {1,3,5,7,9,1,3,13,19,5};
+    std::ve..<in.> vec1 {1,3,5,7,9,1,3,13,19,5};
     __ (std::all_of(vec1.begin(), vec1.end(), [](in. x) { r_ x > 10; }))
         std::c.. __ "All the elements are > 10" __ std::e..
     ____

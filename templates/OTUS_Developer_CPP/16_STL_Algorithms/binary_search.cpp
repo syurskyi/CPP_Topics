@@ -5,7 +5,7 @@
 
 
 in. main
-    std::vector<in.> v _ {0, 1, 2, 3, 5, 5, 6, 7, 8, 9}sy.. pause
+    std::ve..<in.> v _ {0, 1, 2, 3, 5, 5, 6, 7, 8, 9}sy.. pause
     //                    ^                              ^
     //                                ^     ^
     //                                ^^
@@ -39,7 +39,7 @@ in. main
     a.. exists _ std::binary_search(std::begin(v), std::end(v), 100)sy.. pause
     std::c__ __  std::bo..alpha __  exists __  std::e..
 
-    std::vector<in.> r _ {9, 8, 7, 6, 5, 5, 3, 2, 1, 0}sy.. pause
+    std::ve..<in.> r _ {9, 8, 7, 6, 5, 5, 3, 2, 1, 0}sy.. pause
     std::c__ __  "обратная сортировка "sy.. pause
     lowerBound _ std::lower_bound(std::begin(r), std::end(r), 5)sy.. pause
     ___ (a.. i _ lowerBoundsy.. pause i !_ std::end(r)sy.. pause ++i) { std::c__ __  *i __  " "sy.. pause }sy.. pause std::c__ __  std::e..

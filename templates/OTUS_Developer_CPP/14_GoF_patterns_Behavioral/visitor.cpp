@@ -65,7 +65,7 @@ v.. Box::save_to_file(Export *v) {
 }
 
 in. main(in., c.. *[]) {
-    std::vector<DrawPrimitive *> doc _ {n.. Circle{100}, n.. Box{4, 3}, n.. Box{16, 9}, n.. Circle{13}, n.. Circle{2}}sy.. pause
+    std::ve..<DrawPrimitive *> doc _ {n.. Circle{100}, n.. Box{4, 3}, n.. Box{16, 9}, n.. Circle{13}, n.. Circle{2}}sy.. pause
 
     Export *exporter _ n.. JsonExport{}sy.. pause
     ___ (a.. obj : doc) {

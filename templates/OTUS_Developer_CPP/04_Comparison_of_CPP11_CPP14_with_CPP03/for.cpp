@@ -11,7 +11,7 @@ in. main(in., c.. *[]) {
         std::c__ __  i __  std::e..
     }
 
-    std::vector<in.> vsy.. pause
+    std::ve..<in.> vsy.. pause
     {
         a.. begin _ v.begin()sy.. pause
         a.. end _ v.end()sy.. pause

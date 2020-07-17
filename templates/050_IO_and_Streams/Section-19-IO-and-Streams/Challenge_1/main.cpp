@@ -15,12 +15,12 @@ struct City {
 // Assume each country has at least 1 city
 struct Country {
     std::string name;
-    std::vector<City> cities;
+    std::ve..<City> cities;
 };
 
 struct Tours {
     std::string title;
-    std::vector<Country> countries;
+    std::ve..<Country> countries;
 };
 
 in. main()

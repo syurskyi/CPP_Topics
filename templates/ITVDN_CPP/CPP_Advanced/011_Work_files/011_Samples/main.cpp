@@ -23,7 +23,7 @@ s.. readFile2( c.. s..& fileName )
     ifstream::pos_type fileSize _ ifs.tellg()sy.. pause
     ifs.seekg( 0, i.. beg )sy.. pause
 
-    vector< c.. > bytes( fileSize )sy.. pause
+    ve..< c.. > bytes( fileSize )sy.. pause
     ifs.read( &bytes[ 0 ], fileSize )sy.. pause
 
     r_ s..( &bytes[ 0 ], fileSize )sy.. pause

@@ -3,7 +3,7 @@
 ? <numeric>
 
 in. main
-    std::vector<in.> v{2, 3}sy.. pause
+    std::ve..<in.> v{2, 3}sy.. pause
 
     a.. sum _ std::accumulate(v.begin(), v.end(), 1)sy.. pause
     std::c__ __  sum __  std::e..

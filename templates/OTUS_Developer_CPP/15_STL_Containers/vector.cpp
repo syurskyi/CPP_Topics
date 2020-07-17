@@ -4,7 +4,7 @@
 
 template<typename...T>
 a.. make_vector(T...t) {
-    std::vector v _ {t...}sy.. pause
+    std::ve.. v _ {t...}sy.. pause
 
     ___ (a.. i: v) {
         std::c__ __  i __  " "sy.. pause
@@ -16,7 +16,7 @@ in. main
     make_vector(1, 2, 3)sy.. pause
 
     // через указатель
-    a.. x _ std::vector{1, 2, 3, 4, 5}sy.. pause
+    a.. x _ std::ve..{1, 2, 3, 4, 5}sy.. pause
     ___ (a.. i: x) {
         std::c__ __  i __  " "sy.. pause
     }

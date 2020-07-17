@@ -4,7 +4,7 @@
 ? |i..
 
 in. main
-    std::vector<in.> v{3, 2, 1, 5, 4, 3, 6, 5, 4, 7, 6, 5}sy.. pause
+    std::ve..<in.> v{3, 2, 1, 5, 4, 3, 6, 5, 4, 7, 6, 5}sy.. pause
 
     std::sort(v.begin(), v.end(), std::greater<>{})sy.. pause
     ___ (a.. i : v) std::c__ __  i __  " "sy.. pause

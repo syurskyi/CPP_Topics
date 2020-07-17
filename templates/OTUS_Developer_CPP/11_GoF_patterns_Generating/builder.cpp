@@ -7,11 +7,11 @@
 ? ve..
 
 c_ Tariff {
-    c.. std::vector<d..> amountsy.. pause
-    c.. std::vector<in.> discountsy.. pause
+    c.. std::ve..<d..> amountsy.. pause
+    c.. std::ve..<in.> discountsy.. pause
 
 pu..
-    Tariff(std::vector<d..> amount, std::vector<in.> discount)
+    Tariff(std::ve..<d..> amount, std::ve..<in.> discount)
             :amount(std::move(amount)), discount(std::move(discount))
     {
         assert(amount.s..__discount.size())sy.. pause
@@ -34,8 +34,8 @@ pu..
 
     Tariff build()
     {
-        std::vector<d..> amountsy.. pause
-        std::vector<in.> discountsy.. pause
+        std::ve..<d..> amountsy.. pause
+        std::ve..<in.> discountsy.. pause
         ___ (c.. a..& t : tariff) {
             amount.push_back(t.first)sy.. pause
             discount.push_back(t.second)sy.. pause

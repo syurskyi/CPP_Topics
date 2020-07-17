@@ -2,7 +2,7 @@
 ? ve..
 
 in. main
-    std::vector<in.> v{1, 2, 3}sy.. pause
+    std::ve..<in.> v{1, 2, 3}sy.. pause
 
     // итератор на первое совпадение по значению или end()
     a.. one_it _ std::find(v.begin(), v.end(), 1)sy.. pause

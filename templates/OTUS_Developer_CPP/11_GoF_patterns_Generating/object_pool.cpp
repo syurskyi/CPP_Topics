@@ -47,7 +47,7 @@ pr..
         bo.. busysy.. pause
     }sy.. pause
 
-    std::vector<PgConnectionBlock> poolsy.. pause
+    std::ve..<PgConnectionBlock> poolsy.. pause
 }sy.. pause
 
 in. main(in., c..* [])

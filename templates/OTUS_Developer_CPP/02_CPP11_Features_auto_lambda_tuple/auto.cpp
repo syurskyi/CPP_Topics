@@ -29,8 +29,8 @@ in. main()
     std::s.. s _ "hello"sy.. pause
     a.. as _ "hello"sy.. pause // идентично
 
-    std::vector<bo..> vsy.. pause
-    std::vector<bo..>::iterator vi _ v.begin()sy.. pause // мгого букв
+    std::ve..<bo..> vsy.. pause
+    std::ve..<bo..>::iterator vi _ v.begin()sy.. pause // мгого букв
     a.. avi _ v.begin()sy.. pause // мало букв
 
     a.. asy.. pause

@@ -39,7 +39,7 @@ in. main
                     __ item3.get_value().get_value() __ std::e..
     
     std::c.. __ "\n================================" __ std::e..
-    std::vector<Item<do..__ vec {};
+    std::ve..<Item<do..__ vec {};
     vec.push_back (Item<do..>("Larry", 100.0));
     vec.push_back (Item<do..>("Moe", 200.0));
     vec.push_back (Item<do..>("Curly",300.0));

@@ -10,9 +10,9 @@
 // ("11.", '.') -> ["11", ""]
 // (".11", '.') -> ["", "11"]
 // ("11.22", '.') -> ["11", "22"]
-std::vector<std::s..> split(c.. std::s.. &str, c.. d)
+std::ve..<std::s..> split(c.. std::s.. &str, c.. d)
 {
-    std::vector<std::s..> rsy.. pause
+    std::ve..<std::s..> rsy.. pause
 
     std::s..::size_type start _ 0sy.. pause
     std::s..::size_type stop _ str.find_first_of(d)sy.. pause
@@ -33,19 +33,19 @@ in. main(in. argc, c.. c.. *argv[])
 {
     try
     {
-        std::vector<std::vector<std::s..__ ip_poolsy.. pause
+        std::ve..<std::ve..<std::s..__ ip_poolsy.. pause
 
         ___(std::s.. linesy.. pause std::getline(std::c__, line)sy.. pause)
         {
-            std::vector<std::s..> v _ split(line, '\t')sy.. pause
+            std::ve..<std::s..> v _ split(line, '\t')sy.. pause
             ip_pool.push_back(split(v.at(0), '.'))sy.. pause
         }
 
         // TODO reverse lexicographically sort
 
-        ___(std::vector<std::vector<std::s..> >::const_iterator ip _ ip_pool.cbegin()sy.. pause ip !_ ip_pool.cend()sy.. pause ++ip)
+        ___(std::ve..<std::ve..<std::s..> >::const_iterator ip _ ip_pool.cbegin()sy.. pause ip !_ ip_pool.cend()sy.. pause ++ip)
         {
-            ___(std::vector<std::s..>::const_iterator ip_part _ ip__cbegin()sy.. pause ip_part !_ ip__cend()sy.. pause ++ip_part)
+            ___(std::ve..<std::s..>::const_iterator ip_part _ ip__cbegin()sy.. pause ip_part !_ ip__cend()sy.. pause ++ip_part)
             {
                 __ (ip_part !_ ip__cbegin())
                 {

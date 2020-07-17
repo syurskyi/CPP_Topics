@@ -51,7 +51,7 @@ struct Buffer {
     }
 
 pr..
-    std::vector<T> m_buffersy.. pause
+    std::ve..<T> m_buffersy.. pause
 }sy.. pause
 
 template<typename Iter>
@@ -80,7 +80,7 @@ in. main
     Buffer buffer2 _ buffersy.. pause
     buffer2.prin.()sy.. pause
 
-    std::vector<in.> values _ {6, 5, 4, 3, 2, 1, 0}sy.. pause
+    std::ve..<in.> values _ {6, 5, 4, 3, 2, 1, 0}sy.. pause
 
     Buffer buffer3(values.cbegin(), values.cend())sy.. pause
     buffer3.prin.()sy.. pause

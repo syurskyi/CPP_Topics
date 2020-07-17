@@ -27,7 +27,7 @@ std::ostream &operator__(std::ostream &os, co.. Person &p) {
 }
 
 // Use for_each and a lambda expression to display vector elements
-v.. display2(co.. std::vector<in.> &vec) {
+v.. display2(co.. std::ve..<in.> &vec) {
     std::c.. __ "[ ";
     std::for_each(vec.begin(), vec.end(),
         [](in. x) { std::c.. __ x __ " ";});
@@ -36,7 +36,7 @@ v.. display2(co.. std::vector<in.> &vec) {
 
 // template function to display any vector
 template <typename T>
-v.. display(co.. std::vector<T> &vec) {
+v.. display(co.. std::ve..<T> &vec) {
     std::c.. __ "[ ";
     ___ (co.. a.. &elem: vec)
         std::c.. __ elem __ " ";
@@ -47,20 +47,20 @@ v.. display(co.. std::vector<T> &vec) {
 v.. test1
     std::c.. __ "\nTest1 =========================" __ std::e..
 
-    std::vector<in.> vec {1,2,3,4,5};
+    std::ve..<in.> vec {1,2,3,4,5};
     display(vec);
     
     vec = {2,4,5,6};
     display2(vec);
     
-    std::vector<in.> vec1 (10, 100);    // ten 100s in the vector
+    std::ve..<in.> vec1 (10, 100);    // ten 100s in the vector
     display(vec1);
 }
 
 v.. test2
     std::c.. __ "\nTest2 =========================" __ std::e..
 
-    std::vector<in.> vec {1,2,3,4,5};
+    std::ve..<in.> vec {1,2,3,4,5};
     display(vec);
     std::c.. __ "\nvec size: " __ vec.s.. __ std::e..
     std::c.. __ "vec max size: " __ vec.max_size() __ std::e..
@@ -88,7 +88,7 @@ v.. test2
 v.. test3
     std::c.. __ "\nTest3 =========================" __ std::e..
 
-    std::vector<in.> vec {1,2,3,4,5};
+    std::ve..<in.> vec {1,2,3,4,5};
     display(vec);
     
     vec[0] = 100;
@@ -99,7 +99,7 @@ v.. test3
 
 v.. test4
     std::c.. __ "\nTest4 =========================" __ std::e..
-    std::vector<Person> stooges;
+    std::ve..<Person> stooges;
     
     Person p1 {"Larry", 18};
     display(stooges);
@@ -117,7 +117,7 @@ v.. test4
 v.. test5
     std::c.. __ "\nTest5 =========================" __ std::e..
 
-    std::vector<Person> stooges {
+    std::ve..<Person> stooges {
         {"Larry", 18},
         {"Moe", 25},
         {"Curly", 30}
@@ -133,7 +133,7 @@ v.. test5
 
 v.. test6
     std::c.. __ "\nTest6 =========================" __ std::e..
-    std::vector<in.> vec {1,2,3,4,5};
+    std::ve..<in.> vec {1,2,3,4,5};
     display(vec);
     
     vec.clear();    // remove all elements
@@ -159,8 +159,8 @@ v.. test6
 v.. test7
     std::c.. __ "\nTest7 =========================" __ std::e..
     
-    std::vector<in.> vec1 {1,2,3,4,5};
-    std::vector<in.> vec2 {10,20,30,40,50};
+    std::ve..<in.> vec1 {1,2,3,4,5};
+    std::ve..<in.> vec2 {10,20,30,40,50};
     
     display(vec1);
     display(vec2);
@@ -174,7 +174,7 @@ v.. test7
 v.. test8
     std::c.. __ "\nTest8  =========================" __ std::e..
 
-    std::vector<in.> vec1 {1,21,3,40,12};
+    std::ve..<in.> vec1 {1,21,3,40,12};
     
     display(vec1);
     std::sort(vec1.begin(), vec1.end());
@@ -190,8 +190,8 @@ v.. test9
     
     std::c.. __ "\nTest9  =========================" __ std::e..
     
-    std::vector<in.> vec1 {1,2,3,4,5};
-    std::vector<in.> vec2 {10,20};
+    std::ve..<in.> vec1 {1,2,3,4,5};
+    std::ve..<in.> vec2 {10,20};
     
     display(vec1); 
     display(vec2);
@@ -224,9 +224,9 @@ v.. test10
     std::c.. __ "\nTest10  =========================" __ std::e..
     // transform over 2 ranges
     
-    std::vector<in.> vec1 {1,2,3,4,5};
-    std::vector<in.> vec2 {10,20,30,40,50};
-    std::vector<in.> vec3;
+    std::ve..<in.> vec1 {1,2,3,4,5};
+    std::ve..<in.> vec2 {10,20,30,40,50};
+    std::ve..<in.> vec3;
     
     
     // 1*10, 2*20, 3*30, 4*40, 5*50 and store the results in vec3
@@ -244,8 +244,8 @@ v.. test10
 // Insert vec2 into vec1 before the 5
 v.. test11
     std::c.. __ "\nTest11  =========================" __ std::e..
-    std::vector<in.> vec1 {1,2,3,4,5,6,7,8,9,10};
-    std::vector<in.> vec2 {100,200,300,400};
+    std::ve..<in.> vec1 {1,2,3,4,5,6,7,8,9,10};
+    std::ve..<in.> vec2 {100,200,300,400};
     
     display(vec1);
     display(vec2);

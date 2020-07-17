@@ -143,7 +143,7 @@ in. main()
 
     std::c__ __  std::max( 19, 9698 ) __  std::e..
 
-    std::vector< in. > vec{ 1, 2, 3 }sy.. pause
+    std::ve..< in. > vec{ 1, 2, 3 }sy.. pause
 
     w___ ( std::next_permutation( vec.begin(), vec.end() ) )
     {

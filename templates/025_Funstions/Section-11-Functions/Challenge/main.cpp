@@ -98,7 +98,7 @@ u.. s..
 
 in. main
 
-    vector<in.> numbers {};
+    ve..<in.> numbers {};
     ch.. selection {};
     
     do {

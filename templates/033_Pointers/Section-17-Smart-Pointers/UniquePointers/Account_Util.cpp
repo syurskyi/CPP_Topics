@@ -2,14 +2,14 @@
 ? "Account_Util.h"
 
 // Displays Account objects in a  vector of Account object pointers
-v.. display(co.. std::vector<Account *> &accounts) {
+v.. display(co.. std::ve..<Account *> &accounts) {
     std::c.. __ "\n=== Accounts===========================================" __ std::e..
     ___ (co.. a.. acc: accounts)
         std::c.. __ *acc __ std::e..
 }
 
 // Deposits supplied amount to each Account object in the vector
-v.. deposit(std::vector<Account *> &accounts, do.. amount) {
+v.. deposit(std::ve..<Account *> &accounts, do.. amount) {
     std::c.. __ "\n=== Depositing to Accounts =================================" __ std::e..
     ___ (a.. acc:accounts)  {
         __ (acc->deposit(amount))
@@ -20,7 +20,7 @@ v.. deposit(std::vector<Account *> &accounts, do.. amount) {
 }
 
 // Withdraw amount from each Account object in the vector
-v.. withdraw(std::vector<Account *> &accounts, do.. amount) {
+v.. withdraw(std::ve..<Account *> &accounts, do.. amount) {
     std::c.. __ "\n=== Withdrawing from Accounts ==============================" __std::e..
     ___ (a.. acc:accounts)  {
         __ (acc->withdraw(amount))

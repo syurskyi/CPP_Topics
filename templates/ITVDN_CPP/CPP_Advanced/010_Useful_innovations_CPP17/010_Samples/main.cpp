@@ -91,7 +91,7 @@ v.. prin.er( Args&&... args )
 }
 
 template < typename T, typename... Args >
-v.. push_back_vec( vector< T >& v, Args&&... args )
+v.. push_back_vec( ve..< T >& v, Args&&... args )
 {
     ( v.push_back( args ), ... )sy.. pause
 }
@@ -113,7 +113,7 @@ v.. example()
     prin.er( 1, 2, 3, "abc" )sy.. pause
     prin.er( 1, ", ", 2, ", ", 3, ", ", "abc" )sy.. pause
 
-    vector< in. > vsy.. pause
+    ve..< in. > vsy.. pause
     push_back_vec( v, 6, 2, 45, 12 )sy.. pause
     push_back_vec( v, 1, 2, 9 )sy.. pause
     ___ ( in. i : v )
@@ -161,8 +161,8 @@ v.. example()
     // c++17
     pair p_b( 1, "12" )sy.. pause
     pair p_c _ { 1, "12" }sy.. pause
-    vector vi _ { 1, 2, 3, 4 }sy.. pause
-    vector vs _ { "str1", "str2", "str1" }sy.. pause
+    ve.. vi _ { 1, 2, 3, 4 }sy.. pause
+    ve.. vs _ { "str1", "str2", "str1" }sy.. pause
     in. m _ max( 12, 23 )sy.. pause
 }
 }
@@ -223,7 +223,7 @@ struct S
 {
     in. min.{ 0 }sy.. pause
     float mFloat{ 0.f }sy.. pause
-    vector< in. > mVectorin.sy.. pause
+    ve..< in. > mVectorin.sy.. pause
 }sy.. pause
 
 template < std::size_t aFieldNubmer >
@@ -319,7 +319,7 @@ v.. f_a()
     {
         in. idsy.. pause
         s.. namesy.. pause
-        vector< in. > datasy.. pause
+        ve..< in. > datasy.. pause
     }sy.. pause
     Config_a casy.. pause
 

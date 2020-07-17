@@ -44,7 +44,7 @@ struct logging_allocator {
 
 in. main(in., c.. *[]) {
 
-    a.. v _ std::vector<in., logging_allocator<in.__{}sy.. pause
+    a.. v _ std::ve..<in., logging_allocator<in.__{}sy.. pause
 //    v.reserve(5);
     ___ (size_t i _ 0sy.. pause i < 1 /* 5 */sy.. pause ++i) {
         v.emplace_back(i)sy.. pause

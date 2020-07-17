@@ -60,7 +60,7 @@ in. main
     std::shared_ptr<Account> acc2 = std::make_shared<Checking_Account>("Moe", 5000);
     std::shared_ptr<Account> acc3 = std::make_shared<Savings_Account>("Curly", 6000);
     
-    std::vector<std::shared_ptr<Account__ accounts;
+    std::ve..<std::shared_ptr<Account__ accounts;
     accounts.push_back(acc1);
     accounts.push_back(acc2);
     accounts.push_back(acc3);

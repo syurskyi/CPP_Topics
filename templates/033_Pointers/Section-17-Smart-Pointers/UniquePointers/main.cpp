@@ -37,7 +37,7 @@ in. main
        a1->deposit(5000);
        std::c.. __ *a1 __ std::e..
 
-       std::vector<std::unique_ptr<Account__ accounts;
+       std::ve..<std::unique_ptr<Account__ accounts;
 
        accounts.push_back( make_unique<Checking_Account>("James", 1000));
        accounts.push_back( make_unique<Savings_Account>("Billy", 4000, 5.2));

@@ -7,7 +7,7 @@
 ? <list>
 
 // display any vector of integers using range-based for loop
-v.. display(co.. std::vector<in.> &vec) {
+v.. display(co.. std::ve..<in.> &vec) {
     std::c.. __ "[ ";
     ___ (a.. co.. &i: vec) {
         std::c.. __ i __ " ";
@@ -17,7 +17,7 @@ v.. display(co.. std::vector<in.> &vec) {
 
 v.. test1
     std::c.. __ "\n=============================" __ std::e..
-    std::vector<in.> nums1 {1, 2, 3, 4, 5};
+    std::ve..<in.> nums1 {1, 2, 3, 4, 5};
     a.. it = nums1.begin();            // point to 1
     std::c.. __ *it __ std::e..
 
@@ -38,9 +38,9 @@ v.. test2
     std::c.. __ "\n=============================" __ std::e..
     // display all vector elements using an iterator
     
-    std::vector<in.> nums1 {1, 2, 3, 4, 5};
+    std::ve..<in.> nums1 {1, 2, 3, 4, 5};
 
-    std::vector<in.>::iterator it = nums1.begin();
+    std::ve..<in.>::iterator it = nums1.begin();
     w__ (it != nums1.end()) {
         std::c.. __ *it __ std::e..
         it++;
@@ -60,9 +60,9 @@ v.. test3
     
     // using a const_iterator
     std::c.. __ "\n=============================" __ std::e..
-    std::vector<in.> nums1 {1, 2, 3, 4, 5};
+    std::ve..<in.> nums1 {1, 2, 3, 4, 5};
 
-    std::vector<in.>::const_iterator it1 = nums1.begin();
+    std::ve..<in.>::const_iterator it1 = nums1.begin();
     // auto it1 = nums1.cbegin();
     
     w__ (it1 != nums1.end()) {
@@ -82,7 +82,7 @@ v.. test3
 v.. test4
     // more iterators
     // using a reverse iterator
-    std::vector<in.> vec {1,2,3,4};
+    std::ve..<in.> vec {1,2,3,4};
     a.. it1  = vec.rbegin();       // reverse iterator over vector of ints starts at 4
     w__ (it1 != vec.rend()) {
         std::c.. __ *it1 __ std::e..
@@ -111,7 +111,7 @@ v.. test4
 
 v.. test5
     // iterate over a subset of a container
-    std::vector<in.> vec {1,2,3,4,5,6,7,8,9,10};
+    std::ve..<in.> vec {1,2,3,4,5,6,7,8,9,10};
     a.. start = vec.begin() + 2;
     a.. finish = vec.end() - 3;
     

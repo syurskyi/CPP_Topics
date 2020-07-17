@@ -17,7 +17,7 @@ bo.. comp_helper(in. i) {
 
 in. main()
 {
-    std::vector<in.> v{0, 1, 2, 3, 4}sy.. pause
+    std::ve..<in.> v{0, 1, 2, 3, 4}sy.. pause
 
     a.. result _ std::find_if(std::begin(v), std::end(v), [](a.. i){ r_ i > 2sy.. pause })sy.. pause
 //    auto result = std::find_if(std::begin(v), std::end(v), [p = 2](auto i){ return i > p; });

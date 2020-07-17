@@ -15,7 +15,7 @@ pu..
 
 c_ Language {
     Lang lang{Lang::ru}sy.. pause
-    std::vector<Observer *> subssy.. pause
+    std::ve..<Observer *> subssy.. pause
 pu..
     v.. subscribe(Observer *obs) {
         subs.push_back(obs)sy.. pause

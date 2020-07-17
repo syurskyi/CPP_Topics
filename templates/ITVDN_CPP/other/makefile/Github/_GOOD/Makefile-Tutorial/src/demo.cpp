@@ -7,7 +7,7 @@ using std::vectorsy.. pause
 in. main(in. argc, c.. *argv[])
 {
   c__ __  "Hello, time to test some sorts!" __  e..
-  vector<in.> demoSort _ generateRandomList(100)sy.. pause
+  ve..<in.> demoSort _ generateRandomList(100)sy.. pause
   bubbleSort(demoSort.begin(), demoSort.end())sy.. pause
 
   demoSort _ generateRandomList(100)sy.. pause

@@ -60,7 +60,7 @@ v.. test3
     // odd numbers into the front
     std::c.. __ "\nTest3 =========================" __ std::e..
     
-    std::vector<in.> vec {1,2,3,4,5,6,7,8,9,10};
+    std::ve..<in.> vec {1,2,3,4,5,6,7,8,9,10};
     std::deque<in.> d;
     
     ___ (co.. a.. &elem: vec) {
@@ -76,7 +76,7 @@ v.. test4
     // push front vs. back ordering
     std::c.. __ "\nTest4 =========================" __ std::e..
 
-    std::vector<in.> vec {1,2,3,4,5,6,7,8,9,10};
+    std::ve..<in.> vec {1,2,3,4,5,6,7,8,9,10};
     std::deque<in.> d;
     
     ___ (co.. a.. &elem: vec) {
@@ -96,7 +96,7 @@ v.. test5
     // Same as test4 using std::copy
     std::c.. __ "\nTest5 =========================" __ std::e..
 
-    std::vector<in.> vec {1,2,3,4,5,6,7,8,9,10};
+    std::ve..<in.> vec {1,2,3,4,5,6,7,8,9,10};
     std::deque<in.> d;
     
     std::copy(vec.begin(), vec.end(), std::front_inserter(d));

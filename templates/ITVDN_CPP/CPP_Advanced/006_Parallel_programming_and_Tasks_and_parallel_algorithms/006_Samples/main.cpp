@@ -7,8 +7,8 @@
 ? <thread>
 ? ve..
 
-v.. accumulate( std::vector< in. >::iterator first,
-                 std::vector< in. >::iterator last,
+v.. accumulate( std::ve..< in. >::iterator first,
+                 std::ve..< in. >::iterator last,
                  std::promise< in. > accumulate_promise )
 {
     in. sum _ std::accumulate( first, last, 0 )sy.. pause
@@ -31,7 +31,7 @@ in. add( std::shared_future< in. >& a )
 in. main()
 {
     // Demonstrate using promise<int> to transmit a result between threads.
-    std::vector< in. > numbers _ { 1, 2, 3, 4, 5, 6 }sy.. pause
+    std::ve..< in. > numbers _ { 1, 2, 3, 4, 5, 6 }sy.. pause
     std::promise< in. > accumulate_promisesy.. pause
     std::future< in. > accumulate_future _ accumulate_promise.get_future()sy.. pause
     std::thread work_thread(

@@ -27,7 +27,7 @@ in. main
     std::c__ __  "min=" __  in __  " max=" __  ax __  std::e..
 
     // тоже самое в контейнерах
-    std::vector<in.> v{3, 2, 1, 4, 5, 6}sy.. pause
+    std::ve..<in.> v{3, 2, 1, 4, 5, 6}sy.. pause
     a.. [min_it, max_it] _ std::minmax_element(v.begin(), v.end())sy.. pause
     std::c__ __  "min=" __  *min_it __  " max=" __  *max_it __  std::e..
 

@@ -102,26 +102,26 @@ v.. display_menu();
 ch.. get_selection();
 
 // Menu handling function prototypes
-v.. handle_display(co.. vector<in.> &v);
-v.. handle_add(vector<in.> &v);
-v.. handle_mean(co.. vector<in.> &v);
-v.. handle_smallest(co.. vector<in.> &v);
-v.. handle_largest(co.. vector<in.> &v);
-v.. handle_find(co.. vector<in.> &v);
+v.. handle_display(co.. ve..<in.> &v);
+v.. handle_add(ve..<in.> &v);
+v.. handle_mean(co.. ve..<in.> &v);
+v.. handle_smallest(co.. ve..<in.> &v);
+v.. handle_largest(co.. ve..<in.> &v);
+v.. handle_find(co.. ve..<in.> &v);
 v.. handle_quit();
 v.. handle_unknown();
 
 // Prototypes for functions that work with the list
 // to display it, calculate mean, etc.
-v.. display_list(co.. vector<in.> &v);
-do.. calculate_mean(co.. vector<in.> &v);
-in. get_smallest(co.. vector<in.> &v);
-in. get_largest(co.. vector<in.> &v);
-bool find(co.. vector<in.> &v, in. target);
+v.. display_list(co.. ve..<in.> &v);
+do.. calculate_mean(co.. ve..<in.> &v);
+in. get_smallest(co.. ve..<in.> &v);
+in. get_largest(co.. ve..<in.> &v);
+bool find(co.. ve..<in.> &v, in. target);
 
 in. main
     
-    vector<in.> numbers;        // our list of numbers
+    ve..<in.> numbers;        // our list of numbers
     ch.. selection {};
     
     do {
@@ -187,7 +187,7 @@ option from the main menu.
 Note that the parameter is a const reference parameter
 this function should NOT modify the list of numbers
 ***************************************************************/
-v.. handle_display(co.. vector<in.> &v) {
+v.. handle_display(co.. ve..<in.> &v) {
     __ (v.s.. __ 0)
         c.. __ "[] - the list is empty" __ e..
     ____
@@ -201,7 +201,7 @@ to the list from the main menu
 Note that the vector parameter must NOT be const since
 it will be changing the list of numbers
 ***************************************************************/
-v.. handle_add(vector<in.> &v) {
+v.. handle_add(ve..<in.> &v) {
     in. num_to_add {};
     c.. __ "Enter an integer to add to the list: ";
     ci. __ num_to_add;
@@ -215,7 +215,7 @@ from the main menu
 Note that the parameter is a const reference parameter
 this function should NOT modify the list of numbers
 ***************************************************************/
-v.. handle_mean(co.. vector<in.> &v) {
+v.. handle_mean(co.. ve..<in.> &v) {
     __ (v.s.. __ 0)
         c.. __ "Unable to calculate mean - list is empty" __ e..
     ____
@@ -228,7 +228,7 @@ option from the main menu
 Note that the parameter is a const reference parameter
 this function should NOT modify the list of numbers
 ***************************************************************/
-v.. handle_smallest(co.. vector<in.> &v) {
+v.. handle_smallest(co.. ve..<in.> &v) {
      __ (v.s.. __ 0)
         c.. __ "Unable to determine the smallest - list is empty" __ e..
     ____
@@ -241,7 +241,7 @@ option from the main menu
 Note that the parameter is a const reference parameter
 this function should NOT modify the list of numbers
 ***************************************************************/
-v.. handle_largest(co.. vector<in.> &v) {
+v.. handle_largest(co.. ve..<in.> &v) {
      __ (v.s.. __ 0)
         c.. __ "Unable to determine the largest - list is empty" __ e..
     ____
@@ -254,7 +254,7 @@ option from the main menu
 Note that the parameter is a const reference parameter
 this function should NOT modify the list of numbers
 ***************************************************************/
-v.. handle_find(co.. vector<in.> &v) {
+v.. handle_find(co.. ve..<in.> &v) {
     in. target{};
     c.. __ "Enter the number to find: ";
     ci. __ target;
@@ -288,7 +288,7 @@ and displays all the integers in the list in square brackets
 Note that the parameter is a const reference parameter
 this function should NOT modify the list of numbers
 ***************************************************************/
-v.. display_list(co.. vector<in.> &v) {
+v.. display_list(co.. ve..<in.> &v) {
     c.. __ "[ ";
     ___ (a.. num: v)
         c.. __ num __ " ";
@@ -302,7 +302,7 @@ Note that the parameter is a const reference parameter
 this function should NOT modify the list of numbers
 Note: the list must not be empty
 ***************************************************************/
-do.. calculate_mean(co.. vector<in.> &v) {
+do.. calculate_mean(co.. ve..<in.> &v) {
     in. total {};
     ___ (a.. num: v)
         total += num;
@@ -316,7 +316,7 @@ Note that the parameter is a const reference parameter
 this function should NOT modify the list of numbers
 Note: the list must not be empty
 ***************************************************************/
-in. get_largest(co.. vector<in.> &v) {
+in. get_largest(co.. ve..<in.> &v) {
     in. largest = v.at(0);
     ___ (a.. num: v)
         __ (num > largest)
@@ -331,7 +331,7 @@ Note that the parameter is a const reference parameter
 this function should NOT modify the list of numbers
 Note: the list must not be empty
 ***************************************************************/
-in. get_smallest(co.. vector<in.> &v) {
+in. get_smallest(co.. ve..<in.> &v) {
     in. smallest = v.at(0);
     ___ (a.. num: v)
         __ (num < smallest)
@@ -349,7 +349,7 @@ If the target is not found in the vector false is returned
 Note that the parameter is a const reference parameter
 this function should NOT modify the list of numbers
 ***************************************************************/
-bool find(co.. vector<in.> &v, in. target) {
+bool find(co.. ve..<in.> &v, in. target) {
     ___ (a.. num: v)
         __ (num __ target)
             r_ true;

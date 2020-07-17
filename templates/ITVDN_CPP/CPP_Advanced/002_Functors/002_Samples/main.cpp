@@ -35,7 +35,7 @@ in. main()
 
     Functor fsy.. pause
 
-    vector< in. > a _ { 2, 1, 3, 4 }sy.. pause
+    ve..< in. > a _ { 2, 1, 3, 4 }sy.. pause
 
     sort( a.begin(), a.end(), []( in. a, in. b ) __ bo.. { r_ a > bsy.. pause } )sy.. pause
 
