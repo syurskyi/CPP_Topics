@@ -1,22 +1,22 @@
-? "Checking_Account.h"
-
-Checking_Account::Checking_Account(st. st..  name, do.. balance)
-    : Account {name, balance} {
-}
-
-b.. Checking_Account::deposit(do.. amount) {
-    r_ Account::deposit(amount);
-}
-
-b.. Checking_Account::withdraw(do.. amount) {
-    amount += per_check_fee;
-    r_ Account::withdraw(amount);
-}
-
-v.. Checking_Account::print(st. ostream &os) co.. {
-    os.precision(2);
-    os __ st. fixed;
-    os __ "[Checking_Account: " __ name __ ": " __ balance  __ "]";
-}
-
-
+//? "Checking_Account.h"
+//
+//? ?st. st..  name, do.. balance)
+//    | A.. ? ?
+//
+//
+//b.. ?::deposit(do.. amount
+//    r_ A.. d.. ?
+//
+//
+//b.. ? withdraw do.. amount
+//    a.. +_ per_check_fee;
+//    r_ A.. w.. ?
+//
+//
+//v.. ? print(st. ostream #os co..
+//    ?.pr.. 2
+//    ? __ st. fixed
+//    ? __ "[Checking_Account: " __ name __ ": " __ balance  __ "]"
+//
+//
+//

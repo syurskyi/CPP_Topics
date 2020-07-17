@@ -1,31 +1,31 @@
-? "Trust_Account.h"
-
-Trust_Account::Trust_Account(st. st..  name, do.. balance, do.. int_rate)
-    : Savings_Account {name, balance, int_rate}, num_withdrawals {0}  {
-        
-}
-
-// Deposit additional $50 bonus when amount >= $5000
-b.. Trust_Account::deposit(do.. amount) {
-    __ (amount >= bonus_threshold)
-        amount += bonus_amount;
-    r_ Savings_Account::deposit(amount);
-}
-    
-// Only allowed 3 withdrawals, each can be up to a maximum of 20% of the account's value
-b.. Trust_Account::withdraw(do.. amount) {
-    __ (num_withdrawals >= max_withdrawals || (amount > balance * max_withdraw_percent))
-        r_ f..
-    ____ {
-        ++num_withdrawals;
-        r_ Savings_Account::withdraw(amount);
-    }
-}
-
-v.. Trust_Account::print(st. ostream &os) co.. {
-    os.precision(2);
-    os __ st. fixed;
-    os __ "[Trust Account: " __ name __ ": " __ balance __ ", " __ int_rate
-        __ "%, withdrawals: " __ num_withdrawals __  "]";
-}
-
+//? "Trust_Account.h"
+//
+//? ?(st. st..  name, do.. balance, do.. int_rate
+//    : S.. {n.., b.., i..}, n_w_ 0
+//
+//
+//
+//// Deposit additional $50 bonus when amount >= $5000
+//b.. ? deposit(do.. amount
+//    __ (a.. >_ b_t..)
+//        a.. +_ b_a..
+//    r_ S.. ? a..
+//
+//
+//// Only allowed 3 withdrawals, each can be up to a maximum of 20% of the account's value
+//b.. ? withdraw(do.. amount
+//    __ (n_w_ >_ m_w.. __ (a.. > b.. * m_w_p..
+//        r_ f..
+//    ____
+//        ++n_w_
+//        r_ S.. ? a..
+//
+//
+//
+//v.. ? print(st. ostream #os co..
+//    ?.pr.. 2
+//    ? __ st. fixed
+//    ? __ "[Trust Account: " __ n.. __ ": " __ b.. __ ", " __ i..
+//        __ "%, withdrawals: " __ n_w_ __  "]";
+//
+//

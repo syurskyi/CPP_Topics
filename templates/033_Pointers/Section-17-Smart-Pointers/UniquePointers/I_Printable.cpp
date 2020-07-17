@@ -1,7 +1,6 @@
 ? ios..
-? "I_Printable.h"
+? "I_Printable.h
 
-st. ostream &operator__(st. ostream &os, co.. I_Printable &obj) {
-    obj.print(os);
-    r_ os;
-}
+st. ostream #operator__ st. ostream #os co.. ? #obj
+    ob_.print o.
+    r_ os
