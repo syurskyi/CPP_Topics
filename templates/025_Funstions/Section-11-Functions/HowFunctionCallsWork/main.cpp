@@ -5,25 +5,25 @@
 
 u.. s..
 
-v.. func2(in. &x, in. y, in. z) {
-    x+= y + z;
-}
+v.. func2(in. &x, in. y, in. z
+    x+= y + z
 
-in. func1(in. a, in. b) {
-    in. result {};
-    result = a + b;
-    func2(result, a , b);
-    r_ result;
-}
+
+in. func1 in. a, in. b
+    in. result
+    ? _ a + b
+    _2 result, a , b
+    r_ r..
+
 
 in. main
-    in. x {10};
-    in. y{20};
-    in. z{};
+    in. x 10
+    in. y 20
+    in. z||
     z = func1(x,y);
     c.. __ z __ e..
-    r_ 0;
-}
+    r_ _
+
 
 /* What typically happens when main calls func1 (or any function calls another) ?
     There are other ways to acheive the same results :)
