@@ -1,9 +1,9 @@
 // Section 19
 // 012_Challenge 1
 // Formatting output
-? <iostream>
+? ios..
 ? <iomanip>
-? <vector>
+? ve..
 ? <string>
 
 struct City {

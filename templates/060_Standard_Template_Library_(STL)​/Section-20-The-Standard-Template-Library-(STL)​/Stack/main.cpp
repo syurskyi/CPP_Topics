@@ -1,8 +1,8 @@
 // Section 20
 // Stack
-? <iostream>
+? ios..
 ? <stack>
-? <vector>
+? ve..
 ? <list>
 
 // This function displays a stack of 
@@ -42,7 +42,7 @@ in. main
         s.pop();
     display(s);
     
-    std::c.. __ "Size: " __ s.size() __ std::e..
+    std::c.. __ "Size: " __ s.s.. __ std::e..
     
     s.push(10);
     display(s);

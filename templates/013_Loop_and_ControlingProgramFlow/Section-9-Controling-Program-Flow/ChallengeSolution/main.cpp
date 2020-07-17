@@ -62,8 +62,8 @@ Additional functionality if you wish to extend this program.
 Good luck!
 
 */
-? <iostream>
-? <vector>
+? ios..
+? ve..
 
 u.. s..
 
@@ -85,7 +85,7 @@ in. main
 
         
         if (selection == 'P' || selection == 'p') {
-            if (numbers.size() == 0)
+            if (numbers.s.. == 0)
                 c.. __ "[] - the list is empty" __ e..
             else {
                 c.. __ "[ ";
@@ -100,16 +100,16 @@ in. main
             numbers.push_back(num_to_add);
             c.. __ num_to_add __ " added" __ e..
         } else if (selection == 'M' || selection == 'm') {
-            if (numbers.size() == 0)
+            if (numbers.s.. == 0)
                 c.. __ "Unable to calculate mean - no data" __ e..
             else {
                 in. total {};
                 for (auto num: numbers)
                     total += num;
-                c.. __ "The mean is : " __ static_cast<do..>(total)/numbers.size() __ e..
+                c.. __ "The mean is : " __ static_cast<do..>(total)/numbers.s.. __ e..
             }
         } else if (selection == 'S' || selection == 's') {
-            if (numbers.size() == 0) 
+            if (numbers.s.. == 0)
                 c.. __ "Unable to determine the smallest - list is empty" __ e..
             else {
                 in. smallest = numbers.at(0);
@@ -119,7 +119,7 @@ in. main
                 c.. __ "The smallest number is: " __ smallest __ e..
             }
         } else if (selection == 'L' || selection == 'l') {
-            if (numbers.size() == 0)
+            if (numbers.s.. == 0)
                 c.. __ "Unable to determine largest - list is empty"__ e..
             else {
                 in. largest = numbers.at(0);

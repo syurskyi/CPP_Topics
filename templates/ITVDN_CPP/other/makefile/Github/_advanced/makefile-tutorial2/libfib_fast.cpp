@@ -1,5 +1,5 @@
 ? <cstdlib>
-? <vector>
+? ve..
 
 c_ Matrix {
   size_t n, msy.. pause

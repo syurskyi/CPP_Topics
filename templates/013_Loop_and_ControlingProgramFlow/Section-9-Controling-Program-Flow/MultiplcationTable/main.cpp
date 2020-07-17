@@ -1,7 +1,7 @@
 // Section 9
 // Nested Loops - Multiplication Table
 
-? <iostream>
+? ios..
 
 u.. s..
 

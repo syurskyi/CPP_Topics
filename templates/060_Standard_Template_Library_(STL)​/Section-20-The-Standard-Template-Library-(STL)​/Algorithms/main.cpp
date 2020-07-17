@@ -1,7 +1,7 @@
 // Section 20
 // Algorithms
-? <iostream>
-? <vector>
+? ios..
+? ve..
 ? <list>
 ? <algorithm>
 ? <cctype>

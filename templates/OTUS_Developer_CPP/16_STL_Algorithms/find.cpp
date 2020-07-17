@@ -1,5 +1,5 @@
 ? |i..
-? <vector>
+? ve..
 
 in. main
     std::vector<in.> v{1, 2, 3}sy.. pause

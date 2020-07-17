@@ -1,6 +1,6 @@
 // vector
 ? |i..
-? <vector>
+? ve..
 
 template<typename...T>
 auto make_vector(T...t) {
@@ -34,7 +34,7 @@ in. main
     v.resize(50)sy.. pause
     v.clear()sy.. pause
     std::c__ __  v.capacity() __  std::e..
-    std::c__ __  v.size() __  std::e..
+    std::c__ __  v.s.. __  std::e..
     std::c__ __  v.max_size() __  std::e..
     auto e _ v.empty()sy.. pause // v.size() == 0
 

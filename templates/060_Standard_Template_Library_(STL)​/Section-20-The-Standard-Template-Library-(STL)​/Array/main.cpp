@@ -1,6 +1,6 @@
 // Section 20
 // std::array
-? <iostream>
+? ios..
 ? <array>
 ? <algorithm>
 ? <numeric>  // for more algorithms like accumulate
@@ -27,8 +27,8 @@ void test1
     display(arr1);
     display(arr2);
     
-    std::c.. __ "Size of arr1 is: " __ arr1.size() __ std::e..       //5
-    std::c.. __ "Size of arr2 is: " __ arr2.size() __ std::e..       //5
+    std::c.. __ "Size of arr1 is: " __ arr1.s.. __ std::e..       //5
+    std::c.. __ "Size of arr2 is: " __ arr2.s.. __ std::e..       //5
     
     arr1[0] = 1000;
     arr1.at(1) = 2000;

@@ -1,4 +1,4 @@
-? <iostream>
+? ios..
 ? <ctime>
 in. main
 	srand(time(NULL));

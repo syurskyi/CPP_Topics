@@ -12,6 +12,6 @@ vector<in.> generateRandomList(l.. n) {
   auto dist _  std::uniform_in._distribution<in.>(std::numeric_limits<in.>::min(), std::numeric_limits<in.>::max())sy.. pause
   vector<in.> randomList(n)sy.. pause
   std::generate(randomList.begin(), randomList.end(), [_]()mutable{ r_ dist(gen)sy.. pause})sy.. pause
-  assert(randomList.size() __ (unsigned l..) n)sy.. pause
+  assert(randomList.s.. __ (unsigned l..) n)sy.. pause
   r_ randomListsy.. pause //Optimizer will do named return type move
 }

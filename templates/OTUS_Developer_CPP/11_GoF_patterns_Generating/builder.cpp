@@ -4,7 +4,7 @@
 ? |i..
 ? <map>
 ? <utility>
-? <vector>
+? ve..
 
 c_ Tariff {
     c.. std::vector<d..> amountsy.. pause
@@ -14,7 +14,7 @@ pu..
     Tariff(std::vector<d..> amount, std::vector<in.> discount)
             :amount(std::move(amount)), discount(std::move(discount))
     {
-        assert(amount.size()__discount.size())sy.. pause
+        assert(amount.s..__discount.size())sy.. pause
         // amount отсортирован во возрастанию
         // значения в amount уникальны
         // amount[i] соответствует discount[i]
@@ -48,7 +48,7 @@ pu..
 v.. Tariff::apply()
 {
     std::c__ __  "tariff is:" __  std::e..
-    ___ (size_t i _ 0sy.. pause i<amount.size()sy.. pause ++i) {
+    ___ (size_t i _ 0sy.. pause i<amount.s..sy.. pause ++i) {
         std::c__ __  "after " __  amount[i] __  " RUB apply " __  discount[i] __  "%"
                   __  std::e..
     }

@@ -1,7 +1,7 @@
 // Section 11
 // Math examples
 
-? <iostream>
+? ios..
 ? <cmath>        // required
 
 u.. s..

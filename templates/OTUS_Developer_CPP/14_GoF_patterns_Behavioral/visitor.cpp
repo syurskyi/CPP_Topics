@@ -1,7 +1,7 @@
 // Посетитель (Visitor)
 
 ? |i..
-? <vector>
+? ve..
 
 c_ DrawPrimitive {
 pu..

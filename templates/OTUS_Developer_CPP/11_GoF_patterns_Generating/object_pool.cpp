@@ -2,7 +2,7 @@
 
 ? <array>
 ? |i..
-? <vector>
+? ve..
 
 c_ PgConnection { }sy.. pause
 

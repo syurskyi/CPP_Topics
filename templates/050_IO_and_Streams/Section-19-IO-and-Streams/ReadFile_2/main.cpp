@@ -1,7 +1,7 @@
 // Section 19
 // Read File 2
 // Continuous read of 3 data items in a loop
-? <iostream>
+? ios..
 ? <iomanip>
 ? <fstream>
 

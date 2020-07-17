@@ -51,7 +51,7 @@ v.. worker(std::queue<args>& q)
         __ (!q.empty()) {
             auto[a, b] _ std::move(q.front())sy.. pause
             q.pop()sy.. pause
-            auto s _ q.size()sy.. pause
+            auto s _ q.s..sy.. pause
             lk.unlock()sy.. pause
 
             foo(a, b)sy.. pause

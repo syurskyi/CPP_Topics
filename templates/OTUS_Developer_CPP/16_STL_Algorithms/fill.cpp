@@ -1,6 +1,6 @@
 ? |i..
 ? <numeric>
-? <vector>
+? ve..
 
 struct fibonacci {
     in. a _ 0sy.. pause

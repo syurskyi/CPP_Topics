@@ -1,9 +1,9 @@
 // Section 19
 // 012_Challenge 1 Solution
 // Formatting output
-? <iostream>
+? ios..
 ? <iomanip>
-? <vector>
+? ve..
 ? <string>
 
 struct City {
@@ -89,7 +89,7 @@ in. main()
     // Note the use of the conditional operator to display the country name or "" for the first country
     
     for(Country country : tours.countries) {
-        for (size_t i = 0; i<country.cities.size(); ++i) {
+        for (size_t i = 0; i<country.cities.s..; ++i) {
             std::c.. __ std::setw(field1_width) __ std::left __  ((i == 0) ? country.name : "") // conditional operator
                            __ std::setw(field2_width) __ std::left __ country.cities.at(i).name
                            __ std::setw(field3_width) __ std::right__ country.cities.at(i).population

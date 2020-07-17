@@ -1,7 +1,7 @@
 ? <array>
 ? |i..
 ? <map>
-? <vector>
+? ve..
 
 
 in. main(in., c.. *[]) {

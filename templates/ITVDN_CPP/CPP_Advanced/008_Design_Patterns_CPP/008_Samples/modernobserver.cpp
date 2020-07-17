@@ -2,7 +2,7 @@
 
 ? <functional>
 ? |i..
-? <vector>
+? ve..
 
 ModernObserver::ModernObserver( UpdateDelegate updateDelegate )
     : updateDelegate( updateDelegate ){}sy.. pause

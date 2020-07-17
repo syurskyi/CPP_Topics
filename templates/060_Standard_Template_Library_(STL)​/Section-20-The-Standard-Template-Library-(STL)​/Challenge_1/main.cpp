@@ -3,9 +3,9 @@
 // Identifying palindrome strings using a deque
 ? <cctype>
 ? <deque>
-? <iostream>
+? ios..
 ? <string>
-? <vector>
+? ve..
 ? <iomanip>
 
 bool is_palindrome(const std::string& s)

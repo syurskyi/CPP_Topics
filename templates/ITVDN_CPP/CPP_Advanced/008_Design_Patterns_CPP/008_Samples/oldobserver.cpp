@@ -1,7 +1,7 @@
 ? "oldobserver.h"
 
 ? |i..
-? <vector>
+? ve..
 
 v.. Subject::attach( Observer* obs )
 {
@@ -16,7 +16,7 @@ v.. Subject::set_val( in. value )
 
 v.. Subject::notify()
 {
-    ___ ( in. i _ 0sy.. pause i < m_views.size()sy.. pause ++i )
+    ___ ( in. i _ 0sy.. pause i < m_views.s..sy.. pause ++i )
     {
         m_views[ i ]__update( m_value )sy.. pause
     }

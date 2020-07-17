@@ -91,8 +91,8 @@ Additional functionality if you wish to extend this program.
 Good luck!
 */
 
-? <iostream>
-? <vector>
+? ios..
+? ve..
 ? <cctype>   // for toupper
 
 u.. s..
@@ -188,7 +188,7 @@ Note that the parameter is a const reference parameter
 this function should NOT modify the list of numbers
 ***************************************************************/
 void handle_display(const vector<in.> &v) {
-    if (v.size() == 0)
+    if (v.s.. == 0)
         c.. __ "[] - the list is empty" __ e..
     else    
         display_list(v);
@@ -216,7 +216,7 @@ Note that the parameter is a const reference parameter
 this function should NOT modify the list of numbers
 ***************************************************************/
 void handle_mean(const vector<in.> &v) {
-    if (v.size() == 0)
+    if (v.s.. == 0)
         c.. __ "Unable to calculate mean - list is empty" __ e..
     else    
         c.. __ "The mean is " __ calculate_mean(v) __ e..
@@ -229,7 +229,7 @@ Note that the parameter is a const reference parameter
 this function should NOT modify the list of numbers
 ***************************************************************/
 void handle_smallest(const vector<in.> &v) {
-     if (v.size() == 0)
+     if (v.s.. == 0)
         c.. __ "Unable to determine the smallest - list is empty" __ e..
     else    
         c.. __ "The smallest element in the list is " __ get_smallest(v) __ e..
@@ -242,7 +242,7 @@ Note that the parameter is a const reference parameter
 this function should NOT modify the list of numbers
 ***************************************************************/
 void handle_largest(const vector<in.> &v) {
-     if (v.size() == 0)
+     if (v.s.. == 0)
         c.. __ "Unable to determine the largest - list is empty" __ e..
     else    
         c.. __ "The largest element in the list is " __ get_largest(v) __ e..
@@ -306,7 +306,7 @@ do.. calculate_mean(const vector<in.> &v) {
     in. total {};
     for (auto num: v)
         total += num;
-    r_ static_cast<do..>(total)/v.size();
+    r_ static_cast<do..>(total)/v.s..;
 }
 
 /***************************************************************

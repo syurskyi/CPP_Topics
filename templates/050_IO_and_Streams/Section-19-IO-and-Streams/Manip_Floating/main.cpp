@@ -1,7 +1,7 @@
 // Section 19
 // Stream manipulators - Floating point manipulators
 // scientific, setprecision, fixed, showpoint, showpos, uppercase
-? <iostream>
+? ios..
 ? <iomanip>
 
 in. main

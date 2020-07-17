@@ -1,7 +1,7 @@
 // Section 19
 // 012_Challenge 2 - Solution
 // Automated Grader 
-? <iostream>
+? ios..
 ? <fstream>
 ? <iomanip>
 
@@ -34,7 +34,7 @@ void print_student(const std::string &student, in. score) {
 // return the number of correct responses
 in. process_response(const std::string &response, const std::string &answer_key) {
     in. score {0};
-    for (size_t i = 0; i < answer_key.size() ; ++i) {
+    for (size_t i = 0; i < answer_key.s.. ; ++i) {
         if (response.at(i)  == answer_key.at(i))
             score++;
     }

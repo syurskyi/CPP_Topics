@@ -1,8 +1,8 @@
 // Section 20
 // Vector
 
-? <iostream>
-? <vector>
+? ios..
+? ve..
 ? <algorithm>
 
 class Person {
@@ -62,25 +62,25 @@ void test2
 
     std::vector<in.> vec {1,2,3,4,5};
     display(vec);
-    std::c.. __ "\nvec size: " __ vec.size() __ std::e..
+    std::c.. __ "\nvec size: " __ vec.s.. __ std::e..
     std::c.. __ "vec max size: " __ vec.max_size() __ std::e..
     std::c.. __ "vec capacity: " __ vec.capacity() __ std::e..
     
     vec.push_back(6);
     display(vec);
-    std::c.. __ "\nvec size: " __ vec.size() __ std::e..
+    std::c.. __ "\nvec size: " __ vec.s.. __ std::e..
     std::c.. __ "vec max size: " __ vec.max_size() __ std::e..
     std::c.. __ "vec capacity: " __ vec.capacity() __ std::e..
     
     vec.shrink_to_fit();    // C++11
     display(vec);
-    std::c.. __ "\nvec size: " __ vec.size() __ std::e..
+    std::c.. __ "\nvec size: " __ vec.s.. __ std::e..
     std::c.. __ "vec max size: " __ vec.max_size() __ std::e..
     std::c.. __ "vec capacity: " __ vec.capacity() __ std::e..
     
     vec.reserve(100);
     display(vec);
-    std::c.. __ "\nvec size: " __ vec.size() __ std::e..
+    std::c.. __ "\nvec size: " __ vec.s.. __ std::e..
     std::c.. __ "vec max size: " __ vec.max_size() __ std::e..
     std::c.. __ "vec capacity: " __ vec.capacity() __ std::e..
     

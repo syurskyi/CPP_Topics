@@ -1,8 +1,8 @@
 // Section 20
 // Deque
-? <iostream>
+? ios..
 ? <deque>
-? <vector>
+? ve..
 ? <algorithm>
 
 // template function to display any deque
@@ -48,7 +48,7 @@ void test2
     
     std::c.. __ "Front: " __ d.front() __ std::e..
     std::c.. __ "Back : " __ d.back() __ std::e..
-    std::c.. __ "Size  : " __ d.size() __ std::e..
+    std::c.. __ "Size  : " __ d.s.. __ std::e..
     
     d.pop_back();
     d.pop_front();

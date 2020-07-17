@@ -5,7 +5,7 @@
 ? <sstream>
 ? |s..
 ? <unordered_map>
-? <vector>
+? ve..
 
 template < typename T >
 bo.. test _ std::is_same< typename std::iterator_traits< typename T::iterator >::iterator_category,

@@ -1,6 +1,6 @@
 // Section 20
 // Queue
-? <iostream>
+? ios..
 ? <queue>
 
 // This function displays a queue of 
@@ -39,7 +39,7 @@ in. main
         q.pop();
     display(q);
 
-    std::c.. __ "Size: " __ q.size() __ std::e..
+    std::c.. __ "Size: " __ q.s.. __ std::e..
     
     q.push(10);
     q.push(100);

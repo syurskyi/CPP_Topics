@@ -4,7 +4,7 @@
 ? <streambuf>
 ? |s..
 ? <strstream>
-? <vector>
+? ve..
 
 u.. s..
 

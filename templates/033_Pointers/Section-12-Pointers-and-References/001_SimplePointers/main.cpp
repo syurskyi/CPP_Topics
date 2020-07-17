@@ -2,7 +2,7 @@
 // Simple pointers
 
 ? |i..
-? <vector>
+? ve..
 ? <st..>
 
 u.. s..

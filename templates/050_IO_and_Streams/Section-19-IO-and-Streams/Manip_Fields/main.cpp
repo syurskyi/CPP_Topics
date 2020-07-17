@@ -1,7 +1,7 @@
 // Section 19
 // Stream manipulators - Field width, justification and setfill
 // setw, left, right, setfill
-? <iostream>
+? ios..
 ? <iomanip>
 
 void ruler

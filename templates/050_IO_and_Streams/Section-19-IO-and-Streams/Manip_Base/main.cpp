@@ -1,7 +1,7 @@
 // Section 19
 // Stream manipulators - Integer manipulators
 // dec, hex, oct, showbase uppercase, nouppercase, showpos
-? <iostream>
+? ios..
 ? <iomanip>
 
 in. main

@@ -1,7 +1,7 @@
 // Наблюдатель (Observer)
 
 ? |i..
-? <vector>
+? ve..
 
 enum c_ Lang
 {

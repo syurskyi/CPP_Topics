@@ -1,6 +1,6 @@
 // Section 20
 // Priority Queue
-? <iostream>
+? ios..
 ? <queue>
 
 class Person {
@@ -47,7 +47,7 @@ void  test1
     for (in. i : {3,5,7,12,23,12,4,100,0, 3,5,7})
         pq.push(i);
         
-    std::c.. __ "Size: " __ pq.size() __ std::e..
+    std::c.. __ "Size: " __ pq.s.. __ std::e..
     std::c.. __ "Top: " __ pq.top() __ std::e..
         
     display(pq);

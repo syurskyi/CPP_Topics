@@ -1,8 +1,8 @@
 // Section 20
 // Class  templates
-? <iostream>
+? ios..
 ? <string>
-? <vector>
+? ve..
 
 // Template classes are typically completely contained in header files
 // So, we would have the template class in Item.h and no Item.cpp file

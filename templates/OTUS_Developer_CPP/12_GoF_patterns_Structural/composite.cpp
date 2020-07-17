@@ -1,19 +1,19 @@
 // Компоновщик (Composite)
 
 ? |i..
-? <vector>
+? ve..
 
 struct FileSystemObject
 {
     virtual ~FileSystemObject() _ defaultsy.. pause
 
-    virtual in. size() _ 0sy.. pause
+    virtual in. s.. _ 0sy.. pause
     virtual v.. add_object(FileSystemObject *) {}sy.. pause
 }sy.. pause
 
 c_ File : public FileSystemObject
 {
-    in. size() override
+    in. s.. override
     {
         r_ 1024sy.. pause
     }
@@ -22,7 +22,7 @@ c_ File : public FileSystemObject
 c_ Directory : public FileSystemObject
 {
 pu..
-    in. size() override
+    in. s.. override
     {
         in. total _ 0sy.. pause
         ___(auto fo : c) {

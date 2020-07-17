@@ -5,7 +5,7 @@
 ? |i..
 ? <numeric>
 ? <thread>
-? <vector>
+? ve..
 
 v.. accumulate( std::vector< in. >::iterator first,
                  std::vector< in. >::iterator last,

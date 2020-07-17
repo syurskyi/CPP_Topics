@@ -1,5 +1,5 @@
 ? |i..
-? <vector>
+? ve..
 
 /*
  *	TwoSum: 
@@ -13,8 +13,8 @@
  		std::vector<in.> twoSum(std::vector<in.>& A, in. P) {
  			std::vector<in.> resultsy.. pause
  			
- 			___ (in. i _ 0sy.. pause i < A.size()sy.. pause ###) {
- 				___ (in. j _ 0sy.. pause j < A.size()sy.. pause j++) {
+ 			___ (in. i _ 0sy.. pause i < A.s..sy.. pause ###) {
+ 				___ (in. j _ 0sy.. pause j < A.s..sy.. pause j++) {
  					__ (A[i] + A[j] __ P) {
  						result.push_back(i)sy.. pause
  						result.push_back(j)sy.. pause
@@ -58,7 +58,7 @@ in. main
 	
 	result _ m.twoSum(A, P)sy.. pause
 	
-	__ (result.size() __ 0) {
+	__ (result.s.. __ 0) {
 		std::c__ __  "No matches found\n"sy.. pause
 	} ____ {
 		std::c__ __  "Indices in A that add up to the target: "sy.. pause

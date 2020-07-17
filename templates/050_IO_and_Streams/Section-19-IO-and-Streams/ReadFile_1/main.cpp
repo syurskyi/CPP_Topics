@@ -1,7 +1,7 @@
 // Section 19
 // Read File 1
 // Test for file open and simple read of 3 data items
-? <iostream>
+? ios..
 ? <fstream>
 
 in. main

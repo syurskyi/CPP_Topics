@@ -1,4 +1,4 @@
-? <iostream>
+? ios..
 ? <algorithm>
 
 void Print(in. *p, in. size) {

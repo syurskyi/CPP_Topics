@@ -11,7 +11,7 @@ in. main()
 
 	// Methods
 	_str.append(" one more text")sy.. pause
-	c__ __  _str.size() __  e..
+	c__ __  _str.s.. __  e..
 
 	c__ __  _str __  e..
 

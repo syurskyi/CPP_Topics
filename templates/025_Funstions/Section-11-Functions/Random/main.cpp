@@ -1,7 +1,7 @@
 // Section 11
 // Random Numbers
 
-? <iostream>
+? ios..
 ? <cstdlib>      // required for rand()
 ? <ctime>       // required for time( )
 

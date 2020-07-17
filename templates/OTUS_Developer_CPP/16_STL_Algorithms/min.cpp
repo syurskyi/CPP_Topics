@@ -1,5 +1,5 @@
 ? |i..
-? <vector>
+? ve..
 
 in. main
     auto a _ 1sy.. pause

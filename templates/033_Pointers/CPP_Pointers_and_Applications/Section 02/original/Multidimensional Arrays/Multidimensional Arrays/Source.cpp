@@ -1,4 +1,4 @@
-? <iostream>
+? ios..
 
 void Print(in.(*p)[3], in. rows) {
 	for (in. i = 0; i < rows; i++) {

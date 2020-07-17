@@ -1,6 +1,6 @@
 ? <algorithm>
 ? <functional>
-? <vector>
+? ve..
 ? |i..
 
 in. main

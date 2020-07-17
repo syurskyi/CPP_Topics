@@ -1,4 +1,4 @@
-? <iostream>
+? ios..
 
 in. main
 	in. data = 5;

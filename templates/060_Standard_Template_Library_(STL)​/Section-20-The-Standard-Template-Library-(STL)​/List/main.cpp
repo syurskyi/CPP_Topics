@@ -1,6 +1,6 @@
 // Section 20
 // List
-? <iostream>
+? ios..
 ? <list>
 ? <algorithm>
 ? <iterator> // for std::advance
@@ -60,14 +60,14 @@ void test2
 
     std::list<in.> l {1,2,3,4,5,6,7,8,9,10};
     display(l);
-    std::c.. __ "Size: " __ l.size() __ std::e..
+    std::c.. __ "Size: " __ l.s.. __ std::e..
     
     std::c.. __ "Front : " __ l.front() __ std::e..
     std::c.. __ "Back  : " __ l.back() __ std::e..
     
     l.clear();
     display(l);
-    std::c.. __ "Size: " __ l.size() __ std::e..
+    std::c.. __ "Size: " __ l.s.. __ std::e..
 }
 
 void test3

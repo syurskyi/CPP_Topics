@@ -12,7 +12,7 @@
 ? <string_view>
 ? <utility>
 ? <variant>
-? <vector>
+? ve..
 
 u.. s..
 
@@ -417,7 +417,7 @@ v.. example()
 
     std::c__ __  "std::string_view" __  std::e..
 
-    std::string_view largeStringView{ large.c_str(), large.size() }sy.. pause
+    std::string_view largeStringView{ large.c_str(), large.s.. }sy.. pause
     largeStringView.remove_prefix( 10 )sy.. pause
 
     assert( substr __ largeStringView )sy.. pause

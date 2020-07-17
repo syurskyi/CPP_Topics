@@ -1,6 +1,6 @@
 // Section 11
 // Scope example
-? <iostream>
+? ios..
 
 u.. s..
 

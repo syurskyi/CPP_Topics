@@ -2,7 +2,7 @@
 // Stream manipulators - Boolean
 // boolalpha and noboolalpha
 
-? <iostream>
+? ios..
 ? <iomanip>  // Must include for manipulators
 
 in. main
