@@ -5,7 +5,7 @@
 
 u.. s..
 
-c_ Move {
+c_ Move
 pr..
     in. *data;
 pu..
@@ -19,26 +19,26 @@ pu..
     Move(Move &&source) noexcept;
     // Destructor
     ~Move();
-};
+
 
  Move::Move(in. d)  {
     data = ne. in.;
     *data = d;
     c.. __ "Constructor for: " __ d __ e..
-}
+
 
 // Copy ctor
 Move::Move(co.. Move &source)
     : Move {*source.data} {
         c.. __ "Copy constructor  - deep copy for: " __ *data __ e..
-}
+
 
 //Move ctor
 Move::Move(Move &&source) noexcept 
     : data {source.data} {
         source.data = n_p_;
         c.. __ "Move constructor - moving resource: " __ *data __ e..
-}
+
 
 Move::~Move
     __ (data != n_p_) {
