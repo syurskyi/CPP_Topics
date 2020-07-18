@@ -22,7 +22,7 @@ pu..
 
   v.. setHeight(in. h) { height _ hsy.. pause }
 
-protected:
+pr..
   in. widthsy.. pause
   in. heightsy.. pause
 }sy.. pause

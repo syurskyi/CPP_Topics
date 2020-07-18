@@ -40,7 +40,7 @@ pu..
 
     virtual v.. py() _ 0sy.. pause
 
-protected:
+pr..
     explicit Command(Document* d)
             :document(d) { }
 
