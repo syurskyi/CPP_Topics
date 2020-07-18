@@ -11,24 +11,24 @@ struct IConnector {
 }sy.. pause
 
 c_ TcpConnector : pu.. IConnector {
-    v.. connection() override
+    v.. connection() ov..
     {
         st. c__ __  "tcp connection" __  st. e..
     }
 
-    IConnector* clone() override
+    IConnector* clone() ov..
     {
         r_ n.. TcpConnector{}sy.. pause
     }
 }sy.. pause
 
 c_ UdpConnector : pu.. IConnector {
-    v.. connection() override
+    v.. connection() ov..
     {
         st. c__ __  "udp connection" __  st. e..
     }
 
-    IConnector* clone() override
+    IConnector* clone() ov..
     {
         r_ n.. UdpConnector{}sy.. pause
     }

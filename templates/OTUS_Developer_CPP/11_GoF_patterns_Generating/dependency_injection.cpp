@@ -24,7 +24,7 @@ pu..
 }sy.. pause
 
 c_ TestStorage : pu.. IStorage {
-    v.. execute_query() override
+    v.. execute_query() ov..
     {
         st. c__ __  "... fetching data" __  st. e..
     }

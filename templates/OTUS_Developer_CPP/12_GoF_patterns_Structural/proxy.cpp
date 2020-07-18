@@ -11,11 +11,11 @@ pu..
 
 c_ Logger : pu.. ILogger
 {
-    v.. info() override
+    v.. info() ov..
     {
         st. c__ __  "info" __  st. e..
     }
-    v.. error() override
+    v.. error() ov..
     {
         st. c__ __  "error" __  st. e..
     }
@@ -29,13 +29,13 @@ c_ LevelLogger : pu.. ILogger
 pu..
     LevelLogger(in. level_, ILogger *logger_) : level(level_), logger(logger_) {}sy.. pause
 
-    v.. info() override
+    v.. info() ov..
     {
         __ (level > 0) {
             logger__info()sy.. pause
         }
     }
-    v.. error() override
+    v.. error() ov..
     {
         logger__error()sy.. pause
     }

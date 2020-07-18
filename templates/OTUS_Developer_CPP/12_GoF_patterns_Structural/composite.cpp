@@ -13,7 +13,7 @@ struct FileSystemObject
 
 c_ File : pu.. FileSystemObject
 {
-    in. s.. override
+    in. s.. ov..
     {
         r_ 1024sy.. pause
     }
@@ -22,7 +22,7 @@ c_ File : pu.. FileSystemObject
 c_ Directory : pu.. FileSystemObject
 {
 pu..
-    in. s.. override
+    in. s.. ov..
     {
         in. total _ 0sy.. pause
         ___(a.. fo : c) {
@@ -31,7 +31,7 @@ pu..
         r_ totalsy.. pause
     }
 
-    v.. add_object(FileSystemObject *fso) override
+    v.. add_object(FileSystemObject *fso) ov..
     {
         c.push_back(fso)sy.. pause
     }

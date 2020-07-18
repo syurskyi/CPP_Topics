@@ -9,7 +9,7 @@ struct ClockSignal {
 
 c_ in.ernetClockSignal : pu.. ClockSignal
 {
-    v.. now() override
+    v.. now() ov..
     {
         st. c__ __  "internet clock" __  st. e..
     }
@@ -17,7 +17,7 @@ c_ in.ernetClockSignal : pu.. ClockSignal
 
 c_ LocalClockSignal : pu.. ClockSignal
 {
-    v.. now() override
+    v.. now() ov..
     {
         st. c__ __  "local clock" __  st. e..
     }

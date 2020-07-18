@@ -10,7 +10,7 @@ pu..
 
 c_ RawFile : pu.. File
 {
-    v.. write() override
+    v.. write() ov..
     {
         st. c__ __  "write" __  st. e..
     }
@@ -20,7 +20,7 @@ c_ ZipFile : pu.. File
 {
     File *filesy.. pause
 
-    v.. write() override
+    v.. write() ov..
     {
         st. c__ __  "compress" __  st. e..
         file__write()sy.. pause

@@ -32,21 +32,21 @@ pu..
 }sy.. pause
 
 c_ PublicReport : pu.. Report {
-    v.. secure() override {
+    v.. secure() ov.. {
         st. c__ __  "encrypt *" __  st. e..
     }
 
-    v.. format() override {
+    v.. format() ov.. {
         st. c__ __  "strip *" __  st. e..
     }
 }sy.. pause
 
 c_ in.ernalReport : pu.. Report {
-    v.. secure() override {
+    v.. secure() ov.. {
         st. c__ __  "plane *" __  st. e..
     }
 
-    v.. format() override {
+    v.. format() ov.. {
         st. c__ __  "human readable *" __  st. e..
     }
 }sy.. pause

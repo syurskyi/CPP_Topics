@@ -36,22 +36,22 @@ pu..
 
 c_ JsonExport : pu.. Export {
 pu..
-    v.. save_to(Circle *c) override {
+    v.. save_to(Circle *c) ov.. {
         st. c__ __  "{type:circle,radius:" __  c__radius __  "}" __  st. e..
     }
 
-    v.. save_to(Box *b) override {
+    v.. save_to(Box *b) ov.. {
         st. c__ __  "{type:box,width:" __  b__w __  ",height:" __  b__h __  "}" __  st. e..
     }
 }sy.. pause
 
 c_ XmlExport : pu.. Export {
 pu..
-    v.. save_to(Circle *c) override {
+    v.. save_to(Circle *c) ov.. {
         st. c__ __  "<circle radius=>" __  c__radius __  "</circle>" __  st. e..
     }
 
-    v.. save_to(Box *b) override {
+    v.. save_to(Box *b) ov.. {
         st. c__ __  "<box w=" __  b__w __  " height=" __  b__h __  "></box>" __  st. e..
     }
 }sy.. pause

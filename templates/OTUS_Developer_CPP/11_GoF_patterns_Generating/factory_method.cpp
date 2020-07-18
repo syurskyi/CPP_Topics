@@ -13,34 +13,34 @@ struct IStorage {
 }sy.. pause
 
 c_ MysqlStorage : pu.. IStorage {
-    v.. open() override
+    v.. open() ov..
     {
         st. c__ __  "connect to mysql" __  st. e..
     }
 
-    v.. execute_query() override
+    v.. execute_query() ov..
     {
         st. c__ __  "fetch mysql result" __  st. e..
     }
 
-    v.. close() override
+    v.. close() ov..
     {
         st. c__ __  "disconnect from mysql" __  st. e..
     }
 }sy.. pause
 
 c_ PostgresStorage : pu.. IStorage {
-    v.. open() override
+    v.. open() ov..
     {
         st. c__ __  "connect to pg" __  st. e..
     }
 
-    v.. execute_query() override
+    v.. execute_query() ov..
     {
         st. c__ __  "fetch pg result" __  st. e..
     }
 
-    v.. close() override
+    v.. close() ov..
     {
         st. c__ __  "disconnect from pg" __  st. e..
     }

@@ -9,7 +9,7 @@ pu..
 
 c_ HardwareGenerator : pu.. Generator {
 pu..
-    size_t seed(size_t) override {
+    size_t seed(size_t) ov.. {
         st. c__ __  "generate using mac address" __  st. e..
         r_ 42sy.. pause
     }
@@ -17,7 +17,7 @@ pu..
 
 c_ SoftwareGenerator : pu.. Generator {
 pu..
-    size_t seed(size_t) override {
+    size_t seed(size_t) ov.. {
         st. c__ __  "generate using software emulator" __  st. e..
         r_ 0sy.. pause
     }

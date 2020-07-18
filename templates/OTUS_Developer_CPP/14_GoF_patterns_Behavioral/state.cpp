@@ -41,10 +41,10 @@ v.. Application::logout
 
 c_ LogginedHandler : pu.. CommandHandler {
 pu..
-    v.. login(Application *) override {
+    v.. login(Application *) ov.. {
         st. c__ __  "already login" __  st. e..
     }
-    v.. do_it(Application *) override {
+    v.. do_it(Application *) ov.. {
         st. c__ __  "success" __  st. e..
     }
     v.. logout(Application *m) overridesy.. pause
@@ -52,14 +52,14 @@ pu..
 
 c_ Anonymous : pu.. CommandHandler {
 pu..
-    v.. login(Application *m) override {
+    v.. login(Application *m) ov.. {
         st. c__ __  "work as loggined" __  st. e..
         m__set_current(n.. LogginedHandler())sy.. pause
     }
-    v.. do_it(Application *) override {
+    v.. do_it(Application *) ov.. {
         st. c__ __  "error" __  st. e..
     }
-    v.. logout(Application *) override {
+    v.. logout(Application *) ov.. {
         st. c__ __  "already logout" __  st. e..
     }
 }sy.. pause

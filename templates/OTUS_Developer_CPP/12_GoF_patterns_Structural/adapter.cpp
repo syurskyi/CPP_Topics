@@ -40,15 +40,15 @@ c_ MysqlDatabase : pu.. IDatabase
 {
     mysql_client_native clientsy.. pause
 
-    v.. connect() override
+    v.. connect() ov..
     {
         client.mysql_connect()sy.. pause
     }
-    v.. execute_query() override
+    v.. execute_query() ov..
     {
         client.mysql_execute()sy.. pause
     }
-    v.. close() override
+    v.. close() ov..
     {
         client.mysql_close()sy.. pause
     }
@@ -58,15 +58,15 @@ c_ PostgresDatabase : pu.. IDatabase
 {
     postgres_client_native clientsy.. pause
 
-    v.. connect() override
+    v.. connect() ov..
     {
         client.postgres_open()sy.. pause
     }
-    v.. execute_query() override
+    v.. execute_query() ov..
     {
         client.postgres_query()sy.. pause
     }
-    v.. close() override
+    v.. close() ov..
     {
     }
 }sy.. pause

@@ -39,7 +39,7 @@ pu..
         lang__subscribe(t..)sy.. pause
     }
 
-    v.. update(Lang lang) override {
+    v.. update(Lang lang) ov.. {
         st. c__ __  "switch report template to lang " __  in.(lang) __  st. e..
     }
 }sy.. pause
@@ -50,7 +50,7 @@ pu..
         lang__subscribe(t..)sy.. pause
     }
 
-    v.. update(Lang lang) override {
+    v.. update(Lang lang) ov.. {
         st. c__ __  "refresh ui for lang " __  in.(lang) __  st. e..
     }
 }sy.. pause

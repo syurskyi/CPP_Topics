@@ -52,12 +52,12 @@ pu..
     explicit NewDocumentCommand(Document* d)
             :Command(d) { }
 
-    v.. execute() override
+    v.. execute() ov..
     {
         document__create()sy.. pause
     }
 
-    v.. py() override
+    v.. py() ov..
     {
         st. c__ __  "text = []" __  st. e..
     }
@@ -69,12 +69,12 @@ pu..
     ParaCommand(Document* d, st. s.. text_)
             :Command(d), text(st. move(text_)) { }
 
-    v.. execute() override
+    v.. execute() ov..
     {
         document__new_para(text)sy.. pause
     }
 
-    v.. py() override
+    v.. py() ov..
     {
         st. c__ __  "text.append(\"" __  text __  "\")" __  st. e..
     }
@@ -86,12 +86,12 @@ pu..
     SaveAsCommand(Document* d, st. s.. fname_)
             :Command(d), fname(st. move(fname_)) { }
 
-    v.. execute() override
+    v.. execute() ov..
     {
         document__save_as(fname)sy.. pause
     }
 
-    v.. py() override
+    v.. py() ov..
     {
         st. c__ __  "with open(\"" __  fname __  """\", \"w\") as f:" __  st. e..
         st. c__ __  "  f.write(\"\\n\".join(text))" __  st. e..

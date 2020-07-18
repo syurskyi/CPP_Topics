@@ -32,7 +32,7 @@ pu..
 c_ DropHandler : pu.. Handler
 {
 pu..
-    v.. exec(c.. st. s.. &line) override
+    v.. exec(c.. st. s.. &line) ov..
     {
         __ (line.find("DROP") __ 0) {
             st. c__ __  "DropHandler accept " __  line __  st. e..
@@ -46,7 +46,7 @@ pu..
 c_ SelectHandler : pu.. Handler
 {
 pu..
-    v.. exec(c.. st. s.. &line) override
+    v.. exec(c.. st. s.. &line) ov..
     {
         __ (line.find("SELECT") __ 0) {
             st. c__ __  "SelectHandler accept " __  line __  st. e..
@@ -60,7 +60,7 @@ pu..
 c_ CreateHandler: pu.. Handler
 {
 pu..
-    v.. exec(c.. st. s.. &line) override
+    v.. exec(c.. st. s.. &line) ov..
     {
         __ (line.find("CREATE") __ 0) {
             st. c__ __  "CreateHandler accept " __  line __  st. e..

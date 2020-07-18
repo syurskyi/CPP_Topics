@@ -15,13 +15,13 @@ struct IConfig {
 }sy.. pause
 
 c_ ConsulConfig : pu.. IConfig {
-    v.. read() override
+    v.. read() ov..
     {
         st. c__ __  "connect to consul" __  st. e..
     }
 }sy.. pause
 c_ LocalConfig : pu.. IConfig {
-    v.. read() override
+    v.. read() ov..
     {
         st. c__ __  "open local file" __  st. e..
     }
@@ -36,14 +36,14 @@ struct IMetric {
 }sy.. pause
 
 struct PrometheusMetric : pu.. IMetric {
-    v.. send() override
+    v.. send() ov..
     {
         st. c__ __  "push to prometheus" __  st. e..
     }
 }sy.. pause
 
 struct LocalMetric : pu.. IMetric {
-    v.. send() override
+    v.. send() ov..
     {
         st. c__ __  "write to log" __  st. e..
     }
@@ -59,24 +59,24 @@ struct EnvironmentFactory {
 }sy.. pause
 
 c_ CloudFactory : pu.. EnvironmentFactory {
-    IConfig* CreateConfig() override
+    IConfig* CreateConfig() ov..
     {
         r_ n.. ConsulConfig()sy.. pause
     }
 
-    IMetric* CreateMetric() override
+    IMetric* CreateMetric() ov..
     {
         r_ n.. PrometheusMetric()sy.. pause
     }
 }sy.. pause
 
 c_ LocalFactory : pu.. EnvironmentFactory {
-    IConfig* CreateConfig() override
+    IConfig* CreateConfig() ov..
     {
         r_ n.. LocalConfig()sy.. pause
     }
 
-    IMetric* CreateMetric() override
+    IMetric* CreateMetric() ov..
     {
         r_ n.. LocalMetric()sy.. pause
     }
