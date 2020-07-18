@@ -40,29 +40,29 @@
 //        c.. __ "Move constructor - moving resource: " __ #d.. __ e..
 //
 //
-//?::~?
-//    __ (data !_ n_p_) {
+//? ~?
+//    __ (data !_ n_p_
 //        c.. __ "Destructor freeing data for: " __ *data __ e..
-//    } ____ {
+//     ____
 //        c.. __ "Destructor freeing data for nullptr" __ e..
-//    }
-//    de... data;
-//}
+//
+//    de... data
+//
 //
 //in. main
-//    ve..<?> vec;
+//    ve..<?> vec
 //
-//    vec.push_back(?{10});
+//    ?.push_back(?{10
 //
-//    vec.push_back(?{20});
-//    vec.push_back(?{30});
-//    vec.push_back(?{40});
-//     vec.push_back(?{50});
-//    vec.push_back(?{60});
-//    vec.push_back(?{70});
-//    vec.push_back(?{80});
+//    ?.p_b.. ? 20
+//    ?.p_b.. ? 30
+//    ?.p_b..  40
+//    ?.p_b.. ? 50
+//    ?.p_b.. ? 60
+//    ?.p_b.. ? 70
+//    ?.p_b.. ? 80
 //
 //
-//    r_ 0;
+//    r_ _
 //}
 //
