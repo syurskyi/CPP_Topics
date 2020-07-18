@@ -1,6 +1,6 @@
 ? *s..
 ? |i..
-? <cstring>
+? cs..
 
 u.. s..
 in. main()
