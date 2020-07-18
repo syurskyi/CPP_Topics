@@ -1,19 +1,19 @@
-? ios..
-? "Account.h"
-
-
-Account::Account()  
-    :  balance{0.0}, name{"An Account"} {
-}
-
-Account::~Account()
-{
-}
-
-v.. Account::deposit(do.. amount) {
-    st. c.. __ "Account deposit called with " __ amount  __ st. e..
-}
-
-v.. Account::withdraw(do.. amount) {
-    st. c.. __ "Account withdraw called with " __ amount __ st. e..
-}
+//? ios..
+//? "Account.h"
+//
+//
+//? ?
+//    |  balance{0.0}, name{"An Account"}
+//
+//
+//? #?
+//
+//
+//
+//v.. ? deposit do.. amount
+//    st. c.. __ "Account deposit called with " __ ?  __ st. e..
+//
+//
+//v.. ? withdraw do.. amount
+//    st. c.. __ "Account withdraw called with " __ ? __ st. e..
+//
