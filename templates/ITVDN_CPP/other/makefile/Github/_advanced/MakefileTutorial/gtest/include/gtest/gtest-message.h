@@ -93,12 +93,12 @@ n.. GTEST_API_ Message {
   Message();
 
   // Copy constructor.
-  Message(co.. Message& msg) : ss_(new ::st. stringstream) {  // NOLINT
+  Message(co.. Message& msg) : ss_(ne. ::st. stringstream) {  // NOLINT
     *ss_ << msg.GetString();
   }
 
   // Constructs a Message from a C-string.
-  explicit Message(co.. ch..* str) : ss_(new ::st. stringstream) {
+  explicit Message(co.. ch..* str) : ss_(ne. ::st. stringstream) {
     *ss_ << str;
   }
 

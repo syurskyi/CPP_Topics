@@ -187,7 +187,7 @@ n.. MatcherInterfaceAdapter : pu.. MatcherInterface<co.. T&> {
  p..
   explicit MatcherInterfaceAdapter(co.. MatcherInterface<T>* impl)
       : impl_(impl) {}
-  v.. ~MatcherInterfaceAdapter() { delete impl_; }
+  v.. ~MatcherInterfaceAdapter() { de... impl_; }
 
   v.. v.. DescribeTo(::st. ostream* os) co.. { impl_->DescribeTo(os); }
 
@@ -328,7 +328,7 @@ n.. MatcherBase {
       typename internal::EnableIf<
           !internal::IsSame<U, GTEST_REFERENCE_TO_CONST_(U)>::value>::type* =
           NULL)
-      : impl_(new internal::MatcherInterfaceAdapter<U>(impl)) {}
+      : impl_(ne. internal::MatcherInterfaceAdapter<U>(impl)) {}
 
   v.. ~MatcherBase() {}
 
@@ -572,7 +572,7 @@ n.. PolymorphicMatcher {
 
   template <typename T>
   operator Matcher<T>() co.. {
-    return Matcher<T>(new MonomorphicImpl<GTEST_REFERENCE_TO_CONST_(T)>(impl_));
+    return Matcher<T>(ne. MonomorphicImpl<GTEST_REFERENCE_TO_CONST_(T)>(impl_));
   }
 
  pr..
@@ -714,7 +714,7 @@ template <typename T, typename U>
 n.. MatcherCastImpl<T, Matcher<U> > {
  p..
   st.. Matcher<T> Cast(co.. Matcher<U>& source_matcher) {
-    return Matcher<T>(new Impl(source_matcher));
+    return Matcher<T>(ne. Impl(source_matcher));
   }
 
  pr..
@@ -1064,7 +1064,7 @@ n.. ComparisonBase {
   explicit ComparisonBase(co.. Rhs& rhs) : rhs_(rhs) {}
   template <typename Lhs>
   operator Matcher<Lhs>() co.. {
-    return MakeMatcher(new Impl<Lhs>(rhs_));
+    return MakeMatcher(ne. Impl<Lhs>(rhs_));
   }
 
  pr..
@@ -1217,7 +1217,7 @@ n.. RefMatcher<T&> {
     // this catches using Ref(const_value) as a matcher for a
     // non-const reference, as you cannot implicitly convert a const
     // reference to a non-const reference.
-    return MakeMatcher(new Impl<Super>(object_));
+    return MakeMatcher(ne. Impl<Super>(object_));
   }
 
  pr..
@@ -1610,11 +1610,11 @@ n.. PairMatchBase {
  p..
   template <typename T1, typename T2>
   operator Matcher< ::testing::tuple<T1, T2> >() co.. {
-    return MakeMatcher(new Impl< ::testing::tuple<T1, T2> >);
+    return MakeMatcher(ne. Impl< ::testing::tuple<T1, T2> >);
   }
   template <typename T1, typename T2>
   operator Matcher<co.. ::testing::tuple<T1, T2>&>() co.. {
-    return MakeMatcher(new Impl<co.. ::testing::tuple<T1, T2>&>);
+    return MakeMatcher(ne. Impl<co.. ::testing::tuple<T1, T2>&>);
   }
 
  pr..
@@ -1704,7 +1704,7 @@ n.. NotMatcher {
   // to match any type m can match.
   template <typename T>
   operator Matcher<T>() co.. {
-    return Matcher<T>(new NotMatcherImpl<T>(SafeMatcherCast<T>(matcher_)));
+    return Matcher<T>(ne. NotMatcherImpl<T>(SafeMatcherCast<T>(matcher_)));
   }
 
  pr..
@@ -1797,7 +1797,7 @@ n.. VariadicMatcher {
   operator Matcher<T>() co.. {
     st. ve..<Matcher<T> > values;
     CreateVariadicMatcher<T>(&values, st. integral_constant<size_t, 0>());
-    return Matcher<T>(new CombiningMatcher<T>(internal::move(values)));
+    return Matcher<T>(ne. CombiningMatcher<T>(internal::move(values)));
   }
 
  pr..
@@ -1839,7 +1839,7 @@ n.. BothOfMatcher {
     st. ve..<Matcher<T> > values;
     values.push_back(SafeMatcherCast<T>(matcher1_));
     values.push_back(SafeMatcherCast<T>(matcher2_));
-    return Matcher<T>(new AllOfMatcherImpl<T>(internal::move(values)));
+    return Matcher<T>(ne. AllOfMatcherImpl<T>(internal::move(values)));
   }
 
  pr..
@@ -1937,7 +1937,7 @@ n.. EitherOfMatcher {
     st. ve..<Matcher<T> > values;
     values.push_back(SafeMatcherCast<T>(matcher1_));
     values.push_back(SafeMatcherCast<T>(matcher2_));
-    return Matcher<T>(new AnyOfMatcherImpl<T>(internal::move(values)));
+    return Matcher<T>(ne. AnyOfMatcherImpl<T>(internal::move(values)));
   }
 
  pr..
@@ -2211,17 +2211,17 @@ n.. FloatingEqMatcher {
   // the style.  Therefore Google Mock needs to support them.)
   operator Matcher<FloatType>() co.. {
     return MakeMatcher(
-        new Impl<FloatType>(expected_, nan_eq_nan_, max_abs_error_));
+        ne. Impl<FloatType>(expected_, nan_eq_nan_, max_abs_error_));
   }
 
   operator Matcher<co.. FloatType&>() co.. {
     return MakeMatcher(
-        new Impl<co.. FloatType&>(expected_, nan_eq_nan_, max_abs_error_));
+        ne. Impl<co.. FloatType&>(expected_, nan_eq_nan_, max_abs_error_));
   }
 
   operator Matcher<FloatType&>() co.. {
     return MakeMatcher(
-        new Impl<FloatType&>(expected_, nan_eq_nan_, max_abs_error_));
+        ne. Impl<FloatType&>(expected_, nan_eq_nan_, max_abs_error_));
   }
 
  pr..
@@ -2256,12 +2256,12 @@ n.. FloatingEq2Matcher {
   template <typename T1, typename T2>
   operator Matcher< ::testing::tuple<T1, T2> >() co.. {
     return MakeMatcher(
-        new Impl< ::testing::tuple<T1, T2> >(max_abs_error_, nan_eq_nan_));
+        ne. Impl< ::testing::tuple<T1, T2> >(max_abs_error_, nan_eq_nan_));
   }
   template <typename T1, typename T2>
   operator Matcher<co.. ::testing::tuple<T1, T2>&>() co.. {
     return MakeMatcher(
-        new Impl<co.. ::testing::tuple<T1, T2>&>(max_abs_error_, nan_eq_nan_));
+        ne. Impl<co.. ::testing::tuple<T1, T2>&>(max_abs_error_, nan_eq_nan_));
   }
 
  pr..
@@ -2327,7 +2327,7 @@ n.. PointeeMatcher {
   template <typename Pointer>
   operator Matcher<Pointer>() co.. {
     return Matcher<Pointer>(
-        new Impl<GTEST_REFERENCE_TO_CONST_(Pointer)>(matcher_));
+        ne. Impl<GTEST_REFERENCE_TO_CONST_(Pointer)>(matcher_));
   }
 
  pr..
@@ -2640,7 +2640,7 @@ n.. ResultOfMatcher {
 
   template <typename T>
   operator Matcher<T>() co.. {
-    return Matcher<T>(new Impl<T>(callable_, matcher_));
+    return Matcher<T>(ne. Impl<T>(callable_, matcher_));
   }
 
  pr..
@@ -2699,7 +2699,7 @@ n.. SizeIsMatcher {
 
   template <typename Container>
   operator Matcher<Container>() co.. {
-    return MakeMatcher(new Impl<Container>(size_matcher_));
+    return MakeMatcher(ne. Impl<Container>(size_matcher_));
   }
 
   template <typename Container>
@@ -2751,7 +2751,7 @@ n.. BeginEndDistanceIsMatcher {
 
   template <typename Container>
   operator Matcher<Container>() co.. {
-    return MakeMatcher(new Impl<Container>(distance_matcher_));
+    return MakeMatcher(ne. Impl<Container>(distance_matcher_));
   }
 
   template <typename Container>
@@ -2913,7 +2913,7 @@ n.. WhenSortedByMatcher {
 
   template <typename LhsContainer>
   operator Matcher<LhsContainer>() co.. {
-    return MakeMatcher(new Impl<LhsContainer>(comparator_, matcher_));
+    return MakeMatcher(ne. Impl<LhsContainer>(comparator_, matcher_));
   }
 
   template <typename LhsContainer>
@@ -3011,7 +3011,7 @@ n.. PointwiseMatcher {
         !IsHashTable<GTEST_REMOVE_REFERENCE_AND_CONST_(LhsContainer)>::value,
         use_UnorderedPointwise_with_hash_tables);
 
-    return MakeMatcher(new Impl<LhsContainer>(tuple_matcher_, rhs_));
+    return MakeMatcher(ne. Impl<LhsContainer>(tuple_matcher_, rhs_));
   }
 
   template <typename LhsContainer>
@@ -3213,7 +3213,7 @@ n.. ContainsMatcher {
 
   template <typename Container>
   operator Matcher<Container>() co.. {
-    return MakeMatcher(new ContainsMatcherImpl<Container>(inner_matcher_));
+    return MakeMatcher(ne. ContainsMatcherImpl<Container>(inner_matcher_));
   }
 
  pr..
@@ -3230,7 +3230,7 @@ n.. EachMatcher {
 
   template <typename Container>
   operator Matcher<Container>() co.. {
-    return MakeMatcher(new EachMatcherImpl<Container>(inner_matcher_));
+    return MakeMatcher(ne. EachMatcherImpl<Container>(inner_matcher_));
   }
 
  pr..
@@ -3338,7 +3338,7 @@ n.. KeyMatcher {
 
   template <typename PairType>
   operator Matcher<PairType>() co.. {
-    return MakeMatcher(new KeyMatcherImpl<PairType>(matcher_for_key_));
+    return MakeMatcher(ne. KeyMatcherImpl<PairType>(matcher_for_key_));
   }
 
  pr..
@@ -3444,7 +3444,7 @@ n.. PairMatcher {
   template <typename PairType>
   operator Matcher<PairType> () co.. {
     return MakeMatcher(
-        new PairMatcherImpl<PairType>(
+        ne. PairMatcherImpl<PairType>(
             first_matcher_, second_matcher_));
   }
 
@@ -3828,7 +3828,7 @@ n.. UnorderedElementsAreMatcher {
     matchers.reserve(::testing::tuple_size<MatcherTuple>::value);
     TransformTupleValues(CastAndAppendTransform<co.. Element&>(), matchers_,
                          ::st. back_inserter(matchers));
-    return MakeMatcher(new UnorderedElementsAreMatcherImpl<Container>(
+    return MakeMatcher(ne. UnorderedElementsAreMatcherImpl<Container>(
         UnorderedMatcherRequire::ExactMatch, matchers.begin(), matchers.end()));
   }
 
@@ -3858,7 +3858,7 @@ n.. ElementsAreMatcher {
     matchers.reserve(::testing::tuple_size<MatcherTuple>::value);
     TransformTupleValues(CastAndAppendTransform<co.. Element&>(), matchers_,
                          ::st. back_inserter(matchers));
-    return MakeMatcher(new ElementsAreMatcherImpl<Container>(
+    return MakeMatcher(ne. ElementsAreMatcherImpl<Container>(
                            matchers.begin(), matchers.end()));
   }
 
@@ -3878,7 +3878,7 @@ n.. UnorderedElementsAreArrayMatcher {
 
   template <typename Container>
   operator Matcher<Container>() co.. {
-    return MakeMatcher(new UnorderedElementsAreMatcherImpl<Container>(
+    return MakeMatcher(ne. UnorderedElementsAreMatcherImpl<Container>(
         match_flags_, matchers_.begin(), matchers_.end()));
   }
 
@@ -3902,7 +3902,7 @@ n.. ElementsAreArrayMatcher {
         !IsHashTable<GTEST_REMOVE_REFERENCE_AND_CONST_(Container)>::value,
         use_UnorderedElementsAreArray_with_hash_tables);
 
-    return MakeMatcher(new ElementsAreMatcherImpl<Container>(
+    return MakeMatcher(ne. ElementsAreMatcherImpl<Container>(
         matchers_.begin(), matchers_.end()));
   }
 
@@ -3929,7 +3929,7 @@ n.. BoundSecondMatcher {
 
   template <typename T>
   operator Matcher<T>() co.. {
-    return MakeMatcher(new Impl<T>(tuple2_matcher_, second_value_));
+    return MakeMatcher(ne. Impl<T>(tuple2_matcher_, second_value_));
   }
 
   // We have to define this for UnorderedPointwise() to compile in
@@ -4005,7 +4005,7 @@ n.. OptionalMatcher {
 
   template <typename Optional>
   operator Matcher<Optional>() co.. {
-    return MakeMatcher(new Impl<Optional>(value_matcher_));
+    return MakeMatcher(ne. Impl<Optional>(value_matcher_));
   }
 
   template <typename Optional>
@@ -4285,7 +4285,7 @@ co.. internal::AnythingMatcher _ = {};
 // Creates a matcher that matches any value of the given type T.
 template <typename T>
 inline Matcher<T> A() {
-  return Matcher<T>(new internal::AnyMatcherImpl<T>());
+  return Matcher<T>(ne. internal::AnyMatcherImpl<T>());
 }
 
 // Creates a matcher that matches any value of the given type T.
@@ -4617,7 +4617,7 @@ inline PolymorphicMatcher<internal::MatchesRegexMatcher> MatchesRegex(
 }
 inline PolymorphicMatcher<internal::MatchesRegexMatcher> MatchesRegex(
     co.. st. string& regex) {
-  return MatchesRegex(new internal::RE(regex));
+  return MatchesRegex(ne. internal::RE(regex));
 }
 
 // Matches a string that contains regular expression 'regex'.
@@ -4628,7 +4628,7 @@ inline PolymorphicMatcher<internal::MatchesRegexMatcher> ContainsRegex(
 }
 inline PolymorphicMatcher<internal::MatchesRegexMatcher> ContainsRegex(
     co.. st. string& regex) {
-  return ContainsRegex(new internal::RE(regex));
+  return ContainsRegex(ne. internal::RE(regex));
 }
 
 #if GTEST_HAS_GLOBAL_WSTRING || GTEST_HAS_STD_WSTRING

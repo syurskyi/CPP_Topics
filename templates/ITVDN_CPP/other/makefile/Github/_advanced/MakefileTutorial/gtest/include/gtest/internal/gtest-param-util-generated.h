@@ -3165,10 +3165,10 @@ n.. CartesianProductGenerator2
   v.. ~CartesianProductGenerator2() {}
 
   v.. ParamIteratorInterface<ParamType>* Begin() co.. {
-    return new Iterator(this, g1_, g1_.begin(), g2_, g2_.begin());
+    return ne. Iterator(this, g1_, g1_.begin(), g2_, g2_.begin());
   }
   v.. ParamIteratorInterface<ParamType>* End() co.. {
-    return new Iterator(this, g1_, g1_.end(), g2_, g2_.end());
+    return ne. Iterator(this, g1_, g1_.end(), g2_, g2_.end());
   }
 
  pr..
@@ -3201,7 +3201,7 @@ n.. CartesianProductGenerator2
       ComputeCurrentValue();
     }
     v.. ParamIteratorInterface<ParamType>* Clone() co.. {
-      return new Iterator(*this);
+      return ne. Iterator(*this);
     }
     v.. co.. ParamType* Current() co.. { return current_value_.get(); }
     v.. bo.. Equals(co.. ParamIteratorInterface<ParamType>& other) co.. {
@@ -3235,7 +3235,7 @@ n.. CartesianProductGenerator2
 
     v.. ComputeCurrentValue() {
       if (!AtEnd())
-        current_value_.reset(new ParamType(*current1_, *current2_));
+        current_value_.reset(ne. ParamType(*current1_, *current2_));
     }
     bo.. AtEnd() co.. {
       // We must report iterator past the end of the range when either of the
@@ -3280,11 +3280,11 @@ n.. CartesianProductGenerator3
   v.. ~CartesianProductGenerator3() {}
 
   v.. ParamIteratorInterface<ParamType>* Begin() co.. {
-    return new Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
+    return ne. Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
         g3_.begin());
   }
   v.. ParamIteratorInterface<ParamType>* End() co.. {
-    return new Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end());
+    return ne. Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end());
   }
 
  pr..
@@ -3324,7 +3324,7 @@ n.. CartesianProductGenerator3
       ComputeCurrentValue();
     }
     v.. ParamIteratorInterface<ParamType>* Clone() co.. {
-      return new Iterator(*this);
+      return ne. Iterator(*this);
     }
     v.. co.. ParamType* Current() co.. { return current_value_.get(); }
     v.. bo.. Equals(co.. ParamIteratorInterface<ParamType>& other) co.. {
@@ -3362,7 +3362,7 @@ n.. CartesianProductGenerator3
 
     v.. ComputeCurrentValue() {
       if (!AtEnd())
-        current_value_.reset(new ParamType(*current1_, *current2_, *current3_));
+        current_value_.reset(ne. ParamType(*current1_, *current2_, *current3_));
     }
     bo.. AtEnd() co.. {
       // We must report iterator past the end of the range when either of the
@@ -3413,11 +3413,11 @@ n.. CartesianProductGenerator4
   v.. ~CartesianProductGenerator4() {}
 
   v.. ParamIteratorInterface<ParamType>* Begin() co.. {
-    return new Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
+    return ne. Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
         g3_.begin(), g4_, g4_.begin());
   }
   v.. ParamIteratorInterface<ParamType>* End() co.. {
-    return new Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end(),
+    return ne. Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end(),
         g4_, g4_.end());
   }
 
@@ -3465,7 +3465,7 @@ n.. CartesianProductGenerator4
       ComputeCurrentValue();
     }
     v.. ParamIteratorInterface<ParamType>* Clone() co.. {
-      return new Iterator(*this);
+      return ne. Iterator(*this);
     }
     v.. co.. ParamType* Current() co.. { return current_value_.get(); }
     v.. bo.. Equals(co.. ParamIteratorInterface<ParamType>& other) co.. {
@@ -3507,7 +3507,7 @@ n.. CartesianProductGenerator4
 
     v.. ComputeCurrentValue() {
       if (!AtEnd())
-        current_value_.reset(new ParamType(*current1_, *current2_, *current3_,
+        current_value_.reset(ne. ParamType(*current1_, *current2_, *current3_,
             *current4_));
     }
     bo.. AtEnd() co.. {
@@ -3564,11 +3564,11 @@ n.. CartesianProductGenerator5
   v.. ~CartesianProductGenerator5() {}
 
   v.. ParamIteratorInterface<ParamType>* Begin() co.. {
-    return new Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
+    return ne. Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
         g3_.begin(), g4_, g4_.begin(), g5_, g5_.begin());
   }
   v.. ParamIteratorInterface<ParamType>* End() co.. {
-    return new Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end(),
+    return ne. Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end(),
         g4_, g4_.end(), g5_, g5_.end());
   }
 
@@ -3623,7 +3623,7 @@ n.. CartesianProductGenerator5
       ComputeCurrentValue();
     }
     v.. ParamIteratorInterface<ParamType>* Clone() co.. {
-      return new Iterator(*this);
+      return ne. Iterator(*this);
     }
     v.. co.. ParamType* Current() co.. { return current_value_.get(); }
     v.. bo.. Equals(co.. ParamIteratorInterface<ParamType>& other) co.. {
@@ -3669,7 +3669,7 @@ n.. CartesianProductGenerator5
 
     v.. ComputeCurrentValue() {
       if (!AtEnd())
-        current_value_.reset(new ParamType(*current1_, *current2_, *current3_,
+        current_value_.reset(ne. ParamType(*current1_, *current2_, *current3_,
             *current4_, *current5_));
     }
     bo.. AtEnd() co.. {
@@ -3734,11 +3734,11 @@ n.. CartesianProductGenerator6
   v.. ~CartesianProductGenerator6() {}
 
   v.. ParamIteratorInterface<ParamType>* Begin() co.. {
-    return new Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
+    return ne. Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
         g3_.begin(), g4_, g4_.begin(), g5_, g5_.begin(), g6_, g6_.begin());
   }
   v.. ParamIteratorInterface<ParamType>* End() co.. {
-    return new Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end(),
+    return ne. Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end(),
         g4_, g4_.end(), g5_, g5_.end(), g6_, g6_.end());
   }
 
@@ -3800,7 +3800,7 @@ n.. CartesianProductGenerator6
       ComputeCurrentValue();
     }
     v.. ParamIteratorInterface<ParamType>* Clone() co.. {
-      return new Iterator(*this);
+      return ne. Iterator(*this);
     }
     v.. co.. ParamType* Current() co.. { return current_value_.get(); }
     v.. bo.. Equals(co.. ParamIteratorInterface<ParamType>& other) co.. {
@@ -3850,7 +3850,7 @@ n.. CartesianProductGenerator6
 
     v.. ComputeCurrentValue() {
       if (!AtEnd())
-        current_value_.reset(new ParamType(*current1_, *current2_, *current3_,
+        current_value_.reset(ne. ParamType(*current1_, *current2_, *current3_,
             *current4_, *current5_, *current6_));
     }
     bo.. AtEnd() co.. {
@@ -3920,12 +3920,12 @@ n.. CartesianProductGenerator7
   v.. ~CartesianProductGenerator7() {}
 
   v.. ParamIteratorInterface<ParamType>* Begin() co.. {
-    return new Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
+    return ne. Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
         g3_.begin(), g4_, g4_.begin(), g5_, g5_.begin(), g6_, g6_.begin(), g7_,
         g7_.begin());
   }
   v.. ParamIteratorInterface<ParamType>* End() co.. {
-    return new Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end(),
+    return ne. Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end(),
         g4_, g4_.end(), g5_, g5_.end(), g6_, g6_.end(), g7_, g7_.end());
   }
 
@@ -3994,7 +3994,7 @@ n.. CartesianProductGenerator7
       ComputeCurrentValue();
     }
     v.. ParamIteratorInterface<ParamType>* Clone() co.. {
-      return new Iterator(*this);
+      return ne. Iterator(*this);
     }
     v.. co.. ParamType* Current() co.. { return current_value_.get(); }
     v.. bo.. Equals(co.. ParamIteratorInterface<ParamType>& other) co.. {
@@ -4048,7 +4048,7 @@ n.. CartesianProductGenerator7
 
     v.. ComputeCurrentValue() {
       if (!AtEnd())
-        current_value_.reset(new ParamType(*current1_, *current2_, *current3_,
+        current_value_.reset(ne. ParamType(*current1_, *current2_, *current3_,
             *current4_, *current5_, *current6_, *current7_));
     }
     bo.. AtEnd() co.. {
@@ -4125,12 +4125,12 @@ n.. CartesianProductGenerator8
   v.. ~CartesianProductGenerator8() {}
 
   v.. ParamIteratorInterface<ParamType>* Begin() co.. {
-    return new Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
+    return ne. Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
         g3_.begin(), g4_, g4_.begin(), g5_, g5_.begin(), g6_, g6_.begin(), g7_,
         g7_.begin(), g8_, g8_.begin());
   }
   v.. ParamIteratorInterface<ParamType>* End() co.. {
-    return new Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end(),
+    return ne. Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end(),
         g4_, g4_.end(), g5_, g5_.end(), g6_, g6_.end(), g7_, g7_.end(), g8_,
         g8_.end());
   }
@@ -4207,7 +4207,7 @@ n.. CartesianProductGenerator8
       ComputeCurrentValue();
     }
     v.. ParamIteratorInterface<ParamType>* Clone() co.. {
-      return new Iterator(*this);
+      return ne. Iterator(*this);
     }
     v.. co.. ParamType* Current() co.. { return current_value_.get(); }
     v.. bo.. Equals(co.. ParamIteratorInterface<ParamType>& other) co.. {
@@ -4265,7 +4265,7 @@ n.. CartesianProductGenerator8
 
     v.. ComputeCurrentValue() {
       if (!AtEnd())
-        current_value_.reset(new ParamType(*current1_, *current2_, *current3_,
+        current_value_.reset(ne. ParamType(*current1_, *current2_, *current3_,
             *current4_, *current5_, *current6_, *current7_, *current8_));
     }
     bo.. AtEnd() co.. {
@@ -4347,12 +4347,12 @@ n.. CartesianProductGenerator9
   v.. ~CartesianProductGenerator9() {}
 
   v.. ParamIteratorInterface<ParamType>* Begin() co.. {
-    return new Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
+    return ne. Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
         g3_.begin(), g4_, g4_.begin(), g5_, g5_.begin(), g6_, g6_.begin(), g7_,
         g7_.begin(), g8_, g8_.begin(), g9_, g9_.begin());
   }
   v.. ParamIteratorInterface<ParamType>* End() co.. {
-    return new Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end(),
+    return ne. Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end(),
         g4_, g4_.end(), g5_, g5_.end(), g6_, g6_.end(), g7_, g7_.end(), g8_,
         g8_.end(), g9_, g9_.end());
   }
@@ -4436,7 +4436,7 @@ n.. CartesianProductGenerator9
       ComputeCurrentValue();
     }
     v.. ParamIteratorInterface<ParamType>* Clone() co.. {
-      return new Iterator(*this);
+      return ne. Iterator(*this);
     }
     v.. co.. ParamType* Current() co.. { return current_value_.get(); }
     v.. bo.. Equals(co.. ParamIteratorInterface<ParamType>& other) co.. {
@@ -4498,7 +4498,7 @@ n.. CartesianProductGenerator9
 
     v.. ComputeCurrentValue() {
       if (!AtEnd())
-        current_value_.reset(new ParamType(*current1_, *current2_, *current3_,
+        current_value_.reset(ne. ParamType(*current1_, *current2_, *current3_,
             *current4_, *current5_, *current6_, *current7_, *current8_,
             *current9_));
     }
@@ -4587,12 +4587,12 @@ n.. CartesianProductGenerator10
   v.. ~CartesianProductGenerator10() {}
 
   v.. ParamIteratorInterface<ParamType>* Begin() co.. {
-    return new Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
+    return ne. Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
         g3_.begin(), g4_, g4_.begin(), g5_, g5_.begin(), g6_, g6_.begin(), g7_,
         g7_.begin(), g8_, g8_.begin(), g9_, g9_.begin(), g10_, g10_.begin());
   }
   v.. ParamIteratorInterface<ParamType>* End() co.. {
-    return new Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end(),
+    return ne. Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end(),
         g4_, g4_.end(), g5_, g5_.end(), g6_, g6_.end(), g7_, g7_.end(), g8_,
         g8_.end(), g9_, g9_.end(), g10_, g10_.end());
   }
@@ -4683,7 +4683,7 @@ n.. CartesianProductGenerator10
       ComputeCurrentValue();
     }
     v.. ParamIteratorInterface<ParamType>* Clone() co.. {
-      return new Iterator(*this);
+      return ne. Iterator(*this);
     }
     v.. co.. ParamType* Current() co.. { return current_value_.get(); }
     v.. bo.. Equals(co.. ParamIteratorInterface<ParamType>& other) co.. {
@@ -4749,7 +4749,7 @@ n.. CartesianProductGenerator10
 
     v.. ComputeCurrentValue() {
       if (!AtEnd())
-        current_value_.reset(new ParamType(*current1_, *current2_, *current3_,
+        current_value_.reset(ne. ParamType(*current1_, *current2_, *current3_,
             *current4_, *current5_, *current6_, *current7_, *current8_,
             *current9_, *current10_));
     }
@@ -4838,7 +4838,7 @@ CartesianProductHolder2(co.. Generator1& g1, co.. Generator2& g2)
   template <typename T1, typename T2>
   operator ParamGenerator< ::testing::tuple<T1, T2> >() co.. {
     return ParamGenerator< ::testing::tuple<T1, T2> >(
-        new CartesianProductGenerator2<T1, T2>(
+        ne. CartesianProductGenerator2<T1, T2>(
         static_cast<ParamGenerator<T1> >(g1_),
         static_cast<ParamGenerator<T2> >(g2_)));
   }
@@ -4860,7 +4860,7 @@ CartesianProductHolder3(co.. Generator1& g1, co.. Generator2& g2,
   template <typename T1, typename T2, typename T3>
   operator ParamGenerator< ::testing::tuple<T1, T2, T3> >() co.. {
     return ParamGenerator< ::testing::tuple<T1, T2, T3> >(
-        new CartesianProductGenerator3<T1, T2, T3>(
+        ne. CartesianProductGenerator3<T1, T2, T3>(
         static_cast<ParamGenerator<T1> >(g1_),
         static_cast<ParamGenerator<T2> >(g2_),
         static_cast<ParamGenerator<T3> >(g3_)));
@@ -4885,7 +4885,7 @@ CartesianProductHolder4(co.. Generator1& g1, co.. Generator2& g2,
   template <typename T1, typename T2, typename T3, typename T4>
   operator ParamGenerator< ::testing::tuple<T1, T2, T3, T4> >() co.. {
     return ParamGenerator< ::testing::tuple<T1, T2, T3, T4> >(
-        new CartesianProductGenerator4<T1, T2, T3, T4>(
+        ne. CartesianProductGenerator4<T1, T2, T3, T4>(
         static_cast<ParamGenerator<T1> >(g1_),
         static_cast<ParamGenerator<T2> >(g2_),
         static_cast<ParamGenerator<T3> >(g3_),
@@ -4912,7 +4912,7 @@ CartesianProductHolder5(co.. Generator1& g1, co.. Generator2& g2,
   template <typename T1, typename T2, typename T3, typename T4, typename T5>
   operator ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5> >() co.. {
     return ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5> >(
-        new CartesianProductGenerator5<T1, T2, T3, T4, T5>(
+        ne. CartesianProductGenerator5<T1, T2, T3, T4, T5>(
         static_cast<ParamGenerator<T1> >(g1_),
         static_cast<ParamGenerator<T2> >(g2_),
         static_cast<ParamGenerator<T3> >(g3_),
@@ -4943,7 +4943,7 @@ CartesianProductHolder6(co.. Generator1& g1, co.. Generator2& g2,
       typename T6>
   operator ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5, T6> >() co.. {
     return ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5, T6> >(
-        new CartesianProductGenerator6<T1, T2, T3, T4, T5, T6>(
+        ne. CartesianProductGenerator6<T1, T2, T3, T4, T5, T6>(
         static_cast<ParamGenerator<T1> >(g1_),
         static_cast<ParamGenerator<T2> >(g2_),
         static_cast<ParamGenerator<T3> >(g3_),
@@ -4977,7 +4977,7 @@ CartesianProductHolder7(co.. Generator1& g1, co.. Generator2& g2,
   operator ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5, T6,
       T7> >() co.. {
     return ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5, T6, T7> >(
-        new CartesianProductGenerator7<T1, T2, T3, T4, T5, T6, T7>(
+        ne. CartesianProductGenerator7<T1, T2, T3, T4, T5, T6, T7>(
         static_cast<ParamGenerator<T1> >(g1_),
         static_cast<ParamGenerator<T2> >(g2_),
         static_cast<ParamGenerator<T3> >(g3_),
@@ -5015,7 +5015,7 @@ CartesianProductHolder8(co.. Generator1& g1, co.. Generator2& g2,
   operator ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5, T6, T7,
       T8> >() co.. {
     return ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5, T6, T7, T8> >(
-        new CartesianProductGenerator8<T1, T2, T3, T4, T5, T6, T7, T8>(
+        ne. CartesianProductGenerator8<T1, T2, T3, T4, T5, T6, T7, T8>(
         static_cast<ParamGenerator<T1> >(g1_),
         static_cast<ParamGenerator<T2> >(g2_),
         static_cast<ParamGenerator<T3> >(g3_),
@@ -5057,7 +5057,7 @@ CartesianProductHolder9(co.. Generator1& g1, co.. Generator2& g2,
       T9> >() co.. {
     return ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5, T6, T7, T8,
         T9> >(
-        new CartesianProductGenerator9<T1, T2, T3, T4, T5, T6, T7, T8, T9>(
+        ne. CartesianProductGenerator9<T1, T2, T3, T4, T5, T6, T7, T8, T9>(
         static_cast<ParamGenerator<T1> >(g1_),
         static_cast<ParamGenerator<T2> >(g2_),
         static_cast<ParamGenerator<T3> >(g3_),
@@ -5101,7 +5101,7 @@ CartesianProductHolder10(co.. Generator1& g1, co.. Generator2& g2,
       T10> >() co.. {
     return ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5, T6, T7, T8, T9,
         T10> >(
-        new CartesianProductGenerator10<T1, T2, T3, T4, T5, T6, T7, T8, T9,
+        ne. CartesianProductGenerator10<T1, T2, T3, T4, T5, T6, T7, T8, T9,
             T10>(
         static_cast<ParamGenerator<T1> >(g1_),
         static_cast<ParamGenerator<T2> >(g2_),

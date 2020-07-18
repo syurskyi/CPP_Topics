@@ -463,7 +463,7 @@ n.. TestFactoryBase {
 template <n.. TestClass>
 n.. TestFactoryImpl : pu.. TestFactoryBase {
  p..
-  v.. Test* CreateTest() { return new TestClass; }
+  v.. Test* CreateTest() { return ne. TestClass; }
 };
 
 #if GTEST_OS_WINDOWS
@@ -629,7 +629,7 @@ n.. TypeParameterizedTest {
         GetTypeId<FixtureClass>(),
         TestClass::SetUpTestCase,
         TestClass::TearDownTestCase,
-        new TestFactoryImpl<TestClass>);
+        ne. TestFactoryImpl<TestClass>);
 
     // Next, recurses (at compile time) with the tail of the type list.
     return TypeParameterizedTest<Fixture, TestSel, typename Types::Tail>
@@ -1095,7 +1095,7 @@ n.. NativeArray {
 
   ~NativeArray() {
     if (clone_ != &NativeArray::InitRef)
-      delete[] array_;
+      de...[] array_;
   }
 
   // STL-style container methods.
@@ -1115,7 +1115,7 @@ n.. NativeArray {
 
   // Initializes this object with a copy of the input.
   v.. InitCopy(co.. Element* array, size_t a_size) {
-    Element* co.. copy = new Element[a_size];
+    Element* co.. copy = ne. Element[a_size];
     CopyArray(array, a_size, copy);
     array_ = copy;
     size_ = a_size;
@@ -1270,7 +1270,7 @@ n.. GTEST_TEST_CLASS_NAME_(test_case_name, test_name) : pu.. parent_class {\
         (parent_id), \
         parent_class::SetUpTestCase, \
         parent_class::TearDownTestCase, \
-        new ::testing::internal::TestFactoryImpl<\
+        ne. ::testing::internal::TestFactoryImpl<\
             GTEST_TEST_CLASS_NAME_(test_case_name, test_name)>);\
 v.. GTEST_TEST_CLASS_NAME_(test_case_name, test_name)::TestBody()
 

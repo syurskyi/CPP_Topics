@@ -8,18 +8,18 @@ v.. Print(in. *p, in. size) {
 }
 
 in. main
-	in. *p = new in.[5]{ 5,1,7,2,8 };
+	in. *p = ne. in.[5]{ 5,1,7,2,8 };
 	
-	in. *pTemp = new in.[5 + 5];
+	in. *pTemp = ne. in.[5 + 5];
 
 	st. copy(p, p + 5, pTemp);
 
-	delete[]p;
+	de...[]p;
 	p = pTemp;
 
 	p[5] = 100;
 	Print(p, 6);
 
-	delete[]p;
+	de...[]p;
 	 
 }

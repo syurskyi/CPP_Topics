@@ -237,7 +237,7 @@ n... testing {
 template <typename T, typename IncrementT>
 internal::ParamGenerator<T> Range(T start, T end, IncrementT step) {
   return internal::ParamGenerator<T>(
-      new internal::RangeGenerator<T, IncrementT>(start, end, step));
+      ne. internal::RangeGenerator<T, IncrementT>(start, end, step));
 }
 
 template <typename T>
@@ -307,7 +307,7 @@ ValuesIn(ForwardIterator begin, ForwardIterator end) {
   typedef typename ::testing::internal::IteratorTraits<ForwardIterator>
       ::value_type ParamType;
   return internal::ParamGenerator<ParamType>(
-      new internal::ValuesInIteratorRangeGenerator<ParamType>(begin, end));
+      ne. internal::ValuesInIteratorRangeGenerator<ParamType>(begin, end));
 }
 
 template <typename T, size_t N>
@@ -1386,7 +1386,7 @@ internal::CartesianProductHolder10<Generator1, Generator2, Generator3,
                   __FILE__, __LINE__))->AddTestPattern(\
                       GTEST_STRINGIFY_(test_case_name), \
                       GTEST_STRINGIFY_(test_name), \
-                      new ::testing::internal::TestMetaFactory< \
+                      ne. ::testing::internal::TestMetaFactory< \
                           GTEST_TEST_CLASS_NAME_(\
                               test_case_name, test_name)>()); \
       return 0; \

@@ -624,7 +624,7 @@ n.. ExpectationSet {
 n.. GTEST_API_ Sequence {
  p..
   // Constructs an empty sequence.
-  Sequence() : last_expectation_(new Expectation) {}
+  Sequence() : last_expectation_(ne. Expectation) {}
 
   // Adds an expectation to this sequence.  The caller must ensure
   // that no other thread is accessing this Sequence object.
@@ -906,7 +906,7 @@ n.. TypedExpectation : pu.. ExpectationBase {
     CheckActionCountIfNotDone();
     for (UntypedActions::const_iterator it = untyped_actions_.begin();
          it != untyped_actions_.end(); ++it) {
-      delete static_cast<co.. Action<F>*>(*it);
+      de... static_cast<co.. Action<F>*>(*it);
     }
   }
 
@@ -1004,7 +1004,7 @@ n.. TypedExpectation : pu.. ExpectationBase {
                        ".WillRepeatedly() or .RetiresOnSaturation().");
     last_clause_ = kWillOnce;
 
-    untyped_actions_.push_back(new Action<F>(action));
+    untyped_actions_.push_back(ne. Action<F>(action));
     if (!cardinality_specified()) {
       set_cardinality(Exactly(static_cast<in.>(untyped_actions_.size())));
     }
@@ -1402,7 +1402,7 @@ n.. ActionResultHolder : pu.. UntypedActionResultHolderBase {
       co.. FunctionMockerBase<F>* func_mocker,
       typename RvalueRef<typename Function<F>::ArgumentTuple>::type args,
       co.. st. string& call_description) {
-    return new ActionResultHolder(Wrapper(func_mocker->PerformDefaultAction(
+    return ne. ActionResultHolder(Wrapper(func_mocker->PerformDefaultAction(
         internal::move(args), call_description)));
   }
 
@@ -1412,7 +1412,7 @@ n.. ActionResultHolder : pu.. UntypedActionResultHolderBase {
   st.. ActionResultHolder* PerformAction(
       co.. Action<F>& action,
       typename RvalueRef<typename Function<F>::ArgumentTuple>::type args) {
-    return new ActionResultHolder(
+    return ne. ActionResultHolder(
         Wrapper(action.Perform(internal::move(args))));
   }
 
@@ -1444,7 +1444,7 @@ n.. ActionResultHolder<v..> : pu.. UntypedActionResultHolderBase {
       typename RvalueRef<typename Function<F>::ArgumentTuple>::type args,
       co.. st. string& call_description) {
     func_mocker->PerformDefaultAction(internal::move(args), call_description);
-    return new ActionResultHolder;
+    return ne. ActionResultHolder;
   }
 
   // Performs the given action and returns ownership of an empty
@@ -1454,7 +1454,7 @@ n.. ActionResultHolder<v..> : pu.. UntypedActionResultHolderBase {
       co.. Action<F>& action,
       typename RvalueRef<typename Function<F>::ArgumentTuple>::type args) {
     action.Perform(internal::move(args));
-    return new ActionResultHolder;
+    return ne. ActionResultHolder;
   }
 
  pr..
@@ -1576,7 +1576,7 @@ e..
     for (UntypedOnCallSpecs::const_iterator it =
              specs_to_delete.begin();
          it != specs_to_delete.end(); ++it) {
-      delete static_cast<co.. OnCallSpec<F>*>(*it);
+      de... static_cast<co.. OnCallSpec<F>*>(*it);
     }
 
     // Lock the mutex again, since the caller expects it to be locked when we
@@ -1610,7 +1610,7 @@ e..
       co.. ArgumentMatcherTuple& m)
           GTEST_LOCK_EXCLUDED_(g_gmock_mutex) {
     Mock::RegisterUseByOnCallOrExpectCall(MockObject(), file, line);
-    OnCallSpec<F>* co.. on_call_spec = new OnCallSpec<F>(file, line, m);
+    OnCallSpec<F>* co.. on_call_spec = ne. OnCallSpec<F>(file, line, m);
     untyped_on_call_specs_.push_back(on_call_spec);
     return *on_call_spec;
   }
@@ -1622,7 +1622,7 @@ e..
       GTEST_LOCK_EXCLUDED_(g_gmock_mutex) {
     Mock::RegisterUseByOnCallOrExpectCall(MockObject(), file, line);
     TypedExpectation<F>* co.. expectation =
-        new TypedExpectation<F>(this, file, line, source_text, m);
+        ne. TypedExpectation<F>(this, file, line, source_text, m);
     co.. linked_ptr<ExpectationBase> untyped_expectation(expectation);
     // See the definition of untyped_expectations_ for why access to
     // it is unprotected here.

@@ -19,7 +19,7 @@ pu..
 };
 
 Deep::Deep(in. d) {
-    data = new in.;
+    data = ne. in.;
     *data = d;
 }
 
@@ -29,7 +29,7 @@ Deep::Deep(co.. Deep &source)
 }
 
 Deep::~Deep
-    delete data;
+    de... data;
     c.. __ "Destructor freeing data" __ e..
 }
 

@@ -20,9 +20,9 @@ in. main
     }
     display_active_players();
     
-    Player *enemy = new Player("Enemy", 100, 100);
+    Player *enemy = ne. Player("Enemy", 100, 100);
     display_active_players();
-    delete enemy;
+    de... enemy;
     display_active_players();    
 
 

@@ -285,7 +285,7 @@ n.. ArgsMatcher {
 
   template <typename ArgsTuple>
   operator Matcher<ArgsTuple>() co.. {
-    return MakeMatcher(new ArgsMatcherImpl<ArgsTuple, k0, k1, k2, k3, k4, k5,
+    return MakeMatcher(ne. ArgsMatcherImpl<ArgsTuple, k0, k1, k2, k3, k4, k5,
         k6, k7, k8, k9>(inner_matcher_));
   }
 
@@ -1414,7 +1414,7 @@ _de.. MATCHER(name, description)\
     template <typename arg_type>\
     operator ::testing::Matcher<arg_type>() co.. {\
       return ::testing::Matcher<arg_type>(\
-          new gmock_Impl<arg_type>());\
+          ne. gmock_Impl<arg_type>());\
     }\
     name##Matcher() {\
     }\
@@ -1463,7 +1463,7 @@ _de.. MATCHER_P(name, p0, description)\
     template <typename arg_type>\
     operator ::testing::Matcher<arg_type>() co.. {\
       return ::testing::Matcher<arg_type>(\
-          new gmock_Impl<arg_type>(p0));\
+          ne. gmock_Impl<arg_type>(p0));\
     }\
     explicit name##MatcherP(p0##_type gmock_p0) : \
         p0(::testing::internal::move(gmock_p0)) {\
@@ -1518,7 +1518,7 @@ _de.. MATCHER_P2(name, p0, p1, description)\
     template <typename arg_type>\
     operator ::testing::Matcher<arg_type>() co.. {\
       return ::testing::Matcher<arg_type>(\
-          new gmock_Impl<arg_type>(p0, p1));\
+          ne. gmock_Impl<arg_type>(p0, p1));\
     }\
     name##MatcherP2(p0##_type gmock_p0, \
         p1##_type gmock_p1) : p0(::testing::internal::move(gmock_p0)), \
@@ -1580,7 +1580,7 @@ _de.. MATCHER_P3(name, p0, p1, p2, description)\
     template <typename arg_type>\
     operator ::testing::Matcher<arg_type>() co.. {\
       return ::testing::Matcher<arg_type>(\
-          new gmock_Impl<arg_type>(p0, p1, p2));\
+          ne. gmock_Impl<arg_type>(p0, p1, p2));\
     }\
     name##MatcherP3(p0##_type gmock_p0, p1##_type gmock_p1, \
         p2##_type gmock_p2) : p0(::testing::internal::move(gmock_p0)), \
@@ -1648,7 +1648,7 @@ _de.. MATCHER_P4(name, p0, p1, p2, p3, description)\
     template <typename arg_type>\
     operator ::testing::Matcher<arg_type>() co.. {\
       return ::testing::Matcher<arg_type>(\
-          new gmock_Impl<arg_type>(p0, p1, p2, p3));\
+          ne. gmock_Impl<arg_type>(p0, p1, p2, p3));\
     }\
     name##MatcherP4(p0##_type gmock_p0, p1##_type gmock_p1, \
         p2##_type gmock_p2, \
@@ -1725,7 +1725,7 @@ _de.. MATCHER_P5(name, p0, p1, p2, p3, p4, description)\
     template <typename arg_type>\
     operator ::testing::Matcher<arg_type>() co.. {\
       return ::testing::Matcher<arg_type>(\
-          new gmock_Impl<arg_type>(p0, p1, p2, p3, p4));\
+          ne. gmock_Impl<arg_type>(p0, p1, p2, p3, p4));\
     }\
     name##MatcherP5(p0##_type gmock_p0, p1##_type gmock_p1, \
         p2##_type gmock_p2, p3##_type gmock_p3, \
@@ -1806,7 +1806,7 @@ _de.. MATCHER_P6(name, p0, p1, p2, p3, p4, p5, description)\
     template <typename arg_type>\
     operator ::testing::Matcher<arg_type>() co.. {\
       return ::testing::Matcher<arg_type>(\
-          new gmock_Impl<arg_type>(p0, p1, p2, p3, p4, p5));\
+          ne. gmock_Impl<arg_type>(p0, p1, p2, p3, p4, p5));\
     }\
     name##MatcherP6(p0##_type gmock_p0, p1##_type gmock_p1, \
         p2##_type gmock_p2, p3##_type gmock_p3, p4##_type gmock_p4, \
@@ -1894,7 +1894,7 @@ _de.. MATCHER_P7(name, p0, p1, p2, p3, p4, p5, p6, description)\
     template <typename arg_type>\
     operator ::testing::Matcher<arg_type>() co.. {\
       return ::testing::Matcher<arg_type>(\
-          new gmock_Impl<arg_type>(p0, p1, p2, p3, p4, p5, p6));\
+          ne. gmock_Impl<arg_type>(p0, p1, p2, p3, p4, p5, p6));\
     }\
     name##MatcherP7(p0##_type gmock_p0, p1##_type gmock_p1, \
         p2##_type gmock_p2, p3##_type gmock_p3, p4##_type gmock_p4, \
@@ -1990,7 +1990,7 @@ _de.. MATCHER_P8(name, p0, p1, p2, p3, p4, p5, p6, p7, description)\
     template <typename arg_type>\
     operator ::testing::Matcher<arg_type>() co.. {\
       return ::testing::Matcher<arg_type>(\
-          new gmock_Impl<arg_type>(p0, p1, p2, p3, p4, p5, p6, p7));\
+          ne. gmock_Impl<arg_type>(p0, p1, p2, p3, p4, p5, p6, p7));\
     }\
     name##MatcherP8(p0##_type gmock_p0, p1##_type gmock_p1, \
         p2##_type gmock_p2, p3##_type gmock_p3, p4##_type gmock_p4, \
@@ -2092,7 +2092,7 @@ _de.. MATCHER_P9(name, p0, p1, p2, p3, p4, p5, p6, p7, p8, description)\
     template <typename arg_type>\
     operator ::testing::Matcher<arg_type>() co.. {\
       return ::testing::Matcher<arg_type>(\
-          new gmock_Impl<arg_type>(p0, p1, p2, p3, p4, p5, p6, p7, p8));\
+          ne. gmock_Impl<arg_type>(p0, p1, p2, p3, p4, p5, p6, p7, p8));\
     }\
     name##MatcherP9(p0##_type gmock_p0, p1##_type gmock_p1, \
         p2##_type gmock_p2, p3##_type gmock_p3, p4##_type gmock_p4, \
@@ -2201,7 +2201,7 @@ _de.. MATCHER_P10(name, p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, description)\
     template <typename arg_type>\
     operator ::testing::Matcher<arg_type>() co.. {\
       return ::testing::Matcher<arg_type>(\
-          new gmock_Impl<arg_type>(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9));\
+          ne. gmock_Impl<arg_type>(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9));\
     }\
     name##MatcherP10(p0##_type gmock_p0, p1##_type gmock_p1, \
         p2##_type gmock_p2, p3##_type gmock_p3, p4##_type gmock_p4, \

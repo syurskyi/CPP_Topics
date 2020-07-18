@@ -13,9 +13,9 @@ in. main
 	pp[0][0]
 	*/
 
-	in. **pp = new in. *[2];
-	pp[0] = new in.[3];
-	pp[1] = new in.[3];
+	in. **pp = ne. in. *[2];
+	pp[0] = ne. in.[3];
+	pp[1] = ne. in.[3];
 
 	___ (in. i = _ i < 2; ++i) {
 		___ (in. j = _ j < 3; ++j) {
@@ -29,8 +29,8 @@ in. main
 		}
 		st. c.. __ st. e..
 	}
-	delete[] pp[0];
-	delete[] pp[1];
+	de...[] pp[0];
+	de...[] pp[1];
 
-	delete[] pp;
+	de...[] pp;
 }

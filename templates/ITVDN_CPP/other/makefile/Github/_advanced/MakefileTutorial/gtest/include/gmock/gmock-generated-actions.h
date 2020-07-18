@@ -543,7 +543,7 @@ n.. WithArgsAction {
   explicit WithArgsAction(co.. InnerAction& action) : action_(action) {}
 
   template <typename F>
-  operator Action<F>() co.. { return MakeAction(new Impl<F>(action_)); }
+  operator Action<F>() co.. { return MakeAction(ne. Impl<F>(action_)); }
 
  pr..
   template <typename F>
@@ -1392,7 +1392,7 @@ _de.. ACTION_TEMPLATE(name, template_params, value_params)\
     };\
     template <typename F> operator ::testing::Action<F>() co.. {\
       return ::testing::Action<F>(\
-          new gmock_Impl<F>(GMOCK_INTERNAL_LIST_##value_params));\
+          ne. gmock_Impl<F>(GMOCK_INTERNAL_LIST_##value_params));\
     }\
     GMOCK_INTERNAL_DEFN_##value_params\
    pr..\
@@ -1451,7 +1451,7 @@ _de.. ACTION(name)\
       GTEST_DISALLOW_ASSIGN_(gmock_Impl);\
     };\
     template <typename F> operator ::testing::Action<F>() co.. {\
-      return ::testing::Action<F>(new gmock_Impl<F>());\
+      return ::testing::Action<F>(ne. gmock_Impl<F>());\
     }\
    pr..\
     GTEST_DISALLOW_ASSIGN_(name##Action);\
@@ -1500,7 +1500,7 @@ _de.. ACTION_P(name, p0)\
       GTEST_DISALLOW_ASSIGN_(gmock_Impl);\
     };\
     template <typename F> operator ::testing::Action<F>() co.. {\
-      return ::testing::Action<F>(new gmock_Impl<F>(p0));\
+      return ::testing::Action<F>(ne. gmock_Impl<F>(p0));\
     }\
     p0##_type p0;\
    pr..\
@@ -1555,7 +1555,7 @@ _de.. ACTION_P2(name, p0, p1)\
       GTEST_DISALLOW_ASSIGN_(gmock_Impl);\
     };\
     template <typename F> operator ::testing::Action<F>() co.. {\
-      return ::testing::Action<F>(new gmock_Impl<F>(p0, p1));\
+      return ::testing::Action<F>(ne. gmock_Impl<F>(p0, p1));\
     }\
     p0##_type p0;\
     p1##_type p1;\
@@ -1615,7 +1615,7 @@ _de.. ACTION_P3(name, p0, p1, p2)\
       GTEST_DISALLOW_ASSIGN_(gmock_Impl);\
     };\
     template <typename F> operator ::testing::Action<F>() co.. {\
-      return ::testing::Action<F>(new gmock_Impl<F>(p0, p1, p2));\
+      return ::testing::Action<F>(ne. gmock_Impl<F>(p0, p1, p2));\
     }\
     p0##_type p0;\
     p1##_type p1;\
@@ -1682,7 +1682,7 @@ _de.. ACTION_P4(name, p0, p1, p2, p3)\
       GTEST_DISALLOW_ASSIGN_(gmock_Impl);\
     };\
     template <typename F> operator ::testing::Action<F>() co.. {\
-      return ::testing::Action<F>(new gmock_Impl<F>(p0, p1, p2, p3));\
+      return ::testing::Action<F>(ne. gmock_Impl<F>(p0, p1, p2, p3));\
     }\
     p0##_type p0;\
     p1##_type p1;\
@@ -1758,7 +1758,7 @@ _de.. ACTION_P5(name, p0, p1, p2, p3, p4)\
       GTEST_DISALLOW_ASSIGN_(gmock_Impl);\
     };\
     template <typename F> operator ::testing::Action<F>() co.. {\
-      return ::testing::Action<F>(new gmock_Impl<F>(p0, p1, p2, p3, p4));\
+      return ::testing::Action<F>(ne. gmock_Impl<F>(p0, p1, p2, p3, p4));\
     }\
     p0##_type p0;\
     p1##_type p1;\
@@ -1838,7 +1838,7 @@ _de.. ACTION_P6(name, p0, p1, p2, p3, p4, p5)\
       GTEST_DISALLOW_ASSIGN_(gmock_Impl);\
     };\
     template <typename F> operator ::testing::Action<F>() co.. {\
-      return ::testing::Action<F>(new gmock_Impl<F>(p0, p1, p2, p3, p4, p5));\
+      return ::testing::Action<F>(ne. gmock_Impl<F>(p0, p1, p2, p3, p4, p5));\
     }\
     p0##_type p0;\
     p1##_type p1;\
@@ -1924,7 +1924,7 @@ _de.. ACTION_P7(name, p0, p1, p2, p3, p4, p5, p6)\
       GTEST_DISALLOW_ASSIGN_(gmock_Impl);\
     };\
     template <typename F> operator ::testing::Action<F>() co.. {\
-      return ::testing::Action<F>(new gmock_Impl<F>(p0, p1, p2, p3, p4, p5, \
+      return ::testing::Action<F>(ne. gmock_Impl<F>(p0, p1, p2, p3, p4, p5, \
           p6));\
     }\
     p0##_type p0;\
@@ -2019,7 +2019,7 @@ _de.. ACTION_P8(name, p0, p1, p2, p3, p4, p5, p6, p7)\
       GTEST_DISALLOW_ASSIGN_(gmock_Impl);\
     };\
     template <typename F> operator ::testing::Action<F>() co.. {\
-      return ::testing::Action<F>(new gmock_Impl<F>(p0, p1, p2, p3, p4, p5, \
+      return ::testing::Action<F>(ne. gmock_Impl<F>(p0, p1, p2, p3, p4, p5, \
           p6, p7));\
     }\
     p0##_type p0;\
@@ -2120,7 +2120,7 @@ _de.. ACTION_P9(name, p0, p1, p2, p3, p4, p5, p6, p7, p8)\
       GTEST_DISALLOW_ASSIGN_(gmock_Impl);\
     };\
     template <typename F> operator ::testing::Action<F>() co.. {\
-      return ::testing::Action<F>(new gmock_Impl<F>(p0, p1, p2, p3, p4, p5, \
+      return ::testing::Action<F>(ne. gmock_Impl<F>(p0, p1, p2, p3, p4, p5, \
           p6, p7, p8));\
     }\
     p0##_type p0;\
@@ -2228,7 +2228,7 @@ _de.. ACTION_P10(name, p0, p1, p2, p3, p4, p5, p6, p7, p8, p9)\
       GTEST_DISALLOW_ASSIGN_(gmock_Impl);\
     };\
     template <typename F> operator ::testing::Action<F>() co.. {\
-      return ::testing::Action<F>(new gmock_Impl<F>(p0, p1, p2, p3, p4, p5, \
+      return ::testing::Action<F>(ne. gmock_Impl<F>(p0, p1, p2, p3, p4, p5, \
           p6, p7, p8, p9));\
     }\
     p0##_type p0;\
@@ -2494,67 +2494,67 @@ ACTION_TEMPLATE(InvokeArgument,
 ACTION_TEMPLATE(ReturnNew,
                 HAS_1_TEMPLATE_PARAMS(typename, T),
                 AND_0_VALUE_PARAMS()) {
-  return new T();
+  return ne. T();
 }
 
 ACTION_TEMPLATE(ReturnNew,
                 HAS_1_TEMPLATE_PARAMS(typename, T),
                 AND_1_VALUE_PARAMS(p0)) {
-  return new T(p0);
+  return ne. T(p0);
 }
 
 ACTION_TEMPLATE(ReturnNew,
                 HAS_1_TEMPLATE_PARAMS(typename, T),
                 AND_2_VALUE_PARAMS(p0, p1)) {
-  return new T(p0, p1);
+  return ne. T(p0, p1);
 }
 
 ACTION_TEMPLATE(ReturnNew,
                 HAS_1_TEMPLATE_PARAMS(typename, T),
                 AND_3_VALUE_PARAMS(p0, p1, p2)) {
-  return new T(p0, p1, p2);
+  return ne. T(p0, p1, p2);
 }
 
 ACTION_TEMPLATE(ReturnNew,
                 HAS_1_TEMPLATE_PARAMS(typename, T),
                 AND_4_VALUE_PARAMS(p0, p1, p2, p3)) {
-  return new T(p0, p1, p2, p3);
+  return ne. T(p0, p1, p2, p3);
 }
 
 ACTION_TEMPLATE(ReturnNew,
                 HAS_1_TEMPLATE_PARAMS(typename, T),
                 AND_5_VALUE_PARAMS(p0, p1, p2, p3, p4)) {
-  return new T(p0, p1, p2, p3, p4);
+  return ne. T(p0, p1, p2, p3, p4);
 }
 
 ACTION_TEMPLATE(ReturnNew,
                 HAS_1_TEMPLATE_PARAMS(typename, T),
                 AND_6_VALUE_PARAMS(p0, p1, p2, p3, p4, p5)) {
-  return new T(p0, p1, p2, p3, p4, p5);
+  return ne. T(p0, p1, p2, p3, p4, p5);
 }
 
 ACTION_TEMPLATE(ReturnNew,
                 HAS_1_TEMPLATE_PARAMS(typename, T),
                 AND_7_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6)) {
-  return new T(p0, p1, p2, p3, p4, p5, p6);
+  return ne. T(p0, p1, p2, p3, p4, p5, p6);
 }
 
 ACTION_TEMPLATE(ReturnNew,
                 HAS_1_TEMPLATE_PARAMS(typename, T),
                 AND_8_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, p7)) {
-  return new T(p0, p1, p2, p3, p4, p5, p6, p7);
+  return ne. T(p0, p1, p2, p3, p4, p5, p6, p7);
 }
 
 ACTION_TEMPLATE(ReturnNew,
                 HAS_1_TEMPLATE_PARAMS(typename, T),
                 AND_9_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, p7, p8)) {
-  return new T(p0, p1, p2, p3, p4, p5, p6, p7, p8);
+  return ne. T(p0, p1, p2, p3, p4, p5, p6, p7, p8);
 }
 
 ACTION_TEMPLATE(ReturnNew,
                 HAS_1_TEMPLATE_PARAMS(typename, T),
                 AND_10_VALUE_PARAMS(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9)) {
-  return new T(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9);
+  return ne. T(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9);
 }
 
 #ifdef _MSC_VER

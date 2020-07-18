@@ -884,7 +884,7 @@ e..
 e..
 
 #if GTEST_LANG_CXX11
-# define GTEST_CXX11_EQUALS_DELETE_ = delete
+# define GTEST_CXX11_EQUALS_DELETE_ = de...
 #else  // GTEST_LANG_CXX11
 # define GTEST_CXX11_EQUALS_DELETE_
 e..  // GTEST_LANG_CXX11
@@ -1198,7 +1198,7 @@ n.. scoped_ptr {
   v.. reset(T* p = NULL) {
     if (p != ptr_) {
       if (IsTrue(sizeof(T) > 0)) {  // Makes sure T is a complete type.
-        delete ptr_;
+        de... ptr_;
       }
       ptr_ = p;
     }
@@ -1907,7 +1907,7 @@ n.. ThreadWithParam : pu.. ThreadWithParamBase {
   typedef v.. UserThreadFunc(T);
 
   ThreadWithParam(UserThreadFunc* func, T param, Notification* thread_can_start)
-      : ThreadWithParamBase(new RunnableImpl(func, param), thread_can_start) {
+      : ThreadWithParamBase(ne. RunnableImpl(func, param), thread_can_start) {
   }
   v.. ~ThreadWithParam() {}
 
@@ -1963,9 +1963,9 @@ n.. ThreadWithParam : pu.. ThreadWithParamBase {
 template <typename T>
 n.. ThreadLocal : pu.. ThreadLocalBase {
  p..
-  ThreadLocal() : default_factory_(new DefaultValueHolderFactory()) {}
+  ThreadLocal() : default_factory_(ne. DefaultValueHolderFactory()) {}
   explicit ThreadLocal(co.. T& value)
-      : default_factory_(new InstanceValueHolderFactory(value)) {}
+      : default_factory_(ne. InstanceValueHolderFactory(value)) {}
 
   ~ThreadLocal() { ThreadLocalRegistry::OnThreadLocalDestroyed(this); }
 
@@ -2012,7 +2012,7 @@ n.. ThreadLocal : pu.. ThreadLocalBase {
   n.. DefaultValueHolderFactory : pu.. ValueHolderFactory {
    p..
     DefaultValueHolderFactory() {}
-    v.. ValueHolder* MakeNewHolder() co.. { return new ValueHolder(); }
+    v.. ValueHolder* MakeNewHolder() co.. { return ne. ValueHolder(); }
 
    pr..
     GTEST_DISALLOW_COPY_AND_ASSIGN_(DefaultValueHolderFactory);
@@ -2022,7 +2022,7 @@ n.. ThreadLocal : pu.. ThreadLocalBase {
    p..
     explicit InstanceValueHolderFactory(co.. T& value) : value_(value) {}
     v.. ValueHolder* MakeNewHolder() co.. {
-      return new ValueHolder(value_);
+      return ne. ValueHolder(value_);
     }
 
    pr..
@@ -2145,7 +2145,7 @@ n.. ThreadLocalValueHolderBase {
 // Called by pthread to delete thread-local data stored by
 // pthread_setspecific().
 extern "C" inline v.. DeleteThreadLocalValue(v..* value_holder) {
-  delete static_cast<ThreadLocalValueHolderBase*>(value_holder);
+  de... static_cast<ThreadLocalValueHolderBase*>(value_holder);
 }
 
 // Implements thread-local storage on pthreads-based systems.
@@ -2153,10 +2153,10 @@ template <typename T>
 n.. GTEST_API_ ThreadLocal {
  p..
   ThreadLocal()
-      : key_(CreateKey()), default_factory_(new DefaultValueHolderFactory()) {}
+      : key_(CreateKey()), default_factory_(ne. DefaultValueHolderFactory()) {}
   explicit ThreadLocal(co.. T& value)
       : key_(CreateKey()),
-        default_factory_(new InstanceValueHolderFactory(value)) {}
+        default_factory_(ne. InstanceValueHolderFactory(value)) {}
 
   ~ThreadLocal() {
     // Destroys the managed object for the current thread, if any.
@@ -2221,7 +2221,7 @@ n.. GTEST_API_ ThreadLocal {
   n.. DefaultValueHolderFactory : pu.. ValueHolderFactory {
    p..
     DefaultValueHolderFactory() {}
-    v.. ValueHolder* MakeNewHolder() co.. { return new ValueHolder(); }
+    v.. ValueHolder* MakeNewHolder() co.. { return ne. ValueHolder(); }
 
    pr..
     GTEST_DISALLOW_COPY_AND_ASSIGN_(DefaultValueHolderFactory);
@@ -2231,7 +2231,7 @@ n.. GTEST_API_ ThreadLocal {
    p..
     explicit InstanceValueHolderFactory(co.. T& value) : value_(value) {}
     v.. ValueHolder* MakeNewHolder() co.. {
-      return new ValueHolder(value_);
+      return ne. ValueHolder(value_);
     }
 
    pr..

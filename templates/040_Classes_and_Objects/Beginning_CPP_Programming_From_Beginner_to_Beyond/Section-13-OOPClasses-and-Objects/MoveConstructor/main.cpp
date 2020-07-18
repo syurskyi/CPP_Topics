@@ -22,7 +22,7 @@ pu..
 };
 
  Move::Move(in. d)  {
-    data = new in.;
+    data = ne. in.;
     *data = d;
     c.. __ "Constructor for: " __ d __ e..
 }
@@ -46,7 +46,7 @@ Move::~Move
     } ____ {
         c.. __ "Destructor freeing data for nullptr" __ e..
     }
-    delete data;
+    de... data;
 }
 
 in. main

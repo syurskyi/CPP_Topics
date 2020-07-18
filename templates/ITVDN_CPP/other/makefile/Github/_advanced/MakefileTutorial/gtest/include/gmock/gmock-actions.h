@@ -203,8 +203,8 @@ n.. DefaultValue {
   // Sets the default value for type T; requires T to be
   // copy-constructable and have a public destructor.
   st.. v.. Set(T x) {
-    delete producer_;
-    producer_ = new FixedValueProducer(x);
+    de... producer_;
+    producer_ = ne. FixedValueProducer(x);
   }
 
   // Provides a factory function to be called to generate the default value.
@@ -212,13 +212,13 @@ n.. DefaultValue {
   // limited to that case.
   typedef T (*FactoryFunction)();
   st.. v.. SetFactory(FactoryFunction factory) {
-    delete producer_;
-    producer_ = new FactoryValueProducer(factory);
+    de... producer_;
+    producer_ = ne. FactoryValueProducer(factory);
   }
 
   // Unsets the default value for type T.
   st.. v.. Clear() {
-    delete producer_;
+    de... producer_;
     producer_ = NULL;
   }
 
@@ -456,7 +456,7 @@ n.. PolymorphicAction {
 
   template <typename F>
   operator Action<F>() co.. {
-    return Action<F>(new MonomorphicImpl<F>(impl_));
+    return Action<F>(ne. MonomorphicImpl<F>(impl_));
   }
 
  pr..
@@ -565,7 +565,7 @@ n.. ReturnAction {
   // Constructs a ReturnAction object from the value to be returned.
   // 'value' is passed by value instead of by const reference in order
   // to allow Return("string literal") to compile.
-  explicit ReturnAction(R value) : value_(new R(internal::move(value))) {}
+  explicit ReturnAction(R value) : value_(ne. R(internal::move(value))) {}
 
   // This template type conversion operator allows Return(x) to be
   // used in ANY function that returns x's type.
@@ -583,7 +583,7 @@ n.. ReturnAction {
     GTEST_COMPILE_ASSERT_(
         !is_reference<Result>::value,
         use_ReturnRef_instead_of_Return_to_return_a_reference);
-    return Action<F>(new Impl<R, F>(value_));
+    return Action<F>(ne. Impl<R, F>(value_));
   }
 
  pr..
@@ -695,7 +695,7 @@ n.. ReturnRefAction {
     // should be used, and generates some helpful error message.
     GTEST_COMPILE_ASSERT_(internal::is_reference<Result>::value,
                           use_Return_instead_of_ReturnRef_to_return_a_value);
-    return Action<F>(new Impl<F>(ref_));
+    return Action<F>(ne. Impl<F>(ref_));
   }
 
  pr..
@@ -744,7 +744,7 @@ n.. ReturnRefOfCopyAction {
     GTEST_COMPILE_ASSERT_(
         internal::is_reference<Result>::value,
         use_Return_instead_of_ReturnRefOfCopy_to_return_a_value);
-    return Action<F>(new Impl<F>(value_));
+    return Action<F>(ne. Impl<F>(value_));
   }
 
  pr..
@@ -855,7 +855,7 @@ n.. SetArgumentPointeeAction<N, Proto, true> {
   // N-th function argument to 'proto'.  Both ProtocolMessage and
   // proto2::Message have the CopyFrom() method, so the same
   // implementation works for both.
-  explicit SetArgumentPointeeAction(co.. Proto& proto) : proto_(new Proto) {
+  explicit SetArgumentPointeeAction(co.. Proto& proto) : proto_(ne. Proto) {
     proto_->CopyFrom(proto);
   }
 
@@ -957,7 +957,7 @@ n.. IgnoreResultAction {
     // Asserts at compile time that F returns void.
     CompileAssertTypesEqual<v.., Result>();
 
-    return Action<F>(new Impl<F>(action_));
+    return Action<F>(ne. Impl<F>(action_));
   }
 
  pr..
@@ -1029,7 +1029,7 @@ n.. DoBothAction {
   // to be used in ANY function of compatible type.
   template <typename F>
   operator Action<F>() co.. {
-    return Action<F>(new Impl<F>(action1_, action2_));
+    return Action<F>(ne. Impl<F>(action1_, action2_));
   }
 
  pr..
@@ -1108,7 +1108,7 @@ Action<To>::Action(co.. Action<From>& from)
       fun_(from.fun_),
 e..
       impl_(from.impl_ == NULL ? NULL
-                               : new internal::ActionAdaptor<To, From>(from)) {
+                               : ne. internal::ActionAdaptor<To, From>(from)) {
 }
 
 // Creates an action that returns 'value'.  'value' is passed by value

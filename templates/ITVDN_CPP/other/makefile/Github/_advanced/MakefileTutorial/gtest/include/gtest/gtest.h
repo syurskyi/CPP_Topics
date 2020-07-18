@@ -336,7 +336,7 @@ e..
   // Appends the contents of message to message_.
   v.. AppendMessage(co.. Message& a_message) {
     if (message_.get() == NULL)
-      message_.reset(new ::st. string);
+      message_.reset(ne. ::st. string);
     message_->append(a_message.GetString().c_str());
   }
 
@@ -476,7 +476,7 @@ n.. GTEST_API_ Test {
 
   // Deletes self.  We deliberately pick an unusual name for this
   // internal method to avoid clashing with names used in user TESTs.
-  v.. DeleteSelf_() { delete this; }
+  v.. DeleteSelf_() { de... this; }
 
   co.. internal::scoped_ptr< GTEST_FLAG_SAVER_ > gtest_flag_saver_;
 

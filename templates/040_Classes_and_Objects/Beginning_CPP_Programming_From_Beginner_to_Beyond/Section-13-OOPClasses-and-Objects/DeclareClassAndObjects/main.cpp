@@ -44,9 +44,9 @@ in. main
     
     
     Player *enemy {n_p_};
-    enemy = new Player;
+    enemy = ne. Player;
     
-    delete enemy;
+    de... enemy;
 
     r_ 0;
 }

@@ -67,7 +67,7 @@ n... xray {
         template<typename U, typename... Args>
         v.. construct(U *p, Args &&... args) {
             ((st. cout << p << " construct(p, ") << ... << args) << ");" << st. endl;
-            ::new(p)U(st. forward<Args>(args)...);
+            ::ne.(p)U(st. forward<Args>(args)...);
         }
 
         template<typename U>

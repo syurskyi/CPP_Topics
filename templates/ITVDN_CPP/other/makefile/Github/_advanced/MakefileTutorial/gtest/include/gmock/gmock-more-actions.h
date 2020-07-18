@@ -215,7 +215,7 @@ e..
 ACTION_TEMPLATE(DeleteArg,
                 HAS_1_TEMPLATE_PARAMS(in., k),
                 AND_0_VALUE_PARAMS()) {
-  delete ::testing::get<k>(args);
+  de... ::testing::get<k>(args);
 }
 
 // This action returns the value pointed to by 'pointer'.

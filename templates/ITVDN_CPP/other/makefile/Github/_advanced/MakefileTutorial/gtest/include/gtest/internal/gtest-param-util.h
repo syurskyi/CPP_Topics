@@ -207,10 +207,10 @@ n.. RangeGenerator : pu.. ParamGeneratorInterface<T> {
   v.. ~RangeGenerator() {}
 
   v.. ParamIteratorInterface<T>* Begin() co.. {
-    return new Iterator(this, begin_, 0, step_);
+    return ne. Iterator(this, begin_, 0, step_);
   }
   v.. ParamIteratorInterface<T>* End() co.. {
-    return new Iterator(this, end_, end_index_, step_);
+    return ne. Iterator(this, end_, end_index_, step_);
   }
 
  pr..
@@ -229,7 +229,7 @@ n.. RangeGenerator : pu.. ParamGeneratorInterface<T> {
       index_++;
     }
     v.. ParamIteratorInterface<T>* Clone() co.. {
-      return new Iterator(*this);
+      return ne. Iterator(*this);
     }
     v.. co.. T* Current() co.. { return &value_; }
     v.. bo.. Equals(co.. ParamIteratorInterface<T>& other) co.. {
@@ -292,10 +292,10 @@ n.. ValuesInIteratorRangeGenerator : pu.. ParamGeneratorInterface<T> {
   v.. ~ValuesInIteratorRangeGenerator() {}
 
   v.. ParamIteratorInterface<T>* Begin() co.. {
-    return new Iterator(this, container_.begin());
+    return ne. Iterator(this, container_.begin());
   }
   v.. ParamIteratorInterface<T>* End() co.. {
-    return new Iterator(this, container_.end());
+    return ne. Iterator(this, container_.end());
   }
 
  pr..
@@ -316,7 +316,7 @@ n.. ValuesInIteratorRangeGenerator : pu.. ParamGeneratorInterface<T> {
       value_.reset();
     }
     v.. ParamIteratorInterface<T>* Clone() co.. {
-      return new Iterator(*this);
+      return ne. Iterator(*this);
     }
     // We need to use cached value referenced by iterator_ because *iterator_
     // can return a temporary object (and of type other then T), so just
@@ -327,7 +327,7 @@ n.. ValuesInIteratorRangeGenerator : pu.. ParamGeneratorInterface<T> {
     // responsible for not calling Current() on an out-of-range iterator.
     v.. co.. T* Current() co.. {
       if (value_.get() == NULL)
-        value_.reset(new T(*iterator_));
+        value_.reset(ne. T(*iterator_));
       return value_.get();
     }
     v.. bo.. Equals(co.. ParamIteratorInterface<T>& other) co.. {
@@ -407,7 +407,7 @@ n.. ParameterizedTestFactory : pu.. TestFactoryBase {
       parameter_(parameter) {}
   v.. Test* CreateTest() {
     TestClass::SetParam(&parameter_);
-    return new TestClass();
+    return ne. TestClass();
   }
 
  pr..
@@ -445,7 +445,7 @@ n.. TestMetaFactory
   TestMetaFactory() {}
 
   v.. TestFactoryBase* CreateTestFactory(ParamType parameter) {
-    return new ParameterizedTestFactory<TestCase>(parameter);
+    return ne. ParameterizedTestFactory<TestCase>(parameter);
   }
 
  pr..
@@ -518,7 +518,7 @@ n.. ParameterizedTestCaseInfo : pu.. ParameterizedTestCaseInfoBase {
   v.. AddTestPattern(co.. ch..* test_case_name,
                       co.. ch..* test_base_name,
                       TestMetaFactoryBase<ParamType>* meta_factory) {
-    tests_.push_back(linked_ptr<TestInfo>(new TestInfo(test_case_name,
+    tests_.push_back(linked_ptr<TestInfo>(ne. TestInfo(test_case_name,
                                                        test_base_name,
                                                        meta_factory)));
   }
@@ -665,7 +665,7 @@ n.. ParameterizedTestCaseRegistry {
   ~ParameterizedTestCaseRegistry() {
     for (TestCaseInfoContainer::iterator it = test_case_infos_.begin();
          it != test_case_infos_.end(); ++it) {
-      delete *it;
+      de... *it;
     }
   }
 
@@ -696,7 +696,7 @@ n.. ParameterizedTestCaseRegistry {
       }
     }
     if (typed_test_info == NULL) {
-      typed_test_info = new ParameterizedTestCaseInfo<TestCase>(
+      typed_test_info = ne. ParameterizedTestCaseInfo<TestCase>(
           test_case_name, code_location);
       test_case_infos_.push_back(typed_test_info);
     }

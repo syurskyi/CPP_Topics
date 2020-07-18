@@ -7,55 +7,55 @@
 u.. s..
 
 c_ Player
-{
+
 pr..
-   st. st..  name;
-   in. health;
-   in. xp;
+   st. st..  name
+   in. health
+   in. xp
 pu..
-    v.. set_name(st. st..  name_val) {
-        name = name_val; 
-    }
+    v.. set_name st. st..  name_val
+        name _ name_val; 
+    
     // Overloaded Constructors
-    Player
+    ?
         c.. __ "No args constructor called"__ e..
-    }
-    Player(st. st..  name) {
+    
+    ? st. st..  name
         c.. __ "String arg constructor called"__ e..
-    }
-    Player(st. st..  name, in. health, in. xp) {
+    
+    ? st. st..  name, in. health, in. xp
         c.. __ "Three args constructor called"__ e..
-    }
-    ~Player
+
+     #?
         c.. __ "Destructor called for " __ name __ e..
-    }
-};
+    
+
 
 in. main
 
-    {
-        Player slayer;
-        slayer.set_name("Slayer");
-    }
     
-    {
-        Player frank;
-        frank.set_name("Frank");
-        Player hero("Hero");
-        hero.set_name("Hero");
-        Player villain("Villain", 100, 12);
-        villain.set_name("Villain");
-    }
+        ? slayer
+        ?.s_n.. "Slayer"
     
-    Player *enemy = new Player;
-    enemy->set_name("Enemy");
     
-    Player *level_boss = new Player("Level Boss", 1000, 300);
-    level_boss->set_name("Level Boss");
     
-    delete enemy;
-    delete level_boss;
+        ? frank
+        ?.s_n.. "Frank"
+        ? hero "Hero"
+        ?.s_n.. "Hero"
+        ? villain "Villain", 100, 12
+        ?.s.. "Villain"
     
-    r_ 0;
-}
+    
+    ? #enemy _ ne. ?
+    ?__s_n.. "Enemy"
+    
+    ? #level_boss _ ne. ? "Level Boss", 1000, 300
+    ?__s_n.. "Level Boss"
+    
+    de... ?
+    de... ?
+    
+    r_ _
+
 

@@ -202,7 +202,7 @@ n.. linked_ptr {
   linked_ptr_internal link_;
 
   v.. depart() {
-    if (link_.depart()) delete value_;
+    if (link_.depart()) de... value_;
   }
 
   v.. capture(T* ptr) {

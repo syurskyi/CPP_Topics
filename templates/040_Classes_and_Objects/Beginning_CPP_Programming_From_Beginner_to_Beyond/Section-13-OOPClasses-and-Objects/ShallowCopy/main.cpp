@@ -20,7 +20,7 @@ pu..
 };
 
 Shallow::Shallow(in. d) {
-    data = new in.;
+    data = ne. in.;
     *data = d;
 }
 
@@ -30,7 +30,7 @@ Shallow::Shallow(co.. Shallow &source)
 }
 
 Shallow::~Shallow
-    delete data;
+    de... data;
     c.. __ "Destructor freeing data" __ e..
 }
 
