@@ -3,7 +3,7 @@
 ? |i..
 
 c_ Memento {
-    friend c_ Opssy.. pause
+    fr.. c_ Opssy.. pause
 
     in. valuesy.. pause
 pu..

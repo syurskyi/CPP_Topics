@@ -10,7 +10,7 @@
 ? <limits>
 
 c_ Song {
-    friend st. ostream &operator__(st. ostream &os, co.. Song &s);
+    fr.. st. ostream &operator__(st. ostream &os, co.. Song &s);
 
     st. st..  name;
     st. st..  artist;

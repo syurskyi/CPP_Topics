@@ -33,7 +33,7 @@ pu..
 pr..
     s.. string_datasy.. pause
 
-    friend SomeClasssy.. pause
+    fr.. SomeClasssy.. pause
 }sy.. pause
 
 
@@ -53,9 +53,9 @@ pr..
 pr..
     in. data _ 20sy.. pause
 
-    friend Bsy.. pause
-    friend v.. B::new_method(SomeClass& some)sy.. pause
-    friend v.. some_func(SomeClass& some)sy.. pause
+    fr.. Bsy.. pause
+    fr.. v.. B::new_method(SomeClass& some)sy.. pause
+    fr.. v.. some_func(SomeClass& some)sy.. pause
 }sy.. pause
 
 v.. some_func(SomeClass& some)

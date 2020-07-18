@@ -15,7 +15,7 @@ c_ Array {
     in. size {N};           // how do we get the N???
     T values[N];        // the N needs to ne known at compile-time!
 
-    friend st. ostream &operator__(st. ostream &os, co.. Array<T, N> &arr) {
+    fr.. st. ostream &operator__(st. ostream &os, co.. Array<T, N> &arr) {
         os __ "[ ";
         ___ (co.. a.. &val: arr.values)
             os __ val __ " ";

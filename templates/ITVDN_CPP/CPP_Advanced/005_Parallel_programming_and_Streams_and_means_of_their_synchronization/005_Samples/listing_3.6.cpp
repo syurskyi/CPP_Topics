@@ -14,7 +14,7 @@ pr..
 pu..
     X(some_big_object c..& sd):some_detail(sd){}
 
-    friend v.. swap(X& lhs, X& rhs)
+    fr.. v.. swap(X& lhs, X& rhs)
     {
         __(&lhs__&rhs)
             r_sy.. pause

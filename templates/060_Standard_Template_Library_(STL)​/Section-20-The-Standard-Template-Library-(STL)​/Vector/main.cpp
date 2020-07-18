@@ -6,7 +6,7 @@
 ? <algorithm>
 
 c_ Person {
-    friend st. ostream &operator__(st. ostream &os, co.. Person &p);
+    fr.. st. ostream &operator__(st. ostream &os, co.. Person &p);
     st. st..  name;
     in. age;
 pu..
