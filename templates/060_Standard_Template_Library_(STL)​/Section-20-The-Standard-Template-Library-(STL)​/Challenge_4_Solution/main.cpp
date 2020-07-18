@@ -3,7 +3,7 @@
 // Determine if a string is a palindrome
 // Use a queue and a stack to solve the problem
 
-? <cctype>
+? cct..
 ? <stack>
 ? <queue>
 ? ios..

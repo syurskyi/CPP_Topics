@@ -1,7 +1,7 @@
 // Section 20
 // 012_Challenge 4
 // Identifying palindrome strings using a stack and queue
-? <cctype>
+? cct..
 ? <stack>
 ? <queue>
 ? ios..

@@ -1,7 +1,7 @@
 // Section 20
 // 012_Challenge 1
 // Identifying palindrome strings using a deque
-? <cctype>
+? cct..
 ? <deque>
 ? ios..
 ? st..
