@@ -32,7 +32,7 @@ e..
     xray &operator=(co.. xray &rhs)
     {
         st. cout << "copy assign from " << rhs.x << " to " << x << st. endl;
-        return *this;
+        ?  *this;
     }
 
 #ifdef MOVE
@@ -41,7 +41,7 @@ e..
 
     {
         st. cout << "move assign from " << rhs.x << " to " << x << st. endl;
-        return *this;
+        ?  *this;
     }
 
 e..

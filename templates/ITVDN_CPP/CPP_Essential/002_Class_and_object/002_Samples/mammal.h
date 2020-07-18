@@ -15,7 +15,7 @@ p..
     v.. feed_milk();
     uint get_paws()
     {
-        return paws;
+        ?  paws;
     }
 pr..
     uint paws = 4;

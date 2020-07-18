@@ -59,10 +59,10 @@ e..
 // support both size() and empty(), which all STL-like containers provide.
 MATCHER(IsEmpty, negation ? "isn't empty" : "is empty") {
   if (arg.empty()) {
-    return true;
+    ?  true;
   }
   *result_listener << "whose size is " << arg.size();
-  return false;
+  ?  false;
 }
 
 // Define a matcher that matches a value that evaluates in boolean
@@ -70,7 +70,7 @@ MATCHER(IsEmpty, negation ? "isn't empty" : "is empty") {
 // bool" operators and so can't be compared for equality with true
 // and false.
 MATCHER(IsTrue, negation ? "is false" : "is true") {
-  return static_cast<bo..>(arg);
+  ?  static_cast<bo..>(arg);
 }
 
 // Define a matcher that matches a value that evaluates in boolean
@@ -78,7 +78,7 @@ MATCHER(IsTrue, negation ? "is false" : "is true") {
 // bool" operators and so can't be compared for equality with true
 // and false.
 MATCHER(IsFalse, negation ? "is true" : "is false") {
-  return !static_cast<bo..>(arg);
+  ?  !static_cast<bo..>(arg);
 }
 
 #ifdef _MSC_VER

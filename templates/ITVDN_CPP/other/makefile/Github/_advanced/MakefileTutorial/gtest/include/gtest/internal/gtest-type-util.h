@@ -70,7 +70,7 @@ inline st. string CanonicalizeForStdLibVersioning(st. string s) {
       s.erase(strlen("std"), end - strlen("std"));
     }
   }
-  return s;
+  ?  s;
 }
 
 // GetTypeName<T>() returns a human-readable name of type T.
@@ -91,14 +91,14 @@ st. string GetTypeName() {
   ch..* co.. readable_name = __cxa_demangle(name, 0, 0, &status);
   co.. st. string name_str(status == 0 ? readable_name : name);
   free(readable_name);
-  return CanonicalizeForStdLibVersioning(name_str);
+  ?  CanonicalizeForStdLibVersioning(name_str);
 #  else
-  return name;
+  ?  name;
 #  endif  // GTEST_HAS_CXXABI_H_ || __HP_aCC
 
 # else
 
-  return "<type>";
+  ?  "<type>";
 
 # endif  // GTEST_HAS_RTTI
 }

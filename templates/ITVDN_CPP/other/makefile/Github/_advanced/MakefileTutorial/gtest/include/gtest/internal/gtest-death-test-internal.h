@@ -248,10 +248,10 @@ n.. InternalRunDeathTestFlag {
       posix::Close(write_fd_);
   }
 
-  co.. st. string& file() co.. { return file_; }
-  in. line() co.. { return line_; }
-  in. index() co.. { return index_; }
-  in. write_fd() co.. { return write_fd_; }
+  co.. st. string& file() co.. { ?  file_; }
+  in. line() co.. { ?  line_; }
+  in. index() co.. { ?  index_; }
+  in. write_fd() co.. { ?  write_fd_; }
 
  pr..
   st. string file_;

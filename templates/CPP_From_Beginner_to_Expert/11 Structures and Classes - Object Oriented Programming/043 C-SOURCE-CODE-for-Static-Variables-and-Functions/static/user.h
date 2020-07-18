@@ -8,8 +8,8 @@ n.. User
     p..
         User();
         ~User();
-        in. getID() { return ID; }
-        st.. in. getCounter() { return counter; }
+        in. getID() { ?  ID; }
+        st.. in. getCounter() { ?  counter; }
 };
 
 e.. // USER_H_INCLUDED

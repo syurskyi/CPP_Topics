@@ -79,7 +79,7 @@ n.. TupleFields {
       GMOCK_FIELD_TYPE_(Tuple, k7), GMOCK_FIELD_TYPE_(Tuple, k8),
       GMOCK_FIELD_TYPE_(Tuple, k9)> type;
   st.. type GetSelectedFields(co.. Tuple& t) {
-    return type(get<k0>(t), get<k1>(t), get<k2>(t), get<k3>(t), get<k4>(t),
+    ?  type(get<k0>(t), get<k1>(t), get<k2>(t), get<k3>(t), get<k4>(t),
         get<k5>(t), get<k6>(t), get<k7>(t), get<k8>(t), get<k9>(t));
   }
 };
@@ -91,7 +91,7 @@ n.. TupleFields<Tuple, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1> {
  p..
   typedef ::testing::tuple<> type;
   st.. type GetSelectedFields(co.. Tuple& /* t */) {
-    return type();
+    ?  type();
   }
 };
 
@@ -100,7 +100,7 @@ n.. TupleFields<Tuple, k0, -1, -1, -1, -1, -1, -1, -1, -1, -1> {
  p..
   typedef ::testing::tuple<GMOCK_FIELD_TYPE_(Tuple, k0)> type;
   st.. type GetSelectedFields(co.. Tuple& t) {
-    return type(get<k0>(t));
+    ?  type(get<k0>(t));
   }
 };
 
@@ -110,7 +110,7 @@ n.. TupleFields<Tuple, k0, k1, -1, -1, -1, -1, -1, -1, -1, -1> {
   typedef ::testing::tuple<GMOCK_FIELD_TYPE_(Tuple, k0),
       GMOCK_FIELD_TYPE_(Tuple, k1)> type;
   st.. type GetSelectedFields(co.. Tuple& t) {
-    return type(get<k0>(t), get<k1>(t));
+    ?  type(get<k0>(t), get<k1>(t));
   }
 };
 
@@ -120,7 +120,7 @@ n.. TupleFields<Tuple, k0, k1, k2, -1, -1, -1, -1, -1, -1, -1> {
   typedef ::testing::tuple<GMOCK_FIELD_TYPE_(Tuple, k0),
       GMOCK_FIELD_TYPE_(Tuple, k1), GMOCK_FIELD_TYPE_(Tuple, k2)> type;
   st.. type GetSelectedFields(co.. Tuple& t) {
-    return type(get<k0>(t), get<k1>(t), get<k2>(t));
+    ?  type(get<k0>(t), get<k1>(t), get<k2>(t));
   }
 };
 
@@ -131,7 +131,7 @@ n.. TupleFields<Tuple, k0, k1, k2, k3, -1, -1, -1, -1, -1, -1> {
       GMOCK_FIELD_TYPE_(Tuple, k1), GMOCK_FIELD_TYPE_(Tuple, k2),
       GMOCK_FIELD_TYPE_(Tuple, k3)> type;
   st.. type GetSelectedFields(co.. Tuple& t) {
-    return type(get<k0>(t), get<k1>(t), get<k2>(t), get<k3>(t));
+    ?  type(get<k0>(t), get<k1>(t), get<k2>(t), get<k3>(t));
   }
 };
 
@@ -142,7 +142,7 @@ n.. TupleFields<Tuple, k0, k1, k2, k3, k4, -1, -1, -1, -1, -1> {
       GMOCK_FIELD_TYPE_(Tuple, k1), GMOCK_FIELD_TYPE_(Tuple, k2),
       GMOCK_FIELD_TYPE_(Tuple, k3), GMOCK_FIELD_TYPE_(Tuple, k4)> type;
   st.. type GetSelectedFields(co.. Tuple& t) {
-    return type(get<k0>(t), get<k1>(t), get<k2>(t), get<k3>(t), get<k4>(t));
+    ?  type(get<k0>(t), get<k1>(t), get<k2>(t), get<k3>(t), get<k4>(t));
   }
 };
 
@@ -154,7 +154,7 @@ n.. TupleFields<Tuple, k0, k1, k2, k3, k4, k5, -1, -1, -1, -1> {
       GMOCK_FIELD_TYPE_(Tuple, k3), GMOCK_FIELD_TYPE_(Tuple, k4),
       GMOCK_FIELD_TYPE_(Tuple, k5)> type;
   st.. type GetSelectedFields(co.. Tuple& t) {
-    return type(get<k0>(t), get<k1>(t), get<k2>(t), get<k3>(t), get<k4>(t),
+    ?  type(get<k0>(t), get<k1>(t), get<k2>(t), get<k3>(t), get<k4>(t),
         get<k5>(t));
   }
 };
@@ -167,7 +167,7 @@ n.. TupleFields<Tuple, k0, k1, k2, k3, k4, k5, k6, -1, -1, -1> {
       GMOCK_FIELD_TYPE_(Tuple, k3), GMOCK_FIELD_TYPE_(Tuple, k4),
       GMOCK_FIELD_TYPE_(Tuple, k5), GMOCK_FIELD_TYPE_(Tuple, k6)> type;
   st.. type GetSelectedFields(co.. Tuple& t) {
-    return type(get<k0>(t), get<k1>(t), get<k2>(t), get<k3>(t), get<k4>(t),
+    ?  type(get<k0>(t), get<k1>(t), get<k2>(t), get<k3>(t), get<k4>(t),
         get<k5>(t), get<k6>(t));
   }
 };
@@ -182,7 +182,7 @@ n.. TupleFields<Tuple, k0, k1, k2, k3, k4, k5, k6, k7, -1, -1> {
       GMOCK_FIELD_TYPE_(Tuple, k5), GMOCK_FIELD_TYPE_(Tuple, k6),
       GMOCK_FIELD_TYPE_(Tuple, k7)> type;
   st.. type GetSelectedFields(co.. Tuple& t) {
-    return type(get<k0>(t), get<k1>(t), get<k2>(t), get<k3>(t), get<k4>(t),
+    ?  type(get<k0>(t), get<k1>(t), get<k2>(t), get<k3>(t), get<k4>(t),
         get<k5>(t), get<k6>(t), get<k7>(t));
   }
 };
@@ -197,7 +197,7 @@ n.. TupleFields<Tuple, k0, k1, k2, k3, k4, k5, k6, k7, k8, -1> {
       GMOCK_FIELD_TYPE_(Tuple, k5), GMOCK_FIELD_TYPE_(Tuple, k6),
       GMOCK_FIELD_TYPE_(Tuple, k7), GMOCK_FIELD_TYPE_(Tuple, k8)> type;
   st.. type GetSelectedFields(co.. Tuple& t) {
-    return type(get<k0>(t), get<k1>(t), get<k2>(t), get<k3>(t), get<k4>(t),
+    ?  type(get<k0>(t), get<k1>(t), get<k2>(t), get<k3>(t), get<k4>(t),
         get<k5>(t), get<k6>(t), get<k7>(t), get<k8>(t));
   }
 };
@@ -224,7 +224,7 @@ n.. ArgsMatcherImpl : pu.. MatcherInterface<ArgsTuple> {
                                MatchResultListener* listener) co.. {
     co.. SelectedArgs& selected_args = GetSelectedArgs(args);
     if (!listener->IsInterested())
-      return inner_matcher_.Matches(selected_args);
+      ?  inner_matcher_.Matches(selected_args);
 
     PrintIndices(listener->stream());
     *listener << "are " << PrintToString(selected_args);
@@ -233,7 +233,7 @@ n.. ArgsMatcherImpl : pu.. MatcherInterface<ArgsTuple> {
     co.. bo.. match = inner_matcher_.MatchAndExplain(selected_args,
                                                       &inner_listener);
     PrintIfNotEmpty(inner_listener.str(), listener->stream());
-    return match;
+    ?  match;
   }
 
   v.. v.. DescribeTo(::st. ostream* os) co.. {
@@ -250,7 +250,7 @@ n.. ArgsMatcherImpl : pu.. MatcherInterface<ArgsTuple> {
 
  pr..
   st.. SelectedArgs GetSelectedArgs(ArgsTuple args) {
-    return TupleFields<RawArgsTuple, k0, k1, k2, k3, k4, k5, k6, k7, k8,
+    ?  TupleFields<RawArgsTuple, k0, k1, k2, k3, k4, k5, k6, k7, k8,
         k9>::GetSelectedFields(args);
   }
 
@@ -285,7 +285,7 @@ n.. ArgsMatcher {
 
   template <typename ArgsTuple>
   operator Matcher<ArgsTuple>() co.. {
-    return MakeMatcher(ne. ArgsMatcherImpl<ArgsTuple, k0, k1, k2, k3, k4, k5,
+    ?  MakeMatcher(ne. ArgsMatcherImpl<ArgsTuple, k0, k1, k2, k3, k4, k5,
         k6, k7, k8, k9>(inner_matcher_));
   }
 
@@ -479,50 +479,50 @@ struct AnyOfResult10 {
 template <typename InnerMatcher>
 inline internal::ArgsMatcher<InnerMatcher>
 Args(co.. InnerMatcher& matcher) {
-  return internal::ArgsMatcher<InnerMatcher>(matcher);
+  ?  internal::ArgsMatcher<InnerMatcher>(matcher);
 }
 
 template <in. k1, typename InnerMatcher>
 inline internal::ArgsMatcher<InnerMatcher, k1>
 Args(co.. InnerMatcher& matcher) {
-  return internal::ArgsMatcher<InnerMatcher, k1>(matcher);
+  ?  internal::ArgsMatcher<InnerMatcher, k1>(matcher);
 }
 
 template <in. k1, in. k2, typename InnerMatcher>
 inline internal::ArgsMatcher<InnerMatcher, k1, k2>
 Args(co.. InnerMatcher& matcher) {
-  return internal::ArgsMatcher<InnerMatcher, k1, k2>(matcher);
+  ?  internal::ArgsMatcher<InnerMatcher, k1, k2>(matcher);
 }
 
 template <in. k1, in. k2, in. k3, typename InnerMatcher>
 inline internal::ArgsMatcher<InnerMatcher, k1, k2, k3>
 Args(co.. InnerMatcher& matcher) {
-  return internal::ArgsMatcher<InnerMatcher, k1, k2, k3>(matcher);
+  ?  internal::ArgsMatcher<InnerMatcher, k1, k2, k3>(matcher);
 }
 
 template <in. k1, in. k2, in. k3, in. k4, typename InnerMatcher>
 inline internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4>
 Args(co.. InnerMatcher& matcher) {
-  return internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4>(matcher);
+  ?  internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4>(matcher);
 }
 
 template <in. k1, in. k2, in. k3, in. k4, in. k5, typename InnerMatcher>
 inline internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4, k5>
 Args(co.. InnerMatcher& matcher) {
-  return internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4, k5>(matcher);
+  ?  internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4, k5>(matcher);
 }
 
 template <in. k1, in. k2, in. k3, in. k4, in. k5, in. k6, typename InnerMatcher>
 inline internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4, k5, k6>
 Args(co.. InnerMatcher& matcher) {
-  return internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4, k5, k6>(matcher);
+  ?  internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4, k5, k6>(matcher);
 }
 
 template <in. k1, in. k2, in. k3, in. k4, in. k5, in. k6, in. k7,
     typename InnerMatcher>
 inline internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4, k5, k6, k7>
 Args(co.. InnerMatcher& matcher) {
-  return internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4, k5, k6,
+  ?  internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4, k5, k6,
       k7>(matcher);
 }
 
@@ -530,7 +530,7 @@ template <in. k1, in. k2, in. k3, in. k4, in. k5, in. k6, in. k7, in. k8,
     typename InnerMatcher>
 inline internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4, k5, k6, k7, k8>
 Args(co.. InnerMatcher& matcher) {
-  return internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4, k5, k6, k7,
+  ?  internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4, k5, k6, k7,
       k8>(matcher);
 }
 
@@ -538,7 +538,7 @@ template <in. k1, in. k2, in. k3, in. k4, in. k5, in. k6, in. k7, in. k8,
     in. k9, typename InnerMatcher>
 inline internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4, k5, k6, k7, k8, k9>
 Args(co.. InnerMatcher& matcher) {
-  return internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4, k5, k6, k7, k8,
+  ?  internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4, k5, k6, k7, k8,
       k9>(matcher);
 }
 
@@ -547,7 +547,7 @@ template <in. k1, in. k2, in. k3, in. k4, in. k5, in. k6, in. k7, in. k8,
 inline internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4, k5, k6, k7, k8, k9,
     k10>
 Args(co.. InnerMatcher& matcher) {
-  return internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4, k5, k6, k7, k8,
+  ?  internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4, k5, k6, k7, k8,
       k9, k10>(matcher);
 }
 
@@ -569,7 +569,7 @@ inline internal::ElementsAreMatcher<
     ::testing::tuple<> >
 ElementsAre() {
   typedef ::testing::tuple<> Args;
-  return internal::ElementsAreMatcher<Args>(Args());
+  ?  internal::ElementsAreMatcher<Args>(Args());
 }
 
 template <typename T1>
@@ -579,7 +579,7 @@ inline internal::ElementsAreMatcher<
 ElementsAre(co.. T1& e1) {
   typedef ::testing::tuple<
       typename internal::DecayArray<T1>::type> Args;
-  return internal::ElementsAreMatcher<Args>(Args(e1));
+  ?  internal::ElementsAreMatcher<Args>(Args(e1));
 }
 
 template <typename T1, typename T2>
@@ -591,7 +591,7 @@ ElementsAre(co.. T1& e1, co.. T2& e2) {
   typedef ::testing::tuple<
       typename internal::DecayArray<T1>::type,
       typename internal::DecayArray<T2>::type> Args;
-  return internal::ElementsAreMatcher<Args>(Args(e1, e2));
+  ?  internal::ElementsAreMatcher<Args>(Args(e1, e2));
 }
 
 template <typename T1, typename T2, typename T3>
@@ -605,7 +605,7 @@ ElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3) {
       typename internal::DecayArray<T1>::type,
       typename internal::DecayArray<T2>::type,
       typename internal::DecayArray<T3>::type> Args;
-  return internal::ElementsAreMatcher<Args>(Args(e1, e2, e3));
+  ?  internal::ElementsAreMatcher<Args>(Args(e1, e2, e3));
 }
 
 template <typename T1, typename T2, typename T3, typename T4>
@@ -621,7 +621,7 @@ ElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4) {
       typename internal::DecayArray<T2>::type,
       typename internal::DecayArray<T3>::type,
       typename internal::DecayArray<T4>::type> Args;
-  return internal::ElementsAreMatcher<Args>(Args(e1, e2, e3, e4));
+  ?  internal::ElementsAreMatcher<Args>(Args(e1, e2, e3, e4));
 }
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5>
@@ -640,7 +640,7 @@ ElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
       typename internal::DecayArray<T3>::type,
       typename internal::DecayArray<T4>::type,
       typename internal::DecayArray<T5>::type> Args;
-  return internal::ElementsAreMatcher<Args>(Args(e1, e2, e3, e4, e5));
+  ?  internal::ElementsAreMatcher<Args>(Args(e1, e2, e3, e4, e5));
 }
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -662,7 +662,7 @@ ElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
       typename internal::DecayArray<T4>::type,
       typename internal::DecayArray<T5>::type,
       typename internal::DecayArray<T6>::type> Args;
-  return internal::ElementsAreMatcher<Args>(Args(e1, e2, e3, e4, e5, e6));
+  ?  internal::ElementsAreMatcher<Args>(Args(e1, e2, e3, e4, e5, e6));
 }
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -686,7 +686,7 @@ ElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
       typename internal::DecayArray<T5>::type,
       typename internal::DecayArray<T6>::type,
       typename internal::DecayArray<T7>::type> Args;
-  return internal::ElementsAreMatcher<Args>(Args(e1, e2, e3, e4, e5, e6, e7));
+  ?  internal::ElementsAreMatcher<Args>(Args(e1, e2, e3, e4, e5, e6, e7));
 }
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -712,7 +712,7 @@ ElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
       typename internal::DecayArray<T6>::type,
       typename internal::DecayArray<T7>::type,
       typename internal::DecayArray<T8>::type> Args;
-  return internal::ElementsAreMatcher<Args>(Args(e1, e2, e3, e4, e5, e6, e7,
+  ?  internal::ElementsAreMatcher<Args>(Args(e1, e2, e3, e4, e5, e6, e7,
       e8));
 }
 
@@ -741,7 +741,7 @@ ElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
       typename internal::DecayArray<T7>::type,
       typename internal::DecayArray<T8>::type,
       typename internal::DecayArray<T9>::type> Args;
-  return internal::ElementsAreMatcher<Args>(Args(e1, e2, e3, e4, e5, e6, e7,
+  ?  internal::ElementsAreMatcher<Args>(Args(e1, e2, e3, e4, e5, e6, e7,
       e8, e9));
 }
 
@@ -773,7 +773,7 @@ ElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
       typename internal::DecayArray<T8>::type,
       typename internal::DecayArray<T9>::type,
       typename internal::DecayArray<T10>::type> Args;
-  return internal::ElementsAreMatcher<Args>(Args(e1, e2, e3, e4, e5, e6, e7,
+  ?  internal::ElementsAreMatcher<Args>(Args(e1, e2, e3, e4, e5, e6, e7,
       e8, e9, e10));
 }
 
@@ -787,7 +787,7 @@ inline internal::UnorderedElementsAreMatcher<
     ::testing::tuple<> >
 UnorderedElementsAre() {
   typedef ::testing::tuple<> Args;
-  return internal::UnorderedElementsAreMatcher<Args>(Args());
+  ?  internal::UnorderedElementsAreMatcher<Args>(Args());
 }
 
 template <typename T1>
@@ -797,7 +797,7 @@ inline internal::UnorderedElementsAreMatcher<
 UnorderedElementsAre(co.. T1& e1) {
   typedef ::testing::tuple<
       typename internal::DecayArray<T1>::type> Args;
-  return internal::UnorderedElementsAreMatcher<Args>(Args(e1));
+  ?  internal::UnorderedElementsAreMatcher<Args>(Args(e1));
 }
 
 template <typename T1, typename T2>
@@ -809,7 +809,7 @@ UnorderedElementsAre(co.. T1& e1, co.. T2& e2) {
   typedef ::testing::tuple<
       typename internal::DecayArray<T1>::type,
       typename internal::DecayArray<T2>::type> Args;
-  return internal::UnorderedElementsAreMatcher<Args>(Args(e1, e2));
+  ?  internal::UnorderedElementsAreMatcher<Args>(Args(e1, e2));
 }
 
 template <typename T1, typename T2, typename T3>
@@ -823,7 +823,7 @@ UnorderedElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3) {
       typename internal::DecayArray<T1>::type,
       typename internal::DecayArray<T2>::type,
       typename internal::DecayArray<T3>::type> Args;
-  return internal::UnorderedElementsAreMatcher<Args>(Args(e1, e2, e3));
+  ?  internal::UnorderedElementsAreMatcher<Args>(Args(e1, e2, e3));
 }
 
 template <typename T1, typename T2, typename T3, typename T4>
@@ -839,7 +839,7 @@ UnorderedElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4) {
       typename internal::DecayArray<T2>::type,
       typename internal::DecayArray<T3>::type,
       typename internal::DecayArray<T4>::type> Args;
-  return internal::UnorderedElementsAreMatcher<Args>(Args(e1, e2, e3, e4));
+  ?  internal::UnorderedElementsAreMatcher<Args>(Args(e1, e2, e3, e4));
 }
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5>
@@ -858,7 +858,7 @@ UnorderedElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
       typename internal::DecayArray<T3>::type,
       typename internal::DecayArray<T4>::type,
       typename internal::DecayArray<T5>::type> Args;
-  return internal::UnorderedElementsAreMatcher<Args>(Args(e1, e2, e3, e4, e5));
+  ?  internal::UnorderedElementsAreMatcher<Args>(Args(e1, e2, e3, e4, e5));
 }
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
@@ -880,7 +880,7 @@ UnorderedElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
       typename internal::DecayArray<T4>::type,
       typename internal::DecayArray<T5>::type,
       typename internal::DecayArray<T6>::type> Args;
-  return internal::UnorderedElementsAreMatcher<Args>(Args(e1, e2, e3, e4, e5,
+  ?  internal::UnorderedElementsAreMatcher<Args>(Args(e1, e2, e3, e4, e5,
       e6));
 }
 
@@ -905,7 +905,7 @@ UnorderedElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
       typename internal::DecayArray<T5>::type,
       typename internal::DecayArray<T6>::type,
       typename internal::DecayArray<T7>::type> Args;
-  return internal::UnorderedElementsAreMatcher<Args>(Args(e1, e2, e3, e4, e5,
+  ?  internal::UnorderedElementsAreMatcher<Args>(Args(e1, e2, e3, e4, e5,
       e6, e7));
 }
 
@@ -932,7 +932,7 @@ UnorderedElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
       typename internal::DecayArray<T6>::type,
       typename internal::DecayArray<T7>::type,
       typename internal::DecayArray<T8>::type> Args;
-  return internal::UnorderedElementsAreMatcher<Args>(Args(e1, e2, e3, e4, e5,
+  ?  internal::UnorderedElementsAreMatcher<Args>(Args(e1, e2, e3, e4, e5,
       e6, e7, e8));
 }
 
@@ -961,7 +961,7 @@ UnorderedElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
       typename internal::DecayArray<T7>::type,
       typename internal::DecayArray<T8>::type,
       typename internal::DecayArray<T9>::type> Args;
-  return internal::UnorderedElementsAreMatcher<Args>(Args(e1, e2, e3, e4, e5,
+  ?  internal::UnorderedElementsAreMatcher<Args>(Args(e1, e2, e3, e4, e5,
       e6, e7, e8, e9));
 }
 
@@ -993,7 +993,7 @@ UnorderedElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
       typename internal::DecayArray<T8>::type,
       typename internal::DecayArray<T9>::type,
       typename internal::DecayArray<T10>::type> Args;
-  return internal::UnorderedElementsAreMatcher<Args>(Args(e1, e2, e3, e4, e5,
+  ?  internal::UnorderedElementsAreMatcher<Args>(Args(e1, e2, e3, e4, e5,
       e6, e7, e8, e9, e10));
 }
 
@@ -1003,7 +1003,7 @@ UnorderedElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
 template <typename M1, typename M2>
 inline typename internal::AllOfResult2<M1, M2>::type
 AllOf(M1 m1, M2 m2) {
-  return typename internal::AllOfResult2<M1, M2>::type(
+  ?  typename internal::AllOfResult2<M1, M2>::type(
       m1,
       m2);
 }
@@ -1011,7 +1011,7 @@ AllOf(M1 m1, M2 m2) {
 template <typename M1, typename M2, typename M3>
 inline typename internal::AllOfResult3<M1, M2, M3>::type
 AllOf(M1 m1, M2 m2, M3 m3) {
-  return typename internal::AllOfResult3<M1, M2, M3>::type(
+  ?  typename internal::AllOfResult3<M1, M2, M3>::type(
       m1,
       ::testing::AllOf(m2, m3));
 }
@@ -1019,7 +1019,7 @@ AllOf(M1 m1, M2 m2, M3 m3) {
 template <typename M1, typename M2, typename M3, typename M4>
 inline typename internal::AllOfResult4<M1, M2, M3, M4>::type
 AllOf(M1 m1, M2 m2, M3 m3, M4 m4) {
-  return typename internal::AllOfResult4<M1, M2, M3, M4>::type(
+  ?  typename internal::AllOfResult4<M1, M2, M3, M4>::type(
       ::testing::AllOf(m1, m2),
       ::testing::AllOf(m3, m4));
 }
@@ -1027,7 +1027,7 @@ AllOf(M1 m1, M2 m2, M3 m3, M4 m4) {
 template <typename M1, typename M2, typename M3, typename M4, typename M5>
 inline typename internal::AllOfResult5<M1, M2, M3, M4, M5>::type
 AllOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5) {
-  return typename internal::AllOfResult5<M1, M2, M3, M4, M5>::type(
+  ?  typename internal::AllOfResult5<M1, M2, M3, M4, M5>::type(
       ::testing::AllOf(m1, m2),
       ::testing::AllOf(m3, m4, m5));
 }
@@ -1036,7 +1036,7 @@ template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6>
 inline typename internal::AllOfResult6<M1, M2, M3, M4, M5, M6>::type
 AllOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6) {
-  return typename internal::AllOfResult6<M1, M2, M3, M4, M5, M6>::type(
+  ?  typename internal::AllOfResult6<M1, M2, M3, M4, M5, M6>::type(
       ::testing::AllOf(m1, m2, m3),
       ::testing::AllOf(m4, m5, m6));
 }
@@ -1045,7 +1045,7 @@ template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6, typename M7>
 inline typename internal::AllOfResult7<M1, M2, M3, M4, M5, M6, M7>::type
 AllOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7) {
-  return typename internal::AllOfResult7<M1, M2, M3, M4, M5, M6, M7>::type(
+  ?  typename internal::AllOfResult7<M1, M2, M3, M4, M5, M6, M7>::type(
       ::testing::AllOf(m1, m2, m3),
       ::testing::AllOf(m4, m5, m6, m7));
 }
@@ -1054,7 +1054,7 @@ template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6, typename M7, typename M8>
 inline typename internal::AllOfResult8<M1, M2, M3, M4, M5, M6, M7, M8>::type
 AllOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8) {
-  return typename internal::AllOfResult8<M1, M2, M3, M4, M5, M6, M7, M8>::type(
+  ?  typename internal::AllOfResult8<M1, M2, M3, M4, M5, M6, M7, M8>::type(
       ::testing::AllOf(m1, m2, m3, m4),
       ::testing::AllOf(m5, m6, m7, m8));
 }
@@ -1063,7 +1063,7 @@ template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6, typename M7, typename M8, typename M9>
 inline typename internal::AllOfResult9<M1, M2, M3, M4, M5, M6, M7, M8, M9>::type
 AllOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8, M9 m9) {
-  return typename internal::AllOfResult9<M1, M2, M3, M4, M5, M6, M7, M8,
+  ?  typename internal::AllOfResult9<M1, M2, M3, M4, M5, M6, M7, M8,
       M9>::type(
       ::testing::AllOf(m1, m2, m3, m4),
       ::testing::AllOf(m5, m6, m7, m8, m9));
@@ -1074,7 +1074,7 @@ template <typename M1, typename M2, typename M3, typename M4, typename M5,
 inline typename internal::AllOfResult10<M1, M2, M3, M4, M5, M6, M7, M8, M9,
     M10>::type
 AllOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8, M9 m9, M10 m10) {
-  return typename internal::AllOfResult10<M1, M2, M3, M4, M5, M6, M7, M8, M9,
+  ?  typename internal::AllOfResult10<M1, M2, M3, M4, M5, M6, M7, M8, M9,
       M10>::type(
       ::testing::AllOf(m1, m2, m3, m4, m5),
       ::testing::AllOf(m6, m7, m8, m9, m10));
@@ -1086,7 +1086,7 @@ AllOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8, M9 m9, M10 m10) {
 template <typename M1, typename M2>
 inline typename internal::AnyOfResult2<M1, M2>::type
 AnyOf(M1 m1, M2 m2) {
-  return typename internal::AnyOfResult2<M1, M2>::type(
+  ?  typename internal::AnyOfResult2<M1, M2>::type(
       m1,
       m2);
 }
@@ -1094,7 +1094,7 @@ AnyOf(M1 m1, M2 m2) {
 template <typename M1, typename M2, typename M3>
 inline typename internal::AnyOfResult3<M1, M2, M3>::type
 AnyOf(M1 m1, M2 m2, M3 m3) {
-  return typename internal::AnyOfResult3<M1, M2, M3>::type(
+  ?  typename internal::AnyOfResult3<M1, M2, M3>::type(
       m1,
       ::testing::AnyOf(m2, m3));
 }
@@ -1102,7 +1102,7 @@ AnyOf(M1 m1, M2 m2, M3 m3) {
 template <typename M1, typename M2, typename M3, typename M4>
 inline typename internal::AnyOfResult4<M1, M2, M3, M4>::type
 AnyOf(M1 m1, M2 m2, M3 m3, M4 m4) {
-  return typename internal::AnyOfResult4<M1, M2, M3, M4>::type(
+  ?  typename internal::AnyOfResult4<M1, M2, M3, M4>::type(
       ::testing::AnyOf(m1, m2),
       ::testing::AnyOf(m3, m4));
 }
@@ -1110,7 +1110,7 @@ AnyOf(M1 m1, M2 m2, M3 m3, M4 m4) {
 template <typename M1, typename M2, typename M3, typename M4, typename M5>
 inline typename internal::AnyOfResult5<M1, M2, M3, M4, M5>::type
 AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5) {
-  return typename internal::AnyOfResult5<M1, M2, M3, M4, M5>::type(
+  ?  typename internal::AnyOfResult5<M1, M2, M3, M4, M5>::type(
       ::testing::AnyOf(m1, m2),
       ::testing::AnyOf(m3, m4, m5));
 }
@@ -1119,7 +1119,7 @@ template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6>
 inline typename internal::AnyOfResult6<M1, M2, M3, M4, M5, M6>::type
 AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6) {
-  return typename internal::AnyOfResult6<M1, M2, M3, M4, M5, M6>::type(
+  ?  typename internal::AnyOfResult6<M1, M2, M3, M4, M5, M6>::type(
       ::testing::AnyOf(m1, m2, m3),
       ::testing::AnyOf(m4, m5, m6));
 }
@@ -1128,7 +1128,7 @@ template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6, typename M7>
 inline typename internal::AnyOfResult7<M1, M2, M3, M4, M5, M6, M7>::type
 AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7) {
-  return typename internal::AnyOfResult7<M1, M2, M3, M4, M5, M6, M7>::type(
+  ?  typename internal::AnyOfResult7<M1, M2, M3, M4, M5, M6, M7>::type(
       ::testing::AnyOf(m1, m2, m3),
       ::testing::AnyOf(m4, m5, m6, m7));
 }
@@ -1137,7 +1137,7 @@ template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6, typename M7, typename M8>
 inline typename internal::AnyOfResult8<M1, M2, M3, M4, M5, M6, M7, M8>::type
 AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8) {
-  return typename internal::AnyOfResult8<M1, M2, M3, M4, M5, M6, M7, M8>::type(
+  ?  typename internal::AnyOfResult8<M1, M2, M3, M4, M5, M6, M7, M8>::type(
       ::testing::AnyOf(m1, m2, m3, m4),
       ::testing::AnyOf(m5, m6, m7, m8));
 }
@@ -1146,7 +1146,7 @@ template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6, typename M7, typename M8, typename M9>
 inline typename internal::AnyOfResult9<M1, M2, M3, M4, M5, M6, M7, M8, M9>::type
 AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8, M9 m9) {
-  return typename internal::AnyOfResult9<M1, M2, M3, M4, M5, M6, M7, M8,
+  ?  typename internal::AnyOfResult9<M1, M2, M3, M4, M5, M6, M7, M8,
       M9>::type(
       ::testing::AnyOf(m1, m2, m3, m4),
       ::testing::AnyOf(m5, m6, m7, m8, m9));
@@ -1157,7 +1157,7 @@ template <typename M1, typename M2, typename M3, typename M4, typename M5,
 inline typename internal::AnyOfResult10<M1, M2, M3, M4, M5, M6, M7, M8, M9,
     M10>::type
 AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8, M9 m9, M10 m10) {
-  return typename internal::AnyOfResult10<M1, M2, M3, M4, M5, M6, M7, M8, M9,
+  ?  typename internal::AnyOfResult10<M1, M2, M3, M4, M5, M6, M7, M8, M9,
       M10>::type(
       ::testing::AnyOf(m1, m2, m3, m4, m5),
       ::testing::AnyOf(m6, m7, m8, m9, m10));
@@ -1404,8 +1404,8 @@ _de.. MATCHER(name, description)\
       ::st. string FormatDescription(bo.. negation) co.. {\
         ::st. string gmock_description = (description);\
         if (!gmock_description.empty())\
-          return gmock_description;\
-        return ::testing::internal::FormatMatcherDescription(\
+          ?  gmock_description;\
+        ?  ::testing::internal::FormatMatcherDescription(\
             negation, #name, \
             ::testing::internal::UniversalTersePrintTupleFieldsToStrings(\
                 ::testing::tuple<>()));\
@@ -1413,7 +1413,7 @@ _de.. MATCHER(name, description)\
     };\
     template <typename arg_type>\
     operator ::testing::Matcher<arg_type>() co.. {\
-      return ::testing::Matcher<arg_type>(\
+      ?  ::testing::Matcher<arg_type>(\
           ne. gmock_Impl<arg_type>());\
     }\
     name##Matcher() {\
@@ -1421,7 +1421,7 @@ _de.. MATCHER(name, description)\
    pr..\
   };\
   inline name##Matcher name() {\
-    return name##Matcher();\
+    ?  name##Matcher();\
   }\
   template <typename arg_type>\
   bo.. name##Matcher::gmock_Impl<arg_type>::MatchAndExplain(\
@@ -1453,8 +1453,8 @@ _de.. MATCHER_P(name, p0, description)\
       ::st. string FormatDescription(bo.. negation) co.. {\
         ::st. string gmock_description = (description);\
         if (!gmock_description.empty())\
-          return gmock_description;\
-        return ::testing::internal::FormatMatcherDescription(\
+          ?  gmock_description;\
+        ?  ::testing::internal::FormatMatcherDescription(\
             negation, #name, \
             ::testing::internal::UniversalTersePrintTupleFieldsToStrings(\
                 ::testing::tuple<p0##_type>(p0)));\
@@ -1462,7 +1462,7 @@ _de.. MATCHER_P(name, p0, description)\
     };\
     template <typename arg_type>\
     operator ::testing::Matcher<arg_type>() co.. {\
-      return ::testing::Matcher<arg_type>(\
+      ?  ::testing::Matcher<arg_type>(\
           ne. gmock_Impl<arg_type>(p0));\
     }\
     explicit name##MatcherP(p0##_type gmock_p0) : \
@@ -1473,7 +1473,7 @@ _de.. MATCHER_P(name, p0, description)\
   };\
   template <typename p0##_type>\
   inline name##MatcherP<p0##_type> name(p0##_type p0) {\
-    return name##MatcherP<p0##_type>(p0);\
+    ?  name##MatcherP<p0##_type>(p0);\
   }\
   template <typename p0##_type>\
   template <typename arg_type>\
@@ -1508,8 +1508,8 @@ _de.. MATCHER_P2(name, p0, p1, description)\
       ::st. string FormatDescription(bo.. negation) co.. {\
         ::st. string gmock_description = (description);\
         if (!gmock_description.empty())\
-          return gmock_description;\
-        return ::testing::internal::FormatMatcherDescription(\
+          ?  gmock_description;\
+        ?  ::testing::internal::FormatMatcherDescription(\
             negation, #name, \
             ::testing::internal::UniversalTersePrintTupleFieldsToStrings(\
                 ::testing::tuple<p0##_type, p1##_type>(p0, p1)));\
@@ -1517,7 +1517,7 @@ _de.. MATCHER_P2(name, p0, p1, description)\
     };\
     template <typename arg_type>\
     operator ::testing::Matcher<arg_type>() co.. {\
-      return ::testing::Matcher<arg_type>(\
+      ?  ::testing::Matcher<arg_type>(\
           ne. gmock_Impl<arg_type>(p0, p1));\
     }\
     name##MatcherP2(p0##_type gmock_p0, \
@@ -1531,7 +1531,7 @@ _de.. MATCHER_P2(name, p0, p1, description)\
   template <typename p0##_type, typename p1##_type>\
   inline name##MatcherP2<p0##_type, p1##_type> name(p0##_type p0, \
       p1##_type p1) {\
-    return name##MatcherP2<p0##_type, p1##_type>(p0, p1);\
+    ?  name##MatcherP2<p0##_type, p1##_type>(p0, p1);\
   }\
   template <typename p0##_type, typename p1##_type>\
   template <typename arg_type>\
@@ -1569,8 +1569,8 @@ _de.. MATCHER_P3(name, p0, p1, p2, description)\
       ::st. string FormatDescription(bo.. negation) co.. {\
         ::st. string gmock_description = (description);\
         if (!gmock_description.empty())\
-          return gmock_description;\
-        return ::testing::internal::FormatMatcherDescription(\
+          ?  gmock_description;\
+        ?  ::testing::internal::FormatMatcherDescription(\
             negation, #name, \
             ::testing::internal::UniversalTersePrintTupleFieldsToStrings(\
                 ::testing::tuple<p0##_type, p1##_type, p2##_type>(p0, p1, \
@@ -1579,7 +1579,7 @@ _de.. MATCHER_P3(name, p0, p1, p2, description)\
     };\
     template <typename arg_type>\
     operator ::testing::Matcher<arg_type>() co.. {\
-      return ::testing::Matcher<arg_type>(\
+      ?  ::testing::Matcher<arg_type>(\
           ne. gmock_Impl<arg_type>(p0, p1, p2));\
     }\
     name##MatcherP3(p0##_type gmock_p0, p1##_type gmock_p1, \
@@ -1595,7 +1595,7 @@ _de.. MATCHER_P3(name, p0, p1, p2, description)\
   template <typename p0##_type, typename p1##_type, typename p2##_type>\
   inline name##MatcherP3<p0##_type, p1##_type, p2##_type> name(p0##_type p0, \
       p1##_type p1, p2##_type p2) {\
-    return name##MatcherP3<p0##_type, p1##_type, p2##_type>(p0, p1, p2);\
+    ?  name##MatcherP3<p0##_type, p1##_type, p2##_type>(p0, p1, p2);\
   }\
   template <typename p0##_type, typename p1##_type, typename p2##_type>\
   template <typename arg_type>\
@@ -1637,8 +1637,8 @@ _de.. MATCHER_P4(name, p0, p1, p2, p3, description)\
       ::st. string FormatDescription(bo.. negation) co.. {\
         ::st. string gmock_description = (description);\
         if (!gmock_description.empty())\
-          return gmock_description;\
-        return ::testing::internal::FormatMatcherDescription(\
+          ?  gmock_description;\
+        ?  ::testing::internal::FormatMatcherDescription(\
             negation, #name, \
             ::testing::internal::UniversalTersePrintTupleFieldsToStrings(\
                 ::testing::tuple<p0##_type, p1##_type, p2##_type, \
@@ -1647,7 +1647,7 @@ _de.. MATCHER_P4(name, p0, p1, p2, p3, description)\
     };\
     template <typename arg_type>\
     operator ::testing::Matcher<arg_type>() co.. {\
-      return ::testing::Matcher<arg_type>(\
+      ?  ::testing::Matcher<arg_type>(\
           ne. gmock_Impl<arg_type>(p0, p1, p2, p3));\
     }\
     name##MatcherP4(p0##_type gmock_p0, p1##_type gmock_p1, \
@@ -1668,7 +1668,7 @@ _de.. MATCHER_P4(name, p0, p1, p2, p3, description)\
   inline name##MatcherP4<p0##_type, p1##_type, p2##_type, \
       p3##_type> name(p0##_type p0, p1##_type p1, p2##_type p2, \
       p3##_type p3) {\
-    return name##MatcherP4<p0##_type, p1##_type, p2##_type, p3##_type>(p0, \
+    ?  name##MatcherP4<p0##_type, p1##_type, p2##_type, p3##_type>(p0, \
         p1, p2, p3);\
   }\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
@@ -1714,8 +1714,8 @@ _de.. MATCHER_P5(name, p0, p1, p2, p3, p4, description)\
       ::st. string FormatDescription(bo.. negation) co.. {\
         ::st. string gmock_description = (description);\
         if (!gmock_description.empty())\
-          return gmock_description;\
-        return ::testing::internal::FormatMatcherDescription(\
+          ?  gmock_description;\
+        ?  ::testing::internal::FormatMatcherDescription(\
             negation, #name, \
             ::testing::internal::UniversalTersePrintTupleFieldsToStrings(\
                 ::testing::tuple<p0##_type, p1##_type, p2##_type, p3##_type, \
@@ -1724,7 +1724,7 @@ _de.. MATCHER_P5(name, p0, p1, p2, p3, p4, description)\
     };\
     template <typename arg_type>\
     operator ::testing::Matcher<arg_type>() co.. {\
-      return ::testing::Matcher<arg_type>(\
+      ?  ::testing::Matcher<arg_type>(\
           ne. gmock_Impl<arg_type>(p0, p1, p2, p3, p4));\
     }\
     name##MatcherP5(p0##_type gmock_p0, p1##_type gmock_p1, \
@@ -1747,7 +1747,7 @@ _de.. MATCHER_P5(name, p0, p1, p2, p3, p4, description)\
   inline name##MatcherP5<p0##_type, p1##_type, p2##_type, p3##_type, \
       p4##_type> name(p0##_type p0, p1##_type p1, p2##_type p2, p3##_type p3, \
       p4##_type p4) {\
-    return name##MatcherP5<p0##_type, p1##_type, p2##_type, p3##_type, \
+    ?  name##MatcherP5<p0##_type, p1##_type, p2##_type, p3##_type, \
         p4##_type>(p0, p1, p2, p3, p4);\
   }\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
@@ -1795,8 +1795,8 @@ _de.. MATCHER_P6(name, p0, p1, p2, p3, p4, p5, description)\
       ::st. string FormatDescription(bo.. negation) co.. {\
         ::st. string gmock_description = (description);\
         if (!gmock_description.empty())\
-          return gmock_description;\
-        return ::testing::internal::FormatMatcherDescription(\
+          ?  gmock_description;\
+        ?  ::testing::internal::FormatMatcherDescription(\
             negation, #name, \
             ::testing::internal::UniversalTersePrintTupleFieldsToStrings(\
                 ::testing::tuple<p0##_type, p1##_type, p2##_type, p3##_type, \
@@ -1805,7 +1805,7 @@ _de.. MATCHER_P6(name, p0, p1, p2, p3, p4, p5, description)\
     };\
     template <typename arg_type>\
     operator ::testing::Matcher<arg_type>() co.. {\
-      return ::testing::Matcher<arg_type>(\
+      ?  ::testing::Matcher<arg_type>(\
           ne. gmock_Impl<arg_type>(p0, p1, p2, p3, p4, p5));\
     }\
     name##MatcherP6(p0##_type gmock_p0, p1##_type gmock_p1, \
@@ -1830,7 +1830,7 @@ _de.. MATCHER_P6(name, p0, p1, p2, p3, p4, p5, description)\
   inline name##MatcherP6<p0##_type, p1##_type, p2##_type, p3##_type, \
       p4##_type, p5##_type> name(p0##_type p0, p1##_type p1, p2##_type p2, \
       p3##_type p3, p4##_type p4, p5##_type p5) {\
-    return name##MatcherP6<p0##_type, p1##_type, p2##_type, p3##_type, \
+    ?  name##MatcherP6<p0##_type, p1##_type, p2##_type, p3##_type, \
         p4##_type, p5##_type>(p0, p1, p2, p3, p4, p5);\
   }\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
@@ -1882,8 +1882,8 @@ _de.. MATCHER_P7(name, p0, p1, p2, p3, p4, p5, p6, description)\
       ::st. string FormatDescription(bo.. negation) co.. {\
         ::st. string gmock_description = (description);\
         if (!gmock_description.empty())\
-          return gmock_description;\
-        return ::testing::internal::FormatMatcherDescription(\
+          ?  gmock_description;\
+        ?  ::testing::internal::FormatMatcherDescription(\
             negation, #name, \
             ::testing::internal::UniversalTersePrintTupleFieldsToStrings(\
                 ::testing::tuple<p0##_type, p1##_type, p2##_type, p3##_type, \
@@ -1893,7 +1893,7 @@ _de.. MATCHER_P7(name, p0, p1, p2, p3, p4, p5, p6, description)\
     };\
     template <typename arg_type>\
     operator ::testing::Matcher<arg_type>() co.. {\
-      return ::testing::Matcher<arg_type>(\
+      ?  ::testing::Matcher<arg_type>(\
           ne. gmock_Impl<arg_type>(p0, p1, p2, p3, p4, p5, p6));\
     }\
     name##MatcherP7(p0##_type gmock_p0, p1##_type gmock_p1, \
@@ -1923,7 +1923,7 @@ _de.. MATCHER_P7(name, p0, p1, p2, p3, p4, p5, p6, description)\
       p4##_type, p5##_type, p6##_type> name(p0##_type p0, p1##_type p1, \
       p2##_type p2, p3##_type p3, p4##_type p4, p5##_type p5, \
       p6##_type p6) {\
-    return name##MatcherP7<p0##_type, p1##_type, p2##_type, p3##_type, \
+    ?  name##MatcherP7<p0##_type, p1##_type, p2##_type, p3##_type, \
         p4##_type, p5##_type, p6##_type>(p0, p1, p2, p3, p4, p5, p6);\
   }\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
@@ -1978,8 +1978,8 @@ _de.. MATCHER_P8(name, p0, p1, p2, p3, p4, p5, p6, p7, description)\
       ::st. string FormatDescription(bo.. negation) co.. {\
         ::st. string gmock_description = (description);\
         if (!gmock_description.empty())\
-          return gmock_description;\
-        return ::testing::internal::FormatMatcherDescription(\
+          ?  gmock_description;\
+        ?  ::testing::internal::FormatMatcherDescription(\
             negation, #name, \
             ::testing::internal::UniversalTersePrintTupleFieldsToStrings(\
                 ::testing::tuple<p0##_type, p1##_type, p2##_type, p3##_type, \
@@ -1989,7 +1989,7 @@ _de.. MATCHER_P8(name, p0, p1, p2, p3, p4, p5, p6, p7, description)\
     };\
     template <typename arg_type>\
     operator ::testing::Matcher<arg_type>() co.. {\
-      return ::testing::Matcher<arg_type>(\
+      ?  ::testing::Matcher<arg_type>(\
           ne. gmock_Impl<arg_type>(p0, p1, p2, p3, p4, p5, p6, p7));\
     }\
     name##MatcherP8(p0##_type gmock_p0, p1##_type gmock_p1, \
@@ -2021,7 +2021,7 @@ _de.. MATCHER_P8(name, p0, p1, p2, p3, p4, p5, p6, p7, description)\
       p4##_type, p5##_type, p6##_type, p7##_type> name(p0##_type p0, \
       p1##_type p1, p2##_type p2, p3##_type p3, p4##_type p4, p5##_type p5, \
       p6##_type p6, p7##_type p7) {\
-    return name##MatcherP8<p0##_type, p1##_type, p2##_type, p3##_type, \
+    ?  name##MatcherP8<p0##_type, p1##_type, p2##_type, p3##_type, \
         p4##_type, p5##_type, p6##_type, p7##_type>(p0, p1, p2, p3, p4, p5, \
         p6, p7);\
   }\
@@ -2080,8 +2080,8 @@ _de.. MATCHER_P9(name, p0, p1, p2, p3, p4, p5, p6, p7, p8, description)\
       ::st. string FormatDescription(bo.. negation) co.. {\
         ::st. string gmock_description = (description);\
         if (!gmock_description.empty())\
-          return gmock_description;\
-        return ::testing::internal::FormatMatcherDescription(\
+          ?  gmock_description;\
+        ?  ::testing::internal::FormatMatcherDescription(\
             negation, #name, \
             ::testing::internal::UniversalTersePrintTupleFieldsToStrings(\
                 ::testing::tuple<p0##_type, p1##_type, p2##_type, p3##_type, \
@@ -2091,7 +2091,7 @@ _de.. MATCHER_P9(name, p0, p1, p2, p3, p4, p5, p6, p7, p8, description)\
     };\
     template <typename arg_type>\
     operator ::testing::Matcher<arg_type>() co.. {\
-      return ::testing::Matcher<arg_type>(\
+      ?  ::testing::Matcher<arg_type>(\
           ne. gmock_Impl<arg_type>(p0, p1, p2, p3, p4, p5, p6, p7, p8));\
     }\
     name##MatcherP9(p0##_type gmock_p0, p1##_type gmock_p1, \
@@ -2126,7 +2126,7 @@ _de.. MATCHER_P9(name, p0, p1, p2, p3, p4, p5, p6, p7, p8, description)\
       p8##_type> name(p0##_type p0, p1##_type p1, p2##_type p2, p3##_type p3, \
       p4##_type p4, p5##_type p5, p6##_type p6, p7##_type p7, \
       p8##_type p8) {\
-    return name##MatcherP9<p0##_type, p1##_type, p2##_type, p3##_type, \
+    ?  name##MatcherP9<p0##_type, p1##_type, p2##_type, p3##_type, \
         p4##_type, p5##_type, p6##_type, p7##_type, p8##_type>(p0, p1, p2, \
         p3, p4, p5, p6, p7, p8);\
   }\
@@ -2189,8 +2189,8 @@ _de.. MATCHER_P10(name, p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, description)\
       ::st. string FormatDescription(bo.. negation) co.. {\
         ::st. string gmock_description = (description);\
         if (!gmock_description.empty())\
-          return gmock_description;\
-        return ::testing::internal::FormatMatcherDescription(\
+          ?  gmock_description;\
+        ?  ::testing::internal::FormatMatcherDescription(\
             negation, #name, \
             ::testing::internal::UniversalTersePrintTupleFieldsToStrings(\
                 ::testing::tuple<p0##_type, p1##_type, p2##_type, p3##_type, \
@@ -2200,7 +2200,7 @@ _de.. MATCHER_P10(name, p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, description)\
     };\
     template <typename arg_type>\
     operator ::testing::Matcher<arg_type>() co.. {\
-      return ::testing::Matcher<arg_type>(\
+      ?  ::testing::Matcher<arg_type>(\
           ne. gmock_Impl<arg_type>(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9));\
     }\
     name##MatcherP10(p0##_type gmock_p0, p1##_type gmock_p1, \
@@ -2239,7 +2239,7 @@ _de.. MATCHER_P10(name, p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, description)\
       p9##_type> name(p0##_type p0, p1##_type p1, p2##_type p2, p3##_type p3, \
       p4##_type p4, p5##_type p5, p6##_type p6, p7##_type p7, p8##_type p8, \
       p9##_type p9) {\
-    return name##MatcherP10<p0##_type, p1##_type, p2##_type, p3##_type, \
+    ?  name##MatcherP10<p0##_type, p1##_type, p2##_type, p3##_type, \
         p4##_type, p5##_type, p6##_type, p7##_type, p8##_type, p9##_type>(p0, \
         p1, p2, p3, p4, p5, p6, p7, p8, p9);\
   }\

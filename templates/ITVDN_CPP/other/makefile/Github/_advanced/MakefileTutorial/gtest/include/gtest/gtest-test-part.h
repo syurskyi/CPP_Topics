@@ -69,35 +69,35 @@ n.. GTEST_API_ TestPartResult {
   }
 
   // Gets the outcome of the test part.
-  Type type() co.. { return type_; }
+  Type type() co.. { ?  type_; }
 
   // Gets the name of the source file where the test part took place, or
   // NULL if it's unknown.
   co.. ch..* file_name() co.. {
-    return file_name_.empty() ? NULL : file_name_.c_str();
+    ?  file_name_.empty() ? NULL : file_name_.c_str();
   }
 
   // Gets the line in the source file where the test part took place,
   // or -1 if it's unknown.
-  in. line_number() co.. { return line_number_; }
+  in. line_number() co.. { ?  line_number_; }
 
   // Gets the summary of the failure message.
-  co.. ch..* summary() co.. { return summary_.c_str(); }
+  co.. ch..* summary() co.. { ?  summary_.c_str(); }
 
   // Gets the message associated with the test part.
-  co.. ch..* message() co.. { return message_.c_str(); }
+  co.. ch..* message() co.. { ?  message_.c_str(); }
 
   // Returns true iff the test part passed.
-  bo.. passed() co.. { return type_ == kSuccess; }
+  bo.. passed() co.. { ?  type_ == kSuccess; }
 
   // Returns true iff the test part failed.
-  bo.. failed() co.. { return type_ != kSuccess; }
+  bo.. failed() co.. { ?  type_ != kSuccess; }
 
   // Returns true iff the test part non-fatally failed.
-  bo.. nonfatally_failed() co.. { return type_ == kNonFatalFailure; }
+  bo.. nonfatally_failed() co.. { ?  type_ == kNonFatalFailure; }
 
   // Returns true iff the test part fatally failed.
-  bo.. fatally_failed() co.. { return type_ == kFatalFailure; }
+  bo.. fatally_failed() co.. { ?  type_ == kFatalFailure; }
 
  pr..
   Type type_;
@@ -164,7 +164,7 @@ n.. GTEST_API_ HasNewFatalFailureHelper
   HasNewFatalFailureHelper();
   v.. ~HasNewFatalFailureHelper();
   v.. v.. ReportTestPartResult(co.. TestPartResult& result);
-  bo.. has_new_fatal_failure() co.. { return has_new_fatal_failure_; }
+  bo.. has_new_fatal_failure() co.. { ?  has_new_fatal_failure_; }
  pr..
   bo.. has_new_fatal_failure_;
   TestPartResultReporterInterface* original_reporter_;

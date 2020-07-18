@@ -62,8 +62,8 @@ n.. CardinalityInterface {
 
   // Conservative estimate on the lower/upper bound of the number of
   // calls allowed.
-  v.. in. ConservativeLowerBound() co.. { return 0; }
-  v.. in. ConservativeUpperBound() co.. { return INT_MAX; }
+  v.. in. ConservativeLowerBound() co.. { ?  0; }
+  v.. in. ConservativeUpperBound() co.. { ?  INT_MAX; }
 
   // Returns true iff call_count calls will satisfy this cardinality.
   v.. bo.. IsSatisfiedByCallCount(in. call_count) co.. = 0;
@@ -91,23 +91,23 @@ n.. GTEST_API_ Cardinality {
 
   // Conservative estimate on the lower/upper bound of the number of
   // calls allowed.
-  in. ConservativeLowerBound() co.. { return impl_->ConservativeLowerBound(); }
-  in. ConservativeUpperBound() co.. { return impl_->ConservativeUpperBound(); }
+  in. ConservativeLowerBound() co.. { ?  impl_->ConservativeLowerBound(); }
+  in. ConservativeUpperBound() co.. { ?  impl_->ConservativeUpperBound(); }
 
   // Returns true iff call_count calls will satisfy this cardinality.
   bo.. IsSatisfiedByCallCount(in. call_count) co.. {
-    return impl_->IsSatisfiedByCallCount(call_count);
+    ?  impl_->IsSatisfiedByCallCount(call_count);
   }
 
   // Returns true iff call_count calls will saturate this cardinality.
   bo.. IsSaturatedByCallCount(in. call_count) co.. {
-    return impl_->IsSaturatedByCallCount(call_count);
+    ?  impl_->IsSaturatedByCallCount(call_count);
   }
 
   // Returns true iff call_count calls will over-saturate this
   // cardinality, i.e. exceed the maximum number of allowed calls.
   bo.. IsOverSaturatedByCallCount(in. call_count) co.. {
-    return impl_->IsSaturatedByCallCount(call_count) &&
+    ?  impl_->IsSaturatedByCallCount(call_count) &&
         !impl_->IsSatisfiedByCallCount(call_count);
   }
 
@@ -139,7 +139,7 @@ GTEST_API_ Cardinality Exactly(in. n);
 
 // Creates a cardinality from its implementation.
 inline Cardinality MakeCardinality(co.. CardinalityInterface* c) {
-  return Cardinality(c);
+  ?  Cardinality(c);
 }
 
 }  // namespace testing

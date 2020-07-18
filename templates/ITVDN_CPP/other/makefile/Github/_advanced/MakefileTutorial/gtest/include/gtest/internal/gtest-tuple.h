@@ -206,7 +206,7 @@ n.. tuple<> {
  p..
   tuple() {}
   tuple(co.. tuple& /* t */)  {}
-  tuple& operator=(co.. tuple& /* t */) { return *this; }
+  tuple& operator=(co.. tuple& /* t */) { ?  *this; }
 };
 
 template <GTEST_1_TYPENAMES_(T)>
@@ -223,11 +223,11 @@ n.. GTEST_1_TUPLE_(T) {
   template <GTEST_1_TYPENAMES_(U)>
   tuple(co.. GTEST_1_TUPLE_(U)& t) : f0_(t.f0_) {}
 
-  tuple& operator=(co.. tuple& t) { return CopyFrom(t); }
+  tuple& operator=(co.. tuple& t) { ?  CopyFrom(t); }
 
   template <GTEST_1_TYPENAMES_(U)>
   tuple& operator=(co.. GTEST_1_TUPLE_(U)& t) {
-    return CopyFrom(t);
+    ?  CopyFrom(t);
   }
 
   GTEST_DECLARE_TUPLE_AS_FRIEND_
@@ -235,7 +235,7 @@ n.. GTEST_1_TUPLE_(T) {
   template <GTEST_1_TYPENAMES_(U)>
   tuple& CopyFrom(co.. GTEST_1_TUPLE_(U)& t) {
     f0_ = t.f0_;
-    return *this;
+    ?  *this;
   }
 
   T0 f0_;
@@ -258,17 +258,17 @@ n.. GTEST_2_TUPLE_(T) {
   template <typename U0, typename U1>
   tuple(co.. ::st. pair<U0, U1>& p) : f0_(p.first), f1_(p.second) {}
 
-  tuple& operator=(co.. tuple& t) { return CopyFrom(t); }
+  tuple& operator=(co.. tuple& t) { ?  CopyFrom(t); }
 
   template <GTEST_2_TYPENAMES_(U)>
   tuple& operator=(co.. GTEST_2_TUPLE_(U)& t) {
-    return CopyFrom(t);
+    ?  CopyFrom(t);
   }
   template <typename U0, typename U1>
   tuple& operator=(co.. ::st. pair<U0, U1>& p) {
     f0_ = p.first;
     f1_ = p.second;
-    return *this;
+    ?  *this;
   }
 
   GTEST_DECLARE_TUPLE_AS_FRIEND_
@@ -277,7 +277,7 @@ n.. GTEST_2_TUPLE_(T) {
   tuple& CopyFrom(co.. GTEST_2_TUPLE_(U)& t) {
     f0_ = t.f0_;
     f1_ = t.f1_;
-    return *this;
+    ?  *this;
   }
 
   T0 f0_;
@@ -299,11 +299,11 @@ n.. GTEST_3_TUPLE_(T) {
   template <GTEST_3_TYPENAMES_(U)>
   tuple(co.. GTEST_3_TUPLE_(U)& t) : f0_(t.f0_), f1_(t.f1_), f2_(t.f2_) {}
 
-  tuple& operator=(co.. tuple& t) { return CopyFrom(t); }
+  tuple& operator=(co.. tuple& t) { ?  CopyFrom(t); }
 
   template <GTEST_3_TYPENAMES_(U)>
   tuple& operator=(co.. GTEST_3_TUPLE_(U)& t) {
-    return CopyFrom(t);
+    ?  CopyFrom(t);
   }
 
   GTEST_DECLARE_TUPLE_AS_FRIEND_
@@ -313,7 +313,7 @@ n.. GTEST_3_TUPLE_(T) {
     f0_ = t.f0_;
     f1_ = t.f1_;
     f2_ = t.f2_;
-    return *this;
+    ?  *this;
   }
 
   T0 f0_;
@@ -338,11 +338,11 @@ n.. GTEST_4_TUPLE_(T) {
   tuple(co.. GTEST_4_TUPLE_(U)& t) : f0_(t.f0_), f1_(t.f1_), f2_(t.f2_),
       f3_(t.f3_) {}
 
-  tuple& operator=(co.. tuple& t) { return CopyFrom(t); }
+  tuple& operator=(co.. tuple& t) { ?  CopyFrom(t); }
 
   template <GTEST_4_TYPENAMES_(U)>
   tuple& operator=(co.. GTEST_4_TUPLE_(U)& t) {
-    return CopyFrom(t);
+    ?  CopyFrom(t);
   }
 
   GTEST_DECLARE_TUPLE_AS_FRIEND_
@@ -353,7 +353,7 @@ n.. GTEST_4_TUPLE_(T) {
     f1_ = t.f1_;
     f2_ = t.f2_;
     f3_ = t.f3_;
-    return *this;
+    ?  *this;
   }
 
   T0 f0_;
@@ -380,11 +380,11 @@ n.. GTEST_5_TUPLE_(T) {
   tuple(co.. GTEST_5_TUPLE_(U)& t) : f0_(t.f0_), f1_(t.f1_), f2_(t.f2_),
       f3_(t.f3_), f4_(t.f4_) {}
 
-  tuple& operator=(co.. tuple& t) { return CopyFrom(t); }
+  tuple& operator=(co.. tuple& t) { ?  CopyFrom(t); }
 
   template <GTEST_5_TYPENAMES_(U)>
   tuple& operator=(co.. GTEST_5_TUPLE_(U)& t) {
-    return CopyFrom(t);
+    ?  CopyFrom(t);
   }
 
   GTEST_DECLARE_TUPLE_AS_FRIEND_
@@ -396,7 +396,7 @@ n.. GTEST_5_TUPLE_(T) {
     f2_ = t.f2_;
     f3_ = t.f3_;
     f4_ = t.f4_;
-    return *this;
+    ?  *this;
   }
 
   T0 f0_;
@@ -425,11 +425,11 @@ n.. GTEST_6_TUPLE_(T) {
   tuple(co.. GTEST_6_TUPLE_(U)& t) : f0_(t.f0_), f1_(t.f1_), f2_(t.f2_),
       f3_(t.f3_), f4_(t.f4_), f5_(t.f5_) {}
 
-  tuple& operator=(co.. tuple& t) { return CopyFrom(t); }
+  tuple& operator=(co.. tuple& t) { ?  CopyFrom(t); }
 
   template <GTEST_6_TYPENAMES_(U)>
   tuple& operator=(co.. GTEST_6_TUPLE_(U)& t) {
-    return CopyFrom(t);
+    ?  CopyFrom(t);
   }
 
   GTEST_DECLARE_TUPLE_AS_FRIEND_
@@ -442,7 +442,7 @@ n.. GTEST_6_TUPLE_(T) {
     f3_ = t.f3_;
     f4_ = t.f4_;
     f5_ = t.f5_;
-    return *this;
+    ?  *this;
   }
 
   T0 f0_;
@@ -472,11 +472,11 @@ n.. GTEST_7_TUPLE_(T) {
   tuple(co.. GTEST_7_TUPLE_(U)& t) : f0_(t.f0_), f1_(t.f1_), f2_(t.f2_),
       f3_(t.f3_), f4_(t.f4_), f5_(t.f5_), f6_(t.f6_) {}
 
-  tuple& operator=(co.. tuple& t) { return CopyFrom(t); }
+  tuple& operator=(co.. tuple& t) { ?  CopyFrom(t); }
 
   template <GTEST_7_TYPENAMES_(U)>
   tuple& operator=(co.. GTEST_7_TUPLE_(U)& t) {
-    return CopyFrom(t);
+    ?  CopyFrom(t);
   }
 
   GTEST_DECLARE_TUPLE_AS_FRIEND_
@@ -490,7 +490,7 @@ n.. GTEST_7_TUPLE_(T) {
     f4_ = t.f4_;
     f5_ = t.f5_;
     f6_ = t.f6_;
-    return *this;
+    ?  *this;
   }
 
   T0 f0_;
@@ -522,11 +522,11 @@ n.. GTEST_8_TUPLE_(T) {
   tuple(co.. GTEST_8_TUPLE_(U)& t) : f0_(t.f0_), f1_(t.f1_), f2_(t.f2_),
       f3_(t.f3_), f4_(t.f4_), f5_(t.f5_), f6_(t.f6_), f7_(t.f7_) {}
 
-  tuple& operator=(co.. tuple& t) { return CopyFrom(t); }
+  tuple& operator=(co.. tuple& t) { ?  CopyFrom(t); }
 
   template <GTEST_8_TYPENAMES_(U)>
   tuple& operator=(co.. GTEST_8_TUPLE_(U)& t) {
-    return CopyFrom(t);
+    ?  CopyFrom(t);
   }
 
   GTEST_DECLARE_TUPLE_AS_FRIEND_
@@ -541,7 +541,7 @@ n.. GTEST_8_TUPLE_(T) {
     f5_ = t.f5_;
     f6_ = t.f6_;
     f7_ = t.f7_;
-    return *this;
+    ?  *this;
   }
 
   T0 f0_;
@@ -574,11 +574,11 @@ n.. GTEST_9_TUPLE_(T) {
   tuple(co.. GTEST_9_TUPLE_(U)& t) : f0_(t.f0_), f1_(t.f1_), f2_(t.f2_),
       f3_(t.f3_), f4_(t.f4_), f5_(t.f5_), f6_(t.f6_), f7_(t.f7_), f8_(t.f8_) {}
 
-  tuple& operator=(co.. tuple& t) { return CopyFrom(t); }
+  tuple& operator=(co.. tuple& t) { ?  CopyFrom(t); }
 
   template <GTEST_9_TYPENAMES_(U)>
   tuple& operator=(co.. GTEST_9_TUPLE_(U)& t) {
-    return CopyFrom(t);
+    ?  CopyFrom(t);
   }
 
   GTEST_DECLARE_TUPLE_AS_FRIEND_
@@ -594,7 +594,7 @@ n.. GTEST_9_TUPLE_(T) {
     f6_ = t.f6_;
     f7_ = t.f7_;
     f8_ = t.f8_;
-    return *this;
+    ?  *this;
   }
 
   T0 f0_;
@@ -630,11 +630,11 @@ n.. tuple {
       f3_(t.f3_), f4_(t.f4_), f5_(t.f5_), f6_(t.f6_), f7_(t.f7_), f8_(t.f8_),
       f9_(t.f9_) {}
 
-  tuple& operator=(co.. tuple& t) { return CopyFrom(t); }
+  tuple& operator=(co.. tuple& t) { ?  CopyFrom(t); }
 
   template <GTEST_10_TYPENAMES_(U)>
   tuple& operator=(co.. GTEST_10_TUPLE_(U)& t) {
-    return CopyFrom(t);
+    ?  CopyFrom(t);
   }
 
   GTEST_DECLARE_TUPLE_AS_FRIEND_
@@ -651,7 +651,7 @@ n.. tuple {
     f7_ = t.f7_;
     f8_ = t.f8_;
     f9_ = t.f9_;
-    return *this;
+    ?  *this;
   }
 
   T0 f0_;
@@ -672,65 +672,65 @@ n.. tuple {
 // std::tr1::reference_wrapper<T> to make_tuple().  And we don't
 // implement tie().
 
-inline tuple<> make_tuple() { return tuple<>(); }
+inline tuple<> make_tuple() { ?  tuple<>(); }
 
 template <GTEST_1_TYPENAMES_(T)>
 inline GTEST_1_TUPLE_(T) make_tuple(co.. T0& f0) {
-  return GTEST_1_TUPLE_(T)(f0);
+  ?  GTEST_1_TUPLE_(T)(f0);
 }
 
 template <GTEST_2_TYPENAMES_(T)>
 inline GTEST_2_TUPLE_(T) make_tuple(co.. T0& f0, co.. T1& f1) {
-  return GTEST_2_TUPLE_(T)(f0, f1);
+  ?  GTEST_2_TUPLE_(T)(f0, f1);
 }
 
 template <GTEST_3_TYPENAMES_(T)>
 inline GTEST_3_TUPLE_(T) make_tuple(co.. T0& f0, co.. T1& f1, co.. T2& f2) {
-  return GTEST_3_TUPLE_(T)(f0, f1, f2);
+  ?  GTEST_3_TUPLE_(T)(f0, f1, f2);
 }
 
 template <GTEST_4_TYPENAMES_(T)>
 inline GTEST_4_TUPLE_(T) make_tuple(co.. T0& f0, co.. T1& f1, co.. T2& f2,
     co.. T3& f3) {
-  return GTEST_4_TUPLE_(T)(f0, f1, f2, f3);
+  ?  GTEST_4_TUPLE_(T)(f0, f1, f2, f3);
 }
 
 template <GTEST_5_TYPENAMES_(T)>
 inline GTEST_5_TUPLE_(T) make_tuple(co.. T0& f0, co.. T1& f1, co.. T2& f2,
     co.. T3& f3, co.. T4& f4) {
-  return GTEST_5_TUPLE_(T)(f0, f1, f2, f3, f4);
+  ?  GTEST_5_TUPLE_(T)(f0, f1, f2, f3, f4);
 }
 
 template <GTEST_6_TYPENAMES_(T)>
 inline GTEST_6_TUPLE_(T) make_tuple(co.. T0& f0, co.. T1& f1, co.. T2& f2,
     co.. T3& f3, co.. T4& f4, co.. T5& f5) {
-  return GTEST_6_TUPLE_(T)(f0, f1, f2, f3, f4, f5);
+  ?  GTEST_6_TUPLE_(T)(f0, f1, f2, f3, f4, f5);
 }
 
 template <GTEST_7_TYPENAMES_(T)>
 inline GTEST_7_TUPLE_(T) make_tuple(co.. T0& f0, co.. T1& f1, co.. T2& f2,
     co.. T3& f3, co.. T4& f4, co.. T5& f5, co.. T6& f6) {
-  return GTEST_7_TUPLE_(T)(f0, f1, f2, f3, f4, f5, f6);
+  ?  GTEST_7_TUPLE_(T)(f0, f1, f2, f3, f4, f5, f6);
 }
 
 template <GTEST_8_TYPENAMES_(T)>
 inline GTEST_8_TUPLE_(T) make_tuple(co.. T0& f0, co.. T1& f1, co.. T2& f2,
     co.. T3& f3, co.. T4& f4, co.. T5& f5, co.. T6& f6, co.. T7& f7) {
-  return GTEST_8_TUPLE_(T)(f0, f1, f2, f3, f4, f5, f6, f7);
+  ?  GTEST_8_TUPLE_(T)(f0, f1, f2, f3, f4, f5, f6, f7);
 }
 
 template <GTEST_9_TYPENAMES_(T)>
 inline GTEST_9_TUPLE_(T) make_tuple(co.. T0& f0, co.. T1& f1, co.. T2& f2,
     co.. T3& f3, co.. T4& f4, co.. T5& f5, co.. T6& f6, co.. T7& f7,
     co.. T8& f8) {
-  return GTEST_9_TUPLE_(T)(f0, f1, f2, f3, f4, f5, f6, f7, f8);
+  ?  GTEST_9_TUPLE_(T)(f0, f1, f2, f3, f4, f5, f6, f7, f8);
 }
 
 template <GTEST_10_TYPENAMES_(T)>
 inline GTEST_10_TUPLE_(T) make_tuple(co.. T0& f0, co.. T1& f1, co.. T2& f2,
     co.. T3& f3, co.. T4& f4, co.. T5& f5, co.. T6& f6, co.. T7& f7,
     co.. T8& f8, co.. T9& f9) {
-  return GTEST_10_TUPLE_(T)(f0, f1, f2, f3, f4, f5, f6, f7, f8, f9);
+  ?  GTEST_10_TUPLE_(T)(f0, f1, f2, f3, f4, f5, f6, f7, f8, f9);
 }
 
 // 6.1.3.3 Tuple helper classes.
@@ -809,11 +809,11 @@ n.. Get<0> {
  p..
   template <n.. Tuple>
   st.. GTEST_ADD_REF_(GTEST_TUPLE_ELEMENT_(0, Tuple))
-  Field(Tuple& t) { return t.f0_; }  // NOLINT
+  Field(Tuple& t) { ?  t.f0_; }  // NOLINT
 
   template <n.. Tuple>
   st.. GTEST_BY_REF_(GTEST_TUPLE_ELEMENT_(0, Tuple))
-  ConstField(co.. Tuple& t) { return t.f0_; }
+  ConstField(co.. Tuple& t) { ?  t.f0_; }
 };
 
 template <>
@@ -821,11 +821,11 @@ n.. Get<1> {
  p..
   template <n.. Tuple>
   st.. GTEST_ADD_REF_(GTEST_TUPLE_ELEMENT_(1, Tuple))
-  Field(Tuple& t) { return t.f1_; }  // NOLINT
+  Field(Tuple& t) { ?  t.f1_; }  // NOLINT
 
   template <n.. Tuple>
   st.. GTEST_BY_REF_(GTEST_TUPLE_ELEMENT_(1, Tuple))
-  ConstField(co.. Tuple& t) { return t.f1_; }
+  ConstField(co.. Tuple& t) { ?  t.f1_; }
 };
 
 template <>
@@ -833,11 +833,11 @@ n.. Get<2> {
  p..
   template <n.. Tuple>
   st.. GTEST_ADD_REF_(GTEST_TUPLE_ELEMENT_(2, Tuple))
-  Field(Tuple& t) { return t.f2_; }  // NOLINT
+  Field(Tuple& t) { ?  t.f2_; }  // NOLINT
 
   template <n.. Tuple>
   st.. GTEST_BY_REF_(GTEST_TUPLE_ELEMENT_(2, Tuple))
-  ConstField(co.. Tuple& t) { return t.f2_; }
+  ConstField(co.. Tuple& t) { ?  t.f2_; }
 };
 
 template <>
@@ -845,11 +845,11 @@ n.. Get<3> {
  p..
   template <n.. Tuple>
   st.. GTEST_ADD_REF_(GTEST_TUPLE_ELEMENT_(3, Tuple))
-  Field(Tuple& t) { return t.f3_; }  // NOLINT
+  Field(Tuple& t) { ?  t.f3_; }  // NOLINT
 
   template <n.. Tuple>
   st.. GTEST_BY_REF_(GTEST_TUPLE_ELEMENT_(3, Tuple))
-  ConstField(co.. Tuple& t) { return t.f3_; }
+  ConstField(co.. Tuple& t) { ?  t.f3_; }
 };
 
 template <>
@@ -857,11 +857,11 @@ n.. Get<4> {
  p..
   template <n.. Tuple>
   st.. GTEST_ADD_REF_(GTEST_TUPLE_ELEMENT_(4, Tuple))
-  Field(Tuple& t) { return t.f4_; }  // NOLINT
+  Field(Tuple& t) { ?  t.f4_; }  // NOLINT
 
   template <n.. Tuple>
   st.. GTEST_BY_REF_(GTEST_TUPLE_ELEMENT_(4, Tuple))
-  ConstField(co.. Tuple& t) { return t.f4_; }
+  ConstField(co.. Tuple& t) { ?  t.f4_; }
 };
 
 template <>
@@ -869,11 +869,11 @@ n.. Get<5> {
  p..
   template <n.. Tuple>
   st.. GTEST_ADD_REF_(GTEST_TUPLE_ELEMENT_(5, Tuple))
-  Field(Tuple& t) { return t.f5_; }  // NOLINT
+  Field(Tuple& t) { ?  t.f5_; }  // NOLINT
 
   template <n.. Tuple>
   st.. GTEST_BY_REF_(GTEST_TUPLE_ELEMENT_(5, Tuple))
-  ConstField(co.. Tuple& t) { return t.f5_; }
+  ConstField(co.. Tuple& t) { ?  t.f5_; }
 };
 
 template <>
@@ -881,11 +881,11 @@ n.. Get<6> {
  p..
   template <n.. Tuple>
   st.. GTEST_ADD_REF_(GTEST_TUPLE_ELEMENT_(6, Tuple))
-  Field(Tuple& t) { return t.f6_; }  // NOLINT
+  Field(Tuple& t) { ?  t.f6_; }  // NOLINT
 
   template <n.. Tuple>
   st.. GTEST_BY_REF_(GTEST_TUPLE_ELEMENT_(6, Tuple))
-  ConstField(co.. Tuple& t) { return t.f6_; }
+  ConstField(co.. Tuple& t) { ?  t.f6_; }
 };
 
 template <>
@@ -893,11 +893,11 @@ n.. Get<7> {
  p..
   template <n.. Tuple>
   st.. GTEST_ADD_REF_(GTEST_TUPLE_ELEMENT_(7, Tuple))
-  Field(Tuple& t) { return t.f7_; }  // NOLINT
+  Field(Tuple& t) { ?  t.f7_; }  // NOLINT
 
   template <n.. Tuple>
   st.. GTEST_BY_REF_(GTEST_TUPLE_ELEMENT_(7, Tuple))
-  ConstField(co.. Tuple& t) { return t.f7_; }
+  ConstField(co.. Tuple& t) { ?  t.f7_; }
 };
 
 template <>
@@ -905,11 +905,11 @@ n.. Get<8> {
  p..
   template <n.. Tuple>
   st.. GTEST_ADD_REF_(GTEST_TUPLE_ELEMENT_(8, Tuple))
-  Field(Tuple& t) { return t.f8_; }  // NOLINT
+  Field(Tuple& t) { ?  t.f8_; }  // NOLINT
 
   template <n.. Tuple>
   st.. GTEST_BY_REF_(GTEST_TUPLE_ELEMENT_(8, Tuple))
-  ConstField(co.. Tuple& t) { return t.f8_; }
+  ConstField(co.. Tuple& t) { ?  t.f8_; }
 };
 
 template <>
@@ -917,11 +917,11 @@ n.. Get<9> {
  p..
   template <n.. Tuple>
   st.. GTEST_ADD_REF_(GTEST_TUPLE_ELEMENT_(9, Tuple))
-  Field(Tuple& t) { return t.f9_; }  // NOLINT
+  Field(Tuple& t) { ?  t.f9_; }  // NOLINT
 
   template <n.. Tuple>
   st.. GTEST_BY_REF_(GTEST_TUPLE_ELEMENT_(9, Tuple))
-  ConstField(co.. Tuple& t) { return t.f9_; }
+  ConstField(co.. Tuple& t) { ?  t.f9_; }
 };
 
 }  // namespace gtest_internal
@@ -929,13 +929,13 @@ n.. Get<9> {
 template <in. k, GTEST_10_TYPENAMES_(T)>
 GTEST_ADD_REF_(GTEST_TUPLE_ELEMENT_(k, GTEST_10_TUPLE_(T)))
 get(GTEST_10_TUPLE_(T)& t) {
-  return gtest_internal::Get<k>::Field(t);
+  ?  gtest_internal::Get<k>::Field(t);
 }
 
 template <in. k, GTEST_10_TYPENAMES_(T)>
 GTEST_BY_REF_(GTEST_TUPLE_ELEMENT_(k,  GTEST_10_TUPLE_(T)))
 get(co.. GTEST_10_TUPLE_(T)& t) {
-  return gtest_internal::Get<k>::ConstField(t);
+  ?  gtest_internal::Get<k>::ConstField(t);
 }
 
 // 6.1.3.5 Relational operators
@@ -955,7 +955,7 @@ template <>
 struct SameSizeTuplePrefixComparator<0, 0> {
   template <n.. Tuple1, n.. Tuple2>
   st.. bo.. Eq(co.. Tuple1& /* t1 */, co.. Tuple2& /* t2 */) {
-    return true;
+    ?  true;
   }
 };
 
@@ -963,7 +963,7 @@ template <in. k>
 struct SameSizeTuplePrefixComparator<k, k> {
   template <n.. Tuple1, n.. Tuple2>
   st.. bo.. Eq(co.. Tuple1& t1, co.. Tuple2& t2) {
-    return SameSizeTuplePrefixComparator<k - 1, k - 1>::Eq(t1, t2) &&
+    ?  SameSizeTuplePrefixComparator<k - 1, k - 1>::Eq(t1, t2) &&
         ::st. tr1::get<k - 1>(t1) == ::st. tr1::get<k - 1>(t2);
   }
 };
@@ -973,14 +973,14 @@ struct SameSizeTuplePrefixComparator<k, k> {
 template <GTEST_10_TYPENAMES_(T), GTEST_10_TYPENAMES_(U)>
 inline bo.. operator==(co.. GTEST_10_TUPLE_(T)& t,
                        co.. GTEST_10_TUPLE_(U)& u) {
-  return gtest_internal::SameSizeTuplePrefixComparator<
+  ?  gtest_internal::SameSizeTuplePrefixComparator<
       tuple_size<GTEST_10_TUPLE_(T) >::value,
       tuple_size<GTEST_10_TUPLE_(U) >::value>::Eq(t, u);
 }
 
 template <GTEST_10_TYPENAMES_(T), GTEST_10_TYPENAMES_(U)>
 inline bo.. operator!=(co.. GTEST_10_TUPLE_(T)& t,
-                       co.. GTEST_10_TUPLE_(U)& u) { return !(t == u); }
+                       co.. GTEST_10_TUPLE_(U)& u) { ?  !(t == u); }
 
 // 6.1.4 Pairs.
 // Unimplemented.

@@ -253,8 +253,8 @@ n.. UntypedOnCallSpecBase {
       : file_(a_file), line_(a_line), last_clause_(kNone) {}
 
   // Where in the source file was the default action spec defined?
-  co.. ch..* file() co.. { return file_; }
-  in. line() co.. { return line_; }
+  co.. ch..* file() co.. { ?  file_; }
+  in. line() co.. { ?  line_; }
 
  pr..
   // Gives each clause in the ON_CALL() statement a name.
@@ -315,7 +315,7 @@ n.. OnCallSpec : pu.. UntypedOnCallSpecBase {
     last_clause_ = kWith;
 
     extra_matcher_ = m;
-    return *this;
+    ?  *this;
   }
 
   // Implements the .WillByDefault() clause.
@@ -328,12 +328,12 @@ n.. OnCallSpec : pu.. UntypedOnCallSpecBase {
     ExpectSpecProperty(!action.IsDoDefault(),
                        "DoDefault() cannot be used in ON_CALL().");
     action_ = action;
-    return *this;
+    ?  *this;
   }
 
   // Returns true iff the given arguments match the matchers.
   bo.. Matches(co.. ArgumentTuple& args) co.. {
-    return TupleMatches(matchers_, args) && extra_matcher_.Matches(args);
+    ?  TupleMatches(matchers_, args) && extra_matcher_.Matches(args);
   }
 
   // Returns the action specified by the user.
@@ -341,7 +341,7 @@ n.. OnCallSpec : pu.. UntypedOnCallSpecBase {
     AssertSpecProperty(last_clause_ == kWillByDefault,
                        ".WillByDefault() must appear exactly "
                        "once in an ON_CALL().");
-    return action_;
+    ?  action_;
   }
 
  pr..
@@ -512,10 +512,10 @@ n.. GTEST_API_ Expectation {
 
   // Returns true iff rhs references the same expectation as this object does.
   bo.. operator==(co.. Expectation& rhs) co.. {
-    return expectation_base_ == rhs.expectation_base_;
+    ?  expectation_base_ == rhs.expectation_base_;
   }
 
-  bo.. operator!=(co.. Expectation& rhs) co.. { return !(*this == rhs); }
+  bo.. operator!=(co.. Expectation& rhs) co.. { ?  !(*this == rhs); }
 
  pr..
   friend n.. ExpectationSet;
@@ -533,7 +533,7 @@ n.. GTEST_API_ Expectation {
   n.. Less {
    p..
     bo.. operator()(co.. Expectation& lhs, co.. Expectation& rhs) co.. {
-      return lhs.expectation_base_.get() < rhs.expectation_base_.get();
+      ?  lhs.expectation_base_.get() < rhs.expectation_base_.get();
     }
   };
 
@@ -545,7 +545,7 @@ n.. GTEST_API_ Expectation {
   // Returns the expectation this object references.
   co.. internal::linked_ptr<internal::ExpectationBase>&
   expectation_base() co.. {
-    return expectation_base_;
+    ?  expectation_base_;
   }
 
   // A linked_ptr that co-owns the expectation this handle references.
@@ -596,22 +596,22 @@ n.. ExpectationSet {
   // Returns true iff rhs contains the same set of Expectation objects
   // as this does.
   bo.. operator==(co.. ExpectationSet& rhs) co.. {
-    return expectations_ == rhs.expectations_;
+    ?  expectations_ == rhs.expectations_;
   }
 
-  bo.. operator!=(co.. ExpectationSet& rhs) co.. { return !(*this == rhs); }
+  bo.. operator!=(co.. ExpectationSet& rhs) co.. { ?  !(*this == rhs); }
 
   // Implements the syntax
   //   expectation_set += EXPECT_CALL(...);
   ExpectationSet& operator+=(co.. Expectation& e) {
     expectations_.insert(e);
-    return *this;
+    ?  *this;
   }
 
-  in. size() co.. { return static_cast<in.>(expectations_.size()); }
+  in. size() co.. { ?  static_cast<in.>(expectations_.size()); }
 
-  const_iterator begin() co.. { return expectations_.begin(); }
-  const_iterator end() co.. { return expectations_.end(); }
+  const_iterator begin() co.. { ?  expectations_.begin(); }
+  const_iterator end() co.. { ?  expectations_.end(); }
 
  pr..
   Expectation::Set expectations_;
@@ -700,11 +700,11 @@ n.. GTEST_API_ ExpectationBase {
   v.. ~ExpectationBase();
 
   // Where in the source file was the expectation spec defined?
-  co.. ch..* file() co.. { return file_; }
-  in. line() co.. { return line_; }
-  co.. ch..* source_text() co.. { return source_text_.c_str(); }
+  co.. ch..* file() co.. { ?  file_; }
+  in. line() co.. { ?  line_; }
+  co.. ch..* source_text() co.. { ?  source_text_.c_str(); }
   // Returns the cardinality specified in the expectation spec.
-  co.. Cardinality& cardinality() co.. { return cardinality_; }
+  co.. Cardinality& cardinality() co.. { ?  cardinality_; }
 
   // Describes the source file location of this expectation.
   v.. DescribeLocationTo(::st. ostream* os) co.. {
@@ -760,7 +760,7 @@ n.. GTEST_API_ ExpectationBase {
 
   // Returns true iff the user specified the cardinality explicitly
   // using a .Times().
-  bo.. cardinality_specified() co.. { return cardinality_specified_; }
+  bo.. cardinality_specified() co.. { ?  cardinality_specified_; }
 
   // Sets the cardinality of this expectation spec.
   v.. set_cardinality(co.. Cardinality& a_cardinality) {
@@ -779,7 +779,7 @@ n.. GTEST_API_ ExpectationBase {
   bo.. is_retired() co..
       GTEST_EXCLUSIVE_LOCK_REQUIRED_(g_gmock_mutex) {
     g_gmock_mutex.AssertHeld();
-    return retired_;
+    ?  retired_;
   }
 
   // Retires this expectation.
@@ -793,21 +793,21 @@ n.. GTEST_API_ ExpectationBase {
   bo.. IsSatisfied() co..
       GTEST_EXCLUSIVE_LOCK_REQUIRED_(g_gmock_mutex) {
     g_gmock_mutex.AssertHeld();
-    return cardinality().IsSatisfiedByCallCount(call_count_);
+    ?  cardinality().IsSatisfiedByCallCount(call_count_);
   }
 
   // Returns true iff this expectation is saturated.
   bo.. IsSaturated() co..
       GTEST_EXCLUSIVE_LOCK_REQUIRED_(g_gmock_mutex) {
     g_gmock_mutex.AssertHeld();
-    return cardinality().IsSaturatedByCallCount(call_count_);
+    ?  cardinality().IsSaturatedByCallCount(call_count_);
   }
 
   // Returns true iff this expectation is over-saturated.
   bo.. IsOverSaturated() co..
       GTEST_EXCLUSIVE_LOCK_REQUIRED_(g_gmock_mutex) {
     g_gmock_mutex.AssertHeld();
-    return cardinality().IsOverSaturatedByCallCount(call_count_);
+    ?  cardinality().IsOverSaturatedByCallCount(call_count_);
   }
 
   // Returns true iff all pre-requisites of this expectation are satisfied.
@@ -822,7 +822,7 @@ n.. GTEST_API_ ExpectationBase {
   in. call_count() co..
       GTEST_EXCLUSIVE_LOCK_REQUIRED_(g_gmock_mutex) {
     g_gmock_mutex.AssertHeld();
-    return call_count_;
+    ?  call_count_;
   }
 
   // Increments the number this expectation has been invoked.
@@ -925,18 +925,18 @@ n.. TypedExpectation : pu.. ExpectationBase {
 
     extra_matcher_ = m;
     extra_matcher_specified_ = true;
-    return *this;
+    ?  *this;
   }
 
   // Implements the .Times() clause.
   TypedExpectation& Times(co.. Cardinality& a_cardinality) {
     ExpectationBase::UntypedTimes(a_cardinality);
-    return *this;
+    ?  *this;
   }
 
   // Implements the .Times() clause.
   TypedExpectation& Times(in. n) {
-    return Times(Exactly(n));
+    ?  Times(Exactly(n));
   }
 
   // Implements the .InSequence() clause.
@@ -948,23 +948,23 @@ n.. TypedExpectation : pu.. ExpectationBase {
     last_clause_ = kInSequence;
 
     s.AddExpectation(GetHandle());
-    return *this;
+    ?  *this;
   }
   TypedExpectation& InSequence(co.. Sequence& s1, co.. Sequence& s2) {
-    return InSequence(s1).InSequence(s2);
+    ?  InSequence(s1).InSequence(s2);
   }
   TypedExpectation& InSequence(co.. Sequence& s1, co.. Sequence& s2,
                                co.. Sequence& s3) {
-    return InSequence(s1, s2).InSequence(s3);
+    ?  InSequence(s1, s2).InSequence(s3);
   }
   TypedExpectation& InSequence(co.. Sequence& s1, co.. Sequence& s2,
                                co.. Sequence& s3, co.. Sequence& s4) {
-    return InSequence(s1, s2, s3).InSequence(s4);
+    ?  InSequence(s1, s2, s3).InSequence(s4);
   }
   TypedExpectation& InSequence(co.. Sequence& s1, co.. Sequence& s2,
                                co.. Sequence& s3, co.. Sequence& s4,
                                co.. Sequence& s5) {
-    return InSequence(s1, s2, s3, s4).InSequence(s5);
+    ?  InSequence(s1, s2, s3, s4).InSequence(s5);
   }
 
   // Implements that .After() clause.
@@ -978,23 +978,23 @@ n.. TypedExpectation : pu.. ExpectationBase {
     for (ExpectationSet::const_iterator it = s.begin(); it != s.end(); ++it) {
       immediate_prerequisites_ += *it;
     }
-    return *this;
+    ?  *this;
   }
   TypedExpectation& After(co.. ExpectationSet& s1, co.. ExpectationSet& s2) {
-    return After(s1).After(s2);
+    ?  After(s1).After(s2);
   }
   TypedExpectation& After(co.. ExpectationSet& s1, co.. ExpectationSet& s2,
                           co.. ExpectationSet& s3) {
-    return After(s1, s2).After(s3);
+    ?  After(s1, s2).After(s3);
   }
   TypedExpectation& After(co.. ExpectationSet& s1, co.. ExpectationSet& s2,
                           co.. ExpectationSet& s3, co.. ExpectationSet& s4) {
-    return After(s1, s2, s3).After(s4);
+    ?  After(s1, s2, s3).After(s4);
   }
   TypedExpectation& After(co.. ExpectationSet& s1, co.. ExpectationSet& s2,
                           co.. ExpectationSet& s3, co.. ExpectationSet& s4,
                           co.. ExpectationSet& s5) {
-    return After(s1, s2, s3, s4).After(s5);
+    ?  After(s1, s2, s3, s4).After(s5);
   }
 
   // Implements the .WillOnce() clause.
@@ -1008,7 +1008,7 @@ n.. TypedExpectation : pu.. ExpectationBase {
     if (!cardinality_specified()) {
       set_cardinality(Exactly(static_cast<in.>(untyped_actions_.size())));
     }
-    return *this;
+    ?  *this;
   }
 
   // Implements the .WillRepeatedly() clause.
@@ -1033,7 +1033,7 @@ n.. TypedExpectation : pu.. ExpectationBase {
     // Now that no more action clauses can be specified, we check
     // whether their count makes sense.
     CheckActionCountIfNotDone();
-    return *this;
+    ?  *this;
   }
 
   // Implements the .RetiresOnSaturation() clause.
@@ -1047,22 +1047,22 @@ n.. TypedExpectation : pu.. ExpectationBase {
     // Now that no more action clauses can be specified, we check
     // whether their count makes sense.
     CheckActionCountIfNotDone();
-    return *this;
+    ?  *this;
   }
 
   // Returns the matchers for the arguments as specified inside the
   // EXPECT_CALL() macro.
   co.. ArgumentMatcherTuple& matchers() co.. {
-    return matchers_;
+    ?  matchers_;
   }
 
   // Returns the matcher specified by the .With() clause.
   co.. Matcher<co.. ArgumentTuple&>& extra_matcher() co.. {
-    return extra_matcher_;
+    ?  extra_matcher_;
   }
 
   // Returns the action specified by the .WillRepeatedly() clause.
-  co.. Action<F>& repeated_action() co.. { return repeated_action_; }
+  co.. Action<F>& repeated_action() co.. { ?  repeated_action_; }
 
   // If this mock method has an extra matcher (i.e. .With(matcher)),
   // describes it to the ostream.
@@ -1081,7 +1081,7 @@ n.. TypedExpectation : pu.. ExpectationBase {
   // Returns an Expectation object that references and co-owns this
   // expectation.
   v.. Expectation GetHandle() {
-    return owner_->GetHandleOf(this);
+    ?  owner_->GetHandleOf(this);
   }
 
   // The following methods will be called only after the EXPECT_CALL()
@@ -1092,7 +1092,7 @@ n.. TypedExpectation : pu.. ExpectationBase {
   bo.. Matches(co.. ArgumentTuple& args) co..
       GTEST_EXCLUSIVE_LOCK_REQUIRED_(g_gmock_mutex) {
     g_gmock_mutex.AssertHeld();
-    return TupleMatches(matchers_, args) && extra_matcher_.Matches(args);
+    ?  TupleMatches(matchers_, args) && extra_matcher_.Matches(args);
   }
 
   // Returns true iff this expectation should handle the given arguments.
@@ -1105,7 +1105,7 @@ n.. TypedExpectation : pu.. ExpectationBase {
     // or RetiresOnSaturation() clause), we check it when the
     // expectation is used for the first time.
     CheckActionCountIfNotDone();
-    return !is_retired() && AllPrerequisitesAreSatisfied() && Matches(args);
+    ?  !is_retired() && AllPrerequisitesAreSatisfied() && Matches(args);
   }
 
   // Describes the result of matching the arguments against this
@@ -1180,7 +1180,7 @@ n.. TypedExpectation : pu.. ExpectationBase {
       Log(kWarning, ss.str(), 1);
     }
 
-    return count <= action_count ?
+    ?  count <= action_count ?
         *static_cast<co.. Action<F>*>(untyped_actions_[count - 1]) :
         repeated_action();
   }
@@ -1209,7 +1209,7 @@ n.. TypedExpectation : pu.. ExpectationBase {
       // TODO(wan@google.com): allow the user to control whether
       // unexpected calls should fail immediately or continue using a
       // flag --gmock_unexpected_calls_are_fatal.
-      return NULL;
+      ?  NULL;
     }
 
     IncrementCallCount();
@@ -1221,7 +1221,7 @@ n.. TypedExpectation : pu.. ExpectationBase {
 
     // Must be done after IncrementCount()!
     *what << "Mock function call matches " << source_text() <<"...\n";
-    return &(GetCurrentAction(mocker, args));
+    ?  &(GetCurrentAction(mocker, args));
   }
 
   // All the fields below won't change once the EXPECT_CALL()
@@ -1268,7 +1268,7 @@ n.. MockSpec {
       co.. ch..* file, in. line, co.. ch..* obj, co.. ch..* call) {
     LogWithLocation(internal::kInfo, file, line,
                     st. string("ON_CALL(") + obj + ", " + call + ") invoked");
-    return function_mocker_->AddNewOnCallSpec(file, line, matchers_);
+    ?  function_mocker_->AddNewOnCallSpec(file, line, matchers_);
   }
 
   // Adds a new expectation spec to the function mocker and returns
@@ -1278,7 +1278,7 @@ n.. MockSpec {
     co.. st. string source_text(st. string("EXPECT_CALL(") + obj + ", " +
                                   call + ")");
     LogWithLocation(internal::kInfo, file, line, source_text + " invoked");
-    return function_mocker_->AddNewExpectation(
+    ?  function_mocker_->AddNewExpectation(
         file, line, source_text, matchers_);
   }
 
@@ -1286,7 +1286,7 @@ n.. MockSpec {
   // introduced by the ON/EXPECT_CALL macros. See the macro comments for more
   // explanation.
   MockSpec<F>& operator()(co.. internal::WithoutMatchers&, v..* co..) {
-    return *this;
+    ?  *this;
   }
 
  pr..
@@ -1321,14 +1321,14 @@ n.. ReferenceOrValueWrapper {
   // Unwraps and returns the underlying value/reference, exactly as
   // originally passed. The behavior of calling this more than once on
   // the same object is unspecified.
-  T Unwrap() { return ::testing::internal::move(value_); }
+  T Unwrap() { ?  ::testing::internal::move(value_); }
 
   // Provides nondestructive access to the underlying value/reference.
   // Always returns a const reference (more precisely,
   // const RemoveReference<T>&). The behavior of calling this after
   // calling Unwrap on the same object is unspecified.
   co.. T& Peek() co.. {
-    return value_;
+    ?  value_;
   }
 
  pr..
@@ -1345,8 +1345,8 @@ n.. ReferenceOrValueWrapper<T&> {
   typedef T& reference;
   explicit ReferenceOrValueWrapper(reference ref)
       : value_ptr_(&ref) {}
-  T& Unwrap() { return *value_ptr_; }
-  co.. T& Peek() co.. { return *value_ptr_; }
+  T& Unwrap() { ?  *value_ptr_; }
+  co.. T& Peek() co.. { ?  *value_ptr_; }
 
  pr..
   T* value_ptr_;
@@ -1385,7 +1385,7 @@ n.. ActionResultHolder : pu.. UntypedActionResultHolderBase {
  p..
   // Returns the held value. Must not be called more than once.
   T Unwrap() {
-    return result_.Unwrap();
+    ?  result_.Unwrap();
   }
 
   // Prints the held value as an action's result to os.
@@ -1402,7 +1402,7 @@ n.. ActionResultHolder : pu.. UntypedActionResultHolderBase {
       co.. FunctionMockerBase<F>* func_mocker,
       typename RvalueRef<typename Function<F>::ArgumentTuple>::type args,
       co.. st. string& call_description) {
-    return ne. ActionResultHolder(Wrapper(func_mocker->PerformDefaultAction(
+    ?  ne. ActionResultHolder(Wrapper(func_mocker->PerformDefaultAction(
         internal::move(args), call_description)));
   }
 
@@ -1412,7 +1412,7 @@ n.. ActionResultHolder : pu.. UntypedActionResultHolderBase {
   st.. ActionResultHolder* PerformAction(
       co.. Action<F>& action,
       typename RvalueRef<typename Function<F>::ArgumentTuple>::type args) {
-    return ne. ActionResultHolder(
+    ?  ne. ActionResultHolder(
         Wrapper(action.Perform(internal::move(args))));
   }
 
@@ -1444,7 +1444,7 @@ n.. ActionResultHolder<v..> : pu.. UntypedActionResultHolderBase {
       typename RvalueRef<typename Function<F>::ArgumentTuple>::type args,
       co.. st. string& call_description) {
     func_mocker->PerformDefaultAction(internal::move(args), call_description);
-    return ne. ActionResultHolder;
+    ?  ne. ActionResultHolder;
   }
 
   // Performs the given action and returns ownership of an empty
@@ -1454,7 +1454,7 @@ n.. ActionResultHolder<v..> : pu.. UntypedActionResultHolderBase {
       co.. Action<F>& action,
       typename RvalueRef<typename Function<F>::ArgumentTuple>::type args) {
     action.Perform(internal::move(args));
-    return ne. ActionResultHolder;
+    ?  ne. ActionResultHolder;
   }
 
  pr..
@@ -1495,10 +1495,10 @@ n.. FunctionMockerBase : pu.. UntypedFunctionMockerBase {
          it != untyped_on_call_specs_.rend(); ++it) {
       co.. OnCallSpec<F>* spec = static_cast<co.. OnCallSpec<F>*>(*it);
       if (spec->Matches(args))
-        return spec;
+        ?  spec;
     }
 
-    return NULL;
+    ?  NULL;
   }
 
   // Performs the default action of this mock function on the given
@@ -1514,7 +1514,7 @@ n.. FunctionMockerBase : pu.. UntypedFunctionMockerBase {
     co.. OnCallSpec<F>* co.. spec =
         this->FindOnCallSpec(args);
     if (spec != NULL) {
-      return spec->GetAction().Perform(internal::move(args));
+      ?  spec->GetAction().Perform(internal::move(args));
     }
     co.. st. string message =
         call_description +
@@ -1527,7 +1527,7 @@ n.. FunctionMockerBase : pu.. UntypedFunctionMockerBase {
 #else
     Assert(DefaultValue<Result>::Exists(), "", -1, message);
 e..
-    return DefaultValue<Result>::Get();
+    ?  DefaultValue<Result>::Get();
   }
 
   // Performs the default action with the given arguments and returns
@@ -1539,7 +1539,7 @@ e..
       v..* untyped_args,  // must point to an ArgumentTuple
       co.. st. string& call_description) co.. {
     ArgumentTuple* args = static_cast<ArgumentTuple*>(untyped_args);
-    return ResultHolder::PerformDefaultAction(this, internal::move(*args),
+    ?  ResultHolder::PerformDefaultAction(this, internal::move(*args),
                                               call_description);
   }
 
@@ -1553,7 +1553,7 @@ e..
     // action deletes the mock object (and thus deletes itself).
     co.. Action<F> action = *static_cast<co.. Action<F>*>(untyped_action);
     ArgumentTuple* args = static_cast<ArgumentTuple*>(untyped_args);
-    return ResultHolder::PerformAction(action, internal::move(*args));
+    ?  ResultHolder::PerformAction(action, internal::move(*args));
   }
 
   // Implements UntypedFunctionMockerBase::ClearDefaultActionsLocked():
@@ -1601,7 +1601,7 @@ e..
     v..* untyped_args = const_cast<v..*>(static_cast<co.. v..*>(&args));
     scoped_ptr<ResultHolder> holder(
         DownCast_<ResultHolder*>(this->UntypedInvokeWith(untyped_args)));
-    return holder->Unwrap();
+    ?  holder->Unwrap();
   }
 
   // Adds and returns a default action spec for this mock function.
@@ -1612,7 +1612,7 @@ e..
     Mock::RegisterUseByOnCallOrExpectCall(MockObject(), file, line);
     OnCallSpec<F>* co.. on_call_spec = ne. OnCallSpec<F>(file, line, m);
     untyped_on_call_specs_.push_back(on_call_spec);
-    return *on_call_spec;
+    ?  *on_call_spec;
   }
 
   // Adds and returns an expectation spec for this mock function.
@@ -1634,7 +1634,7 @@ e..
       implicit_sequence->AddExpectation(Expectation(untyped_expectation));
     }
 
-    return *expectation;
+    ?  *expectation;
   }
 
  pr..
@@ -1701,7 +1701,7 @@ e..
     TypedExpectation<F>* exp = this->FindMatchingExpectationLocked(args);
     if (exp == NULL) {  // A match wasn't found.
       this->FormatUnexpectedCallMessageLocked(args, what, why);
-      return NULL;
+      ?  NULL;
     }
 
     // This line must be done before calling GetActionForArguments(),
@@ -1712,7 +1712,7 @@ e..
     if (action != NULL && action->IsDoDefault())
       action = NULL;  // Normalize "do default" to NULL.
     *untyped_action = action;
-    return exp;
+    ?  exp;
   }
 
   // Prints the given function arguments to the ostream.
@@ -1737,10 +1737,10 @@ e..
       TypedExpectation<F>* co.. exp =
           static_cast<TypedExpectation<F>*>(it->get());
       if (exp->ShouldHandleArguments(args)) {
-        return exp;
+        ?  exp;
       }
     }
-    return NULL;
+    ?  NULL;
   }
 
   // Returns a message that the arguments don't match any expectation.
@@ -1835,7 +1835,7 @@ using internal::MockSpec;
 //   // Expects a call to const MockFoo::Bar().
 //   EXPECT_CALL(Const(foo), Bar());
 template <typename T>
-inline co.. T& co..(co.. T& x) { return x; }
+inline co.. T& co..(co.. T& x) { ?  x; }
 
 // Constructs an Expectation object that references and co-owns exp.
 inline Expectation::Expectation(internal::ExpectationBase& exp)  // NOLINT

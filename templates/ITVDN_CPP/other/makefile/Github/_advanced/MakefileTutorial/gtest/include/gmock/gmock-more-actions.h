@@ -58,7 +58,7 @@ n.. InvokeAction {
 
   template <typename Result, typename ArgumentTuple>
   Result Perform(co.. ArgumentTuple& args) {
-    return InvokeHelper<Result, ArgumentTuple>::Invoke(function_impl_, args);
+    ?  InvokeHelper<Result, ArgumentTuple>::Invoke(function_impl_, args);
   }
 
  pr..
@@ -76,7 +76,7 @@ n.. InvokeMethodAction {
 
   template <typename Result, typename ArgumentTuple>
   Result Perform(co.. ArgumentTuple& args) co.. {
-    return InvokeHelper<Result, ArgumentTuple>::InvokeMethod(
+    ?  InvokeHelper<Result, ArgumentTuple>::InvokeMethod(
         obj_ptr_, method_ptr_, args);
   }
 
@@ -101,7 +101,7 @@ inline OutputIterator CopyElements(InputIterator first,
   for (; first != last; ++first, ++output) {
     *output = *first;
   }
-  return output;
+  ?  output;
 }
 
 }  // namespace internal
@@ -113,7 +113,7 @@ inline OutputIterator CopyElements(InputIterator first,
 template <typename FunctionImpl>
 PolymorphicAction<internal::InvokeAction<FunctionImpl> > Invoke(
     FunctionImpl function_impl) {
-  return MakePolymorphicAction(
+  ?  MakePolymorphicAction(
       internal::InvokeAction<FunctionImpl>(function_impl));
 }
 
@@ -122,7 +122,7 @@ PolymorphicAction<internal::InvokeAction<FunctionImpl> > Invoke(
 template <n.. n.., typename MethodPtr>
 PolymorphicAction<internal::InvokeMethodAction<n.., MethodPtr> > Invoke(
     n..* obj_ptr, MethodPtr method_ptr) {
-  return MakePolymorphicAction(
+  ?  MakePolymorphicAction(
       internal::InvokeMethodAction<n.., MethodPtr>(obj_ptr, method_ptr));
 }
 
@@ -133,7 +133,7 @@ PolymorphicAction<internal::InvokeMethodAction<n.., MethodPtr> > Invoke(
 template <typename InnerAction>
 inline internal::WithArgsAction<InnerAction>
 WithoutArgs(co.. InnerAction& action) {
-  return internal::WithArgsAction<InnerAction>(action);
+  ?  internal::WithArgsAction<InnerAction>(action);
 }
 
 // WithArg<k>(an_action) creates an action that passes the k-th
@@ -144,7 +144,7 @@ WithoutArgs(co.. InnerAction& action) {
 template <in. k, typename InnerAction>
 inline internal::WithArgsAction<InnerAction, k>
 WithArg(co.. InnerAction& action) {
-  return internal::WithArgsAction<InnerAction, k>(action);
+  ?  internal::WithArgsAction<InnerAction, k>(action);
 }
 
 // The ACTION*() macros trigger warning C4100 (unreferenced formal
@@ -161,7 +161,7 @@ e..
 ACTION_TEMPLATE(ReturnArg,
                 HAS_1_TEMPLATE_PARAMS(in., k),
                 AND_0_VALUE_PARAMS()) {
-  return ::testing::get<k>(args);
+  ?  ::testing::get<k>(args);
 }
 
 // Action SaveArg<k>(pointer) saves the k-th (0-based) argument of the
@@ -219,7 +219,7 @@ ACTION_TEMPLATE(DeleteArg,
 }
 
 // This action returns the value pointed to by 'pointer'.
-ACTION_P(ReturnPointee, pointer) { return *pointer; }
+ACTION_P(ReturnPointee, pointer) { ?  *pointer; }
 
 // Action Throw(exception) can be used in a mock function of any type
 // to throw the given exception.  Any copyable value can be thrown.

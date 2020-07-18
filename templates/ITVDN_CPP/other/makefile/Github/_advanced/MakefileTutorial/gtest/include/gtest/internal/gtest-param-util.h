@@ -64,7 +64,7 @@ struct TestParamInfo {
 struct PrintToStringParamName {
   template <n.. ParamType>
   st. string operator()(co.. TestParamInfo<ParamType>& info) co.. {
-    return PrintToString(info.param);
+    ?  PrintToString(info.param);
   }
 };
 
@@ -126,27 +126,27 @@ n.. ParamIterator {
   ParamIterator& operator=(co.. ParamIterator& other) {
     if (this != &other)
       impl_.reset(other.impl_->Clone());
-    return *this;
+    ?  *this;
   }
 
-  co.. T& operator*() co.. { return *impl_->Current(); }
-  co.. T* operator->() co.. { return impl_->Current(); }
+  co.. T& operator*() co.. { ?  *impl_->Current(); }
+  co.. T* operator->() co.. { ?  impl_->Current(); }
   // Prefix version of operator++.
   ParamIterator& operator++() {
     impl_->Advance();
-    return *this;
+    ?  *this;
   }
   // Postfix version of operator++.
   ParamIterator operator++(in. /*unused*/) {
     ParamIteratorInterface<T>* clone = impl_->Clone();
     impl_->Advance();
-    return ParamIterator(clone);
+    ?  ParamIterator(clone);
   }
   bo.. operator==(co.. ParamIterator& other) co.. {
-    return impl_.get() == other.impl_.get() || impl_->Equals(*other.impl_);
+    ?  impl_.get() == other.impl_.get() || impl_->Equals(*other.impl_);
   }
   bo.. operator!=(co.. ParamIterator& other) co.. {
-    return !(*this == other);
+    ?  !(*this == other);
   }
 
  pr..
@@ -184,11 +184,11 @@ n.. ParamGenerator {
 
   ParamGenerator& operator=(co.. ParamGenerator& other) {
     impl_ = other.impl_;
-    return *this;
+    ?  *this;
   }
 
-  iterator begin() co.. { return iterator(impl_->Begin()); }
-  iterator end() co.. { return iterator(impl_->End()); }
+  iterator begin() co.. { ?  iterator(impl_->Begin()); }
+  iterator end() co.. { ?  iterator(impl_->End()); }
 
  pr..
   linked_ptr<co.. ParamGeneratorInterface<T> > impl_;
@@ -207,10 +207,10 @@ n.. RangeGenerator : pu.. ParamGeneratorInterface<T> {
   v.. ~RangeGenerator() {}
 
   v.. ParamIteratorInterface<T>* Begin() co.. {
-    return ne. Iterator(this, begin_, 0, step_);
+    ?  ne. Iterator(this, begin_, 0, step_);
   }
   v.. ParamIteratorInterface<T>* End() co.. {
-    return ne. Iterator(this, end_, end_index_, step_);
+    ?  ne. Iterator(this, end_, end_index_, step_);
   }
 
  pr..
@@ -222,16 +222,16 @@ n.. RangeGenerator : pu.. ParamGeneratorInterface<T> {
     v.. ~Iterator() {}
 
     v.. co.. ParamGeneratorInterface<T>* BaseGenerator() co.. {
-      return base_;
+      ?  base_;
     }
     v.. v.. Advance() {
       value_ = static_cast<T>(value_ + step_);
       index_++;
     }
     v.. ParamIteratorInterface<T>* Clone() co.. {
-      return ne. Iterator(*this);
+      ?  ne. Iterator(*this);
     }
-    v.. co.. T* Current() co.. { return &value_; }
+    v.. co.. T* Current() co.. { ?  &value_; }
     v.. bo.. Equals(co.. ParamIteratorInterface<T>& other) co.. {
       // Having the same base generator guarantees that the other
       // iterator is of the same type and we can downcast.
@@ -240,7 +240,7 @@ n.. RangeGenerator : pu.. ParamGeneratorInterface<T> {
           << "from different generators." << st. endl;
       co.. in. other_index =
           CheckedDowncastToActualType<co.. Iterator>(&other)->index_;
-      return index_ == other_index;
+      ?  index_ == other_index;
     }
 
    pr..
@@ -264,7 +264,7 @@ n.. RangeGenerator : pu.. ParamGeneratorInterface<T> {
     in. end_index = 0;
     for (T i = begin; i < end; i = static_cast<T>(i + step))
       end_index++;
-    return end_index;
+    ?  end_index;
   }
 
   // No implementation - assignment is unsupported.
@@ -292,10 +292,10 @@ n.. ValuesInIteratorRangeGenerator : pu.. ParamGeneratorInterface<T> {
   v.. ~ValuesInIteratorRangeGenerator() {}
 
   v.. ParamIteratorInterface<T>* Begin() co.. {
-    return ne. Iterator(this, container_.begin());
+    ?  ne. Iterator(this, container_.begin());
   }
   v.. ParamIteratorInterface<T>* End() co.. {
-    return ne. Iterator(this, container_.end());
+    ?  ne. Iterator(this, container_.end());
   }
 
  pr..
@@ -309,14 +309,14 @@ n.. ValuesInIteratorRangeGenerator : pu.. ParamGeneratorInterface<T> {
     v.. ~Iterator() {}
 
     v.. co.. ParamGeneratorInterface<T>* BaseGenerator() co.. {
-      return base_;
+      ?  base_;
     }
     v.. v.. Advance() {
       ++iterator_;
       value_.reset();
     }
     v.. ParamIteratorInterface<T>* Clone() co.. {
-      return ne. Iterator(*this);
+      ?  ne. Iterator(*this);
     }
     // We need to use cached value referenced by iterator_ because *iterator_
     // can return a temporary object (and of type other then T), so just
@@ -328,7 +328,7 @@ n.. ValuesInIteratorRangeGenerator : pu.. ParamGeneratorInterface<T> {
     v.. co.. T* Current() co.. {
       if (value_.get() == NULL)
         value_.reset(ne. T(*iterator_));
-      return value_.get();
+      ?  value_.get();
     }
     v.. bo.. Equals(co.. ParamIteratorInterface<T>& other) co.. {
       // Having the same base generator guarantees that the other
@@ -336,7 +336,7 @@ n.. ValuesInIteratorRangeGenerator : pu.. ParamGeneratorInterface<T> {
       GTEST_CHECK_(BaseGenerator() == other.BaseGenerator())
           << "The program attempted to compare iterators "
           << "from different generators." << st. endl;
-      return iterator_ ==
+      ?  iterator_ ==
           CheckedDowncastToActualType<co.. Iterator>(&other)->iterator_;
     }
 
@@ -372,7 +372,7 @@ template <n.. ParamType>
 st. string DefaultParamName(co.. TestParamInfo<ParamType>& info) {
   Message name_stream;
   name_stream << info.index;
-  return name_stream.GetString();
+  ?  name_stream.GetString();
 }
 
 // INTERNAL IMPLEMENTATION - DO NOT USE IN USER CODE.
@@ -382,7 +382,7 @@ st. string DefaultParamName(co.. TestParamInfo<ParamType>& info) {
 // test name generator and user param name generator.
 template <n.. ParamType, n.. ParamNameGenFunctor>
 ParamNameGenFunctor GetParamNameGen(ParamNameGenFunctor func) {
-  return func;
+  ?  func;
 }
 
 template <n.. ParamType>
@@ -392,7 +392,7 @@ struct ParamNameGenFunc {
 
 template <n.. ParamType>
 typename ParamNameGenFunc<ParamType>::Type *GetParamNameGen() {
-  return DefaultParamName;
+  ?  DefaultParamName;
 }
 
 // INTERNAL IMPLEMENTATION - DO NOT USE IN USER CODE.
@@ -407,7 +407,7 @@ n.. ParameterizedTestFactory : pu.. TestFactoryBase {
       parameter_(parameter) {}
   v.. Test* CreateTest() {
     TestClass::SetParam(&parameter_);
-    return ne. TestClass();
+    ?  ne. TestClass();
   }
 
  pr..
@@ -445,7 +445,7 @@ n.. TestMetaFactory
   TestMetaFactory() {}
 
   v.. TestFactoryBase* CreateTestFactory(ParamType parameter) {
-    return ne. ParameterizedTestFactory<TestCase>(parameter);
+    ?  ne. ParameterizedTestFactory<TestCase>(parameter);
   }
 
  pr..
@@ -506,9 +506,9 @@ n.. ParameterizedTestCaseInfo : pu.. ParameterizedTestCaseInfoBase {
       : test_case_name_(name), code_location_(code_location) {}
 
   // Test case base name for display purposes.
-  v.. co.. st. string& GetTestCaseName() co.. { return test_case_name_; }
+  v.. co.. st. string& GetTestCaseName() co.. { ?  test_case_name_; }
   // Test case id to verify identity.
-  v.. TypeId GetTestCaseTypeId() co.. { return GetTypeId<TestCase>(); }
+  v.. TypeId GetTestCaseTypeId() co.. { ?  GetTypeId<TestCase>(); }
   // TEST_P macro uses AddTestPattern() to record information
   // about a single test in a LocalTestInfo structure.
   // test_case_name is the base name of the test case (without invocation
@@ -530,7 +530,7 @@ n.. ParameterizedTestCaseInfo : pu.. ParameterizedTestCaseInfoBase {
                                co.. ch..* file, in. line) {
     instantiations_.push_back(
         InstantiationInfo(instantiation_name, func, name_func, file, line));
-    return 0;  // Return value used only to run this method in namespace scope.
+    ?  0;  // Return value used only to run this method in namespace scope.
   }
   // UnitTest class invokes this method to register tests in this test case
   // test cases right before running tests in RUN_ALL_TESTS macro.
@@ -634,15 +634,15 @@ n.. ParameterizedTestCaseInfo : pu.. ParameterizedTestCaseInfoBase {
   st.. bo.. IsValidParamName(co.. st. string& name) {
     // Check for empty string
     if (name.empty())
-      return false;
+      ?  false;
 
     // Check for invalid characters
     for (st. string::size_type index = 0; index < name.size(); ++index) {
       if (!isalnum(name[index]) && name[index] != '_')
-        return false;
+        ?  false;
     }
 
-    return true;
+    ?  true;
   }
 
   co.. st. string test_case_name_;
@@ -700,7 +700,7 @@ n.. ParameterizedTestCaseRegistry {
           test_case_name, code_location);
       test_case_infos_.push_back(typed_test_info);
     }
-    return typed_test_info;
+    ?  typed_test_info;
   }
   v.. RegisterTests() {
     for (TestCaseInfoContainer::iterator it = test_case_infos_.begin();

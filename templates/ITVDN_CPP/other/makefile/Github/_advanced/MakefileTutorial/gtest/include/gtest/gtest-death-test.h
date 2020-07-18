@@ -334,7 +334,7 @@ e..  // GTEST_HAS_DEATH_TEST
 # define EXPECT_DEATH_IF_SUPPORTED(statement, regex) \
     GTEST_UNSUPPORTED_DEATH_TEST(statement, regex, )
 # define ASSERT_DEATH_IF_SUPPORTED(statement, regex) \
-    GTEST_UNSUPPORTED_DEATH_TEST(statement, regex, return)
+    GTEST_UNSUPPORTED_DEATH_TEST(statement, regex, ? )
 e..
 
 }  // namespace testing

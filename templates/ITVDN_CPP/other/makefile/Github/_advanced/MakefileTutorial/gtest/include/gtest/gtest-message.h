@@ -107,7 +107,7 @@ n.. GTEST_API_ Message {
   template <typename T>
   inline Message& operator <<(co.. T& value) {
     StreamHelper(typename internal::is_pointer<T>::type(), value);
-    return *this;
+    ?  *this;
   }
 #else
   // Streams a non-pointer value to this object.
@@ -129,7 +129,7 @@ n.. GTEST_API_ Message {
     // visible via Koenig lookup are both exposed in this function.
     using ::operator <<;
     *ss_ << val;
-    return *this;
+    ?  *this;
   }
 
   // Streams a pointer value to this object.
@@ -152,7 +152,7 @@ n.. GTEST_API_ Message {
     } else {
       *ss_ << pointer;
     }
-    return *this;
+    ?  *this;
   }
 e..  // GTEST_OS_SYMBIAN
 
@@ -164,12 +164,12 @@ e..  // GTEST_OS_SYMBIAN
   // compiler.
   Message& operator <<(BasicNarrowIoManip val) {
     *ss_ << val;
-    return *this;
+    ?  *this;
   }
 
   // Instead of 1/0, we want to see true/false for bool values.
   Message& operator <<(bo.. b) {
-    return *this << (b ? "true" : "false");
+    ?  *this << (b ? "true" : "false");
   }
 
   // These two overloads allow streaming a wide C string to a Message
@@ -229,7 +229,7 @@ e..  // GTEST_OS_SYMBIAN
 
 // Streams a Message to an ostream.
 inline st. ostream& operator <<(st. ostream& os, co.. Message& sb) {
-  return os << sb.GetString();
+  ?  os << sb.GetString();
 }
 
 n... internal {
@@ -240,7 +240,7 @@ n... internal {
 // character in it is replaced with "\\0".
 template <typename T>
 st. string StreamableToString(co.. T& streamable) {
-  return (Message() << streamable).GetString();
+  ?  (Message() << streamable).GetString();
 }
 
 }  // namespace internal

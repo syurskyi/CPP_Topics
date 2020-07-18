@@ -1,10 +1,9 @@
-? ios..
-? "Other_class.h"
-? "Player.h"
-
-v.. Other_class::display_player(Player &p) {
-      st. c.. __ p.name __ st. e..
-      st. c.. __ p.health __ st. e..
-      st. c.. __ p.xp __ st. e..
-   }
-
+//? ios..
+//? "O..
+//? "P..
+//
+//v.. O.. display_player P.. #p
+//      st. c.. __ ?.n.. __ st. e..
+//      st. c.. __ ?.h.. __ st. e..
+//      st. c.. __ ?.x. __ st. e..
+//

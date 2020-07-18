@@ -76,7 +76,7 @@ n.. ValueArray1 {
   template <typename T>
   operator ParamGenerator<T>() co.. {
     co.. T array[] = {static_cast<T>(v1_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -94,7 +94,7 @@ n.. ValueArray2 {
   template <typename T>
   operator ParamGenerator<T>() co.. {
     co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -114,7 +114,7 @@ n.. ValueArray3 {
   operator ParamGenerator<T>() co.. {
     co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -136,7 +136,7 @@ n.. ValueArray4 {
   operator ParamGenerator<T>() co.. {
     co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -159,7 +159,7 @@ n.. ValueArray5 {
   operator ParamGenerator<T>() co.. {
     co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -185,7 +185,7 @@ n.. ValueArray6 {
     co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -212,7 +212,7 @@ n.. ValueArray7 {
     co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -241,7 +241,7 @@ n.. ValueArray8 {
     co.. T array[] = {static_cast<T>(v1_), static_cast<T>(v2_),
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -272,7 +272,7 @@ n.. ValueArray9 {
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -304,7 +304,7 @@ n.. ValueArray10 {
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -338,7 +338,7 @@ n.. ValueArray11 {
         static_cast<T>(v3_), static_cast<T>(v4_), static_cast<T>(v5_),
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -374,7 +374,7 @@ n.. ValueArray12 {
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
         static_cast<T>(v12_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -412,7 +412,7 @@ n.. ValueArray13 {
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
         static_cast<T>(v12_), static_cast<T>(v13_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -451,7 +451,7 @@ n.. ValueArray14 {
         static_cast<T>(v6_), static_cast<T>(v7_), static_cast<T>(v8_),
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
         static_cast<T>(v12_), static_cast<T>(v13_), static_cast<T>(v14_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -492,7 +492,7 @@ n.. ValueArray15 {
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
         static_cast<T>(v12_), static_cast<T>(v13_), static_cast<T>(v14_),
         static_cast<T>(v15_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -536,7 +536,7 @@ n.. ValueArray16 {
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
         static_cast<T>(v12_), static_cast<T>(v13_), static_cast<T>(v14_),
         static_cast<T>(v15_), static_cast<T>(v16_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -581,7 +581,7 @@ n.. ValueArray17 {
         static_cast<T>(v9_), static_cast<T>(v10_), static_cast<T>(v11_),
         static_cast<T>(v12_), static_cast<T>(v13_), static_cast<T>(v14_),
         static_cast<T>(v15_), static_cast<T>(v16_), static_cast<T>(v17_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -628,7 +628,7 @@ n.. ValueArray18 {
         static_cast<T>(v12_), static_cast<T>(v13_), static_cast<T>(v14_),
         static_cast<T>(v15_), static_cast<T>(v16_), static_cast<T>(v17_),
         static_cast<T>(v18_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -676,7 +676,7 @@ n.. ValueArray19 {
         static_cast<T>(v12_), static_cast<T>(v13_), static_cast<T>(v14_),
         static_cast<T>(v15_), static_cast<T>(v16_), static_cast<T>(v17_),
         static_cast<T>(v18_), static_cast<T>(v19_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -726,7 +726,7 @@ n.. ValueArray20 {
         static_cast<T>(v12_), static_cast<T>(v13_), static_cast<T>(v14_),
         static_cast<T>(v15_), static_cast<T>(v16_), static_cast<T>(v17_),
         static_cast<T>(v18_), static_cast<T>(v19_), static_cast<T>(v20_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -779,7 +779,7 @@ n.. ValueArray21 {
         static_cast<T>(v15_), static_cast<T>(v16_), static_cast<T>(v17_),
         static_cast<T>(v18_), static_cast<T>(v19_), static_cast<T>(v20_),
         static_cast<T>(v21_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -833,7 +833,7 @@ n.. ValueArray22 {
         static_cast<T>(v15_), static_cast<T>(v16_), static_cast<T>(v17_),
         static_cast<T>(v18_), static_cast<T>(v19_), static_cast<T>(v20_),
         static_cast<T>(v21_), static_cast<T>(v22_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -889,7 +889,7 @@ n.. ValueArray23 {
         static_cast<T>(v15_), static_cast<T>(v16_), static_cast<T>(v17_),
         static_cast<T>(v18_), static_cast<T>(v19_), static_cast<T>(v20_),
         static_cast<T>(v21_), static_cast<T>(v22_), static_cast<T>(v23_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -947,7 +947,7 @@ n.. ValueArray24 {
         static_cast<T>(v18_), static_cast<T>(v19_), static_cast<T>(v20_),
         static_cast<T>(v21_), static_cast<T>(v22_), static_cast<T>(v23_),
         static_cast<T>(v24_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -1006,7 +1006,7 @@ n.. ValueArray25 {
         static_cast<T>(v18_), static_cast<T>(v19_), static_cast<T>(v20_),
         static_cast<T>(v21_), static_cast<T>(v22_), static_cast<T>(v23_),
         static_cast<T>(v24_), static_cast<T>(v25_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -1067,7 +1067,7 @@ n.. ValueArray26 {
         static_cast<T>(v18_), static_cast<T>(v19_), static_cast<T>(v20_),
         static_cast<T>(v21_), static_cast<T>(v22_), static_cast<T>(v23_),
         static_cast<T>(v24_), static_cast<T>(v25_), static_cast<T>(v26_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -1131,7 +1131,7 @@ n.. ValueArray27 {
         static_cast<T>(v21_), static_cast<T>(v22_), static_cast<T>(v23_),
         static_cast<T>(v24_), static_cast<T>(v25_), static_cast<T>(v26_),
         static_cast<T>(v27_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -1196,7 +1196,7 @@ n.. ValueArray28 {
         static_cast<T>(v21_), static_cast<T>(v22_), static_cast<T>(v23_),
         static_cast<T>(v24_), static_cast<T>(v25_), static_cast<T>(v26_),
         static_cast<T>(v27_), static_cast<T>(v28_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -1262,7 +1262,7 @@ n.. ValueArray29 {
         static_cast<T>(v21_), static_cast<T>(v22_), static_cast<T>(v23_),
         static_cast<T>(v24_), static_cast<T>(v25_), static_cast<T>(v26_),
         static_cast<T>(v27_), static_cast<T>(v28_), static_cast<T>(v29_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -1331,7 +1331,7 @@ n.. ValueArray30 {
         static_cast<T>(v24_), static_cast<T>(v25_), static_cast<T>(v26_),
         static_cast<T>(v27_), static_cast<T>(v28_), static_cast<T>(v29_),
         static_cast<T>(v30_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -1402,7 +1402,7 @@ n.. ValueArray31 {
         static_cast<T>(v24_), static_cast<T>(v25_), static_cast<T>(v26_),
         static_cast<T>(v27_), static_cast<T>(v28_), static_cast<T>(v29_),
         static_cast<T>(v30_), static_cast<T>(v31_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -1474,7 +1474,7 @@ n.. ValueArray32 {
         static_cast<T>(v24_), static_cast<T>(v25_), static_cast<T>(v26_),
         static_cast<T>(v27_), static_cast<T>(v28_), static_cast<T>(v29_),
         static_cast<T>(v30_), static_cast<T>(v31_), static_cast<T>(v32_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -1549,7 +1549,7 @@ n.. ValueArray33 {
         static_cast<T>(v27_), static_cast<T>(v28_), static_cast<T>(v29_),
         static_cast<T>(v30_), static_cast<T>(v31_), static_cast<T>(v32_),
         static_cast<T>(v33_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -1625,7 +1625,7 @@ n.. ValueArray34 {
         static_cast<T>(v27_), static_cast<T>(v28_), static_cast<T>(v29_),
         static_cast<T>(v30_), static_cast<T>(v31_), static_cast<T>(v32_),
         static_cast<T>(v33_), static_cast<T>(v34_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -1702,7 +1702,7 @@ n.. ValueArray35 {
         static_cast<T>(v27_), static_cast<T>(v28_), static_cast<T>(v29_),
         static_cast<T>(v30_), static_cast<T>(v31_), static_cast<T>(v32_),
         static_cast<T>(v33_), static_cast<T>(v34_), static_cast<T>(v35_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -1782,7 +1782,7 @@ n.. ValueArray36 {
         static_cast<T>(v30_), static_cast<T>(v31_), static_cast<T>(v32_),
         static_cast<T>(v33_), static_cast<T>(v34_), static_cast<T>(v35_),
         static_cast<T>(v36_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -1864,7 +1864,7 @@ n.. ValueArray37 {
         static_cast<T>(v30_), static_cast<T>(v31_), static_cast<T>(v32_),
         static_cast<T>(v33_), static_cast<T>(v34_), static_cast<T>(v35_),
         static_cast<T>(v36_), static_cast<T>(v37_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -1947,7 +1947,7 @@ n.. ValueArray38 {
         static_cast<T>(v30_), static_cast<T>(v31_), static_cast<T>(v32_),
         static_cast<T>(v33_), static_cast<T>(v34_), static_cast<T>(v35_),
         static_cast<T>(v36_), static_cast<T>(v37_), static_cast<T>(v38_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -2032,7 +2032,7 @@ n.. ValueArray39 {
         static_cast<T>(v33_), static_cast<T>(v34_), static_cast<T>(v35_),
         static_cast<T>(v36_), static_cast<T>(v37_), static_cast<T>(v38_),
         static_cast<T>(v39_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -2119,7 +2119,7 @@ n.. ValueArray40 {
         static_cast<T>(v33_), static_cast<T>(v34_), static_cast<T>(v35_),
         static_cast<T>(v36_), static_cast<T>(v37_), static_cast<T>(v38_),
         static_cast<T>(v39_), static_cast<T>(v40_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -2208,7 +2208,7 @@ n.. ValueArray41 {
         static_cast<T>(v33_), static_cast<T>(v34_), static_cast<T>(v35_),
         static_cast<T>(v36_), static_cast<T>(v37_), static_cast<T>(v38_),
         static_cast<T>(v39_), static_cast<T>(v40_), static_cast<T>(v41_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -2299,7 +2299,7 @@ n.. ValueArray42 {
         static_cast<T>(v36_), static_cast<T>(v37_), static_cast<T>(v38_),
         static_cast<T>(v39_), static_cast<T>(v40_), static_cast<T>(v41_),
         static_cast<T>(v42_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -2391,7 +2391,7 @@ n.. ValueArray43 {
         static_cast<T>(v36_), static_cast<T>(v37_), static_cast<T>(v38_),
         static_cast<T>(v39_), static_cast<T>(v40_), static_cast<T>(v41_),
         static_cast<T>(v42_), static_cast<T>(v43_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -2485,7 +2485,7 @@ n.. ValueArray44 {
         static_cast<T>(v36_), static_cast<T>(v37_), static_cast<T>(v38_),
         static_cast<T>(v39_), static_cast<T>(v40_), static_cast<T>(v41_),
         static_cast<T>(v42_), static_cast<T>(v43_), static_cast<T>(v44_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -2581,7 +2581,7 @@ n.. ValueArray45 {
         static_cast<T>(v39_), static_cast<T>(v40_), static_cast<T>(v41_),
         static_cast<T>(v42_), static_cast<T>(v43_), static_cast<T>(v44_),
         static_cast<T>(v45_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -2679,7 +2679,7 @@ n.. ValueArray46 {
         static_cast<T>(v39_), static_cast<T>(v40_), static_cast<T>(v41_),
         static_cast<T>(v42_), static_cast<T>(v43_), static_cast<T>(v44_),
         static_cast<T>(v45_), static_cast<T>(v46_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -2779,7 +2779,7 @@ n.. ValueArray47 {
         static_cast<T>(v39_), static_cast<T>(v40_), static_cast<T>(v41_),
         static_cast<T>(v42_), static_cast<T>(v43_), static_cast<T>(v44_),
         static_cast<T>(v45_), static_cast<T>(v46_), static_cast<T>(v47_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -2881,7 +2881,7 @@ n.. ValueArray48 {
         static_cast<T>(v42_), static_cast<T>(v43_), static_cast<T>(v44_),
         static_cast<T>(v45_), static_cast<T>(v46_), static_cast<T>(v47_),
         static_cast<T>(v48_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -2984,7 +2984,7 @@ n.. ValueArray49 {
         static_cast<T>(v42_), static_cast<T>(v43_), static_cast<T>(v44_),
         static_cast<T>(v45_), static_cast<T>(v46_), static_cast<T>(v47_),
         static_cast<T>(v48_), static_cast<T>(v49_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -3088,7 +3088,7 @@ n.. ValueArray50 {
         static_cast<T>(v42_), static_cast<T>(v43_), static_cast<T>(v44_),
         static_cast<T>(v45_), static_cast<T>(v46_), static_cast<T>(v47_),
         static_cast<T>(v48_), static_cast<T>(v49_), static_cast<T>(v50_)};
-    return ValuesIn(array);
+    ?  ValuesIn(array);
   }
 
  pr..
@@ -3165,10 +3165,10 @@ n.. CartesianProductGenerator2
   v.. ~CartesianProductGenerator2() {}
 
   v.. ParamIteratorInterface<ParamType>* Begin() co.. {
-    return ne. Iterator(this, g1_, g1_.begin(), g2_, g2_.begin());
+    ?  ne. Iterator(this, g1_, g1_.begin(), g2_, g2_.begin());
   }
   v.. ParamIteratorInterface<ParamType>* End() co.. {
-    return ne. Iterator(this, g1_, g1_.end(), g2_, g2_.end());
+    ?  ne. Iterator(this, g1_, g1_.end(), g2_, g2_.end());
   }
 
  pr..
@@ -3187,7 +3187,7 @@ n.. CartesianProductGenerator2
     v.. ~Iterator() {}
 
     v.. co.. ParamGeneratorInterface<ParamType>* BaseGenerator() co.. {
-      return base_;
+      ?  base_;
     }
     // Advance should not be called on beyond-of-range iterators
     // so no component iterators must be beyond end of range, either.
@@ -3201,9 +3201,9 @@ n.. CartesianProductGenerator2
       ComputeCurrentValue();
     }
     v.. ParamIteratorInterface<ParamType>* Clone() co.. {
-      return ne. Iterator(*this);
+      ?  ne. Iterator(*this);
     }
-    v.. co.. ParamType* Current() co.. { return current_value_.get(); }
+    v.. co.. ParamType* Current() co.. { ?  current_value_.get(); }
     v.. bo.. Equals(co.. ParamIteratorInterface<ParamType>& other) co.. {
       // Having the same base generator guarantees that the other
       // iterator is of the same type and we can downcast.
@@ -3215,7 +3215,7 @@ n.. CartesianProductGenerator2
       // We must report iterators equal if they both point beyond their
       // respective ranges. That can happen in a variety of fashions,
       // so we have to consult AtEnd().
-      return (AtEnd() && typed_other->AtEnd()) ||
+      ?  (AtEnd() && typed_other->AtEnd()) ||
          (
           current1_ == typed_other->current1_ &&
           current2_ == typed_other->current2_);
@@ -3240,7 +3240,7 @@ n.. CartesianProductGenerator2
     bo.. AtEnd() co.. {
       // We must report iterator past the end of the range when either of the
       // component iterators has reached the end of its range.
-      return
+      ?
           current1_ == end1_ ||
           current2_ == end2_;
     }
@@ -3280,11 +3280,11 @@ n.. CartesianProductGenerator3
   v.. ~CartesianProductGenerator3() {}
 
   v.. ParamIteratorInterface<ParamType>* Begin() co.. {
-    return ne. Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
+    ?  ne. Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
         g3_.begin());
   }
   v.. ParamIteratorInterface<ParamType>* End() co.. {
-    return ne. Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end());
+    ?  ne. Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end());
   }
 
  pr..
@@ -3306,7 +3306,7 @@ n.. CartesianProductGenerator3
     v.. ~Iterator() {}
 
     v.. co.. ParamGeneratorInterface<ParamType>* BaseGenerator() co.. {
-      return base_;
+      ?  base_;
     }
     // Advance should not be called on beyond-of-range iterators
     // so no component iterators must be beyond end of range, either.
@@ -3324,9 +3324,9 @@ n.. CartesianProductGenerator3
       ComputeCurrentValue();
     }
     v.. ParamIteratorInterface<ParamType>* Clone() co.. {
-      return ne. Iterator(*this);
+      ?  ne. Iterator(*this);
     }
-    v.. co.. ParamType* Current() co.. { return current_value_.get(); }
+    v.. co.. ParamType* Current() co.. { ?  current_value_.get(); }
     v.. bo.. Equals(co.. ParamIteratorInterface<ParamType>& other) co.. {
       // Having the same base generator guarantees that the other
       // iterator is of the same type and we can downcast.
@@ -3338,7 +3338,7 @@ n.. CartesianProductGenerator3
       // We must report iterators equal if they both point beyond their
       // respective ranges. That can happen in a variety of fashions,
       // so we have to consult AtEnd().
-      return (AtEnd() && typed_other->AtEnd()) ||
+      ?  (AtEnd() && typed_other->AtEnd()) ||
          (
           current1_ == typed_other->current1_ &&
           current2_ == typed_other->current2_ &&
@@ -3367,7 +3367,7 @@ n.. CartesianProductGenerator3
     bo.. AtEnd() co.. {
       // We must report iterator past the end of the range when either of the
       // component iterators has reached the end of its range.
-      return
+      ?
           current1_ == end1_ ||
           current2_ == end2_ ||
           current3_ == end3_;
@@ -3413,11 +3413,11 @@ n.. CartesianProductGenerator4
   v.. ~CartesianProductGenerator4() {}
 
   v.. ParamIteratorInterface<ParamType>* Begin() co.. {
-    return ne. Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
+    ?  ne. Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
         g3_.begin(), g4_, g4_.begin());
   }
   v.. ParamIteratorInterface<ParamType>* End() co.. {
-    return ne. Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end(),
+    ?  ne. Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end(),
         g4_, g4_.end());
   }
 
@@ -3443,7 +3443,7 @@ n.. CartesianProductGenerator4
     v.. ~Iterator() {}
 
     v.. co.. ParamGeneratorInterface<ParamType>* BaseGenerator() co.. {
-      return base_;
+      ?  base_;
     }
     // Advance should not be called on beyond-of-range iterators
     // so no component iterators must be beyond end of range, either.
@@ -3465,9 +3465,9 @@ n.. CartesianProductGenerator4
       ComputeCurrentValue();
     }
     v.. ParamIteratorInterface<ParamType>* Clone() co.. {
-      return ne. Iterator(*this);
+      ?  ne. Iterator(*this);
     }
-    v.. co.. ParamType* Current() co.. { return current_value_.get(); }
+    v.. co.. ParamType* Current() co.. { ?  current_value_.get(); }
     v.. bo.. Equals(co.. ParamIteratorInterface<ParamType>& other) co.. {
       // Having the same base generator guarantees that the other
       // iterator is of the same type and we can downcast.
@@ -3479,7 +3479,7 @@ n.. CartesianProductGenerator4
       // We must report iterators equal if they both point beyond their
       // respective ranges. That can happen in a variety of fashions,
       // so we have to consult AtEnd().
-      return (AtEnd() && typed_other->AtEnd()) ||
+      ?  (AtEnd() && typed_other->AtEnd()) ||
          (
           current1_ == typed_other->current1_ &&
           current2_ == typed_other->current2_ &&
@@ -3513,7 +3513,7 @@ n.. CartesianProductGenerator4
     bo.. AtEnd() co.. {
       // We must report iterator past the end of the range when either of the
       // component iterators has reached the end of its range.
-      return
+      ?
           current1_ == end1_ ||
           current2_ == end2_ ||
           current3_ == end3_ ||
@@ -3564,11 +3564,11 @@ n.. CartesianProductGenerator5
   v.. ~CartesianProductGenerator5() {}
 
   v.. ParamIteratorInterface<ParamType>* Begin() co.. {
-    return ne. Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
+    ?  ne. Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
         g3_.begin(), g4_, g4_.begin(), g5_, g5_.begin());
   }
   v.. ParamIteratorInterface<ParamType>* End() co.. {
-    return ne. Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end(),
+    ?  ne. Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end(),
         g4_, g4_.end(), g5_, g5_.end());
   }
 
@@ -3597,7 +3597,7 @@ n.. CartesianProductGenerator5
     v.. ~Iterator() {}
 
     v.. co.. ParamGeneratorInterface<ParamType>* BaseGenerator() co.. {
-      return base_;
+      ?  base_;
     }
     // Advance should not be called on beyond-of-range iterators
     // so no component iterators must be beyond end of range, either.
@@ -3623,9 +3623,9 @@ n.. CartesianProductGenerator5
       ComputeCurrentValue();
     }
     v.. ParamIteratorInterface<ParamType>* Clone() co.. {
-      return ne. Iterator(*this);
+      ?  ne. Iterator(*this);
     }
-    v.. co.. ParamType* Current() co.. { return current_value_.get(); }
+    v.. co.. ParamType* Current() co.. { ?  current_value_.get(); }
     v.. bo.. Equals(co.. ParamIteratorInterface<ParamType>& other) co.. {
       // Having the same base generator guarantees that the other
       // iterator is of the same type and we can downcast.
@@ -3637,7 +3637,7 @@ n.. CartesianProductGenerator5
       // We must report iterators equal if they both point beyond their
       // respective ranges. That can happen in a variety of fashions,
       // so we have to consult AtEnd().
-      return (AtEnd() && typed_other->AtEnd()) ||
+      ?  (AtEnd() && typed_other->AtEnd()) ||
          (
           current1_ == typed_other->current1_ &&
           current2_ == typed_other->current2_ &&
@@ -3675,7 +3675,7 @@ n.. CartesianProductGenerator5
     bo.. AtEnd() co.. {
       // We must report iterator past the end of the range when either of the
       // component iterators has reached the end of its range.
-      return
+      ?
           current1_ == end1_ ||
           current2_ == end2_ ||
           current3_ == end3_ ||
@@ -3734,11 +3734,11 @@ n.. CartesianProductGenerator6
   v.. ~CartesianProductGenerator6() {}
 
   v.. ParamIteratorInterface<ParamType>* Begin() co.. {
-    return ne. Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
+    ?  ne. Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
         g3_.begin(), g4_, g4_.begin(), g5_, g5_.begin(), g6_, g6_.begin());
   }
   v.. ParamIteratorInterface<ParamType>* End() co.. {
-    return ne. Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end(),
+    ?  ne. Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end(),
         g4_, g4_.end(), g5_, g5_.end(), g6_, g6_.end());
   }
 
@@ -3770,7 +3770,7 @@ n.. CartesianProductGenerator6
     v.. ~Iterator() {}
 
     v.. co.. ParamGeneratorInterface<ParamType>* BaseGenerator() co.. {
-      return base_;
+      ?  base_;
     }
     // Advance should not be called on beyond-of-range iterators
     // so no component iterators must be beyond end of range, either.
@@ -3800,9 +3800,9 @@ n.. CartesianProductGenerator6
       ComputeCurrentValue();
     }
     v.. ParamIteratorInterface<ParamType>* Clone() co.. {
-      return ne. Iterator(*this);
+      ?  ne. Iterator(*this);
     }
-    v.. co.. ParamType* Current() co.. { return current_value_.get(); }
+    v.. co.. ParamType* Current() co.. { ?  current_value_.get(); }
     v.. bo.. Equals(co.. ParamIteratorInterface<ParamType>& other) co.. {
       // Having the same base generator guarantees that the other
       // iterator is of the same type and we can downcast.
@@ -3814,7 +3814,7 @@ n.. CartesianProductGenerator6
       // We must report iterators equal if they both point beyond their
       // respective ranges. That can happen in a variety of fashions,
       // so we have to consult AtEnd().
-      return (AtEnd() && typed_other->AtEnd()) ||
+      ?  (AtEnd() && typed_other->AtEnd()) ||
          (
           current1_ == typed_other->current1_ &&
           current2_ == typed_other->current2_ &&
@@ -3856,7 +3856,7 @@ n.. CartesianProductGenerator6
     bo.. AtEnd() co.. {
       // We must report iterator past the end of the range when either of the
       // component iterators has reached the end of its range.
-      return
+      ?
           current1_ == end1_ ||
           current2_ == end2_ ||
           current3_ == end3_ ||
@@ -3920,12 +3920,12 @@ n.. CartesianProductGenerator7
   v.. ~CartesianProductGenerator7() {}
 
   v.. ParamIteratorInterface<ParamType>* Begin() co.. {
-    return ne. Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
+    ?  ne. Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
         g3_.begin(), g4_, g4_.begin(), g5_, g5_.begin(), g6_, g6_.begin(), g7_,
         g7_.begin());
   }
   v.. ParamIteratorInterface<ParamType>* End() co.. {
-    return ne. Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end(),
+    ?  ne. Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end(),
         g4_, g4_.end(), g5_, g5_.end(), g6_, g6_.end(), g7_, g7_.end());
   }
 
@@ -3960,7 +3960,7 @@ n.. CartesianProductGenerator7
     v.. ~Iterator() {}
 
     v.. co.. ParamGeneratorInterface<ParamType>* BaseGenerator() co.. {
-      return base_;
+      ?  base_;
     }
     // Advance should not be called on beyond-of-range iterators
     // so no component iterators must be beyond end of range, either.
@@ -3994,9 +3994,9 @@ n.. CartesianProductGenerator7
       ComputeCurrentValue();
     }
     v.. ParamIteratorInterface<ParamType>* Clone() co.. {
-      return ne. Iterator(*this);
+      ?  ne. Iterator(*this);
     }
-    v.. co.. ParamType* Current() co.. { return current_value_.get(); }
+    v.. co.. ParamType* Current() co.. { ?  current_value_.get(); }
     v.. bo.. Equals(co.. ParamIteratorInterface<ParamType>& other) co.. {
       // Having the same base generator guarantees that the other
       // iterator is of the same type and we can downcast.
@@ -4008,7 +4008,7 @@ n.. CartesianProductGenerator7
       // We must report iterators equal if they both point beyond their
       // respective ranges. That can happen in a variety of fashions,
       // so we have to consult AtEnd().
-      return (AtEnd() && typed_other->AtEnd()) ||
+      ?  (AtEnd() && typed_other->AtEnd()) ||
          (
           current1_ == typed_other->current1_ &&
           current2_ == typed_other->current2_ &&
@@ -4054,7 +4054,7 @@ n.. CartesianProductGenerator7
     bo.. AtEnd() co.. {
       // We must report iterator past the end of the range when either of the
       // component iterators has reached the end of its range.
-      return
+      ?
           current1_ == end1_ ||
           current2_ == end2_ ||
           current3_ == end3_ ||
@@ -4125,12 +4125,12 @@ n.. CartesianProductGenerator8
   v.. ~CartesianProductGenerator8() {}
 
   v.. ParamIteratorInterface<ParamType>* Begin() co.. {
-    return ne. Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
+    ?  ne. Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
         g3_.begin(), g4_, g4_.begin(), g5_, g5_.begin(), g6_, g6_.begin(), g7_,
         g7_.begin(), g8_, g8_.begin());
   }
   v.. ParamIteratorInterface<ParamType>* End() co.. {
-    return ne. Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end(),
+    ?  ne. Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end(),
         g4_, g4_.end(), g5_, g5_.end(), g6_, g6_.end(), g7_, g7_.end(), g8_,
         g8_.end());
   }
@@ -4169,7 +4169,7 @@ n.. CartesianProductGenerator8
     v.. ~Iterator() {}
 
     v.. co.. ParamGeneratorInterface<ParamType>* BaseGenerator() co.. {
-      return base_;
+      ?  base_;
     }
     // Advance should not be called on beyond-of-range iterators
     // so no component iterators must be beyond end of range, either.
@@ -4207,9 +4207,9 @@ n.. CartesianProductGenerator8
       ComputeCurrentValue();
     }
     v.. ParamIteratorInterface<ParamType>* Clone() co.. {
-      return ne. Iterator(*this);
+      ?  ne. Iterator(*this);
     }
-    v.. co.. ParamType* Current() co.. { return current_value_.get(); }
+    v.. co.. ParamType* Current() co.. { ?  current_value_.get(); }
     v.. bo.. Equals(co.. ParamIteratorInterface<ParamType>& other) co.. {
       // Having the same base generator guarantees that the other
       // iterator is of the same type and we can downcast.
@@ -4221,7 +4221,7 @@ n.. CartesianProductGenerator8
       // We must report iterators equal if they both point beyond their
       // respective ranges. That can happen in a variety of fashions,
       // so we have to consult AtEnd().
-      return (AtEnd() && typed_other->AtEnd()) ||
+      ?  (AtEnd() && typed_other->AtEnd()) ||
          (
           current1_ == typed_other->current1_ &&
           current2_ == typed_other->current2_ &&
@@ -4271,7 +4271,7 @@ n.. CartesianProductGenerator8
     bo.. AtEnd() co.. {
       // We must report iterator past the end of the range when either of the
       // component iterators has reached the end of its range.
-      return
+      ?
           current1_ == end1_ ||
           current2_ == end2_ ||
           current3_ == end3_ ||
@@ -4347,12 +4347,12 @@ n.. CartesianProductGenerator9
   v.. ~CartesianProductGenerator9() {}
 
   v.. ParamIteratorInterface<ParamType>* Begin() co.. {
-    return ne. Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
+    ?  ne. Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
         g3_.begin(), g4_, g4_.begin(), g5_, g5_.begin(), g6_, g6_.begin(), g7_,
         g7_.begin(), g8_, g8_.begin(), g9_, g9_.begin());
   }
   v.. ParamIteratorInterface<ParamType>* End() co.. {
-    return ne. Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end(),
+    ?  ne. Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end(),
         g4_, g4_.end(), g5_, g5_.end(), g6_, g6_.end(), g7_, g7_.end(), g8_,
         g8_.end(), g9_, g9_.end());
   }
@@ -4394,7 +4394,7 @@ n.. CartesianProductGenerator9
     v.. ~Iterator() {}
 
     v.. co.. ParamGeneratorInterface<ParamType>* BaseGenerator() co.. {
-      return base_;
+      ?  base_;
     }
     // Advance should not be called on beyond-of-range iterators
     // so no component iterators must be beyond end of range, either.
@@ -4436,9 +4436,9 @@ n.. CartesianProductGenerator9
       ComputeCurrentValue();
     }
     v.. ParamIteratorInterface<ParamType>* Clone() co.. {
-      return ne. Iterator(*this);
+      ?  ne. Iterator(*this);
     }
-    v.. co.. ParamType* Current() co.. { return current_value_.get(); }
+    v.. co.. ParamType* Current() co.. { ?  current_value_.get(); }
     v.. bo.. Equals(co.. ParamIteratorInterface<ParamType>& other) co.. {
       // Having the same base generator guarantees that the other
       // iterator is of the same type and we can downcast.
@@ -4450,7 +4450,7 @@ n.. CartesianProductGenerator9
       // We must report iterators equal if they both point beyond their
       // respective ranges. That can happen in a variety of fashions,
       // so we have to consult AtEnd().
-      return (AtEnd() && typed_other->AtEnd()) ||
+      ?  (AtEnd() && typed_other->AtEnd()) ||
          (
           current1_ == typed_other->current1_ &&
           current2_ == typed_other->current2_ &&
@@ -4505,7 +4505,7 @@ n.. CartesianProductGenerator9
     bo.. AtEnd() co.. {
       // We must report iterator past the end of the range when either of the
       // component iterators has reached the end of its range.
-      return
+      ?
           current1_ == end1_ ||
           current2_ == end2_ ||
           current3_ == end3_ ||
@@ -4587,12 +4587,12 @@ n.. CartesianProductGenerator10
   v.. ~CartesianProductGenerator10() {}
 
   v.. ParamIteratorInterface<ParamType>* Begin() co.. {
-    return ne. Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
+    ?  ne. Iterator(this, g1_, g1_.begin(), g2_, g2_.begin(), g3_,
         g3_.begin(), g4_, g4_.begin(), g5_, g5_.begin(), g6_, g6_.begin(), g7_,
         g7_.begin(), g8_, g8_.begin(), g9_, g9_.begin(), g10_, g10_.begin());
   }
   v.. ParamIteratorInterface<ParamType>* End() co.. {
-    return ne. Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end(),
+    ?  ne. Iterator(this, g1_, g1_.end(), g2_, g2_.end(), g3_, g3_.end(),
         g4_, g4_.end(), g5_, g5_.end(), g6_, g6_.end(), g7_, g7_.end(), g8_,
         g8_.end(), g9_, g9_.end(), g10_, g10_.end());
   }
@@ -4637,7 +4637,7 @@ n.. CartesianProductGenerator10
     v.. ~Iterator() {}
 
     v.. co.. ParamGeneratorInterface<ParamType>* BaseGenerator() co.. {
-      return base_;
+      ?  base_;
     }
     // Advance should not be called on beyond-of-range iterators
     // so no component iterators must be beyond end of range, either.
@@ -4683,9 +4683,9 @@ n.. CartesianProductGenerator10
       ComputeCurrentValue();
     }
     v.. ParamIteratorInterface<ParamType>* Clone() co.. {
-      return ne. Iterator(*this);
+      ?  ne. Iterator(*this);
     }
-    v.. co.. ParamType* Current() co.. { return current_value_.get(); }
+    v.. co.. ParamType* Current() co.. { ?  current_value_.get(); }
     v.. bo.. Equals(co.. ParamIteratorInterface<ParamType>& other) co.. {
       // Having the same base generator guarantees that the other
       // iterator is of the same type and we can downcast.
@@ -4697,7 +4697,7 @@ n.. CartesianProductGenerator10
       // We must report iterators equal if they both point beyond their
       // respective ranges. That can happen in a variety of fashions,
       // so we have to consult AtEnd().
-      return (AtEnd() && typed_other->AtEnd()) ||
+      ?  (AtEnd() && typed_other->AtEnd()) ||
          (
           current1_ == typed_other->current1_ &&
           current2_ == typed_other->current2_ &&
@@ -4756,7 +4756,7 @@ n.. CartesianProductGenerator10
     bo.. AtEnd() co.. {
       // We must report iterator past the end of the range when either of the
       // component iterators has reached the end of its range.
-      return
+      ?
           current1_ == end1_ ||
           current2_ == end2_ ||
           current3_ == end3_ ||
@@ -4837,7 +4837,7 @@ CartesianProductHolder2(co.. Generator1& g1, co.. Generator2& g2)
       : g1_(g1), g2_(g2) {}
   template <typename T1, typename T2>
   operator ParamGenerator< ::testing::tuple<T1, T2> >() co.. {
-    return ParamGenerator< ::testing::tuple<T1, T2> >(
+    ?  ParamGenerator< ::testing::tuple<T1, T2> >(
         ne. CartesianProductGenerator2<T1, T2>(
         static_cast<ParamGenerator<T1> >(g1_),
         static_cast<ParamGenerator<T2> >(g2_)));
@@ -4859,7 +4859,7 @@ CartesianProductHolder3(co.. Generator1& g1, co.. Generator2& g2,
       : g1_(g1), g2_(g2), g3_(g3) {}
   template <typename T1, typename T2, typename T3>
   operator ParamGenerator< ::testing::tuple<T1, T2, T3> >() co.. {
-    return ParamGenerator< ::testing::tuple<T1, T2, T3> >(
+    ?  ParamGenerator< ::testing::tuple<T1, T2, T3> >(
         ne. CartesianProductGenerator3<T1, T2, T3>(
         static_cast<ParamGenerator<T1> >(g1_),
         static_cast<ParamGenerator<T2> >(g2_),
@@ -4884,7 +4884,7 @@ CartesianProductHolder4(co.. Generator1& g1, co.. Generator2& g2,
       : g1_(g1), g2_(g2), g3_(g3), g4_(g4) {}
   template <typename T1, typename T2, typename T3, typename T4>
   operator ParamGenerator< ::testing::tuple<T1, T2, T3, T4> >() co.. {
-    return ParamGenerator< ::testing::tuple<T1, T2, T3, T4> >(
+    ?  ParamGenerator< ::testing::tuple<T1, T2, T3, T4> >(
         ne. CartesianProductGenerator4<T1, T2, T3, T4>(
         static_cast<ParamGenerator<T1> >(g1_),
         static_cast<ParamGenerator<T2> >(g2_),
@@ -4911,7 +4911,7 @@ CartesianProductHolder5(co.. Generator1& g1, co.. Generator2& g2,
       : g1_(g1), g2_(g2), g3_(g3), g4_(g4), g5_(g5) {}
   template <typename T1, typename T2, typename T3, typename T4, typename T5>
   operator ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5> >() co.. {
-    return ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5> >(
+    ?  ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5> >(
         ne. CartesianProductGenerator5<T1, T2, T3, T4, T5>(
         static_cast<ParamGenerator<T1> >(g1_),
         static_cast<ParamGenerator<T2> >(g2_),
@@ -4942,7 +4942,7 @@ CartesianProductHolder6(co.. Generator1& g1, co.. Generator2& g2,
   template <typename T1, typename T2, typename T3, typename T4, typename T5,
       typename T6>
   operator ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5, T6> >() co.. {
-    return ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5, T6> >(
+    ?  ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5, T6> >(
         ne. CartesianProductGenerator6<T1, T2, T3, T4, T5, T6>(
         static_cast<ParamGenerator<T1> >(g1_),
         static_cast<ParamGenerator<T2> >(g2_),
@@ -4976,7 +4976,7 @@ CartesianProductHolder7(co.. Generator1& g1, co.. Generator2& g2,
       typename T6, typename T7>
   operator ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5, T6,
       T7> >() co.. {
-    return ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5, T6, T7> >(
+    ?  ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5, T6, T7> >(
         ne. CartesianProductGenerator7<T1, T2, T3, T4, T5, T6, T7>(
         static_cast<ParamGenerator<T1> >(g1_),
         static_cast<ParamGenerator<T2> >(g2_),
@@ -5014,7 +5014,7 @@ CartesianProductHolder8(co.. Generator1& g1, co.. Generator2& g2,
       typename T6, typename T7, typename T8>
   operator ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5, T6, T7,
       T8> >() co.. {
-    return ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5, T6, T7, T8> >(
+    ?  ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5, T6, T7, T8> >(
         ne. CartesianProductGenerator8<T1, T2, T3, T4, T5, T6, T7, T8>(
         static_cast<ParamGenerator<T1> >(g1_),
         static_cast<ParamGenerator<T2> >(g2_),
@@ -5055,7 +5055,7 @@ CartesianProductHolder9(co.. Generator1& g1, co.. Generator2& g2,
       typename T6, typename T7, typename T8, typename T9>
   operator ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5, T6, T7, T8,
       T9> >() co.. {
-    return ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5, T6, T7, T8,
+    ?  ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5, T6, T7, T8,
         T9> >(
         ne. CartesianProductGenerator9<T1, T2, T3, T4, T5, T6, T7, T8, T9>(
         static_cast<ParamGenerator<T1> >(g1_),
@@ -5099,7 +5099,7 @@ CartesianProductHolder10(co.. Generator1& g1, co.. Generator2& g2,
       typename T6, typename T7, typename T8, typename T9, typename T10>
   operator ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5, T6, T7, T8, T9,
       T10> >() co.. {
-    return ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5, T6, T7, T8, T9,
+    ?  ParamGenerator< ::testing::tuple<T1, T2, T3, T4, T5, T6, T7, T8, T9,
         T10> >(
         ne. CartesianProductGenerator10<T1, T2, T3, T4, T5, T6, T7, T8, T9,
             T10>(

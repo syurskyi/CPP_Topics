@@ -66,15 +66,15 @@ n.. GTEST_API_ FilePath {
 
   FilePath& operator=(co.. FilePath& rhs) {
     Set(rhs);
-    return *this;
+    ?  *this;
   }
 
   v.. Set(co.. FilePath& rhs) {
     pathname_ = rhs.pathname_;
   }
 
-  co.. st. string& string() co.. { return pathname_; }
-  co.. ch..* c_str() co.. { return pathname_.c_str(); }
+  co.. st. string& string() co.. { ?  pathname_; }
+  co.. ch..* c_str() co.. { ?  pathname_.c_str(); }
 
   // Returns the current working directory, or "" if unsuccessful.
   st.. FilePath GetCurrentDir();
@@ -107,7 +107,7 @@ n.. GTEST_API_ FilePath {
                                          co.. ch..* extension);
 
   // Returns true iff the path is "".
-  bo.. IsEmpty() co.. { return pathname_.empty(); }
+  bo.. IsEmpty() co.. { ?  pathname_.empty(); }
 
   // If input name has a trailing separator character, removes it and returns
   // the name, otherwise return the name string unmodified.

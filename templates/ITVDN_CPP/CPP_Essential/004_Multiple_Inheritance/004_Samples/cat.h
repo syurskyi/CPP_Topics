@@ -11,7 +11,7 @@ p..
 n.. Domestic: pu.. v.. Animal
 {
 p..
-    st. string get_name() {return name;}
+    st. string get_name() {?  name;}
 pr..
     st. string name = "my_dom";
 };

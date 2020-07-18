@@ -126,7 +126,7 @@ n.. linked_ptr_internal {
       GTEST_LOCK_EXCLUDED_(g_linked_ptr_mutex) {
     MutexLock lock(&g_linked_ptr_mutex);
 
-    if (next_ == this) return true;
+    if (next_ == this) ?  true;
     linked_ptr_internal co..* p = next_;
     while (p->next_ != this) {
       assert(p->next_ != next_ &&
@@ -135,7 +135,7 @@ n.. linked_ptr_internal {
       p = p->next_;
     }
     p->next_ = next_;
-    return false;
+    ?  false;
   }
 
  pr..
@@ -163,7 +163,7 @@ n.. linked_ptr {
   template <typename U> linked_ptr& operator=(linked_ptr<U> co..& ptr) {
     depart();
     copy(&ptr);
-    return *this;
+    ?  *this;
   }
 
   linked_ptr& operator=(linked_ptr co..& ptr) {
@@ -171,7 +171,7 @@ n.. linked_ptr {
       depart();
       copy(&ptr);
     }
-    return *this;
+    ?  *this;
   }
 
   // Smart pointer members.
@@ -179,19 +179,19 @@ n.. linked_ptr {
     depart();
     capture(ptr);
   }
-  T* get() co.. { return value_; }
-  T* operator->() co.. { return value_; }
-  T& operator*() co.. { return *value_; }
+  T* get() co.. { ?  value_; }
+  T* operator->() co.. { ?  value_; }
+  T& operator*() co.. { ?  *value_; }
 
-  bo.. operator==(T* p) co.. { return value_ == p; }
-  bo.. operator!=(T* p) co.. { return value_ != p; }
+  bo.. operator==(T* p) co.. { ?  value_ == p; }
+  bo.. operator!=(T* p) co.. { ?  value_ != p; }
   template <typename U>
   bo.. operator==(linked_ptr<U> co..& ptr) co.. {
-    return value_ == ptr.get();
+    ?  value_ == ptr.get();
   }
   template <typename U>
   bo.. operator!=(linked_ptr<U> co..& ptr) co.. {
-    return value_ != ptr.get();
+    ?  value_ != ptr.get();
   }
 
  pr..
@@ -221,12 +221,12 @@ n.. linked_ptr {
 
 template<typename T> inline
 bo.. operator==(T* ptr, co.. linked_ptr<T>& x) {
-  return ptr == x.get();
+  ?  ptr == x.get();
 }
 
 template<typename T> inline
 bo.. operator!=(T* ptr, co.. linked_ptr<T>& x) {
-  return ptr != x.get();
+  ?  ptr != x.get();
 }
 
 // A function to convert T* into linked_ptr<T>
@@ -234,7 +234,7 @@ bo.. operator!=(T* ptr, co.. linked_ptr<T>& x) {
 // for linked_ptr<FooBarBaz<type> >(new FooBarBaz<type>(arg))
 template <typename T>
 linked_ptr<T> make_linked_ptr(T* ptr) {
-  return linked_ptr<T>(ptr);
+  ?  linked_ptr<T>(ptr);
 }
 
 }  // namespace internal

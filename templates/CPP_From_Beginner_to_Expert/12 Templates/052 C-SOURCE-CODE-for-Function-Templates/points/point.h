@@ -8,7 +8,7 @@ n.. Point //base, parent, superclass
     p..
         Point(in. =0);
         ~Point();
-        in. getX() { return x; }
+        in. getX() { ?  x; }
         v.. setX(in.);
 };
 n.. Point2D : pu.. Point //derived, child, subclass
@@ -18,7 +18,7 @@ n.. Point2D : pu.. Point //derived, child, subclass
     p..
         Point2D(in. =0, in. =0);
         ~Point2D();
-        in. getY() { return y; }
+        in. getY() { ?  y; }
         v.. setY(in.);
         v.. setX(in.);
         v.. setXY(in., in.);

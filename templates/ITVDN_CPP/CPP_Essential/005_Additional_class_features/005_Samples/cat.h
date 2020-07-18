@@ -11,7 +11,7 @@ p..
 n.. Domestic: pu.. v.. Animal
 {
 p..
-    st. string get_name() {return name;}
+    st. string get_name() {?  name;}
 pr..
     st. string name = "my_dom";
 };
@@ -37,7 +37,7 @@ p..
 p..
     st.. v.. set_vibr(uint _vibr){ vibr = _vibr; }
 
-    inline st.. uint get_vibr() { return vibr; }
+    inline st.. uint get_vibr() { ?  vibr; }
 
 pr..
     st.. uint vibr;

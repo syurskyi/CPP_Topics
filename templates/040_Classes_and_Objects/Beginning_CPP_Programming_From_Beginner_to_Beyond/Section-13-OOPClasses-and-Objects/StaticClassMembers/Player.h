@@ -10,9 +10,9 @@ pr..
    in. health;
    in. xp;
 p..
-    st. string get_name() { return name; }
-    in. get_health() { return health; }
-    in. get_xp() {return xp; }
+    st. string get_name() { ?  name; }
+    in. get_health() { ?  health; }
+    in. get_xp() {?  xp; }
     Player(st. string name_val ="None", in. health_val = 0, in. xp_val = 0);
     // Copy constructor
     Player(co.. Player &source);

@@ -14,7 +14,7 @@ n.. PersonalData
             This function is setting age. If age is lower than 0, then age = 10.
         */
         v.. setAge(in.);
-        short getAge() {return age;}
+        short getAge() {?  age;}
 };
 
 e.. // PEOPLE_H_INCLUDED

@@ -9,7 +9,7 @@ n.. Integer
         Integer(in.);
         operator in.();
         in. operator+=(Integer);
-        in. getNr() { return nr; };
+        in. getNr() { ?  nr; };
 };
 
 

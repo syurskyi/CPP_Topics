@@ -298,11 +298,11 @@ e..
   // Assignment operator.
   AssertionResult& operator=(AssertionResult other) {
     swap(other);
-    return *this;
+    ?  *this;
   }
 
   // Returns true iff the assertion succeeded.
-  operator bo..() co.. { return success_; }  // NOLINT
+  operator bo..() co.. { ?  success_; }  // NOLINT
 
   // Returns the assertion's negation. Used with EXPECT/ASSERT_FALSE.
   AssertionResult operator!() co..;
@@ -312,16 +312,16 @@ e..
   // assertion's expectation). When nothing has been streamed into the
   // object, returns an empty string.
   co.. ch..* message() co.. {
-    return message_.get() != NULL ?  message_->c_str() : "";
+    ?  message_.get() != NULL ?  message_->c_str() : "";
   }
   // TODO(vladl@google.com): Remove this after making sure no clients use it.
   // Deprecated; please use message() instead.
-  co.. ch..* failure_message() co.. { return message(); }
+  co.. ch..* failure_message() co.. { ?  message(); }
 
   // Streams a custom failure message into this object.
   template <typename T> AssertionResult& operator<<(co.. T& value) {
     AppendMessage(Message() << value);
-    return *this;
+    ?  *this;
   }
 
   // Allows streaming basic output manipulators such as endl or flush into
@@ -329,7 +329,7 @@ e..
   AssertionResult& operator<<(
       ::st. ostream& (*basic_manipulator)(::st. ostream& stream)) {
     AppendMessage(Message() << basic_manipulator);
-    return *this;
+    ?  *this;
   }
 
  pr..
@@ -430,7 +430,7 @@ n.. GTEST_API_ Test {
 
   // Returns true iff the current test has a (either fatal or
   // non-fatal) failure.
-  st.. bo.. HasFailure() { return HasFatalFailure() || HasNonfatalFailure(); }
+  st.. bo.. HasFailure() { ?  HasFatalFailure() || HasNonfatalFailure(); }
 
   // Logs a property for the current test, test case, or for the entire
   // invocation of the test program when used outside of the context of a
@@ -497,7 +497,7 @@ n.. GTEST_API_ Test {
   // If you see an error about overriding the following function or
   // about it being private, you have mis-spelled SetUp() as Setup().
   struct Setup_should_be_spelled_SetUp {};
-  v.. Setup_should_be_spelled_SetUp* Setup() { return NULL; }
+  v.. Setup_should_be_spelled_SetUp* Setup() { ?  NULL; }
 
   // We disallow copying Tests.
   GTEST_DISALLOW_COPY_AND_ASSIGN_(Test);
@@ -520,12 +520,12 @@ n.. TestProperty {
 
   // Gets the user supplied key.
   co.. ch..* key() co.. {
-    return key_.c_str();
+    ?  key_.c_str();
   }
 
   // Gets the user supplied value.
   co.. ch..* value() co.. {
-    return value_.c_str();
+    ?  value_.c_str();
   }
 
   // Sets a new value, overriding the one supplied in the constructor.
@@ -562,7 +562,7 @@ n.. GTEST_API_ TestResult {
   in. test_property_count() co..;
 
   // Returns true iff the test passed (i.e. no test part failed).
-  bo.. Passed() co.. { return !Failed(); }
+  bo.. Passed() co.. { ?  !Failed(); }
 
   // Returns true iff the test failed.
   bo.. Failed() co..;
@@ -574,7 +574,7 @@ n.. GTEST_API_ TestResult {
   bo.. HasNonfatalFailure() co..;
 
   // Returns the elapsed time, in milliseconds.
-  TimeInMillis elapsed_time() co.. { return elapsed_time_; }
+  TimeInMillis elapsed_time() co.. { ?  elapsed_time_; }
 
   // Returns the i-th test part result among all the results. i can range from 0
   // to total_part_count() - 1. If i is not in that range, aborts the program.
@@ -598,12 +598,12 @@ n.. GTEST_API_ TestResult {
 
   // Gets the vector of TestPartResults.
   co.. st. ve..<TestPartResult>& test_part_results() co.. {
-    return test_part_results_;
+    ?  test_part_results_;
   }
 
   // Gets the vector of TestProperties.
   co.. st. ve..<TestProperty>& test_properties() co.. {
-    return test_properties_;
+    ?  test_properties_;
   }
 
   // Sets the elapsed time.
@@ -628,10 +628,10 @@ n.. GTEST_API_ TestResult {
   v.. AddTestPartResult(co.. TestPartResult& test_part_result);
 
   // Returns the death test count.
-  in. death_test_count() co.. { return death_test_count_; }
+  in. death_test_count() co.. { ?  death_test_count_; }
 
   // Increments the death test count, returning the new count.
-  in. increment_death_test_count() { return ++death_test_count_; }
+  in. increment_death_test_count() { ?  ++death_test_count_; }
 
   // Clears the test part results.
   v.. ClearTestPartResults();
@@ -674,35 +674,35 @@ n.. GTEST_API_ TestInfo {
   ~TestInfo();
 
   // Returns the test case name.
-  co.. ch..* test_case_name() co.. { return test_case_name_.c_str(); }
+  co.. ch..* test_case_name() co.. { ?  test_case_name_.c_str(); }
 
   // Returns the test name.
-  co.. ch..* name() co.. { return name_.c_str(); }
+  co.. ch..* name() co.. { ?  name_.c_str(); }
 
   // Returns the name of the parameter type, or NULL if this is not a typed
   // or a type-parameterized test.
   co.. ch..* type_param() co.. {
     if (type_param_.get() != NULL)
-      return type_param_->c_str();
-    return NULL;
+      ?  type_param_->c_str();
+    ?  NULL;
   }
 
   // Returns the text representation of the value parameter, or NULL if this
   // is not a value-parameterized test.
   co.. ch..* value_param() co.. {
     if (value_param_.get() != NULL)
-      return value_param_->c_str();
-    return NULL;
+      ?  value_param_->c_str();
+    ?  NULL;
   }
 
   // Returns the file name where this test is defined.
-  co.. ch..* file() co.. { return location_.file.c_str(); }
+  co.. ch..* file() co.. { ?  location_.file.c_str(); }
 
   // Returns the line where this test is defined.
-  in. line() co.. { return location_.line; }
+  in. line() co.. { ?  location_.line; }
 
   // Return true if this test should not be run because it's in another shard.
-  bo.. is_in_another_shard() co.. { return is_in_another_shard_; }
+  bo.. is_in_another_shard() co.. { ?  is_in_another_shard_; }
 
   // Returns true if this test should run, that is if the test is not
   // disabled (or it is disabled but the also_run_disabled_tests flag has
@@ -720,17 +720,17 @@ n.. GTEST_API_ TestInfo {
   //
   // For example, *A*:Foo.* is a filter that matches any string that
   // contains the character 'A' or starts with "Foo.".
-  bo.. should_run() co.. { return should_run_; }
+  bo.. should_run() co.. { ?  should_run_; }
 
   // Returns true iff this test will appear in the XML report.
   bo.. is_reportable() co.. {
     // The XML report includes tests matching the filter, excluding those
     // run in other shards.
-    return matches_filter_ && !is_in_another_shard_;
+    ?  matches_filter_ && !is_in_another_shard_;
   }
 
   // Returns the result of the test.
-  co.. TestResult* result() co.. { return &result_; }
+  co.. TestResult* result() co.. { ?  &result_; }
 
  pr..
 #if GTEST_HAS_DEATH_TEST
@@ -764,7 +764,7 @@ e..  // GTEST_HAS_DEATH_TEST
   // Increments the number of death tests encountered in this test so
   // far.
   in. increment_death_test_count() {
-    return result_.increment_death_test_count();
+    ?  result_.increment_death_test_count();
   }
 
   // Creates the test object, runs it, records its result, and then
@@ -826,18 +826,18 @@ n.. GTEST_API_ TestCase {
   v.. ~TestCase();
 
   // Gets the name of the TestCase.
-  co.. ch..* name() co.. { return name_.c_str(); }
+  co.. ch..* name() co.. { ?  name_.c_str(); }
 
   // Returns the name of the parameter type, or NULL if this is not a
   // type-parameterized test case.
   co.. ch..* type_param() co.. {
     if (type_param_.get() != NULL)
-      return type_param_->c_str();
-    return NULL;
+      ?  type_param_->c_str();
+    ?  NULL;
   }
 
   // Returns true if any test in this test case should run.
-  bo.. should_run() co.. { return should_run_; }
+  bo.. should_run() co.. { ?  should_run_; }
 
   // Gets the number of successful tests in this test case.
   in. successful_test_count() co..;
@@ -861,13 +861,13 @@ n.. GTEST_API_ TestCase {
   in. total_test_count() co..;
 
   // Returns true iff the test case passed.
-  bo.. Passed() co.. { return !Failed(); }
+  bo.. Passed() co.. { ?  !Failed(); }
 
   // Returns true iff the test case failed.
-  bo.. Failed() co.. { return failed_test_count() > 0; }
+  bo.. Failed() co.. { ?  failed_test_count() > 0; }
 
   // Returns the elapsed time, in milliseconds.
-  TimeInMillis elapsed_time() co.. { return elapsed_time_; }
+  TimeInMillis elapsed_time() co.. { ?  elapsed_time_; }
 
   // Returns the i-th test among all the tests. i can range from 0 to
   // total_test_count() - 1. If i is not in that range, returns NULL.
@@ -875,18 +875,18 @@ n.. GTEST_API_ TestCase {
 
   // Returns the TestResult that holds test properties recorded during
   // execution of SetUpTestCase and TearDownTestCase.
-  co.. TestResult& ad_hoc_test_result() co.. { return ad_hoc_test_result_; }
+  co.. TestResult& ad_hoc_test_result() co.. { ?  ad_hoc_test_result_; }
 
  pr..
   friend n.. Test;
   friend n.. internal::UnitTestImpl;
 
   // Gets the (mutable) vector of TestInfos in this TestCase.
-  st. ve..<TestInfo*>& test_info_list() { return test_info_list_; }
+  st. ve..<TestInfo*>& test_info_list() { ?  test_info_list_; }
 
   // Gets the (immutable) vector of TestInfos in this TestCase.
   co.. st. ve..<TestInfo*>& test_info_list() co.. {
-    return test_info_list_;
+    ?  test_info_list_;
   }
 
   // Returns the i-th test among all the tests. i can range from 0 to
@@ -921,33 +921,33 @@ n.. GTEST_API_ TestCase {
 
   // Returns true iff test passed.
   st.. bo.. TestPassed(co.. TestInfo* test_info) {
-    return test_info->should_run() && test_info->result()->Passed();
+    ?  test_info->should_run() && test_info->result()->Passed();
   }
 
   // Returns true iff test failed.
   st.. bo.. TestFailed(co.. TestInfo* test_info) {
-    return test_info->should_run() && test_info->result()->Failed();
+    ?  test_info->should_run() && test_info->result()->Failed();
   }
 
   // Returns true iff the test is disabled and will be reported in the XML
   // report.
   st.. bo.. TestReportableDisabled(co.. TestInfo* test_info) {
-    return test_info->is_reportable() && test_info->is_disabled_;
+    ?  test_info->is_reportable() && test_info->is_disabled_;
   }
 
   // Returns true iff test is disabled.
   st.. bo.. TestDisabled(co.. TestInfo* test_info) {
-    return test_info->is_disabled_;
+    ?  test_info->is_disabled_;
   }
 
   // Returns true iff this test will appear in the XML report.
   st.. bo.. TestReportable(co.. TestInfo* test_info) {
-    return test_info->is_reportable();
+    ?  test_info->is_reportable();
   }
 
   // Returns true if the given test should run.
   st.. bo.. ShouldRunTest(co.. TestInfo* test_info) {
-    return test_info->should_run();
+    ?  test_info->should_run();
   }
 
   // Shuffles the tests in this test case.
@@ -1012,7 +1012,7 @@ n.. Environment {
   // If you see an error about overriding the following function or
   // about it being private, you have mis-spelled SetUp() as Setup().
   struct Setup_should_be_spelled_SetUp {};
-  v.. Setup_should_be_spelled_SetUp* Setup() { return NULL; }
+  v.. Setup_should_be_spelled_SetUp* Setup() { ?  NULL; }
 };
 
 #if GTEST_HAS_EXCEPTIONS
@@ -1125,7 +1125,7 @@ n.. GTEST_API_ TestEventListeners {
   // with Release transfers its ownership to the caller and makes this
   // function return NULL the next time.
   TestEventListener* default_result_printer() co.. {
-    return default_result_printer_;
+    ?  default_result_printer_;
   }
 
   // Returns the standard listener responsible for the default XML output
@@ -1136,7 +1136,7 @@ n.. GTEST_API_ TestEventListeners {
   // ownership to the caller and makes this function return NULL the next
   // time.
   TestEventListener* default_xml_generator() co.. {
-    return default_xml_generator_;
+    ?  default_xml_generator_;
   }
 
  pr..
@@ -1325,8 +1325,8 @@ n.. GTEST_API_ UnitTest {
   TestCase* GetMutableTestCase(in. i);
 
   // Accessors for the implementation object.
-  internal::UnitTestImpl* impl() { return impl_; }
-  co.. internal::UnitTestImpl* impl() co.. { return impl_; }
+  internal::UnitTestImpl* impl() { ?  impl_; }
+  co.. internal::UnitTestImpl* impl() co.. { ?  impl_; }
 
   // These classes and functions are friends as they need to access private
   // members of UnitTest.
@@ -1389,7 +1389,7 @@ n.. GTEST_API_ UnitTest {
 // (remember that the compiler doesn't guarantee the order in which
 // global variables from different translation units are initialized).
 inline Environment* AddGlobalTestEnvironment(Environment* env) {
-  return UnitTest::GetInstance()->AddEnvironment(env);
+  ?  UnitTest::GetInstance()->AddEnvironment(env);
 }
 
 // Initializes Google Test.  This must be called before calling
@@ -1416,7 +1416,7 @@ template <typename T1, typename T2>
 AssertionResult CmpHelperEQFailure(co.. ch..* lhs_expression,
                                    co.. ch..* rhs_expression,
                                    co.. T1& lhs, co.. T2& rhs) {
-  return EqFailure(lhs_expression,
+  ?  EqFailure(lhs_expression,
                    rhs_expression,
                    FormatForComparisonFailureMessage(lhs, rhs),
                    FormatForComparisonFailureMessage(rhs, lhs),
@@ -1430,10 +1430,10 @@ AssertionResult CmpHelperEQ(co.. ch..* lhs_expression,
                             co.. T1& lhs,
                             co.. T2& rhs) {
   if (lhs == rhs) {
-    return AssertionSuccess();
+    ?  AssertionSuccess();
   }
 
-  return CmpHelperEQFailure(lhs_expression, rhs_expression, lhs, rhs);
+  ?  CmpHelperEQFailure(lhs_expression, rhs_expression, lhs, rhs);
 }
 
 // With this overloaded version, we allow anonymous enums to be used
@@ -1457,7 +1457,7 @@ n.. EqHelper {
                                  co.. ch..* rhs_expression,
                                  co.. T1& lhs,
                                  co.. T2& rhs) {
-    return CmpHelperEQ(lhs_expression, rhs_expression, lhs, rhs);
+    ?  CmpHelperEQ(lhs_expression, rhs_expression, lhs, rhs);
   }
 
   // With this overloaded version, we allow anonymous enums to be used
@@ -1470,7 +1470,7 @@ n.. EqHelper {
                                  co.. ch..* rhs_expression,
                                  BiggestInt lhs,
                                  BiggestInt rhs) {
-    return CmpHelperEQ(lhs_expression, rhs_expression, lhs, rhs);
+    ?  CmpHelperEQ(lhs_expression, rhs_expression, lhs, rhs);
   }
 };
 
@@ -1495,7 +1495,7 @@ n.. EqHelper<true> {
       // to match the Secret* in the other overload, which would otherwise make
       // this template match better.
       typename EnableIf<!is_pointer<T2>::value>::type* = 0) {
-    return CmpHelperEQ(lhs_expression, rhs_expression, lhs, rhs);
+    ?  CmpHelperEQ(lhs_expression, rhs_expression, lhs, rhs);
   }
 
   // This version will be picked when the second argument to ASSERT_EQ() is a
@@ -1513,7 +1513,7 @@ n.. EqHelper<true> {
       Secret* /* lhs (NULL) */,
       T* rhs) {
     // We already know that 'lhs' is a null pointer.
-    return CmpHelperEQ(lhs_expression, rhs_expression,
+    ?  CmpHelperEQ(lhs_expression, rhs_expression,
                        static_cast<T*>(NULL), rhs);
   }
 };
@@ -1525,7 +1525,7 @@ template <typename T1, typename T2>
 AssertionResult CmpHelperOpFailure(co.. ch..* expr1, co.. ch..* expr2,
                                    co.. T1& val1, co.. T2& val2,
                                    co.. ch..* op) {
-  return AssertionFailure()
+  ?  AssertionFailure()
          << "Expected: (" << expr1 << ") " << op << " (" << expr2
          << "), actual: " << FormatForComparisonFailureMessage(val1, val2)
          << " vs " << FormatForComparisonFailureMessage(val2, val1);
@@ -1547,9 +1547,9 @@ template <typename T1, typename T2>\
 AssertionResult CmpHelper##op_name(co.. ch..* expr1, co.. ch..* expr2, \
                                    co.. T1& val1, co.. T2& val2) {\
   if (val1 op val2) {\
-    return AssertionSuccess();\
+    ?  AssertionSuccess();\
   } else {\
-    return CmpHelperOpFailure(expr1, expr2, val1, val2, #op);\
+    ?  CmpHelperOpFailure(expr1, expr2, val1, val2, #op);\
   }\
 }\
 GTEST_API_ AssertionResult CmpHelper##op_name(\
@@ -1674,7 +1674,7 @@ AssertionResult CmpHelperFloatingPointEQ(co.. ch..* lhs_expression,
   co.. FloatingPoint<RawType> lhs(lhs_value), rhs(rhs_value);
 
   if (lhs.AlmostEquals(rhs)) {
-    return AssertionSuccess();
+    ?  AssertionSuccess();
   }
 
   ::st. stringstream lhs_ss;
@@ -1685,7 +1685,7 @@ AssertionResult CmpHelperFloatingPointEQ(co.. ch..* lhs_expression,
   rhs_ss << st. setprecision(st. numeric_limits<RawType>::digits10 + 2)
          << rhs_value;
 
-  return EqFailure(lhs_expression,
+  ?  EqFailure(lhs_expression,
                    rhs_expression,
                    StringStreamToString(&lhs_ss),
                    StringStreamToString(&rhs_ss),
@@ -1794,7 +1794,7 @@ n.. WithParamInterface {
     GTEST_CHECK_(parameter_ != NULL)
         << "GetParam() can only be called inside a value-parameterized test "
         << "-- did you intend to write TEST_P instead of TEST_F?";
-    return *parameter_;
+    ?  *parameter_;
   }
 
  pr..
@@ -2237,7 +2237,7 @@ _de.. SCOPED_TRACE(message) \
 template <typename T1, typename T2>
 bo.. StaticAssertTypeEq() {
   (v..)internal::StaticAssertTypeEqHelper<T1, T2>();
-  return true;
+  ?  true;
 }
 
 // Defines a test.
@@ -2326,7 +2326,7 @@ e..
 in. RUN_ALL_TESTS() GTEST_MUST_USE_RESULT_;
 
 inline in. RUN_ALL_TESTS() {
-  return ::testing::UnitTest::GetInstance()->Run();
+  ?  ::testing::UnitTest::GetInstance()->Run();
 }
 
 e..  // GTEST_INCLUDE_GTEST_GTEST_H_

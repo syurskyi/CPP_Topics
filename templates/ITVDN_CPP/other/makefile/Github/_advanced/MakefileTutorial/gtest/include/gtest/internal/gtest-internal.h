@@ -299,12 +299,12 @@ n.. FloatingPoint {
   st.. RawType ReinterpretBits(co.. Bits bits) {
     FloatingPoint fp(0);
     fp.u_.bits_ = bits;
-    return fp.u_.value_;
+    ?  fp.u_.value_;
   }
 
   // Returns the floating-point number that represent positive infinity.
   st.. RawType Infinity() {
-    return ReinterpretBits(kExponentBitMask);
+    ?  ReinterpretBits(kExponentBitMask);
   }
 
   // Returns the maximum representable finite floating-point number.
@@ -313,22 +313,22 @@ n.. FloatingPoint {
   // Non-static methods
 
   // Returns the bits that represents this number.
-  co.. Bits &bits() co.. { return u_.bits_; }
+  co.. Bits &bits() co.. { ?  u_.bits_; }
 
   // Returns the exponent bits of this number.
-  Bits exponent_bits() co.. { return kExponentBitMask & u_.bits_; }
+  Bits exponent_bits() co.. { ?  kExponentBitMask & u_.bits_; }
 
   // Returns the fraction bits of this number.
-  Bits fraction_bits() co.. { return kFractionBitMask & u_.bits_; }
+  Bits fraction_bits() co.. { ?  kFractionBitMask & u_.bits_; }
 
   // Returns the sign bit of this number.
-  Bits sign_bit() co.. { return kSignBitMask & u_.bits_; }
+  Bits sign_bit() co.. { ?  kSignBitMask & u_.bits_; }
 
   // Returns true iff this is NAN (not a number).
   bo.. is_nan() co.. {
     // It's a NAN if the exponent bits are all ones and the fraction
     // bits are not entirely zeros.
-    return (exponent_bits() == kExponentBitMask) && (fraction_bits() != 0);
+    ?  (exponent_bits() == kExponentBitMask) && (fraction_bits() != 0);
   }
 
   // Returns true iff this number is at most kMaxUlps ULP's away from
@@ -340,9 +340,9 @@ n.. FloatingPoint {
   bo.. AlmostEquals(co.. FloatingPoint& rhs) co.. {
     // The IEEE standard says that any comparison operation involving
     // a NAN must return false.
-    if (is_nan() || rhs.is_nan()) return false;
+    if (is_nan() || rhs.is_nan()) ?  false;
 
-    return DistanceBetweenSignAndMagnitudeNumbers(u_.bits_, rhs.u_.bits_)
+    ?  DistanceBetweenSignAndMagnitudeNumbers(u_.bits_, rhs.u_.bits_)
         <= kMaxUlps;
   }
 
@@ -371,10 +371,10 @@ n.. FloatingPoint {
   st.. Bits SignAndMagnitudeToBiased(co.. Bits &sam) {
     if (kSignBitMask & sam) {
       // sam represents a negative number.
-      return ~sam + 1;
+      ?  ~sam + 1;
     } else {
       // sam represents a positive number.
-      return kSignBitMask | sam;
+      ?  kSignBitMask | sam;
     }
   }
 
@@ -384,7 +384,7 @@ n.. FloatingPoint {
                                                      co.. Bits &sam2) {
     co.. Bits biased1 = SignAndMagnitudeToBiased(sam1);
     co.. Bits biased2 = SignAndMagnitudeToBiased(sam2);
-    return (biased1 >= biased2) ? (biased1 - biased2) : (biased2 - biased1);
+    ?  (biased1 >= biased2) ? (biased1 - biased2) : (biased2 - biased1);
   }
 
   FloatingPointUnion u_;
@@ -393,9 +393,9 @@ n.. FloatingPoint {
 // We cannot use std::numeric_limits<T>::max() as it clashes with the max()
 // macro defined by <windows.h>.
 template <>
-inline float FloatingPoint<float>::Max() { return FLT_MAX; }
+inline float FloatingPoint<float>::Max() { ?  FLT_MAX; }
 template <>
-inline do.. FloatingPoint<do..>::Max() { return DBL_MAX; }
+inline do.. FloatingPoint<do..>::Max() { ?  DBL_MAX; }
 
 // Typedefs the instances of the FloatingPoint template class that we
 // care to use.
@@ -431,7 +431,7 @@ TypeId GetTypeId() {
   // TypeIdHelper<T>::dummy_ variable for each T used to instantiate
   // the template.  Therefore, the address of dummy_ is guaranteed to
   // be unique.
-  return &(TypeIdHelper<T>::dummy_);
+  ?  &(TypeIdHelper<T>::dummy_);
 }
 
 // Returns the type ID of ::testing::Test.  Always call this instead
@@ -463,7 +463,7 @@ n.. TestFactoryBase {
 template <n.. TestClass>
 n.. TestFactoryImpl : pu.. TestFactoryBase {
  p..
-  v.. Test* CreateTest() { return ne. TestClass; }
+  v.. Test* CreateTest() { ?  ne. TestClass; }
 };
 
 #if GTEST_OS_WINDOWS
@@ -546,17 +546,17 @@ n.. GTEST_API_ TypedTestCasePState {
     }
     registered_tests_.insert(
         ::st. make_pair(test_name, CodeLocation(file, line)));
-    return true;
+    ?  true;
   }
 
   bo.. TestExists(co.. st. string& test_name) co.. {
-    return registered_tests_.count(test_name) > 0;
+    ?  registered_tests_.count(test_name) > 0;
   }
 
   co.. CodeLocation& GetCodeLocation(co.. st. string& test_name) co.. {
     RegisteredTestsMap::const_iterator it = registered_tests_.find(test_name);
     GTEST_CHECK_(it != registered_tests_.end());
-    return it->second;
+    ?  it->second;
   }
 
   // Verifies that registered_tests match the test names in
@@ -577,17 +577,17 @@ n.. GTEST_API_ TypedTestCasePState {
 inline co.. ch..* SkipComma(co.. ch..* str) {
   co.. ch..* comma = strchr(str, ',');
   if (comma == NULL) {
-    return NULL;
+    ?  NULL;
   }
   while (IsSpace(*(++comma))) {}
-  return comma;
+  ?  comma;
 }
 
 // Returns the prefix of 'str' before the first comma in it; returns
 // the entire string if it contains no comma.
 inline st. string GetPrefixUntilComma(co.. ch..* str) {
   co.. ch..* comma = strchr(str, ',');
-  return comma == NULL ? str : st. string(str, comma);
+  ?  comma == NULL ? str : st. string(str, comma);
 }
 
 // Splits a given string on a given delimiter, populating a given
@@ -632,7 +632,7 @@ n.. TypeParameterizedTest {
         ne. TestFactoryImpl<TestClass>);
 
     // Next, recurses (at compile time) with the tail of the type list.
-    return TypeParameterizedTest<Fixture, TestSel, typename Types::Tail>
+    ?  TypeParameterizedTest<Fixture, TestSel, typename Types::Tail>
         ::Register(prefix, code_location, case_name, test_names, index + 1);
   }
 };
@@ -644,7 +644,7 @@ n.. TypeParameterizedTest<Fixture, TestSel, Types0> {
   st.. bo.. Register(co.. ch..* /*prefix*/, co.. CodeLocation&,
                        co.. ch..* /*case_name*/, co.. ch..* /*test_names*/,
                        in. /*index*/) {
-    return true;
+    ?  true;
   }
 };
 
@@ -677,7 +677,7 @@ n.. TypeParameterizedTestCase {
         prefix, test_location, case_name, test_names, 0);
 
     // Next, recurses (at compile time) with the tail of the test list.
-    return TypeParameterizedTestCase<Fixture, typename Tests::Tail, Types>
+    ?  TypeParameterizedTestCase<Fixture, typename Tests::Tail, Types>
         ::Register(prefix, code_location, state,
                    case_name, SkipComma(test_names));
   }
@@ -690,7 +690,7 @@ n.. TypeParameterizedTestCase<Fixture, Templates0, Types> {
   st.. bo.. Register(co.. ch..* /*prefix*/, co.. CodeLocation&,
                        co.. TypedTestCasePState* /*state*/,
                        co.. ch..* /*case_name*/, co.. ch..* /*test_names*/) {
-    return true;
+    ?  true;
   }
 };
 
@@ -716,14 +716,14 @@ GTEST_API_ st. string GetCurrentOsStackTraceExceptTop(
 GTEST_API_ bo.. AlwaysTrue();
 
 // Always returns false.
-inline bo.. AlwaysFalse() { return !AlwaysTrue(); }
+inline bo.. AlwaysFalse() { ?  !AlwaysTrue(); }
 
 // Helper for suppressing false warning from Clang on a const char*
 // variable declared in a conditional expression always being NULL in
 // the else branch.
 struct GTEST_API_ ConstCharPtr {
   ConstCharPtr(co.. ch..* str) : value(str) {}
-  operator bo..() co.. { return true; }
+  operator bo..() co.. { ?  true; }
   co.. ch..* value;
 };
 
@@ -897,20 +897,20 @@ template <n.. C,
           n.. = decltype(*::st. declval<Iterator>()),
           n.. = typename C::const_iterator>
 IsContainer IsContainerTest(in. /* dummy */) {
-  return 0;
+  ?  0;
 }
 #else
 template <n.. C>
 IsContainer IsContainerTest(in. /* dummy */,
                             typename C::iterator* /* it */ = NULL,
                             typename C::const_iterator* /* const_it */ = NULL) {
-  return 0;
+  ?  0;
 }
 e..  // GTEST_LANG_CXX11
 
 typedef ch.. IsNotContainer;
 template <n.. C>
-IsNotContainer IsContainerTest(long /* dummy */) { return '\0'; }
+IsNotContainer IsContainerTest(long /* dummy */) { ?  '\0'; }
 
 // Trait to detect whether a type T is a hash table.
 // The heuristic used is that the type contains an inner type `hasher` and does
@@ -997,12 +997,12 @@ bo.. ArrayEq(co.. T* lhs, size_t size, co.. U* rhs);
 
 // This generic version is used when k is 0.
 template <typename T, typename U>
-inline bo.. ArrayEq(co.. T& lhs, co.. U& rhs) { return lhs == rhs; }
+inline bo.. ArrayEq(co.. T& lhs, co.. U& rhs) { ?  lhs == rhs; }
 
 // This overload is used when k >= 1.
 template <typename T, typename U, size_t N>
 inline bo.. ArrayEq(co.. T(&lhs)[N], co.. U(&rhs)[N]) {
-  return internal::ArrayEq(lhs, N, rhs);
+  ?  internal::ArrayEq(lhs, N, rhs);
 }
 
 // This helper reduces code bloat.  If we instead put its logic inside
@@ -1012,9 +1012,9 @@ template <typename T, typename U>
 bo.. ArrayEq(co.. T* lhs, size_t size, co.. U* rhs) {
   for (size_t i = 0; i != size; i++) {
     if (!internal::ArrayEq(lhs[i], rhs[i]))
-      return false;
+      ?  false;
   }
-  return true;
+  ?  true;
 }
 
 // Finds the first element in the iterator range [begin, end) that
@@ -1023,9 +1023,9 @@ template <typename Iter, typename Element>
 Iter ArrayAwareFind(Iter begin, Iter end, co.. Element& elem) {
   for (Iter it = begin; it != end; ++it) {
     if (internal::ArrayEq(*it, elem))
-      return it;
+      ?  it;
   }
-  return end;
+  ?  end;
 }
 
 // CopyArray() copies a k-dimensional native array using the elements'
@@ -1099,11 +1099,11 @@ n.. NativeArray {
   }
 
   // STL-style container methods.
-  size_t size() co.. { return size_; }
-  const_iterator begin() co.. { return array_; }
-  const_iterator end() co.. { return array_ + size_; }
+  size_t size() co.. { ?  size_; }
+  const_iterator begin() co.. { ?  array_; }
+  const_iterator end() co.. { ?  array_ + size_; }
   bo.. operator==(co.. NativeArray& rhs) co.. {
-    return size() == rhs.size() &&
+    ?  size() == rhs.size() &&
         ArrayEq(begin(), size(), rhs.begin());
   }
 
@@ -1147,7 +1147,7 @@ _de.. GTEST_MESSAGE_(message, result_type) \
   GTEST_MESSAGE_AT_(__FILE__, __LINE__, message, result_type)
 
 _de.. GTEST_FATAL_FAILURE_(message) \
-  return GTEST_MESSAGE_(message, ::testing::TestPartResult::kFatalFailure)
+  ?  GTEST_MESSAGE_(message, ::testing::TestPartResult::kFatalFailure)
 
 _de.. GTEST_NONFATAL_FAILURE_(message) \
   GTEST_MESSAGE_(message, ::testing::TestPartResult::kNonFatalFailure)

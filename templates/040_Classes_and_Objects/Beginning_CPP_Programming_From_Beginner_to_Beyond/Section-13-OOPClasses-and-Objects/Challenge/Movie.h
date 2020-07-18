@@ -33,13 +33,13 @@ p..
     // implement these inline and watch your const-correctness
     
     v.. set_name(st. string name) {this->name = name; }
-    st. string get_name() co.. { return name; }
+    st. string get_name() co.. { ?  name; }
     
     v.. set_rating(st. string rating) {this->rating = rating; }
-    st. string get_rating() co.. { return rating; }
+    st. string get_rating() co.. { ?  rating; }
     
     v.. set_watched(in. watched) {this->watched = watched; }
-    in. get_watched() co.. { return watched; }
+    in. get_watched() co.. { ?  watched; }
     
     // Simply increment the watched attribute by 1
     v.. increment_watched() { ++watched; }

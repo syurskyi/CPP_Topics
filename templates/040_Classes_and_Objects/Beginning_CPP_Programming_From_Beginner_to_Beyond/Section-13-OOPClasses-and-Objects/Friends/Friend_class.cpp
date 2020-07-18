@@ -1,14 +1,14 @@
-? ios..
-? "Friend_class.h"
-
-c_ Player;
-v.. Friend_class::set_hero_name(Player &p, st. st..  name) {
-    p.name = name;
-}
-
-v.. Friend_class::display_player(Player &p) {
-      st. c.. __ p.name __ st. e..
-      st. c.. __ p.health __ st. e..
-      st. c.. __ p.xp __ st. e..
-}
-
+//? ios..
+//? "Fr..
+//
+//c_ Player
+//v.. ? set_hero_name ? #p st. st..  name
+//    p.n.. _ n..
+//
+//
+//v.. ? display_player ? #p
+//      st. c.. __ ?.n.. __ st. e..
+//      st. c.. __ ?.h.. __ st. e..
+//      st. c.. __ ?.x. __ st. e..
+//}
+//

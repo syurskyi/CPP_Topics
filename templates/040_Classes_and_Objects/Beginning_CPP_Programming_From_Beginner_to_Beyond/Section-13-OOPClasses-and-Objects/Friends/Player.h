@@ -1,31 +1,31 @@
-?i.. _PLAYER_H_
-_de.. _PLAYER_H_
-? str..
-
-? "Other_class.h"
-n.. Friend_class;
-
-n.. Player {
-    friend v.. Other_class::display_player(Player &p);
-    friend v.. display_player(Player &p);
-    friend n.. Friend_class;
-pr..
-   st.. in. num_players;
-   st. string name;
-   in. health;
-   in. xp;
-p..
-    st. string get_name() { return name; }
-    in. get_health() { return health; }
-    in. get_xp() {return xp; }
-    Player(st. string name_val ="None", in. health_val = 0, in. xp_val = 0);
-    // Copy constructor
-    Player(co.. Player &source);
-    // Destructor
-    ~Player();
-    
-    st.. in. get_num_players();
-    
-};
-
-e.. // _PLAYER_H_
+//?i.. _PLAYER_H_
+//_de.. _PLAYER_H_
+//? str..
+//
+//? "O..
+//n.. Friend_class
+//
+//n.. Player
+//    f.. v.. ? display_player P.. #p
+//    f.. v.. d_p.. P.. #p
+//    f.. n.. F..
+//pr..
+//   st.. in. n_pl..
+//   st. string na..
+//   in. he..
+//   in. x.
+//p..
+//    st. string get_name | ?  n..
+//    in. get_health ?  h..
+//    in. get_xp() ?  x.
+//    ? st. string name_val _"None", in. health_val _ 0, in. xp_val _ 0
+//    // Copy constructor
+//    ? co.. ? #source
+//    // Destructor
+//    #?
+//
+//    st.. in. g_n_p..
+//
+//
+//
+//e.. // _PLAYER_H_

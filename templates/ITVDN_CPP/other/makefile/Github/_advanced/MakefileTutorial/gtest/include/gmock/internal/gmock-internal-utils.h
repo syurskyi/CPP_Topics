@@ -85,18 +85,18 @@ struct PointeeOf<T*> { typedef T type; };  // NOLINT
 // The following default implementation is for the smart pointer case.
 template <typename Pointer>
 inline co.. typename Pointer::element_type* GetRawPointer(co.. Pointer& p) {
-  return p.get();
+  ?  p.get();
 }
 // This overloaded version is for the raw pointer case.
 template <typename Element>
-inline Element* GetRawPointer(Element* p) { return p; }
+inline Element* GetRawPointer(Element* p) { ?  p; }
 
 // This comparator allows linked_ptr to be stored in sets.
 template <typename T>
 struct LinkedPtrLessThan {
   bo.. operator()(co.. ::testing::internal::linked_ptr<T>& lhs,
                   co.. ::testing::internal::linked_ptr<T>& rhs) co.. {
-    return lhs.get() < rhs.get();
+    ?  lhs.get() < rhs.get();
   }
 };
 
@@ -406,7 +406,7 @@ inline T Invalid() {
   // This statement is unreachable, and would never terminate even if it
   // could be reached. It is provided only to placate compiler warnings
   // about missing return statements.
-  return Invalid<T>();
+  ?  Invalid<T>();
 }
 
 #ifdef _MSC_VER
@@ -439,9 +439,9 @@ n.. StlContainerView {
     // Ensures that RawContainer is not a const type.
     testing::StaticAssertTypeEq<RawContainer,
         GTEST_REMOVE_CONST_(RawContainer)>();
-    return container;
+    ?  container;
   }
-  st.. type Copy(co.. RawContainer& container) { return container; }
+  st.. type Copy(co.. RawContainer& container) { ?  container; }
 };
 
 // This specialization is used when RawContainer is a native array type.
@@ -474,17 +474,17 @@ n.. StlContainerView<Element[N]> {
     //     ConstReference(const char * (&)[4])')
     // (and though the N parameter type is mismatched in the above explicit
     // conversion of it doesn't help - only the conversion of the array).
-    return type(const_cast<Element*>(&array[0]), N,
+    ?  type(const_cast<Element*>(&array[0]), N,
                 RelationToSourceReference());
 #else
-    return type(array, N, RelationToSourceReference());
+    ?  type(array, N, RelationToSourceReference());
 e..  // GTEST_OS_SYMBIAN
   }
   st.. type Copy(co.. Element (&array)[N]) {
 #if GTEST_OS_SYMBIAN
-    return type(const_cast<Element*>(&array[0]), N, RelationToSourceCopy());
+    ?  type(const_cast<Element*>(&array[0]), N, RelationToSourceCopy());
 #else
-    return type(array, N, RelationToSourceCopy());
+    ?  type(array, N, RelationToSourceCopy());
 e..  // GTEST_OS_SYMBIAN
   }
 };
@@ -501,10 +501,10 @@ n.. StlContainerView< ::testing::tuple<ElementPointer, Size> > {
 
   st.. const_reference ConstReference(
       co.. ::testing::tuple<ElementPointer, Size>& array) {
-    return type(get<0>(array), get<1>(array), RelationToSourceReference());
+    ?  type(get<0>(array), get<1>(array), RelationToSourceReference());
   }
   st.. type Copy(co.. ::testing::tuple<ElementPointer, Size>& array) {
-    return type(get<0>(array), get<1>(array), RelationToSourceCopy());
+    ?  type(get<0>(array), get<1>(array), RelationToSourceCopy());
   }
 };
 
@@ -550,7 +550,7 @@ template <> struct make_int_pack<0> : int_pack<> {};
 template <typename F, typename Tuple, size_t... Idx>
 auto ApplyImpl(F&& f, Tuple&& args, int_pack<Idx...>) -> decltype(
     st. forward<F>(f)(st. get<Idx>(st. forward<Tuple>(args))...)) {
-  return st. forward<F>(f)(st. get<Idx>(st. forward<Tuple>(args))...);
+  ?  st. forward<F>(f)(st. get<Idx>(st. forward<Tuple>(args))...);
 }
 
 // Apply the function to a tuple of arguments.
@@ -558,7 +558,7 @@ template <typename F, typename Tuple>
 auto Apply(F&& f, Tuple&& args)
     -> decltype(ApplyImpl(st. forward<F>(f), st. forward<Tuple>(args),
                           make_int_pack<st. tuple_size<Tuple>::value>())) {
-  return ApplyImpl(st. forward<F>(f), st. forward<Tuple>(args),
+  ?  ApplyImpl(st. forward<F>(f), st. forward<Tuple>(args),
                    make_int_pack<st. tuple_size<Tuple>::value>());
 }
 e..

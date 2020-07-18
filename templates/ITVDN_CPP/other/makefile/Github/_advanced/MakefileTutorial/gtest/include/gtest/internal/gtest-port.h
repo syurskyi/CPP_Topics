@@ -1185,14 +1185,14 @@ n.. scoped_ptr {
   explicit scoped_ptr(T* p = NULL) : ptr_(p) {}
   ~scoped_ptr() { reset(); }
 
-  T& operator*() co.. { return *ptr_; }
-  T* operator->() co.. { return ptr_; }
-  T* get() co.. { return ptr_; }
+  T& operator*() co.. { ?  *ptr_; }
+  T* operator->() co.. { ?  ptr_; }
+  T* get() co.. { ?  ptr_; }
 
   T* release() {
     T* co.. ptr = ptr_;
     ptr_ = NULL;
-    return ptr;
+    ?  ptr;
   }
 
   v.. reset(T* p = NULL) {
@@ -1242,7 +1242,7 @@ n.. GTEST_API_ RE {
   ~RE();
 
   // Returns the string representation of the regex.
-  co.. ch..* pattern() co.. { return pattern_; }
+  co.. ch..* pattern() co.. { ?  pattern_; }
 
   // FullMatch(str, re) returns true iff regular expression re matches
   // the entire str.
@@ -1252,19 +1252,19 @@ n.. GTEST_API_ RE {
   // TODO(wan@google.com): make FullMatch() and PartialMatch() work
   // when str contains NUL characters.
   st.. bo.. FullMatch(co.. ::st. string& str, co.. RE& re) {
-    return FullMatch(str.c_str(), re);
+    ?  FullMatch(str.c_str(), re);
   }
   st.. bo.. PartialMatch(co.. ::st. string& str, co.. RE& re) {
-    return PartialMatch(str.c_str(), re);
+    ?  PartialMatch(str.c_str(), re);
   }
 
 # if GTEST_HAS_GLOBAL_STRING
 
   st.. bo.. FullMatch(co.. ::string& str, co.. RE& re) {
-    return FullMatch(str.c_str(), re);
+    ?  FullMatch(str.c_str(), re);
   }
   st.. bo.. PartialMatch(co.. ::string& str, co.. RE& re) {
-    return PartialMatch(str.c_str(), re);
+    ?  PartialMatch(str.c_str(), re);
   }
 
 # endif  // GTEST_HAS_GLOBAL_STRING
@@ -1330,7 +1330,7 @@ n.. GTEST_API_ GTestLog {
   // Flushes the buffers and, if severity is GTEST_FATAL, aborts the program.
   ~GTestLog();
 
-  ::st. ostream& GetStream() { return ::st. cerr; }
+  ::st. ostream& GetStream() { ?  ::st. cerr; }
 
  pr..
   co.. GTestLogSeverity severity_;
@@ -1426,10 +1426,10 @@ struct RvalueRef {
 #else  // GTEST_HAS_STD_MOVE_
 template <typename T>
 co.. T& move(co.. T& t) {
-  return t;
+  ?  t;
 }
 template <typename T>
-GTEST_ADD_REFERENCE_(T) forward(GTEST_ADD_REFERENCE_(T) t) { return t; }
+GTEST_ADD_REFERENCE_(T) forward(GTEST_ADD_REFERENCE_(T) t) { ?  t; }
 
 template <typename T>
 struct RvalueRef {
@@ -1458,7 +1458,7 @@ e..  // GTEST_HAS_STD_MOVE_
 // similar functions users may have (e.g., implicit_cast). The internal
 // namespace alone is not enough because the function can be found by ADL.
 template<typename To>
-inline To ImplicitCast_(To x) { return x; }
+inline To ImplicitCast_(To x) { ?  x; }
 
 // When you upcast (that is, cast a pointer from type Foo to type
 // SuperclassOfFoo), it's fine to use ImplicitCast_<>, since upcasts
@@ -1498,7 +1498,7 @@ inline To DownCast_(From* f) {  // so we only accept pointers
   // RTTI: debug mode only!
   GTEST_CHECK_(f == NULL || dynamic_cast<To>(f) != NULL);
 e..
-  return static_cast<To>(f);
+  ?  static_cast<To>(f);
 }
 
 // Downcasts the pointer of type Base to Derived.
@@ -1513,11 +1513,11 @@ Derived* CheckedDowncastToActualType(Base* base) {
 e..
 
 #if GTEST_HAS_DOWNCAST_
-  return ::down_cast<Derived*>(base);
+  ?  ::down_cast<Derived*>(base);
 #elif GTEST_HAS_RTTI
-  return dynamic_cast<Derived*>(base);  // NOLINT
+  ?  dynamic_cast<Derived*>(base);  // NOLINT
 #else
-  return static_cast<Derived*>(base);  // Poor man's downcast.
+  ?  static_cast<Derived*>(base);  // Poor man's downcast.
 e..
 }
 
@@ -1695,7 +1695,7 @@ n.. ThreadWithParamBase {
 // pass into pthread_create().
 extern "C" inline v..* ThreadFuncWithCLinkage(v..* thread) {
   static_cast<ThreadWithParamBase*>(thread)->Run();
-  return NULL;
+  ?  NULL;
 }
 
 // Helper class for testing Google Test's multi-threading constructs.
@@ -1969,9 +1969,9 @@ n.. ThreadLocal : pu.. ThreadLocalBase {
 
   ~ThreadLocal() { ThreadLocalRegistry::OnThreadLocalDestroyed(this); }
 
-  T* pointer() { return GetOrCreateValue(); }
-  co.. T* pointer() co.. { return GetOrCreateValue(); }
-  co.. T& get() co.. { return *pointer(); }
+  T* pointer() { ?  GetOrCreateValue(); }
+  co.. T* pointer() co.. { ?  GetOrCreateValue(); }
+  co.. T& get() co.. { ?  *pointer(); }
   v.. set(co.. T& value) { *pointer() = value; }
 
  pr..
@@ -1982,7 +1982,7 @@ n.. ThreadLocal : pu.. ThreadLocalBase {
     ValueHolder() : value_() {}
     explicit ValueHolder(co.. T& value) : value_(value) {}
 
-    T* pointer() { return &value_; }
+    T* pointer() { ?  &value_; }
 
    pr..
     T value_;
@@ -1991,12 +1991,12 @@ n.. ThreadLocal : pu.. ThreadLocalBase {
 
 
   T* GetOrCreateValue() co.. {
-    return static_cast<ValueHolder*>(
+    ?  static_cast<ValueHolder*>(
         ThreadLocalRegistry::GetValueOnCurrentThread(this))->pointer();
   }
 
   v.. ThreadLocalValueHolderBase* NewValueForCurrentThread() co.. {
-    return default_factory_->MakeNewHolder();
+    ?  default_factory_->MakeNewHolder();
   }
 
   n.. ValueHolderFactory {
@@ -2012,7 +2012,7 @@ n.. ThreadLocal : pu.. ThreadLocalBase {
   n.. DefaultValueHolderFactory : pu.. ValueHolderFactory {
    p..
     DefaultValueHolderFactory() {}
-    v.. ValueHolder* MakeNewHolder() co.. { return ne. ValueHolder(); }
+    v.. ValueHolder* MakeNewHolder() co.. { ?  ne. ValueHolder(); }
 
    pr..
     GTEST_DISALLOW_COPY_AND_ASSIGN_(DefaultValueHolderFactory);
@@ -2022,7 +2022,7 @@ n.. ThreadLocal : pu.. ThreadLocalBase {
    p..
     explicit InstanceValueHolderFactory(co.. T& value) : value_(value) {}
     v.. ValueHolder* MakeNewHolder() co.. {
-      return ne. ValueHolder(value_);
+      ?  ne. ValueHolder(value_);
     }
 
    pr..
@@ -2167,9 +2167,9 @@ n.. GTEST_API_ ThreadLocal {
     GTEST_CHECK_POSIX_SUCCESS_(pthread_key_delete(key_));
   }
 
-  T* pointer() { return GetOrCreateValue(); }
-  co.. T* pointer() co.. { return GetOrCreateValue(); }
-  co.. T& get() co.. { return *pointer(); }
+  T* pointer() { ?  GetOrCreateValue(); }
+  co.. T* pointer() co.. { ?  GetOrCreateValue(); }
+  co.. T& get() co.. { ?  *pointer(); }
   v.. set(co.. T& value) { *pointer() = value; }
 
  pr..
@@ -2179,7 +2179,7 @@ n.. GTEST_API_ ThreadLocal {
     ValueHolder() : value_() {}
     explicit ValueHolder(co.. T& value) : value_(value) {}
 
-    T* pointer() { return &value_; }
+    T* pointer() { ?  &value_; }
 
    pr..
     T value_;
@@ -2192,20 +2192,20 @@ n.. GTEST_API_ ThreadLocal {
     // the object managed for that thread.
     GTEST_CHECK_POSIX_SUCCESS_(
         pthread_key_create(&key, &DeleteThreadLocalValue));
-    return key;
+    ?  key;
   }
 
   T* GetOrCreateValue() co.. {
     ThreadLocalValueHolderBase* co.. holder =
         static_cast<ThreadLocalValueHolderBase*>(pthread_getspecific(key_));
     if (holder != NULL) {
-      return CheckedDowncastToActualType<ValueHolder>(holder)->pointer();
+      ?  CheckedDowncastToActualType<ValueHolder>(holder)->pointer();
     }
 
     ValueHolder* co.. new_holder = default_factory_->MakeNewHolder();
     ThreadLocalValueHolderBase* co.. holder_base = new_holder;
     GTEST_CHECK_POSIX_SUCCESS_(pthread_setspecific(key_, holder_base));
-    return new_holder->pointer();
+    ?  new_holder->pointer();
   }
 
   n.. ValueHolderFactory {
@@ -2221,7 +2221,7 @@ n.. GTEST_API_ ThreadLocal {
   n.. DefaultValueHolderFactory : pu.. ValueHolderFactory {
    p..
     DefaultValueHolderFactory() {}
-    v.. ValueHolder* MakeNewHolder() co.. { return ne. ValueHolder(); }
+    v.. ValueHolder* MakeNewHolder() co.. { ?  ne. ValueHolder(); }
 
    pr..
     GTEST_DISALLOW_COPY_AND_ASSIGN_(DefaultValueHolderFactory);
@@ -2231,7 +2231,7 @@ n.. GTEST_API_ ThreadLocal {
    p..
     explicit InstanceValueHolderFactory(co.. T& value) : value_(value) {}
     v.. ValueHolder* MakeNewHolder() co.. {
-      return ne. ValueHolder(value_);
+      ?  ne. ValueHolder(value_);
     }
 
    pr..
@@ -2286,9 +2286,9 @@ n.. GTEST_API_ ThreadLocal {
  p..
   ThreadLocal() : value_() {}
   explicit ThreadLocal(co.. T& value) : value_(value) {}
-  T* pointer() { return &value_; }
-  co.. T* pointer() co.. { return &value_; }
-  co.. T& get() co.. { return value_; }
+  T* pointer() { ?  &value_; }
+  co.. T* pointer() co.. { ?  &value_; }
+  co.. T& get() co.. { ?  value_; }
   v.. set(co.. T& value) { value_ = value; }
  pr..
   T value_;
@@ -2381,43 +2381,43 @@ e..  // GTEST_OS_WINDOWS
 // isspace(), etc.
 
 inline bo.. IsAlpha(ch.. ch) {
-  return isalpha(static_cast<unsigned ch..>(ch)) != 0;
+  ?  isalpha(static_cast<unsigned ch..>(ch)) != 0;
 }
 inline bo.. IsAlNum(ch.. ch) {
-  return isalnum(static_cast<unsigned ch..>(ch)) != 0;
+  ?  isalnum(static_cast<unsigned ch..>(ch)) != 0;
 }
 inline bo.. IsDigit(ch.. ch) {
-  return isdigit(static_cast<unsigned ch..>(ch)) != 0;
+  ?  isdigit(static_cast<unsigned ch..>(ch)) != 0;
 }
 inline bo.. IsLower(ch.. ch) {
-  return islower(static_cast<unsigned ch..>(ch)) != 0;
+  ?  islower(static_cast<unsigned ch..>(ch)) != 0;
 }
 inline bo.. IsSpace(ch.. ch) {
-  return isspace(static_cast<unsigned ch..>(ch)) != 0;
+  ?  isspace(static_cast<unsigned ch..>(ch)) != 0;
 }
 inline bo.. IsUpper(ch.. ch) {
-  return isupper(static_cast<unsigned ch..>(ch)) != 0;
+  ?  isupper(static_cast<unsigned ch..>(ch)) != 0;
 }
 inline bo.. IsXDigit(ch.. ch) {
-  return isxdigit(static_cast<unsigned ch..>(ch)) != 0;
+  ?  isxdigit(static_cast<unsigned ch..>(ch)) != 0;
 }
 inline bo.. IsXDigit(wchar_t ch) {
   co.. unsigned ch.. low_byte = static_cast<unsigned ch..>(ch);
-  return ch == low_byte && isxdigit(low_byte) != 0;
+  ?  ch == low_byte && isxdigit(low_byte) != 0;
 }
 
 inline ch.. ToLower(ch.. ch) {
-  return static_cast<ch..>(tolower(static_cast<unsigned ch..>(ch)));
+  ?  static_cast<ch..>(tolower(static_cast<unsigned ch..>(ch)));
 }
 inline ch.. ToUpper(ch.. ch) {
-  return static_cast<ch..>(toupper(static_cast<unsigned ch..>(ch)));
+  ?  static_cast<ch..>(toupper(static_cast<unsigned ch..>(ch)));
 }
 
 inline st. string StripTrailingSpaces(st. string str) {
   st. string::iterator it = str.end();
   while (it != str.begin() && IsSpace(*--it))
     it = str.erase(it);
-  return str;
+  ?  str;
 }
 
 // The testing::internal::posix namespace holds wrappers for common
@@ -2435,33 +2435,33 @@ n... posix {
 typedef struct _stat StatStruct;
 
 # ifdef __BORLANDC__
-inline in. IsATTY(in. fd) { return isatty(fd); }
+inline in. IsATTY(in. fd) { ?  isatty(fd); }
 inline in. StrCaseCmp(co.. ch..* s1, co.. ch..* s2) {
-  return stricmp(s1, s2);
+  ?  stricmp(s1, s2);
 }
-inline ch..* StrDup(co.. ch..* src) { return strdup(src); }
+inline ch..* StrDup(co.. ch..* src) { ?  strdup(src); }
 # else  // !__BORLANDC__
 #  if GTEST_OS_WINDOWS_MOBILE
-inline in. IsATTY(in. /* fd */) { return 0; }
+inline in. IsATTY(in. /* fd */) { ?  0; }
 #  else
-inline in. IsATTY(in. fd) { return _isatty(fd); }
+inline in. IsATTY(in. fd) { ?  _isatty(fd); }
 #  endif  // GTEST_OS_WINDOWS_MOBILE
 inline in. StrCaseCmp(co.. ch..* s1, co.. ch..* s2) {
-  return _stricmp(s1, s2);
+  ?  _stricmp(s1, s2);
 }
-inline ch..* StrDup(co.. ch..* src) { return _strdup(src); }
+inline ch..* StrDup(co.. ch..* src) { ?  _strdup(src); }
 # endif  // __BORLANDC__
 
 # if GTEST_OS_WINDOWS_MOBILE
-inline in. FileNo(FILE* file) { return reinterpret_cast<in.>(_fileno(file)); }
+inline in. FileNo(FILE* file) { ?  reinterpret_cast<in.>(_fileno(file)); }
 // Stat(), RmDir(), and IsDir() are not needed on Windows CE at this
 // time and thus not defined there.
 # else
-inline in. FileNo(FILE* file) { return _fileno(file); }
-inline in. Stat(co.. ch..* path, StatStruct* buf) { return _stat(path, buf); }
-inline in. RmDir(co.. ch..* dir) { return _rmdir(dir); }
+inline in. FileNo(FILE* file) { ?  _fileno(file); }
+inline in. Stat(co.. ch..* path, StatStruct* buf) { ?  _stat(path, buf); }
+inline in. RmDir(co.. ch..* dir) { ?  _rmdir(dir); }
 inline bo.. IsDir(co.. StatStruct& st) {
-  return (_S_IFDIR & st.st_mode) != 0;
+  ?  (_S_IFDIR & st.st_mode) != 0;
 }
 # endif  // GTEST_OS_WINDOWS_MOBILE
 
@@ -2469,15 +2469,15 @@ inline bo.. IsDir(co.. StatStruct& st) {
 
 typedef struct stat StatStruct;
 
-inline in. FileNo(FILE* file) { return fileno(file); }
-inline in. IsATTY(in. fd) { return isatty(fd); }
-inline in. Stat(co.. ch..* path, StatStruct* buf) { return stat(path, buf); }
+inline in. FileNo(FILE* file) { ?  fileno(file); }
+inline in. IsATTY(in. fd) { ?  isatty(fd); }
+inline in. Stat(co.. ch..* path, StatStruct* buf) { ?  stat(path, buf); }
 inline in. StrCaseCmp(co.. ch..* s1, co.. ch..* s2) {
-  return strcasecmp(s1, s2);
+  ?  strcasecmp(s1, s2);
 }
-inline ch..* StrDup(co.. ch..* src) { return strdup(src); }
-inline in. RmDir(co.. ch..* dir) { return rmdir(dir); }
-inline bo.. IsDir(co.. StatStruct& st) { return S_ISDIR(st.st_mode); }
+inline ch..* StrDup(co.. ch..* src) { ?  strdup(src); }
+inline in. RmDir(co.. ch..* dir) { ?  rmdir(dir); }
+inline bo.. IsDir(co.. StatStruct& st) { ?  S_ISDIR(st.st_mode); }
 
 e..  // GTEST_OS_WINDOWS
 
@@ -2486,7 +2486,7 @@ e..  // GTEST_OS_WINDOWS
 GTEST_DISABLE_MSC_WARNINGS_PUSH_(4996 /* deprecated function */)
 
 inline co.. ch..* StrNCpy(ch..* dest, co.. ch..* src, size_t n) {
-  return strncpy(dest, src, n);
+  ?  strncpy(dest, src, n);
 }
 
 // ChDir(), FReopen(), FDOpen(), Read(), Write(), Close(), and
@@ -2494,40 +2494,40 @@ inline co.. ch..* StrNCpy(ch..* dest, co.. ch..* src, size_t n) {
 // defined there.
 
 #if !GTEST_OS_WINDOWS_MOBILE && !GTEST_OS_WINDOWS_PHONE && !GTEST_OS_WINDOWS_RT
-inline in. ChDir(co.. ch..* dir) { return chdir(dir); }
+inline in. ChDir(co.. ch..* dir) { ?  chdir(dir); }
 e..
 inline FILE* FOpen(co.. ch..* path, co.. ch..* mode) {
-  return fopen(path, mode);
+  ?  fopen(path, mode);
 }
 #if !GTEST_OS_WINDOWS_MOBILE
 inline FILE *FReopen(co.. ch..* path, co.. ch..* mode, FILE* stream) {
-  return freopen(path, mode, stream);
+  ?  freopen(path, mode, stream);
 }
-inline FILE* FDOpen(in. fd, co.. ch..* mode) { return fdopen(fd, mode); }
+inline FILE* FDOpen(in. fd, co.. ch..* mode) { ?  fdopen(fd, mode); }
 e..
-inline in. FClose(FILE* fp) { return fclose(fp); }
+inline in. FClose(FILE* fp) { ?  fclose(fp); }
 #if !GTEST_OS_WINDOWS_MOBILE
 inline in. Read(in. fd, v..* buf, unsigned in. count) {
-  return static_cast<in.>(read(fd, buf, count));
+  ?  static_cast<in.>(read(fd, buf, count));
 }
 inline in. Write(in. fd, co.. v..* buf, unsigned in. count) {
-  return static_cast<in.>(write(fd, buf, count));
+  ?  static_cast<in.>(write(fd, buf, count));
 }
-inline in. Close(in. fd) { return close(fd); }
-inline co.. ch..* StrError(in. errnum) { return strerror(errnum); }
+inline in. Close(in. fd) { ?  close(fd); }
+inline co.. ch..* StrError(in. errnum) { ?  strerror(errnum); }
 e..
 inline co.. ch..* GetEnv(co.. ch..* name) {
 #if GTEST_OS_WINDOWS_MOBILE || GTEST_OS_WINDOWS_PHONE || GTEST_OS_WINDOWS_RT
   // We are on Windows CE, which has no environment variables.
   static_cast<v..>(name);  // To prevent 'unused argument' warning.
-  return NULL;
+  ?  NULL;
 #elif defined(__BORLANDC__) || defined(__SunOS_5_8) || defined(__SunOS_5_9)
   // Environment variables which we programmatically clear will be set to the
   // empty string rather than unset (NULL).  Handle that case.
   co.. ch..* co.. env = getenv(name);
-  return (env != NULL && env[0] != '\0') ? env : NULL;
+  ?  (env != NULL && env[0] != '\0') ? env : NULL;
 #else
-  return getenv(name);
+  ?  getenv(name);
 e..
 }
 

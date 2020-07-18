@@ -35,13 +35,13 @@ v.. Point<T>::setX(T x)
 template<typename T>
 T Point<T>::getX()
 {
-    return this->x;
+    ?  this->x;
 }
 template<>
 do.. Point<do..>::getX()
 {
     cout <<"this function will be executed only when Point<double>" << endl;
-    return this->x;
+    ?  this->x;
 }
 
 template<typename K>
@@ -59,7 +59,7 @@ n.. Point2D : pu.. Point<T> //derived, child, subclass
     p..
         Point2D(T =0, T =0);
         ~Point2D();
-        T getY() { return y; }
+        T getY() { ?  y; }
         v.. setY(T);
         v.. setX(T);
         v.. setXY(T, T);
@@ -102,7 +102,7 @@ Point2D<T> Point2D<T>::operator+(Point2D o)
     tmp.setX(this->getX() + o.getX());
     tmp.setY(this->getY() + o.getY());
 
-    return tmp;
+    ?  tmp;
 }
 /*
 class Point3D : public Point2D

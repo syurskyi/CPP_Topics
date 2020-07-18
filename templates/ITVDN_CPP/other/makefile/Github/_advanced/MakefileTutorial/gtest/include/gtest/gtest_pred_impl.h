@@ -85,9 +85,9 @@ AssertionResult AssertPred1Helper(co.. ch..* pred_text,
                                   co.. ch..* e1,
                                   Pred pred,
                                   co.. T1& v1) {
-  if (pred(v1)) return AssertionSuccess();
+  if (pred(v1)) ?  AssertionSuccess();
 
-  return AssertionFailure() << pred_text << "("
+  ?  AssertionFailure() << pred_text << "("
                             << e1 << ") evaluates to false, where"
                             << "\n" << e1 << " evaluates to " << v1;
 }
@@ -129,9 +129,9 @@ AssertionResult AssertPred2Helper(co.. ch..* pred_text,
                                   Pred pred,
                                   co.. T1& v1,
                                   co.. T2& v2) {
-  if (pred(v1, v2)) return AssertionSuccess();
+  if (pred(v1, v2)) ?  AssertionSuccess();
 
-  return AssertionFailure() << pred_text << "("
+  ?  AssertionFailure() << pred_text << "("
                             << e1 << ", "
                             << e2 << ") evaluates to false, where"
                             << "\n" << e1 << " evaluates to " << v1
@@ -180,9 +180,9 @@ AssertionResult AssertPred3Helper(co.. ch..* pred_text,
                                   co.. T1& v1,
                                   co.. T2& v2,
                                   co.. T3& v3) {
-  if (pred(v1, v2, v3)) return AssertionSuccess();
+  if (pred(v1, v2, v3)) ?  AssertionSuccess();
 
-  return AssertionFailure() << pred_text << "("
+  ?  AssertionFailure() << pred_text << "("
                             << e1 << ", "
                             << e2 << ", "
                             << e3 << ") evaluates to false, where"
@@ -238,9 +238,9 @@ AssertionResult AssertPred4Helper(co.. ch..* pred_text,
                                   co.. T2& v2,
                                   co.. T3& v3,
                                   co.. T4& v4) {
-  if (pred(v1, v2, v3, v4)) return AssertionSuccess();
+  if (pred(v1, v2, v3, v4)) ?  AssertionSuccess();
 
-  return AssertionFailure() << pred_text << "("
+  ?  AssertionFailure() << pred_text << "("
                             << e1 << ", "
                             << e2 << ", "
                             << e3 << ", "
@@ -303,9 +303,9 @@ AssertionResult AssertPred5Helper(co.. ch..* pred_text,
                                   co.. T3& v3,
                                   co.. T4& v4,
                                   co.. T5& v5) {
-  if (pred(v1, v2, v3, v4, v5)) return AssertionSuccess();
+  if (pred(v1, v2, v3, v4, v5)) ?  AssertionSuccess();
 
-  return AssertionFailure() << pred_text << "("
+  ?  AssertionFailure() << pred_text << "("
                             << e1 << ", "
                             << e2 << ", "
                             << e3 << ", "

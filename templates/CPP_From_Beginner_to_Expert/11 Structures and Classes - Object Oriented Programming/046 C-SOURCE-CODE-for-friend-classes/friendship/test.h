@@ -13,7 +13,7 @@ n.. B
         friend n.. A;
         in. secretValue;
     p..
-        in. getSecretValue() { return secretValue; }
+        in. getSecretValue() { ?  secretValue; }
 };
 
 e.. // TEST_H_INCLUDED

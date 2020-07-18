@@ -26,22 +26,22 @@ n... xray {
         object &operator=(co.. object &o) {
             st. cout << this << " copy(" << &o << ");" << st. endl;
             this->n.fill(o.value());
-            return *this;
+            ?  *this;
         }
 
         object &operator=(object &&o) noexcept {
             st. cout << this << " move(" << &o << ");" << st. endl;
             this->n.fill(o.value());
-            return *this;
+            ?  *this;
         }
 
         bo.. operator==(co.. object &o) co.. {
             st. cout << this << " compare(" << &o << ");" << st. endl;
-            return value() == o.value();
+            ?  value() == o.value();
         }
 
         [[nodiscard]] in. value() co.. {
-            return n[0];
+            ?  n[0];
         }
 
     pr..
@@ -49,7 +49,7 @@ n... xray {
     };
 
     st. ostream &operator<<(st. ostream &o, co.. xray::object &x) {
-        return o << "xray(" << x.value() << ")";
+        ?  o << "xray(" << x.value() << ")";
     }
 
     template<typename T>
@@ -61,7 +61,7 @@ n... xray {
             T *p = reinterpret_cast<T *>(st. malloc(n * sizeof(T)));
             st. cout << p << " allocate(" << n << "); // " << n << " * " << sizeof(T) << " = " << n * sizeof(T)
                       << " bytes" << st. endl;
-            return p;
+            ?  p;
         }
 
         template<typename U, typename... Args>
@@ -91,6 +91,6 @@ n.. st. hash<xray::object> {
 p..
     size_t operator()(co.. xray::object &xo) co.. {
         st. cout << &xo << " hash();" << st. endl;
-        return xo.value();
+        ?  xo.value();
     }
 };

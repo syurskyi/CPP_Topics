@@ -243,7 +243,7 @@ template <typename ch.., typename CharTraits, typename T>
                                          :
 e..
                                          kOtherType)>::PrintValue(x, &os);
-  return os;
+  ?  os;
 }
 
 }  // namespace internal2
@@ -310,7 +310,7 @@ template <typename ToPrint, typename OtherOperand>
 n.. FormatForComparison {
  p..
   st.. ::st. string Format(co.. ToPrint& value) {
-    return ::testing::PrintToString(value);
+    ?  ::testing::PrintToString(value);
   }
 };
 
@@ -319,7 +319,7 @@ template <typename ToPrint, size_t N, typename OtherOperand>
 n.. FormatForComparison<ToPrint[N], OtherOperand> {
  p..
   st.. ::st. string Format(co.. ToPrint* value) {
-    return FormatForComparison<co.. ToPrint*, OtherOperand>::Format(value);
+    ?  FormatForComparison<co.. ToPrint*, OtherOperand>::Format(value);
   }
 };
 
@@ -331,7 +331,7 @@ _de.. GTEST_IMPL_FORMAT_C_STRING_AS_POINTER_(CharType)                \
   n.. FormatForComparison<CharType*, OtherOperand> {                  \
    p..                                                              \
     st.. ::st. string Format(CharType* value) {                      \
-      return ::testing::PrintToString(static_cast<co.. v..*>(value)); \
+      ?  ::testing::PrintToString(static_cast<co.. v..*>(value)); \
     }                                                                   \
   }
 
@@ -350,7 +350,7 @@ _de.. GTEST_IMPL_FORMAT_C_STRING_AS_STRING_(CharType, OtherStringType) \
   n.. FormatForComparison<CharType*, OtherStringType> {               \
    p..                                                              \
     st.. ::st. string Format(CharType* value) {                      \
-      return ::testing::PrintToString(value);                           \
+      ?  ::testing::PrintToString(value);                           \
     }                                                                   \
   }
 
@@ -385,7 +385,7 @@ e..
 template <typename T1, typename T2>
 st. string FormatForComparisonFailureMessage(
     co.. T1& value, co.. T2& /* other_operand */) {
-  return FormatForComparison<T1, T2>::Format(value);
+  ?  FormatForComparison<T1, T2>::Format(value);
 }
 
 // UniversalPrinter<T>::Print(value, ostream_ptr) prints the given
@@ -983,7 +983,7 @@ struct TuplePolicy {
   st.. typename AddReference<
       co.. typename ::st. tr1::tuple_element<I, Tuple>::type>::type get(
       co.. Tuple& tuple) {
-    return ::st. tr1::get<I>(tuple);
+    ?  ::st. tr1::get<I>(tuple);
   }
 };
 template <typename TupleT>
@@ -1002,7 +1002,7 @@ struct TuplePolicy< ::st. tuple<Types...> > {
   template <size_t I>
   st.. co.. typename ::st. tuple_element<I, Tuple>::type& get(
       co.. Tuple& tuple) {
-    return ::st. get<I>(tuple);
+    ?  ::st. get<I>(tuple);
   }
 };
 template <typename... Types>
@@ -1072,7 +1072,7 @@ Strings UniversalTersePrintTupleFieldsToStrings(co.. Tuple& value) {
   Strings result;
   TuplePrefixPrinter<TuplePolicy<Tuple>::tuple_size>::
       TersePrintPrefixToStrings(value, &result);
-  return result;
+  ?  result;
 }
 e..  // GTEST_HAS_TR1_TUPLE || GTEST_HAS_STD_TUPLE_
 
@@ -1092,7 +1092,7 @@ template <typename T>
 ::st. string PrintToString(co.. T& value) {
   ::st. stringstream ss;
   internal::UniversalTersePrinter<T>::Print(value, &ss);
-  return ss.str();
+  ?  ss.str();
 }
 
 }  // namespace testing

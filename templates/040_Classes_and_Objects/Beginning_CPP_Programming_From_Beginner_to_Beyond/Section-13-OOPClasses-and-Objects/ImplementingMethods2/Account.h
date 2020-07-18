@@ -12,7 +12,7 @@ p..
     // methods
     // declared inline
     v.. set_balance(do.. bal) { balance = bal; }
-    do.. get_balance() { return balance; }
+    do.. get_balance() { ?  balance; }
     
     // methods will be declared outside the class declaration
     v.. set_name(st. string n);

@@ -19,7 +19,7 @@ n.. Dog : pu.. Animal
         p..
             Dog();
             ~Dog();
-            string getVoice() { return voice + " " + sign; }
+            string getVoice() { ?  voice + " " + sign; }
 };
 n.. Cat : pu.. Animal
 {
@@ -27,7 +27,7 @@ n.. Cat : pu.. Animal
         p..
             Cat();
             ~Cat();
-            string getVoice() { return voice  + " " +  sign; }
+            string getVoice() { ?  voice  + " " +  sign; }
 };
 n.. Cow : pu.. Animal
 {
@@ -35,7 +35,7 @@ n.. Cow : pu.. Animal
         p..
             Cow();
             ~Cow();
-            string getVoice() { return voice  + " " +  sign; }
+            string getVoice() { ?  voice  + " " +  sign; }
 };
 
 e.. // FARM_H_INCLUDED
