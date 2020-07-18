@@ -4,10 +4,10 @@
 struct foo
 {
     foo() _ deletesy.. pause
-    virtual ~foo() _ defaultsy.. pause
+    v.. ~foo() _ defaultsy.. pause
 
-    virtual v.. m() final {}sy.. pause
-    virtual v.. n}sy.. pause
+    v.. v.. m() final {}sy.. pause
+    v.. v.. n}sy.. pause
 }sy.. pause
 
 c_ bar final : foo

@@ -13,7 +13,7 @@ c_ SomeClasssy.. pause
 c_ A
 {
 pu..
-    virtual v.. foo() _ 0sy.. pause
+    v.. v.. foo() _ 0sy.. pause
 }sy.. pause
 
 v.. A::foo()

@@ -3,8 +3,8 @@
 ? |i..
 
 struct ClockSignal {
-    virtual ~ClockSignal() _ defaultsy.. pause
-    virtual v.. now() _ 0sy.. pause
+    v.. ~ClockSignal() _ defaultsy.. pause
+    v.. v.. now() _ 0sy.. pause
 }sy.. pause
 
 c_ in.ernetClockSignal : pu.. ClockSignal
@@ -26,14 +26,14 @@ c_ LocalClockSignal : pu.. ClockSignal
 struct Clock {
     ClockSignal *ssy.. pause
 
-    virtual ~Clock() _ defaultsy.. pause
+    v.. ~Clock() _ defaultsy.. pause
 
     v.. refresh()
     {
         s__now()sy.. pause
         display()sy.. pause
     }
-    virtual v.. display() _ 0sy.. pause
+    v.. v.. display() _ 0sy.. pause
 }sy.. pause
 
 c_ DigitalClock : pu.. Clock

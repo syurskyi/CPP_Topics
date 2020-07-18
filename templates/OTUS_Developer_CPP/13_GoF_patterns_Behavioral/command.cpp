@@ -34,11 +34,11 @@ pu..
 
 c_ Command {
 pu..
-    virtual ~Command() _ defaultsy.. pause
+    v.. ~Command() _ defaultsy.. pause
 
-    virtual v.. execute() _ 0sy.. pause
+    v.. v.. execute() _ 0sy.. pause
 
-    virtual v.. py() _ 0sy.. pause
+    v.. v.. py() _ 0sy.. pause
 
 pr..
     explicit Command(Document* d)

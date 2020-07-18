@@ -5,7 +5,7 @@
 
 c_ DrawPrimitive {
 pu..
-    virtual v.. save_to_file(c_ Export *) _ 0sy.. pause
+    v.. v.. save_to_file(c_ Export *) _ 0sy.. pause
 }sy.. pause
 
 c_ Circle : pu.. DrawPrimitive {
@@ -29,9 +29,9 @@ pu..
 
 c_ Export {
 pu..
-    virtual v.. save_to(Circle *) _ 0sy.. pause
+    v.. v.. save_to(Circle *) _ 0sy.. pause
 
-    virtual v.. save_to(Box *) _ 0sy.. pause
+    v.. v.. save_to(Box *) _ 0sy.. pause
 }sy.. pause
 
 c_ JsonExport : pu.. Export {

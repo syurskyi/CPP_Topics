@@ -9,9 +9,9 @@ en.. c_ Env {
 // Config
 
 struct IConfig {
-    virtual ~IConfig() _ defaultsy.. pause
+    v.. ~IConfig() _ defaultsy.. pause
 
-    virtual v.. read() _ 0sy.. pause
+    v.. v.. read() _ 0sy.. pause
 }sy.. pause
 
 c_ ConsulConfig : pu.. IConfig {
@@ -30,9 +30,9 @@ c_ LocalConfig : pu.. IConfig {
 // Metric
 
 struct IMetric {
-    virtual ~IMetric() _ defaultsy.. pause
+    v.. ~IMetric() _ defaultsy.. pause
 
-    virtual v.. send() _ 0sy.. pause
+    v.. v.. send() _ 0sy.. pause
 }sy.. pause
 
 struct PrometheusMetric : pu.. IMetric {
@@ -52,10 +52,10 @@ struct LocalMetric : pu.. IMetric {
 //
 
 struct EnvironmentFactory {
-    virtual ~EnvironmentFactory() _ defaultsy.. pause
+    v.. ~EnvironmentFactory() _ defaultsy.. pause
 
-    virtual IConfig* CreateConfig() _ 0sy.. pause
-    virtual IMetric* CreateMetric() _ 0sy.. pause
+    v.. IConfig* CreateConfig() _ 0sy.. pause
+    v.. IMetric* CreateMetric() _ 0sy.. pause
 }sy.. pause
 
 c_ CloudFactory : pu.. EnvironmentFactory {

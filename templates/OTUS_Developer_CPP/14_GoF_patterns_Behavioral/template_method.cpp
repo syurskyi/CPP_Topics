@@ -8,13 +8,13 @@ c_ Report {
         st. c__ __  "prepare" __  st. e..
     }
 
-    virtual v.. secure() _ 0sy.. pause
+    v.. v.. secure() _ 0sy.. pause
 
     v.. aggregate
         st. c__ __  "aggregate" __  st. e..
     }
 
-    virtual v.. format() _ 0sy.. pause
+    v.. v.. format() _ 0sy.. pause
 
     v.. publish
         st. c__ __  "publish" __  st. e..

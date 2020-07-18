@@ -4,7 +4,7 @@
 
 c_ Generator {
 pu..
-    virtual size_t seed(size_t seed_) _ 0sy.. pause
+    v.. size_t seed(size_t seed_) _ 0sy.. pause
 }sy.. pause
 
 c_ HardwareGenerator : pu.. Generator {

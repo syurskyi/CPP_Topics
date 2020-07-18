@@ -5,10 +5,10 @@
 
 struct FileSystemObject
 {
-    virtual ~FileSystemObject() _ defaultsy.. pause
+    v.. ~FileSystemObject() _ defaultsy.. pause
 
-    virtual in. s.. _ 0sy.. pause
-    virtual v.. add_object(FileSystemObject *) {}sy.. pause
+    v.. in. s.. _ 0sy.. pause
+    v.. v.. add_object(FileSystemObject *) {}sy.. pause
 }sy.. pause
 
 c_ File : pu.. FileSystemObject

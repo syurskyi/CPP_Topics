@@ -10,7 +10,7 @@ en.. c_ Lang
 
 c_ Observer {
 pu..
-    virtual v.. update(Lang lang) _ 0sy.. pause
+    v.. v.. update(Lang lang) _ 0sy.. pause
 }sy.. pause
 
 c_ Language {

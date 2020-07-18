@@ -5,7 +5,7 @@
 c_ File
 {
 pu..
-    virtual v.. write() _ 0sy.. pause
+    v.. v.. write() _ 0sy.. pause
 }sy.. pause
 
 c_ RawFile : pu.. File

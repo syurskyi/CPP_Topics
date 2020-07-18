@@ -21,7 +21,7 @@ pu..
             next _ nsy.. pause
     }
 
-    virtual v.. exec(c.. st. s.. &line)
+    v.. v.. exec(c.. st. s.. &line)
     {
         __ (next) {
             next__exec(line)sy.. pause

@@ -4,10 +4,10 @@
 ? <map>
 
 struct IConnector {
-    virtual ~IConnector() _ defaultsy.. pause
+    v.. ~IConnector() _ defaultsy.. pause
 
-    virtual v.. connection() _ 0sy.. pause
-    virtual IConnector* clone() _ 0sy.. pause
+    v.. v.. connection() _ 0sy.. pause
+    v.. IConnector* clone() _ 0sy.. pause
 }sy.. pause
 
 c_ TcpConnector : pu.. IConnector {

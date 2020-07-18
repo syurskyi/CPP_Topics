@@ -5,8 +5,8 @@
 c_ ILogger
 {
 pu..
-    virtual v.. info() _ 0sy.. pause
-    virtual v.. error() _ 0sy.. pause
+    v.. v.. info() _ 0sy.. pause
+    v.. v.. error() _ 0sy.. pause
 }sy.. pause
 
 c_ Logger : pu.. ILogger

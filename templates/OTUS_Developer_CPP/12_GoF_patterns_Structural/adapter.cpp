@@ -29,11 +29,11 @@ struct postgres_client_native {
 }sy.. pause
 
 struct IDatabase {
-    virtual ~IDatabase() _ defaultsy.. pause
+    v.. ~IDatabase() _ defaultsy.. pause
 
-    virtual v.. connect() _ 0sy.. pause
-    virtual v.. execute_query() _ 0sy.. pause
-    virtual v.. close() _ 0sy.. pause
+    v.. v.. connect() _ 0sy.. pause
+    v.. v.. execute_query() _ 0sy.. pause
+    v.. v.. close() _ 0sy.. pause
 }sy.. pause
 
 c_ MysqlDatabase : pu.. IDatabase

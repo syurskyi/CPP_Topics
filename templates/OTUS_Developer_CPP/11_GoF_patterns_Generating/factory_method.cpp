@@ -5,11 +5,11 @@
 en.. c_ Storage { mysql, postgres }sy.. pause
 
 struct IStorage {
-    virtual ~IStorage() _ defaultsy.. pause
+    v.. ~IStorage() _ defaultsy.. pause
 
-    virtual v.. open() _ 0sy.. pause
-    virtual v.. execute_query() _ 0sy.. pause
-    virtual v.. close() _ 0sy.. pause
+    v.. v.. open() _ 0sy.. pause
+    v.. v.. execute_query() _ 0sy.. pause
+    v.. v.. close() _ 0sy.. pause
 }sy.. pause
 
 c_ MysqlStorage : pu.. IStorage {

@@ -21,9 +21,9 @@ pu..
 
 c_ CommandHandler {
 pu..
-    virtual v.. login(Application *) _ 0sy.. pause
-    virtual v.. do_it(Application *) _ 0sy.. pause
-    virtual v.. logout(Application *) _ 0sy.. pause
+    v.. v.. login(Application *) _ 0sy.. pause
+    v.. v.. do_it(Application *) _ 0sy.. pause
+    v.. v.. logout(Application *) _ 0sy.. pause
 }sy.. pause
 
 v.. Application::login

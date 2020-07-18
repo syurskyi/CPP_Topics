@@ -17,7 +17,7 @@ u.. s..
 c_ Shape {
 pu..
   // pure virtual function providing interface framework.
-  virtual in. getArea() _ 0sy.. pause
+  v.. in. getArea() _ 0sy.. pause
   v.. setWidth(in. w) { width _ wsy.. pause }
 
   v.. setHeight(in. h) { height _ hsy.. pause }
