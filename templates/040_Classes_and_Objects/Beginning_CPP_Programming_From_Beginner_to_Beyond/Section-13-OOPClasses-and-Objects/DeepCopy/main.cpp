@@ -1,51 +1,51 @@
-// Section 13
-// Copy Constructor - Deep Copy
-? ios..
-
-u.. s..
-
-c_ Deep {
-pr..
-    in. *data;
-pu..
-    v.. set_data_value(in. d) { *data = d; }
-    in. get_data_value r_ *data; }
-    // Constructor
-    Deep(in. d);
-    // Copy Constructor
-    Deep(co.. Deep &source);
-    // Destructor
-    ~Deep();
-};
-
-Deep::Deep(in. d) {
-    data = ne. in.;
-    *data = d;
-}
-
-Deep::Deep(co.. Deep &source)
-    : Deep {*source.data} {
-    c.. __ "Copy constructor  - deep copy" __ e..
-}
-
-Deep::~Deep
-    de... data;
-    c.. __ "Destructor freeing data" __ e..
-}
-
-v.. display_deep(Deep s) {
-    c.. __ s.get_data_value() __ e..
-}
-
-in. main
-    
-    Deep obj1 {100};
-    display_deep(obj1);
-    
-    Deep obj2 {obj1};
-    
-    obj2.set_data_value(1000);
-  
-    r_ 0;
-}
-
+//// Section 13
+//// Copy Constructor - Deep Copy
+//? ios..
+//
+//u.. s..
+//
+//c_ Deep
+//pr..
+//    in. #data
+//pu..
+//    v.. set_data_value(in. d)  #data _ d
+//    in. get_data_value r_ #data
+//    // Constructor
+//    ? in. d
+//    // Copy Constructor
+//    ?(co.. ? #source
+//    // Destructor
+//#?
+//
+//
+//? ?(in. d)
+//    data _ ne. in.
+//    #data _ d
+//
+//
+//? ? co.. ? #source
+//    | ? #?.d..
+//    c.. __ "Copy constructor  - deep copy" __ e..
+//
+//
+//? #?
+//    de... data;
+//    c.. __ "Destructor freeing data" __ e..
+//
+//
+//v.. display_deep ? s)
+//    c.. __ ?.g_d_v.. __ e..
+//
+//
+//in. main
+//
+//    ? obj1 100
+//    d_d.. ?
+//
+//    ? obj2 obj1
+//
+//    obj2._d_v.. 1000
+//
+//    r_ _
+//
+//
