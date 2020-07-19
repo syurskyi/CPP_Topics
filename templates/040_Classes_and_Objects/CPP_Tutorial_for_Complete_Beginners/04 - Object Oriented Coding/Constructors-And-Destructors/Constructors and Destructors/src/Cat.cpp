@@ -2,29 +2,29 @@
  * Cat.cpp
  *
  *  Created on: 2 Jul 2014
- *      Author: johnwpurcell
+ *      Author: syurskyi
  */
 ? ios..
 ? "Cat.h"
 
 u.. s..
 
-Cat::Cat
+? ?
 	c.. __ "Cat created." __ e..
 
-	happy = t..
-}
+	happy _ t..
 
-Cat::~Cat
+
+? #?
 	c.. __ "Cat destroyed." __ e..
-}
 
-v.. Cat::speak
-	__(happy) {
+
+v.. ? speak
+	__ happy
 		c.. __ "Meouww!" __ e..
-	}
-	____ {
+
+	____
 		c.. __ "Ssssss!" __ e..
-	}
-}
+
+
 
