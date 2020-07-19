@@ -1,25 +1,22 @@
-﻿//? *s..
-//? |i..
-//
-//u.. s..
-//
-//in. main
-//
-//	in. count _ 5
-//
-//
-//	w___ ? > 0
-//
-//		c__ __  "Count = " __  ? __  e..
-//		?##
-//
-//		c___	// Эта  инстукция прекратит выполнение текущей итерации, и передаст управление секции изменения счетчика
-//
-//		c__ __  "007_This line is never executed"
-//
-//
-//	c__ __  "007_This line is always executed"
-//
-//	c__.g..
-//	r_ _
-//
+﻿#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int count = 5;
+
+    while (count > 0) {
+        cout << "Count = " << count << endl;
+        count--;
+        continue;    // Эта  инстукция прекратит выполнение текущей итерации, и передаст управление секции изменения счетчика
+
+        cout << "007_This line is never executed";
+    }
+
+    cout << "007_This line is always executed";
+
+    cin.get();
+    return 0;
+}
+
