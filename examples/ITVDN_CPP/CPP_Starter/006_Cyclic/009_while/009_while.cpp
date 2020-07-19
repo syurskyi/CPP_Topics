@@ -15,10 +15,10 @@ int main()
 
 		continue;	// Эта  инстукция прекратит выполнение текущей итерации, и передаст управление секции изменения счетчика
 	
-		cout << "This line is never executed";
+		cout << "007_This line is never executed";
 	}
 
-	cout << "This line is always executed";
+	cout << "007_This line is always executed";
 
 	cin.get();	
 	return 0;

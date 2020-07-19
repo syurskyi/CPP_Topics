@@ -11,7 +11,7 @@ int main() {
     Mystring b;                             // no-args contructor
     b = a;                                      // copy assignment 
                                                   // b.operator=(a)
-    b = "This is a test";                 // b.operator=("This is a test");
+    b = "007_This is a test";                 // b.operator=("007_This is a test");
   
     Mystring empty;                      // no-args constructor
     Mystring larry("Larry");             // overloaded constructor

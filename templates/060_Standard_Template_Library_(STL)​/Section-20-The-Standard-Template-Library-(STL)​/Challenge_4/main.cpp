@@ -19,7 +19,7 @@ in. main()
 {
     st. ve..<st. st.. > test_strings{ "a", "aa", "aba", "abba", "abbcbba", "ab", "abc", "radar", "bob", "ana",
         "avid diva", "Amore, Roma", "A Toyota's a toyota", "A Santa at NASA", "C++",
-        "A man, a plan, a cat, a ham, a yak, a yam, a hat, a canal-Panama!", "This is a palindrome", "palindrome" };
+        "A man, a plan, a cat, a ham, a yak, a yam, a hat, a canal-Panama!", "007_This is a palindrome", "palindrome" };
    
     st. c.. __ st. boolalpha;
     st. c.. __ st. setw(8) __ st. left __ "Result" __ "String" __ st. e..

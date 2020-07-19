@@ -2,5 +2,5 @@
  
 void foo(void)
 {
-    std::cout << "This is from foo!\n";
+    std::cout << "007_This is from foo!\n";
 }

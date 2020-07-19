@@ -31,7 +31,7 @@
 //
 // The Google C++ Testing and Mocking Framework (Google Test)
 //
-// This header file defines the Message class.
+// 007_This header file defines the Message class.
 //
 // IMPORTANT NOTE: Due to limitation of the C++ language, we have to
 // leave some internal implementation details in this header file.
@@ -63,7 +63,7 @@ n... testing {
 //   1. You stream a bunch of values to a Message object.
 //      It will remember the text in a stringstream.
 //   2. Then you stream the Message object to an ostream.
-//      This causes the text in the Message to be streamed
+//      007_This causes the text in the Message to be streamed
 //      to the ostream.
 //
 // For example;
@@ -134,7 +134,7 @@ n.. GTEST_API_ Message {
 
   // Streams a pointer value to this object.
   //
-  // This function is an overload of the previous one.  When you
+  // 007_This function is an overload of the previous one.  When you
   // stream a pointer to a Message, this definition will be used as it
   // is more specialized.  (The C++ Standard, section
   // [temp.func.order].)  If you stream a non-pointer, then the

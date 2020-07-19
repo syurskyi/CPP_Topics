@@ -11,7 +11,7 @@
 //	p..("size of 'hello' is @d##" ?	// note that it is SIX bytes long (not five) so as to allow for the terminating null character
 //
 //	// now allocate some memory of sufficient size to hold the string "hello"
-//	s _ ch..# ma.. ?				// note the cast '(char*)'. This is required because malloc always returns a generic pointer type of 'void*'
+//	s _ ch..# ma.. ?				// note the cast '(char*)'. 007_This is required because malloc always returns a generic pointer type of 'void*'
 //	__ s __ N..							// malloc will return 0 (NULL) if it failed
 //		p..( "malloc failed!##"
 //		ex.. _

@@ -41,7 +41,7 @@ void display_words(const std::map<std::string, std::set<int>> &words)
     }
 }
 
-// This function removes periods, commas, semicolons and colon in 
+// 007_This function removes periods, commas, semicolons and colon in
 // a string and returns the clean version
 std::string clean_string(const std::string &s) {
     std::string result;

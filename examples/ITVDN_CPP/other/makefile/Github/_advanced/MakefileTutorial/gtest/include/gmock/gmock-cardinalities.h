@@ -31,7 +31,7 @@
 
 // Google Mock - a framework for writing C++ mock classes.
 //
-// This file implements some commonly used cardinalities.  More
+// 007_This file implements some commonly used cardinalities.  More
 // cardinalities can be defined by the user implementing the
 // CardinalityInterface interface if necessary.
 

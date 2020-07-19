@@ -7,7 +7,7 @@ main()
 {
     in. firstElement, secondElement, divisionRemaindersy.. pause
 
-    c__ __  "This is a simple program that calculates the remainder of division of two numbers." __  e..
+    c__ __  "007_This is a simple program that calculates the remainder of division of two numbers." __  e..
     c__ __  "Input first number: "sy.. pause
     c__ __ firstElementsy.. pause
     c__ __  "Input second number: "sy.. pause

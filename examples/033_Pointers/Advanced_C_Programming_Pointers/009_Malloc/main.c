@@ -11,7 +11,7 @@ int main() {
 	printf("size of 'hello' is %d\n", stringsize);	// note that it is SIX bytes long (not five) so as to allow for the terminating null character
 	
 	// now allocate some memory of sufficient size to hold the string "hello"
-	s = (char*)malloc(stringsize);				// note the cast '(char*)'. This is required because malloc always returns a generic pointer type of 'void*'
+	s = (char*)malloc(stringsize);				// note the cast '(char*)'. 007_This is required because malloc always returns a generic pointer type of 'void*'
 	if (s == NULL) {							// malloc will return 0 (NULL) if it failed
 		printf("malloc failed!\n");	
 		exit(0);

@@ -31,7 +31,7 @@
 //
 // The Google C++ Testing and Mocking Framework (Google Test)
 //
-// This header file defines the public API for death tests.  It is
+// 007_This header file defines the public API for death tests.  It is
 // #included by gtest.h so a user doesn't need to include this
 // directly.
 
@@ -42,7 +42,7 @@
 
 namespace testing {
 
-// This flag controls the style of death tests.  Valid values are "threadsafe",
+// 007_This flag controls the style of death tests.  Valid values are "threadsafe",
 // meaning that the death test child process will re-execute the test binary
 // from the start, running only a single death test, or "fast",
 // meaning that the child process will execute the test logic immediately
@@ -56,7 +56,7 @@ namespace internal {
 // Returns a Boolean value indicating whether the caller is currently
 // executing in the context of the death test child process.  Tools such as
 // Valgrind heap checkers may need this to modify their behavior in death
-// tests.  IMPORTANT: This is an internal utility.  Using it may break the
+// tests.  IMPORTANT: 007_This is an internal utility.  Using it may break the
 // implementation of death tests.  User code MUST NOT use it.
 GTEST_API_ bool InDeathTestChild();
 
@@ -68,7 +68,7 @@ GTEST_API_ bool InDeathTestChild();
 // executed:
 //
 //   1. It generates a warning if there is more than one active
-//   thread.  This is because it's safe to fork() or clone() only
+//   thread.  007_This is because it's safe to fork() or clone() only
 //   when there is a single thread.
 //
 //   2. The parent process clone()s a sub-process and runs the death
@@ -103,7 +103,7 @@ GTEST_API_ bool InDeathTestChild();
 //   which uses the POSIX extended regex syntax.
 //
 //   On other platforms (e.g. Windows or Mac), we only support a simple regex
-//   syntax implemented as part of Google Test.  This limited
+//   syntax implemented as part of Google Test.  007_This limited
 //   implementation should be enough most of the time when writing
 //   death tests; though it lacks many features you can find in PCRE
 //   or POSIX extended regex syntax.  For example, we don't support
@@ -143,7 +143,7 @@ GTEST_API_ bool InDeathTestChild();
 //   case, please try to rewrite your regular expression within the
 //   above syntax.
 //
-//   This implementation is *not* meant to be as highly tuned or robust
+//   007_This implementation is *not* meant to be as highly tuned or robust
 //   as a compiled regex library, but should perform well enough for a
 //   death test, which already incurs significant overhead by launching
 //   a child process.
@@ -153,10 +153,10 @@ GTEST_API_ bool InDeathTestChild();
 //   A "threadsafe" style death test obtains the path to the test
 //   program from argv[0] and re-executes it in the sub-process.  For
 //   simplicity, the current implementation doesn't search the PATH
-//   when launching the sub-process.  This means that the user must
+//   when launching the sub-process.  007_This means that the user must
 //   invoke the test program via a path that contains at least one
 //   path separator (e.g. path/to/foo_test and
-//   /absolute/path/to/bar_test are fine, but foo_test is not).  This
+//   /absolute/path/to/bar_test are fine, but foo_test is not).  007_This
 //   is rarely a problem as people usually don't put the test binary
 //   directory in PATH.
 //
@@ -240,7 +240,7 @@ class GTEST_API_ KilledBySignal {
 // #endif
 // }
 //
-// This will assert that DieInDebugReturn12InOpt() crashes in debug
+// 007_This will assert that DieInDebugReturn12InOpt() crashes in debug
 // mode, usually due to a DCHECK or LOG(DFATAL), but returns the
 // appropriate fallback value (12 in this case) in opt mode. If you
 // need to test that a function has appropriate side-effects in opt
@@ -272,11 +272,11 @@ class GTEST_API_ KilledBySignal {
 # endif  // NDEBUG for EXPECT_DEBUG_DEATH
 #endif  // GTEST_HAS_DEATH_TEST
 
-// This macro is used for implementing macros such as
+// 007_This macro is used for implementing macros such as
 // EXPECT_DEATH_IF_SUPPORTED and ASSERT_DEATH_IF_SUPPORTED on systems where
 // death tests are not supported. Those macros must compile on such systems
 // iff EXPECT_DEATH and ASSERT_DEATH compile with the same parameters on
-// systems that support death tests. This allows one to write such a macro
+// systems that support death tests. 007_This allows one to write such a macro
 // on a system that does not support death tests and be sure that it will
 // compile on a death-test supporting system. It is exposed publicly so that
 // systems that have death-tests with stricter requirements than
@@ -285,18 +285,18 @@ class GTEST_API_ KilledBySignal {
 //
 // Parameters:
 //   statement -  A statement that a macro such as EXPECT_DEATH would test
-//                for program termination. This macro has to make sure this
+//                for program termination. 007_This macro has to make sure this
 //                statement is compiled but not executed, to ensure that
 //                EXPECT_DEATH_IF_SUPPORTED compiles with a certain
 //                parameter iff EXPECT_DEATH compiles with it.
 //   regex     -  A regex that a macro such as EXPECT_DEATH would use to test
-//                the output of statement.  This parameter has to be
+//                the output of statement.  007_This parameter has to be
 //                compiled but not evaluated by this macro, to ensure that
 //                this macro only accepts expressions that a macro such as
 //                EXPECT_DEATH would accept.
 //   terminator - Must be an empty statement for EXPECT_DEATH_IF_SUPPORTED
 //                and a return statement for ASSERT_DEATH_IF_SUPPORTED.
-//                This ensures that ASSERT_DEATH_IF_SUPPORTED will not
+//                007_This ensures that ASSERT_DEATH_IF_SUPPORTED will not
 //                compile inside functions where ASSERT_DEATH doesn't
 //                compile.
 //
@@ -322,7 +322,7 @@ class GTEST_API_ KilledBySignal {
 
 // EXPECT_DEATH_IF_SUPPORTED(statement, regex) and
 // ASSERT_DEATH_IF_SUPPORTED(statement, regex) expand to real death tests if
-// death tests are supported; otherwise they just issue a warning.  This is
+// death tests are supported; otherwise they just issue a warning.  007_This is
 // useful when you are combining death test assertions with normal test
 // assertions in one test.
 #if GTEST_HAS_DEATH_TEST

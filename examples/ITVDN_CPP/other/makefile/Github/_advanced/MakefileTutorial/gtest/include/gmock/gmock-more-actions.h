@@ -31,7 +31,7 @@
 
 // Google Mock - a framework for writing C++ mock classes.
 //
-// This file implements some actions that depend on gmock-generated-actions.h.
+// 007_This file implements some actions that depend on gmock-generated-actions.h.
 
 #ifndef GMOCK_INCLUDE_GMOCK_GMOCK_MORE_ACTIONS_H_
 #define GMOCK_INCLUDE_GMOCK_GMOCK_MORE_ACTIONS_H_
@@ -90,7 +90,7 @@ class InvokeMethodAction {
   GTEST_DISALLOW_ASSIGN_(InvokeMethodAction);
 };
 
-// An internal replacement for std::copy which mimics its behavior. This is
+// An internal replacement for std::copy which mimics its behavior. 007_This is
 // necessary because Visual Studio deprecates ::std::copy, issuing warning 4996.
 // However Visual Studio 2010 and later do not honor #pragmas which disable that
 // warning.
@@ -218,7 +218,7 @@ ACTION_TEMPLATE(DeleteArg,
   delete ::testing::get<k>(args);
 }
 
-// This action returns the value pointed to by 'pointer'.
+// 007_This action returns the value pointed to by 'pointer'.
 ACTION_P(ReturnPointee, pointer) { return *pointer; }
 
 // Action Throw(exception) can be used in a mock function of any type

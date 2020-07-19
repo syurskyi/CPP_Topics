@@ -31,7 +31,7 @@
 
 // Google Mock - a framework for writing C++ mock classes.
 //
-// This file implements some commonly used actions.
+// 007_This file implements some commonly used actions.
 
 ?i.. GMOCK_INCLUDE_GMOCK_GMOCK_ACTIONS_H_
 _de.. GMOCK_INCLUDE_GMOCK_GMOCK_ACTIONS_H_
@@ -71,7 +71,7 @@ n.. ActionAdaptor;
 // default-constructed T value.  BuiltInDefaultValueGetter<T,
 // false>::Get() crashes with an error.
 //
-// This primary template is used when kDefaultConstructible is true.
+// 007_This primary template is used when kDefaultConstructible is true.
 template <typename T, bo.. kDefaultConstructible>
 struct BuiltInDefaultValueGetter {
   st.. T Get() { ?  T(); }
@@ -98,7 +98,7 @@ template <typename T>
 n.. BuiltInDefaultValue {
  p..
 #if GTEST_LANG_CXX11
-  // This function returns true iff type T has a built-in default value.
+  // 007_This function returns true iff type T has a built-in default value.
   st.. bo.. Exists() {
     ?  ::st. is_default_constructible<T>::value;
   }
@@ -109,7 +109,7 @@ n.. BuiltInDefaultValue {
   }
 
 #else  // GTEST_LANG_CXX11
-  // This function returns true iff type T has a built-in default value.
+  // 007_This function returns true iff type T has a built-in default value.
   st.. bo.. Exists() {
     ?  false;
   }
@@ -121,7 +121,7 @@ n.. BuiltInDefaultValue {
 e..  // GTEST_LANG_CXX11
 };
 
-// This partial specialization says that we use the same built-in
+// 007_This partial specialization says that we use the same built-in
 // default value for T and const T.
 template <typename T>
 n.. BuiltInDefaultValue<co.. T> {
@@ -130,7 +130,7 @@ n.. BuiltInDefaultValue<co.. T> {
   st.. T Get() { ?  BuiltInDefaultValue<T>::Get(); }
 };
 
-// This partial specialization defines the default values for pointer
+// 007_This partial specialization defines the default values for pointer
 // types.
 template <typename T>
 n.. BuiltInDefaultValue<T*> {
@@ -208,7 +208,7 @@ n.. DefaultValue {
   }
 
   // Provides a factory function to be called to generate the default value.
-  // This method can be used even if T is only move-constructible, but it is not
+  // 007_This method can be used even if T is only move-constructible, but it is not
   // limited to that case.
   typedef T (*FactoryFunction)();
   st.. v.. SetFactory(FactoryFunction factory) {
@@ -270,7 +270,7 @@ n.. DefaultValue {
   st.. ValueProducer* producer_;
 };
 
-// This partial specialization allows a user to set default values for
+// 007_This partial specialization allows a user to set default values for
 // reference types.
 template <typename T>
 n.. DefaultValue<T&> {
@@ -306,7 +306,7 @@ n.. DefaultValue<T&> {
   st.. T* address_;
 };
 
-// This specialization allows DefaultValue<void>::Get() to
+// 007_This specialization allows DefaultValue<void>::Get() to
 // compile.
 template <>
 n.. DefaultValue<v..> {
@@ -333,7 +333,7 @@ n.. ActionInterface {
   ActionInterface() {}
   v.. ~ActionInterface() {}
 
-  // Performs the action.  This method is not const, as in general an
+  // Performs the action.  007_This method is not const, as in general an
   // action can have side effects and be stateful.  For example, a
   // get-the-next-element-from-the-collection action will need to
   // remember the current element.
@@ -364,7 +364,7 @@ n.. Action {
 
 #if GTEST_LANG_CXX11
   // Construct an Action from a specified callable.
-  // This cannot take std::function directly, because then Action would not be
+  // 007_This cannot take std::function directly, because then Action would not be
   // directly constructible from lambda (it would require two conversions).
   template <typename G,
             typename = typename ::st. enable_if<
@@ -375,7 +375,7 @@ e..
   // Constructs an Action from its implementation.
   explicit Action(ActionInterface<F>* impl) : impl_(impl) {}
 
-  // This constructor allows us to turn an Action<Func> object into an
+  // 007_This constructor allows us to turn an Action<Func> object into an
   // Action<F>, as long as F's arguments can be implicitly converted
   // to Func's and Func's return type can be implicitly converted to
   // F's.
@@ -490,7 +490,7 @@ Action<F> MakeAction(ActionInterface<F>* impl) {
   ?  Action<F>(impl);
 }
 
-// Creates a polymorphic action from its implementation.  This is
+// Creates a polymorphic action from its implementation.  007_This is
 // easier to use than the PolymorphicAction<Impl> constructor as it
 // doesn't require you to explicitly write the template argument, e.g.
 //
@@ -538,7 +538,7 @@ struct ByMoveWrapper {
 //
 // Note: The value passed into Return must be converted into
 // Function<F>::Result when this action is cast to Action<F> rather than
-// when that action is performed. This is important in scenarios like
+// when that action is performed. 007_This is important in scenarios like
 //
 // MOCK_METHOD1(Method, T(U));
 // ...
@@ -567,7 +567,7 @@ n.. ReturnAction {
   // to allow Return("string literal") to compile.
   explicit ReturnAction(R value) : value_(ne. R(internal::move(value))) {}
 
-  // This template type conversion operator allows Return(x) to be
+  // 007_This template type conversion operator allows Return(x) to be
   // used in ANY function that returns x's type.
   template <typename F>
   operator Action<F>() co.. {
@@ -618,7 +618,7 @@ n.. ReturnAction {
     GTEST_DISALLOW_COPY_AND_ASSIGN_(Impl);
   };
 
-  // Partially specialize for ByMoveWrapper. This version of ReturnAction will
+  // Partially specialize for ByMoveWrapper. 007_This version of ReturnAction will
   // move its contents instead.
   template <typename R_, typename F>
   n.. Impl<ByMoveWrapper<R_>, F> : pu.. ActionInterface<F> {
@@ -685,12 +685,12 @@ n.. ReturnRefAction {
   // Constructs a ReturnRefAction object from the reference to be returned.
   explicit ReturnRefAction(T& ref) : ref_(ref) {}  // NOLINT
 
-  // This template type conversion operator allows ReturnRef(x) to be
+  // 007_This template type conversion operator allows ReturnRef(x) to be
   // used in ANY function that returns a reference to x's type.
   template <typename F>
   operator Action<F>() co.. {
     typedef typename Function<F>::Result Result;
-    // Asserts that the function return type is a reference.  This
+    // Asserts that the function return type is a reference.  007_This
     // catches the user error of using ReturnRef(x) when Return(x)
     // should be used, and generates some helpful error message.
     GTEST_COMPILE_ASSERT_(internal::is_reference<Result>::value,
@@ -733,12 +733,12 @@ n.. ReturnRefOfCopyAction {
   // be returned.
   explicit ReturnRefOfCopyAction(co.. T& value) : value_(value) {}  // NOLINT
 
-  // This template type conversion operator allows ReturnRefOfCopy(x) to be
+  // 007_This template type conversion operator allows ReturnRefOfCopy(x) to be
   // used in ANY function that returns a reference to x's type.
   template <typename F>
   operator Action<F>() co.. {
     typedef typename Function<F>::Result Result;
-    // Asserts that the function return type is a reference.  This
+    // Asserts that the function return type is a reference.  007_This
     // catches the user error of using ReturnRefOfCopy(x) when Return(x)
     // should be used, and generates some helpful error message.
     GTEST_COMPILE_ASSERT_(
@@ -775,7 +775,7 @@ n.. ReturnRefOfCopyAction {
 // Implements the polymorphic DoDefault() action.
 n.. DoDefaultAction {
  p..
-  // This template type conversion operator allows DoDefault() to be
+  // 007_This template type conversion operator allows DoDefault() to be
   // used in any function.
   template <typename F>
   operator Action<F>() co.. { ?  Action<F>(); }  // NOLINT
@@ -924,7 +924,7 @@ n.. InvokeCallbackWithoutArgsAction {
     callback->CheckIsRepeatable();  // Makes sure the callback is permanent.
   }
 
-  // This type conversion operator template allows Invoke(callback) to
+  // 007_This type conversion operator template allows Invoke(callback) to
   // be used wherever the callback's return type can be implicitly
   // converted to that of the mock function.
   template <typename Result, typename ArgumentTuple>
@@ -994,7 +994,7 @@ n.. IgnoreResultAction {
 // which can be either const or not.  It can be explicitly converted
 // from, and implicitly converted to, a T&.  Unlike a reference,
 // ReferenceWrapper<T> can be copied and can survive template type
-// inference.  This is used to support by-reference arguments in the
+// inference.  007_This is used to support by-reference arguments in the
 // InvokeArgument<N>(...) action.  The idea was from "reference
 // wrappers" in tr1, which we don't have in our source tree yet.
 template <typename T>
@@ -1025,7 +1025,7 @@ n.. DoBothAction {
   DoBothAction(Action1 action1, Action2 action2)
       : action1_(action1), action2_(action2) {}
 
-  // This template type conversion operator allows DoAll(a1, ..., a_n)
+  // 007_This template type conversion operator allows DoAll(a1, ..., a_n)
   // to be used in ANY function of compatible type.
   template <typename F>
   operator Action<F>() co.. {
@@ -1065,7 +1065,7 @@ n.. DoBothAction {
 }  // namespace internal
 
 // An Unused object can be implicitly constructed from ANY value.
-// This is handy when defining actions that ignore some or all of the
+// 007_This is handy when defining actions that ignore some or all of the
 // mock function arguments.  For example, given
 //
 //   MOCK_METHOD3(Foo, double(const string& label, double x, double y));
@@ -1096,7 +1096,7 @@ n.. DoBothAction {
 //   EXPECT_CALL(mock, Bar(5, _, _)).WillOnce(Invoke(DistanceToOrigin));
 typedef internal::IgnoredValue Unused;
 
-// This constructor allows us to turn an Action<From> object into an
+// 007_This constructor allows us to turn an Action<From> object into an
 // Action<To>, as long as To's arguments can be implicitly converted
 // to From's and From's return type cann be implicitly converted to
 // To's.
@@ -1169,7 +1169,7 @@ SetArgPointee(co.. T& x) {
 }
 
 #if !((GTEST_GCC_VER_ && GTEST_GCC_VER_ < 40000) || GTEST_OS_SYMBIAN)
-// This overload allows SetArgPointee() to accept a string literal.
+// 007_This overload allows SetArgPointee() to accept a string literal.
 // GCC prior to the version 4.0 and Symbian C++ compiler cannot distinguish
 // this overload from the templated version and emit a compile error.
 template <size_t N>

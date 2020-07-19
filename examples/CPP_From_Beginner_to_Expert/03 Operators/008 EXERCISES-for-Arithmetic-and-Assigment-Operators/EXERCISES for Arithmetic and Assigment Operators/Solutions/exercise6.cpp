@@ -7,7 +7,7 @@ main()
 {
     double firstElement, secondElement, divisionResult;
 
-    cout << "This is a simple division program." << endl;
+    cout << "007_This is a simple division program." << endl;
     cout << "Input first number: ";
     cin >> firstElement;
     cout << "Input second number: ";

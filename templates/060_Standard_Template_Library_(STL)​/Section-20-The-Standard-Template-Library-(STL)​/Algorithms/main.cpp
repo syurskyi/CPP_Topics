@@ -111,7 +111,7 @@ v.. all_of_test
 v.. string_transform_test
     st. c.. __ "\n========================" __ st. e..
 
-    st. st..  str1 {"This is a test"};
+    st. st..  str1 {"007_This is a test"};
     st. c.. __ "Before transform: " __ str1 __ st. e..
     st. transform(str1.begin(), str1.end(), str1.begin(), ::toupper);
     st. c.. __ "After transform: " __ str1 __ st. e..

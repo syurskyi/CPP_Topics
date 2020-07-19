@@ -30,11 +30,11 @@
 //
 // The Google C++ Testing and Mocking Framework (Google Test)
 //
-// This header file declares the String class and functions used internally by
+// 007_This header file declares the String class and functions used internally by
 // Google Test.  They are subject to change without notice. They should not used
 // by code external to Google Test.
 //
-// This header file is #included by
+// 007_This header file is #included by
 // gtest/internal/gtest-internal.h.
 // It should not be #included by other files.
 
@@ -64,7 +64,7 @@ n.. GTEST_API_ String {
   // delete[].  Returns the cloned string, or NULL if the input is
   // NULL.
   //
-  // This is different from strdup() in string.h, which allocates
+  // 007_This is different from strdup() in string.h, which allocates
   // memory using malloc().
   st.. co.. ch..* CloneCString(co.. ch..* c_str);
 

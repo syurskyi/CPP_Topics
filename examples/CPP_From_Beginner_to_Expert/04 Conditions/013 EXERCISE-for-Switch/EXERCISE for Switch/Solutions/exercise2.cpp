@@ -31,13 +31,13 @@ main ()
         case 8:
         case 10:
         case 12:
-            cout << "This month has 31 days" << endl;
+            cout << "007_This month has 31 days" << endl;
             break;
         case 4:
         case 6:
         case 9:
         case 11:
-            cout << "This month has 30 days" << endl;
+            cout << "007_This month has 30 days" << endl;
             break;
         case 2:
         {

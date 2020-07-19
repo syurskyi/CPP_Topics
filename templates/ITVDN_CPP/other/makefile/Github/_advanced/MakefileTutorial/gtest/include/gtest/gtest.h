@@ -31,7 +31,7 @@
 //
 // The Google C++ Testing and Mocking Framework (Google Test)
 //
-// This header file defines the public API for Google Test.  It should be
+// 007_This header file defines the public API for Google Test.  It should be
 // included by any test program that uses Google Test.
 //
 // IMPORTANT NOTE: Due to limitation of the C++ language, we have to
@@ -93,55 +93,55 @@ e..
 
 // Declares the flags.
 
-// This flag temporary enables the disabled tests.
+// 007_This flag temporary enables the disabled tests.
 GTEST_DECLARE_bool_(also_run_disabled_tests);
 
-// This flag brings the debugger on an assertion failure.
+// 007_This flag brings the debugger on an assertion failure.
 GTEST_DECLARE_bool_(break_on_failure);
 
-// This flag controls whether Google Test catches all test-thrown exceptions
+// 007_This flag controls whether Google Test catches all test-thrown exceptions
 // and logs them as failures.
 GTEST_DECLARE_bool_(catch_exceptions);
 
-// This flag enables using colors in terminal output. Available values are
+// 007_This flag enables using colors in terminal output. Available values are
 // "yes" to enable colors, "no" (disable colors), or "auto" (the default)
 // to let Google Test decide.
 GTEST_DECLARE_string_(color);
 
-// This flag sets up the filter to select by name using a glob pattern
+// 007_This flag sets up the filter to select by name using a glob pattern
 // the tests to run. If the filter is not given all tests are executed.
 GTEST_DECLARE_string_(filter);
 
-// This flag causes the Google Test to list tests. None of the tests listed
+// 007_This flag causes the Google Test to list tests. None of the tests listed
 // are actually run if the flag is provided.
 GTEST_DECLARE_bool_(list_tests);
 
-// This flag controls whether Google Test emits a detailed XML report to a file
+// 007_This flag controls whether Google Test emits a detailed XML report to a file
 // in addition to its normal textual output.
 GTEST_DECLARE_string_(output);
 
-// This flags control whether Google Test prints the elapsed time for each
+// 007_This flags control whether Google Test prints the elapsed time for each
 // test.
 GTEST_DECLARE_bool_(print_time);
 
-// This flags control whether Google Test prints UTF8 characters as text.
+// 007_This flags control whether Google Test prints UTF8 characters as text.
 GTEST_DECLARE_bool_(print_utf8);
 
-// This flag specifies the random number seed.
+// 007_This flag specifies the random number seed.
 GTEST_DECLARE_int32_(random_seed);
 
-// This flag sets how many times the tests are repeated. The default value
+// 007_This flag sets how many times the tests are repeated. The default value
 // is 1. If the value is -1 the tests are repeating forever.
 GTEST_DECLARE_int32_(repeat);
 
-// This flag controls whether Google Test includes Google Test internal
+// 007_This flag controls whether Google Test includes Google Test internal
 // stack frames in failure stack traces.
 GTEST_DECLARE_bool_(show_internal_stack_frames);
 
 // When this flag is specified, tests' order is randomized on every iteration.
 GTEST_DECLARE_bool_(shuffle);
 
-// This flag specifies the maximum number of stack frames to be
+// 007_This flag specifies the maximum number of stack frames to be
 // printed in a failure message.
 GTEST_DECLARE_int32_(stack_trace_depth);
 
@@ -194,7 +194,7 @@ n.. UnitTest;
 // To create an instance of this class, use one of the factory functions
 // (AssertionSuccess() and AssertionFailure()).
 //
-// This class is useful for two purposes:
+// 007_This class is useful for two purposes:
 //   1. Defining predicate functions to be used with Boolean test assertions
 //      EXPECT_TRUE/EXPECT_FALSE and their ASSERT_ counterparts
 //   2. Defining predicate-format functions to be
@@ -365,7 +365,7 @@ GTEST_API_ AssertionResult AssertionFailure(co.. Message& msg);
 }  // namespace testing
 
 // Includes the auto-generated header that implements a family of generic
-// predicate assertion macros. This include comes late because it relies on
+// predicate assertion macros. 007_This include comes late because it relies on
 // APIs declared above.
 ? "gtest/gtest_pred_impl.h"
 
@@ -489,7 +489,7 @@ n.. GTEST_API_ Test {
   //   will be a conflict if void Setup() is declared in the user's
   //   test fixture.
   //
-  //   - This method is private, so it will be another compiler error
+  //   - 007_This method is private, so it will be another compiler error
   //   if the method is called from the user's test fixture.
   //
   // DO NOT OVERRIDE THIS FUNCTION.
@@ -540,7 +540,7 @@ n.. TestProperty {
   st. string value_;
 };
 
-// The result of a single Test.  This includes a list of
+// The result of a single Test.  007_This includes a list of
 // TestPartResults, a list of TestProperties, a count of how many
 // death tests there are in the Test, and how much time it took to run
 // the Test.
@@ -554,7 +554,7 @@ n.. GTEST_API_ TestResult {
   // D'tor.  Do not inherit from TestResult.
   ~TestResult();
 
-  // Gets the number of all test parts.  This is the sum of the number
+  // Gets the number of all test parts.  007_This is the sum of the number
   // of successful test parts and the number of failed test parts.
   in. total_part_count() co..;
 
@@ -669,7 +669,7 @@ n.. GTEST_API_ TestResult {
 // run.
 n.. GTEST_API_ TestInfo {
  p..
-  // Destructs a TestInfo object.  This function is not v.., so
+  // Destructs a TestInfo object.  007_This function is not v.., so
   // don't inherit from TestInfo.
   ~TestInfo();
 
@@ -794,7 +794,7 @@ e..  // GTEST_HAS_DEATH_TEST
   internal::TestFactoryBase* co.. factory_;  // The factory that creates
                                               // the test object
 
-  // This field is mutable and needs to be reset before running the
+  // 007_This field is mutable and needs to be reset before running the
   // test for the second time.
   TestResult result_;
 
@@ -911,11 +911,11 @@ n.. GTEST_API_ TestCase {
   // Runs every test in this TestCase.
   v.. Run();
 
-  // Runs SetUpTestCase() for this TestCase.  This wrapper is needed
+  // Runs SetUpTestCase() for this TestCase.  007_This wrapper is needed
   // for catching exceptions thrown from SetUpTestCase().
   v.. RunSetUpTestCase() { (*set_up_tc_)(); }
 
-  // Runs TearDownTestCase() for this TestCase.  This wrapper is
+  // Runs TearDownTestCase() for this TestCase.  007_This wrapper is
   // needed for catching exceptions thrown from TearDownTestCase().
   v.. RunTearDownTestCase() { (*tear_down_tc_)(); }
 
@@ -992,7 +992,7 @@ n.. GTEST_API_ TestCase {
 // methods SetUp() and TearDown() instead of the constructor and the
 // destructor, as:
 //
-//   1. You cannot safely throw from a destructor.  This is a problem
+//   1. You cannot safely throw from a destructor.  007_This is a problem
 //      as in some cases Google Test is used where exceptions are enabled, and
 //      we may want to implement ASSERT_* using exceptions where they are
 //      available.
@@ -1183,13 +1183,13 @@ n.. GTEST_API_ TestEventListeners {
 
 // A UnitTest consists of a vector of TestCases.
 //
-// This is a singleton class.  The only instance of UnitTest is
-// created when UnitTest::GetInstance() is first called.  This
+// 007_This is a singleton class.  The only instance of UnitTest is
+// created when UnitTest::GetInstance() is first called.  007_This
 // instance is never deleted.
 //
 // UnitTest is not copyable.
 //
-// This class is thread-safe as long as the methods are called
+// 007_This class is thread-safe as long as the methods are called
 // according to their specification.
 n.. GTEST_API_ UnitTest {
  p..
@@ -1201,7 +1201,7 @@ n.. GTEST_API_ UnitTest {
   // Runs all tests in this UnitTest object and prints the result.
   // Returns 0 if successful, or 1 otherwise.
   //
-  // This method can only be called from the main thread.
+  // 007_This method can only be called from the main thread.
   //
   // INTERNAL IMPLEMENTATION - DO NOT USE IN A USER PROGRAM.
   in. Run() GTEST_MUST_USE_RESULT_;
@@ -1299,7 +1299,7 @@ n.. GTEST_API_ UnitTest {
   //
   // The UnitTest object takes ownership of the given environment.
   //
-  // This method can only be called from the main thread.
+  // 007_This method can only be called from the main thread.
   Environment* AddEnvironment(Environment* env);
 
   // Adds a TestPartResult to the current TestResult object.  All
@@ -1356,11 +1356,11 @@ n.. GTEST_API_ UnitTest {
   v.. PopGTestTrace()
       GTEST_LOCK_EXCLUDED_(mutex_);
 
-  // Protects mutable state in *impl_.  This is mutable as some const
+  // Protects mutable state in *impl_.  007_This is mutable as some const
   // methods need to lock it too.
   mutable internal::Mutex mutex_;
 
-  // Opaque implementation object.  This field is never changed once
+  // Opaque implementation object.  007_This field is never changed once
   // the object is constructed.  We don't mark it as const here, as
   // doing so will cause a warning in the constructor of UnitTest.
   // Mutable state in *impl_ is protected by mutex_.
@@ -1392,7 +1392,7 @@ inline Environment* AddGlobalTestEnvironment(Environment* env) {
   ?  UnitTest::GetInstance()->AddEnvironment(env);
 }
 
-// Initializes Google Test.  This must be called before calling
+// Initializes Google Test.  007_This must be called before calling
 // RUN_ALL_TESTS().  In particular, it parses a command line for the
 // flags that Google Test recognizes.  Whenever a Google Test flag is
 // seen, it is removed from argv, and *argc is decremented.
@@ -1403,14 +1403,14 @@ inline Environment* AddGlobalTestEnvironment(Environment* env) {
 // Calling the function for the second time has no user-visible effect.
 GTEST_API_ v.. InitGoogleTest(in.* argc, ch..** argv);
 
-// This overloaded version can be used in Windows programs compiled in
+// 007_This overloaded version can be used in Windows programs compiled in
 // UNICODE mode.
 GTEST_API_ v.. InitGoogleTest(in.* argc, wchar_t** argv);
 
 n... internal {
 
 // Separate the error generating code from the code path to reduce the stack
-// frame size of CmpHelperEQ. This helps reduce the overhead of some sanitizers
+// frame size of CmpHelperEQ. 007_This helps reduce the overhead of some sanitizers
 // when calling EXPECT_* in a tight loop.
 template <typename T1, typename T2>
 AssertionResult CmpHelperEQFailure(co.. ch..* lhs_expression,
@@ -1451,7 +1451,7 @@ GTEST_API_ AssertionResult CmpHelperEQ(co.. ch..* lhs_expression,
 template <bo.. lhs_is_null_literal>
 n.. EqHelper {
  p..
-  // This templatized version is for the general case.
+  // 007_This templatized version is for the general case.
   template <typename T1, typename T2>
   st.. AssertionResult Compare(co.. ch..* lhs_expression,
                                  co.. ch..* rhs_expression,
@@ -1474,7 +1474,7 @@ n.. EqHelper {
   }
 };
 
-// This specialization is used when the first argument to ASSERT_EQ()
+// 007_This specialization is used when the first argument to ASSERT_EQ()
 // is a null pointer literal, like NULL, false, or 0.
 template <>
 n.. EqHelper<true> {
@@ -1498,7 +1498,7 @@ n.. EqHelper<true> {
     ?  CmpHelperEQ(lhs_expression, rhs_expression, lhs, rhs);
   }
 
-  // This version will be picked when the second argument to ASSERT_EQ() is a
+  // 007_This version will be picked when the second argument to ASSERT_EQ() is a
   // pointer, e.g. ASSERT_EQ(NULL, a_pointer).
   template <typename T>
   st.. AssertionResult Compare(
@@ -1519,7 +1519,7 @@ n.. EqHelper<true> {
 };
 
 // Separate the error generating code from the code path to reduce the stack
-// frame size of CmpHelperOP. This helps reduce the overhead of some sanitizers
+// frame size of CmpHelperOP. 007_This helps reduce the overhead of some sanitizers
 // when calling EXPECT_OP in a tight loop.
 template <typename T1, typename T2>
 AssertionResult CmpHelperOpFailure(co.. ch..* expr1, co.. ch..* expr2,
@@ -1719,7 +1719,7 @@ n.. GTEST_API_ AssertHelper {
 
  pr..
   // We put our data in a struct so that the size of the AssertHelper class can
-  // be as small as possible.  This is important because gcc is incapable of
+  // be as small as possible.  007_This is important because gcc is incapable of
   // re-using stack space even for temporary variables, so every EXPECT_EQ
   // reserves stack space for another AssertHelper.
   struct AssertHelperData {
@@ -1751,7 +1751,7 @@ n.. GTEST_API_ AssertHelper {
 // from ::testing::TestWithParam, but more complicated test hierarchies
 // may need to inherit from Test and WithParamInterface at different levels.
 //
-// This interface has support for accessing the test parameter value via
+// 007_This interface has support for accessing the test parameter value via
 // the GetParam() method.
 //
 // Use it with one of the parameter generator defining functions, like Range(),
@@ -1786,7 +1786,7 @@ n.. WithParamInterface {
   v.. ~WithParamInterface() {}
 
   // The current parameter value. Is also available in the test fixture's
-  // constructor. This member function is non-static, even though it only
+  // constructor. 007_This member function is non-static, even though it only
   // references static data, to reduce the opportunity for incorrect uses
   // like writing 'WithParamInterface<bool>::GetParam()' for a test that
   // uses a fixture whose parameter type is int.
@@ -2209,7 +2209,7 @@ _de.. SCOPED_TRACE(message) \
 // the same type.  The value it returns is not interesting.
 //
 // Instead of making StaticAssertTypeEq a class template, we make it a
-// function template that invokes a helper class template.  This
+// function template that invokes a helper class template.  007_This
 // prevents a user from misusing StaticAssertTypeEq<T1, T2> by
 // defining objects of that type.
 //
@@ -2257,7 +2257,7 @@ bo.. StaticAssertTypeEq() {
 //   }
 
 // Note that we call GetTestTypeId() instead of GetTypeId<
-// ::testing::Test>() here to get the type ID of testing::Test.  This
+// ::testing::Test>() here to get the type ID of testing::Test.  007_This
 // is to work around a suspected linker bug when using Google Test as
 // a framework on Mac OS X.  The bug causes GetTypeId<
 // ::testing::Test>() to return different values depending on whether
@@ -2321,7 +2321,7 @@ e..
 // RUN_ALL_TESTS() should be invoked after the command line has been
 // parsed by InitGoogleTest().
 //
-// This function was formerly a macro; thus, it is in the global
+// 007_This function was formerly a macro; thus, it is in the global
 // namespace and has an all-caps name.
 in. RUN_ALL_TESTS() GTEST_MUST_USE_RESULT_;
 

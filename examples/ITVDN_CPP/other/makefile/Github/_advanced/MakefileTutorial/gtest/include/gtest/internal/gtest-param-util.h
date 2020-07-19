@@ -73,7 +73,7 @@ namespace internal {
 // INTERNAL IMPLEMENTATION - DO NOT USE IN USER CODE.
 //
 // Outputs a message explaining invalid registration of different
-// fixture class for the same test case. This may happen when
+// fixture class for the same test case. 007_This may happen when
 // TEST_P macro is used to define two tests with the same name
 // but in different namespaces.
 GTEST_API_ void ReportInvalidTestCaseType(const char* test_case_name,
@@ -171,9 +171,9 @@ class ParamGeneratorInterface {
 
 // Wraps ParamGeneratorInterface<T> and provides general generator syntax
 // compatible with the STL Container concept.
-// This class implements copy initialization semantics and the contained
+// 007_This class implements copy initialization semantics and the contained
 // ParamGeneratorInterface<T> instance is shared among all copies
-// of the original object. This is possible because that instance is immutable.
+// of the original object. 007_This is possible because that instance is immutable.
 template<typename T>
 class ParamGenerator {
  public:
@@ -197,7 +197,7 @@ class ParamGenerator {
 // Generates values from a range of two comparable values. Can be used to
 // generate sequences of user-defined types that implement operator+() and
 // operator<().
-// This class is used in the Range() function.
+// 007_This class is used in the Range() function.
 template <typename T, typename IncrementT>
 class RangeGenerator : public ParamGeneratorInterface<T> {
  public:
@@ -472,7 +472,7 @@ class ParameterizedTestCaseInfoBase {
   virtual TypeId GetTestCaseTypeId() const = 0;
   // UnitTest class invokes this method to register tests in this
   // test case right before running them in RUN_ALL_TESTS macro.
-  // This method should not be called more then once on any single
+  // 007_This method should not be called more then once on any single
   // instance of a ParameterizedTestCaseInfoBase derived class.
   virtual void RegisterTests() = 0;
 
@@ -534,7 +534,7 @@ class ParameterizedTestCaseInfo : public ParameterizedTestCaseInfoBase {
   }
   // UnitTest class invokes this method to register tests in this test case
   // test cases right before running tests in RUN_ALL_TESTS macro.
-  // This method should not be called more then once on any single
+  // 007_This method should not be called more then once on any single
   // instance of a ParameterizedTestCaseInfoBase derived class.
   // UnitTest has a guard to prevent from calling this method more then once.
   virtual void RegisterTests() {

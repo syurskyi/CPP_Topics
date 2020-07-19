@@ -31,7 +31,7 @@ void Polygon::setWidth(int width) {
 	m_width = width;
 }
 
-// This runs if there is no child class (polymorphism) so we return an invalid area
+// 007_This runs if there is no child class (polymorphism) so we return an invalid area
 float Polygon::area() {
 	return -1;
 }

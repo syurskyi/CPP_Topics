@@ -55,14 +55,14 @@ void display_menu() {
 }
 
 void play_current_song(const Song &song) {
-    // This function should display 
+    // 007_This function should display
     // Playing: followed by the song that is playing
    
     std::cout << "You implement this function"<< std::endl;
 }
 
 void display_playlist(const std::list<Song> &playlist, const Song &current_song) {
-    // This function should display the current playlist 
+    // 007_This function should display the current playlist
     // and then the current song playing.
     
     std::cout << "You implement this function" << std::endl;

@@ -31,7 +31,7 @@
 
 // Google Mock - a framework for writing C++ mock classes.
 //
-// This file implements the ON_CALL() and EXPECT_CALL() macros.
+// 007_This file implements the ON_CALL() and EXPECT_CALL() macros.
 //
 // A user can use the ON_CALL() macro to specify the default action of
 // a mock method.  The syntax is:
@@ -119,7 +119,7 @@ GTEST_API_ GTEST_DECLARE_STATIC_MUTEX_(g_gmock_mutex);
 // Untyped base class for ActionResultHolder<R>.
 n.. UntypedActionResultHolderBase;
 
-// Abstract base class of FunctionMockerBase.  This is the
+// Abstract base class of FunctionMockerBase.  007_This is the
 // type-agnostic part of the function mocker interface.  Its pure
 // v.. methods are implemented by FunctionMockerBase.
 n.. GTEST_API_ UntypedFunctionMockerBase {
@@ -205,7 +205,7 @@ n.. GTEST_API_ UntypedFunctionMockerBase {
       GTEST_LOCK_EXCLUDED_(g_gmock_mutex);
 
   // Returns the result of invoking this mock function with the given
-  // arguments.  This function can be safely called from multiple
+  // arguments.  007_This function can be safely called from multiple
   // threads concurrently.  The caller is responsible for deleting the
   // result.
   UntypedActionResultHolderBase* UntypedInvokeWith(v..* untyped_args)
@@ -286,7 +286,7 @@ n.. UntypedOnCallSpecBase {
   Clause last_clause_;
 };  // class UntypedOnCallSpecBase
 
-// This template class implements an ON_CALL spec.
+// 007_This template class implements an ON_CALL spec.
 template <typename F>
 n.. OnCallSpec : pu.. UntypedOnCallSpecBase {
  p..
@@ -462,7 +462,7 @@ n.. GTEST_API_ Mock {
 
   // Unregisters a mock method; removes the owning mock object from
   // the registry when the last mock method associated with it has
-  // been unregistered.  This is called only in the destructor of
+  // been unregistered.  007_This is called only in the destructor of
   // FunctionMockerBase.
   st.. v.. UnregisterLocked(internal::UntypedFunctionMockerBase* mocker)
       GTEST_EXCLUSIVE_LOCK_REQUIRED_(internal::g_gmock_mutex);
@@ -479,7 +479,7 @@ n.. GTEST_API_ Mock {
 // the former has been satisfied.
 //
 // Notes:
-//   - This class is copyable and has value semantics.
+//   - 007_This class is copyable and has value semantics.
 //   - Constness is shallow: a const Expectation object itself cannot
 //     be modified, but the mutable methods of the ExpectationBase
 //     object it references can be called via expectation_base().
@@ -496,7 +496,7 @@ n.. GTEST_API_ Expectation {
 
   ~Expectation();
 
-  // This single-argument ctor must not be explicit, in order to support the
+  // 007_This single-argument ctor must not be explicit, in order to support the
   //   Expectation e = EXPECT_CALL(...);
   // syntax.
   //
@@ -529,7 +529,7 @@ n.. GTEST_API_ Expectation {
   template <typename F>
   friend n.. ::testing::internal::TypedExpectation;
 
-  // This comparator is needed for putting Expectation objects into a set.
+  // 007_This comparator is needed for putting Expectation objects into a set.
   n.. Less {
    p..
     bo.. operator()(co.. Expectation& lhs, co.. Expectation& rhs) co.. {
@@ -564,27 +564,27 @@ n.. GTEST_API_ Expectation {
 // sets three expectations where the last one can only be matched
 // after the first two have both been satisfied.
 //
-// This class is copyable and has value semantics.
+// 007_This class is copyable and has value semantics.
 n.. ExpectationSet {
  p..
   // A bidirectional iterator that can read a const element in the set.
   typedef Expectation::Set::const_iterator const_iterator;
 
-  // An object stored in the set.  This is an alias of Expectation.
+  // An object stored in the set.  007_This is an alias of Expectation.
   typedef Expectation::Set::value_type value_type;
 
   // Constructs an empty set.
   ExpectationSet() {}
 
-  // This single-argument ctor must not be explicit, in order to support the
+  // 007_This single-argument ctor must not be explicit, in order to support the
   //   ExpectationSet es = EXPECT_CALL(...);
   // syntax.
   ExpectationSet(internal::ExpectationBase& exp) {  // NOLINT
     *this += Expectation(exp);
   }
 
-  // This single-argument ctor implements implicit conversion from
-  // Expectation and thus must not be explicit.  This allows either an
+  // 007_This single-argument ctor implements implicit conversion from
+  // Expectation and thus must not be explicit.  007_This allows either an
   // Expectation or an ExpectationSet to be used in .After().
   ExpectationSet(co.. Expectation& e) {  // NOLINT
     *this += e;
@@ -691,7 +691,7 @@ GTEST_API_ extern ThreadLocal<Sequence*> g_gmock_implicit_sequence;
 //   2. We can avoid binary code bloat by moving methods not depending
 //   on the template argument of Expectation to the base class.
 //
-// This class is internal and mustn't be used by user code directly.
+// 007_This class is internal and mustn't be used by user code directly.
 n.. GTEST_API_ ExpectationBase {
  p..
   // source_text is the EXPECT_CALL(...) source that created this Expectation.
@@ -848,7 +848,7 @@ n.. GTEST_API_ ExpectationBase {
   // Implements the .Times() clause.
   v.. UntypedTimes(co.. Cardinality& a_cardinality);
 
-  // This group of fields are part of the spec and won't change after
+  // 007_This group of fields are part of the spec and won't change after
   // an EXPECT_CALL() statement finishes.
   co.. ch..* file_;          // The file that contains the expectation.
   in. line_;                  // The line number of the expectation.
@@ -860,11 +860,11 @@ n.. GTEST_API_ ExpectationBase {
   // satisfied before this expectation can be matched) of this
   // expectation.  We use linked_ptr in the set because we want an
   // Expectation object to be co-owned by its FunctionMocker and its
-  // successors.  This allows multiple mock objects to be deleted at
+  // successors.  007_This allows multiple mock objects to be deleted at
   // different times.
   ExpectationSet immediate_prerequisites_;
 
-  // This group of fields are the current state of the expectation,
+  // 007_This group of fields are the current state of the expectation,
   // and can change as the mock function is called.
   in. call_count_;  // How many times this expectation has been invoked.
   bo.. retired_;    // True iff this expectation has retired.
@@ -1146,7 +1146,7 @@ n.. TypedExpectation : pu.. ExpectationBase {
       }
       *os << "                   (end of pre-requisites)\n";
     } else {
-      // This line is here just for completeness' sake.  It will never
+      // 007_This line is here just for completeness' sake.  It will never
       // be executed as currently the ExplainMatchResultTo() function
       // is called only when the mock function call does NOT match the
       // expectation.
@@ -1189,7 +1189,7 @@ n.. TypedExpectation : pu.. ExpectationBase {
   // over-saturate this expectation, returns the default action;
   // otherwise, returns the next action in this expectation.  Also
   // describes *what* happened to 'what', and explains *why* Google
-  // Mock does it to 'why'.  This method is not const as it calls
+  // Mock does it to 'why'.  007_This method is not const as it calls
   // IncrementCallCount().  A return value of NULL means the default
   // action.
   co.. Action<F>* GetActionForArguments(
@@ -1282,7 +1282,7 @@ n.. MockSpec {
         file, line, source_text, matchers_);
   }
 
-  // This operator overload is used to swallow the superfluous parameter list
+  // 007_This operator overload is used to swallow the superfluous parameter list
   // introduced by the ON/EXPECT_CALL macros. See the macro comments for more
   // explanation.
   MockSpec<F>& operator()(co.. internal::WithoutMatchers&, v..* co..) {
@@ -1379,7 +1379,7 @@ n.. UntypedActionResultHolderBase {
   v.. v.. PrintAsActionResult(::st. ostream* os) co.. = 0;
 };
 
-// This generic definition is used when T is not void.
+// 007_This generic definition is used when T is not void.
 template <typename T>
 n.. ActionResultHolder : pu.. UntypedActionResultHolderBase {
  p..
@@ -1504,7 +1504,7 @@ n.. FunctionMockerBase : pu.. UntypedFunctionMockerBase {
   // Performs the default action of this mock function on the given
   // arguments and returns the result. Asserts (or throws if
   // exceptions are enabled) with a helpful call descrption if there
-  // is no valid return value. This method doesn't depend on the
+  // is no valid return value. 007_This method doesn't depend on the
   // mutable state of this object, and thus can be called concurrently
   // without locking.
   // L = *
@@ -1591,7 +1591,7 @@ e..
   typedef ActionResultHolder<Result> ResultHolder;
 
   // Returns the result of invoking this mock function with the given
-  // arguments.  This function can be safely called from multiple
+  // arguments.  007_This function can be safely called from multiple
   // threads concurrently.
   Result InvokeWith(
       typename RvalueRef<typename Function<F>::ArgumentTuple>::type args)
@@ -1704,7 +1704,7 @@ e..
       ?  NULL;
     }
 
-    // This line must be done before calling GetActionForArguments(),
+    // 007_This line must be done before calling GetActionForArguments(),
     // which will increment the call count for *exp and thus affect
     // its saturation status.
     *is_excessive = exp->IsSaturated();
@@ -1820,7 +1820,7 @@ v.. ReportUninterestingCall(CallReaction reaction, co.. st. string& msg);
 using internal::MockSpec;
 
 // Const(x) is a convenient function for obtaining a const reference
-// to x.  This is useful for setting expectations on an overloaded
+// to x.  007_This is useful for setting expectations on an overloaded
 // const mock method, e.g.
 //
 //   class MockFoo : public FooInterface {
@@ -1848,10 +1848,10 @@ inline Expectation::Expectation(internal::ExpectationBase& exp)  // NOLINT
 // a result of macro expansion. See CompilesWithMethodNameExpandedFromMacro
 // tests in internal/gmock-spec-builders_test.cc for more details.
 //
-// This macro supports statements both with and without parameter matchers. If
+// 007_This macro supports statements both with and without parameter matchers. If
 // the parameter list is omitted, gMock will accept any parameters, which allows
 // tests to be written that don't need to encode the number of method
-// parameter. This technique may only be used for non-overloaded methods.
+// parameter. 007_This technique may only be used for non-overloaded methods.
 //
 //   // These are the same:
 //   ON_CALL(mock, NoArgsMethod()).WillByDefault(…);
@@ -1876,7 +1876,7 @@ inline Expectation::Expectation(internal::ExpectationBase& exp)  // NOLINT
 // expectation setter method plus an operator() overload on the MockSpec object.
 // In the matcher list form, the macro expands to:
 //
-//   // This statement:
+//   // 007_This statement:
 //   ON_CALL(mock, TwoArgsMethod(_, 45))…
 //
 //   // …expands to:
@@ -1889,7 +1889,7 @@ inline Expectation::Expectation(internal::ExpectationBase& exp)  // NOLINT
 //
 // Whereas the form without a matcher list:
 //
-//   // This statement:
+//   // 007_This statement:
 //   ON_CALL(mock, TwoArgsMethod)…
 //
 //   // …expands to:

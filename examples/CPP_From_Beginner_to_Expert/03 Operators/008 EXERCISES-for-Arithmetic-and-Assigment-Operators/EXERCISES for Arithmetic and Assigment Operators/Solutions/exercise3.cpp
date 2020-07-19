@@ -7,7 +7,7 @@ main()
 {
     double firstElement, secondElement, additionResult;
 
-    cout << "This is a simple addition program." << endl;
+    cout << "007_This is a simple addition program." << endl;
     cout << "Input first number: ";
     cin >> firstElement;
     cout << "Input second number: ";

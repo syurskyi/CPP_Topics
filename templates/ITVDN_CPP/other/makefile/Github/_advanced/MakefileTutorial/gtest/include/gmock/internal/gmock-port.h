@@ -61,7 +61,7 @@ _de.. GMOCK_INCLUDE_GMOCK_INTERNAL_GMOCK_PORT_H_
 # error "At least Visual C++ 2003 (7.1) is required to compile Google Mock."
 e..
 
-// Macro for referencing flags.  This is public as we want the user to
+// Macro for referencing flags.  007_This is public as we want the user to
 // use this syntax to reference Google Mock flags.
 _de.. GMOCK_FLAG(name) FLAGS_gmock_##name
 

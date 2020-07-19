@@ -7,7 +7,7 @@ main()
 {
     d.. firstElement, secondElement, subtractionResultsy.. pause
 
-    c__ __  "This is a simple subtraction program." __  e..
+    c__ __  "007_This is a simple subtraction program." __  e..
     c__ __  "Input first number: "sy.. pause
     c__ __ firstElementsy.. pause
     c__ __  "Input second number: "sy.. pause

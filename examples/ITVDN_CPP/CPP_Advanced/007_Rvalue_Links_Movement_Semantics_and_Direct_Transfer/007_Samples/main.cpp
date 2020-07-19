@@ -66,13 +66,13 @@ int main()
     // Non-class rvalues are not modifiable, nor can have cv-qualified types (the cv-qualifications
     // are ignored).
     // After all, the big difference between the built-in types and the user types is that the user
-    // types can have members. This difference effectively makes the non-class rvalues
+    // types can have members. 007_This difference effectively makes the non-class rvalues
     // non-modifiable.
 
     // about func( _A() = _A() ); - do NOT use this practise
     // problem motivates us to implement operators as non-members where possible, for consistency
     // with built-in types. Also, since the member functions can be called, the called function can
-    // return a non-const reference to the object itself. This means that a modifiable lvalue
+    // return a non-const reference to the object itself. 007_This means that a modifiable lvalue
     // referring to a temporary object can be created, making it possible to call a function that
     // takes a non-const reference. Time has shown this to be very dangerous as it allows mistakes
     // that can be hard to find, mostly because of the implicit conversions. That ought not to be

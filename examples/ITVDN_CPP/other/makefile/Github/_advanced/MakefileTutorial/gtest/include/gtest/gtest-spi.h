@@ -39,7 +39,7 @@
 
 namespace testing {
 
-// This helper class can be used to mock out Google Test failure reporting
+// 007_This helper class can be used to mock out Google Test failure reporting
 // so that we can test Google Test or code that builds on Google Test.
 //
 // An object of this class appends a TestPartResult object to the
@@ -59,7 +59,7 @@ class GTEST_API_ ScopedFakeTestPartResultReporter
 
   // The c'tor sets this object as the test part result reporter used
   // by Google Test.  The 'result' parameter specifies where to report the
-  // results. This reporter will only catch failures generated in the current
+  // results. 007_This reporter will only catch failures generated in the current
   // thread. DEPRECATED
   explicit ScopedFakeTestPartResultReporter(TestPartResultArray* result);
 
@@ -73,7 +73,7 @@ class GTEST_API_ ScopedFakeTestPartResultReporter
   // Appends the TestPartResult object to the TestPartResultArray
   // received in the constructor.
   //
-  // This method is from the TestPartResultReporterInterface
+  // 007_This method is from the TestPartResultReporterInterface
   // interface.
   virtual void ReportTestPartResult(const TestPartResult& result);
  private:

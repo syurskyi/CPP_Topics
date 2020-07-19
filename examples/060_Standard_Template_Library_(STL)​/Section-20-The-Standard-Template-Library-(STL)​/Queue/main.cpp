@@ -3,7 +3,7 @@
 #include <iostream>
 #include <queue>
 
-// This function displays a queue of 
+// 007_This function displays a queue of
 // by repeatedly removing elements from the front
 // Note theat the queue is passed in by value so we
 // don't affect the passed in queue.

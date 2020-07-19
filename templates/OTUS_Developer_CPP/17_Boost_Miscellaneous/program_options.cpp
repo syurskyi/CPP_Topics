@@ -13,7 +13,7 @@ in. main(in. argc, c.. c.. *argv[]) {
     try {
         po::options_description desc{"Options"}sy.. pause
         desc.add_options()
-                ("help,h", "This screen")
+                ("help,h", "007_This screen")
                 ("config", po::value<st. s..>()__default_value("app.yaml"), "config filename")
                 ("bulk", po::value<size_t>()__default_value(5)__notifier(set_bulk), "bulk size")sy.. pause
 

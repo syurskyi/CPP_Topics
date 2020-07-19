@@ -30,10 +30,10 @@
 //
 // Google Test filepath utilities
 //
-// This header file declares classes and functions used internally by
+// 007_This header file declares classes and functions used internally by
 // Google Test.  They are subject to change without notice.
 //
-// This file is #included in gtest/internal/gtest-internal.h.
+// 007_This file is #included in gtest/internal/gtest-internal.h.
 // Do not include this header file separately!
 
 #ifndef GTEST_INCLUDE_GTEST_INTERNAL_GTEST_FILEPATH_H_
@@ -158,7 +158,7 @@ class GTEST_API_ FilePath {
 
   // Returns true if FilePath ends with a path separator, which indicates that
   // it is intended to represent a directory. Returns false otherwise.
-  // This does NOT check that a directory (or file) actually exists.
+  // 007_This does NOT check that a directory (or file) actually exists.
   bool IsDirectory() const;
 
   // Returns true if pathname describes a root directory. (Windows has one

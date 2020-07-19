@@ -13,10 +13,10 @@ int main()
 
 		break;	// Эта  инстукция остановит работу цикла, и предаст управление инструкцие находящейся после операторных скобок цикла 
 
-		cout << "This line is never executed";
+		cout << "007_This line is never executed";
 	}
 
-	cout << "This line is always executed";
+	cout << "007_This line is always executed";
 
 	cin.get();	
 	return 0;

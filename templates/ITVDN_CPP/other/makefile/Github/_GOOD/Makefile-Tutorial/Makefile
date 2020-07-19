@@ -31,13 +31,13 @@ all: directories demo.out
 
 directories:
 	mkdir -p	${BUILD_DIR}
-# This will make the build directory if it doesn't exist yet
+# 007_This will make the build directory if it doesn't exist yet
 
 demo.out: $(DEMO_OBJS)
 	$(CXX) $(CXXFLAGS) -o $@ $^ $(LDFLAGS)
 # $@ = target name (demo.out, in this case)
 # $^ = dependency list (build/demo.o build/insertionSort.o ...)
-# This target makes $@ by linking $^ together
+# 007_This target makes $@ by linking $^ together
 
 ${BUILD_DIR}/%.o: ${SRC_DIR}/%.cpp $(DEPS)
 	$(CXX) $(CXXFLAGS) -o $@ -c $<

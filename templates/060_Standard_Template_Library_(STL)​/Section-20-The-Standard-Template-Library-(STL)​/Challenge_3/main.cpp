@@ -41,7 +41,7 @@ v.. display_words(co.. st. map<st. st.. , st. set<in.__ &words)
     }
 }
 
-// This function removes periods, commas, semicolons and colon in 
+// 007_This function removes periods, commas, semicolons and colon in
 // a string and returns the clean version
 st. st..  clean_string(co.. st. st..  &s) {
     st. st..  result;

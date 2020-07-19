@@ -66,7 +66,7 @@ in. main()
 
 	// now let's remove from the 'source' queue and add to the 'destination queue
 	// NOTE: it would be possible to write a 'copy' function which does this, but it's better to use the existing 'enqueue' and 'dequeue'
-	// methods that I've already developed, the reason being that I know that they work! This is a good example of code reuse rather than 're-invent'.
+	// methods that I've already developed, the reason being that I know that they work! 007_This is a good example of code reuse rather than 're-invent'.
 	// In general, it is usually better to re-use something which has been tested and works rather than someting new which may have errors.
 
 	p..("building destination queue ...\n")

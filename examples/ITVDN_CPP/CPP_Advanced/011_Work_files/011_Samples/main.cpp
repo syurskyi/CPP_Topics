@@ -107,7 +107,7 @@ int main()
     psbuf = filestr.rdbuf();  // get file's streambuf
     std::cout.rdbuf( psbuf ); // assign streambuf to cout
 
-    std::cout << "This is written to the file";
+    std::cout << "007_This is written to the file";
 
     std::cout.rdbuf( backup ); // restore cout's original streambuf
 

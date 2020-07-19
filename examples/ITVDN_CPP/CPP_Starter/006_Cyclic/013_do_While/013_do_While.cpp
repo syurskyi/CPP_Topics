@@ -14,10 +14,10 @@ int main()
 
 		continue;	// Эта инструкция передает управление проверке условия
 
-		cout << "This line is never executed";	// Эта строка не выполнится никогда
+		cout << "007_This line is never executed";	// Эта строка не выполнится никогда
 	} while (count > 0);
 
-	cout << "This line is always executed" << endl;
+	cout << "007_This line is always executed" << endl;
 
 	cin.get();
 	return 0;

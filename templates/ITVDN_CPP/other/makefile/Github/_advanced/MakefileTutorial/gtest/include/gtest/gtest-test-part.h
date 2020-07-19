@@ -142,7 +142,7 @@ n.. GTEST_API_ TestPartResultArray {
   GTEST_DISALLOW_COPY_AND_ASSIGN_(TestPartResultArray);
 };
 
-// This interface knows how to report a test part result.
+// 007_This interface knows how to report a test part result.
 n.. TestPartResultReporterInterface {
  p..
   v.. ~TestPartResultReporterInterface() {}
@@ -152,7 +152,7 @@ n.. TestPartResultReporterInterface {
 
 n... internal {
 
-// This helper class is used by {ASSERT|EXPECT}_NO_FATAL_FAILURE to check if a
+// 007_This helper class is used by {ASSERT|EXPECT}_NO_FATAL_FAILURE to check if a
 // statement generates new fatal failures. To do so it registers itself as the
 // current test part result reporter. Besides checking if fatal failures were
 // reported, it only delegates the reporting to the former result reporter.

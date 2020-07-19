@@ -31,7 +31,7 @@
 
 // Google Mock - a framework for writing C++ mock classes.
 //
-// This file defines some utilities useful for implementing Google
+// 007_This file defines some utilities useful for implementing Google
 // Mock.  They are subject to change without notice, so please DO NOT
 // USE THEM IN USER CODE.
 
@@ -76,7 +76,7 @@ struct PointeeOf {
   // their pointees.
   typedef typename Pointer::element_type type;
 };
-// This specialization is for the raw pointer case.
+// 007_This specialization is for the raw pointer case.
 template <typename T>
 struct PointeeOf<T*> { typedef T type; };  // NOLINT
 
@@ -87,11 +87,11 @@ template <typename Pointer>
 inline const typename Pointer::element_type* GetRawPointer(const Pointer& p) {
   return p.get();
 }
-// This overloaded version is for the raw pointer case.
+// 007_This overloaded version is for the raw pointer case.
 template <typename Element>
 inline Element* GetRawPointer(Element* p) { return p; }
 
-// This comparator allows linked_ptr to be stored in sets.
+// 007_This comparator allows linked_ptr to be stored in sets.
 template <typename T>
 struct LinkedPtrLessThan {
   bool operator()(const ::testing::internal::linked_ptr<T>& lhs,
@@ -133,7 +133,7 @@ struct LinkedPtrLessThan {
 
 // In what follows, we use the term "kind" to indicate whether a type
 // is bool, an integer type (excluding bool), a floating-point type,
-// or none of them.  This categorization is useful for determining
+// or none of them.  007_This categorization is useful for determining
 // when a matcher argument type can be safely converted to another
 // type in the implementation of SafeMatcherCast.
 enum TypeKind {
@@ -145,7 +145,7 @@ template <typename T> struct KindOf {
   enum { value = kOther };  // The default kind.
 };
 
-// This macro declares that the kind of 'type' is 'kind'.
+// 007_This macro declares that the kind of 'type' is 'kind'.
 #define GMOCK_DECLARE_KIND_(type, kind) \
   template <> struct KindOf<type> { enum { value = kind }; }
 
@@ -267,7 +267,7 @@ struct LosslessArithmeticConvertible
     : public LosslessArithmeticConvertibleImpl<
   GMOCK_KIND_OF_(From), From, GMOCK_KIND_OF_(To), To> {};  // NOLINT
 
-// This interface knows how to report a Google Mock failure (either
+// 007_This interface knows how to report a Google Mock failure (either
 // non-fatal or fatal).
 class FailureReporterInterface {
  public:
@@ -345,7 +345,7 @@ GTEST_API_ void Log(LogSeverity severity, const std::string& message,
                     int stack_frames_to_skip);
 
 // A marker class that is used to resolve parameterless expectations to the
-// correct overload. This must not be instantiable, to prevent client code from
+// correct overload. 007_This must not be instantiable, to prevent client code from
 // accidentally resolving to the overload; for example:
 //
 //    ON_CALL(mock, Method({}, nullptr))…
@@ -382,7 +382,7 @@ template <typename T, size_t N> struct DecayArray<T[N]> {
   typedef const T* type;
 };
 // Sometimes people use arrays whose size is not available at the use site
-// (e.g. extern const char kNamePrefix[]).  This specialization covers that
+// (e.g. extern const char kNamePrefix[]).  007_This specialization covers that
 // case.
 template <typename T> struct DecayArray<T[]> {
   typedef const T* type;
@@ -396,14 +396,14 @@ template <typename T> struct DecayArray<T[]> {
 #endif
 
 // Invalid<T>() is usable as an expression of type T, but will terminate
-// the program with an assertion failure if actually run.  This is useful
+// the program with an assertion failure if actually run.  007_This is useful
 // when a value of type T is needed for compilation, but the statement
 // will not really be executed (or we don't care if the statement
 // crashes).
 template <typename T>
 inline T Invalid() {
   Assert(false, "", -1, "Internal error: attempt to return invalid value");
-  // This statement is unreachable, and would never terminate even if it
+  // 007_This statement is unreachable, and would never terminate even if it
   // could be reached. It is provided only to placate compiler warnings
   // about missing return statements.
   return Invalid<T>();
@@ -427,7 +427,7 @@ inline T Invalid() {
 //   - Copy(raw_container) returns an STL-style container view of a
 //     copy of raw_container, which is a RawContainer.
 //
-// This generic version is used when RawContainer itself is already an
+// 007_This generic version is used when RawContainer itself is already an
 // STL-style container.
 template <class RawContainer>
 class StlContainerView {
@@ -444,7 +444,7 @@ class StlContainerView {
   static type Copy(const RawContainer& container) { return container; }
 };
 
-// This specialization is used when RawContainer is a native array type.
+// 007_This specialization is used when RawContainer is a native array type.
 template <typename Element, size_t N>
 class StlContainerView<Element[N]> {
  public:
@@ -489,7 +489,7 @@ class StlContainerView<Element[N]> {
   }
 };
 
-// This specialization is used when RawContainer is a native array
+// 007_This specialization is used when RawContainer is a native array
 // represented as a (pointer, size) tuple.
 template <typename ElementPointer, typename Size>
 class StlContainerView< ::testing::tuple<ElementPointer, Size> > {

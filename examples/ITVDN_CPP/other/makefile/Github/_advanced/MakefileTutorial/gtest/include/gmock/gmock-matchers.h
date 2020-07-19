@@ -31,7 +31,7 @@
 
 // Google Mock - a framework for writing C++ mock classes.
 //
-// This file implements some commonly used argument matchers.  More
+// 007_This file implements some commonly used argument matchers.  More
 // matchers can be defined by the user implementing the
 // MatcherInterface<T> interface if necessary.
 
@@ -167,7 +167,7 @@ class MatcherInterface : public MatcherDescriberInterface {
   // You should override this method when defining a new matcher.
   //
   // It's the responsibility of the caller (Google Mock) to guarantee
-  // that 'listener' is not NULL.  This helps to simplify a matcher's
+  // that 'listener' is not NULL.  007_This helps to simplify a matcher's
   // implementation when it doesn't care about the performance, as it
   // can talk to 'listener' without checking its validity first.
   // However, in order to implement dummy listeners efficiently,
@@ -604,7 +604,7 @@ class PolymorphicMatcher {
   GTEST_DISALLOW_ASSIGN_(PolymorphicMatcher);
 };
 
-// Creates a matcher from its implementation.  This is easier to use
+// Creates a matcher from its implementation.  007_This is easier to use
 // than the Matcher<T> constructor as it doesn't require you to
 // explicitly write the template argument, e.g.
 //
@@ -616,7 +616,7 @@ inline Matcher<T> MakeMatcher(const MatcherInterface<T>* impl) {
   return Matcher<T>(impl);
 }
 
-// Creates a polymorphic matcher from its implementation.  This is
+// Creates a polymorphic matcher from its implementation.  007_This is
 // easier to use than the PolymorphicMatcher<Impl> constructor as it
 // doesn't require you to explicitly write the template argument, e.g.
 //
@@ -638,7 +638,7 @@ namespace internal {
 // class/struct templates to be partially specialized, but not
 // function templates.).
 
-// This general version is used when MatcherCast()'s argument is a
+// 007_This general version is used when MatcherCast()'s argument is a
 // polymorphic matcher (i.e. something that can be converted to a
 // Matcher but is not one yet; for example, Eq(value)) or a value (for
 // example, "hello").
@@ -707,8 +707,8 @@ class MatcherCastImpl {
       BooleanConstant<false> /* convertible_to_T */);
 };
 
-// This more specialized version is used when MatcherCast()'s argument
-// is already a Matcher.  This only compiles when type T can be
+// 007_This more specialized version is used when MatcherCast()'s argument
+// is already a Matcher.  007_This only compiles when type T can be
 // statically converted to type U.
 template <typename T, typename U>
 class MatcherCastImpl<T, Matcher<U> > {
@@ -759,7 +759,7 @@ class MatcherCastImpl<T, Matcher<U> > {
   };
 };
 
-// This even more specialized version is used for efficiently casting
+// 007_This even more specialized version is used for efficiently casting
 // a matcher to its own type.
 template <typename T>
 class MatcherCastImpl<T, Matcher<T> > {
@@ -788,14 +788,14 @@ inline Matcher<T> MatcherCast(const M& matcher) {
 template <typename T>
 class SafeMatcherCastImpl {
  public:
-  // This overload handles polymorphic matchers and values only since
+  // 007_This overload handles polymorphic matchers and values only since
   // monomorphic matchers are handled by the next one.
   template <typename M>
   static inline Matcher<T> Cast(const M& polymorphic_matcher_or_value) {
     return internal::MatcherCastImpl<T, M>::Cast(polymorphic_matcher_or_value);
   }
 
-  // This overload handles monomorphic matchers.
+  // 007_This overload handles monomorphic matchers.
   //
   // In general, if type T can be implicitly converted to type U, we can
   // safely convert a Matcher<U> to a Matcher<T> (i.e. Matcher is
@@ -850,7 +850,7 @@ inline void PrintIfNotEmpty(const std::string& explanation,
 }
 
 // Returns true if the given type name is easy to read by a human.
-// This is used to decide whether printing the type of a value might
+// 007_This is used to decide whether printing the type of a value might
 // be helpful.
 inline bool IsReadableTypeName(const std::string& type_name) {
   // We consider a type name readable if it's short or doesn't contain
@@ -1031,7 +1031,7 @@ class AnyMatcherImpl : public MatcherInterface<GTEST_REFERENCE_TO_CONST_(T)> {
   }
   virtual void DescribeTo(::std::ostream* os) const { *os << "is anything"; }
   virtual void DescribeNegationTo(::std::ostream* os) const {
-    // This is mostly for completeness' safe, as it's not very useful
+    // 007_This is mostly for completeness' safe, as it's not very useful
     // to write Not(A<bool>()).  However we cannot completely rule out
     // such a possibility, and it doesn't hurt to be prepared.
     *os << "never matches";
@@ -1039,7 +1039,7 @@ class AnyMatcherImpl : public MatcherInterface<GTEST_REFERENCE_TO_CONST_(T)> {
 };
 
 // Implements _, a matcher that matches any value of any
-// type.  This is a polymorphic matcher, so we need a template type
+// type.  007_This is a polymorphic matcher, so we need a template type
 // conversion operator to make it appearing as a Matcher<T> for any
 // type T.
 class AnythingMatcher {
@@ -1182,18 +1182,18 @@ class NotNullMatcher {
 };
 
 // Ref(variable) matches any argument that is a reference to
-// 'variable'.  This matcher is polymorphic as it can match any
+// 'variable'.  007_This matcher is polymorphic as it can match any
 // super type of the type of 'variable'.
 //
 // The RefMatcher template class implements Ref(variable).  It can
-// only be instantiated with a reference type.  This prevents a user
+// only be instantiated with a reference type.  007_This prevents a user
 // from mistakenly using Ref(x) to match a non-reference function
 // argument.  For example, the following will righteously cause a
 // compiler error:
 //
 //   int n;
-//   Matcher<int> m1 = Ref(n);   // This won't compile.
-//   Matcher<int&> m2 = Ref(n);  // This will compile.
+//   Matcher<int> m1 = Ref(n);   // 007_This won't compile.
+//   Matcher<int&> m2 = Ref(n);  // 007_This will compile.
 template <typename T>
 class RefMatcher;
 
@@ -1304,7 +1304,7 @@ class StrEqualityMatcher {
     if (s.data() == NULL) {
       return !expect_eq_;
     }
-    // This should fail to compile if absl::string_view is used with wide
+    // 007_This should fail to compile if absl::string_view is used with wide
     // strings.
     const StringType& str = string(s);
     return MatchAndExplain(str, listener);
@@ -1326,7 +1326,7 @@ class StrEqualityMatcher {
 
   // Matches anything that can convert to StringType.
   //
-  // This is a template, not just a plain function with const StringType&,
+  // 007_This is a template, not just a plain function with const StringType&,
   // because absl::string_view has some interfering non-explicit constructors.
   template <typename MatcheeStringType>
   bool MatchAndExplain(const MatcheeStringType& s,
@@ -1377,7 +1377,7 @@ class HasSubstrMatcher {
     if (s.data() == NULL) {
       return false;
     }
-    // This should fail to compile if absl::string_view is used with wide
+    // 007_This should fail to compile if absl::string_view is used with wide
     // strings.
     const StringType& str = string(s);
     return MatchAndExplain(str, listener);
@@ -1396,7 +1396,7 @@ class HasSubstrMatcher {
 
   // Matches anything that can convert to StringType.
   //
-  // This is a template, not just a plain function with const StringType&,
+  // 007_This is a template, not just a plain function with const StringType&,
   // because absl::string_view has some interfering non-explicit constructors.
   template <typename MatcheeStringType>
   bool MatchAndExplain(const MatcheeStringType& s,
@@ -1437,7 +1437,7 @@ class StartsWithMatcher {
     if (s.data() == NULL) {
       return false;
     }
-    // This should fail to compile if absl::string_view is used with wide
+    // 007_This should fail to compile if absl::string_view is used with wide
     // strings.
     const StringType& str = string(s);
     return MatchAndExplain(str, listener);
@@ -1456,7 +1456,7 @@ class StartsWithMatcher {
 
   // Matches anything that can convert to StringType.
   //
-  // This is a template, not just a plain function with const StringType&,
+  // 007_This is a template, not just a plain function with const StringType&,
   // because absl::string_view has some interfering non-explicit constructors.
   template <typename MatcheeStringType>
   bool MatchAndExplain(const MatcheeStringType& s,
@@ -1496,7 +1496,7 @@ class EndsWithMatcher {
     if (s.data() == NULL) {
       return false;
     }
-    // This should fail to compile if absl::string_view is used with wide
+    // 007_This should fail to compile if absl::string_view is used with wide
     // strings.
     const StringType& str = string(s);
     return MatchAndExplain(str, listener);
@@ -1515,7 +1515,7 @@ class EndsWithMatcher {
 
   // Matches anything that can convert to StringType.
   //
-  // This is a template, not just a plain function with const StringType&,
+  // 007_This is a template, not just a plain function with const StringType&,
   // because absl::string_view has some interfering non-explicit constructors.
   template <typename MatcheeStringType>
   bool MatchAndExplain(const MatcheeStringType& s,
@@ -1568,7 +1568,7 @@ class MatchesRegexMatcher {
 
   // Matches anything that can convert to std::string.
   //
-  // This is a template, not just a plain function with const std::string&,
+  // 007_This is a template, not just a plain function with const std::string&,
   // because absl::string_view has some interfering non-explicit constructors.
   template <class MatcheeStringType>
   bool MatchAndExplain(const MatcheeStringType& s,
@@ -1700,7 +1700,7 @@ class NotMatcher {
  public:
   explicit NotMatcher(InnerMatcher matcher) : matcher_(matcher) {}
 
-  // This template type conversion operator allows Not(m) to be used
+  // 007_This template type conversion operator allows Not(m) to be used
   // to match any type m can match.
   template <typename T>
   operator Matcher<T>() const {
@@ -1790,7 +1790,7 @@ class VariadicMatcher {
     static_assert(sizeof...(Args) > 0, "Must have at least one matcher.");
   }
 
-  // This template type conversion operator allows an
+  // 007_This template type conversion operator allows an
   // VariadicMatcher<Matcher1, Matcher2...> object to match any type that
   // all of the provided matchers (Matcher1, Matcher2, ...) can match.
   template <typename T>
@@ -1831,7 +1831,7 @@ class BothOfMatcher {
   BothOfMatcher(Matcher1 matcher1, Matcher2 matcher2)
       : matcher1_(matcher1), matcher2_(matcher2) {}
 
-  // This template type conversion operator allows a
+  // 007_This template type conversion operator allows a
   // BothOfMatcher<Matcher1, Matcher2> object to match any type that
   // both Matcher1 and Matcher2 can match.
   template <typename T>
@@ -1929,7 +1929,7 @@ class EitherOfMatcher {
   EitherOfMatcher(Matcher1 matcher1, Matcher2 matcher2)
       : matcher1_(matcher1), matcher2_(matcher2) {}
 
-  // This template type conversion operator allows a
+  // 007_This template type conversion operator allows a
   // EitherOfMatcher<Matcher1, Matcher2> object to match any type that
   // both Matcher1 and Matcher2 can match.
   template <typename T>
@@ -1954,7 +1954,7 @@ class TrulyMatcher {
  public:
   explicit TrulyMatcher(Predicate pred) : predicate_(pred) {}
 
-  // This method template allows Truly(pred) to be used as a matcher
+  // 007_This method template allows Truly(pred) to be used as a matcher
   // for type T where T is the argument type of predicate 'pred'.  The
   // argument is passed by reference as the predicate may be
   // interested in the address of the argument.
@@ -1993,7 +1993,7 @@ class MatcherAsPredicate {
  public:
   explicit MatcherAsPredicate(M matcher) : matcher_(matcher) {}
 
-  // This template operator() allows Matches(m) to be used as a
+  // 007_This template operator() allows Matches(m) to be used as a
   // predicate on type T where m is a matcher on type T.
   //
   // The argument x is passed by reference instead of by value, as
@@ -2002,7 +2002,7 @@ class MatcherAsPredicate {
   template <typename T>
   bool operator()(const T& x) const {
     // We let matcher_ commit to a particular type here instead of
-    // when the MatcherAsPredicate object was constructed.  This
+    // when the MatcherAsPredicate object was constructed.  007_This
     // allows us to write Matches(m) where m is a polymorphic matcher
     // (e.g. Eq(5)).
     //
@@ -2031,7 +2031,7 @@ class PredicateFormatterFromMatcher {
  public:
   explicit PredicateFormatterFromMatcher(M m) : matcher_(internal::move(m)) {}
 
-  // This template () operator allows a PredicateFormatterFromMatcher
+  // 007_This template () operator allows a PredicateFormatterFromMatcher
   // object to act as a predicate-formatter suitable for using with
   // Google Test's EXPECT_PRED_FORMAT1() macro.
   template <typename T>
@@ -2067,7 +2067,7 @@ class PredicateFormatterFromMatcher {
 };
 
 // A helper function for converting a matcher to a predicate-formatter
-// without the user needing to explicitly write the type.  This is
+// without the user needing to explicitly write the type.  007_This is
 // used for implementing ASSERT_THAT() and EXPECT_THAT().
 // Implementation detail: 'matcher' is received by-value to force decaying.
 template <typename M>
@@ -2316,7 +2316,7 @@ class PointeeMatcher {
  public:
   explicit PointeeMatcher(const InnerMatcher& matcher) : matcher_(matcher) {}
 
-  // This type conversion operator template allows Pointee(m) to be
+  // 007_This type conversion operator template allows Pointee(m) to be
   // used as a matcher for any pointer type whose pointee type is
   // compatible with the inner matcher, where type Pointer can be
   // either a raw pointer or a smart pointer.
@@ -2803,7 +2803,7 @@ class BeginEndDistanceIsMatcher {
 };
 
 // Implements an equality matcher for any STL-style container whose elements
-// support ==. This matcher is like Eq(), but its failure explanations provide
+// support ==. 007_This matcher is like Eq(), but its failure explanations provide
 // more detailed information that is useful when the container is used as a set.
 // The failure message reports elements that are in one of the operands but not
 // the other. The failure messages do not report duplicate or out-of-order
@@ -4274,7 +4274,7 @@ UnorderedElementsAreArray(::std::initializer_list<T> xs) {
 
 // _ is a matcher that matches anything of any type.
 //
-// This definition is fine as:
+// 007_This definition is fine as:
 //
 //   1. The C++ standard permits using the name _ in a namespace that
 //      is not the global namespace or ::std.
@@ -4362,7 +4362,7 @@ inline PolymorphicMatcher<internal::IsNullMatcher > IsNull() {
 }
 
 // Creates a polymorphic matcher that matches any non-NULL pointer.
-// This is convenient as Not(NULL) doesn't compile (the compiler
+// 007_This is convenient as Not(NULL) doesn't compile (the compiler
 // thinks that that expression is comparing a pointer with an integer).
 inline PolymorphicMatcher<internal::NotNullMatcher > NotNull() {
   return MakePolymorphicMatcher(internal::NotNullMatcher());
@@ -4791,7 +4791,7 @@ SizeIs(const SizeMatcher& size_matcher) {
 }
 
 // Returns a matcher that matches the distance between the container's begin()
-// iterator and its end() iterator, i.e. the size of the container. This matcher
+// iterator and its end() iterator, i.e. the size of the container. 007_This matcher
 // can be used instead of SizeIs with containers such as std::forward_list which
 // do not implement size(). The container must provide const_iterator (with
 // valid iterator_traits), begin() and end().
@@ -4802,14 +4802,14 @@ BeginEndDistanceIs(const DistanceMatcher& distance_matcher) {
 }
 
 // Returns a matcher that matches an equal container.
-// This matcher behaves like Eq(), but in the event of mismatch lists the
+// 007_This matcher behaves like Eq(), but in the event of mismatch lists the
 // values that are included in one container but not the other. (Duplicate
 // values and order differences are not explained.)
 template <typename Container>
 inline PolymorphicMatcher<internal::ContainerEqMatcher<  // NOLINT
                             GTEST_REMOVE_CONST_(Container)> >
     ContainerEq(const Container& rhs) {
-  // This following line is for working around a bug in MSVC 8.0,
+  // 007_This following line is for working around a bug in MSVC 8.0,
   // which causes Container to be a const type sometimes.
   typedef GTEST_REMOVE_CONST_(Container) RawContainer;
   return MakePolymorphicMatcher(
@@ -4846,7 +4846,7 @@ template <typename TupleMatcher, typename Container>
 inline internal::PointwiseMatcher<TupleMatcher,
                                   GTEST_REMOVE_CONST_(Container)>
 Pointwise(const TupleMatcher& tuple_matcher, const Container& rhs) {
-  // This following line is for working around a bug in MSVC 8.0,
+  // 007_This following line is for working around a bug in MSVC 8.0,
   // which causes Container to be a const type sometimes (e.g. when
   // rhs is a const int[])..
   typedef GTEST_REMOVE_CONST_(Container) RawContainer;
@@ -4874,7 +4874,7 @@ inline internal::PointwiseMatcher<TupleMatcher, std::vector<T> > Pointwise(
 // the types of elements in the LHS container and the RHS container
 // respectively.
 //
-// This is like Pointwise(pair_matcher, rhs), except that the element
+// 007_This is like Pointwise(pair_matcher, rhs), except that the element
 // order doesn't matter.
 template <typename Tuple2Matcher, typename RhsContainer>
 inline internal::UnorderedElementsAreArrayMatcher<
@@ -4883,7 +4883,7 @@ inline internal::UnorderedElementsAreArrayMatcher<
                            RhsContainer)>::type::value_type> >
 UnorderedPointwise(const Tuple2Matcher& tuple2_matcher,
                    const RhsContainer& rhs_container) {
-  // This following line is for working around a bug in MSVC 8.0,
+  // 007_This following line is for working around a bug in MSVC 8.0,
   // which causes RhsContainer to be a const type sometimes (e.g. when
   // rhs_container is a const int[]).
   typedef GTEST_REMOVE_CONST_(RhsContainer) RawRhsContainer;
@@ -5193,7 +5193,7 @@ UnorderedElementsAre(const Args&... matchers) {
 
 #endif  // GTEST_LANG_CXX11
 
-// AllArgs(m) is a synonym of m.  This is useful in
+// AllArgs(m) is a synonym of m.  007_This is useful in
 //
 //   EXPECT_CALL(foo, Bar(_, _)).With(AllArgs(Eq()));
 //

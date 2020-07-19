@@ -56,10 +56,10 @@ void ClientDecorator::run()
 {
     const std::string salutation = "Greetings,";
     const std::string valediction = "Sincerly, Andy";
-    std::string message1 = "This message is not decorated.";
-    std::string message2 = "This message is decorated with a salutation.";
-    std::string message3 = "This message is decorated with a valediction.";
-    std::string message4 = "This message is decorated with a salutation and a valediction.";
+    std::string message1 = "007_This message is not decorated.";
+    std::string message2 = "007_This message is decorated with a salutation.";
+    std::string message3 = "007_This message is decorated with a valediction.";
+    std::string message4 = "007_This message is decorated with a salutation and a valediction.";
 
     std::unique_ptr< Interface > messenger1 = std::make_unique< Core >();
     std::unique_ptr< Interface > messenger2 =

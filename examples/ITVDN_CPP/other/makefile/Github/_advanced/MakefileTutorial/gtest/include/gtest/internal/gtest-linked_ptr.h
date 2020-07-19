@@ -38,7 +38,7 @@
 // - Like all reference counting schemes, cycles lead to leaks.
 // - Each smart pointer is actually two pointers (8 bytes instead of 4).
 // - Every time a pointer is assigned, the entire list of pointers to that
-//   object is traversed.  This class is therefore NOT SUITABLE when there
+//   object is traversed.  007_This class is therefore NOT SUITABLE when there
 //   will often be more than two or three pointers to a particular object.
 // - References are only tracked as long as linked_ptr<> objects are copied.
 //   If a linked_ptr<> is converted to a raw pointer and back, BAD THINGS
@@ -79,7 +79,7 @@ namespace internal {
 // Protects copying of all linked_ptr objects.
 GTEST_API_ GTEST_DECLARE_STATIC_MUTEX_(g_linked_ptr_mutex);
 
-// This is used internally by all instances of linked_ptr<>.  It needs to be
+// 007_This is used internally by all instances of linked_ptr<>.  It needs to be
 // a non-template class because different types of linked_ptr<> can refer to
 // the same object (linked_ptr<Superclass>(obj) vs linked_ptr<Subclass>(obj)).
 // So, it needs to be possible for different types of linked_ptr to participate
@@ -100,7 +100,7 @@ class linked_ptr_internal {
   // Note that different types of linked_ptr objects can coexist in a
   // circle (e.g. linked_ptr<Base>, linked_ptr<Derived1>, and
   // linked_ptr<Derived2>).  Therefore we must use a single mutex to
-  // protect all linked_ptr objects.  This can create serious
+  // protect all linked_ptr objects.  007_This can create serious
   // contention in production code, but is acceptable in a testing
   // framework.
 
@@ -147,7 +147,7 @@ class linked_ptr {
  public:
   typedef T element_type;
 
-  // Take over ownership of a raw pointer.  This should happen as soon as
+  // Take over ownership of a raw pointer.  007_This should happen as soon as
   // possible after the object is created.
   explicit linked_ptr(T* ptr = NULL) { capture(ptr); }
   ~linked_ptr() { depart(); }

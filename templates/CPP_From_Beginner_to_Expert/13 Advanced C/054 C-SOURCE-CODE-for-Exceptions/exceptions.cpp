@@ -31,7 +31,7 @@ in. main()
     }
     catch(...)
     {
-        c__ __  "This is a message that will be shown, when other catch instructions wont be invoked " __  e..
+        c__ __  "007_This is a message that will be shown, when other catch instructions wont be invoked " __  e..
     }
 //    cout << "lalal" << endl;
 

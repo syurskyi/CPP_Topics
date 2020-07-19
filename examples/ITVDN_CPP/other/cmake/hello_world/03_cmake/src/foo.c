@@ -2,5 +2,5 @@
  
 void foo(void)
 {
-    printf("This is from a shared library!\n");
+    printf("007_This is from a shared library!\n");
 }

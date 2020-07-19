@@ -31,7 +31,7 @@
 
 // Google Test - The Google C++ Testing and Mocking Framework
 //
-// This file implements a universal value printer that can print a
+// 007_This file implements a universal value printer that can print a
 // value of any type T:
 //
 //   void ::testing::internal::UniversalPrinter<T>::Print(value, ostream_ptr);
@@ -149,7 +149,7 @@ enum TypeKind {
 template <typename T, TypeKind kTypeKind>
 class TypeWithoutFormatter {
  public:
-  // This default version is called when kTypeKind is kOtherType.
+  // 007_This default version is called when kTypeKind is kOtherType.
   static void PrintValue(const T& value, ::std::ostream* os) {
     PrintBytesInObjectTo(static_cast<const unsigned char*>(
                              reinterpret_cast<const void*>(&value)),
@@ -206,7 +206,7 @@ class TypeWithoutFormatter<T, kConvertibleToStringView> {
 // Prints the given value to the given ostream.  If the value is a
 // protocol message, its debug string is printed; if it's an enum or
 // of a type implicitly convertible to BiggestInt, it's printed as an
-// integer; otherwise the bytes in the value are printed.  This is
+// integer; otherwise the bytes in the value are printed.  007_This is
 // what UniversalPrinter<T>::Print() does when it knows nothing about
 // type T and T has neither << operator nor PrintTo().
 //
@@ -249,7 +249,7 @@ template <typename Char, typename CharTraits, typename T>
 }  // namespace internal2
 }  // namespace testing
 
-// This namespace MUST NOT BE NESTED IN ::testing, or the name look-up
+// 007_This namespace MUST NOT BE NESTED IN ::testing, or the name look-up
 // magic needed for implementing UniversalPrinter won't work.
 namespace testing_internal {
 
@@ -262,7 +262,7 @@ void DefaultPrintNonContainerTo(const T& value, ::std::ostream* os) {
   // the nearest enclosing namespace that contains both
   // ::testing_internal and ::testing::internal2, i.e. the global
   // namespace.  For more details, refer to the C++ Standard section
-  // 7.3.4-1 [namespace.udir].  This allows us to fall back onto
+  // 7.3.4-1 [namespace.udir].  007_This allows us to fall back onto
   // testing::internal2::operator<< in case T doesn't come with a <<
   // operator.
   //
@@ -376,7 +376,7 @@ GTEST_IMPL_FORMAT_C_STRING_AS_STRING_(const wchar_t, ::std::wstring);
 
 // Formats a comparison assertion (e.g. ASSERT_EQ, EXPECT_LT, and etc)
 // operand to be used in a failure message.  The type (but not value)
-// of the other operand may affect the format.  This allows us to
+// of the other operand may affect the format.  007_This allows us to
 // print a char* as a raw pointer when it is compared against another
 // char* or void*, and print it as a C string when it is compared
 // against an std::string object, for example.
@@ -478,7 +478,7 @@ void DefaultPrintTo(WrapPrinterType<kPrintOther> /* dummy */,
 }
 
 // Prints the given value using the << operator if it has one;
-// otherwise prints the bytes in it.  This is what
+// otherwise prints the bytes in it.  007_This is what
 // UniversalPrinter<T>::Print() does when PrintTo() is not specialized
 // or overloaded for type T.
 //
@@ -534,7 +534,7 @@ void PrintTo(const T& value, ::std::ostream* os) {
 GTEST_API_ void PrintTo(unsigned char c, ::std::ostream* os);
 GTEST_API_ void PrintTo(signed char c, ::std::ostream* os);
 inline void PrintTo(char c, ::std::ostream* os) {
-  // When printing a plain char, we always treat it as unsigned.  This
+  // When printing a plain char, we always treat it as unsigned.  007_This
   // way, the output won't be affected by whether the compiler thinks
   // char is signed or not.
   PrintTo(static_cast<unsigned char>(c), os);
@@ -836,11 +836,11 @@ void UniversalPrintArray(const T* begin, size_t len, ::std::ostream* os) {
     *os << " }";
   }
 }
-// This overload prints a (const) char array compactly.
+// 007_This overload prints a (const) char array compactly.
 GTEST_API_ void UniversalPrintArray(
     const char* begin, size_t len, ::std::ostream* os);
 
-// This overload prints a (const) wchar_t array compactly.
+// 007_This overload prints a (const) wchar_t array compactly.
 GTEST_API_ void UniversalPrintArray(
     const wchar_t* begin, size_t len, ::std::ostream* os);
 
@@ -1010,7 +1010,7 @@ const size_t TuplePolicy< ::std::tuple<Types...> >::tuple_size;
 #endif  // GTEST_HAS_STD_TUPLE_
 
 #if GTEST_HAS_TR1_TUPLE || GTEST_HAS_STD_TUPLE_
-// This helper template allows PrintTo() for tuples and
+// 007_This helper template allows PrintTo() for tuples and
 // UniversalTersePrintTupleFieldsToStrings() to be defined by
 // induction on the number of tuple fields.  The idea is that
 // TuplePrefixPrinter<N>::PrintPrefixTo(t, os) prints the first N

@@ -31,13 +31,13 @@ main ()
         c.. 8:
         c.. 10:
         c.. 12:
-            c__ __  "This month has 31 days" __  e..
+            c__ __  "007_This month has 31 days" __  e..
             b..
         c.. 4:
         c.. 6:
         c.. 9:
         c.. 11:
-            c__ __  "This month has 30 days" __  e..
+            c__ __  "007_This month has 30 days" __  e..
             b..
         c..
         {

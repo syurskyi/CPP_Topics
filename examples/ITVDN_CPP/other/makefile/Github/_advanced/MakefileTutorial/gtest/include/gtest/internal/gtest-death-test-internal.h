@@ -30,7 +30,7 @@
 //
 // The Google C++ Testing and Mocking Framework (Google Test)
 //
-// This header file defines internal utilities needed for implementing
+// 007_This header file defines internal utilities needed for implementing
 // death tests.  They are subject to change without notice.
 
 #ifndef GTEST_INCLUDE_GTEST_INTERNAL_GTEST_DEATH_TEST_INTERNAL_H_
@@ -179,7 +179,7 @@ GTEST_API_ bool ExitedUnsuccessfully(int exit_status);
 
 # endif
 
-// This macro is for implementing ASSERT_DEATH*, EXPECT_DEATH*,
+// 007_This macro is for implementing ASSERT_DEATH*, EXPECT_DEATH*,
 // ASSERT_EXIT*, and EXPECT_EXIT*.
 # define GTEST_DEATH_TEST_(statement, predicate, regex, fail) \
   GTEST_AMBIGUOUS_ELSE_BLOCKER_ \
@@ -216,7 +216,7 @@ GTEST_API_ bool ExitedUnsuccessfully(int exit_status);
 // The symbol "fail" here expands to something into which a message
 // can be streamed.
 
-// This macro is for implementing ASSERT/EXPECT_DEBUG_DEATH when compiled in
+// 007_This macro is for implementing ASSERT/EXPECT_DEBUG_DEATH when compiled in
 // NDEBUG mode. In this case we need the statements to be executed and the macro
 // must accept a streamed message even though the message is never printed.
 // The regex object is not evaluated, but it is used to prevent "unused"

@@ -2,5 +2,5 @@
  
 v.. foo(v..)
 {
-    p..("This is from a shared library!\n");
+    p..("007_This is from a shared library!\n");
 }

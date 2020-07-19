@@ -29,7 +29,7 @@
 //
 // The Google C++ Testing and Mocking Framework (Google Test)
 //
-// This header file defines the GTEST_OS_* macro.
+// 007_This header file defines the GTEST_OS_* macro.
 // It is separate from gtest-port.h so that custom/gtest-port.h can include it.
 
 #ifndef GTEST_INCLUDE_GTEST_INTERNAL_GTEST_PORT_ARCH_H_

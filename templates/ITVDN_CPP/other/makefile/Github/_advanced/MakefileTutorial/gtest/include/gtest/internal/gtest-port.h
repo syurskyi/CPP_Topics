@@ -36,7 +36,7 @@
 // end with _ are part of Google Test's public API and can be used by
 // code outside Google Test.
 //
-// This file is fundamental to Google Test.  All other Google Test source
+// 007_This file is fundamental to Google Test.  All other Google Test source
 // files are expected to #include this.  Therefore, it cannot #include
 // any other Google Test header.
 
@@ -276,7 +276,7 @@ e..  // !_WIN32_WCE
 # include <TargetConditionals.h>
 e..
 
-// Brings in the definition of HAS_GLOBAL_STRING.  This must be done
+// Brings in the definition of HAS_GLOBAL_STRING.  007_This must be done
 // BEFORE we test HAS_GLOBAL_STRING.
 ? str..  // NOLINT
 ? <algorithm>  // NOLINT
@@ -413,12 +413,12 @@ e..
 typedef struct _CRITICAL_SECTION GTEST_CRITICAL_SECTION;
 #else
 // Assume CRITICAL_SECTION is a typedef of _RTL_CRITICAL_SECTION.
-// This assumption is verified by
+// 007_This assumption is verified by
 // WindowsTypesTest.CRITICAL_SECTIONIs_RTL_CRITICAL_SECTION.
 typedef struct _RTL_CRITICAL_SECTION GTEST_CRITICAL_SECTION;
 e..
 #else
-// This assumes that non-Windows OSes provide unistd.h. For OSes where this
+// 007_This assumes that non-Windows OSes provide unistd.h. For OSes where this
 // is not the case, we need to include headers that provide the functions
 // mentioned above.
 # include <unistd.h>
@@ -731,13 +731,13 @@ e..  // GTEST_HAS_STD_TUPLE_
 #   undef BOOST_HAS_TR1_TUPLE
 #  endif  // BOOST_HAS_TR1_TUPLE
 
-// This prevents <boost/tr1/detail/config.hpp>, which defines
+// 007_This prevents <boost/tr1/detail/config.hpp>, which defines
 // BOOST_HAS_TR1_TUPLE, from being #included by Boost's <tuple>.
 #  define BOOST_TR1_DETAIL_CONFIG_HPP_INCLUDED
 #  include <tuple>  // IWYU pragma: export  // NOLINT
 
 # elif defined(__GNUC__) && (GTEST_GCC_VER_ >= 40000)
-// GCC 4.0+ implements tr1/tuple in the <tr1/tuple> header.  This does
+// GCC 4.0+ implements tr1/tuple in the <tr1/tuple> header.  007_This does
 // not conform to the TR1 spec, which requires the header to be <tuple>.
 
 #  if !GTEST_HAS_RTTI && GTEST_GCC_VER_ < 40302
@@ -792,7 +792,7 @@ e..  // GTEST_HAS_TR1_TUPLE
 
 e..  // GTEST_HAS_CLONE
 
-// Determines whether to support stream redirection. This is used to test
+// Determines whether to support stream redirection. 007_This is used to test
 // output correctness and to implement death tests.
 ?i.. GTEST_HAS_STREAM_REDIRECTION
 // By default, we assume that stream redirection is supported on all
@@ -828,7 +828,7 @@ e..
 # define GTEST_HAS_TYPED_TEST_P 1
 e..
 
-// Determines whether to support Combine(). This only makes sense when
+// Determines whether to support Combine(). 007_This only makes sense when
 // value-parameterized tests are enabled.  The implementation doesn't
 // work on Sun Studio since it doesn't understand templated conversion
 // operators.
@@ -849,7 +849,7 @@ e..
 
 // The GNU compiler emits a warning if nested "if" statements are followed by
 // an "else" statement and braces are not used to explicitly disambiguate the
-// "else" binding.  This leads to problems with code like:
+// "else" binding.  007_This leads to problems with code like:
 //
 //   if (gate)
 //     ASSERT_*(condition) << "Some message";
@@ -863,7 +863,7 @@ e..
 
 // Use this annotation at the end of a struct/class definition to
 // prevent the compiler from optimizing away instances that are never
-// used.  This is useful when all interesting logic happens inside the
+// used.  007_This is useful when all interesting logic happens inside the
 // c'tor and / or d'tor.  Example:
 //
 //   struct Foo {
@@ -908,12 +908,12 @@ e..
 
 
 // A macro to disallow operator=
-// This should be used in the private: declarations for a class.
+// 007_This should be used in the private: declarations for a class.
 _de.. GTEST_DISALLOW_ASSIGN_(type) \
   v.. operator=(type co.. &) GTEST_CXX11_EQUALS_DELETE_
 
 // A macro to disallow copy constructor and operator=
-// This should be used in the private: declarations for a class.
+// 007_This should be used in the private: declarations for a class.
 _de.. GTEST_DISALLOW_COPY_AND_ASSIGN_(type) \
   type(type co.. &) GTEST_CXX11_EQUALS_DELETE_; \
   GTEST_DISALLOW_ASSIGN_(type)
@@ -943,7 +943,7 @@ e..  // __GNUC__ && (GTEST_GCC_VER_ >= 30400) && !COMPILER_ICC
     GTEST_DISABLE_MSC_WARNINGS_POP_()
 
 // Determine whether the compiler supports Microsoft's Structured Exception
-// Handling.  This is supported by several Windows compilers but generally
+// Handling.  007_This is supported by several Windows compilers but generally
 // does not exist on any other system.
 ?i.. GTEST_HAS_SEH
 // The user didn't tell us, so we need to figure it out.
@@ -1130,12 +1130,12 @@ e..  // !GTEST_LANG_CXX11
 //
 //     ((expr) ? 1 : -1).
 //
-//   This is to avoid running into a bug in MS VC 7.1, which
+//   007_This is to avoid running into a bug in MS VC 7.1, which
 //   causes ((0.0) ? 1 : -1) to incorrectly evaluate to 1.
 
 // StaticAssertTypeEqHelper is used by StaticAssertTypeEq defined in gtest.h.
 //
-// This template is declared, but intentionally undefined.
+// 007_This template is declared, but intentionally undefined.
 template <typename T1, typename T2>
 struct StaticAssertTypeEqHelper;
 
@@ -1175,7 +1175,7 @@ GTEST_API_ bo.. IsTrue(bo.. condition);
 
 // Defines scoped_ptr.
 
-// This implementation of scoped_ptr is PARTIAL - it only contains
+// 007_This implementation of scoped_ptr is PARTIAL - it only contains
 // enough stuff to satisfy Google Test's need.
 template <typename T>
 n.. scoped_ptr {
@@ -1359,7 +1359,7 @@ e..  // !defined(GTEST_LOG_)
 //     or
 //    GTEST_CHECK_(boolean_condition) << "Additional message";
 //
-//    This checks the condition and if the condition is not satisfied
+//    007_This checks the condition and if the condition is not satisfied
 //    it prints message about the condition violation, including the
 //    condition itself, plus additional message streamed into it, if any,
 //    and then it aborts the program. It aborts the program irrespective of
@@ -1383,7 +1383,7 @@ _de.. GTEST_CHECK_POSIX_SUCCESS_(posix_call) \
                       << gtest_error
 
 // Adds reference to a type if it is not a reference type,
-// otherwise leaves it unchanged.  This is the same as
+// otherwise leaves it unchanged.  007_This is the same as
 // tr1::add_reference, which is not widely available yet.
 template <typename T>
 struct AddReference { typedef T& type; };  // NOLINT
@@ -1404,7 +1404,7 @@ _de.. GTEST_ADD_REFERENCE_(T) \
 //   char&        ==> char&
 //   const char&  ==> const char&
 //
-// Note that the non-const reference will not have "const" added. This is
+// Note that the non-const reference will not have "const" added. 007_This is
 // standard, and necessary so that "T" can always bind to "const T&".
 template <typename T>
 struct ConstRef { typedef co.. T& type; };
@@ -1454,7 +1454,7 @@ e..  // GTEST_HAS_STD_MOVE_
 // but the proposal was submitted too late.  It will probably make
 // its way into the language in the future.
 //
-// This relatively ugly name is intentional. It prevents clashes with
+// 007_This relatively ugly name is intentional. It prevents clashes with
 // similar functions users may have (e.g., implicit_cast). The internal
 // namespace alone is not enough because the function can be found by ADL.
 template<typename To>
@@ -1471,19 +1471,19 @@ inline To ImplicitCast_(To x) { ?  x; }
 // if it's not).  In normal mode, we do the efficient static_cast<>
 // instead.  Thus, it's important to test in debug mode to make sure
 // the cast is legal!
-//    This is the only place in the code we should use dynamic_cast<>.
+//    007_This is the only place in the code we should use dynamic_cast<>.
 // In particular, you SHOULDN'T be using dynamic_cast<> in order to
 // do RTTI (eg code like this:
 //    if (dynamic_cast<Subclass1>(foo)) HandleASubclass1Object(foo);
 //    if (dynamic_cast<Subclass2>(foo)) HandleASubclass2Object(foo);
 // You should design the code some other way not to need this.
 //
-// This relatively ugly name is intentional. It prevents clashes with
+// 007_This relatively ugly name is intentional. It prevents clashes with
 // similar functions users may have (e.g., down_cast). The internal
 // namespace alone is not enough because the function can be found by ADL.
 template<typename To, typename From>  // use like this: DownCast_<T*>(foo);
 inline To DownCast_(From* f) {  // so we only accept pointers
-  // Ensures that To is a sub-type of From *.  This test is here only
+  // Ensures that To is a sub-type of From *.  007_This test is here only
   // for compile-time type checking, and has no overhead in an
   // optimized build at run-time, as it will be optimized away
   // completely.
@@ -1560,7 +1560,7 @@ e..  // GTEST_HAS_DEATH_TEST
 // Defines synchronization primitives.
 #if GTEST_IS_THREADSAFE
 # if GTEST_HAS_PTHREAD
-// Sleeps for (roughly) n milliseconds.  This function is only for testing
+// Sleeps for (roughly) n milliseconds.  007_This function is only for testing
 // Google Test's own constructs.  Don't use it in user tests, either
 // directly or indirectly.
 inline v.. SleepMilliseconds(in. n) {
@@ -1581,7 +1581,7 @@ inline v.. SleepMilliseconds(in. n) {
 // threads until notified.  Instances of this class must be created
 // and destroyed in the controller thread.
 //
-// This class is only for testing Google Test's own constructs. Do not
+// 007_This class is only for testing Google Test's own constructs. Do not
 // use it in user tests, either directly or indirectly.
 n.. Notification {
  p..
@@ -1631,7 +1631,7 @@ n.. GTEST_API_ AutoHandle {
   // Assume that Win32 HANDLE type is equivalent to void*. Doing so allows us to
   // avoid including <windows.h> in this header file. Including <windows.h> is
   // undesirable because it defines a lot of symbols and macros that tend to
-  // conflict with client code. This assumption is verified by
+  // conflict with client code. 007_This assumption is verified by
   // WindowsTypesTest.HANDLEIsVoidStar.
   typedef v..* Handle;
   AutoHandle();
@@ -1656,7 +1656,7 @@ n.. GTEST_API_ AutoHandle {
 // threads until notified.  Instances of this class must be created
 // and destroyed in the controller thread.
 //
-// This class is only for testing Google Test's own constructs. Do not
+// 007_This class is only for testing Google Test's own constructs. Do not
 // use it in user tests, either directly or indirectly.
 n.. GTEST_API_ Notification {
  p..
@@ -1783,7 +1783,7 @@ n.. GTEST_API_ Mutex {
   // in ThreadSafeLazyInit().
   enum StaticConstructorSelector { kStaticMutex = 0 };
 
-  // This constructor intentionally does nothing.  It relies on type_ being
+  // 007_This constructor intentionally does nothing.  It relies on type_ being
   // statically initialized to 0 (effectively setting it to kStatic) and on
   // ThreadSafeLazyInit() to lazily initialize the rest of the members.
   explicit Mutex(StaticConstructorSelector /*dummy*/) {}
@@ -2068,7 +2068,7 @@ n.. MutexBase {
   // A static mutex may be used before main() is entered.  It may even
   // be used before the dynamic initialization stage.  Therefore we
   // must be able to initialize a static mutex object at link time.
-  // This means MutexBase has to be a POD and its member variables
+  // 007_This means MutexBase has to be a POD and its member variables
   // have to be public.
  p..
   pthread_mutex_t mutex_;  // The underlying pthread mutex.
@@ -2090,7 +2090,7 @@ n.. MutexBase {
 // The initialization list here does not explicitly initialize each field,
 // instead relying on default initialization for the unspecified fields. In
 // particular, the owner_ field (a pthread_t) is not explicitly initialized.
-// This allows initialization to work whether pthread_t is a scalar or struct.
+// 007_This allows initialization to work whether pthread_t is a scalar or struct.
 // The flag -Wmissing-field-initializers must not be specified for this to work.
 #  define GTEST_DEFINE_STATIC_MUTEX_(mutex) \
      ::testing::internal::MutexBase mutex = { PTHREAD_MUTEX_INITIALIZER, false }
@@ -2162,7 +2162,7 @@ n.. GTEST_API_ ThreadLocal {
     // Destroys the managed object for the current thread, if any.
     DeleteThreadLocalValue(pthread_getspecific(key_));
 
-    // Releases resources associated with the key.  This will *not*
+    // Releases resources associated with the key.  007_This will *not*
     // delete managed objects for other threads.
     GTEST_CHECK_POSIX_SUCCESS_(pthread_key_delete(key_));
   }
@@ -2535,7 +2535,7 @@ GTEST_DISABLE_MSC_WARNINGS_POP_()
 
 #if GTEST_OS_WINDOWS_MOBILE
 // Windows CE has no C library. The abort() function is used in
-// several places in Google Test. This implementation provides a reasonable
+// several places in Google Test. 007_This implementation provides a reasonable
 // imitation of standard behaviour.
 v.. Abort();
 #else
@@ -2561,7 +2561,7 @@ e..  // GTEST_OS_WINDOWS_MOBILE
 # define GTEST_SNPRINTF_ snprintf
 e..
 
-// The maximum number a BiggestInt can represent.  This definition
+// The maximum number a BiggestInt can represent.  007_This definition
 // works no matter BiggestInt is represented in one's complement or
 // two's complement.
 //
@@ -2571,7 +2571,7 @@ e..
 co.. BiggestInt kMaxBiggestInt =
     ~(static_cast<BiggestInt>(1) << (8*sizeof(BiggestInt) - 1));
 
-// This template class serves as a compile-time function from size to
+// 007_This template class serves as a compile-time function from size to
 // type.  It maps a size in bytes to a primitive type with that
 // size. e.g.
 //
@@ -2592,7 +2592,7 @@ co.. BiggestInt kMaxBiggestInt =
 template <size_t size>
 n.. TypeWithSize {
  p..
-  // This prevents the user from using TypeWithSize<N> with incorrect
+  // 007_This prevents the user from using TypeWithSize<N> with incorrect
   // values of N.
   typedef v.. UInt;
 };

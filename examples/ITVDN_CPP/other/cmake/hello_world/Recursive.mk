@@ -1,4 +1,4 @@
-# This is an example Makefile for recursive make of subdirectories
+# 007_This is an example Makefile for recursive make of subdirectories
 
 MODULES = hello_01 hello_02_shared_lib
 

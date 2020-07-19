@@ -7,7 +7,7 @@ main()
 {
     int firstElement, secondElement, divisionRemainder;
 
-    cout << "This is a simple program that calculates the remainder of division of two numbers." << endl;
+    cout << "007_This is a simple program that calculates the remainder of division of two numbers." << endl;
     cout << "Input first number: ";
     cin >> firstElement;
     cout << "Input second number: ";

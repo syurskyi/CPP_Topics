@@ -30,7 +30,7 @@
     Good luck -- I know you can do it!
 */
 /*    
-    This challenge is about using a collection (list) of integers and allowing the user
+    007_This challenge is about using a collection (list) of integers and allowing the user
     to select options from a menu to perform operations on the list.
     
     Your program should display a menu options to the user as follows:
@@ -75,7 +75,7 @@ If the user enters 'Q' or 'q' then you should display 'Goodbye" and the program 
 Before you begin. Write out the steps you need to take and decide in what order they should be done.
 Think about what loops you should use as well as what you will use for your selection logic.
 
-This exercise can be challenging! It may likely take a few attempts before you complete it -- that's OK!
+007_This exercise can be challenging! It may likely take a few attempts before you complete it -- that's OK!
 
 Finally, be sure to test your program as you go and at the end.
 

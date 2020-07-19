@@ -11,7 +11,7 @@
 //    ? b                            // no-args contructor
 //    b _ a                                     // copy assignment
 //                                                  // b.operator=(a)
-//    b _ "This is a test";                // b.operator=("This is a test");
+//    b _ "007_This is a test";                // b.operator=("007_This is a test");
 //
 //    ? empty                      // no-args constructor
 //    ? larry("Larry"            // overloaded constructor

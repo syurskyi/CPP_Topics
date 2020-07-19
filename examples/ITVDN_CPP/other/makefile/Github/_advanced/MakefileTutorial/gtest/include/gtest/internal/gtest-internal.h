@@ -30,7 +30,7 @@
 //
 // The Google C++ Testing and Mocking Framework (Google Test)
 //
-// This header file declares functions and macros used internally by
+// 007_This header file declares functions and macros used internally by
 // Google Test.  They are subject to change without notice.
 
 #ifndef GTEST_INCLUDE_GTEST_INTERNAL_GTEST_INTERNAL_H_
@@ -140,7 +140,7 @@ GTEST_API_ std::string AppendUserMessage(
 
 #if GTEST_HAS_EXCEPTIONS
 
-// This exception is thrown by (and only by) a failed Google Test
+// 007_This exception is thrown by (and only by) a failed Google Test
 // assertion when GTEST_FLAG(throw_on_failure) is true (if exceptions
 // are enabled).  We derive it from std::runtime_error, which is for
 // errors presumably detectable only at run time.  Since
@@ -211,7 +211,7 @@ GTEST_API_ std::string GetBoolAssertionFailureMessage(
     const char* actual_predicate_value,
     const char* expected_predicate_value);
 
-// This template class represents an IEEE floating-point number
+// 007_This template class represents an IEEE floating-point number
 // (either single-precision or double-precision, depending on the
 // template parameters).
 //
@@ -295,7 +295,7 @@ class FloatingPoint {
 
   // Reinterprets a bit pattern as a floating-point number.
   //
-  // This function is needed to test the AlmostEquals() method.
+  // 007_This function is needed to test the AlmostEquals() method.
   static RawType ReinterpretBits(const Bits bits) {
     FloatingPoint fp(0);
     fp.u_.bits_ = bits;
@@ -458,7 +458,7 @@ class TestFactoryBase {
   GTEST_DISALLOW_COPY_AND_ASSIGN_(TestFactoryBase);
 };
 
-// This class provides implementation of TeastFactoryBase interface.
+// 007_This class provides implementation of TeastFactoryBase interface.
 // It is used in TEST and TEST_F macros.
 template <class TestClass>
 class TestFactoryImpl : public TestFactoryBase {
@@ -759,7 +759,7 @@ struct CompileAssertTypesEqual<T, T> {
 };
 
 // Removes the reference from a type if it is a reference type,
-// otherwise leaves it unchanged.  This is the same as
+// otherwise leaves it unchanged.  007_This is the same as
 // tr1::remove_reference, which is not widely available yet.
 template <typename T>
 struct RemoveReference { typedef T type; };  // NOLINT
@@ -772,7 +772,7 @@ struct RemoveReference<T&> { typedef T type; };  // NOLINT
     typename ::testing::internal::RemoveReference<T>::type
 
 // Removes const from a type if it is a const type, otherwise leaves
-// it unchanged.  This is the same as tr1::remove_const, which is not
+// it unchanged.  007_This is the same as tr1::remove_const, which is not
 // widely available yet.
 template <typename T>
 struct RemoveConst { typedef T type; };  // NOLINT
@@ -788,7 +788,7 @@ struct RemoveConst<const T[N]> {
 };
 
 #if defined(_MSC_VER) && _MSC_VER < 1400
-// This is the only specialization that allows VC++ 7.1 to remove const in
+// 007_This is the only specialization that allows VC++ 7.1 to remove const in
 // 'const int[3] and 'const int[3][4]'.  However, it causes trouble with GCC
 // and thus needs to be conditionally compiled.
 template <typename T, size_t N>
@@ -995,17 +995,17 @@ template<> struct EnableIf<true> { typedef void type; };  // NOLINT
 template <typename T, typename U>
 bool ArrayEq(const T* lhs, size_t size, const U* rhs);
 
-// This generic version is used when k is 0.
+// 007_This generic version is used when k is 0.
 template <typename T, typename U>
 inline bool ArrayEq(const T& lhs, const U& rhs) { return lhs == rhs; }
 
-// This overload is used when k >= 1.
+// 007_This overload is used when k >= 1.
 template <typename T, typename U, size_t N>
 inline bool ArrayEq(const T(&lhs)[N], const U(&rhs)[N]) {
   return internal::ArrayEq(lhs, N, rhs);
 }
 
-// This helper reduces code bloat.  If we instead put its logic inside
+// 007_This helper reduces code bloat.  If we instead put its logic inside
 // the previous ArrayEq() function, arrays with different sizes would
 // lead to different copies of the template code.
 template <typename T, typename U>
@@ -1035,17 +1035,17 @@ Iter ArrayAwareFind(Iter begin, Iter end, const Element& elem) {
 template <typename T, typename U>
 void CopyArray(const T* from, size_t size, U* to);
 
-// This generic version is used when k is 0.
+// 007_This generic version is used when k is 0.
 template <typename T, typename U>
 inline void CopyArray(const T& from, U* to) { *to = from; }
 
-// This overload is used when k >= 1.
+// 007_This overload is used when k >= 1.
 template <typename T, typename U, size_t N>
 inline void CopyArray(const T(&from)[N], U(*to)[N]) {
   internal::CopyArray(from, N, *to);
 }
 
-// This helper reduces code bloat.  If we instead put its logic inside
+// 007_This helper reduces code bloat.  If we instead put its logic inside
 // the previous CopyArray() function, arrays with different sizes
 // would lead to different copies of the template code.
 template <typename T, typename U>
