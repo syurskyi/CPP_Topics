@@ -1,7 +1,7 @@
 ? |i..
 ? "myProg.h"
-using st. c__sy.. p..
-using st. e..
+u.. st. c__sy.. p..
+u.. st. e..
 
 in. main
 

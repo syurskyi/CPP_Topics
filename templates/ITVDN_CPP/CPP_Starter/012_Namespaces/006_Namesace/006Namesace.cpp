@@ -13,7 +13,7 @@ n.. NamespaceA {
 
 in. main()
 {
-	using _Struct _ NamespaceA::NamespaceB::NamespaceC::MyStructsy.. p..
+	u.. _Struct _ NamespaceA::NamespaceB::NamespaceC::MyStructsy.. p..
 	
 	_Struct variable1sy.. p..
 

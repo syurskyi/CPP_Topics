@@ -1,15 +1,15 @@
-? ve..
-
-t_d_ st. ve..<in.> vecisy.. p..
-
-using vi _ st. ve..<in.>sy.. p..
-
-t..<t_n_ T>
-using v _ st. ve..<T>sy.. p..
-
-in. main(in., c.. #||
-    vi asy.. p..
-    v<in.> bsy.. p..
-
-    r_ 0sy.. p..
-}
+//? ve..
+//
+//t_d_ st. ve..|in.| veci sy.. p..
+//
+//u.. vi _ st. ve..|in.| sy.. p..
+//
+//t..|t_n_ ?|
+//u.. v _ st. ve..|?| sy.. p..
+//
+//in. main in., c.. #||
+//    vi a sy.. p..
+//    v|in.| b sy.. p..
+//
+//    r_ _ sy.. p..
+//

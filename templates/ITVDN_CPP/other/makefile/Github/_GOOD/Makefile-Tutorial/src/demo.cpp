@@ -1,8 +1,8 @@
 ? "demo.hpp"
 
-using st. c__sy.. p..
-using st. e..
-using st. vectorsy.. p..
+u.. st. c__sy.. p..
+u.. st. e..
+u.. st. vectorsy.. p..
 
 in. main(in. argc, c.. *argv[])
 {

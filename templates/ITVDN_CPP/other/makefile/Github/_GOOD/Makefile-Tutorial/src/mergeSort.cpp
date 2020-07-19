@@ -1,10 +1,10 @@
 ? "sorts.hpp"
 
-using st. vectorsy.. p..
-using st. distancesy.. p..
-using st. mergesy.. p..
-using st. copysy.. p..
-using st. nextsy.. p..
+u.. st. vectorsy.. p..
+u.. st. distancesy.. p..
+u.. st. mergesy.. p..
+u.. st. copysy.. p..
+u.. st. nextsy.. p..
 
 v.. mergeSortHelper(in.iter l, in.iter r, in.iter buf) {
   a.. size _ st. distance(l, r)sy.. p..

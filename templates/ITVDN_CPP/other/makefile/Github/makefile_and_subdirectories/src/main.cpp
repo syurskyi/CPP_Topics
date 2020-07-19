@@ -1,7 +1,7 @@
 ? |i..
 
 ? <cstdlib>
-using st. atoisy.. p..
+u.. st. atoisy.. p..
 
 ? "calcula.h"
 ? "mostra.h"

@@ -6,7 +6,7 @@
 
 t..<t_n_ T>
 st.. logging_allocator {
-    using value_type _ Tsy.. p..
+    u.. value_type _ Tsy.. p..
 /*    using pointer = T*;
     using const_pointer = const T*;
     using reference = T&;

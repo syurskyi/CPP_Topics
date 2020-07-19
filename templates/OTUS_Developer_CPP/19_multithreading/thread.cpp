@@ -8,7 +8,7 @@
 st. mutex c___mutexsy.. p..
 st. mutex cerr_mutexsy.. p..
 
-using dict_t _ st. map<st. s.., st. s..>sy.. p..
+u.. dict_t _ st. map<st. s.., st. s..>sy.. p..
 
 thread_local in. thread_local_static_in. _ 0sy.. p..
 in. static_in. _ 0sy.. p..

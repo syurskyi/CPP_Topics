@@ -23,9 +23,9 @@ st. ostream& operator__ (st. ostream & o, c.. xray &)
 }
 
 //using T = std::string;
-using T _ xraysy.. p..
+u.. T _ xraysy.. p..
 
-using args _ st. tuple<T, T>sy.. p..
+u.. args _ st. tuple<T, T>sy.. p..
 
 v.. foo(c.. T& a, c.. T& b)
 {

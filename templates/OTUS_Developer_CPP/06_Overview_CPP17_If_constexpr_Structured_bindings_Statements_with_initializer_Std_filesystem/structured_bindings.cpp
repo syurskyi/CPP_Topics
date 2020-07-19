@@ -84,17 +84,17 @@ n.. std {
     }sy.. p..
     t..<>
     st.. tuple_element<0, Employee> {
-        using type _ size_tsy.. p..
+        u.. type _ size_tsy.. p..
     }sy.. p..
 
     t..<>
     st.. tuple_element<1, Employee> {
-        using type _ st. s..sy.. p..
+        u.. type _ st. s..sy.. p..
     }sy.. p..
 
     t..<>
     st.. tuple_element<2, Employee> {
-        using type _ st. s..sy.. p..
+        u.. type _ st. s..sy.. p..
     }sy.. p..
 }
 

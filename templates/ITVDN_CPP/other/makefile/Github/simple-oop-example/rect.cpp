@@ -1,8 +1,8 @@
 ? "rect.h"
 ? |i..
 
-using st. c__sy.. p..
-using st. e..
+u.. st. c__sy.. p..
+u.. st. e..
 
 rectangle::rectangle(d.. x0, d.. y0, d.. x1, d.. y1):diagonal(x0, y0, x1, y1){
   

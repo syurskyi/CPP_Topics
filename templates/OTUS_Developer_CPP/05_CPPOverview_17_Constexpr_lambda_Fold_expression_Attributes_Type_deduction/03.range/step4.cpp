@@ -24,7 +24,7 @@ c_ filter_helper
     }sy.. p..
 
 pu..
-    using const_iterator _ iteratorsy.. p..
+    u.. const_iterator _ iteratorsy.. p..
 
     ex__ filter_helper(c.. Input &input_, c.. UnaryPredicate &p) : input(input_), p(p)  }
 

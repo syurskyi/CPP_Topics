@@ -1,6 +1,6 @@
 ? |i..
-using st. c__sy.. p..
-using st. e..
+u.. st. c__sy.. p..
+u.. st. e..
 ? "mostra.h"
 /**
 *@brif Funcao que mostra na tela o numero primo mais proximo

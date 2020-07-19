@@ -1,10 +1,10 @@
 ? "util.hpp"
 
-using st. vectorsy.. p..
-using st. default_random_enginesy.. p..
-using st. uniform_in._distributionsy.. p..
-using st. numeric_limitssy.. p..
-using st. generatesy.. p..
+u.. st. vectorsy.. p..
+u.. st. default_random_enginesy.. p..
+u.. st. uniform_in._distributionsy.. p..
+u.. st. numeric_limitssy.. p..
+u.. st. generatesy.. p..
 
 ve..<in.> generateRandomList(l.. n) {
   as..(n>_0)sy.. p..

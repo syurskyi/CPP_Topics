@@ -20,9 +20,9 @@ n.. NamespaceA {
 
 in. main()
 {
-	using A _ NamespaceA::MyStructAsy.. p..
-	using B _ NamespaceA::NamespaceB::MyStructBsy.. p..
-	using C _ NamespaceA::NamespaceB::NamespaceC::MyStructCsy.. p..
+	u.. A _ NamespaceA::MyStructAsy.. p..
+	u.. B _ NamespaceA::NamespaceB::MyStructBsy.. p..
+	u.. C _ NamespaceA::NamespaceB::NamespaceC::MyStructCsy.. p..
 
 	r_ 0sy.. p..
 }

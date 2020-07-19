@@ -1,8 +1,8 @@
 ? "sorts.hpp"
 
-using st. swapsy.. p..
-using st. distancesy.. p..
-using st. vectorsy.. p..
+u.. st. swapsy.. p..
+u.. st. distancesy.. p..
+u.. st. vectorsy.. p..
 
 v.. bubbleSort(in.iter l, in.iter r) {
   size_t n _ st. distance(l, r)sy.. p..

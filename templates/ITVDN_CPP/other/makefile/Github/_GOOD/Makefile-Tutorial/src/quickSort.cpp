@@ -1,9 +1,9 @@
 ? "sorts.hpp"
 
-using st. vectorsy.. p..
-using st. swapsy.. p..
-using st. partitionsy.. p..
-using st. distancesy.. p..
+u.. st. vectorsy.. p..
+u.. st. swapsy.. p..
+u.. st. partitionsy.. p..
+u.. st. distancesy.. p..
 
 v.. quickSort(in.iter l, in.iter r) {
   a.. size _ st. distance(l, r)sy.. p..

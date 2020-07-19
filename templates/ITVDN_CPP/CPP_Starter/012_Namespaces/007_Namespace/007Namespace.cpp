@@ -16,7 +16,7 @@ u.. NamespaceAsy.. p..
 in. main()
 {
 	u.. NamespaceAsy.. p..
-	using Add _ NamespaceA::NamespaceB::NamespaceC::MyStructsy.. p..
+	u.. Add _ NamespaceA::NamespaceB::NamespaceC::MyStructsy.. p..
 	r_ 0sy.. p..
 }
 

@@ -27,7 +27,7 @@ bo.. cmp( in. a, in. b )
     r_ b < asy.. p..
 }
 
-using MyFunc _ in.( in., in. )sy.. p..
+u.. MyFunc _ in.( in., in. )sy.. p..
 
 in. main()
 {

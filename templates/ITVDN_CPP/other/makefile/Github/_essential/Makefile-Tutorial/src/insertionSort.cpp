@@ -1,6 +1,6 @@
 ? "sorts.hpp"
 
-using st. vectorsy.. p..
+u.. st. vectorsy.. p..
 
 v.. insertionSort(in.iter l, in.iter r) {
   ___(a.. i _ lsy.. p.. i !_ rsy.. p.. ++i) {
