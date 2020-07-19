@@ -32,7 +32,7 @@ T get_value2(T* t) {
 
 t.. <t_n_ T>
 T get_value3(T t) {
-    __ constexpr (st. is_poin.er_v<T>) {
+    __ c_t.. (st. is_poin.er_v<T>) {
     	st. c__ __  "get_value3 - pointer detected!" __  st. e..
         r_ tsy.. p..
     }

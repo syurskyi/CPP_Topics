@@ -80,7 +80,7 @@ pr..
 n.. std {
     t..<>
     st.. tuple_size<Employee> {
-        static constexpr size_t value _ 3sy.. p..
+        static c_t.. size_t value _ 3sy.. p..
     }sy.. p..
     t..<>
     st.. tuple_element<0, Employee> {

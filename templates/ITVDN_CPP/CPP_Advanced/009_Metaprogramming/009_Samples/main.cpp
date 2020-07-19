@@ -14,14 +14,14 @@ st.. Factorial< 0 >
 }sy.. p..
 
 // C++11
-constexpr u.. fact( u.. N )
+c_t.. u.. fact( u.. N )
 {
     r_ ( N __ 0 ) ? 1 : N * fact( N - 1 )sy.. p..
 }
 
 // C++11
 // value-based metaprogramming
-constexpr u.. fib( u.. N )
+c_t.. u.. fib( u.. N )
 {
     r_ ( N < 2 ) ? 1 : fib( N - 2 ) + fib( N - 1 )sy.. p..
 }
@@ -29,13 +29,13 @@ constexpr u.. fib( u.. N )
 // C++11 but with templates specialization
 // type-based metaprogramming
 t.. < u.. N >
-constexpr u.. fib2 _ fib2< N - 2 > + fib2< N - 1 >sy.. p..
+c_t.. u.. fib2 _ fib2< N - 2 > + fib2< N - 1 >sy.. p..
 
 t.. <>
-constexpr u.. fib2< 0 > _ 1sy.. p..
+c_t.. u.. fib2< 0 > _ 1sy.. p..
 
 t.. <>
-constexpr u.. fib2< 1 > _ 1sy.. p..
+c_t.. u.. fib2< 1 > _ 1sy.. p..
 
 ////////////////////////////////////////////////////////////
 

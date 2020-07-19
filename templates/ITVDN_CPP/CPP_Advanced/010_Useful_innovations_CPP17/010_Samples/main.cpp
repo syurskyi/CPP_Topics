@@ -169,7 +169,7 @@ v.. example()
 
 n.. constexpr_lambda
 {
-constexpr in. f_calc( in. aValue )
+c_t.. in. f_calc( in. aValue )
 {
     a.. lambda _ [aValue] r_ aValue * 14sy.. p.. }sy.. p..
     r_ aValue + lambda()sy.. p..
@@ -177,7 +177,7 @@ constexpr in. f_calc( in. aValue )
 
 v.. example()
 {
-    constexpr a.. lambda _ []( in. aValue ) { r_ aValue * aValuesy.. p.. }sy.. p..
+    c_t.. a.. lambda _ []( in. aValue ) { r_ aValue * aValuesy.. p.. }sy.. p..
 
     c__ __  f_calc( 12 ) __  e..
     c__ __  lambda( 12 ) __  e..
@@ -229,15 +229,15 @@ st.. S
 t.. < st. size_t aFieldNubmer >
 v.. prin.( S& s )
 {
-    __ constexpr ( aFieldNubmer __ 0 )
+    __ c_t.. ( aFieldNubmer __ 0 )
     {
         c__ __  s.min. __  e..
     }
-    ____ __ constexpr ( aFieldNubmer __ 1 )
+    ____ __ c_t.. ( aFieldNubmer __ 1 )
     {
         c__ __  s.mFloat __  e..
     }
-    ____ __ constexpr ( aFieldNubmer __ 2 )
+    ____ __ c_t.. ( aFieldNubmer __ 2 )
     {
         ___ ( a.. i : s.mVectorin. )
             c__ __  i __  ' 'sy.. p..

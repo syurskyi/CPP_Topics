@@ -100,7 +100,7 @@ in. main
     print(array2,array2_size)
     
     in. *results _ apply_all(array1, array1_size, array2, array2_size)
-    constexpr size_t results_size {array1_size * array2_size}
+    c_t.. size_t results_size {array1_size * array2_size}
     
     c.. __ "Result: "
     print(results,results_size)
