@@ -33,7 +33,7 @@
 //
 //		c__ __  "Congratulations, you guessed right with " __  a.. __  " attempts!" __  e..
 //		b..
-//	}
+//
 //
 //	sy.. pause
 //	r_ _
