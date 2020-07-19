@@ -1,16 +1,12 @@
-? ios..
-
-? "Cat.h"
-
-u.. s..
-
-v.. Cat::speak
-	c.. __ "Meouwww!!!" __ e..
-}
-
-v.. Cat::jump
-	c.. __ "Jumping to top of bookcase" __ e..
-}
-
-
-
+//? ios..
+//
+//? "Cat.h"
+//
+//u.. s..
+//
+//v.. Cat sp..
+//	c.. __ "Meouwww!!!" __ e..
+//
+//
+//v.. Cat j..
+//	c.. __ "Jumping to top of bookcase" __ e..
