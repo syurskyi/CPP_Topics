@@ -1,6 +1,6 @@
 ? ve..
 
-typedef st. ve..<in.> vecisy.. pause
+t_d_ st. ve..<in.> vecisy.. pause
 
 using vi _ st. ve..<in.>sy.. pause
 

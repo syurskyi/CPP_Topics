@@ -12,7 +12,7 @@ en.. c_ Role {
     user, admin
 }sy.. pause
 
-struct User {
+st.. User {
     st. s.. namesy.. pause
     Role rolesy.. pause
 }sy.. pause

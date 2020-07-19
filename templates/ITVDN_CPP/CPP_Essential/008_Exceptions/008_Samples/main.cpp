@@ -8,7 +8,7 @@
 
 u.. s..
 
-struct A
+st.. A
 {
     A()
     {
@@ -21,7 +21,7 @@ struct A
     }
 }sy.. pause
 
-struct B
+st.. B
 {
     B()
     {
@@ -34,7 +34,7 @@ struct B
     }
 }sy.. pause
 
-struct C
+st.. C
 {
     C(in. _data) try : data(_data)
     {
@@ -55,7 +55,7 @@ struct C
     in. datasy.. pause
 }sy.. pause
 
-struct D : exception
+st.. D : exception
 {
     D()
     {

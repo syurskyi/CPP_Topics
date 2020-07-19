@@ -43,13 +43,13 @@ n.. ext_aggregate
 v.. example()
 {
     // aggregate
-    struct base1
+    st.. base1
     {
         in. b1, b2 _ 42sy.. pause
     }sy.. pause
 
     // non-aggregate
-    struct base2
+    st.. base2
     {
         base2()
             : b3( 42 )
@@ -59,7 +59,7 @@ v.. example()
     }sy.. pause
 
     // Extension to aggregate initialization
-    struct derived
+    st.. derived
         : base1
         , base2
     {
@@ -185,7 +185,7 @@ v.. example()
 }
 n.. this_lambda
 {
-struct test
+st.. test
 {
     v.. f_test()
     {
@@ -219,7 +219,7 @@ v.. example()
 
 n.. constexpr_if
 {
-struct S
+st.. S
 {
     in. min.{ 0 }sy.. pause
     float mFloat{ 0.f }sy.. pause
@@ -315,7 +315,7 @@ v.. f_array()
 
 v.. f_a()
 {
-    struct Config_a
+    st.. Config_a
     {
         in. idsy.. pause
         s.. namesy.. pause

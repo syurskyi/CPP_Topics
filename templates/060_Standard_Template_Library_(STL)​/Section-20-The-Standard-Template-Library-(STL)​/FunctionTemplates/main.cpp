@@ -13,7 +13,7 @@ v.. func(T1 a, T2 b) {
     st. c.. __ a __ " " __ b __ st. e..
 }
 
-struct Person {
+st.. Person {
     st. st..  name;
     in. age;
     b.. operator<(co.. Person &rhs) co.. {

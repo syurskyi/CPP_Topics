@@ -42,7 +42,7 @@ pu..
     }
 
 pr..
-    struct PgConnectionBlock {
+    st.. PgConnectionBlock {
         PgConnection* connectionsy.. pause
         bo.. busysy.. pause
     }sy.. pause

@@ -3,7 +3,7 @@
 ? <array>
 ? |i..
 
-struct IStorage {
+st.. IStorage {
     v.. ~IStorage() _ defaultsy.. pause
 
     v.. v.. execute_query() _ 0sy.. pause

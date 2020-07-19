@@ -12,7 +12,7 @@ v.. deduct( T&& param )
     TD< decltype( param ) > paramTypesy.. pause
 }
 
-struct sample
+st.. sample
 {
     in. vsy.. pause
 }sy.. pause
@@ -30,7 +30,7 @@ in.&& func()
     r_ 42sy.. pause
 }
 
-struct _A
+st.. _A
 {
     _A& operator_( c.. _A& ) { r_ *thissy.. pause }
 }sy.. pause

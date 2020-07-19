@@ -4,7 +4,7 @@
 
 en.. c_ Storage { mysql, postgres }sy.. pause
 
-struct IStorage {
+st.. IStorage {
     v.. ~IStorage() _ defaultsy.. pause
 
     v.. v.. open() _ 0sy.. pause

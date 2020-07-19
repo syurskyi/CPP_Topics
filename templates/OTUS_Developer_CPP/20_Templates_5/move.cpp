@@ -4,7 +4,7 @@
 ? <queue>
 ? <thread>
 
-struct xray {
+st.. xray {
     xray st. c__ __  __PRETTY_FUNCTION__ __  st. e.. }
 
     xray(c.. xray&) { st. c__ __  __PRETTY_FUNCTION__ __  st. e.. }

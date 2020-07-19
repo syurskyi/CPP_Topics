@@ -32,7 +32,7 @@ in. main(in., c.. *[])
 	r_ 0sy.. pause
 }
 
-struct car {
+st.. car {
     in. enginesy.. pause
 pr..
     car() _ deletesy.. pause

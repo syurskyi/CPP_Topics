@@ -3,7 +3,7 @@
 ? |i..
 ? <map>
 
-struct IConnector {
+st.. IConnector {
     v.. ~IConnector() _ defaultsy.. pause
 
     v.. v.. connection() _ 0sy.. pause

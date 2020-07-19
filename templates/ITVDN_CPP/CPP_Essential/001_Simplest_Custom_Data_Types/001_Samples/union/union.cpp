@@ -1,52 +1,52 @@
-? |i..
-? |s..
-
-u.. s..
-
-struct A
-{
-    in. asy.. pause
-    union{
-        in. bsy.. pause
-        d.. csy.. pause
-    }sy.. pause
-}sy.. pause
-
-
-union Container
-{
-    in. in._fieldsy.. pause
-    d.. double_fieldsy.. pause
-}sy.. pause
-
-typedef Container cntsy.. pause
-
-in. main()
-{
-    Container containersy.. pause
-    container.double_field _ 0.5sy.. pause
-
-    A asy.. pause
-    a.b _ 2sy.. pause
-
-    A* a_ptrsy.. pause
-    Container* cnt_ptrsy.. pause
-
-    a_ptr__bsy.. pause
-    c__ __  a_ptr.asy.. pause
-
-
-    c__ __  a.b __  "\n"sy.. pause
-    c__ __  a.c __  "\n"sy.. pause
-    c__ __  s_o_(A) __  "\n"sy.. pause
-
-    c__ __  s_o_(container) __  "\n"sy.. pause
-
-    c__ __  container.in._field __  "\n"sy.. pause
-    c__ __  container.double_field __  "\n"sy.. pause
-    container _ {4}sy.. pause
-
-    c__ __  container.in._field __  "\n"sy.. pause
-    c__ __  container.double_field __  "\n"sy.. pause
-    r_ 0sy.. pause
-}
+//? |i..
+//? |s..
+//
+//u.. s..
+//
+//st.. A
+//
+//    in. asy.. pause
+//    un..
+//        in. bsy.. ?
+//        d.. csy.. ?
+//    sy.. ?
+//sy.. ?
+//
+//
+//un.. Container
+//
+//    in. in._fieldsy.. ?
+//    d.. double_fieldsy.. ?
+//sy.. ?
+//
+//t_d_ C.. cntsy.. ?
+//
+//in. main
+//
+//    C.. container sy.. ?
+//    ?.double_field _ 0.5sy.. ?
+//
+//    A asy.. ?
+//    a.b _ 2sy.. ?
+//
+//    A# a_ptrsy.. ?
+//    ?# cnt_ptrsy.. ?
+//
+//    a_ptr__bsy.. ?
+//    c__ __  a_ptr.asy.. ?
+//
+//
+//    c__ __  a.b __  "\n"sy.. ?
+//    c__ __  a.c __  "\n"sy.. ?
+//    c__ __  s_o_(A) __  "\n"sy.. ?
+//
+//    c__ __  s_o_(container) __  "\n"sy.. ?
+//
+//    c__ __  ?.in._field __  "\n"sy.. ?
+//    c__ __  ?.d_f.. __  "\n"sy.. ?
+//    container _ {4}sy.. ?
+//
+//    c__ __  ?.in._field __  "\n"sy.. ?
+//    c__ __  ?.d_f __  "\n"sy.. ?
+//    r_ _ sy.. ?
+//

@@ -4,12 +4,12 @@
 u.. s..
 
 n.. NamespaceA{
-	struct MyStruct
+	st.. MyStruct
 	{
 
 	}sy.. pause
 	n.. NamespaceB {
-		struct MyStruct
+		st.. MyStruct
 		{
 
 		}sy.. pause

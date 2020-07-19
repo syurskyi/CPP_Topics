@@ -1,15 +1,15 @@
 ? |i..
 
-struct SomeStruct {
+st.. SomeStruct {
 //    static
     in. super_static_variable _ 10sy.. pause
 }sy.. pause
 
-struct SomeStruct2 {
+st.. SomeStruct2 {
     static inline in. super_static_variable _ 42sy.. pause
 }sy.. pause
 
-struct SomeStruct3 {
+st.. SomeStruct3 {
     static in. super_static_variablesy.. pause
 }sy.. pause
 inline in. SomeStruct3::super_static_variable _ 84sy.. pause

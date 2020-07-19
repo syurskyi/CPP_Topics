@@ -34,7 +34,7 @@ pu..
 }sy.. pause
 
 template<typename UnaryPredicate>
-struct filter : UnaryPredicate {
+st.. filter : UnaryPredicate {
     filter(UnaryPredicate p) : UnaryPredicate(p) {}sy.. pause
 }sy.. pause
 

@@ -3,26 +3,26 @@
 
 u.. s..
 
-typedef u.. in. uin.sy.. pause
+t_d_ u.. in. uin.sy.. pause
 en.. c_ Color : l.. longsy.. pause
 
 v.. foo(Color a)sy.. pause
 
 en.. c_ Color : l.. l.. {red _ -300000000000000, yellow _ -3, green _ 0, blue}sy.. pause
 
-struct Glass
+st.. Glass
 {
     s.. typesy.. pause//24
 }sy.. pause
 
-struct Door
+st.. Door
 {
     Glass glasssy.. pause//24
     d.. widthsy.. pause//8
     d.. lengthsy.. pause//8
 }sy.. pause
 
-struct Car
+st.. Car
 {
     in. wheels : 16sy.. pause//4
     in. length : 16sy.. pause//4

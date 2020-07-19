@@ -2,7 +2,7 @@
 
 ? |i..
 
-struct ClockSignal {
+st.. ClockSignal {
     v.. ~ClockSignal() _ defaultsy.. pause
     v.. v.. now() _ 0sy.. pause
 }sy.. pause
@@ -23,7 +23,7 @@ c_ LocalClockSignal : pu.. ClockSignal
     }
 }sy.. pause
 
-struct Clock {
+st.. Clock {
     ClockSignal *ssy.. pause
 
     v.. ~Clock() _ defaultsy.. pause

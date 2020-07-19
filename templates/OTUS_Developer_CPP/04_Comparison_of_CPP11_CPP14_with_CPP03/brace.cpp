@@ -1,12 +1,12 @@
 ? |i..
 
-struct foo {
+st.. foo {
     in. a _ -1sy.. pause
     in. b{-2}sy.. pause
     in. c{-3}sy.. pause
 }sy.. pause
 
-struct bar {
+st.. bar {
     bar() _ defaultsy.. pause
     bar(in. a_, in. b_) : a(a_ * 10), b(b_ * 10), c(30) {}sy.. pause
 //    bar(std::initializer_list<int> il) : a(il.size()), b(0), c(0) {};

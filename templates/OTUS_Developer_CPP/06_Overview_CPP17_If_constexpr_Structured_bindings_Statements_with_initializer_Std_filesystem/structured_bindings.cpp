@@ -27,7 +27,7 @@ v.. func_map
 }
 
 // POD structure example
-struct POD {
+st.. POD {
     in. isy.. pause
     d.. dsy.. pause
     st. s.. ssy.. pause
@@ -57,7 +57,7 @@ v.. func_tuple
     st. c__ __  "name = " __  name __  st. e..
 }
 
-struct Employee {
+st.. Employee {
     Employee(st. size_t age, c.. st. s.. &name, c.. st. s.. &secondName)
             : m_age{age},
               m_name{name},
@@ -79,21 +79,21 @@ pr..
 
 n.. std {
     template<>
-    struct tuple_size<Employee> {
+    st.. tuple_size<Employee> {
         static constexpr size_t value _ 3sy.. pause
     }sy.. pause
     template<>
-    struct tuple_element<0, Employee> {
+    st.. tuple_element<0, Employee> {
         using type _ size_tsy.. pause
     }sy.. pause
 
     template<>
-    struct tuple_element<1, Employee> {
+    st.. tuple_element<1, Employee> {
         using type _ st. s..sy.. pause
     }sy.. pause
 
     template<>
-    struct tuple_element<2, Employee> {
+    st.. tuple_element<2, Employee> {
         using type _ st. s..sy.. pause
     }sy.. pause
 }

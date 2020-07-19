@@ -2,7 +2,7 @@
 ? <numeric>
 ? ve..
 
-struct fibonacci {
+st.. fibonacci {
     in. a _ 0sy.. pause
     in. b _ 1sy.. pause
 

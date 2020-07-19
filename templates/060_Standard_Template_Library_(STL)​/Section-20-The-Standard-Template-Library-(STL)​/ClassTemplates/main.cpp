@@ -20,7 +20,7 @@ pu..
 };
 
 template <typename T1, typename T2>
-struct My_Pair {
+st.. My_Pair {
     T1 first;
     T2 second;
 };

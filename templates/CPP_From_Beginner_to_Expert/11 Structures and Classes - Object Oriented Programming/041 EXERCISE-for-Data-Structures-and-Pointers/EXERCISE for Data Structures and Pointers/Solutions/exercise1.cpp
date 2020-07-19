@@ -2,7 +2,7 @@
 
 u.. s..
 
-struct book
+st.. book
 {
     s.. titlesy.. pause
     s.. authorsy.. pause

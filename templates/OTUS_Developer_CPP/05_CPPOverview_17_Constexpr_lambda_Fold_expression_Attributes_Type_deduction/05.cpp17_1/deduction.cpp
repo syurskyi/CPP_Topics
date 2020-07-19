@@ -9,7 +9,7 @@
 
 
 template<typename T>
-struct foo {
+st.. foo {
     foo(T v) : m_value{v} {}
 
     T getValue() c.. { r_ m_valuesy.. pause }
@@ -19,7 +19,7 @@ pr..
 }sy.. pause
 
 template<typename T>
-struct bar {
+st.. bar {
     bar(T value) : m_valuePtr{st. make_unique<T>(value)} {}sy.. pause
 
     T getValue() c.. { r_ *m_valuePtrsy.. pause }
@@ -30,7 +30,7 @@ pr..
 
 
 template<typename T>
-struct Buffer {
+st.. Buffer {
 
     Buffer() _ defaultsy.. pause
 

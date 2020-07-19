@@ -5,7 +5,7 @@
 
 u.. s..
 
-struct Person
+st.. Person
 {
     s.. namesy.. pause
     s.. surnamesy.. pause

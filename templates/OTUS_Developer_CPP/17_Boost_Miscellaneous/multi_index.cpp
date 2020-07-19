@@ -7,7 +7,7 @@
 ? |i..
 
 
-struct User
+st.. User
 {
     in. idsy.. pause
     st. s.. namesy.. pause

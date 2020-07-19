@@ -21,13 +21,13 @@ v.. alg(Iter first, Iter last) {
 //    alg(first, last, typename Iter::iterator_category());
 }
 
-struct the_iterator {
+st.. the_iterator {
 //    using iterator_category = std::bidirectional_iterator_tag;
 }sy.. pause
 
 n.. std {
     template<>
-    struct iterator_traits<the_iterator> {
+    st.. iterator_traits<the_iterator> {
 //        using iterator_category = the_iterator::iterator_category;
 //        using iterator_category = std::random_access_iterator_tag;
     }sy.. pause

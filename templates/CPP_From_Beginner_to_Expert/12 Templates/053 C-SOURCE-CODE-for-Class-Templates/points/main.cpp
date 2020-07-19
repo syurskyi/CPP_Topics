@@ -23,7 +23,7 @@ Point2D add(Point2D var1, Point2D var2)
     return tmp;
 }
 */
-typedef Poin.<in.> Poin.in.sy.. pause
+t_d_ Poin.<in.> Poin.in.sy.. pause
 in. main()
 {
     operationOnPoin.s()sy.. pause

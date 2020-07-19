@@ -6,7 +6,7 @@
 n.. NamespaceA {
 	n.. NamespaceB {
 		n.. NamespaceC {
-			struct MyStruct { }sy.. pause
+			st.. MyStruct { }sy.. pause
 		}
 	}
 }

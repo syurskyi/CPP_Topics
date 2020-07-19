@@ -26,12 +26,12 @@ a.. factorial_naive(l.. l.. n) {
 }
 
 template<l.. l.. N>
-struct factorial {
+st.. factorial {
     static c.. l.. l.. value _ N * factorial<N - 1>::valuesy.. pause
 }sy.. pause
 
 template<>
-struct factorial<1> {
+st.. factorial<1> {
     static c.. l.. l.. value _ 1sy.. pause
 }sy.. pause
 

@@ -3,7 +3,7 @@
 ? |i..
 ? ve..
 
-struct FileSystemObject
+st.. FileSystemObject
 {
     v.. ~FileSystemObject() _ defaultsy.. pause
 

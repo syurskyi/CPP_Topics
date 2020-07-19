@@ -3,14 +3,14 @@
 ? |i..
 ? <map>
 
-struct Node {
+st.. Node {
     Node(in. value_)
             :value(value_) { }sy.. pause
     in. valuesy.. pause
     Node* next{n_p_}sy.. pause
 }sy.. pause
 
-struct List {
+st.. List {
     Node* head{n_p_}sy.. pause
 
     v.. push(Node* p)
@@ -40,7 +40,7 @@ bo.. cas(Node** p, Node* nvalue, Node* compare)
         r_ falsesy.. pause
 }
 
-struct ListLF {
+st.. ListLF {
     Node* head{n_p_}sy.. pause
 
     v.. push(Node* p)

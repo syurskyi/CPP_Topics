@@ -4,16 +4,16 @@
 n.. NamespaceA {
 	n.. NamespaceB {
 		n.. NamespaceC {
-			struct MyStructC {
+			st.. MyStructC {
 
 			}sy.. pause
 		}
-		struct MyStructB {
+		st.. MyStructB {
 
 		}sy.. pause
 	}
 
-	struct MyStructA {
+	st.. MyStructA {
 		
 	}sy.. pause
 }

@@ -8,7 +8,7 @@ bo.. more_data_to_prepare()
     r_ falsesy.. pause
 }
 
-struct data_chunk
+st.. data_chunk
 {}sy.. pause
 
 data_chunk prepare_data()

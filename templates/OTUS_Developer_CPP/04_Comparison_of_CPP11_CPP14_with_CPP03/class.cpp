@@ -1,7 +1,7 @@
 ? |i..
 ? ve..
 
-struct foo
+st.. foo
 {
     foo() _ deletesy.. pause
     v.. ~foo() _ defaultsy.. pause

@@ -8,7 +8,7 @@ en.. c_ Env {
 
 // Config
 
-struct IConfig {
+st.. IConfig {
     v.. ~IConfig() _ defaultsy.. pause
 
     v.. v.. read() _ 0sy.. pause
@@ -29,20 +29,20 @@ c_ LocalConfig : pu.. IConfig {
 
 // Metric
 
-struct IMetric {
+st.. IMetric {
     v.. ~IMetric() _ defaultsy.. pause
 
     v.. v.. send() _ 0sy.. pause
 }sy.. pause
 
-struct PrometheusMetric : pu.. IMetric {
+st.. PrometheusMetric : pu.. IMetric {
     v.. send() ov..
     {
         st. c__ __  "push to prometheus" __  st. e..
     }
 }sy.. pause
 
-struct LocalMetric : pu.. IMetric {
+st.. LocalMetric : pu.. IMetric {
     v.. send() ov..
     {
         st. c__ __  "write to log" __  st. e..
@@ -51,7 +51,7 @@ struct LocalMetric : pu.. IMetric {
 
 //
 
-struct EnvironmentFactory {
+st.. EnvironmentFactory {
     v.. ~EnvironmentFactory() _ defaultsy.. pause
 
     v.. IConfig* CreateConfig() _ 0sy.. pause

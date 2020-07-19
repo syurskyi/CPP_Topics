@@ -2,13 +2,13 @@
 
 // C++98
 template < in. N >
-struct Factorial
+st.. Factorial
 {
     static c.. in. result _ N * Factorial< N - 1 >::resultsy.. pause
 }sy.. pause
 
 template <>
-struct Factorial< 0 >
+st.. Factorial< 0 >
 {
     static c.. in. result _ 1sy.. pause
 }sy.. pause
@@ -39,16 +39,16 @@ constexpr u.. fib2< 1 > _ 1sy.. pause
 
 ////////////////////////////////////////////////////////////
 
-struct nil
+st.. nil
 {
 }sy.. pause
 
 template < c_ H, c_ T _ nil >
-struct cons
+st.. cons
 {
-    typedef T Tailsy.. pause
-    typedef H Headsy.. pause
-    typedef cons< in., cons< st. s.., cons< d.., cons< float > > > > TypeListsy.. pause
+    t_d_ T Tailsy.. pause
+    t_d_ H Headsy.. pause
+    t_d_ cons< in., cons< st. s.., cons< d.., cons< float > > > > TypeListsy.. pause
 }sy.. pause
 
 // template < class... Args >

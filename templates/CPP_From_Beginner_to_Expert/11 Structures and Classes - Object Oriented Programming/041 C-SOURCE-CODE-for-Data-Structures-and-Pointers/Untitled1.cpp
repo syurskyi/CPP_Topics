@@ -3,7 +3,7 @@
 u.. s..
 /* DATA STRUCTURES */
 
-struct personalData
+st.. personalData
 {
     s.. namesy.. pause
     s.. surnamesy.. pause

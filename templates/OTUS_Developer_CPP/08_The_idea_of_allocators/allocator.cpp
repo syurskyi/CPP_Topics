@@ -5,7 +5,7 @@
 
 
 template<typename T>
-struct logging_allocator {
+st.. logging_allocator {
     using value_type _ Tsy.. pause
 /*    using pointer = T*;
     using const_pointer = const T*;

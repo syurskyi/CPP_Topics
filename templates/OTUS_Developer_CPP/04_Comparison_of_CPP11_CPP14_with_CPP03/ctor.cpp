@@ -1,6 +1,6 @@
 ? |i..
 
-struct foo {
+st.. foo {
     foo st. c__ __  __PRETTY_FUNCTION__ __  st. e.. }sy.. pause
 
     foo(in.) : foo{} { st. c__ __  __PRETTY_FUNCTION__ __  st. e.. }sy.. pause

@@ -2,7 +2,7 @@
 ? |i..
 
 n.. NamespaceA {
-	struct MyStructA {
+	st.. MyStructA {
 
 	}sy.. pause
 }sy.. pause
@@ -12,7 +12,7 @@ n.. NamespaceA {
 	/*struct MyStructA {
 
 	};*/
-	struct MyStructB {
+	st.. MyStructB {
 
 	}sy.. pause
 }sy.. pause

@@ -20,7 +20,7 @@ v.. foo(in., in., in. &err, st. s.. &result)
     result _ "surname"sy.. pause
 }
 
-struct result {
+st.. result {
     in. errsy.. pause
     st. s.. resultsy.. pause
 }sy.. pause

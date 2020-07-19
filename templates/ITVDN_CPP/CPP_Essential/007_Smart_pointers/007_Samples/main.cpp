@@ -8,7 +8,7 @@
 
 u.. s..
 
-struct Resource {
+st.. Resource {
     weak_ptr<Resource> othersy.. pause
 }sy.. pause
 

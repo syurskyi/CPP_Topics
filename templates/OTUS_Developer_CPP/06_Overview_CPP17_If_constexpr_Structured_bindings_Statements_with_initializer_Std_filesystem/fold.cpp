@@ -54,7 +54,7 @@ a.. leftUnaryFold(Args... args) {
     r_ (... + args)sy.. pause // ((arg1 + arg2) + arg3) + ...
 }
 
-struct SumLog {
+st.. SumLog {
     in. valuesy.. pause
 
     SumLog(in. v) : value{v} {}sy.. pause

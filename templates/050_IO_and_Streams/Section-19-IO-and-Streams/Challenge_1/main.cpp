@@ -6,19 +6,19 @@
 ? ve..
 ? st..
 
-struct City {
+st.. City {
     st. st..  name;
     long population;
     do.. cost;
 };
 
 // Assume each country has at least 1 city
-struct Country {
+st.. Country {
     st. st..  name;
     st. ve..<City> cities;
 };
 
-struct Tours {
+st.. Tours {
     st. st..  title;
     st. ve..<Country> countries;
 };

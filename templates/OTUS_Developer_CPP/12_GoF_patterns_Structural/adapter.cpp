@@ -2,7 +2,7 @@
 
 ? |i..
 
-struct mysql_client_native {
+st.. mysql_client_native {
     v.. mysql_connect()
     {
         st. c__ __  "mysql connect" __  st. e..
@@ -17,7 +17,7 @@ struct mysql_client_native {
     }
 }sy.. pause
 
-struct postgres_client_native {
+st.. postgres_client_native {
     v.. postgres_open()
     {
         st. c__ __  "postgres open" __  st. e..
@@ -28,7 +28,7 @@ struct postgres_client_native {
     }
 }sy.. pause
 
-struct IDatabase {
+st.. IDatabase {
     v.. ~IDatabase() _ defaultsy.. pause
 
     v.. v.. connect() _ 0sy.. pause

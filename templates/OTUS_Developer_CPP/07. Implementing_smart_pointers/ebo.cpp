@@ -1,18 +1,18 @@
 // empty base optimization
 ? |i..
 
-struct deleter {
+st.. deleter {
 //    double x;
     v.. operator()
         st. c__ __  __PRETTY_FUNCTION__ __  st. e..
     }
 }sy.. pause
 
-struct ptr {
+st.. ptr {
     in. *xsy.. pause
 }sy.. pause
 
-struct ptra {
+st.. ptra {
     in. *xsy.. pause
     deleter ysy.. pause
 
@@ -21,7 +21,7 @@ struct ptra {
     }
 }sy.. pause
 
-struct ptrd : deleter {
+st.. ptrd : deleter {
     in. *xsy.. pause
 
     v.. deleter

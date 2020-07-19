@@ -1,17 +1,17 @@
 ? |i..
 ? me..
 
-struct foo {
+st.. foo {
     a.. get r_ thissy.. pause }
 }sy.. pause
 
-struct bar {
+st.. bar {
     a.. get r_ st. shared_ptr<bar>{t..}sy.. pause }
 
     a.. raw r_ thissy.. pause }
 }sy.. pause
 
-struct baz : st. enable_shared_from_this<baz> {
+st.. baz : st. enable_shared_from_this<baz> {
     a.. get r_ shared_from_this()sy.. pause }
 }sy.. pause
 
