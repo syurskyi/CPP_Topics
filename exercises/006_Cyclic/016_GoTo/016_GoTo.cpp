@@ -1,25 +1,25 @@
-//? *s..
-//? |i..
-//
-//u.. s..
-//
-//in. main
-//
-//
-//	in. counter _ 0
-//
-//Label
-//
-//	?##
-//	c__ __  "Counter = " __  ? __  e..
-//
-//	__ ? < 3
-//
-//		____ L..
-//
-//
-//	c__ __  "End"
-//
-//	c__.g..
-//	r_ _
-//
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+    int counter = 0;
+
+    Label:
+
+    counter++;
+    cout << "Counter = " << counter << endl;
+
+    if count < 3
+    {
+        goto Label
+    }
+
+    cout << "End";
+
+    cin.get();
+    return 0;
+}
+
