@@ -1,36 +1,36 @@
-? |i..
-? |s..
-? "cat.h"
-? <typeinfo>
-
-u.. s..
-
-c_ A
-{}sy.. pause
-
-c_ B : pu.. A
-{}sy.. pause
-
-in. main()
-{
-    Animal* animal _ n.. Cat()sy.. pause
-
-    A* a _ static_cast<A*>(n.. B())sy.. pause
-
-    Animal* an _ animalsy.. pause
-    Pedigreed* ptr_ped _ dynamic_cast<Pedigreed*>(an)sy.. pause
-
-    __(dynamic_cast<v..*>(animal) __ dynamic_cast<v..*>(ptr_ped))
-    {
-        c__ __  "yes"sy.. pause
-    }
-
-    a.. ped _ dynamic_cast<Pedigreed*>(animal)sy.. pause
-    a.. cat _ dynamic_cast<Cat*>(ped)sy.. pause
-    __ ( a.. dom _ dynamic_cast<Domestic*>(cat) )
-    {
-        c__ __  "Domestic"sy.. pause
-        c__ __  dom__get_name()sy.. pause
-    }
-    r_ 0sy.. pause
-}
+//? |i..
+//? |s..
+//? "cat.h"
+//? <typeinfo>
+//
+//u.. s..
+//
+//c_ A
+//{} sy.. p..
+//
+//c_ B  pu.. A
+//{}sy.. p..
+//
+//in. main
+//
+//    A..# animal _ n.. C.. sy.. p..
+//
+//    A# a _ s_c..|A#| n.. B sy.. p..
+//
+//    A..# an _ a.. sy.. p..
+//    P..# ptr_ped _ d_c..|P..#|(an) sy.. p..
+//
+//    __(d_c_|v..#|(a.. __ d_c_|v..#| p_p..
+//
+//        c__ __  "yes" sy.. p..
+//
+//
+//    a.. ped _ d_c_|P..#| a.. sy.. p..
+//    a.. cat _ d_c_|C..#||p.. sy.. p..
+//    __ ( a.. dom _ d_c_|D..#| c..
+//
+//        c__ __  "Domestic" sy.. p..
+//        c__ __  d__g_n.. sy.. p..
+//
+//    r_ _ sy.. p..
+//
