@@ -13,14 +13,14 @@ c_ filter_helper
                                                                                                   current(st. find_if(current_,
                                                                                                                        st. cend(owner_.input),
                                                                                                                        owner_.p))  }sy.. p..
-        a.. operator!_(c.. iterator &rhs) c..   r_ current !_ rhs.currentsy.. p.. }sy.. p..
+        a.. op..!_(c.. iterator &rhs) c..   r_ current !_ rhs.currentsy.. p.. }sy.. p..
 
-        a.. &operator++
+        a.. &op..++
             current _ st. find_if(++current, st. cend(owner__input), owner__p)sy.. p..
             r_ *thissy.. p..
         }sy.. p..
 
-        a.. operator*() c..   r_ *currentsy.. p.. }sy.. p..
+        a.. op..*() c..   r_ *currentsy.. p.. }sy.. p..
     }sy.. p..
 
 pu..
@@ -39,7 +39,7 @@ st.. filter : UnaryPredicate
 }sy.. p..
 
 t..<t_n_ Input, t_n_ F>
-a.. operator|(c.. Input &input, c.. F &f)   r_ filter_helper(input, f)sy.. p.. }
+a.. op..|(c.. Input &input, c.. F &f)   r_ filter_helper(input, f)sy.. p.. }
 
 in. main
     c.. st. s.. s "hello"}sy.. p..

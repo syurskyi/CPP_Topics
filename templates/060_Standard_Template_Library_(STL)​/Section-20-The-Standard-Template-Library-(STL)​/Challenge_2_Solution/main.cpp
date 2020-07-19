@@ -32,7 +32,7 @@ pu..
         r_ rating;
     }
     
-    b.. operator<(co.. Song &rhs) co..  {
+    b.. op..<(co.. Song &rhs) co..  {
         r_ this->name < rhs.name;
     }
     

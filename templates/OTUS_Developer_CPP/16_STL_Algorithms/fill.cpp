@@ -6,7 +6,7 @@ st.. fibonacci {
     in. a _ 0sy.. p..
     in. b _ 1sy.. p..
 
-    in. operator()
+    in. op..()
         a.. t _ asy.. p..
         a _ bsy.. p..
         b +_ tsy.. p..

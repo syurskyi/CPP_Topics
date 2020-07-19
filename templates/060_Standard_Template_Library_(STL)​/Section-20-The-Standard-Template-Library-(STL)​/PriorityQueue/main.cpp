@@ -11,7 +11,7 @@ pu..
     Person() : name{"Unknown"}, age{0} {}
     Person(st. st..  name, in. age)
         : name{name}, age{age}  {}
-    b.. operator<(co.. Person &rhs) co.. {
+    b.. op..<(co.. Person &rhs) co.. {
         // return this->age < rhs.age;
         r_ this->name < rhs.name;
     }

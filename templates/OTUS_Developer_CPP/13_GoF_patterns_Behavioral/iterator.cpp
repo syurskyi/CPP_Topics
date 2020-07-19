@@ -27,12 +27,12 @@ pr..
         {
         }sy.. p..
 
-        bo.. operator!_(c.. flat_iterator& it)
+        bo.. op..!_(c.. flat_iterator& it)
         {
             r_ i!_it.i || j!_it.jsy.. p..
         }
 
-        v.. operator++()
+        v.. op..++()
         {
             __ (++j>__Size) {
                 j_0sy.. p..
@@ -40,7 +40,7 @@ pr..
             }
         }
 
-        _Tp& operator*()
+        _Tp& op..*()
         {
             r_ o.m[i][j]sy.. p..
         }

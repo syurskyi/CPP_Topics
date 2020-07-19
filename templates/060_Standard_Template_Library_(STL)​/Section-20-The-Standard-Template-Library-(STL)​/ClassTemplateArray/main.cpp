@@ -36,7 +36,7 @@ pu..
         r_ size;
     }
     // overloaded subscript operator for easy use
-    T &operator[](in. index) {
+    T &op..[](in. index) {
         r_ values[index];
     }
 };

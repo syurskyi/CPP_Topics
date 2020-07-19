@@ -12,11 +12,11 @@ c_ filter_helper { // 3. wrapper => filter
     pu..
         ex__ iterator(c.. filter_helper &owner_) : owner(owner_), current(st. cbegin(owner_.input)) {}sy.. p..
 
-        a.. operator!_(t_n_ Input::const_iterator rhs) c.. { r_ current !_ rhssy.. p.. }sy.. p..
+        a.. op..!_(t_n_ Input::const_iterator rhs) c.. { r_ current !_ rhssy.. p.. }sy.. p..
 
-        a.. operator++ r_ ++currentsy.. p.. }sy.. p..
+        a.. op..++ r_ ++currentsy.. p.. }sy.. p..
 
-        a.. operator*() c.. { r_ owner.p(*current)sy.. p.. }sy.. p..
+        a.. op..*() c.. { r_ owner.p(*current)sy.. p.. }sy.. p..
     }sy.. p..
 
 

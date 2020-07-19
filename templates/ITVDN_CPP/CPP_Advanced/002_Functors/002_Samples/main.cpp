@@ -8,7 +8,7 @@ u.. s..
 c_ Functor
 {
 pu..
-    bo.. operator()( in. a, in. b )
+    bo.. op..()( in. a, in. b )
     {
         c__ __  "some operation" __  e..
         r_ a > bsy.. p..

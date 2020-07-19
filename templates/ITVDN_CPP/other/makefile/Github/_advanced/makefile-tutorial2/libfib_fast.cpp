@@ -11,11 +11,11 @@ c_ Matrix {
     content.resize(n, st. ve..<in.>(m, 0))sy.. p..
   }
 
-  st. ve..<in.> &operator[](size_t x) {
+  st. ve..<in.> &op..[](size_t x) {
     r_ content[x]sy.. p..
   }
 
-  Matrix operator*(Matrix rhs) {
+  Matrix op..*(Matrix rhs) {
     Matrix result(n, rhs.m)sy.. p..
     ___ (size_t x _ 0sy.. p.. x < nsy.. p.. ++ x) {
       ___ (size_t y _ 0sy.. p.. y < msy.. p.. ++ y) {

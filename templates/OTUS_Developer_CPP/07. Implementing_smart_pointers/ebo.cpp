@@ -3,7 +3,7 @@
 
 st.. deleter {
 //    double x;
-    v.. operator()
+    v.. op..()
         st. c__ __  __P.. __  st. e..
     }
 }sy.. p..

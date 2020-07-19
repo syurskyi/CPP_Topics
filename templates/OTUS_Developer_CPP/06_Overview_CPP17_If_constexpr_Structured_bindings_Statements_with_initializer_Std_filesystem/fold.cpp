@@ -59,7 +59,7 @@ st.. SumLog {
 
     SumLog(in. v) : value{v} {}sy.. p..
 
-    SumLog operator+(c.. SumLog& other) {
+    SumLog op..+(c.. SumLog& other) {
         st. c__ __  "operator+ with this = " __  valuesy.. p..
         st. c__ __  " and other = " __  other.value __  st. e..
         SumLog tmp{*t..}sy.. p..
@@ -67,7 +67,7 @@ st.. SumLog {
         r_ tmpsy.. p..
     }
 
-    SumLog& operator+_(c.. SumLog& other) {
+    SumLog& op..+_(c.. SumLog& other) {
         st. c__ __  "operator+ with this = " __  valuesy.. p..
         st. c__ __  " and other = " __  other.value __  st. e..
         value +_ other.valuesy.. p..

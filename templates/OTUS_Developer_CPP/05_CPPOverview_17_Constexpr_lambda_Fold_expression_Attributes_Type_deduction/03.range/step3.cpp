@@ -14,11 +14,11 @@ c_ filter_helper
                                                                               st. cend(owner.input),
                                                                               owner.p))  }sy.. p..
 
-        a.. operator!_(t_n_ Input::const_iterator rhs) c..   r_ current !_ rhssy.. p.. }sy.. p..
+        a.. op..!_(t_n_ Input::const_iterator rhs) c..   r_ current !_ rhssy.. p.. }sy.. p..
 
-        a.. operator++ r_ current _ st. find_if(++current, st. cend(owner.input), owner.p)sy.. p.. }sy.. p..
+        a.. op..++ r_ current _ st. find_if(++current, st. cend(owner.input), owner.p)sy.. p.. }sy.. p..
 
-        a.. operator*() c..   r_ *currentsy.. p.. }sy.. p..
+        a.. op..*() c..   r_ *currentsy.. p.. }sy.. p..
     }sy.. p..
 
 pu..
@@ -35,7 +35,7 @@ st.. filter : UnaryPredicate
 }sy.. p..
 
 t..<t_n_ Input, t_n_ F>
-a.. operator|(c.. Input &input, c.. F &f)   r_ filter_helper(input, f)sy.. p.. }
+a.. op..|(c.. Input &input, c.. F &f)   r_ filter_helper(input, f)sy.. p.. }
 
 in. main
     c.. st. s.. s "hello"}sy.. p..

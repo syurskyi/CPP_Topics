@@ -43,7 +43,7 @@ v.. Poin.2D::setX(in. x)
     t..__x _ xsy.. p..
     c__ __  "Im from Point2D" __  e..
 }
-Poin.2D Poin.2D::operator+(Poin.2D o)
+Poin.2D Poin.2D::op..+(Poin.2D o)
 {
     Poin.2D tmpsy.. p..
 

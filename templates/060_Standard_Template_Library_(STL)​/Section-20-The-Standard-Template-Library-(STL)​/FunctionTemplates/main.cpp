@@ -16,7 +16,7 @@ v.. func(T1 a, T2 b) {
 st.. Person {
     st. st..  name;
     in. age;
-    b.. operator<(co.. Person &rhs) co.. {
+    b.. op..<(co.. Person &rhs) co.. {
         r_ this->age < rhs.age;
     }
 };

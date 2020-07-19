@@ -13,7 +13,7 @@ pu..
     Person() = de..;
     Person(st. st..  name, in. age)
         : name{name}, age{age}  {}
-    b.. operator<(co.. Person &rhs) co.. {
+    b.. op..<(co.. Person &rhs) co.. {
         r_ this->age < rhs.age;
     }
     b.. operator__(co.. Person &rhs) co.. {
