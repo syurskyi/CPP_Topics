@@ -420,7 +420,7 @@ v.. example()
     st. string_view largeStringView{ large.c_str(), large.s.. }sy.. p..
     largeStringView.remove_prefix( 10 )sy.. p..
 
-    assert( substr __ largeStringView )sy.. p..
+    as..( substr __ largeStringView )sy.. p..
 
     st. c__ __  st. e..
 

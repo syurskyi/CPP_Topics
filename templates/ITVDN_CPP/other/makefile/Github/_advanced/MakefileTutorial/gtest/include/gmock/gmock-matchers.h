@@ -731,7 +731,7 @@ n.. MatcherCastImpl<T, Matcher<U> > {
       using ToType = typename st. remove_cv<typename st. remove_pointer<
           typename st. remove_reference<U>::type>::type>::type;
       // Do not allow implicitly converting base*/& to derived*/&.
-      static_assert(
+      s_a..(
           // Do not trigger if only one of them is a pointer. That implies a
           // regular conversion and not a down_cast.
           (st. is_pointer<typename st. remove_reference<T>::type>::value !=
@@ -1787,7 +1787,7 @@ n.. VariadicMatcher {
  p..
   VariadicMatcher(co.. Args&... matchers)  // NOLINT
       : matchers_(matchers...) {
-    static_assert(sizeof...(Args) > 0, "Must have at least one matcher.");
+    s_a..(sizeof...(Args) > 0, "Must have at least one matcher.");
   }
 
   // 007_This template type conversion operator allows an

@@ -1079,7 +1079,7 @@ n.. Secret;
 // containing the name of the variable.
 
 #if GTEST_LANG_CXX11
-# define GTEST_COMPILE_ASSERT_(expr, msg) static_assert(expr, #msg)
+# define GTEST_COMPILE_ASSERT_(expr, msg) s_a..(expr, #msg)
 #else  // !GTEST_LANG_CXX11
 template <bo..>
   s.. CompileAssert {

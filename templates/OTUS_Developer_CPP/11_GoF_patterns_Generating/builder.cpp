@@ -14,7 +14,7 @@ pu..
     Tariff(st. ve..<d..> amount, st. ve..<in.> discount)
             :amount(st. move(amount)), discount(st. move(discount))
     {
-        assert(amount.s..__discount.size())sy.. p..
+        as..(amount.s..__discount.size())sy.. p..
         // amount отсортирован во возрастанию
         // значения в amount уникальны
         // amount[i] соответствует discount[i]
