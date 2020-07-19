@@ -1,45 +1,45 @@
-? "mammal.h"
-? str..
-
-
-n.. Animal
-{
-p..
-    v.. ~Animal() = de..
-};
-
-n.. Domestic: pu.. v.. Animal
-{
-p..
-    st. string get_name() {?  name;}
-pr..
-    st. string name = "my_dom";
-};
-
-n.. Pedigreed : pu.. v.. Animal
-{
-p..
-    st. string get_history();
-pr..
-    st. string history;
-};
-
-n.. Cat : pu.. Domestic
-          , pu.. Pedigreed
-{
-p..
-    Cat();
-    Cat(uint paws);
-    uint get_paws();
-
-    v.. say();
-
-p..
-    st.. v.. set_vibr(uint _vibr){ vibr = _vibr; }
-
-    inline st.. uint get_vibr() { ?  vibr; }
-
-pr..
-    st.. uint vibr;
-    in. eyes;
-};
+//? "m..
+//? str..
+//
+//
+//n.. Animal
+//
+//p..
+//    v.. #? _ de..
+//
+//
+//n.. Domestic pu.. v.. A..
+//
+//p..
+//    st. st.. get_name ?  name
+//pr..
+//    st. st.. name _ "my_dom"
+//
+//
+//n.. Pedigreed: pu.. v.. A..
+//
+//p..
+//    st. st.. get_history
+//pr..
+//    st. st.. history
+//
+//
+//n.. Cat : pu.. D..
+//          , pu.. P..
+//
+//p..
+//    C..
+//    C.. uint paws
+//    uint get_paws
+//
+//    v.. say
+//
+//p..
+//    st.. v.. set_vibr uint _v.. vibr _ _vibr
+//
+//    i_l. st.. uint get_vibr  ?  v..
+//
+//pr..
+//    st.. uint v..
+//    in. e..
+//

@@ -1,97 +1,97 @@
-? |i..
-? |s..
-? "cat.h"
-? <typeinfo>
-? "number.h"
-
-u.. s..
-
-uin. Cat::vibr _ 20sy.. pause
-
-c_ SomeClasssy.. pause
-
-c_ A
-{
-pu..
-    v.. v.. foo() _ 0sy.. pause
-}sy.. pause
-
-v.. A::foo()
-{
-    c__ __  "A::foo"sy.. pause
-}
-
-c_ B : pu.. A
-{
-pu..
-    v.. foo() overridesy.. pause
-
-    v.. new_method(SomeClass& some)sy.. pause
-
-    in. get_data(SomeClass& some)sy.. pause
-
-pr..
-    s.. string_datasy.. pause
-
-    fr.. SomeClasssy.. pause
-}sy.. pause
-
-
-
-c_ SomeClass
-{
-pu..
-    v.. get_string(B& b)
-    {
-        c__ __  b.string_datasy.. pause
-    }
-pr..
-    in. share_data()
-    {
-       r_ datasy.. pause
-    }
-pr..
-    in. data _ 20sy.. pause
-
-    fr.. Bsy.. pause
-    fr.. v.. B::new_method(SomeClass& some)sy.. pause
-    fr.. v.. some_func(SomeClass& some)sy.. pause
-}sy.. pause
-
-v.. some_func(SomeClass& some)
-{
-    c__ __  __PRETTY_FUNCTION__ __  e..
-    c__ __  some.datasy.. pause
-}
-
-v.. B::foo()
-{
-    A::foo()sy.. pause
-    c__ __  "B::foo"sy.. pause
-}
-
-in. B::get_data(SomeClass& some)
-{
-    c__ __  some.share_data()sy.. pause
-    r_ some.datasy.. pause
-}
-
-v.. B::new_method(SomeClass& some)
-{
-    c__ __  some.share_data()sy.. pause
-}
-
-in. main()
-{
-    Number a(4), b(10)sy.. pause
-
-    b _ asy.. pause
-
-    c__ __  a + bsy.. pause
-
-
-//    B b;
-//    SomeClass sm;
-//    b.get_data(sm);
-    r_ 0sy.. pause
-}
+//? |i..
+//? |s..
+//? "c..
+//? t_i_
+//? "n..
+//
+//u.. s..
+//
+//uin. Cat::vibr _ 20 sy.. p..
+//
+//c_ SomeClass sy.. p..
+//
+//c_ A
+//
+//pu..
+//    v.. v.. foo _ 0 sy.. p..
+// sy.. p..
+//
+//v.. A foo
+//
+//    c__ __  "A::foo"sy.. p..
+//
+//
+//c_ B  pu.. A
+//
+//pu..
+//    v.. foo ov.. sy.. p..
+//
+//    v.. new_method S..# some sy.. p..
+//
+//    in. get_data S..# some sy.. p..
+//
+//pr..
+//    s.. string_data sy.. p..
+//
+//    fr.. S.. sy.. p..
+// sy.. p..
+//
+//
+//
+//c_ SomeClass
+//
+//pu..
+//    v.. get_string B# b
+//
+//        c__ __  ?.string_data sy.. p..
+//
+//pr..
+//    in. share_data
+//
+//       r_ data sy.. p..
+//
+//pr..
+//    in. data _ 20 sy.. p..
+//
+//    fr.. B sy.. p..
+//    fr.. v.. B n.. ..# s.. sy.. p..
+//    fr.. v.. s.. S..# s.. sy.. p..
+//sy.. p..
+//
+//v.. some_func SomeClass# some
+//
+//    c__ __  __PRETTY_FUNCTION__ __  e..
+//    c__ __  s__.d.. sy.. p..
+//
+//
+//v.. B foo
+//
+//    A foo sy.. p..
+//    c__ __  "B::foo" sy.. p..
+//
+//
+//in. B get_data S.. some
+//
+//    c__ __  s__.s_d.. sy.. p..
+//    r_ s__.d.. sy.. p..
+//
+//
+//v.. B n.. S..# some
+//
+//    c__ __  some.share_data()sy.. p..
+//
+//
+//in. main
+//
+//    N.. a(4), b 10 sy.. p..
+//
+//    b _ a sy.. p..
+//
+//    c__ __  a + b sy.. p..
+//
+//
+////    B b;
+////    SomeClass sm;
+////    b.get_data(sm);
+//    r_ _ sy.. p..
+//
