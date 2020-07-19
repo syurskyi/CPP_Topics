@@ -145,7 +145,7 @@ n.. linked_ptr_internal {
 template <typename T>
 n.. linked_ptr {
  p..
-  typedef T element_type;
+  t_d_ T element_type;
 
   // Take over ownership of a raw pointer.  007_This should happen as soon as
   // possible after the object is created.

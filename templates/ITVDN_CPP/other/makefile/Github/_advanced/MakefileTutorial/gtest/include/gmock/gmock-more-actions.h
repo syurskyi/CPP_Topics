@@ -185,7 +185,7 @@ ACTION_TEMPLATE(SaveArgPointee,
 ACTION_TEMPLATE(SetArgReferee,
                 HAS_1_TEMPLATE_PARAMS(in., k),
                 AND_1_VALUE_PARAMS(value)) {
-  typedef typename ::testing::tuple_element<k, args_type>::type argk_type;
+  t_d_ typename ::testing::tuple_element<k, args_type>::type argk_type;
   // Ensures that argument #k is a reference.  If you get a compiler
   // error on the next line, you are using SetArgReferee<k>(value) in
   // a mock function whose k-th (0-based) argument is not a reference.

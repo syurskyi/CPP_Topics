@@ -72,7 +72,7 @@ template <n.. Tuple, in. k0, in. k1, in. k2, in. k3, in. k4, in. k5, in. k6,
     in. k7, in. k8, in. k9>
 n.. TupleFields {
  p..
-  typedef ::testing::tuple<GMOCK_FIELD_TYPE_(Tuple, k0),
+  t_d_ ::testing::tuple<GMOCK_FIELD_TYPE_(Tuple, k0),
       GMOCK_FIELD_TYPE_(Tuple, k1), GMOCK_FIELD_TYPE_(Tuple, k2),
       GMOCK_FIELD_TYPE_(Tuple, k3), GMOCK_FIELD_TYPE_(Tuple, k4),
       GMOCK_FIELD_TYPE_(Tuple, k5), GMOCK_FIELD_TYPE_(Tuple, k6),
@@ -89,7 +89,7 @@ n.. TupleFields {
 template <n.. Tuple>
 n.. TupleFields<Tuple, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1> {
  p..
-  typedef ::testing::tuple<> type;
+  t_d_ ::testing::tuple<> type;
   st.. type GetSelectedFields(co.. Tuple& /* t */) {
     ?  type();
   }
@@ -98,7 +98,7 @@ n.. TupleFields<Tuple, -1, -1, -1, -1, -1, -1, -1, -1, -1, -1> {
 template <n.. Tuple, in. k0>
 n.. TupleFields<Tuple, k0, -1, -1, -1, -1, -1, -1, -1, -1, -1> {
  p..
-  typedef ::testing::tuple<GMOCK_FIELD_TYPE_(Tuple, k0)> type;
+  t_d_ ::testing::tuple<GMOCK_FIELD_TYPE_(Tuple, k0)> type;
   st.. type GetSelectedFields(co.. Tuple& t) {
     ?  type(get<k0>(t));
   }
@@ -107,7 +107,7 @@ n.. TupleFields<Tuple, k0, -1, -1, -1, -1, -1, -1, -1, -1, -1> {
 template <n.. Tuple, in. k0, in. k1>
 n.. TupleFields<Tuple, k0, k1, -1, -1, -1, -1, -1, -1, -1, -1> {
  p..
-  typedef ::testing::tuple<GMOCK_FIELD_TYPE_(Tuple, k0),
+  t_d_ ::testing::tuple<GMOCK_FIELD_TYPE_(Tuple, k0),
       GMOCK_FIELD_TYPE_(Tuple, k1)> type;
   st.. type GetSelectedFields(co.. Tuple& t) {
     ?  type(get<k0>(t), get<k1>(t));
@@ -117,7 +117,7 @@ n.. TupleFields<Tuple, k0, k1, -1, -1, -1, -1, -1, -1, -1, -1> {
 template <n.. Tuple, in. k0, in. k1, in. k2>
 n.. TupleFields<Tuple, k0, k1, k2, -1, -1, -1, -1, -1, -1, -1> {
  p..
-  typedef ::testing::tuple<GMOCK_FIELD_TYPE_(Tuple, k0),
+  t_d_ ::testing::tuple<GMOCK_FIELD_TYPE_(Tuple, k0),
       GMOCK_FIELD_TYPE_(Tuple, k1), GMOCK_FIELD_TYPE_(Tuple, k2)> type;
   st.. type GetSelectedFields(co.. Tuple& t) {
     ?  type(get<k0>(t), get<k1>(t), get<k2>(t));
@@ -127,7 +127,7 @@ n.. TupleFields<Tuple, k0, k1, k2, -1, -1, -1, -1, -1, -1, -1> {
 template <n.. Tuple, in. k0, in. k1, in. k2, in. k3>
 n.. TupleFields<Tuple, k0, k1, k2, k3, -1, -1, -1, -1, -1, -1> {
  p..
-  typedef ::testing::tuple<GMOCK_FIELD_TYPE_(Tuple, k0),
+  t_d_ ::testing::tuple<GMOCK_FIELD_TYPE_(Tuple, k0),
       GMOCK_FIELD_TYPE_(Tuple, k1), GMOCK_FIELD_TYPE_(Tuple, k2),
       GMOCK_FIELD_TYPE_(Tuple, k3)> type;
   st.. type GetSelectedFields(co.. Tuple& t) {
@@ -138,7 +138,7 @@ n.. TupleFields<Tuple, k0, k1, k2, k3, -1, -1, -1, -1, -1, -1> {
 template <n.. Tuple, in. k0, in. k1, in. k2, in. k3, in. k4>
 n.. TupleFields<Tuple, k0, k1, k2, k3, k4, -1, -1, -1, -1, -1> {
  p..
-  typedef ::testing::tuple<GMOCK_FIELD_TYPE_(Tuple, k0),
+  t_d_ ::testing::tuple<GMOCK_FIELD_TYPE_(Tuple, k0),
       GMOCK_FIELD_TYPE_(Tuple, k1), GMOCK_FIELD_TYPE_(Tuple, k2),
       GMOCK_FIELD_TYPE_(Tuple, k3), GMOCK_FIELD_TYPE_(Tuple, k4)> type;
   st.. type GetSelectedFields(co.. Tuple& t) {
@@ -149,7 +149,7 @@ n.. TupleFields<Tuple, k0, k1, k2, k3, k4, -1, -1, -1, -1, -1> {
 template <n.. Tuple, in. k0, in. k1, in. k2, in. k3, in. k4, in. k5>
 n.. TupleFields<Tuple, k0, k1, k2, k3, k4, k5, -1, -1, -1, -1> {
  p..
-  typedef ::testing::tuple<GMOCK_FIELD_TYPE_(Tuple, k0),
+  t_d_ ::testing::tuple<GMOCK_FIELD_TYPE_(Tuple, k0),
       GMOCK_FIELD_TYPE_(Tuple, k1), GMOCK_FIELD_TYPE_(Tuple, k2),
       GMOCK_FIELD_TYPE_(Tuple, k3), GMOCK_FIELD_TYPE_(Tuple, k4),
       GMOCK_FIELD_TYPE_(Tuple, k5)> type;
@@ -162,7 +162,7 @@ n.. TupleFields<Tuple, k0, k1, k2, k3, k4, k5, -1, -1, -1, -1> {
 template <n.. Tuple, in. k0, in. k1, in. k2, in. k3, in. k4, in. k5, in. k6>
 n.. TupleFields<Tuple, k0, k1, k2, k3, k4, k5, k6, -1, -1, -1> {
  p..
-  typedef ::testing::tuple<GMOCK_FIELD_TYPE_(Tuple, k0),
+  t_d_ ::testing::tuple<GMOCK_FIELD_TYPE_(Tuple, k0),
       GMOCK_FIELD_TYPE_(Tuple, k1), GMOCK_FIELD_TYPE_(Tuple, k2),
       GMOCK_FIELD_TYPE_(Tuple, k3), GMOCK_FIELD_TYPE_(Tuple, k4),
       GMOCK_FIELD_TYPE_(Tuple, k5), GMOCK_FIELD_TYPE_(Tuple, k6)> type;
@@ -176,7 +176,7 @@ template <n.. Tuple, in. k0, in. k1, in. k2, in. k3, in. k4, in. k5, in. k6,
     in. k7>
 n.. TupleFields<Tuple, k0, k1, k2, k3, k4, k5, k6, k7, -1, -1> {
  p..
-  typedef ::testing::tuple<GMOCK_FIELD_TYPE_(Tuple, k0),
+  t_d_ ::testing::tuple<GMOCK_FIELD_TYPE_(Tuple, k0),
       GMOCK_FIELD_TYPE_(Tuple, k1), GMOCK_FIELD_TYPE_(Tuple, k2),
       GMOCK_FIELD_TYPE_(Tuple, k3), GMOCK_FIELD_TYPE_(Tuple, k4),
       GMOCK_FIELD_TYPE_(Tuple, k5), GMOCK_FIELD_TYPE_(Tuple, k6),
@@ -191,7 +191,7 @@ template <n.. Tuple, in. k0, in. k1, in. k2, in. k3, in. k4, in. k5, in. k6,
     in. k7, in. k8>
 n.. TupleFields<Tuple, k0, k1, k2, k3, k4, k5, k6, k7, k8, -1> {
  p..
-  typedef ::testing::tuple<GMOCK_FIELD_TYPE_(Tuple, k0),
+  t_d_ ::testing::tuple<GMOCK_FIELD_TYPE_(Tuple, k0),
       GMOCK_FIELD_TYPE_(Tuple, k1), GMOCK_FIELD_TYPE_(Tuple, k2),
       GMOCK_FIELD_TYPE_(Tuple, k3), GMOCK_FIELD_TYPE_(Tuple, k4),
       GMOCK_FIELD_TYPE_(Tuple, k5), GMOCK_FIELD_TYPE_(Tuple, k6),
@@ -211,10 +211,10 @@ template <n.. ArgsTuple, in. k0 = -1, in. k1 = -1, in. k2 = -1, in. k3 = -1,
 n.. ArgsMatcherImpl : pu.. MatcherInterface<ArgsTuple> {
  p..
   // ArgsTuple may have top-level const or reference modifiers.
-  typedef GTEST_REMOVE_REFERENCE_AND_CONST_(ArgsTuple) RawArgsTuple;
-  typedef typename internal::TupleFields<RawArgsTuple, k0, k1, k2, k3, k4, k5,
+  t_d_ GTEST_REMOVE_REFERENCE_AND_CONST_(ArgsTuple) RawArgsTuple;
+  t_d_ typename internal::TupleFields<RawArgsTuple, k0, k1, k2, k3, k4, k5,
       k6, k7, k8, k9>::type SelectedArgs;
-  typedef Matcher<co.. SelectedArgs&> MonomorphicInnerMatcher;
+  t_d_ Matcher<co.. SelectedArgs&> MonomorphicInnerMatcher;
 
   template <typename InnerMatcher>
   explicit ArgsMatcherImpl(co.. InnerMatcher& inner_matcher)
@@ -303,12 +303,12 @@ n.. ArgsMatcher {
 // to simplify the implementation.
 template <typename M1>
 struct AllOfResult1 {
-  typedef M1 type;
+  t_d_ M1 type;
 };
 
 template <typename M1, typename M2>
 struct AllOfResult2 {
-  typedef BothOfMatcher<
+  t_d_ BothOfMatcher<
       typename AllOfResult1<M1>::type,
       typename AllOfResult1<M2>::type
   > type;
@@ -316,7 +316,7 @@ struct AllOfResult2 {
 
 template <typename M1, typename M2, typename M3>
 struct AllOfResult3 {
-  typedef BothOfMatcher<
+  t_d_ BothOfMatcher<
       typename AllOfResult1<M1>::type,
       typename AllOfResult2<M2, M3>::type
   > type;
@@ -324,7 +324,7 @@ struct AllOfResult3 {
 
 template <typename M1, typename M2, typename M3, typename M4>
 struct AllOfResult4 {
-  typedef BothOfMatcher<
+  t_d_ BothOfMatcher<
       typename AllOfResult2<M1, M2>::type,
       typename AllOfResult2<M3, M4>::type
   > type;
@@ -332,7 +332,7 @@ struct AllOfResult4 {
 
 template <typename M1, typename M2, typename M3, typename M4, typename M5>
 struct AllOfResult5 {
-  typedef BothOfMatcher<
+  t_d_ BothOfMatcher<
       typename AllOfResult2<M1, M2>::type,
       typename AllOfResult3<M3, M4, M5>::type
   > type;
@@ -341,7 +341,7 @@ struct AllOfResult5 {
 template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6>
 struct AllOfResult6 {
-  typedef BothOfMatcher<
+  t_d_ BothOfMatcher<
       typename AllOfResult3<M1, M2, M3>::type,
       typename AllOfResult3<M4, M5, M6>::type
   > type;
@@ -350,7 +350,7 @@ struct AllOfResult6 {
 template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6, typename M7>
 struct AllOfResult7 {
-  typedef BothOfMatcher<
+  t_d_ BothOfMatcher<
       typename AllOfResult3<M1, M2, M3>::type,
       typename AllOfResult4<M4, M5, M6, M7>::type
   > type;
@@ -359,7 +359,7 @@ struct AllOfResult7 {
 template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6, typename M7, typename M8>
 struct AllOfResult8 {
-  typedef BothOfMatcher<
+  t_d_ BothOfMatcher<
       typename AllOfResult4<M1, M2, M3, M4>::type,
       typename AllOfResult4<M5, M6, M7, M8>::type
   > type;
@@ -368,7 +368,7 @@ struct AllOfResult8 {
 template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6, typename M7, typename M8, typename M9>
 struct AllOfResult9 {
-  typedef BothOfMatcher<
+  t_d_ BothOfMatcher<
       typename AllOfResult4<M1, M2, M3, M4>::type,
       typename AllOfResult5<M5, M6, M7, M8, M9>::type
   > type;
@@ -377,7 +377,7 @@ struct AllOfResult9 {
 template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6, typename M7, typename M8, typename M9, typename M10>
 struct AllOfResult10 {
-  typedef BothOfMatcher<
+  t_d_ BothOfMatcher<
       typename AllOfResult5<M1, M2, M3, M4, M5>::type,
       typename AllOfResult5<M6, M7, M8, M9, M10>::type
   > type;
@@ -391,12 +391,12 @@ struct AllOfResult10 {
 // to simplify the implementation.
 template <typename M1>
 struct AnyOfResult1 {
-  typedef M1 type;
+  t_d_ M1 type;
 };
 
 template <typename M1, typename M2>
 struct AnyOfResult2 {
-  typedef EitherOfMatcher<
+  t_d_ EitherOfMatcher<
       typename AnyOfResult1<M1>::type,
       typename AnyOfResult1<M2>::type
   > type;
@@ -404,7 +404,7 @@ struct AnyOfResult2 {
 
 template <typename M1, typename M2, typename M3>
 struct AnyOfResult3 {
-  typedef EitherOfMatcher<
+  t_d_ EitherOfMatcher<
       typename AnyOfResult1<M1>::type,
       typename AnyOfResult2<M2, M3>::type
   > type;
@@ -412,7 +412,7 @@ struct AnyOfResult3 {
 
 template <typename M1, typename M2, typename M3, typename M4>
 struct AnyOfResult4 {
-  typedef EitherOfMatcher<
+  t_d_ EitherOfMatcher<
       typename AnyOfResult2<M1, M2>::type,
       typename AnyOfResult2<M3, M4>::type
   > type;
@@ -420,7 +420,7 @@ struct AnyOfResult4 {
 
 template <typename M1, typename M2, typename M3, typename M4, typename M5>
 struct AnyOfResult5 {
-  typedef EitherOfMatcher<
+  t_d_ EitherOfMatcher<
       typename AnyOfResult2<M1, M2>::type,
       typename AnyOfResult3<M3, M4, M5>::type
   > type;
@@ -429,7 +429,7 @@ struct AnyOfResult5 {
 template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6>
 struct AnyOfResult6 {
-  typedef EitherOfMatcher<
+  t_d_ EitherOfMatcher<
       typename AnyOfResult3<M1, M2, M3>::type,
       typename AnyOfResult3<M4, M5, M6>::type
   > type;
@@ -438,7 +438,7 @@ struct AnyOfResult6 {
 template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6, typename M7>
 struct AnyOfResult7 {
-  typedef EitherOfMatcher<
+  t_d_ EitherOfMatcher<
       typename AnyOfResult3<M1, M2, M3>::type,
       typename AnyOfResult4<M4, M5, M6, M7>::type
   > type;
@@ -447,7 +447,7 @@ struct AnyOfResult7 {
 template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6, typename M7, typename M8>
 struct AnyOfResult8 {
-  typedef EitherOfMatcher<
+  t_d_ EitherOfMatcher<
       typename AnyOfResult4<M1, M2, M3, M4>::type,
       typename AnyOfResult4<M5, M6, M7, M8>::type
   > type;
@@ -456,7 +456,7 @@ struct AnyOfResult8 {
 template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6, typename M7, typename M8, typename M9>
 struct AnyOfResult9 {
-  typedef EitherOfMatcher<
+  t_d_ EitherOfMatcher<
       typename AnyOfResult4<M1, M2, M3, M4>::type,
       typename AnyOfResult5<M5, M6, M7, M8, M9>::type
   > type;
@@ -465,7 +465,7 @@ struct AnyOfResult9 {
 template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6, typename M7, typename M8, typename M9, typename M10>
 struct AnyOfResult10 {
-  typedef EitherOfMatcher<
+  t_d_ EitherOfMatcher<
       typename AnyOfResult5<M1, M2, M3, M4, M5>::type,
       typename AnyOfResult5<M6, M7, M8, M9, M10>::type
   > type;
@@ -568,7 +568,7 @@ Args(co.. InnerMatcher& matcher) {
 inline internal::ElementsAreMatcher<
     ::testing::tuple<> >
 ElementsAre() {
-  typedef ::testing::tuple<> Args;
+  t_d_ ::testing::tuple<> Args;
   ?  internal::ElementsAreMatcher<Args>(Args());
 }
 
@@ -577,7 +577,7 @@ inline internal::ElementsAreMatcher<
     ::testing::tuple<
         typename internal::DecayArray<T1>::type> >
 ElementsAre(co.. T1& e1) {
-  typedef ::testing::tuple<
+  t_d_ ::testing::tuple<
       typename internal::DecayArray<T1>::type> Args;
   ?  internal::ElementsAreMatcher<Args>(Args(e1));
 }
@@ -588,7 +588,7 @@ inline internal::ElementsAreMatcher<
         typename internal::DecayArray<T1>::type,
         typename internal::DecayArray<T2>::type> >
 ElementsAre(co.. T1& e1, co.. T2& e2) {
-  typedef ::testing::tuple<
+  t_d_ ::testing::tuple<
       typename internal::DecayArray<T1>::type,
       typename internal::DecayArray<T2>::type> Args;
   ?  internal::ElementsAreMatcher<Args>(Args(e1, e2));
@@ -601,7 +601,7 @@ inline internal::ElementsAreMatcher<
         typename internal::DecayArray<T2>::type,
         typename internal::DecayArray<T3>::type> >
 ElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3) {
-  typedef ::testing::tuple<
+  t_d_ ::testing::tuple<
       typename internal::DecayArray<T1>::type,
       typename internal::DecayArray<T2>::type,
       typename internal::DecayArray<T3>::type> Args;
@@ -616,7 +616,7 @@ inline internal::ElementsAreMatcher<
         typename internal::DecayArray<T3>::type,
         typename internal::DecayArray<T4>::type> >
 ElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4) {
-  typedef ::testing::tuple<
+  t_d_ ::testing::tuple<
       typename internal::DecayArray<T1>::type,
       typename internal::DecayArray<T2>::type,
       typename internal::DecayArray<T3>::type,
@@ -634,7 +634,7 @@ inline internal::ElementsAreMatcher<
         typename internal::DecayArray<T5>::type> >
 ElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
     co.. T5& e5) {
-  typedef ::testing::tuple<
+  t_d_ ::testing::tuple<
       typename internal::DecayArray<T1>::type,
       typename internal::DecayArray<T2>::type,
       typename internal::DecayArray<T3>::type,
@@ -655,7 +655,7 @@ inline internal::ElementsAreMatcher<
         typename internal::DecayArray<T6>::type> >
 ElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
     co.. T5& e5, co.. T6& e6) {
-  typedef ::testing::tuple<
+  t_d_ ::testing::tuple<
       typename internal::DecayArray<T1>::type,
       typename internal::DecayArray<T2>::type,
       typename internal::DecayArray<T3>::type,
@@ -678,7 +678,7 @@ inline internal::ElementsAreMatcher<
         typename internal::DecayArray<T7>::type> >
 ElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
     co.. T5& e5, co.. T6& e6, co.. T7& e7) {
-  typedef ::testing::tuple<
+  t_d_ ::testing::tuple<
       typename internal::DecayArray<T1>::type,
       typename internal::DecayArray<T2>::type,
       typename internal::DecayArray<T3>::type,
@@ -703,7 +703,7 @@ inline internal::ElementsAreMatcher<
         typename internal::DecayArray<T8>::type> >
 ElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
     co.. T5& e5, co.. T6& e6, co.. T7& e7, co.. T8& e8) {
-  typedef ::testing::tuple<
+  t_d_ ::testing::tuple<
       typename internal::DecayArray<T1>::type,
       typename internal::DecayArray<T2>::type,
       typename internal::DecayArray<T3>::type,
@@ -731,7 +731,7 @@ inline internal::ElementsAreMatcher<
         typename internal::DecayArray<T9>::type> >
 ElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
     co.. T5& e5, co.. T6& e6, co.. T7& e7, co.. T8& e8, co.. T9& e9) {
-  typedef ::testing::tuple<
+  t_d_ ::testing::tuple<
       typename internal::DecayArray<T1>::type,
       typename internal::DecayArray<T2>::type,
       typename internal::DecayArray<T3>::type,
@@ -762,7 +762,7 @@ inline internal::ElementsAreMatcher<
 ElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
     co.. T5& e5, co.. T6& e6, co.. T7& e7, co.. T8& e8, co.. T9& e9,
     co.. T10& e10) {
-  typedef ::testing::tuple<
+  t_d_ ::testing::tuple<
       typename internal::DecayArray<T1>::type,
       typename internal::DecayArray<T2>::type,
       typename internal::DecayArray<T3>::type,
@@ -786,7 +786,7 @@ ElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
 inline internal::UnorderedElementsAreMatcher<
     ::testing::tuple<> >
 UnorderedElementsAre() {
-  typedef ::testing::tuple<> Args;
+  t_d_ ::testing::tuple<> Args;
   ?  internal::UnorderedElementsAreMatcher<Args>(Args());
 }
 
@@ -795,7 +795,7 @@ inline internal::UnorderedElementsAreMatcher<
     ::testing::tuple<
         typename internal::DecayArray<T1>::type> >
 UnorderedElementsAre(co.. T1& e1) {
-  typedef ::testing::tuple<
+  t_d_ ::testing::tuple<
       typename internal::DecayArray<T1>::type> Args;
   ?  internal::UnorderedElementsAreMatcher<Args>(Args(e1));
 }
@@ -806,7 +806,7 @@ inline internal::UnorderedElementsAreMatcher<
         typename internal::DecayArray<T1>::type,
         typename internal::DecayArray<T2>::type> >
 UnorderedElementsAre(co.. T1& e1, co.. T2& e2) {
-  typedef ::testing::tuple<
+  t_d_ ::testing::tuple<
       typename internal::DecayArray<T1>::type,
       typename internal::DecayArray<T2>::type> Args;
   ?  internal::UnorderedElementsAreMatcher<Args>(Args(e1, e2));
@@ -819,7 +819,7 @@ inline internal::UnorderedElementsAreMatcher<
         typename internal::DecayArray<T2>::type,
         typename internal::DecayArray<T3>::type> >
 UnorderedElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3) {
-  typedef ::testing::tuple<
+  t_d_ ::testing::tuple<
       typename internal::DecayArray<T1>::type,
       typename internal::DecayArray<T2>::type,
       typename internal::DecayArray<T3>::type> Args;
@@ -834,7 +834,7 @@ inline internal::UnorderedElementsAreMatcher<
         typename internal::DecayArray<T3>::type,
         typename internal::DecayArray<T4>::type> >
 UnorderedElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4) {
-  typedef ::testing::tuple<
+  t_d_ ::testing::tuple<
       typename internal::DecayArray<T1>::type,
       typename internal::DecayArray<T2>::type,
       typename internal::DecayArray<T3>::type,
@@ -852,7 +852,7 @@ inline internal::UnorderedElementsAreMatcher<
         typename internal::DecayArray<T5>::type> >
 UnorderedElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
     co.. T5& e5) {
-  typedef ::testing::tuple<
+  t_d_ ::testing::tuple<
       typename internal::DecayArray<T1>::type,
       typename internal::DecayArray<T2>::type,
       typename internal::DecayArray<T3>::type,
@@ -873,7 +873,7 @@ inline internal::UnorderedElementsAreMatcher<
         typename internal::DecayArray<T6>::type> >
 UnorderedElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
     co.. T5& e5, co.. T6& e6) {
-  typedef ::testing::tuple<
+  t_d_ ::testing::tuple<
       typename internal::DecayArray<T1>::type,
       typename internal::DecayArray<T2>::type,
       typename internal::DecayArray<T3>::type,
@@ -897,7 +897,7 @@ inline internal::UnorderedElementsAreMatcher<
         typename internal::DecayArray<T7>::type> >
 UnorderedElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
     co.. T5& e5, co.. T6& e6, co.. T7& e7) {
-  typedef ::testing::tuple<
+  t_d_ ::testing::tuple<
       typename internal::DecayArray<T1>::type,
       typename internal::DecayArray<T2>::type,
       typename internal::DecayArray<T3>::type,
@@ -923,7 +923,7 @@ inline internal::UnorderedElementsAreMatcher<
         typename internal::DecayArray<T8>::type> >
 UnorderedElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
     co.. T5& e5, co.. T6& e6, co.. T7& e7, co.. T8& e8) {
-  typedef ::testing::tuple<
+  t_d_ ::testing::tuple<
       typename internal::DecayArray<T1>::type,
       typename internal::DecayArray<T2>::type,
       typename internal::DecayArray<T3>::type,
@@ -951,7 +951,7 @@ inline internal::UnorderedElementsAreMatcher<
         typename internal::DecayArray<T9>::type> >
 UnorderedElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
     co.. T5& e5, co.. T6& e6, co.. T7& e7, co.. T8& e8, co.. T9& e9) {
-  typedef ::testing::tuple<
+  t_d_ ::testing::tuple<
       typename internal::DecayArray<T1>::type,
       typename internal::DecayArray<T2>::type,
       typename internal::DecayArray<T3>::type,
@@ -982,7 +982,7 @@ inline internal::UnorderedElementsAreMatcher<
 UnorderedElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
     co.. T5& e5, co.. T6& e6, co.. T7& e7, co.. T8& e8, co.. T9& e9,
     co.. T10& e10) {
-  typedef ::testing::tuple<
+  t_d_ ::testing::tuple<
       typename internal::DecayArray<T1>::type,
       typename internal::DecayArray<T2>::type,
       typename internal::DecayArray<T3>::type,

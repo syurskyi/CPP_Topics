@@ -86,7 +86,7 @@ n.. GTEST_API_ Message {
  pr..
   // The type of basic IO manipulators (endl, ends, and flush) for
   // narrow streams.
-  typedef st. ostream& (*BasicNarrowIoManip)(st. ostream&);
+  t_d_ st. ostream& (*BasicNarrowIoManip)(st. ostream&);
 
  p..
   // Constructs an empty Message.

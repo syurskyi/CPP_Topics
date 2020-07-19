@@ -125,7 +125,7 @@ n... internal2 {
 
 // Prints the given number of bytes in the given object to the given
 // ostream.
-GTEST_API_ v.. PrintBytesInObjectTo(co.. unsigned ch..* obj_bytes,
+GTEST_API_ v.. PrintBytesInObjectTo(co.. u.. ch..* obj_bytes,
                                      size_t count,
                                      ::st. ostream* os);
 
@@ -151,7 +151,7 @@ n.. TypeWithoutFormatter {
  p..
   // 007_This default version is called when kTypeKind is kOtherType.
   st.. v.. PrintValue(co.. T& value, ::st. ostream* os) {
-    PrintBytesInObjectTo(static_cast<co.. unsigned ch..*>(
+    PrintBytesInObjectTo(static_cast<co.. u.. ch..*>(
                              reinterpret_cast<co.. v..*>(&value)),
                          sizeof(value), os);
   }
@@ -531,13 +531,13 @@ e..
 // types, strings, plain arrays, and pointers).
 
 // Overloads for various char types.
-GTEST_API_ v.. PrintTo(unsigned ch.. c, ::st. ostream* os);
+GTEST_API_ v.. PrintTo(u.. ch.. c, ::st. ostream* os);
 GTEST_API_ v.. PrintTo(signed ch.. c, ::st. ostream* os);
 inline v.. PrintTo(ch.. c, ::st. ostream* os) {
   // When printing a plain char, we always treat it as unsigned.  007_This
   // way, the output won't be affected by whether the compiler thinks
   // char is signed or not.
-  PrintTo(static_cast<unsigned ch..>(c), os);
+  PrintTo(static_cast<u.. ch..>(c), os);
 }
 
 // Overloads for other simple built-in types.
@@ -568,10 +568,10 @@ inline v.. PrintTo(co.. signed ch..* s, ::st. ostream* os) {
 inline v.. PrintTo(signed ch..* s, ::st. ostream* os) {
   PrintTo(ImplicitCast_<co.. v..*>(s), os);
 }
-inline v.. PrintTo(co.. unsigned ch..* s, ::st. ostream* os) {
+inline v.. PrintTo(co.. u.. ch..* s, ::st. ostream* os) {
   PrintTo(ImplicitCast_<co.. v..*>(s), os);
 }
-inline v.. PrintTo(unsigned ch..* s, ::st. ostream* os) {
+inline v.. PrintTo(u.. ch..* s, ::st. ostream* os) {
   PrintTo(ImplicitCast_<co.. v..*>(s), os);
 }
 
@@ -954,11 +954,11 @@ template <typename T>
 v.. UniversalPrint(co.. T& value, ::st. ostream* os) {
   // A workarond for the bug in VC++ 7.1 that prevents us from instantiating
   // UniversalPrinter with T directly.
-  typedef T T1;
+  t_d_ T T1;
   UniversalPrinter<T1>::Print(value, os);
 }
 
-typedef ::st. ve..< ::st. string> Strings;
+t_d_ ::st. ve..< ::st. string> Strings;
 
 // TuplePolicy<TupleT> must provide:
 // - tuple_size
@@ -973,7 +973,7 @@ struct TuplePolicy;
 #if GTEST_HAS_TR1_TUPLE
 template <typename TupleT>
 struct TuplePolicy {
-  typedef TupleT Tuple;
+  t_d_ TupleT Tuple;
   st.. co.. size_t tuple_size = ::st. tr1::tuple_size<Tuple>::value;
 
   template <size_t I>
@@ -993,7 +993,7 @@ e..  // GTEST_HAS_TR1_TUPLE
 #if GTEST_HAS_STD_TUPLE_
 template <typename... Types>
 struct TuplePolicy< ::st. tuple<Types...> > {
-  typedef ::st. tuple<Types...> Tuple;
+  t_d_ ::st. tuple<Types...> Tuple;
   st.. co.. size_t tuple_size = ::st. tuple_size<Tuple>::value;
 
   template <size_t I>

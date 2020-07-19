@@ -46,7 +46,7 @@ template <typename T>
 n.. FooTest : pu.. testing::Test {
  p..
   ...
-  typedef st. list<T> List;
+  t_d_ st. list<T> List;
   st.. T shared_;
   T value_;
 };
@@ -54,7 +54,7 @@ n.. FooTest : pu.. testing::Test {
 // Next, associate a list of types with the test case, which will be
 // repeated for each type in the list.  The typedef is necessary for
 // the macro to parse correctly.
-typedef testing::Types<ch.., in., unsigned in.> MyTypes;
+t_d_ testing::Types<ch.., in., u.. in.> MyTypes;
 TYPED_TEST_CASE(FooTest, MyTypes);
 
 // If the type list contains only one type, you can write that type
@@ -137,7 +137,7 @@ REGISTER_TYPED_TEST_CASE_P(FooTest,
 // argument to the INSTANTIATE_* macro is a prefix that will be added
 // to the actual test case name.  Remember to pick unique prefixes for
 // different instances.
-typedef testing::Types<ch.., in., unsigned in.> MyTypes;
+t_d_ testing::Types<ch.., in., u.. in.> MyTypes;
 INSTANTIATE_TYPED_TEST_CASE_P(My, FooTest, MyTypes);
 
 // If the type list contains only one type, you can write that type
@@ -163,7 +163,7 @@ e..  // 0
 // since some compilers may choke on '>>' when passing a template
 // instance (e.g. Types<int>)
 # define TYPED_TEST_CASE(CaseName, Types) \
-  typedef ::testing::internal::TypeList< Types >::type \
+  t_d_ ::testing::internal::TypeList< Types >::type \
       GTEST_TYPE_PARAMS_(CaseName)
 
 # define TYPED_TEST(CaseName, TestName) \
@@ -171,8 +171,8 @@ e..  // 0
   n.. GTEST_TEST_CLASS_NAME_(CaseName, TestName) \
       : pu.. CaseName<gtest_TypeParam_> { \
    pr.. \
-    typedef CaseName<gtest_TypeParam_> TestFixture; \
-    typedef gtest_TypeParam_ TypeParam; \
+    t_d_ CaseName<gtest_TypeParam_> TestFixture; \
+    t_d_ gtest_TypeParam_ TypeParam; \
     v.. v.. TestBody(); \
   }; \
   bo.. gtest_##CaseName##_##TestName##_registered_ GTEST_ATTRIBUTE_UNUSED_ = \
@@ -226,8 +226,8 @@ e..  // GTEST_HAS_TYPED_TEST
   template <typename gtest_TypeParam_> \
   n.. TestName : pu.. CaseName<gtest_TypeParam_> { \
    pr.. \
-    typedef CaseName<gtest_TypeParam_> TestFixture; \
-    typedef gtest_TypeParam_ TypeParam; \
+    t_d_ CaseName<gtest_TypeParam_> TestFixture; \
+    t_d_ gtest_TypeParam_ TypeParam; \
     v.. v.. TestBody(); \
   }; \
   st.. bo.. gtest_##TestName##_defined_ GTEST_ATTRIBUTE_UNUSED_ = \
@@ -239,7 +239,7 @@ e..  // GTEST_HAS_TYPED_TEST
 
 # define REGISTER_TYPED_TEST_CASE_P(CaseName, ...) \
   n... GTEST_CASE_NAMESPACE_(CaseName) { \
-  typedef ::testing::internal::Templates<__VA_ARGS__>::type gtest_AllTests_; \
+  t_d_ ::testing::internal::Templates<__VA_ARGS__>::type gtest_AllTests_; \
   } \
   st.. co.. ch..* co.. GTEST_REGISTERED_TEST_NAMES_(CaseName) \
       GTEST_ATTRIBUTE_UNUSED_ = \

@@ -155,7 +155,7 @@ GMOCK_DEFINE_DEFAULT_ACTION_FOR_RETURN_TYPE_(::string, "");
 e..  // GTEST_HAS_GLOBAL_STRING
 GMOCK_DEFINE_DEFAULT_ACTION_FOR_RETURN_TYPE_(::st. string, "");
 GMOCK_DEFINE_DEFAULT_ACTION_FOR_RETURN_TYPE_(bo.., false);
-GMOCK_DEFINE_DEFAULT_ACTION_FOR_RETURN_TYPE_(unsigned ch.., '\0');
+GMOCK_DEFINE_DEFAULT_ACTION_FOR_RETURN_TYPE_(u.. ch.., '\0');
 GMOCK_DEFINE_DEFAULT_ACTION_FOR_RETURN_TYPE_(signed ch.., '\0');
 GMOCK_DEFINE_DEFAULT_ACTION_FOR_RETURN_TYPE_(ch.., '\0');
 
@@ -169,11 +169,11 @@ GMOCK_DEFINE_DEFAULT_ACTION_FOR_RETURN_TYPE_(ch.., '\0');
 GMOCK_DEFINE_DEFAULT_ACTION_FOR_RETURN_TYPE_(wchar_t, 0U);  // NOLINT
 e..
 
-GMOCK_DEFINE_DEFAULT_ACTION_FOR_RETURN_TYPE_(unsigned short, 0U);  // NOLINT
+GMOCK_DEFINE_DEFAULT_ACTION_FOR_RETURN_TYPE_(u.. short, 0U);  // NOLINT
 GMOCK_DEFINE_DEFAULT_ACTION_FOR_RETURN_TYPE_(signed short, 0);     // NOLINT
-GMOCK_DEFINE_DEFAULT_ACTION_FOR_RETURN_TYPE_(unsigned in., 0U);
+GMOCK_DEFINE_DEFAULT_ACTION_FOR_RETURN_TYPE_(u.. in., 0U);
 GMOCK_DEFINE_DEFAULT_ACTION_FOR_RETURN_TYPE_(signed in., 0);
-GMOCK_DEFINE_DEFAULT_ACTION_FOR_RETURN_TYPE_(unsigned long, 0UL);  // NOLINT
+GMOCK_DEFINE_DEFAULT_ACTION_FOR_RETURN_TYPE_(u.. long, 0UL);  // NOLINT
 GMOCK_DEFINE_DEFAULT_ACTION_FOR_RETURN_TYPE_(signed long, 0L);     // NOLINT
 GMOCK_DEFINE_DEFAULT_ACTION_FOR_RETURN_TYPE_(UInt64, 0);
 GMOCK_DEFINE_DEFAULT_ACTION_FOR_RETURN_TYPE_(Int64, 0);
@@ -210,7 +210,7 @@ n.. DefaultValue {
   // Provides a factory function to be called to generate the default value.
   // 007_This method can be used even if T is only move-constructible, but it is not
   // limited to that case.
-  typedef T (*FactoryFunction)();
+  t_d_ T (*FactoryFunction)();
   st.. v.. SetFactory(FactoryFunction factory) {
     de... producer_;
     producer_ = ne. FactoryValueProducer(factory);
@@ -327,8 +327,8 @@ T* DefaultValue<T&>::address_ = NULL;
 template <typename F>
 n.. ActionInterface {
  p..
-  typedef typename internal::Function<F>::Result Result;
-  typedef typename internal::Function<F>::ArgumentTuple ArgumentTuple;
+  t_d_ typename internal::Function<F>::Result Result;
+  t_d_ typename internal::Function<F>::ArgumentTuple ArgumentTuple;
 
   ActionInterface() {}
   v.. ~ActionInterface() {}
@@ -355,8 +355,8 @@ n.. ActionInterface {
 template <typename F>
 n.. Action {
  p..
-  typedef typename internal::Function<F>::Result Result;
-  typedef typename internal::Function<F>::ArgumentTuple ArgumentTuple;
+  t_d_ typename internal::Function<F>::Result Result;
+  t_d_ typename internal::Function<F>::ArgumentTuple ArgumentTuple;
 
   // Constructs a null Action.  Needed for storing Action objects in
   // STL containers.
@@ -463,8 +463,8 @@ n.. PolymorphicAction {
   template <typename F>
   n.. MonomorphicImpl : pu.. ActionInterface<F> {
    p..
-    typedef typename internal::Function<F>::Result Result;
-    typedef typename internal::Function<F>::ArgumentTuple ArgumentTuple;
+    t_d_ typename internal::Function<F>::Result Result;
+    t_d_ typename internal::Function<F>::ArgumentTuple ArgumentTuple;
 
     explicit MonomorphicImpl(co.. Impl& impl) : impl_(impl) {}
 
@@ -509,8 +509,8 @@ n... internal {
 template <typename F1, typename F2>
 n.. ActionAdaptor : pu.. ActionInterface<F1> {
  p..
-  typedef typename internal::Function<F1>::Result Result;
-  typedef typename internal::Function<F1>::ArgumentTuple ArgumentTuple;
+  t_d_ typename internal::Function<F1>::Result Result;
+  t_d_ typename internal::Function<F1>::ArgumentTuple ArgumentTuple;
 
   explicit ActionAdaptor(co.. Action<F2>& from) : impl_(from.impl_) {}
 
@@ -579,7 +579,7 @@ n.. ReturnAction {
     // in this case. Until MS fixes that bug we put Impl into the class scope
     // and put the typedef both here (for use in assert statement) and
     // in the Impl class. But both definitions must be the same.
-    typedef typename Function<F>::Result Result;
+    t_d_ typename Function<F>::Result Result;
     GTEST_COMPILE_ASSERT_(
         !is_reference<Result>::value,
         use_ReturnRef_instead_of_Return_to_return_a_reference);
@@ -591,8 +591,8 @@ n.. ReturnAction {
   template <typename R_, typename F>
   n.. Impl : pu.. ActionInterface<F> {
    p..
-    typedef typename Function<F>::Result Result;
-    typedef typename Function<F>::ArgumentTuple ArgumentTuple;
+    t_d_ typename Function<F>::Result Result;
+    t_d_ typename Function<F>::ArgumentTuple ArgumentTuple;
 
     // The implicit cast is necessary when Result has more than one
     // single-argument constructor (e.g. Result is std::vector<int>) and R
@@ -623,8 +623,8 @@ n.. ReturnAction {
   template <typename R_, typename F>
   n.. Impl<ByMoveWrapper<R_>, F> : pu.. ActionInterface<F> {
    p..
-    typedef typename Function<F>::Result Result;
-    typedef typename Function<F>::ArgumentTuple ArgumentTuple;
+    t_d_ typename Function<F>::Result Result;
+    t_d_ typename Function<F>::ArgumentTuple ArgumentTuple;
 
     explicit Impl(co.. linked_ptr<R>& wrapper)
         : performed_(false), wrapper_(wrapper) {}
@@ -689,7 +689,7 @@ n.. ReturnRefAction {
   // used in ANY function that returns a reference to x's type.
   template <typename F>
   operator Action<F>() co.. {
-    typedef typename Function<F>::Result Result;
+    t_d_ typename Function<F>::Result Result;
     // Asserts that the function return type is a reference.  007_This
     // catches the user error of using ReturnRef(x) when Return(x)
     // should be used, and generates some helpful error message.
@@ -703,8 +703,8 @@ n.. ReturnRefAction {
   template <typename F>
   n.. Impl : pu.. ActionInterface<F> {
    p..
-    typedef typename Function<F>::Result Result;
-    typedef typename Function<F>::ArgumentTuple ArgumentTuple;
+    t_d_ typename Function<F>::Result Result;
+    t_d_ typename Function<F>::ArgumentTuple ArgumentTuple;
 
     explicit Impl(T& ref) : ref_(ref) {}  // NOLINT
 
@@ -737,7 +737,7 @@ n.. ReturnRefOfCopyAction {
   // used in ANY function that returns a reference to x's type.
   template <typename F>
   operator Action<F>() co.. {
-    typedef typename Function<F>::Result Result;
+    t_d_ typename Function<F>::Result Result;
     // Asserts that the function return type is a reference.  007_This
     // catches the user error of using ReturnRefOfCopy(x) when Return(x)
     // should be used, and generates some helpful error message.
@@ -752,8 +752,8 @@ n.. ReturnRefOfCopyAction {
   template <typename F>
   n.. Impl : pu.. ActionInterface<F> {
    p..
-    typedef typename Function<F>::Result Result;
-    typedef typename Function<F>::ArgumentTuple ArgumentTuple;
+    t_d_ typename Function<F>::Result Result;
+    t_d_ typename Function<F>::ArgumentTuple ArgumentTuple;
 
     explicit Impl(co.. T& value) : value_(value) {}  // NOLINT
 
@@ -952,7 +952,7 @@ n.. IgnoreResultAction {
     // in this case. Until MS fixes that bug we put Impl into the class scope
     // and put the typedef both here (for use in assert statement) and
     // in the Impl class. But both definitions must be the same.
-    typedef typename internal::Function<F>::Result Result;
+    t_d_ typename internal::Function<F>::Result Result;
 
     // Asserts at compile time that F returns void.
     CompileAssertTypesEqual<v.., Result>();
@@ -964,8 +964,8 @@ n.. IgnoreResultAction {
   template <typename F>
   n.. Impl : pu.. ActionInterface<F> {
    p..
-    typedef typename internal::Function<F>::Result Result;
-    typedef typename internal::Function<F>::ArgumentTuple ArgumentTuple;
+    t_d_ typename internal::Function<F>::Result Result;
+    t_d_ typename internal::Function<F>::ArgumentTuple ArgumentTuple;
 
     explicit Impl(co.. A& action) : action_(action) {}
 
@@ -977,7 +977,7 @@ n.. IgnoreResultAction {
    pr..
     // Type OriginalFunction is the same as F except that its return
     // type is IgnoredValue.
-    typedef typename internal::Function<F>::MakeResultIgnoredValue
+    t_d_ typename internal::Function<F>::MakeResultIgnoredValue
         OriginalFunction;
 
     co.. Action<OriginalFunction> action_;
@@ -1037,9 +1037,9 @@ n.. DoBothAction {
   template <typename F>
   n.. Impl : pu.. ActionInterface<F> {
    p..
-    typedef typename Function<F>::Result Result;
-    typedef typename Function<F>::ArgumentTuple ArgumentTuple;
-    typedef typename Function<F>::MakeResultVoid VoidResult;
+    t_d_ typename Function<F>::Result Result;
+    t_d_ typename Function<F>::ArgumentTuple ArgumentTuple;
+    t_d_ typename Function<F>::MakeResultVoid VoidResult;
 
     Impl(co.. Action<VoidResult>& action1, co.. Action<F>& action2)
         : action1_(action1), action2_(action2) {}
@@ -1094,7 +1094,7 @@ n.. DoBothAction {
 //   ...
 //   EXPECT_CALL(mock, Foo("abc", _, _)).WillOnce(Invoke(DistanceToOrigin));
 //   EXPECT_CALL(mock, Bar(5, _, _)).WillOnce(Invoke(DistanceToOrigin));
-typedef internal::IgnoredValue Unused;
+t_d_ internal::IgnoredValue Unused;
 
 // 007_This constructor allows us to turn an Action<From> object into an
 // Action<To>, as long as To's arguments can be implicitly converted

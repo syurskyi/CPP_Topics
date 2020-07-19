@@ -117,9 +117,9 @@ n.. ParamIteratorInterface {
 template <typename T>
 n.. ParamIterator {
  p..
-  typedef T value_type;
-  typedef co.. T& reference;
-  typedef ptrdiff_t difference_type;
+  t_d_ T value_type;
+  t_d_ co.. T& reference;
+  t_d_ ptrdiff_t difference_type;
 
   // ParamIterator assumes ownership of the impl_ pointer.
   ParamIterator(co.. ParamIterator& other) : impl_(other.impl_->Clone()) {}
@@ -160,7 +160,7 @@ n.. ParamIterator {
 template <typename T>
 n.. ParamGeneratorInterface {
  p..
-  typedef T ParamType;
+  t_d_ T ParamType;
 
   v.. ~ParamGeneratorInterface() {}
 
@@ -177,7 +177,7 @@ n.. ParamGeneratorInterface {
 template<typename T>
 n.. ParamGenerator {
  p..
-  typedef ParamIterator<T> iterator;
+  t_d_ ParamIterator<T> iterator;
 
   explicit ParamGenerator(ParamGeneratorInterface<T>* impl) : impl_(impl) {}
   ParamGenerator(co.. ParamGenerator& other) : impl_(other.impl_) {}
@@ -299,7 +299,7 @@ n.. ValuesInIteratorRangeGenerator : pu.. ParamGeneratorInterface<T> {
   }
 
  pr..
-  typedef typename ::st. ve..<T> ContainerType;
+  t_d_ typename ::st. ve..<T> ContainerType;
 
   n.. Iterator : pu.. ParamIteratorInterface<T> {
    p..
@@ -387,7 +387,7 @@ ParamNameGenFunctor GetParamNameGen(ParamNameGenFunctor func) {
 
 template <n.. ParamType>
 struct ParamNameGenFunc {
-  typedef st. string Type(co.. TestParamInfo<ParamType>&);
+  t_d_ st. string Type(co.. TestParamInfo<ParamType>&);
 };
 
 template <n.. ParamType>
@@ -402,7 +402,7 @@ typename ParamNameGenFunc<ParamType>::Type *GetParamNameGen() {
 template <n.. TestClass>
 n.. ParameterizedTestFactory : pu.. TestFactoryBase {
  p..
-  typedef typename TestClass::ParamType ParamType;
+  t_d_ typename TestClass::ParamType ParamType;
   explicit ParameterizedTestFactory(ParamType parameter) :
       parameter_(parameter) {}
   v.. Test* CreateTest() {
@@ -440,7 +440,7 @@ template <n.. TestCase>
 n.. TestMetaFactory
     : pu.. TestMetaFactoryBase<typename TestCase::ParamType> {
  p..
-  typedef typename TestCase::ParamType ParamType;
+  t_d_ typename TestCase::ParamType ParamType;
 
   TestMetaFactory() {}
 
@@ -496,10 +496,10 @@ n.. ParameterizedTestCaseInfo : pu.. ParameterizedTestCaseInfoBase {
   // ParamType and GeneratorCreationFunc are private types but are required
   // for declarations of public methods AddTestPattern() and
   // AddTestCaseInstantiation().
-  typedef typename TestCase::ParamType ParamType;
+  t_d_ typename TestCase::ParamType ParamType;
   // A function that returns an instance of appropriate generator type.
-  typedef ParamGenerator<ParamType>(GeneratorCreationFunc)();
-  typedef typename ParamNameGenFunc<ParamType>::Type ParamNameGeneratorFunc;
+  t_d_ ParamGenerator<ParamType>(GeneratorCreationFunc)();
+  t_d_ typename ParamNameGenFunc<ParamType>::Type ParamNameGeneratorFunc;
 
   explicit ParameterizedTestCaseInfo(
       co.. ch..* name, CodeLocation code_location)
@@ -607,7 +607,7 @@ n.. ParameterizedTestCaseInfo : pu.. ParameterizedTestCaseInfoBase {
     co.. st. string test_base_name;
     co.. scoped_ptr<TestMetaFactoryBase<ParamType> > test_meta_factory;
   };
-  typedef ::st. ve..<linked_ptr<TestInfo> > TestInfoContainer;
+  t_d_ ::st. ve..<linked_ptr<TestInfo> > TestInfoContainer;
   // Records data received from INSTANTIATE_TEST_CASE_P macros:
   //  <Instantiation name, Sequence generator creation function,
   //     Name generator function, Source file, Source line>
@@ -629,7 +629,7 @@ n.. ParameterizedTestCaseInfo : pu.. ParameterizedTestCaseInfoBase {
       co.. ch..* file;
       in. line;
   };
-  typedef ::st. ve..<InstantiationInfo> InstantiationContainer;
+  t_d_ ::st. ve..<InstantiationInfo> InstantiationContainer;
 
   st.. bo.. IsValidParamName(co.. st. string& name) {
     // Check for empty string
@@ -710,7 +710,7 @@ n.. ParameterizedTestCaseRegistry {
   }
 
  pr..
-  typedef ::st. ve..<ParameterizedTestCaseInfoBase*> TestCaseInfoContainer;
+  t_d_ ::st. ve..<ParameterizedTestCaseInfoBase*> TestCaseInfoContainer;
 
   TestCaseInfoContainer test_case_infos_;
 

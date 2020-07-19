@@ -151,7 +151,7 @@ e..
   st.. st. string FormatHexInt(in. value);
 
   // Formats a byte as "%02X".
-  st.. st. string FormatByte(unsigned ch.. value);
+  st.. st. string FormatByte(u.. ch.. value);
 
  pr..
   String();  // Not meant to be instantiated.

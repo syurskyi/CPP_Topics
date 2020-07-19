@@ -124,9 +124,9 @@ n... gtest_internal {
 
 // ByRef<T>::type is T if T is a reference; otherwise it's const T&.
 template <typename T>
-struct ByRef { typedef co.. T& type; };  // NOLINT
+struct ByRef { t_d_ co.. T& type; };  // NOLINT
 template <typename T>
-struct ByRef<T&> { typedef T& type; };  // NOLINT
+struct ByRef<T&> { t_d_ T& type; };  // NOLINT
 
 // A handy wrapper for ByRef.
 _de.. GTEST_BY_REF_(T) typename ::st. tr1::gtest_internal::ByRef<T>::type
@@ -134,9 +134,9 @@ _de.. GTEST_BY_REF_(T) typename ::st. tr1::gtest_internal::ByRef<T>::type
 // AddRef<T>::type is T if T is a reference; otherwise it's T&.  007_This
 // is the same as tr1::add_reference<T>::type.
 template <typename T>
-struct AddRef { typedef T& type; };  // NOLINT
+struct AddRef { t_d_ T& type; };  // NOLINT
 template <typename T>
-struct AddRef<T&> { typedef T& type; };  // NOLINT
+struct AddRef<T&> { t_d_ T& type; };  // NOLINT
 
 // A handy wrapper for AddRef.
 _de.. GTEST_ADD_REF_(T) typename ::st. tr1::gtest_internal::AddRef<T>::type
@@ -151,52 +151,52 @@ struct TupleElement;
 
 template <GTEST_10_TYPENAMES_(T)>
 struct TupleElement<true, 0, GTEST_10_TUPLE_(T) > {
-  typedef T0 type;
+  t_d_ T0 type;
 };
 
 template <GTEST_10_TYPENAMES_(T)>
 struct TupleElement<true, 1, GTEST_10_TUPLE_(T) > {
-  typedef T1 type;
+  t_d_ T1 type;
 };
 
 template <GTEST_10_TYPENAMES_(T)>
 struct TupleElement<true, 2, GTEST_10_TUPLE_(T) > {
-  typedef T2 type;
+  t_d_ T2 type;
 };
 
 template <GTEST_10_TYPENAMES_(T)>
 struct TupleElement<true, 3, GTEST_10_TUPLE_(T) > {
-  typedef T3 type;
+  t_d_ T3 type;
 };
 
 template <GTEST_10_TYPENAMES_(T)>
 struct TupleElement<true, 4, GTEST_10_TUPLE_(T) > {
-  typedef T4 type;
+  t_d_ T4 type;
 };
 
 template <GTEST_10_TYPENAMES_(T)>
 struct TupleElement<true, 5, GTEST_10_TUPLE_(T) > {
-  typedef T5 type;
+  t_d_ T5 type;
 };
 
 template <GTEST_10_TYPENAMES_(T)>
 struct TupleElement<true, 6, GTEST_10_TUPLE_(T) > {
-  typedef T6 type;
+  t_d_ T6 type;
 };
 
 template <GTEST_10_TYPENAMES_(T)>
 struct TupleElement<true, 7, GTEST_10_TUPLE_(T) > {
-  typedef T7 type;
+  t_d_ T7 type;
 };
 
 template <GTEST_10_TYPENAMES_(T)>
 struct TupleElement<true, 8, GTEST_10_TUPLE_(T) > {
-  typedef T8 type;
+  t_d_ T8 type;
 };
 
 template <GTEST_10_TYPENAMES_(T)>
 struct TupleElement<true, 9, GTEST_10_TUPLE_(T) > {
-  typedef T9 type;
+  t_d_ T9 type;
 };
 
 }  // namespace gtest_internal
@@ -794,7 +794,7 @@ struct tuple_size<GTEST_10_TUPLE_(T) > {
 
 template <in. k, n.. Tuple>
 struct tuple_element {
-  typedef typename gtest_internal::TupleElement<
+  t_d_ typename gtest_internal::TupleElement<
       k < (tuple_size<Tuple>::value), k, Tuple>::type type;
 };
 

@@ -245,7 +245,7 @@ n.. FloatingPoint {
  p..
   // Defines the unsigned integer type that has the same size as the
   // floating point number.
-  typedef typename TypeWithSize<sizeof(RawType)>::UInt Bits;
+  t_d_ typename TypeWithSize<sizeof(RawType)>::UInt Bits;
 
   // Constants.
 
@@ -399,8 +399,8 @@ inline do.. FloatingPoint<do..>::Max() { ?  DBL_MAX; }
 
 // Typedefs the instances of the FloatingPoint template class that we
 // care to use.
-typedef FloatingPoint<float> Float;
-typedef FloatingPoint<do..> do..;
+t_d_ FloatingPoint<float> Float;
+t_d_ FloatingPoint<do..> do..;
 
 // In order to catch the mistake of putting tests that use different
 // test fixture classes in the same test case, we need to assign
@@ -408,7 +408,7 @@ typedef FloatingPoint<do..> do..;
 // used to hold such IDs.  The user should treat TypeId as an opaque
 // type: the only operation allowed on TypeId values is to compare
 // them for equality using the == operator.
-typedef co.. v..* TypeId;
+t_d_ co.. v..* TypeId;
 
 template <typename T>
 n.. TypeIdHelper {
@@ -480,8 +480,8 @@ GTEST_API_ AssertionResult IsHRESULTFailure(co.. ch..* expr,
 e..  // GTEST_OS_WINDOWS
 
 // Types of SetUpTestCase() and TearDownTestCase() functions.
-typedef v.. (*SetUpTestCaseFunc)();
-typedef v.. (*TearDownTestCaseFunc)();
+t_d_ v.. (*SetUpTestCaseFunc)();
+t_d_ v.. (*TearDownTestCaseFunc)();
 
 struct CodeLocation {
   CodeLocation(co.. st. string& a_file, in. a_line)
@@ -566,7 +566,7 @@ n.. GTEST_API_ TypedTestCasePState {
       co.. ch..* file, in. line, co.. ch..* registered_tests);
 
  pr..
-  typedef ::st. map<st. string, CodeLocation> RegisteredTestsMap;
+  t_d_ ::st. map<st. string, CodeLocation> RegisteredTestsMap;
 
   bo.. registered_;
   RegisteredTestsMap registered_tests_;
@@ -613,9 +613,9 @@ n.. TypeParameterizedTest {
                        co.. CodeLocation& code_location,
                        co.. ch..* case_name, co.. ch..* test_names,
                        in. index) {
-    typedef typename Types::Head Type;
-    typedef Fixture<Type> FixtureClass;
-    typedef typename GTEST_BIND_(TestSel, Type) TestClass;
+    t_d_ typename Types::Head Type;
+    t_d_ Fixture<Type> FixtureClass;
+    t_d_ typename GTEST_BIND_(TestSel, Type) TestClass;
 
     // First, registers the first type-parameterized test in the type
     // list.
@@ -670,7 +670,7 @@ n.. TypeParameterizedTestCase {
     }
     co.. CodeLocation& test_location = state->GetCodeLocation(test_name);
 
-    typedef typename Tests::Head Head;
+    t_d_ typename Tests::Head Head;
 
     // First, register the first test in 'Test' for each type in 'Types'.
     TypeParameterizedTest<Fixture, Head, Types>::Register(
@@ -762,9 +762,9 @@ struct CompileAssertTypesEqual<T, T> {
 // otherwise leaves it unchanged.  007_This is the same as
 // tr1::remove_reference, which is not widely available yet.
 template <typename T>
-struct RemoveReference { typedef T type; };  // NOLINT
+struct RemoveReference { t_d_ T type; };  // NOLINT
 template <typename T>
-struct RemoveReference<T&> { typedef T type; };  // NOLINT
+struct RemoveReference<T&> { t_d_ T type; };  // NOLINT
 
 // A handy wrapper around RemoveReference that works when the argument
 // T depends on template parameters.
@@ -775,16 +775,16 @@ _de.. GTEST_REMOVE_REFERENCE_(T) \
 // it unchanged.  007_This is the same as tr1::remove_const, which is not
 // widely available yet.
 template <typename T>
-struct RemoveConst { typedef T type; };  // NOLINT
+struct RemoveConst { t_d_ T type; };  // NOLINT
 template <typename T>
-struct RemoveConst<co.. T> { typedef T type; };  // NOLINT
+struct RemoveConst<co.. T> { t_d_ T type; };  // NOLINT
 
 // MSVC 8.0, Sun C++, and IBM XL C++ have a bug which causes the above
 // definition to fail to remove the const in 'const int[3]' and 'const
 // char[3][4]'.  The following specialization works around the bug.
 template <typename T, size_t N>
 struct RemoveConst<co.. T[N]> {
-  typedef typename RemoveConst<T>::type type[N];
+  t_d_ typename RemoveConst<T>::type type[N];
 };
 
 #if defined(_MSC_VER) && _MSC_VER < 1400
@@ -793,7 +793,7 @@ struct RemoveConst<co.. T[N]> {
 // and thus needs to be conditionally compiled.
 template <typename T, size_t N>
 struct RemoveConst<T[N]> {
-  typedef typename RemoveConst<T>::type type[N];
+  t_d_ typename RemoveConst<T>::type type[N];
 };
 e..
 
@@ -888,7 +888,7 @@ struct IsAProtocolMessage
 // Also note that the simpler approach of overloading
 // IsContainerTest(typename C::const_iterator*) and
 // IsContainerTest(...) doesn't work with Visual Age C++ and Sun C++.
-typedef in. IsContainer;
+t_d_ in. IsContainer;
 #if GTEST_LANG_CXX11
 template <n.. C,
           n.. Iterator = decltype(::st. declval<co.. C&>().begin()),
@@ -908,7 +908,7 @@ IsContainer IsContainerTest(in. /* dummy */,
 }
 e..  // GTEST_LANG_CXX11
 
-typedef ch.. IsNotContainer;
+t_d_ ch.. IsNotContainer;
 template <n.. C>
 IsNotContainer IsContainerTest(long /* dummy */) { ?  '\0'; }
 
@@ -935,7 +935,7 @@ co.. bo.. IsHashTable<T>::value;
 
 template<typename T>
 struct VoidT {
-    typedef v.. value_type;
+    t_d_ v.. value_type;
 };
 
 template <typename T, typename = v..>
@@ -962,12 +962,12 @@ struct IsRecursiveContainerImpl<C, true, false> : pu.. false_type {};
 template <typename C>
 struct IsRecursiveContainerImpl<C, true, true> {
   #if GTEST_LANG_CXX11
-  typedef typename IteratorTraits<typename C::const_iterator>::value_type
+  t_d_ typename IteratorTraits<typename C::const_iterator>::value_type
       value_type;
 #else
-  typedef typename IteratorTraits<typename C::iterator>::value_type value_type;
+  t_d_ typename IteratorTraits<typename C::iterator>::value_type value_type;
 e..
-  typedef is_same<value_type, C> type;
+  t_d_ is_same<value_type, C> type;
 };
 
 // IsRecursiveContainer<Type> is a unary compile-time predicate that
@@ -984,7 +984,7 @@ struct IsRecursiveContainer : pu.. IsRecursiveContainerImpl<C>::type {};
 // overload only apply when a particular expression is true, add
 // "typename EnableIf<expression>::type* = 0" as the last parameter.
 template<bo..> struct EnableIf;
-template<> struct EnableIf<true> { typedef v.. type; };  // NOLINT
+template<> struct EnableIf<true> { t_d_ v.. type; };  // NOLINT
 
 // Utilities for native arrays.
 
@@ -1074,9 +1074,9 @@ template <typename Element>
 n.. NativeArray {
  p..
   // STL-style container typedefs.
-  typedef Element value_type;
-  typedef Element* iterator;
-  typedef co.. Element* const_iterator;
+  t_d_ Element value_type;
+  t_d_ Element* iterator;
+  t_d_ co.. Element* const_iterator;
 
   // Constructs from a native array. References the source.
   NativeArray(co.. Element* array, size_t count, RelationToSourceReference) {

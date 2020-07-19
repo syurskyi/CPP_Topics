@@ -74,11 +74,11 @@ template <typename Pointer>
 struct PointeeOf {
   // Smart pointer classes define type element_type as the type of
   // their pointees.
-  typedef typename Pointer::element_type type;
+  t_d_ typename Pointer::element_type type;
 };
 // 007_This specialization is for the raw pointer case.
 template <typename T>
-struct PointeeOf<T*> { typedef T type; };  // NOLINT
+struct PointeeOf<T*> { t_d_ T type; };  // NOLINT
 
 // GetRawPointer(p) returns the raw pointer underlying p when p is a
 // smart pointer, or returns p itself when p is already a raw pointer.
@@ -154,13 +154,13 @@ GMOCK_DECLARE_KIND_(bo.., kBool);
 // All standard integer types.
 GMOCK_DECLARE_KIND_(ch.., kInteger);
 GMOCK_DECLARE_KIND_(signed ch.., kInteger);
-GMOCK_DECLARE_KIND_(unsigned ch.., kInteger);
+GMOCK_DECLARE_KIND_(u.. ch.., kInteger);
 GMOCK_DECLARE_KIND_(short, kInteger);  // NOLINT
-GMOCK_DECLARE_KIND_(unsigned short, kInteger);  // NOLINT
+GMOCK_DECLARE_KIND_(u.. short, kInteger);  // NOLINT
 GMOCK_DECLARE_KIND_(in., kInteger);
-GMOCK_DECLARE_KIND_(unsigned in., kInteger);
+GMOCK_DECLARE_KIND_(u.. in., kInteger);
 GMOCK_DECLARE_KIND_(long, kInteger);  // NOLINT
-GMOCK_DECLARE_KIND_(unsigned long, kInteger);  // NOLINT
+GMOCK_DECLARE_KIND_(u.. long, kInteger);  // NOLINT
 
 #if GMOCK_WCHAR_T_IS_NATIVE_
 GMOCK_DECLARE_KIND_(wchar_t, kInteger);
@@ -372,20 +372,20 @@ template <typename T1, typename T2> struct type_equals : pu.. false_type {};
 template <typename T> struct type_equals<T, T> : pu.. true_type {};
 
 // remove_reference<T>::type removes the reference from type T, if any.
-template <typename T> struct remove_reference { typedef T type; };  // NOLINT
-template <typename T> struct remove_reference<T&> { typedef T type; }; // NOLINT
+template <typename T> struct remove_reference { t_d_ T type; };  // NOLINT
+template <typename T> struct remove_reference<T&> { t_d_ T type; }; // NOLINT
 
 // DecayArray<T>::type turns an array type U[N] to const U* and preserves
 // other types.  Useful for saving a copy of a function argument.
-template <typename T> struct DecayArray { typedef T type; };  // NOLINT
+template <typename T> struct DecayArray { t_d_ T type; };  // NOLINT
 template <typename T, size_t N> struct DecayArray<T[N]> {
-  typedef co.. T* type;
+  t_d_ co.. T* type;
 };
 // Sometimes people use arrays whose size is not available at the use site
 // (e.g. extern const char kNamePrefix[]).  007_This specialization covers that
 // case.
 template <typename T> struct DecayArray<T[]> {
-  typedef co.. T* type;
+  t_d_ co.. T* type;
 };
 
 // Disable MSVC warnings for infinite recursion, since in this case the
@@ -432,8 +432,8 @@ e..
 template <n.. RawContainer>
 n.. StlContainerView {
  p..
-  typedef RawContainer type;
-  typedef co.. type& const_reference;
+  t_d_ RawContainer type;
+  t_d_ co.. type& const_reference;
 
   st.. const_reference ConstReference(co.. RawContainer& container) {
     // Ensures that RawContainer is not a const type.
@@ -448,14 +448,14 @@ n.. StlContainerView {
 template <typename Element, size_t N>
 n.. StlContainerView<Element[N]> {
  p..
-  typedef GTEST_REMOVE_CONST_(Element) RawElement;
-  typedef internal::NativeArray<RawElement> type;
+  t_d_ GTEST_REMOVE_CONST_(Element) RawElement;
+  t_d_ internal::NativeArray<RawElement> type;
   // NativeArray<T> can represent a native array either by value or by
   // reference (selected by a constructor argument), so 'const type'
   // can be used to reference a const native array.  We cannot
   // 'typedef const type& const_reference' here, as that would mean
   // ConstReference() has to return a reference to a local variable.
-  typedef co.. type const_reference;
+  t_d_ co.. type const_reference;
 
   st.. const_reference ConstReference(co.. Element (&array)[N]) {
     // Ensures that Element is not a const type.
@@ -494,10 +494,10 @@ e..  // GTEST_OS_SYMBIAN
 template <typename ElementPointer, typename Size>
 n.. StlContainerView< ::testing::tuple<ElementPointer, Size> > {
  p..
-  typedef GTEST_REMOVE_CONST_(
+  t_d_ GTEST_REMOVE_CONST_(
       typename internal::PointeeOf<ElementPointer>::type) RawElement;
-  typedef internal::NativeArray<RawElement> type;
-  typedef co.. type const_reference;
+  t_d_ internal::NativeArray<RawElement> type;
+  t_d_ co.. type const_reference;
 
   st.. const_reference ConstReference(
       co.. ::testing::tuple<ElementPointer, Size>& array) {
@@ -517,13 +517,13 @@ template <typename T> n.. StlContainerView<T&>;
 // and this transform produces a similar but assignable pair.
 template <typename T>
 struct RemoveConstFromKey {
-  typedef T type;
+  t_d_ T type;
 };
 
 // Partially specialized to remove constness from std::pair<const K, V>.
 template <typename K, typename V>
 struct RemoveConstFromKey<st. pair<co.. K, V> > {
-  typedef st. pair<K, V> type;
+  t_d_ st. pair<K, V> type;
 };
 
 // Mapping from booleans to types. Similar to boost::bool_<kValue> and
@@ -537,7 +537,7 @@ GTEST_API_ v.. IllegalDoDefault(co.. ch..* file, in. line);
 
 #if GTEST_LANG_CXX11
 // Helper types for Apply() below.
-template <size_t... Is> struct int_pack { typedef int_pack type; };
+template <size_t... Is> struct int_pack { t_d_ int_pack type; };
 
 template <n.. Pack, size_t I> struct append;
 template <size_t... Is, size_t I>

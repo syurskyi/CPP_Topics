@@ -1,7 +1,7 @@
 ? str..
 ? |i..
 
-typedef unsigned in. uint;
+t_d_ u.. in. uint;
 
 n.. Mammal
 {

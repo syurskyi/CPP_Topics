@@ -65,8 +65,8 @@ template <typename R>
 n.. FunctionMocker<R()> : pu..
     internal::FunctionMockerBase<R()> {
  p..
-  typedef R F();
-  typedef typename internal::Function<F>::ArgumentTuple ArgumentTuple;
+  t_d_ R F();
+  t_d_ typename internal::Function<F>::ArgumentTuple ArgumentTuple;
 
   MockSpec<F> With() {
     ?  MockSpec<F>(this, ::testing::make_tuple());
@@ -85,8 +85,8 @@ template <typename R, typename A1>
 n.. FunctionMocker<R(A1)> : pu..
     internal::FunctionMockerBase<R(A1)> {
  p..
-  typedef R F(A1);
-  typedef typename internal::Function<F>::ArgumentTuple ArgumentTuple;
+  t_d_ R F(A1);
+  t_d_ typename internal::Function<F>::ArgumentTuple ArgumentTuple;
 
   MockSpec<F> With(co.. Matcher<A1>& m1) {
     ?  MockSpec<F>(this, ::testing::make_tuple(m1));
@@ -105,8 +105,8 @@ template <typename R, typename A1, typename A2>
 n.. FunctionMocker<R(A1, A2)> : pu..
     internal::FunctionMockerBase<R(A1, A2)> {
  p..
-  typedef R F(A1, A2);
-  typedef typename internal::Function<F>::ArgumentTuple ArgumentTuple;
+  t_d_ R F(A1, A2);
+  t_d_ typename internal::Function<F>::ArgumentTuple ArgumentTuple;
 
   MockSpec<F> With(co.. Matcher<A1>& m1, co.. Matcher<A2>& m2) {
     ?  MockSpec<F>(this, ::testing::make_tuple(m1, m2));
@@ -126,8 +126,8 @@ template <typename R, typename A1, typename A2, typename A3>
 n.. FunctionMocker<R(A1, A2, A3)> : pu..
     internal::FunctionMockerBase<R(A1, A2, A3)> {
  p..
-  typedef R F(A1, A2, A3);
-  typedef typename internal::Function<F>::ArgumentTuple ArgumentTuple;
+  t_d_ R F(A1, A2, A3);
+  t_d_ typename internal::Function<F>::ArgumentTuple ArgumentTuple;
 
   MockSpec<F> With(co.. Matcher<A1>& m1, co.. Matcher<A2>& m2,
       co.. Matcher<A3>& m3) {
@@ -148,8 +148,8 @@ template <typename R, typename A1, typename A2, typename A3, typename A4>
 n.. FunctionMocker<R(A1, A2, A3, A4)> : pu..
     internal::FunctionMockerBase<R(A1, A2, A3, A4)> {
  p..
-  typedef R F(A1, A2, A3, A4);
-  typedef typename internal::Function<F>::ArgumentTuple ArgumentTuple;
+  t_d_ R F(A1, A2, A3, A4);
+  t_d_ typename internal::Function<F>::ArgumentTuple ArgumentTuple;
 
   MockSpec<F> With(co.. Matcher<A1>& m1, co.. Matcher<A2>& m2,
       co.. Matcher<A3>& m3, co.. Matcher<A4>& m4) {
@@ -172,8 +172,8 @@ template <typename R, typename A1, typename A2, typename A3, typename A4,
 n.. FunctionMocker<R(A1, A2, A3, A4, A5)> : pu..
     internal::FunctionMockerBase<R(A1, A2, A3, A4, A5)> {
  p..
-  typedef R F(A1, A2, A3, A4, A5);
-  typedef typename internal::Function<F>::ArgumentTuple ArgumentTuple;
+  t_d_ R F(A1, A2, A3, A4, A5);
+  t_d_ typename internal::Function<F>::ArgumentTuple ArgumentTuple;
 
   MockSpec<F> With(co.. Matcher<A1>& m1, co.. Matcher<A2>& m2,
       co.. Matcher<A3>& m3, co.. Matcher<A4>& m4, co.. Matcher<A5>& m5) {
@@ -196,8 +196,8 @@ template <typename R, typename A1, typename A2, typename A3, typename A4,
 n.. FunctionMocker<R(A1, A2, A3, A4, A5, A6)> : pu..
     internal::FunctionMockerBase<R(A1, A2, A3, A4, A5, A6)> {
  p..
-  typedef R F(A1, A2, A3, A4, A5, A6);
-  typedef typename internal::Function<F>::ArgumentTuple ArgumentTuple;
+  t_d_ R F(A1, A2, A3, A4, A5, A6);
+  t_d_ typename internal::Function<F>::ArgumentTuple ArgumentTuple;
 
   MockSpec<F> With(co.. Matcher<A1>& m1, co.. Matcher<A2>& m2,
       co.. Matcher<A3>& m3, co.. Matcher<A4>& m4, co.. Matcher<A5>& m5,
@@ -222,8 +222,8 @@ template <typename R, typename A1, typename A2, typename A3, typename A4,
 n.. FunctionMocker<R(A1, A2, A3, A4, A5, A6, A7)> : pu..
     internal::FunctionMockerBase<R(A1, A2, A3, A4, A5, A6, A7)> {
  p..
-  typedef R F(A1, A2, A3, A4, A5, A6, A7);
-  typedef typename internal::Function<F>::ArgumentTuple ArgumentTuple;
+  t_d_ R F(A1, A2, A3, A4, A5, A6, A7);
+  t_d_ typename internal::Function<F>::ArgumentTuple ArgumentTuple;
 
   MockSpec<F> With(co.. Matcher<A1>& m1, co.. Matcher<A2>& m2,
       co.. Matcher<A3>& m3, co.. Matcher<A4>& m4, co.. Matcher<A5>& m5,
@@ -248,8 +248,8 @@ template <typename R, typename A1, typename A2, typename A3, typename A4,
 n.. FunctionMocker<R(A1, A2, A3, A4, A5, A6, A7, A8)> : pu..
     internal::FunctionMockerBase<R(A1, A2, A3, A4, A5, A6, A7, A8)> {
  p..
-  typedef R F(A1, A2, A3, A4, A5, A6, A7, A8);
-  typedef typename internal::Function<F>::ArgumentTuple ArgumentTuple;
+  t_d_ R F(A1, A2, A3, A4, A5, A6, A7, A8);
+  t_d_ typename internal::Function<F>::ArgumentTuple ArgumentTuple;
 
   MockSpec<F> With(co.. Matcher<A1>& m1, co.. Matcher<A2>& m2,
       co.. Matcher<A3>& m3, co.. Matcher<A4>& m4, co.. Matcher<A5>& m5,
@@ -276,8 +276,8 @@ template <typename R, typename A1, typename A2, typename A3, typename A4,
 n.. FunctionMocker<R(A1, A2, A3, A4, A5, A6, A7, A8, A9)> : pu..
     internal::FunctionMockerBase<R(A1, A2, A3, A4, A5, A6, A7, A8, A9)> {
  p..
-  typedef R F(A1, A2, A3, A4, A5, A6, A7, A8, A9);
-  typedef typename internal::Function<F>::ArgumentTuple ArgumentTuple;
+  t_d_ R F(A1, A2, A3, A4, A5, A6, A7, A8, A9);
+  t_d_ typename internal::Function<F>::ArgumentTuple ArgumentTuple;
 
   MockSpec<F> With(co.. Matcher<A1>& m1, co.. Matcher<A2>& m2,
       co.. Matcher<A3>& m3, co.. Matcher<A4>& m4, co.. Matcher<A5>& m5,
@@ -306,8 +306,8 @@ template <typename R, typename A1, typename A2, typename A3, typename A4,
 n.. FunctionMocker<R(A1, A2, A3, A4, A5, A6, A7, A8, A9, A10)> : pu..
     internal::FunctionMockerBase<R(A1, A2, A3, A4, A5, A6, A7, A8, A9, A10)> {
  p..
-  typedef R F(A1, A2, A3, A4, A5, A6, A7, A8, A9, A10);
-  typedef typename internal::Function<F>::ArgumentTuple ArgumentTuple;
+  t_d_ R F(A1, A2, A3, A4, A5, A6, A7, A8, A9, A10);
+  t_d_ typename internal::Function<F>::ArgumentTuple ArgumentTuple;
 
   MockSpec<F> With(co.. Matcher<A1>& m1, co.. Matcher<A2>& m2,
       co.. Matcher<A3>& m3, co.. Matcher<A4>& m4, co.. Matcher<A5>& m5,

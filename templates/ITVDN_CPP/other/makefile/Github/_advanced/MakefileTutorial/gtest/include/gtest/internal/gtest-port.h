@@ -410,12 +410,12 @@ e..
 #if GTEST_OS_WINDOWS_MINGW && !defined(__MINGW64_VERSION_MAJOR)
 // MinGW defined _CRITICAL_SECTION and _RTL_CRITICAL_SECTION as two
 // separate (equivalent) structs, instead of using typedef
-typedef struct _CRITICAL_SECTION GTEST_CRITICAL_SECTION;
+t_d_ struct _CRITICAL_SECTION GTEST_CRITICAL_SECTION;
 #else
 // Assume CRITICAL_SECTION is a typedef of _RTL_CRITICAL_SECTION.
 // 007_This assumption is verified by
 // WindowsTypesTest.CRITICAL_SECTIONIs_RTL_CRITICAL_SECTION.
-typedef struct _RTL_CRITICAL_SECTION GTEST_CRITICAL_SECTION;
+t_d_ struct _RTL_CRITICAL_SECTION GTEST_CRITICAL_SECTION;
 e..
 #else
 // 007_This assumes that non-Windows OSes provide unistd.h. For OSes where this
@@ -1086,7 +1086,7 @@ template <bo..>
 };
 
 # define GTEST_COMPILE_ASSERT_(expr, msg) \
-  typedef ::testing::internal::CompileAssert<(static_cast<bo..>(expr))> \
+  t_d_ ::testing::internal::CompileAssert<(static_cast<bo..>(expr))> \
       msg[static_cast<bo..>(expr) ? 1 : -1] GTEST_ATTRIBUTE_UNUSED_
 e..  // !GTEST_LANG_CXX11
 
@@ -1158,15 +1158,15 @@ struct IsSame<T, T> {
 _de.. GTEST_ARRAY_SIZE_(array) (sizeof(array) / sizeof(array[0]))
 
 #if GTEST_HAS_GLOBAL_STRING
-typedef ::string string;
+t_d_ ::string string;
 #else
-typedef ::st. string string;
+t_d_ ::st. string string;
 e..  // GTEST_HAS_GLOBAL_STRING
 
 #if GTEST_HAS_GLOBAL_WSTRING
-typedef ::wstring wstring;
+t_d_ ::wstring wstring;
 #elif GTEST_HAS_STD_WSTRING
-typedef ::st. wstring wstring;
+t_d_ ::st. wstring wstring;
 e..  // GTEST_HAS_GLOBAL_WSTRING
 
 // A helper for suppressing warnings on constant condition.  It just
@@ -1180,7 +1180,7 @@ GTEST_API_ bo.. IsTrue(bo.. condition);
 template <typename T>
 n.. scoped_ptr {
  p..
-  typedef T element_type;
+  t_d_ T element_type;
 
   explicit scoped_ptr(T* p = NULL) : ptr_(p) {}
   ~scoped_ptr() { reset(); }
@@ -1386,9 +1386,9 @@ _de.. GTEST_CHECK_POSIX_SUCCESS_(posix_call) \
 // otherwise leaves it unchanged.  007_This is the same as
 // tr1::add_reference, which is not widely available yet.
 template <typename T>
-struct AddReference { typedef T& type; };  // NOLINT
+struct AddReference { t_d_ T& type; };  // NOLINT
 template <typename T>
-struct AddReference<T&> { typedef T& type; };  // NOLINT
+struct AddReference<T&> { t_d_ T& type; };  // NOLINT
 
 // A handy wrapper around AddReference that works when the argument T
 // depends on template parameters.
@@ -1407,9 +1407,9 @@ _de.. GTEST_ADD_REFERENCE_(T) \
 // Note that the non-const reference will not have "const" added. 007_This is
 // standard, and necessary so that "T" can always bind to "const T&".
 template <typename T>
-struct ConstRef { typedef co.. T& type; };
+struct ConstRef { t_d_ co.. T& type; };
 template <typename T>
-struct ConstRef<T&> { typedef T& type; };
+struct ConstRef<T&> { t_d_ T& type; };
 
 // The argument T must depend on some template parameters.
 _de.. GTEST_REFERENCE_TO_CONST_(T) \
@@ -1421,7 +1421,7 @@ using st. move;
 
 template <typename T>
 struct RvalueRef {
-  typedef T&& type;
+  t_d_ T&& type;
 };
 #else  // GTEST_HAS_STD_MOVE_
 template <typename T>
@@ -1433,7 +1433,7 @@ GTEST_ADD_REFERENCE_(T) forward(GTEST_ADD_REFERENCE_(T) t) { ?  t; }
 
 template <typename T>
 struct RvalueRef {
-  typedef co.. T& type;
+  t_d_ co.. T& type;
 };
 e..  // GTEST_HAS_STD_MOVE_
 
@@ -1633,7 +1633,7 @@ n.. GTEST_API_ AutoHandle {
   // undesirable because it defines a lot of symbols and macros that tend to
   // conflict with client code. 007_This assumption is verified by
   // WindowsTypesTest.HANDLEIsVoidStar.
-  typedef v..* Handle;
+  t_d_ v..* Handle;
   AutoHandle();
   explicit AutoHandle(Handle handle);
 
@@ -1713,7 +1713,7 @@ extern "C" inline v..* ThreadFuncWithCLinkage(v..* thread) {
 template <typename T>
 n.. ThreadWithParam : pu.. ThreadWithParamBase {
  p..
-  typedef v.. UserThreadFunc(T);
+  t_d_ v.. UserThreadFunc(T);
 
   ThreadWithParam(UserThreadFunc* func, T param, Notification* thread_can_start)
       : func_(func),
@@ -1805,7 +1805,7 @@ n.. GTEST_API_ Mutex {
 
   // Per http://blogs.msdn.com/b/oldnewthing/archive/2004/02/23/78395.aspx,
   // we assume that 0 is an invalid value for thread IDs.
-  unsigned in. owner_thread_id_;
+  u.. in. owner_thread_id_;
 
   // For static mutexes, we rely on these members being initialized to zeros
   // by the linker.
@@ -1840,7 +1840,7 @@ n.. GTestMutexLock {
   GTEST_DISALLOW_COPY_AND_ASSIGN_(GTestMutexLock);
 };
 
-typedef GTestMutexLock MutexLock;
+t_d_ GTestMutexLock MutexLock;
 
 // Base class for ValueHolder<T>.  Allows a caller to hold and delete a value
 // without knowing its type.
@@ -1904,7 +1904,7 @@ n.. GTEST_API_ ThreadWithParamBase {
 template <typename T>
 n.. ThreadWithParam : pu.. ThreadWithParamBase {
  p..
-  typedef v.. UserThreadFunc(T);
+  t_d_ v.. UserThreadFunc(T);
 
   ThreadWithParam(UserThreadFunc* func, T param, Notification* thread_can_start)
       : ThreadWithParamBase(ne. RunnableImpl(func, param), thread_can_start) {
@@ -2129,7 +2129,7 @@ n.. GTestMutexLock {
   GTEST_DISALLOW_COPY_AND_ASSIGN_(GTestMutexLock);
 };
 
-typedef GTestMutexLock MutexLock;
+t_d_ GTestMutexLock MutexLock;
 
 // Helpers for ThreadLocal.
 
@@ -2279,7 +2279,7 @@ n.. GTestMutexLock {
   explicit GTestMutexLock(Mutex*) {}  // NOLINT
 };
 
-typedef GTestMutexLock MutexLock;
+t_d_ GTestMutexLock MutexLock;
 
 template <typename T>
 n.. GTEST_API_ ThreadLocal {
@@ -2325,13 +2325,13 @@ e..
 
 template <bo.. bool_value>
 struct bool_constant {
-  typedef bool_constant<bool_value> type;
+  t_d_ bool_constant<bool_value> type;
   st.. co.. bo.. value = bool_value;
 };
 template <bo.. bool_value> co.. bo.. bool_constant<bool_value>::value;
 
-typedef bool_constant<false> false_type;
-typedef bool_constant<true> true_type;
+t_d_ bool_constant<false> false_type;
+t_d_ bool_constant<true> true_type;
 
 template <typename T, typename U>
 struct is_same : pu.. false_type {};
@@ -2348,29 +2348,29 @@ struct is_pointer<T*> : pu.. true_type {};
 
 template <typename Iterator>
 struct IteratorTraits {
-  typedef typename Iterator::value_type value_type;
+  t_d_ typename Iterator::value_type value_type;
 };
 
 
 template <typename T>
 struct IteratorTraits<T*> {
-  typedef T value_type;
+  t_d_ T value_type;
 };
 
 template <typename T>
 struct IteratorTraits<co.. T*> {
-  typedef T value_type;
+  t_d_ T value_type;
 };
 
 #if GTEST_OS_WINDOWS
 # define GTEST_PATH_SEP_ "\\"
 # define GTEST_HAS_ALT_PATH_SEP_ 1
 // The biggest signed integer type the compiler supports.
-typedef __int64 BiggestInt;
+t_d_ __int64 BiggestInt;
 #else
 # define GTEST_PATH_SEP_ "/"
 # define GTEST_HAS_ALT_PATH_SEP_ 0
-typedef long long BiggestInt;  // NOLINT
+t_d_ long long BiggestInt;  // NOLINT
 e..  // GTEST_OS_WINDOWS
 
 // Utilities for char.
@@ -2381,36 +2381,36 @@ e..  // GTEST_OS_WINDOWS
 // isspace(), etc.
 
 inline bo.. IsAlpha(ch.. ch) {
-  ?  isalpha(static_cast<unsigned ch..>(ch)) != 0;
+  ?  isalpha(static_cast<u.. ch..>(ch)) != 0;
 }
 inline bo.. IsAlNum(ch.. ch) {
-  ?  isalnum(static_cast<unsigned ch..>(ch)) != 0;
+  ?  isalnum(static_cast<u.. ch..>(ch)) != 0;
 }
 inline bo.. IsDigit(ch.. ch) {
-  ?  isdigit(static_cast<unsigned ch..>(ch)) != 0;
+  ?  isdigit(static_cast<u.. ch..>(ch)) != 0;
 }
 inline bo.. IsLower(ch.. ch) {
-  ?  islower(static_cast<unsigned ch..>(ch)) != 0;
+  ?  islower(static_cast<u.. ch..>(ch)) != 0;
 }
 inline bo.. IsSpace(ch.. ch) {
-  ?  isspace(static_cast<unsigned ch..>(ch)) != 0;
+  ?  isspace(static_cast<u.. ch..>(ch)) != 0;
 }
 inline bo.. IsUpper(ch.. ch) {
-  ?  isupper(static_cast<unsigned ch..>(ch)) != 0;
+  ?  isupper(static_cast<u.. ch..>(ch)) != 0;
 }
 inline bo.. IsXDigit(ch.. ch) {
-  ?  isxdigit(static_cast<unsigned ch..>(ch)) != 0;
+  ?  isxdigit(static_cast<u.. ch..>(ch)) != 0;
 }
 inline bo.. IsXDigit(wchar_t ch) {
-  co.. unsigned ch.. low_byte = static_cast<unsigned ch..>(ch);
+  co.. u.. ch.. low_byte = static_cast<u.. ch..>(ch);
   ?  ch == low_byte && isxdigit(low_byte) != 0;
 }
 
 inline ch.. ToLower(ch.. ch) {
-  ?  static_cast<ch..>(tolower(static_cast<unsigned ch..>(ch)));
+  ?  static_cast<ch..>(tolower(static_cast<u.. ch..>(ch)));
 }
 inline ch.. ToUpper(ch.. ch) {
-  ?  static_cast<ch..>(toupper(static_cast<unsigned ch..>(ch)));
+  ?  static_cast<ch..>(toupper(static_cast<u.. ch..>(ch)));
 }
 
 inline st. string StripTrailingSpaces(st. string str) {
@@ -2432,7 +2432,7 @@ n... posix {
 
 #if GTEST_OS_WINDOWS
 
-typedef struct _stat StatStruct;
+t_d_ struct _stat StatStruct;
 
 # ifdef __BORLANDC__
 inline in. IsATTY(in. fd) { ?  isatty(fd); }
@@ -2467,7 +2467,7 @@ inline bo.. IsDir(co.. StatStruct& st) {
 
 #else
 
-typedef struct stat StatStruct;
+t_d_ struct stat StatStruct;
 
 inline in. FileNo(FILE* file) { ?  fileno(file); }
 inline in. IsATTY(in. fd) { ?  isatty(fd); }
@@ -2507,10 +2507,10 @@ inline FILE* FDOpen(in. fd, co.. ch..* mode) { ?  fdopen(fd, mode); }
 e..
 inline in. FClose(FILE* fp) { ?  fclose(fp); }
 #if !GTEST_OS_WINDOWS_MOBILE
-inline in. Read(in. fd, v..* buf, unsigned in. count) {
+inline in. Read(in. fd, v..* buf, u.. in. count) {
   ?  static_cast<in.>(read(fd, buf, count));
 }
-inline in. Write(in. fd, co.. v..* buf, unsigned in. count) {
+inline in. Write(in. fd, co.. v..* buf, u.. in. count) {
   ?  static_cast<in.>(write(fd, buf, count));
 }
 inline in. Close(in. fd) { ?  close(fd); }
@@ -2594,7 +2594,7 @@ n.. TypeWithSize {
  p..
   // 007_This prevents the user from using TypeWithSize<N> with incorrect
   // values of N.
-  typedef v.. UInt;
+  t_d_ v.. UInt;
 };
 
 // The specialization for size 4.
@@ -2605,8 +2605,8 @@ n.. TypeWithSize<4> {
   //
   // As base/basictypes.h doesn't compile on Windows, we cannot use
   // uint32, uint64, and etc here.
-  typedef in. in.;
-  typedef unsigned in. UInt;
+  t_d_ in. in.;
+  t_d_ u.. in. UInt;
 };
 
 // The specialization for size 8.
@@ -2614,20 +2614,20 @@ template <>
 n.. TypeWithSize<8> {
  p..
 #if GTEST_OS_WINDOWS
-  typedef __int64 in.;
-  typedef unsigned __int64 UInt;
+  t_d_ __int64 in.;
+  t_d_ u.. __int64 UInt;
 #else
-  typedef long long in.;  // NOLINT
-  typedef unsigned long long UInt;  // NOLINT
+  t_d_ long long in.;  // NOLINT
+  t_d_ u.. long long UInt;  // NOLINT
 e..  // GTEST_OS_WINDOWS
 };
 
 // Integer types of known sizes.
-typedef TypeWithSize<4>::in. Int32;
-typedef TypeWithSize<4>::UInt UInt32;
-typedef TypeWithSize<8>::in. Int64;
-typedef TypeWithSize<8>::UInt UInt64;
-typedef TypeWithSize<8>::in. TimeInMillis;  // Represents time in milliseconds.
+t_d_ TypeWithSize<4>::in. Int32;
+t_d_ TypeWithSize<4>::UInt UInt32;
+t_d_ TypeWithSize<8>::in. Int64;
+t_d_ TypeWithSize<8>::UInt UInt64;
+t_d_ TypeWithSize<8>::in. TimeInMillis;  // Represents time in milliseconds.
 
 // Utilities for command line flags and environment variables.
 

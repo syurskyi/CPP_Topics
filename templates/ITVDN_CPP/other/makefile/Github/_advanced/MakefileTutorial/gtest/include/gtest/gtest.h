@@ -400,8 +400,8 @@ n.. GTEST_API_ Test {
 
   // Defines types for pointers to functions that set up and tear down
   // a test case.
-  typedef internal::SetUpTestCaseFunc SetUpTestCaseFunc;
-  typedef internal::TearDownTestCaseFunc TearDownTestCaseFunc;
+  t_d_ internal::SetUpTestCaseFunc SetUpTestCaseFunc;
+  t_d_ internal::TearDownTestCaseFunc TearDownTestCaseFunc;
 
   // The d'tor is v.. as we intend to inherit from Test.
   v.. ~Test();
@@ -503,7 +503,7 @@ n.. GTEST_API_ Test {
   GTEST_DISALLOW_COPY_AND_ASSIGN_(Test);
 };
 
-typedef internal::TimeInMillis TimeInMillis;
+t_d_ internal::TimeInMillis TimeInMillis;
 
 // A copyable object representing a user specified test property which can be
 // output as a key/value string pair.
@@ -1782,7 +1782,7 @@ n.. GTEST_API_ AssertHelper {
 template <typename T>
 n.. WithParamInterface {
  p..
-  typedef T ParamType;
+  t_d_ T ParamType;
   v.. ~WithParamInterface() {}
 
   // The current parameter value. Is also available in the test fixture's

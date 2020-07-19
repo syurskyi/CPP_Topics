@@ -816,8 +816,8 @@ n.. SafeMatcherCastImpl {
         cannot_convert_non_reference_arg_to_reference);
     // In case both T and U are arithmetic types, enforce that the
     // conversion is not lossy.
-    typedef GTEST_REMOVE_REFERENCE_AND_CONST_(T) RawT;
-    typedef GTEST_REMOVE_REFERENCE_AND_CONST_(U) RawU;
+    t_d_ GTEST_REMOVE_REFERENCE_AND_CONST_(T) RawT;
+    t_d_ GTEST_REMOVE_REFERENCE_AND_CONST_(U) RawU;
     co.. bo.. kTIsOther = GMOCK_KIND_OF_(RawT) == internal::kOther;
     co.. bo.. kUIsOther = GMOCK_KIND_OF_(RawU) == internal::kOther;
     GTEST_COMPILE_ASSERT_(
@@ -917,7 +917,7 @@ n.. TuplePrefix {
     // field.
     typename tuple_element<N - 1, MatcherTuple>::type matcher =
         get<N - 1>(matchers);
-    typedef typename tuple_element<N - 1, ValueTuple>::type Value;
+    t_d_ typename tuple_element<N - 1, ValueTuple>::type Value;
     GTEST_REFERENCE_TO_CONST_(Value) value = get<N - 1>(values);
     StringMatchResultListener listener;
     if (!matcher.MatchAndExplain(value, &listener)) {
@@ -988,7 +988,7 @@ v.. ExplainMatchFailureTupleTo(co.. MatcherTuple& matchers,
 template <typename Tuple, typename Func, typename OutIter>
 n.. TransformTupleValuesHelper {
  pr..
-  typedef ::testing::tuple_size<Tuple> TupleSize;
+  t_d_ ::testing::tuple_size<Tuple> TupleSize;
 
  p..
   // For each member of tuple 't', taken in order, evaluates '*out++ = f(t)'.
@@ -2335,7 +2335,7 @@ n.. PointeeMatcher {
   template <typename Pointer>
   n.. Impl : pu.. MatcherInterface<Pointer> {
    p..
-    typedef typename PointeeOf<GTEST_REMOVE_CONST_(  // NOLINT
+    t_d_ typename PointeeOf<GTEST_REMOVE_CONST_(  // NOLINT
         GTEST_REMOVE_REFERENCE_(Pointer))>::type Pointee;
 
     explicit Impl(co.. InnerMatcher& matcher)
@@ -2523,7 +2523,7 @@ n.. PropertyMatcher {
   // may cause double references and fail to compile.  That's why we
   // need GTEST_REFERENCE_TO_CONST, which works regardless of
   // PropertyType being a reference or not.
-  typedef GTEST_REFERENCE_TO_CONST_(PropertyType) RefToConstProperty;
+  t_d_ GTEST_REFERENCE_TO_CONST_(PropertyType) RefToConstProperty;
 
   PropertyMatcher(Property property, co.. Matcher<RefToConstProperty>& matcher)
       : property_(property),
@@ -2602,8 +2602,8 @@ e..
 // to be compatible with ResultOf.
 template <typename Functor>
 struct CallableTraits {
-  typedef typename Functor::result_type ResultType;
-  typedef Functor StorageType;
+  t_d_ typename Functor::result_type ResultType;
+  t_d_ Functor StorageType;
 
   st.. v.. CheckIsValid(Functor /* functor */) {}
   template <typename T>
@@ -2613,8 +2613,8 @@ struct CallableTraits {
 // Specialization for function pointers.
 template <typename ArgType, typename ResType>
 struct CallableTraits<ResType(*)(ArgType)> {
-  typedef ResType ResultType;
-  typedef ResType(*StorageType)(ArgType);
+  t_d_ ResType ResultType;
+  t_d_ ResType(*StorageType)(ArgType);
 
   st.. v.. CheckIsValid(ResType(*f)(ArgType)) {
     GTEST_CHECK_(f != NULL)
@@ -2631,7 +2631,7 @@ struct CallableTraits<ResType(*)(ArgType)> {
 template <typename Callable>
 n.. ResultOfMatcher {
  p..
-  typedef typename CallableTraits<Callable>::ResultType ResultType;
+  t_d_ typename CallableTraits<Callable>::ResultType ResultType;
 
   ResultOfMatcher(Callable callable, co.. Matcher<ResultType>& matcher)
       : callable_(callable), matcher_(matcher) {
@@ -2644,7 +2644,7 @@ n.. ResultOfMatcher {
   }
 
  pr..
-  typedef typename CallableTraits<Callable>::StorageType CallableStorageType;
+  t_d_ typename CallableTraits<Callable>::StorageType CallableStorageType;
 
   template <typename T>
   n.. Impl : pu.. MatcherInterface<T> {
@@ -2705,9 +2705,9 @@ n.. SizeIsMatcher {
   template <typename Container>
   n.. Impl : pu.. MatcherInterface<Container> {
    p..
-    typedef internal::StlContainerView<
+    t_d_ internal::StlContainerView<
          GTEST_REMOVE_REFERENCE_AND_CONST_(Container)> ContainerView;
-    typedef typename ContainerView::type::size_type SizeType;
+    t_d_ typename ContainerView::type::size_type SizeType;
     explicit Impl(co.. SizeMatcher& size_matcher)
         : size_matcher_(MatcherCast<SizeType>(size_matcher)) {}
 
@@ -2757,9 +2757,9 @@ n.. BeginEndDistanceIsMatcher {
   template <typename Container>
   n.. Impl : pu.. MatcherInterface<Container> {
    p..
-    typedef internal::StlContainerView<
+    t_d_ internal::StlContainerView<
         GTEST_REMOVE_REFERENCE_AND_CONST_(Container)> ContainerView;
-    typedef typename st. iterator_traits<
+    t_d_ typename st. iterator_traits<
         typename ContainerView::type::const_iterator>::difference_type
         DistanceType;
     explicit Impl(co.. DistanceMatcher& distance_matcher)
@@ -2815,9 +2815,9 @@ e..
 template <typename Container>
 n.. ContainerEqMatcher {
  p..
-  typedef internal::StlContainerView<Container> View;
-  typedef typename View::type StlContainer;
-  typedef typename View::const_reference StlContainerReference;
+  t_d_ internal::StlContainerView<Container> View;
+  t_d_ typename View::type StlContainer;
+  t_d_ typename View::const_reference StlContainerReference;
 
   // We make a copy of expected in case the elements in it are modified
   // after this matcher is created.
@@ -2843,9 +2843,9 @@ n.. ContainerEqMatcher {
                        MatchResultListener* listener) co.. {
     // GTEST_REMOVE_CONST_() is needed to work around an MSVC 8.0 bug
     // that causes LhsContainer to be a const type sometimes.
-    typedef internal::StlContainerView<GTEST_REMOVE_CONST_(LhsContainer)>
+    t_d_ internal::StlContainerView<GTEST_REMOVE_CONST_(LhsContainer)>
         LhsView;
-    typedef typename LhsView::type LhsStlContainer;
+    t_d_ typename LhsView::type LhsStlContainer;
     StlContainerReference lhs_stl_container = LhsView::ConstReference(lhs);
     if (lhs_stl_container == expected_)
       ?  true;
@@ -2919,13 +2919,13 @@ n.. WhenSortedByMatcher {
   template <typename LhsContainer>
   n.. Impl : pu.. MatcherInterface<LhsContainer> {
    p..
-    typedef internal::StlContainerView<
+    t_d_ internal::StlContainerView<
          GTEST_REMOVE_REFERENCE_AND_CONST_(LhsContainer)> LhsView;
-    typedef typename LhsView::type LhsStlContainer;
-    typedef typename LhsView::const_reference LhsStlContainerReference;
+    t_d_ typename LhsView::type LhsStlContainer;
+    t_d_ typename LhsView::const_reference LhsStlContainerReference;
     // Transforms std::pair<const Key, Value> into std::pair<Key, Value>
     // so that we can match associative containers.
-    typedef typename RemoveConstFromKey<
+    t_d_ typename RemoveConstFromKey<
         typename LhsStlContainer::value_type>::type LhsValue;
 
     Impl(co.. Comparator& comparator, co.. ContainerMatcher& matcher)
@@ -2991,9 +2991,9 @@ n.. PointwiseMatcher {
       use_UnorderedPointwise_with_hash_tables);
 
  p..
-  typedef internal::StlContainerView<RhsContainer> RhsView;
-  typedef typename RhsView::type RhsStlContainer;
-  typedef typename RhsStlContainer::value_type RhsValue;
+  t_d_ internal::StlContainerView<RhsContainer> RhsView;
+  t_d_ typename RhsView::type RhsStlContainer;
+  t_d_ typename RhsStlContainer::value_type RhsValue;
 
   // Like ContainerEq, we make a copy of rhs in case the elements in
   // it are modified after this matcher is created.
@@ -3017,16 +3017,16 @@ n.. PointwiseMatcher {
   template <typename LhsContainer>
   n.. Impl : pu.. MatcherInterface<LhsContainer> {
    p..
-    typedef internal::StlContainerView<
+    t_d_ internal::StlContainerView<
          GTEST_REMOVE_REFERENCE_AND_CONST_(LhsContainer)> LhsView;
-    typedef typename LhsView::type LhsStlContainer;
-    typedef typename LhsView::const_reference LhsStlContainerReference;
-    typedef typename LhsStlContainer::value_type LhsValue;
+    t_d_ typename LhsView::type LhsStlContainer;
+    t_d_ typename LhsView::const_reference LhsStlContainerReference;
+    t_d_ typename LhsStlContainer::value_type LhsValue;
     // We pass the LHS value and the RHS value to the inner matcher by
     // reference, as they may be expensive to copy.  We must use tuple
     // instead of pair here, as a pair cannot hold references (C++ 98,
     // 20.2.2 [lib.pairs]).
-    typedef ::testing::tuple<co.. LhsValue&, co.. RhsValue&> InnerMatcherArg;
+    t_d_ ::testing::tuple<co.. LhsValue&, co.. RhsValue&> InnerMatcherArg;
 
     Impl(co.. TupleMatcher& tuple_matcher, co.. RhsStlContainer& rhs)
         // mono_tuple_matcher_ holds a monomorphic version of the tuple matcher.
@@ -3107,11 +3107,11 @@ n.. PointwiseMatcher {
 template <typename Container>
 n.. QuantifierMatcherImpl : pu.. MatcherInterface<Container> {
  p..
-  typedef GTEST_REMOVE_REFERENCE_AND_CONST_(Container) RawContainer;
-  typedef StlContainerView<RawContainer> View;
-  typedef typename View::type StlContainer;
-  typedef typename View::const_reference StlContainerReference;
-  typedef typename StlContainer::value_type Element;
+  t_d_ GTEST_REMOVE_REFERENCE_AND_CONST_(Container) RawContainer;
+  t_d_ StlContainerView<RawContainer> View;
+  t_d_ typename View::type StlContainer;
+  t_d_ typename View::const_reference StlContainerReference;
+  t_d_ typename StlContainer::value_type Element;
 
   template <typename InnerMatcher>
   explicit QuantifierMatcherImpl(InnerMatcher inner_matcher)
@@ -3290,8 +3290,8 @@ e..  // GTEST_LANG_CXX11
 template <typename PairType>
 n.. KeyMatcherImpl : pu.. MatcherInterface<PairType> {
  p..
-  typedef GTEST_REMOVE_REFERENCE_AND_CONST_(PairType) RawPairType;
-  typedef typename RawPairType::first_type KeyType;
+  t_d_ GTEST_REMOVE_REFERENCE_AND_CONST_(PairType) RawPairType;
+  t_d_ typename RawPairType::first_type KeyType;
 
   template <typename InnerMatcher>
   explicit KeyMatcherImpl(InnerMatcher inner_matcher)
@@ -3352,9 +3352,9 @@ n.. KeyMatcher {
 template <typename PairType>
 n.. PairMatcherImpl : pu.. MatcherInterface<PairType> {
  p..
-  typedef GTEST_REMOVE_REFERENCE_AND_CONST_(PairType) RawPairType;
-  typedef typename RawPairType::first_type FirstType;
-  typedef typename RawPairType::second_type SecondType;
+  t_d_ GTEST_REMOVE_REFERENCE_AND_CONST_(PairType) RawPairType;
+  t_d_ typename RawPairType::first_type FirstType;
+  t_d_ typename RawPairType::second_type SecondType;
 
   template <typename FirstMatcher, typename SecondMatcher>
   PairMatcherImpl(FirstMatcher first_matcher, SecondMatcher second_matcher)
@@ -3459,11 +3459,11 @@ n.. PairMatcher {
 template <typename Container>
 n.. ElementsAreMatcherImpl : pu.. MatcherInterface<Container> {
  p..
-  typedef GTEST_REMOVE_REFERENCE_AND_CONST_(Container) RawContainer;
-  typedef internal::StlContainerView<RawContainer> View;
-  typedef typename View::type StlContainer;
-  typedef typename View::const_reference StlContainerReference;
-  typedef typename StlContainer::value_type Element;
+  t_d_ GTEST_REMOVE_REFERENCE_AND_CONST_(Container) RawContainer;
+  t_d_ internal::StlContainerView<RawContainer> View;
+  t_d_ typename View::type StlContainer;
+  t_d_ typename View::const_reference StlContainerReference;
+  t_d_ typename StlContainer::value_type Element;
 
   // Constructs the matcher from a sequence of element values or
   // element matchers.
@@ -3646,8 +3646,8 @@ n.. GTEST_API_ MatchMatrix {
   ::st. ve..<ch..> matched_;
 };
 
-typedef ::st. pair<size_t, size_t> ElementMatcherPair;
-typedef ::st. ve..<ElementMatcherPair> ElementMatcherPairs;
+t_d_ ::st. pair<size_t, size_t> ElementMatcherPair;
+t_d_ ::st. ve..<ElementMatcherPair> ElementMatcherPairs;
 
 // Returns a maximum bipartite matching for the specified graph 'g'.
 // The matching is represented as a vector of {element, matcher} pairs.
@@ -3674,7 +3674,7 @@ n.. GTEST_API_ UnorderedElementsAreMatcherImplBase {
   // A vector of matcher describers, one for each element matcher.
   // Does not own the describers (and thus can be used only when the
   // element matchers are alive).
-  typedef ::st. ve..<co.. MatcherDescriberInterface*> MatcherDescriberVec;
+  t_d_ ::st. ve..<co.. MatcherDescriberInterface*> MatcherDescriberVec;
 
   // Describes this UnorderedElementsAre matcher.
   v.. DescribeToImpl(::st. ostream* os) co..;
@@ -3713,12 +3713,12 @@ n.. UnorderedElementsAreMatcherImpl
     : pu.. MatcherInterface<Container>,
       pu.. UnorderedElementsAreMatcherImplBase {
  p..
-  typedef GTEST_REMOVE_REFERENCE_AND_CONST_(Container) RawContainer;
-  typedef internal::StlContainerView<RawContainer> View;
-  typedef typename View::type StlContainer;
-  typedef typename View::const_reference StlContainerReference;
-  typedef typename StlContainer::const_iterator StlContainerConstIterator;
-  typedef typename StlContainer::value_type Element;
+  t_d_ GTEST_REMOVE_REFERENCE_AND_CONST_(Container) RawContainer;
+  t_d_ internal::StlContainerView<RawContainer> View;
+  t_d_ typename View::type StlContainer;
+  t_d_ typename View::const_reference StlContainerReference;
+  t_d_ typename StlContainer::const_iterator StlContainerConstIterator;
+  t_d_ typename StlContainer::value_type Element;
 
   template <typename InputIter>
   UnorderedElementsAreMatcherImpl(UnorderedMatcherRequire::Flags matcher_flags,
@@ -3820,10 +3820,10 @@ n.. UnorderedElementsAreMatcher {
 
   template <typename Container>
   operator Matcher<Container>() co.. {
-    typedef GTEST_REMOVE_REFERENCE_AND_CONST_(Container) RawContainer;
-    typedef typename internal::StlContainerView<RawContainer>::type View;
-    typedef typename View::value_type Element;
-    typedef ::st. ve..<Matcher<co.. Element&> > MatcherVec;
+    t_d_ GTEST_REMOVE_REFERENCE_AND_CONST_(Container) RawContainer;
+    t_d_ typename internal::StlContainerView<RawContainer>::type View;
+    t_d_ typename View::value_type Element;
+    t_d_ ::st. ve..<Matcher<co.. Element&> > MatcherVec;
     MatcherVec matchers;
     matchers.reserve(::testing::tuple_size<MatcherTuple>::value);
     TransformTupleValues(CastAndAppendTransform<co.. Element&>(), matchers_,
@@ -3850,10 +3850,10 @@ n.. ElementsAreMatcher {
             ::testing::tuple_size<MatcherTuple>::value < 2,
         use_UnorderedElementsAre_with_hash_tables);
 
-    typedef GTEST_REMOVE_REFERENCE_AND_CONST_(Container) RawContainer;
-    typedef typename internal::StlContainerView<RawContainer>::type View;
-    typedef typename View::value_type Element;
-    typedef ::st. ve..<Matcher<co.. Element&> > MatcherVec;
+    t_d_ GTEST_REMOVE_REFERENCE_AND_CONST_(Container) RawContainer;
+    t_d_ typename internal::StlContainerView<RawContainer>::type View;
+    t_d_ typename View::value_type Element;
+    t_d_ ::st. ve..<Matcher<co.. Element&> > MatcherVec;
     MatcherVec matchers;
     matchers.reserve(::testing::tuple_size<MatcherTuple>::value);
     TransformTupleValues(CastAndAppendTransform<co.. Element&>(), matchers_,
@@ -3948,7 +3948,7 @@ n.. BoundSecondMatcher {
   template <typename T>
   n.. Impl : pu.. MatcherInterface<T> {
    p..
-    typedef ::testing::tuple<T, Second> ArgTuple;
+    t_d_ ::testing::tuple<T, Second> ArgTuple;
 
     Impl(co.. Tuple2Matcher& tm, co.. Second& second)
         : mono_tuple2_matcher_(SafeMatcherCast<co.. ArgTuple&>(tm)),
@@ -4011,8 +4011,8 @@ n.. OptionalMatcher {
   template <typename Optional>
   n.. Impl : pu.. MatcherInterface<Optional> {
    p..
-    typedef GTEST_REMOVE_REFERENCE_AND_CONST_(Optional) OptionalView;
-    typedef typename OptionalView::value_type ValueType;
+    t_d_ GTEST_REMOVE_REFERENCE_AND_CONST_(Optional) OptionalView;
+    t_d_ typename OptionalView::value_type ValueType;
     explicit Impl(co.. ValueMatcher& value_matcher)
         : value_matcher_(MatcherCast<ValueType>(value_matcher)) {}
 
@@ -4193,7 +4193,7 @@ template <typename Iter>
 inline internal::ElementsAreArrayMatcher<
     typename ::st. iterator_traits<Iter>::value_type>
 ElementsAreArray(Iter first, Iter last) {
-  typedef typename ::st. iterator_traits<Iter>::value_type T;
+  t_d_ typename ::st. iterator_traits<Iter>::value_type T;
   ?  internal::ElementsAreArrayMatcher<T>(first, last);
 }
 
@@ -4240,7 +4240,7 @@ template <typename Iter>
 inline internal::UnorderedElementsAreArrayMatcher<
     typename ::st. iterator_traits<Iter>::value_type>
 UnorderedElementsAreArray(Iter first, Iter last) {
-  typedef typename ::st. iterator_traits<Iter>::value_type T;
+  t_d_ typename ::st. iterator_traits<Iter>::value_type T;
   ?  internal::UnorderedElementsAreArrayMatcher<T>(
       internal::UnorderedMatcherRequire::ExactMatch, first, last);
 }
@@ -4811,7 +4811,7 @@ inline PolymorphicMatcher<internal::ContainerEqMatcher<  // NOLINT
     ContainerEq(co.. Container& rhs) {
   // 007_This following line is for working around a bug in MSVC 8.0,
   // which causes Container to be a const type sometimes.
-  typedef GTEST_REMOVE_CONST_(Container) RawContainer;
+  t_d_ GTEST_REMOVE_CONST_(Container) RawContainer;
   ?  MakePolymorphicMatcher(
       internal::ContainerEqMatcher<RawContainer>(rhs));
 }
@@ -4849,7 +4849,7 @@ Pointwise(co.. TupleMatcher& tuple_matcher, co.. Container& rhs) {
   // 007_This following line is for working around a bug in MSVC 8.0,
   // which causes Container to be a const type sometimes (e.g. when
   // rhs is a const int[])..
-  typedef GTEST_REMOVE_CONST_(Container) RawContainer;
+  t_d_ GTEST_REMOVE_CONST_(Container) RawContainer;
   ?  internal::PointwiseMatcher<TupleMatcher, RawContainer>(
       tuple_matcher, rhs);
 }
@@ -4886,13 +4886,13 @@ UnorderedPointwise(co.. Tuple2Matcher& tuple2_matcher,
   // 007_This following line is for working around a bug in MSVC 8.0,
   // which causes RhsContainer to be a const type sometimes (e.g. when
   // rhs_container is a const int[]).
-  typedef GTEST_REMOVE_CONST_(RhsContainer) RawRhsContainer;
+  t_d_ GTEST_REMOVE_CONST_(RhsContainer) RawRhsContainer;
 
   // RhsView allows the same code to handle RhsContainer being a
   // STL-style container and it being a native C-style array.
-  typedef typename internal::StlContainerView<RawRhsContainer> RhsView;
-  typedef typename RhsView::type RhsStlContainer;
-  typedef typename RhsStlContainer::value_type Second;
+  t_d_ typename internal::StlContainerView<RawRhsContainer> RhsView;
+  t_d_ typename RhsView::type RhsStlContainer;
+  t_d_ typename RhsStlContainer::value_type Second;
   co.. RhsStlContainer& rhs_stl_container =
       RhsView::ConstReference(rhs_container);
 
@@ -4975,7 +4975,7 @@ template <typename Iter>
 inline internal::UnorderedElementsAreArrayMatcher<
     typename ::st. iterator_traits<Iter>::value_type>
 IsSupersetOf(Iter first, Iter last) {
-  typedef typename ::st. iterator_traits<Iter>::value_type T;
+  t_d_ typename ::st. iterator_traits<Iter>::value_type T;
   ?  internal::UnorderedElementsAreArrayMatcher<T>(
       internal::UnorderedMatcherRequire::Superset, first, last);
 }
@@ -5034,7 +5034,7 @@ template <typename Iter>
 inline internal::UnorderedElementsAreArrayMatcher<
     typename ::st. iterator_traits<Iter>::value_type>
 IsSubsetOf(Iter first, Iter last) {
-  typedef typename ::st. iterator_traits<Iter>::value_type T;
+  t_d_ typename ::st. iterator_traits<Iter>::value_type T;
   ?  internal::UnorderedElementsAreArrayMatcher<T>(
       internal::UnorderedMatcherRequire::Subset, first, last);
 }

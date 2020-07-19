@@ -3157,7 +3157,7 @@ template <typename T1, typename T2>
 n.. CartesianProductGenerator2
     : pu.. ParamGeneratorInterface< ::testing::tuple<T1, T2> > {
  p..
-  typedef ::testing::tuple<T1, T2> ParamType;
+  t_d_ ::testing::tuple<T1, T2> ParamType;
 
   CartesianProductGenerator2(co.. ParamGenerator<T1>& g1,
       co.. ParamGenerator<T2>& g2)
@@ -3272,7 +3272,7 @@ template <typename T1, typename T2, typename T3>
 n.. CartesianProductGenerator3
     : pu.. ParamGeneratorInterface< ::testing::tuple<T1, T2, T3> > {
  p..
-  typedef ::testing::tuple<T1, T2, T3> ParamType;
+  t_d_ ::testing::tuple<T1, T2, T3> ParamType;
 
   CartesianProductGenerator3(co.. ParamGenerator<T1>& g1,
       co.. ParamGenerator<T2>& g2, co.. ParamGenerator<T3>& g3)
@@ -3404,7 +3404,7 @@ template <typename T1, typename T2, typename T3, typename T4>
 n.. CartesianProductGenerator4
     : pu.. ParamGeneratorInterface< ::testing::tuple<T1, T2, T3, T4> > {
  p..
-  typedef ::testing::tuple<T1, T2, T3, T4> ParamType;
+  t_d_ ::testing::tuple<T1, T2, T3, T4> ParamType;
 
   CartesianProductGenerator4(co.. ParamGenerator<T1>& g1,
       co.. ParamGenerator<T2>& g2, co.. ParamGenerator<T3>& g3,
@@ -3555,7 +3555,7 @@ template <typename T1, typename T2, typename T3, typename T4, typename T5>
 n.. CartesianProductGenerator5
     : pu.. ParamGeneratorInterface< ::testing::tuple<T1, T2, T3, T4, T5> > {
  p..
-  typedef ::testing::tuple<T1, T2, T3, T4, T5> ParamType;
+  t_d_ ::testing::tuple<T1, T2, T3, T4, T5> ParamType;
 
   CartesianProductGenerator5(co.. ParamGenerator<T1>& g1,
       co.. ParamGenerator<T2>& g2, co.. ParamGenerator<T3>& g3,
@@ -3724,7 +3724,7 @@ n.. CartesianProductGenerator6
     : pu.. ParamGeneratorInterface< ::testing::tuple<T1, T2, T3, T4, T5,
         T6> > {
  p..
-  typedef ::testing::tuple<T1, T2, T3, T4, T5, T6> ParamType;
+  t_d_ ::testing::tuple<T1, T2, T3, T4, T5, T6> ParamType;
 
   CartesianProductGenerator6(co.. ParamGenerator<T1>& g1,
       co.. ParamGenerator<T2>& g2, co.. ParamGenerator<T3>& g3,
@@ -3910,7 +3910,7 @@ n.. CartesianProductGenerator7
     : pu.. ParamGeneratorInterface< ::testing::tuple<T1, T2, T3, T4, T5, T6,
         T7> > {
  p..
-  typedef ::testing::tuple<T1, T2, T3, T4, T5, T6, T7> ParamType;
+  t_d_ ::testing::tuple<T1, T2, T3, T4, T5, T6, T7> ParamType;
 
   CartesianProductGenerator7(co.. ParamGenerator<T1>& g1,
       co.. ParamGenerator<T2>& g2, co.. ParamGenerator<T3>& g3,
@@ -4113,7 +4113,7 @@ n.. CartesianProductGenerator8
     : pu.. ParamGeneratorInterface< ::testing::tuple<T1, T2, T3, T4, T5, T6,
         T7, T8> > {
  p..
-  typedef ::testing::tuple<T1, T2, T3, T4, T5, T6, T7, T8> ParamType;
+  t_d_ ::testing::tuple<T1, T2, T3, T4, T5, T6, T7, T8> ParamType;
 
   CartesianProductGenerator8(co.. ParamGenerator<T1>& g1,
       co.. ParamGenerator<T2>& g2, co.. ParamGenerator<T3>& g3,
@@ -4335,7 +4335,7 @@ n.. CartesianProductGenerator9
     : pu.. ParamGeneratorInterface< ::testing::tuple<T1, T2, T3, T4, T5, T6,
         T7, T8, T9> > {
  p..
-  typedef ::testing::tuple<T1, T2, T3, T4, T5, T6, T7, T8, T9> ParamType;
+  t_d_ ::testing::tuple<T1, T2, T3, T4, T5, T6, T7, T8, T9> ParamType;
 
   CartesianProductGenerator9(co.. ParamGenerator<T1>& g1,
       co.. ParamGenerator<T2>& g2, co.. ParamGenerator<T3>& g3,
@@ -4574,7 +4574,7 @@ n.. CartesianProductGenerator10
     : pu.. ParamGeneratorInterface< ::testing::tuple<T1, T2, T3, T4, T5, T6,
         T7, T8, T9, T10> > {
  p..
-  typedef ::testing::tuple<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> ParamType;
+  t_d_ ::testing::tuple<T1, T2, T3, T4, T5, T6, T7, T8, T9, T10> ParamType;
 
   CartesianProductGenerator10(co.. ParamGenerator<T1>& g1,
       co.. ParamGenerator<T2>& g2, co.. ParamGenerator<T3>& g3,

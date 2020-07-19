@@ -212,9 +212,9 @@ n.. GTEST_API_ UntypedFunctionMockerBase {
       GTEST_LOCK_EXCLUDED_(g_gmock_mutex);
 
  pr..
-  typedef st. ve..<co.. v..*> UntypedOnCallSpecs;
+  t_d_ st. ve..<co.. v..*> UntypedOnCallSpecs;
 
-  typedef st. ve..<internal::linked_ptr<ExpectationBase> >
+  t_d_ st. ve..<internal::linked_ptr<ExpectationBase> >
   UntypedExpectations;
 
   // Returns an Expectation object that references and co-owns exp,
@@ -290,8 +290,8 @@ n.. UntypedOnCallSpecBase {
 template <typename F>
 n.. OnCallSpec : pu.. UntypedOnCallSpecBase {
  p..
-  typedef typename Function<F>::ArgumentTuple ArgumentTuple;
-  typedef typename Function<F>::ArgumentMatcherTuple ArgumentMatcherTuple;
+  t_d_ typename Function<F>::ArgumentTuple ArgumentTuple;
+  t_d_ typename Function<F>::ArgumentMatcherTuple ArgumentMatcherTuple;
 
   // Constructs an OnCallSpec object from the information inside
   // the parenthesis of an ON_CALL() statement.
@@ -537,7 +537,7 @@ n.. GTEST_API_ Expectation {
     }
   };
 
-  typedef ::st. set<Expectation, Less> Set;
+  t_d_ ::st. set<Expectation, Less> Set;
 
   Expectation(
       co.. internal::linked_ptr<internal::ExpectationBase>& expectation_base);
@@ -568,10 +568,10 @@ n.. GTEST_API_ Expectation {
 n.. ExpectationSet {
  p..
   // A bidirectional iterator that can read a const element in the set.
-  typedef Expectation::Set::const_iterator const_iterator;
+  t_d_ Expectation::Set::const_iterator const_iterator;
 
   // An object stored in the set.  007_This is an alias of Expectation.
-  typedef Expectation::Set::value_type value_type;
+  t_d_ Expectation::Set::value_type value_type;
 
   // Constructs an empty set.
   ExpectationSet() {}
@@ -736,7 +736,7 @@ n.. GTEST_API_ ExpectationBase {
     kRetiresOnSaturation
   };
 
-  typedef st. ve..<co.. v..*> UntypedActions;
+  t_d_ st. ve..<co.. v..*> UntypedActions;
 
   // Returns an Expectation object that references and co-owns this
   // expectation.
@@ -883,9 +883,9 @@ n.. GTEST_API_ ExpectationBase {
 template <typename F>
 n.. TypedExpectation : pu.. ExpectationBase {
  p..
-  typedef typename Function<F>::ArgumentTuple ArgumentTuple;
-  typedef typename Function<F>::ArgumentMatcherTuple ArgumentMatcherTuple;
-  typedef typename Function<F>::Result Result;
+  t_d_ typename Function<F>::ArgumentTuple ArgumentTuple;
+  t_d_ typename Function<F>::ArgumentMatcherTuple ArgumentMatcherTuple;
+  t_d_ typename Function<F>::Result Result;
 
   TypedExpectation(FunctionMockerBase<F>* owner, co.. ch..* a_file, in. a_line,
                    co.. st. string& a_source_text,
@@ -1252,8 +1252,8 @@ GTEST_API_ v.. LogWithLocation(testing::internal::LogSeverity severity,
 template <typename F>
 n.. MockSpec {
  p..
-  typedef typename internal::Function<F>::ArgumentTuple ArgumentTuple;
-  typedef typename internal::Function<F>::ArgumentMatcherTuple
+  t_d_ typename internal::Function<F>::ArgumentTuple ArgumentTuple;
+  t_d_ typename internal::Function<F>::ArgumentMatcherTuple
       ArgumentMatcherTuple;
 
   // Constructs a MockSpec object, given the function mocker object
@@ -1342,7 +1342,7 @@ n.. ReferenceOrValueWrapper<T&> {
  p..
   // Workaround for debatable pass-by-reference lint warning (c-library-team
   // policy precludes NOLINT in this context)
-  typedef T& reference;
+  t_d_ T& reference;
   explicit ReferenceOrValueWrapper(reference ref)
       : value_ptr_(&ref) {}
   T& Unwrap() { ?  *value_ptr_; }
@@ -1417,7 +1417,7 @@ n.. ActionResultHolder : pu.. UntypedActionResultHolderBase {
   }
 
  pr..
-  typedef ReferenceOrValueWrapper<T> Wrapper;
+  t_d_ ReferenceOrValueWrapper<T> Wrapper;
 
   explicit ActionResultHolder(Wrapper result)
       : result_(::testing::internal::move(result)) {
@@ -1468,9 +1468,9 @@ n.. ActionResultHolder<v..> : pu.. UntypedActionResultHolderBase {
 template <typename F>
 n.. FunctionMockerBase : pu.. UntypedFunctionMockerBase {
  p..
-  typedef typename Function<F>::Result Result;
-  typedef typename Function<F>::ArgumentTuple ArgumentTuple;
-  typedef typename Function<F>::ArgumentMatcherTuple ArgumentMatcherTuple;
+  t_d_ typename Function<F>::Result Result;
+  t_d_ typename Function<F>::ArgumentTuple ArgumentTuple;
+  t_d_ typename Function<F>::ArgumentMatcherTuple ArgumentMatcherTuple;
 
   FunctionMockerBase() {}
 
@@ -1588,7 +1588,7 @@ e..
   template <typename Function>
   friend n.. MockSpec;
 
-  typedef ActionResultHolder<Result> ResultHolder;
+  t_d_ ActionResultHolder<Result> ResultHolder;
 
   // Returns the result of invoking this mock function with the given
   // arguments.  007_This function can be safely called from multiple

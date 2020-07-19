@@ -374,13 +374,13 @@ template <typename Result, typename ArgumentTuple, in. k1, in. k2, in. k3,
     in. k4, in. k5, in. k6, in. k7, in. k8, in. k9, in. k10>
 n.. SelectArgs {
  p..
-  typedef Result type(GMOCK_FIELD_(ArgumentTuple, k1),
+  t_d_ Result type(GMOCK_FIELD_(ArgumentTuple, k1),
       GMOCK_FIELD_(ArgumentTuple, k2), GMOCK_FIELD_(ArgumentTuple, k3),
       GMOCK_FIELD_(ArgumentTuple, k4), GMOCK_FIELD_(ArgumentTuple, k5),
       GMOCK_FIELD_(ArgumentTuple, k6), GMOCK_FIELD_(ArgumentTuple, k7),
       GMOCK_FIELD_(ArgumentTuple, k8), GMOCK_FIELD_(ArgumentTuple, k9),
       GMOCK_FIELD_(ArgumentTuple, k10));
-  typedef typename Function<type>::ArgumentTuple SelectedArgs;
+  t_d_ typename Function<type>::ArgumentTuple SelectedArgs;
   st.. SelectedArgs Select(co.. ArgumentTuple& args) {
     ?  SelectedArgs(get<k1>(args), get<k2>(args), get<k3>(args),
         get<k4>(args), get<k5>(args), get<k6>(args), get<k7>(args),
@@ -392,8 +392,8 @@ template <typename Result, typename ArgumentTuple>
 n.. SelectArgs<Result, ArgumentTuple,
                  -1, -1, -1, -1, -1, -1, -1, -1, -1, -1> {
  p..
-  typedef Result type();
-  typedef typename Function<type>::ArgumentTuple SelectedArgs;
+  t_d_ Result type();
+  t_d_ typename Function<type>::ArgumentTuple SelectedArgs;
   st.. SelectedArgs Select(co.. ArgumentTuple& /* args */) {
     ?  SelectedArgs();
   }
@@ -403,8 +403,8 @@ template <typename Result, typename ArgumentTuple, in. k1>
 n.. SelectArgs<Result, ArgumentTuple,
                  k1, -1, -1, -1, -1, -1, -1, -1, -1, -1> {
  p..
-  typedef Result type(GMOCK_FIELD_(ArgumentTuple, k1));
-  typedef typename Function<type>::ArgumentTuple SelectedArgs;
+  t_d_ Result type(GMOCK_FIELD_(ArgumentTuple, k1));
+  t_d_ typename Function<type>::ArgumentTuple SelectedArgs;
   st.. SelectedArgs Select(co.. ArgumentTuple& args) {
     ?  SelectedArgs(get<k1>(args));
   }
@@ -414,9 +414,9 @@ template <typename Result, typename ArgumentTuple, in. k1, in. k2>
 n.. SelectArgs<Result, ArgumentTuple,
                  k1, k2, -1, -1, -1, -1, -1, -1, -1, -1> {
  p..
-  typedef Result type(GMOCK_FIELD_(ArgumentTuple, k1),
+  t_d_ Result type(GMOCK_FIELD_(ArgumentTuple, k1),
       GMOCK_FIELD_(ArgumentTuple, k2));
-  typedef typename Function<type>::ArgumentTuple SelectedArgs;
+  t_d_ typename Function<type>::ArgumentTuple SelectedArgs;
   st.. SelectedArgs Select(co.. ArgumentTuple& args) {
     ?  SelectedArgs(get<k1>(args), get<k2>(args));
   }
@@ -426,9 +426,9 @@ template <typename Result, typename ArgumentTuple, in. k1, in. k2, in. k3>
 n.. SelectArgs<Result, ArgumentTuple,
                  k1, k2, k3, -1, -1, -1, -1, -1, -1, -1> {
  p..
-  typedef Result type(GMOCK_FIELD_(ArgumentTuple, k1),
+  t_d_ Result type(GMOCK_FIELD_(ArgumentTuple, k1),
       GMOCK_FIELD_(ArgumentTuple, k2), GMOCK_FIELD_(ArgumentTuple, k3));
-  typedef typename Function<type>::ArgumentTuple SelectedArgs;
+  t_d_ typename Function<type>::ArgumentTuple SelectedArgs;
   st.. SelectedArgs Select(co.. ArgumentTuple& args) {
     ?  SelectedArgs(get<k1>(args), get<k2>(args), get<k3>(args));
   }
@@ -439,10 +439,10 @@ template <typename Result, typename ArgumentTuple, in. k1, in. k2, in. k3,
 n.. SelectArgs<Result, ArgumentTuple,
                  k1, k2, k3, k4, -1, -1, -1, -1, -1, -1> {
  p..
-  typedef Result type(GMOCK_FIELD_(ArgumentTuple, k1),
+  t_d_ Result type(GMOCK_FIELD_(ArgumentTuple, k1),
       GMOCK_FIELD_(ArgumentTuple, k2), GMOCK_FIELD_(ArgumentTuple, k3),
       GMOCK_FIELD_(ArgumentTuple, k4));
-  typedef typename Function<type>::ArgumentTuple SelectedArgs;
+  t_d_ typename Function<type>::ArgumentTuple SelectedArgs;
   st.. SelectedArgs Select(co.. ArgumentTuple& args) {
     ?  SelectedArgs(get<k1>(args), get<k2>(args), get<k3>(args),
         get<k4>(args));
@@ -454,10 +454,10 @@ template <typename Result, typename ArgumentTuple, in. k1, in. k2, in. k3,
 n.. SelectArgs<Result, ArgumentTuple,
                  k1, k2, k3, k4, k5, -1, -1, -1, -1, -1> {
  p..
-  typedef Result type(GMOCK_FIELD_(ArgumentTuple, k1),
+  t_d_ Result type(GMOCK_FIELD_(ArgumentTuple, k1),
       GMOCK_FIELD_(ArgumentTuple, k2), GMOCK_FIELD_(ArgumentTuple, k3),
       GMOCK_FIELD_(ArgumentTuple, k4), GMOCK_FIELD_(ArgumentTuple, k5));
-  typedef typename Function<type>::ArgumentTuple SelectedArgs;
+  t_d_ typename Function<type>::ArgumentTuple SelectedArgs;
   st.. SelectedArgs Select(co.. ArgumentTuple& args) {
     ?  SelectedArgs(get<k1>(args), get<k2>(args), get<k3>(args),
         get<k4>(args), get<k5>(args));
@@ -469,11 +469,11 @@ template <typename Result, typename ArgumentTuple, in. k1, in. k2, in. k3,
 n.. SelectArgs<Result, ArgumentTuple,
                  k1, k2, k3, k4, k5, k6, -1, -1, -1, -1> {
  p..
-  typedef Result type(GMOCK_FIELD_(ArgumentTuple, k1),
+  t_d_ Result type(GMOCK_FIELD_(ArgumentTuple, k1),
       GMOCK_FIELD_(ArgumentTuple, k2), GMOCK_FIELD_(ArgumentTuple, k3),
       GMOCK_FIELD_(ArgumentTuple, k4), GMOCK_FIELD_(ArgumentTuple, k5),
       GMOCK_FIELD_(ArgumentTuple, k6));
-  typedef typename Function<type>::ArgumentTuple SelectedArgs;
+  t_d_ typename Function<type>::ArgumentTuple SelectedArgs;
   st.. SelectedArgs Select(co.. ArgumentTuple& args) {
     ?  SelectedArgs(get<k1>(args), get<k2>(args), get<k3>(args),
         get<k4>(args), get<k5>(args), get<k6>(args));
@@ -485,11 +485,11 @@ template <typename Result, typename ArgumentTuple, in. k1, in. k2, in. k3,
 n.. SelectArgs<Result, ArgumentTuple,
                  k1, k2, k3, k4, k5, k6, k7, -1, -1, -1> {
  p..
-  typedef Result type(GMOCK_FIELD_(ArgumentTuple, k1),
+  t_d_ Result type(GMOCK_FIELD_(ArgumentTuple, k1),
       GMOCK_FIELD_(ArgumentTuple, k2), GMOCK_FIELD_(ArgumentTuple, k3),
       GMOCK_FIELD_(ArgumentTuple, k4), GMOCK_FIELD_(ArgumentTuple, k5),
       GMOCK_FIELD_(ArgumentTuple, k6), GMOCK_FIELD_(ArgumentTuple, k7));
-  typedef typename Function<type>::ArgumentTuple SelectedArgs;
+  t_d_ typename Function<type>::ArgumentTuple SelectedArgs;
   st.. SelectedArgs Select(co.. ArgumentTuple& args) {
     ?  SelectedArgs(get<k1>(args), get<k2>(args), get<k3>(args),
         get<k4>(args), get<k5>(args), get<k6>(args), get<k7>(args));
@@ -501,12 +501,12 @@ template <typename Result, typename ArgumentTuple, in. k1, in. k2, in. k3,
 n.. SelectArgs<Result, ArgumentTuple,
                  k1, k2, k3, k4, k5, k6, k7, k8, -1, -1> {
  p..
-  typedef Result type(GMOCK_FIELD_(ArgumentTuple, k1),
+  t_d_ Result type(GMOCK_FIELD_(ArgumentTuple, k1),
       GMOCK_FIELD_(ArgumentTuple, k2), GMOCK_FIELD_(ArgumentTuple, k3),
       GMOCK_FIELD_(ArgumentTuple, k4), GMOCK_FIELD_(ArgumentTuple, k5),
       GMOCK_FIELD_(ArgumentTuple, k6), GMOCK_FIELD_(ArgumentTuple, k7),
       GMOCK_FIELD_(ArgumentTuple, k8));
-  typedef typename Function<type>::ArgumentTuple SelectedArgs;
+  t_d_ typename Function<type>::ArgumentTuple SelectedArgs;
   st.. SelectedArgs Select(co.. ArgumentTuple& args) {
     ?  SelectedArgs(get<k1>(args), get<k2>(args), get<k3>(args),
         get<k4>(args), get<k5>(args), get<k6>(args), get<k7>(args),
@@ -519,12 +519,12 @@ template <typename Result, typename ArgumentTuple, in. k1, in. k2, in. k3,
 n.. SelectArgs<Result, ArgumentTuple,
                  k1, k2, k3, k4, k5, k6, k7, k8, k9, -1> {
  p..
-  typedef Result type(GMOCK_FIELD_(ArgumentTuple, k1),
+  t_d_ Result type(GMOCK_FIELD_(ArgumentTuple, k1),
       GMOCK_FIELD_(ArgumentTuple, k2), GMOCK_FIELD_(ArgumentTuple, k3),
       GMOCK_FIELD_(ArgumentTuple, k4), GMOCK_FIELD_(ArgumentTuple, k5),
       GMOCK_FIELD_(ArgumentTuple, k6), GMOCK_FIELD_(ArgumentTuple, k7),
       GMOCK_FIELD_(ArgumentTuple, k8), GMOCK_FIELD_(ArgumentTuple, k9));
-  typedef typename Function<type>::ArgumentTuple SelectedArgs;
+  t_d_ typename Function<type>::ArgumentTuple SelectedArgs;
   st.. SelectedArgs Select(co.. ArgumentTuple& args) {
     ?  SelectedArgs(get<k1>(args), get<k2>(args), get<k3>(args),
         get<k4>(args), get<k5>(args), get<k6>(args), get<k7>(args),
@@ -549,8 +549,8 @@ n.. WithArgsAction {
   template <typename F>
   n.. Impl : pu.. ActionInterface<F> {
    p..
-    typedef typename Function<F>::Result Result;
-    typedef typename Function<F>::ArgumentTuple ArgumentTuple;
+    t_d_ typename Function<F>::Result Result;
+    t_d_ typename Function<F>::ArgumentTuple ArgumentTuple;
 
     explicit Impl(co.. InnerAction& action) : action_(action) {}
 
@@ -560,7 +560,7 @@ n.. WithArgsAction {
     }
 
    pr..
-    typedef typename SelectArgs<Result, ArgumentTuple,
+    t_d_ typename SelectArgs<Result, ArgumentTuple,
         k1, k2, k3, k4, k5, k6, k7, k8, k9, k10>::type InnerFunctionType;
 
     Action<InnerFunctionType> action_;
@@ -1369,9 +1369,9 @@ _de.. ACTION_TEMPLATE(name, template_params, value_params)\
     template <typename F>\
     n.. gmock_Impl : pu.. ::testing::ActionInterface<F> {\
      p..\
-      typedef F function_type;\
-      typedef typename ::testing::internal::Function<F>::Result return_type;\
-      typedef typename ::testing::internal::Function<F>::ArgumentTuple\
+      t_d_ F function_type;\
+      t_d_ typename ::testing::internal::Function<F>::Result return_type;\
+      t_d_ typename ::testing::internal::Function<F>::ArgumentTuple\
           args_type;\
       explicit gmock_Impl GMOCK_INTERNAL_INIT_##value_params {}\
       v.. return_type Perform(co.. args_type& args) {\
@@ -1430,9 +1430,9 @@ _de.. ACTION(name)\
     template <typename F>\
     n.. gmock_Impl : pu.. ::testing::ActionInterface<F> {\
      p..\
-      typedef F function_type;\
-      typedef typename ::testing::internal::Function<F>::Result return_type;\
-      typedef typename ::testing::internal::Function<F>::ArgumentTuple\
+      t_d_ F function_type;\
+      t_d_ typename ::testing::internal::Function<F>::Result return_type;\
+      t_d_ typename ::testing::internal::Function<F>::ArgumentTuple\
           args_type;\
       gmock_Impl() {}\
       v.. return_type Perform(co.. args_type& args) {\
@@ -1477,9 +1477,9 @@ _de.. ACTION_P(name, p0)\
     template <typename F>\
     n.. gmock_Impl : pu.. ::testing::ActionInterface<F> {\
      p..\
-      typedef F function_type;\
-      typedef typename ::testing::internal::Function<F>::Result return_type;\
-      typedef typename ::testing::internal::Function<F>::ArgumentTuple\
+      t_d_ F function_type;\
+      t_d_ typename ::testing::internal::Function<F>::Result return_type;\
+      t_d_ typename ::testing::internal::Function<F>::ArgumentTuple\
           args_type;\
       explicit gmock_Impl(p0##_type gmock_p0) : \
           p0(::testing::internal::forward<p0##_type>(gmock_p0)) {}\
@@ -1530,9 +1530,9 @@ _de.. ACTION_P2(name, p0, p1)\
     template <typename F>\
     n.. gmock_Impl : pu.. ::testing::ActionInterface<F> {\
      p..\
-      typedef F function_type;\
-      typedef typename ::testing::internal::Function<F>::Result return_type;\
-      typedef typename ::testing::internal::Function<F>::ArgumentTuple\
+      t_d_ F function_type;\
+      t_d_ typename ::testing::internal::Function<F>::Result return_type;\
+      t_d_ typename ::testing::internal::Function<F>::ArgumentTuple\
           args_type;\
       gmock_Impl(p0##_type gmock_p0, \
           p1##_type gmock_p1) : p0(::testing::internal::forward<p0##_type>(gmock_p0)), \
@@ -1588,9 +1588,9 @@ _de.. ACTION_P3(name, p0, p1, p2)\
     template <typename F>\
     n.. gmock_Impl : pu.. ::testing::ActionInterface<F> {\
      p..\
-      typedef F function_type;\
-      typedef typename ::testing::internal::Function<F>::Result return_type;\
-      typedef typename ::testing::internal::Function<F>::ArgumentTuple\
+      t_d_ F function_type;\
+      t_d_ typename ::testing::internal::Function<F>::Result return_type;\
+      t_d_ typename ::testing::internal::Function<F>::ArgumentTuple\
           args_type;\
       gmock_Impl(p0##_type gmock_p0, p1##_type gmock_p1, \
           p2##_type gmock_p2) : p0(::testing::internal::forward<p0##_type>(gmock_p0)), \
@@ -1653,9 +1653,9 @@ _de.. ACTION_P4(name, p0, p1, p2, p3)\
     template <typename F>\
     n.. gmock_Impl : pu.. ::testing::ActionInterface<F> {\
      p..\
-      typedef F function_type;\
-      typedef typename ::testing::internal::Function<F>::Result return_type;\
-      typedef typename ::testing::internal::Function<F>::ArgumentTuple\
+      t_d_ F function_type;\
+      t_d_ typename ::testing::internal::Function<F>::Result return_type;\
+      t_d_ typename ::testing::internal::Function<F>::ArgumentTuple\
           args_type;\
       gmock_Impl(p0##_type gmock_p0, p1##_type gmock_p1, p2##_type gmock_p2, \
           p3##_type gmock_p3) : p0(::testing::internal::forward<p0##_type>(gmock_p0)), \
@@ -1726,9 +1726,9 @@ _de.. ACTION_P5(name, p0, p1, p2, p3, p4)\
     template <typename F>\
     n.. gmock_Impl : pu.. ::testing::ActionInterface<F> {\
      p..\
-      typedef F function_type;\
-      typedef typename ::testing::internal::Function<F>::Result return_type;\
-      typedef typename ::testing::internal::Function<F>::ArgumentTuple\
+      t_d_ F function_type;\
+      t_d_ typename ::testing::internal::Function<F>::Result return_type;\
+      t_d_ typename ::testing::internal::Function<F>::ArgumentTuple\
           args_type;\
       gmock_Impl(p0##_type gmock_p0, p1##_type gmock_p1, p2##_type gmock_p2, \
           p3##_type gmock_p3, \
@@ -1804,9 +1804,9 @@ _de.. ACTION_P6(name, p0, p1, p2, p3, p4, p5)\
     template <typename F>\
     n.. gmock_Impl : pu.. ::testing::ActionInterface<F> {\
      p..\
-      typedef F function_type;\
-      typedef typename ::testing::internal::Function<F>::Result return_type;\
-      typedef typename ::testing::internal::Function<F>::ArgumentTuple\
+      t_d_ F function_type;\
+      t_d_ typename ::testing::internal::Function<F>::Result return_type;\
+      t_d_ typename ::testing::internal::Function<F>::ArgumentTuple\
           args_type;\
       gmock_Impl(p0##_type gmock_p0, p1##_type gmock_p1, p2##_type gmock_p2, \
           p3##_type gmock_p3, p4##_type gmock_p4, \
@@ -1888,9 +1888,9 @@ _de.. ACTION_P7(name, p0, p1, p2, p3, p4, p5, p6)\
     template <typename F>\
     n.. gmock_Impl : pu.. ::testing::ActionInterface<F> {\
      p..\
-      typedef F function_type;\
-      typedef typename ::testing::internal::Function<F>::Result return_type;\
-      typedef typename ::testing::internal::Function<F>::ArgumentTuple\
+      t_d_ F function_type;\
+      t_d_ typename ::testing::internal::Function<F>::Result return_type;\
+      t_d_ typename ::testing::internal::Function<F>::ArgumentTuple\
           args_type;\
       gmock_Impl(p0##_type gmock_p0, p1##_type gmock_p1, p2##_type gmock_p2, \
           p3##_type gmock_p3, p4##_type gmock_p4, p5##_type gmock_p5, \
@@ -1980,9 +1980,9 @@ _de.. ACTION_P8(name, p0, p1, p2, p3, p4, p5, p6, p7)\
     template <typename F>\
     n.. gmock_Impl : pu.. ::testing::ActionInterface<F> {\
      p..\
-      typedef F function_type;\
-      typedef typename ::testing::internal::Function<F>::Result return_type;\
-      typedef typename ::testing::internal::Function<F>::ArgumentTuple\
+      t_d_ F function_type;\
+      t_d_ typename ::testing::internal::Function<F>::Result return_type;\
+      t_d_ typename ::testing::internal::Function<F>::ArgumentTuple\
           args_type;\
       gmock_Impl(p0##_type gmock_p0, p1##_type gmock_p1, p2##_type gmock_p2, \
           p3##_type gmock_p3, p4##_type gmock_p4, p5##_type gmock_p5, \
@@ -2079,9 +2079,9 @@ _de.. ACTION_P9(name, p0, p1, p2, p3, p4, p5, p6, p7, p8)\
     template <typename F>\
     n.. gmock_Impl : pu.. ::testing::ActionInterface<F> {\
      p..\
-      typedef F function_type;\
-      typedef typename ::testing::internal::Function<F>::Result return_type;\
-      typedef typename ::testing::internal::Function<F>::ArgumentTuple\
+      t_d_ F function_type;\
+      t_d_ typename ::testing::internal::Function<F>::Result return_type;\
+      t_d_ typename ::testing::internal::Function<F>::ArgumentTuple\
           args_type;\
       gmock_Impl(p0##_type gmock_p0, p1##_type gmock_p1, p2##_type gmock_p2, \
           p3##_type gmock_p3, p4##_type gmock_p4, p5##_type gmock_p5, \
@@ -2185,9 +2185,9 @@ _de.. ACTION_P10(name, p0, p1, p2, p3, p4, p5, p6, p7, p8, p9)\
     template <typename F>\
     n.. gmock_Impl : pu.. ::testing::ActionInterface<F> {\
      p..\
-      typedef F function_type;\
-      typedef typename ::testing::internal::Function<F>::Result return_type;\
-      typedef typename ::testing::internal::Function<F>::ArgumentTuple\
+      t_d_ F function_type;\
+      t_d_ typename ::testing::internal::Function<F>::Result return_type;\
+      t_d_ typename ::testing::internal::Function<F>::ArgumentTuple\
           args_type;\
       gmock_Impl(p0##_type gmock_p0, p1##_type gmock_p1, p2##_type gmock_p2, \
           p3##_type gmock_p3, p4##_type gmock_p4, p5##_type gmock_p5, \

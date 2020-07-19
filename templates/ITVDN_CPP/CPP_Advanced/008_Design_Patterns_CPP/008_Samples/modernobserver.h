@@ -9,7 +9,7 @@ _de.. MODERNOBSERVER_H
 n.. ModernObserver
 {
 p..
-    typedef st. function< v..( in. ) > UpdateDelegate;
+    t_d_ st. function< v..( in. ) > UpdateDelegate;
     ModernObserver( UpdateDelegate updateDelegate );
 
     ~ModernObserver() = de..
