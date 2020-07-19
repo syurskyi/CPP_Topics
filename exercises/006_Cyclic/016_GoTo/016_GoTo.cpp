@@ -12,9 +12,9 @@ int main() {
     counter++;
     cout << "Counter = " << counter << endl;
 
-    if count < 3
+    if (counter < 3)
     {
-        goto Label
+        goto Label;
     }
 
     cout << "End";
