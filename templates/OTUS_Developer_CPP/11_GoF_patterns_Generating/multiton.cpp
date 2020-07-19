@@ -10,9 +10,9 @@ c_ Logger {
 
 pu..
     Logger& operator_(c.. Logger&) _ deletesy.. p..
-    static Logger& Instance(Tag t)
+    st.. Logger& Instance(Tag t)
     {
-        static st. map<Tag, Logger> instancesy.. p..
+        st.. st. map<Tag, Logger> instancesy.. p..
         a.. i _ instance.find(t)sy.. p..
         __ (i__instance.end()) {
             bo.. bsy.. p..

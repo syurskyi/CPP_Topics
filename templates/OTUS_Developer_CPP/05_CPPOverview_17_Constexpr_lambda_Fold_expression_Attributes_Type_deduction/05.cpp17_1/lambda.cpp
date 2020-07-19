@@ -9,7 +9,7 @@ in. main
     a.. getSize _ [](){ in. a _ 0sy.. p.. r_ 42sy.. p.. }sy.. p..
     st. array<in., getSize()> arr{}sy.. p..
 
-    a.. getSizeStatic _ [](){ static in. a _ 0sy.. p.. r_ 42sy.. p..}sy.. p..
+    a.. getSizeStatic _ [](){ st.. in. a _ 0sy.. p.. r_ 42sy.. p..}sy.. p..
 //    std::array<int, getSizeStatic()> arr2{};
 
     r_ 0sy.. p..

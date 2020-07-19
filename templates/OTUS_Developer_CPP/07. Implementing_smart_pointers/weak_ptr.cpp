@@ -4,7 +4,7 @@
 
 
 a.. null_factory
-    static st. weak_ptr<FILE> cachesy.. p..
+    st.. st. weak_ptr<FILE> cachesy.. p..
     a.. spt _ cache.lock()sy.. p..
     __ (spt) {
         st. c__ __  "hit" __  st. e..

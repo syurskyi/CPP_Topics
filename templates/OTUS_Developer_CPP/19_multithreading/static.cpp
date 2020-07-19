@@ -2,7 +2,7 @@
 
 v.. foo()
 {
-    static st. s.. hw{"Hello, World!"}sy.. p..
+    st.. st. s.. hw{"Hello, World!"}sy.. p..
 }sy.. p..
 
 bo.. hw_guardsy.. p.. // = 0, = false

@@ -23,7 +23,7 @@ v.. do_work( st. promise< v.. > barrier )
 
 in. add( st. shared_future< in. >& a )
 {
-    static in. sum _ 10sy.. p..
+    st.. in. sum _ 10sy.. p..
     sum +_ a.g..
     r_ sumsy.. p..
 }

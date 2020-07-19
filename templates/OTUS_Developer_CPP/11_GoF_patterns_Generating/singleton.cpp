@@ -7,9 +7,9 @@ pu..
     Logger(c.. Logger& root) _ deletesy.. p.. // [2]
     Logger& operator_(c.. Logger&) _ deletesy.. p.. // [3]
 
-    static Logger& Instance()
+    st.. Logger& Instance()
     {
-        static Logger instancesy.. p..
+        st.. Logger instancesy.. p..
         r_ instancesy.. p..
     }
 

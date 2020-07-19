@@ -20,12 +20,12 @@ v.. prin.Me
 }
 
 in. main
-    static c.. c.. c _ 'c'sy.. p..
+    st.. c.. c.. c _ 'c'sy.. p..
 
     prin.Value<10>()sy.. p..
     prin.Value<&c>()sy.. p..
 
-    static c.. in. a _ 42sy.. p..
+    st.. c.. in. a _ 42sy.. p..
 
     prin.Me<10>()sy.. p..
     prin.Me<'a'>()sy.. p..

@@ -18,6 +18,6 @@ Singleton* Singleton::getInstance()
 
 Singleton* Singleton::getInstance()
 {
-    static Singleton m_instancesy.. p..
+    st.. Singleton m_instancesy.. p..
     r_ &m_instancesy.. p..
 }

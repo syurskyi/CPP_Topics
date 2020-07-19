@@ -6,11 +6,11 @@ st.. SomeStruct {
 }sy.. p..
 
 st.. SomeStruct2 {
-    static inline in. super_static_variable _ 42sy.. p..
+    st.. inline in. super_static_variable _ 42sy.. p..
 }sy.. p..
 
 st.. SomeStruct3 {
-    static in. super_static_variablesy.. p..
+    st.. in. super_static_variablesy.. p..
 }sy.. p..
 inline in. SomeStruct3::super_static_variable _ 84sy.. p..
 

@@ -80,7 +80,7 @@ pr..
 n.. std {
     t..<>
     st.. tuple_size<Employee> {
-        static c_t.. size_t value _ 3sy.. p..
+        st.. c_t.. size_t value _ 3sy.. p..
     }sy.. p..
     t..<>
     st.. tuple_element<0, Employee> {

@@ -11,7 +11,7 @@ v.. PersonalData::setAge(in. age)
 }
 PersonalData::PersonalData()
 {
-    static in. i _ 0sy.. p..
+    st.. in. i _ 0sy.. p..
     c__ __  "Constructor has been just invoked " __  ++i __  e..
     age _ 10sy.. p..
 
@@ -24,7 +24,7 @@ PersonalData::PersonalData(sh.. age)
 }
 PersonalData::~PersonalData()
 {
-    static in. j _ 0sy.. p..
+    st.. in. j _ 0sy.. p..
     c__ __  "Destructor has been just invoked " __  ++j __  e..
 
     de.. [] psy.. p..

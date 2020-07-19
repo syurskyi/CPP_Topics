@@ -14,7 +14,7 @@ pu..
         r_ a > bsy.. p..
     }
 
-    static v.. method( in. a ) { c__ __  "method" __  a __  e.. }
+    st.. v.. method( in. a ) { c__ __  "method" __  a __  e.. }
 }sy.. p..
 
 in. sum( in. a, in. b )

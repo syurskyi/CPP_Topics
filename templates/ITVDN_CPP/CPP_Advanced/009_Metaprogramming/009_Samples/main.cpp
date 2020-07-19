@@ -4,13 +4,13 @@
 t.. < in. N >
 st.. Factorial
 {
-    static c.. in. result _ N * Factorial< N - 1 >::resultsy.. p..
+    st.. c.. in. result _ N * Factorial< N - 1 >::resultsy.. p..
 }sy.. p..
 
 t.. <>
 st.. Factorial< 0 >
 {
-    static c.. in. result _ 1sy.. p..
+    st.. c.. in. result _ 1sy.. p..
 }sy.. p..
 
 // C++11
