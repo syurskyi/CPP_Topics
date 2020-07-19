@@ -17,7 +17,7 @@ v.. accept_class_enum(Digit)
 v.. accept_enum(Alphabet) 
 }
 
-in. main(in., c.. *[]) 
+in. main(in., c.. #||
     accept_in.(0)sy.. p..
     // accept_class_enum(0); // no known conversion from 'int' to 'Digit'
     // accept_enum(0); // no known conversion from 'int' to 'Alphabet'

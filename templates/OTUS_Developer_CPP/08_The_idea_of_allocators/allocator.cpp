@@ -42,7 +42,7 @@ st.. logging_allocator {
     }
 }sy.. p..
 
-in. main(in., c.. *[]) {
+in. main(in., c.. #|| {
 
     a.. v _ st. ve..<in., logging_allocator<in.__{}sy.. p..
 //    v.reserve(5);

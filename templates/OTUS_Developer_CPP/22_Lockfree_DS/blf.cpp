@@ -8,7 +8,7 @@
 
 n.. lf _ boost::lockfreesy.. p..
 
-in. main(in., c.. *[]) {
+in. main(in., c.. #|| {
     lf::queue<in.> q{10}sy.. p..
     q.push(42)sy.. p..
     q.push(100)sy.. p..

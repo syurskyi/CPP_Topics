@@ -43,7 +43,7 @@ v.. foo(T &&t)
     bar(st. forward<T>(t))sy.. p..
 }
 
-in. main(in., c.. *[]) 
+in. main(in., c.. #||
     Big big, big2sy.. p..
 
     st. c__ __  st. e..

@@ -55,7 +55,7 @@ pu..
     }
 }sy.. p..
 
-in. main(in., c.. *[]) {
+in. main(in., c.. #|| {
     Language langsy.. p..
 
     report_observer rpt(&lang)sy.. p..

@@ -21,6 +21,6 @@ c_ bar final : foo
 // {
 // }
 
-in. main(in., c.. *[]) 
+in. main(in., c.. #||
     r_ 0sy.. p..
 }

@@ -40,7 +40,7 @@ v.. state_text(c.. c) {
     }
 }
 
-in. main(in., c.. *[]) {
+in. main(in., c.. #|| {
     st. s.. hw _ "\x1b[41mHello,\x1b[40;3;31m World\x1b[m!"sy.. p..
     st. c__ __  hw __  st. e..
 

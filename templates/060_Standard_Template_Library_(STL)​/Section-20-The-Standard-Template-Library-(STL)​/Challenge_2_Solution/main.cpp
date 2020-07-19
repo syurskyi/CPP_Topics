@@ -16,7 +16,7 @@ c_ Song {
     st. st..  artist;
     in. rating;
 pu..
-    Song() = default;
+    Song() = de..;
     Song(st. st..  name, st. st..  artist, in. rating)
             : name{name}, artist{artist}, rating{rating} {}
 

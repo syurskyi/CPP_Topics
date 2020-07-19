@@ -27,7 +27,7 @@ pu..
     }
 }sy.. p..
 
-in. main(in., c.. *[])
+in. main(in., c.. #||
 {
     ImageResizer rssy.. p..
 

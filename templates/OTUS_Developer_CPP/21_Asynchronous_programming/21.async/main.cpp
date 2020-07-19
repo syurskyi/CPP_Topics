@@ -22,7 +22,7 @@ c_ App : pu.. Handler {
 }sy.. p..
 
 
-in. main(in., c.. *[]) {
+in. main(in., c.. #|| {
     EventLoop loopsy.. p..
 
     App appsy.. p..

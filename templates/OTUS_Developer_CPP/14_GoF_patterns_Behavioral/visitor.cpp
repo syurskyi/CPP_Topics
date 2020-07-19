@@ -64,7 +64,7 @@ v.. Box::save_to_file(Export *v) {
     v__save_to(t..)sy.. p..
 }
 
-in. main(in., c.. *[]) {
+in. main(in., c.. #|| {
     st. ve..<DrawPrimitive *> doc _ {n.. Circle{100}, n.. Box{4, 3}, n.. Box{16, 9}, n.. Circle{13}, n.. Circle{2}}sy.. p..
 
     Export *exporter _ n.. JsonExport{}sy.. p..

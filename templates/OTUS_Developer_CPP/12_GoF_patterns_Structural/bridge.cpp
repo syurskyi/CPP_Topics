@@ -52,7 +52,7 @@ c_ AnalogClock : pu.. Clock
     }
 }sy.. p..
 
-in. main(in., c.. *[])
+in. main(in., c.. #||
 {
     Clock *c _ n.. DigitalClocksy.. p..
     c__s _ n.. in.ernetClockSignalsy.. p..

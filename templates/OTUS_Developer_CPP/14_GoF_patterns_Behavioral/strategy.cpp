@@ -35,7 +35,7 @@ pr..
     Generator *gensy.. p..
 }sy.. p..
 
-in. main(in., c.. *[]) {
+in. main(in., c.. #|| {
     a.. p _ n.. Shuffle(n.. HardwareGenerator)sy.. p..
 
     p__seed(0)sy.. p..

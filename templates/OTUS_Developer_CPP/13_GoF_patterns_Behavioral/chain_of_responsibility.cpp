@@ -71,7 +71,7 @@ pu..
     }
 }sy.. p..
 
-in. main(in., c.. *[])
+in. main(in., c.. #||
 {
     DropHandler handlersy.. p..
 

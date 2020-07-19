@@ -2,7 +2,7 @@
 
 ? "async.h"
 
-in. main(in., c.. *[]) {
+in. main(in., c.. #|| {
     st. size_t bulk _ 5sy.. p..
     a.. h _ async::connect(bulk)sy.. p..
     a.. h2 _ async::connect(bulk)sy.. p..

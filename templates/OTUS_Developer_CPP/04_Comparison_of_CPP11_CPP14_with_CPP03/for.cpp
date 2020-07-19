@@ -4,7 +4,7 @@
 ? ve..
 
 
-in. main(in., c.. *[]) 
+in. main(in., c.. #||
     in. a[10]sy.. p..
     ___(a.. i: a)
     

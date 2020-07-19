@@ -10,7 +10,7 @@ c_ Person {
     st. st..  name;
     in. age;
 pu..
-    Person() = default;
+    Person() = de..;
     Person(st. st..  name, in. age)
         : name{name}, age{age}  {}
     b.. operator<(co.. Person &rhs) co.. {

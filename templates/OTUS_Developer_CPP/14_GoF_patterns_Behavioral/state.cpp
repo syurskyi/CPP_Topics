@@ -74,7 +74,7 @@ Application::Application
     st. c__ __  st. e..
 }
 
-in. main(in., c.. *[]) {
+in. main(in., c.. #|| {
     Application appsy.. p..
 
     app.do_it()sy.. p..

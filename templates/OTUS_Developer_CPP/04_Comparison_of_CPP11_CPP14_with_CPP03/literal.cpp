@@ -20,7 +20,7 @@ st. s.. operator""_english(c.. c.. *, size_t)
     r_ "sorok dva"sy.. p..
 }
 
-in. main(in., c.. *[]) 
+in. main(in., c.. #||
     a.. a _ 42_kgsy.. p..
     st. c__ __  a __  st. e..
 

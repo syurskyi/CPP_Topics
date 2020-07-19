@@ -6,7 +6,7 @@ pu..
 	/*Test() :m_Val{ 0 } {
 		
 	}*/
-	Test() = default;
+	Test() = de..;
 	Test(in. x) :m_Val{ x } {
 
 	}

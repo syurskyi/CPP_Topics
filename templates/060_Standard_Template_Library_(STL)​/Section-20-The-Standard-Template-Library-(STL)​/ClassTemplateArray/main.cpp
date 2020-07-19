@@ -23,7 +23,7 @@ c_ Array {
         r_ os;
     }
 pu..
-    Array() = default;
+    Array() = de..;
     Array(T init_val) {
         ___ (a.. &item: values)
             item = init_val;

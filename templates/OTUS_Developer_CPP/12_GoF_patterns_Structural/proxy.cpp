@@ -41,7 +41,7 @@ pu..
     }
 }sy.. p..
 
-in. main(in., c.. *[])
+in. main(in., c.. #||
 {
     ILogger *l _ n.. LevelLogger(0, n.. Logger)sy.. p..
 

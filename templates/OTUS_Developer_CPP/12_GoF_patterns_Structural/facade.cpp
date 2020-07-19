@@ -53,7 +53,7 @@ pu..
     }sy.. p..
 }sy.. p..
 
-in. main(in., c.. *[])
+in. main(in., c.. #||
 {
     Register rsy.. p..
 

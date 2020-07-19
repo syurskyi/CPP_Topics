@@ -30,7 +30,7 @@ pu..
     ZipFile(File *file_) : file(file_) {}sy.. p..
 }sy.. p..
 
-in. main(in., c.. *[])
+in. main(in., c.. #||
 {
     File *c _ n.. RawFilesy.. p..
     c__write()sy.. p..

@@ -48,7 +48,7 @@ Directory* subdir()
     r_ dsy.. p..
 }
 
-in. main(in., c.. *[])
+in. main(in., c.. #||
 {
     Directory* root _ n.. Directorysy.. p..
     root__add_object(subdir())sy.. p..

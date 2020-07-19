@@ -51,7 +51,7 @@ c_ in.ernalReport : pu.. Report {
     }
 }sy.. p..
 
-in. main(in., c.. *[]) {
+in. main(in., c.. #|| {
     PublicReport public_report{}sy.. p..
     public_report.report()sy.. p..
 

@@ -71,7 +71,7 @@ c_ PostgresDatabase : pu.. IDatabase
     }
 }sy.. p..
 
-in. main(in., c.. *[])
+in. main(in., c.. #||
 {
     IDatabase *db _ n.. PostgresDatabase{}sy.. p..
 
