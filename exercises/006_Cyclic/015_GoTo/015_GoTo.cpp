@@ -1,20 +1,20 @@
-//? *s..
-//? |i..
-//
-//u.. s..
-//
-//in. main
-//
-//
-//	c__ __  "Start program!" __  e..
-//
-//	____ ?
-//
-//	c__ __  "Some instruction..." __  e..
-//
-//label:
-//	c__ __  "End program!" __  e..
-//
-//	c__.g..
-//	r_ _
-//
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+
+	cout <<  "Start program!" <<  endl;
+
+	goto label;
+
+	cout <<  "Some instruction..." <<  endl;
+
+label:
+	cout <<  "End program!" <<  endl;
+
+	cin.get();
+	return 0;
+
