@@ -1,25 +1,25 @@
-/*
- * Person.cpp
- *
- *  Created on: 12 Jul 2014
- *      Author: johnwpurcell
- */
-
-? "Person.h"
-? <sstream>
-
-
-
-st..  Person::toString
-	stringstream ss;
-
-	ss __ "Name: ";
-	ss __ name;
-	ss __ "; age: ";
-	ss __ age;
-
-	r_ ss.str();
-}
-
-
-
+///*
+// * Person.cpp
+// *
+// *  Created on: 12 Jul 2020
+// *      Author: syurskyi
+// */
+//
+//? "P..
+//? <sstream>
+//
+//
+//
+//st..  Person toString
+//	stringstream ss
+//
+//	? __ "Name: "
+//	? __ name
+//	? __ "; age: "
+//	? __ age
+//
+//	r_ ?.st.
+//
+//
+//
+//
