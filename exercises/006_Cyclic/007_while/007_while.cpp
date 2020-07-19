@@ -1,21 +1,21 @@
-//
-//? *s..
-//? |i..
-//
-//u.. s..
-//
-//in. main
-//
-//	in. count _ 5
-//
-//
-//	w___ ? > 0
-//
-//		c__ __  "Count = "__  ? __  e..
-//		?##
-//
-//
-//	c__ __  "007_This line is always executed"
-//
-//	c__.g..
-//	r_ _
+
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int count = 5;
+
+
+    while (count > 0) {
+        cout << "Count = " << count << endl;
+        count--;
+    }
+
+    cout << "007_This line is always executed";
+
+    cin.get();
+    return 0;
+
+}
