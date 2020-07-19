@@ -1,34 +1,33 @@
-﻿//? *s..
-//? |i..
-//
-//u.. s..
-//
-//in. main
-//
-//	setlocale(LC_CTYPE, "rus")
-//
-//	in. number _ 0;	// исло, факториал которого необходимо получить
-//	in. factorial _ 1	// акториал
-//
-//	c__ __  "Enter number: "
-//	c__ __ n..
-//
-//	c__ __  "factorial of a number: " __  n.. __  "! = "
-//
-//	__
-//
-//		__ n.. __ 0
-//
-//			f.. _ 1
-//			b..
-//
-//		f.. _ f.. * n..
-//		n..
-//
-//	 w___ n.. > 0
-//
-//	c__ __  f.. __  e..
-//
-//	sy.. pause
-//	r_ _
-//
+﻿#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    setlocale(LC_CTYPE, "rus");
+
+    int number = 0;    // исло, факториал которого необходимо получить
+    int factorial = 1;    // акториал
+
+    cout << "Enter number: ";
+    cin >> number;
+
+    cout << "factorial of a number: " << number << "! = ";
+
+    do {
+        if (number == 0);
+        {
+            factorial = 1;
+            break;
+        }
+        factorial = factorial * number;
+        number--;
+    } while (number > 0);
+
+    cout << factorial << endl;
+
+    system("pause");
+    retrun
+    0;
+}
+
