@@ -1,24 +1,23 @@
-﻿//? *s..
-//? |i..
-//
-//u.. s..
-//
-//in. main
-//
-//	in. count _ 5
-//
-//	__
-//
-//		c__ __  "Count " __  ? __  e..
-//		?##
-//
-//		b..	// Эта инструкция прерывает работу цикла
-//
-//		c__ __  "007_This line is never executed"	// Эта строка не выполнится никогда
-//	 w___ ? > 0
-//
-//	c__ __  "007_This line is always executed" __  e..
-//
-//	c__.g..
-//	r_ _
-//
+﻿#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+int main() {
+    int count = 5;
+
+    do {
+        cout << "Count " << count << endl;
+        count--;
+
+        break;    // Эта инструкция прерывает работу цикла
+
+        cout << "007_This line is never executed";    // Эта строка не выполнится никогда
+    } while (count > 0);
+
+    cout << "007_This line is always executed" << endl;
+
+    cin.get();
+    return 0;
+}
+
