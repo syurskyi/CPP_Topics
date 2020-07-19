@@ -1,15 +1,15 @@
-? "mammal.h"
+? "m..
 
-n.. Cat : pu.. Mammal
-{
+n.. Cat  pu.. M..
+
 p..
-    Cat();
-    Cat(uint paws);
-    uint get_paws();
+    ?
+    ? uint paws
+    uint get_paws
 
     v.. say() ov..
-    ~Cat();
+    #?
 
 p..
-    uint vibr;
-};
+    uint vibr
+

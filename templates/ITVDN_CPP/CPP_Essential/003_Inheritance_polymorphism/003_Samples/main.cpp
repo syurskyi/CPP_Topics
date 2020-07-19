@@ -4,34 +4,34 @@
 
 u.. s..
 
-v.. foo(Mammal * m)
-{
-    m__say()sy.. pause
-}
+v.. foo M.. * m
 
-in. main()
-{
-    Cat catsy.. pause
-    cat.say()sy.. pause
+    m__say sy.. p..
 
-    Mammal *mammal _ n.. Cat()sy.. pause
-    mammal__say()sy.. pause
 
-    Mammal mamsy.. pause
+in. main
 
-    Mammal* mammals[2]sy.. pause
+    C.. cat sy.. p..
+    ?.say sy.. p..
 
-    mammals[0] _ &catsy.. pause
-    mammals[1] _ &mamsy.. pause
+    M.. #mammal _ n.. Cat() sy.. p..
+    ?__say sy.. p..
 
-    ___(in. i _ 0sy.. pause i < 2sy.. pause ###)
-    {
-        mammals[i]__say()sy.. pause
-    }
+    M.. mam sy.. p..
 
-    foo(mammal)sy.. pause
+    M..# mammals 2 sy.. p..
 
-    foo(&cat)sy.. pause
+    m.. 0 _ #cat sy.. p..
+    m.. 1 _ #mam sy.. p..
 
-    r_ 0sy.. pause
-}
+    ___(in. i _ 0sy.. p.. ? < 2 sy.. p.. ###
+
+        m.. ? __sa. sy.. p..
+
+
+    foo(m.. sy.. p..
+
+    foo #c.. sy.. p..
+
+    r_ 0 sy.. p..
+
