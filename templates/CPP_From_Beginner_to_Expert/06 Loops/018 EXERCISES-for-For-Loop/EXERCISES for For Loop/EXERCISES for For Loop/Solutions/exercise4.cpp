@@ -1,23 +1,23 @@
-? |i..
-
-u.. s..
-
-main ()
-{
-
-    in. numbersy.. p..
-    l.. d.. factorialResult _ 1sy.. p..
-
-    c__ __  "Input the number: "sy.. p..
-    c__ __ numbersy.. p..
-
-
-    ___ (in. i _ 1sy.. p.. i <_ numbersy.. p.. ###)
-    {
-        factorialResult *_ isy.. p..
-        c__ __  i __  "! = " __  factorialResult __  e..
-    }
-
-
-
-}
+//? |i..
+//
+//u.. s..
+//
+//main
+//
+//
+//    in. number sy.. p..
+//    l.. d.. factorialResult _ 1 sy.. p..
+//
+//    c__ __  "Input the number: " sy.. p..
+//    c__ __ number sy.. p..
+//
+//
+//    ___ in. i _ 1sy.. p.. i <_ n.. sy.. p.. ###
+//
+//        ? *_ i sy.. p..
+//        c__ __  ? __  "! = " __  ? __  e..
+//
+//
+//
+//
+//
