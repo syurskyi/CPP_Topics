@@ -1,23 +1,23 @@
-﻿//? *s..
-//? |i..
-//
-//u.. s..
-//
-//in. main
-//
-//	in. count _ 5
-//
-//	___ (in. i _ 0 ? < ? ###
-//
-//		c__ __  "Iteration " __  ? __  e..
-//
-//		b..	// Эта  инстукция остановит работу цикла, и предаст управление инструкцие находящейся после операторных скобок цикла
-//
-//		c__ __  "007_This line is never executed"
-//
-//
-//	c__ __  "007_This line is always executed"
-//
-//	c__.g..
-//	r_ _
-//}
+﻿#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    int count = 5;
+
+    for (int i = 0; i < count; i++) {
+        cout << "Iteration " << i << endl;
+
+        break;    // Эта  инстукция остановит работу цикла, и предаст управление инструкцие находящейся после операторных скобок цикла
+
+        cout << "007_This line is never executed";
+
+    }
+    cout << "007_This line is always executed";
+
+    cin.get();
+    return 0;
+
+}
