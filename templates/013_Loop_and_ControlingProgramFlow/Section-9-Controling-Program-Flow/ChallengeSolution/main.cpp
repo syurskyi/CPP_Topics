@@ -72,7 +72,7 @@ in. main
     ve..<in.> numbers {};
     ch.. selection {};
     
-    do {
+    __ {
         // Display menu
         c.. __ "\nP - Print numbers" __ e..
         c.. __ "A - Add a number" __ e..
