@@ -2,7 +2,7 @@
 ? |i..
 ? ve..
 
-template<typename...T>
+t..<t_n_...T>
 a.. make_vector(T...t) {
     st. ve.. v _ {t...}sy.. pause
 

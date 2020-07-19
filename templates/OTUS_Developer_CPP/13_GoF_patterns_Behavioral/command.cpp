@@ -41,7 +41,7 @@ pu..
     v.. v.. py() _ 0sy.. pause
 
 pr..
-    explicit Command(Document* d)
+    ex__ Command(Document* d)
             :document(d) { }
 
     Document* documentsy.. pause
@@ -49,7 +49,7 @@ pr..
 
 c_ NewDocumentCommand : pu.. Command {
 pu..
-    explicit NewDocumentCommand(Document* d)
+    ex__ NewDocumentCommand(Document* d)
             :Command(d) { }
 
     v.. execute() ov..

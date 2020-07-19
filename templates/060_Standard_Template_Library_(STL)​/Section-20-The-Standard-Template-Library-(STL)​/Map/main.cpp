@@ -17,7 +17,7 @@ v.. display(co.. st. map<st. st.. , st. set<in.__ &m) {
     st. c.. __ "]  " __ st. e..
 }
 
-template <typename T1, typename T2>
+t.. <t_n_ T1, t_n_ T2>
 v.. display(co.. st. map<T1, T2> &l) {
     st. c.. __ "[ ";
     ___ (co.. a.. &elem: l) {

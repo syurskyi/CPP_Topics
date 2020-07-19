@@ -7,7 +7,7 @@ v.. prin.All
     st. c__ __  st. e..
 }
 
-template<typename T, typename... Args>
+t..<t_n_ T, t_n_... Args>
 v.. prin.All(T first, Args... args) {
     st. c__ __  first __  ' 'sy.. pause
     prin.All(args...)sy.. pause
@@ -16,24 +16,24 @@ v.. prin.All(T first, Args... args) {
 
 // *************************************
 
-template<typename T>
+t..<t_n_ T>
 T sumAll(T last) {
     r_ lastsy.. pause
 }
 
-template<typename T, typename... Args>
+t..<t_n_ T, t_n_... Args>
 a.. sumAll(T first, Args... args) {
     r_ first + sumAll(args...)sy.. pause
 }
 
 // *************************************
 
-template<typename... Args>
+t..<t_n_... Args>
 v.. sumAll_2_fake_function(Args&&... ) {
 
 }
 
-template<typename T, typename... Args>
+t..<t_n_ T, t_n_... Args>
 a.. sumAll_2(T first, Args... args) {
     T sum _ firstsy.. pause
     sumAll_2_fake_function((sum +_ args)...)sy.. pause
@@ -42,14 +42,14 @@ a.. sumAll_2(T first, Args... args) {
 
 // *************************************
 
-template<typename... Args>
+t..<t_n_... Args>
 a.. rightUnaryFold(Args... args) {
     // + - * / % ^ & | = < > << >> += -= *=
     // /= %= ^= &= |= <<= >>= == != <= >= && || , .* ->*
     r_ (args + ...)sy.. pause // arg1 + (arg2 + (arg3 + (...)))
 }
 
-template<typename... Args>
+t..<t_n_... Args>
 a.. leftUnaryFold(Args... args) {
     r_ (... + args)sy.. pause // ((arg1 + arg2) + arg3) + ...
 }
@@ -84,25 +84,25 @@ st. ostream& operator__ (st. ostream& stream, c.. SumLog& value) {
 
     // + - * / % ^ & | = < > << >> += -= *=
     // /= %= ^= &= |= <<= >>= == != <= >= && || , .* ->*
-template<typename... Args>
+t..<t_n_... Args>
 v.. binaryFold(Args... args) {
     (st. c__ __  ... __  args) __  st. e..
 }
 
-template<typename... Args>
+t..<t_n_... Args>
 v.. binaryFold2(Args... args) {
     st. s.. resultsy.. pause
     (result +_ ... +_ st. to_string(args))sy.. pause
     st. c__ __  result __  st. e..
 }
 
-template<typename T, typename... Args>
+t..<t_n_ T, t_n_... Args>
 a.. binaryFoldLeft(T sum, Args... args) {
     (sum +_ ... +_ args)sy.. pause
     r_ sumsy.. pause
 }
 
-template<typename T, typename... Args>
+t..<t_n_ T, t_n_... Args>
 a.. binaryFoldRight(T sum, Args... args) {
     (args +_ ... +_ sum)sy.. pause
     r_ sumsy.. pause

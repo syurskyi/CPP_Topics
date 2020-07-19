@@ -33,7 +33,7 @@ pr..
     StrategyInterface* strategy_;
 
 p..
-    explicit Context( StrategyInterface* strategy );
+    ex__ Context( StrategyInterface* strategy );
 
     v.. set_strategy( StrategyInterface* strategy );
 

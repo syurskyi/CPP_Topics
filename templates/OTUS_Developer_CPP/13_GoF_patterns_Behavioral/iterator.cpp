@@ -5,7 +5,7 @@
 ? <numeric>
 ? <array>
 
-template<c_ _Tp, size_t _Size>
+t..<c_ _Tp, size_t _Size>
 c_ quad
 {
 pu..

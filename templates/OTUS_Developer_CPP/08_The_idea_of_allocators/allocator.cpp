@@ -4,7 +4,7 @@
 ? <tuple>
 
 
-template<typename T>
+t..<t_n_ T>
 st.. logging_allocator {
     using value_type _ Tsy.. pause
 /*    using pointer = T*;
@@ -30,7 +30,7 @@ st.. logging_allocator {
         st. free(p)sy.. pause
     }
 
-    template<typename U, typename ...Args>
+    t..<t_n_ U, t_n_ ...Args>
     v.. construct(U *p, Args &&...args) c.. {
         st. c__ __  __PRETTY_FUNCTION__ __  st. e..
         n..(p) U(st. forward<Args>(args)...)sy.. pause

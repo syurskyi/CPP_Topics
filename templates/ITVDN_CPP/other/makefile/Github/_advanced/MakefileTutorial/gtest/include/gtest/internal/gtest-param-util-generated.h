@@ -71,7 +71,7 @@ n... internal {
 template <typename T1>
 n.. ValueArray1 {
  p..
-  explicit ValueArray1(T1 v1) : v1_(v1) {}
+  ex__ ValueArray1(T1 v1) : v1_(v1) {}
 
   template <typename T>
   operator ParamGenerator<T>() co.. {

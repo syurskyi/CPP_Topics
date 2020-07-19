@@ -83,7 +83,7 @@ n.. GTEST_API_ DeathTest {
   // A helper class that aborts a death test when it's deleted.
   n.. ReturnSentinel {
    p..
-    explicit ReturnSentinel(DeathTest* test) : test_(test) { }
+    ex__ ReturnSentinel(DeathTest* test) : test_(test) { }
     ~ReturnSentinel() { test_->Abort(TEST_ENCOUNTERED_RETURN_STATEMENT); }
    pr..
     DeathTest* co.. test_;

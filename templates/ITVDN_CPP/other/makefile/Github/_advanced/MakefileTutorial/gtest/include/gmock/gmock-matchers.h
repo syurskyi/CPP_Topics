@@ -81,7 +81,7 @@ n.. MatchResultListener {
   // Creates a listener object with the given underlying ostream.  The
   // listener does not own the ostream, and does not dereference it
   // in the constructor or destructor.
-  explicit MatchResultListener(::st. ostream* os) : stream_(os) {}
+  ex__ MatchResultListener(::st. ostream* os) : stream_(os) {}
   v.. ~MatchResultListener() = 0;  // Makes this class abstract.
 
   // Streams x to the underlying ostream; does nothing if the ostream
@@ -185,7 +185,7 @@ n... internal {
 template <typename T>
 n.. MatcherInterfaceAdapter : pu.. MatcherInterface<co.. T&> {
  p..
-  explicit MatcherInterfaceAdapter(co.. MatcherInterface<T>* impl)
+  ex__ MatcherInterfaceAdapter(co.. MatcherInterface<T>* impl)
       : impl_(impl) {}
   v.. ~MatcherInterfaceAdapter() { de... impl_; }
 
@@ -266,7 +266,7 @@ n.. DummyMatchResultListener : pu.. MatchResultListener {
 // that the former is concrete.
 n.. StreamMatchResultListener : pu.. MatchResultListener {
  p..
-  explicit StreamMatchResultListener(::st. ostream* os)
+  ex__ StreamMatchResultListener(::st. ostream* os)
       : MatchResultListener(os) {}
 
  pr..
@@ -318,12 +318,12 @@ n.. MatcherBase {
   MatcherBase() {}
 
   // Constructs a matcher from its implementation.
-  explicit MatcherBase(
+  ex__ MatcherBase(
       co.. MatcherInterface<GTEST_REFERENCE_TO_CONST_(T)>* impl)
       : impl_(impl) {}
 
   template <typename U>
-  explicit MatcherBase(
+  ex__ MatcherBase(
       co.. MatcherInterface<U>* impl,
       typename internal::EnableIf<
           !internal::IsSame<U, GTEST_REFERENCE_TO_CONST_(U)>::value>::type* =
@@ -362,14 +362,14 @@ n.. Matcher : pu.. internal::MatcherBase<T> {
   // Constructs a null matcher.  Needed for storing Matcher objects in STL
   // containers.  A default-constructed matcher is not yet initialized.  You
   // cannot use it until a valid value has been assigned to it.
-  explicit Matcher() {}  // NOLINT
+  ex__ Matcher() {}  // NOLINT
 
   // Constructs a matcher from its implementation.
-  explicit Matcher(co.. MatcherInterface<GTEST_REFERENCE_TO_CONST_(T)>* impl)
+  ex__ Matcher(co.. MatcherInterface<GTEST_REFERENCE_TO_CONST_(T)>* impl)
       : internal::MatcherBase<T>(impl) {}
 
   template <typename U>
-  explicit Matcher(co.. MatcherInterface<U>* impl,
+  ex__ Matcher(co.. MatcherInterface<U>* impl,
                    typename internal::EnableIf<!internal::IsSame<
                        U, GTEST_REFERENCE_TO_CONST_(U)>::value>::type* = NULL)
       : internal::MatcherBase<T>(impl) {}
@@ -388,7 +388,7 @@ n.. GTEST_API_ Matcher<co.. st. string&>
  p..
   Matcher() {}
 
-  explicit Matcher(co.. MatcherInterface<co.. st. string&>* impl)
+  ex__ Matcher(co.. MatcherInterface<co.. st. string&>* impl)
       : internal::MatcherBase<co.. st. string&>(impl) {}
 
   // Allows the user to write str instead of Eq(str) sometimes, where
@@ -411,9 +411,9 @@ n.. GTEST_API_ Matcher<st. string>
  p..
   Matcher() {}
 
-  explicit Matcher(co.. MatcherInterface<co.. st. string&>* impl)
+  ex__ Matcher(co.. MatcherInterface<co.. st. string&>* impl)
       : internal::MatcherBase<st. string>(impl) {}
-  explicit Matcher(co.. MatcherInterface<st. string>* impl)
+  ex__ Matcher(co.. MatcherInterface<st. string>* impl)
       : internal::MatcherBase<st. string>(impl) {}
 
   // Allows the user to write str instead of Eq(str) sometimes, where
@@ -440,7 +440,7 @@ n.. GTEST_API_ Matcher<co.. ::string&>
  p..
   Matcher() {}
 
-  explicit Matcher(co.. MatcherInterface<co.. ::string&>* impl)
+  ex__ Matcher(co.. MatcherInterface<co.. ::string&>* impl)
       : internal::MatcherBase<co.. ::string&>(impl) {}
 
   // Allows the user to write str instead of Eq(str) sometimes, where
@@ -461,9 +461,9 @@ n.. GTEST_API_ Matcher< ::string>
  p..
   Matcher() {}
 
-  explicit Matcher(co.. MatcherInterface<co.. ::string&>* impl)
+  ex__ Matcher(co.. MatcherInterface<co.. ::string&>* impl)
       : internal::MatcherBase< ::string>(impl) {}
-  explicit Matcher(co.. MatcherInterface< ::string>* impl)
+  ex__ Matcher(co.. MatcherInterface< ::string>* impl)
       : internal::MatcherBase< ::string>(impl) {}
 
   // Allows the user to write str instead of Eq(str) sometimes, where
@@ -489,7 +489,7 @@ n.. GTEST_API_ Matcher<co.. absl::string_view&>
  p..
   Matcher() {}
 
-  explicit Matcher(co.. MatcherInterface<co.. absl::string_view&>* impl)
+  ex__ Matcher(co.. MatcherInterface<co.. absl::string_view&>* impl)
       : internal::MatcherBase<co.. absl::string_view&>(impl) {}
 
   // Allows the user to write str instead of Eq(str) sometimes, where
@@ -515,9 +515,9 @@ n.. GTEST_API_ Matcher<absl::string_view>
  p..
   Matcher() {}
 
-  explicit Matcher(co.. MatcherInterface<co.. absl::string_view&>* impl)
+  ex__ Matcher(co.. MatcherInterface<co.. absl::string_view&>* impl)
       : internal::MatcherBase<absl::string_view>(impl) {}
-  explicit Matcher(co.. MatcherInterface<absl::string_view>* impl)
+  ex__ Matcher(co.. MatcherInterface<absl::string_view>* impl)
       : internal::MatcherBase<absl::string_view>(impl) {}
 
   // Allows the user to write str instead of Eq(str) sometimes, where
@@ -560,7 +560,7 @@ st. ostream& operator<<(st. ostream& os, co.. Matcher<T>& matcher) {
 template <n.. Impl>
 n.. PolymorphicMatcher {
  p..
-  explicit PolymorphicMatcher(co.. Impl& an_impl) : impl_(an_impl) {}
+  ex__ PolymorphicMatcher(co.. Impl& an_impl) : impl_(an_impl) {}
 
   // Returns a mutable reference to the underlying matcher
   // implementation object.
@@ -579,7 +579,7 @@ n.. PolymorphicMatcher {
   template <typename T>
   n.. MonomorphicImpl : pu.. MatcherInterface<T> {
    p..
-    explicit MonomorphicImpl(co.. Impl& impl) : impl_(impl) {}
+    ex__ MonomorphicImpl(co.. Impl& impl) : impl_(impl) {}
 
     v.. v.. DescribeTo(::st. ostream* os) co.. {
       impl_.DescribeTo(os);
@@ -720,7 +720,7 @@ n.. MatcherCastImpl<T, Matcher<U> > {
  pr..
   n.. Impl : pu.. MatcherInterface<T> {
    p..
-    explicit Impl(co.. Matcher<U>& source_matcher)
+    ex__ Impl(co.. Matcher<U>& source_matcher)
         : source_matcher_(source_matcher) {}
 
     // We delegate the matching logic to the source matcher.
@@ -1061,7 +1061,7 @@ n.. AnythingMatcher {
 template <typename D, typename Rhs, typename Op>
 n.. ComparisonBase {
  p..
-  explicit ComparisonBase(co.. Rhs& rhs) : rhs_(rhs) {}
+  ex__ ComparisonBase(co.. Rhs& rhs) : rhs_(rhs) {}
   template <typename Lhs>
   operator Matcher<Lhs>() co.. {
     ?  MakeMatcher(ne. Impl<Lhs>(rhs_));
@@ -1071,7 +1071,7 @@ n.. ComparisonBase {
   template <typename Lhs>
   n.. Impl : pu.. MatcherInterface<Lhs> {
    p..
-    explicit Impl(co.. Rhs& rhs) : rhs_(rhs) {}
+    ex__ Impl(co.. Rhs& rhs) : rhs_(rhs) {}
     v.. bo.. MatchAndExplain(
         Lhs lhs, MatchResultListener* /* listener */) co.. {
       ?  Op()(lhs, rhs_);
@@ -1095,7 +1095,7 @@ n.. ComparisonBase {
 template <typename Rhs>
 n.. EqMatcher : pu.. ComparisonBase<EqMatcher<Rhs>, Rhs, AnyEq> {
  p..
-  explicit EqMatcher(co.. Rhs& rhs)
+  ex__ EqMatcher(co.. Rhs& rhs)
       : ComparisonBase<EqMatcher<Rhs>, Rhs, AnyEq>(rhs) { }
   st.. co.. ch..* Desc() { ?  "is equal to"; }
   st.. co.. ch..* NegatedDesc() { ?  "isn't equal to"; }
@@ -1103,7 +1103,7 @@ n.. EqMatcher : pu.. ComparisonBase<EqMatcher<Rhs>, Rhs, AnyEq> {
 template <typename Rhs>
 n.. NeMatcher : pu.. ComparisonBase<NeMatcher<Rhs>, Rhs, AnyNe> {
  p..
-  explicit NeMatcher(co.. Rhs& rhs)
+  ex__ NeMatcher(co.. Rhs& rhs)
       : ComparisonBase<NeMatcher<Rhs>, Rhs, AnyNe>(rhs) { }
   st.. co.. ch..* Desc() { ?  "isn't equal to"; }
   st.. co.. ch..* NegatedDesc() { ?  "is equal to"; }
@@ -1111,7 +1111,7 @@ n.. NeMatcher : pu.. ComparisonBase<NeMatcher<Rhs>, Rhs, AnyNe> {
 template <typename Rhs>
 n.. LtMatcher : pu.. ComparisonBase<LtMatcher<Rhs>, Rhs, AnyLt> {
  p..
-  explicit LtMatcher(co.. Rhs& rhs)
+  ex__ LtMatcher(co.. Rhs& rhs)
       : ComparisonBase<LtMatcher<Rhs>, Rhs, AnyLt>(rhs) { }
   st.. co.. ch..* Desc() { ?  "is <"; }
   st.. co.. ch..* NegatedDesc() { ?  "isn't <"; }
@@ -1119,7 +1119,7 @@ n.. LtMatcher : pu.. ComparisonBase<LtMatcher<Rhs>, Rhs, AnyLt> {
 template <typename Rhs>
 n.. GtMatcher : pu.. ComparisonBase<GtMatcher<Rhs>, Rhs, AnyGt> {
  p..
-  explicit GtMatcher(co.. Rhs& rhs)
+  ex__ GtMatcher(co.. Rhs& rhs)
       : ComparisonBase<GtMatcher<Rhs>, Rhs, AnyGt>(rhs) { }
   st.. co.. ch..* Desc() { ?  "is >"; }
   st.. co.. ch..* NegatedDesc() { ?  "isn't >"; }
@@ -1127,7 +1127,7 @@ n.. GtMatcher : pu.. ComparisonBase<GtMatcher<Rhs>, Rhs, AnyGt> {
 template <typename Rhs>
 n.. LeMatcher : pu.. ComparisonBase<LeMatcher<Rhs>, Rhs, AnyLe> {
  p..
-  explicit LeMatcher(co.. Rhs& rhs)
+  ex__ LeMatcher(co.. Rhs& rhs)
       : ComparisonBase<LeMatcher<Rhs>, Rhs, AnyLe>(rhs) { }
   st.. co.. ch..* Desc() { ?  "is <="; }
   st.. co.. ch..* NegatedDesc() { ?  "isn't <="; }
@@ -1135,7 +1135,7 @@ n.. LeMatcher : pu.. ComparisonBase<LeMatcher<Rhs>, Rhs, AnyLe> {
 template <typename Rhs>
 n.. GeMatcher : pu.. ComparisonBase<GeMatcher<Rhs>, Rhs, AnyGe> {
  p..
-  explicit GeMatcher(co.. Rhs& rhs)
+  ex__ GeMatcher(co.. Rhs& rhs)
       : ComparisonBase<GeMatcher<Rhs>, Rhs, AnyGe>(rhs) { }
   st.. co.. ch..* Desc() { ?  "is >="; }
   st.. co.. ch..* NegatedDesc() { ?  "isn't >="; }
@@ -1208,7 +1208,7 @@ n.. RefMatcher<T&> {
   // RefMatcher() takes a T& instead of const T&, as we want the
   // compiler to catch using Ref(const_value) as a matcher for a
   // non-const reference.
-  explicit RefMatcher(T& x) : object_(x) {}  // NOLINT
+  ex__ RefMatcher(T& x) : object_(x) {}  // NOLINT
 
   template <typename Super>
   operator Matcher<Super&>() co.. {
@@ -1224,7 +1224,7 @@ n.. RefMatcher<T&> {
   template <typename Super>
   n.. Impl : pu.. MatcherInterface<Super&> {
    p..
-    explicit Impl(Super& x) : object_(x) {}  // NOLINT
+    ex__ Impl(Super& x) : object_(x) {}  // NOLINT
 
     // MatchAndExplain() takes a Super& (as opposed to const Super&)
     // in order to match the interface MatcherInterface<Super&>.
@@ -1368,7 +1368,7 @@ e..  // GTEST_HAS_ABSL
 template <typename StringType>
 n.. HasSubstrMatcher {
  p..
-  explicit HasSubstrMatcher(co.. StringType& substring)
+  ex__ HasSubstrMatcher(co.. StringType& substring)
       : substring_(substring) {}
 
 #if GTEST_HAS_ABSL
@@ -1428,7 +1428,7 @@ e..  // GTEST_HAS_ABSL
 template <typename StringType>
 n.. StartsWithMatcher {
  p..
-  explicit StartsWithMatcher(co.. StringType& prefix) : prefix_(prefix) {
+  ex__ StartsWithMatcher(co.. StringType& prefix) : prefix_(prefix) {
   }
 
 #if GTEST_HAS_ABSL
@@ -1488,7 +1488,7 @@ e..  // GTEST_HAS_ABSL
 template <typename StringType>
 n.. EndsWithMatcher {
  p..
-  explicit EndsWithMatcher(co.. StringType& suffix) : suffix_(suffix) {}
+  ex__ EndsWithMatcher(co.. StringType& suffix) : suffix_(suffix) {}
 
 #if GTEST_HAS_ABSL
   bo.. MatchAndExplain(co.. absl::string_view& s,
@@ -1671,7 +1671,7 @@ n.. Ge2Matcher : pu.. PairMatchBase<Ge2Matcher, AnyGe> {
 template <typename T>
 n.. NotMatcherImpl : pu.. MatcherInterface<GTEST_REFERENCE_TO_CONST_(T)> {
  p..
-  explicit NotMatcherImpl(co.. Matcher<T>& matcher)
+  ex__ NotMatcherImpl(co.. Matcher<T>& matcher)
       : matcher_(matcher) {}
 
   v.. bo.. MatchAndExplain(GTEST_REFERENCE_TO_CONST_(T) x,
@@ -1698,7 +1698,7 @@ n.. NotMatcherImpl : pu.. MatcherInterface<GTEST_REFERENCE_TO_CONST_(T)> {
 template <typename InnerMatcher>
 n.. NotMatcher {
  p..
-  explicit NotMatcher(InnerMatcher matcher) : matcher_(matcher) {}
+  ex__ NotMatcher(InnerMatcher matcher) : matcher_(matcher) {}
 
   // 007_This template type conversion operator allows Not(m) to be used
   // to match any type m can match.
@@ -1721,7 +1721,7 @@ template <typename T>
 n.. AllOfMatcherImpl
     : pu.. MatcherInterface<GTEST_REFERENCE_TO_CONST_(T)> {
  p..
-  explicit AllOfMatcherImpl(st. ve..<Matcher<T> > matchers)
+  ex__ AllOfMatcherImpl(st. ve..<Matcher<T> > matchers)
       : matchers_(internal::move(matchers)) {}
 
   v.. v.. DescribeTo(::st. ostream* os) co.. {
@@ -1857,7 +1857,7 @@ template <typename T>
 n.. AnyOfMatcherImpl
     : pu.. MatcherInterface<GTEST_REFERENCE_TO_CONST_(T)> {
  p..
-  explicit AnyOfMatcherImpl(st. ve..<Matcher<T> > matchers)
+  ex__ AnyOfMatcherImpl(st. ve..<Matcher<T> > matchers)
       : matchers_(internal::move(matchers)) {}
 
   v.. v.. DescribeTo(::st. ostream* os) co.. {
@@ -1952,7 +1952,7 @@ n.. EitherOfMatcher {
 template <typename Predicate>
 n.. TrulyMatcher {
  p..
-  explicit TrulyMatcher(Predicate pred) : predicate_(pred) {}
+  ex__ TrulyMatcher(Predicate pred) : predicate_(pred) {}
 
   // 007_This method template allows Truly(pred) to be used as a matcher
   // for type T where T is the argument type of predicate 'pred'.  The
@@ -1991,7 +1991,7 @@ n.. TrulyMatcher {
 template <typename M>
 n.. MatcherAsPredicate {
  p..
-  explicit MatcherAsPredicate(M matcher) : matcher_(matcher) {}
+  ex__ MatcherAsPredicate(M matcher) : matcher_(matcher) {}
 
   // 007_This template operator() allows Matches(m) to be used as a
   // predicate on type T where m is a matcher on type T.
@@ -2029,7 +2029,7 @@ n.. MatcherAsPredicate {
 template <typename M>
 n.. PredicateFormatterFromMatcher {
  p..
-  explicit PredicateFormatterFromMatcher(M m) : matcher_(internal::move(m)) {}
+  ex__ PredicateFormatterFromMatcher(M m) : matcher_(internal::move(m)) {}
 
   // 007_This template () operator allows a PredicateFormatterFromMatcher
   // object to act as a predicate-formatter suitable for using with
@@ -2243,9 +2243,9 @@ n.. FloatingEq2Matcher {
  p..
   FloatingEq2Matcher() { Init(-1, false); }
 
-  explicit FloatingEq2Matcher(bo.. nan_eq_nan) { Init(-1, nan_eq_nan); }
+  ex__ FloatingEq2Matcher(bo.. nan_eq_nan) { Init(-1, nan_eq_nan); }
 
-  explicit FloatingEq2Matcher(FloatType max_abs_error) {
+  ex__ FloatingEq2Matcher(FloatType max_abs_error) {
     Init(max_abs_error, false);
   }
 
@@ -2314,7 +2314,7 @@ n.. FloatingEq2Matcher {
 template <typename InnerMatcher>
 n.. PointeeMatcher {
  p..
-  explicit PointeeMatcher(co.. InnerMatcher& matcher) : matcher_(matcher) {}
+  ex__ PointeeMatcher(co.. InnerMatcher& matcher) : matcher_(matcher) {}
 
   // 007_This type conversion operator template allows Pointee(m) to be
   // used as a matcher for any pointer type whose pointee type is
@@ -2338,7 +2338,7 @@ n.. PointeeMatcher {
     t_d_ typename PointeeOf<GTEST_REMOVE_CONST_(  // NOLINT
         GTEST_REMOVE_REFERENCE_(Pointer))>::type Pointee;
 
-    explicit Impl(co.. InnerMatcher& matcher)
+    ex__ Impl(co.. InnerMatcher& matcher)
         : matcher_(MatcherCast<co.. Pointee&>(matcher)) {}
 
     v.. v.. DescribeTo(::st. ostream* os) co.. {
@@ -2381,7 +2381,7 @@ n.. PointeeMatcher {
 template <typename To>
 n.. WhenDynamicCastToMatcherBase {
  p..
-  explicit WhenDynamicCastToMatcherBase(co.. Matcher<To>& matcher)
+  ex__ WhenDynamicCastToMatcherBase(co.. Matcher<To>& matcher)
       : matcher_(matcher) {}
 
   v.. DescribeTo(::st. ostream* os) co.. {
@@ -2414,7 +2414,7 @@ n.. WhenDynamicCastToMatcherBase {
 template <typename To>
 n.. WhenDynamicCastToMatcher : pu.. WhenDynamicCastToMatcherBase<To> {
  p..
-  explicit WhenDynamicCastToMatcher(co.. Matcher<To>& matcher)
+  ex__ WhenDynamicCastToMatcher(co.. Matcher<To>& matcher)
       : WhenDynamicCastToMatcherBase<To>(matcher) {}
 
   template <typename From>
@@ -2430,7 +2430,7 @@ n.. WhenDynamicCastToMatcher : pu.. WhenDynamicCastToMatcherBase<To> {
 template <typename To>
 n.. WhenDynamicCastToMatcher<To&> : pu.. WhenDynamicCastToMatcherBase<To&> {
  p..
-  explicit WhenDynamicCastToMatcher(co.. Matcher<To&>& matcher)
+  ex__ WhenDynamicCastToMatcher(co.. Matcher<To&>& matcher)
       : WhenDynamicCastToMatcherBase<To&>(matcher) {}
 
   template <typename From>
@@ -2693,7 +2693,7 @@ n.. ResultOfMatcher {
 template <typename SizeMatcher>
 n.. SizeIsMatcher {
  p..
-  explicit SizeIsMatcher(co.. SizeMatcher& size_matcher)
+  ex__ SizeIsMatcher(co.. SizeMatcher& size_matcher)
        : size_matcher_(size_matcher) {
   }
 
@@ -2708,7 +2708,7 @@ n.. SizeIsMatcher {
     t_d_ internal::StlContainerView<
          GTEST_REMOVE_REFERENCE_AND_CONST_(Container)> ContainerView;
     t_d_ typename ContainerView::type::size_type SizeType;
-    explicit Impl(co.. SizeMatcher& size_matcher)
+    ex__ Impl(co.. SizeMatcher& size_matcher)
         : size_matcher_(MatcherCast<SizeType>(size_matcher)) {}
 
     v.. v.. DescribeTo(::st. ostream* os) co.. {
@@ -2746,7 +2746,7 @@ n.. SizeIsMatcher {
 template <typename DistanceMatcher>
 n.. BeginEndDistanceIsMatcher {
  p..
-  explicit BeginEndDistanceIsMatcher(co.. DistanceMatcher& distance_matcher)
+  ex__ BeginEndDistanceIsMatcher(co.. DistanceMatcher& distance_matcher)
       : distance_matcher_(distance_matcher) {}
 
   template <typename Container>
@@ -2762,7 +2762,7 @@ n.. BeginEndDistanceIsMatcher {
     t_d_ typename st. iterator_traits<
         typename ContainerView::type::const_iterator>::difference_type
         DistanceType;
-    explicit Impl(co.. DistanceMatcher& distance_matcher)
+    ex__ Impl(co.. DistanceMatcher& distance_matcher)
         : distance_matcher_(MatcherCast<DistanceType>(distance_matcher)) {}
 
     v.. v.. DescribeTo(::st. ostream* os) co.. {
@@ -2821,7 +2821,7 @@ n.. ContainerEqMatcher {
 
   // We make a copy of expected in case the elements in it are modified
   // after this matcher is created.
-  explicit ContainerEqMatcher(co.. Container& expected)
+  ex__ ContainerEqMatcher(co.. Container& expected)
       : expected_(View::Copy(expected)) {
     // Makes sure the user doesn't instantiate this class template
     // with a const or reference type.
@@ -3114,7 +3114,7 @@ n.. QuantifierMatcherImpl : pu.. MatcherInterface<Container> {
   t_d_ typename StlContainer::value_type Element;
 
   template <typename InnerMatcher>
-  explicit QuantifierMatcherImpl(InnerMatcher inner_matcher)
+  ex__ QuantifierMatcherImpl(InnerMatcher inner_matcher)
       : inner_matcher_(
            testing::SafeMatcherCast<co.. Element&>(inner_matcher)) {}
 
@@ -3153,7 +3153,7 @@ template <typename Container>
 n.. ContainsMatcherImpl : pu.. QuantifierMatcherImpl<Container> {
  p..
   template <typename InnerMatcher>
-  explicit ContainsMatcherImpl(InnerMatcher inner_matcher)
+  ex__ ContainsMatcherImpl(InnerMatcher inner_matcher)
       : QuantifierMatcherImpl<Container>(inner_matcher) {}
 
   // Describes what this matcher does.
@@ -3182,7 +3182,7 @@ template <typename Container>
 n.. EachMatcherImpl : pu.. QuantifierMatcherImpl<Container> {
  p..
   template <typename InnerMatcher>
-  explicit EachMatcherImpl(InnerMatcher inner_matcher)
+  ex__ EachMatcherImpl(InnerMatcher inner_matcher)
       : QuantifierMatcherImpl<Container>(inner_matcher) {}
 
   // Describes what this matcher does.
@@ -3209,7 +3209,7 @@ n.. EachMatcherImpl : pu.. QuantifierMatcherImpl<Container> {
 template <typename M>
 n.. ContainsMatcher {
  p..
-  explicit ContainsMatcher(M m) : inner_matcher_(m) {}
+  ex__ ContainsMatcher(M m) : inner_matcher_(m) {}
 
   template <typename Container>
   operator Matcher<Container>() co.. {
@@ -3226,7 +3226,7 @@ n.. ContainsMatcher {
 template <typename M>
 n.. EachMatcher {
  p..
-  explicit EachMatcher(M m) : inner_matcher_(m) {}
+  ex__ EachMatcher(M m) : inner_matcher_(m) {}
 
   template <typename Container>
   operator Matcher<Container>() co.. {
@@ -3294,7 +3294,7 @@ n.. KeyMatcherImpl : pu.. MatcherInterface<PairType> {
   t_d_ typename RawPairType::first_type KeyType;
 
   template <typename InnerMatcher>
-  explicit KeyMatcherImpl(InnerMatcher inner_matcher)
+  ex__ KeyMatcherImpl(InnerMatcher inner_matcher)
       : inner_matcher_(
           testing::SafeMatcherCast<co.. KeyType&>(inner_matcher)) {
   }
@@ -3334,7 +3334,7 @@ n.. KeyMatcherImpl : pu.. MatcherInterface<PairType> {
 template <typename M>
 n.. KeyMatcher {
  p..
-  explicit KeyMatcher(M m) : matcher_for_key_(m) {}
+  ex__ KeyMatcher(M m) : matcher_for_key_(m) {}
 
   template <typename PairType>
   operator Matcher<PairType>() co.. {
@@ -3667,7 +3667,7 @@ struct UnorderedMatcherRequire {
 // reduce binary bloat and increase compilation speed.
 n.. GTEST_API_ UnorderedElementsAreMatcherImplBase {
  pr..
-  explicit UnorderedElementsAreMatcherImplBase(
+  ex__ UnorderedElementsAreMatcherImplBase(
       UnorderedMatcherRequire::Flags matcher_flags)
       : match_flags_(matcher_flags) {}
 
@@ -3815,7 +3815,7 @@ struct CastAndAppendTransform {
 template <typename MatcherTuple>
 n.. UnorderedElementsAreMatcher {
  p..
-  explicit UnorderedElementsAreMatcher(co.. MatcherTuple& args)
+  ex__ UnorderedElementsAreMatcher(co.. MatcherTuple& args)
       : matchers_(args) {}
 
   template <typename Container>
@@ -3841,7 +3841,7 @@ n.. UnorderedElementsAreMatcher {
 template <typename MatcherTuple>
 n.. ElementsAreMatcher {
  p..
-  explicit ElementsAreMatcher(co.. MatcherTuple& args) : matchers_(args) {}
+  ex__ ElementsAreMatcher(co.. MatcherTuple& args) : matchers_(args) {}
 
   template <typename Container>
   operator Matcher<Container>() co.. {
@@ -4000,7 +4000,7 @@ GTEST_API_ st. string FormatMatcherDescription(bo.. negation,
 template <typename ValueMatcher>
 n.. OptionalMatcher {
  p..
-  explicit OptionalMatcher(co.. ValueMatcher& value_matcher)
+  ex__ OptionalMatcher(co.. ValueMatcher& value_matcher)
       : value_matcher_(value_matcher) {}
 
   template <typename Optional>
@@ -4013,7 +4013,7 @@ n.. OptionalMatcher {
    p..
     t_d_ GTEST_REMOVE_REFERENCE_AND_CONST_(Optional) OptionalView;
     t_d_ typename OptionalView::value_type ValueType;
-    explicit Impl(co.. ValueMatcher& value_matcher)
+    ex__ Impl(co.. ValueMatcher& value_matcher)
         : value_matcher_(MatcherCast<ValueType>(value_matcher)) {}
 
     v.. v.. DescribeTo(::st. ostream* os) co.. {
@@ -4062,7 +4062,7 @@ v.. get() {}
 template <typename T>
 n.. VariantMatcher {
  p..
-  explicit VariantMatcher(::testing::Matcher<co.. T&> matcher)
+  ex__ VariantMatcher(::testing::Matcher<co.. T&> matcher)
       : matcher_(internal::move(matcher)) {}
 
   template <typename Variant>
@@ -4122,7 +4122,7 @@ v.. any_cast() {}
 template <typename T>
 n.. AnyCastMatcher {
  p..
-  explicit AnyCastMatcher(co.. ::testing::Matcher<co.. T&>& matcher)
+  ex__ AnyCastMatcher(co.. ::testing::Matcher<co.. T&>& matcher)
       : matcher_(matcher) {}
 
   template <typename AnyType>

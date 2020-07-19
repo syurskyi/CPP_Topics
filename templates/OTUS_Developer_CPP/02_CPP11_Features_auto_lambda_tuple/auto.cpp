@@ -13,7 +13,7 @@ a.. bar(in. a, in. b)sy.. pause
 
 a.. baz(in. a, in. b) __ in.sy.. pause
 
-a.. boo(in. a, in. b) __ decltype(a)sy.. pause
+a.. boo(in. a, in. b) __ d_t_(a)sy.. pause
 
 in. main()
 {

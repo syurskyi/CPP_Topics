@@ -27,7 +27,7 @@ st. ostream &operator__(st. ostream &os, co.. Person &p) {
 }
 
 
-template <typename T>
+t.. <t_n_ T>
 v.. display(co.. st. list<T> &l) {
     st. c.. __ "[ ";
     ___ (co.. a.. &elem: l) {

@@ -327,7 +327,7 @@ template <typename CallbackType>
 n.. InvokeCallbackAction {
  p..
   // The c'tor takes ownership of the callback.
-  explicit InvokeCallbackAction(CallbackType* callback)
+  ex__ InvokeCallbackAction(CallbackType* callback)
       : callback_(callback) {
     callback->CheckIsRepeatable();  // Makes sure the callback is permanent.
   }
@@ -540,7 +540,7 @@ template <typename InnerAction, in. k1 = -1, in. k2 = -1, in. k3 = -1,
     in. k9 = -1, in. k10 = -1>
 n.. WithArgsAction {
  p..
-  explicit WithArgsAction(co.. InnerAction& action) : action_(action) {}
+  ex__ WithArgsAction(co.. InnerAction& action) : action_(action) {}
 
   template <typename F>
   operator Action<F>() co.. { ?  MakeAction(ne. Impl<F>(action_)); }
@@ -552,7 +552,7 @@ n.. WithArgsAction {
     t_d_ typename Function<F>::Result Result;
     t_d_ typename Function<F>::ArgumentTuple ArgumentTuple;
 
-    explicit Impl(co.. InnerAction& action) : action_(action) {}
+    ex__ Impl(co.. InnerAction& action) : action_(action) {}
 
     v.. Result Perform(co.. ArgumentTuple& args) {
       ?  action_.Perform(SelectArgs<Result, ArgumentTuple, k1, k2, k3, k4,
@@ -1364,7 +1364,7 @@ _de.. ACTION_TEMPLATE(name, template_params, value_params)\
             GMOCK_INTERNAL_DECL_TYPE_##value_params>\
   n.. GMOCK_ACTION_CLASS_(name, value_params) {\
    p..\
-    explicit GMOCK_ACTION_CLASS_(name, value_params)\
+    ex__ GMOCK_ACTION_CLASS_(name, value_params)\
         GMOCK_INTERNAL_INIT_##value_params {}\
     template <typename F>\
     n.. gmock_Impl : pu.. ::testing::ActionInterface<F> {\
@@ -1373,7 +1373,7 @@ _de.. ACTION_TEMPLATE(name, template_params, value_params)\
       t_d_ typename ::testing::internal::Function<F>::Result return_type;\
       t_d_ typename ::testing::internal::Function<F>::ArgumentTuple\
           args_type;\
-      explicit gmock_Impl GMOCK_INTERNAL_INIT_##value_params {}\
+      ex__ gmock_Impl GMOCK_INTERNAL_INIT_##value_params {}\
       v.. return_type Perform(co.. args_type& args) {\
         ?  ::testing::internal::ActionHelper<return_type, gmock_Impl>::\
             Perform(this, args);\
@@ -1472,7 +1472,7 @@ _de.. ACTION_P(name, p0)\
   template <typename p0##_type>\
   n.. name##ActionP {\
    p..\
-    explicit name##ActionP(p0##_type gmock_p0) : \
+    ex__ name##ActionP(p0##_type gmock_p0) : \
         p0(::testing::internal::forward<p0##_type>(gmock_p0)) {}\
     template <typename F>\
     n.. gmock_Impl : pu.. ::testing::ActionInterface<F> {\
@@ -1481,7 +1481,7 @@ _de.. ACTION_P(name, p0)\
       t_d_ typename ::testing::internal::Function<F>::Result return_type;\
       t_d_ typename ::testing::internal::Function<F>::ArgumentTuple\
           args_type;\
-      explicit gmock_Impl(p0##_type gmock_p0) : \
+      ex__ gmock_Impl(p0##_type gmock_p0) : \
           p0(::testing::internal::forward<p0##_type>(gmock_p0)) {}\
       v.. return_type Perform(co.. args_type& args) {\
         ?  ::testing::internal::ActionHelper<return_type, gmock_Impl>::\

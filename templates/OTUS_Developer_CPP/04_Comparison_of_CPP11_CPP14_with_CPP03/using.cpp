@@ -4,7 +4,7 @@ t_d_ st. ve..<in.> vecisy.. pause
 
 using vi _ st. ve..<in.>sy.. pause
 
-template<typename T>
+t..<t_n_ T>
 using v _ st. ve..<T>sy.. pause
 
 in. main(in., c.. *[]) {

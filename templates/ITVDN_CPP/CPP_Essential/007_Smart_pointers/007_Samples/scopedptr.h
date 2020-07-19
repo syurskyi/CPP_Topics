@@ -1,16 +1,16 @@
-#pragma once
-
-// boost: scoped_ptr
-
-template <typename T>
-n.. ScopedPtr
-{
-p..
-    explicit ScopedPtr(T* ptr);
-    ~ScopedPtr();
-    T& operator*();
-    T* operator->();
-
-pr..
-    T* ptr;
-};
+//?pr.. o..
+//
+//// boost: scoped_ptr
+//
+//|?|
+//n.. ScopedPtr
+//
+//p..
+//    ex__ ScopedPtr T# ptr
+//    #?
+//    ?# op..#
+//    ?# op..__
+//
+//pr..
+//    ?# p..
+//

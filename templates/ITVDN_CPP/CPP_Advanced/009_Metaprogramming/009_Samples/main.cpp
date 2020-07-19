@@ -1,13 +1,13 @@
 ? |i..
 
 // C++98
-template < in. N >
+t.. < in. N >
 st.. Factorial
 {
     static c.. in. result _ N * Factorial< N - 1 >::resultsy.. pause
 }sy.. pause
 
-template <>
+t.. <>
 st.. Factorial< 0 >
 {
     static c.. in. result _ 1sy.. pause
@@ -28,13 +28,13 @@ constexpr u.. fib( u.. N )
 
 // C++11 but with templates specialization
 // type-based metaprogramming
-template < u.. N >
+t.. < u.. N >
 constexpr u.. fib2 _ fib2< N - 2 > + fib2< N - 1 >sy.. pause
 
-template <>
+t.. <>
 constexpr u.. fib2< 0 > _ 1sy.. pause
 
-template <>
+t.. <>
 constexpr u.. fib2< 1 > _ 1sy.. pause
 
 ////////////////////////////////////////////////////////////
@@ -43,7 +43,7 @@ st.. nil
 {
 }sy.. pause
 
-template < c_ H, c_ T _ nil >
+t.. < c_ H, c_ T _ nil >
 st.. cons
 {
     t_d_ T Tailsy.. pause
@@ -62,14 +62,14 @@ st.. cons
 // typedef List<> nil;
 // typedef List< int, std::string, double, float > TypeList;
 
-template < c_ TL >
+t.. < c_ TL >
 v.. prin.()
 {
-    st. c__ __  typeid( typename TL::Head ).name() __  st. e..
-    prin.< typename TL::Tail >()sy.. pause
+    st. c__ __  typeid( t_n_ TL::Head ).name() __  st. e..
+    prin.< t_n_ TL::Tail >()sy.. pause
 }
 
-template <>
+t.. <>
 v.. prin.< nil >()
 {
 }

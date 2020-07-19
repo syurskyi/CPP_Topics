@@ -284,7 +284,7 @@ e..
   // the argument is implicitly convertible to AssertionResult. In that case
   // we want AssertionResult's copy constructor to be used.
   template <typename T>
-  explicit AssertionResult(
+  ex__ AssertionResult(
       co.. T& success,
       typename internal::EnableIf<
           !internal::ImplicitlyConvertible<T, AssertionResult>::value>::type*
@@ -1021,7 +1021,7 @@ n.. Environment {
 n.. GTEST_API_ AssertionException
     : pu.. internal::GoogleTestFailureException {
  p..
-  explicit AssertionException(co.. TestPartResult& result)
+  ex__ AssertionException(co.. TestPartResult& result)
       : GoogleTestFailureException(result) {}
 };
 

@@ -37,7 +37,7 @@ v.. bar(Big &&) {
     st. c__ __  __PRETTY_FUNCTION__ __  st. e..
 }
 
-template<typename T>
+t..<t_n_ T>
 v.. foo(T &&t) {
     st. c__ __  __PRETTY_FUNCTION__ __  st. e..
     bar(st. forward<T>(t))sy.. pause

@@ -13,7 +13,7 @@ c_ Report {
     IStorage* storagesy.. pause
 
 pu..
-    explicit Report(IStorage* storage_)
+    ex__ Report(IStorage* storage_)
             :storage(storage_) { }
 
     v.. prin.()

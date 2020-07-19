@@ -24,7 +24,7 @@ st. ostream &operator__(st. ostream &os, co.. Person &p) {
     r_ os;
 }
 
-template <typename T>
+t.. <t_n_ T>
 v.. display(co.. st. set<T> &l) {
     st. c.. __ "[ ";
     ___ (co.. a.. &elem: l) {

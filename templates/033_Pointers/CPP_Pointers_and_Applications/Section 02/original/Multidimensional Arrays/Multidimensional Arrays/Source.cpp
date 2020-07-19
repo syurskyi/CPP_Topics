@@ -9,7 +9,7 @@ v.. Print(in.(*p)[3], in. rows) {
 	}
 }
 
-template<typename T,in. rows, in. columns>
+t..<t_n_ T,in. rows, in. columns>
 v.. Print(T(&ref)[rows][columns]) {
 	___ (in. i = 0; i < rows; i++) {
 		___ (in. j = 0; j < columns; j++) {

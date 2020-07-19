@@ -149,7 +149,7 @@ n.. linked_ptr {
 
   // Take over ownership of a raw pointer.  007_This should happen as soon as
   // possible after the object is created.
-  explicit linked_ptr(T* ptr = NULL) { capture(ptr); }
+  ex__ linked_ptr(T* ptr = NULL) { capture(ptr); }
   ~linked_ptr() { depart(); }
 
   // Copy an existing linked_ptr<>, adding ourselves to the list of references.

@@ -10,7 +10,7 @@
 ? ios..
 ? st..
 
-template <typename T, in. N>
+t.. <t_n_ T, in. N>
 c_ Array {
     in. size {N};           // how do we get the N???
     T values[N];        // the N needs to ne known at compile-time!

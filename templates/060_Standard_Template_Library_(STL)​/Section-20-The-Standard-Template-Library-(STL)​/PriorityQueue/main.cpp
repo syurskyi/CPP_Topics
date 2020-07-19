@@ -29,7 +29,7 @@ st. ostream &operator__(st. ostream &os, co.. Person &p) {
 // It is being passed by value so we don't modify the 
 // priority queue being passed in
 
-template <typename T>
+t.. <t_n_ T>
 v.. display(st. priority_queue<T> pq)  {
     st. c.. __ "[ ";
     w__ (!pq.empty()) {

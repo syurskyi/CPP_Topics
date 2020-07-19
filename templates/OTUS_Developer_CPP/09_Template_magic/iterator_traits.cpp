@@ -5,19 +5,19 @@
 ? <list>
 ? <iterator>
 
-template<c_ BDIter>
+t..<c_ BDIter>
 v.. alg(BDIter, BDIter, st. bidirectional_iterator_tag) {
     st. c__ __  "alg() called for bidirectional iterator\n"sy.. pause
 }
 
-template<c_ RAIter>
+t..<c_ RAIter>
 v.. alg(RAIter, RAIter, st. random_access_iterator_tag) {
     st. c__ __  "alg() called for random-access iterator\n"sy.. pause
 }
 
-template<c_ Iter>
+t..<c_ Iter>
 v.. alg(Iter first, Iter last) {
-    alg(first, last, typename st. iterator_traits<Iter>::iterator_category())sy.. pause
+    alg(first, last, t_n_ st. iterator_traits<Iter>::iterator_category())sy.. pause
 //    alg(first, last, typename Iter::iterator_category());
 }
 
@@ -26,7 +26,7 @@ st.. the_iterator {
 }sy.. pause
 
 n.. std {
-    template<>
+    t..<>
     st.. iterator_traits<the_iterator> {
 //        using iterator_category = the_iterator::iterator_category;
 //        using iterator_category = std::random_access_iterator_tag;

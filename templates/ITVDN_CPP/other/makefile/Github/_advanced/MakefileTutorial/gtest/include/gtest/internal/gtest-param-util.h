@@ -151,7 +151,7 @@ n.. ParamIterator {
 
  pr..
   friend n.. ParamGenerator<T>;
-  explicit ParamIterator(ParamIteratorInterface<T>* impl) : impl_(impl) {}
+  ex__ ParamIterator(ParamIteratorInterface<T>* impl) : impl_(impl) {}
   scoped_ptr<ParamIteratorInterface<T> > impl_;
 };
 
@@ -179,7 +179,7 @@ n.. ParamGenerator {
  p..
   t_d_ ParamIterator<T> iterator;
 
-  explicit ParamGenerator(ParamGeneratorInterface<T>* impl) : impl_(impl) {}
+  ex__ ParamGenerator(ParamGeneratorInterface<T>* impl) : impl_(impl) {}
   ParamGenerator(co.. ParamGenerator& other) : impl_(other.impl_) {}
 
   ParamGenerator& operator=(co.. ParamGenerator& other) {
@@ -403,7 +403,7 @@ template <n.. TestClass>
 n.. ParameterizedTestFactory : pu.. TestFactoryBase {
  p..
   t_d_ typename TestClass::ParamType ParamType;
-  explicit ParameterizedTestFactory(ParamType parameter) :
+  ex__ ParameterizedTestFactory(ParamType parameter) :
       parameter_(parameter) {}
   v.. Test* CreateTest() {
     TestClass::SetParam(&parameter_);
@@ -501,7 +501,7 @@ n.. ParameterizedTestCaseInfo : pu.. ParameterizedTestCaseInfoBase {
   t_d_ ParamGenerator<ParamType>(GeneratorCreationFunc)();
   t_d_ typename ParamNameGenFunc<ParamType>::Type ParamNameGeneratorFunc;
 
-  explicit ParameterizedTestCaseInfo(
+  ex__ ParameterizedTestCaseInfo(
       co.. ch..* name, CodeLocation code_location)
       : test_case_name_(name), code_location_(code_location) {}
 

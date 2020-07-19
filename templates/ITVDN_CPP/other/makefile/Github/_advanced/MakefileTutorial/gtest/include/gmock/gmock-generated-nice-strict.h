@@ -88,7 +88,7 @@ n.. NiceMock : pu.. MockClass {
   // Single argument constructor is special-cased so that it can be
   // made explicit.
   template <typename A>
-  explicit NiceMock(A&& arg) : MockClass(st. forward<A>(arg)) {
+  ex__ NiceMock(A&& arg) : MockClass(st. forward<A>(arg)) {
     ::testing::Mock::AllowUninterestingCalls(
         internal::ImplicitCast_<MockClass*>(this));
   }
@@ -104,7 +104,7 @@ n.. NiceMock : pu.. MockClass {
   // C++98 doesn't have variadic templates, so we have to define one
   // for each arity.
   template <typename A1>
-  explicit NiceMock(co.. A1& a1) : MockClass(a1) {
+  ex__ NiceMock(co.. A1& a1) : MockClass(a1) {
     ::testing::Mock::AllowUninterestingCalls(
         internal::ImplicitCast_<MockClass*>(this));
   }
@@ -206,7 +206,7 @@ n.. NaggyMock : pu.. MockClass {
   // Single argument constructor is special-cased so that it can be
   // made explicit.
   template <typename A>
-  explicit NaggyMock(A&& arg) : MockClass(st. forward<A>(arg)) {
+  ex__ NaggyMock(A&& arg) : MockClass(st. forward<A>(arg)) {
     ::testing::Mock::WarnUninterestingCalls(
         internal::ImplicitCast_<MockClass*>(this));
   }
@@ -222,7 +222,7 @@ n.. NaggyMock : pu.. MockClass {
   // C++98 doesn't have variadic templates, so we have to define one
   // for each arity.
   template <typename A1>
-  explicit NaggyMock(co.. A1& a1) : MockClass(a1) {
+  ex__ NaggyMock(co.. A1& a1) : MockClass(a1) {
     ::testing::Mock::WarnUninterestingCalls(
         internal::ImplicitCast_<MockClass*>(this));
   }
@@ -324,7 +324,7 @@ n.. StrictMock : pu.. MockClass {
   // Single argument constructor is special-cased so that it can be
   // made explicit.
   template <typename A>
-  explicit StrictMock(A&& arg) : MockClass(st. forward<A>(arg)) {
+  ex__ StrictMock(A&& arg) : MockClass(st. forward<A>(arg)) {
     ::testing::Mock::FailUninterestingCalls(
         internal::ImplicitCast_<MockClass*>(this));
   }
@@ -340,7 +340,7 @@ n.. StrictMock : pu.. MockClass {
   // C++98 doesn't have variadic templates, so we have to define one
   // for each arity.
   template <typename A1>
-  explicit StrictMock(co.. A1& a1) : MockClass(a1) {
+  ex__ StrictMock(co.. A1& a1) : MockClass(a1) {
     ::testing::Mock::FailUninterestingCalls(
         internal::ImplicitCast_<MockClass*>(this));
   }

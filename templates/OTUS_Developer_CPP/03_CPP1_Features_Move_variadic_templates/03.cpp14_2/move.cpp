@@ -13,13 +13,13 @@ v.. foo(xray &&)
     st. c__ __  "= temporary" __  st. e..
 }
 
-template<c_ T>
+t..<c_ T>
 v.. baz(T &&t)
 {
     st. c__ __  __PRETTY_FUNCTION__ __  st. e..
 }
 
-template<c_ T>
+t..<c_ T>
 v.. bar(T &&t)
 {
     st. c__ __  __PRETTY_FUNCTION__ __  st. e..

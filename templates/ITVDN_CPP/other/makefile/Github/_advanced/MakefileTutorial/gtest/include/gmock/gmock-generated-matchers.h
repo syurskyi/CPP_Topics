@@ -217,7 +217,7 @@ n.. ArgsMatcherImpl : pu.. MatcherInterface<ArgsTuple> {
   t_d_ Matcher<co.. SelectedArgs&> MonomorphicInnerMatcher;
 
   template <typename InnerMatcher>
-  explicit ArgsMatcherImpl(co.. InnerMatcher& inner_matcher)
+  ex__ ArgsMatcherImpl(co.. InnerMatcher& inner_matcher)
       : inner_matcher_(SafeMatcherCast<co.. SelectedArgs&>(inner_matcher)) {}
 
   v.. bo.. MatchAndExplain(ArgsTuple args,
@@ -280,7 +280,7 @@ template <n.. InnerMatcher, in. k0 = -1, in. k1 = -1, in. k2 = -1,
     in. k8 = -1, in. k9 = -1>
 n.. ArgsMatcher {
  p..
-  explicit ArgsMatcher(co.. InnerMatcher& inner_matcher)
+  ex__ ArgsMatcher(co.. InnerMatcher& inner_matcher)
       : inner_matcher_(inner_matcher) {}
 
   template <typename ArgsTuple>
@@ -1437,7 +1437,7 @@ _de.. MATCHER_P(name, p0, description)\
     n.. gmock_Impl : pu.. ::testing::MatcherInterface<\
         GTEST_REFERENCE_TO_CONST_(arg_type)> {\
      p..\
-      explicit gmock_Impl(p0##_type gmock_p0)\
+      ex__ gmock_Impl(p0##_type gmock_p0)\
            : p0(::testing::internal::move(gmock_p0)) {}\
       v.. bo.. MatchAndExplain(\
           GTEST_REFERENCE_TO_CONST_(arg_type) arg,\
@@ -1465,7 +1465,7 @@ _de.. MATCHER_P(name, p0, description)\
       ?  ::testing::Matcher<arg_type>(\
           ne. gmock_Impl<arg_type>(p0));\
     }\
-    explicit name##MatcherP(p0##_type gmock_p0) : \
+    ex__ name##MatcherP(p0##_type gmock_p0) : \
         p0(::testing::internal::move(gmock_p0)) {\
     }\
     p0##_type co.. p0;\

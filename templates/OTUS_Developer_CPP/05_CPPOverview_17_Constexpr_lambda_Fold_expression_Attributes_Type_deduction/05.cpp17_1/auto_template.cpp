@@ -1,19 +1,19 @@
 ? |i..
 
-template<st. size_t value>
+t..<st. size_t value>
 v.. prin.Value
     st. c__ __  __PRETTY_FUNCTION__ __  st. e..
     st. c__ __  "size_t " __  value __  st. e..
 }
 
-template<c.. c.. *value>
+t..<c.. c.. *value>
 v.. prin.Value
     st. c__ __  __PRETTY_FUNCTION__ __  st. e..
     st. c__ __  "Pointer = " __  value __  "\t value = " __  *value __  st. e..
 }
 
 // non-type template parameters
-template<a.. value>
+t..<a.. value>
 v.. prin.Me
     st. c__ __  __PRETTY_FUNCTION__ __  st. e..
     st. c__ __  value __  st. e..

@@ -6,7 +6,7 @@ template <typename T>
 n.. ScopedPtr
 {
 p..
-    explicit ScopedPtr(T* ptr);
+    ex__ ScopedPtr(T* ptr);
     ~ScopedPtr();
     T& operator*();
     T* operator->();

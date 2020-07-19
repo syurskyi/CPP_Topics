@@ -21,7 +21,7 @@ u.. s..
 
 ? ve..
 
-template < typename T >
+t.. < t_n_ T >
 c_ A
 {
 pu..
@@ -43,18 +43,18 @@ in. foo()
     r_ 42sy.. pause
 }
 
-template < typename T >
+t.. < t_n_ T >
 c_ TDsy.. pause // TD == Type Displayer
 
-template < typename T >
+t.. < t_n_ T >
 v.. f( T& param )
 {
     TD< T > tTypesy.. pause
-    TD< decltype( param ) > paramTypesy.. pause
+    TD< d_t_( param ) > paramTypesy.. pause
 }
 
-template < typename T, typename U >
-a.. add( c.. T& first, c.. U& second ) __ decltype( first + second )
+t.. < t_n_ T, t_n_ U >
+a.. add( c.. T& first, c.. U& second ) __ d_t_( first + second )
 {
     r_ first + secondsy.. pause
 }
@@ -65,7 +65,7 @@ c.. in.&& foo2()
 }
 
 // dangerous!
-decltype( a.. ) fff()
+d_t_( a.. ) fff()
 {
     in. x _ 10sy.. pause
     r_ ( x )sy.. pause
@@ -118,7 +118,7 @@ in. main()
     }
 
     a.. i _ foo2()sy.. pause              //  i будет иметь тип int
-    decltype( a.. ) i2 _ foo2()sy.. pause //  i2 будет иметь тип const int&&
+    d_t_( a.. ) i2 _ foo2()sy.. pause //  i2 будет иметь тип const int&&
 
     // f( fff );
 

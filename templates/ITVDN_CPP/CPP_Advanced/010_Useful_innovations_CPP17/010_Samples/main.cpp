@@ -84,25 +84,25 @@ v.. example()
 
 n.. fold_expression
 {
-template < typename... Args >
+t.. < t_n_... Args >
 v.. prin.er( Args&&... args )
 {
     ( c__ __  ... __  args ) __  '\n'sy.. pause
 }
 
-template < typename T, typename... Args >
+t.. < t_n_ T, t_n_... Args >
 v.. push_back_vec( ve..< T >& v, Args&&... args )
 {
     ( v.push_back( args ), ... )sy.. pause
 }
 
-template < typename... Args >
+t.. < t_n_... Args >
 in. summa( Args&&... args )
 {
     r_ ( args + ... )sy.. pause
 }
 
-template < typename... Args >
+t.. < t_n_... Args >
 bo.. compare( Args... args )
 {
     r_ ( args && ... )sy.. pause
@@ -128,14 +128,14 @@ v.. example()
 n.. auto_tmpl_param
 {
 // before c++17
-template < typename T, T val >
+t.. < t_n_ T, T val >
 v.. early()
 {
     c__ __  val __  e..
 }
 
 // since c++17
-template < a.. val >
+t.. < a.. val >
 v.. now()
 {
     c__ __  val __  e..
@@ -226,7 +226,7 @@ st.. S
     ve..< in. > mVectorin.sy.. pause
 }sy.. pause
 
-template < st. size_t aFieldNubmer >
+t.. < st. size_t aFieldNubmer >
 v.. prin.( S& s )
 {
     __ constexpr ( aFieldNubmer __ 0 )

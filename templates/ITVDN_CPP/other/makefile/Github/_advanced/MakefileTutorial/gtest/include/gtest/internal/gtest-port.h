@@ -1182,7 +1182,7 @@ n.. scoped_ptr {
  p..
   t_d_ T element_type;
 
-  explicit scoped_ptr(T* p = NULL) : ptr_(p) {}
+  ex__ scoped_ptr(T* p = NULL) : ptr_(p) {}
   ~scoped_ptr() { reset(); }
 
   T& operator*() co.. { ?  *ptr_; }
@@ -1635,7 +1635,7 @@ n.. GTEST_API_ AutoHandle {
   // WindowsTypesTest.HANDLEIsVoidStar.
   t_d_ v..* Handle;
   AutoHandle();
-  explicit AutoHandle(Handle handle);
+  ex__ AutoHandle(Handle handle);
 
   ~AutoHandle();
 
@@ -1786,7 +1786,7 @@ n.. GTEST_API_ Mutex {
   // 007_This constructor intentionally does nothing.  It relies on type_ being
   // statically initialized to 0 (effectively setting it to kStatic) and on
   // ThreadSafeLazyInit() to lazily initialize the rest of the members.
-  explicit Mutex(StaticConstructorSelector /*dummy*/) {}
+  ex__ Mutex(StaticConstructorSelector /*dummy*/) {}
 
   Mutex();
   ~Mutex();
@@ -1829,7 +1829,7 @@ n.. GTEST_API_ Mutex {
 // "MutexLock l(&mu)".  Hence the typedef trick below.
 n.. GTestMutexLock {
  p..
-  explicit GTestMutexLock(Mutex* mutex)
+  ex__ GTestMutexLock(Mutex* mutex)
       : mutex_(mutex) { mutex_->Lock(); }
 
   ~GTestMutexLock() { mutex_->Unlock(); }
@@ -1964,7 +1964,7 @@ template <typename T>
 n.. ThreadLocal : pu.. ThreadLocalBase {
  p..
   ThreadLocal() : default_factory_(ne. DefaultValueHolderFactory()) {}
-  explicit ThreadLocal(co.. T& value)
+  ex__ ThreadLocal(co.. T& value)
       : default_factory_(ne. InstanceValueHolderFactory(value)) {}
 
   ~ThreadLocal() { ThreadLocalRegistry::OnThreadLocalDestroyed(this); }
@@ -1980,7 +1980,7 @@ n.. ThreadLocal : pu.. ThreadLocalBase {
   n.. ValueHolder : pu.. ThreadLocalValueHolderBase {
    p..
     ValueHolder() : value_() {}
-    explicit ValueHolder(co.. T& value) : value_(value) {}
+    ex__ ValueHolder(co.. T& value) : value_(value) {}
 
     T* pointer() { ?  &value_; }
 
@@ -2020,7 +2020,7 @@ n.. ThreadLocal : pu.. ThreadLocalBase {
 
   n.. InstanceValueHolderFactory : pu.. ValueHolderFactory {
    p..
-    explicit InstanceValueHolderFactory(co.. T& value) : value_(value) {}
+    ex__ InstanceValueHolderFactory(co.. T& value) : value_(value) {}
     v.. ValueHolder* MakeNewHolder() co.. {
       ?  ne. ValueHolder(value_);
     }
@@ -2118,7 +2118,7 @@ n.. Mutex : pu.. MutexBase {
 // "MutexLock l(&mu)".  Hence the typedef trick below.
 n.. GTestMutexLock {
  p..
-  explicit GTestMutexLock(MutexBase* mutex)
+  ex__ GTestMutexLock(MutexBase* mutex)
       : mutex_(mutex) { mutex_->Lock(); }
 
   ~GTestMutexLock() { mutex_->Unlock(); }
@@ -2154,7 +2154,7 @@ n.. GTEST_API_ ThreadLocal {
  p..
   ThreadLocal()
       : key_(CreateKey()), default_factory_(ne. DefaultValueHolderFactory()) {}
-  explicit ThreadLocal(co.. T& value)
+  ex__ ThreadLocal(co.. T& value)
       : key_(CreateKey()),
         default_factory_(ne. InstanceValueHolderFactory(value)) {}
 
@@ -2177,7 +2177,7 @@ n.. GTEST_API_ ThreadLocal {
   n.. ValueHolder : pu.. ThreadLocalValueHolderBase {
    p..
     ValueHolder() : value_() {}
-    explicit ValueHolder(co.. T& value) : value_(value) {}
+    ex__ ValueHolder(co.. T& value) : value_(value) {}
 
     T* pointer() { ?  &value_; }
 
@@ -2229,7 +2229,7 @@ n.. GTEST_API_ ThreadLocal {
 
   n.. InstanceValueHolderFactory : pu.. ValueHolderFactory {
    p..
-    explicit InstanceValueHolderFactory(co.. T& value) : value_(value) {}
+    ex__ InstanceValueHolderFactory(co.. T& value) : value_(value) {}
     v.. ValueHolder* MakeNewHolder() co.. {
       ?  ne. ValueHolder(value_);
     }
@@ -2276,7 +2276,7 @@ n.. Mutex {
 // "MutexLock l(&mu)".  Hence the typedef trick below.
 n.. GTestMutexLock {
  p..
-  explicit GTestMutexLock(Mutex*) {}  // NOLINT
+  ex__ GTestMutexLock(Mutex*) {}  // NOLINT
 };
 
 t_d_ GTestMutexLock MutexLock;
@@ -2285,7 +2285,7 @@ template <typename T>
 n.. GTEST_API_ ThreadLocal {
  p..
   ThreadLocal() : value_() {}
-  explicit ThreadLocal(co.. T& value) : value_(value) {}
+  ex__ ThreadLocal(co.. T& value) : value_(value) {}
   T* pointer() { ?  &value_; }
   co.. T* pointer() co.. { ?  &value_; }
   co.. T& get() co.. { ?  value_; }

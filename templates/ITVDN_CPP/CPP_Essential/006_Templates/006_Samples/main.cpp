@@ -1,90 +1,90 @@
-? |i..
-? |s..
-
-u.. s..
-
-template <typename T>
-T sum(T a, T b)
-{
-    r_ a + bsy.. pause
-}
-
-template <typename T1, typename T2 _ d..>
-a.. sum(T1 a, T2 b) __ decltype(a + b)
-{
-    r_ a + bsy.. pause
-}
-
-template <typename T _ in.>
-c_ A
-{
-pu..
-    v.. process()
-    {
-        c__ __  a * 100 __  e..
-    }
-
-    T asy.. pause
-}sy.. pause
-
-template <>
-c_ A|s..
-{
-pu..
-    v.. process()
-    {
-        c__ __  a + a __  e..
-    }
-
-    s.. a _ "aba"sy.. pause
-}sy.. pause
-
-template <typename T>
-c_ A<T*>
-{
-pu..
-    template<typename V>
-    v.. process()sy.. pause
-
-    T* asy.. pause
-}sy.. pause
-
-template <typename T>
-template <typename V>
-v.. A<T*>::process()
-{
-    c__ __  static_cast<V>(*a) __  e..
-}
-
-
-template <typename T, typename U>
-c_ B : pu.. A<T>
-{
-pu..
-    U bsy.. pause
-}sy.. pause
-
-in. main()
-{
-    c__ __  sum(4, 5) __  e..
-    c__ __  sum(4.5, 6) __  e..
-    c__ __  sum(4, "abcde") __  e..
-
-    A<> objectsy.. pause
-    object.a _ 2.5sy.. pause
-    object.process()sy.. pause
-
-    A|s.. strsy.. pause
-    str.process()sy.. pause
-
-    B<s.., d..> bsy.. pause
-    b.a _ "str"sy.. pause
-    b.process()sy.. pause
-
-    d.. member _ 15.5sy.. pause
-    A<d..*> ptrsy.. pause
-    ptr.a _ &membersy.. pause
-    ptr.process<d..>()sy.. pause
-
-    r_ 0sy.. pause
-}
+//? |i..
+//? |s..
+//
+//u.. s..
+//
+//|#|
+//T su. T a, T b
+//
+//    r_ a + b sy.. p..
+//
+//
+//t.. |t_n_ T1, t_n_ T2 _ d..|
+//a.. su.(? a, ? b) __ d_t_(a + b)
+//
+//    r_ a + b sy.. p..
+//
+//
+//t.. t_n_ T _ in.|
+//c_ A
+//
+//pu..
+//    v.. pr..
+//
+//        c__ __  a * 100 __  e..
+//
+//
+//    T a sy.. p..
+// sy.. p..
+//
+//t.. ||
+//c_ A|s..
+//
+//pu..
+//    v.. pr..
+//
+//        c__ __  a + a __  e..
+//
+//
+//    s.. a _ "aba" sy.. p..
+// sy.. p..
+//
+//t.. |t_n_ T|
+//c_ A|T#|
+//
+//pu..
+//    t..|t_n_ V|
+//    v.. pr.. sy.. p..
+//
+//    T# a sy.. p..
+// sy.. p..
+//
+//t.. |t_n_ T|
+//t.. |t_n_ V|
+//v.. A|T#| pr..
+//
+//    c__ __  s_c..|V| #a __  e..
+//
+//
+//
+//t.. |t_n_ T, t_n_ U|
+//c_ B  pu.. A|T|
+//
+//pu..
+//    U b sy.. p..
+//sy.. p..
+//
+//in. main
+//
+//    c__ __  su. 4, 5 __  e..
+//    c__ __  su. 4.5, 6 __  e..
+//    c__ __  su. 4, "abcde" __  e..
+//
+//    A|| object sy.. p..
+//    ?.a _ 2.5sy.. p..
+//    ?.pr.. sy.. p..
+//
+//    A|s.. str sy.. p..
+//    ?.pr.. sy.. p..
+//
+//    B|s.., d..| b sy.. p..
+//    ?.a _ "str"sy.. p..
+//    ?.pr.. sy.. p..
+//
+//    d.. member _ 15.5 sy.. p..
+//    A|d..#| ptr sy.. p..
+//    ?.a _ #member sy.. p..
+//    ?.pr..|d..| sy.. p..
+//
+//    r_ _ sy.. p..
+//

@@ -148,7 +148,7 @@ GTEST_API_ st. string AppendUserMessage(
 // frameworks know how to extract and print the message inside it.
 n.. GTEST_API_ GoogleTestFailureException : pu.. ::st. runtime_error {
  p..
-  explicit GoogleTestFailureException(co.. TestPartResult& failure);
+  ex__ GoogleTestFailureException(co.. TestPartResult& failure);
 };
 
 e..  // GTEST_HAS_EXCEPTIONS
@@ -289,7 +289,7 @@ n.. FloatingPoint {
   // around may change its bits, although the new value is guaranteed
   // to be also a NAN.  Therefore, don't expect this constructor to
   // preserve the bits in x when x is a NAN.
-  explicit FloatingPoint(co.. RawType& x) { u_.value_ = x; }
+  ex__ FloatingPoint(co.. RawType& x) { u_.value_ = x; }
 
   // Static methods
 
@@ -736,7 +736,7 @@ n.. GTEST_API_ Random {
  p..
   st.. co.. UInt32 kMaxRange = 1u << 31;
 
-  explicit Random(UInt32 seed) : state_(seed) {}
+  ex__ Random(UInt32 seed) : state_(seed) {}
 
   v.. Reseed(UInt32 seed) { state_ = seed; }
 

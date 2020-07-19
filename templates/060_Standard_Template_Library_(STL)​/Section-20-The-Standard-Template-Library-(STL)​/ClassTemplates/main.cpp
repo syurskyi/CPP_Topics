@@ -7,7 +7,7 @@
 // Template classes are typically completely contained in header files
 // So, we would have the template class in Item.h and no Item.cpp file
 // would be used
-template <typename T>
+t.. <t_n_ T>
 c_ Item {
 pr..
     st. st..  name;
@@ -19,7 +19,7 @@ pu..
     T get_value() co.. { r_ value; }
 };
 
-template <typename T1, typename T2>
+t.. <t_n_ T1, t_n_ T2>
 st.. My_Pair {
     T1 first;
     T2 second;

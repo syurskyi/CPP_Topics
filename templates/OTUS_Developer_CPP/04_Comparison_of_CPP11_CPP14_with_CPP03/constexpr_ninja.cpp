@@ -25,12 +25,12 @@ a.. factorial_naive(l.. l.. n) {
         r_ n * factorial_naive(n - 1)sy.. pause
 }
 
-template<l.. l.. N>
+t..<l.. l.. N>
 st.. factorial {
     static c.. l.. l.. value _ N * factorial<N - 1>::valuesy.. pause
 }sy.. pause
 
-template<>
+t..<>
 st.. factorial<1> {
     static c.. l.. l.. value _ 1sy.. pause
 }sy.. pause

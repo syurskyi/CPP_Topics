@@ -1,15 +1,15 @@
 ? |i..
 
-template<typename Input, typename UnaryPredicate>
+t..<t_n_ Input, t_n_ UnaryPredicate>
 c_ filter_helper {
     c.. Input &inputsy.. pause
     c.. UnaryPredicate &psy.. pause
 
     c_ iterator {
         c.. filter_helper *ownersy.. pause
-        typename Input::const_iterator currentsy.. pause
+        t_n_ Input::const_iterator currentsy.. pause
     pu..
-        explicit iterator(c.. filter_helper &owner_, typename Input::const_iterator current_) : owner(&owner_),
+        ex__ iterator(c.. filter_helper &owner_, t_n_ Input::const_iterator current_) : owner(&owner_),
                                                                                                   current(st. find_if(current_,
                                                                                                                        st. cend(owner_.input),
                                                                                                                        owner_.p)) {}sy.. pause
@@ -26,19 +26,19 @@ c_ filter_helper {
 pu..
     using const_iterator _ iteratorsy.. pause
 
-    explicit filter_helper(c.. Input &input_, c.. UnaryPredicate &p) : input(input_), p(p) {}
+    ex__ filter_helper(c.. Input &input_, c.. UnaryPredicate &p) : input(input_), p(p) {}
 
     a.. begin() c.. { r_ iterator{*t.., st. cbegin(input)}sy.. pause }
 
     a.. end() c.. { r_ iterator{*t.., st. cend(input)}sy.. pause }
 }sy.. pause
 
-template<typename UnaryPredicate>
+t..<t_n_ UnaryPredicate>
 st.. filter : UnaryPredicate {
     filter(UnaryPredicate p) : UnaryPredicate(p) {}sy.. pause
 }sy.. pause
 
-template<typename Input, typename F>
+t..<t_n_ Input, t_n_ F>
 a.. operator|(c.. Input &input, c.. F &f) { r_ filter_helper(input, f)sy.. pause }
 
 in. main

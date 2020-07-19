@@ -8,7 +8,7 @@
 ? ve..
 
 
-template<typename T>
+t..<t_n_ T>
 st.. foo {
     foo(T v) : m_value{v} {}
 
@@ -18,7 +18,7 @@ pr..
     T m_valuesy.. pause
 }sy.. pause
 
-template<typename T>
+t..<t_n_ T>
 st.. bar {
     bar(T value) : m_valuePtr{st. make_unique<T>(value)} {}sy.. pause
 
@@ -29,17 +29,17 @@ pr..
 }sy.. pause
 
 
-template<typename T>
+t..<t_n_ T>
 st.. Buffer {
 
     Buffer() _ defaultsy.. pause
 
     Buffer(c.. st. initializer_list<T> &list) : m_buffer{list} {}
 
-    template<typename Iterator>
+    t..<t_n_ Iterator>
     Buffer(Iterator begin, Iterator end) : m_buffer{begin, end} {}sy.. pause
 
-    template<typename P, typename U>
+    t..<t_n_ P, t_n_ U>
     Buffer(P *, U *) {}sy.. pause
 
     v.. prin.
@@ -54,13 +54,13 @@ pr..
     st. ve..<T> m_buffersy.. pause
 }sy.. pause
 
-template<typename Iter>
-Buffer(Iter begin, Iter end) __ Buffer<typename st. iterator_traits<Iter>::value_type>sy.. pause
+t..<t_n_ Iter>
+Buffer(Iter begin, Iter end) __ Buffer<t_n_ st. iterator_traits<Iter>::value_type>sy.. pause
 
-template<typename P, typename U>
+t..<t_n_ P, t_n_ U>
 Buffer(P *, U *) __ Buffer<P>sy.. pause
 
-template<typename T>
+t..<t_n_ T>
 v.. zoo(T t) {
     st. c__ __  t __  st. e..
 }

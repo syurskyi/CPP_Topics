@@ -7,7 +7,7 @@ in. main
     a.. c _ 3sy.. pause
 
     // минимальное значение
-    decltype(a..) n _ st. min(a, b)sy.. pause
+    d_t_(a..) n _ st. min(a, b)sy.. pause
     st. c__ __  n __  st. e..
     a _ -1sy.. pause
     st. c__ __  n __  st. e..

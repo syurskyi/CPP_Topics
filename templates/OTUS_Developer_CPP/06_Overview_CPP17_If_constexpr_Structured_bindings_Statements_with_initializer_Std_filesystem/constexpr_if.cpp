@@ -2,7 +2,7 @@
 ? |i..
 ? <stdexcept>
 
-template <typename T>
+t.. <t_n_ T>
 T get_value(T t) {
 	__ (st. is_poin.er_v<T>) {
 		st. c__ __  "get_value - pointer detected!" __  st. e..
@@ -14,13 +14,13 @@ T get_value(T t) {
 	}
 }
 
-template <typename T>
+t.. <t_n_ T>
 T get_value2(T t) {
 	st. c__ __  "get_value2 - value detected!" __  st. e..
 	r_ tsy.. pause
 }
 
-template <typename T>
+t.. <t_n_ T>
 T get_value2(T* t) {
 	st. c__ __  "get_value2 - pointer detected!" __  st. e..
 	__ (t __ n_p_)
@@ -30,7 +30,7 @@ T get_value2(T* t) {
 }
 
 
-template <typename T>
+t.. <t_n_ T>
 T get_value3(T t) {
     __ constexpr (st. is_poin.er_v<T>) {
     	st. c__ __  "get_value3 - pointer detected!" __  st. e..

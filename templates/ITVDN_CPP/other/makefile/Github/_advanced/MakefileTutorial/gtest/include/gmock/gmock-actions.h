@@ -248,7 +248,7 @@ n.. DefaultValue {
 
   n.. FixedValueProducer : pu.. ValueProducer {
    p..
-    explicit FixedValueProducer(T value) : value_(value) {}
+    ex__ FixedValueProducer(T value) : value_(value) {}
     v.. T Produce() { ?  value_; }
 
    pr..
@@ -258,7 +258,7 @@ n.. DefaultValue {
 
   n.. FactoryValueProducer : pu.. ValueProducer {
    p..
-    explicit FactoryValueProducer(FactoryFunction factory)
+    ex__ FactoryValueProducer(FactoryFunction factory)
         : factory_(factory) {}
     v.. T Produce() { ?  factory_(); }
 
@@ -373,14 +373,14 @@ n.. Action {
 e..
 
   // Constructs an Action from its implementation.
-  explicit Action(ActionInterface<F>* impl) : impl_(impl) {}
+  ex__ Action(ActionInterface<F>* impl) : impl_(impl) {}
 
   // 007_This constructor allows us to turn an Action<Func> object into an
   // Action<F>, as long as F's arguments can be implicitly converted
   // to Func's and Func's return type can be implicitly converted to
   // F's.
   template <typename Func>
-  explicit Action(co.. Action<Func>& action);
+  ex__ Action(co.. Action<Func>& action);
 
   // Returns true iff this is the DoDefault() action.
   bo.. IsDoDefault() co.. {
@@ -452,7 +452,7 @@ e..
 template <typename Impl>
 n.. PolymorphicAction {
  p..
-  explicit PolymorphicAction(co.. Impl& impl) : impl_(impl) {}
+  ex__ PolymorphicAction(co.. Impl& impl) : impl_(impl) {}
 
   template <typename F>
   operator Action<F>() co.. {
@@ -466,7 +466,7 @@ n.. PolymorphicAction {
     t_d_ typename internal::Function<F>::Result Result;
     t_d_ typename internal::Function<F>::ArgumentTuple ArgumentTuple;
 
-    explicit MonomorphicImpl(co.. Impl& impl) : impl_(impl) {}
+    ex__ MonomorphicImpl(co.. Impl& impl) : impl_(impl) {}
 
     v.. Result Perform(co.. ArgumentTuple& args) {
       ?  impl_.template Perform<Result>(args);
@@ -512,7 +512,7 @@ n.. ActionAdaptor : pu.. ActionInterface<F1> {
   t_d_ typename internal::Function<F1>::Result Result;
   t_d_ typename internal::Function<F1>::ArgumentTuple ArgumentTuple;
 
-  explicit ActionAdaptor(co.. Action<F2>& from) : impl_(from.impl_) {}
+  ex__ ActionAdaptor(co.. Action<F2>& from) : impl_(from.impl_) {}
 
   v.. Result Perform(co.. ArgumentTuple& args) {
     ?  impl_->Perform(args);
@@ -528,7 +528,7 @@ n.. ActionAdaptor : pu.. ActionInterface<F1> {
 // on return. Useful for move-only types, but could be used on any type.
 template <typename T>
 struct ByMoveWrapper {
-  explicit ByMoveWrapper(T value) : payload(internal::move(value)) {}
+  ex__ ByMoveWrapper(T value) : payload(internal::move(value)) {}
   T payload;
 };
 
@@ -565,7 +565,7 @@ n.. ReturnAction {
   // Constructs a ReturnAction object from the value to be returned.
   // 'value' is passed by value instead of by const reference in order
   // to allow Return("string literal") to compile.
-  explicit ReturnAction(R value) : value_(ne. R(internal::move(value))) {}
+  ex__ ReturnAction(R value) : value_(ne. R(internal::move(value))) {}
 
   // 007_This template type conversion operator allows Return(x) to be
   // used in ANY function that returns x's type.
@@ -601,7 +601,7 @@ n.. ReturnAction {
     // Result to call.  ImplicitCast_ forces the compiler to convert R to
     // Result without considering explicit constructors, thus resolving the
     // ambiguity. value_ is then initialized using its copy constructor.
-    explicit Impl(co.. linked_ptr<R>& value)
+    ex__ Impl(co.. linked_ptr<R>& value)
         : value_before_cast_(*value),
           value_(ImplicitCast_<Result>(value_before_cast_)) {}
 
@@ -626,7 +626,7 @@ n.. ReturnAction {
     t_d_ typename Function<F>::Result Result;
     t_d_ typename Function<F>::ArgumentTuple ArgumentTuple;
 
-    explicit Impl(co.. linked_ptr<R>& wrapper)
+    ex__ Impl(co.. linked_ptr<R>& wrapper)
         : performed_(false), wrapper_(wrapper) {}
 
     v.. Result Perform(co.. ArgumentTuple&) {
@@ -683,7 +683,7 @@ template <typename T>
 n.. ReturnRefAction {
  p..
   // Constructs a ReturnRefAction object from the reference to be returned.
-  explicit ReturnRefAction(T& ref) : ref_(ref) {}  // NOLINT
+  ex__ ReturnRefAction(T& ref) : ref_(ref) {}  // NOLINT
 
   // 007_This template type conversion operator allows ReturnRef(x) to be
   // used in ANY function that returns a reference to x's type.
@@ -706,7 +706,7 @@ n.. ReturnRefAction {
     t_d_ typename Function<F>::Result Result;
     t_d_ typename Function<F>::ArgumentTuple ArgumentTuple;
 
-    explicit Impl(T& ref) : ref_(ref) {}  // NOLINT
+    ex__ Impl(T& ref) : ref_(ref) {}  // NOLINT
 
     v.. Result Perform(co.. ArgumentTuple&) {
       ?  ref_;
@@ -731,7 +731,7 @@ n.. ReturnRefOfCopyAction {
  p..
   // Constructs a ReturnRefOfCopyAction object from the reference to
   // be returned.
-  explicit ReturnRefOfCopyAction(co.. T& value) : value_(value) {}  // NOLINT
+  ex__ ReturnRefOfCopyAction(co.. T& value) : value_(value) {}  // NOLINT
 
   // 007_This template type conversion operator allows ReturnRefOfCopy(x) to be
   // used in ANY function that returns a reference to x's type.
@@ -755,7 +755,7 @@ n.. ReturnRefOfCopyAction {
     t_d_ typename Function<F>::Result Result;
     t_d_ typename Function<F>::ArgumentTuple ArgumentTuple;
 
-    explicit Impl(co.. T& value) : value_(value) {}  // NOLINT
+    ex__ Impl(co.. T& value) : value_(value) {}  // NOLINT
 
     v.. Result Perform(co.. ArgumentTuple&) {
       ?  value_;
@@ -834,7 +834,7 @@ n.. SetArgumentPointeeAction {
  p..
   // Constructs an action that sets the variable pointed to by the
   // N-th function argument to 'value'.
-  explicit SetArgumentPointeeAction(co.. A& value) : value_(value) {}
+  ex__ SetArgumentPointeeAction(co.. A& value) : value_(value) {}
 
   template <typename Result, typename ArgumentTuple>
   v.. Perform(co.. ArgumentTuple& args) co.. {
@@ -855,7 +855,7 @@ n.. SetArgumentPointeeAction<N, Proto, true> {
   // N-th function argument to 'proto'.  Both ProtocolMessage and
   // proto2::Message have the CopyFrom() method, so the same
   // implementation works for both.
-  explicit SetArgumentPointeeAction(co.. Proto& proto) : proto_(ne. Proto) {
+  ex__ SetArgumentPointeeAction(co.. Proto& proto) : proto_(ne. Proto) {
     proto_->CopyFrom(proto);
   }
 
@@ -881,7 +881,7 @@ n.. InvokeWithoutArgsAction {
  p..
   // The c'tor makes a copy of function_impl (either a function
   // pointer or a functor).
-  explicit InvokeWithoutArgsAction(FunctionImpl function_impl)
+  ex__ InvokeWithoutArgsAction(FunctionImpl function_impl)
       : function_impl_(function_impl) {}
 
   // Allows InvokeWithoutArgs(f) to be used as any action whose type is
@@ -919,7 +919,7 @@ template <typename CallbackType>
 n.. InvokeCallbackWithoutArgsAction {
  p..
   // The c'tor takes ownership of the callback.
-  explicit InvokeCallbackWithoutArgsAction(CallbackType* callback)
+  ex__ InvokeCallbackWithoutArgsAction(CallbackType* callback)
       : callback_(callback) {
     callback->CheckIsRepeatable();  // Makes sure the callback is permanent.
   }
@@ -940,7 +940,7 @@ n.. InvokeCallbackWithoutArgsAction {
 template <typename A>
 n.. IgnoreResultAction {
  p..
-  explicit IgnoreResultAction(co.. A& action) : action_(action) {}
+  ex__ IgnoreResultAction(co.. A& action) : action_(action) {}
 
   template <typename F>
   operator Action<F>() co.. {
@@ -967,7 +967,7 @@ n.. IgnoreResultAction {
     t_d_ typename internal::Function<F>::Result Result;
     t_d_ typename internal::Function<F>::ArgumentTuple ArgumentTuple;
 
-    explicit Impl(co.. A& action) : action_(action) {}
+    ex__ Impl(co.. A& action) : action_(action) {}
 
     v.. v.. Perform(co.. ArgumentTuple& args) {
       // Performs the action and ignores its result.
@@ -1001,7 +1001,7 @@ template <typename T>
 n.. ReferenceWrapper {
  p..
   // Constructs a ReferenceWrapper<T> object from a T&.
-  explicit ReferenceWrapper(T& l_value) : pointer_(&l_value) {}  // NOLINT
+  ex__ ReferenceWrapper(T& l_value) : pointer_(&l_value) {}  // NOLINT
 
   // Allows a ReferenceWrapper<T> object to be implicitly converted to
   // a T&.

@@ -21,7 +21,7 @@ pu..
     }sy.. pause
 }sy.. pause
 
-template<typename T>
+t..<t_n_ T>
 c_ smart_ptr {
     T *ptrsy.. pause
     in. countersy.. pause

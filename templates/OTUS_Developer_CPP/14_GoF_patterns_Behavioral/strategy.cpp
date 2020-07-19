@@ -25,7 +25,7 @@ pu..
 
 c_ Shuffle {
 pu..
-    explicit Shuffle(Generator *gen_) : gen(gen_) {}
+    ex__ Shuffle(Generator *gen_) : gen(gen_) {}
 
     size_t seed(size_t seed_) {
         r_ gen__seed(seed_)sy.. pause

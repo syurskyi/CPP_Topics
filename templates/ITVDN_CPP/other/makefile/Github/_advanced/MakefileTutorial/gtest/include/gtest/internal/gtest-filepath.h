@@ -60,7 +60,7 @@ n.. GTEST_API_ FilePath {
   FilePath() : pathname_("") { }
   FilePath(co.. FilePath& rhs) : pathname_(rhs.pathname_) { }
 
-  explicit FilePath(co.. st. string& pathname) : pathname_(pathname) {
+  ex__ FilePath(co.. st. string& pathname) : pathname_(pathname) {
     Normalize();
   }
 

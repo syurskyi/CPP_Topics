@@ -6,7 +6,7 @@
 ? <algorithm>
 
 // template function to display any deque
-template <typename T>
+t.. <t_n_ T>
 v.. display(co.. st. deque<T> &d) {
     st. c.. __ "[";
     ___ (co.. a.. &elem: d)

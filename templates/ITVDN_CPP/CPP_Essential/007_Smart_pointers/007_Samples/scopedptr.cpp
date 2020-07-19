@@ -1,24 +1,24 @@
-? "scopedptr.h"
-
-template< typename T >
-ScopedPtr< T >::ScopedPtr(T* ptr) : ptr(ptr)
-{
-}
-
-template< typename T >
-ScopedPtr< T >::~ScopedPtr()
-{
-    de.. ptrsy.. pause
-}
-
-template< typename T >
-T& ScopedPtr< T >::operator*()
-{
-    r_ *ptrsy.. pause
-}
-
-template< typename T >
-T* ScopedPtr< T >::operator__()
-{
-    r_ ptrsy.. pause
-}
+//? "s..
+//
+//t..| t_n_ T |
+//ScopedPtr| ? | ?(?# ptr  ? ?
+//
+//
+//
+//t..| t_n_ ? |
+//ScopedPtr| T | #?
+//
+//    de.. ptr sy.. p..
+//
+//
+//t..| t_n_ ?|
+//?# ScopedPtr| ? | operator#
+//
+//    r_ #ptr sy.. p..
+//
+//
+//t..| t_n_ T |
+//?# ScopedPtr| ? | operator__
+//
+//    r_ ptr sy.. p..
+//

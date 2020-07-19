@@ -189,7 +189,7 @@ GTEST_API_ bo.. InDeathTestChild();
 // Tests that an exit code describes a normal exit with a given exit code.
 n.. GTEST_API_ ExitedWithCode {
  p..
-  explicit ExitedWithCode(in. exit_code);
+  ex__ ExitedWithCode(in. exit_code);
   bo.. operator()(in. exit_status) co..;
  pr..
   // No implementation - assignment is unsupported.
@@ -203,7 +203,7 @@ n.. GTEST_API_ ExitedWithCode {
 // given signal.
 n.. GTEST_API_ KilledBySignal {
  p..
-  explicit KilledBySignal(in. signum);
+  ex__ KilledBySignal(in. signum);
   bo.. operator()(in. exit_status) co..;
  pr..
   co.. in. signum_;

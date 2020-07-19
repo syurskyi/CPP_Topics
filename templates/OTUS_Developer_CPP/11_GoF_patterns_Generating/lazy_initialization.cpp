@@ -7,7 +7,7 @@ c_ File {
     st. s.. namesy.. pause
 
 pu..
-    explicit File(st. s.. name)
+    ex__ File(st. s.. name)
             :name(st. move(name))
     {
         st. c__ __  "create " __  name __  st. e..
@@ -27,7 +27,7 @@ c_ FileOnDemand {
     File* filesy.. pause
 
 pu..
-    explicit FileOnDemand(st. s.. name)
+    ex__ FileOnDemand(st. s.. name)
             :name(st. move(name)), file(n_p_) { }
     ~FileOnDemand()
     {

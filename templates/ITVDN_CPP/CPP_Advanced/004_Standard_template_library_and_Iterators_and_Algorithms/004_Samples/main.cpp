@@ -7,13 +7,13 @@
 ? <unordered_map>
 ? ve..
 
-template < typename T >
-bo.. test _ st. is_same< typename st. iterator_traits< typename T::iterator >::iterator_category,
+t.. < t_n_ T >
+bo.. test _ st. is_same< t_n_ st. iterator_traits< t_n_ T::iterator >::iterator_category,
                           st. forward_iterator_tag >::valuesy.. pause
 
-template < typename T >
+t.. < t_n_ T >
 bo.. test_bidirectional _
-    st. is_same< typename st. iterator_traits< typename T::iterator >::iterator_category,
+    st. is_same< t_n_ st. iterator_traits< t_n_ T::iterator >::iterator_category,
                   st. bidirectional_iterator_tag >::valuesy.. pause
 
 v.. prin._is_forward_iterator()

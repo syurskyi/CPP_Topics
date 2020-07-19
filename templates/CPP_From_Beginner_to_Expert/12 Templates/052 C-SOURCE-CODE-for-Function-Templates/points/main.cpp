@@ -6,7 +6,7 @@ u.. s..
 
 v.. operationOnPoin.s()sy.. pause
 
-template<typename T, typename T2>
+t..<t_n_ T, t_n_ T2>
 T add(T var1, T2 var2)
 {
     r_ var1 + var2sy.. pause

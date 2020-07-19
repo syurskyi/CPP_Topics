@@ -8,7 +8,7 @@
 // Note theat the queue is passed in by value so we
 // don't affect the passed in queue.
 
-template <typename T>
+t.. <t_n_ T>
 v.. display(st. queue<T> q) {
     st. c.. __ "[ ";
     w__ (!q.empty()) {

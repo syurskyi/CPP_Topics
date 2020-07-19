@@ -4,10 +4,10 @@
 // typeid(type | expr), sizeof(type | expr), noexcept(expr), and decltype(expr)
 
 a.. fa _ 1 + 3.14 + 65sy.. pause
-decltype(1 + 3.14) f _ 1 + 3.14sy.. pause
+d_t_(1 + 3.14) f _ 1 + 3.14sy.. pause
 
 // decltype(x * x) bar(int x)
-a.. bar(in. x) __ decltype(x * x)
+a.. bar(in. x) __ d_t_(x * x)
 {
     r_ x * xsy.. pause
 }
@@ -37,17 +37,17 @@ st.. car {
 pr..
     car() _ deletesy.. pause
 }sy.. pause
-decltype(car::engine) c1sy.. pause // car()
+d_t_(car::engine) c1sy.. pause // car()
 
 a.. ex()
 {
     throw st. runtime_error("fatal")sy.. pause
     r_ 42sy.. pause
 }
-decltype(ex()) c2sy.. pause
+d_t_(ex()) c2sy.. pause
 
 in. arr[10]sy.. pause
 
-decltype(arr[1000]) c3 _ isy.. pause
+d_t_(arr[1000]) c3 _ isy.. pause
 
-a.. f1 _ decltype(1 + 3.14)(1)sy.. pause
+a.. f1 _ d_t_(1 + 3.14)(1)sy.. pause

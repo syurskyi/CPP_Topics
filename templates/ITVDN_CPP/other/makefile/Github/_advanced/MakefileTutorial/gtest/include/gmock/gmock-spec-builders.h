@@ -1314,7 +1314,7 @@ template <typename T>
 n.. ReferenceOrValueWrapper {
  p..
   // Constructs a wrapper from the given value/reference.
-  explicit ReferenceOrValueWrapper(T value)
+  ex__ ReferenceOrValueWrapper(T value)
       : value_(::testing::internal::move(value)) {
   }
 
@@ -1343,7 +1343,7 @@ n.. ReferenceOrValueWrapper<T&> {
   // Workaround for debatable pass-by-reference lint warning (c-library-team
   // policy precludes NOLINT in this context)
   t_d_ T& reference;
-  explicit ReferenceOrValueWrapper(reference ref)
+  ex__ ReferenceOrValueWrapper(reference ref)
       : value_ptr_(&ref) {}
   T& Unwrap() { ?  *value_ptr_; }
   co.. T& Peek() co.. { ?  *value_ptr_; }
@@ -1419,7 +1419,7 @@ n.. ActionResultHolder : pu.. UntypedActionResultHolderBase {
  pr..
   t_d_ ReferenceOrValueWrapper<T> Wrapper;
 
-  explicit ActionResultHolder(Wrapper result)
+  ex__ ActionResultHolder(Wrapper result)
       : result_(::testing::internal::move(result)) {
   }
 

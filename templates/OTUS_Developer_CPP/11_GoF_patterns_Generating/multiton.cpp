@@ -30,7 +30,7 @@ pu..
     }
 
 pr..
-    explicit Logger(Tag t_)
+    ex__ Logger(Tag t_)
             :t(t_)
     {
     }

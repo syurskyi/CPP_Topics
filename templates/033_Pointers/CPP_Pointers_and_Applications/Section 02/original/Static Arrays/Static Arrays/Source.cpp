@@ -8,7 +8,7 @@ v.. Print(in. *ptr,in. size) {
 	}
 }
 
-template<typename T, in. size>
+t..<t_n_ T, in. size>
 v.. Print(T(&ref)[size]) {
 	___ (in. i = _ i < size; ++i) {
 		st. c.. __ ref[i] __ ' ';
@@ -16,12 +16,12 @@ v.. Print(T(&ref)[size]) {
 	}
 }
 
-template<typename T, in. size>
+t..<t_n_ T, in. size>
 T * Begin(T(&ref)[size]) {
 	r_ ref;
 }
 
-template<typename T, in. size>
+t..<t_n_ T, in. size>
 T*  End(T(&ref)[size]) {
 	r_ (ref + size);
 }

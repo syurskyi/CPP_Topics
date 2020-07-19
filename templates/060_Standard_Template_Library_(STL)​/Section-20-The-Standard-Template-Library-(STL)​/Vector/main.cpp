@@ -35,7 +35,7 @@ v.. display2(co.. st. ve..<in.> &vec) {
 }
 
 // template function to display any vector
-template <typename T>
+t.. <t_n_ T>
 v.. display(co.. st. ve..<T> &vec) {
     st. c.. __ "[ ";
     ___ (co.. a.. &elem: vec)

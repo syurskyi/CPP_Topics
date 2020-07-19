@@ -10,7 +10,7 @@
 // Note theat the stack is passed in by value so we
 // don't affect the passed in stack.
 
-template <typename T>
+t.. <t_n_ T>
 v.. display(st. stack<T> s) {
     st. c.. __ "[ ";
     w__ (!s.empty()) {

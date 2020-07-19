@@ -61,7 +61,7 @@ n.. GTEST_API_ ScopedFakeTestPartResultReporter
   // by Google Test.  The 'result' parameter specifies where to report the
   // results. 007_This reporter will only catch failures generated in the current
   // thread. DEPRECATED
-  explicit ScopedFakeTestPartResultReporter(TestPartResultArray* result);
+  ex__ ScopedFakeTestPartResultReporter(TestPartResultArray* result);
 
   // Same as above, but you can choose the interception scope of this object.
   ScopedFakeTestPartResultReporter(InterceptMode intercept_mode,

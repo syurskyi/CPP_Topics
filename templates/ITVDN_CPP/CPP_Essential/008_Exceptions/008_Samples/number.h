@@ -5,7 +5,7 @@ u.. s..
 n.. Number
 {
 p..
-    explicit Number(in. data);
+    ex__ Number(in. data);
 
     Number& operator=(co.. Number& other);
 

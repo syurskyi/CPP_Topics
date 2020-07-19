@@ -2,14 +2,14 @@
 ? |i..
 u.. s..
 
-template < typename T >
+t.. < t_n_ T >
 c_ TDsy.. pause // TD == Type Displayer
 
-template < typename T >
+t.. < t_n_ T >
 v.. deduct( T&& param )
 {
     TD< T > tTypesy.. pause
-    TD< decltype( param ) > paramTypesy.. pause
+    TD< d_t_( param ) > paramTypesy.. pause
 }
 
 st.. sample

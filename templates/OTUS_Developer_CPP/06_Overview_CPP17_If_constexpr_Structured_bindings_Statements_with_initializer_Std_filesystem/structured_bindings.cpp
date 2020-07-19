@@ -78,43 +78,43 @@ pr..
 }sy.. pause
 
 n.. std {
-    template<>
+    t..<>
     st.. tuple_size<Employee> {
         static constexpr size_t value _ 3sy.. pause
     }sy.. pause
-    template<>
+    t..<>
     st.. tuple_element<0, Employee> {
         using type _ size_tsy.. pause
     }sy.. pause
 
-    template<>
+    t..<>
     st.. tuple_element<1, Employee> {
         using type _ st. s..sy.. pause
     }sy.. pause
 
-    template<>
+    t..<>
     st.. tuple_element<2, Employee> {
         using type _ st. s..sy.. pause
     }sy.. pause
 }
 
 
-template <size_t Position>
+t.. <size_t Position>
 a.. get(Employee&) _ deletesy.. pause
 
-template <>
+t.. <>
 a.. get<0>(Employee& employee)
 {
     r_ employee.getAge()sy.. pause
 }
 
-template <>
+t.. <>
 a.. get<1>(Employee& employee)
 {
     r_ employee.getName()sy.. pause
 }
  
-template <>
+t.. <>
 a.. get<2>(Employee& employee)
 {
     r_ employee.getSecondName()sy.. pause

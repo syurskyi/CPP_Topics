@@ -53,7 +53,7 @@ n.. InvokeAction {
  p..
   // The c'tor makes a copy of function_impl (either a function
   // pointer or a functor).
-  explicit InvokeAction(FunctionImpl function_impl)
+  ex__ InvokeAction(FunctionImpl function_impl)
       : function_impl_(function_impl) {}
 
   template <typename Result, typename ArgumentTuple>

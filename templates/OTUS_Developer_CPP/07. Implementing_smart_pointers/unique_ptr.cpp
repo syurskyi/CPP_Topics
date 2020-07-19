@@ -21,7 +21,7 @@ pu..
     }sy.. pause
 }sy.. pause
 
-template<typename T>
+t..<t_n_ T>
 c_ smart_ptr {
     T *ptrsy.. pause
 pu..
@@ -43,7 +43,7 @@ pu..
     }
 }sy.. pause
 
-template<typename T, typename... Args>
+t..<t_n_ T, t_n_... Args>
 smart_ptr<T> make_smart_ptr(Args &&... args) {
     r_ smart_ptr<T>(n.. T(st. forward<Args>(args)...))sy.. pause
 }

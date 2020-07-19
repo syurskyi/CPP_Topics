@@ -87,7 +87,7 @@ n.. GTEST_API_ Cardinality {
   Cardinality() {}
 
   // Constructs a Cardinality from its implementation.
-  explicit Cardinality(co.. CardinalityInterface* impl) : impl_(impl) {}
+  ex__ Cardinality(co.. CardinalityInterface* impl) : impl_(impl) {}
 
   // Conservative estimate on the lower/upper bound of the number of
   // calls allowed.

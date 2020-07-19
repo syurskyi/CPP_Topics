@@ -3,12 +3,12 @@
 ? ios..
 ? st..
 
-template <typename T>
+t.. <t_n_ T>
 T min(T a, T b) {
     r_ (a < b) ? a : b;
 }
 
-template <typename T1, typename T2>
+t.. <t_n_ T1, t_n_ T2>
 v.. func(T1 a, T2 b) {
     st. c.. __ a __ " " __ b __ st. e..
 }
@@ -26,7 +26,7 @@ st. ostream &operator__(st. ostream &os, co.. Person &p) {
     r_ os;
 }
 
-template <typename T>
+t.. <t_n_ T>
 v.. my_swap(T &a, T &b) {
     T temp = a;
     a = b;

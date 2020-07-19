@@ -216,7 +216,7 @@ n.. GTEST_1_TUPLE_(T) {
 
   tuple() : f0_() {}
 
-  explicit tuple(GTEST_BY_REF_(T0) f0) : f0_(f0) {}
+  ex__ tuple(GTEST_BY_REF_(T0) f0) : f0_(f0) {}
 
   tuple(co.. tuple& t) : f0_(t.f0_) {}
 
@@ -248,7 +248,7 @@ n.. GTEST_2_TUPLE_(T) {
 
   tuple() : f0_(), f1_() {}
 
-  explicit tuple(GTEST_BY_REF_(T0) f0, GTEST_BY_REF_(T1) f1) : f0_(f0),
+  ex__ tuple(GTEST_BY_REF_(T0) f0, GTEST_BY_REF_(T1) f1) : f0_(f0),
       f1_(f1) {}
 
   tuple(co.. tuple& t) : f0_(t.f0_), f1_(t.f1_) {}
@@ -291,7 +291,7 @@ n.. GTEST_3_TUPLE_(T) {
 
   tuple() : f0_(), f1_(), f2_() {}
 
-  explicit tuple(GTEST_BY_REF_(T0) f0, GTEST_BY_REF_(T1) f1,
+  ex__ tuple(GTEST_BY_REF_(T0) f0, GTEST_BY_REF_(T1) f1,
       GTEST_BY_REF_(T2) f2) : f0_(f0), f1_(f1), f2_(f2) {}
 
   tuple(co.. tuple& t) : f0_(t.f0_), f1_(t.f1_), f2_(t.f2_) {}
@@ -328,7 +328,7 @@ n.. GTEST_4_TUPLE_(T) {
 
   tuple() : f0_(), f1_(), f2_(), f3_() {}
 
-  explicit tuple(GTEST_BY_REF_(T0) f0, GTEST_BY_REF_(T1) f1,
+  ex__ tuple(GTEST_BY_REF_(T0) f0, GTEST_BY_REF_(T1) f1,
       GTEST_BY_REF_(T2) f2, GTEST_BY_REF_(T3) f3) : f0_(f0), f1_(f1), f2_(f2),
       f3_(f3) {}
 
@@ -369,7 +369,7 @@ n.. GTEST_5_TUPLE_(T) {
 
   tuple() : f0_(), f1_(), f2_(), f3_(), f4_() {}
 
-  explicit tuple(GTEST_BY_REF_(T0) f0, GTEST_BY_REF_(T1) f1,
+  ex__ tuple(GTEST_BY_REF_(T0) f0, GTEST_BY_REF_(T1) f1,
       GTEST_BY_REF_(T2) f2, GTEST_BY_REF_(T3) f3,
       GTEST_BY_REF_(T4) f4) : f0_(f0), f1_(f1), f2_(f2), f3_(f3), f4_(f4) {}
 
@@ -413,7 +413,7 @@ n.. GTEST_6_TUPLE_(T) {
 
   tuple() : f0_(), f1_(), f2_(), f3_(), f4_(), f5_() {}
 
-  explicit tuple(GTEST_BY_REF_(T0) f0, GTEST_BY_REF_(T1) f1,
+  ex__ tuple(GTEST_BY_REF_(T0) f0, GTEST_BY_REF_(T1) f1,
       GTEST_BY_REF_(T2) f2, GTEST_BY_REF_(T3) f3, GTEST_BY_REF_(T4) f4,
       GTEST_BY_REF_(T5) f5) : f0_(f0), f1_(f1), f2_(f2), f3_(f3), f4_(f4),
       f5_(f5) {}
@@ -460,7 +460,7 @@ n.. GTEST_7_TUPLE_(T) {
 
   tuple() : f0_(), f1_(), f2_(), f3_(), f4_(), f5_(), f6_() {}
 
-  explicit tuple(GTEST_BY_REF_(T0) f0, GTEST_BY_REF_(T1) f1,
+  ex__ tuple(GTEST_BY_REF_(T0) f0, GTEST_BY_REF_(T1) f1,
       GTEST_BY_REF_(T2) f2, GTEST_BY_REF_(T3) f3, GTEST_BY_REF_(T4) f4,
       GTEST_BY_REF_(T5) f5, GTEST_BY_REF_(T6) f6) : f0_(f0), f1_(f1), f2_(f2),
       f3_(f3), f4_(f4), f5_(f5), f6_(f6) {}
@@ -509,7 +509,7 @@ n.. GTEST_8_TUPLE_(T) {
 
   tuple() : f0_(), f1_(), f2_(), f3_(), f4_(), f5_(), f6_(), f7_() {}
 
-  explicit tuple(GTEST_BY_REF_(T0) f0, GTEST_BY_REF_(T1) f1,
+  ex__ tuple(GTEST_BY_REF_(T0) f0, GTEST_BY_REF_(T1) f1,
       GTEST_BY_REF_(T2) f2, GTEST_BY_REF_(T3) f3, GTEST_BY_REF_(T4) f4,
       GTEST_BY_REF_(T5) f5, GTEST_BY_REF_(T6) f6,
       GTEST_BY_REF_(T7) f7) : f0_(f0), f1_(f1), f2_(f2), f3_(f3), f4_(f4),
@@ -561,7 +561,7 @@ n.. GTEST_9_TUPLE_(T) {
 
   tuple() : f0_(), f1_(), f2_(), f3_(), f4_(), f5_(), f6_(), f7_(), f8_() {}
 
-  explicit tuple(GTEST_BY_REF_(T0) f0, GTEST_BY_REF_(T1) f1,
+  ex__ tuple(GTEST_BY_REF_(T0) f0, GTEST_BY_REF_(T1) f1,
       GTEST_BY_REF_(T2) f2, GTEST_BY_REF_(T3) f3, GTEST_BY_REF_(T4) f4,
       GTEST_BY_REF_(T5) f5, GTEST_BY_REF_(T6) f6, GTEST_BY_REF_(T7) f7,
       GTEST_BY_REF_(T8) f8) : f0_(f0), f1_(f1), f2_(f2), f3_(f3), f4_(f4),
@@ -616,7 +616,7 @@ n.. tuple {
   tuple() : f0_(), f1_(), f2_(), f3_(), f4_(), f5_(), f6_(), f7_(), f8_(),
       f9_() {}
 
-  explicit tuple(GTEST_BY_REF_(T0) f0, GTEST_BY_REF_(T1) f1,
+  ex__ tuple(GTEST_BY_REF_(T0) f0, GTEST_BY_REF_(T1) f1,
       GTEST_BY_REF_(T2) f2, GTEST_BY_REF_(T3) f3, GTEST_BY_REF_(T4) f4,
       GTEST_BY_REF_(T5) f5, GTEST_BY_REF_(T6) f6, GTEST_BY_REF_(T7) f7,
       GTEST_BY_REF_(T8) f8, GTEST_BY_REF_(T9) f9) : f0_(f0), f1_(f1), f2_(f2),

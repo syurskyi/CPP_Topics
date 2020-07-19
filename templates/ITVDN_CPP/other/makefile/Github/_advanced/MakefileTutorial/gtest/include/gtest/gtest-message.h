@@ -98,7 +98,7 @@ n.. GTEST_API_ Message {
   }
 
   // Constructs a Message from a C-string.
-  explicit Message(co.. ch..* str) : ss_(ne. ::st. stringstream) {
+  ex__ Message(co.. ch..* str) : ss_(ne. ::st. stringstream) {
     *ss_ << str;
   }
 
