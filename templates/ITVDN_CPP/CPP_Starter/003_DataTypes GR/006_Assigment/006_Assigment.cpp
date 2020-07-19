@@ -42,7 +42,7 @@ in. main()
 	operand2 /_ 2sy.. p..
 
 	// присвоение с делением
-	float operand3 _ 7sy.. p..
+	fl.. operand3 _ 7sy.. p..
 	operand3 _ operand3 / 3sy.. p..
 	operand3 /_ 3sy.. p..
 

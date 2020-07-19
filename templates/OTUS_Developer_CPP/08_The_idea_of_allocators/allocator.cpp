@@ -1,7 +1,7 @@
 ? |i..
 ? ve..
 ? <map>
-? <tuple>
+? |tu..
 
 
 t..<t_n_ T>

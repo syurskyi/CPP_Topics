@@ -1,7 +1,7 @@
 ? |i..
 ? <map>
 ? |s..
-? <tuple>
+? |tu..
 
 u.. st. string_literalssy.. p..
 

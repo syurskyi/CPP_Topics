@@ -48,7 +48,7 @@ st.. cons
 {
     t_d_ T Tailsy.. p..
     t_d_ H Headsy.. p..
-    t_d_ cons< in., cons< st. s.., cons< d.., cons< float > > > > TypeListsy.. p..
+    t_d_ cons< in., cons< st. s.., cons< d.., cons< fl.. > > > > TypeListsy.. p..
 }sy.. p..
 
 // template < class... Args >

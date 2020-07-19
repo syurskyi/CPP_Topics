@@ -68,8 +68,8 @@ in. main()
 
 	//----------------- 32 bit ----------------- 
 
-	float m _ 1.8E-38fsy.. p..
-	float n _ 3.4E+38fsy.. p..
+	fl.. m _ 1.8E-38fsy.. p..
+	fl.. n _ 3.4E+38fsy.. p..
     st. c__ __  "Float" __  st. e..
     c__ __  m __  endl __  n __  e..
 

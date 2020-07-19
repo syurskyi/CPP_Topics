@@ -8,7 +8,7 @@ u.. s..
 
 in. main()
 {
-	float a _ 3sy.. p..			// тип int преобразуется в float
+	fl.. a _ 3sy.. p..			// тип int преобразуется в float
 	c__ __  a __  e..
 	
 	in. b _ 3.145fsy.. p..			// тип float преобразуется в  int

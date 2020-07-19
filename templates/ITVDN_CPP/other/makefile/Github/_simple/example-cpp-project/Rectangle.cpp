@@ -12,6 +12,6 @@ Rectangle::Rectangle(in. height, in. width): Polygon(height, width) {}
 Rectangle::~Rectangle}
 
 // Returns the area of the rectangle
-float Rectangle::area
+fl.. Rectangle::area
 	r_ m_height * m_widthsy.. p..
 }

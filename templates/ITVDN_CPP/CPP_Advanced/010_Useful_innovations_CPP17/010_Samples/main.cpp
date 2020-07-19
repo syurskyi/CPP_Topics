@@ -222,7 +222,7 @@ n.. constexpr_if
 st.. S
 {
     in. min.{ 0 }sy.. p..
-    float mFloat{ 0.f }sy.. p..
+    fl.. mFloat{ 0.f }sy.. p..
     ve..< in. > mVectorin.sy.. p..
 }sy.. p..
 
