@@ -1,23 +1,23 @@
-//============================================================================
-// Name        : Getters.cpp
-// Author      : Serhii Yurskyi
-// Version     :
-//============================================================================
-
-? ios..
-? "Person.h"
-u.. s..
-
-
-in. main
-
-	Person person;
-
-	person.setName("Georgina");
-
-	c.. __ person.toString() __ e..
-
-	c.. __ "Name of person with get method: " __ person.getName() __ e..
-
-	r_ 0;
-}
+////============================================================================
+//// Name        : Getters.cpp
+//// Author      : Serhii Yurskyi
+//// Version     :
+////============================================================================
+//
+//? ios..
+//? "P..
+//u.. s..
+//
+//
+//in. main
+//
+//	? person
+//
+//	?.sN.. "Georgina"
+//
+//	c.. __ ?.tSt.. __ e..
+//
+//	c.. __ "Name of person with get method: " __ ?.gN.. __ e..
+//
+//	r_ _
+//
