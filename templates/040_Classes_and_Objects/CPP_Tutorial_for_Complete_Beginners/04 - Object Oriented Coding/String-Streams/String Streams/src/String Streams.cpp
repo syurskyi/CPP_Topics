@@ -1,24 +1,24 @@
-? ios..
-? <sstream>
-
-u.. s..
-
-in. main
-
-	st..  name = "Bob";
-	in. age = 32;
-
-	stringstream ss;
-
-	ss __ "Name is: ";
-	ss __ name;
-	ss __ "; Age is: ";
-	ss __ age;
-
-	st..  info = ss.str();
-
-	c.. __ info __ e..
-
-
-	r_ 0;
-}
+//? ios..
+//? <sstream>
+//
+//u.. s..
+//
+//in. main
+//
+//	st..  name = "Bob"
+//	in. age = 32
+//
+//	stringstream ss;
+//
+//	? __ "Name is: "
+//	? __ name
+//	? __ "; Age is: "
+//	? __ age
+//
+//	st..  info _ ?.st.
+//
+//	c.. __ info __ e..
+//
+//
+//	r_ _
+//
