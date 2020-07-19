@@ -60,7 +60,7 @@
 //
 //v.. some_func SomeClass# some
 //
-//    c__ __  __PRETTY_FUNCTION__ __  e..
+//    c__ __  __P.. __  e..
 //    c__ __  s__.d.. sy.. p..
 //
 //

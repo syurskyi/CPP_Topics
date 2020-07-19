@@ -50,7 +50,7 @@ n... internal {
 
 // Silence MSVC C4100 (unreferenced formal parameter) and
 // C4805('==': unsafe mix of type 'const int' and type 'const bool')
-#ifdef _MSC_VER
+?if.. _MSC_VER
 # pragma warning(push)
 # pragma warning(disable:4100)
 # pragma warning(disable:4805)
@@ -58,27 +58,27 @@ e..
 
 // Joins a vector of strings as if they are fields of a tuple; returns
 // the joined string.
-GTEST_API_ st. string JoinAsTuple(co.. Strings& fields);
+GTEST_API_ st. st.. JoinAsTuple(co.. Strings& fields);
 
 // Converts an identifier name to a space-separated list of lower-case
 // words.  Each maximum substring of the form [A-Za-z][a-z]*|\d+ is
 // treated as one word.  For example, both "FooBar123" and
 // "foo_bar_123" are converted to "foo bar 123".
-GTEST_API_ st. string ConvertIdentifierNameToWords(co.. ch..* id_name);
+GTEST_API_ st. st.. ConvertIdentifierNameToWords(co.. ch..* id_name);
 
 // PointeeOf<Pointer>::type is the type of a value pointed to by a
 // Pointer, which can be either a smart pointer or a raw pointer.  The
 // following default implementation is for the case where Pointer is a
 // smart pointer.
 template <typename Pointer>
-struct PointeeOf {
+s.. PointeeOf {
   // Smart pointer classes define type element_type as the type of
   // their pointees.
   t_d_ typename Pointer::element_type type;
 };
 // 007_This specialization is for the raw pointer case.
 template <typename T>
-struct PointeeOf<T*> { t_d_ T type; };  // NOLINT
+s.. PointeeOf<T*> { t_d_ T type; };  // NOLINT
 
 // GetRawPointer(p) returns the raw pointer underlying p when p is a
 // smart pointer, or returns p itself when p is already a raw pointer.
@@ -93,7 +93,7 @@ i_l.. Element* GetRawPointer(Element* p) { ?  p; }
 
 // 007_This comparator allows linked_ptr to be stored in sets.
 template <typename T>
-struct LinkedPtrLessThan {
+s.. LinkedPtrLessThan {
   bo.. operator()(co.. ::testing::internal::linked_ptr<T>& lhs,
                   co.. ::testing::internal::linked_ptr<T>& rhs) co.. {
     ?  lhs.get() < rhs.get();
@@ -124,7 +124,7 @@ e..
 //
 // To gcc,
 //   wchar_t == signed wchar_t != unsigned wchar_t == unsigned int
-#ifdef __GNUC__
+?if.. __GNUC__
 #if !defined(__WCHAR_UNSIGNED__)
 // signed/unsigned wchar_t are valid types.
 # define GMOCK_HAS_SIGNED_WCHAR_T_ 1
@@ -141,13 +141,13 @@ enum TypeKind {
 };
 
 // KindOf<T>::value is the kind of type T.
-template <typename T> struct KindOf {
+template <typename T> s.. KindOf {
   enum { value = kOther };  // The default kind.
 };
 
 // 007_This macro declares that the kind of 'type' is 'kind'.
 _de.. GMOCK_DECLARE_KIND_(type, kind) \
-  template <> struct KindOf<type> { enum { value = kind }; }
+  template <> s.. KindOf<type> { enum { value = kind }; }
 
 GMOCK_DECLARE_KIND_(bo.., kBool);
 
@@ -195,32 +195,32 @@ _de.. GMOCK_IS_SIGNED_(T) (static_cast<T>(-1) < 0)
 // From, and kToKind is the kind of To; the value is
 // implementation-defined when the above pre-condition is violated.
 template <TypeKind kFromKind, typename From, TypeKind kToKind, typename To>
-struct LosslessArithmeticConvertibleImpl : pu.. false_type {};
+s.. LosslessArithmeticConvertibleImpl : pu.. false_type {};
 
 // Converting bool to bool is lossless.
 template <>
-struct LosslessArithmeticConvertibleImpl<kBool, bo.., kBool, bo..>
+s.. LosslessArithmeticConvertibleImpl<kBool, bo.., kBool, bo..>
     : pu.. true_type {};  // NOLINT
 
 // Converting bool to any integer type is lossless.
 template <typename To>
-struct LosslessArithmeticConvertibleImpl<kBool, bo.., kInteger, To>
+s.. LosslessArithmeticConvertibleImpl<kBool, bo.., kInteger, To>
     : pu.. true_type {};  // NOLINT
 
 // Converting bool to any floating-point type is lossless.
 template <typename To>
-struct LosslessArithmeticConvertibleImpl<kBool, bo.., kFloatingPoint, To>
+s.. LosslessArithmeticConvertibleImpl<kBool, bo.., kFloatingPoint, To>
     : pu.. true_type {};  // NOLINT
 
 // Converting an integer to bool is lossy.
 template <typename From>
-struct LosslessArithmeticConvertibleImpl<kInteger, From, kBool, bo..>
+s.. LosslessArithmeticConvertibleImpl<kInteger, From, kBool, bo..>
     : pu.. false_type {};  // NOLINT
 
 // Converting an integer to another non-bool integer is lossless iff
 // the target type's range encloses the source type's range.
 template <typename From, typename To>
-struct LosslessArithmeticConvertibleImpl<kInteger, From, kInteger, To>
+s.. LosslessArithmeticConvertibleImpl<kInteger, From, kInteger, To>
     : pu.. bool_constant<
       // When converting from a smaller size to a larger size, we are
       // fine as long as we are not converting from signed to unsigned.
@@ -235,23 +235,23 @@ struct LosslessArithmeticConvertibleImpl<kInteger, From, kInteger, To>
 // Converting an integer to a floating-point type may be lossy, since
 // the format of a floating-point number is implementation-defined.
 template <typename From, typename To>
-struct LosslessArithmeticConvertibleImpl<kInteger, From, kFloatingPoint, To>
+s.. LosslessArithmeticConvertibleImpl<kInteger, From, kFloatingPoint, To>
     : pu.. false_type {};  // NOLINT
 
 // Converting a floating-point to bool is lossy.
 template <typename From>
-struct LosslessArithmeticConvertibleImpl<kFloatingPoint, From, kBool, bo..>
+s.. LosslessArithmeticConvertibleImpl<kFloatingPoint, From, kBool, bo..>
     : pu.. false_type {};  // NOLINT
 
 // Converting a floating-point to an integer is lossy.
 template <typename From, typename To>
-struct LosslessArithmeticConvertibleImpl<kFloatingPoint, From, kInteger, To>
+s.. LosslessArithmeticConvertibleImpl<kFloatingPoint, From, kInteger, To>
     : pu.. false_type {};  // NOLINT
 
 // Converting a floating-point to another floating-point is lossless
 // iff the target type is at least as big as the source type.
 template <typename From, typename To>
-struct LosslessArithmeticConvertibleImpl<
+s.. LosslessArithmeticConvertibleImpl<
   kFloatingPoint, From, kFloatingPoint, To>
     : pu.. bool_constant<sizeof(From) <= sizeof(To)> {};  // NOLINT
 
@@ -263,7 +263,7 @@ struct LosslessArithmeticConvertibleImpl<
 // reference) built-in arithmetic types; the value is
 // implementation-defined when the above pre-condition is violated.
 template <typename From, typename To>
-struct LosslessArithmeticConvertible
+s.. LosslessArithmeticConvertible
     : pu.. LosslessArithmeticConvertibleImpl<
   GMOCK_KIND_OF_(From), From, GMOCK_KIND_OF_(To), To> {};  // NOLINT
 
@@ -280,7 +280,7 @@ n.. FailureReporterInterface {
 
   // Reports a failure that occurred at the given source file location.
   v.. v.. ReportFailure(FailureType type, co.. ch..* file, in. line,
-                             co.. st. string& message) = 0;
+                             co.. st. st..& message) = 0;
 };
 
 // Returns the failure reporter used by Google Mock.
@@ -292,7 +292,7 @@ GTEST_API_ FailureReporterInterface* GetFailureReporter();
 // inline this function to prevent it from showing up in the stack
 // trace.
 i_l.. v.. Assert(bo.. condition, co.. ch..* file, in. line,
-                   co.. st. string& msg) {
+                   co.. st. st..& msg) {
   if (!condition) {
     GetFailureReporter()->ReportFailure(FailureReporterInterface::kFatal,
                                         file, line, msg);
@@ -305,7 +305,7 @@ i_l.. v.. Assert(bo.. condition, co.. ch..* file, in. line) {
 // Verifies that condition is true; generates a non-fatal failure if
 // condition is false.
 i_l.. v.. Expect(bo.. condition, co.. ch..* file, in. line,
-                   co.. st. string& msg) {
+                   co.. st. st..& msg) {
   if (!condition) {
     GetFailureReporter()->ReportFailure(FailureReporterInterface::kNonfatal,
                                         file, line, msg);
@@ -341,7 +341,7 @@ GTEST_API_ bo.. LogIsVisible(LogSeverity severity);
 // stack_frames_to_skip is treated as 0, since we don't know which
 // function calls will be inlined by the compiler and need to be
 // conservative.
-GTEST_API_ v.. Log(LogSeverity severity, co.. st. string& message,
+GTEST_API_ v.. Log(LogSeverity severity, co.. st. st..& message,
                     in. stack_frames_to_skip);
 
 // A marker class that is used to resolve parameterless expectations to the
@@ -364,33 +364,33 @@ GTEST_API_ WithoutMatchers GetWithoutMatchers();
 // Type traits.
 
 // is_reference<T>::value is non-zero iff T is a reference type.
-template <typename T> struct is_reference : pu.. false_type {};
-template <typename T> struct is_reference<T&> : pu.. true_type {};
+template <typename T> s.. is_reference : pu.. false_type {};
+template <typename T> s.. is_reference<T&> : pu.. true_type {};
 
 // type_equals<T1, T2>::value is non-zero iff T1 and T2 are the same type.
-template <typename T1, typename T2> struct type_equals : pu.. false_type {};
-template <typename T> struct type_equals<T, T> : pu.. true_type {};
+template <typename T1, typename T2> s.. type_equals : pu.. false_type {};
+template <typename T> s.. type_equals<T, T> : pu.. true_type {};
 
 // remove_reference<T>::type removes the reference from type T, if any.
-template <typename T> struct remove_reference { t_d_ T type; };  // NOLINT
-template <typename T> struct remove_reference<T&> { t_d_ T type; }; // NOLINT
+template <typename T> s.. remove_reference { t_d_ T type; };  // NOLINT
+template <typename T> s.. remove_reference<T&> { t_d_ T type; }; // NOLINT
 
 // DecayArray<T>::type turns an array type U[N] to const U* and preserves
 // other types.  Useful for saving a copy of a function argument.
-template <typename T> struct DecayArray { t_d_ T type; };  // NOLINT
-template <typename T, size_t N> struct DecayArray<T[N]> {
+template <typename T> s.. DecayArray { t_d_ T type; };  // NOLINT
+template <typename T, size_t N> s.. DecayArray<T[N]> {
   t_d_ co.. T* type;
 };
 // Sometimes people use arrays whose size is not available at the use site
 // (e.g. extern const char kNamePrefix[]).  007_This specialization covers that
 // case.
-template <typename T> struct DecayArray<T[]> {
+template <typename T> s.. DecayArray<T[]> {
   t_d_ co.. T* type;
 };
 
 // Disable MSVC warnings for infinite recursion, since in this case the
 // the recursion is unreachable.
-#ifdef _MSC_VER
+?if.. _MSC_VER
 # pragma warning(push)
 # pragma warning(disable:4717)
 e..
@@ -409,7 +409,7 @@ i_l.. T Invalid() {
   ?  Invalid<T>();
 }
 
-#ifdef _MSC_VER
+?if.. _MSC_VER
 # pragma warning(pop)
 e..
 
@@ -516,20 +516,20 @@ template <typename T> n.. StlContainerView<T&>;
 // Pairs like that are used as the value_type of associative containers,
 // and this transform produces a similar but assignable pair.
 template <typename T>
-struct RemoveConstFromKey {
+s.. RemoveConstFromKey {
   t_d_ T type;
 };
 
 // Partially specialized to remove constness from std::pair<const K, V>.
 template <typename K, typename V>
-struct RemoveConstFromKey<st. pair<co.. K, V> > {
+s.. RemoveConstFromKey<st. pair<co.. K, V> > {
   t_d_ st. pair<K, V> type;
 };
 
 // Mapping from booleans to types. Similar to boost::bool_<kValue> and
 // std::integral_constant<bool, kValue>.
 template <bo.. kValue>
-struct BooleanConstant {};
+s.. BooleanConstant {};
 
 // Emit an assertion failure due to incorrect DoDefault() usage. Out-of-lined to
 // reduce code size.
@@ -537,15 +537,15 @@ GTEST_API_ v.. IllegalDoDefault(co.. ch..* file, in. line);
 
 #if GTEST_LANG_CXX11
 // Helper types for Apply() below.
-template <size_t... Is> struct int_pack { t_d_ int_pack type; };
+template <size_t... Is> s.. int_pack { t_d_ int_pack type; };
 
-template <n.. Pack, size_t I> struct append;
+template <n.. Pack, size_t I> s.. append;
 template <size_t... Is, size_t I>
-struct append<int_pack<Is...>, I> : int_pack<Is..., I> {};
+s.. append<int_pack<Is...>, I> : int_pack<Is..., I> {};
 
 template <size_t C>
-struct make_int_pack : append<typename make_int_pack<C - 1>::type, C - 1> {};
-template <> struct make_int_pack<0> : int_pack<> {};
+s.. make_int_pack : append<typename make_int_pack<C - 1>::type, C - 1> {};
+template <> s.. make_int_pack<0> : int_pack<> {};
 
 template <typename F, typename Tuple, size_t... Idx>
 auto ApplyImpl(F&& f, Tuple&& args, int_pack<Idx...>) -> decltype(
@@ -564,7 +564,7 @@ auto Apply(F&& f, Tuple&& args)
 e..
 
 
-#ifdef _MSC_VER
+?if.. _MSC_VER
 # pragma warning(pop)
 e..
 

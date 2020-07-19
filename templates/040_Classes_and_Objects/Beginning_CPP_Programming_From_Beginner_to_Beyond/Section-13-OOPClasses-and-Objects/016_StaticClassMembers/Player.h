@@ -6,14 +6,14 @@ n.. Player
 {
 pr..
    st.. in. num_players;
-   st. string name;
+   st. st.. name;
    in. health;
    in. xp;
 p..
-    st. string get_name() { ?  name; }
+    st. st.. get_name() { ?  name; }
     in. get_health() { ?  health; }
     in. get_xp() {?  xp; }
-    Player(st. string name_val ="None", in. health_val = 0, in. xp_val = 0);
+    Player(st. st.. name_val ="None", in. health_val = 0, in. xp_val = 0);
     // Copy constructor
     Player(co.. Player &source);
     // Destructor

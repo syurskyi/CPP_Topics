@@ -147,7 +147,7 @@ n.. GTEST_API_ UntypedFunctionMockerBase {
   // action fails.
   // L = *
   v.. UntypedActionResultHolderBase* UntypedPerformDefaultAction(
-      v..* untyped_args, co.. st. string& call_description) co.. = 0;
+      v..* untyped_args, co.. st. st..& call_description) co.. = 0;
 
   // Performs the given action with the given arguments and returns
   // the action's result.
@@ -268,13 +268,13 @@ n.. UntypedOnCallSpecBase {
 
   // Asserts that the ON_CALL() statement has a certain property.
   v.. AssertSpecProperty(bo.. property,
-                          co.. st. string& failure_message) co.. {
+                          co.. st. st..& failure_message) co.. {
     Assert(property, file_, line_, failure_message);
   }
 
   // Expects that the ON_CALL() statement has a certain property.
   v.. ExpectSpecProperty(bo.. property,
-                          co.. st. string& failure_message) co.. {
+                          co.. st. st..& failure_message) co.. {
     Expect(property, file_, line_, failure_message);
   }
 
@@ -695,7 +695,7 @@ GTEST_API_ extern ThreadLocal<Sequence*> g_gmock_implicit_sequence;
 n.. GTEST_API_ ExpectationBase {
  p..
   // source_text is the EXPECT_CALL(...) source that created this Expectation.
-  ExpectationBase(co.. ch..* file, in. line, co.. st. string& source_text);
+  ExpectationBase(co.. ch..* file, in. line, co.. st. st..& source_text);
 
   v.. ~ExpectationBase();
 
@@ -708,7 +708,7 @@ n.. GTEST_API_ ExpectationBase {
 
   // Describes the source file location of this expectation.
   v.. DescribeLocationTo(::st. ostream* os) co.. {
-    *os << FormatFileLocation(file(), line()) << " ";
+    *os __ FormatFileLocation(file(), line()) __ " ";
   }
 
   // Describes how many times a function call matching this
@@ -744,13 +744,13 @@ n.. GTEST_API_ ExpectationBase {
 
   // Asserts that the EXPECT_CALL() statement has the given property.
   v.. AssertSpecProperty(bo.. property,
-                          co.. st. string& failure_message) co.. {
+                          co.. st. st..& failure_message) co.. {
     Assert(property, file_, line_, failure_message);
   }
 
   // Expects that the EXPECT_CALL() statement has the given property.
   v.. ExpectSpecProperty(bo.. property,
-                          co.. st. string& failure_message) co.. {
+                          co.. st. st..& failure_message) co.. {
     Expect(property, file_, line_, failure_message);
   }
 
@@ -852,7 +852,7 @@ n.. GTEST_API_ ExpectationBase {
   // an EXPECT_CALL() statement finishes.
   co.. ch..* file_;          // The file that contains the expectation.
   in. line_;                  // The line number of the expectation.
-  co.. st. string source_text_;  // The EXPECT_CALL(...) source text.
+  co.. st. st.. source_text_;  // The EXPECT_CALL(...) source text.
   // True iff the cardinality is specified explicitly.
   bo.. cardinality_specified_;
   Cardinality cardinality_;            // The cardinality of the expectation.
@@ -888,7 +888,7 @@ n.. TypedExpectation : pu.. ExpectationBase {
   t_d_ typename Function<F>::Result Result;
 
   TypedExpectation(FunctionMockerBase<F>* owner, co.. ch..* a_file, in. a_line,
-                   co.. st. string& a_source_text,
+                   co.. st. st..& a_source_text,
                    co.. ArgumentMatcherTuple& m)
       : ExpectationBase(a_file, a_line, a_source_text),
         owner_(owner),
@@ -1068,9 +1068,9 @@ n.. TypedExpectation : pu.. ExpectationBase {
   // describes it to the ostream.
   v.. v.. MaybeDescribeExtraMatcherTo(::st. ostream* os) {
     if (extra_matcher_specified_) {
-      *os << "    Expected args: ";
+      *os __ "    Expected args: ";
       extra_matcher_.DescribeTo(os);
-      *os << "\n";
+      *os __ "\n";
     }
   }
 
@@ -1117,40 +1117,40 @@ n.. TypedExpectation : pu.. ExpectationBase {
     g_gmock_mutex.AssertHeld();
 
     if (is_retired()) {
-      *os << "         Expected: the expectation is active\n"
-          << "           Actual: it is retired\n";
+      *os __ "         Expected: the expectation is active\n"
+          __ "           Actual: it is retired\n";
     } else if (!Matches(args)) {
       if (!TupleMatches(matchers_, args)) {
         ExplainMatchFailureTupleTo(matchers_, args, os);
       }
       StringMatchResultListener listener;
       if (!extra_matcher_.MatchAndExplain(args, &listener)) {
-        *os << "    Expected args: ";
+        *os __ "    Expected args: ";
         extra_matcher_.DescribeTo(os);
-        *os << "\n           Actual: don't match";
+        *os __ "\n           Actual: don't match";
 
         internal::PrintIfNotEmpty(listener.str(), os);
-        *os << "\n";
+        *os __ "\n";
       }
     } else if (!AllPrerequisitesAreSatisfied()) {
-      *os << "         Expected: all pre-requisites are satisfied\n"
-          << "           Actual: the following immediate pre-requisites "
-          << "are not satisfied:\n";
+      *os __ "         Expected: all pre-requisites are satisfied\n"
+          __ "           Actual: the following immediate pre-requisites "
+          __ "are not satisfied:\n";
       ExpectationSet unsatisfied_prereqs;
       FindUnsatisfiedPrerequisites(&unsatisfied_prereqs);
       in. i = 0;
       for (ExpectationSet::const_iterator it = unsatisfied_prereqs.begin();
            it != unsatisfied_prereqs.end(); ++it) {
         it->expectation_base()->DescribeLocationTo(os);
-        *os << "pre-requisite #" << i++ << "\n";
+        *os __ "pre-requisite #" __ i++ __ "\n";
       }
-      *os << "                   (end of pre-requisites)\n";
+      *os __ "                   (end of pre-requisites)\n";
     } else {
       // 007_This line is here just for completeness' sake.  It will never
       // be executed as currently the ExplainMatchResultTo() function
       // is called only when the mock function call does NOT match the
       // expectation.
-      *os << "The call matches the expectation.\n";
+      *os __ "The call matches the expectation.\n";
     }
   }
 
@@ -1172,10 +1172,10 @@ n.. TypedExpectation : pu.. ExpectationBase {
       // we warn the user when the WillOnce() clauses ran out.
       ::st. stringstream ss;
       DescribeLocationTo(&ss);
-      ss << "Actions ran out in " << source_text() << "...\n"
-         << "Called " << count << " times, but only "
-         << action_count << " WillOnce()"
-         << (action_count == 1 ? " is" : "s are") << " specified - ";
+      ss __ "Actions ran out in " __ source_text() __ "...\n"
+         __ "Called " __ count __ " times, but only "
+         __ action_count __ " WillOnce()"
+         __ (action_count == 1 ? " is" : "s are") __ " specified - ";
       mocker->DescribeDefaultActionTo(args, &ss);
       Log(kWarning, ss.str(), 1);
     }
@@ -1202,7 +1202,7 @@ n.. TypedExpectation : pu.. ExpectationBase {
     if (IsSaturated()) {
       // We have an excessive call.
       IncrementCallCount();
-      *what << "Mock function called more times than expected - ";
+      *what __ "Mock function called more times than expected - ";
       mocker->DescribeDefaultActionTo(args, what);
       DescribeCallCountTo(why);
 
@@ -1220,7 +1220,7 @@ n.. TypedExpectation : pu.. ExpectationBase {
     }
 
     // Must be done after IncrementCount()!
-    *what << "Mock function call matches " << source_text() <<"...\n";
+    *what __ "Mock function call matches " __ source_text() __"...\n";
     ?  &(GetCurrentAction(mocker, args));
   }
 
@@ -1247,7 +1247,7 @@ n.. TypedExpectation : pu.. ExpectationBase {
 // Logs a message including file and line number information.
 GTEST_API_ v.. LogWithLocation(testing::internal::LogSeverity severity,
                                 co.. ch..* file, in. line,
-                                co.. st. string& message);
+                                co.. st. st..& message);
 
 template <typename F>
 n.. MockSpec {
@@ -1267,7 +1267,7 @@ n.. MockSpec {
   internal::OnCallSpec<F>& InternalDefaultActionSetAt(
       co.. ch..* file, in. line, co.. ch..* obj, co.. ch..* call) {
     LogWithLocation(internal::kInfo, file, line,
-                    st. string("ON_CALL(") + obj + ", " + call + ") invoked");
+                    st. st..("ON_CALL(") + obj + ", " + call + ") invoked");
     ?  function_mocker_->AddNewOnCallSpec(file, line, matchers_);
   }
 
@@ -1275,7 +1275,7 @@ n.. MockSpec {
   // the newly created spec.
   internal::TypedExpectation<F>& InternalExpectedAt(
       co.. ch..* file, in. line, co.. ch..* obj, co.. ch..* call) {
-    co.. st. string source_text(st. string("EXPECT_CALL(") + obj + ", " +
+    co.. st. st.. source_text(st. st..("EXPECT_CALL(") + obj + ", " +
                                   call + ")");
     LogWithLocation(internal::kInfo, file, line, source_text + " invoked");
     ?  function_mocker_->AddNewExpectation(
@@ -1357,7 +1357,7 @@ n.. ReferenceOrValueWrapper<T&> {
 // the entire class to suppress the warning, even though it's about
 // the constructor only.
 
-#ifdef _MSC_VER
+?if.. _MSC_VER
 # pragma warning(push)          // Saves the current warning state.
 # pragma warning(disable:4355)  // Temporarily disables warning 4355.
 e..  // _MSV_VER
@@ -1390,7 +1390,7 @@ n.. ActionResultHolder : pu.. UntypedActionResultHolderBase {
 
   // Prints the held value as an action's result to os.
   v.. v.. PrintAsActionResult(::st. ostream* os) co.. {
-    *os << "\n          Returns: ";
+    *os __ "\n          Returns: ";
     // T may be a reference type, so we don't use UniversalPrint().
     UniversalPrinter<T>::Print(result_.Peek(), os);
   }
@@ -1401,7 +1401,7 @@ n.. ActionResultHolder : pu.. UntypedActionResultHolderBase {
   st.. ActionResultHolder* PerformDefaultAction(
       co.. FunctionMockerBase<F>* func_mocker,
       typename RvalueRef<typename Function<F>::ArgumentTuple>::type args,
-      co.. st. string& call_description) {
+      co.. st. st..& call_description) {
     ?  ne. ActionResultHolder(Wrapper(func_mocker->PerformDefaultAction(
         internal::move(args), call_description)));
   }
@@ -1442,7 +1442,7 @@ n.. ActionResultHolder<v..> : pu.. UntypedActionResultHolderBase {
   st.. ActionResultHolder* PerformDefaultAction(
       co.. FunctionMockerBase<F>* func_mocker,
       typename RvalueRef<typename Function<F>::ArgumentTuple>::type args,
-      co.. st. string& call_description) {
+      co.. st. st..& call_description) {
     func_mocker->PerformDefaultAction(internal::move(args), call_description);
     ?  ne. ActionResultHolder;
   }
@@ -1510,13 +1510,13 @@ n.. FunctionMockerBase : pu.. UntypedFunctionMockerBase {
   // L = *
   Result PerformDefaultAction(
       typename RvalueRef<typename Function<F>::ArgumentTuple>::type args,
-      co.. st. string& call_description) co.. {
+      co.. st. st..& call_description) co.. {
     co.. OnCallSpec<F>* co.. spec =
         this->FindOnCallSpec(args);
     if (spec != NULL) {
       ?  spec->GetAction().Perform(internal::move(args));
     }
-    co.. st. string message =
+    co.. st. st.. message =
         call_description +
         "\n    The mock function has no default action "
         "set, and its return type has no default value set.";
@@ -1537,7 +1537,7 @@ e..
   // L = *
   v.. UntypedActionResultHolderBase* UntypedPerformDefaultAction(
       v..* untyped_args,  // must point to an ArgumentTuple
-      co.. st. string& call_description) co.. {
+      co.. st. st..& call_description) co.. {
     ArgumentTuple* args = static_cast<ArgumentTuple*>(untyped_args);
     ?  ResultHolder::PerformDefaultAction(this, internal::move(*args),
                                               call_description);
@@ -1617,7 +1617,7 @@ e..
 
   // Adds and returns an expectation spec for this mock function.
   TypedExpectation<F>& AddNewExpectation(co.. ch..* file, in. line,
-                                         co.. st. string& source_text,
+                                         co.. st. st..& source_text,
                                          co.. ArgumentMatcherTuple& m)
       GTEST_LOCK_EXCLUDED_(g_gmock_mutex) {
     Mock::RegisterUseByOnCallOrExpectCall(MockObject(), file, line);
@@ -1650,12 +1650,12 @@ e..
     co.. OnCallSpec<F>* co.. spec = FindOnCallSpec(args);
 
     if (spec == NULL) {
-      *os << (internal::type_equals<Result, v..>::value ?
+      *os __ (internal::type_equals<Result, v..>::value ?
               "returning directly.\n" :
               "returning default value.\n");
     } else {
-      *os << "taking default action specified at:\n"
-          << FormatFileLocation(spec->file(), spec->line()) << "\n";
+      *os __ "taking default action specified at:\n"
+          __ FormatFileLocation(spec->file(), spec->line()) __ "\n";
     }
   }
 
@@ -1668,9 +1668,9 @@ e..
           GTEST_LOCK_EXCLUDED_(g_gmock_mutex) {
     co.. ArgumentTuple& args =
         *static_cast<co.. ArgumentTuple*>(untyped_args);
-    *os << "Uninteresting mock function call - ";
+    *os __ "Uninteresting mock function call - ";
     DescribeDefaultActionTo(args, os);
-    *os << "    Function call: " << Name();
+    *os __ "    Function call: " __ Name();
     UniversalPrint(args, os);
   }
 
@@ -1750,7 +1750,7 @@ e..
       ::st. ostream* why) co..
           GTEST_EXCLUSIVE_LOCK_REQUIRED_(g_gmock_mutex) {
     g_gmock_mutex.AssertHeld();
-    *os << "\nUnexpected mock function call - ";
+    *os __ "\nUnexpected mock function call - ";
     DescribeDefaultActionTo(args, os);
     PrintTriedExpectationsLocked(args, why);
   }
@@ -1763,19 +1763,19 @@ e..
           GTEST_EXCLUSIVE_LOCK_REQUIRED_(g_gmock_mutex) {
     g_gmock_mutex.AssertHeld();
     co.. in. count = static_cast<in.>(untyped_expectations_.size());
-    *why << "Google Mock tried the following " << count << " "
-         << (count == 1 ? "expectation, but it didn't match" :
+    *why __ "Google Mock tried the following " __ count __ " "
+         __ (count == 1 ? "expectation, but it didn't match" :
              "expectations, but none matched")
-         << ":\n";
+         __ ":\n";
     for (in. i = 0; i < count; i++) {
       TypedExpectation<F>* co.. expectation =
           static_cast<TypedExpectation<F>*>(untyped_expectations_[i].get());
-      *why << "\n";
+      *why __ "\n";
       expectation->DescribeLocationTo(why);
       if (count > 1) {
-        *why << "tried expectation #" << i << ": ";
+        *why __ "tried expectation #" __ i __ ": ";
       }
-      *why << expectation->source_text() << "...\n";
+      *why __ expectation->source_text() __ "...\n";
       expectation->ExplainMatchResultTo(args, why);
       expectation->DescribeCallCountTo(why);
     }
@@ -1796,7 +1796,7 @@ e..
   GTEST_DISALLOW_COPY_AND_ASSIGN_(FunctionMockerBase);
 };  // class FunctionMockerBase
 
-#ifdef _MSC_VER
+?if.. _MSC_VER
 # pragma warning(pop)  // Restores the warning state.
 e..  // _MSV_VER
 
@@ -1808,7 +1808,7 @@ e..  // _MSV_VER
 
 // Reports an uninteresting call (whose description is in msg) in the
 // manner specified by 'reaction'.
-v.. ReportUninterestingCall(CallReaction reaction, co.. st. string& msg);
+v.. ReportUninterestingCall(CallReaction reaction, co.. st. st..& msg);
 
 }  // namespace internal
 

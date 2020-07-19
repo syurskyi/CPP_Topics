@@ -124,9 +124,9 @@ n... gtest_internal {
 
 // ByRef<T>::type is T if T is a reference; otherwise it's const T&.
 template <typename T>
-struct ByRef { t_d_ co.. T& type; };  // NOLINT
+s.. ByRef { t_d_ co.. T& type; };  // NOLINT
 template <typename T>
-struct ByRef<T&> { t_d_ T& type; };  // NOLINT
+s.. ByRef<T&> { t_d_ T& type; };  // NOLINT
 
 // A handy wrapper for ByRef.
 _de.. GTEST_BY_REF_(T) typename ::st. tr1::gtest_internal::ByRef<T>::type
@@ -134,9 +134,9 @@ _de.. GTEST_BY_REF_(T) typename ::st. tr1::gtest_internal::ByRef<T>::type
 // AddRef<T>::type is T if T is a reference; otherwise it's T&.  007_This
 // is the same as tr1::add_reference<T>::type.
 template <typename T>
-struct AddRef { t_d_ T& type; };  // NOLINT
+s.. AddRef { t_d_ T& type; };  // NOLINT
 template <typename T>
-struct AddRef<T&> { t_d_ T& type; };  // NOLINT
+s.. AddRef<T&> { t_d_ T& type; };  // NOLINT
 
 // A handy wrapper for AddRef.
 _de.. GTEST_ADD_REF_(T) typename ::st. tr1::gtest_internal::AddRef<T>::type
@@ -147,55 +147,55 @@ template <in. k> n.. Get;
 // A helper for implementing tuple_element<k, T>.  kIndexValid is true
 // iff k < the number of fields in tuple type T.
 template <bo.. kIndexValid, in. kIndex, n.. Tuple>
-struct TupleElement;
+s.. TupleElement;
 
 template <GTEST_10_TYPENAMES_(T)>
-struct TupleElement<true, 0, GTEST_10_TUPLE_(T) > {
+s.. TupleElement<true, 0, GTEST_10_TUPLE_(T) > {
   t_d_ T0 type;
 };
 
 template <GTEST_10_TYPENAMES_(T)>
-struct TupleElement<true, 1, GTEST_10_TUPLE_(T) > {
+s.. TupleElement<true, 1, GTEST_10_TUPLE_(T) > {
   t_d_ T1 type;
 };
 
 template <GTEST_10_TYPENAMES_(T)>
-struct TupleElement<true, 2, GTEST_10_TUPLE_(T) > {
+s.. TupleElement<true, 2, GTEST_10_TUPLE_(T) > {
   t_d_ T2 type;
 };
 
 template <GTEST_10_TYPENAMES_(T)>
-struct TupleElement<true, 3, GTEST_10_TUPLE_(T) > {
+s.. TupleElement<true, 3, GTEST_10_TUPLE_(T) > {
   t_d_ T3 type;
 };
 
 template <GTEST_10_TYPENAMES_(T)>
-struct TupleElement<true, 4, GTEST_10_TUPLE_(T) > {
+s.. TupleElement<true, 4, GTEST_10_TUPLE_(T) > {
   t_d_ T4 type;
 };
 
 template <GTEST_10_TYPENAMES_(T)>
-struct TupleElement<true, 5, GTEST_10_TUPLE_(T) > {
+s.. TupleElement<true, 5, GTEST_10_TUPLE_(T) > {
   t_d_ T5 type;
 };
 
 template <GTEST_10_TYPENAMES_(T)>
-struct TupleElement<true, 6, GTEST_10_TUPLE_(T) > {
+s.. TupleElement<true, 6, GTEST_10_TUPLE_(T) > {
   t_d_ T6 type;
 };
 
 template <GTEST_10_TYPENAMES_(T)>
-struct TupleElement<true, 7, GTEST_10_TUPLE_(T) > {
+s.. TupleElement<true, 7, GTEST_10_TUPLE_(T) > {
   t_d_ T7 type;
 };
 
 template <GTEST_10_TYPENAMES_(T)>
-struct TupleElement<true, 8, GTEST_10_TUPLE_(T) > {
+s.. TupleElement<true, 8, GTEST_10_TUPLE_(T) > {
   t_d_ T8 type;
 };
 
 template <GTEST_10_TYPENAMES_(T)>
-struct TupleElement<true, 9, GTEST_10_TUPLE_(T) > {
+s.. TupleElement<true, 9, GTEST_10_TUPLE_(T) > {
   t_d_ T9 type;
 };
 
@@ -735,65 +735,65 @@ i_l.. GTEST_10_TUPLE_(T) make_tuple(co.. T0& f0, co.. T1& f1, co.. T2& f2,
 
 // 6.1.3.3 Tuple helper classes.
 
-template <typename Tuple> struct tuple_size;
+template <typename Tuple> s.. tuple_size;
 
 template <GTEST_0_TYPENAMES_(T)>
-struct tuple_size<GTEST_0_TUPLE_(T) > {
+s.. tuple_size<GTEST_0_TUPLE_(T) > {
   st.. co.. in. value = 0;
 };
 
 template <GTEST_1_TYPENAMES_(T)>
-struct tuple_size<GTEST_1_TUPLE_(T) > {
+s.. tuple_size<GTEST_1_TUPLE_(T) > {
   st.. co.. in. value = 1;
 };
 
 template <GTEST_2_TYPENAMES_(T)>
-struct tuple_size<GTEST_2_TUPLE_(T) > {
+s.. tuple_size<GTEST_2_TUPLE_(T) > {
   st.. co.. in. value = 2;
 };
 
 template <GTEST_3_TYPENAMES_(T)>
-struct tuple_size<GTEST_3_TUPLE_(T) > {
+s.. tuple_size<GTEST_3_TUPLE_(T) > {
   st.. co.. in. value = 3;
 };
 
 template <GTEST_4_TYPENAMES_(T)>
-struct tuple_size<GTEST_4_TUPLE_(T) > {
+s.. tuple_size<GTEST_4_TUPLE_(T) > {
   st.. co.. in. value = 4;
 };
 
 template <GTEST_5_TYPENAMES_(T)>
-struct tuple_size<GTEST_5_TUPLE_(T) > {
+s.. tuple_size<GTEST_5_TUPLE_(T) > {
   st.. co.. in. value = 5;
 };
 
 template <GTEST_6_TYPENAMES_(T)>
-struct tuple_size<GTEST_6_TUPLE_(T) > {
+s.. tuple_size<GTEST_6_TUPLE_(T) > {
   st.. co.. in. value = 6;
 };
 
 template <GTEST_7_TYPENAMES_(T)>
-struct tuple_size<GTEST_7_TUPLE_(T) > {
+s.. tuple_size<GTEST_7_TUPLE_(T) > {
   st.. co.. in. value = 7;
 };
 
 template <GTEST_8_TYPENAMES_(T)>
-struct tuple_size<GTEST_8_TUPLE_(T) > {
+s.. tuple_size<GTEST_8_TUPLE_(T) > {
   st.. co.. in. value = 8;
 };
 
 template <GTEST_9_TYPENAMES_(T)>
-struct tuple_size<GTEST_9_TUPLE_(T) > {
+s.. tuple_size<GTEST_9_TUPLE_(T) > {
   st.. co.. in. value = 9;
 };
 
 template <GTEST_10_TYPENAMES_(T)>
-struct tuple_size<GTEST_10_TUPLE_(T) > {
+s.. tuple_size<GTEST_10_TUPLE_(T) > {
   st.. co.. in. value = 10;
 };
 
 template <in. k, n.. Tuple>
-struct tuple_element {
+s.. tuple_element {
   t_d_ typename gtest_internal::TupleElement<
       k < (tuple_size<Tuple>::value), k, Tuple>::type type;
 };
@@ -949,10 +949,10 @@ n... gtest_internal {
 // SameSizeTuplePrefixComparator(k1, k2) would be a compiler error if
 // k1 != k2.
 template <in. kSize1, in. kSize2>
-struct SameSizeTuplePrefixComparator;
+s.. SameSizeTuplePrefixComparator;
 
 template <>
-struct SameSizeTuplePrefixComparator<0, 0> {
+s.. SameSizeTuplePrefixComparator<0, 0> {
   template <n.. Tuple1, n.. Tuple2>
   st.. bo.. Eq(co.. Tuple1& /* t1 */, co.. Tuple2& /* t2 */) {
     ?  true;
@@ -960,7 +960,7 @@ struct SameSizeTuplePrefixComparator<0, 0> {
 };
 
 template <in. k>
-struct SameSizeTuplePrefixComparator<k, k> {
+s.. SameSizeTuplePrefixComparator<k, k> {
   template <n.. Tuple1, n.. Tuple2>
   st.. bo.. Eq(co.. Tuple1& t1, co.. Tuple2& t2) {
     ?  SameSizeTuplePrefixComparator<k - 1, k - 1>::Eq(t1, t2) &&

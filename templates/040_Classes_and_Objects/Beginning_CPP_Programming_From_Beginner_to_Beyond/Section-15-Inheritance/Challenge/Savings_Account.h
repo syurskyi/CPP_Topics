@@ -11,7 +11,7 @@ _de.. _SAVINGS_ACCOUNT_H_
 //
 
 n.. Savings_Account: pu.. Account {
-    fr.. st. ostream &operator<<(st. ostream &os, co.. Savings_Account &account);
+    fr.. st. ostream &operator__(st. ostream &os, co.. Savings_Account &account);
 pr..
     st.. c_e_ co.. ch.. *def_name = "Unnamed Savings Account";
     st.. c_e_ do.. def_balance = 0.0;
@@ -19,7 +19,7 @@ pr..
 pr..
     do.. int_rate;
 p..
-    Savings_Account(st. string name = def_name, do.. balance =def_balance, do.. int_rate = def_int_rate);
+    Savings_Account(st. st.. name = def_name, do.. balance =def_balance, do.. int_rate = def_int_rate);
     bo.. deposit(do.. amount);
     // Inherits the Account::withdraw methods
 };

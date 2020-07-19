@@ -45,7 +45,7 @@ n... testing {
 
 // Silence C4100 (unreferenced formal
 // parameter) for MSVC
-#ifdef _MSC_VER
+?if.. _MSC_VER
 # pragma warning(push)
 # pragma warning(disable:4100)
 #if (_MSC_VER == 1900)
@@ -61,7 +61,7 @@ MATCHER(IsEmpty, negation ? "isn't empty" : "is empty") {
   if (arg.empty()) {
     ?  true;
   }
-  *result_listener << "whose size is " << arg.size();
+  *result_listener __ "whose size is " __ arg.size();
   ?  false;
 }
 
@@ -81,7 +81,7 @@ MATCHER(IsFalse, negation ? "is true" : "is false") {
   ?  !static_cast<bo..>(arg);
 }
 
-#ifdef _MSC_VER
+?if.. _MSC_VER
 # pragma warning(pop)
 e..
 

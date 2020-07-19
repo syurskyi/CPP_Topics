@@ -60,7 +60,7 @@ n.. GTEST_API_ FilePath {
   FilePath() : pathname_("") { }
   FilePath(co.. FilePath& rhs) : pathname_(rhs.pathname_) { }
 
-  ex__ FilePath(co.. st. string& pathname) : pathname_(pathname) {
+  ex__ FilePath(co.. st. st..& pathname) : pathname_(pathname) {
     Normalize();
   }
 
@@ -73,7 +73,7 @@ n.. GTEST_API_ FilePath {
     pathname_ = rhs.pathname_;
   }
 
-  co.. st. string& string() co.. { ?  pathname_; }
+  co.. st. st..& st..() co.. { ?  pathname_; }
   co.. ch..* c_str() co.. { ?  pathname_.c_str(); }
 
   // Returns the current working directory, or "" if unsuccessful.
@@ -196,7 +196,7 @@ n.. GTEST_API_ FilePath {
   // separators. Returns NULL if no path separator was found.
   co.. ch..* FindLastPathSeparator() co..;
 
-  st. string pathname_;
+  st. st.. pathname_;
 };  // class FilePath
 
 }  // namespace internal

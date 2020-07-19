@@ -13,7 +13,7 @@ u... s..
 
 n.. Person
 pr..
-	string name
+	st.. name
 	in. age
 p..
 	?

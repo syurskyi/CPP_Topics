@@ -4,7 +4,7 @@
 struct deleter {
 //    double x;
     void operator()() {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::cout << __P.. << std::endl;
     }
 };
 

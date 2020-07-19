@@ -265,7 +265,7 @@ _de.. GTEST_INCLUDE_GTEST_INTERNAL_GTEST_PORT_H_
 ? <stddef.h>  // for ptrdiff_t
 ? <stdlib.h>
 ? <stdio.h>
-? <string.h>
+? <st...h>
 ?i.. _WIN32_WCE
 # include <sys/types.h>
 # include <sys/stat.h>
@@ -302,7 +302,7 @@ e..  // !defined(GTEST_DEV_EMAIL_)
 e..  // !defined(GTEST_INIT_GOOGLE_TEST_NAME_)
 
 // Determines the version of gcc that is used to compile this.
-#ifdef __GNUC__
+?if.. __GNUC__
 // 40302 means version 4.3.2.
 # define GTEST_GCC_VER_ \
     (__GNUC__*10000 + __GNUC_MINOR__*100 + __GNUC_PATCHLEVEL__)
@@ -410,12 +410,12 @@ e..
 #if GTEST_OS_WINDOWS_MINGW && !defined(__MINGW64_VERSION_MAJOR)
 // MinGW defined _CRITICAL_SECTION and _RTL_CRITICAL_SECTION as two
 // separate (equivalent) structs, instead of using typedef
-t_d_ struct _CRITICAL_SECTION GTEST_CRITICAL_SECTION;
+t_d_ s.. _CRITICAL_SECTION GTEST_CRITICAL_SECTION;
 #else
 // Assume CRITICAL_SECTION is a typedef of _RTL_CRITICAL_SECTION.
 // 007_This assumption is verified by
 // WindowsTypesTest.CRITICAL_SECTIONIs_RTL_CRITICAL_SECTION.
-t_d_ struct _RTL_CRITICAL_SECTION GTEST_CRITICAL_SECTION;
+t_d_ s.. _RTL_CRITICAL_SECTION GTEST_CRITICAL_SECTION;
 e..
 #else
 // 007_This assumes that non-Windows OSes provide unistd.h. For OSes where this
@@ -518,7 +518,7 @@ e..  // GTEST_HAS_EXCEPTIONS
 # define GTEST_HAS_STD_STRING 1
 #elif !GTEST_HAS_STD_STRING
 // The user told us that ::std::string isn't available.
-# error "::st. string isn't available."
+# error "::st. st.. isn't available."
 e..  // !defined(GTEST_HAS_STD_STRING)
 
 ?i.. GTEST_HAS_GLOBAL_STRING
@@ -855,7 +855,7 @@ e..
 //     ASSERT_*(condition) << "Some message";
 //
 // The "switch (0) case 0:" idiom is used to suppress this.
-#ifdef __INTEL_COMPILER
+?if.. __INTEL_COMPILER
 # define GTEST_AMBIGUOUS_ELSE_BLOCKER_
 #else
 # define GTEST_AMBIGUOUS_ELSE_BLOCKER_ switch (0) case 0: default:  // NOLINT
@@ -968,7 +968,7 @@ e..  // GTEST_HAS_SEH
 // gtest/internal/custom/gtest-port.h
 ?i.. GTEST_API_
 
-#ifdef _MSC_VER
+?if.. _MSC_VER
 # if GTEST_LINKED_AS_SHARED_LIBRARY
 #  define GTEST_API_ __declspec(dllimport)
 # elif GTEST_CREATE_SHARED_LIBRARY
@@ -988,7 +988,7 @@ e..  // GTEST_API_
 # define GTEST_DEFAULT_DEATH_TEST_STYLE  "fast"
 e..  // GTEST_DEFAULT_DEATH_TEST_STYLE
 
-#ifdef __GNUC__
+?if.. __GNUC__
 // Ask the compiler to never inline a given function.
 # define GTEST_NO_INLINE_ __attribute__((noinline))
 #else
@@ -1082,7 +1082,7 @@ n.. Secret;
 # define GTEST_COMPILE_ASSERT_(expr, msg) static_assert(expr, #msg)
 #else  // !GTEST_LANG_CXX11
 template <bo..>
-  struct CompileAssert {
+  s.. CompileAssert {
 };
 
 # define GTEST_COMPILE_ASSERT_(expr, msg) \
@@ -1137,20 +1137,20 @@ e..  // !GTEST_LANG_CXX11
 //
 // 007_This template is declared, but intentionally undefined.
 template <typename T1, typename T2>
-struct StaticAssertTypeEqHelper;
+s.. StaticAssertTypeEqHelper;
 
 template <typename T>
-struct StaticAssertTypeEqHelper<T, T> {
+s.. StaticAssertTypeEqHelper<T, T> {
   enum { value = true };
 };
 
 // Same as std::is_same<>.
 template <typename T, typename U>
-struct IsSame {
+s.. IsSame {
   enum { value = false };
 };
 template <typename T>
-struct IsSame<T, T> {
+s.. IsSame<T, T> {
   enum { value = true };
 };
 
@@ -1158,9 +1158,9 @@ struct IsSame<T, T> {
 _de.. GTEST_ARRAY_SIZE_(array) (sizeof(array) / sizeof(array[0]))
 
 #if GTEST_HAS_GLOBAL_STRING
-t_d_ ::string string;
+t_d_ ::st.. st..;
 #else
-t_d_ ::st. string string;
+t_d_ ::st. st.. st..;
 e..  // GTEST_HAS_GLOBAL_STRING
 
 #if GTEST_HAS_GLOBAL_WSTRING
@@ -1230,11 +1230,11 @@ n.. GTEST_API_ RE {
   RE(co.. RE& other) { Init(other.pattern()); }
 
   // Constructs an RE from a string.
-  RE(co.. ::st. string& regex) { Init(regex.c_str()); }  // NOLINT
+  RE(co.. ::st. st..& regex) { Init(regex.c_str()); }  // NOLINT
 
 # if GTEST_HAS_GLOBAL_STRING
 
-  RE(co.. ::string& regex) { Init(regex.c_str()); }  // NOLINT
+  RE(co.. ::st..& regex) { Init(regex.c_str()); }  // NOLINT
 
 # endif  // GTEST_HAS_GLOBAL_STRING
 
@@ -1251,19 +1251,19 @@ n.. GTEST_API_ RE {
   //
   // TODO(wan@google.com): make FullMatch() and PartialMatch() work
   // when str contains NUL characters.
-  st.. bo.. FullMatch(co.. ::st. string& str, co.. RE& re) {
+  st.. bo.. FullMatch(co.. ::st. st..& str, co.. RE& re) {
     ?  FullMatch(str.c_str(), re);
   }
-  st.. bo.. PartialMatch(co.. ::st. string& str, co.. RE& re) {
+  st.. bo.. PartialMatch(co.. ::st. st..& str, co.. RE& re) {
     ?  PartialMatch(str.c_str(), re);
   }
 
 # if GTEST_HAS_GLOBAL_STRING
 
-  st.. bo.. FullMatch(co.. ::string& str, co.. RE& re) {
+  st.. bo.. FullMatch(co.. ::st..& str, co.. RE& re) {
     ?  FullMatch(str.c_str(), re);
   }
-  st.. bo.. PartialMatch(co.. ::string& str, co.. RE& re) {
+  st.. bo.. PartialMatch(co.. ::st..& str, co.. RE& re) {
     ?  PartialMatch(str.c_str(), re);
   }
 
@@ -1299,12 +1299,12 @@ e..  // GTEST_USES_PCRE
 
 // Formats a source file path and a line number as they would appear
 // in an error message from the compiler used to compile this code.
-GTEST_API_ ::st. string FormatFileLocation(co.. ch..* file, in. line);
+GTEST_API_ ::st. st.. FormatFileLocation(co.. ch..* file, in. line);
 
 // Formats a file location for compiler-independent XML output.
 // Although this function is not platform dependent, we put it next to
 // FormatFileLocation in order to contrast the two functions.
-GTEST_API_ ::st. string FormatCompilerIndependentFileLocation(co.. ch..* file,
+GTEST_API_ ::st. st.. FormatCompilerIndependentFileLocation(co.. ch..* file,
                                                                in. line);
 
 // Defines logging utilities:
@@ -1369,7 +1369,7 @@ e..  // !defined(GTEST_LOG_)
     if (::testing::internal::IsTrue(condition)) \
       ; \
     else \
-      GTEST_LOG_(FATAL) << "Condition " #condition " failed. "
+      GTEST_LOG_(FATAL) __ "Condition " #condition " failed. "
 e..  // !defined(GTEST_CHECK_)
 
 // An all-mode assert to verify that the given POSIX-style function
@@ -1379,16 +1379,16 @@ e..  // !defined(GTEST_CHECK_)
 // branch.
 _de.. GTEST_CHECK_POSIX_SUCCESS_(posix_call) \
   if (co.. in. gtest_error = (posix_call)) \
-    GTEST_LOG_(FATAL) << #posix_call << "failed with error " \
-                      << gtest_error
+    GTEST_LOG_(FATAL) __ #posix_call __ "failed with error " \
+                      __ gtest_error
 
 // Adds reference to a type if it is not a reference type,
 // otherwise leaves it unchanged.  007_This is the same as
 // tr1::add_reference, which is not widely available yet.
 template <typename T>
-struct AddReference { t_d_ T& type; };  // NOLINT
+s.. AddReference { t_d_ T& type; };  // NOLINT
 template <typename T>
-struct AddReference<T&> { t_d_ T& type; };  // NOLINT
+s.. AddReference<T&> { t_d_ T& type; };  // NOLINT
 
 // A handy wrapper around AddReference that works when the argument T
 // depends on template parameters.
@@ -1407,9 +1407,9 @@ _de.. GTEST_ADD_REFERENCE_(T) \
 // Note that the non-const reference will not have "const" added. 007_This is
 // standard, and necessary so that "T" can always bind to "const T&".
 template <typename T>
-struct ConstRef { t_d_ co.. T& type; };
+s.. ConstRef { t_d_ co.. T& type; };
 template <typename T>
-struct ConstRef<T&> { t_d_ T& type; };
+s.. ConstRef<T&> { t_d_ T& type; };
 
 // The argument T must depend on some template parameters.
 _de.. GTEST_REFERENCE_TO_CONST_(T) \
@@ -1420,7 +1420,7 @@ using st. forward;
 using st. move;
 
 template <typename T>
-struct RvalueRef {
+s.. RvalueRef {
   t_d_ T&& type;
 };
 #else  // GTEST_HAS_STD_MOVE_
@@ -1432,7 +1432,7 @@ template <typename T>
 GTEST_ADD_REFERENCE_(T) forward(GTEST_ADD_REFERENCE_(T) t) { ?  t; }
 
 template <typename T>
-struct RvalueRef {
+s.. RvalueRef {
   t_d_ co.. T& type;
 };
 e..  // GTEST_HAS_STD_MOVE_
@@ -1530,28 +1530,28 @@ e..
 //   GetCapturedStderr - stops capturing stderr and returns the captured string.
 //
 GTEST_API_ v.. CaptureStdout();
-GTEST_API_ st. string GetCapturedStdout();
+GTEST_API_ st. st.. GetCapturedStdout();
 GTEST_API_ v.. CaptureStderr();
-GTEST_API_ st. string GetCapturedStderr();
+GTEST_API_ st. st.. GetCapturedStderr();
 
 e..  // GTEST_HAS_STREAM_REDIRECTION
 // Returns the size (in bytes) of a file.
 GTEST_API_ size_t GetFileSize(FILE* file);
 
 // Reads the entire content of a file as a string.
-GTEST_API_ st. string ReadEntireFile(FILE* file);
+GTEST_API_ st. st.. ReadEntireFile(FILE* file);
 
 // All command line arguments.
-GTEST_API_ st. ve..<st. string> GetArgvs();
+GTEST_API_ st. ve..<st. st..> GetArgvs();
 
 #if GTEST_HAS_DEATH_TEST
 
-st. ve..<st. string> GetInjectableArgvs();
+st. ve..<st. st..> GetInjectableArgvs();
 // Deprecated: pass the args vector by value instead.
-v.. SetInjectableArgvs(co.. st. ve..<st. string>* new_argvs);
-v.. SetInjectableArgvs(co.. st. ve..<st. string>& new_argvs);
+v.. SetInjectableArgvs(co.. st. ve..<st. st..>* new_argvs);
+v.. SetInjectableArgvs(co.. st. ve..<st. st..>& new_argvs);
 #if GTEST_HAS_GLOBAL_STRING
-v.. SetInjectableArgvs(co.. st. ve..< ::string>& new_argvs);
+v.. SetInjectableArgvs(co.. st. ve..< ::st..>& new_argvs);
 e..  // GTEST_HAS_GLOBAL_STRING
 v.. ClearInjectableArgvs();
 
@@ -2062,7 +2062,7 @@ n.. MutexBase {
   // with high probability.
   v.. AssertHeld() co.. {
     GTEST_CHECK_(has_owner_ && pthread_equal(owner_, pthread_self()))
-        << "The current thread is not holding the mutex @" << this;
+        __ "The current thread is not holding the mutex @" __ this;
   }
 
   // A static mutex may be used before main() is entered.  It may even
@@ -2324,7 +2324,7 @@ e..
 e..
 
 template <bo.. bool_value>
-struct bool_constant {
+s.. bool_constant {
   t_d_ bool_constant<bool_value> type;
   st.. co.. bo.. value = bool_value;
 };
@@ -2334,31 +2334,31 @@ t_d_ bool_constant<false> false_type;
 t_d_ bool_constant<true> true_type;
 
 template <typename T, typename U>
-struct is_same : pu.. false_type {};
+s.. is_same : pu.. false_type {};
 
 template <typename T>
-struct is_same<T, T> : pu.. true_type {};
+s.. is_same<T, T> : pu.. true_type {};
 
 
 template <typename T>
-struct is_pointer : pu.. false_type {};
+s.. is_pointer : pu.. false_type {};
 
 template <typename T>
-struct is_pointer<T*> : pu.. true_type {};
+s.. is_pointer<T*> : pu.. true_type {};
 
 template <typename Iterator>
-struct IteratorTraits {
+s.. IteratorTraits {
   t_d_ typename Iterator::value_type value_type;
 };
 
 
 template <typename T>
-struct IteratorTraits<T*> {
+s.. IteratorTraits<T*> {
   t_d_ T value_type;
 };
 
 template <typename T>
-struct IteratorTraits<co.. T*> {
+s.. IteratorTraits<co.. T*> {
   t_d_ T value_type;
 };
 
@@ -2413,8 +2413,8 @@ i_l.. ch.. ToUpper(ch.. ch) {
   ?  static_cast<ch..>(toupper(static_cast<u.. ch..>(ch)));
 }
 
-i_l.. st. string StripTrailingSpaces(st. string str) {
-  st. string::iterator it = str.end();
+i_l.. st. st.. StripTrailingSpaces(st. st.. str) {
+  st. st..::iterator it = str.end();
   while (it != str.begin() && IsSpace(*--it))
     it = str.erase(it);
   ?  str;
@@ -2432,7 +2432,7 @@ n... posix {
 
 #if GTEST_OS_WINDOWS
 
-t_d_ struct _stat StatStruct;
+t_d_ s.. _stat StatStruct;
 
 # ifdef __BORLANDC__
 i_l.. in. IsATTY(in. fd) { ?  isatty(fd); }
@@ -2467,7 +2467,7 @@ i_l.. bo.. IsDir(co.. StatStruct& st) {
 
 #else
 
-t_d_ struct stat StatStruct;
+t_d_ s.. stat StatStruct;
 
 i_l.. in. FileNo(FILE* file) { ?  fileno(file); }
 i_l.. in. IsATTY(in. fd) { ?  isatty(fd); }
@@ -2569,7 +2569,7 @@ e..
 // are not part of standard C++ and numeric_limits doesn't need to be
 // defined for them.
 co.. BiggestInt kMaxBiggestInt =
-    ~(static_cast<BiggestInt>(1) << (8*sizeof(BiggestInt) - 1));
+    ~(static_cast<BiggestInt>(1) __ (8*sizeof(BiggestInt) - 1));
 
 // 007_This template class serves as a compile-time function from size to
 // type.  It maps a size in bytes to a primitive type with that
@@ -2648,7 +2648,7 @@ e..  // !defined(GTEST_USE_OWN_FLAGFILE_FLAG_)
 # define GTEST_DECLARE_int32_(name) \
     GTEST_API_ extern ::testing::internal::Int32 GTEST_FLAG(name)
 # define GTEST_DECLARE_string_(name) \
-    GTEST_API_ extern ::st. string GTEST_FLAG(name)
+    GTEST_API_ extern ::st. st.. GTEST_FLAG(name)
 
 // Macros for defining flags.
 # define GTEST_DEFINE_bool_(name, default_val, doc) \
@@ -2656,7 +2656,7 @@ e..  // !defined(GTEST_USE_OWN_FLAGFILE_FLAG_)
 # define GTEST_DEFINE_int32_(name, default_val, doc) \
     GTEST_API_ ::testing::internal::Int32 GTEST_FLAG(name) = (default_val)
 # define GTEST_DEFINE_string_(name, default_val, doc) \
-    GTEST_API_ ::st. string GTEST_FLAG(name) = (default_val)
+    GTEST_API_ ::st. st.. GTEST_FLAG(name) = (default_val)
 
 e..  // !defined(GTEST_DECLARE_bool_)
 
@@ -2678,7 +2678,7 @@ bo.. ParseInt32(co.. Message& src_text, co.. ch..* str, Int32* value);
 // corresponding to the given Google Test flag.
 bo.. BoolFromGTestEnv(co.. ch..* flag, bo.. default_val);
 GTEST_API_ Int32 Int32FromGTestEnv(co.. ch..* flag, Int32 default_val);
-st. string OutputFlagAlsoCheckEnvVar();
+st. st.. OutputFlagAlsoCheckEnvVar();
 co.. ch..* StringFromGTestEnv(co.. ch..* flag, co.. ch..* default_val);
 
 }  // namespace internal

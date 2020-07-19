@@ -3208,8 +3208,8 @@ n.. CartesianProductGenerator2
       // Having the same base generator guarantees that the other
       // iterator is of the same type and we can downcast.
       GTEST_CHECK_(BaseGenerator() == other.BaseGenerator())
-          << "The program attempted to compare iterators "
-          << "from different generators." << st. endl;
+          __ "The program attempted to compare iterators "
+          __ "from different generators." __ st. e..
       co.. Iterator* typed_other =
           CheckedDowncastToActualType<co.. Iterator>(&other);
       // We must report iterators equal if they both point beyond their
@@ -3331,8 +3331,8 @@ n.. CartesianProductGenerator3
       // Having the same base generator guarantees that the other
       // iterator is of the same type and we can downcast.
       GTEST_CHECK_(BaseGenerator() == other.BaseGenerator())
-          << "The program attempted to compare iterators "
-          << "from different generators." << st. endl;
+          __ "The program attempted to compare iterators "
+          __ "from different generators." __ st. e..
       co.. Iterator* typed_other =
           CheckedDowncastToActualType<co.. Iterator>(&other);
       // We must report iterators equal if they both point beyond their
@@ -3472,8 +3472,8 @@ n.. CartesianProductGenerator4
       // Having the same base generator guarantees that the other
       // iterator is of the same type and we can downcast.
       GTEST_CHECK_(BaseGenerator() == other.BaseGenerator())
-          << "The program attempted to compare iterators "
-          << "from different generators." << st. endl;
+          __ "The program attempted to compare iterators "
+          __ "from different generators." __ st. e..
       co.. Iterator* typed_other =
           CheckedDowncastToActualType<co.. Iterator>(&other);
       // We must report iterators equal if they both point beyond their
@@ -3630,8 +3630,8 @@ n.. CartesianProductGenerator5
       // Having the same base generator guarantees that the other
       // iterator is of the same type and we can downcast.
       GTEST_CHECK_(BaseGenerator() == other.BaseGenerator())
-          << "The program attempted to compare iterators "
-          << "from different generators." << st. endl;
+          __ "The program attempted to compare iterators "
+          __ "from different generators." __ st. e..
       co.. Iterator* typed_other =
           CheckedDowncastToActualType<co.. Iterator>(&other);
       // We must report iterators equal if they both point beyond their
@@ -3807,8 +3807,8 @@ n.. CartesianProductGenerator6
       // Having the same base generator guarantees that the other
       // iterator is of the same type and we can downcast.
       GTEST_CHECK_(BaseGenerator() == other.BaseGenerator())
-          << "The program attempted to compare iterators "
-          << "from different generators." << st. endl;
+          __ "The program attempted to compare iterators "
+          __ "from different generators." __ st. e..
       co.. Iterator* typed_other =
           CheckedDowncastToActualType<co.. Iterator>(&other);
       // We must report iterators equal if they both point beyond their
@@ -4001,8 +4001,8 @@ n.. CartesianProductGenerator7
       // Having the same base generator guarantees that the other
       // iterator is of the same type and we can downcast.
       GTEST_CHECK_(BaseGenerator() == other.BaseGenerator())
-          << "The program attempted to compare iterators "
-          << "from different generators." << st. endl;
+          __ "The program attempted to compare iterators "
+          __ "from different generators." __ st. e..
       co.. Iterator* typed_other =
           CheckedDowncastToActualType<co.. Iterator>(&other);
       // We must report iterators equal if they both point beyond their
@@ -4214,8 +4214,8 @@ n.. CartesianProductGenerator8
       // Having the same base generator guarantees that the other
       // iterator is of the same type and we can downcast.
       GTEST_CHECK_(BaseGenerator() == other.BaseGenerator())
-          << "The program attempted to compare iterators "
-          << "from different generators." << st. endl;
+          __ "The program attempted to compare iterators "
+          __ "from different generators." __ st. e..
       co.. Iterator* typed_other =
           CheckedDowncastToActualType<co.. Iterator>(&other);
       // We must report iterators equal if they both point beyond their
@@ -4443,8 +4443,8 @@ n.. CartesianProductGenerator9
       // Having the same base generator guarantees that the other
       // iterator is of the same type and we can downcast.
       GTEST_CHECK_(BaseGenerator() == other.BaseGenerator())
-          << "The program attempted to compare iterators "
-          << "from different generators." << st. endl;
+          __ "The program attempted to compare iterators "
+          __ "from different generators." __ st. e..
       co.. Iterator* typed_other =
           CheckedDowncastToActualType<co.. Iterator>(&other);
       // We must report iterators equal if they both point beyond their
@@ -4690,8 +4690,8 @@ n.. CartesianProductGenerator10
       // Having the same base generator guarantees that the other
       // iterator is of the same type and we can downcast.
       GTEST_CHECK_(BaseGenerator() == other.BaseGenerator())
-          << "The program attempted to compare iterators "
-          << "from different generators." << st. endl;
+          __ "The program attempted to compare iterators "
+          __ "from different generators." __ st. e..
       co.. Iterator* typed_other =
           CheckedDowncastToActualType<co.. Iterator>(&other);
       // We must report iterators equal if they both point beyond their

@@ -66,36 +66,36 @@ n.. IgnoredValue {
 // MatcherTuple<T>::type is a tuple type where each field is a Matcher
 // for the corresponding field in tuple type T.
 template <typename Tuple>
-struct MatcherTuple;
+s.. MatcherTuple;
 
 template <>
-struct MatcherTuple< ::testing::tuple<> > {
+s.. MatcherTuple< ::testing::tuple<> > {
   t_d_ ::testing::tuple< > type;
 };
 
 template <typename A1>
-struct MatcherTuple< ::testing::tuple<A1> > {
+s.. MatcherTuple< ::testing::tuple<A1> > {
   t_d_ ::testing::tuple<Matcher<A1> > type;
 };
 
 template <typename A1, typename A2>
-struct MatcherTuple< ::testing::tuple<A1, A2> > {
+s.. MatcherTuple< ::testing::tuple<A1, A2> > {
   t_d_ ::testing::tuple<Matcher<A1>, Matcher<A2> > type;
 };
 
 template <typename A1, typename A2, typename A3>
-struct MatcherTuple< ::testing::tuple<A1, A2, A3> > {
+s.. MatcherTuple< ::testing::tuple<A1, A2, A3> > {
   t_d_ ::testing::tuple<Matcher<A1>, Matcher<A2>, Matcher<A3> > type;
 };
 
 template <typename A1, typename A2, typename A3, typename A4>
-struct MatcherTuple< ::testing::tuple<A1, A2, A3, A4> > {
+s.. MatcherTuple< ::testing::tuple<A1, A2, A3, A4> > {
   t_d_ ::testing::tuple<Matcher<A1>, Matcher<A2>, Matcher<A3>, Matcher<A4> >
       type;
 };
 
 template <typename A1, typename A2, typename A3, typename A4, typename A5>
-struct MatcherTuple< ::testing::tuple<A1, A2, A3, A4, A5> > {
+s.. MatcherTuple< ::testing::tuple<A1, A2, A3, A4, A5> > {
   t_d_ ::testing::tuple<Matcher<A1>, Matcher<A2>, Matcher<A3>, Matcher<A4>,
                            Matcher<A5> >
       type;
@@ -103,7 +103,7 @@ struct MatcherTuple< ::testing::tuple<A1, A2, A3, A4, A5> > {
 
 template <typename A1, typename A2, typename A3, typename A4, typename A5,
     typename A6>
-struct MatcherTuple< ::testing::tuple<A1, A2, A3, A4, A5, A6> > {
+s.. MatcherTuple< ::testing::tuple<A1, A2, A3, A4, A5, A6> > {
   t_d_ ::testing::tuple<Matcher<A1>, Matcher<A2>, Matcher<A3>, Matcher<A4>,
                            Matcher<A5>, Matcher<A6> >
       type;
@@ -111,7 +111,7 @@ struct MatcherTuple< ::testing::tuple<A1, A2, A3, A4, A5, A6> > {
 
 template <typename A1, typename A2, typename A3, typename A4, typename A5,
     typename A6, typename A7>
-struct MatcherTuple< ::testing::tuple<A1, A2, A3, A4, A5, A6, A7> > {
+s.. MatcherTuple< ::testing::tuple<A1, A2, A3, A4, A5, A6, A7> > {
   t_d_ ::testing::tuple<Matcher<A1>, Matcher<A2>, Matcher<A3>, Matcher<A4>,
                            Matcher<A5>, Matcher<A6>, Matcher<A7> >
       type;
@@ -119,7 +119,7 @@ struct MatcherTuple< ::testing::tuple<A1, A2, A3, A4, A5, A6, A7> > {
 
 template <typename A1, typename A2, typename A3, typename A4, typename A5,
     typename A6, typename A7, typename A8>
-struct MatcherTuple< ::testing::tuple<A1, A2, A3, A4, A5, A6, A7, A8> > {
+s.. MatcherTuple< ::testing::tuple<A1, A2, A3, A4, A5, A6, A7, A8> > {
   t_d_ ::testing::tuple<Matcher<A1>, Matcher<A2>, Matcher<A3>, Matcher<A4>,
                            Matcher<A5>, Matcher<A6>, Matcher<A7>, Matcher<A8> >
       type;
@@ -127,7 +127,7 @@ struct MatcherTuple< ::testing::tuple<A1, A2, A3, A4, A5, A6, A7, A8> > {
 
 template <typename A1, typename A2, typename A3, typename A4, typename A5,
     typename A6, typename A7, typename A8, typename A9>
-struct MatcherTuple< ::testing::tuple<A1, A2, A3, A4, A5, A6, A7, A8, A9> > {
+s.. MatcherTuple< ::testing::tuple<A1, A2, A3, A4, A5, A6, A7, A8, A9> > {
   t_d_ ::testing::tuple<Matcher<A1>, Matcher<A2>, Matcher<A3>, Matcher<A4>,
                            Matcher<A5>, Matcher<A6>, Matcher<A7>, Matcher<A8>,
                            Matcher<A9> >
@@ -136,7 +136,7 @@ struct MatcherTuple< ::testing::tuple<A1, A2, A3, A4, A5, A6, A7, A8, A9> > {
 
 template <typename A1, typename A2, typename A3, typename A4, typename A5,
     typename A6, typename A7, typename A8, typename A9, typename A10>
-struct MatcherTuple< ::testing::tuple<A1, A2, A3, A4, A5, A6, A7, A8, A9,
+s.. MatcherTuple< ::testing::tuple<A1, A2, A3, A4, A5, A6, A7, A8, A9,
     A10> > {
   t_d_ ::testing::tuple<Matcher<A1>, Matcher<A2>, Matcher<A3>, Matcher<A4>,
                            Matcher<A5>, Matcher<A6>, Matcher<A7>, Matcher<A8>,
@@ -158,10 +158,10 @@ struct MatcherTuple< ::testing::tuple<A1, A2, A3, A4, A5, A6, A7, A8, A9,
 //                         the function type obtained by substituting Something
 //                         for the return type of F.
 template <typename F>
-struct Function;
+s.. Function;
 
 template <typename R>
-struct Function<R()> {
+s.. Function<R()> {
   t_d_ R Result;
   t_d_ ::testing::tuple<> ArgumentTuple;
   t_d_ typename MatcherTuple<ArgumentTuple>::type ArgumentMatcherTuple;
@@ -170,7 +170,7 @@ struct Function<R()> {
 };
 
 template <typename R, typename A1>
-struct Function<R(A1)>
+s.. Function<R(A1)>
     : Function<R()> {
   t_d_ A1 Argument1;
   t_d_ ::testing::tuple<A1> ArgumentTuple;
@@ -180,7 +180,7 @@ struct Function<R(A1)>
 };
 
 template <typename R, typename A1, typename A2>
-struct Function<R(A1, A2)>
+s.. Function<R(A1, A2)>
     : Function<R(A1)> {
   t_d_ A2 Argument2;
   t_d_ ::testing::tuple<A1, A2> ArgumentTuple;
@@ -190,7 +190,7 @@ struct Function<R(A1, A2)>
 };
 
 template <typename R, typename A1, typename A2, typename A3>
-struct Function<R(A1, A2, A3)>
+s.. Function<R(A1, A2, A3)>
     : Function<R(A1, A2)> {
   t_d_ A3 Argument3;
   t_d_ ::testing::tuple<A1, A2, A3> ArgumentTuple;
@@ -200,7 +200,7 @@ struct Function<R(A1, A2, A3)>
 };
 
 template <typename R, typename A1, typename A2, typename A3, typename A4>
-struct Function<R(A1, A2, A3, A4)>
+s.. Function<R(A1, A2, A3, A4)>
     : Function<R(A1, A2, A3)> {
   t_d_ A4 Argument4;
   t_d_ ::testing::tuple<A1, A2, A3, A4> ArgumentTuple;
@@ -211,7 +211,7 @@ struct Function<R(A1, A2, A3, A4)>
 
 template <typename R, typename A1, typename A2, typename A3, typename A4,
     typename A5>
-struct Function<R(A1, A2, A3, A4, A5)>
+s.. Function<R(A1, A2, A3, A4, A5)>
     : Function<R(A1, A2, A3, A4)> {
   t_d_ A5 Argument5;
   t_d_ ::testing::tuple<A1, A2, A3, A4, A5> ArgumentTuple;
@@ -222,7 +222,7 @@ struct Function<R(A1, A2, A3, A4, A5)>
 
 template <typename R, typename A1, typename A2, typename A3, typename A4,
     typename A5, typename A6>
-struct Function<R(A1, A2, A3, A4, A5, A6)>
+s.. Function<R(A1, A2, A3, A4, A5, A6)>
     : Function<R(A1, A2, A3, A4, A5)> {
   t_d_ A6 Argument6;
   t_d_ ::testing::tuple<A1, A2, A3, A4, A5, A6> ArgumentTuple;
@@ -233,7 +233,7 @@ struct Function<R(A1, A2, A3, A4, A5, A6)>
 
 template <typename R, typename A1, typename A2, typename A3, typename A4,
     typename A5, typename A6, typename A7>
-struct Function<R(A1, A2, A3, A4, A5, A6, A7)>
+s.. Function<R(A1, A2, A3, A4, A5, A6, A7)>
     : Function<R(A1, A2, A3, A4, A5, A6)> {
   t_d_ A7 Argument7;
   t_d_ ::testing::tuple<A1, A2, A3, A4, A5, A6, A7> ArgumentTuple;
@@ -244,7 +244,7 @@ struct Function<R(A1, A2, A3, A4, A5, A6, A7)>
 
 template <typename R, typename A1, typename A2, typename A3, typename A4,
     typename A5, typename A6, typename A7, typename A8>
-struct Function<R(A1, A2, A3, A4, A5, A6, A7, A8)>
+s.. Function<R(A1, A2, A3, A4, A5, A6, A7, A8)>
     : Function<R(A1, A2, A3, A4, A5, A6, A7)> {
   t_d_ A8 Argument8;
   t_d_ ::testing::tuple<A1, A2, A3, A4, A5, A6, A7, A8> ArgumentTuple;
@@ -255,7 +255,7 @@ struct Function<R(A1, A2, A3, A4, A5, A6, A7, A8)>
 
 template <typename R, typename A1, typename A2, typename A3, typename A4,
     typename A5, typename A6, typename A7, typename A8, typename A9>
-struct Function<R(A1, A2, A3, A4, A5, A6, A7, A8, A9)>
+s.. Function<R(A1, A2, A3, A4, A5, A6, A7, A8, A9)>
     : Function<R(A1, A2, A3, A4, A5, A6, A7, A8)> {
   t_d_ A9 Argument9;
   t_d_ ::testing::tuple<A1, A2, A3, A4, A5, A6, A7, A8, A9> ArgumentTuple;
@@ -268,7 +268,7 @@ struct Function<R(A1, A2, A3, A4, A5, A6, A7, A8, A9)>
 template <typename R, typename A1, typename A2, typename A3, typename A4,
     typename A5, typename A6, typename A7, typename A8, typename A9,
     typename A10>
-struct Function<R(A1, A2, A3, A4, A5, A6, A7, A8, A9, A10)>
+s.. Function<R(A1, A2, A3, A4, A5, A6, A7, A8, A9, A10)>
     : Function<R(A1, A2, A3, A4, A5, A6, A7, A8, A9)> {
   t_d_ A10 Argument10;
   t_d_ ::testing::tuple<A1, A2, A3, A4, A5, A6, A7, A8, A9,

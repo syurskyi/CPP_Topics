@@ -3,7 +3,7 @@
 //
 //? ?
 //
-//    st. c__ __  __PRETTY_FUNCTION__ __  "\n"sy.. pause
+//    st. c__ __  __P.. __  "\n"sy.. pause
 //
 //
 //? ? uin. paws  ? ?
@@ -26,5 +26,5 @@
 //
 //? #?
 //
-//    st. c__ __  __PRETTY_FUNCTION__ __  "\n" sy.. pause
+//    st. c__ __  __P.. __  "\n" sy.. pause
 //

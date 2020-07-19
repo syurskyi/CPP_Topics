@@ -73,11 +73,11 @@ n.. ActionAdaptor;
 //
 // 007_This primary template is used when kDefaultConstructible is true.
 template <typename T, bo.. kDefaultConstructible>
-struct BuiltInDefaultValueGetter {
+s.. BuiltInDefaultValueGetter {
   st.. T Get() { ?  T(); }
 };
 template <typename T>
-struct BuiltInDefaultValueGetter<T, false> {
+s.. BuiltInDefaultValueGetter<T, false> {
   st.. T Get() {
     Assert(false, __FILE__, __LINE__,
            "Default action undefined for the function return type.");
@@ -151,9 +151,9 @@ _de.. GMOCK_DEFINE_DEFAULT_ACTION_FOR_RETURN_TYPE_(type, value) \
 
 GMOCK_DEFINE_DEFAULT_ACTION_FOR_RETURN_TYPE_(v.., );  // NOLINT
 #if GTEST_HAS_GLOBAL_STRING
-GMOCK_DEFINE_DEFAULT_ACTION_FOR_RETURN_TYPE_(::string, "");
+GMOCK_DEFINE_DEFAULT_ACTION_FOR_RETURN_TYPE_(::st.., "");
 e..  // GTEST_HAS_GLOBAL_STRING
-GMOCK_DEFINE_DEFAULT_ACTION_FOR_RETURN_TYPE_(::st. string, "");
+GMOCK_DEFINE_DEFAULT_ACTION_FOR_RETURN_TYPE_(::st. st.., "");
 GMOCK_DEFINE_DEFAULT_ACTION_FOR_RETURN_TYPE_(bo.., false);
 GMOCK_DEFINE_DEFAULT_ACTION_FOR_RETURN_TYPE_(u.. ch.., '\0');
 GMOCK_DEFINE_DEFAULT_ACTION_FOR_RETURN_TYPE_(signed ch.., '\0');
@@ -527,7 +527,7 @@ n.. ActionAdaptor : pu.. ActionInterface<F1> {
 // Helper struct to specialize ReturnAction to execute a move instead of a copy
 // on return. Useful for move-only types, but could be used on any type.
 template <typename T>
-struct ByMoveWrapper {
+s.. ByMoveWrapper {
   ex__ ByMoveWrapper(T value) : payload(internal::move(value)) {}
   T payload;
 };
@@ -631,7 +631,7 @@ n.. ReturnAction {
 
     v.. Result Perform(co.. ArgumentTuple&) {
       GTEST_CHECK_(!performed_)
-          << "A ByMove() action should only be performed once.";
+          __ "A ByMove() action should only be performed once.";
       performed_ = true;
       ?  internal::move(wrapper_->payload);
     }

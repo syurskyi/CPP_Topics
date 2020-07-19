@@ -87,9 +87,9 @@ AssertionResult AssertPred1Helper(co.. ch..* pred_text,
                                   co.. T1& v1) {
   if (pred(v1)) ?  AssertionSuccess();
 
-  ?  AssertionFailure() << pred_text << "("
-                            << e1 << ") evaluates to false, where"
-                            << "\n" << e1 << " evaluates to " << v1;
+  ?  AssertionFailure() __ pred_text __ "("
+                            __ e1 __ ") evaluates to false, where"
+                            __ "\n" __ e1 __ " evaluates to " __ v1;
 }
 
 // Internal macro for implementing {EXPECT|ASSERT}_PRED_FORMAT1.
@@ -131,11 +131,11 @@ AssertionResult AssertPred2Helper(co.. ch..* pred_text,
                                   co.. T2& v2) {
   if (pred(v1, v2)) ?  AssertionSuccess();
 
-  ?  AssertionFailure() << pred_text << "("
-                            << e1 << ", "
-                            << e2 << ") evaluates to false, where"
-                            << "\n" << e1 << " evaluates to " << v1
-                            << "\n" << e2 << " evaluates to " << v2;
+  ?  AssertionFailure() __ pred_text __ "("
+                            __ e1 __ ", "
+                            __ e2 __ ") evaluates to false, where"
+                            __ "\n" __ e1 __ " evaluates to " __ v1
+                            __ "\n" __ e2 __ " evaluates to " __ v2;
 }
 
 // Internal macro for implementing {EXPECT|ASSERT}_PRED_FORMAT2.
@@ -182,13 +182,13 @@ AssertionResult AssertPred3Helper(co.. ch..* pred_text,
                                   co.. T3& v3) {
   if (pred(v1, v2, v3)) ?  AssertionSuccess();
 
-  ?  AssertionFailure() << pred_text << "("
-                            << e1 << ", "
-                            << e2 << ", "
-                            << e3 << ") evaluates to false, where"
-                            << "\n" << e1 << " evaluates to " << v1
-                            << "\n" << e2 << " evaluates to " << v2
-                            << "\n" << e3 << " evaluates to " << v3;
+  ?  AssertionFailure() __ pred_text __ "("
+                            __ e1 __ ", "
+                            __ e2 __ ", "
+                            __ e3 __ ") evaluates to false, where"
+                            __ "\n" __ e1 __ " evaluates to " __ v1
+                            __ "\n" __ e2 __ " evaluates to " __ v2
+                            __ "\n" __ e3 __ " evaluates to " __ v3;
 }
 
 // Internal macro for implementing {EXPECT|ASSERT}_PRED_FORMAT3.
@@ -240,15 +240,15 @@ AssertionResult AssertPred4Helper(co.. ch..* pred_text,
                                   co.. T4& v4) {
   if (pred(v1, v2, v3, v4)) ?  AssertionSuccess();
 
-  ?  AssertionFailure() << pred_text << "("
-                            << e1 << ", "
-                            << e2 << ", "
-                            << e3 << ", "
-                            << e4 << ") evaluates to false, where"
-                            << "\n" << e1 << " evaluates to " << v1
-                            << "\n" << e2 << " evaluates to " << v2
-                            << "\n" << e3 << " evaluates to " << v3
-                            << "\n" << e4 << " evaluates to " << v4;
+  ?  AssertionFailure() __ pred_text __ "("
+                            __ e1 __ ", "
+                            __ e2 __ ", "
+                            __ e3 __ ", "
+                            __ e4 __ ") evaluates to false, where"
+                            __ "\n" __ e1 __ " evaluates to " __ v1
+                            __ "\n" __ e2 __ " evaluates to " __ v2
+                            __ "\n" __ e3 __ " evaluates to " __ v3
+                            __ "\n" __ e4 __ " evaluates to " __ v4;
 }
 
 // Internal macro for implementing {EXPECT|ASSERT}_PRED_FORMAT4.
@@ -305,17 +305,17 @@ AssertionResult AssertPred5Helper(co.. ch..* pred_text,
                                   co.. T5& v5) {
   if (pred(v1, v2, v3, v4, v5)) ?  AssertionSuccess();
 
-  ?  AssertionFailure() << pred_text << "("
-                            << e1 << ", "
-                            << e2 << ", "
-                            << e3 << ", "
-                            << e4 << ", "
-                            << e5 << ") evaluates to false, where"
-                            << "\n" << e1 << " evaluates to " << v1
-                            << "\n" << e2 << " evaluates to " << v2
-                            << "\n" << e3 << " evaluates to " << v3
-                            << "\n" << e4 << " evaluates to " << v4
-                            << "\n" << e5 << " evaluates to " << v5;
+  ?  AssertionFailure() __ pred_text __ "("
+                            __ e1 __ ", "
+                            __ e2 __ ", "
+                            __ e3 __ ", "
+                            __ e4 __ ", "
+                            __ e5 __ ") evaluates to false, where"
+                            __ "\n" __ e1 __ " evaluates to " __ v1
+                            __ "\n" __ e2 __ " evaluates to " __ v2
+                            __ "\n" __ e3 __ " evaluates to " __ v3
+                            __ "\n" __ e4 __ " evaluates to " __ v4
+                            __ "\n" __ e5 __ " evaluates to " __ v5;
 }
 
 // Internal macro for implementing {EXPECT|ASSERT}_PRED_FORMAT5.

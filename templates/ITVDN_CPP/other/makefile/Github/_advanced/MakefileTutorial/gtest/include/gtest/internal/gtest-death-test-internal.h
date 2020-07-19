@@ -126,11 +126,11 @@ n.. GTEST_API_ DeathTest {
   // the last death test.
   st.. co.. ch..* LastMessage();
 
-  st.. v.. set_last_death_test_message(co.. st. string& message);
+  st.. v.. set_last_death_test_message(co.. st. st..& message);
 
  pr..
   // A string containing a description of the outcome of the last death test.
-  st.. st. string last_death_test_message_;
+  st.. st. st.. last_death_test_message_;
 
   GTEST_DISALLOW_COPY_AND_ASSIGN_(DeathTest);
 };
@@ -236,7 +236,7 @@ _de.. GTEST_EXECUTE_STATEMENT_(statement, regex)             \
 // RUN_ALL_TESTS was called.
 n.. InternalRunDeathTestFlag {
  p..
-  InternalRunDeathTestFlag(co.. st. string& a_file,
+  InternalRunDeathTestFlag(co.. st. st..& a_file,
                            in. a_line,
                            in. an_index,
                            in. a_write_fd)
@@ -248,13 +248,13 @@ n.. InternalRunDeathTestFlag {
       posix::Close(write_fd_);
   }
 
-  co.. st. string& file() co.. { ?  file_; }
+  co.. st. st..& file() co.. { ?  file_; }
   in. line() co.. { ?  line_; }
   in. index() co.. { ?  index_; }
   in. write_fd() co.. { ?  write_fd_; }
 
  pr..
-  st. string file_;
+  st. st.. file_;
   in. line_;
   in. index_;
   in. write_fd_;

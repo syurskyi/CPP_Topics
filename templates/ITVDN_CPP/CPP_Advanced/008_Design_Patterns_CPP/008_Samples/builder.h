@@ -11,15 +11,15 @@ u.. s..
 n.. Pizza
 {
 p..
-    v.. setDough( co.. string& dough );
-    v.. setSauce( co.. string& sauce );
-    v.. setTopping( co.. string& topping );
+    v.. setDough( co.. st..& dough );
+    v.. setSauce( co.. st..& sauce );
+    v.. setTopping( co.. st..& topping );
     v.. open() co..;
 
 pr..
-    string m_dough;
-    string m_sauce;
-    string m_topping;
+    st.. m_dough;
+    st.. m_sauce;
+    st.. m_topping;
 };
 
 n.. PizzaBuilder

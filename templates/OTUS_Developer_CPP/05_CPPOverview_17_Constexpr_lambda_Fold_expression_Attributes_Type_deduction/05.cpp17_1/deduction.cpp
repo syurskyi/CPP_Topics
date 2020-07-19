@@ -43,7 +43,7 @@ st.. Buffer {
     Buffer(P *, U *) {}sy.. p..
 
     v.. prin.
-        st. c__ __  __PRETTY_FUNCTION__ __  st. e..
+        st. c__ __  __P.. __  st. e..
         ___ (c.. a.. &v : m_buffer) {
             st. c__ __  v __  ' 'sy.. p..
         }

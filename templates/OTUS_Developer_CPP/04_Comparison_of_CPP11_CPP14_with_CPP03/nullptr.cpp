@@ -1,7 +1,7 @@
 ? |i..
 
 
-in. main(in., c.. *[]) {
+in. main(in., c.. *[]) 
     in. i _ NULLsy.. p.. // warning
     c.. *p _ NULLsy.. p..
 

@@ -18,7 +18,7 @@ struct logging_allocator {
     };*/
 
     T *allocate(std::size_t n) const {
-        std::cout << __PRETTY_FUNCTION__ << "[n = " << n << "]" << std::endl;
+        std::cout << __P.. << "[n = " << n << "]" << std::endl;
         auto p = std::malloc(n * sizeof(T));
         if (!p)
             throw std::bad_alloc();
@@ -26,18 +26,18 @@ struct logging_allocator {
     }
 
     void deallocate(T *p, std::size_t n) const {
-        std::cout << __PRETTY_FUNCTION__ << "[n = " << n << "]" << std::endl;
+        std::cout << __P.. << "[n = " << n << "]" << std::endl;
         std::free(p);
     }
 
     template<typename U, typename ...Args>
     void construct(U *p, Args &&...args) const {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::cout << __P.. << std::endl;
         new(p) U(std::forward<Args>(args)...);
     };
 
     void destroy(T *p) const {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::cout << __P.. << std::endl;
         p->~T();
     }
 };
@@ -75,17 +75,17 @@ struct hard {
     int i;
     double d;
 
-    hard(int i, double d) : i(i), d(d) { std::cout << __PRETTY_FUNCTION__ << std::endl; };
+    hard(int i, double d) : i(i), d(d) { std::cout << __P.. << std::endl; };
 
     hard(const hard &)
     = delete;
-//    { std::cout << __PRETTY_FUNCTION__ << std::endl; };
+//    { std::cout << __P.. << std::endl; };
 
     hard(hard &&) noexcept
     = delete;
-//    { std::cout << __PRETTY_FUNCTION__ << std::endl; };
+//    { std::cout << __P.. << std::endl; };
 
-    ~hard() { std::cout << __PRETTY_FUNCTION__ << std::endl; };
+    ~hard() { std::cout << __P.. << std::endl; };
 };
 */
 

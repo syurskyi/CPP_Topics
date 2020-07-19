@@ -3,7 +3,7 @@
 
 Mammal::Mammal()
 {
-    std::cout << __PRETTY_FUNCTION__ << "\n";
+    std::cout << __P.. << "\n";
 }
 
 Mammal::Mammal(uint paws) : paws(paws)
@@ -26,5 +26,5 @@ void Mammal::say()
 
 Mammal::~Mammal()
 {
-    std::cout << __PRETTY_FUNCTION__ << "\n";
+    std::cout << __P.. << "\n";
 }

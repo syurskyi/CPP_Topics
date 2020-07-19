@@ -2,20 +2,20 @@
 
 template<std::size_t value>
 void printValue() {
-    std::cout << __PRETTY_FUNCTION__ << std::endl;
+    std::cout << __P.. << std::endl;
     std::cout << "size_t " << value << std::endl;
 }
 
 template<const char *value>
 void printValue() {
-    std::cout << __PRETTY_FUNCTION__ << std::endl;
+    std::cout << __P.. << std::endl;
     std::cout << "Pointer = " << value << "\t value = " << *value << std::endl;
 }
 
 // non-type template parameters
 template<auto value>
 void printMe() {
-    std::cout << __PRETTY_FUNCTION__ << std::endl;
+    std::cout << __P.. << std::endl;
     std::cout << value << std::endl;
 }
 

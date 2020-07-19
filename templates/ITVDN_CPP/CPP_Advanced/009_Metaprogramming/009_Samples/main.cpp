@@ -65,7 +65,7 @@ st.. cons
 t.. < c_ TL >
 v.. prin.()
 {
-    st. c__ __  typeid( t_n_ TL::Head ).name() __  st. e..
+    st. c__ __  t_i_( t_n_ TL::Head ).name() __  st. e..
     prin.< t_n_ TL::Tail >()sy.. p..
 }
 

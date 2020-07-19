@@ -97,12 +97,12 @@ n.. GTEST_API_ SingleFailureChecker {
  p..
   // The constructor remembers the arguments.
   SingleFailureChecker(co.. TestPartResultArray* results,
-                       TestPartResult::Type type, co.. st. string& substr);
+                       TestPartResult::Type type, co.. st. st..& substr);
   ~SingleFailureChecker();
  pr..
   co.. TestPartResultArray* co.. results_;
   co.. TestPartResult::Type type_;
-  co.. st. string substr_;
+  co.. st. st.. substr_;
 
   GTEST_DISALLOW_COPY_AND_ASSIGN_(SingleFailureChecker);
 };

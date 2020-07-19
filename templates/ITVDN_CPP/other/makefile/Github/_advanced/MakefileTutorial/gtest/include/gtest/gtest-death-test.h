@@ -311,8 +311,8 @@ e..  // GTEST_HAS_DEATH_TEST
     GTEST_AMBIGUOUS_ELSE_BLOCKER_ \
     if (::testing::internal::AlwaysTrue()) { \
       GTEST_LOG_(WARNING) \
-          << "Death tests are not supported on this platform.\n" \
-          << "Statement '" #statement "' cannot be verified."; \
+          __ "Death tests are not supported on this platform.\n" \
+          __ "Statement '" #statement "' cannot be verified."; \
     } else if (::testing::internal::AlwaysFalse()) { \
       ::testing::internal::RE::PartialMatch(".*", (regex)); \
       GTEST_SUPPRESS_UNREACHABLE_CODE_WARNING_BELOW_(statement); \

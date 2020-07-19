@@ -4,19 +4,19 @@ using namespace std::string_literals;
 
 std::string operator""_kg(unsigned long long)
 {
-    std::cout << __PRETTY_FUNCTION__ << std::endl;
+    std::cout << __P.. << std::endl;
     return "sorok dva";
 }
 
 std::string operator""_rate(long double)
 {
-    std::cout << __PRETTY_FUNCTION__ << std::endl;
+    std::cout << __P.. << std::endl;
     return "sorok dva";
 }
 
 std::string operator""_english(const char *, size_t)
 {
-    std::cout << __PRETTY_FUNCTION__ << std::endl;
+    std::cout << __P.. << std::endl;
     return "sorok dva";
 }
 

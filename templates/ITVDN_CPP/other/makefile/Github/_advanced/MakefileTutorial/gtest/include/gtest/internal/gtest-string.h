@@ -41,12 +41,12 @@
 ?i.. GTEST_INCLUDE_GTEST_INTERNAL_GTEST_STRING_H_
 _de.. GTEST_INCLUDE_GTEST_INTERNAL_GTEST_STRING_H_
 
-#ifdef __BORLANDC__
+?if.. __BORLANDC__
 // string.h is not guaranteed to provide strcpy on C++ Builder.
 # include <mem.h>
 e..
 
-? <string.h>
+? <st...h>
 ? str..
 
 ? "gtest/internal/gtest-port.h"
@@ -55,7 +55,7 @@ n... testing {
 n... internal {
 
 // String - an abstract class holding static string utilities.
-n.. GTEST_API_ String {
+n.. GTEST_API_ st.. {
  p..
   // Static utility methods
 
@@ -105,7 +105,7 @@ e..
   // NULL will be converted to "(null)".  If an error occurred during
   // the conversion, "(failed to convert from wide string)" is
   // returned.
-  st.. st. string ShowWideCString(co.. wchar_t* wide_c_str);
+  st.. st. st.. ShowWideCString(co.. wchar_t* wide_c_str);
 
   // Compares two wide C strings.  Returns true iff they have the same
   // content.
@@ -142,24 +142,24 @@ e..
   // Returns true iff the given string ends with the given suffix, ignoring
   // case. Any string is considered to end with an empty suffix.
   st.. bo.. EndsWithCaseInsensitive(
-      co.. st. string& str, co.. st. string& suffix);
+      co.. st. st..& str, co.. st. st..& suffix);
 
   // Formats an int value as "%02d".
-  st.. st. string FormatIntWidth2(in. value);  // "%02d" for width == 2
+  st.. st. st.. FormatIntWidth2(in. value);  // "%02d" for width == 2
 
   // Formats an int value as "%X".
-  st.. st. string FormatHexInt(in. value);
+  st.. st. st.. FormatHexInt(in. value);
 
   // Formats a byte as "%02X".
-  st.. st. string FormatByte(u.. ch.. value);
+  st.. st. st.. FormatByte(u.. ch.. value);
 
  pr..
-  String();  // Not meant to be instantiated.
+  st..();  // Not meant to be instantiated.
 };  // class String
 
 // Gets the content of the stringstream's buffer as an std::string.  Each '\0'
 // character in the buffer is replaced with "\\0".
-GTEST_API_ st. string StringStreamToString(::st. stringstream* stream);
+GTEST_API_ st. st.. StringStreamToString(::st. stringstream* stream);
 
 }  // namespace internal
 }  // namespace testing

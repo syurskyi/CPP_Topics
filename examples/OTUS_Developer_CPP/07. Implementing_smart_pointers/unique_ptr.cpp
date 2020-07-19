@@ -5,19 +5,19 @@
 class xray {
 public:
     xray() {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::cout << __P.. << std::endl;
     };
 
     xray(const xray &) {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::cout << __P.. << std::endl;
     };
 
     xray(int, int) {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::cout << __P.. << std::endl;
     }
 
     ~xray() {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::cout << __P.. << std::endl;
     };
 };
 
@@ -26,11 +26,11 @@ class smart_ptr {
     T *ptr;
 public:
     smart_ptr(T *p) : ptr{p} {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::cout << __P.. << std::endl;
     }
 
     smart_ptr(const smart_ptr &u) : ptr{u.ptr} {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::cout << __P.. << std::endl;
     }
 
     T *get() {
@@ -38,7 +38,7 @@ public:
     }
 
     ~smart_ptr() {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::cout << __P.. << std::endl;
         delete ptr;
     }
 };

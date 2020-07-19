@@ -152,7 +152,7 @@ WithArg(co.. InnerAction& action) {
 // the macro definition, as the warnings are generated when the macro
 // is expanded and macro expansion cannot contain #pragma.  Therefore
 // we suppress them here.
-#ifdef _MSC_VER
+?if.. _MSC_VER
 # pragma warning(push)
 # pragma warning(disable:4100)
 e..
@@ -203,7 +203,7 @@ ACTION_TEMPLATE(SetArrayArgument,
                 HAS_1_TEMPLATE_PARAMS(in., k),
                 AND_2_VALUE_PARAMS(first, last)) {
   // Visual Studio deprecates ::std::copy, so we use our own copy in that case.
-#ifdef _MSC_VER
+?if.. _MSC_VER
   internal::CopyElements(first, last, ::testing::get<k>(args));
 #else
   ::st. copy(first, last, ::testing::get<k>(args));
@@ -237,7 +237,7 @@ ACTION_P(Throw, exception) { throw exception; }
 
 e..  // GTEST_HAS_EXCEPTIONS
 
-#ifdef _MSC_VER
+?if.. _MSC_VER
 # pragma warning(pop)
 e..
 

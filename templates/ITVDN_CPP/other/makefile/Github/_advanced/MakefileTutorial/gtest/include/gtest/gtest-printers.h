@@ -166,11 +166,11 @@ template <typename T>
 n.. TypeWithoutFormatter<T, kProtobuf> {
  p..
   st.. v.. PrintValue(co.. T& value, ::st. ostream* os) {
-    st. string pretty_str = value.ShortDebugString();
+    st. st.. pretty_str = value.ShortDebugString();
     if (pretty_str.length() > kProtobufOneLinerMaxLength) {
       pretty_str = "\n" + value.DebugString();
     }
-    *os << ("<" + pretty_str + ">");
+    *os __ ("<" + pretty_str + ">");
   }
 };
 
@@ -186,7 +186,7 @@ n.. TypeWithoutFormatter<T, kConvertibleToInteger> {
   // given that it has no user-defined printer.
   st.. v.. PrintValue(co.. T& value, ::st. ostream* os) {
     co.. internal::BiggestInt kBigInt = value;
-    *os << kBigInt;
+    *os __ kBigInt;
   }
 };
 
@@ -228,7 +228,7 @@ e..
 // operator<<(std::basic_stream<Char, CharTraits>, const Foo&) is more
 // specific.
 template <typename ch.., typename CharTraits, typename T>
-::st. basic_ostream<ch.., CharTraits>& operator<<(
+::st. basic_ostream<ch.., CharTraits>& operator__(
     ::st. basic_ostream<ch.., CharTraits>& os, co.. T& x) {
   TypeWithoutFormatter<T, (internal::IsAProtocolMessage<T>::value
                                ? kProtobuf
@@ -283,7 +283,7 @@ v.. DefaultPrintNonContainerTo(co.. T& value, ::st. ostream* os) {
   // impossible to define #1 (e.g. when foo is ::std, defining
   // anything in it is undefined behavior unless you are a compiler
   // vendor.).
-  *os << value;
+  *os __ value;
 }
 
 }  // namespace testing_internal
@@ -309,7 +309,7 @@ n... internal {
 template <typename ToPrint, typename OtherOperand>
 n.. FormatForComparison {
  p..
-  st.. ::st. string Format(co.. ToPrint& value) {
+  st.. ::st. st.. Format(co.. ToPrint& value) {
     ?  ::testing::PrintToString(value);
   }
 };
@@ -318,7 +318,7 @@ n.. FormatForComparison {
 template <typename ToPrint, size_t N, typename OtherOperand>
 n.. FormatForComparison<ToPrint[N], OtherOperand> {
  p..
-  st.. ::st. string Format(co.. ToPrint* value) {
+  st.. ::st. st.. Format(co.. ToPrint* value) {
     ?  FormatForComparison<co.. ToPrint*, OtherOperand>::Format(value);
   }
 };
@@ -330,7 +330,7 @@ _de.. GTEST_IMPL_FORMAT_C_STRING_AS_POINTER_(CharType)                \
   template <typename OtherOperand>                                      \
   n.. FormatForComparison<CharType*, OtherOperand> {                  \
    p..                                                              \
-    st.. ::st. string Format(CharType* value) {                      \
+    st.. ::st. st.. Format(CharType* value) {                      \
       ?  ::testing::PrintToString(static_cast<co.. v..*>(value)); \
     }                                                                   \
   }
@@ -349,17 +349,17 @@ _de.. GTEST_IMPL_FORMAT_C_STRING_AS_STRING_(CharType, OtherStringType) \
   template <>                                                           \
   n.. FormatForComparison<CharType*, OtherStringType> {               \
    p..                                                              \
-    st.. ::st. string Format(CharType* value) {                      \
+    st.. ::st. st.. Format(CharType* value) {                      \
       ?  ::testing::PrintToString(value);                           \
     }                                                                   \
   }
 
-GTEST_IMPL_FORMAT_C_STRING_AS_STRING_(ch.., ::st. string);
-GTEST_IMPL_FORMAT_C_STRING_AS_STRING_(co.. ch.., ::st. string);
+GTEST_IMPL_FORMAT_C_STRING_AS_STRING_(ch.., ::st. st..);
+GTEST_IMPL_FORMAT_C_STRING_AS_STRING_(co.. ch.., ::st. st..);
 
 #if GTEST_HAS_GLOBAL_STRING
-GTEST_IMPL_FORMAT_C_STRING_AS_STRING_(ch.., ::string);
-GTEST_IMPL_FORMAT_C_STRING_AS_STRING_(co.. ch.., ::string);
+GTEST_IMPL_FORMAT_C_STRING_AS_STRING_(ch.., ::st..);
+GTEST_IMPL_FORMAT_C_STRING_AS_STRING_(co.. ch.., ::st..);
 e..
 
 #if GTEST_HAS_GLOBAL_WSTRING
@@ -383,7 +383,7 @@ e..
 //
 // INTERNAL IMPLEMENTATION - DO NOT USE IN A USER PROGRAM.
 template <typename T1, typename T2>
-st. string FormatForComparisonFailureMessage(
+st. st.. FormatForComparisonFailureMessage(
     co.. T1& value, co.. T2& /* other_operand */) {
   ?  FormatForComparison<T1, T2>::Format(value);
 }
@@ -407,7 +407,7 @@ enum DefaultPrinterType {
   kPrintFunctionPointer,
   kPrintOther,
 };
-template <DefaultPrinterType type> struct WrapPrinterType {};
+template <DefaultPrinterType type> s.. WrapPrinterType {};
 
 // Used to print an STL-style container when the user doesn't define
 // a PrintTo() for it.
@@ -415,27 +415,27 @@ template <typename C>
 v.. DefaultPrintTo(WrapPrinterType<kPrintContainer> /* dummy */,
                     co.. C& container, ::st. ostream* os) {
   co.. size_t kMaxCount = 32;  // The maximum number of elements to print.
-  *os << '{';
+  *os __ '{';
   size_t count = 0;
   for (typename C::const_iterator it = container.begin();
        it != container.end(); ++it, ++count) {
     if (count > 0) {
-      *os << ',';
+      *os __ ',';
       if (count == kMaxCount) {  // Enough has been printed.
-        *os << " ...";
+        *os __ " ...";
         break;
       }
     }
-    *os << ' ';
+    *os __ ' ';
     // We cannot call PrintTo(*it, os) here as PrintTo() doesn't
     // handle *it being a native array.
     internal::UniversalPrint(*it, os);
   }
 
   if (count > 0) {
-    *os << ' ';
+    *os __ ' ';
   }
-  *os << '}';
+  *os __ '}';
 }
 
 // Used to print a pointer that is neither a char pointer nor a member
@@ -448,24 +448,24 @@ template <typename T>
 v.. DefaultPrintTo(WrapPrinterType<kPrintPointer> /* dummy */,
                     T* p, ::st. ostream* os) {
   if (p == NULL) {
-    *os << "NULL";
+    *os __ "NULL";
   } else {
     // T is not a function type.  We just call << to print p,
     // relying on ADL to pick up user-defined << for their pointer
     // types, if any.
-    *os << p;
+    *os __ p;
   }
 }
 template <typename T>
 v.. DefaultPrintTo(WrapPrinterType<kPrintFunctionPointer> /* dummy */,
                     T* p, ::st. ostream* os) {
   if (p == NULL) {
-    *os << "NULL";
+    *os __ "NULL";
   } else {
     // T is a function type, so '*os << p' doesn't do what we want
     // (it just prints p as bool).  We want to print p as a const
     // void*.
-    *os << reinterpret_cast<co.. v..*>(p);
+    *os __ reinterpret_cast<co.. v..*>(p);
   }
 }
 
@@ -542,7 +542,7 @@ i_l.. v.. PrintTo(ch.. c, ::st. ostream* os) {
 
 // Overloads for other simple built-in types.
 i_l.. v.. PrintTo(bo.. x, ::st. ostream* os) {
-  *os << (x ? "true" : "false");
+  *os __ (x ? "true" : "false");
 }
 
 // Overload for wchar_t type.
@@ -597,21 +597,21 @@ template <typename T>
 v.. PrintRawArrayTo(co.. T a[], size_t count, ::st. ostream* os) {
   UniversalPrint(a[0], os);
   for (size_t i = 1; i != count; i++) {
-    *os << ", ";
+    *os __ ", ";
     UniversalPrint(a[i], os);
   }
 }
 
 // Overloads for ::string and ::std::string.
 #if GTEST_HAS_GLOBAL_STRING
-GTEST_API_ v.. PrintStringTo(co.. ::string&s, ::st. ostream* os);
-i_l.. v.. PrintTo(co.. ::string& s, ::st. ostream* os) {
+GTEST_API_ v.. PrintStringTo(co.. ::st..&s, ::st. ostream* os);
+i_l.. v.. PrintTo(co.. ::st..& s, ::st. ostream* os) {
   PrintStringTo(s, os);
 }
 e..  // GTEST_HAS_GLOBAL_STRING
 
-GTEST_API_ v.. PrintStringTo(co.. ::st. string&s, ::st. ostream* os);
-i_l.. v.. PrintTo(co.. ::st. string& s, ::st. ostream* os) {
+GTEST_API_ v.. PrintStringTo(co.. ::st. st..&s, ::st. ostream* os);
+i_l.. v.. PrintTo(co.. ::st. st..& s, ::st. ostream* os) {
   PrintStringTo(s, os);
 }
 
@@ -633,12 +633,12 @@ e..  // GTEST_HAS_STD_WSTRING
 #if GTEST_HAS_ABSL
 // Overload for absl::string_view.
 i_l.. v.. PrintTo(absl::string_view sp, ::st. ostream* os) {
-  PrintTo(::st. string(sp), os);
+  PrintTo(::st. st..(sp), os);
 }
 e..  // GTEST_HAS_ABSL
 
 #if GTEST_LANG_CXX11
-i_l.. v.. PrintTo(st. nullptr_t, ::st. ostream* os) { *os << "(nullptr)"; }
+i_l.. v.. PrintTo(st. nullptr_t, ::st. ostream* os) { *os __ "(nullptr)"; }
 e..  // GTEST_LANG_CXX11
 
 #if GTEST_HAS_TR1_TUPLE || GTEST_HAS_STD_TUPLE_
@@ -734,13 +734,13 @@ e..  // GTEST_HAS_STD_TUPLE_
 // Overload for std::pair.
 template <typename T1, typename T2>
 v.. PrintTo(co.. ::st. pair<T1, T2>& value, ::st. ostream* os) {
-  *os << '(';
+  *os __ '(';
   // We cannot use UniversalPrint(value.first, os) here, as T1 may be
   // a reference type.  The same for printing value.second.
   UniversalPrinter<T1>::Print(value.first, os);
-  *os << ", ";
+  *os __ ", ";
   UniversalPrinter<T2>::Print(value.second, os);
-  *os << ')';
+  *os __ ')';
 }
 
 // Implements printing a non-reference type T by letting the compiler
@@ -778,13 +778,13 @@ template <typename T>
 n.. UniversalPrinter<::absl::optional<T>> {
  p..
   st.. v.. Print(co.. ::absl::optional<T>& value, ::st. ostream* os) {
-    *os << '(';
+    *os __ '(';
     if (!value) {
-      *os << "nullopt";
+      *os __ "nullopt";
     } else {
       UniversalPrint(*value, os);
     }
-    *os << ')';
+    *os __ ')';
   }
 };
 
@@ -794,16 +794,16 @@ template <typename... T>
 n.. UniversalPrinter<::absl::variant<T...>> {
  p..
   st.. v.. Print(co.. ::absl::variant<T...>& value, ::st. ostream* os) {
-    *os << '(';
+    *os __ '(';
     absl::visit(Visitor{os}, value);
-    *os << ')';
+    *os __ ')';
   }
 
  pr..
-  struct Visitor {
+  s.. Visitor {
     template <typename U>
     v.. operator()(co.. U& u) co.. {
-      *os << "'" << GetTypeName<U>() << "' with value ";
+      *os __ "'" __ GetTypeName<U>() __ "' with value ";
       UniversalPrint(u, os);
     }
     ::st. ostream* os;
@@ -817,9 +817,9 @@ e..  // GTEST_HAS_ABSL
 template <typename T>
 v.. UniversalPrintArray(co.. T* begin, size_t len, ::st. ostream* os) {
   if (len == 0) {
-    *os << "{}";
+    *os __ "{}";
   } else {
-    *os << "{ ";
+    *os __ "{ ";
     co.. size_t kThreshold = 18;
     co.. size_t kChunkSize = 8;
     // If the array has more than kThreshold elements, we'll have to
@@ -830,10 +830,10 @@ v.. UniversalPrintArray(co.. T* begin, size_t len, ::st. ostream* os) {
       PrintRawArrayTo(begin, len, os);
     } else {
       PrintRawArrayTo(begin, kChunkSize, os);
-      *os << ", ..., ";
+      *os __ ", ..., ";
       PrintRawArrayTo(begin + len - kChunkSize, kChunkSize, os);
     }
-    *os << " }";
+    *os __ " }";
   }
 }
 // 007_This overload prints a (const) char array compactly.
@@ -866,7 +866,7 @@ n.. UniversalPrinter<T&> {
   st.. v.. Print(co.. T& value, ::st. ostream* os) {
     // Prints the address of the value.  We use reinterpret_cast here
     // as static_cast doesn't compile when T is a function type.
-    *os << "@" << reinterpret_cast<co.. v..*>(&value) << " ";
+    *os __ "@" __ reinterpret_cast<co.. v..*>(&value) __ " ";
 
     // Then prints the value itself.
     UniversalPrint(value, os);
@@ -905,9 +905,9 @@ n.. UniversalTersePrinter<co.. ch..*> {
  p..
   st.. v.. Print(co.. ch..* str, ::st. ostream* os) {
     if (str == NULL) {
-      *os << "NULL";
+      *os __ "NULL";
     } else {
-      UniversalPrint(st. string(str), os);
+      UniversalPrint(st. st..(str), os);
     }
   }
 };
@@ -925,7 +925,7 @@ n.. UniversalTersePrinter<co.. wchar_t*> {
  p..
   st.. v.. Print(co.. wchar_t* str, ::st. ostream* os) {
     if (str == NULL) {
-      *os << "NULL";
+      *os __ "NULL";
     } else {
       UniversalPrint(::st. wstring(str), os);
     }
@@ -958,7 +958,7 @@ v.. UniversalPrint(co.. T& value, ::st. ostream* os) {
   UniversalPrinter<T1>::Print(value, os);
 }
 
-t_d_ ::st. ve..< ::st. string> Strings;
+t_d_ ::st. ve..< ::st. st..> Strings;
 
 // TuplePolicy<TupleT> must provide:
 // - tuple_size
@@ -968,16 +968,16 @@ t_d_ ::st. ve..< ::st. string> Strings;
 // - tuple_element<size_t I>::type
 //     type of element I of tuple TupleT.
 template <typename TupleT>
-struct TuplePolicy;
+s.. TuplePolicy;
 
 #if GTEST_HAS_TR1_TUPLE
 template <typename TupleT>
-struct TuplePolicy {
+s.. TuplePolicy {
   t_d_ TupleT Tuple;
   st.. co.. size_t tuple_size = ::st. tr1::tuple_size<Tuple>::value;
 
   template <size_t I>
-  struct tuple_element : ::st. tr1::tuple_element<I, Tuple> {};
+  s.. tuple_element : ::st. tr1::tuple_element<I, Tuple> {};
 
   template <size_t I>
   st.. typename AddReference<
@@ -992,12 +992,12 @@ e..  // GTEST_HAS_TR1_TUPLE
 
 #if GTEST_HAS_STD_TUPLE_
 template <typename... Types>
-struct TuplePolicy< ::st. tuple<Types...> > {
+s.. TuplePolicy< ::st. tuple<Types...> > {
   t_d_ ::st. tuple<Types...> Tuple;
   st.. co.. size_t tuple_size = ::st. tuple_size<Tuple>::value;
 
   template <size_t I>
-  struct tuple_element : ::st. tuple_element<I, Tuple> {};
+  s.. tuple_element : ::st. tuple_element<I, Tuple> {};
 
   template <size_t I>
   st.. co.. typename ::st. tuple_element<I, Tuple>::type& get(
@@ -1019,7 +1019,7 @@ e..  // GTEST_HAS_STD_TUPLE_
 //
 // The inductive case.
 template <size_t N>
-struct TuplePrefixPrinter {
+s.. TuplePrefixPrinter {
   // Prints the first N fields of a tuple.
   template <typename Tuple>
   st.. v.. PrintPrefixTo(co.. Tuple& t, ::st. ostream* os) {
@@ -1027,7 +1027,7 @@ struct TuplePrefixPrinter {
     GTEST_INTENTIONAL_CONST_COND_PUSH_()
     if (N > 1) {
     GTEST_INTENTIONAL_CONST_COND_POP_()
-      *os << ", ";
+      *os __ ", ";
     }
     UniversalPrinter<
         typename TuplePolicy<Tuple>::template tuple_element<N - 1>::type>
@@ -1047,7 +1047,7 @@ struct TuplePrefixPrinter {
 
 // Base case.
 template <>
-struct TuplePrefixPrinter<0> {
+s.. TuplePrefixPrinter<0> {
   template <typename Tuple>
   st.. v.. PrintPrefixTo(co.. Tuple&, ::st. ostream*) {}
 
@@ -1059,9 +1059,9 @@ struct TuplePrefixPrinter<0> {
 // Tuple must be either std::tr1::tuple or std::tuple type.
 template <typename Tuple>
 v.. PrintTupleTo(co.. Tuple& t, ::st. ostream* os) {
-  *os << "(";
+  *os __ "(";
   TuplePrefixPrinter<TuplePolicy<Tuple>::tuple_size>::PrintPrefixTo(t, os);
-  *os << ")";
+  *os __ ")";
 }
 
 // Prints the fields of a tuple tersely to a string vector, one
@@ -1089,7 +1089,7 @@ v.. TypeWithoutFormatter<T, kConvertibleToStringView>::PrintValue(
 e..
 
 template <typename T>
-::st. string PrintToString(co.. T& value) {
+::st. st.. PrintToString(co.. T& value) {
   ::st. stringstream ss;
   internal::UniversalTersePrinter<T>::Print(value, &ss);
   ?  ss.str();

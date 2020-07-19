@@ -15,7 +15,7 @@ pr..
 pr..
     in. num_withdrawals;
 p..
-    Trust_Account(st. string name = def_name,  do.. balance = def_balance, do.. int_rate = def_int_rate);
+    Trust_Account(st. st.. name = def_name,  do.. balance = def_balance, do.. int_rate = def_int_rate);
     
     // Deposits of $5000.00 or more will receive $50 bonus
     v.. bo.. deposit(do.. amount) ov..

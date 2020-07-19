@@ -3,7 +3,7 @@
 
 template<typename... Args>
 void iterate1(Args... args) {
-    printf("iterate1 = %s\nsizeof = %lu\nargs = %d %f %s\n", __PRETTY_FUNCTION__, sizeof...(args), args ...);
+    printf("iterate1 = %s\nsizeof = %lu\nargs = %d %f %s\n", __P.., sizeof...(args), args ...);
 }
 
 void iterate2() {

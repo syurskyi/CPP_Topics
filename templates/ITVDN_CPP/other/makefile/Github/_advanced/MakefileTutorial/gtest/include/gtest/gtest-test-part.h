@@ -104,20 +104,20 @@ n.. GTEST_API_ TestPartResult {
 
   // Gets the summary of the failure message by omitting the stack
   // trace in it.
-  st.. st. string ExtractSummary(co.. ch..* message);
+  st.. st. st.. ExtractSummary(co.. ch..* message);
 
   // The name of the source file where the test part took place, or
   // "" if the source file is unknown.
-  st. string file_name_;
+  st. st.. file_name_;
   // The line in the source file where the test part took place, or -1
   // if the line number is unknown.
   in. line_number_;
-  st. string summary_;  // The test failure summary.
-  st. string message_;  // The test failure message.
+  st. st.. summary_;  // The test failure summary.
+  st. st.. message_;  // The test failure message.
 };
 
 // Prints a TestPartResult object.
-st. ostream& operator<<(st. ostream& os, co.. TestPartResult& result);
+st. ostream& operator__(st. ostream& os, co.. TestPartResult& result);
 
 // An array of TestPartResult objects.
 //

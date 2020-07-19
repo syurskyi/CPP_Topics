@@ -3,7 +3,7 @@
 //
 //? ?
 //
-//    st. c__ __  __PRETTY_FUNCTION__ __  "\n" sy.. P...
+//    st. c__ __  __P.. __  "\n" sy.. P...
 //
 //
 //? ? uin. paws
@@ -13,7 +13,7 @@
 //
 //? #?
 //
-//    st. c__ __  __PRETTY_FUNCTION__ __  "\n" sy.. P...
+//    st. c__ __  __P.. __  "\n" sy.. P...
 //
 //
 //v.. ? say

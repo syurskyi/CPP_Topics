@@ -10,7 +10,7 @@ pr..
 pr..
     do.. int_rate;
 p..
-    Savings_Account(st. string name = def_name, do.. balance =def_balance, do.. int_rate = def_int_rate);
+    Savings_Account(st. st.. name = def_name, do.. balance =def_balance, do.. int_rate = def_int_rate);
     v.. bo.. deposit(do.. amount) ov..
     v.. bo.. withdraw(do.. amount) ov..
     v.. v.. print(st. ostream &os) co.. ov..

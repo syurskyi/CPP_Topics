@@ -29,7 +29,7 @@ p..
     Otherwise, create a movie object from the provided information
     and add that movie object to the movies vector and return true
     *********************************************************************/
-    bo.. add_movie(st. string name, st. string rating, in. watched);
+    bo.. add_movie(st. st.. name, st. st.. rating, in. watched);
     
     /*************************************************************************
     increment_watched expects the name of the move to increment the
@@ -42,7 +42,7 @@ p..
     Otherwise, return false since then no movies object with the movie name
     provided exists to increment
     *********************************************************************/
-    bo.. increment_watched(st. string name);
+    bo.. increment_watched(st. st.. name);
     
     /*************************************************************************
     display

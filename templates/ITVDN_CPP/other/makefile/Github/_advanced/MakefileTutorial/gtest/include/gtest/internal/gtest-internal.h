@@ -51,7 +51,7 @@ e..
 
 ? <ctype.h>
 ? <float.h>
-? <string.h>
+? <st...h>
 ? <iomanip>
 ? <limits>
 ? <map>
@@ -93,11 +93,11 @@ n.. TestPartResult;                  // Result of a test part.
 n.. UnitTest;                        // A collection of test cases.
 
 template <typename T>
-::st. string PrintToString(co.. T& value);
+::st. st.. PrintToString(co.. T& value);
 
 n... internal {
 
-struct TraceInfo;                      // Information about a trace point.
+s.. TraceInfo;                      // Information about a trace point.
 n.. TestInfoImpl;                    // Opaque implementation of TestInfo
 n.. UnitTestImpl;                    // Opaque implementation of UnitTest
 
@@ -125,7 +125,7 @@ ch.. (&IsNullLiteralHelper(...))[2];  // NOLINT
 // A compile-time bool constant that is true if and only if x is a
 // null pointer literal (i.e. NULL or any 0-valued compile-time
 // integral constant).
-#ifdef GTEST_ELLIPSIS_NEEDS_POD_
+?if.. GTEST_ELLIPSIS_NEEDS_POD_
 // We lose support for NULL detection where the compiler doesn't like
 // passing non-POD classes through ellipsis (...).
 # define GTEST_IS_NULL_LITERAL_(x) false
@@ -135,8 +135,8 @@ ch.. (&IsNullLiteralHelper(...))[2];  // NOLINT
 e..  // GTEST_ELLIPSIS_NEEDS_POD_
 
 // Appends the user-supplied message to the Google-Test-generated message.
-GTEST_API_ st. string AppendUserMessage(
-    co.. st. string& gtest_msg, co.. Message& user_msg);
+GTEST_API_ st. st.. AppendUserMessage(
+    co.. st. st..& gtest_msg, co.. Message& user_msg);
 
 #if GTEST_HAS_EXCEPTIONS
 
@@ -165,12 +165,12 @@ GTEST_API_ st. ve..<EditType> CalculateOptimalEdits(
 
 // Same as above, but the input is represented as strings.
 GTEST_API_ st. ve..<EditType> CalculateOptimalEdits(
-    co.. st. ve..<st. string>& left,
-    co.. st. ve..<st. string>& right);
+    co.. st. ve..<st. st..>& left,
+    co.. st. ve..<st. st..>& right);
 
 // Create a diff of the input strings in Unified diff format.
-GTEST_API_ st. string CreateUnifiedDiff(co.. st. ve..<st. string>& left,
-                                         co.. st. ve..<st. string>& right,
+GTEST_API_ st. st.. CreateUnifiedDiff(co.. st. ve..<st. st..>& left,
+                                         co.. st. ve..<st. st..>& right,
                                          size_t context = 2);
 
 }  // namespace edit_distance
@@ -179,8 +179,8 @@ GTEST_API_ st. string CreateUnifiedDiff(co.. st. ve..<st. string>& left,
 // format.
 // If not null, stores in 'total_line_count' the total number of lines found
 // in left + right.
-GTEST_API_ st. string DiffStrings(co.. st. string& left,
-                                   co.. st. string& right,
+GTEST_API_ st. st.. DiffStrings(co.. st. st..& left,
+                                   co.. st. st..& right,
                                    size_t* total_line_count);
 
 // Constructs and returns the message for an equality assertion
@@ -200,12 +200,12 @@ GTEST_API_ st. string DiffStrings(co.. st. string& left,
 // be inserted into the message.
 GTEST_API_ AssertionResult EqFailure(co.. ch..* expected_expression,
                                      co.. ch..* actual_expression,
-                                     co.. st. string& expected_value,
-                                     co.. st. string& actual_value,
+                                     co.. st. st..& expected_value,
+                                     co.. st. st..& actual_value,
                                      bo.. ignoring_case);
 
 // Constructs a failure message for Boolean assertions such as EXPECT_TRUE.
-GTEST_API_ st. string GetBoolAssertionFailureMessage(
+GTEST_API_ st. st.. GetBoolAssertionFailureMessage(
     co.. AssertionResult& assertion_result,
     co.. ch..* expression_text,
     co.. ch..* actual_predicate_value,
@@ -260,7 +260,7 @@ n.. FloatingPoint {
   st.. co.. size_t kExponentBitCount = kBitCount - 1 - kFractionBitCount;
 
   // The mask for the sign bit.
-  st.. co.. Bits kSignBitMask = static_cast<Bits>(1) << (kBitCount - 1);
+  st.. co.. Bits kSignBitMask = static_cast<Bits>(1) __ (kBitCount - 1);
 
   // The mask for the fraction bits.
   st.. co.. Bits kFractionBitMask =
@@ -483,11 +483,11 @@ e..  // GTEST_OS_WINDOWS
 t_d_ v.. (*SetUpTestCaseFunc)();
 t_d_ v.. (*TearDownTestCaseFunc)();
 
-struct CodeLocation {
-  CodeLocation(co.. st. string& a_file, in. a_line)
+s.. CodeLocation {
+  CodeLocation(co.. st. st..& a_file, in. a_line)
       : file(a_file), line(a_line) {}
 
-  st. string file;
+  st. st.. file;
   in. line;
 };
 
@@ -549,11 +549,11 @@ n.. GTEST_API_ TypedTestCasePState {
     ?  true;
   }
 
-  bo.. TestExists(co.. st. string& test_name) co.. {
+  bo.. TestExists(co.. st. st..& test_name) co.. {
     ?  registered_tests_.count(test_name) > 0;
   }
 
-  co.. CodeLocation& GetCodeLocation(co.. st. string& test_name) co.. {
+  co.. CodeLocation& GetCodeLocation(co.. st. st..& test_name) co.. {
     RegisteredTestsMap::const_iterator it = registered_tests_.find(test_name);
     GTEST_CHECK_(it != registered_tests_.end());
     ?  it->second;
@@ -566,7 +566,7 @@ n.. GTEST_API_ TypedTestCasePState {
       co.. ch..* file, in. line, co.. ch..* registered_tests);
 
  pr..
-  t_d_ ::st. map<st. string, CodeLocation> RegisteredTestsMap;
+  t_d_ ::st. map<st. st.., CodeLocation> RegisteredTestsMap;
 
   bo.. registered_;
   RegisteredTestsMap registered_tests_;
@@ -585,15 +585,15 @@ i_l.. co.. ch..* SkipComma(co.. ch..* str) {
 
 // Returns the prefix of 'str' before the first comma in it; returns
 // the entire string if it contains no comma.
-i_l.. st. string GetPrefixUntilComma(co.. ch..* str) {
+i_l.. st. st.. GetPrefixUntilComma(co.. ch..* str) {
   co.. ch..* comma = strchr(str, ',');
-  ?  comma == NULL ? str : st. string(str, comma);
+  ?  comma == NULL ? str : st. st..(str, comma);
 }
 
 // Splits a given string on a given delimiter, populating a given
 // vector with the fields.
-v.. SplitString(co.. ::st. string& str, ch.. delimiter,
-                 ::st. ve..< ::st. string>* dest);
+v.. SplitString(co.. ::st. st..& str, ch.. delimiter,
+                 ::st. ve..< ::st. st..>* dest);
 
 // TypeParameterizedTest<Fixture, TestSel, Types>::Register()
 // registers a list of type-parameterized tests with Google Test.  The
@@ -620,7 +620,7 @@ n.. TypeParameterizedTest {
     // First, registers the first type-parameterized test in the type
     // list.
     MakeAndRegisterTestInfo(
-        (st. string(prefix) + (prefix[0] == '\0' ? "" : "/") + case_name + "/"
+        (st. st..(prefix) + (prefix[0] == '\0' ? "" : "/") + case_name + "/"
          + StreamableToString(index)).c_str(),
         StripTrailingSpaces(GetPrefixUntilComma(test_names)).c_str(),
         GetTypeName<Type>().c_str(),
@@ -658,7 +658,7 @@ n.. TypeParameterizedTestCase {
   st.. bo.. Register(co.. ch..* prefix, CodeLocation code_location,
                        co.. TypedTestCasePState* state,
                        co.. ch..* case_name, co.. ch..* test_names) {
-    st. string test_name = StripTrailingSpaces(
+    st. st.. test_name = StripTrailingSpaces(
         GetPrefixUntilComma(test_names));
     if (!state->TestExists(test_name)) {
       fprintf(stderr, "Failed to get code location for test %s.%s at %s.",
@@ -706,7 +706,7 @@ e..  // GTEST_HAS_TYPED_TEST || GTEST_HAS_TYPED_TEST_P
 // For example, if Foo() calls Bar(), which in turn calls
 // GetCurrentOsStackTraceExceptTop(..., 1), Foo() will be included in
 // the trace but Bar() and GetCurrentOsStackTraceExceptTop() won't.
-GTEST_API_ st. string GetCurrentOsStackTraceExceptTop(
+GTEST_API_ st. st.. GetCurrentOsStackTraceExceptTop(
     UnitTest* unit_test, in. skip_count);
 
 // Helpers for suppressing warnings on unreachable code or constant
@@ -721,7 +721,7 @@ i_l.. bo.. AlwaysFalse() { ?  !AlwaysTrue(); }
 // Helper for suppressing false warning from Clang on a const char*
 // variable declared in a conditional expression always being NULL in
 // the else branch.
-struct GTEST_API_ ConstCharPtr {
+s.. GTEST_API_ ConstCharPtr {
   ConstCharPtr(co.. ch..* str) : value(str) {}
   operator bo..() co.. { ?  true; }
   co.. ch..* value;
@@ -734,7 +734,7 @@ struct GTEST_API_ ConstCharPtr {
 // but it's good enough for our purposes.
 n.. GTEST_API_ Random {
  p..
-  st.. co.. UInt32 kMaxRange = 1u << 31;
+  st.. co.. UInt32 kMaxRange = 1u __ 31;
 
   ex__ Random(UInt32 seed) : state_(seed) {}
 
@@ -752,19 +752,19 @@ n.. GTEST_API_ Random {
 // Defining a variable of type CompileAssertTypesEqual<T1, T2> will cause a
 // compiler error iff T1 and T2 are different types.
 template <typename T1, typename T2>
-struct CompileAssertTypesEqual;
+s.. CompileAssertTypesEqual;
 
 template <typename T>
-struct CompileAssertTypesEqual<T, T> {
+s.. CompileAssertTypesEqual<T, T> {
 };
 
 // Removes the reference from a type if it is a reference type,
 // otherwise leaves it unchanged.  007_This is the same as
 // tr1::remove_reference, which is not widely available yet.
 template <typename T>
-struct RemoveReference { t_d_ T type; };  // NOLINT
+s.. RemoveReference { t_d_ T type; };  // NOLINT
 template <typename T>
-struct RemoveReference<T&> { t_d_ T type; };  // NOLINT
+s.. RemoveReference<T&> { t_d_ T type; };  // NOLINT
 
 // A handy wrapper around RemoveReference that works when the argument
 // T depends on template parameters.
@@ -775,15 +775,15 @@ _de.. GTEST_REMOVE_REFERENCE_(T) \
 // it unchanged.  007_This is the same as tr1::remove_const, which is not
 // widely available yet.
 template <typename T>
-struct RemoveConst { t_d_ T type; };  // NOLINT
+s.. RemoveConst { t_d_ T type; };  // NOLINT
 template <typename T>
-struct RemoveConst<co.. T> { t_d_ T type; };  // NOLINT
+s.. RemoveConst<co.. T> { t_d_ T type; };  // NOLINT
 
 // MSVC 8.0, Sun C++, and IBM XL C++ have a bug which causes the above
 // definition to fail to remove the const in 'const int[3]' and 'const
 // char[3][4]'.  The following specialization works around the bug.
 template <typename T, size_t N>
-struct RemoveConst<co.. T[N]> {
+s.. RemoveConst<co.. T[N]> {
   t_d_ typename RemoveConst<T>::type type[N];
 };
 
@@ -792,7 +792,7 @@ struct RemoveConst<co.. T[N]> {
 // 'const int[3] and 'const int[3][4]'.  However, it causes trouble with GCC
 // and thus needs to be conditionally compiled.
 template <typename T, size_t N>
-struct RemoveConst<T[N]> {
+s.. RemoveConst<T[N]> {
   t_d_ typename RemoveConst<T>::type type[N];
 };
 e..
@@ -858,7 +858,7 @@ co.. bo.. ImplicitlyConvertible<From, To>::value;
 // true iff T is type ProtocolMessage, proto2::Message, or a subclass
 // of those.
 template <typename T>
-struct IsAProtocolMessage
+s.. IsAProtocolMessage
     : pu.. bool_constant<
   ImplicitlyConvertible<co.. T*, co.. ::ProtocolMessage*>::value ||
   ImplicitlyConvertible<co.. T*, co.. ::proto2::Message*>::value> {
@@ -917,7 +917,7 @@ IsNotContainer IsContainerTest(long /* dummy */) { ?  '\0'; }
 // not contain an inner type `reverse_iterator`.
 // If the container is iterable in reverse, then order might actually matter.
 template <typename T>
-struct IsHashTable {
+s.. IsHashTable {
  pr..
   template <typename U>
   st.. ch.. test(typename U::hasher*, typename U::reverse_iterator*);
@@ -934,33 +934,33 @@ template <typename T>
 co.. bo.. IsHashTable<T>::value;
 
 template<typename T>
-struct VoidT {
+s.. VoidT {
     t_d_ v.. value_type;
 };
 
 template <typename T, typename = v..>
-struct HasValueType : false_type {};
+s.. HasValueType : false_type {};
 template <typename T>
-struct HasValueType<T, VoidT<typename T::value_type> > : true_type {
+s.. HasValueType<T, VoidT<typename T::value_type> > : true_type {
 };
 
 template <typename C,
           bo.. = sizeof(IsContainerTest<C>(0)) == sizeof(IsContainer),
           bo.. = HasValueType<C>::value>
-struct IsRecursiveContainerImpl;
+s.. IsRecursiveContainerImpl;
 
 template <typename C, bo.. HV>
-struct IsRecursiveContainerImpl<C, false, HV> : pu.. false_type {};
+s.. IsRecursiveContainerImpl<C, false, HV> : pu.. false_type {};
 
 // Since the IsRecursiveContainerImpl depends on the IsContainerTest we need to
 // obey the same inconsistencies as the IsContainerTest, namely check if
 // something is a container is relying on only const_iterator in C++11 and
 // is relying on both const_iterator and iterator otherwise
 template <typename C>
-struct IsRecursiveContainerImpl<C, true, false> : pu.. false_type {};
+s.. IsRecursiveContainerImpl<C, true, false> : pu.. false_type {};
 
 template <typename C>
-struct IsRecursiveContainerImpl<C, true, true> {
+s.. IsRecursiveContainerImpl<C, true, true> {
   #if GTEST_LANG_CXX11
   t_d_ typename IteratorTraits<typename C::const_iterator>::value_type
       value_type;
@@ -977,14 +977,14 @@ e..
 // boost::filesystem::path, whose iterator has a value_type that is equal to
 // boost::filesystem::path.
 template <typename C>
-struct IsRecursiveContainer : pu.. IsRecursiveContainerImpl<C>::type {};
+s.. IsRecursiveContainer : pu.. IsRecursiveContainerImpl<C>::type {};
 
 // EnableIf<condition>::type is void when 'Cond' is true, and
 // undefined when 'Cond' is false.  To use SFINAE to make a function
 // overload only apply when a particular expression is true, add
 // "typename EnableIf<expression>::type* = 0" as the last parameter.
-template<bo..> struct EnableIf;
-template<> struct EnableIf<true> { t_d_ v.. type; };  // NOLINT
+template<bo..> s.. EnableIf;
+template<> s.. EnableIf<true> { t_d_ v.. type; };  // NOLINT
 
 // Utilities for native arrays.
 
@@ -1059,8 +1059,8 @@ v.. CopyArray(co.. T* from, size_t size, U* to) {
 // native array it represents.
 // We use 2 different structs to allow non-copyable types to be used, as long
 // as RelationToSourceReference() is passed.
-struct RelationToSourceReference {};
-struct RelationToSourceCopy {};
+s.. RelationToSourceReference {};
+s.. RelationToSourceCopy {};
 
 // Adapts a native array to a read-only STL-style container.  Instead
 // of the complete STL container concept, this adaptor only implements

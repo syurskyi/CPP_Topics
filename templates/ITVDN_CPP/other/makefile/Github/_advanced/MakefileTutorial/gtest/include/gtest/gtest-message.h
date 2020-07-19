@@ -52,7 +52,7 @@ _de.. GTEST_INCLUDE_GTEST_GTEST_MESSAGE_H_
 
 // Ensures that there is at least one operator<< in the global namespace.
 // See Message& operator<<(...) below for why.
-v.. operator<<(co.. testing::internal::Secret&, in.);
+v.. operator__(co.. testing::internal::Secret&, in.);
 
 n... testing {
 
@@ -94,25 +94,25 @@ n.. GTEST_API_ Message {
 
   // Copy constructor.
   Message(co.. Message& msg) : ss_(ne. ::st. stringstream) {  // NOLINT
-    *ss_ << msg.GetString();
+    *ss_ __ msg.GetString();
   }
 
   // Constructs a Message from a C-string.
   ex__ Message(co.. ch..* str) : ss_(ne. ::st. stringstream) {
-    *ss_ << str;
+    *ss_ __ str;
   }
 
 #if GTEST_OS_SYMBIAN
   // Streams a value (either a pointer or not) to this object.
   template <typename T>
-  i_l.. Message& operator <<(co.. T& value) {
+  i_l.. Message& operator __(co.. T& value) {
     StreamHelper(typename internal::is_pointer<T>::type(), value);
     ?  *this;
   }
 #else
   // Streams a non-pointer value to this object.
   template <typename T>
-  i_l.. Message& operator <<(co.. T& val) {
+  i_l.. Message& operator __(co.. T& val) {
     // Some libraries overload << for STL containers.  These
     // overloads are defined in the global namespace instead of ::std.
     //
@@ -127,8 +127,8 @@ n.. GTEST_API_ Message {
     // from the global namespace.  With this using declaration,
     // overloads of << defined in the global namespace and those
     // visible via Koenig lookup are both exposed in this function.
-    using ::operator <<;
-    *ss_ << val;
+    using ::operator __;
+    *ss_ __ val;
     ?  *this;
   }
 
@@ -146,11 +146,11 @@ n.. GTEST_API_ Message {
   // ensure consistent result across compilers, we always treat NULL
   // as "(null)".
   template <typename T>
-  i_l.. Message& operator <<(T* co..& pointer) {  // NOLINT
+  i_l.. Message& operator __(T* co..& pointer) {  // NOLINT
     if (pointer == NULL) {
-      *ss_ << "(null)";
+      *ss_ __ "(null)";
     } else {
-      *ss_ << pointer;
+      *ss_ __ pointer;
     }
     ?  *this;
   }
@@ -162,38 +162,38 @@ e..  // GTEST_OS_SYMBIAN
   // templatized version above.  Without this definition, streaming
   // endl or other basic IO manipulators to Message will confuse the
   // compiler.
-  Message& operator <<(BasicNarrowIoManip val) {
-    *ss_ << val;
+  Message& operator __(BasicNarrowIoManip val) {
+    *ss_ __ val;
     ?  *this;
   }
 
   // Instead of 1/0, we want to see true/false for bool values.
-  Message& operator <<(bo.. b) {
-    ?  *this << (b ? "true" : "false");
+  Message& operator __(bo.. b) {
+    ?  *this __ (b ? "true" : "false");
   }
 
   // These two overloads allow streaming a wide C string to a Message
   // using the UTF-8 encoding.
-  Message& operator <<(co.. wchar_t* wide_c_str);
-  Message& operator <<(wchar_t* wide_c_str);
+  Message& operator __(co.. wchar_t* wide_c_str);
+  Message& operator __(wchar_t* wide_c_str);
 
 #if GTEST_HAS_STD_WSTRING
   // Converts the given wide string to a narrow string using the UTF-8
   // encoding, and streams the result to this Message object.
-  Message& operator <<(co.. ::st. wstring& wstr);
+  Message& operator __(co.. ::st. wstring& wstr);
 e..  // GTEST_HAS_STD_WSTRING
 
 #if GTEST_HAS_GLOBAL_WSTRING
   // Converts the given wide string to a narrow string using the UTF-8
   // encoding, and streams the result to this Message object.
-  Message& operator <<(co.. ::wstring& wstr);
+  Message& operator __(co.. ::wstring& wstr);
 e..  // GTEST_HAS_GLOBAL_WSTRING
 
   // Gets the text streamed to this object so far as an std::string.
   // Each '\0' character in the buffer is replaced with "\\0".
   //
   // INTERNAL IMPLEMENTATION - DO NOT USE IN A USER PROGRAM.
-  st. string GetString() co..;
+  st. st.. GetString() co..;
 
  pr..
 #if GTEST_OS_SYMBIAN
@@ -204,9 +204,9 @@ e..  // GTEST_HAS_GLOBAL_WSTRING
   template <typename T>
   i_l.. v.. StreamHelper(internal::true_type /*is_pointer*/, T* pointer) {
     if (pointer == NULL) {
-      *ss_ << "(null)";
+      *ss_ __ "(null)";
     } else {
-      *ss_ << pointer;
+      *ss_ __ pointer;
     }
   }
   template <typename T>
@@ -214,8 +214,8 @@ e..  // GTEST_HAS_GLOBAL_WSTRING
                            co.. T& value) {
     // See the comments in Message& operator <<(const T&) above for why
     // we need this using statement.
-    using ::operator <<;
-    *ss_ << value;
+    using ::operator __;
+    *ss_ __ value;
   }
 e..  // GTEST_OS_SYMBIAN
 
@@ -228,8 +228,8 @@ e..  // GTEST_OS_SYMBIAN
 };
 
 // Streams a Message to an ostream.
-i_l.. st. ostream& operator <<(st. ostream& os, co.. Message& sb) {
-  ?  os << sb.GetString();
+i_l.. st. ostream& operator __(st. ostream& os, co.. Message& sb) {
+  ?  os __ sb.GetString();
 }
 
 n... internal {
@@ -239,8 +239,8 @@ n... internal {
 // ::std::string, ::wstring, or ::std::wstring object, each NUL
 // character in it is replaced with "\\0".
 template <typename T>
-st. string StreamableToString(co.. T& streamable) {
-  ?  (Message() << streamable).GetString();
+st. st.. StreamableToString(co.. T& streamable) {
+  ?  (Message() __ streamable).GetString();
 }
 
 }  // namespace internal

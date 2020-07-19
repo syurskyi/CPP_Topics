@@ -60,7 +60,7 @@ private:
 
 void some_func(SomeClass& some)
 {
-    cout << __PRETTY_FUNCTION__ << endl;
+    cout << __P.. << endl;
     cout << some.data;
 }
 

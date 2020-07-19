@@ -3,7 +3,7 @@
 
 Cat::Cat()
 {
-    std::cout << __PRETTY_FUNCTION__ << "\n";
+    std::cout << __P.. << "\n";
 }
 
 Cat::Cat(uint paws)

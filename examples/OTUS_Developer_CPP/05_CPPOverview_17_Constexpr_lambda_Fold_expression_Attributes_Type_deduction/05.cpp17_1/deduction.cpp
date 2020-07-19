@@ -43,7 +43,7 @@ struct Buffer {
     Buffer(P *, U *) {};
 
     void print() {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::cout << __P.. << std::endl;
         for (const auto &v : m_buffer) {
             std::cout << v << ' ';
         }

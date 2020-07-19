@@ -1417,7 +1417,7 @@ _de.. INSTANTIATE_TEST_CASE_P(prefix, test_case_name, generator, ...)        \
       gtest_##prefix##test_case_name##_EvalGenerator_() {                      \
     ?  generator;                                                          \
   }                                                                            \
-  st.. ::st. string gtest_##prefix##test_case_name##_EvalGenerateName_(     \
+  st.. ::st. st.. gtest_##prefix##test_case_name##_EvalGenerateName_(     \
       co.. ::testing::TestParamInfo<test_case_name::ParamType>& info) {       \
     ?  ::testing::internal::GetParamNameGen<test_case_name::ParamType>(    \
         __VA_ARGS__)(info);                                                    \

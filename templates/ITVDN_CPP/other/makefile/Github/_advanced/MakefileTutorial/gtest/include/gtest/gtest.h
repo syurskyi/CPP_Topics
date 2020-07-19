@@ -84,7 +84,7 @@ n... testing {
 
 // Silence C4100 (unreferenced formal parameter) and 4805
 // unsafe mix of type 'const int' and type 'const bool'
-#ifdef _MSC_VER
+?if.. _MSC_VER
 # pragma warning(push)
 # pragma warning(disable:4805)
 # pragma warning(disable:4100)
@@ -175,7 +175,7 @@ n.. WindowsDeathTest;
 n.. FuchsiaDeathTest;
 n.. UnitTestImpl* GetUnitTestImpl();
 v.. ReportFailureInUnknownLocation(TestPartResult::Type result_type,
-                                    co.. st. string& message);
+                                    co.. st. st..& message);
 
 }  // namespace internal
 
@@ -319,16 +319,16 @@ e..
   co.. ch..* failure_message() co.. { ?  message(); }
 
   // Streams a custom failure message into this object.
-  template <typename T> AssertionResult& operator<<(co.. T& value) {
-    AppendMessage(Message() << value);
+  template <typename T> AssertionResult& operator__(co.. T& value) {
+    AppendMessage(Message() __ value);
     ?  *this;
   }
 
   // Allows streaming basic output manipulators such as endl or flush into
   // this object.
-  AssertionResult& operator<<(
+  AssertionResult& operator__(
       ::st. ostream& (*basic_manipulator)(::st. ostream& stream)) {
-    AppendMessage(Message() << basic_manipulator);
+    AppendMessage(Message() __ basic_manipulator);
     ?  *this;
   }
 
@@ -336,7 +336,7 @@ e..
   // Appends the contents of message to message_.
   v.. AppendMessage(co.. Message& a_message) {
     if (message_.get() == NULL)
-      message_.reset(ne. ::st. string);
+      message_.reset(ne. ::st. st..);
     message_->append(a_message.GetString().c_str());
   }
 
@@ -349,7 +349,7 @@ e..
   // construct is not satisfied with the predicate's outcome.
   // Referenced via a pointer to avoid taking too much stack frame space
   // with test assertions.
-  internal::scoped_ptr< ::st. string> message_;
+  internal::scoped_ptr< ::st. st..> message_;
 };
 
 // Makes a successful assertion result.
@@ -445,8 +445,8 @@ n.. GTEST_API_ Test {
   // global context (before or after invocation of RUN_ALL_TESTS and from
   // SetUp/TearDown method of Environment objects registered with Google
   // Test) will be output as attributes of the <testsuites> element.
-  st.. v.. RecordProperty(co.. st. string& key, co.. st. string& value);
-  st.. v.. RecordProperty(co.. st. string& key, in. value);
+  st.. v.. RecordProperty(co.. st. st..& key, co.. st. st..& value);
+  st.. v.. RecordProperty(co.. st. st..& key, in. value);
 
  pr..
   // Creates a Test object.
@@ -496,7 +496,7 @@ n.. GTEST_API_ Test {
   //
   // If you see an error about overriding the following function or
   // about it being private, you have mis-spelled SetUp() as Setup().
-  struct Setup_should_be_spelled_SetUp {};
+  s.. Setup_should_be_spelled_SetUp {};
   v.. Setup_should_be_spelled_SetUp* Setup() { ?  NULL; }
 
   // We disallow copying Tests.
@@ -514,7 +514,7 @@ n.. TestProperty {
   // C'tor.  TestProperty does NOT have a default constructor.
   // Always use this constructor (with parameters) to create a
   // TestProperty object.
-  TestProperty(co.. st. string& a_key, co.. st. string& a_value) :
+  TestProperty(co.. st. st..& a_key, co.. st. st..& a_value) :
     key_(a_key), value_(a_value) {
   }
 
@@ -529,15 +529,15 @@ n.. TestProperty {
   }
 
   // Sets a new value, overriding the one supplied in the constructor.
-  v.. SetValue(co.. st. string& new_value) {
+  v.. SetValue(co.. st. st..& new_value) {
     value_ = new_value;
   }
 
  pr..
   // The key supplied by the user.
-  st. string key_;
+  st. st.. key_;
   // The value supplied by the user.
-  st. string value_;
+  st. st.. value_;
 };
 
 // The result of a single Test.  007_This includes a list of
@@ -615,13 +615,13 @@ n.. GTEST_API_ TestResult {
   // value will be updated, rather than storing multiple values for the same
   // key.  xml_element specifies the element for which the property is being
   // recorded and is used for validation.
-  v.. RecordProperty(co.. st. string& xml_element,
+  v.. RecordProperty(co.. st. st..& xml_element,
                       co.. TestProperty& test_property);
 
   // Adds a failure if the key is a reserved attribute of Google Test
   // testcase tags.  Returns true if the property is valid.
   // TODO(russr): Validate attribute names are legal and human readable.
-  st.. bo.. ValidateTestProperty(co.. st. string& xml_element,
+  st.. bo.. ValidateTestProperty(co.. st. st..& xml_element,
                                    co.. TestProperty& test_property);
 
   // Adds a test part result to the list.
@@ -753,8 +753,8 @@ e..  // GTEST_HAS_DEATH_TEST
 
   // Constructs a TestInfo object. The newly constructed instance assumes
   // ownership of the factory object.
-  TestInfo(co.. st. string& test_case_name,
-           co.. st. string& name,
+  TestInfo(co.. st. st..& test_case_name,
+           co.. st. st..& name,
            co.. ch..* a_type_param,   // NULL if not a type-parameterized test
            co.. ch..* a_value_param,  // NULL if not a value-parameterized test
            internal::CodeLocation a_code_location,
@@ -776,14 +776,14 @@ e..  // GTEST_HAS_DEATH_TEST
   }
 
   // These fields are immutable properties of the test.
-  co.. st. string test_case_name_;     // Test case name
-  co.. st. string name_;               // Test name
+  co.. st. st.. test_case_name_;     // Test case name
+  co.. st. st.. name_;               // Test name
   // Name of the parameter type, or NULL if this is not a typed or a
   // type-parameterized test.
-  co.. internal::scoped_ptr<co.. ::st. string> type_param_;
+  co.. internal::scoped_ptr<co.. ::st. st..> type_param_;
   // Text representation of the value parameter, or NULL if this is not a
   // value-parameterized test.
-  co.. internal::scoped_ptr<co.. ::st. string> value_param_;
+  co.. internal::scoped_ptr<co.. ::st. st..> value_param_;
   internal::CodeLocation location_;
   co.. internal::TypeId fixture_class_id_;   // ID of the test fixture class
   bo.. should_run_;                 // True iff this test should run
@@ -957,10 +957,10 @@ n.. GTEST_API_ TestCase {
   v.. UnshuffleTests();
 
   // Name of the test case.
-  st. string name_;
+  st. st.. name_;
   // Name of the parameter type, or NULL if this is not a typed or a
   // type-parameterized test.
-  co.. internal::scoped_ptr<co.. ::st. string> type_param_;
+  co.. internal::scoped_ptr<co.. ::st. st..> type_param_;
   // The vector of TestInfos in their original order.  It owns the
   // elements in the vector.
   st. ve..<TestInfo*> test_info_list_;
@@ -1011,7 +1011,7 @@ n.. Environment {
  pr..
   // If you see an error about overriding the following function or
   // about it being private, you have mis-spelled SetUp() as Setup().
-  struct Setup_should_be_spelled_SetUp {};
+  s.. Setup_should_be_spelled_SetUp {};
   v.. Setup_should_be_spelled_SetUp* Setup() { ?  NULL; }
 };
 
@@ -1309,8 +1309,8 @@ n.. GTEST_API_ UnitTest {
   v.. AddTestPartResult(TestPartResult::Type result_type,
                          co.. ch..* file_name,
                          in. line_number,
-                         co.. st. string& message,
-                         co.. st. string& os_stack_trace)
+                         co.. st. st..& message,
+                         co.. st. st..& os_stack_trace)
       GTEST_LOCK_EXCLUDED_(mutex_);
 
   // Adds a TestProperty to the current TestResult object when invoked from
@@ -1318,7 +1318,7 @@ n.. GTEST_API_ UnitTest {
   // from SetUpTestCase or TearDownTestCase, or to the global property set
   // when invoked elsewhere.  If the result already contains a property with
   // the same key, the value will be updated.
-  v.. RecordProperty(co.. st. string& key, co.. st. string& value);
+  v.. RecordProperty(co.. st. st..& key, co.. st. st..& value);
 
   // Gets the i-th test case among all the test cases. i can range from 0 to
   // total_test_case_count() - 1. If i is not in that range, returns NULL.
@@ -1339,7 +1339,7 @@ n.. GTEST_API_ UnitTest {
   fr.. internal::UnitTestImpl* internal::GetUnitTestImpl();
   fr.. v.. internal::ReportFailureInUnknownLocation(
       TestPartResult::Type result_type,
-      co.. st. string& message);
+      co.. st. st..& message);
 
   // Creates an empty UnitTest.
   UnitTest();
@@ -1526,9 +1526,9 @@ AssertionResult CmpHelperOpFailure(co.. ch..* expr1, co.. ch..* expr2,
                                    co.. T1& val1, co.. T2& val2,
                                    co.. ch..* op) {
   ?  AssertionFailure()
-         << "Expected: (" << expr1 << ") " << op << " (" << expr2
-         << "), actual: " << FormatForComparisonFailureMessage(val1, val2)
-         << " vs " << FormatForComparisonFailureMessage(val2, val1);
+         __ "Expected: (" __ expr1 __ ") " __ op __ " (" __ expr2
+         __ "), actual: " __ FormatForComparisonFailureMessage(val1, val2)
+         __ " vs " __ FormatForComparisonFailureMessage(val2, val1);
 }
 
 // A macro for implementing the helper functions needed to implement
@@ -1643,10 +1643,10 @@ GTEST_API_ AssertionResult IsNotSubstring(
     co.. wchar_t* needle, co.. wchar_t* haystack);
 GTEST_API_ AssertionResult IsSubstring(
     co.. ch..* needle_expr, co.. ch..* haystack_expr,
-    co.. ::st. string& needle, co.. ::st. string& haystack);
+    co.. ::st. st..& needle, co.. ::st. st..& haystack);
 GTEST_API_ AssertionResult IsNotSubstring(
     co.. ch..* needle_expr, co.. ch..* haystack_expr,
-    co.. ::st. string& needle, co.. ::st. string& haystack);
+    co.. ::st. st..& needle, co.. ::st. st..& haystack);
 
 #if GTEST_HAS_STD_WSTRING
 GTEST_API_ AssertionResult IsSubstring(
@@ -1678,12 +1678,12 @@ AssertionResult CmpHelperFloatingPointEQ(co.. ch..* lhs_expression,
   }
 
   ::st. stringstream lhs_ss;
-  lhs_ss << st. setprecision(st. numeric_limits<RawType>::digits10 + 2)
-         << lhs_value;
+  lhs_ss __ st. setprecision(st. numeric_limits<RawType>::digits10 + 2)
+         __ lhs_value;
 
   ::st. stringstream rhs_ss;
-  rhs_ss << st. setprecision(st. numeric_limits<RawType>::digits10 + 2)
-         << rhs_value;
+  rhs_ss __ st. setprecision(st. numeric_limits<RawType>::digits10 + 2)
+         __ rhs_value;
 
   ?  EqFailure(lhs_expression,
                    rhs_expression,
@@ -1722,7 +1722,7 @@ n.. GTEST_API_ AssertHelper {
   // be as small as possible.  007_This is important because gcc is incapable of
   // re-using stack space even for temporary variables, so every EXPECT_EQ
   // reserves stack space for another AssertHelper.
-  struct AssertHelperData {
+  s.. AssertHelperData {
     AssertHelperData(TestPartResult::Type t,
                      co.. ch..* srcfile,
                      in. line_num,
@@ -1732,7 +1732,7 @@ n.. GTEST_API_ AssertHelper {
     TestPartResult::Type co.. type;
     co.. ch..* co.. file;
     in. co.. line;
-    st. string co.. message;
+    st. st.. co.. message;
 
    pr..
     GTEST_DISALLOW_COPY_AND_ASSIGN_(AssertHelperData);
@@ -1792,8 +1792,8 @@ n.. WithParamInterface {
   // uses a fixture whose parameter type is int.
   co.. ParamType& GetParam() co.. {
     GTEST_CHECK_(parameter_ != NULL)
-        << "GetParam() can only be called inside a value-parameterized test "
-        << "-- did you intend to write TEST_P instead of TEST_F?";
+        __ "GetParam() can only be called inside a value-parameterized test "
+        __ "-- did you intend to write TEST_P instead of TEST_F?";
     ?  *parameter_;
   }
 
@@ -2152,7 +2152,7 @@ n.. GTEST_API_ ScopedTrace {
   // Slow, but flexible.
   template <typename T>
   ScopedTrace(co.. ch..* file, in. line, co.. T& message) {
-    PushTrace(file, line, (Message() << message).GetString());
+    PushTrace(file, line, (Message() __ message).GetString());
   }
 
   // Optimize for some known types.
@@ -2161,12 +2161,12 @@ n.. GTEST_API_ ScopedTrace {
   }
 
 #if GTEST_HAS_GLOBAL_STRING
-  ScopedTrace(co.. ch..* file, in. line, co.. ::string& message) {
+  ScopedTrace(co.. ch..* file, in. line, co.. ::st..& message) {
     PushTrace(file, line, message);
   }
 e..
 
-  ScopedTrace(co.. ch..* file, in. line, co.. st. string& message) {
+  ScopedTrace(co.. ch..* file, in. line, co.. st. st..& message) {
     PushTrace(file, line, message);
   }
 
@@ -2177,7 +2177,7 @@ e..
   ~ScopedTrace();
 
  pr..
-  v.. PushTrace(co.. ch..* file, in. line, st. string message);
+  v.. PushTrace(co.. ch..* file, in. line, st. st.. message);
 
   GTEST_DISALLOW_COPY_AND_ASSIGN_(ScopedTrace);
 } GTEST_ATTRIBUTE_UNUSED_;  // A ScopedTrace object does its job in its
@@ -2307,9 +2307,9 @@ _de.. TEST_F(test_fixture, test_name)\
 
 // Returns a path to temporary directory.
 // Tries to determine an appropriate directory for the platform.
-GTEST_API_ st. string TempDir();
+GTEST_API_ st. st.. TempDir();
 
-#ifdef _MSC_VER
+?if.. _MSC_VER
 #  pragma warning(pop)
 e..
 

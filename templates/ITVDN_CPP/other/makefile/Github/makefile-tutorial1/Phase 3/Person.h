@@ -3,10 +3,10 @@ u.. s..
 
 n.. Person {
 pr..
-    string name;
+    st.. name;
     in. age;
 p..
-    Person(string name, in. age);
-    string getName();
+    Person(st.. name, in. age);
+    st.. getName();
     in. getAge();
 };

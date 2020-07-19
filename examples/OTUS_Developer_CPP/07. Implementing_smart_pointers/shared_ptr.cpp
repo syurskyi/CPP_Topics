@@ -5,19 +5,19 @@
 class xray {
 public:
     xray() {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::cout << __P.. << std::endl;
     };
 
     xray(const xray &) {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::cout << __P.. << std::endl;
     };
 
     xray(int, int) {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::cout << __P.. << std::endl;
     }
 
     ~xray() {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::cout << __P.. << std::endl;
     };
 };
 
@@ -27,16 +27,16 @@ class smart_ptr {
     int counter;
 public:
     smart_ptr(T *p) : ptr{p}, counter{1} {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::cout << __P.. << std::endl;
     }
 
     smart_ptr(const smart_ptr &u) : ptr{u.ptr}, counter{u.counter} {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::cout << __P.. << std::endl;
         ++counter;
     }
 
     smart_ptr(smart_ptr &&u) : ptr{u.ptr}, counter{u.counter} {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::cout << __P.. << std::endl;
     }
 
     auto get() {
@@ -48,7 +48,7 @@ public:
     }
 
     ~smart_ptr() {
-        std::cout << __PRETTY_FUNCTION__ << std::endl;
+        std::cout << __P.. << std::endl;
         if (--counter == 0) {
             delete ptr;
         }

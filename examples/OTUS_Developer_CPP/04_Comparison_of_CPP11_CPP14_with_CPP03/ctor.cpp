@@ -1,11 +1,11 @@
 #include <iostream>
 
 struct foo {
-    foo() { std::cout << __PRETTY_FUNCTION__ << std::endl; };
+    foo() { std::cout << __P.. << std::endl; };
 
-    foo(int) : foo{} { std::cout << __PRETTY_FUNCTION__ << std::endl; };
+    foo(int) : foo{} { std::cout << __P.. << std::endl; };
 
-    foo(const char *) : foo{0} { std::cout << __PRETTY_FUNCTION__ << std::endl; };
+    foo(const char *) : foo{0} { std::cout << __P.. << std::endl; };
 };
 
 int main(int, char *[]) {

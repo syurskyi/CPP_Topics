@@ -227,7 +227,7 @@ n.. ArgsMatcherImpl : pu.. MatcherInterface<ArgsTuple> {
       ?  inner_matcher_.Matches(selected_args);
 
     PrintIndices(listener->stream());
-    *listener << "are " << PrintToString(selected_args);
+    *listener __ "are " __ PrintToString(selected_args);
 
     StringMatchResultListener inner_listener;
     co.. bo.. match = inner_matcher_.MatchAndExplain(selected_args,
@@ -237,13 +237,13 @@ n.. ArgsMatcherImpl : pu.. MatcherInterface<ArgsTuple> {
   }
 
   v.. v.. DescribeTo(::st. ostream* os) co.. {
-    *os << "are a tuple ";
+    *os __ "are a tuple ";
     PrintIndices(os);
     inner_matcher_.DescribeTo(os);
   }
 
   v.. v.. DescribeNegationTo(::st. ostream* os) co.. {
-    *os << "are a tuple ";
+    *os __ "are a tuple ";
     PrintIndices(os);
     inner_matcher_.DescribeNegationTo(os);
   }
@@ -256,18 +256,18 @@ n.. ArgsMatcherImpl : pu.. MatcherInterface<ArgsTuple> {
 
   // Prints the indices of the selected fields.
   st.. v.. PrintIndices(::st. ostream* os) {
-    *os << "whose fields (";
+    *os __ "whose fields (";
     co.. in. indices[10] = { k0, k1, k2, k3, k4, k5, k6, k7, k8, k9 };
     for (in. i = 0; i < 10; i++) {
       if (indices[i] < 0)
         break;
 
       if (i >= 1)
-        *os << ", ";
+        *os __ ", ";
 
-      *os << "#" << indices[i];
+      *os __ "#" __ indices[i];
     }
-    *os << ") ";
+    *os __ ") ";
   }
 
   co.. MonomorphicInnerMatcher inner_matcher_;
@@ -302,12 +302,12 @@ n.. ArgsMatcher {
 // Although AllOf isn't defined for one argument, AllOfResult1 is defined
 // to simplify the implementation.
 template <typename M1>
-struct AllOfResult1 {
+s.. AllOfResult1 {
   t_d_ M1 type;
 };
 
 template <typename M1, typename M2>
-struct AllOfResult2 {
+s.. AllOfResult2 {
   t_d_ BothOfMatcher<
       typename AllOfResult1<M1>::type,
       typename AllOfResult1<M2>::type
@@ -315,7 +315,7 @@ struct AllOfResult2 {
 };
 
 template <typename M1, typename M2, typename M3>
-struct AllOfResult3 {
+s.. AllOfResult3 {
   t_d_ BothOfMatcher<
       typename AllOfResult1<M1>::type,
       typename AllOfResult2<M2, M3>::type
@@ -323,7 +323,7 @@ struct AllOfResult3 {
 };
 
 template <typename M1, typename M2, typename M3, typename M4>
-struct AllOfResult4 {
+s.. AllOfResult4 {
   t_d_ BothOfMatcher<
       typename AllOfResult2<M1, M2>::type,
       typename AllOfResult2<M3, M4>::type
@@ -331,7 +331,7 @@ struct AllOfResult4 {
 };
 
 template <typename M1, typename M2, typename M3, typename M4, typename M5>
-struct AllOfResult5 {
+s.. AllOfResult5 {
   t_d_ BothOfMatcher<
       typename AllOfResult2<M1, M2>::type,
       typename AllOfResult3<M3, M4, M5>::type
@@ -340,7 +340,7 @@ struct AllOfResult5 {
 
 template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6>
-struct AllOfResult6 {
+s.. AllOfResult6 {
   t_d_ BothOfMatcher<
       typename AllOfResult3<M1, M2, M3>::type,
       typename AllOfResult3<M4, M5, M6>::type
@@ -349,7 +349,7 @@ struct AllOfResult6 {
 
 template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6, typename M7>
-struct AllOfResult7 {
+s.. AllOfResult7 {
   t_d_ BothOfMatcher<
       typename AllOfResult3<M1, M2, M3>::type,
       typename AllOfResult4<M4, M5, M6, M7>::type
@@ -358,7 +358,7 @@ struct AllOfResult7 {
 
 template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6, typename M7, typename M8>
-struct AllOfResult8 {
+s.. AllOfResult8 {
   t_d_ BothOfMatcher<
       typename AllOfResult4<M1, M2, M3, M4>::type,
       typename AllOfResult4<M5, M6, M7, M8>::type
@@ -367,7 +367,7 @@ struct AllOfResult8 {
 
 template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6, typename M7, typename M8, typename M9>
-struct AllOfResult9 {
+s.. AllOfResult9 {
   t_d_ BothOfMatcher<
       typename AllOfResult4<M1, M2, M3, M4>::type,
       typename AllOfResult5<M5, M6, M7, M8, M9>::type
@@ -376,7 +376,7 @@ struct AllOfResult9 {
 
 template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6, typename M7, typename M8, typename M9, typename M10>
-struct AllOfResult10 {
+s.. AllOfResult10 {
   t_d_ BothOfMatcher<
       typename AllOfResult5<M1, M2, M3, M4, M5>::type,
       typename AllOfResult5<M6, M7, M8, M9, M10>::type
@@ -390,12 +390,12 @@ struct AllOfResult10 {
 // Although AnyOf isn't defined for one argument, AnyOfResult1 is defined
 // to simplify the implementation.
 template <typename M1>
-struct AnyOfResult1 {
+s.. AnyOfResult1 {
   t_d_ M1 type;
 };
 
 template <typename M1, typename M2>
-struct AnyOfResult2 {
+s.. AnyOfResult2 {
   t_d_ EitherOfMatcher<
       typename AnyOfResult1<M1>::type,
       typename AnyOfResult1<M2>::type
@@ -403,7 +403,7 @@ struct AnyOfResult2 {
 };
 
 template <typename M1, typename M2, typename M3>
-struct AnyOfResult3 {
+s.. AnyOfResult3 {
   t_d_ EitherOfMatcher<
       typename AnyOfResult1<M1>::type,
       typename AnyOfResult2<M2, M3>::type
@@ -411,7 +411,7 @@ struct AnyOfResult3 {
 };
 
 template <typename M1, typename M2, typename M3, typename M4>
-struct AnyOfResult4 {
+s.. AnyOfResult4 {
   t_d_ EitherOfMatcher<
       typename AnyOfResult2<M1, M2>::type,
       typename AnyOfResult2<M3, M4>::type
@@ -419,7 +419,7 @@ struct AnyOfResult4 {
 };
 
 template <typename M1, typename M2, typename M3, typename M4, typename M5>
-struct AnyOfResult5 {
+s.. AnyOfResult5 {
   t_d_ EitherOfMatcher<
       typename AnyOfResult2<M1, M2>::type,
       typename AnyOfResult3<M3, M4, M5>::type
@@ -428,7 +428,7 @@ struct AnyOfResult5 {
 
 template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6>
-struct AnyOfResult6 {
+s.. AnyOfResult6 {
   t_d_ EitherOfMatcher<
       typename AnyOfResult3<M1, M2, M3>::type,
       typename AnyOfResult3<M4, M5, M6>::type
@@ -437,7 +437,7 @@ struct AnyOfResult6 {
 
 template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6, typename M7>
-struct AnyOfResult7 {
+s.. AnyOfResult7 {
   t_d_ EitherOfMatcher<
       typename AnyOfResult3<M1, M2, M3>::type,
       typename AnyOfResult4<M4, M5, M6, M7>::type
@@ -446,7 +446,7 @@ struct AnyOfResult7 {
 
 template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6, typename M7, typename M8>
-struct AnyOfResult8 {
+s.. AnyOfResult8 {
   t_d_ EitherOfMatcher<
       typename AnyOfResult4<M1, M2, M3, M4>::type,
       typename AnyOfResult4<M5, M6, M7, M8>::type
@@ -455,7 +455,7 @@ struct AnyOfResult8 {
 
 template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6, typename M7, typename M8, typename M9>
-struct AnyOfResult9 {
+s.. AnyOfResult9 {
   t_d_ EitherOfMatcher<
       typename AnyOfResult4<M1, M2, M3, M4>::type,
       typename AnyOfResult5<M5, M6, M7, M8, M9>::type
@@ -464,7 +464,7 @@ struct AnyOfResult9 {
 
 template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6, typename M7, typename M8, typename M9, typename M10>
-struct AnyOfResult10 {
+s.. AnyOfResult10 {
   t_d_ EitherOfMatcher<
       typename AnyOfResult5<M1, M2, M3, M4, M5>::type,
       typename AnyOfResult5<M6, M7, M8, M9, M10>::type
@@ -1395,14 +1395,14 @@ _de.. MATCHER(name, description)\
           GTEST_REFERENCE_TO_CONST_(arg_type) arg,\
           ::testing::MatchResultListener* result_listener) co..;\
       v.. v.. DescribeTo(::st. ostream* gmock_os) co.. {\
-        *gmock_os << FormatDescription(false);\
+        *gmock_os __ FormatDescription(false);\
       }\
       v.. v.. DescribeNegationTo(::st. ostream* gmock_os) co.. {\
-        *gmock_os << FormatDescription(true);\
+        *gmock_os __ FormatDescription(true);\
       }\
      pr..\
-      ::st. string FormatDescription(bo.. negation) co.. {\
-        ::st. string gmock_description = (description);\
+      ::st. st.. FormatDescription(bo.. negation) co.. {\
+        ::st. st.. gmock_description = (description);\
         if (!gmock_description.empty())\
           ?  gmock_description;\
         ?  ::testing::internal::FormatMatcherDescription(\
@@ -1443,15 +1443,15 @@ _de.. MATCHER_P(name, p0, description)\
           GTEST_REFERENCE_TO_CONST_(arg_type) arg,\
           ::testing::MatchResultListener* result_listener) co..;\
       v.. v.. DescribeTo(::st. ostream* gmock_os) co.. {\
-        *gmock_os << FormatDescription(false);\
+        *gmock_os __ FormatDescription(false);\
       }\
       v.. v.. DescribeNegationTo(::st. ostream* gmock_os) co.. {\
-        *gmock_os << FormatDescription(true);\
+        *gmock_os __ FormatDescription(true);\
       }\
       p0##_type co.. p0;\
      pr..\
-      ::st. string FormatDescription(bo.. negation) co.. {\
-        ::st. string gmock_description = (description);\
+      ::st. st.. FormatDescription(bo.. negation) co.. {\
+        ::st. st.. gmock_description = (description);\
         if (!gmock_description.empty())\
           ?  gmock_description;\
         ?  ::testing::internal::FormatMatcherDescription(\
@@ -1497,16 +1497,16 @@ _de.. MATCHER_P2(name, p0, p1, description)\
           GTEST_REFERENCE_TO_CONST_(arg_type) arg,\
           ::testing::MatchResultListener* result_listener) co..;\
       v.. v.. DescribeTo(::st. ostream* gmock_os) co.. {\
-        *gmock_os << FormatDescription(false);\
+        *gmock_os __ FormatDescription(false);\
       }\
       v.. v.. DescribeNegationTo(::st. ostream* gmock_os) co.. {\
-        *gmock_os << FormatDescription(true);\
+        *gmock_os __ FormatDescription(true);\
       }\
       p0##_type co.. p0;\
       p1##_type co.. p1;\
      pr..\
-      ::st. string FormatDescription(bo.. negation) co.. {\
-        ::st. string gmock_description = (description);\
+      ::st. st.. FormatDescription(bo.. negation) co.. {\
+        ::st. st.. gmock_description = (description);\
         if (!gmock_description.empty())\
           ?  gmock_description;\
         ?  ::testing::internal::FormatMatcherDescription(\
@@ -1557,17 +1557,17 @@ _de.. MATCHER_P3(name, p0, p1, p2, description)\
           GTEST_REFERENCE_TO_CONST_(arg_type) arg,\
           ::testing::MatchResultListener* result_listener) co..;\
       v.. v.. DescribeTo(::st. ostream* gmock_os) co.. {\
-        *gmock_os << FormatDescription(false);\
+        *gmock_os __ FormatDescription(false);\
       }\
       v.. v.. DescribeNegationTo(::st. ostream* gmock_os) co.. {\
-        *gmock_os << FormatDescription(true);\
+        *gmock_os __ FormatDescription(true);\
       }\
       p0##_type co.. p0;\
       p1##_type co.. p1;\
       p2##_type co.. p2;\
      pr..\
-      ::st. string FormatDescription(bo.. negation) co.. {\
-        ::st. string gmock_description = (description);\
+      ::st. st.. FormatDescription(bo.. negation) co.. {\
+        ::st. st.. gmock_description = (description);\
         if (!gmock_description.empty())\
           ?  gmock_description;\
         ?  ::testing::internal::FormatMatcherDescription(\
@@ -1624,18 +1624,18 @@ _de.. MATCHER_P4(name, p0, p1, p2, p3, description)\
           GTEST_REFERENCE_TO_CONST_(arg_type) arg,\
           ::testing::MatchResultListener* result_listener) co..;\
       v.. v.. DescribeTo(::st. ostream* gmock_os) co.. {\
-        *gmock_os << FormatDescription(false);\
+        *gmock_os __ FormatDescription(false);\
       }\
       v.. v.. DescribeNegationTo(::st. ostream* gmock_os) co.. {\
-        *gmock_os << FormatDescription(true);\
+        *gmock_os __ FormatDescription(true);\
       }\
       p0##_type co.. p0;\
       p1##_type co.. p1;\
       p2##_type co.. p2;\
       p3##_type co.. p3;\
      pr..\
-      ::st. string FormatDescription(bo.. negation) co.. {\
-        ::st. string gmock_description = (description);\
+      ::st. st.. FormatDescription(bo.. negation) co.. {\
+        ::st. st.. gmock_description = (description);\
         if (!gmock_description.empty())\
           ?  gmock_description;\
         ?  ::testing::internal::FormatMatcherDescription(\
@@ -1700,10 +1700,10 @@ _de.. MATCHER_P5(name, p0, p1, p2, p3, p4, description)\
           GTEST_REFERENCE_TO_CONST_(arg_type) arg,\
           ::testing::MatchResultListener* result_listener) co..;\
       v.. v.. DescribeTo(::st. ostream* gmock_os) co.. {\
-        *gmock_os << FormatDescription(false);\
+        *gmock_os __ FormatDescription(false);\
       }\
       v.. v.. DescribeNegationTo(::st. ostream* gmock_os) co.. {\
-        *gmock_os << FormatDescription(true);\
+        *gmock_os __ FormatDescription(true);\
       }\
       p0##_type co.. p0;\
       p1##_type co.. p1;\
@@ -1711,8 +1711,8 @@ _de.. MATCHER_P5(name, p0, p1, p2, p3, p4, description)\
       p3##_type co.. p3;\
       p4##_type co.. p4;\
      pr..\
-      ::st. string FormatDescription(bo.. negation) co.. {\
-        ::st. string gmock_description = (description);\
+      ::st. st.. FormatDescription(bo.. negation) co.. {\
+        ::st. st.. gmock_description = (description);\
         if (!gmock_description.empty())\
           ?  gmock_description;\
         ?  ::testing::internal::FormatMatcherDescription(\
@@ -1780,10 +1780,10 @@ _de.. MATCHER_P6(name, p0, p1, p2, p3, p4, p5, description)\
           GTEST_REFERENCE_TO_CONST_(arg_type) arg,\
           ::testing::MatchResultListener* result_listener) co..;\
       v.. v.. DescribeTo(::st. ostream* gmock_os) co.. {\
-        *gmock_os << FormatDescription(false);\
+        *gmock_os __ FormatDescription(false);\
       }\
       v.. v.. DescribeNegationTo(::st. ostream* gmock_os) co.. {\
-        *gmock_os << FormatDescription(true);\
+        *gmock_os __ FormatDescription(true);\
       }\
       p0##_type co.. p0;\
       p1##_type co.. p1;\
@@ -1792,8 +1792,8 @@ _de.. MATCHER_P6(name, p0, p1, p2, p3, p4, p5, description)\
       p4##_type co.. p4;\
       p5##_type co.. p5;\
      pr..\
-      ::st. string FormatDescription(bo.. negation) co.. {\
-        ::st. string gmock_description = (description);\
+      ::st. st.. FormatDescription(bo.. negation) co.. {\
+        ::st. st.. gmock_description = (description);\
         if (!gmock_description.empty())\
           ?  gmock_description;\
         ?  ::testing::internal::FormatMatcherDescription(\
@@ -1866,10 +1866,10 @@ _de.. MATCHER_P7(name, p0, p1, p2, p3, p4, p5, p6, description)\
           GTEST_REFERENCE_TO_CONST_(arg_type) arg,\
           ::testing::MatchResultListener* result_listener) co..;\
       v.. v.. DescribeTo(::st. ostream* gmock_os) co.. {\
-        *gmock_os << FormatDescription(false);\
+        *gmock_os __ FormatDescription(false);\
       }\
       v.. v.. DescribeNegationTo(::st. ostream* gmock_os) co.. {\
-        *gmock_os << FormatDescription(true);\
+        *gmock_os __ FormatDescription(true);\
       }\
       p0##_type co.. p0;\
       p1##_type co.. p1;\
@@ -1879,8 +1879,8 @@ _de.. MATCHER_P7(name, p0, p1, p2, p3, p4, p5, p6, description)\
       p5##_type co.. p5;\
       p6##_type co.. p6;\
      pr..\
-      ::st. string FormatDescription(bo.. negation) co.. {\
-        ::st. string gmock_description = (description);\
+      ::st. st.. FormatDescription(bo.. negation) co.. {\
+        ::st. st.. gmock_description = (description);\
         if (!gmock_description.empty())\
           ?  gmock_description;\
         ?  ::testing::internal::FormatMatcherDescription(\
@@ -1961,10 +1961,10 @@ _de.. MATCHER_P8(name, p0, p1, p2, p3, p4, p5, p6, p7, description)\
           GTEST_REFERENCE_TO_CONST_(arg_type) arg,\
           ::testing::MatchResultListener* result_listener) co..;\
       v.. v.. DescribeTo(::st. ostream* gmock_os) co.. {\
-        *gmock_os << FormatDescription(false);\
+        *gmock_os __ FormatDescription(false);\
       }\
       v.. v.. DescribeNegationTo(::st. ostream* gmock_os) co.. {\
-        *gmock_os << FormatDescription(true);\
+        *gmock_os __ FormatDescription(true);\
       }\
       p0##_type co.. p0;\
       p1##_type co.. p1;\
@@ -1975,8 +1975,8 @@ _de.. MATCHER_P8(name, p0, p1, p2, p3, p4, p5, p6, p7, description)\
       p6##_type co.. p6;\
       p7##_type co.. p7;\
      pr..\
-      ::st. string FormatDescription(bo.. negation) co.. {\
-        ::st. string gmock_description = (description);\
+      ::st. st.. FormatDescription(bo.. negation) co.. {\
+        ::st. st.. gmock_description = (description);\
         if (!gmock_description.empty())\
           ?  gmock_description;\
         ?  ::testing::internal::FormatMatcherDescription(\
@@ -2062,10 +2062,10 @@ _de.. MATCHER_P9(name, p0, p1, p2, p3, p4, p5, p6, p7, p8, description)\
           GTEST_REFERENCE_TO_CONST_(arg_type) arg,\
           ::testing::MatchResultListener* result_listener) co..;\
       v.. v.. DescribeTo(::st. ostream* gmock_os) co.. {\
-        *gmock_os << FormatDescription(false);\
+        *gmock_os __ FormatDescription(false);\
       }\
       v.. v.. DescribeNegationTo(::st. ostream* gmock_os) co.. {\
-        *gmock_os << FormatDescription(true);\
+        *gmock_os __ FormatDescription(true);\
       }\
       p0##_type co.. p0;\
       p1##_type co.. p1;\
@@ -2077,8 +2077,8 @@ _de.. MATCHER_P9(name, p0, p1, p2, p3, p4, p5, p6, p7, p8, description)\
       p7##_type co.. p7;\
       p8##_type co.. p8;\
      pr..\
-      ::st. string FormatDescription(bo.. negation) co.. {\
-        ::st. string gmock_description = (description);\
+      ::st. st.. FormatDescription(bo.. negation) co.. {\
+        ::st. st.. gmock_description = (description);\
         if (!gmock_description.empty())\
           ?  gmock_description;\
         ?  ::testing::internal::FormatMatcherDescription(\
@@ -2170,10 +2170,10 @@ _de.. MATCHER_P10(name, p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, description)\
           GTEST_REFERENCE_TO_CONST_(arg_type) arg,\
           ::testing::MatchResultListener* result_listener) co..;\
       v.. v.. DescribeTo(::st. ostream* gmock_os) co.. {\
-        *gmock_os << FormatDescription(false);\
+        *gmock_os __ FormatDescription(false);\
       }\
       v.. v.. DescribeNegationTo(::st. ostream* gmock_os) co.. {\
-        *gmock_os << FormatDescription(true);\
+        *gmock_os __ FormatDescription(true);\
       }\
       p0##_type co.. p0;\
       p1##_type co.. p1;\
@@ -2186,8 +2186,8 @@ _de.. MATCHER_P10(name, p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, description)\
       p8##_type co.. p8;\
       p9##_type co.. p9;\
      pr..\
-      ::st. string FormatDescription(bo.. negation) co.. {\
-        ::st. string gmock_description = (description);\
+      ::st. st.. FormatDescription(bo.. negation) co.. {\
+        ::st. st.. gmock_description = (description);\
         if (!gmock_description.empty())\
           ?  gmock_description;\
         ?  ::testing::internal::FormatMatcherDescription(\

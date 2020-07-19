@@ -1,23 +1,23 @@
 ? |i..
 
-en.. Alphabet {
+en.. Alphabet 
     a, b, c
 }sy.. p..
 
-en.. c_ Digit : in. {
+en.. c_ Digit : in. 
     one, two, three
 }sy.. p..
 
-v.. accept_in.(in.) {
+v.. accept_in.(in.) 
 }
 
-v.. accept_class_enum(Digit) {
+v.. accept_class_enum(Digit) 
 }
 
-v.. accept_enum(Alphabet) {
+v.. accept_enum(Alphabet) 
 }
 
-in. main(in., c.. *[]) {
+in. main(in., c.. *[]) 
     accept_in.(0)sy.. p..
     // accept_class_enum(0); // no known conversion from 'int' to 'Digit'
     // accept_enum(0); // no known conversion from 'int' to 'Alphabet'

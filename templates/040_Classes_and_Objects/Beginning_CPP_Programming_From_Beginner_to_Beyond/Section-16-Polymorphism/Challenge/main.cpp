@@ -16,7 +16,7 @@ in. main
    
     // Accounts
     ve..<Account> accounts;
-    accounts.push_back(Account {});
+    accounts.push_back(Account  });
     accounts.push_back(Account {"Larry"});
     accounts.push_back(Account {"Moe", 2000} );
     accounts.push_back(Account {"Curly", 5000} );

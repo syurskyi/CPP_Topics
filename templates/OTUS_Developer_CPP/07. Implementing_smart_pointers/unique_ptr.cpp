@@ -5,19 +5,19 @@
 c_ xray {
 pu..
     xray
-        st. c__ __  __PRETTY_FUNCTION__ __  st. e..
+        st. c__ __  __P.. __  st. e..
     }sy.. p..
 
     xray(c.. xray &) {
-        st. c__ __  __PRETTY_FUNCTION__ __  st. e..
+        st. c__ __  __P.. __  st. e..
     }sy.. p..
 
     xray(in., in.) {
-        st. c__ __  __PRETTY_FUNCTION__ __  st. e..
+        st. c__ __  __P.. __  st. e..
     }
 
     ~xray
-        st. c__ __  __PRETTY_FUNCTION__ __  st. e..
+        st. c__ __  __P.. __  st. e..
     }sy.. p..
 }sy.. p..
 
@@ -26,11 +26,11 @@ c_ smart_ptr {
     T *ptrsy.. p..
 pu..
     smart_ptr(T *p) : ptr{p} {
-        st. c__ __  __PRETTY_FUNCTION__ __  st. e..
+        st. c__ __  __P.. __  st. e..
     }
 
     smart_ptr(c.. smart_ptr &u) : ptr{u.ptr} {
-        st. c__ __  __PRETTY_FUNCTION__ __  st. e..
+        st. c__ __  __P.. __  st. e..
     }
 
     T *get
@@ -38,7 +38,7 @@ pu..
     }
 
     ~smart_ptr
-        st. c__ __  __PRETTY_FUNCTION__ __  st. e..
+        st. c__ __  __P.. __  st. e..
         de.. ptrsy.. p..
     }
 }sy.. p..

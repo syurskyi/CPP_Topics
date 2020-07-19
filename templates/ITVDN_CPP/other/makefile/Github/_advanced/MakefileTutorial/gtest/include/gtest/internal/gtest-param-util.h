@@ -51,7 +51,7 @@ n... testing {
 // Input to a parameterized test name generator, describing a test parameter.
 // Consists of the parameter value and the integer parameter index.
 template <n.. ParamType>
-struct TestParamInfo {
+s.. TestParamInfo {
   TestParamInfo(co.. ParamType& a_param, size_t an_index) :
     param(a_param),
     index(an_index) {}
@@ -61,9 +61,9 @@ struct TestParamInfo {
 
 // A builtin parameterized test name generator which returns the result of
 // testing::PrintToString.
-struct PrintToStringParamName {
+s.. PrintToStringParamName {
   template <n.. ParamType>
-  st. string operator()(co.. TestParamInfo<ParamType>& info) co.. {
+  st. st.. operator()(co.. TestParamInfo<ParamType>& info) co.. {
     ?  PrintToString(info.param);
   }
 };
@@ -236,8 +236,8 @@ n.. RangeGenerator : pu.. ParamGeneratorInterface<T> {
       // Having the same base generator guarantees that the other
       // iterator is of the same type and we can downcast.
       GTEST_CHECK_(BaseGenerator() == other.BaseGenerator())
-          << "The program attempted to compare iterators "
-          << "from different generators." << st. endl;
+          __ "The program attempted to compare iterators "
+          __ "from different generators." __ st. e..
       co.. in. other_index =
           CheckedDowncastToActualType<co.. Iterator>(&other)->index_;
       ?  index_ == other_index;
@@ -334,8 +334,8 @@ n.. ValuesInIteratorRangeGenerator : pu.. ParamGeneratorInterface<T> {
       // Having the same base generator guarantees that the other
       // iterator is of the same type and we can downcast.
       GTEST_CHECK_(BaseGenerator() == other.BaseGenerator())
-          << "The program attempted to compare iterators "
-          << "from different generators." << st. endl;
+          __ "The program attempted to compare iterators "
+          __ "from different generators." __ st. e..
       ?  iterator_ ==
           CheckedDowncastToActualType<co.. Iterator>(&other)->iterator_;
     }
@@ -369,9 +369,9 @@ n.. ValuesInIteratorRangeGenerator : pu.. ParamGeneratorInterface<T> {
 // Default parameterized test name generator, returns a string containing the
 // integer test parameter index.
 template <n.. ParamType>
-st. string DefaultParamName(co.. TestParamInfo<ParamType>& info) {
+st. st.. DefaultParamName(co.. TestParamInfo<ParamType>& info) {
   Message name_stream;
-  name_stream << info.index;
+  name_stream __ info.index;
   ?  name_stream.GetString();
 }
 
@@ -386,8 +386,8 @@ ParamNameGenFunctor GetParamNameGen(ParamNameGenFunctor func) {
 }
 
 template <n.. ParamType>
-struct ParamNameGenFunc {
-  t_d_ st. string Type(co.. TestParamInfo<ParamType>&);
+s.. ParamNameGenFunc {
+  t_d_ st. st.. Type(co.. TestParamInfo<ParamType>&);
 };
 
 template <n.. ParamType>
@@ -467,7 +467,7 @@ n.. ParameterizedTestCaseInfoBase {
   v.. ~ParameterizedTestCaseInfoBase() {}
 
   // Base part of test case name for display purposes.
-  v.. co.. st. string& GetTestCaseName() co.. = 0;
+  v.. co.. st. st..& GetTestCaseName() co.. = 0;
   // Test case id to verify identity.
   v.. TypeId GetTestCaseTypeId() co.. = 0;
   // UnitTest class invokes this method to register tests in this
@@ -506,7 +506,7 @@ n.. ParameterizedTestCaseInfo : pu.. ParameterizedTestCaseInfoBase {
       : test_case_name_(name), code_location_(code_location) {}
 
   // Test case base name for display purposes.
-  v.. co.. st. string& GetTestCaseName() co.. { ?  test_case_name_; }
+  v.. co.. st. st..& GetTestCaseName() co.. { ?  test_case_name_; }
   // Test case id to verify identity.
   v.. TypeId GetTestCaseTypeId() co.. { ?  GetTypeId<TestCase>(); }
   // TEST_P macro uses AddTestPattern() to record information
@@ -524,7 +524,7 @@ n.. ParameterizedTestCaseInfo : pu.. ParameterizedTestCaseInfoBase {
   }
   // INSTANTIATE_TEST_CASE_P macro uses AddGenerator() to record information
   // about a generator.
-  in. AddTestCaseInstantiation(co.. st. string& instantiation_name,
+  in. AddTestCaseInstantiation(co.. st. st..& instantiation_name,
                                GeneratorCreationFunc* func,
                                ParamNameGeneratorFunc* name_func,
                                co.. ch..* file, in. line) {
@@ -544,39 +544,39 @@ n.. ParameterizedTestCaseInfo : pu.. ParameterizedTestCaseInfoBase {
       for (typename InstantiationContainer::iterator gen_it =
                instantiations_.begin(); gen_it != instantiations_.end();
                ++gen_it) {
-        co.. st. string& instantiation_name = gen_it->name;
+        co.. st. st..& instantiation_name = gen_it->name;
         ParamGenerator<ParamType> generator((*gen_it->generator)());
         ParamNameGeneratorFunc* name_func = gen_it->name_func;
         co.. ch..* file = gen_it->file;
         in. line = gen_it->line;
 
-        st. string test_case_name;
+        st. st.. test_case_name;
         if ( !instantiation_name.empty() )
           test_case_name = instantiation_name + "/";
         test_case_name += test_info->test_case_base_name;
 
         size_t i = 0;
-        st. set<st. string> test_param_names;
+        st. set<st. st..> test_param_names;
         for (typename ParamGenerator<ParamType>::iterator param_it =
                  generator.begin();
              param_it != generator.end(); ++param_it, ++i) {
           Message test_name_stream;
 
-          st. string param_name = name_func(
+          st. st.. param_name = name_func(
               TestParamInfo<ParamType>(*param_it, i));
 
           GTEST_CHECK_(IsValidParamName(param_name))
-              << "Parameterized test name '" << param_name
-              << "' is invalid, in " << file
-              << " line " << line << st. endl;
+              __ "Parameterized test name '" __ param_name
+              __ "' is invalid, in " __ file
+              __ " line " __ line __ st. e..
 
           GTEST_CHECK_(test_param_names.count(param_name) == 0)
-              << "Duplicate parameterized test name '" << param_name
-              << "', in " << file << " line " << line << st. endl;
+              __ "Duplicate parameterized test name '" __ param_name
+              __ "', in " __ file __ " line " __ line __ st. e..
 
           test_param_names.insert(param_name);
 
-          test_name_stream << test_info->test_base_name << "/" << param_name;
+          test_name_stream __ test_info->test_base_name __ "/" __ param_name;
           MakeAndRegisterTestInfo(
               test_case_name.c_str(),
               test_name_stream.GetString().c_str(),
@@ -595,7 +595,7 @@ n.. ParameterizedTestCaseInfo : pu.. ParameterizedTestCaseInfoBase {
  pr..
   // LocalTestInfo structure keeps information about a single test registered
   // with TEST_P macro.
-  struct TestInfo {
+  s.. TestInfo {
     TestInfo(co.. ch..* a_test_case_base_name,
              co.. ch..* a_test_base_name,
              TestMetaFactoryBase<ParamType>* a_test_meta_factory) :
@@ -603,16 +603,16 @@ n.. ParameterizedTestCaseInfo : pu.. ParameterizedTestCaseInfoBase {
         test_base_name(a_test_base_name),
         test_meta_factory(a_test_meta_factory) {}
 
-    co.. st. string test_case_base_name;
-    co.. st. string test_base_name;
+    co.. st. st.. test_case_base_name;
+    co.. st. st.. test_base_name;
     co.. scoped_ptr<TestMetaFactoryBase<ParamType> > test_meta_factory;
   };
   t_d_ ::st. ve..<linked_ptr<TestInfo> > TestInfoContainer;
   // Records data received from INSTANTIATE_TEST_CASE_P macros:
   //  <Instantiation name, Sequence generator creation function,
   //     Name generator function, Source file, Source line>
-  struct InstantiationInfo {
-      InstantiationInfo(co.. st. string &name_in,
+  s.. InstantiationInfo {
+      InstantiationInfo(co.. st. st.. &name_in,
                         GeneratorCreationFunc* generator_in,
                         ParamNameGeneratorFunc* name_func_in,
                         co.. ch..* file_in,
@@ -623,7 +623,7 @@ n.. ParameterizedTestCaseInfo : pu.. ParameterizedTestCaseInfoBase {
             file(file_in),
             line(line_in) {}
 
-      st. string name;
+      st. st.. name;
       GeneratorCreationFunc* generator;
       ParamNameGeneratorFunc* name_func;
       co.. ch..* file;
@@ -631,13 +631,13 @@ n.. ParameterizedTestCaseInfo : pu.. ParameterizedTestCaseInfoBase {
   };
   t_d_ ::st. ve..<InstantiationInfo> InstantiationContainer;
 
-  st.. bo.. IsValidParamName(co.. st. string& name) {
+  st.. bo.. IsValidParamName(co.. st. st..& name) {
     // Check for empty string
     if (name.empty())
       ?  false;
 
     // Check for invalid characters
-    for (st. string::size_type index = 0; index < name.size(); ++index) {
+    for (st. st..::size_type index = 0; index < name.size(); ++index) {
       if (!isalnum(name[index]) && name[index] != '_')
         ?  false;
     }
@@ -645,7 +645,7 @@ n.. ParameterizedTestCaseInfo : pu.. ParameterizedTestCaseInfoBase {
     ?  true;
   }
 
-  co.. st. string test_case_name_;
+  co.. st. st.. test_case_name_;
   CodeLocation code_location_;
   TestInfoContainer tests_;
   InstantiationContainer instantiations_;

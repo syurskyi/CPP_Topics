@@ -5,15 +5,15 @@
 #include <thread>
 
 struct xray {
-    xray() { std::cout << __PRETTY_FUNCTION__ << std::endl; }
+    xray() { std::cout << __P.. << std::endl; }
 
-    xray(const xray&) { std::cout << __PRETTY_FUNCTION__ << std::endl; }
+    xray(const xray&) { std::cout << __P.. << std::endl; }
 
-    xray(xray&&) noexcept { std::cout << __PRETTY_FUNCTION__ << std::endl; }
+    xray(xray&&) noexcept { std::cout << __P.. << std::endl; }
 
-    xray(const char*) { std::cout << __PRETTY_FUNCTION__ << std::endl; }
+    xray(const char*) { std::cout << __P.. << std::endl; }
 
-    ~xray() { std::cout << __PRETTY_FUNCTION__ << std::endl; }
+    ~xray() { std::cout << __P.. << std::endl; }
 };
 
 std::ostream& operator<<(std::ostream & o, const xray &)

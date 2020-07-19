@@ -1,48 +1,47 @@
-?p.. once
-
-? |i..
-
-struct xray {
-    st. string x;
-
-    xray(co.. ch.. *x_) : x(x_)
-    {
-        st. cout << "ctor " << x << st. endl;
-    }
-
-    xray(co.. xray &rhs) : x(rhs.x)
-    {
-        st. cout << "copy ctor from " << rhs.x << " to " << x << st. endl;
-    }
-
-#ifdef MOVE
-
-    xray(xray &&rhs) noexcept
-    {
-        st. cout << "move ctor from " << rhs.x << " to " << x << st. endl;
-        x.swap(rhs.x);
-    }
-
-e..
-
-    ~xray()
-    {
-        st. cout << "dtor " << x << st. endl;
-    }
-    xray &operator=(co.. xray &rhs)
-    {
-        st. cout << "copy assign from " << rhs.x << " to " << x << st. endl;
-        ?  *this;
-    }
-
-#ifdef MOVE
-
-    xray &operator=(xray &&rhs) noexcept
-
-    {
-        st. cout << "move assign from " << rhs.x << " to " << x << st. endl;
-        ?  *this;
-    }
-
-e..
-};
+//?p.. once
+//
+//? |i..
+//
+//s.. xray
+//    st. st.. x
+//
+//    xray co.. ch.. #?_) : ?|?_
+//
+//        st. c.. __ "ctor " __ x __ st. e..
+//
+//
+//    xray co.. x.. #rhs)  x(rh_.x
+//
+//        st. c.. __ "copy ctor from " __ rh_.x __ " to " __ ? __ st. e..
+//
+//
+//?if.. MOVE
+//
+//    xray ? ##rhs n_e_
+//
+//        st. c.. __ "move ctor from " __ rh_.? __ " to " __ ? __ st. e..
+//        ?.sw.. rh_.?
+//
+//
+//e..
+//
+//    #?
+//
+//        st. c.. __ "dtor " __ ? __ st. e..
+//
+//    x.. #op.._ co.. x... #rh_
+//
+//        st. c.. __ "copy assign from " __ rh_.? __ " to " __ ? __ st. e..
+//        ?  #t..
+//
+//
+//?if.. M..
+//
+//    x.. #op.._ x.. ##rh_ n_e_
+//
+//
+//        st. c.. __ "move assign from " __ rh_.? __ " to " __ ? __ st. e..
+//        ?  #t..
+//
+//
+//e..

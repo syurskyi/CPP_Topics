@@ -4,6 +4,6 @@ enum n.. EventCode {
     start, new_doc, quit
 };
 
-struct Event {
+s.. Event {
     EventCode code;
 };

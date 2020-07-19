@@ -16,13 +16,13 @@ void foo(xray &&)
 template<class T>
 void baz(T &&t)
 {
-    std::cout << __PRETTY_FUNCTION__ << std::endl;
+    std::cout << __P.. << std::endl;
 }
 
 template<class T>
 void bar(T &&t)
 {
-    std::cout << __PRETTY_FUNCTION__ << std::endl;
+    std::cout << __P.. << std::endl;
     baz(std::forward<T>(t));
 }
 

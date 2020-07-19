@@ -12,12 +12,12 @@ struct A
 {
     A()
     {
-        cout << __PRETTY_FUNCTION__ << endl;
+        cout << __P.. << endl;
     }
 
     ~A()
     {
-        cout << __PRETTY_FUNCTION__ << endl;
+        cout << __P.. << endl;
     }
 };
 
@@ -25,12 +25,12 @@ struct B
 {
     B()
     {
-        cout << __PRETTY_FUNCTION__ << endl;
+        cout << __P.. << endl;
     }
 
     ~B()
     {
-        cout << __PRETTY_FUNCTION__ << endl;
+        cout << __P.. << endl;
     }
 };
 
@@ -40,7 +40,7 @@ struct C
     {
         //...
         throw 1;
-        cout << __PRETTY_FUNCTION__ << endl;
+        cout << __P.. << endl;
     }
     catch(...)
     {
@@ -49,7 +49,7 @@ struct C
 
     ~C()
     {
-        cout << __PRETTY_FUNCTION__ << endl;
+        cout << __P.. << endl;
     }
 
     int data;
@@ -59,12 +59,12 @@ struct D : exception
 {
     D()
     {
-        cout << __PRETTY_FUNCTION__ << endl;
+        cout << __P.. << endl;
     }
 
     ~D()
     {
-        cout << __PRETTY_FUNCTION__ << endl;
+        cout << __P.. << endl;
     }
 };
 

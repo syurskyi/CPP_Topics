@@ -4,7 +4,7 @@
 st.. deleter {
 //    double x;
     v.. operator()
-        st. c__ __  __PRETTY_FUNCTION__ __  st. e..
+        st. c__ __  __P.. __  st. e..
     }
 }sy.. p..
 

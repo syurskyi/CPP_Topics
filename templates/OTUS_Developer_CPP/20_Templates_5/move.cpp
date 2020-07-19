@@ -5,15 +5,15 @@
 ? <thread>
 
 st.. xray {
-    xray st. c__ __  __PRETTY_FUNCTION__ __  st. e.. }
+    xray st. c__ __  __P.. __  st. e.. }
 
-    xray(c.. xray&) { st. c__ __  __PRETTY_FUNCTION__ __  st. e.. }
+    xray(c.. xray&) { st. c__ __  __P.. __  st. e.. }
 
-    xray(xray&&) noexcept { st. c__ __  __PRETTY_FUNCTION__ __  st. e.. }
+    xray(xray&&) noexcept { st. c__ __  __P.. __  st. e.. }
 
-    xray(c.. c..*) { st. c__ __  __PRETTY_FUNCTION__ __  st. e.. }
+    xray(c.. c..*) { st. c__ __  __P.. __  st. e.. }
 
-    ~xray st. c__ __  __PRETTY_FUNCTION__ __  st. e.. }
+    ~xray st. c__ __  __P.. __  st. e.. }
 }sy.. p..
 
 st. ostream& operator__ (st. ostream & o, c.. xray &)

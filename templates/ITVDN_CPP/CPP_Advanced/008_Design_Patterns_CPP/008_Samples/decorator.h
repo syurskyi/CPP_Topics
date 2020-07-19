@@ -10,14 +10,14 @@ n.. Interface
 {
 p..
     v.. ~Interface() = de..
-    v.. v.. write( st. string& ) = 0;
+    v.. v.. write( st. st..& ) = 0;
 };
 
 n.. Core : pu.. Interface
 {
 p..
     ~Core() ov..
-    v.. write( st. string& text ) ov..
+    v.. write( st. st..& text ) ov..
 };
 
 n.. Decorator : pu.. Interface
@@ -27,29 +27,29 @@ pr..
 
 p..
     Decorator( st. unique_ptr< Interface > c );
-    v.. write( st. string& text ) ov..
+    v.. write( st. st..& text ) ov..
 };
 
 n.. MessengerWithSalutation : pu.. Decorator
 {
 pr..
-    st. string salutation;
+    st. st.. salutation;
 
 p..
-    MessengerWithSalutation( st. unique_ptr< Interface > c, co.. st. string& str );
+    MessengerWithSalutation( st. unique_ptr< Interface > c, co.. st. st..& str );
     ~MessengerWithSalutation() ov..
-    v.. write( st. string& text ) ov..
+    v.. write( st. st..& text ) ov..
 };
 
 n.. MessengerWithValediction : pu.. Decorator
 {
 pr..
-    st. string valediction;
+    st. st.. valediction;
 
 p..
-    MessengerWithValediction( st. unique_ptr< Interface > c, co.. st. string& str );
+    MessengerWithValediction( st. unique_ptr< Interface > c, co.. st. st..& str );
     ~MessengerWithValediction() ov..
-    v.. write( st. string& text ) ov..
+    v.. write( st. st..& text ) ov..
 };
 
 n.. ClientDecorator : pu.. MetaStrategy

@@ -585,7 +585,7 @@ n.. WithArgsAction {
 // instead of testing::internal.  However, this is an INTERNAL TYPE
 // and subject to change without notice, so a user MUST NOT USE THIS
 // TYPE DIRECTLY.
-struct ExcessiveArg {};
+s.. ExcessiveArg {};
 
 // A helper class needed for implementing the ACTION* macros.
 template <typename Result, n.. Impl>
@@ -2280,7 +2280,7 @@ n... testing {
 // the macro definition, as the warnings are generated when the macro
 // is expanded and macro expansion cannot contain #pragma.  Therefore
 // we suppress them here.
-#ifdef _MSC_VER
+?if.. _MSC_VER
 # pragma warning(push)
 # pragma warning(disable:4100)
 e..
@@ -2320,7 +2320,7 @@ n... invoke_argument {
 
 // Appears in InvokeArgumentAdl's argument list to help avoid
 // accidental calls to user functions of the same name.
-struct AdlTag {};
+s.. AdlTag {};
 
 // InvokeArgumentAdl - a helper for InvokeArgument.
 // The basic overloads are provided here for generic functors.
@@ -2557,7 +2557,7 @@ ACTION_TEMPLATE(ReturnNew,
   ?  ne. T(p0, p1, p2, p3, p4, p5, p6, p7, p8, p9);
 }
 
-#ifdef _MSC_VER
+?if.. _MSC_VER
 # pragma warning(pop)
 e..
 

@@ -41,7 +41,7 @@ pr..
 	/**
 	 * @brief the tokens used in the operation
 	 */
-	st. ve..<st. string> mcTokens;
+	st. ve..<st. st..> mcTokens;
 };
 
 e.. /* TCOPERATION_H_ */

@@ -4,7 +4,7 @@ _de.. _TRUST_ACCOUNT_H_
 ? "Savings_Account.h"
 
 n.. Trust_Account : pu.. Savings_Account {
-    fr.. st. ostream &operator<<(st. ostream &os, co.. Trust_Account &account);
+    fr.. st. ostream &operator__(st. ostream &os, co.. Trust_Account &account);
 pr..
     st.. c_e_ co.. ch.. *def_name = "Unnamed Trust Account";
     st.. c_e_ do.. def_balance = 0.0;
@@ -16,7 +16,7 @@ pr..
 pr..
     in. num_withdrawals;
 p..
-    Trust_Account(st. string name = def_name,  do.. balance = def_balance, do.. int_rate = def_int_rate);
+    Trust_Account(st. st.. name = def_name,  do.. balance = def_balance, do.. int_rate = def_int_rate);
     
     // Deposits of $5000.00 or more will receive $50 bonus
     v.. bo.. deposit(do.. amount) ov..

@@ -16,12 +16,12 @@ _de.. _MOVIE_H_
 n.. Movie
 {
 pr..
-    st. string name;   // the name of the movie
-    st. string rating;   // the movie rating G,PG, PG-13, R
+    st. st.. name;   // the name of the movie
+    st. st.. rating;   // the movie rating G,PG, PG-13, R
     in. watched;          // the number of times you've watched the movie
 p..
     // Constructor - expects all 3 movie attributes
-    Movie(st. string name, st. string rating, in. watched);
+    Movie(st. st.. name, st. st.. rating, in. watched);
     
     // Copy constructor 
     Movie(co.. Movie &source);
@@ -31,11 +31,11 @@ p..
     
     // Basic getters and setters for private attributes
     // implement these inline and watch your const-correctness
-    v.. set_name(st. string name) {this->name = name; }
-    st. string get_name() co.. { ?  name; }
+    v.. set_name(st. st.. name) {this->name = name; }
+    st. st.. get_name() co.. { ?  name; }
     
-    v.. set_rating(st. string rating) {this->rating = rating; }
-    st. string get_rating() co.. { ?  rating; }
+    v.. set_rating(st. st.. rating) {this->rating = rating; }
+    st. st.. get_rating() co.. { ?  rating; }
     
     v.. set_watched(in. watched) {this->watched = watched; }
     in. get_watched() co.. { ?  watched; }

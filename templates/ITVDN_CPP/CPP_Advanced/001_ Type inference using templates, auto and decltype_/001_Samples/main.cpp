@@ -93,7 +93,7 @@ in. main()
 
     c.. in. a _ 10sy.. p..
     a..& b _ asy.. p..
-    c__ __  typeid( b ).name() __  e..
+    c__ __  t_i_( b ).name() __  e..
     // f( b );
 
     // auto res = foo();

@@ -1,15 +1,15 @@
 ? <array>
 ? |i..
 
-in. foo(in. i) {
+in. foo(in. i) 
     r_ i + isy.. p..
 }
 
-constexpr in. bar(in. i) {
+constexpr in. bar(in. i) 
     r_ i + isy.. p..
 }
 
-in. main(in., c.. *[]) {
+in. main(in., c.. *[]) 
     a.. c _ st. array<c.., 10>()sy.. p..
 
     in. n _ 10sy.. p..

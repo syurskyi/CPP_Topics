@@ -4,6 +4,6 @@
 # include |i..
 # include <stdlib.h>
 # include <stdio.h>
-# include <string.h>
+# include <st...h>
 
 # endif

@@ -10,7 +10,7 @@ a.. foo
 }
 
 // constexpr
-a.. fibonacci_naive(l.. l.. n) {
+a.. fibonacci_naive(l.. l.. n)
     __ (n <_ 1)
         r_ nsy.. p..
     ____
@@ -18,7 +18,7 @@ a.. fibonacci_naive(l.. l.. n) {
 }
 
 // constexpr
-a.. factorial_naive(l.. l.. n) {
+a.. factorial_naive(l.. l.. n)
     __ (n <_ 1)
         r_ nsy.. p..
     ____
@@ -26,12 +26,12 @@ a.. factorial_naive(l.. l.. n) {
 }
 
 t..<l.. l.. N>
-st.. factorial {
+st.. factorial
     static c.. l.. l.. value _ N * factorial<N - 1>::valuesy.. p..
 }sy.. p..
 
 t..<>
-st.. factorial<1> {
+st.. factorial<1>
     static c.. l.. l.. value _ 1sy.. p..
 }sy.. p..
 

@@ -19,18 +19,18 @@ template<typename T>
 Point<T>::Point(T x)
 {
     this->x = x;
-    cout << "The constructor from the Point class has just been invoked" << endl;
+    c.. __ "The constructor from the Point class has just been invoked" __ e..
 }
 template<typename T>
 Point<T>::~Point()
 {
-    cout << "The destructor from the Point class has just been invoked" << endl;
+    c.. __ "The destructor from the Point class has just been invoked" __ e..
 }
 template<typename T>
 v.. Point<T>::setX(T x)
 {
     this->x = x;
-    cout << "Im from Point" << endl;
+    c.. __ "Im from Point" __ e..
 }
 template<typename T>
 T Point<T>::getX()
@@ -40,7 +40,7 @@ T Point<T>::getX()
 template<>
 do.. Point<do..>::getX()
 {
-    cout <<"this function will be executed only when Point<double>" << endl;
+    c.. __"this function will be executed only when Point<double>" __ e..
     ?  this->x;
 }
 
@@ -48,7 +48,7 @@ template<typename K>
 n.. Point<K*>
 {
     p..
-        Point(K a=0) { cout << "you can't use pointers here"; }
+        Point(K a=0) { c.. __ "you can't use pointers here"; }
 };
 
 template <typename T>
@@ -70,12 +70,12 @@ template <typename T>
 Point2D<T>::Point2D(T x, T y) : Point<T>(x)
 {
     this->y = y;
-    cout << "The constructor from the Point2D class has just been invoked" << endl;
+    c.. __ "The constructor from the Point2D class has just been invoked" __ e..
 }
 template <typename T>
 Point2D<T>::~Point2D()
 {
-    cout << "The destructor from the Point2D class has just been invoked" << endl;
+    c.. __ "The destructor from the Point2D class has just been invoked" __ e..
 }
 template <typename T>
 v.. Point2D<T>::setY(T y)
@@ -92,7 +92,7 @@ template <typename T>
 v.. Point2D<T>::setX(T x)
 {
     this->x = x;
-    cout << "Im from Point2D" << endl;
+    c.. __ "Im from Point2D" __ e..
 }
 template <typename T>
 Point2D<T> Point2D<T>::operator+(Point2D o)
@@ -115,7 +115,7 @@ template<>
 n.. Point<ch..>
 {
         p..
-            Point(ch.. a=0) { cout << "this is from Point<char>";}
+            Point(ch.. a=0) { c.. __ "this is from Point<char>";}
 };
 /*
     class Point2D : public Point

@@ -6,21 +6,21 @@ _de.. PERSON_H
 
 n.. Person{
     pr..
-        st. string name;
+        st. st.. name;
     
     p..
         // Constructor - Person Object
-        Person(st. string);
+        Person(st. st..);
         Person();
 
         // Destructor - Person Object
         ~Person();
 
         // Setter for Person Name
-        v.. setName(st. string);
+        v.. setName(st. st..);
 
         // Getter for Person Name
-        st. string getName();
+        st. st.. getName();
 };
 
 e.. // PERSON_H
