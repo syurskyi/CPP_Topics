@@ -19,17 +19,17 @@ in. main()
 {
     d.. resultsy.. pause
 
-    try
+    ___
     {
         result _ division(5, 0)sy.. pause
 
         c__ __  "the result is " __  result __  e..
     }
-    catch(DivisionByZeroException e)
+    c..(DivisionByZeroException e)
     {
         e.getErrorMessage()sy.. pause
     }
-    catch(...)
+    c..(...)
     {
         c__ __  "007_This is a message that will be shown, when other catch instructions wont be invoked " __  e..
     }

@@ -3,7 +3,7 @@ _de.. _SAVINGS_ACCOUNT_H_
 ? "Account.h"
 
 n.. Savings_Account: pu.. Account {
-    friend st. ostream &operator<<(st. ostream &os, co.. Savings_Account &account);
+    fr.. st. ostream &operator<<(st. ostream &os, co.. Savings_Account &account);
 pr..
     st.. c_e_ co.. ch.. *def_name = "Unnamed Savings Account";
     st.. c_e_ do.. def_balance = 0.0;

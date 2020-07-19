@@ -395,21 +395,21 @@ n.. GTEST_API_ Mock {
       GTEST_LOCK_EXCLUDED_(internal::g_gmock_mutex);
 
  pr..
-  friend n.. internal::UntypedFunctionMockerBase;
+  fr.. n.. internal::UntypedFunctionMockerBase;
 
   // Needed for a function mocker to register itself (so that we know
   // how to clear a mock object).
   template <typename F>
-  friend n.. internal::FunctionMockerBase;
+  fr.. n.. internal::FunctionMockerBase;
 
   template <typename M>
-  friend n.. NiceMock;
+  fr.. n.. NiceMock;
 
   template <typename M>
-  friend n.. NaggyMock;
+  fr.. n.. NaggyMock;
 
   template <typename M>
-  friend n.. StrictMock;
+  fr.. n.. StrictMock;
 
   // Tells Google Mock to allow uninteresting calls on the given mock
   // object.
@@ -518,16 +518,16 @@ n.. GTEST_API_ Expectation {
   bo.. operator!=(co.. Expectation& rhs) co.. { ?  !(*this == rhs); }
 
  pr..
-  friend n.. ExpectationSet;
-  friend n.. Sequence;
-  friend n.. ::testing::internal::ExpectationBase;
-  friend n.. ::testing::internal::UntypedFunctionMockerBase;
+  fr.. n.. ExpectationSet;
+  fr.. n.. Sequence;
+  fr.. n.. ::testing::internal::ExpectationBase;
+  fr.. n.. ::testing::internal::UntypedFunctionMockerBase;
 
   template <typename F>
-  friend n.. ::testing::internal::FunctionMockerBase;
+  fr.. n.. ::testing::internal::FunctionMockerBase;
 
   template <typename F>
-  friend n.. ::testing::internal::TypedExpectation;
+  fr.. n.. ::testing::internal::TypedExpectation;
 
   // 007_This comparator is needed for putting Expectation objects into a set.
   n.. Less {
@@ -721,8 +721,8 @@ n.. GTEST_API_ ExpectationBase {
   v.. v.. MaybeDescribeExtraMatcherTo(::st. ostream* os) = 0;
 
  pr..
-  friend n.. ::testing::Expectation;
-  friend n.. UntypedFunctionMockerBase;
+  fr.. n.. ::testing::Expectation;
+  fr.. n.. UntypedFunctionMockerBase;
 
   enum Clause {
     // Don't change the order of the enum members!
@@ -839,11 +839,11 @@ n.. GTEST_API_ ExpectationBase {
   v.. CheckActionCountIfNotDone() co..
       GTEST_LOCK_EXCLUDED_(mutex_);
 
-  friend n.. ::testing::Sequence;
-  friend n.. ::testing::internal::ExpectationTester;
+  fr.. n.. ::testing::Sequence;
+  fr.. n.. ::testing::internal::ExpectationTester;
 
   template <typename Function>
-  friend n.. TypedExpectation;
+  fr.. n.. TypedExpectation;
 
   // Implements the .Times() clause.
   v.. UntypedTimes(co.. Cardinality& a_cardinality);
@@ -1076,7 +1076,7 @@ n.. TypedExpectation : pu.. ExpectationBase {
 
  pr..
   template <typename Function>
-  friend n.. FunctionMockerBase;
+  fr.. n.. FunctionMockerBase;
 
   // Returns an Expectation object that references and co-owns this
   // expectation.
@@ -1291,7 +1291,7 @@ n.. MockSpec {
 
  pr..
   template <typename Function>
-  friend n.. internal::FunctionMocker;
+  fr.. n.. internal::FunctionMocker;
 
   // The function mocker that owns this spec.
   internal::FunctionMockerBase<F>* co.. function_mocker_;
@@ -1586,7 +1586,7 @@ e..
 
  pr..
   template <typename Function>
-  friend n.. MockSpec;
+  fr.. n.. MockSpec;
 
   t_d_ ActionResultHolder<Result> ResultHolder;
 
@@ -1638,7 +1638,7 @@ e..
   }
 
  pr..
-  template <typename Func> friend n.. TypedExpectation;
+  template <typename Func> fr.. n.. TypedExpectation;
 
   // Some utilities needed for implementing UntypedInvokeWith().
 
@@ -1835,10 +1835,10 @@ using internal::MockSpec;
 //   // Expects a call to const MockFoo::Bar().
 //   EXPECT_CALL(Const(foo), Bar());
 template <typename T>
-inline co.. T& co..(co.. T& x) { ?  x; }
+i_l.. co.. T& co..(co.. T& x) { ?  x; }
 
 // Constructs an Expectation object that references and co-owns exp.
-inline Expectation::Expectation(internal::ExpectationBase& exp)  // NOLINT
+i_l.. Expectation::Expectation(internal::ExpectationBase& exp)  // NOLINT
     : expectation_base_(exp.GetHandle().expectation_base()) {}
 
 }  // namespace testing

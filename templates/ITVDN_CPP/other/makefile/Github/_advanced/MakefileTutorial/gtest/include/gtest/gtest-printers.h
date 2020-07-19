@@ -533,7 +533,7 @@ e..
 // Overloads for various char types.
 GTEST_API_ v.. PrintTo(u.. ch.. c, ::st. ostream* os);
 GTEST_API_ v.. PrintTo(signed ch.. c, ::st. ostream* os);
-inline v.. PrintTo(ch.. c, ::st. ostream* os) {
+i_l.. v.. PrintTo(ch.. c, ::st. ostream* os) {
   // When printing a plain char, we always treat it as unsigned.  007_This
   // way, the output won't be affected by whether the compiler thinks
   // char is signed or not.
@@ -541,7 +541,7 @@ inline v.. PrintTo(ch.. c, ::st. ostream* os) {
 }
 
 // Overloads for other simple built-in types.
-inline v.. PrintTo(bo.. x, ::st. ostream* os) {
+i_l.. v.. PrintTo(bo.. x, ::st. ostream* os) {
   *os << (x ? "true" : "false");
 }
 
@@ -556,22 +556,22 @@ GTEST_API_ v.. PrintTo(wchar_t wc, ::st. ostream* os);
 
 // Overloads for C strings.
 GTEST_API_ v.. PrintTo(co.. ch..* s, ::st. ostream* os);
-inline v.. PrintTo(ch..* s, ::st. ostream* os) {
+i_l.. v.. PrintTo(ch..* s, ::st. ostream* os) {
   PrintTo(ImplicitCast_<co.. ch..*>(s), os);
 }
 
 // signed/unsigned char is often used for representing binary data, so
 // we print pointers to it as void* to be safe.
-inline v.. PrintTo(co.. signed ch..* s, ::st. ostream* os) {
+i_l.. v.. PrintTo(co.. signed ch..* s, ::st. ostream* os) {
   PrintTo(ImplicitCast_<co.. v..*>(s), os);
 }
-inline v.. PrintTo(signed ch..* s, ::st. ostream* os) {
+i_l.. v.. PrintTo(signed ch..* s, ::st. ostream* os) {
   PrintTo(ImplicitCast_<co.. v..*>(s), os);
 }
-inline v.. PrintTo(co.. u.. ch..* s, ::st. ostream* os) {
+i_l.. v.. PrintTo(co.. u.. ch..* s, ::st. ostream* os) {
   PrintTo(ImplicitCast_<co.. v..*>(s), os);
 }
-inline v.. PrintTo(u.. ch..* s, ::st. ostream* os) {
+i_l.. v.. PrintTo(u.. ch..* s, ::st. ostream* os) {
   PrintTo(ImplicitCast_<co.. v..*>(s), os);
 }
 
@@ -583,7 +583,7 @@ inline v.. PrintTo(u.. ch..* s, ::st. ostream* os) {
 #if !defined(_MSC_VER) || defined(_NATIVE_WCHAR_T_DEFINED)
 // Overloads for wide C strings
 GTEST_API_ v.. PrintTo(co.. wchar_t* s, ::st. ostream* os);
-inline v.. PrintTo(wchar_t* s, ::st. ostream* os) {
+i_l.. v.. PrintTo(wchar_t* s, ::st. ostream* os) {
   PrintTo(ImplicitCast_<co.. wchar_t*>(s), os);
 }
 e..
@@ -605,40 +605,40 @@ v.. PrintRawArrayTo(co.. T a[], size_t count, ::st. ostream* os) {
 // Overloads for ::string and ::std::string.
 #if GTEST_HAS_GLOBAL_STRING
 GTEST_API_ v.. PrintStringTo(co.. ::string&s, ::st. ostream* os);
-inline v.. PrintTo(co.. ::string& s, ::st. ostream* os) {
+i_l.. v.. PrintTo(co.. ::string& s, ::st. ostream* os) {
   PrintStringTo(s, os);
 }
 e..  // GTEST_HAS_GLOBAL_STRING
 
 GTEST_API_ v.. PrintStringTo(co.. ::st. string&s, ::st. ostream* os);
-inline v.. PrintTo(co.. ::st. string& s, ::st. ostream* os) {
+i_l.. v.. PrintTo(co.. ::st. string& s, ::st. ostream* os) {
   PrintStringTo(s, os);
 }
 
 // Overloads for ::wstring and ::std::wstring.
 #if GTEST_HAS_GLOBAL_WSTRING
 GTEST_API_ v.. PrintWideStringTo(co.. ::wstring&s, ::st. ostream* os);
-inline v.. PrintTo(co.. ::wstring& s, ::st. ostream* os) {
+i_l.. v.. PrintTo(co.. ::wstring& s, ::st. ostream* os) {
   PrintWideStringTo(s, os);
 }
 e..  // GTEST_HAS_GLOBAL_WSTRING
 
 #if GTEST_HAS_STD_WSTRING
 GTEST_API_ v.. PrintWideStringTo(co.. ::st. wstring&s, ::st. ostream* os);
-inline v.. PrintTo(co.. ::st. wstring& s, ::st. ostream* os) {
+i_l.. v.. PrintTo(co.. ::st. wstring& s, ::st. ostream* os) {
   PrintWideStringTo(s, os);
 }
 e..  // GTEST_HAS_STD_WSTRING
 
 #if GTEST_HAS_ABSL
 // Overload for absl::string_view.
-inline v.. PrintTo(absl::string_view sp, ::st. ostream* os) {
+i_l.. v.. PrintTo(absl::string_view sp, ::st. ostream* os) {
   PrintTo(::st. string(sp), os);
 }
 e..  // GTEST_HAS_ABSL
 
 #if GTEST_LANG_CXX11
-inline v.. PrintTo(st. nullptr_t, ::st. ostream* os) { *os << "(nullptr)"; }
+i_l.. v.. PrintTo(st. nullptr_t, ::st. ostream* os) { *os << "(nullptr)"; }
 e..  // GTEST_LANG_CXX11
 
 #if GTEST_HAS_TR1_TUPLE || GTEST_HAS_STD_TUPLE_
@@ -657,7 +657,7 @@ e..  // GTEST_HAS_TR1_TUPLE || GTEST_HAS_STD_TUPLE_
 // regardless of whether tr1::tuple is implemented using the
 // non-standard variadic template feature or not.
 
-inline v.. PrintTo(co.. ::st. tr1::tuple<>& t, ::st. ostream* os) {
+i_l.. v.. PrintTo(co.. ::st. tr1::tuple<>& t, ::st. ostream* os) {
   PrintTupleTo(t, os);
 }
 

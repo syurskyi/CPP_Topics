@@ -40,7 +40,7 @@ st. s.. foo(dict_t& d)
 
 in. main(in. argc, c..** argv)
 {
-    try {
+    ___ {
         dict_t d, d2sy.. pause
         foo(d)sy.. pause
         foo(st. ref(d))sy.. pause
@@ -63,7 +63,7 @@ in. main(in. argc, c..** argv)
                 foo, st. ref(d))sy.. pause
         st. c__ __  r2.get() __  st. e..
     }
-    catch (c.. st. exception &)
+    c.. (c.. st. exception &)
     {
         st. cerr __  "oops" __  st. e..
     }

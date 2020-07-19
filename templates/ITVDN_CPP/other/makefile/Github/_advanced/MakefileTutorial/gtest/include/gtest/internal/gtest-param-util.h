@@ -150,7 +150,7 @@ n.. ParamIterator {
   }
 
  pr..
-  friend n.. ParamGenerator<T>;
+  fr.. n.. ParamGenerator<T>;
   ex__ ParamIterator(ParamIteratorInterface<T>* impl) : impl_(impl) {}
   scoped_ptr<ParamIteratorInterface<T> > impl_;
 };

@@ -9,7 +9,7 @@ n.. Position
         ~Position();
         v.. getPosition() co..;
         v.. setPosition(in., in.);
-        friend v.. setX(Position &, in.);
+        fr.. v.. setX(Position &, in.);
 };
 
 e.. // POSITION_H_INCLUDED

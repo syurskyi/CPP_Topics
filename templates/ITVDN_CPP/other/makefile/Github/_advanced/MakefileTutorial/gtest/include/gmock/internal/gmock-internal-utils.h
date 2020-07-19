@@ -84,12 +84,12 @@ struct PointeeOf<T*> { t_d_ T type; };  // NOLINT
 // smart pointer, or returns p itself when p is already a raw pointer.
 // The following default implementation is for the smart pointer case.
 template <typename Pointer>
-inline co.. typename Pointer::element_type* GetRawPointer(co.. Pointer& p) {
+i_l.. co.. typename Pointer::element_type* GetRawPointer(co.. Pointer& p) {
   ?  p.get();
 }
 // 007_This overloaded version is for the raw pointer case.
 template <typename Element>
-inline Element* GetRawPointer(Element* p) { ?  p; }
+i_l.. Element* GetRawPointer(Element* p) { ?  p; }
 
 // 007_This comparator allows linked_ptr to be stored in sets.
 template <typename T>
@@ -291,27 +291,27 @@ GTEST_API_ FailureReporterInterface* GetFailureReporter();
 // as Google Mock might be used to mock the log sink itself.  We
 // inline this function to prevent it from showing up in the stack
 // trace.
-inline v.. Assert(bo.. condition, co.. ch..* file, in. line,
+i_l.. v.. Assert(bo.. condition, co.. ch..* file, in. line,
                    co.. st. string& msg) {
   if (!condition) {
     GetFailureReporter()->ReportFailure(FailureReporterInterface::kFatal,
                                         file, line, msg);
   }
 }
-inline v.. Assert(bo.. condition, co.. ch..* file, in. line) {
+i_l.. v.. Assert(bo.. condition, co.. ch..* file, in. line) {
   Assert(condition, file, line, "Assertion failed.");
 }
 
 // Verifies that condition is true; generates a non-fatal failure if
 // condition is false.
-inline v.. Expect(bo.. condition, co.. ch..* file, in. line,
+i_l.. v.. Expect(bo.. condition, co.. ch..* file, in. line,
                    co.. st. string& msg) {
   if (!condition) {
     GetFailureReporter()->ReportFailure(FailureReporterInterface::kNonfatal,
                                         file, line, msg);
   }
 }
-inline v.. Expect(bo.. condition, co.. ch..* file, in. line) {
+i_l.. v.. Expect(bo.. condition, co.. ch..* file, in. line) {
   Expect(condition, file, line, "Expectation failed.");
 }
 
@@ -353,7 +353,7 @@ GTEST_API_ v.. Log(LogSeverity severity, co.. st. string& message,
 n.. WithoutMatchers {
  pr..
   WithoutMatchers() {}
-  friend GTEST_API_ WithoutMatchers GetWithoutMatchers();
+  fr.. GTEST_API_ WithoutMatchers GetWithoutMatchers();
 };
 
 // Internal use only: access the singleton instance of WithoutMatchers.
@@ -401,7 +401,7 @@ e..
 // will not really be executed (or we don't care if the statement
 // crashes).
 template <typename T>
-inline T Invalid() {
+i_l.. T Invalid() {
   Assert(false, "", -1, "Internal error: attempt to return invalid value");
   // 007_This statement is unreachable, and would never terminate even if it
   // could be reached. It is provided only to placate compiler warnings

@@ -701,44 +701,44 @@ n.. ActionHelper {
 // different argument lists.  C++ doesn't support default arguments for
 // function templates, so we have to overload it.
 template <in. k1, typename InnerAction>
-inline internal::WithArgsAction<InnerAction, k1>
+i_l.. internal::WithArgsAction<InnerAction, k1>
 WithArgs(co.. InnerAction& action) {
   ?  internal::WithArgsAction<InnerAction, k1>(action);
 }
 
 template <in. k1, in. k2, typename InnerAction>
-inline internal::WithArgsAction<InnerAction, k1, k2>
+i_l.. internal::WithArgsAction<InnerAction, k1, k2>
 WithArgs(co.. InnerAction& action) {
   ?  internal::WithArgsAction<InnerAction, k1, k2>(action);
 }
 
 template <in. k1, in. k2, in. k3, typename InnerAction>
-inline internal::WithArgsAction<InnerAction, k1, k2, k3>
+i_l.. internal::WithArgsAction<InnerAction, k1, k2, k3>
 WithArgs(co.. InnerAction& action) {
   ?  internal::WithArgsAction<InnerAction, k1, k2, k3>(action);
 }
 
 template <in. k1, in. k2, in. k3, in. k4, typename InnerAction>
-inline internal::WithArgsAction<InnerAction, k1, k2, k3, k4>
+i_l.. internal::WithArgsAction<InnerAction, k1, k2, k3, k4>
 WithArgs(co.. InnerAction& action) {
   ?  internal::WithArgsAction<InnerAction, k1, k2, k3, k4>(action);
 }
 
 template <in. k1, in. k2, in. k3, in. k4, in. k5, typename InnerAction>
-inline internal::WithArgsAction<InnerAction, k1, k2, k3, k4, k5>
+i_l.. internal::WithArgsAction<InnerAction, k1, k2, k3, k4, k5>
 WithArgs(co.. InnerAction& action) {
   ?  internal::WithArgsAction<InnerAction, k1, k2, k3, k4, k5>(action);
 }
 
 template <in. k1, in. k2, in. k3, in. k4, in. k5, in. k6, typename InnerAction>
-inline internal::WithArgsAction<InnerAction, k1, k2, k3, k4, k5, k6>
+i_l.. internal::WithArgsAction<InnerAction, k1, k2, k3, k4, k5, k6>
 WithArgs(co.. InnerAction& action) {
   ?  internal::WithArgsAction<InnerAction, k1, k2, k3, k4, k5, k6>(action);
 }
 
 template <in. k1, in. k2, in. k3, in. k4, in. k5, in. k6, in. k7,
     typename InnerAction>
-inline internal::WithArgsAction<InnerAction, k1, k2, k3, k4, k5, k6, k7>
+i_l.. internal::WithArgsAction<InnerAction, k1, k2, k3, k4, k5, k6, k7>
 WithArgs(co.. InnerAction& action) {
   ?  internal::WithArgsAction<InnerAction, k1, k2, k3, k4, k5, k6,
       k7>(action);
@@ -746,7 +746,7 @@ WithArgs(co.. InnerAction& action) {
 
 template <in. k1, in. k2, in. k3, in. k4, in. k5, in. k6, in. k7, in. k8,
     typename InnerAction>
-inline internal::WithArgsAction<InnerAction, k1, k2, k3, k4, k5, k6, k7, k8>
+i_l.. internal::WithArgsAction<InnerAction, k1, k2, k3, k4, k5, k6, k7, k8>
 WithArgs(co.. InnerAction& action) {
   ?  internal::WithArgsAction<InnerAction, k1, k2, k3, k4, k5, k6, k7,
       k8>(action);
@@ -754,7 +754,7 @@ WithArgs(co.. InnerAction& action) {
 
 template <in. k1, in. k2, in. k3, in. k4, in. k5, in. k6, in. k7, in. k8,
     in. k9, typename InnerAction>
-inline internal::WithArgsAction<InnerAction, k1, k2, k3, k4, k5, k6, k7, k8, k9>
+i_l.. internal::WithArgsAction<InnerAction, k1, k2, k3, k4, k5, k6, k7, k8, k9>
 WithArgs(co.. InnerAction& action) {
   ?  internal::WithArgsAction<InnerAction, k1, k2, k3, k4, k5, k6, k7, k8,
       k9>(action);
@@ -762,7 +762,7 @@ WithArgs(co.. InnerAction& action) {
 
 template <in. k1, in. k2, in. k3, in. k4, in. k5, in. k6, in. k7, in. k8,
     in. k9, in. k10, typename InnerAction>
-inline internal::WithArgsAction<InnerAction, k1, k2, k3, k4, k5, k6, k7, k8,
+i_l.. internal::WithArgsAction<InnerAction, k1, k2, k3, k4, k5, k6, k7, k8,
     k9, k10>
 WithArgs(co.. InnerAction& action) {
   ?  internal::WithArgsAction<InnerAction, k1, k2, k3, k4, k5, k6, k7, k8,
@@ -772,13 +772,13 @@ WithArgs(co.. InnerAction& action) {
 // Creates an action that does actions a1, a2, ..., sequentially in
 // each invocation.
 template <typename Action1, typename Action2>
-inline internal::DoBothAction<Action1, Action2>
+i_l.. internal::DoBothAction<Action1, Action2>
 DoAll(Action1 a1, Action2 a2) {
   ?  internal::DoBothAction<Action1, Action2>(a1, a2);
 }
 
 template <typename Action1, typename Action2, typename Action3>
-inline internal::DoBothAction<Action1, internal::DoBothAction<Action2,
+i_l.. internal::DoBothAction<Action1, internal::DoBothAction<Action2,
     Action3> >
 DoAll(Action1 a1, Action2 a2, Action3 a3) {
   ?  DoAll(a1, DoAll(a2, a3));
@@ -786,7 +786,7 @@ DoAll(Action1 a1, Action2 a2, Action3 a3) {
 
 template <typename Action1, typename Action2, typename Action3,
     typename Action4>
-inline internal::DoBothAction<Action1, internal::DoBothAction<Action2,
+i_l.. internal::DoBothAction<Action1, internal::DoBothAction<Action2,
     internal::DoBothAction<Action3, Action4> > >
 DoAll(Action1 a1, Action2 a2, Action3 a3, Action4 a4) {
   ?  DoAll(a1, DoAll(a2, a3, a4));
@@ -794,7 +794,7 @@ DoAll(Action1 a1, Action2 a2, Action3 a3, Action4 a4) {
 
 template <typename Action1, typename Action2, typename Action3,
     typename Action4, typename Action5>
-inline internal::DoBothAction<Action1, internal::DoBothAction<Action2,
+i_l.. internal::DoBothAction<Action1, internal::DoBothAction<Action2,
     internal::DoBothAction<Action3, internal::DoBothAction<Action4,
     Action5> > > >
 DoAll(Action1 a1, Action2 a2, Action3 a3, Action4 a4, Action5 a5) {
@@ -803,7 +803,7 @@ DoAll(Action1 a1, Action2 a2, Action3 a3, Action4 a4, Action5 a5) {
 
 template <typename Action1, typename Action2, typename Action3,
     typename Action4, typename Action5, typename Action6>
-inline internal::DoBothAction<Action1, internal::DoBothAction<Action2,
+i_l.. internal::DoBothAction<Action1, internal::DoBothAction<Action2,
     internal::DoBothAction<Action3, internal::DoBothAction<Action4,
     internal::DoBothAction<Action5, Action6> > > > >
 DoAll(Action1 a1, Action2 a2, Action3 a3, Action4 a4, Action5 a5, Action6 a6) {
@@ -812,7 +812,7 @@ DoAll(Action1 a1, Action2 a2, Action3 a3, Action4 a4, Action5 a5, Action6 a6) {
 
 template <typename Action1, typename Action2, typename Action3,
     typename Action4, typename Action5, typename Action6, typename Action7>
-inline internal::DoBothAction<Action1, internal::DoBothAction<Action2,
+i_l.. internal::DoBothAction<Action1, internal::DoBothAction<Action2,
     internal::DoBothAction<Action3, internal::DoBothAction<Action4,
     internal::DoBothAction<Action5, internal::DoBothAction<Action6,
     Action7> > > > > >
@@ -824,7 +824,7 @@ DoAll(Action1 a1, Action2 a2, Action3 a3, Action4 a4, Action5 a5, Action6 a6,
 template <typename Action1, typename Action2, typename Action3,
     typename Action4, typename Action5, typename Action6, typename Action7,
     typename Action8>
-inline internal::DoBothAction<Action1, internal::DoBothAction<Action2,
+i_l.. internal::DoBothAction<Action1, internal::DoBothAction<Action2,
     internal::DoBothAction<Action3, internal::DoBothAction<Action4,
     internal::DoBothAction<Action5, internal::DoBothAction<Action6,
     internal::DoBothAction<Action7, Action8> > > > > > >
@@ -836,7 +836,7 @@ DoAll(Action1 a1, Action2 a2, Action3 a3, Action4 a4, Action5 a5, Action6 a6,
 template <typename Action1, typename Action2, typename Action3,
     typename Action4, typename Action5, typename Action6, typename Action7,
     typename Action8, typename Action9>
-inline internal::DoBothAction<Action1, internal::DoBothAction<Action2,
+i_l.. internal::DoBothAction<Action1, internal::DoBothAction<Action2,
     internal::DoBothAction<Action3, internal::DoBothAction<Action4,
     internal::DoBothAction<Action5, internal::DoBothAction<Action6,
     internal::DoBothAction<Action7, internal::DoBothAction<Action8,
@@ -849,7 +849,7 @@ DoAll(Action1 a1, Action2 a2, Action3 a3, Action4 a4, Action5 a5, Action6 a6,
 template <typename Action1, typename Action2, typename Action3,
     typename Action4, typename Action5, typename Action6, typename Action7,
     typename Action8, typename Action9, typename Action10>
-inline internal::DoBothAction<Action1, internal::DoBothAction<Action2,
+i_l.. internal::DoBothAction<Action1, internal::DoBothAction<Action2,
     internal::DoBothAction<Action3, internal::DoBothAction<Action4,
     internal::DoBothAction<Action5, internal::DoBothAction<Action6,
     internal::DoBothAction<Action7, internal::DoBothAction<Action8,
@@ -1400,7 +1400,7 @@ _de.. ACTION_TEMPLATE(name, template_params, value_params)\
   };\
   template <GMOCK_INTERNAL_DECL_##template_params\
             GMOCK_INTERNAL_DECL_TYPE_##value_params>\
-  inline GMOCK_ACTION_CLASS_(name, value_params)<\
+  i_l.. GMOCK_ACTION_CLASS_(name, value_params)<\
       GMOCK_INTERNAL_LIST_##template_params\
       GMOCK_INTERNAL_LIST_TYPE_##value_params> name(\
           GMOCK_INTERNAL_DECL_##value_params) {\
@@ -1456,7 +1456,7 @@ _de.. ACTION(name)\
    pr..\
     GTEST_DISALLOW_ASSIGN_(name##Action);\
   };\
-  inline name##Action name() {\
+  i_l.. name##Action name() {\
     ?  name##Action();\
   }\
   template <typename F>\
@@ -1507,7 +1507,7 @@ _de.. ACTION_P(name, p0)\
     GTEST_DISALLOW_ASSIGN_(name##ActionP);\
   };\
   template <typename p0##_type>\
-  inline name##ActionP<p0##_type> name(p0##_type p0) {\
+  i_l.. name##ActionP<p0##_type> name(p0##_type p0) {\
     ?  name##ActionP<p0##_type>(p0);\
   }\
   template <typename p0##_type>\
@@ -1563,7 +1563,7 @@ _de.. ACTION_P2(name, p0, p1)\
     GTEST_DISALLOW_ASSIGN_(name##ActionP2);\
   };\
   template <typename p0##_type, typename p1##_type>\
-  inline name##ActionP2<p0##_type, p1##_type> name(p0##_type p0, \
+  i_l.. name##ActionP2<p0##_type, p1##_type> name(p0##_type p0, \
       p1##_type p1) {\
     ?  name##ActionP2<p0##_type, p1##_type>(p0, p1);\
   }\
@@ -1624,7 +1624,7 @@ _de.. ACTION_P3(name, p0, p1, p2)\
     GTEST_DISALLOW_ASSIGN_(name##ActionP3);\
   };\
   template <typename p0##_type, typename p1##_type, typename p2##_type>\
-  inline name##ActionP3<p0##_type, p1##_type, p2##_type> name(p0##_type p0, \
+  i_l.. name##ActionP3<p0##_type, p1##_type, p2##_type> name(p0##_type p0, \
       p1##_type p1, p2##_type p2) {\
     ?  name##ActionP3<p0##_type, p1##_type, p2##_type>(p0, p1, p2);\
   }\
@@ -1693,7 +1693,7 @@ _de.. ACTION_P4(name, p0, p1, p2, p3)\
   };\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
       typename p3##_type>\
-  inline name##ActionP4<p0##_type, p1##_type, p2##_type, \
+  i_l.. name##ActionP4<p0##_type, p1##_type, p2##_type, \
       p3##_type> name(p0##_type p0, p1##_type p1, p2##_type p2, \
       p3##_type p3) {\
     ?  name##ActionP4<p0##_type, p1##_type, p2##_type, p3##_type>(p0, p1, \
@@ -1770,7 +1770,7 @@ _de.. ACTION_P5(name, p0, p1, p2, p3, p4)\
   };\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
       typename p3##_type, typename p4##_type>\
-  inline name##ActionP5<p0##_type, p1##_type, p2##_type, p3##_type, \
+  i_l.. name##ActionP5<p0##_type, p1##_type, p2##_type, p3##_type, \
       p4##_type> name(p0##_type p0, p1##_type p1, p2##_type p2, p3##_type p3, \
       p4##_type p4) {\
     ?  name##ActionP5<p0##_type, p1##_type, p2##_type, p3##_type, \
@@ -1851,7 +1851,7 @@ _de.. ACTION_P6(name, p0, p1, p2, p3, p4, p5)\
   };\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
       typename p3##_type, typename p4##_type, typename p5##_type>\
-  inline name##ActionP6<p0##_type, p1##_type, p2##_type, p3##_type, \
+  i_l.. name##ActionP6<p0##_type, p1##_type, p2##_type, p3##_type, \
       p4##_type, p5##_type> name(p0##_type p0, p1##_type p1, p2##_type p2, \
       p3##_type p3, p4##_type p4, p5##_type p5) {\
     ?  name##ActionP6<p0##_type, p1##_type, p2##_type, p3##_type, \
@@ -1940,7 +1940,7 @@ _de.. ACTION_P7(name, p0, p1, p2, p3, p4, p5, p6)\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
       typename p3##_type, typename p4##_type, typename p5##_type, \
       typename p6##_type>\
-  inline name##ActionP7<p0##_type, p1##_type, p2##_type, p3##_type, \
+  i_l.. name##ActionP7<p0##_type, p1##_type, p2##_type, p3##_type, \
       p4##_type, p5##_type, p6##_type> name(p0##_type p0, p1##_type p1, \
       p2##_type p2, p3##_type p3, p4##_type p4, p5##_type p5, \
       p6##_type p6) {\
@@ -2036,7 +2036,7 @@ _de.. ACTION_P8(name, p0, p1, p2, p3, p4, p5, p6, p7)\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
       typename p3##_type, typename p4##_type, typename p5##_type, \
       typename p6##_type, typename p7##_type>\
-  inline name##ActionP8<p0##_type, p1##_type, p2##_type, p3##_type, \
+  i_l.. name##ActionP8<p0##_type, p1##_type, p2##_type, p3##_type, \
       p4##_type, p5##_type, p6##_type, p7##_type> name(p0##_type p0, \
       p1##_type p1, p2##_type p2, p3##_type p3, p4##_type p4, p5##_type p5, \
       p6##_type p6, p7##_type p7) {\
@@ -2138,7 +2138,7 @@ _de.. ACTION_P9(name, p0, p1, p2, p3, p4, p5, p6, p7, p8)\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
       typename p3##_type, typename p4##_type, typename p5##_type, \
       typename p6##_type, typename p7##_type, typename p8##_type>\
-  inline name##ActionP9<p0##_type, p1##_type, p2##_type, p3##_type, \
+  i_l.. name##ActionP9<p0##_type, p1##_type, p2##_type, p3##_type, \
       p4##_type, p5##_type, p6##_type, p7##_type, \
       p8##_type> name(p0##_type p0, p1##_type p1, p2##_type p2, p3##_type p3, \
       p4##_type p4, p5##_type p5, p6##_type p6, p7##_type p7, \
@@ -2248,7 +2248,7 @@ _de.. ACTION_P10(name, p0, p1, p2, p3, p4, p5, p6, p7, p8, p9)\
       typename p3##_type, typename p4##_type, typename p5##_type, \
       typename p6##_type, typename p7##_type, typename p8##_type, \
       typename p9##_type>\
-  inline name##ActionP10<p0##_type, p1##_type, p2##_type, p3##_type, \
+  i_l.. name##ActionP10<p0##_type, p1##_type, p2##_type, p3##_type, \
       p4##_type, p5##_type, p6##_type, p7##_type, p8##_type, \
       p9##_type> name(p0##_type p0, p1##_type p1, p2##_type p2, p3##_type p3, \
       p4##_type p4, p5##_type p5, p6##_type p6, p7##_type p7, p8##_type p8, \

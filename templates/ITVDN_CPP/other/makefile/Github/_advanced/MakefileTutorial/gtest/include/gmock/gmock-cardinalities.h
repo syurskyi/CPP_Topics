@@ -138,7 +138,7 @@ GTEST_API_ Cardinality Between(in. min, in. max);
 GTEST_API_ Cardinality Exactly(in. n);
 
 // Creates a cardinality from its implementation.
-inline Cardinality MakeCardinality(co.. CardinalityInterface* c) {
+i_l.. Cardinality MakeCardinality(co.. CardinalityInterface* c) {
   ?  Cardinality(c);
 }
 

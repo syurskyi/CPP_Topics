@@ -411,10 +411,10 @@ e..
 
  pr..
   template <typename F1, typename F2>
-  friend n.. internal::ActionAdaptor;
+  fr.. n.. internal::ActionAdaptor;
 
   template <typename G>
-  friend n.. Action;
+  fr.. n.. Action;
 
   // In C++11, Action can be implemented either as a generic functor (through
   // std::function), or legacy ActionInterface. In C++98, only ActionInterface
@@ -498,7 +498,7 @@ Action<F> MakeAction(ActionInterface<F>* impl) {
 // vs
 //   PolymorphicAction<TypeOfFoo>(foo);
 template <typename Impl>
-inline PolymorphicAction<Impl> MakePolymorphicAction(co.. Impl& impl) {
+i_l.. PolymorphicAction<Impl> MakePolymorphicAction(co.. Impl& impl) {
   ?  PolymorphicAction<Impl>(impl);
 }
 
@@ -1120,18 +1120,18 @@ internal::ReturnAction<R> ? (R value) {
 }
 
 // Creates an action that returns NULL.
-inline PolymorphicAction<internal::ReturnNullAction> ReturnNull() {
+i_l.. PolymorphicAction<internal::ReturnNullAction> ReturnNull() {
   ?  MakePolymorphicAction(internal::ReturnNullAction());
 }
 
 // Creates an action that returns from a void function.
-inline PolymorphicAction<internal::ReturnVoidAction> ? () {
+i_l.. PolymorphicAction<internal::ReturnVoidAction> ? () {
   ?  MakePolymorphicAction(internal::ReturnVoidAction());
 }
 
 // Creates an action that returns the reference to a variable.
 template <typename R>
-inline internal::ReturnRefAction<R> ReturnRef(R& x) {  // NOLINT
+i_l.. internal::ReturnRefAction<R> ReturnRef(R& x) {  // NOLINT
   ?  internal::ReturnRefAction<R>(x);
 }
 
@@ -1139,7 +1139,7 @@ inline internal::ReturnRefAction<R> ReturnRef(R& x) {  // NOLINT
 // argument.  The copy is created when the action is constructed and
 // lives as long as the action.
 template <typename R>
-inline internal::ReturnRefOfCopyAction<R> ReturnRefOfCopy(co.. R& x) {
+i_l.. internal::ReturnRefOfCopyAction<R> ReturnRefOfCopy(co.. R& x) {
   ?  internal::ReturnRefOfCopyAction<R>(x);
 }
 
@@ -1153,7 +1153,7 @@ internal::ByMoveWrapper<R> ByMove(R x) {
 }
 
 // Creates an action that does the default action for the give mock function.
-inline internal::DoDefaultAction DoDefault() {
+i_l.. internal::DoDefaultAction DoDefault() {
   ?  internal::DoDefaultAction();
 }
 
@@ -1241,7 +1241,7 @@ InvokeWithoutArgs(n..* obj_ptr, MethodPtr method_ptr) {
 // result.  In other words, it changes the return type of an_action to
 // void.  an_action MUST NOT return void, or the code won't compile.
 template <typename A>
-inline internal::IgnoreResultAction<A> IgnoreResult(co.. A& an_action) {
+i_l.. internal::IgnoreResultAction<A> IgnoreResult(co.. A& an_action) {
   ?  internal::IgnoreResultAction<A>(an_action);
 }
 
@@ -1253,7 +1253,7 @@ inline internal::IgnoreResultAction<A> IgnoreResult(co.. A& an_action) {
 //
 //   ByRef<const Base>(derived)
 template <typename T>
-inline internal::ReferenceWrapper<T> ByRef(T& l_value) {  // NOLINT
+i_l.. internal::ReferenceWrapper<T> ByRef(T& l_value) {  // NOLINT
   ?  internal::ReferenceWrapper<T>(l_value);
 }
 

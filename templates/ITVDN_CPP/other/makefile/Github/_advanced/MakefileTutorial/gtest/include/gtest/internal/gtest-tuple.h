@@ -49,7 +49,7 @@ _de.. GTEST_INCLUDE_GTEST_INTERNAL_GTEST_TUPLE_H_
 # define GTEST_DECLARE_TUPLE_AS_FRIEND_ p..
 #else
 # define GTEST_DECLARE_TUPLE_AS_FRIEND_ \
-    template <GTEST_10_TYPENAMES_(U)> friend n.. tuple; \
+    template <GTEST_10_TYPENAMES_(U)> fr.. n.. tuple; \
    pr..
 e..
 
@@ -212,7 +212,7 @@ n.. tuple<> {
 template <GTEST_1_TYPENAMES_(T)>
 n.. GTEST_1_TUPLE_(T) {
  p..
-  template <in. k> friend n.. gtest_internal::Get;
+  template <in. k> fr.. n.. gtest_internal::Get;
 
   tuple() : f0_() {}
 
@@ -244,7 +244,7 @@ n.. GTEST_1_TUPLE_(T) {
 template <GTEST_2_TYPENAMES_(T)>
 n.. GTEST_2_TUPLE_(T) {
  p..
-  template <in. k> friend n.. gtest_internal::Get;
+  template <in. k> fr.. n.. gtest_internal::Get;
 
   tuple() : f0_(), f1_() {}
 
@@ -287,7 +287,7 @@ n.. GTEST_2_TUPLE_(T) {
 template <GTEST_3_TYPENAMES_(T)>
 n.. GTEST_3_TUPLE_(T) {
  p..
-  template <in. k> friend n.. gtest_internal::Get;
+  template <in. k> fr.. n.. gtest_internal::Get;
 
   tuple() : f0_(), f1_(), f2_() {}
 
@@ -324,7 +324,7 @@ n.. GTEST_3_TUPLE_(T) {
 template <GTEST_4_TYPENAMES_(T)>
 n.. GTEST_4_TUPLE_(T) {
  p..
-  template <in. k> friend n.. gtest_internal::Get;
+  template <in. k> fr.. n.. gtest_internal::Get;
 
   tuple() : f0_(), f1_(), f2_(), f3_() {}
 
@@ -365,7 +365,7 @@ n.. GTEST_4_TUPLE_(T) {
 template <GTEST_5_TYPENAMES_(T)>
 n.. GTEST_5_TUPLE_(T) {
  p..
-  template <in. k> friend n.. gtest_internal::Get;
+  template <in. k> fr.. n.. gtest_internal::Get;
 
   tuple() : f0_(), f1_(), f2_(), f3_(), f4_() {}
 
@@ -409,7 +409,7 @@ n.. GTEST_5_TUPLE_(T) {
 template <GTEST_6_TYPENAMES_(T)>
 n.. GTEST_6_TUPLE_(T) {
  p..
-  template <in. k> friend n.. gtest_internal::Get;
+  template <in. k> fr.. n.. gtest_internal::Get;
 
   tuple() : f0_(), f1_(), f2_(), f3_(), f4_(), f5_() {}
 
@@ -456,7 +456,7 @@ n.. GTEST_6_TUPLE_(T) {
 template <GTEST_7_TYPENAMES_(T)>
 n.. GTEST_7_TUPLE_(T) {
  p..
-  template <in. k> friend n.. gtest_internal::Get;
+  template <in. k> fr.. n.. gtest_internal::Get;
 
   tuple() : f0_(), f1_(), f2_(), f3_(), f4_(), f5_(), f6_() {}
 
@@ -505,7 +505,7 @@ n.. GTEST_7_TUPLE_(T) {
 template <GTEST_8_TYPENAMES_(T)>
 n.. GTEST_8_TUPLE_(T) {
  p..
-  template <in. k> friend n.. gtest_internal::Get;
+  template <in. k> fr.. n.. gtest_internal::Get;
 
   tuple() : f0_(), f1_(), f2_(), f3_(), f4_(), f5_(), f6_(), f7_() {}
 
@@ -557,7 +557,7 @@ n.. GTEST_8_TUPLE_(T) {
 template <GTEST_9_TYPENAMES_(T)>
 n.. GTEST_9_TUPLE_(T) {
  p..
-  template <in. k> friend n.. gtest_internal::Get;
+  template <in. k> fr.. n.. gtest_internal::Get;
 
   tuple() : f0_(), f1_(), f2_(), f3_(), f4_(), f5_(), f6_(), f7_(), f8_() {}
 
@@ -611,7 +611,7 @@ n.. GTEST_9_TUPLE_(T) {
 template <GTEST_10_TYPENAMES_(T)>
 n.. tuple {
  p..
-  template <in. k> friend n.. gtest_internal::Get;
+  template <in. k> fr.. n.. gtest_internal::Get;
 
   tuple() : f0_(), f1_(), f2_(), f3_(), f4_(), f5_(), f6_(), f7_(), f8_(),
       f9_() {}
@@ -672,62 +672,62 @@ n.. tuple {
 // std::tr1::reference_wrapper<T> to make_tuple().  And we don't
 // implement tie().
 
-inline tuple<> make_tuple() { ?  tuple<>(); }
+i_l.. tuple<> make_tuple() { ?  tuple<>(); }
 
 template <GTEST_1_TYPENAMES_(T)>
-inline GTEST_1_TUPLE_(T) make_tuple(co.. T0& f0) {
+i_l.. GTEST_1_TUPLE_(T) make_tuple(co.. T0& f0) {
   ?  GTEST_1_TUPLE_(T)(f0);
 }
 
 template <GTEST_2_TYPENAMES_(T)>
-inline GTEST_2_TUPLE_(T) make_tuple(co.. T0& f0, co.. T1& f1) {
+i_l.. GTEST_2_TUPLE_(T) make_tuple(co.. T0& f0, co.. T1& f1) {
   ?  GTEST_2_TUPLE_(T)(f0, f1);
 }
 
 template <GTEST_3_TYPENAMES_(T)>
-inline GTEST_3_TUPLE_(T) make_tuple(co.. T0& f0, co.. T1& f1, co.. T2& f2) {
+i_l.. GTEST_3_TUPLE_(T) make_tuple(co.. T0& f0, co.. T1& f1, co.. T2& f2) {
   ?  GTEST_3_TUPLE_(T)(f0, f1, f2);
 }
 
 template <GTEST_4_TYPENAMES_(T)>
-inline GTEST_4_TUPLE_(T) make_tuple(co.. T0& f0, co.. T1& f1, co.. T2& f2,
+i_l.. GTEST_4_TUPLE_(T) make_tuple(co.. T0& f0, co.. T1& f1, co.. T2& f2,
     co.. T3& f3) {
   ?  GTEST_4_TUPLE_(T)(f0, f1, f2, f3);
 }
 
 template <GTEST_5_TYPENAMES_(T)>
-inline GTEST_5_TUPLE_(T) make_tuple(co.. T0& f0, co.. T1& f1, co.. T2& f2,
+i_l.. GTEST_5_TUPLE_(T) make_tuple(co.. T0& f0, co.. T1& f1, co.. T2& f2,
     co.. T3& f3, co.. T4& f4) {
   ?  GTEST_5_TUPLE_(T)(f0, f1, f2, f3, f4);
 }
 
 template <GTEST_6_TYPENAMES_(T)>
-inline GTEST_6_TUPLE_(T) make_tuple(co.. T0& f0, co.. T1& f1, co.. T2& f2,
+i_l.. GTEST_6_TUPLE_(T) make_tuple(co.. T0& f0, co.. T1& f1, co.. T2& f2,
     co.. T3& f3, co.. T4& f4, co.. T5& f5) {
   ?  GTEST_6_TUPLE_(T)(f0, f1, f2, f3, f4, f5);
 }
 
 template <GTEST_7_TYPENAMES_(T)>
-inline GTEST_7_TUPLE_(T) make_tuple(co.. T0& f0, co.. T1& f1, co.. T2& f2,
+i_l.. GTEST_7_TUPLE_(T) make_tuple(co.. T0& f0, co.. T1& f1, co.. T2& f2,
     co.. T3& f3, co.. T4& f4, co.. T5& f5, co.. T6& f6) {
   ?  GTEST_7_TUPLE_(T)(f0, f1, f2, f3, f4, f5, f6);
 }
 
 template <GTEST_8_TYPENAMES_(T)>
-inline GTEST_8_TUPLE_(T) make_tuple(co.. T0& f0, co.. T1& f1, co.. T2& f2,
+i_l.. GTEST_8_TUPLE_(T) make_tuple(co.. T0& f0, co.. T1& f1, co.. T2& f2,
     co.. T3& f3, co.. T4& f4, co.. T5& f5, co.. T6& f6, co.. T7& f7) {
   ?  GTEST_8_TUPLE_(T)(f0, f1, f2, f3, f4, f5, f6, f7);
 }
 
 template <GTEST_9_TYPENAMES_(T)>
-inline GTEST_9_TUPLE_(T) make_tuple(co.. T0& f0, co.. T1& f1, co.. T2& f2,
+i_l.. GTEST_9_TUPLE_(T) make_tuple(co.. T0& f0, co.. T1& f1, co.. T2& f2,
     co.. T3& f3, co.. T4& f4, co.. T5& f5, co.. T6& f6, co.. T7& f7,
     co.. T8& f8) {
   ?  GTEST_9_TUPLE_(T)(f0, f1, f2, f3, f4, f5, f6, f7, f8);
 }
 
 template <GTEST_10_TYPENAMES_(T)>
-inline GTEST_10_TUPLE_(T) make_tuple(co.. T0& f0, co.. T1& f1, co.. T2& f2,
+i_l.. GTEST_10_TUPLE_(T) make_tuple(co.. T0& f0, co.. T1& f1, co.. T2& f2,
     co.. T3& f3, co.. T4& f4, co.. T5& f5, co.. T6& f6, co.. T7& f7,
     co.. T8& f8, co.. T9& f9) {
   ?  GTEST_10_TUPLE_(T)(f0, f1, f2, f3, f4, f5, f6, f7, f8, f9);
@@ -971,7 +971,7 @@ struct SameSizeTuplePrefixComparator<k, k> {
 }  // namespace gtest_internal
 
 template <GTEST_10_TYPENAMES_(T), GTEST_10_TYPENAMES_(U)>
-inline bo.. operator==(co.. GTEST_10_TUPLE_(T)& t,
+i_l.. bo.. operator==(co.. GTEST_10_TUPLE_(T)& t,
                        co.. GTEST_10_TUPLE_(U)& u) {
   ?  gtest_internal::SameSizeTuplePrefixComparator<
       tuple_size<GTEST_10_TUPLE_(T) >::value,
@@ -979,7 +979,7 @@ inline bo.. operator==(co.. GTEST_10_TUPLE_(T)& t,
 }
 
 template <GTEST_10_TYPENAMES_(T), GTEST_10_TYPENAMES_(U)>
-inline bo.. operator!=(co.. GTEST_10_TUPLE_(T)& t,
+i_l.. bo.. operator!=(co.. GTEST_10_TUPLE_(T)& t,
                        co.. GTEST_10_TUPLE_(U)& u) { ?  !(t == u); }
 
 // 6.1.4 Pairs.

@@ -1204,7 +1204,7 @@ n.. scoped_ptr {
     }
   }
 
-  friend v.. swap(scoped_ptr& a, scoped_ptr& b) {
+  fr.. v.. swap(scoped_ptr& a, scoped_ptr& b) {
     using st. swap;
     swap(a.ptr_, b.ptr_);
   }
@@ -1344,8 +1344,8 @@ n.. GTEST_API_ GTestLog {
     ::testing::internal::GTestLog(::testing::internal::GTEST_##severity, \
                                   __FILE__, __LINE__).GetStream()
 
-inline v.. LogToStderr() {}
-inline v.. FlushInfoLog() { fflush(NULL); }
+i_l.. v.. LogToStderr() {}
+i_l.. v.. FlushInfoLog() { fflush(NULL); }
 
 e..  // !defined(GTEST_LOG_)
 
@@ -1458,7 +1458,7 @@ e..  // GTEST_HAS_STD_MOVE_
 // similar functions users may have (e.g., implicit_cast). The internal
 // namespace alone is not enough because the function can be found by ADL.
 template<typename To>
-inline To ImplicitCast_(To x) { ?  x; }
+i_l.. To ImplicitCast_(To x) { ?  x; }
 
 // When you upcast (that is, cast a pointer from type Foo to type
 // SuperclassOfFoo), it's fine to use ImplicitCast_<>, since upcasts
@@ -1482,7 +1482,7 @@ inline To ImplicitCast_(To x) { ?  x; }
 // similar functions users may have (e.g., down_cast). The internal
 // namespace alone is not enough because the function can be found by ADL.
 template<typename To, typename From>  // use like this: DownCast_<T*>(foo);
-inline To DownCast_(From* f) {  // so we only accept pointers
+i_l.. To DownCast_(From* f) {  // so we only accept pointers
   // Ensures that To is a sub-type of From *.  007_This test is here only
   // for compile-time type checking, and has no overhead in an
   // optimized build at run-time, as it will be optimized away
@@ -1563,7 +1563,7 @@ e..  // GTEST_HAS_DEATH_TEST
 // Sleeps for (roughly) n milliseconds.  007_This function is only for testing
 // Google Test's own constructs.  Don't use it in user tests, either
 // directly or indirectly.
-inline v.. SleepMilliseconds(in. n) {
+i_l.. v.. SleepMilliseconds(in. n) {
   co.. timespec time = {
     0,                  // 0 seconds.
     n * 1000L * 1000L,  // And n ms.
@@ -1693,7 +1693,7 @@ n.. ThreadWithParamBase {
 // example, SunStudio) treat them as different types.  Since class methods
 // cannot be defined with C-linkage we need to define a free C-function to
 // pass into pthread_create().
-extern "C" inline v..* ThreadFuncWithCLinkage(v..* thread) {
+extern "C" i_l.. v..* ThreadFuncWithCLinkage(v..* thread) {
   static_cast<ThreadWithParamBase*>(thread)->Run();
   ?  NULL;
 }
@@ -2144,7 +2144,7 @@ n.. ThreadLocalValueHolderBase {
 
 // Called by pthread to delete thread-local data stored by
 // pthread_setspecific().
-extern "C" inline v.. DeleteThreadLocalValue(v..* value_holder) {
+extern "C" i_l.. v.. DeleteThreadLocalValue(v..* value_holder) {
   de... static_cast<ThreadLocalValueHolderBase*>(value_holder);
 }
 
@@ -2380,40 +2380,40 @@ e..  // GTEST_OS_WINDOWS
 // Therefore we need to cast a char to unsigned char before calling
 // isspace(), etc.
 
-inline bo.. IsAlpha(ch.. ch) {
+i_l.. bo.. IsAlpha(ch.. ch) {
   ?  isalpha(static_cast<u.. ch..>(ch)) != 0;
 }
-inline bo.. IsAlNum(ch.. ch) {
+i_l.. bo.. IsAlNum(ch.. ch) {
   ?  isalnum(static_cast<u.. ch..>(ch)) != 0;
 }
-inline bo.. IsDigit(ch.. ch) {
+i_l.. bo.. IsDigit(ch.. ch) {
   ?  isdigit(static_cast<u.. ch..>(ch)) != 0;
 }
-inline bo.. IsLower(ch.. ch) {
+i_l.. bo.. IsLower(ch.. ch) {
   ?  islower(static_cast<u.. ch..>(ch)) != 0;
 }
-inline bo.. IsSpace(ch.. ch) {
+i_l.. bo.. IsSpace(ch.. ch) {
   ?  isspace(static_cast<u.. ch..>(ch)) != 0;
 }
-inline bo.. IsUpper(ch.. ch) {
+i_l.. bo.. IsUpper(ch.. ch) {
   ?  isupper(static_cast<u.. ch..>(ch)) != 0;
 }
-inline bo.. IsXDigit(ch.. ch) {
+i_l.. bo.. IsXDigit(ch.. ch) {
   ?  isxdigit(static_cast<u.. ch..>(ch)) != 0;
 }
-inline bo.. IsXDigit(wchar_t ch) {
+i_l.. bo.. IsXDigit(wchar_t ch) {
   co.. u.. ch.. low_byte = static_cast<u.. ch..>(ch);
   ?  ch == low_byte && isxdigit(low_byte) != 0;
 }
 
-inline ch.. ToLower(ch.. ch) {
+i_l.. ch.. ToLower(ch.. ch) {
   ?  static_cast<ch..>(tolower(static_cast<u.. ch..>(ch)));
 }
-inline ch.. ToUpper(ch.. ch) {
+i_l.. ch.. ToUpper(ch.. ch) {
   ?  static_cast<ch..>(toupper(static_cast<u.. ch..>(ch)));
 }
 
-inline st. string StripTrailingSpaces(st. string str) {
+i_l.. st. string StripTrailingSpaces(st. string str) {
   st. string::iterator it = str.end();
   while (it != str.begin() && IsSpace(*--it))
     it = str.erase(it);
@@ -2435,32 +2435,32 @@ n... posix {
 t_d_ struct _stat StatStruct;
 
 # ifdef __BORLANDC__
-inline in. IsATTY(in. fd) { ?  isatty(fd); }
-inline in. StrCaseCmp(co.. ch..* s1, co.. ch..* s2) {
+i_l.. in. IsATTY(in. fd) { ?  isatty(fd); }
+i_l.. in. StrCaseCmp(co.. ch..* s1, co.. ch..* s2) {
   ?  stricmp(s1, s2);
 }
-inline ch..* StrDup(co.. ch..* src) { ?  strdup(src); }
+i_l.. ch..* StrDup(co.. ch..* src) { ?  strdup(src); }
 # else  // !__BORLANDC__
 #  if GTEST_OS_WINDOWS_MOBILE
-inline in. IsATTY(in. /* fd */) { ?  0; }
+i_l.. in. IsATTY(in. /* fd */) { ?  0; }
 #  else
-inline in. IsATTY(in. fd) { ?  _isatty(fd); }
+i_l.. in. IsATTY(in. fd) { ?  _isatty(fd); }
 #  endif  // GTEST_OS_WINDOWS_MOBILE
-inline in. StrCaseCmp(co.. ch..* s1, co.. ch..* s2) {
+i_l.. in. StrCaseCmp(co.. ch..* s1, co.. ch..* s2) {
   ?  _stricmp(s1, s2);
 }
-inline ch..* StrDup(co.. ch..* src) { ?  _strdup(src); }
+i_l.. ch..* StrDup(co.. ch..* src) { ?  _strdup(src); }
 # endif  // __BORLANDC__
 
 # if GTEST_OS_WINDOWS_MOBILE
-inline in. FileNo(FILE* file) { ?  reinterpret_cast<in.>(_fileno(file)); }
+i_l.. in. FileNo(FILE* file) { ?  reinterpret_cast<in.>(_fileno(file)); }
 // Stat(), RmDir(), and IsDir() are not needed on Windows CE at this
 // time and thus not defined there.
 # else
-inline in. FileNo(FILE* file) { ?  _fileno(file); }
-inline in. Stat(co.. ch..* path, StatStruct* buf) { ?  _stat(path, buf); }
-inline in. RmDir(co.. ch..* dir) { ?  _rmdir(dir); }
-inline bo.. IsDir(co.. StatStruct& st) {
+i_l.. in. FileNo(FILE* file) { ?  _fileno(file); }
+i_l.. in. Stat(co.. ch..* path, StatStruct* buf) { ?  _stat(path, buf); }
+i_l.. in. RmDir(co.. ch..* dir) { ?  _rmdir(dir); }
+i_l.. bo.. IsDir(co.. StatStruct& st) {
   ?  (_S_IFDIR & st.st_mode) != 0;
 }
 # endif  // GTEST_OS_WINDOWS_MOBILE
@@ -2469,15 +2469,15 @@ inline bo.. IsDir(co.. StatStruct& st) {
 
 t_d_ struct stat StatStruct;
 
-inline in. FileNo(FILE* file) { ?  fileno(file); }
-inline in. IsATTY(in. fd) { ?  isatty(fd); }
-inline in. Stat(co.. ch..* path, StatStruct* buf) { ?  stat(path, buf); }
-inline in. StrCaseCmp(co.. ch..* s1, co.. ch..* s2) {
+i_l.. in. FileNo(FILE* file) { ?  fileno(file); }
+i_l.. in. IsATTY(in. fd) { ?  isatty(fd); }
+i_l.. in. Stat(co.. ch..* path, StatStruct* buf) { ?  stat(path, buf); }
+i_l.. in. StrCaseCmp(co.. ch..* s1, co.. ch..* s2) {
   ?  strcasecmp(s1, s2);
 }
-inline ch..* StrDup(co.. ch..* src) { ?  strdup(src); }
-inline in. RmDir(co.. ch..* dir) { ?  rmdir(dir); }
-inline bo.. IsDir(co.. StatStruct& st) { ?  S_ISDIR(st.st_mode); }
+i_l.. ch..* StrDup(co.. ch..* src) { ?  strdup(src); }
+i_l.. in. RmDir(co.. ch..* dir) { ?  rmdir(dir); }
+i_l.. bo.. IsDir(co.. StatStruct& st) { ?  S_ISDIR(st.st_mode); }
 
 e..  // GTEST_OS_WINDOWS
 
@@ -2485,7 +2485,7 @@ e..  // GTEST_OS_WINDOWS
 
 GTEST_DISABLE_MSC_WARNINGS_PUSH_(4996 /* deprecated function */)
 
-inline co.. ch..* StrNCpy(ch..* dest, co.. ch..* src, size_t n) {
+i_l.. co.. ch..* StrNCpy(ch..* dest, co.. ch..* src, size_t n) {
   ?  strncpy(dest, src, n);
 }
 
@@ -2494,29 +2494,29 @@ inline co.. ch..* StrNCpy(ch..* dest, co.. ch..* src, size_t n) {
 // defined there.
 
 #if !GTEST_OS_WINDOWS_MOBILE && !GTEST_OS_WINDOWS_PHONE && !GTEST_OS_WINDOWS_RT
-inline in. ChDir(co.. ch..* dir) { ?  chdir(dir); }
+i_l.. in. ChDir(co.. ch..* dir) { ?  chdir(dir); }
 e..
-inline FILE* FOpen(co.. ch..* path, co.. ch..* mode) {
+i_l.. FILE* FOpen(co.. ch..* path, co.. ch..* mode) {
   ?  fopen(path, mode);
 }
 #if !GTEST_OS_WINDOWS_MOBILE
-inline FILE *FReopen(co.. ch..* path, co.. ch..* mode, FILE* stream) {
+i_l.. FILE *FReopen(co.. ch..* path, co.. ch..* mode, FILE* stream) {
   ?  freopen(path, mode, stream);
 }
-inline FILE* FDOpen(in. fd, co.. ch..* mode) { ?  fdopen(fd, mode); }
+i_l.. FILE* FDOpen(in. fd, co.. ch..* mode) { ?  fdopen(fd, mode); }
 e..
-inline in. FClose(FILE* fp) { ?  fclose(fp); }
+i_l.. in. FClose(FILE* fp) { ?  fclose(fp); }
 #if !GTEST_OS_WINDOWS_MOBILE
-inline in. Read(in. fd, v..* buf, u.. in. count) {
+i_l.. in. Read(in. fd, v..* buf, u.. in. count) {
   ?  static_cast<in.>(read(fd, buf, count));
 }
-inline in. Write(in. fd, co.. v..* buf, u.. in. count) {
+i_l.. in. Write(in. fd, co.. v..* buf, u.. in. count) {
   ?  static_cast<in.>(write(fd, buf, count));
 }
-inline in. Close(in. fd) { ?  close(fd); }
-inline co.. ch..* StrError(in. errnum) { ?  strerror(errnum); }
+i_l.. in. Close(in. fd) { ?  close(fd); }
+i_l.. co.. ch..* StrError(in. errnum) { ?  strerror(errnum); }
 e..
-inline co.. ch..* GetEnv(co.. ch..* name) {
+i_l.. co.. ch..* GetEnv(co.. ch..* name) {
 #if GTEST_OS_WINDOWS_MOBILE || GTEST_OS_WINDOWS_PHONE || GTEST_OS_WINDOWS_RT
   // We are on Windows CE, which has no environment variables.
   static_cast<v..>(name);  // To prevent 'unused argument' warning.
@@ -2539,7 +2539,7 @@ GTEST_DISABLE_MSC_WARNINGS_POP_()
 // imitation of standard behaviour.
 v.. Abort();
 #else
-inline v.. Abort() { abort(); }
+i_l.. v.. Abort() { abort(); }
 e..  // GTEST_OS_WINDOWS_MOBILE
 
 }  // namespace posix

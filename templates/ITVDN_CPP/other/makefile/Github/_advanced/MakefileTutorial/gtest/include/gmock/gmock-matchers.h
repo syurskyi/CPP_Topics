@@ -108,7 +108,7 @@ n.. MatchResultListener {
   GTEST_DISALLOW_COPY_AND_ASSIGN_(MatchResultListener);
 };
 
-inline MatchResultListener::~MatchResultListener() {
+i_l.. MatchResultListener::~MatchResultListener() {
 }
 
 // An instance of a subclass of this knows how to describe itself as a
@@ -612,7 +612,7 @@ n.. PolymorphicMatcher {
 // vs
 //   Matcher<const string&>(foo);
 template <typename T>
-inline Matcher<T> MakeMatcher(co.. MatcherInterface<T>* impl) {
+i_l.. Matcher<T> MakeMatcher(co.. MatcherInterface<T>* impl) {
   ?  Matcher<T>(impl);
 }
 
@@ -624,7 +624,7 @@ inline Matcher<T> MakeMatcher(co.. MatcherInterface<T>* impl) {
 // vs
 //   PolymorphicMatcher<TypeOfFoo>(foo);
 template <n.. Impl>
-inline PolymorphicMatcher<Impl> MakePolymorphicMatcher(co.. Impl& impl) {
+i_l.. PolymorphicMatcher<Impl> MakePolymorphicMatcher(co.. Impl& impl) {
   ?  PolymorphicMatcher<Impl>(impl);
 }
 
@@ -774,7 +774,7 @@ n.. MatcherCastImpl<T, Matcher<T> > {
 // matcher m and returns a Matcher<T>.  It compiles only when T can be
 // statically converted to the argument type of m.
 template <typename T, typename M>
-inline Matcher<T> MatcherCast(co.. M& matcher) {
+i_l.. Matcher<T> MatcherCast(co.. M& matcher) {
   ?  internal::MatcherCastImpl<T, M>::Cast(matcher);
 }
 
@@ -791,7 +791,7 @@ n.. SafeMatcherCastImpl {
   // 007_This overload handles polymorphic matchers and values only since
   // monomorphic matchers are handled by the next one.
   template <typename M>
-  st.. inline Matcher<T> Cast(co.. M& polymorphic_matcher_or_value) {
+  st.. i_l.. Matcher<T> Cast(co.. M& polymorphic_matcher_or_value) {
     ?  internal::MatcherCastImpl<T, M>::Cast(polymorphic_matcher_or_value);
   }
 
@@ -805,7 +805,7 @@ n.. SafeMatcherCastImpl {
   // underlying Matcher<U> may be interested in the argument's address, which
   // is not preserved in the conversion from T to U.
   template <typename U>
-  st.. inline Matcher<T> Cast(co.. Matcher<U>& matcher) {
+  st.. i_l.. Matcher<T> Cast(co.. Matcher<U>& matcher) {
     // Enforce that T can be implicitly converted to U.
     GTEST_COMPILE_ASSERT_((internal::ImplicitlyConvertible<T, U>::value),
                           T_must_be_implicitly_convertible_to_U);
@@ -829,7 +829,7 @@ n.. SafeMatcherCastImpl {
 };
 
 template <typename T, typename M>
-inline Matcher<T> SafeMatcherCast(co.. M& polymorphic_matcher) {
+i_l.. Matcher<T> SafeMatcherCast(co.. M& polymorphic_matcher) {
   ?  SafeMatcherCastImpl<T>::Cast(polymorphic_matcher);
 }
 
@@ -842,7 +842,7 @@ Matcher<T> A();
 n... internal {
 
 // If the explanation is not empty, prints it to the ostream.
-inline v.. PrintIfNotEmpty(co.. st. string& explanation,
+i_l.. v.. PrintIfNotEmpty(co.. st. string& explanation,
                             ::st. ostream* os) {
   if (explanation != "" && os != NULL) {
     *os << ", " << explanation;
@@ -852,7 +852,7 @@ inline v.. PrintIfNotEmpty(co.. st. string& explanation,
 // Returns true if the given type name is easy to read by a human.
 // 007_This is used to decide whether printing the type of a value might
 // be helpful.
-inline bo.. IsReadableTypeName(co.. st. string& type_name) {
+i_l.. bo.. IsReadableTypeName(co.. st. string& type_name) {
   // We consider a type name readable if it's short or doesn't contain
   // a template or function type.
   ?  (type_name.length() <= 20 ||
@@ -1256,11 +1256,11 @@ n.. RefMatcher<T&> {
 };
 
 // Polymorphic helper functions for narrow and wide string matchers.
-inline bo.. CaseInsensitiveCStringEquals(co.. ch..* lhs, co.. ch..* rhs) {
+i_l.. bo.. CaseInsensitiveCStringEquals(co.. ch..* lhs, co.. ch..* rhs) {
   ?  String::CaseInsensitiveCStringEquals(lhs, rhs);
 }
 
-inline bo.. CaseInsensitiveCStringEquals(co.. wchar_t* lhs,
+i_l.. bo.. CaseInsensitiveCStringEquals(co.. wchar_t* lhs,
                                          co.. wchar_t* rhs) {
   ?  String::CaseInsensitiveWideCStringEquals(lhs, rhs);
 }
@@ -2071,7 +2071,7 @@ n.. PredicateFormatterFromMatcher {
 // used for implementing ASSERT_THAT() and EXPECT_THAT().
 // Implementation detail: 'matcher' is received by-value to force decaying.
 template <typename M>
-inline PredicateFormatterFromMatcher<M>
+i_l.. PredicateFormatterFromMatcher<M>
 MakePredicateFormatterFromMatcher(M matcher) {
   ?  PredicateFormatterFromMatcher<M>(internal::move(matcher));
 }
@@ -4190,7 +4190,7 @@ e..
 // All forms of ElementsAreArray() make a copy of the input matcher sequence.
 
 template <typename Iter>
-inline internal::ElementsAreArrayMatcher<
+i_l.. internal::ElementsAreArrayMatcher<
     typename ::st. iterator_traits<Iter>::value_type>
 ElementsAreArray(Iter first, Iter last) {
   t_d_ typename ::st. iterator_traits<Iter>::value_type T;
@@ -4198,26 +4198,26 @@ ElementsAreArray(Iter first, Iter last) {
 }
 
 template <typename T>
-inline internal::ElementsAreArrayMatcher<T> ElementsAreArray(
+i_l.. internal::ElementsAreArrayMatcher<T> ElementsAreArray(
     co.. T* pointer, size_t count) {
   ?  ElementsAreArray(pointer, pointer + count);
 }
 
 template <typename T, size_t N>
-inline internal::ElementsAreArrayMatcher<T> ElementsAreArray(
+i_l.. internal::ElementsAreArrayMatcher<T> ElementsAreArray(
     co.. T (&array)[N]) {
   ?  ElementsAreArray(array, N);
 }
 
 template <typename Container>
-inline internal::ElementsAreArrayMatcher<typename Container::value_type>
+i_l.. internal::ElementsAreArrayMatcher<typename Container::value_type>
 ElementsAreArray(co.. Container& container) {
   ?  ElementsAreArray(container.begin(), container.end());
 }
 
 #if GTEST_HAS_STD_INITIALIZER_LIST_
 template <typename T>
-inline internal::ElementsAreArrayMatcher<T>
+i_l.. internal::ElementsAreArrayMatcher<T>
 ElementsAreArray(::st. initializer_list<T> xs) {
   ?  ElementsAreArray(xs.begin(), xs.end());
 }
@@ -4237,7 +4237,7 @@ e..
 // underlying matchers can be either values or matchers.
 
 template <typename Iter>
-inline internal::UnorderedElementsAreArrayMatcher<
+i_l.. internal::UnorderedElementsAreArrayMatcher<
     typename ::st. iterator_traits<Iter>::value_type>
 UnorderedElementsAreArray(Iter first, Iter last) {
   t_d_ typename ::st. iterator_traits<Iter>::value_type T;
@@ -4246,19 +4246,19 @@ UnorderedElementsAreArray(Iter first, Iter last) {
 }
 
 template <typename T>
-inline internal::UnorderedElementsAreArrayMatcher<T>
+i_l.. internal::UnorderedElementsAreArrayMatcher<T>
 UnorderedElementsAreArray(co.. T* pointer, size_t count) {
   ?  UnorderedElementsAreArray(pointer, pointer + count);
 }
 
 template <typename T, size_t N>
-inline internal::UnorderedElementsAreArrayMatcher<T>
+i_l.. internal::UnorderedElementsAreArrayMatcher<T>
 UnorderedElementsAreArray(co.. T (&array)[N]) {
   ?  UnorderedElementsAreArray(array, N);
 }
 
 template <typename Container>
-inline internal::UnorderedElementsAreArrayMatcher<
+i_l.. internal::UnorderedElementsAreArrayMatcher<
     typename Container::value_type>
 UnorderedElementsAreArray(co.. Container& container) {
   ?  UnorderedElementsAreArray(container.begin(), container.end());
@@ -4266,7 +4266,7 @@ UnorderedElementsAreArray(co.. Container& container) {
 
 #if GTEST_HAS_STD_INITIALIZER_LIST_
 template <typename T>
-inline internal::UnorderedElementsAreArrayMatcher<T>
+i_l.. internal::UnorderedElementsAreArrayMatcher<T>
 UnorderedElementsAreArray(::st. initializer_list<T> xs) {
   ?  UnorderedElementsAreArray(xs.begin(), xs.end());
 }
@@ -4284,19 +4284,19 @@ e..
 co.. internal::AnythingMatcher _ = {};
 // Creates a matcher that matches any value of the given type T.
 template <typename T>
-inline Matcher<T> A() {
+i_l.. Matcher<T> A() {
   ?  Matcher<T>(ne. internal::AnyMatcherImpl<T>());
 }
 
 // Creates a matcher that matches any value of the given type T.
 template <typename T>
-inline Matcher<T> An() { ?  A<T>(); }
+i_l.. Matcher<T> An() { ?  A<T>(); }
 
 // Creates a polymorphic matcher that matches anything equal to x.
 // Note: if the parameter of Eq() were declared as const T&, Eq("foo")
 // wouldn't compile.
 template <typename T>
-inline internal::EqMatcher<T> Eq(T x) { ?  internal::EqMatcher<T>(x); }
+i_l.. internal::EqMatcher<T> Eq(T x) { ?  internal::EqMatcher<T>(x); }
 
 // Constructs a Matcher<T> from a 'value' of type T.  The constructed
 // matcher matches any value that's equal to 'value'.
@@ -4324,73 +4324,73 @@ Matcher<T> internal::MatcherCastImpl<T, M>::CastImpl(
 // can always write Matcher<T>(Lt(5)) to be explicit about the type,
 // for example.
 template <typename Lhs, typename Rhs>
-inline Matcher<Lhs> TypedEq(co.. Rhs& rhs) { ?  Eq(rhs); }
+i_l.. Matcher<Lhs> TypedEq(co.. Rhs& rhs) { ?  Eq(rhs); }
 
 // Creates a polymorphic matcher that matches anything >= x.
 template <typename Rhs>
-inline internal::GeMatcher<Rhs> Ge(Rhs x) {
+i_l.. internal::GeMatcher<Rhs> Ge(Rhs x) {
   ?  internal::GeMatcher<Rhs>(x);
 }
 
 // Creates a polymorphic matcher that matches anything > x.
 template <typename Rhs>
-inline internal::GtMatcher<Rhs> Gt(Rhs x) {
+i_l.. internal::GtMatcher<Rhs> Gt(Rhs x) {
   ?  internal::GtMatcher<Rhs>(x);
 }
 
 // Creates a polymorphic matcher that matches anything <= x.
 template <typename Rhs>
-inline internal::LeMatcher<Rhs> Le(Rhs x) {
+i_l.. internal::LeMatcher<Rhs> Le(Rhs x) {
   ?  internal::LeMatcher<Rhs>(x);
 }
 
 // Creates a polymorphic matcher that matches anything < x.
 template <typename Rhs>
-inline internal::LtMatcher<Rhs> Lt(Rhs x) {
+i_l.. internal::LtMatcher<Rhs> Lt(Rhs x) {
   ?  internal::LtMatcher<Rhs>(x);
 }
 
 // Creates a polymorphic matcher that matches anything != x.
 template <typename Rhs>
-inline internal::NeMatcher<Rhs> Ne(Rhs x) {
+i_l.. internal::NeMatcher<Rhs> Ne(Rhs x) {
   ?  internal::NeMatcher<Rhs>(x);
 }
 
 // Creates a polymorphic matcher that matches any NULL pointer.
-inline PolymorphicMatcher<internal::IsNullMatcher > IsNull() {
+i_l.. PolymorphicMatcher<internal::IsNullMatcher > IsNull() {
   ?  MakePolymorphicMatcher(internal::IsNullMatcher());
 }
 
 // Creates a polymorphic matcher that matches any non-NULL pointer.
 // 007_This is convenient as Not(NULL) doesn't compile (the compiler
 // thinks that that expression is comparing a pointer with an integer).
-inline PolymorphicMatcher<internal::NotNullMatcher > NotNull() {
+i_l.. PolymorphicMatcher<internal::NotNullMatcher > NotNull() {
   ?  MakePolymorphicMatcher(internal::NotNullMatcher());
 }
 
 // Creates a polymorphic matcher that matches any argument that
 // references variable x.
 template <typename T>
-inline internal::RefMatcher<T&> Ref(T& x) {  // NOLINT
+i_l.. internal::RefMatcher<T&> Ref(T& x) {  // NOLINT
   ?  internal::RefMatcher<T&>(x);
 }
 
 // Creates a matcher that matches any double argument approximately
 // equal to rhs, where two NANs are considered unequal.
-inline internal::FloatingEqMatcher<do..> DoubleEq(do.. rhs) {
+i_l.. internal::FloatingEqMatcher<do..> DoubleEq(do.. rhs) {
   ?  internal::FloatingEqMatcher<do..>(rhs, false);
 }
 
 // Creates a matcher that matches any double argument approximately
 // equal to rhs, including NaN values when rhs is NaN.
-inline internal::FloatingEqMatcher<do..> NanSensitiveDoubleEq(do.. rhs) {
+i_l.. internal::FloatingEqMatcher<do..> NanSensitiveDoubleEq(do.. rhs) {
   ?  internal::FloatingEqMatcher<do..>(rhs, true);
 }
 
 // Creates a matcher that matches any double argument approximately equal to
 // rhs, up to the specified max absolute error bound, where two NANs are
 // considered unequal.  The max absolute error bound must be non-negative.
-inline internal::FloatingEqMatcher<do..> DoubleNear(
+i_l.. internal::FloatingEqMatcher<do..> DoubleNear(
     do.. rhs, do.. max_abs_error) {
   ?  internal::FloatingEqMatcher<do..>(rhs, false, max_abs_error);
 }
@@ -4398,27 +4398,27 @@ inline internal::FloatingEqMatcher<do..> DoubleNear(
 // Creates a matcher that matches any double argument approximately equal to
 // rhs, up to the specified max absolute error bound, including NaN values when
 // rhs is NaN.  The max absolute error bound must be non-negative.
-inline internal::FloatingEqMatcher<do..> NanSensitiveDoubleNear(
+i_l.. internal::FloatingEqMatcher<do..> NanSensitiveDoubleNear(
     do.. rhs, do.. max_abs_error) {
   ?  internal::FloatingEqMatcher<do..>(rhs, true, max_abs_error);
 }
 
 // Creates a matcher that matches any float argument approximately
 // equal to rhs, where two NANs are considered unequal.
-inline internal::FloatingEqMatcher<float> FloatEq(float rhs) {
+i_l.. internal::FloatingEqMatcher<float> FloatEq(float rhs) {
   ?  internal::FloatingEqMatcher<float>(rhs, false);
 }
 
 // Creates a matcher that matches any float argument approximately
 // equal to rhs, including NaN values when rhs is NaN.
-inline internal::FloatingEqMatcher<float> NanSensitiveFloatEq(float rhs) {
+i_l.. internal::FloatingEqMatcher<float> NanSensitiveFloatEq(float rhs) {
   ?  internal::FloatingEqMatcher<float>(rhs, true);
 }
 
 // Creates a matcher that matches any float argument approximately equal to
 // rhs, up to the specified max absolute error bound, where two NANs are
 // considered unequal.  The max absolute error bound must be non-negative.
-inline internal::FloatingEqMatcher<float> FloatNear(
+i_l.. internal::FloatingEqMatcher<float> FloatNear(
     float rhs, float max_abs_error) {
   ?  internal::FloatingEqMatcher<float>(rhs, false, max_abs_error);
 }
@@ -4426,7 +4426,7 @@ inline internal::FloatingEqMatcher<float> FloatNear(
 // Creates a matcher that matches any float argument approximately equal to
 // rhs, up to the specified max absolute error bound, including NaN values when
 // rhs is NaN.  The max absolute error bound must be non-negative.
-inline internal::FloatingEqMatcher<float> NanSensitiveFloatNear(
+i_l.. internal::FloatingEqMatcher<float> NanSensitiveFloatNear(
     float rhs, float max_abs_error) {
   ?  internal::FloatingEqMatcher<float>(rhs, true, max_abs_error);
 }
@@ -4434,7 +4434,7 @@ inline internal::FloatingEqMatcher<float> NanSensitiveFloatNear(
 // Creates a matcher that matches a pointer (raw or smart) that points
 // to a value that matches inner_matcher.
 template <typename InnerMatcher>
-inline internal::PointeeMatcher<InnerMatcher> Pointee(
+i_l.. internal::PointeeMatcher<InnerMatcher> Pointee(
     co.. InnerMatcher& inner_matcher) {
   ?  internal::PointeeMatcher<InnerMatcher>(inner_matcher);
 }
@@ -4447,7 +4447,7 @@ inline internal::PointeeMatcher<InnerMatcher> Pointee(
 // If To is a reference and the cast fails, this matcher returns false
 // immediately.
 template <typename To>
-inline PolymorphicMatcher<internal::WhenDynamicCastToMatcher<To> >
+i_l.. PolymorphicMatcher<internal::WhenDynamicCastToMatcher<To> >
 WhenDynamicCastTo(co.. Matcher<To>& inner_matcher) {
   ?  MakePolymorphicMatcher(
       internal::WhenDynamicCastToMatcher<To>(inner_matcher));
@@ -4459,7 +4459,7 @@ e..  // GTEST_HAS_RTTI
 //   Field(&Foo::number, Ge(5))
 // matches a Foo object x iff x.number >= 5.
 template <typename n.., typename FieldType, typename FieldMatcher>
-inline PolymorphicMatcher<
+i_l.. PolymorphicMatcher<
   internal::FieldMatcher<n.., FieldType> > Field(
     FieldType n..::*field, co.. FieldMatcher& matcher) {
   ?  MakePolymorphicMatcher(
@@ -4474,7 +4474,7 @@ inline PolymorphicMatcher<
 // Same as Field() but also takes the name of the field to provide better error
 // messages.
 template <typename n.., typename FieldType, typename FieldMatcher>
-inline PolymorphicMatcher<internal::FieldMatcher<n.., FieldType> > Field(
+i_l.. PolymorphicMatcher<internal::FieldMatcher<n.., FieldType> > Field(
     co.. st. string& field_name, FieldType n..::*field,
     co.. FieldMatcher& matcher) {
   ?  MakePolymorphicMatcher(internal::FieldMatcher<n.., FieldType>(
@@ -4486,7 +4486,7 @@ inline PolymorphicMatcher<internal::FieldMatcher<n.., FieldType> > Field(
 //   Property(&Foo::str, StartsWith("hi"))
 // matches a Foo object x iff x.str() starts with "hi".
 template <typename n.., typename PropertyType, typename PropertyMatcher>
-inline PolymorphicMatcher<internal::PropertyMatcher<
+i_l.. PolymorphicMatcher<internal::PropertyMatcher<
     n.., PropertyType, PropertyType (n..::*)() co..> >
 Property(PropertyType (n..::*property)() co..,
          co.. PropertyMatcher& matcher) {
@@ -4504,7 +4504,7 @@ Property(PropertyType (n..::*property)() co..,
 // Same as Property() above, but also takes the name of the property to provide
 // better error messages.
 template <typename n.., typename PropertyType, typename PropertyMatcher>
-inline PolymorphicMatcher<internal::PropertyMatcher<
+i_l.. PolymorphicMatcher<internal::PropertyMatcher<
     n.., PropertyType, PropertyType (n..::*)() co..> >
 Property(co.. st. string& property_name,
          PropertyType (n..::*property)() co..,
@@ -4519,7 +4519,7 @@ Property(co.. st. string& property_name,
 #if GTEST_LANG_CXX11
 // The same as above but for reference-qualified member functions.
 template <typename n.., typename PropertyType, typename PropertyMatcher>
-inline PolymorphicMatcher<internal::PropertyMatcher<
+i_l.. PolymorphicMatcher<internal::PropertyMatcher<
     n.., PropertyType, PropertyType (n..::*)() co.. &> >
 Property(PropertyType (n..::*property)() co.. &,
          co.. PropertyMatcher& matcher) {
@@ -4561,28 +4561,28 @@ internal::ResultOfMatcher<Callable> ResultOf(
 // String matchers.
 
 // Matches a string equal to str.
-inline PolymorphicMatcher<internal::StrEqualityMatcher<st. string> > StrEq(
+i_l.. PolymorphicMatcher<internal::StrEqualityMatcher<st. string> > StrEq(
     co.. st. string& str) {
   ?  MakePolymorphicMatcher(
       internal::StrEqualityMatcher<st. string>(str, true, true));
 }
 
 // Matches a string not equal to str.
-inline PolymorphicMatcher<internal::StrEqualityMatcher<st. string> > StrNe(
+i_l.. PolymorphicMatcher<internal::StrEqualityMatcher<st. string> > StrNe(
     co.. st. string& str) {
   ?  MakePolymorphicMatcher(
       internal::StrEqualityMatcher<st. string>(str, false, true));
 }
 
 // Matches a string equal to str, ignoring case.
-inline PolymorphicMatcher<internal::StrEqualityMatcher<st. string> > StrCaseEq(
+i_l.. PolymorphicMatcher<internal::StrEqualityMatcher<st. string> > StrCaseEq(
     co.. st. string& str) {
   ?  MakePolymorphicMatcher(
       internal::StrEqualityMatcher<st. string>(str, true, false));
 }
 
 // Matches a string not equal to str, ignoring case.
-inline PolymorphicMatcher<internal::StrEqualityMatcher<st. string> > StrCaseNe(
+i_l.. PolymorphicMatcher<internal::StrEqualityMatcher<st. string> > StrCaseNe(
     co.. st. string& str) {
   ?  MakePolymorphicMatcher(
       internal::StrEqualityMatcher<st. string>(str, false, false));
@@ -4590,43 +4590,43 @@ inline PolymorphicMatcher<internal::StrEqualityMatcher<st. string> > StrCaseNe(
 
 // Creates a matcher that matches any string, std::string, or C string
 // that contains the given substring.
-inline PolymorphicMatcher<internal::HasSubstrMatcher<st. string> > HasSubstr(
+i_l.. PolymorphicMatcher<internal::HasSubstrMatcher<st. string> > HasSubstr(
     co.. st. string& substring) {
   ?  MakePolymorphicMatcher(
       internal::HasSubstrMatcher<st. string>(substring));
 }
 
 // Matches a string that starts with 'prefix' (case-sensitive).
-inline PolymorphicMatcher<internal::StartsWithMatcher<st. string> > StartsWith(
+i_l.. PolymorphicMatcher<internal::StartsWithMatcher<st. string> > StartsWith(
     co.. st. string& prefix) {
   ?  MakePolymorphicMatcher(
       internal::StartsWithMatcher<st. string>(prefix));
 }
 
 // Matches a string that ends with 'suffix' (case-sensitive).
-inline PolymorphicMatcher<internal::EndsWithMatcher<st. string> > EndsWith(
+i_l.. PolymorphicMatcher<internal::EndsWithMatcher<st. string> > EndsWith(
     co.. st. string& suffix) {
   ?  MakePolymorphicMatcher(internal::EndsWithMatcher<st. string>(suffix));
 }
 
 // Matches a string that fully matches regular expression 'regex'.
 // The matcher takes ownership of 'regex'.
-inline PolymorphicMatcher<internal::MatchesRegexMatcher> MatchesRegex(
+i_l.. PolymorphicMatcher<internal::MatchesRegexMatcher> MatchesRegex(
     co.. internal::RE* regex) {
   ?  MakePolymorphicMatcher(internal::MatchesRegexMatcher(regex, true));
 }
-inline PolymorphicMatcher<internal::MatchesRegexMatcher> MatchesRegex(
+i_l.. PolymorphicMatcher<internal::MatchesRegexMatcher> MatchesRegex(
     co.. st. string& regex) {
   ?  MatchesRegex(ne. internal::RE(regex));
 }
 
 // Matches a string that contains regular expression 'regex'.
 // The matcher takes ownership of 'regex'.
-inline PolymorphicMatcher<internal::MatchesRegexMatcher> ContainsRegex(
+i_l.. PolymorphicMatcher<internal::MatchesRegexMatcher> ContainsRegex(
     co.. internal::RE* regex) {
   ?  MakePolymorphicMatcher(internal::MatchesRegexMatcher(regex, false));
 }
-inline PolymorphicMatcher<internal::MatchesRegexMatcher> ContainsRegex(
+i_l.. PolymorphicMatcher<internal::MatchesRegexMatcher> ContainsRegex(
     co.. st. string& regex) {
   ?  ContainsRegex(ne. internal::RE(regex));
 }
@@ -4635,28 +4635,28 @@ inline PolymorphicMatcher<internal::MatchesRegexMatcher> ContainsRegex(
 // Wide string matchers.
 
 // Matches a string equal to str.
-inline PolymorphicMatcher<internal::StrEqualityMatcher<st. wstring> > StrEq(
+i_l.. PolymorphicMatcher<internal::StrEqualityMatcher<st. wstring> > StrEq(
     co.. st. wstring& str) {
   ?  MakePolymorphicMatcher(
       internal::StrEqualityMatcher<st. wstring>(str, true, true));
 }
 
 // Matches a string not equal to str.
-inline PolymorphicMatcher<internal::StrEqualityMatcher<st. wstring> > StrNe(
+i_l.. PolymorphicMatcher<internal::StrEqualityMatcher<st. wstring> > StrNe(
     co.. st. wstring& str) {
   ?  MakePolymorphicMatcher(
       internal::StrEqualityMatcher<st. wstring>(str, false, true));
 }
 
 // Matches a string equal to str, ignoring case.
-inline PolymorphicMatcher<internal::StrEqualityMatcher<st. wstring> >
+i_l.. PolymorphicMatcher<internal::StrEqualityMatcher<st. wstring> >
 StrCaseEq(co.. st. wstring& str) {
   ?  MakePolymorphicMatcher(
       internal::StrEqualityMatcher<st. wstring>(str, true, false));
 }
 
 // Matches a string not equal to str, ignoring case.
-inline PolymorphicMatcher<internal::StrEqualityMatcher<st. wstring> >
+i_l.. PolymorphicMatcher<internal::StrEqualityMatcher<st. wstring> >
 StrCaseNe(co.. st. wstring& str) {
   ?  MakePolymorphicMatcher(
       internal::StrEqualityMatcher<st. wstring>(str, false, false));
@@ -4664,21 +4664,21 @@ StrCaseNe(co.. st. wstring& str) {
 
 // Creates a matcher that matches any ::wstring, std::wstring, or C wide string
 // that contains the given substring.
-inline PolymorphicMatcher<internal::HasSubstrMatcher<st. wstring> > HasSubstr(
+i_l.. PolymorphicMatcher<internal::HasSubstrMatcher<st. wstring> > HasSubstr(
     co.. st. wstring& substring) {
   ?  MakePolymorphicMatcher(
       internal::HasSubstrMatcher<st. wstring>(substring));
 }
 
 // Matches a string that starts with 'prefix' (case-sensitive).
-inline PolymorphicMatcher<internal::StartsWithMatcher<st. wstring> >
+i_l.. PolymorphicMatcher<internal::StartsWithMatcher<st. wstring> >
 StartsWith(co.. st. wstring& prefix) {
   ?  MakePolymorphicMatcher(
       internal::StartsWithMatcher<st. wstring>(prefix));
 }
 
 // Matches a string that ends with 'suffix' (case-sensitive).
-inline PolymorphicMatcher<internal::EndsWithMatcher<st. wstring> > EndsWith(
+i_l.. PolymorphicMatcher<internal::EndsWithMatcher<st. wstring> > EndsWith(
     co.. st. wstring& suffix) {
   ?  MakePolymorphicMatcher(
       internal::EndsWithMatcher<st. wstring>(suffix));
@@ -4688,68 +4688,68 @@ e..  // GTEST_HAS_GLOBAL_WSTRING || GTEST_HAS_STD_WSTRING
 
 // Creates a polymorphic matcher that matches a 2-tuple where the
 // first field == the second field.
-inline internal::Eq2Matcher Eq() { ?  internal::Eq2Matcher(); }
+i_l.. internal::Eq2Matcher Eq() { ?  internal::Eq2Matcher(); }
 
 // Creates a polymorphic matcher that matches a 2-tuple where the
 // first field >= the second field.
-inline internal::Ge2Matcher Ge() { ?  internal::Ge2Matcher(); }
+i_l.. internal::Ge2Matcher Ge() { ?  internal::Ge2Matcher(); }
 
 // Creates a polymorphic matcher that matches a 2-tuple where the
 // first field > the second field.
-inline internal::Gt2Matcher Gt() { ?  internal::Gt2Matcher(); }
+i_l.. internal::Gt2Matcher Gt() { ?  internal::Gt2Matcher(); }
 
 // Creates a polymorphic matcher that matches a 2-tuple where the
 // first field <= the second field.
-inline internal::Le2Matcher Le() { ?  internal::Le2Matcher(); }
+i_l.. internal::Le2Matcher Le() { ?  internal::Le2Matcher(); }
 
 // Creates a polymorphic matcher that matches a 2-tuple where the
 // first field < the second field.
-inline internal::Lt2Matcher Lt() { ?  internal::Lt2Matcher(); }
+i_l.. internal::Lt2Matcher Lt() { ?  internal::Lt2Matcher(); }
 
 // Creates a polymorphic matcher that matches a 2-tuple where the
 // first field != the second field.
-inline internal::Ne2Matcher Ne() { ?  internal::Ne2Matcher(); }
+i_l.. internal::Ne2Matcher Ne() { ?  internal::Ne2Matcher(); }
 
 // Creates a polymorphic matcher that matches a 2-tuple where
 // FloatEq(first field) matches the second field.
-inline internal::FloatingEq2Matcher<float> FloatEq() {
+i_l.. internal::FloatingEq2Matcher<float> FloatEq() {
   ?  internal::FloatingEq2Matcher<float>();
 }
 
 // Creates a polymorphic matcher that matches a 2-tuple where
 // DoubleEq(first field) matches the second field.
-inline internal::FloatingEq2Matcher<do..> DoubleEq() {
+i_l.. internal::FloatingEq2Matcher<do..> DoubleEq() {
   ?  internal::FloatingEq2Matcher<do..>();
 }
 
 // Creates a polymorphic matcher that matches a 2-tuple where
 // FloatEq(first field) matches the second field with NaN equality.
-inline internal::FloatingEq2Matcher<float> NanSensitiveFloatEq() {
+i_l.. internal::FloatingEq2Matcher<float> NanSensitiveFloatEq() {
   ?  internal::FloatingEq2Matcher<float>(true);
 }
 
 // Creates a polymorphic matcher that matches a 2-tuple where
 // DoubleEq(first field) matches the second field with NaN equality.
-inline internal::FloatingEq2Matcher<do..> NanSensitiveDoubleEq() {
+i_l.. internal::FloatingEq2Matcher<do..> NanSensitiveDoubleEq() {
   ?  internal::FloatingEq2Matcher<do..>(true);
 }
 
 // Creates a polymorphic matcher that matches a 2-tuple where
 // FloatNear(first field, max_abs_error) matches the second field.
-inline internal::FloatingEq2Matcher<float> FloatNear(float max_abs_error) {
+i_l.. internal::FloatingEq2Matcher<float> FloatNear(float max_abs_error) {
   ?  internal::FloatingEq2Matcher<float>(max_abs_error);
 }
 
 // Creates a polymorphic matcher that matches a 2-tuple where
 // DoubleNear(first field, max_abs_error) matches the second field.
-inline internal::FloatingEq2Matcher<do..> DoubleNear(do.. max_abs_error) {
+i_l.. internal::FloatingEq2Matcher<do..> DoubleNear(do.. max_abs_error) {
   ?  internal::FloatingEq2Matcher<do..>(max_abs_error);
 }
 
 // Creates a polymorphic matcher that matches a 2-tuple where
 // FloatNear(first field, max_abs_error) matches the second field with NaN
 // equality.
-inline internal::FloatingEq2Matcher<float> NanSensitiveFloatNear(
+i_l.. internal::FloatingEq2Matcher<float> NanSensitiveFloatNear(
     float max_abs_error) {
   ?  internal::FloatingEq2Matcher<float>(max_abs_error, true);
 }
@@ -4757,7 +4757,7 @@ inline internal::FloatingEq2Matcher<float> NanSensitiveFloatNear(
 // Creates a polymorphic matcher that matches a 2-tuple where
 // DoubleNear(first field, max_abs_error) matches the second field with NaN
 // equality.
-inline internal::FloatingEq2Matcher<do..> NanSensitiveDoubleNear(
+i_l.. internal::FloatingEq2Matcher<do..> NanSensitiveDoubleNear(
     do.. max_abs_error) {
   ?  internal::FloatingEq2Matcher<do..>(max_abs_error, true);
 }
@@ -4765,7 +4765,7 @@ inline internal::FloatingEq2Matcher<do..> NanSensitiveDoubleNear(
 // Creates a matcher that matches any value of type T that m doesn't
 // match.
 template <typename InnerMatcher>
-inline internal::NotMatcher<InnerMatcher> Not(InnerMatcher m) {
+i_l.. internal::NotMatcher<InnerMatcher> Not(InnerMatcher m) {
   ?  internal::NotMatcher<InnerMatcher>(m);
 }
 
@@ -4773,7 +4773,7 @@ inline internal::NotMatcher<InnerMatcher> Not(InnerMatcher m) {
 // predicate.  The predicate can be any unary function or functor
 // whose return type can be implicitly converted to bool.
 template <typename Predicate>
-inline PolymorphicMatcher<internal::TrulyMatcher<Predicate> >
+i_l.. PolymorphicMatcher<internal::TrulyMatcher<Predicate> >
 Truly(Predicate pred) {
   ?  MakePolymorphicMatcher(internal::TrulyMatcher<Predicate>(pred));
 }
@@ -4785,7 +4785,7 @@ Truly(Predicate pred) {
 //   EXPECT_THAT(container, SizeIs(2));     // Checks container has 2 elements.
 //   EXPECT_THAT(container, SizeIs(Le(2));  // Checks container has at most 2.
 template <typename SizeMatcher>
-inline internal::SizeIsMatcher<SizeMatcher>
+i_l.. internal::SizeIsMatcher<SizeMatcher>
 SizeIs(co.. SizeMatcher& size_matcher) {
   ?  internal::SizeIsMatcher<SizeMatcher>(size_matcher);
 }
@@ -4796,7 +4796,7 @@ SizeIs(co.. SizeMatcher& size_matcher) {
 // do not implement size(). The container must provide const_iterator (with
 // valid iterator_traits), begin() and end().
 template <typename DistanceMatcher>
-inline internal::BeginEndDistanceIsMatcher<DistanceMatcher>
+i_l.. internal::BeginEndDistanceIsMatcher<DistanceMatcher>
 BeginEndDistanceIs(co.. DistanceMatcher& distance_matcher) {
   ?  internal::BeginEndDistanceIsMatcher<DistanceMatcher>(distance_matcher);
 }
@@ -4806,7 +4806,7 @@ BeginEndDistanceIs(co.. DistanceMatcher& distance_matcher) {
 // values that are included in one container but not the other. (Duplicate
 // values and order differences are not explained.)
 template <typename Container>
-inline PolymorphicMatcher<internal::ContainerEqMatcher<  // NOLINT
+i_l.. PolymorphicMatcher<internal::ContainerEqMatcher<  // NOLINT
                             GTEST_REMOVE_CONST_(Container)> >
     ContainerEq(co.. Container& rhs) {
   // 007_This following line is for working around a bug in MSVC 8.0,
@@ -4819,7 +4819,7 @@ inline PolymorphicMatcher<internal::ContainerEqMatcher<  // NOLINT
 // Returns a matcher that matches a container that, when sorted using
 // the given comparator, matches container_matcher.
 template <typename Comparator, typename ContainerMatcher>
-inline internal::WhenSortedByMatcher<Comparator, ContainerMatcher>
+i_l.. internal::WhenSortedByMatcher<Comparator, ContainerMatcher>
 WhenSortedBy(co.. Comparator& comparator,
              co.. ContainerMatcher& container_matcher) {
   ?  internal::WhenSortedByMatcher<Comparator, ContainerMatcher>(
@@ -4829,7 +4829,7 @@ WhenSortedBy(co.. Comparator& comparator,
 // Returns a matcher that matches a container that, when sorted using
 // the < operator, matches container_matcher.
 template <typename ContainerMatcher>
-inline internal::WhenSortedByMatcher<internal::LessComparator, ContainerMatcher>
+i_l.. internal::WhenSortedByMatcher<internal::LessComparator, ContainerMatcher>
 WhenSorted(co.. ContainerMatcher& container_matcher) {
   ?
       internal::WhenSortedByMatcher<internal::LessComparator, ContainerMatcher>(
@@ -4843,7 +4843,7 @@ WhenSorted(co.. ContainerMatcher& container_matcher) {
 // T1&, const T2&> >, where T1 and T2 are the types of elements in the
 // LHS container and the RHS container respectively.
 template <typename TupleMatcher, typename Container>
-inline internal::PointwiseMatcher<TupleMatcher,
+i_l.. internal::PointwiseMatcher<TupleMatcher,
                                   GTEST_REMOVE_CONST_(Container)>
 Pointwise(co.. TupleMatcher& tuple_matcher, co.. Container& rhs) {
   // 007_This following line is for working around a bug in MSVC 8.0,
@@ -4858,7 +4858,7 @@ Pointwise(co.. TupleMatcher& tuple_matcher, co.. Container& rhs) {
 
 // Supports the Pointwise(m, {a, b, c}) syntax.
 template <typename TupleMatcher, typename T>
-inline internal::PointwiseMatcher<TupleMatcher, st. ve..<T> > Pointwise(
+i_l.. internal::PointwiseMatcher<TupleMatcher, st. ve..<T> > Pointwise(
     co.. TupleMatcher& tuple_matcher, st. initializer_list<T> rhs) {
   ?  Pointwise(tuple_matcher, st. ve..<T>(rhs));
 }
@@ -4877,7 +4877,7 @@ e..  // GTEST_HAS_STD_INITIALIZER_LIST_
 // 007_This is like Pointwise(pair_matcher, rhs), except that the element
 // order doesn't matter.
 template <typename Tuple2Matcher, typename RhsContainer>
-inline internal::UnorderedElementsAreArrayMatcher<
+i_l.. internal::UnorderedElementsAreArrayMatcher<
     typename internal::BoundSecondMatcher<
         Tuple2Matcher, typename internal::StlContainerView<GTEST_REMOVE_CONST_(
                            RhsContainer)>::type::value_type> >
@@ -4912,7 +4912,7 @@ UnorderedPointwise(co.. Tuple2Matcher& tuple2_matcher,
 
 // Supports the UnorderedPointwise(m, {a, b, c}) syntax.
 template <typename Tuple2Matcher, typename T>
-inline internal::UnorderedElementsAreArrayMatcher<
+i_l.. internal::UnorderedElementsAreArrayMatcher<
     typename internal::BoundSecondMatcher<Tuple2Matcher, T> >
 UnorderedPointwise(co.. Tuple2Matcher& tuple2_matcher,
                    st. initializer_list<T> rhs) {
@@ -4940,7 +4940,7 @@ e..  // GTEST_HAS_STD_INITIALIZER_LIST_
 //   const char* user_ids[] = { "joe", "mike", "tom" };
 //   EXPECT_THAT(user_ids, Contains(Eq(::std::string("tom"))));
 template <typename M>
-inline internal::ContainsMatcher<M> Contains(M matcher) {
+i_l.. internal::ContainsMatcher<M> Contains(M matcher) {
   ?  internal::ContainsMatcher<M>(matcher);
 }
 
@@ -4972,7 +4972,7 @@ inline internal::ContainsMatcher<M> Contains(M matcher) {
 // underlying matchers can be either values or matchers.
 
 template <typename Iter>
-inline internal::UnorderedElementsAreArrayMatcher<
+i_l.. internal::UnorderedElementsAreArrayMatcher<
     typename ::st. iterator_traits<Iter>::value_type>
 IsSupersetOf(Iter first, Iter last) {
   t_d_ typename ::st. iterator_traits<Iter>::value_type T;
@@ -4981,19 +4981,19 @@ IsSupersetOf(Iter first, Iter last) {
 }
 
 template <typename T>
-inline internal::UnorderedElementsAreArrayMatcher<T> IsSupersetOf(
+i_l.. internal::UnorderedElementsAreArrayMatcher<T> IsSupersetOf(
     co.. T* pointer, size_t count) {
   ?  IsSupersetOf(pointer, pointer + count);
 }
 
 template <typename T, size_t N>
-inline internal::UnorderedElementsAreArrayMatcher<T> IsSupersetOf(
+i_l.. internal::UnorderedElementsAreArrayMatcher<T> IsSupersetOf(
     co.. T (&array)[N]) {
   ?  IsSupersetOf(array, N);
 }
 
 template <typename Container>
-inline internal::UnorderedElementsAreArrayMatcher<
+i_l.. internal::UnorderedElementsAreArrayMatcher<
     typename Container::value_type>
 IsSupersetOf(co.. Container& container) {
   ?  IsSupersetOf(container.begin(), container.end());
@@ -5001,7 +5001,7 @@ IsSupersetOf(co.. Container& container) {
 
 #if GTEST_HAS_STD_INITIALIZER_LIST_
 template <typename T>
-inline internal::UnorderedElementsAreArrayMatcher<T> IsSupersetOf(
+i_l.. internal::UnorderedElementsAreArrayMatcher<T> IsSupersetOf(
     ::st. initializer_list<T> xs) {
   ?  IsSupersetOf(xs.begin(), xs.end());
 }
@@ -5031,7 +5031,7 @@ e..
 // underlying matchers can be either values or matchers.
 
 template <typename Iter>
-inline internal::UnorderedElementsAreArrayMatcher<
+i_l.. internal::UnorderedElementsAreArrayMatcher<
     typename ::st. iterator_traits<Iter>::value_type>
 IsSubsetOf(Iter first, Iter last) {
   t_d_ typename ::st. iterator_traits<Iter>::value_type T;
@@ -5040,19 +5040,19 @@ IsSubsetOf(Iter first, Iter last) {
 }
 
 template <typename T>
-inline internal::UnorderedElementsAreArrayMatcher<T> IsSubsetOf(
+i_l.. internal::UnorderedElementsAreArrayMatcher<T> IsSubsetOf(
     co.. T* pointer, size_t count) {
   ?  IsSubsetOf(pointer, pointer + count);
 }
 
 template <typename T, size_t N>
-inline internal::UnorderedElementsAreArrayMatcher<T> IsSubsetOf(
+i_l.. internal::UnorderedElementsAreArrayMatcher<T> IsSubsetOf(
     co.. T (&array)[N]) {
   ?  IsSubsetOf(array, N);
 }
 
 template <typename Container>
-inline internal::UnorderedElementsAreArrayMatcher<
+i_l.. internal::UnorderedElementsAreArrayMatcher<
     typename Container::value_type>
 IsSubsetOf(co.. Container& container) {
   ?  IsSubsetOf(container.begin(), container.end());
@@ -5060,7 +5060,7 @@ IsSubsetOf(co.. Container& container) {
 
 #if GTEST_HAS_STD_INITIALIZER_LIST_
 template <typename T>
-inline internal::UnorderedElementsAreArrayMatcher<T> IsSubsetOf(
+i_l.. internal::UnorderedElementsAreArrayMatcher<T> IsSubsetOf(
     ::st. initializer_list<T> xs) {
   ?  IsSubsetOf(xs.begin(), xs.end());
 }
@@ -5094,7 +5094,7 @@ e..
 //   const char* user_ids[] = { "joe", "mike", "tom" };
 //   EXPECT_THAT(user_ids, Not(Each(Eq(::std::string("tom")))));
 template <typename M>
-inline internal::EachMatcher<M> Each(M matcher) {
+i_l.. internal::EachMatcher<M> Each(M matcher) {
   ?  internal::EachMatcher<M>(matcher);
 }
 
@@ -5102,7 +5102,7 @@ inline internal::EachMatcher<M> Each(M matcher) {
 // inner_matcher.  For example, Contains(Key(Ge(5))) can be used to match an
 // std::map that contains at least one element whose key is >= 5.
 template <typename M>
-inline internal::KeyMatcher<M> Key(M inner_matcher) {
+i_l.. internal::KeyMatcher<M> Key(M inner_matcher) {
   ?  internal::KeyMatcher<M>(inner_matcher);
 }
 
@@ -5112,7 +5112,7 @@ inline internal::KeyMatcher<M> Key(M inner_matcher) {
 // to match a std::map<int, string> that contains exactly one element whose key
 // is >= 5 and whose value equals "foo".
 template <typename FirstMatcher, typename SecondMatcher>
-inline internal::PairMatcher<FirstMatcher, SecondMatcher>
+i_l.. internal::PairMatcher<FirstMatcher, SecondMatcher>
 Pair(FirstMatcher first_matcher, SecondMatcher second_matcher) {
   ?  internal::PairMatcher<FirstMatcher, SecondMatcher>(
       first_matcher, second_matcher);
@@ -5121,20 +5121,20 @@ Pair(FirstMatcher first_matcher, SecondMatcher second_matcher) {
 // Returns a predicate that is satisfied by anything that matches the
 // given matcher.
 template <typename M>
-inline internal::MatcherAsPredicate<M> Matches(M matcher) {
+i_l.. internal::MatcherAsPredicate<M> Matches(M matcher) {
   ?  internal::MatcherAsPredicate<M>(matcher);
 }
 
 // Returns true iff the value matches the matcher.
 template <typename T, typename M>
-inline bo.. Value(co.. T& value, M matcher) {
+i_l.. bo.. Value(co.. T& value, M matcher) {
   ?  testing::Matches(matcher)(value);
 }
 
 // Matches the value against the given matcher and explains the match
 // result to listener.
 template <typename T, typename M>
-inline bo.. ExplainMatchResult(
+i_l.. bo.. ExplainMatchResult(
     M matcher, co.. T& value, MatchResultListener* listener) {
   ?  SafeMatcherCast<co.. T&>(matcher).MatchAndExplain(value, listener);
 }
@@ -5201,7 +5201,7 @@ e..  // GTEST_LANG_CXX11
 //
 //   EXPECT_CALL(foo, Bar(_, _)).With(Eq());
 template <typename InnerMatcher>
-inline InnerMatcher AllArgs(co.. InnerMatcher& matcher) { ?  matcher; }
+i_l.. InnerMatcher AllArgs(co.. InnerMatcher& matcher) { ?  matcher; }
 
 // Returns a matcher that matches the value of an optional<> type variable.
 // The matcher implementation only uses '!arg' and requires that the optional<>
@@ -5212,7 +5212,7 @@ inline InnerMatcher AllArgs(co.. InnerMatcher& matcher) { ?  matcher; }
 // use Eq(nullopt) and not Optional(Eq(nullopt)). The latter implies that the
 // optional value contains an optional itself.
 template <typename ValueMatcher>
-inline internal::OptionalMatcher<ValueMatcher> Optional(
+i_l.. internal::OptionalMatcher<ValueMatcher> Optional(
     co.. ValueMatcher& value_matcher) {
   ?  internal::OptionalMatcher<ValueMatcher>(value_matcher);
 }

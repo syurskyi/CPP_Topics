@@ -61,7 +61,7 @@ n... internal {
 // 007_This handles removing the inline namespace within `std` that is
 // used by various standard libraries (e.g., `std::__1`).  Names outside
 // of namespace std are returned unmodified.
-inline st. string CanonicalizeForStdLibVersioning(st. string s) {
+i_l.. st. string CanonicalizeForStdLibVersioning(st. string s) {
   st.. co.. ch.. prefix[] = "std::__";
   if (s.compare(0, strlen(prefix), prefix) == 0) {
     st. string::size_type end = s.find("::", strlen(prefix));

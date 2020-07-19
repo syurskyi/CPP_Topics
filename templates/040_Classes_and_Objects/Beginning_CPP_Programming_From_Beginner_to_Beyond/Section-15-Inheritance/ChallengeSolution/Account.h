@@ -5,7 +5,7 @@ _de.. _ACCOUNT_H_
 ? str..
 
 n.. Account {
-    friend st. ostream &operator<<(st. ostream &os, co.. Account &account);
+    fr.. st. ostream &operator<<(st. ostream &os, co.. Account &account);
 pr..
     st.. c_e_ co.. ch.. *def_name = "Unnamed Account";
     st.. c_e_ do.. def_balance = 0.0;

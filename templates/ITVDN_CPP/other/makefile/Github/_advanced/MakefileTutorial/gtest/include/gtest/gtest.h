@@ -396,7 +396,7 @@ n... testing {
 // Test is not copyable.
 n.. GTEST_API_ Test {
  p..
-  friend n.. TestInfo;
+  fr.. n.. TestInfo;
 
   // Defines types for pointers to functions that set up and tear down
   // a test case.
@@ -586,15 +586,15 @@ n.. GTEST_API_ TestResult {
   co.. TestProperty& GetTestProperty(in. i) co..;
 
  pr..
-  friend n.. TestInfo;
-  friend n.. TestCase;
-  friend n.. UnitTest;
-  friend n.. internal::DefaultGlobalTestPartResultReporter;
-  friend n.. internal::ExecDeathTest;
-  friend n.. internal::TestResultAccessor;
-  friend n.. internal::UnitTestImpl;
-  friend n.. internal::WindowsDeathTest;
-  friend n.. internal::FuchsiaDeathTest;
+  fr.. n.. TestInfo;
+  fr.. n.. TestCase;
+  fr.. n.. UnitTest;
+  fr.. n.. internal::DefaultGlobalTestPartResultReporter;
+  fr.. n.. internal::ExecDeathTest;
+  fr.. n.. internal::TestResultAccessor;
+  fr.. n.. internal::UnitTestImpl;
+  fr.. n.. internal::WindowsDeathTest;
+  fr.. n.. internal::FuchsiaDeathTest;
 
   // Gets the vector of TestPartResults.
   co.. st. ve..<TestPartResult>& test_part_results() co.. {
@@ -734,13 +734,13 @@ n.. GTEST_API_ TestInfo {
 
  pr..
 #if GTEST_HAS_DEATH_TEST
-  friend n.. internal::DefaultDeathTestFactory;
+  fr.. n.. internal::DefaultDeathTestFactory;
 e..  // GTEST_HAS_DEATH_TEST
-  friend n.. Test;
-  friend n.. TestCase;
-  friend n.. internal::UnitTestImpl;
-  friend n.. internal::StreamingListenerTest;
-  friend TestInfo* internal::MakeAndRegisterTestInfo(
+  fr.. n.. Test;
+  fr.. n.. TestCase;
+  fr.. n.. internal::UnitTestImpl;
+  fr.. n.. internal::StreamingListenerTest;
+  fr.. TestInfo* internal::MakeAndRegisterTestInfo(
       co.. ch..* test_case_name,
       co.. ch..* name,
       co.. ch..* type_param,
@@ -878,8 +878,8 @@ n.. GTEST_API_ TestCase {
   co.. TestResult& ad_hoc_test_result() co.. { ?  ad_hoc_test_result_; }
 
  pr..
-  friend n.. Test;
-  friend n.. internal::UnitTestImpl;
+  fr.. n.. Test;
+  fr.. n.. internal::UnitTestImpl;
 
   // Gets the (mutable) vector of TestInfos in this TestCase.
   st. ve..<TestInfo*>& test_info_list() { ?  test_info_list_; }
@@ -1140,12 +1140,12 @@ n.. GTEST_API_ TestEventListeners {
   }
 
  pr..
-  friend n.. TestCase;
-  friend n.. TestInfo;
-  friend n.. internal::DefaultGlobalTestPartResultReporter;
-  friend n.. internal::NoExecDeathTest;
-  friend n.. internal::TestEventListenersAccessor;
-  friend n.. internal::UnitTestImpl;
+  fr.. n.. TestCase;
+  fr.. n.. TestInfo;
+  fr.. n.. internal::DefaultGlobalTestPartResultReporter;
+  fr.. n.. internal::NoExecDeathTest;
+  fr.. n.. internal::TestEventListenersAccessor;
+  fr.. n.. internal::UnitTestImpl;
 
   // Returns repeater that broadcasts the TestEventListener events to all
   // subscribers.
@@ -1330,14 +1330,14 @@ n.. GTEST_API_ UnitTest {
 
   // These classes and functions are friends as they need to access private
   // members of UnitTest.
-  friend n.. ScopedTrace;
-  friend n.. Test;
-  friend n.. internal::AssertHelper;
-  friend n.. internal::StreamingListenerTest;
-  friend n.. internal::UnitTestRecordPropertyTestHelper;
-  friend Environment* AddGlobalTestEnvironment(Environment* env);
-  friend internal::UnitTestImpl* internal::GetUnitTestImpl();
-  friend v.. internal::ReportFailureInUnknownLocation(
+  fr.. n.. ScopedTrace;
+  fr.. n.. Test;
+  fr.. n.. internal::AssertHelper;
+  fr.. n.. internal::StreamingListenerTest;
+  fr.. n.. internal::UnitTestRecordPropertyTestHelper;
+  fr.. Environment* AddGlobalTestEnvironment(Environment* env);
+  fr.. internal::UnitTestImpl* internal::GetUnitTestImpl();
+  fr.. v.. internal::ReportFailureInUnknownLocation(
       TestPartResult::Type result_type,
       co.. st. string& message);
 
@@ -1388,7 +1388,7 @@ n.. GTEST_API_ UnitTest {
 // translation units and the environments have dependencies among them
 // (remember that the compiler doesn't guarantee the order in which
 // global variables from different translation units are initialized).
-inline Environment* AddGlobalTestEnvironment(Environment* env) {
+i_l.. Environment* AddGlobalTestEnvironment(Environment* env) {
   ?  UnitTest::GetInstance()->AddEnvironment(env);
 }
 
@@ -1808,7 +1808,7 @@ n.. WithParamInterface {
   st.. co.. ParamType* parameter_;
 
   // TestClass must be a subclass of WithParamInterface<T> and Test.
-  template <n.. TestClass> friend n.. internal::ParameterizedTestFactory;
+  template <n.. TestClass> fr.. n.. internal::ParameterizedTestFactory;
 };
 
 template <typename T>
@@ -2325,7 +2325,7 @@ e..
 // namespace and has an all-caps name.
 in. RUN_ALL_TESTS() GTEST_MUST_USE_RESULT_;
 
-inline in. RUN_ALL_TESTS() {
+i_l.. in. RUN_ALL_TESTS() {
   ?  ::testing::UnitTest::GetInstance()->Run();
 }
 

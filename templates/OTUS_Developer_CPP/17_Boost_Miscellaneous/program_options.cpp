@@ -10,7 +10,7 @@ v.. set_bulk(size_t bulk) {
 }
 
 in. main(in. argc, c.. c.. *argv[]) {
-    try {
+    ___ {
         po::options_description desc{"Options"}sy.. pause
         desc.add_options()
                 ("help,h", "007_This screen")
@@ -28,7 +28,7 @@ in. main(in. argc, c.. c.. *argv[]) {
         ____ __ (vm.count("bulk"))
             st. c__ __  "bulk: " __  vm["bulk"].as<size_t>() __  st. e..
     }
-    catch (c.. st. exception &e) {
+    c.. (c.. st. exception &e) {
         st. cerr __  e.what() __  st. e..
     }
 }

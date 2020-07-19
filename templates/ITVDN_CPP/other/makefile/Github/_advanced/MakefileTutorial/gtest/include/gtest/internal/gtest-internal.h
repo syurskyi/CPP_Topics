@@ -393,9 +393,9 @@ n.. FloatingPoint {
 // We cannot use std::numeric_limits<T>::max() as it clashes with the max()
 // macro defined by <windows.h>.
 template <>
-inline float FloatingPoint<float>::Max() { ?  FLT_MAX; }
+i_l.. float FloatingPoint<float>::Max() { ?  FLT_MAX; }
 template <>
-inline do.. FloatingPoint<do..>::Max() { ?  DBL_MAX; }
+i_l.. do.. FloatingPoint<do..>::Max() { ?  DBL_MAX; }
 
 // Typedefs the instances of the FloatingPoint template class that we
 // care to use.
@@ -574,7 +574,7 @@ n.. GTEST_API_ TypedTestCasePState {
 
 // Skips to the first non-space char after the first comma in 'str';
 // returns NULL if no comma is found in 'str'.
-inline co.. ch..* SkipComma(co.. ch..* str) {
+i_l.. co.. ch..* SkipComma(co.. ch..* str) {
   co.. ch..* comma = strchr(str, ',');
   if (comma == NULL) {
     ?  NULL;
@@ -585,7 +585,7 @@ inline co.. ch..* SkipComma(co.. ch..* str) {
 
 // Returns the prefix of 'str' before the first comma in it; returns
 // the entire string if it contains no comma.
-inline st. string GetPrefixUntilComma(co.. ch..* str) {
+i_l.. st. string GetPrefixUntilComma(co.. ch..* str) {
   co.. ch..* comma = strchr(str, ',');
   ?  comma == NULL ? str : st. string(str, comma);
 }
@@ -716,7 +716,7 @@ GTEST_API_ st. string GetCurrentOsStackTraceExceptTop(
 GTEST_API_ bo.. AlwaysTrue();
 
 // Always returns false.
-inline bo.. AlwaysFalse() { ?  !AlwaysTrue(); }
+i_l.. bo.. AlwaysFalse() { ?  !AlwaysTrue(); }
 
 // Helper for suppressing false warning from Clang on a const char*
 // variable declared in a conditional expression always being NULL in
@@ -997,11 +997,11 @@ bo.. ArrayEq(co.. T* lhs, size_t size, co.. U* rhs);
 
 // 007_This generic version is used when k is 0.
 template <typename T, typename U>
-inline bo.. ArrayEq(co.. T& lhs, co.. U& rhs) { ?  lhs == rhs; }
+i_l.. bo.. ArrayEq(co.. T& lhs, co.. U& rhs) { ?  lhs == rhs; }
 
 // 007_This overload is used when k >= 1.
 template <typename T, typename U, size_t N>
-inline bo.. ArrayEq(co.. T(&lhs)[N], co.. U(&rhs)[N]) {
+i_l.. bo.. ArrayEq(co.. T(&lhs)[N], co.. U(&rhs)[N]) {
   ?  internal::ArrayEq(lhs, N, rhs);
 }
 
@@ -1037,11 +1037,11 @@ v.. CopyArray(co.. T* from, size_t size, U* to);
 
 // 007_This generic version is used when k is 0.
 template <typename T, typename U>
-inline v.. CopyArray(co.. T& from, U* to) { *to = from; }
+i_l.. v.. CopyArray(co.. T& from, U* to) { *to = from; }
 
 // 007_This overload is used when k >= 1.
 template <typename T, typename U, size_t N>
-inline v.. CopyArray(co.. T(&from)[N], U(*to)[N]) {
+i_l.. v.. CopyArray(co.. T(&from)[N], U(*to)[N]) {
   internal::CopyArray(from, N, *to);
 }
 

@@ -477,50 +477,50 @@ struct AnyOfResult10 {
 // fields of it matches a_matcher.  C++ doesn't support default
 // arguments for function templates, so we have to overload it.
 template <typename InnerMatcher>
-inline internal::ArgsMatcher<InnerMatcher>
+i_l.. internal::ArgsMatcher<InnerMatcher>
 Args(co.. InnerMatcher& matcher) {
   ?  internal::ArgsMatcher<InnerMatcher>(matcher);
 }
 
 template <in. k1, typename InnerMatcher>
-inline internal::ArgsMatcher<InnerMatcher, k1>
+i_l.. internal::ArgsMatcher<InnerMatcher, k1>
 Args(co.. InnerMatcher& matcher) {
   ?  internal::ArgsMatcher<InnerMatcher, k1>(matcher);
 }
 
 template <in. k1, in. k2, typename InnerMatcher>
-inline internal::ArgsMatcher<InnerMatcher, k1, k2>
+i_l.. internal::ArgsMatcher<InnerMatcher, k1, k2>
 Args(co.. InnerMatcher& matcher) {
   ?  internal::ArgsMatcher<InnerMatcher, k1, k2>(matcher);
 }
 
 template <in. k1, in. k2, in. k3, typename InnerMatcher>
-inline internal::ArgsMatcher<InnerMatcher, k1, k2, k3>
+i_l.. internal::ArgsMatcher<InnerMatcher, k1, k2, k3>
 Args(co.. InnerMatcher& matcher) {
   ?  internal::ArgsMatcher<InnerMatcher, k1, k2, k3>(matcher);
 }
 
 template <in. k1, in. k2, in. k3, in. k4, typename InnerMatcher>
-inline internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4>
+i_l.. internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4>
 Args(co.. InnerMatcher& matcher) {
   ?  internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4>(matcher);
 }
 
 template <in. k1, in. k2, in. k3, in. k4, in. k5, typename InnerMatcher>
-inline internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4, k5>
+i_l.. internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4, k5>
 Args(co.. InnerMatcher& matcher) {
   ?  internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4, k5>(matcher);
 }
 
 template <in. k1, in. k2, in. k3, in. k4, in. k5, in. k6, typename InnerMatcher>
-inline internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4, k5, k6>
+i_l.. internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4, k5, k6>
 Args(co.. InnerMatcher& matcher) {
   ?  internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4, k5, k6>(matcher);
 }
 
 template <in. k1, in. k2, in. k3, in. k4, in. k5, in. k6, in. k7,
     typename InnerMatcher>
-inline internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4, k5, k6, k7>
+i_l.. internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4, k5, k6, k7>
 Args(co.. InnerMatcher& matcher) {
   ?  internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4, k5, k6,
       k7>(matcher);
@@ -528,7 +528,7 @@ Args(co.. InnerMatcher& matcher) {
 
 template <in. k1, in. k2, in. k3, in. k4, in. k5, in. k6, in. k7, in. k8,
     typename InnerMatcher>
-inline internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4, k5, k6, k7, k8>
+i_l.. internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4, k5, k6, k7, k8>
 Args(co.. InnerMatcher& matcher) {
   ?  internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4, k5, k6, k7,
       k8>(matcher);
@@ -536,7 +536,7 @@ Args(co.. InnerMatcher& matcher) {
 
 template <in. k1, in. k2, in. k3, in. k4, in. k5, in. k6, in. k7, in. k8,
     in. k9, typename InnerMatcher>
-inline internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4, k5, k6, k7, k8, k9>
+i_l.. internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4, k5, k6, k7, k8, k9>
 Args(co.. InnerMatcher& matcher) {
   ?  internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4, k5, k6, k7, k8,
       k9>(matcher);
@@ -544,7 +544,7 @@ Args(co.. InnerMatcher& matcher) {
 
 template <in. k1, in. k2, in. k3, in. k4, in. k5, in. k6, in. k7, in. k8,
     in. k9, in. k10, typename InnerMatcher>
-inline internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4, k5, k6, k7, k8, k9,
+i_l.. internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4, k5, k6, k7, k8, k9,
     k10>
 Args(co.. InnerMatcher& matcher) {
   ?  internal::ArgsMatcher<InnerMatcher, k1, k2, k3, k4, k5, k6, k7, k8,
@@ -565,7 +565,7 @@ Args(co.. InnerMatcher& matcher) {
 // must not be used with containers whose elements's order is
 // undefined (e.g. hash_map).
 
-inline internal::ElementsAreMatcher<
+i_l.. internal::ElementsAreMatcher<
     ::testing::tuple<> >
 ElementsAre() {
   t_d_ ::testing::tuple<> Args;
@@ -573,7 +573,7 @@ ElementsAre() {
 }
 
 template <typename T1>
-inline internal::ElementsAreMatcher<
+i_l.. internal::ElementsAreMatcher<
     ::testing::tuple<
         typename internal::DecayArray<T1>::type> >
 ElementsAre(co.. T1& e1) {
@@ -583,7 +583,7 @@ ElementsAre(co.. T1& e1) {
 }
 
 template <typename T1, typename T2>
-inline internal::ElementsAreMatcher<
+i_l.. internal::ElementsAreMatcher<
     ::testing::tuple<
         typename internal::DecayArray<T1>::type,
         typename internal::DecayArray<T2>::type> >
@@ -595,7 +595,7 @@ ElementsAre(co.. T1& e1, co.. T2& e2) {
 }
 
 template <typename T1, typename T2, typename T3>
-inline internal::ElementsAreMatcher<
+i_l.. internal::ElementsAreMatcher<
     ::testing::tuple<
         typename internal::DecayArray<T1>::type,
         typename internal::DecayArray<T2>::type,
@@ -609,7 +609,7 @@ ElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3) {
 }
 
 template <typename T1, typename T2, typename T3, typename T4>
-inline internal::ElementsAreMatcher<
+i_l.. internal::ElementsAreMatcher<
     ::testing::tuple<
         typename internal::DecayArray<T1>::type,
         typename internal::DecayArray<T2>::type,
@@ -625,7 +625,7 @@ ElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4) {
 }
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5>
-inline internal::ElementsAreMatcher<
+i_l.. internal::ElementsAreMatcher<
     ::testing::tuple<
         typename internal::DecayArray<T1>::type,
         typename internal::DecayArray<T2>::type,
@@ -645,7 +645,7 @@ ElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
     typename T6>
-inline internal::ElementsAreMatcher<
+i_l.. internal::ElementsAreMatcher<
     ::testing::tuple<
         typename internal::DecayArray<T1>::type,
         typename internal::DecayArray<T2>::type,
@@ -667,7 +667,7 @@ ElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
     typename T6, typename T7>
-inline internal::ElementsAreMatcher<
+i_l.. internal::ElementsAreMatcher<
     ::testing::tuple<
         typename internal::DecayArray<T1>::type,
         typename internal::DecayArray<T2>::type,
@@ -691,7 +691,7 @@ ElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
     typename T6, typename T7, typename T8>
-inline internal::ElementsAreMatcher<
+i_l.. internal::ElementsAreMatcher<
     ::testing::tuple<
         typename internal::DecayArray<T1>::type,
         typename internal::DecayArray<T2>::type,
@@ -718,7 +718,7 @@ ElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
     typename T6, typename T7, typename T8, typename T9>
-inline internal::ElementsAreMatcher<
+i_l.. internal::ElementsAreMatcher<
     ::testing::tuple<
         typename internal::DecayArray<T1>::type,
         typename internal::DecayArray<T2>::type,
@@ -747,7 +747,7 @@ ElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
     typename T6, typename T7, typename T8, typename T9, typename T10>
-inline internal::ElementsAreMatcher<
+i_l.. internal::ElementsAreMatcher<
     ::testing::tuple<
         typename internal::DecayArray<T1>::type,
         typename internal::DecayArray<T2>::type,
@@ -783,7 +783,7 @@ ElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
 // If you have >10 elements, consider UnorderedElementsAreArray() or
 // UnorderedPointwise() instead.
 
-inline internal::UnorderedElementsAreMatcher<
+i_l.. internal::UnorderedElementsAreMatcher<
     ::testing::tuple<> >
 UnorderedElementsAre() {
   t_d_ ::testing::tuple<> Args;
@@ -791,7 +791,7 @@ UnorderedElementsAre() {
 }
 
 template <typename T1>
-inline internal::UnorderedElementsAreMatcher<
+i_l.. internal::UnorderedElementsAreMatcher<
     ::testing::tuple<
         typename internal::DecayArray<T1>::type> >
 UnorderedElementsAre(co.. T1& e1) {
@@ -801,7 +801,7 @@ UnorderedElementsAre(co.. T1& e1) {
 }
 
 template <typename T1, typename T2>
-inline internal::UnorderedElementsAreMatcher<
+i_l.. internal::UnorderedElementsAreMatcher<
     ::testing::tuple<
         typename internal::DecayArray<T1>::type,
         typename internal::DecayArray<T2>::type> >
@@ -813,7 +813,7 @@ UnorderedElementsAre(co.. T1& e1, co.. T2& e2) {
 }
 
 template <typename T1, typename T2, typename T3>
-inline internal::UnorderedElementsAreMatcher<
+i_l.. internal::UnorderedElementsAreMatcher<
     ::testing::tuple<
         typename internal::DecayArray<T1>::type,
         typename internal::DecayArray<T2>::type,
@@ -827,7 +827,7 @@ UnorderedElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3) {
 }
 
 template <typename T1, typename T2, typename T3, typename T4>
-inline internal::UnorderedElementsAreMatcher<
+i_l.. internal::UnorderedElementsAreMatcher<
     ::testing::tuple<
         typename internal::DecayArray<T1>::type,
         typename internal::DecayArray<T2>::type,
@@ -843,7 +843,7 @@ UnorderedElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4) {
 }
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5>
-inline internal::UnorderedElementsAreMatcher<
+i_l.. internal::UnorderedElementsAreMatcher<
     ::testing::tuple<
         typename internal::DecayArray<T1>::type,
         typename internal::DecayArray<T2>::type,
@@ -863,7 +863,7 @@ UnorderedElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
     typename T6>
-inline internal::UnorderedElementsAreMatcher<
+i_l.. internal::UnorderedElementsAreMatcher<
     ::testing::tuple<
         typename internal::DecayArray<T1>::type,
         typename internal::DecayArray<T2>::type,
@@ -886,7 +886,7 @@ UnorderedElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
     typename T6, typename T7>
-inline internal::UnorderedElementsAreMatcher<
+i_l.. internal::UnorderedElementsAreMatcher<
     ::testing::tuple<
         typename internal::DecayArray<T1>::type,
         typename internal::DecayArray<T2>::type,
@@ -911,7 +911,7 @@ UnorderedElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
     typename T6, typename T7, typename T8>
-inline internal::UnorderedElementsAreMatcher<
+i_l.. internal::UnorderedElementsAreMatcher<
     ::testing::tuple<
         typename internal::DecayArray<T1>::type,
         typename internal::DecayArray<T2>::type,
@@ -938,7 +938,7 @@ UnorderedElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
     typename T6, typename T7, typename T8, typename T9>
-inline internal::UnorderedElementsAreMatcher<
+i_l.. internal::UnorderedElementsAreMatcher<
     ::testing::tuple<
         typename internal::DecayArray<T1>::type,
         typename internal::DecayArray<T2>::type,
@@ -967,7 +967,7 @@ UnorderedElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
 
 template <typename T1, typename T2, typename T3, typename T4, typename T5,
     typename T6, typename T7, typename T8, typename T9, typename T10>
-inline internal::UnorderedElementsAreMatcher<
+i_l.. internal::UnorderedElementsAreMatcher<
     ::testing::tuple<
         typename internal::DecayArray<T1>::type,
         typename internal::DecayArray<T2>::type,
@@ -1001,7 +1001,7 @@ UnorderedElementsAre(co.. T1& e1, co.. T2& e2, co.. T3& e3, co.. T4& e4,
 // sub-matchers.  AllOf is called fully qualified to prevent ADL from firing.
 
 template <typename M1, typename M2>
-inline typename internal::AllOfResult2<M1, M2>::type
+i_l.. typename internal::AllOfResult2<M1, M2>::type
 AllOf(M1 m1, M2 m2) {
   ?  typename internal::AllOfResult2<M1, M2>::type(
       m1,
@@ -1009,7 +1009,7 @@ AllOf(M1 m1, M2 m2) {
 }
 
 template <typename M1, typename M2, typename M3>
-inline typename internal::AllOfResult3<M1, M2, M3>::type
+i_l.. typename internal::AllOfResult3<M1, M2, M3>::type
 AllOf(M1 m1, M2 m2, M3 m3) {
   ?  typename internal::AllOfResult3<M1, M2, M3>::type(
       m1,
@@ -1017,7 +1017,7 @@ AllOf(M1 m1, M2 m2, M3 m3) {
 }
 
 template <typename M1, typename M2, typename M3, typename M4>
-inline typename internal::AllOfResult4<M1, M2, M3, M4>::type
+i_l.. typename internal::AllOfResult4<M1, M2, M3, M4>::type
 AllOf(M1 m1, M2 m2, M3 m3, M4 m4) {
   ?  typename internal::AllOfResult4<M1, M2, M3, M4>::type(
       ::testing::AllOf(m1, m2),
@@ -1025,7 +1025,7 @@ AllOf(M1 m1, M2 m2, M3 m3, M4 m4) {
 }
 
 template <typename M1, typename M2, typename M3, typename M4, typename M5>
-inline typename internal::AllOfResult5<M1, M2, M3, M4, M5>::type
+i_l.. typename internal::AllOfResult5<M1, M2, M3, M4, M5>::type
 AllOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5) {
   ?  typename internal::AllOfResult5<M1, M2, M3, M4, M5>::type(
       ::testing::AllOf(m1, m2),
@@ -1034,7 +1034,7 @@ AllOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5) {
 
 template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6>
-inline typename internal::AllOfResult6<M1, M2, M3, M4, M5, M6>::type
+i_l.. typename internal::AllOfResult6<M1, M2, M3, M4, M5, M6>::type
 AllOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6) {
   ?  typename internal::AllOfResult6<M1, M2, M3, M4, M5, M6>::type(
       ::testing::AllOf(m1, m2, m3),
@@ -1043,7 +1043,7 @@ AllOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6) {
 
 template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6, typename M7>
-inline typename internal::AllOfResult7<M1, M2, M3, M4, M5, M6, M7>::type
+i_l.. typename internal::AllOfResult7<M1, M2, M3, M4, M5, M6, M7>::type
 AllOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7) {
   ?  typename internal::AllOfResult7<M1, M2, M3, M4, M5, M6, M7>::type(
       ::testing::AllOf(m1, m2, m3),
@@ -1052,7 +1052,7 @@ AllOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7) {
 
 template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6, typename M7, typename M8>
-inline typename internal::AllOfResult8<M1, M2, M3, M4, M5, M6, M7, M8>::type
+i_l.. typename internal::AllOfResult8<M1, M2, M3, M4, M5, M6, M7, M8>::type
 AllOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8) {
   ?  typename internal::AllOfResult8<M1, M2, M3, M4, M5, M6, M7, M8>::type(
       ::testing::AllOf(m1, m2, m3, m4),
@@ -1061,7 +1061,7 @@ AllOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8) {
 
 template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6, typename M7, typename M8, typename M9>
-inline typename internal::AllOfResult9<M1, M2, M3, M4, M5, M6, M7, M8, M9>::type
+i_l.. typename internal::AllOfResult9<M1, M2, M3, M4, M5, M6, M7, M8, M9>::type
 AllOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8, M9 m9) {
   ?  typename internal::AllOfResult9<M1, M2, M3, M4, M5, M6, M7, M8,
       M9>::type(
@@ -1071,7 +1071,7 @@ AllOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8, M9 m9) {
 
 template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6, typename M7, typename M8, typename M9, typename M10>
-inline typename internal::AllOfResult10<M1, M2, M3, M4, M5, M6, M7, M8, M9,
+i_l.. typename internal::AllOfResult10<M1, M2, M3, M4, M5, M6, M7, M8, M9,
     M10>::type
 AllOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8, M9 m9, M10 m10) {
   ?  typename internal::AllOfResult10<M1, M2, M3, M4, M5, M6, M7, M8, M9,
@@ -1084,7 +1084,7 @@ AllOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8, M9 m9, M10 m10) {
 // sub-matchers.  AnyOf is called fully qualified to prevent ADL from firing.
 
 template <typename M1, typename M2>
-inline typename internal::AnyOfResult2<M1, M2>::type
+i_l.. typename internal::AnyOfResult2<M1, M2>::type
 AnyOf(M1 m1, M2 m2) {
   ?  typename internal::AnyOfResult2<M1, M2>::type(
       m1,
@@ -1092,7 +1092,7 @@ AnyOf(M1 m1, M2 m2) {
 }
 
 template <typename M1, typename M2, typename M3>
-inline typename internal::AnyOfResult3<M1, M2, M3>::type
+i_l.. typename internal::AnyOfResult3<M1, M2, M3>::type
 AnyOf(M1 m1, M2 m2, M3 m3) {
   ?  typename internal::AnyOfResult3<M1, M2, M3>::type(
       m1,
@@ -1100,7 +1100,7 @@ AnyOf(M1 m1, M2 m2, M3 m3) {
 }
 
 template <typename M1, typename M2, typename M3, typename M4>
-inline typename internal::AnyOfResult4<M1, M2, M3, M4>::type
+i_l.. typename internal::AnyOfResult4<M1, M2, M3, M4>::type
 AnyOf(M1 m1, M2 m2, M3 m3, M4 m4) {
   ?  typename internal::AnyOfResult4<M1, M2, M3, M4>::type(
       ::testing::AnyOf(m1, m2),
@@ -1108,7 +1108,7 @@ AnyOf(M1 m1, M2 m2, M3 m3, M4 m4) {
 }
 
 template <typename M1, typename M2, typename M3, typename M4, typename M5>
-inline typename internal::AnyOfResult5<M1, M2, M3, M4, M5>::type
+i_l.. typename internal::AnyOfResult5<M1, M2, M3, M4, M5>::type
 AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5) {
   ?  typename internal::AnyOfResult5<M1, M2, M3, M4, M5>::type(
       ::testing::AnyOf(m1, m2),
@@ -1117,7 +1117,7 @@ AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5) {
 
 template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6>
-inline typename internal::AnyOfResult6<M1, M2, M3, M4, M5, M6>::type
+i_l.. typename internal::AnyOfResult6<M1, M2, M3, M4, M5, M6>::type
 AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6) {
   ?  typename internal::AnyOfResult6<M1, M2, M3, M4, M5, M6>::type(
       ::testing::AnyOf(m1, m2, m3),
@@ -1126,7 +1126,7 @@ AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6) {
 
 template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6, typename M7>
-inline typename internal::AnyOfResult7<M1, M2, M3, M4, M5, M6, M7>::type
+i_l.. typename internal::AnyOfResult7<M1, M2, M3, M4, M5, M6, M7>::type
 AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7) {
   ?  typename internal::AnyOfResult7<M1, M2, M3, M4, M5, M6, M7>::type(
       ::testing::AnyOf(m1, m2, m3),
@@ -1135,7 +1135,7 @@ AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7) {
 
 template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6, typename M7, typename M8>
-inline typename internal::AnyOfResult8<M1, M2, M3, M4, M5, M6, M7, M8>::type
+i_l.. typename internal::AnyOfResult8<M1, M2, M3, M4, M5, M6, M7, M8>::type
 AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8) {
   ?  typename internal::AnyOfResult8<M1, M2, M3, M4, M5, M6, M7, M8>::type(
       ::testing::AnyOf(m1, m2, m3, m4),
@@ -1144,7 +1144,7 @@ AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8) {
 
 template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6, typename M7, typename M8, typename M9>
-inline typename internal::AnyOfResult9<M1, M2, M3, M4, M5, M6, M7, M8, M9>::type
+i_l.. typename internal::AnyOfResult9<M1, M2, M3, M4, M5, M6, M7, M8, M9>::type
 AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8, M9 m9) {
   ?  typename internal::AnyOfResult9<M1, M2, M3, M4, M5, M6, M7, M8,
       M9>::type(
@@ -1154,7 +1154,7 @@ AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8, M9 m9) {
 
 template <typename M1, typename M2, typename M3, typename M4, typename M5,
     typename M6, typename M7, typename M8, typename M9, typename M10>
-inline typename internal::AnyOfResult10<M1, M2, M3, M4, M5, M6, M7, M8, M9,
+i_l.. typename internal::AnyOfResult10<M1, M2, M3, M4, M5, M6, M7, M8, M9,
     M10>::type
 AnyOf(M1 m1, M2 m2, M3 m3, M4 m4, M5 m5, M6 m6, M7 m7, M8 m8, M9 m9, M10 m10) {
   ?  typename internal::AnyOfResult10<M1, M2, M3, M4, M5, M6, M7, M8, M9,
@@ -1420,7 +1420,7 @@ _de.. MATCHER(name, description)\
     }\
    pr..\
   };\
-  inline name##Matcher name() {\
+  i_l.. name##Matcher name() {\
     ?  name##Matcher();\
   }\
   template <typename arg_type>\
@@ -1472,7 +1472,7 @@ _de.. MATCHER_P(name, p0, description)\
    pr..\
   };\
   template <typename p0##_type>\
-  inline name##MatcherP<p0##_type> name(p0##_type p0) {\
+  i_l.. name##MatcherP<p0##_type> name(p0##_type p0) {\
     ?  name##MatcherP<p0##_type>(p0);\
   }\
   template <typename p0##_type>\
@@ -1529,7 +1529,7 @@ _de.. MATCHER_P2(name, p0, p1, description)\
    pr..\
   };\
   template <typename p0##_type, typename p1##_type>\
-  inline name##MatcherP2<p0##_type, p1##_type> name(p0##_type p0, \
+  i_l.. name##MatcherP2<p0##_type, p1##_type> name(p0##_type p0, \
       p1##_type p1) {\
     ?  name##MatcherP2<p0##_type, p1##_type>(p0, p1);\
   }\
@@ -1593,7 +1593,7 @@ _de.. MATCHER_P3(name, p0, p1, p2, description)\
    pr..\
   };\
   template <typename p0##_type, typename p1##_type, typename p2##_type>\
-  inline name##MatcherP3<p0##_type, p1##_type, p2##_type> name(p0##_type p0, \
+  i_l.. name##MatcherP3<p0##_type, p1##_type, p2##_type> name(p0##_type p0, \
       p1##_type p1, p2##_type p2) {\
     ?  name##MatcherP3<p0##_type, p1##_type, p2##_type>(p0, p1, p2);\
   }\
@@ -1665,7 +1665,7 @@ _de.. MATCHER_P4(name, p0, p1, p2, p3, description)\
   };\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
       typename p3##_type>\
-  inline name##MatcherP4<p0##_type, p1##_type, p2##_type, \
+  i_l.. name##MatcherP4<p0##_type, p1##_type, p2##_type, \
       p3##_type> name(p0##_type p0, p1##_type p1, p2##_type p2, \
       p3##_type p3) {\
     ?  name##MatcherP4<p0##_type, p1##_type, p2##_type, p3##_type>(p0, \
@@ -1744,7 +1744,7 @@ _de.. MATCHER_P5(name, p0, p1, p2, p3, p4, description)\
   };\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
       typename p3##_type, typename p4##_type>\
-  inline name##MatcherP5<p0##_type, p1##_type, p2##_type, p3##_type, \
+  i_l.. name##MatcherP5<p0##_type, p1##_type, p2##_type, p3##_type, \
       p4##_type> name(p0##_type p0, p1##_type p1, p2##_type p2, p3##_type p3, \
       p4##_type p4) {\
     ?  name##MatcherP5<p0##_type, p1##_type, p2##_type, p3##_type, \
@@ -1827,7 +1827,7 @@ _de.. MATCHER_P6(name, p0, p1, p2, p3, p4, p5, description)\
   };\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
       typename p3##_type, typename p4##_type, typename p5##_type>\
-  inline name##MatcherP6<p0##_type, p1##_type, p2##_type, p3##_type, \
+  i_l.. name##MatcherP6<p0##_type, p1##_type, p2##_type, p3##_type, \
       p4##_type, p5##_type> name(p0##_type p0, p1##_type p1, p2##_type p2, \
       p3##_type p3, p4##_type p4, p5##_type p5) {\
     ?  name##MatcherP6<p0##_type, p1##_type, p2##_type, p3##_type, \
@@ -1919,7 +1919,7 @@ _de.. MATCHER_P7(name, p0, p1, p2, p3, p4, p5, p6, description)\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
       typename p3##_type, typename p4##_type, typename p5##_type, \
       typename p6##_type>\
-  inline name##MatcherP7<p0##_type, p1##_type, p2##_type, p3##_type, \
+  i_l.. name##MatcherP7<p0##_type, p1##_type, p2##_type, p3##_type, \
       p4##_type, p5##_type, p6##_type> name(p0##_type p0, p1##_type p1, \
       p2##_type p2, p3##_type p3, p4##_type p4, p5##_type p5, \
       p6##_type p6) {\
@@ -2017,7 +2017,7 @@ _de.. MATCHER_P8(name, p0, p1, p2, p3, p4, p5, p6, p7, description)\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
       typename p3##_type, typename p4##_type, typename p5##_type, \
       typename p6##_type, typename p7##_type>\
-  inline name##MatcherP8<p0##_type, p1##_type, p2##_type, p3##_type, \
+  i_l.. name##MatcherP8<p0##_type, p1##_type, p2##_type, p3##_type, \
       p4##_type, p5##_type, p6##_type, p7##_type> name(p0##_type p0, \
       p1##_type p1, p2##_type p2, p3##_type p3, p4##_type p4, p5##_type p5, \
       p6##_type p6, p7##_type p7) {\
@@ -2121,7 +2121,7 @@ _de.. MATCHER_P9(name, p0, p1, p2, p3, p4, p5, p6, p7, p8, description)\
   template <typename p0##_type, typename p1##_type, typename p2##_type, \
       typename p3##_type, typename p4##_type, typename p5##_type, \
       typename p6##_type, typename p7##_type, typename p8##_type>\
-  inline name##MatcherP9<p0##_type, p1##_type, p2##_type, p3##_type, \
+  i_l.. name##MatcherP9<p0##_type, p1##_type, p2##_type, p3##_type, \
       p4##_type, p5##_type, p6##_type, p7##_type, \
       p8##_type> name(p0##_type p0, p1##_type p1, p2##_type p2, p3##_type p3, \
       p4##_type p4, p5##_type p5, p6##_type p6, p7##_type p7, \
@@ -2234,7 +2234,7 @@ _de.. MATCHER_P10(name, p0, p1, p2, p3, p4, p5, p6, p7, p8, p9, description)\
       typename p3##_type, typename p4##_type, typename p5##_type, \
       typename p6##_type, typename p7##_type, typename p8##_type, \
       typename p9##_type>\
-  inline name##MatcherP10<p0##_type, p1##_type, p2##_type, p3##_type, \
+  i_l.. name##MatcherP10<p0##_type, p1##_type, p2##_type, p3##_type, \
       p4##_type, p5##_type, p6##_type, p7##_type, p8##_type, \
       p9##_type> name(p0##_type p0, p1##_type p1, p2##_type p2, p3##_type p3, \
       p4##_type p4, p5##_type p5, p6##_type p6, p7##_type p7, p8##_type p8, \

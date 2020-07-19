@@ -1,22 +1,22 @@
-? "cat.h"
-? |i..
-
-Cat::Cat()
-{
-    st. c__ __  __PRETTY_FUNCTION__ __  "\n"sy.. pause
-}
-
-Cat::Cat(uin. paws)
-{
-    paws _ pawssy.. pause
-}
-
-Cat::~Cat()
-{
-    st. c__ __  __PRETTY_FUNCTION__ __  "\n"sy.. pause
-}
-
-v.. Cat::say()
-{
-    st. c__ __  "meow\n"sy.. pause
-}
+//? "c..
+//? |i..
+//
+//? ?
+//
+//    st. c__ __  __PRETTY_FUNCTION__ __  "\n" sy.. P...
+//
+//
+//? ? uin. paws
+//
+//    paws _ paws sy.. P...
+//
+//
+//? #?
+//
+//    st. c__ __  __PRETTY_FUNCTION__ __  "\n" sy.. P...
+//
+//
+//v.. ? say
+//
+//    st. c__ __  "meow\n" sy.. P...
+//

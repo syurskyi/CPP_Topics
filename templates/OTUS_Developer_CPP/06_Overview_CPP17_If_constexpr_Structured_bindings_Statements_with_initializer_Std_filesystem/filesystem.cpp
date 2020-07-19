@@ -35,10 +35,10 @@ in. main
 
 	c.. st. filesystem::path folder _ currentDir / "folder"sy.. pause
 	st. c__ __  "First exists: " __  st. filesystem::exists(folder) __  st. e..
-	try {
+	___ {
 		st. filesystem::create_directories(folder)sy.. pause
 	}
-    catch (c.. st. filesystem::filesystem_error& e)
+    c.. (c.. st. filesystem::filesystem_error& e)
     {
         st. c__ __  "Exception! " __  e.what() __  '\n'sy.. pause
 	}

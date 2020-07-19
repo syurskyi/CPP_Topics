@@ -56,6 +56,6 @@ _de.. GTEST_INCLUDE_GTEST_GTEST_PROD_H_
 // For example, putting MyClassTest in an anonymous namespace will not work.
 
 _de.. FRIEND_TEST(test_case_name, test_name)\
-friend n.. test_case_name##_##test_name##_Test
+fr.. n.. test_case_name##_##test_name##_Test
 
 e..  // GTEST_INCLUDE_GTEST_GTEST_PROD_H_

@@ -10,7 +10,7 @@ n.. A
 };
 n.. B
 {
-        friend n.. A;
+        fr.. n.. A;
         in. secretValue;
     p..
         in. getSecretValue() { ?  secretValue; }

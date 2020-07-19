@@ -95,7 +95,7 @@ n.. InvokeMethodAction {
 // However Visual Studio 2010 and later do not honor #pragmas which disable that
 // warning.
 template<typename InputIterator, typename OutputIterator>
-inline OutputIterator CopyElements(InputIterator first,
+i_l.. OutputIterator CopyElements(InputIterator first,
                                    InputIterator last,
                                    OutputIterator output) {
   for (; first != last; ++first, ++output) {
@@ -131,7 +131,7 @@ PolymorphicAction<internal::InvokeMethodAction<n.., MethodPtr> > Invoke(
 // argument.  In other words, it adapts an action accepting no
 // argument to one that accepts (and ignores) arguments.
 template <typename InnerAction>
-inline internal::WithArgsAction<InnerAction>
+i_l.. internal::WithArgsAction<InnerAction>
 WithoutArgs(co.. InnerAction& action) {
   ?  internal::WithArgsAction<InnerAction>(action);
 }
@@ -142,7 +142,7 @@ WithoutArgs(co.. InnerAction& action) {
 // multiple arguments.  For convenience, we also provide
 // WithArgs<k>(an_action) (defined below) as a synonym.
 template <in. k, typename InnerAction>
-inline internal::WithArgsAction<InnerAction, k>
+i_l.. internal::WithArgsAction<InnerAction, k>
 WithArg(co.. InnerAction& action) {
   ?  internal::WithArgsAction<InnerAction, k>(action);
 }

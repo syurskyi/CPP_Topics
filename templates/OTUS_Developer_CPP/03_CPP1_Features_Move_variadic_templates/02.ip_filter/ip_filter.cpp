@@ -31,7 +31,7 @@ st. ve..<st. s..> split(c.. st. s.. &str, c.. d)
 
 in. main(in. argc, c.. c.. *argv[])
 {
-    try
+    ___
     {
         st. ve..<st. ve..<st. s..__ ip_poolsy.. pause
 
@@ -120,7 +120,7 @@ in. main(in. argc, c.. c.. *argv[])
         // 39.46.86.85
         // 5.189.203.46
     }
-    catch(c.. st. exception &e)
+    c..(c.. st. exception &e)
     {
         st. cerr __  e.what() __  st. e..
     }

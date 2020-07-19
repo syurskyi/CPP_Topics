@@ -4,7 +4,7 @@ _de.. _I_PRINTABLE_H_
 
 n.. I_Printable
 {
-    friend st. ostream &operator<<(st. ostream &os, co.. I_Printable &obj);
+    fr.. st. ostream &operator<<(st. ostream &os, co.. I_Printable &obj);
 p..
     v.. v.. print(st. ostream &os) co.. = 0;
     v.. ~I_Printable() = de..

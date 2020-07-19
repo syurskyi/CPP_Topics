@@ -5,7 +5,7 @@ _de.. _CHECKING_ACCOUNT_H_
 ? "Account.h"
 
 n.. Checking_Account: pu.. Account {
-    friend st. ostream &operator<<(st. ostream &os, co.. Checking_Account &account);
+    fr.. st. ostream &operator<<(st. ostream &os, co.. Checking_Account &account);
 pr..
     st.. c_e_ co.. ch.. *def_name = "Unnamed Checking Account";
     st.. c_e_ do.. def_balance = 0.0;

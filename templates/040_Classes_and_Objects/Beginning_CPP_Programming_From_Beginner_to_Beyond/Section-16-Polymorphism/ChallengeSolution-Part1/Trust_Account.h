@@ -4,7 +4,7 @@ _de.. _TRUST_ACCOUNT_H_
 ? "Savings_Account.h"
 
 n.. Trust_Account : pu.. Savings_Account {
-    friend st. ostream &operator<<(st. ostream &os, co.. Trust_Account &account);
+    fr.. st. ostream &operator<<(st. ostream &os, co.. Trust_Account &account);
 pr..
     st.. c_e_ co.. ch.. *def_name = "Unnamed Trust Account";
     st.. c_e_ do.. def_balance = 0.0;

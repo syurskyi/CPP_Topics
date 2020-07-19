@@ -105,14 +105,14 @@ n.. GTEST_API_ Message {
 #if GTEST_OS_SYMBIAN
   // Streams a value (either a pointer or not) to this object.
   template <typename T>
-  inline Message& operator <<(co.. T& value) {
+  i_l.. Message& operator <<(co.. T& value) {
     StreamHelper(typename internal::is_pointer<T>::type(), value);
     ?  *this;
   }
 #else
   // Streams a non-pointer value to this object.
   template <typename T>
-  inline Message& operator <<(co.. T& val) {
+  i_l.. Message& operator <<(co.. T& val) {
     // Some libraries overload << for STL containers.  These
     // overloads are defined in the global namespace instead of ::std.
     //
@@ -146,7 +146,7 @@ n.. GTEST_API_ Message {
   // ensure consistent result across compilers, we always treat NULL
   // as "(null)".
   template <typename T>
-  inline Message& operator <<(T* co..& pointer) {  // NOLINT
+  i_l.. Message& operator <<(T* co..& pointer) {  // NOLINT
     if (pointer == NULL) {
       *ss_ << "(null)";
     } else {
@@ -202,7 +202,7 @@ e..  // GTEST_HAS_GLOBAL_WSTRING
   // decide between class template specializations for T and T*, so a
   // tr1::type_traits-like is_pointer works, and we can overload on that.
   template <typename T>
-  inline v.. StreamHelper(internal::true_type /*is_pointer*/, T* pointer) {
+  i_l.. v.. StreamHelper(internal::true_type /*is_pointer*/, T* pointer) {
     if (pointer == NULL) {
       *ss_ << "(null)";
     } else {
@@ -210,7 +210,7 @@ e..  // GTEST_HAS_GLOBAL_WSTRING
     }
   }
   template <typename T>
-  inline v.. StreamHelper(internal::false_type /*is_pointer*/,
+  i_l.. v.. StreamHelper(internal::false_type /*is_pointer*/,
                            co.. T& value) {
     // See the comments in Message& operator <<(const T&) above for why
     // we need this using statement.
@@ -228,7 +228,7 @@ e..  // GTEST_OS_SYMBIAN
 };
 
 // Streams a Message to an ostream.
-inline st. ostream& operator <<(st. ostream& os, co.. Message& sb) {
+i_l.. st. ostream& operator <<(st. ostream& os, co.. Message& sb) {
   ?  os << sb.GetString();
 }
 

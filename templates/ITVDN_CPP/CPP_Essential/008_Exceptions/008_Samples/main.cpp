@@ -1,110 +1,110 @@
-? |i..
-? |s..
-? "scopedptr.h"
-? "scopedptr.cpp"
-? "cat.h"
-? me..
-? <exception>
-
-u.. s..
-
-st.. A
-{
-    A()
-    {
-        c__ __  __PRETTY_FUNCTION__ __  e..
-    }
-
-    ~A()
-    {
-        c__ __  __PRETTY_FUNCTION__ __  e..
-    }
-}sy.. pause
-
-st.. B
-{
-    B()
-    {
-        c__ __  __PRETTY_FUNCTION__ __  e..
-    }
-
-    ~B()
-    {
-        c__ __  __PRETTY_FUNCTION__ __  e..
-    }
-}sy.. pause
-
-st.. C
-{
-    C(in. _data) try : data(_data)
-    {
-        //...
-        throw 1sy.. pause
-        c__ __  __PRETTY_FUNCTION__ __  e..
-    }
-    catch(...)
-    {
-
-    }
-
-    ~C()
-    {
-        c__ __  __PRETTY_FUNCTION__ __  e..
-    }
-
-    in. datasy.. pause
-}sy.. pause
-
-st.. D : exception
-{
-    D()
-    {
-        c__ __  __PRETTY_FUNCTION__ __  e..
-    }
-
-    ~D()
-    {
-        c__ __  __PRETTY_FUNCTION__ __  e..
-    }
-}sy.. pause
-
-in. main()
-{
-    A asy.. pause
-    try{
-        in. asy.. pause
-        a _ 10sy.. pause
-        B bsy.. pause
-        try
-        {
-            C* c _ n.. C(5)sy.. pause
-            s..().at(1)sy.. pause
-            D dsy.. pause
-            de.. csy.. pause
-        }
-        catch(...)
-        {
-            A asy.. pause
-            cerr __  "smth went wrong"sy.. pause
-           // throw;
-            B bsy.. pause
-        }
-    }
-    catch(logic_error& ex)
-    {
-        //C c;
-        cerr __  ex.what() __  e..
-        D dsy.. pause
-    }
-    catch(...)
-    {
-
-    }
-
-    A a2sy.. pause
-
-    c__ __  "other options"sy.. pause
-
-
-    r_ 0sy.. pause
-}
+//? |i..
+//? |s..
+//? "s..
+//? "s..
+//? "c..
+//? me..
+//? |?
+//
+//u.. s..
+//
+//st.. A
+//
+//    A
+//
+//        c__ __  __PRETTY_FUNCTION__ __  e..
+//
+//
+//    #?
+//
+//        c__ __  __PRETTY_FUNCTION__ __  e..
+//
+//sy.. p..
+//
+//st.. B
+//
+//    B
+//
+//        c__ __  __PRETTY_FUNCTION__ __  e..
+//
+//
+//    #?
+//
+//        c__ __  __PRETTY_FUNCTION__ __  e..
+//
+//sy.. p..
+//
+//st.. C
+//
+//    C(in. _data ___  ? _?
+//
+//        //...
+//        throw 1 sy.. p..
+//        c__ __  __PRETTY_FUNCTION__ __  e..
+//
+//    c.. ...
+//
+//
+//
+//
+//    #?
+//
+//        c__ __  __PRETTY_FUNCTION__ __  e..
+//
+//
+//    in. data sy.. p..
+//sy.. p..
+//
+//st.. D  e..
+//
+//    D
+//
+//        c__ __  __PRETTY_FUNCTION__ __  e..
+//
+//
+//    #?
+//
+//        c__ __  __PRETTY_FUNCTION__ __  e..
+//
+//sy.. p..
+//
+//in. m..
+//
+//    A a sy.. p..
+//    ___
+//        in. a sy.. p..
+//        ? _ 10 sy.. p..
+//        B b sy.. p..
+//        ___
+//
+//            C# c _ n.. C(5) sy.. p..
+//            s.. .at(1) sy.. p..
+//            D d sy.. p..
+//            de.. c sy.. p..
+//
+//        c.. ...
+//
+//            A a sy.. p..
+//            cerr __  "smth went wrong" sy.. p..
+//           // throw;
+//            B b sy.. p..
+//
+//
+//    c.. logic_error# ex
+//
+//        //C c;
+//        cerr __  ?.w.. __  e..
+//        D d sy.. p..
+//
+//    c.. ...
+//
+//
+//
+//
+//    A a2sy.. p..
+//
+//    c__ __  "other options"sy.. p..
+//
+//
+//    r_ 0sy.. p..
+//

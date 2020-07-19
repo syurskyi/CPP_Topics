@@ -196,7 +196,7 @@ n.. linked_ptr {
 
  pr..
   template <typename U>
-  friend n.. linked_ptr;
+  fr.. n.. linked_ptr;
 
   T* value_;
   linked_ptr_internal link_;
@@ -219,12 +219,12 @@ n.. linked_ptr {
   }
 };
 
-template<typename T> inline
+template<typename T> i_l..
 bo.. operator==(T* ptr, co.. linked_ptr<T>& x) {
   ?  ptr == x.get();
 }
 
-template<typename T> inline
+template<typename T> i_l..
 bo.. operator!=(T* ptr, co.. linked_ptr<T>& x) {
   ?  ptr != x.get();
 }
