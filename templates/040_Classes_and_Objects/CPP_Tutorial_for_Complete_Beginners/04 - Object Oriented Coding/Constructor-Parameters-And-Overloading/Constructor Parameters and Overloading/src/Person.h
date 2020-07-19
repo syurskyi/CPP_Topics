@@ -1,8 +1,8 @@
 /*
  * Person.h
  *
- *  Created on: 12 Jul 2014
- *      Author: johnwpurcell
+ *  Created on:
+ *      Author: syurskyi
  */
 
 ?i.. PERSON_H_
@@ -11,15 +11,15 @@ _de.. PERSON_H_
 ? ios..
 u... s..
 
-n.. Person {
+n.. Person
 pr..
-	string name;
-	in. age;
+	string name
+	in. age
 p..
-	Person();
-	Person(string newName) { name = newName; age = 0; };
-	Person(string newName, in. newAge);
-	string toString();
-};
+	?
+	? st.. newName name _ ? age _ 0
+	? st.. newName in. newAge
+	st.. toString
+
 
 e.. /* PERSON_H_ */
