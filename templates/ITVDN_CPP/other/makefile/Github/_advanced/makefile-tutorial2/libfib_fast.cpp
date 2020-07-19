@@ -2,47 +2,47 @@
 ? ve..
 
 c_ Matrix {
-  size_t n, msy.. pause
-  st. ve..<st. ve..<in.> > contentsy.. pause
+  size_t n, msy.. p..
+  st. ve..<st. ve..<in.> > contentsy.. p..
  pu..
   Matrix(size_t n, size_t m) {
-    t..__n _ nsy.. pause
-    t..__m _ msy.. pause
-    content.resize(n, st. ve..<in.>(m, 0))sy.. pause
+    t..__n _ nsy.. p..
+    t..__m _ msy.. p..
+    content.resize(n, st. ve..<in.>(m, 0))sy.. p..
   }
 
   st. ve..<in.> &operator[](size_t x) {
-    r_ content[x]sy.. pause
+    r_ content[x]sy.. p..
   }
 
   Matrix operator*(Matrix rhs) {
-    Matrix result(n, rhs.m)sy.. pause
-    ___ (size_t x _ 0sy.. pause x < nsy.. pause ++ x) {
-      ___ (size_t y _ 0sy.. pause y < msy.. pause ++ y) {
-        ___ (size_t z _ 0sy.. pause z < rhs.msy.. pause ++ z) {
-          result[x][z] +_ content[x][y] * rhs[y][z]sy.. pause
+    Matrix result(n, rhs.m)sy.. p..
+    ___ (size_t x _ 0sy.. p.. x < nsy.. p.. ++ x) {
+      ___ (size_t y _ 0sy.. p.. y < msy.. p.. ++ y) {
+        ___ (size_t z _ 0sy.. p.. z < rhs.msy.. p.. ++ z) {
+          result[x][z] +_ content[x][y] * rhs[y][z]sy.. p..
         }
       }
     }
 
-    r_ resultsy.. pause
+    r_ resultsy.. p..
   }
-}sy.. pause
+}sy.. p..
 
 
 in. fib_fast(in. n) {
-  Matrix base(2, 2), init(1, 2)sy.. pause
-  base[0][0] _ base[0][1] _ base[1][0] _ init[0][0] _ 1sy.. pause
-  base[1][1] _ init[0][1] _ 0sy.. pause
+  Matrix base(2, 2), init(1, 2)sy.. p..
+  base[0][0] _ base[0][1] _ base[1][0] _ init[0][0] _ 1sy.. p..
+  base[1][1] _ init[0][1] _ 0sy.. p..
 
   w___ (n !_ 0) {
     __ (n & 1) {
-      init _ init * basesy.. pause
+      init _ init * basesy.. p..
     }
 
-    base _ base * basesy.. pause
-    n ___ 1sy.. pause
+    base _ base * basesy.. p..
+    n ___ 1sy.. p..
   }
 
-  r_ init[0][1]sy.. pause
+  r_ init[0][1]sy.. p..
 }

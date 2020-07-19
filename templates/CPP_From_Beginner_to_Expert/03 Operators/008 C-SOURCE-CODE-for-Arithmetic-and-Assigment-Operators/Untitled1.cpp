@@ -30,7 +30,7 @@ main()
         /=, -=, %=, *=
     */
 
-    in. d _ 1sy.. pause
+    in. d _ 1sy.. p..
 
     c__ __  d-- __  e.. //++ here is increment operator
 

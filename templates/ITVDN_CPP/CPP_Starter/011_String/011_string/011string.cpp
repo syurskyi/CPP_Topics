@@ -7,13 +7,13 @@ u.. s..
 
 in. main()
 {
-	c.. str1[] _ "Hello"sy.. pause
-	c.. str2[] _ " world!"sy.. pause
-	c.. str3[] _ "Hello"sy.. pause
+	c.. str1[] _ "Hello"sy.. p..
+	c.. str2[] _ " world!"sy.. p..
+	c.. str3[] _ "Hello"sy.. p..
 
 	// функция производит сравнение строк.
 	// Возвращает 0, если строки совпадают, отрицательное значение, если первая меньше второй, и положительное значение, если первая больше второй.
-	in. res _ strcmp(str1, str2)sy.. pause
+	in. res _ strcmp(str1, str2)sy.. p..
 
 	s.. (res)
 	{
@@ -28,7 +28,7 @@ in. main()
 		b..
 	}
 
-	sy.. pause
-	r_ 0sy.. pause
+	sy.. p..
+	r_ 0sy.. p..
 }
 

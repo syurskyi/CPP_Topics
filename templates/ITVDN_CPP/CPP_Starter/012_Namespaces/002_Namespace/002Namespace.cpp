@@ -6,13 +6,13 @@
 
 
 // Объявление using - импортирует только указанные составляющие пространства имен
-using st. c__sy.. pause
+using st. c__sy.. p..
 using st. e..
 
 in. main()
 {
 	c__ __  "Hello world" __  e..
 
-	r_ 0sy.. pause
+	r_ 0sy.. p..
 }
 

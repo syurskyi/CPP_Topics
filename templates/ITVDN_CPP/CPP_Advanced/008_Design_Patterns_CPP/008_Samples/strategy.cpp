@@ -25,30 +25,30 @@ Context::Context( Strategyin.erface* strategy )
 
 v.. Context::set_strategy( Strategyin.erface* strategy )
 {
-    strategy_ _ strategysy.. pause
+    strategy_ _ strategysy.. p..
 }
 
 v.. Context::execute() c..
 {
-    strategy___execute()sy.. pause
+    strategy___execute()sy.. p..
 }
 
 v.. ClientStrategy::run()
 {
-    ConcreteStrategyA concreteStrategyAsy.. pause
-    ConcreteStrategyB concreteStrategyBsy.. pause
-    ConcreteStrategyC concreteStrategyCsy.. pause
+    ConcreteStrategyA concreteStrategyAsy.. p..
+    ConcreteStrategyB concreteStrategyBsy.. p..
+    ConcreteStrategyC concreteStrategyCsy.. p..
 
-    Context contextA( &concreteStrategyA )sy.. pause
-    Context contextB( &concreteStrategyB )sy.. pause
-    Context contextC( &concreteStrategyC )sy.. pause
+    Context contextA( &concreteStrategyA )sy.. p..
+    Context contextB( &concreteStrategyB )sy.. p..
+    Context contextC( &concreteStrategyC )sy.. p..
 
-    contextA.execute()sy.. pause // output: "Called ConcreteStrategyA execute method"
-    contextB.execute()sy.. pause // output: "Called ConcreteStrategyB execute method"
-    contextC.execute()sy.. pause // output: "Called ConcreteStrategyC execute method"
+    contextA.execute()sy.. p.. // output: "Called ConcreteStrategyA execute method"
+    contextB.execute()sy.. p.. // output: "Called ConcreteStrategyB execute method"
+    contextC.execute()sy.. p.. // output: "Called ConcreteStrategyC execute method"
 
-    contextA.set_strategy( &concreteStrategyB )sy.. pause
-    contextA.execute()sy.. pause // output: "Called ConcreteStrategyB execute method"
-    contextA.set_strategy( &concreteStrategyC )sy.. pause
-    contextA.execute()sy.. pause // output: "Called ConcreteStrategyC execute method"
+    contextA.set_strategy( &concreteStrategyB )sy.. p..
+    contextA.execute()sy.. p.. // output: "Called ConcreteStrategyB execute method"
+    contextA.set_strategy( &concreteStrategyC )sy.. p..
+    contextA.execute()sy.. p.. // output: "Called ConcreteStrategyC execute method"
 }

@@ -4,18 +4,18 @@ u.. s..
 //ARRAYS
 main()
 {
-    in. asy.. pause
+    in. asy.. p..
 
     //int a,b,c,d,e,f,g,h,i,j;
 
     //int var1,var2,var3,var4,var5...
-    in. x[100]sy.. pause
-    in. array[4]sy.. pause //TYPE NAME[SIZE_NR_OF_ELEMENTS];
+    in. x[100]sy.. p..
+    in. array[4]sy.. p.. //TYPE NAME[SIZE_NR_OF_ELEMENTS];
 
-    array[0] _ 10sy.. pause
-    array[1] _ 50sy.. pause
-    array[2] _ 256sy.. pause
-    array[3] _ 512sy.. pause
+    array[0] _ 10sy.. p..
+    array[1] _ 50sy.. p..
+    array[2] _ 256sy.. p..
+    array[3] _ 512sy.. p..
     //array[4] = 125125; we can't do it
 
     /*
@@ -32,5 +32,5 @@ main()
     c__ __  "array [0] = " __  array[0] __  ", address: " __  array __  e..
 
     __ (&array[0] __ array)
-        c__ __  "thats true"sy.. pause
+        c__ __  "thats true"sy.. p..
 }

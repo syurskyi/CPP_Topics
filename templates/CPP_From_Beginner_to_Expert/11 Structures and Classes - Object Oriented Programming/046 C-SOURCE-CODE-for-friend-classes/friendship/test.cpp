@@ -3,5 +3,5 @@
 
 v.. A::setSecretValue(B & obj, in. value)
 {
-    obj.secretValue _ valuesy.. pause
+    obj.secretValue _ valuesy.. p..
 }

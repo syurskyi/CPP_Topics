@@ -3,6 +3,6 @@
 u.. s..
 
 in. foo
-    c__ __  "Hello foo\n"sy.. pause
-    r_ 0sy.. pause
+    c__ __  "Hello foo\n"sy.. p..
+    r_ 0sy.. p..
 }

@@ -11,7 +11,7 @@ n.. ns_foo
         {
             st. c__ __  "Hello from ns_foo::person::display()" __  st. e..
         }
-    }sy.. pause
+    }sy.. p..
     c_ Superhero : pu.. Person
     {
         pu..
@@ -21,38 +21,38 @@ n.. ns_foo
         }
         v.. count(in. x)
         {
-            ___(in. i_0sy.. pause i<xsy.. pause ###)
+            ___(in. i_0sy.. p.. i<xsy.. p.. ###)
             {
                 st. c__ __  "Count: " __  i __  st. e..
-                boost::this_thread::sleep( boost::posix_time::seconds(1) )sy.. pause
+                boost::this_thread::sleep( boost::posix_time::seconds(1) )sy.. p..
             }
         }
-    }sy.. pause
+    }sy.. p..
 }
 
 v.. foo(in. x)
 {
-    ___(in. i_0sy.. pause i<xsy.. pause ###)
+    ___(in. i_0sy.. p.. i<xsy.. p.. ###)
     {
         st. c__ __  "Count: " __  i __  st. e..
-        boost::this_thread::sleep( boost::posix_time::seconds(1) )sy.. pause
+        boost::this_thread::sleep( boost::posix_time::seconds(1) )sy.. p..
     }
 }
 
 
 in. main(in. argc, c.. *argv[])
 {
-    ns_foo::Superhero iron_mansy.. pause
-    st. thread t1(&iron_man::count, 5)sy.. pause
+    ns_foo::Superhero iron_mansy.. p..
+    st. thread t1(&iron_man::count, 5)sy.. p..
     //std::thread t1(&ns_foo::Superhero::count, 5);
     //std::thread first (iron_man.count,5);
-    iron_man.display()sy.. pause
-    iron_man.yell()sy.. pause
+    iron_man.display()sy.. p..
+    iron_man.yell()sy.. p..
 
     //std::thread iron_man.count(5);
     //first.join();                // pauses until first finishes
 
-    st. c__ __  "foo and bar completed.\n"sy.. pause
+    st. c__ __  "foo and bar completed.\n"sy.. p..
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }

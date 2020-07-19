@@ -2,23 +2,23 @@
 
 u.. s..
 
-v.. subtraction()sy.. pause
+v.. subtraction()sy.. p..
 
 main ()
 {
-    subtraction()sy.. pause
+    subtraction()sy.. p..
 }
 
 v.. subtraction()
 {
-    d.. firstNumber, secondNumber, resultsy.. pause
+    d.. firstNumber, secondNumber, resultsy.. p..
 
-    c__ __  "Input the number to subtract from: "sy.. pause
-    c__ __ firstNumbersy.. pause
-    c__ __  "Input the number to subtract with: "sy.. pause
-    c__ __ secondNumbersy.. pause
+    c__ __  "Input the number to subtract from: "sy.. p..
+    c__ __ firstNumbersy.. p..
+    c__ __  "Input the number to subtract with: "sy.. p..
+    c__ __ secondNumbersy.. p..
 
-    result _ firstNumber - secondNumbersy.. pause
-    c__ __  firstNumber __  " - " __  secondNumber __  " = " __  resultsy.. pause
+    result _ firstNumber - secondNumbersy.. p..
+    c__ __  firstNumber __  " - " __  secondNumber __  " = " __  resultsy.. p..
 
 }

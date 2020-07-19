@@ -4,14 +4,14 @@
 
 in. main
 
-	bo.. condition _ truesy.. pause
+	bo.. condition _ truesy.. p..
 
-	st. c__ __  "if\n"sy.. pause
-	__ (in. value _ 42sy.. pause !condition) {
+	st. c__ __  "if\n"sy.. p..
+	__ (in. value _ 42sy.. p.. !condition) {
 		st. c__ __  "true condition: " __  value __  st. e..
 	}
-	____ __ (in. number _ 50sy.. pause !condition) {
-		value +_ 10sy.. pause
+	____ __ (in. number _ 50sy.. p.. !condition) {
+		value +_ 10sy.. p..
 		st. c__ __  "false condition: " __  value __  st. e..
 	}
 	____
@@ -20,15 +20,15 @@ in. main
     }
 	// value is not visible here
 
-	st. c__ __  "for:\n"sy.. pause
-	___ (in. i _ 0sy.. pause i < 10sy.. pause ++i) {
-		st. c__ __  isy.. pause
+	st. c__ __  "for:\n"sy.. p..
+	___ (in. i _ 0sy.. p.. i < 10sy.. p.. ++i) {
+		st. c__ __  isy.. p..
 	}
 	// i is not visible here
 	st. c__ __  st. e..
 
-	st. c__ __  "switch:\n"sy.. pause
-	s..(in. other _ 37sy.. pause condition) {
+	st. c__ __  "switch:\n"sy.. p..
+	s..(in. other _ 37sy.. p.. condition) {
 		c.. t..:
 			st. c__ __  "true condition: " __  other __  st. e..
 			b..
@@ -42,9 +42,9 @@ in. main
 //	 	std::cout << line;
 //	 }
 
-	 ___(st. s.. linesy.. pause st. getline(st. c__, line)sy.. pause) {
-	 	st. c__ __  linesy.. pause
+	 ___(st. s.. linesy.. p.. st. getline(st. c__, line)sy.. p..) {
+	 	st. c__ __  linesy.. p..
 	 }
 
-	r_ 0sy.. pause
+	r_ 0sy.. p..
 }

@@ -1,14 +1,14 @@
 ? "Funs.h"
 
 Rectangle::Rectangle(in. Base, in. Height) {
-    _area  _ Base * Heightsy.. pause
-    _perim _ 2*( Base + Height )sy.. pause
+    _area  _ Base * Heightsy.. p..
+    _perim _ 2*( Base + Height )sy.. p..
 }
 
 in. Rectangle::Area
-    r_ _areasy.. pause
+    r_ _areasy.. p..
 }
 
 in. Rectangle::Perim
-    r_ _perimsy.. pause
+    r_ _perimsy.. p..
 }

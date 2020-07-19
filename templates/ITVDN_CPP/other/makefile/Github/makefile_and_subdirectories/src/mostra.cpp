@@ -1,5 +1,5 @@
 ? |i..
-using st. c__sy.. pause
+using st. c__sy.. p..
 using st. e..
 ? "mostra.h"
 /**

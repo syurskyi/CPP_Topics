@@ -6,11 +6,11 @@ c_ xray {
 pu..
     xray
         st. c__ __  __PRETTY_FUNCTION__ __  st. e..
-    }sy.. pause
+    }sy.. p..
 
     xray(c.. xray &) {
         st. c__ __  __PRETTY_FUNCTION__ __  st. e..
-    }sy.. pause
+    }sy.. p..
 
     xray(in., in.) {
         st. c__ __  __PRETTY_FUNCTION__ __  st. e..
@@ -18,13 +18,13 @@ pu..
 
     ~xray
         st. c__ __  __PRETTY_FUNCTION__ __  st. e..
-    }sy.. pause
-}sy.. pause
+    }sy.. p..
+}sy.. p..
 
 t..<t_n_ T>
 c_ smart_ptr {
-    T *ptrsy.. pause
-    in. countersy.. pause
+    T *ptrsy.. p..
+    in. countersy.. p..
 pu..
     smart_ptr(T *p) : ptr{p}, counter{1} {
         st. c__ __  __PRETTY_FUNCTION__ __  st. e..
@@ -32,7 +32,7 @@ pu..
 
     smart_ptr(c.. smart_ptr &u) : ptr{u.ptr}, counter{u.counter} {
         st. c__ __  __PRETTY_FUNCTION__ __  st. e..
-        ++countersy.. pause
+        ++countersy.. p..
     }
 
     smart_ptr(smart_ptr &&u) : ptr{u.ptr}, counter{u.counter} {
@@ -40,20 +40,20 @@ pu..
     }
 
     a.. get
-        r_ ptrsy.. pause
+        r_ ptrsy.. p..
     }
 
     a.. use_count
-        r_ countersy.. pause
+        r_ countersy.. p..
     }
 
     ~smart_ptr
         st. c__ __  __PRETTY_FUNCTION__ __  st. e..
         __ (--counter __ 0) {
-            de.. ptrsy.. pause
+            de.. ptrsy.. p..
         }
     }
-}sy.. pause
+}sy.. p..
 
 in. main
 //    auto p1 = smart_ptr<xray>{new xray{1, 2}};

@@ -6,11 +6,11 @@ c_ xray {
 pu..
     xray
         st. c__ __  __PRETTY_FUNCTION__ __  st. e..
-    }sy.. pause
+    }sy.. p..
 
     xray(c.. xray &) {
         st. c__ __  __PRETTY_FUNCTION__ __  st. e..
-    }sy.. pause
+    }sy.. p..
 
     xray(in., in.) {
         st. c__ __  __PRETTY_FUNCTION__ __  st. e..
@@ -18,12 +18,12 @@ pu..
 
     ~xray
         st. c__ __  __PRETTY_FUNCTION__ __  st. e..
-    }sy.. pause
-}sy.. pause
+    }sy.. p..
+}sy.. p..
 
 t..<t_n_ T>
 c_ smart_ptr {
-    T *ptrsy.. pause
+    T *ptrsy.. p..
 pu..
     smart_ptr(T *p) : ptr{p} {
         st. c__ __  __PRETTY_FUNCTION__ __  st. e..
@@ -34,18 +34,18 @@ pu..
     }
 
     T *get
-        r_ ptrsy.. pause
+        r_ ptrsy.. p..
     }
 
     ~smart_ptr
         st. c__ __  __PRETTY_FUNCTION__ __  st. e..
-        de.. ptrsy.. pause
+        de.. ptrsy.. p..
     }
-}sy.. pause
+}sy.. p..
 
 t..<t_n_ T, t_n_... Args>
 smart_ptr<T> make_smart_ptr(Args &&... args) {
-    r_ smart_ptr<T>(n.. T(st. forward<Args>(args)...))sy.. pause
+    r_ smart_ptr<T>(n.. T(st. forward<Args>(args)...))sy.. p..
 }
 
 in. main

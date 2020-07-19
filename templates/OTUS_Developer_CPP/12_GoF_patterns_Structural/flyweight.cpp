@@ -6,32 +6,32 @@
 c_ Image
 {
 pu..
-    v.. resize(in., in.) {}sy.. pause
-}sy.. pause
+    v.. resize(in., in.) {}sy.. p..
+}sy.. p..
 
 c_ ImageResizer
 {
-    st. map<in., Image> imagessy.. pause
+    st. map<in., Image> imagessy.. p..
 pu..
     Image get_box(in. w)
     {
-        a.. i _ images.find(w)sy.. pause
+        a.. i _ images.find(w)sy.. p..
         __ (i __ images.end()) {
-            Image imgsy.. pause
-            img.resize(w, w)sy.. pause
+            Image imgsy.. p..
+            img.resize(w, w)sy.. p..
 
-            bo.. bsy.. pause
-            st. tie(i, b) _ images.emplace(w, img)sy.. pause
+            bo.. bsy.. p..
+            st. tie(i, b) _ images.emplace(w, img)sy.. p..
         }
-        r_ i__secondsy.. pause
+        r_ i__secondsy.. p..
     }
-}sy.. pause
+}sy.. p..
 
 in. main(in., c.. *[])
 {
-    ImageResizer rssy.. pause
+    ImageResizer rssy.. p..
 
-    rs.get_box(100)sy.. pause
-    rs.get_box(1000)sy.. pause
-    rs.get_box(1000)sy.. pause
+    rs.get_box(100)sy.. p..
+    rs.get_box(1000)sy.. p..
+    rs.get_box(1000)sy.. p..
 }

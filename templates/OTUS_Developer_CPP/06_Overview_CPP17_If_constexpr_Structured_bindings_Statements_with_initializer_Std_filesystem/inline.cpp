@@ -2,17 +2,17 @@
 
 st.. SomeStruct {
 //    static
-    in. super_static_variable _ 10sy.. pause
-}sy.. pause
+    in. super_static_variable _ 10sy.. p..
+}sy.. p..
 
 st.. SomeStruct2 {
-    static inline in. super_static_variable _ 42sy.. pause
-}sy.. pause
+    static inline in. super_static_variable _ 42sy.. p..
+}sy.. p..
 
 st.. SomeStruct3 {
-    static in. super_static_variablesy.. pause
-}sy.. pause
-inline in. SomeStruct3::super_static_variable _ 84sy.. pause
+    static in. super_static_variablesy.. p..
+}sy.. p..
+inline in. SomeStruct3::super_static_variable _ 84sy.. p..
 
 
 in. main
@@ -22,5 +22,5 @@ in. main
 
     st. c__ __  SomeStruct3::super_static_variable __  st. e..
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }

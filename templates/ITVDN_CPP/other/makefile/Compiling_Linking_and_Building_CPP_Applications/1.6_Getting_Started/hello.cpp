@@ -8,5 +8,5 @@ u.. s..
 
 in. main
     c__ __  "Hello, world!" __  e..
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }

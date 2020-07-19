@@ -3,61 +3,61 @@
 
 u.. s..
 
-t_d_ u.. in. uin.sy.. pause
-en.. c_ Color : l.. longsy.. pause
+t_d_ u.. in. uin.sy.. p..
+en.. c_ Color : l.. longsy.. p..
 
-v.. foo(Color a)sy.. pause
+v.. foo(Color a)sy.. p..
 
-en.. c_ Color : l.. l.. {red _ -300000000000000, yellow _ -3, green _ 0, blue}sy.. pause
+en.. c_ Color : l.. l.. {red _ -300000000000000, yellow _ -3, green _ 0, blue}sy.. p..
 
 st.. Glass
 {
-    s.. typesy.. pause//24
-}sy.. pause
+    s.. typesy.. p..//24
+}sy.. p..
 
 st.. Door
 {
-    Glass glasssy.. pause//24
-    d.. widthsy.. pause//8
-    d.. lengthsy.. pause//8
-}sy.. pause
+    Glass glasssy.. p..//24
+    d.. widthsy.. p..//8
+    d.. lengthsy.. p..//8
+}sy.. p..
 
 st.. Car
 {
-    in. wheels : 16sy.. pause//4
-    in. length : 16sy.. pause//4
-    in. width : 16sy.. pause//4
-    uin. seats : 16sy.. pause//4
-    in. for_bo.. : 31sy.. pause
-    bo.. a : 1sy.. pause
-    in. qsy.. pause
-    s.. namesy.. pause//24
-    Door doorsy.. pause//40
+    in. wheels : 16sy.. p..//4
+    in. length : 16sy.. p..//4
+    in. width : 16sy.. p..//4
+    uin. seats : 16sy.. p..//4
+    in. for_bo.. : 31sy.. p..
+    bo.. a : 1sy.. p..
+    in. qsy.. p..
+    s.. namesy.. p..//24
+    Door doorsy.. p..//40
 //    struct SteeringWheel
 //    {
 //        string type; //24
 //    };
-} other_carsy.. pause
+} other_carsy.. p..
 
 in. main()
 {
-    in. array[10]sy.. pause
+    in. array[10]sy.. p..
 
-    d.. dsy.. pause
+    d.. dsy.. p..
 
-    Car my_carsy.. pause
+    Car my_carsy.. p..
     //Car::SteeringWheel wheel;
 
-    my_car.door.glass.typesy.. pause
-    my_car.name _ "The best car"sy.. pause
-    my_car.length _ 100sy.. pause
+    my_car.door.glass.typesy.. p..
+    my_car.name _ "The best car"sy.. p..
+    my_car.length _ 100sy.. p..
 
-    c__ __  s_o_(Glass) __  "\n"sy.. pause
-    c__ __  s_o_(Door) __  "\n"sy.. pause
-    c__ __  s_o_(Car) __  "\n"sy.. pause
+    c__ __  s_o_(Glass) __  "\n"sy.. p..
+    c__ __  s_o_(Door) __  "\n"sy.. p..
+    c__ __  s_o_(Car) __  "\n"sy.. p..
     //cout << sizeof(Car::SteeringWheel) << "\n";
 
-    c__ __  my_car.name __  " ,length = " __  my_car.length __  ", width = " __  my_car.width __  " wheels = " __  my_car.wheelssy.. pause
+    c__ __  my_car.name __  " ,length = " __  my_car.length __  ", width = " __  my_car.width __  " wheels = " __  my_car.wheelssy.. p..
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }

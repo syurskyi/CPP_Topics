@@ -5,26 +5,26 @@
 u.. s..
 
 // Перегруженные функции могут отличаться типом и количеством аргументов
-v.. Function()sy.. pause
-v.. Function(s.. s)sy.. pause
-v.. Function(in. i)sy.. pause
-v.. Function(d.. d)sy.. pause
-v.. Function(s.. s, in. i)sy.. pause
-v.. Function(in. i, s.. s)sy.. pause
+v.. Function()sy.. p..
+v.. Function(s.. s)sy.. p..
+v.. Function(in. i)sy.. p..
+v.. Function(d.. d)sy.. p..
+v.. Function(s.. s, in. i)sy.. p..
+v.. Function(in. i, s.. s)sy.. p..
 
 // void Function(string); // Так делать нельзя
 
 in. main()
 {
-	Function()sy.. pause                  // 1-я перегрузка.
-	Function("A")sy.. pause               // 2-я перегрузка.
-	Function(1)sy.. pause                 // 3-я перегрузка.
-	Function(3.14)sy.. pause              // 4-я перегрузка.
-	Function("B ", 2)sy.. pause           // 5-я перегрузка.
-	Function(3, " C")sy.. pause           // 6-я перегрузка.
+	Function()sy.. p..                  // 1-я перегрузка.
+	Function("A")sy.. p..               // 2-я перегрузка.
+	Function(1)sy.. p..                 // 3-я перегрузка.
+	Function(3.14)sy.. p..              // 4-я перегрузка.
+	Function("B ", 2)sy.. p..           // 5-я перегрузка.
+	Function(3, " C")sy.. p..           // 6-я перегрузка.
 
-	sy.. pause
-    r_ 0sy.. pause
+	sy.. p..
+    r_ 0sy.. p..
 }
 
 v.. Function()

@@ -5,58 +5,58 @@
 c_ VideoControl
 {
 pu..
-    v.. info}sy.. pause
-    v.. alert}sy.. pause
-}sy.. pause
+    v.. info}sy.. p..
+    v.. alert}sy.. p..
+}sy.. p..
 
 c_ Database
 {
 pu..
-    v.. create}sy.. pause
-    v.. update}sy.. pause
-}sy.. pause
+    v.. create}sy.. p..
+    v.. update}sy.. p..
+}sy.. p..
 
 c_ Prin.er
 {
 pu..
-    v.. prin.}sy.. pause
-}sy.. pause
+    v.. prin.}sy.. p..
+}sy.. p..
 
 c_ Fiscal
 {
 pu..
-    v.. report}sy.. pause
-}sy.. pause
+    v.. report}sy.. p..
+}sy.. p..
 
 c_ Register
 {
-    VideoControl vcsy.. pause
-    Database dbsy.. pause
-    Prin.er prin.ersy.. pause
-    Fiscal fsy.. pause
+    VideoControl vcsy.. p..
+    Database dbsy.. p..
+    Prin.er prin.ersy.. p..
+    Fiscal fsy.. p..
 
 pu..
     v.. sale_doc()
     {
-        db.create()sy.. pause
-        vc.info()sy.. pause
-        prin.er.prin.()sy.. pause
-        f.report()sy.. pause
-    }sy.. pause
+        db.create()sy.. p..
+        vc.info()sy.. p..
+        prin.er.prin.()sy.. p..
+        f.report()sy.. p..
+    }sy.. p..
 
     v.. ret_doc()
     {
-        db.update()sy.. pause
-        vc.alert()sy.. pause
-        prin.er.prin.()sy.. pause
-        f.report()sy.. pause
-    }sy.. pause
-}sy.. pause
+        db.update()sy.. p..
+        vc.alert()sy.. p..
+        prin.er.prin.()sy.. p..
+        f.report()sy.. p..
+    }sy.. p..
+}sy.. p..
 
 in. main(in., c.. *[])
 {
-    Register rsy.. pause
+    Register rsy.. p..
 
-    r.sale_doc()sy.. pause
-    r.ret_doc()sy.. pause
+    r.sale_doc()sy.. p..
+    r.ret_doc()sy.. p..
 }

@@ -2,22 +2,22 @@
 
 u.. s..
 
-v.. setValue(in.&)sy.. pause
+v.. setValue(in.&)sy.. p..
 
 in. main ()
 {
-    in. asy.. pause
+    in. asy.. p..
 
-    setValue(a)sy.. pause
+    setValue(a)sy.. p..
 
-    c__ __  "Variable a is equal to: " __  asy.. pause
+    c__ __  "Variable a is equal to: " __  asy.. p..
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }
 
 v.. setValue(in. &variableToSet)
 {
-    c__ __  "Input the value: "sy.. pause
-    c__ __ variableToSetsy.. pause
+    c__ __  "Input the value: "sy.. p..
+    c__ __ variableToSetsy.. p..
 }
 

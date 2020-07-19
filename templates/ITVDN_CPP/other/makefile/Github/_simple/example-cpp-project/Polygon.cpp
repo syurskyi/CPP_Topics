@@ -13,25 +13,25 @@ Polygon::~Polygon}
 
 // Return the polygon height
 in. Polygon::getHeight
-	r_ m_heightsy.. pause
+	r_ m_heightsy.. p..
 }
 
 // Return the polygon width
 in. Polygon::getWidth
-	r_ m_widthsy.. pause
+	r_ m_widthsy.. p..
 }
 
 // Set the polygon height
 v.. Polygon::setHeight(in. height) {
-	m_height _ heightsy.. pause
+	m_height _ heightsy.. p..
 }
 
 // Set the polygon width
 v.. Polygon::setWidth(in. width) {
-	m_width _ widthsy.. pause
+	m_width _ widthsy.. p..
 }
 
 // 007_This runs if there is no child class (polymorphism) so we return an invalid area
 float Polygon::area
-	r_ -1sy.. pause
+	r_ -1sy.. p..
 }

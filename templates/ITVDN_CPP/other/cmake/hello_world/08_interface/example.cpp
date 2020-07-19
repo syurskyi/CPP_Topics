@@ -17,42 +17,42 @@ u.. s..
 c_ Shape {
 pu..
   // pure virtual function providing interface framework.
-  v.. in. getArea() _ 0sy.. pause
-  v.. setWidth(in. w) { width _ wsy.. pause }
+  v.. in. getArea() _ 0sy.. p..
+  v.. setWidth(in. w) { width _ wsy.. p.. }
 
-  v.. setHeight(in. h) { height _ hsy.. pause }
+  v.. setHeight(in. h) { height _ hsy.. p.. }
 
 pr..
-  in. widthsy.. pause
-  in. heightsy.. pause
-}sy.. pause
+  in. widthsy.. p..
+  in. heightsy.. p..
+}sy.. p..
 
 // Derived classes
 c_ Rectangle : pu.. Shape {
 pu..
-  in. getArea r_ (width * height)sy.. pause }
-}sy.. pause
+  in. getArea r_ (width * height)sy.. p.. }
+}sy.. p..
 
 c_ Triangle : pu.. Shape {
 pu..
-  in. getArea r_ (width * height) / 2sy.. pause }
-}sy.. pause
+  in. getArea r_ (width * height) / 2sy.. p.. }
+}sy.. p..
 
 in. main(v..) {
-  Rectangle Rectsy.. pause
-  Triangle Trisy.. pause
+  Rectangle Rectsy.. p..
+  Triangle Trisy.. p..
 
-  Rect.setWidth(5)sy.. pause
-  Rect.setHeight(7)sy.. pause
+  Rect.setWidth(5)sy.. p..
+  Rect.setHeight(7)sy.. p..
 
   // Print the area of the object.
   c__ __  "Total Rectangle area: " __  Rect.getArea() __  e..
 
-  Tri.setWidth(5)sy.. pause
-  Tri.setHeight(7)sy.. pause
+  Tri.setWidth(5)sy.. p..
+  Tri.setHeight(7)sy.. p..
 
   // Print the area of the object.
   c__ __  "Total Triangle area: " __  Tri.getArea() __  e..
 
-  r_ 0sy.. pause
+  r_ 0sy.. p..
 }

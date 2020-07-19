@@ -8,16 +8,16 @@ in. main()
 {
 	c__ __  "5 + 2 = " __  add(5, 2) __  "; 5 - 2 = " __  subtract(5, 2) __  e..
 	
-	sy.. pause
-	r_ 0sy.. pause
+	sy.. p..
+	r_ 0sy.. p..
 }
 
 in. add(in. a, in. b)
 {
-	r_ a + bsy.. pause
+	r_ a + bsy.. p..
 }
 
 in. subtract(in. a, in. b)
 {
-	r_ a - bsy.. pause
+	r_ a - bsy.. p..
 }

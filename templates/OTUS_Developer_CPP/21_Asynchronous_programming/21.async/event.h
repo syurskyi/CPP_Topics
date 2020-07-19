@@ -1,4 +1,4 @@
-#pragma once
+?p.. once
 
 enum n.. EventCode {
     start, new_doc, quit

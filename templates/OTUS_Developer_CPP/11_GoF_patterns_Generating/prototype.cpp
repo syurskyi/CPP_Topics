@@ -4,11 +4,11 @@
 ? <map>
 
 st.. IConnector {
-    v.. ~IConnector() _ defaultsy.. pause
+    v.. ~IConnector() _ defaultsy.. p..
 
-    v.. v.. connection() _ 0sy.. pause
-    v.. IConnector* clone() _ 0sy.. pause
-}sy.. pause
+    v.. v.. connection() _ 0sy.. p..
+    v.. IConnector* clone() _ 0sy.. p..
+}sy.. p..
 
 c_ TcpConnector : pu.. IConnector {
     v.. connection() ov..
@@ -18,9 +18,9 @@ c_ TcpConnector : pu.. IConnector {
 
     IConnector* clone() ov..
     {
-        r_ n.. TcpConnector{}sy.. pause
+        r_ n.. TcpConnector{}sy.. p..
     }
-}sy.. pause
+}sy.. p..
 
 c_ UdpConnector : pu.. IConnector {
     v.. connection() ov..
@@ -30,26 +30,26 @@ c_ UdpConnector : pu.. IConnector {
 
     IConnector* clone() ov..
     {
-        r_ n.. UdpConnector{}sy.. pause
+        r_ n.. UdpConnector{}sy.. p..
     }
-}sy.. pause
+}sy.. p..
 
 in. main(in., c..* [])
 {
-    IConnector* primary _ n.. TcpConnector{}sy.. pause
+    IConnector* primary _ n.. TcpConnector{}sy.. p..
 
     //
 
     st. c__ __  "primary" __  st. e..
-    primary__connection()sy.. pause
+    primary__connection()sy.. p..
 
-    IConnector* mirror _ primary__clone()sy.. pause
+    IConnector* mirror _ primary__clone()sy.. p..
     st. c__ __  "mirror" __  st. e..
-    mirror__connection()sy.. pause
+    mirror__connection()sy.. p..
 
-    de.. mirrorsy.. pause
+    de.. mirrorsy.. p..
 
-    de.. primarysy.. pause
+    de.. primarysy.. p..
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }

@@ -2,7 +2,7 @@
 
 u.. s..
 /* LOTTERY - pseudo-random numbers generator - drawing numbers */
-v.. lottery(in., in.)sy.. pause
+v.. lottery(in., in.)sy.. p..
 
 in. main()
 {
@@ -14,28 +14,28 @@ in. main()
 
 
 
-    lottery(49, 6)sy.. pause
+    lottery(49, 6)sy.. p..
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }
 v.. lottery(in. total_balls, in. balls_to_draw)
 {
     __ (total_balls < balls_to_draw)
-        r_sy.. pause
+        r_sy.. p..
 
-     srand(time(NULL))sy.. pause //seeds
+     srand(time(NULL))sy.. p.. //seeds
 
-     in. *balls _ n.. in.[balls_to_draw]sy.. pause
+     in. *balls _ n.. in.[balls_to_draw]sy.. p..
 
-     ___ (in. i _ 0sy.. pause i < balls_to_drawsy.. pause ###)
+     ___ (in. i _ 0sy.. p.. i < balls_to_drawsy.. p.. ###)
      {
-         balls[i] _ rand() % total_balls + 1sy.. pause
+         balls[i] _ rand() % total_balls + 1sy.. p..
 
-         ___ (in. j _ 0sy.. pause j < i + 1sy.. pause j++)
+         ___ (in. j _ 0sy.. p.. j < i + 1sy.. p.. j++)
          {
             __(balls[i] __ balls[j] && i !_ j)
             {
-                i--sy.. pause
+                i--sy.. p..
                 b..
             }
             ____ __ (j __ i)
@@ -43,5 +43,5 @@ v.. lottery(in. total_balls, in. balls_to_draw)
          }
      }
 
-     de..[] ballssy.. pause
+     de..[] ballssy.. p..
 }

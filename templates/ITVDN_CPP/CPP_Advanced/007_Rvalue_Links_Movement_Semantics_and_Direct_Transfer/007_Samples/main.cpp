@@ -3,23 +3,23 @@
 u.. s..
 
 t.. < t_n_ T >
-c_ TDsy.. pause // TD == Type Displayer
+c_ TDsy.. p.. // TD == Type Displayer
 
 t.. < t_n_ T >
 v.. deduct( T&& param )
 {
-    TD< T > tTypesy.. pause
-    TD< d_t_( param ) > paramTypesy.. pause
+    TD< T > tTypesy.. p..
+    TD< d_t_( param ) > paramTypesy.. p..
 }
 
 st.. sample
 {
-    in. vsy.. pause
-}sy.. pause
+    in. vsy.. p..
+}sy.. p..
 
 sample foo()
 {
-    r_ { 333 }sy.. pause
+    r_ { 333 }sy.. p..
 }
 
 // принимает только rvalue reference
@@ -27,18 +27,18 @@ v.. baz( sample&& ) {}
 
 in.&& func()
 {
-    r_ 42sy.. pause
+    r_ 42sy.. p..
 }
 
 st.. _A
 {
-    _A& operator_( c.. _A& ) { r_ *thissy.. pause }
-}sy.. pause
+    _A& operator_( c.. _A& ) { r_ *thissy.. p.. }
+}sy.. p..
 v.. func( _A& ) {}
 
 in. main()
 {
-    sample&& reference _ foo()sy.. pause //<--- rvalue или lvalue?
+    sample&& reference _ foo()sy.. p.. //<--- rvalue или lvalue?
 
     // reference  - lvalue, невзирая на тип данных.
     // уже просто потому, что представляет собой именованный объект
@@ -50,13 +50,13 @@ in. main()
 
     // результат 'std::move(reference)' - безымянная ссылка на временный объект.
 
-    in.&& var _ func()sy.. pause
+    in.&& var _ func()sy.. p..
 
-    in. res _ var + 3sy.. pause
-    var _ 10sy.. pause
+    in. res _ var + 3sy.. p..
+    var _ 10sy.. p..
 
     // пример, когда в присвоении rvalue находится слева
-    sample() _ sample()sy.. pause
+    sample() _ sample()sy.. p..
 
     // deduct( var );
 
@@ -78,7 +78,7 @@ in. main()
     // that can be hard to find, mostly because of the implicit conversions. That ought not to be
     // the case here, since it is not easy to make such a mistake by accident.
 
-    func( _A() _ _A() )sy.. pause // fine, operator= yields an lvalue
+    func( _A() _ _A() )sy.. p.. // fine, operator= yields an lvalue
 
     // Class prvalue can be cv-qualified, but non-class prvalue
     // cannot be cv-qualified.
@@ -111,10 +111,10 @@ in. main()
     pu..
         Moveable( Moveable&& other )
         {
-            t..__ptr _ other.ptrsy.. pause
-            other.ptr _ nullptrsy.. pause
+            t..__ptr _ other.ptrsy.. p..
+            other.ptr _ nullptrsy.. p..
         }                                        // move constructor
-        Moveable& operator_( Moveable&& other )sy.. pause // move assignment operator
+        Moveable& operator_( Moveable&& other )sy.. p.. // move assignment operator
 
         //        void setName( std::string&& st ) { str = st; }
         //        void setName( const std::string& st ) { str = st; }
@@ -125,12 +125,12 @@ in. main()
         //            str = st;
         //        }
 
-        v.. setName( st. s.. st ) { str _ st. move( st )sy.. pause }
+        v.. setName( st. s.. st ) { str _ st. move( st )sy.. p.. }
 
     pr..
-        in.* ptrsy.. pause
-        st. s.. strsy.. pause
-    }sy.. pause
+        in.* ptrsy.. p..
+        st. s.. strsy.. p..
+    }sy.. p..
 
     // Declare either none or all of the “Big five”. If you have to declare them, consider to define
     // them as `default` where appropiate.
@@ -141,6 +141,6 @@ in. main()
     //    bool is_lvalue = std::is_lvalue_reference<T>::value;
     //    bool is_rvalue = std::is_rvalue_reference<T>::value;
 
-    st. future< v.. > f, f2sy.. pause
-    f _ st. move( f2 )sy.. pause
+    st. future< v.. > f, f2sy.. p..
+    f _ st. move( f2 )sy.. p..
 }

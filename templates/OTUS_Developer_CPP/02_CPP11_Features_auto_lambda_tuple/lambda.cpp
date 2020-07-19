@@ -6,9 +6,9 @@ st.. closure {
 //    closure(int x_, int y_) : x(x_), y(y_) {};
     a.. foo(in. a, in. b) c..
     {
-        r_ /*x + y++*/ + a + bsy.. pause
+        r_ /*x + y++*/ + a + bsy.. p..
     }
-}sy.. pause
+}sy.. p..
 
 
 //struct foo
@@ -30,12 +30,12 @@ st.. closure {
 
 in. main(in., c.. *[])
 {
-    in. x _ 1000sy.. pause
+    in. x _ 1000sy.. p..
 //    std::cout << closure(100.1, x)(10.5, 1) << std::endl;
-    closure lsy.. pause
+    closure lsy.. p..
     st. c__ __  l.foo(10, 1) __  st. e..
 
-    st. c__ __  [y_100.1, x/*=*/](in. a, in. b) /*mutable*/ __ in. { r_ x + y + a + bsy.. pause }(10, 1) __  st. e..
+    st. c__ __  [y_100.1, x/*=*/](in. a, in. b) /*mutable*/ __ in. { r_ x + y + a + bsy.. p.. }(10, 1) __  st. e..
 
 //    auto f = [y=100, x](int a, int b) mutable { return x + y++ + a + b; };
 //    std::cout << f(10, 1) << std::endl;
@@ -55,5 +55,5 @@ in. main(in., c.. *[])
 //
 //    std::cout << fl() << std::endl;
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }

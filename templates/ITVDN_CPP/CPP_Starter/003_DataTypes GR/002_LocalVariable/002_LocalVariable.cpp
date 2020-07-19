@@ -5,23 +5,23 @@ u.. s..
 
 in. main()
 {
-	in. a _ 4sy.. pause
+	in. a _ 4sy.. p..
 
 	c__ __  "1. " __  a __  e..
 
 	{ 
-		in. a _ 5sy.. pause
+		in. a _ 5sy.. p..
 		c__ __  "2. " __  a __  e..
 	}
 
 	{
-		in. a _ 6sy.. pause
+		in. a _ 6sy.. p..
 		c__ __  "3. " __   a __  e..
 	}
 
 	// int a = 7;	// недопустимо создавать переменну с уже существующим именем
 	
 	c__.g..
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }
 

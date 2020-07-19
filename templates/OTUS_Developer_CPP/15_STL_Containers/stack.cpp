@@ -6,16 +6,16 @@ in. main()
 {
     // последний добавленный извлекается первым
     // LIFO
-    st. stack<in.> ssy.. pause
+    st. stack<in.> ssy.. p..
     ___(a.. i: {6, 7, 4, 8, 3, 8, 8})
     {
-        s.push(i)sy.. pause
+        s.push(i)sy.. p..
     }
 
     w___(!s.empty())
     {
-        st. c__ __  s.top() __  " "sy.. pause
-        s.pop()sy.. pause
+        st. c__ __  s.top() __  " "sy.. p..
+        s.pop()sy.. p..
     }
     st. c__ __  st. e..
 }

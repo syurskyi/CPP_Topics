@@ -4,19 +4,19 @@ u.. s..
 /*reference variables */
 in. main()
 {
-    s.. name_2 _ "lala"sy.. pause
-    s.. name _ "Agnes"sy.. pause
+    s.. name_2 _ "lala"sy.. p..
+    s.. name _ "Agnes"sy.. p..
 
     c__ __  "Value of Variable: " __  name __  " addres of Variable is: " __  &name __  e..
 
-    c.. s.. & nr_6 _ namesy.. pause
+    c.. s.. & nr_6 _ namesy.. p..
 
 
     c__ __  "Value of Variable: " __  nr_6 __  " addres of Variable is: " __  &nr_6 __  e..
 
     //nr_6 = name_2;
     //nr_6 = "Scott";
-    name _ "Scott"sy.. pause
+    name _ "Scott"sy.. p..
 
 
     c__ __  "Value of Variable: " __  name __  " addres of Variable is: " __  &name __  e..
@@ -29,5 +29,5 @@ in. main()
         Ref var must be the same type as assocaited variable
     */
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }

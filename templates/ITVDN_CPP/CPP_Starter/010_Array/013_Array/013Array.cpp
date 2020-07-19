@@ -6,11 +6,11 @@ u.. s..
 in. main()
 {
 	// Создаем массив с именем arr типа int размерностью 3 элемента
-	in. arr[3]sy.. pause
+	in. arr[3]sy.. p..
 
-	arr[0] _ 10sy.. pause
-	arr[1] _ 20sy.. pause
-	arr[2] _ 30sy.. pause
+	arr[0] _ 10sy.. p..
+	arr[1] _ 20sy.. p..
+	arr[2] _ 30sy.. p..
 
 	// Выводим значение хранящееся в переменной arr
 	c__ __  "Variable arr contains - " __  arr __  e..
@@ -20,7 +20,7 @@ in. main()
 
 	c__ __  "Address of first element of array = " __  &arr[0] __  e..
 
-	in. *pArr _ arrsy.. pause // Адрес из переменной arr присваиваем переменной указателю pArr
+	in. *pArr _ arrsy.. p.. // Адрес из переменной arr присваиваем переменной указателю pArr
 
 	c__ __  "Value of variable pArr = " __  pArr __  e..
 
@@ -30,7 +30,7 @@ in. main()
 	c__ __  "Third value = " __  *(pArr + 2) __  ". Address = " __  pArr + 2 __  e..
 
 
-	sy.. pause
-	r_ 0sy.. pause
+	sy.. p..
+	r_ 0sy.. p..
 }
 

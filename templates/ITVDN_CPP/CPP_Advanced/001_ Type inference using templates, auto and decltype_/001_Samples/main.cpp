@@ -25,50 +25,50 @@ t.. < t_n_ T >
 c_ A
 {
 pu..
-    A() _ defaultsy.. pause
-    A( c.. A& ) _ defaultsy.. pause
+    A() _ defaultsy.. p..
+    A( c.. A& ) _ defaultsy.. p..
 
     A( c.. T& _data )
         : data( _data )
     {
     }
-    T datasy.. pause
-}sy.. pause
+    T datasy.. p..
+}sy.. p..
 
 // C++17
 // A( const char* )->A< string >;
 
 in. foo()
 {
-    r_ 42sy.. pause
+    r_ 42sy.. p..
 }
 
 t.. < t_n_ T >
-c_ TDsy.. pause // TD == Type Displayer
+c_ TDsy.. p.. // TD == Type Displayer
 
 t.. < t_n_ T >
 v.. f( T& param )
 {
-    TD< T > tTypesy.. pause
-    TD< d_t_( param ) > paramTypesy.. pause
+    TD< T > tTypesy.. p..
+    TD< d_t_( param ) > paramTypesy.. p..
 }
 
 t.. < t_n_ T, t_n_ U >
 a.. add( c.. T& first, c.. U& second ) __ d_t_( first + second )
 {
-    r_ first + secondsy.. pause
+    r_ first + secondsy.. p..
 }
 
 c.. in.&& foo2()
 {
-    r_ 2sy.. pause
+    r_ 2sy.. p..
 }
 
 // dangerous!
 d_t_( a.. ) fff()
 {
-    in. x _ 10sy.. pause
-    r_ ( x )sy.. pause
+    in. x _ 10sy.. p..
+    r_ ( x )sy.. p..
 }
 
 in. main()
@@ -91,8 +91,8 @@ in. main()
 
     ///////////////////
 
-    c.. in. a _ 10sy.. pause
-    a..& b _ asy.. pause
+    c.. in. a _ 10sy.. p..
+    a..& b _ asy.. p..
     c__ __  typeid( b ).name() __  e..
     // f( b );
 
@@ -107,7 +107,7 @@ in. main()
     // cout << add( 1, 2.5 ) << endl;
     // f( b );
 
-    map< s.., in. > mpsy.. pause
+    map< s.., in. > mpsy.. p..
 
     //    for ( pair< string, int >& it : mp )
     //    {
@@ -117,10 +117,10 @@ in. main()
     {
     }
 
-    a.. i _ foo2()sy.. pause              //  i будет иметь тип int
-    d_t_( a.. ) i2 _ foo2()sy.. pause //  i2 будет иметь тип const int&&
+    a.. i _ foo2()sy.. p..              //  i будет иметь тип int
+    d_t_( a.. ) i2 _ foo2()sy.. p.. //  i2 будет иметь тип const int&&
 
     // f( fff );
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }

@@ -5,7 +5,7 @@
 
 in. main()
 {
-	Poin. p1sy.. pause
-	Poin. p2sy.. pause
-	Rectangle r1(p1, p2)sy.. pause
+	Poin. p1sy.. p..
+	Poin. p2sy.. p..
+	Rectangle r1(p1, p2)sy.. p..
 }

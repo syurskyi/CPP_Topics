@@ -2,38 +2,38 @@
 
 // https://godbolt.org/ gcc 9.2 -O1
 //const
-in. a[] _ {1, 2, 3}sy.. pause
+in. a[] _ {1, 2, 3}sy.. p..
 a.. foo
 //    const
 //    int a[] = {1, 2, 3};
-    r_ a[1]sy.. pause
+    r_ a[1]sy.. p..
 }
 
 // constexpr
 a.. fibonacci_naive(l.. l.. n) {
     __ (n <_ 1)
-        r_ nsy.. pause
+        r_ nsy.. p..
     ____
-        r_ fibonacci_naive(n - 1) + fibonacci_naive(n - 2)sy.. pause
+        r_ fibonacci_naive(n - 1) + fibonacci_naive(n - 2)sy.. p..
 }
 
 // constexpr
 a.. factorial_naive(l.. l.. n) {
     __ (n <_ 1)
-        r_ nsy.. pause
+        r_ nsy.. p..
     ____
-        r_ n * factorial_naive(n - 1)sy.. pause
+        r_ n * factorial_naive(n - 1)sy.. p..
 }
 
 t..<l.. l.. N>
 st.. factorial {
-    static c.. l.. l.. value _ N * factorial<N - 1>::valuesy.. pause
-}sy.. pause
+    static c.. l.. l.. value _ N * factorial<N - 1>::valuesy.. p..
+}sy.. p..
 
 t..<>
 st.. factorial<1> {
-    static c.. l.. l.. value _ 1sy.. pause
-}sy.. pause
+    static c.. l.. l.. value _ 1sy.. p..
+}sy.. p..
 
 in. main
     // 41 выполняется 0.9s

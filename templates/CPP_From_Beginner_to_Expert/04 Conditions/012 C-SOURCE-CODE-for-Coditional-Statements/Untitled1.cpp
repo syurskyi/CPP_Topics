@@ -4,7 +4,7 @@ u.. s..
 //conditional statements / instructions
 main()
 {
-    in. a _ 4, b _ 20sy.. pause
+    in. a _ 4, b _ 20sy.. p..
 /*
     cout << "Enter a: " << endl;
     cin >> a;
@@ -19,7 +19,7 @@ main()
     {
         c__ __  a __  " < " __  b __  e..
         __ (a < 10)
-            c__ __  "a is smaller than 10"sy.. pause
+            c__ __  "a is smaller than 10"sy.. p..
     }
     ____
         c__ __  "that instruction will be executed ONLY if all of the conditions weren't met" __  e..

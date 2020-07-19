@@ -4,19 +4,19 @@ u.. s..
 
 main ()
 {
-    in. numberOfAsteriskssy.. pause
+    in. numberOfAsteriskssy.. p..
 
-    c__ __  "How many asterisks would you like to draw: "sy.. pause
-    c__ __ numberOfAsteriskssy.. pause
+    c__ __  "How many asterisks would you like to draw: "sy.. p..
+    c__ __ numberOfAsteriskssy.. p..
 
-    ___ (in. i _ 1sy.. pause i <_ numberOfAsteriskssy.. pause ###)
+    ___ (in. i _ 1sy.. p.. i <_ numberOfAsteriskssy.. p.. ###)
     {
-        c__ __  "*"sy.. pause
+        c__ __  "*"sy.. p..
         __ (i % 5 __ 0)
         {
             c__ __   e..
         }
     }
-sy.. pause
+sy.. p..
 
 }

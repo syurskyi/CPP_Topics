@@ -1,8 +1,8 @@
-? "lib.h"
-
-? "version.h"
-
-in. version()
-{
-    r_ PROJECT_VERSION_PATCHsy.. pause
-}
+//? "l..
+//
+//? "v..
+//
+//in. version
+//
+//    r_ PROJECT_VERSION_PATCH sy.. p..
+//

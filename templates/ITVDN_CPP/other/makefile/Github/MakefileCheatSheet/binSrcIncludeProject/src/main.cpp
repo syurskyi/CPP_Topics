@@ -10,13 +10,13 @@ in. main(){
 
     c__ __  "Ola mundo do Makefile!" __  e..
 
-    classA asy.. pause
-    classB bsy.. pause
+    classA asy.. p..
+    classB bsy.. p..
 
-    a.run()sy.. pause
-    b.run()sy.. pause
+    a.run()sy.. p..
+    b.run()sy.. p..
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 
 }
 

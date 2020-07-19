@@ -4,14 +4,14 @@ u.. s..
 
 main()
 {
-    d.. lengthInches, lengthCentimeterssy.. pause
+    d.. lengthInches, lengthCentimeterssy.. p..
 
-    c__ __  "Length in inches: "sy.. pause
-    c__ __ lengthInchessy.. pause
+    c__ __  "Length in inches: "sy.. p..
+    c__ __ lengthInchessy.. p..
 
-    lengthCentimeters _ lengthInches * 2.54sy.. pause
+    lengthCentimeters _ lengthInches * 2.54sy.. p..
 
-    c__ __  lengthInches __  " inches is equal to " __  lengthCentimeters __  " centimeters."sy.. pause
+    c__ __  lengthInches __  " inches is equal to " __  lengthCentimeters __  " centimeters."sy.. p..
 
 }
 

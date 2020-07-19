@@ -5,14 +5,14 @@
 n.. NamespaceA {
 	v.. mul(in. a, in. b) {
 		st. c__ __  (a * b) __  st. e..
-	}sy.. pause
+	}sy.. p..
 }
 
-u.. NamespaceAsy.. pause
+u.. NamespaceAsy.. p..
 
 in. main
 
-	mul(10, 42)sy.. pause
+	mul(10, 42)sy.. p..
 
-	r_ 0sy.. pause
+	r_ 0sy.. p..
 }

@@ -26,5 +26,5 @@ in. main(v..)
 {
     c__ __  "\n Hello..!! \n" __  e..
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }

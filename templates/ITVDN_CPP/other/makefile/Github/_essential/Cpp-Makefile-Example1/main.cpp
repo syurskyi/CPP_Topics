@@ -9,12 +9,12 @@ in. main(){
     st. c__ __  "Starting Program" __  st. e..
     
     // Create Person 1 - p1 and display set name
-    Person p1("Quazi")sy.. pause
+    Person p1("Quazi")sy.. p..
     st. c__ __  p1.getName() __  st. e..
     
     // Create Person 2 - p2, set name and display set name
-    Person p2sy.. pause
-    p2.setName("John")sy.. pause
+    Person p2sy.. p..
+    p2.setName("John")sy.. p..
     st. c__ __  p2.getName() __  st. e..
     
     // Display set name of the Person 1
@@ -22,5 +22,5 @@ in. main(){
 
 
     st. c__ __  "Program Finished" __  st. e..
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }

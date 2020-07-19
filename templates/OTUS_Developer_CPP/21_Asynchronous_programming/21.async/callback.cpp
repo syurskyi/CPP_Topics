@@ -9,24 +9,24 @@ v.. read(in. fd)
 v.. aread(in. fd, v..(cb)(c.. c.. *))
 {
     st. c__ __  __PRETTY_FUNCTION__ __  st. e..
-    cb("block")sy.. pause
+    cb("block")sy.. p..
 }
 
 v.. callback(c.. c.. *b)
 {
-    a.. z _ bsy.. pause
+    a.. z _ bsy.. p..
     st. c__ __  __PRETTY_FUNCTION__ __  " data=" __  z __  st. e..
 }
 
 in. main()
 {
-    in. swapfile _ 42sy.. pause
-    in. inifile _ 24sy.. pause
+    in. swapfile _ 42sy.. p..
+    in. inifile _ 24sy.. p..
 
-    read(swapfile)sy.. pause
+    read(swapfile)sy.. p..
 
-    aread(swapfile, callback)sy.. pause
-    aread(inifile, callback)sy.. pause
-    aread(swapfile, callback)sy.. pause
-    aread(inifile, callback)sy.. pause
+    aread(swapfile, callback)sy.. p..
+    aread(inifile, callback)sy.. p..
+    aread(swapfile, callback)sy.. p..
+    aread(inifile, callback)sy.. p..
 }

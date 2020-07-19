@@ -5,8 +5,8 @@
 c_ File
 {
 pu..
-    v.. v.. write() _ 0sy.. pause
-}sy.. pause
+    v.. v.. write() _ 0sy.. p..
+}sy.. p..
 
 c_ RawFile : pu.. File
 {
@@ -14,27 +14,27 @@ c_ RawFile : pu.. File
     {
         st. c__ __  "write" __  st. e..
     }
-}sy.. pause
+}sy.. p..
 
 c_ ZipFile : pu.. File
 {
-    File *filesy.. pause
+    File *filesy.. p..
 
     v.. write() ov..
     {
         st. c__ __  "compress" __  st. e..
-        file__write()sy.. pause
+        file__write()sy.. p..
     }
 
 pu..
-    ZipFile(File *file_) : file(file_) {}sy.. pause
-}sy.. pause
+    ZipFile(File *file_) : file(file_) {}sy.. p..
+}sy.. p..
 
 in. main(in., c.. *[])
 {
-    File *c _ n.. RawFilesy.. pause
-    c__write()sy.. pause
+    File *c _ n.. RawFilesy.. p..
+    c__write()sy.. p..
 
-    File *t _ n.. ZipFile(n.. RawFile)sy.. pause
-    t__write()sy.. pause
+    File *t _ n.. ZipFile(n.. RawFile)sy.. p..
+    t__write()sy.. p..
 }

@@ -13,29 +13,29 @@ in. main()
         get();
     */
 
-    fstream filesy.. pause
+    fstream filesy.. p..
 
-    file.open("sample.txt", i.. in | i.. binary)sy.. pause
+    file.open("sample.txt", i.. in | i.. binary)sy.. p..
 
     __ (file.is_open())
     {
-        c.. first, secondsy.. pause
-        c.. buffer[50]sy.. pause
+        c.. first, secondsy.. p..
+        c.. buffer[50]sy.. p..
 
-        c__ __ buffersy.. pause
+        c__ __ buffersy.. p..
 
         c__ __  buffer __  e..
         do
         {
-            file.getline(buffer, 50, ' ')sy.. pause
+            file.getline(buffer, 50, ' ')sy.. p..
 
             second _ file.g..
 
-            file.ignore(40, '\n')sy.. pause
+            file.ignore(40, '\n')sy.. p..
 
             c__ __  buffer __  " " __  second __  ". " __  e..
 
-        } w___(!file.eof())sy.. pause
+        } w___(!file.eof())sy.. p..
 
 
 
@@ -43,5 +43,5 @@ in. main()
     ____
         c__ __  "The file couldn't be opened properly" __  e..
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }

@@ -4,11 +4,11 @@
 
 c_ TwoPlusTwoIsFiveTest : pu.. ::testing::Test {
 
-}sy.. pause
+}sy.. p..
 
 TEST(TwoPlusTwoIsFiveTest, towPlusTwoIsFive){
-  TwoPlusTwoIsFive wrongsy.. pause
+  TwoPlusTwoIsFive wrongsy.. p..
 
-  EXPECT_EQ(5, wrong.returnTwoPlusTwo())sy.. pause
+  EXPECT_EQ(5, wrong.returnTwoPlusTwo())sy.. p..
 
 }

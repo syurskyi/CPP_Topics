@@ -23,11 +23,11 @@ t..<c_ T>
 v.. bar(T &&t)
 {
     st. c__ __  __PRETTY_FUNCTION__ __  st. e..
-    baz(st. forward<T>(t))sy.. pause
+    baz(st. forward<T>(t))sy.. p..
 }
 
 in. main(in., c.. *[]) {
-    xray x("x")sy.. pause
+    xray x("x")sy.. p..
 
     // xray x("x");
     // xray y("y");
@@ -63,5 +63,5 @@ in. main(in., c.. *[]) {
 
     st. c__ __  "---" __  st. e..
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }

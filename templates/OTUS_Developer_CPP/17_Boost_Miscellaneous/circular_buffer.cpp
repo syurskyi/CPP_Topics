@@ -21,15 +21,15 @@
 //    E     B
 
 in. main
-    boost::circular_buffer<in.> buffer{4}sy.. pause
+    boost::circular_buffer<in.> buffer{4}sy.. p..
 
-    ___ (in. i _ 0sy.. pause i < 10sy.. pause ++i) {
-        buffer.push_back(i)sy.. pause
+    ___ (in. i _ 0sy.. p.. i < 10sy.. p.. ++i) {
+        buffer.push_back(i)sy.. p..
     }
 
     ___ (in. i : buffer) {
-        st. c__ __  i __  " "sy.. pause
+        st. c__ __  i __  " "sy.. p..
     }
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }

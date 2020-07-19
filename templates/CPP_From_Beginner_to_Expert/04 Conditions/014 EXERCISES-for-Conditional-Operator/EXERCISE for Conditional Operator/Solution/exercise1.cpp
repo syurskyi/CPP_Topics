@@ -4,14 +4,14 @@ u.. s..
 
 main ()
 {
-    in. agesy.. pause
-    c__ __  "Please input your age: "sy.. pause
-    c__ __ agesy.. pause
+    in. agesy.. p..
+    c__ __  "Please input your age: "sy.. p..
+    c__ __ agesy.. p..
 
     s.. isAdult _ (age >_ 18)
         ? "You are an adult please enter !"
-        : "You are not an adult !"sy.. pause
+        : "You are not an adult !"sy.. p..
 
-    c__ __  isAdultsy.. pause
+    c__ __  isAdultsy.. p..
 
 }

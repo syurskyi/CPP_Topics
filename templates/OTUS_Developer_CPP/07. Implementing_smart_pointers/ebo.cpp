@@ -6,28 +6,28 @@ st.. deleter {
     v.. operator()
         st. c__ __  __PRETTY_FUNCTION__ __  st. e..
     }
-}sy.. pause
+}sy.. p..
 
 st.. ptr {
-    in. *xsy.. pause
-}sy.. pause
+    in. *xsy.. p..
+}sy.. p..
 
 st.. ptra {
-    in. *xsy.. pause
-    deleter ysy.. pause
+    in. *xsy.. p..
+    deleter ysy.. p..
 
     v.. deleter
-        y()sy.. pause
+        y()sy.. p..
     }
-}sy.. pause
+}sy.. p..
 
 st.. ptrd : deleter {
-    in. *xsy.. pause
+    in. *xsy.. p..
 
     v.. deleter
-        (*t..)()sy.. pause
+        (*t..)()sy.. p..
     }
-}sy.. pause
+}sy.. p..
 
 in. main
 //    std::cout << sizeof(deleter) << std::endl;

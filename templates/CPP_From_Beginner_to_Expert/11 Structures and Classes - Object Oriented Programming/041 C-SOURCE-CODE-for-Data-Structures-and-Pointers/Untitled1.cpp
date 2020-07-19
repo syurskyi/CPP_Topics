@@ -5,23 +5,23 @@ u.. s..
 
 st.. personalData
 {
-    s.. namesy.. pause
-    s.. surnamesy.. pause
-    s.. telephoneNumbersy.. pause
-    sh.. agesy.. pause
-}a,bsy.. pause
-v.. test(personalData *)sy.. pause
+    s.. namesy.. p..
+    s.. surnamesy.. p..
+    s.. telephoneNumbersy.. p..
+    sh.. agesy.. p..
+}a,bsy.. p..
+v.. test(personalData *)sy.. p..
 in. main()
 {
-    personalData person[5]sy.. pause
-    a.age _50sy.. pause
+    personalData person[5]sy.. p..
+    a.age _50sy.. p..
 
    // cout << a.age << endl;
-    person[0].name _ "Arkadiusz"sy.. pause
-    person[1].name _ "Wiola"sy.. pause
-    person[0].surname _ "Wlodarczyk"sy.. pause
-    person[0].telephoneNumber _ "606102340"sy.. pause
-    person[0].age _ 22sy.. pause
+    person[0].name _ "Arkadiusz"sy.. p..
+    person[1].name _ "Wiola"sy.. p..
+    person[0].surname _ "Wlodarczyk"sy.. p..
+    person[0].telephoneNumber _ "606102340"sy.. p..
+    person[0].age _ 22sy.. p..
 /*
     cout << person[0].name << endl;
     cout << person[0].surname << endl;
@@ -33,16 +33,16 @@ in. main()
     cout << (*&person[0]).name << endl;
     cout << (person+1)->name << endl;
 */
-    personalData *p _ personsy.. pause
+    personalData *p _ personsy.. p..
 
     c__ __  p__name __  e..
 
-    test(p)sy.. pause // test(person);
+    test(p)sy.. p.. // test(person);
 
     c__ __  p__name __  e..
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }
 v.. test(personalData *person)
 {
-    person__name _ "Agnes"sy.. pause
+    person__name _ "Agnes"sy.. p..
 }

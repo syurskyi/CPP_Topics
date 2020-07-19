@@ -2,18 +2,18 @@
 
 u.. s..
 
-in. * createArray(in.)sy.. pause
+in. * createArray(in.)sy.. p..
 
 in. main ()
 {
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }
 
 in. * createArray(in. sizeOfArray)
 {
-    in.* newArray _ n.. in.[sizeOfArray]sy.. pause
+    in.* newArray _ n.. in.[sizeOfArray]sy.. p..
 
-    r_ newArraysy.. pause
+    r_ newArraysy.. p..
 }
 

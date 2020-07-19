@@ -18,24 +18,24 @@ in. main()
         ios::cur - (current) set from current place
     */
 
-    fstream filesy.. pause
+    fstream filesy.. p..
 
-    file.open("sample.txt", i.. out | i.. binary)sy.. pause
+    file.open("sample.txt", i.. out | i.. binary)sy.. p..
 
     __ (file.is_open())
     {
-        s.. tmp _ "this is text about nothing"sy.. pause
+        s.. tmp _ "this is text about nothing"sy.. p..
 
-        file __  tmpsy.. pause
+        file __  tmpsy.. p..
 
         c__ __  file.tellp() __  e..
 
-        file.seekp(0, i.. beg)sy.. pause
+        file.seekp(0, i.. beg)sy.. p..
 
-        file __  "T"sy.. pause
+        file __  "T"sy.. p..
     }
     ____
         c__ __  "The file couldn't be opened properly" __  e..
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }

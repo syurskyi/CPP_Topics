@@ -4,13 +4,13 @@
 
 c_ Logger {
 pu..
-    Logger(c.. Logger& root) _ deletesy.. pause // [2]
-    Logger& operator_(c.. Logger&) _ deletesy.. pause // [3]
+    Logger(c.. Logger& root) _ deletesy.. p.. // [2]
+    Logger& operator_(c.. Logger&) _ deletesy.. p.. // [3]
 
     static Logger& Instance()
     {
-        static Logger instancesy.. pause
-        r_ instancesy.. pause
+        static Logger instancesy.. p..
+        r_ instancesy.. p..
     }
 
     v.. info(c.. st. s..& message)
@@ -27,16 +27,16 @@ pr..
     Logger() // [1]
             :os{st. cerr} { }
 
-    st. ostream& ossy.. pause // [3]
-}sy.. pause
+    st. ostream& ossy.. p.. // [3]
+}sy.. p..
 
 in. main(in., c..* [])
 {
 //    Logger sly_newbie; // [1]
 //    Logger sly_adv(Logger::Instance()); // [2]
 //    Logger::Instance() = Logger::Instance(); // [3]
-    Logger::Instance().info("started")sy.. pause
-    Logger::Instance().warn("program is empty")sy.. pause
+    Logger::Instance().info("started")sy.. p..
+    Logger::Instance().warn("program is empty")sy.. p..
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }

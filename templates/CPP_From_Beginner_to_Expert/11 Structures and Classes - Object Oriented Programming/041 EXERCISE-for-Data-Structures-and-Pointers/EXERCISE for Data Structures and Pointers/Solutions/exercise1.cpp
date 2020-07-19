@@ -4,14 +4,14 @@ u.. s..
 
 st.. book
 {
-    s.. titlesy.. pause
-    s.. authorsy.. pause
-    in. publicationYearsy.. pause
-}sy.. pause
+    s.. titlesy.. p..
+    s.. authorsy.. p..
+    in. publicationYearsy.. p..
+}sy.. p..
 
 in. main()
 {
-    book book1, book2, book3sy.. pause
+    book book1, book2, book3sy.. p..
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }

@@ -7,10 +7,10 @@
 */
 in. fatorial(in. *val) {
 	__(*val __ 1 || *val __ 0) {
-		r_ 1sy.. pause
+		r_ 1sy.. p..
 	} ____ {
-		in. anterior _ *val - 1sy.. pause//armazena o valor inteiro anterior a *val
-		r_ *val * fatorial(&anterior)sy.. pause
+		in. anterior _ *val - 1sy.. p..//armazena o valor inteiro anterior a *val
+		r_ *val * fatorial(&anterior)sy.. p..
 	}
 }
 
@@ -22,15 +22,15 @@ in. fatorial(in. *val) {
 */
 in. primo(in. *resultFat, in. *chk) {
 	__(*chk __ 1) {
-		r_ *resultFatsy.. pause
+		r_ *resultFatsy.. p..
 	} ____ {
 		__(*resultFat%*chk __ 0) {
-			*resultFat -_ 1sy.. pause
-			*chk _ *resultFat/2sy.. pause
-			r_ primo(resultFat, chk)sy.. pause
+			*resultFat -_ 1sy.. p..
+			*chk _ *resultFat/2sy.. p..
+			r_ primo(resultFat, chk)sy.. p..
 		} ____ {
-			*chk -_ 1sy.. pause
-			r_ primo(resultFat, chk)sy.. pause
+			*chk -_ 1sy.. p..
+			r_ primo(resultFat, chk)sy.. p..
 		}
 	}
 }

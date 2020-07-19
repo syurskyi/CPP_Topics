@@ -6,17 +6,17 @@ u.. s..
 main ()
 {
 
-    in. numbers[5]sy.. pause
+    in. numbers[5]sy.. p..
 
-    ___ (in. i _ 0sy.. pause i < 5sy.. pause ###)
+    ___ (in. i _ 0sy.. p.. i < 5sy.. p.. ###)
     {
-        c__ __  "Input " __  i+1 __  ". number: "sy.. pause
-        c__ __ numbers[i]sy.. pause
+        c__ __  "Input " __  i+1 __  ". number: "sy.. p..
+        c__ __ numbers[i]sy.. p..
     }
 
-    system("cls")sy.. pause
+    system("cls")sy.. p..
 
-    ___ (in. i _ 0sy.. pause i < 5sy.. pause ###)
+    ___ (in. i _ 0sy.. p.. i < 5sy.. p.. ###)
     {
         __ (numbers[i] % 2 __ 0)
         {

@@ -3,48 +3,48 @@
 
 u.. s..
 
-in. * createArray(in.)sy.. pause
+in. * createArray(in.)sy.. p..
 
-v.. swapTwoValues(in.*, in.*)sy.. pause
+v.. swapTwoValues(in.*, in.*)sy.. p..
 
-v.. fillArrayWithValues(in.[], in.)sy.. pause
-v.. prin.ArrayValues(in.[], in.)sy.. pause
+v.. fillArrayWithValues(in.[], in.)sy.. p..
+v.. prin.ArrayValues(in.[], in.)sy.. p..
 
 in. main ()
 {
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }
 
 in. * createArray(in. sizeOfArray)
 {
-    in.* SnewArray _ n.. in.[sizeOfArray]sy.. pause
+    in.* SnewArray _ n.. in.[sizeOfArray]sy.. p..
 
-    r_ newArraysy.. pause
+    r_ newArraysy.. p..
 }
 
 v.. swapTwoValues(in.* firstValue, in.* secondValue)
 {
-    in. temporaryVariablesy.. pause
+    in. temporaryVariablesy.. p..
 
-    temporaryVariable _ *firstValuesy.. pause
-    *firstValue _ *secondValuesy.. pause
-    *secondValue _ temporaryVariablesy.. pause
+    temporaryVariable _ *firstValuesy.. p..
+    *firstValue _ *secondValuesy.. p..
+    *secondValue _ temporaryVariablesy.. p..
 }
 
 v.. fillArrayWithValues(in. arrayToFill[], in. sizeOfArray)
 {
-    ___ (in. i _ 0sy.. pause i < sizeOfArraysy.. pause ###)
+    ___ (in. i _ 0sy.. p.. i < sizeOfArraysy.. p.. ###)
     {
-        c__ __  "Enter " __  i+1 __  " element: "sy.. pause
-        c__ __ arrayToFill[i]sy.. pause
+        c__ __  "Enter " __  i+1 __  " element: "sy.. p..
+        c__ __ arrayToFill[i]sy.. p..
     }
-    system("cls")sy.. pause
+    system("cls")sy.. p..
 }
 
 v.. prin.ArrayValues(in. arrayToPrin.[], in. sizeOfArray)
 {
-    ___ (in. i _ 0sy.. pause i < sizeOfArraysy.. pause ###)
+    ___ (in. i _ 0sy.. p.. i < sizeOfArraysy.. p.. ###)
     {
         c__ __  "Array[" __  i __  "] = " __  arrayToPrin.[i] __  e..
     }

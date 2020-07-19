@@ -7,27 +7,27 @@ u.. s..
 
 st.. Person
 {
-    s.. namesy.. pause
-    s.. surnamesy.. pause
-    sh.. agesy.. pause
-    s.. telephonesy.. pause
-}sy.. pause
-sh.. peopleInDataBasesy.. pause
-Person people[20]sy.. pause
+    s.. namesy.. p..
+    s.. surnamesy.. p..
+    sh.. agesy.. p..
+    s.. telephonesy.. p..
+}sy.. p..
+sh.. peopleInDataBasesy.. p..
+Person people[20]sy.. p..
 
-v.. requireEnter()sy.. pause
+v.. requireEnter()sy.. p..
 
-v.. addPerson()sy.. pause
-v.. showPeople()sy.. pause
-v.. savePeopleToFile()sy.. pause
-v.. loadPeopleFromFile()sy.. pause
-v.. searchDatabase()sy.. pause
-v.. removePersonFromDatabase()sy.. pause
+v.. addPerson()sy.. p..
+v.. showPeople()sy.. p..
+v.. savePeopleToFile()sy.. p..
+v.. loadPeopleFromFile()sy.. p..
+v.. searchDatabase()sy.. p..
+v.. removePersonFromDatabase()sy.. p..
 
 in. main()
 {
-    c.. testsy.. pause
-    loadPeopleFromFile()sy.. pause
+    c.. testsy.. p..
+    loadPeopleFromFile()sy.. p..
 
     do
     {
@@ -43,64 +43,64 @@ in. main()
 
         c__ __  e..
 
-        test _ getch()sy.. pause
+        test _ getch()sy.. p..
 
         s..(test)
         {
             c.. '1':
-                addPerson()sy.. pause
+                addPerson()sy.. p..
                 b..
             c.. '2':
-                showPeople()sy.. pause
+                showPeople()sy.. p..
                 b..
             c.. '3':
-                savePeopleToFile()sy.. pause
+                savePeopleToFile()sy.. p..
                 b..
             c.. '4':
-                loadPeopleFromFile()sy.. pause
+                loadPeopleFromFile()sy.. p..
                 b..
             c.. '5':
-                searchDatabase()sy.. pause
+                searchDatabase()sy.. p..
                 b..
             c.. '6':
-                removePersonFromDatabase()sy.. pause
+                removePersonFromDatabase()sy.. p..
                 b..
         }
 
 
-        requireEnter()sy.. pause
-        system("cls")sy.. pause
-    }w___(test !_ 27)sy.. pause
+        requireEnter()sy.. p..
+        system("cls")sy.. p..
+    }w___(test !_ 27)sy.. p..
 
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }
 v.. requireEnter()
 {
     c__ __  "Click Enter to continue... " __  e..
-    w___(getch() !_ 13)sy.. pause
+    w___(getch() !_ 13)sy.. p..
 }
 v.. addPerson()
 {
-    c__ __  "Type name: "sy.. pause
-    c__ __ people[peopleInDataBase].namesy.. pause
+    c__ __  "Type name: "sy.. p..
+    c__ __ people[peopleInDataBase].namesy.. p..
 
-    c__ __  "Type surname: "sy.. pause
-    c__ __ people[peopleInDataBase].surnamesy.. pause
+    c__ __  "Type surname: "sy.. p..
+    c__ __ people[peopleInDataBase].surnamesy.. p..
 
-    c__ __  "Type age: "sy.. pause
-    c__ __ people[peopleInDataBase].agesy.. pause
+    c__ __  "Type age: "sy.. p..
+    c__ __ people[peopleInDataBase].agesy.. p..
 
-    c__ __  "Type telephone: "sy.. pause
-    c__ __ people[peopleInDataBase].telephonesy.. pause
+    c__ __  "Type telephone: "sy.. p..
+    c__ __ people[peopleInDataBase].telephonesy.. p..
 
-    peopleInDataBase++sy.. pause
+    peopleInDataBase++sy.. p..
 }
 v.. showPeople()
 {
     __(peopleInDataBase > 0)
     {
-        ___ (in. i _ 0sy.. pause i < peopleInDataBasesy.. pause ###)
+        ___ (in. i _ 0sy.. p.. i < peopleInDataBasesy.. p.. ###)
         {
             c__ __  "Person index: " __  (i+1) __  e..
             c__ __  "Name: " __  people[i].name __  e..
@@ -114,13 +114,13 @@ v.. showPeople()
 }
 v.. savePeopleToFile()
 {
-    ofstream file("database.txt")sy.. pause
+    ofstream file("database.txt")sy.. p..
 
     __ (file.is_open())
     {
         file __  peopleInDataBase __  e..
 
-        ___ (in. i _ 0sy.. pause i < peopleInDataBasesy.. pause ###)
+        ___ (in. i _ 0sy.. p.. i < peopleInDataBasesy.. p.. ###)
         {
             file __  people[i].name __  e..
             file __  people[i].surname __  e..
@@ -128,7 +128,7 @@ v.. savePeopleToFile()
             file __  people[i].telephone __  e..
         }
 
-        file.close()sy.. pause
+        file.close()sy.. p..
     }
     ____
         c__ __  "I couldnt save to database" __  e..
@@ -136,11 +136,11 @@ v.. savePeopleToFile()
 }
 v.. loadPeopleFromFile()
 {
-    ifstream file("database.txt")sy.. pause
+    ifstream file("database.txt")sy.. p..
 
     __ (file.is_open())
     {
-        file __ peopleInDataBasesy.. pause
+        file __ peopleInDataBasesy.. p..
 
         __ (peopleInDataBase > 0)
         {
@@ -151,16 +151,16 @@ v.. loadPeopleFromFile()
                 file >> people[i].age;
                 file >> people[i].telephone;
             }*/
-            in. i _ 0sy.. pause
+            in. i _ 0sy.. p..
             do
             {
-                file __ people[i].namesy.. pause
-                file __ people[i].surnamesy.. pause
-                file __ people[i].agesy.. pause
-                file __ people[i].telephonesy.. pause
+                file __ people[i].namesy.. p..
+                file __ people[i].surnamesy.. p..
+                file __ people[i].agesy.. p..
+                file __ people[i].telephonesy.. p..
 
-                ###sy.. pause
-            }w___(!file.eof())sy.. pause
+                ###sy.. p..
+            }w___(!file.eof())sy.. p..
 
             c__ __  "People has been loaded properly. " __  e..
         }
@@ -174,11 +174,11 @@ v.. searchDatabase()
 {
     __ (peopleInDataBase > 0)
     {
-        s.. namesy.. pause
-        c__ __  "Type a name of person you want to look for: "sy.. pause
-        c__ __ namesy.. pause
+        s.. namesy.. p..
+        c__ __  "Type a name of person you want to look for: "sy.. p..
+        c__ __ namesy.. p..
 
-        ___ (in. i _ 0sy.. pause i < peopleInDataBasesy.. pause ###)
+        ___ (in. i _ 0sy.. p.. i < peopleInDataBasesy.. p.. ###)
         {
             __ (name __ people[i].name)
             {
@@ -199,22 +199,22 @@ v.. removePersonFromDatabase()
 {
     __ (peopleInDataBase > 0)
     {
-        sh.. indexsy.. pause
+        sh.. indexsy.. p..
         c__ __  "Who do you want to remove? Type index: " __  e..
-        c__ __ indexsy.. pause
+        c__ __ indexsy.. p..
 
         __ (peopleInDataBase >_ index)
         {
-            ___ (sh.. k _ indexsy.. pause k < peopleInDataBasesy.. pause k++)
+            ___ (sh.. k _ indexsy.. p.. k < peopleInDataBasesy.. p.. k++)
             {
-                people[k-1].name _ people[k].namesy.. pause
-                people[k-1].surname _ people[k].surnamesy.. pause
-                people[k-1].age _ people[k].agesy.. pause
-                people[k-1].telephone _ people[k].telephonesy.. pause
+                people[k-1].name _ people[k].namesy.. p..
+                people[k-1].surname _ people[k].surnamesy.. p..
+                people[k-1].age _ people[k].agesy.. p..
+                people[k-1].telephone _ people[k].telephonesy.. p..
             }
 
-            peopleInDataBase--sy.. pause
-            savePeopleToFile()sy.. pause
+            peopleInDataBase--sy.. p..
+            savePeopleToFile()sy.. p..
         }
         ____
             c__ __  "There is nobody like that" __  e..

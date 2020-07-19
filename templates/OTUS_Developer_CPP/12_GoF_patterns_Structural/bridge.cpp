@@ -3,9 +3,9 @@
 ? |i..
 
 st.. ClockSignal {
-    v.. ~ClockSignal() _ defaultsy.. pause
-    v.. v.. now() _ 0sy.. pause
-}sy.. pause
+    v.. ~ClockSignal() _ defaultsy.. p..
+    v.. v.. now() _ 0sy.. p..
+}sy.. p..
 
 c_ in.ernetClockSignal : pu.. ClockSignal
 {
@@ -13,7 +13,7 @@ c_ in.ernetClockSignal : pu.. ClockSignal
     {
         st. c__ __  "internet clock" __  st. e..
     }
-}sy.. pause
+}sy.. p..
 
 c_ LocalClockSignal : pu.. ClockSignal
 {
@@ -21,20 +21,20 @@ c_ LocalClockSignal : pu.. ClockSignal
     {
         st. c__ __  "local clock" __  st. e..
     }
-}sy.. pause
+}sy.. p..
 
 st.. Clock {
-    ClockSignal *ssy.. pause
+    ClockSignal *ssy.. p..
 
-    v.. ~Clock() _ defaultsy.. pause
+    v.. ~Clock() _ defaultsy.. p..
 
     v.. refresh()
     {
-        s__now()sy.. pause
-        display()sy.. pause
+        s__now()sy.. p..
+        display()sy.. p..
     }
-    v.. v.. display() _ 0sy.. pause
-}sy.. pause
+    v.. v.. display() _ 0sy.. p..
+}sy.. p..
 
 c_ DigitalClock : pu.. Clock
 {
@@ -42,7 +42,7 @@ c_ DigitalClock : pu.. Clock
     {
         st. c__ __  "digital" __  st. e..
     }
-}sy.. pause
+}sy.. p..
 
 c_ AnalogClock : pu.. Clock
 {
@@ -50,15 +50,15 @@ c_ AnalogClock : pu.. Clock
     {
         st. c__ __  "analog" __  st. e..
     }
-}sy.. pause
+}sy.. p..
 
 in. main(in., c.. *[])
 {
-    Clock *c _ n.. DigitalClocksy.. pause
-    c__s _ n.. in.ernetClockSignalsy.. pause
+    Clock *c _ n.. DigitalClocksy.. p..
+    c__s _ n.. in.ernetClockSignalsy.. p..
 
-    c__refresh()sy.. pause
+    c__refresh()sy.. p..
 
-    de.. c__ssy.. pause
-    de.. csy.. pause
+    de.. c__ssy.. p..
+    de.. csy.. p..
 }

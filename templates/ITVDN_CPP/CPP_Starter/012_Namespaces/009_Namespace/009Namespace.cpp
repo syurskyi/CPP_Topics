@@ -4,8 +4,8 @@
 n.. NamespaceA {
 	st.. MyStructA {
 
-	}sy.. pause
-}sy.. pause
+	}sy.. p..
+}sy.. p..
 
 n.. NamespaceA {
 	// Нельзя создавать типы с одинаковым именем в одноименных пространствах имен
@@ -14,17 +14,17 @@ n.. NamespaceA {
 	};*/
 	st.. MyStructB {
 
-	}sy.. pause
-}sy.. pause
+	}sy.. p..
+}sy.. p..
 
 in. main()
 {
-	u.. NamespaceAsy.. pause
+	u.. NamespaceAsy.. p..
 
-	MyStructA variable1sy.. pause
-	MyStructB variable2sy.. pause
+	MyStructA variable1sy.. p..
+	MyStructB variable2sy.. p..
 
-	r_ 0sy.. pause
+	r_ 0sy.. p..
 }
 
 

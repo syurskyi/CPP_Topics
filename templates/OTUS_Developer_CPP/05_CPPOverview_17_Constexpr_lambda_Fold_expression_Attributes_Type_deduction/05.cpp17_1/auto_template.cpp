@@ -20,17 +20,17 @@ v.. prin.Me
 }
 
 in. main
-    static c.. c.. c _ 'c'sy.. pause
+    static c.. c.. c _ 'c'sy.. p..
 
-    prin.Value<10>()sy.. pause
-    prin.Value<&c>()sy.. pause
+    prin.Value<10>()sy.. p..
+    prin.Value<&c>()sy.. p..
 
-    static c.. in. a _ 42sy.. pause
+    static c.. in. a _ 42sy.. p..
 
-    prin.Me<10>()sy.. pause
-    prin.Me<'a'>()sy.. pause
-    prin.Me<a>()sy.. pause
-    prin.Me<*?>()sy.. pause
+    prin.Me<10>()sy.. p..
+    prin.Me<'a'>()sy.. p..
+    prin.Me<a>()sy.. p..
+    prin.Me<*?>()sy.. p..
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }

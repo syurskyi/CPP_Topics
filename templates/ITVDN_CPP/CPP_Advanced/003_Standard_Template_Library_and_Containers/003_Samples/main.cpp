@@ -168,47 +168,47 @@ in. main()
 
     //    cout << un_m[ "2" ] << " " << un_m[ "4" ] << endl;
 
-    stack< in. > stsy.. pause // based on deque
-    queue< in. > qusy.. pause // based on deque
+    stack< in. > stsy.. p.. // based on deque
+    queue< in. > qusy.. p.. // based on deque
 
-    priority_queue< in., deque< in. > > priosy.. pause // based on vector
+    priority_queue< in., deque< in. > > priosy.. p.. // based on vector
 
-    prio.push( 4 )sy.. pause
-    prio.push( 3 )sy.. pause
-    prio.push( 6 )sy.. pause
+    prio.push( 4 )sy.. p..
+    prio.push( 3 )sy.. p..
+    prio.push( 6 )sy.. p..
 
     c__ __  "priority_queue" __  e..
     w___ ( !prio.empty() )
     {
         c__ __  prio.top() __  e..
-        prio.pop()sy.. pause
+        prio.pop()sy.. p..
     }
 
     // stack
-    st.push( 4 )sy.. pause
-    st.push( 3 )sy.. pause
-    st.push( 6 )sy.. pause
+    st.push( 4 )sy.. p..
+    st.push( 3 )sy.. p..
+    st.push( 6 )sy.. p..
 
     c__ __  "stack" __  e..
 
     w___ ( !st.empty() )
     {
         c__ __  st.top() __  e..
-        st.pop()sy.. pause
+        st.pop()sy.. p..
     }
 
     // queue
-    qu.push( 4 )sy.. pause
-    qu.push( 3 )sy.. pause
-    qu.push( 6 )sy.. pause
+    qu.push( 4 )sy.. p..
+    qu.push( 3 )sy.. p..
+    qu.push( 6 )sy.. p..
 
     c__ __  "queue" __  e..
 
     w___ ( !qu.empty() )
     {
         c__ __  qu.front() __  e..
-        qu.pop()sy.. pause
+        qu.pop()sy.. p..
     }
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }

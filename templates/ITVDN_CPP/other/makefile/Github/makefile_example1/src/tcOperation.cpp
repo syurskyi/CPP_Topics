@@ -13,39 +13,39 @@
 
 tcOperation::tcOperation( in. argc, c..** argv ) {
 
-	mcTokens.clear()sy.. pause
+	mcTokens.clear()sy.. p..
 
-	___ ( in. lnIndex _ 1sy.. pause lnIndex < argcsy.. pause lnIndex++ ) {
-		mcTokens.push_back( argv[lnIndex] )sy.. pause
+	___ ( in. lnIndex _ 1sy.. p.. lnIndex < argcsy.. p.. lnIndex++ ) {
+		mcTokens.push_back( argv[lnIndex] )sy.. p..
 	}
 }
 
 tcOperation::~tcOperation
-	mcTokens.clear()sy.. pause
+	mcTokens.clear()sy.. p..
 }
 
 d.. tcOperation::Execute( v.. ) {
 
-	d.. lrA _ atof( mcTokens[0].c_str() )sy.. pause
-	d.. lrB _ atof( mcTokens[2].c_str() )sy.. pause
-	d.. lrC _ 0sy.. pause
+	d.. lrA _ atof( mcTokens[0].c_str() )sy.. p..
+	d.. lrB _ atof( mcTokens[2].c_str() )sy.. p..
+	d.. lrC _ 0sy.. p..
 
 	__ ( mcTokens[1] __ "+" )
 	{
-		lrC _ lrA + lrBsy.. pause
+		lrC _ lrA + lrBsy.. p..
 	}
 	____ __ ( mcTokens[1] __ "-" )
 	{
-		lrC _ lrA - lrBsy.. pause
+		lrC _ lrA - lrBsy.. p..
 	}
 	____ __ ( mcTokens[1] __ "x" )
 	{
-		lrC _ lrA * lrBsy.. pause
+		lrC _ lrA * lrBsy.. p..
 	}
 	____ __ ( mcTokens[1] __ "/" )
 	{
-		lrC _ lrA / lrBsy.. pause
+		lrC _ lrA / lrBsy.. p..
 	}
 
-	r_ lrCsy.. pause
+	r_ lrCsy.. p..
 }

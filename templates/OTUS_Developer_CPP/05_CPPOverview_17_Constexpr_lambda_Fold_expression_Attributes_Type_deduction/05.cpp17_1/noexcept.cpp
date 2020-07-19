@@ -15,7 +15,7 @@ pu..
     v.. safe() noexcept(t..) {
         st. c__ __  __PRETTY_FUNCTION__ __  st. e..
     }
-}sy.. pause
+}sy.. p..
 
 v.. dang
     st. c__ __  __PRETTY_FUNCTION__ __  st. e..
@@ -27,13 +27,13 @@ v.. safe() noexcept {
 
 in. main
 //    const
-    foo fsy.. pause
-    f.over()sy.. pause
+    foo fsy.. p..
+    f.over()sy.. p..
 
-    f.dang()sy.. pause
-    f.safe()sy.. pause
+    f.dang()sy.. p..
+    f.safe()sy.. p..
 
-    v.. (*fp)() noexceptsy.. pause
+    v.. (*fp)() noexceptsy.. p..
 //    fp = dang;
-    fp _ safesy.. pause
+    fp _ safesy.. p..
 }

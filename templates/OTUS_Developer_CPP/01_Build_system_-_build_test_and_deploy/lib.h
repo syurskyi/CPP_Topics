@@ -1,3 +1,3 @@
-#pragma once
-
-in. version();
+//?p.. o..
+//
+//in. version

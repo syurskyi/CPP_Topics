@@ -1,11 +1,11 @@
 ? "user.h"
 
-in. User::counter _ 0sy.. pause
+in. User::counter _ 0sy.. p..
 
 User::User()
 {
-    counter++sy.. pause
-    ID _ countersy.. pause
+    counter++sy.. p..
+    ID _ countersy.. p..
 }
 User::~User()
 {

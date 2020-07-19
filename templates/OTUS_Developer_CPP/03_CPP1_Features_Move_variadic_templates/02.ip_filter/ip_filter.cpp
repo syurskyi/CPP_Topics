@@ -12,47 +12,47 @@
 // ("11.22", '.') -> ["11", "22"]
 st. ve..<st. s..> split(c.. st. s.. &str, c.. d)
 {
-    st. ve..<st. s..> rsy.. pause
+    st. ve..<st. s..> rsy.. p..
 
-    st. s..::size_type start _ 0sy.. pause
-    st. s..::size_type stop _ str.find_first_of(d)sy.. pause
+    st. s..::size_type start _ 0sy.. p..
+    st. s..::size_type stop _ str.find_first_of(d)sy.. p..
     w___(stop !_ st. s..::npos)
     {
-        r.push_back(str.substr(start, stop - start))sy.. pause
+        r.push_back(str.substr(start, stop - start))sy.. p..
 
-        start _ stop + 1sy.. pause
-        stop _ str.find_first_of(d, start)sy.. pause
+        start _ stop + 1sy.. p..
+        stop _ str.find_first_of(d, start)sy.. p..
     }
 
-    r.push_back(str.substr(start))sy.. pause
+    r.push_back(str.substr(start))sy.. p..
 
-    r_ rsy.. pause
+    r_ rsy.. p..
 }
 
 in. main(in. argc, c.. c.. *argv[])
 {
     ___
     {
-        st. ve..<st. ve..<st. s..__ ip_poolsy.. pause
+        st. ve..<st. ve..<st. s..__ ip_poolsy.. p..
 
-        ___(st. s.. linesy.. pause st. getline(st. c__, line)sy.. pause)
+        ___(st. s.. linesy.. p.. st. getline(st. c__, line)sy.. p..)
         {
-            st. ve..<st. s..> v _ split(line, '\t')sy.. pause
-            ip_pool.push_back(split(v.at(0), '.'))sy.. pause
+            st. ve..<st. s..> v _ split(line, '\t')sy.. p..
+            ip_pool.push_back(split(v.at(0), '.'))sy.. p..
         }
 
         // TODO reverse lexicographically sort
 
-        ___(st. ve..<st. ve..<st. s..> >::const_iterator ip _ ip_pool.cbegin()sy.. pause ip !_ ip_pool.cend()sy.. pause ++ip)
+        ___(st. ve..<st. ve..<st. s..> >::const_iterator ip _ ip_pool.cbegin()sy.. p.. ip !_ ip_pool.cend()sy.. p.. ++ip)
         {
-            ___(st. ve..<st. s..>::const_iterator ip_part _ ip__cbegin()sy.. pause ip_part !_ ip__cend()sy.. pause ++ip_part)
+            ___(st. ve..<st. s..>::const_iterator ip_part _ ip__cbegin()sy.. p.. ip_part !_ ip__cend()sy.. p.. ++ip_part)
             {
                 __ (ip_part !_ ip__cbegin())
                 {
-                    st. c__ __  "."sy.. pause
+                    st. c__ __  "."sy.. p..
 
                 }
-                st. c__ __  *ip_partsy.. pause
+                st. c__ __  *ip_partsy.. p..
             }
             st. c__ __  st. e..
         }
@@ -125,5 +125,5 @@ in. main(in. argc, c.. c.. *argv[])
         st. cerr __  e.what() __  st. e..
     }
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }

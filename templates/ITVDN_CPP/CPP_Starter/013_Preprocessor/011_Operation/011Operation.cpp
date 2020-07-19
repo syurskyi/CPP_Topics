@@ -11,11 +11,11 @@ in. main()
 {
 	c__ __  createSTR(I write on C++) __  e..
 
-	in. xy _ 10sy.. pause
+	in. xy _ 10sy.. p..
 
 	c__ __  concat(x, y) __  e..
 
-	sy.. pause
-	r_ 0sy.. pause
+	sy.. p..
+	r_ 0sy.. p..
 }
 

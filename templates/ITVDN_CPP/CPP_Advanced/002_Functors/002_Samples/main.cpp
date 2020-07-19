@@ -11,48 +11,48 @@ pu..
     bo.. operator()( in. a, in. b )
     {
         c__ __  "some operation" __  e..
-        r_ a > bsy.. pause
+        r_ a > bsy.. p..
     }
 
     static v.. method( in. a ) { c__ __  "method" __  a __  e.. }
-}sy.. pause
+}sy.. p..
 
 in. sum( in. a, in. b )
 {
-    r_ a - bsy.. pause
+    r_ a - bsy.. p..
 }
 
 bo.. cmp( in. a, in. b )
 {
-    r_ b < asy.. pause
+    r_ b < asy.. p..
 }
 
-using MyFunc _ in.( in., in. )sy.. pause
+using MyFunc _ in.( in., in. )sy.. p..
 
 in. main()
 {
-    u.. st. placeholderssy.. pause
+    u.. st. placeholderssy.. p..
 
-    Functor fsy.. pause
+    Functor fsy.. p..
 
-    ve..< in. > a _ { 2, 1, 3, 4 }sy.. pause
+    ve..< in. > a _ { 2, 1, 3, 4 }sy.. p..
 
-    sort( a.begin(), a.end(), []( in. a, in. b ) __ bo.. { r_ a > bsy.. pause } )sy.. pause
+    sort( a.begin(), a.end(), []( in. a, in. b ) __ bo.. { r_ a > bsy.. p.. } )sy.. p..
 
     ___ ( a.. it : a )
         c__ __  it __  e..
 
-    st. function< MyFunc > func_sumsy.. pause
+    st. function< MyFunc > func_sumsy.. p..
 
-    func_sum _ sumsy.. pause
+    func_sum _ sumsy.. p..
 
-    in. value _ 4sy.. pause
+    in. value _ 4sy.. p..
 
-    [value _ st. move( value )]( s.. s ) { c__ __  valuesy.. pause }( "hello" )sy.. pause
+    [value _ st. move( value )]( s.. s ) { c__ __  valuesy.. p.. }( "hello" )sy.. p..
 
-    a.. w _ st. bind( Functor::method, 100 )sy.. pause
+    a.. w _ st. bind( Functor::method, 100 )sy.. p..
 
-    w( 3 )sy.. pause
+    w( 3 )sy.. p..
 
     c__ __  a[ 2 ] __  e..
 
@@ -63,5 +63,5 @@ in. main()
     //    func = &sum;
 
     //    cout << func( 4, 5 ) << endl;
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }

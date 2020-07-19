@@ -9,20 +9,20 @@ in. main()
 {
 
 #ifdef PRODUCTION
-	in. a _ 1sy.. pause
+	in. a _ 1sy.. p..
 	c__ __  "Product version." __  e..
 #elif DEVELOMENT
 	c__ __  "Dev version." __  e..
 #endif 
 
 _if.. DEVELOMENT
-	in. a _ 1sy.. pause
+	in. a _ 1sy.. p..
 	c__ __  "Dev version." __  e..
 #elif PRODUCTION
 	c__ __  "Product version." __  e..
 #endif 
 
-	sy.. pause
-    r_ 0sy.. pause
+	sy.. p..
+    r_ 0sy.. p..
 }
 

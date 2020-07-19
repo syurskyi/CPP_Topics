@@ -8,10 +8,10 @@ u.. s..
 
 in. main()
 {
-	c.. a _ 'A'sy.. pause
-	c.. b _ '\x0041'sy.. pause
-	c.. c _ '\u0906'sy.. pause
+	c.. a _ 'A'sy.. p..
+	c.. b _ '\x0041'sy.. p..
+	c.. c _ '\u0906'sy.. p..
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }
 

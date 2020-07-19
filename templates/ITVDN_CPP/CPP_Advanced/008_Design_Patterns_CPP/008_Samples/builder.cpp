@@ -9,17 +9,17 @@ u.. s..
 
 v.. Pizza::setDough( c.. s..& dough )
 {
-    m_dough _ doughsy.. pause
+    m_dough _ doughsy.. p..
 }
 
 v.. Pizza::setSauce( c.. s..& sauce )
 {
-    m_sauce _ saucesy.. pause
+    m_sauce _ saucesy.. p..
 }
 
 v.. Pizza::setTopping( c.. s..& topping )
 {
-    m_topping _ toppingsy.. pause
+    m_topping _ toppingsy.. p..
 }
 
 v.. Pizza::open() c..
@@ -30,63 +30,63 @@ v.. Pizza::open() c..
 
 Pizza* PizzaBuilder::getPizza()
 {
-    r_ m_pizza.release()sy.. pause
+    r_ m_pizza.release()sy.. p..
 }
 
 v.. PizzaBuilder::createNewPizzaProduct()
 {
-    m_pizza _ make_unique< Pizza >()sy.. pause
+    m_pizza _ make_unique< Pizza >()sy.. p..
 }
 
 v.. HawaiianPizzaBuilder::buildDough()
 {
-    m_pizza__setDough( "cross" )sy.. pause
+    m_pizza__setDough( "cross" )sy.. p..
 }
 v.. HawaiianPizzaBuilder::buildSauce()
 {
-    m_pizza__setSauce( "mild" )sy.. pause
+    m_pizza__setSauce( "mild" )sy.. p..
 }
 v.. HawaiianPizzaBuilder::buildTopping()
 {
-    m_pizza__setTopping( "ham+pineapple" )sy.. pause
+    m_pizza__setTopping( "ham+pineapple" )sy.. p..
 }
 
 v.. SpicyPizzaBuilder::buildDough()
 {
-    m_pizza__setDough( "pan baked" )sy.. pause
+    m_pizza__setDough( "pan baked" )sy.. p..
 }
 v.. SpicyPizzaBuilder::buildSauce()
 {
-    m_pizza__setSauce( "hot" )sy.. pause
+    m_pizza__setSauce( "hot" )sy.. p..
 }
 v.. SpicyPizzaBuilder::buildTopping()
 {
-    m_pizza__setTopping( "pepperoni+salami" )sy.. pause
+    m_pizza__setTopping( "pepperoni+salami" )sy.. p..
 }
 
 v.. Cook::openPizza()
 {
-    m_pizzaBuilder__getPizza()__open()sy.. pause
+    m_pizzaBuilder__getPizza()__open()sy.. p..
 }
 
 v.. Cook::makePizza( PizzaBuilder* pb )
 {
-    m_pizzaBuilder _ pbsy.. pause
-    m_pizzaBuilder__createNewPizzaProduct()sy.. pause
-    m_pizzaBuilder__buildDough()sy.. pause
-    m_pizzaBuilder__buildSauce()sy.. pause
-    m_pizzaBuilder__buildTopping()sy.. pause
+    m_pizzaBuilder _ pbsy.. p..
+    m_pizzaBuilder__createNewPizzaProduct()sy.. p..
+    m_pizzaBuilder__buildDough()sy.. p..
+    m_pizzaBuilder__buildSauce()sy.. p..
+    m_pizzaBuilder__buildTopping()sy.. p..
 }
 
 v.. ClientBuilder::run()
 {
-    Cook cooksy.. pause
-    HawaiianPizzaBuilder hawaiianPizzaBuildersy.. pause
-    SpicyPizzaBuilder spicyPizzaBuildersy.. pause
+    Cook cooksy.. p..
+    HawaiianPizzaBuilder hawaiianPizzaBuildersy.. p..
+    SpicyPizzaBuilder spicyPizzaBuildersy.. p..
 
-    cook.makePizza( &hawaiianPizzaBuilder )sy.. pause
-    cook.openPizza()sy.. pause
+    cook.makePizza( &hawaiianPizzaBuilder )sy.. p..
+    cook.openPizza()sy.. p..
 
-    cook.makePizza( &spicyPizzaBuilder )sy.. pause
-    cook.openPizza()sy.. pause
+    cook.makePizza( &spicyPizzaBuilder )sy.. p..
+    cook.openPizza()sy.. p..
 }

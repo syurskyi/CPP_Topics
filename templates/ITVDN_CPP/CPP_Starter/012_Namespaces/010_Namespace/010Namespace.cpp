@@ -7,21 +7,21 @@ n.. NamespaceA{
 	st.. MyStruct
 	{
 
-	}sy.. pause
+	}sy.. p..
 	n.. NamespaceB {
 		st.. MyStruct
 		{
 
-		}sy.. pause
+		}sy.. p..
 
 		v.. method
-			MyStruct variable1sy.. pause
-			NamespaceA::MyStruct variable2sy.. pause
+			MyStruct variable1sy.. p..
+			NamespaceA::MyStruct variable2sy.. p..
 		}
 	}
 }
 
 in. main()
 {
-	r_ 0sy.. pause
+	r_ 0sy.. p..
 }

@@ -5,7 +5,7 @@ n.. NamespaceA {
 	n.. NamespaceB {
 		n.. NamespaceC {
 			in. add(in. a, in. b) {
-				r_ a + bsy.. pause
+				r_ a + bsy.. p..
 			}
 		}
 	}
@@ -13,16 +13,16 @@ n.. NamespaceA {
 
 in. main()
 {
-	u.. NamespaceA::NamespaceB::NamespaceCsy.. pause
+	u.. NamespaceA::NamespaceB::NamespaceCsy.. p..
 
-	in. x _ 6sy.. pause
-	in. y _ 19sy.. pause
+	in. x _ 6sy.. p..
+	in. y _ 19sy.. p..
 
-	in. sum _ add(x, y)sy.. pause
+	in. sum _ add(x, y)sy.. p..
 
 	st. c__ __  sum __  st. e..
 
-	r_ 0sy.. pause
+	r_ 0sy.. p..
 }
 
 

@@ -12,24 +12,24 @@ c_ App : pu.. Handler {
     v.. event(Event &ev) ov.. {
         s.. (ev.code) {
             c.. EventCode::start:
-                start()sy.. pause
+                start()sy.. p..
                 b..
 
             def..
                 b..
         }
     }
-}sy.. pause
+}sy.. p..
 
 
 in. main(in., c.. *[]) {
-    EventLoop loopsy.. pause
+    EventLoop loopsy.. p..
 
-    App appsy.. pause
-    loop.add(&app)sy.. pause
+    App appsy.. p..
+    loop.add(&app)sy.. p..
 
-    loop.send(EventCode::start)sy.. pause
-    loop.send(EventCode::quit)sy.. pause
+    loop.send(EventCode::start)sy.. p..
+    loop.send(EventCode::quit)sy.. p..
 
-    r_ loop.exec()sy.. pause
+    r_ loop.exec()sy.. p..
 }

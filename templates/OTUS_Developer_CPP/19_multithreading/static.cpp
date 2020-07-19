@@ -2,23 +2,23 @@
 
 v.. foo()
 {
-    static st. s.. hw{"Hello, World!"}sy.. pause
-}sy.. pause
+    static st. s.. hw{"Hello, World!"}sy.. p..
+}sy.. p..
 
-bo.. hw_guardsy.. pause // = 0, = false
-st. s.. hwsy.. pause
+bo.. hw_guardsy.. p.. // = 0, = false
+st. s.. hwsy.. p..
 
 v.. bar()
 {
     __ (!hw_guard) {
-        hw _ "Hello, World!"sy.. pause
-        hw_guard _ truesy.. pause
+        hw _ "Hello, World!"sy.. p..
+        hw_guard _ truesy.. p..
     }
-}sy.. pause
+}sy.. p..
 
 in. main(in., c..* [])
 {
-    foo()sy.. pause
-    bar()sy.. pause
-    r_ 0sy.. pause
+    foo()sy.. p..
+    bar()sy.. p..
+    r_ 0sy.. p..
 }

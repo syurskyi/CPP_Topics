@@ -3,22 +3,22 @@
 ? |i..
 ? <map>
 
-en.. c_ Tag { main, db }sy.. pause
+en.. c_ Tag { main, db }sy.. p..
 
 c_ Logger {
-    Tag tsy.. pause
+    Tag tsy.. p..
 
 pu..
-    Logger& operator_(c.. Logger&) _ deletesy.. pause
+    Logger& operator_(c.. Logger&) _ deletesy.. p..
     static Logger& Instance(Tag t)
     {
-        static st. map<Tag, Logger> instancesy.. pause
-        a.. i _ instance.find(t)sy.. pause
+        static st. map<Tag, Logger> instancesy.. p..
+        a.. i _ instance.find(t)sy.. p..
         __ (i__instance.end()) {
-            bo.. bsy.. pause
-            st. tie(i, b) _ instance.emplace(st. make_pair(t, Logger(t)))sy.. pause
+            bo.. bsy.. p..
+            st. tie(i, b) _ instance.emplace(st. make_pair(t, Logger(t)))sy.. p..
         }
-        r_ i__secondsy.. pause
+        r_ i__secondsy.. p..
     }
     v.. info(c.. st. s..& message)
     {
@@ -34,13 +34,13 @@ pr..
             :t(t_)
     {
     }
-}sy.. pause
+}sy.. p..
 
 in. main(in., c.. c..**)
 {
-    Logger::Instance(Tag::main).info("started")sy.. pause
-    Logger::Instance(Tag::db).warn("no db")sy.. pause
-    Logger::Instance(Tag::main).info("finished")sy.. pause
+    Logger::Instance(Tag::main).info("started")sy.. p..
+    Logger::Instance(Tag::db).warn("no db")sy.. p..
+    Logger::Instance(Tag::main).info("finished")sy.. p..
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }

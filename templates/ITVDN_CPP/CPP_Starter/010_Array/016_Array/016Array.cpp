@@ -6,22 +6,22 @@ u.. s..
 in. main()
 {
 	// Динамически выделяем массив для 50-ти элементов типа int
-	in. *arr _ n.. in.[50]sy.. pause
+	in. *arr _ n.. in.[50]sy.. p..
 
 	// Заполняем массив.
-	___ (in. i _ 0sy.. pause i < 50sy.. pause ###)
+	___ (in. i _ 0sy.. p.. i < 50sy.. p.. ###)
 	{
-		*(arr + i) _ (i + 1) * 2sy.. pause
+		*(arr + i) _ (i + 1) * 2sy.. p..
 	}
 	
 	// Выводим значения элементов массива.
-	___ (in. i _ 0sy.. pause i < 50sy.. pause ###)
+	___ (in. i _ 0sy.. p.. i < 50sy.. p.. ###)
 	{
 		c__ __  *(arr + i) __  e..
 	}
 
 
-	sy.. pause
-	r_ 0sy.. pause
+	sy.. p..
+	r_ 0sy.. p..
 }
 

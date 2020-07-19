@@ -4,12 +4,12 @@
 u.. s..
 /* function templates generalization*/
 
-v.. operationOnPoin.s()sy.. pause
+v.. operationOnPoin.s()sy.. p..
 
 t..<t_n_ T, t_n_ T2>
 T add(T var1, T2 var2)
 {
-    r_ var1 + var2sy.. pause
+    r_ var1 + var2sy.. p..
 }
 /*
 template<>
@@ -25,21 +25,21 @@ Point2D add(Point2D var1, Point2D var2)
 */
 in. main()
 {
-    operationOnPoin.s()sy.. pause
+    operationOnPoin.s()sy.. p..
 
     //cout << add<double, double>(2, 5.6) << endl;
 
 
    // cout << static_cast<int>(6.5) << endl;
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }
 v.. operationOnPoin.s()
 {
-    Poin.2D p1(10, 67)sy.. pause
-    Poin.2D p2(50, 3)sy.. pause // 60,70
+    Poin.2D p1(10, 67)sy.. p..
+    Poin.2D p2(50, 3)sy.. p.. // 60,70
 
-    Poin.2D sum _ add(p1,p2)sy.. pause
+    Poin.2D sum _ add(p1,p2)sy.. p..
 
     c__ __  sum.getX() __  e..
     c__ __  sum.getY() __  e..

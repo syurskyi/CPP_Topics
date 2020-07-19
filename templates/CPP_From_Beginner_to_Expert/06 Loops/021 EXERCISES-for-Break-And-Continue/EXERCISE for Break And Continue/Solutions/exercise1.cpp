@@ -4,20 +4,20 @@ u.. s..
 
 main ()
 {
-    in. maximumNumbersy.. pause
-    in. sumEven _ 0sy.. pause
-    in. tempsy.. pause
+    in. maximumNumbersy.. p..
+    in. sumEven _ 0sy.. p..
+    in. tempsy.. p..
 
-    c__ __  "Input maximum number you want to check: "sy.. pause
-    c__ __ maximumNumbersy.. pause
+    c__ __  "Input maximum number you want to check: "sy.. p..
+    c__ __ maximumNumbersy.. p..
 
-    ___ (in. i _ 1sy.. pause i <_ maximumNumbersy.. pause ###)
+    ___ (in. i _ 1sy.. p.. i <_ maximumNumbersy.. p.. ###)
     {
         __ (i % 2 __ 1)
             c___
 
-        temp _ sumEvensy.. pause
-        sumEven +_ isy.. pause
+        temp _ sumEvensy.. p..
+        sumEven +_ isy.. p..
         c__ __  temp __  " + " __  i __  " = " __  sumEven __  e..
 
     }

@@ -6,18 +6,18 @@ n.. NamespaceA {
 		n.. NamespaceC {
 			st.. MyStruct {
 
-			}sy.. pause
+			}sy.. p..
 		}
 	}
 }
 
 in. main()
 {
-	using _Struct _ NamespaceA::NamespaceB::NamespaceC::MyStructsy.. pause
+	using _Struct _ NamespaceA::NamespaceB::NamespaceC::MyStructsy.. p..
 	
-	_Struct variable1sy.. pause
+	_Struct variable1sy.. p..
 
-	r_ 0sy.. pause
+	r_ 0sy.. p..
 }
 
 

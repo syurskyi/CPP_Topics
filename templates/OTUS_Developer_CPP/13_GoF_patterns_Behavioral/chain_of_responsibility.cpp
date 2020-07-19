@@ -8,7 +8,7 @@
 
 c_ Handler
 {
-    Handler *nextsy.. pause
+    Handler *nextsy.. p..
 
 pu..
     Handler() : next(n_p_) {}
@@ -16,18 +16,18 @@ pu..
     v.. add(Handler *n)
     {
         __ (next)
-            next__add(n)sy.. pause
+            next__add(n)sy.. p..
         ____
-            next _ nsy.. pause
+            next _ nsy.. p..
     }
 
     v.. v.. exec(c.. st. s.. &line)
     {
         __ (next) {
-            next__exec(line)sy.. pause
+            next__exec(line)sy.. p..
         }
     }
-}sy.. pause
+}sy.. p..
 
 c_ DropHandler : pu.. Handler
 {
@@ -38,10 +38,10 @@ pu..
             st. c__ __  "DropHandler accept " __  line __  st. e..
         } ____ {
             st. c__ __  "DropHandler pass" __  st. e..
-            Handler::exec(line)sy.. pause
+            Handler::exec(line)sy.. p..
         }
     }
-}sy.. pause
+}sy.. p..
 
 c_ SelectHandler : pu.. Handler
 {
@@ -52,10 +52,10 @@ pu..
             st. c__ __  "SelectHandler accept " __  line __  st. e..
         } ____ {
             st. c__ __  "SelectHandler pass" __  st. e..
-            Handler::exec(line)sy.. pause
+            Handler::exec(line)sy.. p..
         }
     }
-}sy.. pause
+}sy.. p..
 
 c_ CreateHandler: pu.. Handler
 {
@@ -66,23 +66,23 @@ pu..
             st. c__ __  "CreateHandler accept " __  line __  st. e..
         } ____ {
             st. c__ __  "CreateHandler pass" __  st. e..
-            Handler::exec(line)sy.. pause
+            Handler::exec(line)sy.. p..
         }
     }
-}sy.. pause
+}sy.. p..
 
 in. main(in., c.. *[])
 {
-    DropHandler handlersy.. pause
+    DropHandler handlersy.. p..
 
-    SelectHandler selectsy.. pause
-    CreateHandler createsy.. pause
-    handler.add(&select)sy.. pause
-    handler.add(&create)sy.. pause
+    SelectHandler selectsy.. p..
+    CreateHandler createsy.. p..
+    handler.add(&select)sy.. p..
+    handler.add(&create)sy.. p..
 
-    handler.exec("CREATE table")sy.. pause
-    handler.exec("SELECT * FROM table")sy.. pause
-    handler.exec("DROP table")sy.. pause
+    handler.exec("CREATE table")sy.. p..
+    handler.exec("SELECT * FROM table")sy.. p..
+    handler.exec("DROP table")sy.. p..
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }

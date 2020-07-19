@@ -3,52 +3,52 @@
 ? |i..
 
 c_ Memento {
-    fr.. c_ Opssy.. pause
+    fr.. c_ Opssy.. p..
 
-    in. valuesy.. pause
+    in. valuesy.. p..
 pu..
     Memento(in. value_)
-            :value(value_) { }sy.. pause
-}sy.. pause
+            :value(value_) { }sy.. p..
+}sy.. p..
 
 c_ Ops {
-    in. count _ 0sy.. pause
+    in. count _ 0sy.. p..
 
 pu..
     v.. do_it()
     {
-        ++countsy.. pause
-    }sy.. pause
+        ++countsy.. p..
+    }sy.. p..
 
     v.. dump()
     {
         st. c__ __  count __  st. e..
-    }sy.. pause
+    }sy.. p..
 
     Memento createSnapshot()
     {
-        r_ Memento{count}sy.. pause
+        r_ Memento{count}sy.. p..
     }
 
     v.. restoreSnapshot(c.. Memento& memento)
     {
-        count _ memento.valuesy.. pause
+        count _ memento.valuesy.. p..
     }
-}sy.. pause
+}sy.. p..
 
 in. main(in., c..* [])
 {
-    Ops nsy.. pause
-    n.do_it()sy.. pause
-    n.dump()sy.. pause
+    Ops nsy.. p..
+    n.do_it()sy.. p..
+    n.dump()sy.. p..
 
-    a.. snap _ n.createSnapshot()sy.. pause
+    a.. snap _ n.createSnapshot()sy.. p..
 
-    n.do_it()sy.. pause
-    n.dump()sy.. pause
+    n.do_it()sy.. p..
+    n.dump()sy.. p..
 
-    n.restoreSnapshot(snap)sy.. pause
-    n.dump()sy.. pause
+    n.restoreSnapshot(snap)sy.. p..
+    n.dump()sy.. p..
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }

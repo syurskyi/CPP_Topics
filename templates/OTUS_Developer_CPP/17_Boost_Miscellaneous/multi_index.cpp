@@ -9,10 +9,10 @@
 
 st.. User
 {
-    in. idsy.. pause
-    st. s.. namesy.. pause
-    in. agesy.. pause
-}sy.. pause
+    in. idsy.. p..
+    st. s.. namesy.. p..
+    in. agesy.. p..
+}sy.. p..
 
 in. main()
 {
@@ -35,22 +35,22 @@ in. main()
                             >
                     >
             >
-    > staffsy.. pause
+    > staffsy.. p..
 
-    a.. x _ staff.insert({0, "root", 32})sy.. pause
+    a.. x _ staff.insert({0, "root", 32})sy.. p..
     st. c__ __  x.first__name __  ", " __  x.second __  st. e..
-    x _ staff.insert({0, "sergey", 32})sy.. pause
+    x _ staff.insert({0, "sergey", 32})sy.. p..
     st. c__ __  x.first__name __  ", " __  x.second __  st. e..
-    staff.insert({1, "oleg", 23})sy.. pause
-    staff.insert({2, "andrew", 19})sy.. pause
+    staff.insert({1, "oleg", 23})sy.. p..
+    staff.insert({2, "andrew", 19})sy.. p..
 
-    a.. &index_by_id _ staff.get<0>()sy.. pause
+    a.. &index_by_id _ staff.get<0>()sy.. p..
     st. c__ __  "count(id=0)=" __  index_by_id.count(0) __  st. e..
 
-    a.. &index_by_name _ staff.get<1>()sy.. pause
-    a.. oleg _ index_by_name.find("oleg")sy.. pause
+    a.. &index_by_name _ staff.get<1>()sy.. p..
+    a.. oleg _ index_by_name.find("oleg")sy.. p..
     st. c__ __  "id=" __  oleg__id __  ", name=" __  oleg__name __  ", age=" __  oleg__age __  st. e..
 
-    a.. &index_by_age _ staff.get<2>()sy.. pause
+    a.. &index_by_age _ staff.get<2>()sy.. p..
     st. c__ __  "count(age=32)=" __  index_by_age.count(32) __  st. e..
 }

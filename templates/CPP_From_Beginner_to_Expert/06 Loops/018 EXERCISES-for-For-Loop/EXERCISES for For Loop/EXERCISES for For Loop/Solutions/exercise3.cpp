@@ -5,22 +5,22 @@ u.. s..
 main ()
 {
 
-    d.. numbersy.. pause
-    d.. poweredNumber _ 1sy.. pause
-    in. nPowersy.. pause
+    d.. numbersy.. p..
+    d.. poweredNumber _ 1sy.. p..
+    in. nPowersy.. p..
 
-    c__ __  "Input the number: "sy.. pause
-    c__ __ numbersy.. pause
+    c__ __  "Input the number: "sy.. p..
+    c__ __ numbersy.. p..
 
-    c__ __  "Raise to what power: "sy.. pause
-    c__ __ nPowersy.. pause
+    c__ __  "Raise to what power: "sy.. p..
+    c__ __ nPowersy.. p..
 
-    ___ (in. i _ 0sy.. pause i < nPowersy.. pause ###)
+    ___ (in. i _ 0sy.. p.. i < nPowersy.. p.. ###)
     {
-        poweredNumber *_ numbersy.. pause
+        poweredNumber *_ numbersy.. p..
     }
 
-    c__ __  "The number " __  number __  " to the power of " __  nPower __  " is equal to " __  poweredNumber __  "."sy.. pause
+    c__ __  "The number " __  number __  " to the power of " __  nPower __  " is equal to " __  poweredNumber __  "."sy.. p..
 
 
 }

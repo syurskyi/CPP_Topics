@@ -4,49 +4,49 @@ u.. s..
 /*validating data
     buffer - temporary array
 */
-v.. initMenu()sy.. pause
-v.. menuDecision(in.)sy.. pause
-d.. areaCircle(d..)sy.. pause
-d.. areaSquare(d..)sy.. pause
-d.. areaRectangle(d.., d..)sy.. pause
-d.. areaTriangle(d.., d..)sy.. pause
-bo.. isValid(s..)sy.. pause
-bo.. isValid()sy.. pause
+v.. initMenu()sy.. p..
+v.. menuDecision(in.)sy.. p..
+d.. areaCircle(d..)sy.. p..
+d.. areaSquare(d..)sy.. p..
+d.. areaRectangle(d.., d..)sy.. p..
+d.. areaTriangle(d.., d..)sy.. p..
+bo.. isValid(s..)sy.. p..
+bo.. isValid()sy.. p..
 in. main()
 {
-    in. choicesy.. pause
-    c.. contsy.. pause
+    in. choicesy.. p..
+    c.. contsy.. p..
     do
     {
-        system("cls")sy.. pause //clear screen = cls
-        initMenu()sy.. pause
+        system("cls")sy.. p.. //clear screen = cls
+        initMenu()sy.. p..
 
         w___(!(c__ __ choice))
         {
             //cout << "state before: " << cin.rdstate() << endl;
-            c__.clear()sy.. pause
+            c__.clear()sy.. p..
             //cout << "state after: " << cin.rdstate() << endl;
-            c__.ignore(numeric_limits<streamsize>::max(), '\n')sy.. pause
+            c__.ignore(numeric_limits<streamsize>::max(), '\n')sy.. p..
 
-            system("cls")sy.. pause
-            initMenu()sy.. pause
+            system("cls")sy.. p..
+            initMenu()sy.. p..
             c__ __  "You've just typed the wrong data to the input. " __  e..
         }
 
-        menuDecision(choice)sy.. pause
+        menuDecision(choice)sy.. p..
 
         do
         {
             c__ __  "Do you want to continue the program? (Y/N)" __  e..
-            c__ __ contsy.. pause //asdfg
-            c__.ignore(numeric_limits<streamsize>::max(), '\n')sy.. pause
+            c__ __ contsy.. p.. //asdfg
+            c__.ignore(numeric_limits<streamsize>::max(), '\n')sy.. p..
 
-        } w___(cont !_ 'y' && cont !_ 'Y' && cont !_ 'N' && cont !_ 'n')sy.. pause
+        } w___(cont !_ 'y' && cont !_ 'Y' && cont !_ 'N' && cont !_ 'n')sy.. p..
 
 
-    } w___(cont __ 'y' || cont __ 'Y')sy.. pause
+    } w___(cont __ 'y' || cont __ 'Y')sy.. p..
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }
 v.. initMenu()
 {
@@ -58,28 +58,28 @@ v.. initMenu()
 }
 v.. menuDecision(in. choice)
 {
-    d.. r, a, b, hsy.. pause
+    d.. r, a, b, hsy.. p..
     s..(choice)
     {
         c__:
 
-            do { c__ __  "Enter the radius: " __  e.. c__ __ rsy.. pause } w___(!isValid())sy.. pause
-            areaCircle(r)sy.. pause
+            do { c__ __  "Enter the radius: " __  e.. c__ __ rsy.. p.. } w___(!isValid())sy.. p..
+            areaCircle(r)sy.. p..
             b..
         c..
             c__ __  "Enter the side of a square: " __  e..
-            do { c__ __ asy.. pause } w___(!isValid("The data is wrong, please type it again:"))sy.. pause
-            areaSquare(a)sy.. pause
+            do { c__ __ asy.. p.. } w___(!isValid("The data is wrong, please type it again:"))sy.. p..
+            areaSquare(a)sy.. p..
             b..
         c.. 3:
             c__ __  "Enter the width and height of a rectangle: " __  e..
-            do { c__ __ a __ bsy.. pause } w___(!isValid("The data is wrong, please type it again:"))sy.. pause
-            areaRectangle(a, b)sy.. pause
+            do { c__ __ a __ bsy.. p.. } w___(!isValid("The data is wrong, please type it again:"))sy.. p..
+            areaRectangle(a, b)sy.. p..
             b..
         c.. 4:
             c__ __  "Enter the base and height of a triangle: " __  e..
-            do { c__ __ a __ hsy.. pause } w___(!isValid("The data is wrong, please type it again:"))sy.. pause
-            areaTriangle(a, h)sy.. pause
+            do { c__ __ a __ hsy.. p.. } w___(!isValid("The data is wrong, please type it again:"))sy.. p..
+            areaTriangle(a, h)sy.. p..
             b..
         def..
             c__ __  "You didn't choose any of the option from above" __  e..
@@ -88,60 +88,60 @@ v.. menuDecision(in. choice)
 }
 d.. areaCircle(d.. r)
 {
-    d.. result _ PI * r * rsy.. pause
+    d.. result _ PI * r * rsy.. p..
 
     c__ __  "The area of a circle that radius is " __  r __  " = " __  result __  e..
 
-    r_ resultsy.. pause
+    r_ resultsy.. p..
 }
 d.. areaSquare(d.. a)
 {
-    d.. result _ a * asy.. pause
+    d.. result _ a * asy.. p..
 
     c__ __  "The area of a square that side is " __  a __  " = " __  result __  e..
 
-    r_ resultsy.. pause
+    r_ resultsy.. p..
 }
 d.. areaRectangle(d.. a, d.. b)
 {
-    d.. result _ a * bsy.. pause
+    d.. result _ a * bsy.. p..
 
     c__ __  "The area of a rectangle that first side is " __  a __  " the second side is " __  b __  " = " __  result __  e..
 
-    r_ resultsy.. pause
+    r_ resultsy.. p..
 }
 d.. areaTriangle(d.. a, d.. h)
 {
-    d.. result _ (1/2.0) * a * hsy.. pause
+    d.. result _ (1/2.0) * a * hsy.. p..
 
     c__ __  "The area of a rectangle that first side is " __  a __  " the second side is " __  h __  " = " __  result __  e..
 
-    r_ resultsy.. pause
+    r_ resultsy.. p..
 }
 bo.. isValid(s.. error_msg)
 {
     __ (c__.rdstate()) //state is wrong when it is not equal to 0
     {
-        c__.clear()sy.. pause
-        c__.ignore(numeric_limits<streamsize>::max(), '\n')sy.. pause
-        system("cls")sy.. pause
-        initMenu()sy.. pause
+        c__.clear()sy.. p..
+        c__.ignore(numeric_limits<streamsize>::max(), '\n')sy.. p..
+        system("cls")sy.. p..
+        initMenu()sy.. p..
         c__ __  error_msg __  e..
-        r_ falsesy.. pause
+        r_ falsesy.. p..
     }
 
-    r_ truesy.. pause
+    r_ truesy.. p..
 }
 bo.. isValid()
 {
     __ (c__.rdstate()) //state is wrong when it is not equal to 0
     {
-        c__.clear()sy.. pause
-        c__.ignore(numeric_limits<streamsize>::max(), '\n')sy.. pause
-        system("cls")sy.. pause
-        initMenu()sy.. pause
-        r_ falsesy.. pause
+        c__.clear()sy.. p..
+        c__.ignore(numeric_limits<streamsize>::max(), '\n')sy.. p..
+        system("cls")sy.. p..
+        initMenu()sy.. p..
+        r_ falsesy.. p..
     }
 
-    r_ truesy.. pause
+    r_ truesy.. p..
 }

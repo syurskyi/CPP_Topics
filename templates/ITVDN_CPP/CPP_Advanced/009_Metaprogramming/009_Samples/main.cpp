@@ -4,52 +4,52 @@
 t.. < in. N >
 st.. Factorial
 {
-    static c.. in. result _ N * Factorial< N - 1 >::resultsy.. pause
-}sy.. pause
+    static c.. in. result _ N * Factorial< N - 1 >::resultsy.. p..
+}sy.. p..
 
 t.. <>
 st.. Factorial< 0 >
 {
-    static c.. in. result _ 1sy.. pause
-}sy.. pause
+    static c.. in. result _ 1sy.. p..
+}sy.. p..
 
 // C++11
 constexpr u.. fact( u.. N )
 {
-    r_ ( N __ 0 ) ? 1 : N * fact( N - 1 )sy.. pause
+    r_ ( N __ 0 ) ? 1 : N * fact( N - 1 )sy.. p..
 }
 
 // C++11
 // value-based metaprogramming
 constexpr u.. fib( u.. N )
 {
-    r_ ( N < 2 ) ? 1 : fib( N - 2 ) + fib( N - 1 )sy.. pause
+    r_ ( N < 2 ) ? 1 : fib( N - 2 ) + fib( N - 1 )sy.. p..
 }
 
 // C++11 but with templates specialization
 // type-based metaprogramming
 t.. < u.. N >
-constexpr u.. fib2 _ fib2< N - 2 > + fib2< N - 1 >sy.. pause
+constexpr u.. fib2 _ fib2< N - 2 > + fib2< N - 1 >sy.. p..
 
 t.. <>
-constexpr u.. fib2< 0 > _ 1sy.. pause
+constexpr u.. fib2< 0 > _ 1sy.. p..
 
 t.. <>
-constexpr u.. fib2< 1 > _ 1sy.. pause
+constexpr u.. fib2< 1 > _ 1sy.. p..
 
 ////////////////////////////////////////////////////////////
 
 st.. nil
 {
-}sy.. pause
+}sy.. p..
 
 t.. < c_ H, c_ T _ nil >
 st.. cons
 {
-    t_d_ T Tailsy.. pause
-    t_d_ H Headsy.. pause
-    t_d_ cons< in., cons< st. s.., cons< d.., cons< float > > > > TypeListsy.. pause
-}sy.. pause
+    t_d_ T Tailsy.. p..
+    t_d_ H Headsy.. p..
+    t_d_ cons< in., cons< st. s.., cons< d.., cons< float > > > > TypeListsy.. p..
+}sy.. p..
 
 // template < class... Args >
 // struct List;
@@ -66,7 +66,7 @@ t.. < c_ TL >
 v.. prin.()
 {
     st. c__ __  typeid( t_n_ TL::Head ).name() __  st. e..
-    prin.< t_n_ TL::Tail >()sy.. pause
+    prin.< t_n_ TL::Tail >()sy.. p..
 }
 
 t.. <>
@@ -82,5 +82,5 @@ in. main()
     st. c__ __  fib( 10 ) __  st. e..
     st. c__ __  fib2< 10 > __  st. e..
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }

@@ -1,26 +1,26 @@
 ? "sorts.hpp"
 
-using st. vectorsy.. pause
-using st. swapsy.. pause
-using st. partitionsy.. pause
-using st. distancesy.. pause
+using st. vectorsy.. p..
+using st. swapsy.. p..
+using st. partitionsy.. p..
+using st. distancesy.. p..
 
 v.. quickSort(in.iter l, in.iter r) {
-  a.. size _ st. distance(l, r)sy.. pause
+  a.. size _ st. distance(l, r)sy.. p..
 
   // Base case
   __ (size < 2)
-    r_sy.. pause
+    r_sy.. p..
 
   // Partition with center pivot
-  --rsy.. pause
-  a.. pivot _ l + size/2sy.. pause
-  a.. pivotVal _ *pivotsy.. pause
-  swap(*pivot, *r)sy.. pause
-  pivot _ st. partition(l, r, [pivotVal](in. i){r_ i < pivotValsy.. pause})sy.. pause
-  swap(*pivot, *r)sy.. pause
+  --rsy.. p..
+  a.. pivot _ l + size/2sy.. p..
+  a.. pivotVal _ *pivotsy.. p..
+  swap(*pivot, *r)sy.. p..
+  pivot _ st. partition(l, r, [pivotVal](in. i){r_ i < pivotValsy.. p..})sy.. p..
+  swap(*pivot, *r)sy.. p..
 
   // Div and con
-  quickSort(l, pivot)sy.. pause
-  quickSort(pivot+1, r+1)sy.. pause
+  quickSort(l, pivot)sy.. p..
+  quickSort(pivot+1, r+1)sy.. p..
 }

@@ -2,28 +2,28 @@
 
 u.. s..
 
-v.. checkIfTheSame(in.&, in.&)sy.. pause
+v.. checkIfTheSame(in.&, in.&)sy.. p..
 
 in. main ()
 {
 
-    in. a _ 4sy.. pause
-    in. b _ 3sy.. pause
-    in. c _ asy.. pause
-    in. &d _ asy.. pause
+    in. a _ 4sy.. p..
+    in. b _ 3sy.. p..
+    in. c _ asy.. p..
+    in. &d _ asy.. p..
 
-    checkIfTheSame(a, b)sy.. pause
-    checkIfTheSame(a, c)sy.. pause
-    checkIfTheSame(a, d)sy.. pause
+    checkIfTheSame(a, b)sy.. p..
+    checkIfTheSame(a, c)sy.. p..
+    checkIfTheSame(a, d)sy.. p..
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }
 
 v.. checkIfTheSame(in. &firstVariable, in. &secondVariable)
 {
     __ (firstVariable __ secondVariable && &firstVariable __ &secondVariable)
     {
-        c__ __  "The variables are completely the same !"sy.. pause
+        c__ __  "The variables are completely the same !"sy.. p..
     }
     ____ __ (firstVariable __ secondVariable && &firstVariable !_ &secondVariable)
     {   

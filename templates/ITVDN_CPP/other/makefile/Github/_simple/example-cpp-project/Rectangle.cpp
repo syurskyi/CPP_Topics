@@ -13,5 +13,5 @@ Rectangle::~Rectangle}
 
 // Returns the area of the rectangle
 float Rectangle::area
-	r_ m_height * m_widthsy.. pause
+	r_ m_height * m_widthsy.. p..
 }

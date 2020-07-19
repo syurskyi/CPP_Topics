@@ -5,16 +5,16 @@
 
 in. main()
 {
-    st. map< st. s.., st. unique_ptr< MetaStrategy > > patternssy.. pause
+    st. map< st. s.., st. unique_ptr< MetaStrategy > > patternssy.. p..
 
-    patterns.insert( { "facade", st. make_unique< ClientFacade >() } )sy.. pause
-    patterns.insert( { "strategy", st. make_unique< ClientStrategy >() } )sy.. pause
-    patterns.insert( { "builder", st. make_unique< ClientBuilder >() } )sy.. pause
-    patterns.insert( { "decorator", st. make_unique< ClientDecorator >() } )sy.. pause
-    patterns.insert( { "old observer", st. make_unique< ClientOldObserver >() } )sy.. pause
-    patterns.insert( { "modern observer", st. make_unique< ClientModernObserver >() } )sy.. pause
+    patterns.insert( { "facade", st. make_unique< ClientFacade >() } )sy.. p..
+    patterns.insert( { "strategy", st. make_unique< ClientStrategy >() } )sy.. p..
+    patterns.insert( { "builder", st. make_unique< ClientBuilder >() } )sy.. p..
+    patterns.insert( { "decorator", st. make_unique< ClientDecorator >() } )sy.. p..
+    patterns.insert( { "old observer", st. make_unique< ClientOldObserver >() } )sy.. p..
+    patterns.insert( { "modern observer", st. make_unique< ClientModernObserver >() } )sy.. p..
 
-    patterns[ "modern observer" ]__run()sy.. pause
+    patterns[ "modern observer" ]__run()sy.. p..
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }

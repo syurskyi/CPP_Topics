@@ -2,23 +2,23 @@
 
 u.. s..
 
-v.. division()sy.. pause
+v.. division()sy.. p..
 
 main ()
 {
-    division()sy.. pause
+    division()sy.. p..
 }
 
 v.. division()
 {
-    d.. firstNumber, secondNumber, resultsy.. pause
+    d.. firstNumber, secondNumber, resultsy.. p..
 
-    c__ __  "Input the first number: "sy.. pause
-    c__ __ firstNumbersy.. pause
-    c__ __  "Input the number to divide by: "sy.. pause
-    c__ __ secondNumbersy.. pause
+    c__ __  "Input the first number: "sy.. p..
+    c__ __ firstNumbersy.. p..
+    c__ __  "Input the number to divide by: "sy.. p..
+    c__ __ secondNumbersy.. p..
 
-    result _ firstNumber / secondNumbersy.. pause
-    c__ __  firstNumber __  " / " __  secondNumber __  " = " __  resultsy.. pause
+    result _ firstNumber / secondNumbersy.. p..
+    c__ __  firstNumber __  " / " __  secondNumber __  " = " __  resultsy.. p..
 
 }

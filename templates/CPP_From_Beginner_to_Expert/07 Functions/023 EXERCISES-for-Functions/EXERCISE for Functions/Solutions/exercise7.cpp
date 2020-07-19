@@ -3,49 +3,49 @@
 
 u.. s..
 
-d.. minValue(d.. tab[])sy.. pause
-d.. maxValue(d.. tab[])sy.. pause
+d.. minValue(d.. tab[])sy.. p..
+d.. maxValue(d.. tab[])sy.. p..
 
 
 in. main ()
 {
-    d.. tab[5]sy.. pause
+    d.. tab[5]sy.. p..
 
-    ___ (in. i _ 0sy.. pause i < 5sy.. pause ###)
+    ___ (in. i _ 0sy.. p.. i < 5sy.. p.. ###)
     {
-        c__ __  "Input " __  i+1 __  " number: "sy.. pause
-        c__ __ tab[i]sy.. pause
+        c__ __  "Input " __  i+1 __  " number: "sy.. p..
+        c__ __ tab[i]sy.. p..
     }
 
     c__ __  "The minimum value was: " __  minValue(tab) __  e..
     c__ __  "The maximum value was: " __  maxValue(tab) __  e..
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }
 
 d.. minValue(d.. tab[])
 {
-    d.. minValue _ tab[0]sy.. pause
+    d.. minValue _ tab[0]sy.. p..
 
-    ___ (in. i _ 1sy.. pause i < 5sy.. pause ###)
+    ___ (in. i _ 1sy.. p.. i < 5sy.. p.. ###)
     {
         __ (minValue > tab[i])
-            minValue _ tab[i]sy.. pause
+            minValue _ tab[i]sy.. p..
 
     }
 
-    r_ minValuesy.. pause
+    r_ minValuesy.. p..
 }
 d.. maxValue(d.. tab[])
 {
-    d.. maxValue _ tab[0]sy.. pause
+    d.. maxValue _ tab[0]sy.. p..
 
-    ___ (in. i _ 1sy.. pause i < 5sy.. pause ###)
+    ___ (in. i _ 1sy.. p.. i < 5sy.. p.. ###)
     {
         __ (maxValue < tab[i])
-            maxValue _ tab[i]sy.. pause
+            maxValue _ tab[i]sy.. p..
 
     }
 
-    r_ maxValuesy.. pause
+    r_ maxValuesy.. p..
 }

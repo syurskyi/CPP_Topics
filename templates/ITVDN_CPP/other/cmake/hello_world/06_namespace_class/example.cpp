@@ -9,7 +9,7 @@ n.. ns_foo
         {
             st. c__ __  "Hello from ns_foo::person::display()" __  st. e..
         }
-    }sy.. pause
+    }sy.. p..
     c_ Superhero : pu.. Person
     {
         pu..
@@ -17,15 +17,15 @@ n.. ns_foo
         {
             st. c__ __  "I am Iron Man." __  st. e..
         }
-    }sy.. pause
+    }sy.. p..
 }
 
 
 in. main(in. argc, c.. *argv[])
 {
-    ns_foo::Superhero iron_mansy.. pause
-    iron_man.display()sy.. pause
-    iron_man.yell()sy.. pause
+    ns_foo::Superhero iron_mansy.. p..
+    iron_man.display()sy.. p..
+    iron_man.yell()sy.. p..
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }

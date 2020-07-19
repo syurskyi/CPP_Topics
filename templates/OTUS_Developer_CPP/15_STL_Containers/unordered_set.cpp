@@ -12,7 +12,7 @@ in. main()
         "test", // 3987873476345 1
         "debug", // 8748764876346 0
         "prod", // 3987873476345 3
-        "test"}sy.. pause // 3987873476345 1
+        "test"}sy.. p.. // 3987873476345 1
 //    std::unordered_set<std::string> x {"test", "debug", "test"};
     ___(a.. i: x)
     {

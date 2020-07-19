@@ -9,12 +9,12 @@
 
 t.. < t_n_ T >
 bo.. test _ st. is_same< t_n_ st. iterator_traits< t_n_ T::iterator >::iterator_category,
-                          st. forward_iterator_tag >::valuesy.. pause
+                          st. forward_iterator_tag >::valuesy.. p..
 
 t.. < t_n_ T >
 bo.. test_bidirectional _
     st. is_same< t_n_ st. iterator_traits< t_n_ T::iterator >::iterator_category,
-                  st. bidirectional_iterator_tag >::valuesy.. pause
+                  st. bidirectional_iterator_tag >::valuesy.. p..
 
 v.. prin._is_forward_iterator()
 {
@@ -114,42 +114,42 @@ in. main()
     //        std::cout << "element is not found" << std::endl;
     //    }
 
-    st. s.. str _ "Hello World"sy.. pause
-    st. transform( str.begin(), str.end(), str.begin(), ::toupper )sy.. pause
+    st. s.. str _ "Hello World"sy.. p..
+    st. transform( str.begin(), str.end(), str.begin(), ::toupper )sy.. p..
 
     st. c__ __  str __  st. e..
 
-    st. reverse( str.begin(), str.end() )sy.. pause
+    st. reverse( str.begin(), str.end() )sy.. p..
 
     st. c__ __  str __  st. e..
 
     a.. splitted _
-        st. partition( str.begin(), str.end(), []( c.. c.. elem ) { r_ elem > 'L'sy.. pause } )sy.. pause
+        st. partition( str.begin(), str.end(), []( c.. c.. elem ) { r_ elem > 'L'sy.. p.. } )sy.. p..
 
-    st. c__ __  "\nPartitioned string:\n    "sy.. pause
-    st. copy( st. begin( str ), splitted, st. ostream_iterator< c.. >( st. c__, "," ) )sy.. pause
-    st. c__ __  " |||| "sy.. pause
-    st. copy( splitted, st. end( str ), st. ostream_iterator< c.. >( st. c__, "," ) )sy.. pause
+    st. c__ __  "\nPartitioned string:\n    "sy.. p..
+    st. copy( st. begin( str ), splitted, st. ostream_iterator< c.. >( st. c__, "," ) )sy.. p..
+    st. c__ __  " |||| "sy.. p..
+    st. copy( splitted, st. end( str ), st. ostream_iterator< c.. >( st. c__, "," ) )sy.. p..
 
-    sort( str.begin(), str.end() )sy.. pause
+    sort( str.begin(), str.end() )sy.. p..
 
     st. c__ __  st. endl __  "Sorted:" __  st. endl __  str __  st. e..
 
     sort( str.begin(), str.end(), []( c.. c.. elem1, c.. c.. elem2 ) {
-        r_ elem1 > elem2sy.. pause
-    } )sy.. pause
+        r_ elem1 > elem2sy.. p..
+    } )sy.. p..
 
     st. c__ __  st. endl __  str __  st. e..
 
     st. c__ __  st. max( 19, 9698 ) __  st. e..
 
-    st. ve..< in. > vec{ 1, 2, 3 }sy.. pause
+    st. ve..< in. > vec{ 1, 2, 3 }sy.. p..
 
     w___ ( st. next_permutation( vec.begin(), vec.end() ) )
     {
-        st. copy( vec.begin(), vec.end(), st. ostream_iterator< in. >{ st. c__, ", " } )sy.. pause
+        st. copy( vec.begin(), vec.end(), st. ostream_iterator< in. >{ st. c__, ", " } )sy.. p..
         st. c__ __  st. e..
     }
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }

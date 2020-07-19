@@ -33,17 +33,17 @@ in. main()
 
 
     {
-        in. *p _ n.. in.sy.. pause
+        in. *p _ n.. in.sy.. p..
 
         c__ __  p __  e..
 
-        de.. psy.. pause
+        de.. psy.. p..
 
-        p _ n.. in.sy.. pause
+        p _ n.. in.sy.. p..
 
         c__ __  p __  e..
 
-        de.. psy.. pause
+        de.. psy.. p..
     }
 
 
@@ -51,5 +51,5 @@ in. main()
 
 
     //delete []p;
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }

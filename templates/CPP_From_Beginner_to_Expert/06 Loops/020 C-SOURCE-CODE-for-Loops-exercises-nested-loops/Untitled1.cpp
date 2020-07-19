@@ -27,12 +27,12 @@ main()
         5 ...
     */
 
-    ___ (in. i _ 1sy.. pause i <_ 15sy.. pause ###) // i = 2
+    ___ (in. i _ 1sy.. p.. i <_ 15sy.. p.. ###) // i = 2
     {
-        ___ (in. j _ 1sy.. pause j <_ 12sy.. pause j++) // j = 1
+        ___ (in. j _ 1sy.. p.. j <_ 12sy.. p.. j++) // j = 1
         {
-            c__.width(4)sy.. pause
-            c__ __  i * jsy.. pause
+            c__.width(4)sy.. p..
+            c__ __  i * jsy.. p..
         }
 
 

@@ -13,11 +13,11 @@ in. main()
 #elif MAXSIZE > 100
 	c__ __  "Please enter a different size. The size is too big!" __  e..
 #elif MAX_SIZE <_ 0
-	c__ __  "The size of the array can not be less than 0!"sy.. pause
+	c__ __  "The size of the array can not be less than 0!"sy.. p..
 #endif
 
 
-	sy.. pause
-    r_ 0sy.. pause
+	sy.. p..
+    r_ 0sy.. p..
 }
 

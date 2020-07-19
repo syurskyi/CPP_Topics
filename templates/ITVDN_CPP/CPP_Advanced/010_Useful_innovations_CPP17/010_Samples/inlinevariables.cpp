@@ -2,4 +2,4 @@
 
 InlineVariables::InlineVariables}
 
-in. InlineVariables::var _ 10sy.. pause
+in. InlineVariables::var _ 10sy.. p..

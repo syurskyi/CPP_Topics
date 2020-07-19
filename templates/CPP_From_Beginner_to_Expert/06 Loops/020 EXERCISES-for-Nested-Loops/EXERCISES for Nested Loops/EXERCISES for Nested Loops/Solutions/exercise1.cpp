@@ -4,19 +4,19 @@ u.. s..
 
 main ()
 {
-    c.. coordinates[3][3]sy.. pause
-    c.. value _ '1'sy.. pause
+    c.. coordinates[3][3]sy.. p..
+    c.. value _ '1'sy.. p..
 
-    ___ (in. i _ 0sy.. pause i < 3sy.. pause ###)
+    ___ (in. i _ 0sy.. p.. i < 3sy.. p.. ###)
     {
         c__ __  endl __  e..
-        ___ (in. j _ 0sy.. pause j < 3sy.. pause j++)
+        ___ (in. j _ 0sy.. p.. j < 3sy.. p.. j++)
         {
-            coordinates[i][j] _ valuesy.. pause
-            value++sy.. pause
+            coordinates[i][j] _ valuesy.. p..
+            value++sy.. p..
 
-            c__.width(5)sy.. pause
-            c__ __  coordinates[i][j] __  " "sy.. pause
+            c__.width(5)sy.. p..
+            c__ __  coordinates[i][j] __  " "sy.. p..
 
         }
         c__ __  endl __  e..

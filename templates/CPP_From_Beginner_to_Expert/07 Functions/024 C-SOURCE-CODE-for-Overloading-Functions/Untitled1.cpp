@@ -3,14 +3,14 @@
 u.. s..
 
 /* overloading functions */
-in. power(in., in.)sy.. pause
-d.. power(d.., in.)sy.. pause
+in. power(in., in.)sy.. p..
+d.. power(d.., in.)sy.. p..
 in. main()
 {
 
     c__ __  power(2, 6) __  e..
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }
 
 /*
@@ -22,23 +22,23 @@ in. main()
 */
 in. power(in. b, in. e) // b = 8, e = 1
 {
-    in. tmp _ bsy.. pause //tmp = 2
-    in. i _ 0sy.. pause
+    in. tmp _ bsy.. p.. //tmp = 2
+    in. i _ 0sy.. p..
 
     w___(### < e)
     {
         c__ __  tmp __  " ^ " __  i __  " = " __  b __  e..
         __ (i !_ e)
-            b *_ tmpsy.. pause //b = b * tmp;
+            b *_ tmpsy.. p.. //b = b * tmp;
     }
 
-    r_ bsy.. pause
+    r_ bsy.. p..
 }
 d.. power(d.. b, in. e)
 {
-    d.. tmp _ bsy.. pause //tmp = 2
+    d.. tmp _ bsy.. p.. //tmp = 2
     w___(e-- > 1)
-        b *_ tmpsy.. pause //b = b * tmp;
+        b *_ tmpsy.. p.. //b = b * tmp;
 
-    r_ bsy.. pause
+    r_ bsy.. p..
 }

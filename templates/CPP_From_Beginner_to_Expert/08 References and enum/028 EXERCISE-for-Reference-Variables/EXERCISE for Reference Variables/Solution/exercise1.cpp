@@ -5,10 +5,10 @@ u.. s..
 in. main ()
 {
 
-    s.. name _ "Cassandra"sy.. pause
-    s.. &cassie _ namesy.. pause
-    s.. &cassey _ namesy.. pause
-    s.. &sandra _ namesy.. pause
+    s.. name _ "Cassandra"sy.. p..
+    s.. &cassie _ namesy.. p..
+    s.. &cassey _ namesy.. p..
+    s.. &sandra _ namesy.. p..
 
     c__ __  name __  " " __  &name __  e..
     c__ __  cassie __  " " __  &cassie __  e..
@@ -18,6 +18,6 @@ in. main ()
 
 
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }
 

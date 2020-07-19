@@ -5,22 +5,22 @@ u.. s..
 
 v.. test()
 {
-    PersonalData &? _ n.. PersonalData[5]sy.. pause
+    PersonalData &? _ n.. PersonalData[5]sy.. p..
 
-    de.. []poin.ersy.. pause
+    de.. []poin.ersy.. p..
 }
 
 in. main()
 {
 
-    PersonalData person(20)sy.. pause
-    PersonalData person2(50)sy.. pause
+    PersonalData person(20)sy.. p..
+    PersonalData person2(50)sy.. p..
 
     c__ __  person.getAge()__  e..
     c__ __  person2.getAge() __  e..
 
 
    // test();
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }
 

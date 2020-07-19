@@ -2,15 +2,15 @@
 
 ? |i..
 
-en.. c_ Storage { mysql, postgres }sy.. pause
+en.. c_ Storage { mysql, postgres }sy.. p..
 
 st.. IStorage {
-    v.. ~IStorage() _ defaultsy.. pause
+    v.. ~IStorage() _ defaultsy.. p..
 
-    v.. v.. open() _ 0sy.. pause
-    v.. v.. execute_query() _ 0sy.. pause
-    v.. v.. close() _ 0sy.. pause
-}sy.. pause
+    v.. v.. open() _ 0sy.. p..
+    v.. v.. execute_query() _ 0sy.. p..
+    v.. v.. close() _ 0sy.. p..
+}sy.. p..
 
 c_ MysqlStorage : pu.. IStorage {
     v.. open() ov..
@@ -27,7 +27,7 @@ c_ MysqlStorage : pu.. IStorage {
     {
         st. c__ __  "disconnect from mysql" __  st. e..
     }
-}sy.. pause
+}sy.. p..
 
 c_ PostgresStorage : pu.. IStorage {
     v.. open() ov..
@@ -44,28 +44,28 @@ c_ PostgresStorage : pu.. IStorage {
     {
         st. c__ __  "disconnect from pg" __  st. e..
     }
-}sy.. pause
+}sy.. p..
 
 in. main(in. argc, c..* [])
 {
-    a.. environment _ argc ? Storage::postgres : Storage::mysqlsy.. pause
+    a.. environment _ argc ? Storage::postgres : Storage::mysqlsy.. p..
 
-    IStorage* storagesy.. pause
+    IStorage* storagesy.. p..
     s.. (environment) {
-    c.. Storage::mysql:storage _ n.. MysqlStorage()sy.. pause
+    c.. Storage::mysql:storage _ n.. MysqlStorage()sy.. p..
         b..
 
-    c.. Storage::postgres:storage _ n.. PostgresStorage()sy.. pause
+    c.. Storage::postgres:storage _ n.. PostgresStorage()sy.. p..
         b..
     }
 
     //
 
-    storage__open()sy.. pause
-    storage__execute_query()sy.. pause
-    storage__close()sy.. pause
+    storage__open()sy.. p..
+    storage__execute_query()sy.. p..
+    storage__close()sy.. p..
 
-    de.. storagesy.. pause
+    de.. storagesy.. p..
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }

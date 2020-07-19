@@ -4,9 +4,9 @@ u.. s..
 
 main()
 {
-    c.. in. SIZEOFARRAY _ 10sy.. pause
-    in. i _ 0sy.. pause
-    in. array[SIZEOFARRAY]sy.. pause
+    c.. in. SIZEOFARRAY _ 10sy.. p..
+    in. i _ 0sy.. p..
+    in. array[SIZEOFARRAY]sy.. p..
 /*
     while(i < SIZEOFARRAY) //i = 0
     {
@@ -15,7 +15,7 @@ main()
     }
     */
     w___ (i)
-      c__ __ "lalala"sy.. pause
+      c__ __ "lalala"sy.. p..
 /*
     do
     {

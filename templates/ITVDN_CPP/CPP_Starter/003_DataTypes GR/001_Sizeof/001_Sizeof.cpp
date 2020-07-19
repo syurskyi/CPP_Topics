@@ -15,12 +15,12 @@ in. main()
 	c__ __  "Float: " __  s_o_(float) __  e..
 	c__ __  "Double: " __  s_o_(d..) __  e..
 
-	in. a _ 4sy.. pause
+	in. a _ 4sy.. p..
 
 	c__ __  s_o_ a __  e..
 
 	// zадержка
 	c__.g..
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }
 

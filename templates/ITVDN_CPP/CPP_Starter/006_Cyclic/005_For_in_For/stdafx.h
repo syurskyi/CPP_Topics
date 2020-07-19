@@ -3,7 +3,7 @@
 // �� ����� ����������
 //
 
-#pragma once
+?p.. once
 
 ? "targetver.h"
 

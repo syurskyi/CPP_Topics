@@ -5,10 +5,10 @@
 u.. s..
 in. main()
 {
-	c.. name[15]sy.. pause
+	c.. name[15]sy.. p..
 	c__ __  "What's your name?" __  e..
 	
-	c__ __ namesy.. pause
+	c__ __ namesy.. p..
 
 	c__ __  "Your name is " __  name __  e..
 
@@ -19,7 +19,7 @@ in. main()
 
 	c__ __  "Array has length " __  s_o_(name) __  " elements" __  e..
 
-	sy.. pause
-	r_ 0sy.. pause
+	sy.. p..
+	r_ 0sy.. p..
 }
 

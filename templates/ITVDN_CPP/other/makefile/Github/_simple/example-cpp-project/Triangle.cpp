@@ -13,5 +13,5 @@ Triangle::~Triangle}
 
 // Returns the area of the triangle
 float Triangle::area
-	r_ m_height * m_width / 2.000sy.. pause
+	r_ m_height * m_width / 2.000sy.. p..
 }

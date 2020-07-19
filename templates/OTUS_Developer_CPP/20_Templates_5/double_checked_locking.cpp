@@ -1,6 +1,6 @@
-Singleton* Singleton::m_instancesy.. pause
-bo.. Singleton::m_instance_guardsy.. pause // false
-st. mutex Singleton::m_mutexsy.. pause
+Singleton* Singleton::m_instancesy.. p..
+bo.. Singleton::m_instance_guardsy.. p.. // false
+st. mutex Singleton::m_mutexsy.. p..
 
 Singleton* Singleton::getInstance()
 {
@@ -10,14 +10,14 @@ Singleton* Singleton::getInstance()
         // if (!m_instance_guard) {
         __ (m_instance __ n_p_) {
             // m_instance_guard = true;
-            m_instance _ n.. Singletonsy.. pause
+            m_instance _ n.. Singletonsy.. p..
         }
     }
-    r_ m_instancesy.. pause
+    r_ m_instancesy.. p..
 }
 
 Singleton* Singleton::getInstance()
 {
-    static Singleton m_instancesy.. pause
-    r_ &m_instancesy.. pause
+    static Singleton m_instancesy.. p..
+    r_ &m_instancesy.. p..
 }

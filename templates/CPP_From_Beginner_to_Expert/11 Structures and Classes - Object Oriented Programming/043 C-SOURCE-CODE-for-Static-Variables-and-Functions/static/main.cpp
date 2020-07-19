@@ -10,5 +10,5 @@ in. main()
 
     c__ __  User::getCounter() __  e..
 
-    r_ 0sy.. pause
+    r_ 0sy.. p..
 }
