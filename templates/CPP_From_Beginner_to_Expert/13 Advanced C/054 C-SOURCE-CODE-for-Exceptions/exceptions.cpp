@@ -6,13 +6,13 @@ u.. s..
 c_ DivisionByZeroException
 {
     pu..
-        v.. getErrorMessage c__ __  "Error: Do not divide by zero"sy.. p.. }
-}sy.. p..
+        v.. getErrorMessage c__ __  "Error: Do not divide by zero" }
+}
 
 d.. division(d.. a, d.. b) throw(DivisionByZeroException)
 {
     __ (b __ 0)
-        throw DivisionByZeroException()sy.. p..
+        throw DivisionByZeroException()
     r_ a / bsy.. p..
 }
 in. main()
@@ -21,13 +21,13 @@ in. main()
 
     ___
     {
-        result _ division(5, 0)sy.. p..
+        result _ division(5, 0)
 
         c__ __  "the result is " __  result __  e..
     }
     c..(DivisionByZeroException e)
     {
-        e.getErrorMessage()sy.. p..
+        e.getErrorMessage()
     }
     c..(...)
     {

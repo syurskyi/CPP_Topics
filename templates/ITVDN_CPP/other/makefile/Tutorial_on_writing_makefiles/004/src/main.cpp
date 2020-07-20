@@ -10,10 +10,10 @@ in. main()
     c__ __  "program start " __  e..
 
     Hello hellosy.. p..
-    hello.kevin()sy.. p..
+    hello.kevin()
 
     Name namesy.. p..
-    name.mynameis()sy.. p..
+    name.mynameis()
    
     r_ 0sy.. p..
 }

@@ -5,34 +5,34 @@
 //
 //
 //in. main(in., c.. #||
-//    in. a 10 sy.. p..
+//    in. a 10
 //    ___ a.. i| a
 //
 //        st. c__ __  ? __  st. e..
 //
 //
-//    st. ve..|in.| v sy.. p..
+//    st. ve..|in.| v
 //
-//        a.. begin _ ?.b.. sy.. p..
-//        a.. end _ ?.e.. sy.. p..
-//        ___(sy.. p.. b.. !_ e.. sy.. p.. ##b..
+//        a.. begin _ ?.b..
+//        a.. end _ ?.e..
+//        ___( b.. !_ e..  ##b..
 //
-//            in. i _ #b.. sy.. p..
+//            in. i _ #b..
 //            st. c__ __  ? __  st. e..
 //
 //
 //
-//    st. s.. s"hello" sy.. p..
+//    st. s.. s"hello"
 //    ___ a.. c| s
 //
 //        st. c__ __  ? __  st. e..
 //
 //
-//    st. map|in., st. s..| m||1, "1"|| sy.. p..
+//    st. map|in., st. s..| m||1, "1"||
 //    ___ a.. c| m
 //
 ////        std::cout << c << std::endl;
 //
 //
-//    r_ _ sy.. p..
+//    r_ _
 //

@@ -6,19 +6,19 @@
 //
 //in. main
 //
-//    ? mammal 6 sy.. p..
-//    ? new_mammal _ ? sy.. p..
+//    ? mammal 6
+//    ? new_mammal _ ?
 //
-//    ? #new_m _ n.. ? sy.. p..
+//    ? #new_m _ n.. ?
 //
 //
 //
 //        ? msy.. p..
 //
 //
-//    c__ __  "\n" __  n__.g_p.. __  "\n" sy.. p..
+//    c__ __  "\n" __  n__.g_p.. __  "\n"
 //
-//    de.. new_m sy.. p..
+//    de.. new_m
 //
-//    r_ _ sy.. p..
+//    r_ _
 //

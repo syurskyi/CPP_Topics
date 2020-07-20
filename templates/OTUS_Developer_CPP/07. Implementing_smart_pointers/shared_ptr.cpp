@@ -6,11 +6,11 @@ c_ xray {
 pu..
     xray
         st. c__ __  __P.. __  st. e..
-    }sy.. p..
+    }
 
     xray(c.. xray &) {
         st. c__ __  __P.. __  st. e..
-    }sy.. p..
+    }
 
     xray(in., in.) {
         st. c__ __  __P.. __  st. e..
@@ -18,8 +18,8 @@ pu..
 
     ~xray
         st. c__ __  __P.. __  st. e..
-    }sy.. p..
-}sy.. p..
+    }
+}
 
 t..<t_n_ T>
 c_ smart_ptr {
@@ -53,7 +53,7 @@ pu..
             de.. ptrsy.. p..
         }
     }
-}sy.. p..
+}
 
 in. main
 //    auto p1 = smart_ptr<xray>{new xray{1, 2}};

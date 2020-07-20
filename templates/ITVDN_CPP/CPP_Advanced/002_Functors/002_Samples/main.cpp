@@ -15,7 +15,7 @@ pu..
     }
 
     st.. v.. method( in. a ) { c__ __  "method" __  a __  e.. }
-}sy.. p..
+}
 
 in. sum( in. a, in. b )
 {
@@ -27,7 +27,7 @@ bo.. cmp( in. a, in. b )
     r_ b < asy.. p..
 }
 
-u.. MyFunc _ in.( in., in. )sy.. p..
+u.. MyFunc _ in.( in., in. )
 
 in. main()
 {
@@ -35,9 +35,9 @@ in. main()
 
     Functor fsy.. p..
 
-    ve..< in. > a _ { 2, 1, 3, 4 }sy.. p..
+    ve..< in. > a _ { 2, 1, 3, 4 }
 
-    sort( a.begin(), a.end(), []( in. a, in. b ) __ bo.. { r_ a > bsy.. p.. } )sy.. p..
+    sort( a.begin(), a.end(), []( in. a, in. b ) __ bo.. { r_ a > bsy.. p.. } )
 
     ___ ( a.. it : a )
         c__ __  it __  e..
@@ -48,11 +48,11 @@ in. main()
 
     in. value _ 4sy.. p..
 
-    [value _ st. move( value )]( s.. s ) { c__ __  valuesy.. p.. }( "hello" )sy.. p..
+    [value _ st. move( value )]( s.. s ) { c__ __  valuesy.. p.. }( "hello" )
 
-    a.. w _ st. bind( Functor::method, 100 )sy.. p..
+    a.. w _ st. bind( Functor::method, 100 )
 
-    w( 3 )sy.. p..
+    w( 3 )
 
     c__ __  a[ 2 ] __  e..
 

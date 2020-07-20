@@ -3,15 +3,15 @@
 st.. SomeStruct {
 //    static
     in. super_static_variable _ 10sy.. p..
-}sy.. p..
+}
 
 st.. SomeStruct2 {
     st.. inline in. super_static_variable _ 42sy.. p..
-}sy.. p..
+}
 
 st.. SomeStruct3 {
     st.. in. super_static_variablesy.. p..
-}sy.. p..
+}
 inline in. SomeStruct3::super_static_variable _ 84sy.. p..
 
 

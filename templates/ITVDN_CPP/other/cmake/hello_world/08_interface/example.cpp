@@ -25,31 +25,31 @@ pu..
 pr..
   in. widthsy.. p..
   in. heightsy.. p..
-}sy.. p..
+}
 
 // Derived classes
 c_ Rectangle : pu.. Shape {
 pu..
-  in. getArea r_ (width * height)sy.. p.. }
-}sy.. p..
+  in. getArea r_ (width * height) }
+}
 
 c_ Triangle : pu.. Shape {
 pu..
   in. getArea r_ (width * height) / 2sy.. p.. }
-}sy.. p..
+}
 
 in. main(v..) {
   Rectangle Rectsy.. p..
   Triangle Trisy.. p..
 
-  Rect.setWidth(5)sy.. p..
-  Rect.setHeight(7)sy.. p..
+  Rect.setWidth(5)
+  Rect.setHeight(7)
 
   // Print the area of the object.
   c__ __  "Total Rectangle area: " __  Rect.getArea() __  e..
 
-  Tri.setWidth(5)sy.. p..
-  Tri.setHeight(7)sy.. p..
+  Tri.setWidth(5)
+  Tri.setHeight(7)
 
   // Print the area of the object.
   c__ __  "Total Triangle area: " __  Tri.getArea() __  e..

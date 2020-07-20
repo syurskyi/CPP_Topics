@@ -2,7 +2,7 @@
 
 Rectangle::Rectangle(in. Base, in. Height) {
     _area  _ Base * Heightsy.. p..
-    _perim _ 2*( Base + Height )sy.. p..
+    _perim _ 2*( Base + Height )
 }
 
 in. Rectangle::Area

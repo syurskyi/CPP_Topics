@@ -2,21 +2,21 @@
 //? |i..
 //
 //in. foo in. i
-//    r_ ? + ? sy.. p..
+//    r_ ? + ?
 //
 //
 //c_t.. in. bar in. i
-//    r_ ? + ? sy.. p..
+//    r_ ? + ?
 //
 //
 //in. main in., c.. #||
-//    a.. c _ st. ar..|c.., 10||| sy.. p..
+//    a.. c _ st. ar..|c.., 10|||
 //
-//    in. n _ 10 sy.. p..
+//    in. n _ 10
 ////    auto d = std::array<char, n>(); // not a constant
 //
-//    c.. in. m _ 10 sy.. p..
-//    a.. e _ st. ar..|c.., m||| sy.. p..
+//    c.. in. m _ 10
+//    a.. e _ st. ar..|c.., m|||
 //
 //    // const vs constexpr
 //
@@ -24,11 +24,11 @@
 //   // auto g = std::array<char, foo(n)>(); // is not a constant
 //   // auto h = std::array<char, foo(m)>();
 //
-//    a.. f _ st. ar..|c.., b.. 10 ||| sy.. p..
+//    a.. f _ st. ar..|c.., b.. 10 |||
 //   // auto g = std::array<char, bar(n)>(); // is not a constant
-//    a.. h _ st. ar..|c.. b.. m ||| sy.. p..
+//    a.. h _ st. ar..|c.. b.. m |||
 //
-//    in. z _ b.. 10 sy.. p..
+//    in. z _ b.. 10
 //
-//    r_ _ sy.. p..
+//    r_ _
 //

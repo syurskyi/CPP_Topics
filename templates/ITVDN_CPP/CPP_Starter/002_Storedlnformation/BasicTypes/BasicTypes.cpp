@@ -97,7 +97,7 @@ in. main()
 	?p.. region
 	//----------------- 16 bit -----------------
 	
-	c.. u _ 'A'sy.. p..
+	c.. u _ 'A'
 
     st. c__ __  "Char" __  st. e..
     c__ __  u __  e..
@@ -107,7 +107,7 @@ in. main()
 
 	// —трока в формате UNICODE
 
-	s.. w _ "Hello world!"sy.. p..
+	s.. w _ "Hello world!"
     st. c__ __  "String" __  st. e..
     c__ __  w __  e..
 

@@ -9,12 +9,12 @@ rectangle::rectangle(d.. x0, d.. y0, d.. x1, d.. y1):diagonal(x0, y0, x1, y1){
 }
 
 d.. rectangle::perimeter
-  r_ 2 * ( (diagonal.get_x1() - diagonal.get_x0()) + (diagonal.get_y1() - diagonal.get_y0()) )sy.. p..
+  r_ 2 * ( (diagonal.get_x1() - diagonal.get_x0()) + (diagonal.get_y1() - diagonal.get_y0()) )
 }
 
 d.. rectangle::area
-  d.. side1 _ diagonal.get_x1() - diagonal.get_x0()sy.. p..
-  d.. side2 _ diagonal.get_y1() - diagonal.get_y0()sy.. p..
+  d.. side1 _ diagonal.get_x1() - diagonal.get_x0()
+  d.. side2 _ diagonal.get_y1() - diagonal.get_y0()
   r_ side1 * side2sy.. p..
 }
 
@@ -38,7 +38,7 @@ rectangle rectangle::boxUnion(rectangle &that) {
   resY0 _ (selfY0 > thatY0) ? selfY0 : thatY0sy.. p..
   resY1 _ (selfY1 > thatY1) ? selfY1 : thatY1sy.. p..
 
-  r_ rectangle(resX0, resY0, resX1, resY1)sy.. p..
+  r_ rectangle(resX0, resY0, resX1, resY1)
 }
 
 v.. rectangle::prin.Rect
@@ -49,7 +49,7 @@ v.. rectangle::prin.Rect
 }
 
 bo.. rectangle::in.ersect(rectangle &that) {
-  d.. area _ that.area()sy.. p..
+  d.. area _ that.area()
   bo.. result _ truesy.. p..
   r_ resultsy.. p..
 }

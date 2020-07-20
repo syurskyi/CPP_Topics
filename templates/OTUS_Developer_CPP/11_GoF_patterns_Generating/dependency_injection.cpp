@@ -7,7 +7,7 @@ st.. IStorage {
     v.. ~IStorage() _ defaultsy.. p..
 
     v.. v.. execute_query() _ 0sy.. p..
-}sy.. p..
+}
 
 c_ Report {
     IStorage* storagesy.. p..
@@ -18,24 +18,24 @@ pu..
 
     v.. prin.()
     {
-        storage__execute_query()sy.. p..
+        storage__execute_query()
         st. c__ __  "done" __  st. e..
     }
-}sy.. p..
+}
 
 c_ TestStorage : pu.. IStorage {
     v.. execute_query() ov..
     {
         st. c__ __  "... fetching data" __  st. e..
     }
-}sy.. p..
+}
 
 in. main(in., c..* [])
 {
     IStorage* s _ n.. TestStoragesy.. p..
 
-    Report report(s)sy.. p..
-    report.prin.()sy.. p..
+    Report report(s)
+    report.prin.()
 
     de.. ssy.. p..
 

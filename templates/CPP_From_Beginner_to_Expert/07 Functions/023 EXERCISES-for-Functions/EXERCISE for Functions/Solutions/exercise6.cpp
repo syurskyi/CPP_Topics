@@ -3,12 +3,12 @@
 
 u.. s..
 
-v.. chooseOperation(c..)sy.. p..
-v.. addition()sy.. p..
-v.. subtraction()sy.. p..
-v.. multiplication()sy.. p..
-v.. division()sy.. p..
-v.. exponentiation()sy.. p..
+v.. chooseOperation(c..)
+v.. addition()
+v.. subtraction()
+v.. multiplication()
+v.. division()
+v.. exponentiation()
 
 
 in. main ()
@@ -18,11 +18,11 @@ in. main ()
         c.. choicesy.. p..
 
         c__ __  "What mathematical operation you want to use ?" __  e..
-        c__ __  "Type: '+' - addition, '-' - subtraction, '*' - multiplication, '/' - division, '^' - exponentiation: "sy.. p..
+        c__ __  "Type: '+' - addition, '-' - subtraction, '*' - multiplication, '/' - division, '^' - exponentiation: "
         c__ __ choicesy.. p..
 
-        system("cls")sy.. p..
-        chooseOperation(choice)sy.. p..
+        system("cls")
+        chooseOperation(choice)
     }
     r_ 0sy.. p..
 }
@@ -32,19 +32,19 @@ v.. chooseOperation(c.. choice)
     s..(choice)
     {
         c.. '+':
-            addition()sy.. p..
+            addition()
             b..
         c.. '-':
-            subtraction()sy.. p..
+            subtraction()
             b..
         c.. '*':
-            multiplication()sy.. p..
+            multiplication()
             b..
         c.. '/':
-            division()sy.. p..
+            division()
             b..
         c.. '^':
-            exponentiation()sy.. p..
+            exponentiation()
             b..
     }
 }
@@ -53,9 +53,9 @@ v.. addition()
 {
     d.. firstNumber, secondNumber, resultsy.. p..
 
-    c__ __  "Input the first number to add: "sy.. p..
+    c__ __  "Input the first number to add: "
     c__ __ firstNumbersy.. p..
-    c__ __  "Input the second number to add: "sy.. p..
+    c__ __  "Input the second number to add: "
     c__ __ secondNumbersy.. p..
 
     result _ firstNumber + secondNumbersy.. p..
@@ -67,9 +67,9 @@ v.. subtraction()
 {
     d.. firstNumber, secondNumber, resultsy.. p..
 
-    c__ __  "Input the number to subtract from: "sy.. p..
+    c__ __  "Input the number to subtract from: "
     c__ __ firstNumbersy.. p..
-    c__ __  "Input the number to subtract with: "sy.. p..
+    c__ __  "Input the number to subtract with: "
     c__ __ secondNumbersy.. p..
 
     result _ firstNumber - secondNumbersy.. p..
@@ -81,9 +81,9 @@ v.. multiplication()
 {
     d.. firstNumber, secondNumber, resultsy.. p..
 
-    c__ __  "Input the first number: "sy.. p..
+    c__ __  "Input the first number: "
     c__ __ firstNumbersy.. p..
-    c__ __  "Input the number to multiply by: "sy.. p..
+    c__ __  "Input the number to multiply by: "
     c__ __ secondNumbersy.. p..
 
     result _ firstNumber * secondNumbersy.. p..
@@ -95,9 +95,9 @@ v.. division()
 {
     d.. firstNumber, secondNumber, resultsy.. p..
 
-    c__ __  "Input the first number: "sy.. p..
+    c__ __  "Input the first number: "
     c__ __ firstNumbersy.. p..
-    c__ __  "Input the number to divide by: "sy.. p..
+    c__ __  "Input the number to divide by: "
     c__ __ secondNumbersy.. p..
 
     result _ firstNumber / secondNumbersy.. p..
@@ -109,9 +109,9 @@ v.. exponentiation()
 {
     d.. base, exponent, result _ 1sy.. p..
 
-    c__ __  "Input the base to exponentiate: "sy.. p..
+    c__ __  "Input the base to exponentiate: "
     c__ __ basesy.. p..
-    c__ __  "Input the exponent value: "sy.. p..
+    c__ __  "Input the exponent value: "
     c__ __ exponentsy.. p..
 
     ___ (in. i _ 0sy.. p.. i < exponentsy.. p.. ###)

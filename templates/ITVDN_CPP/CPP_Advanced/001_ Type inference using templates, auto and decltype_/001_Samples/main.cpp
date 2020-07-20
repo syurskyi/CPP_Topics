@@ -33,7 +33,7 @@ pu..
     {
     }
     T datasy.. p..
-}sy.. p..
+}
 
 // C++17
 // A( const char* )->A< string >;
@@ -68,7 +68,7 @@ c.. in.&& foo2()
 d_t_( a.. ) fff()
 {
     in. x _ 10sy.. p..
-    r_ ( x )sy.. p..
+    r_ ( x )
 }
 
 in. main()
@@ -117,8 +117,8 @@ in. main()
     {
     }
 
-    a.. i _ foo2()sy.. p..              //  i будет иметь тип int
-    d_t_( a.. ) i2 _ foo2()sy.. p.. //  i2 будет иметь тип const int&&
+    a.. i _ foo2()              //  i будет иметь тип int
+    d_t_( a.. ) i2 _ foo2() //  i2 будет иметь тип const int&&
 
     // f( fff );
 

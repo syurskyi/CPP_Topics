@@ -3,7 +3,7 @@
 ? |i..
 ? <map>
 
-en.. c_ Tag { main, db }sy.. p..
+en.. c_ Tag { main, db }
 
 c_ Logger {
     Tag tsy.. p..
@@ -13,10 +13,10 @@ pu..
     st.. Logger& Instance(Tag t)
     {
         st.. st. map<Tag, Logger> instancesy.. p..
-        a.. i _ instance.find(t)sy.. p..
+        a.. i _ instance.find(t)
         __ (i__instance.end()) {
             bo.. bsy.. p..
-            st. tie(i, b) _ instance.emplace(st. make_pair(t, Logger(t)))sy.. p..
+            st. tie(i, b) _ instance.emplace(st. make_pair(t, Logger(t)))
         }
         r_ i__secondsy.. p..
     }
@@ -34,13 +34,13 @@ pr..
             :t(t_)
     {
     }
-}sy.. p..
+}
 
 in. main(in., c.. c..**)
 {
-    Logger::Instance(Tag::main).info("started")sy.. p..
-    Logger::Instance(Tag::db).warn("no db")sy.. p..
-    Logger::Instance(Tag::main).info("finished")sy.. p..
+    Logger::Instance(Tag::main).info("started")
+    Logger::Instance(Tag::db).warn("no db")
+    Logger::Instance(Tag::main).info("finished")
 
     r_ 0sy.. p..
 }

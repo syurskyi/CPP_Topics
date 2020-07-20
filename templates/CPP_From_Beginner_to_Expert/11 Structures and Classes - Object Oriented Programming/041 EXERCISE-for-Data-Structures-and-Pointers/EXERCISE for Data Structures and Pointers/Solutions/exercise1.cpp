@@ -7,7 +7,7 @@ st.. book
     s.. titlesy.. p..
     s.. authorsy.. p..
     in. publicationYearsy.. p..
-}sy.. p..
+}
 
 in. main()
 {

@@ -2,20 +2,20 @@
 //? |i..
 //
 ////assert(true);
-//s_a..(t.., "failed")sy.. p..
+//s_a..(t.., "failed")
 //
 //c_ foo
 ////    assert(true);
-//    s_a..(t.., "failed привет")sy.. p..
-//sy.. p..
+//    s_a..(t.., "failed привет")
+//
 //
 //in. main(in., c.. #||
-//    as..(i __ 1) sy.. p.. // is not an integral constant
+//    as..(i __ 1)  // is not an integral constant
 //    // static_assert(i == 0, "failed"); // is not an integral constant
 //
-//    s_a..(t.., "failed") sy.. p..
+//    s_a..(t.., "failed")
 //
-//    c.. in. j _ 0 sy.. p..
-//    s_a.. ? __ 0, "failed foo") sy.. p..
+//    c.. in. j _ 0
+//    s_a.. ? __ 0, "failed foo")
 //
-//    r_ _ sy.. p..
+//    r_ _

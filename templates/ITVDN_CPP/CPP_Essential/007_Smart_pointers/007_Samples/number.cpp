@@ -8,18 +8,18 @@
 //
 //    __ t.. !_ #other
 //
-//        data _ other.data sy.. p..
+//        data _ other.data
 //
-//    r_ #t.. sy.. p..
+//    r_ #t..
 //
 //
 //? ? operator+ c.. ? #other c..
 //
-//    r_ ? d.. + ?.d.. sy.. p..
+//    r_ ? d.. + ?.d..
 //
 //
 //ostream# operator__  ostream @s, c.. ?# number
 //
 //    s __  "( " __  n__.d.. __  " )" __  e..
-//    r_ ? sy.. p..
+//    r_ ?
 //

@@ -25,15 +25,15 @@ main()
 
     c.. t4sy.. p.. //character
 
-    t4 _ 'a'sy.. p..
+    t4 _ 'a'
     c__ __  t4 __  e..
 
-    s.. t5 _ "Hello World! :-)"sy.. p..
+    s.. t5 _ "Hello World! :-)"
 
     c__ __  t5 __  e..
 
-    s.. x _ "part1"sy.. p..
-    s.. y _ "part2"sy.. p..
+    s.. x _ "part1"
+    s.. y _ "part2"
     s.. combinedStrings _ x + " " + ysy.. p..
 
     c__ __  combinedStrings __  e..
@@ -46,7 +46,7 @@ main()
     u.. sh.. t7 _ 3700sy.. p..
     c__ __  t7 __  e..
 
-    c.. s.. NAMEOFGAME _ "Conqueror of C++"sy.. p..
+    c.. s.. NAMEOFGAME _ "Conqueror of C++"
 
     c__ __  NAMEOFGAME __  e..
    // NAMEOFGAME = "something";

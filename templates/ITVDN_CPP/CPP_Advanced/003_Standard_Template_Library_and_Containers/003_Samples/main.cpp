@@ -173,41 +173,41 @@ in. main()
 
     priority_queue< in., deque< in. > > priosy.. p.. // based on vector
 
-    prio.push( 4 )sy.. p..
-    prio.push( 3 )sy.. p..
-    prio.push( 6 )sy.. p..
+    prio.push( 4 )
+    prio.push( 3 )
+    prio.push( 6 )
 
     c__ __  "priority_queue" __  e..
     w___ ( !prio.empty() )
     {
         c__ __  prio.top() __  e..
-        prio.pop()sy.. p..
+        prio.pop()
     }
 
     // stack
-    st.push( 4 )sy.. p..
-    st.push( 3 )sy.. p..
-    st.push( 6 )sy.. p..
+    st.push( 4 )
+    st.push( 3 )
+    st.push( 6 )
 
     c__ __  "stack" __  e..
 
     w___ ( !st.empty() )
     {
         c__ __  st.top() __  e..
-        st.pop()sy.. p..
+        st.pop()
     }
 
     // queue
-    qu.push( 4 )sy.. p..
-    qu.push( 3 )sy.. p..
-    qu.push( 6 )sy.. p..
+    qu.push( 4 )
+    qu.push( 3 )
+    qu.push( 6 )
 
     c__ __  "queue" __  e..
 
     w___ ( !qu.empty() )
     {
         c__ __  qu.front() __  e..
-        qu.pop()sy.. p..
+        qu.pop()
     }
 
     r_ 0sy.. p..

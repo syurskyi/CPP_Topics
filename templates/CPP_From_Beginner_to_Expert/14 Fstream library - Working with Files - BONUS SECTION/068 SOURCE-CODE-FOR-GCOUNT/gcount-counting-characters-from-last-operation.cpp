@@ -11,17 +11,17 @@ in. main()
 
     fstream filesy.. p..
 
-    file.open("sample.txt", i.. in | i.. binary)sy.. p..
+    file.open("sample.txt", i.. in | i.. binary)
 
     __ (file.is_open())
     {
-        c.. buffer[250]sy.. p..
+        c.. buffer[250]
         do
         {
-            file.getline(buffer, 250)sy.. p..
+            file.getline(buffer, 250)
 
             c__ __  buffer __  " " __  file.gcount() __  e..
-        }w___(!file.eof())sy.. p..
+        }w___(!file.eof())
     }
     ____
         c__ __  "The file couldn't be opened properly" __  e..

@@ -13,8 +13,8 @@ in. main(){
     classA asy.. p..
     classB bsy.. p..
 
-    a.run()sy.. p..
-    b.run()sy.. p..
+    a.run()
+    b.run()
 
     r_ 0sy.. p..
 

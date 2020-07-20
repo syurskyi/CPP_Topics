@@ -3,7 +3,7 @@
 ?d.. LEN 100
 ?d.. WIDTH 100
 
-c.. array[LEN][WIDTH]sy.. p..
+c.. array[LEN][WIDTH]
 
 #undef LEN
 #undef WIDTH

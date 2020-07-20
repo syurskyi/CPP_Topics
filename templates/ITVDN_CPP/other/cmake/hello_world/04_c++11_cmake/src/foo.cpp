@@ -2,5 +2,5 @@
  
 v.. foo(v..)
 {
-    st. c__ __  "007_This is from foo!\n"sy.. p..
+    st. c__ __  "007_This is from foo!\n"
 }

@@ -9,11 +9,11 @@ bo.. more_data_to_prepare()
 }
 
 st.. data_chunk
-{}sy.. p..
+{}
 
 data_chunk prepare_data()
 {
-    r_ data_chunk()sy.. p..
+    r_ data_chunk()
 }
 
 v.. process(data_chunk&)
@@ -32,10 +32,10 @@ v.. data_preparation_thread()
 {
     w___(more_data_to_prepare())
     {
-        data_chunk c.. data_prepare_data()sy.. p..
-        st. lock_guard<st. mutex> lk(mut)sy.. p..
-        data_queue.push(data)sy.. p..
-        data_cond.notify_one()sy.. p..
+        data_chunk c.. data_prepare_data()
+        st. lock_guard<st. mutex> lk(mut)
+        data_queue.push(data)
+        data_cond.notify_one()
     }
 }
 
@@ -43,12 +43,12 @@ v.. data_processing_thread()
 {
     w___(t..)
     {
-        st. unique_lock<st. mutex> lk(mut)sy.. p..
-        data_cond.wait(lk,[]{r_ !data_queue.empty()sy.. p..})sy.. p..
-        data_chunk data_data_queue.front()sy.. p..
-        data_queue.pop()sy.. p..
-        lk.unlock()sy.. p..
-        process(data)sy.. p..
+        st. unique_lock<st. mutex> lk(mut)
+        data_cond.wait(lk,[]{r_ !data_queue.empty()})
+        data_chunk data_data_queue.front()
+        data_queue.pop()
+        lk.unlock()
+        process(data)
         __(is_last_chunk(data))
             b..
     }
@@ -56,9 +56,9 @@ v.. data_processing_thread()
 
 in. main()
 {
-    st. thread t1(data_preparation_thread)sy.. p..
-    st. thread t2(data_processing_thread)sy.. p..
+    st. thread t1(data_preparation_thread)
+    st. thread t2(data_processing_thread)
     
-    t1.join()sy.. p..
-    t2.join()sy.. p..
+    t1.join()
+    t2.join()
 }

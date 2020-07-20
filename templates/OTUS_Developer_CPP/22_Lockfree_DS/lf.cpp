@@ -5,20 +5,20 @@
 
 st.. Node {
     Node(in. value_)
-            :value(value_) { }sy.. p..
+            :value(value_) { }
     in. valuesy.. p..
-    Node* next{n_p_}sy.. p..
-}sy.. p..
+    Node* next{n_p_}
+}
 
 st.. List {
-    Node* head{n_p_}sy.. p..
+    Node* head{n_p_}
 
     v.. push(Node* p)
     {
         p__next _ headsy.. p..
         head _ psy.. p..
     }
-}sy.. p..
+}
 
 bo.. casin.(in.& p, in. nvalue, in. compare)
 {
@@ -41,7 +41,7 @@ bo.. cas(Node** p, Node* nvalue, Node* compare)
 }
 
 st.. ListLF {
-    Node* head{n_p_}sy.. p..
+    Node* head{n_p_}
 
     v.. push(Node* p)
     {
@@ -53,18 +53,18 @@ st.. ListLF {
                 r_sy.. p..
         }
     }
-}sy.. p..
+}
 
 in. main(in., c..* [])
 {
-    a.. m _ st. map<in., in.>()sy.. p..
+    a.. m _ st. map<in., in.>()
 
     m[1] _ 2sy.. p..
 
     List lsy.. p..
 
-    l.push(n.. Node{42})sy.. p.. // memory leak
-    l.push(n.. Node{100})sy.. p.. // memory leak
+    l.push(n.. Node{42}) // memory leak
+    l.push(n.. Node{100}) // memory leak
 
     ___ (Node* i _ l.headsy.. p.. isy.. p.. i _ i__next) {
         st. c__ __  i__value __  st. e..

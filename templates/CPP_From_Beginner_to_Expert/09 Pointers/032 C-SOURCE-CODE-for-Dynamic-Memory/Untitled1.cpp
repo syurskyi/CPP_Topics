@@ -33,13 +33,13 @@ in. main()
 
 
     {
-        in. *p _ n.. in.sy.. p..
+        in. *p _ n.. in.
 
         c__ __  p __  e..
 
         de.. psy.. p..
 
-        p _ n.. in.sy.. p..
+        p _ n.. in.
 
         c__ __  p __  e..
 

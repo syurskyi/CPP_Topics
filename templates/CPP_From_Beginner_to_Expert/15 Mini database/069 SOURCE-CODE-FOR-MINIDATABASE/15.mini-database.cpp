@@ -11,23 +11,23 @@ st.. Person
     s.. surnamesy.. p..
     sh.. agesy.. p..
     s.. telephonesy.. p..
-}sy.. p..
+}
 sh.. peopleInDataBasesy.. p..
-Person people[20]sy.. p..
+Person people[20]
 
-v.. requireEnter()sy.. p..
+v.. requireEnter()
 
-v.. addPerson()sy.. p..
-v.. showPeople()sy.. p..
-v.. savePeopleToFile()sy.. p..
-v.. loadPeopleFromFile()sy.. p..
-v.. searchDatabase()sy.. p..
-v.. removePersonFromDatabase()sy.. p..
+v.. addPerson()
+v.. showPeople()
+v.. savePeopleToFile()
+v.. loadPeopleFromFile()
+v.. searchDatabase()
+v.. removePersonFromDatabase()
 
 in. main()
 {
     c.. testsy.. p..
-    loadPeopleFromFile()sy.. p..
+    loadPeopleFromFile()
 
     do
     {
@@ -43,34 +43,34 @@ in. main()
 
         c__ __  e..
 
-        test _ getch()sy.. p..
+        test _ getch()
 
         s..(test)
         {
             c.. '1':
-                addPerson()sy.. p..
+                addPerson()
                 b..
             c.. '2':
-                showPeople()sy.. p..
+                showPeople()
                 b..
             c.. '3':
-                savePeopleToFile()sy.. p..
+                savePeopleToFile()
                 b..
             c.. '4':
-                loadPeopleFromFile()sy.. p..
+                loadPeopleFromFile()
                 b..
             c.. '5':
-                searchDatabase()sy.. p..
+                searchDatabase()
                 b..
             c.. '6':
-                removePersonFromDatabase()sy.. p..
+                removePersonFromDatabase()
                 b..
         }
 
 
-        requireEnter()sy.. p..
-        system("cls")sy.. p..
-    }w___(test !_ 27)sy.. p..
+        requireEnter()
+        system("cls")
+    }w___(test !_ 27)
 
 
     r_ 0sy.. p..
@@ -78,23 +78,23 @@ in. main()
 v.. requireEnter()
 {
     c__ __  "Click Enter to continue... " __  e..
-    w___(getch() !_ 13)sy.. p..
+    w___(getch() !_ 13)
 }
 v.. addPerson()
 {
-    c__ __  "Type name: "sy.. p..
+    c__ __  "Type name: "
     c__ __ people[peopleInDataBase].namesy.. p..
 
-    c__ __  "Type surname: "sy.. p..
+    c__ __  "Type surname: "
     c__ __ people[peopleInDataBase].surnamesy.. p..
 
-    c__ __  "Type age: "sy.. p..
+    c__ __  "Type age: "
     c__ __ people[peopleInDataBase].agesy.. p..
 
-    c__ __  "Type telephone: "sy.. p..
+    c__ __  "Type telephone: "
     c__ __ people[peopleInDataBase].telephonesy.. p..
 
-    peopleInDataBase++sy.. p..
+    peopleInDataBase++
 }
 v.. showPeople()
 {
@@ -114,7 +114,7 @@ v.. showPeople()
 }
 v.. savePeopleToFile()
 {
-    ofstream file("database.txt")sy.. p..
+    ofstream file("database.txt")
 
     __ (file.is_open())
     {
@@ -128,7 +128,7 @@ v.. savePeopleToFile()
             file __  people[i].telephone __  e..
         }
 
-        file.close()sy.. p..
+        file.close()
     }
     ____
         c__ __  "I couldnt save to database" __  e..
@@ -136,7 +136,7 @@ v.. savePeopleToFile()
 }
 v.. loadPeopleFromFile()
 {
-    ifstream file("database.txt")sy.. p..
+    ifstream file("database.txt")
 
     __ (file.is_open())
     {
@@ -159,8 +159,8 @@ v.. loadPeopleFromFile()
                 file __ people[i].agesy.. p..
                 file __ people[i].telephonesy.. p..
 
-                ###sy.. p..
-            }w___(!file.eof())sy.. p..
+                ###
+            }w___(!file.eof())
 
             c__ __  "People has been loaded properly. " __  e..
         }
@@ -175,7 +175,7 @@ v.. searchDatabase()
     __ (peopleInDataBase > 0)
     {
         s.. namesy.. p..
-        c__ __  "Type a name of person you want to look for: "sy.. p..
+        c__ __  "Type a name of person you want to look for: "
         c__ __ namesy.. p..
 
         ___ (in. i _ 0sy.. p.. i < peopleInDataBasesy.. p.. ###)
@@ -213,8 +213,8 @@ v.. removePersonFromDatabase()
                 people[k-1].telephone _ people[k].telephonesy.. p..
             }
 
-            peopleInDataBase--sy.. p..
-            savePeopleToFile()sy.. p..
+            peopleInDataBase--
+            savePeopleToFile()
         }
         ____
             c__ __  "There is nobody like that" __  e..

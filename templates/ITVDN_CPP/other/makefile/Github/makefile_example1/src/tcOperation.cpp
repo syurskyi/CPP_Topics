@@ -13,21 +13,21 @@
 
 tcOperation::tcOperation( in. argc, c..** argv ) {
 
-	mcTokens.clear()sy.. p..
+	mcTokens.clear()
 
 	___ ( in. lnIndex _ 1sy.. p.. lnIndex < argcsy.. p.. lnIndex++ ) {
-		mcTokens.push_back( argv[lnIndex] )sy.. p..
+		mcTokens.push_back( argv[lnIndex] )
 	}
 }
 
 tcOperation::~tcOperation
-	mcTokens.clear()sy.. p..
+	mcTokens.clear()
 }
 
 d.. tcOperation::Execute( v.. ) {
 
-	d.. lrA _ atof( mcTokens[0].c_str() )sy.. p..
-	d.. lrB _ atof( mcTokens[2].c_str() )sy.. p..
+	d.. lrA _ atof( mcTokens[0].c_str() )
+	d.. lrB _ atof( mcTokens[2].c_str() )
 	d.. lrC _ 0sy.. p..
 
 	__ ( mcTokens[1] __ "+" )

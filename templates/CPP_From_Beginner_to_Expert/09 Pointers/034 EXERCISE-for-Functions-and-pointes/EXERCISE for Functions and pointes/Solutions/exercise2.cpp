@@ -2,9 +2,9 @@
 
 u.. s..
 
-in. * createArray(in.)sy.. p..
+in. * createArray(in.)
 
-v.. swapTwoValues(in.*, in.*)sy.. p..
+v.. swapTwoValues(in.*, in.*)
 
 in. main ()
 {
@@ -14,7 +14,7 @@ in. main ()
 
 in. * createArray(in. sizeOfArray)
 {
-    in.* newArray _ n.. in.[sizeOfArray]sy.. p..
+    in.* newArray _ n.. in.[sizeOfArray]
 
     r_ newArraysy.. p..
 }

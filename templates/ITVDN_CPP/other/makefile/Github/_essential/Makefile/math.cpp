@@ -15,11 +15,11 @@ in. main(in. argc, c.. c.. *argv[])
 	d.. x _ 10.0, y _ 5.0sy.. p..
 	__ (argc > 1) // Use values passed by command line arg.
 	{
-		x _ atof(argv[1])sy.. p..
-		y _ atof(argv[2])sy.. p..
-		c.. c.. *op _ argv[3]sy.. p..
+		x _ atof(argv[1])
+		y _ atof(argv[2])
+		c.. c.. *op _ argv[3]
 		// Print result depending on the operator
-		st. c__ __  x __  op __  y __  " = "sy.. p..
+		st. c__ __  x __  op __  y __  " = "
 		s.. (*op)
 		{
 		   c.. '+':
@@ -38,13 +38,13 @@ in. main(in. argc, c.. c.. *argv[])
 		       st. c__ __  sum(x,y) __  st. e..
 		}
 	} ____ {
-		st. c__ __  x __  "+" __  y __  " = "sy.. p..
+		st. c__ __  x __  "+" __  y __  " = "
 		st. c__ __  sum(x,y) __  st. e..
-		st. c__ __  x __  "-" __  y __  " = "sy.. p..
+		st. c__ __  x __  "-" __  y __  " = "
 		st. c__ __  sub(x,y) __  st. e..
-		st. c__ __  x __  "*" __  y __  " = "sy.. p..
+		st. c__ __  x __  "*" __  y __  " = "
 		st. c__ __  mul(x,y) __  st. e..
-		st. c__ __  x __  "/" __  y __  " = "sy.. p..
+		st. c__ __  x __  "/" __  y __  " = "
 		st. c__ __  divi(x,y) __  st. e..
 	}
 	r_ 0sy.. p..

@@ -2,11 +2,11 @@
 //
 //
 //in. main in., c.. #||
-//    in. i _ N.. sy.. p.. // warning
-//    c.. #p _ N.. sy.. p..
+//    in. i _ N..  // warning
+//    c.. #p _ N..
 //
 ////    int is = nullptr; // error
-//    c.. #ps _ ? sy.. p..
+//    c.. #ps _ ?
 //
-//    r_ _ sy.. p..
+//    r_ _
 //

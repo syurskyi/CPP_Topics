@@ -6,32 +6,32 @@ u.. s..
 
 v.. foo M.. * m
 
-    m__say sy.. p..
+    m__say
 
 
 in. main
 
-    C.. cat sy.. p..
-    ?.say sy.. p..
+    C.. cat
+    ?.say
 
-    M.. #mammal _ n.. Cat() sy.. p..
-    ?__say sy.. p..
+    M.. #mammal _ n.. Cat()
+    ?__say
 
-    M.. mam sy.. p..
+    M.. mam
 
-    M..# mammals 2 sy.. p..
+    M..# mammals 2
 
-    m.. 0 _ #cat sy.. p..
-    m.. 1 _ #mam sy.. p..
+    m.. 0 _ #cat
+    m.. 1 _ #mam
 
-    ___(in. i _ 0sy.. p.. ? < 2 sy.. p.. ###
+    ___(in. i _ 0sy.. p.. ? < 2  ###
 
-        m.. ? __sa. sy.. p..
+        m.. ? __sa.
 
 
-    foo(m.. sy.. p..
+    foo(m..
 
-    foo #c.. sy.. p..
+    foo #c..
 
-    r_ 0 sy.. p..
+    r_ 0
 

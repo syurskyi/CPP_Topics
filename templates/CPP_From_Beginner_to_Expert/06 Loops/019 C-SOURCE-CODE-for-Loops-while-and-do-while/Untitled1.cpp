@@ -4,9 +4,9 @@
 //
 //main
 //
-//    c.. in. SIZEOFARRAY _ 10 sy.. p..
-//    in. i _ 0 sy.. p..
-//    in. ar.. S.. sy.. p..
+//    c.. in. SIZEOFARRAY _ 10
+//    in. i _ 0
+//    in. ar.. S..
 ///*
 //    while(i < SIZEOFARRAY) //i = 0
 //    {
@@ -15,7 +15,7 @@
 //    }
 //    */
 //    w___ i
-//      c__ __ "lalala" sy.. p..
+//      c__ __ "lalala"
 ///*
 //    do
 //    {

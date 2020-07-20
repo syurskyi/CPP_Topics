@@ -4,8 +4,8 @@ u.. s..
 /*reference variables */
 in. main()
 {
-    s.. name_2 _ "lala"sy.. p..
-    s.. name _ "Agnes"sy.. p..
+    s.. name_2 _ "lala"
+    s.. name _ "Agnes"
 
     c__ __  "Value of Variable: " __  name __  " addres of Variable is: " __  &name __  e..
 
@@ -16,7 +16,7 @@ in. main()
 
     //nr_6 = name_2;
     //nr_6 = "Scott";
-    name _ "Scott"sy.. p..
+    name _ "Scott"
 
 
     c__ __  "Value of Variable: " __  name __  " addres of Variable is: " __  &name __  e..

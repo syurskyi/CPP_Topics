@@ -6,7 +6,7 @@ in. main ()
 {
     c.. c _ c__.g..
 
-    c__.putback(c)sy.. p..
+    c__.putback(c)
     __ (c > '0' && c < '9')
     {
         in. numbersy.. p..

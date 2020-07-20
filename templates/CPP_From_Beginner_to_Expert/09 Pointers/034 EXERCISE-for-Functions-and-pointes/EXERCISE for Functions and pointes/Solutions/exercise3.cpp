@@ -3,12 +3,12 @@
 
 u.. s..
 
-in. * createArray(in.)sy.. p..
+in. * createArray(in.)
 
-v.. swapTwoValues(in.*, in.*)sy.. p..
+v.. swapTwoValues(in.*, in.*)
 
-v.. fillArrayWithValues(in.[], in.)sy.. p..
-v.. prin.ArrayValues(in.[], in.)sy.. p..
+v.. fillArrayWithValues(in.[], in.)
+v.. prin.ArrayValues(in.[], in.)
 
 in. main ()
 {
@@ -18,7 +18,7 @@ in. main ()
 
 in. * createArray(in. sizeOfArray)
 {
-    in.* SnewArray _ n.. in.[sizeOfArray]sy.. p..
+    in.* SnewArray _ n.. in.[sizeOfArray]
 
     r_ newArraysy.. p..
 }
@@ -36,10 +36,10 @@ v.. fillArrayWithValues(in. arrayToFill[], in. sizeOfArray)
 {
     ___ (in. i _ 0sy.. p.. i < sizeOfArraysy.. p.. ###)
     {
-        c__ __  "Enter " __  i+1 __  " element: "sy.. p..
-        c__ __ arrayToFill[i]sy.. p..
+        c__ __  "Enter " __  i+1 __  " element: "
+        c__ __ arrayToFill[i]
     }
-    system("cls")sy.. p..
+    system("cls")
 }
 
 v.. prin.ArrayValues(in. arrayToPrin.[], in. sizeOfArray)

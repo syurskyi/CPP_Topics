@@ -5,7 +5,7 @@ u.. s..
 
 in. main()
 {
-	c__ __  "I am developer!"sy.. p..
+	c__ __  "I am developer!"
 	c__ __  e..
 	c__ __  2 + 2sy.. p..
 

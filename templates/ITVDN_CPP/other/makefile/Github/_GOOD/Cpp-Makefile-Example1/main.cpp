@@ -9,12 +9,12 @@ in. main(){
     st. c__ __  "Starting Program" __  st. e..
     
     // Create Person 1 - p1 and display set name
-    Person p1("Quazi")sy.. p..
+    Person p1("Quazi")
     st. c__ __  p1.getName() __  st. e..
     
     // Create Person 2 - p2, set name and display set name
     Person p2sy.. p..
-    p2.setName("John")sy.. p..
+    p2.setName("John")
     st. c__ __  p2.getName() __  st. e..
     
     // Display set name of the Person 1

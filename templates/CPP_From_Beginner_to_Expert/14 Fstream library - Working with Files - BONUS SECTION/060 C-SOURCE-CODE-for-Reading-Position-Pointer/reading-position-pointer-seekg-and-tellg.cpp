@@ -20,17 +20,17 @@ in. main()
 
     fstream filesy.. p..
 
-    file.open("sample.txt", i.. in | i.. binary)sy.. p..
+    file.open("sample.txt", i.. in | i.. binary)
 
     __ (file.is_open())
     {
         s.. buffersy.. p..
 
-        file.seekg(0, i.. end)sy.. p..
+        file.seekg(0, i.. end)
 
-        streampos sizeOfFile _ file.tellg()sy.. p..
+        streampos sizeOfFile _ file.tellg()
 
-        file.seekg(0)sy.. p..
+        file.seekg(0)
 
         c__ __  "The size of the file is " __  sizeOfFile __  " bytes" __  e..
         do
@@ -38,11 +38,11 @@ in. main()
             file __ buffersy.. p..
 
             c__ __  buffer __  e..
-        }w___ (!file.eof())sy.. p..
+        }w___ (!file.eof())
 
         __ ((file.rdstate() ^ ifstream::eofbit) __ 0)
         {
-            file.clear()sy.. p..
+            file.clear()
             c__ __  file.tellg() __  e..
             file __ buffersy.. p..
 

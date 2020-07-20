@@ -5,7 +5,7 @@ u.. s..
 
 v.. test()
 {
-    PersonalData &? _ n.. PersonalData[5]sy.. p..
+    PersonalData &? _ n.. PersonalData[5]
 
     de.. []poin.ersy.. p..
 }
@@ -13,8 +13,8 @@ v.. test()
 in. main()
 {
 
-    PersonalData person(20)sy.. p..
-    PersonalData person2(50)sy.. p..
+    PersonalData person(20)
+    PersonalData person2(50)
 
     c__ __  person.getAge()__  e..
     c__ __  person2.getAge() __  e..

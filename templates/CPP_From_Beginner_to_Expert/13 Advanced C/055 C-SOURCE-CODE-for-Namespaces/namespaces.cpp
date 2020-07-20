@@ -14,13 +14,13 @@ n.. mySpace
             {
                 r_ textsy.. p..
             }
-    }sy.. p..
+    }
 
     st. ostream & operator__ (st. ostream & out, MyNewLine & o)
     {
-        r_ out __  o.toString()sy.. p..
+        r_ out __  o.toString()
     }
-    MyNewLine endl("\n\n\n\n\n\n")sy.. p..
+    MyNewLine endl("\n\n\n\n\n\n")
 }
 u.. mySpacesy.. p..
 in. main()

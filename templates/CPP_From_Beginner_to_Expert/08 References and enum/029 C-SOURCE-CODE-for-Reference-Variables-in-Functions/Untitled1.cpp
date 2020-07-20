@@ -2,14 +2,14 @@
 
 u.. s..
 
-in. & swap(in. &, in. &)sy.. p..
+in. & swap(in. &, in. &)
 
 in. main()
 {
     in. a _ 10sy.. p..
     in. b _ 20sy.. p..
 
-    in. &c _ swap(a, b)sy.. p..
+    in. &c _ swap(a, b)
 
     c _ 100sy.. p..
 

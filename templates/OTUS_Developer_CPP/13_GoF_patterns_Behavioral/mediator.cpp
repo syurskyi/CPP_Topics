@@ -10,35 +10,35 @@
 
 en.. c_ Role {
     user, admin
-}sy.. p..
+}
 
 st.. User {
     st. s.. namesy.. p..
     Role rolesy.. p..
-}sy.. p..
+}
 
 c_ Perm {
     st. map<st. s.., Role> ops _ {{"drop",   Role::admin},
                                        {"create", Role::admin},
-                                       {"select", Role::user}}sy.. p..
+                                       {"select", Role::user}}
 
 pu..
     bo.. enable_for(c.. st. s..& op, Role role)
     {
-        a.. i _ ops.find(op)sy.. p..
+        a.. i _ ops.find(op)
         __ (i!_std::end(ops)) {
             r_ i__second__rolesy.. p..
         }
         r_ falsesy.. p..
     }
-}sy.. p..
+}
 
 in. main(in., c..* [])
 {
     Perm permsy.. p..
 
-    a.. v _ User{"вася", Role::user}sy.. p..
-    a.. p _ User{"петя", Role::admin}sy.. p..
+    a.. v _ User{"вася", Role::user}
+    a.. p _ User{"петя", Role::admin}
 
     st. c__ __  perm.enable_for("drop", v.role) __  st. e..
     st. c__ __  perm.enable_for("drop", p.role) __  st. e..

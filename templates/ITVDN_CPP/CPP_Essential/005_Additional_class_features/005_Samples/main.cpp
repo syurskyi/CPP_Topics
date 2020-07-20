@@ -6,35 +6,35 @@
 //
 //u.. s..
 //
-//uin. Cat::vibr _ 20 sy.. p..
+//uin. Cat::vibr _ 20
 //
-//c_ SomeClass sy.. p..
+//c_ SomeClass
 //
 //c_ A
 //
 //pu..
-//    v.. v.. foo _ 0 sy.. p..
-// sy.. p..
+//    v.. v.. foo _ 0
+//
 //
 //v.. A foo
 //
-//    c__ __  "A::foo"sy.. p..
+//    c__ __  "A::foo"
 //
 //
 //c_ B  pu.. A
 //
 //pu..
-//    v.. foo ov.. sy.. p..
+//    v.. foo ov..
 //
-//    v.. new_method S..# some sy.. p..
+//    v.. new_method S..# some
 //
-//    in. get_data S..# some sy.. p..
+//    in. get_data S..# some
 //
 //pr..
-//    s.. string_data sy.. p..
+//    s.. string_data
 //
-//    fr.. S.. sy.. p..
-// sy.. p..
+//    fr.. S..
+//
 //
 //
 //
@@ -43,55 +43,55 @@
 //pu..
 //    v.. get_string B# b
 //
-//        c__ __  ?.string_data sy.. p..
+//        c__ __  ?.string_data
 //
 //pr..
 //    in. share_data
 //
-//       r_ data sy.. p..
+//       r_ data
 //
 //pr..
-//    in. data _ 20 sy.. p..
+//    in. data _ 20
 //
-//    fr.. B sy.. p..
-//    fr.. v.. B n.. ..# s.. sy.. p..
-//    fr.. v.. s.. S..# s.. sy.. p..
-//sy.. p..
+//    fr.. B
+//    fr.. v.. B n.. ..# s..
+//    fr.. v.. s.. S..# s..
+//
 //
 //v.. some_func SomeClass# some
 //
 //    c__ __  __P.. __  e..
-//    c__ __  s__.d.. sy.. p..
+//    c__ __  s__.d..
 //
 //
 //v.. B foo
 //
-//    A foo sy.. p..
-//    c__ __  "B::foo" sy.. p..
+//    A foo
+//    c__ __  "B::foo"
 //
 //
 //in. B get_data S.. some
 //
-//    c__ __  s__.s_d.. sy.. p..
-//    r_ s__.d.. sy.. p..
+//    c__ __  s__.s_d..
+//    r_ s__.d..
 //
 //
 //v.. B n.. S..# some
 //
-//    c__ __  some.share_data()sy.. p..
+//    c__ __  some.share_data()
 //
 //
 //in. main
 //
-//    N.. a(4), b 10 sy.. p..
+//    N.. a(4), b 10
 //
-//    b _ a sy.. p..
+//    b _ a
 //
-//    c__ __  a + b sy.. p..
+//    c__ __  a + b
 //
 //
 ////    B b;
 ////    SomeClass sm;
 ////    b.get_data(sm);
-//    r_ _ sy.. p..
+//    r_ _
 //

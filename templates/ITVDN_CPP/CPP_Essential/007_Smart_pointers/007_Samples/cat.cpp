@@ -3,20 +3,20 @@
 //
 //? ?
 //
-//    st. c__ __  __P.. __  "\n" sy.. p..
+//    st. c__ __  __P.. __  "\n"
 //
 //
 //? ? uin. paws
 //
-//    paws _ paws sy.. p..
+//    paws _ paws
 //
 //
 //? #?
 //
-//    st. c__ __  __P.. __  "\n" sy.. p..
+//    st. c__ __  __P.. __  "\n"
 //
 //
 //v.. ? say
 //
-//    st. c__ __  "meow\n" sy.. p..
+//    st. c__ __  "meow\n"
 //

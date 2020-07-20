@@ -9,20 +9,20 @@ in. main()
     // - новый объект
     st. map<in., in.> xsy.. p..
 
-    a.. f _ x.find(0)sy.. p..
+    a.. f _ x.find(0)
     __ (f __ x.end())
     {
         x[0] _ 1sy.. p..
     }
 
     // только новый
-    a.. [a, b] _ x.insert({1, 2})sy.. p..
+    a.. [a, b] _ x.insert({1, 2})
     // только новый, зачем?
-    a.. [a1, b1] _ x.try_emplace(1, 3)sy.. p..
+    a.. [a1, b1] _ x.try_emplace(1, 3)
     // новый или перезапишет
-    a.. [a2, b2] _ x.insert_or_assign(1, 4)sy.. p..
+    a.. [a2, b2] _ x.insert_or_assign(1, 4)
     x[1] _ 5sy.. p..
-    a.. z _ x[99]sy.. p..
+    a.. z _ x[99]
 
     ___(a.. [i, j]: x)
     {

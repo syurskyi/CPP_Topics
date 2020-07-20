@@ -20,19 +20,19 @@ in. main()
 
     fstream filesy.. p..
 
-    file.open("sample.txt", i.. out | i.. binary)sy.. p..
+    file.open("sample.txt", i.. out | i.. binary)
 
     __ (file.is_open())
     {
-        s.. tmp _ "this is text about nothing"sy.. p..
+        s.. tmp _ "this is text about nothing"
 
         file __  tmpsy.. p..
 
         c__ __  file.tellp() __  e..
 
-        file.seekp(0, i.. beg)sy.. p..
+        file.seekp(0, i.. beg)
 
-        file __  "T"sy.. p..
+        file __  "T"
     }
     ____
         c__ __  "The file couldn't be opened properly" __  e..

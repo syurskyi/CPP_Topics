@@ -34,7 +34,7 @@ v.. f()
 
 v.. example()
 {
-    n1::n2::f()sy.. p..
+    n1::n2::f()
 }
 }
 
@@ -46,7 +46,7 @@ v.. example()
     st.. base1
     {
         in. b1, b2 _ 42sy.. p..
-    }sy.. p..
+    }
 
     // non-aggregate
     st.. base2
@@ -56,7 +56,7 @@ v.. example()
         {
         }
         in. b3sy.. p..
-    }sy.. p..
+    }
 
     // Extension to aggregate initialization
     st.. derived
@@ -64,21 +64,21 @@ v.. example()
         , base2
     {
         in. dsy.. p..
-    }sy.. p..
+    }
 
     // aggregate
-    base1 b1{ 1, 2 }sy.. p..
+    base1 b1{ 1, 2 }
 
     // non-aggregate
     // base2 b2{ 1 }; // compilation error
 
     // aggregate in C++17
-    derived d1{ { 1, 2 }, {}, 4 }sy.. p.. // d1.b1 = 1, d1.b2 = 2,  d1.b3 = 42, d1.d = 4
-    derived d2{ {}, {}, 4 }sy.. p..       // d2.b1 = 0, d2.b2 = 42, d2.b3 = 42, d2.d = 4
+    derived d1{ { 1, 2 }, {}, 4 } // d1.b1 = 1, d1.b2 = 2,  d1.b3 = 42, d1.d = 4
+    derived d2{ {}, {}, 4 }       // d2.b1 = 0, d2.b2 = 42, d2.b3 = 42, d2.d = 4
     derived d3{
         { 1 },
         {},
-    }sy.. p.. // d2.b1 = 1, d2.b2 = 42, d2.b3 = 42, d2.d = 0
+    } // d2.b1 = 1, d2.b2 = 42, d2.b3 = 42, d2.d = 0
 }
 }
 
@@ -87,37 +87,37 @@ n.. fold_expression
 t.. < t_n_... Args >
 v.. prin.er( Args&&... args )
 {
-    ( c__ __  ... __  args ) __  '\n'sy.. p..
+    ( c__ __  ... __  args ) __  '\n'
 }
 
 t.. < t_n_ T, t_n_... Args >
 v.. push_back_vec( ve..< T >& v, Args&&... args )
 {
-    ( v.push_back( args ), ... )sy.. p..
+    ( v.push_back( args ), ... )
 }
 
 t.. < t_n_... Args >
 in. summa( Args&&... args )
 {
-    r_ ( args + ... )sy.. p..
+    r_ ( args + ... )
 }
 
 t.. < t_n_... Args >
 bo.. compare( Args... args )
 {
-    r_ ( args && ... )sy.. p..
+    r_ ( args && ... )
 }
 
 v.. example()
 {
-    prin.er( 1, 2, 3, "abc" )sy.. p..
-    prin.er( 1, ", ", 2, ", ", 3, ", ", "abc" )sy.. p..
+    prin.er( 1, 2, 3, "abc" )
+    prin.er( 1, ", ", 2, ", ", 3, ", ", "abc" )
 
     ve..< in. > vsy.. p..
-    push_back_vec( v, 6, 2, 45, 12 )sy.. p..
-    push_back_vec( v, 1, 2, 9 )sy.. p..
+    push_back_vec( v, 6, 2, 45, 12 )
+    push_back_vec( v, 1, 2, 9 )
     ___ ( in. i : v )
-        c__ __  i __  ' 'sy.. p..
+        c__ __  i __  ' '
     c__ __  e..
 
     c__ __  summa( 1, 2, 3, 4, 5 ) __  e..
@@ -143,27 +143,27 @@ v.. now()
 
 v.. example()
 {
-    early< in., 10 >()sy.. p..
-    early< c.., 'H' >()sy.. p..
-    early< l.., 100l >()sy.. p..
+    early< in., 10 >()
+    early< c.., 'H' >()
+    early< l.., 100l >()
 
-    now< 10 >()sy.. p..
-    now< 'H' >()sy.. p..
-    now< 100l >()sy.. p..
+    now< 10 >()
+    now< 'H' >()
+    now< 100l >()
 }
 }
 n.. tmpl_arg_deduction
 {
 v.. example()
 {
-    pair< in., s.. > p_a( 1, "12" )sy.. p..
+    pair< in., s.. > p_a( 1, "12" )
 
     // c++17
-    pair p_b( 1, "12" )sy.. p..
-    pair p_c _ { 1, "12" }sy.. p..
-    ve.. vi _ { 1, 2, 3, 4 }sy.. p..
-    ve.. vs _ { "str1", "str2", "str1" }sy.. p..
-    in. m _ max( 12, 23 )sy.. p..
+    pair p_b( 1, "12" )
+    pair p_c _ { 1, "12" }
+    ve.. vi _ { 1, 2, 3, 4 }
+    ve.. vs _ { "str1", "str2", "str1" }
+    in. m _ max( 12, 23 )
 }
 }
 
@@ -171,13 +171,13 @@ n.. constexpr_lambda
 {
 c_t.. in. f_calc( in. aValue )
 {
-    a.. lambda _ [aValue] r_ aValue * 14sy.. p.. }sy.. p..
-    r_ aValue + lambda()sy.. p..
+    a.. lambda _ [aValue] r_ aValue * 14sy.. p.. }
+    r_ aValue + lambda()
 }
 
 v.. example()
 {
-    c_t.. a.. lambda _ []( in. aValue ) { r_ aValue * aValuesy.. p.. }sy.. p..
+    c_t.. a.. lambda _ []( in. aValue ) { r_ aValue * aValuesy.. p.. }
 
     c__ __  f_calc( 12 ) __  e..
     c__ __  lambda( 12 ) __  e..
@@ -190,17 +190,17 @@ st.. test
     v.. f_test()
     {
         a.. lambda_const _ [*t..]
-            f_const()sy.. p..
+            f_const()
             r_ mA * mAsy.. p..
-        }sy.. p..
+        }
 
         a.. lambda _ [*t..]() mutable {
-            f()sy.. p..
+            f()
             r_ mA * mAsy.. p..
-        }sy.. p..
+        }
 
-        lambda_const()sy.. p..
-        lambda()sy.. p..
+        lambda_const()
+        lambda()
     }
 
 pr..
@@ -208,12 +208,12 @@ pr..
 
     v.. f c__ __  "f()" __  e.. }
 
-    in. mA{ 100 }sy.. p..
-}sy.. p..
+    in. mA{ 100 }
+}
 v.. example()
 {
     test tsy.. p..
-    t.f_test()sy.. p..
+    t.f_test()
 }
 }
 
@@ -221,10 +221,10 @@ n.. constexpr_if
 {
 st.. S
 {
-    in. min.{ 0 }sy.. p..
-    fl.. mFloat{ 0.f }sy.. p..
-    ve..< in. > mVectorin.sy.. p..
-}sy.. p..
+    in. min.{ 0 }
+    fl.. mFloat{ 0.f }
+    ve..< in. > mVectorin.
+}
 
 t.. < st. size_t aFieldNubmer >
 v.. prin.( S& s )
@@ -240,18 +240,18 @@ v.. prin.( S& s )
     ____ __ c_t.. ( aFieldNubmer __ 2 )
     {
         ___ ( a.. i : s.mVectorin. )
-            c__ __  i __  ' 'sy.. p..
+            c__ __  i __  ' '
         c__ __  e..
     }
 }
 
 v.. example()
 {
-    S obj _ { 10, 11.f, { 1, 2, 3, 4 } }sy.. p..
+    S obj _ { 10, 11.f, { 1, 2, 3, 4 } }
 
-    prin.< 0 >( obj )sy.. p..
-    prin.< 1 >( obj )sy.. p..
-    prin.< 2 >( obj )sy.. p..
+    prin.< 0 >( obj )
+    prin.< 1 >( obj )
+    prin.< 2 >( obj )
 }
 }
 n.. if_switch_initializer
@@ -283,18 +283,18 @@ v.. switch_example( in. error )
 
 v.. example()
 {
-    if_example( n_p_ )sy.. p..
-    if_example( ( v..* ) 100 )sy.. p..
+    if_example( n_p_ )
+    if_example( ( v..* ) 100 )
 
-    switch_example( 0 )sy.. p..
-    switch_example( 10 )sy.. p..
+    switch_example( 0 )
+    switch_example( 10 )
 }
 }
 n.. struct_binding
 {
 v.. f_pair()
 {
-    pair p _ { 1, "Hello" }sy.. p..
+    pair p _ { 1, "Hello" }
 
     a.. [ x, y ] _ psy.. p..
 
@@ -304,7 +304,7 @@ v.. f_pair()
 
 v.. f_array()
 {
-    in. coord[ 4 ] _ { 1, 2, 3 }sy.. p..
+    in. coord[ 4 ] _ { 1, 2, 3 }
 
     a.. [ x, y, z, a ] _ coordsy.. p..
 
@@ -320,22 +320,22 @@ v.. f_a()
         in. idsy.. p..
         s.. namesy.. p..
         ve..< in. > datasy.. p..
-    }sy.. p..
+    }
     Config_a casy.. p..
 
     a..& [ id, n, d ] _ casy.. p..
     id _ 1sy.. p..
-    n _ "Name"sy.. p..
-    d.push_back( 1 )sy.. p..
+    n _ "Name"
+    d.push_back( 1 )
 }
 
 v.. example()
 {
-    f_pair()sy.. p..
-    f_array()sy.. p..
-    f_a()sy.. p..
+    f_pair()
+    f_array()
+    f_a()
 
-    in. pos[ 2 ] _ { 10, 20 }sy.. p..
+    in. pos[ 2 ] _ { 10, 20 }
     a..& [ x, y ] _ possy.. p..
     x _ 100sy.. p..
     y _ 200sy.. p..
@@ -361,7 +361,7 @@ v.. f_fallthrough()
         c.. 3:
             c__ __  "some doing" __  e..
             c__ __  "3" __  e..
-            [[fallthrough]]sy.. p.. // no warning
+            [[fallthrough]] // no warning
         c.. 4:
             c__ __  "4" __  e..
     }
@@ -374,8 +374,8 @@ v.. f_fallthrough()
 
 v.. example()
 {
-    f_fallthrough()sy.. p..
-    f_nodiscard()sy.. p..
+    f_fallthrough()
+    f_nodiscard()
 
     [[maybe_unused]] in. i _ 0sy.. p..
 }
@@ -388,10 +388,10 @@ v.. example()
     st. any hm _ 10sy.. p..
     c__ __  st. any_cast< in. >( hm ) __  e..
 
-    hm _ s..( "hello" )sy.. p..
+    hm _ s..( "hello" )
     c__ __  st. any_cast< s.. >( hm ) __  e..
 
-    hm _ "hello 2"sy.. p..
+    hm _ "hello 2"
     c__ __  st. any_cast< c.. c..* >( hm ) __  e..
 }
 }
@@ -410,34 +410,34 @@ v.. example()
 
     st. c__ __  "std::string" __  st. e..
 
-    st. s.. large _ "0123456789-123456789-123456789-123456789"sy.. p..
-    st. s.. substr _ large.substr( 10 )sy.. p..
+    st. s.. large _ "0123456789-123456789-123456789-123456789"
+    st. s.. substr _ large.substr( 10 )
 
     st. c__ __  st. e..
 
     st. c__ __  "std::string_view" __  st. e..
 
-    st. string_view largeStringView{ large.c_str(), large.s.. }sy.. p..
-    largeStringView.remove_prefix( 10 )sy.. p..
+    st. string_view largeStringView{ large.c_str(), large.s.. }
+    largeStringView.remove_prefix( 10 )
 
-    as..( substr __ largeStringView )sy.. p..
+    as..( substr __ largeStringView )
 
     st. c__ __  st. e..
 
     st. c__ __  "getString" __  st. e..
 
-    getString( large )sy.. p..
-    getString( "0123456789-123456789-123456789-123456789" )sy.. p..
-    c.. c.. message[] _ "0123456789-123456789-123456789-123456789"sy.. p..
-    getString( message )sy.. p..
+    getString( large )
+    getString( "0123456789-123456789-123456789-123456789" )
+    c.. c.. message[] _ "0123456789-123456789-123456789-123456789"
+    getString( message )
 
     st. c__ __  st. e..
 
     st. c__ __  "getStringView" __  st. e..
 
-    getStringView( large )sy.. p..
-    getStringView( "0123456789-123456789-123456789-123456789" )sy.. p..
-    getStringView( message )sy.. p..
+    getStringView( large )
+    getStringView( "0123456789-123456789-123456789-123456789" )
+    getStringView( message )
 
     st. c__ __  st. e..
 }
@@ -448,22 +448,22 @@ n.. std_optional
 optional< in. > strToin.( s.. aStr )
 {
     __ ( aStr.empty() )
-        r_ {}sy.. p..
+        r_ {}
 
     // parse string, if Ok return value
     __ ( t.. )
         r_ 1sy.. p..
-    r_ {}sy.. p..
+    r_ {}
 }
 
 v.. example()
 {
     optional< in. > isy.. p..
-    i _ strToin.( "" )sy.. p..
+    i _ strToin.( "" )
     __ ( i )
         c__ __  "OK: " __  *i __  e..
 
-    i _ strToin.( "123" )sy.. p..
+    i _ strToin.( "123" )
     __ ( i )
         c__ __  "OK: " __  *i __  e..
 }
@@ -478,7 +478,7 @@ v.. example()
     v _ 42sy.. p..
     c__ __  get< in. >( v ) __  " " __  v.index() __  e..
 
-    v _ "Hello!"sy.. p..
+    v _ "Hello!"
     c__ __  get< s.. >( v ) __  " " __  v.index() __  e..
 }
 }
@@ -489,12 +489,12 @@ n.. fs _ experimental::filesystemsy.. p..
 
 v.. example()
 {
-    a.. cur_p _ fs::current_path()sy.. p..
+    a.. cur_p _ fs::current_path()
     c__ __  "current path - " __  cur_p __  e..
     c__ __  e..
 
-    a.. root_p _ fs::path( "/" )sy.. p..
-    a.. space _ fs::space( root_p )sy.. p..
+    a.. root_p _ fs::path( "/" )
+    a.. space _ fs::space( root_p )
     /* capacity  - total size of the filesystem, in bytes
        free      - free space on the filesystem, in bytes
        available - free space available to a non-privileged process
@@ -523,7 +523,7 @@ in. main()
     // std_stringview::example();
     // std_optional::example();
     // std_variant::example();
-    std_filesystem::example()sy.. p..
+    std_filesystem::example()
 
     // std::vector< int > v( 100 );
 

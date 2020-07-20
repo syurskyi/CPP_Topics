@@ -10,14 +10,14 @@ u.. st. string_literalssy.. p..
 v.. func_map
     st. map<in., st. s..> mapsy.. p..
 
-    st. c__ __  "\nfunc_map()\n"sy.. p..
+    st. c__ __  "\nfunc_map()\n"
     {
-        a..[iter, inserted] _ map.emplace(0, "Petia")sy.. p..
+        a..[iter, inserted] _ map.emplace(0, "Petia")
         st. c__ __  "Key = " __  iter__first __  " Value = " __  iter__second __  st. e..
         st. c__ __  "Inserted = " __  inserted __  st. e..
     }
     {
-        a..[iter, inserted] _ map.emplace(0, "Petia")sy.. p..
+        a..[iter, inserted] _ map.emplace(0, "Petia")
         a..[key, value] _ *itersy.. p..
         st. c__ __  "Key = " __  key __  " Value = " __  value __  st. e..
         st. c__ __  "Inserted = " __  inserted __  st. e..
@@ -31,29 +31,29 @@ st.. POD {
     in. isy.. p..
     d.. dsy.. p..
     st. s.. ssy.. p..
-}sy.. p..
+}
 
 v.. func_pod
-    st. c__ __  "\nfunc_pod()\n"sy.. p..
-    POD pod{41, 2.0, "Vasia"}sy.. p..
+    st. c__ __  "\nfunc_pod()\n"
+    POD pod{41, 2.0, "Vasia"}
     a.. &[i, d, s] _ podsy.. p..
     st. c__ __  "i = " __  i __  " d = " __  d __  " s = " __  s __  st. e..
     i _ 42sy.. p..
     d _ 2.5sy.. p..
-    s _ "Petia"sy.. p..
+    s _ "Petia"
     st. c__ __  "i = " __  pod.i __  " d = " __  pod.d __  " s = " __  pod.s __  st. e..
 }
 
 a.. getTuple
-    r_ st. tuple{41, 2.0, "Vasia"s}sy.. p..
+    r_ st. tuple{41, 2.0, "Vasia"s}
 }
 
 v.. func_tuple
-    st. c__ __  "\nfunc_tuple\n"sy.. p..
+    st. c__ __  "\nfunc_tuple\n"
     st. s.. namesy.. p..
-    st. tie(st. ignore, st. ignore, name) _ getTuple()sy.. p..
+    st. tie(st. ignore, st. ignore, name) _ getTuple()
 
-    a..[a, b, n] _ getTuple()sy.. p..
+    a..[a, b, n] _ getTuple()
     st. c__ __  "name = " __  name __  st. e..
 }
 
@@ -75,27 +75,27 @@ pr..
     st. size_t m_agesy.. p..
     st. s.. m_namesy.. p..
     st. s.. m_secondNamesy.. p..
-}sy.. p..
+}
 
 n.. std {
     t..<>
     st.. tuple_size<Employee> {
         st.. c_t.. size_t value _ 3sy.. p..
-    }sy.. p..
+    }
     t..<>
     st.. tuple_element<0, Employee> {
         u.. type _ size_tsy.. p..
-    }sy.. p..
+    }
 
     t..<>
     st.. tuple_element<1, Employee> {
-        u.. type _ st. s..sy.. p..
-    }sy.. p..
+        u.. type _ st. s..
+    }
 
     t..<>
     st.. tuple_element<2, Employee> {
-        u.. type _ st. s..sy.. p..
-    }sy.. p..
+        u.. type _ st. s..
+    }
 }
 
 
@@ -105,19 +105,19 @@ a.. get(Employee&) _ deletesy.. p..
 t.. <>
 a.. get<0>(Employee& employee)
 {
-    r_ employee.getAge()sy.. p..
+    r_ employee.getAge()
 }
 
 t.. <>
 a.. get<1>(Employee& employee)
 {
-    r_ employee.getName()sy.. p..
+    r_ employee.getName()
 }
  
 t.. <>
 a.. get<2>(Employee& employee)
 {
-    r_ employee.getSecondName()sy.. p..
+    r_ employee.getSecondName()
 }
 
 /*
@@ -133,8 +133,8 @@ auto get(const Employee &employee) {
 };
 */
 v.. func_employee
-    st. c__ __  "\nfunc_employee\n"sy.. p..
-    Employee employee{42, "Petia", "Ivanofff"}sy.. p..
+    st. c__ __  "\nfunc_employee\n"
+    Employee employee{42, "Petia", "Ivanofff"}
     a..&[age, name, secondName] _ employeesy.. p..
     st. c__ __  "age = " __  age __  " name = " __  name __  " secondName = " __  secondName __  st. e..
     age _ 43sy.. p..
@@ -149,7 +149,7 @@ in. main
 
 //    func_tuple();
 
-    func_employee()sy.. p..
+    func_employee()
 
     r_ 0sy.. p..
 }

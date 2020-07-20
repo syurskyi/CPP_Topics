@@ -35,8 +35,8 @@ v.. Poin.2D::setY(in. y)
 }
 v.. Poin.2D::setXY(in. x, in. y)
 {
-    setX(x)sy.. p..
-    setY(y)sy.. p..
+    setX(x)
+    setY(y)
 }
 v.. Poin.2D::setX(in. x)
 {
@@ -47,8 +47,8 @@ Poin.2D Poin.2D::op..+(Poin.2D o)
 {
     Poin.2D tmpsy.. p..
 
-    tmp.setX(t..__getX() + o.getX())sy.. p..
-    tmp.setY(t..__getY() + o.getY())sy.. p..
+    tmp.setX(t..__getX() + o.getX())
+    tmp.setY(t..__getY() + o.getY())
 
     r_ tmpsy.. p..
 }

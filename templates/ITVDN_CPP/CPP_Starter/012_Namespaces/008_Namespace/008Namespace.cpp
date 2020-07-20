@@ -6,16 +6,16 @@ n.. NamespaceA {
 		n.. NamespaceC {
 			st.. MyStructC {
 
-			}sy.. p..
+			}
 		}
 		st.. MyStructB {
 
-		}sy.. p..
+		}
 	}
 
 	st.. MyStructA {
 		
-	}sy.. p..
+	}
 }
 
 in. main()

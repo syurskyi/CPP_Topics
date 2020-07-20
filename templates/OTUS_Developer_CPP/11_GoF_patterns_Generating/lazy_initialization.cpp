@@ -20,7 +20,7 @@ pu..
     {
         st. c__ __  "write " __  line_ __  " into " __  name __  st. e..
     }
-}sy.. p..
+}
 
 c_ FileOnDemand {
     st. s.. namesy.. p..
@@ -36,19 +36,19 @@ pu..
     File* operator__()
     {
         __ (!file) {
-            file _ n.. File(name)sy.. p..
+            file _ n.. File(name)
         }
         r_ filesy.. p..
     }
-}sy.. p..
+}
 
 in. main(in., c..* [])
 {
-    File/*OnDemand*/ file("test.txt")sy.. p..
+    File/*OnDemand*/ file("test.txt")
 
-    size_t n _ 0/*2*/sy.. p..
+    size_t n _ 0/*2*/
     ___ (size_t i _ 0sy.. p.. i<nsy.. p.. ++i) {
-        file.write(st. to_string(i))sy.. p..
+        file.write(st. to_string(i))
     }
 
     r_ 0sy.. p..

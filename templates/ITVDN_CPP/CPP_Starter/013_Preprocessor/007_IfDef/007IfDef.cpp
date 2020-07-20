@@ -22,7 +22,7 @@ _if.. DEVELOMENT
 	c__ __  "Product version." __  e..
 #endif 
 
-	sy.. p..
+
     r_ 0sy.. p..
 }
 

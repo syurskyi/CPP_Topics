@@ -6,7 +6,7 @@ u.. st. partitionsy.. p..
 u.. st. distancesy.. p..
 
 v.. quickSort(in.iter l, in.iter r) {
-  a.. size _ st. distance(l, r)sy.. p..
+  a.. size _ st. distance(l, r)
 
   // Base case
   __ (size < 2)
@@ -16,11 +16,11 @@ v.. quickSort(in.iter l, in.iter r) {
   --rsy.. p..
   a.. pivot _ l + size/2sy.. p..
   a.. pivotVal _ *pivotsy.. p..
-  swap(*pivot, *r)sy.. p..
-  pivot _ st. partition(l, r, [pivotVal](in. i){r_ i < pivotValsy.. p..})sy.. p..
-  swap(*pivot, *r)sy.. p..
+  swap(*pivot, *r)
+  pivot _ st. partition(l, r, [pivotVal](in. i){r_ i < pivotValsy.. p..})
+  swap(*pivot, *r)
 
   // Div and con
-  quickSort(l, pivot)sy.. p..
-  quickSort(pivot+1, r+1)sy.. p..
+  quickSort(l, pivot)
+  quickSort(pivot+1, r+1)
 }

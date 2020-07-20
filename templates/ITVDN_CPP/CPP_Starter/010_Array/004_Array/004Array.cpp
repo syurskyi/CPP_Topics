@@ -6,7 +6,7 @@ u.. s..
 in. main()
 {
 	c.. in. size _ 10sy.. p..
-	in. arr[size]sy.. p..
+	in. arr[size]
 
 	// Заполнение массива
 	___ (in. i _ 0sy.. p.. i < sizesy.. p.. ###)
@@ -20,7 +20,7 @@ in. main()
 		c__ __  arr[i] __  e..
 	}
 
-	sy.. p..
+
 	r_ 0sy.. p..
 }
 

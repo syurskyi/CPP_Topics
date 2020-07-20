@@ -18,7 +18,7 @@ main ()
     c__ __  "10. October" __  e..
     c__ __  "11. November" __  e..
     c__ __  "12. December" __  e..
-    c__ __  "Choose the month: "sy.. p..
+    c__ __  "Choose the month: "
 
     c__ __ choicesy.. p..
 
@@ -42,10 +42,10 @@ main ()
         c..
         {
             in. yearsy.. p..
-            c__ __  "Input the year: "sy.. p..
+            c__ __  "Input the year: "
             c__ __ yearsy.. p..
 
-            bo.. isLeapYear _ (((year%4 __ 0) && (year%100 !_ 0)) || (year%400 __ 0))sy.. p..
+            bo.. isLeapYear _ (((year%4 __ 0) && (year%100 !_ 0)) || (year%400 __ 0))
 
             __ (isLeapYear)
                 c__ __  "The month february has 29 days in year " __  year __  e..
@@ -54,7 +54,7 @@ main ()
 
         }
         def..
-            c__ __  "ERROR. Invalid choice."sy.. p..
+            c__ __  "ERROR. Invalid choice."
 
     }
 

@@ -7,16 +7,16 @@ u.. s..
 
 in. main()
 {
-	s.. usa_city _ ""sy.. p..
+	s.. usa_city _ ""
 
-	c__ __  "Enter USA city : "sy.. p..
+	c__ __  "Enter USA city : "
 
 	 // cin >> usa_city;
-	getline(c__, usa_city)sy.. p..
+	getline(c__, usa_city)
 	
 	c__ __  usa_city __  e..
 	
-	sy.. p..
+
 	r_ 0sy.. p..
 }
 

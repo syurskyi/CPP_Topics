@@ -19,35 +19,35 @@ st.. logging_allocator {
 
     T *allocate(st. size_t n) c.. {
         st. c__ __  __P.. __  "[n = " __  n __  "]" __  st. e..
-        a.. p _ st. malloc(n * s_o_(T))sy.. p..
+        a.. p _ st. malloc(n * s_o_(T))
         __ (!p)
-            throw st. bad_alloc()sy.. p..
-        r_ rein.erpret_cast<T *>(p)sy.. p..
+            throw st. bad_alloc()
+        r_ rein.erpret_cast<T *>(p)
     }
 
     v.. deallocate(T *p, st. size_t n) c.. {
         st. c__ __  __P.. __  "[n = " __  n __  "]" __  st. e..
-        st. free(p)sy.. p..
+        st. free(p)
     }
 
     t..<t_n_ U, t_n_ ...Args>
     v.. construct(U *p, Args &&...args) c.. {
         st. c__ __  __P.. __  st. e..
-        n..(p) U(st. forward<Args>(args)...)sy.. p..
-    }sy.. p..
+        n..(p) U(st. forward<Args>(args)...)
+    }
 
     v.. destroy(T *p) c.. {
         st. c__ __  __P.. __  st. e..
-        p__~T()sy.. p..
+        p__~T()
     }
-}sy.. p..
+}
 
 in. main(in., c.. #|| {
 
-    a.. v _ st. ve..<in., logging_allocator<in.__{}sy.. p..
+    a.. v _ st. ve..<in., logging_allocator<in.__{}
 //    v.reserve(5);
-    ___ (size_t i _ 0sy.. p.. i < 1 /* 5 */sy.. p.. ++i) {
-        v.emplace_back(i)sy.. p..
+    ___ (size_t i _ 0sy.. p.. i < 1 /* 5 */ ++i) {
+        v.emplace_back(i)
         st. c__ __  "---" __  st. e..
     }
 

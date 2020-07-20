@@ -5,19 +5,19 @@
 //main
 //
 //    in. maximumNumbers y.. p..
-//    in. sumEven _ 0 sy.. p..
-//    in. temp sy.. p..
+//    in. sumEven _ 0
+//    in. temp
 //
-//    c__ __  "Input maximum number you want to check: " sy.. p..
-//    c__ __ ? sy.. p..
+//    c__ __  "Input maximum number you want to check: "
+//    c__ __ ?
 //
-//    ___ in. ? _ 1 sy.. p.. ? <_ m.. sy.. p.. ###
+//    ___ in. ? _ 1  ? <_ m..  ###
 //
 //        __ ? % 2 __ 1
 //            c___
 //
-//        temp _ s.. sy.. p..
-//        s.. +_ ? sy.. p..
+//        temp _ s..
+//        s.. +_ ?
 //        c__ __  t.. __  " + " __  ? __  " = " __  s.. __  e..
 //
 //

@@ -5,16 +5,16 @@
 //main
 //
 //
-//    in. number sy.. p..
-//    l.. d.. factorialResult _ 1 sy.. p..
+//    in. number
+//    l.. d.. factorialResult _ 1
 //
-//    c__ __  "Input the number: " sy.. p..
-//    c__ __ number sy.. p..
+//    c__ __  "Input the number: "
+//    c__ __ number
 //
 //
-//    ___ in. i _ 1sy.. p.. i <_ n.. sy.. p.. ###
+//    ___ in. i _ 1sy.. p.. i <_ n..  ###
 //
-//        ? *_ i sy.. p..
+//        ? *_ i
 //        c__ __  ? __  "! = " __  ? __  e..
 //
 //

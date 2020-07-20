@@ -7,14 +7,14 @@ u.. s..
 
 in. main()
 {
-	c.. str1[20] _ "Hello"sy.. p..
-	c.. str2[] _ " world!"sy.. p..
+	c.. str1[20] _ "Hello"
+	c.. str2[] _ " world!"
 	// функция производит конкатенацию строк, записывая второй параметр в первый.
-	strcat(str1, str2)sy.. p..
+	strcat(str1, str2)
 
 	c__ __  str1 __  e..
 
-	sy.. p..
+
 	r_ 0sy.. p..
 }
 

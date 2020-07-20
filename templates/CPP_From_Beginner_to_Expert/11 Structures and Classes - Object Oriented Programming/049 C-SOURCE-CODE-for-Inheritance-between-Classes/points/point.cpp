@@ -35,8 +35,8 @@ v.. Poin.2D::setY(in. y)
 }
 v.. Poin.2D::setXY(in. x, in. y)
 {
-    setX(x)sy.. p..
-    setY(y)sy.. p..
+    setX(x)
+    setY(y)
 }
 v.. Poin.2D::setX(in. x)
 {

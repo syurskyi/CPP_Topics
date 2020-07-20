@@ -2,33 +2,33 @@
 ?d.. PI 3.14
 u.. s..
 
-v.. initMenu()sy.. p..
-v.. menuDecision(in.)sy.. p..
-d.. areaCircle(d..)sy.. p..
-d.. areaSquare(d..)sy.. p..
-d.. areaRectangle(d.., d..)sy.. p..
-d.. areaTriangle(d.., d..)sy.. p..
+v.. initMenu()
+v.. menuDecision(in.)
+d.. areaCircle(d..)
+d.. areaSquare(d..)
+d.. areaRectangle(d.., d..)
+d.. areaTriangle(d.., d..)
 in. main()
 {
     in. choicesy.. p..
     c.. contsy.. p..
     do
     {
-        system("cls")sy.. p.. //clear screen = cls
-        initMenu()sy.. p..
+        system("cls") //clear screen = cls
+        initMenu()
 
         c__ __ choicesy.. p..
 
-        menuDecision(choice)sy.. p..
+        menuDecision(choice)
 
         do
         {
             c__ __  "Do you want to continue the program? (Y/N)" __  e..
             c__ __ contsy.. p..
-        } w___(cont !_ 'y' && cont !_ 'Y' && cont !_ 'N' && cont !_ 'n')sy.. p..
+        } w___(cont !_ 'y' && cont !_ 'Y' && cont !_ 'N' && cont !_ 'n')
 
 
-    } w___(cont __ 'y' || cont __ 'Y')sy.. p..
+    } w___(cont __ 'y' || cont __ 'Y')
 
     r_ 0sy.. p..
 }
@@ -48,22 +48,22 @@ v.. menuDecision(in. choice)
         c__:
             c__ __  "Enter the radius: " __  e..
             c__ __ rsy.. p..
-            areaCircle(r)sy.. p..
+            areaCircle(r)
             b..
         c..
             c__ __  "Enter the side of a square: " __  e..
             c__ __ asy.. p..
-            areaSquare(a)sy.. p..
+            areaSquare(a)
             b..
         c.. 3:
             c__ __  "Enter the width and height of a rectangle: " __  e..
             c__ __ a __ bsy.. p..
-            areaRectangle(a, b)sy.. p..
+            areaRectangle(a, b)
             b..
         c.. 4:
             c__ __  "Enter the base and height of a triangle: " __  e..
             c__ __ a __ hsy.. p..
-            areaTriangle(a, h)sy.. p..
+            areaTriangle(a, h)
             b..
         def..
             c__ __  "You didn't choose any of the option from above" __  e..

@@ -12,7 +12,7 @@ main ()
     c__ __  "4.Snickers Bar" __  e..
     c__ __  "5.Mars Bar" __  e..
     c__ __  "6.Bud Light" __  endl __  e..
-    c__ __  "Enter your choice: "sy.. p..
+    c__ __  "Enter your choice: "
 
     c__ __ productChoicesy.. p..
 

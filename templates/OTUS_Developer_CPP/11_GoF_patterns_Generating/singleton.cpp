@@ -28,15 +28,15 @@ pr..
             :os{st. cerr} { }
 
     st. ostream& ossy.. p.. // [3]
-}sy.. p..
+}
 
 in. main(in., c..* [])
 {
 //    Logger sly_newbie; // [1]
 //    Logger sly_adv(Logger::Instance()); // [2]
 //    Logger::Instance() = Logger::Instance(); // [3]
-    Logger::Instance().info("started")sy.. p..
-    Logger::Instance().warn("program is empty")sy.. p..
+    Logger::Instance().info("started")
+    Logger::Instance().warn("program is empty")
 
     r_ 0sy.. p..
 }

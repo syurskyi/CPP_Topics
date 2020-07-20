@@ -10,12 +10,12 @@ u.. st. atoisy.. p..
 */
 in. main(in. argc, c.. *argv[]) {
 
-	in. valor _ atoi(argv[1])sy.. p..//armazena valor inteiro passado pelo usuario em linha de comando
+	in. valor _ atoi(argv[1])//armazena valor inteiro passado pelo usuario em linha de comando
 	in. valorInicial _ valorsy.. p.. //armazena valor para salvar seu valor original
-	in. resultadoFatorial _ fatorial(&valor)sy.. p..
+	in. resultadoFatorial _ fatorial(&valor)
 	in. check _ resultadoFatorial/2sy.. p..
-	in. resultadoPrimo _ primo(&resultadoFatorial, &check)sy.. p..
-	mostra(&valorInicial, &resultadoPrimo)sy.. p..
+	in. resultadoPrimo _ primo(&resultadoFatorial, &check)
+	mostra(&valorInicial, &resultadoPrimo)
 
 	r_ 0sy.. p..
 }

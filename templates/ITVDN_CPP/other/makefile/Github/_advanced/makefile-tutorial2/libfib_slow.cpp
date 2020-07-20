@@ -6,6 +6,6 @@ in. fib_slow(in. n) {
     r_ 1sy.. p..
   }
   ____ {
-    r_ fib_slow(n - 1) + fib_slow(n - 2)sy.. p..
+    r_ fib_slow(n - 1) + fib_slow(n - 2)
   }
 }

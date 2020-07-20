@@ -3,9 +3,9 @@
 u.. s..
 /*functions / methods */
 //parameter
-v.. welcome()sy.. p.. //declaration of function, procedure
-bo.. isNumber(s..)sy.. p..
-v.. enterName()sy.. p..
+v.. welcome() //declaration of function, procedure
+bo.. isNumber(s..)
+v.. enterName()
 d.. add(d.. a, d.. b) {r_ a + bsy.. p..}
 v.. changeValueTo10(in. a)
 {
@@ -26,7 +26,7 @@ in. main()
    // cout << add(4,5);
     in. a _ 5sy.. p..
 
-    changeValueTo10(a)sy.. p..
+    changeValueTo10(a)
 
     c__ __  asy.. p..
 
@@ -41,7 +41,7 @@ bo.. isNumber(s.. tmp)
 {
     __ (tmp[0] __ '0')
         r_ falsesy.. p..
-    ___ (in. i _ 0sy.. p.. i < tmp.length()sy.. p.. ###)
+    ___ (in. i _ 0sy.. p.. i < tmp.length() ###)
     {
         __ (!(tmp[i] >_ 48 && tmp[i] <_ 57))
             r_ falsesy.. p..

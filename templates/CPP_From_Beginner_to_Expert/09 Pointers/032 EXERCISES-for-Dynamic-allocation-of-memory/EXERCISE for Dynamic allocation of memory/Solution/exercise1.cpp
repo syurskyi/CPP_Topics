@@ -7,7 +7,7 @@ in. main ()
     in. staticalsy.. p..
 
     in. *statically _ &staticalsy.. p..
-    in. *dynamically _ n.. in.sy.. p..
+    in. *dynamically _ n.. in.
 
     *statically _ 10sy.. p..
     *dynamically _ 15sy.. p..

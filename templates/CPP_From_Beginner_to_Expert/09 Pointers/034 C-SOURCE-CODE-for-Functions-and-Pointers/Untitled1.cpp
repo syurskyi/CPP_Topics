@@ -3,8 +3,8 @@
 u.. s..
 
 //void multiplyBy(int &, int);
-in. * multiplyBy(in. *, in.)sy.. p..
-v.. multiplyArrayBy(in. *, in., in.)sy.. p..
+in. * multiplyBy(in. *, in.)
+v.. multiplyArrayBy(in. *, in., in.)
 
 in. main()
 {
@@ -18,16 +18,16 @@ in. main()
     cout << *b << endl;
     */
 
-    in. array[10]sy.. p..
+    in. array[10]
     //cout << sizeof(array)/sizeof(array[0]) << endl;
 
-    ___ (in. i _ 0sy.. p.. i < s_o_(array)/s_o_(array[0])sy.. p.. ###)
+    ___ (in. i _ 0sy.. p.. i < s_o_(array)/s_o_(array[0]) ###)
     {
         array[i] _ isy.. p..
      //   cout << "array [" << i << "] = " << array[i] << endl;
     }
-    multiplyArrayBy(&array[0], 5, s_o_(array)/s_o_(array[0]))sy.. p.. // &array[0] == array
-    ___ (in. i _ 0sy.. p.. i < s_o_(array)/s_o_(array[0])sy.. p.. ###)
+    multiplyArrayBy(&array[0], 5, s_o_(array)/s_o_(array[0])) // &array[0] == array
+    ___ (in. i _ 0sy.. p.. i < s_o_(array)/s_o_(array[0]) ###)
     {
        c__ __  "array [" __  i __  "] = " __  array[i] __  e..
     }

@@ -4,10 +4,10 @@
 in. main()
 {
 	// Выводим в консоль строку
-	prin.f("Hello world")sy.. p..
+	prin.f("Hello world")
 
 	// Задержка
-	getchar()sy.. p..
+	getchar()
     r_ 0sy.. p..
 }
 

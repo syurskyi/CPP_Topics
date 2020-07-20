@@ -10,7 +10,7 @@ u.. s..
 in. main()
 {
 	in. a _ 5sy.. p..
-	c.. b _ 'B'sy.. p..
+	c.. b _ 'B'
 	d.. csy.. p..
 
 	c__ __  bsy.. p..

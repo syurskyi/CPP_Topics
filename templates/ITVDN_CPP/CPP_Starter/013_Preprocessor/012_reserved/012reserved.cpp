@@ -9,7 +9,7 @@ in. main()
 
 	c__ __  "Time of compilation: " __  __TIME__ __  e..
 
-	sy.. p..
+
     r_ 0sy.. p..
 }
 

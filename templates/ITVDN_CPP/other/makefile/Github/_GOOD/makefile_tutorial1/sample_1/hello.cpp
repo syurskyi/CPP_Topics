@@ -2,5 +2,5 @@
 ? "functions.h"
 
 v.. prin._hello(){
-   c__ __  "Hello World!"sy.. p..
+   c__ __  "Hello World!"
 }

@@ -12,24 +12,24 @@ c_ App : pu.. Handler {
     v.. event(Event &ev) ov.. {
         s.. (ev.code) {
             c.. EventCode::start:
-                start()sy.. p..
+                start()
                 b..
 
             def..
                 b..
         }
     }
-}sy.. p..
+}
 
 
 in. main(in., c.. #|| {
     EventLoop loopsy.. p..
 
     App appsy.. p..
-    loop.add(&app)sy.. p..
+    loop.add(&app)
 
-    loop.send(EventCode::start)sy.. p..
-    loop.send(EventCode::quit)sy.. p..
+    loop.send(EventCode::start)
+    loop.send(EventCode::quit)
 
-    r_ loop.exec()sy.. p..
+    r_ loop.exec()
 }

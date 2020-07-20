@@ -3,19 +3,19 @@
 
 u.. s..
 
-v.. variableType(in.)sy.. p..
-v.. variableType(d..)sy.. p..
-v.. variableType(s..)sy.. p..
+v.. variableType(in.)
+v.. variableType(d..)
+v.. variableType(s..)
 
 in. main ()
 {
     in. var1 _ 2sy.. p..
     d.. var2 _ 0.123sy.. p..
-    s.. var3 _ "What a beautiful day !"sy.. p..
+    s.. var3 _ "What a beautiful day !"
 
-    variableType(var1)sy.. p..
-    variableType(var2)sy.. p..
-    variableType(var3)sy.. p..
+    variableType(var1)
+    variableType(var2)
+    variableType(var3)
 
     r_ 0sy.. p..
 }

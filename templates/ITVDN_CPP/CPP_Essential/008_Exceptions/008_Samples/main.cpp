@@ -19,7 +19,7 @@
 //
 //        c__ __  __P.. __  e..
 //
-//sy.. p..
+//
 //
 //st.. B
 //
@@ -32,14 +32,14 @@
 //
 //        c__ __  __P.. __  e..
 //
-//sy.. p..
+//
 //
 //st.. C
 //
 //    C(in. _data ___  ? _?
 //
 //        //...
-//        throw 1 sy.. p..
+//        throw 1
 //        c__ __  __P.. __  e..
 //
 //    c.. ...
@@ -52,8 +52,8 @@
 //        c__ __  __P.. __  e..
 //
 //
-//    in. data sy.. p..
-//sy.. p..
+//    in. data
+//
 //
 //st.. D  e..
 //
@@ -66,35 +66,35 @@
 //
 //        c__ __  __P.. __  e..
 //
-//sy.. p..
+//
 //
 //in. m..
 //
-//    A a sy.. p..
+//    A a
 //    ___
-//        in. a sy.. p..
-//        ? _ 10 sy.. p..
-//        B b sy.. p..
+//        in. a
+//        ? _ 10
+//        B b
 //        ___
 //
-//            C# c _ n.. C(5) sy.. p..
-//            s.. .at(1) sy.. p..
-//            D d sy.. p..
-//            de.. c sy.. p..
+//            C# c _ n.. C(5)
+//            s.. .at(1)
+//            D d
+//            de.. c
 //
 //        c.. ...
 //
-//            A a sy.. p..
-//            cerr __  "smth went wrong" sy.. p..
+//            A a
+//            cerr __  "smth went wrong"
 //           // throw;
-//            B b sy.. p..
+//            B b
 //
 //
 //    c.. logic_error# ex
 //
 //        //C c;
 //        cerr __  ?.w.. __  e..
-//        D d sy.. p..
+//        D d
 //
 //    c.. ...
 //
@@ -103,7 +103,7 @@
 //
 //    A a2sy.. p..
 //
-//    c__ __  "other options"sy.. p..
+//    c__ __  "other options"
 //
 //
 //    r_ 0sy.. p..

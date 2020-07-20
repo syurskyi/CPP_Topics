@@ -11,7 +11,7 @@ u.. s..
 
 bo.. accept()
 {
-	c__ __  "Do you want to proceed (y or n)?\n"sy.. p..
+	c__ __  "Do you want to proceed (y or n)?\n"
 	c.. answer _ 0sy.. p..
 	c__ __ answersy.. p..
 
@@ -22,7 +22,7 @@ bo.. accept()
 		c.. 'n':
 			exit(EXIT_FAILURE);;
 		def..
-			c__ __  "Sorry I don't understand.  I'll assume the answer is 'yes'.\n"sy.. p..
+			c__ __  "Sorry I don't understand.  I'll assume the answer is 'yes'.\n"
 			r_ truesy.. p..
 	}
 	exit(EXIT_FAILURE);;
@@ -30,12 +30,12 @@ bo.. accept()
  
 in. main(in. argc, c.. *argv[])
 {
-    st. c__ __  "Hello world!\n"sy.. p..
+    st. c__ __  "Hello world!\n"
 
 	// vector of int type
-	ve..<in.> v {1,2,3,4,5,6}sy.. p..
+	ve..<in.> v {1,2,3,4,5,6}
 
-	accept()sy.. p..  // continue?
+	accept()  // continue?
 
 	// for each i in v
 	___(a.. i : v)

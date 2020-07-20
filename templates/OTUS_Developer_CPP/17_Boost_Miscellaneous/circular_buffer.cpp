@@ -21,14 +21,14 @@
 //    E     B
 
 in. main
-    boost::circular_buffer<in.> buffer{4}sy.. p..
+    boost::circular_buffer<in.> buffer{4}
 
     ___ (in. i _ 0sy.. p.. i < 10sy.. p.. ++i) {
-        buffer.push_back(i)sy.. p..
+        buffer.push_back(i)
     }
 
     ___ (in. i : buffer) {
-        st. c__ __  i __  " "sy.. p..
+        st. c__ __  i __  " "
     }
 
     r_ 0sy.. p..

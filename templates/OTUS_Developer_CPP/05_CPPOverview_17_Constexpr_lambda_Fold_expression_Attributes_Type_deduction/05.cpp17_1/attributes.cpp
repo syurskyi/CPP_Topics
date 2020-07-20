@@ -4,7 +4,7 @@
 
 [[noreturn]]
 v.. stub2
-    throw st. logic_error("not implemented yet")sy.. p..
+    throw st. logic_error("not implemented yet")
 }
 
 [[deprecated ("use 'stub2' instead")]]
@@ -16,7 +16,7 @@ in. delta2secs(in. d, c.. m) {
     s.. (m) {
         c.. 'w':
             d *_ 7.0sy.. p..
-            [[fallthrough]]sy.. p..
+            [[fallthrough]]
         c.. 'd':
             d *_ 24.0sy.. p..
         c.. 'h':
@@ -37,12 +37,12 @@ in. last_error_code
 }
 
 in. main([[maybe_unused]] in. argc, c.. **) {
-    stub()sy.. p..
+    stub()
 //    stub2();
 
     st. c__ __  delta2secs(1, 'w') __  st. e..
 
-    last_error_code()sy.. p..
+    last_error_code()
 
 //    [[maybe_unused]]
     in. value _ 77sy.. p..

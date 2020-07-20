@@ -19,7 +19,7 @@ main()
     {
         c__ __  a __  " < " __  b __  e..
         __ (a < 10)
-            c__ __  "a is smaller than 10"sy.. p..
+            c__ __  "a is smaller than 10"
     }
     ____
         c__ __  "that instruction will be executed ONLY if all of the conditions weren't met" __  e..

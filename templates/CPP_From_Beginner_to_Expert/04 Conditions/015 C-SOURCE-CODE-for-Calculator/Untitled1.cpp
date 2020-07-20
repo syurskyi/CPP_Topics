@@ -6,7 +6,7 @@ main()
     d.. var1, var2sy.. p..
 
     beginning:
-    system("cls")sy.. p..
+    system("cls")
     c__ __  "Enter first number: " __  e..
     c__ __ var1sy.. p..
 
@@ -23,7 +23,7 @@ main()
 
     c__ __ decisionsy.. p..
 
-    system("cls")sy.. p..
+    system("cls")
 
     s..(decision)
     {
@@ -43,7 +43,7 @@ main()
                 c__ __  "You can't divide by 0" __  e..
             b..
         def..
-            c__ __  "You typed wrong character"sy.. p..
+            c__ __  "You typed wrong character"
 
     }
 

@@ -15,7 +15,7 @@ in. main()
     cout << "a : " << a << endl;
     cout << "b : " << b << endl;
 */
-    Test obj1(50, 100, 60)sy.. p..
+    Test obj1(50, 100, 60)
     Test obj2 _ obj1sy.. p..
 
     obj2.x _ 200sy.. p..

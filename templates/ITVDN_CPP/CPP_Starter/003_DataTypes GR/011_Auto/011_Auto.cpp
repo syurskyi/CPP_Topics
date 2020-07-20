@@ -11,7 +11,7 @@ in. main()
 
 	a.. b _ 1.1sy.. p.. // переменная b типа double
 
-	a.. c _ 'A'sy.. p.. // переменная c типа char
+	a.. c _ 'A' // переменная c типа char
 
     c__ __  a __  endl __  b __  endl __  c __  e..
 

@@ -14,18 +14,18 @@ st.. xray {
     xray(c.. c..*) { st. c__ __  __P.. __  st. e.. }
 
     ~xray st. c__ __  __P.. __  st. e.. }
-}sy.. p..
+}
 
 st. ostream& operator__ (st. ostream & o, c.. xray &)
 {
-    o __  "xray"sy.. p..
+    o __  "xray"
     r_ osy.. p..
 }
 
 //using T = std::string;
 u.. T _ xraysy.. p..
 
-u.. args _ st. tuple<T, T>sy.. p..
+u.. args _ st. tuple<T, T>
 
 v.. foo(c.. T& a, c.. T& b)
 {
@@ -35,7 +35,7 @@ v.. foo(c.. T& a, c.. T& b)
 in. main()
 {
     st. queue<args> msgssy.. p..
-    msgs.emplace("hello", "en")sy.. p..
+    msgs.emplace("hello", "en")
 
     // move or copy?
 //    auto [a, b] = msgs.front();

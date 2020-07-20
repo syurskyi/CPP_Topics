@@ -3,46 +3,46 @@
 
 u.. s..
 
-v.. addition(d.., d..)sy.. p..
-v.. addition(d.., d.., d..)sy.. p..
-v.. addition(d.., d.., d.., d..)sy.. p..
-v.. addition(d.., d.., d.., d.., d..)sy.. p..
+v.. addition(d.., d..)
+v.. addition(d.., d.., d..)
+v.. addition(d.., d.., d.., d..)
+v.. addition(d.., d.., d.., d.., d..)
 
 
 
 in. main ()
 {
     in. howManyValuessy.. p..
-    d.. values[5]sy.. p..
+    d.. values[5]
 
     do
     {
-        c__ __  "How many values you would like to add together (2 - 5): "sy.. p..
+        c__ __  "How many values you would like to add together (2 - 5): "
         c__ __ howManyValuessy.. p..
-        system("cls")sy.. p..
+        system("cls")
 
-    } w___(howManyValues < 2 || howManyValues > 5)sy.. p..
+    } w___(howManyValues < 2 || howManyValues > 5)
 
 
     ___ (in. i _ 0sy.. p.. i < howManyValuessy.. p.. ###)
     {
-        c__ __  "Input " __  i+1 __  " value: "sy.. p..
-        c__ __ values[i]sy.. p..
+        c__ __  "Input " __  i+1 __  " value: "
+        c__ __ values[i]
     }
 
     s.. (howManyValues)
     {
         c..
-            addition(values[0], values[1])sy.. p..
+            addition(values[0], values[1])
             b..
         c.. 3:
-            addition(values[0], values[1], values[2])sy.. p..
+            addition(values[0], values[1], values[2])
             b..
         c.. 4:
-            addition(values[0], values[1], values[2], values[3])sy.. p..
+            addition(values[0], values[1], values[2], values[3])
             b..
         c.. 5:
-            addition(values[0], values[1], values[2], values[3], values[4])sy.. p..
+            addition(values[0], values[1], values[2], values[3], values[4])
             b..
     }
 

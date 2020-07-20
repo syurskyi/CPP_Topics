@@ -7,11 +7,11 @@ u.. s..
 
 in. main()
 {
-	c.. color[10]sy.. p..
-	c.. copy_color[10]sy.. p..
+	c.. color[10]
+	c.. copy_color[10]
 	
-	c__ __  "Enter your favorite color: "sy.. p..
-	c__.getline(color, 10)sy.. p..
+	c__ __  "Enter your favorite color: "
+	c__.getline(color, 10)
 
 //	strcpy_s(copy_color, color);
 
@@ -19,13 +19,13 @@ in. main()
 	c__ __  "Copy color : " __  copy_color __  e..
 
 	//char str[10] = "dark gray";		
-	 c.. str[15] _ "light gray"sy.. p..  // Приводит к повреждению памяти!
+	 c.. str[15] _ "light gray"  // Приводит к повреждению памяти!
 
-	strcpy(copy_color, str)sy.. p..
+	strcpy(copy_color, str)
 
 	c__ __  "Now copy_color equals " __  copy_color __  e..
 
-	sy.. p..
+
 	r_ 0sy.. p..
 }
 

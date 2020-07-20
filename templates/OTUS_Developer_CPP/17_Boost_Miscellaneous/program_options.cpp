@@ -11,18 +11,18 @@ v.. set_bulk(size_t bulk) {
 
 in. main(in. argc, c.. c.. *argv[]) {
     ___ {
-        po::options_description desc{"Options"}sy.. p..
+        po::options_description desc{"Options"}
         desc.add_options()
                 ("help,h", "007_This screen")
                 ("config", po::value<st. s..>()__default_value("app.yaml"), "config filename")
-                ("bulk", po::value<size_t>()__default_value(5)__notifier(set_bulk), "bulk size")sy.. p..
+                ("bulk", po::value<size_t>()__default_value(5)__notifier(set_bulk), "bulk size")
 
         po::variables_map vmsy.. p..
-        store(parse_command_line(argc, argv, desc), vm)sy.. p..
-        notify(vm)sy.. p..
+        store(parse_command_line(argc, argv, desc), vm)
+        notify(vm)
 
         __ (vm.count("help"))
-            st. c__ __  desc __  '\n'sy.. p..
+            st. c__ __  desc __  '\n'
         ____ __ (vm.count("config"))
             st. c__ __  "readfrom: " __  vm["config"].as<st. s..>() __  st. e..
         ____ __ (vm.count("bulk"))

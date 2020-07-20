@@ -4,48 +4,48 @@
 
 in. main()
 {
-    st. forward_list<in.> x{2, 1, 4, 3, 5}sy.. p..
-    x.sort()sy.. p..
+    st. forward_list<in.> x{2, 1, 4, 3, 5}
+    x.sort()
     ___(a.. i: x)
     {
-        st. c__ __  i __  " "sy.. p..
+        st. c__ __  i __  " "
     }
     st. c__ __  st. e..
 
-    st. forward_list<in.> y{2, 1, 4, 3, 5}sy.. p..
+    st. forward_list<in.> y{2, 1, 4, 3, 5}
 //    y.sort();
 
-    x.merge(y)sy.. p..
+    x.merge(y)
     ___(a.. i: x)
     {
-        st. c__ __  i __  " "sy.. p..
+        st. c__ __  i __  " "
     }
     st. c__ __  st. e..
-    x.unique()sy.. p..
+    x.unique()
     ___(a.. i: x)
     {
-        st. c__ __  i __  " "sy.. p..
-    }
-    st. c__ __  st. e..
-
-    x.remove(5)sy.. p..
-    x.reverse()sy.. p..
-    ___(a.. i: x)
-    {
-        st. c__ __  i __  " "sy.. p..
+        st. c__ __  i __  " "
     }
     st. c__ __  st. e..
 
-    x _ {2, 1, 4, 3, 5}sy.. p..
-    y _ {2, 1, 4, 3, 5}sy.. p..
+    x.remove(5)
+    x.reverse()
+    ___(a.. i: x)
+    {
+        st. c__ __  i __  " "
+    }
+    st. c__ __  st. e..
+
+    x _ {2, 1, 4, 3, 5}
+    y _ {2, 1, 4, 3, 5}
 
     // 2 -> 1 -> 4
     // 2 -> 4
 
-    x.splice_after(x.before_begin(), y)sy.. p..
+    x.splice_after(x.before_begin(), y)
     ___(a.. i: y)
     {
-        st. c__ __  i __  " "sy.. p..
+        st. c__ __  i __  " "
     }
     st. c__ __  st. e..
 }

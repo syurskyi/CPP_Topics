@@ -3,29 +3,29 @@
 //
 //? ?
 //
-//    st. c__ __  "Ctor was called" sy.. p..
-//    ptr _ n.. in. 10 sy.. p..
+//    st. c__ __  "Ctor was called"
+//    ptr _ n.. in. 10
 //
 //
 //? ?(uin. paws)  paws(paws)
 //
-//    st. c__ __  "User Ctor was called" sy.. p..
-//    ptr _ n.. in. 10 sy.. p..
+//    st. c__ __  "User Ctor was called"
+//    ptr _ n.. in. 10
 //
 //
 //? ? c.. ?# other
 //
-//    paws _ other.paws sy.. p..
-//    ptr _ n.. in. 10 sy.. p..
+//    paws _ other.paws
+//    ptr _ n.. in. 10
 //
 //
 //v.. ? feed_milk
 //
-//    st. c__ __  "done!" __  "\n"sy.. p..
+//    st. c__ __  "done!" __  "\n"
 //
 //
 //? #?
 //
 //    de..|| ptrsy.. p..
-//    st. c__ __  "Dtor done!" __  "\n"sy.. p..
+//    st. c__ __  "Dtor done!" __  "\n"
 //

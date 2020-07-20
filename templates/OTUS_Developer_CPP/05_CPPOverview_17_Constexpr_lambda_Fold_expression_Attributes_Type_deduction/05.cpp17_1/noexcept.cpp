@@ -15,7 +15,7 @@ pu..
     v.. safe() noexcept(t..) {
         st. c__ __  __P.. __  st. e..
     }
-}sy.. p..
+}
 
 v.. dang
     st. c__ __  __P.. __  st. e..
@@ -28,10 +28,10 @@ v.. safe() noexcept {
 in. main
 //    const
     foo fsy.. p..
-    f.over()sy.. p..
+    f.over()
 
-    f.dang()sy.. p..
-    f.safe()sy.. p..
+    f.dang()
+    f.safe()
 
     v.. (*fp)() noexceptsy.. p..
 //    fp = dang;

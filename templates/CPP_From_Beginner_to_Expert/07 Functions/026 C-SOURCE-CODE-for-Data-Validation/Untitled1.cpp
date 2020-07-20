@@ -4,47 +4,47 @@ u.. s..
 /*validating data
     buffer - temporary array
 */
-v.. initMenu()sy.. p..
-v.. menuDecision(in.)sy.. p..
-d.. areaCircle(d..)sy.. p..
-d.. areaSquare(d..)sy.. p..
-d.. areaRectangle(d.., d..)sy.. p..
-d.. areaTriangle(d.., d..)sy.. p..
-bo.. isValid(s..)sy.. p..
-bo.. isValid()sy.. p..
+v.. initMenu()
+v.. menuDecision(in.)
+d.. areaCircle(d..)
+d.. areaSquare(d..)
+d.. areaRectangle(d.., d..)
+d.. areaTriangle(d.., d..)
+bo.. isValid(s..)
+bo.. isValid()
 in. main()
 {
     in. choicesy.. p..
     c.. contsy.. p..
     do
     {
-        system("cls")sy.. p.. //clear screen = cls
-        initMenu()sy.. p..
+        system("cls") //clear screen = cls
+        initMenu()
 
         w___(!(c__ __ choice))
         {
             //cout << "state before: " << cin.rdstate() << endl;
-            c__.clear()sy.. p..
+            c__.clear()
             //cout << "state after: " << cin.rdstate() << endl;
-            c__.ignore(numeric_limits<streamsize>::max(), '\n')sy.. p..
+            c__.ignore(numeric_limits<streamsize>::max(), '\n')
 
-            system("cls")sy.. p..
-            initMenu()sy.. p..
+            system("cls")
+            initMenu()
             c__ __  "You've just typed the wrong data to the input. " __  e..
         }
 
-        menuDecision(choice)sy.. p..
+        menuDecision(choice)
 
         do
         {
             c__ __  "Do you want to continue the program? (Y/N)" __  e..
             c__ __ contsy.. p.. //asdfg
-            c__.ignore(numeric_limits<streamsize>::max(), '\n')sy.. p..
+            c__.ignore(numeric_limits<streamsize>::max(), '\n')
 
-        } w___(cont !_ 'y' && cont !_ 'Y' && cont !_ 'N' && cont !_ 'n')sy.. p..
+        } w___(cont !_ 'y' && cont !_ 'Y' && cont !_ 'N' && cont !_ 'n')
 
 
-    } w___(cont __ 'y' || cont __ 'Y')sy.. p..
+    } w___(cont __ 'y' || cont __ 'Y')
 
     r_ 0sy.. p..
 }
@@ -63,23 +63,23 @@ v.. menuDecision(in. choice)
     {
         c__:
 
-            do { c__ __  "Enter the radius: " __  e.. c__ __ rsy.. p.. } w___(!isValid())sy.. p..
-            areaCircle(r)sy.. p..
+            do { c__ __  "Enter the radius: " __  e.. c__ __ rsy.. p.. } w___(!isValid())
+            areaCircle(r)
             b..
         c..
             c__ __  "Enter the side of a square: " __  e..
-            do { c__ __ asy.. p.. } w___(!isValid("The data is wrong, please type it again:"))sy.. p..
-            areaSquare(a)sy.. p..
+            do { c__ __ asy.. p.. } w___(!isValid("The data is wrong, please type it again:"))
+            areaSquare(a)
             b..
         c.. 3:
             c__ __  "Enter the width and height of a rectangle: " __  e..
-            do { c__ __ a __ bsy.. p.. } w___(!isValid("The data is wrong, please type it again:"))sy.. p..
-            areaRectangle(a, b)sy.. p..
+            do { c__ __ a __ bsy.. p.. } w___(!isValid("The data is wrong, please type it again:"))
+            areaRectangle(a, b)
             b..
         c.. 4:
             c__ __  "Enter the base and height of a triangle: " __  e..
-            do { c__ __ a __ hsy.. p.. } w___(!isValid("The data is wrong, please type it again:"))sy.. p..
-            areaTriangle(a, h)sy.. p..
+            do { c__ __ a __ hsy.. p.. } w___(!isValid("The data is wrong, please type it again:"))
+            areaTriangle(a, h)
             b..
         def..
             c__ __  "You didn't choose any of the option from above" __  e..
@@ -122,10 +122,10 @@ bo.. isValid(s.. error_msg)
 {
     __ (c__.rdstate()) //state is wrong when it is not equal to 0
     {
-        c__.clear()sy.. p..
-        c__.ignore(numeric_limits<streamsize>::max(), '\n')sy.. p..
-        system("cls")sy.. p..
-        initMenu()sy.. p..
+        c__.clear()
+        c__.ignore(numeric_limits<streamsize>::max(), '\n')
+        system("cls")
+        initMenu()
         c__ __  error_msg __  e..
         r_ falsesy.. p..
     }
@@ -136,10 +136,10 @@ bo.. isValid()
 {
     __ (c__.rdstate()) //state is wrong when it is not equal to 0
     {
-        c__.clear()sy.. p..
-        c__.ignore(numeric_limits<streamsize>::max(), '\n')sy.. p..
-        system("cls")sy.. p..
-        initMenu()sy.. p..
+        c__.clear()
+        c__.ignore(numeric_limits<streamsize>::max(), '\n')
+        system("cls")
+        initMenu()
         r_ falsesy.. p..
     }
 

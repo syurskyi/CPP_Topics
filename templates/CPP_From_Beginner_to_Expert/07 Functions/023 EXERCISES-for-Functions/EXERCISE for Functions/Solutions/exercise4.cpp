@@ -2,20 +2,20 @@
 
 u.. s..
 
-v.. division()sy.. p..
+v.. division()
 
 main ()
 {
-    division()sy.. p..
+    division()
 }
 
 v.. division()
 {
     d.. firstNumber, secondNumber, resultsy.. p..
 
-    c__ __  "Input the first number: "sy.. p..
+    c__ __  "Input the first number: "
     c__ __ firstNumbersy.. p..
-    c__ __  "Input the number to divide by: "sy.. p..
+    c__ __  "Input the number to divide by: "
     c__ __ secondNumbersy.. p..
 
     result _ firstNumber / secondNumbersy.. p..

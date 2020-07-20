@@ -7,12 +7,12 @@ n.. NamespaceA{
 	st.. MyStruct
 	{
 
-	}sy.. p..
+	}
 	n.. NamespaceB {
 		st.. MyStruct
 		{
 
-		}sy.. p..
+		}
 
 		v.. method
 			MyStruct variable1sy.. p..

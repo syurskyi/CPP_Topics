@@ -3,6 +3,6 @@
 ? |i..
 
 in. main
-	st. c__ __  "Hello, World!\n"sy.. p..
+	st. c__ __  "Hello, World!\n"
 	r_ 0sy.. p..
 }

@@ -12,7 +12,7 @@
 
 extern "C" in. main( in. argc, c..** argv )
 {
-	tcOperation lcOperation( argc, argv )sy.. p..
+	tcOperation lcOperation( argc, argv )
 
 	st. c__ __  lcOperation.Execute() __  st. e..
 }

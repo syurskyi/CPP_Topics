@@ -30,7 +30,7 @@ v.. Context::set_strategy( Strategyin.erface* strategy )
 
 v.. Context::execute() c..
 {
-    strategy___execute()sy.. p..
+    strategy___execute()
 }
 
 v.. ClientStrategy::run()
@@ -39,16 +39,16 @@ v.. ClientStrategy::run()
     ConcreteStrategyB concreteStrategyBsy.. p..
     ConcreteStrategyC concreteStrategyCsy.. p..
 
-    Context contextA( &concreteStrategyA )sy.. p..
-    Context contextB( &concreteStrategyB )sy.. p..
-    Context contextC( &concreteStrategyC )sy.. p..
+    Context contextA( &concreteStrategyA )
+    Context contextB( &concreteStrategyB )
+    Context contextC( &concreteStrategyC )
 
-    contextA.execute()sy.. p.. // output: "Called ConcreteStrategyA execute method"
-    contextB.execute()sy.. p.. // output: "Called ConcreteStrategyB execute method"
-    contextC.execute()sy.. p.. // output: "Called ConcreteStrategyC execute method"
+    contextA.execute() // output: "Called ConcreteStrategyA execute method"
+    contextB.execute() // output: "Called ConcreteStrategyB execute method"
+    contextC.execute() // output: "Called ConcreteStrategyC execute method"
 
-    contextA.set_strategy( &concreteStrategyB )sy.. p..
-    contextA.execute()sy.. p.. // output: "Called ConcreteStrategyB execute method"
-    contextA.set_strategy( &concreteStrategyC )sy.. p..
-    contextA.execute()sy.. p.. // output: "Called ConcreteStrategyC execute method"
+    contextA.set_strategy( &concreteStrategyB )
+    contextA.execute() // output: "Called ConcreteStrategyB execute method"
+    contextA.set_strategy( &concreteStrategyC )
+    contextA.execute() // output: "Called ConcreteStrategyC execute method"
 }

@@ -6,7 +6,7 @@ u.. s..
 in. main()
 {
 	// Создаем массив с именем arr типа int размерностью 3 элемента
-	in. arr[3]sy.. p..
+	in. arr[3]
 
 	arr[0] _ 10sy.. p..
 	arr[1] _ 20sy.. p..
@@ -30,7 +30,7 @@ in. main()
 	c__ __  "Third value = " __  *(pArr + 2) __  ". Address = " __  pArr + 2 __  e..
 
 
-	sy.. p..
+
 	r_ 0sy.. p..
 }
 

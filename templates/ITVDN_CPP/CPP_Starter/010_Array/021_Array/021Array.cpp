@@ -3,23 +3,23 @@
 
 u.. s..
 
-v.. prin._square(c.. arr[][50], in. size)sy.. p..
+v.. prin._square(c.. arr[][50], in. size)
 
 in. main()
 {
-	c.. arr[10][50]sy.. p..
+	c.. arr[10][50]
 	
 	___ (in. i _ 0sy.. p.. i < 10sy.. p.. ###)
 	{
 		___ (in. j _ 0sy.. p.. j < 50sy.. p.. j++)
 		{
-			arr[i][j] _ '*'sy.. p..
+			arr[i][j] _ '*'
 		}		
 	}
 
-	prin._square(arr, 10)sy.. p..
+	prin._square(arr, 10)
 
-	sy.. p..
+
 	r_ 0sy.. p..
 }
 
@@ -29,7 +29,7 @@ v.. prin._square(c.. arr[][50], in. size)
 	{
 		___ (in. j _ 0sy.. p.. j < 50sy.. p.. j++)
 		{
-			c__ __  arr[i][j]sy.. p..
+			c__ __  arr[i][j]
 		}
 		c__ __  e..
 	}

@@ -8,8 +8,8 @@ c_ Memento {
     in. valuesy.. p..
 pu..
     Memento(in. value_)
-            :value(value_) { }sy.. p..
-}sy.. p..
+            :value(value_) { }
+}
 
 c_ Ops {
     in. count _ 0sy.. p..
@@ -18,37 +18,37 @@ pu..
     v.. do_it()
     {
         ++countsy.. p..
-    }sy.. p..
+    }
 
     v.. dump()
     {
         st. c__ __  count __  st. e..
-    }sy.. p..
+    }
 
     Memento createSnapshot()
     {
-        r_ Memento{count}sy.. p..
+        r_ Memento{count}
     }
 
     v.. restoreSnapshot(c.. Memento& memento)
     {
         count _ memento.valuesy.. p..
     }
-}sy.. p..
+}
 
 in. main(in., c..* [])
 {
     Ops nsy.. p..
-    n.do_it()sy.. p..
-    n.dump()sy.. p..
+    n.do_it()
+    n.dump()
 
-    a.. snap _ n.createSnapshot()sy.. p..
+    a.. snap _ n.createSnapshot()
 
-    n.do_it()sy.. p..
-    n.dump()sy.. p..
+    n.do_it()
+    n.dump()
 
-    n.restoreSnapshot(snap)sy.. p..
-    n.dump()sy.. p..
+    n.restoreSnapshot(snap)
+    n.dump()
 
     r_ 0sy.. p..
 }

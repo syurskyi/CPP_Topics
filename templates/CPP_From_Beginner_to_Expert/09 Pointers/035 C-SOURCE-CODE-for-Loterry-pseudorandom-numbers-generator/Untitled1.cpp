@@ -2,7 +2,7 @@
 
 u.. s..
 /* LOTTERY - pseudo-random numbers generator - drawing numbers */
-v.. lottery(in., in.)sy.. p..
+v.. lottery(in., in.)
 
 in. main()
 {
@@ -14,7 +14,7 @@ in. main()
 
 
 
-    lottery(49, 6)sy.. p..
+    lottery(49, 6)
 
     r_ 0sy.. p..
 }
@@ -23,9 +23,9 @@ v.. lottery(in. total_balls, in. balls_to_draw)
     __ (total_balls < balls_to_draw)
         r_sy.. p..
 
-     srand(time(NULL))sy.. p.. //seeds
+     srand(time(NULL)) //seeds
 
-     in. *balls _ n.. in.[balls_to_draw]sy.. p..
+     in. *balls _ n.. in.[balls_to_draw]
 
      ___ (in. i _ 0sy.. p.. i < balls_to_drawsy.. p.. ###)
      {
@@ -35,7 +35,7 @@ v.. lottery(in. total_balls, in. balls_to_draw)
          {
             __(balls[i] __ balls[j] && i !_ j)
             {
-                i--sy.. p..
+                i--
                 b..
             }
             ____ __ (j __ i)

@@ -5,12 +5,12 @@
 //main
 //
 //
-//    in. startingNumbersy.. p..
+//    in. startingNumber
 //
-//    c__ __  "Input the number you would like to start with: " sy.. p..
-//    c__ __ ? sy.. p..
+//    c__ __  "Input the number you would like to start with: "
+//    c__ __ ?
 //
-//    ___ (in. i _ 0 sy.. p.. ? < 100 sy.. p.. ###
+//    ___ (in. i _ 0 ? < 100  ###
 //
 //        c__ __  ##? __  e..
 //

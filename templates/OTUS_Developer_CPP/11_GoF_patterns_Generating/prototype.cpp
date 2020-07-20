@@ -8,7 +8,7 @@ st.. IConnector {
 
     v.. v.. connection() _ 0sy.. p..
     v.. IConnector* clone() _ 0sy.. p..
-}sy.. p..
+}
 
 c_ TcpConnector : pu.. IConnector {
     v.. connection() ov..
@@ -18,9 +18,9 @@ c_ TcpConnector : pu.. IConnector {
 
     IConnector* clone() ov..
     {
-        r_ n.. TcpConnector{}sy.. p..
+        r_ n.. TcpConnector{}
     }
-}sy.. p..
+}
 
 c_ UdpConnector : pu.. IConnector {
     v.. connection() ov..
@@ -30,22 +30,22 @@ c_ UdpConnector : pu.. IConnector {
 
     IConnector* clone() ov..
     {
-        r_ n.. UdpConnector{}sy.. p..
+        r_ n.. UdpConnector{}
     }
-}sy.. p..
+}
 
 in. main(in., c..* [])
 {
-    IConnector* primary _ n.. TcpConnector{}sy.. p..
+    IConnector* primary _ n.. TcpConnector{}
 
     //
 
     st. c__ __  "primary" __  st. e..
-    primary__connection()sy.. p..
+    primary__connection()
 
-    IConnector* mirror _ primary__clone()sy.. p..
+    IConnector* mirror _ primary__clone()
     st. c__ __  "mirror" __  st. e..
-    mirror__connection()sy.. p..
+    mirror__connection()
 
     de.. mirrorsy.. p..
 

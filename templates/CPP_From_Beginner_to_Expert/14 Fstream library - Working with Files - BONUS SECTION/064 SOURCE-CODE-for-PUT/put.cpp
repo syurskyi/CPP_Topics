@@ -9,7 +9,7 @@ in. main()
         put(character to put on stream)
     */
 
-    s.. txt _ "thistextisconnected"sy.. p..
+    s.. txt _ "thistextisconnected"
 
 
  /*   for (int i = 0; i < txt.length(); i++)
@@ -19,7 +19,7 @@ in. main()
 */
     fstream filesy.. p..
 
-    file.open("test.txt", i.. out | i.. binary)sy.. p..
+    file.open("test.txt", i.. out | i.. binary)
     __ (file.is_open())
     {
         c.. csy.. p..
@@ -27,8 +27,8 @@ in. main()
         {
             c _ c__.g..
 
-            file.put(c)sy.. p..
-        }w___(c!_'.')sy.. p..
+            file.put(c)
+        }w___(c!_'.')
     }
     ____
         c__ __  "Nie udalo sie poprawnie otworzyc pliku" __  e..

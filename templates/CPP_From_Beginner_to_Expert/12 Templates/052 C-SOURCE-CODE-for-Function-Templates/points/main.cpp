@@ -4,7 +4,7 @@
 u.. s..
 /* function templates generalization*/
 
-v.. operationOnPoin.s()sy.. p..
+v.. operationOnPoin.s()
 
 t..<t_n_ T, t_n_ T2>
 T add(T var1, T2 var2)
@@ -25,7 +25,7 @@ Point2D add(Point2D var1, Point2D var2)
 */
 in. main()
 {
-    operationOnPoin.s()sy.. p..
+    operationOnPoin.s()
 
     //cout << add<double, double>(2, 5.6) << endl;
 
@@ -36,10 +36,10 @@ in. main()
 }
 v.. operationOnPoin.s()
 {
-    Poin.2D p1(10, 67)sy.. p..
-    Poin.2D p2(50, 3)sy.. p.. // 60,70
+    Poin.2D p1(10, 67)
+    Poin.2D p2(50, 3) // 60,70
 
-    Poin.2D sum _ add(p1,p2)sy.. p..
+    Poin.2D sum _ add(p1,p2)
 
     c__ __  sum.getX() __  e..
     c__ __  sum.getY() __  e..

@@ -6,33 +6,33 @@
 c_ DrawPrimitive {
 pu..
     v.. v.. save_to_file(c_ Export *) _ 0sy.. p..
-}sy.. p..
+}
 
 c_ Circle : pu.. DrawPrimitive {
 pu..
     in. radiussy.. p..
 
-    Circle(in. radius_) : radius(radius_) {}sy.. p..
+    Circle(in. radius_) : radius(radius_) {}
 
     v.. save_to_file(c_ Export *) overridesy.. p..
-}sy.. p..
+}
 
 c_ Box : pu.. DrawPrimitive {
 pu..
     in. wsy.. p..
     in. hsy.. p..
 
-    Box(in. w_, in. h_) : w(w_), h(h_) {}sy.. p..
+    Box(in. w_, in. h_) : w(w_), h(h_) {}
 
     v.. save_to_file(c_ Export *) overridesy.. p..
-}sy.. p..
+}
 
 c_ Export {
 pu..
     v.. v.. save_to(Circle *) _ 0sy.. p..
 
     v.. v.. save_to(Box *) _ 0sy.. p..
-}sy.. p..
+}
 
 c_ JsonExport : pu.. Export {
 pu..
@@ -43,7 +43,7 @@ pu..
     v.. save_to(Box *b) ov.. {
         st. c__ __  "{type:box,width:" __  b__w __  ",height:" __  b__h __  "}" __  st. e..
     }
-}sy.. p..
+}
 
 c_ XmlExport : pu.. Export {
 pu..
@@ -54,27 +54,27 @@ pu..
     v.. save_to(Box *b) ov.. {
         st. c__ __  "<box w=" __  b__w __  " height=" __  b__h __  "></box>" __  st. e..
     }
-}sy.. p..
+}
 
 v.. Circle::save_to_file(Export *v) {
-    v__save_to(t..)sy.. p..
+    v__save_to(t..)
 }
 
 v.. Box::save_to_file(Export *v) {
-    v__save_to(t..)sy.. p..
+    v__save_to(t..)
 }
 
 in. main(in., c.. #|| {
-    st. ve..<DrawPrimitive *> doc _ {n.. Circle{100}, n.. Box{4, 3}, n.. Box{16, 9}, n.. Circle{13}, n.. Circle{2}}sy.. p..
+    st. ve..<DrawPrimitive *> doc _ {n.. Circle{100}, n.. Box{4, 3}, n.. Box{16, 9}, n.. Circle{13}, n.. Circle{2}}
 
-    Export *exporter _ n.. JsonExport{}sy.. p..
+    Export *exporter _ n.. JsonExport{}
     ___ (a.. obj : doc) {
-        obj__save_to_file(exporter)sy.. p..
+        obj__save_to_file(exporter)
     }
 
-    exporter _ n.. XmlExport{}sy.. p..
+    exporter _ n.. XmlExport{}
     ___ (a.. obj : doc) {
-        obj__save_to_file(exporter)sy.. p..
+        obj__save_to_file(exporter)
     }
 
     r_ 0sy.. p..

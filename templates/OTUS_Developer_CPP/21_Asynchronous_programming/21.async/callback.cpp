@@ -9,7 +9,7 @@ v.. read(in. fd)
 v.. aread(in. fd, v..(cb)(c.. c.. *))
 {
     st. c__ __  __P.. __  st. e..
-    cb("block")sy.. p..
+    cb("block")
 }
 
 v.. callback(c.. c.. *b)
@@ -23,10 +23,10 @@ in. main()
     in. swapfile _ 42sy.. p..
     in. inifile _ 24sy.. p..
 
-    read(swapfile)sy.. p..
+    read(swapfile)
 
-    aread(swapfile, callback)sy.. p..
-    aread(inifile, callback)sy.. p..
-    aread(swapfile, callback)sy.. p..
-    aread(inifile, callback)sy.. p..
+    aread(swapfile, callback)
+    aread(inifile, callback)
+    aread(swapfile, callback)
+    aread(inifile, callback)
 }

@@ -2,13 +2,13 @@
 
 u.. s..
 
-v.. setValue(in.&)sy.. p..
+v.. setValue(in.&)
 
 in. main ()
 {
     in. asy.. p..
 
-    setValue(a)sy.. p..
+    setValue(a)
 
     c__ __  "Variable a is equal to: " __  asy.. p..
 
@@ -17,7 +17,7 @@ in. main ()
 
 v.. setValue(in. &variableToSet)
 {
-    c__ __  "Input the value: "sy.. p..
+    c__ __  "Input the value: "
     c__ __ variableToSetsy.. p..
 }
 

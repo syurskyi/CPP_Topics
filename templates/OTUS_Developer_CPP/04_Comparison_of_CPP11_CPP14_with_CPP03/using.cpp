@@ -1,15 +1,15 @@
 //? ve..
 //
-//t_d_ st. ve..|in.| veci sy.. p..
+//t_d_ st. ve..|in.| veci
 //
-//u.. vi _ st. ve..|in.| sy.. p..
+//u.. vi _ st. ve..|in.|
 //
 //t..|t_n_ ?|
-//u.. v _ st. ve..|?| sy.. p..
+//u.. v _ st. ve..|?|
 //
 //in. main in., c.. #||
-//    vi a sy.. p..
-//    v|in.| b sy.. p..
+//    vi a
+//    v|in.| b
 //
-//    r_ _ sy.. p..
+//    r_ _
 //

@@ -1,7 +1,7 @@
 ? <mutex>
 
 c_ some_big_object
-{}sy.. p..
+{}
 
 v.. swap(some_big_object& lhs,some_big_object& rhs)
 {}
@@ -18,12 +18,12 @@ pu..
     {
         __(&lhs__&rhs)
             r_sy.. p..
-        st. lock(lhs.m,rhs.m)sy.. p..
-        st. lock_guard<st. mutex> lock_a(lhs.m,st. adopt_lock)sy.. p..
-        st. lock_guard<st. mutex> lock_b(rhs.m,st. adopt_lock)sy.. p..
-        swap(lhs.some_detail,rhs.some_detail)sy.. p..
+        st. lock(lhs.m,rhs.m)
+        st. lock_guard<st. mutex> lock_a(lhs.m,st. adopt_lock)
+        st. lock_guard<st. mutex> lock_b(rhs.m,st. adopt_lock)
+        swap(lhs.some_detail,rhs.some_detail)
     }
-}sy.. p..
+}
 
 in. main()
 {}

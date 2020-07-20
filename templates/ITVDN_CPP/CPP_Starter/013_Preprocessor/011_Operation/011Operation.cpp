@@ -15,7 +15,7 @@ in. main()
 
 	c__ __  concat(x, y) __  e..
 
-	sy.. p..
+
 	r_ 0sy.. p..
 }
 

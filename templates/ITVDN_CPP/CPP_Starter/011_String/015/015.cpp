@@ -7,15 +7,15 @@ u.. s..
 
 in. main()
 {
-	s.. _str _ "Some text"sy.. p..
+	s.. _str _ "Some text"
 
 	// Methods
-	_str.append(" one more text")sy.. p..
+	_str.append(" one more text")
 	c__ __  _str.s.. __  e..
 
 	c__ __  _str __  e..
 
-	sy.. p..
+
 	r_ 0sy.. p..
 }
 

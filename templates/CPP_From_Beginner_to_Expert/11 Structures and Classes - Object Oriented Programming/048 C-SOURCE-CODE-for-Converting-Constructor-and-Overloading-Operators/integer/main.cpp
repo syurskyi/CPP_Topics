@@ -5,7 +5,7 @@ u.. s..
 /* CONVERT constructor - overloading operators */
 in. main()
 {
-    in.eger a(50)sy.. p..
+    in.eger a(50)
 
     in. b _ asy.. p..
     a _ 100sy.. p..

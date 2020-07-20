@@ -5,15 +5,15 @@ u.. s..
 
 in. main()
 {
-    Position dog(10, 50)sy.. p..
+    Position dog(10, 50)
 
-    dog.getPosition()sy.. p..
-    dog.setPosition(50, 100)sy.. p..
-    dog.getPosition()sy.. p..
+    dog.getPosition()
+    dog.setPosition(50, 100)
+    dog.getPosition()
 
-    c.. Position house(100, 200)sy.. p..
+    c.. Position house(100, 200)
 
-    house.getPosition()sy.. p..
+    house.getPosition()
 //    house.setPosition(444, 444);
     //house.getPosition();
 

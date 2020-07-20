@@ -12,7 +12,7 @@ in. main
     c__ __  "Please Enter Your Age:" __  e..
     c__ __ agesy.. p..
 
-    Person person(name, age)sy.. p..
+    Person person(name, age)
     c__ __  "Welcome " __  name __  e..
 
 }

@@ -7,7 +7,7 @@ in. main()
 {
     fstream filesy.. p..
 
-    file.open("sample.txt", i.. out | i.. app)sy.. p..
+    file.open("sample.txt", i.. out | i.. app)
 
     /*
         ios::in - INPUT - READING
@@ -29,12 +29,12 @@ in. main()
 
     __ (file.is_open())
     {
-        file __  "sample text\n"sy.. p..
-        file __  "sample text\n"sy.. p..
+        file __  "sample text\n"
+        file __  "sample text\n"
 
     }
     ____
-        c__ __  "The file hasn't been opened properly"sy.. p..
+        c__ __  "The file hasn't been opened properly"
 
 
     r_ 0sy.. p..

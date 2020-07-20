@@ -3,18 +3,18 @@
 
 u.. s..
 
-v.. setX(Position &, in.)sy.. p..
+v.. setX(Position &, in.)
 in. main()
 {
-    Position dog(10, 50)sy.. p..
+    Position dog(10, 50)
 
-    dog.getPosition()sy.. p..
-    setX(dog, 1500)sy.. p..
-    dog.getPosition()sy.. p..
+    dog.getPosition()
+    setX(dog, 1500)
+    dog.getPosition()
 
-    c.. Position house(100, 200)sy.. p..
+    c.. Position house(100, 200)
 
-    house.getPosition()sy.. p..
+    house.getPosition()
 //    house.setPosition(444, 444);
     //house.getPosition();
 

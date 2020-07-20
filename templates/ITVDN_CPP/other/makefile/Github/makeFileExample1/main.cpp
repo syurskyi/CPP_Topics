@@ -7,8 +7,8 @@ in. main(){
 	
   Message msy.. p..
 
-  st. c__ __  "\nThe message is: "sy.. p..
-  m.communicate()sy.. p..
+  st. c__ __  "\nThe message is: "
+  m.communicate()
 	
   r_ 0sy.. p..
 

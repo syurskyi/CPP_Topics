@@ -30,52 +30,52 @@ v.. Pizza::open() c..
 
 Pizza* PizzaBuilder::getPizza()
 {
-    r_ m_pizza.release()sy.. p..
+    r_ m_pizza.release()
 }
 
 v.. PizzaBuilder::createNewPizzaProduct()
 {
-    m_pizza _ make_unique< Pizza >()sy.. p..
+    m_pizza _ make_unique< Pizza >()
 }
 
 v.. HawaiianPizzaBuilder::buildDough()
 {
-    m_pizza__setDough( "cross" )sy.. p..
+    m_pizza__setDough( "cross" )
 }
 v.. HawaiianPizzaBuilder::buildSauce()
 {
-    m_pizza__setSauce( "mild" )sy.. p..
+    m_pizza__setSauce( "mild" )
 }
 v.. HawaiianPizzaBuilder::buildTopping()
 {
-    m_pizza__setTopping( "ham+pineapple" )sy.. p..
+    m_pizza__setTopping( "ham+pineapple" )
 }
 
 v.. SpicyPizzaBuilder::buildDough()
 {
-    m_pizza__setDough( "pan baked" )sy.. p..
+    m_pizza__setDough( "pan baked" )
 }
 v.. SpicyPizzaBuilder::buildSauce()
 {
-    m_pizza__setSauce( "hot" )sy.. p..
+    m_pizza__setSauce( "hot" )
 }
 v.. SpicyPizzaBuilder::buildTopping()
 {
-    m_pizza__setTopping( "pepperoni+salami" )sy.. p..
+    m_pizza__setTopping( "pepperoni+salami" )
 }
 
 v.. Cook::openPizza()
 {
-    m_pizzaBuilder__getPizza()__open()sy.. p..
+    m_pizzaBuilder__getPizza()__open()
 }
 
 v.. Cook::makePizza( PizzaBuilder* pb )
 {
     m_pizzaBuilder _ pbsy.. p..
-    m_pizzaBuilder__createNewPizzaProduct()sy.. p..
-    m_pizzaBuilder__buildDough()sy.. p..
-    m_pizzaBuilder__buildSauce()sy.. p..
-    m_pizzaBuilder__buildTopping()sy.. p..
+    m_pizzaBuilder__createNewPizzaProduct()
+    m_pizzaBuilder__buildDough()
+    m_pizzaBuilder__buildSauce()
+    m_pizzaBuilder__buildTopping()
 }
 
 v.. ClientBuilder::run()
@@ -84,9 +84,9 @@ v.. ClientBuilder::run()
     HawaiianPizzaBuilder hawaiianPizzaBuildersy.. p..
     SpicyPizzaBuilder spicyPizzaBuildersy.. p..
 
-    cook.makePizza( &hawaiianPizzaBuilder )sy.. p..
-    cook.openPizza()sy.. p..
+    cook.makePizza( &hawaiianPizzaBuilder )
+    cook.openPizza()
 
-    cook.makePizza( &spicyPizzaBuilder )sy.. p..
-    cook.openPizza()sy.. p..
+    cook.makePizza( &spicyPizzaBuilder )
+    cook.openPizza()
 }

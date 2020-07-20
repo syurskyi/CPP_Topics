@@ -6,8 +6,8 @@
 c_ Image
 {
 pu..
-    v.. resize(in., in.) {}sy.. p..
-}sy.. p..
+    v.. resize(in., in.) {}
+}
 
 c_ ImageResizer
 {
@@ -15,23 +15,23 @@ c_ ImageResizer
 pu..
     Image get_box(in. w)
     {
-        a.. i _ images.find(w)sy.. p..
+        a.. i _ images.find(w)
         __ (i __ images.end()) {
             Image imgsy.. p..
-            img.resize(w, w)sy.. p..
+            img.resize(w, w)
 
             bo.. bsy.. p..
-            st. tie(i, b) _ images.emplace(w, img)sy.. p..
+            st. tie(i, b) _ images.emplace(w, img)
         }
         r_ i__secondsy.. p..
     }
-}sy.. p..
+}
 
 in. main(in., c.. #||
 {
     ImageResizer rssy.. p..
 
-    rs.get_box(100)sy.. p..
-    rs.get_box(1000)sy.. p..
-    rs.get_box(1000)sy.. p..
+    rs.get_box(100)
+    rs.get_box(1000)
+    rs.get_box(1000)
 }

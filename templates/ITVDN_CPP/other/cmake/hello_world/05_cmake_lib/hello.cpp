@@ -11,6 +11,6 @@ u.. s..
 in. main()
 {
     c__ __  "Hello in main.. " __  e..
-    foo()sy.. p..
+    foo()
     r_ 0sy.. p..
 }

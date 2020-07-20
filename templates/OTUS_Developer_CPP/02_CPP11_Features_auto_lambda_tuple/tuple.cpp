@@ -4,30 +4,30 @@
 //
 //in. foo in., in., st. s.. #result
 //
-//    result _ "surname" sy.. p..
-//    r_ 127 sy.. p..
+//    result _ "surname"
+//    r_ 127
 //
 //
 //st. s.. foo in., in., in. #err
 //
-//    err _ 127 sy.. p..
-//    r_ "surname" sy.. p..
+//    err _ 127
+//    r_ "surname"
 //
 //
 //v.. foo in., in., in. #err, st. s.. #result
 //
-//    err _ 127 sy.. p..
-//    result _ "surname" sy.. p..
+//    err _ 127
+//    result _ "surname"
 //
 //
 //st.. result
-//    in. err sy.. p..
-//    st. s.. r.. sy.. p..
-//sy.. p..
+//    in. err
+//    st. s.. r..
+//
 //
 //a.. foo in., in.
 //
-//    r_ result127, st. s..("surname") sy.. p..
+//    r_ result127, st. s..("surname")
 //
 //
 //a.. bar in., in.
@@ -44,22 +44,22 @@
 //    st. c__ __  ?.result __  st. e..
 //
 //    st. c__ __  "* return tuple" __  st. e..
-//    a.. rb _ bar(1, 2) sy.. p..
+//    a.. rb _ bar(1, 2)
 //    st. c__ __  st. ge.|0| ? __  st. e..
 //    st. c__ __  st. ge.|1| ? __  st. e..
 //
 //    st. c__ __  "* return and unpack " __  st. e..
-//    st. s.. result sy.. p..
-//    in. err sy.. p..
-//    st. tu..|in. #, st. s.. #| e.. r.. _ bar(1, 2) sy.. p..
+//    st. s.. result
+//    in. err
+//    st. tu..|in. #, st. s.. #| e.. r.. _ bar(1, 2)
 ////    std::make_tuple(std::ref(err), std::ref(result)) = bar(1, 2);
 //    st. c__ __  e.. __  st. e..
 //    st. c__ __  r.. __  st. e..
 //
 //    st. c__ __  "* return and unpack" __  st. e..
-//    st. tie e.. r..) _ bar(1, 2) sy.. p..
+//    st. tie e.. r..) _ bar(1, 2)
 //    st. c__ __  e.. __  st. e..
 //    st. c__ __  r.. __  st. e..
 //
-//    r_ _ sy.. p..
+//    r_ _
 //

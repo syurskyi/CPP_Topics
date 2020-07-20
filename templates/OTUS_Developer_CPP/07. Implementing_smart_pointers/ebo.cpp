@@ -6,28 +6,28 @@ st.. deleter {
     v.. op..()
         st. c__ __  __P.. __  st. e..
     }
-}sy.. p..
+}
 
 st.. ptr {
     in. *xsy.. p..
-}sy.. p..
+}
 
 st.. ptra {
     in. *xsy.. p..
     deleter ysy.. p..
 
     v.. deleter
-        y()sy.. p..
+        y()
     }
-}sy.. p..
+}
 
 st.. ptrd : deleter {
     in. *xsy.. p..
 
     v.. deleter
-        (*t..)()sy.. p..
+        (*t..)()
     }
-}sy.. p..
+}
 
 in. main
 //    std::cout << sizeof(deleter) << std::endl;

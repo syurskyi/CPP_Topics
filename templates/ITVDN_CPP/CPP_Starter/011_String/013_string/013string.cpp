@@ -7,10 +7,10 @@ u.. s..
 
 in. main()
 {
-	s.. first_str _ "Hello world!"sy.. p..
+	s.. first_str _ "Hello world!"
 
 	c__ __  first_str __  e..
-	sy.. p..
+
 	r_ 0sy.. p..
 }
 

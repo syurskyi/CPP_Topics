@@ -34,5 +34,5 @@ d.. line::get_y1()
 
 d.. line::length()
 {
-	r_ sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2))sy.. p..
+	r_ sqrt((x1 - x2) * (x1 - x2) + (y1 - y2) * (y1 - y2))
 }

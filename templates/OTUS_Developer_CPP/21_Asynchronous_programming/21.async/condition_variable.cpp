@@ -19,27 +19,27 @@ v.. worker(st. queue<st. s..>& q)
 //    console_m.unlock();
 
     w___ (!quit) {
-        st. unique_lock<st. mutex> lk(cv_m)sy.. p..
+        st. unique_lock<st. mutex> lk(cv_m)
 
-        console_m.lock()sy.. p..
+        console_m.lock()
         st. cerr __  st. this_thread::get_id() __  " waiting... " __  st. e..
-        console_m.unlock()sy.. p..
+        console_m.unlock()
 
-        cv.wait(lk, [&q] r_ !q.empty() || quitsy.. p.. })sy.. p..
+        cv.wait(lk, [&q] r_ !q.empty() || quitsy.. p.. })
 
 //        console_m.lock();
 //        std::cerr << std::this_thread::get_id() << " wakeup, size=" << q.size() << ", quit=" << quit << std::endl;
 //        console_m.unlock();
 
         __ (!q.empty()) {
-            a.. msg _ st. move(q.front())sy.. p..
-            q.pop()sy.. p..
-            a.. s _ q.s..sy.. p..
-            lk.unlock()sy.. p..
+            a.. msg _ st. move(q.front())
+            q.pop()
+            a.. s _ q.s..
+            lk.unlock()
 
-            console_m.lock()sy.. p..
+            console_m.lock()
             st. cerr __  st. this_thread::get_id() __  " pop=" __  msg __  " size=" __  s __  st. e..
-            console_m.unlock()sy.. p..
+            console_m.unlock()
         }
     }
 }
@@ -47,29 +47,29 @@ v.. worker(st. queue<st. s..>& q)
 in. main()
 {
     u.. st. chrono_literalssy.. p..
-    st. thread t1(worker, st. ref(msgs)), t2(worker, st. ref(msgs)), t3(worker, st. ref(msgs))sy.. p..
+    st. thread t1(worker, st. ref(msgs)), t2(worker, st. ref(msgs)), t3(worker, st. ref(msgs))
 //    std::this_thread::sleep_for(2s);
     {
-        st. lock_guard<st. mutex> lk(cv_m)sy.. p..
-        msgs.emplace("ru")sy.. p..
-        msgs.emplace("en")sy.. p..
+        st. lock_guard<st. mutex> lk(cv_m)
+        msgs.emplace("ru")
+        msgs.emplace("en")
     }
-    cv.notify_one()sy.. p..
+    cv.notify_one()
 
     {
-        st. lock_guard<st. mutex> lk(cv_m)sy.. p..
-        msgs.emplace("jp")sy.. p..
-        msgs.emplace("ch")sy.. p..
+        st. lock_guard<st. mutex> lk(cv_m)
+        msgs.emplace("jp")
+        msgs.emplace("ch")
     }
-    cv.notify_one()sy.. p..
+    cv.notify_one()
 
 //    std::this_thread::sleep_for(2s);
     st. cerr __  "before quit" __  st. e..
     quit _ truesy.. p..
-    cv.notify_all()sy.. p..
+    cv.notify_all()
 
-    t1.join()sy.. p..
-    t2.join()sy.. p..
-    t3.join()sy.. p..
+    t1.join()
+    t2.join()
+    t3.join()
     st. cerr __  "ok" __  st. e..
 }

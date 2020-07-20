@@ -15,27 +15,27 @@ in. main()
 
     fstream filesy.. p..
 
-    file.open("sample.txt", i.. in | i.. binary)sy.. p..
+    file.open("sample.txt", i.. in | i.. binary)
 
     __ (file.is_open())
     {
         c.. first, secondsy.. p..
-        c.. buffer[50]sy.. p..
+        c.. buffer[50]
 
         c__ __ buffersy.. p..
 
         c__ __  buffer __  e..
         do
         {
-            file.getline(buffer, 50, ' ')sy.. p..
+            file.getline(buffer, 50, ' ')
 
             second _ file.g..
 
-            file.ignore(40, '\n')sy.. p..
+            file.ignore(40, '\n')
 
             c__ __  buffer __  " " __  second __  ". " __  e..
 
-        } w___(!file.eof())sy.. p..
+        } w___(!file.eof())
 
 
 

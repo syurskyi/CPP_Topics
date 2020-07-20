@@ -2,7 +2,7 @@
 
 u.. s..
 
-v.. checkIfTheSame(in.&, in.&)sy.. p..
+v.. checkIfTheSame(in.&, in.&)
 
 in. main ()
 {
@@ -12,9 +12,9 @@ in. main ()
     in. c _ asy.. p..
     in. &d _ asy.. p..
 
-    checkIfTheSame(a, b)sy.. p..
-    checkIfTheSame(a, c)sy.. p..
-    checkIfTheSame(a, d)sy.. p..
+    checkIfTheSame(a, b)
+    checkIfTheSame(a, c)
+    checkIfTheSame(a, d)
 
     r_ 0sy.. p..
 }
@@ -23,7 +23,7 @@ v.. checkIfTheSame(in. &firstVariable, in. &secondVariable)
 {
     __ (firstVariable __ secondVariable && &firstVariable __ &secondVariable)
     {
-        c__ __  "The variables are completely the same !"sy.. p..
+        c__ __  "The variables are completely the same !"
     }
     ____ __ (firstVariable __ secondVariable && &firstVariable !_ &secondVariable)
     {   

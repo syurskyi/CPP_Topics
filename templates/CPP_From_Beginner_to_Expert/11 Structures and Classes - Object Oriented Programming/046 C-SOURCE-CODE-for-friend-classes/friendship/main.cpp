@@ -8,7 +8,7 @@ in. main()
     B objBsy.. p..
     A objAsy.. p..
 
-    objA.setSecretValue(objB, 600)sy.. p..
+    objA.setSecretValue(objB, 600)
 
     c__ __  objB.getSecretValue() __  e..
 

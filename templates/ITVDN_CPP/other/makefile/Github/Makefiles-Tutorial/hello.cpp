@@ -3,8 +3,8 @@
 u.. s..
 
 v.. prin._hello(){
-   c__ __  "Hello World!"sy.. p..
-   c__ __  “Hello World 2”sy.. p..
-	c__ __  “Hello World 2”sy.. p..
+   c__ __  "Hello World!"
+   c__ __  “Hello World 2”
+	c__ __  “Hello World 2”
 
 }

@@ -3,9 +3,9 @@
 u.. s..
 /* enum - enumeration - 0 1 2 3 4 */
 
-en.. dayOfWeek {M _ 1, TU, W, TH, F, SA, SN}sy.. p..
+en.. dayOfWeek {M _ 1, TU, W, TH, F, SA, SN}
 
-s.. getDay(dayOfWeek)sy.. p..
+s.. getDay(dayOfWeek)
 in. main()
 {
     dayOfWeek d _ Msy.. p..
@@ -27,20 +27,20 @@ s.. getDay(dayOfWeek d)
     s..(d)
     {
         c.. M:
-            r_ "Monday"sy.. p..
+            r_ "Monday"
         c.. TU:
-            r_ "Tuesday"sy.. p..
+            r_ "Tuesday"
         c.. W:
-            r_ "Wednesday"sy.. p..
+            r_ "Wednesday"
         c.. TH:
-            r_ "Thursday"sy.. p..
+            r_ "Thursday"
         c.. F:
-            r_ "Friday"sy.. p..
+            r_ "Friday"
         c.. SA:
-            r_ "Saturday"sy.. p..
+            r_ "Saturday"
         c.. SN:
-            r_ "Sunday"sy.. p..
+            r_ "Sunday"
         def..
-            r_ "You typed something wrong!"sy.. p..
+            r_ "You typed something wrong!"
     }
 }

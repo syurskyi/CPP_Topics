@@ -1,7 +1,7 @@
 ? |i..
 
 u.. s..
-v.. showHelp()sy.. p..
+v.. showHelp()
 in. main(in. argc, c.. *argv[])
 {
     //arguments counter - argc
@@ -10,7 +10,7 @@ in. main(in. argc, c.. *argv[])
    ___ (in. i _ 0sy.. p.. i < argcsy.. p.. ###)
    {
     __ ((strcmp(argv[i], "-h") __ 0) && i __ 1)
-     showHelp()sy.. p..
+     showHelp()
    }
 
 

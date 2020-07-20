@@ -3,8 +3,8 @@
 
 u.. s..
 /* virtual destructor */
-v.. voiceOfAnimal(Animal *)sy.. p..
-v.. voiceOfAnimal(Animal &)sy.. p..
+v.. voiceOfAnimal(Animal *)
+v.. voiceOfAnimal(Animal &)
 in. main()
 {
 /*

@@ -9,17 +9,17 @@
 //t..| t_n_ ? |
 //ScopedPtr| ? | #?
 //
-//    de.. ptr sy.. p..
+//    de.. ptr
 //
 //
 //t..| t_n_ ? |
 //?# ScopedPtr| ? | ||op..#
 //
-//    r_ #ptr sy.. p..
+//    r_ #ptr
 //
 //
 //t..| t_n_ ? |
 //?# ScopedPtr| ? | ||op..__
 //
-//    r_ ptr sy.. p..
+//    r_ ptr
 //

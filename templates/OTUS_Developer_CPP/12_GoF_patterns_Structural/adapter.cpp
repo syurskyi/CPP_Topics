@@ -15,7 +15,7 @@ st.. mysql_client_native {
     {
         st. c__ __  "mysql close" __  st. e..
     }
-}sy.. p..
+}
 
 st.. postgres_client_native {
     v.. postgres_open()
@@ -26,7 +26,7 @@ st.. postgres_client_native {
     {
         st. c__ __  "postgres query" __  st. e..
     }
-}sy.. p..
+}
 
 st.. IDatabase {
     v.. ~IDatabase() _ defaultsy.. p..
@@ -34,7 +34,7 @@ st.. IDatabase {
     v.. v.. connect() _ 0sy.. p..
     v.. v.. execute_query() _ 0sy.. p..
     v.. v.. close() _ 0sy.. p..
-}sy.. p..
+}
 
 c_ MysqlDatabase : pu.. IDatabase
 {
@@ -42,17 +42,17 @@ c_ MysqlDatabase : pu.. IDatabase
 
     v.. connect() ov..
     {
-        client.mysql_connect()sy.. p..
+        client.mysql_connect()
     }
     v.. execute_query() ov..
     {
-        client.mysql_execute()sy.. p..
+        client.mysql_execute()
     }
     v.. close() ov..
     {
-        client.mysql_close()sy.. p..
+        client.mysql_close()
     }
-}sy.. p..
+}
 
 c_ PostgresDatabase : pu.. IDatabase
 {
@@ -60,24 +60,24 @@ c_ PostgresDatabase : pu.. IDatabase
 
     v.. connect() ov..
     {
-        client.postgres_open()sy.. p..
+        client.postgres_open()
     }
     v.. execute_query() ov..
     {
-        client.postgres_query()sy.. p..
+        client.postgres_query()
     }
     v.. close() ov..
     {
     }
-}sy.. p..
+}
 
 in. main(in., c.. #||
 {
-    IDatabase *db _ n.. PostgresDatabase{}sy.. p..
+    IDatabase *db _ n.. PostgresDatabase{}
 
-    db__connect()sy.. p..
-    db__execute_query()sy.. p..
-    db__close()sy.. p..
+    db__connect()
+    db__execute_query()
+    db__close()
 
     de.. dbsy.. p..
 }

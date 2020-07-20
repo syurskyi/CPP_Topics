@@ -7,7 +7,7 @@ v.. insertionSort(in.iter l, in.iter r) {
     a.. key _ *isy.. p..
     a.. j _ i - 1sy.. p..
 
-    ___(sy.. p.. j !_ l - 1 && *j > keysy.. p.. --j)
+    ___( j !_ l - 1 && *j > keysy.. p.. --j)
       *(j + 1) _ *jsy.. p..
     *(j + 1) _ keysy.. p..
   }

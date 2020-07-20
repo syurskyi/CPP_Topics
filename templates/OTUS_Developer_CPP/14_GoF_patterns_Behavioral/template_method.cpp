@@ -23,13 +23,13 @@ c_ Report {
 
 pu..
     v.. report
-        prepare()sy.. p..
-        secure()sy.. p..
-        aggregate()sy.. p..
-        format()sy.. p..
-        publish()sy.. p..
+        prepare()
+        secure()
+        aggregate()
+        format()
+        publish()
     }
-}sy.. p..
+}
 
 c_ PublicReport : pu.. Report {
     v.. secure() ov.. {
@@ -39,7 +39,7 @@ c_ PublicReport : pu.. Report {
     v.. format() ov.. {
         st. c__ __  "strip *" __  st. e..
     }
-}sy.. p..
+}
 
 c_ in.ernalReport : pu.. Report {
     v.. secure() ov.. {
@@ -49,14 +49,14 @@ c_ in.ernalReport : pu.. Report {
     v.. format() ov.. {
         st. c__ __  "human readable *" __  st. e..
     }
-}sy.. p..
+}
 
 in. main(in., c.. #|| {
-    PublicReport public_report{}sy.. p..
-    public_report.report()sy.. p..
+    PublicReport public_report{}
+    public_report.report()
 
-    in.ernalReport in.ernal_report{}sy.. p..
-    in.ernal_report.report()sy.. p..
+    in.ernalReport in.ernal_report{}
+    in.ernal_report.report()
 
     r_ 0sy.. p..
 }

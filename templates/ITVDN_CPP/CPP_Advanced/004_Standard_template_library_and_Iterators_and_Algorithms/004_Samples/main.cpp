@@ -114,40 +114,40 @@ in. main()
     //        std::cout << "element is not found" << std::endl;
     //    }
 
-    st. s.. str _ "Hello World"sy.. p..
-    st. transform( str.begin(), str.end(), str.begin(), ::toupper )sy.. p..
+    st. s.. str _ "Hello World"
+    st. transform( str.begin(), str.end(), str.begin(), ::toupper )
 
     st. c__ __  str __  st. e..
 
-    st. reverse( str.begin(), str.end() )sy.. p..
+    st. reverse( str.begin(), str.end() )
 
     st. c__ __  str __  st. e..
 
     a.. splitted _
-        st. partition( str.begin(), str.end(), []( c.. c.. elem ) { r_ elem > 'L'sy.. p.. } )sy.. p..
+        st. partition( str.begin(), str.end(), []( c.. c.. elem ) { r_ elem > 'L' } )
 
-    st. c__ __  "\nPartitioned string:\n    "sy.. p..
-    st. copy( st. begin( str ), splitted, st. ostream_iterator< c.. >( st. c__, "," ) )sy.. p..
-    st. c__ __  " |||| "sy.. p..
-    st. copy( splitted, st. end( str ), st. ostream_iterator< c.. >( st. c__, "," ) )sy.. p..
+    st. c__ __  "\nPartitioned string:\n    "
+    st. copy( st. begin( str ), splitted, st. ostream_iterator< c.. >( st. c__, "," ) )
+    st. c__ __  " |||| "
+    st. copy( splitted, st. end( str ), st. ostream_iterator< c.. >( st. c__, "," ) )
 
-    sort( str.begin(), str.end() )sy.. p..
+    sort( str.begin(), str.end() )
 
     st. c__ __  st. endl __  "Sorted:" __  st. endl __  str __  st. e..
 
     sort( str.begin(), str.end(), []( c.. c.. elem1, c.. c.. elem2 ) {
         r_ elem1 > elem2sy.. p..
-    } )sy.. p..
+    } )
 
     st. c__ __  st. endl __  str __  st. e..
 
     st. c__ __  st. max( 19, 9698 ) __  st. e..
 
-    st. ve..< in. > vec{ 1, 2, 3 }sy.. p..
+    st. ve..< in. > vec{ 1, 2, 3 }
 
     w___ ( st. next_permutation( vec.begin(), vec.end() ) )
     {
-        st. copy( vec.begin(), vec.end(), st. ostream_iterator< in. >{ st. c__, ", " } )sy.. p..
+        st. copy( vec.begin(), vec.end(), st. ostream_iterator< in. >{ st. c__, ", " } )
         st. c__ __  st. e..
     }
 

@@ -8,7 +8,7 @@
 //
 //        r_ /*x + y++*/ + a + bsy.. p..
 //
-//} sy.. p..
+//}
 //
 //
 ////struct foo
@@ -30,12 +30,12 @@
 //
 //in. main in., c.. #||
 //
-//    in. x _ 1000 sy.. p..
+//    in. x _ 1000
 ////    std::cout << closure(100.1, x)(10.5, 1) << std::endl;
-//    cl.. l sy.. p..
+//    cl.. l
 //    st. c__ __  l.foo(10, 1) __  st. e..
 //
-//    st. c__ __  |y_100.1, x/*=*/||in. a, in. b| /*mutable*/ __ in. | r_ x + y + a + b sy.. p.. |(10, 1) __  st. e..
+//    st. c__ __  |y_100.1, x/*=*/||in. a, in. b| /*mutable*/ __ in. | r_ x + y + a + b  |(10, 1) __  st. e..
 //
 ////    auto f = [y=100, x](int a, int b) mutable { return x + y++ + a + b; };
 ////    std::cout << f(10, 1) << std::endl;
@@ -55,5 +55,5 @@
 ////
 ////    std::cout << fl() << std::endl;
 //
-//    r_ _ sy.. p..
+//    r_ _
 //}

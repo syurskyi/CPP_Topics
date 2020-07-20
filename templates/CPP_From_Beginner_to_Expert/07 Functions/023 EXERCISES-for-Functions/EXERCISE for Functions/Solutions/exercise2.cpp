@@ -2,20 +2,20 @@
 
 u.. s..
 
-v.. subtraction()sy.. p..
+v.. subtraction()
 
 main ()
 {
-    subtraction()sy.. p..
+    subtraction()
 }
 
 v.. subtraction()
 {
     d.. firstNumber, secondNumber, resultsy.. p..
 
-    c__ __  "Input the number to subtract from: "sy.. p..
+    c__ __  "Input the number to subtract from: "
     c__ __ firstNumbersy.. p..
-    c__ __  "Input the number to subtract with: "sy.. p..
+    c__ __  "Input the number to subtract with: "
     c__ __ secondNumbersy.. p..
 
     result _ firstNumber - secondNumbersy.. p..

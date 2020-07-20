@@ -5,28 +5,28 @@
 //
 //main
 //
-//    c.. coordinates 3 3 sy.. p..
-//    in. startingValue _ '1' sy.. p..
-//    in. player _ 2 sy.. p..
+//    c.. coordinates 3 3
+//    in. startingValue _ '1'
+//    in. player _ 2
 //
-//    ___ in. ? _ 0 sy.. p.. ? < 3 sy.. p.. ###
+//    ___ in. ? _ 0  ? < 3  ###
 //
-//        ___ in. ? _ 0 sy.. p.. ? < 3 sy.. p.. ###
+//        ___ in. ? _ 0  ? < 3  ###
 //
-//            c.. ? ? _ s.. sy.. p..
-//            s..## sy.. p..
+//            c.. ? ? _ s..
+//            s..##
 //
 //
 //
 //    w___ t..
 //
-//        ___ in. ? _ 0 sy.. p.. ? < 3 sy.. p.. ###
+//        ___ in. ? _ 0  ? < 3  ###
 //
 //            c__ __  e.. __  e..
-//            ___  in. ? _ 0 sy.. p.. ? < 3 sy.. p.. ###
+//            ___  in. ? _ 0  ? < 3  ###
 //
-//                c__.w.. 5 sy.. p..
-//                c__ __  c.. ? ? __  " "sy.. p..
+//                c__.w.. 5
+//                c__ __  c.. ? ? __  " "
 //
 //            c__ __  e.. __  e..
 //
@@ -37,28 +37,28 @@
 //
 //            c__ __  "Input x and y coordinates of a cell to put X (7 is on x:1 y:3)" __  e..
 //
-//            c__ __  "x: " sy.. p..
-//            c__ __ ? sy.. p..
+//            c__ __  "x: "
+//            c__ __ ?
 //
-//            c__ __  "y: " sy.. p..
-//            c__ __ ? sy.. p..
+//            c__ __  "y: "
+//            c__ __ ?
 //
-//            c.. y.. - 1 x.. - 1 _ 'X'sy.. p..
-//            player _ 1 sy.. p..
-//            sy.. "cls" sy.. p..
+//            c.. y.. - 1 x.. - 1 _ 'X'
+//            player _ 1
+//            sy.. "cls"
 //
 //        ____
 //
 //
 //            c__ __  "Input x and y coordinates of a cell to put O (7 is on x:1 y:3)" __  e..
 //
-//            c__ __  "x: " sy.. p..
-//            c__ __ ? sy.. p..
+//            c__ __  "x: "
+//            c__ __ ?
 //
-//            c__ __  "y: " sy.. p..
+//            c__ __  "y: "
 //            c__ __ ?.. p..
 //
-//            c.. y..-1 x..-1 _ 'O' sy.. p..
-//            player _ 2 sy.. p..
-//            sy.. "cls" sy.. p..
+//            c.. y..-1 x..-1 _ 'O'
+//            player _ 2
+//            sy.. "cls"
 

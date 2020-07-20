@@ -15,16 +15,16 @@ st. ve..<st. s..> split(c.. st. s.. &str, c.. d)
     st. ve..<st. s..> rsy.. p..
 
     st. s..::size_type start _ 0sy.. p..
-    st. s..::size_type stop _ str.find_first_of(d)sy.. p..
+    st. s..::size_type stop _ str.find_first_of(d)
     w___(stop !_ st. s..::npos)
     {
-        r.push_back(str.substr(start, stop - start))sy.. p..
+        r.push_back(str.substr(start, stop - start))
 
         start _ stop + 1sy.. p..
-        stop _ str.find_first_of(d, start)sy.. p..
+        stop _ str.find_first_of(d, start)
     }
 
-    r.push_back(str.substr(start))sy.. p..
+    r.push_back(str.substr(start))
 
     r_ rsy.. p..
 }
@@ -35,21 +35,21 @@ in. main(in. argc, c.. c.. *argv[])
     {
         st. ve..<st. ve..<st. s..__ ip_poolsy.. p..
 
-        ___(st. s.. linesy.. p.. st. getline(st. c__, line)sy.. p..)
+        ___(st. s.. linesy.. p.. st. getline(st. c__, line))
         {
-            st. ve..<st. s..> v _ split(line, '\t')sy.. p..
-            ip_pool.push_back(split(v.at(0), '.'))sy.. p..
+            st. ve..<st. s..> v _ split(line, '\t')
+            ip_pool.push_back(split(v.at(0), '.'))
         }
 
         // TODO reverse lexicographically sort
 
-        ___(st. ve..<st. ve..<st. s..> >::const_iterator ip _ ip_pool.cbegin()sy.. p.. ip !_ ip_pool.cend()sy.. p.. ++ip)
+        ___(st. ve..<st. ve..<st. s..> >::const_iterator ip _ ip_pool.cbegin() ip !_ ip_pool.cend() ++ip)
         {
-            ___(st. ve..<st. s..>::const_iterator ip_part _ ip__cbegin()sy.. p.. ip_part !_ ip__cend()sy.. p.. ++ip_part)
+            ___(st. ve..<st. s..>::const_iterator ip_part _ ip__cbegin() ip_part !_ ip__cend() ++ip_part)
             {
                 __ (ip_part !_ ip__cbegin())
                 {
-                    st. c__ __  "."sy.. p..
+                    st. c__ __  "."
 
                 }
                 st. c__ __  *ip_partsy.. p..

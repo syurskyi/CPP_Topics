@@ -9,8 +9,8 @@ main()
     //int a,b,c,d,e,f,g,h,i,j;
 
     //int var1,var2,var3,var4,var5...
-    in. x[100]sy.. p..
-    in. array[4]sy.. p.. //TYPE NAME[SIZE_NR_OF_ELEMENTS];
+    in. x[100]
+    in. array[4] //TYPE NAME[SIZE_NR_OF_ELEMENTS];
 
     array[0] _ 10sy.. p..
     array[1] _ 50sy.. p..
@@ -32,5 +32,5 @@ main()
     c__ __  "array [0] = " __  array[0] __  ", address: " __  array __  e..
 
     __ (&array[0] __ array)
-        c__ __  "thats true"sy.. p..
+        c__ __  "thats true"
 }

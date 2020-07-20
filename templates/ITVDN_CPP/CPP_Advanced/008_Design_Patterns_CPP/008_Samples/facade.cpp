@@ -37,16 +37,16 @@ HouseFacade::HouseFacade}
 
 v.. HouseFacade::goToWork()
 {
-    ac.acOff()sy.. p..
-    tv.tvOff()sy.. p..
-    alarm.alarmOn()sy.. p..
+    ac.acOff()
+    tv.tvOff()
+    alarm.alarmOn()
 }
 
 v.. HouseFacade::comeHome()
 {
-    alarm.alarmOff()sy.. p..
-    ac.acOn()sy.. p..
-    tv.tvOn()sy.. p..
+    alarm.alarmOff()
+    ac.acOn()
+    tv.tvOn()
 }
 
 v.. ClientFacade::run()
@@ -55,6 +55,6 @@ v.. ClientFacade::run()
 
     // Rather than calling 100 different on and off functions thanks to facade I only have 2
     // functions...
-    hf.goToWork()sy.. p..
-    hf.comeHome()sy.. p..
+    hf.goToWork()
+    hf.comeHome()
 }

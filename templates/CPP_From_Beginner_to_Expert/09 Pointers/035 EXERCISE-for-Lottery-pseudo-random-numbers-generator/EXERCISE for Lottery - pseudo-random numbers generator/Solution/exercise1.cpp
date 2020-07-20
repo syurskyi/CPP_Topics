@@ -3,48 +3,48 @@
 
 u.. s..
 
-in. * createArray(in.)sy.. p..
+in. * createArray(in.)
 
-v.. swapTwoValues(in.*, in.*)sy.. p..
+v.. swapTwoValues(in.*, in.*)
 
-v.. prin.ArrayValues(in.[], in.)sy.. p..
+v.. prin.ArrayValues(in.[], in.)
 
-v.. bubbleSort(in.[], in., in. _ 1)sy.. p..
-v.. selectionSort(in.[], in., in. _ 1)sy.. p..
+v.. bubbleSort(in.[], in., in. _ 1)
+v.. selectionSort(in.[], in., in. _ 1)
 
 
 in. main ()
 {
 
     in. sizeOfArraysy.. p..
-    c__ __  "Input the size of the array to sort: "sy.. p..
+    c__ __  "Input the size of the array to sort: "
     c__ __ sizeOfArraysy.. p..
 
-    in.* a _ createArray(sizeOfArray)sy.. p..
+    in.* a _ createArray(sizeOfArray)
 
-    prin.ArrayValues(a, sizeOfArray)sy.. p..
+    prin.ArrayValues(a, sizeOfArray)
 
     in. orderOfSequencesy.. p..
-    c__ __  endl __  "Sort Ascending - 1, Descending - 2: "sy.. p..
+    c__ __  endl __  "Sort Ascending - 1, Descending - 2: "
     c__ __ orderOfSequencesy.. p..
 
     __ (orderOfSequence !_ 2)
         orderOfSequence _ 1sy.. p..
 
     c.. sortChoicesy.. p..
-    c__ __  "Bubble Sort - B or b, Selection Sort - S or s: "sy.. p..
+    c__ __  "Bubble Sort - B or b, Selection Sort - S or s: "
     c__ __ sortChoicesy.. p..
 
     __ (sortChoice !_ 'S' || sortChoice !_ 's')
-        sortChoice _ 'B'sy.. p..
+        sortChoice _ 'B'
 
     __ (sortChoice __ 'B' || sortChoice __ 'b')
     {
-        bubbleSort(a, sizeOfArray, orderOfSequence)sy.. p..
+        bubbleSort(a, sizeOfArray, orderOfSequence)
     }
     ____ __ (sortChoice __ 'S' || sortChoice __ 's')
     {
-        selectionSort(a, sizeOfArray, orderOfSequence)sy.. p..
+        selectionSort(a, sizeOfArray, orderOfSequence)
     }
 
     de..[] asy.. p..
@@ -53,7 +53,7 @@ in. main ()
 
 in. * createArray(in. sizeOfArray)
 {
-    in.* newArray _ n.. in.[sizeOfArray]sy.. p..
+    in.* newArray _ n.. in.[sizeOfArray]
 
     ___ (in. i _ 0sy.. p.. i < sizeOfArraysy.. p.. ###)
     {
@@ -89,15 +89,15 @@ v.. bubbleSort(in. arrayToSort[], in. sizeOfArray, in. orderOfSequence)
         {
             __ (orderOfSequence __ 1 && arrayToSort[j] > arrayToSort[j+1])
             {
-                    swapTwoValues(arrayToSort+j, arrayToSort+j+1)sy.. p..
+                    swapTwoValues(arrayToSort+j, arrayToSort+j+1)
             }
             ____ __ (orderOfSequence __ 2 && arrayToSort[j] < arrayToSort[j+1])
             {
-                    swapTwoValues(arrayToSort+j, arrayToSort+j+1)sy.. p..
+                    swapTwoValues(arrayToSort+j, arrayToSort+j+1)
             }
         }
     }
-    prin.ArrayValues(arrayToSort, sizeOfArray)sy.. p..
+    prin.ArrayValues(arrayToSort, sizeOfArray)
 }
 
 v.. selectionSort(in. arrayToSort[], in. sizeOfArray, in. orderOfSequence)
@@ -117,8 +117,8 @@ v.. selectionSort(in. arrayToSort[], in. sizeOfArray, in. orderOfSequence)
                 limitIndex _ jsy.. p..
             }
         }
-        swapTwoValues(arrayToSort+i, arrayToSort+limitIndex)sy.. p..
+        swapTwoValues(arrayToSort+i, arrayToSort+limitIndex)
     }
-    prin.ArrayValues(arrayToSort, sizeOfArray)sy.. p..
+    prin.ArrayValues(arrayToSort, sizeOfArray)
 }
 

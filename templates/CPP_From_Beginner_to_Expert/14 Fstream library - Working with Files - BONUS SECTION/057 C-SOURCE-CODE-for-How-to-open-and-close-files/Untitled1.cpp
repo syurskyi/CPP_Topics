@@ -7,15 +7,15 @@ in. main()
 {
     fstream myFileHandlersy.. p..
 
-    myFileHandler.open("test.txt")sy.. p..
+    myFileHandler.open("test.txt")
 
     __ (myFileHandler.is_open())
     {
-        c__ __  "The file has been opened properly"sy.. p..
+        c__ __  "The file has been opened properly"
 
-        myFileHandler __  "this is a sample text"sy.. p..
+        myFileHandler __  "this is a sample text"
 
-        myFileHandler.close()sy.. p..
+        myFileHandler.close()
     }
 
     r_ 0sy.. p..

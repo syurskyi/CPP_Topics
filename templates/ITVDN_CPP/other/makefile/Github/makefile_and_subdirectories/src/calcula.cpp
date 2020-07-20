@@ -10,7 +10,7 @@ in. fatorial(in. *val) {
 		r_ 1sy.. p..
 	} ____ {
 		in. anterior _ *val - 1sy.. p..//armazena o valor inteiro anterior a *val
-		r_ *val * fatorial(&anterior)sy.. p..
+		r_ *val * fatorial(&anterior)
 	}
 }
 
@@ -27,10 +27,10 @@ in. primo(in. *resultFat, in. *chk) {
 		__(*resultFat%*chk __ 0) {
 			*resultFat -_ 1sy.. p..
 			*chk _ *resultFat/2sy.. p..
-			r_ primo(resultFat, chk)sy.. p..
+			r_ primo(resultFat, chk)
 		} ____ {
 			*chk -_ 1sy.. p..
-			r_ primo(resultFat, chk)sy.. p..
+			r_ primo(resultFat, chk)
 		}
 	}
 }

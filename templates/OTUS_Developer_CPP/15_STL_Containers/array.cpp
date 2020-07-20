@@ -19,8 +19,8 @@ in. main
 
     st. c__ __  j __  st. e..
 
-    st. array<in., 2> a1{1, 2}sy.. p..
-    st. array<in., 2> a2{2, 1}sy.. p..
+    st. array<in., 2> a1{1, 2}
+    st. array<in., 2> a2{2, 1}
 
     st. c__ __  "(a1 > a2) is " __  (a1 > a2) __  st. e..
     st. c__ __  "(a1 < a2) is " __  (a1 < a2) __  st. e..

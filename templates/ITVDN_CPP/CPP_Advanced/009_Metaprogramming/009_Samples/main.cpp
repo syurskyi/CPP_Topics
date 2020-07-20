@@ -5,31 +5,31 @@ t.. < in. N >
 st.. Factorial
 {
     st.. c.. in. result _ N * Factorial< N - 1 >::resultsy.. p..
-}sy.. p..
+}
 
 t.. <>
 st.. Factorial< 0 >
 {
     st.. c.. in. result _ 1sy.. p..
-}sy.. p..
+}
 
 // C++11
 c_t.. u.. fact( u.. N )
 {
-    r_ ( N __ 0 ) ? 1 : N * fact( N - 1 )sy.. p..
+    r_ ( N __ 0 ) ? 1 : N * fact( N - 1 )
 }
 
 // C++11
 // value-based metaprogramming
 c_t.. u.. fib( u.. N )
 {
-    r_ ( N < 2 ) ? 1 : fib( N - 2 ) + fib( N - 1 )sy.. p..
+    r_ ( N < 2 ) ? 1 : fib( N - 2 ) + fib( N - 1 )
 }
 
 // C++11 but with templates specialization
 // type-based metaprogramming
 t.. < u.. N >
-c_t.. u.. fib2 _ fib2< N - 2 > + fib2< N - 1 >sy.. p..
+c_t.. u.. fib2 _ fib2< N - 2 > + fib2< N - 1 >
 
 t.. <>
 c_t.. u.. fib2< 0 > _ 1sy.. p..
@@ -41,7 +41,7 @@ c_t.. u.. fib2< 1 > _ 1sy.. p..
 
 st.. nil
 {
-}sy.. p..
+}
 
 t.. < c_ H, c_ T _ nil >
 st.. cons
@@ -49,7 +49,7 @@ st.. cons
     t_d_ T Tailsy.. p..
     t_d_ H Headsy.. p..
     t_d_ cons< in., cons< st. s.., cons< d.., cons< fl.. > > > > TypeListsy.. p..
-}sy.. p..
+}
 
 // template < class... Args >
 // struct List;
@@ -66,7 +66,7 @@ t.. < c_ TL >
 v.. prin.()
 {
     st. c__ __  t_i_( t_n_ TL::Head ).name() __  st. e..
-    prin.< t_n_ TL::Tail >()sy.. p..
+    prin.< t_n_ TL::Tail >()
 }
 
 t.. <>

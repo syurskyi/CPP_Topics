@@ -5,7 +5,7 @@
 in. main
     st. unordered_map<st. s.., st. s..> um{{"one", "один"},
                                                     {"one", "раз"},
-                                                    {"two", "два"}}sy.. p..
+                                                    {"two", "два"}}
     ___ (c.. a.. &[en, ru]: um) {
         st. c__ __  en __  " <=> " __  ru __  st. e..
     }

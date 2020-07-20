@@ -3,15 +3,15 @@
 
 u.. s..
 
-in. * createArray(in.)sy.. p..
+in. * createArray(in.)
 
-v.. swapTwoValues(in.*, in.*)sy.. p..
+v.. swapTwoValues(in.*, in.*)
 
-v.. fillArrayWithValues(in.[], in.)sy.. p..
-v.. prin.ArrayValues(in.[], in.)sy.. p..
+v.. fillArrayWithValues(in.[], in.)
+v.. prin.ArrayValues(in.[], in.)
 
-v.. bubbleSort(in.[], in., in. _ 1)sy.. p..
-v.. selectionSort(in.[], in., in. _ 1)sy.. p..
+v.. bubbleSort(in.[], in., in. _ 1)
+v.. selectionSort(in.[], in., in. _ 1)
 
 
 in. main ()
@@ -22,7 +22,7 @@ in. main ()
 
 in. * createArray(in. sizeOfArray)
 {
-    in.* newArray _ n.. in.[sizeOfArray]sy.. p..
+    in.* newArray _ n.. in.[sizeOfArray]
 
     r_ newArraysy.. p..
 }
@@ -40,10 +40,10 @@ v.. fillArrayWithValues(in. arrayToFill[], in. sizeOfArray)
 {
     ___ (in. i _ 0sy.. p.. i < sizeOfArraysy.. p.. ###)
     {
-        c__ __  "Enter " __  i+1 __  " element: "sy.. p..
-        c__ __ arrayToFill[i]sy.. p..
+        c__ __  "Enter " __  i+1 __  " element: "
+        c__ __ arrayToFill[i]
     }
-    system("cls")sy.. p..
+    system("cls")
 }
 
 v.. prin.ArrayValues(in. arrayToPrin.[], in. sizeOfArray)
@@ -63,15 +63,15 @@ v.. bubbleSort(in. arrayToSort[], in. sizeOfArray, in. orderOfSequence)
         {
             __ (orderOfSequence __ 1 && arrayToSort[j] > arrayToSort[j+1])
             {
-                    swapTwoValues(arrayToSort+j, arrayToSort+j+1)sy.. p..
+                    swapTwoValues(arrayToSort+j, arrayToSort+j+1)
             }
             ____ __ (orderOfSequence __ 2 && arrayToSort[j] < arrayToSort[j+1])
             {
-                    swapTwoValues(arrayToSort+j, arrayToSort+j+1)sy.. p..
+                    swapTwoValues(arrayToSort+j, arrayToSort+j+1)
             }
         }
     }
-    prin.ArrayValues(arrayToSort, sizeOfArray)sy.. p..
+    prin.ArrayValues(arrayToSort, sizeOfArray)
 }
 
 v.. selectionSort(in. arrayToSort[], in. sizeOfArray, in. orderOfSequence)
@@ -91,8 +91,8 @@ v.. selectionSort(in. arrayToSort[], in. sizeOfArray, in. orderOfSequence)
                 limitIndex _ jsy.. p..
             }
         }
-        swapTwoValues(arrayToSort+i, arrayToSort+limitIndex)sy.. p..
+        swapTwoValues(arrayToSort+i, arrayToSort+limitIndex)
     }
-    prin.ArrayValues(arrayToSort, sizeOfArray)sy.. p..
+    prin.ArrayValues(arrayToSort, sizeOfArray)
 }
 

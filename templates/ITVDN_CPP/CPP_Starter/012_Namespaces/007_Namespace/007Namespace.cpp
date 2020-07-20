@@ -6,7 +6,7 @@
 n.. NamespaceA {
 	n.. NamespaceB {
 		n.. NamespaceC {
-			st.. MyStruct { }sy.. p..
+			st.. MyStruct { }
 		}
 	}
 }

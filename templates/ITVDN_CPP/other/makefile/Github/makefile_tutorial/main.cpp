@@ -6,7 +6,7 @@ u.. s..
 in. main()
 {
     message msy.. p..
-    m.prin.Message()sy.. p..
+    m.prin.Message()
     
     r_ 0sy.. p..
 }

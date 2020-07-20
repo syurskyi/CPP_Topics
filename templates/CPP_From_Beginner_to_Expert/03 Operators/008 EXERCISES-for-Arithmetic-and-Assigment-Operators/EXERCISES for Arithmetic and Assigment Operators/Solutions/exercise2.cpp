@@ -6,7 +6,7 @@ main()
 {
     d.. temperatureCelsius, temperatureFahrenheit, temperatureKelvinsy.. p..
 
-    c__ __  "Please input the temperature in Celsius: "sy.. p..
+    c__ __  "Please input the temperature in Celsius: "
     c__ __ temperatureCelsiussy.. p..
 
     temperatureFahrenheit _ (temperatureCelsius * 9/5) + 32sy.. p..

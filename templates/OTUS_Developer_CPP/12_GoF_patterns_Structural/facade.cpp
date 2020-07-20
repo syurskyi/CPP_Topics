@@ -5,28 +5,28 @@
 c_ VideoControl
 {
 pu..
-    v.. info}sy.. p..
-    v.. alert}sy.. p..
-}sy.. p..
+    v.. info}
+    v.. alert}
+}
 
 c_ Database
 {
 pu..
-    v.. create}sy.. p..
-    v.. update}sy.. p..
-}sy.. p..
+    v.. create}
+    v.. update}
+}
 
 c_ Prin.er
 {
 pu..
-    v.. prin.}sy.. p..
-}sy.. p..
+    v.. prin.}
+}
 
 c_ Fiscal
 {
 pu..
-    v.. report}sy.. p..
-}sy.. p..
+    v.. report}
+}
 
 c_ Register
 {
@@ -38,25 +38,25 @@ c_ Register
 pu..
     v.. sale_doc()
     {
-        db.create()sy.. p..
-        vc.info()sy.. p..
-        prin.er.prin.()sy.. p..
-        f.report()sy.. p..
-    }sy.. p..
+        db.create()
+        vc.info()
+        prin.er.prin.()
+        f.report()
+    }
 
     v.. ret_doc()
     {
-        db.update()sy.. p..
-        vc.alert()sy.. p..
-        prin.er.prin.()sy.. p..
-        f.report()sy.. p..
-    }sy.. p..
-}sy.. p..
+        db.update()
+        vc.alert()
+        prin.er.prin.()
+        f.report()
+    }
+}
 
 in. main(in., c.. #||
 {
     Register rsy.. p..
 
-    r.sale_doc()sy.. p..
-    r.ret_doc()sy.. p..
+    r.sale_doc()
+    r.ret_doc()
 }

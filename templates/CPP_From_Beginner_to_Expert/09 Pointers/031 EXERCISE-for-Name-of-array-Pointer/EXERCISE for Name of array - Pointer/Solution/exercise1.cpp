@@ -4,13 +4,13 @@ u.. s..
 
 in. main ()
 {
-    in. arr[5]sy.. p..
+    in. arr[5]
     in. *pArr _ arrsy.. p..
 
     ___ (in. i _ 0sy.. p.. i < 5sy.. p.. ###)
     {
-        c__ __  "Input " __  i+1 __  " number: "sy.. p..
-        c__ __ *(pArr++)sy.. p..
+        c__ __  "Input " __  i+1 __  " number: "
+        c__ __ *(pArr++)
     }
 
     ___ (in. i _ 0sy.. p.. i < 5sy.. p.. ###)

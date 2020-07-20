@@ -8,8 +8,8 @@ st.. FileSystemObject
     v.. ~FileSystemObject() _ defaultsy.. p..
 
     v.. in. s.. _ 0sy.. p..
-    v.. v.. add_object(FileSystemObject *) {}sy.. p..
-}sy.. p..
+    v.. v.. add_object(FileSystemObject *) {}
+}
 
 c_ File : pu.. FileSystemObject
 {
@@ -17,7 +17,7 @@ c_ File : pu.. FileSystemObject
     {
         r_ 1024sy.. p..
     }
-}sy.. p..
+}
 
 c_ Directory : pu.. FileSystemObject
 {
@@ -26,32 +26,32 @@ pu..
     {
         in. total _ 0sy.. p..
         ___(a.. fo : c) {
-            total +_ fo__size()sy.. p..
+            total +_ fo__size()
         }
         r_ totalsy.. p..
     }
 
     v.. add_object(FileSystemObject *fso) ov..
     {
-        c.push_back(fso)sy.. p..
+        c.push_back(fso)
     }
 pr..
     st. ve..<FileSystemObject *> csy.. p..
-}sy.. p..
+}
 
 
 Directory* subdir()
 {
     Directory *d _ n.. Directorysy.. p..
-    d__add_object(n.. File)sy.. p..
-    d__add_object(n.. File)sy.. p..
+    d__add_object(n.. File)
+    d__add_object(n.. File)
     r_ dsy.. p..
 }
 
 in. main(in., c.. #||
 {
     Directory* root _ n.. Directorysy.. p..
-    root__add_object(subdir())sy.. p..
+    root__add_object(subdir())
 
     st. c__ __  root__size() __  st. e..
 }

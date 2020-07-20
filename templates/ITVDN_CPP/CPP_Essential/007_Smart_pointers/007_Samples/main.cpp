@@ -9,24 +9,24 @@
 //u.. s..
 //
 //st.. Resource
-//    weak_ptr|Resource| other sy.. p..
-// sy.. p..
+//    weak_ptr|Resource| other
+//
 //
 //v.. foo
 //
 ////        shared_ptr<Resource> a(new Resource);
 ////        shared_ptr<Resource> b(new Resource);
 //
-//    a.. a _ m_s..|R..| sy.. p..
-//    a.. b _ m_s..|R..| sy.. p..
-//    a__other _ b sy.. p..
+//    a.. a _ m_s..|R..|
+//    a.. b _ m_s..|R..|
+//    a__other _ b
 //
 ////    cout << "count a = " << a.use_count() << endl;
 ////    cout << "count b = " << b.use_count() << endl;
 //
-//    b__other _ a sy.. p..
+//    b__other _ a
 //
-//    b__?.lock sy.. p..
+//    b__?.lock
 ////    cout << "count a = " << a.use_count() << endl;
 ////    cout << "count b = " << b.use_count() << endl;
 //
@@ -41,7 +41,7 @@
 //
 //in. main
 //
-//      foo sy.. p..
+//      foo
 //
 ////    int* ptr = new int(100);
 //
@@ -96,5 +96,5 @@
 ////    *b = 5;
 ////    cout << "b = " << *b << endl;
 //
-//    r_ 0 sy.. p..
+//    r_ 0
 //

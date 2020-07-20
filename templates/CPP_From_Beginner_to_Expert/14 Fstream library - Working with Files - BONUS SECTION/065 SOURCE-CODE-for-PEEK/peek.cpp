@@ -4,7 +4,7 @@
 u.. s..
 in. main ()
 {
-    c.. c _ c__.peek()sy.. p..
+    c.. c _ c__.peek()
 
 
     __ (c > '0' && c < '9')

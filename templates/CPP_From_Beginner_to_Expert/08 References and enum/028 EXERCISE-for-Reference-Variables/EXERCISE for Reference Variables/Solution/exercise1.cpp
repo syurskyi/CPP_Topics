@@ -5,7 +5,7 @@ u.. s..
 in. main ()
 {
 
-    s.. name _ "Cassandra"sy.. p..
+    s.. name _ "Cassandra"
     s.. &cassie _ namesy.. p..
     s.. &cassey _ namesy.. p..
     s.. &sandra _ namesy.. p..

@@ -7,7 +7,7 @@ u.. s..
 
 in. main()
 {
-    showHelp()sy.. p..
+    showHelp()
     c__ __  a __  e..
     r_ 0sy.. p..
 }

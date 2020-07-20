@@ -4,7 +4,7 @@
 ? |i..
 ? ve..
 
-c_ PgConnection { }sy.. p..
+c_ PgConnection { }
 
 c_ PgConnectionPool {
 pu..
@@ -25,8 +25,8 @@ pu..
             }
         }
 
-        a.. block _ PgConnectionBlock{n.. PgConnection, t..}sy.. p..
-        pool.push_back(block)sy.. p..
+        a.. block _ PgConnectionBlock{n.. PgConnection, t..}
+        pool.push_back(block)
 
         r_ block.connectionsy.. p..
     }
@@ -45,20 +45,20 @@ pr..
     st.. PgConnectionBlock {
         PgConnection* connectionsy.. p..
         bo.. busysy.. p..
-    }sy.. p..
+    }
 
     st. ve..<PgConnectionBlock> poolsy.. p..
-}sy.. p..
+}
 
 in. main(in., c..* [])
 {
     PgConnectionPool poolsy.. p..
 
     a.. report_conn _ pool.g..
-    pool.put(report_conn)sy.. p.. // swap 58 & 60
+    pool.put(report_conn) // swap 58 & 60
 
     a.. admin_conn _ pool.g..
-    pool.put(admin_conn)sy.. p..
+    pool.put(admin_conn)
 
     r_ 0sy.. p..
 }

@@ -4,12 +4,12 @@ u.. s..
 
 in. main()
 {
-    in. a[3]sy.. p..
+    in. a[3]
     a[0] _ 0sy.. p..
     a[1] _ 20sy.. p..
     a[2] _ 40sy.. p..
     sh.. in. zmsy.. p..
-    in. * c.. p _ *?[0]sy.. p..
+    in. * c.. p _ *?[0]
 
     c__ __  p __  e..
     c__ __  a __  e..
@@ -40,7 +40,7 @@ in. main()
 
    // cout << a++ << endl; // a++  a = a + 1
 
-    in. * p2 _ *?[0]sy.. p..
+    in. * p2 _ *?[0]
 
     c__ __  *p2 __  e..  // 0
     c__ __  ++*p2 __  e.. //1

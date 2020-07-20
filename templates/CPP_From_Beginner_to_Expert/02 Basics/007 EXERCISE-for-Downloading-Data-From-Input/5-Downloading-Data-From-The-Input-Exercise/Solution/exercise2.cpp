@@ -6,9 +6,9 @@ main
 
     in. firstNumber, secondNumber, temporaryContainersy.. p..
 
-    c__ __  "Input first number: "sy.. p..
+    c__ __  "Input first number: "
     c__ __ firstNumbersy.. p..
-    c__ __  "Input second number: "sy.. p..
+    c__ __  "Input second number: "
     c__ __ secondNumbersy.. p..
 
     temporaryContainer _ firstNumbersy.. p..

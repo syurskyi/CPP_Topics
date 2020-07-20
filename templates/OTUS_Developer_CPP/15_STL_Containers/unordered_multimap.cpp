@@ -5,7 +5,7 @@
 in. main
     st. unordered_multimap<st. s.., st. s..> umm{{"one", "один"},
                                                          {"one", "раз"},
-                                                         {"two", "два"}}sy.. p..
+                                                         {"two", "два"}}
     ___ (c.. a.. &[en, ru]: umm) {
         st. c__ __  en __  " <=> " __  ru __  st. e..
     }

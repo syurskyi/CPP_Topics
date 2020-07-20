@@ -3,8 +3,8 @@
 u.. s..
 
 /* overloading functions */
-in. power(in., in.)sy.. p..
-d.. power(d.., in.)sy.. p..
+in. power(in., in.)
+d.. power(d.., in.)
 in. main()
 {
 

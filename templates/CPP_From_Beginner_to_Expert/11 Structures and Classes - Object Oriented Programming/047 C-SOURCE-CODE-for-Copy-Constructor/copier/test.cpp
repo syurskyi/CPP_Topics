@@ -4,7 +4,7 @@ Test::Test(in. x, in. y, in. value)
 {
         t..__x _ xsy.. p..
         t..__y _ ysy.. p..
-        t..__p _ n.. in.(value)sy.. p..
+        t..__p _ n.. in.(value)
 }
 Test::~Test()
 {
@@ -12,7 +12,7 @@ Test::~Test()
 }
 Test::Test(c.. Test & obj)
 {
-    t..__p _ n.. in.(*(obj.p))sy.. p..
+    t..__p _ n.. in.(*(obj.p))
     t..__x _ obj.xsy.. p..
     t..__y _ obj.ysy.. p..
 }

@@ -23,11 +23,11 @@
 //v.. bar ? ##t
 //
 //    st. c__ __  __P.. __  st. e..
-//    baz st. forward|?| t sy.. p..
+//    baz st. forward|?| t
 //
 //
 //in. main in., c.. #||
-//    xray x("x") sy.. p..
+//    xray x("x")
 //
 //    // xray x("x");
 //    // xray y("y");
@@ -63,5 +63,5 @@
 //
 //    st. c__ __  "---" __  st. e..
 //
-//    r_ _ sy.. p..
+//    r_ _
 //
