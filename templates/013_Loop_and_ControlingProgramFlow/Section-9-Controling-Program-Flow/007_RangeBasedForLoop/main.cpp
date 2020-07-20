@@ -10,37 +10,36 @@
 //
 //    in. scores|| 10, 20, 30
 //
-//    ___ (a..  score| ?
+//    ___ a..  ?| ?
 //        c.. __ ? __ e..
 //
-////    vector<double> temperatures {87.9, 77.9, 80.0, 72.5};
-////    double average_temp {};
-////    double total {};
-////
-////    for (auto temp: temperatures)
-////        total += temp;
-////
-////    if (temperatures.size() != 0)
-////        average_temp = total / temperatures.size();
-////
-////    cout << fixed << setprecision(1);
-////    cout << "Average temperature is " << average_temp << endl;
+//    ve..|do.. temperatures {87.9, 77.9, 80.0, 72.5
+//    do.. average_temp ||
+//    do.. total ||
 //
-////    for (auto val: {1,2,3,4,5})
-////        cout << val << endl;
+//    ___ au.. temp: te..
+//        to.. += ?
 //
-////    for (auto c: "This is a test")
-////        if (c != ' ')
-////            cout << c;
+//    __ te__.s.. !_ 0
+//        a.. _ to.. / te__.s..
 //
-////    for (auto c: "This is a test")
-////       if (c == ' ')
-////           cout << "\t";
-////        else
-////            cout << c;
+//    c.. __ fixed __ setprecision 1
+//    c.. __ "Average temperature is " __ a.. __ e..
+//
+//    ___ a.. val 1,2,3,4,5
+//        c.. __ ? __ e..
+//
+//    ___ a.. c "This is a test"
+//        __ ? !_ ' '
+//            c.. __ ?
+//
+//    ___ a.. c "This is a test"
+//       __ ? __ ' '
+//           c.. __ "\t"
+//        ____
+//            c.. __ ?
 //
 //
 //    c.. __  e..
 //    r_ _
-//
-//
+
