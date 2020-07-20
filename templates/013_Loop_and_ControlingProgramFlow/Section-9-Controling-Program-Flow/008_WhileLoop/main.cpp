@@ -7,7 +7,7 @@
 //in. main
 //
 //    in. num
-//    c.. __ "Enter a positive integer - start the countdown :";
+//    c.. __ "Enter a positive integer - start the countdown :"
 //    ci. __ ?
 //
 //    w__ ? > 0
@@ -16,41 +16,41 @@
 //
 //    c.. __ "Blastoff!" __ e..
 //
-////    int num{};
-////    cout << "Enter a postive integer to count up to: ";
-////    cin >> num;
-////
-////    int i {1};
-////    while (num >= i) {
-////        cout << i << endl;
-////        i++;
-////    }
+//    in. num||
+//    c.. __ "Enter a postive integer to count up to: "
+//    ci. __ ?
 //
-////    int number {};
-////
-////    cout << "Enter an integer less than 100: ";
-////    cin >> number;
-////
-////    while (number >= 100) {  // !(number < 100)
-////        cout << "Enter an integer less than 100: ";
-////        cin >> number;
-////    }
-////
-////    cout << "Thanks" << endl;
+//    in. i 1
+//    w___ n.. >_ ?
+//        c.. __ ? __ e..
+//        ?##
 //
-////    bool done {false};
-////    int number {0};
-////
-////    while (!done) {
-////           cout << "Enter an integer between 1 and 5: ";
-////           cin >> number;
-////           if (number <=1 || number >=5)
-////               cout << "Out of range, try again" << endl;
-////           else {
-////               cout << "Thanks!" << endl;
-////               done = true;
-////            }
-////       }
+//
+//    in. number ||
+//
+//    c.. __ "Enter an integer less than 100: "
+//    ci. __ ?
+//
+//    w___ ? >_ 100   // !(number < 100)
+//        c.. __ "Enter an integer less than 100: "
+//        ci. __ n..
+//
+//
+//    c.. __ "Thanks" __ e..
+//
+//    bo.. done |f..
+//    in. number 0
+//
+//    w___ !d..
+//           c.. __ "Enter an integer between 1 and 5: "
+//           ci. __ ?
+//           __ ? <_1 __ ? >_5   // Logic operator or
+//               c.. __ "Out of range, try again" __ e..
+//           ____
+//               c.. __ "Thanks!" __ e..
+//               d.. _ tr..
+//
+//
 //
 //    c..  __ e..
 //    r_ _
