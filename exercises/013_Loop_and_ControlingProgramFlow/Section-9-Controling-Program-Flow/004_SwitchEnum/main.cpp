@@ -1,30 +1,30 @@
-//// Section 9
-//// Switch with enumeration
-//
-//? ios..
-//
-//u.. s..
-//
-//in. main
-//
-//    en.. Direction
-//        left, right, up, down
-//
-//
-//    ? heading l..
-//
-//    sw.. ?
-//        ca.. l..
-//            c.. __ "Going left" __ e..
-//            b..
-//        ca.. r..
-//            c.. __ "Going right" __ e.. // I used going left in the video by mistake
-//            b..
-//        def..
-//            c.. __ "OK" __ e..
-//
-//
-//    c.. __  e..
-//    r_ _
-//
-//
+// Section 9
+// Switch with enumeration
+
+#include <iostream>
+
+using namespace std;
+
+int main() {
+
+    enum Direction {
+        left, right, up, down
+    }
+
+    Direction heading{left};
+
+    switch (heading) {
+        case left:
+            cout << "Going left" << endl;
+            break;
+        case right:
+            cout << "Going right" << endl; // I used going left in the video by mistake
+            break;
+        default:
+            cout << "OK" << endl;
+    }
+    cout << endl;
+    return 0;
+}
+
+

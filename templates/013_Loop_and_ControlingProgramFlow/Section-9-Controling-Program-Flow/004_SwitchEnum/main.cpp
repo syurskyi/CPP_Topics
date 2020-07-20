@@ -14,13 +14,13 @@
 //    ? heading l..
 //
 //    sw.. ?
-//        ca.. l..
+//        c.. l..
 //            c.. __ "Going left" __ e..
 //            b..
-//        ca.. r..
+//        c.. r..
 //            c.. __ "Going right" __ e.. // I used going left in the video by mistake
 //            b..
-//        def..
+//        d..
 //            c.. __ "OK" __ e..
 //
 //

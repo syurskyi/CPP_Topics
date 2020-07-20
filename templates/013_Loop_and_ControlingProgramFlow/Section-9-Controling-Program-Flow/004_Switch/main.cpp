@@ -40,16 +40,16 @@
 //            ch.. confirm
 //            c.. __ "Are you sure (Y/N)? "
 //            ci. __ ?
-//            __ ? __ 'y' __ ? __ 'Y'    // Logic operation  or
+//            __ ? __ 'y' __ ? __ 'Y'        // Logic operation  or
 //                c.. __ "OK, I guess you didn't study..." __ e..
-//            ____ __ ? __ 'n' __ ? __ 'N'
+//            ____ __ ? __ 'n' __ ? __ 'N'   // Logic operation  or
 //                c.. __ "Good- go study!" __ e..
 //            ____
 //                c.. __ "Illegal choice" __ e..
 //            b..
 //
 //
-//        def..
+//        d...
 //            c.. __ "Sorry, not a valid grade" __ e..
 //
 //
