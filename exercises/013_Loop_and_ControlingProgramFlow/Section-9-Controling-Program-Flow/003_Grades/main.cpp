@@ -11,7 +11,7 @@
 
 using namespace std;
 
-int main{
+int main(){
 
         int score{};
         cout << "Enter your score on the exam (0-100) : ";
@@ -30,7 +30,7 @@ int main{
             else
                 letter_grade = 'F';
 
-            cout << "Your grade is : " << lettet_grade << endl;
+            cout << "Your grade is : " << letter_grade << endl;
             if (letter_grade == 'F')
                 cout << "Sorry, you must repeat the class" << endl;
             else
