@@ -8,23 +8,23 @@
 //
 //in. main
 //
-//    in. num_items
+//    in. num_items||
 //
 //    c.. __ "How many data items do you have? "
 //    ci. __ ?
 //
-//    ve..|in.| data
+//    ve.. in. data
 //
-//    ___ (in. i|1 ?<_ ? ###
-//        in. data_item
-//        c.. __ "Enter data item " __ i __ ": "
+//    ___ in. i 1 ?<_ ? ##?
+//        in. data_item||
+//        c.. __ "Enter data item " __ ? __ ": "
 //        ci. __ ?
 //        ?.p_b.. ?
 //
 //
 //    c.. __ "\nDisplaying 011_Histogram" __ e..
-//    ___ a.. val: d..
-//        ___ in. i 1  ?<_? ###
+//    ___ a.. val d..
+//        ___ in. i 1  ?<_? ##?
 //            __ ? % 5 __ 0
 //                c.. __ "*"
 //            ____

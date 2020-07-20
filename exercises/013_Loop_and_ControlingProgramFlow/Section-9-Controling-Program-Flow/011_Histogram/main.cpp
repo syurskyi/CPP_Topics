@@ -1,39 +1,40 @@
-//// Section 9
-//// Nested Loops - Histogram
-//
-//? ios..
-//? ve..
-//
-//u.. s..
-//
-//in. main
-//
-//    in. num_items
-//
-//    c.. __ "How many data items do you have? "
-//    ci. __ ?
-//
-//    ve..|in.| data
-//
-//    ___ (in. i|1 ?<_ ? ###
-//        in. data_item
-//        c.. __ "Enter data item " __ i __ ": "
-//        ci. __ ?
-//        ?.p_b.. ?
-//
-//
-//    c.. __ "\nDisplaying 011_Histogram" __ e..
-//    ___ a.. val: d..
-//        ___ in. i 1  ?<_? ###
-//            __ ? % 5 __ 0
-//                c.. __ "*"
-//            ____
-//                c.. __ "-"
-//        }
-//        c.. __ e..
-//
-//
-//    c.. __  e..
-//    r_ _
-//
-//
+// Section 9
+// Nested Loops - Histogram
+
+#include <iostream>
+#include <vector>
+
+using namespace std;
+
+int main(){
+
+    int num_items{};
+
+    cout << "How many data items do you have? ";
+    cin >> num_items;
+
+    vector<int> data;
+
+    for (int i{1}; i<=num_items; ++i) {
+        int data_item{};
+        cout << "Enter data item " << i << ": ";
+        cin >> data_item;
+        data.push_back(data_item);
+    }
+
+    cout << "\nDisplaying 011_Histogram" << endl;
+    for (auto val: data){
+        for (int i{1};  i<=val; ++i) {
+            if (i % 5 == 0)
+                cout << "*";
+            else
+                cout << "-";
+        }
+        cout << endl;
+    }
+
+    cout <<  endl;
+    return 0;
+}
+
+
