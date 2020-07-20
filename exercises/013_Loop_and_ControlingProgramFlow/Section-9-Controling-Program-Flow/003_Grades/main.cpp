@@ -1,47 +1,47 @@
-//// Section 9
-//// Grades
-//
-///*
-//    Calculate a sudent's grade on an exam given their score
-//    and tell them if they passed the course
-//
-//*/
-//
-//? ios..
-//
-//u.. s..
-//
-//in. main
-//
-//    in. score
-//    c.. __ "Enter your score on the exam (0-100) : "
-//    ci. __ score;
-//    ch.. letter_grade
-//
-//    __ s.. >_ 0 __ s.. <_100)
-//        __ (s.. >_ 90
-//            l... _ 'A'
-//        ____ __ (s.. >_ 80
-//            l... _ 'B'
-//        ____ __ (s.. >_ 70
-//            l... _ 'C'
-//        ____ __ (s.. >_60
-//            l... _ 'D'
-//        ____
-//            l... _ 'F'
-//
-//        c.. __ "Your grade is : " __ l... __ e..
-//        __ (l... __ 'F')
-//            c.. __ "Sorry, you must repeat the class" __ e..
-//        ____
-//            c.. __ "Congrats!" __ e..
-//
-//     ____
-//        c.. __ "Sorry, " __ s.. __ " is not in range" __ e..
-//
-//
-//
-//    c..  __ e..
-//    r_ _
-//
-//
+// Section 9
+// Grades
+
+/*
+    Calculate a sudent's grade on an exam given their score
+    and tell them if they passed the course
+
+*/
+
+#include <iostream>
+
+using namespace std;
+
+int main{
+
+        int score{};
+        cout << "Enter your score on the exam (0-100) : ";
+        cin >> score;
+        char letter_grade{};
+
+        if (score >= 0 && score <=100) {
+            if (score >= 90)
+                letter_grade = 'A';
+            else if (score >= 80)
+                letter_grade = 'B';
+            else if (score >= 70)
+                letter_grade = 'C';
+            else if (score >= 60)
+                letter_grade = 'D';
+            else
+                letter_grade = 'F';
+
+            cout << "Your grade is : " << lettet_grade << endl;
+            if (letter_grade == 'F')
+                cout << "Sorry, you must repeat the class" << endl;
+            else
+                cout << "Congrats!" << endl;
+
+        } else {
+            cout << "Sorry, " << score << " is not in range" << endl;
+        }
+        cout << endl;
+        return 0;
+}
+
+
+
