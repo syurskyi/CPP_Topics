@@ -18,13 +18,13 @@
 //        c.. __ "\nEnter your selection: "
 //        ci. __ ?
 //
-//        __ (selection __ '1')
+//        __ ? __ '1'
 //            c.. __ "You chose 1 - doing this" __ e..
-//        ____ __ (selection __ '2')
+//        ____ __ ? __ '2'
 //             c.. __ "You chose 2 - doing that" __ e..
-//        ____ __ (selection __ '3')
+//        ____ __ ? __ '3'
 //            c.. __ "You chose 3 - doing something else" __ e..
-//        ____ __ (selection __ 'Q' || selection __ 'q')
+//        ____ __ ? __ 'Q' ## ? __ 'q'    // Logic operation or
 //            c.. __ "Goodbye..." __ e..
 //        ____
 //            c.. __ "Unknown option -- try again..." __ e..

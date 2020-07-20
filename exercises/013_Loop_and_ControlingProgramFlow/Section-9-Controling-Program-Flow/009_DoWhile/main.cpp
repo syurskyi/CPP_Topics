@@ -1,37 +1,38 @@
-//// Section 9
-//// Do-while
-//// Simple Menu Example
-//? ios..
-//
-//
-//u.. s..
-//
-//in. main
-//
-//    ch.. selection
-//    __
-//        c.. __ "\n---------------------" __ e..
-//        c.. __ "1. Do this" __ e..
-//        c.. __ "2. Do that" __ e..
-//        c.. __ "3. Do something else" __ e..
-//        c.. __ "Q. Quit" __ e..
-//        c.. __ "\nEnter your selection: "
-//        ci. __ ?
-//
-//        __ (selection __ '1')
-//            c.. __ "You chose 1 - doing this" __ e..
-//        ____ __ (selection __ '2')
-//             c.. __ "You chose 2 - doing that" __ e..
-//        ____ __ (selection __ '3')
-//            c.. __ "You chose 3 - doing something else" __ e..
-//        ____ __ (selection __ 'Q' || selection __ 'q')
-//            c.. __ "Goodbye..." __ e..
-//        ____
-//            c.. __ "Unknown option -- try again..." __ e..
-//
-//     w__  ? !_ 'q' __ ? !_ 'Q'
-//
-//    c..  __ e..
-//    r_ _
-//
-//
+// Section 9
+// Do-while
+// Simple Menu Example
+#include <iostream>
+
+
+using namespace std;
+
+int main() {
+
+    char selection;
+    do {
+        cout << "\n---------------------" << endl;
+        cout << "1. Do this" << endl;
+        cout << "2. Do that" << endl;
+        cout << "3. Do something else" << endl;
+        cout << "Q. Quit" << endl;
+        cout << "\nEnter your selection: ";
+        cin >> selection;
+
+        if (selection == '1')
+        cout << "You chose 1 - doing this" << endl;
+        else if (selection == '2')
+        cout << "You chose 2 - doing that" << endl;
+        else if (selection == '3')
+        cout << "You chose 3 - doing something else" << endl;
+        else if (selection == 'Q' || selection == 'q')
+            cout << "Goodbye..." << endl;
+        else
+            cout << "Unknown option -- try again..." << endl;
+
+    } while (selection != 'q' || selection != 'Q');
+
+    cout << endl;
+    return 0;
+}
+
+
