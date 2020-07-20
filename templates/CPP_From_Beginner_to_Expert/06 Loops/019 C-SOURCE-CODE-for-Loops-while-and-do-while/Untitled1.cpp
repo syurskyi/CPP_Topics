@@ -18,9 +18,9 @@
 //      c__ __ "lalala"
 ///*
 //    do
-//    {
+//
 //        cout << "lala";
 //
-//    } while(i);
+//     while(i);
 //*/
 //

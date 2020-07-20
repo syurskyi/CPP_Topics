@@ -4,14 +4,14 @@
 //
 //main
 //
-//    in. maximumNumbers y.. p..
+//    in. maximumNumber
 //    in. sumEven _ 0
 //    in. temp
 //
 //    c__ __  "Input maximum number you want to check: "
 //    c__ __ ?
 //
-//    ___ in. ? _ 1  ? <_ m..  ###
+//    ___ in. ? _ 1  ? <_ m..  ?##
 //
 //        __ ? % 2 __ 1
 //            c___

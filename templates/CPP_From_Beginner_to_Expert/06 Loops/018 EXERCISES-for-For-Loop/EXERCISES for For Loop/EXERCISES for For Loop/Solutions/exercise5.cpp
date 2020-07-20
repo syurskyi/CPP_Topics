@@ -9,7 +9,7 @@
 //    c__ __  "How many asterisks would you like to draw: "
 //    c__ __ numberOfAsterisks
 //
-//    ___ (in. i _ 1  ? <_ ?  ###
+//    ___ (in. ? _ 1  ? <_ ?  ?##
 //
 //        c__ __  "*"
 //        __ ? % 5 __ 0

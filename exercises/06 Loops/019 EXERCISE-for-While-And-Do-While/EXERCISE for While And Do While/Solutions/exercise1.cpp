@@ -5,22 +5,22 @@
 //
 //main
 //
-//     in. pin, checkPin sy.. p..
+//     in. pin, checkPin
 //
-//     c__ __  "Input your pin number for the first time: " sy.. p..
-//     c__ __ pin sy.. p..
+//     c__ __  "Input your pin number for the first time: "
+//     c__ __ pin
 //
-//     sy.. "cls" sy.. p..
+//     sy.. "cls"
 //
 //     __
 //
-//         c__ __  "Input your pin: " sy.. p..
-//         c__ __ checkPin sy.. p..
+//         c__ __  "Input your pin: "
+//         c__ __ checkPin
 //
-//         sy.. "cls" sy.. p..
+//         sy.. "cls"
 //
-//      w___ ? !_ ? sy.. p..
+//      w___ ? !_ ?
 //
-//     c__ __  "Correct pin, welcome !" sy.. p..
+//     c__ __  "Correct pin, welcome !"
 //
 //

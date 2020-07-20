@@ -5,16 +5,16 @@
 //
 //main
 //
-//    c.. coordinates 3 3 sy.. p..
-//    in. startingValue _ '1' sy.. p..
-//    in. player _ 2 sy.. p..
-//    bo.. moveAccepted sy.. p..
+//    c.. coordinates 3 3
+//    in. startingValue _ '1'
+//    in. player _ 2
+//    bo.. moveAccepted
 //
-//    ___ in. ? _ 0 sy.. p.. ? < 3 sy.. p.. ###
+//    ___ in. ? _ 0  ? < 3 ?##
 //
-//        ___ in. ? _ 0 sy.. p.. ? < 3 sy.. p.. j++
+//        ___ in. ? _ 0  ? < 3  ?##
 //
-//            c.. ? ? _ s.. sy.. p..
+//            c.. ? ? _ s..
 //            s..## .. p..
 //
 //
@@ -22,18 +22,18 @@
 //    w___  t..
 //
 //
-//        in. xCoordinate, yCoordinate sy.. p..
+//        in. xCoordinate, yCoordinate
 //
 //
 //            __
 //
-//                ___ in. ? _ 0 sy.. p.. ? < 3 .. p.. ###
+//                ___ in. ? _ 0  ? < 3 .. p.. ?##
 //
 //                    c__ __  e.. __  e..
-//                    ___ in. ? _ 0 sy.. p.. ? < 3 sy.. p.. ##
+//                    ___ in. ? _ 0  ? < 3  ?##
 //
-//                        c__.wi.. 5 sy.. p..
-//                        c__ __  c.. ? ? __  " "sy.. p..
+//                        c__.wi.. 5
+//                        c__ __  c.. ? ? __  " "
 //
 //                    c__ __  e.. __  e..
 //
@@ -49,43 +49,39 @@
 //
 //                __
 //
-//                    c__ __  "x: " sy.. p..
+//                    c__ __  "x: "
 //                    c__ __ ? y.. p..
 //
-//                 w___ ? <_ 0 || ? > 3) sy.. p..
+//                 w___ ? <_ 0 || ? > 3)
 //
 //
 //                __
 //
-//                    c__ __  "y: "sy.. p..
-//                    c__ __ ? sy.. p..
+//                    c__ __  "y: "
+//                    c__ __ ?
 //
-//                 w___ ? <_ 0 || ? > 3 sy.. p..
+//                 w___ ? <_ 0 || ? > 3
 //
 //                __  c.. y..-1 x..-1 !_ 'X' __ c.. y..-1] ..-1_ 'O'
 //
 //                    __  p.. % 2 __ 0
 //
-//                        c.. y..-1 x..-1 _ 'X'sy.. p..
-//                        p.. _ 1 sy.. p..
+//                        c.. y..-1 x..-1 _ 'X'
+//                        p.. _ 1
 //
 //                    ____
 //
-//                        c.. y..-1x..-1 _ 'O'sy.. p..
-//                        p.. _ 2 sy.. p..
+//                        c.. y..-1x..-1 _ 'O'
+//                        p.. _ 2
 //
-//                    moveAccepted _ tr.. sy.. p..
-//                    sy.. "cls" sy.. p..
+//                    moveAccepted _ tr..
+//                    sy.. "cls"
 //
 //                ____
 //
-//                    moveAccepted _ fa.. sy.. p..
-//                    sy.. "cls" sy.. p..
+//                    moveAccepted _ fa..
+//                    sy.. "cls"
 //
-//             w___(m.. __ fa.. sy.. p..
+//             w___(m.. __ fa..
 //
-//
-//
-//
-//
-//
+

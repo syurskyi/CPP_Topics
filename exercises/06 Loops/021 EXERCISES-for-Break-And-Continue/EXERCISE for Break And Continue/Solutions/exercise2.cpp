@@ -5,35 +5,35 @@
 //
 //main
 //
-//    in. chosenNumbersSum _ 0 sy.. p..
-//    c.. choice sy.. p..
+//    in. chosenNumbersSum _ 0
+//    c.. choice
 //
-//    ___ in. ? _ 1 sy.. p.. sy.. p.. ###
+//    ___ in. ? _ 1   ?##
 //
 //
 //        c__ __  "The current sum is: " __  c.. __  e.. __  e..
 //        c__ __  "Do you want to add " __  ? __  " ?" __  e..
 //
-//        c__ __  "Y - yes / N - no / Anything else - end : " sy.. p..
-//        c__ __ ch.. sy.. p..
+//        c__ __  "Y - yes / N - no / Anything else - end : "
+//        c__ __ ch..
 //
-//        __ (? __ 'Y' || ? __ 'y')
+//        __ (? __ 'Y' ## ? __ 'y')  logic operation or
 //
-//            c.. +_ ? sy.. p..
+//            c.. +_ ?
 //
-//        ____ __ ? __ 'N' || ? __ 'n'
+//        ____ __ ? __ 'N' ## ? __ 'n'  logic operation or
 //
-//            sy.. "cls" sy.. p..
+//            sy.. "cls"
 //            c___
 //
 //        ____
 //
-//            sy.. ("cls") sy.. p..
+//            sy.. ("cls")
 //            b..
 //
-//        sy.. ("cls") sy.. p..
+//        sy.. ("cls")
 //
 //
-//    c__ __  "Good bye !" sy.. p..
+//    c__ __  "Good bye !"
 //
 //

@@ -6,17 +6,17 @@
 //
 //    in. numberOfAsteriskssy.. p..
 //
-//    c__ __  "How many asterisks would you like to draw: "sy.. p..
-//    c__ __ numberOfAsterisks sy.. p..
+//    c__ __  "How many asterisks would you like to draw: "
+//    c__ __ numberOfAsterisks
 //
-//    ___ (in. i _ 1 sy.. p.. ? <_ ? sy.. p.. ###
+//    ___ (in. ? _ 1  ? <_ ?  ?##
 //
-//        c__ __  "*" sy.. p..
+//        c__ __  "*"
 //        __ ? % 5 __ 0
 //
 //            c__ __   e..
 //
 //
-//sy.. p..
+//
 //
 //
