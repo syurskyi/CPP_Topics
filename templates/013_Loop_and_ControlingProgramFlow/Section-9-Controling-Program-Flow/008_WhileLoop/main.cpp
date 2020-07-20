@@ -41,7 +41,7 @@
 //    bo.. done |f..
 //    in. number 0
 //
-//    w___ !d..
+//    w___ #d..
 //           c.. __ "Enter an integer between 1 and 5: "
 //           ci. __ ?
 //           __ ? <_1 __ ? >_5   // Logic operator or
