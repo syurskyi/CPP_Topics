@@ -18,13 +18,13 @@
 ////
 ////    cout << num << " is " << ( (num %2 ==0) ? "even" : "odd"  ) << endl;
 //
-//    in. num1{}, num2{};
+//    in. num1|| num2||
 //
 //    c.. __ "Enter two integers separated by a space: "
 //    ci. __ ? __ ?
 //
-//    __ (num1 !_ num2)
-//        c.. __ "Largest: " __ ( (? > n?) | ? | ? ) __ e..
+//    __ (? !_ ?)
+//        c.. __ "Largest: " __ ( (? > ?) | ? | ? ) __ e..
 //        c.. __ "Smallest: " __ ( (? < ?) | ? | ?) __ e..
 //
 //     ____
