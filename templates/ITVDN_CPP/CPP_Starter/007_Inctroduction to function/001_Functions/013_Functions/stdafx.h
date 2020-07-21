@@ -3,12 +3,12 @@
 // не часто измен¤ютс¤
 //
 
-?p.. once
+#pragma once
 
-? "targetver.h"
+#include "targetver.h"
 
-? <stdio.h>
-? <tchar.h>
+#include <stdio.h>
+#include <tchar.h>
 
 
 
