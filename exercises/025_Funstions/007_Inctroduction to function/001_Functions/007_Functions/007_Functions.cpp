@@ -1,32 +1,34 @@
-//? *s..
-//? |i..
-//
-//u.. s..
-//
-//in. A.. in. a, in. b
-//d.. A.. d.. a, d.. b
-//
-//in. main
-//
-//	in.  value1 _ 2, value2 _ 3
-//
-//	//double value3 = 12.3;
-//
-//	d.. sum _ ? ? ?
-//
-//	//double dsum = AddNumbers(12.2, 15.3);
-//
-//	c__ __  "value1 + value2 = " __  ? __  e..
-//
-//	sy.. pause
-//	r_ _
-//
-//
-//in. AddNumbers in. a, in. b
-//
-//	c__ __  "Function(int a, int b) is called!" __  e..
-//	r_ ? + ?
-//
-//d.. AddNumbers d.. a, d.. b
-//
-//	c__ __  "Function(double a, double b) is called!" __  e..r_ ? + ?
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+int AddNumbers(int a, int b);
+double AddNumbers(double a, double b);
+
+int main() {
+
+    int value1 = 2, value2 = 3;
+
+    //double value3 = 12.3;
+
+    double sum = AddNumbers(value1, value2);
+
+    //double dsum = AddNumbers(12.2, 15.3);
+
+    cout << "value1 + value2 = " << sum << endl;
+
+    system("pause");
+    return 0;
+}
+
+int AddNumbers(int a, int b) {
+
+    cout << "Function(int a, int b) is called!" << endl;
+    return a + b;
+
+    double AddNumbers(double a, double b);
+
+    cout << "Function(double a, double b) is called!" << endl;
+    return a + b;
+}
