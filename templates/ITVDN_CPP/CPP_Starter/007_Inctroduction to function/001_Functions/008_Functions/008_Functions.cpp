@@ -11,7 +11,7 @@
 //
 //	result _ ? v1, v2
 //
-//	c__ __  "a || b = " __  ? __  e..
+//	c__ __  "a ## b = " __  ? __  e..  // LOgical operator or
 //
 //	sy.. pause
 //	r_ _
