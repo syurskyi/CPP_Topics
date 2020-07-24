@@ -1,25 +1,25 @@
-//? *s..
-//? |i..
-//
-//u.. s..
-//
-//v.. CallFunction
-//
-//in. test _ 0
-//
-//in. main
-//
-//	___ in. i _ 0 ? < 5 ?##
-//
-//		?
-//
-//
-//	c__ __  "Function called CallFunction invoked " __  t.. __  " times!";
-//
-//	c__.g..
-//	r_ _
-//
-//
-//v.. CallFunction
-//
-//	t##
+#include "stdafx.h"
+#include <iostream>
+
+using namespace std;
+
+void CallFunction();
+
+int test = 0;
+
+int main() {
+
+    for (int i = 0; i < 6; i++) {
+        CallFunction();
+    }
+
+    cout << "Function called CallFunction invoked " << test << " times!";
+
+    cin.get();
+    return 0;
+}
+
+void CallFunction() {
+
+    test++;
+}
