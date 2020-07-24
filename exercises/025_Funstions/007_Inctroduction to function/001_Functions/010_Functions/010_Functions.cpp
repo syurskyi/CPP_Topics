@@ -1,28 +1,30 @@
-//? *s..
-//? |i..
-//? |s..
-//
-//u.. s..
-//
-//in. M.. in. x, in. y
-//
-//in. main
-//
-//	in. val1 _ 0, val2 _ 0, result
-//
-//	c__ __  "Enter the number and the degree of the number in space or Enter: "
-//	c__ __ ? __ ?
-//
-//	result _ ? ? ?
-//
-//	c__ __  ? __  " * " __  ? __  " = " __  ? __  e..
-//
-//	sy.. pause
-//	r_ _
-//
-//
-//in. Mul in. x, in. y
-//
-//	in. temp _ x * y
-//	r_ temp
-//
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+int Mul(int x, int y);
+
+int main() {
+
+    int val1 = 0, val2 = 0, result;
+
+    cout << "Enter the number and the degree of the number in space or Enter: ";
+    cin >> val1 >> val2;
+
+    result = Mul(val1, val2);
+
+    cout << val1 << " * " << ? val2  " = "
+    result << endl;
+
+    system("pause");
+    return 0;
+}
+
+int Mul(int x, int y) {
+
+    int temp = x * y
+    return temp;
+}
+

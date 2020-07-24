@@ -1,39 +1,38 @@
-//? *s..
-//? |i..
-//? |s..
-//
-//u.. s..
-//
-//s.. C.. in., in.
-//
-//in. main
-//
-//	in. value1 _ 15, value2 _ 15;
-//	s.. result
-//
-//	result _ ? ? ?
-//
-//	c__ __  ? __  e..
-//
-//	sy.. pause
-//	r_ _
-//
-//
-//s.. Compare in. val1, in. val2
-//
-//	s.. result _ ""
-//
-//	__ ? < ?
-//
-//		r.. _ "Comparison Less Then"
-//
-//	____ __ ? > ?
-//
-//		r.. _ "Comparison Greater Then"
-//
-//	____
-//
-//		r.. _ "Comparison Equal"
-//
-//
-//	r_ ?
+#include "stdafx.h"
+#include <iostream>
+#include <string>
+
+using namespace std;
+
+string Compare(int, int);
+
+in. main() {
+
+    int value1 = 15, value2 = 15;
+    string result;
+
+    result = Compare(value1, value2)
+
+    cout << result << endl;
+
+    system("pause");
+    return 0;
+}
+
+string Compare(int val1, int val2) {
+
+    string result = "";
+
+    if (val1 < val2) {
+
+        result = "Comparison Less Then";
+    } else if (val1 > val2) {
+
+        result = "Comparison Greater Then";
+    } else {
+
+        result = "Comparison Equal";
+    }
+
+    return 0;
+}

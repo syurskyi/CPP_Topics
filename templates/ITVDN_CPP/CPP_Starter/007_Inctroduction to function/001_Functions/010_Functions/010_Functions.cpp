@@ -23,6 +23,6 @@
 //
 //in. Mul in. x, in. y
 //
-//	in. temp _ x * y
-//	r_ temp
+//	in. temp _ ? * ?
+//	r_ >
 //
