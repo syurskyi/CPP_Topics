@@ -24,14 +24,14 @@
 //
 //
 //v.. volume_cylinder
-//    do.. r..
-//    do.. h..
+//    do.. r..||
+//    do.. h..||
 //    c.. __ "\nEnter the radius of the cylinder: "
 //    ci. __ ?
 //    c.. __ "\nEnter the height of the cylinder: "
 //    ci. __ ?
 //
-//    c.. __ "The volume of a cylinder with radius " __ ? __ " and height " __ h.. __ " is " __ c_v_c.. r.. h.. __ e..
+//    c.. __ "The volume of a cylinder with radius " __ ? __ " and height " __ ? __ " is " __ ? ? ? __ e..
 //
 //
 //in. main
