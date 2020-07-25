@@ -11,7 +11,7 @@
 //v.. area_circle
 //v.. volume_cylinder
 //
-//co.. do.. pi = 3.14159;
+//co.. do.. pi = 3.14159
 //
 //in. main
 //    a..
@@ -29,15 +29,15 @@
 //
 //
 //v.. area_circle
-//    do.. radius
+//    do.. radius||
 //    c.. __ "\nEnter the radius of the circle: "
 //    ci. __ ?
 //    c.. __ "The area of a circle with radius " __ ? __ " is " __ ? ? __ e..
 //
 //
 //v.. volume_cylinder
-//    do.. r..
-//    do.. h..
+//    do.. r..||
+//    do.. h..||
 //    c.. __ "\nEnter the radius of the cylinder: "
 //    ci. __ ?
 //    c.. __ "Enter the height of the cylinder: "
