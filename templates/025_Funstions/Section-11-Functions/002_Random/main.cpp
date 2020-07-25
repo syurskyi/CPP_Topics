@@ -9,8 +9,8 @@
 //
 //in. main
 //
-//    in. random_number
-//    size_t count 10           // number of random numbers to generate
+//    in. random_number ||
+//    s.._t count 10           // number of random numbers to generate
 //    in. min 1                 // lower bound (inclusive)
 //    in. max 6                // upper bound (inclusive)
 //
@@ -18,9 +18,9 @@
 //    // If you don't seed the generator you will get the same requence random numbers every run
 //
 //    c.. __ "RAND_MAX on my system is: " __ ? __ e..
-//    sr.. ti.. nullptr
+//    sr.. ti.. n..      # The n... keyword represents a null pointer value.
 //
-//    ___  s_t i 1 ?<_c.. ###
+//    ___  s_t i 1 ?<_c.. ##?
 //        random_number = ra.. % ma. + mi.    // generate a random number [min, max]
 //        c.. __ ? __ e..
 //
