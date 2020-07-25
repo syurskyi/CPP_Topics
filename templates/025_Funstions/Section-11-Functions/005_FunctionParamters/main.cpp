@@ -8,8 +8,8 @@
 //
 //v.. pass_by_value1 in. num
 //v.. pass_by_value2 string s
-//v.. pass_by_value3 vectorst.. v
-//v.. print_vector vectorst.. v
+//v.. pass_by_value3 ve.. st.. v
+//v.. print_vector ve.. st.. v
 //
 //v.. ? in. num
 //    ? _ 1000
@@ -19,19 +19,19 @@
 //    s _ "Changed"
 //
 //
-//v.. ? vectorst.. v
+//v.. ? ve.. st.. v
 //    v.cl..  // delete all vector elements
 //
 //
-//v.. ?(vectorst.. v
+//v.. ?(ve.. st.. v
 //    ___ (a.. s: ?
 //        c.. __ s __ " "
 //    c.. __ e..
 //
 //
 //in. main
-//    in. num {10
-//    in. another_num {20
+//    in. num 10
+//    in. another_num 20
 //
 //    c.. __ "num before calling pass_by_value1: " __ ? __ e..
 //    _1 ?
